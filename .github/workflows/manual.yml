@@ -28,5 +28,5 @@ jobs:
             cd novves-main
             npm ci
             npm run build
-            pm2 reload ecosystem.config.js --update-env
+            pm2 reload novves --update-env
             pm2 save
