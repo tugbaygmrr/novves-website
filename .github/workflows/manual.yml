@@ -17,8 +17,16 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
+          timeout: 60s
+          command_timeout: 15m
+          script_stop: true
           script: |
-            cd /var/www/app
-            git pull origin main
-            npm install
-            pm2 restart app || pm2 start app.js --name app
+            set -e
+            cd /home/ubuntu/novves-website
+            git fetch origin main
+            git reset --hard origin/main
+            cd novves-main
+            npm ci
+            npm run build
+            pm2 reload ecosystem.config.js --update-env
+            pm2 save
