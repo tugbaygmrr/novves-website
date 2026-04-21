@@ -103,7 +103,7 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
             </div>
 
             {/* Specs */}
-            <div className="grid grid-cols-3 divide-x divide-ink/10 border-t border-ink/10">
+            <div className="grid grid-cols-1 divide-y divide-ink/10 border-t border-ink/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
               {[
                 { v: dict.endCard.spec1Value, l: dict.endCard.spec1Label },
                 { v: dict.endCard.spec2Value, l: dict.endCard.spec2Label },
@@ -218,15 +218,21 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (window.innerWidth < 1024) return;
 
-    const images = preloadImages();
-    const first = images[START_VISIBLE_FRAME];
-    if (first?.complete) renderFrame(START_VISIBLE_FRAME);
-    else if (first) first.onload = () => renderFrame(START_VISIBLE_FRAME);
+    let removeDesktopListeners: (() => void) | undefined;
 
-    function onScroll() {
-      rafRef.current = requestAnimationFrame(() => {
+    const startDesktopScroll = () => {
+      removeDesktopListeners?.();
+      removeDesktopListeners = undefined;
+      if (window.innerWidth < 1024) return;
+
+      const images = preloadImages();
+      const first = images[START_VISIBLE_FRAME];
+      if (first?.complete) renderFrame(START_VISIBLE_FRAME);
+      else if (first) first.onload = () => renderFrame(START_VISIBLE_FRAME);
+
+      function onScroll() {
+        rafRef.current = requestAnimationFrame(() => {
         const sectionEl = document.getElementById("hero-sticky-section");
         if (!sectionEl) return;
         const rect = sectionEl.getBoundingClientRect();
@@ -342,15 +348,30 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
           const xPct = 58 + shift * 14; // 58 → 72
           canvasRef.current.style.objectPosition = `${xPct}% center`;
         }
-      });
-    }
+        });
+      }
 
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll, { passive: true });
+      onScroll();
+
+      removeDesktopListeners = () => {
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("resize", onScroll);
+        cancelAnimationFrame(rafRef.current);
+      };
+    };
+
+    const onViewportChange = () => {
+      startDesktopScroll();
+    };
+
+    startDesktopScroll();
+    window.addEventListener("resize", onViewportChange, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener("resize", onViewportChange);
+      removeDesktopListeners?.();
     };
   }, [preloadImages, renderFrame]);
 
@@ -533,7 +554,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
                     {dict.endCard.desc}
                   </p>
 
-                  <div className="mt-6 grid grid-cols-3 border-y border-ink/[0.08] divide-x divide-ink/[0.08]">
+                  <div className="mt-6 grid grid-cols-1 divide-y divide-ink/[0.08] border-y border-ink/[0.08] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
                     {[
                       { v: dict.endCard.spec1Value, l: dict.endCard.spec1Label },
                       { v: dict.endCard.spec2Value, l: dict.endCard.spec2Label },

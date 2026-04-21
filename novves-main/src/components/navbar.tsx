@@ -224,7 +224,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full border-b border-ink/12 bg-white/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
+      className="fixed top-0 z-50 w-full max-w-[100vw] border-b border-ink/12 bg-white/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
     >
       <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-6 sm:px-8 lg:px-10">
         {/* Logo */}

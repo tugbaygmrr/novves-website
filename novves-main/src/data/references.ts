@@ -17,7 +17,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "2M LOJÄ°STÄ°K GEBZE DEPO",
+    "title": "2M LOJİSTİK GEBZE DEPO",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -34,7 +34,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "3S KALE TOPAZ ZEYTÄ°NBURNU",
+    "title": "3S KALE TOPAZ ZEYTİNBURNU",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -51,7 +51,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ADANA Yï¿½oREÄÄ°R 100 YATAKLI HASTANE",
+    "title": "ADANA YÜREĞİR 100 YATAKLI HASTANE",
     "classKey": "hastane",
     "className": "HASTANE",
     "productNames": [
@@ -68,7 +68,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ADIYAMAN BELEDÄ°YESÄ° KATLI OTOPARK",
+    "title": "ADIYAMAN BELEDİYESİ KATLI OTOPARK",
     "classKey": "otopark",
     "className": "OTOPARK",
     "productNames": [
@@ -105,7 +105,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "AKTÄ°F ATIK BERTARAF VE ENERJÄ° ï¿½oRETÄ°M TESÄ°SÄ°",
+    "title": "AKTİF ATIK BERTARAF VE ENERJİ ÜRETİM TESİSİ",
     "classKey": "enerji-santrali",
     "className": "ENERJÄ° SANTRALÄ°",
     "productNames": [
@@ -136,7 +136,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ALTINAY SAVUNMA TEKNOLOJÄ°LERÄ°",
+    "title": "ALTINAY SAVUNMA TEKNOLOJİLERİ",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -155,7 +155,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ANTALYA HAVALÄ°MANI",
+    "title": "ANTALYA HAVALİMANI",
     "classKey": "havalimanÄ±",
     "className": "HAVALÄ°MANI",
     "productNames": [
@@ -173,7 +173,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ARKATLI EVLER KÄ°PTAÅ",
+    "title": "ARKATLI EVLER KİPTAŞ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -214,7 +214,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "BAÅAKÅEHÄ°R BELEDÄ°YE BÄ°NASI",
+    "title": "BAŞAKŞEHİR BELEDİYE BİNASI",
     "classKey": "otopark",
     "className": "OTOPARK",
     "productNames": [
@@ -257,7 +257,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "BÄ°M ESKÄ°ÅEHÄ°R BÄ°SKï¿½oVÄ° FABRÄ°KASI",
+    "title": "BİM ESKİŞEHİR BİSKÜVİ FABRİKASI",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -272,7 +272,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "BÄ°ZÄ°MEVLER 10",
+    "title": "BİZİMEVLER 10",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -288,7 +288,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "BOSCH BURSA FABRÄ°KA",
+    "title": "BOSCH BURSA FABRİKA",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -302,7 +302,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "BURDUR SODA FABRÄ°KASI",
+    "title": "BURDUR SODA FABRİKASI",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -316,7 +316,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "Bï¿½oYï¿½oK ANADOLU HASTANESÄ°",
+    "title": "BÜYÜK ANADOLU HASTANESİ",
     "classKey": "hastane",
     "className": "HASTANE",
     "productNames": [
@@ -384,7 +384,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "DAP YAPI ï¿½?EKMEKï¿½-Y 1. VE 2. ETAP",
+    "title": "DAP YAPI ?EKMEK-Y 1. VE 2. ETAP",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -449,7 +449,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "EMLAK KONUT BÄ°ZÄ°M MAHALLE HALKALI",
+    "title": "EMLAK KONUT BİZİM MAHALLE HALKALI",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -473,7 +473,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "EMLAK KONUT ï¿½?INARKï¿½-Y EVLERI 3. ve 4. ETAP",
+    "title": "EMLAK KONUT ÇINARKÖY EVLERİ 3. VE 4. ETAP",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -520,7 +520,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "EMLAK KONUT TOZKOPARAN KENTSEL Dï¿½-Nï¿½oÅï¿½oM",
+    "title": "EMLAK KONUT TOZKOPARAN KENTSEL DÖNÜŞÜM",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -575,7 +575,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "HILTON TAKSÄ°M 360",
+    "title": "HILTON TAKSİM 360",
     "classKey": "otel",
     "className": "OTEL",
     "productNames": [
@@ -649,7 +649,7 @@ export const references: Reference[] = [
     "year": "2024",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "Ä°TO ï¿½oNÄ°VERSÄ°TESÄ° REKTï¿½-RLï¿½oK",
+    "title": "İTÜ ÜNİVERSİTESİ REKTÖRLÜK",
     "classKey": "okul",
     "className": "OKUL",
     "productNames": [
@@ -704,7 +704,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "KÄ°PTAÅ KIRLANGIï¿½? EVLERÄ° Gï¿½oRPINAR",
+    "title": "KİPTAŞ KIRLANGIÇ EVLERİ GÜRPINAR",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -725,7 +725,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "KIRKLARELI SAÄLIK KAMPï¿½oSï¿½o",
+    "title": "KIRKLARELİ SAĞLIK KAMPÜSÜ",
     "classKey": "hastane",
     "className": "HASTANE",
     "productNames": [
@@ -744,7 +744,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "MARÄ°NERA ï¿½?EÅME",
+    "title": "MARİNERA ?EŞME",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -779,7 +779,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "MEVSÄ°M Ä°STANBUL BAÅAKÅEHÄ°R",
+    "title": "MEVSİM İSTANBUL BAŞAKŞEHİR",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -797,7 +797,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "SUR YAPI MUHÄ°T SANCAKTEPE",
+    "title": "SUR YAPI MUHİT SANCAKTEPE",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -819,7 +819,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "NEF ï¿½?EKMEKï¿½-Y 2. ETAP",
+    "title": "NEF ?EKMEK-Y 2. ETAP",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -858,7 +858,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "PELSAN FABRÄ°KA",
+    "title": "PELSAN FABRİKA",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -875,7 +875,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "POLSAN Dï¿½oÄME FABRÄ°KASI",
+    "title": "POLSAN DÖĞME FABRİKASI",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -978,7 +978,7 @@ export const references: Reference[] = [
     "year": "2024",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "Rï¿½-NESANS SANCAKTEPE FERÄ°HA ï¿½-Z ACÄ°L DURUM HASTANESÄ°",
+    "title": "R-NESANS SANCAKTEPE FERİHA -Z ACİL DURUM HASTANESİ",
     "classKey": "hastane",
     "className": "HASTANE",
     "productNames": [
@@ -1010,7 +1010,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "SASA POLYESTER FABRÄ°KASI",
+    "title": "SASA POLYESTER FABRİKASI",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -1080,7 +1080,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "SÄ°LÄ°VRÄ° KÄ°PTAÅ",
+    "title": "SİLİVRİ KİPTAŞ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1113,7 +1113,7 @@ export const references: Reference[] = [
     "year": "2024",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "SONOMED Gï¿½-Rï¿½oNTï¿½oLEME MERKEZÄ°",
+    "title": "SONOMED GÖRÜNTÜLEME MERKEZİ",
     "classKey": "hastane",
     "className": "HASTANE",
     "productNames": [
@@ -1143,7 +1143,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "Emlak Konut OkmeydanÄ± Kentsel DÃ¶nÃ¼ï¿½YÃ¼m",
+    "title": "EMLAK KONUT OKMEYDANI KENTSEL DÖNÜŞÜM",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1234,7 +1234,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "SURYAPI BAHï¿½?EYAKA",
+    "title": "SURYAPI BAH?EYAKA",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1336,7 +1336,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "TAKSÄ°M 360",
+    "title": "TAKSİM 360",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1362,7 +1362,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "TAKSÄ°M CAMÄ°Ä°",
+    "title": "TAKSİM CAMİİ",
     "classKey": "ibadethane",
     "className": "Ä°BADETHANE",
     "productNames": [
@@ -1424,7 +1424,7 @@ export const references: Reference[] = [
     "year": "2024",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "TOKÄ° HATAY VE MALATYA DEPREM KONUTLARI Rï¿½-NESANS",
+    "title": "TOKİ HATAY VE MALATYA DEPREM KONUTLARI R-NESANS",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -1439,7 +1439,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "TOPKAPI BIRUNI ï¿½oNÄ°VERSÄ°TESÄ°",
+    "title": "TOPKAPI BİRUNİ ÜNİVERSİTESİ",
     "classKey": "okul",
     "className": "OKUL",
     "productNames": [
@@ -1463,7 +1463,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "TRABZON ï¿½?ï¿½-MLEKï¿½?Ä° KENTSEL Dï¿½-Nï¿½oÅï¿½oM PROJESÄ°",
+    "title": "TRABZON ÇÖMLEKÇİ KENTSEL DÖNÜŞÜM PROJESİ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1489,7 +1489,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkmenistan",
     "countryName": "Tï¿½oRKMENÄ°STAN",
-    "title": "Tï¿½oRKMENÄ°STAN COTAM TEKSTÄ°L FABRÄ°KASI",
+    "title": "TÜRKMENİSTAN COTAM TEKSTİL FABRİKASI",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -1509,7 +1509,7 @@ export const references: Reference[] = [
     "year": "2022",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ULUDAÄ SWISSOTEL",
+    "title": "ULUDAĞ SWISSOTEL",
     "classKey": "otel",
     "className": "OTEL",
     "productNames": [
@@ -1525,7 +1525,7 @@ export const references: Reference[] = [
     "year": "2021",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ï¿½oSKï¿½oDAR MÄ°MAR SINAN HAKÄ°MÄ°YET-Ä° MÄ°LLÄ°YE YERALTI OTOPARKI",
+    "title": "ÜSKÜDAR MİMAR SİNAN HAKİMİYET-İ MİLLİYE YERALTI OTOPARKI",
     "classKey": "otopark",
     "className": "OTOPARK",
     "productNames": [
@@ -1564,7 +1564,7 @@ export const references: Reference[] = [
     "year": "2023",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "ZEYTÄ°NBURNU KAPALI OTOPARK VE PAZAR YERÄ°",
+    "title": "ZEYTİNBURNU KAPALI OTOPARK VE PAZAR YERİ",
     "classKey": "otopark",
     "className": "OTOPARK",
     "productNames": [
@@ -1638,7 +1638,7 @@ export const references: Reference[] = [
     "year": "2024",
     "country": "irak",
     "countryName": "IRAK",
-    "title": "CCI BAÄDAT",
+    "title": "CCI BAĞDAT",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S",
     "productNames": [
@@ -1748,7 +1748,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "KÄ°PTAÅ MASLAK KORU",
+    "title": "KİPTAŞ MASLAK KORU",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1798,7 +1798,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "LUXERA BAHï¿½?EPORT",
+    "title": "LUXERA BAH?EPORT",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1835,7 +1835,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "kazakistan",
     "countryName": "KAZAKÄ°STAN",
-    "title": "NAVOI KONUT PROJESÄ°",
+    "title": "NAVOI KONUT PROJESİ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1852,7 +1852,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "kazakistan",
     "countryName": "KAZAKÄ°STAN",
-    "title": "ZANGAR KONUT PROJESÄ°",
+    "title": "ZANGAR KONUT PROJESİ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1868,7 +1868,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "kazakistan",
     "countryName": "KAZAKÄ°STAN",
-    "title": "TOLEBÄ° KONUT PROJESÄ°",
+    "title": "TOLEBİ KONUT PROJESİ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1885,7 +1885,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "kazakistan",
     "countryName": "KAZAKÄ°STAN",
-    "title": "JAMBLY KONUT PROJESÄ°",
+    "title": "JAMBLY KONUT PROJESİ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1902,7 +1902,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "kazakistan",
     "countryName": "KAZAKÄ°STAN",
-    "title": "ARENA KONUT PROJESÄ°",
+    "title": "ARENA KONUT PROJESİ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1920,7 +1920,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "DAP YAPI YENÄ° LEVENT",
+    "title": "DAP YAPI YENİ LEVENT",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1936,7 +1936,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "EMLAK KONUT MUSTAFA EKÅÄ° ESENLER KENTSEL Dï¿½-Nï¿½oÅï¿½oM",
+    "title": "EMLAK KONUT MUSTAFA EKŞİ ESENLER KENTSEL DÖNÜŞÜM",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -1985,7 +1985,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "BYCHEM PETROKÄ°MYA GEBKÄ°M",
+    "title": "BYCHEM PETROKİMYA GEBKİM",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S PROJESÄ°",
     "productNames": [
@@ -2025,7 +2025,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "FUZUL BAÅAKÅEHÄ°R AVRASYA 2",
+    "title": "FUZUL BAŞAKŞEHİR AVRASYA 2",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -2039,7 +2039,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "POLÄ°MER KÄ°MYA GEBZE FABRÄ°KA",
+    "title": "POLİMER KİMYA GEBZE FABRİKA",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S PROJESÄ°",
     "productNames": [
@@ -2081,7 +2081,7 @@ export const references: Reference[] = [
     "year": "2025",
     "country": "turkmenistan",
     "countryName": "Tï¿½oRKMENÄ°STAN",
-    "title": "ARKADAÄ AKILLI ÅEHÄ°R YOL",
+    "title": "ARKADAĞ AKILLI ŞEHİR YOL",
     "classKey": "altyapi",
     "className": "ALTYAPI PROJESÄ°",
     "productNames": [
@@ -2091,14 +2091,14 @@ export const references: Reference[] = [
       "KOI CB"
     ],
     "description": "Bu projede DikdÃ¶rtgen Duvar Tipi Fan, DikdÃ¶rtgen Aksiyal Duvar Tipi Fan, Aksiyal Kovan Tipi Fan ve Yuvarlak Kanal FanÄ± NOVVES tarafÄ±ndan saï¿½YlanmÄ±ï¿½YtÄ±r.",
-    "image": "arkadaj.jpg"
+    "image": "gebze-darica-metro.jpg"
   },
   {
     "id": 112,
     "year": "2025",
     "country": "kazakistan",
     "countryName": "KAZAKÄ°STAN",
-    "title": "SHYGYS KONUT PROJESÄ°",
+    "title": "SHYGYS KONUT PROJESİ",
     "classKey": "konut",
     "className": "KONUT",
     "productNames": [
@@ -2115,7 +2115,7 @@ export const references: Reference[] = [
     "year": "2024",
     "country": "turkiye",
     "countryName": "Tï¿½oRKÄ°YE",
-    "title": "PERFEKTï¿½oP AMBALAJ FABRÄ°KASI",
+    "title": "PERFEKTÜP AMBALAJ FABRİKASI",
     "classKey": "endustriyel-tesis",
     "className": "ENDï¿½oSTRÄ°YEL TESÄ°S PROJESÄ°",
     "productNames": [

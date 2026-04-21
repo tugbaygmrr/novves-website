@@ -15,45 +15,57 @@ function IconPhone({ className }: { className?: string }) {
 
 function LeaderCard({ member }: { member: TeamMember }) {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-gray-100 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
-      <div className="relative h-44 shrink-0 bg-gradient-to-br from-dark via-secondary to-dark">
-        <div className="pointer-events-none absolute -right-10 -top-10 h-44 w-44 rounded-full bg-primary/10" />
-        <div className="pointer-events-none absolute -left-6 bottom-0 h-32 w-32 rounded-full bg-white/3" />
+    <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-[#ecebe6] shadow-[0_16px_34px_-24px_rgba(15,20,30,0.35)] transition-all duration-500 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_20px_38px_-24px_rgba(15,20,30,0.45)]">
+      <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#1d2f4d] via-primary to-[#2f4f74]" />
+      <div className="relative h-44 shrink-0 bg-gradient-to-br from-[#13233d] via-[#1d2f4d] to-[#233c5f]">
+        <div className="pointer-events-none absolute -right-10 -top-10 h-44 w-44 rounded-full bg-primary/15" />
+        <div className="pointer-events-none absolute -left-6 bottom-0 h-32 w-32 rounded-full bg-white/5" />
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
-          <div className="relative h-32 w-32 overflow-hidden rounded-full ring-4 ring-white shadow-xl transition-transform duration-700 group-hover:scale-105">
+          <div className="relative h-32 w-32 overflow-hidden rounded-full ring-4 ring-[#ecebe6] shadow-xl transition-transform duration-700 group-hover:scale-105">
             <Image src={member.image} alt={member.name} fill className="object-cover object-top" />
           </div>
-          <div className="pointer-events-none absolute inset-0 rounded-full ring-2 ring-primary/30 ring-offset-2 ring-offset-white" />
+          <div className="pointer-events-none absolute inset-0 rounded-full ring-2 ring-primary/30 ring-offset-2 ring-offset-[#ecebe6]" />
         </div>
       </div>
-      <div className="flex flex-1 flex-col items-center px-8 pb-8 pt-20 text-center">
-        <div className="mb-4 flex items-center gap-1.5"><span className="h-px w-8 bg-gray-200" /><span className="h-1.5 w-1.5 rounded-full bg-primary" /><span className="h-px w-8 bg-gray-200" /></div>
-        <h3 className="text-xl font-bold tracking-tight text-dark">{member.name}</h3>
-        <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-primary">{member.title}</p>
-        <div className="my-6 h-px w-10 bg-gray-100" />
-        <a href={`mailto:${member.email}`} className="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2.5 text-xs font-medium text-secondary/65 ring-1 ring-gray-100 transition-all duration-300 hover:bg-primary hover:text-white hover:ring-primary">
+      <div className="flex flex-1 flex-col items-center px-7 pb-0 pt-20 text-center">
+        <div className="mb-4 flex items-center gap-1.5"><span className="h-px w-8 bg-ink/10" /><span className="h-1.5 w-1.5 rounded-full bg-primary" /><span className="h-px w-8 bg-ink/10" /></div>
+        <h3 className="text-[1.65rem] font-bold tracking-[-0.01em] text-dark">{member.name}</h3>
+        <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#cc6d41]">{member.title}</p>
+        <div className="my-6 h-px w-12 bg-ink/10" />
+        <a href={`mailto:${member.email}`} className="mb-6 inline-flex items-center gap-2 rounded-lg border border-ink/10 bg-[#f4f2eb] px-4 py-2.5 text-xs font-medium text-secondary/65 transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white">
           <IconMail className="h-3.5 w-3.5" />{member.email}
         </a>
+        <div className="h-2 w-[calc(100%+3.5rem)] bg-gradient-to-r from-[#1d2f4d] via-primary to-[#2f4f74]" />
       </div>
     </div>
   );
 }
 
-function TeamCard({ member, emailAriaLabel, phoneAriaLabel }: { member: TeamMember; emailAriaLabel: string; phoneAriaLabel: string }) {
+const teamRingVariants = [
+  "from-[#e65f35] to-[#d84d2f]",
+  "from-[#6d58d9] to-[#9b68f2]",
+  "from-[#2e64c9] to-[#3f79e0]",
+  "from-[#18b9a9] to-[#2cd6c4]",
+];
+
+function TeamCard({ member, emailAriaLabel, phoneAriaLabel, index }: { member: TeamMember; emailAriaLabel: string; phoneAriaLabel: string; index: number }) {
+  const ringClass = teamRingVariants[index % teamRingVariants.length];
   return (
-    <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-sm ring-1 ring-gray-100 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
-      <div className="relative aspect-square overflow-hidden">
-        <Image src={member.image} alt={member.name} fill className="object-cover object-top transition-transform duration-700 group-hover:scale-105" />
-        <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-dark/95 via-dark/50 to-transparent" />
-        <div className="absolute bottom-14 left-4 flex gap-2 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-          <a href={`mailto:${member.email}`} className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/15 text-white backdrop-blur-sm transition-colors duration-200 hover:bg-primary" aria-label={`${member.name} — ${emailAriaLabel}`}><IconMail className="h-3.5 w-3.5" /></a>
-          {member.phone && (<a href={`tel:${member.phone.replace(/\s/g, "")}`} className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/15 text-white backdrop-blur-sm transition-colors duration-200 hover:bg-primary" aria-label={`${member.name} — ${phoneAriaLabel}`}><IconPhone className="h-3.5 w-3.5" /></a>)}
-        </div>
-        <div className="absolute inset-x-0 bottom-0 px-4 pb-4 pt-2">
-          <h3 className="text-sm font-bold leading-tight text-white">{member.name}</h3>
-          <p className="mt-0.5 text-xs font-semibold uppercase tracking-wider text-primary">{member.title}</p>
+    <div className="group relative rounded-2xl border border-ink/10 bg-[#f3f1ea] p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_16px_30px_-24px_rgba(15,20,30,0.35)]">
+      <div className={`mx-auto flex h-[122px] w-[122px] items-center justify-center rounded-full bg-gradient-to-br ${ringClass} p-[8px] shadow-[0_10px_20px_-16px_rgba(15,20,30,0.55)]`}>
+        <div className="relative h-full w-full overflow-hidden rounded-full bg-white p-[3px]">
+          <div className="relative h-full w-full overflow-hidden rounded-full">
+            <Image src={member.image} alt={member.name} fill className="object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+          </div>
         </div>
       </div>
+      <h3 className="mt-4 text-[1.05rem] font-bold leading-tight text-dark">{member.name}</h3>
+      <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">{member.title}</p>
+      <div className="mt-4 flex items-center justify-center gap-2">
+        <a href={`mailto:${member.email}`} className="flex h-8 w-8 items-center justify-center rounded-lg border border-ink/10 bg-[#fbf9f3] text-secondary/70 transition-colors duration-200 hover:border-primary hover:bg-primary hover:text-white" aria-label={`${member.name} — ${emailAriaLabel}`}><IconMail className="h-3.5 w-3.5" /></a>
+        {member.phone && (<a href={`tel:${member.phone.replace(/\s/g, "")}`} className="flex h-8 w-8 items-center justify-center rounded-lg border border-ink/10 bg-[#fbf9f3] text-secondary/70 transition-colors duration-200 hover:border-primary hover:bg-primary hover:text-white" aria-label={`${member.name} — ${phoneAriaLabel}`}><IconPhone className="h-3.5 w-3.5" /></a>)}
+      </div>
+      <div className="mx-auto mt-4 h-[2px] w-16 rounded-full bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
     </div>
   );
 }
@@ -66,77 +78,91 @@ export default async function Ekibimiz({ params }: { params: Promise<{ locale: s
 
   return (
     <main>
-      <section className="relative flex flex-col overflow-hidden">
+      <section className="relative flex min-h-[540px] items-end overflow-hidden">
         <Image src="/images/page-hero/ekibimiz.jpg" alt="" fill priority className="object-cover object-center" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/85 via-dark/70 to-dark/80" />
-        <div className="pointer-events-none absolute -top-24 right-0 h-96 w-96 rounded-full opacity-10" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-0 pt-14 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-xs text-white/40">
+        <div className="absolute inset-0 bg-[#4e525c]/28" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-36">
+          <nav className="mb-8 flex items-center gap-2 text-xs text-white/40">
             <Link href={`/${locale}`} className="transition-colors hover:text-white/70">{t.breadcrumbHome}</Link>
             <span>/</span>
             <Link href={`/${locale}/kurumsal`} className="transition-colors hover:text-white/70">{t.breadcrumbCorporate}</Link>
             <span>/</span>
             <span className="text-white/60">{t.breadcrumbPage}</span>
           </nav>
-          <div className="mt-8 max-w-3xl pb-20">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 backdrop-blur-sm">
+          <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">{t.badge}</span>
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/55">{t.heroDesc}</p>
+            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
+            <p className="mt-6 max-w-[54ch] text-[18px] leading-[1.62] text-white/72">{t.heroDesc}</p>
           </div>
         </div>
-        <div className="relative z-10 border-t border-white/10 bg-dark/60 backdrop-blur-sm">
-          <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-white/10 px-4 sm:grid-cols-4 sm:px-6 lg:px-8">
+      </section>
+
+      <section className="bg-[#ecebe6] py-5 sm:py-6">
+        <div className="mx-auto max-w-7xl rounded-2xl border border-ink/10 bg-[#f8f5ed] shadow-[0_12px_26px_-20px_rgba(15,20,30,0.26)] px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 divide-x divide-ink/10 sm:grid-cols-4">
             {t.stats.map((s: { value: string; label: string }) => (
-              <div key={s.label} className="py-6 text-center">
+              <div key={s.label} className="py-5 text-center">
                 <p className="text-2xl font-bold text-primary sm:text-3xl">{s.value}</p>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-white/50">{s.label}</p>
+                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-secondary/55">{s.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-[#ecebe6] py-14 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 flex items-end gap-6">
+          <div className="mb-10 flex items-end gap-6">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">{t.leadershipTag}</p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-dark">{t.leadershipTitle}</h2>
             </div>
-            <div className="hidden h-px flex-1 bg-gray-100 sm:block" />
+            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:max-w-3xl xl:mx-auto">
-            {t.leadership.map((member: TeamMember) => (<LeaderCard key={member.email} member={member} />))}
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:mx-auto xl:max-w-3xl">
+              {t.leadership.map((member: TeamMember) => (<LeaderCard key={member.email} member={member} />))}
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-50 py-24">
+      <section className="relative overflow-hidden bg-[#ecebe6] py-14 sm:py-16">
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.12]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 flex items-end gap-6">
+          <div className="mb-10 flex items-end gap-6">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">{t.teamTag}</p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-dark">{t.teamTitle}</h2>
             </div>
-            <div className="hidden h-px flex-1 bg-gray-200 sm:block" />
+            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
-          <div className="space-y-16">
+          <div className="space-y-12">
             {t.departments.map((dept: TeamDepartment) => (
               <div key={dept.tag}>
                 <div className="mb-8 flex items-center gap-4">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/8 px-3 py-1 ring-1 ring-primary/15">
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/8 px-3 py-1">
                     <span className="h-1.5 w-1.5 rounded-full bg-primary" />
                     <span className="text-xs font-bold uppercase tracking-widest text-primary">{dept.tag}</span>
                   </span>
                   <h3 className="text-base font-bold text-dark">{dept.label}</h3>
-                  <div className="h-px flex-1 bg-gray-200" />
-                  <span className="text-xs font-medium text-secondary/40">{dept.members.length} {t.personSuffix}</span>
+                  <div className="h-px flex-1 bg-ink/10" />
+                  <span className="text-xs font-medium text-secondary/50">{dept.members.length} {t.personSuffix}</span>
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                  {dept.members.map((member: TeamMember) => (<TeamCard key={member.email} member={member} emailAriaLabel={t.emailAriaLabel} phoneAriaLabel={t.phoneAriaLabel} />))}
+                  {dept.members.map((member: TeamMember, memberIndex: number) => (
+                    <TeamCard
+                      key={member.email}
+                      member={member}
+                      emailAriaLabel={t.emailAriaLabel}
+                      phoneAriaLabel={t.phoneAriaLabel}
+                      index={memberIndex}
+                    />
+                  ))}
                 </div>
               </div>
             ))}
@@ -144,10 +170,10 @@ export default async function Ekibimiz({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-dark py-24">
-        <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full opacity-10" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
-        <div className="pointer-events-none absolute -left-24 -bottom-24 h-72 w-72 rounded-full opacity-8" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
-        <div className="pointer-events-none absolute inset-0 opacity-3" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+      <section className="relative overflow-hidden bg-dark py-18 sm:py-20">
+        <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full opacity-[0.09]" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
+        <div className="pointer-events-none absolute -left-24 -bottom-24 h-72 w-72 rounded-full opacity-[0.08]" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <div className="mb-4 inline-flex items-center gap-2"><span className="h-px w-8 bg-primary/40" /><span className="text-xs font-bold uppercase tracking-widest text-primary">{t.ctaTag}</span><span className="h-px w-8 bg-primary/40" /></div>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">{t.ctaTitle}</h2>

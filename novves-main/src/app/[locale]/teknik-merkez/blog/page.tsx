@@ -24,10 +24,13 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
   return (
     <main>
       {/* Hero */}
-      <section className="relative flex min-h-[420px] items-end overflow-hidden">
+      <section className="relative flex min-h-[540px] items-end overflow-hidden">
         <Image src="/images/page-hero/cozumler-main.jpg" alt="" fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/30" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-32 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-[#4e525c]/28" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/80 to-[#2f3440]/94" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-36">
           <nav className="mb-8 flex items-center gap-2 text-xs text-white/40">
             <Link href={`/${locale}`} className="transition-colors hover:text-white/70">{t.breadcrumb.home}</Link>
             <span>/</span>
@@ -35,23 +38,23 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
             <span>/</span>
             <span className="text-white/60">{t.breadcrumb.current}</span>
           </nav>
-          <div className="max-w-2xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 backdrop-blur-sm">
+          <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">{t.hero.badge}</span>
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
+            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
               {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
             </h1>
-            <p className="mt-4 text-base leading-relaxed text-white/50">{t.hero.subtitle}</p>
+            <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">{t.hero.subtitle}</p>
           </div>
         </div>
       </section>
 
       {/* Coming Soon */}
-      <section className="bg-white py-24">
+      <section className="bg-[#ecebe6] py-6 sm:py-8">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-50 ring-1 ring-gray-100">
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl border border-ink/10 bg-[#f8f5ed]">
             <svg className="h-9 w-9 text-secondary/20" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
             </svg>
@@ -59,28 +62,30 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
           <h2 className="mt-8 text-2xl font-bold text-dark">{t.comingSoon.title}</h2>
           <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-secondary/50">{t.comingSoon.text}</p>
           <div className="mx-auto mt-8 flex items-center justify-center gap-2">
-            <span className="h-px w-8 bg-gray-200" />
+            <span className="h-px w-8 bg-ink/10" />
             <span className="h-1.5 w-1.5 rounded-full bg-primary/40" />
-            <span className="h-px w-8 bg-gray-200" />
+            <span className="h-px w-8 bg-ink/10" />
           </div>
         </div>
       </section>
 
       {/* Topic Areas */}
-      <section className="bg-gray-50 py-20">
+      <section className="relative overflow-hidden bg-[#ecebe6] py-14 sm:py-16">
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.12]" />
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10 flex items-end gap-4">
+          <div className="mb-9 flex items-end gap-4">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.topicAreas.sectionLabel}</p>
               <h3 className="mt-1 text-xl font-bold text-dark">{t.topicAreas.title}</h3>
             </div>
-            <div className="hidden h-px flex-1 bg-gray-200 sm:block" />
+            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
           <div className="grid gap-4 sm:grid-cols-3">
             {t.topicAreas.items.map((topic: { title: string; description: string }, i: number) => (
-              <div key={topic.title} className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:shadow-lg hover:ring-primary/20">
-                <div className="absolute left-0 top-0 h-full w-1 bg-gray-100 transition-colors duration-300 group-hover:bg-primary" />
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-secondary/5 text-secondary/40 transition-colors duration-300 group-hover:bg-primary/10 group-hover:text-primary">
+              <div key={topic.title} className="group relative overflow-hidden rounded-xl border border-ink/10 bg-[#f5f2eb] p-6 transition-all duration-300 hover:border-primary/25 hover:bg-[#f8f5ed] hover:shadow-[0_16px_30px_-22px_rgba(15,20,30,0.3)]">
+                <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-[#1d2f4d]/90 via-primary/75 to-[#90a5bd]/75 opacity-75 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="absolute left-0 top-0 h-full w-1 bg-ink/15 transition-colors duration-300 group-hover:bg-primary" />
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-ink/10 bg-[#fbf9f3] text-secondary/45 transition-colors duration-300 group-hover:border-primary/30 group-hover:bg-primary/10 group-hover:text-primary">
                   {topicIcons[i]}
                 </div>
                 <h4 className="mt-4 text-sm font-bold text-dark">{topic.title}</h4>
@@ -93,7 +98,7 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-dark py-20">
+      <section className="relative overflow-hidden bg-dark py-18 sm:py-20">
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }} />
         <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.cta.sectionLabel}</p>

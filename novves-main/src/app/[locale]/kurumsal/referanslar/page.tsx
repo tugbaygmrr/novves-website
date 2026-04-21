@@ -18,6 +18,27 @@ const WORD_FIXES: Array<[string, string]> = [
   ["BiSKoVi", "BİSKÜVİ"],
   ["BİSKoVİ", "BİSKÜVİ"],
   ["BİSKoVi", "BİSKÜVİ"],
+  ["KIRLANGI?", "KIRLANGIÇ"],
+  ["GoRPINAR", "GÜRPINAR"],
+  ["GORPINAR", "GÜRPINAR"],
+  ["GÖRPINAR", "GÜRPINAR"],
+  ["ï¿½?EKMEKï¿½-Y", "ÇEKMEKÖY"],
+  ["ï¿½?INARKï¿½-Y", "ÇINARKÖY"],
+  ["Dï¿½-Nï¿½oÅï¿½oM", "DÖNÜŞÜM"],
+  ["Gï¿½oRPINAR", "GÜRPINAR"],
+  ["KIRLANGIï¿½?", "KIRLANGIÇ"],
+  ["Ä°", "İ"],
+  ["Ä±", "ı"],
+  ["Å", "Ş"],
+  ["Å", "ş"],
+  ["Ä", "Ğ"],
+  ["ÄŸ", "ğ"],
+  ["Ã–", "Ö"],
+  ["Ã¶", "ö"],
+  ["Ãœ", "Ü"],
+  ["Ã¼", "ü"],
+  ["Ã‡", "Ç"],
+  ["Ã§", "ç"],
 ];
 
 function garbledScore(text: string): number {
@@ -65,6 +86,8 @@ function decodeMojibake(value: string): string {
     .replaceAll("ï¿½?~", '"')
     .replaceAll("ï¿½?T", '"')
     .replaceAll("ï¿½?atÄ±", "Çatı")
+    .replaceAll("ï¿½?", "Ç")
+    .replaceAll("?", "")
     .replaceAll("saï¿½YlanmÄ±ï¿½YtÄ±r", "sağlanmıştır")
     .replaceAll("\uFFFD", "");
 
@@ -75,16 +98,44 @@ function decodeMojibake(value: string): string {
   return normalized;
 }
 
+function cleanDisplayText(value: string): string {
+  return decodeMojibake(value)
+    .replaceAll("�", "")
+    .replaceAll("ï¿½", "")
+    .replaceAll("?", "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+([,.;:!?])/g, "$1")
+    .trim();
+}
+
+function normalizeLookupKey(value: string): string {
+  return cleanDisplayText(value)
+    .toLocaleLowerCase("tr-TR")
+    .replaceAll("ı", "i")
+    .replaceAll("ğ", "g")
+    .replaceAll("ü", "u")
+    .replaceAll("ş", "s")
+    .replaceAll("ö", "o")
+    .replaceAll("ç", "c")
+    .replaceAll(/[^a-z0-9]+/g, "-")
+    .replaceAll(/^-+|-+$/g, "");
+}
+
 function humanCountryName(country: string): string {
   const labels: Record<string, string> = {
     turkiye: "TÜRKİYE",
+    azerbaycan: "AZERBAYCAN",
+    bulgaristan: "BULGARİSTAN",
+    cezayir: "CEZAYİR",
     katar: "KATAR",
     "suudi-arabistan": "SUUDİ ARABİSTAN",
     "birlesik-arap-emirlikleri": "BİRLEŞİK ARAP EMİRLİKLERİ",
     umman: "UMMAN",
+    kuveyt: "KUVEYT",
     rusya: "RUSYA",
     kazakistan: "KAZAKİSTAN",
     irak: "IRAK",
+    gana: "GANA",
     gambia: "GAMBİA",
     kongo: "KONGO",
     niger: "NİJER",
@@ -92,13 +143,20 @@ function humanCountryName(country: string): string {
     cirad: "ÇAD",
     cebelitarik: "CEBELİTARIK",
     gurcistan: "GÜRCİSTAN",
+    letonya: "LETONYA",
+    litvanya: "LİTVANYA",
+    malta: "MALTA",
+    ozbekistan: "ÖZBEKİSTAN",
+    pakistan: "PAKİSTAN",
+    turkmenistan: "TÜRKMENİSTAN",
     isvec: "İSVEÇ",
     ukrayna: "UKRAYNA",
     fas: "FAS",
     almanya: "ALMANYA",
   };
 
-  return labels[country] ?? decodeMojibake(country.toUpperCase());
+  const key = normalizeLookupKey(country);
+  return labels[key] ?? cleanDisplayText(country.toUpperCase());
 }
 
 function humanClassName(classKey: string, className: string): string {
@@ -119,17 +177,26 @@ function humanClassName(classKey: string, className: string): string {
     tunel: "TÜNEL",
     "veri-merkezi": "VERİ MERKEZİ",
     tersane: "TERSANE",
+    okul: "OKUL",
+    villa: "VİLLA",
+    altyapi: "ALTYAPI",
+    "demir-yolu-tuneli": "DEMİR YOLU TÜNELİ",
+    "karayolu-tuneli": "KARAYOLU TÜNELİ",
+    havalimani: "HAVALİMANI",
+    ibadethane: "İBADETHANE",
   };
 
-  return labels[classKey] ?? decodeMojibake(className);
+  const key = normalizeLookupKey(classKey);
+  return labels[key] ?? cleanDisplayText(className);
 }
 
 const sanitizedReferences = references.map((item) => ({
   ...item,
-  title: decodeMojibake(item.title),
-  description: decodeMojibake(item.description),
+  title: cleanDisplayText(item.title),
+  description: cleanDisplayText(item.description),
   countryName: humanCountryName(item.country),
   className: humanClassName(item.classKey, item.className),
+  productNames: item.productNames.map((p) => cleanDisplayText(p)),
 }));
 
 function uniqueOptions(items: { key: string; label: string }[]): { value: string; label: string }[] {
@@ -150,10 +217,13 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
 
   return (
     <main>
-      <section className="relative flex min-h-[420px] items-end overflow-hidden">
+      <section className="relative flex min-h-[540px] items-end overflow-hidden">
         <Image src="/images/page-hero/referanslar.jpg" alt="" fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/30" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-0 pt-32 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-[#4e525c]/28" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-36">
           <nav className="mb-8 flex items-center gap-2 text-xs text-white/40">
             <Link href={`/${locale}`} className="transition-colors hover:text-white/70">{t.breadcrumbHome}</Link>
             <span>/</span>
@@ -161,15 +231,20 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
             <span>/</span>
             <span className="text-white/60">{t.breadcrumbPage}</span>
           </nav>
-          <div className="max-w-2xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 backdrop-blur-sm">
+          <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">{t.badge}</span>
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
-            <p className="mt-4 text-base leading-relaxed text-white/50">{t.heroDesc}</p>
+            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
+            <p className="mt-6 max-w-[54ch] text-[18px] leading-[1.62] text-white/72">{t.heroDesc}</p>
           </div>
-          <div className="mt-10 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-dark/40 backdrop-blur-sm">
+        </div>
+      </section>
+
+      <section className="bg-[#ecebe6] py-5 sm:py-6">
+        <div className="mx-auto max-w-7xl rounded-2xl border border-ink/10 bg-[#f8f5ed] px-4 shadow-[0_12px_26px_-20px_rgba(15,20,30,0.26)] sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 divide-y divide-ink/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
             {[
               { value: `${sanitizedReferences.length}+`, label: t.completedProjects },
               { value: `${countryCount}`, label: t.country },
@@ -177,7 +252,7 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
             ].map((s) => (
               <div key={s.label} className="py-5 text-center">
                 <p className="text-xl font-bold text-primary sm:text-2xl">{s.value}</p>
-                <p className="mt-0.5 text-[11px] font-medium uppercase tracking-wider text-white/40">{s.label}</p>
+                <p className="mt-0.5 text-[11px] font-medium uppercase tracking-wider text-secondary/50">{s.label}</p>
               </div>
             ))}
           </div>

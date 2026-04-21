@@ -54,7 +54,7 @@ export default async function DumanKontrol({ params }: { params: Promise<{ local
           </div>
 
           {/* Stats */}
-          <div className="mt-10 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-dark/40 backdrop-blur-sm">
+          <div className="mt-10 grid grid-cols-1 divide-y divide-white/10 border-t border-white/10 bg-dark/40 backdrop-blur-sm sm:grid-cols-3 sm:divide-x sm:divide-y-0">
             {t.hero.stats.map((s: { value: string; label: string }) => (
               <div key={s.label} className="py-5 text-center">
                 <p className="text-lg font-bold text-primary sm:text-xl">{s.value}</p>

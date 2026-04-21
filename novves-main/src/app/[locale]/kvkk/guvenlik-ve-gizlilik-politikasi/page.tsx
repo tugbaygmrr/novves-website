@@ -15,7 +15,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
   return (
     <main>
       {/* Hero */}
-      <section className="relative flex min-h-[420px] items-end overflow-hidden">
+      <section className="relative flex min-h-[540px] items-end overflow-hidden">
         <Image
           src="/images/page-hero/ekibimiz.jpg"
           alt=""
@@ -24,9 +24,12 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/30" />
+        <div className="absolute inset-0 bg-[#4e525c]/28" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-32 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-36">
           <nav className="mb-8 flex items-center gap-2 text-xs text-white/40">
             <Link
               href={`/${locale}`}
@@ -42,35 +45,31 @@ export default async function GuvenlikVeGizlilikPolitikasi({
               KVKK
             </Link>
             <span>/</span>
-            <span className="text-white/60">
-              Guvenlik ve Gizlilik Politikasi
-            </span>
+            <span className="text-white/60">Güvenlik ve Gizlilik Politikası</span>
           </nav>
 
-          <div className="max-w-2xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 backdrop-blur-sm">
+          <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">
                 KVKK
               </span>
             </div>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
-              Guvenlik ve Gizlilik{" "}
-              <span className="text-primary">Politikasi</span>
+            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+              Güvenlik ve Gizlilik <span className="text-primary">Politikası</span>
             </h1>
-            <p className="mt-4 text-base leading-relaxed text-white/50">
-              NOVVES Elektrik Motor A.S. guvenlik ve gizlilik politikasi
-              hakkinda detayli bilgi
+            <p className="mt-6 max-w-[54ch] text-[18px] leading-[1.62] text-white/72">
+              NOVVES Elektrik Motor A.Ş. güvenlik ve gizlilik politikası hakkında detaylı bilgi.
             </p>
           </div>
         </div>
       </section>
 
       {/* Content */}
-      <section className="bg-white py-20">
+      <section className="bg-[#ecebe6] py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {/* GUVENLIK POLITIKASI */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h2 className="mb-6 text-2xl font-bold text-dark">
               GUVENLIK POLITIKASI
             </h2>
@@ -106,7 +105,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* GIZLILIK POLITIKASI */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h2 className="mb-6 text-2xl font-bold text-dark">
               GIZLILIK POLITIKASI
             </h2>
@@ -130,7 +129,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 1 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               1. Kisisel Verilerin Korunmasi
             </h3>
@@ -146,7 +145,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 2 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               2. Elektronik Iletiler
             </h3>
@@ -162,7 +161,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 3 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               3. Log Verileri, Cerezler (Cookies) ve Web Isaretcileri
             </h3>
@@ -192,7 +191,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 4 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               4. Verilerinizin Kullanim Amaclari
             </h3>
@@ -221,7 +220,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 5 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               5. Veri Guvenligi
             </h3>
@@ -248,7 +247,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 6 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               6. Siber Guvenligin Saglanmasi
             </h3>
@@ -283,7 +282,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 7 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               7. Kisisel Veri Guvenliginin Takibi
             </h3>
@@ -351,7 +350,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 8 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               8. Kisisel Veri Iceren Ortamlarin Guvenliginin Saglanmasi
             </h3>
@@ -392,7 +391,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 9 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               9. Bilgi Teknoloji Sistemleri Tedariqi, Gelistirme ve Bakimi
             </h3>
@@ -433,7 +432,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 10 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               10. Kisisel Verilerin Yedeklenmesi
             </h3>
@@ -469,7 +468,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
           </section>
 
           {/* Section 11 */}
-          <section className="mb-12">
+          <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
             <h3 className="mb-4 text-lg font-bold text-dark">
               11. Veri Aktarimlari
             </h3>
@@ -548,20 +547,20 @@ export default async function GuvenlikVeGizlilikPolitikasi({
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-dark py-14 text-center">
+      <section className="bg-dark py-16 text-center">
         <div className="mx-auto max-w-2xl px-4">
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href={`/${locale}/kvkk`}
-              className="rounded border border-white/20 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:border-primary hover:text-primary"
+              className="rounded-lg border border-white/20 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:border-primary hover:text-primary"
             >
               KVKK
             </Link>
             <Link
               href={`/${locale}/iletisim`}
-              className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e55a28]"
+              className="rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e55a28]"
             >
-              Iletisim
+              İletişim
             </Link>
           </div>
         </div>

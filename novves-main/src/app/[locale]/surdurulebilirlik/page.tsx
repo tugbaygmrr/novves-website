@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../dictionaries";
 
-const sdgImages = ["/images/sdg11.jpg", "/images/sdg12.jpg", "/images/sdg13.jpg"];
+const sdgImages = ["/images/sdg11-custom.png", "/images/sdg12-custom.png", "/images/sdg13-custom.png"];
 
 export default async function Surdurulebilirlik({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -44,7 +44,7 @@ export default async function Surdurulebilirlik({ params }: { params: Promise<{ 
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-start gap-4 rounded-xl border border-ink/10 bg-white/80 p-4 shadow-[0_14px_38px_-30px_rgba(15,20,30,0.25)] md:grid-cols-[minmax(220px,300px),1fr] sm:p-4">
             <div className="relative overflow-hidden rounded-lg border border-ink/10 bg-[#f3f1ea]">
-              <Image src="/images/surdurulebilirlik-1-novves.jpg" alt={t.title} width={600} height={400} className="h-[170px] w-full object-cover mix-blend-multiply sm:h-[190px]" priority />
+              <Image src="/images/her-novves-fan.png" alt={t.title} width={600} height={400} className="h-[170px] w-full object-cover sm:h-[190px]" priority />
             </div>
             <div className="space-y-2">
               <h2 className="text-lg font-bold tracking-tight text-dark sm:text-xl">

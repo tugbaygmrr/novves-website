@@ -34,8 +34,8 @@ export function SolutionsCarousel({
   };
 
   return (
-    <div className="relative">
-      <div className="pointer-events-none absolute -left-3 -right-3 top-1/2 z-20 flex -translate-y-1/2 items-center justify-between sm:-left-4 sm:-right-4 lg:-left-5 lg:-right-5">
+    <div className="relative px-1 sm:px-0">
+      <div className="pointer-events-none absolute left-0 right-0 top-1/2 z-20 flex -translate-y-1/2 items-center justify-between sm:-left-1 sm:-right-1 lg:-left-2 lg:-right-2">
         <button
           type="button"
           onClick={() => scrollCards("prev")}
@@ -60,14 +60,14 @@ export function SolutionsCarousel({
 
       <div
         ref={trackRef}
-        className="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain pb-2 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [touch-action:pan-x] [&::-webkit-scrollbar]:hidden"
       >
         {items.map((item, i) => (
           <Link
             key={item.key}
             href={`/${locale}/${basePath}/${item.slug}`}
             data-solution-card
-            className="group relative flex h-[220px] w-[calc(100%-1.25rem)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-[#d8d6cf] bg-white p-6 shadow-[0_16px_38px_-28px_rgba(14,18,28,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_22px_48px_-26px_rgba(17,27,44,0.34)] sm:w-[calc(50%-0.625rem)] lg:w-[calc((100%-3.75rem)/4)]"
+            className="group relative flex h-[220px] w-[calc(100%-1.25rem)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-[#d8d6cf] bg-white p-6 shadow-[0_16px_38px_-28px_rgba(14,18,28,0.28)] transition-all duration-300 hover:border-primary/30 hover:shadow-[0_22px_48px_-26px_rgba(17,27,44,0.34)] motion-reduce:transition-none sm:w-[calc(50%-0.625rem)] sm:hover:-translate-y-1 lg:w-[calc((100%-3.75rem)/4)]"
           >
             <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#1d2f4d]/95 via-primary/85 to-[#90a5bd]/90" />
             <span className="absolute right-5 top-4 text-[2rem] font-black leading-none text-[#d6d6d2]/45">

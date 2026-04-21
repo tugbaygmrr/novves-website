@@ -57,7 +57,7 @@ export default async function CfdAnalizi({ params }: { params: Promise<{ locale:
           </div>
 
           {/* Stats */}
-          <div className="mt-8 grid grid-cols-3 divide-x divide-white/10 border border-white/10 bg-dark/40 backdrop-blur-sm sm:mt-10">
+          <div className="mt-8 grid grid-cols-1 divide-y divide-white/10 border border-white/10 bg-dark/40 backdrop-blur-sm sm:mt-10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
             {t.hero.stats.map((s: { value: string; label: string }) => (
               <div key={s.label} className="py-4 text-center sm:py-5">
                 <p className="text-lg font-bold text-primary sm:text-xl">{s.value}</p>

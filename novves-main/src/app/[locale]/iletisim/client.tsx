@@ -146,16 +146,28 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
   return (
     <main>
       {/* ── Hero ───────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-dark py-28">
+      <section className="relative overflow-hidden bg-[#4a4f58] py-24 pt-40">
         {/* Hero background image */}
         <Image
           src="/images/page-hero/iletisim.jpg"
           alt=""
           fill
-          className="object-cover opacity-30"
+          className="object-cover"
           priority
         />
-        <div className="pointer-events-none absolute inset-0 bg-dark/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
+        <div
+          className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
+          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
@@ -215,14 +227,14 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
       </section>
 
       {/* ── Contact Grid ───────────────────────────────────── */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-[#ecebe6] py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-5 lg:gap-12">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-4">
             {/* ── Left: Contact Info ── */}
-            <div className="space-y-5 lg:col-span-2">
+            <div className="space-y-5">
 
               {/* Merkez Ofis */}
-              <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+              <div className="rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 shadow-sm">
                 <div className="mb-4 flex items-center gap-3">
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
                     <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.7} stroke="currentColor">
@@ -273,7 +285,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
               </div>
 
               {/* Fabrika */}
-              <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+              <div className="rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 shadow-sm">
                 <div className="mb-4 flex items-center gap-3">
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
                     <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.7} stroke="currentColor">
@@ -301,7 +313,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
               </div>
 
               {/* Çalışma Saatleri */}
-              <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+              <div className="rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 shadow-sm">
                 <div className="mb-4 flex items-center gap-3">
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
                     <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.7} stroke="currentColor">
@@ -329,7 +341,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
               </div>
 
               {/* Social */}
-              <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+              <div className="rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 shadow-sm">
                 <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-secondary">
                   {t.socialMedia}
                 </h3>
@@ -351,8 +363,8 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
             </div>
 
             {/* ── Right: Contact Form ── */}
-            <div className="lg:col-span-3">
-              <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm sm:p-10">
+            <div>
+              <div className="min-h-0 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 shadow-sm sm:min-h-[560px] sm:p-6 lg:min-h-[780px]">
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-secondary">
                     {t.formTitle}
@@ -465,7 +477,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
                     <textarea
                       id="message"
                       name="message"
-                      rows={5}
+                      rows={10}
                       placeholder={t.placeholderMessage}
                       value={formData.message}
                       onChange={handleChange}
@@ -496,7 +508,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
       </section>
 
       {/* ── Map ────────────────────────────────────────────── */}
-      <section className="bg-white py-16">
+      <section className="bg-[#ecebe6] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-8 text-xl font-bold text-secondary">{t.mapTitle}</h2>
 
@@ -525,7 +537,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
                   {t.openInMap}
                 </a>
               </div>
-              <div className="overflow-hidden rounded-2xl border border-gray-100 shadow-sm" style={{ height: "380px" }}>
+              <div className="overflow-hidden rounded-2xl border border-ink/10 shadow-sm" style={{ height: "380px" }}>
                 <iframe
                   title="Novves İstanbul"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.1!2d29.0952035!3d40.9800701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac75e28bb963d:0x7d993b6e02755dad!2sNOVVES+ELEKTR%C4%B0K+MOTOR+ANON%C4%B0M+%C5%9E%C4%B0RKET%C4%B0!5e0!3m2!1str!2str!4v1"
@@ -563,7 +575,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
                   {t.openInMap}
                 </a>
               </div>
-              <div className="overflow-hidden rounded-2xl border border-gray-100 shadow-sm" style={{ height: "380px" }}>
+              <div className="overflow-hidden rounded-2xl border border-ink/10 shadow-sm" style={{ height: "380px" }}>
                 <iframe
                   title="Novves Yalova"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8!2d29.4048049!3d40.6808946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cae34dfa345cc7:0x688866be4ac613ae!2sNOVVES+ELEKTR%C4%B0K+MOTOR+ANON%C4%B0M+%C5%9E%C4%B0RKET%C4%B0!5e0!3m2!1str!2str!4v1"

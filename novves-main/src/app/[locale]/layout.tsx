@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { CookieConsent } from "@/components/cookie-consent";
+import { SetHtmlLang } from "@/components/set-html-lang";
 import { hasLocale, getDictionary } from "./dictionaries";
 
 export const metadata: Metadata = {
@@ -12,6 +13,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"
   ),
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#e9eae2",
 };
 
 export const dynamic = "force-dynamic";
@@ -34,13 +41,12 @@ export default async function LocaleLayout({
   const dict = await getDictionary(locale);
 
   return (
-    <html lang={locale} className="h-full antialiased">
-      <body className="min-h-full flex flex-col font-sans">
-        <Navbar locale={locale} dict={dict.common} />
-        <div className="flex-1">{children}</div>
-        <Footer locale={locale} dict={dict.common} />
-        <CookieConsent locale={locale} />
-      </body>
-    </html>
+    <>
+      <SetHtmlLang locale={locale} />
+      <Navbar locale={locale} dict={dict.common} />
+      <div className="min-w-0 flex-1">{children}</div>
+      <Footer locale={locale} dict={dict.common} />
+      <CookieConsent locale={locale} />
+    </>
   );
 }

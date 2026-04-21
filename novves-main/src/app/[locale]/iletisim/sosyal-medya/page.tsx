@@ -490,16 +490,17 @@ export default async function SosyalMedya({
   const copy = pageCopy[locale];
 
   return (
-    <main className="bg-white">
-      <section className="relative overflow-hidden bg-[#07111f] text-white">
+    <main className="bg-[#ecebe6]">
+      <section className="relative overflow-hidden bg-[#4a4f58] text-white py-26 pt-40">
         <div
-          className="absolute inset-0 opacity-[0.08]"
+          className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.65) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.65) 1px, transparent 1px)",
-            backgroundSize: "54px 54px",
+              "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
           }}
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
         <div
           className="absolute left-[-10%] top-[-15%] h-[26rem] w-[26rem] rounded-full blur-3xl"
           style={{
@@ -515,7 +516,7 @@ export default async function SosyalMedya({
           }}
         />
 
-        <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-28 sm:px-6 lg:px-8 lg:pb-24 lg:pt-36">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <nav className="mb-8 flex items-center gap-2 text-xs text-white/45">
             <Link href={`/${locale}`} className="transition-colors hover:text-white/80">
               {t.breadcrumbHome}
@@ -531,8 +532,8 @@ export default async function SosyalMedya({
             <span className="text-white/70">{t.breadcrumbSocialMedia}</span>
           </nav>
 
-          <div className="grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_480px] lg:items-end">
-            <div className="max-w-3xl">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+            <div className="max-w-none">
               <div className="inline-flex items-center gap-3 rounded-full border border-white/12 bg-white/6 px-4 py-2 backdrop-blur-md">
                 <span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_14px_rgba(255,107,53,0.9)]" />
                 <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white/80">
@@ -540,7 +541,7 @@ export default async function SosyalMedya({
                 </span>
               </div>
 
-              <h1 className="mt-7 max-w-3xl text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+              <h1 className="mt-7 max-w-none text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-[5.4rem]">
                 {t.title1}
                 <span className="text-primary"> {t.title2}</span>
               </h1>
@@ -598,9 +599,9 @@ export default async function SosyalMedya({
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative lg:self-start">
               <div className="absolute inset-x-8 top-8 h-48 rounded-full bg-primary/12 blur-3xl" />
-              <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] p-5 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)] backdrop-blur-md">
+              <div className="relative h-full overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] p-5 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)] backdrop-blur-md">
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
                   <div>
                     <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/48">
@@ -655,9 +656,9 @@ export default async function SosyalMedya({
         </div>
       </section>
 
-      <section className="bg-[#f4f7fb] py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:px-8">
-          <div className="rounded-[32px] bg-[#081324] p-8 text-white shadow-[0_35px_100px_-45px_rgba(15,23,42,0.7)] sm:p-10">
+      <section className="bg-[#ecebe6] py-20">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-stretch lg:px-8">
+          <div className="flex h-full min-h-0 flex-col rounded-[32px] bg-[#081324] p-8 text-white shadow-[0_35px_100px_-45px_rgba(15,23,42,0.7)] sm:p-10">
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary/90">
               {copy.highlightsLabel}
             </p>
@@ -667,6 +668,15 @@ export default async function SosyalMedya({
             <p className="mt-5 max-w-xl text-sm leading-7 text-white/58">
               {copy.highlightsDesc}
             </p>
+            <div className="mt-auto border-t border-white/10 pt-8">
+              <Image
+                src="/images/novves-footer-logo.svg"
+                alt="NOVVES"
+                width={180}
+                height={48}
+                className="h-10 w-auto opacity-90"
+              />
+            </div>
           </div>
 
           <div className="grid gap-4">
@@ -695,7 +705,7 @@ export default async function SosyalMedya({
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-5 border-b border-slate-200 pb-10 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">

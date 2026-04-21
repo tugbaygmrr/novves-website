@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { SolutionsCarousel } from "@/components/solutions-carousel";
 import { getDictionary, hasLocale } from "../dictionaries";
+import heroFactoryImage from "../../../../IMG-20240401-WA0008.jpg";
 
 export const metadata: Metadata = {
   title: "Teknik Merkez | Novves",
@@ -9,26 +12,22 @@ export const metadata: Metadata = {
     "NOVVES teknik merkez — blog, doküman kütüphanesi, fan seçici ve patentlerimiz.",
 };
 
-const technicalItems: { key: string; slug: string; icon: string }[] = [
+const technicalItems: { key: string; slug: string }[] = [
   {
     key: "blog",
     slug: "blog",
-    icon: "M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25",
   },
   {
     key: "dokumanKutuphanesi",
     slug: "dokuman-kutuphanesi",
-    icon: "M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z",
   },
   {
     key: "fanSecici",
     slug: "fan-secici",
-    icon: "M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75",
   },
   {
     key: "patentlerimiz",
     slug: "patentlerimiz",
-    icon: "M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z",
   },
 ];
 
@@ -55,7 +54,16 @@ export default async function TeknikMerkezPage({
   return (
     <main>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-secondary py-24 pt-40">
+      <section className="relative overflow-hidden bg-[#4a4f58] py-24 pt-40">
+        <Image
+          src={heroFactoryImage}
+          alt=""
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
         <div
           className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
           style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
@@ -108,38 +116,15 @@ export default async function TeknikMerkezPage({
             <div className="hidden h-px flex-1 bg-gray-200 sm:block" />
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {technicalItems.map((item, i) => (
-              <Link
-                key={item.key}
-                href={`/${locale}/teknik-merkez/${item.slug}`}
-                className="group relative overflow-hidden rounded-xl bg-white p-8 ring-1 ring-gray-100 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:ring-primary/20"
-              >
-                <span className="absolute right-6 top-6 text-3xl font-black text-gray-100/80">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/8 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-dark">{getTechnicalName(item.key)}</h3>
-                <div className="mt-5 flex items-center gap-2">
-                  <span className="h-px w-6 bg-primary/40 transition-all duration-300 group-hover:w-10 group-hover:bg-primary" />
-                  <svg
-                    className="h-3.5 w-3.5 text-primary/50 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-primary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2.5}
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </div>
-                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary transition-all duration-500 group-hover:w-full" />
-              </Link>
-            ))}
-          </div>
+          <SolutionsCarousel
+            locale={locale}
+            basePath="teknik-merkez"
+            items={technicalItems.map((item) => ({
+              key: item.key,
+              slug: item.slug,
+              name: getTechnicalName(item.key),
+            }))}
+          />
         </div>
       </section>
 

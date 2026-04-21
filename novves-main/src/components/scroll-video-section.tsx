@@ -375,7 +375,7 @@ export function ScrollVideoSection({
                   {startCard.titleLine1}
                 </span>
                 <span
-                  className="mt-1 block hyphens-none whitespace-nowrap font-semibold"
+                  className="mt-1 block hyphens-none break-words font-semibold"
                   style={{
                     fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
                     lineHeight: 1.08,
@@ -404,11 +404,11 @@ export function ScrollVideoSection({
               </p>
 
               {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                <div className="relative mt-8 flex w-full flex-nowrap items-center gap-4">
+                <div className="relative mt-8 flex w-full flex-col items-stretch gap-3 min-[520px]:flex-row min-[520px]:flex-wrap min-[520px]:items-center">
                   {startCard.ctaPrimary && (
                     <Link
                       href={`/${locale}/iletisim`}
-                      className="btn-3d btn-3d-dark group inline-flex items-center gap-2.5 whitespace-nowrap rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-[1px] hover:border-primary hover:bg-primary hover:shadow-[0_10px_24px_-10px_rgba(255,107,53,0.55)]"
+                      className="btn-3d btn-3d-dark group inline-flex items-center justify-center gap-2.5 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.16em] text-white transition-all duration-300 hover:border-primary hover:bg-primary hover:shadow-[0_10px_24px_-10px_rgba(255,107,53,0.55)] min-[520px]:justify-start min-[520px]:whitespace-nowrap motion-reduce:transition-none sm:hover:-translate-y-[1px]"
                     >
                       {startCard.ctaPrimary}
                       <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -420,7 +420,7 @@ export function ScrollVideoSection({
                   {startCard.ctaSecondary && (
                     <Link
                       href={`/${locale}/urunler`}
-                      className="group ml-auto inline-flex items-center gap-2.5 whitespace-nowrap border-b border-white/45 pb-1 text-[11px] font-medium uppercase tracking-[0.16em] text-white/88 transition-colors duration-300 hover:border-primary hover:text-primary"
+                      className="group inline-flex items-center justify-center gap-2.5 border-b border-white/45 pb-1 text-center text-[11px] font-medium uppercase tracking-[0.16em] text-white/88 transition-colors duration-300 min-[520px]:ml-auto min-[520px]:justify-start min-[520px]:whitespace-nowrap hover:border-primary hover:text-primary"
                     >
                       {startCard.ctaSecondary}
                       <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -435,12 +435,14 @@ export function ScrollVideoSection({
         )}
 
         {startCard?.stats && startCard.stats.length > 0 && (
-          <div ref={statsRef} className="absolute bottom-0 left-0 right-0 z-25 bg-sand-100 border-t border-ink/15">
-            <div className="grid grid-cols-4 divide-x divide-ink/10">
+          <div ref={statsRef} className="absolute bottom-0 left-0 right-0 z-25 border-t border-ink/15 bg-sand-100">
+            <div className="grid grid-cols-2 gap-px bg-ink/10 sm:grid-cols-4">
               {startCard.stats.map((s) => (
-                <div key={s.label} className="px-6 py-5 xl:px-10">
-                  <p className="font-bold text-[2.2rem] leading-none text-ink">{s.value}</p>
-                  <p className="mt-2 font-mono-eng text-[9.5px] uppercase tracking-[0.22em] text-ink/55">{s.label}</p>
+                <div key={s.label} className="min-w-0 bg-sand-100 px-4 py-4 sm:px-6 sm:py-5 xl:px-10">
+                  <p className="font-bold text-[clamp(1.35rem,4vw,2.2rem)] leading-none text-ink">{s.value}</p>
+                  <p className="mt-2 font-mono-eng text-[9px] uppercase leading-snug tracking-[0.2em] text-ink/55 sm:text-[9.5px] sm:tracking-[0.22em]">
+                    {s.label}
+                  </p>
                 </div>
               ))}
             </div>
@@ -496,13 +498,16 @@ export function ScrollVideoSection({
                     {endCard.desc}
                   </p>
 
-                  <div ref={endCardSpecsRef} className="mt-7 grid grid-cols-3 border-y border-y-[1px]">
+                  <div
+                    ref={endCardSpecsRef}
+                    className="mt-7 grid grid-cols-1 divide-y divide-white/10 border-y border-y-[1px] min-[900px]:grid-cols-3 min-[900px]:divide-x min-[900px]:divide-y-0"
+                  >
                     {[
                       { v: endCard.spec1Value, l: endCard.spec1Label },
                       { v: endCard.spec2Value, l: endCard.spec2Label },
                       { v: endCard.spec3Value, l: endCard.spec3Label },
                     ].map((s) => (
-                      <div key={s.l} className="py-4 pl-4 first:pl-0">
+                      <div key={s.l} className="min-w-0 py-4 pl-0 min-[900px]:pl-4 min-[900px]:first:pl-0">
                         <p className="text-[1.8rem] font-bold leading-none" style={{ color: "var(--c-spec-v)" }}>
                           {s.v}
                         </p>
@@ -665,7 +670,7 @@ function ProductCard({ endCard, imageSrc }: { endCard: EndCard; imageSrc: string
       </div>
 
       {/* Specs */}
-      <div className="grid grid-cols-3 divide-x divide-ink/10 border-t border-ink/10">
+      <div className="grid grid-cols-1 divide-y divide-ink/10 border-t border-ink/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {[
           { v: endCard.spec1Value, l: endCard.spec1Label },
           { v: endCard.spec2Value, l: endCard.spec2Label },

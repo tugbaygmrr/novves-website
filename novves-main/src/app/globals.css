@@ -75,6 +75,11 @@
   --font-mono: "JetBrains Mono", "SF Mono", "Menlo", monospace;
 }
 
+/* clip: yatay taşmayı keser; overflow:hidden gibi sticky + scroll-driven hero’yu bozmaz */
+html {
+  overflow-x: clip;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -108,12 +113,28 @@ body {
   transition: transform 180ms ease, box-shadow 220ms ease, filter 220ms ease, background-color 220ms ease, border-color 220ms ease;
 }
 
-.btn-3d:hover {
-  transform: translateY(-2px);
+/* Hover lift only on fine pointers — avoids “sticky” hover on touch after scroll */
+@media (hover: hover) and (pointer: fine) {
+  .btn-3d:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .btn-3d:active {
   transform: translateY(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-3d,
+  .btn-3d-primary,
+  .btn-3d-dark,
+  .btn-3d-glass {
+    transition-duration: 0.01ms !important;
+  }
+
+  .btn-3d:hover {
+    transform: none !important;
+  }
 }
 
 .btn-3d-primary {
