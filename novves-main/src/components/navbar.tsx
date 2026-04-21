@@ -228,7 +228,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
     >
       <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-6 sm:px-8 lg:px-10">
         {/* Logo */}
-        <Link href={`/${locale}`} target="deneme" className="flex-shrink-0">
+        <Link href={`/${locale}`} className="flex-shrink-0">
           <Image
             src={inverted ? "/images/novves-footer-logo.svg" : "/images/novves-logo.svg"}
             alt="Novves"
