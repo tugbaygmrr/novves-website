@@ -1,0 +1,333 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "CFD Analysis | Novves",
+      "description": "NOVVES CFD (Computational Fluid Dynamics) analyses — real scenarios, real data, safe solutions."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "current": "CFD Analysis"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "CFD",
+      "titleHighlight": "Analysis",
+      "subtitle": "Real Scenarios, Real Data, Safe Solutions.",
+      "stats": [
+        { "value": "3D", "label": "Simulation Model" },
+        { "value": "5", "label": "Analysis Parameters" },
+        { "value": "EN 12101-3", "label": "Standard Verification" }
+      ]
+    },
+    "intro": "At NOVVES, we don't just manufacture fans — we also provide project-specific, engineering-based ventilation solutions. At the core of these solutions lie CFD (Computational Fluid Dynamics) analyses that allow us to test our designs before implementing them on site.",
+    "whyCfd": {
+      "sectionLabel": "Methodology",
+      "title": "Why CFD Analysis?",
+      "items": [
+        "Fan system performance is simulated according to real environmental conditions.",
+        "Fire scenarios such as smoke, temperature and gas propagation are pre-tested.",
+        "Vital variables like visibility distance, temperature rise and CO concentration are analyzed.",
+        "Regulatory compliance and safe evacuation times are verified."
+      ],
+      "resultLabel": "Result",
+      "resultText": "Correct placement, correct number of fans, optimum energy usage and maximum safety are ensured."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Analysis Scope",
+      "title": "Simulation Parameters",
+      "items": [
+        {
+          "title": "Air Velocity Distribution",
+          "subtitle": "Velocity Analysis",
+          "text": "The direction, speed and distribution of airflow within the enclosed space has been modeled in three dimensions. The aim is to ensure air circulation throughout the entire environment with the effect of jet fans."
+        },
+        {
+          "title": "Temperature Change",
+          "subtitle": "Temperature Distribution",
+          "text": "How the ambient temperature changes at human level height during a fire has been analyzed. Critical temperature limits have been evaluated and risks have been identified for emergency management."
+        },
+        {
+          "title": "Visibility Assessment",
+          "subtitle": "Visibility Analysis",
+          "text": "How long evacuation routes remain visible under heavy smoke has been analyzed. The rate of visibility reduction has been measured to verify evacuation safety."
+        },
+        {
+          "title": "Carbon Monoxide Dispersion",
+          "subtitle": "CO Concentration",
+          "text": "How exhaust gas CO accumulates over time in enclosed environments like parking garages and how it is evacuated by the fan system has been modeled."
+        },
+        {
+          "title": "Smoke Propagation",
+          "subtitle": "Smoke Propagation",
+          "text": "The direction and speed of smoke spread after a fire and how it is directed with the help of jet fans has been analyzed. Smoke layer formation and movement have been simulated in detail."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Value Proposition",
+      "title": "What You Gain with NOVVES",
+      "items": [
+        "Regulatory compliance verification",
+        "Engineering-based decisions for fan positioning",
+        "Pre-analysis of temperature, CO and visibility limits for evacuation safety",
+        "Clear visibility of system performance before installation",
+        "Project-based technical reporting and data-supported presentation"
+      ],
+      "quote": "Base your design not only on experience, but also on data. Build safe, powerful and optimized ventilation systems with NOVVES engineering.",
+      "ctaPrimary": "Create Project Request",
+      "ctaSecondary": "Smoke Control Design"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "Commissioning | Novves",
+      "description": "NOVVES post-sales commissioning service — installation control, performance tests, optimization and training."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "current": "Commissioning"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Commission",
+      "titleHighlight": "ing",
+      "subtitle": "We guarantee full performance operation of the system after installation.",
+      "stats": [
+        { "value": "8", "label": "Service Steps" },
+        { "value": "4", "label": "Phases" },
+        { "value": "7/24", "label": "Support" },
+        { "value": "PDF", "label": "Reporting" }
+      ]
+    },
+    "intro": [
+      "At Novves, we don't just produce quality products; we also guarantee full performance operation of the system after installation.",
+      "Our post-sales commissioning service is provided to ensure our customers use our products in the most efficient and safe way."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Process",
+      "title": "Service Content",
+      "items": [
+        { "step": "Product installation control and mechanical compliance inspection", "phase": "Control" },
+        { "step": "Electrical connections and grounding compliance check", "phase": "Control" },
+        { "step": "Initial fan startup and motor direction verification", "phase": "Startup" },
+        { "step": "Speed control device / frequency inverter settings configuration", "phase": "Startup" },
+        { "step": "Performing basic performance tests such as flow rate, pressure, temperature", "phase": "Test" },
+        { "step": "Fan optimization according to ambient conditions", "phase": "Test" },
+        { "step": "Brief training on system operation and basic maintenance information for the user", "phase": "Training" },
+        { "step": "Recording all tests and procedures and reporting with commissioning form", "phase": "Reporting" }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Advantages",
+      "title": "Why Is It Important?",
+      "items": [
+        { "title": "Warranty Activation", "text": "Activation of the warranty period" },
+        { "title": "Fault Prevention", "text": "Prevention of faults that may arise from installation errors" },
+        { "title": "Efficiency", "text": "Improvement of energy efficiency and device lifespan" },
+        { "title": "Optimization", "text": "Operating the fan in the most suitable way according to ambient conditions" }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Service Request",
+      "title": "Contact us for commissioning service",
+      "contactForm": "Contact Form",
+      "weekdays": "Weekdays 08:30 – 18:00",
+      "emailSupport": "Technical support via email"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Smoke Control System Design | Novves",
+      "description": "Jet fan system design — air flow, exhaust extraction and smoke control in enclosed parking garages."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "current": "Smoke Control"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Smoke Control",
+      "titleHighlight": "System Design",
+      "stats": [
+        { "value": "EN 12101-3", "label": "Standard Compliance" },
+        { "value": "300°C / 2h", "label": "Fire Resistance" },
+        { "value": "CFD", "label": "Simulation Supported" }
+      ]
+    },
+    "intro": [
+      "The jet fan system is a mechanical ventilation system used to direct airflow, evacuate exhaust gases and control smoke in the event of a fire in enclosed parking garages.",
+      "This system has been developed by adapting tunnel ventilation technologies and is especially preferred in large and complex parking structures.",
+      "Jet fans create air movement over a wide area by blowing air at high speed, pushing and dragging the air mass in front of them. This way, harmful gases such as carbon monoxide (CO) from vehicles are effectively evacuated. During a fire, jet fans prevent the spread of smoke, ensuring the safety of escape routes and facilitating firefighter intervention."
+    ],
+    "components": {
+      "sectionLabel": "System Architecture",
+      "title": "Jet Fan System Components",
+      "items": [
+        {
+          "title": "Jet Fans",
+          "text": "The main component of the system. Mounted on the ceiling. Creates airflow to direct polluted air to exhaust fans. Two types are available: axial and radial. Axial type can operate in single or dual direction."
+        },
+        {
+          "title": "Exhaust Fans",
+          "text": "Expels the polluted or smoky air directed by jet fans to the outside in a controlled manner."
+        },
+        {
+          "title": "Fresh Air Fans",
+          "text": "Used for pressurization to provide clean air in place of polluted air and to prevent smoke from reaching escape routes when natural openings are insufficient or not suitably positioned."
+        },
+        {
+          "title": "Sensors",
+          "text": "CO, smoke and heat sensors collect data from their zone and transmit this information to the MCC panel according to set limits."
+        },
+        {
+          "title": "Automation and Control System (MCC Panel)",
+          "text": "The system that enables automatic activation of fans based on data from sensors. During a fire, it ensures the system operates according to predetermined scenarios. PLC controlled and can be integrated with BMS (building management system)."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "Why Jet Fan?",
+      "title": "System Advantages",
+      "subtitle": "Jet fan systems offer significant advantages over traditional duct-type ventilation systems, especially in enclosed parking garages and tunnel systems.",
+      "items": [
+        { "title": "No duct requirement", "text": "Jet fan systems work by directing air, so there is no need for air ducts, grilles or diffusers." },
+        { "title": "Space saving", "text": "In parking garages with low ceiling heights, duct systems can cause problems as they take up space. Jet fans take up less space with their compact dimensions." },
+        { "title": "Energy efficiency", "text": "Working with CO sensors, they only operate when needed, reducing energy consumption. Fans can run at variable speeds, providing optimized energy usage." },
+        { "title": "Smoke and heat extraction is under control", "text": "Operating at high speed during a fire, it controls the spread of smoke. It prevents escape routes from filling with smoke, ensuring life safety. It facilitates firefighter intervention." },
+        { "title": "Low maintenance cost", "text": "Without a duct system, cleaning and maintenance is easier. Fewer parts also reduces the risk of failure." },
+        { "title": "Easily positioned according to architecture", "text": "Redesigning the system for future changes is simpler." },
+        { "title": "Low initial investment cost", "text": "Since less equipment (ducts, grilles, diffusers, etc.) is used, the initial installation cost is lower compared to traditional systems." }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Engineering",
+      "title": "Important Design Factors",
+      "items": [
+        "The necessary precautions for efficient system operation are carefully controlled and designed from the first stage, and placement is installed considering all conditions.",
+        "In jet fan projects, important factors such as noise level, required air direction planning, absence of \"dead zones\" where fresh air cannot reach, ease of installation, and accessibility of evacuation and escape routes during a fire are considered in the placement of axial fans (smoke and heat extraction / fresh air) and jet fans.",
+        "In jet fan system design, adequate air change rates and air flow must be provided considering vehicle exhaust gases, pedestrian traffic and other factors. The correct position of jet fans must be placed to direct the system's airflow in the most efficient way."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "For Your Project",
+      "title": "Get smoke control system design support",
+      "cfdLink": "CFD Analysis",
+      "supportButton": "Technical Support Request"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Technical Service | Novves",
+      "description": "NOVVES technical service — post-sales support, fault resolution, spare parts supply and maintenance."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "current": "Technical Service"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Technical",
+      "titleHighlight": "Service",
+      "subtitle": "Fast response, reliable solution.",
+      "weekdays": "Weekdays 08:30 – 18:00",
+      "emailSupport": "Technical support via email"
+    },
+    "intro": "Novves Technical Service Department is at your service to provide fast and effective solutions for your post-sales support, fault resolution, spare parts supply and maintenance requests.",
+    "serviceTypes": {
+      "sectionLabel": "Our Scope",
+      "title": "Service Requests",
+      "items": [
+        "Installation and commissioning consultancy",
+        "Fault detection and on-site service",
+        "Periodic maintenance and inspection planning",
+        "Spare parts requests",
+        "Product usage and technical documentation support"
+      ]
+    },
+    "form": {
+      "sectionLabel": "Request",
+      "title": "Technical Service Form",
+      "description": "You can submit your service request by filling out the form. Our technical team will get back to you as soon as possible.",
+      "features": [
+        { "label": "Fast Response", "desc": "Response within 24 hours" },
+        { "label": "Expert Team", "desc": "Certified technical team" },
+        { "label": "Field Intervention", "desc": "Nationwide service network" }
+      ],
+      "labels": {
+        "name": "Full Name",
+        "company": "Company Name",
+        "phone": "Phone",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Your Message"
+      },
+      "submit": "Submit",
+      "successTitle": "Request Received",
+      "successMessage": "We will get back to you as soon as possible."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "On-Site Survey | Novves",
+      "description": "NOVVES on-site survey service - site inspection, measurement and analysis for project-specific ventilation solutions."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "current": "On-Site Survey"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "On-Site",
+      "titleHighlight": "Survey",
+      "subtitle": "The first step to accurate project design: on-site measurement, analysis and needs assessment."
+    },
+    "intro": "Accurate data is at the foundation of every ventilation project. NOVVES on-site survey service is the first and most critical step in designing the most efficient and regulation-compliant solution by examining your project needs on-site. Our expert engineers visit your facility to perform detailed measurement, observation and analysis.",
+    "steps": {
+      "sectionLabel": "Process",
+      "title": "Survey Steps",
+      "items": [
+        {
+          "title": "Appointment and Preliminary Information",
+          "desc": "We learn the general characteristics of your project. We conduct a preliminary meeting for facility type, area size and needs analysis."
+        },
+        {
+          "title": "Site Visit and Measurement",
+          "desc": "Our expert team visits the site to examine the space, take measurements and evaluate the existing infrastructure. Airflow directions, temperature distribution and current system status are analyzed."
+        },
+        {
+          "title": "Technical Analysis and Reporting",
+          "desc": "Ventilation requirement calculations, flow rate analyses and regulation compliance checks are performed on the collected data. A detailed survey report is prepared."
+        },
+        {
+          "title": "Solution Proposal and Project Design",
+          "desc": "Based on survey data, a project-specific proposal is presented with the most suitable system design, equipment selection and cost analysis."
+        },
+        {
+          "title": "Approval and Implementation Start",
+          "desc": "After approving your proposal, production, installation and commissioning processes are planned and put into practice."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Why Important",
+      "title": "Why Is On-Site Survey Necessary?",
+      "items": [
+        { "title": "Accurate Design", "desc": "Equipment sizing errors are inevitable in projects done without on-site measurement." },
+        { "title": "Cost Optimization", "desc": "Oversized or undersized equipment selection is prevented with real site data." },
+        { "title": "Regulatory Compliance", "desc": "Compliance of existing building conditions with regulatory requirements is verified on-site." },
+        { "title": "Integration Ease", "desc": "Solutions compatible with existing mechanical and electrical infrastructure can only be determined through a survey." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Free Survey",
+      "title": "Request an on-site survey for your project",
+      "subtitle": "Our expert engineering team visits your facility to perform needs analysis and measurements.",
+      "ctaButton": "Request a Survey"
+    }
+  }
+}

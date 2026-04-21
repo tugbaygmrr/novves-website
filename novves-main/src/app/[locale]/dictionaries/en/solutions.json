@@ -1,0 +1,921 @@
+{
+  "dumanIsiTahliye": {
+    "breadcrumbCurrent": "Smoke & Heat Extraction",
+    "badge": "Solutions",
+    "titleLine1": "Smoke & Heat Extraction",
+    "titleHighlight": "Systems",
+    "subtitle": "Controlled evacuation of smoke and heat during fires; regulation-compliant, engineering-supported, end-to-end solutions.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "CFD Analysis",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      { "value": "EN 12101-3", "label": "Standard Compliance" },
+      { "value": "F300/2H", "label": "Fire Resistance" },
+      { "value": "CFD", "label": "Simulation Supported" },
+      { "value": "113+", "label": "Completed Projects" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "The First Threat in a Fire is Smoke",
+    "whyImportantP1": "Fire statistics show that most casualties are caused not by flames, but by dense smoke and toxic gases. An effective smoke extraction system keeps escape routes visible and breathable; facilitates firefighter intervention; minimizes structural damage.",
+    "whyImportantP2": "NOVVES manages the entire process from design to commissioning with its own engineering team. CFD analysis is performed for each project to simulate fan placement, smoke spread scenarios, and evacuation times.",
+    "steps": [
+      { "label": "Survey & Analysis", "desc": "Site inspection, CFD simulation, regulation compliance check" },
+      { "label": "Engineering", "desc": "Fan selection, duct design, damper placement, automation scenario" },
+      { "label": "Production & Installation", "desc": "In-house production, professional on-site installation" },
+      { "label": "Commissioning & Maintenance", "desc": "Testing, reporting, periodic inspection and 24/7 service support" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Jet Fan Systems", "desc": "High temperature resistant axial and radial jet fans for air directing and smoke extraction in enclosed spaces." },
+      { "title": "Smoke Extraction Fans", "desc": "EN 12101-3 certified, F300/2H class fire resistance with 2 hours of continuous operation at 300\u00b0C." },
+      { "title": "Damper Systems", "desc": "Servo motor driven shaft smoke dampers and pressure relief dampers for fire and smoke zoning." },
+      { "title": "Sensors & Detection", "desc": "CO, smoke and heat sensors with zone-based data collection and limit value monitoring." },
+      { "title": "Automation Panels", "desc": "PLC controlled MCC panels, BMS integration, scenario-based automatic fan management." },
+      { "title": "CFD Engineering", "desc": "Project-specific computational fluid dynamics analysis, fire scenario simulation and reporting." }
+    ],
+    "midCtaTitle": "Request a survey and quote for your project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "EN 12101-3 Compliance", "desc": "All systems are designed and certified in accordance with European fire safety standards." },
+      { "title": "F300/2H Fire Resistance", "desc": "2 hours of continuous operation at 300\u00b0C ensuring critical evacuation time is secured." },
+      { "title": "CFD Supported Design", "desc": "3D simulation for each project to verify smoke spread, temperature and visibility distance." },
+      { "title": "End-to-End Service", "desc": "Survey, engineering, production, installation, commissioning and periodic maintenance from a single source." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "The most suitable product combination is determined for each project.",
+    "areas": [
+      { "title": "Enclosed Car Parks", "description": "CO extraction + smoke evacuation during fires", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Highway and Railway Tunnels", "description": "Fire zoning and air directing", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Shopping Centers", "description": "Smoke control and extraction", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Stadiums and Convention Halls", "description": "Emergency smoke evacuation", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Industrial Production Facilities", "description": "Process-related hot gas extraction", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }, { "name": "OWL", "type": "Wall Type Fans", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "Hospitals and Healthcare Facilities", "description": "Smoke zoning in patient areas", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Airports and Metro Stations", "description": "Lower layer smoke extraction", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }, { "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }] },
+      { "title": "Warehouses and Logistics Centers", "description": "Smoke control in high volumes", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Power Plants & Generator Rooms", "description": "Exhaust against electrical fires", "products": [{ "name": "BEAR", "type": "Exproof Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
+      { "title": "Hotels and Residences (High-Rise)", "description": "Stairwell pressurization, smoke extraction", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "In which buildings is a smoke extraction system mandatory?", "a": "Smoke extraction systems are mandatory in enclosed car parks, shopping centers, high-rise buildings, tunnels, and industrial facilities according to fire regulations. Contact us for a project-specific needs analysis." },
+      { "q": "What does EN 12101-3 certification mean?", "a": "EN 12101-3 is the European standard that certifies the capacity of smoke and heat extraction fans to operate for a specified period under fire conditions (high temperature). NOVVES products are manufactured in accordance with this standard." },
+      { "q": "Why is CFD analysis necessary?", "a": "CFD analysis enables the simulation of jet fan placement, smoke spread scenarios, and evacuation times in a computer environment. This verifies system performance before installation and documents regulation compliance." },
+      { "q": "Can integration with existing systems be done?", "a": "Yes, NOVVES smoke extraction systems can be integrated with existing BMS infrastructure, fire detection panels, and automation systems." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Do you need a smoke extraction system?",
+    "finalCtaDesc": "Contact our expert engineering team for survey, CFD analysis, engineering and quotation processes.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "konforIklimlendirme": {
+    "breadcrumbCurrent": "Comfort HVAC",
+    "badge": "Solutions",
+    "titleLine1": "Comfort HVAC",
+    "titleHighlight": "Systems",
+    "subtitle": "Ideal temperature, humidity and air quality in offices, shopping centers, hotels and commercial buildings; energy-efficient, quiet and comfortable climate control solutions.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/iklimlendirme",
+    "trustStrip": [
+      { "value": "EC Motor", "label": "Energy Efficiency" },
+      { "value": "Eurovent", "label": "Certified" },
+      { "value": "BMS", "label": "Integration" },
+      { "value": "200+", "label": "Completed Projects" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Efficient HVAC Means Comfort and Savings",
+    "whyImportantP1": "In commercial and institutional buildings, HVAC represents the largest energy consumption category. A properly designed system significantly reduces operating costs while improving occupant comfort.",
+    "whyImportantP2": "NOVVES offers project-specific solutions with modular air handling units and heat recovery systems. EC motor fans, high-efficiency heat exchangers and smart control systems minimize energy consumption.",
+    "steps": [
+      { "label": "Needs Analysis", "desc": "Building type, usage area, climate conditions and comfort requirements assessment" },
+      { "label": "System Design", "desc": "AHU selection, duct design, diffuser placement, automation scenario" },
+      { "label": "Production & Installation", "desc": "Modular AHU production, professional on-site installation" },
+      { "label": "Commissioning & Maintenance", "desc": "Performance testing, balancing, periodic filter and maintenance service" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Air Handling Units (TIGER)", "desc": "500 - 125,000 m3/h capacity, modular design, high-efficiency heat exchangers and EC fan options." },
+      { "title": "Heat Recovery Units", "desc": "Recovers energy from exhaust air, reducing heating/cooling costs by up to 70%." },
+      { "title": "Dehumidification Units (DOLPHIN)", "desc": "Specialized humidity control solutions for indoor pools, SPAs and high-humidity areas." },
+      { "title": "Duct Fans (KOI)", "desc": "Compact, low-noise duct fans for in-duct pressure boost and air distribution." },
+      { "title": "Diffuser and Grille Systems", "desc": "Ceiling, wall and floor diffusers with air volume dampers for homogeneous air distribution." },
+      { "title": "Automation and Control", "desc": "Temperature, humidity and CO2 sensors with BMS-integrated smart control panels." }
+    ],
+    "midCtaTitle": "Get a quote for your comfort HVAC project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Energy Efficiency", "desc": "Up to 40% savings in operating costs with EC motors and heat recovery." },
+      { "title": "Modular Design", "desc": "Custom-configured AHU production at desired capacity for each project." },
+      { "title": "Quiet Operation", "desc": "Low noise levels in comfort areas with acoustically insulated casing and vibration isolators." },
+      { "title": "Single Source Solution", "desc": "Engineering, production, installation and commissioning backed by NOVVES guarantee." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "HVAC solutions tailored to every building type.",
+    "areas": [
+      { "title": "Offices and Business Centers", "description": "Comfortable ventilation in open offices and meeting rooms", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Hotels and Residences", "description": "Room-level temperature control and fresh air supply", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Shopping Centers", "description": "Homogeneous climate control in high-density areas", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }] },
+      { "title": "Hospitals and Healthcare Facilities", "description": "Precise temperature control in hygienic air conditions", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Pool and SPA Areas", "description": "High humidity control and comfort", "products": [{ "name": "DOLPHIN", "type": "Dehumidification Units", "image": "/images/products/dolphin-main.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "What is the difference between an AHU and a split air conditioner?", "a": "An AHU is a central system that provides homogeneous temperature, humidity control and filtration across large areas. Split units operate on an individual room basis. For commercial buildings, central AHU systems are far more efficient." },
+      { "q": "How much energy does heat recovery save?", "a": "Depending on operating conditions, 50-70% energy savings can be achieved. Heat energy from exhaust air is transferred to fresh air, significantly reducing heating/cooling loads." },
+      { "q": "Can an HVAC system be installed in existing buildings?", "a": "Yes, NOVVES modular AHUs can be adapted to existing buildings with their compact dimensions. The most suitable solution is proposed after a site survey." },
+      { "q": "What are the maintenance intervals?", "a": "Filter replacement is typically done every 3-6 months. General system maintenance is recommended at least twice a year. NOVVES periodic maintenance contracts ensure your systems run efficiently at all times." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for a comfort HVAC system?",
+    "finalCtaDesc": "Contact our engineering team for project design, AHU selection and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "hijyenikFiltrasyon": {
+    "breadcrumbCurrent": "Hygienic Filtration Ventilation",
+    "badge": "Solutions",
+    "titleLine1": "Hygienic Filtration",
+    "titleHighlight": "Ventilation",
+    "subtitle": "HEPA filtration ventilation solutions meeting cleanroom standards for hospitals, laboratories, pharmaceutical and food processing facilities.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-filtrasyonu",
+    "trustStrip": [
+      { "value": "HEPA H14", "label": "Filtration Class" },
+      { "value": "ISO 14644", "label": "Cleanroom Standard" },
+      { "value": "GMP", "label": "Compliant Design" },
+      { "value": "99.995%", "label": "Particle Retention" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Clean Air, Safe Environment",
+    "whyImportantP1": "In hospital operating rooms, pharmaceutical production facilities, food processing areas and laboratories, airborne particulate and microbiological contamination directly affects human health and product quality.",
+    "whyImportantP2": "NOVVES hygienic ventilation systems create environments compliant with cleanroom classifications through multi-stage filtration (G4 pre-filter + F7/F9 bag filter + HEPA H13/H14), positive/negative pressure control and laminar flow technology.",
+    "steps": [
+      { "label": "Cleanroom Classification", "desc": "ISO 14644 / GMP class determination, particle and pressure requirements" },
+      { "label": "System Design", "desc": "Filtration stages, air change rate, pressure cascade design" },
+      { "label": "Production & Installation", "desc": "Stainless steel casing production, HEPA filter integration, on-site installation" },
+      { "label": "Validation & Maintenance", "desc": "Particle count test, DOP/PAO filter integrity test, periodic maintenance" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Hygienic Air Handling Units", "desc": "Stainless steel casing, internal surface coatings, hygienic panels and modular construction meeting cleanroom standards." },
+      { "title": "HEPA Filtration Unit", "desc": "H13/H14 class HEPA filters with 99.995% particle retention rate." },
+      { "title": "Laminar Flow Unit (LAF)", "desc": "Unidirectional airflow in operating rooms and cleanrooms for particle-free environments." },
+      { "title": "Pressure Control Systems", "desc": "Room-to-room differential pressure monitoring and automatic damper control." },
+      { "title": "Pre-Filter and Bag Filter", "desc": "G4 pre-filters and F7/F9 bag filters extending HEPA life through multi-stage filtration." },
+      { "title": "Monitoring and Automation", "desc": "Particle counter, pressure sensor and BMS integration for 24/7 monitoring." }
+    ],
+    "midCtaTitle": "Get a quote for your hygienic ventilation project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "ISO 14644 Compliance", "desc": "Design and validation services compliant with cleanroom classification." },
+      { "title": "GMP Compliant Production", "desc": "System design meeting pharmaceutical and food industry GMP requirements." },
+      { "title": "Multi-Stage Filtration", "desc": "G4 + F7/F9 + HEPA H14 for the highest air cleanliness." },
+      { "title": "End-to-End Service", "desc": "Design, production, installation, validation and periodic maintenance from a single source." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "Solutions for all critical areas requiring hygienic ventilation.",
+    "areas": [
+      { "title": "Hospital Operating Rooms", "description": "Laminar flow, HEPA-filtered sterile environment", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Pharmaceutical Production Facilities", "description": "GMP class cleanroom ventilation", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Food Processing Facilities", "description": "Contamination-free production environment", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Laboratories", "description": "Negative/positive pressure isolated environments", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Electronics and Semiconductor Manufacturing", "description": "Ultra-cleanroom class particle control", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "How often should HEPA filters be replaced?", "a": "HEPA filter life varies between 2-5 years depending on operating conditions. Regular replacement of pre-filters and bag filters significantly extends HEPA life. Differential pressure monitoring accurately determines replacement timing." },
+      { "q": "How is cleanroom classification determined?", "a": "Classification is based on airborne particle count according to ISO 14644-1. For example, ISO 5 is commonly used for operating rooms, while ISO 7-8 is typical for pharmaceutical production areas." },
+      { "q": "Can HEPA filters be added to an existing ventilation system?", "a": "HEPA filter integration is possible depending on the existing system's capacity and pressure drop. However, AHU revision is generally recommended for multi-stage filtration." },
+      { "q": "Do you provide validation services?", "a": "Yes, NOVVES provides validation services for all hygienic ventilation projects, including particle count testing, DOP/PAO filter integrity testing and pressure mapping." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for a hygienic ventilation system?",
+    "finalCtaDesc": "Contact our engineering team for cleanroom classification, project design and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "endustriyelHavaYonetimi": {
+    "breadcrumbCurrent": "Industrial Air Management",
+    "badge": "Solutions",
+    "titleLine1": "Industrial Air",
+    "titleHighlight": "Management",
+    "subtitle": "Effective ventilation, exhaust and fresh air supply solutions for factories, production facilities and industrial areas.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "120\u00b0C", "label": "Temperature Resistance" },
+      { "value": "ATEX", "label": "Exproof Option" },
+      { "value": "IP55", "label": "Protection Class" },
+      { "value": "300+", "label": "Completed Projects" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Proper Air Management for Production Efficiency",
+    "whyImportantP1": "In industrial facilities, process-generated heat, humidity, dust and gas accumulation directly affects worker health, product quality and equipment lifespan. Effective air management is also a fundamental requirement for occupational safety compliance.",
+    "whyImportantP2": "NOVVES manages hot gas exhaust, fresh air supply and general ventilation projects from a single source with high-capacity fan systems, duct designs and automation solutions specifically designed for industrial facility needs.",
+    "steps": [
+      { "label": "Site Survey", "desc": "Facility type, process conditions, temperature/humidity/dust analysis" },
+      { "label": "Engineering Design", "desc": "Fan selection, duct calculation, exhaust/supply balancing" },
+      { "label": "Production & Installation", "desc": "Heavy-duty fans, industrial duct production and on-site installation" },
+      { "label": "Commissioning & Service", "desc": "Performance measurement, balancing, periodic maintenance and 24/7 support" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Industrial Centrifugal Fans (NAUTILUS)", "desc": "High pressure and temperature resistant, double or single wall centrifugal fans." },
+      { "title": "Axial Fans (MARLIN)", "desc": "High volume capacity cowled or bladed axial fans for large spaces." },
+      { "title": "Roof Fans (HERON)", "desc": "Radial and axial roof fans for exhaust or fresh air supply at facility rooftops." },
+      { "title": "Wall Fans (OWL)", "desc": "Facade-mounted radial and axial wall fans for exhaust or supply." },
+      { "title": "Duct Fans (KOI)", "desc": "Compact duct fans for in-duct pressure boost and air transfer." },
+      { "title": "Automation and Control", "desc": "Variable frequency drives, temperature/humidity sensors, PLC panels and BMS integration." }
+    ],
+    "midCtaTitle": "Get a quote for your industrial ventilation project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "High Temperature Resistance", "desc": "Fan options with continuous operating capacity up to 120\u00b0C for process exhaust." },
+      { "title": "Heavy-Duty Design", "desc": "Thick casing plate, reinforced bearing assemblies and corrosion-resistant coating options." },
+      { "title": "Wide Product Range", "desc": "Centrifugal, axial, roof, wall and duct fans offering solutions for every need." },
+      { "title": "Long-Lasting Performance", "desc": "Continuous performance with heavy-duty bearing groups, dynamic balancing and vibration monitoring." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "Solutions for all production and facility types requiring industrial ventilation.",
+    "areas": [
+      { "title": "Automotive Factories", "description": "Paint booth exhaust, welding fume extraction", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Metal and Steel Plants", "description": "Hot gas exhaust and fresh air supply", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "Textile Factories", "description": "Humidity control and fiber dust extraction", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Chemical and Petrochemical Plants", "description": "Corrosive gas exhaust and fresh air supply", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
+      { "title": "Warehouses and Logistics Centers", "description": "General ventilation and temperature control", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "What should be considered when selecting an industrial fan?", "a": "Air volume, pressure loss, operating temperature, ambient conditions (dust, humidity, corrosive gases) and noise level are the key selection criteria. The NOVVES engineering team determines the most suitable fan type for each project." },
+      { "q": "Which fans are used in high temperature environments?", "a": "NAUTILUS series centrifugal fans are designed for continuous operation up to 120\u00b0C. For higher temperatures, special materials and cooling solutions are applied." },
+      { "q": "Is an ATEX certified fan required?", "a": "ATEX certified BEAR series fans are mandatory in areas with explosive atmosphere risk (chemical, petrochemical, paint, grain silo, etc.)." },
+      { "q": "Can additional ventilation be added to existing facilities?", "a": "Yes, capacity increases or new exhaust lines can be added to existing duct and fan systems. The most suitable solution is determined after a site survey." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for an industrial ventilation system?",
+    "finalCtaDesc": "Contact our team for site survey, engineering design and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "hayvancilikTesisleri": {
+    "breadcrumbCurrent": "Livestock Facility Ventilation",
+    "badge": "Solutions",
+    "titleLine1": "Livestock Facility",
+    "titleHighlight": "Ventilation Systems",
+    "subtitle": "Specialized ventilation solutions that improve animal welfare and production efficiency in poultry houses, barns and livestock housing facilities.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "IP55", "label": "Protection Class" },
+      { "value": "Anti-Corrosion", "label": "Coating" },
+      { "value": "EC Motor", "label": "Energy Savings" },
+      { "value": "150+", "label": "Completed Projects" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Animal Welfare and Production Efficiency",
+    "whyImportantP1": "In livestock facilities, ammonia, humidity, heat buildup and insufficient air circulation increase animal stress levels, directly reducing growth performance, milk yield and egg production.",
+    "whyImportantP2": "NOVVES maintains optimum temperature, humidity and gas concentration levels with corrosion-resistant fan systems specifically designed for poultry houses, barns and housing facilities. Energy-efficient EC motors and smart control systems minimize operating costs.",
+    "steps": [
+      { "label": "Facility Analysis", "desc": "Animal type, facility dimensions, climate conditions and ventilation needs assessment" },
+      { "label": "System Design", "desc": "Fan selection, layout planning, air inlet/outlet balancing, cooling integration" },
+      { "label": "Production & Installation", "desc": "Corrosion-resistant fan production, professional on-site installation" },
+      { "label": "Commissioning & Support", "desc": "Performance testing, automation calibration, periodic maintenance and technical support" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Poultry House Fans (CHICKEN)", "desc": "Corrosion-resistant, high-volume axial fans specially designed for poultry and small livestock housing." },
+      { "title": "Wall-Mounted Exhaust Fans (OWL)", "desc": "Facade-mounted, galvanized body exhaust fans for cattle barns and livestock housing." },
+      { "title": "Roof Fans (HERON)", "desc": "Corrosion-resistant roof fans for rooftop exhaust and fresh air supply." },
+      { "title": "Evaporative Cooling Pads", "desc": "Adiabatic cooling honeycomb systems that reduce indoor temperatures in hot climates." },
+      { "title": "Air Inlet Grilles", "desc": "Adjustable blade grilles for controlled fresh air intake and tunnel ventilation configuration." },
+      { "title": "Automation and Control", "desc": "Temperature, humidity and ammonia sensors with automatic fan speed control and climate management." }
+    ],
+    "midCtaTitle": "Get a quote for your livestock facility ventilation",
+    "midCtaDesc": "Our expert team will provide a custom solution proposal for your facility.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Corrosion Resistance", "desc": "Galvanized and special coating options for long-lasting performance against ammonia and humidity." },
+      { "title": "High Air Volume", "desc": "Large diameter fan options for effective air circulation in wide volumes." },
+      { "title": "Energy Efficiency", "desc": "Significant energy cost savings with EC motors and variable speed control." },
+      { "title": "Animal Welfare Focused", "desc": "Minimizing stress factors through optimum temperature and air quality." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "Custom ventilation solutions for every livestock facility type.",
+    "areas": [
+      { "title": "Poultry Houses (Broiler/Layer)", "description": "Tunnel ventilation and evaporative cooling", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Cattle Barns", "description": "Ammonia exhaust and fresh air supply", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Dairy Farms", "description": "Milking area and housing climate control", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Small Livestock Housing", "description": "Ventilation in sheep and goat shelters", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "Which ventilation system should be preferred for poultry houses?", "a": "Depending on house size and climate, tunnel ventilation (negative pressure) or cross ventilation systems are used. In hot climates, evaporative cooling pad integration is essential." },
+      { "q": "How is ammonia level controlled?", "a": "Continuous monitoring with ammonia sensors adjusts fan speeds automatically. Minimum ventilation rates keep ammonia concentration below safe limits." },
+      { "q": "How is ventilation managed in winter months?", "a": "In winter, minimum ventilation mode maintains air quality while minimizing heat loss. Variable speed fans and automatic inlet control create a balanced system." },
+      { "q": "How much energy does the system consume?", "a": "EC motor fan systems consume 30-50% less energy compared to conventional AC motors. The automation system runs fans only when needed, preventing energy waste." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for livestock facility ventilation?",
+    "finalCtaDesc": "Contact our expert team for facility analysis, system design and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "trafoEnerjiOdalari": {
+    "breadcrumbCurrent": "Transformer & Energy Room Fans",
+    "badge": "Solutions",
+    "titleLine1": "Transformer & Energy Room",
+    "titleHighlight": "Fans",
+    "subtitle": "Temperature control and ventilation solutions for transformer stations, generator rooms and power distribution facilities.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "IP55", "label": "Protection Class" },
+      { "value": "Class F", "label": "Motor Insulation" },
+      { "value": "TEDAS", "label": "Compliant Design" },
+      { "value": "500+", "label": "Installed Systems" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Critical Temperature Control for Equipment Life",
+    "whyImportantP1": "Transformer stations and energy rooms can reach dangerous temperature levels due to heat generated by electrical equipment. Excessive heat causes transformer oil degradation, cable insulation loss and system failures.",
+    "whyImportantP2": "NOVVES ensures temperature control in transformer rooms, medium voltage switchgear, generator rooms and UPS spaces with ventilation solutions designed to comply with TEDAS technical specifications.",
+    "steps": [
+      { "label": "Heat Load Calculation", "desc": "Transformer capacity, heat loss, room dimensions and outdoor temperature analysis" },
+      { "label": "System Design", "desc": "Fan selection, grille sizing, exhaust/supply balancing" },
+      { "label": "Production & Installation", "desc": "IP55 rated fan production and on-site installation" },
+      { "label": "Commissioning & Testing", "desc": "Temperature measurement, thermostat calibration and performance verification" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Wall-Mounted Fans (OWL)", "desc": "IP55 rated, galvanized body wall-type exhaust and supply fans for transformer rooms." },
+      { "title": "Roof Fans (HERON)", "desc": "Radial and axial roof fans for hot air exhaust from energy room rooftops." },
+      { "title": "Duct Fans (KOI)", "desc": "Compact duct fans for transporting hot air over long distances through duct systems." },
+      { "title": "Air Intake Grilles", "desc": "Filtered and insect-screened air intake grilles compliant with TEDAS specifications." },
+      { "title": "Thermostat and Control", "desc": "Automatic fan on/off and stage control based on room temperature." },
+      { "title": "Damper Systems", "desc": "Motorized dampers and pressure balancing dampers for fire and hot air zoning." }
+    ],
+    "midCtaTitle": "Get a quote for your transformer room ventilation project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "TEDAS Compliant", "desc": "Fan and grille solutions fully compliant with Turkey Electricity Distribution technical specifications." },
+      { "title": "IP55 Protection", "desc": "High protection class motors and casings against dust and water splashes." },
+      { "title": "Low Noise Level", "desc": "Quiet operation performance compatible with the environment in power distribution centers." },
+      { "title": "Long-Life Design", "desc": "Long-term reliable operation with Class F motor insulation and galvanized body." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "Solutions for all critical spaces in electrical and energy infrastructure.",
+    "areas": [
+      { "title": "Transformer Stations", "description": "Transformer heat loss exhaust and temperature control", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Generator Rooms", "description": "Exhaust gas and heat extraction", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "UPS and Battery Rooms", "description": "Hydrogen gas exhaust and temperature control", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Medium Voltage Switchgear", "description": "Electrical heat buildup exhaust", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "Why is ventilation mandatory in transformer rooms?", "a": "Heat loss from transformers accumulates in the room, and ambient temperatures above 40\u00b0C shorten transformer life, causing oil degradation and insulation failures. TEDAS specifications mandate adequate ventilation." },
+      { "q": "Which fan type is suitable for transformer rooms?", "a": "Depending on room size and heat load, wall-type (OWL), roof-type (HERON) or duct-type (KOI) fans are used. Typically, an exhaust + fresh air supply combination is applied." },
+      { "q": "How does thermostat-controlled operation work?", "a": "When room temperature reaches the set upper limit, fans activate automatically and shut off when the temperature drops. Multiple stages provide energy savings." },
+      { "q": "Are there special requirements for UPS rooms?", "a": "Yes, hydrogen gas can form in battery groups during charging. Therefore, UPS rooms require appropriate ventilation and gas detection systems considering explosion risk." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for a transformer room ventilation solution?",
+    "finalCtaDesc": "Contact our engineering team for heat load calculation, system design and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "seraTarimsal": {
+    "breadcrumbCurrent": "Greenhouse & Agricultural Ventilation",
+    "badge": "Solutions",
+    "titleLine1": "Greenhouse & Agricultural",
+    "titleHighlight": "Ventilation Systems",
+    "subtitle": "Ventilation and cooling solutions for optimal climate control in greenhouses, mushroom growing facilities and agricultural structures.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "Anti-Corrosion", "label": "Coating" },
+      { "value": "EC Motor", "label": "Energy Savings" },
+      { "value": "IoT", "label": "Remote Monitoring" },
+      { "value": "100+", "label": "Completed Projects" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Proper Climate Management for Efficient Agriculture",
+    "whyImportantP1": "In greenhouses and agricultural structures, controlling temperature, humidity and CO2 levels directly affects plant growth, product quality and yield. Excessive heat in summer and insufficient ventilation in winter cause serious yield losses.",
+    "whyImportantP2": "NOVVES provides evaporative cooling, natural/mechanical ventilation and smart climate control solutions for greenhouses and agricultural facilities. Each project is specifically designed based on regional climate data and crop requirements.",
+    "steps": [
+      { "label": "Facility Analysis", "desc": "Greenhouse size, crop type, regional climate and ventilation needs assessment" },
+      { "label": "System Design", "desc": "Fan selection, cooling pad, roof/side curtain ventilation and automation scenario" },
+      { "label": "Production & Installation", "desc": "Corrosion-resistant fan and accessory production, on-site installation" },
+      { "label": "Commissioning & Support", "desc": "Climate sensor calibration, automation testing and technical support" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Wall-Mounted Exhaust Fans (OWL)", "desc": "Galvanized body, high-volume ventilation fans mounted on greenhouse walls." },
+      { "title": "Evaporative Cooling Systems", "desc": "Adiabatic cooling honeycomb systems reducing greenhouse temperature by 8-12\u00b0C." },
+      { "title": "Roof Ventilation Unit (HERON)", "desc": "Roof fans for hot air exhaust and fresh air supply on greenhouse rooftops." },
+      { "title": "Circulation Fans", "desc": "Horizontal air circulation fans for homogeneous temperature and humidity distribution inside greenhouses." },
+      { "title": "Air Inlet Curtains", "desc": "Motorized side curtain and roof window systems for controlled fresh air intake." },
+      { "title": "Smart Climate Control", "desc": "IoT-based remote monitoring and management with temperature, humidity, CO2 and light sensors." }
+    ],
+    "midCtaTitle": "Get a quote for your greenhouse ventilation project",
+    "midCtaDesc": "Our expert team will provide a custom solution proposal for your facility.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Agricultural Durability", "desc": "Long-lasting performance in high humidity environments with galvanized and corrosion-resistant coatings." },
+      { "title": "Energy-Efficient Cooling", "desc": "80% less energy consumption compared to conventional air conditioning with evaporative cooling." },
+      { "title": "Smart Automation", "desc": "IoT-based climate monitoring with remote control and data-driven decision support." },
+      { "title": "Project-Based Design", "desc": "Ventilation system custom-designed based on greenhouse size, crop type and climate data." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "Climate control solutions for all enclosed agricultural production areas.",
+    "areas": [
+      { "title": "Glass and Plastic Greenhouses", "description": "Temperature and humidity control, evaporative cooling", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Mushroom Growing Facilities", "description": "Precise humidity and temperature control, fresh air supply", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Seedling Growing Greenhouses", "description": "Homogeneous climate distribution and cooling", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Grain Storage Facilities", "description": "Humidity control and ventilation", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "What is the most suitable ventilation system for greenhouses?", "a": "Depending on greenhouse size, location and crop type, negative pressure (exhaust + cooling pad) or positive pressure (overhead) systems are used. In hot climates, evaporative cooling integration is of great importance." },
+      { "q": "How much temperature reduction can evaporative cooling achieve?", "a": "A temperature reduction of 8-12\u00b0C can be achieved depending on the region's humidity level. Efficiency is higher in low-humidity regions." },
+      { "q": "Is greenhouse ventilation necessary in winter?", "a": "Yes, even in winter, minimum ventilation is needed for humidity control and CO2 supplementation. Otherwise, fungal diseases and plant stress may increase." },
+      { "q": "Is remote monitoring and control possible?", "a": "Yes, NOVVES smart climate control panels provide remote temperature, humidity and CO2 monitoring, fan control and alarm management through IoT infrastructure." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for a greenhouse ventilation system?",
+    "finalCtaDesc": "Contact our expert team for facility analysis, system design and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "atexPatlamaKoruma": {
+    "breadcrumbCurrent": "ATEX Explosion Protection",
+    "badge": "Solutions",
+    "titleLine1": "ATEX Explosion Protection",
+    "titleHighlight": "Solutions",
+    "subtitle": "ATEX certified fan systems and ventilation solutions for facilities with explosive atmosphere risks.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "ATEX", "label": "Certified" },
+      { "value": "Zone 1/2", "label": "Application Area" },
+      { "value": "IECEx", "label": "International Approval" },
+      { "value": "200+", "label": "Installed Systems" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Safety is Priority in Explosive Environments",
+    "whyImportantP1": "In facilities such as chemical, petrochemical, paint, pharmaceutical, grain silos and mining, flammable gas, vapor and dust concentrations can create explosive atmospheres. Using standard equipment in these environments poses serious risks.",
+    "whyImportantP2": "NOVVES BEAR series ATEX certified fans are designed according to explosive atmosphere classification (Zone 1, Zone 2, Zone 21, Zone 22). Spark-free materials, explosion-proof motors and special sealing solutions ensure safe ventilation.",
+    "steps": [
+      { "label": "Risk Analysis", "desc": "Explosive atmosphere classification, zone determination, gas/dust type analysis" },
+      { "label": "System Design", "desc": "ATEX fan selection, duct design, earthing and exproof automation" },
+      { "label": "Production & Installation", "desc": "ATEX certified fan production, exproof cable and connection installation" },
+      { "label": "Commissioning & Certification", "desc": "Testing, performance measurement, ATEX conformity certification" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "ATEX Centrifugal Fans (BEAR)", "desc": "Certified centrifugal fans with spark-free materials for Zone 1/2 and Zone 21/22." },
+      { "title": "ATEX Axial Fans (BEAR)", "desc": "Cowled and bladed axial ventilation fans suitable for explosive environments." },
+      { "title": "Exproof Roof Fans (BEAR)", "desc": "Roof-mounted exhaust fans with explosion-proof motors for facilities with explosive gas/dust." },
+      { "title": "Exproof Motor and Controls", "desc": "ATEX approved motors, exproof buttons, signal lamps and control enclosures." },
+      { "title": "Antistatic Duct and Accessories", "desc": "Grounded ducts and connection elements preventing static electricity buildup." },
+      { "title": "Gas Detection and Automation", "desc": "Flammable gas/dust sensors, PLC-controlled emergency shutdown and ventilation scenarios." }
+    ],
+    "midCtaTitle": "Get a quote for your ATEX ventilation project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "ATEX Certified", "desc": "Production and certification compliant with 2014/34/EU ATEX directive." },
+      { "title": "Zone 1 & Zone 2 Compliance", "desc": "Appropriate fan selection and design according to gas group and temperature class." },
+      { "title": "Spark-Free Design", "desc": "Aluminum/bronze alloys, special coatings and antistatic components." },
+      { "title": "End-to-End Solution", "desc": "Risk analysis, fan selection, exproof automation and certification from a single source." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "ATEX solutions for all industrial facilities with explosive atmosphere risks.",
+    "areas": [
+      { "title": "Chemical and Petrochemical Plants", "description": "Flammable gas and vapor exhaust", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Roof Fans", "image": "/images/products/bear-reb.jpg" }] },
+      { "title": "Paint and Varnish Factories", "description": "Solvent vapor exhaust", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Wall Fans", "image": "/images/products/bear-w.jpg" }] },
+      { "title": "Grain Silos and Flour Mills", "description": "Combustible dust exhaust", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Duct Fans", "image": "/images/products/bear-t.jpg" }] },
+      { "title": "Mining and Tunnel Facilities", "description": "Methane gas exhaust and ventilation", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Pharmaceutical and Cosmetics Production", "description": "Flammable solvent and dust exhaust", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-c.jpg" }, { "name": "BEAR", "type": "ATEX Centrifugal Fans", "image": "/images/products/bear-r.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "What does ATEX certification mean?", "a": "ATEX (ATmospheres EXplosibles) is the 2014/34/EU European Union directive that defines the design and manufacturing standards for equipment used in explosive environments. BEAR series fans are manufactured in compliance with this directive." },
+      { "q": "What is the difference between Zone 1 and Zone 2?", "a": "Zone 1 defines areas where explosive atmospheres may occasionally occur during normal operating conditions; Zone 2 defines areas where explosive atmospheres may only occur under abnormal conditions and for short periods." },
+      { "q": "Which gas groups do you manufacture fans for?", "a": "The BEAR series is manufactured in models suitable for gas groups IIA (propane, methane), IIB (ethylene) and IIC (hydrogen, acetylene)." },
+      { "q": "Can an ATEX fan be integrated into an existing system?", "a": "Yes, ATEX certified fan integration into existing ventilation systems is possible. However, duct, connection and automation components must also be checked for ATEX compliance." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for an ATEX ventilation solution?",
+    "finalCtaDesc": "Contact our engineering team for risk analysis, ATEX fan selection and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "akilliOtomasyon": {
+    "breadcrumbCurrent": "Smart Automation and Control",
+    "badge": "Solutions",
+    "titleLine1": "Smart Automation and",
+    "titleHighlight": "Control Systems",
+    "subtitle": "Smart control solutions for BMS integration, PLC-based fan management, IoT monitoring and energy optimization.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Our Services",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      { "value": "BMS", "label": "Integration" },
+      { "value": "PLC/SCADA", "label": "Control Infrastructure" },
+      { "value": "IoT", "label": "Remote Monitoring" },
+      { "value": "24/7", "label": "Support" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Smart Systems for Efficiency and Control",
+    "whyImportantP1": "In modern buildings and industrial facilities, manual management of ventilation systems leads to inefficiency, energy waste and maintenance issues. Smart automation optimizes systems based on sensor data.",
+    "whyImportantP2": "NOVVES automation solutions provide full control of ventilation systems with PLC-based MCC panels, variable frequency drive integration, BMS connectivity and IoT-based remote monitoring. Scenario-based operating modes minimize energy consumption.",
+    "steps": [
+      { "label": "Needs Analysis", "desc": "Existing system review, automation requirements, BMS infrastructure assessment" },
+      { "label": "Automation Design", "desc": "PLC programming, sensor selection, panel design, BMS integration scenario" },
+      { "label": "Panel Production & Installation", "desc": "MCC/automation panel production, field wiring and equipment installation" },
+      { "label": "Commissioning & Training", "desc": "System testing, scenario verification, operator/user training" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "PLC-Controlled MCC Panels", "desc": "Motor control center with fan start/stop, stage control, fault monitoring and protection relay integration." },
+      { "title": "Variable Frequency Drive Management", "desc": "Variable speed fan control for energy savings and precise flow rate adjustment." },
+      { "title": "BMS Integration", "desc": "Full integration with building management systems via Modbus, BACnet or LON protocols." },
+      { "title": "Sensor Networks", "desc": "Temperature, humidity, CO, CO2, pressure and smoke sensors with zone-based data collection." },
+      { "title": "IoT and Remote Monitoring", "desc": "Cloud-based dashboard, mobile app, alarm notifications and energy consumption analysis." },
+      { "title": "Scenario-Based Operating Modes", "desc": "Pre-defined or custom scenarios: normal, night, fire, car park CO exhaust, etc." }
+    ],
+    "midCtaTitle": "Get a quote for your automation project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Energy Optimization", "desc": "30-50% energy savings with smart control based on variable frequency drives and sensor data." },
+      { "title": "BMS Compatibility", "desc": "Integration with all building management systems through open protocols like Modbus, BACnet, LON." },
+      { "title": "Remote Monitoring", "desc": "IoT-based 24/7 monitoring, alarm notifications and energy consumption reporting." },
+      { "title": "Single Source Solution", "desc": "Panel design, PLC programming, field installation and commissioning from a single source." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Which Projects Is It Used In?",
+    "areasDesc": "Solutions for all building and facility types requiring ventilation automation.",
+    "areas": [
+      { "title": "Enclosed Car Park Automation", "description": "CO sensor-based jet fan management", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Shopping Center and Commercial Building BMS", "description": "Central ventilation automation and monitoring", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }] },
+      { "title": "Industrial Facility Automation", "description": "Process ventilation and exhaust control", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Hospital and Cleanroom", "description": "Pressure cascade and filtration monitoring", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "Can automation be added to an existing system?", "a": "Yes, PLC panels, variable frequency drives and sensor integration can be added to existing fan and ventilation systems to upgrade automation levels." },
+      { "q": "Which BMS protocols do you support?", "a": "We support Modbus RTU/TCP, BACnet IP/MSTP and LON protocols. The most suitable integration method is determined based on your existing BMS infrastructure." },
+      { "q": "Is internet connection required for remote monitoring?", "a": "Yes, internet connectivity is required at the facility for IoT-based remote monitoring. Data transfer to the cloud platform is provided via 4G/5G modem or ethernet connection." },
+      { "q": "How much energy does the automation system save?", "a": "Variable speed fan control based on sensor data can achieve 30-50% energy savings. Night mode and vacant area scenarios provide additional savings." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for a ventilation automation solution?",
+    "finalCtaDesc": "Contact our engineering team for automation design, panel production and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "konutHavalandirma": {
+    "breadcrumbCurrent": "Residential Ventilation",
+    "badge": "Solutions",
+    "titleLine1": "Residential",
+    "titleHighlight": "Ventilation Systems",
+    "subtitle": "Fresh air supply, humidity control and comfortable living space ventilation solutions for apartments, villas, residences and housing projects.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "EC Motor", "label": "Quiet Operation" },
+      { "value": "Heat Recovery", "label": "90% Efficiency" },
+      { "value": "dB(A) <25", "label": "Noise Level" },
+      { "value": "A+", "label": "Energy Class" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Fresh Air for Healthy Living",
+    "whyImportantP1": "In modern residences, as insulation levels increase, natural air exchange has decreased, making indoor air quality a serious concern. Insufficient ventilation causes humidity, mold, odor and stale air buildup.",
+    "whyImportantP2": "NOVVES residential ventilation solutions create healthy, clean and comfortable living spaces with heat recovery fresh air supply that minimizes energy loss. Quiet operation and compact design ensure compatibility with all housing types.",
+    "steps": [
+      { "label": "Needs Assessment", "desc": "Housing type, room count, square footage and ventilation needs analysis" },
+      { "label": "System Selection", "desc": "Unit capacity, duct routing, grille placement planning" },
+      { "label": "Installation", "desc": "Professional installation, duct connection and electrical wiring" },
+      { "label": "Commissioning", "desc": "Air flow measurement, noise testing and user training" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Heat Recovery Units", "desc": "Counter-flow or rotary exchanger units recovering up to 90% of heat from exhaust air for energy savings." },
+      { "title": "Bathroom and Toilet Fans (SEAHORSE)", "desc": "Quiet, energy-efficient and compact bathroom exhaust fans." },
+      { "title": "Duct Fans (KOI)", "desc": "Low-noise compact fans for in-duct fresh air supply and exhaust." },
+      { "title": "Kitchen Fans (BUTTERFLY)", "desc": "Kitchen hood exhaust fans with grease filters and quiet operation features." },
+      { "title": "Grilles and Diffusers", "desc": "Ceiling, wall and floor grilles for homogeneous air distribution." },
+      { "title": "Control and Command", "desc": "Wireless remote, humidity sensor, timer and speed adjustment control." }
+    ],
+    "midCtaTitle": "Get a quote for your residential ventilation project",
+    "midCtaDesc": "Our expert team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Quiet Operation", "desc": "Noise levels below 25 dB(A) for comfortable operation even in bedrooms." },
+      { "title": "Heat Recovery", "desc": "Up to 90% recovery of energy from exhaust air to prevent energy waste." },
+      { "title": "Compact Design", "desc": "Dropped ceiling, cabinet interior and wall-recessed mounting options." },
+      { "title": "Healthy Indoor Air", "desc": "Filtration and fresh air supply filtering pollen, dust and pollutants." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Which Housing Types Is It Used In?",
+    "areasDesc": "Ventilation solutions suitable for all residential types.",
+    "areas": [
+      { "title": "Apartments and Flats", "description": "Central or individual fresh air and exhaust system", "products": [{ "name": "SEAHORSE", "type": "Bathroom Fans", "image": "/images/products/banyo-fan-1.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Villas and Detached Houses", "description": "Heat recovery fresh air system", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "BUTTERFLY", "type": "Kitchen Fans", "image": "/images/products/butterfly-b.jpg" }] },
+      { "title": "Residences and High-Rise Buildings", "description": "Central ventilation and pressurization", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "SEAHORSE", "type": "Bathroom Fans", "image": "/images/products/banyo-fan-2.jpg" }] },
+      { "title": "Mass Housing Projects", "description": "Shaft ventilation and rooftop exhaust systems", "products": [{ "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "Does residential ventilation create energy loss?", "a": "In systems with heat recovery units, up to 90% of the energy in exhaust air is recovered. This means fresh air supply is achieved with near-zero energy loss." },
+      { "q": "How much noise does a bathroom fan make?", "a": "SEAHORSE series bathroom fans operate very quietly at noise levels below 25 dB(A). The night mode option further reduces noise levels." },
+      { "q": "Can a system be installed in existing homes?", "a": "Yes, individual fresh air units that don't require ducts or compact ductwork can be used to install ventilation systems in existing homes." },
+      { "q": "How often should filters be changed?", "a": "Filter replacement is recommended every 3-6 months depending on usage intensity and outdoor air quality. Models with filter blockage indicators are available." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for a residential ventilation system?",
+    "finalCtaDesc": "Contact our team for a ventilation solution suitable for your home and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "marinOffshore": {
+    "breadcrumbCurrent": "Marine & Offshore Ventilation",
+    "badge": "Solutions",
+    "titleLine1": "Marine & Offshore",
+    "titleHighlight": "Ventilation Systems",
+    "subtitle": "Saltwater corrosion-resistant ventilation solutions compliant with marine classification standards for ships, yachts, offshore platforms and coastal structures.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Product Catalog",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "DNV-GL", "label": "Marine Approval" },
+      { "value": "IP56", "label": "Protection Class" },
+      { "value": "SS316", "label": "Material Quality" },
+      { "value": "50+", "label": "Completed Projects" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Reliable Ventilation in Marine Environments",
+    "whyImportantP1": "The marine environment presents challenges very different from land applications with saltwater, high humidity and aggressive atmospheric conditions. Standard ventilation equipment quickly corrodes and fails under these conditions.",
+    "whyImportantP2": "NOVVES marine ventilation solutions are designed with stainless steel (SS316), special coatings and marine classification society (DNV-GL, Lloyd's, BV) approvals. Reliable ventilation is provided in engine rooms, passenger spaces, cargo areas and special compartments.",
+    "steps": [
+      { "label": "Project Analysis", "desc": "Vessel/platform type, area classification, marine standard requirements" },
+      { "label": "Engineering Design", "desc": "Fan selection, duct design, material selection, fire zoning" },
+      { "label": "Production & Delivery", "desc": "SS316/special coating production, marine class certified product delivery" },
+      { "label": "Installation & Commissioning", "desc": "Shipyard or field installation, performance testing and class approval" }
+    ],
+    "systemLabel": "System Architecture",
+    "systemTitle": "Solution Components",
+    "systemComponents": [
+      { "title": "Marine Axial Fans", "desc": "Saltwater corrosion-resistant, SS316 body, marine classification approved axial fans." },
+      { "title": "Marine Centrifugal Fans", "desc": "High-pressure, corrosion-resistant centrifugal fans for engine rooms and cargo areas." },
+      { "title": "Fire Dampers", "desc": "Automatic closing fire dampers compliant with marine fire safety standards." },
+      { "title": "Weatherproof Grilles", "desc": "Wave and rain-protected air intake/outlet grilles." },
+      { "title": "Exproof Fans (BEAR)", "desc": "For marine areas with explosive atmosphere risk such as cargo holds and fuel zones." },
+      { "title": "Control and Automation", "desc": "Marine-approved control panels, fire alarm integration and remote monitoring." }
+    ],
+    "midCtaTitle": "Get a quote for your marine ventilation project",
+    "midCtaDesc": "Our expert engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Marine Class Approval", "desc": "Production approved by classification societies including DNV-GL, Lloyd's Register and Bureau Veritas." },
+      { "title": "Corrosion Resistance", "desc": "Long-lasting performance with SS316 stainless steel, epoxy coating and special alloys." },
+      { "title": "Fire Safety", "desc": "Damper and fan solutions compliant with SOLAS and marine fire safety standards." },
+      { "title": "Custom Manufacturing Capability", "desc": "Custom size, material and capacity options for each vessel and platform project." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Where Is It Used?",
+    "areasDesc": "Solutions for all ventilation needs in the maritime sector.",
+    "areas": [
+      { "title": "Passenger Vessels and Ferries", "description": "Climate control in passenger and crew areas", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Cargo Vessels", "description": "Cargo hold and engine room ventilation", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }] },
+      { "title": "Offshore Platforms", "description": "Open sea platform ventilation and exproof exhaust", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Yachts and Mega Yachts", "description": "Comfort ventilation and engine room exhaust", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "What classification approvals are available for marine fans?", "a": "NOVVES marine fans can be manufactured with approvals from international marine classification societies including DNV-GL, Lloyd's Register, Bureau Veritas and ABS." },
+      { "q": "Why is SS316 material preferred?", "a": "SS316 stainless steel provides much longer-lasting performance in saltwater environments compared to standard steels due to its high corrosion resistance. It is especially preferred for above-deck and weatherproof areas." },
+      { "q": "Which fans are used for engine room ventilation?", "a": "High-volume radial or axial fans suitable for high temperature and exhaust gas conditions are used in engine rooms. BEAR series is preferred when exproof requirements apply." },
+      { "q": "Can retrofit be done on existing vessels?", "a": "Yes, retrofit solutions are available for ventilation system revision or capacity upgrades on existing vessels." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Looking for a marine ventilation solution?",
+    "finalCtaDesc": "Contact our team for engineering design and quotation for your vessel/platform project.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "projeBazliOzelImalat": {
+    "breadcrumbCurrent": "Project-Based Custom Manufacturing",
+    "badge": "Solutions",
+    "titleLine1": "Project-Based",
+    "titleHighlight": "Custom Manufacturing",
+    "subtitle": "Ventilation solutions designed to your project's specific size, material and performance requirements, beyond the standard product range.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Our Services",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      { "value": "3D CAD", "label": "Design" },
+      { "value": "FEA", "label": "Structural Analysis" },
+      { "value": "CNC", "label": "Precision Manufacturing" },
+      { "value": "75+", "label": "Custom Projects" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Every Project Is Unique",
+    "whyImportantP1": "Some projects have special size, material, temperature resistance or performance requirements not found in standard product catalogs. High temperatures, corrosive environments, special mounting areas or unusual flow/pressure needs cannot be met with standard solutions.",
+    "whyImportantP2": "NOVVES manufactures project-specific fans, dampers, ducts and accessories with its own engineering team and production facilities. Every custom product is engineering-backed with 3D CAD design, FEA structural analysis and CFD flow simulation.",
+    "steps": [
+      { "label": "Requirement Definition", "desc": "Custom size, material, temperature, flow rate, pressure and mounting conditions" },
+      { "label": "Engineering Design", "desc": "3D CAD modeling, FEA analysis, CFD simulation and detail drawings" },
+      { "label": "Prototype & Production", "desc": "CNC machining, welding, dynamic balancing and quality control" },
+      { "label": "Testing & Delivery", "desc": "Performance testing, vibration measurement, certification and delivery" }
+    ],
+    "systemLabel": "Manufacturing Capabilities",
+    "systemTitle": "What Can We Manufacture?",
+    "systemComponents": [
+      { "title": "Custom Size Fans", "desc": "Axial, centrifugal and mixed-flow fans in non-standard diameter, width and capacity values." },
+      { "title": "High Temperature Fans", "desc": "Special materials and designs for continuous operation capacity up to 400\u00b0C and above." },
+      { "title": "Corrosive Environment Fans", "desc": "Stainless steel, titanium, FRP and special coating options for corrosive gas/vapor environments." },
+      { "title": "Custom Dampers and Ducts", "desc": "Non-standard size and material damper, duct and connection element manufacturing." },
+      { "title": "Special Mounting Solutions", "desc": "Custom mounting brackets for confined spaces, ceiling suspension, platforms or vibration-isolated installations." },
+      { "title": "Testing and Certification", "desc": "Aerodynamic performance testing, vibration analysis and project-specific certificate preparation." }
+    ],
+    "midCtaTitle": "Get a quote for your custom manufacturing project",
+    "midCtaDesc": "Our engineering team will evaluate your specific requirements.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Engineering-Backed", "desc": "Design verified with 3D CAD, FEA and CFD; project-specific calculation reports." },
+      { "title": "Own Production Facility", "desc": "Precision manufacturing with CNC machining, robotic welding and dynamic balancing." },
+      { "title": "Flexible Material Options", "desc": "Carbon steel, stainless, aluminum, FRP, titanium and special alloys." },
+      { "title": "Rapid Prototyping", "desc": "Quick transition from design to prototype and performance verification." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Which Projects Is It Used In?",
+    "areasDesc": "Project-based manufacturing for all special needs that cannot be solved with standard products.",
+    "areas": [
+      { "title": "Industrial Process Facilities", "description": "Custom fans for high temperature and corrosive gas environments", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }] },
+      { "title": "Power Plants", "description": "Custom size and capacity exhaust and supply fans", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Marine and Offshore Projects", "description": "Marine fans requiring class-approved special materials and sizes", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
+      { "title": "Infrastructure and Tunnel Projects", "description": "Tunnel fans with custom diameter and performance values", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "Is there a minimum order quantity for custom manufacturing?", "a": "No, since NOVVES works on a project basis, single-unit custom manufacturing orders are also accepted." },
+      { "q": "What is the custom manufacturing lead time?", "a": "Depending on product complexity, a delivery time of 4-12 weeks after design approval is applied. An accelerated production program is available for urgent projects." },
+      { "q": "Is it possible to modify an existing fan?", "a": "Yes, modification services such as impeller replacement, casing revision, motor upgrade or material change for existing fans are available." },
+      { "q": "What testing and certification services are offered?", "a": "Aerodynamic performance testing (flow, pressure, power), vibration analysis, noise measurement and project-specific test reports are prepared. Testing capabilities compliant with AMCA, ISO and EN standards are available." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Do you have a custom manufacturing need?",
+    "finalCtaDesc": "Share your requirements and let our engineering team provide a custom solution proposal.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  },
+
+  "cfdDanismanlik": {
+    "breadcrumbCurrent": "CFD Engineering Consultancy",
+    "badge": "Solutions",
+    "titleLine1": "CFD Engineering",
+    "titleHighlight": "Consultancy",
+    "subtitle": "Simulation-supported engineering services with Computational Fluid Dynamics (CFD) for ventilation, smoke extraction and heat transfer projects.",
+    "ctaPrimary": "Get a Quote for Your Project",
+    "ctaSecondary": "Our Services",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      { "value": "3D CFD", "label": "Simulation" },
+      { "value": "ANSYS", "label": "Solver Platform" },
+      { "value": "ISO 7730", "label": "Comfort Analysis" },
+      { "value": "85+", "label": "Completed Analyses" }
+    ],
+    "whyImportantLabel": "Why Important",
+    "whyImportantTitle": "Simulate Before You Build",
+    "whyImportantP1": "Knowing the real performance of ventilation and smoke extraction systems before installation prevents costly mistakes and enables documentation of regulatory compliance. CFD analysis visualizes airflow, temperature distribution and smoke spread through 3D computer simulation.",
+    "whyImportantP2": "The NOVVES CFD team performs project-specific simulations using ANSYS Fluent and OpenFOAM platforms. Engineering support is provided for jet fan placement, smoke extraction time, comfort analysis, heat load calculation and system optimization.",
+    "steps": [
+      { "label": "Project Definition", "desc": "Geometry, boundary conditions, fire scenario or ventilation requirements definition" },
+      { "label": "3D Modeling & Mesh", "desc": "CAD geometry creation or import, computational mesh generation" },
+      { "label": "Simulation & Solution", "desc": "Flow, temperature and smoke solution with RANS/LES turbulence models" },
+      { "label": "Reporting & Optimization", "desc": "Result visualization, performance evaluation, improvement recommendations" }
+    ],
+    "systemLabel": "Service Areas",
+    "systemTitle": "What Can CFD Do?",
+    "systemComponents": [
+      { "title": "Smoke Extraction Simulation", "desc": "Smoke spread, visibility distance and evacuation time analysis in fire scenarios." },
+      { "title": "Jet Fan Placement Optimization", "desc": "Determining jet fan count, position and direction angle through simulation in car parks and tunnels." },
+      { "title": "Comfort Ventilation Analysis", "desc": "Temperature, air velocity and PMV/PPD comfort evaluation in offices, shopping centers and assembly areas." },
+      { "title": "Heat Transfer Analysis", "desc": "Temperature distribution simulation in transformer rooms, data centers and industrial facilities." },
+      { "title": "Cleanroom Airflow", "desc": "Particle distribution, laminar flow verification and pressure cascade analysis in cleanrooms." },
+      { "title": "System Optimization", "desc": "CFD review of existing ventilation systems and performance improvement recommendations." }
+    ],
+    "midCtaTitle": "Get a quote for your CFD analysis project",
+    "midCtaDesc": "Our CFD engineering team will get back to you as soon as possible.",
+    "midCtaButton": "Get a Quote",
+    "advantagesLabel": "Why NOVVES",
+    "advantagesTitle": "Key Advantages",
+    "advantages": [
+      { "title": "Experienced CFD Team", "desc": "A team of specialist CFD analysts with expertise in ventilation and fire engineering." },
+      { "title": "Industry-Leading Software", "desc": "Reliable simulation results with ANSYS Fluent, OpenFOAM and FDS platforms." },
+      { "title": "Regulatory Compliance", "desc": "Analysis and reporting compliant with EN 12101, ASHRAE and NFPA standards." },
+      { "title": "Design Integration", "desc": "CFD results directly integrated into the engineering process for implementation assurance." }
+    ],
+    "areasLabel": "Application Areas",
+    "areasTitle": "Which Projects Is It Used In?",
+    "areasDesc": "Consultancy services for all ventilation and heat transfer projects requiring CFD analysis.",
+    "areas": [
+      { "title": "Enclosed Car Park Projects", "description": "Jet fan placement and CO/smoke extraction simulation", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound.jpg" }] },
+      { "title": "Tunnel Ventilation Projects", "description": "Fire scenario and air velocity analysis", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
+      { "title": "Data Center Cooling", "description": "Rack-level temperature distribution and hotspot analysis", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Smoke Control in High-Rise Buildings", "description": "Stairwell pressurization and smoke zoning simulation", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }] }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      { "q": "How long does a CFD analysis take?", "a": "Depending on project complexity, it takes 1-4 weeks. Simple single-scenario analyses are shorter, while multi-fire scenarios or optimization studies take longer." },
+      { "q": "What information is needed for CFD analysis?", "a": "Architectural plans (DWG/Revit), fan/grille placement information, operating conditions (temperature, flow rate, etc.) and fire scenario definitions if applicable are required." },
+      { "q": "Is a CFD report accepted as an official document?", "a": "The CFD report is used as a supporting engineering document in municipality and fire department approval processes. Signed and sealed reports are provided for each project." },
+      { "q": "Can I only get the CFD analysis service?", "a": "Yes, NOVVES also offers independent CFD consultancy services. Simulation and reporting services can be obtained without being tied to fan and equipment sales." }
+    ],
+    "finalCtaLabel": "For Your Project",
+    "finalCtaTitle": "Do you need a CFD analysis?",
+    "finalCtaDesc": "Contact our CFD engineering team for project definition, simulation and quotation.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Request a Quote"
+  }
+}

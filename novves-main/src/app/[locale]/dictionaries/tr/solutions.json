@@ -1,0 +1,921 @@
+{
+  "dumanIsiTahliye": {
+    "breadcrumbCurrent": "Duman & Isı Tahliye",
+    "badge": "Çözümler",
+    "titleLine1": "Duman & Isı Tahliye",
+    "titleHighlight": "Sistemleri",
+    "subtitle": "Yangında dumanın ve ısının kontrollü tahliyesi; yönetmeliklere uygun, mühendislik destekli, uçtan uca çözümler.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "CFD Analizi",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      { "value": "EN 12101-3", "label": "Standart Uyumu" },
+      { "value": "F300/2H", "label": "Yangın Dayanımı" },
+      { "value": "CFD", "label": "Simülasyon Destekli" },
+      { "value": "113+", "label": "Tamamlanan Proje" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Yangın Anında İlk Tehdit Dumandır",
+    "whyImportantP1": "Yangın istatistikleri, can kayıplarının büyük çoğunluğunun alev değil, yoğun duman ve zehirli gazlardan kaynaklandığını göstermektedir. Etkili bir duman tahliye sistemi, kaçış yollarını görünür ve solunabilir tutar; itfaiye müdahalesini kolaylaştırır; yapısal hasarı minimize eder.",
+    "whyImportantP2": "NOVVES, projelendirmeden devreye almaya kadar tüm süreci kendi mühendislik kadrosuyla yönetir. Her proje özelinde CFD analizi yapılarak fan yerleşimi, duman yayılım senaryosu ve tahliye süreleri simüle edilir.",
+    "steps": [
+      { "label": "Keşif & Analiz", "desc": "Saha inceleme, CFD simülasyon, yönetmelik uyum kontrolü" },
+      { "label": "Projelendirme", "desc": "Fan seçimi, kanal tasarımı, damper yerleşimi, otomasyon senaryosu" },
+      { "label": "Üretim & Montaj", "desc": "Kendi tesislerimizde üretim, sahada profesyonel montaj" },
+      { "label": "Devreye Alma & Bakım", "desc": "Test, raporlama, periyodik kontrol ve 7/24 servis desteği" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Jet Fan Sistemleri", "desc": "Kapalı alanlarda hava yönlendirme ve duman tahliyesi için yüksek sıcaklık dayanımlı aksiyal ve radyal jet fanlar." },
+      { "title": "Duman Tahliye Fanları", "desc": "EN 12101-3 sertifikalı, F300/2H sınıfı yangın dayanımıyla 300°C'de 2 saat kesintisiz çalışma." },
+      { "title": "Damper Sistemleri", "desc": "Yangın ve duman bölgelendirmesi için servo motorlu şaft duman damperleri ve basınç tahliye damperleri." },
+      { "title": "Sensör ve Algılama", "desc": "CO, duman ve ısı sensörleri ile zon bazlı veri toplama ve limit değer izleme." },
+      { "title": "Otomasyon Panoları", "desc": "PLC kontrollü MCC panoları, BMS entegrasyonu, senaryo bazlı otomatik fan yönetimi." },
+      { "title": "CFD Mühendislik", "desc": "Proje özelinde hesaplamalı akışkanlar dinamiği analizi, yangın senaryosu simülasyonu ve raporlama." }
+    ],
+    "midCtaTitle": "Projeniz için keşif ve teklif talep edin",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "EN 12101-3 Uyumu", "desc": "Tüm sistemler Avrupa yangın güvenliği standartlarına uygun olarak tasarlanır ve belgelendirilir." },
+      { "title": "F300/2H Yangın Dayanımı", "desc": "300°C sıcaklıkta 2 saat kesintisiz çalışma kapasitesi ile kritik tahliye süresi güvence altında." },
+      { "title": "CFD Destekli Tasarım", "desc": "Her proje özelinde 3D simülasyon ile duman yayılımı, sıcaklık ve görüş mesafesi doğrulanır." },
+      { "title": "Uçtan Uca Hizmet", "desc": "Keşif, projelendirme, üretim, montaj, devreye alma ve periyodik bakım tek elden sağlanır." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Yapılarda Kullanılır?",
+    "areasDesc": "Her proje özelinde en uygun ürün kombinasyonu belirlenir.",
+    "areas": [
+      { "title": "Kapalı Otoparklar", "description": "CO tahliyesi + yangın anında duman atımı", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Karayolu ve Demiryolu Tünelleri", "description": "Yangın zonlama ve hava yönlendirme", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Alışveriş Merkezleri (AVM)", "description": "Duman kontrolü ve tahliyesi", "products": [{ "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Stadyumlar ve Toplantı Salonları", "description": "Acil durumlarda duman boşaltımı", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Endüstriyel Üretim Tesisleri", "description": "Proses kaynaklı sıcak gaz tahliyesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }, { "name": "OWL", "type": "Duvar Tipi Fanlar", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "Hastaneler ve Sağlık Tesisleri", "description": "Hasta alanlarında duman zonlaması", "products": [{ "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Havalimanları ve Metro İstasyonları", "description": "Alt katman duman tahliyesi", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }] },
+      { "title": "Depo ve Lojistik Merkezleri", "description": "Yüksek hacimlerde duman kontrolü", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Enerji Santralleri & Jeneratör Odaları", "description": "Elektriksel yangınlara karşı egzoz", "products": [{ "name": "BEAR", "type": "Exproof Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
+      { "title": "Otel ve Rezidanslar (Yüksek Yapılar)", "description": "Merdiven basınçlandırma, duman tahliyesi", "products": [{ "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Duman tahliye sistemi hangi binalarda zorunludur?", "a": "Kapalı otopark, AVM, yüksek yapı, tünel, endüstriyel tesis gibi yapılarda yangın yönetmeliği gereği duman tahliye sistemi zorunludur. Projenize özel gereksinim analizi için bizimle iletişime geçebilirsiniz." },
+      { "q": "EN 12101-3 sertifikası ne anlama gelir?", "a": "EN 12101-3, duman ve ısı tahliye fanlarının yangın koşullarında (yüksek sıcaklık) belirli bir süre boyunca çalışabilme kapasitesini belgeleyen Avrupa standardıdır. NOVVES ürünleri bu standarda uygun olarak üretilmektedir." },
+      { "q": "CFD analizi neden gereklidir?", "a": "CFD analizi, jet fan yerleşimi, duman yayılım senaryosu ve tahliye sürelerinin bilgisayar ortamında simüle edilmesini sağlar. Bu sayede kurulum öncesi sistem performansı doğrulanır ve yönetmelik uyumluluğu belgelenir." },
+      { "q": "Mevcut sistemlere entegrasyon yapılabilir mi?", "a": "Evet, NOVVES duman tahliye sistemleri mevcut BMS altyapılarına, yangın algılama panolarına ve otomasyon sistemlerine entegre edilebilir." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Duman tahliye sistemi ihtiyacınız mı var?",
+    "finalCtaDesc": "Keşif, CFD analizi, projelendirme ve teklif süreçleri için uzman mühendislik ekibimizle hemen iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "konforIklimlendirme": {
+    "breadcrumbCurrent": "Konfor İklimlendirme",
+    "badge": "Çözümler",
+    "titleLine1": "Konfor İklimlendirme",
+    "titleHighlight": "Sistemleri",
+    "subtitle": "Ofis, AVM, otel ve ticari binalarda ideal sıcaklık, nem ve hava kalitesi; enerji verimli, sessiz ve konforlu iklimlendirme çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/iklimlendirme",
+    "trustStrip": [
+      { "value": "EC Motor", "label": "Enerji Verimliliği" },
+      { "value": "Eurovent", "label": "Sertifikalı" },
+      { "value": "BMS", "label": "Entegrasyon" },
+      { "value": "200+", "label": "Tamamlanan Proje" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Verimli İklimlendirme Konfor ve Tasarruf Demektir",
+    "whyImportantP1": "Ticari ve kurumsal binalarda iklimlendirme, enerji tüketiminin en büyük kalemini oluşturur. Doğru tasarlanmış bir sistem, kullanıcı konforunu artırırken işletme maliyetlerini önemli ölçüde düşürür.",
+    "whyImportantP2": "NOVVES, modüler klima santralleri ve ısı geri kazanım üniteleri ile her projeye özel çözümler sunar. EC motorlu fanlar, yüksek verimli ısı değiştiriciler ve akıllı kontrol sistemleri ile enerji tüketimini minimize eder.",
+    "steps": [
+      { "label": "İhtiyaç Analizi", "desc": "Bina tipi, kullanım alanı, iklim koşulları ve konfor gereksinimlerinin belirlenmesi" },
+      { "label": "Sistem Tasarımı", "desc": "Santral seçimi, kanal tasarımı, difüzör yerleşimi, otomasyon senaryosu" },
+      { "label": "Üretim & Montaj", "desc": "Modüler santral üretimi, sahada profesyonel kurulum" },
+      { "label": "Devreye Alma & Bakım", "desc": "Performans testi, dengeleme, periyodik filtre ve bakım hizmeti" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Klima Santralleri (TIGER)", "desc": "500 - 125.000 m³/h kapasite, modüler yapı, yüksek verimli ısı değiştiriciler ve EC fan seçenekleri." },
+      { "title": "Isı Geri Kazanım Üniteleri", "desc": "Egzoz havasındaki enerjiyi geri kazanarak ısıtma/soğutma maliyetlerini %70'e kadar azaltır." },
+      { "title": "Nem Alma Santralleri (DOLPHIN)", "desc": "Kapalı havuz, SPA ve yüksek nemli alanlar için özel nem kontrol çözümleri." },
+      { "title": "Kanal Fanları (KOI)", "desc": "Kanal içi basınç takviyesi ve hava dağılımı için kompakt, düşük sesli kanal fanları." },
+      { "title": "Difüzör ve Menfez Sistemleri", "desc": "Homojen hava dağılımı için tavan, duvar ve yer difüzörleri ile hava ayar damperleri." },
+      { "title": "Otomasyon ve Kontrol", "desc": "Sıcaklık, nem ve CO2 sensörleri ile BMS entegreli akıllı kontrol panoları." }
+    ],
+    "midCtaTitle": "Konfor iklimlendirme projeniz için teklif alın",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Enerji Verimliliği", "desc": "EC motorlar ve ısı geri kazanım ile işletme maliyetlerinde %40'a varan tasarruf." },
+      { "title": "Modüler Tasarım", "desc": "Her projeye özel konfigürasyonla istenilen kapasitede santral üretimi." },
+      { "title": "Sessiz Çalışma", "desc": "Akustik izolasyonlu gövde ve titreşim önleyiciler ile konfor alanlarında düşük ses seviyesi." },
+      { "title": "Tek Elden Çözüm", "desc": "Projelendirme, üretim, montaj ve devreye alma süreçleri NOVVES güvencesiyle." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Yapılarda Kullanılır?",
+    "areasDesc": "Her bina tipine özel iklimlendirme çözümleri sunulmaktadır.",
+    "areas": [
+      { "title": "Ofis ve İş Merkezleri", "description": "Açık ofis ve toplantı salonlarında konforlu havalandırma", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Oteller ve Rezidanslar", "description": "Oda bazlı sıcaklık kontrolü ve taze hava besleme", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fanlar", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Alışveriş Merkezleri", "description": "Yüksek yoğunluklu alanlarda homojen iklimlendirme", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }] },
+      { "title": "Hastaneler ve Sağlık Tesisleri", "description": "Hijyenik hava koşullarında hassas sıcaklık kontrolü", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Havuz ve SPA Alanları", "description": "Yüksek nem kontrolü ve konfor", "products": [{ "name": "DOLPHIN", "type": "Nem Alma Santralleri", "image": "/images/products/dolphin-main.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Klima santrali ile split klima arasındaki fark nedir?", "a": "Klima santrali merkezi bir sistemdir; büyük alanlarda homojen sıcaklık, nem kontrolü ve filtrasyon sağlar. Split klimalar ise bireysel oda bazında çalışır. Ticari binalarda santral sistemi çok daha verimlidir." },
+      { "q": "Isı geri kazanım ne kadar tasarruf sağlar?", "a": "İşletme koşullarına bağlı olarak %50-70 arasında enerji tasarrufu sağlanabilir. Egzoz havasındaki ısı enerjisi, taze havaya aktarılarak ısıtma/soğutma yükünde önemli azalma elde edilir." },
+      { "q": "Mevcut binalara iklimlendirme sistemi kurulabilir mi?", "a": "Evet, NOVVES modüler klima santralleri kompakt boyutlarıyla mevcut binalara da uyarlanabilir. Saha incelemesi sonrası en uygun çözüm önerisi yapılır." },
+      { "q": "Bakım periyotları ne kadardır?", "a": "Filtre değişimi genellikle 3-6 ay aralıkla yapılır. Genel sistem bakımı ise yılda en az 2 kez önerilir. NOVVES periyodik bakım sözleşmeleri ile sistemleriniz sürekli verimli çalışır." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Konfor iklimlendirme sistemi mi arıyorsunuz?",
+    "finalCtaDesc": "Projelendirme, santral seçimi ve teklif süreçleri için mühendislik ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "hijyenikFiltrasyon": {
+    "breadcrumbCurrent": "Hijyenik Filtrasyonlu Havalandırma",
+    "badge": "Çözümler",
+    "titleLine1": "Hijyenik Filtrasyonlu",
+    "titleHighlight": "Havalandırma",
+    "subtitle": "Hastane, laboratuvar, ilaç ve gıda tesislerinde HEPA filtrasyonlu, temiz oda standartlarında havalandırma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-filtrasyonu",
+    "trustStrip": [
+      { "value": "HEPA H14", "label": "Filtrasyon Sınıfı" },
+      { "value": "ISO 14644", "label": "Temiz Oda Standardı" },
+      { "value": "GMP", "label": "Uyumlu Tasarım" },
+      { "value": "99.995%", "label": "Partikül Tutuculuk" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Temiz Hava, Güvenli Ortam",
+    "whyImportantP1": "Hastane ameliyathaneleri, ilaç üretim tesisleri, gıda işleme alanları ve laboratuvarlarda havadaki partikül ve mikrobiyolojik kontaminasyon doğrudan insan sağlığı ve ürün kalitesini etkiler.",
+    "whyImportantP2": "NOVVES hijyenik havalandırma sistemleri, çok kademeli filtrasyon (G4 ön filtre + F7/F9 torba filtre + HEPA H13/H14), pozitif/negatif basınç kontrolü ve laminar akım teknolojisi ile temiz oda sınıfına uygun ortamlar oluşturur.",
+    "steps": [
+      { "label": "Temiz Oda Sınıflandırması", "desc": "ISO 14644 / GMP sınıf belirleme, partikül ve basınç gereksinimleri" },
+      { "label": "Sistem Tasarımı", "desc": "Filtrasyon kademeleri, hava değişim oranı, basınç kaskadı tasarımı" },
+      { "label": "Üretim & Montaj", "desc": "Paslanmaz gövde üretimi, HEPA filtre entegrasyonu, sahada kurulum" },
+      { "label": "Validasyon & Bakım", "desc": "Partikül sayım testi, DOP/PAO filtre sızdırmazlık testi, periyodik bakım" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Hijyenik Klima Santralleri", "desc": "Paslanmaz çelik gövde, iç yüzey kaplamaları, hijyenik panel ve modüler yapı ile temiz oda standartlarına uygun santral." },
+      { "title": "HEPA Filtrasyon Ünitesi", "desc": "H13/H14 sınıfı HEPA filtreler ile %99.995 partikül tutuculuk oranı." },
+      { "title": "Laminar Akım Ünitesi (LAF)", "desc": "Ameliyathane ve temiz odalarda tek yönlü hava akışı ile partikütsüz ortam." },
+      { "title": "Basınç Kontrol Sistemleri", "desc": "Oda arası diferansiyel basınç izleme ve otomatik damper kontrolü." },
+      { "title": "Ön Filtre ve Torba Filtre", "desc": "G4 ön filtre ve F7/F9 torba filtreler ile HEPA ömrünü uzatan çok kademeli filtrasyon." },
+      { "title": "İzleme ve Otomasyon", "desc": "Partikül sayıcı, basınç sensörü ve BMS entegrasyonu ile 7/24 izleme." }
+    ],
+    "midCtaTitle": "Hijyenik havalandırma projeniz için teklif alın",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "ISO 14644 Uyumu", "desc": "Temiz oda sınıflandırmasına uygun tasarım ve validasyon hizmeti." },
+      { "title": "GMP Uyumlu Üretim", "desc": "İlaç ve gıda endüstrisi GMP gereksinimlerini karşılayan sistem tasarımı." },
+      { "title": "Çok Kademeli Filtrasyon", "desc": "G4 + F7/F9 + HEPA H14 ile en yüksek hava temizliği." },
+      { "title": "Uçtan Uca Hizmet", "desc": "Tasarım, üretim, kurulum, validasyon ve periyodik bakım tek elden." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Tesislerde Kullanılır?",
+    "areasDesc": "Hijyenik havalandırma gerektiren tüm kritik alanlarda çözümler sunulmaktadır.",
+    "areas": [
+      { "title": "Hastane Ameliyathaneleri", "description": "Laminar akışlı, HEPA filtrasyonlu steril ortam", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "İlaç Üretim Tesisleri", "description": "GMP sınıfı temiz oda havalandırması", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Gıda İşleme Tesisleri", "description": "Kontamine olmayan üretim ortamı", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fanlar", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Laboratuvarlar", "description": "Negatif/pozitif basınçlı izole ortamlar", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Elektronik ve Yarı İletken Üretimi", "description": "Ultra temiz oda sınıfında partikül kontrolü", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "HEPA filtre ne sıklıkla değiştirilmelidir?", "a": "HEPA filtre ömrü kullanım koşullarına bağlı olarak 2-5 yıl arasında değişir. Ön filtre ve torba filtrelerin düzenli değişimi HEPA ömrünü önemli ölçüde uzatır. Diferansiyel basınç izleme ile değişim zamanı doğrulukla belirlenir." },
+      { "q": "Temiz oda sınıflandırması nasıl belirlenir?", "a": "ISO 14644-1 standardına göre havadaki partikül sayısına bağlı olarak sınıflandırma yapılır. Örneğin ISO 5 sınıfı ameliyathane için, ISO 7-8 sınıfı ilaç üretim alanları için yaygın kullanılır." },
+      { "q": "Mevcut havalandırma sistemine HEPA filtre eklenebilir mi?", "a": "Mevcut sistemin kapasitesi ve basınç kaybına bağlı olarak HEPA filtre entegrasyonu yapılabilir. Ancak çok kademeli filtrasyon için genellikle santral revizyonu önerilir." },
+      { "q": "Validasyon hizmeti sağlıyor musunuz?", "a": "Evet, NOVVES tüm hijyenik havalandırma projelerinde partikül sayım testi, DOP/PAO filtre sızdırmazlık testi ve basınç haritalama dahil validasyon hizmeti sunmaktadır." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Hijyenik havalandırma sistemi mi arıyorsunuz?",
+    "finalCtaDesc": "Temiz oda sınıflandırması, projelendirme ve teklif için mühendislik ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "endustriyelHavaYonetimi": {
+    "breadcrumbCurrent": "Endüstriyel Hava Yönetimi",
+    "badge": "Çözümler",
+    "titleLine1": "Endüstriyel Hava",
+    "titleHighlight": "Yönetimi",
+    "subtitle": "Fabrika, üretim tesisi ve endüstriyel alanlarda etkili havalandırma, egzoz ve taze hava besleme çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "120°C", "label": "Sıcaklık Dayanımı" },
+      { "value": "ATEX", "label": "Exproof Seçenek" },
+      { "value": "IP55", "label": "Koruma Sınıfı" },
+      { "value": "300+", "label": "Tamamlanan Proje" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Üretim Verimliliği İçin Doğru Hava Yönetimi",
+    "whyImportantP1": "Endüstriyel tesislerde proses kaynaklı ısı, nem, toz ve gaz birikimi çalışanların sağlığını, ürün kalitesini ve ekipman ömrünü doğrudan etkiler. Etkili hava yönetimi, iş güvenliği mevzuatına uyumun da temel koşullarındandır.",
+    "whyImportantP2": "NOVVES, endüstriyel tesis ihtiyaçlarına özel olarak tasarlanan yüksek kapasiteli fan sistemleri, kanal tasarımları ve otomasyon çözümleri ile sıcak gaz tahliyesi, taze hava besleme ve genel havalandırma projelerini tek elden yönetir.",
+    "steps": [
+      { "label": "Saha İnceleme", "desc": "Tesis tipi, proses koşulları, sıcaklık/nem/toz analizi" },
+      { "label": "Mühendislik Tasarımı", "desc": "Fan seçimi, kanal hesaplama, egzoz/besleme dengeleme" },
+      { "label": "Üretim & Montaj", "desc": "Ağır hizmet fanlar, endüstriyel kanal üretimi ve sahada montaj" },
+      { "label": "Devreye Alma & Servis", "desc": "Performans ölçümü, dengeleme, periyodik bakım ve 7/24 destek" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Endüstriyel Salyangoz Fanlar (NAUTILUS)", "desc": "Yüksek basınç ve sıcaklık dayanımlı, çift cidarlı veya tek cidarlı salyangoz fanlar." },
+      { "title": "Aksiyal Fanlar (MARLIN)", "desc": "Büyük hacimlerde yüksek debi kapasiteli, kovan tipli veya kanatlı aksiyal fanlar." },
+      { "title": "Çatı Fanları (HERON)", "desc": "Tesis çatısında egzoz veya taze hava beslemesi için radyal ve aksiyal çatı fanları." },
+      { "title": "Duvar Fanları (OWL)", "desc": "Cephe montajlı egzoz veya besleme için duvar tipi radyal ve aksiyal fanlar." },
+      { "title": "Kanal Fanları (KOI)", "desc": "Kanal içi basınç takviyesi ve hava transferi için kompakt kanal fanları." },
+      { "title": "Otomasyon ve Kontrol", "desc": "Frekans invertör, sıcaklık/nem sensörleri, PLC pano ve BMS entegrasyonu." }
+    ],
+    "midCtaTitle": "Endüstriyel havalandırma projeniz için teklif alın",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Yüksek Sıcaklık Dayanımı", "desc": "120°C'ye kadar sürekli çalışma kapasiteli fan seçenekleri ile proses egzozu." },
+      { "title": "Ağır Hizmet Tasarımı", "desc": "Kalın gövde sacı, takviyeli yatak grupları ve korozyona dayanıklı kaplama seçenekleri." },
+      { "title": "Geniş Ürün Yelpazesi", "desc": "Salyangoz, aksiyal, çatı, duvar ve kanal fanları ile her ihtiyaca uygun çözüm." },
+      { "title": "Uzun Ömürlü Performans", "desc": "Ağır hizmet rulman grupları, dinamik balans ve titreşim izleme ile sürekli performans." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Tesislerde Kullanılır?",
+    "areasDesc": "Endüstriyel havalandırma gerektiren tüm üretim ve tesis tiplerine yönelik çözümler.",
+    "areas": [
+      { "title": "Otomotiv Fabrikaları", "description": "Boya kabini egzozu, kaynak dumanı tahliyesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Metal ve Çelik Tesisleri", "description": "Sıcak gaz tahliyesi ve taze hava beslemesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "Tekstil Fabrikaları", "description": "Nem kontrolü ve lif tozu tahliyesi", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Kimya ve Petrokimya Tesisleri", "description": "Korozif gaz egzozu ve taze hava besleme", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
+      { "title": "Depo ve Lojistik Merkezleri", "description": "Genel havalandırma ve sıcaklık kontrolü", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Endüstriyel fan seçiminde nelere dikkat edilmeli?", "a": "Hava debisi, basınç kaybı, çalışma sıcaklığı, ortam koşulları (toz, nem, korozif gaz) ve ses seviyesi temel seçim kriterleridir. NOVVES mühendislik ekibi proje özelinde en uygun fan tipini belirler." },
+      { "q": "Yüksek sıcaklık ortamlarında hangi fanlar kullanılır?", "a": "NAUTILUS serisi salyangoz fanlar 120°C'ye kadar sürekli çalışma için tasarlanmıştır. Daha yüksek sıcaklıklar için özel malzeme ve soğutma çözümleri uygulanır." },
+      { "q": "ATEX sertifikalı fan gerekiyor mu?", "a": "Patlayıcı atmosfer riski olan alanlarda (kimya, petrokimya, boya, tahıl silosu vb.) ATEX sertifikalı BEAR serisi fanlar zorunludur." },
+      { "q": "Mevcut tesislere ek havalandırma yapılabilir mi?", "a": "Evet, mevcut kanal ve fan sistemlerine ek olarak kapasite artırımı veya yeni egzoz hatları eklenebilir. Saha incelemesi sonrası en uygun çözüm belirlenir." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Endüstriyel havalandırma sistemi mi arıyorsunuz?",
+    "finalCtaDesc": "Saha inceleme, mühendislik tasarımı ve teklif süreçleri için ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "hayvancilikTesisleri": {
+    "breadcrumbCurrent": "Hayvancılık Tesisleri Havalandırma",
+    "badge": "Çözümler",
+    "titleLine1": "Hayvancılık Tesisleri İçin",
+    "titleHighlight": "Havalandırma Sistemleri",
+    "subtitle": "Kümes, ahır ve büyükbaş/küçükbaş barınma tesislerinde hayvan refahını ve üretim verimliliğini artıran özel havalandırma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "IP55", "label": "Koruma Sınıfı" },
+      { "value": "Anti-Korozyon", "label": "Kaplama" },
+      { "value": "EC Motor", "label": "Enerji Tasarrufu" },
+      { "value": "150+", "label": "Tamamlanan Proje" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Hayvan Refahı ve Üretim Verimliliği",
+    "whyImportantP1": "Hayvancılık tesislerinde amonyak, nem, ısı birikimi ve yetersiz hava sirkülasyonu hayvanların stres seviyesini artırarak büyüme performansını, süt verimini ve yumurta üretimini doğrudan düşürmektedir.",
+    "whyImportantP2": "NOVVES, kümes, ahır ve barınma tesislerine özel olarak tasarlanan korozyona dayanıklı fan sistemleri ile ortam sıcaklığı, nem ve gaz konsantrasyonunu optimum seviyede tutar. Enerji verimli EC motorlar ve akıllı kontrol sistemleri ile işletme maliyetleri minimize edilir.",
+    "steps": [
+      { "label": "Tesis Analizi", "desc": "Hayvan türü, tesis boyutları, iklim koşulları ve havalandırma ihtiyacı belirleme" },
+      { "label": "Sistem Tasarımı", "desc": "Fan seçimi, yerleşim planı, hava giriş/çıkış dengelemesi, soğutma entegrasyonu" },
+      { "label": "Üretim & Montaj", "desc": "Korozyona dayanıklı fan üretimi, sahada profesyonel kurulum" },
+      { "label": "Devreye Alma & Destek", "desc": "Performans testi, otomasyon kalibrasyonu, periyodik bakım ve teknik destek" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Kümes Fanları (CHICKEN)", "desc": "Tavuk kümes ve küçükbaş barınma tesisleri için özel tasarlanmış, korozyona dayanıklı, yüksek debili aksiyal fanlar." },
+      { "title": "Duvar Tipi Egzoz Fanları (OWL)", "desc": "Büyükbaş ahır ve barınma tesislerinde cephe montajlı, galvaniz gövdeli egzoz fanları." },
+      { "title": "Çatı Fanları (HERON)", "desc": "Çatıdan egzoz ve taze hava beslemesi için korozyona dayanıklı çatı fanları." },
+      { "title": "Evaporatif Soğutma Pedi", "desc": "Sıcak iklimlerde adyabatik soğutma ile tesis içi sıcaklığı düşüren petek sistemleri." },
+      { "title": "Hava Giriş Menfezleri", "desc": "Kontrollü taze hava girişi için ayarlanabilir kanatlı menfezler ve tünel havalandırma yapısı." },
+      { "title": "Otomasyon ve Kontrol", "desc": "Sıcaklık, nem ve amonyak sensörleri ile otomatik fan hız kontrolü ve iklim yönetimi." }
+    ],
+    "midCtaTitle": "Hayvancılık tesisiniz için havalandırma teklifi alın",
+    "midCtaDesc": "Uzman ekibimiz tesisinize özel çözüm önerisi sunacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Korozyona Dayanıklılık", "desc": "Galvaniz ve özel kaplama seçenekleri ile amonyak ve neme karşı uzun ömürlü performans." },
+      { "title": "Yüksek Hava Debisi", "desc": "Büyük çapta fan seçenekleri ile geniş hacimlerde etkili hava sirkülasyonu." },
+      { "title": "Enerji Verimliliği", "desc": "EC motorlar ve değişken hız kontrolü ile enerji maliyetlerinde önemli tasarruf." },
+      { "title": "Hayvan Refahı Odaklı", "desc": "Optimum sıcaklık ve hava kalitesi ile stres faktörlerinin minimize edilmesi." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Tesislerde Kullanılır?",
+    "areasDesc": "Her hayvancılık tesisi tipine özel havalandırma çözümleri sunulmaktadır.",
+    "areas": [
+      { "title": "Tavuk Kümesleri (Broiler/Yumurta)", "description": "Tünel havalandırma ve evaporatif soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Büyükbaş Ahırları", "description": "Amonyak tahliyesi ve taze hava beslemesi", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Süt Çiftlikleri", "description": "Sağım alanı ve barınma iklim kontrolü", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Küçükbaş Barınma Tesisleri", "description": "Koyun ve keçi barınaklarında havalandırma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Kümeste hangi havalandırma sistemi tercih edilmelidir?", "a": "Kümes boyutu ve iklimine bağlı olarak tünel havalandırma (negatif basınç) veya cross havalandırma (çapraz) sistemleri kullanılır. Sıcak iklimlerde evaporatif soğutma pedi entegrasyonu önemlidir." },
+      { "q": "Amonyak seviyesi nasıl kontrol edilir?", "a": "Amonyak sensörleri ile sürekli izleme yapılır ve fan hızları otomatik olarak ayarlanır. Minimum havalandırma debisi ile amonyak konsantrasyonu güvenli limitlerin altında tutulur." },
+      { "q": "Kış aylarında havalandırma nasıl yapılır?", "a": "Kış aylarında minimum havalandırma modu ile hava kalitesi korunurken ısı kaybı minimize edilir. Değişken hızlı fanlar ve otomatik menfez kontrolü ile dengeli bir sistem oluşturulur." },
+      { "q": "Sistem ne kadar enerji tüketir?", "a": "EC motorlu fan sistemleri geleneksel AC motorlara göre %30-50 daha az enerji tüketir. Otomasyon sistemi ile fanlar yalnızca ihtiyaç anında çalışarak enerji israfını önler." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Hayvancılık tesisiniz için havalandırma çözümü mü arıyorsunuz?",
+    "finalCtaDesc": "Tesis analizi, sistem tasarımı ve teklif için uzman ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "trafoEnerjiOdalari": {
+    "breadcrumbCurrent": "Trafo & Enerji Odaları Fanları",
+    "badge": "Çözümler",
+    "titleLine1": "Trafo & Enerji Odaları",
+    "titleHighlight": "Fanları",
+    "subtitle": "Trafo merkezleri, jeneratör odaları ve enerji dağıtım tesislerinde sıcaklık kontrolü ve havalandırma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "IP55", "label": "Koruma Sınıfı" },
+      { "value": "F Sınıfı", "label": "Motor İzolasyonu" },
+      { "value": "TEDAŞ", "label": "Uyumlu Tasarım" },
+      { "value": "500+", "label": "Kurulu Sistem" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Ekipman Ömrü İçin Kritik Sıcaklık Kontrolü",
+    "whyImportantP1": "Trafo merkezleri ve enerji odaları, elektriksel ekipmanların ürettiği ısının birikmesiyle tehlikeli sıcaklık seviyelerine ulaşabilir. Aşırı sıcaklık, trafoda yağ bozulması, kablo izolasyon kaybına ve arızalara yol açar.",
+    "whyImportantP2": "NOVVES, TEDAŞ teknik şartnamelerine uygun olarak tasarlanan havalandırma çözümleri ile trafo odaları, orta gerilim hücreleri, jeneratör odaları ve UPS mekanlarında sıcaklık kontrolünü güvence altına alır.",
+    "steps": [
+      { "label": "Isı Yükü Hesabı", "desc": "Trafo gücü, kayıp ısısı, oda boyutları ve dış ortam sıcaklığı analizi" },
+      { "label": "Sistem Tasarımı", "desc": "Fan seçimi, menfez boyutlandırma, egzoz/besleme dengeleme" },
+      { "label": "Üretim & Montaj", "desc": "IP55 korumalı fan üretimi ve sahada kurulum" },
+      { "label": "Devreye Alma & Test", "desc": "Sıcaklık ölçümü, termostat kalibrasyonu ve performans doğrulama" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Duvar Tipi Fanlar (OWL)", "desc": "Trafo odaları için IP55 korumalı, galvaniz gövdeli duvar tipi egzoz ve besleme fanları." },
+      { "title": "Çatı Fanları (HERON)", "desc": "Enerji odaları çatısında sıcak hava tahliyesi için radyal ve aksiyal çatı fanları." },
+      { "title": "Kanal Fanları (KOI)", "desc": "Kanal sistemi ile sıcak havanın uzak mesafeye taşınması için kompakt kanal fanları." },
+      { "title": "Hava Giriş Menfezleri", "desc": "TEDAŞ şartnamelerine uygun filtreli ve böcekli hava giriş menfezleri." },
+      { "title": "Termostat ve Kontrol", "desc": "Oda sıcaklığına bağlı otomatik fan açma/kapama ve kademe kontrolü." },
+      { "title": "Damper Sistemleri", "desc": "Yangın ve sıcak hava zonlama için motorlu damperler ve basınç dengeleme damperleri." }
+    ],
+    "midCtaTitle": "Trafo odası havalandırma projeniz için teklif alın",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "TEDAŞ Uyumlu", "desc": "Türkiye Elektrik Dağıtım teknik şartnamelerine tam uyumlu fan ve menfez çözümleri." },
+      { "title": "IP55 Koruma", "desc": "Toz ve su sıçramasına karşı yüksek koruma sınıflı motorlar ve gövdeler." },
+      { "title": "Düşük Ses Seviyesi", "desc": "Enerji dağıtım merkezlerinde çevre uyumlu sessiz çalışma performansı." },
+      { "title": "Uzun Ömürlü Tasarım", "desc": "F sınıfı motor izolasyonu ve galvaniz gövde ile uzun süreli güvenilir çalışma." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Alanlarda Kullanılır?",
+    "areasDesc": "Elektrik ve enerji altyapısındaki tüm kritik mekanlar için çözümler.",
+    "areas": [
+      { "title": "Trafo Merkezleri", "description": "Trafo kayıp ısısı tahliyesi ve sıcaklık kontrolü", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Jeneratör Odaları", "description": "Egzoz gazı ve ısı tahliyesi", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "UPS ve Akü Odaları", "description": "Hidrojen gazı tahliyesi ve sıcaklık kontrolü", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Orta Gerilim Hücreleri", "description": "Elektriksel ısı birikimi tahliyesi", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Trafo odasında havalandırma neden zorunludur?", "a": "Trafoların ürettiği kayıp ısısı odada birikir ve 40°C üzerindeki ortam sıcaklıkları trafo ömrünü kısaltır, yağ bozulmasına ve izolasyon kayıplarına neden olur. TEDAŞ şartnameleri uygun havalandırmayı zorunlu kılar." },
+      { "q": "Hangi fan tipi trafo odaları için uygundur?", "a": "Oda boyutuna ve ısı yüküne bağlı olarak duvar tipi (OWL), çatı tipi (HERON) veya kanal tipi (KOI) fanlar kullanılır. Genellikle egzoz + taze hava besleme kombinasyonu uygulanır." },
+      { "q": "Termostatlı kontrol nasıl çalışır?", "a": "Oda sıcaklığı belirlenen üst limite ulaştığında fanlar otomatik olarak devreye girer, sıcaklık düşünce kapanır. Birden fazla kademe ile enerji tasarrufu sağlanır." },
+      { "q": "UPS odasında özel gereksinim var mıdır?", "a": "Evet, akü gruplarında şarj sırasında hidrojen gazı oluşabilir. Bu nedenle UPS odalarında patlama riski göz önünde bulundurularak uygun havalandırma ve gaz algılama sistemleri gerekir." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Trafo odası havalandırma çözümü mü arıyorsunuz?",
+    "finalCtaDesc": "Isı yükü hesabı, sistem tasarımı ve teklif için mühendislik ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "seraTarimsal": {
+    "breadcrumbCurrent": "Sera & Tarımsal Havalandırma",
+    "badge": "Çözümler",
+    "titleLine1": "Sera & Tarımsal",
+    "titleHighlight": "Havalandırma Sistemleri",
+    "subtitle": "Sera, mantar yetiştirme tesisleri ve tarımsal yapılarda optimum iklim kontrolü için havalandırma ve soğutma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "Anti-Korozyon", "label": "Kaplama" },
+      { "value": "EC Motor", "label": "Enerji Tasarrufu" },
+      { "value": "IoT", "label": "Uzaktan İzleme" },
+      { "value": "100+", "label": "Tamamlanan Proje" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Verimli Tarım İçin Doğru İklim Yönetimi",
+    "whyImportantP1": "Sera ve tarımsal yapılarda sıcaklık, nem ve CO2 seviyesinin kontrol edilmesi bitki gelişimini, ürün kalitesini ve verimi doğrudan etkiler. Yaz aylarında aşırı ısı, kış aylarında yetersiz havalandırma ciddi verim kayıplarına neden olur.",
+    "whyImportantP2": "NOVVES, sera ve tarımsal tesisler için evaporatif soğutma, doğal/mekanik havalandırma ve akıllı iklim kontrol çözümleri sunmaktadır. Her proje, bölgesel iklim verileri ve bitki türü gereksinimleri doğrultusunda özel olarak tasarlanır.",
+    "steps": [
+      { "label": "Tesis Analizi", "desc": "Sera boyutu, bitki türü, bölgesel iklim ve havalandırma ihtiyacı belirleme" },
+      { "label": "Sistem Tasarımı", "desc": "Fan seçimi, soğutma pedi, çatı/yan perde havalandırma ve otomasyon senaryosu" },
+      { "label": "Üretim & Montaj", "desc": "Korozyona dayanıklı fan ve aksesuar üretimi, sahada montaj" },
+      { "label": "Devreye Alma & Destek", "desc": "İklim sensörü kalibrasyonu, otomasyon testi ve teknik destek" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Duvar Tipi Egzoz Fanları (OWL)", "desc": "Sera duvarlarında montajlı, galvaniz gövdeli, yüksek debili havalandırma fanları." },
+      { "title": "Evaporatif Soğutma Sistemleri", "desc": "Adyabatik soğutma prensipli petek sistemler ile sera içi sıcaklığı 8-12°C düşürme." },
+      { "title": "Çatı Havalandırma Ünitesi (HERON)", "desc": "Sera çatısında sıcak hava tahliyesi ve taze hava beslemesi için çatı fanları." },
+      { "title": "Sirkülasyon Fanları", "desc": "Sera içinde homojen sıcaklık ve nem dağılımı için yatay hava sirkülasyon fanları." },
+      { "title": "Hava Giriş Perdeleri", "desc": "Kontrollü taze hava girişi için motorlu yan perde ve çatı pencere sistemleri." },
+      { "title": "Akıllı İklim Kontrolü", "desc": "Sıcaklık, nem, CO2 ve ışık sensörleri ile IoT tabanlı uzaktan izleme ve yönetim." }
+    ],
+    "midCtaTitle": "Sera havalandırma projeniz için teklif alın",
+    "midCtaDesc": "Uzman ekibimiz tesisinize özel çözüm önerisi sunacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Tarımsal Dayanıklılık", "desc": "Galvaniz ve korozyona dayanıklı kaplamalar ile yüksek nem ortamında uzun ömürlü performans." },
+      { "title": "Enerji Verimli Soğutma", "desc": "Evaporatif soğutma ile geleneksel klimaya göre %80 daha az enerji tüketimi." },
+      { "title": "Akıllı Otomasyon", "desc": "IoT tabanlı iklim izleme ile uzaktan kontrol ve veri analizine dayalı karar desteği." },
+      { "title": "Proje Bazlı Tasarım", "desc": "Sera boyutu, bitki türü ve iklim verilerine göre özel tasarlanmış havalandırma sistemi." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Tesislerde Kullanılır?",
+    "areasDesc": "Tarımsal üretim yapılan tüm kapalı alanlarda iklim kontrolü çözümleri.",
+    "areas": [
+      { "title": "Cam ve Plastik Seralar", "description": "Sıcaklık ve nem kontrolü, evaporatif soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Mantar Yetiştirme Tesisleri", "description": "Hassas nem ve sıcaklık kontrolü, taze hava besleme", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fanlar", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Fide Yetiştirme Seraları", "description": "Homojen iklim dağılımı ve soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Tahıl Depolama Tesisleri", "description": "Nem kontrolü ve havalandırma", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Sera havalandırması için en uygun sistem hangisidir?", "a": "Sera boyutu, konumu ve üretilen bitki türüne göre negatif basınçlı (egzoz + soğutma pedi) veya pozitif basınçlı (üstfleme) sistemler kullanılır. Sıcak iklimlerde evaporatif soğutma entegrasyonu büyük önem taşır." },
+      { "q": "Evaporatif soğutma sistemi ne kadar sıcaklık düşürebilir?", "a": "Bölgenin nem değerine bağlı olarak 8-12°C sıcaklık düşüşü sağlanabilir. Düşük nemli bölgelerde verim daha yüksektir." },
+      { "q": "Kış aylarında sera havalandırması gerekli midir?", "a": "Evet, kış aylarında bile minimum havalandırma ile nem kontrolü ve CO2 takviyesi sağlanmalıdır. Aksi halde mantar hastalıkları ve bitki stresinde artış görülebilir." },
+      { "q": "Uzaktan izleme ve kontrol mümkün müdür?", "a": "Evet, NOVVES akıllı iklim kontrol panoları IoT altyapısı ile uzaktan sıcaklık, nem ve CO2 izleme, fan kontrolü ve alarm yönetimi sağlar." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Sera havalandırma sistemi mi arıyorsunuz?",
+    "finalCtaDesc": "Tesis analizi, sistem tasarımı ve teklif için uzman ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "atexPatlamaKoruma": {
+    "breadcrumbCurrent": "ATEX Patlama Koruma",
+    "badge": "Çözümler",
+    "titleLine1": "ATEX Patlama Koruma",
+    "titleHighlight": "Çözümleri",
+    "subtitle": "Patlayıcı atmosfer riski bulunan tesislerde ATEX sertifikalı fan sistemleri ve havalandırma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "ATEX", "label": "Sertifikalı" },
+      { "value": "Zone 1/2", "label": "Kullanım Alanı" },
+      { "value": "IECEx", "label": "Uluslararası Onay" },
+      { "value": "200+", "label": "Kurulu Sistem" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Patlayıcı Ortamlarda Güvenlik Önceliktir",
+    "whyImportantP1": "Kimya, petrokimya, boya, ilaç, tahıl silosu ve maden gibi tesislerde yanıcı gaz, buhar ve toz konsantrasyonları patlayıcı atmosfer oluşturabilir. Standart ekipman kullanımı bu ortamlarda ciddi risk oluşturur.",
+    "whyImportantP2": "NOVVES BEAR serisi ATEX sertifikalı fanlar, patlayıcı atmosfer sınıflandırmasına (Zone 1, Zone 2, Zone 21, Zone 22) uygun olarak tasarlanır. Kıvılcımsız malzeme, exproof motor ve özel sızdırmazlık çözümleri ile güvenli havalandırma sağlanır.",
+    "steps": [
+      { "label": "Risk Analizi", "desc": "Patlayıcı atmosfer sınıflandırması, zone belirleme, gaz/toz türü analizi" },
+      { "label": "Sistem Tasarımı", "desc": "ATEX fan seçimi, kanal tasarımı, topraklama ve exproof otomasyon" },
+      { "label": "Üretim & Montaj", "desc": "ATEX sertifikalı fan üretimi, exproof kablo ve bağlantı montajı" },
+      { "label": "Devreye Alma & Belgelendirme", "desc": "Test, performans ölçümü, ATEX uygunluk belgelendirmesi" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "ATEX Radyal Fanlar (BEAR)", "desc": "Zone 1/2 ve Zone 21/22 için sertifikalı, kıvılcımsız malzemeli salyangoz fanlar." },
+      { "title": "ATEX Aksiyal Fanlar (BEAR)", "desc": "Kovan tipli ve kanatlı, patlayıcı ortamlara uygun aksiyal havalandırma fanları." },
+      { "title": "Exproof Çatı Fanları (BEAR)", "desc": "Patlayıcı gaz/toz bulunan tesislerde çatı montajlı, exproof motorlu tahliye fanları." },
+      { "title": "Exproof Motor ve Kumanda", "desc": "ATEX onaylık motorlar, exproof butonlar, sinyal lambaları ve kumanda kutusu." },
+      { "title": "Antistatik Kanal ve Aksesuar", "desc": "Statik elektrik birikimini önleyen topraklamalı kanal ve bağlantı elemanları." },
+      { "title": "Gaz Algılama ve Otomasyon", "desc": "Yanıcı gaz/toz sensörleri, PLC kontrollü acil kapatma ve havalandırma senaryoları." }
+    ],
+    "midCtaTitle": "ATEX havalandırma projeniz için teklif alın",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "ATEX Sertifikalı", "desc": "2014/34/EU ATEX direktifine uygun üretim ve belgelendirme." },
+      { "title": "Zone 1 & Zone 2 Uyumu", "desc": "Gaz grubu ve sıcaklık sınıfına göre uygun fan seçimi ve tasarımı." },
+      { "title": "Kıvılcımsız Tasarım", "desc": "Alüminyum/bronz alaşımları, özel kaplama ve antistatik komponentler." },
+      { "title": "Uçtan Uca Çözüm", "desc": "Risk analizi, fan seçimi, exproof otomasyon ve belgelendirme tek elden." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Tesislerde Kullanılır?",
+    "areasDesc": "Patlayıcı atmosfer riski bulunan tüm endüstriyel tesislerde ATEX çözümler.",
+    "areas": [
+      { "title": "Kimya ve Petrokimya Tesisleri", "description": "Yanıcı gaz ve buhar tahliyesi", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Çatı Fanları", "image": "/images/products/bear-reb.jpg" }] },
+      { "title": "Boya ve Vernik Fabrikaları", "description": "Solvent buharları tahliyesi", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Duvar Fanları", "image": "/images/products/bear-w.jpg" }] },
+      { "title": "Tahıl Silosu ve Un Fabrikaları", "description": "Yanıcı toz tahliyesi", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Kanal Fanları", "image": "/images/products/bear-t.jpg" }] },
+      { "title": "Maden ve Tünel Tesisleri", "description": "Metan gazı tahliyesi ve havalandırma", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "İlaç ve Kozmetik Üretimi", "description": "Yanıcı solvent ve toz tahliyesi", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-c.jpg" }, { "name": "BEAR", "type": "ATEX Radyal Fanlar", "image": "/images/products/bear-r.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "ATEX sertifikası ne anlama gelir?", "a": "ATEX (ATmospheres EXplosibles), patlayıcı ortamlarda kullanılan ekipmanların tasarım ve üretim standartlarını belirleyen 2014/34/EU Avrupa Birliği direktifidir. BEAR serisi fanlar bu direktife uygun olarak üretilir." },
+      { "q": "Zone 1 ve Zone 2 arasındaki fark nedir?", "a": "Zone 1, normal çalışma koşullarında patlayıcı atmosferin zaman zaman oluşabileceği alanlar; Zone 2 ise yalnızca anormal koşullarda ve kısa süreli patlayıcı atmosfer oluşabilecek alanları tanımlar." },
+      { "q": "Hangi gaz grupları için fan üretiyorsunuz?", "a": "BEAR serisi, IIA (propan, metan), IIB (etilen) ve IIC (hidrojen, asetilen) gaz gruplarına uygun modellerde üretilmektedir." },
+      { "q": "Mevcut sisteme ATEX fan entegre edilebilir mi?", "a": "Evet, mevcut havalandırma sistemlerine ATEX sertifikalı fan entegrasyonu yapılabilir. Ancak kanal, bağlantı ve otomasyon komponentlerinin de ATEX uyumluluğunun kontrol edilmesi gerekir." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "ATEX havalandırma çözümü mü arıyorsunuz?",
+    "finalCtaDesc": "Risk analizi, ATEX fan seçimi ve teklif için mühendislik ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "akilliOtomasyon": {
+    "breadcrumbCurrent": "Akıllı Otomasyon ve Kontrol",
+    "badge": "Çözümler",
+    "titleLine1": "Akıllı Otomasyon ve",
+    "titleHighlight": "Kontrol Sistemleri",
+    "subtitle": "BMS entegrasyonu, PLC tabanlı fan yönetimi, IoT izleme ve enerji optimizasyonu için akıllı kontrol çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Hizmetlerimiz",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      { "value": "BMS", "label": "Entegrasyon" },
+      { "value": "PLC/SCADA", "label": "Kontrol Altyapısı" },
+      { "value": "IoT", "label": "Uzaktan İzleme" },
+      { "value": "7/24", "label": "Destek" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Verimlilik ve Kontrol İçin Akıllı Sistemler",
+    "whyImportantP1": "Modern bina ve endüstriyel tesislerde havalandırma sistemlerinin manuel yönetimi verimsizlik, enerji israfı ve bakım sorunlarına yol açar. Akıllı otomasyon, sensör verilerine dayalı olarak sistemleri optimize eder.",
+    "whyImportantP2": "NOVVES otomasyon çözümleri, PLC tabanlı MCC panoları, frekans invertör entegrasyonu, BMS bağlantısı ve IoT tabanlı uzaktan izleme ile havalandırma sistemlerinin tam kontrolünü sağlar. Senaryo bazlı çalışma modları ile enerji tüketimi minimize edilir.",
+    "steps": [
+      { "label": "İhtiyaç Analizi", "desc": "Mevcut sistem inceleme, otomasyon gereksinimleri, BMS altyapısı tespiti" },
+      { "label": "Otomasyon Tasarımı", "desc": "PLC programlama, sensör seçimi, pano tasarımı, BMS entegrasyon senaryosu" },
+      { "label": "Pano Üretimi & Montaj", "desc": "MCC/otomasyon pano üretimi, saha kablolama ve ekipman montajı" },
+      { "label": "Devreye Alma & Eğitim", "desc": "Sistem testi, senaryo doğrulama, operatör/kullanıcı eğitimi" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "PLC Kontrollü MCC Panoları", "desc": "Fan başlatma/durdurma, kademe kontrolü, arıza izleme ve koruma rölesi entegrasyonlu motor kontrol merkezi." },
+      { "title": "Frekans İnvertör Yönetimi", "desc": "Değişken hızlı fan kontrolü ile enerji tasarrufu ve hassas debi ayarlama." },
+      { "title": "BMS Entegrasyonu", "desc": "Modbus, BACnet veya LON protokolleri ile bina yönetim sistemine tam entegrasyon." },
+      { "title": "Sensör Ağları", "desc": "Sıcaklık, nem, CO, CO2, basınç ve duman sensörleri ile zon bazlı veri toplama." },
+      { "title": "IoT ve Uzaktan İzleme", "desc": "Bulut tabanlı dashboard, mobil uygulama, alarm bildirimi ve enerji tüketim analizi." },
+      { "title": "Senaryo Bazlı Çalışma Modları", "desc": "Normal, gece, yangın, otopark CO tahliyesi gibi ön tanımlı veya özel senaryolar." }
+    ],
+    "midCtaTitle": "Otomasyon projeniz için teklif alın",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Enerji Optimizasyonu", "desc": "Frekans invertör ve sensör verilerine dayalı akıllı kontrol ile %30-50 enerji tasarrufu." },
+      { "title": "BMS Uyumluluk", "desc": "Modbus, BACnet, LON gibi açık protokollerle tüm bina yönetim sistemlerine entegrasyon." },
+      { "title": "Uzaktan İzleme", "desc": "IoT tabanlı 7/24 izleme, alarm bildirimi ve enerji tüketim raporlama." },
+      { "title": "Tek Elden Çözüm", "desc": "Pano tasarımı, PLC programlama, saha montajı ve devreye alma tek elden." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Projelerde Kullanılır?",
+    "areasDesc": "Havalandırma otomasyonu gerektiren tüm bina ve tesis tiplerinde çözümler.",
+    "areas": [
+      { "title": "Kapalı Otopark Otomasyonu", "description": "CO sensörü tabanlı jet fan yönetimi", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "AVM ve Ticari Bina BMS", "description": "Merkezi havalandırma otomasyon ve izleme", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }] },
+      { "title": "Endüstriyel Tesis Otomasyonu", "description": "Proses havalandırma ve egzoz kontrolü", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Hastane ve Temiz Oda", "description": "Basınç kaskadı ve filtrasyon izleme", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Mevcut sisteme otomasyon eklenebilir mi?", "a": "Evet, mevcut fan ve havalandırma sistemlerine PLC pano, frekans invertör ve sensör entegrasyonu yapılarak otomasyon seviyesi yükseltilebilir." },
+      { "q": "Hangi BMS protokollerini destekliyorsunuz?", "a": "Modbus RTU/TCP, BACnet IP/MSTP ve LON protokollerini desteklemekteyiz. Mevcut BMS altyapınıza göre en uygun entegrasyon yöntemi belirlenir." },
+      { "q": "Uzaktan izleme için internet bağlantısı gerekli mi?", "a": "Evet, IoT tabanlı uzaktan izleme için tesiste internet bağlantısı gereklidir. 4G/5G modem veya ethernet bağlantısı ile bulut platformuna veri aktarımı sağlanır." },
+      { "q": "Otomasyon sistemi ne kadar enerji tasarrufu sağlar?", "a": "Sensör verilerine dayalı değişken hızlı fan kontrolü ile %30-50 arasında enerji tasarrufu sağlanabilir. Gece modu ve boş alan senaryoları ile ek tasarruf elde edilir." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Havalandırma otomasyon çözümü mü arıyorsunuz?",
+    "finalCtaDesc": "Otomasyon tasarımı, pano üretimi ve teklif için mühendislik ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "konutHavalandirma": {
+    "breadcrumbCurrent": "Konut Tipi Havalandırma",
+    "badge": "Çözümler",
+    "titleLine1": "Konut Tipi",
+    "titleHighlight": "Havalandırma Sistemleri",
+    "subtitle": "Daire, villa, rezidans ve konut projelerinde taze hava beslemesi, nem kontrolü ve konforlu yaşam alanları için havalandırma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "EC Motor", "label": "Sessiz Çalışma" },
+      { "value": "Isı Geri Kazanım", "label": "%90 Verimlilik" },
+      { "value": "dB(A) <25", "label": "Ses Seviyesi" },
+      { "value": "A+", "label": "Enerji Sınıfı" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Sağlıklı Yaşam İçin Taze Hava",
+    "whyImportantP1": "Modern konutlarda yalıtım seviyesinin artmasıyla birlikte doğal hava değişimi azalmış, iç ortam hava kalitesi ciddi bir sorun haline gelmiştir. Yetersiz havalandırma; nem, küf, koku ve kirli hava birikmesine neden olur.",
+    "whyImportantP2": "NOVVES konut tipi havalandırma çözümleri, ısı geri kazanımlı taze hava beslemesi ile enerji kaybını minimize ederken sağlıklı, temiz ve konforlu yaşam alanları oluşturur. Sessiz çalışma ve kompakt tasarım ile her konut tipine uyum sağlanır.",
+    "steps": [
+      { "label": "İhtiyaç Belirleme", "desc": "Konut tipi, oda sayısı, metrekare ve havalandırma ihtiyacı analizi" },
+      { "label": "Sistem Seçimi", "desc": "Cihaz kapasitesi, kanal güzergahı, menfez yerleşimi planlaması" },
+      { "label": "Montaj", "desc": "Profesyonel kurulum, kanal bağlantısı ve elektrik tesisatı" },
+      { "label": "Devreye Alma", "desc": "Hava debisi ölçümü, ses testi ve kullanıcı eğitimi" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Isı Geri Kazanım Üniteleri", "desc": "Egzoz havasındaki ısıyı %90'a kadar geri kazanarak enerji tasarrufu sağlayan karşı akışlı veya döner eşanjörlü üniteler." },
+      { "title": "Banyo ve Tuvalet Fanları (SEAHORSE)", "desc": "Sessiz, enerji verimli ve kompakt tasarımlı banyo aspiratörleri." },
+      { "title": "Kanal Fanları (KOI)", "desc": "Kanal içi taze hava besleme ve egzoz için düşük sesli kompakt fanlar." },
+      { "title": "Mutfak Fanları (BUTTERFLY)", "desc": "Mutfak davlumbaz egzozu için yağ filtreli, sessiz çalışma özellikli fanlar." },
+      { "title": "Menfez ve Difüzörler", "desc": "Tavan, duvar ve yer menfezleri ile homojen hava dağılımı." },
+      { "title": "Kontrol ve Kumanda", "desc": "Kablosuz kumanda, nem sensörü, zamanlayıcı ve hız ayar kontrolü." }
+    ],
+    "midCtaTitle": "Konut havalandırma projeniz için teklif alın",
+    "midCtaDesc": "Uzman ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Sessiz Çalışma", "desc": "25 dB(A) altında ses seviyesi ile yatak odalarına bile uygun konforda çalışma." },
+      { "title": "Isı Geri Kazanım", "desc": "Egzoz havasındaki enerjinin %90'a kadar geri kazanımı ile enerji israfını önleme." },
+      { "title": "Kompakt Tasarım", "desc": "Asma tavan arası, dolap içi ve duvara gömme montaj seçenekleri." },
+      { "title": "Sağlıklı İç Hava", "desc": "Filtrasyon ve taze hava beslemesi ile polen, toz ve kirleticilerin filtrelenmesi." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Konut Tiplerinde Kullanılır?",
+    "areasDesc": "Her konut tipine uygun havalandırma çözümleri sunulmaktadır.",
+    "areas": [
+      { "title": "Daire ve Apartmanlar", "description": "Merkezi veya bireysel taze hava ve egzoz sistemi", "products": [{ "name": "SEAHORSE", "type": "Banyo Fanları", "image": "/images/products/banyo-fan-1.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Villa ve Müstakil Konutlar", "description": "Isı geri kazanımlı taze hava sistemi", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "BUTTERFLY", "type": "Mutfak Fanları", "image": "/images/products/butterfly-b.jpg" }] },
+      { "title": "Rezidans ve Yüksek Yapılar", "description": "Merkezi havalandırma ve basınçlandırma", "products": [{ "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }, { "name": "SEAHORSE", "type": "Banyo Fanları", "image": "/images/products/banyo-fan-2.jpg" }] },
+      { "title": "Toplu Konut Projeleri", "description": "Şaft havalandırma ve çatı egzoz sistemleri", "products": [{ "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Konut havalandırması enerji kaybı yaratır mı?", "a": "Isı geri kazanım üniteli sistemlerde egzoz havasındaki enerji %90'a kadar geri kazanılır. Bu sayede taze hava beslemesi neredeyse sıfır enerji kaybıyla sağlanır." },
+      { "q": "Banyo fanı ne kadar ses yapar?", "a": "SEAHORSE serisi banyo fanları 25 dB(A) altında ses seviyesi ile oldukça sessiz çalışır. Gece modu seçeneği ile ses seviyesi daha da düşürülür." },
+      { "q": "Mevcut konutlara sistem kurulabilir mi?", "a": "Evet, kanal gerektirmeyen bireysel taze hava üniteleri veya kompakt kanallar ile mevcut konutlara da havalandırma sistemi kurulabilir." },
+      { "q": "Filtre değişimi ne sıklıkla yapılmalıdır?", "a": "Kullanım yoğunluğu ve dış ortam hava kalitesine bağlı olarak 3-6 ayda bir filtre değişimi önerilir. Filtre tıkanıklığı göstergeli modeller mevcuttur." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Konut havalandırma sistemi mi arıyorsunuz?",
+    "finalCtaDesc": "Konutunuza uygun havalandırma çözümü ve teklif için ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "marinOffshore": {
+    "breadcrumbCurrent": "Marin & Offshore Havalandırma",
+    "badge": "Çözümler",
+    "titleLine1": "Marin & Offshore",
+    "titleHighlight": "Havalandırma Sistemleri",
+    "subtitle": "Gemi, yat, deniz platformu ve kıyı yapılarında tuzlu su korozyonuna dayanıklı, denizcilik standartlarına uygun havalandırma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Ürün Kataloğu",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      { "value": "DNV-GL", "label": "Denizcilik Onayı" },
+      { "value": "IP56", "label": "Koruma Sınıfı" },
+      { "value": "SS316", "label": "Malzeme Kalitesi" },
+      { "value": "50+", "label": "Tamamlanan Proje" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Deniz Ortamında Güvenilir Havalandırma",
+    "whyImportantP1": "Deniz ortamı, tuzlu su, yüksek nem ve agresif atmosfer koşullarıyla kara uygulamalarından çok farklı zorluklar sunar. Standart havalandırma ekipmanı bu koşullarda kısa sürede korozyona uğrar ve devre dışı kalır.",
+    "whyImportantP2": "NOVVES marin havalandırma çözümleri, paslanmaz çelik (SS316), özel kaplama ve denizcilik sınıflandırma kuruluşları (DNV-GL, Lloyd's, BV) onaylıyla tasarlanır. Makine dairesi, yolcu mekanları, kargo alanları ve özel bölmelerde güvenilir havalandırma sağlanır.",
+    "steps": [
+      { "label": "Proje Analizi", "desc": "Gemi/platform tipi, alan sınıflandırması, denizcilik standart gereksinimleri" },
+      { "label": "Mühendislik Tasarımı", "desc": "Fan seçimi, kanal tasarımı, malzeme seçimi, yangın zonlama" },
+      { "label": "Üretim & Teslimat", "desc": "SS316/özel kaplama üretimi, denizcilik sınıf belgeli ürün teslimatı" },
+      { "label": "Montaj & Devreye Alma", "desc": "Tersane veya saha montajı, performans testi ve sınıf onayı" }
+    ],
+    "systemLabel": "Sistem Mimarisi",
+    "systemTitle": "Çözüm Bileşenleri",
+    "systemComponents": [
+      { "title": "Marin Aksiyal Fanlar", "desc": "Tuzlu su korozyonuna dayanıklı, SS316 gövdeli, denizcilik onaylık aksiyal fanlar." },
+      { "title": "Marin Radyal Fanlar", "desc": "Makine dairesi ve kargo alanları için yüksek basınçlı, korozyona dayanıklı salyangoz fanlar." },
+      { "title": "Yangın Damperleri", "desc": "Denizcilik yangın standartlarına uygun, otomatik kapanmalı yangın damperleri." },
+      { "title": "Weatherproof Menfezler", "desc": "Dalga ve yağmura karşı korunmalı, hava giriş/çıkış menfezleri." },
+      { "title": "Exproof Fanlar (BEAR)", "desc": "Kargo ambar ve yakıt bölgesi gibi patlayıcı atmosfer riski olan marin alanlar için." },
+      { "title": "Kontrol ve Otomasyon", "desc": "Denizcilik onaylık kontrol panoları, yangın alarm entegrasyonu ve uzaktan izleme." }
+    ],
+    "midCtaTitle": "Marin havalandırma projeniz için teklif alın",
+    "midCtaDesc": "Uzman mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Denizcilik Sınıf Onayı", "desc": "DNV-GL, Lloyd's Register, Bureau Veritas gibi sınıflandırma kuruluşları onaylı üretim." },
+      { "title": "Korozyona Dayanıklılık", "desc": "SS316 paslanmaz çelik, epoksi kaplama ve özel alaşımları ile uzun ömürlü performans." },
+      { "title": "Yangın Güvenliği", "desc": "SOLAS ve denizcilik yangın standartlarına uygun damper ve fan çözümleri." },
+      { "title": "Özel İmalat Kabiliyeti", "desc": "Her gemi ve platform projesine özel boyut, malzeme ve kapasite seçenekleri." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Alanlarda Kullanılır?",
+    "areasDesc": "Denizcilik sektöründeki tüm havalandırma ihtiyaçlarına yönelik çözümler.",
+    "areas": [
+      { "title": "Yolcu Gemileri ve Feribotlar", "description": "Yolcu mekanları ve mürettebat alanlarında iklimlendirme", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] },
+      { "title": "Kargo Gemileri", "description": "Kargo ambarı ve makine dairesi havalandırma", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }] },
+      { "title": "Offshore Platformları", "description": "Açık deniz platformu havalandırma ve exproof egzoz", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Yatlar ve Mega Yatlar", "description": "Konfor havalandırma ve makine dairesi egzoz", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fanlar", "image": "/images/products/hummingbird-drb-ec.jpg" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Marin fanlar için hangi sınıflandırma onayları mevcuttur?", "a": "NOVVES marin fanları DNV-GL, Lloyd's Register, Bureau Veritas ve ABS gibi uluslararası denizcilik sınıflandırma kuruluşları onaylı olarak üretilebilmektedir." },
+      { "q": "SS316 malzeme neden tercih edilir?", "a": "SS316 paslanmaz çelik, yüksek korozyon direnci ile tuzlu su ortamında standart çeliklere göre çok daha uzun ömürlü performans sağlar. Özellikle güverte üstü ve weatherproof alanlarda tercih edilir." },
+      { "q": "Makine dairesi havalandırması için hangi fanlar kullanılır?", "a": "Makine dairesinde yüksek sıcaklık ve egzoz gazı koşullarına uygun, yüksek debi kapasiteli radyal veya aksiyal fanlar kullanılır. Exproof gereksinim durumunda BEAR serisi tercih edilir." },
+      { "q": "Mevcut gemilere retrofit yapılabilir mi?", "a": "Evet, mevcut gemilerde havalandırma sistemi revizyonu veya kapasite artırımı için retrofit çözümler sunulmaktadır." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Marin havalandırma çözümü mü arıyorsunuz?",
+    "finalCtaDesc": "Gemi/platform projeniz için mühendislik tasarımı ve teklif için ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "projeBazliOzelImalat": {
+    "breadcrumbCurrent": "Proje Bazlı Özel İmalatlar",
+    "badge": "Çözümler",
+    "titleLine1": "Proje Bazlı",
+    "titleHighlight": "Özel İmalatlar",
+    "subtitle": "Standart ürün yelpazesinin ötesinde, projenize özel boyut, malzeme ve performans gereksinimlerine göre tasarlanan havalandırma çözümleri.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Hizmetlerimiz",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      { "value": "3D CAD", "label": "Tasarım" },
+      { "value": "FEA", "label": "Yapısal Analiz" },
+      { "value": "CNC", "label": "Hassas Üretim" },
+      { "value": "75+", "label": "Özel Proje" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Her Proje Benzersizdir",
+    "whyImportantP1": "Bazı projeler, standart ürün kataloglarında yer almayan özel boyut, malzeme, sıcaklık dayanımı veya performans gereksinimleri taşır. Yüksek sıcaklık, korozif ortam, özel montaj alanı veya sıra dışı debi/basınç ihtiyaçları standart çözümlerle karşılanamaz.",
+    "whyImportantP2": "NOVVES, kendi mühendislik kadrosu ve üretim tesisleri ile projenize özel fan, damper, kanal ve aksesuar imalatı yapmaktadır. 3D CAD tasarım, FEA yapısal analiz ve CFD akım simülasyonu ile her özel imalat mühendislik güvencesindedir.",
+    "steps": [
+      { "label": "Gereksinim Tanımlama", "desc": "Özel boyut, malzeme, sıcaklık, debi, basınç ve montaj koşulları belirleme" },
+      { "label": "Mühendislik Tasarımı", "desc": "3D CAD modelleme, FEA analiz, CFD simülasyon ve detay çizim" },
+      { "label": "Prototip & Üretim", "desc": "CNC işleme, kaynak, dinamik balans ve kalite kontrol" },
+      { "label": "Test & Teslimat", "desc": "Performans testi, titreşim ölçümü, belgelendirme ve teslimat" }
+    ],
+    "systemLabel": "İmalat Kabiliyetleri",
+    "systemTitle": "Neler Üretebiliriz?",
+    "systemComponents": [
+      { "title": "Özel Boyut Fanlar", "desc": "Standart dışında çap, genişlik ve kapasite değerlerinde aksiyal, radyal ve karışık akışlı fanlar." },
+      { "title": "Yüksek Sıcaklık Fanları", "desc": "400°C ve üzerine kadar sürekli çalışma kapasiteli özel malzeme ve tasarımlar." },
+      { "title": "Korozif Ortam Fanları", "desc": "Paslanmaz çelik, titanyum, FRP ve özel kaplama seçenekleri ile korozif gaz/buhar ortamları için." },
+      { "title": "Özel Damper ve Kanal", "desc": "Non-standart boyut ve malzemede damper, kanal ve bağlantı elemanları imalatı." },
+      { "title": "Özel Montaj Çözümleri", "desc": "Kısıtlı alan, tavan askı, platform veya titreşim izolasyonlu özel montaj aparatları." },
+      { "title": "Test ve Belgelendirme", "desc": "Aerodinamik performans testi, titreşim analizi ve proje özel sertifika hazırlanması." }
+    ],
+    "midCtaTitle": "Özel imalat projeniz için teklif alın",
+    "midCtaDesc": "Mühendislik ekibimiz özel gereksinimlerinizi değerlendirecektir.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Mühendislik Güvencesiyle", "desc": "3D CAD, FEA ve CFD ile doğrulanmış tasarım; proje özel hesap raporu." },
+      { "title": "Kendi Üretim Tesisimiz", "desc": "CNC işleme, robotik kaynak ve dinamik balans ile hassas üretim." },
+      { "title": "Esnek Malzeme Seçeneği", "desc": "Karbon çeliği, paslanmaz, alüminyum, FRP, titanyum ve özel alaşımlar." },
+      { "title": "Hızlı Prototipleme", "desc": "Tasarımdan prototipe kısa sürede geçiş ve performans doğrulama." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Projelerde Kullanılır?",
+    "areasDesc": "Standart ürünlerle çözülemeyen tüm özel ihtiyaçlar için proje bazlı imalat.",
+    "areas": [
+      { "title": "Endüstriyel Proses Tesisleri", "description": "Yüksek sıcaklık ve korozif gaz ortamlarında özel fanlar", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }] },
+      { "title": "Enerji Santralleri", "description": "Özel boyut ve kapasite gerektiren egzoz ve besleme fanları", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Marin ve Offshore Projeleri", "description": "Sınıf onaylı özel malzeme ve boyut gerektiren marin fanlar", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
+      { "title": "Altyapı ve Tünel Projeleri", "description": "Özel çap ve performans değerlerinde tünel fanları", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "Özel imalat siparişi için minimum adet var mı?", "a": "Hayır, NOVVES proje bazlı çalıştığından tek adetlik özel imalat siparişleri de kabul edilmektedir." },
+      { "q": "Özel imalat süresi ne kadardır?", "a": "Ürünün karmaşıklığına bağlı olarak tasarım onay sonrası 4-12 hafta arasında teslim süresi uygulanmaktadır. Acil projeler için hızlandırılmış üretim programı mevcuttur." },
+      { "q": "Mevcut bir fanın revize edilmesi mümkün müdür?", "a": "Evet, mevcut fanların pervane değişimi, gövde revizyonu, motor yükseltmesi veya malzeme değişimi gibi modifikasyon hizmetleri sunulmaktadır." },
+      { "q": "Hangi test ve belgelendirme hizmetleri sunuluyor?", "a": "Aerodinamik performans testi (debi, basınç, güç), titreşim analizi, ses ölçümü ve proje özel test raporları hazırlanmaktadır. AMCA, ISO ve EN standartlarına uygun test imkanı mevcuttur." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "Özel imalat ihtiyacınız mı var?",
+    "finalCtaDesc": "Gereksinimlerinizi paylaşın, mühendislik ekibimiz size özel çözüm önerisi sunalım.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  },
+
+  "cfdDanismanlik": {
+    "breadcrumbCurrent": "CFD Mühendislik Danışmanlığı",
+    "badge": "Çözümler",
+    "titleLine1": "CFD Mühendislik",
+    "titleHighlight": "Danışmanlığı",
+    "subtitle": "Hesaplamalı Akışkanlar Dinamiği (CFD) ile havalandırma, duman tahliye ve ısı transferi projelerinde simülasyon destekli mühendislik hizmeti.",
+    "ctaPrimary": "Projeniz İçin Teklif Alın",
+    "ctaSecondary": "Hizmetlerimiz",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      { "value": "3D CFD", "label": "Simülasyon" },
+      { "value": "ANSYS", "label": "Çözücü Platformu" },
+      { "value": "ISO 7730", "label": "Konfor Analizi" },
+      { "value": "85+", "label": "Tamamlanan Analiz" }
+    ],
+    "whyImportantLabel": "Neden Önemli",
+    "whyImportantTitle": "Tasarımdan Önce Simüle Edin",
+    "whyImportantP1": "Havalandırma ve duman tahliye sistemlerinin gerçek performansını kurulum öncesinde bilmek, maliyetli hataları önler ve yönetmelik uyumluluğunun belgelenmesini sağlar. CFD analizi, 3 boyutlu bilgisayar simülasyonuyla hava akışı, sıcaklık dağılımı ve duman yayılımını görselleştirir.",
+    "whyImportantP2": "NOVVES CFD ekibi, ANSYS Fluent ve OpenFOAM platformlarıyla projenize özel simülasyonlar gerçekleştirir. Jet fan yerleşimi, duman tahliye süresi, konfor analizi, ısı yükü hesabı ve sistem optimizasyonu gibi konularda mühendislik desteği sunar.",
+    "steps": [
+      { "label": "Proje Tanımlama", "desc": "Geometri, sınır koşulları, yangın senaryosu veya havalandırma gereksinimleri tanımlama" },
+      { "label": "3D Modelleme & Mesh", "desc": "CAD geometrisi oluşturma veya alma, hesaplama ağı (mesh) üretimi" },
+      { "label": "Simülasyon & Çözüm", "desc": "RANS/LES türbülans modelleri ile akış, sıcaklık ve duman çözümü" },
+      { "label": "Raporlama & Optimizasyon", "desc": "Sonuç görselleştirme, performans değerlendirme, iyileştirme önerileri" }
+    ],
+    "systemLabel": "Hizmet Alanları",
+    "systemTitle": "CFD ile Neler Yapılabilir?",
+    "systemComponents": [
+      { "title": "Duman Tahliye Simülasyonu", "desc": "Yangın senaryolarında duman yayılımı, görünürlük mesafesi ve tahliye süresi analizi." },
+      { "title": "Jet Fan Yerleşim Optimizasyonu", "desc": "Otopark ve tünellerde jet fan sayısı, konumu ve yönlendirme açısının simülasyonla belirlenmesi." },
+      { "title": "Konfor Havalandırma Analizi", "desc": "Ofis, AVM ve toplantı alanlarında sıcaklık, hava hızı ve PMV/PPD konfor değerlendirmesi." },
+      { "title": "Isı Transferi Analizi", "desc": "Trafo odaları, veri merkezleri ve endüstriyel tesislerde sıcaklık dağılımı simülasyonu." },
+      { "title": "Temiz Oda Hava Akışı", "desc": "Temiz odalarda partikül dağılımı, laminar akım doğrulaması ve basınç kaskadı analizi." },
+      { "title": "Sistem Optimizasyonu", "desc": "Mevcut havalandırma sistemlerinin CFD ile incelenmesi ve performans iyileştirme önerileri." }
+    ],
+    "midCtaTitle": "CFD analizi projeniz için teklif alın",
+    "midCtaDesc": "CFD mühendislik ekibimiz en kısa sürede size dönüş yapacaktır.",
+    "midCtaButton": "Teklif Alın",
+    "advantagesLabel": "Neden NOVVES",
+    "advantagesTitle": "Temel Avantajlar",
+    "advantages": [
+      { "title": "Deneyimli CFD Ekibi", "desc": "Havalandırma ve yangın mühendisliği konusunda uzman CFD analistlerinden oluşan ekip." },
+      { "title": "Endüstri Lideri Yazılım", "desc": "ANSYS Fluent, OpenFOAM ve FDS platformlarıyla güvenilir simülasyon sonuçları." },
+      { "title": "Yönetmelik Uyumluluğu", "desc": "EN 12101, ASHRAE ve NFPA standartlarına uygun analiz ve raporlama." },
+      { "title": "Tasarım Entegrasyonu", "desc": "CFD sonuçları doğrudan projelendirme sürecine entegre edilerek uygulama güvencesi." }
+    ],
+    "areasLabel": "Uygulama Alanları",
+    "areasTitle": "Hangi Projelerde Kullanılır?",
+    "areasDesc": "CFD analizi gerektiren tüm havalandırma ve ısı transferi projelerinde danışmanlık hizmeti.",
+    "areas": [
+      { "title": "Kapalı Otopark Projeleri", "description": "Jet fan yerleşimi ve CO/duman tahliye simülasyonu", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound.jpg" }] },
+      { "title": "Tünel Havalandırma Projeleri", "description": "Yangın senaryosu ve hava hızı analizi", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Veri Merkezi Soğutma", "description": "Raf bazlı sıcaklık dağılımı ve hotspot analizi", "products": [{ "name": "TIGER", "type": "Klima Santralleri", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fanlar", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
+      { "title": "Yüksek Yapılarda Duman Kontrolü", "description": "Merdiven basınçlandırma ve duman zonlama simülasyonu", "products": [{ "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }] }
+    ],
+    "faqLabel": "SSS",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqItems": [
+      { "q": "CFD analizi ne kadar sürer?", "a": "Projenin karmaşıklığına bağlı olarak 1-4 hafta arasında sürmektedir. Basit tek senaryo analizleri daha kısa, çoklu yangın senaryosu veya optimizasyon çalışmaları daha uzun sürer." },
+      { "q": "CFD analizi için hangi bilgiler gereklidir?", "a": "Mimarlık planları (DWG/Revit), fan/menfez yerleşim bilgileri, çalışma koşulları (sıcaklık, debi vb.) ve varsa yangın senaryosu tanımları gereklidir." },
+      { "q": "CFD raporu resmi belge olarak kabul edilir mi?", "a": "CFD raporu, belediye ve itfaiye onay süreçlerinde destekleyici mühendislik belgesi olarak kullanılmaktadır. Proje özelinde imzalı ve mühürlü rapor sunulmaktadır." },
+      { "q": "Yalnızca CFD analizi hizmeti mi alabilir miyim?", "a": "Evet, NOVVES bağımsız bir CFD danışmanlık hizmeti de sunmaktadır. Fan ve ekipman satışına bağlı olmaksızın yalnızca simülasyon ve raporlama hizmeti alınabilir." }
+    ],
+    "finalCtaLabel": "Projeniz İçin",
+    "finalCtaTitle": "CFD analizi ihtiyacınız mı var?",
+    "finalCtaDesc": "Proje tanımlama, simülasyon ve teklif süreçleri için CFD mühendislik ekibimizle iletişime geçin.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Teklif Talep Edin"
+  }
+}

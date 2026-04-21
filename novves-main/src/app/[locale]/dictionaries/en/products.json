@@ -1,0 +1,517 @@
+{
+  "shared": {
+    "home": "Home",
+    "products": "Products",
+    "productsLabel": "Products",
+    "explore": "Explore",
+    "otherCategories": "Other Product Categories",
+    "technicalSupport": "Technical Support",
+    "technicalSupportRequest": "Technical Support Request",
+    "lookingForProduct": "Looking for the right product for your project?",
+    "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+    "allProducts": "All Products",
+    "viewProduct": "View Product",
+    "detailedView": "View Details",
+    "comingSoon": "Coming Soon",
+    "inspect": "Explore",
+    "model": "model",
+    "models": "Model",
+    "results": "results",
+    "noResults": "No results found.",
+    "searchProducts": "Search products...",
+    "clear": "Clear",
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "getQuote": "Get a Quote",
+    "allIklimlendirmeProducts": "All Air Conditioning Products",
+    "forYourProject": "For the right solution for your project",
+    "productCatalog": "Product Catalog",
+    "productRange": "Product Range",
+    "productFamilies": "Product Families",
+    "productGroups": "Product Groups",
+    "fullProductRange": "Full Product Range",
+    "allProductFamilies": "All Product Families",
+    "mostPreferred": "Most Preferred",
+    "featuredProducts": "Featured Products",
+    "productVariety": "Product Variety",
+    "productFamily": "Product Family",
+    "certified": "Certified",
+    "fireResistance": "Fire Resistance",
+    "filterSeries": "Filter Series",
+    "exploreNovves": "Explore other categories in the NOVVES product range.",
+    "comingSoonNotice": "Products in this category will be published in detail soon. For technical information and price quotes",
+    "contactUs": "contact us",
+    "airDamper": "Air Damper",
+    "grilleDiffuser": "Grilles, Diffusers, etc.",
+    "panoPLCSensor": "Panels, PLC, Sensors",
+    "silencerRubberPadIsolators": "Silencers, Rubber Pads, Vibration Isolators",
+    "categories": {
+      "havaHareketi": "Air Movement",
+      "iklimlendirme": "Air Conditioning",
+      "sogutmaVeIsitma": "Cooling & Heating",
+      "havaYonetimi": "Air Management",
+      "havaDagitimi": "Air Distribution",
+      "havaFiltrasyonu": "Air Filtration",
+      "aksesuarlar": "Accessories",
+      "otomasyonMalzemeleri": "Automation Equipment",
+      "titresimVeSesIzolasyon": "Vibration & Sound Insulation"
+    }
+  },
+  "havaHareketi": {
+    "title": "Air Movement",
+    "titleFirst": "Air",
+    "titleHighlight": "Movement",
+    "heroDesc": "For your industrial and comfort ventilation needs",
+    "heroDescSuffix": "product family.",
+    "stats": [
+      { "value": "1,200+", "label": "Product Variety" },
+      { "value": "12", "label": "Product Families" },
+      { "value": "EN 12101-3", "label": "Certified" },
+      { "value": "F300/2H", "label": "Fire Resistance" }
+    ],
+    "products": [
+      { "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fan", "subModels": ["DF T", "DF TS", "DF C", "DF R", "DF RV", "DF TJF", "DF JR", "DF JA", "DF WH", "DF RH"] },
+      { "name": "MARLIN", "type": "Axial Fan", "subModels": ["MARLIN", "MARLIN S", "MARLIN B", "MARLIN 2S"] },
+      { "name": "BEAR", "type": "ATEX Fan", "subModels": ["BEAR REB EX", "BEAR RVS EX", "BEAR RHS EX", "BEAR T", "BEAR C", "BEAR R", "BEAR W", "BEAR LPF EX", "BEAR TB"] },
+      { "name": "NAUTILUS", "type": "Industrial Centrifugal Fan", "subModels": ["NAUTILUS LPF", "NAUTILUS MPF", "NAUTILUS HPF", "NAUTILUS SILENCE"] },
+      { "name": "HUMMINGBIRD", "type": "EC Fan", "subModels": ["HUMMINGBIRD DRB EC", "HUMMINGBIRD RRV EC", "HUMMINGBIRD RRH EC", "HUMMINGBIRD CBP EC"] },
+      { "name": "HERON", "type": "Roof Fan", "subModels": ["HERON RH", "HERON RHS", "HERON RV", "HERON RVS", "HERON AH", "HERON AV", "HERON H"] },
+      { "name": "OWL", "type": "Wall Mounted Fan", "subModels": ["OWL RER", "OWL R", "OWL H"] },
+      { "name": "SEAHORSE", "type": "Bathroom Fan", "subModels": ["SEAHORSE AP", "SEAHORSE RP V1", "SEAHORSE RP V2"] },
+      { "name": "KOI", "type": "Duct Fan", "subModels": ["KOI CB", "KOI RB", "KOI REB", "KOI X"] },
+      { "name": "TURTLE", "type": "Plenum Fan", "subModels": ["TURTLE B", "TURTLE BPA", "TURTLE F", "TURTLE BP", "TURTLE A"] },
+      { "name": "BUTTERFLY", "type": "Kitchen Exhaust Fan", "subModels": ["BUTTERFLY ECO", "BUTTERFLY ECO HR"] },
+      { "name": "FOX", "type": "Shelter Fan", "subModels": ["FOX D", "FOX C"] },
+      { "name": "CHICKEN", "type": "Poultry Fan", "comingSoon": true },
+      { "name": "ELEPHANT", "type": "Dust Collection", "comingSoon": true }
+    ],
+    "otherCategories": [
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ],
+    "ctaDesc": "Contact our expert engineering team to find the most suitable solution for your project from over 1,200+ product varieties."
+  },
+  "iklimlendirme": {
+    "title": "Air Conditioning",
+    "titleFirst": "Air",
+    "titleHighlight": "Conditioning",
+    "pills": ["3 Product Families", "Modular Configuration", "EC & Centrifugal Fan", "HEPA Filtration"],
+    "tiger": {
+      "label": "Air Handling Unit",
+      "desc": "An air handling unit solution featuring modular construction, high energy-efficient components, and quiet operation performance in the 500 – 125,000 m³/h airflow range.",
+      "specs": [
+        { "label": "Airflow", "value": "500–125K m³/h" },
+        { "label": "Pressure", "value": "10–3,000 Pa" },
+        { "label": "Chassis", "value": "Anodized Aluminum" }
+      ]
+    },
+    "dolphin": {
+      "label": "Pool Dehumidification Unit",
+      "desc": "Prevents moisture damage to building structures in indoor pools while maximizing user comfort. Stands out with its high energy efficiency, long-lasting construction, and quiet operation.",
+      "specs": [
+        { "label": "Capacity", "value": "6 Models" },
+        { "label": "Airflow", "value": "3,000–9,000 m³/h" },
+        { "label": "Pool Area", "value": "50–250 m²" }
+      ]
+    },
+    "caracal": {
+      "label": "Heat Recovery",
+      "desc": "Provides controlled air conditioning to meet fresh air requirements and improve existing air quality in offices, schools, hotels, hospitals, and social spaces."
+    },
+    "ctaDesc": "Our technical team is ready to provide you with the most suitable air conditioning solution.",
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "sogutmaVeIsitma": {
+    "title": "Cooling & Heating",
+    "titleFirst": "Cooling &",
+    "titleHighlight": "Heating",
+    "heroDesc": "Chiller, indoor/outdoor units, electric heaters, and water coil solutions.",
+    "comingSoonNotice": "Products in this category will be published in detail soon. For technical information and price quotes",
+    "comingSoonLink": "contact us",
+    "products": [
+      { "name": "CHILLER (Polar Bear)", "type": "Cooling Unit", "subModels": [] },
+      { "name": "OUTDOOR UNITS", "type": "Cooling Unit", "subModels": [] },
+      { "name": "INDOOR UNITS", "type": "Cooling Unit", "subModels": [] },
+      { "name": "ELECTRIC HEATERS", "type": "Electric Heater", "subModels": ["EH (Rectangular)", "EHC (Cylindrical)"] },
+      { "name": "WATER COIL", "type": "Coil", "subModels": ["WC"] }
+    ],
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaYonetimi": {
+    "title": "Air Management",
+    "titleFirst": "Air",
+    "titleHighlight": "Management",
+    "heroDesc": "Air damper solutions.",
+    "hound": {
+      "label": "Air Damper",
+      "desc": "A damper series designed to provide maximum control and safety at the most critical points of ventilation and fire safety systems.",
+      "subModels": ["MSD", "MSFD-R", "MSFD-B", "SFD-B", "SFD-R", "RSFD-B", "RSFD-Drain-B", "FFD", "MFD", "RD", "GS"]
+    },
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaDagitimi": {
+    "title": "Air Distribution",
+    "titleFirst": "Air",
+    "titleHighlight": "Distribution",
+    "heroDesc": "Grille, diffuser, anemostats, and louver solutions.",
+    "alpaca": {
+      "label": "Grilles, Diffusers, etc.",
+      "desc": "different models with tailored solutions for all air distribution needs.",
+      "subModels": [
+        "ALPACA-GL-SD", "ALPACA-GL-DD", "ALPACA-GL-RA", "ALPACA-GL-PRF", "ALPACA-GL-OB",
+        "ALPACA-DF-SQ", "ALPACA-DF-CR", "ALPACA-DF-LS", "ALPACA-DF-JET", "ALPACA-DF-ADJ",
+        "ALPACA-LV-FX", "ALPACA-LV-ADJ", "ALPACA-LV-WP", "ALPACA-LV-AC",
+        "ALPACA-AM-SQ", "ALPACA-AM-CR", "ALPACA-AM-ADJ",
+        "ALPACA-SP-FR", "ALPACA-SP-DEC", "ALPACA-SP-AC", "ALPACA-SP-JET"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaFiltrasyonu": {
+    "title": "Air Filtration",
+    "titleFirst": "Air",
+    "titleHighlight": "Filtration",
+    "heroDesc": "Filter solutions for industrial and comfort applications.",
+    "scallop": {
+      "label": "Filter Series",
+      "desc": "different filter models with tailored solutions for all air filtration needs.",
+      "subModels": [
+        "SCALLOP PF", "SCALLOP MF", "SCALLOP GF", "SCALLOP ABF", "SCALLOP CF",
+        "SCALLOP BF", "SCALLOP HP", "SCALLOP UF", "SCALLOP FF"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "aksesuarlar": {
+    "title": "Accessories",
+    "titleFirst": "Acces",
+    "titleHighlight": "sories",
+    "productCount": "products",
+    "ctaTitle": "Looking for the right accessory for your project?",
+    "accessories": [
+      { "name": "Spring Vibration Isolator", "image": "/images/products/yayli-titresim-izolatoru.png", "description": "Spring Vibration Isolators are used in HVAC systems and mechanical equipment installations to reduce low-level vibrations that could be transmitted from the system to the floor or surrounding environment." },
+      { "name": "AE SF Mounting Feet", "image": "/images/products/ae-sf-baglanti-ayaklari.jpg", "description": "Mounting Feet are high-strength mounting elements designed to securely fasten fans to the floor or supporting surface in accordance with project requirements." },
+      { "name": "AE PM Wire Guard", "image": "/images/products/ae-pm-tel-kafes.jpg", "description": "Wire Guards are protective grilles manufactured from high-strength steel wire, designed to ensure user safety on the suction or discharge side of fan systems and to prevent foreign object ingress into the operating area." },
+      { "name": "AE IC Inlet Cone", "image": "/images/products/ae-ic-giris-konisi.jpg", "description": "AE IC Series Inlet Cones are designed to optimize airflow on the suction side of fans, reduce air turbulence, and increase system efficiency." },
+      { "name": "AE CF Counter Flange", "image": "/images/products/ae-cf-karsi-flans.jpg", "description": "AE CF Series Counter Flanges are high-temperature resistant connection equipment used to connect fans to the duct system and ensure airtightness." },
+      { "name": "AE FJF Flexible Joint Counter Flange", "image": "/images/products/ae-fjf.png", "description": "AE FJF Series Flexible Joint Counter Flanges are special connection elements designed to prevent vibration transmission between fan and duct systems, reduce expansion effects, and provide a quieter operating environment." },
+      { "name": "AE FJF F400 Class Flexible Joint Counter Flange", "image": "/images/products/ae-fjf.png", "description": "AE FJF Series F400 Class Flexible Joint Counter Flanges are designed to provide a flexible, secure, and airtight connection between fan and duct systems in fire-resistant applications." },
+      { "name": "AE FJ2F Dual Counter Flange Flexible Joint", "image": "/images/products/ae-fj2f.jpg", "description": "Dual Counter Flange Flexible Joints are highly flexible connection elements equipped with counter flanges on both ends, designed to absorb vibration, expansion, and installation misalignments between fan and duct systems." },
+      { "name": "AE FJ2F F400 Dual Counter Flange Flexible Joint", "image": "/images/products/ae-fj2f.jpg", "description": "AE FJ2F-HR Series are dual counter flange flexible joint solutions with high temperature resistance, designed for use in systems requiring fire resistance." },
+      { "name": "AE S-D100 Circular Silencer", "image": "/images/products/ae-sd100.jpg", "description": "AE S-D100 Series Circular Silencers are high-performance acoustic control elements designed to reduce noise levels and improve comfort conditions in ventilation systems." },
+      { "name": "AE RS Rectangular Duct Type Silencer", "image": "/images/products/ae-rs.jpg", "description": "AE RS Series Rectangular Duct Type Silencers are high-efficiency sound insulation elements designed to reduce airflow-generated noise levels and enhance acoustic comfort in duct systems." },
+      { "name": "AE-SS Socket Silencer", "image": "/images/products/emniyet-salteri.jpg", "description": "AE SS Series Socket Silencers are acoustic control accessories optionally provided for projects requiring noise reduction particularly on the inlet side." },
+      { "name": "AE-V Guide Vane", "image": "/images/products/free.jpg", "description": "AE V Series Guide Vanes are auxiliary aerodynamic elements designed to optimize airflow, reduce turbulence, and ensure uniform flow distribution in fan and duct systems." },
+      { "name": "AE-OC Outlet Cap", "image": "/images/products/free.jpg", "description": "AE OC Series Outlet Caps are durable structural elements designed to protect against outdoor conditions at the discharge points of fan systems and to maintain system performance." },
+      { "name": "AE-DFC Rectangular Flexible Connector", "image": "/images/products/ae-dfc.jpg", "description": "AE DFC Series Rectangular Flexible Connectors are durable connection elements designed to provide vibration isolation, prevent sound transmission, and enhance airtightness in duct systems." },
+      { "name": "AE-AF Roof Adapter Frame", "image": "/images/products/free.jpg", "description": "AE AF Series Roof Adapter Frames are high-strength connection elements designed to ensure safe, stable, and airtight installation of fans and other HVAC equipment on rooftops." },
+      { "name": "AE FRS Flat Roof Socket", "image": "/images/products/ae-frs.jpg", "description": "AE FRS Series Flat Roof Sockets are auxiliary structural elements designed for safe, insulated, and stable installation of fans and HVAC equipment in flat roof applications." },
+      { "name": "AE-CB Roof Connection Box", "image": "/images/products/free.jpg", "description": "AE CB Series Roof Connection Boxes are auxiliary structural elements designed for safe and stable installation of fan systems and duct connections." },
+      { "name": "AE-EH Duct Type Electric Heater", "image": "/images/products/ae-eh-elektrikli-isitici.jpg", "description": "AE EH Series Duct Type Electric Heaters are compact and high-efficiency heater units developed for comfort-oriented applications such as heating fresh air in ventilation systems." },
+      { "name": "Safety Switch", "image": "/images/products/emniyet-salteri.jpg", "description": "The Safety Switch is a control element with high protection standards, designed for the safe activation and deactivation of fans and other electrical equipment." },
+      { "name": "Protected Safety Switch", "image": "/images/products/korumali-emniyet-salteri.jpg", "description": "The Protected Safety Switch is a durable control element designed to provide safe on/off control of electrical equipment while offering protection against environmental factors." },
+      { "name": "Single Phase Speed Controller", "image": "/images/products/monofaze-hiz-kontrol-cihazi.jpg", "description": "The Single Phase Speed Controller is a user-friendly control unit designed to continuously and precisely adjust the rotation speed of fans with voltage-controlled single-phase asynchronous motors." },
+      { "name": "Frequency Inverter", "image": "/images/products/frekans-inventoru.jpg", "description": "The Frequency Inverter is a next-generation drive unit developed to increase energy efficiency and provide optimum speed control in motorized fan and ventilation systems." },
+      { "name": "Pressurization Control Panel", "image": "/images/products/basinclandirma-kontrol-panosu.png", "description": "The Pressurization Control Panel is an advanced control unit with frequency inverter, designed to ensure automatic and optimized operation of fans in pressurization systems." },
+      { "name": "Differential Pressure Sensor", "image": "/images/products/diferansiyel-basinc-sensoru.jpg", "description": "The Differential Pressure Sensor is a high-precision control element designed to measure and control air pressure differences in ventilation and filtration systems." },
+      { "name": "Differential Pressure Sensor PI (0-10V Output)", "image": "/images/products/diferansiyel-basinc-sensoru-pi10v.jpg", "description": "The Differential Pressure Sensor + PI Control is an advanced sensor system developed to precisely monitor and automatically regulate air pressure or airflow in ventilation systems." },
+      { "name": "Duct Type Smoke Sensor", "image": "/images/products/kanal-tipi-duman-sensoru.jpg", "description": "The Duct Type Smoke Sensor is a high-sensitivity detection device designed for early-stage detection of smoke and combustion products in the air within ventilation and air conditioning systems." },
+      { "name": "G4 Panel Filter", "image": "/images/products/g4-panel-filtre.jpg", "description": "G4 Panel Filters are high-efficiency pre-filters designed to capture coarse particles, dust, and pollutants from the air in ventilation and air conditioning systems." },
+      { "name": "G2-G3 Panel Filter", "image": "/images/products/g2-g3-panel-filtre.jpg", "description": "G2-G3 Panel Filters are reliable pre-filter solutions designed to capture medium and large particles in ventilation and air conditioning systems." },
+      { "name": "G2 Metal Grease Filter", "image": "/images/products/g2-metal-yag-tutucu-filtre.jpg", "description": "G2 Metal Grease Filters are high-durability filtration elements designed specifically for capturing grease vapor and large particles in ventilation and kitchen exhaust systems." },
+      { "name": "G2-G3 Metal Grease Filter", "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.jpg", "description": "G2-G3 Metal Grease Filters are durable filtration solutions designed for effective capture of grease vapor and large particles in ventilation and kitchen exhaust systems." }
+    ],
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "otomasyonMalzemeleri": {
+    "title": "Automation Equipment",
+    "titleFirst": "Automation",
+    "titleHighlight": "Equipment",
+    "products": [
+      { "name": "PANEL", "subModels": [] },
+      { "name": "PLC", "subModels": [] },
+      { "name": "SENSOR", "subModels": ["FCP-DSC", "FCP-DCS", "TECASE-ST110"] },
+      { "name": "CONTROL BOARDS - SWITCHES", "subModels": ["TP01-TSD", "TP01-CC"] }
+    ],
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Vibration & Sound Insulation", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "titresimVeSesIzolasyon": {
+    "title": "Vibration & Sound Insulation",
+    "titleFirst": "Vibration & Sound",
+    "titleHighlight": "Insulation",
+    "heroDesc": "Silencers, rubber pads, and vibration isolators.",
+    "roo": {
+      "label": "Silencers, Rubber Pads, Vibration Isolators",
+      "desc": "different models with tailored solutions for vibration and sound insulation needs.",
+      "subModels": [
+        "ROO T1-ISO10N-NIP", "ROO T1-ISO15N-100kg-NIP",
+        "ROO T2-ISO20N-FIP", "ROO T2-ISO30N-150kg-FIP",
+        "ROO T3-ISO5Hz-200kg-OSI", "ROO T3-ISO10Hz-300kg-OSI",
+        "ROO T4-ISOComb-100kg-5Hz-HSI", "ROO T4-ISO100kg-10Hz-HSI", "ROO T4-ISO500kg-10Hz-HSI"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Air Movement", "slug": "hava-hareketi" },
+      { "label": "Air Conditioning", "slug": "iklimlendirme" },
+      { "label": "Cooling & Heating", "slug": "sogutma-ve-isitma" },
+      { "label": "Air Management", "slug": "hava-yonetimi" },
+      { "label": "Air Distribution", "slug": "hava-dagitimi" },
+      { "label": "Air Filtration", "slug": "hava-filtrasyonu" },
+      { "label": "Accessories", "slug": "aksesuarlar" },
+      { "label": "Automation Equipment", "slug": "otomasyon-malzemeleri" }
+    ]
+  },
+  "banyoFanlari": {
+    "title": "SEAHORSE",
+    "subtitle": "Bathroom Fans",
+    "intro": "Bathroom fans, used for the rapid extraction of odors and steam in small to medium-sized spaces such as bathrooms, toilets, and pantries, play an important role in both hygiene and comfort.",
+    "models": [
+      { "name": "Seahorse AP", "type": "Axial Bathroom Fan", "image": "/images/products/banyo-fan-1.jpg", "description": "The AP Decorative Bathroom Fan combines aesthetics and functionality in living spaces with its elegant design harmonized with modern architecture and high-performance construction." },
+      { "name": "Seahorse RP V1", "type": "Ceiling Mounted Bathroom Exhaust Fan", "image": "/images/products/banyo-fan-2.jpg", "description": "The RP V1 Adjustable Ceiling Mounted Exhaust Fan is the ideal ventilation solution designed for modern living spaces with its stylish design and advanced mounting mechanism." },
+      { "name": "Seahorse RP V2", "type": "Ceiling Mounted Bathroom V2 Exhaust Fan", "image": "/images/products/banyo-fan-3.jpg", "description": "Standing out with its modern design and powerful performance, the RP V2 Wide Front Panel Exhaust Fan is designed for living spaces where both aesthetics and functionality are priorities." }
+    ]
+  },
+  "catiFanlari": {
+    "title": "HERON",
+    "subtitle": "Roof Fans",
+    "intro": "",
+    "models": [
+      { "name": "Heron RH", "type": "Horizontal Discharge Centrifugal Roof Fan", "image": "/images/products/heron-rh.jpg", "description": "Specially designed for air exhaust applications requiring rooftop installation." },
+      { "name": "Heron RHS", "type": "Horizontal Discharge External Motor Centrifugal Roof Fan", "image": "/images/products/heron-rhs.jpg", "description": "For applications requiring high temperature and contaminated air exhaust." },
+      { "name": "Heron RV", "type": "Vertical Discharge Centrifugal Roof Fan", "image": "/images/products/heron-rv.jpg", "description": "High efficiency in applications requiring vertical air exhaust." },
+      { "name": "Heron RVS", "type": "Vertical Discharge External Motor Centrifugal Roof Fan", "image": "/images/products/heron-rvs.jpg", "description": "High temperature and heavy steam air exhaust." },
+      { "name": "Heron AH", "type": "Horizontal Discharge Axial Roof Fan", "image": "/images/products/heron-ah.jpg", "description": "Fresh air supply or exhaust in large-volume spaces." },
+      { "name": "Heron AVH", "type": "Lidded Axial Roof Fan", "image": "/images/products/free.jpg", "description": "Lidded axial roof fan." }
+    ]
+  },
+  "damperler": {
+    "title": "HOUND",
+    "subtitle": "Dampers",
+    "intro": "Novves HOUND series dampers are designed to provide maximum control and safety at the most critical points of ventilation and fire safety systems.",
+    "models": [
+      { "name": "Hound SD M24", "type": "Shaft Smoke Damper with 24V Servo Motor", "image": "/images/products/hound-sd-m24.jpg", "description": "Developed for safe air exhaust in fire and smoke control systems, offering EN 17051 Class-C leakage classification and servo motor compatibility." },
+      { "name": "Hound AL", "type": "Air Louver", "image": "/images/products/hound-al.png", "description": "An aesthetically designed louver system that directs airflow at air inlet and outlet points and provides protection against external elements." },
+      { "name": "Hound CRD", "type": "Relief Damper", "image": "/images/products/hound-crd.jpg", "description": "An automatic-opening pressure relief damper for overpressure control and system component protection." }
+    ]
+  },
+  "dumanIsiTahliyeFanlari": {
+    "title": "DRAGONFLY",
+    "subtitle": "Smoke & Heat Extraction Fans",
+    "intro": "A smoke and heat extraction fan series with F300 class fire resistance certification, designed to withstand 300°C temperatures for 2 hours.",
+    "models": [
+      { "name": "Dragonfly T", "type": "Cased Axial Smoke & Heat Extraction Fan", "image": "/images/products/dragonfly-t.jpg", "description": "A high-temperature resistant cased axial fan designed for effective extraction of smoke and hot air during fire events. EN 12101-3 certified." },
+      { "name": "Dragonfly R", "type": "Axial Roof Type Smoke & Heat Extraction Fan", "image": "/images/products/dragonfly-r.jpg", "description": "A high-temperature resistant rooftop fan ensuring rapid, safe, and effective extraction of smoke and hot air during fire events. EN 12101-3 certified." },
+      { "name": "Dragonfly C", "type": "Axial Plenum Smoke & Heat Extraction Fan", "image": "/images/products/dragonfly-c.png", "description": "A high-temperature resistant and low-noise cabinet type unit developed for safe extraction of smoke and high-temperature air during fire events. EN 12101-3 certified." },
+      { "name": "Dragonfly JAU", "type": "Unidirectional Axial Jet Fan", "image": "/images/products/dragonfly-jau.jpg", "description": "Designed for smoke extraction and air circulation in car parks, tunnels, and enclosed spaces, with high temperature resistance. EN 12101-3 certified." },
+      { "name": "Dragonfly JAR", "type": "Bidirectional Axial Jet Fan", "image": "/images/products/dragonfly-jar.jpg", "description": "Developed for smoke extraction, ventilation, and air circulation in enclosed car parks and large-volume indoor spaces, bidirectional. Low noise level and high performance." },
+      { "name": "Dragonfly JR", "type": "Radial/Centrifugal Jet Fan", "image": "/images/products/dragonfly-jr.jpg", "description": "Specially designed for smoke extraction and emergency ventilation in demanding indoor volumes such as enclosed car parks, tunnels, and fire zones. EN 12101-3 certified." }
+    ]
+  },
+  "duvarTipiFanlar": {
+    "title": "OWL",
+    "subtitle": "Wall Mounted Fans",
+    "intro": "",
+    "models": [
+      { "name": "Owl RER", "type": "Rectangular Wall Mounted Fan", "image": "/images/products/owl-rer.jpg", "description": "A metal-bladed axial fan solution specially designed for wall-mounted installation, featuring a durable construction and adjustable speed." },
+      { "name": "Owl CER", "type": "Circular Wall Mounted Fan", "image": "/images/products/owl-cer.jpg", "description": "A compact and high-efficiency metal-bladed axial fan model specially designed for circular wall-mounted installation." },
+      { "name": "Owl RWA", "type": "Rectangular Axial Wall Mounted Fan", "image": "/images/products/owl-rwa.jpg", "description": "An axial fan solution featuring a high-efficiency aerofoil blade design, suitable for rectangular wall-mounted installation." },
+      { "name": "Owl CWA", "type": "Circular Axial Wall Mounted Fan", "image": "/images/products/owl-cwa.jpg", "description": "A compact axial fan solution suitable for circular wall-mounted installation, featuring a lightweight yet durable aerofoil blade structure." }
+    ]
+  },
+  "ecFanlar": {
+    "title": "HUMMINGBIRD",
+    "subtitle": "EC Fans",
+    "intro": "The Hummingbird series offers roof and duct type fan solutions that combine high performance with energy savings through EC motor technology.",
+    "models": [
+      { "name": "Hummingbird RRV", "type": "EC Vertical Discharge Roof Fan", "image": "/images/products/hummingbird-rh.jpg", "description": "A vertical discharge roof fan solution developed for modern buildings, operating with high-efficiency EC motors. With smart control options, low energy consumption, and quiet operation, it stands out in comfort and industrial ventilation applications." },
+      { "name": "Hummingbird DRB", "type": "EC Rectangular Duct Fan", "image": "/images/products/hummingbird-drb-ec.jpg", "description": "A high-efficiency EC motor rectangular duct fan solution designed for use in modern ventilation systems. With its compact structure, quiet operation, and automation system integration capability, it is reliably preferred in comfort and industrial applications." }
+    ]
+  },
+  "endustriyelFanlar": {
+    "title": "NAUTILUS",
+    "subtitle": "Industrial Centrifugal Fans",
+    "intro": "Combining high performance with energy savings, industrial fans offer a powerful and efficient ventilation solution with backward-curved blade design and direct-drive motor configuration.",
+    "models": [
+      { "name": "Nautilus LPF", "type": "Industrial Centrifugal Fan", "image": "/images/products/nautilus-lfp.jpg", "description": "An industrial fan combining high performance with energy savings." },
+      { "name": "Nautilus Silence", "type": "Double-Walled Centrifugal Fan", "image": "/images/products/nautilus-cif-cidarli.jpg", "description": "The NAUTILUS Silence Series are centrifugal fans that operate with high efficiency in systems requiring low-pressure air transfer, featuring a compact structure and direct-drive design." }
+    ]
+  },
+  "exproofFanlar": {
+    "title": "BEAR",
+    "subtitle": "Explosion-Proof Fans",
+    "intro": "The Bear series fans are Ex-Proof fan solutions designed for use in explosive and flammable gas environments.",
+    "models": [
+      { "name": "Bear EX-REB", "type": "Rectangular Duct Type Explosion-Proof Fan", "image": "/images/products/bear-reb.jpg", "description": "Ex-Proof, designed for safe ventilation in explosive gas environments. High safety standards, frequency-controlled operation, ATEX zone compatible." },
+      { "name": "Bear EX-T", "type": "Cased Axial Explosion-Proof Fan", "image": "/images/products/bear-t.jpg", "description": "Safe air transfer in explosive environments, balanced impeller design. For industrial applications with fire and spark risks." },
+      { "name": "Bear EX-RRH", "type": "Horizontal Discharge Roof Type Explosion-Proof Centrifugal Fan", "image": "/images/products/bear-rrh.jpg", "description": "Specially designed for applications requiring rooftop horizontal exhaust. ATEX Zone 1 and Zone 2." },
+      { "name": "Bear EX-RRV", "type": "Vertical Discharge Roof Type Explosion-Proof Centrifugal Fan", "image": "/images/products/bear-rrv.jpg", "description": "High-pressure air exhaust, long-lasting outdoor resistance." },
+      { "name": "Bear EX-BP", "type": "Plenum Explosion-Proof Centrifugal Fan", "image": "/images/products/bear-bp.jpg", "description": "A fan solution with modular plenum structure, offering powerful and quiet operation." },
+      { "name": "Bear EX-C", "type": "Plenum Explosion-Proof Axial Fan", "image": "/images/products/bear-c.jpg", "description": "Quiet operation, easy maintenance, ATEX compliance." },
+      { "name": "Bear LPF", "type": "Centrifugal Explosion-Proof Fan", "image": "/images/products/bear-lpf.jpg", "description": "Safe air exhaust in environments containing explosive gases or vapors." },
+      { "name": "Bear R", "type": "Axial Roof Type Fan", "image": "/images/products/bear-r.jpg", "description": "Designed to meet the natural ventilation and exhaust needs of large-volume structures." },
+      { "name": "Bear W", "type": "Explosion-Proof Axial Fan (Wall Type)", "image": "/images/products/bear-w.jpg", "description": "Flame-proof, ATEX compliant, high performance." }
+    ]
+  },
+  "havuzNemAlmaSantrali": {
+    "title": "DOLPHIN",
+    "subtitle": "Pool Dehumidification Unit",
+    "intro": "Developed by NOVVES, the Dolphin Series Pool Dehumidification Units prevent moisture damage to building structures in indoor pools while maximizing user comfort. Standing out with its high energy efficiency, long-lasting construction, and quiet operation, the Dolphin Series is the professional choice in pool climate control solutions.",
+    "tableHeaders": {
+      "model": "Model",
+      "airFlow": "Airflow (m³/h)",
+      "poolArea": "Pool Area (m²)",
+      "cooling": "Cooling (kW)",
+      "condenser": "Condenser (kW)",
+      "waterHeater": "Water Heater (kW)"
+    },
+    "models": [
+      { "model": "DOLPHIN 300", "airFlow": "3,000", "area": "50", "cooling": "21.1", "condenser": "26.4", "water": "26.15" },
+      { "model": "DOLPHIN 400", "airFlow": "4,000", "area": "75", "cooling": "28.7", "condenser": "35.67", "water": "34.12" },
+      { "model": "DOLPHIN 450", "airFlow": "4,500", "area": "100", "cooling": "33.3", "condenser": "40.96", "water": "36.24" },
+      { "model": "DOLPHIN 600", "airFlow": "6,000", "area": "150", "cooling": "42.2", "condenser": "52.88", "water": "50.58" },
+      { "model": "DOLPHIN 750", "airFlow": "7,500", "area": "200", "cooling": "52.6", "condenser": "65.9", "water": "62.97" },
+      { "model": "DOLPHIN 900", "airFlow": "9,000", "area": "250", "cooling": "36.8", "condenser": "80.68", "water": "77.1" }
+    ]
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Plenum Fans",
+    "intro": "The Turtle Series plenum fans can be used for both fresh air supply and exhaust air extraction. Thanks to their compact structure, they offer easy direct floor mounting, while the rock wool filling between inner walls provides effective acoustic insulation.",
+    "models": [
+      { "name": "Turtle B", "type": "Belt-Driven Plenum Fan", "image": "/images/products/turtle-b.jpg", "description": "A belt-driven cabinet type fan model offering reliable and quiet solutions in systems requiring high-volume air transfer." },
+      { "name": "Turtle BP", "type": "Plenum Type Backward-Curved Plug Fan", "image": "/images/products/turtle-bp.jpg", "description": "A high-performance cabinet type fan model offering quiet, efficient, and compact air solutions." },
+      { "name": "Turtle BPA", "type": "Plenum Type Backward-Curved Centrifugal Fan", "image": "/images/products/turtle-a.jpg", "description": "An industrial ventilation solution offering high-efficiency and quiet operation performance with its plenum type structure and backward-curved centrifugal fan technology." },
+      { "name": "Turtle F", "type": "Plenum Forward-Curved Blade Fan", "image": "/images/products/turtle-f.jpg", "description": "A plug-type double-inlet cabinet type fan model standing out with its quiet and efficient operation in systems requiring low-pressure air transfer." },
+      { "name": "Turtle A", "type": "Axial Plenum Fan", "image": "/images/products/turtle-a.jpg", "description": "Compact axial cabinet type fan solutions designed for systems with high-volume air transfer requirements." }
+    ]
+  },
+  "isiGeriKazanimCihazlari": {
+    "title": "CARACAL",
+    "subtitle": "Heat Recovery Units",
+    "intro": "The Caracal series provides controlled air conditioning to meet fresh air requirements and improve existing air quality in offices, schools, hotels, hospitals, business centers, shopping malls, performance venues, and cafeterias.",
+    "caracalD": {
+      "title": "Caracal D",
+      "type": "Heat Recovery Unit",
+      "description": "The Caracal D Series (Heat Recovery Unit) is a compact and high-performance solution developed to refresh indoor air while increasing energy efficiency. With its durable construction and user-friendly control panel, it provides comfortable and sustainable ventilation."
+    }
+  },
+  "kanalFanlari": {
+    "title": "KOI",
+    "subtitle": "Duct Fans",
+    "intro": "",
+    "models": [
+      { "name": "Koi CB", "type": "Circular Duct Fan", "image": "/images/products/koi-cb.jpg", "description": "The Novves KOI-CB Series Circular Duct Fans offer compact and high-performance solutions developed for duct-type ventilation needs." },
+      { "name": "Koi RB", "type": "Rectangular Duct Fan", "image": "/images/products/koi-rb.jpg", "description": "The Novves KOI-RB Series Rectangular Duct Fans are specially developed for high-performance air transfer in industrial and commercial buildings." },
+      { "name": "Koi REB", "type": "External Motor Rectangular Duct Fan", "image": "/images/products/koi-reb.jpg", "description": "The KOI-REB Series External Motor Duct Fans are specially designed for ventilation applications requiring high temperature resistance." },
+      { "name": "Koi X", "type": "Mixed Flow Duct Fan", "image": "/images/products/koi-x.jpg", "description": "The KOI-X Series Mixed Flow Duct Fan is designed to deliver maximum efficiency especially in comfort areas, with its compact structure, quiet operation, and dual-speed motor option." }
+    ]
+  },
+  "klimaSantralleri": {
+    "title": "TIGER",
+    "subtitle": "Air Handling Units",
+    "intro": "A modular, efficiency-oriented air handling unit solution developed for high-performance ventilation and air conditioning needs. It stands out with its wide airflow range, high energy-efficient components, and quiet operation performance.",
+    "specs": [
+      { "label": "Airflow", "value": "500 - 125,000 m³/h" },
+      { "label": "Pressure", "value": "10 - 3,000 Pa" },
+      { "label": "Chassis", "value": "Anodized aluminum" },
+      { "label": "Panel", "value": "Double-walled sandwich panel" },
+      { "label": "Fan Type", "value": "Centrifugal fan / EC Plug fan" },
+      { "label": "Heat Recovery", "value": "Plate, rotary, water-glycol" }
+    ]
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Cased Axial Fans",
+    "intro": "The Marlin series cased axial fans are used for fresh air supply, exhaust, or as duct fans, as well as serving as pressurization fans to prevent smoke from entering escape routes such as stairwells and elevator shafts during fire events.",
+    "models": [
+      { "name": "Marlin", "type": "Cased Axial Fan", "image": "/images/products/marlin.png", "description": "The Novves MARLIN Series Cased Axial Fan is a solution that combines powerful performance, installation flexibility, and energy efficiency in systems requiring high airflow." },
+      { "name": "Marlin B", "type": "Bifurcated Axial Fan", "image": "/images/products/marlin-b.jpg", "description": "Bifurcated axial fan." }
+    ]
+  },
+  "mutfakFanlari": {
+    "title": "BUTTERFLY",
+    "subtitle": "Kitchen Exhaust Fans",
+    "intro": "",
+    "models": [
+      { "name": "Butterfly B", "type": "Metal Filter Kitchen Exhaust Fan", "image": "/images/products/butterfly-b.jpg", "description": "The Butterfly B Series Kitchen Type Fan is a durable and high-efficiency ventilation solution developed for heavy steam, grease, and odor extraction in industrial and commercial kitchens. With its advanced filtration system, quiet operation, and long-lasting construction, it is ideal for professional kitchens." }
+    ]
+  },
+  "siginakFanlari": {
+    "title": "FOX",
+    "subtitle": "Shelter Fans",
+    "intro": "The Fox series has been developed for shelters built to provide protection against radiation, nuclear, biological, and chemical threats or natural disasters.",
+    "models": [
+      { "name": "Fox D", "type": "Duct Type Shelter Fan", "image": "/images/products/fox-d.jpg", "description": "The FOX D Series Duct Type Shelter Fan is a durable and reliable solution with high filtration capacity, developed specifically for shelter and safe area ventilation needs." },
+      { "name": "Fox C", "type": "Cabinet Type Shelter Fan", "image": "/images/products/fox-c.jpg", "description": "The FOX C Series Cabinet Type Shelter Fan is a professional ventilation solution specially developed for areas requiring high security, suitable for quiet operation, and equipped with a powerful filtration system." }
+    ]
+  }
+}
