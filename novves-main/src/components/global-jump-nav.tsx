@@ -111,7 +111,7 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
   return (
     <>
       <nav className="fixed right-0 top-1/2 z-40 hidden -translate-y-1/2 lg:flex">
-        <div className="translate-x-[58%] rounded-l-xl border border-r-0 border-[#2b4065]/18 bg-[#1a2842]/92 px-2.5 py-2.5 shadow-[0_16px_30px_-24px_rgba(8,15,28,0.58)] backdrop-blur-sm transition-transform duration-300 hover:translate-x-0">
+        <div className="group w-[52px] overflow-hidden rounded-l-xl border border-r-0 border-[#2b4065]/18 bg-[#1a2842]/92 px-2 py-2 shadow-[0_16px_30px_-24px_rgba(8,15,28,0.58)] backdrop-blur-sm transition-[width] duration-300 hover:w-[184px]">
           <ul className="space-y-1.5">
             {jumpItems.map((item) => {
               const active = isActive(item);
@@ -122,7 +122,7 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
                     onClick={() => onNavigate(item)}
                     title={item.label}
                     aria-label={item.label}
-                    className={`group flex h-9 min-w-[148px] items-center gap-2.5 rounded-md px-2.5 transition-colors ${
+                    className={`flex h-9 w-full items-center gap-2.5 rounded-md px-2.5 transition-colors ${
                       active ? "bg-white/[0.1]" : "hover:bg-white/[0.06]"
                     }`}
                   >
@@ -135,7 +135,9 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
                     >
                       {getJumpIcon(item.id)}
                     </svg>
-                    <span className={`${active ? "text-white" : "text-white/78 group-hover:text-white"} font-mono-eng text-[10px] uppercase tracking-[0.18em] transition-colors`}>
+                    <span
+                      className={`${active ? "text-white" : "text-white/78 group-hover:text-white"} font-mono-eng text-[10px] uppercase tracking-[0.18em] whitespace-nowrap transition-all duration-200 opacity-0 -translate-x-1 group-hover:translate-x-0 group-hover:opacity-100`}
+                    >
                       {item.label}
                     </span>
                   </button>
