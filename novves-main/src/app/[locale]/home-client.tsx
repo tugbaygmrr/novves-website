@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FanAssemblyAnimation } from "@/components/fan-assembly-animation";
 import { ScrollVideoSection } from "@/components/scroll-video-section";
 
@@ -126,6 +126,18 @@ const productFallbackImages = [
   "/images/products/marlin.png",
   "/images/products/ae-fjf.png",
 ];
+
+const productCategoryDescriptions: Record<string, string> = {
+  "Hava Hareketi": "Yüksek verimli fan çözümleriyle güvenilir hava sirkulasyonu sağlar.",
+  İklimlendirme: "Mahale özel iklim kontrolü için dengeli ve konfor odaklı sistemler sunar.",
+  "Soğutma ve Isıtma": "Mevsimsel ihtiyaçlara uygun, enerji verimli ısıtma-soğutma çözümleri sunar.",
+  "Hava Yönetimi": "Hava debisini doğru yönlendirerek sistem performansını optimize eder.",
+  "Hava Dağıtımı": "Homojen dağıtım ile iç ortamda dengeli konfor ve verimli akış sağlar.",
+  "Hava Filtrasyonu": "Partikül ve kirleticileri azaltarak daha temiz ve sağlıklı hava üretir.",
+  Aksesuarlar: "Sistem kurulumunu tamamlayan yardımcı ekipmanlarla kullanım esnekliği sağlar.",
+  "Otomasyon Malzemeleri": "Akıllı kontrol altyapısıyla tesis yönetimini daha güvenli ve kolay hale getirir.",
+  "Titreşim ve Ses İzolasyon": "Gürültü ve titreşimi azaltarak sessiz ve stabil çalışma ortamı oluşturur.",
+};
 
 const catalogItems = [
   { title: "Ürün Kataloğu", href: "/teknik-merkez/dokuman-kutuphanesi", image: "/images/catalogs/katalog-mockup-kapak-website-icin.png" },
@@ -259,8 +271,6 @@ function SectionHead({
 export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: string }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [expandedPillars, setExpandedPillars] = useState<Record<number, boolean>>({});
-  const [activeJumpSection, setActiveJumpSection] = useState("hero-main");
-  const [showMobileJumpNav, setShowMobileJumpNav] = useState(true);
   const productCarouselRef = useRef<HTMLDivElement | null>(null);
   const pillarIntro = dict.pillars[0]?.intro ?? "";
   const pillarIntroParts = pillarIntro.split(".");
@@ -281,140 +291,8 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
     container.scrollBy({ left: scrollAmount, behavior: "smooth" });
   };
 
-  const jumpLinks = [
-    { id: "hero-main", label: locale === "tr" ? "Anasayfa" : locale === "ru" ? "Главная" : "Home" },
-    { id: "product-categories", label: locale === "tr" ? "Ürünler" : locale === "ru" ? "Продукты" : "Products" },
-    { id: "references", label: locale === "tr" ? "Referanslar" : locale === "ru" ? "Референсы" : "References" },
-    { id: "certificates", label: locale === "tr" ? "Sertifikalar" : locale === "ru" ? "Сертификаты" : "Certificates" },
-    { id: "faq", label: locale === "tr" ? "SSS" : locale === "ru" ? "FAQ" : "FAQ" },
-  ];
-
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    setActiveJumpSection(id);
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const getJumpIcon = (id: string) => {
-    if (id === "hero-main") return <path strokeLinecap="round" strokeLinejoin="round" d="M3 11.25L12 4l9 7.25M5.25 9.5V20h13.5V9.5" />;
-    if (id === "product-categories") return <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />;
-    if (id === "references") return <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 12h9m-9 0l3-3m-3 3l3 3M3.75 12a8.25 8.25 0 1116.5 0 8.25 8.25 0 01-16.5 0z" />;
-    if (id === "certificates") return <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75l2.25 2.25L15 9.75M12 3.75l6.75 3v5.25c0 4.25-2.85 8.04-6.75 9.25-3.9-1.21-6.75-5-6.75-9.25V6.75L12 3.75z" />;
-    return <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9.75h7.5M8.25 13.5h5.25M6 4.5h12A1.5 1.5 0 0119.5 6v12A1.5 1.5 0 0118 19.5H6A1.5 1.5 0 014.5 18V6A1.5 1.5 0 016 4.5z" />;
-  };
-
-  useEffect(() => {
-    const sectionIds = jumpLinks.map((x) => x.id);
-    const io = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target?.id) setActiveJumpSection(visible.target.id);
-      },
-      { rootMargin: "-35% 0px -45% 0px", threshold: [0.2, 0.45, 0.7] },
-    );
-
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) io.observe(el);
-    });
-
-    return () => io.disconnect();
-  }, [locale]);
-
-  useEffect(() => {
-    const hero = document.getElementById("hero-main");
-    if (!hero) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        const hit = entries[0];
-        setShowMobileJumpNav(!!hit?.isIntersecting);
-      },
-      { threshold: [0.22] },
-    );
-    io.observe(hero);
-    return () => io.disconnect();
-  }, [locale]);
-
   return (
     <main className="bg-sand-200 text-ink">
-      <nav className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 lg:flex">
-        <div className="rounded-xl border border-[#2b4065]/18 bg-[#1a2842]/90 px-2 py-2 shadow-[0_16px_30px_-24px_rgba(8,15,28,0.58)] backdrop-blur-sm">
-          <ul className="space-y-1.5">
-            {jumpLinks.map((item) => {
-              const active = activeJumpSection === item.id;
-              return (
-                <li key={item.id}>
-                  <button
-                    type="button"
-                    onClick={() => scrollToSection(item.id)}
-                    title={item.label}
-                    aria-label={item.label}
-                    className={`group flex h-8 w-8 items-center justify-center rounded-md transition-colors ${
-                      active ? "bg-white/[0.08]" : "hover:bg-white/[0.05]"
-                    }`}
-                  >
-                    <svg
-                      className={`${active ? "text-primary" : "text-white/68 group-hover:text-white/88"} h-4 w-4 transition-colors`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.7}
-                      stroke="currentColor"
-                    >
-                      {getJumpIcon(item.id)}
-                    </svg>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </nav>
-
-      <nav
-        className={`fixed bottom-4 inset-x-3 z-40 transition-all duration-300 lg:hidden ${
-          showMobileJumpNav ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0 pointer-events-none"
-        }`}
-      >
-        <div className="relative rounded-3xl border border-[#2b4065]/20 bg-[#1a2842]/92 px-4 py-3.5 shadow-[0_18px_32px_-24px_rgba(8,15,28,0.62)] backdrop-blur-sm">
-          <div className="pointer-events-none absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1/2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[#121d31] shadow-[0_10px_22px_-14px_rgba(6,10,20,0.75)]">
-              <Image src="/images/novves-icon.svg" alt="Novves" width={22} height={22} className="h-[22px] w-[22px]" />
-            </div>
-          </div>
-          <ul className="flex items-center justify-between">
-            {jumpLinks.map((item) => {
-              const active = activeJumpSection === item.id;
-              return (
-                <li key={`m-${item.id}`}>
-                  <button
-                    type="button"
-                    onClick={() => scrollToSection(item.id)}
-                    title={item.label}
-                    aria-label={item.label}
-                    className={`group flex h-11 w-11 items-center justify-center rounded-lg transition-colors ${
-                      active ? "bg-white/[0.10]" : "hover:bg-white/[0.05]"
-                    }`}
-                  >
-                    <svg
-                      className={`${active ? "text-primary" : "text-white/70 group-hover:text-white/90"} h-[22px] w-[22px] transition-colors`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.7}
-                      stroke="currentColor"
-                    >
-                      {getJumpIcon(item.id)}
-                    </svg>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </nav>
-
       {/* 01 — SCROLL VIDEO: KOVAN TIPI */}
       <div id="hero-main">
       <ScrollVideoSection
@@ -478,6 +356,14 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     <h3 className="mt-1.5 line-clamp-2 text-[1.15rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-primary">
                       {cat.label}
                     </h3>
+                    <p className="mt-1.5 line-clamp-2 text-[12px] leading-[1.5] text-ink/62">
+                      {productCategoryDescriptions[cat.label] ??
+                        (locale === "tr"
+                          ? "Projeye uygun, güvenilir ve verimli ürün çözümlerini keşfedin."
+                          : locale === "ru"
+                            ? "Откройте надежные и эффективные решения, подходящие для вашего проекта."
+                            : "Discover reliable and efficient solutions tailored to your project.")}
+                    </p>
                     <div className="mt-auto pt-2.5 font-mono-eng text-[10px] font-medium uppercase tracking-[0.22em] text-primary">
                       Detayları İncele
                     </div>
