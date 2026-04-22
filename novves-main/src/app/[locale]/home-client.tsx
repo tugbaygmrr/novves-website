@@ -326,7 +326,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   key={cat.label}
                   href={`/${locale}${href}`}
                   data-product-card
-                  className="group flex aspect-square w-[calc(100%-0.75rem)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)] sm:w-[calc(50%-0.375rem)] lg:w-[calc((100%-2.25rem)/4)]"
+                  className="group flex h-[360px] w-[calc(100%-0.75rem)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)] sm:h-auto sm:aspect-square sm:w-[calc(50%-0.375rem)] lg:w-[calc((100%-2.25rem)/4)]"
                 >
                   <div className="relative flex-[0_0_50%] border-b border-ink/10 bg-[#eef1f4]">
                     <Image

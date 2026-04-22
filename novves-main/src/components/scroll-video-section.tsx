@@ -569,50 +569,133 @@ function MobileScrollSection({
   productHref?: string;
   sideLabel?: string;
 }) {
-  // Use the last available frame as static hero image
-  const finalFrameSrc = `${framesPath}/frame-${String(totalFrames).padStart(4, "0")}.jpg`;
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const stageRef = useRef<HTMLDivElement | null>(null);
+  const [mobileFrame, setMobileFrame] = useState(totalFrames);
+  const [mobileProgress, setMobileProgress] = useState(0);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
+
+    if (window.innerWidth >= 1024) return;
+
+    const startFrame = 1;
+    const endFrame = totalFrames;
+    let rafId = 0;
+
+    const updateFrame = () => {
+      const stage = stageRef.current;
+      if (!stage) return;
+      const viewport = window.innerHeight;
+      const rect = stage.getBoundingClientRect();
+      const stageScroll = viewport * 0.86 - rect.top;
+      const travel = Math.max(stage.offsetHeight - viewport * 0.24, 1);
+      const rawProgress = stageScroll / travel;
+      const progress = Math.min(Math.max(rawProgress, 0), 1);
+      const frame = Math.round(startFrame + progress * (endFrame - startFrame));
+      setMobileFrame(frame);
+      setMobileProgress(progress);
+    };
+
+    const onScroll = () => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(updateFrame);
+    };
+
+    updateFrame();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      cancelAnimationFrame(rafId);
+    };
+  }, [totalFrames]);
+
+  const finalFrameSrc = `${framesPath}/frame-${String(mobileFrame).padStart(4, "0")}.jpg`;
+  const transition = Math.min(Math.max((mobileProgress - 0.08) / 0.76, 0), 1);
+  const fanX = 18 + transition * 14;
+  const fanScale = 1.14 - transition * 0.04;
+  const overlayOpacity = Math.max(0.64 - transition * 0.64, 0);
+  const panelOpacity = Math.max(1 - transition * 1.15, 0);
+  const panelLift = transition * 105;
+  const finalTextOpacity = Math.min(Math.max((transition - 0.78) / 0.2, 0), 1);
+  const finalTextLift = (1 - finalTextOpacity) * 24;
+  const bgR = Math.round(62 + transition * 170);
+  const bgG = Math.round(65 + transition * 165);
+  const bgB = Math.round(72 + transition * 152);
 
   return (
-    <section className="relative bg-sand-200 lg:hidden">
-      {/* Start copy */}
-      {startCard && (
-        <div className="px-5 pb-9 pt-9">
-          <div className="flex items-center gap-3">
-            <span className="h-px w-6 bg-primary" />
-            <span className="font-mono-eng text-[10px] uppercase tracking-[0.28em] text-primary">
-              {startCard.badge}
-            </span>
+    <section ref={sectionRef} className="relative bg-sand-200 pt-[80px] lg:hidden">
+      <div ref={stageRef} className="relative h-[235svh]">
+        <section className="sticky top-[92px]">
+          <div className="relative min-h-[min(76svh,560px)] overflow-hidden" style={{ backgroundColor: `rgb(${bgR}, ${bgG}, ${bgB})` }}>
+            <Image
+              src={finalFrameSrc}
+              alt={endCard?.title ?? "Fan"}
+              fill
+              sizes="100vw"
+              className="object-cover"
+              style={{
+                objectPosition: `${fanX}% center`,
+                transform: `scale(${fanScale})`,
+                filter: "contrast(1.08) saturate(1.04) brightness(1.03)",
+              }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_46%,rgba(212,218,228,0.16)_0%,rgba(58,63,74,0.28)_40%,rgba(31,35,43,0.66)_100%)]"
+              style={{ opacity: overlayOpacity }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,39,46,0.56)_0%,rgba(36,39,46,0.24)_30%,rgba(36,39,46,0.10)_52%,rgba(36,39,46,0.36)_78%,rgba(36,39,46,0.62)_100%)]"
+              style={{ opacity: overlayOpacity }}
+            />
+
+            {startCard && (
+              <div
+                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#343840]/84 p-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)] backdrop-blur-[2px]"
+                style={{ opacity: panelOpacity, transform: `translateY(-${panelLift}px)` }}
+              >
+                <p className="font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">• {startCard.badge}</p>
+                <h2 className="mt-3 text-white">
+                  <span className="block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine1}</span>
+                  <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine2}</span>
+                  <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine3}</span>
+                </h2>
+                <p className="mt-3 text-[14px] leading-[1.58] text-white/84">{startCard.subtitle}</p>
+              </div>
+            )}
+
+            {endCard && (
+              <div
+                className="pointer-events-none absolute inset-x-5 bottom-4 z-10"
+                style={{ opacity: finalTextOpacity, transform: `translateY(${finalTextLift}px)` }}
+              >
+                <div className="rounded-2xl border border-ink/10 bg-white/82 p-4 shadow-[0_18px_42px_-26px_rgba(21,26,33,0.28)] backdrop-blur-md">
+                  <div className="flex items-center justify-between">
+                    <span className="inline-flex items-center gap-2 font-mono-eng text-[10px] uppercase tracking-[0.24em] text-ink/62">
+                      <span className="h-px w-5 bg-primary" />
+                      {endCard.series}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 font-mono-eng text-[9px] uppercase tracking-[0.2em] text-ink/58">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                      {endCard.spec3Value}
+                    </span>
+                  </div>
+                  <h2 className="mt-3 text-ink">
+                    <span className="block text-[2.05rem] font-bold leading-[1.02] tracking-[-0.025em]">{endCard.title}</span>
+                  </h2>
+                  <p className="mt-2 max-w-[34ch] text-[14px] leading-[1.55] text-ink/68">{endCard.desc}</p>
+                </div>
+              </div>
+            )}
           </div>
-
-          <h2 className="mt-6">
-            <span className="block text-[17px] font-medium text-ink/55">{startCard.titleLine1}</span>
-            <span
-              className="mt-2 block font-bold text-ink break-words"
-              style={{ fontSize: "clamp(2.2rem, 10vw, 3.8rem)", lineHeight: 1.05, letterSpacing: "-0.02em" }}
-            >
-              {startCard.titleLine2}
-            </span>
-            <span className="mt-2 block text-[19px] font-normal text-ink/75">{startCard.titleLine3}</span>
-          </h2>
-
-          <p className="mt-6 text-[14.5px] leading-[1.65] text-ink/70">{startCard.subtitle}</p>
-        </div>
-      )}
-
-      {/* Featured product card */}
-      {endCard && (
-        <div className="px-5 pb-2">
-          {locale && productHref ? (
-            <Link href={`/${locale}${productHref}`} className="group block">
-              <ProductCard endCard={endCard} imageSrc={finalFrameSrc} />
-            </Link>
-          ) : (
-            <div className="block">
-              <ProductCard endCard={endCard} imageSrc={finalFrameSrc} />
-            </div>
-          )}
-        </div>
-      )}
+        </section>
+      </div>
 
       {/* Inline CTA */}
       {endCard && locale && productHref && (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,115 +42,152 @@ type HeroDict = {
    ═══════════════════════════════════════════════════════════ */
 
 function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const stageRef = useRef<HTMLDivElement | null>(null);
+  const [mobileFrame, setMobileFrame] = useState(START_VISIBLE_FRAME);
+  const [mobileProgress, setMobileProgress] = useState(0);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion || window.innerWidth >= 1024) return;
+
+    const startFrame = START_VISIBLE_FRAME;
+    const endFrame = TOTAL_FRAMES - 1;
+    let rafId = 0;
+
+    const updateFrame = () => {
+      const stage = stageRef.current;
+      if (!stage) return;
+
+      const viewport = window.innerHeight;
+      const rect = stage.getBoundingClientRect();
+      const stageScroll = viewport * 0.86 - rect.top;
+      const scrollRange = Math.max(stage.offsetHeight - viewport * 0.24, 1);
+      const progress = Math.min(Math.max(stageScroll / scrollRange, 0), 1);
+
+      const frame = Math.round(startFrame + progress * (endFrame - startFrame));
+      setMobileFrame(frame);
+      setMobileProgress(progress);
+    };
+
+    const onScroll = () => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(updateFrame);
+    };
+
+    updateFrame();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      cancelAnimationFrame(rafId);
+    };
+  }, []);
+
+  const mobileFrameSrc = getFrameSrc(mobileFrame);
+  const transition = Math.min(Math.max((mobileProgress - 0.08) / 0.76, 0), 1);
+  const fanX = 24 + transition * 36;
+  const fanScale = 1.2 - transition * 0.18;
+  const overlayOpacity = Math.max(0.62 - transition * 0.62, 0);
+  const panelOpacity = Math.max(1 - transition * 1.2, 0);
+  const panelLift = transition * 110;
+  const endCardOpacity = Math.min(Math.max((transition - 0.66) / 0.24, 0), 1);
+  const bgR = Math.round(58 + transition * 171);
+  const bgG = Math.round(62 + transition * 166);
+  const bgB = Math.round(69 + transition * 153);
+
   return (
-    <section className="relative bg-sand-200 pt-[80px] lg:hidden">
-      {/* Hero copy */}
-      <div className="px-5 pb-9 pt-8">
-        <div className="flex items-center gap-3">
-          <span className="h-px w-6 bg-primary" />
-          <span className="font-mono-eng text-[10px] uppercase tracking-[0.28em] text-primary">
-            {dict.badge}
-          </span>
-        </div>
+    <section ref={sectionRef} className="relative bg-sand-200 pt-[80px] lg:hidden">
+      <div ref={stageRef} className="relative h-[245svh]">
+        <section className="sticky top-[92px]">
+          <div className="relative min-h-[min(76svh,560px)] overflow-hidden" style={{ backgroundColor: `rgb(${bgR}, ${bgG}, ${bgB})` }}>
+            <Image
+              src={mobileFrameSrc}
+              alt={dict.endCard.title}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+              style={{
+                objectPosition: `${fanX}% center`,
+                transform: `scale(${fanScale})`,
+                filter: "contrast(1.1) saturate(1.04) brightness(1.04)",
+              }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_24%_48%,rgba(212,218,228,0.18)_0%,rgba(58,63,74,0.30)_40%,rgba(31,35,43,0.68)_100%)]"
+              style={{ opacity: overlayOpacity }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,39,46,0.58)_0%,rgba(36,39,46,0.22)_32%,rgba(36,39,46,0.12)_52%,rgba(36,39,46,0.40)_78%,rgba(36,39,46,0.66)_100%)]"
+              style={{ opacity: overlayOpacity }}
+            />
 
-        <h1 className="mt-6">
-          <span className="block text-[17px] font-medium text-ink/55">{dict.titleLine1}</span>
-          <span
-            className="mt-2 block font-bold text-ink break-words"
-            style={{ fontSize: "clamp(2.2rem, 10vw, 3.8rem)", lineHeight: 1.05, letterSpacing: "-0.02em" }}
-          >
-            {dict.titleLine2}
-          </span>
-          <span className="mt-2 block text-[19px] font-normal text-ink/75">{dict.titleLine3}</span>
-        </h1>
+            <div
+              className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#343840]/84 p-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)] backdrop-blur-[2px]"
+              style={{ opacity: panelOpacity, transform: `translateY(-${panelLift}px)` }}
+            >
+              <p className="font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">• {dict.badge}</p>
+              <h1 className="mt-3 text-white">
+                <span className="block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{dict.titleLine1}</span>
+                <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{dict.titleLine2}</span>
+                <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{dict.titleLine3}</span>
+              </h1>
+              <p className="mt-3 text-[14px] leading-[1.58] text-white/84">{dict.subtitle}</p>
 
-        <p className="mt-6 text-[14.5px] leading-[1.65] text-ink/70">{dict.subtitle}</p>
-      </div>
-
-      {/* Featured product card */}
-      <div className="px-5">
-        <Link href={`/${locale}/urunler/hava-hareketi`} className="group block">
-          <article className="relative overflow-hidden rounded-3xl border border-ink/12 bg-white">
-            <div className="relative aspect-[5/4] w-full bg-sand-200">
-              {/* Series badge */}
-              <div className="absolute left-4 top-4 z-10 inline-flex items-center gap-2 bg-ink/85 px-2.5 py-1 font-mono-eng text-[9px] uppercase tracking-[0.22em] text-sand-100 backdrop-blur-sm">
-                <span className="text-primary">◆</span> {dict.endCard.series}
-              </div>
-              <div className="absolute right-4 top-4 z-10 inline-flex items-center gap-1.5 border border-ink/15 bg-white/90 px-2.5 py-1 font-mono-eng text-[9px] uppercase tracking-[0.22em] text-ink/65 backdrop-blur-sm">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" /> {dict.endCard.spec3Value}
-              </div>
-
-              <Image
-                src="/animation/frames/frame-0211.jpg"
-                alt={dict.endCard.title}
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-                style={{ objectPosition: "60% center", filter: "contrast(1.05) saturate(1.08)" }}
-              />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white/95 via-white/60 to-transparent" />
-
-              {/* Title overlay */}
-              <div className="absolute inset-x-0 bottom-0 p-4">
-                <p className="font-mono-eng text-[10px] font-medium uppercase tracking-[0.22em] text-ink/70">
-                  Featured Product
-                </p>
-                <h3 className="mt-1 font-bold text-ink" style={{ fontSize: "1.5rem", lineHeight: 1.1, letterSpacing: "-0.015em" }}>
-                  {dict.endCard.title}
-                </h3>
+              <div className="mt-4 flex flex-wrap items-center gap-4">
+                <Link
+                  href={`/${locale}/iletisim`}
+                  className="btn-3d btn-3d-glass inline-flex items-center gap-2.5 rounded-xl border border-white/18 bg-[#1f2128]/94 px-4 py-2.5 font-mono-eng text-[10px] uppercase tracking-[0.2em] text-white transition-colors hover:border-primary hover:bg-primary"
+                >
+                  {dict.ctaPrimary}
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.6} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+                <Link
+                  href={`/${locale}/urunler/hava-hareketi`}
+                  className="inline-flex items-center gap-2 border-b border-white/45 pb-1 font-mono-eng text-[10px] uppercase tracking-[0.2em] text-white/88 transition-colors hover:border-primary hover:text-primary"
+                >
+                  {dict.ctaSecondary}
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.6} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
               </div>
             </div>
 
-            {/* Specs */}
-            <div className="grid grid-cols-1 divide-y divide-ink/10 border-t border-ink/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-              {[
-                { v: dict.endCard.spec1Value, l: dict.endCard.spec1Label },
-                { v: dict.endCard.spec2Value, l: dict.endCard.spec2Label },
-                { v: dict.endCard.spec3Value, l: dict.endCard.spec3Label },
-              ].map((s) => (
-                <div key={s.l} className="px-3 py-3.5 text-center">
-                  <p className="font-bold text-[1.05rem] leading-none text-ink">{s.v}</p>
-                  <p className="mt-1.5 font-mono-eng text-[8.5px] uppercase tracking-[0.18em] text-ink/55 truncate">{s.l}</p>
-                </div>
-              ))}
+            <div
+              className="pointer-events-none absolute inset-x-5 bottom-3 rounded-2xl border border-ink/10 bg-white/86 p-3.5 shadow-[0_14px_34px_-22px_rgba(20,24,32,0.35)] backdrop-blur-md"
+              style={{ opacity: endCardOpacity }}
+            >
+              <div className="flex items-center justify-between font-mono-eng text-[8.5px] uppercase tracking-[0.2em] text-ink/62">
+                <span>◆ {dict.endCard.series}</span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  {dict.endCard.spec3Value}
+                </span>
+              </div>
+              <h3 className="mt-1.5 text-[1.82rem] font-bold leading-[1.04] tracking-[-0.02em] text-ink">{dict.endCard.title}</h3>
+              <p className="mt-2 max-w-[36ch] text-[12px] leading-[1.5] text-ink/68">{dict.endCard.desc}</p>
+              <div className="mt-3 grid grid-cols-3 divide-x divide-ink/10 border-t border-ink/10 pt-2.5">
+                {[
+                  { v: dict.endCard.spec1Value, l: dict.endCard.spec1Label },
+                  { v: dict.endCard.spec2Value, l: dict.endCard.spec2Label },
+                  { v: dict.endCard.spec3Value, l: dict.endCard.spec3Label },
+                ].map((s) => (
+                  <div key={s.l} className="px-2 text-center first:pl-0 last:pr-0">
+                    <p className="font-bold text-[0.98rem] leading-none text-ink">{s.v}</p>
+                    <p className="mt-1 font-mono-eng text-[7px] uppercase tracking-[0.14em] text-ink/52 truncate">{s.l}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-
-            {/* CTA bar */}
-            <div className="flex items-center justify-between border-t border-ink/10 bg-sand-100 px-4 py-3.5">
-              <span className="font-mono-eng text-[10px] uppercase tracking-[0.22em] text-ink/65">
-                {dict.endCard.cta}
-              </span>
-              <svg className="h-4 w-4 text-primary transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </div>
-          </article>
-        </Link>
-      </div>
-
-      {/* Main CTAs */}
-      <div className="mt-8 px-5">
-        <div className="flex flex-col gap-3">
-          <Link
-            href={`/${locale}/iletisim`}
-            className="btn-3d btn-3d-dark group inline-flex w-full items-center justify-between rounded-2xl bg-ink px-6 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-sand-100 transition-all duration-300 hover:bg-primary"
-          >
-            <span>{dict.ctaPrimary}</span>
-            <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
-          <Link
-            href={`/${locale}/urunler/hava-hareketi`}
-            className="group inline-flex w-full items-center justify-between rounded-2xl border border-ink/15 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-ink/75 transition-all duration-300 hover:border-primary hover:text-primary"
-          >
-            <span>{dict.ctaSecondary}</span>
-            <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
-        </div>
+          </div>
+        </section>
       </div>
 
       {/* Stats grid */}

@@ -78,6 +78,7 @@
 /* clip: yatay taşmayı keser; overflow:hidden gibi sticky + scroll-driven hero’yu bozmaz */
 html {
   overflow-x: clip;
+  color-scheme: light;
 }
 
 body {
