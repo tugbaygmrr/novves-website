@@ -638,6 +638,7 @@ function MobileScrollSection({
               src={finalFrameSrc}
               alt={endCard?.title ?? "Fan"}
               fill
+              unoptimized
               sizes="100vw"
               className="object-cover"
               style={{

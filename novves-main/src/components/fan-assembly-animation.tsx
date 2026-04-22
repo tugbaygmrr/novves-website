@@ -109,6 +109,7 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
               alt={dict.endCard.title}
               fill
               priority
+              unoptimized
               sizes="100vw"
               className="object-cover"
               style={{
