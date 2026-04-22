@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FanAssemblyAnimation } from "@/components/fan-assembly-animation";
 import { ScrollVideoSection } from "@/components/scroll-video-section";
 
@@ -259,6 +259,8 @@ function SectionHead({
 export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: string }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [expandedPillars, setExpandedPillars] = useState<Record<number, boolean>>({});
+  const [activeJumpSection, setActiveJumpSection] = useState("hero-main");
+  const [showMobileJumpNav, setShowMobileJumpNav] = useState(true);
   const productCarouselRef = useRef<HTMLDivElement | null>(null);
   const pillarIntro = dict.pillars[0]?.intro ?? "";
   const pillarIntroParts = pillarIntro.split(".");
@@ -279,9 +281,142 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
     container.scrollBy({ left: scrollAmount, behavior: "smooth" });
   };
 
+  const jumpLinks = [
+    { id: "hero-main", label: locale === "tr" ? "Anasayfa" : locale === "ru" ? "Главная" : "Home" },
+    { id: "product-categories", label: locale === "tr" ? "Ürünler" : locale === "ru" ? "Продукты" : "Products" },
+    { id: "references", label: locale === "tr" ? "Referanslar" : locale === "ru" ? "Референсы" : "References" },
+    { id: "certificates", label: locale === "tr" ? "Sertifikalar" : locale === "ru" ? "Сертификаты" : "Certificates" },
+    { id: "faq", label: locale === "tr" ? "SSS" : locale === "ru" ? "FAQ" : "FAQ" },
+  ];
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    setActiveJumpSection(id);
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const getJumpIcon = (id: string) => {
+    if (id === "hero-main") return <path strokeLinecap="round" strokeLinejoin="round" d="M3 11.25L12 4l9 7.25M5.25 9.5V20h13.5V9.5" />;
+    if (id === "product-categories") return <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />;
+    if (id === "references") return <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 12h9m-9 0l3-3m-3 3l3 3M3.75 12a8.25 8.25 0 1116.5 0 8.25 8.25 0 01-16.5 0z" />;
+    if (id === "certificates") return <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75l2.25 2.25L15 9.75M12 3.75l6.75 3v5.25c0 4.25-2.85 8.04-6.75 9.25-3.9-1.21-6.75-5-6.75-9.25V6.75L12 3.75z" />;
+    return <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9.75h7.5M8.25 13.5h5.25M6 4.5h12A1.5 1.5 0 0119.5 6v12A1.5 1.5 0 0118 19.5H6A1.5 1.5 0 014.5 18V6A1.5 1.5 0 016 4.5z" />;
+  };
+
+  useEffect(() => {
+    const sectionIds = jumpLinks.map((x) => x.id);
+    const io = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible?.target?.id) setActiveJumpSection(visible.target.id);
+      },
+      { rootMargin: "-35% 0px -45% 0px", threshold: [0.2, 0.45, 0.7] },
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+
+    return () => io.disconnect();
+  }, [locale]);
+
+  useEffect(() => {
+    const hero = document.getElementById("hero-main");
+    if (!hero) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        const hit = entries[0];
+        setShowMobileJumpNav(!!hit?.isIntersecting);
+      },
+      { threshold: [0.22] },
+    );
+    io.observe(hero);
+    return () => io.disconnect();
+  }, [locale]);
+
   return (
     <main className="bg-sand-200 text-ink">
+      <nav className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 lg:flex">
+        <div className="rounded-xl border border-[#2b4065]/18 bg-[#1a2842]/90 px-2 py-2 shadow-[0_16px_30px_-24px_rgba(8,15,28,0.58)] backdrop-blur-sm">
+          <ul className="space-y-1.5">
+            {jumpLinks.map((item) => {
+              const active = activeJumpSection === item.id;
+              return (
+                <li key={item.id}>
+                  <button
+                    type="button"
+                    onClick={() => scrollToSection(item.id)}
+                    title={item.label}
+                    aria-label={item.label}
+                    className={`group flex h-8 w-8 items-center justify-center rounded-md transition-colors ${
+                      active ? "bg-white/[0.08]" : "hover:bg-white/[0.05]"
+                    }`}
+                  >
+                    <svg
+                      className={`${active ? "text-primary" : "text-white/68 group-hover:text-white/88"} h-4 w-4 transition-colors`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.7}
+                      stroke="currentColor"
+                    >
+                      {getJumpIcon(item.id)}
+                    </svg>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </nav>
+
+      <nav
+        className={`fixed bottom-4 inset-x-3 z-40 transition-all duration-300 lg:hidden ${
+          showMobileJumpNav ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="relative rounded-3xl border border-[#2b4065]/20 bg-[#1a2842]/92 px-4 py-3.5 shadow-[0_18px_32px_-24px_rgba(8,15,28,0.62)] backdrop-blur-sm">
+          <div className="pointer-events-none absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1/2">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[#121d31] shadow-[0_10px_22px_-14px_rgba(6,10,20,0.75)]">
+              <Image src="/images/novves-icon.svg" alt="Novves" width={22} height={22} className="h-[22px] w-[22px]" />
+            </div>
+          </div>
+          <ul className="flex items-center justify-between">
+            {jumpLinks.map((item) => {
+              const active = activeJumpSection === item.id;
+              return (
+                <li key={`m-${item.id}`}>
+                  <button
+                    type="button"
+                    onClick={() => scrollToSection(item.id)}
+                    title={item.label}
+                    aria-label={item.label}
+                    className={`group flex h-11 w-11 items-center justify-center rounded-lg transition-colors ${
+                      active ? "bg-white/[0.10]" : "hover:bg-white/[0.05]"
+                    }`}
+                  >
+                    <svg
+                      className={`${active ? "text-primary" : "text-white/70 group-hover:text-white/90"} h-[22px] w-[22px] transition-colors`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.7}
+                      stroke="currentColor"
+                    >
+                      {getJumpIcon(item.id)}
+                    </svg>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </nav>
+
       {/* 01 — SCROLL VIDEO: KOVAN TIPI */}
+      <div id="hero-main">
       <ScrollVideoSection
         framesPath="/animation/frames-2"
         totalFrames={240}
@@ -292,20 +427,21 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
         productHref="/urunler/kovan-tipi-aksiyal-fanlar"
         sideLabel="Otopark Havalandırma"
       />
+      </div>
 
       {/* 02 — PRODUCT CATEGORIES */}
-      <section className="relative overflow-hidden bg-sand-200 pb-8 pt-16 text-ink sm:pb-10 sm:pt-20">
+      <section id="product-categories" className="relative overflow-hidden bg-sand-200 pb-8 pt-16 text-ink sm:pb-10 sm:pt-20">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
 
-        <div className="relative mx-auto max-w-[1600px] px-6 sm:px-10 lg:px-16">
+        <div className="relative mx-auto max-w-[1600px] px-2 sm:px-10 lg:px-16">
           <SectionHead variant="showcase" title={dict.productCategories.title} subtitle={dict.productCategories.desc} />
 
-          <div className="mt-6 flex items-center gap-2 lg:mt-8 lg:gap-3">
+          <div className="mt-6 flex items-center gap-1 lg:mt-8 lg:gap-3">
             <button
               type="button"
               onClick={() => scrollProductCarousel("prev")}
               aria-label={locale === "tr" ? "Önceki ürünler" : locale === "ru" ? "Предыдущие товары" : "Previous products"}
-              className="btn-3d btn-3d-glass inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-primary hover:text-primary"
+              className="btn-3d btn-3d-glass inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-primary hover:text-primary"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -314,7 +450,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
 
             <div
               ref={productCarouselRef}
-              className="flex min-w-0 flex-1 snap-x snap-mandatory gap-3 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden"
+              className="flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {dict.productCategories.items.map((cat, index) => {
@@ -326,7 +462,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   key={cat.label}
                   href={`/${locale}${href}`}
                   data-product-card
-                  className="group flex h-[360px] w-[calc(100%-0.75rem)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)] sm:h-auto sm:aspect-square sm:w-[calc(50%-0.375rem)] lg:w-[calc((100%-2.25rem)/4)]"
+                  className="group flex h-[360px] w-full shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)] sm:h-auto sm:aspect-square sm:w-[calc(50%-0.375rem)] lg:w-[calc((100%-2.25rem)/4)]"
                 >
                   <div className="relative flex-[0_0_50%] border-b border-ink/10 bg-[#eef1f4]">
                     <Image
@@ -364,7 +500,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
               type="button"
               onClick={() => scrollProductCarousel("next")}
               aria-label={locale === "tr" ? "Sonraki ürünler" : locale === "ru" ? "Следующие товары" : "Next products"}
-              className="btn-3d btn-3d-glass inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-primary hover:text-primary"
+              className="btn-3d btn-3d-glass inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-primary hover:text-primary"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -645,7 +781,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
       </section>
 
       {/* 05 — REFERENCES */}
-      <section className="relative overflow-hidden bg-sand-200 pb-20 text-ink sm:pb-24">
+      <section id="references" className="relative overflow-hidden bg-sand-200 pb-20 text-ink sm:pb-24">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-30" />
         <div className="relative mx-auto max-w-[1600px] px-6 sm:px-10 lg:px-16">
           <SectionHead
@@ -715,7 +851,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
       </section>
 
       {/* 06 — CERTIFICATES */}
-      <section className="relative overflow-hidden bg-sand-200 pb-20 text-ink sm:pb-24">
+      <section id="certificates" className="relative overflow-hidden bg-sand-200 pb-20 text-ink sm:pb-24">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-30" />
         <div className="relative mx-auto max-w-[1600px] px-6 sm:px-10 lg:px-16">
           <SectionHead
@@ -849,26 +985,13 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                 </Link>
               </div>
 
-              <div className="border border-white/[0.1] bg-[#0f1624]/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-[8px]">
-                <div className="grid grid-cols-2 divide-x divide-white/[0.08]">
-                  {dict.hero.stats.slice(0, 4).map((stat, i) => (
-                    <div
-                      key={stat.label}
-                      className={`px-4 py-5 sm:px-5 sm:py-6 ${i >= 2 ? "border-t border-white/[0.08]" : ""}`}
-                    >
-                      <p className="text-[2rem] font-bold leading-none tracking-tight text-white sm:text-[2.1rem]">{stat.value}</p>
-                      <p className="mt-2.5 font-mono-eng text-[9.5px] uppercase leading-snug tracking-[0.2em] text-white/48">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* 06 — FAQ & 07 — FINAL CTA combined into a two-column block */}
-      <section className="relative bg-sand-200 py-16 sm:py-20">
+      <section id="faq" className="relative bg-sand-200 py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-60" />
 
         <div className="relative mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16">
@@ -943,30 +1066,6 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
 
             {/* Contact / social side */}
             <aside className="flex flex-col gap-4 lg:col-span-5 lg:h-full">
-              {/* Social */}
-              <div>
-                <p className="font-mono-eng text-[10px] uppercase tracking-[0.24em] text-primary">
-                  ◆ {dict.social.tag}
-                </p>
-                <h3 className="mt-4 font-semibold text-ink" style={{ fontSize: "clamp(1.8rem, 2.2vw, 2.3rem)", lineHeight: 1.02, letterSpacing: "-0.02em" }}>
-                  {dict.social.title}
-                </h3>
-                <div className="mt-4 flex flex-wrap gap-0 overflow-hidden rounded-2xl border border-ink/15">
-                  {socialPlatforms.map((p, i) => (
-                    <a
-                      key={p.label}
-                      href={p.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={p.label}
-                      className={`flex h-12 flex-1 items-center justify-center text-ink/50 transition-colors duration-300 hover:bg-[#1a2842] hover:text-primary ${i > 0 ? "border-l border-ink/15" : ""}`}
-                    >
-                      <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">{p.icon}</svg>
-                    </a>
-                  ))}
-                </div>
-              </div>
-
               {/* Final CTA — ink block with hairlines */}
               <div className="relative overflow-hidden rounded-3xl border border-[#2b4065] bg-[#1a2842] p-6 text-white lg:flex-1">
                 <div className="pointer-events-none absolute inset-0 blueprint-grid-dark opacity-22" />
@@ -1010,6 +1109,32 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                 </div>
               </div>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media */}
+      <section className="relative overflow-hidden bg-sand-200 pb-10 text-ink sm:pb-12">
+        <div className="relative mx-auto max-w-[1600px] px-6 sm:px-10 lg:px-16">
+          <p className="font-mono-eng text-[10px] uppercase tracking-[0.24em] text-primary">
+            ◆ {dict.social.tag}
+          </p>
+          <h3 className="mt-4 font-semibold text-ink" style={{ fontSize: "clamp(1.8rem, 2.2vw, 2.3rem)", lineHeight: 1.02, letterSpacing: "-0.02em" }}>
+            {dict.social.title}
+          </h3>
+          <div className="mt-4 flex flex-wrap gap-0 overflow-hidden rounded-2xl border border-ink/15">
+            {socialPlatforms.map((p, i) => (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={p.label}
+                className={`flex h-12 flex-1 items-center justify-center text-ink/50 transition-colors duration-300 hover:bg-[#1a2842] hover:text-primary ${i > 0 ? "border-l border-ink/15" : ""}`}
+              >
+                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">{p.icon}</svg>
+              </a>
+            ))}
           </div>
         </div>
       </section>

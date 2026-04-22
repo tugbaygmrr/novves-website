@@ -237,7 +237,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
               />
             </Link>
 
-            <p className="mt-5 max-w-xs text-[13px] leading-relaxed text-white/35">
+            <p className="mt-5 max-w-xs text-[13px] leading-relaxed text-white/55">
               {dict.footer.brandDesc}
             </p>
 
@@ -245,7 +245,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
             <div className="mt-8 space-y-2.5">
               <a
                 href="tel:+902164674752"
-                className="group flex items-center gap-3 text-[13px] text-white/45 transition-colors duration-300 hover:text-white"
+                className="group flex items-center gap-3 text-[13px] text-white/68 transition-colors duration-300 hover:text-white"
               >
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/30">
                   <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
@@ -257,7 +257,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
 
               <a
                 href="mailto:info@novves.com"
-                className="group flex items-center gap-3 text-[13px] text-white/45 transition-colors duration-300 hover:text-white"
+                className="group flex items-center gap-3 text-[13px] text-white/68 transition-colors duration-300 hover:text-white"
               >
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/30">
                   <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
@@ -267,7 +267,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
                 info@novves.com
               </a>
 
-              <div className="group flex items-start gap-3 text-[13px] leading-relaxed text-white/35">
+              <div className="group flex items-start gap-3 text-[13px] leading-relaxed text-white/58">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08]">
                   <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -300,42 +300,44 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
           </div>
 
           {/* Link columns */}
-          {footerSections.map((section) => (
-            <div key={section.title} className="lg:col-span-2">
-              <h4 className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.15em] text-white/60">
-                <span className="h-px w-3 bg-primary" />
-                {section.title}
-              </h4>
-              <ul className="mt-5 space-y-3">
-                {section.links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={`/${locale}${link.href}`}
-                      className="group flex items-center gap-0 text-[13px] text-white/30 transition-all duration-300 hover:text-white/80"
-                    >
-                      <span className="inline-block w-0 overflow-hidden text-primary transition-all duration-300 group-hover:w-4">
-                        &rsaquo;&ensp;
-                      </span>
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="grid grid-cols-2 gap-x-6 gap-y-8 lg:col-span-8 lg:grid-cols-4 lg:gap-x-8">
+            {footerSections.map((section) => (
+              <div key={section.title}>
+                <h4 className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.15em] text-white/82">
+                  <span className="h-px w-3 bg-primary" />
+                  {section.title}
+                </h4>
+                <ul className="mt-5 space-y-3">
+                  {section.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={`/${locale}${link.href}`}
+                        className="group flex items-center gap-0 text-[13px] text-white/62 transition-all duration-300 hover:text-white/90"
+                      >
+                        <span className="inline-block w-0 overflow-hidden text-primary transition-all duration-300 group-hover:w-4">
+                          &rsaquo;&ensp;
+                        </span>
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* â”€â”€ Bottom bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="relative z-10 border-t border-white/[0.06]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row sm:px-6 lg:px-8">
-          <p className="text-[11px] tracking-wide text-white/20">
+          <p className="text-[11px] tracking-wide text-white/88">
             {dict.footer.copyright}
           </p>
           <div className="flex flex-wrap items-center gap-5">
             <Link
               href={`/${locale}/kvkk/kisisel-verilerin-korunmasi`}
-              className="text-[11px] tracking-wide text-white/20 transition-colors duration-300 hover:text-white/50"
+              className="text-[11px] tracking-wide text-white/88 transition-colors duration-300 hover:text-white"
             >
               {dict.footer.kvkk}
             </Link>
@@ -343,19 +345,19 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
               href="/kvkk/FR-0057-Kisisel-Veri-Sahibi-Basvuru-Formu.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11px] tracking-wide text-white/20 transition-colors duration-300 hover:text-white/50"
+              className="text-[11px] tracking-wide text-white/88 transition-colors duration-300 hover:text-white"
             >
               KVKK Başvuru Formu
             </a>
             <Link
               href={`/${locale}/kvkk/guvenlik-ve-gizlilik-politikasi`}
-              className="text-[11px] tracking-wide text-white/20 transition-colors duration-300 hover:text-white/50"
+              className="text-[11px] tracking-wide text-white/88 transition-colors duration-300 hover:text-white"
             >
               {dict.footer.privacyPolicy}
             </Link>
             <Link
               href={`/${locale}/kvkk/kvkk-ve-islenmesi-beyani`}
-              className="text-[11px] tracking-wide text-white/20 transition-colors duration-300 hover:text-white/50"
+              className="text-[11px] tracking-wide text-white/88 transition-colors duration-300 hover:text-white"
             >
               KVKK ve İşlenmesi Beyanı
             </Link>
@@ -366,11 +368,11 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
       {/* â”€â”€ Tasarloji Credit â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="relative z-10 border-t border-white/[0.03]">
         <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-3 sm:px-6 lg:px-8">
-          <span className="text-[10px] text-white/15">Web Development by</span>
+          <span className="text-[10px] text-white/88">Web Development by</span>
           <a
             href="https://tasarloji.com"
             target="_blank"
-            className="inline-block opacity-20 transition-opacity duration-300 hover:opacity-50"
+            className="inline-block opacity-95 transition-opacity duration-300 hover:opacity-100"
           >
             <Image
               src="/images/tasarloji-logo.png"
