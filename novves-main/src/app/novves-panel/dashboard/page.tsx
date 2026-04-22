@@ -140,7 +140,7 @@ function FieldEditor({
                 <span className="text-[12px] font-semibold text-gray-600">{humanize(key)}</span>
                 {isArray && (
                   <span className="rounded bg-blue-50 px-1.5 py-0.5 text-[9px] font-medium text-blue-500">
-                    {(value as unknown[]).length} Ã¶ÄŸe
+                    {(value as unknown[]).length} öğe
                   </span>
                 )}
               </label>
@@ -182,9 +182,9 @@ const PAGE_GROUPS: PageGroup[] = [
     sections: [
       { key: "hero", label: "Hero" },
       { key: "animation2", label: "Animasyon 2" },
-      { key: "pillars", label: "3 SÃ¼tun" },
+      { key: "pillars", label: "3 Sütun" },
       { key: "midCta", label: "Orta CTA" },
-      { key: "productCategories", label: "ÃœrÃ¼n Kategorileri" },
+      { key: "productCategories", label: "Ürün Kategorileri" },
       { key: "video", label: "Video" },
       { key: "faq", label: "SSS" },
       { key: "social", label: "Sosyal Medya" },
@@ -203,55 +203,55 @@ const PAGE_GROUPS: PageGroup[] = [
   },
   {
     file: "products",
-    label: "ÃœrÃ¼nler",
+    label: "Ürünler",
     icon: "M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9",
     sections: [
       { key: "shared", label: "Ortak" },
       { key: "havaHareketi", label: "Hava Hareketi" },
-      { key: "iklimlendirme", label: "Ä°klimlendirme" },
-      { key: "sogutmaVeIsitma", label: "SoÄŸutma ve IsÄ±tma" },
-      { key: "havaYonetimi", label: "Hava YÃ¶netimi" },
-      { key: "havaDagitimi", label: "Hava DaÄŸÄ±tÄ±mÄ±" },
+      { key: "iklimlendirme", label: "İklimlendirme" },
+      { key: "sogutmaVeIsitma", label: "Soğutma ve Isıtma" },
+      { key: "havaYonetimi", label: "Hava Yönetimi" },
+      { key: "havaDagitimi", label: "Hava Dağıtımı" },
       { key: "havaFiltrasyonu", label: "Hava Filtrasyonu" },
       { key: "aksesuarlar", label: "Aksesuarlar" },
       { key: "otomasyonMalzemeleri", label: "Otomasyon Malz." },
-      { key: "titresimVeSesIzolasyon", label: "TitreÅŸim Ä°zolasyon" },
-      { key: "banyoFanlari", label: "Banyo FanlarÄ±" },
-      { key: "catiFanlari", label: "Ã‡atÄ± FanlarÄ±" },
+      { key: "titresimVeSesIzolasyon", label: "Titreşim İzolasyon" },
+      { key: "banyoFanlari", label: "Banyo Fanları" },
+      { key: "catiFanlari", label: "Çatı Fanları" },
       { key: "damperler", label: "Damperler" },
       { key: "dumanIsiTahliyeFanlari", label: "Duman Tahliye Fan." },
       { key: "duvarTipiFanlar", label: "Duvar Tipi Fanlar" },
       { key: "ecFanlar", label: "EC Fanlar" },
-      { key: "endustriyelFanlar", label: "EndÃ¼striyel Fanlar" },
+      { key: "endustriyelFanlar", label: "Endüstriyel Fanlar" },
       { key: "exproofFanlar", label: "Exproof Fanlar" },
       { key: "havuzNemAlmaSantrali", label: "Havuz Nem Alma" },
-      { key: "hucreliFanlar", label: "HÃ¼creli Fanlar" },
-      { key: "isiGeriKazanimCihazlari", label: "IsÄ± Geri KazanÄ±m" },
-      { key: "kanalFanlari", label: "Kanal FanlarÄ±" },
+      { key: "hucreliFanlar", label: "Hücreli Fanlar" },
+      { key: "isiGeriKazanimCihazlari", label: "Isı Geri Kazanım" },
+      { key: "kanalFanlari", label: "Kanal Fanları" },
       { key: "klimaSantralleri", label: "Klima Santralleri" },
       { key: "kovanTipiAksiyalFanlar", label: "Kovan Tipi Fanlar" },
-      { key: "mutfakFanlari", label: "Mutfak FanlarÄ±" },
-      { key: "siginakFanlari", label: "SÄ±ÄŸÄ±nak FanlarÄ±" },
+      { key: "mutfakFanlari", label: "Mutfak Fanları" },
+      { key: "siginakFanlari", label: "Sığınak Fanları" },
     ],
   },
   {
     file: "solutions",
-    label: "Ã‡Ã¶zÃ¼mler",
+    label: "Çözümler",
     icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
     sections: [
-      { key: "dumanIsiTahliye", label: "Duman & IsÄ± Tahliye" },
-      { key: "konforIklimlendirme", label: "Konfor Ä°klimlendirme" },
+      { key: "dumanIsiTahliye", label: "Duman & Isı Tahliye" },
+      { key: "konforIklimlendirme", label: "Konfor İklimlendirme" },
       { key: "hijyenikFiltrasyon", label: "Hijyenik Filtrasyon" },
-      { key: "endustriyelHavaYonetimi", label: "EndÃ¼striyel Hava" },
-      { key: "hayvancilikTesisleri", label: "HayvancÄ±lÄ±k Tesisleri" },
-      { key: "trafoEnerjiOdalari", label: "Trafo/Enerji OdalarÄ±" },
-      { key: "seraTarimsal", label: "Sera & TarÄ±msal" },
+      { key: "endustriyelHavaYonetimi", label: "Endüstriyel Hava" },
+      { key: "hayvancilikTesisleri", label: "Hayvancılık Tesisleri" },
+      { key: "trafoEnerjiOdalari", label: "Trafo/Enerji Odaları" },
+      { key: "seraTarimsal", label: "Sera & Tarımsal" },
       { key: "atexPatlamaKoruma", label: "ATEX Patlama Koruma" },
-      { key: "akilliOtomasyon", label: "AkÄ±llÄ± Otomasyon" },
-      { key: "konutHavalandirma", label: "Konut HavalandÄ±rma" },
+      { key: "akilliOtomasyon", label: "Akıllı Otomasyon" },
+      { key: "konutHavalandirma", label: "Konut Havalandırma" },
       { key: "marinOffshore", label: "Marin & Offshore" },
-      { key: "projeBazliOzelImalat", label: "Proje BazlÄ± Ä°malat" },
-      { key: "cfdDanismanlik", label: "CFD DanÄ±ÅŸmanlÄ±k" },
+      { key: "projeBazliOzelImalat", label: "Proje Bazlı İmalat" },
+      { key: "cfdDanismanlik", label: "CFD Danışmanlık" },
     ],
   },
   {
@@ -263,7 +263,7 @@ const PAGE_GROUPS: PageGroup[] = [
       { key: "devreAlma", label: "Devreye Alma" },
       { key: "dumanKontrol", label: "Duman Kontrol" },
       { key: "teknikServis", label: "Teknik Servis" },
-      { key: "yerindeKesif", label: "Yerinde KeÅŸif" },
+      { key: "yerindeKesif", label: "Yerinde Keşif" },
     ],
   },
   {
@@ -272,33 +272,33 @@ const PAGE_GROUPS: PageGroup[] = [
     icon: "M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21",
     sections: [
       { key: "bizKimiz", label: "Biz Kimiz" },
-      { key: "ceoMesaji", label: "CEO MesajÄ±" },
+      { key: "ceoMesaji", label: "CEO Mesajı" },
       { key: "ekibimiz", label: "Ekibimiz" },
       { key: "referanslar", label: "Referanslar" },
       { key: "sertifikalar", label: "Sertifikalar" },
-      { key: "politikamiz", label: "PolitikamÄ±z" },
-      { key: "basinOdasi", label: "BasÄ±n OdasÄ±" },
+      { key: "politikamiz", label: "Politikamız" },
+      { key: "basinOdasi", label: "Basın Odası" },
       { key: "haberler", label: "Haberler" },
     ],
   },
   {
     file: "contact",
-    label: "Ä°letiÅŸim",
+    label: "İletişim",
     icon: "M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75",
     sections: [
-      { key: "main", label: "Ä°letiÅŸim SayfasÄ±" },
+      { key: "main", label: "İletişim Sayfası" },
       { key: "partnerlerimiz", label: "Partnerlerimiz" },
       { key: "sosyalMedya", label: "Sosyal Medya" },
     ],
   },
   {
     file: "sustainability",
-    label: "SÃ¼rdÃ¼rÃ¼lebilirlik",
+    label: "Sürdürülebilirlik",
     icon: "M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418",
     sections: [
       { key: "main", label: "Ana Sayfa" },
       { key: "co2", label: "CO2" },
-      { key: "geriDonusum", label: "Geri DÃ¶nÃ¼ÅŸÃ¼m" },
+      { key: "geriDonusum", label: "Geri Dönüşüm" },
     ],
   },
   {
@@ -307,8 +307,8 @@ const PAGE_GROUPS: PageGroup[] = [
     icon: "M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5",
     sections: [
       { key: "blog", label: "Blog" },
-      { key: "dokumanKutuphanesi", label: "DokÃ¼man KÃ¼tÃ¼phanesi" },
-      { key: "fanSecici", label: "Fan SeÃ§ici" },
+      { key: "dokumanKutuphanesi", label: "Doküman Kütüphanesi" },
+      { key: "fanSecici", label: "Fan Seçici" },
       { key: "patentlerimiz", label: "Patentlerimiz" },
     ],
   },
@@ -320,11 +320,11 @@ const PAGE_GROUPS: PageGroup[] = [
       { key: "breadcrumbHome", label: "Breadcrumb Home" },
       { key: "breadcrumbKvkk", label: "Breadcrumb KVKK" },
       { key: "badge", label: "Badge" },
-      { key: "title", label: "BaÅŸlÄ±k" },
-      { key: "titleHighlight", label: "BaÅŸlÄ±k Vurgu" },
-      { key: "desc", label: "AÃ§Ä±klama" },
-      { key: "sectionLabel", label: "BÃ¶lÃ¼m Etiketi" },
-      { key: "sectionTitle", label: "BÃ¶lÃ¼m BaÅŸlÄ±ÄŸÄ±" },
+      { key: "title", label: "Başlık" },
+      { key: "titleHighlight", label: "Başlık Vurgu" },
+      { key: "desc", label: "Açıklama" },
+      { key: "sectionLabel", label: "Bölüm Etiketi" },
+      { key: "sectionTitle", label: "Bölüm Başlığı" },
       { key: "viewDetails", label: "Detay Butonu" },
       { key: "links", label: "Linkler" },
     ],
@@ -332,9 +332,9 @@ const PAGE_GROUPS: PageGroup[] = [
 ];
 
 const LOCALES = [
-  { code: "tr", label: "TÃ¼rkÃ§e", flag: "ğŸ‡¹ğŸ‡·" },
-  { code: "en", label: "English", flag: "ğŸ‡¬ğŸ‡§" },
-  { code: "ru", label: "Ğ ÑƒÑÑĞºĞ¸Ğ¹", flag: "ğŸ‡·ğŸ‡º" },
+  { code: "tr", label: "Türkçe", flag: "🇹🇷" },
+  { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "ru", label: "Русский", flag: "🇷🇺" },
 ];
 
 export default function DashboardPage() {
@@ -356,10 +356,10 @@ export default function DashboardPage() {
     fetch("/api/admin/auth/verify")
       .then((r) => r.json())
       .then((d) => {
-        if (!d.authenticated) router.replace("/NOVVES-panel");
+        if (!d.authenticated) router.replace("/novves-panel");
         else setUsername(d.username);
       })
-      .catch(() => router.replace("/NOVVES-panel"));
+      .catch(() => router.replace("/novves-panel"));
   }, [router]);
 
   // Load content
@@ -372,7 +372,7 @@ export default function DashboardPage() {
       setContent(json.data);
       setFormData(json.data[activeSection] ?? null);
     } catch {
-      setMessage({ type: "error", text: "Ä°Ã§erik yÃ¼klenemedi" });
+      setMessage({ type: "error", text: "İçerik yüklenemedi" });
     } finally {
       setLoading(false);
     }
@@ -433,15 +433,15 @@ export default function DashboardPage() {
         body: JSON.stringify({ locale, section: activeSection, data: formData }),
       });
       const json = await res.json();
-      if (!res.ok) setMessage({ type: "error", text: json.error || "Kaydetme baÅŸarÄ±sÄ±z" });
+      if (!res.ok) setMessage({ type: "error", text: json.error || "Kaydetme başarısız" });
       else { setMessage({ type: "success", text: "Kaydedildi" }); loadContent(); }
-    } catch { setMessage({ type: "error", text: "Sunucu hatasÄ±" }); }
+    } catch { setMessage({ type: "error", text: "Sunucu hatası" }); }
     finally { setSaving(false); }
   }
 
   async function handleLogout() {
     await fetch("/api/admin/auth/logout", { method: "POST" });
-    router.replace("/NOVVES-panel");
+    router.replace("/novves-panel");
   }
 
   // Filter groups by search
@@ -465,7 +465,7 @@ export default function DashboardPage() {
             <img src="/images/novves-icon.svg" alt="Novves" className="h-8 w-8" />
             <div>
               <h1 className="text-[13px] font-bold text-gray-900">NOVVES CMS</h1>
-              <p className="text-[10px] text-gray-400">Ä°Ã§erik YÃ¶netimi</p>
+              <p className="text-[10px] text-gray-400">İçerik Yönetimi</p>
             </div>
           </div>
           <span className="rounded-md bg-orange-50 px-2 py-0.5 text-[10px] font-semibold text-orange-500">v2</span>
@@ -499,7 +499,7 @@ export default function DashboardPage() {
             </svg>
             <input
               type="text"
-              placeholder="BÃ¶lÃ¼m ara..."
+              placeholder="Bölüm ara..."
               value={sidebarSearch}
               onChange={(e) => setSidebarSearch(e.target.value)}
               className="w-full rounded-lg border border-gray-100 bg-gray-50/50 py-2 pl-9 pr-3 text-[12px] text-gray-700 placeholder-gray-300 outline-none transition-all focus:border-orange-300 focus:bg-white focus:ring-1 focus:ring-orange-200"
@@ -576,13 +576,13 @@ export default function DashboardPage() {
               </div>
               <div>
                 <p className="text-[12px] font-semibold text-gray-700">{username}</p>
-                <p className="text-[10px] text-gray-300">YÃ¶netici</p>
+                <p className="text-[10px] text-gray-300">Yönetici</p>
               </div>
             </div>
             <button
               onClick={handleLogout}
               className="rounded-lg p-2 text-gray-300 transition-colors hover:bg-red-50 hover:text-red-500"
-              title="Ã‡Ä±kÄ±ÅŸ Yap"
+              title="Çıkış Yap"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
@@ -600,11 +600,11 @@ export default function DashboardPage() {
             <div className="flex items-center gap-3">
               {/* Breadcrumb */}
               <div className="flex items-center gap-2 text-[12px]">
-                <span className="font-medium text-gray-400">{currentGroup?.label}</span>
+                <span className="font-medium text-gray-400">{currentGroup?.label ?? ""}</span>
                 <svg className="h-3 w-3 text-gray-200" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
-                <span className="font-semibold text-gray-800">{currentSection?.label}</span>
+                <span className="font-semibold text-gray-800">{currentSection?.label ?? ""}</span>
               </div>
 
               {/* File badge */}
@@ -650,7 +650,7 @@ export default function DashboardPage() {
             <div className="flex h-80 items-center justify-center rounded-2xl border border-gray-200 bg-white">
               <div className="flex flex-col items-center gap-3">
                 <div className="h-8 w-8 animate-spin rounded-full border-2 border-gray-200 border-t-orange-500" />
-                <span className="text-[12px] text-gray-400">YÃ¼kleniyor...</span>
+                <span className="text-[12px] text-gray-400">Yükleniyor...</span>
               </div>
             </div>
           ) : formData !== null ? (
@@ -663,7 +663,7 @@ export default function DashboardPage() {
               {/* Save bar */}
               <div className="sticky bottom-0 flex items-center justify-between border-t border-gray-100 bg-gray-50/80 px-8 py-4 backdrop-blur-sm">
                 <p className="text-[11px] text-gray-400">
-                  DeÄŸiÅŸiklikler kaydetilmeden uygulanmaz
+                  Değişiklikler kaydetilmeden uygulanmaz
                 </p>
                 <button
                   onClick={handleSave}
@@ -688,7 +688,7 @@ export default function DashboardPage() {
             </div>
           ) : (
             <div className="flex h-40 items-center justify-center rounded-2xl border border-gray-200 bg-white text-[13px] text-gray-400">
-              Bu bÃ¶lÃ¼m iÃ§in iÃ§erik bulunamadÄ±
+              Bu bölüm için içerik bulunamadı
             </div>
           )}
         </div>

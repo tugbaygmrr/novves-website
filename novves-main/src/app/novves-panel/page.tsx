@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-/* â”€â”€ ÃœrÃ¼n vitrin verileri â”€â”€ */
+/* -- Ürün vitrin verileri -- */
 const SHOWCASE_PRODUCTS = [
   {
     name: "DRAGONFLY-C",
@@ -25,16 +25,16 @@ const SHOWCASE_PRODUCTS = [
   },
   {
     name: "DOLPHIN-PRE",
-    category: "Ã‡atÄ± FanÄ±",
-    spec: "F300 / 120Â°",
+    category: "Çatı Fanı",
+    spec: "F300 / 120°",
     image: "/images/products/dolphin-pre.png",
   },
 ];
 
 const STATS = [
-  { value: "1.200+", label: "ÃœrÃ¼n" },
+  { value: "1.200+", label: "Ürün" },
   { value: "113+", label: "Proje" },
-  { value: "18+", label: "Ãœlke" },
+  { value: "18+", label: "Ülke" },
 ];
 
 export default function AdminLoginPage() {
@@ -60,7 +60,7 @@ export default function AdminLoginPage() {
     fetch("/api/admin/auth/verify")
       .then((r) => r.json())
       .then((d) => {
-        if (d.authenticated) router.replace("/NOVVES-panel/dashboard");
+        if (d.authenticated) router.replace("/novves-panel/dashboard");
         else setChecking(false);
       })
       .catch(() => setChecking(false));
@@ -79,13 +79,13 @@ export default function AdminLoginPage() {
       });
       const data = await res.json();
       if (!res.ok) {
-        setError(data.error || "GiriÅŸ baÅŸarÄ±sÄ±z");
+        setError(data.error || "Giriş başarısız");
         setLoading(false);
         return;
       }
-      router.replace("/NOVVES-panel/dashboard");
+      router.replace("/novves-panel/dashboard");
     } catch {
-      setError("Sunucu hatasÄ±");
+      setError("Sunucu hatası");
       setLoading(false);
     }
   }
@@ -102,9 +102,7 @@ export default function AdminLoginPage() {
 
   return (
     <div className="flex min-h-screen bg-white">
-      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-          SOL TARAF â€” ÃœrÃ¼n Vitrini (aÃ§Ä±k tema)
-          â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* SOL TARAF - Ürün Vitrini (açık tema) */}
       <div className="relative hidden w-[52%] overflow-hidden border-r border-gray-100 bg-gray-50 lg:block">
         {/* Background effects */}
         <div className="pointer-events-none absolute inset-0">
@@ -121,7 +119,7 @@ export default function AdminLoginPage() {
           />
         </div>
 
-        {/* Top â€” Logo */}
+        {/* Top - Logo */}
         <div className="relative z-10 px-10 pt-10">
           <img
             src="/images/novves-logo.svg"
@@ -130,7 +128,7 @@ export default function AdminLoginPage() {
           />
         </div>
 
-        {/* Center â€” Product showcase */}
+        {/* Center - Product showcase */}
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-10 pb-32">
           {/* Product image */}
           <div className="relative mb-10 h-[280px] w-[280px]">
@@ -184,7 +182,7 @@ export default function AdminLoginPage() {
           </div>
         </div>
 
-        {/* Bottom â€” Stats */}
+        {/* Bottom - Stats */}
         <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-gray-200 bg-white/80 backdrop-blur-sm">
           <div className="flex">
             {STATS.map((s, i) => (
@@ -211,9 +209,7 @@ export default function AdminLoginPage() {
         `}</style>
       </div>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-          SAÄ TARAF â€” AÃ§Ä±k Tema GiriÅŸ Formu
-          â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* SAĞ TARAF - Açık Tema Giriş Formu */}
       <div className="relative flex flex-1 items-center justify-center bg-white px-6">
         {/* Subtle background pattern */}
         <div
@@ -240,14 +236,14 @@ export default function AdminLoginPage() {
               <img src="/images/novves-icon.svg" alt="" className="h-6 w-6" />
               <div className="h-[2px] w-6 rounded-full bg-orange-500" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-orange-500">
-                YÃ¶netim Paneli
+                Yönetim Paneli
               </span>
             </div>
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-              HoÅŸ Geldiniz
+              Hoş Geldiniz
             </h1>
             <p className="mt-2 text-[14px] leading-relaxed text-gray-400">
-              Ä°Ã§erik yÃ¶netim paneline eriÅŸmek iÃ§in giriÅŸ yapÄ±n.
+              İçerik yönetim paneline erişmek için giriş yapın.
             </p>
           </div>
 
@@ -255,7 +251,7 @@ export default function AdminLoginPage() {
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label className="mb-2 block text-[12px] font-semibold text-gray-700">
-                KullanÄ±cÄ± AdÄ±
+                Kullanıcı Adı
               </label>
               <div className="relative">
                 <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300">
@@ -270,14 +266,14 @@ export default function AdminLoginPage() {
                   required
                   autoComplete="username"
                   className="w-full rounded-xl border border-gray-200 bg-gray-50/80 py-3.5 pl-12 pr-4 text-[14px] text-gray-900 placeholder-gray-300 outline-none transition-all duration-200 focus:border-orange-400 focus:bg-white focus:shadow-lg focus:shadow-orange-500/5 focus:ring-2 focus:ring-orange-500/10"
-                  placeholder="KullanÄ±cÄ± adÄ±nÄ±z"
+                  placeholder="Kullanıcı adınız"
                 />
               </div>
             </div>
 
             <div>
               <label className="mb-2 block text-[12px] font-semibold text-gray-700">
-                Åifre
+                Şifre
               </label>
               <div className="relative">
                 <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300">
@@ -292,7 +288,7 @@ export default function AdminLoginPage() {
                   required
                   autoComplete="current-password"
                   className="w-full rounded-xl border border-gray-200 bg-gray-50/80 py-3.5 pl-12 pr-4 text-[14px] text-gray-900 placeholder-gray-300 outline-none transition-all duration-200 focus:border-orange-400 focus:bg-white focus:shadow-lg focus:shadow-orange-500/5 focus:ring-2 focus:ring-orange-500/10"
-                  placeholder="Åifreniz"
+                  placeholder="Şifreniz"
                 />
               </div>
             </div>
@@ -315,11 +311,11 @@ export default function AdminLoginPage() {
                 {loading ? (
                   <>
                     <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
-                    GiriÅŸ yapÄ±lÄ±yor...
+                    Giriş yapılıyor...
                   </>
                 ) : (
                   <>
-                    GiriÅŸ Yap
+                    Giriş Yap
                     <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
@@ -338,13 +334,13 @@ export default function AdminLoginPage() {
                 <svg className="h-3.5 w-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
-                SSL KorumalÄ±
+                SSL Korumalı
               </div>
               <div className="flex items-center gap-1.5">
                 <svg className="h-3.5 w-3.5 text-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                 </svg>
-                Åifreli Oturum
+                Şifreli Oturum
               </div>
               <div className="flex items-center gap-1.5">
                 <svg className="h-3.5 w-3.5 text-amber-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

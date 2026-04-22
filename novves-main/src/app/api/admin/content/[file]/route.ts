@@ -182,6 +182,13 @@ function getDictionaryPath(locale: Locale, file: string): string {
   );
 }
 
+function loadContentFromJsonFile(file: string, locale: Locale): Record<string, unknown> {
+  const filePath = getDictionaryPath(locale, file);
+  if (!fs.existsSync(filePath)) return {};
+  const raw = fs.readFileSync(filePath, "utf-8");
+  return JSON.parse(raw) as Record<string, unknown>;
+}
+
 function authenticate(request: NextRequest): string | null {
   const token = getCookieValue(request, COOKIE_ACCESS_TOKEN);
   if (!token) return null;
@@ -256,11 +263,23 @@ export async function GET(
       data,
     });
   } catch (err) {
-    console.error(`Failed to read ${file} for locale ${locale}:`, err);
-    return NextResponse.json(
-      { error: "Failed to read content" },
-      { status: 500 }
-    );
+    console.error(`Failed to read ${file} for locale ${locale} from DB, falling back to JSON:`, err);
+    try {
+      const data = loadContentFromJsonFile(file, locale);
+      return NextResponse.json({
+        file,
+        locale,
+        sections: FILE_SECTIONS[file],
+        data,
+        fallback: "json-file",
+      });
+    } catch (fallbackErr) {
+      console.error(`Fallback read failed for ${file} / ${locale}:`, fallbackErr);
+      return NextResponse.json(
+        { error: "Failed to read content" },
+        { status: 500 }
+      );
+    }
   }
 }
 

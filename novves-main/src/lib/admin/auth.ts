@@ -3,12 +3,19 @@ import bcrypt from "bcryptjs";
 import crypto from "crypto";
 
 const _secret = process.env.JWT_SECRET;
-if (!_secret || _secret.length < 32) {
+const isProd = process.env.NODE_ENV === "production";
+
+if (isProd && (!_secret || _secret.length < 32)) {
   throw new Error(
     "JWT_SECRET environment variable must be defined and at least 32 characters long"
   );
 }
-const JWT_SECRET: string = _secret;
+
+// Dev fallback to avoid auth API crash in local setup.
+const JWT_SECRET: string =
+  _secret && _secret.length >= 32
+    ? _secret
+    : "dev-only-jwt-secret-change-me-32chars";
 const ACCESS_TOKEN_EXPIRY = "15m";
 const REFRESH_TOKEN_EXPIRY = "7d";
 

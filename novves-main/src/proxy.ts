@@ -45,6 +45,7 @@ function hasAuthCookie(cookieValue: string | undefined): boolean {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const lowerPathname = pathname.toLowerCase();
 
   // --- Rate Limiting ---
   const ip =
@@ -63,16 +64,23 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // --- Admin panel protection ---
+  // Canonicalize admin path casing to avoid 404 on uppercase URLs.
   if (pathname.startsWith("/NOVVES-panel")) {
+    const normalizedUrl = request.nextUrl.clone();
+    normalizedUrl.pathname = `/novves-panel${pathname.slice("/NOVVES-panel".length)}`;
+    return NextResponse.redirect(normalizedUrl);
+  }
+
+  // --- Admin panel protection ---
+  if (lowerPathname.startsWith("/novves-panel")) {
     // Dashboard and sub-paths require authentication
-    if (pathname.startsWith("/NOVVES-panel/dashboard")) {
+    if (lowerPathname.startsWith("/novves-panel/dashboard")) {
       const accessToken = getCookieFromRequest(request, "admin_access_token");
       const refreshToken = getCookieFromRequest(request, "admin_refresh_token");
 
       if (!hasAuthCookie(accessToken) && !hasAuthCookie(refreshToken)) {
         const loginUrl = request.nextUrl.clone();
-        loginUrl.pathname = "/NOVVES-panel";
+        loginUrl.pathname = "/novves-panel";
         return NextResponse.redirect(loginUrl);
       }
     }
