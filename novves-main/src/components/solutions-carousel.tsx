@@ -40,9 +40,9 @@ export function SolutionsCarousel({
           type="button"
           onClick={() => scrollCards("prev")}
           aria-label="Önceki çözümler"
-          className="pointer-events-auto btn-3d btn-3d-glass inline-flex h-10 w-10 items-center justify-center rounded-xl border border-ink/15 bg-white text-ink/75 transition-colors hover:border-primary hover:text-primary"
+          className="pointer-events-auto btn-3d btn-3d-glass inline-flex h-7 w-7 items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary sm:h-10 sm:w-10 sm:rounded-xl sm:border-ink/15 sm:bg-white sm:text-ink/75 sm:shadow-none"
         >
-          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+          <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -50,9 +50,9 @@ export function SolutionsCarousel({
           type="button"
           onClick={() => scrollCards("next")}
           aria-label="Sonraki çözümler"
-          className="pointer-events-auto btn-3d btn-3d-glass inline-flex h-10 w-10 items-center justify-center rounded-xl border border-ink/15 bg-white text-ink/75 transition-colors hover:border-primary hover:text-primary"
+          className="pointer-events-auto btn-3d btn-3d-glass inline-flex h-7 w-7 items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary sm:h-10 sm:w-10 sm:rounded-xl sm:border-ink/15 sm:bg-white sm:text-ink/75 sm:shadow-none"
         >
-          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+          <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </button>

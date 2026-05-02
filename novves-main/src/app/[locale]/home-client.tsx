@@ -528,38 +528,38 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
       {/* 02 — SOLUTION CATEGORIES */}
       <section id="solution-categories" className="relative overflow-hidden bg-sand-200 pb-2 pt-12 text-ink sm:pb-2 sm:pt-16">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
-        <div className="relative mx-auto max-w-[1600px] px-3 sm:px-10 lg:px-16">
-          <div className="mt-6 flex flex-row items-center gap-2 lg:mt-8 lg:gap-3">
-            <div className="shrink-0 self-center">
+        <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
+          <div className="mt-6 flex flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
+            <div className="relative z-10 shrink-0 self-center">
               <div
-                className={`relative overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_20px_46px_-24px_rgba(15,20,30,0.32)] transition-all duration-300 ${
+                className={`relative overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#1f4fa8]/[0.08] transition-all duration-300 ${
                   hoveredSolutionIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                 }`}
               >
-                <div className="absolute inset-y-0 left-0 w-4.5 bg-[#1f4fa8]" />
-                <div className="py-4 pl-4 pr-3 sm:px-4 sm:py-7">
-                  <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
+                <div className="absolute inset-y-0 left-0 w-4.5 bg-[#1f4fa8] sm:w-4.5" />
+                <div className="py-4 pl-3.5 pr-2.5 sm:px-4 sm:py-7">
+                  <span className="font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]">
                     {locale === "tr" ? "Çözümler" : locale === "ru" ? "Решения" : "Solutions"}
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="flex min-h-0 min-w-0 flex-1 items-center gap-2">
+            <div className="relative z-[1] flex min-h-0 min-w-0 flex-1 items-center gap-1 sm:gap-2">
             <button
               type="button"
               onClick={() => scrollSolutionCarousel("prev")}
               aria-label={locale === "tr" ? "Önceki çözümler" : locale === "ru" ? "Предыдущие решения" : "Previous solutions"}
-              className="btn-3d btn-3d-glass inline-flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center rounded-lg border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] sm:h-8 sm:w-8"
+              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
-              <svg className="h-5 w-5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
 
             <div
               ref={solutionCarouselRef}
-              className="flex min-w-0 flex-1 touch-pan-x snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
+              className="flex min-w-0 flex-1 touch-pan-x snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {solutionCategoryMeta.map((item, index) => {
@@ -581,7 +581,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                       if (canUseFineHover()) setHoveredSolutionIndex(index);
                     }}
                     onMouseLeave={() => setHoveredSolutionIndex(null)}
-                    className={`group flex h-[clamp(260px,62svh,380px)] w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 active:scale-[0.99] sm:h-auto sm:w-[calc(50%-0.5rem)] sm:snap-start sm:aspect-square lg:w-[calc((100%-2rem)/5)] ${
+                    className={`group relative z-[2] flex h-[clamp(258px,58svh,382px)] w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_18px_42px_-22px_rgba(15,20,30,0.3)] ring-1 ring-[#1f4fa8]/[0.05] transition-all duration-300 active:scale-[0.99] max-sm:shadow-[0_16px_38px_-26px_rgba(15,22,34,0.26)] sm:h-auto sm:w-[calc(50%-0.5rem)] sm:ring-0 sm:shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] sm:snap-start sm:aspect-square lg:w-[calc((100%-2rem)/5)] ${
                       hoveredSolutionIndex === null
                         ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
                         : hoveredSolutionIndex === index
@@ -594,16 +594,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                         src={item.image}
                         alt={title}
                         fill
-                        className="object-contain p-5 mix-blend-multiply"
+                        className="object-contain p-4 mix-blend-multiply max-sm:p-3"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       />
                     </div>
-                    <div className="flex flex-1 flex-col px-4 py-2">
-                      <h3 className="mt-1.5 line-clamp-2 text-[1.15rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#1f4fa8]">
+                    <div className="flex flex-1 flex-col px-4 py-2 max-sm:px-3 max-sm:py-1.5">
+                      <h3 className="mt-1 line-clamp-2 text-[1.15rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#1f4fa8] max-sm:text-[1.12rem] max-sm:leading-[1.15]">
                         {title}
                       </h3>
-                      <p className="mt-1.5 line-clamp-2 text-[12px] leading-[1.5] text-ink/62">{desc}</p>
-                      <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#1f4fa8] sm:text-[10px]">
+                      <p className="mt-1 line-clamp-2 text-[12px] leading-[1.5] text-ink/62 max-sm:leading-[1.44]">{desc}</p>
+                      <div className="mt-auto pt-2 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#1f4fa8] sm:text-[10px]">
                         {locale === "tr" ? "Detayları İncele" : locale === "ru" ? "Подробнее" : "View Details"}
                       </div>
                     </div>
@@ -616,9 +616,9 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
               type="button"
               onClick={() => scrollSolutionCarousel("next")}
               aria-label={locale === "tr" ? "Sonraki çözümler" : locale === "ru" ? "Следующие решения" : "Next solutions"}
-              className="btn-3d btn-3d-glass inline-flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center rounded-lg border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] sm:h-8 sm:w-8"
+              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
-              <svg className="h-5 w-5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -634,38 +634,38 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
       >
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
 
-        <div className="relative mx-auto max-w-[1600px] px-3 sm:px-10 lg:px-16">
-          <div className="mt-6 flex flex-row items-center gap-2 lg:mt-8 lg:gap-3">
-            <div className="shrink-0 self-center">
+        <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
+          <div className="mt-6 flex flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
+            <div className="relative z-10 shrink-0 self-center">
               <div
-                className={`relative overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_20px_46px_-24px_rgba(15,20,30,0.32)] transition-all duration-300 ${
+                className={`relative overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-primary/[0.12] transition-all duration-300 ${
                   hoveredProductIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                 }`}
               >
-                <div className="absolute inset-y-0 left-0 w-4.5 bg-primary/90" />
-                <div className="py-4 pl-4 pr-3 sm:px-4 sm:py-7">
-                  <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
+                <div className="absolute inset-y-0 left-0 w-4.5 bg-primary/90 sm:w-4.5" />
+                <div className="py-4 pl-3.5 pr-2.5 sm:px-4 sm:py-7">
+                  <span className="font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]">
                     {locale === "tr" ? "Ürünler" : locale === "ru" ? "Продукты" : "Products"}
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="flex min-h-0 min-w-0 flex-1 items-center gap-2">
+            <div className="relative z-[1] flex min-h-0 min-w-0 flex-1 items-center gap-1 sm:gap-2">
             <button
               type="button"
               onClick={() => scrollProductCarousel("prev")}
               aria-label={locale === "tr" ? "Önceki ürünler" : locale === "ru" ? "Предыдущие товары" : "Previous products"}
-              className="btn-3d btn-3d-glass inline-flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center rounded-lg border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-primary hover:text-primary sm:h-8 sm:w-8"
+              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
-              <svg className="h-5 w-5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
 
             <div
               ref={productCarouselRef}
-              className="flex min-w-0 flex-1 touch-pan-x snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
+              className="flex min-w-0 flex-1 touch-pan-x snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {dict.productCategories.items.map((cat, index) => {
@@ -681,7 +681,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     if (canUseFineHover()) setHoveredProductIndex(index);
                   }}
                   onMouseLeave={() => setHoveredProductIndex(null)}
-                  className={`group flex h-[clamp(260px,62svh,380px)] w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 active:scale-[0.99] sm:h-auto sm:w-[calc(50%-0.5rem)] sm:snap-start sm:aspect-square lg:w-[calc((100%-2rem)/5)] ${
+                  className={`group relative z-[2] flex h-[clamp(258px,58svh,382px)] w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_18px_42px_-22px_rgba(15,20,30,0.3)] ring-1 ring-primary/[0.06] transition-all duration-300 active:scale-[0.99] max-sm:shadow-[0_16px_38px_-26px_rgba(15,22,34,0.26)] sm:h-auto sm:w-[calc(50%-0.5rem)] sm:ring-0 sm:shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] sm:snap-start sm:aspect-square lg:w-[calc((100%-2rem)/5)] ${
                     hoveredProductIndex === null
                       ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
                       : hoveredProductIndex === index
@@ -694,15 +694,15 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                       src={resolvedImage}
                       alt={cat.label}
                       fill
-                      className="object-contain p-5"
+                      className="object-contain p-4 max-sm:p-3"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
-                  <div className="flex flex-1 flex-col px-4 py-2">
-                    <h3 className="mt-1.5 line-clamp-2 text-[1.15rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-primary">
+                  <div className="flex flex-1 flex-col px-4 py-2 max-sm:px-3 max-sm:py-1.5">
+                    <h3 className="mt-1 line-clamp-2 text-[1.15rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-primary max-sm:text-[1.12rem] max-sm:leading-[1.15]">
                       {cat.label}
                     </h3>
-                    <p className="mt-1.5 line-clamp-2 text-[12px] leading-[1.5] text-ink/62">
+                    <p className="mt-1 line-clamp-2 text-[12px] leading-[1.5] text-ink/62 max-sm:leading-[1.44]">
                       {productCategoryDescriptions[cat.label] ??
                         (locale === "tr"
                           ? "Projeye uygun, güvenilir ve verimli ürün çözümlerini keşfedin."
@@ -710,7 +710,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                             ? "Откройте надежные и эффективные решения, подходящие для вашего проекта."
                             : "Discover reliable and efficient solutions tailored to your project.")}
                     </p>
-                    <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-primary sm:text-[10px]">
+                    <div className="mt-auto pt-2 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-primary sm:text-[10px]">
                       Detayları İncele
                     </div>
                   </div>
@@ -723,9 +723,9 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
               type="button"
               onClick={() => scrollProductCarousel("next")}
               aria-label={locale === "tr" ? "Sonraki ürünler" : locale === "ru" ? "Следующие товары" : "Next products"}
-              className="btn-3d btn-3d-glass inline-flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center rounded-lg border border-ink/15 bg-white/95 text-ink/75 shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] transition-colors hover:border-primary hover:text-primary sm:h-8 sm:w-8"
+              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
-              <svg className="h-5 w-5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
