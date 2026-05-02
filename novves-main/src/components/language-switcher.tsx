@@ -45,7 +45,7 @@ export function LanguageSwitcher({
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-medium transition-all duration-150 ${
+        className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-medium transition-all duration-150 md:min-h-[44px] md:px-4 md:py-2 ${
           inverted
             ? "border-white/10 bg-white/[0.03] text-white/72 hover:border-white/20 hover:text-white"
             : "border-secondary/15 text-secondary/60 hover:border-primary/30 hover:text-dark"

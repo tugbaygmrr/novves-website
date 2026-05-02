@@ -17,8 +17,14 @@ export default async function CeoMesaji({ params }: { params: Promise<{ locale: 
 
   return (
     <main>
-      <section className="relative flex min-h-[540px] items-end overflow-hidden">
-        <Image src="/images/page-hero/ceo.jpg" alt="" fill className="object-cover" priority />
+      <section className="relative flex min-h-[min(88vh,820px)] items-end overflow-hidden bg-[#4b5159] sm:min-h-[min(90vh,880px)]">
+        <Image
+          src="/images/page-hero/ceo.jpg"
+          alt=""
+          fill
+          className="object-cover object-[88%_26%] sm:object-[88%_28%]"
+          priority
+        />
         <div className="absolute inset-0 bg-[#4e525c]/28" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
@@ -51,8 +57,17 @@ export default async function CeoMesaji({ params }: { params: Promise<{ locale: 
               <div className="sticky top-28">
                 <div className="relative">
                   <div className="absolute -top-2 -left-2 h-full w-full rounded-2xl border border-primary/30" />
-                  <div className="relative overflow-hidden rounded-2xl border border-ink/10 bg-[#f8f5ed] shadow-[0_18px_40px_-28px_rgba(15,20,30,0.42)]">
-                    <Image src="/images/zeki-kadir-ozunturk.jpg" alt="Zeki Kadir Özüntürk" width={480} height={560} className="w-full object-cover object-top" priority />
+                  <div className="relative overflow-hidden rounded-2xl border border-ink/10 bg-[#eef1f4] shadow-[0_18px_40px_-28px_rgba(15,20,30,0.42)]">
+                    <div className="relative aspect-[4/5] w-full">
+                      <Image
+                        src="/images/zeki-kadir-ozunturk.jpg"
+                        alt="Zeki Kadir Özüntürk"
+                        fill
+                        className="object-cover object-center"
+                        sizes="(max-width: 1024px) 100vw, 320px"
+                        priority
+                      />
+                    </div>
                     <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark/80 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-5">
                       <p className="text-base font-bold text-white">Zeki Kadir ÖZÜNTÜRK</p>
@@ -103,7 +118,7 @@ export default async function CeoMesaji({ params }: { params: Promise<{ locale: 
                   <p className="text-base font-semibold text-dark">{t.signOff}</p>
                   <div className="mt-6 flex items-center gap-4">
                     <div className="h-12 w-12 overflow-hidden rounded-full ring-2 ring-primary/20">
-                      <Image src="/images/zeki-kadir-ozunturk.jpg" alt="Zeki Kadir Özüntürk" width={48} height={48} className="h-full w-full object-cover object-top" />
+                      <Image src="/images/zeki-kadir-ozunturk.jpg" alt="Zeki Kadir Özüntürk" width={48} height={48} className="h-full w-full object-cover object-center" />
                     </div>
                     <div>
                       <p className="text-sm font-bold text-dark">Zeki Kadir ÖZÜNTÜRK</p>

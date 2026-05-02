@@ -43,7 +43,6 @@ const FILE_SECTIONS: Record<string, readonly string[]> = {
     "productCategories",
     "video",
     "faq",
-    "social",
     "finalCta",
   ],
   kvkk: [

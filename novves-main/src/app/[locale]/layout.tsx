@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { CookieConsent } from "@/components/cookie-consent";
+import { CookieConsentLoader } from "@/components/cookie-consent-loader";
 import { SetHtmlLang } from "@/components/set-html-lang";
 import { GlobalJumpNav } from "@/components/global-jump-nav";
 import { hasLocale, getDictionary } from "./dictionaries";
@@ -47,9 +47,9 @@ export default async function LocaleLayout({
       <SetHtmlLang locale={locale} />
       <Navbar locale={locale} dict={dict.common} />
       <div className="min-w-0 flex-1">{children}</div>
-      <GlobalJumpNav locale={locale} />
       <Footer locale={locale} dict={dict.common} />
-      <CookieConsent locale={locale} />
+      <CookieConsentLoader locale={locale} />
+      <GlobalJumpNav locale={locale} />
     </>
   );
 }

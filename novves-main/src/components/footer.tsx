@@ -1,5 +1,6 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
+import { FooterCookieSettings } from "@/components/footer-cookie-settings";
 
 type FooterSectionsContent = {
   products: string;
@@ -18,6 +19,7 @@ type FooterContent = {
   ctaButton: string;
   brandDesc: string;
   copyright: string;
+  cookieSettings: string;
   kvkk: string;
   privacyPolicy: string;
   sections: FooterSectionsContent;
@@ -78,8 +80,6 @@ function buildFooterSections(dict: CommonFooterDict) {
   ];
 }
 
-/* â”€â”€ Static data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 const socialLinks = [
   {
     label: "LinkedIn",
@@ -119,15 +119,6 @@ const socialLinks = [
   },
 ];
 
-const certificates = [
-  { src: "/images/certificates/EN.png", alt: "EN" },
-  { src: "/images/certificates/ISO14001.png", alt: "ISO 14001" },
-  { src: "/images/certificates/CE.png", alt: "CE" },
-  { src: "/images/certificates/ISO9001.png", alt: "ISO 9001" },
-  { src: "/images/certificates/Efectis.png", alt: "Efectis" },
-  { src: "/images/certificates/bsi.png", alt: "BSI" },
-];
-
 /* â”€â”€ Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDict }) {
@@ -135,28 +126,6 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
 
   return (
     <>
-      <section className="border-b border-ink/10 bg-[#e8e7e3] py-12 sm:py-14">
-        <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 sm:gap-x-10 lg:flex-nowrap lg:justify-between">
-            {certificates.map((cert) => (
-              <a
-                key={cert.alt}
-                href={`/${locale}/kurumsal/sertifikalar`}
-                className="flex min-w-[110px] flex-1 items-center justify-center px-2 lg:min-w-0"
-              >
-                <Image
-                  src={cert.src}
-                  alt={cert.alt}
-                  width={180}
-                  height={72}
-                  className="h-10 w-auto max-w-full object-contain grayscale brightness-[0.82] contrast-[1.08] opacity-[0.96] transition-[filter,opacity,transform] duration-300 hover:scale-[1.03] hover:opacity-100 hover:grayscale-0 hover:brightness-100 hover:contrast-100 sm:h-12"
-                />
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <footer className="relative overflow-hidden">
       {/* â”€â”€ Background layers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="absolute inset-0">
@@ -282,8 +251,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
               </div>
             </div>
 
-            {/* Social row */}
-            <div className="mt-8 flex items-center gap-2">
+            <div className="mt-8 flex flex-wrap items-center gap-2.5">
               {socialLinks.map((s) => (
                 <a
                   key={s.label}
@@ -291,7 +259,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-md bg-white/[0.05] text-white/30 ring-1 ring-white/[0.08] transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary hover:text-white hover:ring-primary hover:shadow-lg hover:shadow-primary/20"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/65 shadow-[0_4px_20px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.05] hover:border-primary/45 hover:bg-primary/20 hover:text-white hover:shadow-[0_12px_32px_-16px_rgba(231,106,57,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
                 >
                   {s.icon}
                 </a>
@@ -355,6 +323,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
             >
               {dict.footer.privacyPolicy}
             </Link>
+            <FooterCookieSettings label={dict.footer.cookieSettings} />
             <Link
               href={`/${locale}/kvkk/kvkk-ve-islenmesi-beyani`}
               className="text-[11px] tracking-wide text-white/88 transition-colors duration-300 hover:text-white"

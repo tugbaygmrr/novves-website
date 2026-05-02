@@ -1,9 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
-
-const STORAGE_KEY = "NOVVES_cookie_consent_v1";
+import {
+  COOKIE_CONSENT_EVENT,
+  COOKIE_CONSENT_LEGACY_STORAGE_KEY,
+  COOKIE_CONSENT_OPEN_EVENT,
+  COOKIE_CONSENT_STORAGE_KEY,
+  COOKIE_CONSENT_VISIBILITY_EVENT,
+  COOKIE_DIALOG_HTML_ATTR,
+  readCookieConsentRaw,
+} from "@/lib/cookie-consent-storage";
 
 type Consent = {
   essential: true;
@@ -106,32 +114,76 @@ const copy: Record<string, Copy> = {
   },
 };
 
+function shouldShowBanner(): boolean {
+  try {
+    return !readCookieConsentRaw();
+  } catch {
+    return true;
+  }
+}
+
 export function CookieConsent({ locale = "tr" }: { locale?: string }) {
-  const [visible, setVisible] = useState(false);
-  const [expanded, setExpanded] = useState(false);
+  const [visible, setVisible] = useState(shouldShowBanner);
+  const [expanded, setExpanded] = useState(shouldShowBanner);
   const [analytics, setAnalytics] = useState(true);
   const [marketing, setMarketing] = useState(false);
 
   const t = copy[locale] ?? copy.tr;
 
   useEffect(() => {
-    try {
-      const existing = localStorage.getItem(STORAGE_KEY);
-      if (!existing) {
-        // Küçük gecikmeyle göster - sayfa yüklendikten sonra
-        const timer = setTimeout(() => setVisible(true), 600);
-        return () => clearTimeout(timer);
-      }
-    } catch {
-      setVisible(true);
+    if (!visible) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [visible]);
+
+  useLayoutEffect(() => {
+    if (typeof document === "undefined") return;
+    const nav = document.querySelector<HTMLElement>("[data-mobile-jump-nav]");
+
+    if (!visible) {
+      document.documentElement.removeAttribute(COOKIE_DIALOG_HTML_ATTR);
+      nav?.style.removeProperty("display");
+      window.dispatchEvent(
+        new CustomEvent(COOKIE_CONSENT_VISIBILITY_EVENT, { detail: { open: false } }),
+      );
+      return;
     }
+
+    document.documentElement.setAttribute(COOKIE_DIALOG_HTML_ATTR, "");
+    nav?.style.setProperty("display", "none", "important");
+    window.dispatchEvent(
+      new CustomEvent(COOKIE_CONSENT_VISIBILITY_EVENT, { detail: { open: true } }),
+    );
+  }, [visible]);
+
+  useEffect(() => {
+    return () => {
+      document.documentElement.removeAttribute(COOKIE_DIALOG_HTML_ATTR);
+      document.querySelector<HTMLElement>("[data-mobile-jump-nav]")?.style.removeProperty("display");
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    const open = () => {
+      setVisible(true);
+      setExpanded(true);
+    };
+    window.addEventListener(COOKIE_CONSENT_OPEN_EVENT, open);
+    return () => window.removeEventListener(COOKIE_CONSENT_OPEN_EVENT, open);
   }, []);
 
   function save(consent: Omit<Consent, "timestamp">) {
     const payload: Consent = { ...consent, timestamp: new Date().toISOString() };
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      localStorage.setItem(COOKIE_CONSENT_STORAGE_KEY, JSON.stringify(payload));
+      localStorage.removeItem(COOKIE_CONSENT_LEGACY_STORAGE_KEY);
     } catch {}
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent(COOKIE_CONSENT_EVENT, { detail: payload }));
+    }
     setVisible(false);
   }
 
@@ -149,29 +201,22 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
 
   if (!visible) return null;
 
-  return (
-    <>
-      {/* Backdrop when expanded */}
-      {expanded && (
-        <div
-          className="fixed inset-0 z-[90] bg-ink/40 backdrop-blur-sm transition-opacity"
-          onClick={() => setExpanded(false)}
-        />
-      )}
+  if (typeof window === "undefined") return null;
 
-      {/* Banner */}
+  return createPortal(
+    <div
+      className="fixed inset-0 flex min-h-[100dvh] w-full items-center justify-center overflow-y-auto overflow-x-hidden p-4 sm:p-6"
+      style={{ zIndex: 2147483646 }}
+    >
+      <div className="absolute inset-0 bg-ink/50 backdrop-blur-sm" aria-hidden />
+
       <div
-        className={`fixed z-[100] transition-all duration-500 ${
-          expanded
-            ? "inset-x-4 top-1/2 -translate-y-1/2 md:inset-x-auto md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:w-[640px]"
-            : "inset-x-4 bottom-4 md:inset-x-auto md:right-6 md:bottom-6 md:w-[480px]"
-        }`}
         role="dialog"
-        aria-modal={expanded ? "true" : undefined}
+        aria-modal="true"
         aria-labelledby="cookie-title"
+        className="relative z-10 my-auto flex w-full max-w-[640px] flex-col overflow-y-auto overscroll-contain rounded-2xl border border-ink/15 bg-sand-100 shadow-[0_40px_120px_-30px_rgba(10,14,20,0.35)] max-h-[min(90vh,90dvh)] pb-[env(safe-area-inset-bottom,0px)] pt-[env(safe-area-inset-top,0px)]"
       >
-        <div className="relative border border-ink/15 bg-sand-100 shadow-[0_40px_120px_-30px_rgba(10,14,20,0.35)]">
-          {/* Corner marks */}
+        {/* Corner marks */}
           <div className="pointer-events-none absolute left-0 top-0 h-3 w-3 border-l border-t border-ink/30" />
           <div className="pointer-events-none absolute right-0 top-0 h-3 w-3 border-r border-t border-ink/30" />
           <div className="pointer-events-none absolute bottom-0 left-0 h-3 w-3 border-b border-l border-ink/30" />
@@ -309,9 +354,9 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
               )}
             </div>
           </div>
-        </div>
       </div>
-    </>
+    </div>,
+    document.body,
   );
 }
 

@@ -4,8 +4,10 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
+type JumpItemId = "hero-main" | "product-categories" | "references" | "certificates" | "faq";
+
 type JumpItem = {
-  id: "hero-main" | "product-categories" | "references" | "certificates" | "faq";
+  id: JumpItemId;
   label: string;
   href: string;
   matchPath: string;
@@ -31,7 +33,7 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
       },
       {
         id: "product-categories",
-        label: locale === "tr" ? "Ürünler" : locale === "ru" ? "Продукты" : "Products",
+        label: locale === "tr" ? "Ürünler" : locale === "ru" ? "Продукция" : "Products",
         href: `/${locale}/urunler`,
         matchPath: `/${locale}/urunler`,
         homeSectionId: "product-categories",
@@ -53,8 +55,8 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
       {
         id: "faq",
         label: locale === "tr" ? "SSS" : locale === "ru" ? "FAQ" : "FAQ",
-        href: `/${locale}/kurumsal/biz-kimiz`,
-        matchPath: `/${locale}/kurumsal/biz-kimiz`,
+        href: homePath,
+        matchPath: homePath,
         homeSectionId: "faq",
       },
     ],
@@ -72,7 +74,7 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (mostVisible?.target?.id) setActiveHomeSection(mostVisible.target.id);
       },
-      { rootMargin: "-35% 0px -45% 0px", threshold: [0.2, 0.45, 0.7] },
+      { rootMargin: "-32% 0px -42% 0px", threshold: [0.2, 0.45, 0.7] },
     );
 
     sectionIds.forEach((id) => {
@@ -100,11 +102,19 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
     return pathname === item.matchPath || pathname.startsWith(`${item.matchPath}/`);
   };
 
-  const getJumpIcon = (id: JumpItem["id"]) => {
-    if (id === "hero-main") return <path strokeLinecap="round" strokeLinejoin="round" d="M3 11.5L12 4l9 7.5M5.25 10v10h13.5V10M9 20v-5.25h6V20" />;
-    if (id === "product-categories") return <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 5.25h6.75V12H4.5V5.25zm8.25 0h6.75V12h-6.75V5.25zM4.5 13.5h6.75v5.25H4.5V13.5zm8.25 0h6.75v5.25h-6.75V13.5z" />;
-    if (id === "references") return <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 19.5h16.5M6.75 16.5v-6.75m5.25 6.75V7.5m5.25 9V10.5M5.25 8.25l6.75-3 6.75 3" />;
-    if (id === "certificates") return <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 4.5h9v6.75a4.5 4.5 0 01-9 0V4.5zm2.25 5.25l1.5 1.5 3-3m-5.25 8.25L12 14.25l3 2.25v3L12 18l-3 1.5v-3z" />;
+  const getJumpIcon = (id: JumpItemId) => {
+    if (id === "hero-main") {
+      return <path strokeLinecap="round" strokeLinejoin="round" d="M3 11.5L12 4l9 7.5M5.25 10v10h13.5V10M9 20v-5.25h6V20" />;
+    }
+    if (id === "product-categories") {
+      return <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 5.25h6.75V12H4.5V5.25zm8.25 0h6.75V12h-6.75V5.25zM4.5 13.5h6.75v5.25H4.5V13.5zm8.25 0h6.75v5.25h-6.75V13.5z" />;
+    }
+    if (id === "references") {
+      return <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 19.5h16.5M6.75 16.5v-6.75m5.25 6.75V7.5m5.25 9V10.5M5.25 8.25l6.75-3 6.75 3" />;
+    }
+    if (id === "certificates") {
+      return <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 4.5h9v6.75a4.5 4.5 0 01-9 0V4.5zm2.25 5.25l1.5 1.5 3-3m-5.25 8.25L12 14.25l3 2.25v3L12 18l-3 1.5v-3z" />;
+    }
     return <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 9.75h9M7.5 13.5h6m-8.25 6h13.5A2.25 2.25 0 0021 17.25V6.75A2.25 2.25 0 0018.75 4.5H5.25A2.25 2.25 0 003 6.75v10.5A2.25 2.25 0 005.25 19.5z" />;
   };
 
@@ -148,8 +158,11 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
         </div>
       </nav>
 
-      <nav className="fixed bottom-4 inset-x-3 z-40 transition-all duration-300 lg:hidden">
-        <div className="relative rounded-3xl border border-[#2b4065]/20 bg-[#1a2842]/92 px-4 py-3.5 shadow-[0_18px_32px_-24px_rgba(8,15,28,0.62)] backdrop-blur-sm">
+      <nav
+        data-mobile-jump-nav
+        className="fixed bottom-4 inset-x-3 z-20 transition-all duration-300 md:inset-x-6 md:bottom-5 lg:hidden"
+      >
+        <div className="relative mx-auto max-w-xl rounded-3xl border border-[#2b4065]/20 bg-[#1a2842]/92 px-4 py-3.5 shadow-[0_18px_32px_-24px_rgba(8,15,28,0.62)] backdrop-blur-sm md:px-5 md:py-4">
           <div className="pointer-events-none absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1/2">
             <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[#121d31] shadow-[0_10px_22px_-14px_rgba(6,10,20,0.75)]">
               <Image src="/images/novves-icon.svg" alt="Novves" width={22} height={22} className="h-[22px] w-[22px]" />
@@ -165,12 +178,12 @@ export function GlobalJumpNav({ locale }: { locale: string }) {
                     onClick={() => onNavigate(item)}
                     title={item.label}
                     aria-label={item.label}
-                    className={`group flex h-[52px] w-12 flex-col items-center justify-center gap-1 rounded-lg transition-colors ${
+                    className={`group flex min-h-[52px] min-w-[48px] flex-col items-center justify-center gap-1 rounded-lg px-0.5 py-1 transition-colors md:min-h-14 md:min-w-[52px] md:gap-1.5 ${
                       active ? "bg-white/[0.10]" : "hover:bg-white/[0.05]"
                     }`}
                   >
                     <svg
-                      className={`${active ? "text-primary" : "text-white/70 group-hover:text-white/90"} h-[22px] w-[22px] transition-colors`}
+                      className={`${active ? "text-primary" : "text-white/70 group-hover:text-white/90"} h-[22px] w-[22px] shrink-0 transition-colors md:h-6 md:w-6`}
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.7}

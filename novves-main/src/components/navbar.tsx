@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { LanguageSwitcher } from "./language-switcher";
+import { resetCookieConsent } from "@/lib/cookie-consent-storage";
 
 /* â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
@@ -40,6 +41,7 @@ type NavbarContent = {
 
 type CommonDict = {
   navbar: NavbarContent;
+  footer: { cookieSettings: string };
 };
 
 /* â”€â”€ Icons (consistent outline, 1.5 strokeWidth) â”€â”€â”€â”€â”€â”€ */
@@ -240,7 +242,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
         </Link>
 
         {/* Desktop â€” ortada, geniÅŸ aralÄ±klÄ± */}
-        <ul className="hidden items-center gap-1 xl:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {menus.map((menu) => (
             <li
               key={menu.label}
@@ -281,8 +283,9 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                   onMouseLeave={handleLeave}
                 >
                   <div
-                    className="flex overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_20px_60px_-15px_rgba(0,0,0,0.12)]"
-                    style={{ width: menu.featured ? "720px" : "400px" }}
+                    className={`flex max-h-[min(80vh,680px)] overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_20px_60px_-15px_rgba(0,0,0,0.12)] ${
+                      menu.featured ? "w-[min(720px,calc(100vw-2rem))]" : "w-[min(400px,calc(100vw-2rem))]"
+                    }`}
                   >
                     {/* Left â€” Links */}
                     <div className="flex-1 p-6">
@@ -364,7 +367,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
             href="https://perfectusair.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`hidden items-center gap-1.5 rounded-full border px-5 py-2 text-[10px] font-medium uppercase tracking-[0.12em] transition-all duration-300 xl:inline-flex ${
+            className={`hidden items-center gap-1.5 rounded-full border px-5 py-2 text-[10px] font-medium uppercase tracking-[0.12em] transition-all duration-300 lg:inline-flex ${
               inverted
                 ? "border-white/10 bg-white/[0.03] text-white/72 hover:border-white/20 hover:text-white"
                 : "border-secondary/15 text-secondary/60 hover:border-primary hover:text-primary"
@@ -380,7 +383,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
             href="https://wa.me/905444674752"
             target="_blank"
             rel="noopener noreferrer"
-            className={`hidden items-center gap-1.5 rounded-full border px-5 py-2 text-[10px] font-medium uppercase tracking-[0.12em] transition-all duration-300 xl:inline-flex ${
+            className={`hidden items-center gap-1.5 rounded-full border px-5 py-2 text-[10px] font-medium uppercase tracking-[0.12em] transition-all duration-300 lg:inline-flex ${
               inverted
                 ? "border-white/10 bg-white/[0.03] text-white/72 hover:border-white/20 hover:text-white"
                 : "border-secondary/15 text-secondary/60 hover:border-primary hover:text-primary"
@@ -396,7 +399,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`inline-flex items-center justify-center rounded p-2 xl:hidden ${
+            className={`inline-flex items-center justify-center rounded p-2 lg:hidden ${
               inverted ? "text-white/72 hover:text-white" : "text-secondary/60 hover:text-primary"
             }`}
             aria-expanded={mobileOpen}
@@ -417,7 +420,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
       {/* â”€â”€ Mobile Menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {mobileOpen && (
-        <div className="max-h-[80vh] overflow-y-auto border-t border-gray-100 bg-white xl:hidden">
+        <div className="max-h-[80vh] overflow-y-auto border-t border-gray-100 bg-white lg:hidden">
           <div className="space-y-1 px-4 py-4">
             {menus.map((menu) => (
               <div key={menu.label}>
@@ -460,6 +463,20 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
             {/* Mobile CTAs */}
             <div className="mt-3 space-y-2 border-t border-gray-100 pt-3">
+              <button
+                type="button"
+                onClick={() => {
+                  resetCookieConsent();
+                  setMobileOpen(false);
+                  setMobileExpanded(null);
+                }}
+                className="flex w-full items-center justify-center gap-2 rounded-xl border border-secondary/15 bg-sand-100/90 py-3 text-sm font-semibold text-secondary transition-colors hover:border-primary/30 hover:text-primary"
+              >
+                <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={1.6} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                </svg>
+                {dict.footer.cookieSettings}
+              </button>
               <a
                 href="https://perfectusair.com/"
                 target="_blank"
