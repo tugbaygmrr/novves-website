@@ -532,12 +532,12 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
           <div className="mt-6 flex flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
             <div className="relative z-10 shrink-0 self-center">
               <div
-                className={`relative overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#1f4fa8]/[0.08] transition-all duration-300 ${
+                className={`relative flex max-sm:h-[13rem] max-sm:w-[3rem] max-sm:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#1f4fa8]/[0.08] transition-all duration-300 sm:h-auto sm:w-auto ${
                   hoveredSolutionIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                 }`}
               >
-                <div className="absolute inset-y-0 left-0 w-4.5 bg-[#1f4fa8] sm:w-4.5" />
-                <div className="py-4 pl-3.5 pr-2.5 sm:px-4 sm:py-7">
+                <div className="absolute inset-y-0 left-0 w-3 bg-[#1f4fa8] sm:w-3.5" aria-hidden />
+                <div className="relative z-0 flex flex-1 items-center justify-center py-3 pl-2.5 pr-2 sm:px-4 sm:py-7">
                   <span className="font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]">
                     {locale === "tr" ? "Çözümler" : locale === "ru" ? "Решения" : "Solutions"}
                   </span>
@@ -638,12 +638,12 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
           <div className="mt-6 flex flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
             <div className="relative z-10 shrink-0 self-center">
               <div
-                className={`relative overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-primary/[0.12] transition-all duration-300 ${
+                className={`relative flex max-sm:h-[13rem] max-sm:w-[3rem] max-sm:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-primary/[0.12] transition-all duration-300 sm:h-auto sm:w-auto ${
                   hoveredProductIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                 }`}
               >
-                <div className="absolute inset-y-0 left-0 w-4.5 bg-primary/90 sm:w-4.5" />
-                <div className="py-4 pl-3.5 pr-2.5 sm:px-4 sm:py-7">
+                <div className="absolute inset-y-0 left-0 w-3 bg-primary/90 sm:w-3.5" aria-hidden />
+                <div className="relative z-0 flex flex-1 items-center justify-center py-3 pl-2.5 pr-2 sm:px-4 sm:py-7">
                   <span className="font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]">
                     {locale === "tr" ? "Ürünler" : locale === "ru" ? "Продукты" : "Products"}
                   </span>
@@ -839,7 +839,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     hoveredCatalogIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                   }`}
                 >
-                  <div className="absolute inset-y-0 left-0 w-4.5 bg-primary/90" />
+                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-primary/90" />
                   <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
                     <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
                       {locale === "tr" ? "Kataloglar" : locale === "ru" ? "Каталоги" : "Catalogs"}
@@ -921,7 +921,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     hoveredReferenceIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                   }`}
                 >
-                  <div className="absolute inset-y-0 left-0 w-4.5 bg-[#6b7380]" />
+                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-[#6b7380]" />
                   <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
                     <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
                       {locale === "tr" ? "Referanslar" : locale === "ru" ? "Референсы" : "References"}
@@ -1002,7 +1002,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     hoveredCertificateIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                   }`}
                 >
-                  <div className="absolute inset-y-0 left-0 w-4.5 bg-[#1f4fa8]" />
+                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-[#1f4fa8]" />
                   <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
                     <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
                       {locale === "tr" ? "Sertifikalar" : locale === "ru" ? "Сертификаты" : "Certificates"}
@@ -1085,7 +1085,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     hoveredCompanyProfileIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
                   }`}
                 >
-                  <div className="absolute inset-y-0 left-0 w-4.5 bg-[#243044]" />
+                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-[#243044]" />
                   <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
                     <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
                       {locale === "tr" ? "Şirket Profili" : locale === "ru" ? "Профиль компании" : "Company Profile"}
