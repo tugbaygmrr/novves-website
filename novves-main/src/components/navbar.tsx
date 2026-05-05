@@ -2,13 +2,19 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { LanguageSwitcher } from "./language-switcher";
-import { resetCookieConsent } from "@/lib/cookie-consent-storage";
+import {
+  COOKIE_CONSENT_EVENT,
+  isConsentRestrictedMinimal,
+  parseStoredConsentJson,
+  readCookieConsentRaw,
+  resetCookieConsent,
+} from "@/lib/cookie-consent-storage";
 
 /* â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-type MenuLink = { label: string; href: string };
+type MenuLink = { label: string; href: string; image?: string; desc?: string };
 
 type MegaMenu = {
   label: string;
@@ -16,8 +22,12 @@ type MegaMenu = {
   desc: string;
   icon: React.ReactNode;
   links: MenuLink[];
-  featured?: { title: string; desc: string; href: string; image: string };
 };
+
+/** Yalnızca Çözümler + Ürünler: satır hover’ında sağda görsel önizleme */
+function menuHasImagePreview(menu: MegaMenu): boolean {
+  return menu.href === "/cozumler" || menu.href === "/urunler";
+}
 
 type NavbarContent = {
   solutions: string;
@@ -90,21 +100,73 @@ function buildMenus(dict: CommonDict): MegaMenu[] {
       href: "/cozumler",
       desc: d.solutionsDesc,
       icon: icons.cozumler,
-      featured: { title: l.smokeHeatExtraction, desc: l.smokeHeatExtractionDesc, href: "/cozumler/duman-isi-tahliye-sistemleri", image: "/images/products/dragonfly-c.png" },
       links: [
-        { label: l.smokeHeatExtraction, href: "/cozumler/duman-isi-tahliye-sistemleri" },
-        { label: l.comfortAirConditioning, href: "/cozumler/konfor-iklimlendirme-sistemleri" },
-        { label: l.hygienicVentilation, href: "/cozumler/hijyenik-filtrasyonlu-havalandirma" },
-        { label: l.industrialAirManagement, href: "/cozumler/endustriyel-hava-yonetimi" },
-        { label: l.livestockFacilities, href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri" },
-        { label: l.transformerEnergyRooms, href: "/cozumler/trafo-enerji-odalari-fanlari" },
-        { label: l.greenhouseAgricultural, href: "/cozumler/sera-tarimsal-havalandirma-sistemleri" },
-        { label: l.atexExplosionProtection, href: "/cozumler/atex-patlama-koruma-cozumleri" },
-        { label: l.smartAutomation, href: "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri" },
-        { label: l.residentialVentilation, href: "/cozumler/konut-tipi-havalandirma-sistemleri" },
-        { label: l.marineOffshore, href: "/cozumler/marin-offshore-havalandirma-sistemleri" },
-        { label: l.customManufacturing, href: "/cozumler/proje-bazli-ozel-imalatlar" },
-        { label: l.cfdConsulting, href: "/cozumler/cfd-muhendislik-danismanligi" },
+        {
+          label: l.smokeHeatExtraction,
+          href: "/cozumler/duman-isi-tahliye-sistemleri",
+          image: "/images/products/dragonfly-c.png",
+          desc: l.smokeHeatExtractionDesc,
+        },
+        {
+          label: l.comfortAirConditioning,
+          href: "/cozumler/konfor-iklimlendirme-sistemleri",
+          image: "/images/products/tiger-main.jpg",
+        },
+        {
+          label: l.hygienicVentilation,
+          href: "/cozumler/hijyenik-filtrasyonlu-havalandirma",
+          image: "/images/products/tiger-main.jpg",
+        },
+        {
+          label: l.industrialAirManagement,
+          href: "/cozumler/endustriyel-hava-yonetimi",
+          image: "/images/products/nautilus-cif-cidarli.jpg",
+        },
+        {
+          label: l.livestockFacilities,
+          href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri",
+          image: "/images/products/owl-cer.jpg",
+        },
+        {
+          label: l.transformerEnergyRooms,
+          href: "/cozumler/trafo-enerji-odalari-fanlari",
+          image: "/images/products/heron-ah.jpg",
+        },
+        {
+          label: l.greenhouseAgricultural,
+          href: "/cozumler/sera-tarimsal-havalandirma-sistemleri",
+          image: "/images/products/marlin.png",
+        },
+        {
+          label: l.atexExplosionProtection,
+          href: "/cozumler/atex-patlama-koruma-cozumleri",
+          image: "/images/products/bear-bp.jpg",
+        },
+        {
+          label: l.smartAutomation,
+          href: "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri",
+          image: "/images/products/hummingbird-drb-ec.jpg",
+        },
+        {
+          label: l.residentialVentilation,
+          href: "/cozumler/konut-tipi-havalandirma-sistemleri",
+          image: "/images/products/turtle-a.jpg",
+        },
+        {
+          label: l.marineOffshore,
+          href: "/cozumler/marin-offshore-havalandirma-sistemleri",
+          image: "/images/products/marlin.png",
+        },
+        {
+          label: l.customManufacturing,
+          href: "/cozumler/proje-bazli-ozel-imalatlar",
+          image: "/images/products/nautilus-cif-cidarli.jpg",
+        },
+        {
+          label: l.cfdConsulting,
+          href: "/cozumler/cfd-muhendislik-danismanligi",
+          image: "/images/page-hero/cfd.jpg",
+        },
       ],
     },
     {
@@ -112,17 +174,53 @@ function buildMenus(dict: CommonDict): MegaMenu[] {
       href: "/urunler",
       desc: d.productsDesc,
       icon: icons.urunler,
-      featured: { title: l.airMovement, desc: l.airMovementDesc, href: "/urunler/hava-hareketi", image: "/images/hero/aksiyal-jet-fan.png" },
       links: [
-        { label: l.airMovement, href: "/urunler/hava-hareketi" },
-        { label: l.airConditioning, href: "/urunler/iklimlendirme" },
-        { label: l.coolingAndHeating, href: "/urunler/sogutma-ve-isitma" },
-        { label: l.airManagement, href: "/urunler/hava-yonetimi" },
-        { label: l.airDistribution, href: "/urunler/hava-dagitimi" },
-        { label: l.airFiltration, href: "/urunler/hava-filtrasyonu" },
-        { label: l.accessories, href: "/urunler/aksesuarlar" },
-        { label: l.automationMaterials, href: "/urunler/otomasyon-malzemeleri" },
-        { label: l.vibrationSoundInsulation, href: "/urunler/titresim-ve-ses-izolasyon" },
+        {
+          label: l.airMovement,
+          href: "/urunler/hava-hareketi",
+          image: "/images/hero/aksiyal-jet-fan.png",
+          desc: l.airMovementDesc,
+        },
+        {
+          label: l.airConditioning,
+          href: "/urunler/iklimlendirme",
+          image: "/images/products/tiger-main.jpg",
+        },
+        {
+          label: l.coolingAndHeating,
+          href: "/urunler/sogutma-ve-isitma",
+          image: "/images/products/dolphin-main.jpg",
+        },
+        {
+          label: l.airManagement,
+          href: "/urunler/hava-yonetimi",
+          image: "/images/products/heron-ah.jpg",
+        },
+        {
+          label: l.airDistribution,
+          href: "/urunler/hava-dagitimi",
+          image: "/images/products/koi-cb.jpg",
+        },
+        {
+          label: l.airFiltration,
+          href: "/urunler/hava-filtrasyonu",
+          image: "/images/products/turtle-a.jpg",
+        },
+        {
+          label: l.accessories,
+          href: "/urunler/aksesuarlar",
+          image: "/images/products/hound-al.png",
+        },
+        {
+          label: l.automationMaterials,
+          href: "/urunler/otomasyon-malzemeleri",
+          image: "/images/products/hummingbird-drb-ec.jpg",
+        },
+        {
+          label: l.vibrationSoundInsulation,
+          href: "/urunler/titresim-ve-ses-izolasyon",
+          image: "/images/products/nautilus-cif-cidarli.jpg",
+        },
       ],
     },
     {
@@ -189,19 +287,39 @@ function buildMenus(dict: CommonDict): MegaMenu[] {
 export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  /** Sağ önizleme: hangi alt menü satırının görseli gösterilsin */
+  const [previewHref, setPreviewHref] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const menus = buildMenus(dict);
+  const [consentRestricted, setConsentRestricted] = useState(false);
+
+  useEffect(() => {
+    const apply = () => {
+      setConsentRestricted(isConsentRestrictedMinimal(parseStoredConsentJson(readCookieConsentRaw())));
+    };
+    apply();
+    window.addEventListener(COOKIE_CONSENT_EVENT, apply as EventListener);
+    return () => window.removeEventListener(COOKIE_CONSENT_EVENT, apply as EventListener);
+  }, []);
+
+  const menus = useMemo(() => {
+    const all = buildMenus(dict);
+    if (!consentRestricted) return all;
+    return all.filter((m) => m.href !== "/teknik-merkez");
+  }, [dict, consentRestricted]);
   /** Navbar stays white on all routes (no transparent / inverted hero overlay). */
   const inverted = false;
+  /** Root layout sets dir=rtl — mega menus must anchor with inline-start so the panel grows into the viewport (end-0 grows off the right edge in RTL). */
+  const isRtlLocale = locale === "ar" || locale === "ur";
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setOpenMenu(null);
+        setPreviewHref(null);
       }
     }
     function handleScroll() {
@@ -219,16 +337,25 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
   function handleEnter(label: string) {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setOpenMenu(label);
+    const m = menus.find((x) => x.label === label);
+    if (m && menuHasImagePreview(m)) {
+      setPreviewHref(m.links[0]?.href ?? null);
+    } else {
+      setPreviewHref(null);
+    }
   }
   function handleLeave() {
-    timeoutRef.current = setTimeout(() => setOpenMenu(null), 200);
+    timeoutRef.current = setTimeout(() => {
+      setOpenMenu(null);
+      setPreviewHref(null);
+    }, 200);
   }
 
   return (
     <header
-      className="fixed top-0 z-50 w-full max-w-[100vw] border-b border-ink/12 bg-white/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
+      className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible border-b border-ink/12 bg-white/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
     >
-      <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-6 sm:px-8 lg:px-10">
+      <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between overflow-visible px-6 sm:px-8 lg:px-10">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex-shrink-0">
           <Image
@@ -242,7 +369,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
         </Link>
 
         {/* Desktop â€” ortada, geniÅŸ aralÄ±klÄ± */}
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden min-w-0 flex-1 items-center justify-center gap-1 overflow-visible lg:flex">
           {menus.map((menu) => (
             <li
               key={menu.label}
@@ -278,81 +405,126 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
               {/* Mega Dropdown */}
               {openMenu === menu.label && (
                 <div
-                  className="absolute -left-8 top-full pt-4"
+                  className={`absolute top-full pt-4 start-0 ${isRtlLocale ? "" : "-ms-2"}`}
                   onMouseEnter={() => handleEnter(menu.label)}
                   onMouseLeave={handleLeave}
                 >
                   <div
-                    className={`flex max-h-[min(80vh,680px)] overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_20px_60px_-15px_rgba(0,0,0,0.12)] ${
-                      menu.featured ? "w-[min(720px,calc(100vw-2rem))]" : "w-[min(400px,calc(100vw-2rem))]"
+                    className={`flex max-h-[min(80vh,680px)] min-w-0 overflow-y-auto overflow-x-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_20px_60px_-15px_rgba(0,0,0,0.12)] ${
+                      menuHasImagePreview(menu)
+                        ? "w-[min(720px,calc(100vw-2rem))]"
+                        : "w-[min(400px,calc(100vw-2rem))]"
                     }`}
                   >
-                    {/* Left â€” Links */}
-                    <div className="flex-1 p-6">
+                    {/* Links column */}
+                    <div className="min-w-0 flex-1 p-6">
                       {/* Header */}
                       <div className="mb-5 flex items-center gap-3 border-b border-gray-100 pb-4">
                         <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/8 text-primary">
                           {menu.icon}
                         </span>
-                        <div>
-                          <p className="text-sm font-bold text-dark">{menu.label}</p>
-                          <p className="text-[11px] text-secondary/45">{menu.desc}</p>
+                        <div className="min-w-0 text-start">
+                          <p className="break-words text-sm font-bold text-dark">{menu.label}</p>
+                          <p className="break-words text-[11px] text-secondary/45">{menu.desc}</p>
                         </div>
                       </div>
 
                       {/* Links grid */}
-                      <div className={`grid gap-x-3 gap-y-0.5 ${menu.links.length > 6 ? "grid-cols-2" : "grid-cols-1"}`}>
-                        {menu.links.map((link) => (
-                          <Link
-                            key={link.href}
-                            href={`/${locale}${link.href}`}
-                            onClick={() => setOpenMenu(null)}
-                            className="group flex items-center gap-2 rounded-lg px-3 py-2 text-[13px] text-secondary/65 transition-all duration-150 hover:bg-gray-50 hover:text-dark"
-                          >
-                            <span className="h-1 w-1 rounded-full bg-secondary/15 transition-colors duration-150 group-hover:bg-primary" />
-                            {link.label}
-                          </Link>
-                        ))}
+                      <div
+                        className={`grid min-w-0 gap-x-3 gap-y-0.5 ${menu.links.length > 6 ? "grid-cols-2" : "grid-cols-1"}`}
+                      >
+                        {menu.links.map((link) => {
+                          const previewUi = menuHasImagePreview(menu);
+                          const active = previewUi && previewHref === link.href;
+                          return (
+                            <Link
+                              key={link.href}
+                              href={`/${locale}${link.href}`}
+                              onClick={() => {
+                                setOpenMenu(null);
+                                setPreviewHref(null);
+                              }}
+                              onMouseEnter={previewUi ? () => setPreviewHref(link.href) : undefined}
+                              onFocus={previewUi ? () => setPreviewHref(link.href) : undefined}
+                              className={`group flex items-center gap-2 rounded-lg px-3 py-2 text-start text-[13px] leading-snug text-secondary/65 break-words transition-all duration-150 hover:bg-gray-50 hover:text-dark ${
+                                active ? "bg-primary/[0.06] text-dark ring-1 ring-primary/15" : ""
+                              }`}
+                            >
+                              <span
+                                className={`h-1 w-1 shrink-0 rounded-full transition-colors duration-150 ${
+                                  active ? "bg-primary" : "bg-secondary/15 group-hover:bg-primary"
+                                }`}
+                              />
+                              {link.label}
+                            </Link>
+                          );
+                        })}
                       </div>
 
                       {/* View all */}
                       <div className="mt-4 border-t border-gray-100 pt-3">
                         <Link
                           href={`/${locale}${menu.href}`}
-                          onClick={() => setOpenMenu(null)}
+                          onClick={() => {
+                            setOpenMenu(null);
+                            setPreviewHref(null);
+                          }}
                           className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-[#e55a28]"
                         >
                           {dict.navbar.viewAll}
-                          <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                          <svg
+                            className={`h-3 w-3 ${isRtlLocale ? "rotate-180" : ""}`}
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={2.5}
+                            stroke="currentColor"
+                          >
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                           </svg>
                         </Link>
                       </div>
                     </div>
 
-                    {/* Right â€” Featured card */}
-                    {menu.featured && (
-                      <div className="w-56 shrink-0 border-l border-gray-100 bg-gray-50 p-5">
-                        <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.15em] text-secondary/30">{dict.navbar.featured}</p>
-                        <Link
-                          href={`/${locale}${menu.featured.href}`}
-                          onClick={() => setOpenMenu(null)}
-                          className="group block"
-                        >
-                          <div className="relative mb-3 aspect-square w-full overflow-hidden rounded-xl bg-white ring-1 ring-gray-100">
-                            <Image
-                              src={menu.featured.image}
-                              alt={menu.featured.title}
-                              fill
-                              className="object-contain p-4 transition-transform duration-500 group-hover:scale-110"
-                              sizes="200px"
-                            />
+                    {menuHasImagePreview(menu) &&
+                      (() => {
+                        const preview =
+                          menu.links.find((x) => x.href === previewHref && x.image) ??
+                          menu.links.find((x) => x.image) ??
+                          null;
+                        if (!preview?.image) return null;
+                        return (
+                          <div className="w-56 min-w-0 shrink-0 border-s border-gray-100 bg-gray-50 p-5">
+                            <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.15em] text-secondary/30">
+                              {dict.navbar.featured}
+                            </p>
+                            <Link
+                              href={`/${locale}${preview.href}`}
+                              onClick={() => {
+                                setOpenMenu(null);
+                                setPreviewHref(null);
+                              }}
+                              className="group block"
+                            >
+                              <div className="relative mb-3 aspect-square w-full overflow-hidden rounded-xl bg-white ring-1 ring-gray-100">
+                                <Image
+                                  key={preview.href}
+                                  src={preview.image}
+                                  alt={preview.label}
+                                  fill
+                                  className="object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+                                  sizes="200px"
+                                />
+                              </div>
+                              <p className="text-start text-sm font-bold text-dark transition-colors group-hover:text-primary">
+                                {preview.label}
+                              </p>
+                              <p className="mt-0.5 text-start text-[11px] leading-relaxed break-words text-secondary/45">
+                                {preview.desc ?? menu.desc}
+                              </p>
+                            </Link>
                           </div>
-                          <p className="text-sm font-bold text-dark transition-colors group-hover:text-primary">{menu.featured.title}</p>
-                          <p className="mt-0.5 text-[11px] leading-relaxed text-secondary/45">{menu.featured.desc}</p>
-                        </Link>
-                      </div>
-                    )}
+                        );
+                      })()}
                   </div>
                 </div>
               )}
@@ -363,6 +535,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
         {/* CTA buttons */}
         <div className="flex items-center gap-3">
           <LanguageSwitcher locale={locale} inverted={inverted} />
+          {!consentRestricted && (
           <a
             href="https://perfectusair.com/"
             target="_blank"
@@ -379,6 +552,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
             </svg>
             {dict.navbar.fanSelector}
           </a>
+          )}
           <a
             href="https://wa.me/905444674752"
             target="_blank"
@@ -427,14 +601,14 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                 <button
                   type="button"
                   onClick={() => setMobileExpanded(mobileExpanded === menu.label ? null : menu.label)}
-                  className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-gray-50"
+                  className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-start transition-colors hover:bg-gray-50"
                 >
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/8 text-primary">
                     {menu.icon}
                   </span>
-                  <div className="flex-1">
+                  <div className="min-w-0 flex-1">
                     <span className="text-sm font-semibold text-dark">{menu.label}</span>
-                    <span className="ml-2 text-[11px] text-secondary/35">{menu.desc}</span>
+                    <span className="ms-2 text-[11px] text-secondary/35">{menu.desc}</span>
                   </div>
                   <svg
                     className={`h-4 w-4 shrink-0 text-secondary/25 transition-transform duration-200 ${mobileExpanded === menu.label ? "rotate-180" : ""}`}
@@ -445,13 +619,13 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                 </button>
 
                 {mobileExpanded === menu.label && (
-                  <div className="ml-11 space-y-0.5 border-l-2 border-primary/10 py-1 pl-4">
+                  <div className="ms-11 space-y-0.5 border-s-2 border-primary/10 py-1 ps-4">
                     {menu.links.map((link) => (
                       <Link
                         key={link.href}
                         href={`/${locale}${link.href}`}
                         onClick={() => { setMobileOpen(false); setMobileExpanded(null); }}
-                        className="block rounded-md px-3 py-2 text-[13px] text-secondary/55 transition-colors hover:text-primary"
+                        className="block rounded-md px-3 py-2 text-start text-[13px] leading-snug break-words text-secondary/55 transition-colors hover:text-primary"
                       >
                         {link.label}
                       </Link>
@@ -477,6 +651,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                 </svg>
                 {dict.footer.cookieSettings}
               </button>
+              {!consentRestricted && (
               <a
                 href="https://perfectusair.com/"
                 target="_blank"
@@ -489,6 +664,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                 </svg>
                 {dict.navbar.fanSelector}
               </a>
+              )}
               <a
                 href="https://wa.me/905444674752"
                 target="_blank"

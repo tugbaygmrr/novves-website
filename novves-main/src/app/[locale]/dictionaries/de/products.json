@@ -1,0 +1,517 @@
+{
+  "shared": {
+    "home": "Start",
+    "products": "Produkte",
+    "productsLabel": "Produkte",
+    "explore": "Entdecken",
+    "otherCategories": "Weitere Produktkategorien",
+    "technicalSupport": "Technischer Support",
+    "technicalSupportRequest": "Technische Supportanfrage",
+    "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+    "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+    "allProducts": "Alle Produkte",
+    "viewProduct": "Produkt ansehen",
+    "detailedView": "Details anzeigen",
+    "comingSoon": "Demnächst",
+    "inspect": "Entdecken",
+    "model": "Modell",
+    "models": "Modell",
+    "results": "Treffer",
+    "noResults": "Keine Treffer.",
+    "searchProducts": "Produkte suchen …",
+    "clear": "Zurücksetzen",
+    "readMore": "Mehr lesen",
+    "readLess": "Weniger anzeigen",
+    "getQuote": "Angebot anfordern",
+    "allIklimlendirmeProducts": "Alle Klimaanlagen-Produkte",
+    "forYourProject": "Für die richtige Lösung für Ihr Projekt",
+    "productCatalog": "Produktkatalog",
+    "productRange": "Produktpalette",
+    "productFamilies": "Produktfamilien",
+    "productGroups": "Produktgruppen",
+    "fullProductRange": "Gesamtprogramm",
+    "allProductFamilies": "Alle Produktfamilien",
+    "mostPreferred": "Besonders gefragt",
+    "featuredProducts": "Ausgewählte Produkte",
+    "productVariety": "Modellvielfalt",
+    "productFamily": "Produktfamilie",
+    "certified": "Zertifiziert",
+    "fireResistance": "Brandwiderstand",
+    "filterSeries": "Filterserien",
+    "exploreNovves": "Weitere Kategorien im NOVVES-Sortiment entdecken.",
+    "comingSoonNotice": "Produkte dieser Kategorie werden bald ausführlich veröffentlicht. Für technische Angaben und Angebote bitte",
+    "contactUs": "Kontakt aufnehmen",
+    "airDamper": "Luftklappe",
+    "grilleDiffuser": "Gitter, Luftauslässe usw.",
+    "panoPLCSensor": "Schaltschränke, SPS, Sensoren",
+    "silencerRubberPadIsolators": "Schalldämpfer, Gummipuffer, Schwingungsisolierung",
+    "categories": {
+      "havaHareketi": "Lufttechnik",
+      "iklimlendirme": "Klima/Lüftung",
+      "sogutmaVeIsitma": "Kühlung & Heizung",
+      "havaYonetimi": "Luftführung",
+      "havaDagitimi": "Luftverteilung",
+      "havaFiltrasyonu": "Luftfiltration",
+      "aksesuarlar": "Zubehör",
+      "otomasyonMalzemeleri": "Automatisierung",
+      "titresimVeSesIzolasyon": "Schwingungs- und Schallschutz"
+    }
+  },
+  "havaHareketi": {
+    "title": "Lufttechnik",
+    "titleFirst": "Luft",
+    "titleHighlight": "technik",
+    "heroDesc": "Für Ihre Industrie- und Komfort-Lüftung",
+    "heroDescSuffix": "-Produktfamilie.",
+    "stats": [
+      { "value": "1,200+", "label": "Modellvielfalt" },
+      { "value": "12", "label": "Produktfamilien" },
+      { "value": "EN 12101-3", "label": "Zertifiziert" },
+      { "value": "F300/2H", "label": "Brandwiderstand" }
+    ],
+    "products": [
+      { "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilator", "subModels": ["DF T", "DF TS", "DF C", "DF R", "DF RV", "DF TJF", "DF JR", "DF JA", "DF WH", "DF RH"] },
+      { "name": "MARLIN", "type": "Axialventilator", "subModels": ["MARLIN", "MARLIN S", "MARLIN B", "MARLIN 2S"] },
+      { "name": "BEAR", "type": "ATEX-Ventilator", "subModels": ["BEAR REB EX", "BEAR RVS EX", "BEAR RHS EX", "BEAR T", "BEAR C", "BEAR R", "BEAR W", "BEAR LPF EX", "BEAR TB"] },
+      { "name": "NAUTILUS", "type": "Industrie-Radialventilator", "subModels": ["NAUTILUS LPF", "NAUTILUS MPF", "NAUTILUS HPF", "NAUTILUS SILENCE"] },
+      { "name": "HUMMINGBIRD", "type": "EC-Ventilator", "subModels": ["HUMMINGBIRD DRB EC", "HUMMINGBIRD RRV EC", "HUMMINGBIRD RRH EC", "HUMMINGBIRD CBP EC"] },
+      { "name": "HERON", "type": "Dachventilator", "subModels": ["HERON RH", "HERON RHS", "HERON RV", "HERON RVS", "HERON AH", "HERON AV", "HERON H"] },
+      { "name": "OWL", "type": "Wandventilator", "subModels": ["OWL RER", "OWL R", "OWL H"] },
+      { "name": "SEAHORSE", "type": "Badlüfter", "subModels": ["SEAHORSE AP", "SEAHORSE RP V1", "SEAHORSE RP V2"] },
+      { "name": "KOI", "type": "Kanalventilator", "subModels": ["KOI CB", "KOI RB", "KOI REB", "KOI X"] },
+      { "name": "TURTLE", "type": "Kammer-/Plenum-Ventilator", "subModels": ["TURTLE B", "TURTLE BPA", "TURTLE F", "TURTLE BP", "TURTLE A"] },
+      { "name": "BUTTERFLY", "type": "Küchenabluftventilator", "subModels": ["BUTTERFLY ECO", "BUTTERFLY ECO HR"] },
+      { "name": "FOX", "type": "Schutzraum-Ventilator", "subModels": ["FOX D", "FOX C"] },
+      { "name": "CHICKEN", "type": "Landwirtschaftslüfter", "comingSoon": true },
+      { "name": "ELEPHANT", "type": "Entstaubung", "comingSoon": true }
+    ],
+    "otherCategories": [
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ],
+    "ctaDesc": "Kontaktieren Sie unser Engineering-Team, um aus über 1.200 Produktvarianten die passende Lösung für Ihr Projekt zu finden."
+  },
+  "iklimlendirme": {
+    "title": "Klima/Lüftung",
+    "titleFirst": "Klima/",
+    "titleHighlight": "Lüftung",
+    "pills": ["3 Produktfamilien", "Modularer Aufbau", "EC- und Radialventilator", "HEPA-Filtration"],
+    "tiger": {
+      "label": "Klima-/Lüftungszentrale",
+      "desc": "Modular aufgebaute Zuluftzentrale mit hocheffizienten Bauteilen und leisem Betrieb im Luftbereich 500 bis 125.000 m³/h.",
+      "specs": [
+        { "label": "Luftmenge", "value": "500–125K m³/h" },
+        { "label": "Druck", "value": "10–3.000 Pa" },
+        { "label": "Gehäuse", "value": "Anodisiertes Aluminium" }
+      ]
+    },
+    "dolphin": {
+      "label": "Hallenschwimmbad-Entfeuchtung",
+      "desc": "Schützt die Bausubstanz in überdachten Pools und erhöht den Komfort für Nutzer. Hohe Energieeffizienz, langlebige Bauweise und leiser Lauf.",
+      "specs": [
+        { "label": "Leistungsstufen", "value": "6 Modelle" },
+        { "label": "Luftmenge", "value": "3.000–9.000 m³/h" },
+        { "label": "Fläche Schwimmbecken", "value": "50–250 m²" }
+      ]
+    },
+    "caracal": {
+      "label": "Wärmerückgewinnung",
+      "desc": "Gebündelte Lüftung und Raumluftführung für Frischluftbedarf und bessere Luftqualität in Büros, Schulen, Hotels, Krankenhäusern und Sozialbereichen."
+    },
+    "ctaDesc": "Unser technisches Team berät Sie zur passenden Klimalösung.",
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "sogutmaVeIsitma": {
+    "title": "Kühlung & Heizung",
+    "titleFirst": "Kühlung &",
+    "titleHighlight": "Heizung",
+    "heroDesc": "Chiller, Innen-/Außenmodule, elektrische Heizungen und Register-Lösungen.",
+    "comingSoonNotice": "Produkte dieser Kategorie werden bald ausführlich veröffentlicht. Für technische Angaben und Angebote bitte",
+    "comingSoonLink": "Kontakt aufnehmen",
+    "products": [
+      { "name": "CHILLER (Polar Bear)", "type": "Kältemodul", "subModels": [] },
+      { "name": "OUTDOOR UNITS", "type": "Kältemodul", "subModels": [] },
+      { "name": "INDOOR UNITS", "type": "Kältemodul", "subModels": [] },
+      { "name": "ELECTRIC HEATERS", "type": "Elektroheizung", "subModels": ["EH (eckig)", "EHC (rund)"] },
+      { "name": "WATER COIL", "type": "Register", "subModels": ["WC"] }
+    ],
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaYonetimi": {
+    "title": "Luftführung",
+    "titleFirst": "Luft",
+    "titleHighlight": "führung",
+    "heroDesc": "Lösungen mit Luftklappen.",
+    "hound": {
+      "label": "Luftklappe",
+      "desc": "Klappenprogramm für maximalen Regelkomfort und Sicherheit an den kritischen Punkten von Lüftungs- und Brandschutzinstallationen.",
+      "subModels": ["MSD", "MSFD-R", "MSFD-B", "SFD-B", "SFD-R", "RSFD-B", "RSFD-Drain-B", "FFD", "MFD", "RD", "GS"]
+    },
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaDagitimi": {
+    "title": "Luftverteilung",
+    "titleFirst": "Luft",
+    "titleHighlight": "verteilung",
+    "heroDesc": "Gitter, Luftauslässe (Diffusoren), Anemostaten und Wetterschutzgitter.",
+    "alpaca": {
+      "label": "Gitter, Luftauslässe usw.",
+      "desc": "verschiedene Modelle für maßgeschneiderte Luftverteilung.",
+      "subModels": [
+        "ALPACA-GL-SD", "ALPACA-GL-DD", "ALPACA-GL-RA", "ALPACA-GL-PRF", "ALPACA-GL-OB",
+        "ALPACA-DF-SQ", "ALPACA-DF-CR", "ALPACA-DF-LS", "ALPACA-DF-JET", "ALPACA-DF-ADJ",
+        "ALPACA-LV-FX", "ALPACA-LV-ADJ", "ALPACA-LV-WP", "ALPACA-LV-AC",
+        "ALPACA-AM-SQ", "ALPACA-AM-CR", "ALPACA-AM-ADJ",
+        "ALPACA-SP-FR", "ALPACA-SP-DEC", "ALPACA-SP-AC", "ALPACA-SP-JET"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaFiltrasyonu": {
+    "title": "Luftfiltration",
+    "titleFirst": "Luft",
+    "titleHighlight": "filtration",
+    "heroDesc": "Filter für Industrie- und Komfortanwendungen.",
+    "scallop": {
+      "label": "Filterserien",
+      "desc": "verschiedene Filtermodelle für projektbezogene Filtrationsbedürfnisse.",
+      "subModels": [
+        "SCALLOP PF", "SCALLOP MF", "SCALLOP GF", "SCALLOP ABF", "SCALLOP CF",
+        "SCALLOP BF", "SCALLOP HP", "SCALLOP UF", "SCALLOP FF"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "aksesuarlar": {
+    "title": "Zubehör",
+    "titleFirst": "Zube",
+    "titleHighlight": "hör",
+    "productCount": "Produkte",
+    "ctaTitle": "Suchen Sie das passende Zubehör für Ihr Projekt?",
+    "accessories": [
+      { "name": "Feder-Schwingungsisolierung", "image": "/images/products/yayli-titresim-izolatoru.png", "description": "Federisolatoren werden in KLTA-Anlagen und Maschinenaufstellungen eingesetzt, um niederfrequenten Schwingungsübertrag vom System auf Gebäudestrukturen zu mindern." },
+      { "name": "AE SF Montagefüße", "image": "/images/products/ae-sf-baglanti-ayaklari.jpg", "description": "Hohe Festigkeit für die bodenseitige Befestigung von Ventilatoren am Untergrund gemäß Projektvorgaben." },
+      { "name": "AE PM Drahtgitter-Schutz", "image": "/images/products/ae-pm-tel-kafes.jpg", "description": "Schutzgitter aus hochfestem Stahldraht für Sicherheit auf Saug- oder Druckseite sowie Fremdkörperschutz im Strömungsbereich." },
+      { "name": "AE IC Ansaugitter-Konus", "image": "/images/products/ae-ic-giris-konisi.jpg", "description": "AE IC Serie: strömungsgünstige Einformung auf der Saugseite des Ventilators zur Reduktion von Turbulenz und höherer Anlageneffizienz." },
+      { "name": "AE CF Gegenflansch", "image": "/images/products/ae-cf-karsi-flans.jpg", "description": "AE CF Serie: hitzebeständige Anbindung Ventilator–Kanal mit dichter Verbindung." },
+      { "name": "AE FJF Flexverbinder mit Gegenflansch", "image": "/images/products/ae-fjf.png", "description": "AE FJF Serie: flexibles Verbindungselement zur Entkopplung von Schwingungen und Wärmedehnung zwischen Ventilator und Kanal, leiserer Betrieb." },
+      { "name": "AE FJF F400 Flexverbinder mit Gegenflansch", "image": "/images/products/ae-fjf.png", "description": "AE FJF F400: flexible, dichte Verbindung für brandschutzrelevante Anwendungen." },
+      { "name": "AE FJ2F Doppel-Gegenflansch-Flexverbinder", "image": "/images/products/ae-fj2f.jpg", "description": "Hochflexible Verbindung mit Gegenflansch beidseitig für Schwingungen, Dehnung und Montagetoleranzen." },
+      { "name": "AE FJ2F F400 Doppel-Flexverbinder", "image": "/images/products/ae-fj2f.jpg", "description": "AE FJ2F-HR Serie: temperaturfest für feuerfest ausgelegte Luftführungen." },
+      { "name": "AE S-D100 Rundschalldämpfer", "image": "/images/products/ae-sd100.jpg", "description": "Runde Schalldämpfer der AE S-D100 Serie zur Pegelminderung und verbesserten Akustik in Lüftungsanlagen." },
+      { "name": "AE RS Rechteck-Kanaldämpfer", "image": "/images/products/ae-rs.jpg", "description": "Rechteckige Kanaldämpfer zur Reduktion strömungsbedingter Geräuschentwicklung." },
+      { "name": "AE-SS Muffenschalldämpfer", "image": "/images/products/emniyet-salteri.jpg", "description": "Optionale akustische Muffen, insbesondere für die Ansaugseite geräuschempfindlicher Projekte." },
+      { "name": "AE-V Leitschaufel", "image": "/images/products/free.jpg", "description": "Leitschaufeln AE V Serie zur Gleichverteilung und Turbulenzreduktion in Ventilator- und Kanalsystemen." },
+      { "name": "AE-OC Austrittsabdeckung", "image": "/images/products/free.jpg", "description": "Wetterfeste Abdeckung am Druckaustritt zum Schutz der Anlage und Erhalt der Leistung." },
+      { "name": "AE-DFC Rechteck-Flexverbinder", "image": "/images/products/ae-dfc.jpg", "description": "Flexible Rechteckverbindung für Schwingungsentkopplung, Schalldämmung und Dichtheit im Kanal." },
+      { "name": "AE-AF Dachadapter-Rahmen", "image": "/images/products/free.jpg", "description": "Hochfeste Aufständerung für sichere und dichte Montage auf dem Flachdach." },
+      { "name": "AE FRS Flachdach-Durchführung", "image": "/images/products/ae-frs.jpg", "description": "Hilfsmodule für gedämmte und stabile Dachmontage von Ventilen und Lufttechnik." },
+      { "name": "AE-CB Dach-Anschlusskasten", "image": "/images/products/free.jpg", "description": "Kästen zur sicheren Führung und Abstützung von Kanal-/Ventilatoranschlüssen über dem Dach." },
+      { "name": "AE-EH Kanal-Elektroheizer", "image": "/images/products/ae-eh-elektrikli-isitici.jpg", "description": "Kompakte Kanalregisterheizungen zur Frischluftbeheizung in Komfortlüftung." },
+      { "name": "Hauptschalter / Sicherheitsschalter", "image": "/images/products/emniyet-salteri.jpg", "description": "Sicherheitsschalter mit hohem Schutzgrad für sicheres Ein- und Ausschalten von Ventilatoren und elektrischem Zubehör." },
+      { "name": "Geschützter Sicherheitsschalter", "image": "/images/products/korumali-emniyet-salteri.jpg", "description": "Robuster Schalter zur sicheren Steuerung unter Umwelteinflüssen." },
+      { "name": "Einphasen-Drehzahlsteller", "image": "/images/products/monofaze-hiz-kontrol-cihazi.jpg", "description": "Stufenlose Spannungsregelung der Drehzahl einphasiger Asynchronmotoren am Ventilator." },
+      { "name": "Frequenzumrichter", "image": "/images/products/frekans-inventoru.jpg", "description": "Moderner Antrieb für höhere Energieeffizienz und optimale Drehzahlregelung in Lüfteranlagen." },
+      { "name": "Überdruck-Schaltschrank", "image": "/images/products/basinclandirma-kontrol-panosu.png", "description": "Überdruck-/Druckhaltungs-Steuerung mit Frequenzumrichter für automatisierten Ventilatorbetrieb." },
+      { "name": "Differenzdruck-Sensor", "image": "/images/products/diferansiyel-basinc-sensoru.jpg", "description": "Präzisionsmessung und -regelung von Luftdruckdifferenzen in Lüftung und Filteranlagen." },
+      { "name": "Differenzdruck-Sensor PI (0–10 V)", "image": "/images/products/diferansiyel-basinc-sensoru-pi10v.jpg", "description": "Sensor mit PI-Regler zur genauen Überwachung und automatischen Regelung von Druck oder Volumenstrom." },
+      { "name": "Kanal-Rauchmelder", "image": "/images/products/kanal-tipi-duman-sensoru.jpg", "description": "Hochempfindlicher Rauch-/Brandgaserkenner in der Kanalluft von Lüftungs- und KLTA-Systemen." },
+      { "name": "G4 Taschen-/Plattenfilter", "image": "/images/products/g4-panel-filtre.jpg", "description": "Grobfilter G4 zur Abscheidung grober Partikel und Staub in Zu-/Abluft." },
+      { "name": "G2–G3 Plattenfilter", "image": "/images/products/g2-g3-panel-filtre.jpg", "description": "Zuverlässige Vorstufe zur Erfassung mittlerer und grober Partikel." },
+      { "name": "G2 Metall-Fettfilter", "image": "/images/products/g2-metal-yag-tutucu-filtre.jpg", "description": "Metalldrahtfilter für Fettaustritt und grobe Partikel in Küchen- und Gastronomieabluft." },
+      { "name": "G2–G3 Metall-Fettfilter", "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.jpg", "description": "Robuster Metallfettfilter für gewerbliche Abluft." }
+    ],
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "otomasyonMalzemeleri": {
+    "title": "Automatisierung",
+    "titleFirst": "Auto",
+    "titleHighlight": "matisierung",
+    "products": [
+      { "name": "PANEL", "subModels": [] },
+      { "name": "PLC", "subModels": [] },
+      { "name": "SENSOR", "subModels": ["FCP-DSC", "FCP-DCS", "TECASE-ST110"] },
+      { "name": "CONTROL BOARDS - SWITCHES", "subModels": ["TP01-TSD", "TP01-CC"] }
+    ],
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Schwingungs- und Schallschutz", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "titresimVeSesIzolasyon": {
+    "title": "Schwingungs- und Schallschutz",
+    "titleFirst": "Schwingung & Schall",
+    "titleHighlight": "schutz",
+    "heroDesc": "Schalldämpfer, Gummiauflagen und Schwingungsisolatoren.",
+    "roo": {
+      "label": "Schalldämpfer, Gummipuffer, Schwingungsisolierung",
+      "desc": "verschiedene Modelle für schall- und vibrationsarme Aufstellung.",
+      "subModels": [
+        "ROO T1-ISO10N-NIP", "ROO T1-ISO15N-100kg-NIP",
+        "ROO T2-ISO20N-FIP", "ROO T2-ISO30N-150kg-FIP",
+        "ROO T3-ISO5Hz-200kg-OSI", "ROO T3-ISO10Hz-300kg-OSI",
+        "ROO T4-ISOComb-100kg-5Hz-HSI", "ROO T4-ISO100kg-10Hz-HSI", "ROO T4-ISO500kg-10Hz-HSI"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Lufttechnik", "slug": "hava-hareketi" },
+      { "label": "Klima/Lüftung", "slug": "iklimlendirme" },
+      { "label": "Kühlung & Heizung", "slug": "sogutma-ve-isitma" },
+      { "label": "Luftführung", "slug": "hava-yonetimi" },
+      { "label": "Luftverteilung", "slug": "hava-dagitimi" },
+      { "label": "Luftfiltration", "slug": "hava-filtrasyonu" },
+      { "label": "Zubehör", "slug": "aksesuarlar" },
+      { "label": "Automatisierung", "slug": "otomasyon-malzemeleri" }
+    ]
+  },
+  "banyoFanlari": {
+    "title": "SEAHORSE",
+    "subtitle": "Badlüfter",
+    "intro": "Badlüfter entfernen in Bädern, WC und Abstellräumen schnell Gerüche und Feuchte – ein wichtiger Beitrag zu Hygiene und Komfort.",
+    "models": [
+      { "name": "Seahorse AP", "type": "Axial-Badlüfter", "image": "/images/products/banyo-fan-1.jpg", "description": "AP: dekorativer Badlüfter mit harmonischem Design für moderne Architektur und zuverlässiger Leistung." },
+      { "name": "Seahorse RP V1", "type": "Decken-Badablüfter", "image": "/images/products/banyo-fan-2.jpg", "description": "RP V1: eleganter Deckenablüfter mit verstellbarem Einbau für zeitgemäße Wohnräume." },
+      { "name": "Seahorse RP V2", "type": "Decken-Badablüfter Modell-V2", "image": "/images/products/banyo-fan-3.jpg", "description": "RP V2: große Blendfront, moderner Auftritt und starke Luftleistung, wenn Design und Funktion gleichwertig gefordert sind." }
+    ]
+  },
+  "catiFanlari": {
+    "title": "HERON",
+    "subtitle": "Dachventilatoren",
+    "intro": "",
+    "models": [
+      { "name": "Heron RH", "type": "Radial-Dachventilator seitlicher Austritt", "image": "/images/products/heron-rh.jpg", "description": "Für horizontalen Abluftaustritt beim Dacheinbau ausgelegt." },
+      { "name": "Heron RHS", "type": "Radial-Dachventilator seitlich, Fremdmotor", "image": "/images/products/heron-rhs.jpg", "description": "Für heiße oder verschmutzte Luft mit Fremdmotorantrieb." },
+      { "name": "Heron RV", "type": "Radial-Dachventilator vertikaler Austritt", "image": "/images/products/heron-rv.jpg", "description": "Hohe Effizienz bei nach oben geführter Abluft." },
+      { "name": "Heron RVS", "type": "Radial-Dachventilator vertikal, Fremdmotor", "image": "/images/products/heron-rvs.jpg", "description": "Für hohe Temperaturen und starke Feuchte im Abluftstrom." },
+      { "name": "Heron AH", "type": "Axial-Dachventilator seitlicher Austritt", "image": "/images/products/heron-ah.jpg", "description": "Zuluft oder Abluft in großen Volumina." },
+      { "name": "Heron AVH", "type": "Axial-Dachventilator mit Haube", "image": "/images/products/free.jpg", "description": "Axialer Dachventilator mit Wetterschutzhaube." }
+    ]
+  },
+  "damperler": {
+    "title": "HOUND",
+    "subtitle": "Klappen",
+    "intro": "Die HOUND-Serie von Novves bietet maximale Steuerung und Sicherheit an kritischen Punkten von Lüftungs- und Brandschutzsystemen.",
+    "models": [
+      { "name": "Hound SD M24", "type": "Schacht-Rauchklappe mit 24-V-Servo", "image": "/images/products/hound-sd-m24.jpg", "description": "Für sichere Abluft in Brand- und Rauchabzugsanlagen; Leckageklasse EN 17051 Class C, servomotortauglich." },
+      { "name": "Hound AL", "type": "Wetterschutz-Lamelle", "image": "/images/products/hound-al.png", "description": "Optisch abgestimmte Lamellen für Zuluft-/Abluftöffnungen mit Wetterschutz." },
+      { "name": "Hound CRD", "type": "Überdruck-Entlastungsklappe", "image": "/images/products/hound-crd.jpg", "description": "Druckentlastung bei Überdruck zum Schutz der Anlagenbauteile." }
+    ]
+  },
+  "dumanIsiTahliyeFanlari": {
+    "title": "DRAGONFLY",
+    "subtitle": "Rauch- und Wärmeabzugsventilatoren",
+    "intro": "Rauch- und Wärmeabzugsventilatoren der Klasse F300 – 2 Stunden Betrieb bei 300 °C.",
+    "models": [
+      { "name": "Dragonfly T", "type": "Gehäuster Axial-Rauchabzugsventilator", "image": "/images/products/dragonfly-t.jpg", "description": "Hitzebeständiger Axialventilator im Gehäuse für effektiven Rauch- und Heißluftabzug bei Brand. EN 12101-3." },
+      { "name": "Dragonfly R", "type": "Axialer Dach-Rauchabzugsventilator", "image": "/images/products/dragonfly-r.jpg", "description": "Dachlösung für schnellen, sicheren Rauch- und Wärmeabzug. EN 12101-3." },
+      { "name": "Dragonfly C", "type": "Axialer Kammer-Rauchabzugsventilator", "image": "/images/products/dragonfly-c.png", "description": "Kompaktes, leises Gehäuse für Rauch- und Heißluftabfuhr. EN 12101-3." },
+      { "name": "Dragonfly JAU", "type": "Einstrahlig axialer Strahllüfter", "image": "/images/products/dragonfly-jau.jpg", "description": "Für Rauchabzug und Luftführung in Tiefgaragen, Tunneln und geschlossenen Bereichen. EN 12101-3." },
+      { "name": "Dragonfly JAR", "type": "Zweirichtungs-Axial-Strahllüfter", "image": "/images/products/dragonfly-jar.jpg", "description": "Für Rauchabzug, Lüftung und Umluft in Tiefgaragen und großen Hallen; geringe Geräuschentwicklung, hohe Leistung." },
+      { "name": "Dragonfly JR", "type": "Radialer Strahllüfter", "image": "/images/products/dragonfly-jr.jpg", "description": "Für anspruchsvolle Volumina: Tiefgaragen, Tunnel, Brandzonen – Notlüftung und Rauchabzug. EN 12101-3." }
+    ]
+  },
+  "duvarTipiFanlar": {
+    "title": "OWL",
+    "subtitle": "Wandventilatoren",
+    "intro": "",
+    "models": [
+      { "name": "Owl RER", "type": "Axialwandventilator rechteckig", "image": "/images/products/owl-rer.jpg", "description": "Metall-Schaufelwandventilator für Wandmontage, robust und drehzahlregelbar." },
+      { "name": "Owl CER", "type": "Axialwandventilator rund", "image": "/images/products/owl-cer.jpg", "description": "Kompakter Hochleistungs-Axialventilator für runde Wanddurchführung." },
+      { "name": "Owl RWA", "type": "Profilschaufel-Wand axial rechteckig", "image": "/images/products/owl-rwa.jpg", "description": "Tragflügel-Schaufeln für rechteckige Wandinstallation." },
+      { "name": "Owl CWA", "type": "Profilschaufel-Wand axial rund", "image": "/images/products/owl-cwa.jpg", "description": "Leichtbau-Schaufeln für die runde Wandmontage." }
+    ]
+  },
+  "ecFanlar": {
+    "title": "HUMMINGBIRD",
+    "subtitle": "EC-Ventilatoren",
+    "intro": "Hummingbird: Dach- und Kanaltypen mit EC-Technik – hohe Luftleistung bei geringem Strombedarf.",
+    "models": [
+      { "name": "Hummingbird RRV", "type": "EC-Dachventilator mit vertikalem Austritt", "image": "/images/products/hummingbird-rh.jpg", "description": "Vertikaler Dachventilator für moderne Gebäude; EC-Motor, leise und regelbar – für Komfort- und Industrielüftung." },
+      { "name": "Hummingbird DRB", "type": "EC-Kanalventilator rechteckig", "image": "/images/products/hummingbird-drb-ec.jpg", "description": "Rechteckiger Kanaltyp mit EC-Motor – kompakt, leise, automatisierungstauglich." }
+    ]
+  },
+  "endustriyelFanlar": {
+    "title": "NAUTILUS",
+    "subtitle": "Industrie-Radialventilatoren",
+    "intro": "Hochleistung mit rückwärtsgekrümmten Schaufeln und Direktantrieb für effektive Großraumlüftung.",
+    "models": [
+      { "name": "Nautilus LPF", "type": "Industrie-Radialventilator", "image": "/images/products/nautilus-lfp.jpg", "description": "Leistungsstarker Radialventilator mit Effizienzfokus." },
+      { "name": "Nautilus Silence", "type": "Doppelwand-Radialventilator", "image": "/images/products/nautilus-cif-cidarli.jpg", "description": "NAUTILUS Silence: gedämmtes Gehäuse, Direktantrieb und hohe Wirksamkeit bei niedrigem Druckbedarf." }
+    ]
+  },
+  "exproofFanlar": {
+    "title": "BEAR",
+    "subtitle": "Ex-geschützte Ventilatoren",
+    "intro": "BEAR-Reihe: explosionsgeschützte Lösungen für entzündliche Gase und Staubzonen nach ATEX.",
+    "models": [
+      { "name": "Bear EX-REB", "type": "Rechteckiger Kanalex-ventilator", "image": "/images/products/bear-reb.jpg", "description": "Ex-Schutz für explosiongefährdete Bereiche; frequenzgesteuert, ATEX-taugliche Zonen." },
+      { "name": "Bear EX-T", "type": "Gehäuster Axialex-Ventilator", "image": "/images/products/bear-t.jpg", "description": "Sicheres Fördern in Zone mit Funkenrisiko." },
+      { "name": "Bear EX-RRH", "type": "Ex-Dachventilator seitlicher Austritt", "image": "/images/products/bear-rrh.jpg", "description": "Horizontal über das Dach; ATEX Zone 1 und 2." },
+      { "name": "Bear EX-RRV", "type": "Ex-Dachvertikalventilator", "image": "/images/products/bear-rrv.jpg", "description": "Hoher Pressungsaufbau für Außenaufbauten." },
+      { "name": "Bear EX-BP", "type": "Ex-Kammer-Radialventilator", "image": "/images/products/bear-bp.jpg", "description": "Modularer Aufbau, stark und relativ leise." },
+      { "name": "Bear EX-C", "type": "Ex-Kammer-Axialventilator", "image": "/images/products/bear-c.jpg", "description": "Leiser Lauf und einfache Wartung, ATEX-konform." },
+      { "name": "Bear LPF", "type": "Ex-Radialventilator", "image": "/images/products/bear-lpf.jpg", "description": "Abluft in Umgebungen mit explosionsfähigen Gasen oder Dämpfen." },
+      { "name": "Bear R", "type": "Axialer Dachtyp", "image": "/images/products/bear-r.jpg", "description": "Für Großraum-Schacht- oder Dachaustritt ohne Ex-Anforderung in dieser Bauform." },
+      { "name": "Bear W", "type": "Ex-Axial-Wandtyp", "image": "/images/products/bear-w.jpg", "description": "Flammensicher gekapselt nach ATEX, hohe Leistung." }
+    ]
+  },
+  "havuzNemAlmaSantrali": {
+    "title": "DOLPHIN",
+    "subtitle": "Hallenschwimmbad-Entfeuchtungsgerät",
+    "intro": "NOVVES DOLPHIN: schützt Hülle und Bauteile in Hallenbädern, steigert Behaglichkeit durch Entfeuchtung – energieeffizient und leise.",
+    "tableHeaders": {
+      "model": "Typ",
+      "airFlow": "Luftvolumen (m³/h)",
+      "poolArea": "Poolfläche (m²)",
+      "cooling": "Kälteleistung (kW)",
+      "condenser": "Kondensator (kW)",
+      "waterHeater": "Wassererwärmung (kW)"
+    },
+    "models": [
+      { "model": "DOLPHIN 300", "airFlow": "3,000", "area": "50", "cooling": "21.1", "condenser": "26.4", "water": "26.15" },
+      { "model": "DOLPHIN 400", "airFlow": "4,000", "area": "75", "cooling": "28.7", "condenser": "35.67", "water": "34.12" },
+      { "model": "DOLPHIN 450", "airFlow": "4,500", "area": "100", "cooling": "33.3", "condenser": "40.96", "water": "36.24" },
+      { "model": "DOLPHIN 600", "airFlow": "6,000", "area": "150", "cooling": "42.2", "condenser": "52.88", "water": "50.58" },
+      { "model": "DOLPHIN 750", "airFlow": "7,500", "area": "200", "cooling": "52.6", "condenser": "65.9", "water": "62.97" },
+      { "model": "DOLPHIN 900", "airFlow": "9,000", "area": "250", "cooling": "36.8", "condenser": "80.68", "water": "77.1" }
+    ]
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Kammer-/Plenum-Ventilatoren",
+    "intro": "Turtle: Zuluft und Abluft aus einem Gerät – kompakte Aufstellung, Zwischenwand mit Mineralwolle für wirksamen Schallschutz.",
+    "models": [
+      { "name": "Turtle B", "type": "Riemen-Kammerventilator", "image": "/images/products/turtle-b.jpg", "description": "Riemengetrieben für hohe Luftmengen mit ruhigem Lauf." },
+      { "name": "Turtle BP", "type": "Radial-Plug-Fan Kammerbau", "image": "/images/products/turtle-bp.jpg", "description": "Rückwärtskrümmend, effizient und platzsparend." },
+      { "name": "Turtle BPA", "type": "Kammerbau mit Radialscheibe", "image": "/images/products/turtle-a.jpg", "description": "Industrienorm mit Kammergehäuse und rückwärtsgekrümmtem Laufrad." },
+      { "name": "Turtle F", "type": "Radial vorwärtskrümmend", "image": "/images/products/turtle-f.jpg", "description": "Doppelseitige Ansaugung, leise bei niederem Druck." },
+      { "name": "Turtle A", "type": "Axial-Kammerventilator", "image": "/images/products/turtle-a.jpg", "description": "Kompakter Axialeinsatz bei großen Luftmengen." }
+    ]
+  },
+  "isiGeriKazanimCihazlari": {
+    "title": "CARACAL",
+    "subtitle": "Wärmerückgewinnung",
+    "intro": "Caracal gebündelt in Büros, Schulen, Hotels, Kliniken, Einkaufswelten und Gastronomie – Frischluft mit kontrolliertem Luftaustausch und Energieauskopplung.",
+    "caracalD": {
+      "title": "Caracal D",
+      "type": "WRG-Gerät",
+      "description": "Caracal D WRG kompakt, leistungsfähig, mit robuster Bauweise und klar bedienbarem Paneel für nachhaltige Raumlüftung."
+    }
+  },
+  "kanalFanlari": {
+    "title": "KOI",
+    "subtitle": "Kanalventilatoren",
+    "intro": "",
+    "models": [
+      { "name": "Koi CB", "type": "Runder Kanalventilator", "image": "/images/products/koi-cb.jpg", "description": "KOI-CB: kompakte Rundkanallösung für hohe Luftleistung." },
+      { "name": "Koi RB", "type": "Rechteckiger Kanalventilator", "image": "/images/products/koi-rb.jpg", "description": "KOI-RB: für höhere Volumina in Gewerbe und Industrie." },
+      { "name": "Koi REB", "type": "Rechteckiger Kanal Fremdmotor", "image": "/images/products/koi-reb.jpg", "description": "KOI-REB: Motor außerhalb des Luftstroms bei hoher Temperatur." },
+      { "name": "Koi X", "type": "Diagonalläufer Kanaltyp", "image": "/images/products/koi-x.jpg", "description": "KOI-X: Diagonalrad für Komfortbereiche mit Zwei-Stufen-Motor möglich." }
+    ]
+  },
+  "klimaSantralleri": {
+    "title": "TIGER",
+    "subtitle": "Klima-/Lüftungszentralen (RLT)",
+    "intro": "Modulares RLT-Programm für hohe Luftmengen, effiziente Bauteile und leisen Betrieb.",
+    "specs": [
+      { "label": "Luftvolumen", "value": "500 - 125,000 m³/h" },
+      { "label": "Druck", "value": "10 - 3,000 Pa" },
+      { "label": "Tragwerk", "value": "Anodisiertes Aluminium" },
+      { "label": "Paneele", "value": "Doppelwand-Sandwichpaneel" },
+      { "label": "Ventilatortechnik", "value": "Radial / EC Plug fan" },
+      { "label": "Wärmerückgewinnung", "value": "Platte, Dreh, Glykol-Wasser" }
+    ]
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Gehäusterte Axialventilatoren",
+    "intro": "MARLIN-Zuluft-, Abluft-, Kanal- und Schachtüberdrücker – hält bei Brand Treppenhäuser und Aufzugschächte ohne Rauch frei.",
+    "models": [
+      { "name": "Marlin", "type": "Gehäuster Axialventilator", "image": "/images/products/marlin.png", "description": "Leistungsstark und flexibel montierbar für hohe Luftmengen." },
+      { "name": "Marlin B", "type": "Gestückelte Welle axial", "image": "/images/products/marlin-b.jpg", "description": "Bifurkations-Axo mit geteiltem Gehäuse." }
+    ]
+  },
+  "mutfakFanlari": {
+    "title": "BUTTERFLY",
+    "subtitle": "Küchenablüfter",
+    "intro": "",
+    "models": [
+      { "name": "Butterfly B", "type": "Küchenablüfter mit Metallfiltersystem", "image": "/images/products/butterfly-b.jpg", "description": "Butterfly B für Dampf, Fett und Geruch in Großküchen; starke Metallfilterung, laufruhig." }
+    ]
+  },
+  "siginakFanlari": {
+    "title": "FOX",
+    "subtitle": "Schutzraum-Ventilation",
+    "intro": "FOX-Anlagen für Bunker gegen CBRN und Naturkatastrophen.",
+    "models": [
+      { "name": "Fox D", "type": "Kanalbau Schutzraum", "image": "/images/products/fox-d.jpg", "description": "Fox D Kanalserie mit hohem Filterpotential für kritische Luftversorgung." },
+      { "name": "Fox C", "type": "Kammerbau Schutzraum", "image": "/images/products/fox-c.jpg", "description": "Fox C gehäusetyp mit leisen und filtreintensivem Betrieb bei hohem Sicherheitsniveau." }
+    ]
+  }
+}

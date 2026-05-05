@@ -2,27 +2,21 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SolutionsCarousel } from "@/components/solutions-carousel";
+import { HubTreePanel } from "@/components/hub-tree-panel";
+import { buildProductHubRows } from "@/lib/hub-tree-rows";
+import { navbarHubMetadata } from "@/lib/i18n-metadata";
+import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
 import { getDictionary, hasLocale } from "../dictionaries";
 import heroFactoryImage from "../../../../IMG-20240401-WA0008.jpg";
 
-export const metadata: Metadata = {
-  title: "Ürünler | Novves",
-  description:
-    "NOVVES ürün kategorileri — hava hareketi, iklimlendirme, soğutma, hava yönetimi ve daha fazlası.",
-};
-
-const categories: { key: string; slug: string }[] = [
-  { key: "havaHareketi", slug: "hava-hareketi" },
-  { key: "iklimlendirme", slug: "iklimlendirme" },
-  { key: "sogutmaVeIsitma", slug: "sogutma-ve-isitma" },
-  { key: "havaYonetimi", slug: "hava-yonetimi" },
-  { key: "havaDagitimi", slug: "hava-dagitimi" },
-  { key: "havaFiltrasyonu", slug: "hava-filtrasyonu" },
-  { key: "aksesuarlar", slug: "aksesuarlar" },
-  { key: "otomasyonMalzemeleri", slug: "otomasyon-malzemeleri" },
-  { key: "titresimVeSesIzolasyon", slug: "titresim-ve-ses-izolasyon" },
-];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return navbarHubMetadata(locale, "products");
+}
 
 export default async function UrunlerPage({
   params,
@@ -34,6 +28,11 @@ export default async function UrunlerPage({
   const dict = await getDictionary(locale);
   const s = dict.products.shared;
   const nav = dict.common.navbar;
+  const hubRows = buildProductHubRows(
+    dict.products as unknown as Record<string, unknown>,
+    PRODUCT_CATEGORY_NAV,
+    s.categories as unknown as Record<string, string>,
+  );
 
   return (
     <main>
@@ -100,14 +99,12 @@ export default async function UrunlerPage({
             <div className="hidden h-px flex-1 bg-gray-200 sm:block" />
           </div>
 
-          <SolutionsCarousel
+          <HubTreePanel
             locale={locale}
             basePath="urunler"
-            items={categories.map((cat) => ({
-              key: cat.key,
-              slug: cat.slug,
-              name: s.categories[cat.key as keyof typeof s.categories],
-            }))}
+            items={hubRows}
+            treeTitle={s.productCatalog}
+            openLabel={s.detailedView}
           />
         </div>
       </section>

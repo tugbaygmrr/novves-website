@@ -3,11 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productCategoryMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "Titreşim ve Ses İzolasyon | Novves",
-  description: "NOVVES titreşim ve ses izolasyon ürünleri — ROO serisi susturucu, lastik takoz ve titreşim izolatörleri.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productCategoryMetadata(locale, "titresimVeSesIzolasyon");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -15,6 +20,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const dict = await getDictionary(locale);
   const t = dict.products.titresimVeSesIzolasyon;
   const s = dict.products.shared;
+  if (!t || !s) notFound();
 
   return (
     <main>

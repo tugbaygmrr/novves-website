@@ -1,0 +1,2722 @@
+{
+  "dumanIsiTahliye": {
+    "breadcrumbCurrent": "Dūmų ir šilumos šalinimas",
+    "badge": "Sprendimai",
+    "titleLine1": "Dūmų ir šilumos šalinimas",
+    "titleHighlight": "Sistemos",
+    "subtitle": "Kontroliuojamas dūmų ir karščio pašalinimas gaisro metu; reglamentus atitinkantys, inžinerijos palaikomi, visapusiški sprendimai.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "CFD analizė",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      {
+        "value": "EN 12101-3",
+        "label": "Standarto atitiktis"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Atsparumas ugniai"
+      },
+      {
+        "value": "CFD",
+        "label": "Palaikomas modeliavimas"
+      },
+      {
+        "value": "113+",
+        "label": "Užbaigti projektai"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Pirmoji gaisro grėsmė yra dūmai",
+    "whyImportantP1": "Gaisrų statistika rodo, kad daugiausiai aukų žūsta ne liepsnos, o tankūs dūmai ir nuodingos dujos. Veiksminga dūmų ištraukimo sistema užtikrina, kad evakuacijos keliai būtų matomi ir pralaidūs orui; palengvina ugniagesių įsikišimą; sumažina konstrukcinius pažeidimus.",
+    "whyImportantP2": "NOVVES valdo visą procesą nuo projektavimo iki paleidimo su savo inžinierių komanda. Kiekvienam projektui atliekama CFD analizė, siekiant imituoti ventiliatorių išdėstymą, dūmų plitimo scenarijus ir evakuacijos laiką.",
+    "steps": [
+      {
+        "label": "Apklausa ir analizė",
+        "desc": "Vietos apžiūra, CFD modeliavimas, taisyklių atitikties patikra"
+      },
+      {
+        "label": "Inžinerija",
+        "desc": "Ventiliatorių pasirinkimas, ortakių dizainas, sklendės išdėstymas, automatizavimo scenarijus"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "Vidaus gamyba, profesionalus montavimas vietoje"
+      },
+      {
+        "label": "Paleidimas ir priežiūra",
+        "desc": "Testavimas, ataskaitų teikimas, periodinė patikra ir 24 valandas per parą, 7 dienas per savaitę, 7 dienas per savaitę"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Reaktyvinių ventiliatorių sistemos",
+        "desc": "Aukštai temperatūrai atsparūs ašiniai ir radialiniai reaktyviniai ventiliatoriai, skirti oro nukreipimui ir dūmų šalinimui uždarose patalpose."
+      },
+      {
+        "title": "Dūmų ištraukimo ventiliatoriai",
+        "desc": "EN 12101-3 sertifikuotas, F300/2H klasės atsparumas ugniai, 2 valandos nepertraukiamo veikimo 300°C temperatūroje."
+      },
+      {
+        "title": "Amortizatorių sistemos",
+        "desc": "Servo varikliu varomo veleno dūmų sklendės ir slėgio mažinimo sklendės, skirtos gaisro ir dūmų zonavimui."
+      },
+      {
+        "title": "Jutikliai ir aptikimas",
+        "desc": "CO, dūmų ir šilumos jutikliai su zonos duomenų rinkimu ir ribinių verčių stebėjimu."
+      },
+      {
+        "title": "Automatikos skydai",
+        "desc": "PLC valdomos MCC plokštės, BMS integracija, scenarijus pagrįstas automatinis ventiliatorių valdymas."
+      },
+      {
+        "title": "CFD inžinerija",
+        "desc": "Konkrečiam projektui skirta skaičiavimo skysčių dinamikos analizė, gaisro scenarijų modeliavimas ir ataskaitų teikimas."
+      }
+    ],
+    "midCtaTitle": "Paprašykite apklausos ir pasiūlymo savo projektui",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "EN 12101-3 atitiktis",
+        "desc": "Visos sistemos suprojektuotos ir sertifikuotos pagal Europos priešgaisrinės saugos standartus."
+      },
+      {
+        "title": "F300/2H Atsparumas ugniai",
+        "desc": "2 valandos nepertraukiamo veikimo 300°C temperatūroje, užtikrinant kritinį evakuacijos laiką."
+      },
+      {
+        "title": "CFD palaikomas dizainas",
+        "desc": "3D modeliavimas kiekvienam projektui, siekiant patikrinti dūmų plitimą, temperatūrą ir matomumo atstumą."
+      },
+      {
+        "title": "Visapusiška paslauga",
+        "desc": "Apžiūra, projektavimas, gamyba, montavimas, paleidimas ir periodinė priežiūra iš vieno šaltinio."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "Kiekvienam projektui nustatomas tinkamiausias produktų derinys.",
+    "areas": [
+      {
+        "title": "Uždaros automobilių stovėjimo aikštelės",
+        "description": "CO ištraukimas + dūmų pašalinimas gaisrų metu",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Greitkelių ir geležinkelių tuneliai",
+        "description": "Gaisro zonavimas ir oro nukreipimas",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai su gaubtais",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Prekybos centrai",
+        "description": "Dūmų kontrolė ir šalinimas",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai su gaubtais",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Stadionai ir konferencijų salės",
+        "description": "Avarinis dūmų evakavimas",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai su gaubtais",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Pramoninės gamybos įrenginiai",
+        "description": "Su procesu susijęs karštų dujų išgavimas",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Ligoninės ir sveikatos priežiūros įstaigos",
+        "description": "Dūmų zonų suskirstymas pacientų zonose",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Oro uostai ir metro stotys",
+        "description": "Apatinis dūmų ištraukimas",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai su gaubtais",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Sandėliai ir logistikos centrai",
+        "description": "Dūmų kontrolė dideliais kiekiais",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Elektrinės ir generatorių patalpos",
+        "description": "Išmetimas nuo elektros gaisrų",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Exproof gerbėjai",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Viešbučiai ir rezidencijos (aukštybiniai)",
+        "description": "Laiptinės slėgis, dūmų šalinimas",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kuriuose pastatuose dūmų šalinimo sistema privaloma?",
+        "a": "Dūmų ištraukimo sistemos yra privalomos uždarose automobilių stovėjimo aikštelėse, prekybos centruose, daugiaaukščiuose pastatuose, tuneliuose ir pramonės objektuose pagal priešgaisrinius reikalavimus. Susisiekite su mumis dėl konkretaus projekto poreikių analizės."
+      },
+      {
+        "q": "Ką reiškia EN 12101-3 sertifikatas?",
+        "a": "EN 12101-3 yra Europos standartas, patvirtinantis dūmų ir šilumos šalinimo ventiliatorių galią veikti tam tikrą laiką gaisro sąlygomis (aukšta temperatūra). NOVVES gaminiai gaminami pagal šį standartą."
+      },
+      {
+        "q": "Kodėl reikalinga CFD analizė?",
+        "a": "CFD analizė leidžia modeliuoti reaktyvinių ventiliatorių išdėstymą, dūmų plitimo scenarijus ir evakuacijos laiką kompiuterinėje aplinkoje. Tai patikrina sistemos veikimą prieš įdiegiant ir dokumentuoja atitiktį reglamentams."
+      },
+      {
+        "q": "Ar galima integruoti su esamomis sistemomis?",
+        "a": "Taip, NOVVES dūmų šalinimo sistemas galima integruoti su esama BMS infrastruktūra, gaisro aptikimo skydais ir automatikos sistemomis."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ar jums reikia dūmų ištraukimo sistemos?",
+    "finalCtaDesc": "Susisiekite su mūsų ekspertų inžinierių komanda dėl apklausos, CFD analizės, inžinerijos ir kainų siūlymo procesų.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "konforIklimlendirme": {
+    "breadcrumbCurrent": "Komfortiška ŠVOK",
+    "badge": "Sprendimai",
+    "titleLine1": "Komfortiška ŠVOK",
+    "titleHighlight": "Sistemos",
+    "subtitle": "Ideali temperatūra, drėgmė ir oro kokybė biuruose, prekybos centruose, viešbučiuose ir komerciniuose pastatuose; energiją taupantys, tylūs ir patogūs klimato kontrolės sprendimai.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/iklimlendirme",
+    "trustStrip": [
+      {
+        "value": "EC variklis",
+        "label": "Energijos efektyvumas"
+      },
+      {
+        "value": "Euroventas",
+        "label": "Sertifikuota"
+      },
+      {
+        "value": "BMS",
+        "label": "Integracija"
+      },
+      {
+        "value": "200+",
+        "label": "Užbaigti projektai"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Veiksminga ŠVOK reiškia komfortą ir taupymą",
+    "whyImportantP1": "Komerciniuose ir instituciniuose pastatuose ŠVOK yra didžiausia energijos suvartojimo kategorija. Tinkamai suprojektuota sistema žymiai sumažina eksploatavimo išlaidas ir pagerina keleivių komfortą.",
+    "whyImportantP2": "NOVVES siūlo konkrečiam projektui pritaikytus sprendimus su moduliniais vėdinimo įrenginiais ir šilumos atgavimo sistemomis. EC variklių ventiliatoriai, didelio efektyvumo šilumokaičiai ir išmaniosios valdymo sistemos sumažina energijos sąnaudas.",
+    "steps": [
+      {
+        "label": "Reikia analizės",
+        "desc": "Pastato tipo, naudojimo ploto, klimato sąlygų ir komforto reikalavimų įvertinimas"
+      },
+      {
+        "label": "Sistemos projektavimas",
+        "desc": "AHU parinkimas, ortakių projektavimas, difuzoriaus išdėstymas, automatizavimo scenarijus"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "Modulinė AHU gamyba, profesionalus montavimas vietoje"
+      },
+      {
+        "label": "Paleidimas ir priežiūra",
+        "desc": "Veikimo testavimas, balansavimas, periodinis filtrų ir priežiūros aptarnavimas"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Vėdinimo įrenginiai (TIGER)",
+        "desc": "500 - 125 000 m3/h našumas, modulinė konstrukcija, didelio efektyvumo šilumokaičiai ir EC ventiliatorių galimybės."
+      },
+      {
+        "title": "Šilumos atgavimo įrenginiai",
+        "desc": "Atgauna energiją iš išmetamo oro, todėl šildymo/vėsinimo sąnaudos sumažėja iki 70%."
+      },
+      {
+        "title": "Drėgmės šalinimo įrenginiai (DOLPHIN)",
+        "desc": "Specializuoti drėgmės reguliavimo sprendimai vidaus baseinams, SPA ir didelės drėgmės patalpoms."
+      },
+      {
+        "title": "Ortakių ventiliatoriai (KOI)",
+        "desc": "Kompaktiški, mažai triukšmingi ortakiniai ventiliatoriai, skirti slėgiui ortakyje padidinti ir oro paskirstymui."
+      },
+      {
+        "title": "Difuzoriaus ir grotelių sistemos",
+        "desc": "Lubiniai, sieniniai ir grindų difuzoriai su oro tūrio sklendėmis vienodam oro paskirstymui."
+      },
+      {
+        "title": "Automatika ir valdymas",
+        "desc": "Temperatūros, drėgmės ir CO2 jutikliai su BMS integruotais išmaniaisiais valdymo pultais."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą dėl savo komforto ŠVOK projekto",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Energijos efektyvumas",
+        "desc": "Su EC varikliais ir šilumos atgavimu sutaupysite iki 40 % eksploatacinių išlaidų."
+      },
+      {
+        "title": "Modulinis dizainas",
+        "desc": "Individualiai sukonfigūruota AHU gamyba norimu pajėgumu kiekvienam projektui."
+      },
+      {
+        "title": "Tylus veikimas",
+        "desc": "Žemas triukšmo lygis komforto zonose su akustiškai izoliuotu korpusu ir vibracijos izoliatoriais."
+      },
+      {
+        "title": "Vieno šaltinio sprendimas",
+        "desc": "Inžinerija, gamyba, montavimas ir paleidimas su NOVVES garantija."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "ŠVOK sprendimai pritaikyti kiekvienam pastato tipui.",
+    "areas": [
+      {
+        "title": "Biurai ir verslo centrai",
+        "description": "Patogus vėdinimas atviruose biuruose ir posėdžių salėse",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Viešbučiai ir rezidencijos",
+        "description": "Kambario lygio temperatūros reguliavimas ir gryno oro tiekimas",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC fanai",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Prekybos centrai",
+        "description": "Homogeniška klimato kontrolė didelio tankio zonose",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Ligoninės ir sveikatos priežiūros įstaigos",
+        "description": "Tiksli temperatūros kontrolė higieniškomis oro sąlygomis",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Baseino ir SPA zonos",
+        "description": "Aukšta drėgmės kontrolė ir komfortas",
+        "products": [
+          {
+            "name": "DOLPHIN",
+            "type": "Drėgmės šalinimo įrenginiai",
+            "image": "/images/products/dolphin-main.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kuo skiriasi oro kondicionavimo įrenginys ir padalintas oro kondicionierius?",
+        "a": "AHU yra centrinė sistema, užtikrinanti vienodą temperatūrą, drėgmės kontrolę ir filtravimą dideliuose plotuose. Padalinti įrenginiai veikia atskirame kambaryje. Komerciniuose pastatuose centrinės oro apdorojimo sistemos yra daug efektyvesnės."
+      },
+      {
+        "q": "Kiek energijos sutaupo šilumos atgavimas?",
+        "a": "Priklausomai nuo eksploatavimo sąlygų, galima sutaupyti 50-70 % energijos. Šilumos energija iš išmetamo oro perduodama grynam orui, ženkliai sumažinant šildymo/vėsinimo apkrovas."
+      },
+      {
+        "q": "Ar galima įrengti ŠVOK sistemą esamuose pastatuose?",
+        "a": "Taip, NOVVES moduliniai oro kondicionavimo įrenginiai gali būti pritaikyti esamiems pastatams dėl kompaktiškų matmenų. Tinkamiausias sprendimas siūlomas atlikus objekto apžiūrą."
+      },
+      {
+        "q": "Kokie yra priežiūros intervalai?",
+        "a": "Filtras paprastai keičiamas kas 3–6 mėnesius. Bendra sistemos priežiūra rekomenduojama bent du kartus per metus. NOVVES periodinės priežiūros sutartys užtikrina, kad jūsų sistemos visada veiktų efektyviai."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote komfortiškos ŠVOK sistemos?",
+    "finalCtaDesc": "Susisiekite su mūsų inžinierių komanda dėl projekto projektavimo, AHU parinkimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "hijyenikFiltrasyon": {
+    "breadcrumbCurrent": "Higieninis filtravimo vėdinimas",
+    "badge": "Sprendimai",
+    "titleLine1": "Higieninis filtravimas",
+    "titleHighlight": "Vėdinimas",
+    "subtitle": "HEPA filtravimo vėdinimo sprendimai, atitinkantys švarių patalpų standartus ligoninėms, laboratorijoms, farmacijos ir maisto perdirbimo įstaigoms.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-filtrasyonu",
+    "trustStrip": [
+      {
+        "value": "HEPA H14",
+        "label": "Filtravimo klasė"
+      },
+      {
+        "value": "ISO 14644",
+        "label": "Standartinis švarus kambarys"
+      },
+      {
+        "value": "GMP",
+        "label": "Atitinkamas dizainas"
+      },
+      {
+        "value": "99.995%",
+        "label": "Dalelių sulaikymas"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Švarus oras, saugi aplinka",
+    "whyImportantP1": "Ligoninių operacinėse, vaistų gamybos patalpose, maisto perdirbimo patalpose ir laboratorijose ore sklindanti kietųjų dalelių ir mikrobiologinė tarša tiesiogiai veikia žmonių sveikatą ir produktų kokybę.",
+    "whyImportantP2": "NOVVES higieninės vėdinimo sistemos sukuria aplinką, atitinkančią švarių patalpų klasifikaciją, naudojant daugiapakopį filtravimą (G4 pirminis filtras + F7/F9 maišinis filtras + HEPA H13/H14), teigiamo / neigiamo slėgio kontrolę ir laminarinio srauto technologiją.",
+    "steps": [
+      {
+        "label": "Švarios patalpos klasifikacija",
+        "desc": "ISO 14644 / GMP klasės nustatymas, dalelių ir slėgio reikalavimai"
+      },
+      {
+        "label": "Sistemos projektavimas",
+        "desc": "Filtravimo etapai, oro kaitos greitis, slėgio kaskados projektavimas"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "Nerūdijančio plieno korpuso gamyba, HEPA filtrų integravimas, montavimas vietoje"
+      },
+      {
+        "label": "Patvirtinimas ir priežiūra",
+        "desc": "Dalelių skaičiaus testas, DOP/PAO filtro vientisumo testas, periodinė priežiūra"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Higieniniai vėdinimo įrenginiai",
+        "desc": "Nerūdijančio plieno korpusas, vidinio paviršiaus dangos, higieniškos plokštės ir modulinė konstrukcija atitinka švarių patalpų standartus."
+      },
+      {
+        "title": "HEPA filtravimo blokas",
+        "desc": "H13/H14 klasės HEPA filtrai su 99,995% dalelių sulaikymo koeficientu."
+      },
+      {
+        "title": "Laminarinis srauto įrenginys (LAF)",
+        "desc": "Vienakryptis oro srautas operacinėse ir švariose patalpose aplinkai be dalelių."
+      },
+      {
+        "title": "Slėgio valdymo sistemos",
+        "desc": "Slėgio skirtumo stebėjimas tarp kambarių ir automatinis sklendės valdymas."
+      },
+      {
+        "title": "Pirminis filtras ir maišinis filtras",
+        "desc": "G4 pirminiai filtrai ir F7/F9 maišeliniai filtrai prailgina HEPA tarnavimo laiką dėl kelių pakopų filtravimo."
+      },
+      {
+        "title": "Stebėjimas ir automatizavimas",
+        "desc": "Dalelių skaitiklis, slėgio jutiklis ir BMS integracija, skirta stebėti visą parą."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą dėl savo higieninio vėdinimo projekto",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "ISO 14644 atitiktis",
+        "desc": "Projektavimo ir patvirtinimo paslaugos, atitinkančios švarių patalpų klasifikaciją."
+      },
+      {
+        "title": "GMP atitinkanti gamyba",
+        "desc": "Sistemos projektavimas atitinkantis farmacijos ir maisto pramonės GMP reikalavimus."
+      },
+      {
+        "title": "Daugiapakopis filtravimas",
+        "desc": "G4 + F7/F9 + HEPA H14 užtikrina aukščiausią oro švarą."
+      },
+      {
+        "title": "Visapusiška paslauga",
+        "desc": "Projektavimas, gamyba, montavimas, patvirtinimas ir periodinė priežiūra iš vieno šaltinio."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "Sprendimai visoms kritinėms sritims, kurioms reikalinga higieniška ventiliacija.",
+    "areas": [
+      {
+        "title": "Ligoninės operacinės",
+        "description": "Laminarinis srautas, HEPA filtruota sterili aplinka",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Farmacijos gamybos įrenginiai",
+        "description": "GMP klasės švarių patalpų vėdinimas",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Maisto perdirbimo įrenginiai",
+        "description": "Gamybos aplinka be užteršimo",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC fanai",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Laboratorijos",
+        "description": "Neigiamo / teigiamo slėgio izoliuota aplinka",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Elektronikos ir puslaidininkių gamyba",
+        "description": "Itin švarios klasės dalelių kontrolė",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kaip dažnai reikia keisti HEPA filtrus?",
+        "a": "HEPA filtro tarnavimo laikas svyruoja nuo 2 iki 5 metų, priklausomai nuo eksploatavimo sąlygų. Reguliarus pirminių ir maišinių filtrų keitimas žymiai pailgina HEPA tarnavimo laiką. Slėgio skirtumo stebėjimas tiksliai nustato pakeitimo laiką."
+      },
+      {
+        "q": "Kaip nustatoma švarių patalpų klasifikacija?",
+        "a": "Klasifikacija pagrįsta ore esančių dalelių skaičiumi pagal ISO 14644-1. Pavyzdžiui, ISO 5 dažniausiai naudojamas operacinėms, o ISO 7-8 – farmacijos gamybos sritims."
+      },
+      {
+        "q": "Ar galima HEPA filtrus pridėti prie esamos vėdinimo sistemos?",
+        "a": "HEPA filtro integravimas galimas priklausomai nuo esamos sistemos talpos ir slėgio kritimo. Tačiau AHU peržiūra paprastai rekomenduojama kelių pakopų filtravimui."
+      },
+      {
+        "q": "Ar teikiate patvirtinimo paslaugas?",
+        "a": "Taip, NOVVES teikia visų higieninės vėdinimo projektų patvirtinimo paslaugas, įskaitant dalelių skaičiaus testavimą, DOP/PAO filtrų vientisumo testavimą ir slėgio kartografavimą."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote higieniškos vėdinimo sistemos?",
+    "finalCtaDesc": "Susisiekite su mūsų inžinierių komanda dėl švarių patalpų klasifikavimo, projekto projektavimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "endustriyelHavaYonetimi": {
+    "breadcrumbCurrent": "Pramoninis oro valdymas",
+    "badge": "Sprendimai",
+    "titleLine1": "Pramoninis oras",
+    "titleHighlight": "Valdymas",
+    "subtitle": "Efektyvūs vėdinimo, šalinimo ir šviežio oro tiekimo sprendimai gamykloms, gamybinėms patalpoms ir pramoninėms zonoms.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "120°C",
+        "label": "Atsparumas temperatūrai"
+      },
+      {
+        "value": "ATEX",
+        "label": "Exproof variantas"
+      },
+      {
+        "value": "IP55",
+        "label": "Apsaugos klasė"
+      },
+      {
+        "value": "300+",
+        "label": "Užbaigti projektai"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Tinkamas oro valdymas gamybos efektyvumui užtikrinti",
+    "whyImportantP1": "Pramoniniuose objektuose proceso metu susidaranti šiluma, drėgmė, dulkių ir dujų kaupimasis tiesiogiai veikia darbuotojų sveikatą, gaminių kokybę ir įrangos tarnavimo laiką. Veiksmingas oro valdymas taip pat yra esminis reikalavimas, kad būtų laikomasi darbo saugos reikalavimų.",
+    "whyImportantP2": "NOVVES valdo karštų dujų išmetimo, šviežio oro tiekimo ir bendrojo vėdinimo projektus iš vieno šaltinio, naudodamas didelio našumo ventiliatorių sistemas, kanalų projektus ir automatikos sprendimus, specialiai sukurtus pramonės objektų poreikiams.",
+    "steps": [
+      {
+        "label": "Svetainės apklausa",
+        "desc": "Įrenginio tipas, proceso sąlygos, temperatūros / drėgmės / dulkių analizė"
+      },
+      {
+        "label": "Inžinerinis dizainas",
+        "desc": "Ventiliatorių pasirinkimas, ortakių skaičiavimas, išmetimo/tiekimo balansavimas"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "Didelio našumo ventiliatoriai, pramoninių ortakių gamyba ir montavimas vietoje"
+      },
+      {
+        "label": "Paleidimas ir aptarnavimas",
+        "desc": "Našumo matavimas, balansavimas, periodinė priežiūra ir palaikymas visą parą"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Pramoniniai išcentriniai ventiliatoriai (NAUTILUS)",
+        "desc": "Aukštam slėgiui ir temperatūrai atsparūs, dvisieniai arba vienos sienos išcentriniai ventiliatoriai."
+      },
+      {
+        "title": "Ašiniai ventiliatoriai (MARLIN)",
+        "desc": "Didelės talpos ašiniai ventiliatoriai su gaubtu arba ašmenimis didelėms erdvėms."
+      },
+      {
+        "title": "Stogo ventiliatoriai (HERON)",
+        "desc": "Radialiniai ir ašiniai stogo ventiliatoriai, skirti ištraukiamam arba šviežio oro tiekimui ant objektų stogų."
+      },
+      {
+        "title": "Sieniniai ventiliatoriai (OWL)",
+        "desc": "Ant fasado montuojami radialiniai ir ašiniai sieniniai ventiliatoriai išmetimui arba tiekimui."
+      },
+      {
+        "title": "Ortakių ventiliatoriai (KOI)",
+        "desc": "Kompaktiški ortakiniai ventiliatoriai, skirti slėgiui ortakyje padidinti ir oro perdavimui."
+      },
+      {
+        "title": "Automatika ir valdymas",
+        "desc": "Kintamo dažnio pavaros, temperatūros / drėgmės jutikliai, PLC plokštės ir BMS integracija."
+      }
+    ],
+    "midCtaTitle": "Gaukite savo pramoninio vėdinimo projekto pasiūlymą",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Atsparumas aukštai temperatūrai",
+        "desc": "Ventiliatoriaus parinktys su nuolatinio veikimo galia iki 120°C proceso išmetimui."
+      },
+      {
+        "title": "Didelės apkrovos dizainas",
+        "desc": "Stora korpuso plokštė, sustiprinti guolių mazgai ir korozijai atsparios dangos galimybės."
+      },
+      {
+        "title": "Platus gaminių asortimentas",
+        "desc": "Išcentriniai, ašiniai, stogo, sieniniai ir kanaliniai ventiliatoriai siūlo sprendimus kiekvienam poreikiui."
+      },
+      {
+        "title": "Ilgalaikis veikimas",
+        "desc": "Nepertraukiamas veikimas su sunkiomis guolių grupėmis, dinaminiu balansavimu ir vibracijos stebėjimu."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "Sprendimai visiems gamybos ir patalpų tipams, kuriems reikalingas pramoninis vėdinimas.",
+    "areas": [
+      {
+        "title": "Automobilių gamyklos",
+        "description": "Dažų kabinos išmetimas, suvirinimo dūmų ištraukimas",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Metalo ir plieno gamyklos",
+        "description": "Karšto dujų išmetimas ir gryno oro tiekimas",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Tekstilės fabrikai",
+        "description": "Drėgmės kontrolė ir pluošto dulkių nusiurbimas",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Chemijos ir naftos chemijos gamyklos",
+        "description": "Korozinių dujų išmetimas ir gryno oro tiekimas",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Sandėliai ir logistikos centrai",
+        "description": "Bendras vėdinimas ir temperatūros kontrolė",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Į ką reikėtų atsižvelgti renkantis pramoninį ventiliatorių?",
+        "a": "Oro kiekis, slėgio nuostoliai, darbinė temperatūra, aplinkos sąlygos (dulkės, drėgmė, ėsdinančios dujos) ir triukšmo lygis yra pagrindiniai pasirinkimo kriterijai. NOVVES inžinierių komanda kiekvienam projektui nustato tinkamiausią ventiliatoriaus tipą."
+      },
+      {
+        "q": "Kokie ventiliatoriai naudojami esant aukštai temperatūrai?",
+        "a": "NAUTILUS serijos išcentriniai ventiliatoriai skirti nuolatiniam darbui iki 120°C. Esant aukštesnei temperatūrai, naudojamos specialios medžiagos ir aušinimo sprendimai."
+      },
+      {
+        "q": "Ar reikalingas ATEX sertifikuotas ventiliatorius?",
+        "a": "ATEX sertifikuoti BEAR serijos ventiliatoriai yra privalomi vietose, kuriose yra sprogios aplinkos pavojus (chemijos, naftos chemijos, dažų, grūdų siloso ir kt.)."
+      },
+      {
+        "q": "Ar galima prie esamų patalpų pridėti papildomą vėdinimą?",
+        "a": "Taip, prie esamų ortakių ir ventiliatorių sistemų gali būti padidintas pajėgumas arba galima pridėti naujų išmetimo linijų. Tinkamiausias sprendimas nustatomas atlikus objekto apžiūrą."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote pramoninės vėdinimo sistemos?",
+    "finalCtaDesc": "Susisiekite su mūsų komanda dėl vietos tyrimo, inžinerinio projektavimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "hayvancilikTesisleri": {
+    "breadcrumbCurrent": "Gyvulininkystės patalpų vėdinimas",
+    "badge": "Sprendimai",
+    "titleLine1": "Gyvulininkystės objektas",
+    "titleHighlight": "Vėdinimo sistemos",
+    "subtitle": "Specializuoti vėdinimo sprendimai, gerinantys gyvūnų gerovę ir gamybos efektyvumą paukštidėse, tvartuose ir gyvulių laikymo patalpose.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "IP55",
+        "label": "Apsaugos klasė"
+      },
+      {
+        "value": "Antikorozinis",
+        "label": "Dengimas"
+      },
+      {
+        "value": "EC variklis",
+        "label": "Energijos taupymas"
+      },
+      {
+        "value": "150+",
+        "label": "Užbaigti projektai"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Gyvūnų gerovė ir gamybos efektyvumas",
+    "whyImportantP1": "Gyvulininkystės patalpose amoniakas, drėgmė, šilumos kaupimasis ir nepakankama oro cirkuliacija padidina gyvūnų streso lygį, tiesiogiai sumažindamas augimo, pieno primilžius ir kiaušinių gamybą.",
+    "whyImportantP2": "NOVVES palaiko optimalų temperatūros, drėgmės ir dujų koncentracijos lygį naudodama korozijai atsparias ventiliatorių sistemas, specialiai sukurtas paukštidėms, tvartams ir laikymo patalpoms. Energiją taupantys EC varikliai ir išmaniosios valdymo sistemos sumažina eksploatavimo išlaidas.",
+    "steps": [
+      {
+        "label": "Priemonės analizė",
+        "desc": "Gyvūno tipas, patalpos matmenys, klimato sąlygos ir vėdinimo poreikių įvertinimas"
+      },
+      {
+        "label": "Sistemos projektavimas",
+        "desc": "Ventiliatorių pasirinkimas, išdėstymo planavimas, oro įleidimo/išleidimo angos balansavimas, aušinimo integravimas"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "Korozijai atsparių ventiliatorių gamyba, profesionalus montavimas vietoje"
+      },
+      {
+        "label": "Eksploatacijos pradžia ir palaikymas",
+        "desc": "Veikimo testavimas, automatikos kalibravimas, periodinė priežiūra ir techninė pagalba"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Paukštidės ventiliatoriai (VIŠTA)",
+        "desc": "Atsparūs korozijai didelio tūrio ašiniai ventiliatoriai, specialiai sukurti naminiams paukščiams ir mažiems gyvuliams laikyti."
+      },
+      {
+        "title": "Sieniniai išmetimo ventiliatoriai (OWL)",
+        "desc": "Ant fasado montuojami, cinkuoto korpuso ištraukiamieji ventiliatoriai galvijų tvartams ir gyvulių laikymui."
+      },
+      {
+        "title": "Stogo ventiliatoriai (HERON)",
+        "desc": "Korozijai atsparūs stogo ventiliatoriai, skirti ištraukiamam ir šviežio oro tiekimui ant stogo."
+      },
+      {
+        "title": "Garavimo aušinimo trinkelės",
+        "desc": "Adiabatinės aušinimo korio sistemos, mažinančios patalpų temperatūrą karšto klimato sąlygomis."
+      },
+      {
+        "title": "Oro įleidimo grotelės",
+        "desc": "Reguliuojamos grotelės, skirtos kontroliuojamam gryno oro įsiurbimui ir tunelio vėdinimo konfigūracijai."
+      },
+      {
+        "title": "Automatika ir valdymas",
+        "desc": "Temperatūros, drėgmės ir amoniako jutikliai su automatiniu ventiliatoriaus greičio valdymu ir klimato valdymu."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą dėl savo gyvulininkystės patalpų vėdinimo",
+    "midCtaDesc": "Mūsų ekspertų komanda pateiks individualų sprendimo pasiūlymą jūsų įrenginiui.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Atsparumas korozijai",
+        "desc": "Cinkuotos ir specialios dangos galimybės užtikrina ilgalaikį veikimą nuo amoniako ir drėgmės."
+      },
+      {
+        "title": "Didelis oro kiekis",
+        "desc": "Didelio skersmens ventiliatoriaus parinktys efektyviai oro cirkuliacijai dideliais kiekiais."
+      },
+      {
+        "title": "Energijos efektyvumas",
+        "desc": "Didelis energijos sąnaudų taupymas naudojant EC variklius ir kintamo greičio valdymą."
+      },
+      {
+        "title": "Į gyvūnų gerovę orientuota",
+        "desc": "Streso veiksnių sumažinimas per optimalią temperatūrą ir oro kokybę."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "Individualūs vėdinimo sprendimai kiekvienam gyvulininkystės patalpų tipui.",
+    "areas": [
+      {
+        "title": "Paukštidės (broileriai/sluoksniai)",
+        "description": "Tunelinis vėdinimas ir garuojantis aušinimas",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Galvijų tvartai",
+        "description": "Amoniako išmetimas ir gryno oro tiekimas",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Pieno ūkiai",
+        "description": "Melžimo zonos ir būsto klimato kontrolė",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Mažos gyvulių laikymo vietos",
+        "description": "Vėdinimas avių ir ožkų prieglaudose",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kokiai vėdinimo sistemai teikti pirmenybę paukštidėse?",
+        "a": "Priklausomai nuo namo dydžio ir klimato, naudojamos tunelinės (neigiamo slėgio) arba kryžminio vėdinimo sistemos. Esant karštam klimatui, būtina integruoti garavimo aušinimo padėklus."
+      },
+      {
+        "q": "Kaip kontroliuojamas amoniako lygis?",
+        "a": "Nuolatinis stebėjimas su amoniako jutikliais automatiškai reguliuoja ventiliatoriaus greitį. Minimalus vėdinimo greitis palaiko amoniako koncentraciją žemiau saugių ribų."
+      },
+      {
+        "q": "Kaip vėdinimas valdomas žiemos mėnesiais?",
+        "a": "Žiemą minimalus vėdinimo režimas palaiko oro kokybę ir sumažina šilumos nuostolius. Kintamo greičio ventiliatoriai ir automatinis įleidimo angos valdymas sukuria subalansuotą sistemą."
+      },
+      {
+        "q": "Kiek energijos suvartoja sistema?",
+        "a": "EC variklių ventiliatorių sistemos sunaudoja 30-50 % mažiau energijos lyginant su įprastiniais kintamosios srovės varikliais. Automatikos sistema paleidžia ventiliatorius tik tada, kai reikia, taip išvengiant energijos švaistymo."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote gyvulininkystės patalpų vėdinimo?",
+    "finalCtaDesc": "Susisiekite su mūsų ekspertų komanda dėl patalpų analizės, sistemos projektavimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "trafoEnerjiOdalari": {
+    "breadcrumbCurrent": "Transformatorių ir energijos kambario ventiliatoriai",
+    "badge": "Sprendimai",
+    "titleLine1": "Transformatorių ir energijos kambarys",
+    "titleHighlight": "Ventiliatoriai",
+    "subtitle": "Temperatūros valdymo ir vėdinimo sprendimai transformatorinėms, generatorių patalpoms ir elektros skirstymo įrenginiams.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "IP55",
+        "label": "Apsaugos klasė"
+      },
+      {
+        "value": "F klasė",
+        "label": "Variklio izoliacija"
+      },
+      {
+        "value": "TEDAS",
+        "label": "Atitinkamas dizainas"
+      },
+      {
+        "value": "500+",
+        "label": "Įdiegtos sistemos"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Kritinės temperatūros kontrolė visam įrangos eksploatavimo laikui",
+    "whyImportantP1": "Transformatorių stotys ir energetinės patalpos gali pasiekti pavojingą temperatūrą dėl elektros įrenginių skleidžiamos šilumos. Per didelis karštis sukelia transformatoriaus alyvos degradaciją, kabelių izoliacijos praradimą ir sistemos gedimus.",
+    "whyImportantP2": "NOVVES užtikrina temperatūros kontrolę transformatorinėse, vidutinės įtampos skirstyklose, generatorių patalpose ir UPS patalpose su vėdinimo sprendimais, sukurtais pagal TEDAS technines specifikacijas.",
+    "steps": [
+      {
+        "label": "Šilumos apkrovos apskaičiavimas",
+        "desc": "Transformatoriaus galios, šilumos nuostolių, patalpų matmenų ir lauko temperatūros analizė"
+      },
+      {
+        "label": "Sistemos projektavimas",
+        "desc": "Ventiliatoriaus pasirinkimas, grotelių dydis, išmetimo/tiekimo balansavimas"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "IP55 reitingo ventiliatorių gamyba ir montavimas vietoje"
+      },
+      {
+        "label": "Paleidimas ir bandymas",
+        "desc": "Temperatūros matavimas, termostato kalibravimas ir veikimo patikrinimas"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Sieniniai ventiliatoriai (OWL)",
+        "desc": "IP55 reitingo, cinkuoto korpuso sieninio tipo išmetimo ir tiekimo ventiliatoriai transformatorinėms."
+      },
+      {
+        "title": "Stogo ventiliatoriai (HERON)",
+        "desc": "Radialiniai ir ašiniai stogo ventiliatoriai karšto oro šalinimui iš energetinių patalpų stogų."
+      },
+      {
+        "title": "Ortakių ventiliatoriai (KOI)",
+        "desc": "Kompaktiški ortakiniai ventiliatoriai, skirti karšto oro transportavimui dideliais atstumais per ortakių sistemas."
+      },
+      {
+        "title": "Oro įsiurbimo grotelės",
+        "desc": "Filtruotos ir apsaugotos nuo vabzdžių oro įsiurbimo grotelės, atitinkančios TEDAS specifikacijas."
+      },
+      {
+        "title": "Termostatas ir valdymas",
+        "desc": "Automatinis ventiliatoriaus įjungimas/išjungimas ir pakopos valdymas pagal kambario temperatūrą."
+      },
+      {
+        "title": "Amortizatorių sistemos",
+        "desc": "Motorizuoti sklendės ir slėgio balansavimo sklendės, skirtos gaisro ir karšto oro zonavimui."
+      }
+    ],
+    "midCtaTitle": "Gaukite savo transformatorinės patalpos vėdinimo projekto pasiūlymą",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Atitinka TEDAS",
+        "desc": "Ventiliatorių ir grotelių sprendimai visiškai atitinka Turkijos elektros skirstymo technines specifikacijas."
+      },
+      {
+        "title": "IP55 apsauga",
+        "desc": "Aukštos apsaugos klasės varikliai ir korpusai nuo dulkių ir vandens purslų."
+      },
+      {
+        "title": "Žemas triukšmo lygis",
+        "desc": "Tylus veikimas, suderinamas su aplinka elektros paskirstymo centruose."
+      },
+      {
+        "title": "Ilgaamžis dizainas",
+        "desc": "Ilgalaikis patikimas veikimas su F klasės variklio izoliacija ir cinkuotu korpusu."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "Sprendimai visoms kritinėms elektros ir energetikos infrastruktūros erdvėms.",
+    "areas": [
+      {
+        "title": "Transformatorių stotys",
+        "description": "Transformatoriaus šilumos nuostolių išmetimas ir temperatūros valdymas",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Generatorių kambariai",
+        "description": "Išmetamųjų dujų ir šilumos ištraukimas",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "UPS ir baterijų kambariai",
+        "description": "Vandenilio dujų išmetimas ir temperatūros kontrolė",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Vidutinės įtampos skirstomieji įrenginiai",
+        "description": "Elektros šilumos kaupimosi išmetimas",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kodėl transformatorinėse privaloma vėdinti?",
+        "a": "Transformatorių šilumos nuostoliai kaupiasi patalpoje, o aukštesnė nei 40°C aplinkos temperatūra sutrumpina transformatoriaus tarnavimo laiką, sukeldama alyvos degradaciją ir izoliacijos gedimus. TEDAS specifikacijos reikalauja tinkamo vėdinimo."
+      },
+      {
+        "q": "Kuris ventiliatoriaus tipas tinka transformatorinėms?",
+        "a": "Priklausomai nuo patalpos dydžio ir šilumos apkrovos, naudojami sieniniai (OWL), stoginiai (HERON) arba ortakiniai (KOI) ventiliatoriai. Paprastai taikomas išmetimo + gryno oro tiekimo derinys."
+      },
+      {
+        "q": "Kaip veikia termostatu valdomas veikimas?",
+        "a": "Kai kambario temperatūra pasiekia nustatytą viršutinę ribą, ventiliatoriai įsijungia automatiškai ir išsijungia, kai temperatūra nukrenta. Keli etapai taupo energiją."
+      },
+      {
+        "q": "Ar yra specialių reikalavimų UPS patalpoms?",
+        "a": "Taip, įkrovimo metu akumuliatorių grupėse gali susidaryti vandenilio dujos. Todėl UPS patalpose, atsižvelgiant į sprogimo pavojų, reikia atitinkamų vėdinimo ir dujų aptikimo sistemų."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote transformatorinės vėdinimo sprendimo?",
+    "finalCtaDesc": "Susisiekite su mūsų inžinierių komanda dėl šilumos apkrovos skaičiavimo, sistemos projektavimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "seraTarimsal": {
+    "breadcrumbCurrent": "Šiltnamių ir žemės ūkio vėdinimas",
+    "badge": "Sprendimai",
+    "titleLine1": "Šiltnamiai ir žemės ūkis",
+    "titleHighlight": "Vėdinimo sistemos",
+    "subtitle": "Vėdinimo ir vėsinimo sprendimai optimaliai klimato kontrolei šiltnamiuose, grybų auginimo patalpose ir žemės ūkio paskirties statiniuose.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "Antikorozinis",
+        "label": "Dengimas"
+      },
+      {
+        "value": "EC variklis",
+        "label": "Energijos taupymas"
+      },
+      {
+        "value": "IoT",
+        "label": "Nuotolinis stebėjimas"
+      },
+      {
+        "value": "100+",
+        "label": "Užbaigti projektai"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Tinkamas klimato valdymas efektyviam žemės ūkiui",
+    "whyImportantP1": "Šiltnamiuose ir žemės ūkio struktūrose temperatūros, drėgmės ir CO2 lygio kontrolė tiesiogiai veikia augalų augimą, produktų kokybę ir derlių. Per didelis karštis vasarą ir nepakankamas vėdinimas žiemą sukelia rimtus derliaus nuostolius.",
+    "whyImportantP2": "NOVVES teikia garuojamąjį vėsinimą, natūralų/mechaninį vėdinimą ir išmaniuosius klimato kontrolės sprendimus šiltnamiams ir žemės ūkio objektams. Kiekvienas projektas yra specialiai sukurtas remiantis regioniniais klimato duomenimis ir pasėlių reikalavimais.",
+    "steps": [
+      {
+        "label": "Priemonės analizė",
+        "desc": "Šiltnamio dydžio, pasėlių tipo, regiono klimato ir vėdinimo poreikių įvertinimas"
+      },
+      {
+        "label": "Sistemos projektavimas",
+        "desc": "Ventiliatoriaus pasirinkimas, aušinimo padėklas, stogo/šoninės užuolaidos ventiliacija ir automatikos scenarijus"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "Atsparus korozijai ventiliatorių ir priedų gamyba, montavimas vietoje"
+      },
+      {
+        "label": "Eksploatacijos pradžia ir palaikymas",
+        "desc": "Klimato jutiklių kalibravimas, automatikos testavimas ir techninė pagalba"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Sieniniai išmetimo ventiliatoriai (OWL)",
+        "desc": "Cinkuotas korpusas, ant šiltnamio sienų montuojami didelio tūrio ventiliatoriai."
+      },
+      {
+        "title": "Garavimo aušinimo sistemos",
+        "desc": "Adiabatinės aušinimo korio sistemos sumažina šiltnamio temperatūrą 8-12°C."
+      },
+      {
+        "title": "Stogo vėdinimo įrenginys (HERON)",
+        "desc": "Stogo ventiliatoriai karšto oro šalinimui ir šviežio oro tiekimui ant šiltnamių stogų."
+      },
+      {
+        "title": "Cirkuliacijos ventiliatoriai",
+        "desc": "Horizontalūs oro cirkuliacijos ventiliatoriai vienodam temperatūros ir drėgmės paskirstymui šiltnamių viduje."
+      },
+      {
+        "title": "Oro įleidimo užuolaidos",
+        "desc": "Motorizuotos šoninių užuolaidų ir stogo langų sistemos, skirtos kontroliuojamam gryno oro įsiurbimui."
+      },
+      {
+        "title": "Išmanioji klimato kontrolė",
+        "desc": "IoT pagrįstas nuotolinis stebėjimas ir valdymas su temperatūros, drėgmės, CO2 ir šviesos jutikliais."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą dėl šiltnamio vėdinimo projekto",
+    "midCtaDesc": "Mūsų ekspertų komanda pateiks individualų sprendimo pasiūlymą jūsų įrenginiui.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Žemės ūkio patvarumas",
+        "desc": "Ilgalaikis veikimas didelės drėgmės aplinkoje su cinkuotomis ir korozijai atspariomis dangomis."
+      },
+      {
+        "title": "Energiją taupantis aušinimas",
+        "desc": "80 % mažiau energijos, palyginti su įprastu oro kondicionieriumi su garuojančiu vėsinimu."
+      },
+      {
+        "title": "Išmanioji automatika",
+        "desc": "IoT pagrįstas klimato stebėjimas su nuotoliniu valdymu ir duomenimis pagrįstų sprendimų palaikymu."
+      },
+      {
+        "title": "Projektinis dizainas",
+        "desc": "Vėdinimo sistema suprojektuota pagal užsakymą, atsižvelgiant į šiltnamio dydį, pasėlių tipą ir klimato duomenis."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "Klimato kontrolės sprendimai visoms uždaroms žemės ūkio gamybos vietoms.",
+    "areas": [
+      {
+        "title": "Stikliniai ir plastikiniai šiltnamiai",
+        "description": "Temperatūros ir drėgmės kontrolė, garuojantis aušinimas",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Grybų auginimo įrenginiai",
+        "description": "Tiksli drėgmės ir temperatūros kontrolė, šviežio oro tiekimas",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC fanai",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Sodinukų auginimas Šiltnamiai",
+        "description": "Homogeniškas klimato pasiskirstymas ir vėsinimas",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Sieniniai ventiliatoriai",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Grūdų sandėliavimo patalpos",
+        "description": "Drėgmės kontrolė ir vėdinimas",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kokia vėdinimo sistema tinkamiausia šiltnamiams?",
+        "a": "Priklausomai nuo šiltnamio dydžio, vietos ir pasėlių tipo, naudojamos neigiamo slėgio (išmetimo sistemos + aušinimo padas) arba teigiamo slėgio (viršuje) sistemos. Esant karštam klimatui, garavimo aušinimo integracija yra labai svarbi."
+      },
+      {
+        "q": "Kiek galima sumažinti temperatūrą garuojant aušinant?",
+        "a": "Priklausomai nuo regiono drėgmės lygio, temperatūrą galima sumažinti 8–12°C. Efektyvumas yra didesnis regionuose, kuriuose yra mažai drėgmės."
+      },
+      {
+        "q": "Ar reikia šiltnamio vėdinimo žiemą?",
+        "a": "Taip, net ir žiemą minimalus vėdinimas reikalingas drėgmės kontrolei ir CO2 papildymui. Priešingu atveju gali padidėti grybelinės ligos ir augalų stresas."
+      },
+      {
+        "q": "Ar įmanomas nuotolinis stebėjimas ir valdymas?",
+        "a": "Taip, NOVVES išmanieji klimato valdymo pultai užtikrina nuotolinį temperatūros, drėgmės ir CO2 stebėjimą, ventiliatorių valdymą ir signalizacijos valdymą per daiktų interneto infrastruktūrą."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote šiltnamio vėdinimo sistemos?",
+    "finalCtaDesc": "Susisiekite su mūsų ekspertų komanda dėl patalpų analizės, sistemos projektavimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "atexPatlamaKoruma": {
+    "breadcrumbCurrent": "ATEX apsauga nuo sprogimo",
+    "badge": "Sprendimai",
+    "titleLine1": "ATEX apsauga nuo sprogimo",
+    "titleHighlight": "Sprendimai",
+    "subtitle": "ATEX sertifikuotos ventiliatorių sistemos ir vėdinimo sprendimai objektams su sprogios atmosferos rizika.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "ATEX",
+        "label": "Sertifikuota"
+      },
+      {
+        "value": "1/2 zona",
+        "label": "Taikymo sritis"
+      },
+      {
+        "value": "IECEx",
+        "label": "Tarptautinis patvirtinimas"
+      },
+      {
+        "value": "200+",
+        "label": "Įdiegtos sistemos"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Saugumas yra prioritetas sprogioje aplinkoje",
+    "whyImportantP1": "Tokiose patalpose kaip chemijos, naftos chemijos, dažų, farmacijos, grūdų siloso ir kasybos, degiųjų dujų, garų ir dulkių koncentracija gali sukurti sprogią atmosferą. Standartinės įrangos naudojimas tokioje aplinkoje kelia rimtą pavojų.",
+    "whyImportantP2": "NOVVES BEAR serijos ATEX sertifikuoti ventiliatoriai sukurti pagal sprogios aplinkos klasifikaciją (1 zona, 2 zona, 21 zona, 22 zona). Nekibirkščiuojančios medžiagos, sprogimui atsparūs varikliai ir specialūs sandarinimo sprendimai užtikrina saugų vėdinimą.",
+    "steps": [
+      {
+        "label": "Rizikos analizė",
+        "desc": "Sprogios aplinkos klasifikavimas, zonų nustatymas, dujų/dulkių tipo analizė"
+      },
+      {
+        "label": "Sistemos projektavimas",
+        "desc": "ATEX ventiliatorių pasirinkimas, ortakių projektavimas, įžeminimas ir eksploatacinė automatika"
+      },
+      {
+        "label": "Gamyba ir montavimas",
+        "desc": "ATEX sertifikuota ventiliatorių gamyba, atsparus kabelis ir jungčių montavimas"
+      },
+      {
+        "label": "Paleidimas ir sertifikavimas",
+        "desc": "Testavimas, veikimo matavimas, ATEX atitikties sertifikavimas"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "ATEX išcentriniai ventiliatoriai (BEAR)",
+        "desc": "Sertifikuoti išcentriniai ventiliatoriai su kibirkščių neturinčiomis medžiagomis 1/2 ir 21/22 zonoms."
+      },
+      {
+        "title": "ATEX ašiniai ventiliatoriai (BEAR)",
+        "desc": "Ašiniai ventiliatoriai su gaubtais ir ašmenimis, tinkami sprogioje aplinkoje."
+      },
+      {
+        "title": "Exproof stogo ventiliatoriai (BEAR)",
+        "desc": "Ant stogo montuojami ištraukiamieji ventiliatoriai su sprogimui atspariais varikliais patalpoms su sprogiomis dujomis/dulkėmis."
+      },
+      {
+        "title": "Exproof variklis ir valdikliai",
+        "desc": "ATEX patvirtinti varikliai, atsparūs mygtukai, signalinės lempos ir valdymo korpusai."
+      },
+      {
+        "title": "Antistatinis kanalas ir priedai",
+        "desc": "Įžeminti ortakiai ir jungiamieji elementai neleidžia kauptis statinei elektrai."
+      },
+      {
+        "title": "Dujų aptikimas ir automatizavimas",
+        "desc": "Degiųjų dujų/dulkių jutikliai, PLC valdomas avarinis išjungimas ir vėdinimo scenarijai."
+      }
+    ],
+    "midCtaTitle": "Gaukite ATEX vėdinimo projekto pasiūlymą",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Sertifikuotas ATEX",
+        "desc": "Gamyba ir sertifikavimas atitinka 2014/34/ES ATEX direktyvą."
+      },
+      {
+        "title": "1 ir 2 zonų atitiktis",
+        "desc": "Tinkamas ventiliatoriaus pasirinkimas ir konstrukcija pagal dujų grupę ir temperatūros klasę."
+      },
+      {
+        "title": "Dizainas be kibirkščių",
+        "desc": "Aliuminio/bronzos lydiniai, specialios dangos ir antistatiniai komponentai."
+      },
+      {
+        "title": "Visiškas sprendimas",
+        "desc": "Rizikos analizė, ventiliatorių pasirinkimas, automatizavimas ir sertifikavimas iš vieno šaltinio."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "ATEX sprendimai visiems pramoniniams objektams su sprogios atmosferos rizika.",
+    "areas": [
+      {
+        "title": "Chemijos ir naftos chemijos gamyklos",
+        "description": "Degiųjų dujų ir garų išmetimas",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX stogo ventiliatoriai",
+            "image": "/images/products/bear-reb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Dažų ir lakų gamyklos",
+        "description": "Tirpiklio garų išmetimas",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX sieniniai ventiliatoriai",
+            "image": "/images/products/bear-w.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Grūdų silosai ir miltų malūnai",
+        "description": "Degiųjų dulkių išmetimas",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX kanalų ventiliatoriai",
+            "image": "/images/products/bear-t.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Kasybos ir tunelių įrenginiai",
+        "description": "Metano dujų ištraukimas ir ventiliacija",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Farmacijos ir kosmetikos gamyba",
+        "description": "Degiųjų tirpiklių ir dulkių šalinimas",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-c.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX išcentriniai ventiliatoriai",
+            "image": "/images/products/bear-r.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Ką reiškia ATEX sertifikatas?",
+        "a": "ATEX (ATmospheres EXplosibles) – tai 2014/34/ES Europos Sąjungos direktyva, apibrėžianti sprogioje aplinkoje naudojamos įrangos projektavimo ir gamybos standartus. BEAR serijos ventiliatoriai gaminami laikantis šios direktyvos."
+      },
+      {
+        "q": "Kuo skiriasi 1 zona ir 2 zona?",
+        "a": "1 zona apibrėžia sritis, kuriose įprastomis eksploatavimo sąlygomis kartais gali susidaryti sprogi aplinka; 2 zona apibrėžia sritis, kuriose sprogi aplinka gali susidaryti tik esant neįprastoms sąlygoms ir trumpam laikui."
+      },
+      {
+        "q": "Kurioms dujų grupėms gaminate ventiliatorius?",
+        "a": "BEAR serija gaminama modeliais, tinkančiais IIA (propanas, metanas), IIB (etilenas) ir IIC (vandenilis, acetilenas) dujų grupėms."
+      },
+      {
+        "q": "Ar ATEX ventiliatorių galima integruoti į esamą sistemą?",
+        "a": "Taip, ATEX sertifikuotą ventiliatorių galima integruoti į esamas vėdinimo sistemas. Tačiau taip pat reikia patikrinti ortakių, jungčių ir automatikos komponentų atitiktį ATEX."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote ATEX vėdinimo sprendimo?",
+    "finalCtaDesc": "Susisiekite su mūsų inžinierių komanda dėl rizikos analizės, ATEX ventiliatorių pasirinkimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "akilliOtomasyon": {
+    "breadcrumbCurrent": "Išmanusis automatizavimas ir valdymas",
+    "badge": "Sprendimai",
+    "titleLine1": "Išmanioji automatika ir",
+    "titleHighlight": "Valdymo sistemos",
+    "subtitle": "Išmanieji valdymo sprendimai, skirti BMS integravimui, PLC pagrindu veikiančiam ventiliatorių valdymui, IoT stebėjimui ir energijos optimizavimui.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Mūsų paslaugos",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      {
+        "value": "BMS",
+        "label": "Integracija"
+      },
+      {
+        "value": "PLC/SCADA",
+        "label": "Valdymo infrastruktūra"
+      },
+      {
+        "value": "IoT",
+        "label": "Nuotolinis stebėjimas"
+      },
+      {
+        "value": "24/7",
+        "label": "Palaikymas"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Išmaniosios sistemos efektyvumui ir kontrolei užtikrinti",
+    "whyImportantP1": "Šiuolaikiniuose pastatuose ir pramonės objektuose rankinis vėdinimo sistemų valdymas lemia neefektyvumą, energijos švaistymą ir priežiūros problemas. Išmanioji automatika optimizuoja sistemas pagal jutiklių duomenis.",
+    "whyImportantP2": "NOVVES automatikos sprendimai suteikia pilną vėdinimo sistemų valdymą su PLC pagrindu veikiančiomis MCC plokštėmis, kintamo dažnio pavaros integravimu, BMS jungtimi ir daiktų internetu pagrįstu nuotoliniu stebėjimu. Scenarijus pagrįsti darbo režimai sumažina energijos sąnaudas.",
+    "steps": [
+      {
+        "label": "Reikia analizės",
+        "desc": "Esamos sistemos peržiūra, automatizavimo reikalavimai, BMS infrastruktūros įvertinimas"
+      },
+      {
+        "label": "Automatikos projektavimas",
+        "desc": "PLC programavimas, jutiklių parinkimas, skydų projektavimas, BMS integravimo scenarijus"
+      },
+      {
+        "label": "Skydų gamyba ir montavimas",
+        "desc": "MCC/automatikos skydų gamyba, lauko laidų ir įrangos montavimas"
+      },
+      {
+        "label": "Paleidimas ir mokymas",
+        "desc": "Sistemos testavimas, scenarijų tikrinimas, operatoriaus/vartotojo mokymas"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "PLC valdomi MCC skydai",
+        "desc": "Variklio valdymo centras su ventiliatoriaus paleidimu/išjungimu, pakopos valdymu, gedimų stebėjimu ir apsaugos relės integracija."
+      },
+      {
+        "title": "Kintamo dažnio pavaros valdymas",
+        "desc": "Kintamo greičio ventiliatoriaus valdymas leidžia taupyti energiją ir tiksliai reguliuoti srautą."
+      },
+      {
+        "title": "BMS integracija",
+        "desc": "Pilna integracija su pastato valdymo sistemomis per Modbus, BACnet arba LON protokolus."
+      },
+      {
+        "title": "Jutiklių tinklai",
+        "desc": "Temperatūros, drėgmės, CO, CO2, slėgio ir dūmų jutikliai su zonų duomenų rinkimu."
+      },
+      {
+        "title": "IoT ir nuotolinis stebėjimas",
+        "desc": "Debesimis pagrįsta prietaisų skydelis, mobilioji programėlė, įspėjimai apie pavojaus signalą ir energijos suvartojimo analizė."
+      },
+      {
+        "title": "Scenarijus pagrįsti veikimo režimai",
+        "desc": "Iš anksto nustatyti arba pasirinktiniai scenarijai: įprastas, naktinis, gaisras, automobilių stovėjimo aikštelės CO išmetimas ir kt."
+      }
+    ],
+    "midCtaTitle": "Gaukite savo automatizavimo projekto pasiūlymą",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Energijos optimizavimas",
+        "desc": "30–50 % energijos sutaupoma naudojant išmanųjį valdymą, pagrįstą kintamo dažnio pavaromis ir jutiklių duomenimis."
+      },
+      {
+        "title": "BMS suderinamumas",
+        "desc": "Integracija su visomis pastato valdymo sistemomis naudojant atvirus protokolus, tokius kaip Modbus, BACnet, LON."
+      },
+      {
+        "title": "Nuotolinis stebėjimas",
+        "desc": "IoT pagrįstas stebėjimas 24 valandas per parą, 7 dienas per savaitę, aliarmo pranešimai ir energijos suvartojimo ataskaitos."
+      },
+      {
+        "title": "Vieno šaltinio sprendimas",
+        "desc": "Skydų projektavimas, PLC programavimas, montavimas vietoje ir paleidimas iš vieno šaltinio."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kuriuose projektuose jis naudojamas?",
+    "areasDesc": "Sprendimai visų tipų pastatams ir objektams, kuriems reikalinga vėdinimo automatika.",
+    "areas": [
+      {
+        "title": "Uždaros automobilių stovėjimo aikštelės automatika",
+        "description": "CO jutikliu pagrįstas reaktyvinio ventiliatoriaus valdymas",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Prekybos centras ir komercinis pastatas BMS",
+        "description": "Centrinė vėdinimo automatika ir stebėjimas",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Pramonės objektų automatizavimas",
+        "description": "Proceso vėdinimo ir išmetimo kontrolė",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Ligoninė ir švari patalpa",
+        "description": "Slėgio kaskados ir filtravimo stebėjimas",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Ar galima automatizuoti esamą sistemą?",
+        "a": "Taip, PLC plokštės, kintamo dažnio pavaros ir jutiklių integravimas gali būti pridedami prie esamų ventiliatorių ir vėdinimo sistemų, siekiant atnaujinti automatizavimo lygį."
+      },
+      {
+        "q": "Kokius BMS protokolus palaikote?",
+        "a": "Mes palaikome Modbus RTU/TCP, BACnet IP/MSTP ir LON protokolus. Tinkamiausias integravimo būdas nustatomas pagal jūsų esamą BMS infrastruktūrą."
+      },
+      {
+        "q": "Ar nuotoliniam stebėjimui reikalingas interneto ryšys?",
+        "a": "Taip, norint nuotoliniu būdu stebėti daiktų internetu, objekte reikalingas interneto ryšys. Duomenų perdavimas į debesų platformą teikiamas per 4G/5G modemą arba eterneto ryšį."
+      },
+      {
+        "q": "Kiek energijos sutaupo automatizavimo sistema?",
+        "a": "Kintamo greičio ventiliatoriaus valdymas, pagrįstas jutiklio duomenimis, gali sutaupyti 30-50 % energijos. Naktinis režimas ir laisvos zonos scenarijai leidžia sutaupyti papildomų lėšų."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote vėdinimo automatikos sprendimo?",
+    "finalCtaDesc": "Susisiekite su mūsų inžinierių komanda dėl automatikos projektavimo, plokščių gamybos ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "konutHavalandirma": {
+    "breadcrumbCurrent": "Gyvenamųjų patalpų vėdinimas",
+    "badge": "Sprendimai",
+    "titleLine1": "Gyvenamieji",
+    "titleHighlight": "Vėdinimo sistemos",
+    "subtitle": "Gaivaus oro tiekimo, drėgmės kontrolės ir patogūs gyvenamųjų patalpų vėdinimo sprendimai butams, viloms, rezidencijoms ir būsto projektams.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "EC variklis",
+        "label": "Tylus veikimas"
+      },
+      {
+        "value": "Šilumos atkūrimas",
+        "label": "90% efektyvumas"
+      },
+      {
+        "value": "dB(A) <25",
+        "label": "Triukšmo lygis"
+      },
+      {
+        "value": "A+",
+        "label": "Energijos klasė"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Grynas oras sveikai gyvensenai",
+    "whyImportantP1": "Šiuolaikinėse gyvenamosiose patalpose, didėjant izoliacijos lygiui, sumažėjo natūrali oro mainai, todėl patalpų oro kokybė kelia rimtą susirūpinimą. Nepakankamas vėdinimas sukelia drėgmę, pelėsį, kvapą ir pasenusio oro kaupimąsi.",
+    "whyImportantP2": "NOVVES gyvenamųjų patalpų vėdinimo sprendimai sukuria sveikas, švarias ir patogias gyvenamąsias erdves su šilumos atgavimo gryno oro tiekimu, kuris sumažina energijos nuostolius. Tylus veikimas ir kompaktiška konstrukcija užtikrina suderinamumą su visų tipų korpusais.",
+    "steps": [
+      {
+        "label": "Poreikių įvertinimas",
+        "desc": "Būsto tipo, patalpų skaičiaus, kvadratinių metrų ir vėdinimo poreikių analizė"
+      },
+      {
+        "label": "Sistemos pasirinkimas",
+        "desc": "Įrenginio talpa, kanalų nuvedimas, grotelių išdėstymo planavimas"
+      },
+      {
+        "label": "Montavimas",
+        "desc": "Profesionalus montavimas, kanalų prijungimas ir elektros instaliacija"
+      },
+      {
+        "label": "Paleidimas eksploatuoti",
+        "desc": "Oro srauto matavimas, triukšmo tikrinimas ir naudotojų mokymas"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Šilumos atgavimo įrenginiai",
+        "desc": "Priešpriešinio srauto arba rotaciniai šilumokaičiai, atgaunantys iki 90 % šilumos iš išmetamo oro, taupantys energiją."
+      },
+      {
+        "title": "Vonios ir tualeto ventiliatoriai (SEAHORSE)",
+        "desc": "Tylūs, energiją taupantys ir kompaktiški vonios ventiliatoriai."
+      },
+      {
+        "title": "Ortakių ventiliatoriai (KOI)",
+        "desc": "Mažo triukšmo kompaktiški ventiliatoriai, skirti šviežio oro tiekimui ir ištraukimui ortakyje."
+      },
+      {
+        "title": "Virtuvės ventiliatoriai (BUTTERFLY)",
+        "desc": "Virtuvės gartraukio ištraukiamieji ventiliatoriai su riebalų filtrais ir tylaus veikimo funkcijomis."
+      },
+      {
+        "title": "Grotelės ir difuzoriai",
+        "desc": "Lubų, sienų ir grindų grotelės vienodam oro paskirstymui."
+      },
+      {
+        "title": "Valdymas ir vadovavimas",
+        "desc": "Belaidis nuotolinio valdymo pultas, drėgmės jutiklis, laikmatis ir greičio reguliavimo valdymas."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą dėl savo gyvenamųjų patalpų vėdinimo projekto",
+    "midCtaDesc": "Mūsų ekspertų komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Tylus veikimas",
+        "desc": "Triukšmo lygis mažesnis nei 25 dB(A), kad būtų patogu dirbti net miegamuosiuose."
+      },
+      {
+        "title": "Šilumos atkūrimas",
+        "desc": "Iki 90 % energijos atgaunama iš išmetamo oro, kad būtų išvengta energijos švaistymo."
+      },
+      {
+        "title": "Kompaktiškas dizainas",
+        "desc": "Nuleidžiamos lubos, spintelės vidus ir sienoje įleidžiami tvirtinimo variantai."
+      },
+      {
+        "title": "Sveikas patalpų oras",
+        "desc": "Filtravimas ir gryno oro tiekimas, filtruojantis žiedadulkes, dulkes ir teršalus."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kuriuose būsto tipuose jis naudojamas?",
+    "areasDesc": "Vėdinimo sprendimai tinka visų tipų gyvenamosioms patalpoms.",
+    "areas": [
+      {
+        "title": "Butai ir butai",
+        "description": "Centrinė arba individuali gryno oro ir išmetimo sistema",
+        "products": [
+          {
+            "name": "SEAHORSE",
+            "type": "Vonios ventiliatoriai",
+            "image": "/images/products/banyo-fan-1.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Vilos ir individualūs namai",
+        "description": "Šilumos atgavimo gryno oro sistema",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "BUTTERFLY",
+            "type": "Virtuvės ventiliatoriai",
+            "image": "/images/products/butterfly-b.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Rezidencijos ir aukštybiniai pastatai",
+        "description": "Centrinis vėdinimas ir slėgis",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "SEAHORSE",
+            "type": "Vonios ventiliatoriai",
+            "image": "/images/products/banyo-fan-2.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Masiniai būsto projektai",
+        "description": "Šachtos vėdinimo ir stogo išmetimo sistemos",
+        "products": [
+          {
+            "name": "HERON",
+            "type": "Stogo ventiliatoriai",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Ar gyvenamųjų patalpų vėdinimas praranda energiją?",
+        "a": "Sistemose su šilumos atgavimo įrenginiais sugrąžinama iki 90 % išmetamo oro energijos. Tai reiškia, kad šviežio oro tiekimas pasiekiamas beveik visiškai neprarandant energijos."
+      },
+      {
+        "q": "Kiek triukšmo skleidžia vonios kambario ventiliatorius?",
+        "a": "SEAHORSE serijos vonios ventiliatoriai veikia labai tyliai, kai triukšmo lygis mažesnis nei 25 dB(A). Naktinio režimo parinktis dar labiau sumažina triukšmo lygį."
+      },
+      {
+        "q": "Ar galima įdiegti sistemą esamuose namuose?",
+        "a": "Taip, atskirus gryno oro įrenginius, kuriems nereikia ortakių ar kompaktiškų ortakių, galima naudoti vėdinimo sistemoms įrengti esamuose namuose."
+      },
+      {
+        "q": "Kaip dažnai reikia keisti filtrus?",
+        "a": "Filtrą rekomenduojama keisti kas 3-6 mėnesius, priklausomai nuo naudojimo intensyvumo ir lauko oro kokybės. Galimi modeliai su filtro užsikimšimo indikatoriais."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote vėdinimo sistemos gyvenamosioms patalpoms?",
+    "finalCtaDesc": "Susisiekite su mūsų komanda dėl jūsų namams tinkamo vėdinimo sprendimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "marinOffshore": {
+    "breadcrumbCurrent": "Vėdinimas jūroje ir atviroje jūroje",
+    "badge": "Sprendimai",
+    "titleLine1": "Jūra ir jūra",
+    "titleHighlight": "Vėdinimo sistemos",
+    "subtitle": "Sūrio vandens korozijai atsparūs vėdinimo sprendimai, atitinkantys jūrinės klasifikacijos standartus laivams, jachtoms, atviroje jūroje esančioms platformoms ir pakrantės statiniams.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Produktų katalogas",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "DNV-GL",
+        "label": "Jūrų patvirtinimas"
+      },
+      {
+        "value": "IP56",
+        "label": "Apsaugos klasė"
+      },
+      {
+        "value": "SS316",
+        "label": "Medžiagos kokybė"
+      },
+      {
+        "value": "50+",
+        "label": "Užbaigti projektai"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Patikima vėdinimas jūros aplinkoje",
+    "whyImportantP1": "Jūrų aplinkai keliami iššūkiai, kurie labai skiriasi nuo naudojimo sausumoje su sūriu vandeniu, dideliu drėgnumu ir agresyviomis atmosferos sąlygomis. Standartinė vėdinimo įranga tokiomis sąlygomis greitai sugenda ir sugenda.",
+    "whyImportantP2": "NOVVES jūrų vėdinimo sprendimai yra sukurti su nerūdijančio plieno (SS316), specialiomis dangomis ir jūrinės klasifikacinės bendrovės (DNV-GL, Lloyd's, BV) patvirtinimais. Patikimas vėdinimas užtikrinamas mašinų skyriuose, keleivių erdvėse, krovinių skyriuose ir specialiuose skyriuose.",
+    "steps": [
+      {
+        "label": "Projekto analizė",
+        "desc": "Laivo/platformos tipas, zonos klasifikacija, jūrinio standarto reikalavimai"
+      },
+      {
+        "label": "Inžinerinis dizainas",
+        "desc": "Ventiliatorių pasirinkimas, ortakių projektavimas, medžiagų parinkimas, gaisro zonavimas"
+      },
+      {
+        "label": "Gamyba ir pristatymas",
+        "desc": "SS316/specialios dangos gamyba, jūrinės klasės sertifikuotų gaminių pristatymas"
+      },
+      {
+        "label": "Montavimas ir paleidimas",
+        "desc": "Laivų statyklos ar lauko įrengimas, eksploatacinių savybių patikrinimas ir klasės patvirtinimas"
+      }
+    ],
+    "systemLabel": "Sistemos architektūra",
+    "systemTitle": "Sprendimo komponentai",
+    "systemComponents": [
+      {
+        "title": "Jūriniai ašiniai ventiliatoriai",
+        "desc": "Atsparūs sūraus vandens korozijai, SS316 korpusas, jūrinės klasifikacijos patvirtinti ašiniai ventiliatoriai."
+      },
+      {
+        "title": "Jūrų išcentriniai ventiliatoriai",
+        "desc": "Aukšto slėgio, korozijai atsparūs išcentriniai ventiliatoriai mašinų skyriams ir krovinių skyriams."
+      },
+      {
+        "title": "Priešgaisrinės sklendės",
+        "desc": "Automatiškai užsidarančios priešgaisrinės sklendės, atitinkančios jūrinius priešgaisrinės saugos standartus."
+      },
+      {
+        "title": "Atsparios oro sąlygoms grotelės",
+        "desc": "Nuo bangų ir lietaus apsaugotos oro įsiurbimo/išleidimo grotelės."
+      },
+      {
+        "title": "Exproof ventiliatoriai (BEAR)",
+        "desc": "Jūrų teritorijoms, kuriose yra sprogios aplinkos pavojus, pavyzdžiui, krovinių triumams ir degalų zonoms."
+      },
+      {
+        "title": "Valdymas ir automatika",
+        "desc": "Laivybos patvirtinti valdymo pultai, priešgaisrinės signalizacijos integracija ir nuotolinis stebėjimas."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą dėl savo jūrų vėdinimo projekto",
+    "midCtaDesc": "Mūsų ekspertų inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Jūrinės klasės patvirtinimas",
+        "desc": "Gamyba patvirtinta klasifikacinių bendrovių, įskaitant DNV-GL, Lloyd's Register ir Bureau Veritas."
+      },
+      {
+        "title": "Atsparumas korozijai",
+        "desc": "Ilgalaikis veikimas su SS316 nerūdijančiu plienu, epoksidine danga ir specialiais lydiniais."
+      },
+      {
+        "title": "Priešgaisrinė sauga",
+        "desc": "Sklendės ir ventiliatoriai atitinka SOLAS ir jūrų priešgaisrinės saugos standartus."
+      },
+      {
+        "title": "Individualios gamybos galimybės",
+        "desc": "Individualizuoto dydžio, medžiagų ir talpos parinktys kiekvienam laivo ir platformos projektui."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kur jis naudojamas?",
+    "areasDesc": "Sprendimai visiems vėdinimo poreikiams jūrų sektoriuje.",
+    "areas": [
+      {
+        "title": "Keleiviniai laivai ir keltai",
+        "description": "Klimato kontrolė keleivių ir įgulos zonose",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Krovininiai laivai",
+        "description": "Krovinių skyriaus ir mašinų skyriaus vėdinimas",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Užsieninės platformos",
+        "description": "Atviros jūros platformos ventiliacija ir atsparus išmetimas",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Jachtos ir Mega jachtos",
+        "description": "Komfortiška ventiliacija ir mašinų skyriaus išmetimas",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ortakių ventiliatoriai",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC fanai",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kokius klasifikavimo patvirtinimus gali gauti jūrų gerbėjai?",
+        "a": "NOVVES jūriniai ventiliatoriai gali būti gaminami su patvirtinimais iš tarptautinių jūrų klasifikavimo bendrovių, įskaitant DNV-GL, Lloyd's Register, Bureau Veritas ir ABS."
+      },
+      {
+        "q": "Kodėl pirmenybė teikiama SS316 medžiagai?",
+        "a": "Dėl didelio atsparumo korozijai SS316 nerūdijantis plienas užtikrina daug ilgesnį veikimo laiką sūraus vandens aplinkoje, palyginti su standartiniu plienu. Jis ypač tinkamas virš denio ir oro sąlygoms atsparioms vietoms."
+      },
+      {
+        "q": "Kokie ventiliatoriai naudojami mašinų skyriaus vėdinimui?",
+        "a": "Mašinų skyriuose naudojami didelio tūrio radialiniai arba ašiniai ventiliatoriai, tinkami aukštai temperatūrai ir išmetamųjų dujų sąlygoms. Pirmenybė teikiama BEAR serijai, kai taikomi neaiškūs reikalavimai."
+      },
+      {
+        "q": "Ar galima modifikuoti esamus laivus?",
+        "a": "Taip, esamų laivų vėdinimo sistemos peržiūrai arba pajėgumų atnaujinimui yra modernizavimo sprendimų."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ieškote jūrinio vėdinimo sprendimo?",
+    "finalCtaDesc": "Susisiekite su mūsų komanda dėl inžinerinio projektavimo ir pasiūlymo jūsų laivo / platformos projektui.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "projeBazliOzelImalat": {
+    "breadcrumbCurrent": "Projektinė gamyba pagal užsakymą",
+    "badge": "Sprendimai",
+    "titleLine1": "Projektinis",
+    "titleHighlight": "Gamyba pagal užsakymą",
+    "subtitle": "Vėdinimo sprendimai, sukurti pagal jūsų projekto konkretaus dydžio, medžiagų ir eksploatacinių savybių reikalavimus, nepatenka į standartinį gaminių asortimentą.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Mūsų paslaugos",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      {
+        "value": "3D CAD",
+        "label": "Dizainas"
+      },
+      {
+        "value": "FEA",
+        "label": "Struktūrinė analizė"
+      },
+      {
+        "value": "CNC",
+        "label": "Tikslioji gamyba"
+      },
+      {
+        "value": "75+",
+        "label": "Individualūs projektai"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Kiekvienas projektas yra unikalus",
+    "whyImportantP1": "Kai kuriems projektams taikomi specialūs dydžio, medžiagos, atsparumo temperatūrai ar eksploatacinių savybių reikalavimai, kurių nėra standartiniuose gaminių kataloguose. Standartiniais sprendimais negalima patenkinti aukštos temperatūros, korozinės aplinkos, specialių montavimo vietų arba neįprastų srauto / slėgio poreikių.",
+    "whyImportantP2": "NOVVES gamina konkrečiam projektui skirtus ventiliatorius, sklendes, ortakius ir priedus, turėdama savo inžinierių komandą ir gamybos patalpas. Kiekvienas pritaikytas gaminys yra inžineriškai paremtas 3D CAD dizainu, FEA struktūrine analize ir CFD srauto modeliavimu.",
+    "steps": [
+      {
+        "label": "Reikalavimo apibrėžimas",
+        "desc": "Pasirinktinis dydis, medžiaga, temperatūra, srautas, slėgis ir montavimo sąlygos"
+      },
+      {
+        "label": "Inžinerinis dizainas",
+        "desc": "3D CAD modeliavimas, FEA analizė, CFD modeliavimas ir detalūs brėžiniai"
+      },
+      {
+        "label": "Prototipas ir gamyba",
+        "desc": "CNC apdirbimas, suvirinimas, dinaminis balansavimas ir kokybės kontrolė"
+      },
+      {
+        "label": "Testavimas ir pristatymas",
+        "desc": "Veikimo testavimas, vibracijos matavimas, sertifikavimas ir pristatymas"
+      }
+    ],
+    "systemLabel": "Gamybos galimybės",
+    "systemTitle": "Ką galime pagaminti?",
+    "systemComponents": [
+      {
+        "title": "Individualaus dydžio ventiliatoriai",
+        "desc": "Ašiniai, išcentriniai ir mišraus srauto ventiliatoriai nestandartinio skersmens, pločio ir galios verčių."
+      },
+      {
+        "title": "Aukštos temperatūros ventiliatoriai",
+        "desc": "Specialios medžiagos ir konstrukcijos, skirtos nuolatiniam darbui iki 400°C ir aukštesnėje temperatūroje."
+      },
+      {
+        "title": "Korozinės aplinkos ventiliatoriai",
+        "desc": "Nerūdijantis plienas, titanas, FRP ir specialios dangos galimybės korozinėms dujoms/garams aplinkoje."
+      },
+      {
+        "title": "Individualūs amortizatoriai ir ortakiai",
+        "desc": "Nestandartinio dydžio ir medžiagos sklendės, ortakio ir jungiamųjų elementų gamyba."
+      },
+      {
+        "title": "Specialūs montavimo sprendimai",
+        "desc": "Individualūs tvirtinimo laikikliai, skirti uždaroms erdvėms, lubų pakabai, platformoms arba vibraciją izoliuojančiai įrenginiams."
+      },
+      {
+        "title": "Testavimas ir sertifikavimas",
+        "desc": "Aerodinaminių charakteristikų testavimas, vibracijos analizė ir konkrečiam projektui skirto sertifikato rengimas."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą savo individualiam gamybos projektui",
+    "midCtaDesc": "Mūsų inžinierių komanda įvertins jūsų konkrečius reikalavimus.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Inžinerijos remiamas",
+        "desc": "Dizainas patikrintas naudojant 3D CAD, FEA ir CFD; konkretaus projekto skaičiavimo ataskaitos."
+      },
+      {
+        "title": "Nuosavas gamybos įrenginys",
+        "desc": "Tiksli gamyba su CNC apdirbimu, suvirinimu robotu ir dinaminiu balansavimu."
+      },
+      {
+        "title": "Lankstus medžiagų pasirinkimas",
+        "desc": "Anglinis plienas, nerūdijantis plienas, aliuminis, FRP, titanas ir specialūs lydiniai."
+      },
+      {
+        "title": "Greitas prototipų kūrimas",
+        "desc": "Greitas perėjimas nuo dizaino prie prototipo ir veikimo patikrinimo."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kuriuose projektuose jis naudojamas?",
+    "areasDesc": "Projektinė gamyba visiems specialiems poreikiams, kurių neįmanoma išspręsti standartiniais gaminiais.",
+    "areas": [
+      {
+        "title": "Pramoninių procesų įrenginiai",
+        "description": "Specialūs ventiliatoriai, skirti aukštai temperatūrai ir korozinėms dujoms",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX ventiliatoriai",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Elektrinės",
+        "description": "Individualaus dydžio ir galios išmetimo ir tiekimo ventiliatoriai",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Jūrų ir jūros projektai",
+        "description": "Jūriniai ventiliatoriai, kuriems reikalingos klasėje patvirtintos specialios medžiagos ir dydžiai",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Pramoniniai ventiliatoriai",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Infrastruktūros ir tunelių projektai",
+        "description": "Tuneliniai ventiliatoriai su pasirinktiniu skersmeniu ir našumo vertėmis",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Ar yra minimalus užsakymo kiekis gaminant pagal užsakymą?",
+        "a": "Ne, kadangi NOVVES dirba projektiniu pagrindu, priimami ir vieno vieneto individualūs gamybos užsakymai."
+      },
+      {
+        "q": "Koks yra pagal užsakymą pagamintos gamybos laikas?",
+        "a": "Priklausomai nuo gaminio sudėtingumo, taikomas 4-12 savaičių pristatymo laikas po projekto patvirtinimo. Neatidėliotiniems projektams galima pasinaudoti pagreitintos gamybos programa."
+      },
+      {
+        "q": "Ar galima modifikuoti esamą ventiliatorių?",
+        "a": "Taip, esamų ventiliatorių modifikavimo paslaugos, tokios kaip sparnuotės keitimas, korpuso peržiūra, variklio atnaujinimas ar medžiagų keitimas, yra prieinamos."
+      },
+      {
+        "q": "Kokios testavimo ir sertifikavimo paslaugos siūlomos?",
+        "a": "Parengiamos aerodinaminių charakteristikų bandymų (srauto, slėgio, galios), vibracijos analizės, triukšmo matavimo ir konkrečiam projektui skirtų bandymų ataskaitos. Galimos AMCA, ISO ir EN standartus atitinkančios testavimo galimybės."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ar turite individualų gamybos poreikį?",
+    "finalCtaDesc": "Pasidalykite savo reikalavimais ir leiskite mūsų inžinierių komandai pateikti individualų sprendimo pasiūlymą.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  },
+  "cfdDanismanlik": {
+    "breadcrumbCurrent": "CFD inžinerinės konsultacijos",
+    "badge": "Sprendimai",
+    "titleLine1": "CFD inžinerija",
+    "titleHighlight": "Konsultacijos",
+    "subtitle": "Modeliavimo palaikomos inžinerinės paslaugos su Computational Fluid Dynamics (CFD) vėdinimo, dūmų šalinimo ir šilumos perdavimo projektams.",
+    "ctaPrimary": "Gaukite projekto pasiūlymą",
+    "ctaSecondary": "Mūsų paslaugos",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      {
+        "value": "3D CFD",
+        "label": "Modeliavimas"
+      },
+      {
+        "value": "ANSYS",
+        "label": "Sprendimo platforma"
+      },
+      {
+        "value": "ISO 7730",
+        "label": "Komforto analizė"
+      },
+      {
+        "value": "85+",
+        "label": "Baigtos analizės"
+      }
+    ],
+    "whyImportantLabel": "Kodėl Svarbu",
+    "whyImportantTitle": "Imituokite prieš kurdami",
+    "whyImportantP1": "Žinant tikrąjį vėdinimo ir dūmų ištraukimo sistemų veikimą prieš montavimą, išvengiama brangiai kainuojančių klaidų ir galima dokumentuoti atitiktį reikalavimams. CFD analizė vizualizuoja oro srautą, temperatūros pasiskirstymą ir dūmų plitimą naudojant 3D kompiuterinį modeliavimą.",
+    "whyImportantP2": "NOVVES CFD komanda atlieka konkrečiam projektui skirtus modeliavimus naudodama ANSYS Fluent ir OpenFOAM platformas. Teikiama inžinerinė pagalba reaktyvinių ventiliatorių išdėstymui, dūmų šalinimo laikui, komforto analizei, šilumos apkrovos skaičiavimui ir sistemos optimizavimui.",
+    "steps": [
+      {
+        "label": "Projekto apibrėžimas",
+        "desc": "Geometrija, ribinės sąlygos, gaisro scenarijus arba vėdinimo reikalavimų apibrėžimas"
+      },
+      {
+        "label": "3D modeliavimas ir tinklelis",
+        "desc": "CAD geometrijos kūrimas arba importavimas, skaičiavimo tinklo generavimas"
+      },
+      {
+        "label": "Modeliavimas ir sprendimas",
+        "desc": "Srauto, temperatūros ir dūmų sprendimas su RANS/LES turbulencijos modeliais"
+      },
+      {
+        "label": "Ataskaitų teikimas ir optimizavimas",
+        "desc": "Rezultatų vizualizavimas, veiklos vertinimas, tobulinimo rekomendacijos"
+      }
+    ],
+    "systemLabel": "Aptarnavimo sritys",
+    "systemTitle": "Ką gali padaryti CFD?",
+    "systemComponents": [
+      {
+        "title": "Dūmų ištraukimo modeliavimas",
+        "desc": "Dūmų plitimo, matomumo atstumo ir evakuacijos laiko analizė gaisro scenarijuose."
+      },
+      {
+        "title": "Reaktyvinių ventiliatorių išdėstymo optimizavimas",
+        "desc": "Reaktyvinio ventiliatoriaus skaičiaus, padėties ir krypties kampo nustatymas modeliuojant automobilių stovėjimo aikštelėse ir tuneliuose."
+      },
+      {
+        "title": "Komfortinio vėdinimo analizė",
+        "desc": "Temperatūros, oro greičio ir PMV/PPD komforto įvertinimas biuruose, prekybos centruose ir surinkimo vietose."
+      },
+      {
+        "title": "Šilumos perdavimo analizė",
+        "desc": "Temperatūros pasiskirstymo modeliavimas transformatorinėse, duomenų centruose ir pramoniniuose objektuose."
+      },
+      {
+        "title": "Švaraus kambario oro srautas",
+        "desc": "Dalelių pasiskirstymas, laminarinio srauto patikra ir slėgio kaskados analizė švariose patalpose."
+      },
+      {
+        "title": "Sistemos optimizavimas",
+        "desc": "Esamų vėdinimo sistemų CFD peržiūra ir veiklos gerinimo rekomendacijos."
+      }
+    ],
+    "midCtaTitle": "Gaukite pasiūlymą savo CFD analizės projektui",
+    "midCtaDesc": "Mūsų CFD inžinierių komanda susisieks su jumis kuo greičiau.",
+    "midCtaButton": "Gaukite citatą",
+    "advantagesLabel": "Kodėl NOVVES",
+    "advantagesTitle": "Pagrindiniai privalumai",
+    "advantages": [
+      {
+        "title": "Patyrusi CFD komanda",
+        "desc": "Specialistų CFD analitikų komanda, turinti patirties vėdinimo ir gaisro inžinerijos srityse."
+      },
+      {
+        "title": "Pramonėje pirmaujanti programinė įranga",
+        "desc": "Patikimi modeliavimo rezultatai naudojant ANSYS Fluent, OpenFOAM ir FDS platformas."
+      },
+      {
+        "title": "Teisės aktų laikymasis",
+        "desc": "Analizė ir ataskaitų teikimas atitinka EN 12101, ASHRAE ir NFPA standartus."
+      },
+      {
+        "title": "Dizaino integravimas",
+        "desc": "CFD rezultatai tiesiogiai integruoti į inžinerinį procesą, kad būtų užtikrintas įgyvendinimas."
+      }
+    ],
+    "areasLabel": "Taikymo sritys",
+    "areasTitle": "Kuriuose projektuose jis naudojamas?",
+    "areasDesc": "Konsultacinės paslaugos visuose vėdinimo ir šilumos perdavimo projektuose, kuriems reikalinga CFD analizė.",
+    "areas": [
+      {
+        "title": "Uždaros automobilių stovėjimo aikštelės projektai",
+        "description": "Reaktyvinio ventiliatoriaus išdėstymas ir CO/dūmų ištraukimo modeliavimas",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortizatoriai",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Tunelio vėdinimo projektai",
+        "description": "Gaisro scenarijus ir oro greičio analizė",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ašiniai ventiliatoriai",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Duomenų centro aušinimas",
+        "description": "Temperatūros pasiskirstymas stovo lygiu ir viešosios interneto prieigos taško analizė",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Vėdinimo įrenginiai",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC fanai",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Dūmų kontrolė daugiaaukščiuose pastatuose",
+        "description": "Laiptinės slėgio ir dūmų zonavimo modeliavimas",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Korinio ryšio ventiliatoriai",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+            "image": "/images/products/dragonfly-c.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Dažnai užduodami klausimai",
+    "faqItems": [
+      {
+        "q": "Kiek laiko trunka CFD analizė?",
+        "a": "Priklausomai nuo projekto sudėtingumo, tai trunka 1-4 savaites. Paprasta vieno scenarijaus analizė yra trumpesnė, o kelių gaisrų scenarijai arba optimizavimo tyrimai užtrunka ilgiau."
+      },
+      {
+        "q": "Kokios informacijos reikia CFD analizei?",
+        "a": "Reikalingi architektūriniai planai (DWG/Revit), ventiliatoriaus/grotelių išdėstymo informacija, veikimo sąlygos (temperatūra, srautas ir kt.) ir gaisro scenarijaus apibrėžimai, jei reikia."
+      },
+      {
+        "q": "Ar CFD ataskaita priimama kaip oficialus dokumentas?",
+        "a": "CFD ataskaita naudojama kaip pagalbinis inžinerinis dokumentas savivaldybės ir priešgaisrinės tarnybos patvirtinimo procesuose. Kiekvienam projektui pateikiamos pasirašytos ir užantspauduotos ataskaitos."
+      },
+      {
+        "q": "Ar galiu gauti tik CFD analizės paslaugą?",
+        "a": "Taip, NOVVES taip pat siūlo nepriklausomas CFD konsultavimo paslaugas. Modeliavimo ir ataskaitų teikimo paslaugas galima gauti nesusietus su ventiliatorių ir įrangos pardavimu."
+      }
+    ],
+    "finalCtaLabel": "Jūsų projektui",
+    "finalCtaTitle": "Ar jums reikia CFD analizės?",
+    "finalCtaDesc": "Susisiekite su mūsų CFD inžinierių komanda dėl projekto apibrėžimo, modeliavimo ir pasiūlymo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Prašyti kainos pasiūlymo"
+  }
+}

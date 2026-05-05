@@ -3,12 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { serviceDetailMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "CFD Analizi | Novves",
-  description:
-    "NOVVES CFD (Hesaplamalı Akışkanlar Dinamiği) analizleri — gerçek senaryolar, gerçek veriler, güvenli çözümler.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return serviceDetailMetadata(locale, "cfdAnalizi");
+}
 
 const accentMap = [
   { accent: "border-l-[#1d2f4d]", badge: "bg-[#1d2f4d]/12 text-[#1d2f4d]" },

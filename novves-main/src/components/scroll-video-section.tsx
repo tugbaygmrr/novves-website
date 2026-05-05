@@ -49,6 +49,10 @@ const SCROLL_SUB_DARK: readonly [number, number, number] = [209, 209, 209]; // #
 const SCROLL_SUB_LIGHT: readonly [number, number, number] = [58, 62, 74];
 const SCROLL_DIVIDER_LIGHT = "rgb(209, 206, 199)"; // #D1CEC7
 
+/** Masaüstü scroll animasyonu — tüm kareleri aynı anda yüklemek zayıf PC’lerde donmaya yol açar */
+const FRAME_LOAD_RADIUS = 15;
+const FRAME_EVICT_DISTANCE = 42;
+
 export function ScrollVideoSection({
   framesPath,
   totalFrames,
@@ -81,31 +85,19 @@ export function ScrollVideoSection({
   const sideLabelRef = useRef<HTMLSpanElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
   const endCardRef = useRef<HTMLDivElement>(null);
-  const imagesRef = useRef<HTMLImageElement[]>([]);
+  const frameCacheRef = useRef<Map<number, HTMLImageElement>>(new Map());
   const currentFrameRef = useRef(0);
   const rafRef = useRef<number>(0);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => { setMounted(true); }, []);
 
-  const preloadImages = useCallback(() => {
-    const images: HTMLImageElement[] = [];
-    for (let i = 1; i <= totalFrames; i++) {
-      const img = new window.Image();
-      const num = String(i).padStart(4, "0");
-      img.src = `${framesPath}/frame-${num}.jpg`;
-      images.push(img);
-    }
-    imagesRef.current = images;
-    return images;
-  }, [framesPath, totalFrames]);
-
   const renderFrame = useCallback((index: number) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-    const img = imagesRef.current[index];
+    const img = frameCacheRef.current.get(index);
     if (!img || !img.complete) return;
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
@@ -115,10 +107,41 @@ export function ScrollVideoSection({
   useEffect(() => {
     if (!mounted) return;
 
-    const images = preloadImages();
-    const first = images[0];
-    if (first.complete) renderFrame(0);
-    else first.onload = () => renderFrame(0);
+    const cache = frameCacheRef.current;
+    const maxIdx = totalFrames - 1;
+
+    function frameSrc(i: number) {
+      const num = String(i + 1).padStart(4, "0");
+      return `${framesPath}/frame-${num}.jpg`;
+    }
+
+    function syncFrameWindow(centerIndex: number) {
+      const lo = Math.max(0, centerIndex - FRAME_LOAD_RADIUS);
+      const hi = Math.min(maxIdx, centerIndex + FRAME_LOAD_RADIUS);
+      for (let i = lo; i <= hi; i++) {
+        if (cache.has(i)) continue;
+        const img = new window.Image();
+        img.decoding = "async";
+        img.onload = () => {
+          if (currentFrameRef.current === i) renderFrame(i);
+        };
+        img.src = frameSrc(i);
+        cache.set(i, img);
+      }
+      for (const key of [...cache.keys()]) {
+        if (Math.abs(key - centerIndex) > FRAME_EVICT_DISTANCE) {
+          cache.delete(key);
+        }
+      }
+    }
+
+    syncFrameWindow(0);
+    const first = cache.get(0);
+    if (first?.complete) renderFrame(0);
+    else if (first)
+      first.onload = () => {
+        if (currentFrameRef.current === 0) renderFrame(0);
+      };
 
     function onScroll() {
       rafRef.current = requestAnimationFrame(() => {
@@ -206,6 +229,7 @@ export function ScrollVideoSection({
         }
 
         const frameIndex = Math.round(progress * (totalFrames - 1));
+        syncFrameWindow(frameIndex);
         if (frameIndex !== currentFrameRef.current) {
           currentFrameRef.current = frameIndex;
           renderFrame(frameIndex);
@@ -255,8 +279,9 @@ export function ScrollVideoSection({
     return () => {
       window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(rafRef.current);
+      cache.clear();
     };
-  }, [mounted, preloadImages, renderFrame, totalFrames]);
+  }, [mounted, framesPath, renderFrame, totalFrames]);
 
   return (
     <>
@@ -615,6 +640,22 @@ function MobileScrollSection({
       cancelAnimationFrame(rafId);
     };
   }, [totalFrames]);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth >= 1024) return;
+
+    const around = [-2, -1, 1, 2, 3];
+    const preloadIndexes = around
+      .map((delta) => Math.min(Math.max(mobileFrame + delta, 1), totalFrames))
+      .filter((value, index, arr) => arr.indexOf(value) === index);
+
+    preloadIndexes.forEach((idx) => {
+      const num = String(idx).padStart(4, "0");
+      const img = new window.Image();
+      img.decoding = "async";
+      img.src = `${framesPath}/frame-${num}.jpg`;
+    });
+  }, [framesPath, mobileFrame, totalFrames]);
 
   const finalFrameSrc = `${framesPath}/frame-${String(mobileFrame).padStart(4, "0")}.jpg`;
   const transition = Math.min(Math.max((mobileProgress - 0.08) / 0.76, 0), 1);

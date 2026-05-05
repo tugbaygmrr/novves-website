@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 import { ProductDetailPage } from "@/components/product-detail-page";
 
-export const metadata: Metadata = {
-  title: "Fox - Sığınak Fanları | Novves",
-  description: "Fox serisi sığınak fanları — radyasyon, nükleer, biyolojik ve kimyasal tehditlere karşı koruma.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "siginakFanlari");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

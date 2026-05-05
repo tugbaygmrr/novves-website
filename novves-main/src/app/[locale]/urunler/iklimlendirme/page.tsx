@@ -3,12 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productCategoryMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "İklimlendirme Ürünleri | Novves",
-  description:
-    "NOVVES iklimlendirme ürünleri — klima santralleri, nem alma santralleri ve ısı geri kazanım cihazları.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productCategoryMetadata(locale, "iklimlendirme");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

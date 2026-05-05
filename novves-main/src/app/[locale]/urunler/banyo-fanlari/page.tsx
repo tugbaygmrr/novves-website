@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 import { ProductDetailPage } from "@/components/product-detail-page";
 
-export const metadata: Metadata = {
-  title: "Seahorse - Banyo Fanları | Novves",
-  description: "Seahorse serisi banyo fanları — dekoratif ve tavan tipi aspiratörler.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "banyoFanlari");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

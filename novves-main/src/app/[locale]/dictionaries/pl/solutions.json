@@ -1,0 +1,2722 @@
+{
+  "dumanIsiTahliye": {
+    "breadcrumbCurrent": "Ekstrakcja dymu i ciepła",
+    "badge": "Rozwiązania",
+    "titleLine1": "Ekstrakcja dymu i ciepła",
+    "titleHighlight": "Systemy",
+    "subtitle": "Kontrolowane usuwanie dymu i ciepła podczas pożarów; zgodne z przepisami, wspierane przez inżynierów, kompleksowe rozwiązania.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Analiza CFD",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      {
+        "value": "EN 12101-3",
+        "label": "Zgodność ze standardami"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Odporność na ogień"
+      },
+      {
+        "value": "CFD",
+        "label": "Obsługiwana symulacja"
+      },
+      {
+        "value": "113+",
+        "label": "Ukończone projekty"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Pierwszym zagrożeniem w przypadku pożaru jest dym",
+    "whyImportantP1": "Statystyki pożarów pokazują, że większość ofiar nie jest spowodowana płomieniami, ale gęstym dymem i toksycznymi gazami. Skuteczny system oddymiania zapewnia widoczność i oddychalność dróg ewakuacyjnych; ułatwia interwencję strażaków; minimalizuje uszkodzenia konstrukcji.",
+    "whyImportantP2": "NOVVES zarządza całym procesem od projektu po uruchomienie, korzystając z własnego zespołu inżynierów. Dla każdego projektu przeprowadzana jest analiza CFD w celu symulacji rozmieszczenia wentylatorów, scenariuszy rozprzestrzeniania się dymu i czasu ewakuacji.",
+    "steps": [
+      {
+        "label": "Ankieta i analiza",
+        "desc": "Inspekcja na miejscu, symulacja CFD, sprawdzenie zgodności z przepisami"
+      },
+      {
+        "label": "Inżynieria",
+        "desc": "Dobór wentylatorów, projekt kanałów, rozmieszczenie przepustnic, scenariusz automatyzacji"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Produkcja własna, profesjonalny montaż na miejscu"
+      },
+      {
+        "label": "Uruchomienie i konserwacja",
+        "desc": "Testowanie, raportowanie, przeglądy okresowe i wsparcie serwisowe 24/7"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Systemy wentylatorów strumieniowych",
+        "desc": "Osiowe i promieniowe wentylatory strumieniowe odporne na wysokie temperatury, przeznaczone do kierowania powietrza i odprowadzania dymu w pomieszczeniach zamkniętych."
+      },
+      {
+        "title": "Wentylatory oddymiające",
+        "desc": "Certyfikat EN 12101-3, odporność ogniowa klasy F300/2H przy 2 godzinach ciągłej pracy w temperaturze 300°C."
+      },
+      {
+        "title": "Systemy amortyzatorów",
+        "desc": "Klapy dymowe i klapy nadmiarowe z wałem napędzanym serwomotorem do stosowania w strefach pożarowych i zadymionych."
+      },
+      {
+        "title": "Czujniki i wykrywanie",
+        "desc": "Czujniki CO, dymu i ciepła z gromadzeniem danych w oparciu o strefę i monitorowaniem wartości granicznych."
+      },
+      {
+        "title": "Panele automatyki",
+        "desc": "Sterowane przez PLC panele MCC, integracja z BMS, automatyczne zarządzanie wentylatorami w oparciu o scenariusze."
+      },
+      {
+        "title": "Inżynieria CFD",
+        "desc": "Specyficzna dla projektu analiza obliczeniowej dynamiki płynów, symulacja scenariuszy pożarowych i raportowanie."
+      }
+    ],
+    "midCtaTitle": "Poproś o ankietę i wycenę swojego projektu",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Zgodność z normą EN 12101-3",
+        "desc": "Wszystkie systemy są projektowane i certyfikowane zgodnie z europejskimi normami bezpieczeństwa pożarowego."
+      },
+      {
+        "title": "Odporność ogniowa F300/2H",
+        "desc": "2 godziny ciągłej pracy w temperaturze 300°C, zapewniające krytyczny czas ewakuacji."
+      },
+      {
+        "title": "Projekt obsługiwany przez CFD",
+        "desc": "Symulacja 3D dla każdego projektu w celu sprawdzenia rozprzestrzeniania się dymu, temperatury i odległości widoczności."
+      },
+      {
+        "title": "Kompleksowa obsługa",
+        "desc": "Przegląd, inżynieria, produkcja, instalacja, uruchomienie i okresowa konserwacja z jednego źródła."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Dla każdego projektu ustalana jest najbardziej odpowiednia kombinacja produktów.",
+    "areas": [
+      {
+        "title": "Zamknięte parkingi",
+        "description": "Ekstrakcja CO + odprowadzanie dymu podczas pożarów",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Tunele autostradowe i kolejowe",
+        "description": "Strefy pożarowe i kierowanie powietrzem",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe z osłoną",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Centra handlowe",
+        "description": "Kontrola dymu i ekstrakcja",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe z osłoną",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Stadiony i sale kongresowe",
+        "description": "Awaryjne oddymianie",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe z osłoną",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Przemysłowe obiekty produkcyjne",
+        "description": "Ekstrakcja gorącego gazu związana z procesem",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Szpitale i Zakłady Opieki Zdrowotnej",
+        "description": "Strefy zadymione w obszarach pacjentów",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Lotniska i stacje metra",
+        "description": "Oddymianie dolnej warstwy",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe z osłoną",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Magazyny i centra logistyczne",
+        "description": "Kontrola dymu w dużych ilościach",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Elektrownie i pomieszczenia generatorów",
+        "description": "Wydech chroniący przed pożarami urządzeń elektrycznych",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Fani Exproofa",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Hotele i rezydencje (wieżowce)",
+        "description": "Zwiększanie ciśnienia na klatce schodowej, oddymianie",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "W jakich budynkach instalacja oddymiająca jest obowiązkowa?",
+        "a": "Systemy oddymiania są obowiązkowe na zamkniętych parkingach, centrach handlowych, wieżowcach, tunelach i obiektach przemysłowych zgodnie z przepisami przeciwpożarowymi. Skontaktuj się z nami, aby uzyskać analizę potrzeb dotyczącą konkretnego projektu."
+      },
+      {
+        "q": "Co oznacza certyfikacja EN 12101-3?",
+        "a": "EN 12101-3 to europejska norma potwierdzająca zdolność wentylatorów oddymiających i odprowadzających ciepło do pracy przez określony czas w warunkach pożaru (wysoka temperatura). Produkty NOVVES są produkowane zgodnie z tą normą."
+      },
+      {
+        "q": "Dlaczego analiza CFD jest konieczna?",
+        "a": "Analiza CFD umożliwia symulację rozmieszczenia wentylatorów strumieniowych, scenariuszy rozprzestrzeniania się dymu i czasów ewakuacji w środowisku komputerowym. Weryfikuje to działanie systemu przed instalacją i dokumentuje zgodność z przepisami."
+      },
+      {
+        "q": "Czy możliwa jest integracja z istniejącymi systemami?",
+        "a": "Tak, systemy oddymiania NOVVES można zintegrować z istniejącą infrastrukturą BMS, centralami sygnalizacji pożaru i systemami automatyki."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Czy potrzebujesz systemu oddymiania?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem inżynierów w sprawie ankiet, analiz CFD, procesów inżynieryjnych i ofertowych.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "konforIklimlendirme": {
+    "breadcrumbCurrent": "Komfortowa klimatyzacja",
+    "badge": "Rozwiązania",
+    "titleLine1": "Komfortowa klimatyzacja",
+    "titleHighlight": "Systemy",
+    "subtitle": "Idealna temperatura, wilgotność i jakość powietrza w biurach, centrach handlowych, hotelach i budynkach komercyjnych; energooszczędne, ciche i komfortowe rozwiązania w zakresie klimatyzacji.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/iklimlendirme",
+    "trustStrip": [
+      {
+        "value": "Silnik EC",
+        "label": "Efektywność energetyczna"
+      },
+      {
+        "value": "Eurovent",
+        "label": "Atestowany"
+      },
+      {
+        "value": "BMS",
+        "label": "Integracja"
+      },
+      {
+        "value": "200+",
+        "label": "Ukończone projekty"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Wydajna instalacja HVAC oznacza komfort i oszczędności",
+    "whyImportantP1": "W budynkach komercyjnych i instytucjonalnych HVAC stanowi największą kategorię zużycia energii. Prawidłowo zaprojektowany system znacząco obniża koszty eksploatacji, jednocześnie poprawiając komfort mieszkańców.",
+    "whyImportantP2": "NOVVES oferuje rozwiązania dostosowane do konkretnych projektów z modułowymi centralami wentylacyjnymi i systemami odzysku ciepła. Wentylatory silnikowe EC, wysokowydajne wymienniki ciepła i inteligentne systemy sterowania minimalizują zużycie energii.",
+    "steps": [
+      {
+        "label": "Analiza potrzeb",
+        "desc": "Rodzaj budynku, obszar użytkowania, warunki klimatyczne i ocena wymagań dotyczących komfortu"
+      },
+      {
+        "label": "Projekt systemu",
+        "desc": "Dobór centrali, projekt kanału, rozmieszczenie nawiewników, scenariusz automatyzacji"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Produkcja central modułowych, profesjonalny montaż na miejscu"
+      },
+      {
+        "label": "Uruchomienie i konserwacja",
+        "desc": "Testowanie wydajności, równoważenie, filtrowanie okresowe i serwis konserwacyjny"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Centrale wentylacyjne (TIGER)",
+        "desc": "Wydajność 500 - 125 000 m3/h, modułowa konstrukcja, wysokowydajne wymienniki ciepła i opcje wentylatorów EC."
+      },
+      {
+        "title": "Jednostki odzysku ciepła",
+        "desc": "Odzyskuje energię z powietrza wywiewanego, redukując koszty ogrzewania/chłodzenia nawet o 70%."
+      },
+      {
+        "title": "Urządzenia osuszające (DOLPHIN)",
+        "desc": "Specjalistyczne rozwiązania do kontroli wilgotności w basenach krytych, SPA i obszarach o dużej wilgotności."
+      },
+      {
+        "title": "Wentylatory kanałowe (KOI)",
+        "desc": "Kompaktowe, ciche wentylatory kanałowe do podnoszenia ciśnienia w kanale i dystrybucji powietrza."
+      },
+      {
+        "title": "Systemy dyfuzorów i kratek",
+        "desc": "Nawiewniki sufitowe, ścienne i podłogowe z przepustnicami zapewniającymi równomierną dystrybucję powietrza."
+      },
+      {
+        "title": "Automatyka i sterowanie",
+        "desc": "Czujniki temperatury, wilgotności i CO2 z inteligentnymi panelami sterowania zintegrowanymi z BMS."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu komfortu HVAC",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Efektywność energetyczna",
+        "desc": "Do 40% oszczędności kosztów eksploatacji dzięki silnikom EC i odzyskowi ciepła."
+      },
+      {
+        "title": "Konstrukcja modułowa",
+        "desc": "Indywidualnie skonfigurowana produkcja centrali o wymaganej wydajności dla każdego projektu."
+      },
+      {
+        "title": "Cicha praca",
+        "desc": "Niski poziom hałasu w obszarach komfortu dzięki izolowanej akustycznie obudowie i wibroizolatorom."
+      },
+      {
+        "title": "Rozwiązanie z jednego źródła",
+        "desc": "Inżynieria, produkcja, instalacja i uruchomienie objęte gwarancją NOVVES."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Rozwiązania HVAC dostosowane do każdego typu budynku.",
+    "areas": [
+      {
+        "title": "Biura i centra biznesowe",
+        "description": "Komfortowa wentylacja w otwartych biurach i salach konferencyjnych",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Hotele i rezydencje",
+        "description": "Regulacja temperatury na poziomie pomieszczenia i dopływ świeżego powietrza",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Fani EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Centra handlowe",
+        "description": "Jednorodna kontrola klimatu w obszarach o dużym zagęszczeniu",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Szpitale i Zakłady Opieki Zdrowotnej",
+        "description": "Precyzyjna kontrola temperatury w higienicznych warunkach powietrza",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Strefy basenowe i SPA",
+        "description": "Wysoka kontrola wilgotności i komfort",
+        "products": [
+          {
+            "name": "DOLPHIN",
+            "type": "Urządzenia osuszające",
+            "image": "/images/products/dolphin-main.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Jaka jest różnica między centralą klimatyzacyjną a klimatyzatorem typu split?",
+        "a": "Centrala wentylacyjna to centralny system zapewniający jednorodną kontrolę temperatury, wilgotności i filtrację na dużych obszarach. Jednostki rozdzielone działają w oparciu o indywidualne pomieszczenia. W budynkach komercyjnych centralne systemy AHU są znacznie bardziej wydajne."
+      },
+      {
+        "q": "Ile energii oszczędza odzysk ciepła?",
+        "a": "W zależności od warunków pracy można osiągnąć 50-70% oszczędności energii. Energia cieplna z powietrza wywiewanego jest przekazywana do powietrza świeżego, co znacznie zmniejsza obciążenia grzewcze/chłodzące."
+      },
+      {
+        "q": "Czy system HVAC można zainstalować w istniejących budynkach?",
+        "a": "Tak, modułowe centrale NOVVES można dostosować do istniejących budynków dzięki ich kompaktowym wymiarom. Najbardziej odpowiednie rozwiązanie proponowane jest po badaniu terenu."
+      },
+      {
+        "q": "Jakie są interwały konserwacji?",
+        "a": "Wymiana filtra odbywa się zazwyczaj co 3-6 miesięcy. Zaleca się ogólną konserwację systemu co najmniej dwa razy w roku. Umowy dotyczące okresowej konserwacji NOVVES zapewniają, że Twoje systemy będą zawsze działać wydajnie."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz komfortowego systemu HVAC?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem inżynierów w sprawie projektu, wyboru centrali i wyceny.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "hijyenikFiltrasyon": {
+    "breadcrumbCurrent": "Higieniczna wentylacja filtracyjna",
+    "badge": "Rozwiązania",
+    "titleLine1": "Higieniczna filtracja",
+    "titleHighlight": "Wentylacja",
+    "subtitle": "Rozwiązania wentylacyjne z filtracją HEPA spełniające standardy pomieszczeń czystych dla szpitali, laboratoriów, zakładów farmaceutycznych i przetwórstwa spożywczego.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-filtrasyonu",
+    "trustStrip": [
+      {
+        "value": "HEPA H14",
+        "label": "Klasa filtracji"
+      },
+      {
+        "value": "ISO14644",
+        "label": "Standard pomieszczeń czystych"
+      },
+      {
+        "value": "GMP",
+        "label": "Zgodny projekt"
+      },
+      {
+        "value": "99.995%",
+        "label": "Zatrzymywanie cząstek"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Czyste powietrze, bezpieczne środowisko",
+    "whyImportantP1": "W szpitalnych salach operacyjnych, zakładach produkcji farmaceutycznej, obszarach przetwarzania żywności i laboratoriach unoszące się w powietrzu cząstki stałe i zanieczyszczenia mikrobiologiczne bezpośrednio wpływają na zdrowie ludzkie i jakość produktu.",
+    "whyImportantP2": "Higieniczne systemy wentylacji NOVVES tworzą środowisko zgodne z klasyfikacją pomieszczeń czystych poprzez wielostopniową filtrację (filtr wstępny G4 + filtr workowy F7/F9 + HEPA H13/H14), kontrolę nadciśnienia/podciśnienia oraz technologię przepływu laminarnego.",
+    "steps": [
+      {
+        "label": "Klasyfikacja pomieszczeń czystych",
+        "desc": "Określanie klasy ISO 14644 / GMP, wymagania dotyczące cząstek i ciśnienia"
+      },
+      {
+        "label": "Projekt systemu",
+        "desc": "Etapy filtracji, szybkość wymiany powietrza, konstrukcja kaskady ciśnieniowej"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Produkcja obudowy ze stali nierdzewnej, integracja filtra HEPA, montaż na miejscu"
+      },
+      {
+        "label": "Walidacja i konserwacja",
+        "desc": "Test liczby cząstek, test integralności filtra DOP/PAO, konserwacja okresowa"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Higieniczne centrale wentylacyjne",
+        "desc": "Obudowa ze stali nierdzewnej, wewnętrzne powłoki powierzchniowe, higieniczne panele i modułowa konstrukcja spełniająca standardy pomieszczeń czystych."
+      },
+      {
+        "title": "Jednostka filtrująca HEPA",
+        "desc": "Filtry HEPA klasy H13/H14 o współczynniku zatrzymywania cząstek na poziomie 99,995%."
+      },
+      {
+        "title": "Jednostka przepływu laminarnego (LAF)",
+        "desc": "Jednokierunkowy przepływ powietrza w salach operacyjnych i pomieszczeniach czystych zapewniający środowisko wolne od cząstek."
+      },
+      {
+        "title": "Systemy kontroli ciśnienia",
+        "desc": "Monitorowanie różnicy ciśnień pomiędzy pomieszczeniami i automatyczne sterowanie przepustnicą."
+      },
+      {
+        "title": "Filtr wstępny i filtr workowy",
+        "desc": "Filtry wstępne G4 i filtry workowe F7/F9 wydłużające żywotność HEPA dzięki wielostopniowej filtracji."
+      },
+      {
+        "title": "Monitoring i automatyzacja",
+        "desc": "Licznik cząstek, czujnik ciśnienia i integracja BMS do monitorowania 24/7."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu higienicznej wentylacji",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Zgodność z normą ISO 14644",
+        "desc": "Usługi projektowania i walidacji zgodne z klasyfikacją pomieszczeń czystych."
+      },
+      {
+        "title": "Produkcja zgodna z GMP",
+        "desc": "Projekt systemu spełniający wymagania GMP przemysłu farmaceutycznego i spożywczego."
+      },
+      {
+        "title": "Filtracja wielostopniowa",
+        "desc": "G4 + F7/F9 + HEPA H14 dla najwyższej czystości powietrza."
+      },
+      {
+        "title": "Kompleksowa obsługa",
+        "desc": "Projektowanie, produkcja, instalacja, walidacja i okresowa konserwacja z jednego źródła."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Rozwiązania dla wszystkich krytycznych obszarów wymagających higienicznej wentylacji.",
+    "areas": [
+      {
+        "title": "Sale operacyjne szpitala",
+        "description": "Przepływ laminarny, sterylne środowisko z filtrem HEPA",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Zakłady Produkcji Farmaceutycznej",
+        "description": "Wentylacja pomieszczeń czystych klasy GMP",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Obiekty do przetwarzania żywności",
+        "description": "Środowisko produkcyjne wolne od zanieczyszczeń",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Fani EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Laboratoria",
+        "description": "Izolowane środowiska o ujemnym/dodatnim ciśnieniu",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Produkcja elektroniki i półprzewodników",
+        "description": "Kontrola cząstek klasy Ultra Cleanroom",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Jak często należy wymieniać filtry HEPA?",
+        "a": "Żywotność filtra HEPA waha się od 2 do 5 lat, w zależności od warunków pracy. Regularna wymiana filtrów wstępnych i filtrów workowych znacznie wydłuża żywotność HEPA. Monitorowanie różnicy ciśnień dokładnie określa czas wymiany."
+      },
+      {
+        "q": "Jak ustalana jest klasyfikacja pomieszczeń czystych?",
+        "a": "Klasyfikacja opiera się na liczbie cząstek unoszących się w powietrzu zgodnie z normą ISO 14644-1. Na przykład norma ISO 5 jest powszechnie stosowana w salach operacyjnych, natomiast norma ISO 7-8 jest typowa dla obszarów produkcji farmaceutycznej."
+      },
+      {
+        "q": "Czy filtry HEPA można dodać do istniejącego systemu wentylacji?",
+        "a": "Integracja filtra HEPA jest możliwa w zależności od wydajności istniejącego systemu i spadku ciśnienia. Jednak w przypadku filtracji wielostopniowej ogólnie zaleca się rewizję centrali."
+      },
+      {
+        "q": "Czy świadczycie usługi walidacyjne?",
+        "a": "Tak, NOVVES świadczy usługi walidacyjne dla wszystkich projektów wentylacji higienicznej, w tym badanie liczby cząstek, badanie integralności filtra DOP/PAO i mapowanie ciśnienia."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz higienicznego systemu wentylacji?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem inżynierów w celu klasyfikacji pomieszczeń czystych, projektu i wyceny.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "endustriyelHavaYonetimi": {
+    "breadcrumbCurrent": "Zarządzanie powietrzem przemysłowym",
+    "badge": "Rozwiązania",
+    "titleLine1": "Przemysłowe powietrze",
+    "titleHighlight": "Kierownictwo",
+    "subtitle": "Skuteczne rozwiązania w zakresie wentylacji, wyciągu i nawiewu świeżego powietrza dla fabryk, obiektów produkcyjnych i obszarów przemysłowych.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "120°C",
+        "label": "Odporność na temperaturę"
+      },
+      {
+        "value": "ATEX",
+        "label": "Opcja Exproof"
+      },
+      {
+        "value": "IP55",
+        "label": "Klasa ochrony"
+      },
+      {
+        "value": "300+",
+        "label": "Ukończone projekty"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Właściwe zarządzanie powietrzem dla wydajności produkcji",
+    "whyImportantP1": "W obiektach przemysłowych powstające w procesie ciepło, wilgoć, akumulacja pyłu i gazu ma bezpośredni wpływ na zdrowie pracowników, jakość produktów i żywotność sprzętu. Efektywna gospodarka powietrzem jest także podstawowym wymogiem zapewnienia zgodności z bezpieczeństwem pracy.",
+    "whyImportantP2": "NOVVES zarządza projektami odprowadzania gorących gazów, dostarczania świeżego powietrza i wentylacji ogólnej z jednego źródła, oferując systemy wentylatorów o dużej wydajności, projekty kanałów i rozwiązania automatyzacji zaprojektowane specjalnie dla potrzeb obiektów przemysłowych.",
+    "steps": [
+      {
+        "label": "Ankieta witryny",
+        "desc": "Typ obiektu, warunki procesu, analiza temperatury/wilgotności/pyłu"
+      },
+      {
+        "label": "Projekt inżynieryjny",
+        "desc": "Dobór wentylatora, obliczenie kanału, zbilansowanie wywiewu/nawiewu"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Wentylatory do dużych obciążeń, produkcja kanałów przemysłowych i montaż na miejscu"
+      },
+      {
+        "label": "Uruchomienie i serwis",
+        "desc": "Pomiar wydajności, równoważenie, konserwacja okresowa i wsparcie 24/7"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Przemysłowe wentylatory odśrodkowe (NAUTILUS)",
+        "desc": "Odporne na wysokie ciśnienie i temperaturę, dwu- lub jednościenne wentylatory odśrodkowe."
+      },
+      {
+        "title": "Wentylatory osiowe (MARLIN)",
+        "desc": "Wentylatory osiowe z osłoną lub łopatkami o dużej wydajności do dużych przestrzeni."
+      },
+      {
+        "title": "Wentylatory dachowe (HERON)",
+        "desc": "Promieniowe i osiowe wentylatory dachowe do nawiewu lub świeżego powietrza na dachach obiektów."
+      },
+      {
+        "title": "Wentylatory ścienne (OWL)",
+        "desc": "Wentylatory ścienne promieniowe i osiowe do montażu fasadowego, do wywiewu lub nawiewu."
+      },
+      {
+        "title": "Wentylatory kanałowe (KOI)",
+        "desc": "Kompaktowe wentylatory kanałowe do podnoszenia ciśnienia w kanale i przenoszenia powietrza."
+      },
+      {
+        "title": "Automatyka i sterowanie",
+        "desc": "Przemienniki częstotliwości, czujniki temperatury/wilgotności, panele PLC i integracja z BMS."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu wentylacji przemysłowej",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Odporność na wysoką temperaturę",
+        "desc": "Opcje wentylatorów o wydajności ciągłej do 120°C dla wyciągu procesowego."
+      },
+      {
+        "title": "Wytrzymała konstrukcja",
+        "desc": "Gruba płyta obudowy, wzmocnione zespoły łożysk i opcje powłok odpornych na korozję."
+      },
+      {
+        "title": "Szeroki asortyment produktów",
+        "desc": "Wentylatory odśrodkowe, osiowe, dachowe, ścienne i kanałowe oferujące rozwiązania na każdą potrzebę."
+      },
+      {
+        "title": "Długotrwała wydajność",
+        "desc": "Ciągła wydajność dzięki grupom łożysk o dużej wytrzymałości, wyważaniu dynamicznemu i monitorowaniu drgań."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Rozwiązania dla wszystkich typów produkcji i obiektów wymagających wentylacji przemysłowej.",
+    "areas": [
+      {
+        "title": "Fabryki Motoryzacji",
+        "description": "Odciąg kabin lakierniczych, odciąg dymów spawalniczych",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Zakłady Metalowe i Stalowe",
+        "description": "Wylot gorących gazów i dopływ świeżego powietrza",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Fabryki Tekstylne",
+        "description": "Kontrola wilgotności i odsysanie pyłu włóknistego",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Zakłady Chemiczne i Petrochemiczne",
+        "description": "Wylot gazów korozyjnych i dopływ świeżego powietrza",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Magazyny i centra logistyczne",
+        "description": "Ogólna wentylacja i kontrola temperatury",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Na co należy zwrócić uwagę przy wyborze wentylatora przemysłowego?",
+        "a": "Objętość powietrza, strata ciśnienia, temperatura robocza, warunki otoczenia (kurz, wilgoć, gazy korozyjne) i poziom hałasu to kluczowe kryteria wyboru. Zespół inżynierów NOVVES określa najbardziej odpowiedni typ wentylatora dla każdego projektu."
+      },
+      {
+        "q": "Które wentylatory są używane w środowiskach o wysokiej temperaturze?",
+        "a": "Wentylatory odśrodkowe serii NAUTILUS przeznaczone są do pracy ciągłej w temperaturze do 120°C. W przypadku wyższych temperatur stosowane są specjalne materiały i rozwiązania chłodzące."
+      },
+      {
+        "q": "Czy wymagany jest wentylator z certyfikatem ATEX?",
+        "a": "Wentylatory serii BEAR z certyfikatem ATEX są obowiązkowe w obszarach zagrożonych atmosferą wybuchową (chemicznych, petrochemicznych, farb, silosów zbożowych itp.)."
+      },
+      {
+        "q": "Czy można dodać dodatkową wentylację do istniejących obiektów?",
+        "a": "Tak, do istniejących systemów kanałów i wentylatorów można dodać nowe przewody wydechowe lub zwiększyć wydajność. Najbardziej odpowiednie rozwiązanie zostanie określone po badaniu terenu."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz systemu wentylacji przemysłowej?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem, aby uzyskać badanie terenu, projekt techniczny i wycenę.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "hayvancilikTesisleri": {
+    "breadcrumbCurrent": "Wentylacja obiektów inwentarskich",
+    "badge": "Rozwiązania",
+    "titleLine1": "Obiekt hodowlany",
+    "titleHighlight": "Systemy wentylacyjne",
+    "subtitle": "Specjalistyczne rozwiązania wentylacyjne poprawiające dobrostan zwierząt i efektywność produkcji w kurnikach, oborach i obiektach inwentarskich.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "IP55",
+        "label": "Klasa ochrony"
+      },
+      {
+        "value": "Antykorozyjne",
+        "label": "Powłoka"
+      },
+      {
+        "value": "Silnik EC",
+        "label": "Oszczędność energii"
+      },
+      {
+        "value": "150+",
+        "label": "Ukończone projekty"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Dobrostan zwierząt i wydajność produkcji",
+    "whyImportantP1": "W obiektach hodowlanych amoniak, wilgoć, gromadzenie się ciepła i niewystarczająca cyrkulacja powietrza zwiększają poziom stresu u zwierząt, bezpośrednio zmniejszając wydajność wzrostu, wydajność mleka i produkcję jaj.",
+    "whyImportantP2": "NOVVES utrzymuje optymalny poziom temperatury, wilgotności i stężenia gazów dzięki odpornym na korozję systemom wentylatorów zaprojektowanym specjalnie dla kurników, obór i obiektów inwentarskich. Energooszczędne silniki EC i inteligentne systemy sterowania minimalizują koszty operacyjne.",
+    "steps": [
+      {
+        "label": "Analiza obiektu",
+        "desc": "Rodzaj zwierzęcia, wymiary obiektu, warunki klimatyczne i ocena potrzeb wentylacyjnych"
+      },
+      {
+        "label": "Projekt systemu",
+        "desc": "Wybór wentylatora, planowanie układu, równoważenie wlotu/wylotu powietrza, integracja chłodzenia"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Produkcja wentylatorów odpornych na korozję, profesjonalny montaż na miejscu"
+      },
+      {
+        "label": "Uruchomienie i wsparcie",
+        "desc": "Testowanie wydajności, kalibracja automatyki, konserwacja okresowa i wsparcie techniczne"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Wielbiciele Kurnika (KURCZAK)",
+        "desc": "Odporne na korozję wentylatory osiowe o dużej wydajności, specjalnie zaprojektowane do kurników dla drobiu i małych zwierząt gospodarskich."
+      },
+      {
+        "title": "Wentylatory wyciągowe naścienne (OWL)",
+        "desc": "Wentylatory wyciągowe z ocynkowanego korpusu, montowane na fasadach, przeznaczone do obór i budynków inwentarskich."
+      },
+      {
+        "title": "Wentylatory dachowe (HERON)",
+        "desc": "Odporne na korozję wentylatory dachowe do wyciągu dachowego i nawiewu świeżego powietrza."
+      },
+      {
+        "title": "Wyparne podkładki chłodzące",
+        "desc": "Systemy chłodzenia adiabatycznego o strukturze plastra miodu, które obniżają temperaturę w pomieszczeniach w gorącym klimacie."
+      },
+      {
+        "title": "Kratki wlotu powietrza",
+        "desc": "Regulowane kratki łopatkowe umożliwiające kontrolowany wlot świeżego powietrza i konfigurację wentylacji tunelowej."
+      },
+      {
+        "title": "Automatyka i sterowanie",
+        "desc": "Czujniki temperatury, wilgotności i amoniaku z automatyczną kontrolą prędkości wentylatora i zarządzaniem klimatem."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę wentylacji obiektu dla zwierząt",
+    "midCtaDesc": "Nasz zespół ekspertów przedstawi niestandardową propozycję rozwiązania dla Twojego obiektu.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Odporność na korozję",
+        "desc": "Ocynkowane i specjalne opcje powlekania zapewniające długotrwałą ochronę przed amoniakiem i wilgocią."
+      },
+      {
+        "title": "Wysoka objętość powietrza",
+        "desc": "Opcje wentylatorów o dużej średnicy zapewniające efektywną cyrkulację powietrza w dużych ilościach."
+      },
+      {
+        "title": "Efektywność energetyczna",
+        "desc": "Znaczące oszczędności kosztów energii dzięki silnikom EC i zmiennej kontroli prędkości."
+      },
+      {
+        "title": "Koncentracja na dobrostanie zwierząt",
+        "desc": "Minimalizacja czynników stresowych poprzez optymalną temperaturę i jakość powietrza."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Niestandardowe rozwiązania wentylacyjne dla każdego typu obiektu inwentarskiego.",
+    "areas": [
+      {
+        "title": "Kurniki (brojlery/nioski)",
+        "description": "Wentylacja tunelowa i chłodzenie wyparne",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Obory dla bydła",
+        "description": "Wyciąg amoniaku i dopływ świeżego powietrza",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Gospodarstwa mleczne",
+        "description": "Sterowanie klimatyzacją w pomieszczeniu udojowym i w kurniku",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Małe osiedle dla zwierząt gospodarskich",
+        "description": "Wentylacja w oborach dla owiec i kóz",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Który system wentylacji powinien być preferowany w kurnikach?",
+        "a": "W zależności od wielkości domu i klimatu stosuje się wentylację tunelową (podciśnienie) lub wentylację krzyżową. W gorącym klimacie niezbędna jest integracja wyparnej podkładki chłodzącej."
+      },
+      {
+        "q": "Jak kontrolowany jest poziom amoniaku?",
+        "a": "Ciągły monitoring za pomocą czujników amoniaku automatycznie dostosowuje prędkość wentylatora. Minimalne wskaźniki wentylacji utrzymują stężenie amoniaku poniżej bezpiecznych limitów."
+      },
+      {
+        "q": "Jak zarządzana jest wentylacja w miesiącach zimowych?",
+        "a": "Zimą tryb minimalnej wentylacji utrzymuje jakość powietrza, minimalizując jednocześnie straty ciepła. Wentylatory o zmiennej prędkości i automatyczna kontrola wlotu tworzą zrównoważony system."
+      },
+      {
+        "q": "Ile energii zużywa system?",
+        "a": "Systemy wentylatorów z silnikami EC zużywają o 30–50% mniej energii w porównaniu do konwencjonalnych silników prądu przemiennego. System automatyki uruchamia wentylatory tylko wtedy, gdy jest to potrzebne, zapobiegając marnowaniu energii."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz wentylacji obiektów inwentarskich?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem ekspertów, aby uzyskać analizę obiektu, projekt systemu i wycenę.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "trafoEnerjiOdalari": {
+    "breadcrumbCurrent": "Wentylatory pokojowe transformatorowe i energetyczne",
+    "badge": "Rozwiązania",
+    "titleLine1": "Pokój Transformatorów i Energii",
+    "titleHighlight": "Fani",
+    "subtitle": "Rozwiązania do kontroli temperatury i wentylacji dla stacji transformatorowych, pomieszczeń generatorów i obiektów dystrybucji energii.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "IP55",
+        "label": "Klasa ochrony"
+      },
+      {
+        "value": "Klasa F",
+        "label": "Izolacja silnika"
+      },
+      {
+        "value": "TEDAS",
+        "label": "Zgodny projekt"
+      },
+      {
+        "value": "500+",
+        "label": "Zainstalowane systemy"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Krytyczna kontrola temperatury dla żywotności sprzętu",
+    "whyImportantP1": "Stacje transformatorowe i pomieszczenia energetyczne mogą osiągać niebezpieczne poziomy temperatur z powodu ciepła wytwarzanego przez urządzenia elektryczne. Nadmierne ciepło powoduje degradację oleju transformatorowego, utratę izolacji kabla i awarie systemu.",
+    "whyImportantP2": "NOVVES zapewnia kontrolę temperatury w pomieszczeniach transformatorów, rozdzielniach średniego napięcia, pomieszczeniach generatorów i pomieszczeniach UPS za pomocą rozwiązań wentylacyjnych zaprojektowanych zgodnie ze specyfikacjami technicznymi TEDAS.",
+    "steps": [
+      {
+        "label": "Obliczanie obciążenia cieplnego",
+        "desc": "Moc transformatora, straty ciepła, wymiary pomieszczeń i analiza temperatury zewnętrznej"
+      },
+      {
+        "label": "Projekt systemu",
+        "desc": "Dobór wentylatora, rozmiar kratki, równoważenie wylotu/nawiewu"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Produkcja wentylatorów o stopniu ochrony IP55 i instalacja na miejscu"
+      },
+      {
+        "label": "Uruchomienie i testowanie",
+        "desc": "Pomiar temperatury, kalibracja termostatu i weryfikacja działania"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Wentylatory ścienne (OWL)",
+        "desc": "Ścienne wentylatory wyciągowe i nawiewne o stopniu ochrony IP55, z ocynkowaną obudową, do pomieszczeń transformatorowych."
+      },
+      {
+        "title": "Wentylatory dachowe (HERON)",
+        "desc": "Promieniowe i osiowe wentylatory dachowe do odprowadzania gorącego powietrza z dachów pomieszczeń energetycznych."
+      },
+      {
+        "title": "Wentylatory kanałowe (KOI)",
+        "desc": "Kompaktowe wentylatory kanałowe do transportu gorącego powietrza na duże odległości poprzez systemy kanałowe."
+      },
+      {
+        "title": "Kratki wlotu powietrza",
+        "desc": "Filtrowane i zabezpieczone przed owadami kratki wlotu powietrza zgodne ze specyfikacjami TEDAS."
+      },
+      {
+        "title": "Termostat i sterowanie",
+        "desc": "Automatyczne włączanie/wyłączanie wentylatora i sterowanie sceną w oparciu o temperaturę pokojową."
+      },
+      {
+        "title": "Systemy amortyzatorów",
+        "desc": "Przepustnice z napędem silnikowym i przepustnice równoważące ciśnienie do stosowania w strefach przeciwpożarowych i gorącego powietrza."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu wentylacji pomieszczenia transformatora",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Zgodny z TEDAS",
+        "desc": "Rozwiązania dotyczące wentylatorów i kratek w pełni zgodne ze specyfikacjami technicznymi Turkey Electricity Distribution."
+      },
+      {
+        "title": "Ochrona IP55",
+        "desc": "Wysoki stopień ochrony silników i obudów przed kurzem i rozpryskami wody."
+      },
+      {
+        "title": "Niski poziom hałasu",
+        "desc": "Cicha praca, zgodna ze środowiskiem w centrach dystrybucji energii."
+      },
+      {
+        "title": "Projekt o długiej żywotności",
+        "desc": "Długotrwała i niezawodna praca dzięki izolacji silnika klasy F i ocynkowanej obudowie."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Rozwiązania dla wszystkich krytycznych przestrzeni w infrastrukturze elektroenergetycznej.",
+    "areas": [
+      {
+        "title": "Stacje transformatorowe",
+        "description": "Transformatorowa kontrola strat ciepła i kontrola temperatury",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Pokoje generatorów",
+        "description": "Ekstrakcja spalin i ciepła",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "UPS-y i akumulatornie",
+        "description": "Kontrola wylotu i temperatury wodoru",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Rozdzielnica średniego napięcia",
+        "description": "Wylot nagromadzonego ciepła elektrycznego",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Dlaczego wentylacja w pomieszczeniach transformatorowych jest obowiązkowa?",
+        "a": "Straty ciepła z transformatorów kumulują się w pomieszczeniu, a temperatury otoczenia powyżej 40°C skracają żywotność transformatora, powodując degradację oleju i awarie izolacji. Specyfikacje TEDAS wymagają odpowiedniej wentylacji."
+      },
+      {
+        "q": "Jaki typ wentylatora jest odpowiedni do pomieszczeń transformatorowych?",
+        "a": "W zależności od wielkości pomieszczenia i obciążenia cieplnego stosuje się wentylatory ścienne (OWL), dachowe (HERON) lub kanałowe (KOI). Zwykle stosuje się kombinację wywiewu i nawiewu świeżego powietrza."
+      },
+      {
+        "q": "Jak działa praca sterowana termostatem?",
+        "a": "Gdy temperatura w pomieszczeniu osiągnie ustawioną górną granicę, wentylatory włączają się automatycznie i wyłączają, gdy temperatura spada. Wiele etapów zapewnia oszczędność energii."
+      },
+      {
+        "q": "Czy istnieją specjalne wymagania dotyczące pomieszczeń UPS?",
+        "a": "Tak, podczas ładowania w grupach akumulatorów może tworzyć się wodór. Dlatego pomieszczenia UPS wymagają odpowiednich systemów wentylacji i detekcji gazu, biorąc pod uwagę ryzyko wybuchu."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz rozwiązania w zakresie wentylacji pomieszczenia transformatora?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem inżynierów w celu obliczenia obciążenia cieplnego, projektu systemu i wyceny.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "seraTarimsal": {
+    "breadcrumbCurrent": "Wentylacja szklarniowa i rolnicza",
+    "badge": "Rozwiązania",
+    "titleLine1": "Szklarnie i rolnictwo",
+    "titleHighlight": "Systemy wentylacyjne",
+    "subtitle": "Rozwiązania wentylacyjne i chłodnicze zapewniające optymalną kontrolę klimatu w szklarniach, pieczarkarniach i budynkach rolniczych.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "Antykorozyjne",
+        "label": "Powłoka"
+      },
+      {
+        "value": "Silnik EC",
+        "label": "Oszczędność energii"
+      },
+      {
+        "value": "IoT",
+        "label": "Zdalne monitorowanie"
+      },
+      {
+        "value": "100+",
+        "label": "Ukończone projekty"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Właściwe zarządzanie klimatem dla wydajnego rolnictwa",
+    "whyImportantP1": "W szklarniach i obiektach rolniczych kontrolowanie temperatury, wilgotności i poziomu CO2 ma bezpośredni wpływ na wzrost roślin, jakość produktu i plon. Nadmierne ciepło latem i niedostateczna wentylacja zimą powodują poważne straty w plonach.",
+    "whyImportantP2": "NOVVES zapewnia chłodzenie wyparne, wentylację naturalną/mechaniczną oraz inteligentne rozwiązania w zakresie kontroli klimatu dla szklarni i obiektów rolniczych. Każdy projekt jest specjalnie projektowany w oparciu o regionalne dane klimatyczne i wymagania dotyczące upraw.",
+    "steps": [
+      {
+        "label": "Analiza obiektu",
+        "desc": "Wielkość szklarni, rodzaj upraw, regionalny klimat i ocena potrzeb wentylacyjnych"
+      },
+      {
+        "label": "Projekt systemu",
+        "desc": "Dobór wentylatora, podkładka chłodząca, wentylacja dachowa/boczna i scenariusz automatyzacji"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Produkcja odpornych na korozję wentylatorów i akcesoriów, montaż na miejscu"
+      },
+      {
+        "label": "Uruchomienie i wsparcie",
+        "desc": "Kalibracja czujników klimatycznych, testy automatyki i wsparcie techniczne"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Wentylatory wyciągowe naścienne (OWL)",
+        "desc": "Korpus ocynkowany, wentylatory o dużej wydajności montowane na ścianach szklarni."
+      },
+      {
+        "title": "Wyparne systemy chłodzenia",
+        "desc": "Systemy chłodzenia adiabatycznego o strukturze plastra miodu obniżające temperaturę w szklarni o 8-12°C."
+      },
+      {
+        "title": "Jednostka Wentylacji Dachowej (HERON)",
+        "desc": "Wentylatory dachowe do odprowadzania gorącego powietrza i dostarczania świeżego powietrza na dachach szklarni."
+      },
+      {
+        "title": "Wentylatory cyrkulacyjne",
+        "desc": "Poziome wentylatory cyrkulacyjne zapewniające równomierny rozkład temperatury i wilgotności wewnątrz szklarni."
+      },
+      {
+        "title": "Kurtyny wlotu powietrza",
+        "desc": "Zmotoryzowane systemy kurtyn bocznych i okien dachowych do kontrolowanego dopływu świeżego powietrza."
+      },
+      {
+        "title": "Inteligentna kontrola klimatu",
+        "desc": "Zdalne monitorowanie i zarządzanie w oparciu o IoT za pomocą czujników temperatury, wilgotności, CO2 i światła."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu wentylacji szklarni",
+    "midCtaDesc": "Nasz zespół ekspertów przedstawi niestandardową propozycję rozwiązania dla Twojego obiektu.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Trwałość rolnicza",
+        "desc": "Długotrwała wydajność w środowiskach o dużej wilgotności dzięki powłokom ocynkowanym i odpornym na korozję."
+      },
+      {
+        "title": "Energooszczędne chłodzenie",
+        "desc": "O 80% mniejsze zużycie energii w porównaniu do konwencjonalnej klimatyzacji z chłodzeniem wyparnym."
+      },
+      {
+        "title": "Inteligentna automatyzacja",
+        "desc": "Monitorowanie klimatu w oparciu o IoT ze zdalnym sterowaniem i wspomaganiem decyzji na podstawie danych."
+      },
+      {
+        "title": "Projektowanie oparte na projekcie",
+        "desc": "System wentylacji zaprojektowany na zamówienie w oparciu o wielkość szklarni, rodzaj upraw i dane klimatyczne."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Rozwiązania kontroli klimatu dla wszystkich zamkniętych obszarów produkcji rolnej.",
+    "areas": [
+      {
+        "title": "Szklarnie szklane i plastikowe",
+        "description": "Kontrola temperatury i wilgotności, chłodzenie wyparne",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Urządzenia do uprawy grzybów",
+        "description": "Precyzyjna kontrola wilgotności i temperatury, dopływ świeżego powietrza",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Fani EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Szklarnie do uprawy sadzonek",
+        "description": "Jednolita dystrybucja klimatu i chłodzenie",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wentylatory ścienne",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Magazyny zboża",
+        "description": "Kontrola wilgotności i wentylacja",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Jaki jest najodpowiedniejszy system wentylacji dla szklarni?",
+        "a": "W zależności od wielkości szklarni, lokalizacji i rodzaju upraw, stosowane są systemy podciśnieniowe (wylot + podkładka chłodząca) lub nadciśnieniowe (nad głową). W gorącym klimacie integracja chłodzenia wyparnego ma ogromne znaczenie."
+      },
+      {
+        "q": "Jaką redukcję temperatury można uzyskać za pomocą chłodzenia wyparnego?",
+        "a": "W zależności od poziomu wilgotności w regionie można osiągnąć obniżenie temperatury o 8-12°C. Wydajność jest wyższa w regionach o niskiej wilgotności."
+      },
+      {
+        "q": "Czy wentylacja szklarni zimą jest konieczna?",
+        "a": "Tak, nawet zimą wymagana jest minimalna wentylacja w celu kontroli wilgotności i uzupełniania CO2. W przeciwnym razie mogą wzrosnąć choroby grzybowe i stres roślin."
+      },
+      {
+        "q": "Czy możliwy jest zdalny monitoring i kontrola?",
+        "a": "Tak, inteligentne panele klimatyzacji NOVVES zapewniają zdalne monitorowanie temperatury, wilgotności i CO2, sterowanie wentylatorami i zarządzanie alarmami za pośrednictwem infrastruktury IoT."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz systemu wentylacji szklarni?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem ekspertów, aby uzyskać analizę obiektu, projekt systemu i wycenę.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "atexPatlamaKoruma": {
+    "breadcrumbCurrent": "Ochrona przeciwwybuchowa ATEX",
+    "badge": "Rozwiązania",
+    "titleLine1": "Ochrona przeciwwybuchowa ATEX",
+    "titleHighlight": "Rozwiązania",
+    "subtitle": "Systemy wentylatorów i rozwiązania wentylacyjne z certyfikatem ATEX dla obiektów zagrożonych atmosferą wybuchową.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "ATEX",
+        "label": "Atestowany"
+      },
+      {
+        "value": "Strefa 1/2",
+        "label": "Obszar zastosowań"
+      },
+      {
+        "value": "IECEx",
+        "label": "Międzynarodowe zatwierdzenie"
+      },
+      {
+        "value": "200+",
+        "label": "Zainstalowane systemy"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Bezpieczeństwo jest priorytetem w środowiskach zagrożonych wybuchem",
+    "whyImportantP1": "W zakładach chemicznych, petrochemicznych, farbiarskich, farmaceutycznych, silosach zbożowych i górniczych stężenia łatwopalnych gazów, oparów i pyłów mogą stworzyć atmosferę wybuchową. Używanie standardowego sprzętu w takich środowiskach stwarza poważne ryzyko.",
+    "whyImportantP2": "Wentylatory NOVVES BEAR z certyfikatem ATEX zostały zaprojektowane zgodnie z klasyfikacją atmosfery wybuchowej (strefa 1, strefa 2, strefa 21, strefa 22). Nieiskrzące materiały, silniki w wykonaniu przeciwwybuchowym i specjalne rozwiązania uszczelniające zapewniają bezpieczną wentylację.",
+    "steps": [
+      {
+        "label": "Analiza ryzyka",
+        "desc": "Klasyfikacja atmosfer wybuchowych, wyznaczanie stref, analiza typu gazu/pyłu"
+      },
+      {
+        "label": "Projekt systemu",
+        "desc": "Dobór wentylatorów ATEX, projekt kanałów, uziemienie i automatyka przeciwwybuchowa"
+      },
+      {
+        "label": "Produkcja i instalacja",
+        "desc": "Produkcja wentylatorów z certyfikatem ATEX, instalacja kabli i połączeń w wykonaniu przeciwwybuchowym"
+      },
+      {
+        "label": "Uruchomienie i certyfikacja",
+        "desc": "Testowanie, pomiar wydajności, certyfikacja zgodności ATEX"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Wentylatory odśrodkowe ATEX (BEAR)",
+        "desc": "Certyfikowane wentylatory odśrodkowe z materiałów nieiskrzących dla Strefy 1/2 i Strefy 21/22."
+      },
+      {
+        "title": "Wentylatory osiowe ATEX (BEAR)",
+        "desc": "Osiowe wentylatory wentylacyjne z osłoną i łopatkami odpowiednie do środowisk zagrożonych wybuchem."
+      },
+      {
+        "title": "Wentylatory dachowe Exproof (BEAR)",
+        "desc": "Dachowe wentylatory wyciągowe z silnikami w wykonaniu przeciwwybuchowym, przeznaczone do obiektów z wybuchowymi gazami/pyłami."
+      },
+      {
+        "title": "Exproof Silnik i sterowanie",
+        "desc": "Silniki z certyfikatem ATEX, przyciski przeciwwybuchowe, lampki sygnalizacyjne i obudowy sterujące."
+      },
+      {
+        "title": "Kanał antystatyczny i akcesoria",
+        "desc": "Uziemione kanały i elementy przyłączeniowe zapobiegające gromadzeniu się ładunków elektrostatycznych."
+      },
+      {
+        "title": "Detekcja gazu i automatyzacja",
+        "desc": "Czujniki gazów/pyłów łatwopalnych, scenariusze awaryjnego wyłączania i wentylacji sterowane przez PLC."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu wentylacji ATEX",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Certyfikat ATEX",
+        "desc": "Produkcja i certyfikacja zgodna z dyrektywą ATEX 2014/34/UE."
+      },
+      {
+        "title": "Zgodność dla strefy 1 i strefy 2",
+        "desc": "Odpowiedni dobór i konstrukcja wentylatora w zależności od grupy gazowej i klasy temperaturowej."
+      },
+      {
+        "title": "Konstrukcja beziskrowa",
+        "desc": "Stopy aluminium/brązu, specjalne powłoki i komponenty antystatyczne."
+      },
+      {
+        "title": "Kompleksowe rozwiązanie",
+        "desc": "Analiza ryzyka, dobór wentylatorów, automatyzacja exproof i certyfikacja z jednego źródła."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Rozwiązania ATEX dla wszystkich obiektów przemysłowych zagrożonych atmosferą wybuchową.",
+    "areas": [
+      {
+        "title": "Zakłady Chemiczne i Petrochemiczne",
+        "description": "Wylot łatwopalnych gazów i oparów",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Wentylatory dachowe ATEX",
+            "image": "/images/products/bear-reb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Fabryki farb i lakierów",
+        "description": "Wylot oparów rozpuszczalnika",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ścienne ATEX",
+            "image": "/images/products/bear-w.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Silosy zbożowe i młyny",
+        "description": "Wylot palnego pyłu",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Wentylatory kanałowe ATEX",
+            "image": "/images/products/bear-t.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Obiekty górnicze i tunelowe",
+        "description": "Odprowadzanie i wentylacja metanu",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Produkcja farmaceutyczna i kosmetyczna",
+        "description": "Łatwopalny rozpuszczalnik i pył",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-c.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Wentylatory odśrodkowe ATEX",
+            "image": "/images/products/bear-r.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Co oznacza certyfikacja ATEX?",
+        "a": "ATEX (ATmphers EXplosibles) to dyrektywa Unii Europejskiej 2014/34/UE, która definiuje standardy projektowania i produkcji sprzętu używanego w środowiskach zagrożonych wybuchem. Wentylatory serii BEAR produkowane są zgodnie z tą dyrektywą."
+      },
+      {
+        "q": "Jaka jest różnica między Strefą 1 a Strefą 2?",
+        "a": "Strefa 1 określa obszary, w których w normalnych warunkach pracy mogą czasami wystąpić atmosfery wybuchowe; Strefa 2 określa obszary, w których atmosfery wybuchowe mogą występować jedynie w nietypowych warunkach i przez krótkie okresy czasu."
+      },
+      {
+        "q": "Na jakie grupy gazowe produkujecie wentylatory?",
+        "a": "Seria BEAR produkowana jest w modelach odpowiednich dla grup gazów IIA (propan, metan), IIB (etylen) i IIC (wodór, acetylen)."
+      },
+      {
+        "q": "Czy wentylator ATEX można zintegrować z istniejącym systemem?",
+        "a": "Tak, możliwa jest integracja wentylatora z certyfikatem ATEX z istniejącymi systemami wentylacyjnymi. Jednakże elementy kanałów, połączeń i automatyki należy również sprawdzić pod kątem zgodności z ATEX."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz rozwiązania wentylacyjnego ATEX?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem inżynierów w celu analizy ryzyka, doboru wentylatorów ATEX i wyceny.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "akilliOtomasyon": {
+    "breadcrumbCurrent": "Inteligentna automatyka i sterowanie",
+    "badge": "Rozwiązania",
+    "titleLine1": "Inteligentna automatyzacja i",
+    "titleHighlight": "Systemy sterowania",
+    "subtitle": "Inteligentne rozwiązania sterujące do integracji BMS, zarządzania wentylatorami w oparciu o PLC, monitorowania IoT i optymalizacji zużycia energii.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Nasze usługi",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      {
+        "value": "BMS",
+        "label": "Integracja"
+      },
+      {
+        "value": "PLC/SCADA",
+        "label": "Infrastruktura kontroli"
+      },
+      {
+        "value": "IoT",
+        "label": "Zdalne monitorowanie"
+      },
+      {
+        "value": "24/7",
+        "label": "Wsparcie"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Inteligentne systemy zapewniające wydajność i kontrolę",
+    "whyImportantP1": "W nowoczesnych budynkach i obiektach przemysłowych ręczne zarządzanie systemami wentylacyjnymi prowadzi do nieefektywności, marnowania energii i problemów z konserwacją. Inteligentna automatyzacja optymalizuje systemy w oparciu o dane z czujników.",
+    "whyImportantP2": "Rozwiązania automatyzacyjne NOVVES zapewniają pełną kontrolę nad systemami wentylacyjnymi za pomocą paneli MCC opartych na sterownikach PLC, integracji napędów o zmiennej częstotliwości, łączności z BMS i zdalnego monitorowania opartego na IoT. Tryby pracy oparte na scenariuszach minimalizują zużycie energii.",
+    "steps": [
+      {
+        "label": "Analiza potrzeb",
+        "desc": "Przegląd istniejącego systemu, wymagania dotyczące automatyzacji, ocena infrastruktury BMS"
+      },
+      {
+        "label": "Projekt automatyki",
+        "desc": "Programowanie PLC, dobór czujników, projekt panelu, scenariusz integracji z BMS"
+      },
+      {
+        "label": "Produkcja i instalacja paneli",
+        "desc": "Produkcja rozdzielnic MCC/paneli automatyki, okablowanie obiektowe i instalacja sprzętu"
+      },
+      {
+        "label": "Uruchomienie i szkolenie",
+        "desc": "Testowanie systemu, weryfikacja scenariuszy, szkolenie operatorów/użytkowników"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Panele MCC sterowane przez PLC",
+        "desc": "Centrum sterowania silnikiem z funkcją włączania/wyłączania wentylatora, kontrolą stopnia, monitorowaniem usterek i integracją przekaźników ochronnych."
+      },
+      {
+        "title": "Zarządzanie napędami o zmiennej częstotliwości",
+        "desc": "Sterowanie wentylatorem o zmiennej prędkości zapewnia oszczędność energii i precyzyjną regulację natężenia przepływu."
+      },
+      {
+        "title": "Integracja z BMS-em",
+        "desc": "Pełna integracja z systemami zarządzania budynkiem poprzez protokoły Modbus, BACnet lub LON."
+      },
+      {
+        "title": "Sieci czujników",
+        "desc": "Czujniki temperatury, wilgotności, CO, CO2, ciśnienia i dymu z gromadzeniem danych w oparciu o strefy."
+      },
+      {
+        "title": "Internet rzeczy i zdalne monitorowanie",
+        "desc": "Pulpit nawigacyjny w chmurze, aplikacja mobilna, powiadomienia o alarmach i analiza zużycia energii."
+      },
+      {
+        "title": "Tryby pracy oparte na scenariuszach",
+        "desc": "Wstępnie zdefiniowane lub niestandardowe scenariusze: normalny, nocny, pożarowy, wywiew CO z parkingu itp."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę swojego projektu automatyzacji",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Optymalizacja energii",
+        "desc": "Oszczędność energii 30–50% dzięki inteligentnemu sterowaniu opartemu na przetwornicach częstotliwości i danych z czujników."
+      },
+      {
+        "title": "Kompatybilność z BMS-em",
+        "desc": "Integracja ze wszystkimi systemami zarządzania budynkiem poprzez otwarte protokoły, takie jak Modbus, BACnet, LON."
+      },
+      {
+        "title": "Zdalne monitorowanie",
+        "desc": "Całodobowy monitoring oparty na IoT, powiadomienia o alarmach i raportowanie zużycia energii."
+      },
+      {
+        "title": "Rozwiązanie z jednego źródła",
+        "desc": "Projekt panelu, programowanie PLC, instalacja w terenie i uruchomienie z jednego źródła."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "W jakich projektach jest używany?",
+    "areasDesc": "Rozwiązania dla wszystkich typów budynków i obiektów wymagających automatyzacji wentylacji.",
+    "areas": [
+      {
+        "title": "Automatyka ogrodzonych parkingów",
+        "description": "Zarządzanie wentylatorami strumieniowymi w oparciu o czujnik CO",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Centrum Handlowe i Budynek Handlowy BMS",
+        "description": "Automatyka i monitoring centralnej wentylacji",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Automatyka Obiektów Przemysłowych",
+        "description": "Sterowanie wentylacją procesową i wyciągiem",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Szpital i pomieszczenie czyste",
+        "description": "Monitorowanie kaskady ciśnień i filtracji",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Czy można dodać automatyzację do istniejącego systemu?",
+        "a": "Tak, panele PLC, przetwornice częstotliwości i integrację czujników można dodać do istniejących systemów wentylatorów i wentylacji, aby podnieść poziom automatyzacji."
+      },
+      {
+        "q": "Jakie protokoły BMS obsługujecie?",
+        "a": "Obsługujemy protokoły Modbus RTU/TCP, BACnet IP/MSTP i LON. Najbardziej odpowiednią metodę integracji określa się na podstawie istniejącej infrastruktury BMS."
+      },
+      {
+        "q": "Czy do zdalnego monitorowania wymagane jest połączenie internetowe?",
+        "a": "Tak, w obiekcie wymagane jest połączenie z Internetem, aby możliwe było zdalne monitorowanie w oparciu o IoT. Przesyłanie danych do platformy chmurowej odbywa się za pośrednictwem modemu 4G/5G lub połączenia Ethernet."
+      },
+      {
+        "q": "Ile energii oszczędza system automatyki?",
+        "a": "Sterowanie wentylatorem o zmiennej prędkości w oparciu o dane z czujników pozwala zaoszczędzić 30-50% energii. Tryb nocny i scenariusze pustej powierzchni zapewniają dodatkowe oszczędności."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz rozwiązania w zakresie automatyzacji wentylacji?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem inżynierów w sprawie projektu automatyki, produkcji paneli i wyceny.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "konutHavalandirma": {
+    "breadcrumbCurrent": "Wentylacja mieszkalna",
+    "badge": "Rozwiązania",
+    "titleLine1": "Mieszkaniowy",
+    "titleHighlight": "Systemy wentylacyjne",
+    "subtitle": "Dostarczanie świeżego powietrza, kontrola wilgotności i komfortowe rozwiązania w zakresie wentylacji pomieszczeń mieszkalnych dla mieszkań, willi, rezydencji i projektów mieszkaniowych.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "Silnik EC",
+        "label": "Cicha praca"
+      },
+      {
+        "value": "Odzysk ciepła",
+        "label": "90% wydajności"
+      },
+      {
+        "value": "dB(A) <25",
+        "label": "Poziom hałasu"
+      },
+      {
+        "value": "+",
+        "label": "Klasa energetyczna"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Świeże powietrze dla zdrowego życia",
+    "whyImportantP1": "W nowoczesnych domach wraz ze wzrostem poziomu izolacji zmniejsza się naturalna wymiana powietrza, co sprawia, że ​​jakość powietrza w pomieszczeniach staje się poważnym problemem. Niewystarczająca wentylacja powoduje gromadzenie się wilgoci, pleśni, nieprzyjemnych zapachów i nieświeżego powietrza.",
+    "whyImportantP2": "Rozwiązania wentylacyjne NOVVES do budynków mieszkalnych tworzą zdrowe, czyste i wygodne przestrzenie mieszkalne z dopływem świeżego powietrza z odzyskiem ciepła, który minimalizuje straty energii. Cicha praca i kompaktowa konstrukcja zapewniają kompatybilność ze wszystkimi typami obudów.",
+    "steps": [
+      {
+        "label": "Wymaga oceny",
+        "desc": "Rodzaj mieszkania, liczba pokoi, powierzchnia i analiza potrzeb wentylacyjnych"
+      },
+      {
+        "label": "Wybór systemu",
+        "desc": "Wydajność jednostki, prowadzenie kanałów, planowanie rozmieszczenia kratek"
+      },
+      {
+        "label": "Instalacja",
+        "desc": "Profesjonalny montaż, podłączenie kanałów i okablowanie elektryczne"
+      },
+      {
+        "label": "Uruchomienie",
+        "desc": "Pomiar przepływu powietrza, badanie hałasu i szkolenie użytkowników"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Jednostki odzysku ciepła",
+        "desc": "Wymienniki przeciwprądowe lub obrotowe odzyskujące do 90% ciepła z powietrza wywiewanego w celu oszczędności energii."
+      },
+      {
+        "title": "Wentylatory łazienkowe i toaletowe (SEAHORSE)",
+        "desc": "Cichy, energooszczędny i kompaktowy łazienkowy wentylator wyciągowy."
+      },
+      {
+        "title": "Wentylatory kanałowe (KOI)",
+        "desc": "Ciche wentylatory kompaktowe do kanałowego nawiewu i wywiewu świeżego powietrza."
+      },
+      {
+        "title": "Wentylatory kuchenne (MOTYL)",
+        "desc": "Wentylatory wyciągowe do okapów kuchennych z filtrami przeciwtłuszczowymi i funkcją cichej pracy."
+      },
+      {
+        "title": "Kratki i dyfuzory",
+        "desc": "Kratki sufitowe, ścienne i podłogowe zapewniające równomierną dystrybucję powietrza."
+      },
+      {
+        "title": "Kontrola i dowodzenie",
+        "desc": "Bezprzewodowy pilot, czujnik wilgotności, timer i sterowanie regulacją prędkości."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu wentylacji Twojego domu",
+    "midCtaDesc": "Nasz zespół ekspertów skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Cicha praca",
+        "desc": "Poziom hałasu poniżej 25 dB(A) zapewnia wygodną pracę nawet w sypialniach."
+      },
+      {
+        "title": "Odzysk ciepła",
+        "desc": "Odzysk energii z powietrza wywiewanego do 90%, aby zapobiec marnotrawieniu energii."
+      },
+      {
+        "title": "Kompaktowa konstrukcja",
+        "desc": "Opcje montażu w suficie podwieszanym, wnętrzu szafy i wnęce ściennej."
+      },
+      {
+        "title": "Zdrowe powietrze w pomieszczeniach",
+        "desc": "Filtracja i nawiew świeżego powietrza filtrujący pyłki, kurz i zanieczyszczenia."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "W jakich typach mieszkań jest stosowany?",
+    "areasDesc": "Rozwiązania wentylacyjne odpowiednie dla wszystkich typów budynków mieszkalnych.",
+    "areas": [
+      {
+        "title": "Apartamenty i mieszkania",
+        "description": "Centralny lub indywidualny układ dopływu świeżego powietrza i wywiewu",
+        "products": [
+          {
+            "name": "SEAHORSE",
+            "type": "Wentylatory łazienkowe",
+            "image": "/images/products/banyo-fan-1.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Wille i domy jednorodzinne",
+        "description": "System świeżego powietrza z odzyskiem ciepła",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "BUTTERFLY",
+            "type": "Fani Kuchni",
+            "image": "/images/products/butterfly-b.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Rezydencje i wieżowce",
+        "description": "Centralna wentylacja i zwiększanie ciśnienia",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "SEAHORSE",
+            "type": "Wentylatory łazienkowe",
+            "image": "/images/products/banyo-fan-2.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Projekty budownictwa masowego",
+        "description": "Wentylacja szybowa i systemy wyciągowe na dachach",
+        "products": [
+          {
+            "name": "HERON",
+            "type": "Wentylatory dachowe",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Czy wentylacja budynków mieszkalnych powoduje straty energii?",
+        "a": "W systemach z rekuperatorami odzyskuje się do 90% energii zawartej w powietrzu wywiewanym. Oznacza to, że dopływ świeżego powietrza osiągany jest przy niemal zerowych stratach energii."
+      },
+      {
+        "q": "Ile hałasu wytwarza wentylator łazienkowy?",
+        "a": "Wentylatory łazienkowe serii SEAHORSE działają bardzo cicho przy poziomie hałasu poniżej 25 dB(A). Opcja trybu nocnego dodatkowo zmniejsza poziom hałasu."
+      },
+      {
+        "q": "Czy system można zainstalować w istniejących domach?",
+        "a": "Tak, do zainstalowania systemów wentylacyjnych w istniejących domach można zastosować pojedyncze jednostki świeżego powietrza, które nie wymagają kanałów ani kompaktowych kanałów."
+      },
+      {
+        "q": "Jak często należy wymieniać filtry?",
+        "a": "Zaleca się wymianę filtra co 3-6 miesięcy, w zależności od intensywności użytkowania i jakości powietrza na zewnątrz. Dostępne są modele ze wskaźnikami zatkania filtra."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz systemu wentylacji mieszkaniowej?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem, aby uzyskać rozwiązanie wentylacyjne odpowiednie dla Twojego domu i oferty.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "marinOffshore": {
+    "breadcrumbCurrent": "Wentylacja morska i morska",
+    "badge": "Rozwiązania",
+    "titleLine1": "Morskie i przybrzeżne",
+    "titleHighlight": "Systemy wentylacyjne",
+    "subtitle": "Rozwiązania wentylacyjne odporne na korozję morską, zgodne ze standardami klasyfikacji morskiej, dla statków, jachtów, platform wiertniczych i konstrukcji przybrzeżnych.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Katalog produktów",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "DNV-GL",
+        "label": "Zatwierdzenie morskie"
+      },
+      {
+        "value": "IP56",
+        "label": "Klasa ochrony"
+      },
+      {
+        "value": "SS316",
+        "label": "Jakość materiału"
+      },
+      {
+        "value": "50+",
+        "label": "Ukończone projekty"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Niezawodna wentylacja w środowiskach morskich",
+    "whyImportantP1": "Środowisko morskie stwarza wyzwania zupełnie inne niż zastosowania lądowe, w których występuje słona woda, wysoka wilgotność i agresywne warunki atmosferyczne. W takich warunkach standardowe urządzenia wentylacyjne szybko ulegają korozji i ulegają awariom.",
+    "whyImportantP2": "Rozwiązania wentylacji morskiej NOVVES zostały zaprojektowane ze stali nierdzewnej (SS316), specjalnych powłok i atestów morskiego towarzystwa klasyfikacyjnego (DNV-GL, Lloyd's, BV). W maszynowniach, pomieszczeniach pasażerskich, przestrzeniach ładunkowych i specjalnych przedziałach zapewniona jest niezawodna wentylacja.",
+    "steps": [
+      {
+        "label": "Analiza projektu",
+        "desc": "Typ statku/platformy, klasyfikacja obszaru, wymagania norm morskich"
+      },
+      {
+        "label": "Projekt inżynieryjny",
+        "desc": "Dobór wentylatorów, projekt kanałów, dobór materiałów, podział na strefy pożarowe"
+      },
+      {
+        "label": "Produkcja i dostawa",
+        "desc": "Produkcja powłok specjalnych SS316/specjalnych, dostawa produktów z certyfikatem klasy morskiej"
+      },
+      {
+        "label": "Instalacja i uruchomienie",
+        "desc": "Instalacja w stoczni lub w terenie, badanie wydajności i zatwierdzenie klasy"
+      }
+    ],
+    "systemLabel": "Architektura systemu",
+    "systemTitle": "Składniki rozwiązania",
+    "systemComponents": [
+      {
+        "title": "Morskie wentylatory osiowe",
+        "desc": "Odporne na korozję słoną wodę, korpus SS316, wentylatory osiowe posiadające aprobatę klasyfikacji morskiej."
+      },
+      {
+        "title": "Morskie wentylatory odśrodkowe",
+        "desc": "Wysokociśnieniowe, odporne na korozję wentylatory odśrodkowe do maszynowni i przestrzeni ładunkowych."
+      },
+      {
+        "title": "Klapy przeciwpożarowe",
+        "desc": "Automatycznie zamykające się klapy przeciwpożarowe spełniające morskie standardy bezpieczeństwa pożarowego."
+      },
+      {
+        "title": "Kratki odporne na warunki atmosferyczne",
+        "desc": "Kratki wlotu/wylotu powietrza zabezpieczone przed falami i deszczem."
+      },
+      {
+        "title": "Wentylatory Exproof (BEAR)",
+        "desc": "Do obszarów morskich zagrożonych atmosferą wybuchową, takich jak ładownie i strefy paliwowe."
+      },
+      {
+        "title": "Sterowanie i automatyzacja",
+        "desc": "Panele sterowania zatwierdzone do użytku morskiego, integracja alarmu pożarowego i zdalne monitorowanie."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę projektu wentylacji morskiej",
+    "midCtaDesc": "Nasz zespół ekspertów inżynieryjnych skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Zatwierdzenie klasy morskiej",
+        "desc": "Produkcja zatwierdzona przez towarzystwa klasyfikacyjne, w tym DNV-GL, Lloyd's Register i Bureau Veritas."
+      },
+      {
+        "title": "Odporność na korozję",
+        "desc": "Długotrwała wydajność dzięki stali nierdzewnej SS316, powłoce epoksydowej i stopom specjalnym."
+      },
+      {
+        "title": "Bezpieczeństwo przeciwpożarowe",
+        "desc": "Rozwiązania przepustnic i wentylatorów zgodne z SOLAS i morskimi normami bezpieczeństwa pożarowego."
+      },
+      {
+        "title": "Możliwość produkcji na zamówienie",
+        "desc": "Opcje niestandardowego rozmiaru, materiału i pojemności dla każdego projektu statku i platformy."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "Gdzie jest używany?",
+    "areasDesc": "Rozwiązania spełniające wszystkie potrzeby wentylacyjne w sektorze morskim.",
+    "areas": [
+      {
+        "title": "Statki pasażerskie i promy",
+        "description": "Kontrola klimatu w pomieszczeniach dla pasażerów i załogi",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Statki towarowe",
+        "description": "Wentylacja ładowni i maszynowni",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Platformy offshore",
+        "description": "Wentylacja na otwartej platformie morskiej i wydech przeciwwybuchowy",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Jachty i megajachty",
+        "description": "Wentylacja komfortowa i wyciąg z maszynowni",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Wentylatory kanałowe",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Fani EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Jakie atesty klasyfikacyjne są dostępne dla wentylatorów morskich?",
+        "a": "Wentylatory morskie NOVVES mogą być produkowane z aprobatami międzynarodowych towarzystw klasyfikacyjnych, w tym DNV-GL, Lloyd's Register, Bureau Veritas i ABS."
+      },
+      {
+        "q": "Dlaczego preferowany jest materiał SS316?",
+        "a": "Stal nierdzewna SS316 zapewnia znacznie dłuższą trwałość w środowiskach słonowodnych w porównaniu ze stalami standardowymi ze względu na wysoką odporność na korozję. Jest szczególnie preferowany w obszarach nadpokładowych i odpornych na warunki atmosferyczne."
+      },
+      {
+        "q": "Jakie wentylatory stosuje się do wentylacji maszynowni?",
+        "a": "W maszynowniach stosuje się wentylatory promieniowe lub osiowe o dużej wydajności, odpowiednie do pracy w wysokich temperaturach i warunkach spalin. Seria BEAR jest preferowana, gdy obowiązują wymagania Exproof."
+      },
+      {
+        "q": "Czy modernizację można przeprowadzić na istniejących statkach?",
+        "a": "Tak, dostępne są rozwiązania modernizacyjne umożliwiające rewizję systemu wentylacji lub zwiększenie wydajności istniejących statków."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Szukasz rozwiązania w zakresie wentylacji morskiej?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem, aby uzyskać projekt techniczny i wycenę projektu statku/platformy.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "projeBazliOzelImalat": {
+    "breadcrumbCurrent": "Produkcja na zamówienie w oparciu o projekt",
+    "badge": "Rozwiązania",
+    "titleLine1": "Oparte na projektach",
+    "titleHighlight": "Produkcja na zamówienie",
+    "subtitle": "Rozwiązania wentylacyjne zaprojektowane zgodnie z konkretnymi wymaganiami dotyczącymi rozmiaru, materiału i wydajności Twojego projektu, wykraczające poza standardowy asortyment produktów.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Nasze usługi",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      {
+        "value": "CAD 3D",
+        "label": "Projekt"
+      },
+      {
+        "value": "FEA",
+        "label": "Analiza strukturalna"
+      },
+      {
+        "value": "CNC",
+        "label": "Produkcja precyzyjna"
+      },
+      {
+        "value": "75+",
+        "label": "Projekty niestandardowe"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Każdy projekt jest wyjątkowy",
+    "whyImportantP1": "Niektóre projekty mają specjalne wymagania dotyczące rozmiaru, materiału, odporności na temperaturę lub wydajności, których nie można znaleźć w standardowych katalogach produktów. Wysokie temperatury, środowiska korozyjne, specjalne obszary montażu lub nietypowe wymagania dotyczące przepływu/ciśnienia nie mogą zostać spełnione za pomocą standardowych rozwiązań.",
+    "whyImportantP2": "NOVVES produkuje dostosowane do potrzeb projektu wentylatory, przepustnice, kanały i akcesoria, korzystając z własnego zespołu inżynierów i zakładów produkcyjnych. Każdy niestandardowy produkt jest wspierany przez inżynierów za pomocą projektu 3D CAD, analizy strukturalnej FEA i symulacji przepływu CFD.",
+    "steps": [
+      {
+        "label": "Definicja wymagań",
+        "desc": "Niestandardowy rozmiar, materiał, temperatura, natężenie przepływu, ciśnienie i warunki montażu"
+      },
+      {
+        "label": "Projekt inżynieryjny",
+        "desc": "Modelowanie 3D CAD, analiza FEA, symulacja CFD i rysunki szczegółowe"
+      },
+      {
+        "label": "Prototyp i produkcja",
+        "desc": "Obróbka CNC, spawanie, wyważanie dynamiczne i kontrola jakości"
+      },
+      {
+        "label": "Testowanie i dostawa",
+        "desc": "Testowanie wydajności, pomiar drgań, certyfikacja i dostawa"
+      }
+    ],
+    "systemLabel": "Możliwości produkcyjne",
+    "systemTitle": "Co możemy wyprodukować?",
+    "systemComponents": [
+      {
+        "title": "Wentylatory o niestandardowych rozmiarach",
+        "desc": "Wentylatory osiowe, odśrodkowe i mieszane o niestandardowych średnicach, szerokościach i wydajnościach."
+      },
+      {
+        "title": "Wentylatory wysokotemperaturowe",
+        "desc": "Specjalne materiały i konstrukcje umożliwiające ciągłą pracę w temperaturach do 400°C i wyższych."
+      },
+      {
+        "title": "Wentylatory w środowisku korozyjnym",
+        "desc": "Stal nierdzewna, tytan, FRP i specjalne opcje powłok dla środowisk korozyjnych gazów/par."
+      },
+      {
+        "title": "Niestandardowe amortyzatory i kanały",
+        "desc": "Produkcja przepustnic, kanałów i elementów przyłączeniowych o niestandardowych wymiarach i materiałach."
+      },
+      {
+        "title": "Specjalne rozwiązania montażowe",
+        "desc": "Niestandardowe wsporniki montażowe do zamkniętych przestrzeni, podwieszeń sufitowych, platform lub instalacji izolowanych od wibracji."
+      },
+      {
+        "title": "Testowanie i certyfikacja",
+        "desc": "Badania wydajności aerodynamicznej, analiza drgań i przygotowanie certyfikatu dla konkretnego projektu."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę swojego niestandardowego projektu produkcyjnego",
+    "midCtaDesc": "Nasz zespół inżynierów oceni Twoje specyficzne wymagania.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Wspierane przez inżynierię",
+        "desc": "Projekt zweryfikowany za pomocą 3D CAD, FEA i CFD; raporty obliczeniowe specyficzne dla projektu."
+      },
+      {
+        "title": "Własny zakład produkcyjny",
+        "desc": "Precyzyjna produkcja z obróbką CNC, spawaniem zrobotyzowanym i wyważaniem dynamicznym."
+      },
+      {
+        "title": "Elastyczne opcje materiałów",
+        "desc": "Stal węglowa, stal nierdzewna, aluminium, FRP, tytan i stopy specjalne."
+      },
+      {
+        "title": "Szybkie prototypowanie",
+        "desc": "Szybkie przejście od projektu do prototypu i weryfikacji wydajności."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "W jakich projektach jest używany?",
+    "areasDesc": "Produkcja oparta na projektach dla wszystkich specjalnych potrzeb, których nie można rozwiązać za pomocą standardowych produktów.",
+    "areas": [
+      {
+        "title": "Obiekty procesów przemysłowych",
+        "description": "Niestandardowe wentylatory do środowisk o wysokiej temperaturze i gazach korozyjnych",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Wentylatory ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Elektrownie",
+        "description": "Niestandardowy rozmiar i wydajność wentylatorów wyciągowych i nawiewnych",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Projekty morskie i offshore",
+        "description": "Wentylatory morskie wymagające specjalnych materiałów i rozmiarów zatwierdzonych w swojej klasie",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Fani Przemysłowi",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Projekty infrastrukturalne i tunelowe",
+        "description": "Wentylatory tunelowe o niestandardowej średnicy i wydajności",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Czy istnieje minimalna wielkość zamówienia w przypadku produkcji niestandardowej?",
+        "a": "Nie, ponieważ NOVVES działa w oparciu o projekt, akceptowane są również zamówienia na produkcję pojedynczych jednostek na zamówienie."
+      },
+      {
+        "q": "Jaki jest czas realizacji produkcji niestandardowej?",
+        "a": "W zależności od złożoności produktu, stosuje się czas dostawy od 4 do 12 tygodni od zatwierdzenia projektu. W przypadku pilnych projektów dostępny jest program przyspieszonej produkcji."
+      },
+      {
+        "q": "Czy możliwa jest modyfikacja istniejącego wentylatora?",
+        "a": "Tak, dostępne są usługi modyfikacji, takie jak wymiana wirnika, rewizja obudowy, modernizacja silnika lub zmiana materiału istniejących wentylatorów."
+      },
+      {
+        "q": "Jakie usługi testowania i certyfikacji są oferowane?",
+        "a": "Przygotowywane są badania wydajności aerodynamicznej (przepływ, ciśnienie, moc), analiza drgań, pomiary hałasu i raporty z testów specyficzne dla projektu. Dostępne są możliwości testowania zgodne ze standardami AMCA, ISO i EN."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Czy potrzebujesz produkcji niestandardowej?",
+    "finalCtaDesc": "Podziel się swoimi wymaganiami i pozwól naszemu zespołowi inżynieryjnemu przedstawić niestandardową propozycję rozwiązania.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  },
+  "cfdDanismanlik": {
+    "breadcrumbCurrent": "Doradztwo inżynieryjne CFD",
+    "badge": "Rozwiązania",
+    "titleLine1": "Inżynieria CFD",
+    "titleHighlight": "Doradztwo",
+    "subtitle": "Usługi inżynieryjne wspomagane symulacją z wykorzystaniem obliczeniowej dynamiki płynów (CFD) dla projektów wentylacji, oddymiania i wymiany ciepła.",
+    "ctaPrimary": "Uzyskaj wycenę swojego projektu",
+    "ctaSecondary": "Nasze usługi",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      {
+        "value": "CFD 3D",
+        "label": "Symulacja"
+      },
+      {
+        "value": "ANSYS",
+        "label": "Platforma Solvera"
+      },
+      {
+        "value": "ISO7730",
+        "label": "Analiza komfortu"
+      },
+      {
+        "value": "85+",
+        "label": "Ukończone analizy"
+      }
+    ],
+    "whyImportantLabel": "Dlaczego ważne",
+    "whyImportantTitle": "Symuluj przed zbudowaniem",
+    "whyImportantP1": "Znajomość rzeczywistej wydajności systemów wentylacyjnych i oddymiających przed instalacją pozwala uniknąć kosztownych błędów i umożliwia udokumentowanie zgodności z przepisami. Analiza CFD wizualizuje przepływ powietrza, rozkład temperatury i rozprzestrzenianie się dymu poprzez symulację komputerową 3D.",
+    "whyImportantP2": "Zespół NOVVES CFD wykonuje symulacje specyficzne dla projektu przy użyciu platform ANSYS Fluent i OpenFOAM. Zapewniane jest wsparcie inżynieryjne w zakresie rozmieszczenia wentylatorów strumieniowych, czasu oddymiania, analizy komfortu, obliczenia obciążenia cieplnego i optymalizacji systemu.",
+    "steps": [
+      {
+        "label": "Definicja projektu",
+        "desc": "Geometria, warunki brzegowe, scenariusz pożaru lub definicja wymagań wentylacyjnych"
+      },
+      {
+        "label": "Modelowanie 3D i siatka",
+        "desc": "Tworzenie lub import geometrii CAD, generowanie siatek obliczeniowych"
+      },
+      {
+        "label": "Symulacja i rozwiązanie",
+        "desc": "Rozwiązanie dotyczące przepływu, temperatury i dymu z modelami turbulencji RANS/LES"
+      },
+      {
+        "label": "Raportowanie i optymalizacja",
+        "desc": "Wizualizacja wyników, ocena wydajności, zalecenia dotyczące ulepszeń"
+      }
+    ],
+    "systemLabel": "Obszary usług",
+    "systemTitle": "Co może zrobić CFD?",
+    "systemComponents": [
+      {
+        "title": "Symulacja usuwania dymu",
+        "desc": "Analiza rozprzestrzeniania się dymu, odległości widoczności i czasu ewakuacji w scenariuszach pożarowych."
+      },
+      {
+        "title": "Optymalizacja rozmieszczenia wentylatorów strumieniowych",
+        "desc": "Określanie liczby, położenia i kierunku wentylatorów strumieniowych poprzez symulację na parkingach i tunelach."
+      },
+      {
+        "title": "Analiza komfortu wentylacji",
+        "desc": "Ocena temperatury, prędkości powietrza i komfortu PMV/PPD w biurach, centrach handlowych i miejscach montażu."
+      },
+      {
+        "title": "Analiza wymiany ciepła",
+        "desc": "Symulacja rozkładu temperatur w pomieszczeniach transformatorowych, centrach danych i obiektach przemysłowych."
+      },
+      {
+        "title": "Przepływ powietrza w pomieszczeniu czystym",
+        "desc": "Rozkład cząstek, weryfikacja przepływu laminarnego i analiza kaskady ciśnień w pomieszczeniach czystych."
+      },
+      {
+        "title": "Optymalizacja systemu",
+        "desc": "Przegląd CFD istniejących systemów wentylacyjnych i zalecenia dotyczące poprawy wydajności."
+      }
+    ],
+    "midCtaTitle": "Uzyskaj wycenę swojego projektu analizy CFD",
+    "midCtaDesc": "Nasz zespół inżynierów CFD skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "midCtaButton": "Uzyskaj wycenę",
+    "advantagesLabel": "Dlaczego NOVVES",
+    "advantagesTitle": "Kluczowe zalety",
+    "advantages": [
+      {
+        "title": "Doświadczony zespół CFD",
+        "desc": "Zespół wyspecjalizowanych analityków CFD z doświadczeniem w zakresie wentylacji i inżynierii pożarowej."
+      },
+      {
+        "title": "Wiodące w branży oprogramowanie",
+        "desc": "Wiarygodne wyniki symulacji z platformami ANSYS Fluent, OpenFOAM i FDS."
+      },
+      {
+        "title": "Zgodność z przepisami",
+        "desc": "Analizy i raportowanie zgodne z normami EN 12101, ASHRAE i NFPA."
+      },
+      {
+        "title": "Integracja projektu",
+        "desc": "Wyniki CFD bezpośrednio zintegrowane z procesem inżynieryjnym w celu zapewnienia wdrożenia."
+      }
+    ],
+    "areasLabel": "Obszary zastosowań",
+    "areasTitle": "W jakich projektach jest używany?",
+    "areasDesc": "Usługi doradcze dla wszystkich projektów wentylacji i wymiany ciepła wymagających analizy CFD.",
+    "areas": [
+      {
+        "title": "Projekty zamkniętych parkingów",
+        "description": "Symulacja rozmieszczenia wentylatorów strumieniowych i usuwania CO/dymu",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Amortyzatory",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Projekty wentylacji tuneli",
+        "description": "Scenariusz pożaru i analiza prędkości powietrza",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Wentylatory osiowe",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Chłodzenie centrum danych",
+        "description": "Rozkład temperatury na poziomie szafy i analiza hotspotów",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Centrale wentylacyjne",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Fani EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Kontrola dymu w wysokich budynkach",
+        "description": "Symulacja zwiększania ciśnienia na klatce schodowej i stref dymowych",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Fani komórkowi",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Wentylatory odprowadzające dym i ciepło",
+            "image": "/images/products/dragonfly-c.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Często zadawane pytania",
+    "faqItems": [
+      {
+        "q": "Jak długo trwa analiza CFD?",
+        "a": "W zależności od złożoności projektu trwa to 1-4 tygodnie. Proste analizy pojedynczych scenariuszy są krótsze, natomiast scenariusze obejmujące wiele pożarów lub badania optymalizacyjne trwają dłużej."
+      },
+      {
+        "q": "Jakie informacje są potrzebne do analizy CFD?",
+        "a": "Wymagane są plany architektoniczne (DWG/Revit), informacje o rozmieszczeniu wentylatorów/kratek, warunki pracy (temperatura, natężenie przepływu itp.) i definicje scenariuszy pożarowych, jeśli mają zastosowanie."
+      },
+      {
+        "q": "Czy raport CFD jest akceptowany jako oficjalny dokument?",
+        "a": "Raport CFD jest wykorzystywany jako pomocniczy dokument inżynieryjny w procesach zatwierdzania przez władze miejskie i straż pożarną. Do każdego projektu dostarczane są podpisane i opieczętowane raporty."
+      },
+      {
+        "q": "Czy mogę skorzystać wyłącznie z usługi analizy CFD?",
+        "a": "Tak, NOVVES oferuje również niezależne usługi doradcze w zakresie CFD. Usługi symulacji i raportowania można uzyskać bez konieczności wiązania się ze sprzedażą wentylatorów i sprzętu."
+      }
+    ],
+    "finalCtaLabel": "Dla Twojego projektu",
+    "finalCtaTitle": "Potrzebujesz analizy CFD?",
+    "finalCtaDesc": "Skontaktuj się z naszym zespołem inżynierów CFD w celu zdefiniowania projektu, symulacji i wyceny.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Poproś o wycenę"
+  }
+}

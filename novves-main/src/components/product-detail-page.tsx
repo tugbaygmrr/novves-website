@@ -73,12 +73,11 @@ export function ProductDetailPage({
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white/95 shadow-[0_14px_38px_-28px_rgba(15,20,30,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_24px_52px_-28px_rgba(15,20,30,0.35)]"
               >
                 <div className="relative h-56 w-full overflow-hidden bg-white">
-                  <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#1d2f4d]/95 via-primary/85 to-[#90a5bd]/90" />
                   <Image
                     src={resolveModelImage(model.image)}
                     alt={model.name}
                     fill
-                    className="object-contain p-0 transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="object-contain p-4 transition-transform duration-500 group-hover:scale-[1.03]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>

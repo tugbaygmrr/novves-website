@@ -1,48 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { locales } from "@/i18n/config";
 import { getDictionary, hasLocale, type Locale } from "../../dictionaries";
+import { sosyalMedyaCopyExtras } from "../sosyal-medya-copy-extras";
+import type { LocalizedSocialPageCopy, SocialPlatformKey } from "../sosyal-medya-copy.types";
 
-type PlatformKey =
-  | "linkedin"
-  | "linkedinGlobal"
-  | "youtube"
-  | "facebook"
-  | "instagramTr"
-  | "instagramGlobal";
+type PlatformKey = SocialPlatformKey;
+type LocalizedPageCopy = LocalizedSocialPageCopy;
 
-type LocalizedPageCopy = {
-  heroKicker: string;
-  heroLead: string;
-  stats: Array<{ value: string; label: string }>;
-  primaryCta: string;
-  secondaryCta: string;
-  previewEyebrow: string;
-  previewTitle: string;
-  previewDesc: string;
-  previewCards: Array<{ label: string; title: string; stat: string }>;
-  highlightsLabel: string;
-  highlightsTitle: string;
-  highlightsDesc: string;
-  highlights: Array<{ title: string; description: string; stat: string }>;
-  sectionLabel: string;
-  sectionTitle: string;
-  sectionDesc: string;
-  externalNote: string;
-  footerLabel: string;
-  footerTitle: string;
-  footerDesc: string;
-  footerPrimary: string;
-  footerSecondary: string;
-  platforms: Record<
-    PlatformKey,
-    {
-      eyebrow: string;
-      summary: string;
-      tags: string[];
-    }
-  >;
-};
+const sosyalPageExplicitLocales = new Set<Locale>([
+  "tr",
+  "en",
+  "ru",
+  "kk",
+  "tg",
+  "es",
+  "zh",
+  "ur",
+  ...(Object.keys(sosyalMedyaCopyExtras) as Locale[]),
+]);
 
 type PlatformDefinition = {
   key: PlatformKey;
@@ -54,6 +31,113 @@ type PlatformDefinition = {
   ringClass: string;
   glow: string;
   icon: React.ReactNode;
+};
+
+const sosyalMedyaPageCopyEn: LocalizedPageCopy = {
+    heroKicker: "Digital Presence",
+    heroLead:
+      "We gathered corporate updates, product videos, and field-driven storytelling into one clear social layer. Each channel has a specific job, and this page makes that structure immediately readable.",
+    stats: [
+      { value: "6", label: "active channels" },
+      { value: "TR + Global", label: "market focus" },
+      { value: "Corporate + Product", label: "content axis" },
+    ],
+    primaryCta: "Back to contact page",
+    secondaryCta: "View our partners",
+    previewEyebrow: "Publishing Architecture",
+    previewTitle: "Every channel plays a different role.",
+    previewDesc:
+      "Turkey and global LinkedIn accounts carry the corporate story at different scales, Facebook supports wider social visibility, YouTube deepens the product and engineering narrative, and Instagram keeps the brand rhythm visible for different audiences.",
+    previewCards: [
+      {
+        label: "Corporate Narrative",
+        title: "Team, brand, and reference stories",
+        stat: "LinkedIn TR / Global / Facebook",
+      },
+      {
+        label: "Technical Content",
+        title: "Video, demos, and product-led explanations",
+        stat: "YouTube",
+      },
+      {
+        label: "Live Flow",
+        title: "A split social storefront for Turkey and global markets",
+        stat: "Instagram",
+      },
+    ],
+    highlightsLabel: "Content Map",
+    highlightsTitle: "Understand what each channel is for at a glance.",
+    highlightsDesc:
+      "This page is designed as a digital brand layer, not a plain link list. The blocks below show what kind of value each social channel delivers.",
+    highlights: [
+      {
+        title: "Corporate trust",
+        description:
+          "The right place for references, event visibility, company news, and professional network communication.",
+        stat: "Corporate focus",
+      },
+      {
+        title: "Engineering storytelling",
+        description:
+          "A video-first flow for product explainers, technical narratives, and deeper content consumption.",
+        stat: "Video focus",
+      },
+      {
+        title: "Market split",
+        description:
+          "Separate Turkey and global accounts allow each audience to follow the brand at its own pace.",
+        stat: "Regional focus",
+      },
+    ],
+    sectionLabel: "Channel Selection",
+    sectionTitle: "Enter the right social stream for your need.",
+    sectionDesc:
+      "These cards do more than show the platform. They also signal tone, content type, and what you should expect after clicking.",
+    externalNote: "All links open in a new tab.",
+    footerLabel: "Next Step",
+    footerTitle: "Move from social visibility to direct project contact.",
+    footerDesc:
+      "For discovery, technical consultation, or product guidance, connect directly with our team. Social channels build familiarity, but project momentum starts with direct communication.",
+    footerPrimary: "Contact Form",
+    footerSecondary: "Our Partners",
+    platforms: {
+      linkedin: {
+        eyebrow: "Turkey LinkedIn",
+        summary:
+          "The main showcase for Turkey-focused brand updates, project news, and professional network communication.",
+        tags: ["References", "Company updates"],
+      },
+      linkedinGlobal: {
+        eyebrow: "Global LinkedIn",
+        summary:
+          "A separate LinkedIn layer for international visibility, global business language, and outward-facing corporate storytelling.",
+        tags: ["Global network", "Corporate communication"],
+      },
+      youtube: {
+        eyebrow: "Video Channel",
+        summary:
+          "Built for people who want to explore product behavior and engineering content in a deeper format.",
+        tags: ["Product videos", "Technical explainers"],
+      },
+      facebook: {
+        eyebrow: "Community Feed",
+        summary:
+          "A supporting channel for wider social visibility, announcements, and ongoing brand updates.",
+        tags: ["Announcements", "Community reach"],
+      },
+      instagramTr: {
+        eyebrow: "Turkey Account",
+        summary:
+          "A warmer, more immediate, and more visual Novves flow for the local market language.",
+        tags: ["Local content", "Visual storefront"],
+      },
+      instagramGlobal: {
+        eyebrow: "Global Account",
+        summary:
+          "A distinct channel for international storytelling, brand visibility, and global audience presence.",
+        tags: ["Global storefront", "Brand voice"],
+      },
+    },
 };
 
 const pageCopy: Record<Locale, LocalizedPageCopy> = {
@@ -163,109 +247,322 @@ const pageCopy: Record<Locale, LocalizedPageCopy> = {
       },
     },
   },
-  en: {
-    heroKicker: "Digital Presence",
+  en: sosyalMedyaPageCopyEn,
+  es: {
+    heroKicker: "Presencia digital",
     heroLead:
-      "We gathered corporate updates, product videos, and field-driven storytelling into one clear social layer. Each channel has a specific job, and this page makes that structure immediately readable.",
+      "Hemos reunido noticias corporativas, vídeos de producto y relatos de campo en una capa social clara. Cada canal cumple una función concreta; esta página hace que esa estructura sea fácil de leer.",
     stats: [
-      { value: "6", label: "active channels" },
-      { value: "TR + Global", label: "market focus" },
-      { value: "Corporate + Product", label: "content axis" },
+      { value: "6", label: "canales activos" },
+      { value: "TR + Global", label: "enfoque de mercado" },
+      { value: "Corporativo + Producto", label: "eje de contenido" },
     ],
-    primaryCta: "Back to contact page",
-    secondaryCta: "View our partners",
-    previewEyebrow: "Publishing Architecture",
-    previewTitle: "Every channel plays a different role.",
+    primaryCta: "Volver a contacto",
+    secondaryCta: "Ver nuestros socios",
+    previewEyebrow: "Arquitectura de publicación",
+    previewTitle: "Cada canal cumple un rol distinto.",
     previewDesc:
-      "Turkey and global LinkedIn accounts carry the corporate story at different scales, Facebook supports wider social visibility, YouTube deepens the product and engineering narrative, and Instagram keeps the brand rhythm visible for different audiences.",
+      "Las cuentas de LinkedIn en Turquía y a nivel global llevan la historia corporativa a distintas escalas, Facebook apoya una mayor visibilidad social, YouTube profundiza la narrativa de producto e ingeniería, e Instagram muestra el ritmo diario de la marca para distintas audiencias.",
     previewCards: [
       {
-        label: "Corporate Narrative",
-        title: "Team, brand, and reference stories",
+        label: "Relato corporativo",
+        title: "Historias de equipo, marca y referencias",
         stat: "LinkedIn TR / Global / Facebook",
       },
       {
-        label: "Technical Content",
-        title: "Video, demos, and product-led explanations",
+        label: "Contenido técnico",
+        title: "Vídeo, demostraciones y explicaciones centradas en el producto",
         stat: "YouTube",
       },
       {
-        label: "Live Flow",
-        title: "A split social storefront for Turkey and global markets",
+        label: "Flujo en vivo",
+        title: "Escaparate social segmentado para Turquía y mercados globales",
         stat: "Instagram",
       },
     ],
-    highlightsLabel: "Content Map",
-    highlightsTitle: "Understand what each channel is for at a glance.",
+    highlightsLabel: "Mapa de contenido",
+    highlightsTitle: "Entienda de un vistazo para qué sirve cada canal.",
     highlightsDesc:
-      "This page is designed as a digital brand layer, not a plain link list. The blocks below show what kind of value each social channel delivers.",
+      "Esta página está pensada como capa digital de la marca, no como una simple lista de enlaces. Los bloques siguientes muestran el tipo de valor que aporta cada canal social.",
     highlights: [
       {
-        title: "Corporate trust",
+        title: "Confianza corporativa",
         description:
-          "The right place for references, event visibility, company news, and professional network communication.",
-        stat: "Corporate focus",
+          "El lugar adecuado para referencias, visibilidad en eventos, noticias de la empresa y la comunicación en redes profesionales.",
+        stat: "Enfoque corporativo",
       },
       {
-        title: "Engineering storytelling",
+        title: "Narrativa de ingeniería",
         description:
-          "A video-first flow for product explainers, technical narratives, and deeper content consumption.",
-        stat: "Video focus",
+          "Un flujo orientado a vídeo para explicaciones de producto, relatos técnicos y consumo de contenido más profundo.",
+        stat: "Enfoque en vídeo",
       },
       {
-        title: "Market split",
+        title: "Segmentación por mercado",
         description:
-          "Separate Turkey and global accounts allow each audience to follow the brand at its own pace.",
-        stat: "Regional focus",
+          "Cuentas separadas para Turquía y el ámbito global permiten que cada audiencia siga la marca a su propio ritmo.",
+        stat: "Enfoque regional",
       },
     ],
-    sectionLabel: "Channel Selection",
-    sectionTitle: "Enter the right social stream for your need.",
+    sectionLabel: "Selección de canal",
+    sectionTitle: "Entre en el flujo social adecuado para su necesidad.",
     sectionDesc:
-      "These cards do more than show the platform. They also signal tone, content type, and what you should expect after clicking.",
-    externalNote: "All links open in a new tab.",
-    footerLabel: "Next Step",
-    footerTitle: "Move from social visibility to direct project contact.",
+      "Las tarjetas no muestran solo la plataforma; también transmiten el tono, el tipo de contenido y qué puede esperar al hacer clic.",
+    externalNote: "Todos los enlaces se abren en una nueva pestaña.",
+    footerLabel: "Siguiente paso",
+    footerTitle: "Pase de la visibilidad en redes al contacto directo del proyecto.",
     footerDesc:
-      "For discovery, technical consultation, or product guidance, connect directly with our team. Social channels build familiarity, but project momentum starts with direct communication.",
-    footerPrimary: "Contact Form",
-    footerSecondary: "Our Partners",
+      "Para exploración, consulta técnica o orientación sobre producto, conecte directamente con nuestro equipo. Las redes generan familiaridad; el impulso del proyecto nace de la comunicación directa.",
+    footerPrimary: "Formulario de contacto",
+    footerSecondary: "Nuestros socios",
     platforms: {
       linkedin: {
-        eyebrow: "Turkey LinkedIn",
+        eyebrow: "LinkedIn Turquía",
         summary:
-          "The main showcase for Turkey-focused brand updates, project news, and professional network communication.",
-        tags: ["References", "Company updates"],
+          "El escaparate principal para actualizaciones corporativas centradas en Turquía, noticias de proyectos y la comunicación en la red profesional.",
+        tags: ["Referencias", "Noticias de la empresa"],
       },
       linkedinGlobal: {
-        eyebrow: "Global LinkedIn",
+        eyebrow: "LinkedIn global",
         summary:
-          "A separate LinkedIn layer for international visibility, global business language, and outward-facing corporate storytelling.",
-        tags: ["Global network", "Corporate communication"],
+          "Una capa de LinkedIn independiente para visibilidad internacional, lenguaje empresarial global y relato corporativo orientado al exterior.",
+        tags: ["Red global", "Comunicación corporativa"],
       },
       youtube: {
-        eyebrow: "Video Channel",
+        eyebrow: "Canal de vídeo",
         summary:
-          "Built for people who want to explore product behavior and engineering content in a deeper format.",
-        tags: ["Product videos", "Technical explainers"],
+          "Pensado para quienes desean explorar el comportamiento del producto y el contenido de ingeniería con más profundidad.",
+        tags: ["Vídeos de producto", "Explicaciones técnicas"],
       },
       facebook: {
-        eyebrow: "Community Feed",
+        eyebrow: "Feed comunitario",
         summary:
-          "A supporting channel for wider social visibility, announcements, and ongoing brand updates.",
-        tags: ["Announcements", "Community reach"],
+          "Canal de apoyo para mayor visibilidad social, anuncios y actualizaciones continuas de la marca.",
+        tags: ["Anuncios", "Alcance comunitario"],
       },
       instagramTr: {
-        eyebrow: "Turkey Account",
+        eyebrow: "Cuenta Turquía",
         summary:
-          "A warmer, more immediate, and more visual Novves flow for the local market language.",
-        tags: ["Local content", "Visual storefront"],
+          "Un flujo de Novves más cercano, ágil y visual con el lenguaje del mercado local.",
+        tags: ["Contenido local", "Escaparate visual"],
       },
       instagramGlobal: {
-        eyebrow: "Global Account",
+        eyebrow: "Cuenta global",
         summary:
-          "A distinct channel for international storytelling, brand visibility, and global audience presence.",
-        tags: ["Global storefront", "Brand voice"],
+          "Un canal independiente para relato internacional, visibilidad de marca y presencia ante un público global.",
+        tags: ["Escaparate global", "Voz de marca"],
+      },
+    },
+  },
+  zh: {
+    heroKicker: "数字形象",
+    heroLead:
+      "我们将企业动态、产品视频与现场叙事整合为清晰的一层社交内容。每个渠道承担明确分工；本页让这一结构一目了然。",
+    stats: [
+      { value: "6", label: "活跃渠道" },
+      { value: "TR + Global", label: "市场侧重" },
+      { value: "企业 + 产品", label: "内容主轴" },
+    ],
+    primaryCta: "返回联系页",
+    secondaryCta: "查看合作伙伴",
+    previewEyebrow: "发布架构",
+    previewTitle: "每个渠道扮演不同角色。",
+    previewDesc:
+      "土耳其与全球 LinkedIn 账号在不同尺度传递企业叙事，Facebook 支撑更广泛的社交曝光，YouTube 深化产品与工程故事，Instagram 账号让品牌节奏对不同受众可见。",
+    previewCards: [
+      {
+        label: "企业叙事",
+        title: "团队、品牌与案例故事",
+        stat: "LinkedIn TR / Global / Facebook",
+      },
+      {
+        label: "技术内容",
+        title: "视频、演示与以产品为中心的讲解",
+        stat: "YouTube",
+      },
+      {
+        label: "实时动态",
+        title: "面向土耳其与全球市场的分开展示",
+        stat: "Instagram",
+      },
+    ],
+    highlightsLabel: "内容地图",
+    highlightsTitle: "一眼看懂各渠道的用途。",
+    highlightsDesc:
+      "本页按数字品牌层级设计，而非简单链接列表。下方版块说明各社交渠道提供的价值类型。",
+    highlights: [
+      {
+        title: "企业信任",
+        description:
+          "案例、活动露出、公司新闻与专业网络沟通的首选入口。",
+        stat: "企业侧重",
+      },
+      {
+        title: "工程叙事",
+        description:
+          "以视频为主的内容流，适合产品讲解、技术叙事与更深度的阅读。",
+        stat: "视频侧重",
+      },
+      {
+        title: "市场划分",
+        description:
+          "土耳其与全球账号分立，让不同受众按自身节奏关注品牌。",
+        stat: "区域侧重",
+      },
+    ],
+    sectionLabel: "渠道选择",
+    sectionTitle: "按需求进入合适的社交内容流。",
+    sectionDesc:
+      "卡片不仅展示平台，也传达语气、内容类型以及点击后的预期体验。",
+    externalNote: "所有链接在新标签页打开。",
+    footerLabel: "下一步",
+    footerTitle: "从社交曝光转向项目直接沟通。",
+    footerDesc:
+      "如需初步了解、技术咨询或产品选型，请直接联系我们的团队。社交渠道建立熟悉感，而项目推进始于面对面沟通。",
+    footerPrimary: "联系表单",
+    footerSecondary: "我们的合作伙伴",
+    platforms: {
+      linkedin: {
+        eyebrow: "LinkedIn 土耳其",
+        summary:
+          "面向土耳其的企业更新、项目新闻与专业人脉沟通的主要展示窗口。",
+        tags: ["案例", "公司动态"],
+      },
+      linkedinGlobal: {
+        eyebrow: "全球 LinkedIn",
+        summary:
+          "独立的 LinkedIn 渠道，用于国际曝光、全球商务语境与外向型企业叙事。",
+        tags: ["全球网络", "企业传播"],
+      },
+      youtube: {
+        eyebrow: "视频频道",
+        summary:
+          "适合希望更深入了解产品表现与工程内容的受众。",
+        tags: ["产品视频", "技术讲解"],
+      },
+      facebook: {
+        eyebrow: "社区信息流",
+        summary:
+          "辅助渠道，用于更广泛的社交可见度、公告与持续的品牌更新。",
+        tags: ["公告", "社区触达"],
+      },
+      instagramTr: {
+        eyebrow: "土耳其账号",
+        summary:
+          "以本地市场语言呈现，更贴近、更即时、更具视觉张力的 Novves 内容流。",
+        tags: ["本地内容", "视觉橱窗"],
+      },
+      instagramGlobal: {
+        eyebrow: "全球账号",
+        summary:
+          "独立渠道，承载国际叙事、品牌曝光与全球受众触达。",
+        tags: ["全球橱窗", "品牌声量"],
+      },
+    },
+  },
+  ur: {
+    heroKicker: "ڈیجیٹل موجودگی",
+    heroLead:
+      "ہم نے کارپوریٹ اپ ڈیٹس، پروڈکٹ ویڈیوز اور میدانی کہانیوں کو ایک واضح سوشل پرت میں جمع کیا ہے۔ ہر چینل کا ایک مخصوص کردار ہے؛ یہ صفحہ اس ڈھانچے کو فوری طور پر پڑھنے کے قابل بناتا ہے۔",
+    stats: [
+      { value: "6", label: "فعال چینلز" },
+      { value: "TR + Global", label: "بازار کی توجہ" },
+      { value: "Corporate + Product", label: "مواد کا محور" },
+    ],
+    primaryCta: "رابطے کے صفحے پر واپس جائیں",
+    secondaryCta: "ہمارے شراکت دار دیکھیں",
+    previewEyebrow: "اشاعت کا ڈھانچہ",
+    previewTitle: "ہر چینل ایک مختلف کردار ادا کرتا ہے۔",
+    previewDesc:
+      "ترکی اور عالمی LinkedIn اکاؤنٹس کارپوریٹ کہانی کو مختلف پیمانے پر پیش کرتے ہیں، Facebook وسیع سوشل نظر آنے میں مدد دیتا ہے، YouTube پروڈکٹ اور انجینئرنگ کی کہانی کو گہرا کرتا ہے، اور Instagram اکاؤنٹس مختلف سامعین کے لیے برانڈ کی روزمرہ حرکت ظاہر کرتے ہیں۔",
+    previewCards: [
+      {
+        label: "کارپوریٹ بیانیہ",
+        title: "ٹیم، برانڈ اور حوالہ جاتی کہانیاں",
+        stat: "LinkedIn TR / Global / Facebook",
+      },
+      {
+        label: "تکنیکی مواد",
+        title: "ویڈیو، ڈیمو اور پروڈکٹ مرکوز وضاحتیں",
+        stat: "YouTube",
+      },
+      {
+        label: "زندہ بہاؤ",
+        title: "ترکی اور عالمی بازاروں کے لیے علیحدہ سوشل ونڈو",
+        stat: "Instagram",
+      },
+    ],
+    highlightsLabel: "مواد کا نقشہ",
+    highlightsTitle: "ایک نظر میں سمجھیں ہر چینل کس لیے ہے۔",
+    highlightsDesc:
+      "یہ صفحہ سادہ لنکس کی فہرست نہیں، بلکہ ڈیجیٹل برانڈ کی ایک پرت کے طور پر ڈیزائن کیا گیا ہے۔ ذیل کے بلاکس بتاتے ہیں کہ ہر سوشل چینل کس قسم کی قدر فراہم کرتا ہے۔",
+    highlights: [
+      {
+        title: "کارپوریٹ اعتماد",
+        description:
+          "حوالہ جات، ایونٹس میں نظر آنا، کمپنی کی خبریں اور پیشہ ورانہ نیٹ ورک مواصلت کے لیے صحیح جگہ۔",
+        stat: "کارپوریٹ فوکس",
+      },
+      {
+        title: "انجینئرنگ کی کہانی",
+        description:
+          "پروڈکٹ وضاحتیں، تکنیکی بیانیے اور گہرے مواد کے لیے ویڈیو پر مبنی بہاؤ۔",
+        stat: "ویڈیو فوکس",
+      },
+      {
+        title: "بازار کی تقسیم",
+        description:
+          "ترکی اور عالمی علیحدہ اکاؤنٹس ہر سامعین کو اپنے رفتار پر برانڈ فالو کرنے دیتے ہیں۔",
+        stat: "علاقائی فوکس",
+      },
+    ],
+    sectionLabel: "چینل کا انتخاب",
+    sectionTitle: "اپنی ضرورت کے مطابق صحیح سوشل بہاؤ میں داخل ہوں۔",
+    sectionDesc:
+      "کارڈز نہ صرف پلیٹ فارم دکھاتے ہیں؛ لہجہ، مواد کی قسم اور کلک کے بعد کی توقع بھی بتاتے ہیں۔",
+    externalNote: "تمام لنکس نئی ٹیب میں کھلتے ہیں۔",
+    footerLabel: "اگلا قدم",
+    footerTitle: "سوشل نظر آنے سے براہ راست منصوبے کے رابطے کی طرف جائیں۔",
+    footerDesc:
+      "دریافت، تکنیکی مشورے یا پروڈکٹ رہنمائی کے لیے ہماری ٹیم سے براہ راست رابطہ کریں۔ سوشل چینلز واقفیت بناتے ہیں؛ منصوبے کی رفتار سیدھی گفتگو سے شروع ہوتی ہے۔",
+    footerPrimary: "رابطہ فارم",
+    footerSecondary: "ہمارے شراکت دار",
+    platforms: {
+      linkedin: {
+        eyebrow: "LinkedIn ترکی",
+        summary:
+          "ترکی پر مرکوز کارپوریٹ اپ ڈیٹس، منصوبے کی خبریں اور پیشہ ورانہ نیٹ ورک مواصلت کے لیے مرکزی ونڈو۔",
+        tags: ["حوالے", "کمپنی کی خبریں"],
+      },
+      linkedinGlobal: {
+        eyebrow: "عالمی LinkedIn",
+        summary:
+          "بین الاقوامی نظر آنے، عالمی کاروباری زبان اور بیرونی کارپوریٹ بیانیے کے لیے علیحدہ LinkedIn پرت۔",
+        tags: ["عالمی نیٹ ورک", "کارپوریٹ مواصلات"],
+      },
+      youtube: {
+        eyebrow: "ویڈیو چینل",
+        summary:
+          "ان لوگوں کے لیے جو پروڈکٹ کے رویے اور انجینئرنگ مواد کو لمبے فارمیٹ میں سمجھنا چاہتے ہیں۔",
+        tags: ["پروڈکٹ ویڈیوز", "تکنیکی وضاحتیں"],
+      },
+      facebook: {
+        eyebrow: "کمیونٹی فیڈ",
+        summary:
+          "وسیع سوشل نظر آنے، اعلانات اور جاری برانڈ اپ ڈیٹس کے لیے معاون چینل۔",
+        tags: ["اعلانات", "کمیونٹی تک رسائی"],
+      },
+      instagramTr: {
+        eyebrow: "ترکی اکاؤنٹ",
+        summary:
+          "مقامی بازار کی زبان میں گرم، فوری اور زیادہ بصری Novves بہاؤ۔",
+        tags: ["مقامی مواد", "بصری ونڈو"],
+      },
+      instagramGlobal: {
+        eyebrow: "عالمی اکاؤنٹ",
+        summary:
+          "بین الاقوامی بیانیہ، برانڈ نظر آنے اور عالمی سامعین کے لیے علیحدہ چینل۔",
+        tags: ["عالمی ونڈو", "برانڈ آواز"],
       },
     },
   },
@@ -375,7 +672,223 @@ const pageCopy: Record<Locale, LocalizedPageCopy> = {
       },
     },
   },
-};
+  kk: {
+    heroKicker: "Цифрлық көрініс",
+    heroLead:
+      "Корпоративтік хабарламалар, өнім бейндері және алаңға бағытталған бөлісулерді бір түсінікті ағымға жинадық. Әр арна өз міндетін атқарады; бұл бет сол құрылымды оқуға ыңғайлы етеді.",
+    stats: [
+      { value: "6", label: "белсенді арна" },
+      { value: "TR + Global", label: "нарық бағыты" },
+      { value: "Корпоративтік + Өнім", label: "мазмұн осі" },
+    ],
+    primaryCta: "Байланыс бетіне оралу",
+    secondaryCta: "Серіктестерімізді қарау",
+    previewEyebrow: "Жариялау архитектурасы",
+    previewTitle: "Әр арна өз рөлін ойнайды.",
+    previewDesc:
+      "LinkedIn Түркия және әлемдік аккаунттары корпоративтік әңгімені әртүрлі масштабта жеткізеді, Facebook кең әлеуметтік көріністі қолдайды. YouTube өнім мен инженерлік әңгімені тереңдетеді, Instagram аккаунттары брендтің күнделікті ритмін көрсетеді.",
+    previewCards: [
+      {
+        label: "Корпоративтік әңгіме",
+        title: "Команда, бренд және референс әңгімелері",
+        stat: "LinkedIn TR / Global / Facebook",
+      },
+      {
+        label: "Техникалық мазмұн",
+        title: "Бейне, демо және өнімге бағытталған түсіндірулер",
+        stat: "YouTube",
+      },
+      {
+        label: "Тікелей ағым",
+        title: "Түркия және әлемдік нарыққа бөлінген әлеуметтік витрина",
+        stat: "Instagram",
+      },
+    ],
+    highlightsLabel: "Мазмұн картасы",
+    highlightsTitle: "Әр арнаның не үшін екенін бір қарауда түсініңіз.",
+    highlightsDesc:
+      "Бұл бет қарапайым сілтеме тізімі емес, сандық бренд қабаты ретінде жасалған. Төмендегі блоктар әр әлеуметтік арна қандай құндылық беретінін көрсетеді.",
+    highlights: [
+      {
+        title: "Корпоративтік сенім",
+        description:
+          "Референстер, іс-шара көрінісі, компания жаңалықтары және кәсіби желідегі байланыс үшін ең дұрыс орын.",
+        stat: "Корпоративтік фокус",
+      },
+      {
+        title: "Инженерлік әңгіме",
+        description:
+          "Өнім түсіндірулері, техникалық әңгімелер және терең мазмұн үшін бейне бағытталған ағым.",
+        stat: "Бейне фокус",
+      },
+      {
+        title: "Нарықты бөлу",
+        description:
+          "Түркия және әлемдік аккаунттардың бөлінуі әр аудиторияға өз ритмінде қадағалауға мүмкіндік береді.",
+        stat: "Аймақтық фокус",
+      },
+    ],
+    sectionLabel: "Арна таңдауы",
+    sectionTitle: "Қажетіңізге сай дұрыс әлеуметтік ағымға кіріңіз.",
+    sectionDesc:
+      "Карточкалар тек платформаны көрсетпейді; үн, мазмұн түрі және басқаннан кейін не күтетініңізді де сездіреді.",
+    externalNote: "Барлық сілтемелер жаңа қойыншыда ашылады.",
+    footerLabel: "Келесі қадам",
+    footerTitle: "Әлеуметтік көріністен тікелей жоба байланысына өтіңіз.",
+    footerDesc:
+      "Зерттеу, техникалық кеңес немесе өнім таңдауы үшін командамызбен тікелей байланысыңыз. Әлеуметтік арналар танымалдылықты арттырады, ал жоба импульсы тікелей диалогта басталады.",
+    footerPrimary: "Байланыс формасы",
+    footerSecondary: "Серіктестеріміз",
+    platforms: {
+      linkedin: {
+        eyebrow: "LinkedIn Түркия",
+        summary:
+          "Түркияға бағытталған корпоративтік жаңартулар, жоба жаңалықтары және кәсіби желідегі байланыс үшін негізгі витрина.",
+        tags: ["Референстер", "Компания жаңалықтары"],
+      },
+      linkedinGlobal: {
+        eyebrow: "Әлемдік LinkedIn",
+        summary:
+          "Халықаралық көрініс, әлемдік іс тілі және сыртқы корпоративтік әңгіме үшін бөлек LinkedIn арнасы.",
+        tags: ["Әлемдік желі", "Корпоративтік байланыс"],
+      },
+      youtube: {
+        eyebrow: "Бейне арна",
+        summary:
+          "Өнімдердің қалай жұмыс істейтіні мен инженерлік бөлімін ұзағырақ форматта қарағысы келетіндер үшін.",
+        tags: ["Өнім бейнелері", "Техникалық түсіндіру"],
+      },
+      facebook: {
+        eyebrow: "Қауымдастық ағымы",
+        summary:
+          "Кең әлеуметтік көрініс, хабарландырулар және ағымдағы бренд бөлісулері үшін қолдау арнасы.",
+        tags: ["Хабарландырулар", "Қауымдастыққа жету"],
+      },
+      instagramTr: {
+        eyebrow: "Түркия аккаунты",
+        summary:
+          "Жергілікті нарық тілімен жылырақ, жылдам әрі көрнекі Novves ағымы.",
+        tags: ["Жергілікті мазмұн", "Көрнекі витрина"],
+      },
+      instagramGlobal: {
+        eyebrow: "Әлемдік аккаунт",
+        summary:
+          "Халықаралық әңгіме, бренд көрінісі және әлемдік аудитория үшін бөлек арна.",
+        tags: ["Әлемдік витрина", "Бренд дауысы"],
+      },
+    },
+  },
+  tg: {
+    heroKicker: "Дидбинии рақамӣ",
+    heroLead:
+      "Мо эълонҳои корпоративӣ, видеоҳои маҳсулот ва нашрҳои саҳроиро дар як қабати социалии равшан ҷамъ кардем. Ҳар канал вазифаи алоҳида дорад; ин саҳифа ин сохторро барои хониш осон мекунад.",
+    stats: [
+      { value: "6", label: "каналҳои фаъол" },
+      { value: "TR + Global", label: "тарҷеҳи бозор" },
+      { value: "Корпоративӣ + Маҳсулот", label: "меҳвари мундариҷа" },
+    ],
+    primaryCta: "Бозгашт ба саҳифаи тамос",
+    secondaryCta: "Шарикони моро бинед",
+    previewEyebrow: "Меъмории нашр",
+    previewTitle: "Ҳар канал нақши гуногун дорад.",
+    previewDesc:
+      "Ҳисобҳои LinkedIn-и Туркия ва ҷаҳонӣ ҳикояи корпоративиро дар масоҳатҳои гуногун интиқол медиҳанд, Facebook дидабинии васеъи иҷтимоиро дастгирӣ мекунад. YouTube нақшаи маҳсулот ва муҳандисиро амиқтар мекунад, ҳисобҳои Instagram ритми рӯзонаи брендро барои мухлисҳои гуногун намоён мекунанд.",
+    previewCards: [
+      {
+        label: "Ҳикояи корпоративӣ",
+        title: "Ҳикояҳои даста, бренд ва мисолҳо",
+        stat: "LinkedIn TR / Global / Facebook",
+      },
+      {
+        label: "Мундариҷаи техникӣ",
+        title: "Видео, демо ва шарҳҳои маҳсулот-мақсаднок",
+        stat: "YouTube",
+      },
+      {
+        label: "Ҷараёни зинда",
+        title: "Витринаи иҷтимоии ҷудошуда барои бозорҳои Туркия ва ҷаҳонӣ",
+        stat: "Instagram",
+      },
+    ],
+    highlightsLabel: "Харитаи мундариҷа",
+    highlightsTitle: "Аз як назар бифаҳмед, ҳар канал барои чӣ аст.",
+    highlightsDesc:
+      "Ин саҳифа на чунонки рӯйхати пайванд, балки чун қабати рақамии бренд тарроҳӣ шудааст. Блокҳои зер арзиши ҳар канали иҷтимоиро нишон медиҳанд.",
+    highlights: [
+      {
+        title: "Боварии корпоративӣ",
+        description:
+          "Беҳтарин ҷой барои мисолҳо, намоёндии чорабиниҳо, ахбороти ширкат ва муоширати шабакаи касбӣ.",
+        stat: "Фокуси корпоративӣ",
+      },
+      {
+        title: "Ҳикояи муҳандисӣ",
+        description:
+          "Ҷараёни ба видео такякунанда барои шарҳҳои маҳсулот, нақшаҳои техникӣ ва истеъмоли амиқтари мундариҷа.",
+        stat: "Фокуси видео",
+      },
+      {
+        title: "Тақсимоти бозор",
+        description:
+          "Ҳисобҳои ҷудогонаи Туркия ва ҷаҳонӣ имкон медиҳанд, ки ҳар як мухлис брендро ба ритми худ пайгирӣ кунад.",
+        stat: "Фокуси минтақавӣ",
+      },
+    ],
+    sectionLabel: "Интихоби канал",
+    sectionTitle: "Ба ҷараёни иҷтимоии дуруст аз рӯи ниёзатон дароед.",
+    sectionDesc:
+      "Кортҳо на танҳо платформаро нишон медиҳанд; садо, намуди мундариҷа ва интизориҳои пас аз зеркаширо низ ҳис мекунанд.",
+    externalNote: "Ҳама пайвандҳо дар варақаи нав кушода мешаванд.",
+    footerLabel: "Қадами навбатӣ",
+    footerTitle: "Аз дидабинии иҷтимоӣ ба тамоси мустақими лоиҳа гузаред.",
+    footerDesc:
+      "Барои кашф, машварати техникӣ ё интихоби маҳсулот бо дастаи мо мустақим тамос гиред. Қаналҳои иҷтимоӣ шиносоиро месозанд, аммо ҳаракати лоиҳа аз муоширати мустақим сар мешавад.",
+    footerPrimary: "Шакли тамос",
+    footerSecondary: "Шарикони мо",
+    platforms: {
+      linkedin: {
+        eyebrow: "LinkedIn-и Туркия",
+        summary:
+          "Витринаи асосӣ барои навсозиҳои корпоративии ба Туркия тамарказ, ахбороти лоиҳа ва муоширати шабакаи касбӣ.",
+        tags: ["Мисолҳо", "Ахбороти ширкат"],
+      },
+      linkedinGlobal: {
+        eyebrow: "LinkedIn-и ҷаҳонӣ",
+        summary:
+          "Қабати ҷудогонаи LinkedIn барои дидабинии байналмилалӣ, забони тиҷорати ҷаҳонӣ ва ҳикояи корпоративии ба берун.",
+        tags: ["Шабакаи ҷаҳонӣ", "Муоширати корпоративӣ"],
+      },
+      youtube: {
+        eyebrow: "Канали видео",
+        summary:
+          "Барои касоне, ки мехоҳанд рафтори маҳсулот ва мундариҷаи муҳандисиро дар формати дарозтар омӯзанд.",
+        tags: ["Видеоҳои маҳсулот", "Шарҳҳои техникӣ"],
+      },
+      facebook: {
+        eyebrow: "Ҷараёни ҷамъиятӣ",
+        summary:
+          "Қабати дастгирӣкунанда барои дидабинии васеи иҷтимоӣ, эълонҳо ва навсозиҳои ҷории бренд.",
+        tags: ["Эълонҳо", "Наздикӣ ба ҷамъият"],
+      },
+      instagramTr: {
+        eyebrow: "Ҳисоби Туркия",
+        summary:
+          "Ҷараёни гармтар, фаврӣ ва бештар визуалии Novves ба забони бозори маҳаллӣ.",
+        tags: ["Мундариҷаи маҳаллӣ", "Витринаи визуалӣ"],
+      },
+      instagramGlobal: {
+        eyebrow: "Ҳисоби ҷаҳонӣ",
+        summary:
+          "Қабати ҷудо барои ҳикояи байналмилалӣ, дидабинии бренд ва ҳузури мухлиси ҷаҳонӣ.",
+        tags: ["Витринаи ҷаҳонӣ", "Овози бренд"],
+      },
+    },
+  },
+  ...sosyalMedyaCopyExtras,
+  ...Object.fromEntries(
+    locales.filter((l) => !sosyalPageExplicitLocales.has(l)).map((l) => [l, sosyalMedyaPageCopyEn]),
+  ),
+} as Record<Locale, LocalizedPageCopy>;
 
 const heroPreviewImages = [
   "/images/novves-team.jpg",

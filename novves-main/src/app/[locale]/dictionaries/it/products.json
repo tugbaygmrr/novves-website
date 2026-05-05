@@ -1,0 +1,1406 @@
+{
+  "shared": {
+    "home": "Inizio",
+    "products": "Prodotti",
+    "productsLabel": "Prodotti",
+    "explore": "Esplora",
+    "otherCategories": "Altre categorie di prodotti",
+    "technicalSupport": "Assistenza tecnica",
+    "technicalSupportRequest": "Richiesta di assistenza tecnica",
+    "lookingForProduct": "Cerchi il prodotto giusto per il tuo progetto?",
+    "teamReady": "Il nostro team tecnico è pronto a proporti la soluzione più adatta.",
+    "allProducts": "Tutti i prodotti",
+    "viewProduct": "Vedi prodotto",
+    "detailedView": "Vedi dettagli",
+    "comingSoon": "Prossimamente",
+    "inspect": "Esplora",
+    "model": "modello",
+    "models": "Modello",
+    "results": "risultati",
+    "noResults": "Nessun risultato trovato.",
+    "searchProducts": "Cerca prodotti...",
+    "clear": "Cancella",
+    "readMore": "Leggi tutto",
+    "readLess": "Mostra meno",
+    "getQuote": "Richiedi un preventivo",
+    "allIklimlendirmeProducts": "Tutti i prodotti per climatizzazione",
+    "forYourProject": "Per la soluzione giusta al tuo progetto",
+    "productCatalog": "Catalogo prodotti",
+    "productRange": "Gamma prodotti",
+    "productFamilies": "Famiglie di prodotti",
+    "productGroups": "Gruppi di prodotti",
+    "fullProductRange": "Gamma completa",
+    "allProductFamilies": "Tutte le famiglie di prodotti",
+    "mostPreferred": "I più scelti",
+    "featuredProducts": "Prodotti in evidenza",
+    "productVariety": "Varietà di prodotti",
+    "productFamily": "Famiglia di prodotti",
+    "certified": "Certificato",
+    "fireResistance": "Resistenza al fuoco",
+    "filterSeries": "Serie filtri",
+    "exploreNovves": "Esplora altre categorie nella gamma di prodotti NOVVES.",
+    "comingSoonNotice": "I prodotti di questa categoria saranno pubblicati a breve con tutti i dettagli. Per informazioni tecniche e preventivi",
+    "contactUs": "contattaci",
+    "airDamper": "Serranda",
+    "grilleDiffuser": "Griglie, diffusori, ecc.",
+    "panoPLCSensor": "Quadri, PLC, sensori",
+    "silencerRubberPadIsolators": "Silenziatori, tamponi antivibranti, isolatori",
+    "categories": {
+      "havaHareketi": "Movimentazione aria",
+      "iklimlendirme": "Climatizzazione",
+      "sogutmaVeIsitma": "Raffreddamento e riscaldamento",
+      "havaYonetimi": "Gestione aria",
+      "havaDagitimi": "Distribuzione aria",
+      "havaFiltrasyonu": "Filtrazione aria",
+      "aksesuarlar": "Accessori",
+      "otomasyonMalzemeleri": "Automazione",
+      "titresimVeSesIzolasyon": "Isolamento vibrazioni e acustico"
+    }
+  },
+  "havaHareketi": {
+    "title": "Movimentazione aria",
+    "titleFirst": "Movimentazione",
+    "titleHighlight": "dell'aria",
+    "heroDesc": "Per le esigenze di ventilazione industriale e di comfort",
+    "heroDescSuffix": "famiglia di prodotti.",
+    "stats": [
+      {
+        "value": "1,200+",
+        "label": "Varietà di prodotti"
+      },
+      {
+        "value": "12",
+        "label": "Famiglie di prodotti"
+      },
+      {
+        "value": "EN 12101-3",
+        "label": "Certificato"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Resistenza al fuoco"
+      }
+    ],
+    "products": [
+      {
+        "name": "DRAGONFLY",
+        "type": "Ventilatore per estrazione fumo e calore",
+        "subModels": [
+          "DF T",
+          "DF TS",
+          "DF C",
+          "DF R",
+          "DF RV",
+          "DF TJF",
+          "DF JR",
+          "DF JA",
+          "DF WH",
+          "DF RH"
+        ]
+      },
+      {
+        "name": "MARLIN",
+        "type": "Ventilatore assiale",
+        "subModels": [
+          "MARLIN",
+          "MARLIN S",
+          "MARLIN B",
+          "MARLIN 2S"
+        ]
+      },
+      {
+        "name": "BEAR",
+        "type": "Ventilatore ATEX",
+        "subModels": [
+          "BEAR REB EX",
+          "BEAR RVS EX",
+          "BEAR RHS EX",
+          "BEAR T",
+          "BEAR C",
+          "BEAR R",
+          "BEAR W",
+          "BEAR LPF EX",
+          "BEAR TB"
+        ]
+      },
+      {
+        "name": "NAUTILUS",
+        "type": "Ventilatore centrifugo industriale",
+        "subModels": [
+          "NAUTILUS LPF",
+          "NAUTILUS MPF",
+          "NAUTILUS HPF",
+          "NAUTILUS SILENCE"
+        ]
+      },
+      {
+        "name": "HUMMINGBIRD",
+        "type": "Ventilatore EC",
+        "subModels": [
+          "HUMMINGBIRD DRB EC",
+          "HUMMINGBIRD RRV EC",
+          "HUMMINGBIRD RRH EC",
+          "HUMMINGBIRD CBP EC"
+        ]
+      },
+      {
+        "name": "HERON",
+        "type": "Ventilatore da tetto",
+        "subModels": [
+          "HERON RH",
+          "HERON RHS",
+          "HERON RV",
+          "HERON RVS",
+          "HERON AH",
+          "HERON AV",
+          "HERON H"
+        ]
+      },
+      {
+        "name": "OWL",
+        "type": "Ventilatore a parete",
+        "subModels": [
+          "OWL RER",
+          "OWL R",
+          "OWL H"
+        ]
+      },
+      {
+        "name": "SEAHORSE",
+        "type": "Ventilatore per bagno",
+        "subModels": [
+          "SEAHORSE AP",
+          "SEAHORSE RP V1",
+          "SEAHORSE RP V2"
+        ]
+      },
+      {
+        "name": "KOI",
+        "type": "Ventilatore per condotte",
+        "subModels": [
+          "KOI CB",
+          "KOI RB",
+          "KOI REB",
+          "KOI X"
+        ]
+      },
+      {
+        "name": "TURTLE",
+        "type": "Ventilatore a cassonetto",
+        "subModels": [
+          "TURTLE B",
+          "TURTLE BPA",
+          "TURTLE F",
+          "TURTLE BP",
+          "TURTLE A"
+        ]
+      },
+      {
+        "name": "BUTTERFLY",
+        "type": "Ventilatore aspirazione cucina",
+        "subModels": [
+          "BUTTERFLY ECO",
+          "BUTTERFLY ECO HR"
+        ]
+      },
+      {
+        "name": "FOX",
+        "type": "Ventilatore per rifugi",
+        "subModels": [
+          "FOX D",
+          "FOX C"
+        ]
+      },
+      {
+        "name": "CHICKEN",
+        "type": "Ventilatore per avicoltura",
+        "comingSoon": true
+      },
+      {
+        "name": "ELEPHANT",
+        "type": "Aspirazione polveri",
+        "comingSoon": true
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "ctaDesc": "Contatta il nostro team di ingegneri per individuare la soluzione più adatta al tuo progetto tra oltre 1.200 varianti di prodotto."
+  },
+  "iklimlendirme": {
+    "title": "Climatizzazione",
+    "titleFirst": "Clima",
+    "titleHighlight": "tizzazione",
+    "pills": [
+      "3 famiglie di prodotti",
+      "Configurazione modulare",
+      "Ventilatore EC e centrifugo",
+      "Filtrazione HEPA"
+    ],
+    "tiger": {
+      "label": "Unità di trattamento aria (UTA)",
+      "desc": "Soluzione UTA a costruzione modulare, componenti ad alta efficienza energetica e funzionamento silenzioso nella gamma di portate 500 – 125.000 m³/h.",
+      "specs": [
+        {
+          "label": "Portata",
+          "value": "500–125K m³/h"
+        },
+        {
+          "label": "Pressione",
+          "value": "10–3.000 Pa"
+        },
+        {
+          "label": "Telaio",
+          "value": "Alluminio anodizzato"
+        }
+      ]
+    },
+    "dolphin": {
+      "label": "Unità deumidificazione piscine",
+      "desc": "Previene i danni da umidità alle strutture nelle piscine coperte massimizzando il comfort degli utenti. Si distingue per l’alta efficienza energetica, la robustezza nel tempo e il funzionamento silenzioso.",
+      "specs": [
+        {
+          "label": "Capacità",
+          "value": "6 modelli"
+        },
+        {
+          "label": "Portata",
+          "value": "3.000–9.000 m³/h"
+        },
+        {
+          "label": "Area vasca",
+          "value": "50–250 m²"
+        }
+      ]
+    },
+    "caracal": {
+      "label": "Recupero di calore",
+      "desc": "Garantisce un condizionamento controllato per soddisfare il fabbisogno di aria fresca e migliorare la qualità dell’aria negli uffici, nelle scuole, negli hotel, negli ospedali e negli spazi sociali."
+    },
+    "ctaDesc": "Il nostro team tecnico è pronto a proporti la soluzione di climatizzazione più adatta.",
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "sogutmaVeIsitma": {
+    "title": "Raffreddamento e riscaldamento",
+    "titleFirst": "Raffreddamento e",
+    "titleHighlight": "riscaldamento",
+    "heroDesc": "Chiller, unità interne/esterne, riscaldatori elettrici e batterie acqua.",
+    "comingSoonNotice": "I prodotti di questa categoria saranno pubblicati a breve con tutti i dettagli. Per informazioni tecniche e preventivi",
+    "comingSoonLink": "contattaci",
+    "products": [
+      {
+        "name": "CHILLER (Polar Bear)",
+        "type": "Unità di raffreddamento",
+        "subModels": []
+      },
+      {
+        "name": "OUTDOOR UNITS",
+        "type": "Unità di raffreddamento",
+        "subModels": []
+      },
+      {
+        "name": "INDOOR UNITS",
+        "type": "Unità di raffreddamento",
+        "subModels": []
+      },
+      {
+        "name": "ELECTRIC HEATERS",
+        "type": "Riscaldatore elettrico",
+        "subModels": [
+          "EH (eckig)",
+          "EHC (rund)"
+        ]
+      },
+      {
+        "name": "WATER COIL",
+        "type": "Batteria",
+        "subModels": [
+          "WC"
+        ]
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaYonetimi": {
+    "title": "Gestione aria",
+    "titleFirst": "Gestione",
+    "titleHighlight": "dell'aria",
+    "heroDesc": "Soluzioni con serrande.",
+    "hound": {
+      "label": "Serranda",
+      "desc": "Serie di serrande progettata per massimo controllo e sicurezza nei punti più critici degli impianti di ventilazione e antincendio.",
+      "subModels": [
+        "MSD",
+        "MSFD-R",
+        "MSFD-B",
+        "SFD-B",
+        "SFD-R",
+        "RSFD-B",
+        "RSFD-Drain-B",
+        "FFD",
+        "MFD",
+        "RD",
+        "GS"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaDagitimi": {
+    "title": "Distribuzione aria",
+    "titleFirst": "Distribuzione",
+    "titleHighlight": "dell'aria",
+    "heroDesc": "Griglie, diffusori, anemostati e persiane.",
+    "alpaca": {
+      "label": "Griglie, diffusori, ecc.",
+      "desc": "modelli diversi con soluzioni su misura per ogni esigenza di distribuzione dell’aria.",
+      "subModels": [
+        "ALPACA-GL-SD",
+        "ALPACA-GL-DD",
+        "ALPACA-GL-RA",
+        "ALPACA-GL-PRF",
+        "ALPACA-GL-OB",
+        "ALPACA-DF-SQ",
+        "ALPACA-DF-CR",
+        "ALPACA-DF-LS",
+        "ALPACA-DF-JET",
+        "ALPACA-DF-ADJ",
+        "ALPACA-LV-FX",
+        "ALPACA-LV-ADJ",
+        "ALPACA-LV-WP",
+        "ALPACA-LV-AC",
+        "ALPACA-AM-SQ",
+        "ALPACA-AM-CR",
+        "ALPACA-AM-ADJ",
+        "ALPACA-SP-FR",
+        "ALPACA-SP-DEC",
+        "ALPACA-SP-AC",
+        "ALPACA-SP-JET"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaFiltrasyonu": {
+    "title": "Filtrazione aria",
+    "titleFirst": "Filtrazione",
+    "titleHighlight": "dell'aria",
+    "heroDesc": "Soluzioni filtranti per applicazioni industriali e di comfort.",
+    "scallop": {
+      "label": "Serie filtri",
+      "desc": "modelli filtro diversi con soluzioni su misura per ogni esigenza di filtrazione dell’aria.",
+      "subModels": [
+        "SCALLOP PF",
+        "SCALLOP MF",
+        "SCALLOP GF",
+        "SCALLOP ABF",
+        "SCALLOP CF",
+        "SCALLOP BF",
+        "SCALLOP HP",
+        "SCALLOP UF",
+        "SCALLOP FF"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "aksesuarlar": {
+    "title": "Accessori",
+    "titleFirst": "Access",
+    "titleHighlight": "ori",
+    "productCount": "prodotti",
+    "ctaTitle": "Cerchi l’accessorio giusto per il tuo progetto?",
+    "accessories": [
+      {
+        "name": "Isolatore antivibrante a molle",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Gli isolatori antivibranti a molle sono utilizzati negli impianti HVAC e nelle installazioni di macchinari per ridurre le vibrazioni a bassa frequenza che potrebbero trasmettersi dall’impianto al pavimento o all’ambiente circostante."
+      },
+      {
+        "name": "Piedini di fissaggio AE SF",
+        "image": "/images/products/ae-sf-baglanti-ayaklari.jpg",
+        "description": "I piedini di fissaggio sono elementi di ancoraggio ad alta resistenza, progettati per fissare in modo sicuro i ventilatori al pavimento o alla superficie di supporto secondo i requisiti di progetto."
+      },
+      {
+        "name": "Griglia di protezione AE PM",
+        "image": "/images/products/ae-pm-tel-kafes.jpg",
+        "description": "Le griglie di protezione sono realizzate in filo d’acciaio ad alta resistenza e sono progettate per garantire la sicurezza degli utenti sul lato aspirazione o mandata dei ventilatori e per impedire l’ingresso di corpi estranei nell’area operativa."
+      },
+      {
+        "name": "Cono di aspirazione AE IC",
+        "image": "/images/products/ae-ic-giris-konisi.jpg",
+        "description": "I coni di aspirazione serie AE IC sono progettati per ottimizzare il flusso d’aria sul lato aspirazione dei ventilatori, ridurre la turbolenza e aumentare l’efficienza dell’impianto."
+      },
+      {
+        "name": "Controflangia AE CF",
+        "image": "/images/products/ae-cf-karsi-flans.jpg",
+        "description": "Le controflange serie AE CF sono elementi di collegamento resistenti alle alte temperature, utilizzati per collegare i ventilatori alla rete di condotte e garantire la tenuta."
+      },
+      {
+        "name": "Controflangia flessibile AE FJF",
+        "image": "/images/products/ae-fjf.png",
+        "description": "Le controflange flessibili serie AE FJF sono elementi di collegamento speciali, progettati per limitare la trasmissione delle vibrazioni tra ventilatore e condotte, compensare le dilatazioni e offrire un ambiente operativo più silenzioso."
+      },
+      {
+        "name": "Controflangia flessibile AE FJF classe F400",
+        "image": "/images/products/ae-fjf.png",
+        "description": "Le controflange flessibili serie AE FJF classe F400 sono progettate per un collegamento flessibile, sicuro e stagno tra ventilatore e condotte nelle applicazioni con resistenza al fuoco."
+      },
+      {
+        "name": "Giunto flessibile doppia controflangia AE FJ2F",
+        "image": "/images/products/ae-fj2f.jpg",
+        "description": "I giunti flessibili a doppia controflangia sono elementi di collegamento altamente flessibili, dotati di controflangia su entrambe le estremità, progettati per assorbire vibrazioni, dilatazioni e disallineamenti di montaggio tra ventilatore e condotte."
+      },
+      {
+        "name": "Giunto flessibile doppia controflangia AE FJ2F F400",
+        "image": "/images/products/ae-fj2f.jpg",
+        "description": "La serie AE FJ2F-HR comprende giunti flessibili a doppia controflangia ad alta resistenza termica, per impianti che richiedono resistenza al fuoco."
+      },
+      {
+        "name": "Silenziatore circolare AE S-D100",
+        "image": "/images/products/ae-sd100.jpg",
+        "description": "I silenziatori circolari serie AE S-D100 sono elementi di controllo acustico ad alte prestazioni, progettati per ridurre i livelli di rumore e migliorare il comfort negli impianti di ventilazione."
+      },
+      {
+        "name": "Silenziatore rettangolare a condotta AE RS",
+        "image": "/images/products/ae-rs.jpg",
+        "description": "I silenziatori rettangolari per condotte serie AE RS sono elementi di isolamento acustico ad alta efficienza, progettati per ridurre il rumore generato dal flusso d’aria e migliorare il comfort acustico nelle reti di condotte."
+      },
+      {
+        "name": "Silenziatore a innesto AE-SS",
+        "image": "/images/products/emniyet-salteri.jpg",
+        "description": "I silenziatori a innesto serie AE SS sono accessori acustici opzionali per progetti che richiedono una riduzione del rumore in particolare sul lato aspirazione."
+      },
+      {
+        "name": "Palette guidaflusso AE-V",
+        "image": "/images/products/free.jpg",
+        "description": "Le palette guidaflusso serie AE V sono elementi aerodinamici ausiliari, progettati per ottimizzare il flusso d’aria, ridurre la turbolenza e garantire una distribuzione uniforme in ventilatori e condotte."
+      },
+      {
+        "name": "Cappello di mandata AE-OC",
+        "image": "/images/products/free.jpg",
+        "description": "I cappelli di mandata serie AE OC sono elementi strutturali robusti, progettati per proteggere dai fenomeni atmosferici i punti di scarico dei ventilatori e mantenere le prestazioni dell’impianto."
+      },
+      {
+        "name": "Connessione flessibile rettangolare AE-DFC",
+        "image": "/images/products/ae-dfc.jpg",
+        "description": "Le connessioni flessibili rettangolari serie AE DFC sono elementi di collegamento durevoli, progettati per isolare le vibrazioni, limitare la trasmissione del suono e migliorare la tenuta nelle reti di condotte."
+      },
+      {
+        "name": "Telaio adattatore tetto AE-AF",
+        "image": "/images/products/free.jpg",
+        "description": "I telai adattatori per tetto serie AE AF sono elementi di collegamento ad alta resistenza, progettati per garantire installazione sicura, stabile e stagna di ventilatori e altre apparecchiature HVAC sui tetti."
+      },
+      {
+        "name": "Bocchetta tetto piatto AE FRS",
+        "image": "/images/products/ae-frs.jpg",
+        "description": "Le bocchette per tetto piatto serie AE FRS sono elementi strutturali ausiliari per installazione sicura, isolata e stabile di ventilatori e apparecchiature HVAC su coperture piane."
+      },
+      {
+        "name": "Scatola di collegamento tetto AE-CB",
+        "image": "/images/products/free.jpg",
+        "description": "Le scatole di collegamento per tetto serie AE CB sono elementi strutturali ausiliari per installazione sicura e stabile di sistemi di ventilazione e collegamenti a condotta."
+      },
+      {
+        "name": "Riscaldatore elettrico a condotta AE-EH",
+        "image": "/images/products/ae-eh-elektrikli-isitici.jpg",
+        "description": "I riscaldatori elettrici per condotte serie AE EH sono unità compatte ad alta efficienza, sviluppate per applicazioni orientate al comfort, come il preriscaldamento dell’aria fresca negli impianti di ventilazione."
+      },
+      {
+        "name": "Interruttore di sicurezza",
+        "image": "/images/products/emniyet-salteri.jpg",
+        "description": "L’interruttore di sicurezza è un elemento di comando con elevati standard di protezione, progettato per l’accensione e lo spegnimento in sicurezza di ventilatori e altre apparecchiature elettriche."
+      },
+      {
+        "name": "Interruttore di sicurezza protetto",
+        "image": "/images/products/korumali-emniyet-salteri.jpg",
+        "description": "L’interruttore di sicurezza protetto è un elemento di comando robusto, progettato per consentire controllo ON/OFF sicuro delle apparecchiature elettriche offrendo protezione dagli agenti ambientali."
+      },
+      {
+        "name": "Regolatore di velocità monofase",
+        "image": "/images/products/monofaze-hiz-kontrol-cihazi.jpg",
+        "description": "Il regolatore di velocità monofase è un’unità di comando facile da usare, progettata per regolare in modo continuo e preciso la velocità di rotazione dei ventilatori con motori asincroni monofase a controllo di tensione."
+      },
+      {
+        "name": "Inverter di frequenza",
+        "image": "/images/products/frekans-inventoru.jpg",
+        "description": "L’inverter di frequenza è un’unità di pilotaggio di nuova generazione, sviluppata per aumentare l’efficienza energetica e offrire il controllo ottimale della velocità nei sistemi motorizzati di ventilazione."
+      },
+      {
+        "name": "Quadro di comando pressurizzazione",
+        "image": "/images/products/basinclandirma-kontrol-panosu.png",
+        "description": "Il quadro di comando pressurizzazione è un’unità di controllo avanzata con inverter di frequenza, progettata per garantire funzionamento automatico e ottimizzato dei ventilatori negli impianti di pressurizzazione."
+      },
+      {
+        "name": "Sensore di pressione differenziale",
+        "image": "/images/products/diferansiyel-basinc-sensoru.jpg",
+        "description": "Il sensore di pressione differenziale è un elemento di controllo ad alta precisione, progettato per misurare e controllare le differenze di pressione dell’aria negli impianti di ventilazione e filtrazione."
+      },
+      {
+        "name": "Sensore di pressione differenziale PI (uscita 0-10V)",
+        "image": "/images/products/diferansiyel-basinc-sensoru-pi10v.jpg",
+        "description": "Il sensore di pressione differenziale con controllo PI è un sistema sensore avanzato, sviluppato per monitorare con precisione e regolare automaticamente la pressione dell’aria o la portata negli impianti di ventilazione."
+      },
+      {
+        "name": "Rilevatore fumo a condotta",
+        "image": "/images/products/kanal-tipi-duman-sensoru.jpg",
+        "description": "Il rilevatore fumo a condotta è un dispositivo ad alta sensibilità per il rilevamento precoce di fumo e prodotti di combustione nell’aria negli impianti di ventilazione e climatizzazione."
+      },
+      {
+        "name": "Filtro a pannello G4",
+        "image": "/images/products/g4-panel-filtre.jpg",
+        "description": "I filtri a pannello G4 sono prefiltri ad alta efficienza, progettati per trattenere particelle grossolane, polvere e inquinanti dall’aria negli impianti di ventilazione e climatizzazione."
+      },
+      {
+        "name": "Filtro a pannello G2-G3",
+        "image": "/images/products/g2-g3-panel-filtre.jpg",
+        "description": "I filtri a pannello G2-G3 sono soluzioni prefiltro affidabili per la cattura di particelle di medie e grandi dimensioni negli impianti di ventilazione e climatizzazione."
+      },
+      {
+        "name": "Filtro antigrasso metallico G2",
+        "image": "/images/products/g2-metal-yag-tutucu-filtre.jpg",
+        "description": "I filtri antigrasso metallici G2 sono elementi filtranti ad alta durata, progettati specificamente per la cattura di vapori oleosi e particelle grossolane negli impianti di ventilazione e aspirazione cucine."
+      },
+      {
+        "name": "Filtro antigrasso metallico G2-G3",
+        "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.jpg",
+        "description": "I filtri antigrasso metallici G2-G3 sono soluzioni filtranti robuste per una cattura efficace di vapori oleosi e particelle grossolane negli impianti di ventilazione e aspirazione cucine."
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "otomasyonMalzemeleri": {
+    "title": "Automazione",
+    "titleFirst": "Auto",
+    "titleHighlight": "mazione",
+    "products": [
+      {
+        "name": "PANEL",
+        "subModels": []
+      },
+      {
+        "name": "PLC",
+        "subModels": []
+      },
+      {
+        "name": "SENSOR",
+        "subModels": [
+          "FCP-DSC",
+          "FCP-DCS",
+          "TECASE-ST110"
+        ]
+      },
+      {
+        "name": "CONTROL BOARDS - SWITCHES",
+        "subModels": [
+          "TP01-TSD",
+          "TP01-CC"
+        ]
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Isolamento vibrazioni e acustico",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "titresimVeSesIzolasyon": {
+    "title": "Isolamento vibrazioni e acustico",
+    "titleFirst": "Vibrazioni e",
+    "titleHighlight": "isolamento acustico",
+    "heroDesc": "Silenziatori, tamponi in gomma e isolatori antivibranti.",
+    "roo": {
+      "label": "Silenziatori, tamponi antivibranti, isolatori",
+      "desc": "modelli diversi con soluzioni su misura per esigenze di isolamento vibrazionale e acustico.",
+      "subModels": [
+        "ROO T1-ISO10N-NIP",
+        "ROO T1-ISO15N-100kg-NIP",
+        "ROO T2-ISO20N-FIP",
+        "ROO T2-ISO30N-150kg-FIP",
+        "ROO T3-ISO5Hz-200kg-OSI",
+        "ROO T3-ISO10Hz-300kg-OSI",
+        "ROO T4-ISOComb-100kg-5Hz-HSI",
+        "ROO T4-ISO100kg-10Hz-HSI",
+        "ROO T4-ISO500kg-10Hz-HSI"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Movimentazione aria",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Climatizzazione",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Raffreddamento e riscaldamento",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Gestione aria",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Distribuzione aria",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtrazione aria",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Accessori",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automazione",
+        "slug": "otomasyon-malzemeleri"
+      }
+    ]
+  },
+  "banyoFanlari": {
+    "title": "SEAHORSE",
+    "subtitle": "Ventilatori per bagno",
+    "intro": "I ventilatori per bagno, utilizzati per l’estrazione rapida di odori e vapore in ambienti di piccole e medie dimensioni come bagni, servizi igienici e dispense, svolgono un ruolo importante sia per l’igiene sia per il comfort.",
+    "models": [
+      {
+        "name": "Seahorse AP",
+        "type": "Ventilatore assiale per bagno",
+        "image": "/images/products/banyo-fan-1.jpg",
+        "description": "Il ventilatore decorativo AP unisce estetica e funzionalità negli ambienti abitativi grazie al design elegante in armonia con l’architettura moderna e alla costruzione ad alte prestazioni."
+      },
+      {
+        "name": "Seahorse RP V1",
+        "type": "Ventilatore estrazione bagno a soffitto",
+        "image": "/images/products/banyo-fan-2.jpg",
+        "description": "Il ventilatore estrazione a soffitto regolabile RP V1 è la soluzione di ventilazione ideale per gli ambienti contemporanei, con design curato e sistema di montaggio avanzato."
+      },
+      {
+        "name": "Seahorse RP V2",
+        "type": "Ventilatore estrazione bagno V2 a soffitto",
+        "image": "/images/products/banyo-fan-3.jpg",
+        "description": "Con design moderno e prestazioni potenti, il ventilatore estrazione RP V2 con pannello frontale ampio è pensato per gli spazi in cui contano sia l’estetica sia le prestazioni."
+      }
+    ]
+  },
+  "catiFanlari": {
+    "title": "HERON",
+    "subtitle": "Ventilatori da tetto",
+    "intro": "",
+    "models": [
+      {
+        "name": "Heron RH",
+        "type": "Ventilatore centrifugo da tetto scarico orizzontale",
+        "image": "/images/products/heron-rh.jpg",
+        "description": "Progettato specificamente per applicazioni di estrazione aria con installazione su tetto."
+      },
+      {
+        "name": "Heron RHS",
+        "type": "Ventilatore centrifugo da tetto scarico orizzontale motore esterno",
+        "image": "/images/products/heron-rhs.jpg",
+        "description": "Per applicazioni che richiedono estrazione di aria calda e contaminata."
+      },
+      {
+        "name": "Heron RV",
+        "type": "Ventilatore centrifugo da tetto scarico verticale",
+        "image": "/images/products/heron-rv.jpg",
+        "description": "Alta efficienza nelle applicazioni con estrazione verticale dell’aria."
+      },
+      {
+        "name": "Heron RVS",
+        "type": "Ventilatore centrifugo da tetto scarico verticale motore esterno",
+        "image": "/images/products/heron-rvs.jpg",
+        "description": "Estrazione di aria ad alta temperatura e con elevato contenuto di vapore."
+      },
+      {
+        "name": "Heron AH",
+        "type": "Ventilatore assiale da tetto scarico orizzontale",
+        "image": "/images/products/heron-ah.jpg",
+        "description": "Immissione o estrazione aria in ambienti di grande volume."
+      },
+      {
+        "name": "Heron AVH",
+        "type": "Ventilatore assiale da tetto con cofano",
+        "image": "/images/products/free.jpg",
+        "description": "Ventilatore assiale da tetto con cofano."
+      }
+    ]
+  },
+  "damperler": {
+    "title": "HOUND",
+    "subtitle": "Serrande",
+    "intro": "Le serrande della serie Novves HOUND sono progettate per offrire massimo controllo e sicurezza nei punti più critici degli impianti di ventilazione e antincendio.",
+    "models": [
+      {
+        "name": "Hound SD M24",
+        "type": "Serranda fumi vano ascensore con servomotore 24V",
+        "image": "/images/products/hound-sd-m24.jpg",
+        "description": "Sviluppata per l’estrazione sicura dell’aria negli impianti controllo fumo e fuoco, con classificazione di tenuta EN 17051 Classe C e compatibilità servomotore."
+      },
+      {
+        "name": "Hound AL",
+        "type": "Persiana aria",
+        "image": "/images/products/hound-al.png",
+        "description": "Sistema di persiane dal design curato che convoglia il flusso nei punti di immissione e scarico e protegge dagli agenti esterni."
+      },
+      {
+        "name": "Hound CRD",
+        "type": "Serranda di sfogo pressione",
+        "image": "/images/products/hound-crd.jpg",
+        "description": "Serranda ad apertura automatica per il controllo della sovrapressione e la protezione dei componenti dell’impianto."
+      }
+    ]
+  },
+  "dumanIsiTahliyeFanlari": {
+    "title": "DRAGONFLY",
+    "subtitle": "Ventilatori estrazione fumo e calore",
+    "intro": "Serie di ventilatori per estrazione fumo e calore con certificazione di resistenza al fuoco classe F300, progettati per resistere a 300 °C per 2 ore.",
+    "models": [
+      {
+        "name": "Dragonfly T",
+        "type": "Ventilatore assiale in cassonetto per estrazione fumo e calore",
+        "image": "/images/products/dragonfly-t.jpg",
+        "description": "Ventilatore assiale in cassonetto resistente alle alte temperature per l’estrazione efficace di fumo e aria calda in caso d’incendio. Certificato EN 12101-3."
+      },
+      {
+        "name": "Dragonfly R",
+        "type": "Ventilatore assiale da tetto per estrazione fumo e calore",
+        "image": "/images/products/dragonfly-r.jpg",
+        "description": "Ventilatore da tetto resistente alle alte temperature per un’estrazione rapida, sicura ed efficace di fumo e aria calda in caso d’incendio. Certificato EN 12101-3."
+      },
+      {
+        "name": "Dragonfly C",
+        "type": "Ventilatore assiale plenum per estrazione fumo e calore",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Unità a cassonetto resistente alle alte temperature e a basso rumore, sviluppata per l’estrazione sicura di fumo e aria ad alta temperatura in caso d’incendio. Certificato EN 12101-3."
+      },
+      {
+        "name": "Dragonfly JAU",
+        "type": "Ventilatore jet assiale unidirezionale",
+        "image": "/images/products/dragonfly-jau.jpg",
+        "description": "Progettato per l’estrazione fumo e la circolazione aria in parcheggi, gallerie e spazi chiusi, con resistenza alle alte temperature. Certificato EN 12101-3."
+      },
+      {
+        "name": "Dragonfly JAR",
+        "type": "Ventilatore jet assiale bidirezionale",
+        "image": "/images/products/dragonfly-jar.jpg",
+        "description": "Sviluppato per estrazione fumo, ventilazione e circolazione aria in parcheggi coperti e grandi volumi interni, in funzionamento bidirezionale. Basso livello sonoro e alte prestazioni."
+      },
+      {
+        "name": "Dragonfly JR",
+        "type": "Ventilatore jet radiale/centrifugo",
+        "image": "/images/products/dragonfly-jr.jpg",
+        "description": "Progettato specificamente per l’estrazione fumo e la ventilazione di emergenza in volumi impegnativi come parcheggi coperti, tunnel e zone antincendio. Certificato EN 12101-3."
+      }
+    ]
+  },
+  "duvarTipiFanlar": {
+    "title": "OWL",
+    "subtitle": "Ventilatori a parete",
+    "intro": "",
+    "models": [
+      {
+        "name": "Owl RER",
+        "type": "Ventilatore a parete rettangolare",
+        "image": "/images/products/owl-rer.jpg",
+        "description": "Soluzione assiale a pale metalliche per installazione a parete, con struttura robusta e velocità regolabile."
+      },
+      {
+        "name": "Owl CER",
+        "type": "Ventilatore a parete circolare",
+        "image": "/images/products/owl-cer.jpg",
+        "description": "Modello assiale compatto ad alta efficienza a pale metalliche, progettato per installazione circolare a parete."
+      },
+      {
+        "name": "Owl RWA",
+        "type": "Ventilatore assiale a parete rettangolare",
+        "image": "/images/products/owl-rwa.jpg",
+        "description": "Soluzione assiale con pale profilate ad alta efficienza, adatta all’installazione rettangolare a parete."
+      },
+      {
+        "name": "Owl CWA",
+        "type": "Ventilatore assiale a parete circolare",
+        "image": "/images/products/owl-cwa.jpg",
+        "description": "Soluzione assiale compatta per installazione circolare a parete, con struttura leggera ma robusta delle pale profilate."
+      }
+    ]
+  },
+  "ecFanlar": {
+    "title": "HUMMINGBIRD",
+    "subtitle": "Ventilatori EC",
+    "intro": "La serie Hummingbird offre soluzioni ventilazione da tetto e a condotta che combinano alte prestazioni con risparmio energetico grazie alla tecnologia motori EC.",
+    "models": [
+      {
+        "name": "Hummingbird RRV",
+        "type": "Ventilatore da tetto scarico verticale EC",
+        "image": "/images/products/hummingbird-rh.jpg",
+        "description": "Ventilatore da tetto a scarico verticale con motori EC ad alta efficienza per edifici moderni. Con opzioni di controllo intelligente, basso consumo e funzionamento silenzioso, è ideale per ventilazione di comfort e industriale."
+      },
+      {
+        "name": "Hummingbird DRB",
+        "type": "Ventilatore rettangolare a condotta EC",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Ventilatore rettangolare per condotte con motore EC ad alta efficienza per impianti di ventilazione moderni. Struttura compatta, funzionamento silenzioso e integrazione con sistemi di automazione lo rendono una scelta affidabile in ambito comfort e industriale."
+      }
+    ]
+  },
+  "endustriyelFanlar": {
+    "title": "NAUTILUS",
+    "subtitle": "Ventilatori centrifughi industriali",
+    "intro": "Combinando alte prestazioni con risparmio energetico, i ventilatori industriali offrono una soluzione di ventilazione potente ed efficiente grazie a pale incurvate all’indietro e motore accoppiamento diretto.",
+    "models": [
+      {
+        "name": "Nautilus LPF",
+        "type": "Ventilatore centrifugo industriale",
+        "image": "/images/products/nautilus-lfp.jpg",
+        "description": "Ventilatore industriale che combina alte prestazioni con risparmio energetico."
+      },
+      {
+        "name": "Nautilus Silence",
+        "type": "Ventilatore centrifugo a doppia parete",
+        "image": "/images/products/nautilus-cif-cidarli.jpg",
+        "description": "La serie NAUTILUS Silence comprende ventilatori centrifughi che operano ad alta efficienza negli impianti a bassa pressione, con struttura compatta e accoppiamento diretto al motore."
+      }
+    ]
+  },
+  "exproofFanlar": {
+    "title": "BEAR",
+    "subtitle": "Ventilatori antideflagranti",
+    "intro": "I ventilatori della serie Bear sono soluzioni Ex-Proof per ambienti con gas esplosivi e infiammabili.",
+    "models": [
+      {
+        "name": "Bear EX-REB",
+        "type": "Ventilatore antideflagrante rettangolare a condotta",
+        "image": "/images/products/bear-reb.jpg",
+        "description": "Antideflagrante, per ventilazione sicura in ambienti con gas esplosivi. Elevati standard di sicurezza, comando a frequenza variabile, compatibile zone ATEX."
+      },
+      {
+        "name": "Bear EX-T",
+        "type": "Ventilatore assiale in cassonetto antideflagrante",
+        "image": "/images/products/bear-t.jpg",
+        "description": "Trasferimento sicuro dell’aria in ambienti esplosivi, girante bilanciata. Per applicazioni industriali con rischio di incendio e scintille."
+      },
+      {
+        "name": "Bear EX-RRH",
+        "type": "Ventilatore centrifugo antideflagrante da tetto scarico orizzontale",
+        "image": "/images/products/bear-rrh.jpg",
+        "description": "Progettato specificamente per scarichi orizzontali su tetto. Zone ATEX 1 e 2."
+      },
+      {
+        "name": "Bear EX-RRV",
+        "type": "Ventilatore centrifugo antideflagrante da tetto scarico verticale",
+        "image": "/images/products/bear-rrv.jpg",
+        "description": "Estrazione aria ad alta pressione, resistenza prolungata alle intemperie."
+      },
+      {
+        "name": "Bear EX-BP",
+        "type": "Ventilatore centrifugo antideflagrante a cassonetto",
+        "image": "/images/products/bear-bp.jpg",
+        "description": "Soluzione con struttura modulare a cassonetto, funzionamento potente e silenzioso."
+      },
+      {
+        "name": "Bear EX-C",
+        "type": "Ventilatore assiale antideflagrante a cassonetto",
+        "image": "/images/products/bear-c.jpg",
+        "description": "Funzionamento silenzioso, manutenzione semplice, conformità ATEX."
+      },
+      {
+        "name": "Bear LPF",
+        "type": "Ventilatore centrifugo antideflagrante",
+        "image": "/images/products/bear-lpf.jpg",
+        "description": "Estrazione sicura dell’aria in ambienti con gas o vapori esplosivi."
+      },
+      {
+        "name": "Bear R",
+        "type": "Ventilatore assiale da tetto",
+        "image": "/images/products/bear-r.jpg",
+        "description": "Progettato per soddisfare le esigenze di ventilazione naturale ed estrazione in strutture di grande volume."
+      },
+      {
+        "name": "Bear W",
+        "type": "Ventilatore assiale antideflagrante (a parete)",
+        "image": "/images/products/bear-w.jpg",
+        "description": "Antideflagrante, conforme ATEX, alte prestazioni."
+      }
+    ]
+  },
+  "havuzNemAlmaSantrali": {
+    "title": "DOLPHIN",
+    "subtitle": "Unità deumidificazione piscine",
+    "intro": "Sviluppate da NOVVES, le unità deumidificazione serie Dolphin prevengono i danni da umidità alle strutture delle piscine coperte massimizzando il comfort degli utenti. Con alta efficienza energetica, costruzione duratura e funzionamento silenzioso, la serie Dolphin è la scelta professionale nel controllo climatico delle piscine.",
+    "tableHeaders": {
+      "model": "Modello",
+      "airFlow": "Portata (m³/h)",
+      "poolArea": "Area vasca (m²)",
+      "cooling": "Refrigerazione (kW)",
+      "condenser": "Condensatore (kW)",
+      "waterHeater": "Scaldacqua (kW)"
+    },
+    "models": [
+      {
+        "model": "DOLPHIN 300",
+        "airFlow": "3,000",
+        "area": "50",
+        "cooling": "21.1",
+        "condenser": "26.4",
+        "water": "26.15"
+      },
+      {
+        "model": "DOLPHIN 400",
+        "airFlow": "4,000",
+        "area": "75",
+        "cooling": "28.7",
+        "condenser": "35.67",
+        "water": "34.12"
+      },
+      {
+        "model": "DOLPHIN 450",
+        "airFlow": "4,500",
+        "area": "100",
+        "cooling": "33.3",
+        "condenser": "40.96",
+        "water": "36.24"
+      },
+      {
+        "model": "DOLPHIN 600",
+        "airFlow": "6,000",
+        "area": "150",
+        "cooling": "42.2",
+        "condenser": "52.88",
+        "water": "50.58"
+      },
+      {
+        "model": "DOLPHIN 750",
+        "airFlow": "7,500",
+        "area": "200",
+        "cooling": "52.6",
+        "condenser": "65.9",
+        "water": "62.97"
+      },
+      {
+        "model": "DOLPHIN 900",
+        "airFlow": "9,000",
+        "area": "250",
+        "cooling": "36.8",
+        "condenser": "80.68",
+        "water": "77.1"
+      }
+    ]
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Ventilatori a cassonetto",
+    "intro": "I ventilatori a cassonetto serie Turtle possono essere usati sia per l’immissione aria fresca sia per l’estrazione. Grazie alla struttura compatta consentono un montaggio diretto a pavimento semplice, mentre il riempimento in lana di roccia tra le pareti interne offre un efficace isolamento acustico.",
+    "models": [
+      {
+        "name": "Turtle B",
+        "type": "Ventilatore a cassonetto a cinghia",
+        "image": "/images/products/turtle-b.jpg",
+        "description": "Modello a cassonetto con trasmissione a cinghia per soluzioni affidabili e silenziose negli impianti con elevate portate d’aria."
+      },
+      {
+        "name": "Turtle BP",
+        "type": "Ventilatore plug a pale incurvate all’indietro a cassonetto",
+        "image": "/images/products/turtle-bp.jpg",
+        "description": "Modello a cassonetto ad alte prestazioni per soluzioni d’aria silenziose, efficienti e compatte."
+      },
+      {
+        "name": "Turtle BPA",
+        "type": "Ventilatore centrifugo a pale incurvate all’indietro a cassonetto",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "Soluzione di ventilazione industriale ad alta efficienza e basso rumore, con struttura a cassonetto e tecnologia centrifuga a pale incurvate all’indietro."
+      },
+      {
+        "name": "Turtle F",
+        "type": "Ventilatore a cassonetto a pale incurvate in avanti",
+        "image": "/images/products/turtle-f.jpg",
+        "description": "Modello plug doppia aspirazione a cassonetto, silenzioso ed efficiente negli impianti a bassa pressione."
+      },
+      {
+        "name": "Turtle A",
+        "type": "Ventilatore assiale a cassonetto",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "Soluzioni assiali compatte a cassonetto per impianti con elevate richieste di portata."
+      }
+    ]
+  },
+  "isiGeriKazanimCihazlari": {
+    "title": "CARACAL",
+    "subtitle": "Unità di recupero di calore",
+    "intro": "La serie Caracal fornisce condizionamento controllato per soddisfare il fabbisogno di aria fresca e migliorare la qualità dell’aria esistente in uffici, scuole, hotel, ospedali, centri direzionali, centri commerciali, sale spettacoli e mense.",
+    "caracalD": {
+      "title": "Caracal D",
+      "type": "Unità di recupero di calore",
+      "description": "La serie Caracal D (unità di recupero di calore) è una soluzione compatta ad alte prestazioni per rinnovare l’aria interna aumentando l’efficienza energetica. Con struttura robusta e pannello di comando intuitivo offre ventilazione confortevole e sostenibile."
+    }
+  },
+  "kanalFanlari": {
+    "title": "KOI",
+    "subtitle": "Ventilatori per condotte",
+    "intro": "",
+    "models": [
+      {
+        "name": "Koi CB",
+        "type": "Ventilatore circolare a condotta",
+        "image": "/images/products/koi-cb.jpg",
+        "description": "La serie Novves KOI-CB offre ventilatori circolari a condotta compatti e ad alte prestazioni per esigenze di ventilazione in condotta."
+      },
+      {
+        "name": "Koi RB",
+        "type": "Ventilatore rettangolare a condotta",
+        "image": "/images/products/koi-rb.jpg",
+        "description": "La serie Novves KOI-RB comprende ventilatori rettangolari a condotta sviluppati per elevate prestazioni di trasferimento aria in edifici industriali e commerciali."
+      },
+      {
+        "name": "Koi REB",
+        "type": "Ventilatore rettangolare a condotta motore esterno",
+        "image": "/images/products/koi-reb.jpg",
+        "description": "La serie KOI-REB comprende ventilatori a condotta con motore esterno, progettati per applicazioni che richiedono resistenza alle alte temperature."
+      },
+      {
+        "name": "Koi X",
+        "type": "Ventilatore a flusso misto per condotte",
+        "image": "/images/products/koi-x.jpg",
+        "description": "Il ventilatore a flusso misto serie KOI-X è progettato per massima efficienza soprattutto negli ambienti di comfort, con struttura compatta, funzionamento silenzioso e motore a due velocità."
+      }
+    ]
+  },
+  "klimaSantralleri": {
+    "title": "TIGER",
+    "subtitle": "Unità di trattamento aria",
+    "intro": "Soluzione modulare orientata all’efficienza per elevate esigenze di ventilazione e climatizzazione. Si distingue per l’ampia gamma di portate, componenti ad alta efficienza energetica e funzionamento silenzioso.",
+    "specs": [
+      {
+        "label": "Portata",
+        "value": "500 - 125.000 m³/h"
+      },
+      {
+        "label": "Pressione",
+        "value": "10 - 3.000 Pa"
+      },
+      {
+        "label": "Telaio",
+        "value": "Alluminio anodizzato"
+      },
+      {
+        "label": "Pannello",
+        "value": "Pannello sandwich doppia parete"
+      },
+      {
+        "label": "Tipo ventilatore",
+        "value": "Ventilatore centrifugo / Ventilatore EC plug"
+      },
+      {
+        "label": "Recupero di calore",
+        "value": "A piastre, rotativo, acqua-glicole"
+      }
+    ]
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Ventilatori assiali in cassonetto",
+    "intro": "I ventilatori assiali in cassonetto serie Marlin sono utilizzati per immissione aria fresca, estrazione o come ventilatori di condotta, nonché come ventilatori di pressurizzazione per impedire l’ingresso del fumo nelle vie di esodo come scale e vani ascensore in caso d’incendio.",
+    "models": [
+      {
+        "name": "Marlin",
+        "type": "Ventilatore assiale in cassonetto",
+        "image": "/images/products/marlin.png",
+        "description": "Il ventilatore assiale in cassonetto serie Novves MARLIN unisce prestazioni elevate, flessibilità di installazione ed efficienza energetica negli impianti che richiedono elevate portate d’aria."
+      },
+      {
+        "name": "Marlin B",
+        "type": "Ventilatore assiale biforcato",
+        "image": "/images/products/marlin-b.jpg",
+        "description": "Ventilatore assiale biforcato."
+      }
+    ]
+  },
+  "mutfakFanlari": {
+    "title": "BUTTERFLY",
+    "subtitle": "Ventilatori aspirazione cucina",
+    "intro": "",
+    "models": [
+      {
+        "name": "Butterfly B",
+        "type": "Ventilatore aspirazione cucina con filtro metallico",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "La serie Butterfly B è una soluzione di ventilazione robusta e ad alta efficienza per l’estrazione di vapore, grasso e odori in cucine industriali e commerciali. Con sistema di filtrazione avanzato, funzionamento silenzioso e costruzione duratura è ideale per cucine professionali."
+      }
+    ]
+  },
+  "siginakFanlari": {
+    "title": "FOX",
+    "subtitle": "Ventilatori per rifugi",
+    "intro": "La serie Fox è stata sviluppata per i rifugi costruiti per proteggere da radiazioni, minacce NBC o catastrofi naturali.",
+    "models": [
+      {
+        "name": "Fox D",
+        "type": "Ventilatore per rifugi a condotta",
+        "image": "/images/products/fox-d.jpg",
+        "description": "La serie FOX D è un ventilatore a condotta robusto e affidabile con elevata capacità filtrante, sviluppato per le esigenze di ventilazione di rifugi e aree sicure."
+      },
+      {
+        "name": "Fox C",
+        "type": "Ventilatore per rifugi a cassonetto",
+        "image": "/images/products/fox-c.jpg",
+        "description": "La serie FOX C è una soluzione di ventilazione professionale per aree che richiedono elevata sicurezza, con funzionamento silenzioso e sistema di filtrazione potente."
+      }
+    ]
+  }
+}

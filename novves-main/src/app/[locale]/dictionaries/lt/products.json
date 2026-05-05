@@ -1,0 +1,1406 @@
+{
+  "shared": {
+    "home": "Pradžia",
+    "products": "Produktai",
+    "productsLabel": "Produktai",
+    "explore": "Naršyti",
+    "otherCategories": "Kitos produktų kategorijos",
+    "technicalSupport": "Techninė pagalba",
+    "technicalSupportRequest": "Techninės pagalbos užklausa",
+    "lookingForProduct": "Ieškote savo projektui tinkamo produkto?",
+    "teamReady": "Mūsų techninė komanda pasiruošusi pasiūlyti Jums tinkamiausią sprendimą.",
+    "allProducts": "Visi produktai",
+    "viewProduct": "Žiūrėti produktą",
+    "detailedView": "Peržiūrėti išsamią informaciją",
+    "comingSoon": "Netrukus",
+    "inspect": "Naršyti",
+    "model": "modelis",
+    "models": "Modelis",
+    "results": "rezultatus",
+    "noResults": "Rezultatų nerasta.",
+    "searchProducts": "Ieškoti produktų...",
+    "clear": "Aišku",
+    "readMore": "Skaityti daugiau",
+    "readLess": "Skaitykite mažiau",
+    "getQuote": "Gaukite citatą",
+    "allIklimlendirmeProducts": "Visi oro kondicionavimo produktai",
+    "forYourProject": "Norėdami rasti tinkamą sprendimą jūsų projektui",
+    "productCatalog": "Produktų katalogas",
+    "productRange": "Produktų asortimentas",
+    "productFamilies": "Produktų šeimos",
+    "productGroups": "Produktų grupės",
+    "fullProductRange": "Visas produktų asortimentas",
+    "allProductFamilies": "Visos produktų šeimos",
+    "mostPreferred": "Labiausiai pageidaujama",
+    "featuredProducts": "Teminiai produktai",
+    "productVariety": "Produktų įvairovė",
+    "productFamily": "Produktų šeima",
+    "certified": "Sertifikuota",
+    "fireResistance": "Atsparumas ugniai",
+    "filterSeries": "Filtrų serija",
+    "exploreNovves": "Naršykite kitas NOVVES produktų asortimento kategorijas.",
+    "comingSoonNotice": "Šios kategorijos produktai netrukus bus paskelbti išsamiai. Dėl techninės informacijos ir kainų pasiūlymų",
+    "contactUs": "susisiekite su mumis",
+    "airDamper": "Oro sklendė",
+    "grilleDiffuser": "Grotelės, difuzoriai ir kt.",
+    "panoPLCSensor": "Skydai, PLC, jutikliai",
+    "silencerRubberPadIsolators": "Duslintuvai, guminiai trinkelės, vibracijos izoliatoriai",
+    "categories": {
+      "havaHareketi": "Oro judėjimas",
+      "iklimlendirme": "Oro kondicionavimas",
+      "sogutmaVeIsitma": "Vėsinimas ir šildymas",
+      "havaYonetimi": "Oro valdymas",
+      "havaDagitimi": "Oro paskirstymas",
+      "havaFiltrasyonu": "Oro filtravimas",
+      "aksesuarlar": "Priedai",
+      "otomasyonMalzemeleri": "Automatikos įranga",
+      "titresimVeSesIzolasyon": "Vibracijos ir garso izoliacija"
+    }
+  },
+  "havaHareketi": {
+    "title": "Oro judėjimas",
+    "titleFirst": "Oras",
+    "titleHighlight": "Judėjimas",
+    "heroDesc": "Jūsų pramoniniam ir komforto vėdinimo poreikiams",
+    "heroDescSuffix": "produktų šeima.",
+    "stats": [
+      {
+        "value": "1,200+",
+        "label": "Produktų įvairovė"
+      },
+      {
+        "value": "12",
+        "label": "Produktų šeimos"
+      },
+      {
+        "value": "EN 12101-3",
+        "label": "Sertifikuota"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Atsparumas ugniai"
+      }
+    ],
+    "products": [
+      {
+        "name": "DRAGONFLY",
+        "type": "Dūmų ir šilumos ištraukimo ventiliatorius",
+        "subModels": [
+          "DF T",
+          "DF TS",
+          "DF C",
+          "DF R",
+          "DF RV",
+          "DF TJF",
+          "DF JR",
+          "DF JA",
+          "DF WH",
+          "DF RH"
+        ]
+      },
+      {
+        "name": "MARLIN",
+        "type": "Ašinis ventiliatorius",
+        "subModels": [
+          "MARLIN",
+          "MARLIN S",
+          "MARLIN B",
+          "MARLIN 2S"
+        ]
+      },
+      {
+        "name": "BEAR",
+        "type": "ATEX ventiliatorius",
+        "subModels": [
+          "BEAR REB EX",
+          "BEAR RVS EX",
+          "BEAR RHS EX",
+          "BEAR T",
+          "BEAR C",
+          "BEAR R",
+          "BEAR W",
+          "BEAR LPF EX",
+          "BEAR TB"
+        ]
+      },
+      {
+        "name": "NAUTILUS",
+        "type": "Pramoninis išcentrinis ventiliatorius",
+        "subModels": [
+          "NAUTILUS LPF",
+          "NAUTILUS MPF",
+          "NAUTILUS HPF",
+          "NAUTILUS SILENCE"
+        ]
+      },
+      {
+        "name": "HUMMINGBIRD",
+        "type": "EC ventiliatorius",
+        "subModels": [
+          "HUMMINGBIRD DRB EC",
+          "HUMMINGBIRD RRV EC",
+          "HUMMINGBIRD RRH EC",
+          "HUMMINGBIRD CBP EC"
+        ]
+      },
+      {
+        "name": "HERON",
+        "type": "Stogo ventiliatorius",
+        "subModels": [
+          "HERON RH",
+          "HERON RHS",
+          "HERON RV",
+          "HERON RVS",
+          "HERON AH",
+          "HERON AV",
+          "HERON H"
+        ]
+      },
+      {
+        "name": "OWL",
+        "type": "Sieninis ventiliatorius",
+        "subModels": [
+          "OWL RER",
+          "OWL R",
+          "OWL H"
+        ]
+      },
+      {
+        "name": "SEAHORSE",
+        "type": "Vonios ventiliatorius",
+        "subModels": [
+          "SEAHORSE AP",
+          "SEAHORSE RP V1",
+          "SEAHORSE RP V2"
+        ]
+      },
+      {
+        "name": "KOI",
+        "type": "Ortakio ventiliatorius",
+        "subModels": [
+          "KOI CB",
+          "KOI RB",
+          "KOI REB",
+          "KOI X"
+        ]
+      },
+      {
+        "name": "TURTLE",
+        "type": "Plenumo ventiliatorius",
+        "subModels": [
+          "TURTLE B",
+          "TURTLE BPA",
+          "TURTLE F",
+          "TURTLE BP",
+          "TURTLE A"
+        ]
+      },
+      {
+        "name": "BUTTERFLY",
+        "type": "Virtuvės išmetimo ventiliatorius",
+        "subModels": [
+          "BUTTERFLY ECO",
+          "BUTTERFLY ECO HR"
+        ]
+      },
+      {
+        "name": "FOX",
+        "type": "Prieglaudos gerbėjas",
+        "subModels": [
+          "FOX D",
+          "FOX C"
+        ]
+      },
+      {
+        "name": "CHICKEN",
+        "type": "Paukštienos ventiliatorius",
+        "comingSoon": true
+      },
+      {
+        "name": "ELEPHANT",
+        "type": "Dulkių surinkimas",
+        "comingSoon": true
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "ctaDesc": "Susisiekite su mūsų ekspertų inžinierių komanda, kad rastumėte tinkamiausią sprendimą jūsų projektui iš daugiau nei 1 200 produktų rūšių."
+  },
+  "iklimlendirme": {
+    "title": "Oro kondicionavimas",
+    "titleFirst": "Oras",
+    "titleHighlight": "Kondicionavimas",
+    "pills": [
+      "3 produktų šeimos",
+      "Modulinė konfigūracija",
+      "EC ir išcentrinis ventiliatorius",
+      "HEPA filtravimas"
+    ],
+    "tiger": {
+      "label": "Vėdinimo įrenginys",
+      "desc": "Vėdinimo įrenginio sprendimas, turintis modulinę konstrukciją, daug energijos taupančių komponentų ir tylaus veikimo 500–125 000 m³/h oro srauto diapazone.",
+      "specs": [
+        {
+          "label": "Oro srautas",
+          "value": "500–125K m³/val"
+        },
+        {
+          "label": "Spaudimas",
+          "value": "10–3000 Pa"
+        },
+        {
+          "label": "Važiuoklė",
+          "value": "Anoduotas aliuminis"
+        }
+      ]
+    },
+    "dolphin": {
+      "label": "Baseino sausinimo įrenginys",
+      "desc": "Apsaugo nuo drėgmės žalos pastatų konstrukcijoms vidaus baseinuose, tuo pačiu padidindamas naudotojo komfortą. Išsiskiria dideliu energijos vartojimo efektyvumu, ilgaamže konstrukcija ir tyliu darbu.",
+      "specs": [
+        {
+          "label": "Talpa",
+          "value": "6 modeliai"
+        },
+        {
+          "label": "Oro srautas",
+          "value": "3000–9000 m³/val"
+        },
+        {
+          "label": "Baseino zona",
+          "value": "50-250 m²"
+        }
+      ]
+    },
+    "caracal": {
+      "label": "Šilumos atkūrimas",
+      "desc": "Suteikia kontroliuojamą oro kondicionavimą, kad atitiktų gryno oro poreikius ir pagerintų esamą oro kokybę biuruose, mokyklose, viešbučiuose, ligoninėse ir socialinėse patalpose."
+    },
+    "ctaDesc": "Mūsų techninė komanda pasiruošusi pasiūlyti Jums tinkamiausią oro kondicionavimo sprendimą.",
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "sogutmaVeIsitma": {
+    "title": "Vėsinimas ir šildymas",
+    "titleFirst": "Aušinimas ir",
+    "titleHighlight": "Šildymas",
+    "heroDesc": "Aušintuvas, vidaus / lauko įrenginiai, elektriniai šildytuvai ir vandens gyvatukai.",
+    "comingSoonNotice": "Šios kategorijos produktai netrukus bus paskelbti išsamiai. Dėl techninės informacijos ir kainų pasiūlymų",
+    "comingSoonLink": "susisiekite su mumis",
+    "products": [
+      {
+        "name": "CILLER (poliarinis lokys)",
+        "type": "Aušinimo blokas",
+        "subModels": []
+      },
+      {
+        "name": "LAUKO ĮRENGINIAI",
+        "type": "Aušinimo blokas",
+        "subModels": []
+      },
+      {
+        "name": "VIDAUS ĮRENGINIAI",
+        "type": "Aušinimo blokas",
+        "subModels": []
+      },
+      {
+        "name": "ELEKTRINIS ŠILDYTUVAI",
+        "type": "Elektrinis šildytuvas",
+        "subModels": [
+          "EH (stačiakampis)",
+          "EHC (cilindrinis)"
+        ]
+      },
+      {
+        "name": "VANDENS GYVETĖ",
+        "type": "Ritė",
+        "subModels": [
+          "WC"
+        ]
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaYonetimi": {
+    "title": "Oro valdymas",
+    "titleFirst": "Oras",
+    "titleHighlight": "Valdymas",
+    "heroDesc": "Oro sklendžių sprendimai.",
+    "hound": {
+      "label": "Oro sklendė",
+      "desc": "Sklendžių serija, skirta užtikrinti maksimalią kontrolę ir saugumą svarbiausiuose vėdinimo ir priešgaisrinės saugos sistemų taškuose.",
+      "subModels": [
+        "MSD",
+        "MSFD-R",
+        "MSFD-B",
+        "SFD-B",
+        "SFD-R",
+        "RSFD-B",
+        "RSFD-Drain-B",
+        "FFD",
+        "MFD",
+        "RD",
+        "GS"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaDagitimi": {
+    "title": "Oro paskirstymas",
+    "titleFirst": "Oras",
+    "titleHighlight": "Paskirstymas",
+    "heroDesc": "Grotelių, difuzoriaus, anemostatų ir žaliuzių sprendimai.",
+    "alpaca": {
+      "label": "Grotelės, difuzoriai ir kt.",
+      "desc": "skirtingi modeliai su pritaikytais sprendimais visiems oro paskirstymo poreikiams.",
+      "subModels": [
+        "ALPACA-GL-SD",
+        "ALPACA-GL-DD",
+        "ALPACA-GL-RA",
+        "ALPACA-GL-PRF",
+        "ALPACA-GL-OB",
+        "ALPACA-DF-SQ",
+        "ALPACA-DF-CR",
+        "ALPACA-DF-LS",
+        "ALPACA-DF-JET",
+        "ALPACA-DF-ADJ",
+        "ALPACA-LV-FX",
+        "ALPACA-LV-ADJ",
+        "ALPACA-LV-WP",
+        "ALPACA-LV-AC",
+        "ALPACA-AM-SQ",
+        "ALPACA-AM-CR",
+        "ALPACA-AM-ADJ",
+        "ALPACA-SP-FR",
+        "ALPACA-SP-DEC",
+        "ALPACA-SP-AC",
+        "ALPACA-SP-JET"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaFiltrasyonu": {
+    "title": "Oro filtravimas",
+    "titleFirst": "Oras",
+    "titleHighlight": "Filtravimas",
+    "heroDesc": "Filtrų sprendimai pramonės ir komforto reikmėms.",
+    "scallop": {
+      "label": "Filtrų serija",
+      "desc": "skirtingi filtrų modeliai su pritaikytais sprendimais visiems oro filtravimo poreikiams.",
+      "subModels": [
+        "ŠUKŠUTĖS PF",
+        "ŠUKUTĖS MF",
+        "ŠUKŠUTĖS GF",
+        "ŠUKŠUTĖS ABF",
+        "SCALLOP CF",
+        "ŠUKŠUTĖ BF",
+        "ŠUKŠUTĖS HP",
+        "ŠUKŠUTĖS UF",
+        "ŠUKŠUTĖS FF"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "aksesuarlar": {
+    "title": "Priedai",
+    "titleFirst": "Prieiga",
+    "titleHighlight": "sories",
+    "productCount": "produktų",
+    "ctaTitle": "Ieškote tinkamo priedo savo projektui?",
+    "accessories": [
+      {
+        "name": "Spyruoklinis vibracijos izoliatorius",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Spyruokliniai vibracijos izoliatoriai naudojami ŠVOK sistemose ir mechaninės įrangos įrenginiuose, siekiant sumažinti žemo lygio vibracijas, kurios gali būti perduodamos iš sistemos į grindis ar aplinką."
+      },
+      {
+        "name": "AE SF tvirtinimo kojelės",
+        "image": "/images/products/ae-sf-baglanti-ayaklari.jpg",
+        "description": "Montavimo pėdelės yra didelio stiprumo tvirtinimo elementai, skirti patikimai pritvirtinti ventiliatorius prie grindų arba atraminio paviršiaus pagal projekto reikalavimus."
+      },
+      {
+        "name": "AE PM vielos apsauga",
+        "image": "/images/products/ae-pm-tel-kafes.jpg",
+        "description": "Wire Guards – tai apsauginės grotelės, pagamintos iš itin stiprios plieninės vielos, skirtos užtikrinti naudotojo saugumą ventiliatorių sistemų įsiurbimo arba išleidimo pusėje ir neleisti pašaliniams objektams patekti į veikimo zoną."
+      },
+      {
+        "name": "AE IC įleidimo kūgis",
+        "image": "/images/products/ae-ic-giris-konisi.jpg",
+        "description": "AE IC serijos įleidimo kūgiai skirti optimizuoti oro srautą ventiliatorių įsiurbimo pusėje, sumažinti oro turbulenciją ir padidinti sistemos efektyvumą."
+      },
+      {
+        "name": "AE CF priešpriešinis flanšas",
+        "image": "/images/products/ae-cf-karsi-flans.jpg",
+        "description": "AE CF serijos Counter Flanges yra aukštai temperatūrai atspari prijungimo įranga, naudojama ventiliatoriams prijungti prie ortakių sistemos ir užtikrinti sandarumą."
+      },
+      {
+        "name": "AE FJF lankstus jungties priešpriešinis flanšas",
+        "image": "/images/products/ae-fjf.png",
+        "description": "AE FJF serijos lankstūs jungčių priešpriešiniai flanšai yra specialūs jungiamieji elementai, skirti apsaugoti nuo vibracijos perdavimo tarp ventiliatoriaus ir ortakių sistemų, sumažinti plėtimosi poveikį ir užtikrinti tylesnę darbo aplinką."
+      },
+      {
+        "name": "AE FJF F400 klasės lankstus jungties priešpriešinis flanšas",
+        "image": "/images/products/ae-fjf.png",
+        "description": "AE FJF serijos F400 klasės lankstūs jungčių priešpriešiniai flanšai yra sukurti taip, kad būtų užtikrintas lankstus, saugus ir sandarus ventiliatoriaus ir ortakių sistemų sujungimas ugniai atspariuose įrenginiuose."
+      },
+      {
+        "name": "AE FJ2F dviguba priešpriešinio flanšo lanksti jungtis",
+        "image": "/images/products/ae-fj2f.jpg",
+        "description": "Dviejų priešpriešinių flanšų lanksčios jungtys yra labai lankstūs jungiamieji elementai, kurių abiejuose galuose yra priešpriešiniai flanšai, skirti sugerti vibraciją, išsiplėtimą ir montavimo neatitikimus tarp ventiliatoriaus ir ortakių sistemų."
+      },
+      {
+        "name": "AE FJ2F F400 dviguba priešpriešinio flanšo lanksti jungtis",
+        "image": "/images/products/ae-fj2f.jpg",
+        "description": "AE FJ2F-HR serija yra dviejų priešpriešinių flanšų lanksčių jungčių sprendimai, atsparūs aukštai temperatūrai, skirti naudoti sistemose, kurioms reikalingas atsparumas ugniai."
+      },
+      {
+        "name": "AE S-D100 žiedinis duslintuvas",
+        "image": "/images/products/ae-sd100.jpg",
+        "description": "AE S-D100 serijos žiediniai duslintuvai yra didelio našumo akustiniai valdymo elementai, skirti sumažinti triukšmo lygį ir pagerinti komforto sąlygas vėdinimo sistemose."
+      },
+      {
+        "name": "AE RS stačiakampio kanalo tipo duslintuvas",
+        "image": "/images/products/ae-rs.jpg",
+        "description": "AE RS serijos stačiakampio kanalo tipo duslintuvai yra didelio efektyvumo garso izoliacijos elementai, skirti sumažinti oro srauto keliamo triukšmo lygį ir padidinti akustinį komfortą ortakių sistemose."
+      },
+      {
+        "name": "AE-SS lizdo duslintuvas",
+        "image": "/images/products/emniyet-salteri.jpg",
+        "description": "AE SS serijos lizdų duslintuvai yra akustinio valdymo priedai, kuriuos galima įsigyti projektams, kuriems reikalingas triukšmo mažinimas, ypač įėjimo pusėje."
+      },
+      {
+        "name": "AE-V kreipiamoji mentelė",
+        "image": "/images/products/free.jpg",
+        "description": "AE V serijos kreipiamosios mentės yra pagalbiniai aerodinaminiai elementai, skirti optimizuoti oro srautą, sumažinti turbulenciją ir užtikrinti vienodą srauto paskirstymą ventiliatorių ir ortakių sistemose."
+      },
+      {
+        "name": "AE-OC išleidimo angos dangtelis",
+        "image": "/images/products/free.jpg",
+        "description": "AE OC serijos išleidimo angos dangteliai yra patvarūs konstrukciniai elementai, skirti apsaugoti nuo lauko sąlygų ventiliatorių sistemų išleidimo vietose ir palaikyti sistemos veikimą."
+      },
+      {
+        "name": "AE-DFC stačiakampė lanksti jungtis",
+        "image": "/images/products/ae-dfc.jpg",
+        "description": "AE DFC serijos stačiakampės lanksčios jungtys yra patvarūs jungčių elementai, skirti izoliuoti nuo vibracijos, užkirsti kelią garso perdavimui ir pagerinti ortakių sistemų sandarumą."
+      },
+      {
+        "name": "AE-AF stogo adapterio rėmas",
+        "image": "/images/products/free.jpg",
+        "description": "AE AF serijos stogo adapterių rėmai yra didelio stiprumo jungiamieji elementai, skirti užtikrinti saugų, stabilų ir sandarų ventiliatorių ir kitos ŠVOK įrangos montavimą ant stogų."
+      },
+      {
+        "name": "AE FRS plokščio stogo lizdas",
+        "image": "/images/products/ae-frs.jpg",
+        "description": "AE FRS serijos plokščių stogų lizdai yra pagalbiniai konstrukciniai elementai, skirti saugiam, izoliuotam ir stabiliam ventiliatorių ir ŠVOK įrangos montavimui plokščiuose stoguose."
+      },
+      {
+        "name": "AE-CB stogo pajungimo dėžutė",
+        "image": "/images/products/free.jpg",
+        "description": "AE CB serijos stogo jungčių dėžės – tai pagalbiniai konstrukciniai elementai, skirti saugiam ir stabiliam ventiliatorių sistemų ir ortakių jungčių montavimui."
+      },
+      {
+        "name": "AE-EH kanalinis elektrinis šildytuvas",
+        "image": "/images/products/ae-eh-elektrikli-isitici.jpg",
+        "description": "AE EH serijos kanalinio tipo elektriniai šildytuvai yra kompaktiški ir didelio efektyvumo šildytuvai, sukurti patogiam naudojimui, pavyzdžiui, gryno oro šildymui vėdinimo sistemose."
+      },
+      {
+        "name": "Saugos jungiklis",
+        "image": "/images/products/emniyet-salteri.jpg",
+        "description": "Saugos jungiklis yra aukštus apsaugos standartus atitinkantis valdymo elementas, skirtas saugiam ventiliatorių ir kitos elektros įrangos įjungimui ir išjungimui."
+      },
+      {
+        "name": "Apsaugotas saugos jungiklis",
+        "image": "/images/products/korumali-emniyet-salteri.jpg",
+        "description": "Apsaugotas saugos jungiklis yra patvarus valdymo elementas, skirtas saugiai įjungti/išjungti elektros įrangą ir kartu apsaugoti nuo aplinkos veiksnių."
+      },
+      {
+        "name": "Vienfazis greičio reguliatorius",
+        "image": "/images/products/monofaze-hiz-kontrol-cihazi.jpg",
+        "description": "Single Phase Speed ​​Controller yra patogus naudoti valdymo blokas, skirtas nuolat ir tiksliai reguliuoti ventiliatorių su įtampa valdomais vienfaziais asinchroniniais varikliais sukimosi greitį."
+      },
+      {
+        "name": "Dažnio keitiklis",
+        "image": "/images/products/frekans-inventoru.jpg",
+        "description": "Dažnio keitiklis yra naujos kartos pavaros blokas, sukurtas siekiant padidinti energijos vartojimo efektyvumą ir užtikrinti optimalų variklio sukimosi ventiliatoriaus ir vėdinimo sistemų greičio valdymą."
+      },
+      {
+        "name": "Slėgio valdymo skydelis",
+        "image": "/images/products/basinclandirma-kontrol-panosu.png",
+        "description": "Slėgio valdymo pultas yra pažangus valdymo blokas su dažnio keitikliu, skirtas užtikrinti automatinį ir optimizuotą ventiliatorių veikimą slėgimo sistemose."
+      },
+      {
+        "name": "Slėgio skirtumo jutiklis",
+        "image": "/images/products/diferansiyel-basinc-sensoru.jpg",
+        "description": "Diferencialinio slėgio jutiklis yra didelio tikslumo valdymo elementas, skirtas matuoti ir valdyti oro slėgio skirtumus vėdinimo ir filtravimo sistemose."
+      },
+      {
+        "name": "Slėgio skirtumo jutiklis PI (0–10 V išvestis)",
+        "image": "/images/products/diferansiyel-basinc-sensoru-pi10v.jpg",
+        "description": "Diferencialinio slėgio jutiklis + PI valdymas yra pažangi jutiklių sistema, sukurta tiksliai stebėti ir automatiškai reguliuoti oro slėgį arba oro srautą vėdinimo sistemose."
+      },
+      {
+        "name": "Ortakio tipo dūmų jutiklis",
+        "image": "/images/products/kanal-tipi-duman-sensoru.jpg",
+        "description": "Ortakio tipo dūmų jutiklis yra didelio jautrumo aptikimo įtaisas, skirtas anksti aptikti dūmus ir degimo produktus ore vėdinimo ir oro kondicionavimo sistemose."
+      },
+      {
+        "name": "G4 skydelio filtras",
+        "image": "/images/products/g4-panel-filtre.jpg",
+        "description": "G4 Panel Filters yra didelio efektyvumo pirminiai filtrai, skirti surinkti stambias daleles, dulkes ir teršalus iš oro vėdinimo ir oro kondicionavimo sistemose."
+      },
+      {
+        "name": "G2-G3 skydelio filtras",
+        "image": "/images/products/g2-g3-panel-filtre.jpg",
+        "description": "G2-G3 Panel Filters yra patikimi pirminio filtravimo sprendimai, skirti užfiksuoti vidutines ir dideles daleles vėdinimo ir oro kondicionavimo sistemose."
+      },
+      {
+        "name": "G2 metalinis riebalų filtras",
+        "image": "/images/products/g2-metal-yag-tutucu-filtre.jpg",
+        "description": "G2 metaliniai riebalų filtrai yra labai patvarūs filtravimo elementai, sukurti specialiai riebalų garams ir didelėms dalelėms surinkti ventiliacijos ir virtuvės išmetimo sistemose."
+      },
+      {
+        "name": "G2-G3 metalinis riebalų filtras",
+        "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.jpg",
+        "description": "G2-G3 metaliniai riebalų filtrai yra patvarūs filtravimo sprendimai, skirti efektyviam riebalų garų ir didelių dalelių surinkimui ventiliacijos ir virtuvės išmetimo sistemose."
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "otomasyonMalzemeleri": {
+    "title": "Automatikos įranga",
+    "titleFirst": "Automatika",
+    "titleHighlight": "Įranga",
+    "products": [
+      {
+        "name": "PANEL",
+        "subModels": []
+      },
+      {
+        "name": "PLC",
+        "subModels": []
+      },
+      {
+        "name": "SENSOR",
+        "subModels": [
+          "FCP-DSC",
+          "FCP-DCS",
+          "TECASE-ST110"
+        ]
+      },
+      {
+        "name": "VALDYMO PLOKŠTĖS – JUNGIKLIAI",
+        "subModels": [
+          "TP01-TSD",
+          "TP01-CC"
+        ]
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Vibracijos ir garso izoliacija",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "titresimVeSesIzolasyon": {
+    "title": "Vibracijos ir garso izoliacija",
+    "titleFirst": "Vibracija ir garsas",
+    "titleHighlight": "Izoliacija",
+    "heroDesc": "Duslintuvai, guminės trinkelės ir vibracijos izoliatoriai.",
+    "roo": {
+      "label": "Duslintuvai, guminiai trinkelės, vibracijos izoliatoriai",
+      "desc": "skirtingi modeliai su pritaikytais sprendimais vibracijos ir garso izoliacijos poreikiams.",
+      "subModels": [
+        "ROO T1-ISO10N-NIP",
+        "ROO T1-ISO15N-100kg-NIP",
+        "ROO T2-ISO20N-FIP",
+        "ROO T2-ISO30N-150kg-FIP",
+        "ROO T3-ISO5Hz-200kg-OSI",
+        "ROO T3-ISO10Hz-300kg-OSI",
+        "ROO T4-ISOComb-100kg-5Hz-HSI",
+        "ROO T4-ISO100kg-10Hz-HSI",
+        "ROO T4-ISO500kg-10Hz-HSI"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Oro judėjimas",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Oro kondicionavimas",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Vėsinimas ir šildymas",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Oro valdymas",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Oro paskirstymas",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Oro filtravimas",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Priedai",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatikos įranga",
+        "slug": "otomasyon-malzemeleri"
+      }
+    ]
+  },
+  "banyoFanlari": {
+    "title": "SEAHORSE",
+    "subtitle": "Vonios ventiliatoriai",
+    "intro": "Vonios ventiliatoriai, naudojami greitam kvapų ir garų pašalinimui mažose ir vidutinio dydžio patalpose, pavyzdžiui, vonios kambariuose, tualetuose ir sandėliukuose, atlieka svarbų vaidmenį užtikrinant higieną ir komfortą.",
+    "models": [
+      {
+        "name": "Jūrų arkliukas AP",
+        "type": "Ašinis vonios ventiliatorius",
+        "image": "/images/products/banyo-fan-1.jpg",
+        "description": "AP dekoratyvinis vonios kambario ventiliatorius sujungia estetiką ir funkcionalumą gyvenamosiose erdvėse su elegantišku dizainu, suderintu su modernia architektūra ir aukštos kokybės konstrukcija."
+      },
+      {
+        "name": "Jūrų arkliukas RP V1",
+        "type": "Prie lubų montuojamas vonios kambario išmetimo ventiliatorius",
+        "image": "/images/products/banyo-fan-2.jpg",
+        "description": "Reguliuojamas ant lubų montuojamas išmetimo ventiliatorius RP V1 yra idealus vėdinimo sprendimas, sukurtas šiuolaikinėms gyvenamosioms patalpoms, pasižymintis stilingu dizainu ir pažangiu tvirtinimo mechanizmu."
+      },
+      {
+        "name": "Seahorse RP V2",
+        "type": "Prie lubų montuojamas vonios kambarys V2 išmetimo ventiliatorius",
+        "image": "/images/products/banyo-fan-3.jpg",
+        "description": "Moderniu dizainu ir galingu našumu išsiskiriantis RP V2 plataus priekinio skydelio išmetimo ventiliatorius yra skirtas gyvenamosioms patalpoms, kuriose prioritetas yra estetika ir funkcionalumas."
+      }
+    ]
+  },
+  "catiFanlari": {
+    "title": "HERON",
+    "subtitle": "Stogo ventiliatoriai",
+    "intro": "",
+    "models": [
+      {
+        "name": "Garnys RH",
+        "type": "Horizontalaus iškrovimo išcentrinis stogo ventiliatorius",
+        "image": "/images/products/heron-rh.jpg",
+        "description": "Specialiai sukurtas oro išmetimui, kai reikia montuoti ant stogo."
+      },
+      {
+        "name": "Garnys RHS",
+        "type": "Horizontalaus iškrovimo išorinis variklis išcentrinis stogo ventiliatorius",
+        "image": "/images/products/heron-rhs.jpg",
+        "description": "Skirta darbams, kuriems reikalinga aukšta temperatūra ir užteršto oro išmetimas."
+      },
+      {
+        "name": "Heron RV",
+        "type": "Vertikalaus iškrovimo išcentrinis stogo ventiliatorius",
+        "image": "/images/products/heron-rv.jpg",
+        "description": "Didelis efektyvumas tais atvejais, kai reikalingas vertikalus oro išmetimas."
+      },
+      {
+        "name": "Garnys RVS",
+        "type": "Vertikalaus iškrovimo išorinis variklis išcentrinis stogo ventiliatorius",
+        "image": "/images/products/heron-rvs.jpg",
+        "description": "Aukšta temperatūra ir stiprus garų išmetimas."
+      },
+      {
+        "name": "Garnys AH",
+        "type": "Horizontalaus iškrovimo ašinis stogo ventiliatorius",
+        "image": "/images/products/heron-ah.jpg",
+        "description": "Šviežio oro tiekimas arba ištraukimas didelėse patalpose."
+      },
+      {
+        "name": "Garnys AVH",
+        "type": "Ašinis stogo ventiliatorius su dangčiu",
+        "image": "/images/products/free.jpg",
+        "description": "Ašinis stogo ventiliatorius su dangčiu."
+      }
+    ]
+  },
+  "damperler": {
+    "title": "HOUND",
+    "subtitle": "Amortizatoriai",
+    "intro": "Novves HOUND serijos sklendės sukurtos taip, kad užtikrintų maksimalų kontrolę ir saugumą svarbiausiuose vėdinimo ir priešgaisrinės saugos sistemų taškuose.",
+    "models": [
+      {
+        "name": "Hound SD M24",
+        "type": "Veleno dūmų slopintuvas su 24 V servo varikliu",
+        "image": "/images/products/hound-sd-m24.jpg",
+        "description": "Sukurtas saugiam oro ištraukimui gaisro ir dūmų kontrolės sistemose, atitinkantis EN 17051 C klasės nuotėkio klasifikaciją ir suderinamumą su servovarikliu."
+      },
+      {
+        "name": "Skalikas AL",
+        "type": "Oro žaliuzės",
+        "image": "/images/products/hound-al.png",
+        "description": "Estetiško dizaino žaliuzių sistema, nukreipianti oro srautą į oro įleidimo ir išleidimo taškus ir apsauganti nuo išorinių elementų."
+      },
+      {
+        "name": "Hound CRD",
+        "type": "Reljefinis slopintuvas",
+        "image": "/images/products/hound-crd.jpg",
+        "description": "Automatiškai atsidaranti slėgio mažinimo sklendė, skirta viršslėgio kontrolei ir sistemos komponentų apsaugai."
+      }
+    ]
+  },
+  "dumanIsiTahliyeFanlari": {
+    "title": "DRAGONFLY",
+    "subtitle": "Dūmų ir šilumos ištraukimo ventiliatoriai",
+    "intro": "Dūmų ir šilumos šalinimo ventiliatorių serija su F300 klasės atsparumo ugniai sertifikatu, skirta 2 valandas atlaikyti 300°C temperatūrą.",
+    "models": [
+      {
+        "name": "Laumžirgis T",
+        "type": "Korpusas ašinis dūmų ir šilumos ištraukimo ventiliatorius",
+        "image": "/images/products/dragonfly-t.jpg",
+        "description": "Aukštai temperatūrai atsparus korpusinis ašinis ventiliatorius, skirtas efektyviam dūmų ir karšto oro ištraukimui gaisro metu. Sertifikuota pagal EN 12101-3."
+      },
+      {
+        "name": "Laumžirgis R",
+        "type": "Ašinis stogo tipo dūmų ir šilumos ištraukimo ventiliatorius",
+        "image": "/images/products/dragonfly-r.jpg",
+        "description": "Aukštai temperatūrai atsparus stogo ventiliatorius, užtikrinantis greitą, saugų ir efektyvų dūmų ir karšto oro pašalinimą gaisro metu. Sertifikuota pagal EN 12101-3."
+      },
+      {
+        "name": "Laumžirgis C",
+        "type": "Ašinis dūmų ir šilumos ištraukimo ventiliatorius",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Aukštai temperatūrai atsparus ir žemo triukšmo spintos tipo įrenginys, sukurtas saugiam dūmų ir aukštos temperatūros oro pašalinimui gaisro metu. Sertifikuota pagal EN 12101-3."
+      },
+      {
+        "name": "Laumžirgis JAU",
+        "type": "Vienkryptis ašinis purkštukas",
+        "image": "/images/products/dragonfly-jau.jpg",
+        "description": "Skirtas dūmų šalinimui ir oro cirkuliacijai automobilių stovėjimo aikštelėse, tuneliuose ir uždarose patalpose, atsparus aukštai temperatūrai. Sertifikuota pagal EN 12101-3."
+      },
+      {
+        "name": "Dragonfly JAR",
+        "type": "Dvikryptis ašinis purkštukas",
+        "image": "/images/products/dragonfly-jar.jpg",
+        "description": "Sukurtas dūmų šalinimui, vėdinimui ir oro cirkuliacijai uždarose automobilių stovėjimo aikštelėse ir didelės apimties vidaus erdvėse, dvikryptis. Žemas triukšmo lygis ir didelis našumas."
+      },
+      {
+        "name": "Dragonfly JR",
+        "type": "Radialinis/išcentrinis reaktyvinis ventiliatorius",
+        "image": "/images/products/dragonfly-jr.jpg",
+        "description": "Specialiai sukurtas dūmų šalinimui ir avariniam vėdinimui sudėtingose ​​patalpose, tokiose kaip uždaros automobilių stovėjimo aikštelės, tuneliai ir gaisro zonos. Sertifikuota pagal EN 12101-3."
+      }
+    ]
+  },
+  "duvarTipiFanlar": {
+    "title": "OWL",
+    "subtitle": "Sieniniai ventiliatoriai",
+    "intro": "",
+    "models": [
+      {
+        "name": "Pelėda RER",
+        "type": "Stačiakampis sieninis ventiliatorius",
+        "image": "/images/products/owl-rer.jpg",
+        "description": "Metalinis ašinis ventiliatoriaus sprendimas, specialiai sukurtas montuoti ant sienos, pasižymintis patvaria konstrukcija ir reguliuojamu greičiu."
+      },
+      {
+        "name": "Pelėda CER",
+        "type": "Apvalus sieninis ventiliatorius",
+        "image": "/images/products/owl-cer.jpg",
+        "description": "Kompaktiškas ir didelio efektyvumo metalinių ašmenų ašinis ventiliatoriaus modelis, specialiai sukurtas apvaliam montavimui ant sienos."
+      },
+      {
+        "name": "Pelėda RWA",
+        "type": "Stačiakampis ašinis sieninis ventiliatorius",
+        "image": "/images/products/owl-rwa.jpg",
+        "description": "Ašinio ventiliatoriaus sprendimas, pasižymintis didelio efektyvumo aerodinaminio sparno mentėmis, tinkamas montuoti stačiakampio formos sienoje."
+      },
+      {
+        "name": "Pelėda CWA",
+        "type": "Apvalus ašinis sieninis ventiliatorius",
+        "image": "/images/products/owl-cwa.jpg",
+        "description": "Kompaktiškas ašinis ventiliatoriaus sprendimas, tinkamas montuoti ant sienos, turintis lengvą, bet patvarią aerodinaminio sparno mentės struktūrą."
+      }
+    ]
+  },
+  "ecFanlar": {
+    "title": "HUMMINGBIRD",
+    "subtitle": "EC fanai",
+    "intro": "Hummingbird serija siūlo stogo ir ortakių tipo ventiliatorių sprendimus, kuriuose didelis našumas derinamas su energijos taupymu dėl EC variklių technologijos.",
+    "models": [
+      {
+        "name": "Kolibris RRV",
+        "type": "EC vertikalaus išleidimo stogo ventiliatorius",
+        "image": "/images/products/hummingbird-rh.jpg",
+        "description": "Moderniems pastatams sukurtas vertikalaus iškrovimo stogo ventiliatoriaus sprendimas, veikiantis su didelio efektyvumo EC varikliais. Su išmaniomis valdymo galimybėmis, mažomis energijos sąnaudomis ir tyliu veikimu jis išsiskiria komforto ir pramoninio vėdinimo srityse."
+      },
+      {
+        "name": "Kolibris DRB",
+        "type": "EC stačiakampio kanalo ventiliatorius",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Didelio efektyvumo EC variklio stačiakampio kanalo ventiliatoriaus sprendimas, skirtas naudoti šiuolaikinėse vėdinimo sistemose. Dėl savo kompaktiškos konstrukcijos, tylaus veikimo ir automatizavimo sistemos integravimo jis patikimai naudojamas komforto ir pramonės srityse."
+      }
+    ]
+  },
+  "endustriyelFanlar": {
+    "title": "NAUTILUS",
+    "subtitle": "Pramoniniai išcentriniai ventiliatoriai",
+    "intro": "Didelio našumo ir energijos taupymo derinant pramoniniai ventiliatoriai siūlo galingą ir efektyvų vėdinimo sprendimą su atgal lenkta mentės konstrukcija ir tiesioginės pavaros variklio konfigūracija.",
+    "models": [
+      {
+        "name": "Nautilus LPF",
+        "type": "Pramoninis išcentrinis ventiliatorius",
+        "image": "/images/products/nautilus-lfp.jpg",
+        "description": "Pramoninis ventiliatorius, derinantis didelį našumą ir energijos taupymą."
+      },
+      {
+        "name": "Nautilus Tyla",
+        "type": "Dvisienis išcentrinis ventiliatorius",
+        "image": "/images/products/nautilus-cif-cidarli.jpg",
+        "description": "NAUTILUS Silence Series yra išcentriniai ventiliatoriai, kurie labai efektyviai veikia sistemose, kurioms reikalingas žemo slėgio oro tiekimas, pasižymi kompaktiška konstrukcija ir tiesioginės pavaros konstrukcija."
+      }
+    ]
+  },
+  "exproofFanlar": {
+    "title": "BEAR",
+    "subtitle": "Sprogimui atsparūs ventiliatoriai",
+    "intro": "„Bear“ serijos ventiliatoriai yra „Ex-Proof“ ventiliatorių sprendimai, skirti naudoti sprogioje ir degių dujų aplinkoje.",
+    "models": [
+      {
+        "name": "Meškiukas EX-REB",
+        "type": "Stačiakampio kanalo tipo sprogimui atsparus ventiliatorius",
+        "image": "/images/products/bear-reb.jpg",
+        "description": "Ex-Proof, skirtas saugiai vėdinti sprogioje aplinkoje. Aukšti saugos standartai, dažnio valdomas veikimas, suderinama su ATEX zona."
+      },
+      {
+        "name": "Meškiukas EX-T",
+        "type": "Korpusas ašinis sprogimui atsparus ventiliatorius",
+        "image": "/images/products/bear-t.jpg",
+        "description": "Saugus oro perdavimas sprogioje aplinkoje, subalansuota sparnuotės konstrukcija. Skirta pramoniniam naudojimui, kai kyla gaisro ir kibirkšties pavojus."
+      },
+      {
+        "name": "Meška EX-RRH",
+        "type": "Horizontalaus iškrovimo stogo tipo sprogimui atsparus išcentrinis ventiliatorius",
+        "image": "/images/products/bear-rrh.jpg",
+        "description": "Specialiai sukurtas darbams, kuriems reikalingas horizontalus išmetimas ant stogo. ATEX 1 ir 2 zona."
+      },
+      {
+        "name": "Meškiukas EX-RRV",
+        "type": "Vertikalaus iškrovimo stogo tipas, atsparus sprogimui išcentrinis ventiliatorius",
+        "image": "/images/products/bear-rrv.jpg",
+        "description": "Aukšto slėgio oro išmetimas, ilgalaikis atsparumas lauke."
+      },
+      {
+        "name": "Meškiukas EX-BP",
+        "type": "Plenum Sprogimui atsparus išcentrinis ventiliatorius",
+        "image": "/images/products/bear-bp.jpg",
+        "description": "Ventiliatoriaus sprendimas su moduline plėvelės struktūra, užtikrinantis galingą ir tylų veikimą."
+      },
+      {
+        "name": "Meškiukas EX-C",
+        "type": "Sprogimui atsparus ašinis ventiliatorius",
+        "image": "/images/products/bear-c.jpg",
+        "description": "Tylus veikimas, lengva priežiūra, ATEX atitiktis."
+      },
+      {
+        "name": "Meškiukas LPF",
+        "type": "Išcentrinis sprogimui atsparus ventiliatorius",
+        "image": "/images/products/bear-lpf.jpg",
+        "description": "Saugus oro išmetimas aplinkoje, kurioje yra sprogių dujų ar garų."
+      },
+      {
+        "name": "Meškiukas R",
+        "type": "Ašinis stogo tipo ventiliatorius",
+        "image": "/images/products/bear-r.jpg",
+        "description": "Sukurta taip, kad atitiktų didelių tūrių konstrukcijų natūralios vėdinimo ir išmetimo poreikius."
+      },
+      {
+        "name": "Meškiukas W",
+        "type": "Sprogimui atsparus ašinis ventiliatorius (sieninio tipo)",
+        "image": "/images/products/bear-w.jpg",
+        "description": "Atsparus liepsnai, suderinamas su ATEX, pasižymi dideliu našumu."
+      }
+    ]
+  },
+  "havuzNemAlmaSantrali": {
+    "title": "DOLPHIN",
+    "subtitle": "Baseino sausinimo įrenginys",
+    "intro": "NOVVES sukurti Dolphin serijos baseino sausinimo įrenginiai apsaugo nuo drėgmės žalos pastatų konstrukcijoms vidaus baseinuose ir tuo pačiu padidina naudotojo patogumą. Dėl savo didelio energijos vartojimo efektyvumo, ilgalaikės konstrukcijos ir tylaus veikimo Dolphin serija yra profesionalus baseino klimato kontrolės sprendimų pasirinkimas.",
+    "tableHeaders": {
+      "model": "Modelis",
+      "airFlow": "Oro srautas (m³/h)",
+      "poolArea": "Baseino plotas (m²)",
+      "cooling": "Aušinimas (kW)",
+      "condenser": "Kondensatorius (kW)",
+      "waterHeater": "Vandens šildytuvas (kW)"
+    },
+    "models": [
+      {
+        "model": "DELFINAS 300",
+        "airFlow": "3,000",
+        "area": "50",
+        "cooling": "21.1",
+        "condenser": "26.4",
+        "water": "26.15"
+      },
+      {
+        "model": "DELFINAS 400",
+        "airFlow": "4,000",
+        "area": "75",
+        "cooling": "28.7",
+        "condenser": "35.67",
+        "water": "34.12"
+      },
+      {
+        "model": "DELFINAS 450",
+        "airFlow": "4,500",
+        "area": "100",
+        "cooling": "33.3",
+        "condenser": "40.96",
+        "water": "36.24"
+      },
+      {
+        "model": "DELFINAS 600",
+        "airFlow": "6,000",
+        "area": "150",
+        "cooling": "42.2",
+        "condenser": "52.88",
+        "water": "50.58"
+      },
+      {
+        "model": "DELFINAS 750",
+        "airFlow": "7,500",
+        "area": "200",
+        "cooling": "52.6",
+        "condenser": "65.9",
+        "water": "62.97"
+      },
+      {
+        "model": "DELFINAS 900",
+        "airFlow": "9,000",
+        "area": "250",
+        "cooling": "36.8",
+        "condenser": "80.68",
+        "water": "77.1"
+      }
+    ]
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Plenumo gerbėjai",
+    "intro": "Turtle serijos plėvelės ventiliatoriai gali būti naudojami tiek gryno oro tiekimui, tiek ištraukiamam oro ištraukimui. Dėl kompaktiškos konstrukcijos juos lengva montuoti tiesiai į grindis, o akmens vatos užpildas tarp vidinių sienų užtikrina efektyvią garso izoliaciją.",
+    "models": [
+      {
+        "name": "Vėžlys B",
+        "type": "Diržinis plėvelės ventiliatorius",
+        "image": "/images/products/turtle-b.jpg",
+        "description": "Diržinio korpuso tipo ventiliatoriaus modelis, siūlantis patikimus ir tylius sprendimus sistemose, kurioms reikalingas didelis oro srautas."
+      },
+      {
+        "name": "Vėžlys BP",
+        "type": "Plenumo tipas atgal lenktas kištuko ventiliatorius",
+        "image": "/images/products/turtle-bp.jpg",
+        "description": "Didelio našumo spintos tipo ventiliatoriaus modelis, siūlantis tylius, efektyvius ir kompaktiškus oro sprendimus."
+      },
+      {
+        "name": "Vėžlys BPA",
+        "type": "Plenumo tipas atgal lenktas išcentrinis ventiliatorius",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "Pramoninis vėdinimo sprendimas, pasižymintis aukštu efektyvumu ir tyliu veikimu, su jo sandaros tipo struktūra ir atgal lenkta išcentrinio ventiliatoriaus technologija."
+      },
+      {
+        "name": "Vėžlys F",
+        "type": "Plenum į priekį lenktų ašmenų ventiliatorius",
+        "image": "/images/products/turtle-f.jpg",
+        "description": "Kištukinio tipo dvigubo įleidimo spintelės tipo ventiliatoriaus modelis, išsiskiriantis tyliu ir efektyviu darbu sistemose, kurioms reikalingas žemo slėgio oro tiekimas."
+      },
+      {
+        "name": "Vėžlys A",
+        "type": "Ašinis plėvelės ventiliatorius",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "Kompaktiški ašinių spintelių ventiliatorių sprendimai, skirti sistemoms, kurioms keliami dideli oro srauto reikalavimai."
+      }
+    ]
+  },
+  "isiGeriKazanimCihazlari": {
+    "title": "CARACAL",
+    "subtitle": "Šilumos atgavimo įrenginiai",
+    "intro": "Caracal serija užtikrina kontroliuojamą oro kondicionavimą, kad atitiktų gryno oro poreikius ir pagerintų esamą oro kokybę biuruose, mokyklose, viešbučiuose, ligoninėse, verslo centruose, prekybos centruose, pasirodymų vietose ir kavinėse.",
+    "caracalD": {
+      "title": "Caracal D",
+      "type": "Šilumos atkūrimo įrenginys",
+      "description": "Caracal D serija (šilumos atkūrimo įrenginys) yra kompaktiškas ir efektyvus sprendimas, sukurtas gaivinti patalpų orą ir padidinti energijos vartojimo efektyvumą. Patvari konstrukcija ir patogus valdymo pultas užtikrina patogų ir tvarų vėdinimą."
+    }
+  },
+  "kanalFanlari": {
+    "title": "KOI",
+    "subtitle": "Ortakių ventiliatoriai",
+    "intro": "",
+    "models": [
+      {
+        "name": "Koi CB",
+        "type": "Apvalus kanalo ventiliatorius",
+        "image": "/images/products/koi-cb.jpg",
+        "description": "Novves KOI-CB serijos žiediniai kanalų ventiliatoriai siūlo kompaktiškus ir didelio našumo sprendimus, sukurtus ortakio tipo vėdinimo poreikiams."
+      },
+      {
+        "name": "Koi RB",
+        "type": "Stačiakampio formos kanalo ventiliatorius",
+        "image": "/images/products/koi-rb.jpg",
+        "description": "Novves KOI-RB serijos stačiakampiai kanalų ventiliatoriai yra specialiai sukurti didelio našumo oro tiekimui pramoniniuose ir komerciniuose pastatuose."
+      },
+      {
+        "name": "Koi REB",
+        "type": "Išorinio variklio stačiakampio kanalo ventiliatorius",
+        "image": "/images/products/koi-reb.jpg",
+        "description": "KOI-REB serijos išoriniai variklio kanalų ventiliatoriai yra specialiai sukurti vėdinimui, kuriam reikalingas atsparumas aukštai temperatūrai."
+      },
+      {
+        "name": "Koi X",
+        "type": "Mišraus srauto kanalų ventiliatorius",
+        "image": "/images/products/koi-x.jpg",
+        "description": "KOI-X serijos mišraus srauto kanalų ventiliatorius yra sukurtas taip, kad užtikrintų maksimalų efektyvumą, ypač komfortiškose srityse, dėl savo kompaktiškos konstrukcijos, tylaus veikimo ir dviejų greičių variklio."
+      }
+    ]
+  },
+  "klimaSantralleri": {
+    "title": "TIGER",
+    "subtitle": "Vėdinimo įrenginiai",
+    "intro": "Modulinis, į efektyvumą orientuotas vėdinimo įrenginio sprendimas, sukurtas didelio našumo vėdinimo ir oro kondicionavimo poreikiams. Jis išsiskiria plačiu oro srauto diapazonu, dideliu energiją taupančiais komponentais ir tyliu veikimu.",
+    "specs": [
+      {
+        "label": "Oro srautas",
+        "value": "500 - 125 000 m³/val"
+      },
+      {
+        "label": "Spaudimas",
+        "value": "10 - 3000 Pa"
+      },
+      {
+        "label": "Važiuoklė",
+        "value": "Anoduotas aliuminis"
+      },
+      {
+        "label": "Skydas",
+        "value": "Dvisienių daugiasluoksnė plokštė"
+      },
+      {
+        "label": "Ventiliatoriaus tipas",
+        "value": "Išcentrinis ventiliatorius / EC Plug ventiliatorius"
+      },
+      {
+        "label": "Šilumos atkūrimas",
+        "value": "Plokštelė, sukamoji, vandens glikolis"
+      }
+    ]
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Korpuso ašiniai ventiliatoriai",
+    "intro": "Marlin serijos ašiniai ventiliatoriai su korpusu naudojami gryno oro tiekimui, ištraukimui arba kaip ortakiniai ventiliatoriai, taip pat tarnauja kaip slėgio didinimo ventiliatoriai, kad gaisro metu dūmai nepatektų į evakuacijos kelius, pavyzdžiui, laiptus ir liftų šachtas.",
+    "models": [
+      {
+        "name": "Marlin",
+        "type": "Korpusas ašinis ventiliatorius",
+        "image": "/images/products/marlin.png",
+        "description": "„Novves MARLIN“ serijos ašinis ventiliatorius su korpusu yra sprendimas, kuris sujungia galingą našumą, lankstumą ir energijos vartojimo efektyvumą sistemose, kurioms reikalingas didelis oro srautas."
+      },
+      {
+        "name": "Marlin B",
+        "type": "Dvišakis ašinis ventiliatorius",
+        "image": "/images/products/marlin-b.jpg",
+        "description": "Dvišakis ašinis ventiliatorius."
+      }
+    ]
+  },
+  "mutfakFanlari": {
+    "title": "BUTTERFLY",
+    "subtitle": "Virtuvės išmetimo ventiliatoriai",
+    "intro": "",
+    "models": [
+      {
+        "name": "Drugelis B",
+        "type": "Metalinis filtras virtuvės išmetimo ventiliatorius",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "Butterfly B serijos virtuvės tipo ventiliatorius yra patvarus ir didelio efektyvumo vėdinimo sprendimas, sukurtas intensyviam garų, riebalų ir kvapų šalinimui pramoninėse ir komercinėse virtuvėse. Dėl pažangios filtravimo sistemos, tylaus veikimo ir ilgalaikės konstrukcijos jis idealiai tinka profesionalioms virtuvėms."
+      }
+    ]
+  },
+  "siginakFanlari": {
+    "title": "FOX",
+    "subtitle": "Prieglaudos gerbėjai",
+    "intro": "„Fox“ serija buvo sukurta prieglaudoms, skirtoms apsaugoti nuo radiacijos, branduolinių, biologinių ir cheminių grėsmių ar stichinių nelaimių.",
+    "models": [
+      {
+        "name": "Lapė D",
+        "type": "Ortakio tipo priedangos ventiliatorius",
+        "image": "/images/products/fox-d.jpg",
+        "description": "FOX D serijos kanalinis ventiliatorius yra patvarus ir patikimas sprendimas, pasižymintis dideliu filtravimo pajėgumu, sukurtas specialiai pastogės ir saugios zonos vėdinimo poreikiams."
+      },
+      {
+        "name": "Lapė C",
+        "type": "Spintelės tipas priedangos ventiliatorius",
+        "image": "/images/products/fox-c.jpg",
+        "description": "„FOX C“ serijos korpuso tipo „Shelter Fan“ yra profesionalus vėdinimo sprendimas, specialiai sukurtas didelio saugumo reikalaujančioms patalpoms, tinkamas tyliam darbui ir aprūpintas galinga filtravimo sistema."
+      }
+    ]
+  }
+}

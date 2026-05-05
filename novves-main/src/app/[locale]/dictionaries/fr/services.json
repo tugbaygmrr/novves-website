@@ -1,0 +1,333 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "Analyse CFD | Novves",
+      "description": "Analyses CFD (dynamique des fluides numérique) NOVVES — scénarios réels, données réelles, solutions sûres."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "current": "Analyse CFD"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "CFD",
+      "titleHighlight": "Analyse",
+      "subtitle": "Scénarios réels, données réelles, solutions sûres.",
+      "stats": [
+        { "value": "3D", "label": "Modèle de simulation" },
+        { "value": "5", "label": "Paramètres d’analyse" },
+        { "value": "EN 12101-3", "label": "Vérification normative" }
+      ]
+    },
+    "intro": "Chez NOVVES, nous ne nous contentons pas de fabriquer des ventilateurs — nous proposons également des solutions de ventilation spécifiques au projet et fondées sur l’ingénierie. Au cœur de ces solutions se trouvent les analyses CFD (dynamique des fluides numérique) qui nous permettent de valider nos conceptions avant leur mise en œuvre sur site.",
+    "whyCfd": {
+      "sectionLabel": "Méthodologie",
+      "title": "Pourquoi une analyse CFD ?",
+      "items": [
+        "Les performances du système de ventilateurs sont simulées selon les conditions environnementales réelles.",
+        "Les scénarios d’incendie tels que la propagation de la fumée, de la chaleur et des gaz sont testés en amont.",
+        "Des variables essentielles comme la distance de visibilité, l’élévation de température et la concentration en CO sont analysées.",
+        "La conformité réglementaire et les temps d’évacuation sûrs sont vérifiés."
+      ],
+      "resultLabel": "Résultat",
+      "resultText": "Un positionnement adapté, un nombre de ventilateurs adéquat, une utilisation énergétique optimale et une sécurité maximale sont assurés."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Périmètre d’analyse",
+      "title": "Paramètres de simulation",
+      "items": [
+        {
+          "title": "Répartition de la vitesse de l’air",
+          "subtitle": "Analyse des vitesses",
+          "text": "La direction, la vitesse et la répartition de l’écoulement d’air dans l’espace clos ont été modélisées en trois dimensions. L’objectif est d’assurer une circulation d’air sur tout l’environnement grâce à l’effet des ventilateurs à jet."
+        },
+        {
+          "title": "Évolution de la température",
+          "subtitle": "Répartition thermique",
+          "text": "L’évolution de la température ambiante à hauteur d’homme pendant un incendie a été analysée. Les seuils thermiques critiques ont été évalués et les risques identifiés pour la gestion de crise."
+        },
+        {
+          "title": "Évaluation de la visibilité",
+          "subtitle": "Analyse de visibilité",
+          "text": "La durée pendant laquelle les voies d’évacuation restent visibles sous une forte densité de fumée a été analysée. Le taux de réduction de visibilité a été mesuré pour valider la sécurité d’évacuation."
+        },
+        {
+          "title": "Dispersion du monoxyde de carbone",
+          "subtitle": "Concentration en CO",
+          "text": "L’accumulation dans le temps du CO des gaz d’échappement dans des environnements clos comme les parkings, et son évacuation par le système de ventilateurs, ont été modélisées."
+        },
+        {
+          "title": "Propagation de la fumée",
+          "subtitle": "Propagation de la fumée",
+          "text": "La direction et la vitesse de propagation de la fumée après un incendie, ainsi que son guidage à l’aide des ventilateurs à jet, ont été analysés. La formation et le mouvement de la couche de fumée ont été simulés en détail."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Proposition de valeur",
+      "title": "Ce que vous gagnez avec NOVVES",
+      "items": [
+        "Vérification de la conformité réglementaire",
+        "Décisions d’ingénierie pour le positionnement des ventilateurs",
+        "Analyse préalable des seuils de température, de CO et de visibilité pour la sécurité d’évacuation",
+        "Visibilité claire des performances du système avant installation",
+        "Rapports techniques par projet et présentation appuyée sur les données"
+      ],
+      "quote": "Fondez votre conception non seulement sur l’expérience, mais aussi sur les données. Réalisez des systèmes de ventilation sûrs, performants et optimisés avec l’ingénierie NOVVES.",
+      "ctaPrimary": "Créer une demande de projet",
+      "ctaSecondary": "Conception désenfumage"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "Mise en service | Novves",
+      "description": "Service de mise en service après vente NOVVES — contrôle d’installation, essais de performance, optimisation et formation."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "current": "Mise en service"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Mise",
+      "titleHighlight": "en service",
+      "subtitle": "Nous garantissons le fonctionnement à pleine performance du système après installation.",
+      "stats": [
+        { "value": "8", "label": "Étapes du service" },
+        { "value": "4", "label": "Phases" },
+        { "value": "7/24", "label": "Assistance" },
+        { "value": "PDF", "label": "Rapports" }
+      ]
+    },
+    "intro": [
+      "Chez Novves, nous ne nous contentons pas de produire des équipements de qualité ; nous garantissons également le fonctionnement à pleine performance du système après installation.",
+      "Notre service de mise en service après vente permet à nos clients d’utiliser nos produits de la manière la plus efficace et la plus sûre."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Processus",
+      "title": "Contenu du service",
+      "items": [
+        { "step": "Contrôle de l’installation des produits et inspection de conformité mécanique", "phase": "Contrôle" },
+        { "step": "Vérification des raccordements électriques et de la conformité de la mise à la terre", "phase": "Contrôle" },
+        { "step": "Premier démarrage des ventilateurs et vérification du sens de rotation du moteur", "phase": "Démarrage" },
+        { "step": "Réglage du variateur de vitesse / de l’onduleur de fréquence", "phase": "Démarrage" },
+        { "step": "Réalisation d’essais de performance de base : débit, pression, température", "phase": "Essai" },
+        { "step": "Optimisation des ventilateurs selon les conditions ambiantes", "phase": "Essai" },
+        { "step": "Brève formation à l’exploitation du système et aux informations de maintenance de base pour l’utilisateur", "phase": "Formation" },
+        { "step": "Enregistrement de tous les essais et procédures et rapport avec formulaire de mise en service", "phase": "Rapport" }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Avantages",
+      "title": "Pourquoi est-ce important ?",
+      "items": [
+        { "title": "Activation de la garantie", "text": "Mise en route de la période de garantie" },
+        { "title": "Prévention des pannes", "text": "Prévention des dysfonctionnements pouvant résulter d’erreurs d’installation" },
+        { "title": "Efficacité", "text": "Amélioration de l’efficacité énergétique et de la durée de vie des équipements" },
+        { "title": "Optimisation", "text": "Faire fonctionner le ventilateur de la façon la plus adaptée aux conditions ambiantes" }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Demande de service",
+      "title": "Contactez-nous pour la mise en service",
+      "contactForm": "Formulaire de contact",
+      "weekdays": "Lun.–ven. 08:30 – 18:00",
+      "emailSupport": "Assistance technique par e-mail"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Conception de système de désenfumage | Novves",
+      "description": "Conception de systèmes à ventilateurs à jet — débit d’air, extraction et désenfumage dans les parkings couverts."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "current": "Désenfumage"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Conception de",
+      "titleHighlight": "système de désenfumage",
+      "stats": [
+        { "value": "EN 12101-3", "label": "Conformité normative" },
+        { "value": "300°C / 2h", "label": "Résistance au feu" },
+        { "value": "CFD", "label": "Appui simulation" }
+      ]
+    },
+    "intro": [
+      "Le système à ventilateurs à jet est une ventilation mécanique utilisée pour orienter les flux d’air, évacuer les gaz d’échappement et maîtriser la fumée en cas d’incendie dans les parkings couverts.",
+      "Ce système dérive des technologies de ventilation des tunnels et est particulièrement adapté aux parkings de grande taille et à géométrie complexe.",
+      "Les ventilateurs à jet créent un mouvement d’air sur une large zone en projetant de l’air à grande vitesse, entraînant la masse d’air devant eux. Les gaz nocifs tels que le monoxyde de carbone (CO) sont ainsi efficacement évacués. En cas d’incident, les ventilateurs à jet limitent la propagation de la fumée, sécurisent les issues de secours et facilitent l’intervention des secours."
+    ],
+    "components": {
+      "sectionLabel": "Architecture du système",
+      "title": "Composants du système à ventilateurs à jet",
+      "items": [
+        {
+          "title": "Ventilateurs à jet",
+          "text": "Élément principal du système. Montés au plafond. Ils créent le flux d’air pour orienter l’air pollué vers les extracteurs. Deux types : axial et radial. Le type axial peut fonctionner en sens unique ou réversible."
+        },
+        {
+          "title": "Ventilateurs d’extraction",
+          "text": "Évacuent vers l’extérieur, de manière contrôlée, l’air pollué ou chargé de fumée orienté par les ventilateurs à jet."
+        },
+        {
+          "title": "Ventilateurs d’air neuf",
+          "text": "Utilisés pour la surpression afin d’apporter de l’air propre à la place de l’air pollué et d’empêcher la fumée d’atteindre les issues lorsque les ouvertures naturelles sont insuffisantes ou mal positionnées."
+        },
+        {
+          "title": "Capteurs",
+          "text": "Les capteurs CO, fumée et chaleur collectent les données de leur zone et transmettent ces informations au tableau MCC selon les seuils réglés."
+        },
+        {
+          "title": "Automatisme et système de commande (tableau MCC)",
+          "text": "Système assurant la mise en marche automatique des ventilateurs à partir des données des capteurs. En cas d’incendie, il fait fonctionner l’installation selon des scénarios prédéfinis. Pilotage par automate (PLC), intégration possible avec la GTB (gestion technique du bâtiment)."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "Pourquoi le ventilateur à jet ?",
+      "title": "Avantages du système",
+      "subtitle": "Les systèmes à ventilateurs à jet offrent des avantages majeurs par rapport aux ventilations gainées classiques, notamment dans les parkings couverts et les tunnels.",
+      "items": [
+        { "title": "Pas de réseau de gaines", "text": "Les systèmes à jet orientent l’air sans nécessiter de gaines, grilles ou diffuseurs." },
+        { "title": "Gain de place", "text": "Sous faible hauteur sous plafond, les réseaux gainés encombrent ; les ventilateurs à jet, plus compacts, libèrent de l’espace." },
+        { "title": "Efficacité énergétique", "text": "Associés aux capteurs CO, ils ne fonctionnent qu’en cas de besoin, réduisant la consommation. Vitesses variables pour une utilisation optimisée." },
+        { "title": "Maîtrise de l’extraction fumée et chaleur", "text": "À vitesse élevée en incendie, la propagation de la fumée est maîtrisée ; les issues restent praticables et la sécurité des personnes est préservée ; l’intervention des secours est facilitée." },
+        { "title": "Coût de maintenance réduit", "text": "Sans réseau de gaines, nettoyage et entretien sont simplifiés ; moins de composants réduit le risque de panne." },
+        { "title": "Adaptation à l’architecture", "text": "Repenser le système pour des évolutions futures est plus simple." },
+        { "title": "Investissement initial modéré", "text": "Moins d’équipements (gaines, grilles, diffuseurs, etc.) : coût d’installation initial souvent inférieur aux systèmes classiques." }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Ingénierie",
+      "title": "Facteurs de conception importants",
+      "items": [
+        "Les mesures nécessaires à un fonctionnement efficace sont étudiées et contrôlées dès la première phase ; le positionnement tient compte de toutes les contraintes.",
+        "Dans les projets à ventilateurs à jet, le niveau sonore, le sens des flux, l’absence de « zones mortes » sans renouvellement d’air, la facilité de pose et l’accessibilité des issues en incendie guident le placement des ventilateurs axiaux (extraction fumée-chaleur / air neuf) et des jets.",
+        "La conception doit assurer des taux de renouvellement et des débits adaptés aux gaz d’échappement, à la circulation piétonne et aux autres facteurs. Le positionnement des jets doit diriger le flux du système de la façon la plus efficace."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Pour votre projet",
+      "title": "Demandez un accompagnement pour la conception désenfumage",
+      "cfdLink": "Analyse CFD",
+      "supportButton": "Demande d’assistance technique"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Service technique | Novves",
+      "description": "Service technique NOVVES — assistance après vente, dépannage, pièces détachées et maintenance."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "current": "Service technique"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Service",
+      "titleHighlight": "technique",
+      "subtitle": "Réactivité, solutions fiables.",
+      "weekdays": "Lun.–ven. 08:30 – 18:00",
+      "emailSupport": "Assistance technique par e-mail"
+    },
+    "intro": "Le service technique Novves est à votre disposition pour répondre rapidement et efficacement à vos demandes d’assistance après vente, de dépannage, de fourniture de pièces détachées et de maintenance.",
+    "serviceTypes": {
+      "sectionLabel": "Notre périmètre",
+      "title": "Types de demandes",
+      "items": [
+        "Conseil en installation et mise en service",
+        "Diagnostic de panne et intervention sur site",
+        "Planification de la maintenance et des contrôles périodiques",
+        "Demandes de pièces détachées",
+        "Assistance à l’utilisation et à la documentation technique"
+      ]
+    },
+    "form": {
+      "sectionLabel": "Demande",
+      "title": "Formulaire service technique",
+      "description": "Vous pouvez transmettre votre demande en remplissant le formulaire. Notre équipe technique vous répondra dans les meilleurs délais.",
+      "features": [
+        { "label": "Réponse rapide", "desc": "Réponse sous 24 heures" },
+        { "label": "Équipe qualifiée", "desc": "Techniciens certifiés" },
+        { "label": "Intervention terrain", "desc": "Réseau de service national" }
+      ],
+      "labels": {
+        "name": "Nom et prénom",
+        "company": "Société",
+        "phone": "Téléphone",
+        "email": "E-mail",
+        "subject": "Objet",
+        "message": "Votre message"
+      },
+      "submit": "Envoyer",
+      "successTitle": "Demande enregistrée",
+      "successMessage": "Nous vous recontacterons dans les plus brefs délais."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "Étude sur site | Novves",
+      "description": "Étude sur site NOVVES — inspection, mesures et analyses pour des solutions de ventilation adaptées au projet."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "current": "Étude sur site"
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Étude",
+      "titleHighlight": "sur site",
+      "subtitle": "La première étape d’une conception fiable : mesures sur site, analyse et expression du besoin."
+    },
+    "intro": "Des données fiables fondent tout projet de ventilation. L’étude sur site NOVVES est la première étape — et la plus déterminante — pour concevoir la solution la plus efficace et conforme aux règlements, en examinant vos besoins sur place. Nos ingénieurs se déplacent pour réaliser mesures, observations et analyses détaillées.",
+    "steps": {
+      "sectionLabel": "Processus",
+      "title": "Étapes de l’étude",
+      "items": [
+        {
+          "title": "Rendez-vous et informations préliminaires",
+          "desc": "Nous recueillons les caractéristiques générales de votre projet. Une réunion préalable porte sur le type de site, la surface et l’analyse des besoins."
+        },
+        {
+          "title": "Visite et relevés sur site",
+          "desc": "Notre équipe examine les locaux, effectue les mesures et évalue l’infrastructure existante. Sens des flux, répartition des températures et état du système actuel sont analysés."
+        },
+        {
+          "title": "Analyse technique et rapport",
+          "desc": "Sur la base des données collectées : calculs des besoins en ventilation, analyses de débit et vérifications réglementaires. Un rapport d’étude détaillé est rédigé."
+        },
+        {
+          "title": "Proposition et conception",
+          "desc": "À partir des résultats de l’étude, nous présentons une offre sur mesure : conception du système le plus adapté, choix des équipements et analyse des coûts."
+        },
+        {
+          "title": "Validation et lancement",
+          "desc": "Après acceptation de l’offre, fabrication, installation et mise en service sont planifiées et lancées."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Pourquoi c’est essentiel",
+      "title": "Pourquoi une étude sur site ?",
+      "items": [
+        { "title": "Conception juste", "desc": "Sans mesures sur site, les erreurs de dimensionnement des équipements sont fréquentes." },
+        { "title": "Optimisation des coûts", "desc": "Les données réelles du site évitent surdimensionnement et sous-dimensionnement." },
+        { "title": "Conformité réglementaire", "desc": "L’adéquation du bâtiment existant aux exigences est vérifiée sur place." },
+        { "title": "Intégration facilitée", "desc": "Seule une étude permet de définir des solutions compatibles avec les réseaux CVC et électriques existants." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Étude gratuite",
+      "title": "Demandez une étude sur site pour votre projet",
+      "subtitle": "Notre équipe d’ingénieurs se déplace pour analyser vos besoins et effectuer les mesures.",
+      "ctaButton": "Demander une étude"
+    }
+  }
+}

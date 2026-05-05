@@ -7,6 +7,10 @@ import Link from "next/link";
 const TOTAL_FRAMES = 211;
 const START_VISIBLE_FRAME = 36;
 
+/** Hero masaüstü — tüm kareleri tek seferde yüklemek RAM / ağ’ı şişirir */
+const HERO_FRAME_LOAD_RADIUS = 18;
+const HERO_FRAME_EVICT_DISTANCE = 48;
+
 function getFrameSrc(index: number): string {
   const num = String(Math.min(Math.max(index, 1), TOTAL_FRAMES)).padStart(4, "0");
   return `/animation/frames/frame-${num}.jpg`;
@@ -65,7 +69,6 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
       const stageScroll = viewport * 0.86 - rect.top;
       const scrollRange = Math.max(stage.offsetHeight - viewport * 0.24, 1);
       const progress = Math.min(Math.max(stageScroll / scrollRange, 0), 1);
-
       const frame = Math.round(startFrame + progress * (endFrame - startFrame));
       setMobileFrame(frame);
       setMobileProgress(progress);
@@ -86,6 +89,21 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
       cancelAnimationFrame(rafId);
     };
   }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth >= 1024) return;
+
+    const around = [-2, -1, 1, 2, 3];
+    const preloadIndexes = around
+      .map((delta) => Math.min(Math.max(mobileFrame + delta, 1), TOTAL_FRAMES))
+      .filter((value, index, arr) => arr.indexOf(value) === index);
+
+    preloadIndexes.forEach((idx) => {
+      const img = new window.Image();
+      img.decoding = "async";
+      img.src = getFrameSrc(idx);
+    });
+  }, [mobileFrame]);
 
   const mobileFrameSrc = getFrameSrc(mobileFrame);
   const transition = Math.min(Math.max((mobileProgress - 0.08) / 0.76, 0), 1);
@@ -227,27 +245,16 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
   const progressBarRef = useRef<HTMLDivElement>(null);
   const endCardRef = useRef<HTMLDivElement>(null);
   const paperTextureRef = useRef<HTMLDivElement>(null);
-  const imagesRef = useRef<HTMLImageElement[]>([]);
+  const frameCacheRef = useRef<Map<number, HTMLImageElement>>(new Map());
   const currentFrameRef = useRef(0);
   const rafRef = useRef<number>(0);
-
-  const preloadImages = useCallback(() => {
-    const images: HTMLImageElement[] = [];
-    for (let i = 1; i <= TOTAL_FRAMES; i++) {
-      const img = new window.Image();
-      img.src = getFrameSrc(i);
-      images.push(img);
-    }
-    imagesRef.current = images;
-    return images;
-  }, []);
 
   const renderFrame = useCallback((index: number) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-    const img = imagesRef.current[index];
+    const img = frameCacheRef.current.get(index);
     if (!img || !img.complete) return;
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
@@ -264,10 +271,32 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
       removeDesktopListeners = undefined;
       if (window.innerWidth < 1024) return;
 
-      const images = preloadImages();
-      const first = images[START_VISIBLE_FRAME];
+      const cache = frameCacheRef.current;
+      const maxIdx = TOTAL_FRAMES - 1;
+
+      function syncHeroFrames(centerIndex: number) {
+        const lo = Math.max(0, centerIndex - HERO_FRAME_LOAD_RADIUS);
+        const hi = Math.min(maxIdx, centerIndex + HERO_FRAME_LOAD_RADIUS);
+        for (let i = lo; i <= hi; i++) {
+          if (cache.has(i)) continue;
+          const img = new window.Image();
+          img.decoding = "async";
+          img.onload = () => {
+            if (currentFrameRef.current === i) renderFrame(i);
+          };
+          img.src = getFrameSrc(i + 1);
+          cache.set(i, img);
+        }
+        for (const key of [...cache.keys()]) {
+          if (Math.abs(key - centerIndex) > HERO_FRAME_EVICT_DISTANCE) {
+            cache.delete(key);
+          }
+        }
+      }
+
+      syncHeroFrames(START_VISIBLE_FRAME);
+      const first = cache.get(START_VISIBLE_FRAME);
       if (first?.complete) renderFrame(START_VISIBLE_FRAME);
-      else if (first) first.onload = () => renderFrame(START_VISIBLE_FRAME);
 
       function onScroll() {
         rafRef.current = requestAnimationFrame(() => {
@@ -286,6 +315,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
         const frameIndex = Math.round(
           START_VISIBLE_FRAME + spinProgress * (TOTAL_FRAMES - 1 - START_VISIBLE_FRAME)
         );
+        syncHeroFrames(frameIndex);
         if (frameIndex !== currentFrameRef.current) {
           currentFrameRef.current = frameIndex;
           renderFrame(frameIndex);
@@ -397,6 +427,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
         window.removeEventListener("scroll", onScroll);
         window.removeEventListener("resize", onScroll);
         cancelAnimationFrame(rafRef.current);
+        cache.clear();
       };
     };
 
@@ -411,7 +442,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
       window.removeEventListener("resize", onViewportChange);
       removeDesktopListeners?.();
     };
-  }, [preloadImages, renderFrame]);
+  }, [renderFrame]);
 
   return (
     <>

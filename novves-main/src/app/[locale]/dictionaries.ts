@@ -1,6 +1,8 @@
 import "server-only";
 import fs from "fs";
 import path from "path";
+import { cache } from "react";
+import { hasLocale, type Locale } from "@/i18n/config";
 
 function loadJson(locale: string, file: string) {
   const filePath = path.join(
@@ -15,6 +17,7 @@ function loadJson(locale: string, file: string) {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
 
+/** Her dil yalnızca kendi klasöründeki JSON’dan — İngilizce ile otomatik birleştirme yok */
 function loadAll(locale: string) {
   return {
     common: loadJson(locale, "common"),
@@ -30,10 +33,9 @@ function loadAll(locale: string) {
   };
 }
 
-const validLocales = ["tr", "en", "ru"] as const;
-export type Locale = (typeof validLocales)[number];
+export type { Locale };
 
-export const hasLocale = (locale: string): locale is Locale =>
-  validLocales.includes(locale as Locale);
+export { hasLocale };
 
-export const getDictionary = async (locale: Locale) => loadAll(locale);
+/** Aynı istekte layout + generateMetadata çift okumasın diye önbellek */
+export const getDictionary = cache(async (locale: Locale) => loadAll(locale));

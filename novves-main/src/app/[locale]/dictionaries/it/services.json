@@ -1,0 +1,441 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "Analisi CFD | Novves",
+      "description": "Analisi CFD NOVVES (fluidodinamica computazionale) — scenari reali, dati reali, soluzioni sicure."
+    },
+    "breadcrumb": {
+      "home": "Inizio",
+      "services": "Servizi",
+      "current": "Analisi CFD"
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Analisi",
+      "titleHighlight": "CFD",
+      "subtitle": "Scenari reali, dati reali, soluzioni sicure.",
+      "stats": [
+        {
+          "value": "3D",
+          "label": "Modello di simulazione"
+        },
+        {
+          "value": "5",
+          "label": "Parametri di analisi"
+        },
+        {
+          "value": "EN 12101-3",
+          "label": "Verifica normativa"
+        }
+      ]
+    },
+    "intro": "In NOVVES non produciamo solo ventilatori: offriamo anche soluzioni di ventilazione su misura di progetto e ingegneristiche. Al centro ci sono le analisi CFD (fluidodinamica computazionale) che permettono di testare i progetti prima del cantiere.",
+    "whyCfd": {
+      "sectionLabel": "Metodologia",
+      "title": "Perché l’analisi CFD?",
+      "items": [
+        "Le prestazioni del sistema ventilatori sono simulate secondo condizioni ambientali reali.",
+        "Scenari incendio come propagazione fumo, temperatura e gas sono pre-testati.",
+        "Variabili vitali come distanza di visibilità, aumento temperatura e concentrazione CO sono analizzate.",
+        "Si verifica la conformità normativa e i tempi di evacuazione sicuri."
+      ],
+      "resultLabel": "Risultato",
+      "resultText": "Posizionamento corretto, numero ottimale di ventilatori, uso energetico ottimale e massima sicurezza."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Ambito analisi",
+      "title": "Parametri di simulazione",
+      "items": [
+        {
+          "title": "Distribuzione velocità aria",
+          "subtitle": "Analisi velocità",
+          "text": "Direzione, velocità e distribuzione del flusso nello spazio chiuso sono modellate in tre dimensioni. Obiettivo: circolazione su tutto l’ambiente con l’effetto dei jet fan."
+        },
+        {
+          "title": "Variazione temperatura",
+          "subtitle": "Distribuzione temperatura",
+          "text": "È analizzato come cambia la temperatura ambientale all’altezza utile in caso di incendio. Limiti critici e rischi per la gestione emergenza."
+        },
+        {
+          "title": "Valutazione visibilità",
+          "subtitle": "Analisi visibilità",
+          "text": "Per quanto tempo le vie di fuga restano visibili con fumo denso. Misura della riduzione di visibilità per verificare sicurezza evacuazione."
+        },
+        {
+          "title": "Dispersione monossido di carbonio",
+          "subtitle": "Concentrazione CO",
+          "text": "Accumulo nel tempo di CO da scarico in ambienti chiusi come parcheggi ed evacuazione tramite sistema ventilatori."
+        },
+        {
+          "title": "Propagazione fumo",
+          "subtitle": "Propagazione fumo",
+          "text": "Direzione e velocità di diffusione del fumo dopo incendio e come viene indirizzato dai jet fan. Formazione e movimento strato fumo simulati in dettaglio."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Proposta di valore",
+      "title": "Cosa ottieni con NOVVES",
+      "items": [
+        "Verifica conformità normativa",
+        "Decisioni ingegneristiche sul posizionamento ventilatori",
+        "Pre-analisi limiti temperatura, CO e visibilità per evacuazione",
+        "Chiarezza sulle prestazioni prima dell’installazione",
+        "Reporting tecnico di progetto e presentazione basata su dati"
+      ],
+      "quote": "Fonda il progetto non solo sull’esperienza ma anche sui dati. Costruisci sistemi di ventilazione sicuri, potenti e ottimizzati con l’ingegneria NOVVES.",
+      "ctaPrimary": "Crea richiesta progetto",
+      "ctaSecondary": "Progettazione controllo fumo"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "Messa in servizio | Novves",
+      "description": "Servizio post-vendita commissioning NOVVES — controllo installazione, prove prestazioni, ottimizzazione e formazione."
+    },
+    "breadcrumb": {
+      "home": "Inizio",
+      "services": "Servizi",
+      "current": "Messa in servizio"
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Messa in",
+      "titleHighlight": "servizio",
+      "subtitle": "Garantiamo il funzionamento a piena prestazione dopo l’installazione.",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Fasi servizio"
+        },
+        {
+          "value": "4",
+          "label": "Fasi"
+        },
+        {
+          "value": "7/24",
+          "label": "Supporto"
+        },
+        {
+          "value": "PDF",
+          "label": "Berichte"
+        }
+      ]
+    },
+    "intro": [
+      "In Novves non produciamo solo prodotti di qualità; garantiamo anche il funzionamento completo dopo l’installazione.",
+      "Il nostro commissioning post-vendita assicura l’uso più efficiente e sicuro dei nostri prodotti."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Processo",
+      "title": "Contenuto servizio",
+      "items": [
+        {
+          "step": "Controllo installazione prodotto e verifica conformità meccanica",
+          "phase": "Controllo"
+        },
+        {
+          "step": "Verifica collegamenti elettrici e messa a terra",
+          "phase": "Controllo"
+        },
+        {
+          "step": "Primo avvio ventilatore e verifica senso rotazione motore",
+          "phase": "Avvio"
+        },
+        {
+          "step": "Configurazione variatore di velocità / inverter",
+          "phase": "Avvio"
+        },
+        {
+          "step": "Prove prestazioni base: portata, pressione, temperatura",
+          "phase": "Test"
+        },
+        {
+          "step": "Ottimizzazione ventilatore secondo condizioni ambiente",
+          "phase": "Test"
+        },
+        {
+          "step": "Breve formazione su uso sistema e manutenzione base",
+          "phase": "Formazione"
+        },
+        {
+          "step": "Registrazione prove e report con modulo commissioning",
+          "phase": "Bericht"
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Vantaggi",
+      "title": "Perché è importante?",
+      "items": [
+        {
+          "title": "Attivazione garanzia",
+          "text": "Avvio periodo di garanzia"
+        },
+        {
+          "title": "Prevenzione guasti",
+          "text": "Prevenzione errori di installazione"
+        },
+        {
+          "title": "Efficienza",
+          "text": "Miglior efficienza energetica e vita utile"
+        },
+        {
+          "title": "Ottimizzazione",
+          "text": "Funzionamento ottimale in condizioni reali"
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Richiesta servizio",
+      "title": "Contattaci per il commissioning",
+      "contactForm": "Modulo contatti",
+      "weekdays": "Lun–Ven 08:30 – 18:00",
+      "emailSupport": "Supporto tecnico via email"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Progettazione controllo fumo | Novves",
+      "description": "Progettazione sistemi jet fan — flusso aria, estrazione e controllo fumo in parcheggi chiusi."
+    },
+    "breadcrumb": {
+      "home": "Inizio",
+      "services": "Servizi",
+      "current": "Controllo fumo"
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Controllo fumo",
+      "titleHighlight": "progettazione sistema",
+      "stats": [
+        {
+          "value": "EN 12101-3",
+          "label": "Conformità normativa"
+        },
+        {
+          "value": "300 °C / 2 h",
+          "label": "Resistenza al fuoco"
+        },
+        {
+          "value": "CFD",
+          "label": "Supporto simulazione"
+        }
+      ]
+    },
+    "intro": [
+      "Il sistema jet fan è una ventilazione meccanica per dirigere il flusso, evacuare gas di scarico e controllare il fumo in caso di incendio nei parcheggi chiusi.",
+      "È sviluppato adattando tecnologie da tunnel ed è preferito soprattutto in parcheggi grandi e complessi.",
+      "I jet fan muovono l’aria ad alta velocità spingendo la massa d’aria davanti a sé. Gas nocivi come la CO vengono evacuati efficacemente. In incendio i jet fan limitano la diffusione del fumo, proteggono le vie di fuga e facilitano l’intervento."
+    ],
+    "components": {
+      "sectionLabel": "Architettura sistema",
+      "title": "Componenti sistema jet fan",
+      "items": [
+        {
+          "title": "Jet fan",
+          "text": "Componente principale, montato a soffitto. Dirige l’aria verso gli estrattori. Tipi assiale e radiale; assiale mono o bidirezionale."
+        },
+        {
+          "title": "Ventilatori estrazione",
+          "text": "Scaricano in modo controllato aria inquinata o fumosa verso l’esterno."
+        },
+        {
+          "title": "Ventilatori aria fresca",
+          "text": "Pressurizzazione e aria pulita quando gli ingressi naturali sono insufficienti o mal posizionati."
+        },
+        {
+          "title": "Sensori",
+          "text": "Sensori CO, fumo e calore raccolgono dati e li trasmettono al quadro MCC secondo limiti impostati."
+        },
+        {
+          "title": "Automazione e controllo (quadro MCC)",
+          "text": "Attivazione automatica in base ai sensori; in incendio scenari predefiniti. PLC e integrazione BMS."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "Perché jet fan",
+      "title": "Vantaggi del sistema",
+      "subtitle": "Vantaggi significativi rispetto alla ventilazione a canalizzazione tradizionale, soprattutto in parcheggi e tunnel.",
+      "items": [
+        {
+          "title": "Senza canalizzazioni",
+          "text": "Il sistema dirige l’aria senza bisogno di duct, griglie o diffusori."
+        },
+        {
+          "title": "Risparmio spazio",
+          "text": "Soffitti bassi: i duct occupano spazio; i jet fan sono compatti."
+        },
+        {
+          "title": "Efficienza energetica",
+          "text": "Con sensori CO funzionano solo quando serve; velocità variabile."
+        },
+        {
+          "title": "Estrazione fumo e calore controllata",
+          "text": "Alta velocità in incendio; vie di fumo protette; intervento vigili del fuoco facilitato."
+        },
+        {
+          "title": "Manutenzione ridotta",
+          "text": "Senza duct la pulizia è più semplice; meno parti, meno guasti."
+        },
+        {
+          "title": "Posizionamento flessibile",
+          "text": "Riprogettazione futura più semplice."
+        },
+        {
+          "title": "Investimento iniziale contenuto",
+          "text": "Meno attrezzature (duct, griglie, diffusori) rispetto ai sistemi tradizionali."
+        }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Ingegneria",
+      "title": "Fattori di progetto importanti",
+      "items": [
+        "Precauzioni per efficienza operative sono controllate dalla prima fase con considerazione di tutte le condizioni.",
+        "Nei progetti jet fan si considerano rumore, direzione aria, assenza zone morte, installabilità e accessibilità vie di fuga nel posizionamento di assiali ed estrattori.",
+        "Nel design servono ricambi aria adeguati e portata considerando gas scarico, traffico pedonale e altri fattori; posizione jet fan per massima efficienza del flusso."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Per il tuo progetto",
+      "title": "Supporto progettazione controllo fumo",
+      "cfdLink": "Analisi CFD",
+      "supportButton": "Richiesta supporto tecnico"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Assistenza tecnica | Novves",
+      "description": "Assistenza tecnica NOVVES — post-vendita, risoluzione guasti, ricambi e manutenzione."
+    },
+    "breadcrumb": {
+      "home": "Inizio",
+      "services": "Servizi",
+      "current": "Assistenza tecnica"
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Assistenza",
+      "titleHighlight": "tecnica",
+      "subtitle": "Risposta rapida, soluzione affidabile.",
+      "weekdays": "Lun–Ven 08:30 – 18:00",
+      "emailSupport": "Supporto tecnico via email"
+    },
+    "intro": "Il reparto assistenza tecnica Novves è al tuo servizio per post-vendita, risoluzione guasti, ricambi e manutenzione.",
+    "serviceTypes": {
+      "sectionLabel": "Il nostro ambito",
+      "title": "Richieste di servizio",
+      "items": [
+        "Consulenza installazione e commissioning",
+        "Diagnosi guasti e intervento in cantiere",
+        "Pianificazione manutenzione e ispezioni",
+        "Richieste ricambi",
+        "Supporto uso prodotto e documentazione tecnica"
+      ]
+    },
+    "form": {
+      "sectionLabel": "Richiesta",
+      "title": "Modulo assistenza tecnica",
+      "description": "Compila il modulo per inviare la richiesta. Il team tecnico ti ricontatterà al più presto.",
+      "features": [
+        {
+          "label": "Risposta rapida",
+          "desc": "Risposta entro 24 ore"
+        },
+        {
+          "label": "Team esperto",
+          "desc": "Team tecnico certificato"
+        },
+        {
+          "label": "Intervento sul campo",
+          "desc": "Rete assistenza nazionale"
+        }
+      ],
+      "labels": {
+        "name": "Nome e cognome",
+        "company": "Azienda",
+        "phone": "Telefono",
+        "email": "E-Mail",
+        "subject": "Oggetto",
+        "message": "Messaggio"
+      },
+      "submit": "Invia",
+      "successTitle": "Richiesta ricevuta",
+      "successMessage": "Ti ricontatteremo al più presto."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "Rilievo in cantiere | Novves",
+      "description": "Servizio rilievo NOVVES — ispezione, misure e analisi per soluzioni di ventilazione su progetto."
+    },
+    "breadcrumb": {
+      "home": "Inizio",
+      "services": "Servizi",
+      "current": "Rilievo in cantiere"
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Rilievo",
+      "titleHighlight": "in cantiere",
+      "subtitle": "Primo passo per un progetto corretto: misure, analisi e valutazione esigenze sul posto."
+    },
+    "intro": "Dati accurati sono alla base di ogni progetto di ventilazione. Il rilievo NOVVES è il primo passo critico per progettare la soluzione più efficiente e conforme. I nostri ingegneri visitano l’impianto per misure, osservazioni e analisi dettagliate.",
+    "steps": {
+      "sectionLabel": "Processo",
+      "title": "Fasi del rilievo",
+      "items": [
+        {
+          "title": "Appuntamento e informazioni preliminari",
+          "desc": "Caratteristiche generali del progetto, tipo impianto, dimensioni e analisi bisogni."
+        },
+        {
+          "title": "Visita e misure",
+          "desc": "Il team esamina lo spazio, effettua misure e valuta l’infrastruttura esistente. Direzioni flusso, temperatura e stato sistema."
+        },
+        {
+          "title": "Analisi tecnica e report",
+          "desc": "Calcoli richiesta ventilazione, analisi portate e verifica normativa. Report di rilievo dettagliato."
+        },
+        {
+          "title": "Proposta e progetto",
+          "desc": "In base ai dati: proposta con sistema, selezione attrezzature e analisi costi."
+        },
+        {
+          "title": "Approvazione e avvio",
+          "desc": "Dopo approvazione: pianificazione produzione, installazione e commissioning."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Perché importante",
+      "title": "Perché serve il rilievo in cantiere?",
+      "items": [
+        {
+          "title": "Progetto accurato",
+          "desc": "Senza misure in sito errori di dimensionamento sono probabili."
+        },
+        {
+          "title": "Ottimizzazione costi",
+          "desc": "Si evita sovra/sotto-dimensionamento con dati reali."
+        },
+        {
+          "title": "Conformità normativa",
+          "desc": "Verifica sul posto delle condizioni edificio vs requisiti."
+        },
+        {
+          "title": "Integrazione",
+          "desc": "Compatibilità con impianti meccanici ed elettrici solo tramite rilievo."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Rilievo gratuito",
+      "title": "Richiedi un rilievo per il tuo progetto",
+      "subtitle": "Il nostro team ingegneristico visita l’impianto per analisi esigenze e misure.",
+      "ctaButton": "Richiedi rilievo"
+    }
+  }
+}

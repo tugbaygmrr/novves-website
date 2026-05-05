@@ -1,0 +1,441 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "Analiza CFD | Nowiny",
+      "description": "Analizy NOVVES CFD (Computational Fluid Dynamics) — realne scenariusze, realne dane, bezpieczne rozwiązania."
+    },
+    "breadcrumb": {
+      "home": "Dom",
+      "services": "Usługi",
+      "current": "Analiza CFD"
+    },
+    "hero": {
+      "badge": "Usługi",
+      "titlePart1": "CFD",
+      "titleHighlight": "Analiza",
+      "subtitle": "Prawdziwe scenariusze, prawdziwe dane, bezpieczne rozwiązania.",
+      "stats": [
+        {
+          "value": "3D",
+          "label": "Model symulacyjny"
+        },
+        {
+          "value": "5",
+          "label": "Parametry analizy"
+        },
+        {
+          "value": "EN 12101-3",
+          "label": "Weryfikacja standardowa"
+        }
+      ]
+    },
+    "intro": "W NOVVES nie tylko produkujemy wentylatory — dostarczamy również dostosowane do konkretnego projektu, oparte na inżynierii rozwiązania wentylacyjne. U podstaw tych rozwiązań leżą analizy CFD (Computational Fluid Dynamics), które pozwalają nam testować nasze projekty przed wdrożeniem ich na miejscu.",
+    "whyCfd": {
+      "sectionLabel": "Metodologia",
+      "title": "Dlaczego analiza CFD?",
+      "items": [
+        "Wydajność systemu wentylatorów jest symulowana zgodnie z rzeczywistymi warunkami środowiskowymi.",
+        "Scenariusze pożarowe, takie jak dym, temperatura i rozprzestrzenianie się gazu, są wstępnie testowane.",
+        "Analizowane są istotne zmienne, takie jak odległość widoczności, wzrost temperatury i stężenie CO.",
+        "Sprawdzana jest zgodność z przepisami i bezpieczne czasy ewakuacji."
+      ],
+      "resultLabel": "Wynik",
+      "resultText": "Zapewnione jest prawidłowe rozmieszczenie, prawidłowa liczba wentylatorów, optymalne zużycie energii i maksymalne bezpieczeństwo."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Zakres analizy",
+      "title": "Parametry symulacji",
+      "items": [
+        {
+          "title": "Rozkład prędkości powietrza",
+          "subtitle": "Analiza prędkości",
+          "text": "Kierunek, prędkość i rozkład przepływu powietrza w zamkniętej przestrzeni zamodelowano w trzech wymiarach. Celem jest zapewnienie cyrkulacji powietrza w całym pomieszczeniu za pomocą wentylatorów strumieniowych."
+        },
+        {
+          "title": "Zmiana temperatury",
+          "subtitle": "Rozkład temperatury",
+          "text": "Przeanalizowano, jak zmienia się temperatura otoczenia na wysokości człowieka podczas pożaru. Oceniono krytyczne wartości graniczne temperatury i zidentyfikowano ryzyko w zakresie zarządzania kryzysowego."
+        },
+        {
+          "title": "Ocena widoczności",
+          "subtitle": "Analiza widoczności",
+          "text": "Przeanalizowano, jak długo drogi ewakuacyjne pozostają widoczne w przypadku silnego dymu. W celu sprawdzenia bezpieczeństwa ewakuacji zmierzono stopień zmniejszenia widoczności."
+        },
+        {
+          "title": "Dyspersja tlenku węgla",
+          "subtitle": "Stężenie CO",
+          "text": "Opracowano model, w jaki sposób CO w spalinach gromadzi się w czasie w zamkniętych środowiskach, takich jak garaże, oraz w jaki sposób jest on usuwany przez system wentylatorów."
+        },
+        {
+          "title": "Rozprzestrzenianie się dymu",
+          "subtitle": "Rozprzestrzenianie się dymu",
+          "text": "Przeanalizowano kierunek i prędkość rozprzestrzeniania się dymu po pożarze oraz sposób jego kierowania za pomocą wentylatorów strumieniowych. Szczegółowo symulowano powstawanie i ruch warstwy dymu."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Propozycja wartości",
+      "title": "Co zyskujesz dzięki NOVVES",
+      "items": [
+        "Weryfikacja zgodności z przepisami",
+        "Decyzje inżynieryjne dotyczące rozmieszczenia wentylatorów",
+        "Wstępna analiza wartości granicznych temperatury, CO i widoczności pod kątem bezpieczeństwa ewakuacji",
+        "Wyraźna widoczność wydajności systemu przed instalacją",
+        "Raportowanie techniczne oparte na projektach i prezentacja oparta na danych"
+      ],
+      "quote": "Oprzyj swój projekt nie tylko na doświadczeniu, ale także na danych. Buduj bezpieczne, wydajne i zoptymalizowane systemy wentylacyjne dzięki inżynierii NOVVES.",
+      "ctaPrimary": "Utwórz żądanie projektu",
+      "ctaSecondary": "Projekt kontroli dymu"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "Uruchomienie | Nowiny",
+      "description": "Usługa uruchomienia posprzedażowego NOVVES — kontrola instalacji, testy wydajności, optymalizacja i szkolenia."
+    },
+    "breadcrumb": {
+      "home": "Dom",
+      "services": "Usługi",
+      "current": "Uruchomienie"
+    },
+    "hero": {
+      "badge": "Usługi",
+      "titlePart1": "Zamawiać",
+      "titleHighlight": "ing",
+      "subtitle": "Gwarantujemy pełną wydajność działania systemu po zamontowaniu.",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Kroki serwisowe"
+        },
+        {
+          "value": "4",
+          "label": "Fazy"
+        },
+        {
+          "value": "7/24",
+          "label": "Wsparcie"
+        },
+        {
+          "value": "PDF",
+          "label": "Raportowanie"
+        }
+      ]
+    },
+    "intro": [
+      "W Novves nie tylko produkujemy produkty wysokiej jakości; gwarantujemy również pełną wydajność działania systemu po instalacji.",
+      "Świadczymy usługę uruchomienia posprzedażowego, aby zapewnić naszym klientom korzystanie z naszych produktów w najbardziej efektywny i bezpieczny sposób."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Proces",
+      "title": "Treść usługi",
+      "items": [
+        {
+          "step": "Kontrola instalacji produktu i kontrola zgodności mechanicznej",
+          "phase": "Kontrola"
+        },
+        {
+          "step": "Kontrola połączeń elektrycznych i zgodności uziemienia",
+          "phase": "Kontrola"
+        },
+        {
+          "step": "Wstępne uruchomienie wentylatora i weryfikacja kierunku silnika",
+          "phase": "Uruchomienie"
+        },
+        {
+          "step": "Konfiguracja ustawień urządzenia sterującego prędkością / przetwornicy częstotliwości",
+          "phase": "Uruchomienie"
+        },
+        {
+          "step": "Wykonywanie podstawowych testów wydajnościowych takich jak natężenie przepływu, ciśnienie, temperatura",
+          "phase": "Test"
+        },
+        {
+          "step": "Optymalizacja wentylatora w zależności od warunków otoczenia",
+          "phase": "Test"
+        },
+        {
+          "step": "Krótkie szkolenie z obsługi systemu i podstawowe informacje dotyczące konserwacji dla użytkownika",
+          "phase": "Szkolenie"
+        },
+        {
+          "step": "Rejestrowanie wszystkich testów i procedur oraz raportowanie wraz z formularzem uruchomienia",
+          "phase": "Raportowanie"
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Zalety",
+      "title": "Dlaczego jest to ważne?",
+      "items": [
+        {
+          "title": "Aktywacja gwarancji",
+          "text": "Aktywacja okresu gwarancyjnego"
+        },
+        {
+          "title": "Zapobieganie błędom",
+          "text": "Zapobieganie błędom, które mogą wynikać z błędów montażowych"
+        },
+        {
+          "title": "Efektywność",
+          "text": "Poprawa efektywności energetycznej i żywotności urządzeń"
+        },
+        {
+          "title": "Optymalizacja",
+          "text": "Obsługa wentylatora w najbardziej odpowiedni sposób, w zależności od warunków otoczenia"
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Zapytanie serwisowe",
+      "title": "Skontaktuj się z nami w sprawie usługi uruchomienia",
+      "contactForm": "Formularz kontaktowy",
+      "weekdays": "W dni powszednie 08:30 – 18:00",
+      "emailSupport": "Wsparcie techniczne za pośrednictwem poczty elektronicznej"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Projekt systemu kontroli dymu | Nowiny",
+      "description": "Projekt systemu wentylatorów strumieniowych — przepływ powietrza, odprowadzanie spalin i kontrola dymu w zamkniętych garażach."
+    },
+    "breadcrumb": {
+      "home": "Dom",
+      "services": "Usługi",
+      "current": "Kontrola dymu"
+    },
+    "hero": {
+      "badge": "Usługi",
+      "titlePart1": "Kontrola dymu",
+      "titleHighlight": "Projekt systemu",
+      "stats": [
+        {
+          "value": "EN 12101-3",
+          "label": "Zgodność ze standardami"
+        },
+        {
+          "value": "300°C / 2h",
+          "label": "Odporność na ogień"
+        },
+        {
+          "value": "CFD",
+          "label": "Obsługiwana symulacja"
+        }
+      ]
+    },
+    "intro": [
+      "System wentylatorów strumieniowych to system wentylacji mechanicznej służący do kierowania strumieniem powietrza, odprowadzania spalin i kontroli dymu w przypadku pożaru w zamkniętych garażach.",
+      "System ten został opracowany poprzez adaptację technologii wentylacji tuneli i jest szczególnie preferowany w dużych i skomplikowanych konstrukcjach parkingowych.",
+      "Wentylatory strumieniowe wytwarzają ruch powietrza na dużym obszarze, nadmuchując powietrze z dużą prędkością, popychając i ciągnąc masę powietrza przed sobą. W ten sposób szkodliwe gazy, takie jak tlenek węgla (CO), z pojazdów są skutecznie usuwane. Podczas pożaru wentylatory strumieniowe zapobiegają rozprzestrzenianiu się dymu, zapewniając bezpieczeństwo dróg ewakuacyjnych i ułatwiając interwencję strażaków."
+    ],
+    "components": {
+      "sectionLabel": "Architektura systemu",
+      "title": "Elementy systemu wentylatora strumieniowego",
+      "items": [
+        {
+          "title": "Fani Jeta",
+          "text": "Główny element systemu. Montowany na suficie. Tworzy przepływ powietrza, który kieruje zanieczyszczone powietrze do wentylatorów wyciągowych. Dostępne są dwa typy: osiowe i promieniowe. Typ osiowy może działać w jednym lub dwóch kierunkach."
+        },
+        {
+          "title": "Wentylatory wyciągowe",
+          "text": "Wydmuchuje w kontrolowany sposób zanieczyszczone lub zadymione powietrze kierowane przez wentylatory strumieniowe na zewnątrz."
+        },
+        {
+          "title": "Wentylatory świeżego powietrza",
+          "text": "Służy do zwiększania ciśnienia w celu zapewnienia czystego powietrza w miejsce zanieczyszczonego powietrza i zapobiegania przedostawaniu się dymu do dróg ewakuacyjnych, gdy naturalne otwory są niewystarczające lub nieodpowiednio rozmieszczone."
+        },
+        {
+          "title": "Czujniki",
+          "text": "Czujniki CO, dymu i ciepła zbierają dane ze swojej strefy i przesyłają je do panelu MCC zgodnie z ustawionymi limitami."
+        },
+        {
+          "title": "System Automatyki i Sterowania (Panel MCC)",
+          "text": "System umożliwiający automatyczne załączanie wentylatorów na podstawie danych z czujników. Podczas pożaru zapewnia działanie systemu zgodnie z wcześniej ustalonymi scenariuszami. Sterowanie PLC i możliwość integracji z BMS (system zarządzania budynkiem)."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "Dlaczego Jet Fan?",
+      "title": "Zalety systemu",
+      "subtitle": "Systemy wentylatorów strumieniowych oferują znaczną przewagę nad tradycyjnymi systemami wentylacji kanałowej, zwłaszcza w zamkniętych garażach i systemach tunelowych.",
+      "items": [
+        {
+          "title": "Brak wymagań dotyczących kanałów",
+          "text": "Systemy wentylatorów strumieniowych działają poprzez kierowanie powietrza, więc nie ma potrzeby stosowania kanałów powietrznych, kratek ani nawiewników."
+        },
+        {
+          "title": "Oszczędność miejsca",
+          "text": "W garażach o niskim suficie systemy kanałów mogą powodować problemy, ponieważ zajmują miejsce. Wentylatory strumieniowe zajmują mniej miejsca dzięki swoim kompaktowym wymiarom."
+        },
+        {
+          "title": "Efektywność energetyczna",
+          "text": "Współpracując z czujnikami CO, działają tylko wtedy, gdy jest to potrzebne, zmniejszając zużycie energii. Wentylatory mogą pracować ze zmienną prędkością, zapewniając optymalne zużycie energii."
+        },
+        {
+          "title": "Odprowadzanie dymu i ciepła jest pod kontrolą",
+          "text": "Działając z dużą prędkością podczas pożaru, kontroluje rozprzestrzenianie się dymu. Zapobiega zadymieniu dróg ewakuacyjnych, zapewniając bezpieczeństwo życia. Ułatwia to interwencję strażaków."
+        },
+        {
+          "title": "Niskie koszty utrzymania",
+          "text": "Bez systemu kanałów czyszczenie i konserwacja są łatwiejsze. Mniejsza liczba części zmniejsza również ryzyko awarii."
+        },
+        {
+          "title": "Łatwe ustawienie zgodnie z architekturą",
+          "text": "Przeprojektowanie systemu pod kątem przyszłych zmian jest prostsze."
+        },
+        {
+          "title": "Niski początkowy koszt inwestycji",
+          "text": "Ponieważ wykorzystuje się mniej sprzętu (kanały, kratki, nawiewniki itp.), początkowy koszt instalacji jest niższy w porównaniu z tradycyjnymi systemami."
+        }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Inżynieria",
+      "title": "Ważne czynniki projektowe",
+      "items": [
+        "Niezbędne środki ostrożności dla wydajnego działania systemu są dokładnie kontrolowane i projektowane od pierwszego etapu, a rozmieszczenie jest instalowane z uwzględnieniem wszystkich warunków.",
+        "W projektach wentylatorów strumieniowych przy rozmieszczeniu wentylatorów osiowych (oddymiania i odprowadzania ciepła/świeżego powietrza) oraz wentylatorów strumieniowych uwzględnia się ważne czynniki, takie jak poziom hałasu, wymagane planowanie kierunku nawiewu, brak „martwych stref”, do których świeże powietrze nie może dotrzeć, łatwość instalacji oraz dostępność dróg ewakuacyjnych i ewakuacyjnych podczas pożaru.",
+        "Projektując system wentylatorów strumieniowych, należy zapewnić odpowiednią szybkość wymiany powietrza i przepływ powietrza, biorąc pod uwagę gazy spalinowe pojazdów, ruch pieszych i inne czynniki. Należy ustawić właściwą pozycję wentylatorów strumieniowych, aby kierować przepływem powietrza w systemie w najbardziej efektywny sposób."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Dla Twojego projektu",
+      "title": "Uzyskaj wsparcie w zakresie projektowania systemu kontroli dymu",
+      "cfdLink": "Analiza CFD",
+      "supportButton": "Prośba o wsparcie techniczne"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Serwis Techniczny | Nowiny",
+      "description": "Serwis techniczny NOVVES — wsparcie posprzedażowe, usuwanie usterek, dostawa części zamiennych i konserwacja."
+    },
+    "breadcrumb": {
+      "home": "Dom",
+      "services": "Usługi",
+      "current": "Serwis Techniczny"
+    },
+    "hero": {
+      "badge": "Usługi",
+      "titlePart1": "Techniczny",
+      "titleHighlight": "Praca",
+      "subtitle": "Szybka reakcja, niezawodne rozwiązanie.",
+      "weekdays": "W dni powszednie 08:30 – 18:00",
+      "emailSupport": "Wsparcie techniczne za pośrednictwem poczty elektronicznej"
+    },
+    "intro": "Dział obsługi technicznej Novves jest do Twojej dyspozycji, aby zapewnić szybkie i skuteczne rozwiązania w zakresie wsparcia posprzedażowego, rozwiązywania usterek, dostaw części zamiennych i zgłoszeń konserwacyjnych.",
+    "serviceTypes": {
+      "sectionLabel": "Nasz zakres",
+      "title": "Żądania serwisowe",
+      "items": [
+        "Doradztwo w zakresie montażu i uruchomienia",
+        "Wykrywanie usterek i serwis na miejscu",
+        "Planowanie okresowych konserwacji i przeglądów",
+        "Zapytania o części zamienne",
+        "Wsparcie w zakresie użytkowania produktu i dokumentacji technicznej"
+      ]
+    },
+    "form": {
+      "sectionLabel": "Wniosek",
+      "title": "Formularz obsługi technicznej",
+      "description": "Zgłoszenie serwisowe możesz przesłać wypełniając formularz. Nasz zespół techniczny skontaktuje się z Tobą tak szybko, jak to możliwe.",
+      "features": [
+        {
+          "label": "Szybka reakcja",
+          "desc": "Odpowiedź w ciągu 24 godzin"
+        },
+        {
+          "label": "Zespół ekspertów",
+          "desc": "Certyfikowany zespół techniczny"
+        },
+        {
+          "label": "Interwencja terenowa",
+          "desc": "Ogólnopolska sieć serwisowa"
+        }
+      ],
+      "labels": {
+        "name": "Pełne imię i nazwisko",
+        "company": "Nazwa firmy",
+        "phone": "Telefon",
+        "email": "E-mail",
+        "subject": "Temat",
+        "message": "Twoja wiadomość"
+      },
+      "submit": "Składać",
+      "successTitle": "Otrzymano żądanie",
+      "successMessage": "Skontaktujemy się z Tobą tak szybko, jak to możliwe."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "Ankieta na miejscu | Nowiny",
+      "description": "Usługa badania na miejscu NOVVES – kontrola na miejscu, pomiary i analiza pod kątem rozwiązań wentylacyjnych dostosowanych do projektu."
+    },
+    "breadcrumb": {
+      "home": "Dom",
+      "services": "Usługi",
+      "current": "Ankieta na miejscu"
+    },
+    "hero": {
+      "badge": "Usługi",
+      "titlePart1": "Na miejscu",
+      "titleHighlight": "Ankieta",
+      "subtitle": "Pierwszy krok do dokładnego zaprojektowania projektu: pomiar na miejscu, analiza i ocena potrzeb."
+    },
+    "intro": "Dokładne dane stanowią podstawę każdego projektu wentylacji. Usługa ankiety na miejscu NOVVES to pierwszy i najważniejszy krok w projektowaniu najbardziej wydajnego i zgodnego z przepisami rozwiązania, polegający na sprawdzeniu potrzeb projektu na miejscu. Nasi doświadczeni inżynierowie odwiedzają Twój zakład, aby przeprowadzić szczegółowe pomiary, obserwacje i analizy.",
+    "steps": {
+      "sectionLabel": "Proces",
+      "title": "Kroki ankiety",
+      "items": [
+        {
+          "title": "Informacje o spotkaniu i wstępne",
+          "desc": "Poznajemy ogólną charakterystykę Twojego projektu. Przeprowadzamy wstępne spotkanie w celu ustalenia rodzaju obiektu, wielkości powierzchni i analizy potrzeb."
+        },
+        {
+          "title": "Wizyta na miejscu i pomiar",
+          "desc": "Nasz zespół ekspertów odwiedza plac budowy, aby zbadać przestrzeń, dokonać pomiarów i ocenić istniejącą infrastrukturę. Analizowane są kierunki przepływu powietrza, rozkład temperatury i aktualny stan systemu."
+        },
+        {
+          "title": "Analiza techniczna i raportowanie",
+          "desc": "Na podstawie zebranych danych przeprowadzane są obliczenia wymagań dotyczących wentylacji, analizy natężenia przepływu i kontrole zgodności z przepisami. Sporządzany jest szczegółowy raport z badania."
+        },
+        {
+          "title": "Propozycja rozwiązania i projekt projektu",
+          "desc": "Na podstawie danych z ankiety przedstawiana jest propozycja dotycząca konkretnego projektu, obejmująca najbardziej odpowiedni projekt systemu, dobór sprzętu i analizę kosztów."
+        },
+        {
+          "title": "Rozpoczęcie zatwierdzania i wdrażania",
+          "desc": "Po zatwierdzeniu Twojej propozycji planowane i wdrażane są procesy produkcji, montażu i uruchomienia."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Dlaczego ważne",
+      "title": "Dlaczego badanie na miejscu jest konieczne?",
+      "items": [
+        {
+          "title": "Dokładny projekt",
+          "desc": "Błędy w doborze sprzętu są nieuniknione w projektach wykonywanych bez pomiarów na miejscu."
+        },
+        {
+          "title": "Optymalizacja kosztów",
+          "desc": "Prawdziwe dane dotyczące lokalizacji uniemożliwiają wybór sprzętu o zbyt dużych lub zbyt małych rozmiarach."
+        },
+        {
+          "title": "Zgodność z przepisami",
+          "desc": "Zgodność istniejących warunków zabudowy z wymogami przepisów jest weryfikowana na miejscu."
+        },
+        {
+          "title": "Łatwość integracji",
+          "desc": "Rozwiązania kompatybilne z istniejącą infrastrukturą mechaniczną i elektryczną można określić jedynie na podstawie ankiety."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Bezpłatna ankieta",
+      "title": "Poproś o ankietę na miejscu dotyczącą Twojego projektu",
+      "subtitle": "Nasz zespół inżynierów odwiedza Twój obiekt w celu przeprowadzenia analizy potrzeb i pomiarów.",
+      "ctaButton": "Poproś o ankietę"
+    }
+  }
+}

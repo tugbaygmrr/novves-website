@@ -3,6 +3,7 @@
 import { useState, useEffect, useLayoutEffect } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import {
   COOKIE_CONSENT_EVENT,
   COOKIE_CONSENT_LEGACY_STORAGE_KEY,
@@ -11,107 +12,16 @@ import {
   COOKIE_CONSENT_VISIBILITY_EVENT,
   COOKIE_DIALOG_HTML_ATTR,
   readCookieConsentRaw,
+  syncConsentRestrictedCookieFromStorage,
 } from "@/lib/cookie-consent-storage";
+import { cookieConsentByLocale } from "@/i18n/cookie-consent";
+import { defaultLocale, hasLocale, type Locale } from "@/i18n/config";
 
 type Consent = {
   essential: true;
   analytics: boolean;
   marketing: boolean;
   timestamp: string;
-};
-
-type Copy = {
-  title: string;
-  desc: string;
-  learnMore: string;
-  acceptAll: string;
-  rejectAll: string;
-  customize: string;
-  savePrefs: string;
-  back: string;
-  categories: {
-    essential: { title: string; desc: string; tag: string };
-    analytics: { title: string; desc: string };
-    marketing: { title: string; desc: string };
-  };
-};
-
-const copy: Record<string, Copy> = {
-  tr: {
-    title: "Çerez Tercihlerinizi Yönetin",
-    desc: "Deneyiminizi iyileştirmek, site trafiğini analiz etmek ve içerikleri kişiselleştirmek için çerezler kullanıyoruz. 'Tümünü Kabul Et' diyerek tüm çerezlere izin verebilir veya tercihlerinizi özelleştirebilirsiniz.",
-    learnMore: "Gizlilik politikası",
-    acceptAll: "Tümünü Kabul Et",
-    rejectAll: "Tümünü Reddet",
-    customize: "Özelleştir",
-    savePrefs: "Tercihlerimi Kaydet",
-    back: "Geri",
-    categories: {
-      essential: {
-        title: "Zorunlu Çerezler",
-        desc: "Sitenin temel işlevleri için gereklidir. Devre dışı bırakılamaz.",
-        tag: "Zorunlu",
-      },
-      analytics: {
-        title: "Analitik Çerezler",
-        desc: "Ziyaretçi sayısı, trafik kaynağı ve site kullanımı hakkında anonim veri toplar.",
-      },
-      marketing: {
-        title: "Pazarlama Çerezleri",
-        desc: "İlgi alanlarınıza göre içerik ve reklam göstermek için kullanılır.",
-      },
-    },
-  },
-  en: {
-    title: "Manage Your Cookie Preferences",
-    desc: "We use cookies to improve your experience, analyze site traffic, and personalize content. Click 'Accept All' to allow all cookies or customize your preferences.",
-    learnMore: "Privacy policy",
-    acceptAll: "Accept All",
-    rejectAll: "Reject All",
-    customize: "Customize",
-    savePrefs: "Save Preferences",
-    back: "Back",
-    categories: {
-      essential: {
-        title: "Essential Cookies",
-        desc: "Required for the basic functionality of the site. Cannot be disabled.",
-        tag: "Required",
-      },
-      analytics: {
-        title: "Analytics Cookies",
-        desc: "Collect anonymous data about visitor counts, traffic sources, and site usage.",
-      },
-      marketing: {
-        title: "Marketing Cookies",
-        desc: "Used to show content and advertisements based on your interests.",
-      },
-    },
-  },
-  ru: {
-    title: "Управление настройками cookie",
-    desc: "Мы используем файлы cookie для улучшения работы сайта, анализа трафика и персонализации контента. Нажмите «Принять все», чтобы разрешить все файлы cookie, или настройте предпочтения вручную.",
-    learnMore: "Политика конфиденциальности",
-    acceptAll: "Принять все",
-    rejectAll: "Отклонить все",
-    customize: "Настроить",
-    savePrefs: "Сохранить настройки",
-    back: "Назад",
-    categories: {
-      essential: {
-        title: "Обязательные cookie",
-        desc: "Необходимы для базовой работы сайта. Нельзя отключить.",
-        tag: "Обязательно",
-      },
-      analytics: {
-        title: "Аналитические cookie",
-        desc: "Собирают анонимные данные о посещаемости, источниках трафика и использовании сайта.",
-      },
-      marketing: {
-        title: "Маркетинговые cookie",
-        desc: "Используются для показа контента и рекламы на основе ваших интересов.",
-      },
-    },
-  },
 };
 
 function shouldShowBanner(): boolean {
@@ -123,12 +33,21 @@ function shouldShowBanner(): boolean {
 }
 
 export function CookieConsent({ locale = "tr" }: { locale?: string }) {
+  const params = useParams();
+  const localeFromUrl = params?.locale;
+  const resolvedLocale =
+    typeof localeFromUrl === "string" ? localeFromUrl : locale;
+
   const [visible, setVisible] = useState(shouldShowBanner);
   const [expanded, setExpanded] = useState(shouldShowBanner);
   const [analytics, setAnalytics] = useState(true);
   const [marketing, setMarketing] = useState(false);
 
-  const t = copy[locale] ?? copy.tr;
+  const loc: Locale =
+    typeof resolvedLocale === "string" && hasLocale(resolvedLocale)
+      ? resolvedLocale
+      : defaultLocale;
+  const t = cookieConsentByLocale[loc];
 
   useEffect(() => {
     if (!visible) return;
@@ -181,6 +100,7 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
       localStorage.setItem(COOKIE_CONSENT_STORAGE_KEY, JSON.stringify(payload));
       localStorage.removeItem(COOKIE_CONSENT_LEGACY_STORAGE_KEY);
     } catch {}
+    syncConsentRestrictedCookieFromStorage();
     if (typeof window !== "undefined") {
       window.dispatchEvent(new CustomEvent(COOKIE_CONSENT_EVENT, { detail: payload }));
     }
@@ -229,11 +149,12 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
             {/* Header */}
             <div className="flex items-center gap-3">
               <span className="font-mono-eng text-[10px] uppercase tracking-[0.28em] text-primary">
-                ● Cookie
+                {t.badgePrefix}
+                {t.badgeWord}
               </span>
               <span className="h-px flex-1 bg-ink/10" />
               <span className="font-mono-eng text-[9px] uppercase tracking-[0.22em] text-ink/40">
-                GDPR / KVKK
+                {t.complianceBadges}
               </span>
             </div>
 
@@ -248,7 +169,7 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
             <p className="mt-3 text-[13px] leading-[1.65] text-ink/70">
               {t.desc}{" "}
               <Link
-                href={`/${locale}/kvkk/kisisel-verilerin-korunmasi`}
+                href={`/${loc}/kvkk/kisisel-verilerin-korunmasi`}
                 className="font-medium text-primary underline underline-offset-2 transition-opacity hover:opacity-80"
               >
                 {t.learnMore}

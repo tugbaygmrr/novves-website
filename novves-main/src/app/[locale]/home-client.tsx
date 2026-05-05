@@ -3,8 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { CarouselStripLabel, SectionStripLabel } from "@/components/carousel-strip-label";
 import { ScrollVideoSection } from "@/components/scroll-video-section";
-import { COOKIE_CONSENT_EVENT, readCookieConsentRaw } from "@/lib/cookie-consent-storage";
+import {
+  COOKIE_CONSENT_EVENT,
+  isConsentRestrictedMinimal,
+  parseStoredConsentJson,
+  readCookieConsentRaw,
+} from "@/lib/cookie-consent-storage";
 
 type HomeDict = {
   hero: {
@@ -86,7 +92,137 @@ type HomeDict = {
     desc: string;
     requestQuote: string;
   };
+  /** Yerelleştirilmiş ana sayfa etiketleri — tüm dillerde home.json içinde olmalı */
+  pageChrome?: Record<string, string>;
+  solutionCarouselByHref?: Record<string, { title: string; description: string }>;
+  productCategoryBlurbs?: string[];
+  catalogPreview?: { title: string; href: string; image: string }[];
+  referencePreview?: { title: string; href: string; image: string }[];
+  certificatePreview?: { title: string; href: string; image: string }[];
+  companyProfileCards?: { title: string; href: string; image: string }[];
 };
+
+/** Navbar + paylaşılan metinler (ana sayfa dikey şeritler için) */
+type HomeCommonNav = {
+  navbar: {
+    solutions: string;
+    products: string;
+    corporate: string;
+    viewAll: string;
+    links: {
+      documentLibrary: string;
+      references: string;
+      certificates: string;
+    };
+  };
+};
+
+/** Eksik alanlar boş — başka dilden metin doldurulmaz; metinler ilgili locale home.json içinde olmalı */
+const EMPTY_COMMON_NAV: HomeCommonNav = {
+  navbar: {
+    solutions: "",
+    products: "",
+    corporate: "",
+    viewAll: "",
+    links: {
+      documentLibrary: "",
+      references: "",
+      certificates: "",
+    },
+  },
+};
+
+function mergeHomeCommon(raw?: HomeCommonNav | null): HomeCommonNav {
+  if (!raw?.navbar) return EMPTY_COMMON_NAV;
+  const nb = raw.navbar;
+  const lk = nb.links ?? {
+    documentLibrary: "",
+    references: "",
+    certificates: "",
+  };
+  return {
+    navbar: {
+      solutions: nb.solutions ?? "",
+      products: nb.products ?? "",
+      corporate: nb.corporate ?? "",
+      viewAll: nb.viewAll ?? "",
+      links: {
+        documentLibrary: lk.documentLibrary ?? "",
+        references: lk.references ?? "",
+        certificates: lk.certificates ?? "",
+      },
+    },
+  };
+}
+
+/** Ana sayfa chrome — yalnızca seçilen dilin home.json → pageChrome */
+type PageChrome = {
+  catalogsVertical: string;
+  previousSolutions: string;
+  nextSolutions: string;
+  previousProducts: string;
+  nextProducts: string;
+  defaultSolutionDesc: string;
+  productFallbackDesc: string;
+  catalogKindLabel: string;
+  catalogCardDesc: string;
+  referenceEyebrow: string;
+  referenceCardDesc: string;
+  certificateEyebrow: string;
+  certificateCardDesc: string;
+  companyEyebrow: string;
+  companyCardDesc: string;
+  companyProfileVertical: string;
+  pillarExpandAria: string;
+  pillarCollapseAria: string;
+  pillarCta: string;
+  productCardCta: string;
+  solutionCardCta: string;
+  midCtaBullet1: string;
+  midCtaBullet2: string;
+  midCtaBullet3: string;
+  videoStatMeta: string;
+  scrollVideoSideLabel: string;
+  engineeringAlt1: string;
+  engineeringAlt2: string;
+  pillarsFallbackTitle: string;
+};
+
+function pageChromeFromDict(dict: HomeDict): PageChrome {
+  const o = dict.pageChrome ?? {};
+  const g = (k: keyof PageChrome) => String((o as Partial<Record<string, string>>)[k as string] ?? "");
+  return {
+    catalogsVertical: g("catalogsVertical"),
+    previousSolutions: g("previousSolutions"),
+    nextSolutions: g("nextSolutions"),
+    previousProducts: g("previousProducts"),
+    nextProducts: g("nextProducts"),
+    defaultSolutionDesc: g("defaultSolutionDesc"),
+    productFallbackDesc: g("productFallbackDesc"),
+    catalogKindLabel: g("catalogKindLabel"),
+    catalogCardDesc: g("catalogCardDesc"),
+    referenceEyebrow: g("referenceEyebrow"),
+    referenceCardDesc: g("referenceCardDesc"),
+    certificateEyebrow: g("certificateEyebrow"),
+    certificateCardDesc: g("certificateCardDesc"),
+    companyEyebrow: g("companyEyebrow"),
+    companyCardDesc: g("companyCardDesc"),
+    companyProfileVertical: g("companyProfileVertical"),
+    pillarExpandAria: g("pillarExpandAria"),
+    pillarCollapseAria: g("pillarCollapseAria"),
+    pillarCta: g("pillarCta"),
+    productCardCta: g("productCardCta"),
+    solutionCardCta: g("solutionCardCta"),
+    midCtaBullet1: g("midCtaBullet1"),
+    midCtaBullet2: g("midCtaBullet2"),
+    midCtaBullet3: g("midCtaBullet3"),
+    videoStatMeta: g("videoStatMeta"),
+    scrollVideoSideLabel: g("scrollVideoSideLabel"),
+    engineeringAlt1: g("engineeringAlt1"),
+    engineeringAlt2: g("engineeringAlt2"),
+    pillarsFallbackTitle: g("pillarsFallbackTitle"),
+  };
+}
 
 const pillarImages = [
   "/images/products/dragonfly-c.png",
@@ -116,127 +252,22 @@ const productCategoryMeta = [
   { href: "/urunler/titresim-ve-ses-izolasyon", image: "/images/products/yayli-titresim-izolatoru.png" },
 ];
 
-const solutionCategoryMeta = [
-  {
-    href: "/cozumler/duman-isi-tahliye-sistemleri",
-    image: "/images/products/dragonfly-c.png",
-    tr: "Duman & Isı Tahliye Sistemleri",
-    en: "Smoke & Heat Extraction Systems",
-    ru: "Системы дымоудаления и теплоотвода",
-  },
-  {
-    href: "/cozumler/konfor-iklimlendirme-sistemleri",
-    image: "/images/products/tiger-main.jpg",
-    tr: "Konfor İklimlendirme Sistemleri",
-    en: "Comfort HVAC Systems",
-    ru: "Системы комфортного кондиционирования",
-  },
-  {
-    href: "/cozumler/hijyenik-filtrasyonlu-havalandirma",
-    image: "/images/products/koi-cb.jpg",
-    tr: "Hijyenik Filtrasyonlu Havalandırma",
-    en: "Hygienic Filtration Ventilation",
-    ru: "Гигиеническая фильтрационная вентиляция",
-  },
-  {
-    href: "/cozumler/endustriyel-hava-yonetimi",
-    image: "/images/products/nautilus-cif-cidarli.jpg",
-    tr: "Endüstriyel Hava Yönetimi",
-    en: "Industrial Air Management",
-    ru: "Промышленное управление воздухом",
-  },
-  {
-    href: "/cozumler/atex-patlama-koruma-cozumleri",
-    image: "/images/products/bear-bp.jpg",
-    tr: "ATEX Patlama Koruma Çözümleri",
-    en: "ATEX Explosion Protection",
-    ru: "Взрывозащита ATEX",
-  },
-  {
-    href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri",
-    image: "/images/products/owl-cer.jpg",
-    tr: "Hayvancılık Tesisleri Havalandırma",
-    en: "Livestock Facility Ventilation",
-    ru: "Вентиляция животноводческих объектов",
-  },
-  {
-    href: "/cozumler/trafo-enerji-odalari-fanlari",
-    image: "/images/products/heron-ah.jpg",
-    tr: "Trafo & Enerji Odaları Fanları",
-    en: "Transformer & Energy Room Fans",
-    ru: "Вентиляторы для трансформаторных помещений",
-  },
-  {
-    href: "/cozumler/sera-tarimsal-havalandirma-sistemleri",
-    image: "/images/products/marlin.png",
-    tr: "Sera & Tarımsal Havalandırma",
-    en: "Greenhouse & Agricultural Ventilation",
-    ru: "Тепличная и сельскохозяйственная вентиляция",
-  },
-  {
-    href: "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri",
-    image: "/images/products/turtle-a.jpg",
-    tr: "Akıllı Otomasyon ve Kontrol",
-    en: "Smart Automation and Control",
-    ru: "Интеллектуальная автоматика и управление",
-  },
-  {
-    href: "/cozumler/konut-tipi-havalandirma-sistemleri",
-    image: "/images/products/banyo-fan-1.jpg",
-    tr: "Konut Tipi Havalandırma",
-    en: "Residential Ventilation",
-    ru: "Вентиляция жилых помещений",
-  },
-  {
-    href: "/cozumler/marin-offshore-havalandirma-sistemleri",
-    image: "/images/products/koi-cb.jpg",
-    tr: "Marin & Offshore Havalandırma",
-    en: "Marine & Offshore Ventilation",
-    ru: "Морская и оффшорная вентиляция",
-  },
-  {
-    href: "/cozumler/proje-bazli-ozel-imalatlar",
-    image: "/images/products/bear-bp.jpg",
-    tr: "Proje Bazlı Özel İmalatlar",
-    en: "Project-Based Custom Manufacturing",
-    ru: "Проектное индивидуальное производство",
-  },
-  {
-    href: "/cozumler/cfd-muhendislik-danismanligi",
-    image: "/images/products/hummingbird-drb-ec.jpg",
-    tr: "CFD Mühendislik Danışmanlığı",
-    en: "CFD Engineering Consultancy",
-    ru: "Инженерный CFD-консалтинг",
-  },
+/** Çözüm carousel — metinler locale home.json içindeki solutionCarouselByHref */
+const solutionCategorySlides = [
+  { href: "/cozumler/duman-isi-tahliye-sistemleri", image: "/images/products/dragonfly-c.png" },
+  { href: "/cozumler/konfor-iklimlendirme-sistemleri", image: "/images/products/tiger-main.jpg" },
+  { href: "/cozumler/hijyenik-filtrasyonlu-havalandirma", image: "/images/products/koi-cb.jpg" },
+  { href: "/cozumler/endustriyel-hava-yonetimi", image: "/images/products/nautilus-cif-cidarli.jpg" },
+  { href: "/cozumler/atex-patlama-koruma-cozumleri", image: "/images/products/bear-bp.jpg" },
+  { href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri", image: "/images/products/owl-cer.jpg" },
+  { href: "/cozumler/trafo-enerji-odalari-fanlari", image: "/images/products/heron-ah.jpg" },
+  { href: "/cozumler/sera-tarimsal-havalandirma-sistemleri", image: "/images/products/marlin.png" },
+  { href: "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri", image: "/images/products/turtle-a.jpg" },
+  { href: "/cozumler/konut-tipi-havalandirma-sistemleri", image: "/images/products/banyo-fan-1.jpg" },
+  { href: "/cozumler/marin-offshore-havalandirma-sistemleri", image: "/images/products/koi-cb.jpg" },
+  { href: "/cozumler/proje-bazli-ozel-imalatlar", image: "/images/products/bear-bp.jpg" },
+  { href: "/cozumler/cfd-muhendislik-danismanligi", image: "/images/products/hummingbird-drb-ec.jpg" },
 ];
-
-const solutionCategoryDescriptions: Record<string, { tr: string; en: string; ru: string }> = {
-  "/cozumler/duman-isi-tahliye-sistemleri": {
-    tr: "Yangın için güvenli duman ve ısı tahliyesi.",
-    en: "Safe smoke and heat extraction for fire scenarios.",
-    ru: "Безопасное дымо- и теплоудаление при пожаре.",
-  },
-  "/cozumler/konfor-iklimlendirme-sistemleri": {
-    tr: "Konfor ve verim için iklimlendirme çözümleri.",
-    en: "HVAC solutions for comfort and efficiency.",
-    ru: "Климатические решения для комфорта и эффективности.",
-  },
-  "/cozumler/hijyenik-filtrasyonlu-havalandirma": {
-    tr: "Kritik alanlar için hijyenik filtrasyon.",
-    en: "Hygienic filtration for critical spaces.",
-    ru: "Гигиеническая фильтрация для критических зон.",
-  },
-  "/cozumler/endustriyel-hava-yonetimi": {
-    tr: "Endüstriyel alanlarda güçlü hava yönetimi.",
-    en: "Robust air management for industrial facilities.",
-    ru: "Надёжное управление воздухом для промышленности.",
-  },
-  "/cozumler/atex-patlama-koruma-cozumleri": {
-    tr: "ATEX uyumlu güvenli havalandırma çözümleri.",
-    en: "ATEX-compliant safe ventilation solutions.",
-    ru: "Безопасные вентиляционные решения с соответствием ATEX.",
-  },
-};
 
 const productFallbackImages = [
   "/images/products/dragonfly-c.png",
@@ -248,68 +279,15 @@ const productFallbackImages = [
   "/images/products/ae-fjf.png",
 ];
 
-const productCategoryDescriptions: Record<string, string> = {
-  "Hava Hareketi": "Güvenilir fanlarla etkili hava sirkulasyonu.",
-  İklimlendirme: "Konfor odaklı dengeli iklim kontrolü.",
-  "Soğutma ve Isıtma": "Enerji verimli mevsimsel iklimlendirme.",
-  "Hava Yönetimi": "Debiyi doğru yönetir, verimi artırır.",
-  "Hava Dağıtımı": "Alan içinde dengeli ve homojen dağılım.",
-  "Hava Filtrasyonu": "Daha temiz hava için etkili filtrasyon.",
-  Aksesuarlar: "Kurulumu tamamlayan yardımcı ekipmanlar.",
-  "Otomasyon Malzemeleri": "Akıllı ve pratik kontrol çözümleri.",
-  "Titreşim ve Ses İzolasyon": "Daha sessiz ve stabil çalışma.",
-};
-
-const catalogItems = [
-  { title: "Ürün Kataloğu", href: "/teknik-merkez/dokuman-kutuphanesi", image: "/images/catalogs/katalog-mockup-kapak-website-icin.png" },
-  { title: "Teknik Föyler", href: "/teknik-merkez/dokuman-kutuphanesi", image: "/images/catalogs/dumantahliye-mockup.png" },
-  { title: "Datasheet Arşivi", href: "/teknik-merkez/dokuman-kutuphanesi", image: "/images/catalogs/sirketprofili-mockup.png" },
-] as const;
-
-const referenceItems = [
-  { title: "2M Lojistik Gebze Depo", href: "/kurumsal/referanslar", image: "/images/references/2m.jpg" },
-  { title: "3S Kale Topaz Zeytinburnu", href: "/kurumsal/referanslar", image: "/images/references/3skale.jpg" },
-  { title: "Adana Yüreğir 100 Yataklı Hastane", href: "/kurumsal/referanslar", image: "/images/references/adana-yuregir.jpg" },
-] as const;
-
-const certificateItems = [
-  { title: "EN Sertifikaları", href: "/kurumsal/sertifikalar", image: "/images/certificates/kalite-uygunluk-mockup.png" },
-  { title: "ISO Belgeleri", href: "/kurumsal/sertifikalar", image: "/images/certificates/iso-sertifika-mockup.png" },
-  { title: "Kalite ve Uygunluk", href: "/kurumsal/sertifikalar", image: "/images/certificates/kalite-uygunluk-mockup.png" },
-] as const;
-
-const companyProfileItems = [
-  {
-    href: "/kurumsal/biz-kimiz",
-    image: "/images/biz-kimiz-sag.png",
-    tr: "Biz Kimiz",
-    en: "Who We Are",
-    ru: "О компании",
-  },
-  {
-    href: "/kurumsal/ceo-mesaji",
-    image: "/images/page-hero/ceo.jpg",
-    tr: "CEO Mesajı",
-    en: "CEO Message",
-    ru: "Послание CEO",
-  },
-  {
-    href: "/kurumsal/ekibimiz",
-    image: "/images/page-hero/ekibimiz.jpg",
-    tr: "Ekibimiz",
-    en: "Our Team",
-    ru: "Команда",
-  },
-] as const;
-
 const certificateLogoBarItems = [
-  { src: "/images/certificates/EN.png", alt: "EN" },
-  { src: "/images/certificates/ISO14001.png", alt: "ISO 14001" },
-  { src: "/images/certificates/CE.png", alt: "CE" },
-  { src: "/images/certificates/ISO9001.png", alt: "ISO 9001" },
-  { src: "/images/certificates/Efectis.png", alt: "Efectis" },
-  { src: "/images/certificates/bsi.png", alt: "BSI" },
+  { src: "/images/certificates/EN.svg", alt: "EN" },
+  { src: "/images/certificates/ISO14001.svg", alt: "ISO 14001" },
+  { src: "/images/certificates/CE.svg", alt: "CE" },
+  { src: "/images/certificates/ISO9001.svg", alt: "ISO 9001" },
+  { src: "/images/certificates/Efectis.svg", alt: "Efectis" },
+  { src: "/images/certificates/BSI.svg", alt: "BSI" },
 ] as const;
+const certificateLogoMarqueeItems = [...certificateLogoBarItems, ...certificateLogoBarItems] as const;
 
 /** Ana sayfa tipografi: display ↔ mono arası lead (17–18px), gövde (15px); dikey ritim 8px tabanı */
 const homeLeadInk =
@@ -400,7 +378,24 @@ function SectionHead({
   );
 }
 
-export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: string }) {
+export default function HomeClient({
+  dict,
+  common,
+  locale,
+}: {
+  dict: HomeDict;
+  common?: HomeCommonNav | null;
+  locale: string;
+}) {
+  const n = mergeHomeCommon(common).navbar;
+  const pc = pageChromeFromDict(dict);
+  const solutionByHref = dict.solutionCarouselByHref ?? {};
+  const catalogPreview = dict.catalogPreview ?? [];
+  const referencePreview = dict.referencePreview ?? [];
+  const certificatePreview = dict.certificatePreview ?? [];
+  const companyProfileCards = dict.companyProfileCards ?? [];
+  const productBlurbs = dict.productCategoryBlurbs ?? [];
+
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [expandedPillars, setExpandedPillars] = useState<Record<number, boolean>>({});
   const [hoveredProductIndex, setHoveredProductIndex] = useState<number | null>(null);
@@ -424,20 +419,21 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
         return;
       }
 
+      const parsed = parseStoredConsentJson(raw);
+      if (!parsed) {
+        setAllowRestrictedSections(null);
+        return;
+      }
+      setAllowRestrictedSections(!isConsentRestrictedMinimal(parsed));
+    };
+
+    queueMicrotask(() => {
       try {
-        const parsed = JSON.parse(raw) as { analytics?: boolean; marketing?: boolean };
-        const isRejected = parsed.analytics === false && parsed.marketing === false;
-        setAllowRestrictedSections(!isRejected);
+        applyConsent(readCookieConsentRaw());
       } catch {
         setAllowRestrictedSections(null);
       }
-    };
-
-    try {
-      applyConsent(readCookieConsentRaw());
-    } catch {
-      setAllowRestrictedSections(null);
-    }
+    });
 
     const onConsentUpdated = (event: Event) => {
       const custom = event as CustomEvent<{ analytics?: boolean; marketing?: boolean } | null>;
@@ -446,8 +442,11 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
         setAllowRestrictedSections(null);
         return;
       }
-      const isRejected = detail.analytics === false && detail.marketing === false;
-      setAllowRestrictedSections(!isRejected);
+      const parsed =
+        typeof detail.analytics === "boolean" && typeof detail.marketing === "boolean"
+          ? { analytics: detail.analytics, marketing: detail.marketing }
+          : null;
+      setAllowRestrictedSections(parsed ? !isConsentRestrictedMinimal(parsed) : null);
     };
 
     window.addEventListener(COOKIE_CONSENT_EVENT, onConsentUpdated as EventListener);
@@ -499,28 +498,43 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
         endCard={dict.animation2.endCard}
         locale={locale}
         productHref="/urunler/kovan-tipi-aksiyal-fanlar"
-        sideLabel="Otopark Havalandırma"
+        sideLabel={pc.scrollVideoSideLabel}
       />
       </div>
 
-      <section className="border-b border-ink/10 bg-[#e8e7e3] py-10 sm:py-12">
-        <div className="mx-auto max-w-[1600px] px-2 sm:px-10 lg:px-16">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 sm:gap-x-10 lg:flex-nowrap lg:justify-between">
-            {certificateLogoBarItems.map((cert) => (
-              <a
-                key={cert.alt}
-                href={`/${locale}/kurumsal/sertifikalar`}
-                className="flex min-w-[110px] flex-1 items-center justify-center px-2 lg:min-w-0"
-              >
-                <Image
-                  src={cert.src}
-                  alt={cert.alt}
-                  width={180}
-                  height={72}
-                  className="h-10 w-auto max-w-full object-contain grayscale brightness-[0.82] contrast-[1.08] opacity-[0.96] transition-[filter,opacity,transform] duration-300 hover:scale-[1.03] hover:opacity-100 hover:grayscale-0 hover:brightness-100 hover:contrast-100 sm:h-12"
-                />
-              </a>
-            ))}
+      <section className="border-b border-ink/10 bg-[#e8e7e3] py-8 sm:py-12">
+        <div className="mx-auto max-w-[1600px] px-1.5 sm:px-10 lg:px-16">
+          <div className="relative overflow-hidden">
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-5 bg-gradient-to-r from-[#e8e7e3] to-transparent sm:w-12" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-5 bg-gradient-to-l from-[#e8e7e3] to-transparent sm:w-12" />
+
+            <div className="certificate-marquee-track flex w-max items-center gap-5 sm:gap-10">
+              {certificateLogoMarqueeItems.map((cert, index) => (
+                <a
+                  key={`${cert.alt}-${index}`}
+                  href={`/${locale}/kurumsal/sertifikalar`}
+                  className="flex min-w-[86px] items-center justify-center px-1.5 sm:min-w-[110px] sm:px-2"
+                >
+                  {cert.src.endsWith(".svg") ? (
+                    <img
+                      src={cert.src}
+                      alt={cert.alt}
+                      className="h-8 w-auto max-w-full object-contain opacity-100 transition-[opacity,transform] duration-300 hover:scale-[1.03] hover:opacity-100 sm:h-12"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : (
+                    <Image
+                      src={cert.src}
+                      alt={cert.alt}
+                      width={180}
+                      height={72}
+                      className="h-8 w-auto max-w-full object-contain opacity-100 transition-[opacity,transform] duration-300 hover:scale-[1.03] hover:opacity-100 sm:h-12"
+                    />
+                  )}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -529,27 +543,18 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
       <section id="solution-categories" className="relative overflow-hidden bg-sand-200 pb-2 pt-12 text-ink sm:pb-2 sm:pt-16">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
         <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
-          <div className="mt-6 flex flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
-            <div className="relative z-10 shrink-0 self-center">
-              <div
-                className={`relative flex max-sm:h-[13rem] max-sm:w-[3rem] max-sm:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#1f4fa8]/[0.08] transition-all duration-300 sm:h-auto sm:w-auto ${
-                  hoveredSolutionIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
-                }`}
-              >
-                <div className="absolute inset-y-0 left-0 w-3 bg-[#1f4fa8] sm:w-3.5" aria-hidden />
-                <div className="relative z-0 flex flex-1 items-center justify-center py-3 pl-2.5 pr-2 sm:px-4 sm:py-7">
-                  <span className="font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]">
-                    {locale === "tr" ? "Çözümler" : locale === "ru" ? "Решения" : "Solutions"}
-                  </span>
-                </div>
-              </div>
-            </div>
+          <div className="novves-carousel-toolbar mt-6 flex w-full flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
+            <CarouselStripLabel
+              variant="solution"
+              label={n.solutions}
+              dimmed={hoveredSolutionIndex !== null}
+            />
 
-            <div className="relative z-[1] flex min-h-0 min-w-0 flex-1 items-center gap-1 sm:gap-2">
+            <div className="relative z-[1] flex min-h-0 min-w-0 items-center gap-1 sm:gap-2 [min-width:0]">
             <button
               type="button"
               onClick={() => scrollSolutionCarousel("prev")}
-              aria-label={locale === "tr" ? "Önceki çözümler" : locale === "ru" ? "Предыдущие решения" : "Previous solutions"}
+              aria-label={pc.previousSolutions}
               className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
               <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
@@ -559,19 +564,13 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
 
             <div
               ref={solutionCarouselRef}
-              className="flex min-w-0 flex-1 touch-pan-x snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
+              className="flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {solutionCategoryMeta.map((item, index) => {
-                const title = locale === "tr" ? item.tr : locale === "ru" ? item.ru : item.en;
-                const descBundle = solutionCategoryDescriptions[item.href];
-                const desc = descBundle
-                  ? (locale === "tr" ? descBundle.tr : locale === "ru" ? descBundle.ru : descBundle.en)
-                  : (locale === "tr"
-                    ? "Projeye özel mühendislik çözümünü keşfedin."
-                    : locale === "ru"
-                      ? "Откройте инженерное решение для вашего проекта."
-                      : "Explore the right engineering solution for your project.");
+              {solutionCategorySlides.map((item, index) => {
+                const entry = solutionByHref[item.href];
+                const title = entry?.title ?? item.href;
+                const desc = entry?.description ?? pc.defaultSolutionDesc;
                 return (
                   <Link
                     key={item.href}
@@ -604,7 +603,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                       </h3>
                       <p className="mt-1 line-clamp-2 text-[12px] leading-[1.5] text-ink/62 max-sm:leading-[1.44]">{desc}</p>
                       <div className="mt-auto pt-2 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#1f4fa8] sm:text-[10px]">
-                        {locale === "tr" ? "Detayları İncele" : locale === "ru" ? "Подробнее" : "View Details"}
+                        {pc.solutionCardCta}
                       </div>
                     </div>
                   </Link>
@@ -615,7 +614,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
             <button
               type="button"
               onClick={() => scrollSolutionCarousel("next")}
-              aria-label={locale === "tr" ? "Sonraki çözümler" : locale === "ru" ? "Следующие решения" : "Next solutions"}
+              aria-label={pc.nextSolutions}
               className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
               <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
@@ -635,27 +634,18 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
 
         <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
-          <div className="mt-6 flex flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
-            <div className="relative z-10 shrink-0 self-center">
-              <div
-                className={`relative flex max-sm:h-[13rem] max-sm:w-[3rem] max-sm:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-primary/[0.12] transition-all duration-300 sm:h-auto sm:w-auto ${
-                  hoveredProductIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
-                }`}
-              >
-                <div className="absolute inset-y-0 left-0 w-3 bg-primary/90 sm:w-3.5" aria-hidden />
-                <div className="relative z-0 flex flex-1 items-center justify-center py-3 pl-2.5 pr-2 sm:px-4 sm:py-7">
-                  <span className="font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]">
-                    {locale === "tr" ? "Ürünler" : locale === "ru" ? "Продукты" : "Products"}
-                  </span>
-                </div>
-              </div>
-            </div>
+          <div className="novves-carousel-toolbar mt-6 flex w-full flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
+            <CarouselStripLabel
+              variant="product"
+              label={n.products}
+              dimmed={hoveredProductIndex !== null}
+            />
 
-            <div className="relative z-[1] flex min-h-0 min-w-0 flex-1 items-center gap-1 sm:gap-2">
+            <div className="relative z-[1] flex min-h-0 min-w-0 items-center gap-1 sm:gap-2 [min-width:0]">
             <button
               type="button"
               onClick={() => scrollProductCarousel("prev")}
-              aria-label={locale === "tr" ? "Önceki ürünler" : locale === "ru" ? "Предыдущие товары" : "Previous products"}
+              aria-label={pc.previousProducts}
               className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
               <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
@@ -665,7 +655,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
 
             <div
               ref={productCarouselRef}
-              className="flex min-w-0 flex-1 touch-pan-x snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
+              className="flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {dict.productCategories.items.map((cat, index) => {
@@ -703,15 +693,10 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                       {cat.label}
                     </h3>
                     <p className="mt-1 line-clamp-2 text-[12px] leading-[1.5] text-ink/62 max-sm:leading-[1.44]">
-                      {productCategoryDescriptions[cat.label] ??
-                        (locale === "tr"
-                          ? "Projeye uygun, güvenilir ve verimli ürün çözümlerini keşfedin."
-                          : locale === "ru"
-                            ? "Откройте надежные и эффективные решения, подходящие для вашего проекта."
-                            : "Discover reliable and efficient solutions tailored to your project.")}
+                      {productBlurbs[index] ?? pc.productFallbackDesc}
                     </p>
                     <div className="mt-auto pt-2 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-primary sm:text-[10px]">
-                      Detayları İncele
+                      {pc.productCardCta}
                     </div>
                   </div>
                 </Link>
@@ -722,7 +707,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
             <button
               type="button"
               onClick={() => scrollProductCarousel("next")}
-              aria-label={locale === "tr" ? "Sonraki ürünler" : locale === "ru" ? "Следующие товары" : "Next products"}
+              aria-label={pc.nextProducts}
               className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
             >
               <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
@@ -755,7 +740,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   <div className="relative aspect-[16/10] w-full lg:h-1/2 lg:aspect-auto">
                     <Image
                       src={engineeringCollage.primary}
-                      alt="NOVVES CNC lazer kesim ile metal sac üzerinde hassas imalat"
+                      alt={pc.engineeringAlt1}
                       fill
                       priority
                       quality={92}
@@ -766,7 +751,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   <div className="relative aspect-[16/10] w-full border-t border-[#243044]/10 lg:h-1/2 lg:aspect-auto">
                     <Image
                       src={engineeringCollage.secondary}
-                      alt="NOVVES sahada montaj ve teknik müdahale"
+                      alt={pc.engineeringAlt2}
                       fill
                       priority
                       quality={92}
@@ -814,7 +799,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                         lineHeight: 1.06,
                       }}
                     >
-                      {dict.pillars[0]?.title ?? "Mühendislik Anlayışımız"}
+                      {dict.pillars[0]?.title ?? pc.pillarsFallbackTitle}
                     </h2>
                   </div>
 
@@ -833,23 +818,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
             <>
           <div id="catalogs" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem]">
             <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-center lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start">
-                <div
-                  className={`relative overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_20px_46px_-24px_rgba(15,20,30,0.32)] transition-all duration-300 ${
-                    hoveredCatalogIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
-                  }`}
-                >
-                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-primary/90" />
-                  <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
-                    <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
-                      {locale === "tr" ? "Kataloglar" : locale === "ru" ? "Каталоги" : "Catalogs"}
-                    </span>
-                  </div>
-                </div>
+              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
+                <SectionStripLabel
+                  tone="primary"
+                  label={pc.catalogsVertical}
+                  dimmed={hoveredCatalogIndex !== null}
+                />
               </div>
 
               <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {catalogItems.map((item, index) => (
+                {catalogPreview.map((item, index) => (
                   <Link
                     key={item.title}
                     href={`/${locale}${item.href}`}
@@ -878,20 +856,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     </div>
                     <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
                       <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                        {locale === "tr" ? "Katalog" : locale === "ru" ? "Каталог" : "Catalog"}
+                        {pc.catalogKindLabel}
                       </p>
                       <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-primary sm:text-[1.28rem]">
                         {item.title}
                       </h3>
                       <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                        {locale === "tr"
-                          ? "Teknik merkezde PDF ve dokümanlara erişin."
-                          : locale === "ru"
-                            ? "Доступ к PDF и документам в техническом центре."
-                            : "Access PDFs and documents in the technical center."}
+                        {pc.catalogCardDesc}
                       </p>
                       <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-primary sm:text-[10px]">
-                        {locale === "tr" ? "Detayları İncele" : locale === "ru" ? "Подробнее" : "View Details"}
+                        {pc.pillarCta}
                       </div>
                     </div>
                   </Link>
@@ -903,7 +877,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
                   className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
                 >
-                  <span>{locale === "tr" ? "Tümünü Gör" : locale === "ru" ? "Смотреть все" : "View All"}</span>
+                  <span>{n.viewAll}</span>
                   <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -915,23 +889,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
           {/* Referanslar — kataloglarla aynı düzen */}
           <div id="references" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem] lg:mt-12">
             <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-center lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start">
-                <div
-                  className={`relative overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_20px_46px_-24px_rgba(15,20,30,0.32)] transition-all duration-300 ${
-                    hoveredReferenceIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
-                  }`}
-                >
-                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-[#6b7380]" />
-                  <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
-                    <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
-                      {locale === "tr" ? "Referanslar" : locale === "ru" ? "Референсы" : "References"}
-                    </span>
-                  </div>
-                </div>
+              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
+                <SectionStripLabel
+                  tone="slate"
+                  label={n.links.references}
+                  dimmed={hoveredReferenceIndex !== null}
+                />
               </div>
 
               <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {referenceItems.map((item, index) => (
+                {referencePreview.map((item, index) => (
                   <Link
                     key={item.title}
                     href={`/${locale}${item.href}`}
@@ -959,20 +926,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     </div>
                     <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
                       <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                        {locale === "tr" ? "Referans" : locale === "ru" ? "Референс" : "Reference"}
+                        {pc.referenceEyebrow}
                       </p>
                       <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#5c6370] sm:text-[1.28rem]">
                         {item.title}
                       </h3>
                       <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                        {locale === "tr"
-                          ? "Tamamlanan projelerden öne çıkan örnekleri inceleyin."
-                          : locale === "ru"
-                            ? "Ознакомьтесь с избранными реализованными проектами."
-                            : "Explore highlights from projects we have delivered."}
+                        {pc.referenceCardDesc}
                       </p>
                       <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#5c6370] sm:text-[10px]">
-                        {locale === "tr" ? "Detayları İncele" : locale === "ru" ? "Подробнее" : "View Details"}
+                        {pc.pillarCta}
                       </div>
                     </div>
                   </Link>
@@ -984,7 +947,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   href={`/${locale}/kurumsal/referanslar`}
                   className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
                 >
-                  <span>{locale === "tr" ? "Tümünü Gör" : locale === "ru" ? "Смотреть все" : "View All"}</span>
+                  <span>{n.viewAll}</span>
                   <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -996,23 +959,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
           {/* Sertifikalar — referanslarla aynı düzen, lacivert vurgu */}
           <div id="certificates" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem] lg:mt-12">
             <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-center lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start">
-                <div
-                  className={`relative overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_20px_46px_-24px_rgba(15,20,30,0.32)] transition-all duration-300 ${
-                    hoveredCertificateIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
-                  }`}
-                >
-                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-[#1f4fa8]" />
-                  <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
-                    <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
-                      {locale === "tr" ? "Sertifikalar" : locale === "ru" ? "Сертификаты" : "Certificates"}
-                    </span>
-                  </div>
-                </div>
+              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
+                <SectionStripLabel
+                  tone="brandBlue"
+                  label={n.links.certificates}
+                  dimmed={hoveredCertificateIndex !== null}
+                />
               </div>
 
               <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {certificateItems.map((item, index) => (
+                {certificatePreview.map((item, index) => (
                   <Link
                     key={item.title}
                     href={`/${locale}${item.href}`}
@@ -1040,20 +996,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     </div>
                     <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
                       <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                        {locale === "tr" ? "Sertifika" : locale === "ru" ? "Сертификат" : "Certificate"}
+                        {pc.certificateEyebrow}
                       </p>
                       <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#1f4fa8] sm:text-[1.28rem]">
                         {item.title}
                       </h3>
                       <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                        {locale === "tr"
-                          ? "Uluslararası kalite, güvenlik ve uygunluk belgelerimizi inceleyin."
-                          : locale === "ru"
-                            ? "Ознакомьтесь с международными сертификатами качества и соответствия."
-                            : "Review our international quality, safety and compliance certificates."}
+                        {pc.certificateCardDesc}
                       </p>
                       <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#1f4fa8] sm:text-[10px]">
-                        {locale === "tr" ? "Detayları İncele" : locale === "ru" ? "Подробнее" : "View Details"}
+                        {pc.pillarCta}
                       </div>
                     </div>
                   </Link>
@@ -1065,7 +1017,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   href={`/${locale}/kurumsal/sertifikalar`}
                   className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
                 >
-                  <span>{locale === "tr" ? "Tümünü Gör" : locale === "ru" ? "Смотреть все" : "View All"}</span>
+                  <span>{n.viewAll}</span>
                   <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -1079,24 +1031,17 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
           {/* Şirket profili — sertifikaların altında */}
           <div id="company-profile" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem] lg:mt-12">
             <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-center lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start">
-                <div
-                  className={`relative overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_20px_46px_-24px_rgba(15,20,30,0.32)] transition-all duration-300 ${
-                    hoveredCompanyProfileIndex !== null ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
-                  }`}
-                >
-                  <div className="absolute inset-y-0 left-0 w-3 lg:w-3.5 bg-[#243044]" />
-                  <div className="flex items-center justify-center px-4 py-3.5 lg:block lg:py-7 lg:pl-4 lg:pr-3">
-                    <span className="font-mono-eng text-[15px] font-bold uppercase tracking-[0.24em] text-ink antialiased max-lg:[writing-mode:horizontal-tb] max-lg:text-center lg:[writing-mode:vertical-rl] lg:[text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[18px] sm:font-semibold sm:tracking-[0.3em]">
-                      {locale === "tr" ? "Şirket Profili" : locale === "ru" ? "Профиль компании" : "Company Profile"}
-                    </span>
-                  </div>
-                </div>
+              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
+                <SectionStripLabel
+                  tone="ink"
+                  label={pc.companyProfileVertical}
+                  dimmed={hoveredCompanyProfileIndex !== null}
+                />
               </div>
 
               <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {companyProfileItems.map((item, index) => {
-                  const title = locale === "tr" ? item.tr : locale === "ru" ? item.ru : item.en;
+                {companyProfileCards.map((item, index) => {
+                  const title = item.title;
                   return (
                     <Link
                       key={item.href}
@@ -1135,20 +1080,16 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                       </div>
                       <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
                         <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                          {locale === "tr" ? "Kurumsal" : locale === "ru" ? "Компания" : "Corporate"}
+                          {pc.companyEyebrow}
                         </p>
                         <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#243044] sm:text-[1.28rem]">
                           {title}
                         </h3>
                         <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                          {locale === "tr"
-                            ? "NOVVES’in hikayesi, yönetim ve ekip yapısını keşfedin."
-                            : locale === "ru"
-                              ? "История NOVVES, руководство и структура команды."
-                              : "Discover NOVVES’ story, leadership and team structure."}
+                          {pc.companyCardDesc}
                         </p>
                         <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#243044] sm:text-[10px]">
-                          {locale === "tr" ? "Detayları İncele" : locale === "ru" ? "Подробнее" : "View Details"}
+                          {pc.pillarCta}
                         </div>
                       </div>
                     </Link>
@@ -1161,7 +1102,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   href={`/${locale}/kurumsal`}
                   className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
                 >
-                  <span>{locale === "tr" ? "Tümünü Gör" : locale === "ru" ? "Смотреть все" : "View All"}</span>
+                  <span>{n.viewAll}</span>
                   <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -1186,15 +1127,15 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                   <div className="mt-8 grid gap-4 sm:grid-cols-3">
                     <span className="btn-3d btn-3d-glass inline-flex items-center gap-2.5 rounded-md border border-ink/[0.07] bg-white/55 px-3 py-2.5 text-[10px] font-medium uppercase tracking-[0.2em] text-ink/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)]">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                      48 Saatte Ön Değerlendirme
+                      {pc.midCtaBullet1}
                     </span>
                     <span className="btn-3d btn-3d-glass inline-flex items-center gap-2.5 rounded-md border border-ink/[0.07] bg-white/55 px-3 py-2.5 text-[10px] font-medium uppercase tracking-[0.2em] text-ink/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)]">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                      Uygulamaya Dönük Çözüm
+                      {pc.midCtaBullet2}
                     </span>
                     <span className="btn-3d btn-3d-glass inline-flex items-center gap-2.5 rounded-md border border-ink/[0.07] bg-white/55 px-3 py-2.5 text-[10px] font-medium uppercase tracking-[0.2em] text-ink/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)]">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                      Saha + CFD Entegrasyonu
+                      {pc.midCtaBullet3}
                     </span>
                   </div>
                 </div>
@@ -1218,79 +1159,81 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
           <div className="mt-16 grid grid-cols-1 items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {dict.pillars.map((pillar, index) => {
               const isExpanded = !!expandedPillars[index];
+              const pillarHref = `/${locale}${pillarLinks[index] ?? "/kurumsal"}`;
               return (
-                <Link
+                <article
                   key={pillar.tag}
-                  href={`/${locale}${pillarLinks[index] ?? "/kurumsal"}`}
-                  className="group flex h-full min-h-0 flex-col overflow-hidden rounded-xl bg-white shadow-[0_16px_48px_-28px_rgba(15,20,30,0.14)] ring-1 ring-black/[0.04] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_60px_-28px_rgba(15,20,30,0.22)]"
+                  className="group flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_16px_48px_-28px_rgba(15,20,30,0.14)] ring-1 ring-black/[0.04] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_60px_-28px_rgba(15,20,30,0.22)]"
                 >
-                <article className="flex h-full min-h-0 flex-col">
-                  <div className="relative aspect-[3/2] shrink-0 bg-[#f0f1f3]">
-                    <Image
-                      src={pillarImages[index] ?? pillarImages[0]}
-                      alt={pillar.title}
-                      fill
-                      className="object-contain p-8 drop-shadow-[0_14px_36px_rgba(0,0,0,0.16)] transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                    />
-                  </div>
-                  <p className="flex items-center justify-center gap-2 px-6 pt-4 text-center font-mono-eng uppercase tracking-[0.22em]">
-                    <span className="text-[12px] font-semibold leading-none text-primary">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-[10px] text-ink/55">{pillar.tag}</span>
-                  </p>
-                  <div className="flex flex-1 flex-col items-center px-6 pb-10 pt-2 text-center">
-                    <h3
-                      className="font-bold text-ink"
-                      style={{ fontSize: "clamp(1.35rem, 2.1vw, 1.75rem)", lineHeight: 1.15, letterSpacing: "-0.02em" }}
-                    >
-                      {pillar.title}
-                    </h3>
-                    <p className={`mt-4 max-w-[36ch] ${homeBodySecondary} ${isExpanded ? "" : "line-clamp-3"}`}>{pillar.intro}</p>
-                    {isExpanded && (
-                      <ul className="mt-8 w-full max-w-[19rem] space-y-4 border-t border-ink/10 pt-8 text-left">
-                        {pillar.items.map((item) => (
-                          <li key={item.label} className="flex gap-3">
-                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                            <div>
-                              <p className="text-[13px] font-semibold text-ink">{item.label}</p>
-                              <p className="mt-1 text-[13px] leading-[1.65] text-secondary/68">{item.desc}</p>
-                            </div>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                    <span
-                      role="button"
-                      tabIndex={0}
-                      className="mt-4 inline-flex cursor-pointer select-none items-center text-[18px] font-bold leading-none text-primary"
-                      onClick={(event) => {
-                        event.preventDefault();
-                        event.stopPropagation();
-                        setExpandedPillars((prev) => ({ ...prev, [index]: !prev[index] }));
-                      }}
-                      onKeyDown={(event) => {
-                        if (event.key === "Enter" || event.key === " ") {
-                          event.preventDefault();
-                          event.stopPropagation();
-                          setExpandedPillars((prev) => ({ ...prev, [index]: !prev[index] }));
-                        }
-                      }}
-                      aria-label={isExpanded
-                        ? (locale === "tr" ? "Metni daralt" : locale === "ru" ? "Свернуть" : "Collapse")
-                        : (locale === "tr" ? "Devamını göster" : locale === "ru" ? "Показать полностью" : "Show more")}
-                    >
-                      ...
-                    </span>
-                    <div className="mt-auto flex w-full justify-center pt-8">
-                      <span className="btn-3d btn-3d-primary inline-flex items-center justify-center bg-primary px-8 py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white transition-colors group-hover:bg-[#e55a28]">
-                        Detayları İncele
-                      </span>
+                  <Link
+                    href={pillarHref}
+                    className="flex shrink-0 flex-col outline-none transition-colors focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2"
+                  >
+                    <div className="relative aspect-[3/2] shrink-0 bg-[#f0f1f3]">
+                      <Image
+                        src={pillarImages[index] ?? pillarImages[0]}
+                        alt={pillar.title}
+                        fill
+                        className="object-contain p-8 drop-shadow-[0_14px_36px_rgba(0,0,0,0.16)] transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                        sizes="(max-width: 1024px) 100vw, 33vw"
+                      />
                     </div>
+                    <p className="flex items-center justify-center gap-2 px-6 pt-4 text-center font-mono-eng uppercase tracking-[0.22em]">
+                      <span className="text-[12px] font-semibold leading-none text-primary">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <span className="text-[10px] text-ink/55">{pillar.tag}</span>
+                    </p>
+                    <div className="px-6 pt-2 text-center">
+                      <h3
+                        className="font-bold text-ink"
+                        style={{ fontSize: "clamp(1.35rem, 2.1vw, 1.75rem)", lineHeight: 1.15, letterSpacing: "-0.02em" }}
+                      >
+                        {pillar.title}
+                      </h3>
+                      <p className={`mt-4 max-w-[36ch] ${homeBodySecondary} ${isExpanded ? "" : "line-clamp-3"}`}>{pillar.intro}</p>
+                    </div>
+                  </Link>
+
+                  {isExpanded && (
+                    <ul className="mt-6 w-full max-w-[19rem] space-y-4 self-center border-t border-ink/10 px-6 pt-6 text-left">
+                      {pillar.items.map((item) => (
+                        <li key={item.label} className="flex gap-3">
+                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                          <div>
+                            <p className="text-[13px] font-semibold text-ink">{item.label}</p>
+                            <p className="mt-1 text-[13px] leading-[1.65] text-secondary/68">{item.desc}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  <div className="mt-auto flex flex-col items-center px-6 pb-10 pt-4">
+                    <button
+                      type="button"
+                      aria-expanded={isExpanded}
+                      aria-label={isExpanded ? pc.pillarCollapseAria : pc.pillarExpandAria}
+                      onClick={() =>
+                        setExpandedPillars((prev) => ({ ...prev, [index]: !prev[index] }))
+                      }
+                      className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink/12 bg-white text-[22px] font-bold leading-none text-primary shadow-[0_8px_24px_-18px_rgba(15,20,30,0.35)] transition-all duration-300 hover:border-primary/35 hover:bg-primary/[0.06] hover:shadow-[0_12px_28px_-20px_rgba(15,20,30,0.28)]"
+                    >
+                      <span
+                        className={`inline-block transition-transform duration-300 ${isExpanded ? "rotate-45" : ""}`}
+                        aria-hidden
+                      >
+                        +
+                      </span>
+                    </button>
+                    <Link
+                      href={pillarHref}
+                      className="btn-3d btn-3d-primary mt-8 inline-flex w-full max-w-[17rem] items-center justify-center bg-primary px-8 py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#e55a28]"
+                    >
+                      {pc.pillarCta}
+                    </Link>
                   </div>
                 </article>
-                </Link>
               );
             })}
           </div>
@@ -1314,7 +1257,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
             num="05"
             title={dict.video.title}
             subtitle={dict.video.desc}
-            meta="30+ Ülke · 500+ Proje"
+            meta={pc.videoStatMeta}
             tone="dark"
           />
 
@@ -1372,7 +1315,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-60" />
 
         <div className="relative mx-auto max-w-[1600px] px-2 sm:px-10 lg:px-16">
-          <SectionHead num="06" title={dict.faq.title} meta="Sıkça Sorulanlar" />
+          <SectionHead num="06" title={dict.faq.title} meta={dict.faq.tag} />
 
           <div className="mt-16 grid gap-14 lg:grid-cols-12 lg:items-stretch">
             {/* FAQ list — kurumsal palet: lacivert şerit + bej gövde, turuncu vurgu */}
@@ -1388,7 +1331,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                     return (
                       <div
                         key={item.q}
-                        className={`overflow-hidden rounded-2xl border transition-[border-color,box-shadow] duration-300 ${isOpen ? "" : "lg:flex-1"} ${
+                        className={`overflow-hidden rounded-2xl border transition-[border-color,box-shadow] duration-300 ${
                           isOpen
                             ? "border-[#1a2842] shadow-[0_18px_44px_-26px_rgba(13,17,23,0.35)] ring-1 ring-primary/22"
                             : "border-[#1a2842]/10 bg-white/95 shadow-[0_10px_36px_-30px_rgba(26,40,66,0.16)] hover:border-primary/30 hover:shadow-[0_16px_44px_-28px_rgba(26,40,66,0.2)]"
@@ -1397,7 +1340,7 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
                         <button
                           type="button"
                           onClick={() => setOpenFaq(isOpen ? null : index)}
-                          className={`group flex w-full items-start justify-between gap-4 px-4 py-4 text-left transition-colors duration-300 sm:px-5 sm:py-4 ${isOpen ? "" : "lg:h-full"} ${
+                          className={`group flex w-full items-start justify-between gap-4 px-4 py-4 text-left transition-colors duration-300 sm:px-5 sm:py-4 ${
                             isOpen
                               ? "bg-[#1a2842] text-white"
                               : "bg-white/90 hover:bg-[#f7f6f2]"
@@ -1489,6 +1432,20 @@ export default function HomeClient({ dict, locale }: { dict: HomeDict; locale: s
           </div>
         </div>
       </section>
+      <style jsx>{`
+        .certificate-marquee-track {
+          animation: certificate-marquee 28s linear infinite;
+        }
+
+        @keyframes certificate-marquee {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(calc(-50% - 1rem));
+          }
+        }
+      `}</style>
     </main>
   );
 }

@@ -1,0 +1,441 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "CFD analizė | Novves",
+      "description": "NOVVES CFD (Computational Fluid Dynamics) analizė – tikri scenarijai, tikri duomenys, saugūs sprendimai."
+    },
+    "breadcrumb": {
+      "home": "Pradžia",
+      "services": "Paslaugos",
+      "current": "CFD analizė"
+    },
+    "hero": {
+      "badge": "Paslaugos",
+      "titlePart1": "CFD",
+      "titleHighlight": "Analizė",
+      "subtitle": "Tikri scenarijai, tikri duomenys, saugūs sprendimai.",
+      "stats": [
+        {
+          "value": "3D",
+          "label": "Modeliavimo modelis"
+        },
+        {
+          "value": "5",
+          "label": "Analizės parametrai"
+        },
+        {
+          "value": "EN 12101-3",
+          "label": "Standartinis patikrinimas"
+        }
+      ]
+    },
+    "intro": "NOVVES ne tik gaminame ventiliatorius – siūlome ir konkrečiam projektui pritaikytus, inžinerinius vėdinimo sprendimus. Šių sprendimų esmė yra CFD (Computational Fluid Dynamics) analizė, kuri leidžia mums išbandyti savo projektus prieš juos įdiegiant vietoje.",
+    "whyCfd": {
+      "sectionLabel": "Metodika",
+      "title": "Kodėl CFD analizė?",
+      "items": [
+        "Ventiliatoriaus sistemos veikimas imituojamas pagal realias aplinkos sąlygas.",
+        "Gaisro scenarijai, tokie kaip dūmai, temperatūra ir dujų plitimas, yra iš anksto išbandyti.",
+        "Analizuojami svarbūs kintamieji, tokie kaip matomumo atstumas, temperatūros kilimas ir CO koncentracija.",
+        "Tikrinamas teisės aktų laikymasis ir saugus evakuacijos laikas."
+      ],
+      "resultLabel": "Rezultatas",
+      "resultText": "Užtikrinamas teisingas išdėstymas, tinkamas ventiliatorių skaičius, optimalus energijos suvartojimas ir maksimalus saugumas."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Analizės apimtis",
+      "title": "Modeliavimo parametrai",
+      "items": [
+        {
+          "title": "Oro greičio pasiskirstymas",
+          "subtitle": "Greičio analizė",
+          "text": "Oro srauto kryptis, greitis ir pasiskirstymas uždaroje erdvėje sumodeliuoti trimis matmenimis. Siekiama užtikrinti oro cirkuliaciją visoje aplinkoje reaktyviniais ventiliatoriais."
+        },
+        {
+          "title": "Temperatūros pokytis",
+          "subtitle": "Temperatūros pasiskirstymas",
+          "text": "Ištirta, kaip gaisro metu kinta aplinkos temperatūra žmogaus aukštyje. Buvo įvertintos kritinės temperatūros ribos ir nustatyta rizika avarinei situacijai valdyti."
+        },
+        {
+          "title": "Matomumo vertinimas",
+          "subtitle": "Matomumo analizė",
+          "text": "Ištirta, kiek laiko evakuacijos keliai išlieka matomi esant dideliems dūmams. Matomumo pablogėjimo greitis buvo išmatuotas siekiant patikrinti evakuacijos saugą."
+        },
+        {
+          "title": "Anglies monoksido dispersija",
+          "subtitle": "CO koncentracija",
+          "text": "Sumodeliuota, kaip išmetamosios dujos CO kaupiasi laikui bėgant uždarose patalpose, pavyzdžiui, automobilių stovėjimo aikštelėse, ir kaip jas pašalina ventiliatorių sistema."
+        },
+        {
+          "title": "Dūmų plitimas",
+          "subtitle": "Dūmų plitimas",
+          "text": "Išnagrinėta dūmų plitimo kryptis ir greitis po gaisro bei kaip jie nukreipiami reaktyvinių ventiliatorių pagalba. Išsamiai imituotas dūmų sluoksnio susidarymas ir judėjimas."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Vertės pasiūlymas",
+      "title": "Ką gausite su NOVVES",
+      "items": [
+        "Teisės aktų laikymosi patikra",
+        "Inžineriniai sprendimai dėl ventiliatoriaus padėties nustatymo",
+        "Išankstinė temperatūros, CO ir matomumo ribų analizė evakuacijos saugai užtikrinti",
+        "Aiškus sistemos veikimo matomumas prieš įdiegiant",
+        "Projektu pagrįsta techninė ataskaita ir duomenimis paremtas pristatymas"
+      ],
+      "quote": "Kurkite dizainą ne tik patirtimi, bet ir duomenimis. Sukurkite saugias, galingas ir optimizuotas vėdinimo sistemas naudodami NOVVES inžineriją.",
+      "ctaPrimary": "Sukurti projekto užklausą",
+      "ctaSecondary": "Dūmų kontrolės dizainas"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "Paleidimas | Novves",
+      "description": "NOVVES paleidimo po pardavimo paslauga – montavimo kontrolė, veikimo testai, optimizavimas ir mokymai."
+    },
+    "breadcrumb": {
+      "home": "Pradžia",
+      "services": "Paslaugos",
+      "current": "Paleidimas eksploatuoti"
+    },
+    "hero": {
+      "badge": "Paslaugos",
+      "titlePart1": "Komisija",
+      "titleHighlight": "ing",
+      "subtitle": "Garantuojame visapusišką sistemos veikimą po įdiegimo.",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Aptarnavimo žingsniai"
+        },
+        {
+          "value": "4",
+          "label": "Fazės"
+        },
+        {
+          "value": "7/24",
+          "label": "Palaikymas"
+        },
+        {
+          "value": "PDF",
+          "label": "Ataskaitų teikimas"
+        }
+      ]
+    },
+    "intro": [
+      "„Novves“ ne tik gaminame kokybiškus produktus; taip pat garantuojame visapusišką sistemos veikimą po įdiegimo.",
+      "Mūsų paleidimo po pardavimo paslauga teikiama siekiant užtikrinti, kad klientai naudotų mūsų gaminius veiksmingiausiu ir saugiausiu būdu."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Procesas",
+      "title": "Paslaugos turinys",
+      "items": [
+        {
+          "step": "Gaminio montavimo kontrolė ir mechaninės atitikties patikra",
+          "phase": "Kontrolė"
+        },
+        {
+          "step": "Elektros jungčių ir įžeminimo atitikties patikrinimas",
+          "phase": "Kontrolė"
+        },
+        {
+          "step": "Pradinis ventiliatoriaus paleidimas ir variklio krypties patikra",
+          "phase": "Paleidimas"
+        },
+        {
+          "step": "Greičio valdymo įrenginio / dažnio keitiklio nustatymų konfigūracija",
+          "phase": "Paleidimas"
+        },
+        {
+          "step": "Pagrindinių veikimo bandymų, tokių kaip srauto greitis, slėgis, temperatūra, atlikimas",
+          "phase": "Testas"
+        },
+        {
+          "step": "Ventiliatoriaus optimizavimas pagal aplinkos sąlygas",
+          "phase": "Testas"
+        },
+        {
+          "step": "Trumpas sistemos veikimo mokymas ir pagrindinė techninės priežiūros informacija vartotojui",
+          "phase": "Treniruotės"
+        },
+        {
+          "step": "Visų bandymų ir procedūrų registravimas ir ataskaitų pateikimas naudojant paleidimo formą",
+          "phase": "Ataskaitų teikimas"
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Privalumai",
+      "title": "Kodėl tai svarbu?",
+      "items": [
+        {
+          "title": "Garantijos aktyvinimas",
+          "text": "Garantinio laikotarpio aktyvavimas"
+        },
+        {
+          "title": "Gedimų prevencija",
+          "text": "Gedimų, galinčių atsirasti dėl montavimo klaidų, prevencija"
+        },
+        {
+          "title": "Efektyvumas",
+          "text": "Energijos vartojimo efektyvumo ir prietaiso naudojimo trukmės gerinimas"
+        },
+        {
+          "title": "Optimizavimas",
+          "text": "Ventiliatoriaus valdymas tinkamiausiu būdu, atsižvelgiant į aplinkos sąlygas"
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Paslaugos užklausa",
+      "title": "Susisiekite su mumis dėl paleidimo paslaugos",
+      "contactForm": "Susisiekimo forma",
+      "weekdays": "Darbo dienomis 08:30 – 18:00",
+      "emailSupport": "Techninė pagalba el. paštu"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Dūmų kontrolės sistemos projektavimas | Novves",
+      "description": "Reaktyvinės ventiliatoriaus sistemos konstrukcija – oro srautas, išmetamųjų dujų ištraukimas ir dūmų kontrolė uždaruose garažuose."
+    },
+    "breadcrumb": {
+      "home": "Pradžia",
+      "services": "Paslaugos",
+      "current": "Dūmų kontrolė"
+    },
+    "hero": {
+      "badge": "Paslaugos",
+      "titlePart1": "Dūmų kontrolė",
+      "titleHighlight": "Sistemos projektavimas",
+      "stats": [
+        {
+          "value": "EN 12101-3",
+          "label": "Standarto atitiktis"
+        },
+        {
+          "value": "300°C / 2val",
+          "label": "Atsparumas ugniai"
+        },
+        {
+          "value": "CFD",
+          "label": "Palaikomas modeliavimas"
+        }
+      ]
+    },
+    "intro": [
+      "Reaktyvinė ventiliatoriaus sistema yra mechaninė vėdinimo sistema, naudojama oro srautui nukreipti, išmetamosioms dujoms pašalinti ir dūmams kontroliuoti kilus gaisrui uždarose automobilių stovėjimo aikštelėse.",
+      "Ši sistema sukurta pritaikant tunelinio vėdinimo technologijas ir ypač pageidaujama didelėse ir sudėtingose ​​automobilių stovėjimo aikštelėse.",
+      "Reaktyviniai ventiliatoriai sukuria oro judėjimą plačiame plote, pučiant orą dideliu greičiu, stumdami ir tempdami oro masę priešais save. Tokiu būdu iš transporto priemonių efektyviai pašalinamos kenksmingos dujos, pvz., anglies monoksidas (CO). Gaisro metu reaktyviniai ventiliatoriai neleidžia sklisti dūmams, užtikrina evakuacijos kelių saugumą ir palengvina ugniagesių įsikišimą."
+    ],
+    "components": {
+      "sectionLabel": "Sistemos architektūra",
+      "title": "Reaktyvinių ventiliatorių sistemos komponentai",
+      "items": [
+        {
+          "title": "Reaktyvinių lėktuvų gerbėjai",
+          "text": "Pagrindinis sistemos komponentas. Montuojamas ant lubų. Sukuria oro srautą, nukreipiantį užterštą orą į išmetimo ventiliatorius. Galimi du tipai: ašinis ir radialinis. Ašinis tipas gali veikti viena arba dviem kryptimis."
+        },
+        {
+          "title": "Išmetimo ventiliatoriai",
+          "text": "Kontroliuojamai išstumia reaktyvinių ventiliatorių nukreiptą užterštą ar dūminį orą į lauką."
+        },
+        {
+          "title": "Gryno oro ventiliatoriai",
+          "text": "Naudojamas slėgiui užtikrinti, kad būtų užtikrintas švarus oras vietoje užteršto oro ir kad dūmai nepatektų į evakuacinius kelius, kai natūralių angų nepakanka arba jos yra netinkamai išdėstytos."
+        },
+        {
+          "title": "Jutikliai",
+          "text": "CO, dūmų ir šilumos jutikliai renka duomenis iš savo zonos ir perduoda šią informaciją į MCC skydelį pagal nustatytas ribas."
+        },
+        {
+          "title": "Automatikos ir valdymo sistema (MKC skydelis)",
+          "text": "Sistema, leidžianti automatiškai įjungti ventiliatorius pagal duomenis iš jutiklių. Gaisro metu ji užtikrina, kad sistema veiktų pagal iš anksto nustatytus scenarijus. PLC valdomas ir gali būti integruojamas su BMS (pastato valdymo sistema)."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "Kodėl Jet Fan?",
+      "title": "Sistemos privalumai",
+      "subtitle": "Reaktyvinių ventiliatorių sistemos turi didelių pranašumų, palyginti su tradicinėmis ortakinio tipo vėdinimo sistemomis, ypač uždarose automobilių stovėjimo aikštelėse ir tunelinėse sistemose.",
+      "items": [
+        {
+          "title": "Jokio kanalo reikalavimo",
+          "text": "Reaktyvinių ventiliatorių sistemos veikia nukreipdamos orą, todėl nereikia ortakių, grotelių ar difuzorių."
+        },
+        {
+          "title": "Vietos taupymas",
+          "text": "Automobilių stovėjimo garažuose su mažu lubų aukščiu ortakių sistemos gali sukelti problemų, nes jos užima vietą. Dėl savo kompaktiškų matmenų reaktyviniai ventiliatoriai užima mažiau vietos."
+        },
+        {
+          "title": "Energijos efektyvumas",
+          "text": "Dirbdami su CO jutikliais, jie veikia tik tada, kai reikia, todėl sumažėja energijos sąnaudos. Ventiliatoriai gali veikti kintamu greičiu, optimizuodami energijos suvartojimą."
+        },
+        {
+          "title": "Dūmų ir šilumos pašalinimas yra kontroliuojamas",
+          "text": "Gaisro metu veikdamas dideliu greičiu, jis kontroliuoja dūmų plitimą. Jis neleidžia evakuacijos keliams prisipildyti dūmų ir užtikrina gyvybės saugumą. Tai palengvina ugniagesių įsikišimą."
+        },
+        {
+          "title": "Mažos priežiūros išlaidos",
+          "text": "Be ortakių sistemos valymas ir priežiūra yra lengvesni. Mažiau dalių taip pat sumažina gedimo riziką."
+        },
+        {
+          "title": "Lengvai išdėstomas pagal architektūrą",
+          "text": "Sistemos pertvarkymas būsimiems pakeitimams yra paprastesnis."
+        },
+        {
+          "title": "Mažos pradinės investicijos išlaidos",
+          "text": "Kadangi naudojama mažiau įrangos (ortakiai, grotelės, difuzoriai ir kt.), pradinė montavimo kaina yra mažesnė lyginant su tradicinėmis sistemomis."
+        }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Inžinerija",
+      "title": "Svarbūs dizaino veiksniai",
+      "items": [
+        "Būtinos atsargumo priemonės efektyviam sistemos veikimui yra kruopščiai kontroliuojamos ir projektuojamos nuo pat pirmo etapo, o išdėstymas įrengiamas atsižvelgiant į visas sąlygas.",
+        "Reaktyvinių ventiliatorių projektuose įrengiant ašinius ventiliatorius (dūmų ir šilumos ištraukimas / grynas oras) ir reaktyvinius ventiliatorius atsižvelgiama į tokius svarbius veiksnius kaip triukšmo lygis, reikalingas oro krypties planavimas, \"negyvų zonų\", kur grynas oras nepasiekia, nebuvimas, įrengimo paprastumas ir evakuacijos bei evakuacijos kelių prieinamumas gaisro metu.",
+        "Projektuojant reaktyvinių ventiliatorių sistemą, turi būti užtikrintas tinkamas oro kaitos greitis ir oro srautas, atsižvelgiant į transporto priemonių išmetamąsias dujas, pėsčiųjų eismą ir kitus veiksnius. Reaktyviniai ventiliatoriai turi būti išdėstyti teisingoje padėtyje, kad sistemos oro srautas būtų nukreiptas veiksmingiausiu būdu."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Jūsų projektui",
+      "title": "Gaukite dūmų kontrolės sistemos projektavimo palaikymą",
+      "cfdLink": "CFD analizė",
+      "supportButton": "Techninės pagalbos užklausa"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Techninė tarnyba | Novves",
+      "description": "NOVVES techninis aptarnavimas – pagalba po pardavimo, gedimų sprendimas, atsarginių dalių tiekimas ir priežiūra."
+    },
+    "breadcrumb": {
+      "home": "Pradžia",
+      "services": "Paslaugos",
+      "current": "Techninė tarnyba"
+    },
+    "hero": {
+      "badge": "Paslaugos",
+      "titlePart1": "Techninė",
+      "titleHighlight": "Aptarnavimas",
+      "subtitle": "Greitas atsakymas, patikimas sprendimas.",
+      "weekdays": "Darbo dienomis 08:30 – 18:00",
+      "emailSupport": "Techninė pagalba el. paštu"
+    },
+    "intro": "„Novves“ techninio aptarnavimo skyrius yra jūsų paslaugoms, kad pateiktų greitus ir efektyvius sprendimus, susijusius su jūsų aptarnavimo po pardavimo, gedimų šalinimo, atsarginių dalių tiekimo ir priežiūros užklausomis.",
+    "serviceTypes": {
+      "sectionLabel": "Mūsų taikymo sritis",
+      "title": "Paslaugų užklausos",
+      "items": [
+        "Montavimo ir paleidimo konsultacijos",
+        "Gedimų nustatymas ir aptarnavimas vietoje",
+        "Periodinės priežiūros ir patikros planavimas",
+        "Atsarginių dalių užklausos",
+        "Produkto naudojimo ir techninės dokumentacijos palaikymas"
+      ]
+    },
+    "form": {
+      "sectionLabel": "Prašymas",
+      "title": "Techninio aptarnavimo forma",
+      "description": "Savo paslaugų užklausą galite pateikti užpildę formą. Mūsų techninė komanda susisieks su jumis kuo greičiau.",
+      "features": [
+        {
+          "label": "Greitas atsakymas",
+          "desc": "Atsakymas per 24 valandas"
+        },
+        {
+          "label": "Ekspertų komanda",
+          "desc": "Sertifikuota techninė komanda"
+        },
+        {
+          "label": "Lauko intervencija",
+          "desc": "Paslaugų tinklas visoje šalyje"
+        }
+      ],
+      "labels": {
+        "name": "Pilnas vardas",
+        "company": "Įmonės pavadinimas",
+        "phone": "Telefonas",
+        "email": "El. paštas",
+        "subject": "Tema",
+        "message": "Jūsų žinutė"
+      },
+      "submit": "Pateikti",
+      "successTitle": "Užklausa gauta",
+      "successMessage": "Su jumis susisieksime kuo greičiau."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "Apklausa vietoje | Novves",
+      "description": "NOVVES vietinės apžiūros paslauga – vietos apžiūra, matavimas ir analizė, skirta konkrečiam projektui vėdinimo sprendimams."
+    },
+    "breadcrumb": {
+      "home": "Pradžia",
+      "services": "Paslaugos",
+      "current": "Apklausa vietoje"
+    },
+    "hero": {
+      "badge": "Paslaugos",
+      "titlePart1": "Vietoje",
+      "titleHighlight": "Apklausa",
+      "subtitle": "Pirmasis žingsnis siekiant tikslaus projekto sukūrimo: matavimas vietoje, analizė ir poreikių įvertinimas."
+    },
+    "intro": "Tikslūs duomenys yra kiekvieno vėdinimo projekto pagrindas. NOVVES apklausos vietoje paslauga yra pirmasis ir svarbiausias žingsnis kuriant efektyviausią ir reglamentus atitinkantį sprendimą, išnagrinėjus jūsų projekto poreikius vietoje. Mūsų ekspertai inžinieriai lankosi jūsų įstaigoje, kad atliktų išsamų matavimą, stebėjimą ir analizę.",
+    "steps": {
+      "sectionLabel": "Procesas",
+      "title": "Apklausos žingsniai",
+      "items": [
+        {
+          "title": "Susitikimas ir išankstinė informacija",
+          "desc": "Sužinosime bendras jūsų projekto ypatybes. Rengiame preliminarų susirinkimą dėl objekto tipo, ploto dydžio ir poreikių analizės."
+        },
+        {
+          "title": "Apsilankymas svetainėje ir matavimas",
+          "desc": "Mūsų ekspertų komanda apsilanko svetainėje, kad apžiūrėtų erdvę, išmatuotų ir įvertintų esamą infrastruktūrą. Analizuojamos oro srauto kryptys, temperatūros pasiskirstymas ir esama sistemos būsena."
+        },
+        {
+          "title": "Techninė analizė ir ataskaitos",
+          "desc": "Surinktais duomenimis atliekami vėdinimo poreikio skaičiavimai, srauto analizės ir reguliavimo atitikties patikros. Parengiama išsami apklausos ataskaita."
+        },
+        {
+          "title": "Sprendimo pasiūlymas ir projekto projektavimas",
+          "desc": "Remiantis apklausos duomenimis, pateikiamas konkretus projekto pasiūlymas su tinkamiausia sistemos konstrukcija, įrangos parinkimu ir sąnaudų analize."
+        },
+        {
+          "title": "Patvirtinimas ir įgyvendinimo pradžia",
+          "desc": "Patvirtinus Jūsų pasiūlymą, suplanuojami ir praktiškai įgyvendinami gamybos, montavimo ir paleidimo procesai."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Kodėl Svarbu",
+      "title": "Kodėl būtina atlikti apklausą vietoje?",
+      "items": [
+        {
+          "title": "Tikslus dizainas",
+          "desc": "Įrangos dydžio klaidos yra neišvengiamos projektuose, atliekamuose be matavimo vietoje."
+        },
+        {
+          "title": "Išlaidų optimizavimas",
+          "desc": "Pernelyg didelės ar per mažos įrangos pasirinkimas neleidžiamas naudojant tikrus svetainės duomenis."
+        },
+        {
+          "title": "Teisės aktų laikymasis",
+          "desc": "Esamų statybos sąlygų atitiktis norminiams reikalavimams tikrinama vietoje."
+        },
+        {
+          "title": "Integravimo paprastumas",
+          "desc": "Su esama mechanine ir elektros infrastruktūra suderinamus sprendimus galima nustatyti tik atlikus apklausą."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Nemokama apklausa",
+      "title": "Paprašykite savo projekto apklausos vietoje",
+      "subtitle": "Mūsų ekspertų inžinierių komanda apsilanko jūsų įstaigoje, kad atliktų poreikių analizę ir matavimus.",
+      "ctaButton": "Prašyti apklausos"
+    }
+  }
+}

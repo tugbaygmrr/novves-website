@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 import { ProductDetailPage } from "@/components/product-detail-page";
 
-export const metadata: Metadata = {
-  title: "Butterfly - Mutfak Fanları | Novves",
-  description: "Butterfly serisi mutfak fanları — metal filtreli, endüstriyel ve ticari mutfak havalandırma çözümleri.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "mutfakFanlari");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

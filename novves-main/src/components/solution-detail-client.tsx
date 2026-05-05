@@ -2,12 +2,33 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { notFound } from "next/navigation";
+import { useEffect, useState } from "react";
+import type { Locale } from "@/i18n/config";
+import { jumpNavHomeLabel } from "@/i18n/jump-nav-labels";
 
 type AppArea = {
   title: string;
   description: string;
   products: { name: string; type: string; image: string }[];
+};
+
+const PRODUCT_NAME_TO_SLUG: Record<string, string> = {
+  DRAGONFLY: "duman-isi-tahliye-fanlari",
+  HOUND: "damperler",
+  MARLIN: "kovan-tipi-aksiyal-fanlar",
+  BEAR: "exproof-fanlar",
+  NAUTILUS: "endustriyel-fanlar",
+  HUMMINGBIRD: "ec-fanlar",
+  HERON: "cati-fanlari",
+  OWL: "duvar-tipi-fanlar",
+  SEAHORSE: "banyo-fanlari",
+  KOI: "kanal-fanlari",
+  TURTLE: "hucreli-fanlar",
+  TIGER: "klima-santralleri",
+  DOLPHIN: "havuz-nem-alma-santrali",
+  BUTTERFLY: "mutfak-fanlari",
+  FOX: "siginak-fanlari",
 };
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -25,11 +46,40 @@ export function SolutionDetailClient({
   heroImage?: string;
 }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [selectedAreaIndex, setSelectedAreaIndex] = useState(0);
 
-  const areas: AppArea[] = dict.areas;
-  const systemComponents: { title: string; desc: string }[] = dict.systemComponents;
-  const advantages: { title: string; desc: string }[] = dict.advantages;
-  const faqItems: { q: string; a: string }[] = dict.faqItems;
+  if (dict == null || typeof dict !== "object") notFound();
+
+  const areasProductTag =
+    typeof commonDict?.solutionDetail?.areasProductTag === "string"
+      ? commonDict.solutionDetail.areasProductTag
+      : locale === "tr"
+        ? "Uygun konfigürasyon"
+        : "Suitable configuration";
+
+  const areasProductsRibbon =
+    typeof commonDict?.navbar?.products === "string" ? commonDict.navbar.products : locale === "tr" ? "Ürünler" : "Products";
+
+  const areas: AppArea[] = Array.isArray(dict.areas) ? dict.areas : [];
+
+  useEffect(() => {
+    setSelectedAreaIndex(0);
+  }, [slug]);
+
+  useEffect(() => {
+    setSelectedAreaIndex((i) => {
+      if (areas.length === 0) return 0;
+      return Math.min(i, areas.length - 1);
+    });
+  }, [areas.length]);
+
+  const systemComponents: { title: string; desc: string }[] = Array.isArray(dict.systemComponents)
+    ? dict.systemComponents
+    : [];
+  const advantages: { title: string; desc: string }[] = Array.isArray(dict.advantages) ? dict.advantages : [];
+  const faqItems: { q: string; a: string }[] = Array.isArray(dict.faqItems) ? dict.faqItems : [];
+  const trustStrip: { value: string; label: string }[] = Array.isArray(dict.trustStrip) ? dict.trustStrip : [];
+  const steps: { label: string; desc: string }[] = Array.isArray(dict.steps) ? dict.steps : [];
 
   return (
     <main>
@@ -43,9 +93,13 @@ export function SolutionDetailClient({
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-0 pt-28 sm:px-6 sm:pt-32 lg:px-8 lg:pt-36">
           <nav className="mb-8 flex items-center gap-2 text-xs text-white/45">
-            <Link href={`/${locale}`} className="transition-colors hover:text-white/70">{commonDict?.navbar?.links?.home ?? "Ana Sayfa"}</Link>
+            <Link href={`/${locale}`} className="transition-colors hover:text-white/70">
+              {jumpNavHomeLabel(locale as Locale)}
+            </Link>
             <span>/</span>
-            <Link href={`/${locale}/cozumler/${slug}`} className="transition-colors hover:text-white/70">{commonDict?.navbar?.solutions ?? "Cozumler"}</Link>
+            <Link href={`/${locale}/cozumler/${slug}`} className="transition-colors hover:text-white/70">
+              {commonDict?.navbar?.solutions ?? ""}
+            </Link>
             <span>/</span>
             <span className="text-white/60">{dict.breadcrumbCurrent}</span>
           </nav>
@@ -75,7 +129,7 @@ export function SolutionDetailClient({
           {/* Trust strip */}
           <div className="mt-10 overflow-hidden rounded-t-2xl border border-white/10 bg-[#2f3340]/58 shadow-[0_24px_55px_-36px_rgba(7,10,18,0.75)] backdrop-blur-md">
             <div className="grid grid-cols-2 divide-x divide-white/10 sm:grid-cols-4">
-            {dict.trustStrip.map((s: any) => (
+            {trustStrip.map((s: any) => (
               <div key={s.label} className="py-5 text-center sm:py-6">
                 <p className="text-lg font-bold text-primary sm:text-[1.35rem]">{s.value}</p>
                 <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.16em] text-white/42">{s.label}</p>
@@ -103,7 +157,7 @@ export function SolutionDetailClient({
             </div>
 
             <div className="flex flex-col gap-4 lg:col-span-5 lg:h-full">
-              {dict.steps.map((item: any, i: number) => (
+              {steps.map((item: any, i: number) => (
                 <div
                   key={i}
                   className="group flex items-start gap-4 rounded-2xl border border-ink/10 bg-white/90 p-5 shadow-[0_12px_34px_-30px_rgba(15,20,30,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_38px_-28px_rgba(15,20,30,0.28)] lg:flex-1"
@@ -209,67 +263,172 @@ export function SolutionDetailClient({
         </div>
       </section>
 
-      {/* 6. UYGULAMA ALANLARI */}
+      {/* 6. UYGULAMA ALANLARI — sol başlıklar, sağda seçilen alanın ürünleri */}
       <section className="relative overflow-hidden bg-[#ecebe6] py-20 sm:py-24">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.14]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10 flex items-end gap-6 sm:mb-12">
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{dict.areasLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">{dict.areasTitle}</h2>
-              <p className="mt-3 max-w-lg text-sm text-secondary/55">{dict.areasDesc}</p>
-            </div>
-            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
+          <div className="mb-8 rounded-3xl border border-ink/[0.06] bg-gradient-to-br from-white via-white to-[#f6f5f2] p-7 shadow-[0_28px_80px_-48px_rgba(15,23,42,0.3)] ring-1 ring-white/90 sm:p-9">
+            <span className="inline-flex rounded-full bg-primary/[0.12] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+              {dict.areasLabel}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-[-0.02em] text-[#1a2842] sm:text-[2.35rem] sm:leading-[1.08]">
+              {dict.areasTitle}
+            </h2>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-secondary/68 sm:mt-6 sm:text-[17px]">
+              {dict.areasDesc}
+            </p>
           </div>
 
-          <div className="space-y-6">
-            {areas.map((area, i) => (
-              <div key={area.title} className="overflow-hidden rounded-2xl border border-ink/10 bg-white/92 shadow-[0_16px_40px_-30px_rgba(15,20,30,0.26)]">
-                <div className="flex items-center gap-4 border-b border-ink/10 bg-[#f7f6f2] px-6 py-5 sm:px-8">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#1a2842] text-[11px] font-bold text-white ring-1 ring-primary/25">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="text-base font-bold text-dark">{area.title}</h3>
-                    <p className="text-xs text-primary/90">{area.description}</p>
-                  </div>
+          {areas.length > 0 ? (
+            <div className="overflow-hidden rounded-3xl border border-ink/[0.07] bg-white/90 shadow-[0_32px_90px_-52px_rgba(15,23,42,0.38)] ring-1 ring-ink/[0.03] backdrop-blur-sm">
+              <div className="flex flex-col lg:grid lg:min-h-[320px] lg:grid-cols-[minmax(272px,34%)_1fr] lg:items-stretch">
+                <div
+                  className="flex flex-col gap-1.5 border-b border-ink/[0.06] bg-gradient-to-b from-[#f5f4f0]/95 to-[#e9e6df]/90 p-3 sm:p-4 lg:border-b-0 lg:border-e lg:border-ink/[0.06]"
+                  role="tablist"
+                  aria-label={dict.areasLabel}
+                >
+                  {areas.map((area, i) => {
+                    const selected = i === selectedAreaIndex;
+                    return (
+                      <button
+                        key={area.title}
+                        type="button"
+                        role="tab"
+                        id={`area-tab-${i}`}
+                        aria-selected={selected}
+                        aria-controls={`area-panel-${i}`}
+                        onClick={() => setSelectedAreaIndex(i)}
+                        className={`flex w-full items-start gap-3 rounded-2xl px-3 py-3.5 text-start transition-all duration-200 sm:gap-3.5 sm:px-4 sm:py-4 ${
+                          selected
+                            ? "bg-white shadow-[0_10px_36px_-20px_rgba(15,23,42,0.18)] ring-1 ring-black/[0.05]"
+                            : "hover:bg-white/55"
+                        }`}
+                      >
+                        <span
+                          className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-[12px] font-bold tabular-nums transition-all duration-200 ${
+                            selected
+                              ? "bg-primary text-white shadow-md shadow-primary/30"
+                              : "bg-[#1a2842]/88 text-white"
+                          }`}
+                        >
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-base">
+                            {area.title}
+                          </span>
+                          <span className="mt-1 line-clamp-2 text-[12px] leading-snug text-secondary/60 sm:text-[13px]">
+                            {area.description}
+                          </span>
+                        </span>
+                      </button>
+                    );
+                  })}
                 </div>
 
-                <div className="grid divide-y divide-ink/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
-                  {area.products.map((p, j) => (
-                    <div
-                      key={`${area.title}-${p.name}-${j}`}
-                      className="group flex items-center gap-5 px-6 py-5 transition-colors duration-300 hover:bg-[#faf9f5] sm:px-8"
-                    >
-                      <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-xl border border-ink/10 bg-white shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:h-44 sm:w-44">
-                        <Image
-                          src={p.image}
-                          alt={p.name}
-                          fill
-                          className="object-contain p-0 transition-transform duration-300 group-hover:scale-[1.03]"
-                          sizes="144px"
-                        />
-                      </div>
-                      <div className="min-w-0">
-                        <p className="text-base font-bold tracking-tight text-dark sm:text-lg">{p.name}</p>
-                        <p className="mt-1 text-xs text-secondary/55 sm:text-sm">{p.type}</p>
-                        <div className="mt-3 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-ink/40">
-                          <span className="h-1.5 w-1.5 rounded-full bg-primary/70" />
-                          Uygun Konfigürasyon
+                <div
+                  id={`area-panel-${selectedAreaIndex}`}
+                  role="tabpanel"
+                  aria-labelledby={`area-tab-${selectedAreaIndex}`}
+                  className="flex min-h-0 min-w-0 flex-col bg-gradient-to-b from-[#f2f1ec] via-[#f4f3ef] to-[#eeede7]"
+                >
+                  {(() => {
+                    const area = areas[selectedAreaIndex];
+                    if (!area) return null;
+                    return (
+                      <>
+                        <div className="border-b border-white/60 bg-white/[0.72] px-5 py-6 backdrop-blur-md sm:px-8 sm:py-7">
+                          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary/90">{areasProductsRibbon}</p>
+                          <p className="mt-2 max-w-3xl text-[15px] font-medium leading-relaxed text-secondary/78 sm:text-base">
+                            {area.description}
+                          </p>
                         </div>
-                      </div>
-                    </div>
-                  ))}
+                        <div className="p-5 sm:p-6 lg:p-8">
+                          <ul className="grid list-none grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+                            {area.products.map((p, j) => {
+                              const src = typeof p.image === "string" ? p.image : "";
+                              const jpgWhiteStudio = /\.jpe?g$/i.test(src);
+                              const productSlug = PRODUCT_NAME_TO_SLUG[p.name?.trim().toUpperCase()];
+                              const productHref = productSlug ? `/${locale}/urunler/${productSlug}` : "";
+                              return (
+                                <li
+                                  key={`${area.title}-${p.name}-${j}`}
+                                  className="min-w-0"
+                                >
+                                  {productHref ? (
+                                    <Link
+                                      href={productHref}
+                                      className="group flex h-full min-w-0 flex-col overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/75 shadow-[0_14px_44px_-32px_rgba(15,23,42,0.14)] ring-1 ring-ink/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-white/95 hover:shadow-[0_22px_50px_-28px_rgba(15,23,42,0.22)]"
+                                    >
+                                      <div
+                                        className={`relative aspect-[5/4] w-full overflow-hidden bg-gradient-to-b from-[#f8f7f3] to-[#e8e6df] ${jpgWhiteStudio ? "isolate" : ""}`}
+                                      >
+                                        <Image
+                                          src={p.image}
+                                          alt={p.name}
+                                          fill
+                                          className={`object-contain p-4 transition-transform duration-500 group-hover:scale-[1.04] ${jpgWhiteStudio ? "mix-blend-multiply" : ""}`}
+                                          sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                                        />
+                                      </div>
+                                      <div className="flex flex-1 flex-col gap-2.5 px-4 pb-5 pt-4 sm:px-5 sm:pb-6 sm:pt-5">
+                                        <p className="text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-[16px]">
+                                          {p.name}
+                                        </p>
+                                        <p className="text-[13px] leading-snug text-secondary/70 sm:text-sm">{p.type}</p>
+                                        <div className="mt-auto inline-flex w-fit max-w-full items-center gap-2 rounded-full bg-ink/[0.06] px-3 py-1.5">
+                                          <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                                          <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-ink/48">
+                                            {areasProductTag}
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </Link>
+                                  ) : (
+                                    <div className="group flex h-full min-w-0 flex-col overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/75 shadow-[0_14px_44px_-32px_rgba(15,23,42,0.14)] ring-1 ring-ink/[0.04]">
+                                      <div
+                                        className={`relative aspect-[5/4] w-full overflow-hidden bg-gradient-to-b from-[#f8f7f3] to-[#e8e6df] ${jpgWhiteStudio ? "isolate" : ""}`}
+                                      >
+                                        <Image
+                                          src={p.image}
+                                          alt={p.name}
+                                          fill
+                                          className={`object-contain p-4 ${jpgWhiteStudio ? "mix-blend-multiply" : ""}`}
+                                          sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                                        />
+                                      </div>
+                                      <div className="flex flex-1 flex-col gap-2.5 px-4 pb-5 pt-4 sm:px-5 sm:pb-6 sm:pt-5">
+                                        <p className="text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-[16px]">
+                                          {p.name}
+                                        </p>
+                                        <p className="text-[13px] leading-snug text-secondary/70 sm:text-sm">{p.type}</p>
+                                        <div className="mt-auto inline-flex w-fit max-w-full items-center gap-2 rounded-full bg-ink/[0.06] px-3 py-1.5">
+                                          <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                                          <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-ink/48">
+                                            {areasProductTag}
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  )}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      </>
+                    );
+                  })()}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ) : null}
         </div>
       </section>
 
       {/* 7. FAQ */}
-      <section className="relative bg-sand-200 py-20 sm:py-24">
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-60" />
+      <section className="relative bg-[#ecebe6] py-20 sm:py-24">
+        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.14]" />
         <div aria-hidden className="pointer-events-none absolute inset-y-0 left-1 hidden items-stretch gap-0 py-2 lg:flex">
           {[44, 36, 30].map((size, colIdx) => (
             <div

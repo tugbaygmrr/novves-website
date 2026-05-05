@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { locales } from "@/i18n/config";
 import { getDictionary, hasLocale, type Locale } from "../../dictionaries";
 
 type PartnerPageCopy = {
@@ -15,6 +16,45 @@ type PartnerPageCopy = {
   contactTitle: string;
   contactDesc: string;
   contactForm: string;
+};
+
+const partnerPageCopyEn: PartnerPageCopy = {
+    stats: [
+      { value: "3", label: "Partnership axes" },
+      { value: "TR + Global", label: "Scale" },
+      { value: "NOVVES", label: "Brand" },
+    ],
+    highlightsLabel: "Partnership frame",
+    highlightsTitle: "Collaboration layers in our projects",
+    highlightsDesc:
+      "Each partnership plays a different role. Logos and detailed showcase content will appear below these blocks once ready.",
+    highlights: [
+      {
+        stat: "Supply",
+        title: "Materials and schedule discipline",
+        description:
+          "Supply aligned to project timelines, quality sign-off, and logistics clarity—the baseline that reduces friction on site.",
+      },
+      {
+        stat: "Field",
+        title: "Installation and commissioning",
+        description:
+          "Solution partners who move in step with on-site assembly, testing, and handover with experienced crews.",
+      },
+      {
+        stat: "Tech",
+        title: "Integration and support",
+        description:
+          "Ecosystem collaborations that keep automation, monitoring, and service layers talking to each other.",
+      },
+    ],
+    soonLabel: "Publishing",
+    soonTitle: "Partner showcase coming very soon.",
+    contactTag: "Contact",
+    contactTitle: "Write to us about partnerships or a project.",
+    contactDesc:
+      "Reach out for collaboration proposals and technical discussions; our team will respond as soon as possible.",
+    contactForm: "Contact form",
 };
 
 const pageCopy: Record<Locale, PartnerPageCopy> = {
@@ -56,43 +96,119 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
       "İş birliği teklifleri ve teknik görüşmeler için doğrudan iletişime geçebilirsiniz; ekibimiz en kısa sürede dönüş yapar.",
     contactForm: "İletişim formu",
   },
-  en: {
+  en: partnerPageCopyEn,
+  es: {
     stats: [
-      { value: "3", label: "Partnership axes" },
-      { value: "TR + Global", label: "Scale" },
-      { value: "NOVVES", label: "Brand" },
+      { value: "3", label: "Ejes de colaboración" },
+      { value: "TR + Global", label: "Alcance" },
+      { value: "NOVVES", label: "Marca" },
     ],
-    highlightsLabel: "Partnership frame",
-    highlightsTitle: "Collaboration layers in our projects",
+    highlightsLabel: "Marco de colaboración",
+    highlightsTitle: "Capas de colaboración en nuestros proyectos",
     highlightsDesc:
-      "Each partnership plays a different role. Logos and detailed showcase content will appear below these blocks once ready.",
+      "Cada colaboración cumple un rol distinto. Los logotipos y el contenido detallado del escaparate aparecerán bajo estos bloques cuando esté listo.",
     highlights: [
       {
-        stat: "Supply",
-        title: "Materials and schedule discipline",
+        stat: "Suministro",
+        title: "Materiales y disciplina de plazos",
         description:
-          "Supply aligned to project timelines, quality sign-off, and logistics clarity—the baseline that reduces friction on site.",
+          "Suministro alineado con los plazos del proyecto, validación de calidad y logística clara: la base para reducir fricciones en obra.",
       },
       {
-        stat: "Field",
-        title: "Installation and commissioning",
+        stat: "Obra",
+        title: "Instalación y puesta en servicio",
         description:
-          "Solution partners who move in step with on-site assembly, testing, and handover with experienced crews.",
+          "Socios de solución que avanzan al unísono con el montaje, las pruebas y la entrega en obra con equipos experimentados.",
       },
       {
-        stat: "Tech",
-        title: "Integration and support",
+        stat: "Tecnología",
+        title: "Integración y soporte",
         description:
-          "Ecosystem collaborations that keep automation, monitoring, and service layers talking to each other.",
+          "Colaboraciones de ecosistema que mantienen conectadas las capas de automatización, monitorización y servicio.",
       },
     ],
-    soonLabel: "Publishing",
-    soonTitle: "Partner showcase coming very soon.",
-    contactTag: "Contact",
-    contactTitle: "Write to us about partnerships or a project.",
+    soonLabel: "Publicación",
+    soonTitle: "Vitrina de socios disponible muy pronto.",
+    contactTag: "Contacto",
+    contactTitle: "Escríbanos sobre colaboraciones o un proyecto.",
     contactDesc:
-      "Reach out for collaboration proposals and technical discussions; our team will respond as soon as possible.",
-    contactForm: "Contact form",
+      "Contacte para propuestas de colaboración y debates técnicos; nuestro equipo responderá lo antes posible.",
+    contactForm: "Formulario de contacto",
+  },
+  zh: {
+    stats: [
+      { value: "3", label: "合作维度" },
+      { value: "TR + Global", label: "覆盖范围" },
+      { value: "NOVVES", label: "品牌" },
+    ],
+    highlightsLabel: "合作框架",
+    highlightsTitle: "项目中的协作层次",
+    highlightsDesc:
+      "每项合作承担不同角色。标识与完整展示内容准备就绪后，将发布在这些版块下方。",
+    highlights: [
+      {
+        stat: "供应",
+        title: "物料与进度纪律",
+        description:
+          "与项目时间表一致的供货、质量签核与清晰的物流——减少现场摩擦的基础。",
+      },
+      {
+        stat: "现场",
+        title: "安装与调试",
+        description:
+          "与经验丰富的团队同步推进装配、测试与移交的解决方案合作伙伴。",
+      },
+      {
+        stat: "技术",
+        title: "集成与支持",
+        description:
+          "使自动化、监控与服务各层协同运作的生态系统合作。",
+      },
+    ],
+    soonLabel: "发布",
+    soonTitle: "合作伙伴展示即将上线。",
+    contactTag: "联系",
+    contactTitle: "欢迎就合作或项目与我们联系。",
+    contactDesc: "如需合作方案与技术讨论，请直接联系；我们将尽快回复。",
+    contactForm: "联系表单",
+  },
+  ur: {
+    stats: [
+      { value: "3", label: "شراکت کے محور" },
+      { value: "TR + Global", label: "پیمانہ" },
+      { value: "NOVVES", label: "برانڈ" },
+    ],
+    highlightsLabel: "شراکتی ڈھانچہ",
+    highlightsTitle: "منصوبوں میں تعاون کی تہیں",
+    highlightsDesc:
+      "ہر شراکت ایک مختلف کردار ادا کرتی ہے۔ لوگو اور تفصیلی نمائش کا مواد تیار ہونے پر ان بلاکس کے نیچے شائع کیا جائے گا۔",
+    highlights: [
+      {
+        stat: "فراہمی",
+        title: "مواد اور وقت کی نظم و ضبط",
+        description:
+          "منصوبے کے شیڈول کے مطابق فراہمی، کوالٹی کی منظوری اور واضح لاجسٹکس — میدان میں رکاوٹ کم کرنے کا بنیادی قدم۔",
+      },
+      {
+        stat: "میدان",
+        title: "انسٹالیشن اور کمیشننگ",
+        description:
+          "ایسے حل کے شراکت دار جو ماہر ٹیموں کے ساتھ اسمبلی، ٹیسٹنگ اور حوالگی کے عمل میں ہم آہنگ رہتے ہیں۔",
+      },
+      {
+        stat: "ٹیک",
+        title: "انضمام اور معاونت",
+        description:
+          "خودکار نظام، نگرانی اور سروس کی سطوح کو آپس میں مربوط رکھنے والی ایکو سسٹم شراکت داری۔",
+      },
+    ],
+    soonLabel: "اشاعت",
+    soonTitle: "شراکت داروں کی نمائش جلد۔",
+    contactTag: "رابطہ",
+    contactTitle: "شراکت یا منصوبے کے بارے میں ہمیں لکھیں۔",
+    contactDesc:
+      "تعاون کی تجاویز اور تکنیکی بات چیت کے لیے رابطہ کریں؛ ہماری ٹیم جلد از جلد جواب دے گی۔",
+    contactForm: "رابطہ فارم",
   },
   ru: {
     stats: [
@@ -132,7 +248,371 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
       "Dlya predlozheniy o sotrudnichestve i tekhnicheskikh konsultatsiy obrashaytes napryamuyu; komanda otvetit v blizhayshiye sroki.",
     contactForm: "Forma kontakta",
   },
-};
+  ar: {
+    stats: [
+      { value: "3", label: "محور الشراكة" },
+      { value: "TR + Global", label: "النطاق" },
+      { value: "NOVVES", label: "العلامة" },
+    ],
+    highlightsLabel: "إطار الشراكة",
+    highlightsTitle: "طبقات التعاون في المشاريع",
+    highlightsDesc:
+      "كل شراكة تؤدي دوراً مختلفاً. ستُعرض الشعارات والمحتوى التفصيلي أسفل هذه الكتل عند جاهزيته.",
+    highlights: [
+      {
+        stat: "التوريد",
+        title: "المواعيد وجودة المواد",
+        description:
+          "توريد متوافق مع جدول المشروع واعتماد الجودة ووضوح اللوجستيك؛ الطبقة الأساسية لتقليل الاضطراب في الموقع.",
+      },
+      {
+        stat: "التنفيذ",
+        title: "التركيب والتكليف",
+        description:
+          "شركاء يعملون جنباً إلى جنب مع فرق ذات خبرة في التجميع والاختبار والتسليم.",
+      },
+      {
+        stat: "التقنية",
+        title: "التكامل والدعم",
+        description:
+          "شراكات منظومة تجعل الأتمتة والمراقبة والخدمة تعمل ككتلة واحدة.",
+      },
+    ],
+    soonLabel: "جدول النشر",
+    soonTitle: "عرض الشركاء قريباً.",
+    contactTag: "اتصل بنا",
+    contactTitle: "راسلنا للشراكة أو المشروع.",
+    contactDesc:
+      "لاقتراحات التعاون والمناقشات الفنية؛ سيجيب فريقنا في أقرب وقت.",
+    contactForm: "نموذج الاتصال",
+  },
+  de: {
+    stats: [
+      { value: "3", label: "Partnerschaftsachse" },
+      { value: "TR + Global", label: "Reichweite" },
+      { value: "NOVVES", label: "Marke" },
+    ],
+    highlightsLabel: "Rahmen der Partnerschaft",
+    highlightsTitle: "Zusammenarbeitsebenen in Projekten",
+    highlightsDesc:
+      "Jede Partnerschaft hat eine andere Rolle. Logos und ausführliche Inhalte werden unter diesen Blöcken veröffentlicht, sobald sie bereitstehen.",
+    highlights: [
+      {
+        stat: "Beschaffung",
+        title: "Material und Termintreue",
+        description:
+          "Lieferungen im Projektzeitplan, Qualitätsfreigabe und klare Logistik – die Basis für reibungslose Arbeit vor Ort.",
+      },
+      {
+        stat: "Ausführung",
+        title: "Montage und Inbetriebnahme",
+        description:
+          "Partner, die Montage, Tests und Übergabe gemeinsam mit erfahrenen Teams abstimmen.",
+      },
+      {
+        stat: "Technik",
+        title: "Integration und Support",
+        description:
+          "Ökosystem-Partnerschaften für Automatisierung, Monitoring und Service als zusammenhängende Ebene.",
+      },
+    ],
+    soonLabel: "Veröffentlichung",
+    soonTitle: "Partner-Vitrine demnächst.",
+    contactTag: "Kontakt",
+    contactTitle: "Schreiben Sie uns zu Partnerschaft oder Projekt.",
+    contactDesc:
+      "Für Kooperationsangebote und technische Gespräche erreichen Sie uns direkt; unser Team meldet sich zeitnah.",
+    contactForm: "Kontaktformular",
+  },
+  it: {
+    stats: [
+      { value: "3", label: "Assi di partnership" },
+      { value: "TR + Global", label: "Scala" },
+      { value: "NOVVES", label: "Marchio" },
+    ],
+    highlightsLabel: "Quadro partnership",
+    highlightsTitle: "Livelli di collaborazione nei progetti",
+    highlightsDesc:
+      "Ogni partnership ha un ruolo diverso. Loghi e contenuti dettagliati appariranno sotto questi blocchi quando saranno pronti.",
+    highlights: [
+      {
+        stat: "Fornitura",
+        title: "Materiali e rispetto dei tempi",
+        description:
+          "Fornitura allineata ai cronoprogrammi, approvazione qualità e logistica chiara: la base che riduce gli attriti in cantiere.",
+      },
+      {
+        stat: "Cantiere",
+        title: "Installazione e commissioning",
+        description:
+          "Partner che procedono in sincrono con montaggio, prove e consegna con team esperti.",
+      },
+      {
+        stat: "Tech",
+        title: "Integrazione e supporto",
+        description:
+          "Collaborazioni nell’ecosistema che mantengono automazione, monitoraggio e assistenza collegate.",
+      },
+    ],
+    soonLabel: "Pubblicazione",
+    soonTitle: "Vetrina partner in arrivo molto presto.",
+    contactTag: "Contatti",
+    contactTitle: "Scrivici per partnership o progetti.",
+    contactDesc:
+      "Contattaci per proposte di collaborazione e confronti tecnici; il team risponderà al più presto.",
+    contactForm: "Modulo contatti",
+  },
+  fr: {
+    stats: [
+      { value: "3", label: "Axes de partenariat" },
+      { value: "TR + Global", label: "Échelle" },
+      { value: "NOVVES", label: "Marque" },
+    ],
+    highlightsLabel: "Cadre du partenariat",
+    highlightsTitle: "Niveaux de collaboration dans nos projets",
+    highlightsDesc:
+      "Chaque partenariat joue un rôle différent. Les logos et le contenu détaillé de la vitrine apparaîtront sous ces blocs une fois prêts.",
+    highlights: [
+      {
+        stat: "Approvisionnement",
+        title: "Matériaux et respect du planning",
+        description:
+          "Approvisionnement aligné sur les échéances du projet, validation qualité et logistique claire — la base qui réduit les frictions sur chantier.",
+      },
+      {
+        stat: "Terrain",
+        title: "Installation et mise en service",
+        description:
+          "Partenaires qui avancent au même rythme que le montage, les essais et la réception avec des équipes expérimentées.",
+      },
+      {
+        stat: "Tech",
+        title: "Intégration et support",
+        description:
+          "Collaborations au sein de l'écosystème pour que automatisation, supervision et maintenance restent interconnectées.",
+      },
+    ],
+    soonLabel: "Publication",
+    soonTitle: "Vitrine partenaires très bientôt.",
+    contactTag: "Contact",
+    contactTitle: "Écrivez-nous pour un partenariat ou un projet.",
+    contactDesc:
+      "Contactez-nous pour des propositions de collaboration et des échanges techniques ; notre équipe vous répondra dans les meilleurs délais.",
+    contactForm: "Formulaire de contact",
+  },
+  az: {
+    stats: [
+      { value: "3", label: "Tərəfdaşlıq oxu" },
+      { value: "TR + Global", label: "Miqyas" },
+      { value: "NOVVES", label: "Brend" },
+    ],
+    highlightsLabel: "Tərəfdaşlıq çərçivəsi",
+    highlightsTitle: "Layihələrdə əməkdaşlıq qatları",
+    highlightsDesc:
+      "Hər tərəfdaşlıq fərqli rol oynayır. Loqotiplər və ətraflı vitrin məzmunu hazır olanda bu blokların altında dərc ediləcək.",
+    highlights: [
+      {
+        stat: "Təchizat",
+        title: "Material və cədvəl intizamı",
+        description:
+          "Layihə vaxt qrafikinə uyğun təchizat, keyfiyyət təsdiqi və aydın logistika — obyektdə sürtünməni azaldan təməl.",
+      },
+      {
+        stat: "Meydança",
+        title: "Quraşdırma və istismara qəbul",
+        description:
+          "Montaj, sınaq və təhvil prosesində təcrübəli komandalarla eyni addımda irəliləyən həll tərəfdaşları.",
+      },
+      {
+        stat: "Tex",
+        title: "İnteqrasiya və dəstək",
+        description:
+          "Avtomatlaşdırma, monitorinq və xidmət qatlarının bir-biri ilə əlaqədə qalmasını təmin edən ekosistem əməkdaşlıqları.",
+      },
+    ],
+    soonLabel: "Dərc",
+    soonTitle: "Tərəfdaş vitrini tezliklə.",
+    contactTag: "Əlaqə",
+    contactTitle: "Tərəfdaşlıq və ya layihə üçün yazın.",
+    contactDesc:
+      "Əməkdaşlıq təklifləri və texniki müzakirələr üçün əlaqə saxlayın; komandamız mümkün qədər tez cavab verəcək.",
+    contactForm: "Əlaqə formu",
+  },
+  kk: {
+    stats: [
+      { value: "3", label: "Серіктестік осі" },
+      { value: "TR + Global", label: "Аймақ" },
+      { value: "NOVVES", label: "Бренд" },
+    ],
+    highlightsLabel: "Серіктестік аясы",
+    highlightsTitle: "Жобалардағы ынтымақтастық қабаттары",
+    highlightsDesc:
+      "Әр серіктестік өз рөлін атқарады. Логотиптер мен толық витрина мазмұны дайын болғанда осы блоктардың астында жарияланады.",
+    highlights: [
+      {
+        stat: "Жеткізу",
+        title: "Материал және кесте тәртібі",
+        description:
+          "Жоба кестесіне сәйкес жеткізу, сапаны растау және логистиканың анықтығы — алаңдағы қақтығыстарды азайтатын негіз.",
+      },
+      {
+        stat: "Алаң",
+        title: "Орнату және іске қосу",
+        description:
+          "Монтаж, сынақ және тапсыру процестерінде тәжірибелі топтармен бірге қозғалатын шешім серіктестері.",
+      },
+      {
+        stat: "Техно",
+        title: "Интеграция және қолдау",
+        description:
+          "Автоматтандыру, мониторинг және сервис қабаттарының бір-бірімен байланыста болуын қамтамасыз ететін экожүйелік ынтымақтастықтар.",
+      },
+    ],
+    soonLabel: "Жариялау",
+    soonTitle: "Серіктестер витрасасы жақында.",
+    contactTag: "Байланыс",
+    contactTitle: "Серіктестік немесе жоба туралы жазыңыз.",
+    contactDesc:
+      "Ынтымақтастық ұсыныстары және техникалық талқылаулар үшін хабарласыңыз; командамыз мүмкіндігінше тез жауап береді.",
+    contactForm: "Байланыс формасы",
+  },
+  tg: {
+    stats: [
+      { value: "3", label: "Меҳварҳои шарикӣ" },
+      { value: "TR + Global", label: "Миқёс" },
+      { value: "NOVVES", label: "Бренд" },
+    ],
+    highlightsLabel: "Чорчубаи шарикӣ",
+    highlightsTitle: "Қабатҳои ҳамкорӣ дар лоиҳаҳо",
+    highlightsDesc:
+      "Ҳар як шарик нақши муайён дорад. Логотипҳо ва мундариҷаи пурраи витрина ҳангоми омодагӣ зери ин блокҳо нашр мешаванд.",
+    highlights: [
+      {
+        stat: "Таҳвил",
+        title: "Мавод ва интизоми ҷадвал",
+        description:
+          "Таҳвил ба ҷадвали лоиҳа, тасдиқи сифат ва логистикаи равшан — асоси кори бемамо дар майдон.",
+      },
+      {
+        stat: "Майдон",
+        title: "Насб ва ба кор даровардан",
+        description:
+          "Шариконе, ки дар раванди насб, санҷиш ва супориди объект бо гурӯҳҳои таҷрибавӣ ҳамоҳанганд.",
+      },
+      {
+        stat: "Техно",
+        title: "Интегратсия ва дастгирӣ",
+        description:
+          "Ҳамкориҳои экосистемӣ, ки қабатҳои автоматкунӣ, мониторинг ва хизматро бо ҳам пайваст мекунанд.",
+      },
+    ],
+    soonLabel: "Нашр",
+    soonTitle: "Витринаи шарикон ба зудӣ.",
+    contactTag: "Тамос",
+    contactTitle: "Дар бораи шарикӣ ё лоиҳа ба мо нависед.",
+    contactDesc:
+      "Барои пешниҳоди ҳамкорӣ ва муҳокимаҳои техникӣ тамос гиред; дастаи мо ба зудӣ ҷавоб медиҳад.",
+    contactForm: "Шакли тамос",
+  },
+  lt: {
+    stats: [
+      { value: "3", label: "Partnerystės ašys" },
+      { value: "TR + Global", label: "Mastas" },
+      { value: "NOVVES", label: "Prekės ženklas" },
+    ],
+    highlightsLabel: "Partnerystės rėmas",
+    highlightsTitle: "Bendradarbiavimo sluoksniai projektuose",
+    highlightsDesc:
+      "Kiekviena partnerystė atlieka skirtingą vaidmenį. Logotipai ir detali vitrinos turinys bus skelbiami po šiais blokais pasiruošus.",
+    highlights: [
+      {
+        stat: "Tiekimas",
+        title: "Medžiagų ir grafiko drausmė",
+        description:
+          "Tiekimas pagal projekto grafiką, kokybės patvirtinimas ir aiški logistika – pagrindas, mažinantis trikdžius aikštelėje.",
+      },
+      {
+        stat: "Aikštelė",
+        title: "Montavimas ir paleidimas",
+        description:
+          "Sprendimų partneriai, sinchroniškai dirbantys su patyrusiomis brigadomis montuojant, bandant ir perduodant objektą.",
+      },
+      {
+        stat: "Technologijos",
+        title: "Integracija ir palaikymas",
+        description:
+          "Ekosistemų bendradarbiavimas, jungiantis automatizavimo, stebėsenos ir aptarnavimo sluoksnius.",
+      },
+    ],
+    soonLabel: "Publikavimas",
+    soonTitle: "Partnerių vitrina netrukus.",
+    contactTag: "Kontaktai",
+    contactTitle: "Rašykite apie partnerystę ar projektą.",
+    contactDesc:
+      "Kreipkitės dėl bendradarbiavimo pasiūlymų ir techninių diskusijų; mūsų komanda atsakys kaip įmanoma greičiau.",
+    contactForm: "Kontaktų forma",
+  },
+  pl: {
+    stats: [
+      { value: "3", label: "Osie partnerstwa" },
+      { value: "TR + Global", label: "Zasięg" },
+      { value: "NOVVES", label: "Marka" },
+    ],
+    highlightsLabel: "Rama partnerstwa",
+    highlightsTitle: "Warstwy współpracy w projektach",
+    highlightsDesc:
+      "Każde partnerstwo pełni inną rolę. Logotypy i pełna treść witryny pojawią się pod tymi blokami po przygotowaniu.",
+    highlights: [
+      {
+        stat: "Dostawy",
+        title: "Materiały i dyscyplina harmonogramu",
+        description:
+          "Dostawy zgodne z harmonogramem projektu, akceptacja jakości i przejrzysta logistyka — podstawa mniejszego tarcia na placu budowy.",
+      },
+      {
+        stat: "Plac budowy",
+        title: "Montaż i uruchomienie",
+        description:
+          "Partnerzy rozwiązań, którzy kroczą w parze z doświadczonymi ekipami przy montażu, testach i przekazaniu obiektu.",
+      },
+      {
+        stat: "Technologia",
+        title: "Integracja i wsparcie",
+        description:
+          "Współpraca ekosystemowa łącząca warstwy automatyki, monitoringu i serwisu.",
+      },
+    ],
+    soonLabel: "Publikacja",
+    soonTitle: "Witryna partnerów wkrótce.",
+    contactTag: "Kontakt",
+    contactTitle: "Napisz do nas o partnerstwie lub projekcie.",
+    contactDesc:
+      "Skontaktuj się w sprawie propozycji współpracy i konsultacji technicznych; nasz zespół odpowie możliwie szybko.",
+    contactForm: "Formularz kontaktowy",
+  },
+  ...Object.fromEntries(
+    locales
+      .filter(
+        (l) =>
+          l !== "tr" &&
+          l !== "en" &&
+          l !== "ru" &&
+          l !== "ar" &&
+          l !== "de" &&
+          l !== "it" &&
+          l !== "fr" &&
+          l !== "az" &&
+          l !== "kk" &&
+          l !== "tg" &&
+          l !== "es" &&
+          l !== "zh" &&
+          l !== "ur" &&
+          l !== "lt" &&
+          l !== "pl",
+      )
+      .map((l) => [l, partnerPageCopyEn]),
+  ),
+} as Record<Locale, PartnerPageCopy>;
 
 const pillarIcons = [
   <svg key="0" className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
+import { localeUi, locales } from "@/i18n/config";
 
 /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    GÃ¶rsel Form EditÃ¶rÃ¼ â€” JSON yerine kullanÄ±cÄ± dostu alanlar
@@ -331,11 +332,11 @@ const PAGE_GROUPS: PageGroup[] = [
   },
 ];
 
-const LOCALES = [
-  { code: "tr", label: "Türkçe", flag: "🇹🇷" },
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "ru", label: "Русский", flag: "🇷🇺" },
-];
+const LOCALES = locales.map((code) => ({
+  code,
+  label: localeUi[code].label,
+  flag: localeUi[code].flagEmoji,
+}));
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -473,12 +474,14 @@ export default function DashboardPage() {
 
         {/* Language */}
         <div className="border-b border-gray-100 px-4 py-3">
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             {LOCALES.map((l) => (
               <button
                 key={l.code}
+                type="button"
                 onClick={() => setLocale(l.code)}
-                className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2 text-[11px] font-semibold transition-all ${
+                title={l.label}
+                className={`flex min-w-[3rem] flex-1 basis-[30%] items-center justify-center gap-1 rounded-lg py-1.5 text-[10px] font-semibold transition-all sm:py-2 sm:text-[11px] ${
                   locale === l.code
                     ? "bg-orange-500 text-white shadow-sm shadow-orange-500/20"
                     : "bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-600"

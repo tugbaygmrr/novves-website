@@ -3,12 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { serviceDetailMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "Devreye Alma | Novves",
-  description:
-    "NOVVES satış sonrası devreye alma hizmeti — montaj kontrolü, performans testleri, optimizasyon ve eğitim.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return serviceDetailMetadata(locale, "devreAlma");
+}
 
 export default async function DevreyeAlma({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

@@ -3,11 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { serviceDetailMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "Yerinde Keşif | Novves",
-  description: "NOVVES yerinde keşif hizmeti - saha inceleme, ölçüm ve analiz ile projenize özel havalandırma çözümü.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return serviceDetailMetadata(locale, "yerindeKesif");
+}
 
 const stepIcons = [
   "M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5",

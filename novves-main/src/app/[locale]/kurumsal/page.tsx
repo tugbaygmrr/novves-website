@@ -3,14 +3,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { SolutionsCarousel } from "@/components/solutions-carousel";
+import { navbarHubMetadata } from "@/lib/i18n-metadata";
 import { getDictionary, hasLocale } from "../dictionaries";
 import heroFactoryImage from "../../../../IMG-20240401-WA0008.jpg";
 
-export const metadata: Metadata = {
-  title: "Kurumsal | Novves",
-  description:
-    "NOVVES kurumsal — hakkımızda, ekibimiz, referanslar, sertifikalar ve daha fazlası.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return navbarHubMetadata(locale, "corporate");
+}
 
 const corporateItems: { key: string; slug: string }[] = [
   {

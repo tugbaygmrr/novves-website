@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 import { ProductDetailPage } from "@/components/product-detail-page";
 
-export const metadata: Metadata = {
-  title: "Hound - Damperler | Novves",
-  description: "Hound serisi damperler — havalandırma ve yangın güvenliği sistemlerinde maksimum kontrol ve güvenlik.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "damperler");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

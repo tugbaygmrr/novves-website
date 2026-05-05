@@ -1,0 +1,2722 @@
+{
+  "dumanIsiTahliye": {
+    "breadcrumbCurrent": "Estrazione di fumo e calore",
+    "badge": "Soluzioni",
+    "titleLine1": "Estrazione di fumo e calore",
+    "titleHighlight": "Sistemi",
+    "subtitle": "Evacuazione controllata di fumo e calore in caso di incendio; soluzioni conformi alla normativa, supportate dall'ingegneria, dalla progettazione alla messa in servizio.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Analisi CFD",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      {
+        "value": "EN 12101-3",
+        "label": "Conformità normativa"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Resistenza al fuoco"
+      },
+      {
+        "value": "CFD",
+        "label": "Con supporto simulativo"
+      },
+      {
+        "value": "113+",
+        "label": "Progetti completati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "La prima minaccia in un incendio è il fumo",
+    "whyImportantP1": "Le statistiche sugli incendi mostrano che la maggior parte delle vittime non è causata dalle fiamme, ma dal fumo denso e dai gas tossici. Un sistema efficace di estrazione del fumo mantiene visibili e respirabili le vie di fuga; facilita l'intervento dei vigili del fuoco; riduce i danni strutturali.",
+    "whyImportantP2": "NOVVES gestisce l'intero processo dalla progettazione alla messa in servizio con il proprio team di ingegneria. Per ogni progetto si esegue l'analisi CFD per simulare il posizionamento delle ventole, gli scenari di diffusione del fumo e i tempi di evacuazione.",
+    "steps": [
+      {
+        "label": "Rilievo e analisi",
+        "desc": "Ispezione in cantiere, simulazione CFD, verifica conformità normativa"
+      },
+      {
+        "label": "Ingegneria",
+        "desc": "Selezione ventole, progetto canalizzazioni, posizionamento serrande, scenario di automazione"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Produzione interna, installazione professionale in opera"
+      },
+      {
+        "label": "Messa in servizio e manutenzione",
+        "desc": "Prove, reportistica, ispezioni periodiche e assistenza 24/7"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Sistemi jet fan",
+        "desc": "Ventilatori jet assiali e radiali resistenti alle alte temperature per convogliamento dell'aria ed estrazione del fumo in spazi chiusi."
+      },
+      {
+        "title": "Ventilatori per estrazione fumo",
+        "desc": "Certificati EN 12101-3, classe di resistenza al fuoco F300/2H con 2 ore di funzionamento continuo a 300°C."
+      },
+      {
+        "title": "Sistemi di serrande",
+        "desc": "Serrande fumo per vani ascensore azionate da servomotore e serrande di sfogo per la zonizzazione antincendio e fumo."
+      },
+      {
+        "title": "Sensori e rilevamento",
+        "desc": "Sensori CO, fumo e calore con raccolta dati per zona e monitoraggio dei valori limite."
+      },
+      {
+        "title": "Quadri di automazione",
+        "desc": "Quadri MCC controllati da PLC, integrazione BMS, gestione automatica delle ventole basata su scenari."
+      },
+      {
+        "title": "Ingegneria CFD",
+        "desc": "Analisi fluidodinamica computazionale per progetto, simulazione scenari incendio e reporting."
+      }
+    ],
+    "midCtaTitle": "Richiedi rilievo e preventivo per il tuo progetto",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Conformità EN 12101-3",
+        "desc": "Tutti i sistemi sono progettati e certificati secondo gli standard europei di sicurezza antincendio."
+      },
+      {
+        "title": "Resistenza al fuoco F300/2H",
+        "desc": "2 ore di funzionamento continuo a 300°C per garantire il tempo critico di evacuazione."
+      },
+      {
+        "title": "Progettazione supportata da CFD",
+        "desc": "Simulazione 3D per ogni progetto per verificare diffusione del fumo, temperatura e distanza di visibilità."
+      },
+      {
+        "title": "Servizio end-to-end",
+        "desc": "Rilievo, ingegneria, produzione, installazione, messa in servizio e manutenzione periodica da un'unica fonte."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Per ogni progetto si determina la combinazione di prodotti più adatta.",
+    "areas": [
+      {
+        "title": "Parcheggi coperti",
+        "description": "Estrazione CO + evacuazione fumo in caso di incendio",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Gallerie autostradali e ferroviarie",
+        "description": "Zonizzazione antincendio e convogliamento dell'aria",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali carterizzati",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Centri commerciali",
+        "description": "Controllo ed estrazione del fumo",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali carterizzati",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Stadi e sale congressuali",
+        "description": "Evacuazione di emergenza del fumo",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali carterizzati",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Impianti di produzione industriale",
+        "description": "Estrazione gas caldi legati al processo",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Ospedali e strutture sanitarie",
+        "description": "Zonizzazione del fumo nelle aree pazienti",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Aeroporti e stazioni metropolitane",
+        "description": "Estrazione fumo dello strato inferiore",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali carterizzati",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Magazzini e centri logistici",
+        "description": "Controllo del fumo in grandi volumi",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Centrali elettriche e sale gruppi elettrogeni",
+        "description": "Scarico in caso di incendi elettrici",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori Exproof",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Hotel e residenze (grattacieli)",
+        "description": "Pressurizzazione scale antincendio, estrazione fumo",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "In quali edifici è obbligatorio un sistema di estrazione fumo?",
+        "a": "Secondo le normative antincendio, i sistemi di estrazione fumo sono obbligatori in parcheggi coperti, centri commerciali, edifici elevati, gallerie e impianti industriali. Contattaci per un'analisi delle esigenze specifica del progetto."
+      },
+      {
+        "q": "Cosa significa la certificazione EN 12101-3?",
+        "a": "EN 12101-3 è lo standard europeo che certifica la capacità dei ventilatori di estrazione fumo e calore di operare per un periodo definito in condizioni di incendio (alta temperatura). I prodotti NOVVES sono realizzati in conformità a tale standard."
+      },
+      {
+        "q": "Perché è necessaria l'analisi CFD?",
+        "a": "L'analisi CFD consente di simulare il posizionamento dei jet fan, gli scenari di diffusione del fumo e i tempi di evacuazione in ambiente informatico. Verifica le prestazioni del sistema prima dell'installazione e documenta la conformità normativa."
+      },
+      {
+        "q": "È possibile integrare i sistemi esistenti?",
+        "a": "Sì, i sistemi di estrazione fumo NOVVES possono integrarsi con l'infrastruttura BMS esistente, i quadri rilevazione incendi e i sistemi di automazione."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Ti serve un sistema di estrazione fumo?",
+    "finalCtaDesc": "Contatta il nostro team di ingegneria per rilievo, analisi CFD, progettazione e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "konforIklimlendirme": {
+    "breadcrumbCurrent": "Climatizzazione comfort",
+    "badge": "Soluzioni",
+    "titleLine1": "Climatizzazione comfort",
+    "titleHighlight": "Sistemi",
+    "subtitle": "Temperatura, umidità e qualità dell'aria ideali in uffici, centri commerciali, hotel ed edifici commerciali; soluzioni climatizzazione efficienti dal punto di vista energetico, silenziose e confortevoli.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/iklimlendirme",
+    "trustStrip": [
+      {
+        "value": "EC Motor",
+        "label": "Efficienza energetica"
+      },
+      {
+        "value": "Eurovent",
+        "label": "Certificato"
+      },
+      {
+        "value": "BMS",
+        "label": "Integrazione"
+      },
+      {
+        "value": "200+",
+        "label": "Progetti completati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Un HVAC efficiente significa comfort e risparmio",
+    "whyImportantP1": "Negli edifici commerciali e istituzionali l'HVAC rappresenta la voce di consumo energetico più importante. Un sistema ben progettato riduce sensibilmente i costi operativi migliorando il comfort degli occupanti.",
+    "whyImportantP2": "NOVVES propone soluzioni dedicate al progetto con unità di trattamento aria modulari e sistemi di recupero di calore. Ventole a motore EC, scambiatori ad alta efficienza e sistemi di controllo intelligenti riducono al minimo i consumi.",
+    "steps": [
+      {
+        "label": "Analisi delle esigenze",
+        "desc": "Tipo di edificio, area d'uso, condizioni climatiche e requisiti di comfort"
+      },
+      {
+        "label": "Progettazione del sistema",
+        "desc": "Selezione UTA, progetto canalizzazioni, posizionamento diffusori, scenario di automazione"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Produzione UTA modulari, installazione professionale in opera"
+      },
+      {
+        "label": "Messa in servizio e manutenzione",
+        "desc": "Prove di prestazione, bilanciamento, servizio periodico filtri e manutenzione"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Unità di trattamento aria (TIGER)",
+        "desc": "Capacità 500 - 125.000 m3/h, progetto modulare, scambiatori ad alta efficienza e opzioni ventole EC."
+      },
+      {
+        "title": "Unità di recupero di calore",
+        "desc": "Recupera energia dall'aria di ripresa, riducendo i costi di riscaldamento/raffrescamento fino al 70%."
+      },
+      {
+        "title": "Unità deumidificazione (DOLPHIN)",
+        "desc": "Soluzioni dedicate al controllo dell'umidità per piscine coperte, SPA e ambienti ad alta umidità."
+      },
+      {
+        "title": "Ventilatori canalizzati (KOI)",
+        "desc": "Ventilatori canalizzati compatti e silenziosi per incremento di pressione in condotta e distribuzione dell'aria."
+      },
+      {
+        "title": "Sistemi diffusori e griglie",
+        "desc": "Diffusori a soffitto, parete e pavimento con serrande di regolazione portata per distribuzione omogenea."
+      },
+      {
+        "title": "Automazione e controllo",
+        "desc": "Sensori temperatura, umidità e CO2 con quadri di controllo intelligenti integrati al BMS."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto HVAC comfort",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Efficienza energetica",
+        "desc": "Fino al 40% di risparmio sui costi operativi con motori EC e recupero di calore."
+      },
+      {
+        "title": "Progetto modulare",
+        "desc": "Produzione UTA configurata su misura alla capacità richiesta per ogni progetto."
+      },
+      {
+        "title": "Funzionamento silenzioso",
+        "desc": "Bassi livelli di rumore nelle zone comfort grazie a involucro fonoisolato e antivibranti."
+      },
+      {
+        "title": "Soluzione da un'unica fonte",
+        "desc": "Ingegneria, produzione, installazione e messa in servizio con garanzia NOVVES."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni HVAC su misura per ogni tipo di edificio.",
+    "areas": [
+      {
+        "title": "Uffici e centri direzionali",
+        "description": "Ventilazione confortevole in open space e sale riunioni",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Hotel e residenze",
+        "description": "Controllo temperatura a livello locale e immissione aria fresca",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Ventilatori EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Centri commerciali",
+        "description": "Climatizzazione omogenea in aree ad alta affluenza",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Ospedali e strutture sanitarie",
+        "description": "Controllo preciso della temperatura in condizioni igieniche dell'aria",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Piscine e aree SPA",
+        "description": "Controllo dell'alta umidità e comfort",
+        "products": [
+          {
+            "name": "DOLPHIN",
+            "type": "Unità deumidificazione",
+            "image": "/images/products/dolphin-main.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Qual è la differenza tra una UTA e un climatizzatore split?",
+        "a": "La UTA è un sistema centrale che garantisce temperatura omogenea, controllo umidità e filtrazione su grandi superfici. Gli split operano ambiente per ambiente. Per gli edifici commerciali i sistemi UTA centralizzati sono molto più efficienti."
+      },
+      {
+        "q": "Quanta energia si risparmia con il recupero di calore?",
+        "a": "A seconda delle condizioni operative si possono ottenere risparmi energetici del 50-70%. L'energia termica dell'aria di ripresa viene trasferita all'aria fresca, riducendo sensibilmente i carichi di riscaldamento/raffrescamento."
+      },
+      {
+        "q": "Si può installare un sistema HVAC in edifici esistenti?",
+        "a": "Sì, le UTA modulari NOVVES si adattano agli edifici esistenti grazie alle dimensioni compatte. La soluzione più adatta viene proposta dopo un sopralluogo."
+      },
+      {
+        "q": "Quali sono gli intervalli di manutenzione?",
+        "a": "La sostituzione dei filtri avviene di solito ogni 3-6 mesi. Si consiglia almeno due manutenzioni generali all'anno. I contratti di manutenzione periodica NOVVES mantengono efficienti i sistemi in ogni momento."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi un sistema HVAC di comfort?",
+    "finalCtaDesc": "Contatta il nostro team di ingegneria per progettazione, selezione UTA e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "hijyenikFiltrasyon": {
+    "breadcrumbCurrent": "Ventilazione con filtrazione igienica",
+    "badge": "Soluzioni",
+    "titleLine1": "Filtrazione igienica",
+    "titleHighlight": "Ventilazione",
+    "subtitle": "Soluzioni di ventilazione con filtrazione HEPA conformi agli standard clean room per ospedali, laboratori, impianti farmaceutici e di trasformazione alimentare.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-filtrasyonu",
+    "trustStrip": [
+      {
+        "value": "HEPA H14",
+        "label": "Classe di filtrazione"
+      },
+      {
+        "value": "ISO 14644",
+        "label": "Standard clean room"
+      },
+      {
+        "value": "GMP",
+        "label": "Progetto conforme"
+      },
+      {
+        "value": "99.995%",
+        "label": "Ritenuta particelle"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Aria pulita, ambiente sicuro",
+    "whyImportantP1": "Nei blocchi operatori, negli impianti farmaceutici, nelle aree di trasformazione alimentare e nei laboratori, particolato aerodisperso e contaminazione microbiologica incidono direttamente sulla salute umana e sulla qualità del prodotto.",
+    "whyImportantP2": "I sistemi di ventilazione igienica NOVVES creano ambienti conformi alle classificazioni clean room mediante filtrazione multistadio (prefiltro G4 + filtro a tasche F7/F9 + HEPA H13/H14), controllo pressioni positivo/negativo e tecnologia a flusso laminare.",
+    "steps": [
+      {
+        "label": "Classificazione clean room",
+        "desc": "Determinazione classe ISO 14644 / GMP, requisiti particellari e di pressione"
+      },
+      {
+        "label": "Progettazione del sistema",
+        "desc": "Stadi di filtrazione, tasso di ricambi aria, progetto cascata pressioni"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Produzione involucri in acciaio inox, integrazione filtri HEPA, installazione in opera"
+      },
+      {
+        "label": "Validazione e manutenzione",
+        "desc": "Conteggio particelle, test integrità filtri DOP/PAO, manutenzione periodica"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Unità di trattamento aria igieniche",
+        "desc": "Involucri in acciaio inox, rivestimenti superfici interne, pannelli igienici e costruzione modulare conforme agli standard clean room."
+      },
+      {
+        "title": "Unità filtrazione HEPA",
+        "desc": "Filtri HEPA classe H13/H14 con tasso di ritenuta particelle del 99,995%."
+      },
+      {
+        "title": "Unità flusso laminare (LAF)",
+        "desc": "Flusso d'aria unidirezionale in sale operatorie e clean room per ambienti privi di particelle."
+      },
+      {
+        "title": "Sistemi controllo pressione",
+        "desc": "Monitoraggio differenziale tra ambienti e controllo automatico delle serrande."
+      },
+      {
+        "title": "Prefiltro e filtro a tasche",
+        "desc": "Prefiltri G4 e filtri a tasche F7/F9 che prolungano la vita dei HEPA con filtrazione multistadio."
+      },
+      {
+        "title": "Monitoraggio e automazione",
+        "desc": "Contatore particelle, sensore pressione e integrazione BMS per monitoraggio 24/7."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto di ventilazione igienica",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Conformità ISO 14644",
+        "desc": "Servizi di progettazione e validazione conformi alla classificazione clean room."
+      },
+      {
+        "title": "Produzione conforme GMP",
+        "desc": "Progettazione di sistema in linea con i requisiti GMP del settore farmaceutico e alimentare."
+      },
+      {
+        "title": "Filtrazione multistadio",
+        "desc": "G4 + F7/F9 + HEPA H14 per la massima pulizia dell'aria."
+      },
+      {
+        "title": "Servizio end-to-end",
+        "desc": "Progettazione, produzione, installazione, validazione e manutenzione periodica da un'unica fonte."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni per tutte le aree critiche che richiedono ventilazione igienica.",
+    "areas": [
+      {
+        "title": "Sale operatorie ospedaliere",
+        "description": "Flusso laminare, ambiente sterile filtrato HEPA",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Impianti di produzione farmaceutica",
+        "description": "Ventilazione clean room classe GMP",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Impianti di trasformazione alimentare",
+        "description": "Ambiente di produzione senza contaminazione",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Ventilatori EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Laboratori",
+        "description": "Ambienti isolati a pressione negativa/positiva",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Elettronica e semiconduttori",
+        "description": "Controllo particellare classe ultra-clean room",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Con quale frequenza vanno sostituiti i filtri HEPA?",
+        "a": "La vita dei filtri HEPA varia tra 2 e 5 anni a seconda delle condizioni operative. La sostituzione regolare di prefiltri e filtri a tasche prolunga sensibilmente la vita dei HEPA. Il monitoraggio della perdita di carico determina con precisione i tempi di sostituzione."
+      },
+      {
+        "q": "Come si determina la classificazione della clean room?",
+        "a": "La classificazione si basa sul conteggio delle particelle in aria secondo ISO 14644-1. Ad esempio ISO 5 è spesso usato per le sale operatorie, mentre ISO 7-8 è tipico delle aree di produzione farmaceutica."
+      },
+      {
+        "q": "Si possono aggiungere filtri HEPA a un impianto di ventilazione esistente?",
+        "a": "L'integrazione di filtri HEPA è possibile in base alla capacità dell'impianto esistente e alla perdita di carico. Per la filtrazione multistadio si consiglia in genere la revisione della UTA."
+      },
+      {
+        "q": "Offrite servizi di validazione?",
+        "a": "Sì, NOVVES fornisce servizi di validazione per tutti i progetti di ventilazione igienica, inclusi conteggio particelle, test integrità filtri DOP/PAO e mappatura pressioni."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi un sistema di ventilazione igienica?",
+    "finalCtaDesc": "Contatta il nostro team di ingegneria per classificazione clean room, progettazione e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "endustriyelHavaYonetimi": {
+    "breadcrumbCurrent": "Gestione aria industriale",
+    "badge": "Soluzioni",
+    "titleLine1": "Aria industriale",
+    "titleHighlight": "Gestione",
+    "subtitle": "Soluzioni efficaci di ventilazione, scarico e immissione aria fresca per stabilimenti, impianti produttivi e aree industriali.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "120°C",
+        "label": "Resistenza termica"
+      },
+      {
+        "value": "ATEX",
+        "label": "Opzione Exproof"
+      },
+      {
+        "value": "IP55",
+        "label": "Grado di protezione"
+      },
+      {
+        "value": "300+",
+        "label": "Progetti completati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Una corretta gestione dell'aria per l'efficienza produttiva",
+    "whyImportantP1": "Negli impianti industriali calore, umidità, polveri e gas di processo incidono direttamente sulla salute dei lavoratori, sulla qualità del prodotto e sulla durata delle macchine. Una gestione efficace dell'aria è anche un requisito fondamentale per la sicurezza sul lavoro.",
+    "whyImportantP2": "NOVVES gestisce da un'unica fonte progetti di scarico gas caldi, immissione aria fresca e ventilazione generale con sistemi ventilazione ad alta portata, progetto canalizzazioni e automazione dedicati alle esigenze degli impianti industriali.",
+    "steps": [
+      {
+        "label": "Sopralluogo",
+        "desc": "Tipo impianto, condizioni di processo, analisi temperatura/umidità/polveri"
+      },
+      {
+        "label": "Progettazione ingegneristica",
+        "desc": "Selezione ventole, calcolo canalizzazioni, bilanciamento aspirazione/immissione"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Ventilatori heavy-duty, produzione canalizzazioni industriali, installazione in opera"
+      },
+      {
+        "label": "Messa in servizio e assistenza",
+        "desc": "Misura prestazioni, bilanciamento, manutenzione periodica e supporto 24/7"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Ventilatori centrifughi industriali (NAUTILUS)",
+        "desc": "Ventilatori centrifughi resistenti ad alta pressione e temperatura, parete doppia o singola."
+      },
+      {
+        "title": "Ventilatori assiali (MARLIN)",
+        "desc": "Ventilatori assiali carterizzati o a pale ad alta portata per grandi volumi."
+      },
+      {
+        "title": "Ventilatori da tetto (HERON)",
+        "desc": "Ventilatori da tetto radiali e assiali per scarico o immissione aria fresca sui tetti degli stabilimenti."
+      },
+      {
+        "title": "Ventilatori da parete (OWL)",
+        "desc": "Ventilatori da parete radiali e assiali installati in facciata per aspirazione o mandata."
+      },
+      {
+        "title": "Ventilatori canalizzati (KOI)",
+        "desc": "Ventilatori canalizzati compatti per incremento pressione in condotta e trasferimento aria."
+      },
+      {
+        "title": "Automazione e controllo",
+        "desc": "Inverter, sensori temperatura/umidità, quadri PLC e integrazione BMS."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto di ventilazione industriale",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Resistenza alle alte temperature",
+        "desc": "Opzioni ventola con capacità di esercizio continuo fino a 120°C per scarichi di processo."
+      },
+      {
+        "title": "Progetto heavy-duty",
+        "desc": "Piastra involucro spessa, gruppi cuscinetto rinforzati e rivestimenti anticorrosione."
+      },
+      {
+        "title": "Ampia gamma prodotti",
+        "desc": "Ventilatori centrifughi, assiali, da tetto, da parete e canalizzati per ogni esigenza."
+      },
+      {
+        "title": "Prestazioni durature",
+        "desc": "Prestazioni continue con gruppi cuscinetto robusti, bilanciamento dinamico e monitoraggio vibrazioni."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni per tutti i tipi di produzione e stabilimento che richiedono ventilazione industriale.",
+    "areas": [
+      {
+        "title": "Stabilimenti automotive",
+        "description": "Scarico cabine verniciatura, aspirazione fumi saldatura",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Impianti siderurgici e metallurgici",
+        "description": "Scarico gas caldi e immissione aria fresca",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Stabilimenti tessili",
+        "description": "Controllo umidità e aspirazione polveri fibre",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Impianti chimici e petrolchimici",
+        "description": "Scarico gas corrosivi e immissione aria fresca",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Magazzini e centri logistici",
+        "description": "Ventilazione generale e controllo temperatura",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Cosa considerare nella scelta di una ventola industriale?",
+        "a": "Portata aria, perdita di carico, temperatura di esercizio, condizioni ambientali (polveri, umidità, gas corrosivi) e livello sonoro sono i criteri principali. Il team di ingegneria NOVVES individua il tipo di ventola più adatto a ogni progetto."
+      },
+      {
+        "q": "Quali ventole si usano ad alta temperatura?",
+        "a": "I ventilatori centrifughi serie NAUTILUS sono progettati per esercizio continuo fino a 120°C. Per temperature superiori si applicano materiali speciali e soluzioni di raffreddamento."
+      },
+      {
+        "q": "Serve una ventola certificata ATEX?",
+        "a": "Le ventole serie BEAR certificate ATEX sono obbligatorie in zone a rischio atmosfera esplosiva (chimica, petrolchimica, verniciatura, silos cereali, ecc.)."
+      },
+      {
+        "q": "Si può aggiungere ventilazione a impianti esistenti?",
+        "a": "Sì, si possono aumentare le capacità o aggiungere nuove linee di scarico a sistemi canalizzazione e ventole esistenti. La soluzione migliore si definisce dopo un sopralluogo."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi un sistema di ventilazione industriale?",
+    "finalCtaDesc": "Contatta il nostro team per sopralluogo, progettazione e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "hayvancilikTesisleri": {
+    "breadcrumbCurrent": "Ventilazione stabilimenti zootecnici",
+    "badge": "Soluzioni",
+    "titleLine1": "Stabilimenti zootecnici",
+    "titleHighlight": "Sistemi di ventilazione",
+    "subtitle": "Soluzioni di ventilazione dedicate che migliorano il benessere animale e l'efficienza produttiva in pollai, stalle e ricoveri.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "IP55",
+        "label": "Grado di protezione"
+      },
+      {
+        "value": "Anti-Corrosion",
+        "label": "Rivestimento"
+      },
+      {
+        "value": "EC Motor",
+        "label": "Risparmio energetico"
+      },
+      {
+        "value": "150+",
+        "label": "Progetti completati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Benessere animale ed efficienza produttiva",
+    "whyImportantP1": "Negli stabilimenti zootecnici ammoniaca, umidità, accumulo di calore e circolazione dell'aria insufficiente aumentano lo stress degli animali, riducendo direttamente la crescita, la produzione di latte e le uova.",
+    "whyImportantP2": "NOVVES mantiene livelli ottimali di temperatura, umidità e concentrazione dei gas con sistemi ventole anticorrosione progettati per pollai, stalle e ricoveri. Motori EC efficienti e sistemi di controllo intelligenti riducono i costi operativi.",
+    "steps": [
+      {
+        "label": "Analisi dell'impianto",
+        "desc": "Tipo animale, dimensioni struttura, clima e necessità di ventilazione"
+      },
+      {
+        "label": "Progettazione del sistema",
+        "desc": "Selezione ventole, layout, bilanciamento ingressi/uscite aria, integrazione raffrescamento"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Produzione ventole anticorrosione, installazione professionale in opera"
+      },
+      {
+        "label": "Messa in servizio e supporto",
+        "desc": "Prove prestazioni, taratura automazione, manutenzione periodica e assistenza tecnica"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Ventilatori per pollai (CHICKEN)",
+        "desc": "Ventilatori assiali anticorrosione ad alto volume dedicati a pollame e piccoli animali."
+      },
+      {
+        "title": "Ventilatori aspirazione da parete (OWL)",
+        "desc": "Ventilatori aspirazione installati in facciata, corpo zincato, per stalle bovini e ricoveri."
+      },
+      {
+        "title": "Ventilatori da tetto (HERON)",
+        "desc": "Ventilatori da tetto anticorrosione per scarico aria calda e immissione aria fresca."
+      },
+      {
+        "title": "Pannelli raffrescamento evaporativo",
+        "desc": "Sistemi a nido d'ape per raffrescamento adiabatico che abbassano le temperature interne nei climi caldi."
+      },
+      {
+        "title": "Griglie immissione aria",
+        "desc": "Griglie a lame regolabili per immissione aria controllata e configurazione ventilazione tunnel."
+      },
+      {
+        "title": "Automazione e controllo",
+        "desc": "Sensori temperatura, umidità e ammoniaca con regolazione automatica velocità ventole e gestione clima."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per la ventilazione del tuo stabilimento zootecnico",
+    "midCtaDesc": "Il nostro team esperto elaborerà una proposta su misura per la tua struttura.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Resistenza alla corrosione",
+        "desc": "Opzioni zincate e rivestimenti speciali per prestazioni durature contro ammoniaca e umidità."
+      },
+      {
+        "title": "Alta portata aria",
+        "desc": "Ventole di grande diametro per una circolazione efficace in volumi ampi."
+      },
+      {
+        "title": "Efficienza energetica",
+        "desc": "Significativo risparmio sui costi energetici con motori EC e controllo velocità variabile."
+      },
+      {
+        "title": "Focus sul benessere animale",
+        "desc": "Riduzione dei fattori di stress grazie a temperatura e qualità dell'aria ottimali."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni di ventilazione su misura per ogni tipo di stabilimento zootecnico.",
+    "areas": [
+      {
+        "title": "Pollai (broiler/ovaiole)",
+        "description": "Ventilazione tunnel e raffrescamento evaporativo",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Stalle bovini",
+        "description": "Scarico ammoniaca e immissione aria fresca",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Allevamenti lattiero-caseari",
+        "description": "Climatizzazione sala mungitura e ricoveri",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Allevamenti piccoli animali",
+        "description": "Ventilazione in ricoveri ovini e caprini",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Quale sistema di ventilazione preferire per i pollai?",
+        "a": "In base a dimensioni del capannone e clima si usano ventilazione tunnel (pressione negativa) o trasversale. Nei climi caldi l'integrazione dei pannelli di raffrescamento evaporativo è essenziale."
+      },
+      {
+        "q": "Come si controlla il livello di ammoniaca?",
+        "a": "Il monitoraggio continuo con sensori ammoniaca regola automaticamente le velocità delle ventole. I tassi di ventilazione minima mantengono la concentrazione al di sotto dei limiti sicuri."
+      },
+      {
+        "q": "Come gestire la ventilazione in inverno?",
+        "a": "In inverno la modalità ventilazione minima mantiene la qualità dell'aria limitando le dispersioni termiche. Ventole a velocità variabile e controllo automatico degli ingressi creano un sistema bilanciato."
+      },
+      {
+        "q": "Quanta energia consuma il sistema?",
+        "a": "I sistemi con motori EC consumano il 30-50% in meno rispetto ai motori AC tradizionali. L'automazione fa funzionare le ventole solo quando serve, evitando sprechi."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi una ventilazione per stabilimenti zootecnici?",
+    "finalCtaDesc": "Contatta il nostro team esperto per analisi dell'impianto, progettazione e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "trafoEnerjiOdalari": {
+    "breadcrumbCurrent": "Ventilazione sale trasformatori ed energia",
+    "badge": "Soluzioni",
+    "titleLine1": "Sale trasformatori ed energia",
+    "titleHighlight": "Ventilatori",
+    "subtitle": "Soluzioni di controllo temperatura e ventilazione per cabine trasformatori, sale gruppi elettrogeni e impianti di distribuzione energia.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "IP55",
+        "label": "Grado di protezione"
+      },
+      {
+        "value": "Class F",
+        "label": "Isolamento motore"
+      },
+      {
+        "value": "TEDAS",
+        "label": "Progetto conforme"
+      },
+      {
+        "value": "500+",
+        "label": "Sistemi installati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Controllo temperatura critico per la vita delle apparecchiature",
+    "whyImportantP1": "Le cabine trasformatori e le sale energia possono raggiungere temperature pericolose per il calore generato dall'apparecchiatura elettrica. Il calore eccessivo degrada l'olio dei trasformatori, compromette l'isolamento dei cavi e causa guasti.",
+    "whyImportantP2": "NOVVES garantisce il controllo della temperatura in sale trasformatori, quadri media tensione, sale gruppi elettrogeni e UPS con soluzioni di ventilazione progettate secondo le specifiche tecniche TEDAS.",
+    "steps": [
+      {
+        "label": "Calcolo carico termico",
+        "desc": "Potenza trasformatore, dispersioni termiche, dimensioni locale e temperatura esterna"
+      },
+      {
+        "label": "Progettazione del sistema",
+        "desc": "Selezione ventole, dimensionamento griglie, bilanciamento aspirazione/immissione"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Produzione ventole grado IP55 e installazione in opera"
+      },
+      {
+        "label": "Messa in servizio e prove",
+        "desc": "Misura temperatura, taratura termostato e verifica prestazioni"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Ventilatori da parete (OWL)",
+        "desc": "Ventilatori tipo parete aspirazione/mandata grado IP55, corpo zincato, per sale trasformatori."
+      },
+      {
+        "title": "Ventilatori da tetto (HERON)",
+        "desc": "Ventilatori da tetto radiali e assiali per scarico aria calda dai tetti delle sale energia."
+      },
+      {
+        "title": "Ventilatori canalizzati (KOI)",
+        "desc": "Ventilatori canalizzati compatti per trasporto aria calda su lunghe tratte in condotta."
+      },
+      {
+        "title": "Griglie immissione aria",
+        "desc": "Griglie immissione filtrate e con rete antinsetto conformi alle specifiche TEDAS."
+      },
+      {
+        "title": "Termostato e controllo",
+        "desc": "Accensione/spegnimento automatico ventole e controllo a stadi in base alla temperatura ambiente."
+      },
+      {
+        "title": "Sistemi di serrande",
+        "desc": "Serrande motorizzate e di bilanciamento pressioni per zonizzazione fuoco e aria calda."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il progetto di ventilazione sale trasformatori",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Conforme TEDAS",
+        "desc": "Soluzioni ventole e griglie pienamente conformi alle specifiche tecniche della distribuzione elettrica in Turchia."
+      },
+      {
+        "title": "Protezione IP55",
+        "desc": "Motori e involucri ad alto grado di protezione da polvere e schizzi d'acqua."
+      },
+      {
+        "title": "Basso livello sonoro",
+        "desc": "Funzionamento silenzioso compatibile con l'ambiente nei centri di distribuzione energia."
+      },
+      {
+        "title": "Progetto long-life",
+        "desc": "Affidabilità nel tempo con isolamento motore classe F e corpo zincato."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni per tutti gli spazi critici dell'infrastruttura elettrica ed energetica.",
+    "areas": [
+      {
+        "title": "Cabine trasformatori",
+        "description": "Scarico dispersioni termiche trasformatore e controllo temperatura",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Sale gruppi elettrogeni",
+        "description": "Scarico gas di scarico e calore",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Sale UPS e batterie",
+        "description": "Scarico idrogeno e controllo temperatura",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Quadri media tensione",
+        "description": "Scarico accumulo calore elettrico",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Perché la ventilazione è obbligatoria nelle sale trasformatori?",
+        "a": "Le dispersioni termiche dei trasformatori si accumulano nel locale; temperature ambientali superiori a 40°C accorciano la vita del trasformatore causando degradazione dell'olio e guasti agli isolamenti. Le specifiche TEDAS impongono una ventilazione adeguata."
+      },
+      {
+        "q": "Quale tipo di ventola è adatto alle sale trasformatori?",
+        "a": "In base a dimensioni del locale e carico termico si usano ventole da parete (OWL), da tetto (HERON) o canalizzate (KOI). Di solito si applica la combinazione aspirazione + immissione aria fresca."
+      },
+      {
+        "q": "Come funziona il comando a termostato?",
+        "a": "Quando la temperatura raggiunge il limite superiore impostato le ventole si attivano automaticamente e si spengono al calare della temperatura. Più stadi consentono risparmio energetico."
+      },
+      {
+        "q": "Ci sono requisiti speciali per le sale UPS?",
+        "a": "Sì, durante la ricarica delle batterie può formarsi idrogeno. Le sale UPS richiedono ventilazione adeguata e sistemi di rilevazione gas considerando il rischio esplosivo."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi una soluzione di ventilazione per sale trasformatori?",
+    "finalCtaDesc": "Contatta il nostro team di ingegneria per calcolo carico termico, progettazione e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "seraTarimsal": {
+    "breadcrumbCurrent": "Ventilazione serre e agricoltura",
+    "badge": "Soluzioni",
+    "titleLine1": "Serre e agricoltura",
+    "titleHighlight": "Sistemi di ventilazione",
+    "subtitle": "Soluzioni di ventilazione e raffrescamento per un controllo climatico ottimale in serre, colture fungine e strutture agricole.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "Anti-Corrosion",
+        "label": "Rivestimento"
+      },
+      {
+        "value": "EC Motor",
+        "label": "Risparmio energetico"
+      },
+      {
+        "value": "IoT",
+        "label": "Monitoraggio remoto"
+      },
+      {
+        "value": "100+",
+        "label": "Progetti completati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Un clima gestito bene per un'agricoltura efficiente",
+    "whyImportantP1": "In serre e strutture agricole il controllo di temperatura, umidità e CO2 incide direttamente sulla crescita delle piante, sulla qualità del prodotto e sulla resa. Il caldo eccessivo in estate e una ventilazione insufficiente in inverno causano perdite di raccolto rilevanti.",
+    "whyImportantP2": "NOVVES offre raffrescamento evaporativo, ventilazione naturale/meccanica e controllo climatico intelligente per serre e impianti agricoli. Ogni progetto è dimensionato in base ai dati climatici regionali e alle esigenze della coltura.",
+    "steps": [
+      {
+        "label": "Analisi dell'impianto",
+        "desc": "Dimensioni serra, tipo di coltura, clima locale e necessità di ventilazione"
+      },
+      {
+        "label": "Progettazione del sistema",
+        "desc": "Selezione ventole, pannello raffrescamento, ventilazione tetto/laterale e scenario automazione"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Produzione ventole e accessori anticorrosione, installazione in opera"
+      },
+      {
+        "label": "Messa in servizio e supporto",
+        "desc": "Taratura sensori clima, prove automazione e assistenza tecnica"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Ventilatori aspirazione da parete (OWL)",
+        "desc": "Ventilatori ad alto volume, corpo zincato, montati sulle pareti della serra."
+      },
+      {
+        "title": "Sistemi di raffrescamento evaporativo",
+        "desc": "Sistemi a nido d'ape per raffrescamento adiabatico che riducono la temperatura in serra di 8-12°C."
+      },
+      {
+        "title": "Unità ventilazione tetto (HERON)",
+        "desc": "Ventilatori da tetto per scarico aria calda e immissione aria fresca."
+      },
+      {
+        "title": "Ventilatori circolazione",
+        "desc": "Ventilatori circolazione orizzontale per distribuzione omogenea di temperatura e umidità."
+      },
+      {
+        "title": "Tende immissione aria",
+        "desc": "Tende laterali motorizzate e lucernari per immissione aria fresca controllata."
+      },
+      {
+        "title": "Controllo climatico intelligente",
+        "desc": "Monitoraggio e gestione remota IoT con sensori temperatura, umidità, CO2 e luce."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il progetto di ventilazione in serra",
+    "midCtaDesc": "Il nostro team esperto elaborerà una proposta su misura per la tua struttura.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Robustezza agricola",
+        "desc": "Prestazioni durature in ambienti umidi con rivestimenti zincati e anticorrosione."
+      },
+      {
+        "title": "Raffrescamento efficiente",
+        "desc": "Fino all'80% in meno di consumo rispetto al condizionamento tradizionale con raffrescamento evaporativo."
+      },
+      {
+        "title": "Automazione intelligente",
+        "desc": "Monitoraggio climatico IoT con comando remoto e supporto decisionale basato sui dati."
+      },
+      {
+        "title": "Progetto su misura",
+        "desc": "Sistema di ventilazione dimensionato in base a dimensioni serra, coltura e dati climatici."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni di controllo climatico per tutte le aree produttive agricole chiuse.",
+    "areas": [
+      {
+        "title": "Serre in vetro e plastica",
+        "description": "Controllo temperatura e umidità, raffrescamento evaporativo",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Coltura fungina",
+        "description": "Controllo preciso umidità e temperatura, immissione aria fresca",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Ventilatori EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Serre semenzai",
+        "description": "Distribuzione climatica omogenea e raffrescamento",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Ventilatori da parete",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Stoccaggio cereali",
+        "description": "Controllo umidità e ventilazione",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Qual è il sistema di ventilazione più adatto alle serre?",
+        "a": "In base a dimensioni, ubicazione e coltura si usano sistemi a pressione negativa (aspirazione + pannello raffrescamento) o a pressione positiva. Nei climi caldi l'integrazione del raffrescamento evaporativo è molto importante."
+      },
+      {
+        "q": "Quanto può abbassare la temperatura il raffrescamento evaporativo?",
+        "a": "Si può ottenere una riduzione di 8-12°C a seconda dell'umidità dell'aria nella zona. L'efficienza è maggiore dove l'umidità è bassa."
+      },
+      {
+        "q": "Serve la ventilazione in serra anche in inverno?",
+        "a": "Sì, anche in inverno serve una ventilazione minima per controllo umidità e integrazione CO2. Altrimenti aumentano malattie fungine e stress delle piante."
+      },
+      {
+        "q": "È possibile monitoraggio e comando da remoto?",
+        "a": "Sì, i quadri NOVVES per controllo climatico intelligente consentono monitoraggio remoto di temperatura, umidità e CO2, comando ventole e gestione allarmi tramite infrastruttura IoT."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi un sistema di ventilazione per serre?",
+    "finalCtaDesc": "Contatta il nostro team esperto per analisi dell'impianto, progettazione e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "atexPatlamaKoruma": {
+    "breadcrumbCurrent": "Protezione esplosioni ATEX",
+    "badge": "Soluzioni",
+    "titleLine1": "Protezione esplosioni ATEX",
+    "titleHighlight": "Soluzioni",
+    "subtitle": "Sistemi ventilatori certificati ATEX e soluzioni di ventilazione per impianti con rischio di atmosfere esplosive.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "ATEX",
+        "label": "Certificato"
+      },
+      {
+        "value": "Zone 1/2",
+        "label": "Ambito applicazione"
+      },
+      {
+        "value": "IECEx",
+        "label": "Approvazione internazionale"
+      },
+      {
+        "value": "200+",
+        "label": "Sistemi installati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "La sicurezza è prioritaria negli ambienti esplosivi",
+    "whyImportantP1": "In impianti chimici, petrolchimici, verniciatura, farmaceutici, silos cereali e miniere, concentrazioni di gas, vapori e polveri infiammabili possono creare atmosfere esplosive. L'uso di apparecchiature standard in questi ambienti comporta rischi gravi.",
+    "whyImportantP2": "I ventilatori serie BEAR certificati ATEX NOVVES sono progettati secondo la classificazione delle atmosfere esplosive (Zona 1, Zona 2, Zona 21, Zona 22). Materiali senza scintille, motori antideflagranti e tenute speciali garantiscono una ventilazione sicura.",
+    "steps": [
+      {
+        "label": "Analisi del rischio",
+        "desc": "Classificazione atmosfere esplosive, determinazione zone, analisi tipo gas/polveri"
+      },
+      {
+        "label": "Progettazione del sistema",
+        "desc": "Selezione ventole ATEX, progetto canalizzazioni, messa a terra e automazione Exproof"
+      },
+      {
+        "label": "Produzione e installazione",
+        "desc": "Produzione ventole certificate ATEX, installazione cavi e connessioni Exproof"
+      },
+      {
+        "label": "Messa in servizio e certificazione",
+        "desc": "Prove, misura prestazioni, certificazione conformità ATEX"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Ventilatori centrifughi ATEX (BEAR)",
+        "desc": "Ventilatori centrifughi certificati con materiali senza scintille per Zone 1/2 e 21/22."
+      },
+      {
+        "title": "Ventilatori assiali ATEX (BEAR)",
+        "desc": "Ventilatori assiali carterizzati o a pale adatti ad ambienti esplosivi."
+      },
+      {
+        "title": "Ventilatori da tetto Exproof (BEAR)",
+        "desc": "Ventilatori aspirazione da tetto con motori antideflagranti per gas/polveri esplosive."
+      },
+      {
+        "title": "Motori e comandi Exproof",
+        "desc": "Motori omologati ATEX, pulsanti Exproof, spie segnalazione e contenitori di comando."
+      },
+      {
+        "title": "Canalizzazioni e accessori antistatici",
+        "desc": "Condotte messe a terra ed elementi di giunzione che evitano accumulo di elettricità statica."
+      },
+      {
+        "title": "Rilevazione gas e automazione",
+        "desc": "Sensori gas/polveri infiammabili, arresto emergenza e scenari ventilazione controllati da PLC."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto di ventilazione ATEX",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Certificato ATEX",
+        "desc": "Produzione e certificazione conformi alla direttiva ATEX 2014/34/UE."
+      },
+      {
+        "title": "Conformità Zone 1 e 2",
+        "desc": "Selezione e progetto ventole in base a gruppo gas e classe di temperatura."
+      },
+      {
+        "title": "Progetto senza scintille",
+        "desc": "Leghe alluminio/bronzo, rivestimenti speciali e componenti antistatici."
+      },
+      {
+        "title": "Soluzione end-to-end",
+        "desc": "Analisi rischio, selezione ventole, automazione Exproof e certificazione da un'unica fonte."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni ATEX per tutti gli impianti industriali con rischio di atmosfere esplosive.",
+    "areas": [
+      {
+        "title": "Impianti chimici e petrolchimici",
+        "description": "Scarico gas e vapori infiammabili",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX da tetto",
+            "image": "/images/products/bear-reb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Industrie vernici e smalti",
+        "description": "Scarico vapori solvente",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX da parete",
+            "image": "/images/products/bear-w.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Silos cereali e mulini",
+        "description": "Scarico polveri combustibili",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX canalizzati",
+            "image": "/images/products/bear-t.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Miniere e gallerie",
+        "description": "Scarico metano e ventilazione",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Produzione farmaceutica e cosmetica",
+        "description": "Scarico solventi infiammabili e polveri",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-c.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Ventilatori centrifughi ATEX",
+            "image": "/images/products/bear-r.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Cosa significa la certificazione ATEX?",
+        "a": "ATEX (ATmospheres EXplosibles) è la direttiva 2014/34/UE dell'Unione europea che definisce gli standard di progettazione e fabbricazione delle apparecchiature per ambienti esplosivi. I ventilatori serie BEAR sono realizzati in conformità a tale direttiva."
+      },
+      {
+        "q": "Qual è la differenza tra Zona 1 e Zona 2?",
+        "a": "La Zona 1 riguarda aree in cui le atmosfere esplosive possono presentarsi occasionalmente in condizioni normali di esercizio; la Zona 2 aree in cui possono presentarsi solo in condizioni anomale e per brevi periodi."
+      },
+      {
+        "q": "Per quali gruppi gas si producono i ventilatori?",
+        "a": "La serie BEAR è disponibile in modelli adatti ai gruppi gas IIA (propano, metano), IIB (etilene) e IIC (idrogeno, acetilene)."
+      },
+      {
+        "q": "Si può integrare un ventilatore ATEX in un sistema esistente?",
+        "a": "Sì, l'integrazione di ventilatori certificati ATEX in impianti di ventilazione esistenti è possibile. Vanno però verificate anche condotte, connessioni e automazione per la conformità ATEX."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi una soluzione di ventilazione ATEX?",
+    "finalCtaDesc": "Contatta il nostro team di ingegneria per analisi del rischio, selezione ventole ATEX e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "akilliOtomasyon": {
+    "breadcrumbCurrent": "Automazione e controllo intelligenti",
+    "badge": "Soluzioni",
+    "titleLine1": "Automazione intelligente e",
+    "titleHighlight": "Sistemi di controllo",
+    "subtitle": "Soluzioni di comando intelligenti per integrazione BMS, gestione ventole su PLC, monitoraggio IoT e ottimizzazione energetica.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "I nostri servizi",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      {
+        "value": "BMS",
+        "label": "Integrazione"
+      },
+      {
+        "value": "PLC/SCADA",
+        "label": "Infrastruttura controllo"
+      },
+      {
+        "value": "IoT",
+        "label": "Monitoraggio remoto"
+      },
+      {
+        "value": "24/7",
+        "label": "Assistenza"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Sistemi intelligenti per efficienza e controllo",
+    "whyImportantP1": "Negli edifici moderni e negli impianti industriali la gestione manuale dei sistemi di ventilazione porta a inefficienza, spreco energetico e problemi di manutenzione. L'automazione intelligente ottimizza i sistemi in base ai dati dei sensori.",
+    "whyImportantP2": "Le soluzioni di automazione NOVVES consentono il controllo completo della ventilazione con quadri MCC su PLC, integrazione inverter, collegamento BMS e monitoraggio remoto IoT. Le modalità operative basate su scenari riducono i consumi energetici.",
+    "steps": [
+      {
+        "label": "Analisi delle esigenze",
+        "desc": "Revisione impianto esistente, requisiti automazione, valutazione infrastruttura BMS"
+      },
+      {
+        "label": "Progettazione automazione",
+        "desc": "Programmazione PLC, selezione sensori, progetto quadri, scenario integrazione BMS"
+      },
+      {
+        "label": "Produzione e installazione quadri",
+        "desc": "Produzione quadri MCC/automazione, cablaggio campo e installazione apparecchiature"
+      },
+      {
+        "label": "Messa in servizio e formazione",
+        "desc": "Prove sistema, verifica scenari, formazione operatori/utenti"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Quadri MCC controllati da PLC",
+        "desc": "Centro controllo motori con avvio/arresto ventole, controllo a stadi, monitoraggio guasti e integrazione relè di protezione."
+      },
+      {
+        "title": "Gestione inverter",
+        "desc": "Regolazione velocità ventole per risparmio energetico e portata precisa."
+      },
+      {
+        "title": "Integrazione BMS",
+        "desc": "Integrazione completa con i sistemi di building management tramite protocolli Modbus, BACnet o LON."
+      },
+      {
+        "title": "Reti di sensori",
+        "desc": "Sensori temperatura, umidità, CO, CO2, pressione e fumo con raccolta dati per zona."
+      },
+      {
+        "title": "IoT e monitoraggio remoto",
+        "desc": "Dashboard cloud, app mobile, notifiche allarme e analisi consumi energetici."
+      },
+      {
+        "title": "Modalità operative su scenario",
+        "desc": "Scenari predefiniti o personalizzati: normale, notte, incendio, scarico CO parcheggio, ecc."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto di automazione",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Ottimizzazione energetica",
+        "desc": "Risparmio energetico 30-50% con comando intelligente basato su inverter e dati sensori."
+      },
+      {
+        "title": "Compatibilità BMS",
+        "desc": "Integrazione con tutti i BMS tramite protocolli aperti Modbus, BACnet, LON."
+      },
+      {
+        "title": "Monitoraggio remoto",
+        "desc": "Monitoraggio 24/7 IoT, notifiche allarme e reporting consumi energetici."
+      },
+      {
+        "title": "Soluzione da un'unica fonte",
+        "desc": "Progetto quadri, programmazione PLC, installazione campo e messa in servizio da un'unica fonte."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "In quali progetti si utilizza?",
+    "areasDesc": "Soluzioni per tutti gli edifici e impianti che richiedono automazione della ventilazione.",
+    "areas": [
+      {
+        "title": "Automazione parcheggi coperti",
+        "description": "Gestione jet fan basata su sensori CO",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "BMS centri commerciali ed edifici",
+        "description": "Automazione e monitoraggio ventilazione centralizzati",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Automazione impianti industriali",
+        "description": "Ventilazione di processo e controllo scarichi",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Ospedale e clean room",
+        "description": "Monitoraggio cascata pressioni e filtrazione",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Si può aggiungere automazione a un sistema esistente?",
+        "a": "Sì, si possono integrare quadri PLC, inverter e sensori negli impianti ventilazione esistenti per elevare il livello di automazione."
+      },
+      {
+        "q": "Quali protocolli BMS supportate?",
+        "a": "Supportiamo Modbus RTU/TCP, BACnet IP/MSTP e LON. Il metodo di integrazione più adatto si definisce in base alla vostra infrastruttura BMS."
+      },
+      {
+        "q": "Serve connessione internet per il monitoraggio remoto?",
+        "a": "Sì, per il monitoraggio remoto IoT è necessaria la connettività internet in stabilimento. Il trasferimento dati alla piattaforma cloud avviene tramite modem 4G/5G o connessione ethernet."
+      },
+      {
+        "q": "Quanta energia risparmia il sistema di automazione?",
+        "a": "Il controllo velocità ventole basato sui sensori può ottenere risparmi del 30-50%. Modalità notte e scenari per zone non occupate aggiungono ulteriore risparmio."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi una soluzione di automazione per la ventilazione?",
+    "finalCtaDesc": "Contatta il nostro team di ingegneria per progetto automazione, produzione quadri e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "konutHavalandirma": {
+    "breadcrumbCurrent": "Ventilazione residenziale",
+    "badge": "Soluzioni",
+    "titleLine1": "Residenziale",
+    "titleHighlight": "Sistemi di ventilazione",
+    "subtitle": "Soluzioni di immissione aria fresca, controllo umidità e ventilazione confortevole per appartamenti, ville, residenze e progetti edilizi.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "EC Motor",
+        "label": "Funzionamento silenzioso"
+      },
+      {
+        "value": "Heat Recovery",
+        "label": "Efficienza 90%"
+      },
+      {
+        "value": "dB(A) <25",
+        "label": "Livello sonoro"
+      },
+      {
+        "value": "A+",
+        "label": "Classe energetica"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Aria fresca per una vita sana",
+    "whyImportantP1": "Nelle abitazioni moderne, con isolamento sempre più elevato, lo scambio naturale dell'aria è diminuito e la qualità dell'aria interna è diventata una seria preoccupazione. Una ventilazione insufficiente causa umidità, muffe, odori e aria viziata.",
+    "whyImportantP2": "Le soluzioni NOVVES per il residenziale creano ambienti sani, puliti e confortevoli con immissione aria fresca e recupero di calore che riduce le perdite energetiche. Funzionamento silenzioso e design compatto si adattano a ogni tipo di abitazione.",
+    "steps": [
+      {
+        "label": "Valutazione esigenze",
+        "desc": "Tipo abitazione, numero vani, metratura e analisi necessità ventilazione"
+      },
+      {
+        "label": "Selezione sistema",
+        "desc": "Capacità unità, percorsi canalizzazioni, posizionamento griglie"
+      },
+      {
+        "label": "Installazione",
+        "desc": "Installazione professionale, collegamento condotte e cablaggio elettrico"
+      },
+      {
+        "label": "Messa in servizio",
+        "desc": "Misura portate aria, prove rumorosità e formazione utente"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Unità recupero di calore",
+        "desc": "Scambiatori a flussi incrociati o rotativi che recuperano fino al 90% del calore dall'aria di estrazione."
+      },
+      {
+        "title": "Ventilatori bagno e WC (SEAHORSE)",
+        "desc": "Ventilatori aspirazione bagno silenziosi, efficienti e compatti."
+      },
+      {
+        "title": "Ventilatori canalizzati (KOI)",
+        "desc": "Ventilatori compatti silenziosi per immissione ed estrazione aria in condotta."
+      },
+      {
+        "title": "Ventilatori cucina (BUTTERFLY)",
+        "desc": "Ventilatori aspirazione cappa con filtri grasso e funzionamento silenzioso."
+      },
+      {
+        "title": "Griglie e diffusori",
+        "desc": "Griglie a soffitto, parete e pavimento per distribuzione omogenea dell'aria."
+      },
+      {
+        "title": "Controllo e comando",
+        "desc": "Telecomando wireless, sensore umidità, timer e regolazione velocità."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto di ventilazione residenziale",
+    "midCtaDesc": "Il nostro team esperto ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Funzionamento silenzioso",
+        "desc": "Livelli sonori inferiori a 25 dB(A) anche nelle camere da letto."
+      },
+      {
+        "title": "Recupero di calore",
+        "desc": "Fino al 90% dell'energia dall'aria di estrazione per evitare sprechi."
+      },
+      {
+        "title": "Design compatto",
+        "desc": "Montaggio in controsoffitto, mobile o incasso a parete."
+      },
+      {
+        "title": "Aria interna salubre",
+        "desc": "Filtrazione e immissione aria fresca che trattene pollini, polveri e inquinanti."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Per quali tipi di abitazione?",
+    "areasDesc": "Soluzioni di ventilazione per ogni tipo residenziale.",
+    "areas": [
+      {
+        "title": "Appartamenti",
+        "description": "Sistema centrale o individuale immissione ed estrazione",
+        "products": [
+          {
+            "name": "SEAHORSE",
+            "type": "Ventilatori bagno",
+            "image": "/images/products/banyo-fan-1.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Ville e case indipendenti",
+        "description": "Sistema aria fresca con recupero di calore",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "BUTTERFLY",
+            "type": "Ventilatori cucina",
+            "image": "/images/products/butterfly-b.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Residenze e torri",
+        "description": "Ventilazione centrale e pressurizzazione",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "SEAHORSE",
+            "type": "Ventilatori bagno",
+            "image": "/images/products/banyo-fan-2.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Edilizia residenziale di massa",
+        "description": "Ventilazione camini verticali e sistemi scarico tetto",
+        "products": [
+          {
+            "name": "HERON",
+            "type": "Ventilatori da tetto",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "La ventilazione residenziale causa perdite energetiche?",
+        "a": "Negli impianti con unità di recupero di calore si recupera fino al 90% dell'energia contenuta nell'aria di estrazione. L'immissione aria fresca avviene quindi con perdite energetiche quasi nulle."
+      },
+      {
+        "q": "Quanto rumore fa un ventilatore bagno?",
+        "a": "I ventilatori bagno serie SEAHORSE sono molto silenziosi, con livelli inferiori a 25 dB(A). La modalità notte riduce ulteriormente il rumore."
+      },
+      {
+        "q": "Si può installare un sistema in case esistenti?",
+        "a": "Sì, si possono usare unità aria fresca autonome senza condotte estese o canalizzazioni compatte per dotare di ventilazione abitazioni già costruite."
+      },
+      {
+        "q": "Con quale frequenza cambiare i filtri?",
+        "a": "Si consiglia la sostituzione ogni 3-6 mesi in base all'intensità d'uso e alla qualità dell'aria esterna. Sono disponibili modelli con indicatore ostruzione filtro."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi un sistema di ventilazione residenziale?",
+    "finalCtaDesc": "Contatta il nostro team per una soluzione di ventilazione adatta alla tua casa e per il preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "marinOffshore": {
+    "breadcrumbCurrent": "Ventilazione marine e offshore",
+    "badge": "Soluzioni",
+    "titleLine1": "Marine e offshore",
+    "titleHighlight": "Sistemi di ventilazione",
+    "subtitle": "Soluzioni di ventilazione resistenti alla corrosione salina e conformi agli standard di classificazione navale per navi, yacht, piattaforme offshore e strutture costiere.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "Catalogo prodotti",
+    "ctaSecondaryHref": "/urunler/hava-hareketi",
+    "trustStrip": [
+      {
+        "value": "DNV-GL",
+        "label": "Approvazione navale"
+      },
+      {
+        "value": "IP56",
+        "label": "Grado di protezione"
+      },
+      {
+        "value": "SS316",
+        "label": "Qualità materiale"
+      },
+      {
+        "value": "50+",
+        "label": "Progetti completati"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Ventilazione affidabile in ambiente marino",
+    "whyImportantP1": "L'ambiente marino presenta criticità diverse rispetto alle applicazioni a terra: acqua salata, alta umidità e condizioni atmosferiche aggressive. Le apparecchiature standard si corrodono e guastano rapidamente.",
+    "whyImportantP2": "Le soluzioni NOVVES per il settore navale utilizzano acciaio inossidabile (SS316), rivestimenti speciali e approvazioni delle società di classificazione (DNV-GL, Lloyd's, BV). Ventilazione affidabile in sale macchine, spazi passeggeri, stive e locali speciali.",
+    "steps": [
+      {
+        "label": "Analisi progetto",
+        "desc": "Tipo nave/piattaforma, classificazione zone, requisiti standard navali"
+      },
+      {
+        "label": "Progettazione ingegneristica",
+        "desc": "Selezione ventole, progetto canalizzazioni, scelta materiali, zonizzazione antincendio"
+      },
+      {
+        "label": "Produzione e consegna",
+        "desc": "Produzione SS316/rivestimenti speciali, consegna prodotti certificati per classe navale"
+      },
+      {
+        "label": "Installazione e messa in servizio",
+        "desc": "Installazione in cantiere o in campo, prove prestazioni e approvazione classe"
+      }
+    ],
+    "systemLabel": "Architettura del sistema",
+    "systemTitle": "Componenti della soluzione",
+    "systemComponents": [
+      {
+        "title": "Ventilatori assiali navali",
+        "desc": "Ventilatori assiali anticorrosione salina, corpo SS316, omologati per classificazione navale."
+      },
+      {
+        "title": "Ventilatori centrifughi navali",
+        "desc": "Ventilatori centrifughi ad alta pressione e anticorrosione per sale macchine e stive."
+      },
+      {
+        "title": "Serrande tagliafuoco",
+        "desc": "Serrande tagliafuoco a chiusura automatica conformi agli standard antincendio navali."
+      },
+      {
+        "title": "Griglie stagne",
+        "desc": "Griglie immissione/uscita aria protette da onde e pioggia."
+      },
+      {
+        "title": "Ventilatori Exproof (BEAR)",
+        "desc": "Per zone navali a rischio atmosfera esplosiva come stive e zone carburante."
+      },
+      {
+        "title": "Controllo e automazione",
+        "desc": "Quadri omologati marine, integrazione rilevazione incendi e monitoraggio remoto."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto di ventilazione navale",
+    "midCtaDesc": "Il nostro team di ingegneria esperti ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Approvazione classe navale",
+        "desc": "Produzione approvata da società di classificazione tra cui DNV-GL, Lloyd's Register e Bureau Veritas."
+      },
+      {
+        "title": "Resistenza alla corrosione",
+        "desc": "Prestazioni durature con acciaio inox SS316, rivestimenti epossidici e leghe speciali."
+      },
+      {
+        "title": "Sicurezza antincendio",
+        "desc": "Soluzioni serrande e ventole conformi a SOLAS e agli standard antincendio navali."
+      },
+      {
+        "title": "Produzione su misura",
+        "desc": "Dimensioni, materiali e capacità personalizzati per ogni nave e piattaforma."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "Dove si utilizza?",
+    "areasDesc": "Soluzioni per tutte le esigenze di ventilazione nel settore marittimo.",
+    "areas": [
+      {
+        "title": "Navi passeggeri e traghetti",
+        "description": "Climatizzazione aree passeggeri ed equipaggio",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Navi cargo",
+        "description": "Ventilazione stive e sale macchine",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Piattaforme offshore",
+        "description": "Ventilazione piattaforma e scarichi Exproof",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Yacht e megayacht",
+        "description": "Ventilazione comfort e scarico sala macchine",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Ventilatori canalizzati",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Ventilatori EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Quali approvazioni di classificazione sono disponibili per i ventilatori navali?",
+        "a": "I ventilatori navali NOVVES possono essere realizzati con approvazioni delle società internazionali tra cui DNV-GL, Lloyd's Register, Bureau Veritas e ABS."
+      },
+      {
+        "q": "Perché si preferisce il materiale SS316?",
+        "a": "L'acciaio inox SS316 offre durata molto maggiore in ambiente salino rispetto agli acciai standard grazie all'alta resistenza alla corrosione; è ideale per ponti e zone esposte."
+      },
+      {
+        "q": "Quali ventole si usano per la ventilazione sala macchine?",
+        "a": "Si impiegano ventole radiali o assiali ad alto volume per alte temperature e gas di scarico. La serie BEAR è preferita quando servono requisiti Exproof."
+      },
+      {
+        "q": "È possibile retrofit su navi esistenti?",
+        "a": "Sì, sono disponibili soluzioni di retrofit per revisione impianti ventilazione o aumento capacità su navi già in servizio."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Cerchi una soluzione di ventilazione navale?",
+    "finalCtaDesc": "Contatta il nostro team per progettazione e preventivo del tuo progetto nave/piattaforma.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "projeBazliOzelImalat": {
+    "breadcrumbCurrent": "Produzione su progetto",
+    "badge": "Soluzioni",
+    "titleLine1": "Su progetto",
+    "titleHighlight": "Produzione personalizzata",
+    "subtitle": "Soluzioni di ventilazione progettate sulle dimensioni, i materiali e le prestazioni specifiche del progetto, oltre la gamma standard.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "I nostri servizi",
+    "ctaSecondaryHref": "/hizmetler",
+    "trustStrip": [
+      {
+        "value": "3D CAD",
+        "label": "Progettazione"
+      },
+      {
+        "value": "FEA",
+        "label": "Analisi strutturale"
+      },
+      {
+        "value": "CNC",
+        "label": "Lavorazione di precisione"
+      },
+      {
+        "value": "75+",
+        "label": "Progetti custom"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Ogni progetto è unico",
+    "whyImportantP1": "Alcuni progetti richiedono dimensioni, materiali, resistenza termica o prestazioni non presenti nei cataloghi standard. Alte temperature, ambienti corrosivi, zone di montaggio particolari o portate/pressioni non standard non possono essere soddisfatti con soluzioni prefabbricate.",
+    "whyImportantP2": "NOVVES produce ventole, serrande, canalizzazioni e accessori su progetto con il proprio team di ingegneria e gli stabilimenti produttivi. Ogni prodotto custom è supportato da progettazione CAD 3D, analisi strutturale FEA e simulazione fluidodinamica CFD.",
+    "steps": [
+      {
+        "label": "Definizione requisiti",
+        "desc": "Dimensioni, materiale, temperatura, portata, pressione e condizioni di montaggio personalizzate"
+      },
+      {
+        "label": "Progettazione ingegneristica",
+        "desc": "Modellazione CAD 3D, analisi FEA, simulazione CFD e disegni di dettaglio"
+      },
+      {
+        "label": "Prototipo e produzione",
+        "desc": "Lavorazioni CNC, saldatura, bilanciamento dinamico e controllo qualità"
+      },
+      {
+        "label": "Prove e consegna",
+        "desc": "Prove prestazioni, misura vibrazioni, certificazione e consegna"
+      }
+    ],
+    "systemLabel": "Capacità produttive",
+    "systemTitle": "Cosa possiamo realizzare?",
+    "systemComponents": [
+      {
+        "title": "Ventole su misura",
+        "desc": "Ventole assiali, centrifughe e a flusso misto con diametri, larghezze e capacità non standard."
+      },
+      {
+        "title": "Ventole alta temperatura",
+        "desc": "Materiali e progetti speciali per esercizio continuo fino a 400°C e oltre."
+      },
+      {
+        "title": "Ventole ambienti corrosivi",
+        "desc": "Acciaio inox, titanio, FRP e rivestimenti speciali per gas/vapori corrosivi."
+      },
+      {
+        "title": "Serrande e canalizzazioni custom",
+        "desc": "Produzione di serrande, condotte ed elementi di giunzione in dimensioni e materiali non standard."
+      },
+      {
+        "title": "Soluzioni di montaggio speciali",
+        "desc": "Staffe personalizzate per spazi ristretti, sospensione soffitto, piattaforme o installazioni antivibranti."
+      },
+      {
+        "title": "Prove e certificazione",
+        "desc": "Prove prestazioni aerodinamiche, analisi vibrazioni e preparazione certificati specifici per progetto."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per la produzione su progetto",
+    "midCtaDesc": "Il nostro team di ingegneria valuterà i tuoi requisiti specifici.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Supporto ingegneristico",
+        "desc": "Progetto verificato con CAD 3D, FEA e CFD; relazioni di calcolo dedicate al progetto."
+      },
+      {
+        "title": "Stabilimento proprio",
+        "desc": "Lavorazioni di precisione con CNC, saldatura robotizzata e bilanciamento dinamico."
+      },
+      {
+        "title": "Materiali flessibili",
+        "desc": "Acciaio al carbonio, inox, alluminio, FRP, titanio e leghe speciali."
+      },
+      {
+        "title": "Prototipazione rapida",
+        "desc": "Passaggio rapido dal progetto al prototipo e verifica prestazioni."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "In quali progetti si utilizza?",
+    "areasDesc": "Produzione su progetto per tutte le esigenze speciali non coperte dai prodotti standard.",
+    "areas": [
+      {
+        "title": "Impianti di processo industriale",
+        "description": "Ventole custom per alte temperature e gas corrosivi",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "Ventilatori ATEX",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Centrali elettriche",
+        "description": "Ventole aspirazione/mandata dimensioni e capacità su misura",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Progetti marine e offshore",
+        "description": "Ventole navali con materiali e dimensioni omologati per classe",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Ventilatori industriali",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Infrastrutture e gallerie",
+        "description": "Ventole galleria con diametro e prestazioni personalizzati",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "C'è una quantità minima d'ordine per la produzione custom?",
+        "a": "No: NOVVES lavora per progetto e accetta anche ordini di singola unità personalizzata."
+      },
+      {
+        "q": "Quali sono i tempi di consegna?",
+        "a": "In base alla complessità del prodotto si applicano tempi di 4-12 settimane dopo approvazione progetto. È disponibile un programma accelerato per urgenze."
+      },
+      {
+        "q": "È possibile modificare una ventola esistente?",
+        "a": "Sì: servizi di modifica come sostituzione girante, revisione involucro, upgrade motore o cambio materiale."
+      },
+      {
+        "q": "Quali prove e certificazioni offrite?",
+        "a": "Prove aerodinamiche (portata, pressione, potenza), analisi vibrazioni, misura rumore e report di prova per progetto. Disponibilità di prove conformi AMCA, ISO ed EN."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Avete bisogno di produzione su misura?",
+    "finalCtaDesc": "Comunicate i requisiti: il nostro team di ingegneria elaborerà una proposta personalizzata.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  },
+  "cfdDanismanlik": {
+    "breadcrumbCurrent": "Consulenza ingegneristica CFD",
+    "badge": "Soluzioni",
+    "titleLine1": "Ingegneria CFD",
+    "titleHighlight": "Consulenza",
+    "subtitle": "Servizi di ingegneria supportati da simulazione con dinamica dei fluidi computazionale (CFD) per progetti di ventilazione, estrazione fumo e trasferimento di calore.",
+    "ctaPrimary": "Richiedi un preventivo per il tuo progetto",
+    "ctaSecondary": "I nostri servizi",
+    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "trustStrip": [
+      {
+        "value": "3D CFD",
+        "label": "Simulazione"
+      },
+      {
+        "value": "ANSYS",
+        "label": "Piattaforma solver"
+      },
+      {
+        "value": "ISO 7730",
+        "label": "Analisi comfort"
+      },
+      {
+        "value": "85+",
+        "label": "Analisi completate"
+      }
+    ],
+    "whyImportantLabel": "Perché è importante",
+    "whyImportantTitle": "Simula prima di costruire",
+    "whyImportantP1": "Conoscere le prestazioni reali dei sistemi di ventilazione ed estrazione fumo prima dell'installazione evita errori costosi e consente di documentare la conformità normativa. L'analisi CFD visualizza flussi d'aria, distribuzione temperature e diffusione del fumo mediante simulazione 3D.",
+    "whyImportantP2": "Il team CFD NOVVES esegue simulazioni dedicate al progetto con ANSYS Fluent e OpenFOAM. Supporto ingegneristico per posizionamento jet fan, tempi di estrazione fumo, analisi comfort, calcolo carichi termici e ottimizzazione sistema.",
+    "steps": [
+      {
+        "label": "Definizione progetto",
+        "desc": "Geometria, condizioni al contorno, scenario incendio o requisiti ventilazione"
+      },
+      {
+        "label": "Modellazione 3D e mesh",
+        "desc": "Creazione o import geometria CAD, generazione mesh computazionale"
+      },
+      {
+        "label": "Simulazione e soluzione",
+        "desc": "Soluzione flusso, temperatura e fumo con modelli turbolenza RANS/LES"
+      },
+      {
+        "label": "Reporting e ottimizzazione",
+        "desc": "Visualizzazione risultati, valutazione prestazioni, raccomandazioni di miglioramento"
+      }
+    ],
+    "systemLabel": "Ambiti di servizio",
+    "systemTitle": "Cosa può fare la CFD?",
+    "systemComponents": [
+      {
+        "title": "Simulazione estrazione fumo",
+        "desc": "Diffusione fumo, distanza di visibilità e analisi tempi evacuazione negli scenari incendio."
+      },
+      {
+        "title": "Ottimizzazione posizionamento jet fan",
+        "desc": "Determinazione numero, posizione e angolo direzione jet fan mediante simulazione in parcheggi e gallerie."
+      },
+      {
+        "title": "Analisi ventilazione comfort",
+        "desc": "Valutazione temperatura, velocità aria e comfort PMV/PPD in uffici, centri commerciali e luoghi di assemblea."
+      },
+      {
+        "title": "Analisi trasferimento di calore",
+        "desc": "Simulazione distribuzione temperature in sale trasformatori, data center e impianti industriali."
+      },
+      {
+        "title": "Flussi clean room",
+        "desc": "Distribuzione particelle, verifica flusso laminare e analisi cascata pressioni nelle clean room."
+      },
+      {
+        "title": "Ottimizzazione sistema",
+        "desc": "Revisione CFD di impianti ventilazione esistenti e raccomandazioni per migliorare le prestazioni."
+      }
+    ],
+    "midCtaTitle": "Richiedi un preventivo per il tuo progetto di analisi CFD",
+    "midCtaDesc": "Il nostro team di ingegneria CFD ti ricontatterà al più presto.",
+    "midCtaButton": "Richiedi un preventivo",
+    "advantagesLabel": "Perché NOVVES",
+    "advantagesTitle": "Vantaggi principali",
+    "advantages": [
+      {
+        "title": "Team CFD esperto",
+        "desc": "Team di analisti CFD specializzati in ventilazione e ingegneria antincendio."
+      },
+      {
+        "title": "Software di punta",
+        "desc": "Risultati affidabili con ANSYS Fluent, OpenFOAM e piattaforma FDS."
+      },
+      {
+        "title": "Conformità normativa",
+        "desc": "Analisi e reporting conformi agli standard EN 12101, ASHRAE e NFPA."
+      },
+      {
+        "title": "Integrazione progettuale",
+        "desc": "Risultati CFD integrati nel processo di ingegneria per garantire la realizzazione."
+      }
+    ],
+    "areasLabel": "Ambiti di applicazione",
+    "areasTitle": "In quali progetti si utilizza?",
+    "areasDesc": "Servizi di consulenza per tutti i progetti ventilazione e trasferimento calore che richiedono analisi CFD.",
+    "areas": [
+      {
+        "title": "Progetti parcheggi coperti",
+        "description": "Posizionamento jet fan e simulazione estrazione CO/fumo",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Serrande",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Progetti ventilazione gallerie",
+        "description": "Analisi scenario incendio e velocità aria",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Ventilatori assiali",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Raffrescamento data center",
+        "description": "Distribuzione temperature a livello rack e analisi hotspot",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Unità di trattamento aria",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "Ventilatori EC",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Controllo fumo in edifici elevati",
+        "description": "Simulazione pressurizzazione scale antincendio e zonizzazione fumo",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Ventilatori cellulari",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Ventilatori estrazione fumo e calore",
+            "image": "/images/products/dragonfly-c.png"
+          }
+        ]
+      }
+    ],
+    "faqLabel": "FAQ",
+    "faqTitle": "Domande frequenti",
+    "faqItems": [
+      {
+        "q": "Quanto dura un'analisi CFD?",
+        "a": "In base alla complessità del progetto richiede 1-4 settimane. Le analisi semplici a scenario unico sono più brevi; scenari multipli incendio o studi di ottimizzazione richiedono più tempo."
+      },
+      {
+        "q": "Quali informazioni servono per l'analisi CFD?",
+        "a": "Servono planimetrie (DWG/Revit), dati posizionamento ventole/griglie, condizioni operative (temperatura, portata, ecc.) e definizioni scenario incendio se applicabile."
+      },
+      {
+        "q": "Il report CFD è accettato come documento ufficiale?",
+        "a": "Il report CFD è usato come documento ingegneristico di supporto nelle procedure di approvazione comunali e dei vigili del fuoco. Per ogni progetto si forniscono report firmati e sigillati."
+      },
+      {
+        "q": "Posso richiedere solo il servizio di analisi CFD?",
+        "a": "Sì, NOVVES offre anche consulenza CFD indipendente. Simulazione e reporting sono disponibili senza vincolo all'acquisto di ventole e apparecchiature."
+      }
+    ],
+    "finalCtaLabel": "Per il tuo progetto",
+    "finalCtaTitle": "Ti serve un'analisi CFD?",
+    "finalCtaDesc": "Contatta il nostro team CFD per definizione progetto, simulazione e preventivo.",
+    "finalCtaPhone": "+90 216 467 47 52",
+    "finalCtaButton": "Richiedi un preventivo"
+  }
+}

@@ -6,11 +6,9 @@ import {
   getCookieValue,
   COOKIE_ACCESS_TOKEN,
 } from "@/lib/admin/auth";
+import { locales, type Locale } from "@/i18n/config";
 
 export const dynamic = "force-dynamic";
-
-const VALID_LOCALES = ["tr", "en", "ru"] as const;
-type Locale = (typeof VALID_LOCALES)[number];
 
 const VALID_FILES = [
   "common",
@@ -27,7 +25,7 @@ const VALID_FILES = [
 type DictFile = (typeof VALID_FILES)[number];
 
 function isValidLocale(v: unknown): v is Locale {
-  return typeof v === "string" && VALID_LOCALES.includes(v as Locale);
+  return typeof v === "string" && (locales as readonly string[]).includes(v);
 }
 
 function isValidFile(v: unknown): v is DictFile {
@@ -69,7 +67,7 @@ export async function POST(request: NextRequest) {
     error?: string;
   }[] = [];
 
-  for (const locale of VALID_LOCALES) {
+  for (const locale of locales) {
     for (const file of VALID_FILES) {
       const filePath = getDictionaryPath(locale, file);
       const backupPath = filePath + ".backup";

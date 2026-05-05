@@ -1,0 +1,333 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "CFD analizi | Novves",
+      "description": "NOVVES CFD (Computational Fluid Dynamics) analizləri — real ssenarilər, real məlumatlar, təhlükəsiz həllər."
+    },
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər",
+      "current": "CFD analizi"
+    },
+    "hero": {
+      "badge": "Xidmətlər",
+      "titlePart1": "CFD",
+      "titleHighlight": "analizi",
+      "subtitle": "Real ssenarilər, real məlumatlar, təhlükəsiz həllər.",
+      "stats": [
+        { "value": "3D", "label": "Simulyasiya modeli" },
+        { "value": "5", "label": "Analiz parametrləri" },
+        { "value": "EN 12101-3", "label": "Standart yoxlaması" }
+      ]
+    },
+    "intro": "NOVVES-də biz yalnız ventilyatorlar istehsal etmirik — layihəyə xas, mühəndislik əsaslı ventilyasiya həlləri də təqdim edirik. Bu həllərin mərkəzində layihəni məkanda tətbiq etməzdən əvvəl dizaynlarımızı sınaqdan keçirməyə imkan verən CFD (Computational Fluid Dynamics) analizləri dayanır.",
+    "whyCfd": {
+      "sectionLabel": "Metodologiya",
+      "title": "Niyə CFD analizi?",
+      "items": [
+        "Ventilyator sisteminin performansı real mühit şərtlərinə uyğun simulyasiya olunur.",
+        "Tüstü, temperatur və qaz yayılması kimi yanğın ssenariləri əvvəlcədən sınaqdan keçirilir.",
+        "Görünüş məsafəsi, temperatur artımı və CO konsentrasiyası kimi həyati dəyişənlər təhlil olunur.",
+        "Normativ uyğunluq və təhlükəsiz təxliyə müddətləri təsdiqlənir."
+      ],
+      "resultLabel": "Nəticə",
+      "resultText": "Düzgün yerləşdirmə, ventilyatorların düzgün sayı, optimal enerji istifadəsi və maksimum təhlükəsizlik təmin olunur."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Analiz əhatəsi",
+      "title": "Simulyasiya parametrləri",
+      "items": [
+        {
+          "title": "Hava sürəti paylanması",
+          "subtitle": "Sürət analizi",
+          "text": "Qapalı məkan daxilində hava axınının istiqaməti, sürəti və paylanması üç ölçüdə modelləşdirilib. Məqsəd jet ventilyatorların təsiri ilə bütün mühitdə hava dövranı təmin etməkdir."
+        },
+        {
+          "title": "Temperatur dəyişikliyi",
+          "subtitle": "Temperatur paylanması",
+          "text": "Yanğın zamanı insan boyu hündürlükdə ətraf temperaturun necə dəyişdiyi təhlil olunub. Kritik temperatur limitləri qiymətləndirilib, fövqəladə idarəetmə üçün risklər müəyyənləşdirilib."
+        },
+        {
+          "title": "Görünüş qiymətləndirilməsi",
+          "subtitle": "Görünüş analizi",
+          "text": "Güclü tüstü altında təxliyə yollarının nə qədər müddət görünən qaldığı təhlil olunub. Təxliyə təhlükəsizliyini təsdiqləmək üçün görünüşün azalma sürəti ölçülüb."
+        },
+        {
+          "title": "Karbon monoksidin yayılması",
+          "subtitle": "CO konsentrasiyası",
+          "text": "Avtodayanacaq kimi qapalı mühitlərdə əksən qaz CO-nun zamanla necə yığıldığı və ventilyator sistemi ilə necə təmizləndiyi modelləşdirilib."
+        },
+        {
+          "title": "Tüstünün yayılması",
+          "subtitle": "Tüstü yayılması",
+          "text": "Yanğından sonra tüstünün yayılma istiqaməti və sürəti və jet ventilyatorların köməyi ilə necə yönləndirildiyi təhlil olunub. Tüstü təbəqəsinin formalaşması və hərəkəti ətraflı simulyasiya olunub."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Dəyər təklifi",
+      "title": "NOVVES ilə nə qazanırsınız",
+      "items": [
+        "Normativ uyğunluğun yoxlanması",
+        "Ventilyatorların yerləşdirilməsi üçün mühəndislik əsaslı qərarlar",
+        "Təxliyə təhlükəsizliyi üçün temperatur, CO və görünüş limitlərinin əvvəlcədən təhlili",
+        "Quraşdırmadan əvvəl sistem performansının aydın görünməsi",
+        "Layihə əsaslı texniki hesabat və məlumatla dəstəklənən təqdimat"
+      ],
+      "quote": "Dizaynınızı yalnız təcrübəyə deyil, həm də məlumata əsaslandırın. NOVVES mühəndisliyi ilə təhlükəsiz, güclü və optimallaşdırılmış ventilyasiya sistemləri qurun.",
+      "ctaPrimary": "Layihə sorğusu yaradın",
+      "ctaSecondary": "Tüstü idarəetmə dizaynı"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "İstismara qəbul | Novves",
+      "description": "NOVVES satış sonrası istismara qəbul xidməti — montaj nəzarəti, performans testləri, optimallaşdırma və təlim."
+    },
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər",
+      "current": "İstismara qəbul"
+    },
+    "hero": {
+      "badge": "Xidmətlər",
+      "titlePart1": "Komissiya",
+      "titleHighlight": "laşdırma",
+      "subtitle": "Montajdan sonra sistemin tam performansla işləməsini zəmanət edirik.",
+      "stats": [
+        { "value": "8", "label": "Xidmət addımları" },
+        { "value": "4", "label": "Mərhələ" },
+        { "value": "7/24", "label": "Dəstək" },
+        { "value": "PDF", "label": "Hesabat" }
+      ]
+    },
+    "intro": [
+      "Novves-də biz yalnız keyfiyyətli məhsul istehsal etmirik; montajdan sonra sistemin tam performansla işləməsini də zəmanət edirik.",
+      "Müştərilərimizin məhsullarımızdan ən səmərəli və təhlükəsiz şəkildə istifadə etməsi üçün satış sonrası istismara qəbul xidməti göstərilir."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Proses",
+      "title": "Xidmətin məzmunu",
+      "items": [
+        { "step": "Məhsul montajı nəzarəti və mexaniki uyğunluq yoxlaması", "phase": "Nəzarət" },
+        { "step": "Elektrik qoşulmaları və torpaqlama uyğunluğu yoxlaması", "phase": "Nəzarət" },
+        { "step": "Ventilyatorun ilk işə salınması və mühərrik istiqamətinin təsdiqi", "phase": "İşə salma" },
+        { "step": "Sürət tənzimləmə cihazı / tezlik invertorunun parametrlərinin konfiqurasiyası", "phase": "İşə salma" },
+        { "step": "Axın, təzyiq, temperatur kimi əsas performans testlərinin aparılması", "phase": "Test" },
+        { "step": "Ətraf şəraitə uyğun ventilyator optimallaşdırması", "phase": "Test" },
+        { "step": "İstifadəçi üçün sistem işi və əsas texniki qulluq haqqında qısa təlim", "phase": "Təlim" },
+        { "step": "Bütün testlərin və prosedurların qeydiyyatı və istismara qəbul blankası ilə hesabat", "phase": "Hesabat" }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Üstünlüklər",
+      "title": "Niyə vacibdir?",
+      "items": [
+        { "title": "Zəmanətin aktivləşməsi", "text": "Zəmanət müddətinin aktivləşdirilməsi" },
+        { "title": "Nasazlığın qarşısının alınması", "text": "Montaj səhvlərindən yaranan nasazlıqların qarşısının alınması" },
+        { "title": "Səmərəlilik", "text": "Enerji səmərəliliyi və avadanlıq ömrünün yaxşılaşdırılması" },
+        { "title": "Optimallaşdırma", "text": "Ətraf şəraitə uyğun ventilyatorun ən düzgün rejimdə işlədilməsi" }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Xidmət sorğusu",
+      "title": "İstismara qəbul xidməti üçün bizimlə əlaqə saxlayın",
+      "contactForm": "Əlaqə forması",
+      "weekdays": "Həftə içi 08:30 – 18:00",
+      "emailSupport": "E-poçt vasitəsilə texniki dəstək"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Tüstü idarəetmə sisteminin dizaynı | Novves",
+      "description": "Jet ventilyator sisteminin dizaynı — qapalı avtodayanacaqlarda hava axını, çəkilmə və tüstü idarəetməsi."
+    },
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər",
+      "current": "Tüstü idarəetmə"
+    },
+    "hero": {
+      "badge": "Xidmətlər",
+      "titlePart1": "Tüstü idarəetmə",
+      "titleHighlight": "sistem dizaynı",
+      "stats": [
+        { "value": "EN 12101-3", "label": "Standart uyğunluğu" },
+        { "value": "300°C / 2h", "label": "Yanğın davamlılığı" },
+        { "value": "CFD", "label": "Simulyasiya dəstəyi" }
+      ]
+    },
+    "intro": [
+      "Jet ventilyator sistemi qapalı avtodayanacaqlarda hava axınını yönləndirmək, çəkilmə qazlarını təmizləmək və yanğın zamanı tüstünü idarə etmək üçün istifadə olunan mexaniki ventilyasiya sistemidir.",
+      "Bu sistem tunel ventilyasiya texnologiyalarının uyğunlaşdırılması ilə inkişaf etdirilib və xüsusilə böyük və mürəkkəb dayanacaq strukturlarında üstünlük verilir.",
+      "Jet ventilyatorlar havanı yüksək sürətlə üfürməklə öndəki kütləni itələyib dartaraq geniş ərazidə hava hərəkəti yaradır. Beləliklə, nəqliyyat vasitələrindən karbon monoksid (CO) kimi zərərli qazlar effektiv şəkildə təmizlənir. Yanğın zamanı jet ventilyatorlar tüstünün yayılmasının qarşısını alır, qaçış yollarının təhlükəsizliyini təmin edir və yanğınsöndürənlərin müdaxiləsini asanlaşdırır."
+    ],
+    "components": {
+      "sectionLabel": "Sistem arxitekturası",
+      "title": "Jet ventilyator sisteminin komponentləri",
+      "items": [
+        {
+          "title": "Jet ventilyatorlar",
+          "text": "Sistemin əsas komponenti. Tavan üzərində montaj olunur. Çirklənmiş havanı çəkici ventilyatorlara yönləndirmək üçün hava axını yaradır. İki növ mövcuddur: aksial və radial. Aksial növ tək və ya iki istiqamətdə işləyə bilər."
+        },
+        {
+          "title": "Çəkici ventilyatorlar",
+          "text": "Jet ventilyatorlar tərəfindən yönləndirilən çirklənmiş və ya tüstülü havanı nəzarətli şəkildə xaricə atır."
+        },
+        {
+          "title": "Təmiz hava ventilyatorları",
+          "text": "Çirklənmiş havanın əvəzinə təmiz hava vermək və təbii açılışlar kifayət etmədikdə və ya uyğun yerləşmədikdə tüstünün qaçış yollarına çatmasının qarşısını almaq üçün təzyiq yaratmaq məqsədilə istifadə olunur."
+        },
+        {
+          "title": "Sensorlar",
+          "text": "CO, tüstü və istilik sensorları zonasından məlumat toplayır və təyin olunmuş limitlər üzrə bu məlumatı MCC panelinə ötürür."
+        },
+        {
+          "title": "Avtomatlaşdırma və idarəetmə sistemi (MCC panel)",
+          "text": "Sensor məlumatlarına əsasən ventilyatorların avtomatik işə düşməsini təmin edən sistem. Yanğın zamanı sistemin əvvəlcədən müəyyən edilmiş ssenarilərə uyğun işləməsini təmin edir. PLC ilə idarə olunur və BMS (bina idarəetmə sistemi) ilə inteqrasiya oluna bilər."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "Niyə jet ventilyator?",
+      "title": "Sistemin üstünlükləri",
+      "subtitle": "Jet ventilyator sistemləri xüsusilə qapalı avtodayanacaqlarda və tunel sistemlərində ənənəvi kanallı ventilyasiya sistemlərinə nisbətən əhəmiyyətli üstünlüklər təqdim edir.",
+      "items": [
+        { "title": "Kanal tələbi yoxdur", "text": "Jet ventilyator sistemləri havanı yönləndirməklə işlədiyi üçün hava kanalları, barmaqlıqlar və ya diffuzorlar lazım deyil." },
+        { "title": "Məkan qənaəti", "text": "Alçaq tavanlı avtodayanacaqlarda kanal sistemləri yer tutduğu üçün problem yarada bilər. Jet ventilyatorlar kompakt ölçüləri ilə daha az yer tutur." },
+        { "title": "Enerji səmərəliliyi", "text": "CO sensorları ilə işləyərək yalnız ehtiyac olduqda işləyir və enerji istehlakını azaldır. Ventilyatorlar dəyişən sürətlə işləyə bilər, optimallaşdırılmış enerji istifadəsi təmin olunur." },
+        { "title": "Tüstü və istilik çəkilməsi nəzarətdədir", "text": "Yanğın zamanı yüksək sürətlə işləyərək tüstünün yayılmasını idarə edir. Qaçış yollarının tüstü ilə dolmasının qarşısını alır, həyat təhlükəsizliyini təmin edir. Yanğınsöndürən müdaxiləsini asanlaşdırır." },
+        { "title": "Aşağı texniki qulluq xərci", "text": "Kanal sistemi olmadan təmizlik və qulluq asanlaşır. Daha az hissə nasazlıq riskini də azaldır." },
+        { "title": "Arxitekturaya uyğun asan yerləşdirmə", "text": "Gələcək dəyişikliklər üçün sistemin yenidən dizaynı daha sadədir." },
+        { "title": "Aşağı ilkin investisiya xərci", "text": "Daha az avadanlıq (kanallar, barmaqlıqlar, diffuzorlar və s.) istifadə olunduğu üçün ilkin quraşdırma xərci ənənəvi sistemlərə nisbətən aşağıdır." }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Mühəndislik",
+      "title": "Vacib dizayn amilləri",
+      "items": [
+        "Sistemin səmərəli işləməsi üçün lazımi tədbirlər ilk mərhələdən diqqətlə nəzarət olunur və dizayn edilir, yerləşdirmə bütün şərait nəzərə alınaraq həyata keçirilir.",
+        "Jet ventilyator layihələrində səs səviyyəsi, tələb olunan hava istiqaməti planlaşdırması, təmiz havanın çata bilmədiyi \"ölü zonalar\"ın olmaması, montajın asanlığı və yanğın zamanı təxliyə və qaçış yollarının əlçatanlığı kimi vacib amillər aksial ventilyatorların (tüstü və istilik çəkilməsi / təmiz hava) və jet ventilyatorların yerləşdirilməsində nəzərə alınır.",
+        "Jet ventilyator sisteminin dizaynında nəqliyyat çəkilmə qazları, piyada hərəkəti və digər amillər nəzərə alınaraq kifayət qədər hava dəyişmə sürəti və hava axını təmin edilməlidir. Sistemin hava axınını ən səmərəli şəkildə yönləndirmək üçün jet ventilyatorların düzgün mövqeyi seçilməlidir."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Layihəniz üçün",
+      "title": "Tüstü idarəetmə sisteminin dizaynı dəstəyi alın",
+      "cfdLink": "CFD analizi",
+      "supportButton": "Texniki dəstək sorğusu"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Texniki xidmət | Novves",
+      "description": "NOVVES texniki xidməti — satış sonrası dəstək, nasazlıqların aradan qaldırılması, ehtiyat hissələri və texniki qulluq."
+    },
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər",
+      "current": "Texniki xidmət"
+    },
+    "hero": {
+      "badge": "Xidmətlər",
+      "titlePart1": "Texniki",
+      "titleHighlight": "xidmət",
+      "subtitle": "Sürətli cavab, etibarlı həll.",
+      "weekdays": "Həftə içi 08:30 – 18:00",
+      "emailSupport": "E-poçt vasitəsilə texniki dəstək"
+    },
+    "intro": "Novves Texniki Xidmət Departamenti satış sonrası dəstək, nasazlıqların aradan qaldırılması, ehtiyat hissələri və texniki qulluq sorğularınız üçün sürətli və effektiv həllər təqdim etmək üzrə xidmətinizdədir.",
+    "serviceTypes": {
+      "sectionLabel": "Əhatəmiz",
+      "title": "Xidmət sorğuları",
+      "items": [
+        "Montaj və istismara qəbul məsləhəti",
+        "Nasazlıq diaqnostikası və məkanda xidmət",
+        "Dövrü texniki qulluq və yoxlama planlaşdırması",
+        "Ehtiyat hissələri sorğuları",
+        "Məhsul istifadəsi və texniki sənədləşmə dəstəyi"
+      ]
+    },
+    "form": {
+      "sectionLabel": "Sorğu",
+      "title": "Texniki xidmət forması",
+      "description": "Formanı dolduraraq xidmət sorğunuzu təqdim edə bilərsiniz. Texniki komandamız mümkün qədər tez sizə cavab verəcək.",
+      "features": [
+        { "label": "Sürətli cavab", "desc": "24 saat ərzində cavab" },
+        { "label": "Ekspert komanda", "desc": "Sertifikatlı texniki komanda" },
+        { "label": "Meydançada müdaxilə", "desc": "Ölkə üzrə xidmət şəbəkəsi" }
+      ],
+      "labels": {
+        "name": "Ad, soyad",
+        "company": "Şirkət adı",
+        "phone": "Telefon",
+        "email": "E-poçt",
+        "subject": "Mövzu",
+        "message": "Mesajınız"
+      },
+      "submit": "Göndər",
+      "successTitle": "Sorğu qəbul edildi",
+      "successMessage": "Mümkün qədər tez sizə cavab verəcəyik."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "Yerdə kəşfiyyat | Novves",
+      "description": "NOVVES yerdə kəşfiyyat xidməti — layihəyə xas ventilyasiya həlləri üçün meydança yoxlaması, ölçü və təhlil."
+    },
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər",
+      "current": "Yerdə kəşfiyyat"
+    },
+    "hero": {
+      "badge": "Xidmətlər",
+      "titlePart1": "Yerdə",
+      "titleHighlight": "kəşfiyyat",
+      "subtitle": "Dəqiq layihə dizaynının ilk addımı: yerdə ölçü, təhlil və ehtiyacların qiymətləndirilməsi."
+    },
+    "intro": "Hər ventilyasiya layihəsinin əsasında düzgün məlumat dayanır. NOVVES yerdə kəşfiyyat xidməti layihə ehtiyaclarınızı məkanda öyrənərək ən səmərəli və normativlərə uyğun həllin dizaynında ilk və ən kritik addımdır. Ekspert mühəndislərimiz obyektinizə ətraflı ölçü, müşahidə və təhlil aparmaq üçün baş çəkir.",
+    "steps": {
+      "sectionLabel": "Proses",
+      "title": "Kəşfiyyat addımları",
+      "items": [
+        {
+          "title": "Görüş və ilkin məlumat",
+          "desc": "Layihənizin ümumi xüsusiyyətlərini öyrənirik. Obyekt növü, sahə ölçüsü və ehtiyac təhlili üçün ilkin görüş keçiririk."
+        },
+        {
+          "title": "Meydança ziyarəti və ölçü",
+          "desc": "Ekspert komandamız meydançaya baş çəkərək məkanı öyrənir, ölçü aparır və mövcud infrastrukturu qiymətləndirir. Hava axını istiqamətləri, temperatur paylanması və cari sistem vəziyyəti təhlil olunur."
+        },
+        {
+          "title": "Texniki təhlil və hesabat",
+          "desc": "Toplanmış məlumatlar üzərində ventilyasiya ehtiyacı hesablamaları, axın sürəti təhlilləri və normativ uyğunluq yoxlamaları aparılır. Ətraflı kəşfiyyat hesabatı hazırlanır."
+        },
+        {
+          "title": "Həll təklifi və layihə dizaynı",
+          "desc": "Kəşfiyyat məlumatlarına əsasən ən uyğun sistem dizaynı, avadanlıq seçimi və xərc təhlili ilə layihəyə xas təklif təqdim olunur."
+        },
+        {
+          "title": "Təsdiq və icra başlanğıcı",
+          "desc": "Təklifinizi təsdiqlədikdən sonra istehsal, montaj və istismara qəbul prosesləri planlaşdırılır və həyata keçirilir."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Niyə vacib",
+      "title": "Yerdə kəşfiyyat niyə lazımdır?",
+      "items": [
+        { "title": "Dəqiq dizayn", "desc": "Yerdə ölçü olmadan aparılan layihələrdə avadanlıq ölçüləndirmə səhvləri qaçılmazdır." },
+        { "title": "Xərc optimallaşdırması", "desc": "Real meydança məlumatı ilə həddindən artıq və ya kifayət qədər olmayan avadanlıq seçimi qarşısı alınır." },
+        { "title": "Normativ uyğunluq", "desc": "Mövcud bina şəraitinin normativ tələblərlə uyğunluğu məkanda təsdiqlənir." },
+        { "title": "İnteqrasiya rahatlığı", "desc": "Mövcud mexaniki və elektrik infrastrukturu ilə uyğun həlllər yalnız kəşfiyyatla müəyyən edilə bilər." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Pulsuz kəşfiyyat",
+      "title": "Layihəniz üçün yerdə kəşfiyyat sorğusu verin",
+      "subtitle": "Ekspert mühəndis komandamız obyektinizə ehtiyac təhlili və ölçülər aparmaq üçün baş çəkir.",
+      "ctaButton": "Kəşfiyyat sorğusu"
+    }
+  }
+}

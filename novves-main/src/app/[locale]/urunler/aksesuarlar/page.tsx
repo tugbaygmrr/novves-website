@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productCategoryMetadata } from "@/lib/i18n-metadata";
 import AksesuarlarClient from "./client";
 
-export const metadata: Metadata = {
-  title: "Aksesuarlar | Novves",
-  description: "NOVVES aksesuarlar — fan aksesuarları, susturucular, flanşlar ve daha fazlası.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productCategoryMetadata(locale, "aksesuarlar");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -14,6 +19,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const dict = await getDictionary(locale);
   const t = dict.products.aksesuarlar;
   const s = dict.products.shared;
+  if (!t?.accessories || !t.otherCategories || !s) notFound();
 
   return (
     <AksesuarlarClient

@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 import { ProductDetailPage } from "@/components/product-detail-page";
 
-export const metadata: Metadata = {
-  title: "Heron - Çatı Fanları | Novves",
-  description: "Heron serisi çatı fanları — yatay ve dikey atışlı, radyal ve aksiyal çatı tipi fanlar.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "catiFanlari");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

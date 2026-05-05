@@ -1,0 +1,441 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "Análisis de CFD | Novves",
+      "description": "Análisis NOVVES CFD (dinámica de fluidos computacional): escenarios reales, datos reales, soluciones seguras."
+    },
+    "breadcrumb": {
+      "home": "Hogar",
+      "services": "Servicios",
+      "current": "Análisis de CFD"
+    },
+    "hero": {
+      "badge": "Servicios",
+      "titlePart1": "CFD",
+      "titleHighlight": "Análisis",
+      "subtitle": "Escenarios reales, datos reales, soluciones seguras.",
+      "stats": [
+        {
+          "value": "3D",
+          "label": "Modelo de simulación"
+        },
+        {
+          "value": "5",
+          "label": "Parámetros de análisis"
+        },
+        {
+          "value": "EN 12101-3",
+          "label": "Verificación estándar"
+        }
+      ]
+    },
+    "intro": "En NOVVES, no solo fabricamos ventiladores: también ofrecemos soluciones de ventilación basadas en ingeniería para proyectos específicos. En el centro de estas soluciones se encuentran los análisis CFD (dinámica de fluidos computacional) que nos permiten probar nuestros diseños antes de implementarlos en el sitio.",
+    "whyCfd": {
+      "sectionLabel": "Metodología",
+      "title": "¿Por qué análisis CFD?",
+      "items": [
+        "El rendimiento del sistema de ventilación se simula según condiciones ambientales reales.",
+        "Se prueban previamente escenarios de incendio como el humo, la temperatura y la propagación de gases.",
+        "Se analizan variables vitales como la distancia de visibilidad, el aumento de temperatura y la concentración de CO.",
+        "Se verifica el cumplimiento normativo y tiempos de evacuación segura."
+      ],
+      "resultLabel": "Resultado",
+      "resultText": "Se garantiza la ubicación correcta, el número correcto de ventiladores, el uso óptimo de la energía y la máxima seguridad."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Alcance del análisis",
+      "title": "Parámetros de simulación",
+      "items": [
+        {
+          "title": "Distribución de la velocidad del aire",
+          "subtitle": "Análisis de velocidad",
+          "text": "La dirección, velocidad y distribución del flujo de aire dentro del espacio cerrado se ha modelado en tres dimensiones. El objetivo es asegurar la circulación del aire por todo el ambiente con el efecto de ventiladores jet."
+        },
+        {
+          "title": "Cambio de temperatura",
+          "subtitle": "Distribución de temperatura",
+          "text": "Se ha analizado cómo cambia la temperatura ambiente a la altura del nivel humano durante un incendio. Se han evaluado los límites críticos de temperatura y se han identificado riesgos para la gestión de emergencias."
+        },
+        {
+          "title": "Evaluación de visibilidad",
+          "subtitle": "Análisis de visibilidad",
+          "text": "Se ha analizado durante cuánto tiempo las rutas de evacuación permanecen visibles bajo un denso humo. Se ha medido la tasa de reducción de la visibilidad para verificar la seguridad de la evacuación."
+        },
+        {
+          "title": "Dispersión de monóxido de carbono",
+          "subtitle": "Concentración de CO",
+          "text": "Se ha modelado cómo se acumula el CO de los gases de escape con el tiempo en entornos cerrados, como aparcamientos, y cómo es evacuado por el sistema de ventilación."
+        },
+        {
+          "title": "Propagación del humo",
+          "subtitle": "Propagación del humo",
+          "text": "Se ha analizado la dirección y velocidad de propagación del humo tras un incendio y cómo se dirige con la ayuda de ventiladores a reacción. Se ha simulado en detalle la formación y el movimiento de la capa de humo."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Propuesta de valor",
+      "title": "Lo que ganas con NOVVES",
+      "items": [
+        "Verificación del cumplimiento normativo",
+        "Decisiones basadas en ingeniería para el posicionamiento de los ventiladores",
+        "Preanálisis de límites de temperatura, CO y visibilidad para la seguridad en la evacuación",
+        "Visibilidad clara del rendimiento del sistema antes de la instalación.",
+        "Informes técnicos basados ​​en proyectos y presentaciones respaldadas por datos"
+      ],
+      "quote": "Base su diseño no sólo en la experiencia, sino también en los datos. Construya sistemas de ventilación seguros, potentes y optimizados con la ingeniería NOVVES.",
+      "ctaPrimary": "Crear solicitud de proyecto",
+      "ctaSecondary": "Diseño de control de humo"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "Puesta en servicio | Novves",
+      "description": "Servicio postventa de puesta en marcha NOVVES: control de instalación, pruebas de rendimiento, optimización y formación."
+    },
+    "breadcrumb": {
+      "home": "Hogar",
+      "services": "Servicios",
+      "current": "Puesta en servicio"
+    },
+    "hero": {
+      "badge": "Servicios",
+      "titlePart1": "Comisión",
+      "titleHighlight": "ing",
+      "subtitle": "Garantizamos el pleno rendimiento del sistema después de la instalación.",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Pasos del servicio"
+        },
+        {
+          "value": "4",
+          "label": "Fases"
+        },
+        {
+          "value": "7/24",
+          "label": "Apoyo"
+        },
+        {
+          "value": "PDF",
+          "label": "Informes"
+        }
+      ]
+    },
+    "intro": [
+      "En Novves, no sólo producimos productos de calidad; También garantizamos el funcionamiento completo del sistema después de la instalación.",
+      "Nuestro servicio de puesta en servicio posventa se brinda para garantizar que nuestros clientes utilicen nuestros productos de la manera más eficiente y segura."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Proceso",
+      "title": "Contenido del servicio",
+      "items": [
+        {
+          "step": "Control de instalación del producto e inspección de cumplimiento mecánico.",
+          "phase": "Control"
+        },
+        {
+          "step": "Verificación de cumplimiento de conexiones eléctricas y puesta a tierra.",
+          "phase": "Control"
+        },
+        {
+          "step": "Arranque inicial del ventilador y verificación de la dirección del motor.",
+          "phase": "Puesta en marcha"
+        },
+        {
+          "step": "Configuración de los ajustes del dispositivo de control de velocidad/convertidor de frecuencia",
+          "phase": "Puesta en marcha"
+        },
+        {
+          "step": "Realizar pruebas de rendimiento básicas como caudal, presión y temperatura.",
+          "phase": "Prueba"
+        },
+        {
+          "step": "Optimización del ventilador según las condiciones ambientales.",
+          "phase": "Prueba"
+        },
+        {
+          "step": "Breve formación sobre el funcionamiento del sistema e información básica de mantenimiento para el usuario.",
+          "phase": "Capacitación"
+        },
+        {
+          "step": "Registro de todas las pruebas y procedimientos e informes con el formulario de puesta en servicio.",
+          "phase": "Informes"
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Ventajas",
+      "title": "¿Por qué es importante?",
+      "items": [
+        {
+          "title": "Activación de garantía",
+          "text": "Activación del período de garantía."
+        },
+        {
+          "title": "Prevención de fallas",
+          "text": "Prevención de averías que puedan surgir por errores de instalación"
+        },
+        {
+          "title": "Eficiencia",
+          "text": "Mejora de la eficiencia energética y la vida útil de los dispositivos."
+        },
+        {
+          "title": "Mejoramiento",
+          "text": "Operar el ventilador de la forma más adecuada según las condiciones ambientales."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Solicitud de servicio",
+      "title": "Contáctenos para servicio de puesta en marcha",
+      "contactForm": "Formulario de contacto",
+      "weekdays": "Laborables 08:30 – 18:00",
+      "emailSupport": "Soporte técnico vía correo electrónico"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Diseño de sistemas de control de humo | Novves",
+      "description": "Diseño de sistema de ventilador de chorro: flujo de aire, extracción de gases de escape y control de humo en estacionamientos cerrados."
+    },
+    "breadcrumb": {
+      "home": "Hogar",
+      "services": "Servicios",
+      "current": "Control de humo"
+    },
+    "hero": {
+      "badge": "Servicios",
+      "titlePart1": "Control de humo",
+      "titleHighlight": "Diseño del sistema",
+      "stats": [
+        {
+          "value": "EN 12101-3",
+          "label": "Cumplimiento de estándares"
+        },
+        {
+          "value": "300°C / 2h",
+          "label": "Resistencia al fuego"
+        },
+        {
+          "value": "CFD",
+          "label": "Simulación compatible"
+        }
+      ]
+    },
+    "intro": [
+      "El sistema de ventilador de chorro es un sistema de ventilación mecánica que se utiliza para dirigir el flujo de aire, evacuar los gases de escape y controlar el humo en caso de incendio en estacionamientos cerrados.",
+      "Este sistema se ha desarrollado adaptando tecnologías de ventilación de túneles y se prefiere especialmente en estructuras de estacionamiento grandes y complejas.",
+      "Los ventiladores a reacción crean movimiento de aire sobre un área amplia al soplar aire a alta velocidad, empujando y arrastrando la masa de aire frente a ellos. De esta manera se evacuan eficazmente los gases nocivos como el monóxido de carbono (CO) de los vehículos. Durante un incendio, los ventiladores evitan la propagación del humo, garantizando la seguridad de las rutas de escape y facilitando la intervención de los bomberos."
+    ],
+    "components": {
+      "sectionLabel": "Arquitectura del sistema",
+      "title": "Componentes del sistema de ventilador Jet",
+      "items": [
+        {
+          "title": "Fanáticos del jet",
+          "text": "El componente principal del sistema. Montado en el techo. Crea un flujo de aire para dirigir el aire contaminado a los extractores. Hay dos tipos disponibles: axial y radial. El tipo axial puede operar en dirección simple o doble."
+        },
+        {
+          "title": "Extractores de aire",
+          "text": "Expulsa el aire contaminado o lleno de humo dirigido por ventiladores al exterior de forma controlada."
+        },
+        {
+          "title": "Ventiladores de aire fresco",
+          "text": "Se utiliza para presurización para proporcionar aire limpio en lugar de aire contaminado y para evitar que el humo llegue a las rutas de escape cuando las aberturas naturales son insuficientes o no están ubicadas adecuadamente."
+        },
+        {
+          "title": "Sensores",
+          "text": "Los sensores de CO, humo y calor recopilan datos de su zona y transmiten esta información al panel MCC según los límites establecidos."
+        },
+        {
+          "title": "Sistema de Automatización y Control (Panel MCC)",
+          "text": "El sistema que permite la activación automática de ventiladores en base a datos de sensores. Durante un incendio, garantiza que el sistema funcione según escenarios predeterminados. Controlado por PLC y puede integrarse con BMS (sistema de gestión de edificios)."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "¿Por qué Jet Fan?",
+      "title": "Ventajas del sistema",
+      "subtitle": "Los sistemas de ventiladores de chorro ofrecen ventajas significativas sobre los sistemas de ventilación tradicionales de tipo conducto, especialmente en estacionamientos cerrados y sistemas de túneles.",
+      "items": [
+        {
+          "title": "Sin necesidad de conductos",
+          "text": "Los sistemas de ventilador Jet funcionan dirigiendo el aire, por lo que no son necesarios conductos de aire, rejillas ni difusores."
+        },
+        {
+          "title": "Ahorro de espacio",
+          "text": "En estacionamientos con techos bajos, los sistemas de conductos pueden causar problemas ya que ocupan espacio. Los ventiladores Jet ocupan menos espacio gracias a sus dimensiones compactas."
+        },
+        {
+          "title": "Eficiencia energética",
+          "text": "Al trabajar con sensores de CO, solo funcionan cuando es necesario, lo que reduce el consumo de energía. Los ventiladores pueden funcionar a velocidades variables, lo que proporciona un uso optimizado de la energía."
+        },
+        {
+          "title": "La extracción de humos y calor está bajo control.",
+          "text": "Al operar a alta velocidad durante un incendio, controla la propagación del humo. Evita que las vías de escape se llenen de humo, garantizando la seguridad de la vida. Facilita la intervención de los bomberos."
+        },
+        {
+          "title": "Bajo costo de mantenimiento",
+          "text": "Sin un sistema de conductos, la limpieza y el mantenimiento son más fáciles. Un menor número de piezas también reduce el riesgo de fallo."
+        },
+        {
+          "title": "Fácilmente posicionado según la arquitectura.",
+          "text": "Rediseñar el sistema para cambios futuros es más sencillo."
+        },
+        {
+          "title": "Bajo coste de inversión inicial",
+          "text": "Al utilizar menos equipos (ductos, rejillas, difusores, etc.), el coste inicial de instalación es menor respecto a los sistemas tradicionales."
+        }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Ingeniería",
+      "title": "Factores de diseño importantes",
+      "items": [
+        "Las precauciones necesarias para el funcionamiento eficiente del sistema se controlan y diseñan cuidadosamente desde la primera etapa, y la colocación se instala considerando todas las condiciones.",
+        "En los proyectos de ventiladores de chorro, en la colocación de ventiladores axiales (extracción de humo y calor/aire fresco) y ventiladores de chorro se consideran factores importantes como el nivel de ruido, la planificación requerida de la dirección del aire, la ausencia de \"zonas muertas\" donde el aire fresco no puede llegar, la facilidad de instalación y la accesibilidad a las rutas de evacuación y escape durante un incendio.",
+        "En el diseño del sistema de ventilador de chorro, se deben proporcionar tasas de cambio de aire y flujo de aire adecuados considerando los gases de escape de los vehículos, el tráfico de peatones y otros factores. Se debe colocar la posición correcta de los jet fans para dirigir el flujo de aire del sistema de la manera más eficiente."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Para tu proyecto",
+      "title": "Obtenga soporte para el diseño del sistema de control de humo",
+      "cfdLink": "Análisis de CFD",
+      "supportButton": "Solicitud de soporte técnico"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Servicio Técnico | Novves",
+      "description": "Servicio técnico NOVVES: soporte postventa, resolución de averías, suministro de repuestos y mantenimiento."
+    },
+    "breadcrumb": {
+      "home": "Hogar",
+      "services": "Servicios",
+      "current": "Servicio Técnico"
+    },
+    "hero": {
+      "badge": "Servicios",
+      "titlePart1": "Técnico",
+      "titleHighlight": "Servicio",
+      "subtitle": "Respuesta rápida, solución confiable.",
+      "weekdays": "Laborables 08:30 – 18:00",
+      "emailSupport": "Soporte técnico vía correo electrónico"
+    },
+    "intro": "El Departamento de Servicio Técnico de Novves está a su servicio para brindarle soluciones rápidas y efectivas a sus solicitudes de soporte postventa, resolución de fallas, suministro de repuestos y mantenimiento.",
+    "serviceTypes": {
+      "sectionLabel": "Nuestro alcance",
+      "title": "Solicitudes de servicio",
+      "items": [
+        "Asesoría en instalación y puesta en marcha.",
+        "Detección de fallos y servicio in situ",
+        "Planificación periódica de mantenimiento e inspección.",
+        "Solicitudes de repuestos",
+        "Uso del producto y soporte de documentación técnica."
+      ]
+    },
+    "form": {
+      "sectionLabel": "Pedido",
+      "title": "Formulario de Servicio Técnico",
+      "description": "Puede enviar su solicitud de servicio completando el formulario. Nuestro equipo técnico se comunicará con usted lo antes posible.",
+      "features": [
+        {
+          "label": "Respuesta Rápida",
+          "desc": "Respuesta en 24 horas"
+        },
+        {
+          "label": "Equipo de expertos",
+          "desc": "Equipo técnico certificado"
+        },
+        {
+          "label": "Intervención de campo",
+          "desc": "Red de servicio a nivel nacional"
+        }
+      ],
+      "labels": {
+        "name": "Nombre completo",
+        "company": "nombre de empresa",
+        "phone": "Teléfono",
+        "email": "Correo electrónico",
+        "subject": "Sujeto",
+        "message": "Tu mensaje"
+      },
+      "submit": "Entregar",
+      "successTitle": "Solicitud recibida",
+      "successMessage": "Nos comunicaremos con usted lo antes posible."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "Encuesta in situ | Novves",
+      "description": "Servicio de inspección in situ de NOVVES: inspección, medición y análisis del sitio para soluciones de ventilación específicas del proyecto."
+    },
+    "breadcrumb": {
+      "home": "Hogar",
+      "services": "Servicios",
+      "current": "Encuesta in situ"
+    },
+    "hero": {
+      "badge": "Servicios",
+      "titlePart1": "In situ",
+      "titleHighlight": "Encuesta",
+      "subtitle": "El primer paso para un diseño preciso del proyecto: medición, análisis y evaluación de necesidades in situ."
+    },
+    "intro": "Los datos precisos son la base de todo proyecto de ventilación. El servicio de inspección in situ de NOVVES es el primer y más crítico paso en el diseño de la solución más eficiente y que cumpla con las regulaciones mediante el examen de las necesidades de su proyecto en el sitio. Nuestros ingenieros expertos visitan sus instalaciones para realizar mediciones, observaciones y análisis detallados.",
+    "steps": {
+      "sectionLabel": "Proceso",
+      "title": "Pasos de la encuesta",
+      "items": [
+        {
+          "title": "Cita e información preliminar",
+          "desc": "Aprendemos las características generales de tu proyecto. Realizamos una reunión preliminar para analizar el tipo de instalación, el tamaño del área y las necesidades."
+        },
+        {
+          "title": "Visita al sitio y medición",
+          "desc": "Nuestro equipo de expertos visita el sitio para examinar el espacio, tomar medidas y evaluar la infraestructura existente. Se analizan las direcciones del flujo de aire, la distribución de la temperatura y el estado actual del sistema."
+        },
+        {
+          "title": "Análisis Técnico e Informes",
+          "desc": "A partir de los datos recopilados se realizan cálculos de requisitos de ventilación, análisis de caudal y comprobaciones de cumplimiento de las normas. Se prepara un informe de encuesta detallado."
+        },
+        {
+          "title": "Propuesta de Solución y Diseño de Proyecto",
+          "desc": "A partir de los datos de la encuesta, se presenta una propuesta específica del proyecto con el diseño del sistema, la selección de equipos y el análisis de costos más adecuados."
+        },
+        {
+          "title": "Inicio de aprobación e implementación",
+          "desc": "Después de aprobar su propuesta, se planifican y ponen en práctica los procesos de producción, instalación y puesta en marcha."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Por qué es importante",
+      "title": "¿Por qué es necesaria una encuesta in situ?",
+      "items": [
+        {
+          "title": "Diseño preciso",
+          "desc": "Los errores en el tamaño de los equipos son inevitables en proyectos realizados sin mediciones in situ."
+        },
+        {
+          "title": "Optimización de costos",
+          "desc": "La selección de equipos de tamaño demasiado grande o insuficiente se evita con datos reales del sitio."
+        },
+        {
+          "title": "Cumplimiento normativo",
+          "desc": "El cumplimiento de las condiciones existentes del edificio con los requisitos reglamentarios se verifica in situ."
+        },
+        {
+          "title": "Facilidad de integración",
+          "desc": "Las soluciones compatibles con la infraestructura mecánica y eléctrica existente sólo pueden determinarse mediante un estudio."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Encuesta gratuita",
+      "title": "Solicite un estudio in situ para su proyecto",
+      "subtitle": "Nuestro equipo de ingenieros expertos visita sus instalaciones para realizar análisis y mediciones de necesidades.",
+      "ctaButton": "Solicitar una encuesta"
+    }
+  }
+}

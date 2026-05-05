@@ -1,4 +1,36 @@
 import type { NextConfig } from "next";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const configDir = path.dirname(fileURLToPath(import.meta.url));
+
+function findAppRootWithNext(start: string): string | undefined {
+  let dir = path.resolve(start);
+  for (let i = 0; i < 40; i++) {
+    if (fs.existsSync(path.join(dir, "node_modules", "next", "package.json"))) {
+      return dir;
+    }
+    const parent = path.dirname(dir);
+    if (parent === dir) return undefined;
+    dir = parent;
+  }
+  return undefined;
+}
+
+function nestedNovvesMain(from: string): string | undefined {
+  const nested = path.join(from, "novves-main");
+  if (fs.existsSync(path.join(nested, "node_modules", "next", "package.json"))) {
+    return nested;
+  }
+  return undefined;
+}
+
+const projectRoot =
+  findAppRootWithNext(process.cwd()) ??
+  findAppRootWithNext(configDir) ??
+  nestedNovvesMain(configDir) ??
+  configDir;
 
 const securityHeaders = [
   {
@@ -33,6 +65,39 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: projectRoot,
+  },
+
+  /**
+   * Dev: çok sayıda kare dosyası izlenmesin (RAM/CPU, Windows watcher limiti).
+   * Kare değişikliği: `npm run dev:turbo` veya build sonrası yenile.
+   */
+  webpack: (config, { dev }) => {
+    if (!dev) return config;
+    const ignored = [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/public/animation/**",
+    ];
+    const apply = (c: { watchOptions?: Record<string, unknown> }) => {
+      c.watchOptions = { ...c.watchOptions, ignored };
+    };
+    if (Array.isArray(config)) {
+      config.forEach(apply);
+    } else {
+      apply(config);
+    }
+    return config;
+  },
+
+  /** Slash yanlışlığı veya "tr"+"bu" yapışık yazım: /trbu → /tr */
+  async redirects() {
+    return [
+      { source: "/trbu", destination: "/tr", permanent: false },
+      { source: "/trbu/:path*", destination: "/tr/:path*", permanent: false },
+    ];
+  },
   async headers() {
     return [
       {
@@ -67,7 +132,7 @@ const nextConfig: NextConfig = {
   experimental: {
     serverActions: {
       bodySizeLimit: "1mb",
-      allowedOrigins: ["localhost:3000"],
+      allowedOrigins: ["localhost:3000", "127.0.0.1:3000"],
     },
   },
 };

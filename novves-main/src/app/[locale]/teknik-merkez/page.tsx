@@ -3,14 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SolutionsCarousel } from "@/components/solutions-carousel";
+import { navbarHubMetadata } from "@/lib/i18n-metadata";
 import { getDictionary, hasLocale } from "../dictionaries";
 import heroFactoryImage from "../../../../IMG-20240401-WA0008.jpg";
 
-export const metadata: Metadata = {
-  title: "Teknik Merkez | Novves",
-  description:
-    "NOVVES teknik merkez — blog, doküman kütüphanesi, fan seçici ve patentlerimiz.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return navbarHubMetadata(locale, "technicalCenter");
+}
 
 const technicalItems: { key: string; slug: string }[] = [
   {

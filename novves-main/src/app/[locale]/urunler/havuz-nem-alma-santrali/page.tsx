@@ -3,11 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "Dolphin - Havuz Nem Alma Santrali | Novves",
-  description: "NOVVES Dolphin Serisi havuz nem alma santralleri — kapalı havuzlarda nem kontrolü ve enerji verimliliği.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "havuzNemAlmaSantrali");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

@@ -1,5 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
-import { locales, defaultLocale } from "@/i18n/config";
+import {
+  locales,
+  defaultLocale,
+  pickLocaleFromAcceptLanguage,
+  type Locale,
+} from "@/i18n/config";
+
+/** cookie-consent-storage ile aynı anahtar — Edge paketinde tarayıcı API’si olmadan kullanılmalı */
+const CONSENT_RESTRICTED_COOKIE_NAME = "NOVVES_consent_restricted";
 
 // Simple in-memory rate limiter (use Redis in production)
 const rateLimitMap = new Map<string, { count: number; lastReset: number }>();
@@ -19,14 +27,6 @@ function isRateLimited(ip: string): boolean {
   return entry.count > RATE_LIMIT_MAX;
 }
 
-function getLocale(request: NextRequest): string {
-  const acceptLanguage = request.headers.get("accept-language") ?? "";
-  const lang = acceptLanguage.toLowerCase();
-  if (lang.startsWith("en")) return "en";
-  if (lang.startsWith("ru")) return "ru";
-  return defaultLocale;
-}
-
 function getCookieFromRequest(request: NextRequest, name: string): string | undefined {
   const cookieHeader = request.headers.get("cookie") ?? "";
   const match = cookieHeader.match(new RegExp(`(?:^|;\\s*)${name}=([^;]*)`));
@@ -43,9 +43,22 @@ function hasAuthCookie(cookieValue: string | undefined): boolean {
   return typeof cookieValue === "string" && cookieValue.length > 0;
 }
 
+/** Kök `app/layout.tsx` içinde `<html lang>` için — URL’deki `[locale]` segmenti */
+const LOCALE_HEADER = "x-novves-locale";
+
+function requestHeadersWithLocale(request: NextRequest, pathname: string): Headers {
+  const requestHeaders = new Headers(request.headers);
+  const seg = pathname.split("/").filter(Boolean)[0];
+  const loc =
+    seg && locales.includes(seg as Locale) ? seg : defaultLocale;
+  requestHeaders.set(LOCALE_HEADER, loc);
+  return requestHeaders;
+}
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const lowerPathname = pathname.toLowerCase();
+  const isDev = process.env.NODE_ENV !== "production";
 
   // --- Rate Limiting ---
   const ip =
@@ -59,8 +72,8 @@ export function proxy(request: NextRequest) {
     );
   }
 
-  // --- Admin API paths: skip locale redirect, just pass through ---
-  if (pathname.startsWith("/api/admin")) {
+  // --- API & Next internals — never locale-prefix (/_next/data RSC vb. yoksa 404) ---
+  if (pathname.startsWith("/api") || pathname.startsWith("/_next")) {
     return NextResponse.next();
   }
 
@@ -105,9 +118,28 @@ export function proxy(request: NextRequest) {
       `upgrade-insecure-requests`,
     ].join("; ");
 
-    const response = NextResponse.next();
-    response.headers.set("Content-Security-Policy", cspHeader);
+    const response = NextResponse.next({
+      request: { headers: requestHeadersWithLocale(request, pathname) },
+    });
+    // Dev/local: browser extensions (mobile simulator vb.) script inject eder.
+    // Sıkı CSP bu enjeksiyonu bloke ettiği için sadece production'da CSP uygula.
+    if (!isDev) {
+      response.headers.set("Content-Security-Policy", cspHeader);
+    }
     return response;
+  }
+
+  // --- public/ kökündeki dosyalar — asla /{locale}/images/... yapma (404) ---
+  if (
+    pathname.startsWith("/images") ||
+    pathname.startsWith("/certificate") ||
+    pathname.startsWith("/animation") ||
+    pathname === "/icon.svg" ||
+    pathname === "/robots.txt" ||
+    pathname === "/sitemap.xml" ||
+    /\.(?:ico|png|jpg|jpeg|gif|webp|svg|txt|xml|mp4|pdf|woff2?)$/i.test(pathname)
+  ) {
+    return NextResponse.next();
   }
 
   // --- Locale Routing ---
@@ -116,9 +148,23 @@ export function proxy(request: NextRequest) {
   );
 
   if (!pathnameHasLocale) {
-    const locale = getLocale(request);
+    const locale = pickLocaleFromAcceptLanguage(request.headers.get("accept-language"));
     request.nextUrl.pathname = `/${locale}${pathname}`;
     return NextResponse.redirect(request.nextUrl);
+  }
+
+  /** Teknik Merkez — yalnızca çerezleri reddeden kullanıcılar (tarayıcı çerezi senkronu). */
+  if (getCookieFromRequest(request, CONSENT_RESTRICTED_COOKIE_NAME) === "1") {
+    const segments = pathname.split("/").filter(Boolean);
+    if (
+      segments.length >= 2 &&
+      segments[1] === "teknik-merkez" &&
+      locales.includes(segments[0] as Locale)
+    ) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${segments[0]}`;
+      return NextResponse.redirect(url);
+    }
   }
 
   const publicScriptSrc =
@@ -139,22 +185,19 @@ export function proxy(request: NextRequest) {
     `upgrade-insecure-requests`,
   ].join("; ");
 
-  const response = NextResponse.next();
-  response.headers.set("Content-Security-Policy", cspHeader);
+  const response = NextResponse.next({
+    request: { headers: requestHeadersWithLocale(request, pathname) },
+  });
+  // Dev/local: eklenti uyumluluğu için CSP header'ını kaldır.
+  if (!isDev) {
+    response.headers.set("Content-Security-Policy", cspHeader);
+  }
 
   return response;
 }
 
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except:
-     * - _next/static (static files)
-     * - _next/image (image optimization)
-     * - favicon.ico, sitemap.xml, robots.txt (metadata files)
-     * - public folder assets (images, certificates, etc.)
-     */
-    "/((?!_next/static|_next/image|favicon.ico|icon.svg|sitemap.xml|robots.txt|images/|certificate/|kvkk/|animation|.*\\.mp4$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico).*)",
   ],
 };
-

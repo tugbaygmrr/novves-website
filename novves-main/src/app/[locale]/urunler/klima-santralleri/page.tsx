@@ -3,11 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "Tiger - Klima Santralleri | Novves",
-  description: "NOVVES Tiger Serisi klima santralleri — modüler yapıda, verimlilik odaklı, 500 - 125.000 m³/h hava debisi.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "klimaSantralleri");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

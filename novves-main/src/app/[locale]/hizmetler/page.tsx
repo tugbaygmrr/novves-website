@@ -3,14 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SolutionsCarousel } from "@/components/solutions-carousel";
+import { navbarHubMetadata } from "@/lib/i18n-metadata";
 import { getDictionary, hasLocale } from "../dictionaries";
 import heroFactoryImage from "../../../../IMG-20240401-WA0008.jpg";
 
-export const metadata: Metadata = {
-  title: "Hizmetler | Novves",
-  description:
-    "NOVVES mühendislik hizmetleri — CFD analizi, devreye alma, duman kontrol sistemi tasarımı, teknik servis ve yerinde keşif.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return navbarHubMetadata(locale, "services");
+}
 
 const serviceItems: { key: string; slug: string }[] = [
   { key: "cfdAnalizi", slug: "cfd-analizi" },

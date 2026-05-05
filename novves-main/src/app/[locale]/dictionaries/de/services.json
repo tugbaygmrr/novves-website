@@ -1,0 +1,333 @@
+{
+  "cfdAnalizi": {
+    "meta": {
+      "title": "CFD-Analyse | Novves",
+      "description": "NOVVES CFD-Analysen (Numerische Strömungsmechanik) – reale Szenarien, echte Daten, sichere Lösungen."
+    },
+    "breadcrumb": {
+      "home": "Startseite",
+      "services": "Leistungen",
+      "current": "CFD-Analyse"
+    },
+    "hero": {
+      "badge": "Leistungen",
+      "titlePart1": "CFD",
+      "titleHighlight": "Analyse",
+      "subtitle": "Reale Szenarien, echte Daten, sichere Lösungen.",
+      "stats": [
+        { "value": "3D", "label": "Simulationsmodell" },
+        { "value": "5", "label": "Analyseparameter" },
+        { "value": "EN 12101-3", "label": "Normprüfung" }
+      ]
+    },
+    "intro": "Bei NOVVES fertigen wir nicht nur Ventilatoren – wir liefern projektspezifische, ingenieurtechnisch fundierte Lüftungslösungen. Kern sind CFD-Analysen (Numerische Strömungsmechanik), mit denen wir unsere Auslegungen vor der Umsetzung vor Ort testen.",
+    "whyCfd": {
+      "sectionLabel": "Methodik",
+      "title": "Warum CFD-Analyse?",
+      "items": [
+        "Die Ventilatoranlage wird unter realen Umgebungsbedingungen simuliert.",
+        "Brandszenarien wie Rauch, Temperatur und Gas werden vorab geprüft.",
+        "Wichtige Größen wie Sichtweite, Temperaturanstieg und CO-Konzentration werden analysiert.",
+        "Normkonformität und sichere Evakuierungszeiten werden verifiziert."
+      ],
+      "resultLabel": "Ergebnis",
+      "resultText": "Richtige Positionierung, richtige Ventilatoranzahl, optimaler Energieeinsatz und maximale Sicherheit."
+    },
+    "analysisTypes": {
+      "sectionLabel": "Analyseumfang",
+      "title": "Simulationsparameter",
+      "items": [
+        {
+          "title": "Luftgeschwindigkeitsverteilung",
+          "subtitle": "Geschwindigkeitsanalyse",
+          "text": "Richtung, Geschwindigkeit und Verteilung der Luftströmung im geschlossenen Raum wurden dreidimensional modelliert. Ziel ist die Luftführung im gesamten Bereich unter Einfluss der Jet-Ventilatoren."
+        },
+        {
+          "title": "Temperaturänderung",
+          "subtitle": "Temperaturverteilung",
+          "text": "Es wurde analysiert, wie sich die Umgebungstemperatur in Menschenhöhe während eines Brandes ändert. Kritische Temperaturgrenzen wurden bewertet und Risiken für die Notfallsteuerung identifiziert."
+        },
+        {
+          "title": "Sichtweitenbewertung",
+          "subtitle": "Sichtweitenanalyse",
+          "text": "Es wurde analysiert, wie lange Fluchtwege bei starkem Rauch sichtbar bleiben. Die Abnahme der Sichtweite wurde zur Verifikation der Evakuierungssicherheit gemessen."
+        },
+        {
+          "title": "Kohlenmonoxid-Ausbreitung",
+          "subtitle": "CO-Konzentration",
+          "text": "Es wurde modelliert, wie sich Abgas-CO in geschlossenen Bereichen wie Parkhäusern anreichert und wie es durch die Ventilatoranlage abgeführt wird."
+        },
+        {
+          "title": "Rauchausbreitung",
+          "subtitle": "Rauchausbreitung",
+          "text": "Richtung und Geschwindigkeit der Rauchausbreitung nach Brandbeginn und Lenkung mit Jet-Ventilatoren wurden analysiert. Rauchschichtbildung und -bewegung wurden detailliert simuliert."
+        }
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Nutzen",
+      "title": "Ihr Vorteil mit NOVVES",
+      "items": [
+        "Nachweis der Normkonformität",
+        "Ingenieurtechnisch fundierte Entscheidungen zur Ventilatorposition",
+        "Voranalyse von Temperatur-, CO- und Sichtgrenzen für die Evakuierungssicherheit",
+        "Klare Einschätzung der Systemleistung vor der Installation",
+        "Projektbezogene technische Berichte und datengestützte Präsentation"
+      ],
+      "quote": "Gründen Sie Ihre Auslegung nicht nur auf Erfahrung, sondern auch auf Daten. Realisieren Sie sichere, leistungsstarke und optimierte Lüftungssysteme mit NOVVES Engineering.",
+      "ctaPrimary": "Projektanfrage erstellen",
+      "ctaSecondary": "Rauchmanagement-Planung"
+    }
+  },
+  "devreAlma": {
+    "meta": {
+      "title": "Inbetriebnahme | Novves",
+      "description": "NOVVES-Inbetriebnahme nach dem Verkauf – Montagekontrolle, Leistungstests, Optimierung und Schulung."
+    },
+    "breadcrumb": {
+      "home": "Startseite",
+      "services": "Leistungen",
+      "current": "Inbetriebnahme"
+    },
+    "hero": {
+      "badge": "Leistungen",
+      "titlePart1": "Inbetrieb",
+      "titleHighlight": "nahme",
+      "subtitle": "Wir garantieren den vollen Leistungsbetrieb der Anlage nach der Installation.",
+      "stats": [
+        { "value": "8", "label": "Service-Schritte" },
+        { "value": "4", "label": "Phasen" },
+        { "value": "7/24", "label": "Support" },
+        { "value": "PDF", "label": "Berichte" }
+      ]
+    },
+    "intro": [
+      "Bei Novves liefern wir nicht nur Qualitätsprodukte – wir garantieren auch den vollen Leistungsbetrieb nach der Installation.",
+      "Unsere Inbetriebnahme nach dem Verkauf stellt sicher, dass Kunden unsere Produkte effizient und sicher nutzen."
+    ],
+    "serviceSteps": {
+      "sectionLabel": "Ablauf",
+      "title": "Leistungsinhalt",
+      "items": [
+        { "step": "Montagekontrolle des Produkts und Prüfung der mechanischen Konformität", "phase": "Kontrolle" },
+        { "step": "Prüfung von elektrischen Anschlüssen und Erdung", "phase": "Kontrolle" },
+        { "step": "Erster Ventilatorstart und Prüfung der Drehrichtung", "phase": "Start" },
+        { "step": "Einstellung von Drehzahlregler / Frequenzumrichter", "phase": "Start" },
+        { "step": "Grundlegende Leistungstests zu Volumenstrom, Druck, Temperatur", "phase": "Test" },
+        { "step": "Optimierung des Ventilators an Umgebungsbedingungen", "phase": "Test" },
+        { "step": "Kurze Schulung zur Bedienung und Basiswartung für den Nutzer", "phase": "Schulung" },
+        { "step": "Dokumentation aller Tests und Verfahren mit Inbetriebnahmeprotokoll", "phase": "Bericht" }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Vorteile",
+      "title": "Warum ist das wichtig?",
+      "items": [
+        { "title": "Garantieaktivierung", "text": "Aktivierung der Garantiezeit" },
+        { "title": "Fehlervermeidung", "text": "Vermeidung von Fehlern durch Montagefehler" },
+        { "title": "Effizienz", "text": "Verbesserung der Energieeffizienz und der Gerätelebensdauer" },
+        { "title": "Optimierung", "text": "Betrieb des Ventilators optimal an Umgebungsbedingungen angepasst" }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Serviceanfrage",
+      "title": "Kontaktieren Sie uns zur Inbetriebnahme",
+      "contactForm": "Kontaktformular",
+      "weekdays": "Werktags 08:30 – 18:00",
+      "emailSupport": "Technischer Support per E-Mail"
+    }
+  },
+  "dumanKontrol": {
+    "meta": {
+      "title": "Rauchmanagement-Planung | Novves",
+      "description": "Jet-Ventilator-Systemplanung – Luftführung, Abgasableitung und Rauchmanagement in geschlossenen Parkhäusern."
+    },
+    "breadcrumb": {
+      "home": "Startseite",
+      "services": "Leistungen",
+      "current": "Rauchmanagement"
+    },
+    "hero": {
+      "badge": "Leistungen",
+      "titlePart1": "Rauchmanagement",
+      "titleHighlight": "Systemplanung",
+      "stats": [
+        { "value": "EN 12101-3", "label": "Normkonformität" },
+        { "value": "300°C / 2h", "label": "Feuerwiderstand" },
+        { "value": "CFD", "label": "Simulationsgestützt" }
+      ]
+    },
+    "intro": [
+      "Das Jet-Ventilator-System ist eine mechanische Lüftungsanlage zur Luftführung, Abgasableitung und Rauchsteuerung bei Brand in geschlossenen Parkhäusern.",
+      "Es basiert auf angepassten Tunnel-Lüftungstechnologien und wird besonders in großen, komplexen Parkstrukturen eingesetzt.",
+      "Jet-Ventilatoren erzeugen durch hohe Ausblasgeschwindigkeit Luftbewegung über große Flächen und fördern die Luftmasse vor ihnen. Schädliche Gase wie CO aus dem Verkehr werden effektiv abgeführt. Bei Brand verhindern Jet-Ventilatoren die Rauchausbreitung, sichern Fluchtwege und unterstützen die Feuerwehr."
+    ],
+    "components": {
+      "sectionLabel": "Systemarchitektur",
+      "title": "Komponenten des Jet-Ventilator-Systems",
+      "items": [
+        {
+          "title": "Jet-Ventilatoren",
+          "text": "Hauptkomponente der Anlage. Deckenmontage. Erzeugt Luftführung zur Zuführung verunreinigter Luft zu Abluftventilatoren. Axial und radial. Axial ein- oder zweirichtungsbetrieb möglich."
+        },
+        {
+          "title": "Abluftventilatoren",
+          "text": "Führt die von Jet-Ventilatoren gelenkte verunreinigte oder verrauchte Luft kontrolliert nach außen."
+        },
+        {
+          "title": "Zuluftventilatoren",
+          "text": "Dienen der Überdruckhaltung für Frischluft und verhindern Rauch auf Fluchtwegen, wenn natürliche Öffnungen fehlen oder ungünstig liegen."
+        },
+        {
+          "title": "Sensoren",
+          "text": "CO-, Rauch- und Temperatursensoren erfassen zoneweise Daten und übermitteln sie gemäß Grenzwerten an das MSR-Schaltfeld."
+        },
+        {
+          "title": "Automatisierung und Steuerung (MSR-Schaltfeld)",
+          "text": "Automatische Ventilatoraktivierung auf Sensordaten. Bei Brand gemäß festgelegten Szenarien. PLC-gesteuert, BMS-Integration möglich."
+        }
+      ]
+    },
+    "advantages": {
+      "sectionLabel": "Warum Jet-Ventilator?",
+      "title": "Systemvorteile",
+      "subtitle": "Jet-Ventilator-Systeme bieten gegenüber klassischen Kanalsystemen große Vorteile – besonders in geschlossenen Parkhäusern und Tunneln.",
+      "items": [
+        { "title": "Kein Kanal erforderlich", "text": "Jet-Systeme lenken Luft direkt – keine Luftkanäle, Gitter oder Diffusoren nötig." },
+        { "title": "Platzersparnis", "text": "Bei niedriger Deckenhöhe nehmen Kanalsysteme viel Platz. Jet-Ventilatoren sind kompakt." },
+        { "title": "Energieeffizienz", "text": "Mit CO-Sensoren nur bei Bedarf in Betrieb; variable Drehzahlen für optimierten Energieeinsatz." },
+        { "title": "Rauch- und Wärmeabfuhr unter Kontrolle", "text": "Hohe Drehzahl bei Brand steuert Rauchausbreitung, sichert Fluchtwege und unterstützt die Brandbekämpfung." },
+        { "title": "Geringe Wartungskosten", "text": "Ohne Kanalsystem einfachere Reinigung und Wartung; weniger Teile, weniger Ausfallrisiko." },
+        { "title": "Flexible Positionierung", "text": "Anpassung an Architektur; spätere Umbauten der Anlage sind einfacher." },
+        { "title": "Niedrigere Investitionskosten", "text": "Weniger Kanäle, Gitter, Diffusoren – geringere Erstinvestition als bei klassischen Systemen." }
+      ]
+    },
+    "designFactors": {
+      "sectionLabel": "Engineering",
+      "title": "Wichtige Auslegungsfaktoren",
+      "items": [
+        "Maßnahmen für effizienten Betrieb werden von Anfang an geplant und die Anordnung berücksichtigt alle Randbedingungen.",
+        "Bei Jet-Ventilator-Projekten fließen Schallpegel, Luftführungsplanung, Vermeidung von Totzonen ohne Frischluft, Montagefreundlichkeit und Erreichbarkeit von Fluchtwegen bei Brand in die Platzierung von Axial- und Jet-Ventilatoren ein.",
+        "Auslegung muss ausreichende Luftwechsel und Strömung unter Berücksichtigung von Abgas, Fußgängerverkehr und weiteren Faktoren sicherstellen. Jet-Ventilatoren müssen optimal positioniert werden."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Für Ihr Projekt",
+      "title": "Unterstützung bei der Rauchmanagement-Planung",
+      "cfdLink": "CFD-Analyse",
+      "supportButton": "Technischer Support"
+    }
+  },
+  "teknikServis": {
+    "meta": {
+      "title": "Technischer Service | Novves",
+      "description": "NOVVES technischer Service – Support nach dem Verkauf, Störungsbehebung, Ersatzteile und Wartung."
+    },
+    "breadcrumb": {
+      "home": "Startseite",
+      "services": "Leistungen",
+      "current": "Technischer Service"
+    },
+    "hero": {
+      "badge": "Leistungen",
+      "titlePart1": "Technischer",
+      "titleHighlight": "Service",
+      "subtitle": "Schnelle Reaktion, zuverlässige Lösung.",
+      "weekdays": "Werktags 08:30 – 18:00",
+      "emailSupport": "Technischer Support per E-Mail"
+    },
+    "intro": "Der technische Service von Novves unterstützt Sie schnell und wirksam bei Support nach dem Verkauf, Störungen, Ersatzteilen und Wartung.",
+    "serviceTypes": {
+      "sectionLabel": "Leistungsumfang",
+      "title": "Serviceanfragen",
+      "items": [
+        "Beratung zu Installation und Inbetriebnahme",
+        "Störungserkennung und Service vor Ort",
+        "Planung periodischer Wartung und Inspektion",
+        "Ersatzteilanfragen",
+        "Produktnutzung und technische Dokumentation"
+      ]
+    },
+    "form": {
+      "sectionLabel": "Anfrage",
+      "title": "Formular technischer Service",
+      "description": "Senden Sie Ihre Serviceanfrage über das Formular. Unser Team meldet sich schnellstmöglich.",
+      "features": [
+        { "label": "Schnelle Reaktion", "desc": "Antwort innerhalb von 24 Stunden" },
+        { "label": "Expertenteam", "desc": "Zertifiziertes technisches Team" },
+        { "label": "Einsatz vor Ort", "desc": "Servicenetz deutschlandweit / international" }
+      ],
+      "labels": {
+        "name": "Vollständiger Name",
+        "company": "Firmenname",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "subject": "Betreff",
+        "message": "Ihre Nachricht"
+      },
+      "submit": "Absenden",
+      "successTitle": "Anfrage eingegangen",
+      "successMessage": "Wir melden uns schnellstmöglich bei Ihnen."
+    }
+  },
+  "yerindeKesif": {
+    "meta": {
+      "title": "Vor-Ort-Begehung | Novves",
+      "description": "NOVVES Vor-Ort-Service – Inspektion, Messung und Analyse für projektspezifische Lüftungslösungen."
+    },
+    "breadcrumb": {
+      "home": "Startseite",
+      "services": "Leistungen",
+      "current": "Vor-Ort-Begehung"
+    },
+    "hero": {
+      "badge": "Leistungen",
+      "titlePart1": "Vor-Ort",
+      "titleHighlight": "Begehung",
+      "subtitle": "Erster Schritt zur präzisen Projektplanung: Messung, Analyse und Bedarfsermittlung vor Ort."
+    },
+    "intro": "Präzise Daten sind die Basis jedes Lüftungsprojekts. Die NOVVES Vor-Ort-Begehung ist der erste und entscheidende Schritt zur effizientesten und normkonformen Lösung. Unsere Ingenieure führen detaillierte Messungen und Analysen in Ihrer Anlage durch.",
+    "steps": {
+      "sectionLabel": "Ablauf",
+      "title": "Schritte der Begehung",
+      "items": [
+        {
+          "title": "Termin und Vorinformation",
+          "desc": "Wir erfassen die Projektgrundlagen und besprechen Gebäudetyp, Fläche und Bedarf."
+        },
+        {
+          "title": "Besichtigung und Messung",
+          "desc": "Unser Team besichtigt die Objekte, misst und bewertet die bestehende Infrastruktur. Luftströmungen, Temperaturverteilung und Systemstatus werden analysiert."
+        },
+        {
+          "title": "Technische Auswertung und Bericht",
+          "desc": "Auf Basis der Daten erfolgen Lüftungsberechnungen, Strömungsanalysen und Normprüfungen. Ein ausführlicher Begehungsbericht wird erstellt."
+        },
+        {
+          "title": "Lösungsvorschlag und Projektplanung",
+          "desc": "Auf Basis der Begehung erhalten Sie ein projektspezifisches Angebot mit Systemdesign, Gerätewahl und Kostenanalyse."
+        },
+        {
+          "title": "Freigabe und Umsetzung",
+          "desc": "Nach Freigabe werden Produktion, Montage und Inbetriebnahme geplant und umgesetzt."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Warum wichtig",
+      "title": "Warum Vor-Ort-Begehung?",
+      "items": [
+        { "title": "Präzise Auslegung", "desc": "Ohne Messung vor Ort sind Dimensionierungsfehler kaum vermeidbar." },
+        { "title": "Kostenoptimierung", "desc": "Mit realen Objektdaten wird Über- oder Unterdimensionierung vermieden." },
+        { "title": "Normkonformität", "desc": "Bestehende Gebäudebedingungen werden vor Ort gegen Normen geprüft." },
+        { "title": "Integration", "desc": "Passende Lösungen zur bestehenden HLKS-Infrastruktur erfordern eine Begehung." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Kostenlose Begehung",
+      "title": "Vor-Ort-Begehung für Ihr Projekt anfordern",
+      "subtitle": "Unser Engineering-Team besucht Ihre Anlage für Bedarfsermittlung und Messungen.",
+      "ctaButton": "Begehung anfordern"
+    }
+  }
+}

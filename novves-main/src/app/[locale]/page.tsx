@@ -13,5 +13,5 @@ export default async function Home({
 
   const dict = await getDictionary(locale);
 
-  return <HomeClient dict={dict.home} locale={locale} />;
+  return <HomeClient dict={dict.home} common={dict.common} locale={locale} />;
 }

@@ -2,13 +2,9 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
+import type { Locale } from "@/i18n/config";
+import { localeUi, locales } from "@/i18n/config";
 import { LocaleFlag } from "@/components/locale-flags";
-
-const localeConfig = {
-  tr: { label: "Türkçe", short: "TR" },
-  en: { label: "English", short: "GB" },
-  ru: { label: "Русский", short: "RU" },
-} as const;
 
 export function LanguageSwitcher({
   locale,
@@ -33,13 +29,21 @@ export function LanguageSwitcher({
   }, []);
 
   function switchLocale(newLocale: string) {
-    const segments = pathname.split("/");
-    segments[1] = newLocale;
-    router.push(segments.join("/"));
+    const parts = pathname.split("/").filter(Boolean);
+    if (parts.length === 0) {
+      router.push(`/${newLocale}`);
+    } else {
+      parts[0] = newLocale;
+      router.push(`/${parts.join("/")}`);
+    }
+    router.refresh();
     setOpen(false);
   }
 
-  const current = localeConfig[locale as keyof typeof localeConfig] ?? localeConfig.tr;
+  const firstSeg = pathname.split("/").filter(Boolean)[0];
+  const pathLocale =
+    firstSeg && locales.includes(firstSeg as Locale) ? firstSeg : locale;
+  const current = localeUi[pathLocale as Locale] ?? localeUi.en;
 
   return (
     <div ref={ref} className="relative">
@@ -68,14 +72,16 @@ export function LanguageSwitcher({
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full z-50 mt-2 w-[11rem] overflow-hidden rounded-xl border border-gray-100 bg-white shadow-lg sm:w-44">
-          {Object.entries(localeConfig).map(([key, cfg]) => (
+        <div className="absolute right-0 top-full z-50 mt-2 max-h-[min(70vh,420px)] w-[11rem] overflow-y-auto overflow-x-hidden rounded-xl border border-gray-100 bg-white shadow-lg sm:w-44">
+          {locales.map((key) => {
+            const cfg = localeUi[key];
+            return (
             <button
               key={key}
               type="button"
               onClick={() => switchLocale(key)}
               className={`flex w-full items-center gap-2 px-3 py-2.5 text-left text-[13px] transition-colors duration-150 sm:gap-2.5 sm:px-4 ${
-                locale === key
+                pathLocale === key
                   ? "bg-primary/5 font-semibold text-primary"
                   : "text-secondary/70 hover:bg-gray-50 hover:text-dark"
               }`}
@@ -83,19 +89,20 @@ export function LanguageSwitcher({
               <LocaleFlag locale={key} className="h-3.5 w-[1.25rem] sm:h-4 sm:w-5" />
               <span
                 className={`w-7 shrink-0 font-mono-eng text-[11px] tabular-nums tracking-wide ${
-                  locale === key ? "text-primary/90" : "text-secondary/50"
+                  pathLocale === key ? "text-primary/90" : "text-secondary/50"
                 }`}
               >
                 {cfg.short}
               </span>
               <span className="min-w-0 flex-1">{cfg.label}</span>
-              {locale === key && (
+              {pathLocale === key && (
                 <svg className="ml-auto h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
               )}
             </button>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>

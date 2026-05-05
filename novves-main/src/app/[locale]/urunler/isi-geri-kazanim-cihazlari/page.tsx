@@ -3,11 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productLeafMetadata } from "@/lib/i18n-metadata";
 
-export const metadata: Metadata = {
-  title: "Caracal - Isı Geri Kazanım Cihazları | Novves",
-  description: "Caracal serisi ısı geri kazanım cihazları — kontrollü iklimlendirme ve enerji verimliliği.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productLeafMetadata(locale, "isiGeriKazanimCihazlari");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

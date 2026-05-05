@@ -1,9 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { corporateDetailMetadata } from "@/lib/i18n-metadata";
 import { references } from "@/data/references";
 import { ReferanslarClient } from "./client";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return corporateDetailMetadata(locale, "referanslar");
+}
 
 const UTF8_DECODER = new TextDecoder("utf-8");
 const GARBLED_RE = /[ÃÄÅÂï¿½�]/g;

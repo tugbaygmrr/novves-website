@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { corporateDetailMetadata } from "@/lib/i18n-metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return corporateDetailMetadata(locale, "haberler");
+}
 
 export default async function Haberler({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Locale } from "@/i18n/config";
+import { jumpNavHomeLabel } from "@/i18n/jump-nav-labels";
 import { getDictionary, hasLocale } from "../../dictionaries";
 
 export default async function GuvenlikVeGizlilikPolitikasi({
@@ -35,14 +37,14 @@ export default async function GuvenlikVeGizlilikPolitikasi({
               href={`/${locale}`}
               className="transition-colors hover:text-white/70"
             >
-              Ana Sayfa
+              {jumpNavHomeLabel(locale as Locale)}
             </Link>
             <span>/</span>
             <Link
               href={`/${locale}/kvkk`}
               className="transition-colors hover:text-white/70"
             >
-              KVKK
+              {dict.common.navbar.links.kvkk}
             </Link>
             <span>/</span>
             <span className="text-white/60">Güvenlik ve Gizlilik Politikası</span>

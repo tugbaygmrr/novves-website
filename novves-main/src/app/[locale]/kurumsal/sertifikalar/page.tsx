@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { corporateDetailMetadata } from "@/lib/i18n-metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return corporateDetailMetadata(locale, "sertifikalar");
+}
 
 const groupIcons = [
   <svg key="0" className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>,
@@ -13,13 +24,13 @@ const groupIcons = [
 ];
 
 const logos = [
-  { src: "/images/certificates/TSE.png", alt: "TSE" },
-  { src: "/images/certificates/ISO9001.png", alt: "ISO 9001" },
-  { src: "/images/certificates/ISO14001.png", alt: "ISO 14001" },
-  { src: "/images/certificates/CE.png", alt: "CE" },
-  { src: "/images/certificates/EN.png", alt: "EN" },
-  { src: "/images/certificates/Efectis.png", alt: "Efectis" },
-  { src: "/images/certificates/bsi.png", alt: "BSI" },
+  { src: "/images/certificates/TSE.svg", alt: "TSE" },
+  { src: "/images/certificates/ISO9001.svg", alt: "ISO 9001" },
+  { src: "/images/certificates/ISO14001.svg", alt: "ISO 14001" },
+  { src: "/images/certificates/CE.svg", alt: "CE" },
+  { src: "/images/certificates/EN.svg", alt: "EN" },
+  { src: "/images/certificates/Efectis.svg", alt: "Efectis" },
+  { src: "/images/certificates/BSI.svg", alt: "BSI" },
 ];
 
 export default async function Sertifikalar({ params }: { params: Promise<{ locale: string }> }) {
@@ -54,10 +65,23 @@ export default async function Sertifikalar({ params }: { params: Promise<{ local
       </section>
 
       <section className="border-b border-ink/10 bg-[#ecebe6]">
-        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
           <p className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-secondary/40">{t.accreditationLabel}</p>
-          <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-14">
-            {logos.map((logo) => (<Image key={logo.alt} src={logo.src} alt={logo.alt} width={80} height={80} className="h-14 w-auto object-contain opacity-50 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 sm:h-16" />))}
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-5 sm:gap-14">
+            {logos.map((logo) =>
+              logo.src.endsWith(".svg") ? (
+                <img
+                  key={logo.alt}
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-10 w-auto object-contain opacity-100 transition-all duration-300 hover:opacity-100 sm:h-16"
+                  loading="lazy"
+                  decoding="async"
+                />
+              ) : (
+                <Image key={logo.alt} src={logo.src} alt={logo.alt} width={80} height={80} className="h-10 w-auto object-contain opacity-100 transition-all duration-300 hover:opacity-100 sm:h-16" />
+              ),
+            )}
           </div>
         </div>
       </section>

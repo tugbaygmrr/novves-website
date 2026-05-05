@@ -53,7 +53,7 @@ export function SolutionPage({
                     key={`${area.title}-${product.name}-${i}`}
                     className="flex items-center gap-3 rounded border border-gray-100 bg-gray-50 px-3 py-2"
                   >
-                    <div className="relative h-10 w-10 flex-shrink-0 overflow-hidden rounded">
+                    <div className="relative h-10 w-10 flex-shrink-0 overflow-hidden rounded bg-white">
                       <Image
                         src={product.image}
                         alt={product.name}

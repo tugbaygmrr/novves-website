@@ -1,0 +1,517 @@
+{
+  "shared": {
+    "home": "Əsas səhifə",
+    "products": "Məhsullar",
+    "productsLabel": "Məhsullar",
+    "explore": "Kəşf et",
+    "otherCategories": "Digər məhsul kateqoriyaları",
+    "technicalSupport": "Texniki dəstək",
+    "technicalSupportRequest": "Texniki dəstək sorğusu",
+    "lookingForProduct": "Layihəniz üçün düzgün məhsulu axtarırsınız?",
+    "teamReady": "Texniki komandamız sizə ən uyğun həlli təklif etməyə hazırdır.",
+    "allProducts": "Bütün məhsullar",
+    "viewProduct": "Məhsula bax",
+    "detailedView": "Ətraflı bax",
+    "comingSoon": "Tezliklə",
+    "inspect": "Kəşf et",
+    "model": "model",
+    "models": "Model",
+    "results": "nəticə",
+    "noResults": "Nəticə tapılmadı.",
+    "searchProducts": "Məhsulları axtar...",
+    "clear": "Təmizlə",
+    "readMore": "Daha çox oxu",
+    "readLess": "Azalt",
+    "getQuote": "Qiymət sorğusu",
+    "allIklimlendirmeProducts": "Bütün kondisioner məhsulları",
+    "forYourProject": "Layihəniz üçün düzgün həll",
+    "productCatalog": "Məhsul kataloqu",
+    "productRange": "Məhsul çeşidi",
+    "productFamilies": "Məhsul ailələri",
+    "productGroups": "Məhsul qrupları",
+    "fullProductRange": "Tam məhsul çeşidi",
+    "allProductFamilies": "Bütün məhsul ailələri",
+    "mostPreferred": "Ən çox seçilən",
+    "featuredProducts": "Seçilmiş məhsullar",
+    "productVariety": "Məhsul müxtəlifliyi",
+    "productFamily": "Məhsul ailəsi",
+    "certified": "Sertifikatlı",
+    "fireResistance": "Yanğın davamlılığı",
+    "filterSeries": "Filtr seriyası",
+    "exploreNovves": "NOVVES məhsul çeşidində digər kateqoriyaları kəşf edin.",
+    "comingSoonNotice": "Bu kateqoriyadakı məhsullar tezliklə ətraflı dərc olunacaq. Texniki məlumat və qiymət təklifləri üçün",
+    "contactUs": "bizimlə əlaqə saxlayın",
+    "airDamper": "Hava damperi",
+    "grilleDiffuser": "Barmaqlıqlar, diffuzorlar və s.",
+    "panoPLCSensor": "Panellər, PLC, sensorlar",
+    "silencerRubberPadIsolators": "Səssizləşdiricilər, rezin yastıqlar, vibrasiya izolyatorları",
+    "categories": {
+      "havaHareketi": "Havanın hərəkəti",
+      "iklimlendirme": "Kondisionerləşdirmə",
+      "sogutmaVeIsitma": "Soyutma və isitmə",
+      "havaYonetimi": "Havanın idarə olunması",
+      "havaDagitimi": "Havanın paylanması",
+      "havaFiltrasyonu": "Havanın filtrasiyası",
+      "aksesuarlar": "Aksesuarlar",
+      "otomasyonMalzemeleri": "Avtomatlaşdırma avadanlığı",
+      "titresimVeSesIzolasyon": "Vibrasiya və səs izolyasiyası"
+    }
+  },
+  "havaHareketi": {
+    "title": "Havanın hərəkəti",
+    "titleFirst": "Havanın",
+    "titleHighlight": "hərəkəti",
+    "heroDesc": "Sənaye və komfort havalandırma ehtiyaclarınız üçün",
+    "heroDescSuffix": "məhsul ailəsi.",
+    "stats": [
+      { "value": "1,200+", "label": "Məhsul müxtəlifliyi" },
+      { "value": "12", "label": "Məhsul ailələri" },
+      { "value": "EN 12101-3", "label": "Sertifikatlı" },
+      { "value": "F300/2H", "label": "Yanğın davamlılığı" }
+    ],
+    "products": [
+      { "name": "DRAGONFLY", "type": "Tüstü və istilik çəkən ventilyator", "subModels": ["DF T", "DF TS", "DF C", "DF R", "DF RV", "DF TJF", "DF JR", "DF JA", "DF WH", "DF RH"] },
+      { "name": "MARLIN", "type": "Aksial ventilyator", "subModels": ["MARLIN", "MARLIN S", "MARLIN B", "MARLIN 2S"] },
+      { "name": "BEAR", "type": "ATEX ventilyator", "subModels": ["BEAR REB EX", "BEAR RVS EX", "BEAR RHS EX", "BEAR T", "BEAR C", "BEAR R", "BEAR W", "BEAR LPF EX", "BEAR TB"] },
+      { "name": "NAUTILUS", "type": "Sənaye sentrifuj ventilyator", "subModels": ["NAUTILUS LPF", "NAUTILUS MPF", "NAUTILUS HPF", "NAUTILUS SILENCE"] },
+      { "name": "HUMMINGBIRD", "type": "EC ventilyator", "subModels": ["HUMMINGBIRD DRB EC", "HUMMINGBIRD RRV EC", "HUMMINGBIRD RRH EC", "HUMMINGBIRD CBP EC"] },
+      { "name": "HERON", "type": "Dam ventilyatoru", "subModels": ["HERON RH", "HERON RHS", "HERON RV", "HERON RVS", "HERON AH", "HERON AV", "HERON H"] },
+      { "name": "OWL", "type": "Divar tipli ventilyator", "subModels": ["OWL RER", "OWL R", "OWL H"] },
+      { "name": "SEAHORSE", "type": "Vanna otağı ventilyatoru", "subModels": ["SEAHORSE AP", "SEAHORSE RP V1", "SEAHORSE RP V2"] },
+      { "name": "KOI", "type": "Kanal ventilyatoru", "subModels": ["KOI CB", "KOI RB", "KOI REB", "KOI X"] },
+      { "name": "TURTLE", "type": "Plenum ventilyator", "subModels": ["TURTLE B", "TURTLE BPA", "TURTLE F", "TURTLE BP", "TURTLE A"] },
+      { "name": "BUTTERFLY", "type": "Mətbəx çəkisi ventilyatoru", "subModels": ["BUTTERFLY ECO", "BUTTERFLY ECO HR"] },
+      { "name": "FOX", "type": "Sığınacaq ventilyatoru", "subModels": ["FOX D", "FOX C"] },
+      { "name": "CHICKEN", "type": "Quşçuluq ventilyatoru", "comingSoon": true },
+      { "name": "ELEPHANT", "type": "Toz yığımı", "comingSoon": true }
+    ],
+    "otherCategories": [
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ],
+    "ctaDesc": "1 200-dən çox məhsul çeşidindən layihəniz üçün ən uyğun həlli tapmaq üçün mühəndislik komandamızla əlaqə saxlayın."
+  },
+  "iklimlendirme": {
+    "title": "Kondisionerləşdirmə",
+    "titleFirst": "Kondisioner",
+    "titleHighlight": "ləşdirmə",
+    "pills": ["3 məhsul ailəsi", "Modul konfiqurasiya", "EC və sentrifuj ventilyator", "HEPA filtrasiya"],
+    "tiger": {
+      "label": "Hava məişəti qurğusu",
+      "desc": "500 – 125 000 m³/h hava axını diapazonunda modul tikinti, yüksək enerji səmərəli komponentlər və sakit iş rejimi ilə hava məişəti qurğusu həlli.",
+      "specs": [
+        { "label": "Hava axını", "value": "500–125K m³/h" },
+        { "label": "Təzyiq", "value": "10–3,000 Pa" },
+        { "label": "Şassi", "value": "Anodlaşdırılmış alüminium" }
+      ]
+    },
+    "dolphin": {
+      "label": "Hovuz nəmlik götürmə qurğusu",
+      "desc": "Qapalı hovuzlarda bina konstruksiyalarına nəm ziyanını qarşısını alır və istifadəçi rahatlığını maksimuma çatdırır. Yüksək enerji səmərəliliyi, uzunömürlü tikinti və sakit işləməsi ilə seçilir.",
+      "specs": [
+        { "label": "Tutumu", "value": "6 model" },
+        { "label": "Hava axını", "value": "3,000–9,000 m³/h" },
+        { "label": "Hovuz sahəsi", "value": "50–250 m²" }
+      ]
+    },
+    "caracal": {
+      "label": "İstilik bərpası",
+      "desc": "Ofislərdə, məktəblərdə, otellərdə, xəstəxanalarda və ictimai məkanlarda təmiz hava tələbatını ödəmək və mövcud hava keyfiyyətini yaxşılaşdırmaq üçün idarə olunan kondisionerləşdirmə təmin edir."
+    },
+    "ctaDesc": "Texniki komandamız sizə ən uyğun kondisionerləşdirmə həllini təklif etməyə hazırdır.",
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "sogutmaVeIsitma": {
+    "title": "Soyutma və isitmə",
+    "titleFirst": "Soyutma və",
+    "titleHighlight": "isitmə",
+    "heroDesc": "Çiller, daxili/xarici bloklar, elektrik isidicilər və su serpentin həlləri.",
+    "comingSoonNotice": "Bu kateqoriyadakı məhsullar tezliklə ətraflı dərc olunacaq. Texniki məlumat və qiymət təklifləri üçün",
+    "comingSoonLink": "bizimlə əlaqə saxlayın",
+    "products": [
+      { "name": "CHILLER (Polar Bear)", "type": "Soyutma qurğusu", "subModels": [] },
+      { "name": "OUTDOOR UNITS", "type": "Soyutma qurğusu", "subModels": [] },
+      { "name": "INDOOR UNITS", "type": "Soyutma qurğusu", "subModels": [] },
+      { "name": "ELECTRIC HEATERS", "type": "Elektrik isidici", "subModels": ["EH (Rectangular)", "EHC (Cylindrical)"] },
+      { "name": "WATER COIL", "type": "Serpentin", "subModels": ["WC"] }
+    ],
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaYonetimi": {
+    "title": "Havanın idarə olunması",
+    "titleFirst": "Havanın",
+    "titleHighlight": "idarə olunması",
+    "heroDesc": "Hava damperi həlləri.",
+    "hound": {
+      "label": "Hava damperi",
+      "desc": "Havalandırma və yanğın təhlükəsizliyi sistemlərinin ən kritik nöqtələrində maksimum idarəetmə və təhlükəsizlik təmin etmək üçün hazırlanmış damper seriyası.",
+      "subModels": ["MSD", "MSFD-R", "MSFD-B", "SFD-B", "SFD-R", "RSFD-B", "RSFD-Drain-B", "FFD", "MFD", "RD", "GS"]
+    },
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaDagitimi": {
+    "title": "Havanın paylanması",
+    "titleFirst": "Havanın",
+    "titleHighlight": "paylanması",
+    "heroDesc": "Barmaqlıq, diffuzor, anemostat və jalüz həlləri.",
+    "alpaca": {
+      "label": "Barmaqlıqlar, diffuzorlar və s.",
+      "desc": "bütün hava paylanması ehtiyacları üçün uyğunlaşdırılmış həllərlə müxtəlif modellər.",
+      "subModels": [
+        "ALPACA-GL-SD", "ALPACA-GL-DD", "ALPACA-GL-RA", "ALPACA-GL-PRF", "ALPACA-GL-OB",
+        "ALPACA-DF-SQ", "ALPACA-DF-CR", "ALPACA-DF-LS", "ALPACA-DF-JET", "ALPACA-DF-ADJ",
+        "ALPACA-LV-FX", "ALPACA-LV-ADJ", "ALPACA-LV-WP", "ALPACA-LV-AC",
+        "ALPACA-AM-SQ", "ALPACA-AM-CR", "ALPACA-AM-ADJ",
+        "ALPACA-SP-FR", "ALPACA-SP-DEC", "ALPACA-SP-AC", "ALPACA-SP-JET"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "havaFiltrasyonu": {
+    "title": "Havanın filtrasiyası",
+    "titleFirst": "Havanın",
+    "titleHighlight": "filtrasiyası",
+    "heroDesc": "Sənaye və komfort tətbiqləri üçün filtr həlləri.",
+    "scallop": {
+      "label": "Filtr seriyası",
+      "desc": "bütün hava filtrasiyası ehtiyacları üçün uyğunlaşdırılmış həllərlə müxtəlif filtr modelləri.",
+      "subModels": [
+        "SCALLOP PF", "SCALLOP MF", "SCALLOP GF", "SCALLOP ABF", "SCALLOP CF",
+        "SCALLOP BF", "SCALLOP HP", "SCALLOP UF", "SCALLOP FF"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "aksesuarlar": {
+    "title": "Aksesuarlar",
+    "titleFirst": "Akse",
+    "titleHighlight": "suarlar",
+    "productCount": "məhsul",
+    "ctaTitle": "Layihəniz üçün düzgün aksesuar axtarırsınız?",
+    "accessories": [
+      { "name": "Yaylı vibrasiya izolyatoru", "image": "/images/products/yayli-titresim-izolatoru.png", "description": "Yaylı vibrasiya izolyatorları İMVK sistemlərində və mexaniki avadanlıq quraşdırmalarında sistemin döşəməyə və ya ətraf mühitə ötürə biləcəyi aşağı səviyyəli vibrasiyaları azaltmaq üçün istifadə olunur." },
+      { "name": "AE SF montaj ayaqları", "image": "/images/products/ae-sf-baglanti-ayaklari.jpg", "description": "Montaj ayaqları layihə tələblərinə uyğun olaraq ventilyatorları döşəməyə və ya daşıyıcı səthə etibarlı şəkildə bərkidən yüksək möhkəmlikdə montaj elementləridir." },
+      { "name": "AE PM tel qəfəsi", "image": "/images/products/ae-pm-tel-kafes.jpg", "description": "Tel qəfələri yüksək möhkəmlikdə polad teldən hazırlanmış qoruyucu barmaqlıqlardır; ventilyator sistemlərinin sorğu və ya ötürülmə tərəfində istifadəçi təhlükəsizliyini təmin etmək və əməliyyat zonasına yad cisimlərin daxil olmasının qarşısını almaq üçün nəzərdə tutulub." },
+      { "name": "AE IC giriş konisi", "image": "/images/products/ae-ic-giris-konisi.jpg", "description": "AE IC seriyası giriş koniləri ventilyatorların sorğu tərəfində hava axınını optimallaşdırmaq, hava turbulensiyasını azaltmaq və sistem səmərəliliyini artırmaq üçün hazırlanıb." },
+      { "name": "AE CF əks flanş", "image": "/images/products/ae-cf-karsi-flans.jpg", "description": "AE CF seriyası əks flanşlar ventilyatorları kanal sistemisinə birləşdirmək və hava sızdırmazlığını təmin etmək üçün istifadə olunan yüksək temperatura davamlı qoşma avadanlığıdır." },
+      { "name": "AE FJF elastik birləşmə əks flanşı", "image": "/images/products/ae-fjf.png", "description": "AE FJF seriyası elastik birləşmə əks flanşları ventilyator və kanal sistemləri arasında vibrasiya ötürülməsinin qarşısını almaq, genişlənmə təsirlərini azaltmaq və daha sakit iş mühiti təmin etmək üçün xüsusi qoşma elementləridir." },
+      { "name": "AE FJF F400 sinfi elastik birləşmə əks flanşı", "image": "/images/products/ae-fjf.png", "description": "AE FJF seriyası F400 sinfi elastik birləşmə əks flanşları yanğınadavamlı tətbiqlərdə ventilyator və kanal sistemləri arasında elastik, etibarlı və hava sızdırmaz bağlantı təmin etmək üçün hazırlanıb." },
+      { "name": "AE FJ2F iki tərəfli əks flanşlı elastik birləşmə", "image": "/images/products/ae-fj2f.jpg", "description": "İki tərəfli əks flanşlı elastik birləşmələr hər iki ucunda əks flanşlarla təchiz olunmuş, ventilyator və kanal sistemləri arasında vibrasiya, genişlənmə və quraşdırma kənarlanmalarını udmaq üçün yüksək elastik qoşma elementləridir." },
+      { "name": "AE FJ2F F400 iki tərəfli əks flanşlı elastik birləşmə", "image": "/images/products/ae-fj2f.jpg", "description": "AE FJ2F-HR seriyası yanğınadavamlılıq tələb edən sistemlərdə istifadə üçün yüksək temperatura davamlı iki tərəfli əks flanşlı elastik birləşmə həlləridir." },
+      { "name": "AE S-D100 dairəvi səssizləşdirici", "image": "/images/products/ae-sd100.jpg", "description": "AE S-D100 seriyası dairəvi səssizləşdiricilər havalandırma sistemlərində səs səviyyəsini azaltmaq və rahatlıq şəraitini yaxşılaşdırmaq üçün nəzərdə tutulmuş yüksək performanslı akustik idarə elementləridir." },
+      { "name": "AE RS düzbucaqlı kanal tipli səssizləşdirici", "image": "/images/products/ae-rs.jpg", "description": "AE RS seriyası düzbucaqlı kanal tipli səssizləşdiricilər kanal sistemlərində hava axınından yaranan səsi azaltmaq və akustik rahatlığı artırmaq üçün yüksək səmərəlilikdə səs izolyasiya elementləridir." },
+      { "name": "AE-SS rozet tipli səssizləşdirici", "image": "/images/products/emniyet-salteri.jpg", "description": "AE SS seriyası rozet tipli səssizləşdiricilər xüsusilə giriş tərəfində səs azaldılması tələb edən layihələr üçün isteğe bağlı təklif olunan akustik idarə aksesuarlarıdır." },
+      { "name": "AE-V istiqamətləndirici petal", "image": "/images/products/free.jpg", "description": "AE V seriyası istiqamətləndirici petallar ventilyator və kanal sistemlərində hava axınını optimallaşdırmaq, turbulensiyanı azaltmaq və bərabər axın paylanmasını təmin etmək üçün köməkçi aerodinamik elementlərdir." },
+      { "name": "AE-OC çıxış qapağı", "image": "/images/products/free.jpg", "description": "AE OC seriyası çıxış qapaqları ventilyator sistemlərinin ötürülmə nöqtələrində xarici şəraitdən qorumaq və sistem performansını saxlamaq üçün davamlı struktur elementləridir." },
+      { "name": "AE-DFC düzbucaqlı elastik birləşdirici", "image": "/images/products/ae-dfc.jpg", "description": "AE DFC seriyası düzbucaqlı elastik birləşdiricilər kanal sistemlərində vibrasiya izolyasiyası, səs ötürülməsinin qarşısını almaq və hava sızdırmazlığını artırmaq üçün davamlı qoşma elementləridir." },
+      { "name": "AE-AF dam adapter çərçivəsi", "image": "/images/products/free.jpg", "description": "AE AF seriyası dam adapter çərçivələri damda ventilyator və digər İMVK avadanlığının təhlükəsiz, sabit və hava sızdırmaz quraşdırılmasını təmin etmək üçün yüksək möhkəmlikdə qoşma elementləridir." },
+      { "name": "AE FRS düz dam rozetı", "image": "/images/products/ae-frs.jpg", "description": "AE FRS seriyası düz dam rozetları düz dam tətbiqlərində ventilyator və İMVK avadanlığının təhlükəsiz, izolyasiyalı və sabit quraşdırılması üçün köməkçi struktur elementləridir." },
+      { "name": "AE-CB dam qoşma qutusu", "image": "/images/products/free.jpg", "description": "AE CB seriyası dam qoşma qutuları ventilyator sistemləri və kanal bağlantılarının təhlükəsiz və sabit quraşdırılması üçün köməkçi struktur elementləridir." },
+      { "name": "AE-EH kanal tipli elektrik isidici", "image": "/images/products/ae-eh-elektrikli-isitici.jpg", "description": "AE EH seriyası kanal tipli elektrik isidicilər havalandırma sistemlərində təmiz havanın isidilməsi kimi komfort yönümlü tətbiqlər üçün inkişaf etdirilmiş kompakt və yüksək səmərəlilikdə isidici vahidlərdir." },
+      { "name": "Təhlükəsizlik keçidi", "image": "/images/products/emniyet-salteri.jpg", "description": "Təhlükəsizlik keçidi ventilyator və digər elektrik avadanlığının təhlükəsiz işə salınması və söndürülməsi üçün yüksək qoruma standartlarına malik idarə elementidir." },
+      { "name": "Qoruyucu təhlükəsizlik keçidi", "image": "/images/products/korumali-emniyet-salteri.jpg", "description": "Qoruyucu təhlükəsizlik keçidi elektrik avadanlığının təhlükəsiz açılıb-bağlanmasını təmin edən və ətraf mühit amillərinə qarşı qoruma təklif edən davamlı idarə elementidir." },
+      { "name": "Təfəzlə sürət tənzimləyicisi", "image": "/images/products/monofaze-hiz-kontrol-cihazi.jpg", "description": "Təfəzlə sürət tənzimləyicisi gərginliklə idarə olunan təfəzli asinxron mühərrikləri olan ventilyatorların dönmə sürətini davamlı və dəqiq tənzimləmək üçün istifadəçi dostu idarə vahididir." },
+      { "name": "Tezlik çeviricisi", "image": "/images/products/frekans-inventoru.jpg", "description": "Tezlik çeviricisi mühərrikli ventilyator və havalandırma sistemlərində enerji səmərəliliyini artırmaq və optimal sürət idarəetməsi təmin etmək üçün inkişaf etdirilmiş yeni nəsil ötürücü vahiddir." },
+      { "name": "Basınclandırma idarə paneli", "image": "/images/products/basinclandirma-kontrol-panosu.png", "description": "Basınclandırma idarə paneli tezlik çeviricisi ilə təchiz olunmuş qabaqcıl idarə vahididir; basınclandırma sistemlərində ventilyatorların avtomatik və optimallaşdırılmış işini təmin edir." },
+      { "name": "Diferensial təzyiq sensoru", "image": "/images/products/diferansiyel-basinc-sensoru.jpg", "description": "Diferensial təzyiq sensoru havalandırma və filtrasiya sistemlərində hava təzyiq fərqlərini ölçmək və idarə etmək üçün yüksək dəqiqlikdə idarə elementidir." },
+      { "name": "Diferensial təzyiq sensoru PI (0-10V çıxış)", "image": "/images/products/diferansiyel-basinc-sensoru-pi10v.jpg", "description": "Diferensial təzyiq sensoru + PI idarəetməsi havalandırma sistemlərində hava təzyiqini və ya hava axınını dəqiq izləmək və avtomatik tənzimləmək üçün inkişaf etdirilmiş sensor sistemidir." },
+      { "name": "Kanal tipli tüstü sensoru", "image": "/images/products/kanal-tipi-duman-sensoru.jpg", "description": "Kanal tipli tüstü sensoru havalandırma və kondisionerləşdirmə sistemlərində havadakı tüstü və yanma məhsullarının erkən mərhələdə aşkarlanması üçün yüksək həssaslıqda detektor cihazıdır." },
+      { "name": "G4 panel filtri", "image": "/images/products/g4-panel-filtre.jpg", "description": "G4 panel filtri havalandırma və kondisionerləşdirmə sistemlərində havadan iri hissəcikləri, tozu və çirkləndiriciləri tutmaq üçün yüksək səmərəlilikdə əvvəlki filtrlərdir." },
+      { "name": "G2-G3 panel filtri", "image": "/images/products/g2-g3-panel-filtre.jpg", "description": "G2-G3 panel filtri havalandırma və kondisionerləşdirmə sistemlərində orta və iri hissəcikləri tutmaq üçün etibarlı əvvəlki filtr həlləridir." },
+      { "name": "G2 metal yağ tutucu filtri", "image": "/images/products/g2-metal-yag-tutucu-filtre.jpg", "description": "G2 metal yağ tutucu filtri havalandırma və mətbəx çəkisi sistemlərində yağ buxarı və iri hissəcikləri tutmaq üçün xüsusi olaraq hazırlanmış yüksək davamlılıqlı filtrasiya elementləridir." },
+      { "name": "G2-G3 metal yağ tutucu filtri", "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.jpg", "description": "G2-G3 metal yağ tutucu filtri havalandırma və mətbəx çəkisi sistemlərində yağ buxarı və iri hissəciklərin effektiv tutulması üçün davamlı filtrasiya həlləridir." }
+    ],
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "otomasyonMalzemeleri": {
+    "title": "Avtomatlaşdırma avadanlığı",
+    "titleFirst": "Avtomatlaşdırma",
+    "titleHighlight": "avadanlığı",
+    "products": [
+      { "name": "PANEL", "subModels": [] },
+      { "name": "PLC", "subModels": [] },
+      { "name": "SENSOR", "subModels": ["FCP-DSC", "FCP-DCS", "TECASE-ST110"] },
+      { "name": "CONTROL BOARDS - SWITCHES", "subModels": ["TP01-TSD", "TP01-CC"] }
+    ],
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Vibrasiya və səs izolyasiyası", "slug": "titresim-ve-ses-izolasyon" }
+    ]
+  },
+  "titresimVeSesIzolasyon": {
+    "title": "Vibrasiya və səs izolyasiyası",
+    "titleFirst": "Vibrasiya və səs",
+    "titleHighlight": "izolyasiyası",
+    "heroDesc": "Səssizləşdiricilər, rezin yastıqlar və vibrasiya izolyatorları.",
+    "roo": {
+      "label": "Səssizləşdiricilər, rezin yastıqlar, vibrasiya izolyatorları",
+      "desc": "vibrasiya və səs izolyasiyası ehtiyacları üçün uyğunlaşdırılmış həllərlə müxtəlif modellər.",
+      "subModels": [
+        "ROO T1-ISO10N-NIP", "ROO T1-ISO15N-100kg-NIP",
+        "ROO T2-ISO20N-FIP", "ROO T2-ISO30N-150kg-FIP",
+        "ROO T3-ISO5Hz-200kg-OSI", "ROO T3-ISO10Hz-300kg-OSI",
+        "ROO T4-ISOComb-100kg-5Hz-HSI", "ROO T4-ISO100kg-10Hz-HSI", "ROO T4-ISO500kg-10Hz-HSI"
+      ]
+    },
+    "otherCategories": [
+      { "label": "Havanın hərəkəti", "slug": "hava-hareketi" },
+      { "label": "Kondisionerləşdirmə", "slug": "iklimlendirme" },
+      { "label": "Soyutma və isitmə", "slug": "sogutma-ve-isitma" },
+      { "label": "Havanın idarə olunması", "slug": "hava-yonetimi" },
+      { "label": "Havanın paylanması", "slug": "hava-dagitimi" },
+      { "label": "Havanın filtrasiyası", "slug": "hava-filtrasyonu" },
+      { "label": "Aksesuarlar", "slug": "aksesuarlar" },
+      { "label": "Avtomatlaşdırma avadanlığı", "slug": "otomasyon-malzemeleri" }
+    ]
+  },
+  "banyoFanlari": {
+    "title": "SEAHORSE",
+    "subtitle": "Vanna otağı ventilyatorları",
+    "intro": "Vanna otağı, tualet və anbar kimi kiçik və orta ölçülü məkanlarda qoxu və buxarın tez çəkilməsi üçün istifadə olunan vanna ventilyatorları həm gigiyena, həm də rahatlıq baxımından mühüm rol oynayır.",
+    "models": [
+      { "name": "Seahorse AP", "type": "Aksial vanna ventilyatoru", "image": "/images/products/banyo-fan-1.jpg", "description": "AP dekorativ vanna ventilyatoru müasir memarlıqla uyğunlaşdırılmış zərif dizaynı və yüksək performanslı konstruksiyası ilə yaşayış məkanlarında estetika və funksionallığı birləşdirir." },
+      { "name": "Seahorse RP V1", "type": "Tavan tipli vanna çəkisi ventilyatoru", "image": "/images/products/banyo-fan-2.jpg", "description": "RP V1 tənzimlənən tavan tipli çəkisi ventilyatoru zərif dizaynı və qabaqcıl montaj mexanizmi ilə müasir yaşayış məkanları üçün ideal havalandırma həllidir." },
+      { "name": "Seahorse RP V2", "type": "Tavan tipli vanna V2 çəkisi ventilyatoru", "image": "/images/products/banyo-fan-3.jpg", "description": "Müasir dizaynı və güclü performansı ilə seçilən RP V2 geniş ön panel çəkisi ventilyatoru həm estetika, həm də funksionallığın prioritet olduğu məkanlar üçün nəzərdə tutulub." }
+    ]
+  },
+  "catiFanlari": {
+    "title": "HERON",
+    "subtitle": "Dam ventilyatorları",
+    "intro": "",
+    "models": [
+      { "name": "Heron RH", "type": "Üfüqi ötürmə sentrifuj dam ventilyatoru", "image": "/images/products/heron-rh.jpg", "description": "Dam quraşdırılması tələb edən hava çəkisi tətbiqləri üçün xüsusi hazırlanıb." },
+      { "name": "Heron RHS", "type": "Üfüqi ötürmə xarici mühərrikli sentrifuj dam ventilyatoru", "image": "/images/products/heron-rhs.jpg", "description": "Yüksək temperatura və çirklənmiş hava çəkisi tələb edən tətbiqlər üçün." },
+      { "name": "Heron RV", "type": "Şaquli ötürmə sentrifuj dam ventilyatoru", "image": "/images/products/heron-rv.jpg", "description": "Şaquli hava çəkisi tələb edən tətbiqlərdə yüksək səmərəlilik." },
+      { "name": "Heron RVS", "type": "Şaquli ötürmə xarici mühərrikli sentrifuj dam ventilyatoru", "image": "/images/products/heron-rvs.jpg", "description": "Yüksək temperatura və ağır buxarlı hava çəkisi." },
+      { "name": "Heron AH", "type": "Üfüqi ötürmə aksial dam ventilyatoru", "image": "/images/products/heron-ah.jpg", "description": "Böyük həcmli məkanlarda təmiz hava təchizi və ya çəkisi." },
+      { "name": "Heron AVH", "type": "Qapaqlı aksial dam ventilyatoru", "image": "/images/products/free.jpg", "description": "Qapaqlı aksial dam ventilyatoru." }
+    ]
+  },
+  "damperler": {
+    "title": "HOUND",
+    "subtitle": "Damperlər",
+    "intro": "Novves HOUND seriyası damperlər havalandırma və yanğın təhlükəsizliyi sistemlərinin ən kritik nöqtələrində maksimum idarəetmə və təhlükəsizlik təmin etmək üçün hazırlanıb.",
+    "models": [
+      { "name": "Hound SD M24", "type": "24V servo mühərrikli şaxta tüstü damperi", "image": "/images/products/hound-sd-m24.jpg", "description": "Yanğın və tüstü idarəetmə sistemlərində təhlükəsiz hava çəkisi üçün inkişaf etdirilib; EN 17051 C sinfi sızma təsnifatı və servo mühərrik uyğunluğu təklif edir." },
+      { "name": "Hound AL", "type": "Hava jalüzüsü", "image": "/images/products/hound-al.png", "description": "Hava giriş və çıxış nöqtələrində hava axınını yönləndirən və xarici elementlərdən qoruyan estetik jalüzü sistemi." },
+      { "name": "Hound CRD", "type": "Təzyiq boşaltma damperi", "image": "/images/products/hound-crd.jpg", "description": "Artıq təzyiqin idarə olunması və sistem komponentlərinin qorunması üçün avtomatik açılan təzyiq boşaltma damperi." }
+    ]
+  },
+  "dumanIsiTahliyeFanlari": {
+    "title": "DRAGONFLY",
+    "subtitle": "Tüstü və istilik çəkən ventilyatorlar",
+    "intro": "F300 sinfi yanğınadavamlılıq sertifikatlı, 300 °C temperaturu 2 saat davamlılıqla dözə bilən tüstü və istilik çəkən ventilyator seriyası.",
+    "models": [
+      { "name": "Dragonfly T", "type": "Qəfəsli aksial tüstü və istilik çəkən ventilyator", "image": "/images/products/dragonfly-t.jpg", "description": "Yanğın hadisələri zamanı tüstü və isti havanın effektiv çəkilməsi üçün yüksək temperatura davamlı qəfəsli aksial ventilyator. EN 12101-3 sertifikatlı." },
+      { "name": "Dragonfly R", "type": "Aksial dam tipli tüstü və istilik çəkən ventilyator", "image": "/images/products/dragonfly-r.jpg", "description": "Yanğın hadisələri zamanı tüstü və isti havanın tez, təhlükəsiz və effektiv çəkilməsini təmin edən yüksək temperatura davamlı dam ventilyatoru. EN 12101-3 sertifikatlı." },
+      { "name": "Dragonfly C", "type": "Aksial plenum tüstü və istilik çəkən ventilyator", "image": "/images/products/dragonfly-c.png", "description": "Yanğın hadisələri zamanı tüstü və yüksək temperatur havanın təhlükəsiz çəkilməsi üçün inkişaf etdirilmiş yüksək temperatura davamlı və aşağı səsli şkaf tipli vahid. EN 12101-3 sertifikatlı." },
+      { "name": "Dragonfly JAU", "type": "Tək istiqamətli aksial jet ventilyator", "image": "/images/products/dragonfly-jau.jpg", "description": "Avtodromlar, tunellər və qapalı məkanlarda tüstü çəkisi və hava dövranı üçün yüksək temperatura davamlılığı ilə hazırlanıb. EN 12101-3 sertifikatlı." },
+      { "name": "Dragonfly JAR", "type": "İki istiqamətli aksial jet ventilyator", "image": "/images/products/dragonfly-jar.jpg", "description": "Qapalı avtodromlar və böyük həcmli daxili məkanlarda tüstü çəkisi, havalandırma və hava dövranı üçün iki istiqamətli. Aşağı səs səviyyəsi və yüksək performans." },
+      { "name": "Dragonfly JR", "type": "Radial/sentrifuj jet ventilyator", "image": "/images/products/dragonfly-jr.jpg", "description": "Qapalı avtodromlar, tunellər və yanğın zonası kimi tələbkar daxili həcmlərdə tüstü çəkisi və təcili havalandırma üçün xüsusi hazırlanıb. EN 12101-3 sertifikatlı." }
+    ]
+  },
+  "duvarTipiFanlar": {
+    "title": "OWL",
+    "subtitle": "Divar tipli ventilyatorlar",
+    "intro": "",
+    "models": [
+      { "name": "Owl RER", "type": "Düzbucaqlı divar tipli ventilyator", "image": "/images/products/owl-rer.jpg", "description": "Divar quraşdırması üçün xüsusi hazırlanmış metal qanadlı aksial ventilyator həlli; davamlı konstruksiya və tənzimlənən sürətlə." },
+      { "name": "Owl CER", "type": "Dairəvi divar tipli ventilyator", "image": "/images/products/owl-cer.jpg", "description": "Dairəvi divar quraşdırması üçün xüsusi hazırlanmış kompakt və yüksək səmərəlilikdə metal qanadlı aksial ventilyator modeli." },
+      { "name": "Owl RWA", "type": "Düzbucaqlı aksial divar tipli ventilyator", "image": "/images/products/owl-rwa.jpg", "description": "Düzbucaqlı divar quraşdırmasına uyğun yüksək səmərəlilikdə profilli qanad dizaynı ilə aksial ventilyator həlli." },
+      { "name": "Owl CWA", "type": "Dairəvi aksial divar tipli ventilyator", "image": "/images/products/owl-cwa.jpg", "description": "Dairəvi divar quraşdırmasına uyğun yüngül və davamlı profilli qanad strukturu ilə kompakt aksial ventilyator həlli." }
+    ]
+  },
+  "ecFanlar": {
+    "title": "HUMMINGBIRD",
+    "subtitle": "EC ventilyatorlar",
+    "intro": "Hummingbird seriyası EC mühərrik texnologiyası ilə yüksək performansı enerji qənaəti ilə birləşdirən dam və kanal tipli ventilyator həlləri təklif edir.",
+    "models": [
+      { "name": "Hummingbird RRV", "type": "EC şaquli ötürmə dam ventilyatoru", "image": "/images/products/hummingbird-rh.jpg", "description": "Müasir binalar üçün yüksək səmərəlilikdə EC mühərriklərlə işləyən şaquli ötürmə dam ventilyatoru həlli. Ağıllı idarəetmə seçimləri, aşağı enerji istehlakı və sakit işləməsi ilə komfort və sənaye havalandırması tətbiqlərində seçilir." },
+      { "name": "Hummingbird DRB", "type": "EC düzbucaqlı kanal ventilyatoru", "image": "/images/products/hummingbird-drb-ec.jpg", "description": "Müasir havalandırma sistemlərində istifadə üçün yüksək səmərəlilikdə EC mühərrikli düzbucaqlı kanal ventilyatoru həlli. Kompakt strukturu, sakit işləməsi və avtomatlaşdırma sistemlərinə inteqrasiya imkanı ilə komfort və sənaye tətbiqlərində etibarlı seçilir." }
+    ]
+  },
+  "endustriyelFanlar": {
+    "title": "NAUTILUS",
+    "subtitle": "Sənaye sentrifuj ventilyatorları",
+    "intro": "Yüksək performansı enerji qənaəti ilə birləşdirən sənaye ventilyatorları geriyə əyilmiş qanad dizaynı və birbaşa ötürücü mühərrik konfiqurasiyası ilə güclü və səmərəli havalandırma həlli təklif edir.",
+    "models": [
+      { "name": "Nautilus LPF", "type": "Sənaye sentrifuj ventilyator", "image": "/images/products/nautilus-lfp.jpg", "description": "Yüksək performansı enerji qənaəti ilə birləşdirən sənaye ventilyatoru." },
+      { "name": "Nautilus Silence", "type": "İki divarlı sentrifuj ventilyator", "image": "/images/products/nautilus-cif-cidarli.jpg", "description": "NAUTILUS Silence seriyası aşağı təzyiqli hava ötürmə tələb edən sistemlərdə yüksək səmərəlilikdə işləyən, kompakt struktur və birbaşa ötürücü dizaynı ilə sentrifuj ventilyatorlardır." }
+    ]
+  },
+  "exproofFanlar": {
+    "title": "BEAR",
+    "subtitle": "Partlayışa davamlı ventilyatorlar",
+    "intro": "Bear seriyası ventilyatorlar partlayıcı və yanğılanan qaz mühitlərində istifadə üçün hazırlanmış Ex-Proof ventilyator həlləridir.",
+    "models": [
+      { "name": "Bear EX-REB", "type": "Düzbucaqlı kanal tipli partlayışa davamlı ventilyator", "image": "/images/products/bear-reb.jpg", "description": "Ex-Proof, partlayıcı qaz mühitlərində təhlükəsiz havalandırma üçün. Yüksək təhlükəsizlik standartları, tezliklə idarə olunan iş, ATEX zona uyğunluğu." },
+      { "name": "Bear EX-T", "type": "Qəfəsli aksial partlayışa davamlı ventilyator", "image": "/images/products/bear-t.jpg", "description": "Partlayıcı mühitlərdə təhlükəsiz hava ötürmə, balanslaşdırılmış işçi çarx dizaynı. Yanğın və qığılcım riskli sənaye tətbiqləri üçün." },
+      { "name": "Bear EX-RRH", "type": "Üfüqi ötürmə dam tipli partlayışa davamlı sentrifuj ventilyator", "image": "/images/products/bear-rrh.jpg", "description": "Dam üfüqi çəkisi tələb edən tətbiqlər üçün xüsusi hazırlanıb. ATEX zona 1 və zona 2." },
+      { "name": "Bear EX-RRV", "type": "Şaquli ötürmə dam tipli partlayışa davamlı sentrifuj ventilyator", "image": "/images/products/bear-rrv.jpg", "description": "Yüksək təzyiqli hava çəkisi, uzunömürlü xarici müqavimət." },
+      { "name": "Bear EX-BP", "type": "Plenum partlayışa davamlı sentrifuj ventilyator", "image": "/images/products/bear-bp.jpg", "description": "Modul plenum strukturu ilə güclü və sakit işləyən ventilyator həlli." },
+      { "name": "Bear EX-C", "type": "Plenum partlayışa davamlı aksial ventilyator", "image": "/images/products/bear-c.jpg", "description": "Sakit işləmə, asan texniki xidmət, ATEX uyğunluğu." },
+      { "name": "Bear LPF", "type": "Sentrifuj partlayışa davamlı ventilyator", "image": "/images/products/bear-lpf.jpg", "description": "Partlayıcı qaz və ya buxar ehtiva edən mühitlərdə təhlükəsiz hava çəkisi." },
+      { "name": "Bear R", "type": "Aksial dam tipli ventilyator", "image": "/images/products/bear-r.jpg", "description": "Böyük həcmli strukturların təbii havalandırma və çəkisi ehtiyaclarını ödəmək üçün hazırlanıb." },
+      { "name": "Bear W", "type": "Partlayışa davamlı aksial ventilyator (divar tipli)", "image": "/images/products/bear-w.jpg", "description": "Alovə davamlı, ATEX uyğun, yüksək performans." }
+    ]
+  },
+  "havuzNemAlmaSantrali": {
+    "title": "DOLPHIN",
+    "subtitle": "Hovuz nəmlik götürmə qurğusu",
+    "intro": "NOVVES tərəfindən inkişaf etdirilən Dolphin seriyası hovuz nəmlik götürmə qurğuları qapalı hovuzlarda bina konstruksiyalarına nəm ziyanını qarşısını alır və istifadəçi rahatlığını maksimuma çatdırır. Yüksək enerji səmərəliliyi, uzunömürlü tikinti və sakit işləməsi ilə Dolphin seriyası hovuz iqlim idarəetməsi həllərində peşəkar seçimdir.",
+    "tableHeaders": {
+      "model": "Model",
+      "airFlow": "Hava axını (m³/h)",
+      "poolArea": "Hovuz sahəsi (m²)",
+      "cooling": "Soyutma (kW)",
+      "condenser": "Kondensor (kW)",
+      "waterHeater": "Su isidicisi (kW)"
+    },
+    "models": [
+      { "model": "DOLPHIN 300", "airFlow": "3,000", "area": "50", "cooling": "21.1", "condenser": "26.4", "water": "26.15" },
+      { "model": "DOLPHIN 400", "airFlow": "4,000", "area": "75", "cooling": "28.7", "condenser": "35.67", "water": "34.12" },
+      { "model": "DOLPHIN 450", "airFlow": "4,500", "area": "100", "cooling": "33.3", "condenser": "40.96", "water": "36.24" },
+      { "model": "DOLPHIN 600", "airFlow": "6,000", "area": "150", "cooling": "42.2", "condenser": "52.88", "water": "50.58" },
+      { "model": "DOLPHIN 750", "airFlow": "7,500", "area": "200", "cooling": "52.6", "condenser": "65.9", "water": "62.97" },
+      { "model": "DOLPHIN 900", "airFlow": "9,000", "area": "250", "cooling": "36.8", "condenser": "80.68", "water": "77.1" }
+    ]
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Plenum ventilyatorlar",
+    "intro": "Turtle seriyası plenum ventilyatorları həm təmiz hava təchizi, həm də çəkisi havası üçün istifadə oluna bilər. Kompakt strukturu sayəsində birbaşa döşəməyə asan quraşdırma təklif edir; daxili divarlar arasındakı daş yunu dolğunu effektiv akustik izolyasiya təmin edir.",
+    "models": [
+      { "name": "Turtle B", "type": "Kəmər ötürməli plenum ventilyator", "image": "/images/products/turtle-b.jpg", "description": "Yüksək həcmli hava ötürmə tələb edən sistemlərdə etibarlı və sakit həllər təklif edən kəmər ötürməli şkaf tipli ventilyator modeli." },
+      { "name": "Turtle BP", "type": "Plenum tipli geriyə əyilmiş plug fan", "image": "/images/products/turtle-bp.jpg", "description": "Yüksək performanslı şkaf tipli ventilyator modeli; sakit, səmərəli və kompakt hava həlləri." },
+      { "name": "Turtle BPA", "type": "Plenum tipli geriyə əyilmiş sentrifuj ventilyator", "image": "/images/products/turtle-a.jpg", "description": "Plenum strukturu və geriyə əyilmiş sentrifuj ventilyator texnologiyası ilə yüksək səmərəlilik və sakit iş performansı təklif edən sənaye havalandırması həlli." },
+      { "name": "Turtle F", "type": "Plenum irəli əyilmiş qanadlı ventilyator", "image": "/images/products/turtle-f.jpg", "description": "Aşağı təzyiqli hava ötürmə tələb edən sistemlərdə sakit və səmərəli işləməsi ilə seçilən plug tipli iki girişli şkaf tipli ventilyator modeli." },
+      { "name": "Turtle A", "type": "Aksial plenum ventilyator", "image": "/images/products/turtle-a.jpg", "description": "Yüksək həcmli hava ötürmə tələbləri olan sistemlər üçün kompakt aksial şkaf tipli ventilyator həlləri." }
+    ]
+  },
+  "isiGeriKazanimCihazlari": {
+    "title": "CARACAL",
+    "subtitle": "İstilik bərpası qurğuları",
+    "intro": "Caracal seriyası ofislərdə, məktəblərdə, otellərdə, xəstəxanalarda, biznes mərkəzlərində, ticarət mərkəzlərində, tədbir məkanlarında və kafelərdə təmiz hava tələbatını ödəmək və mövcud hava keyfiyyətini yaxşılaşdırmaq üçün idarə olunan kondisionerləşdirmə təmin edir.",
+    "caracalD": {
+      "title": "Caracal D",
+      "type": "İstilik bərpası qurğusu",
+      "description": "Caracal D seriyası (istilik bərpası qurğusu) daxili havanı yeniləyərkən enerji səmərəliliyini artırmaq üçün inkişaf etdirilmiş kompakt və yüksək performanslı həlldir. Davamlı konstruksiya və istifadəçi dostu idarə paneli ilə rahat və davamlı havalandırma təmin edir."
+    }
+  },
+  "kanalFanlari": {
+    "title": "KOI",
+    "subtitle": "Kanal ventilyatorları",
+    "intro": "",
+    "models": [
+      { "name": "Koi CB", "type": "Dairəvi kanal ventilyatoru", "image": "/images/products/koi-cb.jpg", "description": "Novves KOI-CB seriyası dairəvi kanal ventilyatorları kanal tipli havalandırma ehtiyacları üçün inkişaf etdirilmiş kompakt və yüksək performanslı həllər təklif edir." },
+      { "name": "Koi RB", "type": "Düzbucaqlı kanal ventilyatoru", "image": "/images/products/koi-rb.jpg", "description": "Novves KOI-RB seriyası düzbucaqlı kanal ventilyatorları sənaye və ticarət binalarında yüksək performanslı hava ötürməsi üçün xüsusi hazırlanıb." },
+      { "name": "Koi REB", "type": "Xarici mühərrikli düzbucaqlı kanal ventilyatoru", "image": "/images/products/koi-reb.jpg", "description": "KOI-REB seriyası xarici mühərrikli kanal ventilyatorları yüksək temperatura davamlılığı tələb edən havalandırma tətbiqləri üçün xüsusi dizayn edilib." },
+      { "name": "Koi X", "type": "Qarışıq axın kanal ventilyatoru", "image": "/images/products/koi-x.jpg", "description": "KOI-X seriyası qarışıq axın kanal ventilyatoru xüsusilə komfort zonalarında maksimum səmərəlilik üçün kompakt struktur, sakit işləmə və iki sürətli mühərrik seçimi ilə hazırlanıb." }
+    ]
+  },
+  "klimaSantralleri": {
+    "title": "TIGER",
+    "subtitle": "Hava məişəti qurğuları",
+    "intro": "Yüksək performanslı havalandırma və kondisionerləşdirmə ehtiyacları üçün inkişaf etdirilmiş modul, səmərəlilik yönümlü hava məişəti qurğusu həlli. Geniş hava axını diapazonu, yüksək enerji səmərəli komponentlər və sakit iş performansı ilə seçilir.",
+    "specs": [
+      { "label": "Hava axını", "value": "500 - 125,000 m³/h" },
+      { "label": "Təzyiq", "value": "10 - 3,000 Pa" },
+      { "label": "Şassi", "value": "Anodlaşdırılmış alüminium" },
+      { "label": "Panel", "value": "İki divarlı sandviç panel" },
+      { "label": "Ventilyator tipi", "value": "Sentrifuj ventilyator / EC plug fan" },
+      { "label": "İstilik bərpası", "value": "Plitə, fırlanan, su-qlikol" }
+    ]
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Qəfəsli aksial ventilyatorlar",
+    "intro": "Marlin seriyası qəfəsli aksial ventilyatorları təmiz hava təchizi, çəkisi və ya kanal ventilyatoru kimi istifadə olunur; yanğın zamanı pilləkən və lift şaxtaları kimi qaçış yollarına tüstünün daxil olmasının qarşısını almaq üçün basınclandırma ventilyatoru kimi də xidmət göstərir.",
+    "models": [
+      { "name": "Marlin", "type": "Qəfəsli aksial ventilyator", "image": "/images/products/marlin.png", "description": "Novves MARLIN seriyası qəfəsli aksial ventilyator yüksək hava axını tələb edən sistemlərdə güclü performans, quraşdırma çevikliyi və enerji səmərəliliyini birləşdirən həlldir." },
+      { "name": "Marlin B", "type": "İkiyə bölünmüş aksial ventilyator", "image": "/images/products/marlin-b.jpg", "description": "İkiyə bölünmüş aksial ventilyator." }
+    ]
+  },
+  "mutfakFanlari": {
+    "title": "BUTTERFLY",
+    "subtitle": "Mətbəx çəkisi ventilyatorları",
+    "intro": "",
+    "models": [
+      { "name": "Butterfly B", "type": "Metal filtrli mətbəx çəkisi ventilyatoru", "image": "/images/products/butterfly-b.jpg", "description": "Butterfly B seriyası mətbəx tipli ventilyator sənaye və ticarət mətbəxlərində güclü buxar, yağ və qoxunun çəkilməsi üçün inkişaf etdirilmiş davamlı və yüksək səmərəlilikdə havalandırma həllidir. Qabaqcıl filtrasiya sistemi, sakit işləmə və uzunömürlü konstruksiya ilə peşəkar mətbəxlər üçün idealdır." }
+    ]
+  },
+  "siginakFanlari": {
+    "title": "FOX",
+    "subtitle": "Sığınacaq ventilyatorları",
+    "intro": "Fox seriyası şüalanma, nüvə, bioloji və kimyəvi təhlükələrdən və ya təbii fəlakətlərdən qorunmaq üçün tikilmiş sığınacaqlar üçün inkişaf etdirilib.",
+    "models": [
+      { "name": "Fox D", "type": "Kanal tipli sığınacaq ventilyatoru", "image": "/images/products/fox-d.jpg", "description": "FOX D seriyası kanal tipli sığınacaq ventilyatoru yüksək filtrasiya tutumu ilə sığınacaq və təhlükəsiz zona havalandırması ehtiyacları üçün xüsusi hazırlanmış davamlı və etibarlı həlldir." },
+      { "name": "Fox C", "type": "Şkaf tipli sığınacaq ventilyatoru", "image": "/images/products/fox-c.jpg", "description": "FOX C seriyası şkaf tipli sığınacaq ventilyatoru yüksək təhlükəsizlik tələb edən zonalar üçün xüsusi hazırlanmış, sakit işləməyə uyğun və güclü filtrasiya sistemi ilə peşəkar havalandırma həllidir." }
+    ]
+  }
+}

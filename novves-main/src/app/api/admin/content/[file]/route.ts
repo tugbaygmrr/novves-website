@@ -10,14 +10,9 @@ import {
   COOKIE_CSRF_TOKEN,
 } from "@/lib/admin/auth";
 import pool from "@/lib/admin/db";
+import { locales, type Locale } from "@/i18n/config";
 
 export const dynamic = "force-dynamic";
-
-// ---------------------------------------------------------------------------
-// Valid locales
-// ---------------------------------------------------------------------------
-const VALID_LOCALES = ["tr", "en", "ru"] as const;
-type Locale = (typeof VALID_LOCALES)[number];
 
 // ---------------------------------------------------------------------------
 // Valid dictionary files and their sections
@@ -118,7 +113,7 @@ const VALID_FILES = Object.keys(FILE_SECTIONS);
 // ---------------------------------------------------------------------------
 
 function isValidLocale(v: unknown): v is Locale {
-  return typeof v === "string" && VALID_LOCALES.includes(v as Locale);
+  return typeof v === "string" && (locales as readonly string[]).includes(v);
 }
 
 function isValidFile(v: unknown): v is string {

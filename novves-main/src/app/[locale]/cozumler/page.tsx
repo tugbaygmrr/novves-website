@@ -2,31 +2,21 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SolutionsCarousel } from "@/components/solutions-carousel";
+import { HubTreePanel } from "@/components/hub-tree-panel";
+import { buildSolutionHubRows } from "@/lib/hub-tree-rows";
+import { navbarHubMetadata } from "@/lib/i18n-metadata";
+import { SOLUTION_NAV } from "@/lib/hub-nav-config";
 import { getDictionary, hasLocale } from "../dictionaries";
 import heroFactoryImage from "../../../../IMG-20240401-WA0008.jpg";
 
-export const metadata: Metadata = {
-  title: "Çözümler | Novves",
-  description:
-    "NOVVES mühendislik çözümleri — duman tahliye, konfor iklimlendirme, endüstriyel hava yönetimi ve daha fazlası.",
-};
-
-const solutionItems: { key: string; slug: string }[] = [
-  { key: "dumanIsiTahliye", slug: "duman-isi-tahliye-sistemleri" },
-  { key: "konforIklimlendirme", slug: "konfor-iklimlendirme-sistemleri" },
-  { key: "hijyenikFiltrasyon", slug: "hijyenik-filtrasyonlu-havalandirma" },
-  { key: "endustriyelHavaYonetimi", slug: "endustriyel-hava-yonetimi" },
-  { key: "hayvancilikTesisleri", slug: "hayvancilik-tesisleri-icin-havalandirma-sistemleri" },
-  { key: "trafoEnerjiOdalari", slug: "trafo-enerji-odalari-fanlari" },
-  { key: "seraTarimsal", slug: "sera-tarimsal-havalandirma-sistemleri" },
-  { key: "atexPatlamaKoruma", slug: "atex-patlama-koruma-cozumleri" },
-  { key: "akilliOtomasyon", slug: "akilli-otomasyon-ve-kontrol-sistemleri" },
-  { key: "konutHavalandirma", slug: "konut-tipi-havalandirma-sistemleri" },
-  { key: "marinOffshore", slug: "marin-offshore-havalandirma-sistemleri" },
-  { key: "projeBazliOzelImalat", slug: "proje-bazli-ozel-imalatlar" },
-  { key: "cfdDanismanlik", slug: "cfd-muhendislik-danismanligi" },
-];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return navbarHubMetadata(locale, "solutions");
+}
 
 export default async function CozumlerPage({
   params,
@@ -45,6 +35,15 @@ export default async function CozumlerPage({
     if (typeof sol.breadcrumbCurrent === "string") return sol.breadcrumbCurrent;
     return key;
   };
+
+  const solutionNames = Object.fromEntries(
+    SOLUTION_NAV.map((item) => [item.key, getSolutionName(item.key)] as const),
+  );
+  const hubRows = buildSolutionHubRows(
+    solutions as unknown as Record<string, unknown>,
+    SOLUTION_NAV,
+    solutionNames,
+  );
 
   return (
     <main>
@@ -110,13 +109,12 @@ export default async function CozumlerPage({
             <div className="hidden h-px flex-1 bg-gray-200 sm:block" />
           </div>
 
-          <SolutionsCarousel
+          <HubTreePanel
             locale={locale}
-            items={solutionItems.map((item) => ({
-              key: item.key,
-              slug: item.slug,
-              name: getSolutionName(item.key),
-            }))}
+            basePath="cozumler"
+            items={hubRows}
+            treeTitle={dict.products.shared.explore}
+            openLabel={dict.products.shared.detailedView}
           />
         </div>
       </section>

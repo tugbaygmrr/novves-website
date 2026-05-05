@@ -3,12 +3,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { productCategoryMetadata } from "@/lib/i18n-metadata";
+import { AirMovementFamiliesPanel } from "@/components/air-movement-families-panel";
+import { getProductFamilyPageBlurb } from "@/lib/solution-product-blurb";
 
-export const metadata: Metadata = {
-  title: "Hava Hareketi Ürünleri | Novves",
-  description:
-    "NOVVES hava hareketi ürünleri — jet fanlar, aksiyal fanlar, çatı fanları, kanal fanları ve daha fazlası.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return productCategoryMetadata(locale, "havaHareketi");
+}
 
 const productImages: Record<string, string> = {
   DRAGONFLY: "/images/products/dragonfly-c.png",
@@ -59,6 +65,15 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
   const featuredNames = ["DRAGONFLY", "MARLIN", "BEAR"];
   const featuredProducts = products.filter((p: Product) => featuredNames.includes(p.name));
   const regularProducts = products.filter((p: Product) => !featuredNames.includes(p.name));
+
+  const productsDict = dict.products as Record<string, unknown>;
+  const familyBlurbs: Record<string, string> = {};
+  for (const p of products) {
+    if (p.comingSoon) continue;
+    const img = productImages[p.name] ?? "";
+    const text = getProductFamilyPageBlurb(productsDict, p.name, img);
+    if (text) familyBlurbs[p.name] = text;
+  }
 
   return (
     <main>
@@ -121,15 +136,17 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
-            {featuredProducts.map((product: Product) => (
+            {featuredProducts.map((product: Product) => {
+              const blurb = familyBlurbs[product.name]?.trim();
+              return (
               <Link
                 key={product.name}
                 href={`/${locale}/urunler/${productHrefs[product.name]}`}
-                className="group relative overflow-hidden rounded-2xl border border-ink/10 bg-[#f5f2eb] shadow-[0_16px_40px_-30px_rgba(15,20,30,0.3)] transition-all duration-500 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_26px_56px_-28px_rgba(17,27,44,0.34)]"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-[#f5f2eb] shadow-[0_16px_40px_-30px_rgba(15,20,30,0.3)] transition-all duration-500 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_26px_56px_-28px_rgba(17,27,44,0.34)]"
               >
                 <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#1d2f4d]/95 via-primary/85 to-[#90a5bd]/90" />
                 {/* Image */}
-                <div className="relative h-64 overflow-hidden bg-[#f1ede4]">
+                <div className="relative h-64 shrink-0 overflow-hidden bg-[#f1ede4]">
                   <Image
                     src={productImages[product.name] || ""}
                     alt={product.name}
@@ -145,10 +162,9 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="relative border-t border-ink/10 p-6">
+                <div className="relative flex flex-col border-t border-ink/10 p-6">
                   <div className="flex items-start justify-between gap-4">
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="text-[1.6rem] font-bold leading-[1.05] tracking-[-0.02em] text-dark">{product.name}</h3>
                       <p className="mt-1.5 text-sm font-medium text-primary">{product.type}</p>
                     </div>
@@ -159,7 +175,13 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
                     </span>
                   </div>
 
-                  <div className="mt-5 flex flex-wrap gap-1.5">
+                  {blurb ? (
+                    <p className="mt-4 text-pretty text-[12px] leading-[1.65] text-secondary/65 sm:text-[13px]">
+                      {blurb}
+                    </p>
+                  ) : null}
+
+                  <div className={`flex flex-wrap gap-1.5 ${blurb ? "mt-4 border-t border-ink/10 pt-4" : "mt-5"}`}>
                     {(product.subModels || []).slice(0, 5).map((model: string) => (
                       <span key={model} className="rounded-md border border-ink/10 bg-[#f3f2ee] px-2 py-0.5 text-[10px] font-medium text-secondary/60">
                         {model}
@@ -176,93 +198,36 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
                 {/* Bottom accent */}
                 <div className="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full" />
               </Link>
-            ))}
+            );
+            })}
           </div>
         </div>
       </section>
 
-      {/* ── All Products ─────────────────────────────────────── */}
+      {/* ── All product families (sol panel + sağ detay, çözüm sayfası uygulama alanları düzeni) ── */}
       <section className="relative overflow-hidden bg-[#f1f0eb] py-20">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.14]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-14 flex items-end gap-6">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{s.fullProductRange}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">{s.allProductFamilies}</h2>
-            </div>
-            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
+          <div className="mb-8 rounded-3xl border border-ink/[0.06] bg-gradient-to-br from-white via-white to-[#f6f5f2] p-7 shadow-[0_28px_80px_-48px_rgba(15,23,42,0.3)] ring-1 ring-white/90 sm:p-9">
+            <span className="inline-flex rounded-full bg-primary/[0.12] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+              {s.fullProductRange}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-[-0.02em] text-[#1a2842] sm:text-[2.35rem] sm:leading-[1.08]">
+              {s.allProductFamilies}
+            </h2>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {regularProducts.map((product: Product) => {
-              if (product.comingSoon) {
-                return (
-                  <div
-                    key={product.name}
-                    className="overflow-hidden rounded-2xl border border-dashed border-ink/15 bg-white/70 opacity-60"
-                  >
-                    <div className="flex h-64 items-center justify-center bg-[#f7f6f2]">
-                      <span className="text-xs font-medium text-secondary/30">{s.comingSoon}</span>
-                    </div>
-                    <div className="border-t border-ink/10 p-6">
-                      <h3 className="text-lg font-bold text-dark">{product.name}</h3>
-                      <p className="mt-0.5 text-sm text-secondary/40">{product.type}</p>
-                    </div>
-                  </div>
-                );
-              }
-
-              return (
-                <Link
-                  key={product.name}
-                  href={`/${locale}/urunler/${productHrefs[product.name]}`}
-                className="group relative overflow-hidden rounded-2xl border border-ink/10 bg-[#f5f2eb] shadow-[0_16px_40px_-30px_rgba(15,20,30,0.3)] transition-all duration-500 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_26px_56px_-28px_rgba(17,27,44,0.34)]"
-                >
-                  <div className="relative h-64 overflow-hidden bg-[#f1ede4]">
-                    <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#1d2f4d]/95 via-primary/85 to-[#90a5bd]/90" />
-                    <Image
-                      src={productImages[product.name] || ""}
-                      alt={product.name}
-                      fill
-                      className="object-contain p-3 mix-blend-multiply transition-transform duration-700 group-hover:scale-[1.03]"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                    <div className="absolute right-4 top-4 rounded-lg border border-white/15 bg-[#1b2c48]/78 px-2.5 py-1 text-[10px] font-bold text-white shadow-lg backdrop-blur-sm">
-                      {(product.subModels || []).length} {s.model}
-                    </div>
-                  </div>
-
-                  <div className="border-t border-ink/10 p-6">
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <h3 className="text-[1.6rem] font-bold leading-[1.05] tracking-[-0.02em] text-dark">{product.name}</h3>
-                        <p className="mt-1.5 text-sm font-medium text-primary">{product.type}</p>
-                      </div>
-                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-[#fff1ea] text-primary transition-all duration-300 group-hover:border-primary/35 group-hover:bg-primary group-hover:text-white">
-                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                      </span>
-                    </div>
-                    <div className="mt-5 flex flex-wrap gap-1.5">
-                      {(product.subModels || []).slice(0, 4).map((model: string) => (
-                        <span key={model} className="rounded-md border border-ink/10 bg-[#f3f2ee] px-2 py-0.5 text-[11px] font-medium text-secondary/60">
-                          {model}
-                        </span>
-                      ))}
-                      {(product.subModels || []).length > 4 && (
-                        <span className="rounded-md border border-primary/20 bg-primary/10 px-2 py-0.5 text-[11px] font-bold text-primary">
-                          +{(product.subModels || []).length - 4}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary transition-all duration-500 group-hover:w-full" />
-                </Link>
-              );
-            })}
-          </div>
+          <AirMovementFamiliesPanel
+            products={regularProducts}
+            locale={locale}
+            productImages={productImages}
+            productHrefs={productHrefs}
+            eyebrow={s.productsLabel}
+            title={s.allProductFamilies}
+            modelsLabel={s.model}
+            comingSoonLabel={s.comingSoon}
+            familyBlurbs={familyBlurbs}
+          />
         </div>
       </section>
 

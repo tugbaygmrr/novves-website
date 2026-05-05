@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { corporateDetailMetadata } from "@/lib/i18n-metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return corporateDetailMetadata(locale, "politikamiz");
+}
 
 const sectionIcons = [
   <svg key="0" className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 10-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67" /></svg>,
@@ -11,10 +22,10 @@ const sectionIcons = [
 ];
 
 const certLogos = [
-  { src: "/images/certificates/ISO9001.png", label: "ISO 9001" },
-  { src: "/images/certificates/ISO14001.png", label: "ISO 14001" },
-  { src: "/images/certificates/CE.png", label: "CE" },
-  { src: "/images/certificates/TSE.png", label: "TSE" },
+  { src: "/images/certificates/ISO9001.svg", label: "ISO 9001" },
+  { src: "/images/certificates/ISO14001.svg", label: "ISO 14001" },
+  { src: "/images/certificates/CE.svg", label: "CE" },
+  { src: "/images/certificates/TSE.svg", label: "TSE" },
 ];
 
 export default async function Politikamiz({ params }: { params: Promise<{ locale: string }> }) {
@@ -58,11 +69,15 @@ export default async function Politikamiz({ params }: { params: Promise<{ locale
               </div>
             </div>
             <div className="lg:col-span-2">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
                 {certLogos.map((c) => (
-                  <div key={c.label} className="flex flex-col items-center justify-center rounded-xl border border-ink/10 bg-[#f8f5ed] p-6">
-                    <Image src={c.src} alt={c.label} width={64} height={64} className="h-14 w-auto object-contain" />
-                    <span className="mt-3 text-[11px] font-semibold text-secondary/40">{c.label}</span>
+                  <div key={c.label} className="flex flex-col items-center justify-center rounded-xl border border-ink/10 bg-[#f8f5ed] p-3.5 sm:p-6">
+                    {c.src.endsWith(".svg") ? (
+                      <img src={c.src} alt={c.label} className="h-10 w-auto object-contain sm:h-14" loading="lazy" decoding="async" />
+                    ) : (
+                      <Image src={c.src} alt={c.label} width={64} height={64} className="h-10 w-auto object-contain sm:h-14" />
+                    )}
+                    <span className="mt-2 text-[10px] font-semibold text-secondary/45 sm:mt-3 sm:text-[11px]">{c.label}</span>
                   </div>
                 ))}
               </div>

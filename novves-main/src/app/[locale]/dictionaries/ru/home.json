@@ -196,5 +196,169 @@
     "title": "Ищете решение по вентиляции?",
     "desc": "Свяжитесь с нашей инженерной командой для выездного обследования, CFD-анализа, проектирования и расчёта стоимости.",
     "requestQuote": "Запросить предложение"
-  }
+  },
+  "pageChrome": {
+    "catalogsVertical": "Каталоги",
+    "previousSolutions": "Предыдущие решения",
+    "nextSolutions": "Следующие решения",
+    "previousProducts": "Предыдущие товары",
+    "nextProducts": "Следующие товары",
+    "defaultSolutionDesc": "Откройте инженерное решение для вашего проекта.",
+    "productFallbackDesc": "Откройте надежные и эффективные решения, подходящие для вашего проекта.",
+    "catalogKindLabel": "Каталог",
+    "catalogCardDesc": "Доступ к PDF и документам в техническом центре.",
+    "referenceEyebrow": "Референс",
+    "referenceCardDesc": "Ознакомьтесь с избранными реализованными проектами.",
+    "certificateEyebrow": "Сертификат",
+    "certificateCardDesc": "Ознакомьтесь с международными сертификатами качества и соответствия.",
+    "companyEyebrow": "Компания",
+    "companyCardDesc": "История NOVVES, руководство и структура команды.",
+    "companyProfileVertical": "Профиль компании",
+    "pillarExpandAria": "Показать полностью",
+    "pillarCollapseAria": "Свернуть",
+    "pillarCta": "Подробнее",
+    "productCardCta": "Подробнее",
+    "solutionCardCta": "Подробнее",
+    "midCtaBullet1": "Предварительная оценка за 48 часов",
+    "midCtaBullet2": "Ориентированное на внедрение решение",
+    "midCtaBullet3": "Интеграция объекта + CFD",
+    "videoStatMeta": "30+ стран · 500+ проектов",
+    "scrollVideoSideLabel": "Вентиляция парковки",
+    "engineeringAlt1": "Точное изготовление NOVVES с ЧПУ-лазерной резкой листового металла",
+    "engineeringAlt2": "Монтаж на объекте и техническое сопровождение NOVVES",
+    "pillarsFallbackTitle": "Наш инженерный подход"
+  },
+  "solutionCarouselByHref": {
+    "/cozumler/duman-isi-tahliye-sistemleri": {
+      "title": "Системы дымоудаления и теплоотвода",
+      "description": "Безопасное дымо- и теплоудаление при пожаре."
+    },
+    "/cozumler/konfor-iklimlendirme-sistemleri": {
+      "title": "Системы комфортного кондиционирования",
+      "description": "Климатические решения для комфорта и эффективности."
+    },
+    "/cozumler/hijyenik-filtrasyonlu-havalandirma": {
+      "title": "Гигиеническая фильтрационная вентиляция",
+      "description": "Гигиеническая фильтрация для критических зон."
+    },
+    "/cozumler/endustriyel-hava-yonetimi": {
+      "title": "Промышленное управление воздухом",
+      "description": "Надёжное управление воздухом для промышленности."
+    },
+    "/cozumler/atex-patlama-koruma-cozumleri": {
+      "title": "Взрывозащита ATEX",
+      "description": "Безопасные вентиляционные решения с соответствием ATEX."
+    },
+    "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri": {
+      "title": "Вентиляция животноводческих объектов",
+      "description": "Откройте инженерное решение для вашего проекта."
+    },
+    "/cozumler/trafo-enerji-odalari-fanlari": {
+      "title": "Вентиляторы для трансформаторных помещений",
+      "description": "Откройте инженерное решение для вашего проекта."
+    },
+    "/cozumler/sera-tarimsal-havalandirma-sistemleri": {
+      "title": "Тепличная и сельскохозяйственная вентиляция",
+      "description": "Откройте инженерное решение для вашего проекта."
+    },
+    "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri": {
+      "title": "Интеллектуальная автоматика и управление",
+      "description": "Откройте инженерное решение для вашего проекта."
+    },
+    "/cozumler/konut-tipi-havalandirma-sistemleri": {
+      "title": "Вентиляция жилых помещений",
+      "description": "Откройте инженерное решение для вашего проекта."
+    },
+    "/cozumler/marin-offshore-havalandirma-sistemleri": {
+      "title": "Морская и оффшорная вентиляция",
+      "description": "Откройте инженерное решение для вашего проекта."
+    },
+    "/cozumler/proje-bazli-ozel-imalatlar": {
+      "title": "Проектное индивидуальное производство",
+      "description": "Откройте инженерное решение для вашего проекта."
+    },
+    "/cozumler/cfd-muhendislik-danismanligi": {
+      "title": "Инженерный CFD-консалтинг",
+      "description": "Откройте инженерное решение для вашего проекта."
+    }
+  },
+  "productCategoryBlurbs": [
+    "Эффективная циркуляция воздуха с надежными вентиляторами.",
+    "Сбалансированный климат для комфорта.",
+    "Энергоэффективное сезонное кондиционирование.",
+    "Правильное управление расходом для эффективности.",
+    "Равномерное распределение в помещении.",
+    "Эффективная фильтрация для более чистого воздуха.",
+    "Дополнительное оборудование для завершения монтажа.",
+    "Умные и практичные решения управления.",
+    "Более тихая работа с гашением вибрации и шума."
+  ],
+  "catalogPreview": [
+    {
+      "title": "Каталог продукции",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+    },
+    {
+      "title": "Технические брошюры",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
+      "image": "/images/catalogs/dumantahliye-mockup.png"
+    },
+    {
+      "title": "Архив datasheet",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
+      "image": "/images/catalogs/sirketprofili-mockup.png"
+    }
+  ],
+  "certificatePreview": [
+    {
+      "title": "Сертификаты EN",
+      "href": "/kurumsal/sertifikalar",
+      "image": "/images/certificates/kalite-uygunluk-mockup.png"
+    },
+    {
+      "title": "Документы ISO",
+      "href": "/kurumsal/sertifikalar",
+      "image": "/images/certificates/iso-sertifika-mockup.png"
+    },
+    {
+      "title": "Качество и соответствие",
+      "href": "/kurumsal/sertifikalar",
+      "image": "/images/certificates/kalite-uygunluk-mockup.png"
+    }
+  ],
+  "companyProfileCards": [
+    {
+      "href": "/kurumsal/biz-kimiz",
+      "image": "/images/biz-kimiz-sag.png",
+      "title": "О компании"
+    },
+    {
+      "href": "/kurumsal/ceo-mesaji",
+      "image": "/images/page-hero/ceo.jpg",
+      "title": "Послание CEO"
+    },
+    {
+      "href": "/kurumsal/ekibimiz",
+      "image": "/images/page-hero/ekibimiz.jpg",
+      "title": "Команда"
+    }
+  ],
+  "referencePreview": [
+    {
+      "title": "2M Lojistik Gebze Depo",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/2m.jpg"
+    },
+    {
+      "title": "3S Kale Topaz Zeytinburnu",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/3skale.jpg"
+    },
+    {
+      "title": "Adana Yüreğir 100 Yataklı Hastane",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/adana-yuregir.jpg"
+    }
+  ]
 }

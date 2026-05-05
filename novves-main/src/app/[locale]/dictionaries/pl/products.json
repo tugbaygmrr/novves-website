@@ -1,0 +1,1406 @@
+{
+  "shared": {
+    "home": "Dom",
+    "products": "Produkty",
+    "productsLabel": "Produkty",
+    "explore": "Badać",
+    "otherCategories": "Inne kategorie produktów",
+    "technicalSupport": "Wsparcie techniczne",
+    "technicalSupportRequest": "Prośba o wsparcie techniczne",
+    "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
+    "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
+    "allProducts": "Wszystkie produkty",
+    "viewProduct": "Zobacz produkt",
+    "detailedView": "Zobacz szczegóły",
+    "comingSoon": "Już wkrótce",
+    "inspect": "Badać",
+    "model": "model",
+    "models": "Model",
+    "results": "wyniki",
+    "noResults": "Nie znaleziono żadnych wyników.",
+    "searchProducts": "Wyszukaj produkty...",
+    "clear": "Jasne",
+    "readMore": "Przeczytaj więcej",
+    "readLess": "Czytaj mniej",
+    "getQuote": "Uzyskaj wycenę",
+    "allIklimlendirmeProducts": "Wszystkie produkty do klimatyzacji",
+    "forYourProject": "Aby znaleźć odpowiednie rozwiązanie dla Twojego projektu",
+    "productCatalog": "Katalog produktów",
+    "productRange": "Asortyment produktów",
+    "productFamilies": "Rodziny produktów",
+    "productGroups": "Grupy produktów",
+    "fullProductRange": "Pełna gama produktów",
+    "allProductFamilies": "Wszystkie rodziny produktów",
+    "mostPreferred": "Najbardziej preferowane",
+    "featuredProducts": "Polecane produkty",
+    "productVariety": "Różnorodność produktów",
+    "productFamily": "Rodzina produktów",
+    "certified": "Atestowany",
+    "fireResistance": "Odporność na ogień",
+    "filterSeries": "Seria filtrów",
+    "exploreNovves": "Poznaj inne kategorie w asortymencie produktów NOVVES.",
+    "comingSoonNotice": "Produkty w tej kategorii zostaną wkrótce opublikowane szczegółowo. Informacje techniczne i oferty cenowe",
+    "contactUs": "skontaktuj się z nami",
+    "airDamper": "Przepustnica powietrza",
+    "grilleDiffuser": "Kratki, dyfuzory itp.",
+    "panoPLCSensor": "Panele, PLC, czujniki",
+    "silencerRubberPadIsolators": "Tłumiki, podkładki gumowe, wibroizolatory",
+    "categories": {
+      "havaHareketi": "Ruch Powietrzny",
+      "iklimlendirme": "Klimatyzacja",
+      "sogutmaVeIsitma": "Chłodzenie i ogrzewanie",
+      "havaYonetimi": "Zarządzanie powietrzem",
+      "havaDagitimi": "Dystrybucja powietrza",
+      "havaFiltrasyonu": "Filtracja powietrza",
+      "aksesuarlar": "Akcesoria",
+      "otomasyonMalzemeleri": "Sprzęt automatyki",
+      "titresimVeSesIzolasyon": "Izolacja wibracyjna i akustyczna"
+    }
+  },
+  "havaHareketi": {
+    "title": "Ruch Powietrzny",
+    "titleFirst": "Powietrze",
+    "titleHighlight": "Ruch",
+    "heroDesc": "Dla Twoich potrzeb w zakresie wentylacji przemysłowej i komfortowej",
+    "heroDescSuffix": "rodzina produktów.",
+    "stats": [
+      {
+        "value": "1,200+",
+        "label": "Różnorodność produktów"
+      },
+      {
+        "value": "12",
+        "label": "Rodziny produktów"
+      },
+      {
+        "value": "EN 12101-3",
+        "label": "Atestowany"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Odporność na ogień"
+      }
+    ],
+    "products": [
+      {
+        "name": "DRAGONFLY",
+        "type": "Wentylator odprowadzający dym i ciepło",
+        "subModels": [
+          "DF T",
+          "DF TS",
+          "DF C",
+          "DF R",
+          "DF RV",
+          "DF TJF",
+          "DF JR",
+          "DF JA",
+          "DF WH",
+          "DF RH"
+        ]
+      },
+      {
+        "name": "MARLIN",
+        "type": "Wentylator osiowy",
+        "subModels": [
+          "MARLIN",
+          "MARLIN S",
+          "MARLIN B",
+          "MARLIN 2S"
+        ]
+      },
+      {
+        "name": "BEAR",
+        "type": "Wentylator ATEX",
+        "subModels": [
+          "BEAR REB EX",
+          "BEAR RVS EX",
+          "BEAR RHS EX",
+          "BEAR T",
+          "BEAR C",
+          "BEAR R",
+          "BEAR W",
+          "BEAR LPF EX",
+          "BEAR TB"
+        ]
+      },
+      {
+        "name": "NAUTILUS",
+        "type": "Przemysłowy wentylator odśrodkowy",
+        "subModels": [
+          "NAUTILUS LPF",
+          "NAUTILUS MPF",
+          "NAUTILUS HPF",
+          "NAUTILUS SILENCE"
+        ]
+      },
+      {
+        "name": "HUMMINGBIRD",
+        "type": "Wentylator EC",
+        "subModels": [
+          "HUMMINGBIRD DRB EC",
+          "HUMMINGBIRD RRV EC",
+          "HUMMINGBIRD RRH EC",
+          "HUMMINGBIRD CBP EC"
+        ]
+      },
+      {
+        "name": "HERON",
+        "type": "Wentylator dachowy",
+        "subModels": [
+          "HERON RH",
+          "HERON RHS",
+          "HERON RV",
+          "HERON RVS",
+          "HERON AH",
+          "HERON AV",
+          "HERON H"
+        ]
+      },
+      {
+        "name": "OWL",
+        "type": "Wentylator montowany na ścianie",
+        "subModels": [
+          "OWL RER",
+          "OWL R",
+          "OWL H"
+        ]
+      },
+      {
+        "name": "SEAHORSE",
+        "type": "Wentylator łazienkowy",
+        "subModels": [
+          "SEAHORSE AP",
+          "SEAHORSE RP V1",
+          "SEAHORSE RP V2"
+        ]
+      },
+      {
+        "name": "KOI",
+        "type": "Wentylator kanałowy",
+        "subModels": [
+          "KOI CB",
+          "KOI RB",
+          "KOI REB",
+          "KOI X"
+        ]
+      },
+      {
+        "name": "TURTLE",
+        "type": "Wentylator Plenum",
+        "subModels": [
+          "TURTLE B",
+          "TURTLE BPA",
+          "TURTLE F",
+          "TURTLE BP",
+          "TURTLE A"
+        ]
+      },
+      {
+        "name": "BUTTERFLY",
+        "type": "Kuchenny wentylator wyciągowy",
+        "subModels": [
+          "BUTTERFLY ECO",
+          "BUTTERFLY ECO HR"
+        ]
+      },
+      {
+        "name": "FOX",
+        "type": "Fan schroniska",
+        "subModels": [
+          "FOX D",
+          "FOX C"
+        ]
+      },
+      {
+        "name": "CHICKEN",
+        "type": "Miłośnik drobiu",
+        "comingSoon": true
+      },
+      {
+        "name": "ELEPHANT",
+        "type": "Zbiórka kurzu",
+        "comingSoon": true
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "ctaDesc": "Skontaktuj się z naszym zespołem inżynierów, aby znaleźć najbardziej odpowiednie rozwiązanie dla Twojego projektu spośród ponad 1200 odmian produktów."
+  },
+  "iklimlendirme": {
+    "title": "Klimatyzacja",
+    "titleFirst": "Powietrze",
+    "titleHighlight": "Kondycjonowanie",
+    "pills": [
+      "3 rodziny produktów",
+      "Konfiguracja modułowa",
+      "EC i wentylator odśrodkowy",
+      "Filtracja HEPA"
+    ],
+    "tiger": {
+      "label": "Jednostka wentylacyjna",
+      "desc": "Rozwiązanie centrali wentylacyjnej charakteryzujące się modułową konstrukcją, wysoce energooszczędnymi komponentami i cichą pracą w zakresie przepływu powietrza 500 – 125 000 m³/h.",
+      "specs": [
+        {
+          "label": "Przepływ powietrza",
+          "value": "500–125 tys. m3/h"
+        },
+        {
+          "label": "Ciśnienie",
+          "value": "10–3 000 Pa"
+        },
+        {
+          "label": "Podwozie",
+          "value": "Anodowane aluminium"
+        }
+      ]
+    },
+    "dolphin": {
+      "label": "Jednostka osuszania basenu",
+      "desc": "Zapobiega uszkodzeniom konstrukcji budynków w basenach krytych przez wilgoć, jednocześnie maksymalizując komfort użytkownika. Wyróżnia się wysoką energooszczędnością, trwałą konstrukcją i cichą pracą.",
+      "specs": [
+        {
+          "label": "Pojemność",
+          "value": "6 modeli"
+        },
+        {
+          "label": "Przepływ powietrza",
+          "value": "3 000–9 000 m³/h"
+        },
+        {
+          "label": "Obszar basenu",
+          "value": "50–250 m²"
+        }
+      ]
+    },
+    "caracal": {
+      "label": "Odzysk ciepła",
+      "desc": "Zapewnia kontrolowaną klimatyzację, aby spełnić wymagania dotyczące świeżego powietrza i poprawić istniejącą jakość powietrza w biurach, szkołach, hotelach, szpitalach i pomieszczeniach socjalnych."
+    },
+    "ctaDesc": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie w zakresie klimatyzacji.",
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "sogutmaVeIsitma": {
+    "title": "Chłodzenie i ogrzewanie",
+    "titleFirst": "Chłodzenie i",
+    "titleHighlight": "Ogrzewanie",
+    "heroDesc": "Agregaty chłodnicze, jednostki wewnętrzne/zewnętrzne, grzejniki elektryczne i wężownice wodne.",
+    "comingSoonNotice": "Produkty w tej kategorii zostaną wkrótce opublikowane szczegółowo. Informacje techniczne i oferty cenowe",
+    "comingSoonLink": "skontaktuj się z nami",
+    "products": [
+      {
+        "name": "CHILLER (Niedźwiedź polarny)",
+        "type": "Jednostka chłodząca",
+        "subModels": []
+      },
+      {
+        "name": "JEDNOSTKI ZEWNĘTRZNE",
+        "type": "Jednostka chłodząca",
+        "subModels": []
+      },
+      {
+        "name": "JEDNOSTKI WEWNĘTRZNE",
+        "type": "Jednostka chłodząca",
+        "subModels": []
+      },
+      {
+        "name": "GRZEJNIKI ELEKTRYCZNE",
+        "type": "Grzejnik elektryczny",
+        "subModels": [
+          "EH (prostokątny)",
+          "EHC (cylindryczny)"
+        ]
+      },
+      {
+        "name": "WĘŻOWNICA WODNA",
+        "type": "Cewka",
+        "subModels": [
+          "toaleta"
+        ]
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaYonetimi": {
+    "title": "Zarządzanie powietrzem",
+    "titleFirst": "Powietrze",
+    "titleHighlight": "Kierownictwo",
+    "heroDesc": "Rozwiązania przepustnic powietrza.",
+    "hound": {
+      "label": "Przepustnica powietrza",
+      "desc": "Seria klap zaprojektowana z myślą o zapewnieniu maksymalnej kontroli i bezpieczeństwa w najbardziej krytycznych punktach instalacji wentylacyjnych i przeciwpożarowych.",
+      "subModels": [
+        "MSD",
+        "MSFD-R",
+        "MSFD-B",
+        "SFD-B",
+        "SFD-R",
+        "RSFD-B",
+        "RSFD-Drain-B",
+        "FFD",
+        "MFD",
+        "RD",
+        "GS"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaDagitimi": {
+    "title": "Dystrybucja powietrza",
+    "titleFirst": "Powietrze",
+    "titleHighlight": "Dystrybucja",
+    "heroDesc": "Rozwiązania z kratkami, nawiewnikami, anemostatami i żaluzjami.",
+    "alpaca": {
+      "label": "Kratki, dyfuzory itp.",
+      "desc": "różne modele z rozwiązaniami dostosowanymi do wszystkich potrzeb w zakresie dystrybucji powietrza.",
+      "subModels": [
+        "ALPACA-GL-SD",
+        "ALPACA-GL-DD",
+        "ALPACA-GL-RA",
+        "ALPACA-GL-PRF",
+        "ALPACA-GL-OB",
+        "ALPACA-DF-SQ",
+        "ALPACA-DF-CR",
+        "ALPACA-DF-LS",
+        "ALPACA-DF-JET",
+        "ALPACA-DF-ADJ",
+        "ALPACA-LV-FX",
+        "ALPACA-LV-ADJ",
+        "ALPACA-LV-WP",
+        "ALPACA-LV-AC",
+        "ALPACA-AM-SQ",
+        "ALPACA-AM-CR",
+        "ALPACA-AM-ADJ",
+        "ALPACA-SP-FR",
+        "ALPACA-SP-DEC",
+        "ALPACA-SP-AC",
+        "ALPACA-SP-JET"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "havaFiltrasyonu": {
+    "title": "Filtracja powietrza",
+    "titleFirst": "Powietrze",
+    "titleHighlight": "Filtrowanie",
+    "heroDesc": "Rozwiązania filtracyjne do zastosowań przemysłowych i komfortowych.",
+    "scallop": {
+      "label": "Seria filtrów",
+      "desc": "różne modele filtrów z rozwiązaniami dostosowanymi do wszystkich potrzeb w zakresie filtracji powietrza.",
+      "subModels": [
+        "PRZESZEŁKA PF",
+        "PRZESZEŁKA MF",
+        "PRZESZEŁKA GF",
+        "PRZEMUSZKA ABF",
+        "PRZEMUSZKA CF",
+        "PRZESZEŁKA BF",
+        "PRZESZEŁKA HP",
+        "PRZESZEŁKA UF",
+        "PRZESZEŁKA FF"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "aksesuarlar": {
+    "title": "Akcesoria",
+    "titleFirst": "Dostęp",
+    "titleHighlight": "sory",
+    "productCount": "produkty",
+    "ctaTitle": "Szukasz odpowiedniego akcesorium do swojego projektu?",
+    "accessories": [
+      {
+        "name": "Wibroizolator sprężynowy",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Sprężynowe izolatory drgań są stosowane w systemach HVAC i instalacjach urządzeń mechanicznych w celu zmniejszenia wibracji o niskim poziomie, które mogą być przenoszone z systemu na podłogę lub otaczające środowisko."
+      },
+      {
+        "name": "Stopki montażowe AE SF",
+        "image": "/images/products/ae-sf-baglanti-ayaklari.jpg",
+        "description": "Stopki montażowe to elementy montażowe o dużej wytrzymałości, przeznaczone do bezpiecznego mocowania wentylatorów do podłogi lub powierzchni nośnej, zgodnie z wymaganiami projektu."
+      },
+      {
+        "name": "Osłona druciana AE PM",
+        "image": "/images/products/ae-pm-tel-kafes.jpg",
+        "description": "Wire Guards to kratki ochronne wykonane z drutu stalowego o wysokiej wytrzymałości, zaprojektowane w celu zapewnienia bezpieczeństwa użytkownika po stronie ssącej lub tłocznej systemów wentylatorów oraz zapobiegania przedostawaniu się ciał obcych do obszaru roboczego."
+      },
+      {
+        "name": "Stożek wlotowy AE IC",
+        "image": "/images/products/ae-ic-giris-konisi.jpg",
+        "description": "Stożki wlotowe serii AE IC zostały zaprojektowane w celu optymalizacji przepływu powietrza po stronie ssącej wentylatorów, zmniejszenia turbulencji powietrza i zwiększenia wydajności systemu."
+      },
+      {
+        "name": "Przeciwkołnierz AE CF",
+        "image": "/images/products/ae-cf-karsi-flans.jpg",
+        "description": "Przeciwkołnierze serii AE CF to odporne na wysokie temperatury elementy łączące stosowane do łączenia wentylatorów z systemem kanałów i zapewniające szczelność."
+      },
+      {
+        "name": "Elastyczny przeciwkołnierz AE FJF",
+        "image": "/images/products/ae-fjf.png",
+        "description": "Elastyczne przeciwkołnierze serii AE FJF to specjalne elementy łączące zaprojektowane w celu zapobiegania przenoszeniu drgań pomiędzy wentylatorem a systemem kanałów, zmniejszania efektu rozszerzania i zapewniania cichszego środowiska pracy."
+      },
+      {
+        "name": "Elastyczny przeciwkołnierz przegubowy klasy AE FJF F400",
+        "image": "/images/products/ae-fjf.png",
+        "description": "Elastyczne przeciwkołnierze złączne klasy F400 AE FJF zostały zaprojektowane w celu zapewnienia elastycznego, bezpiecznego i hermetycznego połączenia pomiędzy wentylatorami i systemami kanałów w zastosowaniach ognioodpornych."
+      },
+      {
+        "name": "Elastyczne złącze podwójnego przeciwkołnierza AE FJ2F",
+        "image": "/images/products/ae-fj2f.jpg",
+        "description": "Złącza elastyczne z podwójnym przeciwkołnierzem to bardzo elastyczne elementy łączące wyposażone w przeciwkołnierze na obu końcach, zaprojektowane tak, aby pochłaniać wibracje, rozszerzanie i niewspółosiowość montażową pomiędzy systemami wentylatorów i kanałów."
+      },
+      {
+        "name": "AE FJ2F F400 Elastyczne złącze z podwójnym przeciwkołnierzem",
+        "image": "/images/products/ae-fj2f.jpg",
+        "description": "Seria AE FJ2F-HR to elastyczne złącza z dwoma przeciwkołnierzami i odpornością na wysoką temperaturę, przeznaczone do stosowania w systemach wymagających odporności ogniowej."
+      },
+      {
+        "name": "Tłumik okrągły AE S-D100",
+        "image": "/images/products/ae-sd100.jpg",
+        "description": "Tłumiki okrągłe serii AE S-D100 to wysokowydajne elementy kontroli akustycznej, zaprojektowane w celu zmniejszenia poziomu hałasu i poprawy warunków komfortu w systemach wentylacyjnych."
+      },
+      {
+        "name": "Tłumik prostokątny AE RS",
+        "image": "/images/products/ae-rs.jpg",
+        "description": "Tłumiki prostokątne serii AE RS to wysokowydajne elementy izolacji akustycznej zaprojektowane w celu zmniejszenia poziomu hałasu generowanego przez przepływ powietrza i zwiększenia komfortu akustycznego w systemach kanałów."
+      },
+      {
+        "name": "Tłumik gniazdowy AE-SS",
+        "image": "/images/products/emniyet-salteri.jpg",
+        "description": "Tłumiki gniazdowe serii AE SS to akcesoria do kontroli akustycznej, dostarczane opcjonalnie do projektów wymagających redukcji hałasu, szczególnie po stronie wlotu."
+      },
+      {
+        "name": "Łopatka prowadząca AE-V",
+        "image": "/images/products/free.jpg",
+        "description": "Łopatki kierujące serii AE V to pomocnicze elementy aerodynamiczne zaprojektowane w celu optymalizacji przepływu powietrza, zmniejszenia turbulencji i zapewnienia równomiernego rozkładu przepływu w systemach wentylatorów i kanałów."
+      },
+      {
+        "name": "Zatyczka wylotowa AE-OC",
+        "image": "/images/products/free.jpg",
+        "description": "Zaślepki wylotowe serii AE OC to trwałe elementy konstrukcyjne zaprojektowane w celu ochrony przed warunkami zewnętrznymi w punktach wylotowych systemów wentylatorów i utrzymania wydajności systemu."
+      },
+      {
+        "name": "Prostokątne złącze elastyczne AE-DFC",
+        "image": "/images/products/ae-dfc.jpg",
+        "description": "Złącza elastyczne prostokątne serii AE DFC to trwałe elementy łączące zaprojektowane w celu zapewnienia izolacji drgań, zapobiegania przenoszeniu dźwięku i poprawy szczelności w systemach kanałów."
+      },
+      {
+        "name": "Rama adaptera dachowego AE-AF",
+        "image": "/images/products/free.jpg",
+        "description": "Ramy adapterów dachowych serii AE AF to elementy łączące o wysokiej wytrzymałości, zaprojektowane w celu zapewnienia bezpiecznej, stabilnej i szczelnej instalacji wentylatorów i innego sprzętu HVAC na dachach."
+      },
+      {
+        "name": "Podstawa do dachów płaskich AE FRS",
+        "image": "/images/products/ae-frs.jpg",
+        "description": "Gniazda do dachów płaskich serii AE FRS to pomocnicze elementy konstrukcyjne przeznaczone do bezpiecznego, izolowanego i stabilnego montażu wentylatorów i sprzętu HVAC w zastosowaniach na dachach płaskich."
+      },
+      {
+        "name": "Skrzynka przyłączeniowa dachowa AE-CB",
+        "image": "/images/products/free.jpg",
+        "description": "Puszki dachowe serii AE CB to pomocnicze elementy konstrukcyjne przeznaczone do bezpiecznego i stabilnego montażu systemów wentylacyjnych i połączeń kanałów."
+      },
+      {
+        "name": "Nagrzewnica elektryczna typu AE-EH",
+        "image": "/images/products/ae-eh-elektrikli-isitici.jpg",
+        "description": "Elektryczne nagrzewnice kanałowe serii AE EH to kompaktowe i wysokowydajne urządzenia grzewcze opracowane do zastosowań zorientowanych na komfort, takich jak ogrzewanie świeżego powietrza w systemach wentylacyjnych."
+      },
+      {
+        "name": "Przełącznik bezpieczeństwa",
+        "image": "/images/products/emniyet-salteri.jpg",
+        "description": "Wyłącznik bezpieczeństwa to element sterujący o wysokich standardach ochrony, przeznaczony do bezpiecznego włączania i wyłączania wentylatorów i innych urządzeń elektrycznych."
+      },
+      {
+        "name": "Chroniony wyłącznik bezpieczeństwa",
+        "image": "/images/products/korumali-emniyet-salteri.jpg",
+        "description": "Chroniony wyłącznik bezpieczeństwa to trwały element sterujący zaprojektowany w celu zapewnienia bezpiecznego włączania/wyłączania urządzeń elektrycznych, zapewniając jednocześnie ochronę przed czynnikami środowiskowymi."
+      },
+      {
+        "name": "Jednofazowy regulator prędkości",
+        "image": "/images/products/monofaze-hiz-kontrol-cihazi.jpg",
+        "description": "Jednofazowy regulator prędkości jest przyjazną dla użytkownika jednostką sterującą zaprojektowaną do ciągłej i precyzyjnej regulacji prędkości obrotowej wentylatorów z jednofazowymi silnikami asynchronicznymi sterowanymi napięciem."
+      },
+      {
+        "name": "Przetwornica częstotliwości",
+        "image": "/images/products/frekans-inventoru.jpg",
+        "description": "Przetwornica częstotliwości to jednostka napędowa nowej generacji, opracowana w celu zwiększenia efektywności energetycznej i zapewnienia optymalnej kontroli prędkości w wentylatorach z napędem silnikowym i systemach wentylacyjnych."
+      },
+      {
+        "name": "Panel sterowania ciśnieniem",
+        "image": "/images/products/basinclandirma-kontrol-panosu.png",
+        "description": "Panel Sterowania Utrzymywaniem Ciśnienia to zaawansowana jednostka sterująca z przetwornicą częstotliwości, zaprojektowana w celu zapewnienia automatycznej i zoptymalizowanej pracy wentylatorów w układach ciśnieniowych."
+      },
+      {
+        "name": "Czujnik różnicy ciśnień",
+        "image": "/images/products/diferansiyel-basinc-sensoru.jpg",
+        "description": "Czujnik różnicy ciśnień to precyzyjny element regulacyjny przeznaczony do pomiaru i kontroli różnic ciśnień powietrza w systemach wentylacyjnych i filtracyjnych."
+      },
+      {
+        "name": "Czujnik różnicy ciśnień PI (wyjście 0-10 V)",
+        "image": "/images/products/diferansiyel-basinc-sensoru-pi10v.jpg",
+        "description": "Czujnik różnicy ciśnień + sterowanie PI to zaawansowany system czujników opracowany w celu precyzyjnego monitorowania i automatycznej regulacji ciśnienia powietrza lub przepływu powietrza w systemach wentylacyjnych."
+      },
+      {
+        "name": "Czujnik dymu typu kanałowego",
+        "image": "/images/products/kanal-tipi-duman-sensoru.jpg",
+        "description": "Kanałowy czujnik dymu jest urządzeniem detekcyjnym o wysokiej czułości, przeznaczonym do wczesnego wykrywania dymu i produktów spalania w powietrzu w systemach wentylacyjnych i klimatyzacyjnych."
+      },
+      {
+        "name": "Filtr panelowy G4",
+        "image": "/images/products/g4-panel-filtre.jpg",
+        "description": "Filtry panelowe G4 to wysokowydajne filtry wstępne przeznaczone do wychwytywania grubych cząstek, kurzu i zanieczyszczeń z powietrza w systemach wentylacyjnych i klimatyzacyjnych."
+      },
+      {
+        "name": "Filtr panelowy G2-G3",
+        "image": "/images/products/g2-g3-panel-filtre.jpg",
+        "description": "Filtry panelowe G2-G3 to niezawodne rozwiązania filtrów wstępnych przeznaczone do wychwytywania średnich i dużych cząstek w systemach wentylacyjnych i klimatyzacyjnych."
+      },
+      {
+        "name": "Metalowy filtr przeciwtłuszczowy G2",
+        "image": "/images/products/g2-metal-yag-tutucu-filtre.jpg",
+        "description": "Metalowe filtry przeciwtłuszczowe G2 to elementy filtracyjne o wysokiej trwałości, zaprojektowane specjalnie do wychwytywania oparów tłuszczu i dużych cząstek w systemach wentylacyjnych i wyciągowych w kuchni."
+      },
+      {
+        "name": "Metalowy filtr przeciwtłuszczowy G2-G3",
+        "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.jpg",
+        "description": "Metalowe filtry przeciwtłuszczowe G2-G3 to trwałe rozwiązania filtracyjne przeznaczone do skutecznego wychwytywania oparów tłuszczu i dużych cząstek w systemach wentylacyjnych i wyciągowych w kuchni."
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "otomasyonMalzemeleri": {
+    "title": "Sprzęt automatyki",
+    "titleFirst": "Automatyzacja",
+    "titleHighlight": "Sprzęt",
+    "products": [
+      {
+        "name": "PANEL",
+        "subModels": []
+      },
+      {
+        "name": "PLC",
+        "subModels": []
+      },
+      {
+        "name": "SENSOR",
+        "subModels": [
+          "FCP-DSC",
+          "FCP-DCS",
+          "TECASE-ST110"
+        ]
+      },
+      {
+        "name": "TABLICY STEROWANIA - PRZEŁĄCZNIKI",
+        "subModels": [
+          "TP01-TSD",
+          "TP01-CC"
+        ]
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Izolacja wibracyjna i akustyczna",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ]
+  },
+  "titresimVeSesIzolasyon": {
+    "title": "Izolacja wibracyjna i akustyczna",
+    "titleFirst": "Wibracje i dźwięk",
+    "titleHighlight": "Izolacja",
+    "heroDesc": "Tłumiki, podkładki gumowe i wibroizolatory.",
+    "roo": {
+      "label": "Tłumiki, podkładki gumowe, wibroizolatory",
+      "desc": "różne modele z rozwiązaniami dostosowanymi do potrzeb w zakresie izolacji wibracyjnej i akustycznej.",
+      "subModels": [
+        "ROO T1-ISO10N-NIP",
+        "ROO T1-ISO15N-100kg-NIP",
+        "ROO T2-ISO20N-FIP",
+        "ROO T2-ISO30N-150kg-FIP",
+        "ROO T3-ISO5Hz-200kg-OSI",
+        "ROO T3-ISO10Hz-300kg-OSI",
+        "ROO T4-ISOComb-100kg-5Hz-HSI",
+        "ROO T4-ISO100kg-10Hz-HSI",
+        "ROO T4-ISO500kg-10Hz-HSI"
+      ]
+    },
+    "otherCategories": [
+      {
+        "label": "Ruch Powietrzny",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Klimatyzacja",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Chłodzenie i ogrzewanie",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Zarządzanie powietrzem",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Dystrybucja powietrza",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Filtracja powietrza",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Akcesoria",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Sprzęt automatyki",
+        "slug": "otomasyon-malzemeleri"
+      }
+    ]
+  },
+  "banyoFanlari": {
+    "title": "SEAHORSE",
+    "subtitle": "Wentylatory łazienkowe",
+    "intro": "Wentylatory łazienkowe, stosowane do szybkiego usuwania nieprzyjemnych zapachów i pary w małych i średnich pomieszczeniach, takich jak łazienki, toalety i spiżarnie, odgrywają ważną rolę zarówno pod względem higieny, jak i komfortu.",
+    "models": [
+      {
+        "name": "Konik morski AP",
+        "type": "Osiowy wentylator łazienkowy",
+        "image": "/images/products/banyo-fan-1.jpg",
+        "description": "Dekoracyjny wentylator łazienkowy AP łączy w sobie estetykę i funkcjonalność w pomieszczeniach mieszkalnych z eleganckim designem zharmonizowanym z nowoczesną architekturą i wysokowydajną konstrukcją."
+      },
+      {
+        "name": "Konik morski RP V1",
+        "type": "Łazienkowy wentylator wyciągowy montowany na suficie",
+        "image": "/images/products/banyo-fan-2.jpg",
+        "description": "Regulowany wentylator wyciągowy RP V1 do montażu sufitowego to idealne rozwiązanie wentylacyjne przeznaczone do nowoczesnych pomieszczeń mieszkalnych dzięki stylowemu wyglądowi i zaawansowanemu mechanizmowi montażu."
+      },
+      {
+        "name": "Konik morski RP V2",
+        "type": "Montowany na suficie łazienkowy wentylator wyciągowy V2",
+        "image": "/images/products/banyo-fan-3.jpg",
+        "description": "Wyróżniający się nowoczesnym designem i dużą wydajnością, szeroki wentylator wyciągowy RP V2 na przednim panelu jest przeznaczony do pomieszczeń mieszkalnych, w których priorytetem jest zarówno estetyka, jak i funkcjonalność."
+      }
+    ]
+  },
+  "catiFanlari": {
+    "title": "HERON",
+    "subtitle": "Wentylatory dachowe",
+    "intro": "",
+    "models": [
+      {
+        "name": "Czapla RH",
+        "type": "Odśrodkowy wentylator dachowy z poziomym wyrzutem",
+        "image": "/images/products/heron-rh.jpg",
+        "description": "Specjalnie zaprojektowany do zastosowań związanych z wywiewem powietrza wymagających montażu na dachu."
+      },
+      {
+        "name": "Czapla RHS",
+        "type": "Wentylator dachowy odśrodkowy z poziomym wydmuchem i silnikiem zewnętrznym",
+        "image": "/images/products/heron-rhs.jpg",
+        "description": "Do zastosowań wymagających wysokiej temperatury i odprowadzania zanieczyszczonego powietrza."
+      },
+      {
+        "name": "Czapla samochód kempingowy",
+        "type": "Odśrodkowy wentylator dachowy z pionowym wydmuchem",
+        "image": "/images/products/heron-rv.jpg",
+        "description": "Wysoka wydajność w zastosowaniach wymagających pionowego wydmuchu powietrza."
+      },
+      {
+        "name": "Czapla RVS",
+        "type": "Pionowy wentylator odśrodkowy z silnikiem zewnętrznym",
+        "image": "/images/products/heron-rvs.jpg",
+        "description": "Wylot powietrza o wysokiej temperaturze i dużej ilości pary."
+      },
+      {
+        "name": "Czapla AH",
+        "type": "Osiowy wentylator dachowy z poziomym wyrzutem",
+        "image": "/images/products/heron-ah.jpg",
+        "description": "Dopływ lub wywiew świeżego powietrza w pomieszczeniach o dużej kubaturze."
+      },
+      {
+        "name": "Czapla AVH",
+        "type": "Osiowy wentylator dachowy z pokrywą",
+        "image": "/images/products/free.jpg",
+        "description": "Osiowy wentylator dachowy z pokrywą."
+      }
+    ]
+  },
+  "damperler": {
+    "title": "HOUND",
+    "subtitle": "Amortyzatory",
+    "intro": "Przepustnice serii Novves HOUND zostały zaprojektowane tak, aby zapewnić maksymalną kontrolę i bezpieczeństwo w najbardziej krytycznych punktach systemów wentylacji i bezpieczeństwa pożarowego.",
+    "models": [
+      {
+        "name": "Pies SD M24",
+        "type": "Wałowa klapa dymowa z serwosilnikiem 24V",
+        "image": "/images/products/hound-sd-m24.jpg",
+        "description": "Opracowany do bezpiecznego odprowadzania powietrza w systemach przeciwpożarowych i przeciwdymowych, oferujący klasyfikację szczelności klasy C zgodnie z normą EN 17051 i kompatybilność z serwomotorami."
+      },
+      {
+        "name": "Pies AL",
+        "type": "Żaluzja powietrzna",
+        "image": "/images/products/hound-al.png",
+        "description": "Estetycznie zaprojektowany system żaluzji, który kieruje przepływ powietrza w miejsca wlotu i wylotu powietrza oraz zapewnia ochronę przed czynnikami zewnętrznymi."
+      },
+      {
+        "name": "Pies CRD",
+        "type": "Amortyzator nadmiarowy",
+        "image": "/images/products/hound-crd.jpg",
+        "description": "Automatycznie otwierająca się przepustnica nadmiarowa ciśnienia, służąca do kontroli nadciśnienia i ochrony elementów systemu."
+      }
+    ]
+  },
+  "dumanIsiTahliyeFanlari": {
+    "title": "DRAGONFLY",
+    "subtitle": "Wentylatory odprowadzające dym i ciepło",
+    "intro": "Seria wentylatorów oddymiających i odprowadzających ciepło, posiadająca certyfikat odporności ogniowej klasy F300, zaprojektowana tak, aby wytrzymać temperaturę 300°C przez 2 godziny.",
+    "models": [
+      {
+        "name": "Ważka T",
+        "type": "Osiowy wentylator odprowadzający dym i ciepło w obudowie",
+        "image": "/images/products/dragonfly-t.jpg",
+        "description": "Wentylator osiowy w obudowie odporny na wysokie temperatury, przeznaczony do skutecznego usuwania dymu i gorącego powietrza podczas pożarów. Certyfikat EN 12101-3."
+      },
+      {
+        "name": "Ważka R",
+        "type": "Osiowy wentylator dachowy do odprowadzania dymu i ciepła",
+        "image": "/images/products/dragonfly-r.jpg",
+        "description": "Wentylator dachowy odporny na wysokie temperatury, zapewniający szybkie, bezpieczne i skuteczne odsysanie dymu i gorącego powietrza podczas pożaru. Certyfikat EN 12101-3."
+      },
+      {
+        "name": "Ważka C",
+        "type": "Osiowy wentylator oddymiający i odprowadzający ciepło",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Odporna na wysokie temperatury i cicha jednostka szafkowa, opracowana w celu bezpiecznego odprowadzania dymu i powietrza o wysokiej temperaturze podczas pożaru. Certyfikat EN 12101-3."
+      },
+      {
+        "name": "Ważka JAU",
+        "type": "Jednokierunkowy osiowy wentylator strumieniowy",
+        "image": "/images/products/dragonfly-jau.jpg",
+        "description": "Przeznaczone do oddymiania i cyrkulacji powietrza w parkingach, tunelach i pomieszczeniach zamkniętych, charakteryzują się dużą odpornością na temperaturę. Certyfikat EN 12101-3."
+      },
+      {
+        "name": "SŁOik ważki",
+        "type": "Dwukierunkowy osiowy wentylator strumieniowy",
+        "image": "/images/products/dragonfly-jar.jpg",
+        "description": "Przeznaczone do oddymiania, wentylacji i cyrkulacji powietrza na zamkniętych parkingach oraz w pomieszczeniach zamkniętych o dużej kubaturze, dwukierunkowe. Niski poziom hałasu i wysoka wydajność."
+      },
+      {
+        "name": "Ważka JR",
+        "type": "Wentylator promieniowy/odśrodkowy",
+        "image": "/images/products/dragonfly-jr.jpg",
+        "description": "Zaprojektowane specjalnie do oddymiania i wentylacji awaryjnej w wymagających przestrzeniach wewnętrznych, takich jak zamknięte parkingi, tunele i strefy pożarowe. Certyfikat EN 12101-3."
+      }
+    ]
+  },
+  "duvarTipiFanlar": {
+    "title": "OWL",
+    "subtitle": "Wentylatory ścienne",
+    "intro": "",
+    "models": [
+      {
+        "name": "Sowa RER",
+        "type": "Prostokątny wentylator montowany na ścianie",
+        "image": "/images/products/owl-rer.jpg",
+        "description": "Wentylator osiowy z metalowymi łopatkami, specjalnie zaprojektowany do montażu na ścianie, charakteryzujący się trwałą konstrukcją i regulowaną prędkością."
+      },
+      {
+        "name": "Sowa CER",
+        "type": "Okrągły wentylator montowany na ścianie",
+        "image": "/images/products/owl-cer.jpg",
+        "description": "Kompaktowy i wysokowydajny model wentylatora osiowego z metalowymi łopatkami, specjalnie zaprojektowany do okrągłego montażu na ścianie."
+      },
+      {
+        "name": "Sowa RWA",
+        "type": "Prostokątny osiowy wentylator montowany na ścianie",
+        "image": "/images/products/owl-rwa.jpg",
+        "description": "Rozwiązanie z wentylatorem osiowym, charakteryzujące się wysoką wydajnością łopatek w kształcie płata, odpowiednie do prostokątnego montażu na ścianie."
+      },
+      {
+        "name": "Sowa CWA",
+        "type": "Okrągły wentylator osiowy do montażu na ścianie",
+        "image": "/images/products/owl-cwa.jpg",
+        "description": "Kompaktowe rozwiązanie z wentylatorem osiowym, nadające się do okrągłego montażu na ścianie, charakteryzujące się lekką, ale trwałą konstrukcją łopatek w kształcie płata."
+      }
+    ]
+  },
+  "ecFanlar": {
+    "title": "HUMMINGBIRD",
+    "subtitle": "Fani EC",
+    "intro": "Seria Hummingbird oferuje rozwiązania wentylatorów dachowych i kanałowych, które łączą wysoką wydajność z oszczędnością energii dzięki technologii silników EC.",
+    "models": [
+      {
+        "name": "Koliber RRV",
+        "type": "Wentylator dachowy z pionowym wyrzutem EC",
+        "image": "/images/products/hummingbird-rh.jpg",
+        "description": "Rozwiązanie wentylatora dachowego z pionowym wyrzutem powietrza opracowane z myślą o nowoczesnych budynkach, współpracujące z wysokowydajnymi silnikami EC. Dzięki inteligentnym opcjom sterowania, niskiemu zużyciu energii i cichej pracy wyróżnia się w zastosowaniach zapewniających komfort i wentylację przemysłową."
+      },
+      {
+        "name": "Koliber DRB",
+        "type": "Prostokątny wentylator kanałowy EC",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Wysokowydajny prostokątny wentylator kanałowy z silnikiem EC, przeznaczony do stosowania w nowoczesnych systemach wentylacyjnych. Dzięki zwartej budowie, cichej pracy i możliwości integracji z systemami automatyki jest niezawodnie preferowany w zastosowaniach komfortowych i przemysłowych."
+      }
+    ]
+  },
+  "endustriyelFanlar": {
+    "title": "NAUTILUS",
+    "subtitle": "Przemysłowe wentylatory odśrodkowe",
+    "intro": "Łącząc wysoką wydajność z oszczędnością energii, wentylatory przemysłowe oferują wydajne i wydajne rozwiązanie wentylacyjne z łopatkami wygiętymi do tyłu i konfiguracją silnika z napędem bezpośrednim.",
+    "models": [
+      {
+        "name": "Nautilusa LPF",
+        "type": "Przemysłowy wentylator odśrodkowy",
+        "image": "/images/products/nautilus-lfp.jpg",
+        "description": "Wentylator przemysłowy łączący wysoką wydajność z oszczędnością energii."
+      },
+      {
+        "name": "Cisza Nautilusa",
+        "type": "Dwuścienny wentylator odśrodkowy",
+        "image": "/images/products/nautilus-cif-cidarli.jpg",
+        "description": "Seria NAUTILUS Silence to wentylatory odśrodkowe, które działają z dużą wydajnością w systemach wymagających przesyłu powietrza pod niskim ciśnieniem, charakteryzując się zwartą konstrukcją i konstrukcją z napędem bezpośrednim."
+      }
+    ]
+  },
+  "exproofFanlar": {
+    "title": "BEAR",
+    "subtitle": "Wentylatory przeciwwybuchowe",
+    "intro": "Wentylatory z serii Bear to rozwiązania wentylatorów Ex-Proof przeznaczone do stosowania w środowiskach wybuchowych i gazów łatwopalnych.",
+    "models": [
+      {
+        "name": "Niedźwiedź EX-REB",
+        "type": "Prostokątny wentylator kanałowy przeciwwybuchowy",
+        "image": "/images/products/bear-reb.jpg",
+        "description": "Ex-Proof, przeznaczony do bezpiecznej wentylacji w środowiskach zagrożonych wybuchem gazów. Wysokie standardy bezpieczeństwa, praca sterowana częstotliwością, kompatybilność ze strefą ATEX."
+      },
+      {
+        "name": "Niedźwiedź EX-T",
+        "type": "Osiowy wentylator przeciwwybuchowy w obudowie",
+        "image": "/images/products/bear-t.jpg",
+        "description": "Bezpieczny transfer powietrza w środowiskach zagrożonych wybuchem, wyważona konstrukcja wirnika. Do zastosowań przemysłowych, w których występuje ryzyko pożaru i iskier."
+      },
+      {
+        "name": "Niedźwiedź EX-RRH",
+        "type": "Przeciwwybuchowy wentylator odśrodkowy z poziomym wydmuchem",
+        "image": "/images/products/bear-rrh.jpg",
+        "description": "Specjalnie zaprojektowany do zastosowań wymagających poziomego wyciągu z dachu. Strefa 1 i Strefa 2 ATEX."
+      },
+      {
+        "name": "Niedźwiedź EX-RRV",
+        "type": "Przeciwwybuchowy wentylator odśrodkowy typu dachowego z pionowym wydmuchem",
+        "image": "/images/products/bear-rrv.jpg",
+        "description": "Wysys powietrza pod wysokim ciśnieniem, długotrwały opór zewnętrzny."
+      },
+      {
+        "name": "Niedźwiedź EX-BP",
+        "type": "Przeciwwybuchowy wentylator odśrodkowy Plenum",
+        "image": "/images/products/bear-bp.jpg",
+        "description": "Rozwiązanie wentylatorowe o modułowej strukturze komory, zapewniające mocną i cichą pracę."
+      },
+      {
+        "name": "Niedźwiedź EX-C",
+        "type": "Przeciwwybuchowy wentylator osiowy Plenum",
+        "image": "/images/products/bear-c.jpg",
+        "description": "Cicha praca, łatwa konserwacja, zgodność z ATEX."
+      },
+      {
+        "name": "Niedźwiedź LPF",
+        "type": "Wentylator odśrodkowy przeciwwybuchowy",
+        "image": "/images/products/bear-lpf.jpg",
+        "description": "Bezpieczny wyciąg powietrza w środowiskach zawierających wybuchowe gazy lub opary."
+      },
+      {
+        "name": "Niedźwiedź R",
+        "type": "Osiowy wentylator dachowy",
+        "image": "/images/products/bear-r.jpg",
+        "description": "Zaprojektowane, aby zaspokoić potrzeby naturalnej wentylacji i wyciągu w konstrukcjach o dużej kubaturze."
+      },
+      {
+        "name": "Niedźwiedź W",
+        "type": "Przeciwwybuchowy wentylator osiowy (typ ścienny)",
+        "image": "/images/products/bear-w.jpg",
+        "description": "Ognioszczelne, zgodne z ATEX, o wysokiej wydajności."
+      }
+    ]
+  },
+  "havuzNemAlmaSantrali": {
+    "title": "DOLPHIN",
+    "subtitle": "Jednostka osuszania basenu",
+    "intro": "Opracowane przez NOVVES, osuszacze basenowe serii Dolphin zapobiegają uszkodzeniom konstrukcji budynków w basenach krytych przez wilgoć, jednocześnie maksymalizując komfort użytkownika. Wyróżniająca się wysoką efektywnością energetyczną, długotrwałą konstrukcją i cichą pracą, seria Dolphin to profesjonalny wybór w zakresie rozwiązań kontroli klimatu w basenie.",
+    "tableHeaders": {
+      "model": "Model",
+      "airFlow": "Przepływ powietrza (m³/h)",
+      "poolArea": "Powierzchnia basenu (m²)",
+      "cooling": "Chłodzenie (kW)",
+      "condenser": "Skraplacz (kW)",
+      "waterHeater": "Podgrzewacz wody (kW)"
+    },
+    "models": [
+      {
+        "model": "DELFIN 300",
+        "airFlow": "3,000",
+        "area": "50",
+        "cooling": "21.1",
+        "condenser": "26.4",
+        "water": "26.15"
+      },
+      {
+        "model": "DELFIN 400",
+        "airFlow": "4,000",
+        "area": "75",
+        "cooling": "28.7",
+        "condenser": "35.67",
+        "water": "34.12"
+      },
+      {
+        "model": "DELFIN 450",
+        "airFlow": "4,500",
+        "area": "100",
+        "cooling": "33.3",
+        "condenser": "40.96",
+        "water": "36.24"
+      },
+      {
+        "model": "DELFIN 600",
+        "airFlow": "6,000",
+        "area": "150",
+        "cooling": "42.2",
+        "condenser": "52.88",
+        "water": "50.58"
+      },
+      {
+        "model": "DELFIN 750",
+        "airFlow": "7,500",
+        "area": "200",
+        "cooling": "52.6",
+        "condenser": "65.9",
+        "water": "62.97"
+      },
+      {
+        "model": "DELFIN 900",
+        "airFlow": "9,000",
+        "area": "250",
+        "cooling": "36.8",
+        "condenser": "80.68",
+        "water": "77.1"
+      }
+    ]
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Fani Plenum",
+    "intro": "Wentylatory plenum serii Turtle mogą być stosowane zarówno do nawiewu świeżego powietrza, jak i wyciągu powietrza wywiewanego. Dzięki zwartej budowie umożliwiają łatwy bezpośredni montaż na podłodze, a wypełnienie wełną mineralną pomiędzy ściankami wewnętrznymi zapewnia skuteczną izolację akustyczną.",
+    "models": [
+      {
+        "name": "Żółw B",
+        "type": "Wentylator rozprężny z napędem pasowym",
+        "image": "/images/products/turtle-b.jpg",
+        "description": "Model wentylatora szafkowego z napędem pasowym, oferujący niezawodne i ciche rozwiązania w systemach wymagających przenoszenia powietrza o dużej objętości."
+      },
+      {
+        "name": "Żółw BP",
+        "type": "Wentylator wtykowy typu Plenum z wygiętymi do tyłu",
+        "image": "/images/products/turtle-bp.jpg",
+        "description": "Wysokowydajny model wentylatora szafkowego oferujący ciche, wydajne i kompaktowe rozwiązania powietrzne."
+      },
+      {
+        "name": "Żółw BPA",
+        "type": "Wentylator odśrodkowy typu Plenum, wygięty do tyłu",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "Rozwiązanie wentylacji przemysłowej zapewniające wysoką wydajność i cichą pracę dzięki konstrukcji typu plenum i technologii wentylatorów odśrodkowych wygiętych do tyłu."
+      },
+      {
+        "name": "Żółw F",
+        "type": "Wentylator z łopatkami wygiętymi do przodu w komorze Plenum",
+        "image": "/images/products/turtle-f.jpg",
+        "description": "Wtykowy model wentylatora szafkowego z podwójnym wlotem, wyróżniający się cichą i wydajną pracą w systemach wymagających przesyłu powietrza pod niskim ciśnieniem."
+      },
+      {
+        "name": "Żółw A",
+        "type": "Wentylator osiowy",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "Kompaktowe rozwiązania w zakresie wentylatorów osiowych przeznaczone do systemów o dużych wymaganiach dotyczących transferu powietrza."
+      }
+    ]
+  },
+  "isiGeriKazanimCihazlari": {
+    "title": "CARACAL",
+    "subtitle": "Jednostki odzysku ciepła",
+    "intro": "Seria Caracal zapewnia kontrolowaną klimatyzację, aby spełnić wymagania dotyczące świeżego powietrza i poprawić istniejącą jakość powietrza w biurach, szkołach, hotelach, szpitalach, centrach biznesowych, centrach handlowych, salach koncertowych i kawiarniach.",
+    "caracalD": {
+      "title": "Karakal D",
+      "type": "Jednostka odzysku ciepła",
+      "description": "Seria Caracal D (jednostka odzysku ciepła) to kompaktowe i wydajne rozwiązanie opracowane w celu odświeżania powietrza w pomieszczeniach przy jednoczesnym zwiększeniu efektywności energetycznej. Dzięki trwałej konstrukcji i przyjaznemu dla użytkownika panelowi sterowania zapewnia wygodną i trwałą wentylację."
+    }
+  },
+  "kanalFanlari": {
+    "title": "KOI",
+    "subtitle": "Wentylatory kanałowe",
+    "intro": "",
+    "models": [
+      {
+        "name": "Koi CB",
+        "type": "Okrągły wentylator kanałowy",
+        "image": "/images/products/koi-cb.jpg",
+        "description": "Okrągłe wentylatory kanałowe Novves KOI-CB oferują kompaktowe i wydajne rozwiązania opracowane z myślą o potrzebach wentylacji kanałowej."
+      },
+      {
+        "name": "Koi RB",
+        "type": "Prostokątny wentylator kanałowy",
+        "image": "/images/products/koi-rb.jpg",
+        "description": "Prostokątne wentylatory kanałowe Novves KOI-RB serii zostały opracowane specjalnie do wysokowydajnego przesyłu powietrza w budynkach przemysłowych i komercyjnych."
+      },
+      {
+        "name": "Koi REB",
+        "type": "Wentylator kanałowy prostokątny z silnikiem zewnętrznym",
+        "image": "/images/products/koi-reb.jpg",
+        "description": "Zewnętrzne wentylatory kanałowe serii KOI-REB zostały specjalnie zaprojektowane do zastosowań wentylacyjnych wymagających odporności na wysoką temperaturę."
+      },
+      {
+        "name": "Koi X",
+        "type": "Wentylator kanałowy o mieszanym przepływie",
+        "image": "/images/products/koi-x.jpg",
+        "description": "Wentylator kanałowy o mieszanym przepływie serii KOI-X został zaprojektowany z myślą o zapewnieniu maksymalnej wydajności, szczególnie w obszarach komfortu, dzięki zwartej konstrukcji, cichej pracy i opcji silnika o dwóch prędkościach."
+      }
+    ]
+  },
+  "klimaSantralleri": {
+    "title": "TIGER",
+    "subtitle": "Centrale wentylacyjne",
+    "intro": "Modułowe, zorientowane na efektywność rozwiązanie centrali wentylacyjnej opracowane z myślą o potrzebach wysokowydajnej wentylacji i klimatyzacji. Wyróżnia się szerokim zakresem przepływu powietrza, wysoce energooszczędnymi komponentami i cichą pracą.",
+    "specs": [
+      {
+        "label": "Przepływ powietrza",
+        "value": "500 - 125 000 m³/h"
+      },
+      {
+        "label": "Ciśnienie",
+        "value": "10 - 3000 Pa"
+      },
+      {
+        "label": "Podwozie",
+        "value": "Anodowane aluminium"
+      },
+      {
+        "label": "Płyta",
+        "value": "Dwuścienna płyta warstwowa"
+      },
+      {
+        "label": "Typ wentylatora",
+        "value": "Wentylator odśrodkowy / wentylator z wtyczką EC"
+      },
+      {
+        "label": "Odzysk ciepła",
+        "value": "Talerz obrotowy, wodno-glikolowy"
+      }
+    ]
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Wentylatory osiowe w obudowie",
+    "intro": "Wentylatory osiowe z obudową serii Marlin służą do nawiewu świeżego powietrza, wyciągu lub jako wentylatory kanałowe, a także służą jako wentylatory ciśnieniowe, zapobiegając przedostawaniu się dymu do dróg ewakuacyjnych, takich jak klatki schodowe i szyby wind, podczas pożaru.",
+    "models": [
+      {
+        "name": "Marlin",
+        "type": "Wentylator osiowy w obudowie",
+        "image": "/images/products/marlin.png",
+        "description": "Obudowa wentylatora osiowego Novves MARLIN to rozwiązanie, które łączy w sobie wysoką wydajność, elastyczność instalacji i efektywność energetyczną w systemach wymagających dużego przepływu powietrza."
+      },
+      {
+        "name": "Marlina B",
+        "type": "Rozwidlony wentylator osiowy",
+        "image": "/images/products/marlin-b.jpg",
+        "description": "Rozwidlony wentylator osiowy."
+      }
+    ]
+  },
+  "mutfakFanlari": {
+    "title": "BUTTERFLY",
+    "subtitle": "Wentylatory wyciągowe kuchenne",
+    "intro": "",
+    "models": [
+      {
+        "name": "Motyl B",
+        "type": "Kuchenny wentylator wyciągowy z metalowym filtrem",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "Wentylator kuchenny Butterfly B Series to trwałe i wysokowydajne rozwiązanie wentylacyjne opracowane do usuwania ciężkiej pary, tłuszczu i zapachów w kuchniach przemysłowych i komercyjnych. Dzięki zaawansowanemu systemowi filtracji, cichej pracy i trwałej konstrukcji idealnie nadaje się do profesjonalnych kuchni."
+      }
+    ]
+  },
+  "siginakFanlari": {
+    "title": "FOX",
+    "subtitle": "Fani schroniska",
+    "intro": "Seria Fox została opracowana dla schronów budowanych w celu zapewnienia ochrony przed promieniowaniem, zagrożeniami nuklearnymi, biologicznymi i chemicznymi oraz klęskami żywiołowymi.",
+    "models": [
+      {
+        "name": "Lis D",
+        "type": "Wentylator osłonowy typu kanałowego",
+        "image": "/images/products/fox-d.jpg",
+        "description": "Wentylator osłonowy FOX serii D to trwałe i niezawodne rozwiązanie o dużej wydajności filtracji, opracowane specjalnie na potrzeby wentylacji schronów i obszarów bezpiecznych."
+      },
+      {
+        "name": "Lis C",
+        "type": "Wentylator osłonowy typu szafkowego",
+        "image": "/images/products/fox-c.jpg",
+        "description": "Wentylator osłonowy FOX serii C to profesjonalne rozwiązanie wentylacyjne opracowane specjalnie dla obszarów wymagających wysokiego bezpieczeństwa, przystosowane do cichej pracy i wyposażone w wydajny system filtracji."
+      }
+    ]
+  }
+}
