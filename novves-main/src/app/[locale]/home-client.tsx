@@ -465,10 +465,10 @@ export default function HomeClient({
 
     const card = container.querySelector("[data-product-card]") as HTMLElement | null;
     if (!card) return;
-
-    const cardWidth = card.getBoundingClientRect().width;
-    const gap = 12;
-    const scrollAmount = (cardWidth + gap) * (direction === "next" ? 1 : -1);
+    const nextCard = card.nextElementSibling as HTMLElement | null;
+    const step = nextCard ? nextCard.offsetLeft - card.offsetLeft : card.getBoundingClientRect().width + 12;
+    if (step <= 0) return;
+    const scrollAmount = step * (direction === "next" ? 1 : -1);
     container.scrollBy({ left: scrollAmount, behavior: "smooth" });
 
     if (productLabelTimeoutRef.current) clearTimeout(productLabelTimeoutRef.current);
@@ -544,11 +544,11 @@ export default function HomeClient({
     if (!container) return;
 
     const measureSegmentWidth = () => {
-      const card = container.querySelector("[data-product-card]") as HTMLElement | null;
-      if (!card) return 0;
-      const cardWidth = card.getBoundingClientRect().width;
-      const gap = 12;
-      return (cardWidth + gap) * productSlideCount;
+      const cards = Array.from(container.querySelectorAll("[data-product-card]")) as HTMLElement[];
+      if (cards.length < 2 || productSlideCount <= 0) return 0;
+      const step = cards[1].offsetLeft - cards[0].offsetLeft;
+      if (step <= 0) return 0;
+      return step * productSlideCount;
     };
 
     let raf: number | null = null;
@@ -565,11 +565,11 @@ export default function HomeClient({
       scrollTimeout = setTimeout(() => {
         const segmentWidth = measureSegmentWidth();
         if (segmentWidth <= 0) return;
-        const scrollLeft = container.scrollLeft;
-        if (scrollLeft < segmentWidth * 0.5) {
-          container.scrollLeft = scrollLeft + segmentWidth;
-        } else if (scrollLeft > segmentWidth * 2.5) {
-          container.scrollLeft = scrollLeft - segmentWidth;
+        const center = container.scrollLeft + container.clientWidth / 2;
+        if (center < segmentWidth) {
+          container.scrollLeft += segmentWidth;
+        } else if (center > segmentWidth * 2) {
+          container.scrollLeft -= segmentWidth;
         }
       }, 180);
     };
@@ -694,13 +694,13 @@ export default function HomeClient({
                         if (canUseFineHover()) setHoveredSolutionIndex(index);
                       }}
                       onMouseLeave={() => setHoveredSolutionIndex(null)}
-                      className="group relative flex min-h-[96px] items-center justify-center rounded-[1.9rem] bg-[#f26a2e] px-4 py-4 text-center text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#ea621f]"
+                      className="group relative flex min-h-[96px] items-center justify-start rounded-[1.9rem] bg-[#f26a2e] py-4 pl-[18px] pr-[78px] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#ea621f]"
                     >
                       <span className="pointer-events-none absolute left-[64px] top-0 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6]" />
                       <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#f26a2e]">
                         <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
                       </span>
-                      <span className="relative z-[1] mr-12 line-clamp-2 text-left text-[12px] font-semibold leading-[1.25] sm:mr-14">{title}</span>
+                      <span className="relative z-[1] block w-full line-clamp-2 text-left text-[12px] font-semibold leading-[1.25]">{title}</span>
                       {item.image ? (
                         <img
                           src={item.image}
@@ -788,13 +788,13 @@ export default function HomeClient({
                       if (canUseFineHover()) setHoveredProductIndex(index);
                     }}
                     onMouseLeave={() => setHoveredProductIndex(null)}
-                    className="group relative flex min-h-[96px] items-center justify-center rounded-[1.9rem] bg-[#1d2f4d] px-4 py-4 text-center text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#13233d]"
+                    className="group relative flex min-h-[96px] items-center justify-start rounded-[1.9rem] bg-[#1d2f4d] py-4 pl-[18px] pr-[78px] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#13233d]"
                   >
                     <span className="pointer-events-none absolute left-[64px] top-0 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6]" />
                     <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#1d2f4d]">
                       <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
                     </span>
-                    <span className="relative z-[1] mr-12 line-clamp-2 text-left text-[12px] font-semibold leading-[1.25] sm:mr-14">{cat.label}</span>
+                    <span className="relative z-[1] block w-full line-clamp-2 text-left text-[12px] font-semibold leading-[1.25]">{cat.label}</span>
                     {meta?.image ? (
                       <img
                         src={meta.image}
