@@ -99,7 +99,7 @@ export default async function BizKimiz({ params }: { params: Promise<{ locale: s
             </div>
             <div className="relative h-full min-h-[320px]">
               <div className="absolute -top-3 -right-3 h-full w-full rounded-2xl border border-primary/25" />
-              <Image src="/images/biz-kimiz-sag.png" alt={t.teamAlt} fill className="relative rounded-2xl border border-ink/10 object-cover shadow-[0_16px_34px_-24px_rgba(15,20,30,0.38)]" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src="/images/biz-kimiz-sag.png?v=4" alt={t.teamAlt} fill className="relative rounded-2xl border border-ink/10 object-cover shadow-[0_16px_34px_-24px_rgba(15,20,30,0.38)]" sizes="(max-width: 1024px) 100vw, 50vw" />
               <div className="absolute -bottom-5 -left-5 rounded-2xl bg-dark px-6 py-4 shadow-xl ring-1 ring-white/10">
                 <p className="text-2xl font-bold text-primary">{t.foundedYear}</p>
                 <p className="mt-0.5 text-xs font-medium uppercase tracking-wider text-white/50">{t.foundedLabel}</p>

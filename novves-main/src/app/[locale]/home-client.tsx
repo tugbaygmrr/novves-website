@@ -231,10 +231,9 @@ const pillarImages = [
 ];
 
 /** Pillars hero row — public/images/home. `v` değiştir: dosya aynı adda kalınca `/_next/image` eski PNG’yi gösterebiliyor. */
-const ENGINEERING_COLLAGE_ASSET_V = "20260418-4";
+const ENGINEERING_COLLAGE_ASSET_V = "20260507-1";
 const engineeringCollage = {
-  primary: `/images/home/engineering-collage-1.png?v=${ENGINEERING_COLLAGE_ASSET_V}`,
-  secondary: `/images/home/engineering-collage-2.png?v=${ENGINEERING_COLLAGE_ASSET_V}`,
+  primary: `/images/home/novves-product-lineup.png?v=${ENGINEERING_COLLAGE_ASSET_V}`,
 } as const;
 
 /** Pillar card “Detayları İncele” targets — engineering / products / services */
@@ -245,7 +244,7 @@ const productCategoryMeta = [
   { href: "/urunler/iklimlendirme", image: "/images/products/tiger-pre.png" },
   { href: "/urunler/sogutma-ve-isitma", image: "/images/products/dolphin-pre.png" },
   { href: "/urunler/hava-yonetimi", image: "/images/products/hound-al.png" },
-  { href: "/urunler/hava-dagitimi", image: "/images/hero/endustriyel-mutfaklar.png" },
+  { href: "/urunler/hava-dagitimi", image: "/images/products/ae-fjf.png" },
   { href: "/urunler/hava-filtrasyonu", image: "/images/products/marlin.png" },
   { href: "/urunler/aksesuarlar", image: "/images/products/ae-fjf.png" },
   { href: "/urunler/otomasyon-malzemeleri", image: "/images/products/basinclandirma-kontrol-panosu.png" },
@@ -255,18 +254,18 @@ const productCategoryMeta = [
 /** Çözüm carousel — metinler locale home.json içindeki solutionCarouselByHref */
 const solutionCategorySlides = [
   { href: "/cozumler/duman-isi-tahliye-sistemleri", image: "/images/products/dragonfly-c.png" },
-  { href: "/cozumler/konfor-iklimlendirme-sistemleri", image: "/images/products/tiger-main.jpg" },
-  { href: "/cozumler/hijyenik-filtrasyonlu-havalandirma", image: "/images/products/koi-cb.jpg" },
-  { href: "/cozumler/endustriyel-hava-yonetimi", image: "/images/products/nautilus-cif-cidarli.jpg" },
-  { href: "/cozumler/atex-patlama-koruma-cozumleri", image: "/images/products/bear-bp.jpg" },
-  { href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri", image: "/images/products/owl-cer.jpg" },
-  { href: "/cozumler/trafo-enerji-odalari-fanlari", image: "/images/products/heron-ah.jpg" },
+  { href: "/cozumler/konfor-iklimlendirme-sistemleri", image: "/images/products/tiger-pre.png" },
+  { href: "/cozumler/hijyenik-filtrasyonlu-havalandirma", image: "/images/products/marlin.png" },
+  { href: "/cozumler/endustriyel-hava-yonetimi", image: "/images/products/hound-al.png" },
+  { href: "/cozumler/atex-patlama-koruma-cozumleri", image: "/images/products/ae-fjf.png" },
+  { href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri", image: "/images/products/dolphin-pre.png" },
+  { href: "/cozumler/trafo-enerji-odalari-fanlari", image: "/images/products/tiger-pre.png" },
   { href: "/cozumler/sera-tarimsal-havalandirma-sistemleri", image: "/images/products/marlin.png" },
-  { href: "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri", image: "/images/products/turtle-a.jpg" },
-  { href: "/cozumler/konut-tipi-havalandirma-sistemleri", image: "/images/products/banyo-fan-1.jpg" },
-  { href: "/cozumler/marin-offshore-havalandirma-sistemleri", image: "/images/products/koi-cb.jpg" },
-  { href: "/cozumler/proje-bazli-ozel-imalatlar", image: "/images/products/bear-bp.jpg" },
-  { href: "/cozumler/cfd-muhendislik-danismanligi", image: "/images/products/hummingbird-drb-ec.jpg" },
+  { href: "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri", image: "/images/products/basinclandirma-kontrol-panosu.png" },
+  { href: "/cozumler/konut-tipi-havalandirma-sistemleri", image: "/images/products/dolphin-pre.png" },
+  { href: "/cozumler/marin-offshore-havalandirma-sistemleri", image: "/images/products/hound-al.png" },
+  { href: "/cozumler/proje-bazli-ozel-imalatlar", image: "/images/products/dragonfly-c.png" },
+  { href: "/cozumler/cfd-muhendislik-danismanligi", image: "/images/products/yayli-titresim-izolatoru.png" },
 ];
 
 const productFallbackImages = [
@@ -407,6 +406,10 @@ export default function HomeClient({
   const [allowRestrictedSections, setAllowRestrictedSections] = useState<boolean | null>(null);
   const solutionCarouselRef = useRef<HTMLDivElement | null>(null);
   const productCarouselRef = useRef<HTMLDivElement | null>(null);
+  const [solutionLabelSpinning, setSolutionLabelSpinning] = useState(false);
+  const [productLabelSpinning, setProductLabelSpinning] = useState(false);
+  const solutionLabelTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const productLabelTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pillarIntro = dict.pillars[0]?.intro ?? "";
   const pillarIntroParts = pillarIntro.split(".");
   const pillarIntroLead = (pillarIntroParts[0] ?? "").trim();
@@ -453,6 +456,9 @@ export default function HomeClient({
     return () => window.removeEventListener(COOKIE_CONSENT_EVENT, onConsentUpdated as EventListener);
   }, []);
 
+  const productSlideCount = dict.productCategories.items.length;
+  const solutionSlideCount = solutionCategorySlides.length;
+
   const scrollProductCarousel = (direction: "prev" | "next") => {
     const container = productCarouselRef.current;
     if (!container) return;
@@ -461,10 +467,13 @@ export default function HomeClient({
     if (!card) return;
 
     const cardWidth = card.getBoundingClientRect().width;
-    const gap = 16;
+    const gap = 12;
     const scrollAmount = (cardWidth + gap) * (direction === "next" ? 1 : -1);
-
     container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+
+    if (productLabelTimeoutRef.current) clearTimeout(productLabelTimeoutRef.current);
+    setProductLabelSpinning(true);
+    productLabelTimeoutRef.current = setTimeout(() => setProductLabelSpinning(false), 320);
   };
 
   const scrollSolutionCarousel = (direction: "prev" | "next") => {
@@ -475,11 +484,106 @@ export default function HomeClient({
     if (!card) return;
 
     const cardWidth = card.getBoundingClientRect().width;
-    const gap = 16;
+    const gap = 12;
     const scrollAmount = (cardWidth + gap) * (direction === "next" ? 1 : -1);
-
     container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+
+    if (solutionLabelTimeoutRef.current) clearTimeout(solutionLabelTimeoutRef.current);
+    setSolutionLabelSpinning(true);
+    solutionLabelTimeoutRef.current = setTimeout(() => setSolutionLabelSpinning(false), 320);
   };
+
+  useEffect(() => {
+    const container = solutionCarouselRef.current;
+    if (!container) return;
+
+    const measureSegmentWidth = () => {
+      const card = container.querySelector("[data-solution-card]") as HTMLElement | null;
+      if (!card) return 0;
+      const cardWidth = card.getBoundingClientRect().width;
+      const gap = 12;
+      return (cardWidth + gap) * solutionSlideCount;
+    };
+
+    let raf: number | null = null;
+    const setupInitial = () => {
+      const segmentWidth = measureSegmentWidth();
+      if (segmentWidth > 0) container.scrollLeft = segmentWidth;
+      else raf = requestAnimationFrame(setupInitial);
+    };
+    raf = requestAnimationFrame(setupInitial);
+
+    let scrollTimeout: ReturnType<typeof setTimeout> | null = null;
+    const handleScroll = () => {
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        const segmentWidth = measureSegmentWidth();
+        if (segmentWidth <= 0) return;
+        const scrollLeft = container.scrollLeft;
+        if (scrollLeft < segmentWidth * 0.5) {
+          container.scrollLeft = scrollLeft + segmentWidth;
+        } else if (scrollLeft > segmentWidth * 2.5) {
+          container.scrollLeft = scrollLeft - segmentWidth;
+        }
+      }, 180);
+    };
+
+    container.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", setupInitial);
+
+    return () => {
+      if (raf !== null) cancelAnimationFrame(raf);
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      container.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", setupInitial);
+    };
+  }, [solutionSlideCount]);
+
+  useEffect(() => {
+    const container = productCarouselRef.current;
+    if (!container) return;
+
+    const measureSegmentWidth = () => {
+      const card = container.querySelector("[data-product-card]") as HTMLElement | null;
+      if (!card) return 0;
+      const cardWidth = card.getBoundingClientRect().width;
+      const gap = 12;
+      return (cardWidth + gap) * productSlideCount;
+    };
+
+    let raf: number | null = null;
+    const setupInitial = () => {
+      const segmentWidth = measureSegmentWidth();
+      if (segmentWidth > 0) container.scrollLeft = segmentWidth;
+      else raf = requestAnimationFrame(setupInitial);
+    };
+    raf = requestAnimationFrame(setupInitial);
+
+    let scrollTimeout: ReturnType<typeof setTimeout> | null = null;
+    const handleScroll = () => {
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        const segmentWidth = measureSegmentWidth();
+        if (segmentWidth <= 0) return;
+        const scrollLeft = container.scrollLeft;
+        if (scrollLeft < segmentWidth * 0.5) {
+          container.scrollLeft = scrollLeft + segmentWidth;
+        } else if (scrollLeft > segmentWidth * 2.5) {
+          container.scrollLeft = scrollLeft - segmentWidth;
+        }
+      }, 180);
+    };
+
+    container.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", setupInitial);
+
+    return () => {
+      if (raf !== null) cancelAnimationFrame(raf);
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      container.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", setupInitial);
+    };
+  }, [productSlideCount]);
 
   const canUseFineHover = () =>
     typeof window !== "undefined" &&
@@ -544,80 +648,83 @@ export default function HomeClient({
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
         <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
           <div className="novves-carousel-toolbar mt-6 flex w-full flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
-            <CarouselStripLabel
-              variant="solution"
-              label={n.solutions}
-              dimmed={hoveredSolutionIndex !== null}
-            />
 
             <div className="relative z-[1] flex min-h-0 min-w-0 items-center gap-1 sm:gap-2 [min-width:0]">
             <button
               type="button"
               onClick={() => scrollSolutionCarousel("prev")}
               aria-label={pc.previousSolutions}
-              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
+              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#f26a2e] sm:h-12 sm:w-12"
             >
-              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
+              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
 
+            <div className="relative min-w-0 flex-1">
+              <div
+                className={`pointer-events-none absolute left-2 -top-6 z-20 w-[170px] origin-[50%_120%] rounded-[1.4rem] bg-[#1d1c1e] px-5 pb-10 pt-2.5 text-center text-white shadow-[0_22px_44px_-22px_rgba(8,10,14,0.6)] transition-transform duration-300 ease-[cubic-bezier(0.45,0.05,0.25,1)] ${
+                  solutionLabelSpinning ? "-rotate-[20deg] scale-100" : "-rotate-[4deg] scale-100"
+                }`}
+                style={{
+                  WebkitMaskImage:
+                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
+                  maskImage:
+                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
+                }}
+              >
+                <p className="font-mono-eng text-[10.5px] font-semibold tracking-[0.02em] text-white/95">#born<span className="text-[#f26a2e]">to</span>flow</p>
+                <p className="mt-0.5 font-mono-eng text-[17px] font-bold uppercase leading-none tracking-[0.02em]">{n.solutions}</p>
+              </div>
             <div
               ref={solutionCarouselRef}
-              className="flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
+              className="flex min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pt-14 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {solutionCategorySlides.map((item, index) => {
+              {[...solutionCategorySlides, ...solutionCategorySlides, ...solutionCategorySlides].map((item, loopIndex) => {
+                const index = loopIndex % solutionSlideCount;
                 const entry = solutionByHref[item.href];
                 const title = entry?.title ?? item.href;
-                const desc = entry?.description ?? pc.defaultSolutionDesc;
+                void entry;
                 return (
-                  <Link
-                    key={item.href}
-                    href={`/${locale}${item.href}`}
-                    data-solution-card
-                    onMouseEnter={() => {
-                      if (canUseFineHover()) setHoveredSolutionIndex(index);
-                    }}
-                    onMouseLeave={() => setHoveredSolutionIndex(null)}
-                    className={`group relative z-[2] flex h-[clamp(258px,58svh,382px)] w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_18px_42px_-22px_rgba(15,20,30,0.3)] ring-1 ring-[#1f4fa8]/[0.05] transition-all duration-300 active:scale-[0.99] max-sm:shadow-[0_16px_38px_-26px_rgba(15,22,34,0.26)] sm:h-auto sm:w-[calc(50%-0.5rem)] sm:ring-0 sm:shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] sm:snap-start sm:aspect-square lg:w-[calc((100%-2rem)/5)] ${
-                      hoveredSolutionIndex === null
-                        ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
-                        : hoveredSolutionIndex === index
-                          ? "z-10 scale-[1.07] border-[#1f4fa8]/35 shadow-[0_24px_56px_-24px_rgba(15,20,30,0.34)] lg:scale-[1.07]"
-                          : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
-                    }`}
-                  >
-                    <div className="relative flex-[0_0_46%] border-b border-ink/10 bg-[#eef1f4]">
-                      <Image
-                        src={item.image}
-                        alt={title}
-                        fill
-                        className="object-contain p-4 mix-blend-multiply max-sm:p-3"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      />
-                    </div>
-                    <div className="flex flex-1 flex-col px-4 py-2 max-sm:px-3 max-sm:py-1.5">
-                      <h3 className="mt-1 line-clamp-2 text-[1.15rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#1f4fa8] max-sm:text-[1.12rem] max-sm:leading-[1.15]">
-                        {title}
-                      </h3>
-                      <p className="mt-1 line-clamp-2 text-[12px] leading-[1.5] text-ink/62 max-sm:leading-[1.44]">{desc}</p>
-                      <div className="mt-auto pt-2 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#1f4fa8] sm:text-[10px]">
-                        {pc.solutionCardCta}
-                      </div>
-                    </div>
-                  </Link>
+                  <div key={`${item.href}-${loopIndex}`} data-solution-card className="relative w-[205px] shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
+                    <Link
+                      href={`/${locale}${item.href}`}
+                      onMouseEnter={() => {
+                        if (canUseFineHover()) setHoveredSolutionIndex(index);
+                      }}
+                      onMouseLeave={() => setHoveredSolutionIndex(null)}
+                      className="group relative flex min-h-[96px] items-center justify-center rounded-[1.9rem] bg-[#f26a2e] px-4 py-4 text-center text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#ea621f]"
+                    >
+                      <span className="pointer-events-none absolute left-[64px] top-0 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6]" />
+                      <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#f26a2e]">
+                        <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
+                      </span>
+                      <span className="relative z-[1] mr-12 line-clamp-2 text-left text-[12px] font-semibold leading-[1.25] sm:mr-14">{title}</span>
+                      {item.image ? (
+                        <img
+                          src={item.image}
+                          alt=""
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          className="pointer-events-none absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 select-none object-contain drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)] sm:right-3 sm:h-[68px] sm:w-[68px]"
+                        />
+                      ) : null}
+                    </Link>
+                  </div>
                 );
               })}
+            </div>
             </div>
 
             <button
               type="button"
               onClick={() => scrollSolutionCarousel("next")}
               aria-label={pc.nextSolutions}
-              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-[#1f4fa8] hover:text-[#1f4fa8] max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
+              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#f26a2e] sm:h-12 sm:w-12"
             >
-              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
+              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -635,82 +742,83 @@ export default function HomeClient({
 
         <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
           <div className="novves-carousel-toolbar mt-6 flex w-full flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
-            <CarouselStripLabel
-              variant="product"
-              label={n.products}
-              dimmed={hoveredProductIndex !== null}
-            />
 
             <div className="relative z-[1] flex min-h-0 min-w-0 items-center gap-1 sm:gap-2 [min-width:0]">
             <button
               type="button"
               onClick={() => scrollProductCarousel("prev")}
               aria-label={pc.previousProducts}
-              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
+              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#1d2f4d] sm:h-12 sm:w-12"
             >
-              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
+              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
 
+            <div className="relative min-w-0 flex-1">
+              <div
+                className={`pointer-events-none absolute left-2 -top-6 z-20 w-[170px] origin-[50%_120%] rounded-[1.4rem] bg-[#1d1c1e] px-5 pb-10 pt-2.5 text-center text-white shadow-[0_22px_44px_-22px_rgba(8,10,14,0.6)] transition-transform duration-300 ease-[cubic-bezier(0.45,0.05,0.25,1)] ${
+                  productLabelSpinning ? "-rotate-[20deg] scale-100" : "-rotate-[4deg] scale-100"
+                }`}
+                style={{
+                  WebkitMaskImage:
+                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
+                  maskImage:
+                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
+                }}
+              >
+                <p className="font-mono-eng text-[10.5px] font-semibold tracking-[0.02em] text-white/95">#born<span className="text-[#f26a2e]">to</span>flow</p>
+                <p className="mt-0.5 font-mono-eng text-[17px] font-bold uppercase leading-none tracking-[0.02em]">{n.products}</p>
+              </div>
             <div
               ref={productCarouselRef}
-              className="flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [-webkit-overflow-scrolling:touch] max-sm:gap-2 [&::-webkit-scrollbar]:hidden"
+              className="flex min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pt-14 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {dict.productCategories.items.map((cat, index) => {
+              {[...dict.productCategories.items, ...dict.productCategories.items, ...dict.productCategories.items].map((cat, loopIndex) => {
+              const index = loopIndex % productSlideCount;
               const meta = productCategoryMeta[index];
               const href = meta?.href ?? "/urunler";
-              const resolvedImage = meta?.image || productFallbackImages[index % productFallbackImages.length];
+              void meta;
               return (
-                <Link
-                  key={cat.label}
-                  href={`/${locale}${href}`}
-                  data-product-card
-                  onMouseEnter={() => {
-                    if (canUseFineHover()) setHoveredProductIndex(index);
-                  }}
-                  onMouseLeave={() => setHoveredProductIndex(null)}
-                  className={`group relative z-[2] flex h-[clamp(258px,58svh,382px)] w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_18px_42px_-22px_rgba(15,20,30,0.3)] ring-1 ring-primary/[0.06] transition-all duration-300 active:scale-[0.99] max-sm:shadow-[0_16px_38px_-26px_rgba(15,22,34,0.26)] sm:h-auto sm:w-[calc(50%-0.5rem)] sm:ring-0 sm:shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] sm:snap-start sm:aspect-square lg:w-[calc((100%-2rem)/5)] ${
-                    hoveredProductIndex === null
-                      ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
-                      : hoveredProductIndex === index
-                        ? "z-10 scale-[1.07] border-primary/35 shadow-[0_24px_56px_-24px_rgba(15,20,30,0.34)] lg:scale-[1.07]"
-                        : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
-                  }`}
-                >
-                  <div className="relative flex-[0_0_46%] border-b border-ink/10 bg-[#eef1f4]">
-                    <Image
-                      src={resolvedImage}
-                      alt={cat.label}
-                      fill
-                      className="object-contain p-4 max-sm:p-3"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col px-4 py-2 max-sm:px-3 max-sm:py-1.5">
-                    <h3 className="mt-1 line-clamp-2 text-[1.15rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-primary max-sm:text-[1.12rem] max-sm:leading-[1.15]">
-                      {cat.label}
-                    </h3>
-                    <p className="mt-1 line-clamp-2 text-[12px] leading-[1.5] text-ink/62 max-sm:leading-[1.44]">
-                      {productBlurbs[index] ?? pc.productFallbackDesc}
-                    </p>
-                    <div className="mt-auto pt-2 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-primary sm:text-[10px]">
-                      {pc.productCardCta}
-                    </div>
-                  </div>
-                </Link>
-              );
+                <div key={`${cat.label}-${loopIndex}`} data-product-card className="relative w-[205px] shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
+                  <Link
+                    href={`/${locale}${href}`}
+                    onMouseEnter={() => {
+                      if (canUseFineHover()) setHoveredProductIndex(index);
+                    }}
+                    onMouseLeave={() => setHoveredProductIndex(null)}
+                    className="group relative flex min-h-[96px] items-center justify-center rounded-[1.9rem] bg-[#1d2f4d] px-4 py-4 text-center text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#13233d]"
+                  >
+                    <span className="pointer-events-none absolute left-[64px] top-0 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6]" />
+                    <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#1d2f4d]">
+                      <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
+                    </span>
+                    <span className="relative z-[1] mr-12 line-clamp-2 text-left text-[12px] font-semibold leading-[1.25] sm:mr-14">{cat.label}</span>
+                    {meta?.image ? (
+                      <img
+                        src={meta.image}
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                        decoding="async"
+                        className="pointer-events-none absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 select-none object-contain drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)] sm:right-3 sm:h-[68px] sm:w-[68px]"
+                      />
+                    ) : null}
+                  </Link>
+                </div>
+                );
               })}
+            </div>
             </div>
 
             <button
               type="button"
               onClick={() => scrollProductCarousel("next")}
               aria-label={pc.nextProducts}
-              className="btn-3d btn-3d-glass inline-flex h-7 w-7 shrink-0 touch-manipulation items-center justify-center rounded-md border border-ink/[0.14] bg-white/90 text-ink/60 shadow-[0_1px_4px_-1px_rgba(15,20,30,0.12)] transition-colors hover:border-primary hover:text-primary max-sm:opacity-95 sm:h-8 sm:w-8 sm:rounded-lg sm:border-ink/15 sm:bg-white/95 sm:text-ink/75 sm:shadow-[0_8px_24px_-16px_rgba(15,20,30,0.5)] sm:opacity-100"
+              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#1d2f4d] sm:h-12 sm:w-12"
             >
-              <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.85}>
+              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -737,25 +845,14 @@ export default function HomeClient({
                   aria-hidden
                 />
                 <div className="group relative overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex-1 lg:self-stretch">
-                  <div className="relative aspect-[16/10] w-full lg:h-1/2 lg:aspect-auto">
+                  <div className="relative aspect-[16/10] w-full lg:h-full lg:aspect-auto">
                     <Image
                       src={engineeringCollage.primary}
                       alt={pc.engineeringAlt1}
                       fill
                       priority
                       quality={92}
-                      className="object-cover object-[50%_40%] transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
-                      sizes="(max-width: 640px) 92vw, (max-width: 1024px) 50vw, min(640px, 44vw)"
-                    />
-                  </div>
-                  <div className="relative aspect-[16/10] w-full border-t border-[#243044]/10 lg:h-1/2 lg:aspect-auto">
-                    <Image
-                      src={engineeringCollage.secondary}
-                      alt={pc.engineeringAlt2}
-                      fill
-                      priority
-                      quality={92}
-                      className="object-cover object-[30%_84%] transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
+                      className="object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
                       sizes="(max-width: 640px) 92vw, (max-width: 1024px) 50vw, min(640px, 44vw)"
                     />
                   </div>
@@ -1059,22 +1156,12 @@ export default function HomeClient({
                             : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
                       }`}
                     >
-                      <div
-                        className={`relative border-b border-ink/10 ${
-                          item.href === "/kurumsal/ceo-mesaji"
-                            ? "flex-[0_0_58%] min-h-[200px] overflow-hidden bg-[#e8eaee] sm:min-h-[240px] sm:flex-[0_0_56%]"
-                            : "flex-[0_0_52%] bg-[#eef1f4] sm:flex-[0_0_50%]"
-                        }`}
-                      >
+                      <div className="relative flex-[0_0_56%] overflow-hidden border-b border-ink/10 bg-[#eef1f4] sm:flex-[0_0_54%]">
                         <Image
                           src={item.image}
                           alt={title}
                           fill
-                          className={
-                            item.href === "/kurumsal/ceo-mesaji"
-                              ? "object-cover object-[88%_24%]"
-                              : "object-cover object-center"
-                          }
+                          className="object-cover object-center"
                           sizes="(max-width: 640px) 92vw, (max-width: 1024px) 42vw, min(480px, 33vw)"
                         />
                       </div>

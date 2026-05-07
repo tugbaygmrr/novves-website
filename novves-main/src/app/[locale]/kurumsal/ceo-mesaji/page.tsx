@@ -30,7 +30,7 @@ export default async function CeoMesaji({ params }: { params: Promise<{ locale: 
     <main>
       <section className="relative flex min-h-[min(88vh,820px)] items-end overflow-hidden bg-[#4b5159] sm:min-h-[min(90vh,880px)]">
         <Image
-          src="/images/page-hero/ceo.jpg"
+          src="/images/page-hero/ceo.png?v=2"
           alt=""
           fill
           className="object-cover object-[88%_26%] sm:object-[88%_28%]"

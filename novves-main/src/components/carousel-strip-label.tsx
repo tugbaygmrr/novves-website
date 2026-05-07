@@ -2,10 +2,10 @@
 
 /** Kutuya göre dikey yazı (demo ile uyumlu tipografi) — Ürünler / bölüm şeritleri */
 export const VERTICAL_STRIP_LABEL_TEXT_CLASS =
-  "font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-ink antialiased [writing-mode:vertical-rl] [text-orientation:mixed] max-sm:[text-shadow:0_1px_0_rgba(255,255,255,1)] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]";
+  "font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-white antialiased [writing-mode:vertical-rl] [text-orientation:mixed] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]";
 
 const HORIZONTAL_STRIP_LABEL_TEXT_CLASS =
-  "font-mono-eng text-[12.5px] font-semibold uppercase tracking-[0.24em] text-ink antialiased";
+  "font-mono-eng text-[12.5px] font-semibold uppercase tracking-[0.16em] text-white antialiased whitespace-nowrap";
 
 function StripRotatedLabel({
   label,
@@ -30,23 +30,7 @@ function StripRotatedLabel({
   );
 }
 
-/** Metin kutunun tam ortasında (mobil sabit yükseklikte dikey ortalama için h-full) */
-const INNER =
-  "relative z-0 flex h-full min-h-0 flex-1 items-center justify-center py-3 pl-2.5 pr-2 sm:px-4 sm:py-7";
-
 type CarouselVariant = "solution" | "product";
-
-const carouselShell: Record<CarouselVariant, string> = {
-  solution:
-    "relative flex max-sm:h-[13rem] max-sm:w-[3rem] max-sm:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#1f4fa8]/[0.08] transition-all duration-300 sm:h-auto sm:w-auto",
-  product:
-    "relative flex max-sm:h-[13rem] max-sm:w-[3rem] max-sm:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-primary/[0.12] transition-all duration-300 sm:h-auto sm:w-auto",
-};
-
-const carouselStripe: Record<CarouselVariant, string> = {
-  solution: "absolute inset-y-0 left-0 w-3 bg-[#1f4fa8] sm:w-3.5",
-  product: "absolute inset-y-0 left-0 w-3 bg-primary/90 sm:w-3.5",
-};
 
 export function CarouselStripLabel({
   variant,
@@ -57,16 +41,25 @@ export function CarouselStripLabel({
   label: string;
   dimmed: boolean;
 }) {
+  const dotColor = variant === "solution" ? "bg-[#f26a2e]" : "bg-[#2e55e5]";
   return (
     <div className="relative z-10 shrink-0 self-center">
       <div
-        className={`${carouselShell[variant]} ${
-          dimmed ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
+        className={`relative -rotate-[4deg] overflow-visible rounded-[1.05rem] bg-[#1f1d1e] px-6 py-4 text-white shadow-[0_20px_44px_-24px_rgba(8,10,14,0.55)] transition-all duration-300 ${
+          dimmed ? "scale-[0.9] opacity-80" : "scale-100 opacity-100"
         }`}
       >
-        <div className={`${carouselStripe[variant]} pointer-events-none`} aria-hidden />
-        <div className={INNER}>
-          <StripRotatedLabel label={label} />
+        <span
+          className="pointer-events-none absolute left-1/2 top-full h-4 w-10 -translate-x-1/2 -translate-y-2 rounded-t-full bg-[#ecebe6]"
+          aria-hidden
+        />
+        <span
+          className={`pointer-events-none absolute left-1/2 top-full h-5 w-5 -translate-x-1/2 rounded-full border-2 border-[#ecebe6] ${dotColor}`}
+          aria-hidden
+        />
+        <div className="text-center leading-none">
+          <p className="font-mono-eng text-[11px] font-semibold tracking-[0.04em] text-white/95">#borntoflow</p>
+          <p className="mt-1 font-mono-eng text-[32px] font-bold uppercase tracking-[0.02em]">{label}</p>
         </div>
       </div>
     </div>
@@ -75,29 +68,17 @@ export function CarouselStripLabel({
 
 export type SectionStripTone = "primary" | "slate" | "brandBlue" | "ink";
 
-const sectionShell: Record<SectionStripTone, string> = {
-  primary:
-    "relative flex max-lg:min-h-[2.6rem] max-lg:w-auto max-lg:max-w-full max-lg:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-primary/[0.12] transition-all duration-300 lg:h-auto lg:w-auto",
-  slate:
-    "relative flex max-lg:min-h-[2.6rem] max-lg:w-auto max-lg:max-w-full max-lg:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#6b7380]/[0.10] transition-all duration-300 lg:h-auto lg:w-auto",
-  brandBlue:
-    "relative flex max-lg:min-h-[2.6rem] max-lg:w-auto max-lg:max-w-full max-lg:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#1f4fa8]/[0.08] transition-all duration-300 lg:h-auto lg:w-auto",
-  ink:
-    "relative flex max-lg:min-h-[2.6rem] max-lg:w-auto max-lg:max-w-full max-lg:shrink-0 overflow-hidden rounded-2xl border border-ink/12 bg-white shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] ring-1 ring-[#243044]/[0.10] transition-all duration-300 lg:h-auto lg:w-auto",
+const sectionFill: Record<SectionStripTone, string> = {
+  primary: "bg-[#f26a2e]",
+  slate: "bg-[#6b7380]",
+  brandBlue: "bg-[#1d2f4d]",
+  ink: "bg-[#1d1c1e]",
 };
 
-const sectionStripe: Record<SectionStripTone, string> = {
-  primary:
-    "absolute inset-x-0 top-0 h-1 bg-primary/90 lg:inset-y-0 lg:left-0 lg:h-auto lg:w-3.5",
-  slate:
-    "absolute inset-x-0 top-0 h-1 bg-[#6b7380] lg:inset-y-0 lg:left-0 lg:h-auto lg:w-3.5",
-  brandBlue:
-    "absolute inset-x-0 top-0 h-1 bg-[#1f4fa8] lg:inset-y-0 lg:left-0 lg:h-auto lg:w-3.5",
-  ink:
-    "absolute inset-x-0 top-0 h-1 bg-[#243044] lg:inset-y-0 lg:left-0 lg:h-auto lg:w-3.5",
-};
+const sectionShell =
+  "relative flex max-lg:min-h-[2.6rem] max-lg:w-auto max-lg:max-w-full max-lg:shrink-0 overflow-visible rounded-2xl shadow-[0_28px_56px_-28px_rgba(15,22,32,0.42)] transition-all duration-300 lg:h-auto lg:w-auto";
 
-/** Katalog / referans vb. yan şerit — carousel ile aynı demo yapısı */
+/** Katalog / referans vb. yan şerit — tek renk + ürün kart notch'u tarzında uçlarda topçuk */
 export function SectionStripLabel({
   tone,
   label,
@@ -107,15 +88,33 @@ export function SectionStripLabel({
   label: string;
   dimmed: boolean;
 }) {
+  const fill = sectionFill[tone];
   return (
     <div className="relative z-10 shrink-0 self-center">
       <div
-        className={`${sectionShell[tone]} ${
+        className={`${sectionShell} ${fill} ${
           dimmed ? "scale-[0.86] opacity-80" : "scale-100 opacity-100"
         }`}
       >
-        <div className={`${sectionStripe[tone]} pointer-events-none`} aria-hidden />
-        <div className="relative z-0 flex h-full min-h-0 flex-1 items-center justify-center px-4 py-3 text-center lg:px-4 lg:py-7">
+        {/* Mobil: yatay → topçuk sol & sağ uçlarda */}
+        <span className="pointer-events-none absolute left-0 top-1/2 z-[1] h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6] lg:hidden" aria-hidden />
+        <span className={`pointer-events-none absolute left-0 top-1/2 z-[2] flex h-6 w-6 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full ${fill} lg:hidden`} aria-hidden>
+          <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-3 w-3 brightness-0 invert" />
+        </span>
+        <span className="pointer-events-none absolute right-0 top-1/2 z-[1] h-9 w-9 translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6] lg:hidden" aria-hidden />
+        <span className={`pointer-events-none absolute right-0 top-1/2 z-[2] flex h-6 w-6 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full ${fill} lg:hidden`} aria-hidden>
+          <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-3 w-3 brightness-0 invert" />
+        </span>
+        {/* Masaüstü: dikey → topçuk üst & alt uçlarda */}
+        <span className="pointer-events-none absolute left-1/2 top-0 z-[1] hidden h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6] lg:block" aria-hidden />
+        <span className={`pointer-events-none absolute left-1/2 top-0 z-[2] hidden h-7 w-7 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full ${fill} lg:flex`} aria-hidden>
+          <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-3.5 w-3.5 brightness-0 invert" />
+        </span>
+        <span className="pointer-events-none absolute bottom-0 left-1/2 z-[1] hidden h-10 w-10 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#ecebe6] lg:block" aria-hidden />
+        <span className={`pointer-events-none absolute bottom-0 left-1/2 z-[2] hidden h-7 w-7 -translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full ${fill} lg:flex`} aria-hidden>
+          <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-3.5 w-3.5 brightness-0 invert" />
+        </span>
+        <div className="relative z-0 flex h-full min-h-0 flex-1 items-center justify-center px-10 py-3 text-center lg:px-4 lg:py-9">
           <StripRotatedLabel label={label} mobileHorizontal />
         </div>
       </div>
