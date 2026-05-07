@@ -689,7 +689,7 @@ export default function HomeClient({
                 const title = entry?.title ?? item.href;
                 void entry;
                 return (
-                  <div key={`${item.href}-${loopIndex}`} data-solution-card className="relative w-[205px] shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
+                  <div key={`${item.href}-${loopIndex}`} data-solution-card className="relative w-full shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
                     <Link
                       href={`/${locale}${item.href}`}
                       onMouseEnter={() => {
@@ -783,7 +783,7 @@ export default function HomeClient({
               const href = meta?.href ?? "/urunler";
               void meta;
               return (
-                <div key={`${cat.label}-${loopIndex}`} data-product-card className="relative w-[205px] shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
+                <div key={`${cat.label}-${loopIndex}`} data-product-card className="relative w-full shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
                   <Link
                     href={`/${locale}${href}`}
                     onMouseEnter={() => {
