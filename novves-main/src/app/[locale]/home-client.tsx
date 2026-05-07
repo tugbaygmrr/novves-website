@@ -463,13 +463,14 @@ export default function HomeClient({
     const container = productCarouselRef.current;
     if (!container) return;
 
-    const card = container.querySelector("[data-product-card]") as HTMLElement | null;
-    if (!card) return;
-    const nextCard = card.nextElementSibling as HTMLElement | null;
-    const step = nextCard ? nextCard.offsetLeft - card.offsetLeft : card.getBoundingClientRect().width + 12;
+    const cards = Array.from(container.querySelectorAll("[data-product-card]")) as HTMLElement[];
+    if (cards.length < 2) return;
+    const step = cards[1].offsetLeft - cards[0].offsetLeft;
     if (step <= 0) return;
-    const scrollAmount = step * (direction === "next" ? 1 : -1);
-    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    const currentIndex = Math.round(container.scrollLeft / step);
+    const directionDelta = direction === "next" ? 1 : -1;
+    const targetIndex = Math.max(0, Math.min(cards.length - 1, currentIndex + directionDelta));
+    container.scrollTo({ left: targetIndex * step, behavior: "smooth" });
 
     if (productLabelTimeoutRef.current) clearTimeout(productLabelTimeoutRef.current);
     setProductLabelSpinning(true);
@@ -480,13 +481,14 @@ export default function HomeClient({
     const container = solutionCarouselRef.current;
     if (!container) return;
 
-    const card = container.querySelector("[data-solution-card]") as HTMLElement | null;
-    if (!card) return;
-
-    const cardWidth = card.getBoundingClientRect().width;
-    const gap = 12;
-    const scrollAmount = (cardWidth + gap) * (direction === "next" ? 1 : -1);
-    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    const cards = Array.from(container.querySelectorAll("[data-solution-card]")) as HTMLElement[];
+    if (cards.length < 2) return;
+    const step = cards[1].offsetLeft - cards[0].offsetLeft;
+    if (step <= 0) return;
+    const currentIndex = Math.round(container.scrollLeft / step);
+    const directionDelta = direction === "next" ? 1 : -1;
+    const targetIndex = Math.max(0, Math.min(cards.length - 1, currentIndex + directionDelta));
+    container.scrollTo({ left: targetIndex * step, behavior: "smooth" });
 
     if (solutionLabelTimeoutRef.current) clearTimeout(solutionLabelTimeoutRef.current);
     setSolutionLabelSpinning(true);
@@ -498,11 +500,11 @@ export default function HomeClient({
     if (!container) return;
 
     const measureSegmentWidth = () => {
-      const card = container.querySelector("[data-solution-card]") as HTMLElement | null;
-      if (!card) return 0;
-      const cardWidth = card.getBoundingClientRect().width;
-      const gap = 12;
-      return (cardWidth + gap) * solutionSlideCount;
+      const cards = Array.from(container.querySelectorAll("[data-solution-card]")) as HTMLElement[];
+      if (cards.length < 2 || solutionSlideCount <= 0) return 0;
+      const step = cards[1].offsetLeft - cards[0].offsetLeft;
+      if (step <= 0) return 0;
+      return step * solutionSlideCount;
     };
 
     let raf: number | null = null;
@@ -519,11 +521,11 @@ export default function HomeClient({
       scrollTimeout = setTimeout(() => {
         const segmentWidth = measureSegmentWidth();
         if (segmentWidth <= 0) return;
-        const scrollLeft = container.scrollLeft;
-        if (scrollLeft < segmentWidth * 0.5) {
-          container.scrollLeft = scrollLeft + segmentWidth;
-        } else if (scrollLeft > segmentWidth * 2.5) {
-          container.scrollLeft = scrollLeft - segmentWidth;
+        const center = container.scrollLeft + container.clientWidth / 2;
+        if (center < segmentWidth) {
+          container.scrollLeft += segmentWidth;
+        } else if (center > segmentWidth * 2) {
+          container.scrollLeft -= segmentWidth;
         }
       }, 180);
     };
@@ -700,7 +702,7 @@ export default function HomeClient({
                       <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#f26a2e]">
                         <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
                       </span>
-                      <span className="relative z-[1] block w-full line-clamp-2 text-left text-[12px] font-semibold leading-[1.25]">{title}</span>
+                      <span className="relative top-[6px] z-[1] block w-full line-clamp-2 text-center text-[11.5px] font-semibold leading-[1.18] sm:top-[6px] sm:text-[13px] sm:leading-[1.3]">{title}</span>
                       {item.image ? (
                         <img
                           src={item.image}
@@ -794,7 +796,7 @@ export default function HomeClient({
                     <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#1d2f4d]">
                       <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
                     </span>
-                    <span className="relative z-[1] block w-full line-clamp-2 text-left text-[12px] font-semibold leading-[1.25]">{cat.label}</span>
+                    <span className="relative top-[6px] z-[1] block w-full line-clamp-2 text-center text-[11.5px] font-semibold leading-[1.18] sm:top-[6px] sm:text-[13px] sm:leading-[1.3]">{cat.label}</span>
                     {meta?.image ? (
                       <img
                         src={meta.image}
