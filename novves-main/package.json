@@ -30,6 +30,8 @@
     "i18n:en-to-pl": "node scripts/i18n-en-to-pl.mjs",
     "i18n:en-to-pl:fresh": "node scripts/i18n-en-to-pl.mjs --fresh",
     "i18n:sync-pl-product-codes": "node scripts/i18n-sync-pl-product-codes-from-en.mjs",
+    "search:setup": "node scripts/search-setup.mjs",
+    "search:index": "node scripts/search-index-content.mjs",
     "admin:create": "node scripts/create-admin.mjs",
     "deploy": "bash scripts/deploy.sh",
     "pm2:start": "pm2 start ecosystem.config.cjs",

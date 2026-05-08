@@ -603,7 +603,7 @@ export default function HomeClient({
         startCard={dict.hero}
         endCard={dict.animation2.endCard}
         locale={locale}
-        productHref="/urunler/kovan-tipi-aksiyal-fanlar"
+        productHref="/urunler/duman-isi-tahliye-fanlari"
         sideLabel={pc.scrollVideoSideLabel}
       />
       </div>
