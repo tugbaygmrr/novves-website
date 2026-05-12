@@ -133,7 +133,9 @@ export function ScrollVideoSection({
   const rafRef = useRef<number>(0);
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => { setMounted(true); }, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const renderFrame = useCallback((index: number) => {
     if (isVideoMode || isScrollStill) return;
@@ -927,7 +929,7 @@ function MobileScrollSection({
                 src={videoSrc}
                 muted
                 playsInline
-                preload="auto"
+                preload="metadata"
                 disablePictureInPicture
                 className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
                 style={{
