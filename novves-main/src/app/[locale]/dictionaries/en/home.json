@@ -43,63 +43,41 @@
   },
   "pillars": [
     {
-      "tag": "ENGINEERING & DESIGN",
-      "title": "The Digital Twin of Analytical Intelligence",
-      "intro": "Our process begins not with a product, but with problem analysis. For NOVVES, engineering means more than selecting a fan — it means mathematically predicting the behavior of smoke and heat within a structure.",
-      "items": [
-        {
-          "label": "CFD Simulations",
-          "desc": "We simulate fire scenarios in a digital environment, proving system performance before installation."
-        },
-        {
-          "label": "Precision Calculations",
-          "desc": "With building-specific airflow and pressurization calculations, we avoid redundant engineering costs and achieve optimum efficiency."
-        },
-        {
-          "label": "Project-Focused Approach",
-          "desc": "We manufacture products fully compliant with technical specifications."
-        }
-      ]
+      "tag": "01 — Analysis & Engineering",
+      "title": "We Understand the Project Before the Product",
+      "intro": "Every project is assessed together with the building geometry, intended use, fire scenario, airflow, pressure requirements, and site conditions. Where needed, CFD analyses, fan selections, and system scenarios are built on engineering data.",
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler",
+      "items": []
     },
     {
-      "tag": "MANUFACTURING & QUALITY",
-      "title": "Craftsmanship Beyond Standards",
-      "intro": "Every data point approved during the design phase transforms into physical performance at our manufacturing facilities. By combining our engineering ecosystem with modern production technologies, we reduce the margin of error to zero.",
-      "items": [
-        {
-          "label": "Certified Performance",
-          "desc": "Every fan and damper we manufacture is tested by accredited laboratories to international fire resistance standards such as EN 12101-3."
-        },
-        {
-          "label": "Precision Manufacturing",
-          "desc": "From laser cutting to dynamic balance testing, we work with millimetric tolerances at every stage."
-        },
-        {
-          "label": "Sustainable Materials",
-          "desc": "We maximize system lifecycle using durable, corrosion-resistant materials with high energy efficiency."
-        }
-      ]
+      "tag": "02 — Manufacturing & Quality",
+      "title": "We Manufacture the Designed Solution",
+      "intro": "Approved technical data becomes project-specific fans, dampers, silencers, control panels, and auxiliary equipment within the NOVVES production infrastructure. The manufacturing process is managed with quality control, performance expectations, and standard requirements in view.",
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler",
+      "items": []
     },
     {
-      "tag": "INSTALLATION & APPLICATION",
-      "title": "Flawless On-Site Performance",
-      "intro": "The best product saves lives only when properly integrated. The final link in our innovation chain is ensuring the system works in seamless harmony with the building's infrastructure.",
-      "items": [
-        {
-          "label": "Site Supervision",
-          "desc": "We provide technical guidance during installation to ensure proper system positioning as designed."
-        },
-        {
-          "label": "Commissioning",
-          "desc": "Through cold and hot smoke tests, we verify the system's response time and extraction capacity on site."
-        },
-        {
-          "label": "Smart Automation Integration",
-          "desc": "We guarantee synchronization of jet fans and dampers with fire detection systems within milliseconds."
-        }
-      ]
+      "tag": "03 — Application & Support",
+      "title": "We Commission Systems That Work on Site",
+      "intro": "The process does not end with product delivery. NOVVES focuses on correct on-site operation through installation coordination, commissioning support, control scenarios, technical documentation, and after-sales support.",
+      "cta": "Explore field support",
+      "href": "/hizmetler",
+      "items": []
     }
   ],
+  "engineeringShowcase": {
+    "title": "CFD-SUPPORTED ENGINEERING",
+    "subtitle": "Engineering That Makes Flow Visible",
+    "body": "Our process does not begin with product selection, but with understanding the building’s aerodynamic behaviour. NOVVES simulates the movement of smoke, heat, and air within the structure using CFD-based analyses; fan placement, flow rate, pressure, and scenario-based operating logic are validated with engineering data.",
+    "cta": "Explore our CFD process"
+  },
+  "engineeringPillarsSection": {
+    "title": "From Engineering to the Field",
+    "subtitle": "End-to-End Solutions",
+    "lead": "NOVVES does not treat projects as product supply alone. We analyse the need, design the right system, manufacture it, and make it deployable on site."
+  },
   "animation2": {
     "startCard": {
       "badge": "Jet Fan Technology",
@@ -125,6 +103,122 @@
     "title": "Get engineering support for your project",
     "desc": "Contact us for site surveys, CFD analysis, project design, and quotation processes.",
     "button": "Get a Quote"
+  },
+  "homeBands": {
+    "solutionStripFeatureRows": [
+      [
+        { "label": "Fire scenarios", "desc": "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios." },
+        { "label": "Jet & natural", "desc": "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies." },
+        { "label": "EN 12101 ready", "desc": "Certified products and type-test documentation packaged for code reviews and inspections." }
+      ],
+      [
+        { "label": "Room pressure", "desc": "Positive/negative pressure cascades and leakage control to protect critical spaces." },
+        { "label": "HEPA & fine", "desc": "Hospital, GMP, and food lines with filter classes and change-out strategies." },
+        { "label": "Monitoring", "desc": "DP, humidity, and particle sensing with logging and alarms for compliance." }
+      ],
+      [
+        { "label": "Stocking density", "desc": "Fresh-air and exhaust rates sized for headcount, season, and heat stress." },
+        { "label": "Gas & moisture", "desc": "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts." },
+        { "label": "Corrosion tough", "desc": "Materials and motor protection for wash-down and aggressive barn environments." }
+      ],
+      [
+        { "label": "Tunnel & poly", "desc": "Even velocity profiles and temperature stratification for tunnel and multi-span houses." },
+        { "label": "CO₂ & RH", "desc": "Ventilation paired with humidification or dehumidification for crop response." },
+        { "label": "Seasonal energy", "desc": "VFD and control strategies to trim fan energy across seasonal loads." }
+      ],
+      [
+        { "label": "Panels & logic", "desc": "Central panels for fire, process, and comfort fans with clear interlocks." },
+        { "label": "BMS / SCADA", "desc": "Modbus, BACnet, and site-wide automation interfaces and sequences." },
+        { "label": "Commissioning", "desc": "Stepwise testing, handover scripts, and operator screens for maintenance." }
+      ],
+      [
+        { "label": "Salt spray", "desc": "Coatings and stainless options aligned with C4/C5 marine exposure classes." },
+        { "label": "Class society", "desc": "Technical files and tests aligned with vessel class and offshore norms." },
+        { "label": "Redundancy", "desc": "N+1 layouts and access paths for offshore availability and service." }
+      ],
+      [
+        { "label": "Smoke & visibility", "desc": "3D smoke modelling for jet fan placement, visibility, and temperature fields." },
+        { "label": "Heat & contaminants", "desc": "Distribution studies for kitchens, process exhaust, and waste heat." },
+        { "label": "Client-ready reports", "desc": "Summaries, sections, and visuals for investors, AHJs, and design reviews." }
+      ],
+      [
+        { "label": "Comfort band", "desc": "Stable temperature–humidity bands for offices, hotels, and retail." },
+        { "label": "Acoustics", "desc": "Low-SPL selections and isolation for shafts, façades, and plant rooms." },
+        { "label": "Energy & VRF", "desc": "Flow and pressure planning coordinated with heat pumps and VRF systems." }
+      ],
+      [
+        { "label": "Process airflow", "desc": "High-temperature and abrasive-duty fans for drying, emission, and line pressure." },
+        { "label": "Dust & filters", "desc": "Fan curves matched to dust loading, filter dp, and maintenance cycles." },
+        { "label": "Uptime", "desc": "Standby fans, spare-part paths, and service access to shorten planned stops." }
+      ],
+      [
+        { "label": "Transformer heat", "desc": "Cooling airflow sized for transformer and busbar losses with design margin." },
+        { "label": "Fire & smoke", "desc": "Smoke exhaust and pressurisation coordinated with electrical infrastructure." },
+        { "label": "Utility specs", "desc": "Product ranges aligned with OEM, utility, and IEC-oriented specifications." }
+      ],
+      [
+        { "label": "Hazard zones", "desc": "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas." },
+        { "label": "Spark-free", "desc": "Ex d/m/e and compatible drives for explosive gas and dust atmospheres." },
+        { "label": "ATEX dossier", "desc": "Risk study, technical file, and site marking ready for audits." }
+      ],
+      [
+        { "label": "Shaft & wet rooms", "desc": "Compact, low-noise units for central shafts, bathrooms, and kitchens." },
+        { "label": "Façade fit", "desc": "Balcony and wall-mounted options that respect acoustic and architectural limits." },
+        { "label": "Energy labels", "desc": "Efficiency classes aligned with residential regulations and running cost." }
+      ],
+      [
+        { "label": "Custom geometry", "desc": "Project-specific casings for tight footprints, flanges, and duct transitions." },
+        { "label": "Materials & weld", "desc": "Stainless, aluminium, specials; weld and NDT procedures on request." },
+        { "label": "FAT & traceability", "desc": "Factory acceptance testing with certificates and full material traceability." }
+      ]
+    ],
+    "productStripFeatureRows": [
+      [
+        { "label": "High performance", "desc": "High airflow and thrust tailored to the application." },
+        { "label": "Durable", "desc": "Reliable operation in industrial environments." },
+        { "label": "Quiet operation", "desc": "Lower noise for comfortable spaces." }
+      ],
+      [
+        { "label": "Energy efficiency", "desc": "Optimized consumption across the system." },
+        { "label": "Smart control", "desc": "Integrated automation and monitoring." },
+        { "label": "Flexible solutions", "desc": "Adaptable layouts for different buildings." }
+      ],
+      [
+        { "label": "High capacity", "desc": "Cooling and heating power for large loads." },
+        { "label": "Reliable performance", "desc": "Stable seasonal operation." },
+        { "label": "All-season use", "desc": "Designed for year-round comfort and process needs." }
+      ],
+      [
+        { "label": "Modular design", "desc": "Configurable air handling building blocks." },
+        { "label": "High efficiency", "desc": "Heat recovery and fan efficiency options." },
+        { "label": "Smart monitoring", "desc": "Visibility for operators and maintenance teams." }
+      ],
+      [
+        { "label": "Even distribution", "desc": "Homogeneous airflow in the served zone." },
+        { "label": "Aesthetic design", "desc": "Architect-friendly grilles and diffusers." },
+        { "label": "Easy installation", "desc": "Practical mounting and commissioning on site." }
+      ],
+      [
+        { "label": "Filter classes", "desc": "From coarse pre-filtration to fine and HEPA-grade options." },
+        { "label": "Indoor air quality", "desc": "Cleaner supply air for comfort and critical applications." },
+        { "label": "Standards alignment", "desc": "Selections aligned with hygiene and project specifications." }
+      ],
+      [
+        { "label": "Mounting & hardware", "desc": "Dampers, supports, and accessories that complete the system." },
+        { "label": "Wide compatibility", "desc": "Components matched to fans, ducts, and air devices." },
+        { "label": "Practical logistics", "desc": "Straightforward sourcing for site schedules." }
+      ],
+      [
+        { "label": "Control & panels", "desc": "Monitoring and control hardware for ventilation plants." },
+        { "label": "BMS integration", "desc": "Signals and interfaces suited to building automation." },
+        { "label": "Field-ready kits", "desc": "Practical layouts for installation and commissioning." }
+      ],
+      [
+        { "label": "Vibration suspension", "desc": "Springs and isolators tuned to equipment loads." },
+        { "label": "Noise control", "desc": "Reduced structure-borne and airborne noise paths." },
+        { "label": "Decoupled supports", "desc": "Stable equipment mounting with controlled transfer." }
+      ]
+    ]
   },
   "productCategories": {
     "tag": "Product Range",
@@ -209,14 +303,21 @@
     "catalogCardDesc": "Access PDFs and documents in the technical center.",
     "referenceEyebrow": "Reference",
     "referenceCardDesc": "Explore highlights from projects we have delivered.",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
     "certificateEyebrow": "Certificate",
     "certificateCardDesc": "Review our international quality, safety and compliance certificates.",
     "companyEyebrow": "Corporate",
     "companyCardDesc": "Discover NOVVES' story, leadership and team structure.",
-    "companyProfileVertical": "Company Profile",
+    "companyProfileVertical": "COMPANY PROFILE",
     "pillarExpandAria": "Show more",
     "pillarCollapseAria": "Collapse",
     "pillarCta": "View Details",
+    "catalogCardCta": "View",
     "productCardCta": "View Details",
     "solutionCardCta": "View Details",
     "midCtaBullet1": "48-hour preliminary assessment",
@@ -297,34 +398,58 @@
     {
       "title": "Product Catalog",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "Technical Briefs",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "Installation notes, electrical summaries, and application guides from the technical center."
     },
     {
       "title": "Datasheet Archive",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "referencePreview": [
     {
-      "title": "2M Lojistik Gebze Depo",
+      "title": "Healthcare Facilities",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/2m.png?v=2"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "theme": "orange"
     },
     {
-      "title": "3S Kale Topaz Zeytinburnu",
+      "title": "Logistics & Warehousing",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/3skale.png?v=2"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "theme": "sky"
     },
     {
-      "title": "Adana Yüreğir 100 Yataklı Hastane",
+      "title": "Commercial Buildings",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/adana-yuregir.png?v=2"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "theme": "emerald"
+    },
+    {
+      "title": "Industrial Plants",
+      "sector": "Industrial Plants",
+      "example": "Eczacıbaşı Production Facility",
+      "projectCount": "6",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/endustriyel-aselsan-konya-hero.png?v=1",
+      "theme": "zinc"
     }
   ],
   "certificatePreview": [
@@ -344,6 +469,77 @@
       "image": "/images/certificates/kalite-uygunluk-mockup.png"
     }
   ],
+  "companyProfileSection": {
+    "timelineIntro": "For more than two decades we have delivered smoke control, comfort HVAC and industrial ventilation end-to-end—from manufacturing to commissioning—with dependable engineering.",
+    "timelineHeadlinePart1": "Our journey began in ",
+    "timelineHeadlineEm1": "2004",
+    "timelineHeadlinePart2": "; today we are present ",
+    "timelineHeadlineEm2": "across Turkey",
+    "timelineHeadlinePart3": " and beyond.",
+    "milestones": [
+      {
+        "year": "2004",
+        "title": "Foundation",
+        "body": "We were founded in Istanbul.",
+        "image": "/images/corporate/novves-kurulus-bina.png?v=1",
+        "icon": "flag"
+      },
+      {
+        "year": "2010",
+        "title": "Growth",
+        "body": "We scaled with our first major healthcare project.",
+        "image": "/images/corporate/novves-buyume-bina.png?v=1",
+        "icon": "chart"
+      },
+      {
+        "year": "2015",
+        "title": "Certification",
+        "body": "We aligned operations and products with international standards.",
+        "image": "/images/corporate/novves-sertifikasyon-iso9001.png?v=1",
+        "icon": "certificate"
+      },
+      {
+        "year": "2020",
+        "title": "Leadership",
+        "body": "We became a trusted reference for complex ventilation projects.",
+        "image": "/images/corporate/novves-liderlik.png?v=1",
+        "icon": "star"
+      },
+      {
+        "year": "2024",
+        "title": "Today",
+        "body": "Nationwide footprint, strong teams, and partners by our side.",
+        "image": "/images/corporate/novves-gunumuz.png?v=1",
+        "icon": "people"
+      }
+    ],
+    "goalsTitle": "OUR FUTURE GOALS",
+    "goalsIntro": "Sustainability, digital capability and people are the three pillars of how we invest in tomorrow—evolving products and services with long-term value for stakeholders.",
+    "goalsPillars": [
+      {
+        "title": "Sustainable solutions",
+        "body": "We prioritise energy-efficient fans and system design to reduce environmental impact."
+      },
+      {
+        "title": "Technology and innovation",
+        "body": "CFD, automation and smart controls help us deliver measurable on-site performance."
+      },
+      {
+        "title": "People and development",
+        "body": "Continuous training and field experience keep our teams close to customers over the long run."
+      },
+      {
+        "title": "A wider Turkey",
+        "body": "We expand domestic production and service coverage so engineering support is within reach everywhere."
+      }
+    ],
+    "goalsAsideImage": "/images/corporate/novves-company-profile-goals-aside-v2.png?v=1",
+    "goalsAsideImageAlt": "NOVVES — abstract airflow and engineering illustration",
+    "bannerTitle": "We keep pace with change—and help shape what comes next.",
+    "bannerLine1": "We combine deep experience from the past with the demands of today.",
+    "bannerLine2": "Together we prepare for tomorrow’s ventilation and life-safety expectations.",
+    "bannerLogoAlt": "NOVVES HVAC"
+  },
   "companyProfileCards": [
     {
       "href": "/kurumsal/biz-kimiz",

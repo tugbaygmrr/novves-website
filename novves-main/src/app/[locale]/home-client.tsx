@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { CarouselStripLabel, SectionStripLabel } from "@/components/carousel-strip-label";
+import { SectionStripLabel } from "@/components/carousel-strip-label";
 import { ScrollVideoSection } from "@/components/scroll-video-section";
 import {
   COOKIE_CONSENT_EVENT,
@@ -11,6 +11,45 @@ import {
   parseStoredConsentJson,
   readCookieConsentRaw,
 } from "@/lib/cookie-consent-storage";
+import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
+import { solutionStripPageProductMedia } from "@/lib/solution-strip-media";
+
+/** Sertifika şeridi — `globals.css` ile aynı: --sand-200 / fan alanı (`bg-sand-200`) */
+const HOME_CERTIFICATE_STRIP_BG = "#e9eae2";
+
+type CompanyProfileMilestoneIcon = "flag" | "chart" | "certificate" | "star" | "people";
+
+type CompanyProfileMilestone = {
+  year: string;
+  title: string;
+  body: string;
+  image: string;
+  icon?: CompanyProfileMilestoneIcon;
+};
+
+type CompanyProfileGoalPillar = {
+  title: string;
+  body: string;
+};
+
+type CompanyProfileSection = {
+  timelineIntro: string;
+  timelineHeadlinePart1: string;
+  timelineHeadlineEm1: string;
+  timelineHeadlinePart2: string;
+  timelineHeadlineEm2: string;
+  timelineHeadlinePart3: string;
+  milestones: CompanyProfileMilestone[];
+  goalsTitle: string;
+  goalsIntro: string;
+  goalsPillars: CompanyProfileGoalPillar[];
+  goalsAsideImage?: string;
+  goalsAsideImageAlt?: string;
+  bannerTitle: string;
+  bannerLine1: string;
+  bannerLine2: string;
+  bannerLogoAlt: string;
+};
 
 type HomeDict = {
   hero: {
@@ -43,7 +82,25 @@ type HomeDict = {
     title: string;
     intro: string;
     items: { label: string; desc: string }[];
+    /** Varsayılan `pageChrome.pillarCta` yerine bu satırın düğmesi */
+    cta?: string;
+    /** `/${locale}` ön eki ile birleştirilir; yoksa `pillarLinks` sırası */
+    href?: string;
   }[];
+  /** Mühendislik vitrininin üst metin bloğu (CFD) — yalnızca tanımlı dillerde gösterilir */
+  engineeringShowcase?: {
+    title: string;
+    subtitle: string;
+    body: string;
+    cta: string;
+  };
+  /** Üç mühendislik adımı şeridi — başlık (yoksa `pageChrome.pillarsFallbackTitle`) */
+  engineeringPillarsSection?: {
+    title: string;
+    subtitle: string;
+    /** Başlığın altında tam genişlikte giriş paragrafı */
+    lead?: string;
+  };
   animation2: {
     startCard: {
       badge: string;
@@ -96,10 +153,28 @@ type HomeDict = {
   pageChrome?: Record<string, string>;
   solutionCarouselByHref?: Record<string, { title: string; description: string }>;
   productCategoryBlurbs?: string[];
-  catalogPreview?: { title: string; href: string; image: string }[];
-  referencePreview?: { title: string; href: string; image: string }[];
+  catalogPreview?: { title: string; href: string; image: string; desc?: string }[];
+  referencePreview?: {
+    title: string;
+    href: string;
+    image: string;
+    /** Sektör başlığı (renkli blokta kalın) — yoksa `title` kullanılır */
+    sector?: string;
+    /** Örnek proje adı */
+    example?: string;
+    /** Sayısal özet (örn. "3"); `referenceProjectWord` ile birleştirilir */
+    projectCount?: string;
+    theme?: "orange" | "sky" | "emerald" | "zinc";
+  }[];
   certificatePreview?: { title: string; href: string; image: string }[];
+  /** Yeni şirket profili düzeni (zaman çizelgesi + hedefler + banner); yoksa `companyProfileCards` kullanılır */
+  companyProfileSection?: CompanyProfileSection;
   companyProfileCards?: { title: string; href: string; image: string }[];
+  /** Anasayfa çözüm/ürün şerit kartları — her kartta 3 özellik (başlık + kısa açıklama). */
+  homeBands?: {
+    solutionStripFeatureRows?: { label: string; desc: string }[][];
+    productStripFeatureRows?: { label: string; desc: string }[][];
+  };
 };
 
 /** Navbar + paylaşılan metinler (ana sayfa dikey şeritler için) */
@@ -168,6 +243,16 @@ type PageChrome = {
   catalogCardDesc: string;
   referenceEyebrow: string;
   referenceCardDesc: string;
+  /** @deprecated Yeni düzen: `referenceBySectorKicker` + `referenceBySectorHeadline` — yoksa yedek */
+  referenceBySectorTitle: string;
+  /** Sol dikey başlık (lacivert) — boşsa navbar “Referanslar” metni */
+  referenceStripVertical: string;
+  /** Ana blok üst satır — küçük, normal ağırlık */
+  referenceBySectorKicker: string;
+  /** Ana blok alt satır — büyük, kalın */
+  referenceBySectorHeadline: string;
+  referenceProjectWord: string;
+  referenceExploreCta: string;
   certificateEyebrow: string;
   certificateCardDesc: string;
   companyEyebrow: string;
@@ -176,11 +261,10 @@ type PageChrome = {
   pillarExpandAria: string;
   pillarCollapseAria: string;
   pillarCta: string;
+  /** Katalog kartı turuncu CTA (örn. İncele) */
+  catalogCardCta: string;
   productCardCta: string;
   solutionCardCta: string;
-  midCtaBullet1: string;
-  midCtaBullet2: string;
-  midCtaBullet3: string;
   videoStatMeta: string;
   scrollVideoSideLabel: string;
   engineeringAlt1: string;
@@ -203,6 +287,12 @@ function pageChromeFromDict(dict: HomeDict): PageChrome {
     catalogCardDesc: g("catalogCardDesc"),
     referenceEyebrow: g("referenceEyebrow"),
     referenceCardDesc: g("referenceCardDesc"),
+    referenceBySectorTitle: g("referenceBySectorTitle"),
+    referenceStripVertical: g("referenceStripVertical"),
+    referenceBySectorKicker: g("referenceBySectorKicker"),
+    referenceBySectorHeadline: g("referenceBySectorHeadline"),
+    referenceProjectWord: g("referenceProjectWord"),
+    referenceExploreCta: g("referenceExploreCta"),
     certificateEyebrow: g("certificateEyebrow"),
     certificateCardDesc: g("certificateCardDesc"),
     companyEyebrow: g("companyEyebrow"),
@@ -211,11 +301,9 @@ function pageChromeFromDict(dict: HomeDict): PageChrome {
     pillarExpandAria: g("pillarExpandAria"),
     pillarCollapseAria: g("pillarCollapseAria"),
     pillarCta: g("pillarCta"),
+    catalogCardCta: g("catalogCardCta"),
     productCardCta: g("productCardCta"),
     solutionCardCta: g("solutionCardCta"),
-    midCtaBullet1: g("midCtaBullet1"),
-    midCtaBullet2: g("midCtaBullet2"),
-    midCtaBullet3: g("midCtaBullet3"),
     videoStatMeta: g("videoStatMeta"),
     scrollVideoSideLabel: g("scrollVideoSideLabel"),
     engineeringAlt1: g("engineeringAlt1"),
@@ -224,16 +312,26 @@ function pageChromeFromDict(dict: HomeDict): PageChrome {
   };
 }
 
+function referenceSectorHeadings(pc: PageChrome, navReferences: string) {
+  const vertical = pc.referenceStripVertical.trim() || navReferences.trim();
+  const kicker = pc.referenceBySectorKicker.trim();
+  let headline = pc.referenceBySectorHeadline.trim();
+  if (!headline) {
+    headline = (pc.referenceBySectorTitle || navReferences).trim();
+  }
+  return { vertical, kicker, headline };
+}
+
 const pillarImages = [
-  "/images/products/dragonfly-c.png",
-  "/images/products/marlin.png",
-  "/images/hero/endustriyel-mutfaklar.png",
+  "/images/pillars/pillar-01-muhendislik-tasarim.png?v=20260512-2",
+  "/images/pillars/pillar-02-uretim-saha.png?v=20260512-1",
+  "/images/pillars/pillar-03-saha-uygulama.png?v=20260512-1",
 ];
 
-/** Pillars hero row — public/images/home. `v` değiştir: dosya aynı adda kalınca `/_next/image` eski PNG’yi gösterebiliyor. */
-const ENGINEERING_COLLAGE_ASSET_V = "20260507-1";
+/** Pillars sol vitrin — `v` değiştir: CDN/tarayıcı önbelleği kırılır */
+const ENGINEERING_COLLAGE_ASSET_V = "20260511-1";
 const engineeringCollage = {
-  primary: `/images/home/novves-product-lineup.png?v=${ENGINEERING_COLLAGE_ASSET_V}`,
+  primaryVideo: `/video/novves-product-lineup.mp4?v=${ENGINEERING_COLLAGE_ASSET_V}`,
 } as const;
 
 /** Pillar card “Detayları İncele” targets — engineering / products / services */
@@ -249,24 +347,980 @@ const productCategoryMeta = [
   { href: "/urunler/aksesuarlar", image: "/images/products/ae-fjf.png" },
   { href: "/urunler/otomasyon-malzemeleri", image: "/images/products/basinclandirma-kontrol-panosu.png" },
   { href: "/urunler/titresim-ve-ses-izolasyon", image: "/images/products/yayli-titresim-izolatoru.png" },
-];
+] as const;
+
+/** `home.json` eksik kalsa bile şeritte tüm hub kategorileri görünsün */
+function productSlugToFallbackLabel(slug: string): string {
+  return slug
+    .split("-")
+    .map((part) => (part ? part.charAt(0).toUpperCase() + part.slice(1) : ""))
+    .join(" ");
+}
+
+/** Ürün / çözüm şeridi: lg+ ok beş kartlık sayfa; daha dar ekranda tek kart adımı */
+const PRODUCT_STRIP_PAGE_CARD_COUNT = 5;
+
+function scrollHorizontalStrip(
+  container: HTMLElement | null,
+  cardSelector: string,
+  direction: "prev" | "next",
+  desktopPageCardCount: number,
+) {
+  if (!container) return;
+  const cards = Array.from(container.querySelectorAll(cardSelector)) as HTMLElement[];
+  if (cards.length < 2) return;
+  const cardStep = cards[1]!.offsetLeft - cards[0]!.offsetLeft;
+  if (cardStep <= 0) return;
+
+  const isDesktop =
+    typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches;
+  let delta: number;
+  if (isDesktop) {
+    const pageEndIdx = Math.min(desktopPageCardCount, cards.length - 1);
+    delta = cards[pageEndIdx]!.offsetLeft - cards[0]!.offsetLeft;
+  } else {
+    delta = cardStep;
+  }
+  if (direction === "prev") delta = -delta;
+  const maxScroll = Math.max(0, container.scrollWidth - container.clientWidth);
+  const target = Math.max(0, Math.min(maxScroll, container.scrollLeft + delta));
+  container.scrollTo({ left: target, behavior: "smooth" });
+}
 
 /** Çözüm carousel — metinler locale home.json içindeki solutionCarouselByHref */
-const solutionCategorySlides = [
-  { href: "/cozumler/duman-isi-tahliye-sistemleri", image: "/images/products/dragonfly-c.png" },
-  { href: "/cozumler/konfor-iklimlendirme-sistemleri", image: "/images/products/tiger-pre.png" },
-  { href: "/cozumler/hijyenik-filtrasyonlu-havalandirma", image: "/images/products/marlin.png" },
-  { href: "/cozumler/endustriyel-hava-yonetimi", image: "/images/products/hound-al.png" },
-  { href: "/cozumler/atex-patlama-koruma-cozumleri", image: "/images/products/ae-fjf.png" },
-  { href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri", image: "/images/products/dolphin-pre.png" },
-  { href: "/cozumler/trafo-enerji-odalari-fanlari", image: "/images/products/tiger-pre.png" },
-  { href: "/cozumler/sera-tarimsal-havalandirma-sistemleri", image: "/images/products/marlin.png" },
-  { href: "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri", image: "/images/products/basinclandirma-kontrol-panosu.png" },
-  { href: "/cozumler/konut-tipi-havalandirma-sistemleri", image: "/images/products/dolphin-pre.png" },
-  { href: "/cozumler/marin-offshore-havalandirma-sistemleri", image: "/images/products/hound-al.png" },
-  { href: "/cozumler/proje-bazli-ozel-imalatlar", image: "/images/products/dragonfly-c.png" },
-  { href: "/cozumler/cfd-muhendislik-danismanligi", image: "/images/products/yayli-titresim-izolatoru.png" },
+type SolutionBandSlide = {
+  href: string;
+  image: string;
+  heroImage?: string;
+  thumbnails?: readonly [string, string, string];
+};
+
+/** Sıra: tasarım listesi (sol 1–7, sağ 8–13); görseller `solutionStripPageProductMedia` → solutions.json ürün alanları */
+const SOLUTION_STRIP_HREFS = [
+  "/cozumler/duman-isi-tahliye-sistemleri",
+  "/cozumler/hijyenik-filtrasyonlu-havalandirma",
+  "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri",
+  "/cozumler/sera-tarimsal-havalandirma-sistemleri",
+  "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri",
+  "/cozumler/marin-offshore-havalandirma-sistemleri",
+  "/cozumler/cfd-muhendislik-danismanligi",
+  "/cozumler/konfor-iklimlendirme-sistemleri",
+  "/cozumler/endustriyel-hava-yonetimi",
+  "/cozumler/trafo-enerji-odalari-fanlari",
+  "/cozumler/atex-patlama-koruma-cozumleri",
+  "/cozumler/konut-tipi-havalandirma-sistemleri",
+  "/cozumler/proje-bazli-ozel-imalatlar",
+] as const;
+
+const solutionCategorySlides: SolutionBandSlide[] = SOLUTION_STRIP_HREFS.map((href) => {
+  const m = solutionStripPageProductMedia[href];
+  if (!m) {
+    throw new Error(`solutionStripPageProductMedia eksik: ${href}`);
+  }
+  return {
+    href,
+    image: m.thumbnails[0],
+    heroImage: m.hero,
+    thumbnails: m.thumbnails,
+  };
+});
+
+const homeSolutionBandSlides = solutionCategorySlides;
+
+type StripFeature = { label: string; desc: string };
+
+/** Şerit sırası `solutionCategorySlides` ile aynı; dilde `homeBands.solutionStripFeatureRows` yoksa kullanılır */
+const DEFAULT_SOLUTION_STRIP_ROWS: StripFeature[][] = [
+  [
+    { label: "Fire scenarios", desc: "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios." },
+    { label: "Jet & natural", desc: "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies." },
+    { label: "EN 12101 ready", desc: "Certified products and type-test documentation packaged for code reviews and inspections." },
+  ],
+  [
+    { label: "Room pressure", desc: "Positive/negative pressure cascades and leakage control to protect critical spaces." },
+    { label: "HEPA & fine", desc: "Hospital, GMP, and food lines with filter classes and change-out strategies." },
+    { label: "Monitoring", desc: "DP, humidity, and particle sensing with logging and alarms for compliance." },
+  ],
+  [
+    { label: "Stocking density", desc: "Fresh-air and exhaust rates sized for headcount, season, and heat stress." },
+    { label: "Gas & moisture", desc: "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts." },
+    { label: "Corrosion tough", desc: "Materials and motor protection for wash-down and aggressive barn environments." },
+  ],
+  [
+    { label: "Tunnel & poly", desc: "Even velocity profiles and temperature stratification for tunnel and multi-span houses." },
+    { label: "CO₂ & RH", desc: "Ventilation paired with humidification or dehumidification for crop response." },
+    { label: "Seasonal energy", desc: "VFD and control strategies to trim fan energy across seasonal loads." },
+  ],
+  [
+    { label: "Panels & logic", desc: "Central panels for fire, process, and comfort fans with clear interlocks." },
+    { label: "BMS / SCADA", desc: "Modbus, BACnet, and site-wide automation interfaces and sequences." },
+    { label: "Commissioning", desc: "Stepwise testing, handover scripts, and operator screens for maintenance." },
+  ],
+  [
+    { label: "Salt spray", desc: "Coatings and stainless options aligned with C4/C5 marine exposure classes." },
+    { label: "Class society", desc: "Technical files and tests aligned with vessel class and offshore norms." },
+    { label: "Redundancy", desc: "N+1 layouts and access paths for offshore availability and service." },
+  ],
+  [
+    { label: "Smoke & visibility", desc: "3D smoke modelling for jet fan placement, visibility, and temperature fields." },
+    { label: "Heat & contaminants", desc: "Distribution studies for kitchens, process exhaust, and waste heat." },
+    { label: "Client-ready reports", desc: "Summaries, sections, and visuals for investors, AHJs, and design reviews." },
+  ],
+  [
+    { label: "Comfort band", desc: "Stable temperature–humidity bands for offices, hotels, and retail." },
+    { label: "Acoustics", desc: "Low-SPL selections and isolation for shafts, façades, and plant rooms." },
+    { label: "Energy & VRF", desc: "Flow and pressure planning coordinated with heat pumps and VRF systems." },
+  ],
+  [
+    { label: "Process airflow", desc: "High-temperature and abrasive-duty fans for drying, emission, and line pressure." },
+    { label: "Dust & filters", desc: "Fan curves matched to dust loading, filter dp, and maintenance cycles." },
+    { label: "Uptime", desc: "Standby fans, spare-part paths, and service access to shorten planned stops." },
+  ],
+  [
+    { label: "Transformer heat", desc: "Cooling airflow sized for transformer and busbar losses with design margin." },
+    { label: "Fire & smoke", desc: "Smoke exhaust and pressurisation coordinated with electrical infrastructure." },
+    { label: "Utility specs", desc: "Product ranges aligned with OEM, utility, and IEC-oriented specifications." },
+  ],
+  [
+    { label: "Hazard zones", desc: "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas." },
+    { label: "Spark-free", desc: "Ex d/m/e and compatible drives for explosive gas and dust atmospheres." },
+    { label: "ATEX dossier", desc: "Risk study, technical file, and site marking ready for audits." },
+  ],
+  [
+    { label: "Shaft & wet rooms", desc: "Compact, low-noise units for central shafts, bathrooms, and kitchens." },
+    { label: "Façade fit", desc: "Balcony and wall-mounted options that respect acoustic and architectural limits." },
+    { label: "Energy labels", desc: "Efficiency classes aligned with residential regulations and running cost." },
+  ],
+  [
+    { label: "Custom geometry", desc: "Project-specific casings for tight footprints, flanges, and duct transitions." },
+    { label: "Materials & weld", desc: "Stainless, aluminium, specials; weld and NDT procedures on request." },
+    { label: "FAT & traceability", desc: "Factory acceptance testing with certificates and full material traceability." },
+  ],
 ];
+
+const DEFAULT_PRODUCT_STRIP_ROWS: StripFeature[][] = [
+  [
+    { label: "High performance", desc: "High airflow and thrust tailored to the application." },
+    { label: "Durable", desc: "Reliable operation in industrial environments." },
+    { label: "Quiet operation", desc: "Lower noise for comfortable spaces." },
+  ],
+  [
+    { label: "Energy efficiency", desc: "Optimized consumption across the system." },
+    { label: "Smart control", desc: "Integrated automation and monitoring." },
+    { label: "Flexible solutions", desc: "Adaptable layouts for different buildings." },
+  ],
+  [
+    { label: "High capacity", desc: "Cooling and heating power for large loads." },
+    { label: "Reliable performance", desc: "Stable seasonal operation." },
+    { label: "All-season use", desc: "Designed for year-round comfort and process needs." },
+  ],
+  [
+    { label: "Modular design", desc: "Configurable air handling building blocks." },
+    { label: "High efficiency", desc: "Heat recovery and fan efficiency options." },
+    { label: "Smart monitoring", desc: "Visibility for operators and maintenance teams." },
+  ],
+  [
+    { label: "Even distribution", desc: "Homogeneous airflow in the served zone." },
+    { label: "Aesthetic design", desc: "Architect-friendly grilles and diffusers." },
+    { label: "Easy installation", desc: "Practical mounting and commissioning on site." },
+  ],
+  [
+    { label: "Filter classes", desc: "From coarse pre-filtration to fine and HEPA-grade options." },
+    { label: "Indoor air quality", desc: "Cleaner supply air for comfort and critical applications." },
+    { label: "Standards alignment", desc: "Selections aligned with hygiene and project specifications." },
+  ],
+  [
+    { label: "Mounting & hardware", desc: "Dampers, supports, and accessories that complete the system." },
+    { label: "Wide compatibility", desc: "Components matched to fans, ducts, and air devices." },
+    { label: "Practical logistics", desc: "Straightforward sourcing for site schedules." },
+  ],
+  [
+    { label: "Control & panels", desc: "Monitoring and control hardware for ventilation plants." },
+    { label: "BMS integration", desc: "Signals and interfaces suited to building automation." },
+    { label: "Field-ready kits", desc: "Practical layouts for installation and commissioning." },
+  ],
+  [
+    { label: "Vibration suspension", desc: "Springs and isolators tuned to equipment loads." },
+    { label: "Noise control", desc: "Reduced structure-borne and airborne noise paths." },
+    { label: "Decoupled supports", desc: "Stable equipment mounting with controlled transfer." },
+  ],
+];
+
+/** Ürün şeridi: her kart indeksi için bir satır (9 kategori); eksik dilde `fallback[i]` kullanılır */
+function pickStripFeatureRowsForCount(
+  rows: StripFeature[][] | undefined,
+  fallback: StripFeature[][],
+  count: number,
+): StripFeature[][] {
+  return Array.from({ length: count }, (_, i) => {
+    const r = rows?.[i];
+    if (r && r.length >= 3) return r.slice(0, 3);
+    return fallback[i] ?? fallback[i % fallback.length]!;
+  });
+}
+
+function HomeMarketStripBackdrop() {
+  return (
+    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      <div className="absolute inset-0 bg-[#02050f]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_120%_70%_at_50%_-15%,rgba(56,189,248,0.16),transparent_58%)]" />
+      <div className="absolute -left-[35%] top-[18%] h-[85%] w-[85%] -rotate-[11deg] opacity-[0.11] bg-[linear-gradient(90deg,transparent,rgba(56,189,248,0.55),transparent)] blur-2xl" />
+      <div className="absolute -right-[30%] bottom-[-8%] h-[75%] w-[75%] rotate-[9deg] opacity-[0.09] bg-[linear-gradient(90deg,transparent,rgba(37,99,235,0.55),transparent)] blur-2xl" />
+      <div
+        className="absolute inset-0 opacity-[0.045]"
+        style={{
+          backgroundImage: "radial-gradient(circle at 1px 1px, rgba(125,211,252,0.4) 1px, transparent 0)",
+          backgroundSize: "26px 26px",
+        }}
+      />
+    </div>
+  );
+}
+
+function HomeMarketStripFeatureIcon({ index }: { index: number }) {
+  const cls = "h-5 w-5 text-sky-300";
+  const stroke = 1.5;
+  switch (index % 3) {
+    case 0:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
+      );
+    case 1:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M4 12h10M4 17h16" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" />
+        </svg>
+      );
+  }
+}
+
+type SolutionLeadIconKind =
+  | "duman"
+  | "konfor"
+  | "hijyen"
+  | "endustri"
+  | "atex"
+  | "hayvancilik"
+  | "trafo"
+  | "sera"
+  | "otomasyon"
+  | "konut"
+  | "marin"
+  | "ozel"
+  | "cfd"
+  | "default";
+
+function solutionLeadIconFromHref(href: string): SolutionLeadIconKind {
+  if (href.includes("duman-isi")) return "duman";
+  if (href.includes("konfor-iklim")) return "konfor";
+  if (href.includes("hijyenik")) return "hijyen";
+  if (href.includes("endustriyel-hava")) return "endustri";
+  if (href.includes("atex")) return "atex";
+  if (href.includes("hayvancilik")) return "hayvancilik";
+  if (href.includes("trafo-enerji")) return "trafo";
+  if (href.includes("sera-tarimsal")) return "sera";
+  if (href.includes("akilli-otomasyon")) return "otomasyon";
+  if (href.includes("konut-tipi")) return "konut";
+  if (href.includes("marin-offshore")) return "marin";
+  if (href.includes("proje-bazli")) return "ozel";
+  if (href.includes("cfd-muhendislik")) return "cfd";
+  return "default";
+}
+
+function SolutionShowcaseLeadIconByKind({ kind }: { kind: SolutionLeadIconKind }) {
+  const cls = "h-6 w-6 shrink-0 text-primary";
+  const sw = 1.65;
+  switch (kind) {
+    case "duman":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 2.5c-1.8 3.2-5.5 5.2-5.5 10.5a5.5 5.5 0 1011 0c0-5.3-3.7-7.3-5.5-10.5z"
+          />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v4M10.5 17h3" />
+        </svg>
+      );
+    case "konfor":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <circle cx="12" cy="12" r="3.5" />
+          <path strokeLinecap="round" d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4" />
+        </svg>
+      );
+    case "hijyen":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+          />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+        </svg>
+      );
+    case "endustri":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 6.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"
+          />
+          <path
+            strokeLinecap="round"
+            d="M12 2v2.5M12 19.5V22M4.5 12H2M22 12h-2.5M5.6 5.6L4 4M20 20l-1.6-1.6M5.6 18.4L4 20M20 4l-1.6 1.6"
+          />
+        </svg>
+      );
+    case "atex":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l8.66 15H3.34L12 3z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v4M12 17h.01" />
+        </svg>
+      );
+    case "hayvancilik":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 14c2-3 5-4 8-4s6 1 8 4M6 14v3M18 14v3" />
+          <path strokeLinecap="round" d="M8 10h2M14 10h2" />
+        </svg>
+      );
+    case "trafo":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
+      );
+    case "sera":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 19c-3 0-6-2-6-5s3-5 6-5 6 2 6 5-3 5-6 5z" />
+          <path strokeLinecap="round" d="M12 9V5M9 7l3-3 3 3" />
+        </svg>
+      );
+    case "otomasyon":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <rect x="4" y="4" width="6" height="6" rx="1" />
+          <rect x="14" y="4" width="6" height="6" rx="1" />
+          <rect x="4" y="14" width="6" height="6" rx="1" />
+          <rect x="14" y="14" width="6" height="6" rx="1" />
+        </svg>
+      );
+    case "konut":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 10l8-6 8 6v10a1 1 0 01-1 1H5a1 1 0 01-1-1V10z" />
+          <path strokeLinecap="round" d="M9 21v-6h6v6" />
+        </svg>
+      );
+    case "marin":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 22V12" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 12H2a10 10 0 0020 0h-3" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 12V9a3 3 0 116 0v3" />
+        </svg>
+      );
+    case "ozel":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+        </svg>
+      );
+    case "cfd":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 19V5M4 19h16M8 15l3-4 3 2 4-6" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h6v6H4V7zM14 5h6v8h-6V5zM4 17h16v2H4v-2z" />
+        </svg>
+      );
+  }
+}
+
+const COMPANY_PROFILE_NAVY = "#1e3a5f";
+
+function CompanyProfileTimelineIcon({ kind }: { kind: CompanyProfileMilestoneIcon }) {
+  const cls = "h-5 w-5";
+  const sw = 1.75;
+  const stroke = COMPANY_PROFILE_NAVY;
+  switch (kind) {
+    case "flag":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M5 3v18" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+          <path
+            d="M5 4h11l-2 4 2 4H5"
+            stroke={stroke}
+            strokeWidth={sw}
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          />
+        </svg>
+      );
+    case "chart":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M4 19h16" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+          <path d="M7 15v-4M12 15V8M17 15v-7" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+        </svg>
+      );
+    case "certificate":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+          <rect x="5" y="4" width="14" height="12" rx="1" stroke={stroke} strokeWidth={sw} />
+          <path d="M9 10h6M9 13h4" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+          <path d="M12 16v4l2-1 2 1v-4" stroke={stroke} strokeWidth={sw} strokeLinejoin="round" />
+        </svg>
+      );
+    case "star":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path
+            d="M12 3l2.2 5.5L20 10l-4.5 3.3L17 20l-5-3-5 3 1.5-6.7L4 10l5.8-1.5L12 3z"
+            stroke={stroke}
+            strokeWidth={sw}
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          />
+        </svg>
+      );
+    case "people":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+          <circle cx="9" cy="8" r="3" stroke={stroke} strokeWidth={sw} />
+          <circle cx="16" cy="9" r="2.5" stroke={stroke} strokeWidth={sw} />
+          <path
+            d="M4 20c0-3 2.5-5 5-5s5 2 5 5M13 20c0-2.2 1.8-4 4-4"
+            stroke={stroke}
+            strokeWidth={sw}
+            strokeLinecap="round"
+          />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
+
+function CompanyProfileGoalPillarIcon({ index }: { index: number }) {
+  const cls = "h-6 w-6 shrink-0";
+  const sw = 1.65;
+  const stroke = COMPANY_PROFILE_NAVY;
+  const i = index % 4;
+  if (i === 0) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+        <path
+          d="M12 3c-4 4-7 7-7 11a7 7 0 0014 0c0-4-3-7-7-11z"
+          stroke={stroke}
+          strokeWidth={sw}
+          strokeLinejoin="round"
+        />
+        <path d="M12 11v6M9 14h6" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+      </svg>
+    );
+  }
+  if (i === 1) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+        <circle cx="12" cy="12" r="3" stroke={stroke} strokeWidth={sw} />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+          stroke={stroke}
+          strokeWidth={sw}
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  }
+  if (i === 2) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+        <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+        <circle cx="9" cy="7" r="4" stroke={stroke} strokeWidth={sw} />
+        <path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+      </svg>
+    );
+  }
+  return (
+    <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M4 10c3-2 6-3 8-3s5 1 8 3v10H4V10z"
+        stroke={stroke}
+        strokeWidth={sw}
+        strokeLinejoin="round"
+      />
+      <path d="M8 14h8M8 17h5" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function HomeCompanyProfileGoalsTargetIcon() {
+  const stroke = COMPANY_PROFILE_NAVY;
+  return (
+    <svg className="h-7 w-7 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <circle cx="12" cy="12" r="9" stroke={stroke} strokeWidth={1.75} />
+      <circle cx="12" cy="12" r="4" stroke={stroke} strokeWidth={1.75} />
+      <path d="M12 3v2M12 19v2M3 12h2M19 12h2" stroke={stroke} strokeWidth={1.75} strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function HomeCompanyProfileSectionBlock({
+  locale,
+  verticalLabel,
+  section,
+  viewAllCorporate,
+}: {
+  locale: string;
+  verticalLabel: string;
+  section: CompanyProfileSection;
+  viewAllCorporate: string;
+}) {
+  const navy = "text-[#1e3a5f]";
+  const milestoneIconCycle: CompanyProfileMilestoneIcon[] = ["flag", "chart", "certificate", "star", "people"];
+  const goalsAsideRaw = (section.goalsAsideImage ?? "").trim();
+  const goalsAsidePath = goalsAsideRaw.split("?")[0] || goalsAsideRaw;
+
+  return (
+    <div id="company-profile" className="relative mt-14 scroll-mt-24 sm:mt-16 md:scroll-mt-[5.5rem] lg:mt-[4.5rem]">
+      <div className="rounded-[1.35rem] border border-[#1e3a5f]/[0.08] bg-[#f5f5f0] px-4 py-10 shadow-[0_20px_56px_-40px_rgba(15,22,36,0.18)] ring-1 ring-black/[0.03] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
+        <div className="mx-auto max-w-[1400px]">
+          <div className="flex flex-col gap-10 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:items-start lg:gap-x-10 lg:gap-y-0">
+            <div className="flex w-full justify-center self-start lg:sticky lg:top-28 lg:justify-start lg:pt-1">
+              <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 lg:items-stretch lg:justify-start lg:gap-5">
+                <div
+                  className="h-0.5 w-11 shrink-0 rounded-full bg-primary sm:w-12 lg:h-auto lg:w-0.5 lg:self-stretch"
+                  aria-hidden
+                />
+                <span
+                  className={`max-lg:text-left text-[13px] font-bold uppercase leading-snug tracking-[0.2em] antialiased sm:text-[15px] lg:text-center lg:text-[18px] lg:leading-none lg:tracking-[0.22em] xl:text-[20px] lg:[text-orientation:mixed] lg:[writing-mode:vertical-rl] lg:rotate-180 ${navy}`}
+                >
+                  {verticalLabel}
+                </span>
+              </div>
+            </div>
+
+            <div className="min-w-0 space-y-12 sm:space-y-14 lg:space-y-16">
+              {/* Zaman çizelgesi */}
+              <section aria-labelledby="company-profile-timeline-heading">
+                <p className={`max-w-[52ch] text-[14px] leading-relaxed text-ink/75 sm:text-[15px] ${navy}`}>
+                  {section.timelineIntro}
+                </p>
+                <h2
+                  id="company-profile-timeline-heading"
+                  className={`mt-4 max-w-[40ch] text-balance text-xl font-bold leading-snug tracking-[-0.02em] sm:text-2xl lg:text-[1.65rem] lg:leading-[1.2] ${navy}`}
+                >
+                  {section.timelineHeadlinePart1}
+                  <span className="font-extrabold">{section.timelineHeadlineEm1}</span>
+                  {section.timelineHeadlinePart2}
+                  <span className="font-extrabold">{section.timelineHeadlineEm2}</span>
+                  {section.timelineHeadlinePart3}
+                </h2>
+
+                <div className="relative mt-10 lg:mt-12">
+                  <div
+                    className="pointer-events-none absolute left-[6%] right-[4%] top-[22px] z-0 hidden h-[2px] bg-[#1e3a5f] lg:block"
+                    aria-hidden
+                  />
+                  <div
+                    className="pointer-events-none absolute right-[3%] top-[17px] z-0 hidden h-0 w-0 border-y-[6px] border-y-transparent border-l-[10px] border-l-[#1e3a5f] lg:block"
+                    aria-hidden
+                  />
+
+                  <ul className="grid gap-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-5 lg:gap-4">
+                    {section.milestones.map((m, index) => {
+                      const iconKind = m.icon ?? milestoneIconCycle[index % milestoneIconCycle.length]!;
+                      return (
+                        <li key={`${m.year}-${m.title}`} className="relative z-[1] flex flex-col items-center text-center">
+                          <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1e3a5f] bg-[#f5f5f0] shadow-sm">
+                            <CompanyProfileTimelineIcon kind={iconKind} />
+                          </div>
+                          <div className="relative mb-3 w-full overflow-hidden rounded-lg border border-[#1e3a5f]/10 bg-white shadow-sm">
+                            <div className="relative aspect-[4/3] w-full">
+                              <Image
+                                src={m.image}
+                                alt=""
+                                fill
+                                className="object-cover object-center"
+                                sizes="(max-width: 640px) 88vw, (max-width: 1024px) 40vw, 18vw"
+                              />
+                            </div>
+                          </div>
+                          <p className={`font-mono-eng text-[11px] font-bold tracking-[0.14em] ${navy}`}>{m.year}</p>
+                          <p className={`mt-1 text-[15px] font-bold leading-snug ${navy}`}>{m.title}</p>
+                          <p className="mt-1.5 max-w-[28ch] text-[13px] leading-relaxed text-ink/68 sm:text-[14px]">
+                            {m.body}
+                          </p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </section>
+
+              {/* Gelecek hedefleri */}
+              <section
+                className="overflow-hidden rounded-2xl border border-[#1e3a5f]/10 bg-white/70 p-6 shadow-[0_16px_48px_-36px_rgba(15,22,36,0.2)] sm:p-8 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,320px)] lg:items-stretch lg:gap-10"
+                aria-labelledby="company-profile-goals-heading"
+              >
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <HomeCompanyProfileGoalsTargetIcon />
+                    <h3 id="company-profile-goals-heading" className={`text-lg font-bold uppercase tracking-[0.12em] sm:text-xl ${navy}`}>
+                      {section.goalsTitle}
+                    </h3>
+                  </div>
+                  <p className={`mt-4 max-w-[56ch] text-[14px] leading-relaxed text-ink/72 sm:text-[15px] ${navy}`}>
+                    {section.goalsIntro}
+                  </p>
+                  <ul className="mt-8 grid gap-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-8">
+                    {section.goalsPillars.map((p, i) => (
+                      <li key={p.title} className="flex gap-3 text-left sm:gap-4">
+                        <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1e3a5f]/12 bg-[#f5f5f0]">
+                          <CompanyProfileGoalPillarIcon index={i} />
+                        </div>
+                        <div>
+                          <p className={`text-[15px] font-bold leading-snug ${navy}`}>{p.title}</p>
+                          <p className="mt-1 text-[13px] leading-relaxed text-ink/68 sm:text-[14px]">{p.body}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {goalsAsidePath ? (
+                  <div className="relative mt-8 min-h-[220px] w-full overflow-hidden rounded-xl border border-[#1e3a5f]/8 bg-[#e8e6e0] sm:min-h-[260px] lg:mt-0 lg:h-full lg:min-h-[min(100%,320px)] lg:self-stretch">
+                    <Image
+                      key={goalsAsideRaw || goalsAsidePath}
+                      src={goalsAsidePath}
+                      alt={section.goalsAsideImageAlt ?? ""}
+                      fill
+                      unoptimized
+                      className="object-cover object-center"
+                      sizes="(max-width: 1024px) 92vw, 360px"
+                    />
+                  </div>
+                ) : null}
+              </section>
+
+              {/* Alt banner */}
+              <div className="flex flex-col items-stretch gap-6 rounded-2xl border border-[#1e3a5f]/10 bg-gradient-to-br from-[#ebe9e4] via-[#f2f0eb] to-[#e6e4df] px-6 py-7 shadow-[0_14px_40px_-28px_rgba(15,22,36,0.22)] sm:flex-row sm:items-center sm:gap-8 sm:px-8 sm:py-8">
+                <div
+                  className="mx-auto flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#1e3a5f] text-white shadow-md sm:mx-0"
+                  aria-hidden
+                >
+                  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                </div>
+                <div className="min-w-0 flex-1 text-center sm:text-left">
+                  <p className={`text-[1.05rem] font-bold leading-snug sm:text-[1.15rem] ${navy}`}>{section.bannerTitle}</p>
+                  <p className="mt-2 text-[13px] leading-relaxed text-ink/70 sm:text-[14px]">{section.bannerLine1}</p>
+                  <p className="mt-1 text-[13px] leading-relaxed text-ink/70 sm:text-[14px]">{section.bannerLine2}</p>
+                </div>
+                <div className="flex shrink-0 justify-center sm:justify-end">
+                  <Image
+                    src="/images/novves-logo.svg"
+                    alt={section.bannerLogoAlt}
+                    width={160}
+                    height={44}
+                    className="h-9 w-auto opacity-[0.92] sm:h-10"
+                  />
+                </div>
+              </div>
+
+              <div className="flex w-full justify-center pt-2">
+                <Link
+                  href={`/${locale}/kurumsal`}
+                  className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
+                >
+                  <span>{viewAllCorporate}</span>
+                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type ReferenceSectorTheme = "orange" | "sky" | "emerald" | "zinc";
+
+const REFERENCE_SECTOR_THEME_CYCLE: ReferenceSectorTheme[] = ["orange", "sky", "emerald", "zinc"];
+
+function resolveReferenceSectorTheme(index: number, raw?: string): ReferenceSectorTheme {
+  if (raw === "orange" || raw === "sky" || raw === "emerald" || raw === "zinc") return raw;
+  return REFERENCE_SECTOR_THEME_CYCLE[index % 4]!;
+}
+
+const REFERENCE_SECTOR_THEME_STYLES: Record<
+  ReferenceSectorTheme,
+  { footer: string; iconCircle: string }
+> = {
+  /* Sıcak ama marka turuncusu değil — göze batmadan ayırt edici */
+  orange: {
+    footer: "bg-[#7a4f45]",
+    iconCircle:
+      "bg-[#7a4f45] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+  },
+  sky: {
+    footer: "bg-[#3d5a6b]",
+    iconCircle:
+      "bg-[#3d5a6b] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+  },
+  emerald: {
+    footer: "bg-[#2d5548]",
+    iconCircle:
+      "bg-[#2d5548] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+  },
+  zinc: {
+    footer: "bg-[#4a5568]",
+    iconCircle:
+      "bg-[#4a5568] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+  },
+};
+
+function HomeReferenceSectorIcon({ theme }: { theme: ReferenceSectorTheme }) {
+  const cls = "h-7 w-7 text-white";
+  const sw = 1.65;
+  switch (theme) {
+    case "orange":
+      return (
+        <svg className="h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+        </svg>
+      );
+    case "sky":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 10h16v8H4v-8z" />
+          <path strokeLinecap="round" d="M8 10V7a4 4 0 018 0v3M6 18h12" />
+        </svg>
+      );
+    case "emerald":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 21h12M6 21V8l6-4 6 4v13" />
+          <path strokeLinecap="round" d="M9 13h2M13 13h2M9 17h6" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 21h16M4 21V10l4-2 2 2V8l4-2 4 2v13" />
+          <path strokeLinecap="round" d="M10 8V5h4v3M14 5v3" />
+        </svg>
+      );
+  }
+}
+
+function HomeCatalogDocIcon({ variant }: { variant: number }) {
+  const cls = "h-5 w-5";
+  const sw = 1.75;
+  switch (variant % 3) {
+    case 0:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M7 3h7l3 3v15a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" />
+          <path strokeLinecap="round" d="M14 3v4h4M9 12h6M9 16h6" />
+        </svg>
+      );
+    case 1:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h10M4 18h14" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 10l2 2-2 2" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 4h9l3 3v13a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M10 4v4h4M8 14h8M8 18h6" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 21h12" opacity={0.45} />
+        </svg>
+      );
+  }
+}
+
+function HomeSolutionFooterGlyph({ index }: { index: number }) {
+  const cls = "h-4 w-4 text-primary";
+  const stroke = 1.65;
+  switch (index % 3) {
+    case 0:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
+      );
+    case 1:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M4 12h10M4 17h16" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M3 12h18" />
+        </svg>
+      );
+  }
+}
+
+function HomeSolutionShowcaseCard({
+  locale,
+  href,
+  title,
+  subtitle,
+  heroSrc,
+  productThumbs,
+  features,
+  leadIconKind,
+}: {
+  locale: string;
+  href: string;
+  title: string;
+  subtitle: string;
+  heroSrc: string;
+  productThumbs: readonly [string, string, string];
+  features: StripFeature[];
+  leadIconKind: SolutionLeadIconKind;
+}) {
+  const triple: StripFeature[] = [...features.slice(0, 3)];
+  while (triple.length < 3) triple.push({ label: "—", desc: "" });
+  return (
+    <Link
+      href={`/${locale}${href}`}
+      className="group flex h-full min-h-[380px] w-full flex-col overflow-hidden rounded-xl border border-white/25 bg-gradient-to-b from-[#ffb078] via-primary to-[#d9481f] shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_18px_40px_-20px_rgba(220,80,30,0.45)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:shadow-[0_22px_48px_-18px_rgba(220,80,30,0.5)] sm:min-h-[460px]"
+    >
+      <div className="relative h-[136px] w-full shrink-0 overflow-hidden bg-primary sm:h-[148px]">
+        <img
+          src={heroSrc}
+          alt=""
+          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div className="flex min-h-0 flex-1 flex-col gap-3 bg-primary/93 p-3.5 sm:gap-4 sm:p-4">
+        <div className="flex h-[7.35rem] shrink-0 gap-3 sm:h-[7.65rem]">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/15 text-white shadow-[0_0_16px_-4px_rgba(0,0,0,0.2)] [&_svg]:!text-white">
+            <SolutionShowcaseLeadIconByKind kind={leadIconKind} />
+          </div>
+          <div className="flex h-full min-h-0 w-0 min-w-0 flex-1 flex-col overflow-hidden pt-0.5">
+            <h3 className="line-clamp-2 text-[15px] font-bold leading-snug text-white drop-shadow-sm sm:text-base">{title}</h3>
+            <p className="mt-1.5 line-clamp-3 text-[12px] leading-relaxed text-white/90 sm:text-[13px]">{subtitle}</p>
+          </div>
+        </div>
+        <div className="mt-auto grid shrink-0 grid-cols-3 gap-2 sm:gap-2.5">
+          {productThumbs.map((src, i) => (
+            <div
+              key={`${src}-${i}`}
+              className="flex aspect-square items-center justify-center rounded-lg bg-black/12 p-2 ring-1 ring-white/25"
+            >
+              <img src={src} alt="" className="max-h-full max-w-full object-contain" loading="lazy" decoding="async" />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mt-auto shrink-0 border-t border-white/25 bg-[#c2410c]/95 px-2 py-3 sm:px-3 sm:py-4">
+        <div className="grid grid-cols-3 items-start gap-1 sm:gap-2">
+          {triple.map((f, i) => (
+            <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
+              <div className="mb-1.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/12 text-white [&_svg]:!text-white">
+                <HomeSolutionFooterGlyph index={i} />
+              </div>
+              <p className="flex min-h-[2.75rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white sm:min-h-[3rem] sm:text-[11px]">
+                <span className="line-clamp-2">{f.label}</span>
+              </p>
+              <p className="mt-0.5 flex min-h-[2.5rem] w-full items-start justify-center text-[9px] leading-snug text-white/85 sm:min-h-[2.75rem] sm:text-[10px]">
+                <span className="line-clamp-2">{f.desc}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+function HomeMarketStripCard({
+  locale,
+  href,
+  title,
+  subtitle,
+  imageSrc,
+  features,
+}: {
+  locale: string;
+  href: string;
+  title: string;
+  subtitle: string;
+  imageSrc: string;
+  features: StripFeature[];
+}) {
+  const triple: StripFeature[] = [...features.slice(0, 3)];
+  while (triple.length < 3) triple.push({ label: "—", desc: "" });
+  return (
+    <Link
+      href={`/${locale}${href}`}
+      className="group flex h-full min-h-[360px] w-full flex-col rounded-lg border border-sky-500/30 bg-[#070f1a]/95 p-4 pb-5 shadow-[inset_0_1px_0_rgba(56,189,248,0.08),0_18px_40px_-28px_rgba(0,0,0,0.65)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-sky-400/55 hover:shadow-[0_22px_48px_-26px_rgba(56,189,248,0.12)] sm:min-h-[420px] sm:p-5 sm:pb-6"
+    >
+      <div className="flex h-[6.25rem] shrink-0 flex-col sm:h-[6.5rem]">
+        <h3 className="line-clamp-2 text-[13px] font-bold leading-snug text-white sm:text-[15px] sm:leading-snug lg:text-base">{title}</h3>
+        <p className="mt-1.5 line-clamp-2 text-[12px] leading-relaxed text-slate-400 sm:text-[13px]">{subtitle}</p>
+      </div>
+      <div className="flex h-[10rem] shrink-0 items-center justify-center py-2 sm:h-[10.5rem] sm:py-3">
+        <img
+          src={imageSrc}
+          alt=""
+          className="mx-auto max-h-full w-full max-w-full object-contain object-center drop-shadow-[0_0_24px_rgba(56,189,248,0.18)] transition-transform duration-300 group-hover:scale-[1.03]"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div className="mt-auto shrink-0 border-t border-sky-500/25 pt-4 sm:pt-5">
+        <div className="grid grid-cols-3 items-start gap-2 sm:gap-3">
+          {triple.map((f, i) => (
+            <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
+              <div className="mb-1.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-sky-400/30 bg-sky-500/15 sm:mb-2">
+                <HomeMarketStripFeatureIcon index={i} />
+              </div>
+              <p className="flex min-h-[2.75rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white sm:min-h-[3rem] sm:text-[11px]">
+                <span className="line-clamp-2">{f.label}</span>
+              </p>
+              <p className="mt-0.5 flex min-h-[2.5rem] w-full items-start justify-center text-[9px] leading-snug text-slate-400 sm:min-h-[2.75rem] sm:text-[10px]">
+                <span className="line-clamp-2">{f.desc}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Link>
+  );
+}
 
 const productFallbackImages = [
   "/images/products/dragonfly-c.png",
@@ -278,13 +1332,15 @@ const productFallbackImages = [
   "/images/products/ae-fjf.png",
 ];
 
+/** Hero fanının altındaki dönen şerit — zemin `sand-200`; EN / CE / ISO9001 / ISO14001 / BSI / TSE renkli (invert yok), diğer .png koyu silüet */
 const certificateLogoBarItems = [
-  { src: "/images/certificates/EN.svg", alt: "EN" },
-  { src: "/images/certificates/ISO14001.svg", alt: "ISO 14001" },
-  { src: "/images/certificates/CE.svg", alt: "CE" },
-  { src: "/images/certificates/ISO9001.svg", alt: "ISO 9001" },
+  { src: "/images/certificates/ENEC.png?v=1", alt: "EN" },
+  { src: "/images/certificates/ISO9001.png?v=7", alt: "ISO 9001" },
+  { src: "/images/certificates/ISO14001.png?v=1", alt: "ISO 14001" },
+  { src: "/images/certificates/TSE.png?v=1", alt: "TSE" },
+  { src: "/images/certificates/bsi.png?v=2", alt: "BSI" },
+  { src: "/images/certificates/CE.png?v=10", alt: "CE" },
   { src: "/images/certificates/Efectis.svg", alt: "Efectis" },
-  { src: "/images/certificates/BSI.svg", alt: "BSI" },
 ] as const;
 const certificateLogoMarqueeItems = [...certificateLogoBarItems, ...certificateLogoBarItems] as const;
 
@@ -377,14 +1433,152 @@ function SectionHead({
   );
 }
 
+function PillarJourneyStepIcon({ step }: { step: number }) {
+  const cls = "h-5 w-5 text-[#1e3a5f]";
+  const sw = 1.55;
+  const s = step % 3;
+  if (s === 0) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" />
+        <path strokeLinecap="round" d="M12 12l8-4.5M12 12v9M12 12L4 7.5" />
+      </svg>
+    );
+  }
+  if (s === 1) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M8 7h11M8 17h11M5 12h14" />
+      </svg>
+    );
+  }
+  return (
+    <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M6 21V10l6-4 6 4v11M9 21v-5h6v5" />
+    </svg>
+  );
+}
+
+function HomeEngineeringPillarsJourneyStrip({
+  pillars,
+  locale,
+  strip,
+  fallbackTitle,
+  pc,
+}: {
+  pillars: HomeDict["pillars"];
+  locale: string;
+  strip?: { title: string; subtitle: string; lead?: string } | null | undefined;
+  fallbackTitle: string;
+  pc: PageChrome;
+}) {
+  const title = (strip?.title ?? "").trim() || fallbackTitle.trim();
+  const subtitle = (strip?.subtitle ?? "").trim();
+  const lead = (strip?.lead ?? "").trim();
+
+  return (
+    <div id="pillars-journey" className="mt-12 scroll-mt-24 md:scroll-mt-[5.5rem]">
+      <header className="mb-8 max-w-[52rem] lg:mb-10">
+        <h2 className="text-balance text-[clamp(1.25rem,2.6vw,1.85rem)] font-bold tracking-[-0.025em] text-ink">{title}</h2>
+        {subtitle ? (
+          <p className="mt-1 text-sm font-semibold tracking-wide text-primary sm:text-base">{subtitle}</p>
+        ) : null}
+        {lead ? (
+          <p className={`mt-4 max-w-[52ch] text-[15px] leading-[1.72] text-secondary/80 sm:text-[16px] sm:leading-[1.68]`}>
+            {lead}
+          </p>
+        ) : null}
+      </header>
+
+      <div className="flex flex-col gap-9 sm:gap-10 lg:gap-12">
+        {pillars.map((pillar, index) => {
+          const isOdd = index % 2 === 1;
+          const rawPath = (pillar.href ?? pillarLinks[index] ?? "/kurumsal").trim() || "/kurumsal";
+          const path = rawPath.startsWith("/") ? rawPath : `/${rawPath}`;
+          const pillarHref = `/${locale}${path}`;
+          const pillarCta = (pillar.cta ?? pc.pillarCta).trim() || pc.pillarCta;
+          const img = pillarImages[index] ?? pillarImages[0]!;
+          const num = String(index + 1).padStart(2, "0");
+          const clip = isOdd ? "polygon(0% 0%, 90% 0%, 100% 100%, 8% 100%)" : "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)";
+
+          return (
+            <div key={`${index}-${pillar.tag}`}>
+              <div className="flex flex-col gap-4 lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-4 lg:gap-y-0">
+                <div
+                  className={`order-1 flex justify-center lg:col-span-3 lg:row-span-1 ${
+                    isOdd ? "lg:order-3 lg:justify-end lg:pr-0" : "lg:order-1 lg:justify-start lg:pl-0"
+                  }`}
+                >
+                  <span
+                    className="font-mono-eng text-[clamp(3.25rem,13vw,9rem)] font-black leading-[0.85] tracking-[-0.045em] text-primary/[0.22] sm:text-[clamp(3.75rem,11vw,7.5rem)] lg:text-[clamp(4rem,9.5vw,8.5rem)]"
+                    aria-hidden
+                  >
+                    {num}
+                  </span>
+                </div>
+
+                <div className="order-2 lg:col-span-4 lg:order-2">
+                  <Link href={pillarHref} className="group relative mx-auto block w-full max-w-[14.5rem] sm:max-w-xs lg:max-w-none">
+                    <div
+                      className="relative aspect-[4/3] w-full overflow-hidden bg-transparent shadow-[0_12px_32px_-22px_rgba(15,22,36,0.18)]"
+                      style={{ clipPath: clip }}
+                    >
+                      <Image
+                        src={img}
+                        alt={pillar.title}
+                        fill
+                        sizes="(max-width: 1024px) 88vw, 36vw"
+                        className="object-cover object-center transition-transform duration-500 ease-out [transform:scale(1.08)] group-hover:[transform:scale(1.12)]"
+                      />
+                    </div>
+                  </Link>
+                </div>
+
+                <div className={`order-3 px-0 sm:px-0 lg:col-span-5 ${isOdd ? "lg:order-1" : "lg:order-3"}`}>
+                  <div className="flex items-start gap-2.5">
+                    <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-ink/10 bg-transparent">
+                      <PillarJourneyStepIcon step={index} />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-mono-eng text-[10px] font-semibold uppercase tracking-[0.16em] text-primary">{pillar.tag}</p>
+                      <h3 className="mt-1 text-balance text-base font-bold tracking-[-0.02em] text-ink sm:text-lg lg:text-[1.125rem] lg:leading-snug">
+                        {pillar.title}
+                      </h3>
+                      <p className="mt-2 max-w-[38ch] text-[14px] leading-[1.65] text-secondary/72">{pillar.intro}</p>
+                      <div className="mt-5">
+                        <Link
+                          href={pillarHref}
+                          className="inline-flex items-center gap-1.5 rounded-md bg-primary px-5 py-2.5 text-[11px] font-semibold tracking-[-0.01em] text-white shadow-[0_8px_20px_-12px_rgba(231,106,57,0.5)] transition-colors hover:bg-[#e55a28]"
+                        >
+                          {pillarCta}
+                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 export default function HomeClient({
   dict,
   common,
   locale,
+  referencePreviewProjectCounts,
 }: {
   dict: HomeDict;
   common?: HomeCommonNav | null;
   locale: string;
+  /** `@/data/references` üzerinden; referanslar sayfası ile aynı veri — `referencePreview` sırasıyla */
+  referencePreviewProjectCounts?: number[];
 }) {
   const n = mergeHomeCommon(common).navbar;
   const pc = pageChromeFromDict(dict);
@@ -392,29 +1586,15 @@ export default function HomeClient({
   const catalogPreview = dict.catalogPreview ?? [];
   const referencePreview = dict.referencePreview ?? [];
   const certificatePreview = dict.certificatePreview ?? [];
+  const companyProfileSection = dict.companyProfileSection;
   const companyProfileCards = dict.companyProfileCards ?? [];
   const productBlurbs = dict.productCategoryBlurbs ?? [];
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [expandedPillars, setExpandedPillars] = useState<Record<number, boolean>>({});
-  const [hoveredProductIndex, setHoveredProductIndex] = useState<number | null>(null);
-  const [hoveredSolutionIndex, setHoveredSolutionIndex] = useState<number | null>(null);
-  const [hoveredCatalogIndex, setHoveredCatalogIndex] = useState<number | null>(null);
-  const [hoveredReferenceIndex, setHoveredReferenceIndex] = useState<number | null>(null);
-  const [hoveredCertificateIndex, setHoveredCertificateIndex] = useState<number | null>(null);
   const [hoveredCompanyProfileIndex, setHoveredCompanyProfileIndex] = useState<number | null>(null);
   const [allowRestrictedSections, setAllowRestrictedSections] = useState<boolean | null>(null);
-  const solutionCarouselRef = useRef<HTMLDivElement | null>(null);
-  const productCarouselRef = useRef<HTMLDivElement | null>(null);
-  const [solutionLabelSpinning, setSolutionLabelSpinning] = useState(false);
-  const [productLabelSpinning, setProductLabelSpinning] = useState(false);
-  const solutionLabelTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const productLabelTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const pillarIntro = dict.pillars[0]?.intro ?? "";
-  const pillarIntroParts = pillarIntro.split(".");
-  const pillarIntroLead = (pillarIntroParts[0] ?? "").trim();
-  const pillarIntroRest = pillarIntroParts.slice(1).join(".").trim();
-
+  const solutionStripCarouselRef = useRef<HTMLDivElement | null>(null);
+  const productStripCarouselRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const applyConsent = (raw: string | null) => {
       if (!raw) {
@@ -456,136 +1636,37 @@ export default function HomeClient({
     return () => window.removeEventListener(COOKIE_CONSENT_EVENT, onConsentUpdated as EventListener);
   }, []);
 
-  const productSlideCount = dict.productCategories.items.length;
-  const solutionSlideCount = solutionCategorySlides.length;
+  const bands = dict.homeBands;
+  const solutionStripRows = pickStripFeatureRowsForCount(
+    bands?.solutionStripFeatureRows,
+    DEFAULT_SOLUTION_STRIP_ROWS,
+    homeSolutionBandSlides.length,
+  );
 
-  const scrollProductCarousel = (direction: "prev" | "next") => {
-    const container = productCarouselRef.current;
-    if (!container) return;
+  const homeItems = dict.productCategories.items;
+  const homeProductBandRows = PRODUCT_CATEGORY_NAV.slice(0, 9).map((nav, i) => {
+    const meta = productCategoryMeta[i];
+    const labelFromHome = homeItems[i]?.label?.trim();
+    return {
+      label: labelFromHome || productSlugToFallbackLabel(nav.slug),
+      href: meta?.href ?? `/urunler/${nav.slug}`,
+      image: meta?.image ?? productFallbackImages[i % productFallbackImages.length],
+      blurb: productBlurbs[i] ?? pc.productFallbackDesc,
+    };
+  });
+  const productStripRows = pickStripFeatureRowsForCount(
+    bands?.productStripFeatureRows,
+    DEFAULT_PRODUCT_STRIP_ROWS,
+    homeProductBandRows.length,
+  );
 
-    const cards = Array.from(container.querySelectorAll("[data-product-card]")) as HTMLElement[];
-    if (cards.length < 2) return;
-    const step = cards[1].offsetLeft - cards[0].offsetLeft;
-    if (step <= 0) return;
-    const currentIndex = Math.round(container.scrollLeft / step);
-    const directionDelta = direction === "next" ? 1 : -1;
-    const targetIndex = Math.max(0, Math.min(cards.length - 1, currentIndex + directionDelta));
-    container.scrollTo({ left: targetIndex * step, behavior: "smooth" });
-
-    if (productLabelTimeoutRef.current) clearTimeout(productLabelTimeoutRef.current);
-    setProductLabelSpinning(true);
-    productLabelTimeoutRef.current = setTimeout(() => setProductLabelSpinning(false), 320);
+  const scrollSolutionStrip = (direction: "prev" | "next") => {
+    scrollHorizontalStrip(solutionStripCarouselRef.current, "[data-solution-strip-card]", direction, PRODUCT_STRIP_PAGE_CARD_COUNT);
   };
 
-  const scrollSolutionCarousel = (direction: "prev" | "next") => {
-    const container = solutionCarouselRef.current;
-    if (!container) return;
-
-    const cards = Array.from(container.querySelectorAll("[data-solution-card]")) as HTMLElement[];
-    if (cards.length < 2) return;
-    const step = cards[1].offsetLeft - cards[0].offsetLeft;
-    if (step <= 0) return;
-    const currentIndex = Math.round(container.scrollLeft / step);
-    const directionDelta = direction === "next" ? 1 : -1;
-    const targetIndex = Math.max(0, Math.min(cards.length - 1, currentIndex + directionDelta));
-    container.scrollTo({ left: targetIndex * step, behavior: "smooth" });
-
-    if (solutionLabelTimeoutRef.current) clearTimeout(solutionLabelTimeoutRef.current);
-    setSolutionLabelSpinning(true);
-    solutionLabelTimeoutRef.current = setTimeout(() => setSolutionLabelSpinning(false), 320);
+  const scrollProductStrip = (direction: "prev" | "next") => {
+    scrollHorizontalStrip(productStripCarouselRef.current, "[data-product-strip-card]", direction, PRODUCT_STRIP_PAGE_CARD_COUNT);
   };
-
-  useEffect(() => {
-    const container = solutionCarouselRef.current;
-    if (!container) return;
-
-    const measureSegmentWidth = () => {
-      const cards = Array.from(container.querySelectorAll("[data-solution-card]")) as HTMLElement[];
-      if (cards.length < 2 || solutionSlideCount <= 0) return 0;
-      const step = cards[1].offsetLeft - cards[0].offsetLeft;
-      if (step <= 0) return 0;
-      return step * solutionSlideCount;
-    };
-
-    let raf: number | null = null;
-    const setupInitial = () => {
-      const segmentWidth = measureSegmentWidth();
-      if (segmentWidth > 0) container.scrollLeft = segmentWidth;
-      else raf = requestAnimationFrame(setupInitial);
-    };
-    raf = requestAnimationFrame(setupInitial);
-
-    let scrollTimeout: ReturnType<typeof setTimeout> | null = null;
-    const handleScroll = () => {
-      if (scrollTimeout) clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        const segmentWidth = measureSegmentWidth();
-        if (segmentWidth <= 0) return;
-        const center = container.scrollLeft + container.clientWidth / 2;
-        if (center < segmentWidth) {
-          container.scrollLeft += segmentWidth;
-        } else if (center > segmentWidth * 2) {
-          container.scrollLeft -= segmentWidth;
-        }
-      }, 180);
-    };
-
-    container.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", setupInitial);
-
-    return () => {
-      if (raf !== null) cancelAnimationFrame(raf);
-      if (scrollTimeout) clearTimeout(scrollTimeout);
-      container.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", setupInitial);
-    };
-  }, [solutionSlideCount]);
-
-  useEffect(() => {
-    const container = productCarouselRef.current;
-    if (!container) return;
-
-    const measureSegmentWidth = () => {
-      const cards = Array.from(container.querySelectorAll("[data-product-card]")) as HTMLElement[];
-      if (cards.length < 2 || productSlideCount <= 0) return 0;
-      const step = cards[1].offsetLeft - cards[0].offsetLeft;
-      if (step <= 0) return 0;
-      return step * productSlideCount;
-    };
-
-    let raf: number | null = null;
-    const setupInitial = () => {
-      const segmentWidth = measureSegmentWidth();
-      if (segmentWidth > 0) container.scrollLeft = segmentWidth;
-      else raf = requestAnimationFrame(setupInitial);
-    };
-    raf = requestAnimationFrame(setupInitial);
-
-    let scrollTimeout: ReturnType<typeof setTimeout> | null = null;
-    const handleScroll = () => {
-      if (scrollTimeout) clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        const segmentWidth = measureSegmentWidth();
-        if (segmentWidth <= 0) return;
-        const center = container.scrollLeft + container.clientWidth / 2;
-        if (center < segmentWidth) {
-          container.scrollLeft += segmentWidth;
-        } else if (center > segmentWidth * 2) {
-          container.scrollLeft -= segmentWidth;
-        }
-      }, 180);
-    };
-
-    container.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", setupInitial);
-
-    return () => {
-      if (raf !== null) cancelAnimationFrame(raf);
-      if (scrollTimeout) clearTimeout(scrollTimeout);
-      container.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", setupInitial);
-    };
-  }, [productSlideCount]);
 
   const canUseFineHover = () =>
     typeof window !== "undefined" &&
@@ -597,8 +1678,8 @@ export default function HomeClient({
       {/* 01 — SCROLL VIDEO: KOVAN TIPI */}
       <div id="hero-main" className="scroll-mt-24 md:scroll-mt-[5.5rem]">
       <ScrollVideoSection
-        framesPath="/animation/frames-2"
-        totalFrames={240}
+        videoSrc="/video/hero-scroll.mp4"
+        scrollVh={260}
         id="animation-2"
         startCard={dict.hero}
         endCard={dict.animation2.endCard}
@@ -608,223 +1689,201 @@ export default function HomeClient({
       />
       </div>
 
-      <section className="border-b border-ink/10 bg-[#e8e7e3] py-8 sm:py-12">
-        <div className="mx-auto max-w-[1600px] px-1.5 sm:px-10 lg:px-16">
-          <div className="relative overflow-hidden">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-5 bg-gradient-to-r from-[#e8e7e3] to-transparent sm:w-12" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-5 bg-gradient-to-l from-[#e8e7e3] to-transparent sm:w-12" />
+      {/* 02 — Sertifika: sand-200 (fan ile aynı); ÇÖZÜMLER: eski lacivert şerit */}
+      <section id="solution-categories" className="relative scroll-mt-24 md:scroll-mt-[5.5rem]">
+        <div className="relative bg-sand-200">
+          <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
+            <div className="border-b border-ink/[0.08] py-8 sm:py-10">
+              <div className="relative overflow-hidden">
+                <div
+                  className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-5 sm:w-12"
+                  style={{ backgroundImage: `linear-gradient(to right, ${HOME_CERTIFICATE_STRIP_BG}, transparent)` }}
+                />
+                <div
+                  className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-5 sm:w-12"
+                  style={{ backgroundImage: `linear-gradient(to left, ${HOME_CERTIFICATE_STRIP_BG}, transparent)` }}
+                />
 
-            <div className="certificate-marquee-track flex w-max items-center gap-5 sm:gap-10">
-              {certificateLogoMarqueeItems.map((cert, index) => (
-                <a
-                  key={`${cert.alt}-${index}`}
-                  href={`/${locale}/kurumsal/sertifikalar`}
-                  className="flex min-w-[86px] items-center justify-center px-1.5 sm:min-w-[110px] sm:px-2"
-                >
-                  {cert.src.endsWith(".svg") ? (
-                    <img
-                      src={cert.src}
-                      alt={cert.alt}
-                      className="h-8 w-auto max-w-full object-contain opacity-100 transition-[opacity,transform] duration-300 hover:scale-[1.03] hover:opacity-100 sm:h-12"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  ) : (
-                    <Image
-                      src={cert.src}
-                      alt={cert.alt}
-                      width={180}
-                      height={72}
-                      className="h-8 w-auto max-w-full object-contain opacity-100 transition-[opacity,transform] duration-300 hover:scale-[1.03] hover:opacity-100 sm:h-12"
-                    />
-                  )}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 02 — SOLUTION CATEGORIES */}
-      <section id="solution-categories" className="relative overflow-hidden bg-sand-200 pb-2 pt-12 text-ink sm:pb-2 sm:pt-16">
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
-        <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
-          <div className="novves-carousel-toolbar mt-6 flex w-full flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
-
-            <div className="relative z-[1] flex min-h-0 min-w-0 items-center gap-1 sm:gap-2 [min-width:0]">
-            <button
-              type="button"
-              onClick={() => scrollSolutionCarousel("prev")}
-              aria-label={pc.previousSolutions}
-              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#f26a2e] sm:h-12 sm:w-12"
-            >
-              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            <div className="relative min-w-0 flex-1">
-              <div
-                className={`pointer-events-none absolute left-2 -top-6 z-20 w-[170px] origin-[50%_120%] rounded-[1.4rem] bg-[#1d1c1e] px-5 pb-10 pt-2.5 text-center text-white shadow-[0_22px_44px_-22px_rgba(8,10,14,0.6)] transition-transform duration-300 ease-[cubic-bezier(0.45,0.05,0.25,1)] ${
-                  solutionLabelSpinning ? "-rotate-[20deg] scale-100" : "-rotate-[4deg] scale-100"
-                }`}
-                style={{
-                  WebkitMaskImage:
-                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
-                  maskImage:
-                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
-                }}
-              >
-                <p className="font-mono-eng text-[10.5px] font-semibold tracking-[0.02em] text-white/95">#born<span className="text-[#f26a2e]">to</span>flow</p>
-                <p className="mt-0.5 font-mono-eng text-[17px] font-bold uppercase leading-none tracking-[0.02em]">{n.solutions}</p>
-              </div>
-            <div
-              ref={solutionCarouselRef}
-              className="flex min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pt-14 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              {[...solutionCategorySlides, ...solutionCategorySlides, ...solutionCategorySlides].map((item, loopIndex) => {
-                const index = loopIndex % solutionSlideCount;
-                const entry = solutionByHref[item.href];
-                const title = entry?.title ?? item.href;
-                void entry;
-                return (
-                  <div key={`${item.href}-${loopIndex}`} data-solution-card className="relative w-full shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
-                    <Link
-                      href={`/${locale}${item.href}`}
-                      onMouseEnter={() => {
-                        if (canUseFineHover()) setHoveredSolutionIndex(index);
-                      }}
-                      onMouseLeave={() => setHoveredSolutionIndex(null)}
-                      className="group relative flex min-h-[96px] items-center justify-start rounded-[1.9rem] bg-[#f26a2e] py-4 pl-[18px] pr-[78px] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#ea621f]"
-                    >
-                      <span className="pointer-events-none absolute left-[64px] top-0 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6]" />
-                      <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#f26a2e]">
-                        <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
-                      </span>
-                      <span className="relative top-[6px] z-[1] block w-full line-clamp-2 text-center text-[11.5px] font-semibold leading-[1.18] sm:top-[6px] sm:text-[13px] sm:leading-[1.3]">{title}</span>
-                      {item.image ? (
+                <div className="certificate-marquee-track flex w-max items-center gap-5 sm:gap-10">
+                  {certificateLogoMarqueeItems.map((cert, index) => {
+                    const isEfectisSvg = cert.src.endsWith(".svg") && cert.src.includes("Efectis");
+                    const isEnecPng = cert.src.includes("ENEC.png");
+                    const isCePng = cert.src.includes("CE.png");
+                    const isIso9001Png = cert.src.includes("ISO9001.png");
+                    const isIso14001Png = cert.src.includes("ISO14001.png");
+                    const isBsiPng = cert.src.includes("bsi.png");
+                    const isTsePng = cert.src.includes("TSE.png");
+                    const keepColorPng =
+                      isEnecPng || isCePng || isIso9001Png || isIso14001Png || isBsiPng || isTsePng;
+                    const lightOnDark = !keepColorPng && !isEfectisSvg;
+                    return (
+                      <a
+                        key={`${cert.alt}-${index}`}
+                        href={`/${locale}/kurumsal/sertifikalar`}
+                        className={`flex items-center justify-center px-1.5 sm:px-2 ${
+                          isCePng
+                            ? "min-w-[4.5rem] sm:min-w-[5.5rem]"
+                            : "min-w-[86px] sm:min-w-[110px]"
+                        }`}
+                      >
                         <img
-                          src={item.image}
-                          alt=""
-                          aria-hidden="true"
+                          src={cert.src}
+                          alt={cert.alt}
+                          className={`w-auto max-w-full object-contain transition-[opacity,transform,filter] duration-300 hover:scale-[1.04] hover:opacity-100 ${
+                            isEfectisSvg
+                              ? "h-8 opacity-95 mix-blend-multiply sm:h-12"
+                              : isEnecPng
+                                ? "h-9 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(59,130,246,0.22)] sm:h-11"
+                                : isCePng
+                                  ? "h-11 opacity-100 drop-shadow-[0_2px_14px_rgba(36,48,68,0.12)] drop-shadow-[0_0_18px_rgba(255,215,160,0.45)] sm:h-14"
+                                  : isIso9001Png
+                                    ? "h-10 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(34,211,238,0.28)] sm:h-[3.25rem]"
+                                    : isIso14001Png
+                                      ? "h-10 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_16px_rgba(34,197,94,0.32)] sm:h-[3.25rem]"
+                                      : isTsePng
+                                        ? "h-9 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.1)] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)] sm:h-11"
+                                        : isBsiPng
+                                          ? "h-8 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.12)] drop-shadow-[0_0_8px_rgba(36,48,68,0.08)] sm:h-10"
+                                          : `h-8 opacity-95 sm:h-12 ${
+                                              lightOnDark ? "brightness-0 hover:opacity-100" : ""
+                                            }`
+                          }`}
                           loading="lazy"
                           decoding="async"
-                          className="pointer-events-none absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 select-none object-contain drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)] sm:right-3 sm:h-[68px] sm:w-[68px]"
                         />
-                      ) : null}
-                    </Link>
-                  </div>
-                );
-              })}
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
-            </div>
+          </div>
+        </div>
 
-            <button
-              type="button"
-              onClick={() => scrollSolutionCarousel("next")}
-              aria-label={pc.nextSolutions}
-              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#f26a2e] sm:h-12 sm:w-12"
-            >
-              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+        <div className="relative text-white">
+          <HomeMarketStripBackdrop />
+          <div className="relative z-[1] mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
+            <div className="py-10 sm:py-12 sm:pt-12 sm:pb-14 lg:py-16">
+              <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
+                <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-white sm:text-xl">{n.solutions}</h2>
+                <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
+              </div>
+              <div className="-mx-1 flex items-stretch gap-2 px-1 sm:-mx-0 sm:gap-3 sm:px-0">
+                <button
+                  type="button"
+                  onClick={() => scrollSolutionStrip("prev")}
+                  aria-label={pc.previousSolutions}
+                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-primary/40 bg-[#0c1524] text-primary shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-primary/70 hover:bg-primary/15 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+                >
+                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <div className="min-w-0 flex-1">
+                  <div
+                    ref={solutionStripCarouselRef}
+                    className="flex gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
+                    style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+                  >
+                    {homeSolutionBandSlides.map((item, i) => {
+                      const entry = solutionByHref[item.href];
+                      const title = entry?.title ?? item.href;
+                      const desc = entry?.description ?? pc.defaultSolutionDesc;
+                      const heroSrc = item.heroImage ?? item.image;
+                      const productThumbs: readonly [string, string, string] =
+                        item.thumbnails ?? ([item.image, item.image, item.image] as const);
+                      return (
+                        <div
+                          key={item.href}
+                          data-solution-strip-card
+                          className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-3rem)/5)] lg:flex-[0_0_calc((100%-3rem)/5)]"
+                        >
+                          <HomeSolutionShowcaseCard
+                            locale={locale}
+                            href={item.href}
+                            title={title}
+                            subtitle={desc}
+                            heroSrc={heroSrc}
+                            productThumbs={productThumbs}
+                            features={solutionStripRows[i] ?? solutionStripRows[0]!}
+                            leadIconKind={solutionLeadIconFromHref(item.href)}
+                          />
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => scrollSolutionStrip("next")}
+                  aria-label={pc.nextSolutions}
+                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-primary/40 bg-[#0c1524] text-primary shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-primary/70 hover:bg-primary/15 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+                >
+                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 02 — PRODUCT CATEGORIES */}
-      <section
-        id="product-categories"
-        className="relative scroll-mt-24 overflow-hidden bg-sand-200 pb-8 pt-4 text-ink sm:pb-10 sm:pt-6 md:scroll-mt-[5.5rem]"
-      >
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-35" />
-
-        <div className="relative mx-auto max-w-[1600px] px-2.5 sm:px-10 lg:px-16">
-          <div className="novves-carousel-toolbar mt-6 flex w-full flex-row items-center gap-2 sm:gap-2 lg:mt-8 lg:gap-3">
-
-            <div className="relative z-[1] flex min-h-0 min-w-0 items-center gap-1 sm:gap-2 [min-width:0]">
+      {/* 03 — ÜRÜNLER (aynı referans düzeni) */}
+      <section id="product-categories" className="relative scroll-mt-24 text-white md:scroll-mt-[5.5rem]">
+        <HomeMarketStripBackdrop />
+        <div className="relative z-[1] mx-auto max-w-[1600px] px-4 py-12 sm:px-10 sm:py-14 lg:py-16">
+          <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
+            <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-white sm:text-xl">{n.products}</h2>
+            <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-sky-500" aria-hidden />
+          </div>
+              <div className="-mx-1 flex items-stretch gap-2 px-1 sm:-mx-0 sm:gap-3 sm:px-0">
             <button
               type="button"
-              onClick={() => scrollProductCarousel("prev")}
+              onClick={() => scrollProductStrip("prev")}
               aria-label={pc.previousProducts}
-              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#1d2f4d] sm:h-12 sm:w-12"
+              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sky-500/35 bg-[#0c1524] text-sky-200 shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-sky-400/60 hover:bg-sky-500/20 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             >
-              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-
-            <div className="relative min-w-0 flex-1">
+            <div className="min-w-0 flex-1">
               <div
-                className={`pointer-events-none absolute left-2 -top-6 z-20 w-[170px] origin-[50%_120%] rounded-[1.4rem] bg-[#1d1c1e] px-5 pb-10 pt-2.5 text-center text-white shadow-[0_22px_44px_-22px_rgba(8,10,14,0.6)] transition-transform duration-300 ease-[cubic-bezier(0.45,0.05,0.25,1)] ${
-                  productLabelSpinning ? "-rotate-[20deg] scale-100" : "-rotate-[4deg] scale-100"
-                }`}
-                style={{
-                  WebkitMaskImage:
-                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
-                  maskImage:
-                    "radial-gradient(circle 32px at 56px 100%, transparent 31px, black 32px)",
-                }}
+                ref={productStripCarouselRef}
+                className="flex gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
+                style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               >
-                <p className="font-mono-eng text-[10.5px] font-semibold tracking-[0.02em] text-white/95">#born<span className="text-[#f26a2e]">to</span>flow</p>
-                <p className="mt-0.5 font-mono-eng text-[17px] font-bold uppercase leading-none tracking-[0.02em]">{n.products}</p>
-              </div>
-            <div
-              ref={productCarouselRef}
-              className="flex min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pt-14 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              {[...dict.productCategories.items, ...dict.productCategories.items, ...dict.productCategories.items].map((cat, loopIndex) => {
-              const index = loopIndex % productSlideCount;
-              const meta = productCategoryMeta[index];
-              const href = meta?.href ?? "/urunler";
-              void meta;
-              return (
-                <div key={`${cat.label}-${loopIndex}`} data-product-card className="relative w-full shrink-0 snap-start sm:w-[210px] lg:w-[calc((100%-2rem)/5)]">
-                  <Link
-                    href={`/${locale}${href}`}
-                    onMouseEnter={() => {
-                      if (canUseFineHover()) setHoveredProductIndex(index);
-                    }}
-                    onMouseLeave={() => setHoveredProductIndex(null)}
-                    className="group relative flex min-h-[96px] items-center justify-start rounded-[1.9rem] bg-[#1d2f4d] py-4 pl-[18px] pr-[78px] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-all duration-300 hover:bg-[#13233d]"
-                  >
-                    <span className="pointer-events-none absolute left-[64px] top-0 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ecebe6]" />
-                    <span className="pointer-events-none absolute left-[64px] top-0 z-[2] flex h-11 w-11 -translate-x-1/2 -translate-y-[42%] items-center justify-center rounded-full bg-[#1d2f4d]">
-                      <img src="/images/novves-icon.svg" alt="" aria-hidden="true" className="h-5 w-5 brightness-0 invert" />
-                    </span>
-                    <span className="relative top-[6px] z-[1] block w-full line-clamp-2 text-center text-[11.5px] font-semibold leading-[1.18] sm:top-[6px] sm:text-[13px] sm:leading-[1.3]">{cat.label}</span>
-                    {meta?.image ? (
-                      <img
-                        src={meta.image}
-                        alt=""
-                        aria-hidden="true"
-                        loading="lazy"
-                        decoding="async"
-                        className="pointer-events-none absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 select-none object-contain drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)] sm:right-3 sm:h-[68px] sm:w-[68px]"
+                {homeProductBandRows.map((row, i) => {
+                  return (
+                    <div
+                      key={row.href}
+                      data-product-strip-card
+                      className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-3rem)/5)] lg:flex-[0_0_calc((100%-3rem)/5)]"
+                    >
+                      <HomeMarketStripCard
+                        locale={locale}
+                        href={row.href}
+                        title={row.label}
+                        subtitle={row.blurb}
+                        imageSrc={row.image}
+                        features={productStripRows[i] ?? productStripRows[0]!}
                       />
-                    ) : null}
-                  </Link>
-                </div>
-                );
-              })}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-            </div>
-
             <button
               type="button"
-              onClick={() => scrollProductCarousel("next")}
+              onClick={() => scrollProductStrip("next")}
               aria-label={pc.nextProducts}
-              className="mt-14 inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-2xl bg-[#1d1c1e] text-white shadow-[0_18px_32px_-18px_rgba(15,20,30,0.4)] transition-colors hover:bg-[#1d2f4d] sm:h-12 sm:w-12"
+              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sky-500/35 bg-[#0c1524] text-sky-200 shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-sky-400/60 hover:bg-sky-500/20 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             >
-              <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
-            </div>
           </div>
         </div>
       </section>
@@ -848,14 +1907,14 @@ export default function HomeClient({
                 />
                 <div className="group relative overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex-1 lg:self-stretch">
                   <div className="relative aspect-[16/10] w-full lg:h-full lg:aspect-auto">
-                    <Image
-                      src={engineeringCollage.primary}
-                      alt={pc.engineeringAlt1}
-                      fill
-                      priority
-                      quality={92}
-                      className="object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
-                      sizes="(max-width: 640px) 92vw, (max-width: 1024px) 50vw, min(640px, 44vw)"
+                    <video
+                      src={engineeringCollage.primaryVideo}
+                      className="absolute inset-0 h-full w-full object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
+                      aria-label={pc.engineeringAlt1}
+                      controls
+                      playsInline
+                      loop
+                      preload="auto"
                     />
                   </div>
                 </div>
@@ -873,40 +1932,54 @@ export default function HomeClient({
                     aria-hidden
                   />
 
-                  {dict.pillars[0]?.tag ? (
-                    <div className="relative flex flex-wrap items-center gap-3">
-                      <span className="font-mono-eng text-[11px] font-medium tabular-nums tracking-[0.12em] text-ink/32">
-                        01
-                      </span>
-                      <span className="inline-flex items-center gap-2 rounded-full border border-primary/18 bg-primary/[0.08] px-3.5 py-1.5 font-mono-eng text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-                        <span className="h-1 w-1 shrink-0 rounded-full bg-primary shadow-[0_0_0_4px_rgba(231,106,57,0.18)]" />
-                        {dict.pillars[0].tag}
-                      </span>
+                  {dict.engineeringShowcase ? (
+                    <div className="relative max-w-[52ch]">
+                      <p className="font-mono-eng text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
+                        {dict.engineeringShowcase.title}
+                      </p>
+                      <h2
+                        className="mt-3 text-balance font-bold tracking-[-0.03em] text-ink"
+                        style={{ fontSize: "clamp(1.35rem, 2.4vw, 2.05rem)", lineHeight: 1.14 }}
+                      >
+                        {dict.engineeringShowcase.subtitle}
+                      </h2>
+                      <p className={`mt-4 sm:mt-5 ${homeBodySecondary}`}>{dict.engineeringShowcase.body}</p>
+                      <Link
+                        href={`/${locale}/cozumler/cfd-muhendislik-danismanligi`}
+                        className="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-primary underline decoration-primary/35 underline-offset-[5px] transition-colors hover:text-primary/85 hover:decoration-primary/55 sm:mt-6"
+                      >
+                        {dict.engineeringShowcase.cta}
+                        <svg
+                          className="h-4 w-4 shrink-0"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          aria-hidden
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
                     </div>
                   ) : null}
 
-                  <div className="relative mt-8 flex items-start gap-4 sm:mt-9 sm:gap-5">
-                    <div className="mt-1.5 flex shrink-0 items-center gap-2 sm:gap-2.5">
-                      <span className="h-3.5 w-3.5 rounded-md border border-primary/40 bg-primary/90 shadow-[0_8px_22px_-10px_rgba(231,106,57,0.75)]" />
-                      <span className="h-2 w-2 rounded-[3px] border border-[#243044]/18 bg-white shadow-[0_4px_12px_-8px_rgba(36,48,68,0.35)]" />
-                      <span className="h-2.5 w-2.5 rounded-[4px] border border-[#243044]/22 bg-[#e9ebef]" />
-                    </div>
-                    <h2
-                      className="min-w-0 flex-1 text-balance font-bold tracking-[-0.028em] text-ink"
-                      style={{
-                        fontSize: "clamp(2.05rem, 4vw, 3.65rem)",
-                        lineHeight: 1.06,
-                      }}
-                    >
-                      {dict.pillars[0]?.title ?? pc.pillarsFallbackTitle}
-                    </h2>
-                  </div>
-
-                  <p
-                    className={`relative mt-8 max-w-[52ch] border-t border-ink/[0.07] pt-8 text-[17px] leading-[1.72] tracking-[-0.011em] text-ink/[0.78] sm:text-[18px] sm:leading-[1.66]`}
-                  >
-                    <span className="font-semibold text-ink/[0.92]">{pillarIntroLead}.</span> {pillarIntroRest}
-                  </p>
+                  {!dict.engineeringShowcase ? (
+                    <>
+                      {dict.pillars[0]?.tag ? (
+                        <div className="relative">
+                          <span className="inline-flex items-center gap-2 rounded-full border border-primary/18 bg-primary/[0.08] px-3.5 py-1.5 font-mono-eng text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
+                            <span className="h-1 w-1 shrink-0 rounded-full bg-primary shadow-[0_0_0_4px_rgba(231,106,57,0.18)]" />
+                            {dict.pillars[0].tag}
+                          </span>
+                        </div>
+                      ) : null}
+                      <p
+                        className={`relative mt-8 max-w-[52ch] border-t border-ink/[0.07] pt-8 text-[17px] leading-[1.72] tracking-[-0.011em] text-ink/[0.78] sm:text-[18px] sm:leading-[1.66]`}
+                      >
+                        {dict.pillars[0]?.intro ?? ""}
+                      </p>
+                    </>
+                  ) : null}
                 </div>
               </div>
             </div>
@@ -915,326 +1988,364 @@ export default function HomeClient({
           {/* Kataloglar — Mühendislik özetinin altında, mühendislik desteği CTA’sının üstünde */}
           {allowRestrictedSections === true && (
             <>
-          <div id="catalogs" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem]">
-            <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
-                <SectionStripLabel
-                  tone="primary"
-                  label={pc.catalogsVertical}
-                  dimmed={hoveredCatalogIndex !== null}
-                />
-              </div>
+          <div id="catalogs" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem]">
+            <div className="mb-8 flex flex-wrap items-end gap-3 sm:mb-10 sm:gap-4">
+              <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{pc.catalogsVertical}</h2>
+              <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
+            </div>
 
-              <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {catalogPreview.map((item, index) => (
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
+              {catalogPreview.map((item, index) => {
+                const cardDesc = (item.desc ?? "").trim() || pc.catalogCardDesc;
+                const ctaLabel = (pc.catalogCardCta || pc.pillarCta).trim();
+                return (
                   <Link
-                    key={item.title}
+                    key={`${item.href}-${item.title}`}
                     href={`/${locale}${item.href}`}
                     data-catalog-card
-                    onMouseEnter={() => {
-                      if (canUseFineHover()) setHoveredCatalogIndex(index);
-                    }}
-                    onMouseLeave={() => setHoveredCatalogIndex(null)}
-                    className={`group flex w-full shrink-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 active:scale-[0.99] max-lg:aspect-[4/5] max-lg:max-h-[min(92vh,560px)] max-lg:min-h-0 lg:aspect-square lg:min-h-[400px] lg:max-h-none ${
-                      hoveredCatalogIndex === null
-                        ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
-                        : hoveredCatalogIndex === index
-                          ? "z-10 scale-[1.07] border-primary/35 shadow-[0_24px_56px_-24px_rgba(15,20,30,0.34)] lg:scale-[1.07]"
-                          : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
-                    }`}
+                    className="group flex flex-col pt-3 transition-[transform] duration-300 [@media(hover:hover)]:hover:-translate-y-1"
                   >
-                    <div className="relative flex-[0_0_52%] border-b border-ink/10 bg-[#eef1f4] sm:flex-[0_0_50%]">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        fill
-                        quality={100}
-                        className="object-cover"
-                        sizes="(max-width: 640px) 92vw, (max-width: 1024px) 42vw, min(480px, 33vw)"
-                      />
-                    </div>
-                    <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
-                      <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                        {pc.catalogKindLabel}
-                      </p>
-                      <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-primary sm:text-[1.28rem]">
-                        {item.title}
-                      </h3>
-                      <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                        {pc.catalogCardDesc}
-                      </p>
-                      <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-primary sm:text-[10px]">
-                        {pc.pillarCta}
+                    <div className="relative z-[2] mx-auto w-[min(100%,22rem)] px-1 sm:w-[min(100%,24rem)] sm:px-0">
+                      <div className="relative aspect-[16/11] overflow-hidden rounded-xl border border-white/90 bg-[#e4e7ec] shadow-[0_22px_48px_-28px_rgba(15,22,36,0.42)] ring-1 ring-black/[0.06] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_28px_56px_-28px_rgba(15,22,36,0.48)]">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          quality={92}
+                          className="object-cover"
+                          sizes="(max-width: 640px) min(92vw,22rem), (max-width: 1024px) 42vw, min(24rem, 33vw)"
+                        />
                       </div>
                     </div>
+                    <div className="relative z-[1] -mt-8 flex flex-1 flex-col rounded-2xl border border-ink/10 bg-white px-5 pb-6 pt-11 shadow-[0_16px_44px_-30px_rgba(15,22,36,0.28)] ring-1 ring-black/[0.03] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_22px_50px_-30px_rgba(15,22,36,0.34)] sm:px-6 sm:pb-7 sm:pt-12">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg border border-primary/22 bg-primary/[0.09] text-primary">
+                        <HomeCatalogDocIcon variant={index} />
+                      </div>
+                      <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
+                        {item.title}
+                      </h3>
+                      <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{cardDesc}</p>
+                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(231,106,57,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-[#e55a28]">
+                        {ctaLabel}
+                        <span aria-hidden className="text-[0.85em] font-normal">
+                          →
+                        </span>
+                      </span>
+                    </div>
                   </Link>
-                ))}
-              </div>
+                );
+              })}
+            </div>
 
-              <div className="flex w-full justify-center lg:col-start-2 lg:row-start-2">
-                <Link
-                  href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
-                  className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
-                >
-                  <span>{n.viewAll}</span>
-                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
+            <div className="mt-10 flex w-full justify-center sm:mt-12">
+              <Link
+                href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
+                className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
+              >
+                <span>{n.viewAll}</span>
+                <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           </div>
 
-          {/* Referanslar — kataloglarla aynı düzen */}
-          <div id="references" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem] lg:mt-12">
-            <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
-                <SectionStripLabel
-                  tone="slate"
-                  label={n.links.references}
-                  dimmed={hoveredReferenceIndex !== null}
-                />
-              </div>
-
-              <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {referencePreview.map((item, index) => (
-                  <Link
-                    key={item.title}
-                    href={`/${locale}${item.href}`}
-                    data-reference-card
-                    onMouseEnter={() => {
-                      if (canUseFineHover()) setHoveredReferenceIndex(index);
-                    }}
-                    onMouseLeave={() => setHoveredReferenceIndex(null)}
-                    className={`group flex w-full shrink-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 active:scale-[0.99] max-lg:aspect-[4/5] max-lg:max-h-[min(92vh,560px)] max-lg:min-h-0 lg:aspect-square lg:min-h-[400px] lg:max-h-none ${
-                      hoveredReferenceIndex === null
-                        ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
-                        : hoveredReferenceIndex === index
-                          ? "z-10 scale-[1.07] border-[#6b7380]/40 shadow-[0_24px_56px_-24px_rgba(15,20,30,0.34)] lg:scale-[1.07]"
-                          : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
-                    }`}
-                  >
-                    <div className="relative flex-[0_0_52%] border-b border-ink/10 bg-[#eef1f4] sm:flex-[0_0_50%]">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 92vw, (max-width: 1024px) 42vw, min(480px, 33vw)"
+          {/* Referanslar — sektörlere göre renkli kart şeridi */}
+          <div id="references" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem] lg:mt-16">
+            {(() => {
+              const refHead = referenceSectorHeadings(pc, n.links.references);
+              const vertNorm = refHead.vertical.replace(/\s+/g, " ").trim().toLocaleLowerCase("tr-TR");
+              const headNorm = refHead.headline.replace(/\s+/g, " ").trim().toLocaleLowerCase("tr-TR");
+              const verticalAriaHidden = vertNorm === headNorm && refHead.kicker.length > 0;
+              return (
+                <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:items-start lg:gap-x-8 lg:gap-y-10">
+                  <div className="hidden w-full justify-center self-start lg:sticky lg:top-28 lg:flex lg:justify-start lg:pt-1">
+                    <div
+                      className="flex flex-col items-center gap-3 sm:gap-4 lg:gap-5"
+                      aria-hidden={verticalAriaHidden ? true : undefined}
+                    >
+                      <span className="text-center text-[14px] font-bold uppercase leading-none tracking-[0.18em] text-[#1e3a5f] antialiased [text-orientation:mixed] sm:text-[16px] lg:text-[19px] lg:tracking-[0.2em] xl:text-[22px] [writing-mode:vertical-rl] rotate-180">
+                        {refHead.vertical}
+                      </span>
+                      <div
+                        className="h-11 w-0.5 shrink-0 rounded-full bg-primary sm:h-12 lg:h-14"
+                        aria-hidden
                       />
                     </div>
-                    <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
-                      <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                        {pc.referenceEyebrow}
-                      </p>
-                      <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#5c6370] sm:text-[1.28rem]">
-                        {item.title}
-                      </h3>
-                      <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                        {pc.referenceCardDesc}
-                      </p>
-                      <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#5c6370] sm:text-[10px]">
-                        {pc.pillarCta}
-                      </div>
+                  </div>
+
+                  <div className="min-w-0">
+                    <div className="mb-8 sm:mb-10">
+                      <div className="mb-3 h-0.5 w-12 shrink-0 bg-primary sm:mb-4 sm:w-14" aria-hidden />
+                      {refHead.kicker ? (
+                        <p className="text-[11px] font-normal uppercase leading-snug tracking-[0.14em] text-[#1e3a5f] sm:text-xs sm:tracking-[0.12em]">
+                          {refHead.kicker}
+                        </p>
+                      ) : null}
+                      <h2
+                        className={`text-balance font-bold uppercase tracking-[0.06em] text-[#1e3a5f] sm:tracking-[0.05em] ${refHead.kicker ? "mt-1.5 text-xl leading-tight sm:text-2xl lg:text-[1.75rem] lg:leading-[1.1]" : "text-lg leading-snug tracking-[0.14em] sm:text-xl lg:text-2xl"}`}
+                      >
+                        {refHead.headline}
+                      </h2>
                     </div>
-                  </Link>
-                ))}
-              </div>
 
-              <div className="flex w-full justify-center lg:col-start-2 lg:row-start-2">
-                <Link
-                  href={`/${locale}/kurumsal/referanslar`}
-                  className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
-                >
-                  <span>{n.viewAll}</span>
-                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:gap-4">
+                  {referencePreview.map((item, index) => {
+                    const theme = resolveReferenceSectorTheme(index, item.theme);
+                    const styles = REFERENCE_SECTOR_THEME_STYLES[theme];
+                    const sector = (item.sector ?? item.title).trim();
+                    const example = (item.example ?? "").trim();
+                    const serverCount = referencePreviewProjectCounts?.[index];
+                    const count =
+                      typeof serverCount === "number"
+                        ? String(serverCount)
+                        : (item.projectCount ?? "").trim();
+                    const projectWord = (pc.referenceProjectWord || "Proje").trim();
+                    const explore = (pc.referenceExploreCta || pc.catalogCardCta || pc.pillarCta).trim();
+                    const aria = example ? `${sector}: ${example}` : sector;
+                    return (
+                      <Link
+                        key={`${item.href}-${sector}-${index}`}
+                        href={`/${locale}${item.href}`}
+                        data-reference-card
+                        aria-label={aria}
+                        className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-[#eceff4] shadow-[0_14px_40px_-28px_rgba(15,22,36,0.35)] ring-1 ring-black/[0.04] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_22px_48px_-28px_rgba(15,22,36,0.4)]"
+                      >
+                        <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden">
+                          <Image
+                            src={item.image}
+                            alt=""
+                            fill
+                            className="object-cover object-center transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.03]"
+                            sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 22vw"
+                          />
+                          {theme === "orange" ? (
+                            <div
+                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#7a4f45]/48 from-0% via-[#7a4f45]/14 via-[38%] to-transparent to-[78%]"
+                              aria-hidden
+                            />
+                          ) : null}
+                          {theme === "sky" ? (
+                            <div
+                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#3d5a6b]/50 from-0% via-[#3d5a6b]/14 via-[38%] to-transparent to-[78%]"
+                              aria-hidden
+                            />
+                          ) : null}
+                          {theme === "emerald" ? (
+                            <div
+                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#2d5548]/50 from-0% via-[#2d5548]/14 via-[38%] to-transparent to-[78%]"
+                              aria-hidden
+                            />
+                          ) : null}
+                          {theme === "zinc" ? (
+                            <div
+                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#4a5568]/50 from-0% via-[#4a5568]/14 via-[38%] to-transparent to-[78%]"
+                              aria-hidden
+                            />
+                          ) : null}
+                          <div className="pointer-events-none absolute inset-x-0 top-0 z-[2] flex justify-center pt-6 sm:pt-7">
+                            <div
+                              className={`flex h-[3.25rem] w-[3.25rem] shrink-0 items-center justify-center rounded-full shadow-[0_12px_28px_-6px_rgba(15,22,36,0.45)] ring-2 ring-white/85 ${styles.iconCircle}`}
+                            >
+                              <HomeReferenceSectorIcon theme={theme} />
+                            </div>
+                          </div>
+                        </div>
+                        <div className={`flex flex-1 flex-col px-5 pb-6 pt-5 text-white sm:px-6 sm:pb-7 ${styles.footer}`}>
+                          <p className="text-[1.05rem] font-bold leading-snug tracking-[-0.02em] sm:text-[1.12rem]">
+                            {sector}
+                          </p>
+                          {example ? (
+                            <p className="mt-1.5 text-[13px] leading-snug text-white/90 sm:text-[14px]">{example}</p>
+                          ) : (
+                            <p className="mt-1.5 line-clamp-3 text-[13px] leading-snug text-white/88 sm:text-[14px]">
+                              {pc.referenceCardDesc}
+                            </p>
+                          )}
+                          <div className="my-4 h-px w-full bg-white/35" aria-hidden />
+                          {count ? (
+                            <p className="text-[2.1rem] font-bold leading-none tracking-tight sm:text-[2.35rem]">
+                              {count}
+                              <span className="ml-2 text-base font-semibold tracking-normal text-white/90 sm:text-lg">
+                                {projectWord}
+                              </span>
+                            </p>
+                          ) : null}
+                          <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white shadow-[0_10px_22px_-12px_rgba(0,0,0,0.35)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-[#e55a28]">
+                            {explore}
+                            <span aria-hidden className="text-[0.9em] font-normal">
+                              →
+                            </span>
+                          </span>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
 
-          {/* Sertifikalar — referanslarla aynı düzen, lacivert vurgu */}
-          <div id="certificates" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem] lg:mt-12">
-            <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
-                <SectionStripLabel
-                  tone="brandBlue"
-                  label={n.links.certificates}
-                  dimmed={hoveredCertificateIndex !== null}
-                />
-              </div>
-
-              <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {certificatePreview.map((item, index) => (
+                    <div className="mt-10 flex w-full justify-center sm:mt-12">
                   <Link
-                    key={item.title}
-                    href={`/${locale}${item.href}`}
-                    data-certificate-card
-                    onMouseEnter={() => {
-                      if (canUseFineHover()) setHoveredCertificateIndex(index);
-                    }}
-                    onMouseLeave={() => setHoveredCertificateIndex(null)}
-                    className={`group flex w-full shrink-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 active:scale-[0.99] max-lg:aspect-[4/5] max-lg:max-h-[min(92vh,560px)] max-lg:min-h-0 lg:aspect-square lg:min-h-[400px] lg:max-h-none ${
-                      hoveredCertificateIndex === null
-                        ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
-                        : hoveredCertificateIndex === index
-                          ? "z-10 scale-[1.07] border-[#1f4fa8]/35 shadow-[0_24px_56px_-24px_rgba(15,20,30,0.34)] lg:scale-[1.07]"
-                          : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
-                    }`}
+                    href={`/${locale}/kurumsal/referanslar`}
+                    className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
                   >
-                    <div className="relative flex-[0_0_52%] border-b border-ink/10 bg-[#eef1f4] sm:flex-[0_0_50%]">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 92vw, (max-width: 1024px) 42vw, min(480px, 33vw)"
-                      />
-                    </div>
-                    <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
-                      <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                        {pc.certificateEyebrow}
-                      </p>
-                      <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#1f4fa8] sm:text-[1.28rem]">
-                        {item.title}
-                      </h3>
-                      <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                        {pc.certificateCardDesc}
-                      </p>
-                      <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#1f4fa8] sm:text-[10px]">
-                        {pc.pillarCta}
-                      </div>
-                    </div>
+                    <span>{n.viewAll}</span>
+                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </Link>
-                ))}
-              </div>
-
-              <div className="flex w-full justify-center lg:col-start-2 lg:row-start-2">
-                <Link
-                  href={`/${locale}/kurumsal/sertifikalar`}
-                  className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
-                >
-                  <span>{n.viewAll}</span>
-                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+                </div>
+                  </div>
+                </div>
+              );
+            })()}
           </div>
             </>
           )}
 
-          {/* Şirket profili — sertifikaların altında */}
-          <div id="company-profile" className="relative mt-10 scroll-mt-24 md:scroll-mt-[5.5rem] lg:mt-12">
-            <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
-              <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
-                <SectionStripLabel
-                  tone="ink"
-                  label={pc.companyProfileVertical}
-                  dimmed={hoveredCompanyProfileIndex !== null}
-                />
-              </div>
+          {/* Sertifikalar — kataloglar bölümü ile aynı kart düzeni */}
+          <div id="certificates" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem]">
+            <div className="mb-8 flex flex-wrap items-end gap-3 sm:mb-10 sm:gap-4">
+              <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.links.certificates}</h2>
+              <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
+            </div>
 
-              <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
-                {companyProfileCards.map((item, index) => {
-                  const title = item.title;
-                  return (
-                    <Link
-                      key={item.href}
-                      href={`/${locale}${item.href}`}
-                      data-company-profile-card
-                      onMouseEnter={() => {
-                        if (canUseFineHover()) setHoveredCompanyProfileIndex(index);
-                      }}
-                      onMouseLeave={() => setHoveredCompanyProfileIndex(null)}
-                      className={`group flex w-full shrink-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 active:scale-[0.99] max-lg:aspect-[4/5] max-lg:max-h-[min(92vh,560px)] max-lg:min-h-0 lg:aspect-square lg:min-h-[400px] lg:max-h-none ${
-                        hoveredCompanyProfileIndex === null
-                          ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
-                          : hoveredCompanyProfileIndex === index
-                            ? "z-10 scale-[1.07] border-[#243044]/40 shadow-[0_24px_56px_-24px_rgba(15,20,30,0.34)] lg:scale-[1.07]"
-                            : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
-                      }`}
-                    >
-                      <div className="relative flex-[0_0_56%] overflow-hidden border-b border-ink/10 bg-[#eef1f4] sm:flex-[0_0_54%]">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
+              {certificatePreview.map((item, index) => {
+                const ctaLabel = (pc.catalogCardCta || pc.pillarCta).trim();
+                return (
+                  <Link
+                    key={`${item.href}-${item.title}`}
+                    href={`/${locale}${item.href}`}
+                    data-certificate-card
+                    className="group flex flex-col pt-3 transition-[transform] duration-300 [@media(hover:hover)]:hover:-translate-y-1"
+                  >
+                    <div className="relative z-[2] mx-auto w-[min(100%,22rem)] px-1 sm:w-[min(100%,24rem)] sm:px-0">
+                      <div className="relative aspect-[16/11] overflow-hidden rounded-xl border border-white/90 bg-[#e4e7ec] shadow-[0_22px_48px_-28px_rgba(15,22,36,0.42)] ring-1 ring-black/[0.06] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_28px_56px_-28px_rgba(15,22,36,0.48)]">
                         <Image
                           src={item.image}
-                          alt={title}
+                          alt={item.title}
                           fill
-                          className="object-cover object-center"
-                          sizes="(max-width: 640px) 92vw, (max-width: 1024px) 42vw, min(480px, 33vw)"
+                          quality={92}
+                          className="object-cover"
+                          sizes="(max-width: 640px) min(92vw,22rem), (max-width: 1024px) 42vw, min(24rem, 33vw)"
                         />
                       </div>
-                      <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
-                        <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
-                          {pc.companyEyebrow}
-                        </p>
-                        <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#243044] sm:text-[1.28rem]">
-                          {title}
-                        </h3>
-                        <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
-                          {pc.companyCardDesc}
-                        </p>
-                        <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#243044] sm:text-[10px]">
-                          {pc.pillarCta}
-                        </div>
+                    </div>
+                    <div className="relative z-[1] -mt-8 flex flex-1 flex-col rounded-2xl border border-ink/10 bg-white px-5 pb-6 pt-11 shadow-[0_16px_44px_-30px_rgba(15,22,36,0.28)] ring-1 ring-black/[0.03] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_22px_50px_-30px_rgba(15,22,36,0.34)] sm:px-6 sm:pb-7 sm:pt-12">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg border border-primary/22 bg-primary/[0.09] text-primary">
+                        <HomeCatalogDocIcon variant={index} />
                       </div>
-                    </Link>
-                  );
-                })}
-              </div>
+                      <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
+                        {item.title}
+                      </h3>
+                      <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{pc.certificateCardDesc}</p>
+                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(231,106,57,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-[#e55a28]">
+                        {ctaLabel}
+                        <span aria-hidden className="text-[0.85em] font-normal">
+                          →
+                        </span>
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
 
-              <div className="flex w-full justify-center lg:col-start-2 lg:row-start-2">
-                <Link
-                  href={`/${locale}/kurumsal`}
-                  className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
-                >
-                  <span>{n.viewAll}</span>
-                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
+            <div className="mt-10 flex w-full justify-center sm:mt-12">
+              <Link
+                href={`/${locale}/kurumsal/sertifikalar`}
+                className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
+              >
+                <span>{n.viewAll}</span>
+                <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           </div>
 
-          {/* Mid-CTA — contained card, denser layout (copy unchanged) */}
-          <div className="relative mt-10 lg:mt-12">
-            <div className="relative overflow-hidden rounded-lg border border-ink/[0.09] bg-[#e4e2dc] shadow-[0_22px_50px_-30px_rgba(12,14,18,0.16)] ring-1 ring-black/[0.03]">
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary/0 via-primary/35 to-primary/0" />
-              <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.2]" />
+          {/* Mühendislik adımları — büyük adım numarası, paralelkenar görsel, alternatif satır düzeni */}
+          <HomeEngineeringPillarsJourneyStrip
+            pillars={dict.pillars}
+            locale={locale}
+            strip={dict.engineeringPillarsSection}
+            fallbackTitle={pc.pillarsFallbackTitle}
+            pc={pc}
+          />
 
-              <div className="relative z-[1] px-6 py-9 sm:px-9 sm:py-10 lg:grid lg:grid-cols-12 lg:items-stretch lg:gap-x-10 lg:px-10 lg:py-11">
-                <div className="lg:col-span-8 lg:border-r lg:border-ink/[0.08] lg:pr-10">
-                  <p className="text-[10px] uppercase tracking-[0.28em] text-primary">◆ {dict.midCta.title}</p>
-                  <div className="mt-4 h-px w-16 bg-primary/65" />
-                  <p className={`mt-6 max-w-[58ch] ${homeLeadInk}`}>
-                    {dict.midCta.desc}
-                  </p>
-                  <div className="mt-8 grid gap-4 sm:grid-cols-3">
-                    <span className="btn-3d btn-3d-glass inline-flex items-center gap-2.5 rounded-md border border-ink/[0.07] bg-white/55 px-3 py-2.5 text-[10px] font-medium uppercase tracking-[0.2em] text-ink/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)]">
-                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                      {pc.midCtaBullet1}
-                    </span>
-                    <span className="btn-3d btn-3d-glass inline-flex items-center gap-2.5 rounded-md border border-ink/[0.07] bg-white/55 px-3 py-2.5 text-[10px] font-medium uppercase tracking-[0.2em] text-ink/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)]">
-                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                      {pc.midCtaBullet2}
-                    </span>
-                    <span className="btn-3d btn-3d-glass inline-flex items-center gap-2.5 rounded-md border border-ink/[0.07] bg-white/55 px-3 py-2.5 text-[10px] font-medium uppercase tracking-[0.2em] text-ink/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)]">
-                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                      {pc.midCtaBullet3}
-                    </span>
-                  </div>
+          {/* Şirket profili — tanım videosundan önce (mühendislik hizmet kartlarının altında) */}
+          {companyProfileSection ? (
+            <HomeCompanyProfileSectionBlock
+              locale={locale}
+              verticalLabel={pc.companyProfileVertical}
+              section={companyProfileSection}
+              viewAllCorporate={n.viewAll}
+            />
+          ) : (
+            <div id="company-profile" className="relative mt-14 scroll-mt-24 sm:mt-16 md:scroll-mt-[5.5rem] lg:mt-[4.5rem]">
+              <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
+                <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
+                  <SectionStripLabel
+                    tone="ink"
+                    label={pc.companyProfileVertical}
+                    dimmed={hoveredCompanyProfileIndex !== null}
+                  />
                 </div>
 
-                <div className="mt-8 flex flex-col justify-center border-t border-ink/[0.08] pt-8 lg:col-span-4 lg:mt-0 lg:border-t-0 lg:pt-0 lg:pl-2">
+                <div className="flex min-h-0 min-w-0 w-full flex-col gap-4 lg:col-start-2 lg:row-start-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
+                  {companyProfileCards.map((item, index) => {
+                    const title = item.title;
+                    return (
+                      <Link
+                        key={item.href}
+                        href={`/${locale}${item.href}`}
+                        data-company-profile-card
+                        onMouseEnter={() => {
+                          if (canUseFineHover()) setHoveredCompanyProfileIndex(index);
+                        }}
+                        onMouseLeave={() => setHoveredCompanyProfileIndex(null)}
+                        className={`group flex w-full shrink-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_12px_34px_-24px_rgba(15,20,30,0.22)] transition-all duration-300 active:scale-[0.99] max-lg:aspect-[4/5] max-lg:max-h-[min(92vh,560px)] max-lg:min-h-0 lg:aspect-square lg:min-h-[400px] lg:max-h-none ${
+                          hoveredCompanyProfileIndex === null
+                            ? "[@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_18px_42px_-24px_rgba(15,20,30,0.28)]"
+                            : hoveredCompanyProfileIndex === index
+                              ? "z-10 scale-[1.07] border-[#243044]/40 shadow-[0_24px_56px_-24px_rgba(15,20,30,0.34)] lg:scale-[1.07]"
+                              : "[@media(hover:hover)]:scale-[0.9] [@media(hover:hover)]:opacity-75"
+                        }`}
+                      >
+                        <div className="relative flex-[0_0_56%] overflow-hidden border-b border-ink/10 bg-[#eef1f4] sm:flex-[0_0_54%]">
+                          <Image
+                            src={item.image}
+                            alt={title}
+                            fill
+                            className="object-cover object-center"
+                            sizes="(max-width: 640px) 92vw, (max-width: 1024px) 42vw, min(480px, 33vw)"
+                          />
+                        </div>
+                        <div className="flex flex-1 flex-col px-5 py-3 sm:px-5 sm:py-3.5">
+                          <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
+                            {pc.companyEyebrow}
+                          </p>
+                          <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#243044] sm:text-[1.28rem]">
+                            {title}
+                          </h3>
+                          <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
+                            {pc.companyCardDesc}
+                          </p>
+                          <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#243044] sm:text-[10px]">
+                            {pc.pillarCta}
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+
+                <div className="flex w-full justify-center lg:col-start-2 lg:row-start-2">
                   <Link
-                    href={`/${locale}/iletisim`}
-                    className="btn-3d btn-3d-dark group inline-flex w-full items-center justify-center gap-3 border border-ink/15 bg-ink px-7 py-4 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary sm:w-auto lg:w-full"
+                    href={`/${locale}/kurumsal`}
+                    className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
                   >
-                    {dict.midCta.button}
+                    <span>{n.viewAll}</span>
                     <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -1242,90 +2353,7 @@ export default function HomeClient({
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Pillars — white service cards, soft lift + primary CTA (inspired by clean card UI) */}
-          <div className="mt-16 grid grid-cols-1 items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {dict.pillars.map((pillar, index) => {
-              const isExpanded = !!expandedPillars[index];
-              const pillarHref = `/${locale}${pillarLinks[index] ?? "/kurumsal"}`;
-              return (
-                <article
-                  key={pillar.tag}
-                  className="group flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_16px_48px_-28px_rgba(15,20,30,0.14)] ring-1 ring-black/[0.04] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_60px_-28px_rgba(15,20,30,0.22)]"
-                >
-                  <Link
-                    href={pillarHref}
-                    className="flex shrink-0 flex-col outline-none transition-colors focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2"
-                  >
-                    <div className="relative aspect-[3/2] shrink-0 bg-[#f0f1f3]">
-                      <Image
-                        src={pillarImages[index] ?? pillarImages[0]}
-                        alt={pillar.title}
-                        fill
-                        className="object-contain p-8 drop-shadow-[0_14px_36px_rgba(0,0,0,0.16)] transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-                        sizes="(max-width: 1024px) 100vw, 33vw"
-                      />
-                    </div>
-                    <p className="flex items-center justify-center gap-2 px-6 pt-4 text-center font-mono-eng uppercase tracking-[0.22em]">
-                      <span className="text-[12px] font-semibold leading-none text-primary">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="text-[10px] text-ink/55">{pillar.tag}</span>
-                    </p>
-                    <div className="px-6 pt-2 text-center">
-                      <h3
-                        className="font-bold text-ink"
-                        style={{ fontSize: "clamp(1.35rem, 2.1vw, 1.75rem)", lineHeight: 1.15, letterSpacing: "-0.02em" }}
-                      >
-                        {pillar.title}
-                      </h3>
-                      <p className={`mt-4 max-w-[36ch] ${homeBodySecondary} ${isExpanded ? "" : "line-clamp-3"}`}>{pillar.intro}</p>
-                    </div>
-                  </Link>
-
-                  {isExpanded && (
-                    <ul className="mt-6 w-full max-w-[19rem] space-y-4 self-center border-t border-ink/10 px-6 pt-6 text-left">
-                      {pillar.items.map((item) => (
-                        <li key={item.label} className="flex gap-3">
-                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                          <div>
-                            <p className="text-[13px] font-semibold text-ink">{item.label}</p>
-                            <p className="mt-1 text-[13px] leading-[1.65] text-secondary/68">{item.desc}</p>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  <div className="mt-auto flex flex-col items-center px-6 pb-10 pt-4">
-                    <button
-                      type="button"
-                      aria-expanded={isExpanded}
-                      aria-label={isExpanded ? pc.pillarCollapseAria : pc.pillarExpandAria}
-                      onClick={() =>
-                        setExpandedPillars((prev) => ({ ...prev, [index]: !prev[index] }))
-                      }
-                      className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink/12 bg-white text-[22px] font-bold leading-none text-primary shadow-[0_8px_24px_-18px_rgba(15,20,30,0.35)] transition-all duration-300 hover:border-primary/35 hover:bg-primary/[0.06] hover:shadow-[0_12px_28px_-20px_rgba(15,20,30,0.28)]"
-                    >
-                      <span
-                        className={`inline-block transition-transform duration-300 ${isExpanded ? "rotate-45" : ""}`}
-                        aria-hidden
-                      >
-                        +
-                      </span>
-                    </button>
-                    <Link
-                      href={pillarHref}
-                      className="btn-3d btn-3d-primary mt-8 inline-flex w-full max-w-[17rem] items-center justify-center bg-primary px-8 py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#e55a28]"
-                    >
-                      {pc.pillarCta}
-                    </Link>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
+          )}
         </div>
       </section>
 

@@ -25,6 +25,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       locale={locale}
       commonDict={dict.common}
       slug="konut-tipi-havalandirma-sistemleri"
+      heroImage="/images/solutions/konut-tipi-havalandirma-card-hero.png"
     />
   );
 }

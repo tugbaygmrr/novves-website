@@ -36,6 +36,9 @@ const trPageChrome = {
   catalogCardDesc: "Teknik merkezde PDF ve dokümanlara erişin.",
   referenceEyebrow: "Referans",
   referenceCardDesc: "Tamamlanan projelerden öne çıkan örnekleri inceleyin.",
+  referenceBySectorTitle: "SEKTÖRLERE GÖRE REFERANSLAR",
+  referenceProjectWord: "Proje",
+  referenceExploreCta: "Keşfet",
   certificateEyebrow: "Sertifika",
   certificateCardDesc:
     "Uluslararası kalite, güvenlik ve uygunluk belgelerimizi inceleyin.",
@@ -70,6 +73,9 @@ const ruPageChrome = {
   catalogCardDesc: "Доступ к PDF и документам в техническом центре.",
   referenceEyebrow: "Референс",
   referenceCardDesc: "Ознакомьтесь с избранными реализованными проектами.",
+  referenceBySectorTitle: "РЕФЕРЕНСЫ ПО ОТРАСЛЯМ",
+  referenceProjectWord: "проектов",
+  referenceExploreCta: "Смотреть",
   certificateEyebrow: "Сертификат",
   certificateCardDesc:
     "Ознакомьтесь с международными сертификатами качества и соответствия.",

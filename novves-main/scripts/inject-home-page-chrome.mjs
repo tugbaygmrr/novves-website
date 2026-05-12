@@ -24,6 +24,9 @@ const pageChrome = {
   catalogCardDesc: "Access PDFs and documents in the technical center.",
   referenceEyebrow: "Reference",
   referenceCardDesc: "Explore highlights from projects we have delivered.",
+  referenceBySectorTitle: "REFERENCES BY SECTOR",
+  referenceProjectWord: "projects",
+  referenceExploreCta: "Explore",
   certificateEyebrow: "Certificate",
   certificateCardDesc:
     "Review our international quality, safety and compliance certificates.",
@@ -34,6 +37,7 @@ const pageChrome = {
   pillarExpandAria: "Show more",
   pillarCollapseAria: "Collapse",
   pillarCta: "View Details",
+  catalogCardCta: "View",
   productCardCta: "View Details",
   solutionCardCta: "View Details",
   midCtaBullet1: "48-hour preliminary assessment",
@@ -153,17 +157,17 @@ const referencePreview = [
   {
     title: "2M Lojistik Gebze Depo",
     href: "/kurumsal/referanslar",
-    image: "/images/references/2m.jpg",
+    image: "/images/references/lojistik-2m-depo-hero.png",
   },
   {
     title: "3S Kale Topaz Zeytinburnu",
     href: "/kurumsal/referanslar",
-    image: "/images/references/3skale.jpg",
+    image: "/images/references/ticari-3s-kale-topaz-hero.png",
   },
   {
     title: "Adana Yüreğir 100 Yataklı Hastane",
     href: "/kurumsal/referanslar",
-    image: "/images/references/adana-yuregir.jpg",
+    image: "/images/references/saglik-kuruluslari-adana-hero.png",
   },
 ];
 

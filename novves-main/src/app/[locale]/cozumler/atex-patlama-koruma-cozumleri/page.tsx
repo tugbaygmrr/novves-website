@@ -25,6 +25,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       locale={locale}
       commonDict={dict.common}
       slug="atex-patlama-koruma-cozumleri"
+      heroImage="/images/solutions/atex-patlama-koruma-card-hero.png"
     />
   );
 }

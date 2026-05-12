@@ -53,9 +53,41 @@ const SCROLL_DIVIDER_LIGHT = "rgb(209, 206, 199)"; // #D1CEC7
 const FRAME_LOAD_RADIUS = 15;
 const FRAME_EVICT_DISTANCE = 42;
 
+/** Scroll-scrub: zaman çizelgesi adımı (~60/sn); fastSeek yok, doğrudan currentTime */
+const VIDEO_SCRUB_QUANT = 1 / 60;
+
+/** `scrollScrub`: fastSeek yok, küçük currentTime adımları — video gibi akış */
+function scrubVideoTo(v: HTMLVideoElement, seconds: number, scrollScrub?: boolean) {
+  const d = v.duration;
+  if (!Number.isFinite(d) || d <= 0.05) return;
+  const t = Math.min(Math.max(seconds, 0), d - 0.001);
+  if (scrollScrub) {
+    if (Math.abs(t - v.currentTime) < 1 / 120) return;
+    v.currentTime = t;
+    return;
+  }
+  if (Math.abs(t - v.currentTime) < 0.04) return;
+  const fast = (v as HTMLVideoElement & { fastSeek?: (time: number) => void }).fastSeek;
+  if (typeof fast === "function") {
+    try {
+      fast.call(v, t);
+      return;
+    } catch {
+      /* fall through */
+    }
+  }
+  if (Math.abs(t - v.currentTime) > 0.12) {
+    v.currentTime = t;
+  }
+}
+
 export function ScrollVideoSection({
   framesPath,
   totalFrames,
+  videoSrc,
+  scrollImageSrc,
+  scrollImageAlt = "",
+  scrollVh = 260,
   id,
   startCard,
   endCard,
@@ -63,8 +95,15 @@ export function ScrollVideoSection({
   productHref,
   sideLabel,
 }: {
-  framesPath: string;
-  totalFrames: number;
+  framesPath?: string;
+  totalFrames?: number;
+  /** MP4 scroll-scrub (kare dizisi yerine) */
+  videoSrc?: string;
+  /** Tek görsel + scroll — video seek yok, kasma biter (ör. ana sayfa hero) */
+  scrollImageSrc?: string;
+  scrollImageAlt?: string;
+  /** Kaydırma alanı yüksekliği (vh); video süresine göre ayarlanır */
+  scrollVh?: number;
   id: string;
   startCard?: StartCard;
   endCard?: EndCard;
@@ -72,9 +111,13 @@ export function ScrollVideoSection({
   productHref?: string;
   sideLabel?: string;
 }) {
+  const isScrollStill = Boolean(scrollImageSrc);
+  const isVideoMode = Boolean(videoSrc) && !isScrollStill;
   const containerRef = useRef<HTMLDivElement>(null);
   const stickyShellRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const heroImageRef = useRef<HTMLImageElement>(null);
   const canvasWashRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const startCardRef = useRef<HTMLDivElement>(null);
@@ -93,6 +136,7 @@ export function ScrollVideoSection({
   useEffect(() => { setMounted(true); }, []);
 
   const renderFrame = useCallback((index: number) => {
+    if (isVideoMode || isScrollStill) return;
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -102,13 +146,21 @@ export function ScrollVideoSection({
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
     ctx.drawImage(img, 0, 0);
-  }, []);
+  }, [isVideoMode, isScrollStill]);
 
   useEffect(() => {
     if (!mounted) return;
+    if (isScrollStill) {
+      if (!scrollImageSrc) return;
+    } else if (isVideoMode) {
+      if (!videoSrc) return;
+    } else if (!framesPath || totalFrames == null || totalFrames < 2) {
+      console.warn("ScrollVideoSection: kare modu için framesPath ve totalFrames gerekli.");
+      return;
+    }
 
     const cache = frameCacheRef.current;
-    const maxIdx = totalFrames - 1;
+    const maxIdx = !isVideoMode && !isScrollStill && totalFrames != null ? totalFrames - 1 : 0;
 
     function frameSrc(i: number) {
       const num = String(i + 1).padStart(4, "0");
@@ -116,6 +168,7 @@ export function ScrollVideoSection({
     }
 
     function syncFrameWindow(centerIndex: number) {
+      if (isVideoMode || isScrollStill) return;
       const lo = Math.max(0, centerIndex - FRAME_LOAD_RADIUS);
       const hi = Math.min(maxIdx, centerIndex + FRAME_LOAD_RADIUS);
       for (let i = lo; i <= hi; i++) {
@@ -135,16 +188,32 @@ export function ScrollVideoSection({
       }
     }
 
-    syncFrameWindow(0);
-    const first = cache.get(0);
-    if (first?.complete) renderFrame(0);
-    else if (first)
-      first.onload = () => {
-        if (currentFrameRef.current === 0) renderFrame(0);
-      };
+    if (!isVideoMode && !isScrollStill) {
+      syncFrameWindow(0);
+      const first = cache.get(0);
+      if (first?.complete) renderFrame(0);
+      else if (first)
+        first.onload = () => {
+          if (currentFrameRef.current === 0) renderFrame(0);
+        };
+    }
+
+    let scrollRafId = 0;
+    let scrollRafPending = false;
+    let lastMediaObjectXPct = -1;
+    /** Tema DOM’u — daha kaba adım = daha az gradient/string repaint */
+    let lastOpenDomKey = -999;
+    /** endCardSpecs satırları — children cache (querySelectorAll her temada yok) */
+    let specRowCells: HTMLElement[] | null = null;
+    /** Kare modu: hareket kovası; video modunda tam progress kullanılır */
+    let lastMotionDomKey = -999;
 
     function onScroll() {
-      rafRef.current = requestAnimationFrame(() => {
+      if (scrollRafPending) return;
+      scrollRafPending = true;
+      scrollRafId = requestAnimationFrame(() => {
+        scrollRafPending = false;
+        scrollRafId = 0;
         const container = containerRef.current;
         if (!container) return;
 
@@ -153,12 +222,11 @@ export function ScrollVideoSection({
         const scrolled = -rect.top;
         const scrollRange = container.offsetHeight - viewH;
         const progress = Math.min(Math.max(scrolled / scrollRange, 0), 1);
+
         /** 0 = grimsi; 1 = açık. Başta daha uzun gri: geç başlar, geç biter. */
         const open = Math.min(Math.max((progress - 0.1) / 0.78, 0), 1);
+        const openDomKey = Math.round(open * 36);
         const shellBg = lerpRgb(SCROLL_SHELL_DARK, SCROLL_SHELL_LIGHT, open);
-        const sr = Math.round(lerp(SCROLL_SHELL_DARK[0], SCROLL_SHELL_LIGHT[0], open));
-        const sg = Math.round(lerp(SCROLL_SHELL_DARK[1], SCROLL_SHELL_LIGHT[1], open));
-        const sb = Math.round(lerp(SCROLL_SHELL_DARK[2], SCROLL_SHELL_LIGHT[2], open));
         /** Kutu = bölüm zemini (sağdaki ana ton) ile aynı; ayrı koyu blok yok. */
         const boxFill = shellBg;
         const textBlend = Math.min(Math.max((open - 0.32) / 0.64, 0), 1);
@@ -173,115 +241,158 @@ export function ScrollVideoSection({
         const pg = Math.round(lerp(SCROLL_PANEL_DARK[1], SCROLL_PANEL_LIGHT[1], open));
         const pb = Math.round(lerp(SCROLL_PANEL_DARK[2], SCROLL_PANEL_LIGHT[2], open));
 
-        if (stickyShellRef.current) {
-          stickyShellRef.current.style.backgroundColor = shellBg;
-        }
-        if (canvasWashRef.current) {
-          canvasWashRef.current.style.opacity = String((1 - open) * 0.42);
-        }
-        if (panelRef.current) {
-          panelRef.current.style.background = [
-            `radial-gradient(ellipse 95% 125% at 0% 48%, rgba(${pr},${pg},${pb},0.62) 0%, rgba(${pr},${pg},${pb},0.22) 42%, transparent 62%)`,
-            `linear-gradient(90deg, rgba(${pr},${pg},${pb},0.78) 0%, rgba(${pr},${pg},${pb},0.28) 38%, rgba(${pr},${pg},${pb},0.08) 54%, rgba(${pr},${pg},${pb},0) 72%)`,
-          ].join(",");
-        }
-
-        if (containerRef.current) {
-          containerRef.current.style.backgroundColor = shellBg;
-        }
-        if (sideLabelRef.current) {
-          sideLabelRef.current.style.color = lerpRgb([210, 208, 200], [118, 114, 108], open);
-        }
-
-        for (const el of [startCardSurfaceRef.current, endCardSurfaceRef.current]) {
-          if (!el) continue;
-          el.style.backgroundColor = boxFill;
-          el.style.borderColor = boxEdge;
-          el.style.color = cornerTint;
-          el.style.setProperty("--c-title", titleCol);
-          el.style.setProperty("--c-sub", subCol);
-          el.style.setProperty("--c-accent", accentCol);
-          el.style.setProperty("--c-spec-v", specValCol);
-        }
-
-        if (endCardSpecsRef.current) {
-          const d = textBlend < 0.38 ? "rgba(255,255,255,0.14)" : SCROLL_DIVIDER_LIGHT;
-          const grid = endCardSpecsRef.current;
-          grid.style.borderTopColor = d;
-          grid.style.borderBottomColor = d;
-          const cells = grid.querySelectorAll(":scope > div");
-          cells.forEach((node, i) => {
-            const cell = node as HTMLElement;
-            cell.style.borderRight = i < cells.length - 1 ? `1px solid ${d}` : "none";
-          });
-        }
-
-        if (endCardSurfaceRef.current) {
-          const ecs = endCardSurfaceRef.current;
-          if (textBlend > 0.48) {
-            ecs.style.setProperty("--cta-bg", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
-            ecs.style.setProperty("--cta-border", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
-          } else {
-            ecs.style.setProperty("--cta-bg", "rgba(255,255,255,0.08)");
-            ecs.style.setProperty("--cta-border", "rgba(255,255,255,0.22)");
+        if (openDomKey !== lastOpenDomKey) {
+          lastOpenDomKey = openDomKey;
+          if (stickyShellRef.current) {
+            stickyShellRef.current.style.backgroundColor = shellBg;
           }
-          ecs.style.setProperty("--cta-fg", "#ffffff");
+          if (canvasWashRef.current) {
+            canvasWashRef.current.style.opacity = String((1 - open) * 0.42);
+          }
+          if (panelRef.current) {
+            panelRef.current.style.background = [
+              `radial-gradient(ellipse 95% 125% at 0% 48%, rgba(${pr},${pg},${pb},0.62) 0%, rgba(${pr},${pg},${pb},0.22) 42%, transparent 62%)`,
+              `linear-gradient(90deg, rgba(${pr},${pg},${pb},0.78) 0%, rgba(${pr},${pg},${pb},0.28) 38%, rgba(${pr},${pg},${pb},0.08) 54%, rgba(${pr},${pg},${pb},0) 72%)`,
+            ].join(",");
+          }
+
+          if (containerRef.current) {
+            containerRef.current.style.backgroundColor = shellBg;
+          }
+          if (sideLabelRef.current) {
+            sideLabelRef.current.style.color = lerpRgb([210, 208, 200], [118, 114, 108], open);
+          }
+
+          for (const el of [startCardSurfaceRef.current, endCardSurfaceRef.current]) {
+            if (!el) continue;
+            el.style.backgroundColor = boxFill;
+            el.style.borderColor = boxEdge;
+            el.style.color = cornerTint;
+            el.style.setProperty("--c-title", titleCol);
+            el.style.setProperty("--c-sub", subCol);
+            el.style.setProperty("--c-accent", accentCol);
+            el.style.setProperty("--c-spec-v", specValCol);
+          }
+
+          if (endCardSpecsRef.current) {
+            const d = textBlend < 0.38 ? "rgba(255,255,255,0.14)" : SCROLL_DIVIDER_LIGHT;
+            const grid = endCardSpecsRef.current;
+            const n = grid.children.length;
+            if (!specRowCells || specRowCells.length !== n) {
+              specRowCells = Array.from(grid.children) as HTMLElement[];
+            }
+            grid.style.borderTopColor = d;
+            grid.style.borderBottomColor = d;
+            specRowCells.forEach((cell, i) => {
+              cell.style.borderRight = i < specRowCells!.length - 1 ? `1px solid ${d}` : "none";
+            });
+          }
+
+          if (endCardSurfaceRef.current) {
+            const ecs = endCardSurfaceRef.current;
+            if (textBlend > 0.48) {
+              ecs.style.setProperty("--cta-bg", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
+              ecs.style.setProperty("--cta-border", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
+            } else {
+              ecs.style.setProperty("--cta-bg", "rgba(255,255,255,0.08)");
+              ecs.style.setProperty("--cta-border", "rgba(255,255,255,0.22)");
+            }
+            ecs.style.setProperty("--cta-fg", "#ffffff");
+          }
+          if (progressBarRef.current) {
+            progressBarRef.current.style.backgroundColor = accentCol;
+          }
         }
 
-        const frameIndex = Math.round(progress * (totalFrames - 1));
-        syncFrameWindow(frameIndex);
-        if (frameIndex !== currentFrameRef.current) {
-          currentFrameRef.current = frameIndex;
-          renderFrame(frameIndex);
+        if (isVideoMode) {
+          const v = videoRef.current;
+          if (v && v.readyState >= 1) {
+            const d = v.duration;
+            if (Number.isFinite(d) && d > 0.05) {
+              const qT = Math.round((progress * d) / VIDEO_SCRUB_QUANT) * VIDEO_SCRUB_QUANT;
+              scrubVideoTo(v, qT, true);
+            }
+          }
+        } else if (totalFrames != null) {
+          const frameIndex = Math.round(progress * (totalFrames - 1));
+          syncFrameWindow(frameIndex);
+          if (frameIndex !== currentFrameRef.current) {
+            currentFrameRef.current = frameIndex;
+            renderFrame(frameIndex);
+          }
         }
 
-        if (startCardRef.current) {
-          const fade = Math.max(1 - progress * 2.4, 0);
-          startCardRef.current.style.opacity = String(fade);
-          startCardRef.current.style.transform = `translateY(-${progress * 30}px)`;
+        let pq = 0;
+        let runMotion = false;
+        if (isVideoMode || isScrollStill) {
+          pq = progress;
+          runMotion = true;
+        } else {
+          const mk = Math.round(progress * 48);
+          if (mk !== lastMotionDomKey) {
+            lastMotionDomKey = mk;
+            pq = mk / 48;
+            runMotion = true;
+          }
         }
-
-        if (panelRef.current) {
-          // Left ink panel slides fully off-screen left by progress 0.85
-          const slideOut = Math.min(Math.max((progress - 0.55) / 0.3, 0), 1);
-          panelRef.current.style.transform = `translateX(-${slideOut * 105}%)`;
-        }
-
-        if (canvasRef.current) {
-          // Fan: starts visible RIGHT (70%), ends visible LEFT (15%) — mirror of hero
-          const shift = Math.min(Math.max((progress - 0.55) * 2.2, 0), 1);
-          const xPct = 70 - shift * 55;
-          canvasRef.current.style.objectPosition = `${xPct}% center`;
+        if (runMotion) {
+          if (startCardRef.current) {
+            const fade = Math.max(1 - pq * 2.4, 0);
+            startCardRef.current.style.opacity = String(fade);
+            startCardRef.current.style.transform = `translateY(-${pq * 30}px)`;
+          }
+          if (panelRef.current) {
+            const slideOut = Math.min(Math.max((pq - 0.55) / 0.3, 0), 1);
+            panelRef.current.style.transform = `translateX(-${slideOut * 105}%)`;
+          }
+          {
+            const mediaEl = isScrollStill ? heroImageRef.current : isVideoMode ? videoRef.current : canvasRef.current;
+            if (mediaEl) {
+              const shift = Math.min(Math.max((pq - 0.55) * 2.2, 0), 1);
+              const xPct = 70 - shift * 55;
+              if (!isVideoMode || Math.abs(xPct - lastMediaObjectXPct) >= 0.15) {
+                lastMediaObjectXPct = xPct;
+                mediaEl.style.objectPosition = `${xPct}% center`;
+              }
+            }
+          }
+          if (endCardRef.current) {
+            const fade = Math.max((pq - 0.72) * 4, 0);
+            const shift = Math.max(40 - fade * 40, 0);
+            endCardRef.current.style.opacity = String(Math.min(fade, 1));
+            endCardRef.current.style.transform = `translateX(${shift}px)`;
+          }
+          if (statsRef.current) {
+            const fade = Math.max(1 - pq * 3.2, 0);
+            statsRef.current.style.opacity = String(fade);
+          }
         }
 
         if (progressBarRef.current) {
           progressBarRef.current.style.transform = `scaleY(${progress})`;
-          progressBarRef.current.style.backgroundColor = accentCol;
-        }
-
-        if (endCardRef.current) {
-          const fade = Math.max((progress - 0.72) * 4, 0);
-          const shift = Math.max(40 - fade * 40, 0);
-          endCardRef.current.style.opacity = String(Math.min(fade, 1));
-          endCardRef.current.style.transform = `translateX(${shift}px)`;
-        }
-
-        if (statsRef.current) {
-          const fade = Math.max(1 - progress * 3.2, 0);
-          statsRef.current.style.opacity = String(fade);
         }
       });
     }
 
     window.addEventListener("scroll", onScroll, { passive: true });
+    const v = videoRef.current;
+    const onMeta = () => {
+      lastMotionDomKey = -999;
+      onScroll();
+    };
+    if (isVideoMode && v) v.addEventListener("loadedmetadata", onMeta);
     onScroll();
 
     return () => {
       window.removeEventListener("scroll", onScroll);
+      if (isVideoMode && v) v.removeEventListener("loadedmetadata", onMeta);
+      scrollRafPending = false;
+      cancelAnimationFrame(scrollRafId);
       cancelAnimationFrame(rafRef.current);
-      cache.clear();
+      if (!isVideoMode && !isScrollStill) cache.clear();
+      specRowCells = null;
     };
-  }, [mounted, framesPath, renderFrame, totalFrames]);
+  }, [mounted, isVideoMode, isScrollStill, scrollImageSrc, videoSrc, framesPath, renderFrame, totalFrames]);
 
   return (
     <>
@@ -289,6 +400,10 @@ export function ScrollVideoSection({
       <MobileScrollSection
         framesPath={framesPath}
         totalFrames={totalFrames}
+        videoSrc={videoSrc}
+        scrollImageSrc={scrollImageSrc}
+        scrollImageAlt={scrollImageAlt}
+        scrollVh={scrollVh}
         startCard={startCard}
         endCard={endCard}
         locale={locale}
@@ -301,19 +416,43 @@ export function ScrollVideoSection({
         ref={containerRef}
         id={id}
         className="relative hidden lg:block"
-        style={{ height: "260vh", backgroundColor: "#4a4a4d" }}
+        style={{ height: `${scrollVh}vh`, backgroundColor: "#4a4a4d" }}
       >
       <div
         ref={stickyShellRef}
         className="sticky top-0 h-screen w-full overflow-hidden"
         style={{ backgroundColor: "#4a4a4d" }}
       >
-        {/* Canvas — fan visible on right side */}
-        <canvas
-          ref={canvasRef}
-          className="absolute inset-0 h-full w-full object-cover"
-          style={{ objectPosition: "70% center" }}
-        />
+        {/* Statik görsel (scrollImageSrc) veya MP4 scrub veya kare canvas */}
+        {isScrollStill && scrollImageSrc ? (
+          // eslint-disable-next-line @next/next/no-img-element -- scroll ile object-position; decode bir kez
+          <img
+            ref={heroImageRef}
+            src={scrollImageSrc}
+            alt={scrollImageAlt}
+            decoding="async"
+            fetchPriority="high"
+            className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)] [contain:paint]"
+            style={{ objectPosition: "70% center" }}
+          />
+        ) : isVideoMode && videoSrc ? (
+          <video
+            ref={videoRef}
+            src={videoSrc}
+            muted
+            playsInline
+            preload="auto"
+            disablePictureInPicture
+            className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)] [contain:paint]"
+            style={{ objectPosition: "70% center" }}
+          />
+        ) : (
+          <canvas
+            ref={canvasRef}
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ objectPosition: "70% center" }}
+          />
+        )}
         <div
           ref={canvasWashRef}
           className="pointer-events-none absolute inset-0 bg-[#1a1a1e]"
@@ -332,7 +471,7 @@ export function ScrollVideoSection({
             ].join(","),
           }}
         >
-          <div className="absolute inset-0 blueprint-grid-light opacity-[0.06]" aria-hidden />
+          <div className="absolute inset-0 blueprint-grid-light opacity-[0.035]" aria-hidden />
         </div>
 
         {/* Right-side progress rail */}
@@ -368,7 +507,7 @@ export function ScrollVideoSection({
           >
             <div
               ref={startCardSurfaceRef}
-              className="relative w-full overflow-hidden rounded-3xl border px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] backdrop-blur-[5px] sm:px-9 sm:py-8"
+              className="relative w-full overflow-hidden rounded-3xl border border-white/12 bg-[#3a3a3e]/95 px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] sm:px-9 sm:py-8 [transform:translateZ(0)]"
               style={
                 {
                   backgroundColor: "rgb(74, 74, 77)",
@@ -484,7 +623,7 @@ export function ScrollVideoSection({
             <div className="pointer-events-auto mr-6 w-[min(580px,42vw)] xl:mr-14">
               <div
                 ref={endCardSurfaceRef}
-                className="relative overflow-hidden rounded-3xl border p-9 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] backdrop-blur-[5px]"
+                className="relative overflow-hidden rounded-3xl border border-white/12 bg-[#3a3a3e]/95 p-9 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] [transform:translateZ(0)]"
                 style={
                   {
                     backgroundColor: "rgb(74, 74, 77)",
@@ -580,24 +719,45 @@ export function ScrollVideoSection({
 function MobileScrollSection({
   framesPath,
   totalFrames,
+  videoSrc,
+  scrollImageSrc,
+  scrollImageAlt = "",
+  scrollVh = 260,
   startCard,
   endCard,
   locale,
   productHref,
   sideLabel,
 }: {
-  framesPath: string;
-  totalFrames: number;
+  framesPath?: string;
+  totalFrames?: number;
+  videoSrc?: string;
+  scrollImageSrc?: string;
+  scrollImageAlt?: string;
+  scrollVh?: number;
   startCard?: StartCard;
   endCard?: EndCard;
   locale?: string;
   productHref?: string;
   sideLabel?: string;
 }) {
+  const isMobileStill = Boolean(scrollImageSrc);
+  const isMobileVideo = Boolean(videoSrc) && !isMobileStill;
+  const isMobileMotion = isMobileVideo || isMobileStill;
   const sectionRef = useRef<HTMLElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
-  const [mobileFrame, setMobileFrame] = useState(totalFrames);
+  const mobileVideoRef = useRef<HTMLVideoElement | null>(null);
+  const mobileHeroImgRef = useRef<HTMLImageElement | null>(null);
+  const mobileHeroBgRef = useRef<HTMLDivElement | null>(null);
+  const mobileOverlayARef = useRef<HTMLDivElement | null>(null);
+  const mobileOverlayBRef = useRef<HTMLDivElement | null>(null);
+  const mobileStartPanelRef = useRef<HTMLDivElement | null>(null);
+  const mobileEndPanelRef = useRef<HTMLDivElement | null>(null);
+  const tf = totalFrames ?? 240;
+  const [mobileFrame, setMobileFrame] = useState(tf);
   const [mobileProgress, setMobileProgress] = useState(0);
+
+  const mobileStageHeightSvh = Math.max(180, Math.round((235 * scrollVh) / 260));
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -608,10 +768,13 @@ function MobileScrollSection({
     if (window.innerWidth >= 1024) return;
 
     const startFrame = 1;
-    const endFrame = totalFrames;
+    const endFrame = tf;
     let rafId = 0;
+    let mobileRafPending = false;
 
     const updateFrame = () => {
+      mobileRafPending = false;
+      rafId = 0;
       const stage = stageRef.current;
       if (!stage) return;
       const viewport = window.innerHeight;
@@ -620,13 +783,63 @@ function MobileScrollSection({
       const travel = Math.max(stage.offsetHeight - viewport * 0.24, 1);
       const rawProgress = stageScroll / travel;
       const progress = Math.min(Math.max(rawProgress, 0), 1);
+
+      if (isMobileMotion) {
+        const v = mobileVideoRef.current;
+        if (isMobileVideo && v && v.readyState >= 1) {
+          const d = v.duration;
+          if (Number.isFinite(d) && d > 0.05) {
+            const qT = Math.round((progress * d) / VIDEO_SCRUB_QUANT) * VIDEO_SCRUB_QUANT;
+            scrubVideoTo(v, qT, true);
+          }
+        }
+        const pq = progress;
+        const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
+        const fanX = 18 + transition * 14;
+        const fanScale = 1.14 - transition * 0.04;
+        const overlayOpacity = Math.max(0.64 - transition * 0.64, 0);
+        const panelOpacity = Math.max(1 - transition * 1.15, 0);
+        const panelLift = transition * 105;
+        const finalTextOpacity = Math.min(Math.max((transition - 0.78) / 0.2, 0), 1);
+        const finalTextLift = (1 - finalTextOpacity) * 24;
+        const bgR = Math.round(62 + transition * 170);
+        const bgG = Math.round(65 + transition * 165);
+        const bgB = Math.round(72 + transition * 152);
+        const root = mobileHeroBgRef.current;
+        if (root) root.style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
+        const imgEl = mobileHeroImgRef.current;
+        if (isMobileStill && imgEl) {
+          imgEl.style.objectPosition = `${fanX}% center`;
+          imgEl.style.transform = `translateZ(0) scale(${fanScale})`;
+        } else if (isMobileVideo && v) {
+          v.style.objectPosition = `${fanX}% center`;
+          v.style.transform = `translateZ(0) scale(${fanScale})`;
+        }
+        const oa = mobileOverlayARef.current;
+        const ob = mobileOverlayBRef.current;
+        if (oa) oa.style.opacity = String(overlayOpacity);
+        if (ob) ob.style.opacity = String(overlayOpacity);
+        const sp = mobileStartPanelRef.current;
+        if (sp) {
+          sp.style.opacity = String(panelOpacity);
+          sp.style.transform = `translateY(-${panelLift}px)`;
+        }
+        const ep = mobileEndPanelRef.current;
+        if (ep) {
+          ep.style.opacity = String(finalTextOpacity);
+          ep.style.transform = `translateY(${finalTextLift}px)`;
+        }
+        return;
+      }
+
       const frame = Math.round(startFrame + progress * (endFrame - startFrame));
       setMobileFrame(frame);
       setMobileProgress(progress);
     };
 
     const onScroll = () => {
-      cancelAnimationFrame(rafId);
+      if (mobileRafPending) return;
+      mobileRafPending = true;
       rafId = requestAnimationFrame(updateFrame);
     };
 
@@ -634,19 +847,31 @@ function MobileScrollSection({
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll, { passive: true });
 
+    let mobileVideoForMeta: HTMLVideoElement | null = null;
+    const onVideoMeta = () => {
+      updateFrame();
+    };
+    if (isMobileVideo) {
+      mobileVideoForMeta = mobileVideoRef.current;
+      mobileVideoForMeta?.addEventListener("loadedmetadata", onVideoMeta);
+    }
+
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
+      mobileRafPending = false;
       cancelAnimationFrame(rafId);
+      mobileVideoForMeta?.removeEventListener("loadedmetadata", onVideoMeta);
     };
-  }, [totalFrames]);
+  }, [tf, isMobileVideo, isMobileStill]);
 
   useEffect(() => {
     if (typeof window === "undefined" || window.innerWidth >= 1024) return;
+    if (isMobileMotion || !framesPath) return;
 
     const around = [-2, -1, 1, 2, 3];
     const preloadIndexes = around
-      .map((delta) => Math.min(Math.max(mobileFrame + delta, 1), totalFrames))
+      .map((delta) => Math.min(Math.max(mobileFrame + delta, 1), tf))
       .filter((value, index, arr) => arr.indexOf(value) === index);
 
     preloadIndexes.forEach((idx) => {
@@ -655,9 +880,10 @@ function MobileScrollSection({
       img.decoding = "async";
       img.src = `${framesPath}/frame-${num}.jpg`;
     });
-  }, [framesPath, mobileFrame, totalFrames]);
+  }, [framesPath, mobileFrame, tf, isMobileVideo, isMobileStill]);
 
-  const finalFrameSrc = `${framesPath}/frame-${String(mobileFrame).padStart(4, "0")}.jpg`;
+  const finalFrameSrc =
+    framesPath && !isMobileMotion ? `${framesPath}/frame-${String(mobileFrame).padStart(4, "0")}.jpg` : "";
   const transition = Math.min(Math.max((mobileProgress - 0.08) / 0.76, 0), 1);
   const fanX = 18 + transition * 14;
   const fanScale = 1.14 - transition * 0.04;
@@ -672,35 +898,77 @@ function MobileScrollSection({
 
   return (
     <section ref={sectionRef} className="relative bg-sand-200 pt-[80px] lg:hidden">
-      <div ref={stageRef} className="relative h-[235svh]">
+      <div ref={stageRef} className="relative" style={{ height: `${mobileStageHeightSvh}svh` }}>
         <section className="sticky top-[92px]">
-          <div className="relative min-h-[min(76svh,560px)] overflow-hidden" style={{ backgroundColor: `rgb(${bgR}, ${bgG}, ${bgB})` }}>
-            <Image
-              src={finalFrameSrc}
-              alt={endCard?.title ?? "Fan"}
-              fill
-              unoptimized
-              sizes="100vw"
-              className="object-cover"
-              style={{
-                objectPosition: `${fanX}% center`,
-                transform: `scale(${fanScale})`,
-                filter: "contrast(1.08) saturate(1.04) brightness(1.03)",
-              }}
-            />
+          <div
+            ref={mobileHeroBgRef}
+            className="relative min-h-[min(76svh,560px)] overflow-hidden"
+            style={{
+              backgroundColor: isMobileMotion ? "rgb(62, 65, 72)" : `rgb(${bgR}, ${bgG}, ${bgB})`,
+            }}
+          >
+            {isMobileStill && scrollImageSrc ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                ref={mobileHeroImgRef}
+                src={scrollImageSrc}
+                alt={scrollImageAlt}
+                decoding="async"
+                fetchPriority="high"
+                className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
+                style={{
+                  objectPosition: "18% center",
+                  transform: "translateZ(0) scale(1.14)",
+                }}
+              />
+            ) : isMobileVideo && videoSrc ? (
+              <video
+                ref={mobileVideoRef}
+                src={videoSrc}
+                muted
+                playsInline
+                preload="auto"
+                disablePictureInPicture
+                className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
+                style={{
+                  objectPosition: "18% center",
+                  transform: "translateZ(0) scale(1.14)",
+                }}
+              />
+            ) : (
+              <Image
+                src={finalFrameSrc}
+                alt={endCard?.title ?? "Fan"}
+                fill
+                unoptimized
+                sizes="100vw"
+                className="object-cover"
+                style={{
+                  objectPosition: `${fanX}% center`,
+                  transform: `scale(${fanScale})`,
+                  filter: "contrast(1.08) saturate(1.04) brightness(1.03)",
+                }}
+              />
+            )}
             <div
+              ref={mobileOverlayARef}
               className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_46%,rgba(212,218,228,0.16)_0%,rgba(58,63,74,0.28)_40%,rgba(31,35,43,0.66)_100%)]"
-              style={{ opacity: overlayOpacity }}
+              style={{ opacity: isMobileMotion ? 0.64 : overlayOpacity }}
             />
             <div
+              ref={mobileOverlayBRef}
               className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,39,46,0.56)_0%,rgba(36,39,46,0.24)_30%,rgba(36,39,46,0.10)_52%,rgba(36,39,46,0.36)_78%,rgba(36,39,46,0.62)_100%)]"
-              style={{ opacity: overlayOpacity }}
+              style={{ opacity: isMobileMotion ? 0.64 : overlayOpacity }}
             />
 
             {startCard && (
               <div
-                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#343840]/84 p-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)] backdrop-blur-[2px]"
-                style={{ opacity: panelOpacity, transform: `translateY(-${panelLift}px)` }}
+                ref={mobileStartPanelRef}
+                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#343840]/94 p-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)]"
+                style={{
+                  opacity: isMobileMotion ? 1 : panelOpacity,
+                  transform: isMobileMotion ? "translateY(0px)" : `translateY(-${panelLift}px)`,
+                }}
               >
                 <p className="font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">• {startCard.badge}</p>
                 <h2 className="mt-3 text-white">
@@ -714,10 +982,14 @@ function MobileScrollSection({
 
             {endCard && (
               <div
+                ref={mobileEndPanelRef}
                 className="pointer-events-none absolute inset-x-5 bottom-4 z-10"
-                style={{ opacity: finalTextOpacity, transform: `translateY(${finalTextLift}px)` }}
+                style={{
+                  opacity: isMobileMotion ? 0 : finalTextOpacity,
+                  transform: isMobileMotion ? "translateY(24px)" : `translateY(${finalTextLift}px)`,
+                }}
               >
-                <div className="rounded-2xl border border-ink/10 bg-white/82 p-4 shadow-[0_18px_42px_-26px_rgba(21,26,33,0.28)] backdrop-blur-md">
+                <div className="rounded-2xl border border-ink/10 bg-white/94 p-4 shadow-[0_18px_42px_-26px_rgba(21,26,33,0.28)]">
                   <div className="flex items-center justify-between">
                     <span className="inline-flex items-center gap-2 font-mono-eng text-[10px] uppercase tracking-[0.24em] text-ink/62">
                       <span className="h-px w-5 bg-primary" />

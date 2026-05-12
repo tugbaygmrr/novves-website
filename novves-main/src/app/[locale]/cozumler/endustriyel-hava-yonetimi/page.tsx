@@ -25,6 +25,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       locale={locale}
       commonDict={dict.common}
       slug="endustriyel-hava-yonetimi"
+      heroImage="/images/solutions/endustriyel-hava-yonetimi-card-hero.png"
     />
   );
 }

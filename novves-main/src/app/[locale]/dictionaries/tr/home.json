@@ -29,63 +29,41 @@
   },
   "pillars": [
     {
-      "tag": "MÜHENDİSLİK & TASARIM",
-      "intro": "Sürecimiz bir ürünle değil, bir problem analiziyle başlar. NOVVES için mühendislik; sadece fan seçmek değil, dumanın ve ısının yapı içindeki yolculuğunu matematiksel olarak öngörmektir.",
-      "items": [
-        {
-          "desc": "Yangın senaryolarını dijital ortamda canlandırıyor, sistemin performansını kurulumdan önce kanıtlıyoruz.",
-          "label": "CFD Simülasyonları"
-        },
-        {
-          "desc": "Her yapıya özel debi ve basınçlandırma hesapları ile \"ayrı mühendislik\" maliyetlerinden kaçınıyor, optimum verimi yakalıyoruz.",
-          "label": "Hassas Hesaplama"
-        },
-        {
-          "desc": "Teknik şartnamelere tam uyumlu ürünler üretiyoruz.",
-          "label": "Proje Odaklılık"
-        }
-      ],
-      "title": "Analitik Zekanın Dijital İkizi"
+      "tag": "01 — Analiz & Mühendislik",
+      "title": "Projeyi Üründen Önce Anlarız",
+      "intro": "Her proje; mimari yapı, kullanım amacı, yangın senaryosu, hava debisi, basınç ihtiyacı ve saha koşullarıyla birlikte değerlendirilir. Gerekli durumlarda CFD analizleri, fan seçimleri ve sistem senaryoları mühendislik verileriyle oluşturulur.",
+      "cta": "Mühendislik Sürecini İncele",
+      "href": "/hizmetler",
+      "items": []
     },
     {
-      "tag": "ÜRETİM & KALİTE",
-      "intro": "Tasarım aşamasında onaylanan her veri, üretim tesislerimizde fiziksel bir güce dönüşür. Mühendislik ekosistemini modern üretim teknolojileriyle birleştirerek hata payını sıfıra indiriyoruz.",
-      "items": [
-        {
-          "desc": "Ürettiğimiz her fan ve damper, EN 12101-3 gibi uluslararası yangın dayanım standartlarında, akredite laboratuvarlarca test edilmektedir.",
-          "label": "Sertifikalı Güç"
-        },
-        {
-          "desc": "Lazer kesimden dinamik balans testlerine kadar her aşamada milimetrik toleranslarla çalışıyoruz.",
-          "label": "Hassas İmalat"
-        },
-        {
-          "desc": "Uzun ömürlü, korozyona dayanıklı ve enerji verimliliği yüksek ham maddelerle sistemin yaşam döngüsünü maksimize ediyoruz.",
-          "label": "Sürdürülebilir Malzeme"
-        }
-      ],
-      "title": "Standartların Ötesinde Bir Zanaat"
+      "tag": "02 — Üretim & Kalite",
+      "title": "Tasarlanan Çözümü Üretiyoruz",
+      "intro": "Onaylanan teknik veriler, NOVVES üretim altyapısında projeye uygun fan, damper, susturucu, kontrol panosu ve yardımcı ekipmanlara dönüştürülür. Üretim süreci; kalite kontrol, performans beklentisi ve standart gereksinimleri dikkate alınarak yönetilir.",
+      "cta": "Üretim Gücümüzü Keşfet",
+      "href": "/urunler",
+      "items": []
     },
     {
-      "tag": "KURULUM & UYGULAMA",
-      "intro": "En iyi ürün, ancak en iyi şekilde entegre edildiğinde hayat kurtarır. İnovasyonumuzun son halkası, sistemin binanın sinir sistemiyle kusursuz bir uyum içinde çalışmasıdır.",
-      "items": [
-        {
-          "desc": "Montaj aşamasında teknik rehberlik sunarak sistemin projedeki gibi doğru konumlanmasını sağlıyoruz.",
-          "label": "Saha Süpervizorlüğü"
-        },
-        {
-          "desc": "Soğuk ve sıcak duman testleri ile sistemin tepki süresini ve tahliye kapasitesini sahada doğruluyoruz.",
-          "label": "Devreye Alma"
-        },
-        {
-          "desc": "Yangın algılama sistemleriyle jet fan ve damperlerin milisaniyeler içinde senkronize olmasını garanti altına alıyoruz.",
-          "label": "Akıllı Otomasyon Entegrasyonu"
-        }
-      ],
-      "title": "Sahada Kusursuz Performans"
+      "tag": "03 — Uygulama & Destek",
+      "title": "Sahada Çalışan Sistemler Kurarız",
+      "intro": "Ürün teslimiyle süreç bitmez. NOVVES; montaj koordinasyonu, devreye alma desteği, kontrol senaryoları, teknik dokümantasyon ve satış sonrası destek süreçleriyle sistemin sahada doğru çalışmasına odaklanır.",
+      "cta": "Saha Desteğini İncele",
+      "href": "/hizmetler",
+      "items": []
     }
   ],
+  "engineeringShowcase": {
+    "title": "CFD DESTEKLİ MÜHENDİSLİK",
+    "subtitle": "Akışı Görünür Kılan Mühendislik",
+    "body": "Sürecimiz bir ürün seçimiyle değil, yapının aerodinamik davranışını anlamakla başlar. NOVVES, CFD tabanlı analizlerle dumanın, ısının ve hava akışının yapı içindeki hareketini simüle eder; fan yerleşimi, debi, basınç ve senaryo bazlı çalışma mantığını mühendislik verileriyle doğrular.",
+    "cta": "CFD Sürecimizi İnceleyin"
+  },
+  "engineeringPillarsSection": {
+    "title": "Mühendislikten Sahaya",
+    "subtitle": "Uçtan Uca Çözüm",
+    "lead": "NOVVES, projeleri yalnızca ürün tedariki olarak ele almaz. İhtiyacı analiz eder, doğru sistemi tasarlar, üretir ve sahada uygulanabilir hale getirir."
+  },
   "animation2": {
     "endCard": {
       "cta": "Ürünü İncele",
@@ -111,6 +89,122 @@
     "desc": "Keşif, CFD analizi, projelendirme ve teklif süreçleri için bizimle iletişime geçin.",
     "title": "Projeniz için mühendislik desteği alın",
     "button": "Teklif Alın"
+  },
+  "homeBands": {
+    "solutionStripFeatureRows": [
+      [
+        { "label": "Yangın senaryosu", "desc": "Otopark, tünel ve büyük hacimler için duman–ısı tahliye senaryolarına uygun fan seçimi." },
+        { "label": "Jet & doğal tahliye", "desc": "Jet fan, indüksiyon ve doğal duman bacası uygulamalarında debi ve itki dengesi." },
+        { "label": "EN 12101 uyumu", "desc": "Sertifikalı ürün ve tip test dokümantasyonu ile yönetmelik ve denetim süreçlerine hazır paket." }
+      ],
+      [
+        { "label": "Basınç kademesi", "desc": "Kritik alanlarda pozitif/negatif basınç ve kaçak kontrolü ile oda sınıfı bütünlüğü." },
+        { "label": "HEPA & ince filtre", "desc": "Hastane, GMP ve gıda hatlarında filtre sınıfı ve değişim stratejisiyle temiz hava." },
+        { "label": "İzleme & alarm", "desc": "Fark basıncı, nem ve partikül izleme; bakım ve uyumluluk için kayıt ve alarm mimarisi." }
+      ],
+      [
+        { "label": "Ahır debisi", "desc": "Hayvan sayısı, mevsim ve ısı stresine göre taze hava ve egzoz debisi hesabı." },
+        { "label": "Gaz & nem", "desc": "Amonyak, CO₂ ve nem yükünü hedefleyen hava değişimi ve kanal düzeni." },
+        { "label": "Korozyona dayanım", "desc": "Aşındırıcı ortam ve yıkama için malzeme, motor koruma ve kolay servis erişimi." }
+      ],
+      [
+        { "label": "Tünel & gölgelik", "desc": "Tünel sera ve çok katlı örtülerde homojen hız profili ve sıcaklık stratiifikasyonu." },
+        { "label": "CO₂ & nem", "desc": "Fotosentez ve transpirasyon için nemlendirme/kurutma ile birlikte havalandırma." },
+        { "label": "Enerji maliyeti", "desc": "Mevsimsel yükte VFD ve kontrol setleriyle fan enerjisini düşürme." }
+      ],
+      [
+        { "label": "Kumanda & pano", "desc": "Yangın, proses ve konfor fanları için merkezi kumanda ve saha panoları." },
+        { "label": "BMS / SCADA", "desc": "Modbus, BACnet vb. ile bina ve tesis otomasyonuna entegre sinyal ve senaryo." },
+        { "label": "Devreye alma", "desc": "Sıra testleri, el kabul senaryoları ve bakım ekranlarıyla net devreye alma." }
+      ],
+      [
+        { "label": "Tuzlu ortam", "desc": "C4/C5 korozyon sınıflarına uygun kaplama ve paslanmaz seçenekleri." },
+        { "label": "Gemi & sınıf", "desc": "Sınıflandırma kuruluşu ve gemi tipine uygun teknik dosya ve test desteği." },
+        { "label": "Yedeklilik", "desc": "Açık denizde erişim ve arıza toleransı için N+1 ve yedek fan stratejisi." }
+      ],
+      [
+        { "label": "Duman & görüş", "desc": "Jet fan yerleşimi, görüş mesafesi ve sıcaklık alanları için 3B duman modellemesi." },
+        { "label": "Isı & kirletici", "desc": "Mutfak, proses ve atık hattı için ısı ve konsantrasyon dağılımı analizi." },
+        { "label": "Rapor & savunma", "desc": "Yatırımcı ve denetçi sunumları için özet rapor, kesit ve video çıktıları." }
+      ],
+      [
+        { "label": "Konfor bandı", "desc": "Ofis, otel ve ticari alanlarda hedef sıcaklık–nem bandında stabil iç ortam." },
+        { "label": "Akustik", "desc": "Şaft ve cepheye yönelik düşük SPL seçimi ve titreşim izolasyonu." },
+        { "label": "Enerji & VRF", "desc": "Isı pompası ve VRF entegrasyonuna uygun debi ve basınç planlaması." }
+      ],
+      [
+        { "label": "Proses debisi", "desc": "Kurutma, emisyon ve hat basıncına göre yüksek sıcaklık ve aşındırıcı ortam fanları." },
+        { "label": "Toz & filtre", "desc": "Toz yükü altında filtre ömrü ve basınç kaybı ile uyumlu fan eğrisi." },
+        { "label": "Kesintisiz üretim", "desc": "Yedek fan, hızlı yedek parça ve servis erişimi ile planlı duruşları kısaltma." }
+      ],
+      [
+        { "label": "Trafo ısı yükü", "desc": "Trafo ve bara odalarında kayıp ısıya göre soğutma hava debisi ve kaçak payı." },
+        { "label": "Yangın & duman", "desc": "Enerji tesislerinde duman tahliye ve basınçlandırma ile koordineli sistem." },
+        { "label": "Şartname uyumu", "desc": "OEM, enerji şirketi ve IEC odaklı teknik şartnameye cevap veren ürün gamı." }
+      ],
+      [
+        { "label": "Bölge sınıfı", "desc": "Zone 1/2 veya 21/22 için ekipman ve koruma türü seçimi." },
+        { "label": "Kıvılcımsız", "desc": "Ex d/m/e vb. uygun koruma ile patlayıcı gaz/toz ortamında güvenli tahrik." },
+        { "label": "ATEX dosyası", "desc": "Risk analizi, teknik dosya ve saha etiketlemesiyle denetime hazır paket." }
+      ],
+      [
+        { "label": "Şaft & banyo", "desc": "Merkezi şaft, banyo ve mutfak için kompakt ve düşük gürültülü ünite seçimi." },
+        { "label": "Cephe uyumu", "desc": "Balkon ve cephe montajında estetik ve akustik kısıtlara uygun çözümler." },
+        { "label": "Enerji etiketi", "desc": "Konut regülasyonlarına uygun verim sınıfı ve düşük tüketim." }
+      ],
+      [
+        { "label": "Geometri özel", "desc": "Sınırlı yerleşim, özel flanş ve kanal bağlantısı için projeye özel gövde." },
+        { "label": "Malzeme & kaynak", "desc": "Paslanmaz, alüminyum ve özel kaplama; kaynak ve penetrant prosedürleri." },
+        { "label": "FAT & izlenebilirlik", "desc": "Fabrika kabul testi, sertifika ve malzeme izlenebilirliği ile teslim." }
+      ]
+    ],
+    "productStripFeatureRows": [
+      [
+        { "label": "Yüksek Performans", "desc": "Projeye uygun yüksek debi ve itki ile güçlü hava hareketi." },
+        { "label": "Dayanıklılık", "desc": "Endüstriyel ortamda uzun ömürlü ve güvenilir çalışma." },
+        { "label": "Sessiz Çalışma", "desc": "Düşük ses seviyesi ile konforlu ortamlar." }
+      ],
+      [
+        { "label": "Enerji Verimliliği", "desc": "Optimize edilmiş tüketim ve verimli sistem seçimi." },
+        { "label": "Akıllı Kontrol", "desc": "Otomasyon ve izleme ile kolay yönetim." },
+        { "label": "Esnek Çözümler", "desc": "Farklı mimari ve kullanım senaryolarına uyum." }
+      ],
+      [
+        { "label": "Yüksek Kapasite", "desc": "Büyük yükler için güçlü soğutma ve ısıtma kapasitesi." },
+        { "label": "Güvenilir Performans", "desc": "Mevsimsel koşullarda stabil çalışma." },
+        { "label": "Dört Mevsim", "desc": "Yıl boyu konfor ve proses ihtiyaçlarına yanıt." }
+      ],
+      [
+        { "label": "Modüler Tasarım", "desc": "Projeye göre yapılandırılabilen santral blokları." },
+        { "label": "Yüksek Verim", "desc": "Isı geri kazanımı ve fan verimliliği seçenekleri." },
+        { "label": "Akıllı İzleme", "desc": "Operasyon ve bakım için görünürlük." }
+      ],
+      [
+        { "label": "Homojen Dağılım", "desc": "Alan içinde dengeli hava dağılımı." },
+        { "label": "Estetik Tasarım", "desc": "Mimariyle uyumlu menfez ve difüzörler." },
+        { "label": "Kolay Montaj", "desc": "Sahada hızlı kurulum ve devreye alma." }
+      ],
+      [
+        { "label": "Filtre sınıfları", "desc": "Ön filtreden ince ve HEPA sınıfına kadar seçenekler." },
+        { "label": "İç hava kalitesi", "desc": "Konfor ve kritik uygulamalar için temiz taze hava." },
+        { "label": "Standart uyumu", "desc": "Hijyen ve proje şartnamelerine uygun ürün seçimi." }
+      ],
+      [
+        { "label": "Bağlantı ve donanım", "desc": "Damper, askı ve tamamlayıcı aksesuar çözümleri." },
+        { "label": "Geniş uyumluluk", "desc": "Fan, kanal ve hava cihazlarıyla uyumlu bileşenler." },
+        { "label": "Saha lojistiği", "desc": "Montaj takvimine uygun tedarik ve çeşitlilik." }
+      ],
+      [
+        { "label": "Kontrol ve pano", "desc": "Havalandırma tesisleri için izleme ve kumanda donanımı." },
+        { "label": "BMS entegrasyonu", "desc": "Bina otomasyonu için sinyal ve arayüz seçenekleri." },
+        { "label": "Saha setleri", "desc": "Kurulum ve devreye almaya hazır pratik düzenler." }
+      ],
+      [
+        { "label": "Titreşim süspansiyonu", "desc": "Ekipman yüküne göre seçilen yaylı ve elastomer izolasyon." },
+        { "label": "Ses kontrolü", "desc": "Yapısal ve hava yolu iletilen gürültünün azaltılması." },
+        { "label": "Ayrıştırılmış taşıyıcı", "desc": "Kontrollü aktarımla stabil ekipman mesneti." }
+      ]
+    ]
   },
   "productCategories": {
     "tag": "Ürün Yelpazesi",
@@ -209,14 +303,21 @@
     "catalogCardDesc": "Teknik merkezde PDF ve dokümanlara erişin.",
     "referenceEyebrow": "Referans",
     "referenceCardDesc": "Tamamlanan projelerden öne çıkan örnekleri inceleyin.",
+    "referenceStripVertical": "REFERANSLAR",
+    "referenceBySectorKicker": "SEKTÖRLERE GÖRE",
+    "referenceBySectorHeadline": "REFERANSLAR",
+    "referenceBySectorTitle": "SEKTÖRLERE GÖRE REFERANSLAR",
+    "referenceProjectWord": "Proje",
+    "referenceExploreCta": "Keşfet",
     "certificateEyebrow": "Sertifika",
     "certificateCardDesc": "Uluslararası kalite, güvenlik ve uygunluk belgelerimizi inceleyin.",
     "companyEyebrow": "Kurumsal",
     "companyCardDesc": "NOVVES’in hikayesi, yönetim ve ekip yapısını keşfedin.",
-    "companyProfileVertical": "Şirket Profili",
+    "companyProfileVertical": "ŞİRKET PROFİLİ",
     "pillarExpandAria": "Devamını göster",
     "pillarCollapseAria": "Metni daralt",
     "pillarCta": "Detayları İncele",
+    "catalogCardCta": "İncele",
     "productCardCta": "Detayları İncele",
     "solutionCardCta": "Detayları İncele",
     "midCtaBullet1": "48 Saatte Ön Değerlendirme",
@@ -297,17 +398,20 @@
     {
       "title": "Ürün Kataloğu",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Güncel ürün serileri, ölçü aralıkları ve seçim özetleriyle NOVVES gamını tek bakışta keşfedin."
     },
     {
       "title": "Teknik Föyler",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "Montaj notları, elektrik bağlantı özetleri ve uygulama kılavuzlarına teknik merkezden erişin."
     },
     {
       "title": "Datasheet Arşivi",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performans eğrileri, ses ve itki verileri; tip bazlı datasheet ve onay dokümanları."
     }
   ],
   "certificatePreview": [
@@ -327,6 +431,77 @@
       "image": "/images/certificates/kalite-uygunluk-mockup.png"
     }
   ],
+  "companyProfileSection": {
+    "timelineIntro": "Yirmi yılı aşkın tecrübemizle duman tahliye, konfor iklimlendirme ve endüstriyel havalandırmada projeleri uçtan uca yönetiyor; üretimden sahaya kadar güvenilir mühendislik sunuyoruz.",
+    "timelineHeadlinePart1": "Yolculuğumuz ",
+    "timelineHeadlineEm1": "2004'te",
+    "timelineHeadlinePart2": " başladı, bugün ",
+    "timelineHeadlineEm2": "Türkiye'nin",
+    "timelineHeadlinePart3": " dört bir yanındayız.",
+    "milestones": [
+      {
+        "year": "2004",
+        "title": "Kuruluş",
+        "body": "İstanbul'da kurulduk.",
+        "image": "/images/corporate/novves-kurulus-bina.png?v=1",
+        "icon": "flag"
+      },
+      {
+        "year": "2010",
+        "title": "Büyüme",
+        "body": "İlk hastane projemiz ile büyümeye başladık.",
+        "image": "/images/corporate/novves-buyume-bina.png?v=1",
+        "icon": "chart"
+      },
+      {
+        "year": "2015",
+        "title": "Sertifikasyon",
+        "body": "Uluslararası standartlarda hizmet sunmaya başladık.",
+        "image": "/images/corporate/novves-sertifikasyon-iso9001.png?v=1",
+        "icon": "certificate"
+      },
+      {
+        "year": "2020",
+        "title": "Liderlik",
+        "body": "Sektör lideri olarak güvenin adresi olduk.",
+        "image": "/images/corporate/novves-liderlik.png?v=1",
+        "icon": "star"
+      },
+      {
+        "year": "2024",
+        "title": "Günümüz",
+        "body": "Türkiye'nin her yerinde, güçlü ekibimizle yanınızdayız.",
+        "image": "/images/corporate/novves-gunumuz.png?v=1",
+        "icon": "people"
+      }
+    ],
+    "goalsTitle": "GELECEK HEDEFLERİMİZ",
+    "goalsIntro": "Sürdürülebilirlik, dijitalleşme ve yetkinlik; geleceğe yatırım yaptığımız üç ana eksen. Ürün ve hizmetlerimizi bu doğrultuda geliştiriyor, paydaşlarımızla uzun soluklu değer üretiyoruz.",
+    "goalsPillars": [
+      {
+        "title": "Sürdürülebilir Çözümler",
+        "body": "Enerji verimliliği ve çevresel etkiyi azaltan fan ve sistem tasarımlarıyla karbon ayak izini düşürmeye odaklanıyoruz."
+      },
+      {
+        "title": "Teknoloji ve Yenilik",
+        "body": "CFD, otomasyon ve akıllı kontrol entegrasyonlarıyla projelerde ölçülebilir performans sağlıyoruz."
+      },
+      {
+        "title": "İnsan ve Gelişim",
+        "body": "Ekip yetkinliğini sürekli eğitim ve saha deneyimiyle güçlendirerek müşteri yanında kalıcı destek sunuyoruz."
+      },
+      {
+        "title": "Daha Geniş Bir Türkiye",
+        "body": "Yurt içi üretim ve servis ağımızı büyüterek her bölgede erişilebilir mühendislik desteği veriyoruz."
+      }
+    ],
+    "goalsAsideImage": "/images/corporate/novves-company-profile-goals-aside-v2.png?v=1",
+    "goalsAsideImageAlt": "NOVVES — soyut hava akışı ve mühendislik illüstrasyonu",
+    "bannerTitle": "Değişime ayak uyduruyor, geleceği şekillendiriyoruz.",
+    "bannerLine1": "Geçmişten gelen tecrübemizi, bugünün ihtiyaçlarıyla birleştiriyoruz.",
+    "bannerLine2": "Yarının havalandırma ve yangın güvenliği standartlarına birlikte hazırlanıyoruz.",
+    "bannerLogoAlt": "NOVVES HVAC"
+  },
   "companyProfileCards": [
     {
       "href": "/kurumsal/biz-kimiz",
@@ -346,19 +521,40 @@
   ],
   "referencePreview": [
     {
-      "title": "2M Lojistik Gebze Depo",
+      "title": "Sağlık Kuruluşları",
+      "sector": "Sağlık Kuruluşları",
+      "example": "Adana Yüreğir Devlet Hastanesi",
+      "projectCount": "3",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/2m.png?v=2"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "theme": "orange"
     },
     {
-      "title": "3S Kale Topaz Zeytinburnu",
+      "title": "Lojistik ve Depo",
+      "sector": "Lojistik ve Depo",
+      "example": "2M Lojistik Lojistik Merkezi",
+      "projectCount": "5",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/3skale.png?v=2"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "theme": "sky"
     },
     {
-      "title": "Adana Yüreğir 100 Yataklı Hastane",
+      "title": "Ticari Binalar",
+      "sector": "Ticari Binalar",
+      "example": "3S Kale Topaz AVM ve Ofis Kompleksi",
+      "projectCount": "8",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/adana-yuregir.png?v=2"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "theme": "emerald"
+    },
+    {
+      "title": "Endüstriyel Tesisler",
+      "sector": "Endüstriyel Tesisler",
+      "example": "Eczacıbaşı Üretim Tesisi",
+      "projectCount": "6",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/endustriyel-aselsan-konya-hero.png?v=1",
+      "theme": "zinc"
     }
   ]
 }

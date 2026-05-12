@@ -25,6 +25,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       locale={locale}
       commonDict={dict.common}
       slug="trafo-enerji-odalari-fanlari"
+      heroImage="/images/solutions/trafo-enerji-odalari-card-hero.png"
     />
   );
 }

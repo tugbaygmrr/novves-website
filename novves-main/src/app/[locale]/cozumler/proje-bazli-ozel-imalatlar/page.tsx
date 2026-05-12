@@ -25,6 +25,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       locale={locale}
       commonDict={dict.common}
       slug="proje-bazli-ozel-imalatlar"
+      heroImage="/images/solutions/proje-bazli-ozel-imalatlar-card-hero.png"
     />
   );
 }
