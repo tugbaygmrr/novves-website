@@ -11,10 +11,22 @@
     "heroTitle2": "",
     "heroDesc": "With 20 years of industry experience and our own production capability, we are Turkey's leading brand in industrial fan systems.",
     "stats": [
-      { "value": "1,200+", "label": "Product Varieties" },
-      { "value": "10+", "label": "Years of Experience" },
-      { "value": "50+", "label": "Export Countries" },
-      { "value": "24/7", "label": "Technical Support" }
+      {
+        "value": "1,200+",
+        "label": "Product Varieties"
+      },
+      {
+        "value": "10+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": "50+",
+        "label": "Export Countries"
+      },
+      {
+        "value": "24/7",
+        "label": "Technical Support"
+      }
     ],
     "introTag": "Who We Are",
     "introTitle1": "NOVVES brings air movement",
@@ -90,9 +102,18 @@
     "heroDesc": "Zeki Kadir Özüntürk's vision and the story of NOVVES.",
     "ceoTitle": "Chairman of the Board & CEO",
     "highlights": [
-      { "value": "1,200+", "label": "Product Varieties" },
-      { "value": "50+", "label": "Export Countries" },
-      { "value": "10+", "label": "Years of Experience" }
+      {
+        "value": "1,200+",
+        "label": "Product Varieties"
+      },
+      {
+        "value": "50+",
+        "label": "Export Countries"
+      },
+      {
+        "value": "10+",
+        "label": "Years of Experience"
+      }
     ],
     "greeting": "Dear Visitor,",
     "messageP1": "Welcome to the NOVVES family, we are delighted to see you here.",
@@ -118,10 +139,22 @@
     "heroTitleHighlight": "Team",
     "heroDesc": "The dynamic NOVVES Team doesn't just produce fans. It delivers life-saving systems, breath-giving solutions and trust-inspiring engineering.",
     "stats": [
-      { "value": "2", "label": "Co-Founders" },
-      { "value": "11", "label": "Expert Team Members" },
-      { "value": "10+", "label": "Years of Experience" },
-      { "value": "3", "label": "Operation Units" }
+      {
+        "value": "2",
+        "label": "Co-Founders"
+      },
+      {
+        "value": "11",
+        "label": "Expert Team Members"
+      },
+      {
+        "value": "10+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": "3",
+        "label": "Operation Units"
+      }
     ],
     "leadershipTag": "Executive Board",
     "leadershipTitle": "Leadership",
@@ -259,59 +292,143 @@
     "heroDesc": "Our certificates documenting our compliance with national and international standards are concrete proof of our quality commitment.",
     "accreditationLabel": "Accreditation & Standards",
     "statsItems": [
-      { "value": "17+", "label": "Certificates" },
-      { "value": "ISO", "label": "System Documents" },
-      { "value": "ATEX", "label": "Ex-Proof Approved" },
-      { "value": "CE", "label": "EN 12101-3 Compliant" }
+      {
+        "value": "17+",
+        "label": "Certificates"
+      },
+      {
+        "value": "ISO",
+        "label": "System Documents"
+      },
+      {
+        "value": "ATEX",
+        "label": "Ex-Proof Approved"
+      },
+      {
+        "value": "CE",
+        "label": "EN 12101-3 Compliant"
+      }
     ],
     "documentSuffix": "documents",
     "downloadPdf": "Download PDF",
     "groups": [
       {
+        "title": "System Certificates",
+        "items": [
+          {
+            "name": "Quality Management Systems",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "Occupational Health and Safety",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "Environmental Management System",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "Information Security Management System",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "Service Competence Certificate",
         "items": [
-          { "name": "TSE Service Competence Certificate", "code": "TSE-HYB", "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf" }
+          {
+            "name": "TSE Service Competence Certificate",
+            "code": "TSE-HYB",
+            "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf"
+          }
         ]
       },
       {
         "title": "Product Compliance Certificates",
         "items": [
-          { "name": "Bathroom Fans", "code": "TS EN 60355-2", "pdf": "/certificate/ts60355-2.pdf" },
-          { "name": "TSE K 453 Certificate", "code": "TSE K 453", "pdf": "/certificate/tse-k-453.PDF" },
-          { "name": "Heat Recovery", "code": "TSE K 381", "pdf": "/certificate/tse-k-381.PDF" },
-          { "name": "Shelter Fan", "code": "TSE K 196", "pdf": "/certificate/tse-k-196.PDF" },
-          { "name": "TRM Integra Certificate", "code": "CE", "pdf": "/certificate/CE-sertifikasi.pdf" }
-        ]
-      },
-      {
-        "title": "System Certificates",
-        "items": [
-          { "name": "Quality Management Systems", "code": "ISO 9001", "pdf": "/certificate/iso-9001.pdf" },
-          { "name": "Occupational Health and Safety", "code": "ISO 45001", "pdf": "/certificate/iso-45001.pdf" },
-          { "name": "Environmental Management System", "code": "ISO 14001", "pdf": "/certificate/iso-14001.pdf" },
-          { "name": "Information Security Management System", "code": "ISO/IEC 27001:2022", "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf" }
+          {
+            "name": "Bathroom Fans",
+            "code": "TS EN 60355-2",
+            "pdf": "/certificate/ts60355-2.pdf"
+          },
+          {
+            "name": "TSE K 453 Certificate",
+            "code": "TSE K 453",
+            "pdf": "/certificate/tse-k-453.PDF"
+          },
+          {
+            "name": "Heat Recovery",
+            "code": "TSE K 381",
+            "pdf": "/certificate/tse-k-381.PDF"
+          },
+          {
+            "name": "Shelter Fan",
+            "code": "TSE K 196",
+            "pdf": "/certificate/tse-k-196.PDF"
+          },
+          {
+            "name": "TRM Integra Certificate",
+            "code": "CE",
+            "pdf": "/certificate/CE-sertifikasi.pdf"
+          }
         ]
       },
       {
         "title": "Snow Load Test Inspection Report",
         "items": [
-          { "name": "Snow Load Test Inspection Report", "code": "EN 12101-3 Annex E", "pdf": "/certificate/kar-yuku-testi.pdf" }
+          {
+            "name": "Snow Load Test Inspection Report",
+            "code": "EN 12101-3 Annex E",
+            "pdf": "/certificate/kar-yuku-testi.pdf"
+          }
         ]
       },
       {
         "title": "ATEX Certificates",
         "items": [
-          { "name": "Axial Fans Ex-Proof Certificate", "code": "ATEX", "pdf": "/certificate/aksiyal-exproof.pdf" },
-          { "name": "Radial Fans Ex-Proof Certificate", "code": "ATEX", "pdf": "/certificate/radyal-exproof.pdf" }
+          {
+            "name": "Axial Fans Ex-Proof Certificate",
+            "code": "ATEX",
+            "pdf": "/certificate/aksiyal-exproof.pdf"
+          },
+          {
+            "name": "Radial Fans Ex-Proof Certificate",
+            "code": "ATEX",
+            "pdf": "/certificate/radyal-exproof.pdf"
+          }
         ]
       },
       {
         "title": "CE (EN 12101-3) Documents",
         "items": [
-          { "name": "Radial Jet Fan F300/2H CE Certificate", "code": "RA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RA-F300-WEG.pdf" },
-          { "name": "Axial Jet Fan F300/2H CE Certificate", "code": "JA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/JA-F300-WEG.pdf" },
-          { "name": "Cowled Axial Fan F300/2H CE Certificate", "code": "TAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/TAA-F300-WEG.pdf" },
-          { "name": "Roof & Cellular Axial Fans F300/2H CE Certificate", "code": "RAA-CAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RAA-CAA-F300-WEG.pdf" }
+          {
+            "name": "Radial Jet Fan F300/2H CE Certificate",
+            "code": "RA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RA-F300-WEG.pdf"
+          },
+          {
+            "name": "Axial Jet Fan F300/2H CE Certificate",
+            "code": "JA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/JA-F300-WEG.pdf"
+          },
+          {
+            "name": "Cowled Axial Fan F300/2H CE Certificate",
+            "code": "TAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/TAA-F300-WEG.pdf"
+          },
+          {
+            "name": "Roof & Cellular Axial Fans F300/2H CE Certificate",
+            "code": "RAA-CAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RAA-CAA-F300-WEG.pdf"
+          }
         ]
       }
     ],

@@ -166,7 +166,7 @@ export default async function DumanKontrol({ params }: { params: Promise<{ local
       <section className="relative overflow-hidden bg-dark py-18 sm:py-20">
         <div
           className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.06]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
         />
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
@@ -217,7 +217,7 @@ export default async function DumanKontrol({ params }: { params: Promise<{ local
             </Link>
             <Link
               href={`/${locale}/iletisim`}
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
             >
               {t.cta.supportButton}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

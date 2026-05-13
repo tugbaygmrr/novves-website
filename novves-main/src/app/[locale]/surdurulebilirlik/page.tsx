@@ -97,12 +97,12 @@ export default async function Surdurulebilirlik({ params }: { params: Promise<{ 
       </section>
 
       <section className="relative overflow-hidden bg-dark py-18 sm:py-20">
-        <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }} />
+        <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }} />
         <div className="mx-auto max-w-2xl px-4">
           <h3 className="mb-2 text-lg font-bold text-white">{t.ctaTitle}</h3>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href={`/${locale}/urunler/hava-hareketi`} className="rounded border border-white/20 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:border-primary hover:text-primary">{t.ctaProducts}</Link>
-            <Link href={`/${locale}/iletisim`} className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e55a28]">{t.ctaContact}</Link>
+            <Link href={`/${locale}/iletisim`} className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep">{t.ctaContact}</Link>
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
-/**
- * en/home.json içine ana sayfa sabit metinleri + çözüm carousel anahtarları ekler.
- * Çalıştır: node scripts/inject-home-page-chrome.mjs
+﻿/**
+ * en/home.json iÃ§ine ana sayfa sabit metinleri + Ã§Ã¶zÃ¼m carousel anahtarlarÄ± ekler.
+ * Ã‡alÄ±ÅŸtÄ±r: node scripts/inject-home-page-chrome.mjs
  */
 import fs from "fs";
 import path from "path";
@@ -43,7 +43,7 @@ const pageChrome = {
   midCtaBullet1: "48-hour preliminary assessment",
   midCtaBullet2: "Solution-oriented delivery",
   midCtaBullet3: "Site + CFD integration",
-  videoStatMeta: "30+ Countries · 500+ Projects",
+  videoStatMeta: "30+ Countries Â· 500+ Projects",
   scrollVideoSideLabel: "Car park ventilation",
   engineeringAlt1:
     "NOVVES CNC laser cutting precision manufacturing on sheet metal",
@@ -165,7 +165,7 @@ const referencePreview = [
     image: "/images/references/ticari-3s-kale-topaz-hero.png",
   },
   {
-    title: "Adana Yüreğir 100 Yataklı Hastane",
+    title: "Adana YÃ¼reÄŸir 100 YataklÄ± Hastane",
     href: "/kurumsal/referanslar",
     image: "/images/references/saglik-kuruluslari-adana-hero.png",
   },
@@ -202,7 +202,7 @@ const companyProfileCards = [
   },
   {
     href: "/kurumsal/ekibimiz",
-    image: "/images/page-hero/ekibimiz.jpg",
+    image: "/images/page-hero/ekibimiz-company-profile-card.png",
     title: "Our Team",
   },
 ];
@@ -218,3 +218,4 @@ home.companyProfileCards = companyProfileCards;
 
 fs.writeFileSync(enPath, JSON.stringify(home, null, 2) + "\n");
 console.log("Updated", enPath);
+

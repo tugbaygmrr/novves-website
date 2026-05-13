@@ -23,14 +23,15 @@ const groupIcons = [
   <svg key="5" className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>,
 ];
 
+/** Akreditasyon şeridi — ana sayfa şeridi ile aynı standart sırası */
 const logos = [
-  { src: "/images/certificates/TSE.svg", alt: "TSE" },
   { src: "/images/certificates/ISO9001.svg", alt: "ISO 9001" },
   { src: "/images/certificates/ISO14001.svg", alt: "ISO 14001" },
+  { src: "/images/certificates/BSI.svg", alt: "BSI" },
   { src: "/images/certificates/CE.svg", alt: "CE" },
   { src: "/images/certificates/EN.svg", alt: "EN" },
+  { src: "/images/certificates/TSE.svg", alt: "TSE" },
   { src: "/images/certificates/Efectis.svg", alt: "Efectis" },
-  { src: "/images/certificates/BSI.svg", alt: "BSI" },
 ];
 
 export default async function Sertifikalar({ params }: { params: Promise<{ locale: string }> }) {
@@ -47,7 +48,7 @@ export default async function Sertifikalar({ params }: { params: Promise<{ local
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/80 to-[#2f3440]/94" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
-        <div className="pointer-events-none absolute -top-24 right-0 h-96 w-96 rounded-full opacity-10" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
+        <div className="pointer-events-none absolute -top-24 right-0 h-96 w-96 rounded-full opacity-10" style={{ background: "radial-gradient(circle, #ef5f17 0%, transparent 70%)" }} />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-6 pt-20 sm:px-6 lg:px-8 lg:pt-24">
           <nav className="flex items-center gap-2 text-xs text-white/40">
             <Link href={`/${locale}`} className="transition-colors hover:text-white/70">{t.breadcrumbHome}</Link>
@@ -144,8 +145,8 @@ export default async function Sertifikalar({ params }: { params: Promise<{ local
       <section className="bg-dark">
         <div className="mx-auto max-w-7xl px-4 py-18 sm:px-6 sm:py-20 lg:px-8">
           <div className="relative overflow-hidden rounded-2xl border border-white/5 bg-secondary px-6 py-14 text-center sm:px-12">
-            <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
-            <div className="pointer-events-none absolute -bottom-16 -left-16 h-48 w-48 rounded-full opacity-[0.05]" style={{ background: "radial-gradient(circle, #FF6B35 0%, transparent 70%)" }} />
+            <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #ef5f17 0%, transparent 70%)" }} />
+            <div className="pointer-events-none absolute -bottom-16 -left-16 h-48 w-48 rounded-full opacity-[0.05]" style={{ background: "radial-gradient(circle, #ef5f17 0%, transparent 70%)" }} />
             <div className="relative z-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.ctaTag}</p>
               <h2 className="mx-auto mt-4 max-w-xl text-2xl font-bold leading-tight text-white sm:text-3xl">{t.ctaTitle}</h2>

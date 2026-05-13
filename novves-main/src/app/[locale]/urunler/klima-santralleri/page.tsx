@@ -93,7 +93,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <p className="text-sm text-white/70">{s.teamReady}</p>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href={`/${locale}/urunler/iklimlendirme`} className="rounded border border-white/20 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:border-primary hover:text-primary">{s.allIklimlendirmeProducts}</Link>
-            <Link href={`/${locale}/iletisim`} className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e55a28]">{s.technicalSupportRequest}</Link>
+            <Link href={`/${locale}/iletisim`} className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep">{s.technicalSupportRequest}</Link>
           </div>
         </div>
       </section>

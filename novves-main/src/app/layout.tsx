@@ -1,4 +1,5 @@
 import "./globals.css";
+import { fontRootClassName } from "./fonts";
 import { headers } from "next/headers";
 import {
   defaultLocale,
@@ -23,7 +24,7 @@ export default async function RootLayout({
     <html
       lang={lang}
       dir={dir}
-      className="h-full antialiased light"
+      className={`h-full antialiased light ${fontRootClassName}`}
       data-theme="light"
       suppressHydrationWarning
     >

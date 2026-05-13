@@ -196,7 +196,7 @@ export default function AksesuarlarClient({
                         <button
                           type="button"
                           onClick={() => setExpanded(isExpanded ? null : item.name)}
-                          className="mt-2 self-start text-xs font-semibold text-primary transition-colors hover:text-[#e55a28]"
+                          className="mt-2 self-start text-xs font-semibold text-primary transition-colors hover:text-primary-deep"
                         >
                           {isExpanded ? s.readLess : s.readMore}
                         </button>
@@ -225,7 +225,7 @@ export default function AksesuarlarClient({
       {/* ── Other Categories ─────────────────────────────────── */}
       <section className="relative overflow-hidden bg-[#2f3f58] py-20 sm:py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-[#334866] via-[#263a57] to-[#1c2f48]" />
-        <div className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.06]" style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }} />
+        <div className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.06]" style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }} />
         <div className="pointer-events-none absolute -right-32 bottom-[-120px] h-[420px] w-[420px] rounded-full opacity-[0.09]" style={{ background: "radial-gradient(circle, rgba(255,255,255,0.32), transparent 72%)" }} />
         <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
@@ -240,7 +240,7 @@ export default function AksesuarlarClient({
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {otherCategories.map((cat, i) => (
-              <Link key={cat.label} href={`/${locale}/urunler/${cat.slug}`} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-[0_18px_42px_-34px_rgba(8,14,24,0.7)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/35 hover:bg-white/[0.12] hover:shadow-[0_24px_50px_-28px_rgba(255,107,53,0.22)]">
+              <Link key={cat.label} href={`/${locale}/urunler/${cat.slug}`} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-[0_18px_42px_-34px_rgba(8,14,24,0.7)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/35 hover:bg-white/[0.12] hover:shadow-[0_24px_50px_-28px_rgba(239, 95, 23,0.22)]">
                 <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-primary/80 via-primary/30 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
                 <span className="mb-4 block text-2xl font-black text-white/[0.12]">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="text-[1.05rem] font-bold leading-[1.3] text-white">{cat.label}</h3>
@@ -259,7 +259,7 @@ export default function AksesuarlarClient({
 
       {/* ── CTA ──────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-dark py-20">
-        <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }} />
+        <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }} />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">{s.technicalSupport}</p>
           <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">{ctaTitle}</h3>
@@ -275,7 +275,7 @@ export default function AksesuarlarClient({
               </span>
               +90 216 467 47 52
             </a>
-            <Link href={`/${locale}/iletisim`} className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30">
+            <Link href={`/${locale}/iletisim`} className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30">
               {s.technicalSupportRequest}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />

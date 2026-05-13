@@ -158,7 +158,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
         <div
           className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
         />
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
@@ -492,7 +492,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
 
                     <button
                       type="submit"
-                      className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-primary px-7 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#e55a28] hover:shadow-md active:scale-95"
+                      className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-primary px-7 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-deep hover:shadow-md active:scale-95"
                     >
                       {t.send}
                       <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -529,7 +529,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
                   href="https://www.google.com/maps/place/NOVVES+ELEKTR%C4%B0K+MOTOR+ANON%C4%B0M+%C5%9E%C4%B0RKET%C4%B0/@40.98007,29.0903326,17z/data=!3m1!4b1!4m6!3m5!1s0x14cac75e28bb963d:0x7d993b6e02755dad!8m2!3d40.9800701!4d29.0952035!16s%2Fg%2F11pkc8df_2"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary transition-colors hover:text-[#e55a28]"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary transition-colors hover:text-primary-deep"
                 >
                   <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -567,7 +567,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
                   href="https://www.google.com/maps/place/NOVVES+ELEKTR%C4%B0K+MOTOR+ANON%C4%B0M+%C5%9E%C4%B0RKET%C4%B0/@40.6808946,29.40223,17z/data=!3m1!4b1!4m6!3m5!1s0x14cae34dfa345cc7:0x688866be4ac613ae!8m2!3d40.6808946!4d29.4048049!16s%2Fg%2F11pkbxgjdc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary transition-colors hover:text-[#e55a28]"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary transition-colors hover:text-primary-deep"
                 >
                   <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />

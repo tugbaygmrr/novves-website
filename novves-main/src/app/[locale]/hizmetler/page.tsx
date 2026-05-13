@@ -59,7 +59,7 @@ export default async function HizmetlerPage({
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
         <div
           className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
         />
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
@@ -125,7 +125,7 @@ export default async function HizmetlerPage({
       <section className="relative overflow-hidden bg-dark py-20">
         <div
           className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
         />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">
@@ -140,7 +140,7 @@ export default async function HizmetlerPage({
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href={`/${locale}/iletisim`}
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
             >
               {s.technicalSupportRequest}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

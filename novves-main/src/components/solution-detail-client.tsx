@@ -106,7 +106,7 @@ export function SolutionDetailClient({
 
           <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
             <div className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-primary/30 bg-primary/15 px-4 py-1.5 backdrop-blur-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_0_3px_rgba(255,107,53,0.18)]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_0_3px_rgba(239, 95, 23,0.18)]" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{dict.badge}</span>
             </div>
             <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.8rem]">
@@ -116,7 +116,7 @@ export function SolutionDetailClient({
               {dict.subtitle}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Link href={`/${locale}/iletisim`} className="btn-3d btn-3d-primary group inline-flex items-center gap-2.5 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-[0_18px_40px_-22px_rgba(255,107,53,0.62)] transition-all duration-300 hover:bg-[#e55a28] hover:shadow-[0_22px_44px_-20px_rgba(255,107,53,0.72)]">
+              <Link href={`/${locale}/iletisim`} className="btn-3d btn-3d-primary group inline-flex items-center gap-2.5 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-[0_18px_40px_-22px_rgba(239, 95, 23,0.62)] transition-all duration-300 hover:bg-primary-deep hover:shadow-[0_22px_44px_-20px_rgba(239, 95, 23,0.72)]">
                 {dict.ctaPrimary}
                 <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </Link>
@@ -222,7 +222,7 @@ export function SolutionDetailClient({
             <h3 className="text-lg font-bold text-white">{dict.midCtaTitle}</h3>
             <p className="mt-1 text-sm text-white/40">{dict.midCtaDesc}</p>
           </div>
-          <Link href={`/${locale}/iletisim`} className="group shrink-0 inline-flex items-center gap-2.5 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30">
+          <Link href={`/${locale}/iletisim`} className="group shrink-0 inline-flex items-center gap-2.5 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30">
             {dict.midCtaButton}
             <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
           </Link>
@@ -551,7 +551,7 @@ export function SolutionDetailClient({
 
       {/* 8. FINAL CTA */}
       <section className="relative overflow-hidden bg-dark py-24">
-        <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.06]" style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }} />
+        <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.06]" style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }} />
         <div className="pointer-events-none absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
@@ -569,7 +569,7 @@ export function SolutionDetailClient({
               </span>
               {dict.finalCtaPhone}
             </a>
-            <Link href={`/${locale}/iletisim`} className="group inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30">
+            <Link href={`/${locale}/iletisim`} className="group inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30">
               {dict.finalCtaButton}
               <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
             </Link>

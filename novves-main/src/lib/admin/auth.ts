@@ -2,22 +2,27 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import crypto from "crypto";
 
-const _secret = process.env.JWT_SECRET;
-const isProd = process.env.NODE_ENV === "production";
-
-if (isProd && (!_secret || _secret.length < 32)) {
-  throw new Error(
-    "JWT_SECRET environment variable must be defined and at least 32 characters long"
-  );
-}
-
-// Dev fallback to avoid auth API crash in local setup.
-const JWT_SECRET: string =
-  _secret && _secret.length >= 32
-    ? _secret
-    : "dev-only-jwt-secret-change-me-32chars";
+const DEV_JWT_FALLBACK = "dev-only-jwt-secret-change-me-32chars";
 const ACCESS_TOKEN_EXPIRY = "15m";
 const REFRESH_TOKEN_EXPIRY = "7d";
+
+/** İmzalama: production’da geçerli secret yoksa hata (çağıran route JSON döner). */
+export function getJwtSecretForSigning(): string {
+  const isProd = process.env.NODE_ENV === "production";
+  const s = process.env.JWT_SECRET;
+  if (s && s.length >= 32) return s;
+  if (!isProd) return DEV_JWT_FALLBACK;
+  throw new Error("JWT_SECRET_REQUIRED");
+}
+
+/** Doğrulama: prod’da secret yoksa çökmeden “oturum yok” kabul et. */
+function getJwtSecretForVerify(): string | null {
+  const isProd = process.env.NODE_ENV === "production";
+  const s = process.env.JWT_SECRET;
+  if (s && s.length >= 32) return s;
+  if (!isProd) return DEV_JWT_FALLBACK;
+  return null;
+}
 
 export const COOKIE_ACCESS_TOKEN = "admin_access_token";
 export const COOKIE_REFRESH_TOKEN = "admin_refresh_token";
@@ -32,24 +37,28 @@ interface TokenPayload {
 // --- JWT helpers ---
 
 export function createAccessToken(username: string, role: string = "admin"): string {
+  const secret = getJwtSecretForSigning();
   return jwt.sign(
     { username, role, type: "access" } satisfies TokenPayload,
-    JWT_SECRET,
+    secret,
     { algorithm: "HS256", expiresIn: ACCESS_TOKEN_EXPIRY }
   );
 }
 
 export function createRefreshToken(username: string, role: string = "admin"): string {
+  const secret = getJwtSecretForSigning();
   return jwt.sign(
     { username, role, type: "refresh" } satisfies TokenPayload,
-    JWT_SECRET,
+    secret,
     { algorithm: "HS256", expiresIn: REFRESH_TOKEN_EXPIRY }
   );
 }
 
 export function verifyToken(token: string): TokenPayload | null {
+  const secret = getJwtSecretForVerify();
+  if (!secret) return null;
   try {
-    const decoded = jwt.verify(token, JWT_SECRET, {
+    const decoded = jwt.verify(token, secret, {
       algorithms: ["HS256"],
     }) as TokenPayload;
     return decoded;

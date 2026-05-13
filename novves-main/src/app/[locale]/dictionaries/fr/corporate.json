@@ -11,10 +11,22 @@
     "heroTitle2": "",
     "heroDesc": "Grâce à 20 ans d'expérience dans le secteur et notre capacité de production propre, nous sommes la marque de référence en Turquie pour les systèmes de ventilateurs industriels.",
     "stats": [
-      { "value": "1,200+", "label": "Variantes de produits" },
-      { "value": "10+", "label": "Années d'expérience" },
-      { "value": "50+", "label": "Pays d'exportation" },
-      { "value": "24/7", "label": "Support technique" }
+      {
+        "value": "1,200+",
+        "label": "Variantes de produits"
+      },
+      {
+        "value": "10+",
+        "label": "Années d'expérience"
+      },
+      {
+        "value": "50+",
+        "label": "Pays d'exportation"
+      },
+      {
+        "value": "24/7",
+        "label": "Support technique"
+      }
     ],
     "introTag": "Qui sommes-nous",
     "introTitle1": "NOVVES associe le mouvement de l'air",
@@ -90,9 +102,18 @@
     "heroDesc": "La vision de Zeki Kadir Özüntürk et l'histoire de NOVVES.",
     "ceoTitle": "Président du conseil et PDG",
     "highlights": [
-      { "value": "1,200+", "label": "Variantes de produits" },
-      { "value": "50+", "label": "Pays d'exportation" },
-      { "value": "10+", "label": "Années d'expérience" }
+      {
+        "value": "1,200+",
+        "label": "Variantes de produits"
+      },
+      {
+        "value": "50+",
+        "label": "Pays d'exportation"
+      },
+      {
+        "value": "10+",
+        "label": "Années d'expérience"
+      }
     ],
     "greeting": "Chère visiteuse, cher visiteur,",
     "messageP1": "Bienvenue dans la famille NOVVES, nous sommes ravis de vous accueillir ici.",
@@ -118,10 +139,22 @@
     "heroTitleHighlight": "Équipe",
     "heroDesc": "L'équipe dynamique NOVVES ne se contente pas de produire des ventilateurs. Elle livre des systèmes qui sauvent des vies, des solutions qui donnent le souffle et une ingénierie qui inspire confiance.",
     "stats": [
-      { "value": "2", "label": "Cofondateurs" },
-      { "value": "11", "label": "Membres experts" },
-      { "value": "10+", "label": "Années d'expérience" },
-      { "value": "3", "label": "Unités opérationnelles" }
+      {
+        "value": "2",
+        "label": "Cofondateurs"
+      },
+      {
+        "value": "11",
+        "label": "Membres experts"
+      },
+      {
+        "value": "10+",
+        "label": "Années d'expérience"
+      },
+      {
+        "value": "3",
+        "label": "Unités opérationnelles"
+      }
     ],
     "leadershipTag": "Direction",
     "leadershipTitle": "Direction",
@@ -259,59 +292,143 @@
     "heroDesc": "Nos certificats attestant notre conformité aux normes nationales et internationales sont la preuve concrète de notre engagement qualité.",
     "accreditationLabel": "Accréditation et normes",
     "statsItems": [
-      { "value": "17+", "label": "Certificats" },
-      { "value": "ISO", "label": "Documents système" },
-      { "value": "ATEX", "label": "Homologation antidéflagrant" },
-      { "value": "CE", "label": "Conforme EN 12101-3" }
+      {
+        "value": "17+",
+        "label": "Certificats"
+      },
+      {
+        "value": "ISO",
+        "label": "Documents système"
+      },
+      {
+        "value": "ATEX",
+        "label": "Homologation antidéflagrant"
+      },
+      {
+        "value": "CE",
+        "label": "Conforme EN 12101-3"
+      }
     ],
     "documentSuffix": "documents",
     "downloadPdf": "Télécharger le PDF",
     "groups": [
       {
+        "title": "Certificats système",
+        "items": [
+          {
+            "name": "Systèmes de management de la qualité",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "Santé et sécurité au travail",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "Système de management environnemental",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "Système de management de la sécurité de l'information",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "Certificat de compétence en services",
         "items": [
-          { "name": "Certificat de compétence en services TSE", "code": "TSE-HYB", "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf" }
+          {
+            "name": "Certificat de compétence en services TSE",
+            "code": "TSE-HYB",
+            "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf"
+          }
         ]
       },
       {
         "title": "Certificats de conformité produit",
         "items": [
-          { "name": "Ventilateurs de salle de bains", "code": "TS EN 60355-2", "pdf": "/certificate/ts60355-2.pdf" },
-          { "name": "Certificat TSE K 453", "code": "TSE K 453", "pdf": "/certificate/tse-k-453.PDF" },
-          { "name": "Récupération de chaleur", "code": "TSE K 381", "pdf": "/certificate/tse-k-381.PDF" },
-          { "name": "Ventilateur d'abri", "code": "TSE K 196", "pdf": "/certificate/tse-k-196.PDF" },
-          { "name": "Certificat TRM Integra", "code": "CE", "pdf": "/certificate/CE-sertifikasi.pdf" }
-        ]
-      },
-      {
-        "title": "Certificats système",
-        "items": [
-          { "name": "Systèmes de management de la qualité", "code": "ISO 9001", "pdf": "/certificate/iso-9001.pdf" },
-          { "name": "Santé et sécurité au travail", "code": "ISO 45001", "pdf": "/certificate/iso-45001.pdf" },
-          { "name": "Système de management environnemental", "code": "ISO 14001", "pdf": "/certificate/iso-14001.pdf" },
-          { "name": "Système de management de la sécurité de l'information", "code": "ISO/IEC 27001:2022", "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf" }
+          {
+            "name": "Ventilateurs de salle de bains",
+            "code": "TS EN 60355-2",
+            "pdf": "/certificate/ts60355-2.pdf"
+          },
+          {
+            "name": "Certificat TSE K 453",
+            "code": "TSE K 453",
+            "pdf": "/certificate/tse-k-453.PDF"
+          },
+          {
+            "name": "Récupération de chaleur",
+            "code": "TSE K 381",
+            "pdf": "/certificate/tse-k-381.PDF"
+          },
+          {
+            "name": "Ventilateur d'abri",
+            "code": "TSE K 196",
+            "pdf": "/certificate/tse-k-196.PDF"
+          },
+          {
+            "name": "Certificat TRM Integra",
+            "code": "CE",
+            "pdf": "/certificate/CE-sertifikasi.pdf"
+          }
         ]
       },
       {
         "title": "Rapport d'inspection essai charge de neige",
         "items": [
-          { "name": "Rapport d'inspection essai charge de neige", "code": "EN 12101-3 Annexe E", "pdf": "/certificate/kar-yuku-testi.pdf" }
+          {
+            "name": "Rapport d'inspection essai charge de neige",
+            "code": "EN 12101-3 Annexe E",
+            "pdf": "/certificate/kar-yuku-testi.pdf"
+          }
         ]
       },
       {
         "title": "Certificats ATEX",
         "items": [
-          { "name": "Certificat ventilateurs axiaux antidéflagrant", "code": "ATEX", "pdf": "/certificate/aksiyal-exproof.pdf" },
-          { "name": "Certificat ventilateurs radiaux antidéflagrant", "code": "ATEX", "pdf": "/certificate/radyal-exproof.pdf" }
+          {
+            "name": "Certificat ventilateurs axiaux antidéflagrant",
+            "code": "ATEX",
+            "pdf": "/certificate/aksiyal-exproof.pdf"
+          },
+          {
+            "name": "Certificat ventilateurs radiaux antidéflagrant",
+            "code": "ATEX",
+            "pdf": "/certificate/radyal-exproof.pdf"
+          }
         ]
       },
       {
         "title": "Documents CE (EN 12101-3)",
         "items": [
-          { "name": "Certificat CE ventilateur à jet radial F300/2H", "code": "RA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RA-F300-WEG.pdf" },
-          { "name": "Certificat CE ventilateur à jet axial F300/2H", "code": "JA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/JA-F300-WEG.pdf" },
-          { "name": "Certificat CE ventilateur axial capoté F300/2H", "code": "TAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/TAA-F300-WEG.pdf" },
-          { "name": "Certificat CE ventilateurs axiaux de toiture et cellulaires F300/2H", "code": "RAA-CAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RAA-CAA-F300-WEG.pdf" }
+          {
+            "name": "Certificat CE ventilateur à jet radial F300/2H",
+            "code": "RA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RA-F300-WEG.pdf"
+          },
+          {
+            "name": "Certificat CE ventilateur à jet axial F300/2H",
+            "code": "JA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/JA-F300-WEG.pdf"
+          },
+          {
+            "name": "Certificat CE ventilateur axial capoté F300/2H",
+            "code": "TAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/TAA-F300-WEG.pdf"
+          },
+          {
+            "name": "Certificat CE ventilateurs axiaux de toiture et cellulaires F300/2H",
+            "code": "RAA-CAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RAA-CAA-F300-WEG.pdf"
+          }
         ]
       }
     ],

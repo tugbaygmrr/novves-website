@@ -11,10 +11,22 @@
     "heroTitle2": "",
     "heroDesc": "20 illik sənaye təcrübəmiz və öz istehsal imkanımızla sənaye ventilyator sistemlərində Türkiyənin aparıcı brendiyik.",
     "stats": [
-      { "value": "1,200+", "label": "Məhsul çeşidi" },
-      { "value": "10+", "label": "İllik təcrübə" },
-      { "value": "50+", "label": "İxrac ölkəsi" },
-      { "value": "24/7", "label": "Texniki dəstək" }
+      {
+        "value": "1,200+",
+        "label": "Məhsul çeşidi"
+      },
+      {
+        "value": "10+",
+        "label": "İllik təcrübə"
+      },
+      {
+        "value": "50+",
+        "label": "İxrac ölkəsi"
+      },
+      {
+        "value": "24/7",
+        "label": "Texniki dəstək"
+      }
     ],
     "introTag": "Biz kimik",
     "introTitle1": "NOVVES hava hərəkətini",
@@ -90,9 +102,18 @@
     "heroDesc": "Zeki Kadir Özüntürkin vizyonu və NOVVES hekayəsi.",
     "ceoTitle": "İdarə Heyətinin sədri və baş icraçı direktor",
     "highlights": [
-      { "value": "1,200+", "label": "Məhsul çeşidi" },
-      { "value": "50+", "label": "İxrac ölkəsi" },
-      { "value": "10+", "label": "İllik təcrübə" }
+      {
+        "value": "1,200+",
+        "label": "Məhsul çeşidi"
+      },
+      {
+        "value": "50+",
+        "label": "İxrac ölkəsi"
+      },
+      {
+        "value": "10+",
+        "label": "İllik təcrübə"
+      }
     ],
     "greeting": "Hörmətli ziyarətçi,",
     "messageP1": "NOVVES ailəsinə xoş gəldiniz, sizi burada görməkdən məmnunuq.",
@@ -118,10 +139,22 @@
     "heroTitleHighlight": "komandası",
     "heroDesc": "Dinamik NOVVES komandası təkcə ventilyator istehsal etmir. Həyat xilas edən sistemlər, nəfəs verən həllər və etibar yaradan mühəndislik təqdim edir.",
     "stats": [
-      { "value": "2", "label": "Həmtəsisçi" },
-      { "value": "11", "label": "Peşəkar komanda üzvü" },
-      { "value": "10+", "label": "İllik təcrübə" },
-      { "value": "3", "label": "Əməliyyat bölməsi" }
+      {
+        "value": "2",
+        "label": "Həmtəsisçi"
+      },
+      {
+        "value": "11",
+        "label": "Peşəkar komanda üzvü"
+      },
+      {
+        "value": "10+",
+        "label": "İllik təcrübə"
+      },
+      {
+        "value": "3",
+        "label": "Əməliyyat bölməsi"
+      }
     ],
     "leadershipTag": "İdarə heyəti",
     "leadershipTitle": "Rəhbərlik",
@@ -259,59 +292,143 @@
     "heroDesc": "Milli və beynəlxalq standartlara uyğunluğumuzu sənədləşdirən sertifikatlarımız keyfiyyət öhdəliyimizin konkret sübutudur.",
     "accreditationLabel": "Akkreditasiya və standartlar",
     "statsItems": [
-      { "value": "17+", "label": "Sertifikat" },
-      { "value": "ISO", "label": "Sistem sənədləri" },
-      { "value": "ATEX", "label": "Ex-Proof təsdiqli" },
-      { "value": "CE", "label": "EN 12101-3 uyğun" }
+      {
+        "value": "17+",
+        "label": "Sertifikat"
+      },
+      {
+        "value": "ISO",
+        "label": "Sistem sənədləri"
+      },
+      {
+        "value": "ATEX",
+        "label": "Ex-Proof təsdiqli"
+      },
+      {
+        "value": "CE",
+        "label": "EN 12101-3 uyğun"
+      }
     ],
     "documentSuffix": "sənəd",
     "downloadPdf": "PDF yüklə",
     "groups": [
       {
+        "title": "Sistem sertifikatları",
+        "items": [
+          {
+            "name": "Keyfiyyət idarəetmə sistemləri",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "İş yerində təhlükəsizlik və sağlamlıq",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "Ətraf mühit idarəetmə sistemi",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "İnformasiya təhlükəsizliyi idarəetmə sistemi",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "Xidmət səlahiyyəti sertifikatı",
         "items": [
-          { "name": "TSE xidmət səlahiyyəti sertifikatı", "code": "TSE-HYB", "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf" }
+          {
+            "name": "TSE xidmət səlahiyyəti sertifikatı",
+            "code": "TSE-HYB",
+            "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf"
+          }
         ]
       },
       {
         "title": "Məhsul uyğunluq sertifikatları",
         "items": [
-          { "name": "Vanna otağı ventilyatorları", "code": "TS EN 60355-2", "pdf": "/certificate/ts60355-2.pdf" },
-          { "name": "TSE K 453 sertifikatı", "code": "TSE K 453", "pdf": "/certificate/tse-k-453.PDF" },
-          { "name": "İstilik bərpası", "code": "TSE K 381", "pdf": "/certificate/tse-k-381.PDF" },
-          { "name": "Sığınacaq ventilyatoru", "code": "TSE K 196", "pdf": "/certificate/tse-k-196.PDF" },
-          { "name": "TRM Integra sertifikatı", "code": "CE", "pdf": "/certificate/CE-sertifikasi.pdf" }
-        ]
-      },
-      {
-        "title": "Sistem sertifikatları",
-        "items": [
-          { "name": "Keyfiyyət idarəetmə sistemləri", "code": "ISO 9001", "pdf": "/certificate/iso-9001.pdf" },
-          { "name": "İş yerində təhlükəsizlik və sağlamlıq", "code": "ISO 45001", "pdf": "/certificate/iso-45001.pdf" },
-          { "name": "Ətraf mühit idarəetmə sistemi", "code": "ISO 14001", "pdf": "/certificate/iso-14001.pdf" },
-          { "name": "İnformasiya təhlükəsizliyi idarəetmə sistemi", "code": "ISO/IEC 27001:2022", "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf" }
+          {
+            "name": "Vanna otağı ventilyatorları",
+            "code": "TS EN 60355-2",
+            "pdf": "/certificate/ts60355-2.pdf"
+          },
+          {
+            "name": "TSE K 453 sertifikatı",
+            "code": "TSE K 453",
+            "pdf": "/certificate/tse-k-453.PDF"
+          },
+          {
+            "name": "İstilik bərpası",
+            "code": "TSE K 381",
+            "pdf": "/certificate/tse-k-381.PDF"
+          },
+          {
+            "name": "Sığınacaq ventilyatoru",
+            "code": "TSE K 196",
+            "pdf": "/certificate/tse-k-196.PDF"
+          },
+          {
+            "name": "TRM Integra sertifikatı",
+            "code": "CE",
+            "pdf": "/certificate/CE-sertifikasi.pdf"
+          }
         ]
       },
       {
         "title": "Qar yükü sınağı yoxlama hesabatı",
         "items": [
-          { "name": "Qar yükü sınağı yoxlama hesabatı", "code": "EN 12101-3 Annex E", "pdf": "/certificate/kar-yuku-testi.pdf" }
+          {
+            "name": "Qar yükü sınağı yoxlama hesabatı",
+            "code": "EN 12101-3 Annex E",
+            "pdf": "/certificate/kar-yuku-testi.pdf"
+          }
         ]
       },
       {
         "title": "ATEX sertifikatları",
         "items": [
-          { "name": "Aksial ventilyatorlar Ex-Proof sertifikatı", "code": "ATEX", "pdf": "/certificate/aksiyal-exproof.pdf" },
-          { "name": "Radial ventilyatorlar Ex-Proof sertifikatı", "code": "ATEX", "pdf": "/certificate/radyal-exproof.pdf" }
+          {
+            "name": "Aksial ventilyatorlar Ex-Proof sertifikatı",
+            "code": "ATEX",
+            "pdf": "/certificate/aksiyal-exproof.pdf"
+          },
+          {
+            "name": "Radial ventilyatorlar Ex-Proof sertifikatı",
+            "code": "ATEX",
+            "pdf": "/certificate/radyal-exproof.pdf"
+          }
         ]
       },
       {
         "title": "CE (EN 12101-3) sənədləri",
         "items": [
-          { "name": "Radial jet fan F300/2H CE sertifikatı", "code": "RA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RA-F300-WEG.pdf" },
-          { "name": "Aksial jet fan F300/2H CE sertifikatı", "code": "JA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/JA-F300-WEG.pdf" },
-          { "name": "Örtüklü aksial fan F300/2H CE sertifikatı", "code": "TAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/TAA-F300-WEG.pdf" },
-          { "name": "Dam və hüceyrəvi aksial fanlar F300/2H CE sertifikatı", "code": "RAA-CAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RAA-CAA-F300-WEG.pdf" }
+          {
+            "name": "Radial jet fan F300/2H CE sertifikatı",
+            "code": "RA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RA-F300-WEG.pdf"
+          },
+          {
+            "name": "Aksial jet fan F300/2H CE sertifikatı",
+            "code": "JA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/JA-F300-WEG.pdf"
+          },
+          {
+            "name": "Örtüklü aksial fan F300/2H CE sertifikatı",
+            "code": "TAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/TAA-F300-WEG.pdf"
+          },
+          {
+            "name": "Dam və hüceyrəvi aksial fanlar F300/2H CE sertifikatı",
+            "code": "RAA-CAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RAA-CAA-F300-WEG.pdf"
+          }
         ]
       }
     ],

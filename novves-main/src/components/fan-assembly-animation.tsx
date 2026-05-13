@@ -8,8 +8,14 @@ const TOTAL_FRAMES = 211;
 const START_VISIBLE_FRAME = 36;
 
 /** Hero masaüstü — tüm kareleri tek seferde yüklemek RAM / ağ’ı şişirir */
-const HERO_FRAME_LOAD_RADIUS = 18;
-const HERO_FRAME_EVICT_DISTANCE = 48;
+const HERO_FRAME_LOAD_RADIUS = 16;
+const HERO_FRAME_EVICT_DISTANCE = 44;
+
+/** Masaüstü: blur/filter/DOM yazımı — scroll başına tek tur (scroll-video-section ile aynı fikir) */
+const HERO_UI_STEPS = 56;
+
+/** Mobil: React re-render adımı (her piksel scroll’da setState yok) */
+const MOBILE_HERO_STEPS = 48;
 
 function getFrameSrc(index: number): string {
   const num = String(Math.min(Math.max(index, 1), TOTAL_FRAMES)).padStart(4, "0");
@@ -48,17 +54,16 @@ type HeroDict = {
 function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
   const sectionRef = useRef<HTMLElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
-  const [mobileFrame, setMobileFrame] = useState(START_VISIBLE_FRAME);
-  const [mobileProgress, setMobileProgress] = useState(0);
+  const [mobileMotionStep, setMobileMotionStep] = useState(0);
+  const mobileMotionStepRef = useRef(0);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion || window.innerWidth >= 1024) return;
 
-    const startFrame = START_VISIBLE_FRAME;
-    const endFrame = TOTAL_FRAMES - 1;
     let rafId = 0;
+    let rafPending = false;
 
     const updateFrame = () => {
       const stage = stageRef.current;
@@ -69,14 +74,22 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
       const stageScroll = viewport * 0.86 - rect.top;
       const scrollRange = Math.max(stage.offsetHeight - viewport * 0.24, 1);
       const progress = Math.min(Math.max(stageScroll / scrollRange, 0), 1);
-      const frame = Math.round(startFrame + progress * (endFrame - startFrame));
-      setMobileFrame(frame);
-      setMobileProgress(progress);
+      const step = Math.min(MOBILE_HERO_STEPS, Math.max(0, Math.round(progress * MOBILE_HERO_STEPS)));
+      if (step !== mobileMotionStepRef.current) {
+        mobileMotionStepRef.current = step;
+        setMobileMotionStep(step);
+      }
     };
 
     const onScroll = () => {
+      if (rafPending) return;
+      rafPending = true;
       cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(updateFrame);
+      rafId = requestAnimationFrame(() => {
+        rafPending = false;
+        rafId = 0;
+        updateFrame();
+      });
     };
 
     updateFrame();
@@ -89,6 +102,11 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
       cancelAnimationFrame(rafId);
     };
   }, []);
+
+  const startFrame = START_VISIBLE_FRAME;
+  const endFrame = TOTAL_FRAMES - 1;
+  const q = mobileMotionStep / MOBILE_HERO_STEPS;
+  const mobileFrame = Math.round(startFrame + q * (endFrame - startFrame));
 
   useEffect(() => {
     if (typeof window === "undefined" || window.innerWidth >= 1024) return;
@@ -106,7 +124,7 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
   }, [mobileFrame]);
 
   const mobileFrameSrc = getFrameSrc(mobileFrame);
-  const transition = Math.min(Math.max((mobileProgress - 0.08) / 0.76, 0), 1);
+  const transition = Math.min(Math.max((q - 0.08) / 0.76, 0), 1);
   const fanX = 24 + transition * 36;
   const fanScale = 1.2 - transition * 0.18;
   const overlayOpacity = Math.max(0.62 - transition * 0.62, 0);
@@ -127,7 +145,6 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
               alt={dict.endCard.title}
               fill
               priority
-              unoptimized
               sizes="100vw"
               className="object-cover"
               style={{
@@ -246,8 +263,8 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
   const endCardRef = useRef<HTMLDivElement>(null);
   const paperTextureRef = useRef<HTMLDivElement>(null);
   const frameCacheRef = useRef<Map<number, HTMLImageElement>>(new Map());
+  const canvasDrawnSizeRef = useRef({ w: 0, h: 0 });
   const currentFrameRef = useRef(0);
-  const rafRef = useRef<number>(0);
 
   const renderFrame = useCallback((index: number) => {
     const canvas = canvasRef.current;
@@ -256,8 +273,13 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
     if (!ctx) return;
     const img = frameCacheRef.current.get(index);
     if (!img || !img.complete) return;
-    canvas.width = img.naturalWidth;
-    canvas.height = img.naturalHeight;
+    const w = img.naturalWidth;
+    const h = img.naturalHeight;
+    if (canvasDrawnSizeRef.current.w !== w || canvasDrawnSizeRef.current.h !== h) {
+      canvas.width = w;
+      canvas.height = h;
+      canvasDrawnSizeRef.current = { w, h };
+    }
     ctx.drawImage(img, 0, 0);
   }, []);
 
@@ -273,6 +295,10 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
 
       const cache = frameCacheRef.current;
       const maxIdx = TOTAL_FRAMES - 1;
+
+      let scrollRafId = 0;
+      let scrollRafPending = false;
+      let lastUiKey = -999;
 
       function syncHeroFrames(centerIndex: number) {
         const lo = Math.max(0, centerIndex - HERO_FRAME_LOAD_RADIUS);
@@ -299,123 +325,123 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
       if (first?.complete) renderFrame(START_VISIBLE_FRAME);
 
       function onScroll() {
-        rafRef.current = requestAnimationFrame(() => {
-        const sectionEl = document.getElementById("hero-sticky-section");
-        if (!sectionEl) return;
-        const rect = sectionEl.getBoundingClientRect();
-        const viewH = window.innerHeight;
-        const scrolled = -rect.top;
-        const scrollRange = sectionEl.offsetHeight - viewH;
-        const progress = Math.min(Math.max(scrolled / scrollRange, 0), 1);
+        if (scrollRafPending) return;
+        scrollRafPending = true;
+        scrollRafId = requestAnimationFrame(() => {
+          scrollRafPending = false;
+          scrollRafId = 0;
+          const sectionEl = document.getElementById("hero-sticky-section");
+          if (!sectionEl) return;
+          const rect = sectionEl.getBoundingClientRect();
+          const viewH = window.innerHeight;
+          const scrolled = -rect.top;
+          const scrollRange = sectionEl.offsetHeight - viewH;
+          const progress = Math.min(Math.max(scrolled / scrollRange, 0), 1);
 
-        // Fan starts rotating inside the navy phase from the beginning of scroll.
-        const spinStart = 0.02;
-        const spinEnd = 0.9;
-        const spinProgress = Math.min(Math.max((progress - spinStart) / (spinEnd - spinStart), 0), 1);
-        const frameIndex = Math.round(
-          START_VISIBLE_FRAME + spinProgress * (TOTAL_FRAMES - 1 - START_VISIBLE_FRAME)
-        );
-        syncHeroFrames(frameIndex);
-        if (frameIndex !== currentFrameRef.current) {
-          currentFrameRef.current = frameIndex;
-          renderFrame(frameIndex);
-        }
-
-        // Charcoal "light black" -> warm light (matches sand section below)
-        const lightRaw = Math.min(Math.max((progress - 0.2) / 0.7, 0), 1);
-        const lightProgress = lightRaw * lightRaw * lightRaw * (lightRaw * (lightRaw * 6 - 15) + 10); // smootherstep
-        // Full scroll: warm off-white (~#EDEAE4), paper texture fades in with lightProgress
-        const bgR = 42 + lightProgress * 196; // 42 -> 238
-        const bgG = 42 + lightProgress * 194; // 42 -> 236
-        const bgB = 46 + lightProgress * 182; // 46 -> 228
-
-        if (stickyShellRef.current) {
-          stickyShellRef.current.style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
-        }
-        if (paperTextureRef.current) {
-          paperTextureRef.current.style.opacity = String(Math.min(lightProgress * 0.24, 0.26));
-        }
-        if (canvasRef.current) {
-          const brightness = 0.86 + lightProgress * 0.14;
-          const saturate = 1 + lightProgress * 0.04;
-          canvasRef.current.style.opacity = String(0.88 + lightProgress * 0.12);
-          canvasRef.current.style.filter = `brightness(${brightness}) saturate(${saturate}) contrast(1.01)`;
-        }
-        if (hazeRef.current) {
-          // "Dirty air" disperses as fan rotation/scroll increases.
-          const disperse = Math.min(Math.max((progress - 0.02) / 0.72, 0), 1);
-          const hazeOpacity = 0.2 * (1 - disperse);
-          const hazeBlur = 2.4 * (1 - disperse);
-          const hazeShift = 10 * disperse;
-          hazeRef.current.style.opacity = String(hazeOpacity);
-          hazeRef.current.style.filter = `blur(${hazeBlur}px)`;
-          hazeRef.current.style.transform = `translateX(${hazeShift}px)`;
-        }
-        if (airRingOuterRef.current && airRingInnerRef.current && airFlowRef.current) {
-          const flowStrength = Math.min(Math.max((progress - 0.04) / 0.7, 0), 1);
-          const outerOpacity = 0.08 + flowStrength * 0.14;
-          const innerOpacity = 0.07 + flowStrength * 0.12;
-          const flowOpacity = 0.05 + flowStrength * 0.1;
-          const outerScale = 0.95 + flowStrength * 0.12;
-          const innerScale = 0.92 + flowStrength * 0.1;
-          const outerRot = spinProgress * 520;
-          const innerRot = -spinProgress * 700;
-
-          airRingOuterRef.current.style.opacity = String(outerOpacity);
-          airRingInnerRef.current.style.opacity = String(innerOpacity);
-          airFlowRef.current.style.opacity = String(flowOpacity);
-
-          airRingOuterRef.current.style.transform = `translate(-50%, -50%) rotate(${outerRot}deg) scale(${outerScale})`;
-          airRingInnerRef.current.style.transform = `translate(-50%, -50%) rotate(${innerRot}deg) scale(${innerScale})`;
-          airFlowRef.current.style.transform = `translateX(${flowStrength * 28}px)`;
-        }
-
-        if (overlayRef.current) {
-          const fade = Math.max(1 - progress * 2.2, 0);
-          overlayRef.current.style.opacity = String(fade);
-          overlayRef.current.style.transform = `translateY(-${progress * 40}px)`;
-        }
-        if (panelRef.current) {
-          // Right text panel slides fully off-screen by progress 0.85
-          const slideOut = Math.min(Math.max((progress - 0.55) / 0.3, 0), 1);
-          const panelFade = Math.min(Math.max((progress - 0.34) / 0.38, 0), 1);
-          panelRef.current.style.transform = `translateX(${slideOut * 105}%)`;
-          panelRef.current.style.opacity = String(1 - panelFade * 0.85);
-          if (toneBlendRef.current) {
-            // Remove the vertical band as soon as text panel starts leaving.
-            toneBlendRef.current.style.opacity = String(1 - Math.max(slideOut, panelFade));
+          const spinStart = 0.02;
+          const spinEnd = 0.9;
+          const spinProgress = Math.min(Math.max((progress - spinStart) / (spinEnd - spinStart), 0), 1);
+          const frameIndex = Math.round(
+            START_VISIBLE_FRAME + spinProgress * (TOTAL_FRAMES - 1 - START_VISIBLE_FRAME)
+          );
+          syncHeroFrames(frameIndex);
+          if (frameIndex !== currentFrameRef.current) {
+            currentFrameRef.current = frameIndex;
+            renderFrame(frameIndex);
           }
-        }
-        if (statsRef.current) {
-          const fade = Math.max(1 - progress * 3.5, 0);
-          statsRef.current.style.opacity = String(fade);
-        }
-        if (scrollHintRef.current) {
-          const fade = Math.max(1 - progress * 5, 0);
-          scrollHintRef.current.style.opacity = String(fade);
-        }
-        if (progressBarRef.current) {
-          progressBarRef.current.style.transform = `scaleY(${progress})`;
-          const pulse = 0.25 + Math.sin(progress * Math.PI * 8) * 0.12;
-          progressBarRef.current.style.opacity = String(0.74 + pulse);
-          progressBarRef.current.style.boxShadow = `0 0 12px rgba(255,107,53,${0.12 + pulse * 0.22})`;
-        }
-        if (sweepRef.current) {
-          const sweep = Math.min(Math.max((progress - 0.08) / 0.78, 0), 1);
-          sweepRef.current.style.opacity = String(0.05 + sweep * 0.13);
-          sweepRef.current.style.transform = `translateX(${(sweep - 0.2) * 36}%)`;
-        }
-        if (endCardRef.current) {
-          const endFade = Math.max((progress - 0.72) * 4, 0);
-          endCardRef.current.style.opacity = String(Math.min(endFade, 1));
-          endCardRef.current.style.transform = `translateX(${Math.max(30 - endFade * 30, 0)}px)`;
-        }
-        if (canvasRef.current) {
-          // Fan: keep center-right visible while right panel exits.
-          const shift = Math.min(Math.max((progress - 0.55) * 2.2, 0), 1);
-          const xPct = 58 + shift * 14; // 58 → 72
-          canvasRef.current.style.objectPosition = `${xPct}% center`;
-        }
+
+          if (canvasRef.current) {
+            const shift = Math.min(Math.max((progress - 0.55) * 2.2, 0), 1);
+            canvasRef.current.style.objectPosition = `${58 + shift * 14}% center`;
+          }
+
+          const uiKey = Math.min(HERO_UI_STEPS, Math.max(0, Math.round(progress * HERO_UI_STEPS)));
+          if (uiKey === lastUiKey) return;
+          lastUiKey = uiKey;
+          const pq = uiKey / HERO_UI_STEPS;
+          const spinDom = Math.min(Math.max((pq - spinStart) / (spinEnd - spinStart), 0), 1);
+
+          const lightRaw = Math.min(Math.max((pq - 0.2) / 0.7, 0), 1);
+          const lightProgress = lightRaw * lightRaw * lightRaw * (lightRaw * (lightRaw * 6 - 15) + 10);
+          const bgR = 42 + lightProgress * 196;
+          const bgG = 42 + lightProgress * 194;
+          const bgB = 46 + lightProgress * 182;
+
+          if (stickyShellRef.current) {
+            stickyShellRef.current.style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
+          }
+          if (paperTextureRef.current) {
+            paperTextureRef.current.style.opacity = String(Math.min(lightProgress * 0.24, 0.26));
+          }
+          if (canvasRef.current) {
+            const brightness = 0.86 + lightProgress * 0.14;
+            const saturate = 1 + lightProgress * 0.04;
+            canvasRef.current.style.opacity = String(0.88 + lightProgress * 0.12);
+            canvasRef.current.style.filter = `brightness(${brightness}) saturate(${saturate}) contrast(1.01)`;
+          }
+          if (hazeRef.current) {
+            const disperse = Math.min(Math.max((pq - 0.02) / 0.72, 0), 1);
+            const hazeOpacity = 0.2 * (1 - disperse);
+            const hazeBlur = 2.4 * (1 - disperse);
+            const hazeShift = 10 * disperse;
+            hazeRef.current.style.opacity = String(hazeOpacity);
+            hazeRef.current.style.filter = `blur(${hazeBlur}px)`;
+            hazeRef.current.style.transform = `translateX(${hazeShift}px)`;
+          }
+          if (airRingOuterRef.current && airRingInnerRef.current && airFlowRef.current) {
+            const flowStrength = Math.min(Math.max((pq - 0.04) / 0.7, 0), 1);
+            const outerOpacity = 0.08 + flowStrength * 0.14;
+            const innerOpacity = 0.07 + flowStrength * 0.12;
+            const flowOpacity = 0.05 + flowStrength * 0.1;
+            const outerScale = 0.95 + flowStrength * 0.12;
+            const innerScale = 0.92 + flowStrength * 0.1;
+            const outerRot = spinDom * 520;
+            const innerRot = -spinDom * 700;
+
+            airRingOuterRef.current.style.opacity = String(outerOpacity);
+            airRingInnerRef.current.style.opacity = String(innerOpacity);
+            airFlowRef.current.style.opacity = String(flowOpacity);
+
+            airRingOuterRef.current.style.transform = `translate(-50%, -50%) rotate(${outerRot}deg) scale(${outerScale})`;
+            airRingInnerRef.current.style.transform = `translate(-50%, -50%) rotate(${innerRot}deg) scale(${innerScale})`;
+            airFlowRef.current.style.transform = `translateX(${flowStrength * 28}px)`;
+          }
+
+          if (overlayRef.current) {
+            const fade = Math.max(1 - pq * 2.2, 0);
+            overlayRef.current.style.opacity = String(fade);
+            overlayRef.current.style.transform = `translateY(-${pq * 40}px)`;
+          }
+          if (panelRef.current) {
+            const slideOut = Math.min(Math.max((pq - 0.55) / 0.3, 0), 1);
+            const panelFade = Math.min(Math.max((pq - 0.34) / 0.38, 0), 1);
+            panelRef.current.style.transform = `translateX(${slideOut * 105}%)`;
+            panelRef.current.style.opacity = String(1 - panelFade * 0.85);
+            if (toneBlendRef.current) {
+              toneBlendRef.current.style.opacity = String(1 - Math.max(slideOut, panelFade));
+            }
+          }
+          if (statsRef.current) {
+            statsRef.current.style.opacity = String(Math.max(1 - pq * 3.5, 0));
+          }
+          if (scrollHintRef.current) {
+            scrollHintRef.current.style.opacity = String(Math.max(1 - pq * 5, 0));
+          }
+          if (progressBarRef.current) {
+            progressBarRef.current.style.transform = `scaleY(${pq})`;
+            progressBarRef.current.style.opacity = "0.84";
+            progressBarRef.current.style.boxShadow = "0 0 12px rgba(239, 95, 23, 0.24)";
+          }
+          if (sweepRef.current) {
+            const sweep = Math.min(Math.max((pq - 0.08) / 0.78, 0), 1);
+            sweepRef.current.style.opacity = String(0.05 + sweep * 0.13);
+            sweepRef.current.style.transform = `translateX(${(sweep - 0.2) * 36}%)`;
+          }
+          if (endCardRef.current) {
+            const endFade = Math.max((pq - 0.72) * 4, 0);
+            endCardRef.current.style.opacity = String(Math.min(endFade, 1));
+            endCardRef.current.style.transform = `translateX(${Math.max(30 - endFade * 30, 0)}px)`;
+          }
         });
       }
 
@@ -426,7 +452,9 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
       removeDesktopListeners = () => {
         window.removeEventListener("scroll", onScroll);
         window.removeEventListener("resize", onScroll);
-        cancelAnimationFrame(rafRef.current);
+        scrollRafPending = false;
+        cancelAnimationFrame(scrollRafId);
+        scrollRafId = 0;
         cache.clear();
       };
     };
@@ -582,7 +610,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
               <div className="mt-9 flex flex-wrap items-center gap-5">
                 <Link
                   href={`/${locale}/iletisim`}
-                  className="btn-3d btn-3d-glass group relative z-50 inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-6 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-white transition-all duration-300 hover:-translate-y-[1px] hover:border-primary hover:bg-primary hover:shadow-[0_10px_24px_-10px_rgba(255,107,53,0.55)] pointer-events-auto"
+                  className="btn-3d btn-3d-glass group relative z-50 inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-6 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-white transition-all duration-300 hover:-translate-y-[1px] hover:border-primary hover:bg-primary hover:shadow-[0_10px_24px_-10px_rgba(239, 95, 23,0.55)] pointer-events-auto"
                 >
                   <span>{dict.ctaPrimary}</span>
                   <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">

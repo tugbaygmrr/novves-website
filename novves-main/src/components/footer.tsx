@@ -126,9 +126,8 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
 
   return (
     <>
-      <footer className="relative overflow-hidden">
-      {/* â”€â”€ Background layers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
-      <div className="absolute inset-0">
+      <footer className="relative overflow-hidden bg-[#1a2842] text-white">
+      <div className="pointer-events-none absolute inset-0" aria-hidden>
         <Image
           src="/images/footer-bg.jpg"
           alt=""
@@ -136,28 +135,16 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
           className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Primary tint - lets the image texture through */}
+        {/* Ink tint — photo stays visible, matches Final CTA block */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(175deg, rgba(15,23,42,0.75) 0%, rgba(15,23,42,0.65) 40%, rgba(15,23,42,0.80) 100%)",
+              "linear-gradient(175deg, rgba(26,40,66,0.78) 0%, rgba(26,40,66,0.62) 45%, rgba(26,40,66,0.82) 100%)",
           }}
         />
-        {/* Orange accent glow top-right */}
-        <div
-          className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
-        />
-        {/* Subtle grid pattern */}
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
+        <div className="absolute inset-0 blueprint-grid-dark opacity-22" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(83,122,184,0.16)_0%,rgba(26,40,66,0)_56%),linear-gradient(180deg,rgba(9,18,33,0.07)_0%,rgba(9,18,33,0.20)_100%)]" />
       </div>
 
       {/* â”€â”€ CTA Strip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
@@ -174,7 +161,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
             </div>
             <Link
               href={`/${locale}/iletisim`}
-              className="group inline-flex shrink-0 items-center gap-2.5 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30"
+              className="group inline-flex shrink-0 items-center gap-2.5 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
             >
               {dict.footer.ctaButton}
               <svg
@@ -259,7 +246,7 @@ export function Footer({ locale, dict }: { locale: string; dict: CommonFooterDic
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/65 shadow-[0_4px_20px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.05] hover:border-primary/45 hover:bg-primary/20 hover:text-white hover:shadow-[0_12px_32px_-16px_rgba(231,106,57,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/65 shadow-[0_4px_20px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.05] hover:border-primary/45 hover:bg-primary/20 hover:text-white hover:shadow-[0_12px_32px_-16px_rgba(239,95,23,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a2842]"
                 >
                   {s.icon}
                 </a>

@@ -11,10 +11,22 @@
     "heroTitle2": "",
     "heroDesc": "Обладая 20-летним опытом в отрасли и собственным производством, мы являемся ведущим брендом Турции в области промышленных вентиляторных систем.",
     "stats": [
-      { "value": "1,200+", "label": "Разновидностей продукции" },
-      { "value": "10+", "label": "Лет опыта" },
-      { "value": "50+", "label": "Стран экспорта" },
-      { "value": "24/7", "label": "Техническая поддержка" }
+      {
+        "value": "1,200+",
+        "label": "Разновидностей продукции"
+      },
+      {
+        "value": "10+",
+        "label": "Лет опыта"
+      },
+      {
+        "value": "50+",
+        "label": "Стран экспорта"
+      },
+      {
+        "value": "24/7",
+        "label": "Техническая поддержка"
+      }
     ],
     "introTag": "Кто мы",
     "introTitle1": "NOVVES объединяет движение воздуха",
@@ -90,9 +102,18 @@
     "heroDesc": "Видение Zeki Kadir Özüntürk и история NOVVES.",
     "ceoTitle": "Председатель совета директоров и генеральный директор",
     "highlights": [
-      { "value": "1,200+", "label": "Разновидностей продукции" },
-      { "value": "50+", "label": "Стран экспорта" },
-      { "value": "10+", "label": "Лет опыта" }
+      {
+        "value": "1,200+",
+        "label": "Разновидностей продукции"
+      },
+      {
+        "value": "50+",
+        "label": "Стран экспорта"
+      },
+      {
+        "value": "10+",
+        "label": "Лет опыта"
+      }
     ],
     "greeting": "Уважаемый посетитель,",
     "messageP1": "Добро пожаловать в семью NOVVES, мы рады видеть вас здесь.",
@@ -118,10 +139,22 @@
     "heroTitleHighlight": "NOVVES",
     "heroDesc": "Динамичная команда NOVVES не просто производит вентиляторы. Она создаёт жизнеспасительные системы, решения для свежего воздуха и инженерию, вызывающую доверие.",
     "stats": [
-      { "value": "2", "label": "Сооснователя" },
-      { "value": "11", "label": "Экспертов в команде" },
-      { "value": "10+", "label": "Лет опыта" },
-      { "value": "3", "label": "Операционных подразделения" }
+      {
+        "value": "2",
+        "label": "Сооснователя"
+      },
+      {
+        "value": "11",
+        "label": "Экспертов в команде"
+      },
+      {
+        "value": "10+",
+        "label": "Лет опыта"
+      },
+      {
+        "value": "3",
+        "label": "Операционных подразделения"
+      }
     ],
     "leadershipTag": "Правление",
     "leadershipTitle": "Руководство",
@@ -259,59 +292,143 @@
     "heroDesc": "Наши сертификаты, подтверждающие соответствие национальным и международным стандартам, являются конкретным доказательством нашего стремления к качеству.",
     "accreditationLabel": "Аккредитация и стандарты",
     "statsItems": [
-      { "value": "17+", "label": "Сертификатов" },
-      { "value": "ISO", "label": "Системные документы" },
-      { "value": "ATEX", "label": "Взрывозащита подтверждена" },
-      { "value": "CE", "label": "Соответствие EN 12101-3" }
+      {
+        "value": "17+",
+        "label": "Сертификатов"
+      },
+      {
+        "value": "ISO",
+        "label": "Системные документы"
+      },
+      {
+        "value": "ATEX",
+        "label": "Взрывозащита подтверждена"
+      },
+      {
+        "value": "CE",
+        "label": "Соответствие EN 12101-3"
+      }
     ],
     "documentSuffix": "документов",
     "downloadPdf": "Скачать PDF",
     "groups": [
       {
+        "title": "Системные сертификаты",
+        "items": [
+          {
+            "name": "Система менеджмента качества",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "Охрана труда и промышленная безопасность",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "Система экологического менеджмента",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "Система управления информационной безопасностью",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "Свидетельство о компетентности в обслуживании",
         "items": [
-          { "name": "Свидетельство TSE о компетентности в обслуживании", "code": "TSE-HYB", "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf" }
+          {
+            "name": "Свидетельство TSE о компетентности в обслуживании",
+            "code": "TSE-HYB",
+            "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf"
+          }
         ]
       },
       {
         "title": "Сертификаты соответствия продукции",
         "items": [
-          { "name": "Вентиляторы для ванных комнат", "code": "TS EN 60355-2", "pdf": "/certificate/ts60355-2.pdf" },
-          { "name": "Сертификат TSE K 453", "code": "TSE K 453", "pdf": "/certificate/tse-k-453.PDF" },
-          { "name": "Рекуперация тепла", "code": "TSE K 381", "pdf": "/certificate/tse-k-381.PDF" },
-          { "name": "Вентилятор для убежищ", "code": "TSE K 196", "pdf": "/certificate/tse-k-196.PDF" },
-          { "name": "Сертификат TRM Integra", "code": "CE", "pdf": "/certificate/CE-sertifikasi.pdf" }
-        ]
-      },
-      {
-        "title": "Системные сертификаты",
-        "items": [
-          { "name": "Система менеджмента качества", "code": "ISO 9001", "pdf": "/certificate/iso-9001.pdf" },
-          { "name": "Охрана труда и промышленная безопасность", "code": "ISO 45001", "pdf": "/certificate/iso-45001.pdf" },
-          { "name": "Система экологического менеджмента", "code": "ISO 14001", "pdf": "/certificate/iso-14001.pdf" },
-          { "name": "Система управления информационной безопасностью", "code": "ISO/IEC 27001:2022", "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf" }
+          {
+            "name": "Вентиляторы для ванных комнат",
+            "code": "TS EN 60355-2",
+            "pdf": "/certificate/ts60355-2.pdf"
+          },
+          {
+            "name": "Сертификат TSE K 453",
+            "code": "TSE K 453",
+            "pdf": "/certificate/tse-k-453.PDF"
+          },
+          {
+            "name": "Рекуперация тепла",
+            "code": "TSE K 381",
+            "pdf": "/certificate/tse-k-381.PDF"
+          },
+          {
+            "name": "Вентилятор для убежищ",
+            "code": "TSE K 196",
+            "pdf": "/certificate/tse-k-196.PDF"
+          },
+          {
+            "name": "Сертификат TRM Integra",
+            "code": "CE",
+            "pdf": "/certificate/CE-sertifikasi.pdf"
+          }
         ]
       },
       {
         "title": "Отчёт об испытании на снеговую нагрузку",
         "items": [
-          { "name": "Отчёт об испытании на снеговую нагрузку", "code": "EN 12101-3 Annex E", "pdf": "/certificate/kar-yuku-testi.pdf" }
+          {
+            "name": "Отчёт об испытании на снеговую нагрузку",
+            "code": "EN 12101-3 Annex E",
+            "pdf": "/certificate/kar-yuku-testi.pdf"
+          }
         ]
       },
       {
         "title": "Сертификаты ATEX",
         "items": [
-          { "name": "Взрывозащищённый сертификат осевых вентиляторов", "code": "ATEX", "pdf": "/certificate/aksiyal-exproof.pdf" },
-          { "name": "Взрывозащищённый сертификат радиальных вентиляторов", "code": "ATEX", "pdf": "/certificate/radyal-exproof.pdf" }
+          {
+            "name": "Взрывозащищённый сертификат осевых вентиляторов",
+            "code": "ATEX",
+            "pdf": "/certificate/aksiyal-exproof.pdf"
+          },
+          {
+            "name": "Взрывозащищённый сертификат радиальных вентиляторов",
+            "code": "ATEX",
+            "pdf": "/certificate/radyal-exproof.pdf"
+          }
         ]
       },
       {
         "title": "Документы CE (EN 12101-3)",
         "items": [
-          { "name": "Сертификат CE радиального струйного вентилятора F300/2H", "code": "RA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RA-F300-WEG.pdf" },
-          { "name": "Сертификат CE осевого струйного вентилятора F300/2H", "code": "JA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/JA-F300-WEG.pdf" },
-          { "name": "Сертификат CE осевого вентилятора в кожухе F300/2H", "code": "TAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/TAA-F300-WEG.pdf" },
-          { "name": "Сертификат CE крышных и ячеистых осевых вентиляторов F300/2H", "code": "RAA-CAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RAA-CAA-F300-WEG.pdf" }
+          {
+            "name": "Сертификат CE радиального струйного вентилятора F300/2H",
+            "code": "RA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RA-F300-WEG.pdf"
+          },
+          {
+            "name": "Сертификат CE осевого струйного вентилятора F300/2H",
+            "code": "JA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/JA-F300-WEG.pdf"
+          },
+          {
+            "name": "Сертификат CE осевого вентилятора в кожухе F300/2H",
+            "code": "TAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/TAA-F300-WEG.pdf"
+          },
+          {
+            "name": "Сертификат CE крышных и ячеистых осевых вентиляторов F300/2H",
+            "code": "RAA-CAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RAA-CAA-F300-WEG.pdf"
+          }
         ]
       }
     ],

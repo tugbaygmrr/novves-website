@@ -11,10 +11,22 @@
     "heroTitle2": "",
     "heroDesc": "Mit 20 Jahren Branchenerfahrung und eigener Fertigung sind wir in der Türkei die führende Marke für industrielle Ventilatorsysteme.",
     "stats": [
-      { "value": "1,200+", "label": "Produktvarianten" },
-      { "value": "10+", "label": "Jahre Erfahrung" },
-      { "value": "50+", "label": "Exportländer" },
-      { "value": "24/7", "label": "Technischer Support" }
+      {
+        "value": "1,200+",
+        "label": "Produktvarianten"
+      },
+      {
+        "value": "10+",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": "50+",
+        "label": "Exportländer"
+      },
+      {
+        "value": "24/7",
+        "label": "Technischer Support"
+      }
     ],
     "introTag": "Wer wir sind",
     "introTitle1": "NOVVES verbindet Luftbewegung",
@@ -90,9 +102,18 @@
     "heroDesc": "Die Vision von Zeki Kadir Özüntürk und die Geschichte von NOVVES.",
     "ceoTitle": "Vorsitzender des Vorstands & CEO",
     "highlights": [
-      { "value": "1,200+", "label": "Produktvarianten" },
-      { "value": "50+", "label": "Exportländer" },
-      { "value": "10+", "label": "Jahre Erfahrung" }
+      {
+        "value": "1,200+",
+        "label": "Produktvarianten"
+      },
+      {
+        "value": "50+",
+        "label": "Exportländer"
+      },
+      {
+        "value": "10+",
+        "label": "Jahre Erfahrung"
+      }
     ],
     "greeting": "Sehr geehrte Besucherin, sehr geehrter Besucher,",
     "messageP1": "Willkommen in der Familie NOVVES – wir freuen uns, Sie hier zu begrüßen.",
@@ -118,10 +139,22 @@
     "heroTitleHighlight": "Team",
     "heroDesc": "Das dynamische NOVVES-Team fertigt nicht nur Ventilatoren. Es liefert lebensrettende Systeme, Atem schaffende Lösungen und verlässliches Engineering.",
     "stats": [
-      { "value": "2", "label": "Mitgründer" },
-      { "value": "11", "label": "Fachkräfte" },
-      { "value": "10+", "label": "Jahre Erfahrung" },
-      { "value": "3", "label": "Bereiche" }
+      {
+        "value": "2",
+        "label": "Mitgründer"
+      },
+      {
+        "value": "11",
+        "label": "Fachkräfte"
+      },
+      {
+        "value": "10+",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": "3",
+        "label": "Bereiche"
+      }
     ],
     "leadershipTag": "Vorstand",
     "leadershipTitle": "Führung",
@@ -259,59 +292,143 @@
     "heroDesc": "Unsere Nachweise zur Einhaltung nationaler und internationaler Standards belegen unser Qualitätsversprechen.",
     "accreditationLabel": "Akkreditierung & Normen",
     "statsItems": [
-      { "value": "17+", "label": "Zertifikate" },
-      { "value": "ISO", "label": "Systemdokumente" },
-      { "value": "ATEX", "label": "Ex-geschützt zugelassen" },
-      { "value": "CE", "label": "EN 12101-3 konform" }
+      {
+        "value": "17+",
+        "label": "Zertifikate"
+      },
+      {
+        "value": "ISO",
+        "label": "Systemdokumente"
+      },
+      {
+        "value": "ATEX",
+        "label": "Ex-geschützt zugelassen"
+      },
+      {
+        "value": "CE",
+        "label": "EN 12101-3 konform"
+      }
     ],
     "documentSuffix": "Unterlagen",
     "downloadPdf": "PDF herunterladen",
     "groups": [
       {
+        "title": "Systemzertifikate",
+        "items": [
+          {
+            "name": "Qualitätsmanagement",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "Arbeitsschutz und Gesundheit",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "Umweltmanagementsystem",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "Informationssicherheitsmanagement",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "Leistungsfähigkeitsnachweis (Service)",
         "items": [
-          { "name": "TSE Service Competence Certificate", "code": "TSE-HYB", "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf" }
+          {
+            "name": "TSE Service Competence Certificate",
+            "code": "TSE-HYB",
+            "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf"
+          }
         ]
       },
       {
         "title": "Produkteinhaltungszertifikate",
         "items": [
-          { "name": "Badlüfter", "code": "TS EN 60355-2", "pdf": "/certificate/ts60355-2.pdf" },
-          { "name": "TSE K 453 Zertifikat", "code": "TSE K 453", "pdf": "/certificate/tse-k-453.PDF" },
-          { "name": "Wärmerückgewinnung", "code": "TSE K 381", "pdf": "/certificate/tse-k-381.PDF" },
-          { "name": "Schutzraum-Ventilator", "code": "TSE K 196", "pdf": "/certificate/tse-k-196.PDF" },
-          { "name": "TRM Integra Zertifikat", "code": "CE", "pdf": "/certificate/CE-sertifikasi.pdf" }
-        ]
-      },
-      {
-        "title": "Systemzertifikate",
-        "items": [
-          { "name": "Qualitätsmanagement", "code": "ISO 9001", "pdf": "/certificate/iso-9001.pdf" },
-          { "name": "Arbeitsschutz und Gesundheit", "code": "ISO 45001", "pdf": "/certificate/iso-45001.pdf" },
-          { "name": "Umweltmanagementsystem", "code": "ISO 14001", "pdf": "/certificate/iso-14001.pdf" },
-          { "name": "Informationssicherheitsmanagement", "code": "ISO/IEC 27001:2022", "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf" }
+          {
+            "name": "Badlüfter",
+            "code": "TS EN 60355-2",
+            "pdf": "/certificate/ts60355-2.pdf"
+          },
+          {
+            "name": "TSE K 453 Zertifikat",
+            "code": "TSE K 453",
+            "pdf": "/certificate/tse-k-453.PDF"
+          },
+          {
+            "name": "Wärmerückgewinnung",
+            "code": "TSE K 381",
+            "pdf": "/certificate/tse-k-381.PDF"
+          },
+          {
+            "name": "Schutzraum-Ventilator",
+            "code": "TSE K 196",
+            "pdf": "/certificate/tse-k-196.PDF"
+          },
+          {
+            "name": "TRM Integra Zertifikat",
+            "code": "CE",
+            "pdf": "/certificate/CE-sertifikasi.pdf"
+          }
         ]
       },
       {
         "title": "Schneelast-Prüfbericht",
         "items": [
-          { "name": "Schneelast-Prüfbericht", "code": "EN 12101-3 Annex E", "pdf": "/certificate/kar-yuku-testi.pdf" }
+          {
+            "name": "Schneelast-Prüfbericht",
+            "code": "EN 12101-3 Annex E",
+            "pdf": "/certificate/kar-yuku-testi.pdf"
+          }
         ]
       },
       {
         "title": "ATEX-Zertifikate",
         "items": [
-          { "name": "Axialventilatoren Ex-geschützt", "code": "ATEX", "pdf": "/certificate/aksiyal-exproof.pdf" },
-          { "name": "Radialventilatoren Ex-geschützt", "code": "ATEX", "pdf": "/certificate/radyal-exproof.pdf" }
+          {
+            "name": "Axialventilatoren Ex-geschützt",
+            "code": "ATEX",
+            "pdf": "/certificate/aksiyal-exproof.pdf"
+          },
+          {
+            "name": "Radialventilatoren Ex-geschützt",
+            "code": "ATEX",
+            "pdf": "/certificate/radyal-exproof.pdf"
+          }
         ]
       },
       {
         "title": "CE-Unterlagen (EN 12101-3)",
         "items": [
-          { "name": "Radialer Strahllüfter F300/2H CE", "code": "RA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RA-F300-WEG.pdf" },
-          { "name": "Axialer Strahllüfter F300/2H CE", "code": "JA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/JA-F300-WEG.pdf" },
-          { "name": "Gehäuster Axialventilator F300/2H CE", "code": "TAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/TAA-F300-WEG.pdf" },
-          { "name": "Dach- & Zellen-Axialventilatoren F300/2H CE", "code": "RAA-CAA", "description": "WAT Motor / WEG Motor", "pdf": "/certificate/RAA-CAA-F300-WEG.pdf" }
+          {
+            "name": "Radialer Strahllüfter F300/2H CE",
+            "code": "RA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RA-F300-WEG.pdf"
+          },
+          {
+            "name": "Axialer Strahllüfter F300/2H CE",
+            "code": "JA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/JA-F300-WEG.pdf"
+          },
+          {
+            "name": "Gehäuster Axialventilator F300/2H CE",
+            "code": "TAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/TAA-F300-WEG.pdf"
+          },
+          {
+            "name": "Dach- & Zellen-Axialventilatoren F300/2H CE",
+            "code": "RAA-CAA",
+            "description": "WAT Motor / WEG Motor",
+            "pdf": "/certificate/RAA-CAA-F300-WEG.pdf"
+          }
         ]
       }
     ],

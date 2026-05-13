@@ -77,15 +77,25 @@ export default function AdminLoginPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
       });
-      const data = await res.json();
+      const raw = await res.text();
+      let data: { error?: string } = {};
+      if (raw) {
+        try {
+          data = JSON.parse(raw) as { error?: string };
+        } catch {
+          setError(`Sunucu yanıtı okunamadı (HTTP ${res.status}).`);
+          setLoading(false);
+          return;
+        }
+      }
       if (!res.ok) {
-        setError(data.error || "Giriş başarısız");
+        setError(data.error || `Giriş başarısız (${res.status})`);
         setLoading(false);
         return;
       }
       router.replace("/novves-panel/dashboard");
     } catch {
-      setError("Sunucu hatası");
+      setError("Bağlantı hatası. Ağ veya sunucuyu kontrol edin.");
       setLoading(false);
     }
   }
@@ -108,7 +118,7 @@ export default function AdminLoginPage() {
         <div className="pointer-events-none absolute inset-0">
           <div
             className="absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.08]"
-            style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+            style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
           />
           <div
             className="absolute inset-0 opacity-[0.35]"

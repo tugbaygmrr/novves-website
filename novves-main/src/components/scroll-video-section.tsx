@@ -37,24 +37,38 @@ function lerpRgb(from: readonly [number, number, number], to: readonly [number, 
   return `rgb(${Math.round(lerp(from[0], to[0], u))},${Math.round(lerp(from[1], to[1], u))},${Math.round(lerp(from[2], to[2], u))})`;
 }
 
-/** Referans — zemin #4a4a4d → #EBE8E0; kutu zeminiyle aynı; vurgu #f45b2b → #FF7043 */
+/** Zemin koyu → ana sayfa ana zemin (#EAEADF); vurgu marka turuncusu (#EF5F17) */
 const SCROLL_SHELL_DARK: readonly [number, number, number] = [74, 74, 77]; // #4a4a4d
-const SCROLL_SHELL_LIGHT: readonly [number, number, number] = [235, 232, 224]; // #EBE8E0
+const SCROLL_SHELL_LIGHT: readonly [number, number, number] = [234, 234, 223]; // #eaeadf
 const SCROLL_PANEL_DARK: readonly [number, number, number] = [86, 86, 90];
-const SCROLL_PANEL_LIGHT: readonly [number, number, number] = [238, 235, 228];
-const SCROLL_INK: readonly [number, number, number] = [13, 17, 23]; // #0D1117
-const SCROLL_ACCENT_DARK: readonly [number, number, number] = [244, 91, 43]; // #f45b2b
-const SCROLL_ACCENT_LIGHT: readonly [number, number, number] = [255, 112, 67]; // #FF7043
+const SCROLL_PANEL_LIGHT: readonly [number, number, number] = [241, 241, 232]; // soft yüzeye yakın
+const SCROLL_INK: readonly [number, number, number] = [58, 60, 61]; // --ink #3a3c3d (hero metin)
+const SCROLL_ACCENT_DARK: readonly [number, number, number] = [239, 95, 23]; // #ef5f17
+const SCROLL_ACCENT_LIGHT: readonly [number, number, number] = [247, 118, 56]; // açık vurgu
 const SCROLL_SUB_DARK: readonly [number, number, number] = [209, 209, 209]; // #d1d1d1
-const SCROLL_SUB_LIGHT: readonly [number, number, number] = [58, 62, 74];
-const SCROLL_DIVIDER_LIGHT = "rgb(209, 206, 199)"; // #D1CEC7
+const SCROLL_SUB_LIGHT: readonly [number, number, number] = [111, 115, 117]; // --secondary muted
+const SCROLL_DIVIDER_LIGHT = "rgb(216, 216, 205)"; // --sand-300 border
 
 /** Masaüstü scroll animasyonu — tüm kareleri aynı anda yüklemek zayıf PC’lerde donmaya yol açar */
 const FRAME_LOAD_RADIUS = 15;
 const FRAME_EVICT_DISTANCE = 42;
 
-/** Scroll-scrub: zaman çizelgesi adımı (~60/sn); fastSeek yok, doğrudan currentTime */
-const VIDEO_SCRUB_QUANT = 1 / 60;
+/** Masaüstü video + motion DOM — çok ince adım = scroll scrub daha sürekli his */
+const DESKTOP_SCROLL_MOTION_STEPS = 96;
+const DESKTOP_VIDEO_SCRUB_STEPS = DESKTOP_SCROLL_MOTION_STEPS;
+const MOTION_DOM_STEPS = DESKTOP_SCROLL_MOTION_STEPS;
+
+/** Tema (gradient / shell) — videodan biraz kaba, yine de yumuşak geçiş */
+const THEME_OPEN_DOM_STEPS = 32;
+
+/** Sağdaki progress çubuğu — scroll quantize ile hizalı */
+const PROGRESS_BAR_STEPS = 96;
+
+/** Mobil video seek adımı */
+const MOBILE_VIDEO_SCRUB_STEPS = 24;
+
+/** Mobil hero (görsel/video) katman — arka plan + overlay adımı */
+const MOBILE_MOTION_DOM_STEPS = 48;
 
 /** `scrollScrub`: fastSeek yok, küçük currentTime adımları — video gibi akış */
 function scrubVideoTo(v: HTMLVideoElement, seconds: number, scrollScrub?: boolean) {
@@ -62,7 +76,7 @@ function scrubVideoTo(v: HTMLVideoElement, seconds: number, scrollScrub?: boolea
   if (!Number.isFinite(d) || d <= 0.05) return;
   const t = Math.min(Math.max(seconds, 0), d - 0.001);
   if (scrollScrub) {
-    if (Math.abs(t - v.currentTime) < 1 / 120) return;
+    if (Math.abs(t - v.currentTime) < 1 / 360) return;
     v.currentTime = t;
     return;
   }
@@ -87,6 +101,14 @@ export function ScrollVideoSection({
   videoSrc,
   scrollImageSrc,
   scrollImageAlt = "",
+  /** Video poster (masaüstü/mobil); isteğe bağlı */
+  mobileVideoReplacementSrc,
+  mobileVideoReplacementAlt = "",
+  /** `videoSrc` varken mobilde MP4 yerine bu görsel + scroll (masaüstü videoda kalır; iOS seek/dikişinden kaçınır) */
+  mobileHeroImageSrc,
+  mobileHeroImageAlt = "",
+  /** Mobilde img/video yok — sadece zemin + overlay + kartlar (masaüstü etkilenmez) */
+  mobilePlainHero = false,
   scrollVh = 260,
   id,
   startCard,
@@ -101,6 +123,12 @@ export function ScrollVideoSection({
   videoSrc?: string;
   /** Tek görsel + scroll — video seek yok, kasma biter (ör. ana sayfa hero) */
   scrollImageSrc?: string;
+  /** İsteğe bağlı poster + video `aria-label` (masaüstü/mobil) */
+  mobileVideoReplacementSrc?: string;
+  mobileVideoReplacementAlt?: string;
+  mobileHeroImageSrc?: string;
+  mobileHeroImageAlt?: string;
+  mobilePlainHero?: boolean;
   scrollImageAlt?: string;
   /** Kaydırma alanı yüksekliği (vh); video süresine göre ayarlanır */
   scrollVh?: number;
@@ -202,13 +230,48 @@ export function ScrollVideoSection({
 
     let scrollRafId = 0;
     let scrollRafPending = false;
-    let lastMediaObjectXPct = -1;
     /** Tema DOM’u — daha kaba adım = daha az gradient/string repaint */
     let lastOpenDomKey = -999;
     /** endCardSpecs satırları — children cache (querySelectorAll her temada yok) */
     let specRowCells: HTMLElement[] | null = null;
-    /** Kare modu: hareket kovası; video modunda tam progress kullanılır */
+    /** Kare / video / statik: metin + fan hareketi quantize */
     let lastMotionDomKey = -999;
+    let lastDesktopVideoStep = -1;
+    let lastProgressBarKey = -999;
+
+    const prefersReducedMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    /**
+     * Duraklatılmış videoda requestVideoFrameCallback çoğu tarayıcıda tetiklenmez → scrub hiç işlemez.
+     * Tek rAF ile hedef süreyi birleştirip seek (plan: tek seek / kuyruk).
+     */
+    let desktopScrubFlushRaf = 0;
+    let desktopScrubPendingT: number | null = null;
+
+    function cancelQueuedDesktopScrub() {
+      if (desktopScrubFlushRaf) {
+        cancelAnimationFrame(desktopScrubFlushRaf);
+        desktopScrubFlushRaf = 0;
+      }
+      desktopScrubPendingT = null;
+    }
+
+    function queueDesktopScrubSeek(videoEl: HTMLVideoElement, seconds: number) {
+      desktopScrubPendingT = seconds;
+      if (desktopScrubFlushRaf) return;
+      desktopScrubFlushRaf = requestAnimationFrame(() => {
+        desktopScrubFlushRaf = 0;
+        const t = desktopScrubPendingT;
+        desktopScrubPendingT = null;
+        if (t == null || !Number.isFinite(t)) return;
+        scrubVideoTo(videoEl, t, true);
+        if (desktopScrubPendingT != null) {
+          queueDesktopScrubSeek(videoEl, desktopScrubPendingT);
+        }
+      });
+    }
 
     function onScroll() {
       if (scrollRafPending) return;
@@ -220,14 +283,22 @@ export function ScrollVideoSection({
         if (!container) return;
 
         const rect = container.getBoundingClientRect();
+        /* `hidden lg:block`: küçük ekranda layout yok — scrub/tema boşa çalışmasın */
+        if (rect.width < 1 && rect.height < 1) return;
+
         const viewH = window.innerHeight;
+        /** Geniş margin: hero alanı ekranda / yakınında değilse tema + video scrub atlanır (IO yok — display:none yanlış negatif riski yok) */
+        const heroMargin = 420;
+        const heroActive = rect.bottom > -heroMargin && rect.top < viewH + heroMargin;
+        if (!heroActive) return;
+
         const scrolled = -rect.top;
         const scrollRange = container.offsetHeight - viewH;
         const progress = Math.min(Math.max(scrolled / scrollRange, 0), 1);
 
         /** 0 = grimsi; 1 = açık. Başta daha uzun gri: geç başlar, geç biter. */
         const open = Math.min(Math.max((progress - 0.1) / 0.78, 0), 1);
-        const openDomKey = Math.round(open * 36);
+        const openDomKey = Math.round(open * THEME_OPEN_DOM_STEPS);
         const shellBg = lerpRgb(SCROLL_SHELL_DARK, SCROLL_SHELL_LIGHT, open);
         /** Kutu = bölüm zemini (sağdaki ana ton) ile aynı; ayrı koyu blok yok. */
         const boxFill = shellBg;
@@ -311,8 +382,21 @@ export function ScrollVideoSection({
           if (v && v.readyState >= 1) {
             const d = v.duration;
             if (Number.isFinite(d) && d > 0.05) {
-              const qT = Math.round((progress * d) / VIDEO_SCRUB_QUANT) * VIDEO_SCRUB_QUANT;
-              scrubVideoTo(v, qT, true);
+              if (prefersReducedMotion) {
+                cancelQueuedDesktopScrub();
+                if (lastDesktopVideoStep !== 0) {
+                  lastDesktopVideoStep = 0;
+                  scrubVideoTo(v, 0, true);
+                }
+              } else {
+                const n = DESKTOP_VIDEO_SCRUB_STEPS;
+                const step = Math.min(n - 1, Math.max(0, Math.round(progress * (n - 1))));
+                if (step !== lastDesktopVideoStep) {
+                  lastDesktopVideoStep = step;
+                  const t = (step / (n - 1)) * (d - 0.001);
+                  queueDesktopScrubSeek(v, t);
+                }
+              }
             }
           }
         } else if (totalFrames != null) {
@@ -326,14 +410,11 @@ export function ScrollVideoSection({
 
         let pq = 0;
         let runMotion = false;
-        if (isVideoMode || isScrollStill) {
-          pq = progress;
-          runMotion = true;
-        } else {
-          const mk = Math.round(progress * 48);
+        {
+          const mk = Math.round(progress * MOTION_DOM_STEPS);
           if (mk !== lastMotionDomKey) {
             lastMotionDomKey = mk;
-            pq = mk / 48;
+            pq = mk / MOTION_DOM_STEPS;
             runMotion = true;
           }
         }
@@ -350,12 +431,12 @@ export function ScrollVideoSection({
           {
             const mediaEl = isScrollStill ? heroImageRef.current : isVideoMode ? videoRef.current : canvasRef.current;
             if (mediaEl) {
-              const shift = Math.min(Math.max((pq - 0.55) * 2.2, 0), 1);
-              const xPct = 70 - shift * 55;
-              if (!isVideoMode || Math.abs(xPct - lastMediaObjectXPct) >= 0.15) {
-                lastMediaObjectXPct = xPct;
-                mediaEl.style.objectPosition = `${xPct}% center`;
-              }
+              /** Mobil hero ile aynı fan hissi — objectPosition + hafif scale (scroll ilerledikçe) */
+              const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
+              const fanX = 18 + transition * 14;
+              const fanScale = 1.14 - transition * 0.04;
+              mediaEl.style.objectPosition = `${fanX}% center`;
+              (mediaEl as HTMLElement).style.transform = `translateZ(0) scale(${fanScale})`;
             }
           }
           if (endCardRef.current) {
@@ -370,7 +451,12 @@ export function ScrollVideoSection({
           }
         }
 
-        if (progressBarRef.current) {
+        const pbk = Math.min(
+          PROGRESS_BAR_STEPS,
+          Math.max(0, Math.round(progress * PROGRESS_BAR_STEPS))
+        );
+        if (pbk !== lastProgressBarKey && progressBarRef.current) {
+          lastProgressBarKey = pbk;
           progressBarRef.current.style.transform = `scaleY(${progress})`;
         }
       });
@@ -380,12 +466,15 @@ export function ScrollVideoSection({
     const v = videoRef.current;
     const onMeta = () => {
       lastMotionDomKey = -999;
+      lastDesktopVideoStep = -1;
+      lastProgressBarKey = -999;
       onScroll();
     };
     if (isVideoMode && v) v.addEventListener("loadedmetadata", onMeta);
     onScroll();
 
     return () => {
+      cancelQueuedDesktopScrub();
       window.removeEventListener("scroll", onScroll);
       if (isVideoMode && v) v.removeEventListener("loadedmetadata", onMeta);
       scrollRafPending = false;
@@ -405,6 +494,11 @@ export function ScrollVideoSection({
         videoSrc={videoSrc}
         scrollImageSrc={scrollImageSrc}
         scrollImageAlt={scrollImageAlt}
+        mobileVideoReplacementSrc={mobileVideoReplacementSrc}
+        mobileVideoReplacementAlt={mobileVideoReplacementAlt}
+        mobileHeroImageSrc={mobileHeroImageSrc}
+        mobileHeroImageAlt={mobileHeroImageAlt}
+        mobilePlainHero={mobilePlainHero}
         scrollVh={scrollVh}
         startCard={startCard}
         endCard={endCard}
@@ -422,7 +516,7 @@ export function ScrollVideoSection({
       >
       <div
         ref={stickyShellRef}
-        className="sticky top-0 h-screen w-full overflow-hidden"
+        className="sticky top-0 h-screen w-full overflow-hidden [contain:layout]"
         style={{ backgroundColor: "#4a4a4d" }}
       >
         {/* Statik görsel (scrollImageSrc) veya MP4 scrub veya kare canvas */}
@@ -434,25 +528,27 @@ export function ScrollVideoSection({
             alt={scrollImageAlt}
             decoding="async"
             fetchPriority="high"
-            className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)] [contain:paint]"
-            style={{ objectPosition: "70% center" }}
+            className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
+            style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
           />
         ) : isVideoMode && videoSrc ? (
           <video
             ref={videoRef}
             src={videoSrc}
+            poster={mobileVideoReplacementSrc || undefined}
+            aria-label={mobileVideoReplacementAlt || undefined}
             muted
             playsInline
             preload="auto"
             disablePictureInPicture
-            className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)] [contain:paint]"
-            style={{ objectPosition: "70% center" }}
+            className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
+            style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
           />
         ) : (
           <canvas
             ref={canvasRef}
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ objectPosition: "70% center" }}
+            style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
           />
         )}
         <div
@@ -495,7 +591,10 @@ export function ScrollVideoSection({
               <div
                 ref={progressBarRef}
                 className="absolute inset-0 origin-top"
-                style={{ transform: "scaleY(0)", backgroundColor: "rgb(244, 91, 43)" }}
+                style={{
+                  transform: "scaleY(0)",
+                  backgroundColor: `rgb(${SCROLL_ACCENT_DARK[0]}, ${SCROLL_ACCENT_DARK[1]}, ${SCROLL_ACCENT_DARK[2]})`,
+                }}
               />
             </div>
           </div>
@@ -517,7 +616,7 @@ export function ScrollVideoSection({
                   color: "rgb(230, 230, 230)",
                   ["--c-title" as string]: "rgb(255, 255, 255)",
                   ["--c-sub" as string]: "rgb(209, 209, 209)",
-                  ["--c-accent" as string]: "rgb(244, 91, 43)",
+                  ["--c-accent" as string]: `rgb(${SCROLL_ACCENT_DARK[0]}, ${SCROLL_ACCENT_DARK[1]}, ${SCROLL_ACCENT_DARK[2]})`,
                   ["--c-spec-v" as string]: "rgb(255, 255, 255)",
                 } as CSSProperties
               }
@@ -574,7 +673,7 @@ export function ScrollVideoSection({
                   {startCard.ctaPrimary && (
                     <Link
                       href={`/${locale}/iletisim`}
-                      className="btn-3d btn-3d-dark group inline-flex items-center justify-center gap-2.5 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.16em] text-white transition-all duration-300 hover:border-primary hover:bg-primary hover:shadow-[0_10px_24px_-10px_rgba(255,107,53,0.55)] min-[520px]:justify-start min-[520px]:whitespace-nowrap motion-reduce:transition-none sm:hover:-translate-y-[1px]"
+                      className="btn-3d btn-3d-dark group inline-flex items-center justify-center gap-2.5 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.16em] text-white transition-all duration-300 hover:border-primary hover:bg-primary hover:shadow-[0_10px_24px_-10px_rgba(239, 95, 23,0.55)] min-[520px]:justify-start min-[520px]:whitespace-nowrap motion-reduce:transition-none sm:hover:-translate-y-[1px]"
                     >
                       {startCard.ctaPrimary}
                       <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -633,7 +732,7 @@ export function ScrollVideoSection({
                     color: "rgb(230, 230, 230)",
                     ["--c-title" as string]: "rgb(255, 255, 255)",
                     ["--c-sub" as string]: "rgb(209, 209, 209)",
-                    ["--c-accent" as string]: "rgb(244, 91, 43)",
+                    ["--c-accent" as string]: `rgb(${SCROLL_ACCENT_DARK[0]}, ${SCROLL_ACCENT_DARK[1]}, ${SCROLL_ACCENT_DARK[2]})`,
                     ["--c-spec-v" as string]: "rgb(255, 255, 255)",
                     ["--cta-bg" as string]: "rgba(255,255,255,0.08)",
                     ["--cta-border" as string]: "rgba(255,255,255,0.22)",
@@ -724,6 +823,11 @@ function MobileScrollSection({
   videoSrc,
   scrollImageSrc,
   scrollImageAlt = "",
+  mobileVideoReplacementSrc,
+  mobileVideoReplacementAlt = "",
+  mobileHeroImageSrc,
+  mobileHeroImageAlt = "",
+  mobilePlainHero = false,
   scrollVh = 260,
   startCard,
   endCard,
@@ -736,6 +840,11 @@ function MobileScrollSection({
   videoSrc?: string;
   scrollImageSrc?: string;
   scrollImageAlt?: string;
+  mobileVideoReplacementSrc?: string;
+  mobileVideoReplacementAlt?: string;
+  mobileHeroImageSrc?: string;
+  mobileHeroImageAlt?: string;
+  mobilePlainHero?: boolean;
   scrollVh?: number;
   startCard?: StartCard;
   endCard?: EndCard;
@@ -743,9 +852,12 @@ function MobileScrollSection({
   productHref?: string;
   sideLabel?: string;
 }) {
-  const isMobileStill = Boolean(scrollImageSrc);
-  const isMobileVideo = Boolean(videoSrc) && !isMobileStill;
-  const isMobileMotion = isMobileVideo || isMobileStill;
+  const mobileUsePlain = Boolean(mobilePlainHero);
+  const mobileStillSrc = mobileUsePlain ? undefined : (scrollImageSrc ?? mobileHeroImageSrc ?? undefined);
+  const mobileStillAlt = scrollImageSrc ? scrollImageAlt : mobileHeroImageSrc ? mobileHeroImageAlt : undefined;
+  const isMobileStill = Boolean(mobileStillSrc);
+  const isMobileVideo = Boolean(videoSrc) && !isMobileStill && !mobileUsePlain;
+  const isMobileMotion = isMobileVideo || isMobileStill || mobileUsePlain;
   const sectionRef = useRef<HTMLElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
   const mobileVideoRef = useRef<HTMLVideoElement | null>(null);
@@ -773,6 +885,8 @@ function MobileScrollSection({
     const endFrame = tf;
     let rafId = 0;
     let mobileRafPending = false;
+    let lastMobileVideoStep = -1;
+    let lastMobileMotionKey = -1;
 
     const updateFrame = () => {
       mobileRafPending = false;
@@ -791,11 +905,26 @@ function MobileScrollSection({
         if (isMobileVideo && v && v.readyState >= 1) {
           const d = v.duration;
           if (Number.isFinite(d) && d > 0.05) {
-            const qT = Math.round((progress * d) / VIDEO_SCRUB_QUANT) * VIDEO_SCRUB_QUANT;
-            scrubVideoTo(v, qT, true);
+            const step = Math.min(
+              MOBILE_VIDEO_SCRUB_STEPS - 1,
+              Math.max(0, Math.round(progress * (MOBILE_VIDEO_SCRUB_STEPS - 1)))
+            );
+            if (step !== lastMobileVideoStep) {
+              lastMobileVideoStep = step;
+              const t = (step / (MOBILE_VIDEO_SCRUB_STEPS - 1)) * (d - 0.001);
+              scrubVideoTo(v, t, true);
+            }
           }
         }
-        const pq = progress;
+
+        const mk = Math.min(
+          MOBILE_MOTION_DOM_STEPS,
+          Math.max(0, Math.round(progress * MOBILE_MOTION_DOM_STEPS))
+        );
+        if (mk === lastMobileMotionKey) return;
+        lastMobileMotionKey = mk;
+        const pq = mk / MOBILE_MOTION_DOM_STEPS;
+
         const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
         const fanX = 18 + transition * 14;
         const fanScale = 1.14 - transition * 0.04;
@@ -845,12 +974,19 @@ function MobileScrollSection({
       rafId = requestAnimationFrame(updateFrame);
     };
 
+    const onResize = () => {
+      lastMobileMotionKey = -1;
+      onScroll();
+    };
+
     updateFrame();
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll, { passive: true });
+    window.addEventListener("resize", onResize, { passive: true });
 
     let mobileVideoForMeta: HTMLVideoElement | null = null;
     const onVideoMeta = () => {
+      lastMobileVideoStep = -1;
+      lastMobileMotionKey = -1;
       updateFrame();
     };
     if (isMobileVideo) {
@@ -860,12 +996,12 @@ function MobileScrollSection({
 
     return () => {
       window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
+      window.removeEventListener("resize", onResize);
       mobileRafPending = false;
       cancelAnimationFrame(rafId);
       mobileVideoForMeta?.removeEventListener("loadedmetadata", onVideoMeta);
     };
-  }, [tf, isMobileVideo, isMobileStill]);
+  }, [tf, isMobileVideo, isMobileStill, isMobileMotion]);
 
   useEffect(() => {
     if (typeof window === "undefined" || window.innerWidth >= 1024) return;
@@ -900,7 +1036,7 @@ function MobileScrollSection({
 
   return (
     <section ref={sectionRef} className="relative bg-sand-200 pt-[80px] lg:hidden">
-      <div ref={stageRef} className="relative" style={{ height: `${mobileStageHeightSvh}svh` }}>
+      <div ref={stageRef} className="relative bg-sand-200" style={{ height: `${mobileStageHeightSvh}svh` }}>
         <section className="sticky top-[92px]">
           <div
             ref={mobileHeroBgRef}
@@ -909,15 +1045,15 @@ function MobileScrollSection({
               backgroundColor: isMobileMotion ? "rgb(62, 65, 72)" : `rgb(${bgR}, ${bgG}, ${bgB})`,
             }}
           >
-            {isMobileStill && scrollImageSrc ? (
+            {isMobileStill && mobileStillSrc ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 ref={mobileHeroImgRef}
-                src={scrollImageSrc}
-                alt={scrollImageAlt}
+                src={mobileStillSrc}
+                alt={mobileStillAlt}
                 decoding="async"
                 fetchPriority="high"
-                className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
+                className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
                 style={{
                   objectPosition: "18% center",
                   transform: "translateZ(0) scale(1.14)",
@@ -927,22 +1063,27 @@ function MobileScrollSection({
               <video
                 ref={mobileVideoRef}
                 src={videoSrc}
+                poster={mobileVideoReplacementSrc || undefined}
+                aria-label={mobileVideoReplacementAlt || undefined}
                 muted
                 playsInline
-                preload="metadata"
+                preload="auto"
                 disablePictureInPicture
-                className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
+                onLoadedData={(e) => {
+                  const el = e.currentTarget;
+                  if (el.readyState >= 2) scrubVideoTo(el, 0, true);
+                }}
+                className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
                 style={{
                   objectPosition: "18% center",
                   transform: "translateZ(0) scale(1.14)",
                 }}
               />
-            ) : (
+            ) : mobileUsePlain ? null : (
               <Image
                 src={finalFrameSrc}
                 alt={endCard?.title ?? "Fan"}
                 fill
-                unoptimized
                 sizes="100vw"
                 className="object-cover"
                 style={{
@@ -1013,15 +1154,15 @@ function MobileScrollSection({
         </section>
       </div>
 
-      {/* Inline CTA */}
+      {/* Inline CTA — koyu blok yok; gövde ile aynı kum zeminde hafif kart */}
       {endCard && locale && productHref && (
-        <div className="mt-6 px-5 pb-12">
+        <div className="border-t border-ink/[0.06] bg-sand-200 px-5 pb-10 pt-6">
           <Link
             href={`/${locale}${productHref}`}
-            className="group inline-flex w-full items-center justify-between rounded-2xl bg-ink px-6 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-sand-100 transition-all duration-300 hover:bg-primary"
+            className="group inline-flex w-full items-center justify-between rounded-2xl border border-ink/12 bg-white/95 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-ink shadow-[0_10px_36px_-22px_rgba(21,26,33,0.22)] transition-all duration-300 hover:border-primary/45 hover:bg-white"
           >
             <span>{endCard.cta}</span>
-            <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+            <svg className="h-4 w-4 text-primary transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </Link>

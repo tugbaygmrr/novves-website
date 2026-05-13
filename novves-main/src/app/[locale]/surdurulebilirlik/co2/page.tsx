@@ -179,7 +179,7 @@ export default async function CO2({ params }: { params: Promise<{ locale: string
         <div className="mx-auto max-w-2xl px-4">
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href={`/${locale}/surdurulebilirlik`} className="rounded border border-white/20 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:border-primary hover:text-primary">{t.ctaSustainability}</Link>
-            <Link href={`/${locale}/iletisim`} className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e55a28]">{t.ctaContact}</Link>
+            <Link href={`/${locale}/iletisim`} className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep">{t.ctaContact}</Link>
           </div>
         </div>
       </section>

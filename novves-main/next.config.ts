@@ -118,6 +118,9 @@ const nextConfig: NextConfig = {
 
   images: {
     formats: ["image/avif", "image/webp"],
+    /** Mobil öncelikli daha küçük ara genişlikler */
+    deviceSizes: [384, 512, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 24, 32, 48, 64, 96, 128, 256, 384],
     dangerouslyAllowSVG: false,
     /** Yerel public görseli değişince eski optimize çıktısının takılı kalmaması için (özellikle dev). */
     minimumCacheTTL: 0,

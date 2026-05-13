@@ -121,7 +121,7 @@ export default async function Politikamiz({ params }: { params: Promise<{ locale
       </section>
 
       <section className="relative overflow-hidden bg-dark py-18 sm:py-20">
-        <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }} />
+        <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }} />
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <span className="mb-2 block font-serif text-7xl leading-none text-primary/20 select-none" aria-hidden="true">&ldquo;</span>

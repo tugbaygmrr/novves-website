@@ -313,6 +313,31 @@
     "downloadPdf": "پی ڈی ایف ڈاؤن لوڈ کریں۔",
     "groups": [
       {
+        "title": "سسٹم سرٹیفکیٹ",
+        "items": [
+          {
+            "name": "کوالٹی مینجمنٹ سسٹمز",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "پیشہ ورانہ صحت اور حفاظت",
+            "code": "آئی ایس او 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "ماحولیاتی انتظام کے نظام",
+            "code": "آئی ایس او 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "انفارمیشن سیکیورٹی مینجمنٹ سسٹم",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "سروس قابلیت کا سرٹیفکیٹ",
         "items": [
           {
@@ -349,31 +374,6 @@
             "name": "TRM انٹیگرا سرٹیفکیٹ",
             "code": "عیسوی",
             "pdf": "/certificate/CE-sertifikasi.pdf"
-          }
-        ]
-      },
-      {
-        "title": "سسٹم سرٹیفکیٹ",
-        "items": [
-          {
-            "name": "کوالٹی مینجمنٹ سسٹمز",
-            "code": "ISO 9001",
-            "pdf": "/certificate/iso-9001.pdf"
-          },
-          {
-            "name": "پیشہ ورانہ صحت اور حفاظت",
-            "code": "آئی ایس او 45001",
-            "pdf": "/certificate/iso-45001.pdf"
-          },
-          {
-            "name": "ماحولیاتی انتظام کے نظام",
-            "code": "آئی ایس او 14001",
-            "pdf": "/certificate/iso-14001.pdf"
-          },
-          {
-            "name": "انفارمیشن سیکیورٹی مینجمنٹ سسٹم",
-            "code": "ISO/IEC 27001:2022",
-            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
           }
         ]
       },

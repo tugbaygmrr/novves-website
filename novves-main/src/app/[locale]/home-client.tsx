@@ -14,8 +14,8 @@ import {
 import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
 import { solutionStripPageProductMedia } from "@/lib/solution-strip-media";
 
-/** Sertifika şeridi — `globals.css` ile aynı: --sand-200 / fan alanı (`bg-sand-200`) */
-const HOME_CERTIFICATE_STRIP_BG = "#e9eae2";
+/** Sertifika şeridi — `globals.css` --sand-200 ile aynı (ürün görseli arka plan tonu) */
+const HOME_CERTIFICATE_STRIP_BG = "#eaeadf";
 
 type CompanyProfileMilestoneIcon = "flag" | "chart" | "certificate" | "star" | "people";
 
@@ -357,8 +357,10 @@ function productSlugToFallbackLabel(slug: string): string {
     .join(" ");
 }
 
-/** Ürün / çözüm şeridi: lg+ ok beş kartlık sayfa; daha dar ekranda tek kart adımı */
+/** Ürün şeridi: lg+ ok beş kartlık sayfa; daha dar ekranda tek kart adımı */
 const PRODUCT_STRIP_PAGE_CARD_COUNT = 5;
+/** Çözüm şeridi: lg+ daha geniş kart (satırda 4) */
+const SOLUTION_STRIP_PAGE_CARD_COUNT = 4;
 
 function scrollHorizontalStrip(
   container: HTMLElement | null,
@@ -395,21 +397,21 @@ type SolutionBandSlide = {
   thumbnails?: readonly [string, string, string];
 };
 
-/** Sıra: tasarım listesi (sol 1–7, sağ 8–13); görseller `solutionStripPageProductMedia` → solutions.json ürün alanları */
+/** Şerit sırası: menü / vitrin — ilk beşte endüstriyelden sonra ATEX; ardından kalan çözümler */
 const SOLUTION_STRIP_HREFS = [
   "/cozumler/duman-isi-tahliye-sistemleri",
+  "/cozumler/konfor-iklimlendirme-sistemleri",
   "/cozumler/hijyenik-filtrasyonlu-havalandirma",
+  "/cozumler/endustriyel-hava-yonetimi",
+  "/cozumler/atex-patlama-koruma-cozumleri",
   "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri",
+  "/cozumler/trafo-enerji-odalari-fanlari",
   "/cozumler/sera-tarimsal-havalandirma-sistemleri",
   "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri",
-  "/cozumler/marin-offshore-havalandirma-sistemleri",
-  "/cozumler/cfd-muhendislik-danismanligi",
-  "/cozumler/konfor-iklimlendirme-sistemleri",
-  "/cozumler/endustriyel-hava-yonetimi",
-  "/cozumler/trafo-enerji-odalari-fanlari",
-  "/cozumler/atex-patlama-koruma-cozumleri",
   "/cozumler/konut-tipi-havalandirma-sistemleri",
+  "/cozumler/marin-offshore-havalandirma-sistemleri",
   "/cozumler/proje-bazli-ozel-imalatlar",
+  "/cozumler/cfd-muhendislik-danismanligi",
 ] as const;
 
 const solutionCategorySlides: SolutionBandSlide[] = SOLUTION_STRIP_HREFS.map((href) => {
@@ -437,14 +439,34 @@ const DEFAULT_SOLUTION_STRIP_ROWS: StripFeature[][] = [
     { label: "EN 12101 ready", desc: "Certified products and type-test documentation packaged for code reviews and inspections." },
   ],
   [
+    { label: "Comfort band", desc: "Stable temperature–humidity bands for offices, hotels, and retail." },
+    { label: "Acoustics", desc: "Low-SPL selections and isolation for shafts, façades, and plant rooms." },
+    { label: "Energy & VRF", desc: "Flow and pressure planning coordinated with heat pumps and VRF systems." },
+  ],
+  [
     { label: "Room pressure", desc: "Positive/negative pressure cascades and leakage control to protect critical spaces." },
     { label: "HEPA & fine", desc: "Hospital, GMP, and food lines with filter classes and change-out strategies." },
     { label: "Monitoring", desc: "DP, humidity, and particle sensing with logging and alarms for compliance." },
   ],
   [
+    { label: "Process airflow", desc: "High-temperature and abrasive-duty fans for drying, emission, and line pressure." },
+    { label: "Dust & filters", desc: "Fan curves matched to dust loading, filter dp, and maintenance cycles." },
+    { label: "Uptime", desc: "Standby fans, spare-part paths, and service access to shorten planned stops." },
+  ],
+  [
+    { label: "Hazard zones", desc: "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas." },
+    { label: "Spark-free", desc: "Ex d/m/e and compatible drives for explosive gas and dust atmospheres." },
+    { label: "ATEX dossier", desc: "Risk study, technical file, and site marking ready for audits." },
+  ],
+  [
     { label: "Stocking density", desc: "Fresh-air and exhaust rates sized for headcount, season, and heat stress." },
     { label: "Gas & moisture", desc: "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts." },
     { label: "Corrosion tough", desc: "Materials and motor protection for wash-down and aggressive barn environments." },
+  ],
+  [
+    { label: "Transformer heat", desc: "Cooling airflow sized for transformer and busbar losses with design margin." },
+    { label: "Fire & smoke", desc: "Smoke exhaust and pressurisation coordinated with electrical infrastructure." },
+    { label: "Utility specs", desc: "Product ranges aligned with OEM, utility, and IEC-oriented specifications." },
   ],
   [
     { label: "Tunnel & poly", desc: "Even velocity profiles and temperature stratification for tunnel and multi-span houses." },
@@ -457,44 +479,24 @@ const DEFAULT_SOLUTION_STRIP_ROWS: StripFeature[][] = [
     { label: "Commissioning", desc: "Stepwise testing, handover scripts, and operator screens for maintenance." },
   ],
   [
-    { label: "Salt spray", desc: "Coatings and stainless options aligned with C4/C5 marine exposure classes." },
-    { label: "Class society", desc: "Technical files and tests aligned with vessel class and offshore norms." },
-    { label: "Redundancy", desc: "N+1 layouts and access paths for offshore availability and service." },
-  ],
-  [
-    { label: "Smoke & visibility", desc: "3D smoke modelling for jet fan placement, visibility, and temperature fields." },
-    { label: "Heat & contaminants", desc: "Distribution studies for kitchens, process exhaust, and waste heat." },
-    { label: "Client-ready reports", desc: "Summaries, sections, and visuals for investors, AHJs, and design reviews." },
-  ],
-  [
-    { label: "Comfort band", desc: "Stable temperature–humidity bands for offices, hotels, and retail." },
-    { label: "Acoustics", desc: "Low-SPL selections and isolation for shafts, façades, and plant rooms." },
-    { label: "Energy & VRF", desc: "Flow and pressure planning coordinated with heat pumps and VRF systems." },
-  ],
-  [
-    { label: "Process airflow", desc: "High-temperature and abrasive-duty fans for drying, emission, and line pressure." },
-    { label: "Dust & filters", desc: "Fan curves matched to dust loading, filter dp, and maintenance cycles." },
-    { label: "Uptime", desc: "Standby fans, spare-part paths, and service access to shorten planned stops." },
-  ],
-  [
-    { label: "Transformer heat", desc: "Cooling airflow sized for transformer and busbar losses with design margin." },
-    { label: "Fire & smoke", desc: "Smoke exhaust and pressurisation coordinated with electrical infrastructure." },
-    { label: "Utility specs", desc: "Product ranges aligned with OEM, utility, and IEC-oriented specifications." },
-  ],
-  [
-    { label: "Hazard zones", desc: "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas." },
-    { label: "Spark-free", desc: "Ex d/m/e and compatible drives for explosive gas and dust atmospheres." },
-    { label: "ATEX dossier", desc: "Risk study, technical file, and site marking ready for audits." },
-  ],
-  [
     { label: "Shaft & wet rooms", desc: "Compact, low-noise units for central shafts, bathrooms, and kitchens." },
     { label: "Façade fit", desc: "Balcony and wall-mounted options that respect acoustic and architectural limits." },
     { label: "Energy labels", desc: "Efficiency classes aligned with residential regulations and running cost." },
   ],
   [
+    { label: "Salt spray", desc: "Coatings and stainless options aligned with C4/C5 marine exposure classes." },
+    { label: "Class society", desc: "Technical files and tests aligned with vessel class and offshore norms." },
+    { label: "Redundancy", desc: "N+1 layouts and access paths for offshore availability and service." },
+  ],
+  [
     { label: "Custom geometry", desc: "Project-specific casings for tight footprints, flanges, and duct transitions." },
     { label: "Materials & weld", desc: "Stainless, aluminium, specials; weld and NDT procedures on request." },
     { label: "FAT & traceability", desc: "Factory acceptance testing with certificates and full material traceability." },
+  ],
+  [
+    { label: "Smoke & visibility", desc: "3D smoke modelling for jet fan placement, visibility, and temperature fields." },
+    { label: "Heat & contaminants", desc: "Distribution studies for kitchens, process exhaust, and waste heat." },
+    { label: "Client-ready reports", desc: "Summaries, sections, and visuals for investors, AHJs, and design reviews." },
   ],
 ];
 
@@ -561,24 +563,22 @@ function pickStripFeatureRowsForCount(
 
 function HomeMarketStripBackdrop() {
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute inset-0 bg-[#02050f]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_120%_70%_at_50%_-15%,rgba(56,189,248,0.16),transparent_58%)]" />
-      <div className="absolute -left-[35%] top-[18%] h-[85%] w-[85%] -rotate-[11deg] opacity-[0.11] bg-[linear-gradient(90deg,transparent,rgba(56,189,248,0.55),transparent)] blur-2xl" />
-      <div className="absolute -right-[30%] bottom-[-8%] h-[75%] w-[75%] rotate-[9deg] opacity-[0.09] bg-[linear-gradient(90deg,transparent,rgba(37,99,235,0.55),transparent)] blur-2xl" />
+    <div className="pointer-events-none absolute inset-0 overflow-hidden bg-sand-100" aria-hidden>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_70%_at_50%_-5%,rgba(0,56,107,0.06),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_85%_55%_at_100%_100%,rgba(239,95,23,0.05),transparent_52%)]" />
       <div
-        className="absolute inset-0 opacity-[0.045]"
+        className="absolute inset-0 opacity-[0.45]"
         style={{
-          backgroundImage: "radial-gradient(circle at 1px 1px, rgba(125,211,252,0.4) 1px, transparent 0)",
-          backgroundSize: "26px 26px",
+          backgroundImage: "radial-gradient(circle at 1px 1px, rgba(216,216,205,0.55) 1px, transparent 0)",
+          backgroundSize: "24px 24px",
         }}
       />
     </div>
   );
 }
 
-function HomeMarketStripFeatureIcon({ index }: { index: number }) {
-  const cls = "h-5 w-5 text-sky-300";
+function HomeMarketStripFeatureIcon({ index, className = "h-5 w-5 text-primary" }: { index: number; className?: string }) {
+  const cls = className;
   const stroke = 1.5;
   switch (index % 3) {
     case 0:
@@ -635,8 +635,8 @@ function solutionLeadIconFromHref(href: string): SolutionLeadIconKind {
   return "default";
 }
 
-function SolutionShowcaseLeadIconByKind({ kind }: { kind: SolutionLeadIconKind }) {
-  const cls = "h-6 w-6 shrink-0 text-primary";
+function SolutionShowcaseLeadIconByKind({ kind, inverted }: { kind: SolutionLeadIconKind; inverted?: boolean }) {
+  const cls = inverted ? "h-6 w-6 shrink-0 text-white" : "h-6 w-6 shrink-0 text-primary";
   const sw = 1.65;
   switch (kind) {
     case "duman":
@@ -978,7 +978,7 @@ function HomeCompanyProfileSectionBlock({
 
               {/* Gelecek hedefleri */}
               <section
-                className="overflow-hidden rounded-2xl border border-[#1e3a5f]/10 bg-white/70 p-6 shadow-[0_16px_48px_-36px_rgba(15,22,36,0.2)] sm:p-8 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,320px)] lg:items-stretch lg:gap-10"
+                className="overflow-hidden rounded-2xl border border-[#1e3a5f]/10 bg-white/70 p-6 shadow-[0_16px_48px_-36px_rgba(15,22,36,0.2)] sm:p-8 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,400px)] lg:items-stretch lg:gap-10"
                 aria-labelledby="company-profile-goals-heading"
               >
                 <div className="min-w-0">
@@ -1006,15 +1006,14 @@ function HomeCompanyProfileSectionBlock({
                   </ul>
                 </div>
                 {goalsAsidePath ? (
-                  <div className="relative mt-8 min-h-[220px] w-full overflow-hidden rounded-xl border border-[#1e3a5f]/8 bg-[#e8e6e0] sm:min-h-[260px] lg:mt-0 lg:h-full lg:min-h-[min(100%,320px)] lg:self-stretch">
+                  <div className="relative mt-8 min-h-[220px] w-full overflow-hidden rounded-xl border border-[#1e3a5f]/8 bg-[#1a2842] sm:min-h-[260px] lg:mt-0 lg:h-full lg:min-h-[min(100%,400px)] lg:self-stretch">
                     <Image
                       key={goalsAsideRaw || goalsAsidePath}
                       src={goalsAsidePath}
                       alt={section.goalsAsideImageAlt ?? ""}
                       fill
-                      unoptimized
                       className="object-cover object-center"
-                      sizes="(max-width: 1024px) 92vw, 360px"
+                      sizes="(max-width: 1024px) 92vw, 400px"
                     />
                   </div>
                 ) : null}
@@ -1074,30 +1073,34 @@ function resolveReferenceSectorTheme(index: number, raw?: string): ReferenceSect
   return REFERENCE_SECTOR_THEME_CYCLE[index % 4]!;
 }
 
+/** Turuncu ve lacivert kutular — primary/dark ile aynı aile, kutularda daha koyu tonlar */
 const REFERENCE_SECTOR_THEME_STYLES: Record<
   ReferenceSectorTheme,
-  { footer: string; iconCircle: string }
+  { footer: string; iconCircle: string; imageTint: string }
 > = {
-  /* Sıcak ama marka turuncusu değil — göze batmadan ayırt edici */
   orange: {
-    footer: "bg-[#7a4f45]",
+    footer: "bg-[#8f2f0b]",
     iconCircle:
-      "bg-[#7a4f45] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+      "bg-[#8f2f0b] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-[#8f2f0b]/52 from-0% via-[#8f2f0b]/16 via-[38%] to-transparent to-[78%]",
   },
   sky: {
-    footer: "bg-[#3d5a6b]",
+    footer: "bg-[#001a33]",
     iconCircle:
-      "bg-[#3d5a6b] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+      "bg-[#001a33] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-[#001a33]/52 from-0% via-[#001a33]/16 via-[38%] to-transparent to-[78%]",
   },
   emerald: {
-    footer: "bg-[#2d5548]",
+    footer: "bg-ink",
     iconCircle:
-      "bg-[#2d5548] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+      "bg-ink ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-ink/48 from-0% via-ink/14 via-[38%] to-transparent to-[78%]",
   },
   zinc: {
-    footer: "bg-[#4a5568]",
+    footer: "bg-[#5c2007]",
     iconCircle:
-      "bg-[#4a5568] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+      "bg-[#5c2007] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-[#5c2007]/52 from-0% via-[#5c2007]/16 via-[38%] to-transparent to-[78%]",
   },
 };
 
@@ -1164,8 +1167,8 @@ function HomeCatalogDocIcon({ variant }: { variant: number }) {
   }
 }
 
-function HomeSolutionFooterGlyph({ index }: { index: number }) {
-  const cls = "h-4 w-4 text-primary";
+function HomeSolutionFooterGlyph({ index, onDark }: { index: number; onDark?: boolean }) {
+  const cls = onDark ? "h-4 w-4 text-white" : "h-4 w-4 text-primary";
   const stroke = 1.65;
   switch (index % 3) {
     case 0:
@@ -1198,6 +1201,7 @@ function HomeSolutionShowcaseCard({
   productThumbs,
   features,
   leadIconKind,
+  heroPriority = false,
 }: {
   locale: string;
   href: string;
@@ -1207,55 +1211,78 @@ function HomeSolutionShowcaseCard({
   productThumbs: readonly [string, string, string];
   features: StripFeature[];
   leadIconKind: SolutionLeadIconKind;
+  /** İlk kart LCP: daha erken decode */
+  heroPriority?: boolean;
 }) {
   const triple: StripFeature[] = [...features.slice(0, 3)];
   while (triple.length < 3) triple.push({ label: "—", desc: "" });
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group flex h-full min-h-[380px] w-full flex-col overflow-hidden rounded-xl border border-white/25 bg-gradient-to-b from-[#ffb078] via-primary to-[#d9481f] shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_18px_40px_-20px_rgba(220,80,30,0.45)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:shadow-[0_22px_48px_-18px_rgba(220,80,30,0.5)] sm:min-h-[460px]"
+      className="group flex h-full min-h-[400px] w-full flex-col overflow-hidden rounded-xl border border-sand-300 bg-white shadow-[0_14px_40px_-28px_rgba(0,56,107,0.14)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_22px_52px_-28px_rgba(239,95,23,0.22)] sm:min-h-[470px]"
     >
-      <div className="relative h-[136px] w-full shrink-0 overflow-hidden bg-primary sm:h-[148px]">
-        <img
+      <div className="relative h-[158px] w-full shrink-0 overflow-hidden bg-sand-100 sm:h-[176px]">
+        <Image
           src={heroSrc}
           alt=""
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-          loading="lazy"
-          decoding="async"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 360px"
+          className="object-cover transition duration-500 group-hover:scale-[1.03]"
+          priority={heroPriority}
+          quality={80}
         />
       </div>
-      <div className="flex min-h-0 flex-1 flex-col gap-3 bg-primary/93 p-3.5 sm:gap-4 sm:p-4">
-        <div className="flex h-[7.35rem] shrink-0 gap-3 sm:h-[7.65rem]">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/15 text-white shadow-[0_0_16px_-4px_rgba(0,0,0,0.2)] [&_svg]:!text-white">
-            <SolutionShowcaseLeadIconByKind kind={leadIconKind} />
+      <div
+        className="flex min-h-0 flex-1 flex-col gap-2 border-t border-white/25 p-3 sm:gap-2.5 sm:p-3.5"
+        style={{
+          background:
+            "linear-gradient(180deg, #ff9048 0%, #ef5f17 28%, #d45414 58%, #a63d0f 82%, #6e2809 100%)",
+        }}
+      >
+        <div className="flex h-[6rem] shrink-0 gap-2.5 sm:h-[6.35rem] sm:gap-3">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/12 shadow-[inset_0_1px_0_rgba(255,255,255,0.22)]">
+            <SolutionShowcaseLeadIconByKind kind={leadIconKind} inverted />
           </div>
           <div className="flex h-full min-h-0 w-0 min-w-0 flex-1 flex-col overflow-hidden pt-0.5">
-            <h3 className="line-clamp-2 text-[15px] font-bold leading-snug text-white drop-shadow-sm sm:text-base">{title}</h3>
-            <p className="mt-1.5 line-clamp-3 text-[12px] leading-relaxed text-white/90 sm:text-[13px]">{subtitle}</p>
+            <h3 className="line-clamp-2 text-[15px] font-bold leading-snug text-white sm:text-base">{title}</h3>
+            <p className="mt-1 line-clamp-2 text-[12px] leading-relaxed text-white/88 sm:mt-1.5 sm:text-[13px]">{subtitle}</p>
           </div>
         </div>
         <div className="mt-auto grid shrink-0 grid-cols-3 gap-2 sm:gap-2.5">
           {productThumbs.map((src, i) => (
             <div
               key={`${src}-${i}`}
-              className="flex aspect-square items-center justify-center rounded-lg bg-black/12 p-2 ring-1 ring-white/25"
+              className="relative h-[6.25rem] w-full overflow-hidden rounded-lg bg-transparent sm:h-[7.25rem]"
             >
-              <img src={src} alt="" className="max-h-full max-w-full object-contain" loading="lazy" decoding="async" />
+              <Image
+                src={src}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 34vw, 200px"
+                className="object-contain p-0.5 drop-shadow-[0_14px_32px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-[1.04]"
+                loading={heroPriority && i < 3 ? "eager" : "lazy"}
+                quality={78}
+              />
             </div>
           ))}
         </div>
       </div>
-      <div className="mt-auto shrink-0 border-t border-white/25 bg-[#c2410c]/95 px-2 py-3 sm:px-3 sm:py-4">
+      <div
+        className="mt-auto shrink-0 border-t border-white/15 px-2 py-2.5 sm:px-3 sm:py-3"
+        style={{
+          background: "linear-gradient(180deg, #7a3010 0%, #5c2408 48%, #401806 100%)",
+        }}
+      >
         <div className="grid grid-cols-3 items-start gap-1 sm:gap-2">
           {triple.map((f, i) => (
             <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
-              <div className="mb-1.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/12 text-white [&_svg]:!text-white">
-                <HomeSolutionFooterGlyph index={i} />
+              <div className="mb-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/22 bg-white/[0.08] sm:mb-1.5 sm:h-9 sm:w-9">
+                <HomeSolutionFooterGlyph index={i} onDark />
               </div>
-              <p className="flex min-h-[2.75rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white sm:min-h-[3rem] sm:text-[11px]">
+              <p className="flex min-h-[2.35rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white sm:min-h-[2.5rem] sm:text-[11px]">
                 <span className="line-clamp-2">{f.label}</span>
               </p>
-              <p className="mt-0.5 flex min-h-[2.5rem] w-full items-start justify-center text-[9px] leading-snug text-white/85 sm:min-h-[2.75rem] sm:text-[10px]">
+              <p className="mt-0.5 flex min-h-[2.1rem] w-full items-start justify-center text-[9px] leading-snug text-white/70 sm:min-h-[2.35rem] sm:text-[10px]">
                 <span className="line-clamp-2">{f.desc}</span>
               </p>
             </div>
@@ -1273,6 +1300,7 @@ function HomeMarketStripCard({
   subtitle,
   imageSrc,
   features,
+  imagePriority = false,
 }: {
   locale: string;
   href: string;
@@ -1280,38 +1308,56 @@ function HomeMarketStripCard({
   subtitle: string;
   imageSrc: string;
   features: StripFeature[];
+  imagePriority?: boolean;
 }) {
   const triple: StripFeature[] = [...features.slice(0, 3)];
   while (triple.length < 3) triple.push({ label: "—", desc: "" });
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group flex h-full min-h-[360px] w-full flex-col rounded-lg border border-sky-500/30 bg-[#070f1a]/95 p-4 pb-5 shadow-[inset_0_1px_0_rgba(56,189,248,0.08),0_18px_40px_-28px_rgba(0,0,0,0.65)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-sky-400/55 hover:shadow-[0_22px_48px_-26px_rgba(56,189,248,0.12)] sm:min-h-[420px] sm:p-5 sm:pb-6"
+      className="group relative flex h-full min-h-[360px] w-full flex-col overflow-hidden rounded-2xl border border-white/[0.10] bg-[#1a2842] p-4 pb-5 shadow-[0_22px_56px_-34px_rgba(0,0,0,0.45)] ring-1 ring-white/[0.06] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-primary/35 hover:shadow-[0_28px_64px_-28px_rgba(239,95,23,0.14),0_22px_56px_-34px_rgba(0,0,0,0.5)] sm:min-h-[420px] sm:p-5 sm:pb-6"
     >
-      <div className="flex h-[6.25rem] shrink-0 flex-col sm:h-[6.5rem]">
-        <h3 className="line-clamp-2 text-[13px] font-bold leading-snug text-white sm:text-[15px] sm:leading-snug lg:text-base">{title}</h3>
-        <p className="mt-1.5 line-clamp-2 text-[12px] leading-relaxed text-slate-400 sm:text-[13px]">{subtitle}</p>
+      <div
+        className="pointer-events-none absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_18%_10%,rgba(83,122,184,0.18)_0%,rgba(26,40,66,0)_58%),linear-gradient(180deg,rgba(9,18,33,0.06)_0%,rgba(9,18,33,0.22)_100%)]"
+        aria-hidden
+      />
+      <div className="relative z-[1] flex h-[6.25rem] shrink-0 flex-col sm:h-[6.5rem]">
+        <h3 className="line-clamp-2 text-[13px] font-bold leading-snug tracking-tight text-white sm:text-[15px] sm:leading-snug lg:text-base">
+          {title}
+        </h3>
+        <p className="mt-1.5 line-clamp-2 text-[12px] leading-relaxed text-white/55 sm:text-[13px]">{subtitle}</p>
       </div>
-      <div className="flex h-[10rem] shrink-0 items-center justify-center py-2 sm:h-[10.5rem] sm:py-3">
-        <img
+      <div className="relative z-[1] mt-3 flex h-[10rem] shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/[0.08] bg-[#121f33] py-2 shadow-[inset_0_2px_20px_rgba(0,0,0,0.35)] sm:mt-4 sm:h-[10.5rem] sm:py-3">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-90"
+          style={{
+            background:
+              "radial-gradient(ellipse 100% 85% at 50% 100%, rgba(83,122,184,0.12), transparent 55%), radial-gradient(circle at 80% 15%, rgba(83,122,184,0.08), transparent 45%)",
+          }}
+          aria-hidden
+        />
+        <Image
           src={imageSrc}
           alt=""
-          className="mx-auto max-h-full w-full max-w-full object-contain object-center drop-shadow-[0_0_24px_rgba(56,189,248,0.18)] transition-transform duration-300 group-hover:scale-[1.03]"
-          loading="lazy"
-          decoding="async"
+          width={400}
+          height={280}
+          sizes="(max-width: 768px) 85vw, 280px"
+          className="relative z-[1] mx-auto max-h-full w-full max-w-full object-contain object-center drop-shadow-[0_14px_36px_rgba(0,0,0,0.5)] transition-transform duration-300 group-hover:scale-[1.03]"
+          priority={imagePriority}
+          quality={80}
         />
       </div>
-      <div className="mt-auto shrink-0 border-t border-sky-500/25 pt-4 sm:pt-5">
+      <div className="relative z-[1] mt-auto shrink-0 border-t border-white/[0.08] pt-4 sm:pt-5">
         <div className="grid grid-cols-3 items-start gap-2 sm:gap-3">
           {triple.map((f, i) => (
             <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
-              <div className="mb-1.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-sky-400/30 bg-sky-500/15 sm:mb-2">
-                <HomeMarketStripFeatureIcon index={i} />
+              <div className="mb-1.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/28 sm:mb-2">
+                <HomeMarketStripFeatureIcon index={i} className="h-5 w-5 text-primary" />
               </div>
-              <p className="flex min-h-[2.75rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white sm:min-h-[3rem] sm:text-[11px]">
+              <p className="flex min-h-[2.75rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white/90 sm:min-h-[3rem] sm:text-[11px]">
                 <span className="line-clamp-2">{f.label}</span>
               </p>
-              <p className="mt-0.5 flex min-h-[2.5rem] w-full items-start justify-center text-[9px] leading-snug text-slate-400 sm:min-h-[2.75rem] sm:text-[10px]">
+              <p className="mt-0.5 flex min-h-[2.5rem] w-full items-start justify-center text-[9px] leading-snug text-white/55 sm:min-h-[2.75rem] sm:text-[10px]">
                 <span className="line-clamp-2">{f.desc}</span>
               </p>
             </div>
@@ -1332,14 +1378,17 @@ const productFallbackImages = [
   "/images/products/ae-fjf.png",
 ];
 
-/** Hero fanının altındaki dönen şerit — zemin `sand-200`; EN / CE / ISO9001 / ISO14001 / BSI / TSE renkli (invert yok), diğer .png koyu silüet */
+/**
+ * Hero altı şerit — standart grupları peş peşe: ISO (9001+14001) → BSI → AB (CE+EN) → TSE → test (Efectis)
+ * Renkli PNG’ler invert edilmez (`keepColorPng` ile).
+ */
 const certificateLogoBarItems = [
-  { src: "/images/certificates/ENEC.png?v=1", alt: "EN" },
   { src: "/images/certificates/ISO9001.png?v=7", alt: "ISO 9001" },
   { src: "/images/certificates/ISO14001.png?v=1", alt: "ISO 14001" },
-  { src: "/images/certificates/TSE.png?v=1", alt: "TSE" },
   { src: "/images/certificates/bsi.png?v=2", alt: "BSI" },
   { src: "/images/certificates/CE.png?v=10", alt: "CE" },
+  { src: "/images/certificates/ENEC.png?v=1", alt: "EN" },
+  { src: "/images/certificates/TSE.png?v=1", alt: "TSE" },
   { src: "/images/certificates/Efectis.svg", alt: "Efectis" },
 ] as const;
 const certificateLogoMarqueeItems = [...certificateLogoBarItems, ...certificateLogoBarItems] as const;
@@ -1385,7 +1434,7 @@ function SectionHead({
           <div className="lg:col-span-7">
             <div className="flex items-center gap-4 sm:gap-5">
               <div className="flex shrink-0 items-center gap-2.5">
-                <span className={`h-4 w-4 rounded-[5px] border border-primary/45 shadow-[0_8px_20px_-10px_rgba(231,106,57,0.75)] ${accentClass}`} />
+                <span className={`h-4 w-4 rounded-[5px] border border-primary/45 shadow-[0_8px_20px_-10px_rgba(239, 95, 23,0.75)] ${accentClass}`} />
                 <span className="h-2.5 w-2.5 rounded-[3px] border border-[#243044]/20 bg-white shadow-[0_4px_10px_-8px_rgba(36,48,68,0.45)]" />
                 <span className="h-3 w-3 rounded-[4px] border border-[#243044]/24 bg-[#e9ebef]" />
               </div>
@@ -1548,7 +1597,7 @@ function HomeEngineeringPillarsJourneyStrip({
                       <div className="mt-5">
                         <Link
                           href={pillarHref}
-                          className="inline-flex items-center gap-1.5 rounded-md bg-primary px-5 py-2.5 text-[11px] font-semibold tracking-[-0.01em] text-white shadow-[0_8px_20px_-12px_rgba(231,106,57,0.5)] transition-colors hover:bg-[#e55a28]"
+                          className="inline-flex items-center gap-1.5 rounded-md bg-primary px-5 py-2.5 text-[11px] font-semibold tracking-[-0.01em] text-white shadow-[0_8px_20px_-12px_rgba(239, 95, 23,0.5)] transition-colors hover:bg-primary-deep"
                         >
                           {pillarCta}
                           <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
@@ -1661,7 +1710,7 @@ export default function HomeClient({
   );
 
   const scrollSolutionStrip = (direction: "prev" | "next") => {
-    scrollHorizontalStrip(solutionStripCarouselRef.current, "[data-solution-strip-card]", direction, PRODUCT_STRIP_PAGE_CARD_COUNT);
+    scrollHorizontalStrip(solutionStripCarouselRef.current, "[data-solution-strip-card]", direction, SOLUTION_STRIP_PAGE_CARD_COUNT);
   };
 
   const scrollProductStrip = (direction: "prev" | "next") => {
@@ -1679,6 +1728,7 @@ export default function HomeClient({
       <div id="hero-main" className="scroll-mt-24 md:scroll-mt-[5.5rem]">
       <ScrollVideoSection
         videoSrc="/video/hero-scroll.mp4"
+        mobileVideoReplacementAlt={dict.hero.heroImageAlt}
         scrollVh={260}
         id="animation-2"
         startCard={dict.hero}
@@ -1689,7 +1739,7 @@ export default function HomeClient({
       />
       </div>
 
-      {/* 02 — Sertifika: sand-200 (fan ile aynı); ÇÖZÜMLER: eski lacivert şerit */}
+      {/* 02 — Sertifika; ardından çözümler (soft yüzey + palet) */}
       <section id="solution-categories" className="relative scroll-mt-24 md:scroll-mt-[5.5rem]">
         <div className="relative bg-sand-200">
           <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
@@ -1760,12 +1810,12 @@ export default function HomeClient({
           </div>
         </div>
 
-        <div className="relative text-white">
+        <div className="relative border-t border-sand-300 bg-sand-100 text-ink">
           <HomeMarketStripBackdrop />
           <div className="relative z-[1] mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
             <div className="py-10 sm:py-12 sm:pt-12 sm:pb-14 lg:py-16">
               <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
-                <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-white sm:text-xl">{n.solutions}</h2>
+                <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.solutions}</h2>
                 <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
               </div>
               <div className="-mx-1 flex items-stretch gap-2 px-1 sm:-mx-0 sm:gap-3 sm:px-0">
@@ -1773,7 +1823,7 @@ export default function HomeClient({
                   type="button"
                   onClick={() => scrollSolutionStrip("prev")}
                   aria-label={pc.previousSolutions}
-                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-primary/40 bg-[#0c1524] text-primary shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-primary/70 hover:bg-primary/15 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
                 >
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -1796,7 +1846,7 @@ export default function HomeClient({
                         <div
                           key={item.href}
                           data-solution-strip-card
-                          className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-3rem)/5)] lg:flex-[0_0_calc((100%-3rem)/5)]"
+                          className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-2.25rem)/4)] lg:flex-[0_0_calc((100%-2.25rem)/4)]"
                         >
                           <HomeSolutionShowcaseCard
                             locale={locale}
@@ -1807,6 +1857,7 @@ export default function HomeClient({
                             productThumbs={productThumbs}
                             features={solutionStripRows[i] ?? solutionStripRows[0]!}
                             leadIconKind={solutionLeadIconFromHref(item.href)}
+                            heroPriority={i === 0}
                           />
                         </div>
                       );
@@ -1817,7 +1868,7 @@ export default function HomeClient({
                   type="button"
                   onClick={() => scrollSolutionStrip("next")}
                   aria-label={pc.nextSolutions}
-                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-primary/40 bg-[#0c1524] text-primary shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-primary/70 hover:bg-primary/15 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
                 >
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -1829,20 +1880,20 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* 03 — ÜRÜNLER (aynı referans düzeni) */}
-      <section id="product-categories" className="relative scroll-mt-24 text-white md:scroll-mt-[5.5rem]">
+      {/* 03 — ÜRÜNLER (aynı referans düzeni; arka plan çözümler şeridi ile aynı sand) */}
+      <section id="product-categories" className="relative scroll-mt-24 border-t border-sand-300 bg-sand-100 text-ink md:scroll-mt-[5.5rem]">
         <HomeMarketStripBackdrop />
         <div className="relative z-[1] mx-auto max-w-[1600px] px-4 py-12 sm:px-10 sm:py-14 lg:py-16">
           <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
-            <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-white sm:text-xl">{n.products}</h2>
-            <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-sky-500" aria-hidden />
+            <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
+            <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
           </div>
               <div className="-mx-1 flex items-stretch gap-2 px-1 sm:-mx-0 sm:gap-3 sm:px-0">
             <button
               type="button"
               onClick={() => scrollProductStrip("prev")}
               aria-label={pc.previousProducts}
-              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sky-500/35 bg-[#0c1524] text-sky-200 shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-sky-400/60 hover:bg-sky-500/20 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-[#4a6fa3] hover:bg-[#1a2842] hover:text-white hover:shadow-[0_12px_30px_-14px_rgba(26,40,66,0.5)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -1868,6 +1919,7 @@ export default function HomeClient({
                         subtitle={row.blurb}
                         imageSrc={row.image}
                         features={productStripRows[i] ?? productStripRows[0]!}
+                        imagePriority={i === 0}
                       />
                     </div>
                   );
@@ -1878,7 +1930,7 @@ export default function HomeClient({
               type="button"
               onClick={() => scrollProductStrip("next")}
               aria-label={pc.nextProducts}
-              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sky-500/35 bg-[#0c1524] text-sky-200 shadow-[0_12px_28px_-16px_rgba(0,0,0,0.6)] transition-colors hover:border-sky-400/60 hover:bg-sky-500/20 hover:text-white sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-[#4a6fa3] hover:bg-[#1a2842] hover:text-white hover:shadow-[0_12px_30px_-14px_rgba(26,40,66,0.5)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -1892,37 +1944,59 @@ export default function HomeClient({
       <section id="engineering" className="relative bg-sand-100 pb-16 pt-10 sm:pb-20 sm:pt-12">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.38]" />
         <div
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_85%_60%_at_0%_35%,rgba(231,106,57,0.055),transparent_52%),radial-gradient(ellipse_70%_45%_at_100%_80%,rgba(36,48,68,0.04),transparent_50%)]"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_85%_60%_at_0%_35%,rgba(239, 95, 23,0.055),transparent_52%),radial-gradient(ellipse_70%_45%_at_100%_80%,rgba(36,48,68,0.04),transparent_50%)]"
           aria-hidden
         />
 
         <div className="relative mx-auto max-w-[1600px] px-3 sm:px-10 lg:px-16">
           <div className="border-b border-ink/10 pb-16">
-            <div className="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-stretch lg:gap-12 xl:gap-16">
-              {/* Sol — görsel yığını */}
-              <div className="relative mx-auto w-full max-w-[min(92vw,480px)] lg:mx-0 lg:flex lg:max-w-none">
-                <div
-                  className="pointer-events-none absolute -left-px top-1/2 z-10 hidden h-[min(42%,220px)] w-[3px] -translate-y-1/2 rounded-full bg-gradient-to-b from-primary from-25% via-primary/45 to-transparent lg:block"
-                  aria-hidden
-                />
-                <div className="group relative overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex-1 lg:self-stretch">
-                  <div className="relative aspect-[16/10] w-full lg:h-full lg:aspect-auto">
-                    <video
-                      src={engineeringCollage.primaryVideo}
-                      className="absolute inset-0 h-full w-full object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
-                      aria-label={pc.engineeringAlt1}
-                      controls
-                      playsInline
-                      loop
-                      preload="auto"
-                    />
+            <div
+              className={`grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-stretch lg:gap-x-12 lg:gap-y-0 xl:gap-x-16 ${
+                dict.engineeringShowcase ? "lg:grid-rows-[auto_minmax(0,1fr)]" : ""
+              }`}
+            >
+              {/* Üst sol — CFD şeridi (kart aynı hizada videonun satırında başlar) */}
+              {dict.engineeringShowcase ? (
+                <div className="relative z-[2] mx-auto mb-6 flex w-full max-w-[min(92vw,480px)] flex-wrap items-end gap-3 md:max-w-[min(94vw,44rem)] sm:mb-7 sm:gap-4 lg:col-start-1 lg:row-start-1 lg:mx-0 lg:mb-8 lg:max-w-none">
+                  <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">CFD</h2>
+                  <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary md:max-w-[min(72vw,36rem)]" aria-hidden />
+                </div>
+              ) : null}
+
+              {/* Alt sol — video */}
+              <div
+                className={`relative mx-auto flex w-full max-w-[min(92vw,480px)] min-w-0 flex-col md:max-w-[min(94vw,44rem)] lg:mx-0 lg:max-w-none lg:min-h-0 ${
+                  dict.engineeringShowcase ? "lg:row-start-2" : "lg:row-start-1"
+                } lg:h-full`}
+              >
+                <div className="relative flex min-h-0 w-full flex-1 flex-col lg:min-h-0 lg:flex-row lg:max-w-none">
+                  <div
+                    className="pointer-events-none absolute -left-px top-1/2 z-10 hidden h-[min(42%,220px)] w-[3px] -translate-y-1/2 rounded-full bg-gradient-to-b from-primary from-25% via-primary/45 to-transparent lg:block"
+                    aria-hidden
+                  />
+                  <div className="group relative min-h-0 flex-1 overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex lg:min-h-0">
+                    <div className="relative aspect-[16/10] w-full min-h-0 lg:aspect-auto lg:h-full lg:min-h-[12rem]">
+                      <video
+                        src={engineeringCollage.primaryVideo}
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
+                        aria-label={pc.engineeringAlt1}
+                        controls
+                        playsInline
+                        loop
+                        preload="auto"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Sağ — cam panel + editoryal tipografi */}
-              <div className="relative min-w-0">
-                <div className="relative overflow-hidden rounded-[1.75rem] border border-white/55 bg-white/55 p-8 shadow-[0_28px_80px_-48px_rgba(15,22,36,0.3)] backdrop-blur-xl sm:p-10 lg:p-11 ring-1 ring-black/[0.04]">
+              {/* Sağ — cam panel + editoryal tipografi (masaüstünde videoyla üstten hizalı) */}
+              <div
+                className={`relative flex min-h-0 min-w-0 flex-col lg:col-start-2 lg:h-full ${
+                  dict.engineeringShowcase ? "lg:row-start-2" : "lg:row-start-1"
+                }`}
+              >
+                <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.75rem] border border-white/55 bg-white/55 p-8 shadow-[0_28px_80px_-48px_rgba(15,22,36,0.3)] backdrop-blur-xl sm:p-10 lg:p-11 ring-1 ring-black/[0.04]">
                   <div
                     className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
                     aria-hidden
@@ -1968,7 +2042,7 @@ export default function HomeClient({
                       {dict.pillars[0]?.tag ? (
                         <div className="relative">
                           <span className="inline-flex items-center gap-2 rounded-full border border-primary/18 bg-primary/[0.08] px-3.5 py-1.5 font-mono-eng text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-                            <span className="h-1 w-1 shrink-0 rounded-full bg-primary shadow-[0_0_0_4px_rgba(231,106,57,0.18)]" />
+                            <span className="h-1 w-1 shrink-0 rounded-full bg-primary shadow-[0_0_0_4px_rgba(239, 95, 23,0.18)]" />
                             {dict.pillars[0].tag}
                           </span>
                         </div>
@@ -2025,7 +2099,7 @@ export default function HomeClient({
                         {item.title}
                       </h3>
                       <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{cardDesc}</p>
-                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(231,106,57,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-[#e55a28]">
+                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(239, 95, 23,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep">
                         {ctaLabel}
                         <span aria-hidden className="text-[0.85em] font-normal">
                           →
@@ -2050,7 +2124,7 @@ export default function HomeClient({
             </div>
           </div>
 
-          {/* Referanslar — sektörlere göre renkli kart şeridi */}
+          {/* Referanslar — sektör kartları (koyu turuncu / koyu lacivert + ink) */}
           <div id="references" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem] lg:mt-16">
             {(() => {
               const refHead = referenceSectorHeadings(pc, n.links.references);
@@ -2109,7 +2183,7 @@ export default function HomeClient({
                         href={`/${locale}${item.href}`}
                         data-reference-card
                         aria-label={aria}
-                        className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-[#eceff4] shadow-[0_14px_40px_-28px_rgba(15,22,36,0.35)] ring-1 ring-black/[0.04] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_22px_48px_-28px_rgba(15,22,36,0.4)]"
+                        className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-sand-200 shadow-[0_14px_40px_-28px_rgba(15,22,36,0.35)] ring-1 ring-black/[0.04] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_22px_48px_-28px_rgba(15,22,36,0.4)]"
                       >
                         <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden">
                           <Image
@@ -2119,30 +2193,10 @@ export default function HomeClient({
                             className="object-cover object-center transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.03]"
                             sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 22vw"
                           />
-                          {theme === "orange" ? (
-                            <div
-                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#7a4f45]/48 from-0% via-[#7a4f45]/14 via-[38%] to-transparent to-[78%]"
-                              aria-hidden
-                            />
-                          ) : null}
-                          {theme === "sky" ? (
-                            <div
-                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#3d5a6b]/50 from-0% via-[#3d5a6b]/14 via-[38%] to-transparent to-[78%]"
-                              aria-hidden
-                            />
-                          ) : null}
-                          {theme === "emerald" ? (
-                            <div
-                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#2d5548]/50 from-0% via-[#2d5548]/14 via-[38%] to-transparent to-[78%]"
-                              aria-hidden
-                            />
-                          ) : null}
-                          {theme === "zinc" ? (
-                            <div
-                              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#4a5568]/50 from-0% via-[#4a5568]/14 via-[38%] to-transparent to-[78%]"
-                              aria-hidden
-                            />
-                          ) : null}
+                          <div
+                            className={`pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b ${styles.imageTint}`}
+                            aria-hidden
+                          />
                           <div className="pointer-events-none absolute inset-x-0 top-0 z-[2] flex justify-center pt-6 sm:pt-7">
                             <div
                               className={`flex h-[3.25rem] w-[3.25rem] shrink-0 items-center justify-center rounded-full shadow-[0_12px_28px_-6px_rgba(15,22,36,0.45)] ring-2 ring-white/85 ${styles.iconCircle}`}
@@ -2171,7 +2225,7 @@ export default function HomeClient({
                               </span>
                             </p>
                           ) : null}
-                          <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white shadow-[0_10px_22px_-12px_rgba(0,0,0,0.35)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-[#e55a28]">
+                          <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white shadow-[0_10px_22px_-12px_rgba(0,0,0,0.35)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep">
                             {explore}
                             <span aria-hidden className="text-[0.9em] font-normal">
                               →
@@ -2239,7 +2293,7 @@ export default function HomeClient({
                         {item.title}
                       </h3>
                       <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{pc.certificateCardDesc}</p>
-                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(231,106,57,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-[#e55a28]">
+                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(239, 95, 23,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep">
                         {ctaLabel}
                         <span aria-hidden className="text-[0.85em] font-normal">
                           →
@@ -2535,7 +2589,7 @@ export default function HomeClient({
 
                     <Link
                       href={`/${locale}/iletisim`}
-                      className="btn-3d btn-3d-primary group flex items-center justify-between rounded-2xl bg-primary px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-white transition-colors duration-300 hover:bg-[#e55a28]"
+                      className="btn-3d btn-3d-primary group flex items-center justify-between rounded-2xl bg-primary px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-white transition-colors duration-300 hover:bg-primary-deep"
                     >
                       {dict.finalCta.requestQuote}
                       <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">

@@ -107,116 +107,314 @@
   "homeBands": {
     "solutionStripFeatureRows": [
       [
-        { "label": "Fire scenarios", "desc": "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios." },
-        { "label": "Jet & natural", "desc": "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies." },
-        { "label": "EN 12101 ready", "desc": "Certified products and type-test documentation packaged for code reviews and inspections." }
+        {
+          "label": "Fire scenarios",
+          "desc": "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios."
+        },
+        {
+          "label": "Jet & natural",
+          "desc": "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies."
+        },
+        {
+          "label": "EN 12101 ready",
+          "desc": "Certified products and type-test documentation packaged for code reviews and inspections."
+        }
       ],
       [
-        { "label": "Room pressure", "desc": "Positive/negative pressure cascades and leakage control to protect critical spaces." },
-        { "label": "HEPA & fine", "desc": "Hospital, GMP, and food lines with filter classes and change-out strategies." },
-        { "label": "Monitoring", "desc": "DP, humidity, and particle sensing with logging and alarms for compliance." }
+        {
+          "label": "Comfort band",
+          "desc": "Stable temperature–humidity bands for offices, hotels, and retail."
+        },
+        {
+          "label": "Acoustics",
+          "desc": "Low-SPL selections and isolation for shafts, façades, and plant rooms."
+        },
+        {
+          "label": "Energy & VRF",
+          "desc": "Flow and pressure planning coordinated with heat pumps and VRF systems."
+        }
       ],
       [
-        { "label": "Stocking density", "desc": "Fresh-air and exhaust rates sized for headcount, season, and heat stress." },
-        { "label": "Gas & moisture", "desc": "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts." },
-        { "label": "Corrosion tough", "desc": "Materials and motor protection for wash-down and aggressive barn environments." }
+        {
+          "label": "Room pressure",
+          "desc": "Positive/negative pressure cascades and leakage control to protect critical spaces."
+        },
+        {
+          "label": "HEPA & fine",
+          "desc": "Hospital, GMP, and food lines with filter classes and change-out strategies."
+        },
+        {
+          "label": "Monitoring",
+          "desc": "DP, humidity, and particle sensing with logging and alarms for compliance."
+        }
       ],
       [
-        { "label": "Tunnel & poly", "desc": "Even velocity profiles and temperature stratification for tunnel and multi-span houses." },
-        { "label": "CO₂ & RH", "desc": "Ventilation paired with humidification or dehumidification for crop response." },
-        { "label": "Seasonal energy", "desc": "VFD and control strategies to trim fan energy across seasonal loads." }
+        {
+          "label": "Process airflow",
+          "desc": "High-temperature and abrasive-duty fans for drying, emission, and line pressure."
+        },
+        {
+          "label": "Dust & filters",
+          "desc": "Fan curves matched to dust loading, filter dp, and maintenance cycles."
+        },
+        {
+          "label": "Uptime",
+          "desc": "Standby fans, spare-part paths, and service access to shorten planned stops."
+        }
       ],
       [
-        { "label": "Panels & logic", "desc": "Central panels for fire, process, and comfort fans with clear interlocks." },
-        { "label": "BMS / SCADA", "desc": "Modbus, BACnet, and site-wide automation interfaces and sequences." },
-        { "label": "Commissioning", "desc": "Stepwise testing, handover scripts, and operator screens for maintenance." }
+        {
+          "label": "Hazard zones",
+          "desc": "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas."
+        },
+        {
+          "label": "Spark-free",
+          "desc": "Ex d/m/e and compatible drives for explosive gas and dust atmospheres."
+        },
+        {
+          "label": "ATEX dossier",
+          "desc": "Risk study, technical file, and site marking ready for audits."
+        }
       ],
       [
-        { "label": "Salt spray", "desc": "Coatings and stainless options aligned with C4/C5 marine exposure classes." },
-        { "label": "Class society", "desc": "Technical files and tests aligned with vessel class and offshore norms." },
-        { "label": "Redundancy", "desc": "N+1 layouts and access paths for offshore availability and service." }
+        {
+          "label": "Stocking density",
+          "desc": "Fresh-air and exhaust rates sized for headcount, season, and heat stress."
+        },
+        {
+          "label": "Gas & moisture",
+          "desc": "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts."
+        },
+        {
+          "label": "Corrosion tough",
+          "desc": "Materials and motor protection for wash-down and aggressive barn environments."
+        }
       ],
       [
-        { "label": "Smoke & visibility", "desc": "3D smoke modelling for jet fan placement, visibility, and temperature fields." },
-        { "label": "Heat & contaminants", "desc": "Distribution studies for kitchens, process exhaust, and waste heat." },
-        { "label": "Client-ready reports", "desc": "Summaries, sections, and visuals for investors, AHJs, and design reviews." }
+        {
+          "label": "Transformer heat",
+          "desc": "Cooling airflow sized for transformer and busbar losses with design margin."
+        },
+        {
+          "label": "Fire & smoke",
+          "desc": "Smoke exhaust and pressurisation coordinated with electrical infrastructure."
+        },
+        {
+          "label": "Utility specs",
+          "desc": "Product ranges aligned with OEM, utility, and IEC-oriented specifications."
+        }
       ],
       [
-        { "label": "Comfort band", "desc": "Stable temperature–humidity bands for offices, hotels, and retail." },
-        { "label": "Acoustics", "desc": "Low-SPL selections and isolation for shafts, façades, and plant rooms." },
-        { "label": "Energy & VRF", "desc": "Flow and pressure planning coordinated with heat pumps and VRF systems." }
+        {
+          "label": "Tunnel & poly",
+          "desc": "Even velocity profiles and temperature stratification for tunnel and multi-span houses."
+        },
+        {
+          "label": "CO₂ & RH",
+          "desc": "Ventilation paired with humidification or dehumidification for crop response."
+        },
+        {
+          "label": "Seasonal energy",
+          "desc": "VFD and control strategies to trim fan energy across seasonal loads."
+        }
       ],
       [
-        { "label": "Process airflow", "desc": "High-temperature and abrasive-duty fans for drying, emission, and line pressure." },
-        { "label": "Dust & filters", "desc": "Fan curves matched to dust loading, filter dp, and maintenance cycles." },
-        { "label": "Uptime", "desc": "Standby fans, spare-part paths, and service access to shorten planned stops." }
+        {
+          "label": "Panels & logic",
+          "desc": "Central panels for fire, process, and comfort fans with clear interlocks."
+        },
+        {
+          "label": "BMS / SCADA",
+          "desc": "Modbus, BACnet, and site-wide automation interfaces and sequences."
+        },
+        {
+          "label": "Commissioning",
+          "desc": "Stepwise testing, handover scripts, and operator screens for maintenance."
+        }
       ],
       [
-        { "label": "Transformer heat", "desc": "Cooling airflow sized for transformer and busbar losses with design margin." },
-        { "label": "Fire & smoke", "desc": "Smoke exhaust and pressurisation coordinated with electrical infrastructure." },
-        { "label": "Utility specs", "desc": "Product ranges aligned with OEM, utility, and IEC-oriented specifications." }
+        {
+          "label": "Shaft & wet rooms",
+          "desc": "Compact, low-noise units for central shafts, bathrooms, and kitchens."
+        },
+        {
+          "label": "Façade fit",
+          "desc": "Balcony and wall-mounted options that respect acoustic and architectural limits."
+        },
+        {
+          "label": "Energy labels",
+          "desc": "Efficiency classes aligned with residential regulations and running cost."
+        }
       ],
       [
-        { "label": "Hazard zones", "desc": "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas." },
-        { "label": "Spark-free", "desc": "Ex d/m/e and compatible drives for explosive gas and dust atmospheres." },
-        { "label": "ATEX dossier", "desc": "Risk study, technical file, and site marking ready for audits." }
+        {
+          "label": "Salt spray",
+          "desc": "Coatings and stainless options aligned with C4/C5 marine exposure classes."
+        },
+        {
+          "label": "Class society",
+          "desc": "Technical files and tests aligned with vessel class and offshore norms."
+        },
+        {
+          "label": "Redundancy",
+          "desc": "N+1 layouts and access paths for offshore availability and service."
+        }
       ],
       [
-        { "label": "Shaft & wet rooms", "desc": "Compact, low-noise units for central shafts, bathrooms, and kitchens." },
-        { "label": "Façade fit", "desc": "Balcony and wall-mounted options that respect acoustic and architectural limits." },
-        { "label": "Energy labels", "desc": "Efficiency classes aligned with residential regulations and running cost." }
+        {
+          "label": "Custom geometry",
+          "desc": "Project-specific casings for tight footprints, flanges, and duct transitions."
+        },
+        {
+          "label": "Materials & weld",
+          "desc": "Stainless, aluminium, specials; weld and NDT procedures on request."
+        },
+        {
+          "label": "FAT & traceability",
+          "desc": "Factory acceptance testing with certificates and full material traceability."
+        }
       ],
       [
-        { "label": "Custom geometry", "desc": "Project-specific casings for tight footprints, flanges, and duct transitions." },
-        { "label": "Materials & weld", "desc": "Stainless, aluminium, specials; weld and NDT procedures on request." },
-        { "label": "FAT & traceability", "desc": "Factory acceptance testing with certificates and full material traceability." }
+        {
+          "label": "Smoke & visibility",
+          "desc": "3D smoke modelling for jet fan placement, visibility, and temperature fields."
+        },
+        {
+          "label": "Heat & contaminants",
+          "desc": "Distribution studies for kitchens, process exhaust, and waste heat."
+        },
+        {
+          "label": "Client-ready reports",
+          "desc": "Summaries, sections, and visuals for investors, AHJs, and design reviews."
+        }
       ]
     ],
     "productStripFeatureRows": [
       [
-        { "label": "High performance", "desc": "High airflow and thrust tailored to the application." },
-        { "label": "Durable", "desc": "Reliable operation in industrial environments." },
-        { "label": "Quiet operation", "desc": "Lower noise for comfortable spaces." }
+        {
+          "label": "High performance",
+          "desc": "High airflow and thrust tailored to the application."
+        },
+        {
+          "label": "Durable",
+          "desc": "Reliable operation in industrial environments."
+        },
+        {
+          "label": "Quiet operation",
+          "desc": "Lower noise for comfortable spaces."
+        }
       ],
       [
-        { "label": "Energy efficiency", "desc": "Optimized consumption across the system." },
-        { "label": "Smart control", "desc": "Integrated automation and monitoring." },
-        { "label": "Flexible solutions", "desc": "Adaptable layouts for different buildings." }
+        {
+          "label": "Energy efficiency",
+          "desc": "Optimized consumption across the system."
+        },
+        {
+          "label": "Smart control",
+          "desc": "Integrated automation and monitoring."
+        },
+        {
+          "label": "Flexible solutions",
+          "desc": "Adaptable layouts for different buildings."
+        }
       ],
       [
-        { "label": "High capacity", "desc": "Cooling and heating power for large loads." },
-        { "label": "Reliable performance", "desc": "Stable seasonal operation." },
-        { "label": "All-season use", "desc": "Designed for year-round comfort and process needs." }
+        {
+          "label": "High capacity",
+          "desc": "Cooling and heating power for large loads."
+        },
+        {
+          "label": "Reliable performance",
+          "desc": "Stable seasonal operation."
+        },
+        {
+          "label": "All-season use",
+          "desc": "Designed for year-round comfort and process needs."
+        }
       ],
       [
-        { "label": "Modular design", "desc": "Configurable air handling building blocks." },
-        { "label": "High efficiency", "desc": "Heat recovery and fan efficiency options." },
-        { "label": "Smart monitoring", "desc": "Visibility for operators and maintenance teams." }
+        {
+          "label": "Modular design",
+          "desc": "Configurable air handling building blocks."
+        },
+        {
+          "label": "High efficiency",
+          "desc": "Heat recovery and fan efficiency options."
+        },
+        {
+          "label": "Smart monitoring",
+          "desc": "Visibility for operators and maintenance teams."
+        }
       ],
       [
-        { "label": "Even distribution", "desc": "Homogeneous airflow in the served zone." },
-        { "label": "Aesthetic design", "desc": "Architect-friendly grilles and diffusers." },
-        { "label": "Easy installation", "desc": "Practical mounting and commissioning on site." }
+        {
+          "label": "Even distribution",
+          "desc": "Homogeneous airflow in the served zone."
+        },
+        {
+          "label": "Aesthetic design",
+          "desc": "Architect-friendly grilles and diffusers."
+        },
+        {
+          "label": "Easy installation",
+          "desc": "Practical mounting and commissioning on site."
+        }
       ],
       [
-        { "label": "Filter classes", "desc": "From coarse pre-filtration to fine and HEPA-grade options." },
-        { "label": "Indoor air quality", "desc": "Cleaner supply air for comfort and critical applications." },
-        { "label": "Standards alignment", "desc": "Selections aligned with hygiene and project specifications." }
+        {
+          "label": "Filter classes",
+          "desc": "From coarse pre-filtration to fine and HEPA-grade options."
+        },
+        {
+          "label": "Indoor air quality",
+          "desc": "Cleaner supply air for comfort and critical applications."
+        },
+        {
+          "label": "Standards alignment",
+          "desc": "Selections aligned with hygiene and project specifications."
+        }
       ],
       [
-        { "label": "Mounting & hardware", "desc": "Dampers, supports, and accessories that complete the system." },
-        { "label": "Wide compatibility", "desc": "Components matched to fans, ducts, and air devices." },
-        { "label": "Practical logistics", "desc": "Straightforward sourcing for site schedules." }
+        {
+          "label": "Mounting & hardware",
+          "desc": "Dampers, supports, and accessories that complete the system."
+        },
+        {
+          "label": "Wide compatibility",
+          "desc": "Components matched to fans, ducts, and air devices."
+        },
+        {
+          "label": "Practical logistics",
+          "desc": "Straightforward sourcing for site schedules."
+        }
       ],
       [
-        { "label": "Control & panels", "desc": "Monitoring and control hardware for ventilation plants." },
-        { "label": "BMS integration", "desc": "Signals and interfaces suited to building automation." },
-        { "label": "Field-ready kits", "desc": "Practical layouts for installation and commissioning." }
+        {
+          "label": "Control & panels",
+          "desc": "Monitoring and control hardware for ventilation plants."
+        },
+        {
+          "label": "BMS integration",
+          "desc": "Signals and interfaces suited to building automation."
+        },
+        {
+          "label": "Field-ready kits",
+          "desc": "Practical layouts for installation and commissioning."
+        }
       ],
       [
-        { "label": "Vibration suspension", "desc": "Springs and isolators tuned to equipment loads." },
-        { "label": "Noise control", "desc": "Reduced structure-borne and airborne noise paths." },
-        { "label": "Decoupled supports", "desc": "Stable equipment mounting with controlled transfer." }
+        {
+          "label": "Vibration suspension",
+          "desc": "Springs and isolators tuned to equipment loads."
+        },
+        {
+          "label": "Noise control",
+          "desc": "Reduced structure-borne and airborne noise paths."
+        },
+        {
+          "label": "Decoupled supports",
+          "desc": "Stable equipment mounting with controlled transfer."
+        }
       ]
     ]
   },
@@ -533,8 +731,8 @@
         "body": "We expand domestic production and service coverage so engineering support is within reach everywhere."
       }
     ],
-    "goalsAsideImage": "/images/corporate/novves-company-profile-goals-aside-v2.png?v=1",
-    "goalsAsideImageAlt": "NOVVES — abstract airflow and engineering illustration",
+    "goalsAsideImage": "/images/page-hero/ekibimiz-company-profile-card.png?v=2",
+    "goalsAsideImageAlt": "NOVVES team",
     "bannerTitle": "We keep pace with change—and help shape what comes next.",
     "bannerLine1": "We combine deep experience from the past with the demands of today.",
     "bannerLine2": "Together we prepare for tomorrow’s ventilation and life-safety expectations.",
@@ -553,7 +751,7 @@
     },
     {
       "href": "/kurumsal/ekibimiz",
-      "image": "/images/page-hero/ekibimiz.png?v=2",
+      "image": "/images/page-hero/ekibimiz-company-profile-card.png?v=1",
       "title": "Our Team"
     }
   ]

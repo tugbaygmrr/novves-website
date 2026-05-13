@@ -50,6 +50,32 @@ function getClientIp(request: NextRequest): string {
   );
 }
 
+function loginErrorMessage(err: unknown): string {
+  if (err instanceof Error && err.message === "JWT_SECRET_REQUIRED") {
+    return process.env.NODE_ENV === "production"
+      ? "Panel yapılandırması eksik (JWT_SECRET). Sunucu ortam değişkenlerini kontrol edin."
+      : "JWT_SECRET tanımlı değil veya 32 karakterden kısa. .env.local içinde en az 32 karakter girin.";
+  }
+  const code =
+    typeof err === "object" && err !== null && "code" in err
+      ? String((err as { code: unknown }).code)
+      : "";
+  const msg = err instanceof Error ? err.message : "";
+  if (code === "42P01" || msg.includes("does not exist")) {
+    return "Veritabanında admin tabloları yok veya eksik (admin_users). Şema kurulumunu kontrol edin.";
+  }
+  if (code === "ECONNREFUSED" || code === "ETIMEDOUT" || code === "ENOTFOUND") {
+    return "Veritabanına bağlanılamıyor. DATABASE_URL ve sunucu erişimini kontrol edin.";
+  }
+  if (code === "28P01") {
+    return "Veritabanı kullanıcı adı/şifresi hatalı (DATABASE_URL).";
+  }
+  if (process.env.NODE_ENV !== "production" && msg) {
+    return `Sunucu hatası: ${msg}`;
+  }
+  return "Sunucu hatası";
+}
+
 export async function POST(request: NextRequest) {
   const ip = getClientIp(request);
   const userAgent = request.headers.get("user-agent") ?? "";
@@ -151,7 +177,10 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (err) {
     console.error(`[${new Date().toISOString()}] Login error:`, err);
-    return NextResponse.json({ error: "Sunucu hatası" }, { status: 500 });
+    return NextResponse.json(
+      { error: loginErrorMessage(err) },
+      { status: 500 }
+    );
   }
 }
 

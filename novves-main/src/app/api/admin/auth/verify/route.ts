@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   verifyToken,
   createAccessToken,
-  setAuthCookies,
   getCookieValue,
   COOKIE_ACCESS_TOKEN,
   COOKIE_REFRESH_TOKEN,
@@ -29,22 +28,30 @@ export async function GET(request: NextRequest) {
   if (refreshToken) {
     const payload = verifyToken(refreshToken);
     if (payload && payload.type === "refresh") {
-      // Issue a new access token
-      const newAccessToken = createAccessToken(payload.username);
+      try {
+        const newAccessToken = createAccessToken(
+          payload.username,
+          payload.role
+        );
 
-      const response = NextResponse.json({
-        authenticated: true,
-        username: payload.username,
-      });
+        const response = NextResponse.json({
+          authenticated: true,
+          username: payload.username,
+        });
 
-      // Set new access token cookie
-      const secure = process.env.NODE_ENV === "production";
-      response.headers.append(
-        "Set-Cookie",
-        `${COOKIE_ACCESS_TOKEN}=${encodeURIComponent(newAccessToken)}; Path=/; Max-Age=${15 * 60}; SameSite=Strict; HttpOnly${secure ? "; Secure" : ""}`
-      );
+        const secure = process.env.NODE_ENV === "production";
+        response.headers.append(
+          "Set-Cookie",
+          `${COOKIE_ACCESS_TOKEN}=${encodeURIComponent(newAccessToken)}; Path=/; Max-Age=${15 * 60}; SameSite=Strict; HttpOnly${secure ? "; Secure" : ""}`
+        );
 
-      return response;
+        return response;
+      } catch (e) {
+        if (e instanceof Error && e.message === "JWT_SECRET_REQUIRED") {
+          return NextResponse.json({ authenticated: false }, { status: 503 });
+        }
+        throw e;
+      }
     }
   }
 

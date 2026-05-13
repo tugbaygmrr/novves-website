@@ -1018,7 +1018,7 @@ export default async function SosyalMedya({
           className="absolute left-[-10%] top-[-15%] h-[26rem] w-[26rem] rounded-full blur-3xl"
           style={{
             background:
-              "radial-gradient(circle, rgba(255,107,53,0.28) 0%, rgba(255,107,53,0) 72%)",
+              "radial-gradient(circle, rgba(239, 95, 23,0.28) 0%, rgba(239, 95, 23,0) 72%)",
           }}
         />
         <div
@@ -1048,7 +1048,7 @@ export default async function SosyalMedya({
           <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
             <div className="max-w-none">
               <div className="inline-flex items-center gap-3 rounded-full border border-white/12 bg-white/6 px-4 py-2 backdrop-blur-md">
-                <span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_14px_rgba(255,107,53,0.9)]" />
+                <span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_14px_rgba(239, 95, 23,0.9)]" />
                 <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white/80">
                   {copy.heroKicker}
                 </span>
@@ -1069,7 +1069,7 @@ export default async function SosyalMedya({
               <div className="mt-10 flex flex-wrap gap-3">
                 <Link
                   href={`/${locale}/iletisim`}
-                  className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e55a28] hover:shadow-[0_18px_40px_-18px_rgba(255,107,53,0.85)]"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-deep hover:shadow-[0_18px_40px_-18px_rgba(239, 95, 23,0.85)]"
                 >
                   {copy.primaryCta}
                   <svg
@@ -1207,7 +1207,7 @@ export default async function SosyalMedya({
                       {item.title}
                     </h3>
                   </div>
-                  <div className="mt-1 h-2.5 w-2.5 rounded-full bg-primary shadow-[0_0_18px_rgba(255,107,53,0.45)]" />
+                  <div className="mt-1 h-2.5 w-2.5 rounded-full bg-primary shadow-[0_0_18px_rgba(239, 95, 23,0.45)]" />
                 </div>
                 <p className="mt-4 max-w-2xl text-sm leading-7 text-secondary/68">
                   {item.description}
@@ -1342,7 +1342,7 @@ export default async function SosyalMedya({
           <div className="flex flex-wrap gap-3">
             <Link
               href={`/${locale}/iletisim`}
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e55a28]"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-deep"
             >
               {copy.footerPrimary}
             </Link>

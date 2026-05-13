@@ -122,7 +122,7 @@ export function HubTreePanel({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={href}
-              className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg shadow-primary/18 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/28"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg shadow-primary/18 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/28"
             >
               {openLabel}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

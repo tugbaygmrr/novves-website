@@ -375,7 +375,7 @@ export default async function KisiselVerilerinKorunmasi({
             </Link>
             <Link
               href={`/${locale}/iletisim`}
-              className="rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e55a28]"
+              className="rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep"
             >
               İletişim
             </Link>

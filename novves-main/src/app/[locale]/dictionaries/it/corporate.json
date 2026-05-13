@@ -313,6 +313,31 @@
     "downloadPdf": "Scarica PDF",
     "groups": [
       {
+        "title": "Certificati di sistema",
+        "items": [
+          {
+            "name": "Sistemi di gestione qualità",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "Salute e sicurezza sul lavoro",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "Sistema ambientale",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "Sistema gestione sicurezza informazioni",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "Certificato competenza servizio",
         "items": [
           {
@@ -349,31 +374,6 @@
             "name": "Certificato TRM Integra",
             "code": "CE",
             "pdf": "/certificate/CE-sertifikasi.pdf"
-          }
-        ]
-      },
-      {
-        "title": "Certificati di sistema",
-        "items": [
-          {
-            "name": "Sistemi di gestione qualità",
-            "code": "ISO 9001",
-            "pdf": "/certificate/iso-9001.pdf"
-          },
-          {
-            "name": "Salute e sicurezza sul lavoro",
-            "code": "ISO 45001",
-            "pdf": "/certificate/iso-45001.pdf"
-          },
-          {
-            "name": "Sistema ambientale",
-            "code": "ISO 14001",
-            "pdf": "/certificate/iso-14001.pdf"
-          },
-          {
-            "name": "Sistema gestione sicurezza informazioni",
-            "code": "ISO/IEC 27001:2022",
-            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
           }
         ]
       },

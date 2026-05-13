@@ -757,7 +757,7 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
       <section className="relative overflow-hidden bg-dark py-20">
         <div
           className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
         />
         <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{copy.contactTag}</p>
@@ -779,7 +779,7 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
             </a>
             <Link
               href={`/${locale}/iletisim`}
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
             >
               {copy.contactForm}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>

@@ -313,6 +313,31 @@
     "downloadPdf": "Atsisiųskite PDF",
     "groups": [
       {
+        "title": "Sistemos sertifikatai",
+        "items": [
+          {
+            "name": "Kokybės vadybos sistemos",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "Darbo sauga ir sveikata",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "Aplinkos vadybos sistema",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "Informacijos saugumo valdymo sistema",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "Paslaugų kompetencijos sertifikatas",
         "items": [
           {
@@ -349,31 +374,6 @@
             "name": "TRM Integra sertifikatas",
             "code": "CE",
             "pdf": "/certificate/CE-sertifikasi.pdf"
-          }
-        ]
-      },
-      {
-        "title": "Sistemos sertifikatai",
-        "items": [
-          {
-            "name": "Kokybės vadybos sistemos",
-            "code": "ISO 9001",
-            "pdf": "/certificate/iso-9001.pdf"
-          },
-          {
-            "name": "Darbo sauga ir sveikata",
-            "code": "ISO 45001",
-            "pdf": "/certificate/iso-45001.pdf"
-          },
-          {
-            "name": "Aplinkos vadybos sistema",
-            "code": "ISO 14001",
-            "pdf": "/certificate/iso-14001.pdf"
-          },
-          {
-            "name": "Informacijos saugumo valdymo sistema",
-            "code": "ISO/IEC 27001:2022",
-            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
           }
         ]
       },

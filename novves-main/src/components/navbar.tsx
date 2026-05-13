@@ -469,7 +469,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                             setOpenMenu(null);
                             setPreviewHref(null);
                           }}
-                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-[#e55a28]"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary-deep"
                         >
                           {dict.navbar.viewAll}
                           <svg

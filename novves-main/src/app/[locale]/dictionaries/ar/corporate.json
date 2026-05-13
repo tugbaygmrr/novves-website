@@ -11,10 +11,22 @@
     "heroTitle2": "",
     "heroDesc": "بخبرة صناعية تمتد إلى 20 عاماً وقدرة إنتاجية خاصة بنا، نحن العلامة الرائدة في تركيا في أنظمة المراوح الصناعية.",
     "stats": [
-      { "value": "1,200+", "label": "تنوعات المنتجات" },
-      { "value": "10+", "label": "سنوات الخبرة" },
-      { "value": "50+", "label": "دول التصدير" },
-      { "value": "24/7", "label": "الدعم الفني" }
+      {
+        "value": "1,200+",
+        "label": "تنوعات المنتجات"
+      },
+      {
+        "value": "10+",
+        "label": "سنوات الخبرة"
+      },
+      {
+        "value": "50+",
+        "label": "دول التصدير"
+      },
+      {
+        "value": "24/7",
+        "label": "الدعم الفني"
+      }
     ],
     "introTag": "من نحن",
     "introTitle1": "تجمع NOVVES حركة الهواء",
@@ -90,9 +102,18 @@
     "heroDesc": "رؤية زكي قادِر أوزونتورك وقصة NOVVES.",
     "ceoTitle": "رئيس مجلس الإدارة والرئيس التنفيذي",
     "highlights": [
-      { "value": "1,200+", "label": "تنوعات المنتجات" },
-      { "value": "50+", "label": "دول التصدير" },
-      { "value": "10+", "label": "سنوات الخبرة" }
+      {
+        "value": "1,200+",
+        "label": "تنوعات المنتجات"
+      },
+      {
+        "value": "50+",
+        "label": "دول التصدير"
+      },
+      {
+        "value": "10+",
+        "label": "سنوات الخبرة"
+      }
     ],
     "greeting": "زائرنا الكريم،",
     "messageP1": "مرحباً بك في عائلة NOVVES، يسعدنا وجودك هنا.",
@@ -118,10 +139,22 @@
     "heroTitleHighlight": "الفريق",
     "heroDesc": "فريق NOVVES الديناميكي لا ينتج مراوح فقط. يقدم أنظمة تنقذ الأرواح وحلولاً تمنح النفس وهندسة تلهم الثقة.",
     "stats": [
-      { "value": "2", "label": "المؤسسان المشاركان" },
-      { "value": "11", "label": "أعضاء فريق خبراء" },
-      { "value": "10+", "label": "سنوات الخبرة" },
-      { "value": "3", "label": "وحدات التشغيل" }
+      {
+        "value": "2",
+        "label": "المؤسسان المشاركان"
+      },
+      {
+        "value": "11",
+        "label": "أعضاء فريق خبراء"
+      },
+      {
+        "value": "10+",
+        "label": "سنوات الخبرة"
+      },
+      {
+        "value": "3",
+        "label": "وحدات التشغيل"
+      }
     ],
     "leadershipTag": "المجلس التنفيذي",
     "leadershipTitle": "القيادة",
@@ -259,59 +292,143 @@
     "heroDesc": "شهاداتنا التي توثق امتثالنا للمعايير الوطنية والدولية هي دليل ملموس على التزامنا بالجودة.",
     "accreditationLabel": "الاعتماد والمعايير",
     "statsItems": [
-      { "value": "17+", "label": "شهادات" },
-      { "value": "ISO", "label": "وثائق النظام" },
-      { "value": "ATEX", "label": "معتمد مقاوم للانفجار" },
-      { "value": "CE", "label": "متوافق EN 12101-3" }
+      {
+        "value": "17+",
+        "label": "شهادات"
+      },
+      {
+        "value": "ISO",
+        "label": "وثائق النظام"
+      },
+      {
+        "value": "ATEX",
+        "label": "معتمد مقاوم للانفجار"
+      },
+      {
+        "value": "CE",
+        "label": "متوافق EN 12101-3"
+      }
     ],
     "documentSuffix": "مستندات",
     "downloadPdf": "تنزيل PDF",
     "groups": [
       {
+        "title": "شهادات الأنظمة",
+        "items": [
+          {
+            "name": "أنظمة إدارة الجودة",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "الصحة والسلامة المهنية",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "نظام الإدارة البيئية",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "نظام إدارة أمن المعلومات",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "شهادة كفاءة الخدمة",
         "items": [
-          { "name": "شهادة كفاءة الخدمة TSE", "code": "TSE-HYB", "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf" }
+          {
+            "name": "شهادة كفاءة الخدمة TSE",
+            "code": "TSE-HYB",
+            "pdf": "/certificate/tse-novves-hizmet-yeterlilik-belgesi.pdf"
+          }
         ]
       },
       {
         "title": "شهادات امتثال المنتجات",
         "items": [
-          { "name": "مراوح الحمام", "code": "TS EN 60355-2", "pdf": "/certificate/ts60355-2.pdf" },
-          { "name": "شهادة TSE K 453", "code": "TSE K 453", "pdf": "/certificate/tse-k-453.PDF" },
-          { "name": "استعادة الحرارة", "code": "TSE K 381", "pdf": "/certificate/tse-k-381.PDF" },
-          { "name": "مروحة الملجأ", "code": "TSE K 196", "pdf": "/certificate/tse-k-196.PDF" },
-          { "name": "شهادة TRM Integra", "code": "CE", "pdf": "/certificate/CE-sertifikasi.pdf" }
-        ]
-      },
-      {
-        "title": "شهادات الأنظمة",
-        "items": [
-          { "name": "أنظمة إدارة الجودة", "code": "ISO 9001", "pdf": "/certificate/iso-9001.pdf" },
-          { "name": "الصحة والسلامة المهنية", "code": "ISO 45001", "pdf": "/certificate/iso-45001.pdf" },
-          { "name": "نظام الإدارة البيئية", "code": "ISO 14001", "pdf": "/certificate/iso-14001.pdf" },
-          { "name": "نظام إدارة أمن المعلومات", "code": "ISO/IEC 27001:2022", "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf" }
+          {
+            "name": "مراوح الحمام",
+            "code": "TS EN 60355-2",
+            "pdf": "/certificate/ts60355-2.pdf"
+          },
+          {
+            "name": "شهادة TSE K 453",
+            "code": "TSE K 453",
+            "pdf": "/certificate/tse-k-453.PDF"
+          },
+          {
+            "name": "استعادة الحرارة",
+            "code": "TSE K 381",
+            "pdf": "/certificate/tse-k-381.PDF"
+          },
+          {
+            "name": "مروحة الملجأ",
+            "code": "TSE K 196",
+            "pdf": "/certificate/tse-k-196.PDF"
+          },
+          {
+            "name": "شهادة TRM Integra",
+            "code": "CE",
+            "pdf": "/certificate/CE-sertifikasi.pdf"
+          }
         ]
       },
       {
         "title": "تقرير فحص اختبار حمل الثلج",
         "items": [
-          { "name": "تقرير فحص اختبار حمل الثلج", "code": "EN 12101-3 Annex E", "pdf": "/certificate/kar-yuku-testi.pdf" }
+          {
+            "name": "تقرير فحص اختبار حمل الثلج",
+            "code": "EN 12101-3 Annex E",
+            "pdf": "/certificate/kar-yuku-testi.pdf"
+          }
         ]
       },
       {
         "title": "شهادات ATEX",
         "items": [
-          { "name": "شهادة المراوح المحورية المقاومة للانفجار", "code": "ATEX", "pdf": "/certificate/aksiyal-exproof.pdf" },
-          { "name": "شهادة المراوح الشعاعية المقاومة للانفجار", "code": "ATEX", "pdf": "/certificate/radyal-exproof.pdf" }
+          {
+            "name": "شهادة المراوح المحورية المقاومة للانفجار",
+            "code": "ATEX",
+            "pdf": "/certificate/aksiyal-exproof.pdf"
+          },
+          {
+            "name": "شهادة المراوح الشعاعية المقاومة للانفجار",
+            "code": "ATEX",
+            "pdf": "/certificate/radyal-exproof.pdf"
+          }
         ]
       },
       {
         "title": "وثائق CE (EN 12101-3)",
         "items": [
-          { "name": "شهادة CE لمروحة النفث الشعاعي F300/2H", "code": "RA", "description": "محرك WAT / محرك WEG", "pdf": "/certificate/RA-F300-WEG.pdf" },
-          { "name": "شهادة CE لمروحة النفث المحورية F300/2H", "code": "JA", "description": "محرك WAT / محرك WEG", "pdf": "/certificate/JA-F300-WEG.pdf" },
-          { "name": "شهادة CE للمروحة المحورية المغطاة F300/2H", "code": "TAA", "description": "محرك WAT / محرك WEG", "pdf": "/certificate/TAA-F300-WEG.pdf" },
-          { "name": "شهادة CE للمراوح السقفية والخلوية المحورية F300/2H", "code": "RAA-CAA", "description": "محرك WAT / محرك WEG", "pdf": "/certificate/RAA-CAA-F300-WEG.pdf" }
+          {
+            "name": "شهادة CE لمروحة النفث الشعاعي F300/2H",
+            "code": "RA",
+            "description": "محرك WAT / محرك WEG",
+            "pdf": "/certificate/RA-F300-WEG.pdf"
+          },
+          {
+            "name": "شهادة CE لمروحة النفث المحورية F300/2H",
+            "code": "JA",
+            "description": "محرك WAT / محرك WEG",
+            "pdf": "/certificate/JA-F300-WEG.pdf"
+          },
+          {
+            "name": "شهادة CE للمروحة المحورية المغطاة F300/2H",
+            "code": "TAA",
+            "description": "محرك WAT / محرك WEG",
+            "pdf": "/certificate/TAA-F300-WEG.pdf"
+          },
+          {
+            "name": "شهادة CE للمراوح السقفية والخلوية المحورية F300/2H",
+            "code": "RAA-CAA",
+            "description": "محرك WAT / محرك WEG",
+            "pdf": "/certificate/RAA-CAA-F300-WEG.pdf"
+          }
         ]
       }
     ],

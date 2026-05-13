@@ -126,7 +126,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="absolute inset-0 bg-gradient-to-b from-[#334866] via-[#263a57] to-[#1c2f48]" />
         <div
           className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.06]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
         />
         <div
           className="pointer-events-none absolute -right-32 bottom-[-120px] h-[420px] w-[420px] rounded-full opacity-[0.09]"
@@ -154,7 +154,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <Link
                 key={cat.label}
                 href={`/${locale}/urunler/${cat.slug}`}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-[0_18px_42px_-34px_rgba(8,14,24,0.7)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/35 hover:bg-white/[0.12] hover:shadow-[0_24px_50px_-28px_rgba(255,107,53,0.22)]"
+                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-[0_18px_42px_-34px_rgba(8,14,24,0.7)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/35 hover:bg-white/[0.12] hover:shadow-[0_24px_50px_-28px_rgba(239, 95, 23,0.22)]"
               >
                 <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-primary/80 via-primary/30 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
                 <span className="mb-4 block text-2xl font-black text-white/[0.12]">
@@ -178,7 +178,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <section className="relative overflow-hidden bg-dark py-20">
         <div
           className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
-          style={{ background: "radial-gradient(circle, #FF6B35, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
         />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">{s.technicalSupport}</p>
@@ -202,7 +202,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             </a>
             <Link
               href={`/${locale}/iletisim`}
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-[#e55a28] hover:shadow-xl hover:shadow-primary/30"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
             >
               {s.technicalSupportRequest}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

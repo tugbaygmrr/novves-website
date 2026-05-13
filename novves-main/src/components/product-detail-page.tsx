@@ -125,7 +125,7 @@ export function ProductDetailPage({
             </Link>
             <Link
               href={`/${locale}/iletisim`}
-              className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e55a28]"
+              className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep"
             >
               {dict.shared.technicalSupportRequest}
             </Link>

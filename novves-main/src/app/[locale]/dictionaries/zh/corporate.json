@@ -313,6 +313,31 @@
     "downloadPdf": "下载PDF",
     "groups": [
       {
+        "title": "体系证书",
+        "items": [
+          {
+            "name": "质量管理体系",
+            "code": "ISO 9001",
+            "pdf": "/certificate/iso-9001.pdf"
+          },
+          {
+            "name": "职业健康与安全",
+            "code": "ISO 45001",
+            "pdf": "/certificate/iso-45001.pdf"
+          },
+          {
+            "name": "环境管理体系",
+            "code": "ISO 14001",
+            "pdf": "/certificate/iso-14001.pdf"
+          },
+          {
+            "name": "信息安全管理体系",
+            "code": "ISO/IEC 27001:2022",
+            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
+          }
+        ]
+      },
+      {
         "title": "服务能力证书",
         "items": [
           {
@@ -349,31 +374,6 @@
             "name": "TRM Integra 证书",
             "code": "CE",
             "pdf": "/certificate/CE-sertifikasi.pdf"
-          }
-        ]
-      },
-      {
-        "title": "体系证书",
-        "items": [
-          {
-            "name": "质量管理体系",
-            "code": "ISO 9001",
-            "pdf": "/certificate/iso-9001.pdf"
-          },
-          {
-            "name": "职业健康与安全",
-            "code": "ISO 45001",
-            "pdf": "/certificate/iso-45001.pdf"
-          },
-          {
-            "name": "环境管理体系",
-            "code": "ISO 14001",
-            "pdf": "/certificate/iso-14001.pdf"
-          },
-          {
-            "name": "信息安全管理体系",
-            "code": "ISO/IEC 27001:2022",
-            "pdf": "/certificate/bilgi-guvenligi-yonetim-sistemi-ISO-IEC-27001-BQS-2025.pdf"
           }
         ]
       },
