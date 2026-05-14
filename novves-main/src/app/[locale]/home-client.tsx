@@ -359,8 +359,8 @@ function productSlugToFallbackLabel(slug: string): string {
 
 /** Ürün şeridi: lg+ ok beş kartlık sayfa; daha dar ekranda tek kart adımı */
 const PRODUCT_STRIP_PAGE_CARD_COUNT = 5;
-/** Çözüm şeridi: lg+ daha geniş kart (satırda 4) */
-const SOLUTION_STRIP_PAGE_CARD_COUNT = 4;
+/** Çözüm şeridi: lg+ ok beş kartlık sayfa (ürün şeridi ile aynı) */
+const SOLUTION_STRIP_PAGE_CARD_COUNT = 5;
 
 function scrollHorizontalStrip(
   container: HTMLElement | null,
@@ -1073,34 +1073,38 @@ function resolveReferenceSectorTheme(index: number, raw?: string): ReferenceSect
   return REFERENCE_SECTOR_THEME_CYCLE[index % 4]!;
 }
 
-/** Turuncu ve lacivert kutular — primary/dark ile aynı aile, kutularda daha koyu tonlar */
+/** Sektör kartları — lacivert tonları, koyu gri, turuncu vurgu */
 const REFERENCE_SECTOR_THEME_STYLES: Record<
   ReferenceSectorTheme,
-  { footer: string; iconCircle: string; imageTint: string }
+  { footer: string; iconCircle: string; imageTint: string; tone: "onDark" | "onLight" }
 > = {
   orange: {
-    footer: "bg-[#8f2f0b]",
+    footer: "bg-[#152a45]",
+    tone: "onDark",
     iconCircle:
-      "bg-[#8f2f0b] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
-    imageTint: "from-[#8f2f0b]/52 from-0% via-[#8f2f0b]/16 via-[38%] to-transparent to-[78%]",
+      "bg-primary ring-2 ring-white/55 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-[#152a45]/50 from-0% via-[#152a45]/14 via-[38%] to-transparent to-[78%]",
   },
   sky: {
-    footer: "bg-[#001a33]",
+    footer: "bg-[#2c3544]",
+    tone: "onDark",
     iconCircle:
-      "bg-[#001a33] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
-    imageTint: "from-[#001a33]/52 from-0% via-[#001a33]/16 via-[38%] to-transparent to-[78%]",
+      "bg-primary ring-2 ring-white/55 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-[#2c3544]/46 from-0% via-[#2c3544]/12 via-[38%] to-transparent to-[78%]",
   },
   emerald: {
-    footer: "bg-ink",
+    footer: "bg-[#3a4049]",
+    tone: "onDark",
     iconCircle:
-      "bg-ink ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
-    imageTint: "from-ink/48 from-0% via-ink/14 via-[38%] to-transparent to-[78%]",
+      "bg-primary ring-2 ring-white/55 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-[#2f343c]/46 from-0% via-[#2f343c]/12 via-[38%] to-transparent to-[78%]",
   },
   zinc: {
-    footer: "bg-[#5c2007]",
+    footer: "bg-[#334d6b]",
+    tone: "onDark",
     iconCircle:
-      "bg-[#5c2007] ring-2 ring-white/40 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
-    imageTint: "from-[#5c2007]/52 from-0% via-[#5c2007]/16 via-[38%] to-transparent to-[78%]",
+      "bg-primary ring-2 ring-white/55 shadow-[0_12px_28px_-12px_rgba(15,22,36,0.38)]",
+    imageTint: "from-[#334d6b]/48 from-0% via-[#334d6b]/14 via-[38%] to-transparent to-[78%]",
   },
 };
 
@@ -1219,9 +1223,9 @@ function HomeSolutionShowcaseCard({
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group flex h-full min-h-[400px] w-full flex-col overflow-hidden rounded-xl border border-sand-300 bg-white shadow-[0_14px_40px_-28px_rgba(0,56,107,0.14)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_22px_52px_-28px_rgba(239,95,23,0.22)] sm:min-h-[470px]"
+      className="group flex h-full min-h-[320px] w-full flex-col overflow-hidden rounded-xl border border-sand-300 bg-white shadow-[0_14px_40px_-28px_rgba(0,56,107,0.14)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_22px_52px_-28px_rgba(239,95,23,0.22)] sm:min-h-[360px]"
     >
-      <div className="relative h-[158px] w-full shrink-0 overflow-hidden bg-sand-100 sm:h-[176px]">
+      <div className="relative h-[128px] w-full shrink-0 overflow-hidden bg-sand-100 sm:h-[142px]">
         <Image
           src={heroSrc}
           alt=""
@@ -1233,26 +1237,26 @@ function HomeSolutionShowcaseCard({
         />
       </div>
       <div
-        className="flex min-h-0 flex-1 flex-col gap-2 border-t border-white/25 p-3 sm:gap-2.5 sm:p-3.5"
+        className="flex shrink-0 flex-col gap-1.5 border-t border-white/25 p-2.5 sm:gap-2 sm:p-3"
         style={{
           background:
             "linear-gradient(180deg, #ff9048 0%, #ef5f17 28%, #d45414 58%, #a63d0f 82%, #6e2809 100%)",
         }}
       >
-        <div className="flex h-[6rem] shrink-0 gap-2.5 sm:h-[6.35rem] sm:gap-3">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/12 shadow-[inset_0_1px_0_rgba(255,255,255,0.22)]">
+        <div className="flex h-[4.75rem] shrink-0 gap-2 sm:h-[5rem] sm:gap-2.5">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/12 shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] sm:h-10 sm:w-10">
             <SolutionShowcaseLeadIconByKind kind={leadIconKind} inverted />
           </div>
           <div className="flex h-full min-h-0 w-0 min-w-0 flex-1 flex-col overflow-hidden pt-0.5">
-            <h3 className="line-clamp-2 text-[15px] font-bold leading-snug text-white sm:text-base">{title}</h3>
-            <p className="mt-1 line-clamp-2 text-[12px] leading-relaxed text-white/88 sm:mt-1.5 sm:text-[13px]">{subtitle}</p>
+            <h3 className="line-clamp-2 text-[14px] font-bold leading-snug text-white sm:text-[15px]">{title}</h3>
+            <p className="mt-0.5 line-clamp-2 text-[11px] leading-relaxed text-white/88 sm:mt-1 sm:text-[12px]">{subtitle}</p>
           </div>
         </div>
-        <div className="mt-auto grid shrink-0 grid-cols-3 gap-2 sm:gap-2.5">
+        <div className="grid shrink-0 grid-cols-3 gap-1.5 sm:gap-2">
           {productThumbs.map((src, i) => (
             <div
               key={`${src}-${i}`}
-              className="relative h-[6.25rem] w-full overflow-hidden rounded-lg bg-transparent sm:h-[7.25rem]"
+              className="relative h-[5rem] w-full overflow-hidden rounded-lg bg-transparent sm:h-[5.5rem]"
             >
               <Image
                 src={src}
@@ -1268,21 +1272,21 @@ function HomeSolutionShowcaseCard({
         </div>
       </div>
       <div
-        className="mt-auto shrink-0 border-t border-white/15 px-2 py-2.5 sm:px-3 sm:py-3"
+        className="mt-auto shrink-0 border-t border-white/15 px-2 py-2 sm:px-2.5 sm:py-2.5"
         style={{
           background: "linear-gradient(180deg, #7a3010 0%, #5c2408 48%, #401806 100%)",
         }}
       >
-        <div className="grid grid-cols-3 items-start gap-1 sm:gap-2">
+        <div className="grid grid-cols-3 items-start gap-1 sm:gap-1.5">
           {triple.map((f, i) => (
             <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
-              <div className="mb-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/22 bg-white/[0.08] sm:mb-1.5 sm:h-9 sm:w-9">
+              <div className="mb-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/22 bg-white/[0.08] sm:mb-1 sm:h-8 sm:w-8">
                 <HomeSolutionFooterGlyph index={i} onDark />
               </div>
-              <p className="flex min-h-[2.35rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white sm:min-h-[2.5rem] sm:text-[11px]">
+              <p className="flex min-h-[2rem] w-full items-start justify-center text-[9px] font-bold leading-tight text-white sm:min-h-[2.15rem] sm:text-[10px]">
                 <span className="line-clamp-2">{f.label}</span>
               </p>
-              <p className="mt-0.5 flex min-h-[2.1rem] w-full items-start justify-center text-[9px] leading-snug text-white/70 sm:min-h-[2.35rem] sm:text-[10px]">
+              <p className="mt-0.5 flex min-h-[1.75rem] w-full items-start justify-center text-[8px] leading-snug text-white/70 sm:min-h-[1.9rem] sm:text-[9px]">
                 <span className="line-clamp-2">{f.desc}</span>
               </p>
             </div>
@@ -1315,19 +1319,19 @@ function HomeMarketStripCard({
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group relative flex h-full min-h-[360px] w-full flex-col overflow-hidden rounded-2xl border border-white/[0.10] bg-[#1a2842] p-4 pb-5 shadow-[0_22px_56px_-34px_rgba(0,0,0,0.45)] ring-1 ring-white/[0.06] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-primary/35 hover:shadow-[0_28px_64px_-28px_rgba(239,95,23,0.14),0_22px_56px_-34px_rgba(0,0,0,0.5)] sm:min-h-[420px] sm:p-5 sm:pb-6"
+      className="group relative flex h-full min-h-[300px] w-full flex-col overflow-hidden rounded-2xl border border-white/[0.10] bg-[#1a2842] p-3.5 pb-4 shadow-[0_22px_56px_-34px_rgba(0,0,0,0.45)] ring-1 ring-white/[0.06] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-primary/35 hover:shadow-[0_28px_64px_-28px_rgba(239,95,23,0.14),0_22px_56px_-34px_rgba(0,0,0,0.5)] sm:min-h-[340px] sm:p-4 sm:pb-5"
     >
       <div
         className="pointer-events-none absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_18%_10%,rgba(83,122,184,0.18)_0%,rgba(26,40,66,0)_58%),linear-gradient(180deg,rgba(9,18,33,0.06)_0%,rgba(9,18,33,0.22)_100%)]"
         aria-hidden
       />
-      <div className="relative z-[1] flex h-[6.25rem] shrink-0 flex-col sm:h-[6.5rem]">
+      <div className="relative z-[1] flex h-[5.25rem] shrink-0 flex-col sm:h-[5.5rem]">
         <h3 className="line-clamp-2 text-[13px] font-bold leading-snug tracking-tight text-white sm:text-[15px] sm:leading-snug lg:text-base">
           {title}
         </h3>
-        <p className="mt-1.5 line-clamp-2 text-[12px] leading-relaxed text-white/55 sm:text-[13px]">{subtitle}</p>
+        <p className="mt-1 line-clamp-2 text-[12px] leading-relaxed text-white/55 sm:mt-1.5 sm:text-[13px]">{subtitle}</p>
       </div>
-      <div className="relative z-[1] mt-3 flex h-[10rem] shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/[0.08] bg-[#121f33] py-2 shadow-[inset_0_2px_20px_rgba(0,0,0,0.35)] sm:mt-4 sm:h-[10.5rem] sm:py-3">
+      <div className="relative z-[1] mt-2.5 flex h-[8.25rem] shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/[0.08] bg-[#121f33] py-1.5 shadow-[inset_0_2px_20px_rgba(0,0,0,0.35)] sm:mt-3 sm:h-[9rem] sm:py-2">
         <div
           className="pointer-events-none absolute inset-0 opacity-90"
           style={{
@@ -1347,17 +1351,17 @@ function HomeMarketStripCard({
           quality={80}
         />
       </div>
-      <div className="relative z-[1] mt-auto shrink-0 border-t border-white/[0.08] pt-4 sm:pt-5">
-        <div className="grid grid-cols-3 items-start gap-2 sm:gap-3">
+      <div className="relative z-[1] mt-auto shrink-0 border-t border-white/[0.08] pt-3 sm:pt-4">
+        <div className="grid grid-cols-3 items-start gap-1.5 sm:gap-2">
           {triple.map((f, i) => (
             <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
-              <div className="mb-1.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/28 sm:mb-2">
+              <div className="mb-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/28 sm:mb-1.5">
                 <HomeMarketStripFeatureIcon index={i} className="h-5 w-5 text-primary" />
               </div>
-              <p className="flex min-h-[2.75rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white/90 sm:min-h-[3rem] sm:text-[11px]">
+              <p className="flex min-h-[2.35rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white/90 sm:min-h-[2.5rem] sm:text-[11px]">
                 <span className="line-clamp-2">{f.label}</span>
               </p>
-              <p className="mt-0.5 flex min-h-[2.5rem] w-full items-start justify-center text-[9px] leading-snug text-white/55 sm:min-h-[2.75rem] sm:text-[10px]">
+              <p className="mt-0.5 flex min-h-[2.1rem] w-full items-start justify-center text-[9px] leading-snug text-white/55 sm:min-h-[2.35rem] sm:text-[10px]">
                 <span className="line-clamp-2">{f.desc}</span>
               </p>
             </div>
@@ -1812,7 +1816,7 @@ export default function HomeClient({
 
         <div className="relative border-t border-sand-300 bg-sand-100 text-ink">
           <HomeMarketStripBackdrop />
-          <div className="relative z-[1] mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
+          <div className="relative z-[1] mx-auto max-w-[1720px] px-4 sm:px-10 lg:px-16">
             <div className="py-10 sm:py-12 sm:pt-12 sm:pb-14 lg:py-16">
               <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
                 <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.solutions}</h2>
@@ -1846,7 +1850,7 @@ export default function HomeClient({
                         <div
                           key={item.href}
                           data-solution-strip-card
-                          className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-2.25rem)/4)] lg:flex-[0_0_calc((100%-2.25rem)/4)]"
+                          className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-3rem)/5)] lg:flex-[0_0_calc((100%-3rem)/5)]"
                         >
                           <HomeSolutionShowcaseCard
                             locale={locale}
@@ -1883,7 +1887,7 @@ export default function HomeClient({
       {/* 03 — ÜRÜNLER (aynı referans düzeni; arka plan çözümler şeridi ile aynı sand) */}
       <section id="product-categories" className="relative scroll-mt-24 border-t border-sand-300 bg-sand-100 text-ink md:scroll-mt-[5.5rem]">
         <HomeMarketStripBackdrop />
-        <div className="relative z-[1] mx-auto max-w-[1600px] px-4 py-12 sm:px-10 sm:py-14 lg:py-16">
+        <div className="relative z-[1] mx-auto max-w-[1720px] px-4 py-12 sm:px-10 sm:py-14 lg:py-16">
           <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
             <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
             <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
@@ -2124,7 +2128,7 @@ export default function HomeClient({
             </div>
           </div>
 
-          {/* Referanslar — sektör kartları (koyu turuncu / koyu lacivert + ink) */}
+          {/* Referanslar — sektör kartları (lacivert / koyu gri / açık gri + turuncu vurgu) */}
           <div id="references" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem] lg:mt-16">
             {(() => {
               const refHead = referenceSectorHeadings(pc, n.links.references);
@@ -2167,6 +2171,7 @@ export default function HomeClient({
                   {referencePreview.map((item, index) => {
                     const theme = resolveReferenceSectorTheme(index, item.theme);
                     const styles = REFERENCE_SECTOR_THEME_STYLES[theme];
+                    const onLight = styles.tone === "onLight";
                     const sector = (item.sector ?? item.title).trim();
                     const example = (item.example ?? "").trim();
                     const serverCount = referencePreviewProjectCounts?.[index];
@@ -2205,22 +2210,35 @@ export default function HomeClient({
                             </div>
                           </div>
                         </div>
-                        <div className={`flex flex-1 flex-col px-5 pb-6 pt-5 text-white sm:px-6 sm:pb-7 ${styles.footer}`}>
+                        <div
+                          className={`flex flex-1 flex-col px-5 pb-6 pt-5 sm:px-6 sm:pb-7 ${styles.footer} ${onLight ? "text-[#1a2433]" : "text-white"}`}
+                        >
                           <p className="text-[1.05rem] font-bold leading-snug tracking-[-0.02em] sm:text-[1.12rem]">
                             {sector}
                           </p>
                           {example ? (
-                            <p className="mt-1.5 text-[13px] leading-snug text-white/90 sm:text-[14px]">{example}</p>
+                            <p
+                              className={`mt-1.5 text-[13px] leading-snug sm:text-[14px] ${onLight ? "text-[#3d4a5c]" : "text-white/90"}`}
+                            >
+                              {example}
+                            </p>
                           ) : (
-                            <p className="mt-1.5 line-clamp-3 text-[13px] leading-snug text-white/88 sm:text-[14px]">
+                            <p
+                              className={`mt-1.5 line-clamp-3 text-[13px] leading-snug sm:text-[14px] ${onLight ? "text-[#4a5568]" : "text-white/88"}`}
+                            >
                               {pc.referenceCardDesc}
                             </p>
                           )}
-                          <div className="my-4 h-px w-full bg-white/35" aria-hidden />
+                          <div
+                            className={`my-4 h-px w-full ${onLight ? "bg-[#1a2842]/12" : "bg-white/35"}`}
+                            aria-hidden
+                          />
                           {count ? (
-                            <p className="text-[2.1rem] font-bold leading-none tracking-tight sm:text-[2.35rem]">
+                            <p className="text-[2.1rem] font-bold leading-none tracking-tight text-current sm:text-[2.35rem]">
                               {count}
-                              <span className="ml-2 text-base font-semibold tracking-normal text-white/90 sm:text-lg">
+                              <span
+                                className={`ml-2 text-base font-semibold tracking-normal sm:text-lg ${onLight ? "text-[#3d4a5c]" : "text-white/90"}`}
+                              >
                                 {projectWord}
                               </span>
                             </p>

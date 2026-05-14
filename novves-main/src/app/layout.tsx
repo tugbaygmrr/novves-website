@@ -1,34 +1,33 @@
 import "./globals.css";
+import Script from "next/script";
 import { fontRootClassName } from "./fonts";
-import { headers } from "next/headers";
 import {
   defaultLocale,
-  hasLocale,
   htmlLangOverride,
-  type Locale,
+  locales,
 } from "@/i18n/config";
+
+const HTML_LANG_SYNC_SCRIPT = `(function(){var L=${JSON.stringify(locales)};var H=${JSON.stringify(htmlLangOverride)};var D=${JSON.stringify(defaultLocale)};var s=location.pathname.split("/").filter(Boolean)[0]||"";var loc=L.indexOf(s)>=0?s:D;document.documentElement.lang=H[loc]||loc;document.documentElement.dir=loc==="ar"||loc==="ur"?"rtl":"ltr";})();`;
 
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const h = await headers();
-  const raw = h.get("x-novves-locale");
-  const locale =
-    raw && hasLocale(raw) ? (raw as Locale) : defaultLocale;
-  const lang = htmlLangOverride[locale] ?? locale;
-  const dir = locale === "ar" || locale === "ur" ? "rtl" : "ltr";
+  const lang = htmlLangOverride[defaultLocale] ?? defaultLocale;
 
   return (
     <html
       lang={lang}
-      dir={dir}
+      dir="ltr"
       className={`h-full antialiased light ${fontRootClassName}`}
       data-theme="light"
       suppressHydrationWarning
     >
       <body className="min-h-full min-h-[100dvh] flex flex-col font-sans">
+        <Script id="novves-html-lang-sync" strategy="beforeInteractive">
+          {HTML_LANG_SYNC_SCRIPT}
+        </Script>
         {children}
       </body>
     </html>

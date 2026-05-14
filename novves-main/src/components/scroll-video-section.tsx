@@ -165,6 +165,25 @@ export function ScrollVideoSection({
     setMounted(true);
   }, []);
 
+  /** Dar ekranda gizli masaüstü <video> hero MP4 çekmesin — yalnızca lg+ iken preload + load */
+  useEffect(() => {
+    if (!mounted || !isVideoMode || !videoSrc) return;
+    const el = videoRef.current;
+    if (!el) return;
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const sync = () => {
+      if (mq.matches) {
+        el.preload = "auto";
+        void el.load();
+      } else {
+        el.preload = "none";
+      }
+    };
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, [mounted, isVideoMode, videoSrc]);
+
   const renderFrame = useCallback((index: number) => {
     if (isVideoMode || isScrollStill) return;
     const canvas = canvasRef.current;
@@ -539,7 +558,7 @@ export function ScrollVideoSection({
             aria-label={mobileVideoReplacementAlt || undefined}
             muted
             playsInline
-            preload="auto"
+            preload="none"
             disablePictureInPicture
             className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
             style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
@@ -759,13 +778,16 @@ export function ScrollVideoSection({
                     {endCard.title}
                   </h3>
 
-                  <p className="mt-5 max-w-[42ch] text-[13.5px] leading-[1.7]" style={{ color: "var(--c-sub)" }}>
+                  <p
+                    className="mt-5 hidden max-w-[42ch] text-[13.5px] leading-[1.7] xl:block"
+                    style={{ color: "var(--c-sub)" }}
+                  >
                     {endCard.desc}
                   </p>
 
                   <div
                     ref={endCardSpecsRef}
-                    className="mt-7 grid grid-cols-1 divide-y divide-white/10 border-y border-y-[1px] min-[900px]:grid-cols-3 min-[900px]:divide-x min-[900px]:divide-y-0"
+                    className="mt-5 grid grid-cols-1 divide-y divide-white/10 border-y border-y-[1px] min-[900px]:grid-cols-3 min-[900px]:divide-x min-[900px]:divide-y-0 xl:mt-7"
                   >
                     {[
                       { v: endCard.spec1Value, l: endCard.spec1Label },
@@ -1067,7 +1089,7 @@ function MobileScrollSection({
                 aria-label={mobileVideoReplacementAlt || undefined}
                 muted
                 playsInline
-                preload="auto"
+                preload="metadata"
                 disablePictureInPicture
                 onLoadedData={(e) => {
                   const el = e.currentTarget;
@@ -1146,7 +1168,6 @@ function MobileScrollSection({
                   <h2 className="mt-3 text-ink">
                     <span className="block text-[2.05rem] font-bold leading-[1.02] tracking-[-0.025em]">{endCard.title}</span>
                   </h2>
-                  <p className="mt-2 max-w-[34ch] text-[14px] leading-[1.55] text-ink/68">{endCard.desc}</p>
                 </div>
               </div>
             )}

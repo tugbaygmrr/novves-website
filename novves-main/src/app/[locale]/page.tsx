@@ -1,4 +1,4 @@
-import { getDictionary, hasLocale } from "./dictionaries";
+import { getLocaleShellDictionary, hasLocale } from "./dictionaries";
 import { getHomeReferencePreviewCounts } from "@/lib/home-reference-preview-counts";
 import { notFound } from "next/navigation";
 import HomeClient from "./home-client";
@@ -12,7 +12,7 @@ export default async function Home({
 
   if (!hasLocale(locale)) notFound();
 
-  const dict = await getDictionary(locale);
+  const dict = await getLocaleShellDictionary(locale);
 
   const referencePreviewProjectCounts = getHomeReferencePreviewCounts();
 

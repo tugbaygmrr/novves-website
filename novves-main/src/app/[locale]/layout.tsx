@@ -8,7 +8,7 @@ import { SetHtmlLang } from "@/components/set-html-lang";
 import { GlobalJumpNav } from "@/components/global-jump-nav";
 import { locales, htmlLangOverride, type Locale } from "@/i18n/config";
 import { buildJumpNavLabels } from "@/i18n/jump-nav-labels";
-import { hasLocale, getDictionary } from "./dictionaries";
+import { hasLocale, getLocaleShellDictionary } from "./dictionaries";
 
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
 
@@ -21,7 +21,7 @@ export async function generateMetadata({
   if (!hasLocale(locale)) {
     return { title: "Novves" };
   }
-  const dict = await getDictionary(locale as Locale);
+  const dict = await getLocaleShellDictionary(locale as Locale);
   const hero = dict.home.hero;
   const title = `${hero.titleLine1} ${hero.titleLine2} | Novves`;
   const description = hero.subtitle;
@@ -60,8 +60,6 @@ export const viewport: Viewport = {
   colorScheme: "light",
 };
 
-export const dynamic = "force-dynamic";
-
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -77,7 +75,7 @@ export default async function LocaleLayout({
 
   if (!hasLocale(locale)) notFound();
 
-  const dict = await getDictionary(locale);
+  const dict = await getLocaleShellDictionary(locale);
   const jumpLabels = buildJumpNavLabels(locale as Locale, dict);
 
   return (

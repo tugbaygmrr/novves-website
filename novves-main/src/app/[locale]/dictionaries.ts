@@ -39,3 +39,9 @@ export { hasLocale };
 
 /** Aynı istekte layout + generateMetadata çift okumasın diye önbellek */
 export const getDictionary = cache(async (locale: Locale) => loadAll(locale));
+
+/** Navbar / atlama menüsü / anasayfa — yalnızca iki JSON; tam `getDictionary` yerine SSR ve TTFB için */
+export const getLocaleShellDictionary = cache(async (locale: Locale) => ({
+  common: loadJson(locale, "common"),
+  home: loadJson(locale, "home"),
+}));
