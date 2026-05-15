@@ -179,8 +179,13 @@ function getDictionaryPath(locale: Locale, file: string): string {
 function loadContentFromJsonFile(file: string, locale: Locale): Record<string, unknown> {
   const filePath = getDictionaryPath(locale, file);
   if (!fs.existsSync(filePath)) return {};
-  const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw) as Record<string, unknown>;
+  const raw = fs.readFileSync(filePath, "utf-8").trim();
+  if (!raw) return {};
+  try {
+    return JSON.parse(raw) as Record<string, unknown>;
+  } catch {
+    return {};
+  }
 }
 
 function authenticate(request: NextRequest): string | null {

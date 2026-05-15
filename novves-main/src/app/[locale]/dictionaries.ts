@@ -1,20 +1,18 @@
 import "server-only";
-import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 import { cache } from "react";
 import { hasLocale, type Locale } from "@/i18n/config";
+import { readJsonFile } from "@/lib/read-json-file";
 
-function loadJson(locale: string, file: string) {
-  const filePath = path.join(
-    process.cwd(),
-    "src",
-    "app",
-    "[locale]",
-    "dictionaries",
-    locale,
-    `${file}.json`
-  );
-  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+const dictionariesRoot = path.join(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "dictionaries"
+);
+
+function loadJson(locale: string, file: string): any {
+  const filePath = path.join(dictionariesRoot, locale, `${file}.json`);
+  return readJsonFile(filePath);
 }
 
 /** Her dil yalnızca kendi klasöründeki JSON’dan — İngilizce ile otomatik birleştirme yok */

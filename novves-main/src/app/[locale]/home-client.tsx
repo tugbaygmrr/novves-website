@@ -338,15 +338,51 @@ const engineeringCollage = {
 const pillarLinks = ["/cozumler", "/urunler", "/hizmetler"] as const;
 
 const productCategoryMeta = [
-  { href: "/urunler/hava-hareketi", image: "/images/products/dragonfly-c.png" },
-  { href: "/urunler/iklimlendirme", image: "/images/products/tiger-pre.png" },
-  { href: "/urunler/sogutma-ve-isitma", image: "/images/products/dolphin-pre.png" },
-  { href: "/urunler/hava-yonetimi", image: "/images/products/hound-al.png" },
-  { href: "/urunler/hava-dagitimi", image: "/images/products/ae-fjf.png" },
-  { href: "/urunler/hava-filtrasyonu", image: "/images/products/marlin.png" },
-  { href: "/urunler/aksesuarlar", image: "/images/products/ae-fjf.png" },
-  { href: "/urunler/otomasyon-malzemeleri", image: "/images/products/basinclandirma-kontrol-panosu.png" },
-  { href: "/urunler/titresim-ve-ses-izolasyon", image: "/images/products/yayli-titresim-izolatoru.png" },
+  {
+    href: "/urunler/hava-hareketi",
+    image: "/images/products/dragonfly-c.png",
+    thumbs: ["/images/products/dragonfly-c.png", "/images/products/marlin.png", "/images/products/hound-al.png"],
+  },
+  {
+    href: "/urunler/iklimlendirme",
+    image: "/images/products/tiger-pre.png",
+    thumbs: ["/images/products/tiger-pre.png", "/images/products/hound-al.png", "/images/products/marlin.png"],
+  },
+  {
+    href: "/urunler/sogutma-ve-isitma",
+    image: "/images/products/tiger-pre.png",
+    thumbs: ["/images/products/tiger-pre.png", "/images/products/dragonfly-c.png", "/images/products/marlin.png"],
+  },
+  {
+    href: "/urunler/hava-yonetimi",
+    image: "/images/products/hound-al.png",
+    thumbs: ["/images/products/hound-al.png", "/images/products/dragonfly-c.png", "/images/products/tiger-pre.png"],
+  },
+  {
+    href: "/urunler/hava-dagitimi",
+    image: "/images/products/hound-al.png",
+    thumbs: ["/images/products/hound-al.png", "/images/products/marlin.png", "/images/products/tiger-pre.png"],
+  },
+  {
+    href: "/urunler/hava-filtrasyonu",
+    image: "/images/products/marlin.png",
+    thumbs: ["/images/products/marlin.png", "/images/products/dragonfly-c.png", "/images/products/hound-al.png"],
+  },
+  {
+    href: "/urunler/aksesuarlar",
+    image: "/images/products/hound-al.png",
+    thumbs: ["/images/products/hound-al.png", "/images/products/basinclandirma-kontrol-panosu.png", "/images/products/dragonfly-c.png"],
+  },
+  {
+    href: "/urunler/otomasyon-malzemeleri",
+    image: "/images/products/basinclandirma-kontrol-panosu.png",
+    thumbs: ["/images/products/basinclandirma-kontrol-panosu.png", "/images/products/marlin.png", "/images/products/hound-al.png"],
+  },
+  {
+    href: "/urunler/titresim-ve-ses-izolasyon",
+    image: "/images/products/yayli-titresim-izolatoru.png",
+    thumbs: ["/images/products/yayli-titresim-izolatoru.png", "/images/products/basinclandirma-kontrol-panosu.png", "/images/products/hound-al.png"],
+  },
 ] as const;
 
 /** `home.json` eksik kalsa bile şeritte tüm hub kategorileri görünsün */
@@ -429,138 +465,6 @@ const solutionCategorySlides: SolutionBandSlide[] = SOLUTION_STRIP_HREFS.map((hr
 
 const homeSolutionBandSlides = solutionCategorySlides;
 
-type StripFeature = { label: string; desc: string };
-
-/** Şerit sırası `solutionCategorySlides` ile aynı; dilde `homeBands.solutionStripFeatureRows` yoksa kullanılır */
-const DEFAULT_SOLUTION_STRIP_ROWS: StripFeature[][] = [
-  [
-    { label: "Fire scenarios", desc: "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios." },
-    { label: "Jet & natural", desc: "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies." },
-    { label: "EN 12101 ready", desc: "Certified products and type-test documentation packaged for code reviews and inspections." },
-  ],
-  [
-    { label: "Comfort band", desc: "Stable temperature–humidity bands for offices, hotels, and retail." },
-    { label: "Acoustics", desc: "Low-SPL selections and isolation for shafts, façades, and plant rooms." },
-    { label: "Energy & VRF", desc: "Flow and pressure planning coordinated with heat pumps and VRF systems." },
-  ],
-  [
-    { label: "Room pressure", desc: "Positive/negative pressure cascades and leakage control to protect critical spaces." },
-    { label: "HEPA & fine", desc: "Hospital, GMP, and food lines with filter classes and change-out strategies." },
-    { label: "Monitoring", desc: "DP, humidity, and particle sensing with logging and alarms for compliance." },
-  ],
-  [
-    { label: "Process airflow", desc: "High-temperature and abrasive-duty fans for drying, emission, and line pressure." },
-    { label: "Dust & filters", desc: "Fan curves matched to dust loading, filter dp, and maintenance cycles." },
-    { label: "Uptime", desc: "Standby fans, spare-part paths, and service access to shorten planned stops." },
-  ],
-  [
-    { label: "Hazard zones", desc: "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas." },
-    { label: "Spark-free", desc: "Ex d/m/e and compatible drives for explosive gas and dust atmospheres." },
-    { label: "ATEX dossier", desc: "Risk study, technical file, and site marking ready for audits." },
-  ],
-  [
-    { label: "Stocking density", desc: "Fresh-air and exhaust rates sized for headcount, season, and heat stress." },
-    { label: "Gas & moisture", desc: "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts." },
-    { label: "Corrosion tough", desc: "Materials and motor protection for wash-down and aggressive barn environments." },
-  ],
-  [
-    { label: "Transformer heat", desc: "Cooling airflow sized for transformer and busbar losses with design margin." },
-    { label: "Fire & smoke", desc: "Smoke exhaust and pressurisation coordinated with electrical infrastructure." },
-    { label: "Utility specs", desc: "Product ranges aligned with OEM, utility, and IEC-oriented specifications." },
-  ],
-  [
-    { label: "Tunnel & poly", desc: "Even velocity profiles and temperature stratification for tunnel and multi-span houses." },
-    { label: "CO₂ & RH", desc: "Ventilation paired with humidification or dehumidification for crop response." },
-    { label: "Seasonal energy", desc: "VFD and control strategies to trim fan energy across seasonal loads." },
-  ],
-  [
-    { label: "Panels & logic", desc: "Central panels for fire, process, and comfort fans with clear interlocks." },
-    { label: "BMS / SCADA", desc: "Modbus, BACnet, and site-wide automation interfaces and sequences." },
-    { label: "Commissioning", desc: "Stepwise testing, handover scripts, and operator screens for maintenance." },
-  ],
-  [
-    { label: "Shaft & wet rooms", desc: "Compact, low-noise units for central shafts, bathrooms, and kitchens." },
-    { label: "Façade fit", desc: "Balcony and wall-mounted options that respect acoustic and architectural limits." },
-    { label: "Energy labels", desc: "Efficiency classes aligned with residential regulations and running cost." },
-  ],
-  [
-    { label: "Salt spray", desc: "Coatings and stainless options aligned with C4/C5 marine exposure classes." },
-    { label: "Class society", desc: "Technical files and tests aligned with vessel class and offshore norms." },
-    { label: "Redundancy", desc: "N+1 layouts and access paths for offshore availability and service." },
-  ],
-  [
-    { label: "Custom geometry", desc: "Project-specific casings for tight footprints, flanges, and duct transitions." },
-    { label: "Materials & weld", desc: "Stainless, aluminium, specials; weld and NDT procedures on request." },
-    { label: "FAT & traceability", desc: "Factory acceptance testing with certificates and full material traceability." },
-  ],
-  [
-    { label: "Smoke & visibility", desc: "3D smoke modelling for jet fan placement, visibility, and temperature fields." },
-    { label: "Heat & contaminants", desc: "Distribution studies for kitchens, process exhaust, and waste heat." },
-    { label: "Client-ready reports", desc: "Summaries, sections, and visuals for investors, AHJs, and design reviews." },
-  ],
-];
-
-const DEFAULT_PRODUCT_STRIP_ROWS: StripFeature[][] = [
-  [
-    { label: "High performance", desc: "High airflow and thrust tailored to the application." },
-    { label: "Durable", desc: "Reliable operation in industrial environments." },
-    { label: "Quiet operation", desc: "Lower noise for comfortable spaces." },
-  ],
-  [
-    { label: "Energy efficiency", desc: "Optimized consumption across the system." },
-    { label: "Smart control", desc: "Integrated automation and monitoring." },
-    { label: "Flexible solutions", desc: "Adaptable layouts for different buildings." },
-  ],
-  [
-    { label: "High capacity", desc: "Cooling and heating power for large loads." },
-    { label: "Reliable performance", desc: "Stable seasonal operation." },
-    { label: "All-season use", desc: "Designed for year-round comfort and process needs." },
-  ],
-  [
-    { label: "Modular design", desc: "Configurable air handling building blocks." },
-    { label: "High efficiency", desc: "Heat recovery and fan efficiency options." },
-    { label: "Smart monitoring", desc: "Visibility for operators and maintenance teams." },
-  ],
-  [
-    { label: "Even distribution", desc: "Homogeneous airflow in the served zone." },
-    { label: "Aesthetic design", desc: "Architect-friendly grilles and diffusers." },
-    { label: "Easy installation", desc: "Practical mounting and commissioning on site." },
-  ],
-  [
-    { label: "Filter classes", desc: "From coarse pre-filtration to fine and HEPA-grade options." },
-    { label: "Indoor air quality", desc: "Cleaner supply air for comfort and critical applications." },
-    { label: "Standards alignment", desc: "Selections aligned with hygiene and project specifications." },
-  ],
-  [
-    { label: "Mounting & hardware", desc: "Dampers, supports, and accessories that complete the system." },
-    { label: "Wide compatibility", desc: "Components matched to fans, ducts, and air devices." },
-    { label: "Practical logistics", desc: "Straightforward sourcing for site schedules." },
-  ],
-  [
-    { label: "Control & panels", desc: "Monitoring and control hardware for ventilation plants." },
-    { label: "BMS integration", desc: "Signals and interfaces suited to building automation." },
-    { label: "Field-ready kits", desc: "Practical layouts for installation and commissioning." },
-  ],
-  [
-    { label: "Vibration suspension", desc: "Springs and isolators tuned to equipment loads." },
-    { label: "Noise control", desc: "Reduced structure-borne and airborne noise paths." },
-    { label: "Decoupled supports", desc: "Stable equipment mounting with controlled transfer." },
-  ],
-];
-
-/** Ürün şeridi: her kart indeksi için bir satır (9 kategori); eksik dilde `fallback[i]` kullanılır */
-function pickStripFeatureRowsForCount(
-  rows: StripFeature[][] | undefined,
-  fallback: StripFeature[][],
-  count: number,
-): StripFeature[][] {
-  return Array.from({ length: count }, (_, i) => {
-    const r = rows?.[i];
-    if (r && r.length >= 3) return r.slice(0, 3);
-    return fallback[i] ?? fallback[i % fallback.length]!;
-  });
-}
-
 function HomeMarketStripBackdrop() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden bg-sand-100" aria-hidden>
@@ -575,31 +479,6 @@ function HomeMarketStripBackdrop() {
       />
     </div>
   );
-}
-
-function HomeMarketStripFeatureIcon({ index, className = "h-5 w-5 text-primary" }: { index: number; className?: string }) {
-  const cls = className;
-  const stroke = 1.5;
-  switch (index % 3) {
-    case 0:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-        </svg>
-      );
-    case 1:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M4 12h10M4 17h16" />
-        </svg>
-      );
-    default:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" />
-        </svg>
-      );
-  }
 }
 
 type SolutionLeadIconKind =
@@ -1171,31 +1050,6 @@ function HomeCatalogDocIcon({ variant }: { variant: number }) {
   }
 }
 
-function HomeSolutionFooterGlyph({ index, onDark }: { index: number; onDark?: boolean }) {
-  const cls = onDark ? "h-4 w-4 text-white" : "h-4 w-4 text-primary";
-  const stroke = 1.65;
-  switch (index % 3) {
-    case 0:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-        </svg>
-      );
-    case 1:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M4 12h10M4 17h16" />
-        </svg>
-      );
-    default:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M3 12h18" />
-        </svg>
-      );
-  }
-}
-
 function HomeSolutionShowcaseCard({
   locale,
   href,
@@ -1203,7 +1057,6 @@ function HomeSolutionShowcaseCard({
   subtitle,
   heroSrc,
   productThumbs,
-  features,
   leadIconKind,
   heroPriority = false,
 }: {
@@ -1213,19 +1066,17 @@ function HomeSolutionShowcaseCard({
   subtitle: string;
   heroSrc: string;
   productThumbs: readonly [string, string, string];
-  features: StripFeature[];
   leadIconKind: SolutionLeadIconKind;
   /** İlk kart LCP: daha erken decode */
   heroPriority?: boolean;
 }) {
-  const triple: StripFeature[] = [...features.slice(0, 3)];
-  while (triple.length < 3) triple.push({ label: "—", desc: "" });
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group flex h-full min-h-[320px] w-full flex-col overflow-hidden rounded-xl border border-sand-300 bg-white shadow-[0_14px_40px_-28px_rgba(0,56,107,0.14)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_22px_52px_-28px_rgba(239,95,23,0.22)] sm:min-h-[360px]"
+      className="group flex h-full min-h-0 w-full flex-1 flex-col overflow-hidden rounded-xl border border-sand-300 bg-white shadow-[0_14px_40px_-28px_rgba(0,56,107,0.14)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_22px_52px_-28px_rgba(239,95,23,0.22)]"
     >
-      <div className="relative h-[128px] w-full shrink-0 overflow-hidden bg-sand-100 sm:h-[142px]">
+      {/* Görsel — alt %50'si turuncuya çözünür, alttaki banda dikişsiz akar */}
+      <div className="relative h-[150px] w-full shrink-0 overflow-hidden bg-sand-100 sm:h-[168px]">
         <Image
           src={heroSrc}
           alt=""
@@ -1235,19 +1086,30 @@ function HomeSolutionShowcaseCard({
           priority={heroPriority}
           quality={80}
         />
+        {/* Görsel ↔ turuncu organik geçiş — alt kenar tam #ef5f17 ile biter */}
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%]"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(239,95,23,0) 0%, rgba(239,95,23,0.18) 24%, rgba(239,95,23,0.5) 58%, rgba(239,95,23,0.85) 86%, #ef5f17 100%)",
+          }}
+          aria-hidden
+        />
       </div>
+
+      {/* Turuncu bant — başlık + thumb'lar; kart kısa kalsın diye sıkı padding */}
       <div
-        className="flex shrink-0 flex-col gap-1.5 border-t border-white/25 p-2.5 sm:gap-2 sm:p-3"
+        className="flex shrink-0 flex-col gap-2 px-2.5 pb-2.5 pt-2 sm:gap-2.5 sm:px-3 sm:pb-3 sm:pt-2.5"
         style={{
           background:
-            "linear-gradient(180deg, #ff9048 0%, #ef5f17 28%, #d45414 58%, #a63d0f 82%, #6e2809 100%)",
+            "linear-gradient(180deg, #ef5f17 0%, #d45414 55%, #a63d0f 100%)",
         }}
       >
-        <div className="flex h-[4.75rem] shrink-0 gap-2 sm:h-[5rem] sm:gap-2.5">
+        <div className="flex shrink-0 gap-2 sm:gap-2.5">
           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/12 shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] sm:h-10 sm:w-10">
             <SolutionShowcaseLeadIconByKind kind={leadIconKind} inverted />
           </div>
-          <div className="flex h-full min-h-0 w-0 min-w-0 flex-1 flex-col overflow-hidden pt-0.5">
+          <div className="flex min-h-0 w-0 min-w-0 flex-1 flex-col overflow-hidden pt-0.5">
             <h3 className="line-clamp-2 text-[14px] font-bold leading-snug text-white sm:text-[15px]">{title}</h3>
             <p className="mt-0.5 line-clamp-2 text-[11px] leading-relaxed text-white/88 sm:mt-1 sm:text-[12px]">{subtitle}</p>
           </div>
@@ -1256,7 +1118,7 @@ function HomeSolutionShowcaseCard({
           {productThumbs.map((src, i) => (
             <div
               key={`${src}-${i}`}
-              className="relative h-[5rem] w-full overflow-hidden rounded-lg bg-transparent sm:h-[5.5rem]"
+              className="relative h-[3.75rem] w-full overflow-hidden rounded-lg bg-transparent sm:h-[4rem]"
             >
               <Image
                 src={src}
@@ -1271,102 +1133,140 @@ function HomeSolutionShowcaseCard({
           ))}
         </div>
       </div>
-      <div
-        className="mt-auto shrink-0 border-t border-white/15 px-2 py-2 sm:px-2.5 sm:py-2.5"
-        style={{
-          background: "linear-gradient(180deg, #7a3010 0%, #5c2408 48%, #401806 100%)",
-        }}
-      >
-        <div className="grid grid-cols-3 items-start gap-1 sm:gap-1.5">
-          {triple.map((f, i) => (
-            <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
-              <div className="mb-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/22 bg-white/[0.08] sm:mb-1 sm:h-8 sm:w-8">
-                <HomeSolutionFooterGlyph index={i} onDark />
-              </div>
-              <p className="flex min-h-[2rem] w-full items-start justify-center text-[9px] font-bold leading-tight text-white sm:min-h-[2.15rem] sm:text-[10px]">
-                <span className="line-clamp-2">{f.label}</span>
-              </p>
-              <p className="mt-0.5 flex min-h-[1.75rem] w-full items-start justify-center text-[8px] leading-snug text-white/70 sm:min-h-[1.9rem] sm:text-[9px]">
-                <span className="line-clamp-2">{f.desc}</span>
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
     </Link>
   );
 }
+
+/**
+ * Her PNG ürün canvas'ını farklı oranda dolduruyor (örn. yayli-izolator etrafında bol boşluk var).
+ * Bu çarpanlar `object-contain` boyutunu görsel olarak eşitler — kart içinde tüm ürünler benzer büyüklükte hissedilir.
+ */
+/**
+ * Veri + görsel kütle: bbox ölçüldü, ek olarak ürünün "solidlik" hissine göre ayar.
+ * ae-fjf hollow ring (bbox 85% ama görsel mass düşük), yayli kompakt küçük parça.
+ * Solid 3D bloklar (fan/AHU/panel) doğal olarak yer doldurur.
+ */
+/**
+ * Area-based scaling: her ürünün bbox area'sı eşit hedefe (~7500%²) çekildi.
+ * Görsel "mass" perception aynı: 90.7×82.7 ≈ 82.1×91.3 ≈ 86.2×87.0 ...
+ * Height/width oranları korunur ama toplam görsel ağırlık dengeli.
+ */
+const THUMB_VISUAL_SCALE: Record<string, number> = {
+  "/images/products/dragonfly-c.png": 1.12,
+  "/images/products/marlin.png": 1.09,
+  "/images/products/hound-al.png": 1.25,
+  "/images/products/tiger-pre.png": 1.12,
+  "/images/products/basinclandirma-kontrol-panosu.png": 1.39,
+  "/images/products/yayli-titresim-izolatoru.png": 1.26,
+};
 
 function HomeMarketStripCard({
   locale,
   href,
   title,
   subtitle,
-  imageSrc,
-  features,
+  thumbs,
   imagePriority = false,
 }: {
   locale: string;
   href: string;
   title: string;
   subtitle: string;
-  imageSrc: string;
-  features: StripFeature[];
+  thumbs: readonly [string, string, string];
   imagePriority?: boolean;
 }) {
-  const triple: StripFeature[] = [...features.slice(0, 3)];
-  while (triple.length < 3) triple.push({ label: "—", desc: "" });
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group relative flex h-full min-h-[300px] w-full flex-col overflow-hidden rounded-2xl border border-white/[0.10] bg-[#1a2842] p-3.5 pb-4 shadow-[0_22px_56px_-34px_rgba(0,0,0,0.45)] ring-1 ring-white/[0.06] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-primary/35 hover:shadow-[0_28px_64px_-28px_rgba(239,95,23,0.14),0_22px_56px_-34px_rgba(0,0,0,0.5)] sm:min-h-[340px] sm:p-4 sm:pb-5"
+      className="group relative block w-full overflow-hidden rounded-2xl border border-white/[0.08] shadow-[0_20px_52px_-28px_rgba(0,0,0,0.6)] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#4a7fc1]/45 hover:shadow-[0_26px_60px_-22px_rgba(239,95,23,0.14),0_18px_48px_-26px_rgba(0,0,0,0.65)]"
+      style={{ height: "15rem" }}
     >
+      {/* Zemin */}
+      <div className="absolute inset-0" style={{ background: "linear-gradient(155deg, #07111e 0%, #0b1c36 28%, #0d2450 62%, #0c2058 100%)" }} aria-hidden />
+
+      {/* Sağ taraf mavi radyal glow */}
       <div
-        className="pointer-events-none absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_18%_10%,rgba(83,122,184,0.18)_0%,rgba(26,40,66,0)_58%),linear-gradient(180deg,rgba(9,18,33,0.06)_0%,rgba(9,18,33,0.22)_100%)]"
+        className="pointer-events-none absolute inset-0 z-[1]"
+        style={{
+          background:
+            "radial-gradient(ellipse 75% 90% at 78% 45%, rgba(25,100,230,0.55), transparent 55%), radial-gradient(ellipse 45% 60% at 95% 20%, rgba(40,120,240,0.30), transparent 50%)",
+        }}
         aria-hidden
       />
-      <div className="relative z-[1] flex h-[5.25rem] shrink-0 flex-col sm:h-[5.5rem]">
-        <h3 className="line-clamp-2 text-[13px] font-bold leading-snug tracking-tight text-white sm:text-[15px] sm:leading-snug lg:text-base">
+      {/* Streak çizgileri — soldan sağ-üste süpürme */}
+      <svg
+        className="pointer-events-none absolute inset-0 z-[2] h-full w-full"
+        viewBox="0 0 400 240"
+        preserveAspectRatio="xMidYMid slice"
+        aria-hidden
+      >
+        <defs>
+          <filter id="streak-blur" x="-5%" y="-400%" width="110%" height="900%">
+            <feGaussianBlur stdDeviation="0.3 3.5" />
+          </filter>
+        </defs>
+        {([
+          { dy: -55, o: 0.06, w: 0.5 },
+          { dy: -46, o: 0.10, w: 0.6 },
+          { dy: -38, o: 0.17, w: 0.8 },
+          { dy: -30, o: 0.28, w: 1.0 },
+          { dy: -22, o: 0.44, w: 1.2 },
+          { dy: -14, o: 0.62, w: 1.5 },
+          { dy:  -7, o: 0.78, w: 1.7 },
+          { dy:  -2, o: 0.88, w: 1.9 },
+          { dy:   2, o: 0.88, w: 1.9 },
+          { dy:   7, o: 0.78, w: 1.7 },
+          { dy:  14, o: 0.60, w: 1.5 },
+          { dy:  22, o: 0.42, w: 1.2 },
+          { dy:  31, o: 0.26, w: 0.9 },
+          { dy:  40, o: 0.15, w: 0.7 },
+          { dy:  50, o: 0.08, w: 0.55 },
+          { dy:  60, o: 0.04, w: 0.45 },
+        ] as const).map(({ dy, o, w }, i) => (
+          <path
+            key={i}
+            d={`M -40,${130 + dy} Q 210,${75 + dy * 0.45} 460,${38 + dy * 0.25}`}
+            stroke={`rgba(160,215,255,${o})`}
+            strokeWidth={w}
+            fill="none"
+            filter="url(#streak-blur)"
+          />
+        ))}
+      </svg>
+
+      {/* Metin — sol üst */}
+      <div className="absolute left-0 top-0 z-[10] p-4 sm:p-5">
+        <h3 className="text-[13.5px] font-bold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-[15px]">
           {title}
         </h3>
-        <p className="mt-1 line-clamp-2 text-[12px] leading-relaxed text-white/55 sm:mt-1.5 sm:text-[13px]">{subtitle}</p>
+        <p className="mt-1 line-clamp-2 max-w-[13rem] text-[11px] leading-relaxed text-white/65 sm:text-[12px]">
+          {subtitle}
+        </p>
       </div>
-      <div className="relative z-[1] mt-2.5 flex h-[8.25rem] shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/[0.08] bg-[#121f33] py-1.5 shadow-[inset_0_2px_20px_rgba(0,0,0,0.35)] sm:mt-3 sm:h-[9rem] sm:py-2">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-90"
-          style={{
-            background:
-              "radial-gradient(ellipse 100% 85% at 50% 100%, rgba(83,122,184,0.12), transparent 55%), radial-gradient(circle at 80% 15%, rgba(83,122,184,0.08), transparent 45%)",
-          }}
-          aria-hidden
-        />
-        <Image
-          src={imageSrc}
-          alt=""
-          width={400}
-          height={280}
-          sizes="(max-width: 768px) 85vw, 280px"
-          className="relative z-[1] mx-auto max-h-full w-full max-w-full object-contain object-center drop-shadow-[0_14px_36px_rgba(0,0,0,0.5)] transition-transform duration-300 group-hover:scale-[1.03]"
-          priority={imagePriority}
-          quality={80}
-        />
-      </div>
-      <div className="relative z-[1] mt-auto shrink-0 border-t border-white/[0.08] pt-3 sm:pt-4">
-        <div className="grid grid-cols-3 items-start gap-1.5 sm:gap-2">
-          {triple.map((f, i) => (
-            <div key={`${f.label}-${i}`} className="flex min-h-0 flex-col items-center px-0.5 text-center">
-              <div className="mb-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/28 sm:mb-1.5">
-                <HomeMarketStripFeatureIcon index={i} className="h-5 w-5 text-primary" />
-              </div>
-              <p className="flex min-h-[2.35rem] w-full items-start justify-center text-[10px] font-bold leading-tight text-white/90 sm:min-h-[2.5rem] sm:text-[11px]">
-                <span className="line-clamp-2">{f.label}</span>
-              </p>
-              <p className="mt-0.5 flex min-h-[2.1rem] w-full items-start justify-center text-[9px] leading-snug text-white/55 sm:min-h-[2.35rem] sm:text-[10px]">
-                <span className="line-clamp-2">{f.desc}</span>
-              </p>
+
+      {/* 3 ürün görseli — alta hizalı, ortadaki büyük */}
+      <div className="absolute inset-x-0 bottom-0 z-[5] grid grid-cols-3 items-end gap-0.5 px-2 pb-10 sm:gap-1 sm:px-3 sm:pb-12">
+        {thumbs.map((thumbSrc, i) => {
+          const scale = THUMB_VISUAL_SCALE[thumbSrc] ?? 1;
+          const isCenter = i === 1;
+          return (
+            <div
+              key={`${thumbSrc}-${i}`}
+              className={`relative w-full transition-transform duration-500 ease-out group-hover:scale-[1.05] ${isCenter ? "h-[10rem] sm:h-[11.5rem]" : "h-[6.5rem] sm:h-[7.5rem]"}`}
+              style={{ transform: `scale(${scale})` }}
+            >
+              <Image
+                src={thumbSrc}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 28vw, 110px"
+                className="object-contain object-bottom drop-shadow-[0_6px_22px_rgba(0,0,0,0.85)]"
+                priority={imagePriority && i === 0}
+                quality={82}
+              />
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </Link>
   );
@@ -1486,31 +1386,20 @@ function SectionHead({
   );
 }
 
-function PillarJourneyStepIcon({ step }: { step: number }) {
-  const cls = "h-5 w-5 text-[#1e3a5f]";
-  const sw = 1.55;
-  const s = step % 3;
-  if (s === 0) {
-    return (
-      <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" />
-        <path strokeLinecap="round" d="M12 12l8-4.5M12 12v9M12 12L4 7.5" />
-      </svg>
-    );
-  }
-  if (s === 1) {
-    return (
-      <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M8 7h11M8 17h11M5 12h14" />
-      </svg>
-    );
-  }
-  return (
-    <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M6 21V10l6-4 6 4v11M9 21v-5h6v5" />
-    </svg>
-  );
+/** "01 — Analiz & Mühendislik" → "Analiz & Mühendislik" (büyük numara ayrı gösterilir) */
+function pillarStepLabel(tag: string): string {
+  const stripped = tag.replace(/^\s*0?\d+\s*[—–\-]\s*/u, "").trim();
+  return stripped || tag;
 }
+
+/** Referans — yumuşak şeftali tonu büyük adım numaraları için */
+const PILLAR_STEP_NUM_COLOR = "#e8c5b0";
+
+const pillarNumberPositions = [
+  "lg:left-0 lg:top-0",
+  "lg:right-0 lg:top-0",
+  "lg:left-0 lg:bottom-0",
+] as const;
 
 function HomeEngineeringPillarsJourneyStrip({
   pillars,
@@ -1527,95 +1416,167 @@ function HomeEngineeringPillarsJourneyStrip({
 }) {
   const title = (strip?.title ?? "").trim() || fallbackTitle.trim();
   const subtitle = (strip?.subtitle ?? "").trim();
-  const lead = (strip?.lead ?? "").trim();
 
   return (
     <div id="pillars-journey" className="mt-12 scroll-mt-24 md:scroll-mt-[5.5rem]">
-      <header className="mb-8 max-w-[52rem] lg:mb-10">
-        <h2 className="text-balance text-[clamp(1.25rem,2.6vw,1.85rem)] font-bold tracking-[-0.025em] text-ink">{title}</h2>
-        {subtitle ? (
-          <p className="mt-1 text-sm font-semibold tracking-wide text-primary sm:text-base">{subtitle}</p>
-        ) : null}
-        {lead ? (
-          <p className={`mt-4 max-w-[52ch] text-[15px] leading-[1.72] text-secondary/80 sm:text-[16px] sm:leading-[1.68]`}>
-            {lead}
-          </p>
-        ) : null}
-      </header>
+      <div className="relative overflow-hidden rounded-[1.75rem] bg-sand-100 px-5 py-10 shadow-[0_30px_80px_-44px_rgba(15,22,36,0.22)] ring-1 ring-ink/[0.06] sm:rounded-[2.25rem] sm:px-9 sm:py-14 lg:px-14 lg:py-[4.5rem]">
+        <header className="mb-14 sm:mb-16 lg:mb-20">
+          <h2
+            className="font-black uppercase text-ink"
+            style={{ fontSize: "clamp(1.9rem, 4.8vw, 3.75rem)", lineHeight: 0.95, letterSpacing: "-0.03em" }}
+          >
+            {title}
+          </h2>
+          {subtitle ? (
+            <p
+              className="mt-2.5 font-bold uppercase text-primary"
+              style={{ fontSize: "clamp(1.25rem, 2.8vw, 2.2rem)", lineHeight: 1.05, letterSpacing: "-0.015em" }}
+            >
+              {subtitle}
+            </p>
+          ) : null}
+        </header>
 
-      <div className="flex flex-col gap-9 sm:gap-10 lg:gap-12">
-        {pillars.map((pillar, index) => {
-          const isOdd = index % 2 === 1;
-          const rawPath = (pillar.href ?? pillarLinks[index] ?? "/kurumsal").trim() || "/kurumsal";
-          const path = rawPath.startsWith("/") ? rawPath : `/${rawPath}`;
-          const pillarHref = `/${locale}${path}`;
-          const pillarCta = (pillar.cta ?? pc.pillarCta).trim() || pc.pillarCta;
-          const img = pillarImages[index] ?? pillarImages[0]!;
-          const num = String(index + 1).padStart(2, "0");
-          const clip = isOdd ? "polygon(0% 0%, 90% 0%, 100% 100%, 8% 100%)" : "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)";
+        <div className="flex flex-col gap-14 sm:gap-16 lg:gap-20">
+          {pillars.map((pillar, index) => {
+            const isOdd = index % 2 === 1;
+            const rawPath = (pillar.href ?? pillarLinks[index] ?? "/kurumsal").trim() || "/kurumsal";
+            const path = rawPath.startsWith("/") ? rawPath : `/${rawPath}`;
+            const pillarHref = `/${locale}${path}`;
+            const pillarCta = (pillar.cta ?? pc.pillarCta).trim() || pc.pillarCta;
+            const img = pillarImages[index] ?? pillarImages[0]!;
+            const num = String(index + 1).padStart(2, "0");
+            const stepLabel = pillarStepLabel(pillar.tag);
 
-          return (
-            <div key={`${index}-${pillar.tag}`}>
-              <div className="flex flex-col gap-4 lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-4 lg:gap-y-0">
+            const numberPos = pillarNumberPositions[index % pillarNumberPositions.length] ?? pillarNumberPositions[0]!;
+
+            /* ── Desktop: büyük blend sayı ── */
+            const numberBlock = (
+              <span
+                key="num"
+                aria-hidden
+                className={`pointer-events-none absolute hidden select-none font-home-display font-bold lg:block lg:opacity-[0.82] ${numberPos}`}
+                style={{
+                  fontSize: "clamp(8rem, 22vw, 22rem)",
+                  lineHeight: 0.82,
+                  color: PILLAR_STEP_NUM_COLOR,
+                  letterSpacing: "-0.05em",
+                  mixBlendMode: "multiply",
+                  zIndex: 0,
+                  WebkitFontSmoothing: "antialiased",
+                  textRendering: "geometricPrecision",
+                  WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 40%, rgba(0,0,0,0.35) 75%, rgba(0,0,0,0.15) 100%)",
+                  maskImage: "linear-gradient(to bottom, black 0%, black 40%, rgba(0,0,0,0.35) 75%, rgba(0,0,0,0.15) 100%)",
+                }}
+              >
+                {num}
+              </span>
+            );
+
+            /* ── Desktop: görsel ── */
+            const imageBlock = (
+              <Link
+                key="img"
+                href={pillarHref}
+                className="group relative z-10 hidden w-full lg:col-start-2 lg:col-end-3 lg:block"
+              >
                 <div
-                  className={`order-1 flex justify-center lg:col-span-3 lg:row-span-1 ${
-                    isOdd ? "lg:order-3 lg:justify-end lg:pr-0" : "lg:order-1 lg:justify-start lg:pl-0"
-                  }`}
+                  className="relative h-[20rem] w-full overflow-hidden shadow-[0_24px_56px_-22px_rgba(15,22,36,0.28)]"
+                  style={{ clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)" }}
                 >
+                  <Image
+                    src={img}
+                    alt={pillar.title}
+                    fill
+                    sizes="48vw"
+                    className="object-cover object-center transition-transform duration-700 ease-out [transform:scale(1.02)] group-hover:[transform:scale(1.05)]"
+                  />
+                </div>
+              </Link>
+            );
+
+            /* ── Desktop: metin ── */
+            const contentBlock = (
+              <div
+                key="content"
+                className={`relative z-10 hidden w-full max-w-[26rem] lg:block ${
+                  isOdd ? "lg:col-start-1 lg:col-end-2" : "lg:col-start-3 lg:col-end-4"
+                }`}
+              >
+                <p className="flex items-center gap-2.5 text-[15px] text-secondary/85">
+                  <span aria-hidden className="text-[1.15em] leading-none text-primary">✦</span>
+                  <span>{stepLabel}</span>
+                </p>
+                <h3
+                  className="mt-3 font-black uppercase text-ink"
+                  style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)", lineHeight: 1.08, letterSpacing: "-0.015em" }}
+                >
+                  {pillar.title}
+                </h3>
+                <p className="mt-5 text-[15px] leading-[1.7] text-secondary/75">{pillar.intro}</p>
+                <Link
+                  href={pillarHref}
+                  className="mt-7 inline-flex items-center gap-3 bg-primary px-7 py-4 text-[13px] font-semibold tracking-wide text-white transition-colors duration-300 hover:bg-ink"
+                >
+                  {pillarCta}
+                  <span aria-hidden className="text-base leading-none">→</span>
+                </Link>
+              </div>
+            );
+
+            /* ── Mobil kart ── */
+            const mobileCard = (
+              <div key="mobile" className="block lg:hidden">
+                <div className="flex items-start gap-4">
+                  {/* Turuncu sayı */}
                   <span
-                    className="font-mono-eng text-[clamp(3.25rem,13vw,9rem)] font-black leading-[0.85] tracking-[-0.045em] text-primary/[0.22] sm:text-[clamp(3.75rem,11vw,7.5rem)] lg:text-[clamp(4rem,9.5vw,8.5rem)]"
                     aria-hidden
+                    className="shrink-0 font-home-display font-black leading-none text-primary"
+                    style={{ fontSize: "clamp(3rem, 13vw, 3.75rem)", letterSpacing: "-0.04em" }}
                   >
                     {num}
                   </span>
-                </div>
-
-                <div className="order-2 lg:col-span-4 lg:order-2">
-                  <Link href={pillarHref} className="group relative mx-auto block w-full max-w-[14.5rem] sm:max-w-xs lg:max-w-none">
-                    <div
-                      className="relative aspect-[4/3] w-full overflow-hidden bg-transparent shadow-[0_12px_32px_-22px_rgba(15,22,36,0.18)]"
-                      style={{ clipPath: clip }}
+                  {/* İçerik */}
+                  <div className="flex-1 pt-1">
+                    <p className="text-[11px] font-semibold uppercase tracking-widest text-secondary/60">
+                      {stepLabel}
+                    </p>
+                    <h3
+                      className="mt-1 font-black uppercase text-ink"
+                      style={{ fontSize: "clamp(1rem, 4.5vw, 1.2rem)", lineHeight: 1.1, letterSpacing: "-0.015em" }}
                     >
-                      <Image
-                        src={img}
-                        alt={pillar.title}
-                        fill
-                        sizes="(max-width: 1024px) 88vw, 36vw"
-                        className="object-cover object-center transition-transform duration-500 ease-out [transform:scale(1.08)] group-hover:[transform:scale(1.12)]"
-                      />
-                    </div>
-                  </Link>
-                </div>
-
-                <div className={`order-3 px-0 sm:px-0 lg:col-span-5 ${isOdd ? "lg:order-1" : "lg:order-3"}`}>
-                  <div className="flex items-start gap-2.5">
-                    <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-ink/10 bg-transparent">
-                      <PillarJourneyStepIcon step={index} />
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <p className="font-mono-eng text-[10px] font-semibold uppercase tracking-[0.16em] text-primary">{pillar.tag}</p>
-                      <h3 className="mt-1 text-balance text-base font-bold tracking-[-0.02em] text-ink sm:text-lg lg:text-[1.125rem] lg:leading-snug">
-                        {pillar.title}
-                      </h3>
-                      <p className="mt-2 max-w-[38ch] text-[14px] leading-[1.65] text-secondary/72">{pillar.intro}</p>
-                      <div className="mt-5">
-                        <Link
-                          href={pillarHref}
-                          className="inline-flex items-center gap-1.5 rounded-md bg-primary px-5 py-2.5 text-[11px] font-semibold tracking-[-0.01em] text-white shadow-[0_8px_20px_-12px_rgba(239, 95, 23,0.5)] transition-colors hover:bg-primary-deep"
-                        >
-                          {pillarCta}
-                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                          </svg>
-                        </Link>
-                      </div>
-                    </div>
+                      {pillar.title}
+                    </h3>
+                    <p className="mt-2 text-[13px] leading-[1.65] text-secondary/70">{pillar.intro}</p>
+                    <Link
+                      href={pillarHref}
+                      className="mt-4 inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-[12px] font-semibold tracking-wide text-white transition-colors hover:bg-ink"
+                    >
+                      {pillarCta}
+                      <span aria-hidden className="text-sm leading-none">→</span>
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+
+            return (
+              <article
+                key={`${index}-${pillar.tag}`}
+                className={`relative grid items-center gap-8 sm:gap-10 ${
+                  isOdd
+                    ? "lg:grid-cols-[32%_minmax(0,1fr)_26%]"
+                    : "lg:grid-cols-[26%_minmax(0,1fr)_32%]"
+                }`}
+              >
+                {mobileCard}
+                {isOdd
+                  ? [contentBlock, imageBlock, numberBlock]
+                  : [numberBlock, imageBlock, contentBlock]}
+              </article>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -1663,13 +1624,11 @@ export default function HomeClient({
       setAllowRestrictedSections(!isConsentRestrictedMinimal(parsed));
     };
 
-    queueMicrotask(() => {
-      try {
-        applyConsent(readCookieConsentRaw());
-      } catch {
-        setAllowRestrictedSections(null);
-      }
-    });
+    try {
+      applyConsent(readCookieConsentRaw());
+    } catch {
+      setAllowRestrictedSections(null);
+    }
 
     const onConsentUpdated = (event: Event) => {
       const custom = event as CustomEvent<{ analytics?: boolean; marketing?: boolean } | null>;
@@ -1689,30 +1648,22 @@ export default function HomeClient({
     return () => window.removeEventListener(COOKIE_CONSENT_EVENT, onConsentUpdated as EventListener);
   }, []);
 
-  const bands = dict.homeBands;
-  const solutionStripRows = pickStripFeatureRowsForCount(
-    bands?.solutionStripFeatureRows,
-    DEFAULT_SOLUTION_STRIP_ROWS,
-    homeSolutionBandSlides.length,
-  );
-
   const homeItems = dict.productCategories.items;
   const homeProductBandRows = PRODUCT_CATEGORY_NAV.slice(0, 9).map((nav, i) => {
     const meta = productCategoryMeta[i];
     const labelFromHome = homeItems[i]?.label?.trim();
+    const fallbackImg = productFallbackImages[i % productFallbackImages.length]!;
+    const thumbs: readonly [string, string, string] = meta?.thumbs
+      ? [meta.thumbs[0], meta.thumbs[1], meta.thumbs[2]]
+      : [meta?.image ?? fallbackImg, fallbackImg, fallbackImg];
     return {
       label: labelFromHome || productSlugToFallbackLabel(nav.slug),
       href: meta?.href ?? `/urunler/${nav.slug}`,
-      image: meta?.image ?? productFallbackImages[i % productFallbackImages.length],
+      image: meta?.image ?? fallbackImg,
+      thumbs,
       blurb: productBlurbs[i] ?? pc.productFallbackDesc,
     };
   });
-  const productStripRows = pickStripFeatureRowsForCount(
-    bands?.productStripFeatureRows,
-    DEFAULT_PRODUCT_STRIP_ROWS,
-    homeProductBandRows.length,
-  );
-
   const scrollSolutionStrip = (direction: "prev" | "next") => {
     scrollHorizontalStrip(solutionStripCarouselRef.current, "[data-solution-strip-card]", direction, SOLUTION_STRIP_PAGE_CARD_COUNT);
   };
@@ -1836,7 +1787,7 @@ export default function HomeClient({
                 <div className="min-w-0 flex-1">
                   <div
                     ref={solutionStripCarouselRef}
-                    className="flex gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
+                    className="flex items-stretch gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                   >
                     {homeSolutionBandSlides.map((item, i) => {
@@ -1859,7 +1810,6 @@ export default function HomeClient({
                             subtitle={desc}
                             heroSrc={heroSrc}
                             productThumbs={productThumbs}
-                            features={solutionStripRows[i] ?? solutionStripRows[0]!}
                             leadIconKind={solutionLeadIconFromHref(item.href)}
                             heroPriority={i === 0}
                           />
@@ -1905,8 +1855,8 @@ export default function HomeClient({
             </button>
             <div className="min-w-0 flex-1">
               <div
-                ref={productStripCarouselRef}
-                className="flex gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
+                    ref={productStripCarouselRef}
+                    className="flex items-stretch gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
                 style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               >
                 {homeProductBandRows.map((row, i) => {
@@ -1921,8 +1871,7 @@ export default function HomeClient({
                         href={row.href}
                         title={row.label}
                         subtitle={row.blurb}
-                        imageSrc={row.image}
-                        features={productStripRows[i] ?? productStripRows[0]!}
+                        thumbs={row.thumbs}
                         imagePriority={i === 0}
                       />
                     </div>

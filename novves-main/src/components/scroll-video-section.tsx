@@ -3,6 +3,12 @@
 import { useRef, useEffect, useState, useCallback, type CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 type StartCard = {
   badge: string;
@@ -247,8 +253,6 @@ export function ScrollVideoSection({
         };
     }
 
-    let scrollRafId = 0;
-    let scrollRafPending = false;
     /** Tema DOM’u — daha kaba adım = daha az gradient/string repaint */
     let lastOpenDomKey = -999;
     /** endCardSpecs satırları — children cache (querySelectorAll her temada yok) */
@@ -262,242 +266,193 @@ export function ScrollVideoSection({
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    /**
-     * Duraklatılmış videoda requestVideoFrameCallback çoğu tarayıcıda tetiklenmez → scrub hiç işlemez.
-     * Tek rAF ile hedef süreyi birleştirip seek (plan: tek seek / kuyruk).
-     */
-    let desktopScrubFlushRaf = 0;
-    let desktopScrubPendingT: number | null = null;
+    function applyScene(progress: number) {
+      /** 0 = grimsi; 1 = açık. Başta daha uzun gri: geç başlar, geç biter. */
+      const open = Math.min(Math.max((progress - 0.1) / 0.78, 0), 1);
+      const openDomKey = Math.round(open * THEME_OPEN_DOM_STEPS);
+      const shellBg = lerpRgb(SCROLL_SHELL_DARK, SCROLL_SHELL_LIGHT, open);
+      /** Kutu = bölüm zemini (sağdaki ana ton) ile aynı; ayrı koyu blok yok. */
+      const boxFill = shellBg;
+      const textBlend = Math.min(Math.max((open - 0.32) / 0.64, 0), 1);
+      const titleCol = lerpRgb([255, 255, 255], SCROLL_INK, textBlend);
+      const subCol = lerpRgb(SCROLL_SUB_DARK, SCROLL_SUB_LIGHT, textBlend);
+      const accentCol = lerpRgb(SCROLL_ACCENT_DARK, SCROLL_ACCENT_LIGHT, textBlend);
+      const specValCol = lerpRgb([255, 255, 255], SCROLL_INK, textBlend);
+      const cornerTint = lerpRgb([230, 230, 230], [90, 88, 82], textBlend);
+      const boxEdge = textBlend < 0.38 ? "rgba(255,255,255,0.11)" : SCROLL_DIVIDER_LIGHT;
 
-    function cancelQueuedDesktopScrub() {
-      if (desktopScrubFlushRaf) {
-        cancelAnimationFrame(desktopScrubFlushRaf);
-        desktopScrubFlushRaf = 0;
+      const pr = Math.round(lerp(SCROLL_PANEL_DARK[0], SCROLL_PANEL_LIGHT[0], open));
+      const pg = Math.round(lerp(SCROLL_PANEL_DARK[1], SCROLL_PANEL_LIGHT[1], open));
+      const pb = Math.round(lerp(SCROLL_PANEL_DARK[2], SCROLL_PANEL_LIGHT[2], open));
+
+      if (openDomKey !== lastOpenDomKey) {
+        lastOpenDomKey = openDomKey;
+        if (stickyShellRef.current) {
+          stickyShellRef.current.style.backgroundColor = shellBg;
+        }
+        if (canvasWashRef.current) {
+          canvasWashRef.current.style.opacity = String((1 - open) * 0.42);
+        }
+        if (panelRef.current) {
+          panelRef.current.style.background = [
+            `radial-gradient(ellipse 95% 125% at 0% 48%, rgba(${pr},${pg},${pb},0.62) 0%, rgba(${pr},${pg},${pb},0.22) 42%, transparent 62%)`,
+            `linear-gradient(90deg, rgba(${pr},${pg},${pb},0.78) 0%, rgba(${pr},${pg},${pb},0.28) 38%, rgba(${pr},${pg},${pb},0.08) 54%, rgba(${pr},${pg},${pb},0) 72%)`,
+          ].join(",");
+        }
+
+        if (containerRef.current) {
+          containerRef.current.style.backgroundColor = shellBg;
+        }
+        if (sideLabelRef.current) {
+          sideLabelRef.current.style.color = lerpRgb([210, 208, 200], [118, 114, 108], open);
+        }
+
+        for (const el of [startCardSurfaceRef.current, endCardSurfaceRef.current]) {
+          if (!el) continue;
+          el.style.backgroundColor = boxFill;
+          el.style.borderColor = boxEdge;
+          el.style.color = cornerTint;
+          el.style.setProperty("--c-title", titleCol);
+          el.style.setProperty("--c-sub", subCol);
+          el.style.setProperty("--c-accent", accentCol);
+          el.style.setProperty("--c-spec-v", specValCol);
+        }
+
+        if (endCardSpecsRef.current) {
+          const d = textBlend < 0.38 ? "rgba(255,255,255,0.14)" : SCROLL_DIVIDER_LIGHT;
+          const grid = endCardSpecsRef.current;
+          const n = grid.children.length;
+          if (!specRowCells || specRowCells.length !== n) {
+            specRowCells = Array.from(grid.children) as HTMLElement[];
+          }
+          grid.style.borderTopColor = d;
+          grid.style.borderBottomColor = d;
+          specRowCells.forEach((cell, i) => {
+            cell.style.borderRight = i < specRowCells!.length - 1 ? `1px solid ${d}` : "none";
+          });
+        }
+
+        if (endCardSurfaceRef.current) {
+          const ecs = endCardSurfaceRef.current;
+          if (textBlend > 0.48) {
+            ecs.style.setProperty("--cta-bg", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
+            ecs.style.setProperty("--cta-border", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
+          } else {
+            ecs.style.setProperty("--cta-bg", "rgba(255,255,255,0.08)");
+            ecs.style.setProperty("--cta-border", "rgba(255,255,255,0.22)");
+          }
+          ecs.style.setProperty("--cta-fg", "#ffffff");
+        }
+        if (progressBarRef.current) {
+          progressBarRef.current.style.backgroundColor = accentCol;
+        }
       }
-      desktopScrubPendingT = null;
-    }
 
-    function queueDesktopScrubSeek(videoEl: HTMLVideoElement, seconds: number) {
-      desktopScrubPendingT = seconds;
-      if (desktopScrubFlushRaf) return;
-      desktopScrubFlushRaf = requestAnimationFrame(() => {
-        desktopScrubFlushRaf = 0;
-        const t = desktopScrubPendingT;
-        desktopScrubPendingT = null;
-        if (t == null || !Number.isFinite(t)) return;
-        scrubVideoTo(videoEl, t, true);
-        if (desktopScrubPendingT != null) {
-          queueDesktopScrubSeek(videoEl, desktopScrubPendingT);
-        }
-      });
-    }
-
-    function onScroll() {
-      if (scrollRafPending) return;
-      scrollRafPending = true;
-      scrollRafId = requestAnimationFrame(() => {
-        scrollRafPending = false;
-        scrollRafId = 0;
-        const container = containerRef.current;
-        if (!container) return;
-
-        const rect = container.getBoundingClientRect();
-        /* `hidden lg:block`: küçük ekranda layout yok — scrub/tema boşa çalışmasın */
-        if (rect.width < 1 && rect.height < 1) return;
-
-        const viewH = window.innerHeight;
-        /** Geniş margin: hero alanı ekranda / yakınında değilse tema + video scrub atlanır (IO yok — display:none yanlış negatif riski yok) */
-        const heroMargin = 420;
-        const heroActive = rect.bottom > -heroMargin && rect.top < viewH + heroMargin;
-        if (!heroActive) return;
-
-        const scrolled = -rect.top;
-        const scrollRange = container.offsetHeight - viewH;
-        const progress = Math.min(Math.max(scrolled / scrollRange, 0), 1);
-
-        /** 0 = grimsi; 1 = açık. Başta daha uzun gri: geç başlar, geç biter. */
-        const open = Math.min(Math.max((progress - 0.1) / 0.78, 0), 1);
-        const openDomKey = Math.round(open * THEME_OPEN_DOM_STEPS);
-        const shellBg = lerpRgb(SCROLL_SHELL_DARK, SCROLL_SHELL_LIGHT, open);
-        /** Kutu = bölüm zemini (sağdaki ana ton) ile aynı; ayrı koyu blok yok. */
-        const boxFill = shellBg;
-        const textBlend = Math.min(Math.max((open - 0.32) / 0.64, 0), 1);
-        const titleCol = lerpRgb([255, 255, 255], SCROLL_INK, textBlend);
-        const subCol = lerpRgb(SCROLL_SUB_DARK, SCROLL_SUB_LIGHT, textBlend);
-        const accentCol = lerpRgb(SCROLL_ACCENT_DARK, SCROLL_ACCENT_LIGHT, textBlend);
-        const specValCol = lerpRgb([255, 255, 255], SCROLL_INK, textBlend);
-        const cornerTint = lerpRgb([230, 230, 230], [90, 88, 82], textBlend);
-        const boxEdge = textBlend < 0.38 ? "rgba(255,255,255,0.11)" : SCROLL_DIVIDER_LIGHT;
-
-        const pr = Math.round(lerp(SCROLL_PANEL_DARK[0], SCROLL_PANEL_LIGHT[0], open));
-        const pg = Math.round(lerp(SCROLL_PANEL_DARK[1], SCROLL_PANEL_LIGHT[1], open));
-        const pb = Math.round(lerp(SCROLL_PANEL_DARK[2], SCROLL_PANEL_LIGHT[2], open));
-
-        if (openDomKey !== lastOpenDomKey) {
-          lastOpenDomKey = openDomKey;
-          if (stickyShellRef.current) {
-            stickyShellRef.current.style.backgroundColor = shellBg;
-          }
-          if (canvasWashRef.current) {
-            canvasWashRef.current.style.opacity = String((1 - open) * 0.42);
-          }
-          if (panelRef.current) {
-            panelRef.current.style.background = [
-              `radial-gradient(ellipse 95% 125% at 0% 48%, rgba(${pr},${pg},${pb},0.62) 0%, rgba(${pr},${pg},${pb},0.22) 42%, transparent 62%)`,
-              `linear-gradient(90deg, rgba(${pr},${pg},${pb},0.78) 0%, rgba(${pr},${pg},${pb},0.28) 38%, rgba(${pr},${pg},${pb},0.08) 54%, rgba(${pr},${pg},${pb},0) 72%)`,
-            ].join(",");
-          }
-
-          if (containerRef.current) {
-            containerRef.current.style.backgroundColor = shellBg;
-          }
-          if (sideLabelRef.current) {
-            sideLabelRef.current.style.color = lerpRgb([210, 208, 200], [118, 114, 108], open);
-          }
-
-          for (const el of [startCardSurfaceRef.current, endCardSurfaceRef.current]) {
-            if (!el) continue;
-            el.style.backgroundColor = boxFill;
-            el.style.borderColor = boxEdge;
-            el.style.color = cornerTint;
-            el.style.setProperty("--c-title", titleCol);
-            el.style.setProperty("--c-sub", subCol);
-            el.style.setProperty("--c-accent", accentCol);
-            el.style.setProperty("--c-spec-v", specValCol);
-          }
-
-          if (endCardSpecsRef.current) {
-            const d = textBlend < 0.38 ? "rgba(255,255,255,0.14)" : SCROLL_DIVIDER_LIGHT;
-            const grid = endCardSpecsRef.current;
-            const n = grid.children.length;
-            if (!specRowCells || specRowCells.length !== n) {
-              specRowCells = Array.from(grid.children) as HTMLElement[];
-            }
-            grid.style.borderTopColor = d;
-            grid.style.borderBottomColor = d;
-            specRowCells.forEach((cell, i) => {
-              cell.style.borderRight = i < specRowCells!.length - 1 ? `1px solid ${d}` : "none";
-            });
-          }
-
-          if (endCardSurfaceRef.current) {
-            const ecs = endCardSurfaceRef.current;
-            if (textBlend > 0.48) {
-              ecs.style.setProperty("--cta-bg", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
-              ecs.style.setProperty("--cta-border", `rgb(${SCROLL_INK[0]},${SCROLL_INK[1]},${SCROLL_INK[2]})`);
+      if (isVideoMode) {
+        const v = videoRef.current;
+        if (v && v.readyState >= 1) {
+          const d = v.duration;
+          if (Number.isFinite(d) && d > 0.05) {
+            if (prefersReducedMotion) {
+              if (lastDesktopVideoStep !== 0) {
+                lastDesktopVideoStep = 0;
+                scrubVideoTo(v, 0, true);
+              }
             } else {
-              ecs.style.setProperty("--cta-bg", "rgba(255,255,255,0.08)");
-              ecs.style.setProperty("--cta-border", "rgba(255,255,255,0.22)");
-            }
-            ecs.style.setProperty("--cta-fg", "#ffffff");
-          }
-          if (progressBarRef.current) {
-            progressBarRef.current.style.backgroundColor = accentCol;
-          }
-        }
-
-        if (isVideoMode) {
-          const v = videoRef.current;
-          if (v && v.readyState >= 1) {
-            const d = v.duration;
-            if (Number.isFinite(d) && d > 0.05) {
-              if (prefersReducedMotion) {
-                cancelQueuedDesktopScrub();
-                if (lastDesktopVideoStep !== 0) {
-                  lastDesktopVideoStep = 0;
-                  scrubVideoTo(v, 0, true);
-                }
-              } else {
-                const n = DESKTOP_VIDEO_SCRUB_STEPS;
-                const step = Math.min(n - 1, Math.max(0, Math.round(progress * (n - 1))));
-                if (step !== lastDesktopVideoStep) {
-                  lastDesktopVideoStep = step;
-                  const t = (step / (n - 1)) * (d - 0.001);
-                  queueDesktopScrubSeek(v, t);
-                }
+              const n = DESKTOP_VIDEO_SCRUB_STEPS;
+              const step = Math.min(n - 1, Math.max(0, Math.round(progress * (n - 1))));
+              if (step !== lastDesktopVideoStep) {
+                lastDesktopVideoStep = step;
+                const t = (step / (n - 1)) * (d - 0.001);
+                scrubVideoTo(v, t, true);
               }
             }
           }
-        } else if (totalFrames != null) {
-          const frameIndex = Math.round(progress * (totalFrames - 1));
-          syncFrameWindow(frameIndex);
-          if (frameIndex !== currentFrameRef.current) {
-            currentFrameRef.current = frameIndex;
-            renderFrame(frameIndex);
-          }
         }
+      } else if (totalFrames != null) {
+        const frameIndex = Math.round(progress * (totalFrames - 1));
+        syncFrameWindow(frameIndex);
+        if (frameIndex !== currentFrameRef.current) {
+          currentFrameRef.current = frameIndex;
+          renderFrame(frameIndex);
+        }
+      }
 
-        let pq = 0;
-        let runMotion = false;
-        {
-          const mk = Math.round(progress * MOTION_DOM_STEPS);
-          if (mk !== lastMotionDomKey) {
-            lastMotionDomKey = mk;
-            pq = mk / MOTION_DOM_STEPS;
-            runMotion = true;
-          }
+      const mk = Math.round(progress * MOTION_DOM_STEPS);
+      if (mk !== lastMotionDomKey) {
+        lastMotionDomKey = mk;
+        const pq = mk / MOTION_DOM_STEPS;
+        if (startCardRef.current) {
+          const fade = Math.max(1 - pq * 2.4, 0);
+          startCardRef.current.style.opacity = String(fade);
+          startCardRef.current.style.transform = `translateY(-${pq * 30}px)`;
         }
-        if (runMotion) {
-          if (startCardRef.current) {
-            const fade = Math.max(1 - pq * 2.4, 0);
-            startCardRef.current.style.opacity = String(fade);
-            startCardRef.current.style.transform = `translateY(-${pq * 30}px)`;
-          }
-          if (panelRef.current) {
-            const slideOut = Math.min(Math.max((pq - 0.55) / 0.3, 0), 1);
-            panelRef.current.style.transform = `translateX(-${slideOut * 105}%)`;
-          }
-          {
-            const mediaEl = isScrollStill ? heroImageRef.current : isVideoMode ? videoRef.current : canvasRef.current;
-            if (mediaEl) {
-              /** Mobil hero ile aynı fan hissi — objectPosition + hafif scale (scroll ilerledikçe) */
-              const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
-              const fanX = 18 + transition * 14;
-              const fanScale = 1.14 - transition * 0.04;
-              mediaEl.style.objectPosition = `${fanX}% center`;
-              (mediaEl as HTMLElement).style.transform = `translateZ(0) scale(${fanScale})`;
-            }
-          }
-          if (endCardRef.current) {
-            const fade = Math.max((pq - 0.72) * 4, 0);
-            const shift = Math.max(40 - fade * 40, 0);
-            endCardRef.current.style.opacity = String(Math.min(fade, 1));
-            endCardRef.current.style.transform = `translateX(${shift}px)`;
-          }
-          if (statsRef.current) {
-            const fade = Math.max(1 - pq * 3.2, 0);
-            statsRef.current.style.opacity = String(fade);
-          }
+        if (panelRef.current) {
+          const slideOut = Math.min(Math.max((pq - 0.55) / 0.3, 0), 1);
+          panelRef.current.style.transform = `translateX(-${slideOut * 105}%)`;
         }
+        const mediaEl = isScrollStill ? heroImageRef.current : isVideoMode ? videoRef.current : canvasRef.current;
+        if (mediaEl) {
+          /** Mobil hero ile aynı fan hissi — objectPosition + hafif scale (scroll ilerledikçe) */
+          const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
+          const fanX = 18 + transition * 14;
+          const fanScale = 1.14 - transition * 0.04;
+          mediaEl.style.objectPosition = `${fanX}% center`;
+          (mediaEl as HTMLElement).style.transform = `translateZ(0) scale(${fanScale})`;
+        }
+        if (endCardRef.current) {
+          const fade = Math.max((pq - 0.72) * 4, 0);
+          const shift = Math.max(40 - fade * 40, 0);
+          endCardRef.current.style.opacity = String(Math.min(fade, 1));
+          endCardRef.current.style.transform = `translateX(${shift}px)`;
+        }
+        if (statsRef.current) {
+          const fade = Math.max(1 - pq * 3.2, 0);
+          statsRef.current.style.opacity = String(fade);
+        }
+      }
 
-        const pbk = Math.min(
-          PROGRESS_BAR_STEPS,
-          Math.max(0, Math.round(progress * PROGRESS_BAR_STEPS))
-        );
-        if (pbk !== lastProgressBarKey && progressBarRef.current) {
-          lastProgressBarKey = pbk;
-          progressBarRef.current.style.transform = `scaleY(${progress})`;
-        }
-      });
+      const pbk = Math.min(
+        PROGRESS_BAR_STEPS,
+        Math.max(0, Math.round(progress * PROGRESS_BAR_STEPS))
+      );
+      if (pbk !== lastProgressBarKey && progressBarRef.current) {
+        lastProgressBarKey = pbk;
+        progressBarRef.current.style.transform = `scaleY(${progress})`;
+      }
     }
 
-    window.addEventListener("scroll", onScroll, { passive: true });
+    const container = containerRef.current;
+    if (!container) return;
+
+    /** GSAP ScrollTrigger: `scrub` değeri inertia/lerp ekler — video seek baskısını azaltıp ipeksi his verir.
+     *  prefers-reduced-motion: anlık (scrub: true), aksi halde ~0.6 sn yumuşatma. */
+    const ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: container,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: prefersReducedMotion ? true : 0.6,
+        invalidateOnRefresh: true,
+        onUpdate: (self) => applyScene(self.progress),
+        onRefresh: (self) => applyScene(self.progress),
+      });
+    }, container);
+
+    applyScene(0);
+
     const v = videoRef.current;
     const onMeta = () => {
       lastMotionDomKey = -999;
       lastDesktopVideoStep = -1;
       lastProgressBarKey = -999;
-      onScroll();
+      ScrollTrigger.refresh();
     };
     if (isVideoMode && v) v.addEventListener("loadedmetadata", onMeta);
-    onScroll();
 
     return () => {
-      cancelQueuedDesktopScrub();
-      window.removeEventListener("scroll", onScroll);
+      ctx.revert();
       if (isVideoMode && v) v.removeEventListener("loadedmetadata", onMeta);
-      scrollRafPending = false;
-      cancelAnimationFrame(scrollRafId);
       cancelAnimationFrame(rafRef.current);
       if (!isVideoMode && !isScrollStill) cache.clear();
       specRowCells = null;
@@ -892,6 +847,8 @@ function MobileScrollSection({
   const tf = totalFrames ?? 240;
   const [mobileFrame, setMobileFrame] = useState(tf);
   const [mobileProgress, setMobileProgress] = useState(0);
+  const lastMobileFrameRef = useRef(tf);
+  const lastMobileProgressRef = useRef(0);
 
   const mobileStageHeightSvh = Math.max(180, Math.round((235 * scrollVh) / 260));
 
@@ -986,8 +943,14 @@ function MobileScrollSection({
       }
 
       const frame = Math.round(startFrame + progress * (endFrame - startFrame));
-      setMobileFrame(frame);
-      setMobileProgress(progress);
+      if (frame !== lastMobileFrameRef.current) {
+        lastMobileFrameRef.current = frame;
+        setMobileFrame(frame);
+      }
+      if (progress !== lastMobileProgressRef.current) {
+        lastMobileProgressRef.current = progress;
+        setMobileProgress(progress);
+      }
     };
 
     const onScroll = () => {
@@ -1001,7 +964,7 @@ function MobileScrollSection({
       onScroll();
     };
 
-    updateFrame();
+    const initialRaf = requestAnimationFrame(updateFrame);
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize, { passive: true });
 
@@ -1021,6 +984,7 @@ function MobileScrollSection({
       window.removeEventListener("resize", onResize);
       mobileRafPending = false;
       cancelAnimationFrame(rafId);
+      cancelAnimationFrame(initialRaf);
       mobileVideoForMeta?.removeEventListener("loadedmetadata", onVideoMeta);
     };
   }, [tf, isMobileVideo, isMobileStill, isMobileMotion]);

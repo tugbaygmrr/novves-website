@@ -21,9 +21,10 @@ export type ParsedConsentFlags = {
 };
 
 export function parseStoredConsentJson(raw: string | null): ParsedConsentFlags | null {
-  if (!raw) return null;
+  const trimmed = raw?.trim();
+  if (!trimmed) return null;
   try {
-    const parsed = JSON.parse(raw) as { analytics?: unknown; marketing?: unknown };
+    const parsed = JSON.parse(trimmed) as { analytics?: unknown; marketing?: unknown };
     if (typeof parsed.analytics !== "boolean" || typeof parsed.marketing !== "boolean") return null;
     return { analytics: parsed.analytics, marketing: parsed.marketing };
   } catch {
@@ -81,7 +82,8 @@ export function readCookieConsentRaw(): string | null {
         raw = legacy;
       }
     }
-    return raw;
+    const trimmed = raw?.trim();
+    return trimmed || null;
   } catch {
     return null;
   }

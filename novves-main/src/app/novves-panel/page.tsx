@@ -58,7 +58,15 @@ export default function AdminLoginPage() {
   // Check if already authenticated
   useEffect(() => {
     fetch("/api/admin/auth/verify")
-      .then((r) => r.json())
+      .then(async (r) => {
+        const raw = await r.text();
+        if (!raw.trim()) return { authenticated: false as const };
+        try {
+          return JSON.parse(raw) as { authenticated?: boolean };
+        } catch {
+          return { authenticated: false as const };
+        }
+      })
       .then((d) => {
         if (d.authenticated) router.replace("/novves-panel/dashboard");
         else setChecking(false);

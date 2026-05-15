@@ -43,17 +43,11 @@ export function AirMovementFamiliesPanel({
     });
   }, [products.length]);
 
-  if (products.length === 0) return null;
-
   const product = products[selectedIndex];
-  if (!product) return null;
-
-  const img = productImages[product.name] ?? "";
-  const hrefBase = `/${locale}/urunler`;
-  const slug = productHrefs[product.name] ?? "";
-  const panelBlurb = familyBlurbs?.[product.name]?.trim();
+  const panelBlurb = product ? familyBlurbs?.[product.name]?.trim() : undefined;
 
   useEffect(() => {
+    if (!product) return;
     const rightPanel = document.getElementById(`family-panel-${selectedIndex}`);
     if (!rightPanel) return;
 
@@ -75,7 +69,13 @@ export function AirMovementFamiliesPanel({
       resizeObserver.disconnect();
       window.removeEventListener("resize", updateHeight);
     };
-  }, [selectedIndex, panelBlurb, product.subModels]);
+  }, [selectedIndex, panelBlurb, product?.subModels, product]);
+
+  if (products.length === 0 || !product) return null;
+
+  const img = productImages[product.name] ?? "";
+  const hrefBase = `/${locale}/urunler`;
+  const slug = productHrefs[product.name] ?? "";
 
   return (
     <div className="overflow-hidden rounded-3xl border border-ink/[0.07] bg-[#f0efe9]/[0.97] shadow-[0_32px_90px_-52px_rgba(15,23,42,0.38)] ring-1 ring-ink/[0.03] backdrop-blur-sm">

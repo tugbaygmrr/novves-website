@@ -146,12 +146,16 @@ export function GlobalJumpNav({
     if (!isHome) return;
 
     const sectionIds = jumpItems.map((item) => item.homeSectionId).filter(Boolean);
+    let sectionRaf = 0;
     const observer = new IntersectionObserver(
       (entries) => {
         const mostVisible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (mostVisible?.target?.id) setActiveHomeSection(mostVisible.target.id);
+        const id = mostVisible?.target?.id;
+        if (!id) return;
+        cancelAnimationFrame(sectionRaf);
+        sectionRaf = requestAnimationFrame(() => setActiveHomeSection(id));
       },
       { rootMargin: "-32% 0px -42% 0px", threshold: [0.2, 0.45, 0.7] },
     );
@@ -161,7 +165,10 @@ export function GlobalJumpNav({
       if (el) observer.observe(el);
     });
 
-    return () => observer.disconnect();
+    return () => {
+      cancelAnimationFrame(sectionRaf);
+      observer.disconnect();
+    };
   }, [isHome, jumpItems]);
 
   const onNavigate = (item: JumpItem) => {

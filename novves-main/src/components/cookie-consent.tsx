@@ -38,8 +38,8 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
   const resolvedLocale =
     typeof localeFromUrl === "string" ? localeFromUrl : locale;
 
-  const [visible, setVisible] = useState(shouldShowBanner);
-  const [expanded, setExpanded] = useState(shouldShowBanner);
+  const [visible, setVisible] = useState(() => shouldShowBanner());
+  const [expanded, setExpanded] = useState(() => shouldShowBanner());
   const [analytics, setAnalytics] = useState(true);
   const [marketing, setMarketing] = useState(false);
 
