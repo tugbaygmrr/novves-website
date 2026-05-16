@@ -153,6 +153,7 @@ type HomeDict = {
   pageChrome?: Record<string, string>;
   solutionCarouselByHref?: Record<string, { title: string; description: string }>;
   productCategoryBlurbs?: string[];
+  productCategoryFeatures?: string[][];
   catalogPreview?: { title: string; href: string; image: string; desc?: string }[];
   referencePreview?: {
     title: string;
@@ -433,19 +434,19 @@ type SolutionBandSlide = {
   thumbnails?: readonly [string, string, string];
 };
 
-/** Şerit sırası: menü / vitrin — ilk beşte endüstriyelden sonra ATEX; ardından kalan çözümler */
+/** Şerit sırası: 01–13 numaralandırma — kullanıcı tarafından belirlenen düzen */
 const SOLUTION_STRIP_HREFS = [
   "/cozumler/duman-isi-tahliye-sistemleri",
   "/cozumler/konfor-iklimlendirme-sistemleri",
   "/cozumler/hijyenik-filtrasyonlu-havalandirma",
   "/cozumler/endustriyel-hava-yonetimi",
-  "/cozumler/atex-patlama-koruma-cozumleri",
   "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri",
   "/cozumler/trafo-enerji-odalari-fanlari",
   "/cozumler/sera-tarimsal-havalandirma-sistemleri",
+  "/cozumler/atex-patlama-koruma-cozumleri",
   "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri",
-  "/cozumler/konut-tipi-havalandirma-sistemleri",
   "/cozumler/marin-offshore-havalandirma-sistemleri",
+  "/cozumler/konut-tipi-havalandirma-sistemleri",
   "/cozumler/proje-bazli-ozel-imalatlar",
   "/cozumler/cfd-muhendislik-danismanligi",
 ] as const;
@@ -780,7 +781,7 @@ function HomeCompanyProfileSectionBlock({
 
   return (
     <div id="company-profile" className="relative mt-14 scroll-mt-24 sm:mt-16 md:scroll-mt-[5.5rem] lg:mt-[4.5rem]">
-      <div className="rounded-[1.35rem] border border-[#1e3a5f]/[0.08] bg-[#f5f5f0] px-4 py-10 shadow-[0_20px_56px_-40px_rgba(15,22,36,0.18)] ring-1 ring-black/[0.03] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
+      <div className="rounded-[1.35rem] border border-[#1e3a5f]/[0.08] bg-sand-100 px-4 py-10 shadow-[0_20px_56px_-40px_rgba(15,22,36,0.18)] ring-1 ring-black/[0.03] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col gap-10 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:items-start lg:gap-x-10 lg:gap-y-0">
             <div className="flex w-full justify-center self-start lg:sticky lg:top-28 lg:justify-start lg:pt-1">
@@ -829,7 +830,7 @@ function HomeCompanyProfileSectionBlock({
                       const iconKind = m.icon ?? milestoneIconCycle[index % milestoneIconCycle.length]!;
                       return (
                         <li key={`${m.year}-${m.title}`} className="relative z-[1] flex flex-col items-center text-center">
-                          <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1e3a5f] bg-[#f5f5f0] shadow-sm">
+                          <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1e3a5f] bg-sand-100 shadow-sm">
                             <CompanyProfileTimelineIcon kind={iconKind} />
                           </div>
                           <div className="relative mb-3 w-full overflow-hidden rounded-lg border border-[#1e3a5f]/10 bg-white shadow-sm">
@@ -873,7 +874,7 @@ function HomeCompanyProfileSectionBlock({
                   <ul className="mt-8 grid gap-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-8">
                     {section.goalsPillars.map((p, i) => (
                       <li key={p.title} className="flex gap-3 text-left sm:gap-4">
-                        <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1e3a5f]/12 bg-[#f5f5f0]">
+                        <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1e3a5f]/12 bg-sand-100">
                           <CompanyProfileGoalPillarIcon index={i} />
                         </div>
                         <div>
@@ -1057,7 +1058,7 @@ function HomeSolutionShowcaseCard({
   subtitle,
   heroSrc,
   productThumbs,
-  leadIconKind,
+  index,
   heroPriority = false,
 }: {
   locale: string;
@@ -1066,14 +1067,15 @@ function HomeSolutionShowcaseCard({
   subtitle: string;
   heroSrc: string;
   productThumbs: readonly [string, string, string];
-  leadIconKind: SolutionLeadIconKind;
+  /** Kart sıra numarası (0 tabanlı). 01, 02… olarak gösterilir. */
+  index: number;
   /** İlk kart LCP: daha erken decode */
   heroPriority?: boolean;
 }) {
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group flex h-full min-h-0 w-full flex-1 flex-col overflow-hidden rounded-xl border border-sand-300 bg-white shadow-[0_14px_40px_-28px_rgba(0,56,107,0.14)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_22px_52px_-28px_rgba(239,95,23,0.22)]"
+      className="group flex h-[19.5rem] min-h-0 w-full flex-col overflow-hidden rounded-xl border border-sand-300 bg-white shadow-[0_14px_40px_-28px_rgba(0,56,107,0.14)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_22px_52px_-28px_rgba(239,95,23,0.22)] sm:h-[22rem]"
     >
       {/* Görsel — alt %50'si turuncuya çözünür, alttaki banda dikişsiz akar */}
       <div className="relative h-[150px] w-full shrink-0 overflow-hidden bg-sand-100 sm:h-[168px]">
@@ -1097,37 +1099,37 @@ function HomeSolutionShowcaseCard({
         />
       </div>
 
-      {/* Turuncu bant — başlık + thumb'lar; kart kısa kalsın diye sıkı padding */}
+      {/* Turuncu bant — başlık + thumb'lar; sabit kart yüksekliğini doldurur */}
       <div
-        className="flex shrink-0 flex-col gap-2 px-2.5 pb-2.5 pt-2 sm:gap-2.5 sm:px-3 sm:pb-3 sm:pt-2.5"
+        className="flex flex-1 flex-col justify-between gap-2 px-2.5 pb-2.5 pt-2 sm:gap-2.5 sm:px-3 sm:pb-3 sm:pt-2.5"
         style={{
           background:
             "linear-gradient(180deg, #ef5f17 0%, #d45414 55%, #a63d0f 100%)",
         }}
       >
         <div className="flex shrink-0 gap-2 sm:gap-2.5">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/12 shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] sm:h-10 sm:w-10">
-            <SolutionShowcaseLeadIconByKind kind={leadIconKind} inverted />
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/12 font-bold leading-none text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] sm:h-10 sm:w-10">
+            <span className="text-[15px] tabular-nums sm:text-[16px]">{String(index + 1).padStart(2, "0")}</span>
           </div>
           <div className="flex min-h-0 w-0 min-w-0 flex-1 flex-col overflow-hidden pt-0.5">
-            <h3 className="line-clamp-2 text-[14px] font-bold leading-snug text-white sm:text-[15px]">{title}</h3>
-            <p className="mt-0.5 line-clamp-2 text-[11px] leading-relaxed text-white/88 sm:mt-1 sm:text-[12px]">{subtitle}</p>
+            <h3 className="line-clamp-2 min-h-[2.75em] text-[14px] font-bold leading-snug text-white sm:text-[15px]">{title}</h3>
+            <p className="mt-0.5 line-clamp-2 min-h-[3.25em] text-[11px] leading-relaxed text-white/88 sm:mt-1 sm:text-[12px]">{subtitle}</p>
           </div>
         </div>
-        <div className="grid shrink-0 grid-cols-3 gap-1.5 sm:gap-2">
+        <div className="grid shrink-0 grid-cols-3 items-end gap-0.5 sm:gap-1">
           {productThumbs.map((src, i) => (
             <div
               key={`${src}-${i}`}
-              className="relative h-[3.75rem] w-full overflow-hidden rounded-lg bg-transparent sm:h-[4rem]"
+              className="relative h-[3.5rem] w-full transition-transform duration-500 ease-out group-hover:scale-[1.05] sm:h-[4rem]"
             >
               <Image
                 src={src}
                 alt=""
                 fill
-                sizes="(max-width: 768px) 34vw, 200px"
-                className="object-contain p-0.5 drop-shadow-[0_14px_32px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-[1.04]"
+                sizes="(max-width: 768px) 28vw, 110px"
+                className="object-contain object-bottom drop-shadow-[0_6px_22px_rgba(0,0,0,0.85)]"
                 loading={heroPriority && i < 3 ? "eager" : "lazy"}
-                quality={78}
+                quality={82}
               />
             </div>
           ))}
@@ -1166,6 +1168,7 @@ function HomeMarketStripCard({
   title,
   subtitle,
   thumbs,
+  features,
   imagePriority = false,
 }: {
   locale: string;
@@ -1173,13 +1176,13 @@ function HomeMarketStripCard({
   title: string;
   subtitle: string;
   thumbs: readonly [string, string, string];
+  features?: readonly string[];
   imagePriority?: boolean;
 }) {
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group relative block w-full overflow-hidden rounded-2xl border border-white/[0.08] shadow-[0_20px_52px_-28px_rgba(0,0,0,0.6)] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#4a7fc1]/45 hover:shadow-[0_26px_60px_-22px_rgba(239,95,23,0.14),0_18px_48px_-26px_rgba(0,0,0,0.65)]"
-      style={{ height: "15rem" }}
+      className="group relative block h-[19.5rem] w-full overflow-hidden rounded-xl border border-white/[0.08] shadow-[0_20px_52px_-28px_rgba(0,0,0,0.6)] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#4a7fc1]/45 hover:shadow-[0_26px_60px_-22px_rgba(239,95,23,0.14),0_18px_48px_-26px_rgba(0,0,0,0.65)] sm:h-[22rem]"
     >
       {/* Zemin */}
       <div className="absolute inset-0" style={{ background: "linear-gradient(155deg, #07111e 0%, #0b1c36 28%, #0d2450 62%, #0c2058 100%)" }} aria-hidden />
@@ -1234,14 +1237,28 @@ function HomeMarketStripCard({
         ))}
       </svg>
 
-      {/* Metin — sol üst */}
-      <div className="absolute left-0 top-0 z-[10] p-4 sm:p-5">
-        <h3 className="text-[13.5px] font-bold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-[15px]">
+      {/* Metin — sol üst; başlık & altyazı 2 satırlık alanı her kartta aynı yükseklikte rezerve eder */}
+      <div className="absolute left-0 right-0 top-0 z-[10] p-4 sm:p-5">
+        <h3 className="line-clamp-2 min-h-[2.75em] text-[13.5px] font-bold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-[15px]">
           {title}
         </h3>
-        <p className="mt-1 line-clamp-2 max-w-[13rem] text-[11px] leading-relaxed text-white/65 sm:text-[12px]">
+        <p className="mt-1 line-clamp-2 min-h-[3.25em] max-w-[13rem] text-[11px] leading-relaxed text-white/65 sm:text-[12px]">
           {subtitle}
         </p>
+        {features && features.length > 0 ? (
+          <ul className="mt-3.5 space-y-1.5 max-w-[13rem] text-[12px] font-semibold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.75)] sm:mt-4 sm:space-y-2 sm:text-[12.5px]">
+            {features.slice(0, 3).map((feat, idx) => (
+              <li key={`${feat}-${idx}`} className="flex items-start gap-2">
+                <span className="mt-[1px] flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-md border border-[#7dd3fc]/45 bg-[#0a2552] shadow-[0_0_8px_rgba(94,163,245,0.5)]">
+                  <svg className="h-3 w-3 text-[#7dd3fc]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3} aria-hidden>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 12l4 4L19 7" />
+                  </svg>
+                </span>
+                <span className="line-clamp-1">{feat}</span>
+              </li>
+            ))}
+          </ul>
+        ) : null}
       </div>
 
       {/* 3 ürün görseli — alta hizalı, ortadaki büyük */}
@@ -1280,6 +1297,23 @@ const productFallbackImages = [
   "/images/hero/endustriyel-mutfaklar.png",
   "/images/products/marlin.png",
   "/images/products/ae-fjf.png",
+];
+
+/**
+ * Ürün kategorileri için 3'er madde özet — kart orta boşluğunu doldurur.
+ * `PRODUCT_CATEGORY_NAV.slice(0,9)` sırasıyla eşleşir; dict’te `productCategoryFeatures`
+ * varsa onlar kullanılır, yoksa bu TR fallback gösterilir.
+ */
+const HOME_PRODUCT_BAND_FEATURE_FALLBACKS: readonly (readonly string[])[] = [
+  ["Yüksek debi performansı", "Düşük gürültü seviyesi", "EC motor seçeneği"],
+  ["Konfor ve verim dengesi", "Mevsimsel iklim kontrolü", "Isı geri kazanım"],
+  ["Enerji verimli operasyon", "Yıl boyu kullanım", "Akıllı kontrol"],
+  ["Hassas debi kontrolü", "Bölgesel optimizasyon", "Modüler tasarım"],
+  ["Homojen alan dağılımı", "Düşük basınç kaybı", "Geniş çap yelpazesi"],
+  ["HEPA & karbon filtre", "Uzun ömürlü kartuş", "Hijyenik alan uyumu"],
+  ["Geniş bağlantı yelpazesi", "Kolay montaj", "Standart ölçüler"],
+  ["BMS entegrasyonu", "Uzaktan izleme", "Akıllı kontrol panosu"],
+  ["Yaylı izolatörler", "Düşük frekans damping", "Endüstriyel uyum"],
 ];
 
 /**
@@ -1603,6 +1637,7 @@ export default function HomeClient({
   const companyProfileSection = dict.companyProfileSection;
   const companyProfileCards = dict.companyProfileCards ?? [];
   const productBlurbs = dict.productCategoryBlurbs ?? [];
+  const productFeatures = dict.productCategoryFeatures ?? [];
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [hoveredCompanyProfileIndex, setHoveredCompanyProfileIndex] = useState<number | null>(null);
@@ -1656,12 +1691,18 @@ export default function HomeClient({
     const thumbs: readonly [string, string, string] = meta?.thumbs
       ? [meta.thumbs[0], meta.thumbs[1], meta.thumbs[2]]
       : [meta?.image ?? fallbackImg, fallbackImg, fallbackImg];
+    const featuresFromDict = productFeatures[i];
+    const features =
+      Array.isArray(featuresFromDict) && featuresFromDict.length > 0
+        ? featuresFromDict
+        : HOME_PRODUCT_BAND_FEATURE_FALLBACKS[i] ?? [];
     return {
       label: labelFromHome || productSlugToFallbackLabel(nav.slug),
       href: meta?.href ?? `/urunler/${nav.slug}`,
       image: meta?.image ?? fallbackImg,
       thumbs,
       blurb: productBlurbs[i] ?? pc.productFallbackDesc,
+      features,
     };
   });
   const scrollSolutionStrip = (direction: "prev" | "next") => {
@@ -1690,7 +1731,6 @@ export default function HomeClient({
         endCard={dict.animation2.endCard}
         locale={locale}
         productHref="/urunler/duman-isi-tahliye-fanlari"
-        sideLabel={pc.scrollVideoSideLabel}
       />
       </div>
 
@@ -1810,7 +1850,7 @@ export default function HomeClient({
                             subtitle={desc}
                             heroSrc={heroSrc}
                             productThumbs={productThumbs}
-                            leadIconKind={solutionLeadIconFromHref(item.href)}
+                            index={i}
                             heroPriority={i === 0}
                           />
                         </div>
@@ -1837,7 +1877,7 @@ export default function HomeClient({
       {/* 03 — ÜRÜNLER (aynı referans düzeni; arka plan çözümler şeridi ile aynı sand) */}
       <section id="product-categories" className="relative scroll-mt-24 border-t border-sand-300 bg-sand-100 text-ink md:scroll-mt-[5.5rem]">
         <HomeMarketStripBackdrop />
-        <div className="relative z-[1] mx-auto max-w-[1720px] px-4 py-12 sm:px-10 sm:py-14 lg:py-16">
+        <div className="relative z-[1] mx-auto max-w-[1720px] px-4 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
           <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
             <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
             <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
@@ -1872,6 +1912,7 @@ export default function HomeClient({
                         title={row.label}
                         subtitle={row.blurb}
                         thumbs={row.thumbs}
+                        features={row.features}
                         imagePriority={i === 0}
                       />
                     </div>
@@ -2081,26 +2122,8 @@ export default function HomeClient({
           <div id="references" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem] lg:mt-16">
             {(() => {
               const refHead = referenceSectorHeadings(pc, n.links.references);
-              const vertNorm = refHead.vertical.replace(/\s+/g, " ").trim().toLocaleLowerCase("tr-TR");
-              const headNorm = refHead.headline.replace(/\s+/g, " ").trim().toLocaleLowerCase("tr-TR");
-              const verticalAriaHidden = vertNorm === headNorm && refHead.kicker.length > 0;
               return (
-                <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:items-start lg:gap-x-8 lg:gap-y-10">
-                  <div className="hidden w-full justify-center self-start lg:sticky lg:top-28 lg:flex lg:justify-start lg:pt-1">
-                    <div
-                      className="flex flex-col items-center gap-3 sm:gap-4 lg:gap-5"
-                      aria-hidden={verticalAriaHidden ? true : undefined}
-                    >
-                      <span className="text-center text-[14px] font-bold uppercase leading-none tracking-[0.18em] text-[#1e3a5f] antialiased [text-orientation:mixed] sm:text-[16px] lg:text-[19px] lg:tracking-[0.2em] xl:text-[22px] [writing-mode:vertical-rl] rotate-180">
-                        {refHead.vertical}
-                      </span>
-                      <div
-                        className="h-11 w-0.5 shrink-0 rounded-full bg-primary sm:h-12 lg:h-14"
-                        aria-hidden
-                      />
-                    </div>
-                  </div>
-
+                <div className="flex flex-col gap-6 lg:gap-y-10">
                   <div className="min-w-0">
                     <div className="mb-8 sm:mb-10">
                       <div className="mb-3 h-0.5 w-12 shrink-0 bg-primary sm:mb-4 sm:w-14" aria-hidden />
@@ -2405,7 +2428,7 @@ export default function HomeClient({
               <div className="relative shadow-[0_28px_70px_-36px_rgba(0,0,0,0.55)] ring-1 ring-white/[0.07]">
                 <div className="relative aspect-video overflow-hidden border border-white/[0.09] bg-[#0b1018] text-white/35">
                   <iframe
-                    src="https://www.youtube.com/embed/jhiens-xiOw"
+                    src="https://www.youtube.com/embed/6pXFGhKW6Lw"
                     title={dict.video.iframeTitle}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

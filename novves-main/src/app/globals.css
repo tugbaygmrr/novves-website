@@ -74,9 +74,9 @@
   --color-sand-400: var(--sand-400);
   --color-light: var(--light);
   --color-success: var(--success);
-  --font-sans: "Helvetica Neue", "Helvetica", var(--font-inter), "Arial", sans-serif;
+  --font-sans: "Helvetica Neue", "Helvetica", sans-serif;
   --font-serif: var(--font-instrument-serif), "Georgia", serif;
-  --font-mono: var(--font-jetbrains-mono), "SF Mono", "Menlo", monospace;
+  --font-mono: "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 /* clip: yatay taşmayı keser; overflow:hidden gibi sticky + scroll-driven hero’yu bozmaz */
@@ -123,7 +123,7 @@ html[data-cookie-dialog-open] [data-mobile-jump-nav] {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Helvetica Neue", "Helvetica", var(--font-inter), "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
   font-feature-settings: "ss01", "cv11", "liga" 0, "clig" 0;
   font-variant-ligatures: none;
@@ -138,13 +138,12 @@ body {
 }
 
 .font-mono-eng {
-  font-family: var(--font-jetbrains-mono), "SF Mono", "Menlo", monospace;
-  font-feature-settings: "ss02", "cv11";
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 /* Legacy — now Inter so nothing breaks elsewhere while migrating */
-.font-home-display { font-family: "Helvetica Neue", "Helvetica", var(--font-inter), "Arial", sans-serif; }
-.font-home-body    { font-family: "Helvetica Neue", "Helvetica", var(--font-inter), "Arial", sans-serif; }
+.font-home-display { font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+.font-home-body    { font-family: "Helvetica Neue", "Helvetica", sans-serif; }
 
 /* Homepage CTA depth */
 .btn-3d {

@@ -16,6 +16,7 @@ type StartCard = {
   titleLine2: string;
   titleLine3: string;
   subtitle: string;
+  features?: string[];
   ctaPrimary?: string;
   ctaSecondary?: string;
   stats?: { value: string; label: string }[];
@@ -602,40 +603,46 @@ export function ScrollVideoSection({
               </p>
 
               <h2 className="relative mt-7 text-balance">
-                <span
-                  className="block font-semibold"
-                  style={{
-                    fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
-                    lineHeight: 1.08,
-                    letterSpacing: "-0.02em",
-                    color: "var(--c-title)",
-                  }}
-                >
-                  {startCard.titleLine1}
-                </span>
-                <span
-                  className="mt-1 block hyphens-none break-words font-semibold"
-                  style={{
-                    fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
-                    lineHeight: 1.08,
-                    letterSpacing: "-0.02em",
-                    color: "var(--c-title)",
-                    opacity: 0.92,
-                  }}
-                >
-                  {startCard.titleLine2}
-                </span>
-                <span
-                  className="mt-1 block font-semibold"
-                  style={{
-                    fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
-                    lineHeight: 1.08,
-                    letterSpacing: "-0.02em",
-                    color: "var(--c-title)",
-                  }}
-                >
-                  {startCard.titleLine3}
-                </span>
+                {startCard.titleLine1 && (
+                  <span
+                    className="block font-semibold"
+                    style={{
+                      fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
+                      lineHeight: 1.08,
+                      letterSpacing: "-0.02em",
+                      color: "var(--c-title)",
+                    }}
+                  >
+                    {startCard.titleLine1}
+                  </span>
+                )}
+                {startCard.titleLine2 && (
+                  <span
+                    className="mt-1 block hyphens-none break-words font-semibold"
+                    style={{
+                      fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
+                      lineHeight: 1.08,
+                      letterSpacing: "-0.02em",
+                      color: "var(--c-title)",
+                      opacity: 0.92,
+                    }}
+                  >
+                    {startCard.titleLine2}
+                  </span>
+                )}
+                {startCard.titleLine3 && (
+                  <span
+                    className="mt-1 block font-semibold"
+                    style={{
+                      fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
+                      lineHeight: 1.08,
+                      letterSpacing: "-0.02em",
+                      color: "var(--c-title)",
+                    }}
+                  >
+                    {startCard.titleLine3}
+                  </span>
+                )}
               </h2>
 
               <p className="relative mt-7 max-w-[42ch] text-[14.5px] leading-[1.72]" style={{ color: "var(--c-sub)" }}>
@@ -749,12 +756,12 @@ export function ScrollVideoSection({
                       { v: endCard.spec2Value, l: endCard.spec2Label },
                       { v: endCard.spec3Value, l: endCard.spec3Label },
                     ].map((s) => (
-                      <div key={s.l} className="min-w-0 py-4 pl-0 min-[900px]:pl-4 min-[900px]:first:pl-0">
-                        <p className="text-[1.8rem] font-bold leading-none" style={{ color: "var(--c-spec-v)" }}>
+                      <div key={s.l} className="flex min-w-0 flex-col py-4 pl-0 min-[900px]:pl-4 min-[900px]:first:pl-0">
+                        <p className="min-h-[2em] text-[1.8rem] font-bold leading-none" style={{ color: "var(--c-spec-v)" }}>
                           {s.v}
                         </p>
                         <p
-                          className="mt-1.5 font-mono-eng text-[9px] uppercase tracking-[0.2em]"
+                          className="mt-auto pt-1.5 font-mono-eng text-[9px] uppercase tracking-[0.2em]"
                           style={{ color: "var(--c-accent)" }}
                         >
                           {s.l}
@@ -1101,9 +1108,15 @@ function MobileScrollSection({
               >
                 <p className="font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">• {startCard.badge}</p>
                 <h2 className="mt-3 text-white">
-                  <span className="block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine1}</span>
-                  <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine2}</span>
-                  <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine3}</span>
+                  {startCard.titleLine1 && (
+                    <span className="block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine1}</span>
+                  )}
+                  {startCard.titleLine2 && (
+                    <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine2}</span>
+                  )}
+                  {startCard.titleLine3 && (
+                    <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine3}</span>
+                  )}
                 </h2>
                 <p className="mt-3 text-[14px] leading-[1.58] text-white/84">{startCard.subtitle}</p>
               </div>
