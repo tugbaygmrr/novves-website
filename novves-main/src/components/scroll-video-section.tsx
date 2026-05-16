@@ -1033,7 +1033,7 @@ function MobileScrollSection({
         <section className="sticky top-[92px]">
           <div
             ref={mobileHeroBgRef}
-            className="relative min-h-[min(76svh,560px)] overflow-hidden"
+            className="relative min-h-[calc(100svh-92px)] overflow-hidden"
             style={{
               backgroundColor: isMobileMotion ? "rgb(62, 65, 72)" : `rgb(${bgR}, ${bgG}, ${bgB})`,
             }}
@@ -1119,6 +1119,17 @@ function MobileScrollSection({
                   )}
                 </h2>
                 <p className="mt-3 text-[14px] leading-[1.58] text-white/84">{startCard.subtitle}</p>
+                {endCard && locale && productHref && (
+                  <Link
+                    href={`/${locale}${productHref}`}
+                    className="group mt-4 inline-flex w-full items-center justify-between rounded-2xl border border-white/18 bg-white/[0.08] px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.22em] text-white backdrop-blur-sm transition-colors duration-300 hover:border-primary hover:bg-primary"
+                  >
+                    <span>{endCard.cta}</span>
+                    <svg className="h-4 w-4 text-primary transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                )}
               </div>
             )}
 
@@ -1152,20 +1163,6 @@ function MobileScrollSection({
         </section>
       </div>
 
-      {/* Inline CTA — koyu blok yok; gövde ile aynı kum zeminde hafif kart */}
-      {endCard && locale && productHref && (
-        <div className="border-t border-ink/[0.06] bg-sand-200 px-5 pb-10 pt-6">
-          <Link
-            href={`/${locale}${productHref}`}
-            className="group inline-flex w-full items-center justify-between rounded-2xl border border-ink/12 bg-white/95 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-ink shadow-[0_10px_36px_-22px_rgba(21,26,33,0.22)] transition-all duration-300 hover:border-primary/45 hover:bg-white"
-          >
-            <span>{endCard.cta}</span>
-            <svg className="h-4 w-4 text-primary transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
-        </div>
-      )}
     </section>
   );
 }

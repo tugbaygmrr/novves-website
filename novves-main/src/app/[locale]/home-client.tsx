@@ -1644,6 +1644,33 @@ export default function HomeClient({
   const [allowRestrictedSections, setAllowRestrictedSections] = useState<boolean | null>(null);
   const solutionStripCarouselRef = useRef<HTMLDivElement | null>(null);
   const productStripCarouselRef = useRef<HTMLDivElement | null>(null);
+  const certificateMarqueeRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = certificateMarqueeRef.current;
+    if (!el) return;
+    let offset = 0;
+    let lastY = window.scrollY;
+    const SCROLL_TO_MARQUEE_RATIO = 0.6;
+    const applyTransform = () => {
+      const half = el.scrollWidth / 2;
+      if (half > 0) {
+        offset = ((offset % half) + half) % half;
+      }
+      el.style.transform = `translate3d(${-offset}px, 0, 0)`;
+    };
+    const onScroll = () => {
+      const y = window.scrollY;
+      const delta = y - lastY;
+      lastY = y;
+      offset += delta * SCROLL_TO_MARQUEE_RATIO;
+      applyTransform();
+    };
+    applyTransform();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
   useEffect(() => {
     const applyConsent = (raw: string | null) => {
       if (!raw) {
@@ -1738,7 +1765,7 @@ export default function HomeClient({
       <section id="solution-categories" className="relative scroll-mt-24 md:scroll-mt-[5.5rem]">
         <div className="relative bg-sand-200">
           <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
-            <div className="border-b border-ink/[0.08] py-8 sm:py-10">
+            <div className="border-b border-ink/[0.08] py-5 sm:py-7">
               <div className="relative overflow-hidden">
                 <div
                   className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-5 sm:w-12"
@@ -1749,7 +1776,7 @@ export default function HomeClient({
                   style={{ backgroundImage: `linear-gradient(to left, ${HOME_CERTIFICATE_STRIP_BG}, transparent)` }}
                 />
 
-                <div className="certificate-marquee-track flex w-max items-center gap-5 sm:gap-10">
+                <div ref={certificateMarqueeRef} className="certificate-marquee-track flex w-max items-center gap-5 sm:gap-10">
                   {certificateLogoMarqueeItems.map((cert, index) => {
                     const isEfectisSvg = cert.src.endsWith(".svg") && cert.src.includes("Efectis");
                     const isEnecPng = cert.src.includes("ENEC.png");
@@ -1767,8 +1794,8 @@ export default function HomeClient({
                         href={`/${locale}/kurumsal/sertifikalar`}
                         className={`flex items-center justify-center px-1.5 sm:px-2 ${
                           isCePng
-                            ? "min-w-[4.5rem] sm:min-w-[5.5rem]"
-                            : "min-w-[86px] sm:min-w-[110px]"
+                            ? "min-w-[3.6rem] sm:min-w-[4.5rem]"
+                            : "min-w-[70px] sm:min-w-[90px]"
                         }`}
                       >
                         <img
@@ -1776,20 +1803,20 @@ export default function HomeClient({
                           alt={cert.alt}
                           className={`w-auto max-w-full object-contain transition-[opacity,transform,filter] duration-300 hover:scale-[1.04] hover:opacity-100 ${
                             isEfectisSvg
-                              ? "h-8 opacity-95 mix-blend-multiply sm:h-12"
+                              ? "h-7 opacity-95 mix-blend-multiply sm:h-10"
                               : isEnecPng
-                                ? "h-9 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(59,130,246,0.22)] sm:h-11"
+                                ? "h-7 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(59,130,246,0.22)] sm:h-9"
                                 : isCePng
-                                  ? "h-11 opacity-100 drop-shadow-[0_2px_14px_rgba(36,48,68,0.12)] drop-shadow-[0_0_18px_rgba(255,215,160,0.45)] sm:h-14"
+                                  ? "h-9 opacity-100 drop-shadow-[0_2px_14px_rgba(36,48,68,0.12)] drop-shadow-[0_0_18px_rgba(255,215,160,0.45)] sm:h-12"
                                   : isIso9001Png
-                                    ? "h-10 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(34,211,238,0.28)] sm:h-[3.25rem]"
+                                    ? "h-8 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(34,211,238,0.28)] sm:h-11"
                                     : isIso14001Png
-                                      ? "h-10 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_16px_rgba(34,197,94,0.32)] sm:h-[3.25rem]"
+                                      ? "h-8 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_16px_rgba(34,197,94,0.32)] sm:h-11"
                                       : isTsePng
-                                        ? "h-9 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.1)] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)] sm:h-11"
+                                        ? "h-7 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.1)] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)] sm:h-9"
                                         : isBsiPng
-                                          ? "h-8 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.12)] drop-shadow-[0_0_8px_rgba(36,48,68,0.08)] sm:h-10"
-                                          : `h-8 opacity-95 sm:h-12 ${
+                                          ? "h-7 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.12)] drop-shadow-[0_0_8px_rgba(36,48,68,0.08)] sm:h-9"
+                                          : `h-7 opacity-95 sm:h-10 ${
                                               lightOnDark ? "brightness-0 hover:opacity-100" : ""
                                             }`
                           }`}
@@ -1808,7 +1835,7 @@ export default function HomeClient({
         <div className="relative border-t border-sand-300 bg-sand-100 text-ink">
           <HomeMarketStripBackdrop />
           <div className="relative z-[1] mx-auto max-w-[1720px] px-4 sm:px-10 lg:px-16">
-            <div className="py-10 sm:py-12 sm:pt-12 sm:pb-14 lg:py-16">
+            <div className="py-8 sm:py-10 sm:pt-10 sm:pb-12 lg:py-12">
               <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
                 <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.solutions}</h2>
                 <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
@@ -1877,7 +1904,7 @@ export default function HomeClient({
       {/* 03 — ÜRÜNLER (aynı referans düzeni; arka plan çözümler şeridi ile aynı sand) */}
       <section id="product-categories" className="relative scroll-mt-24 border-t border-sand-300 bg-sand-100 text-ink md:scroll-mt-[5.5rem]">
         <HomeMarketStripBackdrop />
-        <div className="relative z-[1] mx-auto max-w-[1720px] px-4 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
+        <div className="relative z-[1] mx-auto max-w-[1720px] px-4 py-10 sm:px-10 sm:py-12 lg:px-16 lg:py-14">
           <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
             <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
             <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
@@ -1935,7 +1962,7 @@ export default function HomeClient({
       </section>
 
       {/* 02 — PILLARS / ENGINEERING ANLAYIŞI */}
-      <section id="engineering" className="relative bg-sand-100 pb-16 pt-10 sm:pb-20 sm:pt-12">
+      <section id="engineering" className="relative bg-sand-100 pb-12 pt-8 sm:pb-16 sm:pt-10">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.38]" />
         <div
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_85%_60%_at_0%_35%,rgba(239, 95, 23,0.055),transparent_52%),radial-gradient(ellipse_70%_45%_at_100%_80%,rgba(36,48,68,0.04),transparent_50%)]"
@@ -1953,7 +1980,7 @@ export default function HomeClient({
               {dict.engineeringShowcase ? (
                 <div className="relative z-[2] mx-auto mb-6 flex w-full max-w-[min(92vw,480px)] flex-wrap items-end gap-3 md:max-w-[min(94vw,44rem)] sm:mb-7 sm:gap-4 lg:col-start-1 lg:row-start-1 lg:mx-0 lg:mb-8 lg:max-w-none">
                   <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">CFD</h2>
-                  <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary md:max-w-[min(72vw,36rem)]" aria-hidden />
+                  <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
                 </div>
               ) : null}
 
@@ -2060,6 +2087,15 @@ export default function HomeClient({
             <div className="mb-8 flex flex-wrap items-end gap-3 sm:mb-10 sm:gap-4">
               <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{pc.catalogsVertical}</h2>
               <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
+              <Link
+                href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
+                className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary transition-colors hover:text-primary-deep"
+              >
+                <span>{n.viewAll}</span>
+                <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
@@ -2105,17 +2141,6 @@ export default function HomeClient({
               })}
             </div>
 
-            <div className="mt-10 flex w-full justify-center sm:mt-12">
-              <Link
-                href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
-                className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
-              >
-                <span>{n.viewAll}</span>
-                <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
           </div>
 
           {/* Referanslar — sektör kartları (lacivert / koyu gri / açık gri + turuncu vurgu) */}
@@ -2127,16 +2152,29 @@ export default function HomeClient({
                   <div className="min-w-0">
                     <div className="mb-8 sm:mb-10">
                       <div className="mb-3 h-0.5 w-12 shrink-0 bg-primary sm:mb-4 sm:w-14" aria-hidden />
-                      {refHead.kicker ? (
-                        <p className="text-[11px] font-normal uppercase leading-snug tracking-[0.14em] text-[#1e3a5f] sm:text-xs sm:tracking-[0.12em]">
-                          {refHead.kicker}
-                        </p>
-                      ) : null}
-                      <h2
-                        className={`text-balance font-bold uppercase tracking-[0.06em] text-[#1e3a5f] sm:tracking-[0.05em] ${refHead.kicker ? "mt-1.5 text-xl leading-tight sm:text-2xl lg:text-[1.75rem] lg:leading-[1.1]" : "text-lg leading-snug tracking-[0.14em] sm:text-xl lg:text-2xl"}`}
-                      >
-                        {refHead.headline}
-                      </h2>
+                      <div className="flex flex-wrap items-end justify-between gap-3 sm:gap-4">
+                        <div className="min-w-0 flex-1">
+                          {refHead.kicker ? (
+                            <p className="text-[11px] font-normal uppercase leading-snug tracking-[0.14em] text-[#1e3a5f] sm:text-xs sm:tracking-[0.12em]">
+                              {refHead.kicker}
+                            </p>
+                          ) : null}
+                          <h2
+                            className={`text-balance font-bold uppercase tracking-[0.06em] text-[#1e3a5f] sm:tracking-[0.05em] ${refHead.kicker ? "mt-1.5 text-xl leading-tight sm:text-2xl lg:text-[1.75rem] lg:leading-[1.1]" : "text-lg leading-snug tracking-[0.14em] sm:text-xl lg:text-2xl"}`}
+                          >
+                            {refHead.headline}
+                          </h2>
+                        </div>
+                        <Link
+                          href={`/${locale}/kurumsal/referanslar`}
+                          className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary transition-colors hover:text-primary-deep"
+                        >
+                          <span>{n.viewAll}</span>
+                          <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </Link>
+                      </div>
                     </div>
 
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:gap-4">
@@ -2227,17 +2265,6 @@ export default function HomeClient({
                   })}
                 </div>
 
-                    <div className="mt-10 flex w-full justify-center sm:mt-12">
-                  <Link
-                    href={`/${locale}/kurumsal/referanslar`}
-                    className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
-                  >
-                    <span>{n.viewAll}</span>
-                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
-                </div>
                   </div>
                 </div>
               );
@@ -2251,6 +2278,15 @@ export default function HomeClient({
             <div className="mb-8 flex flex-wrap items-end gap-3 sm:mb-10 sm:gap-4">
               <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.links.certificates}</h2>
               <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
+              <Link
+                href={`/${locale}/kurumsal/sertifikalar`}
+                className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary transition-colors hover:text-primary-deep"
+              >
+                <span>{n.viewAll}</span>
+                <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
@@ -2295,17 +2331,6 @@ export default function HomeClient({
               })}
             </div>
 
-            <div className="mt-10 flex w-full justify-center sm:mt-12">
-              <Link
-                href={`/${locale}/kurumsal/sertifikalar`}
-                className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
-              >
-                <span>{n.viewAll}</span>
-                <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
           </div>
 
           {/* Mühendislik adımları — büyük adım numarası, paralelkenar görsel, alternatif satır düzeni */}
@@ -2402,7 +2427,7 @@ export default function HomeClient({
       </section>
 
       {/* 07 — VIDEO / STUDIO (lacivertimsi kurumsal blok) */}
-      <section className="relative overflow-hidden bg-[#141c2a] py-16 text-white sm:py-20">
+      <section className="relative overflow-hidden bg-[#141c2a] py-12 text-white sm:py-16">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.14]" />
         <div
           className="pointer-events-none absolute inset-0"
@@ -2472,7 +2497,7 @@ export default function HomeClient({
       </section>
 
       {/* 06 — FAQ & 07 — FINAL CTA combined into a two-column block */}
-      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-16 sm:py-20 md:scroll-mt-[5.5rem]">
+      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-12 sm:py-16 md:scroll-mt-[5.5rem]">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-60" />
 
         <div className="relative mx-auto max-w-[1600px] px-2 sm:px-10 lg:px-16">
@@ -2595,16 +2620,7 @@ export default function HomeClient({
       </section>
       <style jsx>{`
         .certificate-marquee-track {
-          animation: certificate-marquee 28s linear infinite;
-        }
-
-        @keyframes certificate-marquee {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(calc(-50% - 1rem));
-          }
+          will-change: transform;
         }
       `}</style>
     </main>
