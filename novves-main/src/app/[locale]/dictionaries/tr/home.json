@@ -1,31 +1,74 @@
 {
   "faq": {
-    "tag": "SSS",
+    "tag": "Sıkça Sorulan Sorular",
+    "headline": "Mühendislik Çözümlerinde Şeffaflık.",
+    "desc": "NOVVES endüstriyel standartları ve CFD analiz süreçlerimiz hakkında en çok merak edilen teknik detaylar.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "Tüm sıkça sorulan soruları görüntüle →",
+    "footerLinkAriaLabel": "NOVVES ürünleri, mühendislik hizmetleri, standartları, CFD analizleri, satış sonrası destek ve proje süreçleri hakkında tüm sıkça sorulan soruları görüntüleyin.",
     "items": [
       {
-        "a": "NOVVES, otopark, tünel, AVM, hastane, otel, endüstriyel tesis, sera, enerji santrali ve konut gibi geniş bir yelpazede duman tahliye, konfor havalandırma ve endüstriyel hava yönetimi çözümleri sunmaktadır.",
-        "q": "NOVVES hangi sektörlere hizmet veriyor?"
+        "q": "NOVVES hangi sektörlere hizmet veriyor?",
+        "a": "NOVVES; kapalı otoparklar, tüneller, metro ve raylı sistemler, endüstriyel tesisler, ticari yapılar, alışveriş merkezleri, oteller, hastaneler ve büyük hacimli yapılarda havalandırma, duman tahliye ve basınçlandırma çözümleri sunar.",
+        "linkHref": "/cozumler",
+        "linkLabel": "Tüm sektör çözümlerini inceleyin →",
+        "linkAriaLabel": "NOVVES'in kapalı otopark, tünel, endüstriyel tesis ve büyük hacimli yapılar için sunduğu havalandırma ve duman tahliye çözümlerini inceleyin."
       },
       {
-        "a": "Ürünlerimiz EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE ve ATEX standartlarına uygun olarak üretilmekte ve akredite laboratuvarlarda test edilmektedir.",
-        "q": "Ürünleriniz hangi standartlara uygun?"
+        "q": "Hangi ürün gruplarını üretiyorsunuz?",
+        "a": "NOVVES; duman ve ısı tahliye fanları, aksiyal fanlar, jet fanlar, çatı fanları, duvar tipi fanlar, santrifüj fanlar, ex-proof fanlar, damperler, susturucular, kontrol panoları ve projeye özel havalandırma ekipmanları üretir.",
+        "linkHref": "/urunler",
+        "linkLabel": "NOVVES ürün ailelerini keşfedin →",
+        "linkAriaLabel": "NOVVES'in duman tahliye fanları, aksiyal fanlar, jet fanlar, damperler, susturucular ve kontrol panolarından oluşan ürün ailelerini keşfedin."
       },
       {
-        "a": "Evet, her proje özelinde 3D CFD simülasyonu ile duman yayılımı, sıcaklık, CO yoğunluğu ve görüş mesafesi analizi yapıyor, jet fan yerleşimini optimize ediyoruz.",
-        "q": "CFD analizi hizmeti veriyor musunuz?"
+        "q": "Ürünleriniz hangi standartlara göre tasarlanır?",
+        "a": "NOVVES ürünleri; ürün grubu, uygulama alanı ve proje gereksinimine göre EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 ve ilgili havalandırma, performans ve yangın güvenliği standartları dikkate alınarak tasarlanır, test edilir ve dokümante edilir.",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Standart ve sertifikasyon yaklaşımımızı inceleyin →",
+        "linkAriaLabel": "NOVVES ürünlerinde dikkate alınan EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 ve ilgili performans standartları hakkında bilgi alın."
       },
       {
-        "a": "Devreye alma, periyodik bakım, yedek parça temini ve 7/24 teknik servis hizmetleri ile satış sonrası tam destek sağlıyoruz.",
-        "q": "Satış sonrası destek sunuyor musunuz?"
+        "q": "CFD destekli mühendislik hizmeti veriyor musunuz?",
+        "a": "Evet. NOVVES, kapalı otoparklar, tüneller, endüstriyel tesisler ve büyük hacimli yapılarda CFD destekli hava akışı, duman hareketi, sıcaklık dağılımı ve fan yerleşim analizleri sunar. Bu sayede sistem yalnızca ürün bazında değil, yapı davranışı üzerinden değerlendirilir.",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "CFD destekli mühendislik sürecini inceleyin →",
+        "linkAriaLabel": "NOVVES'in CFD destekli hava akışı, duman hareketi, sıcaklık dağılımı ve fan yerleşim analizi sürecini inceleyin."
+      },
+      {
+        "q": "Projeye özel fan seçimi ve sistem tasarımı yapıyor musunuz?",
+        "a": "Evet. NOVVES, her projeyi debi, basınç, sıcaklık dayanımı, kullanım senaryosu, saha koşulları, otomasyon ihtiyacı ve standart gereksinimleriyle birlikte değerlendirir. Fan seçimi, yerleşim, kontrol senaryosu ve yardımcı ekipmanlar proje özelinde belirlenir.",
+        "linkHref": "/muhendislik/projeye-ozel-fan-secimi",
+        "linkLabel": "Projeye özel fan seçimi hakkında bilgi alın →",
+        "linkAriaLabel": "NOVVES'in projeye özel fan seçimi, debi-basınç değerlendirmesi, fan yerleşimi ve sistem tasarımı yaklaşımı hakkında bilgi alın."
+      },
+      {
+        "q": "Duman ve ısı tahliye sistemlerinde hangi çözümleri sunuyorsunuz?",
+        "a": "NOVVES; F300/F400 sıcaklık dayanım sınıfına sahip duman tahliye fanları, jet fan sistemleri, çatı tipi duman tahliye fanları, duvar tipi fanlar, damperler, susturucular ve senaryo bazlı kontrol panoları ile bütünleşik duman ve ısı tahliye çözümleri sunar.",
+        "linkHref": "/cozumler/duman-isi-tahliye-sistemleri",
+        "linkLabel": "Duman ve ısı tahliye çözümlerini inceleyin →",
+        "linkAriaLabel": "NOVVES'in F300/F400 duman tahliye fanları, jet fan sistemleri, damperler, susturucular ve kontrol panolarıyla sunduğu duman ve ısı tahliye çözümlerini inceleyin."
+      },
+      {
+        "q": "Satış sonrası destek sunuyor musunuz?",
+        "a": "Evet. NOVVES; teknik dokümantasyon, devreye alma desteği, yedek parça, bakım yönlendirmesi ve satış sonrası mühendislik desteğiyle ürün tesliminden sonra da müşterilerinin yanında olur. Amaç, sistemin sahada güvenli, verimli ve sürdürülebilir şekilde çalışmasını sağlamaktır.",
+        "linkHref": "/hizmetler/teknik-servis",
+        "linkLabel": "Satış sonrası destek sürecini inceleyin →",
+        "linkAriaLabel": "NOVVES'in devreye alma, teknik dokümantasyon, yedek parça, bakım yönlendirmesi ve satış sonrası mühendislik destek sürecini inceleyin."
       }
-    ],
-    "title": "Sıkça Sorulan Sorular"
+    ]
   },
   "finalCta": {
-    "tag": "Projeniz İçin",
-    "desc": "Keşif, CFD analizi, projelendirme ve teklif süreçleri için uzman mühendislik ekibimizle hemen iletişime geçin.",
-    "title": "Havalandırma çözümü mü arıyorsunuz?",
-    "requestQuote": "Teklif Talep Edin"
+    "tag": "İletişime Geçin",
+    "title": "Kritik Projeleriniz İçin Uzman Görüşü Alın.",
+    "desc": "Duman tahliye, havalandırma, basınçlandırma ve endüstriyel hava yönetimi projeleriniz için mühendislik ekibimizle görüşün. Projenizi teknik açıdan değerlendirelim; doğru fan seçimi, sistem tasarımı, CFD analizi ve teklif süreci için size yol gösterelim.",
+    "requestQuote": "Teklif Al",
+    "callBack": "Biz Sizi Arayalım",
+    "stat1Label": "ÖN DEĞERLENDİRME",
+    "stat1Value": "2 İş Günü İçinde",
+    "stat2Label": "GLOBAL DESTEK",
+    "stat2Value": "30+ Ülkeye Proje Desteği",
+    "image": "/images/uretim.png"
   },
   "pillars": [
     {
@@ -430,10 +473,10 @@
         "label": "Aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri"
+        "label": "Otomasyon, Kontrol ve Güç Sistemleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu"
+        "label": "Titreşim ve Ses İzolasyon Sistemleri"
       }
     ],
     "title": "1.200+ Ürün Çeşidi",
@@ -516,7 +559,7 @@
     "pillarCollapseAria": "Metni daralt",
     "pillarCta": "Detayları İncele",
     "catalogCardCta": "İncele",
-    "productCardCta": "Detayları İncele",
+    "productCardCta": "Ürünleri İncele",
     "solutionCardCta": "Detayları İncele",
     "midCtaBullet1": "48 Saatte Ön Değerlendirme",
     "midCtaBullet2": "Uygulamaya Dönük Çözüm",
@@ -582,26 +625,61 @@
     }
   },
   "productCategoryBlurbs": [
-    "Güvenilir fanlarla etkili hava sirkulasyonu.",
-    "Konfor odaklı dengeli iklim kontrolü.",
-    "Enerji verimli mevsimsel iklimlendirme.",
-    "Debiyi doğru yönetir, verimi artırır.",
-    "Alan içinde dengeli ve homojen dağılım.",
-    "Daha temiz hava için etkili filtrasyon.",
-    "Kurulumu tamamlayan yardımcı ekipmanlar.",
-    "Akıllı ve pratik kontrol çözümleri.",
-    "Daha sessiz ve stabil çalışma."
+    "Aksiyal fanlardan ex-proof sistemlere, çatı ve kanal tipi fanlardan özel endüstriyel çözümlere kadar geniş ürün ailemizle güçlü ve verimli hava hareketi sunuyoruz.",
+    "Klima santrali, nem alma, ısı geri kazanım ve ex-proof AHU çözümleriyle; ticari, endüstriyel ve özel proses alanlarında verimli iklimlendirme sağlıyoruz.",
+    "Soğutma sistemleri, ısı pompaları, bataryalar, elektrikli ısıtıcılar ve hassas kontrollü klima çözümleriyle; ticari ve endüstriyel alanlarda verimli iklim kontrolü sağlıyoruz.",
+    "NOVVES Hava Yönetimi ana grubu; Damper Sistemleri ürün ailesiyle hava akışının yönlendirilmesi, dengelenmesi, izole edilmesi ve güvenli şekilde kontrol edilmesini sağlar. İklimlendirme, havalandırma, basınçlandırma ve duman kontrol senaryolarında; projeye entegre, güvenilir ve mühendislik odaklı çözümler sunar.",
+    "NOVVES Hava Dağıtımı ana grubu; Menfez ve Difüzör Sistemleri ürün ailesiyle şartlandırılmış havanın mekânlara dengeli, sessiz ve kontrollü şekilde dağıtılmasını sağlar. İç ortam konforunu, hava kalitesini ve sistem verimliliğini desteklerken; mimari estetik ile mühendislik performansını bir araya getiren çözümler sunar.",
+    "NOVVES Hava Filtrasyonu ana grubu; filtre ve filtrasyon elemanları ürün ailesiyle havanın temiz, güvenli ve kontrollü şekilde şartlandırılmasını sağlar. Partikül, toz ve kirleticileri azaltarak iklimlendirme, havalandırma ve proses sistemlerinde hava kalitesini, sistem verimliliğini ve ekipman ömrünü destekler.",
+    "NOVVES Aksesuarlar ana grubu; Fan ve HVAC Aksesuarları ürün ailesiyle havalandırma ve iklimlendirme sistemlerini tamamlayan mühendislik çözümleri sunar. Bağlantı elemanları, susturucular, koruma ekipmanları, montaj aksesuarları ve sistem tamamlayıcı ürünlerle; güvenli, verimli ve projeye uyumlu HVAC altyapıları oluşturulmasını destekler.",
+    "NOVVES Otomasyon, Kontrol ve Güç Sistemleri ana grubu; otomasyon panoları, PLC, sensörler, operatör panelleri, zamanlama cihazları ile güç elektroniği ve pano anahtarlama ürün aileleriyle HVAC sistemlerinin güvenli, akıllı ve verimli kontrolünü sağlar.",
+    "NOVVES Titreşim ve Ses İzolasyon Sistemleri ana grubu; Titreşim İzolatörleri ürün ailesiyle fan, motor ve HVAC ekipmanlarından kaynaklanan titreşimin yapıya aktarılmasını azaltır. Sistemlerin daha sessiz, dengeli ve güvenli çalışmasını destekleyerek ekipman ömrünü, kullanıcı konforunu ve proje performansını artırmaya yönelik çözümler sunar."
   ],
   "productCategoryFeatures": [
-    ["Yüksek debi performansı", "Düşük gürültü seviyesi", "EC motor seçeneği"],
-    ["Konfor ve verim dengesi", "Mevsimsel iklim kontrolü", "Isı geri kazanım"],
-    ["Enerji verimli operasyon", "Yıl boyu kullanım", "Akıllı kontrol"],
-    ["Hassas debi kontrolü", "Bölgesel optimizasyon", "Modüler tasarım"],
-    ["Homojen alan dağılımı", "Düşük basınç kaybı", "Geniş çap yelpazesi"],
-    ["HEPA & karbon filtre", "Uzun ömürlü kartuş", "Hijyenik alan uyumu"],
-    ["Geniş bağlantı yelpazesi", "Kolay montaj", "Standart ölçüler"],
-    ["BMS entegrasyonu", "Uzaktan izleme", "Akıllı kontrol panosu"],
-    ["Yaylı izolatörler", "Düşük frekans damping", "Endüstriyel uyum"]
+    [
+      "Kovanlı Aksiyal Fan Ailesi",
+      "Patlamaya Dayanıklı Fan (Ex-proof) Ailesi",
+      "Endüstriyel Salyangoz Fan Ailesi",
+      "EC Motorlu Fan Sistemleri Ailesi",
+      "Çatı Tipi Fan Ailesi",
+      "Duvar Tipi Fan Ailesi",
+      "Banyo Fanı Ailesi",
+      "Kanal Tipi Fan Ailesi",
+      "Hücre Tipi Fan Ailesi",
+      "Mutfak Havalandırma Sistemleri Ailesi",
+      "Sığınak Fanı Ailesi",
+      "Tavuk Çiftliği Havalandırma Sistemi Ailesi",
+      "Toz Toplama Sistemleri Ailesi"
+    ],
+    [
+      "Klima Santrali Ailesi",
+      "Nem Alma Santrali Ailesi",
+      "Isı Geri Kazanım Ünitesi Ailesi",
+      "Patlamaya Dayanıklı Klima Santrali (Ex-proof AHU)"
+    ],
+    [
+      "Kompakt, Paket, Endüstriyel Soğutma Ailesi",
+      "Isı Pompası Dış Ünite Ailesi",
+      "İç Ünite Ailesi",
+      "Isıtma / Soğutma Bataryaları (Coil) Ailesi",
+      "Elektrikli Isıtıcı Ailesi",
+      "Isı Eşanjörü Ailesi",
+      "Hassas Kontrollü Klima Ailesi"
+    ],
+    ["Damper Sistemleri Ailesi"],
+    ["Menfez ve Difüzör Sistemleri Ailesi"],
+    ["Filtre ve Filtrasyon Elemanları Ailesi"],
+    ["Fan ve HVAC Aksesuarları Ailesi"],
+    [
+      "Otomasyon Pano Sistemleri Ailesi",
+      "PLC ve Programlanabilir Kontrol Sistemleri Ailesi",
+      "Sensör ve Algılama Sistemleri Ailesi",
+      "Kontrol Kartları ve Operatör Panelleri Ailesi",
+      "Zamanlama ve Kontrol Cihazları Ailesi",
+      "Güç Elektroniği Sistemleri Ailesi",
+      "Pano Güç ve Anahtarlama Elemanları Ailesi"
+    ],
+    ["Titreşim İzolatörleri Ailesi"]
   ],
   "catalogPreview": [
     {

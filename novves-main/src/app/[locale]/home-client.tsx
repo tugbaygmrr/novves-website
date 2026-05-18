@@ -12,6 +12,7 @@ import {
   readCookieConsentRaw,
 } from "@/lib/cookie-consent-storage";
 import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
+import { productStripCategoryMedia } from "@/lib/product-strip-media";
 import { solutionStripPageProductMedia } from "@/lib/solution-strip-media";
 
 /** Sertifika şeridi — `globals.css` --sand-200 ile aynı (ürün görseli arka plan tonu) */
@@ -140,14 +141,31 @@ type HomeDict = {
   };
   faq: {
     tag: string;
-    title: string;
-    items: { q: string; a: string }[];
+    title?: string;
+    headline?: string;
+    desc?: string;
+    footerLinkHref?: string;
+    footerLinkLabel?: string;
+    footerLinkAriaLabel?: string;
+    items: {
+      q: string;
+      a: string;
+      linkHref?: string;
+      linkLabel?: string;
+      linkAriaLabel?: string;
+    }[];
   };
   finalCta: {
     tag: string;
     title: string;
     desc: string;
     requestQuote: string;
+    callBack?: string;
+    stat1Label?: string;
+    stat1Value?: string;
+    stat2Label?: string;
+    stat2Value?: string;
+    image?: string;
   };
   /** Yerelleştirilmiş ana sayfa etiketleri — tüm dillerde home.json içinde olmalı */
   pageChrome?: Record<string, string>;
@@ -351,8 +369,8 @@ const productCategoryMeta = [
   },
   {
     href: "/urunler/sogutma-ve-isitma",
-    image: "/images/products/tiger-pre.png",
-    thumbs: ["/images/products/tiger-pre.png", "/images/products/dragonfly-c.png", "/images/products/marlin.png"],
+    image: "/images/products/marlin.png",
+    thumbs: ["/images/products/marlin.png", "/images/products/tiger-pre.png", "/images/products/dragonfly-c.png"],
   },
   {
     href: "/urunler/hava-yonetimi",
@@ -394,10 +412,28 @@ function productSlugToFallbackLabel(slug: string): string {
     .join(" ");
 }
 
-/** Ürün şeridi: lg+ ok beş kartlık sayfa; daha dar ekranda tek kart adımı */
-const PRODUCT_STRIP_PAGE_CARD_COUNT = 5;
-/** Çözüm şeridi: lg+ ok beş kartlık sayfa (ürün şeridi ile aynı) */
+/** Ürün kartı numarası — belirgin turuncu gradient */
+const PRODUCT_CARD_NUM_GRADIENT =
+  "linear-gradient(180deg, #ffb884 0%, #f07838 42%, #ef5f17 72%, #d94e10 100%)";
+/** Ürün kartı CTA — mockup şeftali/turuncu */
+const PRODUCT_CARD_CTA_COLOR = "#e8956f";
+/** Çözüm / ürün şeridi: lg+ ok beş kartlık sayfa */
 const SOLUTION_STRIP_PAGE_CARD_COUNT = 5;
+const PRODUCT_STRIP_PAGE_CARD_COUNT = 5;
+
+function stripActiveCardIndex(container: HTMLElement, cards: readonly HTMLElement[]) {
+  const edge = container.getBoundingClientRect().left;
+  let bestIdx = 0;
+  let bestDist = Infinity;
+  for (let i = 0; i < cards.length; i++) {
+    const dist = Math.abs(cards[i]!.getBoundingClientRect().left - edge);
+    if (dist < bestDist) {
+      bestDist = dist;
+      bestIdx = i;
+    }
+  }
+  return bestIdx;
+}
 
 function scrollHorizontalStrip(
   container: HTMLElement | null,
@@ -406,24 +442,32 @@ function scrollHorizontalStrip(
   desktopPageCardCount: number,
 ) {
   if (!container) return;
-  const cards = Array.from(container.querySelectorAll(cardSelector)) as HTMLElement[];
-  if (cards.length < 2) return;
-  const cardStep = cards[1]!.offsetLeft - cards[0]!.offsetLeft;
-  if (cardStep <= 0) return;
+  const cards = Array.from(container.querySelectorAll(cardSelector)).filter(
+    (el): el is HTMLElement => el instanceof HTMLElement && el.parentElement === container,
+  );
+  if (!cards.length) return;
 
   const isDesktop =
     typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches;
-  let delta: number;
-  if (isDesktop) {
-    const pageEndIdx = Math.min(desktopPageCardCount, cards.length - 1);
-    delta = cards[pageEndIdx]!.offsetLeft - cards[0]!.offsetLeft;
-  } else {
-    delta = cardStep;
+  const stepCount = isDesktop ? desktopPageCardCount : 1;
+  const currentIdx = stripActiveCardIndex(container, cards);
+
+  const targetIdx =
+    direction === "next"
+      ? Math.min(cards.length - 1, currentIdx + stepCount)
+      : Math.max(0, currentIdx - stepCount);
+
+  if (targetIdx === currentIdx) return;
+
+  const target = cards[targetIdx]!;
+  const delta = target.getBoundingClientRect().left - container.getBoundingClientRect().left;
+
+  if (Math.abs(delta) > 1) {
+    container.scrollBy({ left: delta, behavior: "smooth" });
+    return;
   }
-  if (direction === "prev") delta = -delta;
-  const maxScroll = Math.max(0, container.scrollWidth - container.clientWidth);
-  const target = Math.max(0, Math.min(maxScroll, container.scrollLeft + delta));
-  container.scrollTo({ left: target, behavior: "smooth" });
+
+  target.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
 }
 
 /** Çözüm carousel — metinler locale home.json içindeki solutionCarouselByHref */
@@ -1162,6 +1206,266 @@ const THUMB_VISUAL_SCALE: Record<string, number> = {
   "/images/products/yayli-titresim-izolatoru.png": 1.26,
 };
 
+const PRODUCT_CATEGORY_ICON_BY_SLUG: Record<string, string> = {
+  "hava-hareketi": "wind",
+  "iklimlendirme": "snowflake",
+  "sogutma-ve-isitma": "thermo",
+  "hava-yonetimi": "waves",
+  "hava-dagitimi": "diffuser",
+  "hava-filtrasyonu": "filter",
+  "aksesuarlar": "wrench",
+  "otomasyon-malzemeleri": "chip",
+  "titresim-ve-ses-izolasyon": "equalizer",
+};
+
+function ProductCategoryIcon({ name, className }: { name: string; className?: string }) {
+  const common = {
+    fill: "none" as const,
+    stroke: "currentColor" as const,
+    strokeWidth: 1.6,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    viewBox: "0 0 24 24",
+    className,
+  };
+  switch (name) {
+    case "wind":
+      return (
+        <svg {...common} aria-hidden>
+          <path d="M3 8h11a3 3 0 1 0-3-3" />
+          <path d="M3 12h16a3 3 0 1 1-3 3" />
+          <path d="M3 16h9" />
+        </svg>
+      );
+    case "snowflake":
+      return (
+        <svg {...common} aria-hidden>
+          <path d="M12 3v18" />
+          <path d="M3 12h18" />
+          <path d="M5.5 5.5l13 13" />
+          <path d="M18.5 5.5l-13 13" />
+          <path d="M9 5l3 -2 3 2" />
+          <path d="M9 19l3 2 3-2" />
+        </svg>
+      );
+    case "thermo":
+      return (
+        <svg {...common} aria-hidden>
+          <circle cx="12" cy="12" r="3" />
+          <path d="M12 2v3" />
+          <path d="M12 19v3" />
+          <path d="M4.2 4.2l2.1 2.1" />
+          <path d="M17.7 17.7l2.1 2.1" />
+          <path d="M2 12h3" />
+          <path d="M19 12h3" />
+          <path d="M4.2 19.8l2.1-2.1" />
+          <path d="M17.7 6.3l2.1-2.1" />
+        </svg>
+      );
+    case "waves":
+      return (
+        <svg {...common} aria-hidden>
+          <path d="M3 7c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
+          <path d="M3 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
+          <path d="M3 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
+        </svg>
+      );
+    case "diffuser":
+      return (
+        <svg {...common} fill="currentColor" stroke="none" aria-hidden>
+          {[5, 12, 19].flatMap((y) =>
+            [5, 12, 19].map((x) => <circle key={`${x}-${y}`} cx={x} cy={y} r="1.3" />),
+          )}
+        </svg>
+      );
+    case "filter":
+      return (
+        <svg {...common} aria-hidden>
+          <path d="M3 5h18l-7 9v6l-4-2v-4z" />
+        </svg>
+      );
+    case "wrench":
+      return (
+        <svg {...common} aria-hidden>
+          <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6 2.6 2.6 6-6a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.6-2.6 2.3-2.3z" />
+        </svg>
+      );
+    case "chip":
+      return (
+        <svg {...common} aria-hidden>
+          <rect x="6" y="6" width="12" height="12" rx="1.5" />
+          <rect x="9" y="9" width="6" height="6" rx="0.6" />
+          <path d="M9 3v3M12 3v3M15 3v3M9 18v3M12 18v3M15 18v3M3 9h3M3 12h3M3 15h3M18 9h3M18 12h3M18 15h3" />
+        </svg>
+      );
+    case "equalizer":
+      return (
+        <svg {...common} aria-hidden>
+          <path d="M6 20V8" />
+          <path d="M12 20V4" />
+          <path d="M18 20v-8" />
+          <circle cx="6" cy="6" r="1.3" />
+          <circle cx="12" cy="2.5" r="1.3" />
+          <circle cx="18" cy="10" r="1.3" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
+
+function HomeProductCategoryCard({
+  locale,
+  href,
+  title,
+  description,
+  families,
+  image,
+  index,
+  cta,
+  imagePriority = false,
+}: {
+  locale: string;
+  href: string;
+  title: string;
+  description: string;
+  families?: readonly string[];
+  image: string;
+  index: number;
+  cta: string;
+  imagePriority?: boolean;
+}) {
+  const num = String(index + 1).padStart(2, "0");
+  const slug = href.split("/").filter(Boolean).pop() ?? "";
+  const iconName = PRODUCT_CATEGORY_ICON_BY_SLUG[slug] ?? "wind";
+  const all = families ?? [];
+  const hasFamilies = all.length > 0;
+  const familiesText = all.join(" • ");
+  const [detailSlide, setDetailSlide] = useState(0);
+
+  useEffect(() => {
+    if (!hasFamilies) {
+      setDetailSlide(0);
+      return;
+    }
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let intervalId: number | undefined;
+    const timeoutId = window.setTimeout(() => {
+      intervalId = window.setInterval(() => {
+        setDetailSlide((s) => (s + 1) % 2);
+      }, 4500);
+    }, 3200 + index * 650);
+    return () => {
+      window.clearTimeout(timeoutId);
+      if (intervalId !== undefined) window.clearInterval(intervalId);
+    };
+  }, [hasFamilies, index]);
+
+  return (
+    <Link
+      href={`/${locale}${href}`}
+      className="group relative flex h-[19.5rem] min-h-0 w-full flex-col overflow-hidden rounded-2xl bg-white shadow-[0_14px_42px_-22px_rgba(15,22,36,0.16)] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_22px_52px_-22px_rgba(15,22,36,0.22)] sm:h-[22rem]"
+    >
+      {/* Üst görsel + numara tag */}
+      <div className="relative h-[7.25rem] w-full shrink-0 overflow-hidden bg-[#2a3140] sm:h-[8rem]">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          priority={imagePriority}
+          quality={82}
+          className="object-cover object-center transition duration-500 [@media(hover:hover)]:group-hover:scale-[1.04]"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 360px"
+        />
+        <div className="absolute left-0 top-0 z-10 grid h-[44px] w-[44px] place-items-center rounded-br-xl bg-primary shadow-[0_6px_14px_-6px_rgba(239,95,23,0.6)] sm:h-[48px] sm:w-[48px]">
+          <span className="font-mono-eng text-[14px] font-bold leading-none tabular-nums text-white sm:text-[15px]">
+            {num}
+          </span>
+        </div>
+      </div>
+
+      {/* İkon dairesi — görselin alt kenarına bindirir */}
+      <div className="relative z-10 h-0">
+        <div className="absolute -top-6 left-4 grid h-12 w-12 place-items-center rounded-full bg-white text-primary shadow-[0_4px_12px_rgba(15,22,36,0.12),0_1px_2px_rgba(15,22,36,0.08)] sm:-top-7 sm:h-[3.25rem] sm:w-[3.25rem]">
+          <ProductCategoryIcon name={iconName} className="h-5 w-5 sm:h-6 sm:w-6" />
+        </div>
+      </div>
+
+      {/* Gövde */}
+      <div className="flex min-h-0 flex-1 flex-col px-4 pb-3 pt-7 sm:px-5 sm:pb-4 sm:pt-9">
+        <h3 className="line-clamp-1 shrink-0 text-balance text-[15px] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[17px]">
+          {title}
+        </h3>
+
+        {/* Slayt alanı — açıklama ↔ ürün aileleri, yumuşak cross-fade */}
+        <div className="mt-2 flex min-h-0 flex-1 gap-2 overflow-hidden sm:mt-2.5 sm:gap-2.5">
+          {hasFamilies ? (
+            <div
+              className="flex w-2 shrink-0 flex-col items-start justify-center gap-1.5 self-stretch py-0.5"
+              role="tablist"
+              aria-label="Kart içeriği"
+              aria-orientation="vertical"
+            >
+              {([0, 1] as const).map((slideIndex) => (
+                <button
+                  key={slideIndex}
+                  type="button"
+                  role="tab"
+                  aria-selected={detailSlide === slideIndex}
+                  aria-label={slideIndex === 0 ? "Açıklama" : "Ürün aileleri"}
+                  onPointerDown={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                  }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setDetailSlide(slideIndex);
+                  }}
+                  className={`shrink-0 rounded-full transition-[height,background-color,opacity] duration-300 motion-reduce:transition-none ${
+                    detailSlide === slideIndex
+                      ? "h-3 w-1.5 bg-primary opacity-100"
+                      : "h-1.5 w-1.5 bg-primary/35 hover:bg-primary/55"
+                  }`}
+                />
+              ))}
+            </div>
+          ) : null}
+          <div className="min-h-0 min-w-0 flex-1 overflow-hidden" aria-live="polite">
+            {!hasFamilies || detailSlide === 0 ? (
+              <p
+                key="desc"
+                className="product-card-clamp-desc m-0 text-[12.5px] leading-[1.5] text-secondary/80 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[13px]"
+              >
+                {description}
+              </p>
+            ) : (
+              <p
+                key="fam"
+                className="product-card-clamp-families m-0 text-[10.5px] leading-[1.45] text-secondary/65 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[11px]"
+              >
+                {familiesText}
+              </p>
+            )}
+          </div>
+        </div>
+
+        <span
+          className="inline-flex shrink-0 items-center gap-2 pt-2 text-[10px] font-bold uppercase tracking-[0.14em] text-primary transition-colors duration-300 sm:pt-2.5 sm:text-[11px] [@media(hover:hover)]:group-hover:text-primary-deep"
+        >
+          <span className="uppercase">{cta}</span>
+          <span
+            aria-hidden
+            className="text-[1.15em] font-normal leading-none transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-1"
+          >
+            →
+          </span>
+        </span>
+      </div>
+    </Link>
+  );
+}
+
 function HomeMarketStripCard({
   locale,
   href,
@@ -1301,19 +1605,54 @@ const productFallbackImages = [
 
 /**
  * Ürün kategorileri için 3'er madde özet — kart orta boşluğunu doldurur.
- * `PRODUCT_CATEGORY_NAV.slice(0,9)` sırasıyla eşleşir; dict’te `productCategoryFeatures`
+ * `PRODUCT_CATEGORY_NAV` sırasıyla eşleşir; başlıklar `products.json` → `shared.categories`
  * varsa onlar kullanılır, yoksa bu TR fallback gösterilir.
  */
 const HOME_PRODUCT_BAND_FEATURE_FALLBACKS: readonly (readonly string[])[] = [
-  ["Yüksek debi performansı", "Düşük gürültü seviyesi", "EC motor seçeneği"],
-  ["Konfor ve verim dengesi", "Mevsimsel iklim kontrolü", "Isı geri kazanım"],
-  ["Enerji verimli operasyon", "Yıl boyu kullanım", "Akıllı kontrol"],
-  ["Hassas debi kontrolü", "Bölgesel optimizasyon", "Modüler tasarım"],
-  ["Homojen alan dağılımı", "Düşük basınç kaybı", "Geniş çap yelpazesi"],
-  ["HEPA & karbon filtre", "Uzun ömürlü kartuş", "Hijyenik alan uyumu"],
-  ["Geniş bağlantı yelpazesi", "Kolay montaj", "Standart ölçüler"],
-  ["BMS entegrasyonu", "Uzaktan izleme", "Akıllı kontrol panosu"],
-  ["Yaylı izolatörler", "Düşük frekans damping", "Endüstriyel uyum"],
+  [
+    "Kovanlı Aksiyal Fan Ailesi",
+    "Patlamaya Dayanıklı Fan (Ex-proof) Ailesi",
+    "Endüstriyel Salyangoz Fan Ailesi",
+    "EC Motorlu Fan Sistemleri Ailesi",
+    "Çatı Tipi Fan Ailesi",
+    "Duvar Tipi Fan Ailesi",
+    "Banyo Fanı Ailesi",
+    "Kanal Tipi Fan Ailesi",
+    "Hücre Tipi Fan Ailesi",
+    "Mutfak Havalandırma Sistemleri Ailesi",
+    "Sığınak Fanı Ailesi",
+    "Tavuk Çiftliği Havalandırma Sistemi Ailesi",
+    "Toz Toplama Sistemleri Ailesi",
+  ],
+  [
+    "Klima Santrali Ailesi",
+    "Nem Alma Santrali Ailesi",
+    "Isı Geri Kazanım Ünitesi Ailesi",
+    "Patlamaya Dayanıklı Klima Santrali (Ex-proof AHU)",
+  ],
+  [
+    "Kompakt, Paket, Endüstriyel Soğutma Ailesi",
+    "Isı Pompası Dış Ünite Ailesi",
+    "İç Ünite Ailesi",
+    "Isıtma / Soğutma Bataryaları (Coil) Ailesi",
+    "Elektrikli Isıtıcı Ailesi",
+    "Isı Eşanjörü Ailesi",
+    "Hassas Kontrollü Klima Ailesi",
+  ],
+  ["Damper Sistemleri Ailesi"],
+  ["Menfez ve Difüzör Sistemleri Ailesi"],
+  ["Filtre ve Filtrasyon Elemanları Ailesi"],
+  ["Fan ve HVAC Aksesuarları Ailesi"],
+  [
+    "Otomasyon Pano Sistemleri Ailesi",
+    "PLC ve Programlanabilir Kontrol Sistemleri Ailesi",
+    "Sensör ve Algılama Sistemleri Ailesi",
+    "Kontrol Kartları ve Operatör Panelleri Ailesi",
+    "Zamanlama ve Kontrol Cihazları Ailesi",
+    "Güç Elektroniği Sistemleri Ailesi",
+    "Pano Güç ve Anahtarlama Elemanları Ailesi",
+  ],
+  ["Titreşim İzolatörleri Ailesi"],
 ];
 
 /**
@@ -1620,11 +1959,14 @@ export default function HomeClient({
   dict,
   common,
   locale,
+  productCategoryLabels = {},
   referencePreviewProjectCounts,
 }: {
   dict: HomeDict;
   common?: HomeCommonNav | null;
   locale: string;
+  /** `products.json` → `shared.categories` — ürünler hub ile aynı başlıklar */
+  productCategoryLabels?: Record<string, string>;
   /** `@/data/references` üzerinden; referanslar sayfası ile aynı veri — `referencePreview` sırasıyla */
   referencePreviewProjectCounts?: number[];
 }) {
@@ -1639,7 +1981,7 @@ export default function HomeClient({
   const productBlurbs = dict.productCategoryBlurbs ?? [];
   const productFeatures = dict.productCategoryFeatures ?? [];
 
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [hoveredCompanyProfileIndex, setHoveredCompanyProfileIndex] = useState<number | null>(null);
   const [allowRestrictedSections, setAllowRestrictedSections] = useState<boolean | null>(null);
   const solutionStripCarouselRef = useRef<HTMLDivElement | null>(null);
@@ -1711,10 +2053,15 @@ export default function HomeClient({
   }, []);
 
   const homeItems = dict.productCategories.items;
-  const homeProductBandRows = PRODUCT_CATEGORY_NAV.slice(0, 9).map((nav, i) => {
+  const homeProductBandRows = PRODUCT_CATEGORY_NAV.map((nav, i) => {
     const meta = productCategoryMeta[i];
+    const href = meta?.href ?? `/urunler/${nav.slug}`;
+    const labelFromProducts = productCategoryLabels[nav.key]?.trim();
     const labelFromHome = homeItems[i]?.label?.trim();
+    const label =
+      labelFromProducts || labelFromHome || productSlugToFallbackLabel(nav.slug);
     const fallbackImg = productFallbackImages[i % productFallbackImages.length]!;
+    const categoryHero = productStripCategoryMedia[href]?.hero;
     const thumbs: readonly [string, string, string] = meta?.thumbs
       ? [meta.thumbs[0], meta.thumbs[1], meta.thumbs[2]]
       : [meta?.image ?? fallbackImg, fallbackImg, fallbackImg];
@@ -1724,9 +2071,9 @@ export default function HomeClient({
         ? featuresFromDict
         : HOME_PRODUCT_BAND_FEATURE_FALLBACKS[i] ?? [];
     return {
-      label: labelFromHome || productSlugToFallbackLabel(nav.slug),
-      href: meta?.href ?? `/urunler/${nav.slug}`,
-      image: meta?.image ?? fallbackImg,
+      label,
+      href,
+      image: categoryHero ?? meta?.image ?? fallbackImg,
       thumbs,
       blurb: productBlurbs[i] ?? pc.productFallbackDesc,
       features,
@@ -1845,7 +2192,7 @@ export default function HomeClient({
                   type="button"
                   onClick={() => scrollSolutionStrip("prev")}
                   aria-label={pc.previousSolutions}
-                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+                  className="relative z-10 mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
                 >
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -1889,32 +2236,29 @@ export default function HomeClient({
                   type="button"
                   onClick={() => scrollSolutionStrip("next")}
                   aria-label={pc.nextSolutions}
-                  className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+                  className="relative z-10 mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
                 >
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* 03 — ÜRÜNLER (aynı referans düzeni; arka plan çözümler şeridi ile aynı sand) */}
-      <section id="product-categories" className="relative scroll-mt-24 border-t border-sand-300 bg-sand-100 text-ink md:scroll-mt-[5.5rem]">
-        <HomeMarketStripBackdrop />
-        <div className="relative z-[1] mx-auto max-w-[1720px] px-4 py-10 sm:px-10 sm:py-12 lg:px-16 lg:py-14">
-          <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
-            <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
-            <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
-          </div>
-              <div className="-mx-1 flex items-stretch gap-2 px-1 sm:-mx-0 sm:gap-3 sm:px-0">
+              <div
+                id="product-categories"
+                className="scroll-mt-24 border-t border-sand-300 pt-8 sm:pt-10 md:scroll-mt-[5.5rem] lg:pt-12"
+              >
+                <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
+                  <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
+                  <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
+                </div>
+
+                <div className="-mx-1 flex items-stretch gap-2 px-1 sm:-mx-0 sm:gap-3 sm:px-0">
             <button
               type="button"
               onClick={() => scrollProductStrip("prev")}
               aria-label={pc.previousProducts}
-              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-[#4a6fa3] hover:bg-[#1a2842] hover:text-white hover:shadow-[0_12px_30px_-14px_rgba(26,40,66,0.5)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+              className="relative z-10 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -1922,41 +2266,44 @@ export default function HomeClient({
             </button>
             <div className="min-w-0 flex-1">
               <div
-                    ref={productStripCarouselRef}
-                    className="flex items-stretch gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
+                ref={productStripCarouselRef}
+                className="flex items-stretch gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden lg:gap-3"
                 style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               >
-                {homeProductBandRows.map((row, i) => {
-                  return (
-                    <div
-                      key={row.href}
-                      data-product-strip-card
-                      className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-3rem)/5)] lg:flex-[0_0_calc((100%-3rem)/5)]"
-                    >
-                      <HomeMarketStripCard
-                        locale={locale}
-                        href={row.href}
-                        title={row.label}
-                        subtitle={row.blurb}
-                        thumbs={row.thumbs}
-                        features={row.features}
-                        imagePriority={i === 0}
-                      />
-                    </div>
-                  );
-                })}
+                {homeProductBandRows.map((row, i) => (
+                  <div
+                    key={row.href}
+                    data-product-strip-card
+                    className="box-border flex h-full min-h-0 w-full max-w-full shrink-0 snap-start flex-col self-stretch min-w-full md:min-w-[calc((100%-1.5rem)/3)] md:max-w-none md:flex-[0_0_calc((100%-1.5rem)/3)] lg:min-w-[calc((100%-3rem)/5)] lg:flex-[0_0_calc((100%-3rem)/5)]"
+                  >
+                    <HomeProductCategoryCard
+                      locale={locale}
+                      href={row.href}
+                      title={row.label}
+                      description={row.blurb}
+                      families={row.features}
+                      image={row.image}
+                      index={i}
+                      cta={pc.productCardCta}
+                      imagePriority={i === 0}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
             <button
               type="button"
               onClick={() => scrollProductStrip("next")}
               aria-label={pc.nextProducts}
-              className="mt-1 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-[#4a6fa3] hover:bg-[#1a2842] hover:text-white hover:shadow-[0_12px_30px_-14px_rgba(26,40,66,0.5)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
+              className="relative z-10 flex h-11 w-11 shrink-0 touch-manipulation items-center justify-center self-center rounded-xl border border-sand-300 bg-white text-dark shadow-[0_8px_22px_-12px_rgba(0,56,107,0.12)] transition-all duration-300 hover:border-primary/50 hover:bg-sand-100 hover:text-primary hover:shadow-[0_12px_28px_-14px_rgba(239,95,23,0.22)] sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -2448,7 +2795,6 @@ export default function HomeClient({
           />
 
           <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
-            {/* Video */}
             <div className="lg:col-span-8">
               <div className="relative shadow-[0_28px_70px_-36px_rgba(0,0,0,0.55)] ring-1 ring-white/[0.07]">
                 <div className="relative aspect-video overflow-hidden border border-white/[0.09] bg-[#0b1018] text-white/35">
@@ -2468,7 +2814,6 @@ export default function HomeClient({
               </div>
             </div>
 
-            {/* Side column */}
             <div className="flex flex-col justify-between gap-8 lg:col-span-4">
               <div className="space-y-3">
                 <Link
@@ -2490,134 +2835,192 @@ export default function HomeClient({
                   </svg>
                 </Link>
               </div>
-
             </div>
           </div>
         </div>
       </section>
 
-      {/* 06 — FAQ & 07 — FINAL CTA combined into a two-column block */}
-      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-12 sm:py-16 md:scroll-mt-[5.5rem]">
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-60" />
+      {/* 06 — FAQ (mockup) & final CTA */}
+      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-14 sm:py-20 md:scroll-mt-[5.5rem]">
+        <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-x-14 xl:gap-x-20">
+            <div className="lg:col-span-4 lg:pt-2">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary sm:text-[12px] sm:tracking-[0.22em]">
+                {dict.faq.tag}
+              </p>
+              <h2
+                className="mt-4 text-balance font-bold tracking-[-0.03em] text-ink"
+                style={{ fontSize: "clamp(1.85rem, 3.2vw, 2.65rem)", lineHeight: 1.12 }}
+              >
+                {dict.faq.headline ?? dict.faq.title ?? dict.faq.tag}
+              </h2>
+              {dict.faq.desc ? (
+                <p className={`mt-5 max-w-[34ch] ${homeLeadInk}`}>{dict.faq.desc}</p>
+              ) : null}
+            </div>
 
-        <div className="relative mx-auto max-w-[1600px] px-2 sm:px-10 lg:px-16">
-          <SectionHead num="06" title={dict.faq.title} meta={dict.faq.tag} />
-
-          <div className="mt-16 grid gap-14 lg:grid-cols-12 lg:items-stretch">
-            {/* FAQ list — kurumsal palet: lacivert şerit + bej gövde, turuncu vurgu */}
-            <div className="lg:col-span-7 lg:h-full">
-              <div className="relative overflow-hidden rounded-3xl border border-[#1a2842]/14 bg-white/75 p-2.5 shadow-[0_22px_55px_-38px_rgba(13,17,23,0.22)] backdrop-blur-[6px] sm:p-3 lg:h-full">
-                <div
-                  className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
-                  aria-hidden
-                />
-                <div className="relative space-y-2.5 lg:flex lg:h-full lg:flex-col lg:gap-2.5 lg:space-y-0">
-                  {dict.faq.items.map((item, index) => {
-                    const isOpen = openFaq === index;
-                    return (
-                      <div
-                        key={item.q}
-                        className={`overflow-hidden rounded-2xl border transition-[border-color,box-shadow] duration-300 ${
-                          isOpen
-                            ? "border-[#1a2842] shadow-[0_18px_44px_-26px_rgba(13,17,23,0.35)] ring-1 ring-primary/22"
-                            : "border-[#1a2842]/10 bg-white/95 shadow-[0_10px_36px_-30px_rgba(26,40,66,0.16)] hover:border-primary/30 hover:shadow-[0_16px_44px_-28px_rgba(26,40,66,0.2)]"
-                        }`}
+            <div className="lg:col-span-8">
+              <div className="border-t border-ink/[0.08]">
+                {dict.faq.items.map((item, index) => {
+                  const isOpen = openFaq === index;
+                  const num = String(index + 1).padStart(2, "0");
+                  return (
+                    <div key={item.q} className="border-b border-ink/[0.08]">
+                      <button
+                        type="button"
+                        aria-expanded={isOpen}
+                        onClick={() => setOpenFaq(isOpen ? null : index)}
+                        className="group grid w-full grid-cols-[auto_1fr_auto] items-start gap-x-4 py-5 text-left sm:gap-x-6 sm:py-6"
                       >
-                        <button
-                          type="button"
-                          onClick={() => setOpenFaq(isOpen ? null : index)}
-                          className={`group flex w-full items-start justify-between gap-4 px-4 py-4 text-left transition-colors duration-300 sm:px-5 sm:py-4 ${
-                            isOpen
-                              ? "bg-[#1a2842] text-white"
-                              : "bg-white/90 hover:bg-[#f7f6f2]"
-                          }`}
+                        <span
+                          className="font-product-card-num select-none pt-0.5 text-[clamp(2.5rem,4.5vw,3.35rem)] font-bold leading-none tabular-nums text-primary/28 transition-colors duration-300 group-hover:text-primary/40"
+                          aria-hidden
                         >
-                          <div className="flex min-w-0 flex-1 items-start gap-4">
-                            <span className="font-mono-eng shrink-0 pt-1 min-w-[2.5ch] text-[10px] uppercase tracking-[0.22em] text-primary">
-                              {String(index + 1).padStart(2, "0")}
-                            </span>
-                            <span
-                              className={`text-[18px] font-semibold leading-[1.4] sm:text-[20px] ${
-                                isOpen
-                                  ? "text-white"
-                                  : "text-ink transition-colors duration-300 group-hover:text-[#1a2842]"
-                              }`}
-                            >
-                              {item.q}
-                            </span>
-                          </div>
-                          <span
-                            className={`font-mono-eng shrink-0 text-[20px] leading-none transition-all duration-300 ${
-                              isOpen
-                                ? "rotate-45 text-primary"
-                                : "text-ink/45 group-hover:text-primary"
+                          {num}
+                        </span>
+                        <span className="min-w-0 pt-2 text-[17px] font-semibold leading-[1.35] text-ink sm:text-[18px] sm:leading-[1.4]">
+                          {item.q}
+                        </span>
+                        <span
+                          className="pt-1.5 font-mono-eng text-[22px] font-light leading-none text-ink/35 transition-colors duration-300 group-hover:text-primary/70 sm:text-[24px]"
+                          aria-hidden
+                        >
+                          {isOpen ? "×" : "+"}
+                        </span>
+                      </button>
+                      <div
+                        className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none ${
+                          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                        }`}
+                        aria-hidden={!isOpen}
+                      >
+                        <div className="min-h-0">
+                          <div
+                            className={`grid grid-cols-[auto_1fr_auto] gap-x-4 pb-5 sm:gap-x-6 sm:pb-6 ${
+                              isOpen ? "" : "pointer-events-none"
                             }`}
                           >
-                            +
-                          </span>
-                        </button>
-                        {isOpen && (
-                          <div className="border-t border-[#1a2842]/15 bg-[#ebe8e0] px-5 py-5 sm:px-6 sm:py-6">
-                            <p className={`border-l-2 border-primary/80 pl-4 ${homeLeadInk}`}>
-                              {item.a}
-                            </p>
+                            <span aria-hidden className="invisible text-[clamp(2.5rem,4.5vw,3.35rem)] leading-none">
+                              {num}
+                            </span>
+                            <div className="min-w-0">
+                              <p className="text-[14px] leading-[1.65] text-[#6b7280] sm:text-[15px] sm:leading-[1.7]">
+                                {item.a}
+                              </p>
+                              {item.linkHref && item.linkLabel ? (
+                                <Link
+                                  href={`/${locale}${item.linkHref}`}
+                                  title={item.linkAriaLabel}
+                                  aria-label={item.linkAriaLabel ?? item.linkLabel}
+                                  className="mt-3 inline-flex items-center gap-1 text-[13px] font-semibold text-primary transition-colors duration-300 hover:text-primary-deep sm:text-[14px]"
+                                >
+                                  {item.linkLabel}
+                                </Link>
+                              ) : null}
+                            </div>
+                            <span aria-hidden className="w-[22px] sm:w-6" />
                           </div>
-                        )}
+                        </div>
                       </div>
-                    );
-                  })}
+                    </div>
+                  );
+                })}
+              </div>
+              {dict.faq.footerLinkHref && dict.faq.footerLinkLabel ? (
+                <div className="mt-5 border-t border-ink/[0.08] pt-5 sm:mt-6 sm:pt-6">
+                  <Link
+                    href={`/${locale}${dict.faq.footerLinkHref}`}
+                    title={dict.faq.footerLinkAriaLabel}
+                    aria-label={dict.faq.footerLinkAriaLabel ?? dict.faq.footerLinkLabel}
+                    className="inline-flex items-center gap-1 text-[12px] font-semibold text-primary/90 transition-colors duration-300 hover:text-primary sm:text-[13px]"
+                  >
+                    {dict.faq.footerLinkLabel}
+                  </Link>
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <aside className="mt-14 sm:mt-16 lg:mt-20">
+            <div className="overflow-hidden rounded-[1.35rem] bg-[#eeedea] shadow-[0_22px_55px_-38px_rgba(15,22,36,0.14)] ring-1 ring-ink/[0.06] sm:rounded-[1.75rem]">
+              <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+                <div className="flex flex-col justify-between px-6 py-8 sm:px-9 sm:py-10 lg:px-11 lg:py-11">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary sm:text-[12px]">
+                      {dict.finalCta.tag}
+                    </p>
+                    <h3
+                      className="mt-3 max-w-[22ch] text-balance font-bold tracking-[-0.03em] text-ink"
+                      style={{ fontSize: "clamp(1.65rem, 2.8vw, 2.35rem)", lineHeight: 1.1 }}
+                    >
+                      {dict.finalCta.title}
+                    </h3>
+                    <p className={`mt-4 max-w-[52ch] ${homeLeadInk}`}>{dict.finalCta.desc}</p>
+
+                    <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                      <Link
+                        href={`/${locale}/iletisim`}
+                        className="btn-3d btn-3d-primary group inline-flex min-h-[3rem] items-center justify-center gap-2 rounded-xl bg-primary px-6 text-[13px] font-semibold text-white shadow-[0_12px_28px_-12px_rgba(239,95,23,0.55)] transition-colors duration-300 hover:bg-primary-deep sm:min-w-[11.5rem]"
+                      >
+                        <span>{dict.finalCta.requestQuote}</span>
+                        <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-0.5">
+                          →
+                        </span>
+                      </Link>
+                      {dict.finalCta.callBack ? (
+                        <Link
+                          href={`/${locale}/iletisim`}
+                          className="btn-3d inline-flex min-h-[3rem] items-center justify-center rounded-xl border border-ink/[0.08] bg-white px-6 text-[13px] font-semibold text-ink shadow-[0_10px_28px_-18px_rgba(15,22,36,0.18)] transition-[border-color,box-shadow] duration-300 hover:border-primary/35 hover:shadow-[0_14px_32px_-18px_rgba(15,22,36,0.22)] sm:min-w-[11.5rem]"
+                        >
+                          {dict.finalCta.callBack}
+                        </Link>
+                      ) : null}
+                    </div>
+                  </div>
+
+                  {dict.finalCta.stat1Label && dict.finalCta.stat1Value ? (
+                    <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-ink/[0.08] pt-6 sm:gap-x-14">
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary/55">
+                          {dict.finalCta.stat1Label}
+                        </p>
+                        <p className="mt-1 text-[15px] font-bold tracking-[-0.02em] text-ink sm:text-[16px]">
+                          {dict.finalCta.stat1Value}
+                        </p>
+                      </div>
+                      {dict.finalCta.stat2Label && dict.finalCta.stat2Value ? (
+                        <div>
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary/55">
+                            {dict.finalCta.stat2Label}
+                          </p>
+                          <p className="mt-1 text-[15px] font-bold tracking-[-0.02em] text-ink sm:text-[16px]">
+                            {dict.finalCta.stat2Value}
+                          </p>
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className="relative hidden min-h-[22rem] lg:block">
+                  <Image
+                    src={dict.finalCta.image ?? "/images/uretim.png"}
+                    alt={dict.finalCta.title}
+                    fill
+                    className="object-cover object-center"
+                    sizes="45vw"
+                  />
+                  <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#eeedea] via-[#eeedea]/72 to-transparent"
+                    aria-hidden
+                  />
                 </div>
               </div>
             </div>
-
-            {/* Final CTA aside */}
-            <aside className="flex flex-col gap-4 lg:col-span-5 lg:h-full">
-              {/* Final CTA — ink block with hairlines */}
-              <div className="relative overflow-hidden rounded-3xl border border-[#2b4065] bg-[#1a2842] p-6 text-white lg:flex-1">
-                <div className="pointer-events-none absolute inset-0 blueprint-grid-dark opacity-22" />
-                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(83,122,184,0.16)_0%,rgba(26,40,66,0)_56%),linear-gradient(180deg,rgba(9,18,33,0.07)_0%,rgba(9,18,33,0.20)_100%)]" />
-
-                <div className="relative lg:flex lg:h-full lg:flex-col">
-                  <p className="font-mono-eng text-[10px] uppercase tracking-[0.28em] text-primary">
-                    ● {dict.finalCta.tag}
-                  </p>
-                  <h3 className="mt-4 font-semibold text-white" style={{ fontSize: "clamp(1.7rem, 2.3vw, 2.35rem)", lineHeight: 1.02, letterSpacing: "-0.02em" }}>
-                    {dict.finalCta.title}
-                  </h3>
-                  <p className={`mt-4 max-w-[48ch] ${homeLeadWhite}`}>
-                    {dict.finalCta.desc}
-                  </p>
-
-                  <div className="mt-6 space-y-3 lg:mt-auto">
-                    <a
-                      href="tel:+902164674752"
-                      className="btn-3d btn-3d-glass group flex items-center justify-between rounded-2xl border border-white/15 px-5 py-3.5 text-[12px] font-medium text-white/80 transition-all duration-300 hover:border-primary hover:text-white"
-                    >
-                      <span className="flex items-center gap-3">
-                        <span className="font-mono-eng text-[10px] uppercase tracking-[0.22em] text-primary">Tel</span>
-                        <span>+90 216 467 47 52</span>
-                      </span>
-                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                      </svg>
-                    </a>
-
-                    <Link
-                      href={`/${locale}/iletisim`}
-                      className="btn-3d btn-3d-primary group flex items-center justify-between rounded-2xl bg-primary px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-white transition-colors duration-300 hover:bg-primary-deep"
-                    >
-                      {dict.finalCta.requestQuote}
-                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </aside>
-          </div>
+          </aside>
         </div>
       </section>
+
       <style jsx>{`
         .certificate-marquee-track {
           will-change: transform;

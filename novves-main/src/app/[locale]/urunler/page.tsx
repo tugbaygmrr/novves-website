@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { HubTreePanel } from "@/components/hub-tree-panel";
-import { buildProductHubRows } from "@/lib/hub-tree-rows";
+import { ProductHubCarousel } from "@/components/product-hub-carousel";
+import { buildProductHubCards } from "@/lib/product-hub-cards";
 import { navbarHubMetadata } from "@/lib/i18n-metadata";
 import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
 import { getDictionary, hasLocale } from "../dictionaries";
@@ -28,7 +28,7 @@ export default async function UrunlerPage({
   const dict = await getDictionary(locale);
   const s = dict.products.shared;
   const nav = dict.common.navbar;
-  const hubRows = buildProductHubRows(
+  const hubCards = buildProductHubCards(
     dict.products as unknown as Record<string, unknown>,
     PRODUCT_CATEGORY_NAV,
     s.categories as unknown as Record<string, string>,
@@ -99,12 +99,11 @@ export default async function UrunlerPage({
             <div className="hidden h-px flex-1 bg-gray-200 sm:block" />
           </div>
 
-          <HubTreePanel
+          <ProductHubCarousel
             locale={locale}
             basePath="urunler"
-            items={hubRows}
-            treeTitle={s.productCatalog}
-            openLabel={s.detailedView}
+            items={hubCards}
+            openLabel={s.viewProduct}
           />
         </div>
       </section>

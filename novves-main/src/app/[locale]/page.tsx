@@ -21,6 +21,7 @@ export default async function Home({
       dict={dict.home}
       common={dict.common}
       locale={locale}
+      productCategoryLabels={dict.productCategoryLabels}
       referencePreviewProjectCounts={referencePreviewProjectCounts}
     />
   );

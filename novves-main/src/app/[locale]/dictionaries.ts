@@ -39,7 +39,15 @@ export { hasLocale };
 export const getDictionary = cache(async (locale: Locale) => loadAll(locale));
 
 /** Navbar / atlama menüsü / anasayfa — yalnızca iki JSON; tam `getDictionary` yerine SSR ve TTFB için */
-export const getLocaleShellDictionary = cache(async (locale: Locale) => ({
-  common: loadJson(locale, "common"),
-  home: loadJson(locale, "home"),
-}));
+export const getLocaleShellDictionary = cache(async (locale: Locale) => {
+  const products = loadJson(locale, "products");
+  const categories = products?.shared?.categories;
+  return {
+    common: loadJson(locale, "common"),
+    home: loadJson(locale, "home"),
+    productCategoryLabels:
+      categories && typeof categories === "object"
+        ? (categories as Record<string, string>)
+        : {},
+  };
+});

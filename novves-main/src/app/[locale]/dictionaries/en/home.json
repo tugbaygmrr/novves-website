@@ -446,10 +446,10 @@
         "label": "Accessories"
       },
       {
-        "label": "Automation Equipment"
+        "label": "Automation, Control and Power Systems"
       },
       {
-        "label": "Vibration & Sound Insulation"
+        "label": "Vibration and Sound Insulation Systems"
       }
     ]
   },
@@ -462,32 +462,75 @@
     "iframeTitle": "NOVVES Corporate Introduction Film"
   },
   "faq": {
-    "tag": "FAQ",
-    "title": "Frequently Asked Questions",
+    "tag": "Frequently Asked Questions",
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes.",
     "items": [
       {
-        "q": "Which industries does NOVVES serve?",
-        "a": "NOVVES provides smoke extraction, comfort ventilation, and industrial air management solutions across a wide range of sectors including parking garages, tunnels, shopping malls, hospitals, hotels, industrial facilities, greenhouses, power plants, and residential buildings."
+        "q": "Which sectors does NOVVES serve?",
+        "a": "NOVVES delivers ventilation, smoke extraction and pressurization solutions in enclosed car parks, tunnels, metro and rail systems, industrial facilities, commercial buildings, shopping malls, hotels, hospitals and other large-scale structures.",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
-        "q": "Which standards do your products comply with?",
-        "a": "Our products are manufactured in compliance with EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE, and ATEX standards, and are tested in accredited laboratories."
+        "q": "Which product groups do you manufacture?",
+        "a": "NOVVES manufactures smoke and heat exhaust fans, axial fans, jet fans, roof fans, wall-mounted fans, centrifugal fans, ex-proof fans, dampers, silencers, control panels and project-specific ventilation equipment.",
+        "linkHref": "/urunler",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
-        "q": "Do you provide CFD analysis services?",
-        "a": "Yes, we perform 3D CFD simulations for each project to analyze smoke propagation, temperature, CO concentration, and visibility distance, optimizing jet fan placement."
+        "q": "Which standards are your products designed to?",
+        "a": "NOVVES products are designed, tested and documented in line with EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and relevant ventilation, performance and fire-safety standards—depending on product group, application and project requirements.",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
-        "q": "Do you offer after-sales support?",
-        "a": "We provide comprehensive after-sales support including commissioning, periodic maintenance, spare parts supply, and 24/7 technical service."
+        "q": "Do you provide CFD-supported engineering services?",
+        "a": "Yes. NOVVES delivers CFD-supported airflow, smoke movement, temperature distribution and fan placement analyses for enclosed car parks, tunnels, industrial facilities and large-scale structures—so systems are evaluated based on building behaviour, not products alone.",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
+      },
+      {
+        "q": "Do you provide project-specific fan selection and system design?",
+        "a": "Yes. NOVVES evaluates every project together with flow rate, pressure, temperature resistance, usage scenario, site conditions, automation needs and standard requirements. Fan selection, layout, control scenarios and auxiliary equipment are determined on a project-specific basis.",
+        "linkHref": "/muhendislik/projeye-ozel-fan-secimi",
+        "linkLabel": "Learn about project-specific fan selection →",
+        "linkAriaLabel": "Learn about NOVVES project-specific fan selection, flow-pressure assessment, fan layout and system design approach."
+      },
+      {
+        "q": "What solutions do you offer for smoke and heat exhaust systems?",
+        "a": "NOVVES provides integrated smoke and heat exhaust solutions with F300/F400-rated smoke exhaust fans, jet fan systems, roof-mounted smoke exhaust fans, wall fans, dampers, silencers and scenario-based control panels.",
+        "linkHref": "/cozumler/duman-isi-tahliye-sistemleri",
+        "linkLabel": "Explore smoke and heat exhaust solutions →",
+        "linkAriaLabel": "Explore NOVVES smoke and heat exhaust solutions with F300/F400 fans, jet fan systems, dampers, silencers and control panels."
+      },
+      {
+        "q": "Do you provide after-sales support?",
+        "a": "Yes. NOVVES supports customers after delivery with technical documentation, commissioning assistance, spare parts, maintenance guidance and post-sales engineering support—so systems operate safely, efficiently and sustainably in the field.",
+        "linkHref": "/hizmetler/teknik-servis",
+        "linkLabel": "Explore our after-sales support process →",
+        "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
     ]
   },
   "finalCta": {
-    "tag": "For Your Project",
-    "title": "Looking for a ventilation solution?",
-    "desc": "Contact our expert engineering team today for site surveys, CFD analysis, project design, and quotations.",
-    "requestQuote": "Request a Quote"
+    "tag": "Get in Touch",
+    "title": "Get Expert Guidance for Your Critical Projects.",
+    "desc": "Speak with our engineering team for smoke extraction, ventilation, pressurization and industrial air management projects. We will assess your project technically and guide you through fan selection, system design, CFD analysis and the quotation process.",
+    "requestQuote": "Get a Quote",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pageChrome": {
     "catalogsVertical": "Catalogs",
@@ -516,7 +559,7 @@
     "pillarCollapseAria": "Collapse",
     "pillarCta": "View Details",
     "catalogCardCta": "View",
-    "productCardCta": "View Details",
+    "productCardCta": "Explore Products",
     "solutionCardCta": "View Details",
     "midCtaBullet1": "48-hour preliminary assessment",
     "midCtaBullet2": "Solution-oriented delivery",
@@ -582,15 +625,61 @@
     }
   },
   "productCategoryBlurbs": [
-    "Reliable air circulation with dependable fans.",
-    "Comfort-focused balanced climate control.",
-    "Energy-efficient seasonal heating and cooling.",
-    "Managing airflow for higher efficiency.",
-    "Even, homogeneous distribution across the space.",
-    "Effective filtration for cleaner air.",
-    "Supporting accessories that complete the installation.",
-    "Smart and practical control solutions.",
-    "Quieter operation with vibration and noise isolation."
+    "From axial fans to ex-proof systems, roof and duct fans to specialized industrial solutions—our broad product families deliver powerful, efficient air movement.",
+    "With air handling units, dehumidification, heat recovery and ex-proof AHU solutions, we deliver efficient climate control for commercial, industrial and special process environments.",
+    "With cooling systems, heat pumps, coils, electric heaters and precision-controlled HVAC solutions, we deliver efficient climate control in commercial and industrial spaces.",
+    "NOVVES Air Management is our core group; with the Damper Systems product family, we direct, balance, isolate and safely control airflow. For HVAC, ventilation, pressurization and smoke control scenarios, we deliver project-integrated, reliable, engineering-focused solutions.",
+    "NOVVES Air Distribution is our core group; with the Grille and Diffuser Systems product family, we distribute conditioned air evenly, quietly and under control. We support indoor comfort, air quality and system efficiency while combining architectural aesthetics with engineering performance.",
+    "NOVVES Air Filtration is our core group; with the filter and filtration elements product family, we deliver clean, safe and controlled conditioned air. By reducing particles, dust and contaminants, we support air quality, system efficiency and equipment life in HVAC, ventilation and process systems.",
+    "NOVVES Accessories is our core group; with the Fan and HVAC Accessories product family, we deliver engineering solutions that complete ventilation and air-conditioning systems. Connection components, silencers, protection equipment, mounting accessories and system complement products support safe, efficient, project-aligned HVAC infrastructure.",
+    "NOVVES Automation, Control and Power Systems is our core group; with automation panels, PLCs, sensors, operator panels, timing devices, power electronics and panel switching product families, we deliver safe, smart and efficient control of HVAC systems.",
+    "NOVVES Vibration and Sound Insulation Systems is our core group; with the Vibration Isolators product family, we reduce structure-borne vibration from fans, motors and HVAC equipment. We deliver solutions for quieter, more stable and safer operation—supporting equipment life, occupant comfort and project performance."
+  ],
+  "productCategoryFeatures": [
+    [
+      "Axial Box Fan Family",
+      "Ex-proof Fan Family",
+      "Industrial Centrifugal Fan Family",
+      "EC Motor Fan Systems Family",
+      "Roof Fan Family",
+      "Wall Fan Family",
+      "Bathroom Fan Family",
+      "Duct Fan Family",
+      "Cell Type Fan Family",
+      "Kitchen Ventilation Systems Family",
+      "Shelter Fan Family",
+      "Poultry Farm Ventilation System Family",
+      "Dust Collection Systems Family"
+    ],
+    [
+      "Air Handling Unit Family",
+      "Dehumidification Unit Family",
+      "Heat Recovery Unit Family",
+      "Explosion-proof Air Handling Unit (Ex-proof AHU)"
+    ],
+    [
+      "Compact, Packaged and Industrial Cooling Family",
+      "Heat Pump Outdoor Unit Family",
+      "Indoor Unit Family",
+      "Heating / Cooling Coils Family",
+      "Electric Heater Family",
+      "Heat Exchanger Family",
+      "Precision-controlled HVAC Family"
+    ],
+    ["Damper Systems Family"],
+    ["Grille and Diffuser Systems Family"],
+    ["Filter and Filtration Elements Family"],
+    ["Fan and HVAC Accessories Family"],
+    [
+      "Automation Panel Systems Family",
+      "PLC and Programmable Control Systems Family",
+      "Sensor and Detection Systems Family",
+      "Control Cards and Operator Panels Family",
+      "Timing and Control Devices Family",
+      "Power Electronics Systems Family",
+      "Panel Power and Switching Components Family"
+    ],
+    ["Vibration Isolators Family"]
   ],
   "catalogPreview": [
     {
