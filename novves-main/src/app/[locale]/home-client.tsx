@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { SectionStripLabel } from "@/components/carousel-strip-label";
 import { ScrollVideoSection } from "@/components/scroll-video-section";
+import { getHomeVideoStrings } from "@/components/home-video-i18n";
 import {
   COOKIE_CONSENT_EVENT,
   isConsentRestrictedMinimal,
@@ -2773,72 +2774,274 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* 07 — VIDEO / STUDIO (lacivertimsi kurumsal blok) */}
-      <section className="relative overflow-hidden bg-[#141c2a] py-12 text-white sm:py-16">
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.14]" />
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 90% 70% at 12% -10%, rgba(74, 112, 168, 0.18) 0%, transparent 52%), radial-gradient(circle at 88% 100%, rgba(15, 23, 38, 0.85) 0%, transparent 45%), linear-gradient(180deg, #1a2536 0%, #121a28 100%)",
-          }}
-          aria-hidden
-        />
+      {/* 07 — VIDEO / STUDIO (yeniden tasarım: marka tanıtım videosu) */}
+      {(() => {
+        const vt = getHomeVideoStrings(locale);
+        const featureIcons = [
+          // CFD-driven
+          (
+            <svg key="fc1" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-6 w-6">
+              <rect x="4" y="6" width="20" height="14" rx="1.5" />
+              <path d="M8 24h12M14 20v4" strokeLinecap="round" />
+              <path d="M8 12h4M10 10v4M16 14l3 3M19 11l-3 3" strokeLinecap="round" />
+            </svg>
+          ),
+          // Manufacturing
+          (
+            <svg key="fc2" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-6 w-6">
+              <path d="M4 26V14l6 4V14l6 4v-4l8 5v7z" strokeLinejoin="round" />
+              <rect x="8" y="20" width="2" height="3" fill="currentColor" />
+              <rect x="14" y="20" width="2" height="3" fill="currentColor" />
+              <rect x="20" y="20" width="2" height="3" fill="currentColor" />
+              <path d="M4 26h22" strokeLinecap="round" />
+            </svg>
+          ),
+          // Global
+          (
+            <svg key="fc3" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-6 w-6">
+              <circle cx="16" cy="16" r="11" />
+              <path d="M5 16h22M16 5c3.5 3.5 3.5 18 0 22M16 5c-3.5 3.5-3.5 18 0 22" />
+            </svg>
+          ),
+        ];
+        const pillarIcons = [
+          // Safety (shield + check)
+          (
+            <svg key="p1" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <path d="M16 4l11 4v8c0 7-5 11-11 12-6-1-11-5-11-12V8l11-4z" strokeLinejoin="round" />
+              <path d="M11 16l3 3 6-7" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          ),
+          // Performance (fan)
+          (
+            <svg key="p2" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <circle cx="16" cy="16" r="2" fill="currentColor" />
+              <path d="M16 14c-2-4 1-8 5-6 2 4-1 8-5 6zM16 18c2 4-1 8-5 6-2-4 1-8 5-6zM14 16c-4-2-8 1-6 5 4 2 8-1 6-5zM18 16c4 2 8-1 6-5-4-2-8 1-6 5z" strokeLinejoin="round" />
+            </svg>
+          ),
+          // Engineering (gear)
+          (
+            <svg key="p3" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <circle cx="16" cy="16" r="3" />
+              <path d="M16 4v3M16 25v3M4 16h3M25 16h3M7.5 7.5l2 2M22.5 22.5l2 2M7.5 24.5l2-2M22.5 9.5l2-2" strokeLinecap="round" />
+            </svg>
+          ),
+          // Quality (medal)
+          (
+            <svg key="p4" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <circle cx="16" cy="14" r="7" />
+              <path d="M11 18l-2 9 7-4 7 4-2-9" strokeLinejoin="round" />
+              <path d="M13 14l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          ),
+          // Sustainability (leaf)
+          (
+            <svg key="p5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <path d="M6 24c0-9 8-16 20-16 0 11-7 18-16 18-2 0-3-1-4-2z" strokeLinejoin="round" />
+              <path d="M8 24c4-5 9-9 16-12" strokeLinecap="round" />
+            </svg>
+          ),
+        ];
 
-        <div className="relative mx-auto max-w-[1600px] px-2 sm:px-10 lg:px-16">
-          <SectionHead
-            num="05"
-            title={dict.video.title}
-            subtitle={dict.video.desc}
-            meta={pc.videoStatMeta}
-            tone="dark"
-          />
+        return (
+          <section className="relative overflow-hidden bg-[#0e1c31] py-14 text-white sm:py-20">
+            {/* Background layers */}
+            <div className="pointer-events-none absolute inset-0" aria-hidden>
+              <div
+                className="absolute inset-0"
+                style={{ background: "linear-gradient(180deg, #0e1c31 0%, #11203a 45%, #0c1729 100%)" }}
+              />
+              <div className="absolute inset-0 blueprint-grid-dark opacity-25" />
+              {/* Blueprint fan accent on right */}
+              <svg
+                viewBox="0 0 400 400"
+                className="absolute -right-24 top-20 hidden h-[480px] w-[480px] text-primary/30 lg:block xl:h-[560px] xl:w-[560px]"
+                preserveAspectRatio="xMidYMid meet"
+                aria-hidden
+              >
+                <g fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55">
+                  <circle cx="200" cy="200" r="188" />
+                  <circle cx="200" cy="200" r="178" strokeDasharray="2 4" />
+                  <circle cx="200" cy="200" r="160" />
+                  <circle cx="200" cy="200" r="140" strokeDasharray="3 3" opacity="0.4" />
+                </g>
+                <g fill="currentColor" opacity="0.7">
+                  {Array.from({ length: 24 }).map((_, i) => {
+                    const a = (i * Math.PI * 2) / 24;
+                    const cx = (200 + Math.cos(a) * 183).toFixed(2);
+                    const cy = (200 + Math.sin(a) * 183).toFixed(2);
+                    return <circle key={i} cx={cx} cy={cy} r="1.6" />;
+                  })}
+                </g>
+                <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.85">
+                  <circle cx="200" cy="200" r="42" />
+                  <circle cx="200" cy="200" r="30" />
+                  <circle cx="200" cy="200" r="14" />
+                </g>
+                <circle cx="200" cy="200" r="4" fill="currentColor" opacity="0.9" />
+                <g fill="currentColor" opacity="0.32" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.7">
+                  {Array.from({ length: 9 }).map((_, i) => (
+                    <path
+                      key={i}
+                      d="M200 158 C 230 150, 252 142, 268 92 C 244 110, 220 122, 200 140 Z"
+                      transform={`rotate(${(i * 360) / 9} 200 200)`}
+                    />
+                  ))}
+                </g>
+                <g stroke="currentColor" strokeWidth="0.4" opacity="0.3" strokeDasharray="1 4">
+                  <line x1="200" y1="6" x2="200" y2="394" />
+                  <line x1="6" y1="200" x2="394" y2="200" />
+                </g>
+              </svg>
+            </div>
 
-          <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
-            <div className="lg:col-span-8">
-              <div className="relative shadow-[0_28px_70px_-36px_rgba(0,0,0,0.55)] ring-1 ring-white/[0.07]">
-                <div className="relative aspect-video overflow-hidden border border-white/[0.09] bg-[#0b1018] text-white/35">
-                  <iframe
-                    src="https://www.youtube.com/embed/6pXFGhKW6Lw"
-                    title={dict.video.iframeTitle}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="h-full w-full"
-                  />
+            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
+              {/* ── Header: title + description ───────────────────── */}
+              <div className="grid gap-8 lg:grid-cols-12 lg:gap-16">
+                <div className="lg:col-span-7">
+                  <h2
+                    className="font-bold tracking-[-0.025em] text-white"
+                    style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)", lineHeight: 1.02 }}
+                  >
+                    {dict.video.title}
+                  </h2>
+                  <div className="mt-4 h-[3px] w-20 bg-primary" />
+                  <p className="mt-6 max-w-[42ch] text-[14px] leading-relaxed text-white/60">
+                    {vt.subtitle}
+                  </p>
+                </div>
+                <div className="lg:col-span-5 lg:pt-6">
+                  <p className="text-[13.5px] leading-[1.7] text-white/68">
+                    {dict.video.desc}
+                  </p>
                 </div>
               </div>
 
-              <div className="mt-4 flex items-center justify-between border-t border-white/[0.1] pt-3.5 font-mono-eng text-[10px] font-medium uppercase tracking-[0.24em] text-white/55">
-                <span className="text-white/70">{dict.video.iframeTitle}</span>
-                <span>1080p · HD</span>
-              </div>
-            </div>
+              {/* ── Main grid: video + side panel ─────────────────── */}
+              <div className="mt-10 grid gap-8 lg:grid-cols-12 lg:gap-10">
+                {/* Left: video player */}
+                <div className="lg:col-span-7">
+                  <div className="relative overflow-hidden rounded-xl border border-white/[0.09] bg-[#0b1018] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
+                    <div className="relative aspect-video">
+                      <iframe
+                        src="https://www.youtube.com/embed/6pXFGhKW6Lw"
+                        title={dict.video.iframeTitle}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="h-full w-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="mt-3 flex items-center justify-between font-mono-eng text-[10px] font-medium uppercase tracking-[0.24em] text-white/55">
+                    <span className="text-white/65">{dict.video.iframeTitle}</span>
+                    <span>1080p · HD</span>
+                  </div>
+                </div>
 
-            <div className="flex flex-col justify-between gap-8 lg:col-span-4">
-              <div className="space-y-3">
-                <Link
-                  href={`/${locale}/kurumsal/biz-kimiz`}
-                  className="btn-3d btn-3d-glass group flex items-center justify-between border border-white/[0.1] bg-white/[0.04] px-5 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-white/88 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08] hover:text-white"
-                >
-                  {dict.video.aboutUs}
-                  <svg className="h-3.5 w-3.5 text-white/50 transition-all duration-300 group-hover:translate-x-1 group-hover:text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-                <Link
-                  href={`/${locale}/kurumsal/referanslar`}
-                  className="btn-3d btn-3d-glass group flex items-center justify-between border border-white/[0.1] bg-white/[0.04] px-5 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-white/88 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08] hover:text-white"
-                >
-                  {dict.video.references}
-                  <svg className="h-3.5 w-3.5 text-white/50 transition-all duration-300 group-hover:translate-x-1 group-hover:text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
+                {/* Right: side panel — 2 buttons + 3 feature cards */}
+                <div className="space-y-3.5 lg:col-span-5">
+                  {/* Big buttons */}
+                  <Link
+                    href={`/${locale}/kurumsal/biz-kimiz`}
+                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/15 text-primary transition-colors group-hover:bg-primary/25">
+                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M3.75 21V8.25l8.25-4.5 8.25 4.5V21M3.75 21h16.5M9 21v-6h6v6" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/90 group-hover:text-white">
+                        {vt.sideButtons.facilities}
+                      </span>
+                    </span>
+                    <svg className="h-4 w-4 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                  <Link
+                    href={`/${locale}/kurumsal/referanslar`}
+                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/15 text-primary transition-colors group-hover:bg-primary/25">
+                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6 5.87a4 4 0 00-4-4m4 4a4 4 0 014-4M9 12a3 3 0 100-6 3 3 0 000 6zm6 0a3 3 0 100-6 3 3 0 000 6z" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/90 group-hover:text-white">
+                        {vt.sideButtons.references}
+                      </span>
+                    </span>
+                    <svg className="h-4 w-4 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+
+                  {/* Feature cards */}
+                  <div className="space-y-2">
+                    {vt.featureCards.map((fc, i) => (
+                      <div
+                        key={fc.title}
+                        className="flex items-start gap-3.5 rounded-xl border border-white/[0.06] bg-white/[0.025] p-3.5 transition-colors duration-300 hover:border-white/[0.12] hover:bg-white/[0.05]"
+                      >
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/12 text-primary">
+                          {featureIcons[i]}
+                        </span>
+                        <div className="min-w-0">
+                          <p className="text-[13px] font-semibold text-white">{fc.title}</p>
+                          <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">{fc.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Bottom 5-pillar strip ─────────────────────────── */}
+              <div className="mt-10 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.6)] p-6 backdrop-blur-sm sm:p-8">
+                <ul className="grid gap-x-6 gap-y-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+                  {vt.pillars.map((p, i) => (
+                    <li key={p.title} className="flex flex-col items-center text-center">
+                      <span className="flex h-12 w-12 items-center justify-center rounded-full border border-primary/30 bg-primary/8 text-primary">
+                        {pillarIcons[i]}
+                      </span>
+                      <p className="mt-3 text-[12px] font-bold tracking-[0.14em] text-white">{p.title}</p>
+                      <p className="mt-1.5 max-w-[24ch] text-[11px] leading-snug text-white/55">{p.desc}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* ── Bottom CTA strip ──────────────────────────────── */}
+              <div className="mt-6 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.7)] px-6 py-5 backdrop-blur-sm sm:px-8">
+                <div className="flex flex-col items-stretch gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+                  <div className="flex items-start gap-4">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-primary/35 bg-primary/10 text-primary">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <path d="M18.75 8.25v2.25A6.75 6.75 0 0 1 12 17.25v0a6.75 6.75 0 0 1-6.75-6.75V8.25M12 17.25v3M8.25 20.25h7.5M12 3a3 3 0 0 0-3 3v4.5a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p className="text-[14.5px] font-semibold text-white">{vt.cta.title}</p>
+                      <p className="mt-0.5 text-[12px] text-white/55">{vt.cta.desc}</p>
+                    </div>
+                  </div>
+                  <Link
+                    href={`/${locale}/iletisim`}
+                    className="group inline-flex shrink-0 items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                  >
+                    {vt.cta.button}
+                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        );
+      })()}
 
       {/* 06 — FAQ (mockup) & final CTA */}
       <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-14 sm:py-20 md:scroll-mt-[5.5rem]">
