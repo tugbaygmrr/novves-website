@@ -2962,8 +2962,8 @@ export default function HomeClient({
               {dict.faq.desc ? (
                 <p className="mt-3 max-w-[34ch] text-[13px] leading-[1.6] text-ink/70 sm:text-[14px]">{dict.faq.desc}</p>
               ) : null}
-              {/* Sol görsel — kutuyu komple doldurur (object-cover) */}
-              <div className="mt-6 flex-1">
+              {/* Sol görsel — sadece lg+ ekranlarda görünür (tablet/mobilde gizli, layout bozulmasın) */}
+              <div className="mt-6 hidden flex-1 lg:block">
                 <div className="relative h-full min-h-[320px] w-full overflow-hidden rounded-2xl bg-[#0f1d33] ring-1 ring-ink/[0.08] shadow-[0_22px_46px_-28px_rgba(15,22,36,0.32)]">
                   <Image
                     src="/images/faq-visual.jpg?v=3"
