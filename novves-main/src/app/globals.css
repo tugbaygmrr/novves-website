@@ -352,6 +352,19 @@ body {
   50% { transform: translate(-50%, 10px); opacity: 0.3; }
 }
 
+/* Kart altı sertifika marquee — sürekli yatay kayma (logolar çift kez render edilir, %50 kayma = kusursuz loop) */
+@keyframes cardCertMarquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+.card-cert-marquee-track {
+  animation: cardCertMarquee 32s linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-cert-marquee-track { animation: none; }
+}
+
 /* Hairline rules */
 .hairline-ink { border-color: rgba(10, 14, 20, 0.1); }
 .hairline-white { border-color: rgba(255, 255, 255, 0.1); }

@@ -9,7 +9,10 @@
 
 export type HomeVideoStrings = {
   subtitle: string;
-  sideButtons: { facilities: string; references: string };
+  sideButtons: {
+    facilities: { title: string; desc: string };
+    references: { title: string; desc: string };
+  };
   /** 3 cards under side buttons */
   featureCards: { title: string; desc: string }[];
   /** 5 bottom-strip pillars */
@@ -20,8 +23,14 @@ export type HomeVideoStrings = {
 const tr: HomeVideoStrings = {
   subtitle: "NOVVES'in mühendislik yaklaşımı, üretim gücü ve global vizyonu.",
   sideButtons: {
-    facilities: "ÜRETİM TESİSLERİMİZ",
-    references: "REFERANSLARIMIZ",
+    facilities: {
+      title: "Üretim Tesislerimiz",
+      desc: "Yalova OSB'deki modern üretim tesisimizi keşfedin.",
+    },
+    references: {
+      title: "Referanslarımız",
+      desc: "30+ ülkede tamamladığımız başarılı projeler.",
+    },
   },
   featureCards: [
     {
@@ -69,8 +78,14 @@ const tr: HomeVideoStrings = {
 const en: HomeVideoStrings = {
   subtitle: "The engineering approach, manufacturing power and global vision of NOVVES.",
   sideButtons: {
-    facilities: "OUR FACILITIES",
-    references: "OUR REFERENCES",
+    facilities: {
+      title: "Our Facilities",
+      desc: "Discover our modern manufacturing plant in Yalova OIZ.",
+    },
+    references: {
+      title: "Our References",
+      desc: "Successful projects we delivered across 30+ countries.",
+    },
   },
   featureCards: [
     {
@@ -117,7 +132,16 @@ const en: HomeVideoStrings = {
 
 const ru: HomeVideoStrings = {
   subtitle: "Инженерный подход, производственная мощность и глобальное видение NOVVES.",
-  sideButtons: { facilities: "НАШИ ПРОИЗВОДСТВА", references: "НАШИ ОБЪЕКТЫ" },
+  sideButtons: {
+    facilities: {
+      title: "Наши Производства",
+      desc: "Откройте наш современный завод в Ялова.",
+    },
+    references: {
+      title: "Наши Референсы",
+      desc: "Успешные проекты в 30+ странах.",
+    },
+  },
   featureCards: [
     { title: "Инженерия на базе CFD", desc: "CFD-анализ для каждого проекта обеспечивает точные решения." },
     { title: "Высокая производственная мощность", desc: "Производство на современном заводе в Ялове по высшим стандартам качества." },
@@ -139,7 +163,16 @@ const ru: HomeVideoStrings = {
 
 const ar: HomeVideoStrings = {
   subtitle: "النهج الهندسي والقدرة الإنتاجية والرؤية العالمية لـ NOVVES.",
-  sideButtons: { facilities: "منشآتنا الإنتاجية", references: "مراجعنا" },
+  sideButtons: {
+    facilities: {
+      title: "منشآتنا الإنتاجية",
+      desc: "اكتشف منشأتنا الحديثة في يالوفا.",
+    },
+    references: {
+      title: "مراجعنا",
+      desc: "مشاريع ناجحة في أكثر من 30 دولة.",
+    },
+  },
   featureCards: [
     { title: "هندسة بأسلوب CFD", desc: "تحليلات CFD لكل مشروع تقدم الحلول الأدق." },
     { title: "قدرة إنتاجية عالية", desc: "إنتاج بأعلى معايير الجودة في منشأتنا الحديثة بيالوفا." },
@@ -161,7 +194,16 @@ const ar: HomeVideoStrings = {
 
 const de: HomeVideoStrings = {
   subtitle: "Engineering-Ansatz, Produktionskraft und globale Vision von NOVVES.",
-  sideButtons: { facilities: "UNSERE PRODUKTION", references: "UNSERE REFERENZEN" },
+  sideButtons: {
+    facilities: {
+      title: "Unsere Anlagen",
+      desc: "Entdecken Sie unsere moderne Fertigung in Yalova.",
+    },
+    references: {
+      title: "Unsere Referenzen",
+      desc: "Erfolgreiche Projekte in über 30 Ländern.",
+    },
+  },
   featureCards: [
     { title: "CFD-gestütztes Engineering", desc: "Projektspezifische CFD-Analysen liefern die genauesten Lösungen." },
     { title: "Hohe Produktionskraft", desc: "Fertigung nach höchsten Qualitätsstandards in unserem Werk in Yalova." },
@@ -183,7 +225,16 @@ const de: HomeVideoStrings = {
 
 const fr: HomeVideoStrings = {
   subtitle: "L'approche d'ingénierie, la puissance de production et la vision globale de NOVVES.",
-  sideButtons: { facilities: "NOS SITES DE PRODUCTION", references: "NOS RÉFÉRENCES" },
+  sideButtons: {
+    facilities: {
+      title: "Nos Installations",
+      desc: "Découvrez notre site de production moderne à Yalova.",
+    },
+    references: {
+      title: "Nos Références",
+      desc: "Projets réussis dans plus de 30 pays.",
+    },
+  },
   featureCards: [
     { title: "Ingénierie assistée par CFD", desc: "Des analyses CFD par projet pour les solutions les plus précises." },
     { title: "Forte capacité de production", desc: "Production aux plus hauts standards qualité dans notre site moderne de Yalova." },
@@ -207,7 +258,16 @@ const fr: HomeVideoStrings = {
 
 const it: HomeVideoStrings = {
   subtitle: "L'approccio ingegneristico, la capacità produttiva e la visione globale di NOVVES.",
-  sideButtons: { facilities: "I NOSTRI STABILIMENTI", references: "LE NOSTRE REFERENZE" },
+  sideButtons: {
+    facilities: {
+      title: "I Nostri Impianti",
+      desc: "Scopri il nostro stabilimento moderno a Yalova.",
+    },
+    references: {
+      title: "Le Nostre Referenze",
+      desc: "Progetti realizzati in oltre 30 paesi.",
+    },
+  },
   featureCards: [
     { title: "Ingegneria assistita da CFD", desc: "Analisi CFD per ogni progetto offrono le soluzioni più precise." },
     { title: "Elevata capacità produttiva", desc: "Produzione ai massimi standard qualitativi nel nostro stabilimento di Yalova." },
@@ -231,7 +291,16 @@ const it: HomeVideoStrings = {
 
 const es: HomeVideoStrings = {
   subtitle: "El enfoque de ingeniería, la capacidad de producción y la visión global de NOVVES.",
-  sideButtons: { facilities: "NUESTRAS INSTALACIONES", references: "NUESTRAS REFERENCIAS" },
+  sideButtons: {
+    facilities: {
+      title: "Nuestras Instalaciones",
+      desc: "Descubre nuestra planta moderna en Yalova.",
+    },
+    references: {
+      title: "Nuestras Referencias",
+      desc: "Proyectos exitosos en más de 30 países.",
+    },
+  },
   featureCards: [
     { title: "Ingeniería basada en CFD", desc: "Análisis CFD por proyecto que aportan las soluciones más precisas." },
     { title: "Alta capacidad de producción", desc: "Fabricación con los más altos estándares de calidad en nuestra planta de Yalova." },
@@ -255,7 +324,16 @@ const es: HomeVideoStrings = {
 
 const az: HomeVideoStrings = {
   subtitle: "NOVVES-in mühəndislik yanaşması, istehsal gücü və qlobal vizyonu.",
-  sideButtons: { facilities: "İSTEHSAL MÜƏSSİSƏLƏRİMİZ", references: "REFERANSLARIMIZ" },
+  sideButtons: {
+    facilities: {
+      title: "İstehsal Müəssisələrimiz",
+      desc: "Yalovadakı müasir istehsal müəssisəmizi kəşf edin.",
+    },
+    references: {
+      title: "Referanslarımız",
+      desc: "30+ ölkədə uğurla başa çatdırdığımız layihələr.",
+    },
+  },
   featureCards: [
     { title: "CFD əsaslı mühəndislik", desc: "Hər layihə üçün CFD analizləri ilə ən dəqiq həlləri təqdim edirik." },
     { title: "Yüksək istehsal gücü", desc: "Yalovadakı müasir müəssisəmizdə yüksək keyfiyyət standartları ilə istehsal." },
@@ -279,7 +357,16 @@ const az: HomeVideoStrings = {
 
 const kk: HomeVideoStrings = {
   subtitle: "NOVVES-тің инженерлік тәсілі, өндірістік қуаты және жаһандық көзқарасы.",
-  sideButtons: { facilities: "БІЗДІҢ ӨНДІРІС", references: "БІЗДІҢ РЕФЕРЕНСТЕР" },
+  sideButtons: {
+    facilities: {
+      title: "Өндірістік Кешеніміз",
+      desc: "Яловадағы заманауи өндіріс кешенімізді көріңіз.",
+    },
+    references: {
+      title: "Референстеріміз",
+      desc: "30+ елде сәтті аяқталған жобалар.",
+    },
+  },
   featureCards: [
     { title: "CFD негізіндегі инженерия", desc: "Әр жоба бойынша CFD талдауы ең дәл шешімдерді ұсынады." },
     { title: "Жоғары өндірістік қуат", desc: "Ялова қаласындағы заманауи зауытта жоғары сапа стандарттарымен өндіріс." },
@@ -303,7 +390,16 @@ const kk: HomeVideoStrings = {
 
 const tg: HomeVideoStrings = {
   subtitle: "Равиши муҳандисӣ, иқтидори истеҳсолӣ ва биниши глобалии NOVVES.",
-  sideButtons: { facilities: "ИСТЕҲСОЛОТИ МО", references: "РЕФЕРЕНСҲОИ МО" },
+  sideButtons: {
+    facilities: {
+      title: "Истеҳсолотҳои Мо",
+      desc: "Корхонаи замонавии моро дар Ялова кашф кунед.",
+    },
+    references: {
+      title: "Тавсияҳои Мо",
+      desc: "Лоиҳаҳои бомуваффақият дар зиёда аз 30 кишвар.",
+    },
+  },
   featureCards: [
     { title: "Муҳандисии CFD", desc: "Таҳлили CFD барои ҳар лоиҳа ҳалли дақиқро таъмин мекунад." },
     { title: "Иқтидори баланди истеҳсолӣ", desc: "Истеҳсолот бо стандартҳои олии сифат дар корхонаи муосири мо дар Ялова." },
@@ -327,7 +423,16 @@ const tg: HomeVideoStrings = {
 
 const zh: HomeVideoStrings = {
   subtitle: "NOVVES 的工程理念、生产能力与全球视野。",
-  sideButtons: { facilities: "我们的工厂", references: "我们的案例" },
+  sideButtons: {
+    facilities: {
+      title: "我们的工厂",
+      desc: "探索我们位于亚洛瓦的现代生产基地。",
+    },
+    references: {
+      title: "我们的项目",
+      desc: "在30多个国家成功完成的项目。",
+    },
+  },
   featureCards: [
     { title: "基于 CFD 的工程", desc: "针对每个项目的 CFD 分析,提供最精确的解决方案。" },
     { title: "强大的生产能力", desc: "在亚洛瓦的现代化工厂以最高质量标准生产。" },
@@ -351,7 +456,16 @@ const zh: HomeVideoStrings = {
 
 const ur: HomeVideoStrings = {
   subtitle: "NOVVES کا انجینئرنگ نقطۂ نظر، پیداواری طاقت اور عالمی وژن۔",
-  sideButtons: { facilities: "ہماری پیداواری سہولیات", references: "ہمارے حوالہ جات" },
+  sideButtons: {
+    facilities: {
+      title: "ہماری سہولیات",
+      desc: "یالووا میں ہماری جدید مینوفیکچرنگ پلانٹ دریافت کریں۔",
+    },
+    references: {
+      title: "ہمارے حوالے",
+      desc: "30+ ممالک میں کامیاب پروجیکٹس۔",
+    },
+  },
   featureCards: [
     { title: "CFD پر مبنی انجینئرنگ", desc: "ہر منصوبے کے لیے CFD تجزیے سے درست ترین حل۔" },
     { title: "اعلیٰ پیداواری صلاحیت", desc: "یالووا میں جدید پلانٹ میں اعلیٰ کوالٹی معیار کے ساتھ پیداوار۔" },
@@ -375,7 +489,16 @@ const ur: HomeVideoStrings = {
 
 const lt: HomeVideoStrings = {
   subtitle: "NOVVES inžinerinis požiūris, gamybos pajėgumas ir globali vizija.",
-  sideButtons: { facilities: "MŪSŲ GAMYBA", references: "MŪSŲ OBJEKTAI" },
+  sideButtons: {
+    facilities: {
+      title: "Mūsų Gamyklos",
+      desc: "Aplankykite mūsų modernią gamyklą Jalovoje.",
+    },
+    references: {
+      title: "Mūsų Referencijos",
+      desc: "Sėkmingai įgyvendinti projektai 30+ šalių.",
+    },
+  },
   featureCards: [
     { title: "CFD pagrįsta inžinerija", desc: "Kiekvieno projekto CFD analizė užtikrina tiksliausius sprendimus." },
     { title: "Aukštas gamybos pajėgumas", desc: "Gamyba aukščiausiais kokybės standartais mūsų modernioje Jalovos gamykloje." },
@@ -399,7 +522,16 @@ const lt: HomeVideoStrings = {
 
 const pl: HomeVideoStrings = {
   subtitle: "Podejście inżynieryjne, moce produkcyjne i globalna wizja NOVVES.",
-  sideButtons: { facilities: "NASZE ZAKŁADY", references: "NASZE REFERENCJE" },
+  sideButtons: {
+    facilities: {
+      title: "Nasze Zakłady",
+      desc: "Odkryj nasz nowoczesny zakład w Yalova.",
+    },
+    references: {
+      title: "Nasze Referencje",
+      desc: "Pomyślne projekty w ponad 30 krajach.",
+    },
+  },
   featureCards: [
     { title: "Inżynieria oparta na CFD", desc: "Analizy CFD dla każdego projektu zapewniają najdokładniejsze rozwiązania." },
     { title: "Wysokie moce produkcyjne", desc: "Produkcja na najwyższych standardach jakości w nowoczesnym zakładzie w Yalova." },

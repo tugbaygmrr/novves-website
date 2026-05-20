@@ -353,11 +353,11 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible border-b border-ink/12 bg-white/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
+      className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible border-b border-ink/12 bg-sand-100/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
     >
       <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between overflow-visible px-6 sm:px-8 lg:px-10">
-        {/* Logo */}
-        <Link href={`/${locale}`} className="flex-shrink-0">
+        {/* Logo + slogan */}
+        <Link href={`/${locale}`} className="flex flex-shrink-0 flex-col items-start leading-none">
           <Image
             src={inverted ? "/images/novves-footer-logo.svg" : "/images/novves-logo.svg"}
             alt="Novves"
@@ -366,6 +366,9 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
             priority
             className="h-7 w-auto"
           />
+          <span className="mt-1 whitespace-nowrap text-[9px] font-light tracking-[0.18em] text-secondary/65">
+            BORN TO FLOW. <span className="italic tracking-normal">Shaping the Invisible</span>
+          </span>
         </Link>
 
         {/* Desktop â€” ortada, geniÅŸ aralÄ±klÄ± */}
@@ -594,7 +597,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
       {/* â”€â”€ Mobile Menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {mobileOpen && (
-        <div className="max-h-[80vh] overflow-y-auto border-t border-gray-100 bg-white lg:hidden">
+        <div className="max-h-[80vh] overflow-y-auto border-t border-gray-100 bg-sand-100 lg:hidden">
           <div className="space-y-1 px-4 py-4">
             {menus.map((menu) => (
               <div key={menu.label}>

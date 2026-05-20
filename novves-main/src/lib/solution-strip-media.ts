@@ -9,15 +9,15 @@ export type SolutionStripPageMedia = {
 
 export const solutionStripPageProductMedia: Record<string, SolutionStripPageMedia> = {
   "/cozumler/duman-isi-tahliye-sistemleri": {
-    hero: "/images/solutions/duman-isi-tahliye-card-hero.png?v=1",
+    hero: "/images/solutions/duman-isi-tahliye-card-hero.png?v=2",
     thumbnails: ["/images/products/dragonfly-jr.png", "/images/products/dragonfly-t.png", "/images/products/dragonfly-r.png"],
   },
   "/cozumler/hijyenik-filtrasyonlu-havalandirma": {
-    hero: "/images/solutions/hijyenik-filtrasyon-card-hero.png?v=3",
+    hero: "/images/solutions/hijyenik-filtrasyon-card-hero.png?v=4",
     thumbnails: ["/images/products/tiger-pre.png", "/images/products/turtle-a.png", "/images/products/alpaca-am.png"],
   },
   "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri": {
-    hero: "/images/solutions/hayvancilik-card-hero.png?v=1",
+    hero: "/images/solutions/hayvancilik-card-hero.png?v=2",
     thumbnails: ["/images/products/chicken.png", "/images/products/marlin.png", "/images/products/tiger-pre.png"],
   },
   "/cozumler/sera-tarimsal-havalandirma-sistemleri": {
@@ -41,11 +41,11 @@ export const solutionStripPageProductMedia: Record<string, SolutionStripPageMedi
     thumbnails: ["/images/products/dragonfly-jr.png", "/images/products/marlin.png", "/images/products/turtle-a.png"],
   },
   "/cozumler/konfor-iklimlendirme-sistemleri": {
-    hero: "/images/solutions/konfor-iklimlendirme-card-hero.png?v=1",
+    hero: "/images/solutions/konfor-iklimlendirme-card-hero.png?v=2",
     thumbnails: ["/images/products/tiger-pre.png", "/images/products/dolphin-pre.png", "/images/products/caracal.png"],
   },
   "/cozumler/endustriyel-hava-yonetimi": {
-    hero: "/images/solutions/endustriyel-hava-yonetimi-card-hero.png?v=1",
+    hero: "/images/solutions/endustriyel-hava-yonetimi-card-hero.png?v=2",
     thumbnails: ["/images/products/nautilus-cif-cidarli.png", "/images/products/nautilus-lfp.png", "/images/products/cyclone.png"],
   },
   "/cozumler/trafo-enerji-odalari-fanlari": {

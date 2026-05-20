@@ -16,9 +16,6 @@ import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
 import { productStripCategoryMedia } from "@/lib/product-strip-media";
 import { solutionStripPageProductMedia } from "@/lib/solution-strip-media";
 
-/** Sertifika şeridi — `globals.css` --sand-200 ile aynı (ürün görseli arka plan tonu) */
-const HOME_CERTIFICATE_STRIP_BG = "#eaeadf";
-
 type CompanyProfileMilestoneIcon = "flag" | "chart" | "certificate" | "star" | "people";
 
 type CompanyProfileMilestone = {
@@ -1656,21 +1653,6 @@ const HOME_PRODUCT_BAND_FEATURE_FALLBACKS: readonly (readonly string[])[] = [
   ["Titreşim İzolatörleri Ailesi"],
 ];
 
-/**
- * Hero altı şerit — standart grupları peş peşe: ISO (9001+14001) → BSI → AB (CE+EN) → TSE → test (Efectis)
- * Renkli PNG’ler invert edilmez (`keepColorPng` ile).
- */
-const certificateLogoBarItems = [
-  { src: "/images/certificates/ISO9001.png?v=7", alt: "ISO 9001" },
-  { src: "/images/certificates/ISO14001.png?v=1", alt: "ISO 14001" },
-  { src: "/images/certificates/bsi.png?v=2", alt: "BSI" },
-  { src: "/images/certificates/CE.png?v=10", alt: "CE" },
-  { src: "/images/certificates/ENEC.png?v=1", alt: "EN" },
-  { src: "/images/certificates/TSE.png?v=1", alt: "TSE" },
-  { src: "/images/certificates/Efectis.svg", alt: "Efectis" },
-] as const;
-const certificateLogoMarqueeItems = [...certificateLogoBarItems, ...certificateLogoBarItems] as const;
-
 /** Ana sayfa tipografi: display ↔ mono arası lead (17–18px), gövde (15px); dikey ritim 8px tabanı */
 const homeLeadInk =
   "text-[17px] font-normal leading-[1.68] tracking-[-0.011em] text-ink/[0.76] sm:text-[18px] sm:leading-[1.66]";
@@ -1987,33 +1969,6 @@ export default function HomeClient({
   const [allowRestrictedSections, setAllowRestrictedSections] = useState<boolean | null>(null);
   const solutionStripCarouselRef = useRef<HTMLDivElement | null>(null);
   const productStripCarouselRef = useRef<HTMLDivElement | null>(null);
-  const certificateMarqueeRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    const el = certificateMarqueeRef.current;
-    if (!el) return;
-    let offset = 0;
-    let lastY = window.scrollY;
-    const SCROLL_TO_MARQUEE_RATIO = 0.6;
-    const applyTransform = () => {
-      const half = el.scrollWidth / 2;
-      if (half > 0) {
-        offset = ((offset % half) + half) % half;
-      }
-      el.style.transform = `translate3d(${-offset}px, 0, 0)`;
-    };
-    const onScroll = () => {
-      const y = window.scrollY;
-      const delta = y - lastY;
-      lastY = y;
-      offset += delta * SCROLL_TO_MARQUEE_RATIO;
-      applyTransform();
-    };
-    applyTransform();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
   useEffect(() => {
     const applyConsent = (raw: string | null) => {
       if (!raw) {
@@ -2109,77 +2064,8 @@ export default function HomeClient({
       />
       </div>
 
-      {/* 02 — Sertifika; ardından çözümler (soft yüzey + palet) */}
+      {/* 02 — Çözümler (soft yüzey + palet) */}
       <section id="solution-categories" className="relative scroll-mt-24 md:scroll-mt-[5.5rem]">
-        <div className="relative bg-sand-200">
-          <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
-            <div className="border-b border-ink/[0.08] py-5 sm:py-7">
-              <div className="relative overflow-hidden">
-                <div
-                  className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-5 sm:w-12"
-                  style={{ backgroundImage: `linear-gradient(to right, ${HOME_CERTIFICATE_STRIP_BG}, transparent)` }}
-                />
-                <div
-                  className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-5 sm:w-12"
-                  style={{ backgroundImage: `linear-gradient(to left, ${HOME_CERTIFICATE_STRIP_BG}, transparent)` }}
-                />
-
-                <div ref={certificateMarqueeRef} className="certificate-marquee-track flex w-max items-center gap-5 sm:gap-10">
-                  {certificateLogoMarqueeItems.map((cert, index) => {
-                    const isEfectisSvg = cert.src.endsWith(".svg") && cert.src.includes("Efectis");
-                    const isEnecPng = cert.src.includes("ENEC.png");
-                    const isCePng = cert.src.includes("CE.png");
-                    const isIso9001Png = cert.src.includes("ISO9001.png");
-                    const isIso14001Png = cert.src.includes("ISO14001.png");
-                    const isBsiPng = cert.src.includes("bsi.png");
-                    const isTsePng = cert.src.includes("TSE.png");
-                    const keepColorPng =
-                      isEnecPng || isCePng || isIso9001Png || isIso14001Png || isBsiPng || isTsePng;
-                    const lightOnDark = !keepColorPng && !isEfectisSvg;
-                    return (
-                      <a
-                        key={`${cert.alt}-${index}`}
-                        href={`/${locale}/kurumsal/sertifikalar`}
-                        className={`flex items-center justify-center px-1.5 sm:px-2 ${
-                          isCePng
-                            ? "min-w-[3.6rem] sm:min-w-[4.5rem]"
-                            : "min-w-[70px] sm:min-w-[90px]"
-                        }`}
-                      >
-                        <img
-                          src={cert.src}
-                          alt={cert.alt}
-                          className={`w-auto max-w-full object-contain transition-[opacity,transform,filter] duration-300 hover:scale-[1.04] hover:opacity-100 ${
-                            isEfectisSvg
-                              ? "h-7 opacity-95 mix-blend-multiply sm:h-10"
-                              : isEnecPng
-                                ? "h-7 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(59,130,246,0.22)] sm:h-9"
-                                : isCePng
-                                  ? "h-9 opacity-100 drop-shadow-[0_2px_14px_rgba(36,48,68,0.12)] drop-shadow-[0_0_18px_rgba(255,215,160,0.45)] sm:h-12"
-                                  : isIso9001Png
-                                    ? "h-8 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_14px_rgba(34,211,238,0.28)] sm:h-11"
-                                    : isIso14001Png
-                                      ? "h-8 opacity-100 drop-shadow-[0_2px_12px_rgba(36,48,68,0.1)] drop-shadow-[0_0_16px_rgba(34,197,94,0.32)] sm:h-11"
-                                      : isTsePng
-                                        ? "h-7 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.1)] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)] sm:h-9"
-                                        : isBsiPng
-                                          ? "h-7 opacity-100 drop-shadow-[0_2px_10px_rgba(36,48,68,0.12)] drop-shadow-[0_0_8px_rgba(36,48,68,0.08)] sm:h-9"
-                                          : `h-7 opacity-95 sm:h-10 ${
-                                              lightOnDark ? "brightness-0 hover:opacity-100" : ""
-                                            }`
-                          }`}
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </a>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="relative border-t border-sand-300 bg-sand-100 text-ink">
           <HomeMarketStripBackdrop />
           <div className="relative z-[1] mx-auto max-w-[1720px] px-4 sm:px-10 lg:px-16">
@@ -2339,10 +2225,6 @@ export default function HomeClient({
                 } lg:h-full`}
               >
                 <div className="relative flex min-h-0 w-full flex-1 flex-col lg:min-h-0 lg:flex-row lg:max-w-none">
-                  <div
-                    className="pointer-events-none absolute -left-px top-1/2 z-10 hidden h-[min(42%,220px)] w-[3px] -translate-y-1/2 rounded-full bg-gradient-to-b from-primary from-25% via-primary/45 to-transparent lg:block"
-                    aria-hidden
-                  />
                   <div className="group relative min-h-0 flex-1 overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex lg:min-h-0">
                     <div className="relative aspect-[16/10] w-full min-h-0 lg:aspect-auto lg:h-full lg:min-h-[12rem]">
                       <video
@@ -2777,32 +2659,20 @@ export default function HomeClient({
       {/* 07 — VIDEO / STUDIO (yeniden tasarım: marka tanıtım videosu) */}
       {(() => {
         const vt = getHomeVideoStrings(locale);
+        const featureIconMask = (src: string): React.CSSProperties => ({
+          maskImage: `url(${src})`,
+          WebkitMaskImage: `url(${src})`,
+          maskSize: "contain",
+          WebkitMaskSize: "contain",
+          maskPosition: "center",
+          WebkitMaskPosition: "center",
+          maskRepeat: "no-repeat",
+          WebkitMaskRepeat: "no-repeat",
+        });
         const featureIcons = [
-          // CFD-driven
-          (
-            <svg key="fc1" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-6 w-6">
-              <rect x="4" y="6" width="20" height="14" rx="1.5" />
-              <path d="M8 24h12M14 20v4" strokeLinecap="round" />
-              <path d="M8 12h4M10 10v4M16 14l3 3M19 11l-3 3" strokeLinecap="round" />
-            </svg>
-          ),
-          // Manufacturing
-          (
-            <svg key="fc2" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-6 w-6">
-              <path d="M4 26V14l6 4V14l6 4v-4l8 5v7z" strokeLinejoin="round" />
-              <rect x="8" y="20" width="2" height="3" fill="currentColor" />
-              <rect x="14" y="20" width="2" height="3" fill="currentColor" />
-              <rect x="20" y="20" width="2" height="3" fill="currentColor" />
-              <path d="M4 26h22" strokeLinecap="round" />
-            </svg>
-          ),
-          // Global
-          (
-            <svg key="fc3" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-6 w-6">
-              <circle cx="16" cy="16" r="11" />
-              <path d="M5 16h22M16 5c3.5 3.5 3.5 18 0 22M16 5c-3.5 3.5-3.5 18 0 22" />
-            </svg>
-          ),
+          <span key="fc1" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/monitor.png")} aria-hidden />,
+          <span key="fc2" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/chart.png")} aria-hidden />,
+          <span key="fc3" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/globe.png")} aria-hidden />,
         ];
         const pillarIcons = [
           // Safety (shield + check)
@@ -2945,17 +2815,33 @@ export default function HomeClient({
                     href={`/${locale}/kurumsal/biz-kimiz`}
                     className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
                   >
-                    <span className="flex items-center gap-3">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/15 text-primary transition-colors group-hover:bg-primary/25">
-                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                          <path d="M3.75 21V8.25l8.25-4.5 8.25 4.5V21M3.75 21h16.5M9 21v-6h6v6" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                    <span className="flex min-w-0 items-center gap-3">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
+                        <span
+                          aria-hidden
+                          className="block h-9 w-9 bg-primary"
+                          style={{
+                            maskImage: "url(/images/feature-icons/factory.png)",
+                            WebkitMaskImage: "url(/images/feature-icons/factory.png)",
+                            maskSize: "contain",
+                            WebkitMaskSize: "contain",
+                            maskPosition: "center",
+                            WebkitMaskPosition: "center",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskRepeat: "no-repeat",
+                          }}
+                        />
                       </span>
-                      <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/90 group-hover:text-white">
-                        {vt.sideButtons.facilities}
+                      <span className="min-w-0">
+                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
+                          {vt.sideButtons.facilities.title}
+                        </p>
+                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
+                          {vt.sideButtons.facilities.desc}
+                        </p>
                       </span>
                     </span>
-                    <svg className="h-4 w-4 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
                       <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>
@@ -2963,17 +2849,33 @@ export default function HomeClient({
                     href={`/${locale}/kurumsal/referanslar`}
                     className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
                   >
-                    <span className="flex items-center gap-3">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/15 text-primary transition-colors group-hover:bg-primary/25">
-                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                          <path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6 5.87a4 4 0 00-4-4m4 4a4 4 0 014-4M9 12a3 3 0 100-6 3 3 0 000 6zm6 0a3 3 0 100-6 3 3 0 000 6z" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                    <span className="flex min-w-0 items-center gap-3">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
+                        <span
+                          aria-hidden
+                          className="block h-9 w-9 bg-primary"
+                          style={{
+                            maskImage: "url(/images/feature-icons/trophy.png)",
+                            WebkitMaskImage: "url(/images/feature-icons/trophy.png)",
+                            maskSize: "contain",
+                            WebkitMaskSize: "contain",
+                            maskPosition: "center",
+                            WebkitMaskPosition: "center",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskRepeat: "no-repeat",
+                          }}
+                        />
                       </span>
-                      <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/90 group-hover:text-white">
-                        {vt.sideButtons.references}
+                      <span className="min-w-0">
+                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
+                          {vt.sideButtons.references.title}
+                        </p>
+                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
+                          {vt.sideButtons.references.desc}
+                        </p>
                       </span>
                     </span>
-                    <svg className="h-4 w-4 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
                       <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>
@@ -2985,7 +2887,7 @@ export default function HomeClient({
                         key={fc.title}
                         className="flex items-start gap-3.5 rounded-xl border border-white/[0.06] bg-white/[0.025] p-3.5 transition-colors duration-300 hover:border-white/[0.12] hover:bg-white/[0.05]"
                       >
-                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/12 text-primary">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/12 text-primary">
                           {featureIcons[i]}
                         </span>
                         <div className="min-w-0">
@@ -3044,22 +2946,35 @@ export default function HomeClient({
       })()}
 
       {/* 06 — FAQ (mockup) & final CTA */}
-      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-14 sm:py-20 md:scroll-mt-[5.5rem]">
-        <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
-          <div className="grid gap-10 lg:grid-cols-12 lg:gap-x-14 xl:gap-x-20">
-            <div className="lg:col-span-4 lg:pt-2">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary sm:text-[12px] sm:tracking-[0.22em]">
+      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-10 sm:py-14 md:scroll-mt-[5.5rem]">
+        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-10 lg:px-16">
+          <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-12">
+            <div className="flex flex-col lg:col-span-4 lg:pt-2">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary sm:text-[11px] sm:tracking-[0.22em]">
                 {dict.faq.tag}
               </p>
               <h2
-                className="mt-4 text-balance font-bold tracking-[-0.03em] text-ink"
-                style={{ fontSize: "clamp(1.85rem, 3.2vw, 2.65rem)", lineHeight: 1.12 }}
+                className="mt-3 text-balance font-bold tracking-[-0.03em] text-ink"
+                style={{ fontSize: "clamp(1.4rem, 2.4vw, 2rem)", lineHeight: 1.15 }}
               >
                 {dict.faq.headline ?? dict.faq.title ?? dict.faq.tag}
               </h2>
               {dict.faq.desc ? (
-                <p className={`mt-5 max-w-[34ch] ${homeLeadInk}`}>{dict.faq.desc}</p>
+                <p className="mt-3 max-w-[34ch] text-[13px] leading-[1.6] text-ink/70 sm:text-[14px]">{dict.faq.desc}</p>
               ) : null}
+              {/* Sol görsel — kutuyu komple doldurur (object-cover) */}
+              <div className="mt-6 flex-1">
+                <div className="relative h-full min-h-[320px] w-full overflow-hidden rounded-2xl bg-[#0f1d33] ring-1 ring-ink/[0.08] shadow-[0_22px_46px_-28px_rgba(15,22,36,0.32)]">
+                  <Image
+                    src="/images/faq-visual.jpg?v=3"
+                    alt={dict.faq.tag}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="object-cover object-center"
+                    unoptimized
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="lg:col-span-8">
@@ -3073,19 +2988,19 @@ export default function HomeClient({
                         type="button"
                         aria-expanded={isOpen}
                         onClick={() => setOpenFaq(isOpen ? null : index)}
-                        className="group grid w-full grid-cols-[auto_1fr_auto] items-start gap-x-4 py-5 text-left sm:gap-x-6 sm:py-6"
+                        className="group grid w-full grid-cols-[auto_1fr_auto] items-start gap-x-3 py-3.5 text-left sm:gap-x-5 sm:py-4"
                       >
                         <span
-                          className="font-product-card-num select-none pt-0.5 text-[clamp(2.5rem,4.5vw,3.35rem)] font-bold leading-none tabular-nums text-primary/28 transition-colors duration-300 group-hover:text-primary/40"
+                          className="font-product-card-num select-none pt-0.5 text-[clamp(1.5rem,2.6vw,2rem)] font-bold leading-none tabular-nums text-primary/28 transition-colors duration-300 group-hover:text-primary/40"
                           aria-hidden
                         >
                           {num}
                         </span>
-                        <span className="min-w-0 pt-2 text-[17px] font-semibold leading-[1.35] text-ink sm:text-[18px] sm:leading-[1.4]">
+                        <span className="min-w-0 pt-1 text-[14px] font-semibold leading-[1.35] text-ink sm:text-[15px] sm:leading-[1.4]">
                           {item.q}
                         </span>
                         <span
-                          className="pt-1.5 font-mono-eng text-[22px] font-light leading-none text-ink/35 transition-colors duration-300 group-hover:text-primary/70 sm:text-[24px]"
+                          className="pt-1 font-mono-eng text-[18px] font-light leading-none text-ink/35 transition-colors duration-300 group-hover:text-primary/70 sm:text-[20px]"
                           aria-hidden
                         >
                           {isOpen ? "×" : "+"}
@@ -3099,15 +3014,15 @@ export default function HomeClient({
                       >
                         <div className="min-h-0">
                           <div
-                            className={`grid grid-cols-[auto_1fr_auto] gap-x-4 pb-5 sm:gap-x-6 sm:pb-6 ${
+                            className={`grid grid-cols-[auto_1fr_auto] gap-x-3 pb-4 sm:gap-x-5 sm:pb-5 ${
                               isOpen ? "" : "pointer-events-none"
                             }`}
                           >
-                            <span aria-hidden className="invisible text-[clamp(2.5rem,4.5vw,3.35rem)] leading-none">
+                            <span aria-hidden className="invisible text-[clamp(1.5rem,2.6vw,2rem)] leading-none">
                               {num}
                             </span>
                             <div className="min-w-0">
-                              <p className="text-[14px] leading-[1.65] text-[#6b7280] sm:text-[15px] sm:leading-[1.7]">
+                              <p className="text-[12.5px] leading-[1.6] text-[#6b7280] sm:text-[13.5px] sm:leading-[1.65]">
                                 {item.a}
                               </p>
                               {item.linkHref && item.linkLabel ? (
@@ -3224,11 +3139,6 @@ export default function HomeClient({
         </div>
       </section>
 
-      <style jsx>{`
-        .certificate-marquee-track {
-          will-change: transform;
-        }
-      `}</style>
     </main>
   );
 }

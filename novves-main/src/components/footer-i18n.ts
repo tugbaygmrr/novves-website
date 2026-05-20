@@ -34,7 +34,7 @@ export type FooterStrings = {
   };
   certificates: {
     title: string;
-    /** Description under each cert code (codes EN 12101-3 / AMCA 210 / ISO 9001 / ISO 45001 / CE are universal). */
+    /** Description under each cert code (codes EN 12101-3 / ISO 9001 / ISO 27001 / ISO 14001 / ISO 45001 are universal). */
     items: string[];
     downloadCatalog: string;
     downloadCatalogDesc: string;
@@ -134,13 +134,13 @@ const tr: FooterStrings = {
     title: "Sertifikalar & Standartlar",
     items: [
       "Duman ve Isı Kontrol Sistemleri",
-      "Laboratuvar Testli Performans",
+      "Kalite Yönetim Sistemi",
+      "Bilgi Güvenliği Yönetim Sistemi",
       "Çevre Yönetim Sistemi",
       "İş Sağlığı ve Güvenliği Yönetim Sistemi",
-      "Avrupa Birliği Uygunluk",
     ],
-    downloadCatalog: "KATALOG İNDİR",
-    downloadCatalogDesc: "Tüm ürün kataloglarımızı indirebilirsiniz.",
+    downloadCatalog: "SERTİFİKA KATALOĞU İNDİR",
+    downloadCatalogDesc: "Sertifika ve standart belgelerimizi indirebilirsiniz.",
   },
   newsletter: {
     title: "Yeniliklerden haberdar olun",
@@ -248,13 +248,13 @@ const en: FooterStrings = {
     title: "Certificates & Standards",
     items: [
       "Smoke and Heat Control Systems",
-      "Laboratory Tested Performance",
+      "Quality Management System",
+      "Information Security Management System",
       "Environmental Management System",
-      "Occupational Health & Safety Management",
-      "European Union Conformity",
+      "Occupational Health and Safety Management System",
     ],
-    downloadCatalog: "DOWNLOAD CATALOGUE",
-    downloadCatalogDesc: "Download all our product catalogues.",
+    downloadCatalog: "DOWNLOAD CERTIFICATE CATALOGUE",
+    downloadCatalogDesc: "Download our certificate and standard documents.",
   },
   newsletter: {
     title: "Stay informed",
@@ -361,14 +361,14 @@ const ru: FooterStrings = {
   certificates: {
     title: "Сертификаты и стандарты",
     items: [
-      "Системы дымо- и теплоудаления",
-      "Лабораторно испытанные характеристики",
-      "Управление окружающей средой",
-      "Охрана труда и безопасность",
-      "Соответствие ЕС",
+      "Системы контроля дыма и тепла",
+      "Система менеджмента качества",
+      "Система менеджмента информационной безопасности",
+      "Система экологического менеджмента",
+      "Система менеджмента охраны труда",
     ],
-    downloadCatalog: "СКАЧАТЬ КАТАЛОГ",
-    downloadCatalogDesc: "Скачайте все каталоги продукции.",
+    downloadCatalog: "СКАЧАТЬ КАТАЛОГ СЕРТИФИКАТОВ",
+    downloadCatalogDesc: "Скачайте наши сертификаты и документы стандартов.",
   },
   newsletter: {
     title: "Будьте в курсе",
@@ -475,14 +475,14 @@ const ar: FooterStrings = {
   certificates: {
     title: "الشهادات والمعايير",
     items: [
-      "أنظمة التحكم بالدخان والحرارة",
-      "أداء مختبر تجريبياً",
+      "أنظمة التحكم في الدخان والحرارة",
+      "نظام إدارة الجودة",
+      "نظام إدارة أمن المعلومات",
       "نظام الإدارة البيئية",
-      "إدارة الصحة والسلامة المهنية",
-      "مطابقة الاتحاد الأوروبي",
+      "نظام إدارة الصحة والسلامة المهنية",
     ],
-    downloadCatalog: "تنزيل الكتالوج",
-    downloadCatalogDesc: "حمّل جميع كتالوجات منتجاتنا.",
+    downloadCatalog: "تنزيل كتالوج الشهادات",
+    downloadCatalogDesc: "حمّل شهاداتنا ووثائق المعايير.",
   },
   newsletter: {
     title: "ابقَ على اطلاع",
@@ -589,14 +589,14 @@ const de: FooterStrings = {
   certificates: {
     title: "Zertifikate & Normen",
     items: [
-      "Rauch- und Wärmesteuerungsanlagen",
-      "Laborgeprüfte Leistung",
+      "Rauch- und Wärmekontrollsysteme",
+      "Qualitätsmanagementsystem",
+      "Informationssicherheits-Managementsystem",
       "Umweltmanagementsystem",
-      "Arbeits- und Gesundheitsschutz",
-      "EU-Konformität",
+      "Arbeitsschutz-Managementsystem",
     ],
-    downloadCatalog: "KATALOG DOWNLOAD",
-    downloadCatalogDesc: "Laden Sie alle Produktkataloge herunter.",
+    downloadCatalog: "ZERTIFIKAT-KATALOG HERUNTERLADEN",
+    downloadCatalogDesc: "Laden Sie unsere Zertifikate und Standarddokumente herunter.",
   },
   newsletter: {
     title: "Bleiben Sie informiert",
@@ -703,14 +703,14 @@ const fr: FooterStrings = {
   certificates: {
     title: "Certificats & Normes",
     items: [
-      "Systèmes de contrôle des fumées",
-      "Performance testée en laboratoire",
+      "Systèmes de contrôle de fumée et chaleur",
+      "Système de management de la qualité",
+      "Système de management de la sécurité de l'information",
       "Système de management environnemental",
-      "Santé et sécurité au travail",
-      "Conformité européenne",
+      "Système de management de la santé et sécurité au travail",
     ],
-    downloadCatalog: "TÉLÉCHARGER CATALOGUE",
-    downloadCatalogDesc: "Téléchargez tous nos catalogues produits.",
+    downloadCatalog: "TÉLÉCHARGER CATALOGUE CERTIFICATS",
+    downloadCatalogDesc: "Téléchargez nos certificats et documents standards.",
   },
   newsletter: {
     title: "Restez informé",
@@ -817,14 +817,14 @@ const it: FooterStrings = {
   certificates: {
     title: "Certificati & Standard",
     items: [
-      "Sistemi controllo fumi e calore",
-      "Prestazioni testate in laboratorio",
+      "Sistemi di controllo fumo e calore",
+      "Sistema di gestione qualità",
+      "Sistema di gestione sicurezza informazioni",
       "Sistema di gestione ambientale",
-      "Salute e sicurezza sul lavoro",
-      "Conformità UE",
+      "Sistema di gestione salute e sicurezza",
     ],
-    downloadCatalog: "SCARICA CATALOGO",
-    downloadCatalogDesc: "Scarica tutti i nostri cataloghi prodotti.",
+    downloadCatalog: "SCARICA CATALOGO CERTIFICATI",
+    downloadCatalogDesc: "Scarica i nostri certificati e documenti standard.",
   },
   newsletter: {
     title: "Resta aggiornato",
@@ -931,14 +931,14 @@ const es: FooterStrings = {
   certificates: {
     title: "Certificados y Normas",
     items: [
-      "Sistemas de control de humos y calor",
-      "Rendimiento probado en laboratorio",
+      "Sistemas de control de humo y calor",
+      "Sistema de gestión de calidad",
+      "Sistema de gestión de seguridad de la información",
       "Sistema de gestión ambiental",
-      "Salud y seguridad laboral",
-      "Conformidad europea",
+      "Sistema de gestión de salud y seguridad",
     ],
-    downloadCatalog: "DESCARGAR CATÁLOGO",
-    downloadCatalogDesc: "Descarga todos nuestros catálogos.",
+    downloadCatalog: "DESCARGAR CATÁLOGO CERTIFICADOS",
+    downloadCatalogDesc: "Descarga nuestros certificados y documentos estándar.",
   },
   newsletter: {
     title: "Mantente informado",

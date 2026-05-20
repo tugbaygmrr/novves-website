@@ -126,7 +126,7 @@ const pillarIcons = [
 
 /* ── Certificates: codes are universal, descriptions via i18n ─────────── */
 
-const CERT_CODES = ["EN 12101-3", "AMCA 210", "ISO 9001", "ISO 45001", "CE"] as const;
+const CERT_CODES = ["EN 12101-3", "ISO 9001", "ISO 27001", "ISO 14001", "ISO 45001"] as const;
 
 const CertIcon = (
   <svg viewBox="0 0 32 32" className="h-12 w-12 shrink-0 text-primary" fill="none">

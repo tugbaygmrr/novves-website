@@ -45,9 +45,9 @@ function lerpRgb(from: readonly [number, number, number], to: readonly [number, 
 }
 
 /** Zemin koyu → ana sayfa ana zemin (#EAEADF); vurgu marka turuncusu (#EF5F17) */
-const SCROLL_SHELL_DARK: readonly [number, number, number] = [74, 74, 77]; // #4a4a4d
+const SCROLL_SHELL_DARK: readonly [number, number, number] = [15, 29, 51]; // #0f1d33 — footer ile aynı derin lacivert
 const SCROLL_SHELL_LIGHT: readonly [number, number, number] = [234, 234, 223]; // #eaeadf
-const SCROLL_PANEL_DARK: readonly [number, number, number] = [86, 86, 90];
+const SCROLL_PANEL_DARK: readonly [number, number, number] = [17, 32, 58]; // #11203a — footer gradient orta tonu
 const SCROLL_PANEL_LIGHT: readonly [number, number, number] = [241, 241, 232]; // soft yüzeye yakın
 const SCROLL_INK: readonly [number, number, number] = [58, 60, 61]; // --ink #3a3c3d (hero metin)
 const SCROLL_ACCENT_DARK: readonly [number, number, number] = [239, 95, 23]; // #ef5f17
@@ -56,20 +56,33 @@ const SCROLL_SUB_DARK: readonly [number, number, number] = [209, 209, 209]; // #
 const SCROLL_SUB_LIGHT: readonly [number, number, number] = [111, 115, 117]; // --secondary muted
 const SCROLL_DIVIDER_LIGHT = "rgb(216, 216, 205)"; // --sand-300 border
 
+/** Start card alt şeridi — ChatGPT mockup'tan kesilen 7 ayrı logo PNG'si.
+ * Her biri ayrı flex item, marquee'de seamless loop için 2x render edilir. */
+const START_CARD_CERTS: ReadonlyArray<{ src: string; alt: string }> = [
+  { src: "/images/cert-bsi.png", alt: "BSI" },
+  { src: "/images/cert-ce.png", alt: "CE" },
+  { src: "/images/cert-en.png", alt: "EN" },
+  { src: "/images/cert-tse.png", alt: "TSE" },
+  { src: "/images/cert-efectis.png", alt: "Efectis" },
+  { src: "/images/cert-iso.png", alt: "ISO" },
+  { src: "/images/cert-iso14001.png", alt: "ISO 14001" },
+];
+
+
 /** Masaüstü scroll animasyonu — tüm kareleri aynı anda yüklemek zayıf PC’lerde donmaya yol açar */
 const FRAME_LOAD_RADIUS = 15;
 const FRAME_EVICT_DISTANCE = 42;
 
-/** Masaüstü video + motion DOM — çok ince adım = scroll scrub daha sürekli his */
-const DESKTOP_SCROLL_MOTION_STEPS = 96;
-const DESKTOP_VIDEO_SCRUB_STEPS = DESKTOP_SCROLL_MOTION_STEPS;
-const MOTION_DOM_STEPS = DESKTOP_SCROLL_MOTION_STEPS;
+/** Masaüstü video + motion DOM — video artık intra-only (her frame keyframe), seek ucuz.
+ * Step sayısı 80'e çıkarıldı: smooth scrub + DOM update'ler ayrı (motion daha kaba). */
+const DESKTOP_VIDEO_SCRUB_STEPS = 80;
+const MOTION_DOM_STEPS = 48;
 
-/** Tema (gradient / shell) — videodan biraz kaba, yine de yumuşak geçiş */
-const THEME_OPEN_DOM_STEPS = 32;
+/** Tema (gradient / shell) — daha az sıklıkta update */
+const THEME_OPEN_DOM_STEPS = 20;
 
-/** Sağdaki progress çubuğu — scroll quantize ile hizalı */
-const PROGRESS_BAR_STEPS = 96;
+/** Sağdaki progress çubuğu */
+const PROGRESS_BAR_STEPS = 60;
 
 /** Mobil video seek adımı */
 const MOBILE_VIDEO_SCRUB_STEPS = 24;
@@ -77,13 +90,14 @@ const MOBILE_VIDEO_SCRUB_STEPS = 24;
 /** Mobil hero (görsel/video) katman — arka plan + overlay adımı */
 const MOBILE_MOTION_DOM_STEPS = 48;
 
-/** `scrollScrub`: fastSeek yok, küçük currentTime adımları — video gibi akış */
+/** `scrollScrub`: fastSeek yok, küçük currentTime adımları — video gibi akış.
+ * Threshold 1/90 sn (~11ms) — sub-frame değişiklikler için seek yapmıyoruz, CPU/GPU rahatlar. */
 function scrubVideoTo(v: HTMLVideoElement, seconds: number, scrollScrub?: boolean) {
   const d = v.duration;
   if (!Number.isFinite(d) || d <= 0.05) return;
   const t = Math.min(Math.max(seconds, 0), d - 0.001);
   if (scrollScrub) {
-    if (Math.abs(t - v.currentTime) < 1 / 360) return;
+    if (Math.abs(t - v.currentTime) < 1 / 90) return;
     v.currentTime = t;
     return;
   }
@@ -383,33 +397,37 @@ export function ScrollVideoSection({
       if (mk !== lastMotionDomKey) {
         lastMotionDomKey = mk;
         const pq = mk / MOTION_DOM_STEPS;
-        if (startCardRef.current) {
-          const fade = Math.max(1 - pq * 2.4, 0);
-          startCardRef.current.style.opacity = String(fade);
-          startCardRef.current.style.transform = `translateY(-${pq * 30}px)`;
+        // Start card görünmezse (fade=0) DOM yazımı atla — opacity 0'da paint zaten kalkmış
+        const startFade = Math.max(1 - pq * 2.4, 0);
+        if (startCardRef.current && startFade > 0) {
+          startCardRef.current.style.opacity = String(startFade);
+          startCardRef.current.style.transform = `translate3d(0,-${pq * 30}px,0)`;
+        } else if (startCardRef.current && startFade === 0 && startCardRef.current.style.opacity !== "0") {
+          startCardRef.current.style.opacity = "0";
         }
         if (panelRef.current) {
           const slideOut = Math.min(Math.max((pq - 0.55) / 0.3, 0), 1);
-          panelRef.current.style.transform = `translateX(-${slideOut * 105}%)`;
+          panelRef.current.style.transform = `translate3d(-${slideOut * 105}%,0,0)`;
         }
         const mediaEl = isScrollStill ? heroImageRef.current : isVideoMode ? videoRef.current : canvasRef.current;
         if (mediaEl) {
-          /** Mobil hero ile aynı fan hissi — objectPosition + hafif scale (scroll ilerledikçe) */
           const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
           const fanX = 18 + transition * 14;
           const fanScale = 1.14 - transition * 0.04;
-          mediaEl.style.objectPosition = `${fanX}% center`;
-          (mediaEl as HTMLElement).style.transform = `translateZ(0) scale(${fanScale})`;
+          mediaEl.style.objectPosition = `${fanX.toFixed(1)}% center`;
+          (mediaEl as HTMLElement).style.transform = `translateZ(0) scale(${fanScale.toFixed(3)})`;
         }
-        if (endCardRef.current) {
-          const fade = Math.max((pq - 0.72) * 4, 0);
-          const shift = Math.max(40 - fade * 40, 0);
-          endCardRef.current.style.opacity = String(Math.min(fade, 1));
-          endCardRef.current.style.transform = `translateX(${shift}px)`;
+        const endFade = Math.max((pq - 0.72) * 4, 0);
+        if (endCardRef.current && (endFade > 0 || endCardRef.current.style.opacity !== "0")) {
+          const shift = Math.max(40 - endFade * 40, 0);
+          endCardRef.current.style.opacity = String(Math.min(endFade, 1));
+          endCardRef.current.style.transform = `translate3d(${shift}px,0,0)`;
         }
         if (statsRef.current) {
-          const fade = Math.max(1 - pq * 3.2, 0);
-          statsRef.current.style.opacity = String(fade);
+          const sFade = Math.max(1 - pq * 3.2, 0);
+          if (sFade > 0 || statsRef.current.style.opacity !== "0") {
+            statsRef.current.style.opacity = String(sFade);
+          }
         }
       }
 
@@ -427,7 +445,7 @@ export function ScrollVideoSection({
     if (!container) return;
 
     /** GSAP ScrollTrigger: `scrub` değeri inertia/lerp ekler — video seek baskısını azaltıp ipeksi his verir.
-     *  prefers-reduced-motion: anlık (scrub: true), aksi halde ~0.6 sn yumuşatma. */
+     *  prefers-reduced-motion: anlık (scrub: true), aksi halde ~0.9 sn yumuşatma (daha az kasma). */
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: container,
@@ -516,7 +534,8 @@ export function ScrollVideoSection({
             playsInline
             preload="none"
             disablePictureInPicture
-            className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
+            disableRemotePlayback
+            className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden] [contain:layout_paint]"
             style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
           />
         ) : (
@@ -583,10 +602,10 @@ export function ScrollVideoSection({
           >
             <div
               ref={startCardSurfaceRef}
-              className="relative w-full overflow-hidden rounded-3xl border border-white/12 bg-[#3a3a3e]/95 px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] sm:px-9 sm:py-8 [transform:translateZ(0)]"
+              className="relative w-full overflow-hidden rounded-3xl border border-white/12 bg-[#0f1d33]/95 px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] sm:px-9 sm:py-8 [transform:translateZ(0)]"
               style={
                 {
-                  backgroundColor: "rgb(74, 74, 77)",
+                  backgroundColor: "rgb(15, 29, 51)",
                   borderColor: "rgba(255,255,255,0.11)",
                   color: "rgb(230, 230, 230)",
                   ["--c-title" as string]: "rgb(255, 255, 255)",
@@ -597,6 +616,99 @@ export function ScrollVideoSection({
               }
             >
               <div className="pointer-events-none absolute inset-0 opacity-[0.12] blueprint-grid-light" aria-hidden />
+
+              {/* Footer ile aynı blueprint fan çizimi — sağ alt köşede, marka turuncusu %40 opaklık */}
+              <svg
+                viewBox="0 0 400 400"
+                className="pointer-events-none absolute -bottom-24 -right-24 h-[340px] w-[340px] text-primary/40 sm:h-[420px] sm:w-[420px]"
+                preserveAspectRatio="xMidYMid meet"
+                aria-hidden
+              >
+                <defs>
+                  <radialGradient id="startCardFanGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="currentColor" stopOpacity="0.18" />
+                    <stop offset="55%" stopColor="currentColor" stopOpacity="0.05" />
+                    <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
+                  </radialGradient>
+                </defs>
+
+                {/* Soft halo */}
+                <circle cx="200" cy="200" r="190" fill="url(#startCardFanGlow)" />
+
+                {/* Dış halkalar */}
+                <g fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55">
+                  <circle cx="200" cy="200" r="188" />
+                  <circle cx="200" cy="200" r="178" strokeDasharray="2 4" />
+                  <circle cx="200" cy="200" r="160" />
+                  <circle cx="200" cy="200" r="140" strokeDasharray="3 3" opacity="0.4" />
+                </g>
+
+                {/* Cıvata noktaları (dış flanş) */}
+                <g fill="currentColor" opacity="0.7">
+                  {Array.from({ length: 24 }).map((_, i) => {
+                    const a = (i * Math.PI * 2) / 24;
+                    const r = 183;
+                    const cx = (200 + Math.cos(a) * r).toFixed(2);
+                    const cy = (200 + Math.sin(a) * r).toFixed(2);
+                    return <circle key={i} cx={cx} cy={cy} r="1.6" />;
+                  })}
+                </g>
+
+                {/* İç hub */}
+                <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.85">
+                  <circle cx="200" cy="200" r="42" />
+                  <circle cx="200" cy="200" r="30" />
+                  <circle cx="200" cy="200" r="14" />
+                </g>
+                <circle cx="200" cy="200" r="4" fill="currentColor" opacity="0.9" />
+
+                {/* Fan kanatları (9) */}
+                <g fill="currentColor" opacity="0.32" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.7">
+                  {Array.from({ length: 9 }).map((_, i) => {
+                    const rot = (i * 360) / 9;
+                    return (
+                      <path
+                        key={i}
+                        d="M200 158
+                           C 230 150, 252 142, 268 92
+                           C 244 110, 220 122, 200 140
+                           Z"
+                        transform={`rotate(${rot} 200 200)`}
+                      />
+                    );
+                  })}
+                </g>
+
+                {/* Kanat dış konturları (offset, derinlik için) */}
+                <g fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.55">
+                  {Array.from({ length: 9 }).map((_, i) => {
+                    const rot = (i * 360) / 9 + 20;
+                    return (
+                      <path
+                        key={i}
+                        d="M200 200 C 220 178, 248 158, 270 120"
+                        transform={`rotate(${rot} 200 200)`}
+                      />
+                    );
+                  })}
+                </g>
+
+                {/* Crosshair / yapım çizgileri */}
+                <g stroke="currentColor" strokeWidth="0.4" opacity="0.35" strokeDasharray="1 4">
+                  <line x1="200" y1="6" x2="200" y2="394" />
+                  <line x1="6" y1="200" x2="394" y2="200" />
+                  <line x1="60" y1="60" x2="340" y2="340" />
+                  <line x1="340" y1="60" x2="60" y2="340" />
+                </g>
+
+                {/* Köşe tick işaretleri */}
+                <g stroke="currentColor" strokeWidth="0.8" opacity="0.65">
+                  <path d="M196 8 v8 M200 8 v6 M204 8 v8" />
+                  <path d="M196 392 v-8 M200 392 v-6 M204 392 v-8" />
+                  <path d="M8 196 h8 M8 200 h6 M8 204 h8" />
+                  <path d="M392 196 h-8 M392 200 h-6 M392 204 h-8" />
+                </g>
+              </svg>
 
               <p className="relative font-mono-eng text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--c-accent)" }}>
                 ● {startCard.badge}
@@ -676,6 +788,23 @@ export function ScrollVideoSection({
                   )}
                 </div>
               )}
+
+              {/* Sertifika marquee — 7 ayrı logo PNG (ChatGPT mockup'tan kesilmiş), seamless loop için 2x */}
+              <div className="relative mt-6 -mx-8 -mb-7 overflow-hidden pb-3 sm:-mx-9 sm:-mb-8 sm:pb-4">
+                <div className="card-cert-marquee-track flex w-max items-center">
+                  {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
+                    <img
+                      key={`${cert.alt}-${i}`}
+                      src={cert.src}
+                      alt={i < START_CARD_CERTS.length ? cert.alt : ""}
+                      aria-hidden={i >= START_CARD_CERTS.length || undefined}
+                      className="block h-12 w-auto shrink-0 sm:h-14"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -705,10 +834,10 @@ export function ScrollVideoSection({
             <div className="pointer-events-auto mr-6 w-[min(580px,42vw)] xl:mr-14">
               <div
                 ref={endCardSurfaceRef}
-                className="relative overflow-hidden rounded-3xl border border-white/12 bg-[#3a3a3e]/95 p-9 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] [transform:translateZ(0)]"
+                className="relative overflow-hidden rounded-3xl border border-white/12 bg-[#0f1d33]/95 p-9 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] [transform:translateZ(0)]"
                 style={
                   {
-                    backgroundColor: "rgb(74, 74, 77)",
+                    backgroundColor: "rgb(15, 29, 51)",
                     borderColor: "rgba(255,255,255,0.11)",
                     color: "rgb(230, 230, 230)",
                     ["--c-title" as string]: "rgb(255, 255, 255)",
@@ -919,9 +1048,9 @@ function MobileScrollSection({
         const panelLift = transition * 105;
         const finalTextOpacity = Math.min(Math.max((transition - 0.78) / 0.2, 0), 1);
         const finalTextLift = (1 - finalTextOpacity) * 24;
-        const bgR = Math.round(62 + transition * 170);
-        const bgG = Math.round(65 + transition * 165);
-        const bgB = Math.round(72 + transition * 152);
+        const bgR = Math.round(15 + transition * 219);
+        const bgG = Math.round(29 + transition * 205);
+        const bgB = Math.round(51 + transition * 172);
         const root = mobileHeroBgRef.current;
         if (root) root.style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
         const imgEl = mobileHeroImgRef.current;
@@ -1023,9 +1152,9 @@ function MobileScrollSection({
   const panelLift = transition * 105;
   const finalTextOpacity = Math.min(Math.max((transition - 0.78) / 0.2, 0), 1);
   const finalTextLift = (1 - finalTextOpacity) * 24;
-  const bgR = Math.round(62 + transition * 170);
-  const bgG = Math.round(65 + transition * 165);
-  const bgB = Math.round(72 + transition * 152);
+  const bgR = 15;
+  const bgG = 29;
+  const bgB = 51;
 
   return (
     <section ref={sectionRef} className="relative bg-sand-200 pt-[80px] lg:hidden">
@@ -1035,7 +1164,7 @@ function MobileScrollSection({
             ref={mobileHeroBgRef}
             className="relative min-h-[calc(100svh-92px)] overflow-hidden"
             style={{
-              backgroundColor: isMobileMotion ? "rgb(62, 65, 72)" : `rgb(${bgR}, ${bgG}, ${bgB})`,
+              backgroundColor: isMobileMotion ? "rgb(15, 29, 51)" : `rgb(${bgR}, ${bgG}, ${bgB})`,
             }}
           >
             {isMobileStill && mobileStillSrc ? (
@@ -1086,50 +1215,150 @@ function MobileScrollSection({
                 }}
               />
             )}
+            {/* Arka plan overlay'leri — yumuşak normal gradient (lacivert maskleme yok) */}
             <div
               ref={mobileOverlayARef}
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_46%,rgba(212,218,228,0.16)_0%,rgba(58,63,74,0.28)_40%,rgba(31,35,43,0.66)_100%)]"
-              style={{ opacity: isMobileMotion ? 0.64 : overlayOpacity }}
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_46%,rgba(212,218,228,0.16)_0%,rgba(58,63,74,0.22)_40%,rgba(31,35,43,0.5)_100%)]"
+              style={{ opacity: isMobileMotion ? 0.5 : overlayOpacity }}
             />
             <div
               ref={mobileOverlayBRef}
-              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,39,46,0.56)_0%,rgba(36,39,46,0.24)_30%,rgba(36,39,46,0.10)_52%,rgba(36,39,46,0.36)_78%,rgba(36,39,46,0.62)_100%)]"
-              style={{ opacity: isMobileMotion ? 0.64 : overlayOpacity }}
+              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,39,46,0.32)_0%,rgba(36,39,46,0.10)_40%,rgba(36,39,46,0.20)_100%)]"
+              style={{ opacity: isMobileMotion ? 0.5 : overlayOpacity }}
             />
 
             {startCard && (
               <div
                 ref={mobileStartPanelRef}
-                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#343840]/94 p-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)]"
+                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#0f1d33]/94 px-5 pb-0 pt-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)]"
                 style={{
                   opacity: isMobileMotion ? 1 : panelOpacity,
                   transform: isMobileMotion ? "translateY(0px)" : `translateY(-${panelLift}px)`,
                 }}
               >
-                <p className="font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">• {startCard.badge}</p>
-                <h2 className="mt-3 text-white">
+                <div className="pointer-events-none absolute inset-0 opacity-[0.12] blueprint-grid-light" aria-hidden />
+
+                {/* Footer-style blueprint fan — sağ alt köşe (desktop ile aynı) */}
+                <svg
+                  viewBox="0 0 400 400"
+                  className="pointer-events-none absolute -bottom-20 -right-20 h-[260px] w-[260px] text-primary/40"
+                  preserveAspectRatio="xMidYMid meet"
+                  aria-hidden
+                >
+                  <defs>
+                    <radialGradient id="mobileFanGlow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stopColor="currentColor" stopOpacity="0.18" />
+                      <stop offset="55%" stopColor="currentColor" stopOpacity="0.05" />
+                      <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
+                    </radialGradient>
+                  </defs>
+                  <circle cx="200" cy="200" r="190" fill="url(#mobileFanGlow)" />
+                  <g fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55">
+                    <circle cx="200" cy="200" r="188" />
+                    <circle cx="200" cy="200" r="178" strokeDasharray="2 4" />
+                    <circle cx="200" cy="200" r="160" />
+                  </g>
+                  <g fill="currentColor" opacity="0.7">
+                    {Array.from({ length: 18 }).map((_, i) => {
+                      const a = (i * Math.PI * 2) / 18;
+                      const cx2 = (200 + Math.cos(a) * 183).toFixed(2);
+                      const cy2 = (200 + Math.sin(a) * 183).toFixed(2);
+                      return <circle key={i} cx={cx2} cy={cy2} r="1.6" />;
+                    })}
+                  </g>
+                  <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.85">
+                    <circle cx="200" cy="200" r="42" />
+                    <circle cx="200" cy="200" r="30" />
+                  </g>
+                  <circle cx="200" cy="200" r="4" fill="currentColor" opacity="0.9" />
+                  <g fill="currentColor" opacity="0.32" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.7">
+                    {Array.from({ length: 9 }).map((_, i) => {
+                      const rot = (i * 360) / 9;
+                      return (
+                        <path
+                          key={i}
+                          d="M200 158 C 230 150, 252 142, 268 92 C 244 110, 220 122, 200 140 Z"
+                          transform={`rotate(${rot} 200 200)`}
+                        />
+                      );
+                    })}
+                  </g>
+                </svg>
+
+                <p className="relative font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">● {startCard.badge}</p>
+                <h2 className="relative mt-3 text-white">
                   {startCard.titleLine1 && (
-                    <span className="block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine1}</span>
+                    <span className="block text-[1.85rem] font-semibold leading-[1.04] tracking-[-0.02em]">{startCard.titleLine1}</span>
                   )}
                   {startCard.titleLine2 && (
-                    <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine2}</span>
+                    <span className="mt-0.5 block text-[1.85rem] font-semibold leading-[1.04] tracking-[-0.02em] opacity-92">{startCard.titleLine2}</span>
                   )}
                   {startCard.titleLine3 && (
-                    <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{startCard.titleLine3}</span>
+                    <span className="mt-0.5 block text-[1.85rem] font-semibold leading-[1.04] tracking-[-0.02em]">{startCard.titleLine3}</span>
                   )}
                 </h2>
-                <p className="mt-3 text-[14px] leading-[1.58] text-white/84">{startCard.subtitle}</p>
-                {endCard && locale && productHref && (
-                  <Link
-                    href={`/${locale}${productHref}`}
-                    className="group mt-4 inline-flex w-full items-center justify-between rounded-2xl border border-white/18 bg-white/[0.08] px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.22em] text-white backdrop-blur-sm transition-colors duration-300 hover:border-primary hover:bg-primary"
-                  >
-                    <span>{endCard.cta}</span>
-                    <svg className="h-4 w-4 text-primary transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
+                <p className="relative mt-3 text-[13.5px] leading-[1.58] text-white/84">{startCard.subtitle}</p>
+
+                {/* CTAs — desktop ile aynı: primary teklif al + secondary ürünleri keşfet */}
+                {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
+                  <div className="relative mt-5 flex flex-col gap-2.5">
+                    {startCard.ctaPrimary && (
+                      <Link
+                        href={`/${locale}/iletisim`}
+                        className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-4 py-3 text-[10.5px] font-medium uppercase tracking-[0.16em] text-white transition-all duration-300 hover:border-primary hover:bg-primary"
+                      >
+                        {startCard.ctaPrimary}
+                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </Link>
+                    )}
+                    {startCard.ctaSecondary && (
+                      <Link
+                        href={`/${locale}/urunler`}
+                        className="group inline-flex items-center justify-center gap-2 border-b border-white/45 pb-1 text-center text-[10.5px] font-medium uppercase tracking-[0.16em] text-white/88 transition-colors duration-300 hover:border-primary hover:text-primary"
+                      >
+                        {startCard.ctaSecondary}
+                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </Link>
+                    )}
+                  </div>
                 )}
+
+                {/* Sertifika marquee — kart alt edge (desktop ile aynı) */}
+                <div className="relative mt-5 -mx-5 overflow-hidden border-t border-white/10">
+                  <div className="card-cert-marquee-track flex w-max items-center py-3">
+                    {[
+                      "/images/cert-bsi.png",
+                      "/images/cert-ce.png",
+                      "/images/cert-en.png",
+                      "/images/cert-tse.png",
+                      "/images/cert-efectis.png",
+                      "/images/cert-iso.png",
+                      "/images/cert-iso14001.png",
+                      "/images/cert-bsi.png",
+                      "/images/cert-ce.png",
+                      "/images/cert-en.png",
+                      "/images/cert-tse.png",
+                      "/images/cert-efectis.png",
+                      "/images/cert-iso.png",
+                      "/images/cert-iso14001.png",
+                    ].map((src, i) => (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        key={`m-cert-${i}`}
+                        src={src}
+                        alt=""
+                        aria-hidden
+                        className="block h-9 w-auto shrink-0 px-5"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             )}
 
