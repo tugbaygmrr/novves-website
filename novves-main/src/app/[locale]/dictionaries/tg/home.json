@@ -17,6 +17,27 @@
       {
         "a": "Мо дастгирии пурраи пас аз фурӯшро бо ба истифода додан, нигоҳдории давравӣ, таъминоти қисмҳои эҳтиётӣ ва хидмати техникии шабонарӯзӣ пешкаш мекунем.",
         "q": "Оё шумо дастгирии пас аз фурӯш пешниҳод мекунед?"
+      },
+      {
+        "q": "Оё интихоби бодрезаи махсуси лоиҳавӣ ва тарҳрезии система анҷом медиҳед?",
+        "a": "Бале. NOVVES ҳар лоиҳаро бо ҳаҷм, фишор, муқовимат ба ҳарорат, сенарияи истифода, шароити соҳа, ниёзҳои автоматизатсия ва талаботи стандарт арзёбӣ мекунад. Интихоби бодреза, тарҳрезӣ, сенарияҳои идоракунӣ ва таҷҳизоти ёрирасон ба тариқи лоиҳавӣ муайян мешаванд.",
+        "linkHref": "/muhendislik/projeye-ozel-fan-secimi",
+        "linkLabel": "Learn about project-specific fan selection →",
+        "linkAriaLabel": "Learn about NOVVES project-specific fan selection, flow-pressure assessment, fan layout and system design approach."
+      },
+      {
+        "q": "Барои системаҳои хориҷкунии дуд ва гармӣ кадом ҳаллҳоро пешниҳод мекунед?",
+        "a": "NOVVES бо бодрезаҳои хориҷкунии дуди F300/F400, системаҳои бодрезаҳои реактивӣ, бодрезаҳои хориҷкунии дуди боми, бодрезаҳои девори, дамперҳо, хомӯшкунакҳои овоз ва пинҷакҳои идоракунии сенариявӣ ҳаллҳои интегралии хориҷкунии дуд ва гармиро таъмин мекунад.",
+        "linkHref": "/cozumler/duman-isi-tahliye-sistemleri",
+        "linkLabel": "Explore smoke and heat exhaust solutions →",
+        "linkAriaLabel": "Explore NOVVES smoke and heat exhaust solutions with F300/F400 fans, jet fan systems, dampers, silencers and control panels."
+      },
+      {
+        "q": "Оё дастгирии баъди фурӯшро таъмин мекунед?",
+        "a": "Бале. NOVVES муштариёнро пас аз таҳвил бо ҳуҷҷатҳои техникӣ, дастгирии ба истифода додан, қисмҳои эҳтиётӣ, дастурамалҳои хидматрасонӣ ва дастгирии муҳандисии баъди фурӯш дастгирӣ мекунад — то системаҳо дар соҳа бехатар, самаранок ва устувор кор кунанд.",
+        "linkHref": "/hizmetler/teknik-servis",
+        "linkLabel": "Explore our after-sales support process →",
+        "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
     ],
     "title": "Саволҳои зуд-зуд додашаванда"
@@ -314,17 +335,20 @@
     {
       "title": "Шаҳодатномаҳои EN",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/Efectis.png?v=2"
+      "image": "/images/certificates/Efectis.png?v=2",
+      "desc": "Ба сертификатҳои иҷроиши мутобиқ ба EN-и бодрезаҳои хориҷкунии дуду гармии мо дастрасӣ пайдо кунед."
     },
     {
       "title": "Ҳуҷҷатҳои ISO",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/bsi9001.png?v=2"
+      "image": "/images/certificates/bsi9001.png?v=2",
+      "desc": "Сертификатҳои ISO-ро, ки идоракунии сифат ва равандҳои корпоративии моро ҳуҷҷатгузорӣ мекунанд, дида бароед."
     },
     {
       "title": "Сифат ва мутобиқат",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/iso-sertifika-mockup.png"
+      "image": "/images/certificates/iso-sertifika-mockup.png",
+      "desc": "Боэътимодии маҳсулот, равандҳои санҷиш ва ҳуҷҷатҳои мутобиқатро бинед."
     }
   ],
   "companyProfileCards": [
@@ -340,7 +364,7 @@
     },
     {
       "href": "/kurumsal/ekibimiz",
-      "image": "/images/page-hero/ekibimiz-company-profile-card.png?v=1",
+      "image": "/images/page-hero/novves-vision.png?v=1",
       "title": "Коллективи мо"
     }
   ],
@@ -359,6 +383,487 @@
       "title": "Беморхонаи 100 кати Адана Юрегир",
       "href": "/kurumsal/referanslar",
       "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+    },
+    {
+      "title": "Иншооти саноатӣ",
+      "sector": "Иншооти саноатӣ",
+      "example": "Иншооти истеҳсолии Eczacıbaşı",
+      "projectCount": "6",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/endustriyel-aselsan-konya-hero.png?v=1",
+      "theme": "zinc"
     }
+  ],
+  "companyProfileSection": {
+    "timelineIntro": "Бо беш аз даҳ соли таҷриба, лоиҳаҳои хориҷкунии дуд, иқлимгузаронии бароҳат ва вентилятсияи саноатиро аз ибтидо то охир идора мекунем; аз истеҳсолот то соҳа муҳандисии боэътимод пешниҳод мекунем.",
+    "timelineHeadlinePart1": "Сафари мо дар соли ",
+    "timelineHeadlineEm1": "2019",
+    "timelineHeadlinePart2": " оғоз шуд, имрӯз мо дар ",
+    "timelineHeadlineEm2": "тамоми Туркия",
+    "timelineHeadlinePart3": " ҳозир ҳастем.",
+    "milestones": [
+      {
+        "year": "2019",
+        "title": "Таъсис",
+        "body": "Дар устохонаи 150 м²-и Ялова, Туркия таъсис ёфтем.",
+        "image": "/images/corporate/novves-kurulus-bina.png?v=2",
+        "icon": "flag"
+      },
+      {
+        "year": "2020",
+        "title": "Оғози содирот",
+        "body": "Амалиёти содиротии худро оғоз кардем.",
+        "image": "/images/corporate/novves-2020-jetfan.png?v=1",
+        "icon": "chart"
+      },
+      {
+        "year": "2021",
+        "title": "Фабрикаи Нав",
+        "body": "Ба фабрикаи нави 1.500 м² масоҳати пӯшида кӯчидем.",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "icon": "certificate"
+      },
+      {
+        "year": "2022",
+        "title": "Сармоягузории Мошинолот",
+        "body": "Бо сармоягузориҳои нави мошинолот иқтидори истеҳсолиро васеъ кардем.",
+        "image": "/images/corporate/novves-gunumuz.png?v=2",
+        "icon": "star"
+      },
+      {
+        "year": "2023",
+        "title": "Фабрикаи Афзоянда",
+        "body": "Масоҳати истеҳсолии мо ба 3.000 м² расид.",
+        "image": "/images/corporate/novves-buyume-bina.png?v=2",
+        "icon": "people"
+      },
+      {
+        "year": "2024",
+        "title": "Истеҳсоли Импеллер",
+        "body": "Бо дастгирии TÜBİTAK истеҳсоли импеллери худро оғоз кардем.",
+        "image": "/images/corporate/tubitak-logo.png?v=1",
+        "icon": "star"
+      },
+      {
+        "year": "2025",
+        "title": "Брендинг ва Табдили Рақамӣ",
+        "body": "Microsoft Dynamics 365 ва Autodesk Inventor-ро қабул кардем; сертификатҳои BSI ва ATEX-ро ба итмом расонидем.",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "icon": "certificate",
+        "logos": [
+          "/images/corporate/logo-2025-0.png?v=2",
+          "/images/corporate/logo-2025-1.png?v=2",
+          "/images/corporate/logo-2025-2.png?v=3",
+          "/images/corporate/logo-2025-3.png?v=3"
+        ]
+      }
+    ],
+    "goalsTitle": "ҲАДАФҲОИ ОЯНДАИ МО",
+    "goalsIntro": "Устуворӣ, рақамигардонӣ ва салоҳият; се меҳвари асосии сармоягузории мо ба оянда. Маҳсулот ва хидматҳои худро дар ин самт инкишоф медиҳем ва бо шарикон арзиши дарозмуддат эҷод мекунем.",
+    "goalsPillars": [
+      {
+        "title": "Ҳалли Устувор",
+        "body": "Бо тарҳҳои бодрезаҳо ва системаҳое, ки самарабахшии энергия ва таъсири экологиро коҳиш медиҳанд, нишонаи карбонро паст мекунем."
+      },
+      {
+        "title": "Технология ва Навоварӣ",
+        "body": "Бо ҳамгироии CFD, автоматизатсия ва идоракунии оқилона дар лоиҳаҳо иҷроиши қобили чен таъмин мекунем."
+      },
+      {
+        "title": "Инсон ва Рушд",
+        "body": "Салоҳияти дастаро бо омӯзиши доимӣ ва таҷрибаи саҳроӣ мустаҳкам карда, дастгирии устуворро ба муштарӣ медиҳем."
+      },
+      {
+        "title": "Туркияи Васеътар",
+        "body": "Шабакаи дохилии истеҳсол ва хидматрасониро васеъ карда, дар ҳар минтақа дастгирии муҳандисии дастрас медиҳем."
+      }
+    ],
+    "goalsAsideImage": "/images/page-hero/novves-vision.png?v=1",
+    "goalsAsideImageAlt": "Дастаи NOVVES",
+    "bannerTitle": "Бо тағйирот қадам мегузорем, ояндаро шакл медиҳем.",
+    "bannerLine1": "Таҷрибаи гузаштаамонро бо ниёзҳои имрӯза муттаҳид мекунем.",
+    "bannerLine2": "Барои стандартҳои фардои вентилятсия ва амнияти сӯхтор якҷоя омода мешавем.",
+    "bannerLogoAlt": "NOVVES HVAC"
+  },
+  "engineeringShowcase": {
+    "title": "МУҲАНДИСИИ ДАСТГИРИШУДА БО CFD",
+    "subtitle": "Муҳандисие, ки ҷараёнро намоён мекунад",
+    "body": "Раванди мо на бо интихоби маҳсулот, балки бо фаҳмиши рафтори аэродинамикии бино оғоз меёбад. NOVVES бо таҳлилҳои CFD ҳаракати дуд, гармӣ ва ҳаворо дар дохили сохтор симулятсия мекунад; ҷойгиршавии бодреза, ҷараён, фишор ва мантиқи кории сенариявӣ бо маълумоти муҳандисӣ тарҳрезӣ ва тасдиқ карда мешавад.",
+    "cta": "Раванди CFD-ро омӯзед"
+  },
+  "engineeringPillarsSection": {
+    "title": "Аз муҳандисӣ ба соҳа",
+    "subtitle": "Ҳалли лоиҳа аз А то Я",
+    "lead": "NOVVES лоиҳаҳоро танҳо ҳамчун таъминоти маҳсулот наҳминосад. Ниёзро таҳлил мекунем, системаи дурустро тарҳрезӣ мекунем, истеҳсол менамоем ва дар соҳа татбиқшаванда мегардонем."
+  },
+  "homeBands": {
+    "solutionStripFeatureRows": [
+      [
+        {
+          "label": "Fire scenarios",
+          "desc": "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios."
+        },
+        {
+          "label": "Jet & natural",
+          "desc": "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies."
+        },
+        {
+          "label": "EN 12101 ready",
+          "desc": "Certified products and type-test documentation packaged for code reviews and inspections."
+        }
+      ],
+      [
+        {
+          "label": "Comfort band",
+          "desc": "Stable temperature–humidity bands for offices, hotels, and retail."
+        },
+        {
+          "label": "Acoustics",
+          "desc": "Low-SPL selections and isolation for shafts, façades, and plant rooms."
+        },
+        {
+          "label": "Energy & VRF",
+          "desc": "Flow and pressure planning coordinated with heat pumps and VRF systems."
+        }
+      ],
+      [
+        {
+          "label": "Room pressure",
+          "desc": "Positive/negative pressure cascades and leakage control to protect critical spaces."
+        },
+        {
+          "label": "HEPA & fine",
+          "desc": "Hospital, GMP, and food lines with filter classes and change-out strategies."
+        },
+        {
+          "label": "Monitoring",
+          "desc": "DP, humidity, and particle sensing with logging and alarms for compliance."
+        }
+      ],
+      [
+        {
+          "label": "Process airflow",
+          "desc": "High-temperature and abrasive-duty fans for drying, emission, and line pressure."
+        },
+        {
+          "label": "Dust & filters",
+          "desc": "Fan curves matched to dust loading, filter dp, and maintenance cycles."
+        },
+        {
+          "label": "Uptime",
+          "desc": "Standby fans, spare-part paths, and service access to shorten planned stops."
+        }
+      ],
+      [
+        {
+          "label": "Hazard zones",
+          "desc": "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas."
+        },
+        {
+          "label": "Spark-free",
+          "desc": "Ex d/m/e and compatible drives for explosive gas and dust atmospheres."
+        },
+        {
+          "label": "ATEX dossier",
+          "desc": "Risk study, technical file, and site marking ready for audits."
+        }
+      ],
+      [
+        {
+          "label": "Stocking density",
+          "desc": "Fresh-air and exhaust rates sized for headcount, season, and heat stress."
+        },
+        {
+          "label": "Gas & moisture",
+          "desc": "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts."
+        },
+        {
+          "label": "Corrosion tough",
+          "desc": "Materials and motor protection for wash-down and aggressive barn environments."
+        }
+      ],
+      [
+        {
+          "label": "Transformer heat",
+          "desc": "Cooling airflow sized for transformer and busbar losses with design margin."
+        },
+        {
+          "label": "Fire & smoke",
+          "desc": "Smoke exhaust and pressurisation coordinated with electrical infrastructure."
+        },
+        {
+          "label": "Utility specs",
+          "desc": "Product ranges aligned with OEM, utility, and IEC-oriented specifications."
+        }
+      ],
+      [
+        {
+          "label": "Tunnel & poly",
+          "desc": "Even velocity profiles and temperature stratification for tunnel and multi-span houses."
+        },
+        {
+          "label": "CO₂ & RH",
+          "desc": "Ventilation paired with humidification or dehumidification for crop response."
+        },
+        {
+          "label": "Seasonal energy",
+          "desc": "VFD and control strategies to trim fan energy across seasonal loads."
+        }
+      ],
+      [
+        {
+          "label": "Panels & logic",
+          "desc": "Central panels for fire, process, and comfort fans with clear interlocks."
+        },
+        {
+          "label": "BMS / SCADA",
+          "desc": "Modbus, BACnet, and site-wide automation interfaces and sequences."
+        },
+        {
+          "label": "Commissioning",
+          "desc": "Stepwise testing, handover scripts, and operator screens for maintenance."
+        }
+      ],
+      [
+        {
+          "label": "Shaft & wet rooms",
+          "desc": "Compact, low-noise units for central shafts, bathrooms, and kitchens."
+        },
+        {
+          "label": "Façade fit",
+          "desc": "Balcony and wall-mounted options that respect acoustic and architectural limits."
+        },
+        {
+          "label": "Energy labels",
+          "desc": "Efficiency classes aligned with residential regulations and running cost."
+        }
+      ],
+      [
+        {
+          "label": "Salt spray",
+          "desc": "Coatings and stainless options aligned with C4/C5 marine exposure classes."
+        },
+        {
+          "label": "Class society",
+          "desc": "Technical files and tests aligned with vessel class and offshore norms."
+        },
+        {
+          "label": "Redundancy",
+          "desc": "N+1 layouts and access paths for offshore availability and service."
+        }
+      ],
+      [
+        {
+          "label": "Custom geometry",
+          "desc": "Project-specific casings for tight footprints, flanges, and duct transitions."
+        },
+        {
+          "label": "Materials & weld",
+          "desc": "Stainless, aluminium, specials; weld and NDT procedures on request."
+        },
+        {
+          "label": "FAT & traceability",
+          "desc": "Factory acceptance testing with certificates and full material traceability."
+        }
+      ],
+      [
+        {
+          "label": "Smoke & visibility",
+          "desc": "3D smoke modelling for jet fan placement, visibility, and temperature fields."
+        },
+        {
+          "label": "Heat & contaminants",
+          "desc": "Distribution studies for kitchens, process exhaust, and waste heat."
+        },
+        {
+          "label": "Client-ready reports",
+          "desc": "Summaries, sections, and visuals for investors, AHJs, and design reviews."
+        }
+      ]
+    ],
+    "productStripFeatureRows": [
+      [
+        {
+          "label": "High performance",
+          "desc": "High airflow and thrust tailored to the application."
+        },
+        {
+          "label": "Durable",
+          "desc": "Reliable operation in industrial environments."
+        },
+        {
+          "label": "Quiet operation",
+          "desc": "Lower noise for comfortable spaces."
+        }
+      ],
+      [
+        {
+          "label": "Energy efficiency",
+          "desc": "Optimized consumption across the system."
+        },
+        {
+          "label": "Smart control",
+          "desc": "Integrated automation and monitoring."
+        },
+        {
+          "label": "Flexible solutions",
+          "desc": "Adaptable layouts for different buildings."
+        }
+      ],
+      [
+        {
+          "label": "High capacity",
+          "desc": "Cooling and heating power for large loads."
+        },
+        {
+          "label": "Reliable performance",
+          "desc": "Stable seasonal operation."
+        },
+        {
+          "label": "All-season use",
+          "desc": "Designed for year-round comfort and process needs."
+        }
+      ],
+      [
+        {
+          "label": "Modular design",
+          "desc": "Configurable air handling building blocks."
+        },
+        {
+          "label": "High efficiency",
+          "desc": "Heat recovery and fan efficiency options."
+        },
+        {
+          "label": "Smart monitoring",
+          "desc": "Visibility for operators and maintenance teams."
+        }
+      ],
+      [
+        {
+          "label": "Even distribution",
+          "desc": "Homogeneous airflow in the served zone."
+        },
+        {
+          "label": "Aesthetic design",
+          "desc": "Architect-friendly grilles and diffusers."
+        },
+        {
+          "label": "Easy installation",
+          "desc": "Practical mounting and commissioning on site."
+        }
+      ],
+      [
+        {
+          "label": "Filter classes",
+          "desc": "From coarse pre-filtration to fine and HEPA-grade options."
+        },
+        {
+          "label": "Indoor air quality",
+          "desc": "Cleaner supply air for comfort and critical applications."
+        },
+        {
+          "label": "Standards alignment",
+          "desc": "Selections aligned with hygiene and project specifications."
+        }
+      ],
+      [
+        {
+          "label": "Mounting & hardware",
+          "desc": "Dampers, supports, and accessories that complete the system."
+        },
+        {
+          "label": "Wide compatibility",
+          "desc": "Components matched to fans, ducts, and air devices."
+        },
+        {
+          "label": "Practical logistics",
+          "desc": "Straightforward sourcing for site schedules."
+        }
+      ],
+      [
+        {
+          "label": "Control & panels",
+          "desc": "Monitoring and control hardware for ventilation plants."
+        },
+        {
+          "label": "BMS integration",
+          "desc": "Signals and interfaces suited to building automation."
+        },
+        {
+          "label": "Field-ready kits",
+          "desc": "Practical layouts for installation and commissioning."
+        }
+      ],
+      [
+        {
+          "label": "Vibration suspension",
+          "desc": "Springs and isolators tuned to equipment loads."
+        },
+        {
+          "label": "Noise control",
+          "desc": "Reduced structure-borne and airborne noise paths."
+        },
+        {
+          "label": "Decoupled supports",
+          "desc": "Stable equipment mounting with controlled transfer."
+        }
+      ]
+    ]
+  },
+  "productCategoryFeatures": [
+    [
+      "Axial Box Fan Family",
+      "Ex-proof Fan Family",
+      "Industrial Centrifugal Fan Family",
+      "EC Motor Fan Systems Family",
+      "Roof Fan Family",
+      "Wall Fan Family",
+      "Bathroom Fan Family",
+      "Duct Fan Family",
+      "Cell Type Fan Family",
+      "Kitchen Ventilation Systems Family",
+      "Shelter Fan Family",
+      "Poultry Farm Ventilation System Family",
+      "Dust Collection Systems Family"
+    ],
+    [
+      "Air Handling Unit Family",
+      "Dehumidification Unit Family",
+      "Heat Recovery Unit Family",
+      "Explosion-proof Air Handling Unit (Ex-proof AHU)"
+    ],
+    [
+      "Compact, Packaged and Industrial Cooling Family",
+      "Heat Pump Outdoor Unit Family",
+      "Indoor Unit Family",
+      "Heating / Cooling Coils Family",
+      "Electric Heater Family",
+      "Heat Exchanger Family",
+      "Precision-controlled HVAC Family"
+    ],
+    [
+      "Damper Systems Family"
+    ],
+    [
+      "Grille and Diffuser Systems Family"
+    ],
+    [
+      "Filter and Filtration Elements Family"
+    ],
+    [
+      "Fan and HVAC Accessories Family"
+    ],
+    [
+      "Automation Panel Systems Family",
+      "PLC and Programmable Control Systems Family",
+      "Sensor and Detection Systems Family",
+      "Control Cards and Operator Panels Family",
+      "Timing and Control Devices Family",
+      "Power Electronics Systems Family",
+      "Panel Power and Switching Components Family"
+    ],
+    [
+      "Vibration Isolators Family"
+    ]
   ]
 }

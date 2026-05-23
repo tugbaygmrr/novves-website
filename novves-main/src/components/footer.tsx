@@ -320,97 +320,24 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
         />
         <div className="absolute inset-0 blueprint-grid-dark opacity-25" />
 
-        {/* Blueprint fan drawing — right edge, partially off-canvas */}
-        <svg
-          viewBox="0 0 400 400"
-          className="absolute -right-24 top-12 hidden h-[520px] w-[520px] text-primary/40 lg:block xl:-right-16 xl:h-[600px] xl:w-[600px]"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <defs>
-            <radialGradient id="fanGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="currentColor" stopOpacity="0.18" />
-              <stop offset="55%" stopColor="currentColor" stopOpacity="0.05" />
-              <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
-            </radialGradient>
-          </defs>
-
-          {/* Soft halo */}
-          <circle cx="200" cy="200" r="190" fill="url(#fanGlow)" />
-
-          {/* Outer concentric rings */}
-          <g fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55">
-            <circle cx="200" cy="200" r="188" />
-            <circle cx="200" cy="200" r="178" strokeDasharray="2 4" />
-            <circle cx="200" cy="200" r="160" />
-            <circle cx="200" cy="200" r="140" strokeDasharray="3 3" opacity="0.4" />
-          </g>
-
-          {/* Bolt circle markers (outer flange) */}
-          <g fill="currentColor" opacity="0.7">
-            {Array.from({ length: 24 }).map((_, i) => {
-              const a = (i * Math.PI * 2) / 24;
-              const r = 183;
-              const cx = (200 + Math.cos(a) * r).toFixed(2);
-              const cy = (200 + Math.sin(a) * r).toFixed(2);
-              return <circle key={i} cx={cx} cy={cy} r="1.6" />;
-            })}
-          </g>
-
-          {/* Inner hub */}
-          <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.85">
-            <circle cx="200" cy="200" r="42" />
-            <circle cx="200" cy="200" r="30" />
-            <circle cx="200" cy="200" r="14" />
-          </g>
-          <circle cx="200" cy="200" r="4" fill="currentColor" opacity="0.9" />
-
-          {/* Fan blades (9) */}
-          <g fill="currentColor" opacity="0.32" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.7">
-            {Array.from({ length: 9 }).map((_, i) => {
-              const rot = (i * 360) / 9;
-              return (
-                <path
-                  key={i}
-                  d="M200 158
-                     C 230 150, 252 142, 268 92
-                     C 244 110, 220 122, 200 140
-                     Z"
-                  transform={`rotate(${rot} 200 200)`}
-                />
-              );
-            })}
-          </g>
-
-          {/* Blade outline strokes (additional 9, offset for depth) */}
-          <g fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.55">
-            {Array.from({ length: 9 }).map((_, i) => {
-              const rot = (i * 360) / 9 + 20;
-              return (
-                <path
-                  key={i}
-                  d="M200 200 C 220 178, 248 158, 270 120"
-                  transform={`rotate(${rot} 200 200)`}
-                />
-              );
-            })}
-          </g>
-
-          {/* Crosshairs / construction lines */}
-          <g stroke="currentColor" strokeWidth="0.4" opacity="0.35" strokeDasharray="1 4">
-            <line x1="200" y1="6" x2="200" y2="394" />
-            <line x1="6" y1="200" x2="394" y2="200" />
-            <line x1="60" y1="60" x2="340" y2="340" />
-            <line x1="340" y1="60" x2="60" y2="340" />
-          </g>
-
-          {/* Corner tick marks */}
-          <g stroke="currentColor" strokeWidth="0.8" opacity="0.65">
-            <path d="M196 8 v8 M200 8 v6 M204 8 v8" />
-            <path d="M196 392 v-8 M200 392 v-6 M204 392 v-8" />
-            <path d="M8 196 h8 M8 200 h6 M8 204 h8" />
-            <path d="M392 196 h-8 M392 200 h-6 M392 204 h-8" />
-          </g>
-        </svg>
+        {/* Dünya haritası — sağa yaslı (hero kartı ile aynı mantık); sol yarı lacivert overlay ile karartılır */}
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            backgroundImage: "url('/images/world-map.png')",
+            backgroundSize: "auto 130%",
+            backgroundPosition: "calc(100% + 420px) center",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.7,
+            maskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 95%, black 100%)",
+            WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 95%, black 100%)",
+          }}
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0f1d33] via-[#0f1d33]/90 to-[#0f1d33]/10"
+          aria-hidden
+        />
       </div>
 
       {/* ─ Top CTA Card ────────────────────────────────────────────────── */}

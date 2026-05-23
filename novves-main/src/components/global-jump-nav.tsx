@@ -212,7 +212,7 @@ export function GlobalJumpNav({
     "hero-main": "/images/jump-icons/home.png",
     "solution-categories": "/images/jump-icons/solutions.png",
     "product-categories": "/images/jump-icons/products.png",
-    "catalogs": "/images/jump-icons/catalogs.png",
+    "catalogs": "/images/jump-icons/catalogs.svg",
     "references": "/images/jump-icons/references.png",
     "certificates": "/images/jump-icons/certificates.png",
     "company-profile": "/images/jump-icons/company.png",

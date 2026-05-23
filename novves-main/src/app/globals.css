@@ -175,15 +175,15 @@ body {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
   text-overflow: ellipsis;
 }
 
 @media (min-width: 640px) {
   .product-card-clamp-desc {
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
   }
 }
 
@@ -191,15 +191,15 @@ body {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
-  line-clamp: 6;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
   text-overflow: ellipsis;
 }
 
 @media (min-width: 640px) {
   .product-card-clamp-families {
-    -webkit-line-clamp: 7;
-    line-clamp: 7;
+    -webkit-line-clamp: 9;
+    line-clamp: 9;
   }
 }
 

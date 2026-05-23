@@ -666,10 +666,18 @@
       "Heat Exchanger Family",
       "Precision-controlled HVAC Family"
     ],
-    ["Damper Systems Family"],
-    ["Grille and Diffuser Systems Family"],
-    ["Filter and Filtration Elements Family"],
-    ["Fan and HVAC Accessories Family"],
+    [
+      "Damper Systems Family"
+    ],
+    [
+      "Grille and Diffuser Systems Family"
+    ],
+    [
+      "Filter and Filtration Elements Family"
+    ],
+    [
+      "Fan and HVAC Accessories Family"
+    ],
     [
       "Automation Panel Systems Family",
       "PLC and Programmable Control Systems Family",
@@ -679,7 +687,9 @@
       "Power Electronics Systems Family",
       "Panel Power and Switching Components Family"
     ],
-    ["Vibration Isolators Family"]
+    [
+      "Vibration Isolators Family"
+    ]
   ],
   "catalogPreview": [
     {
@@ -743,61 +753,84 @@
     {
       "title": "EN Certificates",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/Efectis.png?v=2"
+      "image": "/images/certificates/Efectis.png?v=2",
+      "desc": "Access EN-compliant performance certificates for our smoke and heat extraction fans."
     },
     {
       "title": "ISO Documents",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/bsi9001.png?v=2"
+      "image": "/images/certificates/bsi9001.png?v=2",
+      "desc": "Review the ISO certificates that document our quality management and corporate processes."
     },
     {
       "title": "Quality & Compliance",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/iso-sertifika-mockup.png"
+      "image": "/images/certificates/iso-sertifika-mockup.png",
+      "desc": "View our product reliability, testing processes, and conformity documentation."
     }
   ],
   "companyProfileSection": {
     "timelineIntro": "For more than two decades we have delivered smoke control, comfort HVAC and industrial ventilation end-to-end—from manufacturing to commissioning—with dependable engineering.",
     "timelineHeadlinePart1": "Our journey began in ",
-    "timelineHeadlineEm1": "2004",
+    "timelineHeadlineEm1": "2019",
     "timelineHeadlinePart2": "; today we are present ",
     "timelineHeadlineEm2": "across Turkey",
     "timelineHeadlinePart3": " and beyond.",
     "milestones": [
       {
-        "year": "2004",
-        "title": "Foundation",
-        "body": "We were founded in Istanbul.",
-        "image": "/images/corporate/novves-kurulus-bina.png?v=1",
+        "year": "2019",
+        "title": "Founded",
+        "body": "Established in a 150 m² workshop at Yalova, Türkiye.",
+        "image": "/images/corporate/novves-kurulus-bina.png?v=2",
         "icon": "flag"
       },
       {
-        "year": "2010",
-        "title": "Growth",
-        "body": "We scaled with our first major healthcare project.",
-        "image": "/images/corporate/novves-buyume-bina.png?v=1",
+        "year": "2020",
+        "title": "Exporting",
+        "body": "Started exporting operations.",
+        "image": "/images/corporate/novves-2020-jetfan.png?v=1",
         "icon": "chart"
       },
       {
-        "year": "2015",
-        "title": "Certification",
-        "body": "We aligned operations and products with international standards.",
-        "image": "/images/corporate/novves-sertifikasyon-iso9001.png?v=1",
+        "year": "2021",
+        "title": "New Factory",
+        "body": "Moved to a new factory with 1,500 m² closed area.",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
         "icon": "certificate"
       },
       {
-        "year": "2020",
-        "title": "Leadership",
-        "body": "We became a trusted reference for complex ventilation projects.",
-        "image": "/images/corporate/novves-liderlik.png?v=1",
+        "year": "2022",
+        "title": "Machinery Investments",
+        "body": "Scaled production capacity with new machinery investments.",
+        "image": "/images/corporate/novves-gunumuz.png?v=2",
         "icon": "star"
       },
       {
-        "year": "2024",
-        "title": "Today",
-        "body": "Nationwide footprint, strong teams, and partners by our side.",
-        "image": "/images/corporate/novves-gunumuz.png?v=1",
+        "year": "2023",
+        "title": "Growing Factory",
+        "body": "Production area expanded to 3,000 m².",
+        "image": "/images/corporate/novves-buyume-bina.png?v=2",
         "icon": "people"
+      },
+      {
+        "year": "2024",
+        "title": "Impeller Production",
+        "body": "Started in-house impeller production with TÜBİTAK support.",
+        "image": "/images/corporate/tubitak-logo.png?v=1",
+        "icon": "star"
+      },
+      {
+        "year": "2025",
+        "title": "Branding & Digital Transformation",
+        "body": "Adopted Microsoft Dynamics 365 and Autodesk Inventor; completed BSI and ATEX certifications.",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "logos": [
+          "/images/corporate/logo-2025-0.png?v=2",
+          "/images/corporate/logo-2025-1.png?v=2",
+          "/images/corporate/logo-2025-2.png?v=3",
+          "/images/corporate/logo-2025-3.png?v=3"
+        ],
+        "icon": "certificate"
       }
     ],
     "goalsTitle": "OUR FUTURE GOALS",
@@ -820,7 +853,7 @@
         "body": "We expand domestic production and service coverage so engineering support is within reach everywhere."
       }
     ],
-    "goalsAsideImage": "/images/page-hero/ekibimiz-company-profile-card.png?v=2",
+    "goalsAsideImage": "/images/page-hero/novves-vision.png?v=1",
     "goalsAsideImageAlt": "NOVVES team",
     "bannerTitle": "We keep pace with change—and help shape what comes next.",
     "bannerLine1": "We combine deep experience from the past with the demands of today.",
@@ -840,7 +873,7 @@
     },
     {
       "href": "/kurumsal/ekibimiz",
-      "image": "/images/page-hero/ekibimiz-company-profile-card.png?v=1",
+      "image": "/images/page-hero/novves-vision.png?v=1",
       "title": "Our Team"
     }
   ]

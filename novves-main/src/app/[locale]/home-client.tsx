@@ -24,6 +24,8 @@ type CompanyProfileMilestone = {
   body: string;
   image: string;
   icon?: CompanyProfileMilestoneIcon;
+  /** Alternatif: tek image yerine 2-4 küçük logo grid'i (örn 2025: Microsoft, Autodesk, Vault) */
+  logos?: string[];
 };
 
 type CompanyProfileGoalPillar = {
@@ -183,7 +185,7 @@ type HomeDict = {
     projectCount?: string;
     theme?: "orange" | "sky" | "emerald" | "zinc";
   }[];
-  certificatePreview?: { title: string; href: string; image: string }[];
+  certificatePreview?: { title: string; href: string; image: string; desc?: string }[];
   /** Yeni şirket profili düzeni (zaman çizelgesi + hedefler + banner); yoksa `companyProfileCards` kullanılır */
   companyProfileSection?: CompanyProfileSection;
   companyProfileCards?: { title: string; href: string; image: string }[];
@@ -344,6 +346,22 @@ const pillarImages = [
   "/images/pillars/pillar-02-uretim-saha.png?v=20260512-1",
   "/images/pillars/pillar-03-saha-uygulama.png?v=20260512-1",
 ];
+
+/** Pillar göründüğünde Image yerine player olarak render edilecek videolar. */
+const pillarVideos: Record<number, { src: string; poster: string } | undefined> = {
+  0: {
+    src: "/video/engineering-pillar-01.mp4",
+    poster: "/video/engineering-pillar-01-poster.jpg",
+  },
+  1: {
+    src: "/video/engineering-pillar-02.mp4",
+    poster: "/video/engineering-pillar-02-poster.jpg",
+  },
+  2: {
+    src: "/video/engineering-pillar-03.mp4",
+    poster: "/video/engineering-pillar-03-poster.jpg",
+  },
+};
 
 /** Pillars sol vitrin — `v` değiştir: CDN/tarayıcı önbelleği kırılır */
 const ENGINEERING_COLLAGE_ASSET_V = "20260511-1";
@@ -867,7 +885,7 @@ function HomeCompanyProfileSectionBlock({
                     aria-hidden
                   />
 
-                  <ul className="grid gap-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-5 lg:gap-4">
+                  <ul className="grid gap-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-7 lg:gap-3">
                     {section.milestones.map((m, index) => {
                       const iconKind = m.icon ?? milestoneIconCycle[index % milestoneIconCycle.length]!;
                       return (
@@ -877,13 +895,39 @@ function HomeCompanyProfileSectionBlock({
                           </div>
                           <div className="relative mb-3 w-full overflow-hidden rounded-lg border border-[#1e3a5f]/10 bg-white shadow-sm">
                             <div className="relative aspect-[4/3] w-full">
-                              <Image
-                                src={m.image}
-                                alt=""
-                                fill
-                                className="object-cover object-center"
-                                sizes="(max-width: 640px) 88vw, (max-width: 1024px) 40vw, 18vw"
-                              />
+                              {m.logos && m.logos.length > 0 ? (
+                                <div className={`absolute inset-0 grid gap-1.5 p-2 bg-[#f4f4ea] ${m.logos.length <= 2 ? "grid-cols-2" : "grid-cols-2 grid-rows-2"}`}>
+                                  {m.logos.map((logo, i) => (
+                                    <div
+                                      key={i}
+                                      className={`relative flex items-center justify-center rounded-md border border-[#1e3a5f]/10 bg-white p-2 shadow-[0_2px_6px_-3px_rgba(15,22,36,0.18)] ${
+                                        m.logos!.length === 3 && i === 2 ? "col-span-2" : ""
+                                      }`}
+                                    >
+                                      <Image
+                                        src={logo}
+                                        alt=""
+                                        fill
+                                        className="object-contain p-2"
+                                        sizes="(max-width: 640px) 44vw, (max-width: 1024px) 20vw, 9vw"
+                                      />
+                                    </div>
+                                  ))}
+                                </div>
+                              ) : (() => {
+                                const isLogo = m.image.includes("logo");
+                                const fit = isLogo ? "object-contain" : "object-cover";
+                                const pos = isLogo ? "object-center" : index === 4 ? "object-left" : "object-center";
+                                return (
+                                  <Image
+                                    src={m.image}
+                                    alt=""
+                                    fill
+                                    className={`${fit} ${pos} ${isLogo ? "p-3" : ""}`}
+                                    sizes="(max-width: 640px) 88vw, (max-width: 1024px) 40vw, 18vw"
+                                  />
+                                );
+                              })()}
                             </div>
                           </div>
                           <p className={`font-mono-eng text-[11px] font-bold tracking-[0.14em] ${navy}`}>{m.year}</p>
@@ -934,7 +978,8 @@ function HomeCompanyProfileSectionBlock({
                       src={goalsAsidePath}
                       alt={section.goalsAsideImageAlt ?? ""}
                       fill
-                      className="object-cover object-center"
+                      className="object-cover"
+                      style={{ objectPosition: "center 25%" }}
                       sizes="(max-width: 1024px) 92vw, 400px"
                     />
                   </div>
@@ -970,11 +1015,11 @@ function HomeCompanyProfileSectionBlock({
               <div className="flex w-full justify-center pt-2">
                 <Link
                   href={`/${locale}/kurumsal`}
-                  className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
+                  className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                 >
                   <span>{viewAllCorporate}</span>
-                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </Link>
               </div>
@@ -1340,32 +1385,18 @@ function HomeProductCategoryCard({
   const hasFamilies = all.length > 0;
   const familiesText = all.join(" • ");
   const [detailSlide, setDetailSlide] = useState(0);
-
+  // Otomatik geçiş kapalı — sadece kullanıcı dot'a tıklayınca değişir.
   useEffect(() => {
-    if (!hasFamilies) {
-      setDetailSlide(0);
-      return;
-    }
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let intervalId: number | undefined;
-    const timeoutId = window.setTimeout(() => {
-      intervalId = window.setInterval(() => {
-        setDetailSlide((s) => (s + 1) % 2);
-      }, 4500);
-    }, 3200 + index * 650);
-    return () => {
-      window.clearTimeout(timeoutId);
-      if (intervalId !== undefined) window.clearInterval(intervalId);
-    };
-  }, [hasFamilies, index]);
+    if (!hasFamilies) setDetailSlide(0);
+  }, [hasFamilies]);
 
   return (
     <Link
       href={`/${locale}${href}`}
-      className="group relative flex h-[19.5rem] min-h-0 w-full flex-col overflow-hidden rounded-2xl bg-white shadow-[0_14px_42px_-22px_rgba(15,22,36,0.16)] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_22px_52px_-22px_rgba(15,22,36,0.22)] sm:h-[22rem]"
+      className="group relative flex h-[23rem] min-h-0 w-full flex-col overflow-hidden rounded-2xl bg-white shadow-[0_14px_42px_-22px_rgba(15,22,36,0.16)] transition-[transform,box-shadow] duration-300 [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:shadow-[0_22px_52px_-22px_rgba(15,22,36,0.22)] sm:h-[26rem]"
     >
       {/* Üst görsel + numara tag */}
-      <div className="relative h-[7.25rem] w-full shrink-0 overflow-hidden bg-[#2a3140] sm:h-[8rem]">
+      <div className="relative h-[7.25rem] w-full shrink-0 overflow-hidden bg-[#f8f5ed] sm:h-[8rem]">
         <Image
           src={image}
           alt={title}
@@ -1395,58 +1426,57 @@ function HomeProductCategoryCard({
           {title}
         </h3>
 
-        {/* Slayt alanı — açıklama ↔ ürün aileleri, yumuşak cross-fade */}
-        <div className="mt-2 flex min-h-0 flex-1 gap-2 overflow-hidden sm:mt-2.5 sm:gap-2.5">
-          {hasFamilies ? (
-            <div
-              className="flex w-2 shrink-0 flex-col items-start justify-center gap-1.5 self-stretch py-0.5"
-              role="tablist"
-              aria-label="Kart içeriği"
-              aria-orientation="vertical"
+        {/* Slayt alanı — açıklama ↔ ürün aileleri */}
+        <div className="mt-2 min-h-0 flex-1 overflow-hidden sm:mt-2.5" aria-live="polite">
+          {!hasFamilies || detailSlide === 0 ? (
+            <p
+              key="desc"
+              className="product-card-clamp-desc m-0 text-[12.5px] leading-[1.5] text-secondary/80 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[13px]"
             >
-              {([0, 1] as const).map((slideIndex) => (
-                <button
-                  key={slideIndex}
-                  type="button"
-                  role="tab"
-                  aria-selected={detailSlide === slideIndex}
-                  aria-label={slideIndex === 0 ? "Açıklama" : "Ürün aileleri"}
-                  onPointerDown={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    setDetailSlide(slideIndex);
-                  }}
-                  className={`shrink-0 rounded-full transition-[height,background-color,opacity] duration-300 motion-reduce:transition-none ${
-                    detailSlide === slideIndex
-                      ? "h-3 w-1.5 bg-primary opacity-100"
-                      : "h-1.5 w-1.5 bg-primary/35 hover:bg-primary/55"
-                  }`}
-                />
-              ))}
-            </div>
-          ) : null}
-          <div className="min-h-0 min-w-0 flex-1 overflow-hidden" aria-live="polite">
-            {!hasFamilies || detailSlide === 0 ? (
-              <p
-                key="desc"
-                className="product-card-clamp-desc m-0 text-[12.5px] leading-[1.5] text-secondary/80 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[13px]"
-              >
-                {description}
-              </p>
-            ) : (
-              <p
-                key="fam"
-                className="product-card-clamp-families m-0 text-[10.5px] leading-[1.45] text-secondary/65 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[11px]"
-              >
-                {familiesText}
-              </p>
-            )}
-          </div>
+              {description}
+            </p>
+          ) : (
+            <p
+              key="fam"
+              className="product-card-clamp-families m-0 text-[10.5px] leading-[1.45] text-secondary/65 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[11px]"
+            >
+              {familiesText}
+            </p>
+          )}
         </div>
+
+        {/* Dots — alt, horizontal */}
+        {hasFamilies ? (
+          <div
+            className="mt-2 flex shrink-0 items-center justify-center gap-1.5"
+            role="tablist"
+            aria-label="Kart içeriği"
+          >
+            {([0, 1] as const).map((slideIndex) => (
+              <button
+                key={slideIndex}
+                type="button"
+                role="tab"
+                aria-selected={detailSlide === slideIndex}
+                aria-label={slideIndex === 0 ? "Açıklama" : "Ürün aileleri"}
+                onPointerDown={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setDetailSlide(slideIndex);
+                }}
+                className={`shrink-0 rounded-full transition-[width,background-color,opacity] duration-300 motion-reduce:transition-none ${
+                  detailSlide === slideIndex
+                    ? "h-1.5 w-5 bg-primary opacity-100"
+                    : "h-1.5 w-1.5 bg-primary/35 hover:bg-primary/55"
+                }`}
+              />
+            ))}
+          </div>
+        ) : null}
 
         <span
           className="inline-flex shrink-0 items-center gap-2 pt-2 text-[10px] font-bold uppercase tracking-[0.14em] text-primary transition-colors duration-300 sm:pt-2.5 sm:text-[11px] [@media(hover:hover)]:group-hover:text-primary-deep"
@@ -1748,14 +1778,80 @@ function pillarStepLabel(tag: string): string {
   return stripped || tag;
 }
 
-/** Referans — yumuşak şeftali tonu büyük adım numaraları için */
-const PILLAR_STEP_NUM_COLOR = "#e8c5b0";
+/** Referans — büyük adım numaraları yumuşak şeftali (mockup tonu) */
+const PILLAR_STEP_NUM_COLOR = "#f5b483";
 
 const pillarNumberPositions = [
-  "lg:left-0 lg:top-0",
-  "lg:right-0 lg:top-0",
-  "lg:left-0 lg:bottom-0",
+  "lg:-left-[8%] lg:top-0",
+  "lg:-right-[8%] lg:top-0",
+  "lg:-left-[8%] lg:top-0",
 ] as const;
+
+/**
+ * Pillar video player — paralelogram clip içine sığan custom kontroller.
+ * Native HTML5 controls clipPath ile kesilir, bunun yerine merkezi play/pause overlay.
+ */
+function PillarVideoPlayer({
+  src,
+  poster,
+  label,
+}: {
+  src: string;
+  poster: string;
+  label: string;
+}) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [playing, setPlaying] = useState(false);
+
+  const toggle = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) v.play().catch(() => {});
+    else v.pause();
+  };
+
+  return (
+    <>
+      <video
+        ref={videoRef}
+        src={src}
+        poster={poster}
+        playsInline
+        loop
+        preload="metadata"
+        aria-label={label}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        onEnded={() => setPlaying(false)}
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+      {/* Click-to-pause genel kapak — video çalarken */}
+      {playing && (
+        <button
+          type="button"
+          onClick={toggle}
+          aria-label="Duraklat"
+          className="absolute inset-0 z-10 cursor-pointer bg-transparent"
+        />
+      )}
+      {/* Büyük merkez play butonu — duraklı iken görünür */}
+      {!playing && (
+        <button
+          type="button"
+          onClick={toggle}
+          aria-label={`${label} — oynat`}
+          className="group/play absolute left-1/2 top-1/2 z-20 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-primary shadow-[0_18px_40px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white"
+        >
+          <svg className="ml-1 h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+      )}
+    </>
+  );
+}
 
 function HomeEngineeringPillarsJourneyStrip({
   pillars,
@@ -1775,7 +1871,7 @@ function HomeEngineeringPillarsJourneyStrip({
 
   return (
     <div id="pillars-journey" className="mt-12 scroll-mt-24 md:scroll-mt-[5.5rem]">
-      <div className="relative overflow-hidden rounded-[1.75rem] bg-sand-100 px-5 py-10 shadow-[0_30px_80px_-44px_rgba(15,22,36,0.22)] ring-1 ring-ink/[0.06] sm:rounded-[2.25rem] sm:px-9 sm:py-14 lg:px-14 lg:py-[4.5rem]">
+      <div className="relative bg-sand-100 px-5 py-10 sm:px-9 sm:py-14 lg:px-14 lg:py-[4.5rem]">
         <header className="mb-14 sm:mb-16 lg:mb-20">
           <h2
             className="font-black uppercase text-ink"
@@ -1811,25 +1907,31 @@ function HomeEngineeringPillarsJourneyStrip({
               <span
                 key="num"
                 aria-hidden
-                className={`pointer-events-none absolute hidden select-none font-home-display font-bold lg:block lg:opacity-[0.82] ${numberPos}`}
+                className={`pointer-events-none absolute hidden select-none font-home-display font-light xl:block ${numberPos}`}
                 style={{
-                  fontSize: "clamp(8rem, 22vw, 22rem)",
+                  fontSize: "clamp(20rem, 30vw, 30rem)",
                   lineHeight: 0.82,
-                  color: PILLAR_STEP_NUM_COLOR,
-                  letterSpacing: "-0.05em",
-                  mixBlendMode: "multiply",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  letterSpacing: "-0.07em",
+                  transform: "scaleX(0.92)",
+                  transformOrigin: "left center",
                   zIndex: 0,
                   WebkitFontSmoothing: "antialiased",
                   textRendering: "geometricPrecision",
-                  WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 40%, rgba(0,0,0,0.35) 75%, rgba(0,0,0,0.15) 100%)",
-                  maskImage: "linear-gradient(to bottom, black 0%, black 40%, rgba(0,0,0,0.35) 75%, rgba(0,0,0,0.15) 100%)",
+                  backgroundImage: "linear-gradient(180deg, #ef5f17 0%, #f5a06f 50%, #fad5b8 100%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  WebkitTextFillColor: "transparent",
                 }}
               >
                 {num}
               </span>
             );
 
-            /* ── Desktop: görsel ── */
+            /* ── Desktop: görsel (pillar 01 için DJI video) ── */
             const imageBlock = (
               <Link
                 key="img"
@@ -1837,16 +1939,28 @@ function HomeEngineeringPillarsJourneyStrip({
                 className="group relative z-10 hidden w-full lg:col-start-2 lg:col-end-3 lg:block"
               >
                 <div
-                  className="relative h-[20rem] w-full overflow-hidden shadow-[0_24px_56px_-22px_rgba(15,22,36,0.28)]"
-                  style={{ clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)" }}
+                  className="relative h-[26rem] w-full overflow-hidden shadow-[0_24px_56px_-22px_rgba(15,22,36,0.28)] xl:h-[28rem]"
+                  style={{
+                    clipPath: isOdd
+                      ? "polygon(0 0, 88% 0, 100% 100%, 12% 100%)"
+                      : "polygon(12% 0, 100% 0, 88% 100%, 0 100%)",
+                  }}
                 >
-                  <Image
-                    src={img}
-                    alt={pillar.title}
-                    fill
-                    sizes="48vw"
-                    className="object-cover object-center transition-transform duration-700 ease-out [transform:scale(1.02)] group-hover:[transform:scale(1.05)]"
-                  />
+                  {pillarVideos[index] ? (
+                    <PillarVideoPlayer
+                      src={pillarVideos[index]!.src}
+                      poster={pillarVideos[index]!.poster}
+                      label={pillar.title}
+                    />
+                  ) : (
+                    <Image
+                      src={img}
+                      alt={pillar.title}
+                      fill
+                      sizes="48vw"
+                      className="object-cover object-center transition-transform duration-700 ease-out [transform:scale(1.02)] group-hover:[transform:scale(1.05)]"
+                    />
+                  )}
                 </div>
               </Link>
             );
@@ -1867,15 +1981,18 @@ function HomeEngineeringPillarsJourneyStrip({
                   className="mt-3 font-black uppercase text-ink"
                   style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)", lineHeight: 1.08, letterSpacing: "-0.015em" }}
                 >
-                  {pillar.title}
+                  {pillar.title.replace(/\.$/, "")}
+                  <span className="text-primary">.</span>
                 </h3>
                 <p className="mt-5 text-[15px] leading-[1.7] text-secondary/75">{pillar.intro}</p>
                 <Link
                   href={pillarHref}
-                  className="mt-7 inline-flex items-center gap-3 bg-primary px-7 py-4 text-[13px] font-semibold tracking-wide text-white transition-colors duration-300 hover:bg-ink"
+                  className="group mt-7 inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                 >
                   {pillarCta}
-                  <span aria-hidden className="text-base leading-none">→</span>
+                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
                 </Link>
               </div>
             );
@@ -1884,16 +2001,8 @@ function HomeEngineeringPillarsJourneyStrip({
             const mobileCard = (
               <div key="mobile" className="block lg:hidden">
                 <div className="flex items-start gap-4">
-                  {/* Turuncu sayı */}
-                  <span
-                    aria-hidden
-                    className="shrink-0 font-home-display font-black leading-none text-primary"
-                    style={{ fontSize: "clamp(3rem, 13vw, 3.75rem)", letterSpacing: "-0.04em" }}
-                  >
-                    {num}
-                  </span>
                   {/* İçerik */}
-                  <div className="flex-1 pt-1">
+                  <div className="flex-1">
                     <p className="text-[11px] font-semibold uppercase tracking-widest text-secondary/60">
                       {stepLabel}
                     </p>
@@ -1901,15 +2010,18 @@ function HomeEngineeringPillarsJourneyStrip({
                       className="mt-1 font-black uppercase text-ink"
                       style={{ fontSize: "clamp(1rem, 4.5vw, 1.2rem)", lineHeight: 1.1, letterSpacing: "-0.015em" }}
                     >
-                      {pillar.title}
+                      {pillar.title.replace(/\.$/, "")}
+                      <span className="text-primary">.</span>
                     </h3>
                     <p className="mt-2 text-[13px] leading-[1.65] text-secondary/70">{pillar.intro}</p>
                     <Link
                       href={pillarHref}
-                      className="mt-4 inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-[12px] font-semibold tracking-wide text-white transition-colors hover:bg-ink"
+                      className="group mt-4 inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                     >
                       {pillarCta}
-                      <span aria-hidden className="text-sm leading-none">→</span>
+                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
                     </Link>
                   </div>
                 </div>
@@ -1921,14 +2033,17 @@ function HomeEngineeringPillarsJourneyStrip({
                 key={`${index}-${pillar.tag}`}
                 className={`relative grid items-center gap-8 sm:gap-10 ${
                   isOdd
-                    ? "lg:grid-cols-[32%_minmax(0,1fr)_26%]"
-                    : "lg:grid-cols-[26%_minmax(0,1fr)_32%]"
+                    ? "lg:grid-cols-[26%_minmax(0,1fr)_14%]"
+                    : "lg:grid-cols-[14%_minmax(0,1fr)_26%]"
                 }`}
               >
                 {mobileCard}
-                {isOdd
-                  ? [contentBlock, imageBlock, numberBlock]
-                  : [numberBlock, imageBlock, contentBlock]}
+                <div className="hidden contents lg:contents">
+                  {isOdd
+                    ? [contentBlock, imageBlock]
+                    : [imageBlock, contentBlock]}
+                </div>
+                <div className="hidden xl:contents">{numberBlock}</div>
               </article>
             );
           })}
@@ -2271,18 +2386,11 @@ export default function HomeClient({
                       <p className={`mt-4 sm:mt-5 ${homeBodySecondary}`}>{dict.engineeringShowcase.body}</p>
                       <Link
                         href={`/${locale}/cozumler/cfd-muhendislik-danismanligi`}
-                        className="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-primary underline decoration-primary/35 underline-offset-[5px] transition-colors hover:text-primary/85 hover:decoration-primary/55 sm:mt-6"
+                        className="group mt-5 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30 sm:mt-6"
                       >
                         {dict.engineeringShowcase.cta}
-                        <svg
-                          className="h-4 w-4 shrink-0"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          aria-hidden
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                       </Link>
                     </div>
@@ -2359,11 +2467,11 @@ export default function HomeClient({
                         {item.title}
                       </h3>
                       <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{cardDesc}</p>
-                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(239, 95, 23,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep">
+                      <span className="mt-6 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
                         {ctaLabel}
-                        <span aria-hidden className="text-[0.85em] font-normal">
-                          →
-                        </span>
+                        <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
                       </span>
                     </div>
                   </Link>
@@ -2483,11 +2591,11 @@ export default function HomeClient({
                               </span>
                             </p>
                           ) : null}
-                          <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white shadow-[0_10px_22px_-12px_rgba(0,0,0,0.35)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep">
+                          <span className="mt-5 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
                             {explore}
-                            <span aria-hidden className="text-[0.9em] font-normal">
-                              →
-                            </span>
+                            <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
                           </span>
                         </div>
                       </Link>
@@ -2548,12 +2656,12 @@ export default function HomeClient({
                       <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                         {item.title}
                       </h3>
-                      <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{pc.certificateCardDesc}</p>
-                      <span className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(239, 95, 23,0.75)] transition-colors duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep">
+                      <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{item.desc ?? pc.certificateCardDesc}</p>
+                      <span className="mt-6 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
                         {ctaLabel}
-                        <span aria-hidden className="text-[0.85em] font-normal">
-                          →
-                        </span>
+                        <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
                       </span>
                     </div>
                   </Link>
@@ -2642,11 +2750,11 @@ export default function HomeClient({
                 <div className="flex w-full justify-center lg:col-start-2 lg:row-start-2">
                   <Link
                     href={`/${locale}/kurumsal`}
-                    className="btn-3d btn-3d-dark group inline-flex items-center gap-3 rounded-2xl border border-ink/15 bg-ink px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.24em] text-sand-100 transition-all duration-300 hover:border-primary hover:bg-primary"
+                    className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                   >
                     <span>{n.viewAll}</span>
-                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                   </Link>
                 </div>
@@ -2794,11 +2902,13 @@ export default function HomeClient({
                   <div className="relative overflow-hidden rounded-xl border border-white/[0.09] bg-[#0b1018] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
                     <div className="relative aspect-video">
                       <iframe
-                        src="https://www.youtube.com/embed/6pXFGhKW6Lw"
+                        src="https://www.youtube-nocookie.com/embed/6pXFGhKW6Lw?rel=0&modestbranding=1"
                         title={dict.video.iframeTitle}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
-                        className="h-full w-full"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        loading="lazy"
+                        className="absolute inset-0 h-full w-full border-0"
                       />
                     </div>
                   </div>
@@ -2966,7 +3076,7 @@ export default function HomeClient({
               <div className="mt-6 hidden flex-1 lg:block">
                 <div className="relative h-full min-h-[320px] w-full overflow-hidden rounded-2xl bg-[#0f1d33] ring-1 ring-ink/[0.08] shadow-[0_22px_46px_-28px_rgba(15,22,36,0.32)]">
                   <Image
-                    src="/images/faq-visual.jpg?v=3"
+                    src="/images/faq-visual.jpg?v=4"
                     alt={dict.faq.tag}
                     fill
                     sizes="(min-width: 1024px) 33vw, 100vw"
@@ -3078,19 +3188,22 @@ export default function HomeClient({
                     <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                       <Link
                         href={`/${locale}/iletisim`}
-                        className="btn-3d btn-3d-primary group inline-flex min-h-[3rem] items-center justify-center gap-2 rounded-xl bg-primary px-6 text-[13px] font-semibold text-white shadow-[0_12px_28px_-12px_rgba(239,95,23,0.55)] transition-colors duration-300 hover:bg-primary-deep sm:min-w-[11.5rem]"
+                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                       >
-                        <span>{dict.finalCta.requestQuote}</span>
-                        <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-0.5">
-                          →
-                        </span>
+                        {dict.finalCta.requestQuote}
+                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
                       </Link>
                       {dict.finalCta.callBack ? (
                         <Link
                           href={`/${locale}/iletisim`}
-                          className="btn-3d inline-flex min-h-[3rem] items-center justify-center rounded-xl border border-ink/[0.08] bg-white px-6 text-[13px] font-semibold text-ink shadow-[0_10px_28px_-18px_rgba(15,22,36,0.18)] transition-[border-color,box-shadow] duration-300 hover:border-primary/35 hover:shadow-[0_14px_32px_-18px_rgba(15,22,36,0.22)] sm:min-w-[11.5rem]"
+                          className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                         >
                           {dict.finalCta.callBack}
+                          <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                          </svg>
                         </Link>
                       ) : null}
                     </div>
@@ -3122,7 +3235,7 @@ export default function HomeClient({
 
                 <div className="relative hidden min-h-[22rem] lg:block">
                   <Image
-                    src={dict.finalCta.image ?? "/images/uretim.png"}
+                    src="/images/finalcta.png"
                     alt={dict.finalCta.title}
                     fill
                     className="object-cover object-center"

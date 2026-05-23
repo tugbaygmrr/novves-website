@@ -705,61 +705,84 @@
     {
       "title": "EN Sertifikaları",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/Efectis.png?v=2"
+      "image": "/images/certificates/Efectis.png?v=2",
+      "desc": "Duman ve ısı tahliye fanlarımızın EN standartlarına uygun performans belgelerine ulaşın."
     },
     {
       "title": "ISO Belgeleri",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/bsi9001.png?v=2"
+      "image": "/images/certificates/bsi9001.png?v=2",
+      "desc": "Kalite yönetimi ve kurumsal süreçlerimizi belgeleyen ISO sertifikalarımızı inceleyin."
     },
     {
       "title": "Kalite ve Uygunluk",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/iso-sertifika-mockup.png"
+      "image": "/images/certificates/iso-sertifika-mockup.png",
+      "desc": "Ürün güvenilirliğimizi, test süreçlerimizi ve uygunluk belgelerimizi görüntüleyin."
     }
   ],
   "companyProfileSection": {
-    "timelineIntro": "Yirmi yılı aşkın tecrübemizle duman tahliye, konfor iklimlendirme ve endüstriyel havalandırmada projeleri uçtan uca yönetiyor; üretimden sahaya kadar güvenilir mühendislik sunuyoruz.",
+    "timelineIntro": "On yılı aşkın tecrübemizle duman tahliye, konfor iklimlendirme ve endüstriyel havalandırmada projeleri uçtan uca yönetiyor; üretimden sahaya kadar güvenilir mühendislik sunuyoruz.",
     "timelineHeadlinePart1": "Yolculuğumuz ",
-    "timelineHeadlineEm1": "2004'te",
+    "timelineHeadlineEm1": "2019'da",
     "timelineHeadlinePart2": " başladı, bugün ",
     "timelineHeadlineEm2": "Türkiye'nin",
     "timelineHeadlinePart3": " dört bir yanındayız.",
     "milestones": [
       {
-        "year": "2004",
+        "year": "2019",
         "title": "Kuruluş",
-        "body": "İstanbul'da kurulduk.",
-        "image": "/images/corporate/novves-kurulus-bina.png?v=1",
+        "body": "Yalova Türkiye'de 150 m²'lik atölyede kurulduk.",
+        "image": "/images/corporate/novves-kurulus-bina.png?v=2",
         "icon": "flag"
       },
       {
-        "year": "2010",
-        "title": "Büyüme",
-        "body": "İlk hastane projemiz ile büyümeye başladık.",
-        "image": "/images/corporate/novves-buyume-bina.png?v=1",
+        "year": "2020",
+        "title": "İhracata Başlangıç",
+        "body": "İhracat operasyonlarımıza başladık.",
+        "image": "/images/corporate/novves-2020-jetfan.png?v=1",
         "icon": "chart"
       },
       {
-        "year": "2015",
-        "title": "Sertifikasyon",
-        "body": "Uluslararası standartlarda hizmet sunmaya başladık.",
-        "image": "/images/corporate/novves-sertifikasyon-iso9001.png?v=1",
+        "year": "2021",
+        "title": "Yeni Fabrika",
+        "body": "1.500 m² kapalı alanlı yeni fabrikamıza taşındık.",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
         "icon": "certificate"
       },
       {
-        "year": "2020",
-        "title": "Liderlik",
-        "body": "Sektör lideri olarak güvenin adresi olduk.",
-        "image": "/images/corporate/novves-liderlik.png?v=1",
+        "year": "2022",
+        "title": "Makine Yatırımları",
+        "body": "Yeni makine yatırımları ile üretim kapasitemizi büyüttük.",
+        "image": "/images/corporate/novves-gunumuz.png?v=2",
         "icon": "star"
       },
       {
-        "year": "2024",
-        "title": "Günümüz",
-        "body": "Türkiye'nin her yerinde, güçlü ekibimizle yanınızdayız.",
-        "image": "/images/corporate/novves-gunumuz.png?v=1",
+        "year": "2023",
+        "title": "Büyüyen Fabrika",
+        "body": "Üretim alanımız 3.000 m²'ye ulaştı.",
+        "image": "/images/corporate/novves-buyume-bina.png?v=2",
         "icon": "people"
+      },
+      {
+        "year": "2024",
+        "title": "Impeller Üretimi",
+        "body": "TÜBİTAK destekli kendi impeller üretimimize başladık.",
+        "image": "/images/corporate/tubitak-logo.png?v=1",
+        "icon": "star"
+      },
+      {
+        "year": "2025",
+        "title": "Markalaşma & Dijital Dönüşüm",
+        "body": "Microsoft Dynamics 365 ve Autodesk Inventor ile dijitalleştik; BSI ve ATEX sertifikalarımızı tamamladık.",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "logos": [
+          "/images/corporate/logo-2025-0.png?v=2",
+          "/images/corporate/logo-2025-1.png?v=2",
+          "/images/corporate/logo-2025-2.png?v=3",
+          "/images/corporate/logo-2025-3.png?v=3"
+        ],
+        "icon": "certificate"
       }
     ],
     "goalsTitle": "GELECEK HEDEFLERİMİZ",
@@ -782,7 +805,7 @@
         "body": "Yurt içi üretim ve servis ağımızı büyüterek her bölgede erişilebilir mühendislik desteği veriyoruz."
       }
     ],
-    "goalsAsideImage": "/images/page-hero/ekibimiz-company-profile-card.png?v=2",
+    "goalsAsideImage": "/images/page-hero/novves-vision.png?v=1",
     "goalsAsideImageAlt": "NOVVES ekibi",
     "bannerTitle": "Değişime ayak uyduruyor, geleceği şekillendiriyoruz.",
     "bannerLine1": "Geçmişten gelen tecrübemizi, bugünün ihtiyaçlarıyla birleştiriyoruz.",
@@ -802,7 +825,7 @@
     },
     {
       "href": "/kurumsal/ekibimiz",
-      "image": "/images/page-hero/ekibimiz-company-profile-card.png?v=1",
+      "image": "/images/page-hero/novves-vision.png?v=1",
       "title": "Ekibimiz"
     }
   ],

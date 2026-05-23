@@ -134,10 +134,13 @@ export function proxy(request: NextRequest) {
     pathname.startsWith("/images") ||
     pathname.startsWith("/certificate") ||
     pathname.startsWith("/animation") ||
+    pathname.startsWith("/models") ||
+    pathname.startsWith("/audio") ||
+    pathname.startsWith("/textures") ||
     pathname === "/icon.svg" ||
     pathname === "/robots.txt" ||
     pathname === "/sitemap.xml" ||
-    /\.(?:ico|png|jpg|jpeg|gif|webp|svg|txt|xml|mp4|pdf|woff2?)$/i.test(pathname)
+    /\.(?:ico|png|jpg|jpeg|gif|webp|svg|txt|xml|mp4|pdf|woff2?|glb|gltf|mp3|m4a|ogg|wav)$/i.test(pathname)
   ) {
     return NextResponse.next();
   }

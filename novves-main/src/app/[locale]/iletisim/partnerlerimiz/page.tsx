@@ -2,8 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n/config";
+import { ContactCta } from "@/components/contact-cta";
 import { getDictionary, hasLocale, type Locale } from "../../dictionaries";
-import { PartnerWorldMap, type PartnerPin } from "./partner-world-map";
+import { PartnerWorldMap } from "./partner-world-map";
+import { getLocalizedPartnerPins, getGlobeControlsCopy } from "./partner-globe-i18n";
 
 type PartnerPageCopy = {
   stats: Array<{ value: string; label: string }>;
@@ -52,7 +54,7 @@ const partnerPageCopyEn: PartnerPageCopy = {
     soonLabel: "Publishing",
     soonTitle: "Partner showcase coming very soon.",
     contactTag: "Contact",
-    contactTitle: "Write to us about partnerships or a project.",
+    contactTitle: "Reach out to NOVVES for new projects and partnership opportunities.",
     contactDesc:
       "Reach out for collaboration proposals and technical discussions; our team will respond as soon as possible.",
     contactForm: "Contact form",
@@ -92,7 +94,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Yayın takvimi",
     soonTitle: "Partner vitrini çok yakında.",
     contactTag: "İletişim",
-    contactTitle: "Partnerlik veya proje için bize yazın.",
+    contactTitle: "Yeni projeler ve partnerlik fırsatları için NOVVES'e ulaşın.",
     contactDesc:
       "İş birliği teklifleri ve teknik görüşmeler için doğrudan iletişime geçebilirsiniz; ekibimiz en kısa sürede dönüş yapar.",
     contactForm: "İletişim formu",
@@ -131,7 +133,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Publicación",
     soonTitle: "Vitrina de socios disponible muy pronto.",
     contactTag: "Contacto",
-    contactTitle: "Escríbanos sobre colaboraciones o un proyecto.",
+    contactTitle: "Contacta con NOVVES para nuevos proyectos y oportunidades de colaboración.",
     contactDesc:
       "Contacte para propuestas de colaboración y debates técnicos; nuestro equipo responderá lo antes posible.",
     contactForm: "Formulario de contacto",
@@ -169,7 +171,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "发布",
     soonTitle: "合作伙伴展示即将上线。",
     contactTag: "联系",
-    contactTitle: "欢迎就合作或项目与我们联系。",
+    contactTitle: "联系NOVVES，开启新项目与合作机会。",
     contactDesc: "如需合作方案与技术讨论，请直接联系；我们将尽快回复。",
     contactForm: "联系表单",
   },
@@ -206,7 +208,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "اشاعت",
     soonTitle: "شراکت داروں کی نمائش جلد۔",
     contactTag: "رابطہ",
-    contactTitle: "شراکت یا منصوبے کے بارے میں ہمیں لکھیں۔",
+    contactTitle: "نئے منصوبوں اور شراکت داری کے مواقع کے لیے NOVVES سے رابطہ کریں۔",
     contactDesc:
       "تعاون کی تجاویز اور تکنیکی بات چیت کے لیے رابطہ کریں؛ ہماری ٹیم جلد از جلد جواب دے گی۔",
     contactForm: "رابطہ فارم",
@@ -244,7 +246,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Publikatsiya",
     soonTitle: "Vitrina partnerov — sovsem skoro.",
     contactTag: "Kontakty",
-    contactTitle: "Pishite nam o partnerstve ili proekte.",
+    contactTitle: "Svyazhites s NOVVES po novym proektam i vozmozhnostyam partnerstva.",
     contactDesc:
       "Dlya predlozheniy o sotrudnichestve i tekhnicheskikh konsultatsiy obrashaytes napryamuyu; komanda otvetit v blizhayshiye sroki.",
     contactForm: "Forma kontakta",
@@ -282,7 +284,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "جدول النشر",
     soonTitle: "عرض الشركاء قريباً.",
     contactTag: "اتصل بنا",
-    contactTitle: "راسلنا للشراكة أو المشروع.",
+    contactTitle: "تواصل مع NOVVES لمشاريع جديدة وفرص الشراكة.",
     contactDesc:
       "لاقتراحات التعاون والمناقشات الفنية؛ سيجيب فريقنا في أقرب وقت.",
     contactForm: "نموذج الاتصال",
@@ -320,7 +322,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Veröffentlichung",
     soonTitle: "Partner-Vitrine demnächst.",
     contactTag: "Kontakt",
-    contactTitle: "Schreiben Sie uns zu Partnerschaft oder Projekt.",
+    contactTitle: "Kontaktieren Sie NOVVES für neue Projekte und Partnerschaftsmöglichkeiten.",
     contactDesc:
       "Für Kooperationsangebote und technische Gespräche erreichen Sie uns direkt; unser Team meldet sich zeitnah.",
     contactForm: "Kontaktformular",
@@ -358,7 +360,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Pubblicazione",
     soonTitle: "Vetrina partner in arrivo molto presto.",
     contactTag: "Contatti",
-    contactTitle: "Scrivici per partnership o progetti.",
+    contactTitle: "Contatta NOVVES per nuovi progetti e opportunità di partnership.",
     contactDesc:
       "Contattaci per proposte di collaborazione e confronti tecnici; il team risponderà al più presto.",
     contactForm: "Modulo contatti",
@@ -396,7 +398,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Publication",
     soonTitle: "Vitrine partenaires très bientôt.",
     contactTag: "Contact",
-    contactTitle: "Écrivez-nous pour un partenariat ou un projet.",
+    contactTitle: "Contactez NOVVES pour de nouveaux projets et opportunités de partenariat.",
     contactDesc:
       "Contactez-nous pour des propositions de collaboration et des échanges techniques ; notre équipe vous répondra dans les meilleurs délais.",
     contactForm: "Formulaire de contact",
@@ -434,7 +436,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Dərc",
     soonTitle: "Tərəfdaş vitrini tezliklə.",
     contactTag: "Əlaqə",
-    contactTitle: "Tərəfdaşlıq və ya layihə üçün yazın.",
+    contactTitle: "Yeni layihələr və tərəfdaşlıq fürsətləri üçün NOVVES ilə əlaqə saxlayın.",
     contactDesc:
       "Əməkdaşlıq təklifləri və texniki müzakirələr üçün əlaqə saxlayın; komandamız mümkün qədər tez cavab verəcək.",
     contactForm: "Əlaqə formu",
@@ -472,7 +474,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Жариялау",
     soonTitle: "Серіктестер витрасасы жақында.",
     contactTag: "Байланыс",
-    contactTitle: "Серіктестік немесе жоба туралы жазыңыз.",
+    contactTitle: "Жаңа жобалар және серіктестік мүмкіндіктері үшін NOVVES-ке хабарласыңыз.",
     contactDesc:
       "Ынтымақтастық ұсыныстары және техникалық талқылаулар үшін хабарласыңыз; командамыз мүмкіндігінше тез жауап береді.",
     contactForm: "Байланыс формасы",
@@ -510,7 +512,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Нашр",
     soonTitle: "Витринаи шарикон ба зудӣ.",
     contactTag: "Тамос",
-    contactTitle: "Дар бораи шарикӣ ё лоиҳа ба мо нависед.",
+    contactTitle: "Барои лоиҳаҳои нав ва имкониятҳои шарикӣ ба NOVVES муроҷиат кунед.",
     contactDesc:
       "Барои пешниҳоди ҳамкорӣ ва муҳокимаҳои техникӣ тамос гиред; дастаи мо ба зудӣ ҷавоб медиҳад.",
     contactForm: "Шакли тамос",
@@ -548,7 +550,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Publikavimas",
     soonTitle: "Partnerių vitrina netrukus.",
     contactTag: "Kontaktai",
-    contactTitle: "Rašykite apie partnerystę ar projektą.",
+    contactTitle: "Susisiekite su NOVVES dėl naujų projektų ir partnerystės galimybių.",
     contactDesc:
       "Kreipkitės dėl bendradarbiavimo pasiūlymų ir techninių diskusijų; mūsų komanda atsakys kaip įmanoma greičiau.",
     contactForm: "Kontaktų forma",
@@ -586,7 +588,7 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
     soonLabel: "Publikacja",
     soonTitle: "Witryna partnerów wkrótce.",
     contactTag: "Kontakt",
-    contactTitle: "Napisz do nas o partnerstwie lub projekcie.",
+    contactTitle: "Skontaktuj się z NOVVES w sprawie nowych projektów i możliwości partnerstwa.",
     contactDesc:
       "Skontaktuj się w sprawie propozycji współpracy i konsultacji technicznych; nasz zespół odpowie możliwie szybko.",
     contactForm: "Formularz kontaktowy",
@@ -615,19 +617,69 @@ const pageCopy: Record<Locale, PartnerPageCopy> = {
   ),
 } as Record<Locale, PartnerPageCopy>;
 
-// ---------------------------------------------------------------
-// PARTNER LİSTESİ — sonra firma adları/şehirleri buradan girilecek
-// `top` ve `left` değerleri haritadaki konum (yüzde olarak)
-// `defaultSelected: true` koyulan kart, sayfa açılışta turuncu seçili gelir
-// (kullanıcı başka bir kart tıklayınca seçim ona geçer)
-// ---------------------------------------------------------------
-const partnerPins: PartnerPin[] = [
-  { name: "Partner Adı", location: "Madrid, İspanya", top: "14%", left: "16%" },
-  { name: "Partner Adı", location: "Tianshui, Çin", top: "22%", left: "60%" },
-  { name: "Partner Adı", location: "Jeddah, S.Arabistan", top: "44%", left: "42%", defaultSelected: true },
-  { name: "Partner Adı", location: "Brasilia, Brezilya", top: "66%", left: "20%" },
-  { name: "Partner Adı", location: "Jakarta, Endonezya", top: "58%", left: "70%" },
-  { name: "Partner Adı", location: "İstanbul, Türkiye", top: "26%", left: "46%" },
+// Mockup'taki "iş birliği" gibi orta kelimeyi locale-specific vurgular
+const COLLAB_WORD: Record<string, string> = {
+  tr: "iş birliği",
+  en: "collaboration",
+  ru: "сотрудничества",
+  ar: "التعاون",
+  es: "colaboración",
+  zh: "协作",
+  ur: "تعاون",
+  de: "Zusammenarbeitsebenen",
+  it: "collaborazione",
+  fr: "collaboration",
+  az: "əməkdaşlıq",
+  kk: "ынтымақтастық",
+  tg: "ҳамкорӣ",
+  lt: "bendradarbiavimo",
+  pl: "współpracy",
+};
+
+function highlightMiddleWord(title: string, locale: string) {
+  const word = COLLAB_WORD[locale];
+  if (!word) return title;
+  const idx = title.toLowerCase().indexOf(word.toLowerCase());
+  if (idx < 0) return title;
+  return (
+    <>
+      {title.slice(0, idx)}
+      <span className="text-primary">{title.slice(idx, idx + word.length)}</span>
+      {title.slice(idx + word.length)}
+    </>
+  );
+}
+
+// Kart sağ üstüne yerleşen soluk dekoratif illustration'lar (box, gear, circuit)
+const cardDecorations = [
+  <svg key="0" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth={0.9} aria-hidden>
+    <path strokeLinejoin="round" d="M 60 32 L 92 47 L 92 80 L 60 95 L 28 80 L 28 47 Z" />
+    <path strokeLinejoin="round" d="M 60 32 L 60 64 L 28 47 M 60 64 L 92 47 M 60 64 L 60 95" />
+    <path opacity="0.55" strokeLinejoin="round" d="M 76 18 L 104 32 L 104 50 L 76 64 L 48 50 L 48 32 Z" />
+    <path opacity="0.55" d="M 76 18 L 76 47 L 48 32" />
+  </svg>,
+  <svg key="1" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth={0.9} aria-hidden>
+    <circle cx="60" cy="60" r="26" />
+    <circle cx="60" cy="60" r="12" />
+    {Array.from({ length: 10 }).map((_, i) => {
+      const a = (i * Math.PI) / 5;
+      const x1 = 60 + Math.cos(a) * 26;
+      const y1 = 60 + Math.sin(a) * 26;
+      const x2 = 60 + Math.cos(a) * 36;
+      const y2 = 60 + Math.sin(a) * 36;
+      return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} strokeLinecap="round" />;
+    })}
+  </svg>,
+  <svg key="2" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth={0.9} aria-hidden>
+    <path strokeLinecap="round" d="M 22 30 L 50 30 L 50 50 L 78 50 L 78 30 L 100 30" />
+    <path strokeLinecap="round" d="M 22 62 L 60 62 L 60 82 L 100 82" />
+    <path strokeLinecap="round" d="M 22 95 L 100 95" />
+    <circle cx="22" cy="30" r="2.5" fill="currentColor" />
+    <circle cx="78" cy="50" r="2.5" fill="currentColor" />
+    <circle cx="60" cy="62" r="2.5" fill="currentColor" />
+    <circle cx="100" cy="95" r="2.5" fill="currentColor" />
+    <circle cx="50" cy="30" r="1.6" opacity="0.5" />
+  </svg>,
 ];
 
 const pillarIcons = [
@@ -660,6 +712,8 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
   const dict = await getDictionary(locale);
   const t = dict.contact.partnerlerimiz;
   const copy = pageCopy[locale];
+  const partnerPins = getLocalizedPartnerPins(locale);
+  const globeLabels = getGlobeControlsCopy(locale);
 
   return (
     <main>
@@ -718,77 +772,140 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
         </div>
       </section>
 
-      <section className="bg-[#ecebe6] py-16 sm:py-20">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-6 max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{copy.highlightsLabel}</p>
-            <h2 className="mt-2 text-2xl font-bold text-dark sm:text-3xl">{copy.highlightsTitle}</h2>
-            <p className="mt-3 text-sm leading-relaxed text-secondary/55 sm:text-[15px]">{copy.highlightsDesc}</p>
+      <section className="bg-[#ecebe6] pt-16 sm:pt-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Section header — mockup tarzı */}
+          <div className="mb-10 max-w-4xl">
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-primary" />
+              <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">
+                {copy.highlightsLabel}
+              </span>
+              <span className="h-px w-24 bg-gradient-to-r from-primary to-transparent" />
+            </div>
+            <h2 className="text-3xl font-extrabold leading-[1.05] tracking-tight text-dark sm:text-4xl lg:text-[3rem]">
+              {highlightMiddleWord(copy.highlightsTitle, locale)}
+            </h2>
+            <div className="mt-5 flex gap-3">
+              <span className="w-[3px] shrink-0 self-stretch rounded-full bg-primary/80" />
+              <p className="max-w-2xl text-sm leading-relaxed text-secondary/55 sm:text-[15px]">
+                {copy.highlightsDesc}
+              </p>
+            </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-3">
+          {/* 3 büyük kart */}
+          <div className="grid gap-5 sm:grid-cols-3">
             {copy.highlights.map((item, i) => (
               <div
                 key={item.title}
-                className="group relative overflow-hidden rounded-xl border border-ink/10 bg-[#f8f5ed] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_16px_30px_-22px_rgba(15,20,30,0.35)]"
+                className="group relative overflow-hidden rounded-2xl bg-[#f8f5ed] p-7 shadow-[0_14px_28px_-22px_rgba(15,20,30,0.32)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_40px_-22px_rgba(15,20,30,0.4)] sm:p-8"
               >
-                <div className="absolute left-0 top-0 h-full w-1 bg-ink/10 transition-colors duration-300 group-hover:bg-primary" />
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-secondary/5 text-secondary/40 transition-colors duration-300 group-hover:bg-primary/10 group-hover:text-primary">
+                {/* Sağ üst dekoratif illustration */}
+                <div className="pointer-events-none absolute -right-2 -top-2 h-32 w-32 text-primary/25">
+                  {cardDecorations[i]}
+                </div>
+
+                {/* İkon — rounded square + glow */}
+                <div className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary shadow-[0_10px_20px_-10px_rgba(239,95,23,0.55)]">
                   {pillarIcons[i]}
                 </div>
-                <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary/90">{item.stat}</p>
-                <h3 className="mt-2 text-sm font-bold text-dark">{item.title}</h3>
-                <p className="mt-2 text-xs leading-relaxed text-secondary/45">{item.description}</p>
+
+                {/* Stat label */}
+                <p className="mt-6 text-[11px] font-bold uppercase tracking-[0.22em] text-primary">
+                  {item.stat}
+                </p>
+
+                {/* Title */}
+                <h3 className="mt-2 text-lg font-bold leading-snug text-dark sm:text-[19px]">
+                  {item.title}
+                </h3>
+
+                {/* Underline accent */}
+                <div className="mt-3 h-[2px] w-10 rounded-full bg-primary" />
+
+                {/* Description */}
+                <p className="mt-4 text-sm leading-relaxed text-secondary/50">{item.description}</p>
               </div>
             ))}
           </div>
 
-          <div className="mx-auto mt-12 max-w-6xl">
-            <div className="mb-6 text-center">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{copy.soonLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold text-dark sm:text-3xl">{copy.soonTitle}</h2>
-              <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-secondary/50">{t.comingSoonDesc}</p>
+          {/* Soon banner — mockup tarzı */}
+          <div className="relative mt-5 overflow-hidden rounded-2xl bg-[#f8f5ed] px-6 py-10 shadow-[0_14px_28px_-22px_rgba(15,20,30,0.32)] sm:px-12 sm:py-12">
+            {/* Sağ taraf — yumuşak akış çizgileri (faded) */}
+            <svg
+              className="pointer-events-none absolute inset-y-0 right-0 h-full w-2/5 text-primary opacity-25"
+              viewBox="0 0 400 200"
+              fill="none"
+              preserveAspectRatio="xMaxYMid slice"
+              aria-hidden
+            >
+              {Array.from({ length: 14 }).map((_, i) => {
+                const y = 12 + i * 14;
+                const phase = (i % 3) * 8;
+                return (
+                  <path
+                    key={i}
+                    d={`M -20 ${y} Q 100 ${y - 18 + phase}, 200 ${y - 2} T 420 ${y + 12}`}
+                    stroke="currentColor"
+                    strokeWidth="0.9"
+                    strokeLinecap="round"
+                    opacity={0.55}
+                  />
+                );
+              })}
+            </svg>
+
+            {/* Sol taraf — saat ikonu + orbital halkalar */}
+            <div className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 sm:left-10">
+              <div className="relative">
+                <div className="absolute -inset-7 rounded-full border border-primary/15" />
+                <div className="absolute -inset-4 rounded-full border border-primary/25" />
+                {/* Orbital parçacıklar */}
+                <span className="absolute -left-8 top-2 h-1.5 w-1.5 rounded-full bg-primary/70" />
+                <span className="absolute -right-7 -top-2 h-1 w-1 rounded-full bg-primary/50" />
+                <span className="absolute -left-6 -bottom-3 h-1 w-1 rounded-full bg-primary/40" />
+                <div className="absolute -inset-2 rounded-full bg-primary/15 blur-xl" />
+                <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-primary/15 text-primary shadow-[0_14px_30px_-12px_rgba(239,95,23,0.7)]">
+                  <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.7} stroke="currentColor" aria-hidden>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
             </div>
-            <PartnerWorldMap pins={partnerPins} />
+
+            {/* Orta içerik */}
+            <div className="relative mx-auto max-w-2xl text-center">
+              <div className="mb-3 flex items-center justify-center gap-3">
+                <span className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
+                <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-primary">
+                  {copy.soonLabel}
+                </span>
+                <span className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
+              </div>
+              <h2 className="text-2xl font-extrabold tracking-tight text-dark sm:text-[1.75rem]">
+                {copy.soonTitle.replace(/\.$/, "")}
+                <span className="text-primary">.</span>
+              </h2>
+              <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-secondary/55">
+                {t.comingSoonDesc}
+              </p>
+            </div>
           </div>
+        </div>
+
+        <div className="mt-10 w-full">
+          <PartnerWorldMap pins={partnerPins} labels={globeLabels} />
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-dark py-20">
-        <div
-          className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]"
-          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
-        />
-        <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{copy.contactTag}</p>
-          <h3 className="mt-3 text-xl font-bold text-white sm:text-2xl">{copy.contactTitle}</h3>
-          <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-white/40">{copy.contactDesc}</p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="mailto:info@novves.com"
-              className="group inline-flex items-center gap-2.5 rounded-lg bg-white/5 px-6 py-3 text-sm font-medium text-white ring-1 ring-white/10 transition-all duration-300 hover:bg-primary/20 hover:ring-primary/30"
-            >
-              <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" aria-hidden>
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
-              info@novves.com
-            </a>
-            <Link
-              href={`/${locale}/iletisim`}
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-            >
-              {copy.contactForm}
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ContactCta
+        locale={locale}
+        badge={copy.contactTag}
+        title={copy.contactTitle}
+        description={copy.contactDesc}
+        formCta={copy.contactForm}
+      />
     </main>
   );
 }

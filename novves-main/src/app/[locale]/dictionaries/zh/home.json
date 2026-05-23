@@ -188,6 +188,27 @@
       {
         "q": "你们提供售后支持吗？",
         "a": "我们提供全面的售后支持，包括调试、定期维护、备件供应和 24/7 技术服务。"
+      },
+      {
+        "q": "您是否提供项目特定的风机选型和系统设计？",
+        "a": "是。NOVVES 根据流量、压力、耐温性、使用场景、现场条件、自动化需求和标准要求评估每个项目。风机选型、布置、控制场景和辅助设备按项目逐一确定。",
+        "linkHref": "/muhendislik/projeye-ozel-fan-secimi",
+        "linkLabel": "Learn about project-specific fan selection →",
+        "linkAriaLabel": "Learn about NOVVES project-specific fan selection, flow-pressure assessment, fan layout and system design approach."
+      },
+      {
+        "q": "您为烟雾与热量排放系统提供哪些解决方案？",
+        "a": "NOVVES 通过 F300/F400 排烟风机、喷射风机系统、屋顶排烟风机、壁式风机、风阀、消声器以及基于场景的控制柜，提供集成的烟雾与热量排放解决方案。",
+        "linkHref": "/cozumler/duman-isi-tahliye-sistemleri",
+        "linkLabel": "Explore smoke and heat exhaust solutions →",
+        "linkAriaLabel": "Explore NOVVES smoke and heat exhaust solutions with F300/F400 fans, jet fan systems, dampers, silencers and control panels."
+      },
+      {
+        "q": "您提供售后支持吗？",
+        "a": "是。NOVVES 在交付后通过技术文件、调试协助、备件、维护指导和售后工程支持来支持客户，确保系统在现场安全、高效、可持续地运行。",
+        "linkHref": "/hizmetler/teknik-servis",
+        "linkLabel": "Explore our after-sales support process →",
+        "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
     ]
   },
@@ -325,23 +346,35 @@
       "title": "Adana Yureğir 100 Yataklı Hastane",
       "href": "/kurumsal/referanslar",
       "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+    },
+    {
+      "title": "工业设施",
+      "sector": "工业设施",
+      "example": "Eczacıbaşı 生产基地",
+      "projectCount": "6",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/endustriyel-aselsan-konya-hero.png?v=1",
+      "theme": "zinc"
     }
   ],
   "certificatePreview": [
     {
       "title": "EN 证书",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/Efectis.png?v=2"
+      "image": "/images/certificates/Efectis.png?v=2",
+      "desc": "查阅符合 EN 标准的烟雾与热量排放风机性能证书。"
     },
     {
       "title": "ISO文件",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/bsi9001.png?v=2"
+      "image": "/images/certificates/bsi9001.png?v=2",
+      "desc": "查阅记录我们质量管理与企业流程的 ISO 证书。"
     },
     {
       "title": "质量与合规性",
       "href": "/kurumsal/sertifikalar",
-      "image": "/images/certificates/iso-sertifika-mockup.png"
+      "image": "/images/certificates/iso-sertifika-mockup.png",
+      "desc": "查阅产品可靠性、测试流程及合规文件。"
     }
   ],
   "companyProfileCards": [
@@ -357,8 +390,480 @@
     },
     {
       "href": "/kurumsal/ekibimiz",
-      "image": "/images/page-hero/ekibimiz-company-profile-card.png?v=1",
+      "image": "/images/page-hero/novves-vision.png?v=1",
       "title": "我们的团队"
     }
+  ],
+  "companyProfileSection": {
+    "timelineIntro": "凭借十余年经验，我们端到端管理排烟、舒适空调和工业通风项目；从生产到现场提供可靠的工程服务。",
+    "timelineHeadlinePart1": "我们的旅程始于 ",
+    "timelineHeadlineEm1": "2019",
+    "timelineHeadlinePart2": " 年，如今我们遍布 ",
+    "timelineHeadlineEm2": "土耳其",
+    "timelineHeadlinePart3": " 各地。",
+    "milestones": [
+      {
+        "year": "2019",
+        "title": "成立",
+        "body": "在土耳其亚洛瓦 150 平方米的车间成立。",
+        "image": "/images/corporate/novves-kurulus-bina.png?v=2",
+        "icon": "flag"
+      },
+      {
+        "year": "2020",
+        "title": "出口开端",
+        "body": "开始出口业务。",
+        "image": "/images/corporate/novves-2020-jetfan.png?v=1",
+        "icon": "chart"
+      },
+      {
+        "year": "2021",
+        "title": "新工厂",
+        "body": "迁入 1,500 平方米封闭面积的新工厂。",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "icon": "certificate"
+      },
+      {
+        "year": "2022",
+        "title": "设备投资",
+        "body": "通过新设备投资扩大生产能力。",
+        "image": "/images/corporate/novves-gunumuz.png?v=2",
+        "icon": "star"
+      },
+      {
+        "year": "2023",
+        "title": "工厂成长",
+        "body": "生产面积达到 3,000 平方米。",
+        "image": "/images/corporate/novves-buyume-bina.png?v=2",
+        "icon": "people"
+      },
+      {
+        "year": "2024",
+        "title": "叶轮制造",
+        "body": "在 TÜBİTAK 支持下启动自有叶轮生产。",
+        "image": "/images/corporate/tubitak-logo.png?v=1",
+        "icon": "star"
+      },
+      {
+        "year": "2025",
+        "title": "品牌与数字化转型",
+        "body": "采用 Microsoft Dynamics 365 与 Autodesk Inventor；完成 BSI 与 ATEX 认证。",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "icon": "certificate",
+        "logos": [
+          "/images/corporate/logo-2025-0.png?v=2",
+          "/images/corporate/logo-2025-1.png?v=2",
+          "/images/corporate/logo-2025-2.png?v=3",
+          "/images/corporate/logo-2025-3.png?v=3"
+        ]
+      }
+    ],
+    "goalsTitle": "我们的未来目标",
+    "goalsIntro": "可持续、数字化与能力，是我们投资未来的三大轴心。我们沿着这一方向发展产品与服务，与合作伙伴共同创造长期价值。",
+    "goalsPillars": [
+      {
+        "title": "可持续解决方案",
+        "body": "通过高能效风机与系统设计降低碳足迹。"
+      },
+      {
+        "title": "技术与创新",
+        "body": "借助 CFD、自动化与智能控制提供可衡量的性能。"
+      },
+      {
+        "title": "人与发展",
+        "body": "通过持续培训与现场经验加强团队能力与客户支持。"
+      },
+      {
+        "title": "更广阔的土耳其",
+        "body": "扩展生产与服务网络，在每个地区提供工程支持。"
+      }
+    ],
+    "goalsAsideImage": "/images/page-hero/novves-vision.png?v=1",
+    "goalsAsideImageAlt": "NOVVES 团队",
+    "bannerTitle": "与变化同步，塑造未来。",
+    "bannerLine1": "我们将过往经验与当今需求结合。",
+    "bannerLine2": "我们共同为明天的通风与消防安全标准做准备。",
+    "bannerLogoAlt": "NOVVES HVAC"
+  },
+  "engineeringShowcase": {
+    "title": "CFD 支持的工程",
+    "subtitle": "让流动可见的工程",
+    "body": "我们的流程不是从产品选型开始，而是从理解建筑的气动行为开始。NOVVES 通过 CFD 分析模拟烟雾、热量和空气在结构内的运动；风机位置、流量、压力以及基于场景的运行逻辑均以工程数据进行设计与验证。",
+    "cta": "探索 CFD 流程"
+  },
+  "engineeringPillarsSection": {
+    "title": "从工程到现场",
+    "subtitle": "项目从头到尾的解决方案",
+    "lead": "NOVVES 不仅把项目视作产品供应。我们分析需求、设计正确的系统、进行生产，并使其在现场可实施。"
+  },
+  "homeBands": {
+    "solutionStripFeatureRows": [
+      [
+        {
+          "label": "Fire scenarios",
+          "desc": "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios."
+        },
+        {
+          "label": "Jet & natural",
+          "desc": "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies."
+        },
+        {
+          "label": "EN 12101 ready",
+          "desc": "Certified products and type-test documentation packaged for code reviews and inspections."
+        }
+      ],
+      [
+        {
+          "label": "Comfort band",
+          "desc": "Stable temperature–humidity bands for offices, hotels, and retail."
+        },
+        {
+          "label": "Acoustics",
+          "desc": "Low-SPL selections and isolation for shafts, façades, and plant rooms."
+        },
+        {
+          "label": "Energy & VRF",
+          "desc": "Flow and pressure planning coordinated with heat pumps and VRF systems."
+        }
+      ],
+      [
+        {
+          "label": "Room pressure",
+          "desc": "Positive/negative pressure cascades and leakage control to protect critical spaces."
+        },
+        {
+          "label": "HEPA & fine",
+          "desc": "Hospital, GMP, and food lines with filter classes and change-out strategies."
+        },
+        {
+          "label": "Monitoring",
+          "desc": "DP, humidity, and particle sensing with logging and alarms for compliance."
+        }
+      ],
+      [
+        {
+          "label": "Process airflow",
+          "desc": "High-temperature and abrasive-duty fans for drying, emission, and line pressure."
+        },
+        {
+          "label": "Dust & filters",
+          "desc": "Fan curves matched to dust loading, filter dp, and maintenance cycles."
+        },
+        {
+          "label": "Uptime",
+          "desc": "Standby fans, spare-part paths, and service access to shorten planned stops."
+        }
+      ],
+      [
+        {
+          "label": "Hazard zones",
+          "desc": "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas."
+        },
+        {
+          "label": "Spark-free",
+          "desc": "Ex d/m/e and compatible drives for explosive gas and dust atmospheres."
+        },
+        {
+          "label": "ATEX dossier",
+          "desc": "Risk study, technical file, and site marking ready for audits."
+        }
+      ],
+      [
+        {
+          "label": "Stocking density",
+          "desc": "Fresh-air and exhaust rates sized for headcount, season, and heat stress."
+        },
+        {
+          "label": "Gas & moisture",
+          "desc": "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts."
+        },
+        {
+          "label": "Corrosion tough",
+          "desc": "Materials and motor protection for wash-down and aggressive barn environments."
+        }
+      ],
+      [
+        {
+          "label": "Transformer heat",
+          "desc": "Cooling airflow sized for transformer and busbar losses with design margin."
+        },
+        {
+          "label": "Fire & smoke",
+          "desc": "Smoke exhaust and pressurisation coordinated with electrical infrastructure."
+        },
+        {
+          "label": "Utility specs",
+          "desc": "Product ranges aligned with OEM, utility, and IEC-oriented specifications."
+        }
+      ],
+      [
+        {
+          "label": "Tunnel & poly",
+          "desc": "Even velocity profiles and temperature stratification for tunnel and multi-span houses."
+        },
+        {
+          "label": "CO₂ & RH",
+          "desc": "Ventilation paired with humidification or dehumidification for crop response."
+        },
+        {
+          "label": "Seasonal energy",
+          "desc": "VFD and control strategies to trim fan energy across seasonal loads."
+        }
+      ],
+      [
+        {
+          "label": "Panels & logic",
+          "desc": "Central panels for fire, process, and comfort fans with clear interlocks."
+        },
+        {
+          "label": "BMS / SCADA",
+          "desc": "Modbus, BACnet, and site-wide automation interfaces and sequences."
+        },
+        {
+          "label": "Commissioning",
+          "desc": "Stepwise testing, handover scripts, and operator screens for maintenance."
+        }
+      ],
+      [
+        {
+          "label": "Shaft & wet rooms",
+          "desc": "Compact, low-noise units for central shafts, bathrooms, and kitchens."
+        },
+        {
+          "label": "Façade fit",
+          "desc": "Balcony and wall-mounted options that respect acoustic and architectural limits."
+        },
+        {
+          "label": "Energy labels",
+          "desc": "Efficiency classes aligned with residential regulations and running cost."
+        }
+      ],
+      [
+        {
+          "label": "Salt spray",
+          "desc": "Coatings and stainless options aligned with C4/C5 marine exposure classes."
+        },
+        {
+          "label": "Class society",
+          "desc": "Technical files and tests aligned with vessel class and offshore norms."
+        },
+        {
+          "label": "Redundancy",
+          "desc": "N+1 layouts and access paths for offshore availability and service."
+        }
+      ],
+      [
+        {
+          "label": "Custom geometry",
+          "desc": "Project-specific casings for tight footprints, flanges, and duct transitions."
+        },
+        {
+          "label": "Materials & weld",
+          "desc": "Stainless, aluminium, specials; weld and NDT procedures on request."
+        },
+        {
+          "label": "FAT & traceability",
+          "desc": "Factory acceptance testing with certificates and full material traceability."
+        }
+      ],
+      [
+        {
+          "label": "Smoke & visibility",
+          "desc": "3D smoke modelling for jet fan placement, visibility, and temperature fields."
+        },
+        {
+          "label": "Heat & contaminants",
+          "desc": "Distribution studies for kitchens, process exhaust, and waste heat."
+        },
+        {
+          "label": "Client-ready reports",
+          "desc": "Summaries, sections, and visuals for investors, AHJs, and design reviews."
+        }
+      ]
+    ],
+    "productStripFeatureRows": [
+      [
+        {
+          "label": "High performance",
+          "desc": "High airflow and thrust tailored to the application."
+        },
+        {
+          "label": "Durable",
+          "desc": "Reliable operation in industrial environments."
+        },
+        {
+          "label": "Quiet operation",
+          "desc": "Lower noise for comfortable spaces."
+        }
+      ],
+      [
+        {
+          "label": "Energy efficiency",
+          "desc": "Optimized consumption across the system."
+        },
+        {
+          "label": "Smart control",
+          "desc": "Integrated automation and monitoring."
+        },
+        {
+          "label": "Flexible solutions",
+          "desc": "Adaptable layouts for different buildings."
+        }
+      ],
+      [
+        {
+          "label": "High capacity",
+          "desc": "Cooling and heating power for large loads."
+        },
+        {
+          "label": "Reliable performance",
+          "desc": "Stable seasonal operation."
+        },
+        {
+          "label": "All-season use",
+          "desc": "Designed for year-round comfort and process needs."
+        }
+      ],
+      [
+        {
+          "label": "Modular design",
+          "desc": "Configurable air handling building blocks."
+        },
+        {
+          "label": "High efficiency",
+          "desc": "Heat recovery and fan efficiency options."
+        },
+        {
+          "label": "Smart monitoring",
+          "desc": "Visibility for operators and maintenance teams."
+        }
+      ],
+      [
+        {
+          "label": "Even distribution",
+          "desc": "Homogeneous airflow in the served zone."
+        },
+        {
+          "label": "Aesthetic design",
+          "desc": "Architect-friendly grilles and diffusers."
+        },
+        {
+          "label": "Easy installation",
+          "desc": "Practical mounting and commissioning on site."
+        }
+      ],
+      [
+        {
+          "label": "Filter classes",
+          "desc": "From coarse pre-filtration to fine and HEPA-grade options."
+        },
+        {
+          "label": "Indoor air quality",
+          "desc": "Cleaner supply air for comfort and critical applications."
+        },
+        {
+          "label": "Standards alignment",
+          "desc": "Selections aligned with hygiene and project specifications."
+        }
+      ],
+      [
+        {
+          "label": "Mounting & hardware",
+          "desc": "Dampers, supports, and accessories that complete the system."
+        },
+        {
+          "label": "Wide compatibility",
+          "desc": "Components matched to fans, ducts, and air devices."
+        },
+        {
+          "label": "Practical logistics",
+          "desc": "Straightforward sourcing for site schedules."
+        }
+      ],
+      [
+        {
+          "label": "Control & panels",
+          "desc": "Monitoring and control hardware for ventilation plants."
+        },
+        {
+          "label": "BMS integration",
+          "desc": "Signals and interfaces suited to building automation."
+        },
+        {
+          "label": "Field-ready kits",
+          "desc": "Practical layouts for installation and commissioning."
+        }
+      ],
+      [
+        {
+          "label": "Vibration suspension",
+          "desc": "Springs and isolators tuned to equipment loads."
+        },
+        {
+          "label": "Noise control",
+          "desc": "Reduced structure-borne and airborne noise paths."
+        },
+        {
+          "label": "Decoupled supports",
+          "desc": "Stable equipment mounting with controlled transfer."
+        }
+      ]
+    ]
+  },
+  "productCategoryFeatures": [
+    [
+      "Axial Box Fan Family",
+      "Ex-proof Fan Family",
+      "Industrial Centrifugal Fan Family",
+      "EC Motor Fan Systems Family",
+      "Roof Fan Family",
+      "Wall Fan Family",
+      "Bathroom Fan Family",
+      "Duct Fan Family",
+      "Cell Type Fan Family",
+      "Kitchen Ventilation Systems Family",
+      "Shelter Fan Family",
+      "Poultry Farm Ventilation System Family",
+      "Dust Collection Systems Family"
+    ],
+    [
+      "Air Handling Unit Family",
+      "Dehumidification Unit Family",
+      "Heat Recovery Unit Family",
+      "Explosion-proof Air Handling Unit (Ex-proof AHU)"
+    ],
+    [
+      "Compact, Packaged and Industrial Cooling Family",
+      "Heat Pump Outdoor Unit Family",
+      "Indoor Unit Family",
+      "Heating / Cooling Coils Family",
+      "Electric Heater Family",
+      "Heat Exchanger Family",
+      "Precision-controlled HVAC Family"
+    ],
+    [
+      "Damper Systems Family"
+    ],
+    [
+      "Grille and Diffuser Systems Family"
+    ],
+    [
+      "Filter and Filtration Elements Family"
+    ],
+    [
+      "Fan and HVAC Accessories Family"
+    ],
+    [
+      "Automation Panel Systems Family",
+      "PLC and Programmable Control Systems Family",
+      "Sensor and Detection Systems Family",
+      "Control Cards and Operator Panels Family",
+      "Timing and Control Devices Family",
+      "Power Electronics Systems Family",
+      "Panel Power and Switching Components Family"
+    ],
+    [
+      "Vibration Isolators Family"
+    ]
   ]
 }

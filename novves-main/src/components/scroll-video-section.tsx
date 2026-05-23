@@ -602,11 +602,11 @@ export function ScrollVideoSection({
           >
             <div
               ref={startCardSurfaceRef}
-              className="relative w-full overflow-hidden rounded-3xl border border-white/12 bg-[#0f1d33]/95 px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] sm:px-9 sm:py-8 [transform:translateZ(0)]"
+              className="relative w-full overflow-hidden rounded-[2rem] border border-white/8 bg-[#0f1d33]/95 px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55),0_0_96px_-12px_rgba(15,29,51,0.55)] sm:px-9 sm:py-8 [transform:translateZ(0)]"
               style={
                 {
                   backgroundColor: "rgb(15, 29, 51)",
-                  borderColor: "rgba(255,255,255,0.11)",
+                  borderColor: "rgba(255,255,255,0.06)",
                   color: "rgb(230, 230, 230)",
                   ["--c-title" as string]: "rgb(255, 255, 255)",
                   ["--c-sub" as string]: "rgb(209, 209, 209)",
@@ -615,100 +615,21 @@ export function ScrollVideoSection({
                 } as CSSProperties
               }
             >
-              <div className="pointer-events-none absolute inset-0 opacity-[0.12] blueprint-grid-light" aria-hidden />
-
-              {/* Footer ile aynı blueprint fan çizimi — sağ alt köşede, marka turuncusu %40 opaklık */}
-              <svg
-                viewBox="0 0 400 400"
-                className="pointer-events-none absolute -bottom-24 -right-24 h-[340px] w-[340px] text-primary/40 sm:h-[420px] sm:w-[420px]"
-                preserveAspectRatio="xMidYMid meet"
+              {/* Arka plan: global harita görseli — sağa yaslı, metin alanı için sol gradient maske */}
+              <div
+                className="pointer-events-none absolute inset-0 opacity-65"
+                style={{
+                  backgroundImage: "url('/images/world-map.png')",
+                  backgroundSize: "auto 110%",
+                  backgroundPosition: "calc(100% + 180px) calc(50% - 25px)",
+                  backgroundRepeat: "no-repeat",
+                }}
                 aria-hidden
-              >
-                <defs>
-                  <radialGradient id="startCardFanGlow" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="currentColor" stopOpacity="0.18" />
-                    <stop offset="55%" stopColor="currentColor" stopOpacity="0.05" />
-                    <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
-                  </radialGradient>
-                </defs>
-
-                {/* Soft halo */}
-                <circle cx="200" cy="200" r="190" fill="url(#startCardFanGlow)" />
-
-                {/* Dış halkalar */}
-                <g fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55">
-                  <circle cx="200" cy="200" r="188" />
-                  <circle cx="200" cy="200" r="178" strokeDasharray="2 4" />
-                  <circle cx="200" cy="200" r="160" />
-                  <circle cx="200" cy="200" r="140" strokeDasharray="3 3" opacity="0.4" />
-                </g>
-
-                {/* Cıvata noktaları (dış flanş) */}
-                <g fill="currentColor" opacity="0.7">
-                  {Array.from({ length: 24 }).map((_, i) => {
-                    const a = (i * Math.PI * 2) / 24;
-                    const r = 183;
-                    const cx = (200 + Math.cos(a) * r).toFixed(2);
-                    const cy = (200 + Math.sin(a) * r).toFixed(2);
-                    return <circle key={i} cx={cx} cy={cy} r="1.6" />;
-                  })}
-                </g>
-
-                {/* İç hub */}
-                <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.85">
-                  <circle cx="200" cy="200" r="42" />
-                  <circle cx="200" cy="200" r="30" />
-                  <circle cx="200" cy="200" r="14" />
-                </g>
-                <circle cx="200" cy="200" r="4" fill="currentColor" opacity="0.9" />
-
-                {/* Fan kanatları (9) */}
-                <g fill="currentColor" opacity="0.32" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.7">
-                  {Array.from({ length: 9 }).map((_, i) => {
-                    const rot = (i * 360) / 9;
-                    return (
-                      <path
-                        key={i}
-                        d="M200 158
-                           C 230 150, 252 142, 268 92
-                           C 244 110, 220 122, 200 140
-                           Z"
-                        transform={`rotate(${rot} 200 200)`}
-                      />
-                    );
-                  })}
-                </g>
-
-                {/* Kanat dış konturları (offset, derinlik için) */}
-                <g fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.55">
-                  {Array.from({ length: 9 }).map((_, i) => {
-                    const rot = (i * 360) / 9 + 20;
-                    return (
-                      <path
-                        key={i}
-                        d="M200 200 C 220 178, 248 158, 270 120"
-                        transform={`rotate(${rot} 200 200)`}
-                      />
-                    );
-                  })}
-                </g>
-
-                {/* Crosshair / yapım çizgileri */}
-                <g stroke="currentColor" strokeWidth="0.4" opacity="0.35" strokeDasharray="1 4">
-                  <line x1="200" y1="6" x2="200" y2="394" />
-                  <line x1="6" y1="200" x2="394" y2="200" />
-                  <line x1="60" y1="60" x2="340" y2="340" />
-                  <line x1="340" y1="60" x2="60" y2="340" />
-                </g>
-
-                {/* Köşe tick işaretleri */}
-                <g stroke="currentColor" strokeWidth="0.8" opacity="0.65">
-                  <path d="M196 8 v8 M200 8 v6 M204 8 v8" />
-                  <path d="M196 392 v-8 M200 392 v-6 M204 392 v-8" />
-                  <path d="M8 196 h8 M8 200 h6 M8 204 h8" />
-                  <path d="M392 196 h-8 M392 200 h-6 M392 204 h-8" />
-                </g>
-              </svg>
+              />
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0f1d33] via-[#0f1d33]/85 to-[#0f1d33]/10"
+                aria-hidden
+              />
 
               <p className="relative font-mono-eng text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--c-accent)" }}>
                 ● {startCard.badge}
@@ -762,15 +683,15 @@ export function ScrollVideoSection({
               </p>
 
               {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                <div className="relative mt-8 flex w-full flex-col items-stretch gap-3 min-[520px]:flex-row min-[520px]:flex-wrap min-[520px]:items-center">
+                <div className="relative mt-8 flex w-full flex-col items-stretch gap-3 min-[520px]:flex-row min-[520px]:flex-wrap min-[520px]:items-center min-[520px]:gap-5">
                   {startCard.ctaPrimary && (
                     <Link
                       href={`/${locale}/iletisim`}
-                      className="btn-3d btn-3d-dark group inline-flex items-center justify-center gap-2.5 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-5 py-3.5 text-[11px] font-medium uppercase tracking-[0.16em] text-white transition-all duration-300 hover:border-primary hover:bg-primary hover:shadow-[0_10px_24px_-10px_rgba(239, 95, 23,0.55)] min-[520px]:justify-start min-[520px]:whitespace-nowrap motion-reduce:transition-none sm:hover:-translate-y-[1px]"
+                      className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                     >
                       {startCard.ctaPrimary}
-                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
                     </Link>
                   )}
@@ -778,11 +699,11 @@ export function ScrollVideoSection({
                   {startCard.ctaSecondary && (
                     <Link
                       href={`/${locale}/urunler`}
-                      className="group inline-flex items-center justify-center gap-2.5 border-b border-white/45 pb-1 text-center text-[11px] font-medium uppercase tracking-[0.16em] text-white/88 transition-colors duration-300 min-[520px]:ml-auto min-[520px]:justify-start min-[520px]:whitespace-nowrap hover:border-primary hover:text-primary"
+                      className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                     >
                       {startCard.ctaSecondary}
-                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
                     </Link>
                   )}
@@ -831,10 +752,10 @@ export function ScrollVideoSection({
             className="pointer-events-none absolute inset-y-0 right-0 z-20 flex items-center pt-[130px]"
             style={{ opacity: 0 }}
           >
-            <div className="pointer-events-auto mr-6 w-[min(580px,42vw)] xl:mr-14">
+            <div className="pointer-events-auto mr-6 w-[min(580px,min(54vw,calc(100vw-2.5rem)))] xl:mr-14">
               <div
                 ref={endCardSurfaceRef}
-                className="relative overflow-hidden rounded-3xl border border-white/12 bg-[#0f1d33]/95 p-9 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55)] [transform:translateZ(0)]"
+                className="relative overflow-hidden rounded-[2rem] border border-white/8 bg-[#0f1d33]/95 px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55),0_0_96px_-12px_rgba(15,29,51,0.55)] sm:px-9 sm:py-8 [transform:translateZ(0)]"
                 style={
                   {
                     backgroundColor: "rgb(15, 29, 51)",
@@ -860,7 +781,7 @@ export function ScrollVideoSection({
                   <h3
                     className="mt-6 font-bold"
                     style={{
-                      fontSize: "clamp(2.4rem, 3.2vw, 3.6rem)",
+                      fontSize: "clamp(2.1rem, 2.8vw, 3.1rem)",
                       lineHeight: 0.95,
                       letterSpacing: "-0.02em",
                       color: "var(--c-title)",
@@ -870,7 +791,7 @@ export function ScrollVideoSection({
                   </h3>
 
                   <p
-                    className="mt-5 hidden max-w-[42ch] text-[13.5px] leading-[1.7] xl:block"
+                    className="mt-5 hidden text-[14px] leading-[1.7] xl:block"
                     style={{ color: "var(--c-sub)" }}
                   >
                     {endCard.desc}
@@ -886,7 +807,7 @@ export function ScrollVideoSection({
                       { v: endCard.spec3Value, l: endCard.spec3Label },
                     ].map((s) => (
                       <div key={s.l} className="flex min-w-0 flex-col py-4 pl-0 min-[900px]:pl-4 min-[900px]:first:pl-0">
-                        <p className="min-h-[2em] text-[1.8rem] font-bold leading-none" style={{ color: "var(--c-spec-v)" }}>
+                        <p className="min-h-[2em] text-[1.55rem] font-bold leading-none" style={{ color: "var(--c-spec-v)" }}>
                           {s.v}
                         </p>
                         <p
@@ -902,11 +823,11 @@ export function ScrollVideoSection({
                   {locale && productHref && (
                     <Link
                       href={`/${locale}${productHref}`}
-                      className="group mt-7 inline-flex items-center gap-3 rounded-2xl border border-[color:var(--cta-border)] bg-[var(--cta-bg)] px-6 py-3.5 text-[11px] font-medium uppercase tracking-[0.22em] text-[color:var(--cta-fg)] transition-colors duration-300 hover:border-primary hover:!bg-primary"
+                      className="group mt-7 inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                     >
                       {endCard.cta}
-                      <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
                     </Link>
                   )}
@@ -1230,60 +1151,22 @@ function MobileScrollSection({
             {startCard && (
               <div
                 ref={mobileStartPanelRef}
-                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#0f1d33]/94 px-5 pb-0 pt-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)]"
+                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-[1.5rem] border border-white/8 bg-[#0f1d33]/94 px-5 pb-0 pt-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55),0_0_72px_-10px_rgba(15,29,51,0.55)]"
                 style={{
                   opacity: isMobileMotion ? 1 : panelOpacity,
                   transform: isMobileMotion ? "translateY(0px)" : `translateY(-${panelLift}px)`,
                 }}
               >
-                <div className="pointer-events-none absolute inset-0 opacity-[0.12] blueprint-grid-light" aria-hidden />
-
-                {/* Footer-style blueprint fan — sağ alt köşe (desktop ile aynı) */}
-                <svg
-                  viewBox="0 0 400 400"
-                  className="pointer-events-none absolute -bottom-20 -right-20 h-[260px] w-[260px] text-primary/40"
-                  preserveAspectRatio="xMidYMid meet"
+                {/* Arka plan: global harita görseli — metin okunabilirliği için karanlık overlay */}
+                <div
+                  className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-55"
+                  style={{ backgroundImage: "url('/images/world-map.png')" }}
                   aria-hidden
-                >
-                  <defs>
-                    <radialGradient id="mobileFanGlow" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stopColor="currentColor" stopOpacity="0.18" />
-                      <stop offset="55%" stopColor="currentColor" stopOpacity="0.05" />
-                      <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
-                    </radialGradient>
-                  </defs>
-                  <circle cx="200" cy="200" r="190" fill="url(#mobileFanGlow)" />
-                  <g fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55">
-                    <circle cx="200" cy="200" r="188" />
-                    <circle cx="200" cy="200" r="178" strokeDasharray="2 4" />
-                    <circle cx="200" cy="200" r="160" />
-                  </g>
-                  <g fill="currentColor" opacity="0.7">
-                    {Array.from({ length: 18 }).map((_, i) => {
-                      const a = (i * Math.PI * 2) / 18;
-                      const cx2 = (200 + Math.cos(a) * 183).toFixed(2);
-                      const cy2 = (200 + Math.sin(a) * 183).toFixed(2);
-                      return <circle key={i} cx={cx2} cy={cy2} r="1.6" />;
-                    })}
-                  </g>
-                  <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.85">
-                    <circle cx="200" cy="200" r="42" />
-                    <circle cx="200" cy="200" r="30" />
-                  </g>
-                  <circle cx="200" cy="200" r="4" fill="currentColor" opacity="0.9" />
-                  <g fill="currentColor" opacity="0.32" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.7">
-                    {Array.from({ length: 9 }).map((_, i) => {
-                      const rot = (i * 360) / 9;
-                      return (
-                        <path
-                          key={i}
-                          d="M200 158 C 230 150, 252 142, 268 92 C 244 110, 220 122, 200 140 Z"
-                          transform={`rotate(${rot} 200 200)`}
-                        />
-                      );
-                    })}
-                  </g>
-                </svg>
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#0f1d33]/92 via-[#0f1d33]/70 to-[#0f1d33]/30"
+                  aria-hidden
+                />
 
                 <p className="relative font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">● {startCard.badge}</p>
                 <h2 className="relative mt-3 text-white">
@@ -1301,26 +1184,26 @@ function MobileScrollSection({
 
                 {/* CTAs — desktop ile aynı: primary teklif al + secondary ürünleri keşfet */}
                 {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                  <div className="relative mt-5 flex flex-col gap-2.5">
+                  <div className="relative mt-5 flex flex-col gap-3.5">
                     {startCard.ctaPrimary && (
                       <Link
                         href={`/${locale}/iletisim`}
-                        className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-[#1e1e22]/90 px-4 py-3 text-[10.5px] font-medium uppercase tracking-[0.16em] text-white transition-all duration-300 hover:border-primary hover:bg-primary"
+                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                       >
                         {startCard.ctaPrimary}
-                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                       </Link>
                     )}
                     {startCard.ctaSecondary && (
                       <Link
                         href={`/${locale}/urunler`}
-                        className="group inline-flex items-center justify-center gap-2 border-b border-white/45 pb-1 text-center text-[10.5px] font-medium uppercase tracking-[0.16em] text-white/88 transition-colors duration-300 hover:border-primary hover:text-primary"
+                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
                       >
                         {startCard.ctaSecondary}
-                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                       </Link>
                     )}

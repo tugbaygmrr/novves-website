@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef, useEffect, useMemo } from "react";
 import { LanguageSwitcher } from "./language-switcher";
+import { MusicToggle } from "./music-toggle";
 import {
   COOKIE_CONSENT_EVENT,
   isConsentRestrictedMinimal,
@@ -353,41 +354,38 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible border-b border-ink/12 bg-sand-100/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
+      className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible border-b border-ink/12 bg-sand-200/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
     >
-      <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between overflow-visible px-6 sm:px-8 lg:px-10">
-        {/* Logo + slogan */}
-        <Link href={`/${locale}`} className="flex flex-shrink-0 flex-col items-start leading-none">
+      <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between overflow-visible pl-6 pr-2 sm:pl-8 sm:pr-3 lg:pl-10 lg:pr-4">
+        {/* Logo (tagline görselin içinde) */}
+        <Link href={`/${locale}`} className="flex flex-shrink-0 items-center leading-none">
           <Image
-            src={inverted ? "/images/novves-footer-logo.svg" : "/images/novves-logo.svg"}
-            alt="Novves"
-            width={120}
-            height={32}
+            src="/images/novves-logo.png?v=2"
+            alt="Novves — Born to Flow. Shaping the Invisible"
+            width={256}
+            height={96}
             priority
-            className="h-7 w-auto"
+            className="h-16 w-auto lg:h-[4.5rem] xl:h-20 2xl:h-24"
           />
-          <span className="mt-1 whitespace-nowrap text-[9px] font-light tracking-[0.18em] text-secondary/65">
-            BORN TO FLOW. <span className="italic tracking-normal">Shaping the Invisible</span>
-          </span>
         </Link>
 
-        {/* Desktop â€” ortada, geniÅŸ aralÄ±klÄ± */}
-        <ul className="hidden min-w-0 flex-1 items-center justify-center gap-1 overflow-visible lg:flex">
+        {/* Desktop — ortada, geniş aralıklı */}
+        <ul className="hidden min-w-0 flex-1 items-center justify-center gap-0 overflow-visible lg:flex xl:gap-1">
           {menus.map((menu) => (
             <li
               key={menu.label}
-              className="relative"
+              className="relative min-w-0"
               onMouseEnter={() => handleEnter(menu.label)}
               onMouseLeave={handleLeave}
             >
               <button
                 type="button"
-                className={`inline-flex items-center gap-1.5 px-4 py-2 text-[14px] font-semibold tracking-normal transition-colors duration-200 ${
+                className={`inline-flex max-w-full items-center gap-0.5 truncate px-1.5 py-2 text-[11px] font-medium tracking-normal transition-colors duration-200 lg:text-[12px] xl:gap-1 xl:px-2 xl:text-[13px] 2xl:gap-1.5 2xl:px-3 2xl:text-[14px] ${
                   openMenu === menu.label
                     ? "text-primary"
                     : inverted
-                      ? "text-white/72 hover:text-white"
-                      : "text-secondary/70 hover:text-dark"
+                      ? "text-white/80 hover:text-white"
+                      : "text-neutral-700 hover:text-neutral-900"
                 }`}
               >
                 {menu.label}
@@ -536,40 +534,67 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
         </ul>
 
         {/* CTA buttons */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1.5 2xl:gap-3">
+          <MusicToggle inverted={inverted} />
           <LanguageSwitcher locale={locale} inverted={inverted} />
           {!consentRestricted && (
           <a
             href="https://perfectusair.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`hidden items-center gap-1.5 rounded-full border px-5 py-2 text-[10px] font-medium uppercase tracking-[0.12em] transition-all duration-300 lg:inline-flex ${
+            className={`group relative hidden h-8 w-[140px] items-center justify-center gap-1.5 overflow-visible rounded-full border text-[10px] font-medium uppercase tracking-[0.12em] transition-all duration-300 hover:border-transparent hover:bg-transparent lg:inline-flex ${
               inverted
-                ? "border-white/10 bg-white/[0.03] text-white/72 hover:border-white/20 hover:text-white"
-                : "border-secondary/15 text-secondary/60 hover:border-primary hover:text-primary"
+                ? "border-white/10 bg-white/[0.03] text-white/72 hover:text-white"
+                : "border-secondary/15 text-neutral-700 hover:text-primary"
             }`}
           >
-            <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            {dict.navbar.fanSelector}
+            {/* Default: ikon + yazı */}
+            <span className="flex items-center gap-1.5 transition-opacity duration-200 group-hover:opacity-0">
+              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              {dict.navbar.fanSelector}
+            </span>
+            {/* Hover: Perfectus logosu butonu tamamen kaplar */}
+            <Image
+              src="/images/perfectus-preview.png"
+              alt="Perfectus"
+              width={210}
+              height={44}
+              className="pointer-events-none absolute left-1/2 top-1/2 h-auto w-[155px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+            />
           </a>
           )}
           <a
             href="https://wa.me/905444674752"
             target="_blank"
             rel="noopener noreferrer"
-            className={`hidden items-center gap-1.5 rounded-full border px-5 py-2 text-[10px] font-medium uppercase tracking-[0.12em] transition-all duration-300 lg:inline-flex ${
+            className={`hidden items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[10px] font-medium uppercase tracking-[0.08em] transition-all duration-300 lg:inline-flex xl:px-3 xl:tracking-[0.1em] 2xl:px-4 2xl:py-2 2xl:tracking-[0.12em] ${
               inverted
                 ? "border-white/10 bg-white/[0.03] text-white/72 hover:border-white/20 hover:text-white"
-                : "border-secondary/15 text-secondary/60 hover:border-primary hover:text-primary"
+                : "border-secondary/15 text-neutral-700 hover:border-primary hover:text-primary"
             }`}
           >
             <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
             WhatsApp
+          </a>
+          <a
+            href="https://t.me/+905444674752"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`hidden items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[10px] font-medium uppercase tracking-[0.08em] transition-all duration-300 lg:inline-flex xl:px-3 xl:tracking-[0.1em] 2xl:px-4 2xl:py-2 2xl:tracking-[0.12em] ${
+              inverted
+                ? "border-white/10 bg-white/[0.03] text-white/72 hover:border-white/20 hover:text-white"
+                : "border-secondary/15 text-neutral-700 hover:border-primary hover:text-primary"
+            }`}
+          >
+            <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+            Telegram
           </a>
 
           {/* Mobile toggle */}
@@ -668,17 +693,30 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                 {dict.navbar.fanSelector}
               </a>
               )}
-              <a
-                href="https://wa.me/905444674752"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] py-3 text-sm font-semibold text-white"
-              >
-                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                WhatsApp
-              </a>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href="https://wa.me/905444674752"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] py-3 text-sm font-semibold text-white"
+                >
+                  <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <a
+                  href="https://t.me/+905444674752"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[#229ED9] py-3 text-sm font-semibold text-white"
+                >
+                  <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                  </svg>
+                  Telegram
+                </a>
+              </div>
             </div>
           </div>
         </div>

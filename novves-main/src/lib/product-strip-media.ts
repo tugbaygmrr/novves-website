@@ -5,7 +5,7 @@ export type ProductStripCategoryMedia = {
   readonly hero: string;
 };
 
-const PRODUCT_CATEGORY_CARD_HERO_V = "1";
+const PRODUCT_CATEGORY_CARD_HERO_V = "23";
 
 export const productStripCategoryMedia: Record<string, ProductStripCategoryMedia> = {
   "/urunler/hava-hareketi": {
