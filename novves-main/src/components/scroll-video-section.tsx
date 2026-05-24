@@ -11,6 +11,7 @@ if (typeof window !== "undefined") {
 }
 
 type StartCard = {
+  eyebrow?: string;
   badge: string;
   titleLine1: string;
   titleLine2: string;
@@ -56,8 +57,7 @@ const SCROLL_SUB_DARK: readonly [number, number, number] = [209, 209, 209]; // #
 const SCROLL_SUB_LIGHT: readonly [number, number, number] = [111, 115, 117]; // --secondary muted
 const SCROLL_DIVIDER_LIGHT = "rgb(216, 216, 205)"; // --sand-300 border
 
-/** Start card alt şeridi — ChatGPT mockup'tan kesilen 7 ayrı logo PNG'si.
- * Her biri ayrı flex item, marquee'de seamless loop için 2x render edilir. */
+/** Start card alt şeridi — 7 ayrı logo PNG, marquee'de seamless loop için 2x render edilir. */
 const START_CARD_CERTS: ReadonlyArray<{ src: string; alt: string }> = [
   { src: "/images/cert-bsi.png", alt: "BSI" },
   { src: "/images/cert-ce.png", alt: "CE" },
@@ -66,6 +66,40 @@ const START_CARD_CERTS: ReadonlyArray<{ src: string; alt: string }> = [
   { src: "/images/cert-efectis.png", alt: "Efectis" },
   { src: "/images/cert-iso.png", alt: "ISO" },
   { src: "/images/cert-iso14001.png", alt: "ISO 14001" },
+];
+
+/** Start card liste ikonları — sırasıyla titleLine1/2/3 ile eşleşir
+ * (Duman Tahliye Fanları → fan, Klima Santralleri → kar tanesi, Endüstriyel Fanlar → fabrika). */
+const START_CARD_LIST_ICONS = [
+  (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <circle cx="12" cy="12" r="1.8" />
+      <path d="M10.83 10.83C10.83 7.5 8.5 3 12 3s5.17 4.5 5.17 7.83" />
+      <path d="M13.17 13.17C13.17 16.5 15.5 21 12 21s-5.17-4.5-5.17-7.83" />
+      <path d="M10.83 13.17C7.5 13.17 3 15.5 3 12s4.5-5.17 7.83-5.17" />
+      <path d="M13.17 10.83C16.5 10.83 21 8.5 21 12s-4.5 5.17-7.83 5.17" />
+    </svg>
+  ),
+  (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M12 2v20" />
+      <path d="M3.5 7.5l17 9" />
+      <path d="M20.5 7.5l-17 9" />
+      <path d="M9 3.5l3 2.5 3-2.5" />
+      <path d="M9 20.5l3-2.5 3 2.5" />
+      <path d="M3 9.5l2.6 1.5L3 12.5" />
+      <path d="M21 9.5l-2.6 1.5L21 12.5" />
+    </svg>
+  ),
+  (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M2 20V8.5a1 1 0 0 1 1.6-.8L9 12V8.5a1 1 0 0 1 1.6-.8L16 12V4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16" />
+      <path d="M2 20h20" />
+      <path d="M6 16h1" />
+      <path d="M11 16h1" />
+      <path d="M17 16h1" />
+    </svg>
+  ),
 ];
 
 
@@ -84,36 +118,67 @@ const THEME_OPEN_DOM_STEPS = 20;
 /** Sağdaki progress çubuğu */
 const PROGRESS_BAR_STEPS = 60;
 
-/** Mobil video seek adımı — daha az adım = mobile cihazda daha az seek = daha az kasma */
-const MOBILE_VIDEO_SCRUB_STEPS = 14;
+/** Mobil video seek adımı — 18 step, fastSeek + dar threshold ile yine smooth + kasmasız */
+const MOBILE_VIDEO_SCRUB_STEPS = 18;
 
-/** Mobil hero (görsel/video) katman — arka plan + overlay adımı */
-const MOBILE_MOTION_DOM_STEPS = 48;
+/** Mobil hero DOM update adımı — 18 step (fan adımıyla senkron, panel/overlay GPU composite) */
+const MOBILE_MOTION_DOM_STEPS = 18;
 
-/** `scrollScrub`: fastSeek yok, küçük currentTime adımları — video gibi akış.
- * Threshold 1/90 sn (~11ms) — sub-frame değişiklikler için seek yapmıyoruz, CPU/GPU rahatlar. */
+/** Mobil scroll hız eşiği — sadece çok hızlı scroll'da seek atla (yavaş scroll'da her step görünür) */
+const MOBILE_SCROLL_VELOCITY_SKIP = 3.5;
+
+/** Video seek — desktop için precise (1/90s), mobile için fastSeek + dar eşik (smooth) */
 function scrubVideoTo(v: HTMLVideoElement, seconds: number, scrollScrub?: boolean) {
   const d = v.duration;
   if (!Number.isFinite(d) || d <= 0.05) return;
   const t = Math.min(Math.max(seconds, 0), d - 0.001);
+  const fast = (v as HTMLVideoElement & { fastSeek?: (time: number) => void }).fastSeek;
   if (scrollScrub) {
-    if (Math.abs(t - v.currentTime) < 1 / 90) return;
+    /** Mobile / scroll-driven — dar eşik (0.06s) + fastSeek (yakın keyframe, decode ucuz) */
+    if (Math.abs(t - v.currentTime) < 0.06) return;
+    if (typeof fast === "function") {
+      try { fast.call(v, t); return; } catch { /* fall through */ }
+    }
     v.currentTime = t;
     return;
   }
   if (Math.abs(t - v.currentTime) < 0.04) return;
-  const fast = (v as HTMLVideoElement & { fastSeek?: (time: number) => void }).fastSeek;
   if (typeof fast === "function") {
-    try {
-      fast.call(v, t);
-      return;
-    } catch {
-      /* fall through */
-    }
+    try { fast.call(v, t); return; } catch { /* fall through */ }
   }
   if (Math.abs(t - v.currentTime) > 0.12) {
     v.currentTime = t;
   }
+}
+
+/** iOS Safari: video ilk frame'i göstermek için play→pause cycle gerekli.
+ * Aksi halde sadece poster görünür ya da boş kalır (özellikle kovan-tipi cihazlarda). */
+function primeIOSVideoFirstFrame(v: HTMLVideoElement) {
+  try {
+    const playPromise = v.play();
+    if (playPromise && typeof playPromise.then === "function") {
+      playPromise
+        .then(() => {
+          try { v.pause(); } catch { /* noop */ }
+          try {
+            const fast = (v as HTMLVideoElement & { fastSeek?: (time: number) => void }).fastSeek;
+            if (typeof fast === "function") fast.call(v, 0.01);
+            else v.currentTime = 0.01;
+          } catch { /* noop */ }
+        })
+        .catch(() => {
+          /** Autoplay engellendi — yine de currentTime ile zorla */
+          try {
+            const fast = (v as HTMLVideoElement & { fastSeek?: (time: number) => void }).fastSeek;
+            if (typeof fast === "function") fast.call(v, 0.01);
+            else v.currentTime = 0.01;
+          } catch { /* noop */ }
+        });
+    } else {
+      try { v.pause(); } catch { /* noop */ }
+      v.currentTime = 0.01;
+    }
+  } catch { /* noop */ }
 }
 
 export function ScrollVideoSection({
@@ -594,15 +659,15 @@ export function ScrollVideoSection({
           </div>
         )}
 
-        {/* START CARD — arka plan ile aynı koyu ton, dar kutu; köşe işaretleri */}
+        {/* START CARD — geniş kutu, metalik H1 + turuncu H2 + iconlu liste + glass CTA + sertifika marquee */}
         {startCard && (
           <div
             ref={startCardRef}
-            className="absolute top-[130px] bottom-[40px] left-0 z-20 flex w-full max-w-[min(580px,min(54vw,calc(100vw-2.5rem)))] items-center pl-5 pr-4 sm:pl-8 sm:pr-5 xl:pl-14 xl:pr-8"
+            className="absolute top-[60px] bottom-[70px] left-0 z-20 flex w-full max-w-[min(740px,min(60vw,calc(100vw-2.5rem)))] items-center pl-5 pr-4 sm:pl-8 sm:pr-5 xl:pl-14 xl:pr-8"
           >
             <div
               ref={startCardSurfaceRef}
-              className="relative w-full overflow-hidden rounded-[2rem] border border-white/8 bg-[#0f1d33]/95 px-8 py-7 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55),0_0_96px_-12px_rgba(15,29,51,0.55)] sm:px-9 sm:py-8 [transform:translateZ(0)]"
+              className="relative w-full overflow-hidden rounded-[2rem] border border-white/8 bg-[#0f1d33]/95 px-7 py-4 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55),0_0_96px_-12px_rgba(15,29,51,0.55)] sm:px-9 sm:py-5 [transform:translateZ(0)]"
               style={
                 {
                   backgroundColor: "rgb(15, 29, 51)",
@@ -615,79 +680,115 @@ export function ScrollVideoSection({
                 } as CSSProperties
               }
             >
-              {/* Arka plan: Türkiye-merkezli ihracat haritası — daha aydınlık */}
+              {/* Arka plan: Türkiye-merkezli ihracat haritası — aşağı kaydırılmış */}
               <div
                 className="pointer-events-none absolute inset-0"
                 style={{
                   backgroundImage: "url('/images/hero/hero-export-map.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "55% 50%",
+                  backgroundSize: "auto 160%",
+                  backgroundPosition: "55% 10%",
                   backgroundRepeat: "no-repeat",
                   filter: "brightness(1.25) contrast(1.02) saturate(1.05)",
                 }}
                 aria-hidden
               />
 
-              <p className="relative font-mono-eng text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--c-accent)" }}>
-                ● {startCard.badge}
-              </p>
+              {/* Hero H1 — Helvetica ExtraBold 800, 48px metalik başlık */}
+              {startCard.eyebrow && (() => {
+                const lines = startCard.eyebrow.split(/\n/).map(s => s.trim()).filter(Boolean).slice(0, 2);
+                const h1Style: CSSProperties = {
+                  fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                  fontWeight: 800,
+                  fontSize: "3rem",
+                  lineHeight: 1.04,
+                  letterSpacing: "-0.015em",
+                  backgroundImage: "linear-gradient(180deg, #ffffff 0%, #e9ecf2 45%, #b8bec7 100%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.35))",
+                };
+                return (
+                  <div className="relative space-y-1">
+                    {lines.map((line, i) => (
+                      <h1 key={i} className="relative uppercase text-balance" style={h1Style}>
+                        {line}
+                      </h1>
+                    ))}
+                  </div>
+                );
+              })()}
 
-              <h2 className="relative mt-7 text-balance">
-                {startCard.titleLine1 && (
-                  <span
-                    className="block font-semibold"
-                    style={{
-                      fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
-                      lineHeight: 1.08,
-                      letterSpacing: "-0.02em",
-                      color: "var(--c-title)",
-                    }}
-                  >
-                    {startCard.titleLine1}
-                  </span>
-                )}
-                {startCard.titleLine2 && (
-                  <span
-                    className="mt-1 block hyphens-none break-words font-semibold"
-                    style={{
-                      fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
-                      lineHeight: 1.08,
-                      letterSpacing: "-0.02em",
-                      color: "var(--c-title)",
-                      opacity: 0.92,
-                    }}
-                  >
-                    {startCard.titleLine2}
-                  </span>
-                )}
-                {startCard.titleLine3 && (
-                  <span
-                    className="mt-1 block font-semibold"
-                    style={{
-                      fontSize: "clamp(1.85rem, 2.2vw, 2.45rem)",
-                      lineHeight: 1.08,
-                      letterSpacing: "-0.02em",
-                      color: "var(--c-title)",
-                    }}
-                  >
-                    {startCard.titleLine3}
-                  </span>
-                )}
+              {/* H2 Ana Başlık — Helvetica Bold 700, 36px turuncu, '●' prefix ile badge */}
+              <h2
+                className={`relative text-balance ${startCard.eyebrow ? "mt-3" : ""}`}
+                style={{
+                  fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                  fontWeight: 700,
+                  fontSize: "2.25rem",
+                  lineHeight: 1.08,
+                  letterSpacing: "-0.015em",
+                  color: "var(--c-accent)",
+                  textTransform: "uppercase",
+                }}
+              >
+                ● {startCard.badge}
               </h2>
 
-              <p className="relative mt-7 max-w-[42ch] text-[14.5px] leading-[1.72]" style={{ color: "var(--c-sub)" }}>
+              {/* Liste — yuvarlak çerçeveli ikon + metin (tire yok) */}
+              {(startCard.titleLine1 || startCard.titleLine2 || startCard.titleLine3) && (
+                <ul className="relative mt-3 space-y-2">
+                  {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
+                    if (!raw) return null;
+                    const label = raw.replace(/^[—–-]\s*/u, "");
+                    return (
+                      <li key={i} className="flex items-center gap-3.5">
+                        <span
+                          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/14 bg-white/[0.07] text-white"
+                          aria-hidden
+                        >
+                          <span className="h-5 w-5">{START_CARD_LIST_ICONS[i]}</span>
+                        </span>
+                        <span
+                          className="font-semibold"
+                          style={{
+                            fontSize: "clamp(0.98rem, 1.15vw, 1.15rem)",
+                            color: "var(--c-title)",
+                            letterSpacing: "-0.005em",
+                          }}
+                        >
+                          {label}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+
+              <p className="relative mt-3 max-w-[48ch] text-[13px] leading-[1.5]" style={{ color: "var(--c-sub)" }}>
                 {startCard.subtitle}
               </p>
 
               {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                <div className="relative mt-8 flex w-full flex-col items-stretch gap-3 min-[520px]:flex-row min-[520px]:flex-wrap min-[520px]:items-center min-[520px]:gap-5">
+                <div className="relative mt-4 flex w-full flex-col items-stretch gap-2.5 min-[520px]:flex-row min-[520px]:flex-wrap min-[520px]:items-stretch min-[520px]:gap-3">
                   {startCard.ctaPrimary && (
                     <Link
                       href={`/${locale}/iletisim`}
-                      className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                      className="group inline-flex flex-1 items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-4 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
                     >
-                      {startCard.ctaPrimary}
-                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
+                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                          <path d="M9 4h7l4 4v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" />
+                          <path d="M16 4v4h4" />
+                          <path d="M11 13h6" />
+                          <path d="M11 17h6" />
+                          <path d="M11 9h2" />
+                        </svg>
+                      </span>
+                      <span className="flex-1 font-mono-eng text-[12px] font-semibold uppercase leading-[1.2] tracking-[0.16em]">
+                        {startCard.ctaPrimary}
+                      </span>
+                      <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
                     </Link>
@@ -696,10 +797,18 @@ export function ScrollVideoSection({
                   {startCard.ctaSecondary && (
                     <Link
                       href={`/${locale}/urunler`}
-                      className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                      className="group inline-flex flex-1 items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-4 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
                     >
-                      {startCard.ctaSecondary}
-                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
+                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M15.5 8.5l-2 5-5 2 2-5z" />
+                        </svg>
+                      </span>
+                      <span className="flex-1 font-mono-eng text-[12px] font-semibold uppercase leading-[1.2] tracking-[0.16em]">
+                        {startCard.ctaSecondary}
+                      </span>
+                      <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
                     </Link>
@@ -707,16 +816,17 @@ export function ScrollVideoSection({
                 </div>
               )}
 
-              {/* Sertifika marquee — 7 ayrı logo PNG (ChatGPT mockup'tan kesilmiş), seamless loop için 2x */}
-              <div className="relative mt-6 -mx-8 -mb-7 overflow-hidden pb-3 sm:-mx-9 sm:-mb-8 sm:pb-4">
+              {/* Sertifika marquee — buton altında, 7 ayrı logo PNG, seamless loop için 2x */}
+              <div className="relative mt-3 -mx-7 -mb-4 overflow-hidden border-t border-white/10 pb-2 pt-2 sm:-mx-9 sm:-mb-5 sm:pb-2.5">
                 <div className="card-cert-marquee-track flex w-max items-center">
                   {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                       key={`${cert.alt}-${i}`}
                       src={cert.src}
                       alt={i < START_CARD_CERTS.length ? cert.alt : ""}
                       aria-hidden={i >= START_CARD_CERTS.length || undefined}
-                      className="block h-12 w-auto shrink-0 sm:h-14"
+                      className="block h-9 w-auto shrink-0 px-4 sm:h-10"
                       loading="lazy"
                       decoding="async"
                     />
@@ -920,10 +1030,17 @@ function MobileScrollSection({
     let mobileRafPending = false;
     let lastMobileVideoStep = -1;
     let lastMobileMotionKey = -1;
+    /** Sahne ekran içinde mi — IntersectionObserver ile takip. Dışındayken scroll handler hiçbir şey yapmaz. */
+    let stageInView = false;
+    /** Scroll hız takibi — hızlı kaydırırken video seek atla (decode'a yetişemez) */
+    let lastScrollY = typeof window !== "undefined" ? window.scrollY : 0;
+    let lastScrollTime = typeof performance !== "undefined" ? performance.now() : 0;
+    let scrollVelocity = 0;
 
     const updateFrame = () => {
       mobileRafPending = false;
       rafId = 0;
+      if (!stageInView) return;
       const stage = stageRef.current;
       if (!stage) return;
       const viewport = window.innerHeight;
@@ -942,7 +1059,8 @@ function MobileScrollSection({
               MOBILE_VIDEO_SCRUB_STEPS - 1,
               Math.max(0, Math.round(progress * (MOBILE_VIDEO_SCRUB_STEPS - 1)))
             );
-            if (step !== lastMobileVideoStep) {
+            /** Hızlı scroll → seek atla. Yavaşladığında doğru frame'e atlar. */
+            if (step !== lastMobileVideoStep && scrollVelocity < MOBILE_SCROLL_VELOCITY_SKIP) {
               lastMobileVideoStep = step;
               const t = (step / (MOBILE_VIDEO_SCRUB_STEPS - 1)) * (d - 0.001);
               scrubVideoTo(v, t, true);
@@ -1008,6 +1126,15 @@ function MobileScrollSection({
     };
 
     const onScroll = () => {
+      /** Scroll velocity hesabı — px/ms cinsinden */
+      const now = performance.now();
+      const dy = Math.abs(window.scrollY - lastScrollY);
+      const dt = Math.max(now - lastScrollTime, 1);
+      scrollVelocity = dy / dt;
+      lastScrollY = window.scrollY;
+      lastScrollTime = now;
+
+      if (!stageInView) return;
       if (mobileRafPending) return;
       mobileRafPending = true;
       rafId = requestAnimationFrame(updateFrame);
@@ -1015,10 +1142,36 @@ function MobileScrollSection({
 
     const onResize = () => {
       lastMobileMotionKey = -1;
-      onScroll();
+      if (mobileRafPending) return;
+      mobileRafPending = true;
+      rafId = requestAnimationFrame(updateFrame);
     };
 
-    const initialRaf = requestAnimationFrame(updateFrame);
+    /** IntersectionObserver: sahne ekran içinde değilse hiçbir scroll handler iş yapmasın */
+    let observer: IntersectionObserver | null = null;
+    const stageEl = stageRef.current;
+    if (typeof IntersectionObserver !== "undefined" && stageEl) {
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            stageInView = entry.isIntersecting;
+            if (stageInView && !mobileRafPending) {
+              mobileRafPending = true;
+              rafId = requestAnimationFrame(updateFrame);
+            }
+          }
+        },
+        { rootMargin: "100px 0px" }
+      );
+      observer.observe(stageEl);
+    } else {
+      stageInView = true;
+    }
+
+    const initialRaf = requestAnimationFrame(() => {
+      stageInView = true;
+      updateFrame();
+    });
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize, { passive: true });
 
@@ -1026,7 +1179,10 @@ function MobileScrollSection({
     const onVideoMeta = () => {
       lastMobileVideoStep = -1;
       lastMobileMotionKey = -1;
-      updateFrame();
+      if (stageInView && !mobileRafPending) {
+        mobileRafPending = true;
+        rafId = requestAnimationFrame(updateFrame);
+      }
     };
     if (isMobileVideo) {
       mobileVideoForMeta = mobileVideoRef.current;
@@ -1034,6 +1190,7 @@ function MobileScrollSection({
     }
 
     return () => {
+      observer?.disconnect();
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
       mobileRafPending = false;
@@ -1107,13 +1264,29 @@ function MobileScrollSection({
                 aria-label={mobileVideoReplacementAlt || undefined}
                 muted
                 playsInline
-                preload="metadata"
+                preload="auto"
                 disablePictureInPicture
+                disableRemotePlayback
+                onLoadedMetadata={(e) => {
+                  /** iOS Safari'de ilk frame'i göstermek için play→pause + currentTime trick */
+                  primeIOSVideoFirstFrame(e.currentTarget);
+                }}
                 onLoadedData={(e) => {
                   const el = e.currentTarget;
-                  if (el.readyState >= 2) scrubVideoTo(el, 0, true);
+                  if (el.readyState >= 2) scrubVideoTo(el, 0.01, true);
                 }}
-                className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
+                onCanPlay={(e) => {
+                  /** Yedek: iOS bazen LoadedMetadata yerine CanPlay'de hazır olur */
+                  const el = e.currentTarget;
+                  if (el.currentTime < 0.01) {
+                    try {
+                      const fast = (el as HTMLVideoElement & { fastSeek?: (time: number) => void }).fastSeek;
+                      if (typeof fast === "function") fast.call(el, 0.01);
+                      else el.currentTime = 0.01;
+                    } catch { /* noop */ }
+                  }
+                }}
+                className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden] [contain:layout_paint_size_style]"
                 style={{
                   objectPosition: "18% center",
                   transform: "translateZ(0) scale(1.14)",
@@ -1148,7 +1321,7 @@ function MobileScrollSection({
             {startCard && (
               <div
                 ref={mobileStartPanelRef}
-                className="absolute inset-x-5 bottom-5 overflow-hidden rounded-[1.5rem] border border-white/8 bg-[#0f1d33]/94 px-5 pb-0 pt-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55),0_0_72px_-10px_rgba(15,29,51,0.55)]"
+                className="absolute inset-x-4 bottom-4 overflow-hidden rounded-[1.5rem] border border-white/8 bg-[#0f1d33]/94 px-4 pb-0 pt-3.5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55),0_0_72px_-10px_rgba(15,29,51,0.55)]"
                 style={{
                   opacity: isMobileMotion ? 1 : panelOpacity,
                   transform: isMobileMotion ? "translateY(0px)" : `translateY(-${panelLift}px)`,
@@ -1165,30 +1338,90 @@ function MobileScrollSection({
                   aria-hidden
                 />
 
-                <p className="relative font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">● {startCard.badge}</p>
-                <h2 className="relative mt-3 text-white">
-                  {startCard.titleLine1 && (
-                    <span className="block text-[1.85rem] font-semibold leading-[1.04] tracking-[-0.02em]">{startCard.titleLine1}</span>
-                  )}
-                  {startCard.titleLine2 && (
-                    <span className="mt-0.5 block text-[1.85rem] font-semibold leading-[1.04] tracking-[-0.02em] opacity-92">{startCard.titleLine2}</span>
-                  )}
-                  {startCard.titleLine3 && (
-                    <span className="mt-0.5 block text-[1.85rem] font-semibold leading-[1.04] tracking-[-0.02em]">{startCard.titleLine3}</span>
-                  )}
-                </h2>
-                <p className="relative mt-3 text-[13.5px] leading-[1.58] text-white/84">{startCard.subtitle}</p>
+                {/* Hero H1 — Helvetica ExtraBold 800, mobile metalik başlık */}
+                {startCard.eyebrow && (() => {
+                  const lines = startCard.eyebrow.split(/\n/).map(s => s.trim()).filter(Boolean).slice(0, 2);
+                  const h1Style: CSSProperties = {
+                    fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                    fontWeight: 800,
+                    fontSize: "clamp(1.4rem, 6vw, 2rem)",
+                    lineHeight: 1.04,
+                    letterSpacing: "-0.015em",
+                    backgroundImage: "linear-gradient(180deg, #ffffff 0%, #e9ecf2 45%, #b8bec7 100%)",
+                    WebkitBackgroundClip: "text",
+                    backgroundClip: "text",
+                    color: "transparent",
+                    filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.35))",
+                  };
+                  return (
+                    <div className="relative space-y-0.5">
+                      {lines.map((line, i) => (
+                        <h1 key={i} className="relative uppercase text-balance" style={h1Style}>
+                          {line}
+                        </h1>
+                      ))}
+                    </div>
+                  );
+                })()}
 
-                {/* CTAs — desktop ile aynı: primary teklif al + secondary ürünleri keşfet */}
+                {/* H2 Ana Başlık — Helvetica Bold 700, mobile clamped, '●' prefix ile badge */}
+                <h2
+                  className={`relative uppercase text-balance text-primary leading-[1.1] tracking-[-0.015em] ${startCard.eyebrow ? "mt-2" : ""}`}
+                  style={{
+                    fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                    fontWeight: 700,
+                    fontSize: "clamp(1.1rem, 5vw, 1.75rem)",
+                  }}
+                >
+                  ● {startCard.badge}
+                </h2>
+
+                {/* Liste — yuvarlak çerçeveli ikon + metin (tire yok) */}
+                {(startCard.titleLine1 || startCard.titleLine2 || startCard.titleLine3) && (
+                  <ul className="relative mt-3 space-y-2">
+                    {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
+                      if (!raw) return null;
+                      const label = raw.replace(/^[—–-]\s*/u, "");
+                      return (
+                        <li key={i} className="flex items-center gap-3">
+                          <span
+                            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/14 bg-white/[0.07] text-white"
+                            aria-hidden
+                          >
+                            <span className="h-4 w-4">{START_CARD_LIST_ICONS[i]}</span>
+                          </span>
+                          <span className="font-semibold text-white text-[0.92rem] leading-[1.2]">
+                            {label}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+
+                <p className="relative mt-3 text-[12px] leading-[1.5] text-white/80">{startCard.subtitle}</p>
+
+                {/* CTAs — glass + turuncu kenar, sol ikon + sağ ok */}
                 {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                  <div className="relative mt-5 flex flex-col gap-3.5">
+                  <div className="relative mt-3.5 flex flex-col gap-2.5">
                     {startCard.ctaPrimary && (
                       <Link
                         href={`/${locale}/iletisim`}
-                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                        className="group inline-flex items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-3.5 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
                       >
-                        {startCard.ctaPrimary}
-                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
+                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                            <path d="M9 4h7l4 4v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" />
+                            <path d="M16 4v4h4" />
+                            <path d="M11 13h6" />
+                            <path d="M11 17h6" />
+                            <path d="M11 9h2" />
+                          </svg>
+                        </span>
+                        <span className="flex-1 font-mono-eng text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]">
+                          {startCard.ctaPrimary}
+                        </span>
+                        <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                       </Link>
@@ -1196,10 +1429,18 @@ function MobileScrollSection({
                     {startCard.ctaSecondary && (
                       <Link
                         href={`/${locale}/urunler`}
-                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                        className="group inline-flex items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-3.5 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
                       >
-                        {startCard.ctaSecondary}
-                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
+                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M15.5 8.5l-2 5-5 2 2-5z" />
+                          </svg>
+                        </span>
+                        <span className="flex-1 font-mono-eng text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]">
+                          {startCard.ctaSecondary}
+                        </span>
+                        <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                       </Link>
@@ -1207,32 +1448,17 @@ function MobileScrollSection({
                   </div>
                 )}
 
-                {/* Sertifika marquee — kart alt edge (desktop ile aynı) */}
-                <div className="relative mt-5 -mx-5 overflow-hidden border-t border-white/10">
-                  <div className="card-cert-marquee-track flex w-max items-center py-3">
-                    {[
-                      "/images/cert-bsi.png",
-                      "/images/cert-ce.png",
-                      "/images/cert-en.png",
-                      "/images/cert-tse.png",
-                      "/images/cert-efectis.png",
-                      "/images/cert-iso.png",
-                      "/images/cert-iso14001.png",
-                      "/images/cert-bsi.png",
-                      "/images/cert-ce.png",
-                      "/images/cert-en.png",
-                      "/images/cert-tse.png",
-                      "/images/cert-efectis.png",
-                      "/images/cert-iso.png",
-                      "/images/cert-iso14001.png",
-                    ].map((src, i) => (
+                {/* Sertifika marquee — buton altı, kart alt edge */}
+                <div className="relative mt-3.5 -mx-4 overflow-hidden border-t border-white/10">
+                  <div className="card-cert-marquee-track flex w-max items-center py-2">
+                    {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
-                        key={`m-cert-${i}`}
-                        src={src}
-                        alt=""
-                        aria-hidden
-                        className="block h-9 w-auto shrink-0 px-5"
+                        key={`m-cert-${cert.alt}-${i}`}
+                        src={cert.src}
+                        alt={i < START_CARD_CERTS.length ? cert.alt : ""}
+                        aria-hidden={i >= START_CARD_CERTS.length || undefined}
+                        className="block h-7 w-auto shrink-0 px-4"
                         loading="lazy"
                         decoding="async"
                       />

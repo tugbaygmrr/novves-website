@@ -1965,11 +1965,33 @@ function HomeEngineeringPillarsJourneyStrip({
               </div>
             );
 
-            /* ── Mobil kart ── */
+            /* ── Mobil kart — desktop ile aynı görsel/video, sonra metin + CTA ── */
             const mobileCard = (
               <div key="mobile" className="block lg:hidden">
+                {/* Görsel / video — desktop'tan farklı: tam genişlik, basit 16:10 oran */}
+                <Link
+                  href={pillarHref}
+                  className="group relative mb-4 block aspect-[16/10] w-full overflow-hidden rounded-2xl shadow-[0_18px_42px_-22px_rgba(15,22,36,0.28)]"
+                >
+                  {pillarVideos[index] ? (
+                    <PillarVideoPlayer
+                      src={pillarVideos[index]!.src}
+                      poster={pillarVideos[index]!.poster}
+                      label={pillar.title}
+                    />
+                  ) : (
+                    <Image
+                      src={img}
+                      alt={pillar.title}
+                      fill
+                      sizes="100vw"
+                      className="object-cover object-center"
+                    />
+                  )}
+                </Link>
+
+                {/* İçerik */}
                 <div className="flex items-start gap-4">
-                  {/* İçerik */}
                   <div className="flex-1">
                     <p className="text-[11px] font-semibold uppercase tracking-widest text-secondary/60">
                       {stepLabel}
@@ -2135,16 +2157,16 @@ export default function HomeClient({
     <main className="bg-sand-200 text-ink">
       {/* 01 — SCROLL VIDEO: KOVAN TIPI */}
       <div id="hero-main" className="scroll-mt-24 md:scroll-mt-[5.5rem]">
-      <ScrollVideoSection
-        videoSrc="/video/hero-scroll.mp4"
-        mobileVideoReplacementAlt={dict.hero.heroImageAlt}
-        scrollVh={260}
-        id="animation-2"
-        startCard={dict.hero}
-        endCard={dict.animation2.endCard}
-        locale={locale}
-        productHref="/urunler/duman-isi-tahliye-fanlari"
-      />
+        <ScrollVideoSection
+          videoSrc="/video/hero-scroll.mp4"
+          mobileVideoReplacementAlt={dict.hero.heroImageAlt}
+          scrollVh={260}
+          id="animation-2"
+          startCard={dict.hero}
+          endCard={dict.animation2.endCard}
+          locale={locale}
+          productHref="/urunler/duman-isi-tahliye-fanlari"
+        />
       </div>
 
       {/* 02 — Çözümler (soft yüzey + palet) */}
@@ -3010,6 +3032,16 @@ export default function HomeClient({
             />
             <div
               className="pointer-events-none absolute inset-0 bg-[#0e1c31]/30"
+              aria-hidden
+            />
+
+            {/* Yumuşak alt geçiş — bu section'dan footer'a fade (keskin sınırı gizler) */}
+            <div
+              className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-24"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(14,28,49,0) 0%, rgba(14,28,49,0.55) 45%, #0e1c31 100%)",
+              }}
               aria-hidden
             />
 
