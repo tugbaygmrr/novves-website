@@ -696,118 +696,69 @@ function SolutionShowcaseLeadIconByKind({ kind, inverted }: { kind: SolutionLead
 
 const COMPANY_PROFILE_NAVY = "#1e3a5f";
 
-function CompanyProfileTimelineIcon({ kind }: { kind: CompanyProfileMilestoneIcon }) {
-  const cls = "h-5 w-5";
-  const sw = 1.75;
-  const stroke = COMPANY_PROFILE_NAVY;
-  switch (kind) {
-    case "flag":
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-          <path d="M5 3v18" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-          <path
-            d="M5 4h11l-2 4 2 4H5"
-            stroke={stroke}
-            strokeWidth={sw}
-            strokeLinejoin="round"
-            strokeLinecap="round"
-          />
-        </svg>
-      );
-    case "chart":
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-          <path d="M4 19h16" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-          <path d="M7 15v-4M12 15V8M17 15v-7" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-        </svg>
-      );
-    case "certificate":
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-          <rect x="5" y="4" width="14" height="12" rx="1" stroke={stroke} strokeWidth={sw} />
-          <path d="M9 10h6M9 13h4" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-          <path d="M12 16v4l2-1 2 1v-4" stroke={stroke} strokeWidth={sw} strokeLinejoin="round" />
-        </svg>
-      );
-    case "star":
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-          <path
-            d="M12 3l2.2 5.5L20 10l-4.5 3.3L17 20l-5-3-5 3 1.5-6.7L4 10l5.8-1.5L12 3z"
-            stroke={stroke}
-            strokeWidth={sw}
-            strokeLinejoin="round"
-            strokeLinecap="round"
-          />
-        </svg>
-      );
-    case "people":
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-          <circle cx="9" cy="8" r="3" stroke={stroke} strokeWidth={sw} />
-          <circle cx="16" cy="9" r="2.5" stroke={stroke} strokeWidth={sw} />
-          <path
-            d="M4 20c0-3 2.5-5 5-5s5 2 5 5M13 20c0-2.2 1.8-4 4-4"
-            stroke={stroke}
-            strokeWidth={sw}
-            strokeLinecap="round"
-          />
-        </svg>
-      );
-    default:
-      return null;
-  }
-}
-
 function CompanyProfileGoalPillarIcon({ index }: { index: number }) {
   const cls = "h-6 w-6 shrink-0";
   const sw = 1.65;
   const stroke = COMPANY_PROFILE_NAVY;
   const i = index % 4;
   if (i === 0) {
+    // Fan / smoke evacuation: turbine blades
     return (
       <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+        <circle cx="12" cy="12" r="9" stroke={stroke} strokeWidth={sw} />
         <path
-          d="M12 3c-4 4-7 7-7 11a7 7 0 0014 0c0-4-3-7-7-11z"
+          d="M12 12c0-3 1-6 4-7-1 4-2 6-4 7zM12 12c3 0 6 1 7 4-4-1-6-2-7-4zM12 12c0 3-1 6-4 7 1-4 2-6 4-7zM12 12c-3 0-6-1-7-4 4 1 6 2 7 4z"
           stroke={stroke}
           strokeWidth={sw}
           strokeLinejoin="round"
         />
-        <path d="M12 11v6M9 14h6" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+        <circle cx="12" cy="12" r="1.4" fill={stroke} />
       </svg>
     );
   }
   if (i === 1) {
+    // AHU / air handling: box with airflow lines
     return (
       <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-        <circle cx="12" cy="12" r="3" stroke={stroke} strokeWidth={sw} />
+        <rect x="3" y="7" width="13" height="10" rx="1.5" stroke={stroke} strokeWidth={sw} />
         <path
-          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+          d="M6 10c1.5-1 3 0 4.5-1M6 14c1.5 1 3 0 4.5 1"
           stroke={stroke}
           strokeWidth={sw}
           strokeLinecap="round"
         />
+        <path d="M18 9.5h3M18 12h3M18 14.5h3" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
       </svg>
     );
   }
   if (i === 2) {
+    // High-tech motor: motor cylinder with cooling fins and shaft
     return (
       <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-        <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-        <circle cx="9" cy="7" r="4" stroke={stroke} strokeWidth={sw} />
-        <path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+        <rect x="4" y="8" width="12" height="8" rx="1" stroke={stroke} strokeWidth={sw} />
+        <path
+          d="M6 8V6M9 8V6M12 8V6M14 8V6M6 18v-2M9 18v-2M12 18v-2M14 18v-2"
+          stroke={stroke}
+          strokeWidth={sw}
+          strokeLinecap="round"
+        />
+        <path d="M16 12h4" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+        <circle cx="21" cy="12" r="1.4" stroke={stroke} strokeWidth={sw} />
       </svg>
     );
   }
+  // R&D, test & digital: monitor with CFD/chart curve
   return (
     <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
+      <rect x="3" y="4" width="18" height="13" rx="1.5" stroke={stroke} strokeWidth={sw} />
       <path
-        d="M4 10c3-2 6-3 8-3s5 1 8 3v10H4V10z"
+        d="M6 14c2-1 3-4 5-4s3 3 5 1 2-4 2-4"
         stroke={stroke}
         strokeWidth={sw}
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <path d="M8 14h8M8 17h5" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
+      <path d="M9 21h6M12 17v4" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
     </svg>
   );
 }
@@ -835,7 +786,6 @@ function HomeCompanyProfileSectionBlock({
   viewAllCorporate: string;
 }) {
   const navy = "text-[#1e3a5f]";
-  const milestoneIconCycle: CompanyProfileMilestoneIcon[] = ["flag", "chart", "certificate", "star", "people"];
   const goalsAsideRaw = (section.goalsAsideImage ?? "").trim();
   const goalsAsidePath = goalsAsideRaw.split("?")[0] || goalsAsideRaw;
 
@@ -887,11 +837,10 @@ function HomeCompanyProfileSectionBlock({
 
                   <ul className="grid gap-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-7 lg:gap-3">
                     {section.milestones.map((m, index) => {
-                      const iconKind = m.icon ?? milestoneIconCycle[index % milestoneIconCycle.length]!;
                       return (
                         <li key={`${m.year}-${m.title}`} className="relative z-[1] flex flex-col items-center text-center">
-                          <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1e3a5f] bg-sand-100 shadow-sm">
-                            <CompanyProfileTimelineIcon kind={iconKind} />
+                          <div className="mb-3 flex h-11 items-center justify-center rounded-full border-2 border-[#1e3a5f] bg-sand-100 px-3 shadow-sm">
+                            <span className={`font-mono-eng text-[12px] font-bold tracking-[0.08em] ${navy}`}>{m.year}</span>
                           </div>
                           <div className="relative mb-3 w-full overflow-hidden rounded-lg border border-[#1e3a5f]/10 bg-white shadow-sm">
                             <div className="relative aspect-[4/3] w-full">
@@ -930,8 +879,7 @@ function HomeCompanyProfileSectionBlock({
                               })()}
                             </div>
                           </div>
-                          <p className={`font-mono-eng text-[11px] font-bold tracking-[0.14em] ${navy}`}>{m.year}</p>
-                          <p className={`mt-1 text-[15px] font-bold leading-snug ${navy}`}>{m.title}</p>
+                          <p className={`text-[15px] font-bold leading-snug ${navy}`}>{m.title}</p>
                           <p className="mt-1.5 max-w-[28ch] text-[13px] leading-relaxed text-ink/68 sm:text-[14px]">
                             {m.body}
                           </p>
@@ -944,73 +892,93 @@ function HomeCompanyProfileSectionBlock({
 
               {/* Gelecek hedefleri */}
               <section
-                className="overflow-hidden rounded-2xl border border-[#1e3a5f]/10 bg-white/70 p-6 shadow-[0_16px_48px_-36px_rgba(15,22,36,0.2)] sm:p-8 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,400px)] lg:items-stretch lg:gap-10"
+                className="overflow-hidden rounded-2xl border border-[#1e3a5f]/10 bg-white/70 p-6 shadow-[0_16px_48px_-36px_rgba(15,22,36,0.2)] sm:p-8 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,340px)] lg:items-center lg:gap-10"
                 aria-labelledby="company-profile-goals-heading"
               >
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center gap-3">
                     <HomeCompanyProfileGoalsTargetIcon />
-                    <h3 id="company-profile-goals-heading" className={`text-lg font-bold uppercase tracking-[0.12em] sm:text-xl ${navy}`}>
+                    <h3 id="company-profile-goals-heading" className={`text-2xl font-bold uppercase tracking-[0.12em] sm:text-3xl ${navy}`}>
                       {section.goalsTitle}
                     </h3>
                   </div>
-                  <p className={`mt-4 max-w-[56ch] text-[14px] leading-relaxed text-ink/72 sm:text-[15px] ${navy}`}>
+                  <p className={`mt-4 text-[16px] leading-relaxed text-ink/72 sm:text-[18px] ${navy}`}>
                     {section.goalsIntro}
                   </p>
                   <ul className="mt-8 grid gap-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-8">
                     {section.goalsPillars.map((p, i) => (
                       <li key={p.title} className="flex gap-3 text-left sm:gap-4">
-                        <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1e3a5f]/12 bg-sand-100">
+                        <div className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-[#1e3a5f]/12 bg-sand-100">
                           <CompanyProfileGoalPillarIcon index={i} />
                         </div>
                         <div>
-                          <p className={`text-[15px] font-bold leading-snug ${navy}`}>{p.title}</p>
-                          <p className="mt-1 text-[13px] leading-relaxed text-ink/68 sm:text-[14px]">{p.body}</p>
+                          <p className={`text-[18px] font-bold leading-snug ${navy}`}>{p.title}</p>
+                          <p className="mt-1 text-[15px] leading-relaxed text-ink/68 sm:text-[16px]">{p.body}</p>
                         </div>
                       </li>
                     ))}
                   </ul>
                 </div>
                 {goalsAsidePath ? (
-                  <div className="relative mt-8 min-h-[220px] w-full overflow-hidden rounded-xl border border-[#1e3a5f]/8 bg-[#1a2842] sm:min-h-[260px] lg:mt-0 lg:h-full lg:min-h-[min(100%,400px)] lg:self-stretch">
+                  <div className="relative mx-auto mt-8 aspect-[7/10] w-full max-w-[340px] overflow-hidden rounded-xl border border-[#1e3a5f]/8 lg:mx-0 lg:mt-0 lg:max-w-none lg:self-center">
                     <Image
                       key={goalsAsideRaw || goalsAsidePath}
                       src={goalsAsidePath}
                       alt={section.goalsAsideImageAlt ?? ""}
                       fill
                       className="object-cover"
-                      style={{ objectPosition: "center 25%" }}
-                      sizes="(max-width: 1024px) 92vw, 400px"
+                      sizes="(max-width: 1024px) 92vw, 340px"
                     />
                   </div>
                 ) : null}
               </section>
 
-              {/* Alt banner */}
-              <div className="flex flex-col items-stretch gap-6 rounded-2xl border border-[#1e3a5f]/10 bg-gradient-to-br from-[#ebe9e4] via-[#f2f0eb] to-[#e6e4df] px-6 py-7 shadow-[0_14px_40px_-28px_rgba(15,22,36,0.22)] sm:flex-row sm:items-center sm:gap-8 sm:px-8 sm:py-8">
-                <div
-                  className="mx-auto flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#1e3a5f] text-white shadow-md sm:mx-0"
+              {/* Alt banner — vizyon */}
+              <section
+                aria-labelledby="company-profile-banner-heading"
+                className="relative overflow-hidden rounded-2xl border border-[#1e3a5f]/10 bg-[#faf6ec] shadow-[0_16px_48px_-36px_rgba(15,22,36,0.2)]"
+              >
+                <Image
+                  src="/images/corporate/novves-banner-bg.jpg"
+                  alt=""
+                  width={1536}
+                  height={604}
+                  className="block h-auto w-full"
+                  sizes="(max-width: 1024px) 92vw, 1100px"
                   aria-hidden
-                >
-                  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                  </svg>
+                />
+
+                <div className="absolute inset-0 grid grid-cols-[38%_1fr] items-center gap-2 px-3 sm:grid-cols-[44%_1fr_auto_minmax(0,18%)] sm:gap-2 sm:px-6 lg:gap-3 lg:px-10">
+                  <div aria-hidden />
+                  <div className="min-w-0 pr-1 sm:pr-0">
+                    <h3
+                      id="company-profile-banner-heading"
+                      className="text-[clamp(0.85rem,3.2vw,2.6rem)] font-bold leading-[1.1] tracking-[-0.02em] text-[#2a2a2a]"
+                    >
+                      {section.bannerTitle}
+                    </h3>
+                    {section.bannerLine1 ? (
+                      <p className="mt-3 hidden text-[clamp(0.85rem,1.15vw,1.2rem)] leading-relaxed text-[#555555] sm:block">
+                        {section.bannerLine1}
+                      </p>
+                    ) : null}
+                  </div>
+                  <div className="hidden h-[60%] w-px shrink-0 bg-[#ef5f17]/35 sm:block" aria-hidden />
+                  <div aria-hidden />
                 </div>
-                <div className="min-w-0 flex-1 text-center sm:text-left">
-                  <p className={`text-[1.05rem] font-bold leading-snug sm:text-[1.15rem] ${navy}`}>{section.bannerTitle}</p>
-                  <p className="mt-2 text-[13px] leading-relaxed text-ink/70 sm:text-[14px]">{section.bannerLine1}</p>
-                  <p className="mt-1 text-[13px] leading-relaxed text-ink/70 sm:text-[14px]">{section.bannerLine2}</p>
-                </div>
-                <div className="flex shrink-0 justify-center sm:justify-end">
+
+                {/* Sloganlı NOVVES logosu — sadece sm+ ekranlarda; mobilde gizli */}
+                <div className="pointer-events-none absolute right-[-4%] top-[55%] hidden w-[24%] -translate-y-1/2 sm:block lg:right-[-3%] lg:top-[56%] lg:w-[26%]">
                   <Image
-                    src="/images/novves-logo.svg"
+                    src="/images/corporate/novves-logo-sloganli.png"
                     alt={section.bannerLogoAlt}
-                    width={160}
-                    height={44}
-                    className="h-9 w-auto opacity-[0.92] sm:h-10"
+                    width={1536}
+                    height={1024}
+                    sizes="(max-width: 1024px) 290px, 380px"
+                    className="block h-auto w-full"
                   />
                 </div>
-              </div>
+              </section>
 
               <div className="flex w-full justify-center pt-2">
                 <Link
@@ -1874,14 +1842,14 @@ function HomeEngineeringPillarsJourneyStrip({
       <div className="relative bg-sand-100 px-5 py-10 sm:px-9 sm:py-14 lg:px-14 lg:py-[4.5rem]">
         <header className="mb-14 sm:mb-16 lg:mb-20">
           <h2
-            className="font-black uppercase text-ink"
+            className="font-semibold uppercase text-ink"
             style={{ fontSize: "clamp(1.9rem, 4.8vw, 3.75rem)", lineHeight: 0.95, letterSpacing: "-0.03em" }}
           >
             {title}
           </h2>
           {subtitle ? (
             <p
-              className="mt-2.5 font-bold uppercase text-primary"
+              className="mt-2.5 font-medium uppercase text-primary"
               style={{ fontSize: "clamp(1.25rem, 2.8vw, 2.2rem)", lineHeight: 1.05, letterSpacing: "-0.015em" }}
             >
               {subtitle}
@@ -1978,7 +1946,7 @@ function HomeEngineeringPillarsJourneyStrip({
                   <span>{stepLabel}</span>
                 </p>
                 <h3
-                  className="mt-3 font-black uppercase text-ink"
+                  className="mt-3 font-semibold uppercase text-ink"
                   style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)", lineHeight: 1.08, letterSpacing: "-0.015em" }}
                 >
                   {pillar.title.replace(/\.$/, "")}
@@ -2007,7 +1975,7 @@ function HomeEngineeringPillarsJourneyStrip({
                       {stepLabel}
                     </p>
                     <h3
-                      className="mt-1 font-black uppercase text-ink"
+                      className="mt-1 font-semibold uppercase text-ink"
                       style={{ fontSize: "clamp(1rem, 4.5vw, 1.2rem)", lineHeight: 1.1, letterSpacing: "-0.015em" }}
                     >
                       {pillar.title.replace(/\.$/, "")}
@@ -2764,296 +2732,6 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* 07 — VIDEO / STUDIO (yeniden tasarım: marka tanıtım videosu) */}
-      {(() => {
-        const vt = getHomeVideoStrings(locale);
-        const featureIconMask = (src: string): React.CSSProperties => ({
-          maskImage: `url(${src})`,
-          WebkitMaskImage: `url(${src})`,
-          maskSize: "contain",
-          WebkitMaskSize: "contain",
-          maskPosition: "center",
-          WebkitMaskPosition: "center",
-          maskRepeat: "no-repeat",
-          WebkitMaskRepeat: "no-repeat",
-        });
-        const featureIcons = [
-          <span key="fc1" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/monitor.png")} aria-hidden />,
-          <span key="fc2" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/chart.png")} aria-hidden />,
-          <span key="fc3" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/globe.png")} aria-hidden />,
-        ];
-        const pillarIcons = [
-          // Safety (shield + check)
-          (
-            <svg key="p1" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <path d="M16 4l11 4v8c0 7-5 11-11 12-6-1-11-5-11-12V8l11-4z" strokeLinejoin="round" />
-              <path d="M11 16l3 3 6-7" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          ),
-          // Performance (fan)
-          (
-            <svg key="p2" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <circle cx="16" cy="16" r="2" fill="currentColor" />
-              <path d="M16 14c-2-4 1-8 5-6 2 4-1 8-5 6zM16 18c2 4-1 8-5 6-2-4 1-8 5-6zM14 16c-4-2-8 1-6 5 4 2 8-1 6-5zM18 16c4 2 8-1 6-5-4-2-8 1-6 5z" strokeLinejoin="round" />
-            </svg>
-          ),
-          // Engineering (gear)
-          (
-            <svg key="p3" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <circle cx="16" cy="16" r="3" />
-              <path d="M16 4v3M16 25v3M4 16h3M25 16h3M7.5 7.5l2 2M22.5 22.5l2 2M7.5 24.5l2-2M22.5 9.5l2-2" strokeLinecap="round" />
-            </svg>
-          ),
-          // Quality (medal)
-          (
-            <svg key="p4" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <circle cx="16" cy="14" r="7" />
-              <path d="M11 18l-2 9 7-4 7 4-2-9" strokeLinejoin="round" />
-              <path d="M13 14l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          ),
-          // Sustainability (leaf)
-          (
-            <svg key="p5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <path d="M6 24c0-9 8-16 20-16 0 11-7 18-16 18-2 0-3-1-4-2z" strokeLinejoin="round" />
-              <path d="M8 24c4-5 9-9 16-12" strokeLinecap="round" />
-            </svg>
-          ),
-        ];
-
-        return (
-          <section className="relative overflow-hidden bg-[#0e1c31] py-14 text-white sm:py-20">
-            {/* Background layers */}
-            <div className="pointer-events-none absolute inset-0" aria-hidden>
-              <div
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(180deg, #0e1c31 0%, #11203a 45%, #0c1729 100%)" }}
-              />
-              <div className="absolute inset-0 blueprint-grid-dark opacity-25" />
-              {/* Blueprint fan accent on right */}
-              <svg
-                viewBox="0 0 400 400"
-                className="absolute -right-24 top-20 hidden h-[480px] w-[480px] text-primary/30 lg:block xl:h-[560px] xl:w-[560px]"
-                preserveAspectRatio="xMidYMid meet"
-                aria-hidden
-              >
-                <g fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55">
-                  <circle cx="200" cy="200" r="188" />
-                  <circle cx="200" cy="200" r="178" strokeDasharray="2 4" />
-                  <circle cx="200" cy="200" r="160" />
-                  <circle cx="200" cy="200" r="140" strokeDasharray="3 3" opacity="0.4" />
-                </g>
-                <g fill="currentColor" opacity="0.7">
-                  {Array.from({ length: 24 }).map((_, i) => {
-                    const a = (i * Math.PI * 2) / 24;
-                    const cx = (200 + Math.cos(a) * 183).toFixed(2);
-                    const cy = (200 + Math.sin(a) * 183).toFixed(2);
-                    return <circle key={i} cx={cx} cy={cy} r="1.6" />;
-                  })}
-                </g>
-                <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.85">
-                  <circle cx="200" cy="200" r="42" />
-                  <circle cx="200" cy="200" r="30" />
-                  <circle cx="200" cy="200" r="14" />
-                </g>
-                <circle cx="200" cy="200" r="4" fill="currentColor" opacity="0.9" />
-                <g fill="currentColor" opacity="0.32" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.7">
-                  {Array.from({ length: 9 }).map((_, i) => (
-                    <path
-                      key={i}
-                      d="M200 158 C 230 150, 252 142, 268 92 C 244 110, 220 122, 200 140 Z"
-                      transform={`rotate(${(i * 360) / 9} 200 200)`}
-                    />
-                  ))}
-                </g>
-                <g stroke="currentColor" strokeWidth="0.4" opacity="0.3" strokeDasharray="1 4">
-                  <line x1="200" y1="6" x2="200" y2="394" />
-                  <line x1="6" y1="200" x2="394" y2="200" />
-                </g>
-              </svg>
-            </div>
-
-            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
-              {/* ── Header: title + description ───────────────────── */}
-              <div className="grid gap-8 lg:grid-cols-12 lg:gap-16">
-                <div className="lg:col-span-7">
-                  <h2
-                    className="font-bold tracking-[-0.025em] text-white"
-                    style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)", lineHeight: 1.02 }}
-                  >
-                    {dict.video.title}
-                  </h2>
-                  <div className="mt-4 h-[3px] w-20 bg-primary" />
-                  <p className="mt-6 max-w-[42ch] text-[14px] leading-relaxed text-white/60">
-                    {vt.subtitle}
-                  </p>
-                </div>
-                <div className="lg:col-span-5 lg:pt-6">
-                  <p className="text-[13.5px] leading-[1.7] text-white/68">
-                    {dict.video.desc}
-                  </p>
-                </div>
-              </div>
-
-              {/* ── Main grid: video + side panel ─────────────────── */}
-              <div className="mt-10 grid gap-8 lg:grid-cols-12 lg:gap-10">
-                {/* Left: video player */}
-                <div className="lg:col-span-7">
-                  <div className="relative overflow-hidden rounded-xl border border-white/[0.09] bg-[#0b1018] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
-                    <div className="relative aspect-video">
-                      <iframe
-                        src="https://www.youtube-nocookie.com/embed/6pXFGhKW6Lw?rel=0&modestbranding=1"
-                        title={dict.video.iframeTitle}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        loading="lazy"
-                        className="absolute inset-0 h-full w-full border-0"
-                      />
-                    </div>
-                  </div>
-                  <div className="mt-3 flex items-center justify-between font-mono-eng text-[10px] font-medium uppercase tracking-[0.24em] text-white/55">
-                    <span className="text-white/65">{dict.video.iframeTitle}</span>
-                    <span>1080p · HD</span>
-                  </div>
-                </div>
-
-                {/* Right: side panel — 2 buttons + 3 feature cards */}
-                <div className="space-y-3.5 lg:col-span-5">
-                  {/* Big buttons */}
-                  <Link
-                    href={`/${locale}/kurumsal/biz-kimiz`}
-                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
-                  >
-                    <span className="flex min-w-0 items-center gap-3">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
-                        <span
-                          aria-hidden
-                          className="block h-9 w-9 bg-primary"
-                          style={{
-                            maskImage: "url(/images/feature-icons/factory.png)",
-                            WebkitMaskImage: "url(/images/feature-icons/factory.png)",
-                            maskSize: "contain",
-                            WebkitMaskSize: "contain",
-                            maskPosition: "center",
-                            WebkitMaskPosition: "center",
-                            maskRepeat: "no-repeat",
-                            WebkitMaskRepeat: "no-repeat",
-                          }}
-                        />
-                      </span>
-                      <span className="min-w-0">
-                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
-                          {vt.sideButtons.facilities.title}
-                        </p>
-                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
-                          {vt.sideButtons.facilities.desc}
-                        </p>
-                      </span>
-                    </span>
-                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
-                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-                  <Link
-                    href={`/${locale}/kurumsal/referanslar`}
-                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
-                  >
-                    <span className="flex min-w-0 items-center gap-3">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
-                        <span
-                          aria-hidden
-                          className="block h-9 w-9 bg-primary"
-                          style={{
-                            maskImage: "url(/images/feature-icons/trophy.png)",
-                            WebkitMaskImage: "url(/images/feature-icons/trophy.png)",
-                            maskSize: "contain",
-                            WebkitMaskSize: "contain",
-                            maskPosition: "center",
-                            WebkitMaskPosition: "center",
-                            maskRepeat: "no-repeat",
-                            WebkitMaskRepeat: "no-repeat",
-                          }}
-                        />
-                      </span>
-                      <span className="min-w-0">
-                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
-                          {vt.sideButtons.references.title}
-                        </p>
-                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
-                          {vt.sideButtons.references.desc}
-                        </p>
-                      </span>
-                    </span>
-                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
-                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-
-                  {/* Feature cards */}
-                  <div className="space-y-2">
-                    {vt.featureCards.map((fc, i) => (
-                      <div
-                        key={fc.title}
-                        className="flex items-start gap-3.5 rounded-xl border border-white/[0.06] bg-white/[0.025] p-3.5 transition-colors duration-300 hover:border-white/[0.12] hover:bg-white/[0.05]"
-                      >
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/12 text-primary">
-                          {featureIcons[i]}
-                        </span>
-                        <div className="min-w-0">
-                          <p className="text-[13px] font-semibold text-white">{fc.title}</p>
-                          <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">{fc.desc}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* ── Bottom 5-pillar strip ─────────────────────────── */}
-              <div className="mt-10 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.6)] p-6 backdrop-blur-sm sm:p-8">
-                <ul className="grid gap-x-6 gap-y-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-                  {vt.pillars.map((p, i) => (
-                    <li key={p.title} className="flex flex-col items-center text-center">
-                      <span className="flex h-12 w-12 items-center justify-center rounded-full border border-primary/30 bg-primary/8 text-primary">
-                        {pillarIcons[i]}
-                      </span>
-                      <p className="mt-3 text-[12px] font-bold tracking-[0.14em] text-white">{p.title}</p>
-                      <p className="mt-1.5 max-w-[24ch] text-[11px] leading-snug text-white/55">{p.desc}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* ── Bottom CTA strip ──────────────────────────────── */}
-              <div className="mt-6 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.7)] px-6 py-5 backdrop-blur-sm sm:px-8">
-                <div className="flex flex-col items-stretch gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
-                  <div className="flex items-start gap-4">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-primary/35 bg-primary/10 text-primary">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                        <path d="M18.75 8.25v2.25A6.75 6.75 0 0 1 12 17.25v0a6.75 6.75 0 0 1-6.75-6.75V8.25M12 17.25v3M8.25 20.25h7.5M12 3a3 3 0 0 0-3 3v4.5a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <div>
-                      <p className="text-[14.5px] font-semibold text-white">{vt.cta.title}</p>
-                      <p className="mt-0.5 text-[12px] text-white/55">{vt.cta.desc}</p>
-                    </div>
-                  </div>
-                  <Link
-                    href={`/${locale}/iletisim`}
-                    className="group inline-flex shrink-0 items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-                  >
-                    {vt.cta.button}
-                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        );
-      })()}
 
       {/* 06 — FAQ (mockup) & final CTA */}
       <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-10 sm:py-14 md:scroll-mt-[5.5rem]">
@@ -3251,6 +2929,263 @@ export default function HomeClient({
           </aside>
         </div>
       </section>
+
+      {/* Marka tanıtım videosu — footer'dan hemen önce */}
+      {(() => {
+        const vt = getHomeVideoStrings(locale);
+        const featureIconMask = (src: string): React.CSSProperties => ({
+          maskImage: `url(${src})`,
+          WebkitMaskImage: `url(${src})`,
+          maskSize: "contain",
+          WebkitMaskSize: "contain",
+          maskPosition: "center",
+          WebkitMaskPosition: "center",
+          maskRepeat: "no-repeat",
+          WebkitMaskRepeat: "no-repeat",
+        });
+        const featureIcons = [
+          <span key="fc1" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/monitor.png")} aria-hidden />,
+          <span key="fc2" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/chart.png")} aria-hidden />,
+          <span key="fc3" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/globe.png")} aria-hidden />,
+        ];
+        const pillarIcons = [
+          // 1) 3.000 m² Üretim Alanı — fabrika silüeti
+          (
+            <svg key="p1" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <path d="M4 27V14l6 4v-4l6 4v-4l8 4v9" strokeLinejoin="round" strokeLinecap="round" />
+              <path d="M3 27h26" strokeLinecap="round" />
+              <path d="M8 22h2M14 22h2M20 22h2M24 22h2" strokeLinecap="round" />
+              <path d="M22 14V6" strokeLinecap="round" />
+              <path d="M20 6h4" strokeLinecap="round" />
+            </svg>
+          ),
+          // 2) 30+ Ülkeye İhracat — globe + meridian
+          (
+            <svg key="p2" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <circle cx="16" cy="16" r="11" />
+              <ellipse cx="16" cy="16" rx="5" ry="11" />
+              <path d="M5 16h22" strokeLinecap="round" />
+              <path d="M16 5v22" strokeLinecap="round" opacity="0.7" />
+            </svg>
+          ),
+          // 3) CFD Destekli Tasarım — hava akış dalgaları
+          (
+            <svg key="p3" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <path d="M3 11c4-4 8-4 12 0s8 4 12 0" strokeLinecap="round" />
+              <path d="M3 16c4-4 8-4 12 0s8 4 12 0" strokeLinecap="round" />
+              <path d="M3 21c4-4 8-4 12 0s8 4 12 0" strokeLinecap="round" />
+            </svg>
+          ),
+          // 4) Sertifikalı Ürün Ailesi — sertifika madalyası
+          (
+            <svg key="p4" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <circle cx="16" cy="13" r="7" />
+              <path d="M12 19l-2 8 6-3 6 3-2-8" strokeLinejoin="round" strokeLinecap="round" />
+              <path d="M13 13l2.5 2.5L20 11" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          ),
+          // 5) Ar-Ge ve Test Yetkinliği — laboratuvar / beher
+          (
+            <svg key="p5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
+              <path d="M12 4v8L6 25a2 2 0 0 0 1.8 3h16.4A2 2 0 0 0 26 25l-6-13V4" strokeLinejoin="round" strokeLinecap="round" />
+              <path d="M11 4h10" strokeLinecap="round" />
+              <path d="M9 19h14" strokeLinecap="round" opacity="0.7" />
+              <circle cx="14" cy="22" r="0.9" fill="currentColor" />
+              <circle cx="18" cy="24" r="0.9" fill="currentColor" />
+            </svg>
+          ),
+        ];
+
+        return (
+          <section className="relative overflow-hidden bg-[#0e1c31] py-14 text-white sm:py-20">
+            {/* arka plan görseli — tüm kutuyu kaplıyor */}
+            <Image
+              src="/images/home/marka-tanitim-bg.jpg"
+              alt=""
+              fill
+              priority={false}
+              className="pointer-events-none select-none object-cover object-center"
+              sizes="100vw"
+              aria-hidden
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-[#0e1c31]/30"
+              aria-hidden
+            />
+
+            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
+              <div className="grid gap-8 lg:grid-cols-12 lg:gap-16">
+                <div className="lg:col-span-7">
+                  <h2
+                    className="font-bold tracking-[-0.025em] text-white"
+                    style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)", lineHeight: 1.02 }}
+                  >
+                    {dict.video.title}
+                  </h2>
+                  <div className="mt-4 h-[3px] w-20 bg-primary" />
+                  <p className="mt-6 max-w-[42ch] text-[14px] leading-relaxed text-white/60">
+                    {vt.subtitle}
+                  </p>
+                </div>
+                <div className="lg:col-span-5 lg:pt-6">
+                  <p className="text-[13.5px] leading-[1.7] text-white/68">
+                    {dict.video.desc}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-10 grid gap-8 lg:grid-cols-12 lg:gap-10">
+                <div className="lg:col-span-7">
+                  <div className="relative overflow-hidden rounded-xl border border-white/[0.09] bg-[#0b1018] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
+                    <div className="relative aspect-video">
+                      <iframe
+                        src="https://www.youtube-nocookie.com/embed/6pXFGhKW6Lw?rel=0&modestbranding=1"
+                        title={dict.video.iframeTitle}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        loading="lazy"
+                        className="absolute inset-0 h-full w-full border-0"
+                      />
+                    </div>
+                  </div>
+                  <div className="mt-3 flex items-center justify-between font-mono-eng text-[10px] font-medium uppercase tracking-[0.24em] text-white/55">
+                    <span className="text-white/65">{dict.video.iframeTitle}</span>
+                    <span>1080p · HD</span>
+                  </div>
+                </div>
+
+                <div className="space-y-3.5 lg:col-span-5">
+                  <Link
+                    href={`/${locale}/kurumsal/biz-kimiz`}
+                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
+                  >
+                    <span className="flex min-w-0 items-center gap-3">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
+                        <span
+                          aria-hidden
+                          className="block h-9 w-9 bg-primary"
+                          style={{
+                            maskImage: "url(/images/feature-icons/factory.png)",
+                            WebkitMaskImage: "url(/images/feature-icons/factory.png)",
+                            maskSize: "contain",
+                            WebkitMaskSize: "contain",
+                            maskPosition: "center",
+                            WebkitMaskPosition: "center",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskRepeat: "no-repeat",
+                          }}
+                        />
+                      </span>
+                      <span className="min-w-0">
+                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
+                          {vt.sideButtons.facilities.title}
+                        </p>
+                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
+                          {vt.sideButtons.facilities.desc}
+                        </p>
+                      </span>
+                    </span>
+                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                  <Link
+                    href={`/${locale}/kurumsal/referanslar`}
+                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
+                  >
+                    <span className="flex min-w-0 items-center gap-3">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
+                        <span
+                          aria-hidden
+                          className="block h-9 w-9 bg-primary"
+                          style={{
+                            maskImage: "url(/images/feature-icons/trophy.png)",
+                            WebkitMaskImage: "url(/images/feature-icons/trophy.png)",
+                            maskSize: "contain",
+                            WebkitMaskSize: "contain",
+                            maskPosition: "center",
+                            WebkitMaskPosition: "center",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskRepeat: "no-repeat",
+                          }}
+                        />
+                      </span>
+                      <span className="min-w-0">
+                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
+                          {vt.sideButtons.references.title}
+                        </p>
+                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
+                          {vt.sideButtons.references.desc}
+                        </p>
+                      </span>
+                    </span>
+                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+
+                  <div className="space-y-2">
+                    {vt.featureCards.map((fc, i) => (
+                      <div
+                        key={fc.title}
+                        className="flex items-start gap-3.5 rounded-xl border border-white/[0.06] bg-white/[0.025] p-3.5 transition-colors duration-300 hover:border-white/[0.12] hover:bg-white/[0.05]"
+                      >
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/12 text-primary">
+                          {featureIcons[i]}
+                        </span>
+                        <div className="min-w-0">
+                          <p className="text-[13px] font-semibold text-white">{fc.title}</p>
+                          <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">{fc.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.6)] p-6 backdrop-blur-sm sm:p-8">
+                <ul className="grid gap-x-6 gap-y-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+                  {vt.pillars.map((p, i) => (
+                    <li key={p.title} className="flex flex-col items-center text-center">
+                      <span className="flex h-12 w-12 items-center justify-center rounded-full border border-primary/30 bg-primary/8 text-primary">
+                        {pillarIcons[i]}
+                      </span>
+                      <p className="mt-3 text-[12px] font-bold tracking-[0.14em] text-white">{p.title}</p>
+                      <p className="mt-1.5 max-w-[24ch] text-[11px] leading-snug text-white/55">{p.desc}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-6 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.7)] px-6 py-5 backdrop-blur-sm sm:px-8">
+                <div className="flex flex-col items-stretch gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+                  <div className="flex items-start gap-4">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-primary/35 bg-primary/10 text-primary">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <path d="M18.75 8.25v2.25A6.75 6.75 0 0 1 12 17.25v0a6.75 6.75 0 0 1-6.75-6.75V8.25M12 17.25v3M8.25 20.25h7.5M12 3a3 3 0 0 0-3 3v4.5a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p className="text-[14.5px] font-semibold text-white">{vt.cta.title}</p>
+                      <p className="mt-0.5 text-[12px] text-white/55">{vt.cta.desc}</p>
+                    </div>
+                  </div>
+                  <Link
+                    href={`/${locale}/iletisim`}
+                    className="group inline-flex shrink-0 items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                  >
+                    {vt.cta.button}
+                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
     </main>
   );

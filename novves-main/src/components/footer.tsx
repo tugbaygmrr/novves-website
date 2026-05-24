@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FooterCookieSettings } from "@/components/footer-cookie-settings";
 import { FooterNewsletter } from "@/components/footer-newsletter";
 import { getFooterStrings } from "@/components/footer-i18n";
+import { locales, localeUi } from "@/i18n/config";
 
 // Kept for backwards compatibility with the existing layout.tsx caller —
 // the new footer no longer reads from `dict` (uses centralized footer-i18n).
@@ -588,31 +589,8 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               </div>
             </div>
 
-            {/* Language */}
-            <div className="lg:col-span-2">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/88">{t.langTitle}</p>
-              <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                {(["tr", "en", "ru", "ar"] as const).map((code) => {
-                  const isActive = locale === code;
-                  return (
-                    <Link
-                      key={code}
-                      href={`/${code}`}
-                      className={`flex h-8 w-8 items-center justify-center rounded-full text-[10px] font-bold tracking-wide transition-all duration-300 ${
-                        isActive
-                          ? "bg-primary text-white shadow-md shadow-primary/30"
-                          : "border border-white/15 bg-white/[0.04] text-white/65 hover:border-primary/40 hover:text-white"
-                      }`}
-                    >
-                      {code.toUpperCase()}
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-
             {/* Application areas */}
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-6">
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/88">{t.applicationAreas.title}</p>
               <ul className="mt-3 grid grid-cols-6 gap-x-1 gap-y-2">
                 {t.applicationAreas.items.map((a, i) => (
@@ -641,6 +619,35 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 {t.globalCaption.line2}
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ─ Dil seçimi (en altta, tüm diller) ──────────────────────────── */}
+      <div className="relative z-10 border-t border-white/[0.06]">
+        <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
+          <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-white/88 sm:text-left">
+            {t.langTitle}
+          </p>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 sm:justify-start">
+            {locales.map((code) => {
+              const isActive = locale === code;
+              return (
+                <Link
+                  key={code}
+                  href={`/${code}`}
+                  title={localeUi[code].label}
+                  aria-label={localeUi[code].label}
+                  className={`flex h-8 w-8 items-center justify-center rounded-full text-[10px] font-bold tracking-wide transition-all duration-300 ${
+                    isActive
+                      ? "bg-primary text-white shadow-md shadow-primary/30"
+                      : "border border-white/15 bg-white/[0.04] text-white/65 hover:border-primary/40 hover:text-white"
+                  }`}
+                >
+                  {localeUi[code].short}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

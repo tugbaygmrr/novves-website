@@ -21,7 +21,7 @@ export type HomeVideoStrings = {
 };
 
 const tr: HomeVideoStrings = {
-  subtitle: "NOVVES'in mühendislik yaklaşımı, üretim gücü ve global vizyonu.",
+  subtitle: "NOVVES'in üretim gücünü, mühendislik yaklaşımını ve global vizyonunu yakından tanıyın.",
   sideButtons: {
     facilities: {
       title: "Üretim Tesislerimiz",
@@ -47,36 +47,21 @@ const tr: HomeVideoStrings = {
     },
   ],
   pillars: [
-    {
-      title: "GÜVENLİK",
-      desc: "Duman tahliye ve yangın güvenliği için en güvenilir çözümler.",
-    },
-    {
-      title: "PERFORMANS",
-      desc: "Yüksek verimli fan sistemleri ile maksimum performans.",
-    },
-    {
-      title: "MÜHENDİSLİK",
-      desc: "İnovatif mühendislik yaklaşımı ile özelleştirilmiş çözümler.",
-    },
-    {
-      title: "KALİTE",
-      desc: "Uluslararası standartlara uygun üretim ve kalite kontrol.",
-    },
-    {
-      title: "SÜRDÜRÜLEBİLİRLİK",
-      desc: "Enerji verimliliği ve çevre dostu çözümler.",
-    },
+    { title: "3.000 m² Üretim Alanı", desc: "Modern üretim altyapısı" },
+    { title: "30+ Ülkeye İhracat", desc: "Global proje deneyimi" },
+    { title: "CFD Destekli Tasarım", desc: "Mühendislik temelli çözümler" },
+    { title: "Sertifikalı Ürün Ailesi", desc: "BSI, ATEX ve uluslararası standartlar" },
+    { title: "Ar-Ge ve Test Yetkinliği", desc: "Ölçülebilir performans" },
   ],
   cta: {
-    title: "Projeniz için mühendislik desteğine mi ihtiyacınız var?",
-    desc: "Uzman ekibimiz, projenizin her aşamasında yanınızda.",
+    title: "Projeniz için doğru hava çözümünü birlikte tasarlayalım.",
+    desc: "Fan, duman tahliye, klima santrali ve motor teknolojilerinde uzman ekibimizle projelerinize özel mühendislik desteği sunuyoruz.",
     button: "Projenizi Paylaşın",
   },
 };
 
 const en: HomeVideoStrings = {
-  subtitle: "The engineering approach, manufacturing power and global vision of NOVVES.",
+  subtitle: "Get an up-close look at NOVVES's manufacturing strength, engineering approach and global vision.",
   sideButtons: {
     facilities: {
       title: "Our Facilities",
@@ -102,36 +87,21 @@ const en: HomeVideoStrings = {
     },
   ],
   pillars: [
-    {
-      title: "SAFETY",
-      desc: "Trusted solutions for smoke extraction and fire safety.",
-    },
-    {
-      title: "PERFORMANCE",
-      desc: "Maximum performance with high-efficiency fan systems.",
-    },
-    {
-      title: "ENGINEERING",
-      desc: "Tailored solutions backed by innovative engineering.",
-    },
-    {
-      title: "QUALITY",
-      desc: "Manufacturing and quality control to international standards.",
-    },
-    {
-      title: "SUSTAINABILITY",
-      desc: "Energy-efficient and environmentally friendly solutions.",
-    },
+    { title: "3,000 m² Production Area", desc: "Modern manufacturing infrastructure" },
+    { title: "Exports to 30+ Countries", desc: "Global project experience" },
+    { title: "CFD-Powered Design", desc: "Engineering-driven solutions" },
+    { title: "Certified Product Family", desc: "BSI, ATEX and international standards" },
+    { title: "R&D and Testing Capability", desc: "Measurable performance" },
   ],
   cta: {
-    title: "Need engineering support for your project?",
-    desc: "Our expert team supports you at every stage of your project.",
+    title: "Let's design the right air solution for your project together.",
+    desc: "With our expert team in fan, smoke evacuation, AHU and motor technologies, we deliver project-specific engineering support.",
     button: "Share Your Project",
   },
 };
 
 const ru: HomeVideoStrings = {
-  subtitle: "Инженерный подход, производственная мощность и глобальное видение NOVVES.",
+  subtitle: "Познакомьтесь поближе с производственной мощью, инженерным подходом и глобальной визией NOVVES.",
   sideButtons: {
     facilities: {
       title: "Наши Производства",
@@ -148,21 +118,21 @@ const ru: HomeVideoStrings = {
     { title: "Глобальный опыт проектов", desc: "Экспорт в 30+ стран и сотни успешных проектов." },
   ],
   pillars: [
-    { title: "БЕЗОПАСНОСТЬ", desc: "Надёжные решения для дымоудаления и пожарной безопасности." },
-    { title: "ПРОИЗВОДИТЕЛЬНОСТЬ", desc: "Максимальная эффективность благодаря высокоэффективным вентиляторам." },
-    { title: "ИНЖЕНЕРИЯ", desc: "Индивидуальные решения, подкреплённые инновационной инженерией." },
-    { title: "КАЧЕСТВО", desc: "Производство и контроль качества по международным стандартам." },
-    { title: "УСТОЙЧИВОСТЬ", desc: "Энергоэффективные и экологичные решения." },
+    { title: "3 000 м² производственная площадь", desc: "Современная производственная инфраструктура" },
+    { title: "Экспорт в 30+ стран", desc: "Глобальный проектный опыт" },
+    { title: "Проектирование на базе CFD", desc: "Инженерные решения" },
+    { title: "Сертифицированный модельный ряд", desc: "BSI, ATEX и международные стандарты" },
+    { title: "НИОКР и испытания", desc: "Измеримая производительность" },
   ],
   cta: {
-    title: "Нужна инженерная поддержка для вашего проекта?",
-    desc: "Наша команда экспертов рядом с вами на каждом этапе.",
+    title: "Давайте вместе спроектируем правильное воздушное решение для вашего проекта.",
+    desc: "С нашей экспертной командой в области вентиляторов, дымоудаления, центральных кондиционеров и моторных технологий мы предоставляем инженерную поддержку под ваш проект.",
     button: "Поделиться проектом",
   },
 };
 
 const ar: HomeVideoStrings = {
-  subtitle: "النهج الهندسي والقدرة الإنتاجية والرؤية العالمية لـ NOVVES.",
+  subtitle: "تعرّف عن قرب على قوة الإنتاج والنهج الهندسي والرؤية العالمية لدى NOVVES.",
   sideButtons: {
     facilities: {
       title: "منشآتنا الإنتاجية",
@@ -179,21 +149,21 @@ const ar: HomeVideoStrings = {
     { title: "خبرة مشاريع عالمية", desc: "تصدير لأكثر من 30 دولة ومئات المشاريع الناجحة." },
   ],
   pillars: [
-    { title: "السلامة", desc: "حلول موثوقة لاستخراج الدخان والسلامة من الحرائق." },
-    { title: "الأداء", desc: "أداء أقصى مع مراوح عالية الكفاءة." },
-    { title: "الهندسة", desc: "حلول مخصصة مدعومة بهندسة مبتكرة." },
-    { title: "الجودة", desc: "تصنيع ومراقبة جودة وفق المعايير الدولية." },
-    { title: "الاستدامة", desc: "حلول موفرة للطاقة وصديقة للبيئة." },
+    { title: "3000 م² مساحة إنتاج", desc: "بنية تحتية إنتاجية حديثة" },
+    { title: "تصدير لأكثر من 30 دولة", desc: "خبرة مشاريع عالمية" },
+    { title: "تصميم مدعوم بـ CFD", desc: "حلول هندسية" },
+    { title: "عائلة منتجات معتمدة", desc: "معايير BSI وATEX والمعايير الدولية" },
+    { title: "كفاءات البحث والتطوير والاختبار", desc: "أداء قابل للقياس" },
   ],
   cta: {
-    title: "هل تحتاج إلى دعم هندسي لمشروعك؟",
-    desc: "فريق الخبراء لدينا يدعمك في كل مرحلة من مشروعك.",
+    title: "لنصمم معًا حل الهواء المناسب لمشروعك.",
+    desc: "بفريقنا الخبير في المراوح وإجلاء الدخان ووحدات معالجة الهواء وتقنيات المحركات، نقدم دعمًا هندسيًا مخصصًا لمشاريعك.",
     button: "شارك مشروعك",
   },
 };
 
 const de: HomeVideoStrings = {
-  subtitle: "Engineering-Ansatz, Produktionskraft und globale Vision von NOVVES.",
+  subtitle: "Erleben Sie aus nächster Nähe NOVVES' Produktionskraft, Engineering-Ansatz und globale Vision.",
   sideButtons: {
     facilities: {
       title: "Unsere Anlagen",
@@ -210,21 +180,21 @@ const de: HomeVideoStrings = {
     { title: "Globale Projekterfahrung", desc: "Export in 30+ Länder und hunderte erfolgreiche Projekte." },
   ],
   pillars: [
-    { title: "SICHERHEIT", desc: "Verlässliche Lösungen für Entrauchung und Brandschutz." },
-    { title: "LEISTUNG", desc: "Maximale Performance durch hocheffiziente Ventilatorsysteme." },
-    { title: "ENGINEERING", desc: "Maßgeschneiderte Lösungen durch innovatives Engineering." },
-    { title: "QUALITÄT", desc: "Fertigung und Qualitätssicherung nach internationalen Normen." },
-    { title: "NACHHALTIGKEIT", desc: "Energieeffiziente und umweltfreundliche Lösungen." },
+    { title: "3.000 m² Produktionsfläche", desc: "Moderne Fertigungsinfrastruktur" },
+    { title: "Export in 30+ Länder", desc: "Globale Projekterfahrung" },
+    { title: "CFD-basiertes Design", desc: "Ingenieurgetriebene Lösungen" },
+    { title: "Zertifizierte Produktfamilie", desc: "BSI, ATEX und internationale Normen" },
+    { title: "F&E- und Prüfkompetenz", desc: "Messbare Leistung" },
   ],
   cta: {
-    title: "Brauchen Sie technische Unterstützung für Ihr Projekt?",
-    desc: "Unser Expertenteam begleitet Sie in jeder Projektphase.",
+    title: "Lassen Sie uns gemeinsam die passende Luftlösung für Ihr Projekt entwerfen.",
+    desc: "Mit unserem Expertenteam in Ventilatoren, Entrauchung, Klimazentralgeräten und Motortechnologien bieten wir projektspezifische Engineering-Unterstützung.",
     button: "Projekt teilen",
   },
 };
 
 const fr: HomeVideoStrings = {
-  subtitle: "L'approche d'ingénierie, la puissance de production et la vision globale de NOVVES.",
+  subtitle: "Découvrez de près la puissance de production, l'approche ingénierie et la vision mondiale de NOVVES.",
   sideButtons: {
     facilities: {
       title: "Nos Installations",
@@ -241,15 +211,15 @@ const fr: HomeVideoStrings = {
     { title: "Expérience projet globale", desc: "Exports vers 30+ pays et des centaines de projets réussis." },
   ],
   pillars: [
-    { title: "SÉCURITÉ", desc: "Solutions fiables pour désenfumage et sécurité incendie." },
-    { title: "PERFORMANCE", desc: "Performance maximale grâce à des ventilateurs haute efficacité." },
-    { title: "INGÉNIERIE", desc: "Solutions sur mesure portées par une ingénierie innovante." },
-    { title: "QUALITÉ", desc: "Fabrication et contrôle qualité aux normes internationales." },
-    { title: "DURABILITÉ", desc: "Solutions écoénergétiques et respectueuses de l'environnement." },
+    { title: "3 000 m² de production", desc: "Infrastructure de fabrication moderne" },
+    { title: "Export vers 30+ pays", desc: "Expérience projet mondiale" },
+    { title: "Conception assistée par CFD", desc: "Solutions à base d'ingénierie" },
+    { title: "Gamme produit certifiée", desc: "Normes BSI, ATEX et internationales" },
+    { title: "R&D et capacités d'essai", desc: "Performances mesurables" },
   ],
   cta: {
-    title: "Besoin d'un accompagnement technique pour votre projet ?",
-    desc: "Notre équipe d'experts vous accompagne à chaque étape.",
+    title: "Concevons ensemble la solution aéraulique adaptée à votre projet.",
+    desc: "Avec notre équipe d'experts en ventilateurs, désenfumage, centrales de traitement d'air et technologies moteur, nous offrons un accompagnement d'ingénierie sur mesure.",
     button: "Partager votre projet",
   },
 };
@@ -257,7 +227,7 @@ const fr: HomeVideoStrings = {
 /* ── Italian ─────────────────────────────────────────────────────────── */
 
 const it: HomeVideoStrings = {
-  subtitle: "L'approccio ingegneristico, la capacità produttiva e la visione globale di NOVVES.",
+  subtitle: "Scopri da vicino la forza produttiva, l'approccio ingegneristico e la visione globale di NOVVES.",
   sideButtons: {
     facilities: {
       title: "I Nostri Impianti",
@@ -274,15 +244,15 @@ const it: HomeVideoStrings = {
     { title: "Esperienza progetti globale", desc: "Esportazioni in oltre 30 paesi e centinaia di progetti completati." },
   ],
   pillars: [
-    { title: "SICUREZZA", desc: "Soluzioni affidabili per evacuazione fumi e sicurezza antincendio." },
-    { title: "PRESTAZIONI", desc: "Massima resa con sistemi di ventilazione ad alta efficienza." },
-    { title: "INGEGNERIA", desc: "Soluzioni su misura con un approccio ingegneristico innovativo." },
-    { title: "QUALITÀ", desc: "Produzione e controllo qualità secondo standard internazionali." },
-    { title: "SOSTENIBILITÀ", desc: "Soluzioni efficienti dal punto di vista energetico ed ecocompatibili." },
+    { title: "3.000 m² di produzione", desc: "Infrastruttura produttiva moderna" },
+    { title: "Export in 30+ Paesi", desc: "Esperienza di progetto globale" },
+    { title: "Progettazione con CFD", desc: "Soluzioni basate sull'ingegneria" },
+    { title: "Famiglia prodotti certificata", desc: "Standard BSI, ATEX e internazionali" },
+    { title: "Competenze R&S e test", desc: "Prestazioni misurabili" },
   ],
   cta: {
-    title: "Hai bisogno di supporto ingegneristico per il tuo progetto?",
-    desc: "Il nostro team di esperti ti accompagna in ogni fase del progetto.",
+    title: "Progettiamo insieme la giusta soluzione aeraulica per il tuo progetto.",
+    desc: "Con il nostro team di esperti in ventilatori, evacuazione fumi, unità di trattamento aria e tecnologie motore, offriamo un supporto ingegneristico su misura.",
     button: "Condividi il tuo progetto",
   },
 };
@@ -290,7 +260,7 @@ const it: HomeVideoStrings = {
 /* ── Spanish ─────────────────────────────────────────────────────────── */
 
 const es: HomeVideoStrings = {
-  subtitle: "El enfoque de ingeniería, la capacidad de producción y la visión global de NOVVES.",
+  subtitle: "Conozca de cerca la capacidad de producción, el enfoque de ingeniería y la visión global de NOVVES.",
   sideButtons: {
     facilities: {
       title: "Nuestras Instalaciones",
@@ -307,15 +277,15 @@ const es: HomeVideoStrings = {
     { title: "Experiencia global en proyectos", desc: "Exportaciones a más de 30 países y cientos de proyectos exitosos." },
   ],
   pillars: [
-    { title: "SEGURIDAD", desc: "Soluciones fiables para extracción de humos y seguridad contra incendios." },
-    { title: "RENDIMIENTO", desc: "Máximo rendimiento con sistemas de ventilación de alta eficiencia." },
-    { title: "INGENIERÍA", desc: "Soluciones a medida respaldadas por una ingeniería innovadora." },
-    { title: "CALIDAD", desc: "Fabricación y control de calidad según normas internacionales." },
-    { title: "SOSTENIBILIDAD", desc: "Soluciones eficientes energéticamente y respetuosas con el medio ambiente." },
+    { title: "3.000 m² de producción", desc: "Infraestructura de fabricación moderna" },
+    { title: "Exportación a más de 30 países", desc: "Experiencia de proyecto global" },
+    { title: "Diseño asistido por CFD", desc: "Soluciones basadas en ingeniería" },
+    { title: "Familia de productos certificada", desc: "BSI, ATEX y normas internacionales" },
+    { title: "Capacidad de I+D y ensayos", desc: "Rendimiento medible" },
   ],
   cta: {
-    title: "¿Necesitas soporte de ingeniería para tu proyecto?",
-    desc: "Nuestro equipo de expertos te acompaña en cada etapa.",
+    title: "Diseñemos juntos la solución de aire adecuada para tu proyecto.",
+    desc: "Con nuestro equipo experto en ventiladores, evacuación de humos, climatizadores y tecnologías de motor, ofrecemos soporte de ingeniería a medida.",
     button: "Comparte tu proyecto",
   },
 };
@@ -323,7 +293,7 @@ const es: HomeVideoStrings = {
 /* ── Azerbaijani (close to Turkish) ──────────────────────────────────── */
 
 const az: HomeVideoStrings = {
-  subtitle: "NOVVES-in mühəndislik yanaşması, istehsal gücü və qlobal vizyonu.",
+  subtitle: "NOVVES-in istehsal gücünü, mühəndislik yanaşmasını və qlobal vizionunu yaxından tanıyın.",
   sideButtons: {
     facilities: {
       title: "İstehsal Müəssisələrimiz",
@@ -340,15 +310,15 @@ const az: HomeVideoStrings = {
     { title: "Qlobal layihə təcrübəsi", desc: "30+ ölkəyə ixracat və yüzlərlə uğurlu layihə tətbiqi." },
   ],
   pillars: [
-    { title: "TƏHLÜKƏSİZLİK", desc: "Tüstü tahliyəsi və yanğın təhlükəsizliyi üçün etibarlı həllər." },
-    { title: "PERFORMANS", desc: "Yüksək səmərəli fan sistemləri ilə maksimum performans." },
-    { title: "MÜHƏNDİSLİK", desc: "İnnovativ mühəndislik yanaşması ilə fərdiləşdirilmiş həllər." },
-    { title: "KEYFİYYƏT", desc: "Beynəlxalq standartlara uyğun istehsal və keyfiyyət nəzarəti." },
-    { title: "DAYANIQLILIQ", desc: "Enerji səmərəli və ekoloji həllər." },
+    { title: "3.000 m² İstehsal Sahəsi", desc: "Müasir istehsal infrastrukturu" },
+    { title: "30+ Ölkəyə İxrac", desc: "Qlobal layihə təcrübəsi" },
+    { title: "CFD Dəstəkli Dizayn", desc: "Mühəndislik əsaslı həllər" },
+    { title: "Sertifikatlı Məhsul Ailəsi", desc: "BSI, ATEX və beynəlxalq standartlar" },
+    { title: "Ar-Ge və Test Bacarığı", desc: "Ölçüləbilən performans" },
   ],
   cta: {
-    title: "Layihəniz üçün mühəndislik dəstəyinə ehtiyacınız var?",
-    desc: "Mütəxəssis komandamız layihənizin hər mərhələsində yanınızdadır.",
+    title: "Layihəniz üçün doğru hava həllini birlikdə tasarlayalım.",
+    desc: "Fan, tüstü təxliyyəsi, klima qurğusu və mühərrik texnologiyalarındakı mütəxəssis komandamızla layihələrinizə özəl mühəndislik dəstəyi təqdim edirik.",
     button: "Layihənizi paylaşın",
   },
 };
@@ -356,7 +326,7 @@ const az: HomeVideoStrings = {
 /* ── Kazakh ──────────────────────────────────────────────────────────── */
 
 const kk: HomeVideoStrings = {
-  subtitle: "NOVVES-тің инженерлік тәсілі, өндірістік қуаты және жаһандық көзқарасы.",
+  subtitle: "NOVVES-тің өндірістік қуатын, инженерлік тәсілін және жаһандық визиясын жақыннан танып біліңіз.",
   sideButtons: {
     facilities: {
       title: "Өндірістік Кешеніміз",
@@ -373,15 +343,15 @@ const kk: HomeVideoStrings = {
     { title: "Жаһандық жоба тәжірибесі", desc: "30+ елге экспорт және жүздеген сәтті жоба." },
   ],
   pillars: [
-    { title: "ҚАУІПСІЗДІК", desc: "Түтін шығару және өрт қауіпсіздігі үшін сенімді шешімдер." },
-    { title: "ӨНІМДІЛІК", desc: "Жоғары тиімді желдеткіш жүйелерімен ең жоғары өнімділік." },
-    { title: "ИНЖЕНЕРИЯ", desc: "Инновациялық инженериямен жасалған бейімделген шешімдер." },
-    { title: "САПА", desc: "Халықаралық стандарттарға сай өндіріс және сапа бақылауы." },
-    { title: "ТҰРАҚТЫЛЫҚ", desc: "Энергияны үнемдейтін және экологиялық таза шешімдер." },
+    { title: "3.000 м² Өндірістік Аумақ", desc: "Заманауи өндірістік инфрақұрылым" },
+    { title: "30+ Елге Экспорт", desc: "Жаһандық жоба тәжірибесі" },
+    { title: "CFD Қолдау Дизайн", desc: "Инженерлік шешімдер" },
+    { title: "Сертификатталған Өнім Ассортименті", desc: "BSI, ATEX және халықаралық стандарттар" },
+    { title: "Ар-Ге және Сынақ Қабілеті", desc: "Өлшенетін өнімділік" },
   ],
   cta: {
-    title: "Жобаңыз үшін инженерлік қолдау керек пе?",
-    desc: "Біздің сарапшылар тобы жобаңыздың әр кезеңінде сізбен бірге.",
+    title: "Жобаңыз үшін дұрыс ауа шешімін бірге жасайық.",
+    desc: "Желдеткіш, түтін шығару, кондиционер агрегаты және қозғалтқыш технологияларындағы сарапшы тобымызбен жобаларыңызға арнайы инженерлік қолдау ұсынамыз.",
     button: "Жобаңызды бөлісіңіз",
   },
 };
@@ -389,7 +359,7 @@ const kk: HomeVideoStrings = {
 /* ── Tajik ───────────────────────────────────────────────────────────── */
 
 const tg: HomeVideoStrings = {
-  subtitle: "Равиши муҳандисӣ, иқтидори истеҳсолӣ ва биниши глобалии NOVVES.",
+  subtitle: "Бо иқтидори истеҳсолот, равиши муҳандисӣ ва нигоҳи ҷаҳонии NOVVES аз наздик шинос шавед.",
   sideButtons: {
     facilities: {
       title: "Истеҳсолотҳои Мо",
@@ -406,15 +376,15 @@ const tg: HomeVideoStrings = {
     { title: "Таҷрибаи глобалии лоиҳаҳо", desc: "Содирот ба зиёда аз 30 кишвар ва садҳо лоиҳаи муваффақ." },
   ],
   pillars: [
-    { title: "АМНИЯТ", desc: "Ҳалли боэътимод барои хориҷ кардани дуд ва амнияти оташ." },
-    { title: "САМАРАНОКӢ", desc: "Самаранокии баландтарин бо системаҳои самаранокӣ." },
-    { title: "МУҲАНДИСӢ", desc: "Ҳалли мутобиқшуда бо равиши инноватсионии муҳандисӣ." },
-    { title: "СИФАТ", desc: "Истеҳсолот ва назорати сифат тибқи стандартҳои байналмилалӣ." },
-    { title: "УСТУВОРӢ", desc: "Ҳалли самараноки энергетикӣ ва дӯсти муҳити зист." },
+    { title: "3.000 м² Майдони истеҳсолот", desc: "Инфрасохтори истеҳсолоти муосир" },
+    { title: "Содирот ба 30+ кишвар", desc: "Таҷрибаи лоиҳавии ҷаҳонӣ" },
+    { title: "Тарҳрезии бо CFD дастгиришуда", desc: "Ҳалли муҳандисӣ" },
+    { title: "Хонадони маҳсулоти сертификатсияшуда", desc: "Стандартҳои BSI, ATEX ва байналмилалӣ" },
+    { title: "Қобилияти ТТР ва Санҷиш", desc: "Иҷрои қобили чен" },
   ],
   cta: {
-    title: "Барои лоиҳаатон дастгирии муҳандисӣ лозим аст?",
-    desc: "Дастаи коршиносони мо дар ҳар марҳилаи лоиҳа дар канори шумо.",
+    title: "Барои лоиҳаи шумо ҳалли дурусти ҳаворо якҷоя тарҳрезӣ кунем.",
+    desc: "Бо дастаи коршиносонамон дар вентиляторҳо, ихроҷи дуд, агрегатҳои кондитсионерӣ ва технологияҳои муҳаррик дастгирии муҳандисии махсуси лоиҳавиро пешниҳод мекунем.",
     button: "Лоиҳаатонро мубодила кунед",
   },
 };
@@ -422,7 +392,7 @@ const tg: HomeVideoStrings = {
 /* ── Chinese (Simplified) ────────────────────────────────────────────── */
 
 const zh: HomeVideoStrings = {
-  subtitle: "NOVVES 的工程理念、生产能力与全球视野。",
+  subtitle: "近距离了解 NOVVES 的制造实力、工程方法与全球愿景。",
   sideButtons: {
     facilities: {
       title: "我们的工厂",
@@ -439,15 +409,15 @@ const zh: HomeVideoStrings = {
     { title: "全球项目经验", desc: "出口至 30 多个国家,完成数百个成功项目。" },
   ],
   pillars: [
-    { title: "安全", desc: "可靠的排烟与防火安全解决方案。" },
-    { title: "性能", desc: "高效风机系统带来卓越性能。" },
-    { title: "工程", desc: "通过创新工程提供定制化方案。" },
-    { title: "品质", desc: "符合国际标准的生产与质量控制。" },
-    { title: "可持续性", desc: "节能且环保的解决方案。" },
+    { title: "3,000 平米生产面积", desc: "现代化制造基础设施" },
+    { title: "出口至 30+ 国家", desc: "全球项目经验" },
+    { title: "CFD 驱动的设计", desc: "工程导向的解决方案" },
+    { title: "认证产品家族", desc: "BSI、ATEX 及国际标准" },
+    { title: "研发与测试能力", desc: "可量化的性能" },
   ],
   cta: {
-    title: "您的项目需要工程支持吗?",
-    desc: "我们的专家团队在项目每个阶段为您提供支持。",
+    title: "让我们一起为您的项目设计合适的气流解决方案。",
+    desc: "凭借在风机、排烟、空调机组和电机技术方面的专家团队,我们为您的项目提供量身定制的工程支持。",
     button: "分享您的项目",
   },
 };
@@ -455,7 +425,7 @@ const zh: HomeVideoStrings = {
 /* ── Urdu ────────────────────────────────────────────────────────────── */
 
 const ur: HomeVideoStrings = {
-  subtitle: "NOVVES کا انجینئرنگ نقطۂ نظر، پیداواری طاقت اور عالمی وژن۔",
+  subtitle: "NOVVES کی پیداواری طاقت، انجینئرنگ اپروچ اور عالمی ویژن کو قریب سے جانیں۔",
   sideButtons: {
     facilities: {
       title: "ہماری سہولیات",
@@ -472,15 +442,15 @@ const ur: HomeVideoStrings = {
     { title: "عالمی منصوبہ تجربہ", desc: "30+ ممالک کو برآمد اور سینکڑوں کامیاب منصوبے۔" },
   ],
   pillars: [
-    { title: "حفاظت", desc: "دھواں نکالنے اور آگ سے تحفظ کے قابل اعتماد حل۔" },
-    { title: "کارکردگی", desc: "اعلیٰ کارکردگی والے فین سسٹمز سے زیادہ سے زیادہ پرفارمنس۔" },
-    { title: "انجینئرنگ", desc: "اختراعی انجینئرنگ کے ساتھ حسبِ ضرورت حل۔" },
-    { title: "کوالٹی", desc: "بین الاقوامی معیارات کے مطابق پیداوار اور کوالٹی کنٹرول۔" },
-    { title: "پائیداری", desc: "توانائی کی کفایت اور ماحول دوست حل۔" },
+    { title: "3,000 m² پیداواری رقبہ", desc: "جدید مینوفیکچرنگ انفراسٹرکچر" },
+    { title: "30+ ممالک کو برآمد", desc: "عالمی پروجیکٹ تجربہ" },
+    { title: "CFD سپورٹڈ ڈیزائن", desc: "انجینئرنگ پر مبنی حل" },
+    { title: "سرٹیفائیڈ پروڈکٹ فیملی", desc: "BSI، ATEX اور بین الاقوامی معیارات" },
+    { title: "تحقیق و ترقی اور ٹیسٹنگ صلاحیت", desc: "قابلِ پیمائش کارکردگی" },
   ],
   cta: {
-    title: "آپ کے منصوبے کے لیے انجینئرنگ سپورٹ درکار ہے؟",
-    desc: "ہماری ماہرین کی ٹیم منصوبے کے ہر مرحلے پر آپ کے ساتھ ہے۔",
+    title: "آئیے آپ کے منصوبے کے لیے درست ہوا کا حل مل کر ڈیزائن کریں۔",
+    desc: "فین، دھواں نکاسی، ایئر ہینڈلنگ یونٹ اور موٹر ٹیکنالوجی میں ہماری ماہر ٹیم کے ساتھ آپ کے منصوبوں کے لیے مخصوص انجینئرنگ سپورٹ فراہم کرتے ہیں۔",
     button: "اپنا منصوبہ شیئر کریں",
   },
 };
@@ -488,7 +458,7 @@ const ur: HomeVideoStrings = {
 /* ── Lithuanian ──────────────────────────────────────────────────────── */
 
 const lt: HomeVideoStrings = {
-  subtitle: "NOVVES inžinerinis požiūris, gamybos pajėgumas ir globali vizija.",
+  subtitle: "Iš arti susipažinkite su NOVVES gamybos galia, inžineriniu požiūriu ir globalia vizija.",
   sideButtons: {
     facilities: {
       title: "Mūsų Gamyklos",
@@ -505,15 +475,15 @@ const lt: HomeVideoStrings = {
     { title: "Pasaulinė projektų patirtis", desc: "Eksportas į 30+ šalių ir šimtai sėkmingų projektų." },
   ],
   pillars: [
-    { title: "SAUGA", desc: "Patikimi dūmų šalinimo ir priešgaisrinės saugos sprendimai." },
-    { title: "OPTIMALUMAS", desc: "Maksimalus našumas su didelio efektyvumo ventiliatorių sistemomis." },
-    { title: "INŽINERIJA", desc: "Pritaikyti sprendimai, paremti inovatyvia inžinerija." },
-    { title: "KOKYBĖ", desc: "Gamyba ir kokybės kontrolė pagal tarptautinius standartus." },
-    { title: "TVARUMAS", desc: "Energiją tausojantys ir aplinkai draugiški sprendimai." },
+    { title: "3 000 m² gamybos plotas", desc: "Moderni gamybos infrastruktūra" },
+    { title: "Eksportas į 30+ šalių", desc: "Globali projekto patirtis" },
+    { title: "CFD pagrindu projektavimas", desc: "Inžinerinės sprendimo bazės" },
+    { title: "Sertifikuota produktų šeima", desc: "BSI, ATEX ir tarptautiniai standartai" },
+    { title: "MTEP ir bandymų pajėgumai", desc: "Matuojamas našumas" },
   ],
   cta: {
-    title: "Reikia inžinerinės pagalbos jūsų projektui?",
-    desc: "Mūsų ekspertų komanda yra šalia kiekvienoje projekto stadijoje.",
+    title: "Sukurkime kartu tinkamą oro sprendimą jūsų projektui.",
+    desc: "Su ekspertų komanda ventiliatorių, dūmų šalinimo, oro paruošimo įrenginių ir variklių technologijų srityse teikiame projektui pritaikytą inžinerinę pagalbą.",
     button: "Pasidalinkite projektu",
   },
 };
@@ -521,7 +491,7 @@ const lt: HomeVideoStrings = {
 /* ── Polish ──────────────────────────────────────────────────────────── */
 
 const pl: HomeVideoStrings = {
-  subtitle: "Podejście inżynieryjne, moce produkcyjne i globalna wizja NOVVES.",
+  subtitle: "Poznaj z bliska siłę produkcyjną, podejście inżynieryjne i globalną wizję NOVVES.",
   sideButtons: {
     facilities: {
       title: "Nasze Zakłady",
@@ -538,15 +508,15 @@ const pl: HomeVideoStrings = {
     { title: "Globalne doświadczenie projektowe", desc: "Eksport do ponad 30 krajów i setki zrealizowanych projektów." },
   ],
   pillars: [
-    { title: "BEZPIECZEŃSTWO", desc: "Niezawodne rozwiązania oddymiania i ochrony przeciwpożarowej." },
-    { title: "WYDAJNOŚĆ", desc: "Maksymalna wydajność dzięki wysokosprawnym wentylatorom." },
-    { title: "INŻYNIERIA", desc: "Dopasowane rozwiązania oparte na innowacyjnej inżynierii." },
-    { title: "JAKOŚĆ", desc: "Produkcja i kontrola jakości zgodnie z normami międzynarodowymi." },
-    { title: "ZRÓWNOWAŻONY ROZWÓJ", desc: "Energooszczędne i przyjazne środowisku rozwiązania." },
+    { title: "3 000 m² powierzchni produkcyjnej", desc: "Nowoczesna infrastruktura produkcyjna" },
+    { title: "Eksport do ponad 30 krajów", desc: "Globalne doświadczenie projektowe" },
+    { title: "Projektowanie CFD", desc: "Rozwiązania oparte na inżynierii" },
+    { title: "Certyfikowana rodzina produktów", desc: "Normy BSI, ATEX i międzynarodowe" },
+    { title: "Kompetencje B+R i testów", desc: "Mierzalna wydajność" },
   ],
   cta: {
-    title: "Potrzebujesz wsparcia inżynieryjnego dla swojego projektu?",
-    desc: "Nasz zespół ekspertów wspiera Cię na każdym etapie projektu.",
+    title: "Zaprojektujmy razem właściwe rozwiązanie powietrzne dla Twojego projektu.",
+    desc: "Z naszym zespołem ekspertów w wentylatorach, oddymianiu, centralach klimatyzacyjnych i technologiach silnikowych zapewniamy dedykowane wsparcie inżynieryjne.",
     button: "Udostępnij swój projekt",
   },
 };

@@ -84,8 +84,8 @@ const THEME_OPEN_DOM_STEPS = 20;
 /** Sağdaki progress çubuğu */
 const PROGRESS_BAR_STEPS = 60;
 
-/** Mobil video seek adımı */
-const MOBILE_VIDEO_SCRUB_STEPS = 24;
+/** Mobil video seek adımı — daha az adım = mobile cihazda daha az seek = daha az kasma */
+const MOBILE_VIDEO_SCRUB_STEPS = 14;
 
 /** Mobil hero (görsel/video) katman — arka plan + overlay adımı */
 const MOBILE_MOTION_DOM_STEPS = 48;
@@ -615,19 +615,16 @@ export function ScrollVideoSection({
                 } as CSSProperties
               }
             >
-              {/* Arka plan: global harita görseli — sağa yaslı, metin alanı için sol gradient maske */}
+              {/* Arka plan: Türkiye-merkezli ihracat haritası — daha aydınlık */}
               <div
-                className="pointer-events-none absolute inset-0 opacity-65"
+                className="pointer-events-none absolute inset-0"
                 style={{
-                  backgroundImage: "url('/images/world-map.png')",
-                  backgroundSize: "auto 110%",
-                  backgroundPosition: "calc(100% + 180px) calc(50% - 25px)",
+                  backgroundImage: "url('/images/hero/hero-export-map.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "55% 50%",
                   backgroundRepeat: "no-repeat",
+                  filter: "brightness(1.25) contrast(1.02) saturate(1.05)",
                 }}
-                aria-hidden
-              />
-              <div
-                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0f1d33] via-[#0f1d33]/85 to-[#0f1d33]/10"
                 aria-hidden
               />
 
@@ -1106,7 +1103,7 @@ function MobileScrollSection({
               <video
                 ref={mobileVideoRef}
                 src={videoSrc}
-                poster={mobileVideoReplacementSrc || undefined}
+                poster={mobileVideoReplacementSrc || "/images/hero/hero-poster.jpg"}
                 aria-label={mobileVideoReplacementAlt || undefined}
                 muted
                 playsInline
