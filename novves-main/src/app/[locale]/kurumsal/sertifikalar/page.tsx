@@ -59,7 +59,7 @@ export default async function Sertifikalar({ params }: { params: Promise<{ local
           </nav>
           <div className="mt-5 max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-5 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-6 lg:p-7">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm"><span className="h-1.5 w-1.5 rounded-full bg-primary" /><span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.badge}</span></div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">{t.heroDesc}</p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default async function Sertifikalar({ params }: { params: Promise<{ local
                 <div className="mb-6 flex items-center gap-4">
                   <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-ink/10 bg-[#f8f5ed] text-secondary">{groupIcons[groupIdx] || groupIcons[0]}</div>
                   <div>
-                    <h2 className="text-xl font-bold tracking-tight text-dark">{group.title}</h2>
+                    <h2 className="font-display text-card-sm font-bold tracking-tight text-dark">{group.title}</h2>
                     <p className="text-xs text-secondary/40">{group.items.length} {t.documentSuffix}</p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default async function Sertifikalar({ params }: { params: Promise<{ local
             <div className="pointer-events-none absolute -bottom-16 -left-16 h-48 w-48 rounded-full opacity-[0.05]" style={{ background: "radial-gradient(circle, #ef5f17 0%, transparent 70%)" }} />
             <div className="relative z-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.ctaTag}</p>
-              <h2 className="mx-auto mt-4 max-w-xl text-2xl font-bold leading-tight text-white sm:text-3xl">{t.ctaTitle}</h2>
+              <h2 className="mx-auto mt-4 max-w-xl font-display text-section font-bold leading-tight text-white">{t.ctaTitle}</h2>
               <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-white/40">{t.ctaDesc}</p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
                 <Link href={`/${locale}/iletisim`} className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25">

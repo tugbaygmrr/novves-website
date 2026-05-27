@@ -44,7 +44,7 @@ export default async function DevreyeAlma({ params }: { params: Promise<{ locale
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
             </h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
@@ -84,7 +84,7 @@ export default async function DevreyeAlma({ params }: { params: Promise<{ locale
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.serviceSteps.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
                 {t.serviceSteps.title}
               </h2>
             </div>
@@ -100,7 +100,7 @@ export default async function DevreyeAlma({ params }: { params: Promise<{ locale
               {t.serviceSteps.items.map((item: { step: string; phase: string }, i: number) => (
                 <div key={i} className="group flex items-start gap-5">
                   {/* Number circle */}
-                  <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#fbf9f3] text-[12px] font-bold text-secondary/45 ring-2 ring-ink/15 transition-all duration-300 group-hover:ring-primary group-hover:text-primary">
+                  <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#fbf9f3] text-fine font-bold text-secondary/45 ring-2 ring-ink/15 transition-all duration-300 group-hover:ring-primary group-hover:text-primary">
                     {String(i + 1).padStart(2, "0")}
                   </div>
 
@@ -124,7 +124,7 @@ export default async function DevreyeAlma({ params }: { params: Promise<{ locale
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.whyImportant.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
                 {t.whyImportant.title}
               </h2>
             </div>
@@ -166,7 +166,7 @@ export default async function DevreyeAlma({ params }: { params: Promise<{ locale
 
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.cta.sectionLabel}</p>
-          <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          <h3 className="mt-3 font-display text-section font-bold text-white">
             {t.cta.title}
           </h3>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

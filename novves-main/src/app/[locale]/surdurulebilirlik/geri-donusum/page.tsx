@@ -32,7 +32,7 @@ export default async function GeriDonusum({ params }: { params: Promise<{ locale
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.title}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.title}</h1>
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">{t.title}</h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">{t.subtitle}</p>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default async function GeriDonusum({ params }: { params: Promise<{ locale
       <section className="relative overflow-hidden bg-[#ecebe6] py-14 sm:py-16">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.12]" />
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-xl font-bold text-dark sm:text-2xl">
+          <h2 className="mb-4 font-display text-card-sm font-bold text-dark sm:text-2xl">
             {t.recyclingTitle} <span className="text-primary">{t.recyclingTitleHighlight}</span>
           </h2>
           <p className="mb-8 text-lg font-medium text-secondary/70 italic">&ldquo;{t.recyclingQuote}&rdquo;</p>
@@ -85,7 +85,7 @@ export default async function GeriDonusum({ params }: { params: Promise<{ locale
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <p className="mb-10 text-base leading-7 text-secondary/80">{t.fanDetailText}</p>
 
-        <h2 className="mb-8 text-xl font-bold text-dark sm:text-2xl">
+        <h2 className="mb-8 font-display text-card font-bold text-dark">
           {t.benefitsTitle} <span className="text-primary">{t.benefitsTitleHighlight}</span>
         </h2>
         <div className="grid gap-3 sm:grid-cols-2">
@@ -106,7 +106,7 @@ export default async function GeriDonusum({ params }: { params: Promise<{ locale
       <section className="relative overflow-hidden bg-[#ecebe6] py-14 sm:py-16">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.12]" />
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-xl font-bold text-dark sm:text-2xl">
+          <h2 className="mb-4 font-display text-card-sm font-bold text-dark sm:text-2xl">
             {t.certTitle} <span className="text-primary">{t.certTitleHighlight}</span>
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-base leading-7 text-secondary/80">{t.certText}</p>

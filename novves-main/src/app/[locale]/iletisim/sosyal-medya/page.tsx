@@ -1054,7 +1054,7 @@ export default async function SosyalMedya({
                 </span>
               </div>
 
-              <h1 className="mt-7 max-w-none text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-[5.4rem]">
+              <h1 className="mt-7 max-w-none font-display text-hero font-extrabold leading-[0.98] tracking-[-0.04em] text-white">
                 {t.title1}
                 <span className="text-primary"> {t.title2}</span>
               </h1>
@@ -1120,7 +1120,7 @@ export default async function SosyalMedya({
                     <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/48">
                       {copy.previewEyebrow}
                     </p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-white">
+                    <h2 className="mt-2 font-display text-card font-semibold tracking-[-0.03em] text-white">
                       {copy.previewTitle}
                     </h2>
                   </div>
@@ -1175,7 +1175,7 @@ export default async function SosyalMedya({
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary/90">
               {copy.highlightsLabel}
             </p>
-            <h2 className="mt-4 max-w-lg text-3xl font-semibold leading-tight tracking-[-0.035em] text-white sm:text-4xl">
+            <h2 className="mt-4 max-w-lg font-display text-section font-semibold leading-tight tracking-[-0.035em] text-white">
               {copy.highlightsTitle}
             </h2>
             <p className="mt-5 max-w-xl text-sm leading-7 text-white/58">
@@ -1225,7 +1225,7 @@ export default async function SosyalMedya({
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary/90">
                 {copy.sectionLabel}
               </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-[-0.035em] text-dark sm:text-4xl">
+              <h2 className="mt-4 font-display text-section font-semibold tracking-[-0.035em] text-dark">
                 {copy.sectionTitle}
               </h2>
               <p className="mt-4 text-sm leading-7 text-secondary/66 sm:text-[15px]">
@@ -1331,7 +1331,7 @@ export default async function SosyalMedya({
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary/90">
               {copy.footerLabel}
             </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.035em] text-white sm:text-4xl">
+            <h2 className="mt-4 font-display text-section font-semibold tracking-[-0.035em] text-white">
               {copy.footerTitle}
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/56 sm:text-[15px]">

@@ -59,7 +59,7 @@ export default async function KvkkVeIslenmesiBeyani({
                 KVKK
               </span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               KVKK ve İşlenmesi{" "}
               <span className="text-primary">Beyanı</span>
             </h1>
@@ -76,7 +76,7 @@ export default async function KvkkVeIslenmesiBeyani({
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {/* Section 1 - Giris */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">1. GIRIS</h2>
+            <h2 className="mb-6 font-display text-card font-bold text-dark">1. GIRIS</h2>
             <div className="space-y-4 text-base leading-7 text-secondary/80">
               <p>
                 NOVVES ELEKTRIK MOTOR ANONIM SIRKETI (&ldquo;Sirket&rdquo;)
@@ -112,7 +112,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 2 - Veri Sorumlusu */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               2. VERI SORUMLUSU
             </h2>
             <div className="rounded-xl border border-ink/10 bg-[#fbf9f3] p-6">
@@ -132,7 +132,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 3 - Tanimlar */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               3. TANIMLAR
             </h2>
             <p className="mb-6 text-base leading-7 text-secondary/80">
@@ -304,7 +304,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 4 - Veri Guvenligi Kurulu */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               4. VERI GUVENLIGI KURULU
             </h2>
 
@@ -359,7 +359,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 5 - Politika Esaslari */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               5. POLITIKA ESASLARI
             </h2>
 
@@ -548,7 +548,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 6 - Yukumlulukler */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               6. YUKUMLULUKLER
             </h2>
 
@@ -625,7 +625,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 7 - Kisisel Verilerin Guvenliginin Saglanmasi */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               7. KISISEL VERILERIN GUVENLIGININ SAGLANMASI
             </h2>
 
@@ -717,7 +717,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 8 - Kisisel Verilerin Imhasi */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               8. KISISEL VERILERIN IMHASI
             </h2>
             <div className="space-y-4 text-base leading-7 text-secondary/80">
@@ -751,7 +751,7 @@ export default async function KvkkVeIslenmesiBeyani({
 
           {/* Section 9 - Revizyon */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               9. REVIZYON
             </h2>
             <div className="space-y-4 text-base leading-7 text-secondary/80">

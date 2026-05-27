@@ -52,7 +52,7 @@ export default async function Politikamiz({ params }: { params: Promise<{ locale
           </nav>
           <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm"><span className="h-1.5 w-1.5 rounded-full bg-primary" /><span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.badge}</span></div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
           </div>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default async function Politikamiz({ params }: { params: Promise<{ locale
           <div className="grid items-center gap-8 lg:grid-cols-5 lg:gap-10">
             <div className="rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 shadow-[0_14px_32px_-24px_rgba(15,20,30,0.32)] lg:col-span-3 sm:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.introCompany}</p>
-              <h2 className="mt-3 text-2xl font-bold text-dark sm:text-3xl">{t.introTitle}</h2>
+              <h2 className="mt-3 font-display text-card font-bold text-dark sm:text-3xl">{t.introTitle}</h2>
               <div className="mt-6 space-y-4 text-[15px] leading-7 text-secondary/70">
                 <p>{t.introP1}</p>
                 <p>{t.introP2Before} <strong className="font-semibold text-dark">{t.introP2Bold}</strong> {t.introP2After}</p>

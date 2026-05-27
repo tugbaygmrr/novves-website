@@ -41,7 +41,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.04] tracking-[-0.02em] text-white">
               {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
             </h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">{t.hero.subtitle}</p>
@@ -54,7 +54,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl border border-ink/10 bg-[#f8f5ed]">
             <svg className="h-9 w-9 text-secondary/20" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
           </div>
-          <h2 className="mt-8 text-2xl font-bold text-dark">{t.comingSoon.title}</h2>
+          <h2 className="mt-8 font-eurostile text-card font-bold text-dark">{t.comingSoon.title}</h2>
           <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-secondary/50">{t.comingSoon.text}</p>
           <div className="mx-auto mt-8 flex items-center justify-center gap-2"><span className="h-px w-8 bg-ink/10" /><span className="h-1.5 w-1.5 rounded-full bg-primary/40" /><span className="h-px w-8 bg-ink/10" /></div>
         </div>
@@ -66,7 +66,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <div className="mb-9 flex items-end gap-4">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.documentTypes.sectionLabel}</p>
-              <h3 className="mt-1 text-xl font-bold text-dark">{t.documentTypes.title}</h3>
+              <h3 className="mt-1 font-eurostile text-card-sm font-bold text-dark">{t.documentTypes.title}</h3>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -91,7 +91,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }} />
         <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.cta.sectionLabel}</p>
-          <h3 className="mt-3 text-xl font-bold text-white sm:text-2xl">{t.cta.title}</h3>
+          <h3 className="mt-3 font-eurostile text-card font-bold text-white">{t.cta.title}</h3>
           <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-white/40">{t.cta.subtitle}</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="mailto:info@novves.com" className="group inline-flex items-center gap-2.5 rounded-lg bg-white/5 px-6 py-3 text-sm font-medium text-white ring-1 ring-white/10 transition-all duration-300 hover:bg-primary/20 hover:ring-primary/30">

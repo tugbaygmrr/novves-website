@@ -61,7 +61,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               {s.productCatalog}
             </p>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.04] tracking-[-0.02em] text-white">
               {t.titleFirst}<span className="text-primary">{t.titleHighlight}</span>
             </h1>
           </div>
@@ -101,7 +101,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
                 {t.tiger.label}
               </p>
-              <h2 className="text-5xl font-extrabold tracking-tight text-dark sm:text-6xl">
+              <h2 className="font-eurostile text-section font-extrabold tracking-tight text-dark">
                 TIGER
               </h2>
               <p className="mt-6 max-w-md text-[15px] leading-7 text-secondary/60">
@@ -196,7 +196,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
                 {t.dolphin.label}
               </p>
-              <h2 className="text-5xl font-extrabold tracking-tight text-dark sm:text-6xl">
+              <h2 className="font-eurostile text-section font-extrabold tracking-tight text-dark">
                 DOLPHIN
               </h2>
               <p className="mt-6 max-w-md text-[15px] leading-7 text-secondary/60">
@@ -253,7 +253,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
                 {t.caracal.label}
               </p>
-              <h2 className="text-5xl font-extrabold tracking-tight text-white sm:text-6xl">
+              <h2 className="font-eurostile text-section font-extrabold tracking-tight text-white">
                 CARACAL
               </h2>
               <p className="mt-6 max-w-md text-[15px] leading-7 text-white/50">
@@ -338,7 +338,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
               {s.explore}
             </p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-white">
               {s.otherCategories}
             </h2>
           </div>
@@ -354,7 +354,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                 <span className="mb-4 block text-2xl font-black text-white/[0.12]">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="text-[1.05rem] font-bold leading-[1.3] text-white">
+                <h3 className="font-eurostile text-body font-bold leading-[1.3] text-white">
                   {cat.label}
                 </h3>
                 <div className="mt-5 flex items-center gap-2">
@@ -394,7 +394,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
             {s.technicalSupport}
           </p>
-          <h3 className="mt-3 text-2xl font-extrabold text-white sm:text-3xl">
+          <h3 className="mt-3 font-eurostile text-section font-extrabold text-white">
             {s.lookingForProduct}
           </h3>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/40">

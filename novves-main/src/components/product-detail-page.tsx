@@ -42,7 +42,7 @@ export function ProductDetailPage({
 
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mx-auto max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.72)] backdrop-blur-[2px] sm:p-8">
-            <h1 className="text-4xl font-bold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.05] tracking-[-0.02em] text-white">
               {title}
             </h1>
             <div className="mx-auto mt-4 h-1 w-16 rounded bg-primary" />
@@ -82,7 +82,7 @@ export function ProductDetailPage({
                   />
                 </div>
                 <div className="flex flex-1 flex-col border-t border-ink/10 p-5">
-                  <h3 className="text-[1.75rem] font-bold leading-[1.05] tracking-[-0.02em] text-dark">{model.name}</h3>
+                  <h3 className="font-eurostile text-card font-bold leading-[1.05] tracking-[-0.02em] text-dark">{model.name}</h3>
                   <p className="mt-1 text-sm font-medium text-primary">
                     {model.type}
                   </p>
@@ -110,7 +110,7 @@ export function ProductDetailPage({
       {/* CTA */}
       <section className="bg-secondary py-14 text-center">
         <div className="mx-auto max-w-2xl px-4">
-          <h3 className="mb-2 text-lg font-bold text-white">
+          <h3 className="mb-2 font-eurostile text-card-sm font-bold text-white">
             {dict.shared.lookingForProduct}
           </h3>
           <p className="text-sm text-white/70">

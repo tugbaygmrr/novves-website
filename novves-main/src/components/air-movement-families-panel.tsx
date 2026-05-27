@@ -105,7 +105,7 @@ export function AirMovementFamiliesPanel({
                   } ${selected ? "bg-white shadow-[0_10px_36px_-20px_rgba(15,23,42,0.18)] ring-1 ring-black/[0.05]" : "hover:bg-white/55"}`}
                 >
                   <span
-                    className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-[12px] font-bold tabular-nums transition-all duration-200 ${
+                    className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-fine font-bold tabular-nums transition-all duration-200 ${
                       selected ? "bg-primary text-white shadow-md shadow-primary/30" : "bg-[#1a2842]/88 text-white"
                     }`}
                   >
@@ -120,7 +120,7 @@ export function AirMovementFamiliesPanel({
                         </span>
                       ) : null}
                     </span>
-                    <span className="mt-1 line-clamp-2 text-[12px] leading-snug text-secondary/60 sm:text-[13px]">{p.type}</span>
+                    <span className="mt-1 line-clamp-2 text-fine leading-snug text-secondary/60 sm:text-[13px]">{p.type}</span>
                   </span>
                 </button>
               );
@@ -179,7 +179,7 @@ export function AirMovementFamiliesPanel({
 
                 <div className="shrink-0 overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/72 p-6 shadow-[0_18px_44px_-34px_rgba(15,23,42,0.2)] ring-1 ring-ink/[0.04] backdrop-blur-sm sm:p-7">
                   {panelBlurb ? (
-                    <p className="text-pretty text-[13px] leading-[1.65] text-secondary/68 sm:text-[14px]">{panelBlurb}</p>
+                    <p className="text-pretty text-[13px] leading-[1.65] text-secondary/68 sm:text-meta">{panelBlurb}</p>
                   ) : null}
                   <div className={`flex items-start justify-between gap-4 ${panelBlurb ? "mt-5 border-t border-ink/[0.06] pt-5" : ""}`}>
                     <div className="min-w-0 flex-1">

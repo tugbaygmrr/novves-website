@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mx-auto max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.72)] backdrop-blur-[2px] sm:p-8">
-            <h1 className="text-4xl font-bold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.05] tracking-[-0.02em] text-white">
               {t.title}
             </h1>
             <div className="mx-auto mt-4 h-1 w-16 rounded bg-primary" />
@@ -62,7 +62,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               />
             </div>
             <div className="rounded-2xl border border-ink/10 bg-white/95 p-6 shadow-[0_14px_38px_-28px_rgba(15,20,30,0.28)]">
-              <h3 className="text-2xl font-bold tracking-tight text-dark">{t.caracalD.title}</h3>
+              <h3 className="font-eurostile text-card font-bold tracking-tight text-dark">{t.caracalD.title}</h3>
               <p className="mt-1 text-sm font-semibold uppercase tracking-[0.14em] text-primary">{t.caracalD.type}</p>
               <p className="mt-4 text-sm leading-7 text-secondary/72">
                 {t.caracalD.description}
@@ -74,7 +74,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 
       <section className="bg-secondary py-14 text-center">
         <div className="mx-auto max-w-2xl px-4">
-          <h3 className="mb-2 text-lg font-bold text-white">{s.lookingForProduct}</h3>
+          <h3 className="mb-2 font-eurostile text-card-sm font-bold text-white">{s.lookingForProduct}</h3>
           <p className="text-sm text-white/70">{s.teamReady}</p>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href={`/${locale}/urunler/iklimlendirme`} className="rounded border border-white/20 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:border-primary hover:text-primary">{s.allIklimlendirmeProducts}</Link>

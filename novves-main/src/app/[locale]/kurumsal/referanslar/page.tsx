@@ -247,7 +247,7 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
             <p className="mt-6 max-w-[54ch] text-[18px] leading-[1.62] text-white/72">{t.heroDesc}</p>
           </div>
         </div>

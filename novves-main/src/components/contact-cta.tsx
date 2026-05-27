@@ -45,7 +45,7 @@ export function ContactCta({
         </div>
 
         {/* Başlık */}
-        <h2 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-[2.6rem]">
+        <h2 className="font-display text-section font-bold leading-[1.15] tracking-tight text-white">
           {title}
         </h2>
 

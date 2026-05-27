@@ -260,7 +260,7 @@ export default function AdminLoginPage() {
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
               Hoş Geldiniz
             </h1>
-            <p className="mt-2 text-[14px] leading-relaxed text-gray-400">
+            <p className="mt-2 text-meta leading-relaxed text-gray-400">
               İçerik yönetim paneline erişmek için giriş yapın.
             </p>
           </div>
@@ -268,7 +268,7 @@ export default function AdminLoginPage() {
           {/* Login form */}
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
-              <label className="mb-2 block text-[12px] font-semibold text-gray-700">
+              <label className="mb-2 block text-fine font-semibold text-gray-700">
                 Kullanıcı Adı
               </label>
               <div className="relative">
@@ -283,14 +283,14 @@ export default function AdminLoginPage() {
                   onChange={(e) => setUsername(e.target.value)}
                   required
                   autoComplete="username"
-                  className="w-full rounded-xl border border-gray-200 bg-gray-50/80 py-3.5 pl-12 pr-4 text-[14px] text-gray-900 placeholder-gray-300 outline-none transition-all duration-200 focus:border-orange-400 focus:bg-white focus:shadow-lg focus:shadow-orange-500/5 focus:ring-2 focus:ring-orange-500/10"
+                  className="w-full rounded-xl border border-gray-200 bg-gray-50/80 py-3.5 pl-12 pr-4 text-meta text-gray-900 placeholder-gray-300 outline-none transition-all duration-200 focus:border-orange-400 focus:bg-white focus:shadow-lg focus:shadow-orange-500/5 focus:ring-2 focus:ring-orange-500/10"
                   placeholder="Kullanıcı adınız"
                 />
               </div>
             </div>
 
             <div>
-              <label className="mb-2 block text-[12px] font-semibold text-gray-700">
+              <label className="mb-2 block text-fine font-semibold text-gray-700">
                 Şifre
               </label>
               <div className="relative">
@@ -305,7 +305,7 @@ export default function AdminLoginPage() {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   autoComplete="current-password"
-                  className="w-full rounded-xl border border-gray-200 bg-gray-50/80 py-3.5 pl-12 pr-4 text-[14px] text-gray-900 placeholder-gray-300 outline-none transition-all duration-200 focus:border-orange-400 focus:bg-white focus:shadow-lg focus:shadow-orange-500/5 focus:ring-2 focus:ring-orange-500/10"
+                  className="w-full rounded-xl border border-gray-200 bg-gray-50/80 py-3.5 pl-12 pr-4 text-meta text-gray-900 placeholder-gray-300 outline-none transition-all duration-200 focus:border-orange-400 focus:bg-white focus:shadow-lg focus:shadow-orange-500/5 focus:ring-2 focus:ring-orange-500/10"
                   placeholder="Şifreniz"
                 />
               </div>
@@ -323,7 +323,7 @@ export default function AdminLoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="group relative w-full overflow-hidden rounded-xl bg-orange-500 py-3.5 text-[14px] font-semibold text-white shadow-lg shadow-orange-500/25 transition-all duration-300 hover:bg-orange-600 hover:shadow-xl hover:shadow-orange-500/30 active:scale-[0.98] disabled:opacity-50"
+              className="group relative w-full overflow-hidden rounded-xl bg-orange-500 py-3.5 text-meta font-semibold text-white shadow-lg shadow-orange-500/25 transition-all duration-300 hover:bg-orange-600 hover:shadow-xl hover:shadow-orange-500/30 active:scale-[0.98] disabled:opacity-50"
             >
               <span className="relative z-10 inline-flex items-center gap-2">
                 {loading ? (

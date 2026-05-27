@@ -749,7 +749,7 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               {t.title1}
               <span className="text-primary">{t.title2}</span>
             </h1>
@@ -783,7 +783,7 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
               </span>
               <span className="h-px w-24 bg-gradient-to-r from-primary to-transparent" />
             </div>
-            <h2 className="text-3xl font-extrabold leading-[1.05] tracking-tight text-dark sm:text-4xl lg:text-[3rem]">
+            <h2 className="font-display text-hero font-extrabold leading-[1.05] tracking-tight text-dark">
               {highlightMiddleWord(copy.highlightsTitle, locale)}
             </h2>
             <div className="mt-5 flex gap-3">
@@ -817,7 +817,7 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
                 </p>
 
                 {/* Title */}
-                <h3 className="mt-2 text-lg font-bold leading-snug text-dark sm:text-[19px]">
+                <h3 className="mt-2 text-lg font-bold leading-snug text-dark sm:text-metric-sm">
                   {item.title}
                 </h3>
 
@@ -883,7 +883,7 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
                 </span>
                 <span className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
               </div>
-              <h2 className="text-2xl font-extrabold tracking-tight text-dark sm:text-[1.75rem]">
+              <h2 className="font-display text-card font-extrabold tracking-tight text-dark">
                 {copy.soonTitle.replace(/\.$/, "")}
                 <span className="text-primary">.</span>
               </h2>

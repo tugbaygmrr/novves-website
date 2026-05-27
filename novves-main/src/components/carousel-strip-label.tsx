@@ -2,10 +2,10 @@
 
 /** Kutuya göre dikey yazı (demo ile uyumlu tipografi) — Ürünler / bölüm şeritleri */
 export const VERTICAL_STRIP_LABEL_TEXT_CLASS =
-  "font-mono-eng text-[19px] font-extrabold uppercase tracking-[0.26em] text-white antialiased [writing-mode:vertical-rl] [text-orientation:mixed] sm:text-[19px] sm:font-semibold sm:tracking-[0.3em] md:text-[20px]";
+  "font-mono-eng text-metric-sm font-extrabold uppercase tracking-[0.26em] text-white antialiased [writing-mode:vertical-rl] [text-orientation:mixed] sm:text-metric-sm sm:font-semibold sm:tracking-[0.3em] md:text-metric-sm";
 
 const HORIZONTAL_STRIP_LABEL_TEXT_CLASS =
-  "font-mono-eng text-[12.5px] font-semibold uppercase tracking-[0.16em] text-white antialiased whitespace-nowrap";
+  "font-mono-eng text-fine font-semibold uppercase tracking-[0.16em] text-white antialiased whitespace-nowrap";
 
 function StripRotatedLabel({
   label,
@@ -59,7 +59,7 @@ export function CarouselStripLabel({
         />
         <div className="text-center leading-none">
           <p className="font-mono-eng text-[11px] font-semibold tracking-[0.04em] text-white/95">#borntoflow</p>
-          <p className="mt-1 font-mono-eng text-[32px] font-bold uppercase tracking-[0.02em]">{label}</p>
+          <p className="mt-1 font-mono-eng text-card font-bold uppercase tracking-[0.02em]">{label}</p>
         </div>
       </div>
     </div>

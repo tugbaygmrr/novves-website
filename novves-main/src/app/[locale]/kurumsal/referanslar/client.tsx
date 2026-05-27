@@ -169,7 +169,7 @@ export function ReferanslarClient({
               </div>
             </div>
             <div className="p-6 sm:p-8">
-              <h2 className="text-xl font-bold tracking-tight text-dark sm:text-2xl">{selectedRef.title}</h2>
+              <h2 className="font-display text-card font-bold tracking-tight text-dark">{selectedRef.title}</h2>
               <p className="mt-4 text-sm leading-7 text-secondary/70">{selectedRef.description}</p>
               <div className="mt-6 rounded-xl border border-ink/10 bg-[#f2efe8] p-5">
                 <h4 className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary/40"><span className="h-px w-3 bg-primary" />{dict.usedProducts}</h4>
@@ -201,7 +201,7 @@ function ReferenceCard({ ref_, onSelect, compact, dict }: { ref_: Reference; onS
         </div>
       </div>
       <div className={compact ? "p-4" : "p-5"}>
-        <h3 className="text-[14px] font-semibold leading-snug tracking-[-0.01em] text-dark line-clamp-2">{ref_.title}</h3>
+        <h3 className="text-meta font-semibold leading-snug tracking-[-0.01em] text-dark line-clamp-2">{ref_.title}</h3>
         <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
           {!compact && (
             <span className="inline-flex items-center gap-1 rounded-md bg-primary/8 px-2 py-0.5 text-[11px] font-medium text-primary">

@@ -24,7 +24,7 @@ export function SolutionPage({
     <main>
       <section className="bg-secondary py-20 text-center">
         <div className="mx-auto max-w-7xl px-4">
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h1 className="font-eurostile text-page-title font-bold tracking-tight text-white">
             {title}
           </h1>
           <div className="mx-auto mt-3 h-1 w-16 rounded bg-primary" />
@@ -43,7 +43,7 @@ export function SolutionPage({
               key={area.title}
               className="rounded-lg border border-gray-100 bg-white p-6 shadow-sm"
             >
-              <h3 className="text-lg font-bold text-dark">{area.title}</h3>
+              <h3 className="font-eurostile text-card-sm font-bold text-dark">{area.title}</h3>
               <p className="mt-1 text-sm text-primary font-medium">
                 {area.description}
               </p>
@@ -76,7 +76,7 @@ export function SolutionPage({
 
       <section className="bg-secondary py-14 text-center">
         <div className="mx-auto max-w-2xl px-4">
-          <h3 className="mb-2 text-lg font-bold text-white">{dict.shared.forYourProject}</h3>
+          <h3 className="mb-2 font-eurostile text-card-sm font-bold text-white">{dict.shared.forYourProject}</h3>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href={`/${locale}/urunler/hava-hareketi`} className="rounded border border-white/20 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:border-primary hover:text-primary">{dict.shared.allProducts}</Link>
             <Link href={`/${locale}/iletisim`} className="rounded bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep">{dict.shared.technicalSupportRequest}</Link>

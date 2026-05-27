@@ -108,7 +108,7 @@ export default async function Ekibimiz({ params }: { params: Promise<{ locale: s
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">{t.heroTitle1} <span className="text-primary">{t.heroTitleHighlight}</span></h1>
             <p className="mt-6 max-w-[54ch] text-[18px] leading-[1.62] text-white/72">{t.heroDesc}</p>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default async function Ekibimiz({ params }: { params: Promise<{ locale: s
           <div className="mb-10 flex items-end gap-6">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">{t.leadershipTag}</p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight text-dark">{t.leadershipTitle}</h2>
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">{t.leadershipTitle}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -148,7 +148,7 @@ export default async function Ekibimiz({ params }: { params: Promise<{ locale: s
           <div className="mb-10 flex items-end gap-6">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">{t.teamTag}</p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight text-dark">{t.teamTitle}</h2>
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">{t.teamTitle}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -187,7 +187,7 @@ export default async function Ekibimiz({ params }: { params: Promise<{ locale: s
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <div className="mb-4 inline-flex items-center gap-2"><span className="h-px w-8 bg-primary/40" /><span className="text-xs font-bold uppercase tracking-widest text-primary">{t.ctaTag}</span><span className="h-px w-8 bg-primary/40" /></div>
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">{t.ctaTitle}</h2>
+          <h2 className="font-display text-section font-bold text-white">{t.ctaTitle}</h2>
           <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/45">{t.ctaDesc}</p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href={`/${locale}/iletisim`} className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-3.5 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:bg-primary-deep hover:shadow-lg hover:shadow-primary/20 hover:scale-105 active:scale-100">

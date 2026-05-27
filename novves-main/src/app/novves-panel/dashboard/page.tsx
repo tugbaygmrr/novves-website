@@ -114,7 +114,7 @@ function FieldEditor({
               : "";
             onChange(path, [...data, template]);
           }}
-          className="flex w-full items-center justify-center gap-2 rounded-xl border border-dashed border-gray-200 py-2.5 text-[12px] font-medium text-gray-400 transition-all hover:border-orange-300 hover:bg-orange-50 hover:text-orange-600"
+          className="flex w-full items-center justify-center gap-2 rounded-xl border border-dashed border-gray-200 py-2.5 text-fine font-medium text-gray-400 transition-all hover:border-orange-300 hover:bg-orange-50 hover:text-orange-600"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -138,7 +138,7 @@ function FieldEditor({
           return (
             <div key={key}>
               <label className="mb-1.5 flex items-center gap-2">
-                <span className="text-[12px] font-semibold text-gray-600">{humanize(key)}</span>
+                <span className="text-fine font-semibold text-gray-600">{humanize(key)}</span>
                 {isArray && (
                   <span className="rounded bg-blue-50 px-1.5 py-0.5 text-[9px] font-medium text-blue-500">
                     {(value as unknown[]).length} öğe
@@ -159,7 +159,7 @@ function FieldEditor({
     );
   }
 
-  return <span className="text-[12px] text-gray-400">{String(data)}</span>;
+  return <span className="text-fine text-gray-400">{String(data)}</span>;
 }
 
 /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
@@ -505,7 +505,7 @@ export default function DashboardPage() {
               placeholder="Bölüm ara..."
               value={sidebarSearch}
               onChange={(e) => setSidebarSearch(e.target.value)}
-              className="w-full rounded-lg border border-gray-100 bg-gray-50/50 py-2 pl-9 pr-3 text-[12px] text-gray-700 placeholder-gray-300 outline-none transition-all focus:border-orange-300 focus:bg-white focus:ring-1 focus:ring-orange-200"
+              className="w-full rounded-lg border border-gray-100 bg-gray-50/50 py-2 pl-9 pr-3 text-fine text-gray-700 placeholder-gray-300 outline-none transition-all focus:border-orange-300 focus:bg-white focus:ring-1 focus:ring-orange-200"
             />
           </div>
         </div>
@@ -535,7 +535,7 @@ export default function DashboardPage() {
                   <svg className={`h-4 w-4 shrink-0 ${isActiveGroup ? "text-orange-500" : "text-gray-300"}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d={group.icon} />
                   </svg>
-                  <span className="flex-1 text-[12px] font-semibold">{group.label}</span>
+                  <span className="flex-1 text-fine font-semibold">{group.label}</span>
                   <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[9px] font-medium text-gray-400">
                     {group.sections.length}
                   </span>
@@ -578,7 +578,7 @@ export default function DashboardPage() {
                 {username.charAt(0).toUpperCase()}
               </div>
               <div>
-                <p className="text-[12px] font-semibold text-gray-700">{username}</p>
+                <p className="text-fine font-semibold text-gray-700">{username}</p>
                 <p className="text-[10px] text-gray-300">Yönetici</p>
               </div>
             </div>
@@ -602,7 +602,7 @@ export default function DashboardPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-[12px]">
+              <div className="flex items-center gap-2 text-fine">
                 <span className="font-medium text-gray-400">{currentGroup?.label ?? ""}</span>
                 <svg className="h-3 w-3 text-gray-200" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -653,7 +653,7 @@ export default function DashboardPage() {
             <div className="flex h-80 items-center justify-center rounded-2xl border border-gray-200 bg-white">
               <div className="flex flex-col items-center gap-3">
                 <div className="h-8 w-8 animate-spin rounded-full border-2 border-gray-200 border-t-orange-500" />
-                <span className="text-[12px] text-gray-400">Yükleniyor...</span>
+                <span className="text-fine text-gray-400">Yükleniyor...</span>
               </div>
             </div>
           ) : formData !== null ? (

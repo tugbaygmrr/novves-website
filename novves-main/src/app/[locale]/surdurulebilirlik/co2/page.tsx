@@ -32,7 +32,7 @@ export default async function CO2({ params }: { params: Promise<{ locale: string
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.title}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl">{t.title}</h1>
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">{t.title}</h1>
             <p className="mt-4 text-[15px] leading-6 text-white/70">{t.quote}</p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default async function CO2({ params }: { params: Promise<{ locale: string
             <Image src="/images/co2-emisyonu-custom.png" alt={t.sectionTitle} width={600} height={400} className="h-[170px] w-full object-cover sm:h-[190px]" priority />
           </div>
           <div className="flex-1 space-y-5">
-            <h2 className="text-xl font-bold text-dark sm:text-2xl">
+            <h2 className="font-display text-card font-bold text-dark">
               {t.sectionTitle} <span className="text-primary">{t.sectionTitleHighlight}</span>
             </h2>
             <p className="text-base font-medium text-secondary/70 italic">&ldquo;{t.quote}&rdquo;</p>
@@ -74,7 +74,7 @@ export default async function CO2({ params }: { params: Promise<{ locale: string
 
       <section className="bg-[#f5f2eb] py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-8 text-xl font-bold text-dark sm:text-2xl">
+        <h2 className="mb-8 font-display text-card font-bold text-dark">
           {t.contributionsTitle} <span className="text-primary">{t.contributionsTitleHighlight}</span>
         </h2>
         <div className="grid gap-6 md:grid-cols-2">
@@ -96,7 +96,7 @@ export default async function CO2({ params }: { params: Promise<{ locale: string
       <section className="relative overflow-hidden bg-[#ecebe6] py-14 sm:py-16">
         <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.12]" />
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-10 text-center text-xl font-bold text-dark sm:text-2xl">
+          <h2 className="mb-10 text-center font-display text-card font-bold text-dark">
             {t.annualGainsTitle}{" "}<span className="text-primary">{t.annualGainsTitleHighlight}</span>
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -126,7 +126,7 @@ export default async function CO2({ params }: { params: Promise<{ locale: string
         <Image src="/images/co2-graphic.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-dark/80" />
         <div className="relative mx-auto max-w-4xl px-4 py-20 text-center">
-          <h2 className="mb-4 text-2xl font-bold text-white">
+          <h2 className="mb-4 font-display text-card font-bold text-white">
             {t.ecoTitle} <span className="text-primary">{t.ecoTitleHighlight}</span>
           </h2>
           <p className="text-lg leading-8 text-white/90">{t.ecoText}</p>

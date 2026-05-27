@@ -52,7 +52,7 @@ export default async function YerindeKesif({ params }: { params: Promise<{ local
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
             </h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
@@ -78,7 +78,7 @@ export default async function YerindeKesif({ params }: { params: Promise<{ local
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{t.steps.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">{t.steps.title}</h2>
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">{t.steps.title}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -114,7 +114,7 @@ export default async function YerindeKesif({ params }: { params: Promise<{ local
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{t.whyImportant.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">{t.whyImportant.title}</h2>
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">{t.whyImportant.title}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -138,7 +138,7 @@ export default async function YerindeKesif({ params }: { params: Promise<{ local
 
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{t.cta.sectionLabel}</p>
-          <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          <h3 className="mt-3 font-display text-section font-bold text-white">
             {t.cta.title}
           </h3>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/45">

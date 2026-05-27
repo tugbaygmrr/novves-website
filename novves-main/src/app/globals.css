@@ -33,8 +33,8 @@
   --dark: #00386b;
   --dark-rgb: 0, 56, 107;
 
-  /* Ana zemin + kart yüzeyi + border */
-  --sand-200: #eaeadf;
+  /* Ana zemin + kart yüzeyi + border — site geneli açık bej tek tona indirildi */
+  --sand-200: #f4f4ea;
   --sand-100: #f4f4ea;
   --sand-300: #d8d8cd;
   --sand-400: #c4c4b6;
@@ -74,9 +74,25 @@
   --color-sand-400: var(--sand-400);
   --color-light: var(--light);
   --color-success: var(--success);
-  --font-sans: "Helvetica Neue", "Helvetica", sans-serif;
+
+  /* Font aileleri — site-geneli tipografi standardı */
+  --font-sans: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif;
   --font-serif: var(--font-instrument-serif), "Georgia", serif;
-  --font-mono: "Helvetica Neue", "Helvetica", sans-serif;
+  --font-mono: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif;
+  --font-display: var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif;
+  --font-eurostile: "EurostileLTPro", var(--font-inter), "Helvetica Neue", sans-serif;
+
+  /* Boyut tokenleri — spesifikasyon: 12 / 14 / 16 / 20 / 22 / 24 / 28 / 36 / 42 / 48 */
+  --text-fine: 0.75rem;        /* 12px — Footer */
+  --text-meta: 0.875rem;       /* 14px — Nav, küçük tablo */
+  --text-body: 1rem;           /* 16px — Standart gövde */
+  --text-metric-sm: 1.25rem;   /* 20px — Küçük teknik metrik */
+  --text-card-sm: 1.375rem;    /* 22px — Küçük kart başlığı */
+  --text-metric: 1.5rem;       /* 24px — Teknik metrik */
+  --text-card: 1.75rem;        /* 28px — Seksiyon / kart başlığı */
+  --text-page-title: 2.625rem; /* 42px — Teknik & ürün sayfa H1 */
+  --text-section: 2.25rem;     /* 36px — Anasayfa bölüm H2 */
+  --text-hero: 3rem;           /* 48px — Hero slogan */
 }
 
 /* clip: yatay taşmayı keser; overflow:hidden gibi sticky + scroll-driven hero’yu bozmaz */
@@ -123,7 +139,7 @@ html[data-cookie-dialog-open] [data-mobile-jump-nav] {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
   font-feature-settings: "ss01", "cv11", "liga" 0, "clig" 0;
   font-variant-ligatures: none;
@@ -132,22 +148,21 @@ body {
 }
 
 .font-display {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-weight: 400;
+  font-family: var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif;
   letter-spacing: -0.01em;
 }
 
 .font-mono-eng {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif;
 }
 
-/* Legacy — now Inter so nothing breaks elsewhere while migrating */
-.font-home-display { font-family: "Helvetica Neue", "Helvetica", sans-serif; }
-.font-home-body    { font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+/* Anasayfa kompozisyon yardımcıları — Inter (Montserrat sadece H1/H2 için) */
+.font-home-display { font-family: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif; }
+.font-home-body    { font-family: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif; }
 
-/** Ürün kartı 01/02… — Helvetica (tek yazı tipi politikası) */
+/** Ürün kartı 01/02… — Inter, hâlâ tabular bold */
 .font-product-card-num {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 700;
   font-synthesis: none;
   letter-spacing: -0.04em;

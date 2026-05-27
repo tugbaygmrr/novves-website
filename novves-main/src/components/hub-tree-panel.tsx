@@ -159,7 +159,7 @@ export function HubTreePanel({
           </div>
 
           <div className="relative">
-            <h3 className="text-balance text-2xl font-bold tracking-tight text-ink sm:text-[26px]">
+            <h3 className="text-balance text-2xl font-bold tracking-tight text-ink sm:text-card">
               {active.name}
             </h3>
             <p className="mt-3 max-w-prose text-[15px] leading-relaxed text-secondary/80">

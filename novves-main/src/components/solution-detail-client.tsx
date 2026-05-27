@@ -109,7 +109,7 @@ export function SolutionDetailClient({
               <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_0_3px_rgba(239, 95, 23,0.18)]" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{dict.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.8rem]">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.04] tracking-[-0.02em] text-white">
               {dict.titleLine1} <span className="text-primary">{dict.titleHighlight}</span>
             </h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.6] text-white/72">
@@ -147,7 +147,7 @@ export function SolutionDetailClient({
           <div className="grid gap-8 lg:grid-cols-12 lg:items-stretch lg:gap-10">
             <div className="rounded-3xl border border-ink/10 bg-white/80 p-7 shadow-[0_22px_54px_-34px_rgba(15,20,30,0.22)] backdrop-blur-[3px] sm:p-9 lg:col-span-7 lg:h-full">
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{dict.whyImportantLabel}</p>
-              <h2 className="mt-3 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-3 font-eurostile text-section font-bold tracking-tight text-dark">
                 {dict.whyImportantTitle}
               </h2>
               <div className="mt-6 space-y-4 text-[15px] leading-7 text-secondary/70">
@@ -183,7 +183,7 @@ export function SolutionDetailClient({
           <div className="mb-10 flex items-end gap-6 sm:mb-12">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{dict.systemLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">{dict.systemTitle}</h2>
+              <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-dark">{dict.systemTitle}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -196,7 +196,7 @@ export function SolutionDetailClient({
               >
                 <div className="absolute left-0 top-0 h-full w-[3px] bg-primary/35 transition-colors duration-300 group-hover:bg-primary" />
                 <span className="mb-3 block text-2xl font-black leading-none text-primary/90">{String(i + 1).padStart(2, "0")}</span>
-                <h3 className="text-[16px] font-bold text-dark">{item.title}</h3>
+                <h3 className="font-eurostile text-body font-bold text-dark">{item.title}</h3>
                 <p className="mt-2 text-[13px] leading-relaxed text-secondary/62">{item.desc}</p>
                 <div className="mt-auto pt-5">
                   <div className="flex items-center justify-center border-t border-ink/10 pt-3">
@@ -219,7 +219,7 @@ export function SolutionDetailClient({
       <section className="bg-dark py-16">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 sm:flex-row sm:px-6 lg:px-8">
           <div>
-            <h3 className="text-lg font-bold text-white">{dict.midCtaTitle}</h3>
+            <h3 className="font-eurostile text-card-sm font-bold text-white">{dict.midCtaTitle}</h3>
             <p className="mt-1 text-sm text-white/40">{dict.midCtaDesc}</p>
           </div>
           <Link href={`/${locale}/iletisim`} className="group shrink-0 inline-flex items-center gap-2.5 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30">
@@ -236,7 +236,7 @@ export function SolutionDetailClient({
           <div className="mb-10 flex items-end gap-6 sm:mb-12">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{dict.advantagesLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">{dict.advantagesTitle}</h2>
+              <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-dark">{dict.advantagesTitle}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -251,7 +251,7 @@ export function SolutionDetailClient({
                 <div className="mb-3 inline-flex h-8 min-w-8 items-center justify-center rounded-lg border border-primary/25 bg-primary/10 px-2 text-[11px] font-bold text-primary">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="text-[15px] font-bold text-dark">{adv.title}</h3>
+                <h3 className="font-eurostile text-body font-bold text-dark">{adv.title}</h3>
                 <p className="mt-2 text-[13px] leading-relaxed text-secondary/60">{adv.desc}</p>
                 <div className="mt-5 flex items-center gap-2 border-t border-ink/10 pt-3">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary/70" />
@@ -271,10 +271,10 @@ export function SolutionDetailClient({
             <span className="inline-flex rounded-full bg-primary/[0.12] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
               {dict.areasLabel}
             </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-[-0.02em] text-[#1a2842] sm:text-[2.35rem] sm:leading-[1.08]">
+            <h2 className="mt-4 font-eurostile text-card font-bold tracking-[-0.02em] text-[#1a2842] sm:leading-[1.08]">
               {dict.areasTitle}
             </h2>
-            <p className="mt-5 max-w-3xl text-base leading-relaxed text-secondary/68 sm:mt-6 sm:text-[17px]">
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-secondary/68 sm:mt-6 sm:text-body">
               {dict.areasDesc}
             </p>
           </div>
@@ -305,7 +305,7 @@ export function SolutionDetailClient({
                         }`}
                       >
                         <span
-                          className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-[12px] font-bold tabular-nums transition-all duration-200 ${
+                          className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-fine font-bold tabular-nums transition-all duration-200 ${
                             selected
                               ? "bg-primary text-white shadow-md shadow-primary/30"
                               : "bg-[#1a2842]/88 text-white"
@@ -317,7 +317,7 @@ export function SolutionDetailClient({
                           <span className="block text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-base">
                             {area.title}
                           </span>
-                          <span className="mt-1 line-clamp-2 text-[12px] leading-snug text-secondary/60 sm:text-[13px]">
+                          <span className="mt-1 line-clamp-2 text-fine leading-snug text-secondary/60 sm:text-[13px]">
                             {area.description}
                           </span>
                         </span>
@@ -372,7 +372,7 @@ export function SolutionDetailClient({
                                         />
                                       </div>
                                       <div className="flex flex-1 flex-col gap-2.5 px-4 pb-5 pt-4 sm:px-5 sm:pb-6 sm:pt-5">
-                                        <p className="text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-[16px]">
+                                        <p className="text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-body">
                                           {p.name}
                                         </p>
                                         <p className="text-[13px] leading-snug text-secondary/70 sm:text-sm">{p.type}</p>
@@ -398,7 +398,7 @@ export function SolutionDetailClient({
                                         />
                                       </div>
                                       <div className="flex flex-1 flex-col gap-2.5 px-4 pb-5 pt-4 sm:px-5 sm:pb-6 sm:pt-5">
-                                        <p className="text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-[16px]">
+                                        <p className="text-[15px] font-bold leading-snug tracking-tight text-[#1a2842] sm:text-body">
                                           {p.name}
                                         </p>
                                         <p className="text-[13px] leading-snug text-secondary/70 sm:text-sm">{p.type}</p>
@@ -486,7 +486,7 @@ export function SolutionDetailClient({
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center sm:mb-12">
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{dict.faqLabel}</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-dark sm:text-4xl">{dict.faqTitle}</h2>
+            <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-dark">{dict.faqTitle}</h2>
           </div>
 
           <div className="relative overflow-hidden rounded-3xl border border-[#1a2842]/14 bg-white/75 p-2.5 shadow-[0_22px_55px_-38px_rgba(13,17,23,0.22)] backdrop-blur-[6px] sm:p-3">
@@ -514,14 +514,14 @@ export function SolutionDetailClient({
                     }`}
                   >
                     <span
-                      className={`text-[17px] font-semibold leading-[1.4] sm:text-[19px] ${
+                      className={`text-body font-semibold leading-[1.4] sm:text-metric-sm ${
                         isOpen ? "text-white" : "text-ink transition-colors duration-300 group-hover:text-[#1a2842]"
                       }`}
                     >
                       {item.q}
                     </span>
                     <span
-                      className={`shrink-0 text-[20px] leading-none transition-all duration-300 ${
+                      className={`shrink-0 text-metric-sm leading-none transition-all duration-300 ${
                         isOpen ? "rotate-45 text-primary" : "text-ink/45 group-hover:text-primary"
                       }`}
                     >
@@ -556,7 +556,7 @@ export function SolutionDetailClient({
 
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">{dict.finalCtaLabel}</p>
-          <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          <h3 className="mt-3 font-eurostile text-section font-bold text-white">
             {dict.finalCtaTitle}
           </h3>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/45">

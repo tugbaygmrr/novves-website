@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState, useRef, useEffect, useMemo } from "react";
 import { LanguageSwitcher } from "./language-switcher";
 import { MusicToggle } from "./music-toggle";
+import { cozumlerIconMap } from "./cozumler-icons";
+import { urunlerIconMap } from "./urunler-icons";
 import {
   COOKIE_CONSENT_EVENT,
   isConsentRestrictedMinimal,
@@ -354,7 +356,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible border-b border-ink/12 bg-sand-200/96 pb-3 pt-4 shadow-[0_10px_40px_-28px_rgba(15,23,42,0.25)] backdrop-blur-xl transition-all duration-300"
+      className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible bg-sand-200 pb-3 pt-4 transition-all duration-300"
     >
       <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between overflow-visible pl-6 pr-2 sm:pl-8 sm:pr-3 lg:pl-10 lg:pr-4">
         {/* Logo (tagline görselin içinde) */}
@@ -380,7 +382,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
             >
               <button
                 type="button"
-                className={`inline-flex max-w-full items-center gap-0.5 truncate px-1.5 py-2 text-[11px] font-medium tracking-normal transition-colors duration-200 lg:text-[12px] xl:gap-1 xl:px-2 xl:text-[13px] 2xl:gap-1.5 2xl:px-3 2xl:text-[14px] ${
+                className={`inline-flex max-w-full items-center gap-0.5 truncate px-1.5 py-2 text-meta font-medium tracking-normal transition-colors duration-200 xl:gap-1 xl:px-2 2xl:gap-1.5 2xl:px-3 ${
                   openMenu === menu.label
                     ? "text-primary"
                     : inverted
@@ -437,6 +439,14 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                         {menu.links.map((link) => {
                           const previewUi = menuHasImagePreview(menu);
                           const active = previewUi && previewHref === link.href;
+                          // Çözümler / Ürünler menüsünde slug'a göre özel ikon
+                          const cozumSlug = link.href.replace(/^\/cozumler\//, "").replace(/^\//, "");
+                          const urunSlug = link.href.replace(/^\/urunler\//, "").replace(/^\//, "");
+                          const CozumIcon = link.href.startsWith("/cozumler/")
+                            ? cozumlerIconMap[cozumSlug]
+                            : link.href.startsWith("/urunler/")
+                              ? urunlerIconMap[urunSlug]
+                              : null;
                           return (
                             <Link
                               key={link.href}
@@ -447,15 +457,21 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                               }}
                               onMouseEnter={previewUi ? () => setPreviewHref(link.href) : undefined}
                               onFocus={previewUi ? () => setPreviewHref(link.href) : undefined}
-                              className={`group flex items-center gap-2 rounded-lg px-3 py-2 text-start text-[13px] leading-snug text-secondary/65 break-words transition-all duration-150 hover:bg-gray-50 hover:text-dark ${
+                              className={`group flex items-center gap-2.5 rounded-lg px-3 py-2 text-start text-meta leading-snug text-secondary/65 break-words transition-all duration-150 hover:bg-gray-50 hover:text-dark ${
                                 active ? "bg-primary/[0.06] text-dark ring-1 ring-primary/15" : ""
                               }`}
                             >
-                              <span
-                                className={`h-1 w-1 shrink-0 rounded-full transition-colors duration-150 ${
-                                  active ? "bg-primary" : "bg-secondary/15 group-hover:bg-primary"
-                                }`}
-                              />
+                              {CozumIcon ? (
+                                <span className="shrink-0">
+                                  {CozumIcon({ className: "h-7 w-7" })}
+                                </span>
+                              ) : (
+                                <span
+                                  className={`h-1 w-1 shrink-0 rounded-full transition-colors duration-150 ${
+                                    active ? "bg-primary" : "bg-secondary/15 group-hover:bg-primary"
+                                  }`}
+                                />
+                              )}
                               {link.label}
                             </Link>
                           );
@@ -648,16 +664,28 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
 
                 {mobileExpanded === menu.label && (
                   <div className="ms-11 space-y-0.5 border-s-2 border-primary/10 py-1 ps-4">
-                    {menu.links.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={`/${locale}${link.href}`}
-                        onClick={() => { setMobileOpen(false); setMobileExpanded(null); }}
-                        className="block rounded-md px-3 py-2 text-start text-[13px] leading-snug break-words text-secondary/55 transition-colors hover:text-primary"
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
+                    {menu.links.map((link) => {
+                      const cozumSlug = link.href.replace(/^\/cozumler\//, "").replace(/^\//, "");
+                      const urunSlug = link.href.replace(/^\/urunler\//, "").replace(/^\//, "");
+                      const CozumIcon = link.href.startsWith("/cozumler/")
+                        ? cozumlerIconMap[cozumSlug]
+                        : link.href.startsWith("/urunler/")
+                          ? urunlerIconMap[urunSlug]
+                          : null;
+                      return (
+                        <Link
+                          key={link.href}
+                          href={`/${locale}${link.href}`}
+                          onClick={() => { setMobileOpen(false); setMobileExpanded(null); }}
+                          className="flex items-center gap-2.5 rounded-md px-3 py-2 text-start text-meta leading-snug break-words text-secondary/55 transition-colors hover:text-primary"
+                        >
+                          {CozumIcon ? (
+                            <span className="shrink-0">{CozumIcon({ className: "h-6 w-6" })}</span>
+                          ) : null}
+                          {link.label}
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
               </div>

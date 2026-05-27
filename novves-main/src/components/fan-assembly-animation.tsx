@@ -166,13 +166,13 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
               className="absolute inset-x-5 bottom-5 overflow-hidden rounded-2xl border border-white/14 bg-[#343840]/84 p-5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55)] backdrop-blur-[2px]"
               style={{ opacity: panelOpacity, transform: `translateY(-${panelLift}px)` }}
             >
-              <p className="font-mono-eng text-[9.5px] uppercase tracking-[0.24em] text-primary/90">• {dict.badge}</p>
-              <h1 className="mt-3 text-white">
+              <p className="font-mono-eng text-[10px] uppercase tracking-[0.24em] text-primary/90">• {dict.badge}</p>
+              <h1 className="mt-3 font-eurostile text-white">
                 <span className="block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{dict.titleLine1}</span>
                 <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{dict.titleLine2}</span>
                 <span className="mt-0.5 block text-[2rem] font-semibold leading-[1.02] tracking-[-0.02em]">{dict.titleLine3}</span>
               </h1>
-              <p className="mt-3 text-[14px] leading-[1.58] text-white/84">{dict.subtitle}</p>
+              <p className="mt-3 text-meta leading-[1.58] text-white/84">{dict.subtitle}</p>
 
               <div className="mt-4 flex flex-wrap items-center gap-4">
                 <Link
@@ -200,15 +200,15 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
               className="pointer-events-none absolute inset-x-5 bottom-3 rounded-2xl border border-ink/10 bg-white/86 p-3.5 shadow-[0_14px_34px_-22px_rgba(20,24,32,0.35)] backdrop-blur-md"
               style={{ opacity: endCardOpacity }}
             >
-              <div className="flex items-center justify-between font-mono-eng text-[8.5px] uppercase tracking-[0.2em] text-ink/62">
+              <div className="flex items-center justify-between font-mono-eng text-[9px] uppercase tracking-[0.2em] text-ink/62">
                 <span>◆ {dict.endCard.series}</span>
                 <span className="inline-flex items-center gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                   {dict.endCard.spec3Value}
                 </span>
               </div>
-              <h3 className="mt-1.5 text-[1.82rem] font-bold leading-[1.04] tracking-[-0.02em] text-ink">{dict.endCard.title}</h3>
-              <p className="mt-2 max-w-[36ch] text-[12px] leading-[1.5] text-ink/68">{dict.endCard.desc}</p>
+              <h3 className="mt-1.5 font-eurostile text-card font-bold leading-[1.04] tracking-[-0.02em] text-ink">{dict.endCard.title}</h3>
+              <p className="mt-2 max-w-[36ch] text-fine leading-[1.5] text-ink/68">{dict.endCard.desc}</p>
               <div className="mt-3 grid grid-cols-3 divide-x divide-ink/10 border-t border-ink/10 pt-2.5">
                 {[
                   { v: dict.endCard.spec1Value, l: dict.endCard.spec1Label },
@@ -227,7 +227,7 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
       </div>
 
       {/* Stats grid */}
-      <div className="mt-10 border-y border-ink/12 bg-sand-100">
+      <div className="mt-10 bg-sand-100">
         <div className="grid grid-cols-2 divide-x divide-ink/10">
           {dict.stats.map((s, i) => (
             <div key={s.label} className={`px-5 py-6 ${i >= 2 ? "border-t border-ink/10" : ""}`}>
@@ -361,32 +361,21 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
           const pq = uiKey / HERO_UI_STEPS;
           const spinDom = Math.min(Math.max((pq - spinStart) / (spinEnd - spinStart), 0), 1);
 
-          const lightRaw = Math.min(Math.max((pq - 0.2) / 0.7, 0), 1);
+          const lightRaw = Math.min(Math.max((pq - 0.2) / 0.5, 0), 1);
           const lightProgress = lightRaw * lightRaw * lightRaw * (lightRaw * (lightRaw * 6 - 15) + 10);
-          const bgR = 42 + lightProgress * 196;
-          const bgG = 42 + lightProgress * 194;
-          const bgB = 46 + lightProgress * 182;
 
           if (stickyShellRef.current) {
-            stickyShellRef.current.style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
+            stickyShellRef.current.style.backgroundColor = "#f4f4ea";
           }
           if (paperTextureRef.current) {
-            paperTextureRef.current.style.opacity = String(Math.min(lightProgress * 0.24, 0.26));
+            paperTextureRef.current.style.opacity = "0";
           }
           if (canvasRef.current) {
-            const brightness = 0.86 + lightProgress * 0.14;
-            const saturate = 1 + lightProgress * 0.04;
-            canvasRef.current.style.opacity = String(0.88 + lightProgress * 0.12);
-            canvasRef.current.style.filter = `brightness(${brightness}) saturate(${saturate}) contrast(1.01)`;
+            canvasRef.current.style.opacity = "1";
+            canvasRef.current.style.filter = "brightness(1) saturate(1.04) contrast(1.01)";
           }
           if (hazeRef.current) {
-            const disperse = Math.min(Math.max((pq - 0.02) / 0.72, 0), 1);
-            const hazeOpacity = 0.2 * (1 - disperse);
-            const hazeBlur = 2.4 * (1 - disperse);
-            const hazeShift = 10 * disperse;
-            hazeRef.current.style.opacity = String(hazeOpacity);
-            hazeRef.current.style.filter = `blur(${hazeBlur}px)`;
-            hazeRef.current.style.transform = `translateX(${hazeShift}px)`;
+            hazeRef.current.style.opacity = "0";
           }
           if (airRingOuterRef.current && airRingInnerRef.current && airFlowRef.current) {
             const flowStrength = Math.min(Math.max((pq - 0.04) / 0.7, 0), 1);
@@ -418,7 +407,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
             panelRef.current.style.transform = `translateX(${slideOut * 105}%)`;
             panelRef.current.style.opacity = String(1 - panelFade * 0.85);
             if (toneBlendRef.current) {
-              toneBlendRef.current.style.opacity = String(1 - Math.max(slideOut, panelFade));
+              toneBlendRef.current.style.opacity = "0";
             }
           }
           if (statsRef.current) {
@@ -433,9 +422,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
             progressBarRef.current.style.boxShadow = "0 0 12px rgba(239, 95, 23, 0.24)";
           }
           if (sweepRef.current) {
-            const sweep = Math.min(Math.max((pq - 0.08) / 0.78, 0), 1);
-            sweepRef.current.style.opacity = String(0.05 + sweep * 0.13);
-            sweepRef.current.style.transform = `translateX(${(sweep - 0.2) * 36}%)`;
+            sweepRef.current.style.opacity = "0";
           }
           if (endCardRef.current) {
             const endFade = Math.max((pq - 0.72) * 4, 0);
@@ -478,7 +465,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
 
       {/* Desktop sticky container wraps around the canvas; outer spacer elsewhere governs scroll range */}
       <div id="hero-sticky-section" className="hidden lg:block" style={{ height: "200vh" }}>
-        <div ref={stickyShellRef} className="sticky top-0 h-screen w-full overflow-hidden bg-[#2a2a2e] transition-colors duration-500">
+        <div ref={stickyShellRef} className="sticky top-0 h-screen w-full overflow-hidden bg-[#f4f4ea] transition-colors duration-500">
           {/* ── TWO-COLUMN GRID: LEFT = CONTENT, RIGHT = FAN ── */}
 
           {/* Fan canvas — full width; objectPosition animates left→right on scroll */}
@@ -486,13 +473,13 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
             <canvas
               ref={canvasRef}
               className="absolute inset-0 h-full w-full object-cover"
-              style={{ objectPosition: "58% center", opacity: 0.88 }}
+              style={{ objectPosition: "58% center", opacity: 1, mixBlendMode: "lighten" }}
             />
             <div
               ref={hazeRef}
               className="pointer-events-none absolute inset-0"
               style={{
-                opacity: 0.2,
+                opacity: 0,
                 background:
                   "radial-gradient(circle at 28% 54%, rgba(18,18,20,0.26) 0%, rgba(18,18,20,0.11) 34%, rgba(18,18,20,0.00) 68%)",
               }}
@@ -544,12 +531,13 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
             <div
               ref={toneBlendRef}
               className="pointer-events-none absolute inset-0 bg-[linear-gradient(270deg,rgba(22,22,26,0.28)_0%,rgba(22,22,26,0.14)_30%,rgba(22,22,26,0.06)_50%,rgba(22,22,26,0.02)_62%,rgba(22,22,26,0)_74%)]"
+              style={{ opacity: 0 }}
             />
             <div
               ref={sweepRef}
               className="pointer-events-none absolute inset-y-0 -left-[18%] w-[46%]"
               style={{
-                opacity: 0.08,
+                opacity: 0,
                 background:
                   "linear-gradient(105deg, rgba(215,215,218,0.00) 0%, rgba(215,215,218,0.16) 42%, rgba(215,215,218,0.00) 82%)",
                 filter: "blur(8px)",
@@ -583,7 +571,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
               </p>
 
               {/* Display title */}
-              <h1 className="group mt-7">
+              <h1 className="group mt-7 font-eurostile">
                 <span className="block font-semibold text-white/95 transition-colors duration-300 group-hover:text-primary" style={{ fontSize: "clamp(2rem, 2.9vw, 3rem)", lineHeight: 1.08, letterSpacing: "-0.02em" }}>
                   {dict.titleLine1}
                 </span>
@@ -643,7 +631,7 @@ export function FanAssemblyAnimation({ dict, locale }: { dict: HeroDict; locale:
                   </p>
                   <div className="mt-4 h-px w-14 bg-primary/70" />
 
-                  <h2 className="mt-5 font-semibold text-ink" style={{ fontSize: "clamp(2rem, 2.9vw, 3rem)", lineHeight: 1.08, letterSpacing: "-0.02em" }}>
+                  <h2 className="mt-5 font-eurostile font-semibold text-ink" style={{ fontSize: "clamp(2rem, 2.9vw, 3rem)", lineHeight: 1.08, letterSpacing: "-0.02em" }}>
                     {dict.endCard.title}
                   </h2>
 

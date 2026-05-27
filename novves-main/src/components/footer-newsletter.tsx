@@ -29,7 +29,7 @@ export function FooterNewsletter({
         onChange={(e) => setEmail(e.target.value)}
         placeholder={sent ? "Teşekkürler — kaydedildi." : placeholder}
         aria-label={submitLabel}
-        className="flex-1 bg-transparent px-3 text-[12.5px] text-white placeholder:text-white/45 focus:outline-none"
+        className="flex-1 bg-transparent px-3 text-fine text-white placeholder:text-white/45 focus:outline-none"
       />
       <button
         type="submit"

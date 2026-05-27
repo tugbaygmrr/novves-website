@@ -103,7 +103,7 @@ export default async function KurumsalPage({
                 {nav.corporate}
               </span>
             </div>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
+            <h1 className="font-display text-hero font-extrabold leading-tight tracking-tight text-white">
               {nav.corporate}
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/55">
@@ -121,7 +121,7 @@ export default async function KurumsalPage({
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">
                 {nav.corporate}
               </p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
                 {nav.corporateDesc}
               </h2>
             </div>
@@ -150,7 +150,7 @@ export default async function KurumsalPage({
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">
             {s.technicalSupport}
           </p>
-          <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          <h3 className="mt-3 font-display text-section font-bold text-white">
             {s.lookingForProduct}
           </h3>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/45">

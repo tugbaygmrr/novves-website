@@ -188,7 +188,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
               </span>
             </div>
 
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
+            <h1 className="font-display text-hero font-extrabold leading-tight tracking-tight text-white">
               {t.heroTitle1}{" "}
               <span className="text-primary">{t.heroTitle2}</span>{" "}
               {t.heroTitle3}
@@ -366,7 +366,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
             <div>
               <div className="min-h-0 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 shadow-sm sm:min-h-[560px] sm:p-6 lg:min-h-[780px]">
                 <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-secondary">
+                  <h2 className="font-display text-card font-bold text-secondary">
                     {t.formTitle}
                   </h2>
                   <p className="mt-1.5 text-sm text-gray-400">
@@ -510,7 +510,7 @@ export default function IletisimClient({ dict, locale }: { dict: ContactDict; lo
       {/* ── Map ────────────────────────────────────────────── */}
       <section className="bg-[#ecebe6] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-8 text-xl font-bold text-secondary">{t.mapTitle}</h2>
+          <h2 className="mb-8 font-display text-card-sm font-bold text-secondary">{t.mapTitle}</h2>
 
           <div className="grid gap-6 lg:grid-cols-2">
             {/* İstanbul */}

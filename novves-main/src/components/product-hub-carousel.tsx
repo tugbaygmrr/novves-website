@@ -224,7 +224,7 @@ function ProductCard({
         />
         {/* Numara rozeti — sol üst tag şekli */}
         <div className="absolute left-0 top-0 grid h-[52px] w-[52px] place-items-center rounded-br-xl bg-primary shadow-[0_6px_14px_-6px_rgba(239,95,23,0.6)]">
-          <span className="font-mono-eng text-[17px] font-bold leading-none tabular-nums text-white">
+          <span className="font-mono-eng text-body font-bold leading-none tabular-nums text-white">
             {String(index + 1).padStart(2, "0")}
           </span>
         </div>
@@ -245,7 +245,7 @@ function ProductCard({
 
         <ul className="mt-4 min-h-0 flex-1 space-y-2.5">
           {card.families.map((fam) => (
-            <li key={fam} className="flex items-start gap-2.5 text-[12.5px] leading-snug text-secondary/85">
+            <li key={fam} className="flex items-start gap-2.5 text-fine leading-snug text-secondary/85">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden />
               <span className="line-clamp-2">{fam}</span>
             </li>
@@ -260,7 +260,7 @@ function ProductCard({
         <div className="mt-5">
           <Link
             href={href}
-            className="group/cta inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-[0.16em] text-primary transition-colors hover:text-primary-deep"
+            className="group/cta inline-flex items-center gap-2 text-fine font-bold uppercase tracking-[0.16em] text-primary transition-colors hover:text-primary-deep"
           >
             {openLabel}
             <svg

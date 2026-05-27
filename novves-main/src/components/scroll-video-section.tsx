@@ -47,9 +47,12 @@ function lerpRgb(from: readonly [number, number, number], to: readonly [number, 
 
 /** Zemin koyu → ana sayfa ana zemin (#EAEADF); vurgu marka turuncusu (#EF5F17) */
 const SCROLL_SHELL_DARK: readonly [number, number, number] = [15, 29, 51]; // #0f1d33 — footer ile aynı derin lacivert
-const SCROLL_SHELL_LIGHT: readonly [number, number, number] = [234, 234, 223]; // #eaeadf
+const SCROLL_SHELL_LIGHT: readonly [number, number, number] = [244, 244, 234]; // #f4f4ea — site background
 const SCROLL_PANEL_DARK: readonly [number, number, number] = [17, 32, 58]; // #11203a — footer gradient orta tonu
-const SCROLL_PANEL_LIGHT: readonly [number, number, number] = [241, 241, 232]; // soft yüzeye yakın
+const SCROLL_PANEL_LIGHT: readonly [number, number, number] = [244, 244, 234]; // #f4f4ea — site background
+/** Navy → krem geçişinde gri olmasın diye mavi waypoint */
+const SCROLL_SHELL_WAYPOINT: readonly [number, number, number] = [60, 110, 180]; // doygun mavi
+const SCROLL_PANEL_WAYPOINT: readonly [number, number, number] = [60, 110, 180];
 const SCROLL_INK: readonly [number, number, number] = [58, 60, 61]; // --ink #3a3c3d (hero metin)
 const SCROLL_ACCENT_DARK: readonly [number, number, number] = [239, 95, 23]; // #ef5f17
 const SCROLL_ACCENT_LIGHT: readonly [number, number, number] = [247, 118, 56]; // açık vurgu
@@ -234,6 +237,7 @@ export function ScrollVideoSection({
   const heroImageRef = useRef<HTMLImageElement>(null);
   const canvasWashRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const navyHaloRef = useRef<HTMLDivElement>(null);
   const startCardRef = useRef<HTMLDivElement>(null);
   const startCardSurfaceRef = useRef<HTMLDivElement>(null);
   const endCardSurfaceRef = useRef<HTMLDivElement>(null);
@@ -350,7 +354,7 @@ export function ScrollVideoSection({
       /** 0 = grimsi; 1 = açık. Başta daha uzun gri: geç başlar, geç biter. */
       const open = Math.min(Math.max((progress - 0.1) / 0.78, 0), 1);
       const openDomKey = Math.round(open * THEME_OPEN_DOM_STEPS);
-      const shellBg = lerpRgb(SCROLL_SHELL_DARK, SCROLL_SHELL_LIGHT, open);
+      const shellBg = "#f4f4ea";
       /** Kutu = bölüm zemini (sağdaki ana ton) ile aynı; ayrı koyu blok yok. */
       const boxFill = shellBg;
       const textBlend = Math.min(Math.max((open - 0.32) / 0.64, 0), 1);
@@ -361,23 +365,26 @@ export function ScrollVideoSection({
       const cornerTint = lerpRgb([230, 230, 230], [90, 88, 82], textBlend);
       const boxEdge = textBlend < 0.38 ? "rgba(255,255,255,0.11)" : SCROLL_DIVIDER_LIGHT;
 
-      const pr = Math.round(lerp(SCROLL_PANEL_DARK[0], SCROLL_PANEL_LIGHT[0], open));
-      const pg = Math.round(lerp(SCROLL_PANEL_DARK[1], SCROLL_PANEL_LIGHT[1], open));
-      const pb = Math.round(lerp(SCROLL_PANEL_DARK[2], SCROLL_PANEL_LIGHT[2], open));
+      const panelFrom = open < 0.5 ? SCROLL_PANEL_DARK : SCROLL_PANEL_WAYPOINT;
+      const panelTo = open < 0.5 ? SCROLL_PANEL_WAYPOINT : SCROLL_PANEL_LIGHT;
+      const panelT = open < 0.5 ? open * 2 : (open - 0.5) * 2;
+      const pr = Math.round(lerp(panelFrom[0], panelTo[0], panelT));
+      const pg = Math.round(lerp(panelFrom[1], panelTo[1], panelT));
+      const pb = Math.round(lerp(panelFrom[2], panelTo[2], panelT));
 
       if (openDomKey !== lastOpenDomKey) {
         lastOpenDomKey = openDomKey;
         if (stickyShellRef.current) {
           stickyShellRef.current.style.backgroundColor = shellBg;
         }
+        if (navyHaloRef.current) {
+          navyHaloRef.current.style.opacity = String(Math.max(1 - open * 1.4, 0));
+        }
         if (canvasWashRef.current) {
-          canvasWashRef.current.style.opacity = String((1 - open) * 0.42);
+          canvasWashRef.current.style.opacity = "0";
         }
         if (panelRef.current) {
-          panelRef.current.style.background = [
-            `radial-gradient(ellipse 95% 125% at 0% 48%, rgba(${pr},${pg},${pb},0.62) 0%, rgba(${pr},${pg},${pb},0.22) 42%, transparent 62%)`,
-            `linear-gradient(90deg, rgba(${pr},${pg},${pb},0.78) 0%, rgba(${pr},${pg},${pb},0.28) 38%, rgba(${pr},${pg},${pb},0.08) 54%, rgba(${pr},${pg},${pb},0) 72%)`,
-          ].join(",");
+          panelRef.current.style.background = "transparent";
         }
 
         if (containerRef.current) {
@@ -570,12 +577,12 @@ export function ScrollVideoSection({
         ref={containerRef}
         id={id}
         className="relative hidden lg:block"
-        style={{ height: `${scrollVh}vh`, backgroundColor: "#4a4a4d" }}
+        style={{ height: `${scrollVh}vh`, backgroundColor: "#f4f4ea" }}
       >
       <div
         ref={stickyShellRef}
         className="sticky top-0 h-screen w-full overflow-hidden [contain:layout]"
-        style={{ backgroundColor: "#4a4a4d" }}
+        style={{ backgroundColor: "#f4f4ea" }}
       >
         {/* Statik görsel (scrollImageSrc) veya MP4 scrub veya kare canvas */}
         {isScrollStill && scrollImageSrc ? (
@@ -613,20 +620,14 @@ export function ScrollVideoSection({
         <div
           ref={canvasWashRef}
           className="pointer-events-none absolute inset-0 bg-[#1a1a1e]"
-          style={{ opacity: 0.42 }}
+          style={{ opacity: 0 }}
           aria-hidden
         />
 
-        {/* Sol okuma alanı — dikey çizgi yok; geniş radial + linear yumuşak geçiş */}
+        {/* Sol okuma alanı — gri gradient kaldırıldı, sadece pozisyon takipçisi */}
         <div
           ref={panelRef}
           className="pointer-events-none absolute inset-0 z-10 will-change-transform"
-          style={{
-            background: [
-              "radial-gradient(ellipse 95% 125% at 0% 48%, rgba(86,86,90,0.62) 0%, rgba(86,86,90,0.22) 42%, transparent 62%)",
-              "linear-gradient(90deg, rgba(86,86,90,0.78) 0%, rgba(86,86,90,0.28) 38%, rgba(86,86,90,0.08) 54%, rgba(86,86,90,0) 72%)",
-            ].join(","),
-          }}
         >
           <div className="absolute inset-0 blueprint-grid-light opacity-[0.035]" aria-hidden />
         </div>
@@ -659,6 +660,19 @@ export function ScrollVideoSection({
           </div>
         )}
 
+        {/* Box yansıma efekti — sol-merkez radial soft glow, dışa doğru fade */}
+        <div
+          ref={navyHaloRef}
+          className="pointer-events-none absolute inset-0 z-10"
+          style={{
+            background:
+              "radial-gradient(ellipse 55% 75% at 18% 50%, rgba(15,29,51,0.45) 0%, rgba(15,29,51,0.22) 35%, rgba(15,29,51,0.08) 60%, rgba(15,29,51,0) 80%)",
+            opacity: 1,
+            transition: "opacity 0.15s linear",
+          }}
+          aria-hidden
+        />
+
         {/* START CARD — geniş kutu, metalik H1 + turuncu H2 + iconlu liste + glass CTA + sertifika marquee */}
         {startCard && (
           <div
@@ -667,11 +681,11 @@ export function ScrollVideoSection({
           >
             <div
               ref={startCardSurfaceRef}
-              className="relative w-full overflow-hidden rounded-[2rem] border border-white/8 bg-[#0f1d33]/95 px-7 py-4 shadow-[0_18px_48px_-28px_rgba(0,0,0,0.55),0_0_96px_-12px_rgba(15,29,51,0.55)] sm:px-9 sm:py-5 [transform:translateZ(0)]"
+              className="group relative w-full overflow-hidden rounded-[2rem] px-7 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.35)] sm:px-9 sm:py-5 [transform:translateZ(0)]"
               style={
                 {
-                  backgroundColor: "rgb(15, 29, 51)",
-                  borderColor: "rgba(255,255,255,0.06)",
+                  backgroundColor: "#0f1d33",
+                  borderColor: "transparent",
                   color: "rgb(230, 230, 230)",
                   ["--c-title" as string]: "rgb(255, 255, 255)",
                   ["--c-sub" as string]: "rgb(209, 209, 209)",
@@ -680,33 +694,40 @@ export function ScrollVideoSection({
                 } as CSSProperties
               }
             >
-              {/* Arka plan: Türkiye-merkezli ihracat haritası — aşağı kaydırılmış */}
+              {/* Arka plan — Gemini generated blueprint görseli (tam opak) */}
               <div
                 className="pointer-events-none absolute inset-0"
                 style={{
-                  backgroundImage: "url('/images/hero/hero-export-map.jpg')",
-                  backgroundSize: "auto 160%",
-                  backgroundPosition: "55% 10%",
+                  backgroundImage: "url('/images/Gemini_Generated_Image_auvf7pauvf7pauvf.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
-                  filter: "brightness(1.25) contrast(1.02) saturate(1.05)",
                 }}
                 aria-hidden
               />
-
-              {/* Hero H1 — Helvetica ExtraBold 800, 48px metalik başlık */}
+              {/* Metin okunabilirlik darken — sol karanlık, sağa transparent (map glow korunur) */}
+              <div
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(to right, rgba(8,15,35,0.7) 0%, rgba(8,15,35,0.55) 35%, rgba(8,15,35,0.25) 60%, rgba(8,15,35,0) 80%)",
+                }}
+                aria-hidden
+              />
+              {/* Hero H1 — Montserrat ExtraBold 800, 48px metalik başlık */}
               {startCard.eyebrow && (() => {
                 const lines = startCard.eyebrow.split(/\n/).map(s => s.trim()).filter(Boolean).slice(0, 2);
                 const h1Style: CSSProperties = {
-                  fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                  fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                   fontWeight: 800,
                   fontSize: "3rem",
                   lineHeight: 1.04,
                   letterSpacing: "-0.015em",
-                  backgroundImage: "linear-gradient(180deg, #ffffff 0%, #e9ecf2 45%, #b8bec7 100%)",
+                  backgroundImage: "linear-gradient(180deg, #f4f4ea 0%, #eaeadf 45%, #c4c4b6 100%)",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   color: "transparent",
-                  filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.35))",
+                  filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.5)) drop-shadow(0 4px 12px rgba(0,0,0,0.45))",
                 };
                 return (
                   <div className="relative space-y-1">
@@ -719,11 +740,11 @@ export function ScrollVideoSection({
                 );
               })()}
 
-              {/* H2 Ana Başlık — Helvetica Bold 700, 36px turuncu, '●' prefix ile badge */}
+              {/* H2 Ana Başlık — Montserrat Bold 700, 36px turuncu, '●' prefix ile badge */}
               <h2
                 className={`relative text-balance ${startCard.eyebrow ? "mt-3" : ""}`}
                 style={{
-                  fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                  fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                   fontWeight: 700,
                   fontSize: "2.25rem",
                   lineHeight: 1.08,
@@ -752,6 +773,7 @@ export function ScrollVideoSection({
                         <span
                           className="font-semibold"
                           style={{
+                            fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                             fontSize: "clamp(0.98rem, 1.15vw, 1.15rem)",
                             color: "var(--c-title)",
                             letterSpacing: "-0.005em",
@@ -765,7 +787,13 @@ export function ScrollVideoSection({
                 </ul>
               )}
 
-              <p className="relative mt-3 max-w-[48ch] text-[13px] leading-[1.5]" style={{ color: "var(--c-sub)" }}>
+              <p
+                className="relative mt-3 max-w-[48ch] text-[13px] leading-[1.5]"
+                style={{
+                  fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
+                  color: "var(--c-sub)",
+                }}
+              >
                 {startCard.subtitle}
               </p>
 
@@ -785,7 +813,10 @@ export function ScrollVideoSection({
                           <path d="M11 9h2" />
                         </svg>
                       </span>
-                      <span className="flex-1 font-mono-eng text-[12px] font-semibold uppercase leading-[1.2] tracking-[0.16em]">
+                      <span
+                        className="flex-1 text-fine font-semibold uppercase leading-[1.2] tracking-[0.16em]"
+                        style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                      >
                         {startCard.ctaPrimary}
                       </span>
                       <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
@@ -805,7 +836,10 @@ export function ScrollVideoSection({
                           <path d="M15.5 8.5l-2 5-5 2 2-5z" />
                         </svg>
                       </span>
-                      <span className="flex-1 font-mono-eng text-[12px] font-semibold uppercase leading-[1.2] tracking-[0.16em]">
+                      <span
+                        className="flex-1 text-fine font-semibold uppercase leading-[1.2] tracking-[0.16em]"
+                        style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                      >
                         {startCard.ctaSecondary}
                       </span>
                       <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
@@ -817,7 +851,7 @@ export function ScrollVideoSection({
               )}
 
               {/* Sertifika marquee — buton altında, 7 ayrı logo PNG, seamless loop için 2x */}
-              <div className="relative mt-3 -mx-7 -mb-4 overflow-hidden border-t border-white/10 pb-2 pt-2 sm:-mx-9 sm:-mb-5 sm:pb-2.5">
+              <div className="relative mt-3 -mx-7 -mb-4 overflow-hidden pb-2 pt-2 sm:-mx-9 sm:-mb-5 sm:pb-2.5">
                 <div className="card-cert-marquee-track flex w-max items-center">
                   {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -842,8 +876,16 @@ export function ScrollVideoSection({
             <div className="grid grid-cols-2 gap-px bg-ink/10 sm:grid-cols-4">
               {startCard.stats.map((s) => (
                 <div key={s.label} className="min-w-0 bg-sand-100 px-4 py-4 sm:px-6 sm:py-5 xl:px-10">
-                  <p className="font-bold text-[clamp(1.35rem,4vw,2.2rem)] leading-none text-ink">{s.value}</p>
-                  <p className="mt-2 font-mono-eng text-[9px] uppercase leading-snug tracking-[0.2em] text-ink/55 sm:text-[9.5px] sm:tracking-[0.22em]">
+                  <p
+                    className="font-bold text-[clamp(1.35rem,4vw,2.2rem)] leading-none text-ink"
+                    style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                  >
+                    {s.value}
+                  </p>
+                  <p
+                    className="mt-2 text-[9px] uppercase leading-snug tracking-[0.2em] text-ink/55 sm:text-[10px] sm:tracking-[0.22em]"
+                    style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                  >
                     {s.label}
                   </p>
                 </div>
@@ -886,7 +928,7 @@ export function ScrollVideoSection({
                   </p>
 
                   <h3
-                    className="mt-6 font-bold"
+                    className="mt-6 font-eurostile font-bold"
                     style={{
                       fontSize: "clamp(2.1rem, 2.8vw, 3.1rem)",
                       lineHeight: 0.95,
@@ -898,7 +940,7 @@ export function ScrollVideoSection({
                   </h3>
 
                   <p
-                    className="mt-5 hidden text-[14px] leading-[1.7] xl:block"
+                    className="mt-5 hidden text-meta leading-[1.7] xl:block"
                     style={{ color: "var(--c-sub)" }}
                   >
                     {endCard.desc}
@@ -1084,11 +1126,8 @@ function MobileScrollSection({
         const panelLift = transition * 105;
         const finalTextOpacity = Math.min(Math.max((transition - 0.78) / 0.2, 0), 1);
         const finalTextLift = (1 - finalTextOpacity) * 24;
-        const bgR = Math.round(15 + transition * 219);
-        const bgG = Math.round(29 + transition * 205);
-        const bgB = Math.round(51 + transition * 172);
         const root = mobileHeroBgRef.current;
-        if (root) root.style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
+        if (root) root.style.backgroundColor = "#f4f4ea";
         const imgEl = mobileHeroImgRef.current;
         if (isMobileStill && imgEl) {
           imgEl.style.objectPosition = `${fanX}% center`;
@@ -1321,37 +1360,45 @@ function MobileScrollSection({
             {startCard && (
               <div
                 ref={mobileStartPanelRef}
-                className="absolute inset-x-4 bottom-4 overflow-hidden rounded-[1.5rem] border border-white/8 bg-[#0f1d33]/94 px-4 pb-0 pt-3.5 shadow-[0_16px_42px_-26px_rgba(0,0,0,0.55),0_0_72px_-10px_rgba(15,29,51,0.55)]"
+                className="absolute inset-x-4 bottom-4 overflow-hidden rounded-[1.5rem] border border-white/10 px-4 pb-0 pt-3.5 shadow-[0_8px_32px_rgba(0,0,0,0.25)] backdrop-blur-[14px]"
                 style={{
+                  backgroundColor: "rgba(8, 15, 35, 0.42)",
+                  WebkitBackdropFilter: "blur(18px)",
+                  borderColor: "rgba(255,255,255,0.15)",
                   opacity: isMobileMotion ? 1 : panelOpacity,
                   transform: isMobileMotion ? "translateY(0px)" : `translateY(-${panelLift}px)`,
                 }}
               >
-                {/* Arka plan: global harita görseli — metin okunabilirliği için karanlık overlay */}
+                {/* Arka plan: global harita görseli — glassmorphism için daha görünür */}
                 <div
-                  className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-55"
+                  className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-80"
                   style={{ backgroundImage: "url('/images/world-map.png')" }}
                   aria-hidden
                 />
+                {/* Alt kısımda hafif transparent gradient — cinematic finish */}
                 <div
-                  className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#0f1d33]/92 via-[#0f1d33]/70 to-[#0f1d33]/30"
+                  className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, transparent 0%, rgba(8,15,35,0.15) 60%, rgba(8,15,35,0.3) 100%)",
+                  }}
                   aria-hidden
                 />
 
-                {/* Hero H1 — Helvetica ExtraBold 800, mobile metalik başlık */}
+                {/* Hero H1 — Montserrat ExtraBold 800, mobile metalik başlık */}
                 {startCard.eyebrow && (() => {
                   const lines = startCard.eyebrow.split(/\n/).map(s => s.trim()).filter(Boolean).slice(0, 2);
                   const h1Style: CSSProperties = {
-                    fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                    fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                     fontWeight: 800,
                     fontSize: "clamp(1.4rem, 6vw, 2rem)",
                     lineHeight: 1.04,
                     letterSpacing: "-0.015em",
-                    backgroundImage: "linear-gradient(180deg, #ffffff 0%, #e9ecf2 45%, #b8bec7 100%)",
+                    backgroundImage: "linear-gradient(180deg, #f4f4ea 0%, #eaeadf 45%, #c4c4b6 100%)",
                     WebkitBackgroundClip: "text",
                     backgroundClip: "text",
                     color: "transparent",
-                    filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.35))",
+                    filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.5)) drop-shadow(0 4px 12px rgba(0,0,0,0.45))",
                   };
                   return (
                     <div className="relative space-y-0.5">
@@ -1364,11 +1411,11 @@ function MobileScrollSection({
                   );
                 })()}
 
-                {/* H2 Ana Başlık — Helvetica Bold 700, mobile clamped, '●' prefix ile badge */}
+                {/* H2 Ana Başlık — Montserrat Bold 700, mobile clamped, '●' prefix ile badge */}
                 <h2
                   className={`relative uppercase text-balance text-primary leading-[1.1] tracking-[-0.015em] ${startCard.eyebrow ? "mt-2" : ""}`}
                   style={{
-                    fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                    fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                     fontWeight: 700,
                     fontSize: "clamp(1.1rem, 5vw, 1.75rem)",
                   }}
@@ -1390,7 +1437,10 @@ function MobileScrollSection({
                           >
                             <span className="h-4 w-4">{START_CARD_LIST_ICONS[i]}</span>
                           </span>
-                          <span className="font-semibold text-white text-[0.92rem] leading-[1.2]">
+                          <span
+                            className="font-semibold text-white text-[0.92rem] leading-[1.2]"
+                            style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                          >
                             {label}
                           </span>
                         </li>
@@ -1399,7 +1449,12 @@ function MobileScrollSection({
                   </ul>
                 )}
 
-                <p className="relative mt-3 text-[12px] leading-[1.5] text-white/80">{startCard.subtitle}</p>
+                <p
+                  className="relative mt-3 text-fine leading-[1.5] text-white/80"
+                  style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                >
+                  {startCard.subtitle}
+                </p>
 
                 {/* CTAs — glass + turuncu kenar, sol ikon + sağ ok */}
                 {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
@@ -1418,7 +1473,10 @@ function MobileScrollSection({
                             <path d="M11 9h2" />
                           </svg>
                         </span>
-                        <span className="flex-1 font-mono-eng text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]">
+                        <span
+                          className="flex-1 text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]"
+                          style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                        >
                           {startCard.ctaPrimary}
                         </span>
                         <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
@@ -1437,7 +1495,10 @@ function MobileScrollSection({
                             <path d="M15.5 8.5l-2 5-5 2 2-5z" />
                           </svg>
                         </span>
-                        <span className="flex-1 font-mono-eng text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]">
+                        <span
+                          className="flex-1 text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]"
+                          style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                        >
                           {startCard.ctaSecondary}
                         </span>
                         <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
@@ -1449,7 +1510,7 @@ function MobileScrollSection({
                 )}
 
                 {/* Sertifika marquee — buton altı, kart alt edge */}
-                <div className="relative mt-3.5 -mx-4 overflow-hidden border-t border-white/10">
+                <div className="relative mt-3.5 -mx-4 overflow-hidden">
                   <div className="card-cert-marquee-track flex w-max items-center py-2">
                     {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -1488,7 +1549,7 @@ function MobileScrollSection({
                       {endCard.spec3Value}
                     </span>
                   </div>
-                  <h2 className="mt-3 text-ink">
+                  <h2 className="mt-3 font-eurostile text-ink">
                     <span className="block text-[2.05rem] font-bold leading-[1.02] tracking-[-0.025em]">{endCard.title}</span>
                   </h2>
                 </div>
@@ -1528,7 +1589,7 @@ function ProductCard({ endCard, imageSrc }: { endCard: EndCard; imageSrc: string
           <p className="font-mono-eng text-[10px] uppercase tracking-[0.22em] text-ink/55">
             Featured Product
           </p>
-          <h3 className="mt-1 font-bold text-ink" style={{ fontSize: "1.5rem", lineHeight: 1.1, letterSpacing: "-0.015em" }}>
+          <h3 className="mt-1 font-eurostile font-bold text-ink" style={{ fontSize: "1.5rem", lineHeight: 1.1, letterSpacing: "-0.015em" }}>
             {endCard.title}
           </h3>
         </div>
@@ -1548,7 +1609,7 @@ function ProductCard({ endCard, imageSrc }: { endCard: EndCard; imageSrc: string
         ].map((s) => (
           <div key={s.l} className="px-3 py-3.5 text-center">
             <p className="font-bold text-[1.05rem] leading-none text-ink">{s.v}</p>
-            <p className="mt-1.5 font-mono-eng text-[8.5px] uppercase tracking-[0.18em] text-ink/55 truncate">{s.l}</p>
+            <p className="mt-1.5 font-mono-eng text-[9px] uppercase tracking-[0.18em] text-ink/55 truncate">{s.l}</p>
           </div>
         ))}
       </div>

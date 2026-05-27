@@ -41,7 +41,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.hero.titlePart1}<span className="text-primary">{t.hero.titleHighlight}</span></h1>
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.04] tracking-[-0.02em] text-white">{t.hero.titlePart1}<span className="text-primary">{t.hero.titleHighlight}</span></h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">{t.hero.subtitle}</p>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl border border-ink/10 bg-[#f8f5ed]">
             <svg className="h-9 w-9 text-secondary/20" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" /></svg>
           </div>
-          <h2 className="mt-8 text-2xl font-bold text-dark">{t.comingSoon.title}</h2>
+          <h2 className="mt-8 font-eurostile text-card font-bold text-dark">{t.comingSoon.title}</h2>
           <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-secondary/50">{t.comingSoon.text}</p>
           <div className="mx-auto mt-8 flex items-center justify-center gap-2"><span className="h-px w-8 bg-ink/10" /><span className="h-1.5 w-1.5 rounded-full bg-primary/40" /><span className="h-px w-8 bg-ink/10" /></div>
         </div>
@@ -64,7 +64,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <div className="mb-9 flex items-end gap-4">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.patentAreas.sectionLabel}</p>
-              <h3 className="mt-1 text-xl font-bold text-dark">{t.patentAreas.title}</h3>
+              <h3 className="mt-1 font-eurostile text-card-sm font-bold text-dark">{t.patentAreas.title}</h3>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -89,7 +89,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-[0.07]" style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }} />
         <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.cta.sectionLabel}</p>
-          <h3 className="mt-3 text-xl font-bold text-white sm:text-2xl">{t.cta.title}</h3>
+          <h3 className="mt-3 font-eurostile text-card font-bold text-white">{t.cta.title}</h3>
           <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-white/40">{t.cta.subtitle}</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="mailto:info@novves.com" className="group inline-flex items-center gap-2.5 rounded-lg bg-white/5 px-6 py-3 text-sm font-medium text-white ring-1 ring-white/10 transition-all duration-300 hover:bg-primary/20 hover:ring-primary/30">

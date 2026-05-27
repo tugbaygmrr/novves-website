@@ -531,13 +531,6 @@ function HomeMarketStripBackdrop() {
     <div className="pointer-events-none absolute inset-0 overflow-hidden bg-sand-100" aria-hidden>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_70%_at_50%_-5%,rgba(0,56,107,0.06),transparent_55%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_85%_55%_at_100%_100%,rgba(239,95,23,0.05),transparent_52%)]" />
-      <div
-        className="absolute inset-0 opacity-[0.45]"
-        style={{
-          backgroundImage: "radial-gradient(circle at 1px 1px, rgba(216,216,205,0.55) 1px, transparent 0)",
-          backgroundSize: "24px 24px",
-        }}
-      />
     </div>
   );
 }
@@ -801,7 +794,7 @@ function HomeCompanyProfileSectionBlock({
                   aria-hidden
                 />
                 <span
-                  className={`max-lg:text-left text-[13px] font-bold uppercase leading-snug tracking-[0.2em] antialiased sm:text-[15px] lg:text-center lg:text-[18px] lg:leading-none lg:tracking-[0.22em] xl:text-[20px] lg:[text-orientation:mixed] lg:[writing-mode:vertical-rl] lg:rotate-180 ${navy}`}
+                  className={`max-lg:text-left text-[13px] font-bold uppercase leading-snug tracking-[0.2em] antialiased sm:text-[15px] lg:text-center lg:text-[18px] lg:leading-none lg:tracking-[0.22em] xl:text-metric-sm lg:[text-orientation:mixed] lg:[writing-mode:vertical-rl] lg:rotate-180 ${navy}`}
                 >
                   {verticalLabel}
                 </span>
@@ -811,12 +804,12 @@ function HomeCompanyProfileSectionBlock({
             <div className="min-w-0 space-y-12 sm:space-y-14 lg:space-y-16">
               {/* Zaman çizelgesi */}
               <section aria-labelledby="company-profile-timeline-heading">
-                <p className={`max-w-[52ch] text-[14px] leading-relaxed text-ink/75 sm:text-[15px] ${navy}`}>
+                <p className={`max-w-[52ch] text-meta leading-relaxed text-ink/75 sm:text-[15px] ${navy}`}>
                   {section.timelineIntro}
                 </p>
                 <h2
                   id="company-profile-timeline-heading"
-                  className={`mt-4 max-w-[40ch] text-balance text-xl font-bold leading-snug tracking-[-0.02em] sm:text-2xl lg:text-[1.65rem] lg:leading-[1.2] ${navy}`}
+                  className={`mt-4 max-w-[40ch] text-balance font-display text-card-sm font-bold leading-snug tracking-[-0.02em] lg:leading-[1.2] ${navy}`}
                 >
                   {section.timelineHeadlinePart1}
                   <span className="font-extrabold">{section.timelineHeadlineEm1}</span>
@@ -840,7 +833,7 @@ function HomeCompanyProfileSectionBlock({
                       return (
                         <li key={`${m.year}-${m.title}`} className="relative z-[1] flex flex-col items-center text-center">
                           <div className="mb-3 flex h-11 items-center justify-center rounded-full border-2 border-[#1e3a5f] bg-sand-100 px-3 shadow-sm">
-                            <span className={`font-mono-eng text-[12px] font-bold tracking-[0.08em] ${navy}`}>{m.year}</span>
+                            <span className={`font-mono-eng text-fine font-bold tracking-[0.08em] ${navy}`}>{m.year}</span>
                           </div>
                           <div className="relative mb-3 w-full overflow-hidden rounded-lg border border-[#1e3a5f]/10 bg-white shadow-sm">
                             <div className="relative aspect-[4/3] w-full">
@@ -880,7 +873,7 @@ function HomeCompanyProfileSectionBlock({
                             </div>
                           </div>
                           <p className={`text-[15px] font-bold leading-snug ${navy}`}>{m.title}</p>
-                          <p className="mt-1.5 max-w-[28ch] text-[13px] leading-relaxed text-ink/68 sm:text-[14px]">
+                          <p className="mt-1.5 max-w-[28ch] text-[13px] leading-relaxed text-ink/68 sm:text-meta">
                             {m.body}
                           </p>
                         </li>
@@ -902,7 +895,7 @@ function HomeCompanyProfileSectionBlock({
                       {section.goalsTitle}
                     </h3>
                   </div>
-                  <p className={`mt-4 text-[16px] leading-relaxed text-ink/72 sm:text-[18px] ${navy}`}>
+                  <p className={`mt-4 text-body leading-relaxed text-ink/72 sm:text-[18px] ${navy}`}>
                     {section.goalsIntro}
                   </p>
                   <ul className="mt-8 grid gap-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-8">
@@ -913,7 +906,7 @@ function HomeCompanyProfileSectionBlock({
                         </div>
                         <div>
                           <p className={`text-[18px] font-bold leading-snug ${navy}`}>{p.title}</p>
-                          <p className="mt-1 text-[15px] leading-relaxed text-ink/68 sm:text-[16px]">{p.body}</p>
+                          <p className="mt-1 text-[15px] leading-relaxed text-ink/68 sm:text-body">{p.body}</p>
                         </div>
                       </li>
                     ))}
@@ -1164,11 +1157,11 @@ function HomeSolutionShowcaseCard({
       >
         <div className="flex shrink-0 gap-2 sm:gap-2.5">
           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/35 bg-white/12 font-bold leading-none text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] sm:h-10 sm:w-10">
-            <span className="text-[15px] tabular-nums sm:text-[16px]">{String(index + 1).padStart(2, "0")}</span>
+            <span className="text-[15px] tabular-nums sm:text-body">{String(index + 1).padStart(2, "0")}</span>
           </div>
           <div className="flex min-h-0 w-0 min-w-0 flex-1 flex-col overflow-hidden pt-0.5">
-            <h3 className="line-clamp-2 min-h-[2.75em] text-[14px] font-bold leading-snug text-white sm:text-[15px]">{title}</h3>
-            <p className="mt-0.5 line-clamp-2 min-h-[3.25em] text-[11px] leading-relaxed text-white/88 sm:mt-1 sm:text-[12px]">{subtitle}</p>
+            <h3 className="line-clamp-2 min-h-[2.75em] text-meta font-bold leading-snug text-white sm:text-[15px]">{title}</h3>
+            <p className="mt-0.5 line-clamp-2 min-h-[3.25em] text-[11px] leading-relaxed text-white/88 sm:mt-1 sm:text-fine">{subtitle}</p>
           </div>
         </div>
         <div className="grid shrink-0 grid-cols-3 items-end gap-0.5 sm:gap-1">
@@ -1375,7 +1368,7 @@ function HomeProductCategoryCard({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 360px"
         />
         <div className="absolute left-0 top-0 z-10 grid h-[44px] w-[44px] place-items-center rounded-br-xl bg-primary shadow-[0_6px_14px_-6px_rgba(239,95,23,0.6)] sm:h-[48px] sm:w-[48px]">
-          <span className="font-mono-eng text-[14px] font-bold leading-none tabular-nums text-white sm:text-[15px]">
+          <span className="font-mono-eng text-meta font-bold leading-none tabular-nums text-white sm:text-[15px]">
             {num}
           </span>
         </div>
@@ -1390,7 +1383,7 @@ function HomeProductCategoryCard({
 
       {/* Gövde */}
       <div className="flex min-h-0 flex-1 flex-col px-4 pb-3 pt-7 sm:px-5 sm:pb-4 sm:pt-9">
-        <h3 className="line-clamp-1 shrink-0 text-balance text-[15px] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[17px]">
+        <h3 className="line-clamp-1 shrink-0 text-balance text-[15px] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-body">
           {title}
         </h3>
 
@@ -1399,14 +1392,14 @@ function HomeProductCategoryCard({
           {!hasFamilies || detailSlide === 0 ? (
             <p
               key="desc"
-              className="product-card-clamp-desc m-0 text-[12.5px] leading-[1.5] text-secondary/80 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[13px]"
+              className="product-card-clamp-desc m-0 text-fine leading-[1.5] text-secondary/80 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[13px]"
             >
               {description}
             </p>
           ) : (
             <p
               key="fam"
-              className="product-card-clamp-families m-0 text-[10.5px] leading-[1.45] text-secondary/65 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[11px]"
+              className="product-card-clamp-families m-0 text-[10px] leading-[1.45] text-secondary/65 motion-safe:animate-[hubCardFade_450ms_ease-out] sm:text-[11px]"
             >
               {familiesText}
             </p>
@@ -1539,14 +1532,14 @@ function HomeMarketStripCard({
 
       {/* Metin — sol üst; başlık & altyazı 2 satırlık alanı her kartta aynı yükseklikte rezerve eder */}
       <div className="absolute left-0 right-0 top-0 z-[10] p-4 sm:p-5">
-        <h3 className="line-clamp-2 min-h-[2.75em] text-[13.5px] font-bold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-[15px]">
+        <h3 className="line-clamp-2 min-h-[2.75em] text-meta font-bold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] sm:text-[15px]">
           {title}
         </h3>
-        <p className="mt-1 line-clamp-2 min-h-[3.25em] max-w-[13rem] text-[11px] leading-relaxed text-white/65 sm:text-[12px]">
+        <p className="mt-1 line-clamp-2 min-h-[3.25em] max-w-[13rem] text-[11px] leading-relaxed text-white/65 sm:text-fine">
           {subtitle}
         </p>
         {features && features.length > 0 ? (
-          <ul className="mt-3.5 space-y-1.5 max-w-[13rem] text-[12px] font-semibold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.75)] sm:mt-4 sm:space-y-2 sm:text-[12.5px]">
+          <ul className="mt-3.5 space-y-1.5 max-w-[13rem] text-fine font-semibold leading-snug text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.75)] sm:mt-4 sm:space-y-2 sm:text-fine">
             {features.slice(0, 3).map((feat, idx) => (
               <li key={`${feat}-${idx}`} className="flex items-start gap-2">
                 <span className="mt-[1px] flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-md border border-[#7dd3fc]/45 bg-[#0a2552] shadow-[0_0_8px_rgba(94,163,245,0.5)]">
@@ -1653,11 +1646,11 @@ const HOME_PRODUCT_BAND_FEATURE_FALLBACKS: readonly (readonly string[])[] = [
 
 /** Ana sayfa tipografi: display ↔ mono arası lead (17–18px), gövde (15px); dikey ritim 8px tabanı */
 const homeLeadInk =
-  "text-[17px] font-normal leading-[1.68] tracking-[-0.011em] text-ink/[0.76] sm:text-[18px] sm:leading-[1.66]";
+  "text-body font-normal leading-[1.68] tracking-[-0.011em] text-ink/[0.76] sm:text-[18px] sm:leading-[1.66]";
 const homeLeadSecondary =
-  "text-[17px] font-normal leading-[1.68] tracking-[-0.011em] text-secondary/80 sm:text-[18px] sm:leading-[1.66]";
+  "text-body font-normal leading-[1.68] tracking-[-0.011em] text-secondary/80 sm:text-[18px] sm:leading-[1.66]";
 const homeLeadWhite =
-  "text-[17px] font-normal leading-[1.68] tracking-[-0.011em] text-white/78 sm:text-[18px] sm:leading-[1.66]";
+  "text-body font-normal leading-[1.68] tracking-[-0.011em] text-white/78 sm:text-[18px] sm:leading-[1.66]";
 const homeBodySecondary = "text-[15px] leading-[1.75] text-secondary/72";
 
 /* ── Section header primitive — used by every section for consistent framing */
@@ -1697,8 +1690,8 @@ function SectionHead({
                 <span className="h-3 w-3 rounded-[4px] border border-[#243044]/24 bg-[#e9ebef]" />
               </div>
               <h2
-                className="font-bold text-ink"
-                style={{ fontSize: "clamp(1.8rem, 3.1vw, 3.1rem)", lineHeight: 1.02, letterSpacing: "-0.02em" }}
+                className="font-display text-section font-bold text-ink"
+                style={{ lineHeight: 1.02, letterSpacing: "-0.02em" }}
               >
                 {title}
               </h2>
@@ -1727,7 +1720,7 @@ function SectionHead({
   return (
     <div className={`border-b ${border} pb-16`}>
       <div className="grid gap-8 lg:grid-cols-12">
-        <h2 className={`font-bold ${textTitle} lg:col-span-8`} style={{ fontSize: "clamp(2.5rem, 4.4vw, 5rem)", lineHeight: 0.98, letterSpacing: "-0.02em" }}>
+        <h2 className={`font-display text-section font-bold ${textTitle} lg:col-span-8`} style={{ lineHeight: 0.98, letterSpacing: "-0.02em" }}>
           {title}
         </h2>
         {subtitle && (
@@ -1763,10 +1756,17 @@ function PillarVideoPlayer({
   src,
   poster,
   label,
+  playButtonClassName,
+  playButtonSize = "h-20 w-20",
+  playIconSize = "h-8 w-8",
 }: {
   src: string;
   poster: string;
   label: string;
+  /** Play butonunu özel konuma yerleştirmek için (örn. clip-path'li container'da polygon merkezi) */
+  playButtonClassName?: string;
+  playButtonSize?: string;
+  playIconSize?: string;
 }) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [playing, setPlaying] = useState(false);
@@ -1779,6 +1779,8 @@ function PillarVideoPlayer({
     if (v.paused) v.play().catch(() => {});
     else v.pause();
   };
+
+  const buttonPos = playButtonClassName ?? "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2";
 
   return (
     <>
@@ -1810,9 +1812,9 @@ function PillarVideoPlayer({
           type="button"
           onClick={toggle}
           aria-label={`${label} — oynat`}
-          className="group/play absolute left-1/2 top-1/2 z-20 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-primary shadow-[0_18px_40px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white"
+          className={`group/play absolute z-20 flex ${playButtonSize} items-center justify-center rounded-full bg-white/95 text-primary shadow-[0_18px_40px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white ${buttonPos}`}
         >
-          <svg className="ml-1 h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+          <svg className={`ml-1 ${playIconSize}`} fill="currentColor" viewBox="0 0 24 24" aria-hidden>
             <path d="M8 5v14l11-7z" />
           </svg>
         </button>
@@ -1826,218 +1828,335 @@ function HomeEngineeringPillarsJourneyStrip({
   locale,
   strip,
   fallbackTitle,
-  pc,
 }: {
   pillars: HomeDict["pillars"];
   locale: string;
-  strip?: { title: string; subtitle: string; lead?: string } | null | undefined;
+  strip?: {
+    title: string;
+    subtitle: string;
+    lead?: string;
+    eyebrow?: string;
+    sidebarCardTitle?: string;
+    sidebarCardDesc?: string;
+    mainCta?: string;
+    cardCta?: string;
+    stats?: string[];
+  } | null | undefined;
   fallbackTitle: string;
   pc: PageChrome;
 }) {
   const title = (strip?.title ?? "").trim() || fallbackTitle.trim();
   const subtitle = (strip?.subtitle ?? "").trim();
+  const lead = (strip?.lead ?? "").trim();
+  const eyebrow = (strip?.eyebrow ?? "").trim();
+  const sidebarCardTitle = (strip?.sidebarCardTitle ?? subtitle ?? "").trim();
+  const sidebarCardDesc = (strip?.sidebarCardDesc ?? "").trim();
+  const mainCta = (strip?.mainCta ?? "").trim();
+  const cardCta = (strip?.cardCta ?? "").trim();
+  const statsList = strip?.stats && strip.stats.length === 4 ? strip.stats : null;
+
+  /** Tag'ten "01 — " prefix'ini soyut → "ANALİZ & MÜHENDİSLİK" (Türkçe locale ile doğru İ/I) */
+  const shortLabel = (tag: string) => {
+    const parts = tag.split(/\s*[—-]\s*/);
+    const text = parts.length > 1 ? parts.slice(1).join(" — ") : tag;
+    return text.toLocaleUpperCase("tr-TR");
+  };
+
+  /** Intro'nun ilk cümlesini kısalt (~140 char) */
+  const shortDesc = (intro: string) => {
+    const firstSentence = intro.split(/(?<=[.!?])\s/)[0] ?? intro;
+    return firstSentence.length > 160 ? firstSentence.slice(0, 157).trimEnd() + "…" : firstSentence;
+  };
+
+  const statsIcons = [
+    (
+      <svg key="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    ),
+    (
+      <svg key="badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+        <path d="M12 15a4 4 0 100-8 4 4 0 000 8z" />
+        <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" />
+      </svg>
+    ),
+    (
+      <svg key="team" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 00-3-3.87" />
+        <path d="M16 3.13a4 4 0 010 7.75" />
+      </svg>
+    ),
+    (
+      <svg key="headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+        <path d="M3 18v-6a9 9 0 0118 0v6" />
+        <path d="M21 19a2 2 0 01-2 2h-1v-7h3v5zM3 19a2 2 0 002 2h1v-7H3v5z" />
+      </svg>
+    ),
+  ];
+
+  const stats = (statsList ?? [
+    "30+ ÜLKEDE\n500+ PROJE",
+    "YÜKSEK KALİTE\nSERTİFİKALI ÜRETİM",
+    "UZMAN\nMÜHENDİS EKİP",
+    "7/24 TEKNİK\nDESTEK",
+  ]).map((label, i) => ({ label, icon: statsIcons[i] }));
 
   return (
     <div id="pillars-journey" className="mt-12 scroll-mt-24 md:scroll-mt-[5.5rem]">
-      <div className="relative bg-sand-100 px-5 py-10 sm:px-9 sm:py-14 lg:px-14 lg:py-[4.5rem]">
-        <header className="mb-14 sm:mb-16 lg:mb-20">
-          <h2
-            className="font-semibold uppercase text-ink"
-            style={{ fontSize: "clamp(1.9rem, 4.8vw, 3.75rem)", lineHeight: 0.95, letterSpacing: "-0.03em" }}
-          >
-            {title}
-          </h2>
-          {subtitle ? (
-            <p
-              className="mt-2.5 font-medium uppercase text-primary"
-              style={{ fontSize: "clamp(1.25rem, 2.8vw, 2.2rem)", lineHeight: 1.05, letterSpacing: "-0.015em" }}
-            >
-              {subtitle}
+      <div className="relative py-10 sm:py-14 lg:py-[4.5rem]">
+        {/* Header satırı: sol başlık bloğu + sağ A'DAN Z'YE kartı */}
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(280px,360px)] lg:items-start lg:gap-10">
+          <header>
+            <p className="font-mono-eng text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
+              {eyebrow || "PROJE YÖNETİM SÜRECİMİZ"}
             </p>
-          ) : null}
-        </header>
+            <h2
+              className="mt-4 font-display text-section font-bold uppercase text-ink"
+              style={{ lineHeight: 0.98, letterSpacing: "-0.025em" }}
+            >
+              {title}
+            </h2>
+            {lead ? (
+              <p className="mt-5 max-w-md text-meta leading-relaxed text-secondary">
+                {lead}
+              </p>
+            ) : null}
+          </header>
 
-        <div className="flex flex-col gap-14 sm:gap-16 lg:gap-20">
-          {pillars.map((pillar, index) => {
-            const isOdd = index % 2 === 1;
+          {/* Sağ kart konteyneri — kart dışında blueprint sketch */}
+          <div className="relative">
+            {/* Endüstriyel axial fan/motor blueprint — kartın tam arkasında */}
+            <svg
+              className="pointer-events-none absolute left-1/2 top-[30%] z-0 h-[280%] w-[420px] -translate-x-1/2 -translate-y-1/2 opacity-35"
+              viewBox="0 0 360 280"
+              fill="none"
+              stroke="#7a6b58"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden
+            >
+              {/* Arka plan ikinci fan (perspektif, daha küçük) */}
+              <g opacity="0.55">
+                <rect x="200" y="20" width="120" height="120" rx="3" />
+                <circle cx="260" cy="80" r="48" />
+                <circle cx="260" cy="80" r="42" />
+                <circle cx="260" cy="80" r="8" />
+                <circle cx="260" cy="80" r="2.5" fill="currentColor" />
+                {/* 6 fan blade */}
+                {Array.from({ length: 6 }).map((_, i) => {
+                  const r = (n: number) => n.toFixed(2);
+                  const a = (i * 60) * Math.PI / 180;
+                  const r1 = 8, r2 = 40;
+                  const x1 = r(260 + Math.cos(a) * r1);
+                  const y1 = r(80 + Math.sin(a) * r1);
+                  const x2 = r(260 + Math.cos(a + 0.35) * r2);
+                  const y2 = r(80 + Math.sin(a + 0.35) * r2);
+                  const cx = r(260 + Math.cos(a + 0.15) * 24);
+                  const cy = r(80 + Math.sin(a + 0.15) * 24);
+                  return <path key={`b1-${i}`} d={`M${x1} ${y1} Q${cx} ${cy} ${x2} ${y2}`} />;
+                })}
+                {/* Bolts on flange corners */}
+                <circle cx="210" cy="30" r="3" />
+                <circle cx="310" cy="30" r="3" />
+                <circle cx="210" cy="130" r="3" />
+                <circle cx="310" cy="130" r="3" />
+                <circle cx="210" cy="30" r="1.5" fill="currentColor" />
+                <circle cx="310" cy="30" r="1.5" fill="currentColor" />
+                <circle cx="210" cy="130" r="1.5" fill="currentColor" />
+                <circle cx="310" cy="130" r="1.5" fill="currentColor" />
+              </g>
+
+              {/* Ana büyük fan (önde, detaylı) */}
+              <g>
+                {/* Square mounting frame */}
+                <rect x="40" y="120" width="180" height="180" rx="4" />
+                <rect x="50" y="130" width="160" height="160" rx="2" opacity="0.6" />
+                {/* Outer cylindrical housing */}
+                <circle cx="130" cy="210" r="78" />
+                <circle cx="130" cy="210" r="72" />
+                <circle cx="130" cy="210" r="65" />
+                {/* Inner hub */}
+                <circle cx="130" cy="210" r="14" />
+                <circle cx="130" cy="210" r="9" />
+                <circle cx="130" cy="210" r="3" fill="currentColor" />
+                {/* 8 fan blades — curved aerodynamic */}
+                {Array.from({ length: 8 }).map((_, i) => {
+                  const r = (n: number) => n.toFixed(2);
+                  const a = (i * 45) * Math.PI / 180;
+                  const r1 = 14, r2 = 64;
+                  const x1 = r(130 + Math.cos(a) * r1);
+                  const y1 = r(210 + Math.sin(a) * r1);
+                  const x2 = r(130 + Math.cos(a + 0.42) * r2);
+                  const y2 = r(210 + Math.sin(a + 0.42) * r2);
+                  const cx = r(130 + Math.cos(a + 0.18) * 38);
+                  const cy = r(210 + Math.sin(a + 0.18) * 38);
+                  return <path key={`b2-${i}`} d={`M${x1} ${y1} Q${cx} ${cy} ${x2} ${y2}`} />;
+                })}
+                {/* Corner bolts */}
+                <circle cx="52" cy="132" r="4" />
+                <circle cx="52" cy="132" r="2" fill="currentColor" />
+                <circle cx="208" cy="132" r="4" />
+                <circle cx="208" cy="132" r="2" fill="currentColor" />
+                <circle cx="52" cy="288" r="4" />
+                <circle cx="52" cy="288" r="2" fill="currentColor" />
+                <circle cx="208" cy="288" r="4" />
+                <circle cx="208" cy="288" r="2" fill="currentColor" />
+                {/* Cooling vents on frame edges */}
+                <line x1="60" y1="148" x2="80" y2="148" />
+                <line x1="60" y1="154" x2="80" y2="154" />
+                <line x1="60" y1="160" x2="80" y2="160" />
+                <line x1="180" y1="148" x2="200" y2="148" />
+                <line x1="180" y1="154" x2="200" y2="154" />
+                <line x1="180" y1="160" x2="200" y2="160" />
+                <line x1="60" y1="260" x2="80" y2="260" />
+                <line x1="60" y1="266" x2="80" y2="266" />
+                <line x1="60" y1="272" x2="80" y2="272" />
+                <line x1="180" y1="260" x2="200" y2="260" />
+                <line x1="180" y1="266" x2="200" y2="266" />
+                <line x1="180" y1="272" x2="200" y2="272" />
+              </g>
+
+              {/* Teknik dimension chizgileri */}
+              <line x1="40" y1="320" x2="220" y2="320" strokeDasharray="2 3" opacity="0.5" />
+              <line x1="40" y1="316" x2="40" y2="324" opacity="0.5" />
+              <line x1="220" y1="316" x2="220" y2="324" opacity="0.5" />
+            </svg>
+
+            {/* A'DAN Z'YE kartı — şeffaf, sola çekilmiş, sketch sağda görünür */}
+            <div className="relative z-10 w-full max-w-[260px] overflow-hidden rounded-2xl border border-ink/20 bg-white/40 p-5 shadow-[0_8px_28px_-14px_rgba(15,22,36,0.1)] backdrop-blur-[2px]">
+              <div className="flex items-start gap-3.5">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                  </svg>
+                </span>
+                <div className="min-w-0">
+                  <h3 className="font-display text-meta font-bold uppercase tracking-[0.15em] text-ink">
+                    {sidebarCardTitle || "A'DAN Z'YE"}
+                  </h3>
+                  <p className="mt-1.5 text-fine leading-snug text-secondary">
+                    {sidebarCardDesc || "Proje hayat döngüsünün tamamında yanınızdayız."}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3 numaralı kart — sertifikalar formatıyla aynı düzen, dikey hizalı */}
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-7 lg:mt-14 lg:grid-cols-3 lg:gap-8">
+          {pillars.slice(0, 3).map((pillar, index) => {
+            const num = String(index + 1).padStart(2, "0");
+            const img = pillarImages[index] ?? pillarImages[0]!;
             const rawPath = (pillar.href ?? pillarLinks[index] ?? "/kurumsal").trim() || "/kurumsal";
             const path = rawPath.startsWith("/") ? rawPath : `/${rawPath}`;
             const pillarHref = `/${locale}${path}`;
-            const pillarCta = (pillar.cta ?? pc.pillarCta).trim() || pc.pillarCta;
-            const img = pillarImages[index] ?? pillarImages[0]!;
-            const num = String(index + 1).padStart(2, "0");
-            const stepLabel = pillarStepLabel(pillar.tag);
+            const label = shortLabel(pillar.tag);
+            const desc = shortDesc(pillar.intro);
 
-            const numberPos = pillarNumberPositions[index % pillarNumberPositions.length] ?? pillarNumberPositions[0]!;
+            /** Kart ortası floating icon — pillar başına alakalı */
+            const cardIcon = [
+              // 01: CFD / monitor + akış grafiği — analiz & mühendislik
+              (
+                <svg key="01" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                  <rect x="2" y="3" width="20" height="14" rx="1.5" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                  <polyline points="5 13 9 9 12 12 19 6" />
+                  <circle cx="19" cy="6" r="0.6" fill="currentColor" />
+                </svg>
+              ),
+              // 02: fabrika / üretim — üretim & kalite
+              (
+                <svg key="02" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                  <path d="M2 20h20" />
+                  <path d="M3 20V9l5 3V9l5 3V9l8 4v7" />
+                  <line x1="8" y1="15" x2="8" y2="17" />
+                  <line x1="13" y1="15" x2="13" y2="17" />
+                  <line x1="18" y1="16" x2="18" y2="18" />
+                </svg>
+              ),
+              // 03: baret / sahada mühendis — saha & destek
+              (
+                <svg key="03" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                  <path d="M3 18h18v-2a3 3 0 00-3-3h-1V9a5 5 0 00-10 0v4H6a3 3 0 00-3 3v2z" />
+                  <line x1="12" y1="4" x2="12" y2="6" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              ),
+            ][index];
 
-            /* ── Desktop: büyük blend sayı ── */
-            const numberBlock = (
-              <span
-                key="num"
-                aria-hidden
-                className={`pointer-events-none absolute hidden select-none font-home-display font-light xl:block ${numberPos}`}
-                style={{
-                  fontSize: "clamp(20rem, 30vw, 30rem)",
-                  lineHeight: 0.82,
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  letterSpacing: "-0.07em",
-                  transform: "scaleX(0.92)",
-                  transformOrigin: "left center",
-                  zIndex: 0,
-                  WebkitFontSmoothing: "antialiased",
-                  textRendering: "geometricPrecision",
-                  backgroundImage: "linear-gradient(180deg, #ef5f17 0%, #f5a06f 50%, #fad5b8 100%)",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                {num}
-              </span>
-            );
+            const hasVideo = !!pillarVideos[index];
 
-            /* ── Desktop: görsel (pillar 01 için DJI video) ── */
-            const imageBlock = (
+            return (
               <Link
-                key="img"
+                key={`${index}-${pillar.tag}`}
                 href={pillarHref}
-                className="group relative z-10 hidden w-full lg:col-start-2 lg:col-end-3 lg:block"
+                className="group flex flex-col pt-3 transition-[transform] duration-300 [@media(hover:hover)]:hover:-translate-y-1"
+                aria-label={pillar.title}
               >
-                <div
-                  className="relative h-[26rem] w-full overflow-hidden shadow-[0_24px_56px_-22px_rgba(15,22,36,0.28)] xl:h-[28rem]"
-                  style={{
-                    clipPath: isOdd
-                      ? "polygon(0 0, 88% 0, 100% 100%, 12% 100%)"
-                      : "polygon(12% 0, 100% 0, 88% 100%, 0 100%)",
-                  }}
-                >
-                  {pillarVideos[index] ? (
-                    <PillarVideoPlayer
-                      src={pillarVideos[index]!.src}
-                      poster={pillarVideos[index]!.poster}
-                      label={pillar.title}
-                    />
-                  ) : (
-                    <Image
-                      src={img}
-                      alt={pillar.title}
-                      fill
-                      sizes="48vw"
-                      className="object-cover object-center transition-transform duration-700 ease-out [transform:scale(1.02)] group-hover:[transform:scale(1.05)]"
-                    />
-                  )}
+                {/* Üstte image/video — sertifika formatı: aspect-[16/11], rounded-xl, soft bg + shadow + ring */}
+                <div className="relative z-[2] mx-auto w-[min(100%,22rem)] px-1 sm:w-[min(100%,24rem)] sm:px-0">
+                  <div className="relative aspect-[16/11] overflow-hidden rounded-xl border border-white/90 bg-[#e4e7ec] shadow-[0_22px_48px_-28px_rgba(15,22,36,0.42)] ring-1 ring-black/[0.06] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_28px_56px_-28px_rgba(15,22,36,0.48)]">
+                    {hasVideo ? (
+                      <PillarVideoPlayer
+                        src={pillarVideos[index]!.src}
+                        poster={pillarVideos[index]!.poster}
+                        label={pillar.title}
+                        playButtonClassName="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                        playButtonSize="h-14 w-14"
+                        playIconSize="h-6 w-6"
+                      />
+                    ) : (
+                      <Image
+                        src={img}
+                        alt={pillar.title}
+                        fill
+                        quality={92}
+                        className="object-cover"
+                        sizes="(max-width: 640px) min(92vw,22rem), (max-width: 1024px) 42vw, min(24rem, 33vw)"
+                      />
+                    )}
+                  </div>
+                </div>
+
+                {/* Alt content kartı — sertifika formatı, image üstüne -mt-8 overlap */}
+                <div className="relative z-[1] -mt-8 flex flex-1 flex-col rounded-2xl border border-ink/10 bg-white px-5 pb-6 pt-11 shadow-[0_16px_44px_-30px_rgba(15,22,36,0.28)] ring-1 ring-black/[0.03] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_22px_50px_-30px_rgba(15,22,36,0.34)] sm:px-6 sm:pb-7 sm:pt-12">
+                  {/* Üst — sadece numara, ikon yok */}
+                  <div className="mb-3">
+                    <span
+                      className="font-product-card-num text-[1.75rem] leading-none text-primary"
+                      style={{ fontWeight: 300, letterSpacing: "-0.02em" }}
+                    >
+                      {num}
+                    </span>
+                  </div>
+
+                  <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
+                    {label}
+                  </h3>
+                  <p className="mt-2 line-clamp-4 text-meta leading-relaxed text-ink/65 sm:text-[15px]">
+                    {desc}
+                  </p>
+
+                  <div className="mt-auto pt-6">
+                    <span className="inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
+                      {cardCta || "Detayları İncele"}
+                      <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </span>
+                  </div>
                 </div>
               </Link>
             );
-
-            /* ── Desktop: metin ── */
-            const contentBlock = (
-              <div
-                key="content"
-                className={`relative z-10 hidden w-full max-w-[26rem] lg:block ${
-                  isOdd ? "lg:col-start-1 lg:col-end-2" : "lg:col-start-3 lg:col-end-4"
-                }`}
-              >
-                <p className="flex items-center gap-2.5 text-[15px] text-secondary/85">
-                  <span aria-hidden className="text-[1.15em] leading-none text-primary">✦</span>
-                  <span>{stepLabel}</span>
-                </p>
-                <h3
-                  className="mt-3 font-semibold uppercase text-ink"
-                  style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)", lineHeight: 1.08, letterSpacing: "-0.015em" }}
-                >
-                  {pillar.title.replace(/\.$/, "")}
-                  <span className="text-primary">.</span>
-                </h3>
-                <p className="mt-5 text-[15px] leading-[1.7] text-secondary/75">{pillar.intro}</p>
-                <Link
-                  href={pillarHref}
-                  className="group mt-7 inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-                >
-                  {pillarCta}
-                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </Link>
-              </div>
-            );
-
-            /* ── Mobil kart — desktop ile aynı görsel/video, sonra metin + CTA ── */
-            const mobileCard = (
-              <div key="mobile" className="block lg:hidden">
-                {/* Görsel / video — desktop'tan farklı: tam genişlik, basit 16:10 oran */}
-                <Link
-                  href={pillarHref}
-                  className="group relative mb-4 block aspect-[16/10] w-full overflow-hidden rounded-2xl shadow-[0_18px_42px_-22px_rgba(15,22,36,0.28)]"
-                >
-                  {pillarVideos[index] ? (
-                    <PillarVideoPlayer
-                      src={pillarVideos[index]!.src}
-                      poster={pillarVideos[index]!.poster}
-                      label={pillar.title}
-                    />
-                  ) : (
-                    <Image
-                      src={img}
-                      alt={pillar.title}
-                      fill
-                      sizes="100vw"
-                      className="object-cover object-center"
-                    />
-                  )}
-                </Link>
-
-                {/* İçerik */}
-                <div className="flex items-start gap-4">
-                  <div className="flex-1">
-                    <p className="text-[11px] font-semibold uppercase tracking-widest text-secondary/60">
-                      {stepLabel}
-                    </p>
-                    <h3
-                      className="mt-1 font-semibold uppercase text-ink"
-                      style={{ fontSize: "clamp(1rem, 4.5vw, 1.2rem)", lineHeight: 1.1, letterSpacing: "-0.015em" }}
-                    >
-                      {pillar.title.replace(/\.$/, "")}
-                      <span className="text-primary">.</span>
-                    </h3>
-                    <p className="mt-2 text-[13px] leading-[1.65] text-secondary/70">{pillar.intro}</p>
-                    <Link
-                      href={pillarHref}
-                      className="group mt-4 inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-                    >
-                      {pillarCta}
-                      <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            );
-
-            return (
-              <article
-                key={`${index}-${pillar.tag}`}
-                className={`relative grid items-center gap-8 sm:gap-10 ${
-                  isOdd
-                    ? "lg:grid-cols-[26%_minmax(0,1fr)_14%]"
-                    : "lg:grid-cols-[14%_minmax(0,1fr)_26%]"
-                }`}
-              >
-                {mobileCard}
-                <div className="hidden contents lg:contents">
-                  {isOdd
-                    ? [contentBlock, imageBlock]
-                    : [imageBlock, contentBlock]}
-                </div>
-                <div className="hidden xl:contents">{numberBlock}</div>
-              </article>
-            );
           })}
         </div>
+
       </div>
     </div>
   );
@@ -2176,7 +2295,7 @@ export default function HomeClient({
           <div className="relative z-[1] mx-auto max-w-[1720px] px-4 sm:px-10 lg:px-16">
             <div className="py-8 sm:py-10 sm:pt-10 sm:pb-12 lg:py-12">
               <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
-                <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.solutions}</h2>
+                <h2 className="font-display text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.solutions}</h2>
                 <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
               </div>
               <div className="-mx-1 flex items-stretch gap-2 px-1 sm:-mx-0 sm:gap-3 sm:px-0">
@@ -2241,7 +2360,7 @@ export default function HomeClient({
                 className="scroll-mt-24 border-t border-sand-300 pt-8 sm:pt-10 md:scroll-mt-[5.5rem] lg:pt-12"
               >
                 <div className="mb-10 flex flex-wrap items-end gap-3 sm:gap-4">
-                  <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
+                  <h2 className="font-display text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.products}</h2>
                   <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
                 </div>
 
@@ -2309,111 +2428,12 @@ export default function HomeClient({
         />
 
         <div className="relative mx-auto max-w-[1600px] px-3 sm:px-10 lg:px-16">
-          <div className="border-b border-ink/10 pb-16">
-            <div
-              className={`grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-stretch lg:gap-x-12 lg:gap-y-0 xl:gap-x-16 ${
-                dict.engineeringShowcase ? "lg:grid-rows-[auto_minmax(0,1fr)]" : ""
-              }`}
-            >
-              {/* Üst sol — CFD şeridi (kart aynı hizada videonun satırında başlar) */}
-              {dict.engineeringShowcase ? (
-                <div className="relative z-[2] mx-auto mb-6 flex w-full max-w-[min(92vw,480px)] flex-wrap items-end gap-3 md:max-w-[min(94vw,44rem)] sm:mb-7 sm:gap-4 lg:col-start-1 lg:row-start-1 lg:mx-0 lg:mb-8 lg:max-w-none">
-                  <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">CFD</h2>
-                  <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
-                </div>
-              ) : null}
-
-              {/* Alt sol — video */}
-              <div
-                className={`relative mx-auto flex w-full max-w-[min(92vw,480px)] min-w-0 flex-col md:max-w-[min(94vw,44rem)] lg:mx-0 lg:max-w-none lg:min-h-0 ${
-                  dict.engineeringShowcase ? "lg:row-start-2" : "lg:row-start-1"
-                } lg:h-full`}
-              >
-                <div className="relative flex min-h-0 w-full flex-1 flex-col lg:min-h-0 lg:flex-row lg:max-w-none">
-                  <div className="group relative min-h-0 flex-1 overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex lg:min-h-0">
-                    <div className="relative aspect-[16/10] w-full min-h-0 lg:aspect-auto lg:h-full lg:min-h-[12rem]">
-                      <video
-                        src={engineeringCollage.primaryVideo}
-                        className="absolute inset-0 h-full w-full object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
-                        aria-label={pc.engineeringAlt1}
-                        controls
-                        playsInline
-                        loop
-                        preload="auto"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Sağ — cam panel + editoryal tipografi (masaüstünde videoyla üstten hizalı) */}
-              <div
-                className={`relative flex min-h-0 min-w-0 flex-col lg:col-start-2 lg:h-full ${
-                  dict.engineeringShowcase ? "lg:row-start-2" : "lg:row-start-1"
-                }`}
-              >
-                <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.75rem] border border-white/55 bg-white/55 p-8 shadow-[0_28px_80px_-48px_rgba(15,22,36,0.3)] backdrop-blur-xl sm:p-10 lg:p-11 ring-1 ring-black/[0.04]">
-                  <div
-                    className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
-                    aria-hidden
-                  />
-                  <div
-                    className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/[0.07] blur-3xl"
-                    aria-hidden
-                  />
-
-                  {dict.engineeringShowcase ? (
-                    <div className="relative max-w-[52ch]">
-                      <p className="font-mono-eng text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
-                        {dict.engineeringShowcase.title}
-                      </p>
-                      <h2
-                        className="mt-3 text-balance font-bold tracking-[-0.03em] text-ink"
-                        style={{ fontSize: "clamp(1.35rem, 2.4vw, 2.05rem)", lineHeight: 1.14 }}
-                      >
-                        {dict.engineeringShowcase.subtitle}
-                      </h2>
-                      <p className={`mt-4 sm:mt-5 ${homeBodySecondary}`}>{dict.engineeringShowcase.body}</p>
-                      <Link
-                        href={`/${locale}/cozumler/cfd-muhendislik-danismanligi`}
-                        className="group mt-5 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30 sm:mt-6"
-                      >
-                        {dict.engineeringShowcase.cta}
-                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                      </Link>
-                    </div>
-                  ) : null}
-
-                  {!dict.engineeringShowcase ? (
-                    <>
-                      {dict.pillars[0]?.tag ? (
-                        <div className="relative">
-                          <span className="inline-flex items-center gap-2 rounded-full border border-primary/18 bg-primary/[0.08] px-3.5 py-1.5 font-mono-eng text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-                            <span className="h-1 w-1 shrink-0 rounded-full bg-primary shadow-[0_0_0_4px_rgba(239, 95, 23,0.18)]" />
-                            {dict.pillars[0].tag}
-                          </span>
-                        </div>
-                      ) : null}
-                      <p
-                        className={`relative mt-8 max-w-[52ch] border-t border-ink/[0.07] pt-8 text-[17px] leading-[1.72] tracking-[-0.011em] text-ink/[0.78] sm:text-[18px] sm:leading-[1.66]`}
-                      >
-                        {dict.pillars[0]?.intro ?? ""}
-                      </p>
-                    </>
-                  ) : null}
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Kataloglar — Mühendislik özetinin altında, mühendislik desteği CTA’sının üstünde */}
           {allowRestrictedSections === true && (
             <>
           <div id="catalogs" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem]">
             <div className="mb-8 flex flex-wrap items-end gap-3 sm:mb-10 sm:gap-4">
-              <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{pc.catalogsVertical}</h2>
+              <h2 className="font-display text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{pc.catalogsVertical}</h2>
               <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
               <Link
                 href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
@@ -2456,7 +2476,7 @@ export default function HomeClient({
                       <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                         {item.title}
                       </h3>
-                      <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{cardDesc}</p>
+                      <p className="mt-2 line-clamp-4 text-meta leading-relaxed text-ink/65 sm:text-[15px]">{cardDesc}</p>
                       <span className="mt-6 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
                         {ctaLabel}
                         <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -2488,7 +2508,7 @@ export default function HomeClient({
                             </p>
                           ) : null}
                           <h2
-                            className={`text-balance font-bold uppercase tracking-[0.06em] text-[#1e3a5f] sm:tracking-[0.05em] ${refHead.kicker ? "mt-1.5 text-xl leading-tight sm:text-2xl lg:text-[1.75rem] lg:leading-[1.1]" : "text-lg leading-snug tracking-[0.14em] sm:text-xl lg:text-2xl"}`}
+                            className={`text-balance font-display font-bold uppercase tracking-[0.06em] text-[#1e3a5f] sm:tracking-[0.05em] ${refHead.kicker ? "mt-1.5 text-card-sm leading-tight lg:leading-[1.1]" : "text-lg leading-snug tracking-[0.14em] sm:text-xl lg:text-2xl"}`}
                           >
                             {refHead.headline}
                           </h2>
@@ -2556,13 +2576,13 @@ export default function HomeClient({
                           </p>
                           {example ? (
                             <p
-                              className={`mt-1.5 text-[13px] leading-snug sm:text-[14px] ${onLight ? "text-[#3d4a5c]" : "text-white/90"}`}
+                              className={`mt-1.5 text-[13px] leading-snug sm:text-meta ${onLight ? "text-[#3d4a5c]" : "text-white/90"}`}
                             >
                               {example}
                             </p>
                           ) : (
                             <p
-                              className={`mt-1.5 line-clamp-3 text-[13px] leading-snug sm:text-[14px] ${onLight ? "text-[#4a5568]" : "text-white/88"}`}
+                              className={`mt-1.5 line-clamp-3 text-[13px] leading-snug sm:text-meta ${onLight ? "text-[#4a5568]" : "text-white/88"}`}
                             >
                               {pc.referenceCardDesc}
                             </p>
@@ -2604,7 +2624,7 @@ export default function HomeClient({
           {/* Sertifikalar — kataloglar bölümü ile aynı kart düzeni */}
           <div id="certificates" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem]">
             <div className="mb-8 flex flex-wrap items-end gap-3 sm:mb-10 sm:gap-4">
-              <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.links.certificates}</h2>
+              <h2 className="font-display text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.links.certificates}</h2>
               <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
               <Link
                 href={`/${locale}/kurumsal/sertifikalar`}
@@ -2646,7 +2666,7 @@ export default function HomeClient({
                       <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                         {item.title}
                       </h3>
-                      <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-ink/65 sm:text-[15px]">{item.desc ?? pc.certificateCardDesc}</p>
+                      <p className="mt-2 line-clamp-4 text-meta leading-relaxed text-ink/65 sm:text-[15px]">{item.desc ?? pc.certificateCardDesc}</p>
                       <span className="mt-6 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
                         {ctaLabel}
                         <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -2670,7 +2690,310 @@ export default function HomeClient({
             pc={pc}
           />
 
-          {/* Şirket profili — tanım videosundan önce (mühendislik hizmet kartlarının altında) */}
+          {/* CFD — Mühendislik adımlarının altında, video + cam panel açıklama */}
+          <div className="border-b border-ink/10 pb-16">
+            <div
+              className={`grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-stretch lg:gap-x-12 lg:gap-y-0 xl:gap-x-16 ${
+                dict.engineeringShowcase ? "lg:grid-rows-[auto_minmax(0,1fr)]" : ""
+              }`}
+            >
+              {/* Üst sol — CFD şeridi (kart aynı hizada videonun satırında başlar) */}
+              {dict.engineeringShowcase ? (
+                <div className="relative z-[2] mx-auto mb-6 flex w-full max-w-[min(92vw,480px)] flex-wrap items-end gap-3 md:max-w-[min(94vw,44rem)] sm:mb-7 sm:gap-4 lg:col-start-1 lg:row-start-1 lg:mx-0 lg:mb-8 lg:max-w-none">
+                  <h2 className="font-display text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">CFD</h2>
+                  <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
+                </div>
+              ) : null}
+
+              {/* Alt sol — video */}
+              <div
+                className={`relative mx-auto flex w-full max-w-[min(92vw,480px)] min-w-0 flex-col md:max-w-[min(94vw,44rem)] lg:mx-0 lg:max-w-none lg:min-h-0 ${
+                  dict.engineeringShowcase ? "lg:row-start-2" : "lg:row-start-1"
+                } lg:h-full`}
+              >
+                <div className="relative flex min-h-0 w-full flex-1 flex-col lg:min-h-0 lg:flex-row lg:max-w-none">
+                  <div className="group relative min-h-0 flex-1 overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex lg:min-h-0">
+                    <div className="relative aspect-[16/10] w-full min-h-0 lg:aspect-auto lg:h-full lg:min-h-[12rem]">
+                      <video
+                        src={engineeringCollage.primaryVideo}
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
+                        aria-label={pc.engineeringAlt1}
+                        controls
+                        playsInline
+                        loop
+                        preload="auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sağ — cam panel + editoryal tipografi (masaüstünde videoyla üstten hizalı) */}
+              <div
+                className={`relative flex min-h-0 min-w-0 flex-col lg:col-start-2 lg:h-full ${
+                  dict.engineeringShowcase ? "lg:row-start-2" : "lg:row-start-1"
+                }`}
+              >
+                <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.75rem] border border-white/55 bg-white/55 p-8 shadow-[0_28px_80px_-48px_rgba(15,22,36,0.3)] backdrop-blur-xl sm:p-10 lg:p-11 ring-1 ring-black/[0.04]">
+                  <div
+                    className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
+                    aria-hidden
+                  />
+                  <div
+                    className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/[0.07] blur-3xl"
+                    aria-hidden
+                  />
+
+                  {dict.engineeringShowcase ? (
+                    <div className="relative max-w-[52ch]">
+                      <p className="font-mono-eng text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
+                        {dict.engineeringShowcase.title}
+                      </p>
+                      <h2
+                        className="mt-3 text-balance font-display text-card font-bold tracking-[-0.03em] text-ink"
+                        style={{ lineHeight: 1.14 }}
+                      >
+                        {dict.engineeringShowcase.subtitle}
+                      </h2>
+                      <p className={`mt-4 sm:mt-5 ${homeBodySecondary}`}>{dict.engineeringShowcase.body}</p>
+                      <Link
+                        href={`/${locale}/cozumler/cfd-muhendislik-danismanligi`}
+                        className="group mt-5 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30 sm:mt-6"
+                      >
+                        {dict.engineeringShowcase.cta}
+                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                      </Link>
+                    </div>
+                  ) : null}
+
+                  {!dict.engineeringShowcase ? (
+                    <>
+                      {dict.pillars[0]?.tag ? (
+                        <div className="relative">
+                          <span className="inline-flex items-center gap-2 rounded-full border border-primary/18 bg-primary/[0.08] px-3.5 py-1.5 font-mono-eng text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
+                            <span className="h-1 w-1 shrink-0 rounded-full bg-primary shadow-[0_0_0_4px_rgba(239, 95, 23,0.18)]" />
+                            {dict.pillars[0].tag}
+                          </span>
+                        </div>
+                      ) : null}
+                      <p
+                        className={`relative mt-8 max-w-[52ch] border-t border-ink/[0.07] pt-8 text-body leading-[1.72] tracking-[-0.011em] text-ink/[0.78] sm:text-[18px] sm:leading-[1.66]`}
+                      >
+                        {dict.pillars[0]?.intro ?? ""}
+                      </p>
+                    </>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* 06 — FAQ (mockup) & final CTA */}
+      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-10 sm:py-14 md:scroll-mt-[5.5rem]">
+        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-10 lg:px-16">
+          <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-12">
+            <div className="flex flex-col lg:col-span-4 lg:pt-2">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary sm:text-[11px] sm:tracking-[0.22em]">
+                {dict.faq.tag}
+              </p>
+              <h2
+                className="mt-3 text-balance font-display text-card font-bold tracking-[-0.03em] text-ink"
+                style={{ lineHeight: 1.15 }}
+              >
+                {dict.faq.headline ?? dict.faq.title ?? dict.faq.tag}
+              </h2>
+              {dict.faq.desc ? (
+                <p className="mt-3 max-w-[34ch] text-[13px] leading-[1.6] text-ink/70 sm:text-meta">{dict.faq.desc}</p>
+              ) : null}
+              {/* Sol görsel — sadece lg+ ekranlarda görünür (tablet/mobilde gizli, layout bozulmasın) */}
+              <div className="mt-6 hidden flex-1 lg:block">
+                <div className="relative h-full min-h-[320px] w-full overflow-hidden rounded-2xl bg-[#0f1d33] ring-1 ring-ink/[0.08] shadow-[0_22px_46px_-28px_rgba(15,22,36,0.32)]">
+                  <Image
+                    src="/images/faq-visual.jpg?v=4"
+                    alt={dict.faq.tag}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="object-cover object-center"
+                    unoptimized
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-8">
+              <div className="border-t border-ink/[0.08]">
+                {dict.faq.items.map((item, index) => {
+                  const isOpen = openFaq === index;
+                  const num = String(index + 1).padStart(2, "0");
+                  return (
+                    <div key={item.q} className="border-b border-ink/[0.08]">
+                      <button
+                        type="button"
+                        aria-expanded={isOpen}
+                        onClick={() => setOpenFaq(isOpen ? null : index)}
+                        className="group grid w-full grid-cols-[auto_1fr_auto] items-start gap-x-3 py-3.5 text-left sm:gap-x-5 sm:py-4"
+                      >
+                        <span
+                          className="font-product-card-num select-none pt-0.5 text-[clamp(1.5rem,2.6vw,2rem)] font-bold leading-none tabular-nums text-primary/28 transition-colors duration-300 group-hover:text-primary/40"
+                          aria-hidden
+                        >
+                          {num}
+                        </span>
+                        <span className="min-w-0 pt-1 text-meta font-semibold leading-[1.35] text-ink sm:text-[15px] sm:leading-[1.4]">
+                          {item.q}
+                        </span>
+                        <span
+                          className="pt-1 font-mono-eng text-[18px] font-light leading-none text-ink/35 transition-colors duration-300 group-hover:text-primary/70 sm:text-metric-sm"
+                          aria-hidden
+                        >
+                          {isOpen ? "×" : "+"}
+                        </span>
+                      </button>
+                      <div
+                        className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none ${
+                          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                        }`}
+                        aria-hidden={!isOpen}
+                      >
+                        <div className="min-h-0">
+                          <div
+                            className={`grid grid-cols-[auto_1fr_auto] gap-x-3 pb-4 sm:gap-x-5 sm:pb-5 ${
+                              isOpen ? "" : "pointer-events-none"
+                            }`}
+                          >
+                            <span aria-hidden className="invisible text-[clamp(1.5rem,2.6vw,2rem)] leading-none">
+                              {num}
+                            </span>
+                            <div className="min-w-0">
+                              <p className="text-fine leading-[1.6] text-[#6b7280] sm:text-meta sm:leading-[1.65]">
+                                {item.a}
+                              </p>
+                              {item.linkHref && item.linkLabel ? (
+                                <Link
+                                  href={`/${locale}${item.linkHref}`}
+                                  title={item.linkAriaLabel}
+                                  aria-label={item.linkAriaLabel ?? item.linkLabel}
+                                  className="mt-3 inline-flex items-center gap-1 text-[13px] font-semibold text-primary transition-colors duration-300 hover:text-primary-deep sm:text-meta"
+                                >
+                                  {item.linkLabel}
+                                </Link>
+                              ) : null}
+                            </div>
+                            <span aria-hidden className="w-[22px] sm:w-6" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              {dict.faq.footerLinkHref && dict.faq.footerLinkLabel ? (
+                <div className="mt-5 border-t border-ink/[0.08] pt-5 sm:mt-6 sm:pt-6">
+                  <Link
+                    href={`/${locale}${dict.faq.footerLinkHref}`}
+                    title={dict.faq.footerLinkAriaLabel}
+                    aria-label={dict.faq.footerLinkAriaLabel ?? dict.faq.footerLinkLabel}
+                    className="inline-flex items-center gap-1 text-fine font-semibold text-primary/90 transition-colors duration-300 hover:text-primary sm:text-[13px]"
+                  >
+                    {dict.faq.footerLinkLabel}
+                  </Link>
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <aside className="mt-14 sm:mt-16 lg:mt-20">
+            <div className="overflow-hidden rounded-[1.35rem] bg-[#eeedea] shadow-[0_22px_55px_-38px_rgba(15,22,36,0.14)] ring-1 ring-ink/[0.06] sm:rounded-[1.75rem]">
+              <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+                <div className="flex flex-col justify-between px-6 py-8 sm:px-9 sm:py-10 lg:px-11 lg:py-11">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary sm:text-fine">
+                      {dict.finalCta.tag}
+                    </p>
+                    <h3
+                      className="mt-3 max-w-[22ch] text-balance font-bold tracking-[-0.03em] text-ink"
+                      style={{ fontSize: "clamp(1.65rem, 2.8vw, 2.35rem)", lineHeight: 1.1 }}
+                    >
+                      {dict.finalCta.title}
+                    </h3>
+                    <p className={`mt-4 max-w-[52ch] ${homeLeadInk}`}>{dict.finalCta.desc}</p>
+
+                    <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                      <Link
+                        href={`/${locale}/iletisim`}
+                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                      >
+                        {dict.finalCta.requestQuote}
+                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                      </Link>
+                      {dict.finalCta.callBack ? (
+                        <Link
+                          href={`/${locale}/iletisim`}
+                          className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
+                        >
+                          {dict.finalCta.callBack}
+                          <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                          </svg>
+                        </Link>
+                      ) : null}
+                    </div>
+                  </div>
+
+                  {dict.finalCta.stat1Label && dict.finalCta.stat1Value ? (
+                    <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-ink/[0.08] pt-6 sm:gap-x-14">
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary/55">
+                          {dict.finalCta.stat1Label}
+                        </p>
+                        <p className="mt-1 text-[15px] font-bold tracking-[-0.02em] text-ink sm:text-body">
+                          {dict.finalCta.stat1Value}
+                        </p>
+                      </div>
+                      {dict.finalCta.stat2Label && dict.finalCta.stat2Value ? (
+                        <div>
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary/55">
+                            {dict.finalCta.stat2Label}
+                          </p>
+                          <p className="mt-1 text-[15px] font-bold tracking-[-0.02em] text-ink sm:text-body">
+                            {dict.finalCta.stat2Value}
+                          </p>
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className="relative hidden min-h-[22rem] lg:block">
+                  <Image
+                    src="/images/finalcta.png"
+                    alt={dict.finalCta.title}
+                    fill
+                    className="object-cover object-center"
+                    sizes="45vw"
+                  />
+                  <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#eeedea] via-[#eeedea]/72 to-transparent"
+                    aria-hidden
+                  />
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      {/* Şirket profili — FAQ'in altında */}
+      <section className="relative bg-sand-200 py-12 sm:py-16">
+        <div className="relative mx-auto max-w-[1600px] px-3 sm:px-10 lg:px-16">
           {companyProfileSection ? (
             <HomeCompanyProfileSectionBlock
               locale={locale}
@@ -2679,7 +3002,7 @@ export default function HomeClient({
               viewAllCorporate={n.viewAll}
             />
           ) : (
-            <div id="company-profile" className="relative mt-14 scroll-mt-24 sm:mt-16 md:scroll-mt-[5.5rem] lg:mt-[4.5rem]">
+            <div id="company-profile" className="relative scroll-mt-24 md:scroll-mt-[5.5rem]">
               <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-x-3 lg:gap-y-8">
                 <div className="flex w-full justify-center self-start lg:col-start-1 lg:row-start-1 lg:w-auto lg:justify-start lg:self-center">
                   <SectionStripLabel
@@ -2725,7 +3048,7 @@ export default function HomeClient({
                           <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#243044] sm:text-[1.28rem]">
                             {title}
                           </h3>
-                          <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-[14px]">
+                          <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-meta">
                             {pc.companyCardDesc}
                           </p>
                           <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#243044] sm:text-[10px]">
@@ -2754,470 +3077,6 @@ export default function HomeClient({
         </div>
       </section>
 
-
-      {/* 06 — FAQ (mockup) & final CTA */}
-      <section id="faq" className="relative scroll-mt-24 bg-sand-200 py-10 sm:py-14 md:scroll-mt-[5.5rem]">
-        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-10 lg:px-16">
-          <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-12">
-            <div className="flex flex-col lg:col-span-4 lg:pt-2">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary sm:text-[11px] sm:tracking-[0.22em]">
-                {dict.faq.tag}
-              </p>
-              <h2
-                className="mt-3 text-balance font-bold tracking-[-0.03em] text-ink"
-                style={{ fontSize: "clamp(1.4rem, 2.4vw, 2rem)", lineHeight: 1.15 }}
-              >
-                {dict.faq.headline ?? dict.faq.title ?? dict.faq.tag}
-              </h2>
-              {dict.faq.desc ? (
-                <p className="mt-3 max-w-[34ch] text-[13px] leading-[1.6] text-ink/70 sm:text-[14px]">{dict.faq.desc}</p>
-              ) : null}
-              {/* Sol görsel — sadece lg+ ekranlarda görünür (tablet/mobilde gizli, layout bozulmasın) */}
-              <div className="mt-6 hidden flex-1 lg:block">
-                <div className="relative h-full min-h-[320px] w-full overflow-hidden rounded-2xl bg-[#0f1d33] ring-1 ring-ink/[0.08] shadow-[0_22px_46px_-28px_rgba(15,22,36,0.32)]">
-                  <Image
-                    src="/images/faq-visual.jpg?v=4"
-                    alt={dict.faq.tag}
-                    fill
-                    sizes="(min-width: 1024px) 33vw, 100vw"
-                    className="object-cover object-center"
-                    unoptimized
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-8">
-              <div className="border-t border-ink/[0.08]">
-                {dict.faq.items.map((item, index) => {
-                  const isOpen = openFaq === index;
-                  const num = String(index + 1).padStart(2, "0");
-                  return (
-                    <div key={item.q} className="border-b border-ink/[0.08]">
-                      <button
-                        type="button"
-                        aria-expanded={isOpen}
-                        onClick={() => setOpenFaq(isOpen ? null : index)}
-                        className="group grid w-full grid-cols-[auto_1fr_auto] items-start gap-x-3 py-3.5 text-left sm:gap-x-5 sm:py-4"
-                      >
-                        <span
-                          className="font-product-card-num select-none pt-0.5 text-[clamp(1.5rem,2.6vw,2rem)] font-bold leading-none tabular-nums text-primary/28 transition-colors duration-300 group-hover:text-primary/40"
-                          aria-hidden
-                        >
-                          {num}
-                        </span>
-                        <span className="min-w-0 pt-1 text-[14px] font-semibold leading-[1.35] text-ink sm:text-[15px] sm:leading-[1.4]">
-                          {item.q}
-                        </span>
-                        <span
-                          className="pt-1 font-mono-eng text-[18px] font-light leading-none text-ink/35 transition-colors duration-300 group-hover:text-primary/70 sm:text-[20px]"
-                          aria-hidden
-                        >
-                          {isOpen ? "×" : "+"}
-                        </span>
-                      </button>
-                      <div
-                        className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none ${
-                          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                        }`}
-                        aria-hidden={!isOpen}
-                      >
-                        <div className="min-h-0">
-                          <div
-                            className={`grid grid-cols-[auto_1fr_auto] gap-x-3 pb-4 sm:gap-x-5 sm:pb-5 ${
-                              isOpen ? "" : "pointer-events-none"
-                            }`}
-                          >
-                            <span aria-hidden className="invisible text-[clamp(1.5rem,2.6vw,2rem)] leading-none">
-                              {num}
-                            </span>
-                            <div className="min-w-0">
-                              <p className="text-[12.5px] leading-[1.6] text-[#6b7280] sm:text-[13.5px] sm:leading-[1.65]">
-                                {item.a}
-                              </p>
-                              {item.linkHref && item.linkLabel ? (
-                                <Link
-                                  href={`/${locale}${item.linkHref}`}
-                                  title={item.linkAriaLabel}
-                                  aria-label={item.linkAriaLabel ?? item.linkLabel}
-                                  className="mt-3 inline-flex items-center gap-1 text-[13px] font-semibold text-primary transition-colors duration-300 hover:text-primary-deep sm:text-[14px]"
-                                >
-                                  {item.linkLabel}
-                                </Link>
-                              ) : null}
-                            </div>
-                            <span aria-hidden className="w-[22px] sm:w-6" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-              {dict.faq.footerLinkHref && dict.faq.footerLinkLabel ? (
-                <div className="mt-5 border-t border-ink/[0.08] pt-5 sm:mt-6 sm:pt-6">
-                  <Link
-                    href={`/${locale}${dict.faq.footerLinkHref}`}
-                    title={dict.faq.footerLinkAriaLabel}
-                    aria-label={dict.faq.footerLinkAriaLabel ?? dict.faq.footerLinkLabel}
-                    className="inline-flex items-center gap-1 text-[12px] font-semibold text-primary/90 transition-colors duration-300 hover:text-primary sm:text-[13px]"
-                  >
-                    {dict.faq.footerLinkLabel}
-                  </Link>
-                </div>
-              ) : null}
-            </div>
-          </div>
-
-          <aside className="mt-14 sm:mt-16 lg:mt-20">
-            <div className="overflow-hidden rounded-[1.35rem] bg-[#eeedea] shadow-[0_22px_55px_-38px_rgba(15,22,36,0.14)] ring-1 ring-ink/[0.06] sm:rounded-[1.75rem]">
-              <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-                <div className="flex flex-col justify-between px-6 py-8 sm:px-9 sm:py-10 lg:px-11 lg:py-11">
-                  <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary sm:text-[12px]">
-                      {dict.finalCta.tag}
-                    </p>
-                    <h3
-                      className="mt-3 max-w-[22ch] text-balance font-bold tracking-[-0.03em] text-ink"
-                      style={{ fontSize: "clamp(1.65rem, 2.8vw, 2.35rem)", lineHeight: 1.1 }}
-                    >
-                      {dict.finalCta.title}
-                    </h3>
-                    <p className={`mt-4 max-w-[52ch] ${homeLeadInk}`}>{dict.finalCta.desc}</p>
-
-                    <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-                      <Link
-                        href={`/${locale}/iletisim`}
-                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-                      >
-                        {dict.finalCta.requestQuote}
-                        <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                      </Link>
-                      {dict.finalCta.callBack ? (
-                        <Link
-                          href={`/${locale}/iletisim`}
-                          className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-                        >
-                          {dict.finalCta.callBack}
-                          <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                          </svg>
-                        </Link>
-                      ) : null}
-                    </div>
-                  </div>
-
-                  {dict.finalCta.stat1Label && dict.finalCta.stat1Value ? (
-                    <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-ink/[0.08] pt-6 sm:gap-x-14">
-                      <div>
-                        <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary/55">
-                          {dict.finalCta.stat1Label}
-                        </p>
-                        <p className="mt-1 text-[15px] font-bold tracking-[-0.02em] text-ink sm:text-[16px]">
-                          {dict.finalCta.stat1Value}
-                        </p>
-                      </div>
-                      {dict.finalCta.stat2Label && dict.finalCta.stat2Value ? (
-                        <div>
-                          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary/55">
-                            {dict.finalCta.stat2Label}
-                          </p>
-                          <p className="mt-1 text-[15px] font-bold tracking-[-0.02em] text-ink sm:text-[16px]">
-                            {dict.finalCta.stat2Value}
-                          </p>
-                        </div>
-                      ) : null}
-                    </div>
-                  ) : null}
-                </div>
-
-                <div className="relative hidden min-h-[22rem] lg:block">
-                  <Image
-                    src="/images/finalcta.png"
-                    alt={dict.finalCta.title}
-                    fill
-                    className="object-cover object-center"
-                    sizes="45vw"
-                  />
-                  <div
-                    className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#eeedea] via-[#eeedea]/72 to-transparent"
-                    aria-hidden
-                  />
-                </div>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      {/* Marka tanıtım videosu — footer'dan hemen önce */}
-      {(() => {
-        const vt = getHomeVideoStrings(locale);
-        const featureIconMask = (src: string): React.CSSProperties => ({
-          maskImage: `url(${src})`,
-          WebkitMaskImage: `url(${src})`,
-          maskSize: "contain",
-          WebkitMaskSize: "contain",
-          maskPosition: "center",
-          WebkitMaskPosition: "center",
-          maskRepeat: "no-repeat",
-          WebkitMaskRepeat: "no-repeat",
-        });
-        const featureIcons = [
-          <span key="fc1" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/monitor.png")} aria-hidden />,
-          <span key="fc2" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/chart.png")} aria-hidden />,
-          <span key="fc3" className="block h-10 w-10 bg-primary" style={featureIconMask("/images/feature-icons/globe.png")} aria-hidden />,
-        ];
-        const pillarIcons = [
-          // 1) 3.000 m² Üretim Alanı — fabrika silüeti
-          (
-            <svg key="p1" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <path d="M4 27V14l6 4v-4l6 4v-4l8 4v9" strokeLinejoin="round" strokeLinecap="round" />
-              <path d="M3 27h26" strokeLinecap="round" />
-              <path d="M8 22h2M14 22h2M20 22h2M24 22h2" strokeLinecap="round" />
-              <path d="M22 14V6" strokeLinecap="round" />
-              <path d="M20 6h4" strokeLinecap="round" />
-            </svg>
-          ),
-          // 2) 30+ Ülkeye İhracat — globe + meridian
-          (
-            <svg key="p2" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <circle cx="16" cy="16" r="11" />
-              <ellipse cx="16" cy="16" rx="5" ry="11" />
-              <path d="M5 16h22" strokeLinecap="round" />
-              <path d="M16 5v22" strokeLinecap="round" opacity="0.7" />
-            </svg>
-          ),
-          // 3) CFD Destekli Tasarım — hava akış dalgaları
-          (
-            <svg key="p3" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <path d="M3 11c4-4 8-4 12 0s8 4 12 0" strokeLinecap="round" />
-              <path d="M3 16c4-4 8-4 12 0s8 4 12 0" strokeLinecap="round" />
-              <path d="M3 21c4-4 8-4 12 0s8 4 12 0" strokeLinecap="round" />
-            </svg>
-          ),
-          // 4) Sertifikalı Ürün Ailesi — sertifika madalyası
-          (
-            <svg key="p4" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <circle cx="16" cy="13" r="7" />
-              <path d="M12 19l-2 8 6-3 6 3-2-8" strokeLinejoin="round" strokeLinecap="round" />
-              <path d="M13 13l2.5 2.5L20 11" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          ),
-          // 5) Ar-Ge ve Test Yetkinliği — laboratuvar / beher
-          (
-            <svg key="p5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-7 w-7">
-              <path d="M12 4v8L6 25a2 2 0 0 0 1.8 3h16.4A2 2 0 0 0 26 25l-6-13V4" strokeLinejoin="round" strokeLinecap="round" />
-              <path d="M11 4h10" strokeLinecap="round" />
-              <path d="M9 19h14" strokeLinecap="round" opacity="0.7" />
-              <circle cx="14" cy="22" r="0.9" fill="currentColor" />
-              <circle cx="18" cy="24" r="0.9" fill="currentColor" />
-            </svg>
-          ),
-        ];
-
-        return (
-          <section className="relative overflow-hidden bg-[#0e1c31] py-14 text-white sm:py-20">
-            {/* arka plan görseli — tüm kutuyu kaplıyor */}
-            <Image
-              src="/images/home/marka-tanitim-bg.jpg"
-              alt=""
-              fill
-              priority={false}
-              className="pointer-events-none select-none object-cover object-center"
-              sizes="100vw"
-              aria-hidden
-            />
-            <div
-              className="pointer-events-none absolute inset-0 bg-[#0e1c31]/30"
-              aria-hidden
-            />
-
-            {/* Yumuşak alt geçiş — bu section'dan footer'a fade (keskin sınırı gizler) */}
-            <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-24"
-              style={{
-                background:
-                  "linear-gradient(180deg, rgba(14,28,49,0) 0%, rgba(14,28,49,0.55) 45%, #0e1c31 100%)",
-              }}
-              aria-hidden
-            />
-
-            <div className="relative mx-auto max-w-[1600px] px-4 sm:px-10 lg:px-16">
-              <div className="grid gap-8 lg:grid-cols-12 lg:gap-16">
-                <div className="lg:col-span-7">
-                  <h2
-                    className="font-bold tracking-[-0.025em] text-white"
-                    style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)", lineHeight: 1.02 }}
-                  >
-                    {dict.video.title}
-                  </h2>
-                  <div className="mt-4 h-[3px] w-20 bg-primary" />
-                  <p className="mt-6 max-w-[42ch] text-[14px] leading-relaxed text-white/60">
-                    {vt.subtitle}
-                  </p>
-                </div>
-                <div className="lg:col-span-5 lg:pt-6">
-                  <p className="text-[13.5px] leading-[1.7] text-white/68">
-                    {dict.video.desc}
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-10 grid gap-8 lg:grid-cols-12 lg:gap-10">
-                <div className="lg:col-span-7">
-                  <div className="relative overflow-hidden rounded-xl border border-white/[0.09] bg-[#0b1018] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
-                    <div className="relative aspect-video">
-                      <iframe
-                        src="https://www.youtube-nocookie.com/embed/6pXFGhKW6Lw?rel=0&modestbranding=1"
-                        title={dict.video.iframeTitle}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        loading="lazy"
-                        className="absolute inset-0 h-full w-full border-0"
-                      />
-                    </div>
-                  </div>
-                  <div className="mt-3 flex items-center justify-between font-mono-eng text-[10px] font-medium uppercase tracking-[0.24em] text-white/55">
-                    <span className="text-white/65">{dict.video.iframeTitle}</span>
-                    <span>1080p · HD</span>
-                  </div>
-                </div>
-
-                <div className="space-y-3.5 lg:col-span-5">
-                  <Link
-                    href={`/${locale}/kurumsal/biz-kimiz`}
-                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
-                  >
-                    <span className="flex min-w-0 items-center gap-3">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
-                        <span
-                          aria-hidden
-                          className="block h-9 w-9 bg-primary"
-                          style={{
-                            maskImage: "url(/images/feature-icons/factory.png)",
-                            WebkitMaskImage: "url(/images/feature-icons/factory.png)",
-                            maskSize: "contain",
-                            WebkitMaskSize: "contain",
-                            maskPosition: "center",
-                            WebkitMaskPosition: "center",
-                            maskRepeat: "no-repeat",
-                            WebkitMaskRepeat: "no-repeat",
-                          }}
-                        />
-                      </span>
-                      <span className="min-w-0">
-                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
-                          {vt.sideButtons.facilities.title}
-                        </p>
-                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
-                          {vt.sideButtons.facilities.desc}
-                        </p>
-                      </span>
-                    </span>
-                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
-                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-                  <Link
-                    href={`/${locale}/kurumsal/referanslar`}
-                    className="group flex items-center justify-between rounded-xl border border-white/[0.1] bg-white/[0.04] px-5 py-4 backdrop-blur-[6px] transition-all duration-300 hover:border-primary/55 hover:bg-white/[0.08]"
-                  >
-                    <span className="flex min-w-0 items-center gap-3">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/15 transition-colors group-hover:bg-primary/25">
-                        <span
-                          aria-hidden
-                          className="block h-9 w-9 bg-primary"
-                          style={{
-                            maskImage: "url(/images/feature-icons/trophy.png)",
-                            WebkitMaskImage: "url(/images/feature-icons/trophy.png)",
-                            maskSize: "contain",
-                            WebkitMaskSize: "contain",
-                            maskPosition: "center",
-                            WebkitMaskPosition: "center",
-                            maskRepeat: "no-repeat",
-                            WebkitMaskRepeat: "no-repeat",
-                          }}
-                        />
-                      </span>
-                      <span className="min-w-0">
-                        <p className="text-[13.5px] font-semibold text-white group-hover:text-white">
-                          {vt.sideButtons.references.title}
-                        </p>
-                        <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">
-                          {vt.sideButtons.references.desc}
-                        </p>
-                      </span>
-                    </span>
-                    <svg className="ms-2 h-4 w-4 shrink-0 text-white/50 transition-all group-hover:translate-x-1 group-hover:text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
-                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-
-                  <div className="space-y-2">
-                    {vt.featureCards.map((fc, i) => (
-                      <div
-                        key={fc.title}
-                        className="flex items-start gap-3.5 rounded-xl border border-white/[0.06] bg-white/[0.025] p-3.5 transition-colors duration-300 hover:border-white/[0.12] hover:bg-white/[0.05]"
-                      >
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary/12 text-primary">
-                          {featureIcons[i]}
-                        </span>
-                        <div className="min-w-0">
-                          <p className="text-[13px] font-semibold text-white">{fc.title}</p>
-                          <p className="mt-0.5 text-[11.5px] leading-snug text-white/55">{fc.desc}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-10 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.6)] p-6 backdrop-blur-sm sm:p-8">
-                <ul className="grid gap-x-6 gap-y-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-                  {vt.pillars.map((p, i) => (
-                    <li key={p.title} className="flex flex-col items-center text-center">
-                      <span className="flex h-12 w-12 items-center justify-center rounded-full border border-primary/30 bg-primary/8 text-primary">
-                        {pillarIcons[i]}
-                      </span>
-                      <p className="mt-3 text-[12px] font-bold tracking-[0.14em] text-white">{p.title}</p>
-                      <p className="mt-1.5 max-w-[24ch] text-[11px] leading-snug text-white/55">{p.desc}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="mt-6 rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.7)] px-6 py-5 backdrop-blur-sm sm:px-8">
-                <div className="flex flex-col items-stretch gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
-                  <div className="flex items-start gap-4">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-primary/35 bg-primary/10 text-primary">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                        <path d="M18.75 8.25v2.25A6.75 6.75 0 0 1 12 17.25v0a6.75 6.75 0 0 1-6.75-6.75V8.25M12 17.25v3M8.25 20.25h7.5M12 3a3 3 0 0 0-3 3v4.5a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    <div>
-                      <p className="text-[14.5px] font-semibold text-white">{vt.cta.title}</p>
-                      <p className="mt-0.5 text-[12px] text-white/55">{vt.cta.desc}</p>
-                    </div>
-                  </div>
-                  <Link
-                    href={`/${locale}/iletisim`}
-                    className="group inline-flex shrink-0 items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-                  >
-                    {vt.cta.button}
-                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        );
-      })()}
 
     </main>
   );

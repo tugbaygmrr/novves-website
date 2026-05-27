@@ -84,7 +84,7 @@ export default async function CozumlerPage({
                 {nav.solutions}
               </span>
             </div>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
+            <h1 className="font-eurostile text-page-title font-bold leading-tight tracking-tight text-white">
               {nav.solutions}
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/55">
@@ -102,7 +102,7 @@ export default async function CozumlerPage({
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">
                 {nav.solutions}
               </p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-dark">
                 {nav.solutionsDesc}
               </h2>
             </div>
@@ -129,7 +129,7 @@ export default async function CozumlerPage({
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">
             {dict.products.shared.technicalSupport}
           </p>
-          <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          <h3 className="mt-3 font-eurostile text-section font-bold text-white">
             {dict.products.shared.lookingForProduct}
           </h3>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/45">

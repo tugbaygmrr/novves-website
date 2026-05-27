@@ -191,7 +191,7 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
                         {t.categories.essential.tag}
                       </span>
                     </div>
-                    <p className="mt-1 text-[12px] leading-[1.6] text-ink/60">
+                    <p className="mt-1 text-fine leading-[1.6] text-ink/60">
                       {t.categories.essential.desc}
                     </p>
                   </div>
@@ -204,7 +204,7 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
                     <p className="text-[13px] font-semibold text-ink">
                       {t.categories.analytics.title}
                     </p>
-                    <p className="mt-1 text-[12px] leading-[1.6] text-ink/60">
+                    <p className="mt-1 text-fine leading-[1.6] text-ink/60">
                       {t.categories.analytics.desc}
                     </p>
                   </div>
@@ -217,7 +217,7 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
                     <p className="text-[13px] font-semibold text-ink">
                       {t.categories.marketing.title}
                     </p>
-                    <p className="mt-1 text-[12px] leading-[1.6] text-ink/60">
+                    <p className="mt-1 text-fine leading-[1.6] text-ink/60">
                       {t.categories.marketing.desc}
                     </p>
                   </div>

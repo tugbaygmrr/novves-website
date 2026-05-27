@@ -99,7 +99,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{s.productsLabel}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.04] tracking-[-0.02em] text-white">
               {t.titleFirst} <span className="text-primary">{t.titleHighlight}</span>
             </h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
@@ -130,7 +130,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
           <div className="mb-14 flex items-end gap-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{s.mostPreferred}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">{s.featuredProducts}</h2>
+              <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-dark">{s.featuredProducts}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -165,7 +165,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
                 <div className="relative flex flex-col border-t border-ink/10 p-6">
                   <div className="flex items-start justify-between gap-4">
                     <div className="min-w-0 flex-1">
-                      <h3 className="text-[1.6rem] font-bold leading-[1.05] tracking-[-0.02em] text-dark">{product.name}</h3>
+                      <h3 className="font-eurostile text-card font-bold leading-[1.05] tracking-[-0.02em] text-dark">{product.name}</h3>
                       <p className="mt-1.5 text-sm font-medium text-primary">{product.type}</p>
                     </div>
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-[#fff1ea] text-primary transition-all duration-300 group-hover:border-primary/35 group-hover:bg-primary group-hover:text-white">
@@ -176,7 +176,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
                   </div>
 
                   {blurb ? (
-                    <p className="mt-4 text-pretty text-[12px] leading-[1.65] text-secondary/65 sm:text-[13px]">
+                    <p className="mt-4 text-pretty text-fine leading-[1.65] text-secondary/65 sm:text-[13px]">
                       {blurb}
                     </p>
                   ) : null}
@@ -212,7 +212,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
             <span className="inline-flex rounded-full bg-primary/[0.12] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
               {s.fullProductRange}
             </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-[-0.02em] text-[#1a2842] sm:text-[2.35rem] sm:leading-[1.08]">
+            <h2 className="mt-4 font-eurostile text-card font-bold tracking-[-0.02em] text-[#1a2842] sm:leading-[1.08]">
               {s.allProductFamilies}
             </h2>
           </div>
@@ -253,7 +253,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center sm:mb-14">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{s.explore}</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{s.otherCategories}</h2>
+            <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-white">{s.otherCategories}</h2>
             <p className="mx-auto mt-3 max-w-lg text-sm text-white/58">
               {s.exploreNovves}
             </p>
@@ -272,7 +272,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
                   {String(i + 1).padStart(2, "0")}
                 </span>
 
-                <h3 className="text-[1.05rem] font-bold leading-[1.3] text-white">{cat.label}</h3>
+                <h3 className="font-eurostile text-body font-bold leading-[1.3] text-white">{cat.label}</h3>
 
                 {/* Arrow */}
                 <div className="mt-5 flex items-center gap-2">
@@ -305,7 +305,7 @@ export default async function HavaHareketi({ params }: { params: Promise<{ local
         />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{s.technicalSupport}</p>
-          <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          <h3 className="mt-3 font-eurostile text-section font-bold text-white">
             {s.lookingForProduct}
           </h3>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/45">

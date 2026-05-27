@@ -52,7 +52,7 @@ export default async function CfdAnalizi({ params }: { params: Promise<{ locale:
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
             </h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
@@ -90,7 +90,7 @@ export default async function CfdAnalizi({ params }: { params: Promise<{ locale:
               <div className="mb-8 flex items-end gap-4">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.whyCfd.sectionLabel}</p>
-                  <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+                  <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
                     {t.whyCfd.title}
                   </h2>
                 </div>
@@ -151,7 +151,7 @@ export default async function CfdAnalizi({ params }: { params: Promise<{ locale:
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.analysisTypes.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
                 {t.analysisTypes.title}
               </h2>
             </div>
@@ -199,7 +199,7 @@ export default async function CfdAnalizi({ params }: { params: Promise<{ locale:
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.benefits.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+              <h2 className="mt-2 font-display text-section font-bold text-white">
                 {t.benefits.title}
               </h2>
               <div className="mt-8 space-y-3">

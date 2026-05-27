@@ -342,7 +342,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
       </div>
 
       {/* ─ Top CTA Card ────────────────────────────────────────────────── */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-12 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-[1600px] px-4 pt-12 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.85)] px-6 py-7 shadow-[0_20px_60px_-30px_rgba(0,0,0,0.6)] backdrop-blur-sm sm:px-8">
           <div className="flex flex-col items-stretch gap-7 lg:flex-row lg:items-center lg:gap-10">
             {/* Title block with icon */}
@@ -353,10 +353,10 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 </svg>
               </span>
               <div>
-                <h3 className="text-[15px] font-semibold leading-snug text-white">
+                <h3 className="text-meta font-semibold leading-snug text-white">
                   {t.cta.title}
                 </h3>
-                <p className="mt-1.5 text-[12px] leading-relaxed text-white/55">
+                <p className="mt-1.5 text-fine leading-relaxed text-white/55">
                   {t.cta.desc}
                 </p>
               </div>
@@ -367,7 +367,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               {t.pillars.map((p, i) => (
                 <div key={`${p.line1}-${i}`} className="flex flex-col items-center gap-2 text-center text-white/85">
                   <span className="text-primary">{pillarIcons[i]}</span>
-                  <span className="text-[11px] leading-tight">
+                  <span className="text-fine leading-tight">
                     {p.line1}
                     <br />
                     {p.line2}
@@ -387,17 +387,18 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <span className="text-[11px] text-white/45">{t.cta.note}</span>
+              <span className="text-fine text-white/45">{t.cta.note}</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* ─ Main Grid: brand + 5 link columns ───────────────────────────── */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-y-12 gap-x-8 lg:grid-cols-12">
-          {/* Brand column */}
-          <div className="lg:col-span-3">
+      <div className="relative z-10 mx-auto max-w-[1600px] px-4 pt-14 pb-0 sm:px-6 lg:px-8">
+        <div className="grid gap-y-12 gap-x-8 lg:grid-cols-12 lg:grid-rows-[1fr_auto]">
+          {/* Brand column — video için daha geniş (6/12), içerik full yüksekliği kullanır */}
+          <div className="flex flex-col lg:col-span-6 lg:row-span-2 lg:grid lg:grid-rows-subgrid lg:gap-y-0">
+            <div className="flex flex-col">
             <Link href={`/${locale}`} className="inline-block">
               <Image
                 src="/images/novves-footer-logo.svg"
@@ -408,46 +409,81 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               />
             </Link>
 
-            <p className="mt-5 max-w-xs text-[12.5px] leading-relaxed text-white/55">
+            <p className="mt-5 max-w-2xl text-fine leading-relaxed text-white/55">
               {t.brand.desc}
             </p>
 
-            {/* Contact + addresses */}
-            <div className="mt-7 space-y-3">
-              <a
-                href="tel:+902164674752"
-                className="group flex items-center gap-3 text-[13px] text-white/72 transition-colors duration-300 hover:text-white"
-              >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/30">
-                  <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+            {/* Tanıtım videosu — yatay 16:9, firma tanıtım section'ı gibi */}
+            <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-xl border border-white/[0.09] bg-[#0b1018] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/6pXFGhKW6Lw?rel=0&modestbranding=1"
+                title="Novves tanıtım"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full border-0"
+              />
+            </div>
+            </div>
+
+            {/* Sosyal + İletişim — subgrid sayesinde sağdaki cert ile aynı satırda (TOP'lar hizalı) */}
+            <div className="border-y border-white/[0.07] py-7">
+              {/* Sosyal ikonlar */}
+              <div className="flex flex-wrap items-center gap-2.5">
+                {socialLinks.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/65 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:bg-primary/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1d33]"
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </div>
+
+              {/* İletişim 2x2 */}
+              <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-3">
+              {/* Telefon */}
+              <a href="tel:+902164674752" className="group flex items-start gap-2.5 text-white/72 transition-colors hover:text-white">
+                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary transition-all group-hover:bg-primary/20 group-hover:ring-primary/30">
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                   </svg>
                 </span>
-                +90 216 467 47 52
+                <div className="leading-tight">
+                  <p className="text-fine font-semibold text-primary">Telefon</p>
+                  <p className="mt-0.5 text-fine text-white/72">+90 216 467 47 52</p>
+                </div>
               </a>
 
-              <a
-                href="mailto:info@novves.com"
-                className="group flex items-center gap-3 text-[13px] text-white/72 transition-colors duration-300 hover:text-white"
-              >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/30">
-                  <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+              {/* Email */}
+              <a href="mailto:info@novves.com" className="group flex items-start gap-2.5 text-white/72 transition-colors hover:text-white">
+                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary transition-all group-hover:bg-primary/20 group-hover:ring-primary/30">
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                   </svg>
                 </span>
-                info@novves.com
+                <div className="leading-tight">
+                  <p className="text-fine font-semibold text-primary">Email</p>
+                  <p className="mt-0.5 text-fine text-white/72">info@novves.com</p>
+                </div>
               </a>
 
-              <div className="flex items-start gap-3 text-[12.5px] leading-relaxed text-white/58">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08]">
-                  <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+              {/* Ofis */}
+              <div className="flex items-start gap-2.5 text-white/58">
+                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary">
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                   </svg>
                 </span>
-                <div className="pt-0.5">
-                  <p className="font-semibold text-primary">{t.contact.headOffice}</p>
-                  <p className="mt-1 text-white/65">
+                <div className="leading-tight">
+                  <p className="text-fine font-semibold text-primary">{t.contact.headOffice}</p>
+                  <p className="mt-0.5 text-fine leading-snug text-white/72">
                     19 Mayıs Mh. Sümer Sk.
                     <br />
                     Zitaş Plaza C2 Blok No:7
@@ -457,15 +493,16 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 text-[12.5px] leading-relaxed text-white/58">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08]">
-                  <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+              {/* Tesis */}
+              <div className="flex items-start gap-2.5 text-white/58">
+                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary">
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21V8.25l8.25-4.5 8.25 4.5V21M3.75 21h16.5M9 21v-6h6v6" />
                   </svg>
                 </span>
-                <div className="pt-0.5">
-                  <p className="font-semibold text-primary">{t.contact.factory}</p>
-                  <p className="mt-1 text-white/65">
+                <div className="leading-tight">
+                  <p className="text-fine font-semibold text-primary">{t.contact.factory}</p>
+                  <p className="mt-0.5 text-fine leading-snug text-white/72">
                     Yalova Organize Sanayi Bölgesi
                     <br />
                     2. Cadde No:12
@@ -474,28 +511,21 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                   </p>
                 </div>
               </div>
-            </div>
-
-            {/* Socials */}
-            <div className="mt-7 flex flex-wrap items-center gap-2.5">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/65 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:bg-primary/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1d33]"
-                >
-                  {s.icon}
-                </a>
-              ))}
+              </div>
             </div>
           </div>
 
           {/* Link columns + certificates (two-row layout) — aligned under column headers */}
-          <div className="lg:col-span-9">
-            <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 lg:grid-cols-5 lg:gap-x-6">
+          <div className="flex flex-col lg:col-span-6 lg:row-span-2 lg:grid lg:grid-rows-subgrid lg:gap-y-0">
+            <div className="flex flex-col">
+            {/* Brand slogan — kolonların üstünde marka tagline'ı (hero ile birebir aynı) */}
+            <div className="mb-10 border-b border-white/[0.07] pb-8">
+              <h2 className="font-display text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
+                Born to Flow: Havayı Şekillendiren Mühendislik
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 lg:grid-cols-5 lg:gap-x-6 lg:w-full">
               {sections.map((section) => (
                 <div key={section.title}>
                   <h4 className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em] text-white/88">
@@ -507,7 +537,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                       <li key={`${section.title}-${i}`}>
                         <Link
                           href={`/${locale}${section.hrefs[i]}`}
-                          className="group flex items-center text-[13px] text-white/62 transition-all duration-300 hover:text-white/95"
+                          className="group flex items-center text-fine text-white/62 transition-all duration-300 hover:text-white/95"
                         >
                           <span className="inline-block w-0 overflow-hidden text-primary transition-all duration-300 group-hover:w-3.5">
                             &rsaquo;&nbsp;
@@ -520,24 +550,30 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 </div>
               ))}
             </div>
+            </div>
 
-            {/* Certificates & Standards — title row, then cert grid with download link at right */}
-            <div className="mt-10 border-y border-white/[0.07] py-6">
-              <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">
+            {/* Certificates & Standards — subgrid ile sol bloğun TOP çizgisiyle hizalı */}
+            <div className="border-y border-white/[0.07] py-7 lg:w-full">
+              <h4 className="text-xs font-bold uppercase tracking-[0.22em] text-primary">
                 {t.certificates.title}
               </h4>
 
-              <div className="mt-5 flex flex-col items-stretch gap-6 lg:flex-row lg:items-center lg:gap-6">
+              <div className="mt-6 flex flex-col items-stretch gap-7 lg:flex-row lg:items-center lg:gap-7">
                 {/* Certificates row */}
-                <ul className="grid flex-1 grid-cols-2 gap-x-4 gap-y-5 sm:grid-cols-3 lg:grid-cols-5">
+                <ul className="grid flex-1 grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 lg:grid-cols-5">
                   {CERT_CODES.map((code, i) => (
-                    <li key={code} className="flex items-start gap-2.5">
-                      {CertIcon}
-                      <div className="min-w-0 pt-0.5 leading-tight">
-                        <p className="whitespace-nowrap text-[12.5px] font-bold tracking-[0.02em] text-white">
+                    <li key={code} className="flex flex-col items-start gap-2.5">
+                      <svg viewBox="0 0 32 32" className="h-12 w-12 shrink-0 text-primary" fill="none">
+                        <circle cx="16" cy="14" r="8.5" stroke="currentColor" strokeWidth="1.6" />
+                        <circle cx="16" cy="14" r="5.5" stroke="currentColor" strokeWidth="1.3" opacity="0.6" />
+                        <path d="M10.5 20.5l-2 9 7.5-4.2 7.5 4.2-2-9" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+                        <path d="M12.8 14l2.6 2.6L20 12" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <div className="min-w-0 leading-tight">
+                        <p className="text-[13px] font-bold tracking-[0.02em] text-white">
                           {code}
                         </p>
-                        <p className="mt-1 text-[10.5px] leading-snug text-white/55">
+                        <p className="mt-1.5 text-[11px] leading-snug text-white/55">
                           {t.certificates.items[i]}
                         </p>
                       </div>
@@ -548,18 +584,18 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 {/* Right: Download catalogue */}
                 <Link
                   href={`/${locale}/teknik-merkez`}
-                  className="group flex items-center gap-2.5 lg:shrink-0 lg:border-l lg:border-white/10 lg:pl-6"
+                  className="group flex items-center gap-3 lg:shrink-0 lg:border-l lg:border-white/10 lg:pl-7"
                 >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/15 text-primary transition-all duration-300 group-hover:bg-primary/25">
-                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-md bg-primary/15 text-primary transition-all duration-300 group-hover:bg-primary/25">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                     </svg>
                   </span>
                   <div className="leading-tight">
-                    <p className="text-[12px] font-bold tracking-wide text-primary group-hover:text-primary-deep">
+                    <p className="text-meta font-bold tracking-wide text-primary group-hover:text-primary-deep">
                       {t.certificates.downloadCatalog}
                     </p>
-                    <p className="text-[10px] text-white/55">{t.certificates.downloadCatalogDesc}</p>
+                    <p className="mt-0.5 text-fine text-white/55">{t.certificates.downloadCatalogDesc}</p>
                   </div>
                 </Link>
               </div>
@@ -570,7 +606,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
 
       {/* ─ Newsletter + Language + Application Areas + World map ───────── */}
       <div className="relative z-10">
-        <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1600px] px-4 pt-6 pb-7 sm:px-6 lg:px-8">
           <div className="grid items-center gap-8 lg:grid-cols-12">
             {/* Newsletter */}
             <div className="flex items-start gap-4 lg:col-span-4">
@@ -580,8 +616,8 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 </svg>
               </span>
               <div className="flex-1">
-                <p className="text-[13px] font-semibold text-white">{t.newsletter.title}</p>
-                <p className="mt-0.5 text-[11.5px] text-white/55">{t.newsletter.desc}</p>
+                <p className="text-meta font-semibold text-white">{t.newsletter.title}</p>
+                <p className="mt-0.5 text-fine text-white/55">{t.newsletter.desc}</p>
                 <FooterNewsletter
                   placeholder={t.newsletter.placeholder}
                   submitLabel={t.newsletter.title}
@@ -596,7 +632,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 {t.applicationAreas.items.map((a, i) => (
                   <li key={`${a.line1}-${i}`} className="flex flex-col items-center gap-1 text-center">
                     <span className="text-white/72">{applicationAreaIcons[i]}</span>
-                    <span className="text-[9.5px] leading-tight text-white/60">
+                    <span className="text-[10px] leading-tight text-white/60">
                       {a.line1}
                       {a.line2 ? (
                         <>
@@ -613,7 +649,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
             {/* Global caption + dotted world map */}
             <div className="flex items-center gap-3 lg:col-span-2 lg:justify-end">
               <WorldMapDots className="h-16 w-32 text-white/65" />
-              <p className="max-w-[120px] text-[11.5px] font-medium leading-snug text-white/80">
+              <p className="max-w-[120px] text-fine font-medium leading-snug text-white/80">
                 {t.globalCaption.line1}
                 <br />
                 {t.globalCaption.line2}
@@ -623,49 +659,52 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
         </div>
       </div>
 
-      {/* ─ Dil seçimi (en altta, tüm diller) ──────────────────────────── */}
+      {/* ─ Dil seçimi bandı ────────────── */}
       <div className="relative z-10 border-t border-white/[0.06]">
-        <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
-          <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-white/88 sm:text-left">
-            {t.langTitle}
-          </p>
-          <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 sm:justify-start">
-            {locales.map((code) => {
-              const isActive = locale === code;
-              return (
-                <Link
-                  key={code}
-                  href={`/${code}`}
-                  title={localeUi[code].label}
-                  aria-label={localeUi[code].label}
-                  className={`flex h-8 w-8 items-center justify-center rounded-full text-[10px] font-bold tracking-wide transition-all duration-300 ${
-                    isActive
-                      ? "bg-primary text-white shadow-md shadow-primary/30"
-                      : "border border-white/15 bg-white/[0.04] text-white/65 hover:border-primary/40 hover:text-white"
-                  }`}
-                >
-                  {localeUi[code].short}
-                </Link>
-              );
-            })}
+        <div className="mx-auto flex max-w-[1600px] justify-start px-4 py-5 sm:px-6 lg:px-8">
+          {/* Sol: Dil seçimi — tek satır, sola çekilmiş */}
+          <div className="w-full lg:mr-auto lg:w-auto">
+            <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-white/88 sm:text-left">
+              {t.langTitle}
+            </p>
+            <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 sm:justify-start lg:flex-nowrap">
+              {locales.map((code) => {
+                const isActive = locale === code;
+                return (
+                  <Link
+                    key={code}
+                    href={`/${code}`}
+                    title={localeUi[code].label}
+                    aria-label={localeUi[code].label}
+                    className={`flex h-8 w-8 items-center justify-center rounded-full text-[10px] font-bold tracking-wide transition-all duration-300 ${
+                      isActive
+                        ? "bg-primary text-white shadow-md shadow-primary/30"
+                        : "border border-white/15 bg-white/[0.04] text-white/65 hover:border-primary/40 hover:text-white"
+                    }`}
+                  >
+                    {localeUi[code].short}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
 
       {/* ─ Bottom bar ──────────────────────────────────────────────────── */}
       <div className="relative z-10 border-t border-white/[0.06]">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row sm:px-6 lg:px-8">
-          <p className="text-[11px] tracking-wide text-white/65">{t.bottom.copyright}</p>
+        <div className="mx-auto flex max-w-[1600px] flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row sm:px-6 lg:px-8">
+          <p className="text-fine tracking-wide text-white/65">{t.bottom.copyright}</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link
               href={`/${locale}/kvkk/kisisel-verilerin-korunmasi`}
-              className="text-[11px] tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
+              className="text-fine tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
             >
               {t.bottom.kvkk}
             </Link>
             <Link
               href={`/${locale}/kvkk/guvenlik-ve-gizlilik-politikasi`}
-              className="text-[11px] tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
+              className="text-fine tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
             >
               {t.bottom.privacyPolicy}
             </Link>
@@ -674,13 +713,13 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               href="/kvkk/FR-0057-Kisisel-Veri-Sahibi-Basvuru-Formu.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11px] tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
+              className="text-fine tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
             >
               {t.bottom.applicationForm}
             </a>
             <span className="hidden h-3 w-px bg-white/15 sm:inline-block" />
             <span className="flex items-center gap-2">
-              <span className="text-[11px] text-white/55">{t.bottom.poweredBy}</span>
+              <span className="text-fine text-white/55">{t.bottom.poweredBy}</span>
               <a
                 href="https://tasarloji.com"
                 target="_blank"

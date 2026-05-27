@@ -52,7 +52,7 @@ export default async function DumanKontrol({ params }: { params: Promise<{ local
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
             </h1>
           </div>
@@ -89,7 +89,7 @@ export default async function DumanKontrol({ params }: { params: Promise<{ local
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.components.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
                 {t.components.title}
               </h2>
             </div>
@@ -130,7 +130,7 @@ export default async function DumanKontrol({ params }: { params: Promise<{ local
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.advantages.sectionLabel}</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
                 {t.advantages.title}
               </h2>
               <p className="mt-3 max-w-2xl text-sm text-secondary/50">
@@ -180,7 +180,7 @@ export default async function DumanKontrol({ params }: { params: Promise<{ local
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.designFactors.sectionLabel}</p>
-            <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+            <h2 className="mt-2 font-display text-section font-bold text-white">
               {t.designFactors.title}
             </h2>
           </div>

@@ -57,7 +57,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
                 KVKK
               </span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               Güvenlik ve Gizlilik <span className="text-primary">Politikası</span>
             </h1>
             <p className="mt-6 max-w-[54ch] text-[18px] leading-[1.62] text-white/72">
@@ -72,7 +72,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {/* GUVENLIK POLITIKASI */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               GUVENLIK POLITIKASI
             </h2>
             <div className="space-y-4 text-base leading-7 text-secondary/80">
@@ -108,7 +108,7 @@ export default async function GuvenlikVeGizlilikPolitikasi({
 
           {/* GIZLILIK POLITIKASI */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-6 text-2xl font-bold text-dark">
+            <h2 className="mb-6 font-display text-card font-bold text-dark">
               GIZLILIK POLITIKASI
             </h2>
             <div className="space-y-4 text-base leading-7 text-secondary/80">

@@ -42,7 +42,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{s.productsLabel}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.04] tracking-[-0.02em] text-white">
               {t.titleFirst} <span className="text-primary">{t.titleHighlight}</span>
             </h1>
           </div>
@@ -56,7 +56,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <div className="mb-14 flex items-end gap-6">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">{s.panoPLCSensor}</p>
-              <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-dark sm:text-4xl">{s.productGroups}</h2>
+              <h2 className="mt-2 font-eurostile text-card font-extrabold tracking-tight text-dark">{s.productGroups}</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
@@ -67,7 +67,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                 <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-[#1d2f4d]/90 via-primary/75 to-[#90a5bd]/75 opacity-75 transition-opacity duration-300 group-hover:opacity-100" />
                 <div className="absolute left-0 top-0 h-full w-1 bg-ink/15 transition-colors duration-300 group-hover:bg-primary" />
                 <span className="mb-3 block text-3xl font-black text-[#c8c7c2]/50">{String(i + 1).padStart(2, "0")}</span>
-                <h3 className="text-lg font-bold text-dark">{product.name}</h3>
+                <h3 className="font-eurostile text-card-sm font-bold text-dark">{product.name}</h3>
                 {product.subModels.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-2">
                     {product.subModels.map((m: string) => (
@@ -96,14 +96,14 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">{s.explore}</p>
-            <h2 className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">{s.otherCategories}</h2>
+            <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-white">{s.otherCategories}</h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {t.otherCategories.map((cat: { label: string; slug: string }, i: number) => (
               <Link key={cat.label} href={`/${locale}/urunler/${cat.slug}`} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-[0_18px_42px_-34px_rgba(8,14,24,0.7)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/35 hover:bg-white/[0.12] hover:shadow-[0_24px_50px_-28px_rgba(239, 95, 23,0.22)]">
                 <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-primary/80 via-primary/30 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
                 <span className="mb-4 block text-2xl font-black text-white/[0.12]">{String(i + 1).padStart(2, "0")}</span>
-                <h3 className="text-[1.05rem] font-bold leading-[1.3] text-white">{cat.label}</h3>
+                <h3 className="font-eurostile text-body font-bold leading-[1.3] text-white">{cat.label}</h3>
                 <div className="mt-5 flex items-center gap-2">
                   <span className="h-px w-7 bg-primary/45 transition-all duration-300 group-hover:w-11 group-hover:bg-primary" />
                   <svg className="h-3.5 w-3.5 text-primary/65 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>

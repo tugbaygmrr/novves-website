@@ -45,7 +45,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{s.productsLabel}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-eurostile text-page-title font-bold leading-[1.04] tracking-[-0.02em] text-white">
               {t.titleFirst} <span className="text-primary">{t.titleHighlight}</span>
             </h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
@@ -69,7 +69,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <div className="mb-10 flex items-end gap-6 sm:mb-12">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">{t.alpaca.label}</p>
-              <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-dark sm:text-5xl">ALPACA</h2>
+              <h2 className="mt-2 font-eurostile text-section font-extrabold tracking-tight text-dark">ALPACA</h2>
               <p className="mt-4 max-w-lg text-[15px] leading-7 text-secondary/62">
                 {t.alpaca.subModels.length} {t.alpaca.desc}
               </p>
@@ -134,7 +134,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center sm:mb-14">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{s.explore}</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{s.otherCategories}</h2>
+            <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-white">{s.otherCategories}</h2>
             <p className="mx-auto mt-3 max-w-lg text-sm text-white/58">
               {s.exploreNovves}
             </p>
@@ -151,7 +151,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                 <span className="mb-4 block text-2xl font-black text-white/[0.12]">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="text-[1.05rem] font-bold leading-[1.3] text-white">{cat.label}</h3>
+                <h3 className="font-eurostile text-body font-bold leading-[1.3] text-white">{cat.label}</h3>
                 <div className="mt-5 flex items-center gap-2">
                   <span className="h-px w-7 bg-primary/45 transition-all duration-300 group-hover:w-11 group-hover:bg-primary" />
                   <svg className="h-3.5 w-3.5 text-primary/65 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">

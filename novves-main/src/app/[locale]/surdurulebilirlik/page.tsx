@@ -32,7 +32,7 @@ export default async function Surdurulebilirlik({ params }: { params: Promise<{ 
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.title}</span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">{t.title}</h1>
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">{t.title}</h1>
             <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
               {t.introText}
             </p>
@@ -47,7 +47,7 @@ export default async function Surdurulebilirlik({ params }: { params: Promise<{ 
               <Image src="/images/her-novves-fan.png" alt={t.title} width={600} height={400} className="h-[170px] w-full object-cover sm:h-[190px]" priority />
             </div>
             <div className="space-y-2">
-              <h2 className="text-lg font-bold tracking-tight text-dark sm:text-xl">
+              <h2 className="font-display text-card-sm font-bold tracking-tight text-dark">
                 {t.tagline} <span className="text-primary">{t.taglineHighlight}</span> {t.taglineEnd}
               </h2>
               <p className="text-[13px] leading-5 text-secondary/72">{t.introText}</p>
@@ -62,7 +62,7 @@ export default async function Surdurulebilirlik({ params }: { params: Promise<{ 
           <div className="mb-9 flex items-end gap-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Sürdürülebilirlik</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-dark sm:text-3xl">SDG Hedeflerimiz</h2>
+              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">SDG Hedeflerimiz</h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>

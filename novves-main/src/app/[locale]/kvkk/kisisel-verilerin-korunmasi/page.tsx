@@ -57,7 +57,7 @@ export default async function KisiselVerilerinKorunmasi({
                 KVKK
               </span>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-white sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
               Kişisel Verilerin Korunması <span className="text-primary">Kanunu</span>
             </h1>
             <p className="mt-6 max-w-[54ch] text-[18px] leading-[1.62] text-white/72">
@@ -88,7 +88,7 @@ export default async function KisiselVerilerinKorunmasi({
 
           {/* Veri Sorumlusu */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 font-display text-card-sm font-bold text-dark">
               Veri Sorumlusu
             </h2>
             <div className="rounded-xl border border-ink/10 bg-[#fbf9f3] p-6">
@@ -105,7 +105,7 @@ export default async function KisiselVerilerinKorunmasi({
 
           {/* Kapsam ve Hukuki Sebep */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 font-display text-card-sm font-bold text-dark">
               Kapsam ve Hukuki Sebep
             </h2>
             <p className="text-base leading-7 text-secondary/80">
@@ -124,7 +124,7 @@ export default async function KisiselVerilerinKorunmasi({
 
           {/* Kisisel Verilerin Islenmesindeki Amac */}
           <section className="mb-8 rounded-2xl border border-ink/10 bg-[#f8f5ed] p-6 sm:p-8">
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 font-display text-card-sm font-bold text-dark">
               Kisisel Verilerin Islenmesindeki Amac
             </h2>
             <p className="mb-4 text-base leading-7 text-secondary/80">
@@ -192,7 +192,7 @@ export default async function KisiselVerilerinKorunmasi({
 
           {/* Kisisel Verilerin Ucuncu Kisilerle Paylasilmasi */}
           <section className="mb-12">
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 font-display text-card-sm font-bold text-dark">
               Kisisel Verilerin Ucuncu Kisilerle Paylasilmasi
             </h2>
             <p className="text-base leading-7 text-secondary/80">
@@ -211,7 +211,7 @@ export default async function KisiselVerilerinKorunmasi({
 
           {/* Ilgili Kisi Olarak Haklariniz */}
           <section className="mb-12">
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 font-display text-card-sm font-bold text-dark">
               Ilgili Kisi (Veri Sahibi) Olarak Haklariniz
             </h2>
             <p className="mb-4 text-base leading-7 text-secondary/80">
@@ -306,7 +306,7 @@ export default async function KisiselVerilerinKorunmasi({
 
           {/* Contact Info */}
           <section className="mb-12">
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 font-display text-card-sm font-bold text-dark">
               Iletisim Bilgileri
             </h2>
             <p className="mb-6 text-base leading-7 text-secondary/80">
