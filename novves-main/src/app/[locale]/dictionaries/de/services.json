@@ -1,333 +1,1326 @@
 {
+  "genelBakis": {
+    "meta": {
+      "title": "Dienstleistungen | Romane",
+      "description": "NOVVES End-to-End-Engineering, Projektunterstützung und Außendienstleistungen – von der Vor-Ort-Besichtigung bis zum technischen Service."
+    },
+    "hero": {
+      "badge": "Überblick",
+      "titlePart1": "NOVVES",
+      "titleHighlight": "Dienstleistungen",
+      "subtitle": "Komplettes Engineering, Projektunterstützung und Außendienst",
+      "imageSrc": "/images/page-hero/cozumler-main.jpg"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES ist nicht nur ein Hersteller, der industrielle Ventilatorgruppen und Klimaanlagen liefert. Es handelt sich um einen Lösungspartner, der jedes Projekt im Rahmen seiner eigenen technischen Gegebenheiten analysiert, das richtige Produkt mit der richtigen Anwendung kombiniert und den Projektprozess mit technischer Disziplin unterstützt.",
+        "In den Bereichen Industrielüftung, Komfortlüftung, Parkhauslüftung, Rauch- und Wärmeabzugssysteme, Rauchschutzplanung und projektbezogene HVAC-Anwendungen; Wir bieten einen umfassenden Service von der Entdeckung vor Ort bis zur technischen Projektplanung, von der CFD-Analyse bis zur Ventilatorauswahl, von der Inbetriebnahme bis zum technischen Kundendienst.",
+        "Unser Ziel in jedem Serviceprozess ist; Sichere, effiziente, nachhaltige und langlebige Systemlösungen entwickeln. Aus diesem Grund projektiert NOVVES nicht nur auf Produktbasis; Es bewertet ganzheitlich Luftströmung, Brandschutz, Energieeffizienz, Einsatzbedingungen, Wartungszugang, Automatisierungsszenarien und langfristige Betriebsleistung."
+      ]
+    },
+    "engineeringApproach": {
+      "sectionLabel": "Ansatz",
+      "title": "Engineering-orientierter Serviceansatz",
+      "paragraphs": [
+        "Das NOVVES-Servicemodell beginnt mit einem richtigen Verständnis der Projektanforderungen. Standortbedingungen, architektonische Struktur, vorgesehene Nutzung, Luftstrombedarf, Druckverluste, Temperaturbeständigkeit, Brandszenario, Rauchabzugsanforderungen und relevante Normen werden gemeinsam bewertet.",
+        "Dank dieser Vorgehensweise steht nicht nur für jedes Projekt das passende Produkt zur Verfügung; Geplant sind die richtige Systemarchitektur, die richtige Lüfterplatzierung, das richtige Automatisierungsszenario und der richtige technische Supportprozess."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Umfang",
+      "title": "Unser Leistungsumfang",
+      "intro": "Die Dienstleistungen von NOVVES werden unter folgenden Hauptthemen angeboten:"
+    },
+    "lifecycle": {
+      "sectionLabel": "Unterstützung",
+      "title": "Unterstützung vom Projektbeginn bis zum After Sales",
+      "paragraph": "NOVVES unterstützt seine Kunden nicht nur in der Angebots- oder Produktlieferphase des Projektprozesses, sondern während des gesamten Lebenszyklus. Die Ermittlung des richtigen Bedarfs zu Beginn des Projekts, die Erstellung technischer Analysen, die Erstellung der Produkt- und Systemauswahl, die Erstellung der erforderlichen Dokumentation, die Durchführung von Inbetriebnahmeprozessen vor Ort und der technische Kundendienst nach dem Verkauf sind die grundlegenden Bestandteile des ganzheitlichen Serviceansatzes von NOVVES."
+    },
+    "applicationAreas": {
+      "sectionLabel": "Sektoren",
+      "title": "In welchen Bereichen sind wir tätig?",
+      "intro": "Novves; Es bietet ingenieurgestützte Lüftungs- und Rauchschutzdienstleistungen in verschiedenen Gebäudetypen und Branchen an. Unsere Hauptanwendungsgebiete:",
+      "items": [
+        "Überdachte Parkplätze",
+        "Industrieanlagen",
+        "Produktionsbereiche",
+        "Gewerbebauten",
+        "Einkaufszentren",
+        "Hotels",
+        "öffentliche Gebäude",
+        "Tunnel und Infrastrukturprojekte",
+        "Technische Bände",
+        "Spezielle Projektanträge",
+        "HVAC- und Klimatisierungsprojekte"
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Unterschied",
+      "title": "Warum NOVVES Services?",
+      "paragraphs": [
+        "Der Hauptunterschied zwischen den Dienstleistungen von NOVVES besteht darin, dass Produktionskapazität und technisches Wissen unter einem Dach vereint sind. Auf diese Weise Projekte; Sie werden auf der Grundlage tatsächlicher Feldbedingungen, Anwendungsanforderungen und Leistungsziele bewertet, nicht nur anhand von Katalogwerten.",
+        "Zusammenarbeit mit NOVAVES; Das bedeutet die Wahl des richtigen Ventilators, ein zuverlässiges Rauchabzugssystem, eine effiziente Lüftungslösung, Unterstützung bei der technischen Dokumentation, die Fähigkeit zur Inbetriebnahme vor Ort und technische Unterstützung nach dem Verkauf."
+      ]
+    },
+    "servicesGrid": {
+      "sectionLabel": "Dienstleistungen",
+      "title": "Unsere Engineering- und Field Services",
+      "detailsLabel": "Details anzeigen"
+    },
+    "hubCards": [
+      {
+        "slug": "yerinde-kesif",
+        "excerpt": "Unsere erfahrenen Ingenieure kommen zu Ihnen vor Ort, analysieren die technischen Anforderungen und sammeln Daten für das bestmögliche Systemlayout.",
+        "category": "Außendienst"
+      },
+      {
+        "slug": "duman-kontrol-sistemi-tasarimi",
+        "excerpt": "Wir konzipieren Ihre Strahlventilator- und Rauchabzugsanlagen mit einem CFD-gestützten Engineering-Ansatz regelkonform.",
+        "category": "Design",
+        "badge": "Maschinenbau"
+      },
+      {
+        "slug": "cfd-analizi",
+        "excerpt": "Überprüfen Sie die Leistung Ihrer Rauchabzugs- und Lüftungssysteme vorab mit Simulationen der Strömungsmechanik in einer virtuellen Umgebung.",
+        "category": "Maschinenbau",
+        "badge": "Kritischer Prozess"
+      },
+      {
+        "slug": "fan-secimi-ve-teknik-projelendirme",
+        "excerpt": "Optimale Ventilatorauswahl je nach Durchflussmenge, Druck und Umgebungsbedingungen; Integrierte technische Projektplanung mit Kanal, Schalldämpfer und Zubehör.",
+        "category": "Projektplanung"
+      },
+      {
+        "slug": "devreye-alma",
+        "excerpt": "Wir sorgen für einen sicheren und effizienten Start, indem wir die Systeme nach der Installation auf Normkonformität prüfen.",
+        "category": "ANWENDUNG"
+      },
+      {
+        "slug": "teknik-servis",
+        "excerpt": "Wir garantieren die Kontinuität Ihrer Lüftungssysteme mit unserem rund um die Uhr unterbrechungsfreien technischen Support und unseren Notfallteams.",
+        "category": "Betrieb"
+      },
+      {
+        "slug": "bakim-ve-performans-kontrolu",
+        "excerpt": "Steigern Sie die Energieeffizienz mit regelmäßigen Wartungsplänen und senken Sie die Betriebskosten, indem Sie die Lebensdauer Ihrer Systeme verlängern.",
+        "category": "Lebenszyklus"
+      },
+      {
+        "slug": "egitim-ve-teknik-danismanlik",
+        "excerpt": "Wir bieten Ihren Betriebsteams spezielle technische Schulungen und Beratungsdienste zu Rauchschutzvorschriften an.",
+        "category": "Wissen"
+      }
+    ],
+    "cta": {
+      "sectionLabel": "Kommunikation",
+      "title": "Lassen Sie uns gemeinsam den richtigen Service für Ihr Projekt ermitteln",
+      "paragraphs": [
+        "Sie können sich an das NOVVES-Team wenden, wenn es um industrielle Lüftung, Rauchkontrollsystem, Strahlventilatorplatzierung, CFD-Analyse, Ventilatorauswahl, Inbetriebnahme oder technischen Service geht.",
+        "Lassen Sie uns gemeinsam die technischen Anforderungen Ihres Projekts bewerten; Lassen Sie uns eine sichere, effiziente und langlebige Systemlösung entwickeln."
+      ],
+      "ctaButton": "Erstellen Sie eine Serviceanfrage für Ihr Projekt"
+    }
+  },
   "cfdAnalizi": {
     "meta": {
-      "title": "CFD-Analyse | Novves",
-      "description": "NOVVES CFD-Analysen (Numerische Strömungsmechanik) – reale Szenarien, echte Daten, sichere Lösungen."
+      "title": "CFD-Analyse | Romane",
+      "description": "NOVVES CFD-Analyse – Lüftungs- und Rauchkontrolllösungen, validiert mit numerischer Strömungsmechanik."
     },
     "breadcrumb": {
       "home": "Startseite",
-      "services": "Leistungen",
+      "services": "Dienstleistungen",
       "current": "CFD-Analyse"
     },
     "hero": {
-      "badge": "Leistungen",
+      "badge": "Dienstleistungen",
       "titlePart1": "CFD",
       "titleHighlight": "Analyse",
-      "subtitle": "Reale Szenarien, echte Daten, sichere Lösungen.",
+      "subtitle": "Mit Computational Fluid Dynamics validierte Lüftungs- und Rauchkontrolllösungen.",
       "stats": [
-        { "value": "3D", "label": "Simulationsmodell" },
-        { "value": "5", "label": "Analyseparameter" },
-        { "value": "EN 12101-3", "label": "Normprüfung" }
+        {
+          "value": "3D",
+          "label": "Simulationsmodell"
+        },
+        {
+          "value": "7+",
+          "label": "Analyseparameter"
+        },
+        {
+          "value": "EN 12101-3",
+          "label": "Standardüberprüfung"
+        }
       ]
     },
-    "intro": "Bei NOVVES fertigen wir nicht nur Ventilatoren – wir liefern projektspezifische, ingenieurtechnisch fundierte Lüftungslösungen. Kern sind CFD-Analysen (Numerische Strömungsmechanik), mit denen wir unsere Auslegungen vor der Umsetzung vor Ort testen.",
+    "intro": [
+      "Als NOVVES produzieren wir nicht nur Ventilatoren, Strahlventilatoren, Entrauchungsventilatoren oder Lüftungsgeräte; Wir entwickeln projektspezifische, ingenieurwissenschaftliche Systemlösungen. Einer der wichtigsten Schritte dieses Ansatzes ist die numerische Validierung des Entwurfs mittels CFD-Analyse vor der Implementierung in die Praxis.",
+      "CFD, d. h. Computational Fluid Dynamics-Analyse; Es ermöglicht die dreidimensionale Untersuchung von Luftströmung, Rauchausbreitung, Temperaturänderung, CO-Konzentration und Ventilatorwirkung in Parkgaragen, Industrieanlagen, technischen Volumina, tunnelähnlichen Strukturen und großen geschlossenen Bereichen.",
+      "NOVVES bewertet die Platzierung der Strahlventilatoren, die Kapazität der Abluftventilatoren, die Frischluftorganisation, Rauchabsaugungsszenarien und die Systemleistung auf projektspezifischer Basis mit CFD-Analysen. Auf diese Weise werden ingenieurbasierte Entscheidungen hinsichtlich der richtigen Anzahl an Ventilatoren, der richtigen Ventilatorposition, der optimalen Energienutzung und sichereren Evakuierungsbedingungen getroffen."
+    ],
     "whyCfd": {
       "sectionLabel": "Methodik",
       "title": "Warum CFD-Analyse?",
+      "intro": "Die CFD-Analyse ermöglicht die Bewertung von Lüftungs- und Rauchkontrollsystemen auf der Grundlage tatsächlicher Projektbedingungen und nicht nur theoretischer Berechnungen.",
       "items": [
-        "Die Ventilatoranlage wird unter realen Umgebungsbedingungen simuliert.",
-        "Brandszenarien wie Rauch, Temperatur und Gas werden vorab geprüft.",
-        "Wichtige Größen wie Sichtweite, Temperaturanstieg und CO-Konzentration werden analysiert.",
-        "Normkonformität und sichere Evakuierungszeiten werden verifiziert."
+        {
+          "title": "Die Systemleistung wird vor der Bereitstellung im Feld überprüft",
+          "desc": "Leistung von Lüftersystemen; Die Simulation erfolgt unter Berücksichtigung der Projektgeometrie, der Säulenplatzierung, der Rampenpositionen, der Deckenhöhe, der Abluftpunkte und der Frischlufteinlässe."
+        },
+        {
+          "title": "Brand- und Rauchszenarien werden vorab getestet",
+          "desc": "Es wird analysiert, in welche Richtung sich der Rauch ausbreitet, in welchen Bereichen er sich konzentriert, wie er sich auf Fluchtwege auswirken kann und wie Strahlventilatoren den Rauch lenken."
+        },
+        {
+          "title": "Kritische Variablen werden mit Engineering-Daten bewertet",
+          "desc": "Parameter wie Sichtweite, Temperaturanstieg, Luftgeschwindigkeit, CO-Dichte, Rauchschicht, Totzonen und Abgaseffizienz werden numerisch untersucht."
+        },
+        {
+          "title": "Regulierungs- und sichere Evakuierungsziele werden unterstützt",
+          "desc": "CFD-Analyse; Es trägt zu zuverlässigeren Projektentscheidungen in Bezug auf Rauchschutzdesign, Parkhausbelüftung, Brandschutz und Evakuierungsszenarien bei."
+        }
       ],
-      "resultLabel": "Ergebnis",
-      "resultText": "Richtige Positionierung, richtige Ventilatoranzahl, optimaler Energieeinsatz und maximale Sicherheit."
+      "resultLabel": "Abschluss",
+      "resultText": "Ziel ist die richtige Platzierung, die richtige Lüfteranzahl, optimale Energieausnutzung und maximale Sicherheit."
     },
     "analysisTypes": {
-      "sectionLabel": "Analyseumfang",
+      "sectionLabel": "Umfang der Analyse",
       "title": "Simulationsparameter",
       "items": [
         {
-          "title": "Luftgeschwindigkeitsverteilung",
+          "title": "Fluggeschwindigkeitsverteilung",
           "subtitle": "Geschwindigkeitsanalyse",
-          "text": "Richtung, Geschwindigkeit und Verteilung der Luftströmung im geschlossenen Raum wurden dreidimensional modelliert. Ziel ist die Luftführung im gesamten Bereich unter Einfluss der Jet-Ventilatoren."
+          "text": "Richtung, Geschwindigkeit und Verteilung der Luftströmung innerhalb eines geschlossenen Raums werden dreidimensional modelliert. Es wird analysiert, ob durch die Wirkung von Strahlventilatoren für eine ausreichende Luftzirkulation in der gesamten Umgebung gesorgt ist."
         },
         {
           "title": "Temperaturänderung",
           "subtitle": "Temperaturverteilung",
-          "text": "Es wurde analysiert, wie sich die Umgebungstemperatur in Menschenhöhe während eines Brandes ändert. Kritische Temperaturgrenzen wurden bewertet und Risiken für die Notfallsteuerung identifiziert."
+          "text": "Es wird ausgewertet, wie sich die Umgebungstemperatur auf menschlicher Ebene, im Deckenbereich und in kritischen Fluchtwegen während des Brandszenarios verändert. Durch die Ermittlung kritischer Temperaturzonen werden Risiken im Hinblick auf die Notfallsicherheit aufgedeckt."
         },
         {
-          "title": "Sichtweitenbewertung",
-          "subtitle": "Sichtweitenanalyse",
-          "text": "Es wurde analysiert, wie lange Fluchtwege bei starkem Rauch sichtbar bleiben. Die Abnahme der Sichtweite wurde zur Verifikation der Evakuierungssicherheit gemessen."
+          "title": "Sichtbarkeitsbewertung",
+          "subtitle": "Sichtbarkeitsanalyse",
+          "text": "Es wird analysiert, wie lange die Sicht auf Fluchtwegen bei dichtem Rauch aufrechterhalten werden kann. Die Sichtminderung wird im Hinblick auf die Evakuierungssicherheit und die Reaktion der Feuerwehr bewertet."
         },
         {
-          "title": "Kohlenmonoxid-Ausbreitung",
+          "title": "Kohlenmonoxidfreisetzung",
           "subtitle": "CO-Konzentration",
-          "text": "Es wurde modelliert, wie sich Abgas-CO in geschlossenen Bereichen wie Parkhäusern anreichert und wie es durch die Ventilatoranlage abgeführt wird."
+          "text": "Die CO-Anreicherung durch Fahrzeugabgase wird in Bereichen wie geschlossenen Parkplätzen modelliert. Analysiert wird die zeitliche Veränderung der CO-Konzentration und die Art und Weise, wie diese durch das Ventilatorsystem abgesaugt wird."
         },
         {
-          "title": "Rauchausbreitung",
+          "title": "Rauchverbreitung",
           "subtitle": "Rauchausbreitung",
-          "text": "Richtung und Geschwindigkeit der Rauchausbreitung nach Brandbeginn und Lenkung mit Jet-Ventilatoren wurden analysiert. Rauchschichtbildung und -bewegung wurden detailliert simuliert."
+          "text": "Dabei werden die Richtung und Geschwindigkeit der Rauchausbreitung nach einem Brand, die Schichtbildung und die Lenkung mit Hilfe von Strahlventilatoren simuliert. Bewertet werden die Wirksamkeit der Abgasstellen und die Leistung der Rauchkontrollstrategie."
+        },
+        {
+          "title": "Jet-Fan-Effekt",
+          "subtitle": "Auswirkungen auf den Strahlventilator",
+          "text": "Analysiert werden die Auswirkungen von Strahlventilatoren auf den Luftstrom, ihre Fähigkeit, tote Zonen zu reduzieren, ihre Lenkleistung zu Abluftventilatoren und ihr Beitrag zur Luftbewegung innerhalb des Systems."
+        },
+        {
+          "title": "Abgas- und Frischluftbilanz",
+          "subtitle": "Luftbilanz",
+          "text": "Abluftventilatoren, Frischlufteinlässe, natürliche Öffnungen und mechanische Versorgungssysteme werden gemeinsam bewertet. Untersucht werden Systemgleichgewicht, Druckunterschiede und Lufterneuerungsleistung."
         }
       ]
     },
     "benefits": {
-      "sectionLabel": "Nutzen",
-      "title": "Ihr Vorteil mit NOVVES",
+      "sectionLabel": "Wertversprechen",
+      "title": "Was Sie mit NOVVES verdienen",
+      "intro": "Der CFD-Analyseservice von NOVVES basiert Projektentscheidungen auf technischen Daten und nicht auf intuitiven Vermutungen.",
       "items": [
-        "Nachweis der Normkonformität",
-        "Ingenieurtechnisch fundierte Entscheidungen zur Ventilatorposition",
-        "Voranalyse von Temperatur-, CO- und Sichtgrenzen für die Evakuierungssicherheit",
-        "Klare Einschätzung der Systemleistung vor der Installation",
-        "Projektbezogene technische Berichte und datengestützte Präsentation"
-      ],
-      "quote": "Gründen Sie Ihre Auslegung nicht nur auf Erfahrung, sondern auch auf Daten. Realisieren Sie sichere, leistungsstarke und optimierte Lüftungssysteme mit NOVVES Engineering.",
-      "ctaPrimary": "Projektanfrage erstellen",
-      "ctaSecondary": "Rauchmanagement-Planung"
+        "Überprüfung der Einhaltung von Vorschriften und Projektanforderungen",
+        "Technische Entscheidungen bei der Positionierung von Strahlventilatoren und Abluftventilatoren",
+        "Genauere Ventilatorplatzierung in geschlossenen Parkplatzlüftungssystemen",
+        "Leistungsbewertung von Rauchabzugssystemen je nach Brandszenario",
+        "Vorläufige Analyse der Temperatur-, CO- und Sichtgrenzen zur Evakuierungssicherheit",
+        "Klare Sicht auf die Systemleistung vor der Installation",
+        "Optimierung der Energieeffizienz und Lüfterbetriebsszenarien",
+        "Projektbasiertes technisches Reporting und datengestützte Präsentationsmöglichkeit",
+        "Stärkere technische Dokumentation für Berater, Arbeitgeber, Brandschutzberater und Projektteams"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Anwendungsbereiche",
+      "title": "In welchen Projekten nutzen wir die CFD-Analyse?",
+      "intro": "NOVVES nutzt die CFD-Analyse speziell bei Projekten, bei denen Luftstrom, Rauchbewegung und Ventilatorplatzierung von entscheidender Bedeutung sind.",
+      "items": [
+        "Projekte zur Belüftung von Innenparkplätzen",
+        "Strahlventilatorsysteme",
+        "Rauch- und Wärmeabzugsanlagen",
+        "Belüftung von Industrieanlagen",
+        "Tunnelartige Strukturen",
+        "Technische Bände",
+        "Großvolumige Gewerbebauten",
+        "Projekte, die Brandszenarien erfordern",
+        "CO-Evakuierung und Analyse der Raumluftqualität",
+        "Projektbezogene Sonderlüftungslösungen"
+      ]
+    },
+    "process": {
+      "sectionLabel": "Zeitraum",
+      "title": "NOVVES CFD-Analyseprozess",
+      "items": [
+        {
+          "title": "Sammeln von Projektdaten",
+          "desc": "Bewertet werden Architekturpläne, Geschosshöhen, Verwendungszweck, Brandszenario, Abluftstellen, Frischlufteinlässe und vorhandene Systeminformationen."
+        },
+        {
+          "title": "Modellierung und Szenarioerstellung",
+          "desc": "Die Projektgeometrie wird dreidimensional modelliert. Es werden Brandszenario, Normallüftungsszenario, CO-Evakuierungsszenario oder projektspezifische Arbeitsbedingungen ermittelt."
+        },
+        {
+          "title": "Simulation und Leistungsanalyse",
+          "desc": "Analysiert werden Luftgeschwindigkeit, Rauchausbreitung, Temperaturverteilung, Sicht, CO-Konzentration und Ventilatoreffekt. Kritische Bereiche und Systemleistung werden untersucht."
+        },
+        {
+          "title": "Berichterstattung und technische Bewertung",
+          "desc": "Analyseergebnisse werden mit Diagrammen, Querschnitten, Strömungsvisualisierungen, Szenarioausgaben und technischen Kommentaren berichtet. Bei Bedarf werden Verbesserungsvorschläge für die Lüfterplatzierung oder das Systemszenario bereitgestellt."
+        },
+        {
+          "title": "Projektunterstützung und -umsetzung",
+          "desc": "Basierend auf den CFD-Ergebnissen werden Ventilatorauswahl, Strahlventilatorplatzierung, Abluftkapazität, Frischluftorganisation und Automatisierungsszenario gemeinsam mit dem Projektteam bewertet."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "CFD-Analyse",
+      "title": "Lassen Sie uns Ihr Projekt mit CFD-Analyse überprüfen",
+      "subtitle": "Sie können sich für Ihr Parkhaus, Ihre Industrieanlage, Ihr Rauchabzugssystem, Ihr Jet-Ventilator-Projekt oder Ihre spezielle Lüftungsanwendung an das technische Team von NOVVES wenden.",
+      "paragraph": "Lassen Sie uns Ihr Projekt mit einer CFD-Analyse bewerten, bevor wir es in der Praxis anwenden. Lassen Sie uns eine sichere, effiziente und ingenieurbasierte Systemlösung schaffen.",
+      "ctaButton": "Erstellen Sie eine CFD-Analyseanfrage",
+      "secondaryLink": "Rauchschutzdesign"
     }
   },
   "devreAlma": {
     "meta": {
-      "title": "Inbetriebnahme | Novves",
-      "description": "NOVVES-Inbetriebnahme nach dem Verkauf – Montagekontrolle, Leistungstests, Optimierung und Schulung."
+      "title": "Inbetriebnahme | Romane",
+      "description": "NOVVES-Inbetriebnahmeservice – mechanische und elektrische Kontrolle vor Ort, Leistungstests, Automatisierungsüberprüfung und Berichterstattung."
     },
     "breadcrumb": {
       "home": "Startseite",
-      "services": "Leistungen",
-      "current": "Inbetriebnahme"
+      "services": "Dienstleistungen",
+      "current": "Zum Gebrauch einsetzen"
     },
     "hero": {
-      "badge": "Leistungen",
-      "titlePart1": "Inbetrieb",
-      "titleHighlight": "nahme",
-      "subtitle": "Wir garantieren den vollen Leistungsbetrieb der Anlage nach der Installation.",
+      "badge": "Dienstleistungen",
+      "titlePart1": "Inbetriebnahme",
+      "titleHighlight": "Nehmen",
+      "subtitle": "Professioneller Inbetriebnahmeservice, der die Systemleistung vor Ort überprüft.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuASo_JruCyxDVBwlCmBSQZOFpltmGjXdUxsE3roKreES2Gu2pq9zLqHMjemLJgfWv0De6KIbjxhT4oIZaLESKuWFQLhGEp8ML5gjmpBBZvYzHre4f_lmmkw90aiDCQdjUugZKThhIwssahTOGswbLWcBSTzTrnmg05kWy8eJf79tYs2afdF8tDdUn7XmqnqV94ZL70snn4wf11cok1MFL7SZiIfqChKtJjFyLjHMiDez3pjiCgq-s0bzPrSm5Vagv2Hho13FekYu9s",
       "stats": [
-        { "value": "8", "label": "Service-Schritte" },
-        { "value": "4", "label": "Phasen" },
-        { "value": "7/24", "label": "Support" },
-        { "value": "PDF", "label": "Berichte" }
+        {
+          "value": "9",
+          "label": "Serviceschritt"
+        },
+        {
+          "value": "360°",
+          "label": "Feldüberprüfung"
+        },
+        {
+          "value": "7/24",
+          "label": "Unterstützung"
+        },
+        {
+          "value": "PDF",
+          "label": "Berichterstattung"
+        }
       ]
     },
     "intro": [
-      "Bei Novves liefern wir nicht nur Qualitätsprodukte – wir garantieren auch den vollen Leistungsbetrieb nach der Installation.",
-      "Unsere Inbetriebnahme nach dem Verkauf stellt sicher, dass Kunden unsere Produkte effizient und sicher nutzen."
+      "Als NOVVES produzieren wir nicht nur hochwertige Ventilatoren, Motoren, Strahlventilatoren, Entrauchungsventilatoren, Lüftungsgeräte und HVAC-Geräte; Nach der Installation bieten wir einen professionellen Inbetriebnahmeservice an, um den korrekten, sicheren und effizienten Betrieb des Systems vor Ort sicherzustellen.",
+      "Bei der Inbetriebnahme handelt es sich nicht um die erste Inbetriebnahme des Produkts nach der Montage; Es handelt sich um einen technischen Verifizierungsprozess, der mechanische Eignung, elektrische Anschlüsse, Motordrehrichtung, Drehzahlreglereinstellungen, Automatisierungsszenarien, Sensorverbindungen, Leistungsprüfungen und Benutzerinformationen umfasst.",
+      "Technisches Service- und Inbetriebnahmeteam von NOVVES; Es steuert den Betrieb des Systems gemäß den Projektbedingungen in geschlossenen Parkplatzlüftungssystemen, Strahlventilatorsystemen, Rauch- und Wärmeabzugsventilatoren, Axialventilatoren, Industrieventilatoren, MCC-Bedienfeldern, Lüftungsgeräten und kühlerunterstützten HVAC-Projekten.",
+      "Ordnungsgemäße Inbetriebnahme; Es erhöht die Systemeffizienz, erkennt mögliche Installationsfehler frühzeitig, unterstützt die Produktlebensdauer und sorgt für reibungslosere After-Sales-Prozesse."
     ],
     "serviceSteps": {
-      "sectionLabel": "Ablauf",
-      "title": "Leistungsinhalt",
+      "sectionLabel": "Zeitraum",
+      "title": "Serviceinhalt",
       "items": [
-        { "step": "Montagekontrolle des Produkts und Prüfung der mechanischen Konformität", "phase": "Kontrolle" },
-        { "step": "Prüfung von elektrischen Anschlüssen und Erdung", "phase": "Kontrolle" },
-        { "step": "Erster Ventilatorstart und Prüfung der Drehrichtung", "phase": "Start" },
-        { "step": "Einstellung von Drehzahlregler / Frequenzumrichter", "phase": "Start" },
-        { "step": "Grundlegende Leistungstests zu Volumenstrom, Druck, Temperatur", "phase": "Test" },
-        { "step": "Optimierung des Ventilators an Umgebungsbedingungen", "phase": "Test" },
-        { "step": "Kurze Schulung zur Bedienung und Basiswartung für den Nutzer", "phase": "Schulung" },
-        { "step": "Dokumentation aller Tests und Verfahren mit Inbetriebnahmeprotokoll", "phase": "Bericht" }
+        {
+          "title": "Konformitätsprüfung der mechanischen Baugruppe",
+          "desc": "Aus mechanischer Sicht werden der Montageaufbau der Produkte und ihre Einsatzbereitschaft im Feld untersucht."
+        },
+        {
+          "title": "Elektrische Anschlussprüfung",
+          "desc": "Bewertet werden Motoranschlüsse, Schalttafelanschlüsse, Verkabelung, Erdung, Schutzelemente, Energieversorgung und elektrische Verträglichkeit."
+        },
+        {
+          "title": "Überprüfung des Startvorgangs und der Motorrichtung",
+          "desc": "Die Erstinbetriebnahme der Ventilatoren ist abgeschlossen. Motordrehrichtung, Luftstromrichtung, ungewöhnliche Geräusche, Vibrationen, Reibung oder mechanische Mängel werden überprüft."
+        },
+        {
+          "title": "Geschwindigkeitsregelung und Frequenzumrichtereinstellungen",
+          "desc": "In Systemen mit VFD/Frequenzumrichter werden grundlegende Parameter, Betriebsfrequenz, Drehzahlregelbereiche und Systembetriebsszenarien überprüft."
+        },
+        {
+          "title": "Automatisierung und Szenariosteuerung",
+          "desc": "Je nach Projektszenario werden Strahlventilatorsysteme, Entrauchungsventilatoren, Abluftventilatoren, Frischluftventilatoren, CO-Sensoren, Brandmeldesignale, MCC-/DDC-Panels und die BMS-Integration getestet."
+        },
+        {
+          "title": "Leistungskontrollen",
+          "desc": "Wichtige Leistungsindikatoren wie Durchflussrate, Druck, Temperatur, Vibration, Schallpegel, Betriebsstrom, Motorlast und Systemverhalten werden entsprechend den Feldbedingungen bewertet."
+        },
+        {
+          "title": "Optimierung",
+          "desc": "Der Betriebsmodus der Ventilatoren, die Drehzahlregelung, das Automatisierungsszenario und die Feldbedingungen werden gemeinsam bewertet und die notwendigen Einstellungen vorgenommen, damit das System effizienter und stabiler arbeitet."
+        },
+        {
+          "title": "Benutzerinformationen",
+          "desc": "Betriebs-, Wartungs- oder Technikteams werden über das Funktionsprinzip des Systems, grundlegende Nutzungsschritte, zu berücksichtigende Punkte und Wartungsbedürfnisse informiert."
+        },
+        {
+          "title": "Berichterstattung",
+          "desc": "Kontrollen, Tests, Einstellungen und Beobachtungen werden protokolliert. Bei Bedarf wird ein Inbetriebnahmeformular, ein technischer Servicebericht oder eine Feldbewertungsnotiz erstellt."
+        }
       ]
     },
     "whyImportant": {
       "sectionLabel": "Vorteile",
-      "title": "Warum ist das wichtig?",
+      "title": "Warum ist die Inbetriebnahme wichtig?",
       "items": [
-        { "title": "Garantieaktivierung", "text": "Aktivierung der Garantiezeit" },
-        { "title": "Fehlervermeidung", "text": "Vermeidung von Fehlern durch Montagefehler" },
-        { "title": "Effizienz", "text": "Verbesserung der Energieeffizienz und der Gerätelebensdauer" },
-        { "title": "Optimierung", "text": "Betrieb des Ventilators optimal an Umgebungsbedingungen angepasst" }
+        {
+          "title": "Unterstützt den reibungslosen Start des Garantieprozesses",
+          "text": "Der Inbetriebnahmeprozess hilft zu überprüfen, ob das Produkt korrekt installiert ist und unter geeigneten Betriebsbedingungen verwendet wird. Dies gewährleistet eine bessere Verwaltung der Garantie- und After-Sales-Prozesse."
+        },
+        {
+          "title": "Erkennt Installationsfehler frühzeitig",
+          "text": "Fehler im mechanischen Aufbau, im elektrischen Anschluss, in der Motordrehrichtung, in den Einstellungen des Frequenzumrichters oder in Automatisierungsszenarien können erkannt werden, bevor die Anlage in Betrieb geht."
+        },
+        {
+          "title": "Erhöht die Systemeffizienz",
+          "text": "Korrekt in Betrieb genommene Ventilator- und Lüftungssysteme; Es liefert effizientere Ergebnisse in Bezug auf Energieverbrauch, Luftstrom, Druckausgleich, Schallpegel und langlebigen Betrieb."
+        },
+        {
+          "title": "Reduziert das Risiko einer Fehlfunktion",
+          "text": "Bei der Erstinbetriebnahme durchgeführte Kontrollen; Es reduziert Risiken, die durch übermäßigen Strom, Rückwärtsdrehung, Vibration, falschen Anschluss, falsche Geschwindigkeitseinstellung oder Feldbedingungen entstehen können."
+        },
+        {
+          "title": "Validiert Automatisierungsszenarien",
+          "text": "Bei Rauchkontrollsystemen, Jet-Ventilator-Systemen und Lüftungsanwendungen für geschlossene Parkplätze ist es von entscheidender Bedeutung, dass die Ventilatoren entsprechend dem richtigen Szenario arbeiten. Im Rahmen der Inbetriebnahme werden Automatisierungs- und Steuerungsszenarien im Feld getestet."
+        },
+        {
+          "title": "Bietet dem Benutzer sichere Geschäftsinformationen",
+          "text": "Die korrekte Information der technischen Teams, die das System nutzen werden, trägt zu regelmäßigeren Wartungsabläufen und dem sicheren Betrieb des Systems bei."
+        }
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Umfang",
+      "title": "Welche Systeme deckt der Novves-Inbetriebnahmeservice ab?",
+      "items": [
+        "Strahlventilatorsysteme",
+        "Rauch- und Wärmeabzugsventilatoren",
+        "Axialventilatoren",
+        "Industrieventilatoren",
+        "Dachventilatoren",
+        "Handy-Fans",
+        "Abluft- und Frischluftventilatoren",
+        "MCC/DDC-Steuerplatinen",
+        "Belüftungssysteme für Innenparkplätze",
+        "Rauchkontrollsysteme",
+        "Anwendungen für Lüftungsgeräte",
+        "Kältemaschinenunterstützte HVAC-Systeme",
+        "Projektbezogene Sonderlüftungssysteme"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Inbetriebnahme mit NOVVES",
+      "title": "Ganzheitliche technische Koordination",
+      "paragraphs": [
+        "Novves-Inbetriebnahmeservice; Die Umsetzung erfolgt unter Koordination der Produktions-, technischen Büro-, Automatisierungs-, Außendienst- und After-Sales-Supportteams. Auf diese Weise werden alle Prozesse ganzheitlich bewertet, von der technischen Gestaltung des Produkts bis hin zu den tatsächlichen Arbeitsbedingungen im Feld.",
+        "Nach der Inbetriebnahme wird der Betriebszustand der Anlage überprüft, notwendige Einstellungen vorgenommen, dem Nutzer grundlegende Informationen zur Verfügung gestellt und der Prozess protokolliert."
       ]
     },
     "cta": {
-      "sectionLabel": "Serviceanfrage",
-      "title": "Kontaktieren Sie uns zur Inbetriebnahme",
-      "contactForm": "Kontaktformular",
-      "weekdays": "Werktags 08:30 – 18:00",
-      "emailSupport": "Technischer Support per E-Mail"
+      "sectionLabel": "Zum Gebrauch einsetzen",
+      "title": "Beginnen wir mit der sicheren Ausführung Ihres Projekts",
+      "subtitle": "Sie können vom technischen Team von NOVVES Unterstützung bei der Inbetriebnahme Ihres Ventilators, Strahlventilators, Rauchabzugssystems, Automatisierungspanels, Lüftungsgeräts oder HVAC-Projekts erhalten.",
+      "ctaButton": "Erstellen Sie eine Inbetriebnahmeanfrage",
+      "contactForm": "Erstellen Sie eine Inbetriebnahmeanfrage"
     }
   },
   "dumanKontrol": {
     "meta": {
-      "title": "Rauchmanagement-Planung | Novves",
-      "description": "Jet-Ventilator-Systemplanung – Luftführung, Abgasableitung und Rauchmanagement in geschlossenen Parkhäusern."
+      "title": "Design von Rauchkontrollsystemen | Romane",
+      "description": "Design von NOVVES-Rauchschutzsystemen – Strahlventilator, Rauchabsaugung und technikorientierte Lösungen für Tiefgaragen und großvolumige Gebäude."
     },
     "breadcrumb": {
       "home": "Startseite",
-      "services": "Leistungen",
-      "current": "Rauchmanagement"
+      "services": "Dienstleistungen",
+      "current": "Rauchkontrolle"
     },
     "hero": {
-      "badge": "Leistungen",
-      "titlePart1": "Rauchmanagement",
-      "titleHighlight": "Systemplanung",
+      "badge": "Dienstleistungen",
+      "titlePart1": "Rauchkontrolle",
+      "titleHighlight": "Systemdesign",
+      "subtitle": "Ingenieursorientierte Rauchschutzlösungen für Parkgaragen und großvolumige Bauten.",
+      "imageSrc": "/images/hizmetler/duman-kontrol-tasarimi.png",
       "stats": [
-        { "value": "EN 12101-3", "label": "Normkonformität" },
-        { "value": "300°C / 2h", "label": "Feuerwiderstand" },
-        { "value": "CFD", "label": "Simulationsgestützt" }
+        {
+          "value": "EN 12101-3",
+          "label": "Standardkonformität"
+        },
+        {
+          "value": "300°C / 2h",
+          "label": "Feuerwiderstand"
+        },
+        {
+          "value": "CFD",
+          "label": "Simulation unterstützt"
+        }
       ]
     },
     "intro": [
-      "Das Jet-Ventilator-System ist eine mechanische Lüftungsanlage zur Luftführung, Abgasableitung und Rauchsteuerung bei Brand in geschlossenen Parkhäusern.",
-      "Es basiert auf angepassten Tunnel-Lüftungstechnologien und wird besonders in großen, komplexen Parkstrukturen eingesetzt.",
-      "Jet-Ventilatoren erzeugen durch hohe Ausblasgeschwindigkeit Luftbewegung über große Flächen und fördern die Luftmasse vor ihnen. Schädliche Gase wie CO aus dem Verkehr werden effektiv abgeführt. Bei Brand verhindern Jet-Ventilatoren die Rauchausbreitung, sichern Fluchtwege und unterstützen die Feuerwehr."
+      "NOVVES bietet Dienstleistungen zur Planung von Rauchkontrollsystemen für Parkgaragen, Industrieanlagen, technische Räume, tunnelartige Strukturen und große geschlossene Bereiche an. Dieser Dienst; Es beschränkt sich nicht nur auf die Auswahl der Fans. Durch die gemeinsame Bewertung der architektonischen Struktur des Projekts, des Brandszenarios, der Luftströmungsrichtungen, der Fluchtwege, der Abluftpunkte, des Frischluftbedarfs, der Automatisierungsszenarien und der Feldbedingungen wird ein ganzheitliches Systemdesign erstellt.",
+      "Strahlventilatorsysteme; Dabei handelt es sich um moderne mechanische Lüftungslösungen, die dazu dienen, den Luftstrom in Parkgaragen zu lenken, Abgase aus Fahrzeugen abzuleiten und im Brandfall für eine kontrollierte Rauchableitung zu sorgen. NOVVES analysiert diese Systeme projektspezifisch, ermittelt die richtige Ventilatorplatzierung und unterstützt das Rauchschutzszenario mit Engineering-Daten.",
+      "Das Hauptziel bei der Entwicklung von Rauchkontrollsystemen ist: Zum Schutz der Raumluftqualität unter normalen Arbeitsbedingungen, zur Begrenzung der unkontrollierten Rauchausbreitung im Brandfall, zur Unterstützung der Sicherheit von Fluchtwegen und zur Schaffung einer Luftführungsorganisation, die das Eingreifen der Feuerwehren erleichtert."
     ],
+    "approach": {
+      "sectionLabel": "Designansatz",
+      "title": "NOVVES Rauchschutz-Designansatz",
+      "intro": "Beim Rauchschutzdesign für NOVVES geht es nicht nur um die Platzierung der Ausrüstung; Es ist ein wichtiger Teil der Sicherheitsstrategie des Projekts. Folgende Elemente werden in jedem Projekt gemeinsam bewertet:",
+      "items": [
+        "Parkhaus oder Gebäudegeometrie",
+        "Informationen zur Bodenhöhe und zum Volumen",
+        "Fahrzeugdichte und Nutzungsszenario",
+        "Brandszenario und mögliche Richtungen der Rauchausbreitung",
+        "Fluchtwege, Rampen, Schächte und kritische Zugangspunkte",
+        "Platzierung von Strahlventilator, Abluftventilator und Frischluftventilator",
+        "Standort der CO-, Rauch- und Wärmesensoren",
+        "MCC/DDC-Schaltschrank- und Automatisierungsszenarien",
+        "BMS-Integration",
+        "Bedarf an CFD-Analyse",
+        "Anforderungen an Vorschriften, Standards und Projektspezifikationen",
+        "Installations-, Wartungs- und Inbetriebnahmebedingungen"
+      ],
+      "closing": "Dank dieses Ansatzes wird das System nicht nur anhand theoretischer Berechnungen, sondern auch anhand realer Feldbedingungen und des Luftbewegungsverhaltens zum Zeitpunkt des Brandes bewertet."
+    },
     "components": {
       "sectionLabel": "Systemarchitektur",
-      "title": "Komponenten des Jet-Ventilator-Systems",
+      "title": "Komponenten des Jet-Fan-Systems",
       "items": [
         {
-          "title": "Jet-Ventilatoren",
-          "text": "Hauptkomponente der Anlage. Deckenmontage. Erzeugt Luftführung zur Zuführung verunreinigter Luft zu Abluftventilatoren. Axial und radial. Axial ein- oder zweirichtungsbetrieb möglich."
+          "title": "Jet-Fans",
+          "text": "Strahlventilatoren sind die Hauptluftführungselemente des Systems. An der Decke montiert, erzeugt es einen Hochgeschwindigkeitsluftstrom und leitet verschmutzte Luft oder Rauch zu den Abluftpunkten. Je nach Projektanforderung können Axialstrahlventilatoren oder Radialstrahlventilatoren eingesetzt werden. Axialstrahlventilatoren können nach dem ein- oder zweiseitigen Wirkprinzip ausgewählt werden."
         },
         {
           "title": "Abluftventilatoren",
-          "text": "Führt die von Jet-Ventilatoren gelenkte verunreinigte oder verrauchte Luft kontrolliert nach außen."
+          "text": "Abluftventilatoren leiten verschmutzte Luft, CO-Konzentration oder im Brandfall entstehenden Rauch durch Strahlventilatoren kontrolliert in die Außenumgebung ab. In Rauchabsaugszenarien werden Temperaturbeständigkeit, Durchflussleistung und Betriebszeit der Ventilatoren entsprechend den Projektbedingungen bewertet."
         },
         {
-          "title": "Zuluftventilatoren",
-          "text": "Dienen der Überdruckhaltung für Frischluft und verhindern Rauch auf Fluchtwegen, wenn natürliche Öffnungen fehlen oder ungünstig liegen."
+          "title": "Frischluftventilatoren",
+          "text": "Frischluftventilatoren werden eingesetzt, wenn natürliche Öffnungen nicht ausreichen oder die Frischluftzufuhr nicht in der gewünschten Richtung erfolgen kann. Diese Ventilatoren unterstützen den Lufthaushalt des Systems und tragen zur Organisation von Druck und Luftbewegung bei, um zu verhindern, dass Rauch in die Fluchtwege geleitet wird."
         },
         {
           "title": "Sensoren",
-          "text": "CO-, Rauch- und Temperatursensoren erfassen zoneweise Daten und übermitteln sie gemäß Grenzwerten an das MSR-Schaltfeld."
+          "text": "CO-Sensoren, Rauchsensoren, Wärmemeldeelemente und zugehörige Feldgeräte erzeugen Daten für die Automatisierungsinfrastruktur des Systems. Abhängig von den ermittelten Grenzwerten und Brandszenarien werden die Informationen der Sensoren an die Zentrale übermittelt."
         },
         {
-          "title": "Automatisierung und Steuerung (MSR-Schaltfeld)",
-          "text": "Automatische Ventilatoraktivierung auf Sensordaten. Bei Brand gemäß festgelegten Szenarien. PLC-gesteuert, BMS-Integration möglich."
+          "title": "Automatisierungs- und Steuerungssystem",
+          "text": "MCC-/DDC-Bedienpanels sorgen dafür, dass Strahlventilatoren, Abluftventilatoren, Frischluftventilatoren und Sensoren entsprechend dem Szenario arbeiten. System; Es kann je nach Betriebsszenario wie normaler Belüftung, CO-Absaugung und Brandmodus automatisch aktiviert werden. Bei Bedarf kann es in das Gebäudemanagementsystem integriert werden."
         }
       ]
     },
     "advantages": {
-      "sectionLabel": "Warum Jet-Ventilator?",
+      "sectionLabel": "Warum Jet-Fan-System?",
       "title": "Systemvorteile",
-      "subtitle": "Jet-Ventilator-Systeme bieten gegenüber klassischen Kanalsystemen große Vorteile – besonders in geschlossenen Parkhäusern und Tunneln.",
       "items": [
-        { "title": "Kein Kanal erforderlich", "text": "Jet-Systeme lenken Luft direkt – keine Luftkanäle, Gitter oder Diffusoren nötig." },
-        { "title": "Platzersparnis", "text": "Bei niedriger Deckenhöhe nehmen Kanalsysteme viel Platz. Jet-Ventilatoren sind kompakt." },
-        { "title": "Energieeffizienz", "text": "Mit CO-Sensoren nur bei Bedarf in Betrieb; variable Drehzahlen für optimierten Energieeinsatz." },
-        { "title": "Rauch- und Wärmeabfuhr unter Kontrolle", "text": "Hohe Drehzahl bei Brand steuert Rauchausbreitung, sichert Fluchtwege und unterstützt die Brandbekämpfung." },
-        { "title": "Geringe Wartungskosten", "text": "Ohne Kanalsystem einfachere Reinigung und Wartung; weniger Teile, weniger Ausfallrisiko." },
-        { "title": "Flexible Positionierung", "text": "Anpassung an Architektur; spätere Umbauten der Anlage sind einfacher." },
-        { "title": "Niedrigere Investitionskosten", "text": "Weniger Kanäle, Gitter, Diffusoren – geringere Erstinvestition als bei klassischen Systemen." }
+        {
+          "title": "Reduziert den Kanalbedarf",
+          "text": "Da Strahlventilatorsysteme durch Luftlenkung arbeiten, bieten sie eine flexiblere Lösung als herkömmliche Kanallüftungssysteme. Auf diese Weise kann der Bedarf an breiten Kanalleitungen und zahlreichen Gittern oder Diffusoren reduziert werden."
+        },
+        {
+          "title": "Spart Platz",
+          "text": "Deckenhöhe und Nutzvolumen sind in Parkhäusern von entscheidender Bedeutung. Dank ihrer kompakten Bauweise nehmen Strahlventilatoren weniger Platz ein und tragen zu einer effizienteren Nutzung des architektonischen Raums bei."
+        },
+        {
+          "title": "Unterstützt Energieeffizienz",
+          "text": "Bei der Arbeit mit CO-Sensoren und Automatisierungssystemen können Strahlventilatoren nur bei Bedarf aktiviert werden. Durch variable Drehzahlregelung und szenariobasierten Betrieb kann der Energieverbrauch optimiert werden."
+        },
+        {
+          "title": "Steuert die Rauch- und Wärmeableitung",
+          "text": "Im Brandfall hilft das Jet-Ventilator-System dabei, die unkontrollierte Rauchausbreitung zu reduzieren und den Rauch zu den vorgesehenen Abzugsstellen zu leiten. Dieser Ansatz unterstützt die Sicherheit von Fluchtwegen und trägt zu einer kontrollierteren Brandbekämpfung bei."
+        },
+        {
+          "title": "Bietet einfache Wartung und Bedienung",
+          "text": "Mit abnehmender Kanaldichte lassen sich Reinigungs-, Wartungs- und Zugangsprozesse einfacher bewältigen. Weniger mechanische Komponenten vereinfachen die Organisation der Wartung im Betriebsprozess."
+        },
+        {
+          "title": "Passt sich leicht an die architektonische Struktur an",
+          "text": "Jet-Ventilator-Systeme können je nach Parkplatzgeometrie, Rampenposition, Säulenplatzierung und Deckenhöhe flexibel gestaltet werden. Auf diese Weise können anwendbare Lösungen in neuen Projekten und bestehenden Strukturen entwickelt werden."
+        },
+        {
+          "title": "Optimiert die anfänglichen Investitions- und Betriebskosten",
+          "text": "Richtig konzipierte Strahlventilatorsysteme; Es kann die anfänglichen Investitionskosten optimieren, indem der Bedarf an Kanälen, Gittern und Diffusoren reduziert wird. Automatisierungsgestützte Arbeitsszenarien tragen zum Management langfristiger Energie- und Betriebskosten bei."
+        }
       ]
     },
     "designFactors": {
-      "sectionLabel": "Engineering",
-      "title": "Wichtige Auslegungsfaktoren",
+      "sectionLabel": "Maschinenbau",
+      "title": "Wichtige Faktoren im Design",
+      "intro": "Damit das Rauchkontrollsystem effizient und sicher funktioniert, müssen alle architektonischen, mechanischen, elektrischen und betrieblichen Bedingungen bereits in der ersten Entwurfsphase gemeinsam bewertet werden.",
+      "paragraphs": [
+        "Platzierung von Axialventilatoren, Rauch- und Wärmeabzugsventilatoren, Frischluftventilatoren und Strahlventilatoren im Strahlventilatorprojekt; Bei der Planung sollten der Geräuschpegel, die Notwendigkeit einer Luftlenkung, das Fehlen toter Zonen, in die die Frischluft nicht gelangen kann, die einfache Installation, der Zugang für Wartungsarbeiten, die Sicherheit der Fluchtwege und die Rauchableitungsstrategie im Brandfall berücksichtigt werden.",
+        "In geschlossenen Parkhäusern wirken sich Fahrzeugabgase, CO-Konzentration, Nutzerverkehr, Fahrzeugverkehr, Rampen, Säulen, Schächte, Türöffnungen und natürliche Belüftungsmöglichkeiten direkt auf die Luftbewegung aus. Daher ist die korrekte Positionierung der Strahlventilatoren von entscheidender Bedeutung, damit das System den Luftstrom möglichst effizient lenken kann.",
+        "Bei einem Brandszenario geht es darum, die unkontrollierte Rauchausbreitung zu verhindern und möglichst sichere Evakuierungsbedingungen zu schaffen. Aus diesem Grund sollte das Betriebsszenario der Ventilatoren, Sensorstandorte, Automatisierungstafel, Brandmeldeanlage und Gebäudemanagementsystemintegration gemeinsam geplant werden.",
+        "In notwendigen Projekten wird die CFD-Analyse eingesetzt, um Luftströmung, Rauchausbreitung, Jet-Fan-Effekt, Totzonen, Abgaspunkte und Evakuierungsszenarien numerisch zu bewerten. CFD-gestütztes Design hilft bei der Überprüfung der Lüfterplatzierung und der Analyse der Systemleistung auf Projektbasis."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Rauchschutzdesign mit NOVAVES",
+      "title": "Unser Leistungsumfang",
+      "intro": "NOVVES bietet Produktions-, Engineering-, CFD-Analyse-, Automatisierungs-, Inbetriebnahme- und technische Kundendienstfunktionen für die Entwicklung von Rauchkontrollsystemen unter einem Dach.",
       "items": [
-        "Maßnahmen für effizienten Betrieb werden von Anfang an geplant und die Anordnung berücksichtigt alle Randbedingungen.",
-        "Bei Jet-Ventilator-Projekten fließen Schallpegel, Luftführungsplanung, Vermeidung von Totzonen ohne Frischluft, Montagefreundlichkeit und Erreichbarkeit von Fluchtwegen bei Brand in die Platzierung von Axial- und Jet-Ventilatoren ein.",
-        "Auslegung muss ausreichende Luftwechsel und Strömung unter Berücksichtigung von Abgas, Fußgängerverkehr und weiteren Faktoren sicherstellen. Jet-Ventilatoren müssen optimal positioniert werden."
+        "Entwurf zur Rauchbekämpfung in einer Parkgarage",
+        "Layout des Jet-Fan-Systems",
+        "Auswahl des Rauch- und Wärmeabzugsventilators",
+        "Auswahl des Abluft- und Frischluftventilators",
+        "Bewertung von CO-, Rauch- und Wärmesensorszenarien",
+        "Unterstützung für MCC/DDC-Steuerplatinenszenarien",
+        "BMS-Integrationsansatz",
+        "CFD-gestützte Luftströmungs- und Rauchausbreitungsanalyse",
+        "Technische Dokumentation und Projektunterstützung",
+        "Inbetriebnahme vor Ort und technischer Service-Support"
       ]
     },
     "cta": {
-      "sectionLabel": "Für Ihr Projekt",
-      "title": "Unterstützung bei der Rauchmanagement-Planung",
-      "cfdLink": "CFD-Analyse",
-      "supportButton": "Technischer Support"
+      "sectionLabel": "Rauchschutzdesign",
+      "title": "Lassen Sie uns das richtige Rauchkontrollsystem für Ihr Projekt entwerfen",
+      "subtitle": "NOVVES entwickelt sichere, effiziente und nachhaltige Rauchschutzlösungen durch die Analyse der architektonischen und technischen Bedingungen Ihres Projekts.",
+      "paragraph": "Wenn Sie ein Strahlventilatorsystem, einen Rauchabzugsventilator, eine CFD-Analyse oder ein Rauchkontrolldesign für Ihr Parkhaus, Ihre Industrieanlage oder Ihr großvolumiges Bauwerk benötigen, können Sie sich an unser technisches Team wenden.",
+      "ctaButton": "Erstellen Sie eine Designanfrage für den Rauchschutz",
+      "cfdLink": "CFD-Analyse"
     }
   },
   "teknikServis": {
     "meta": {
-      "title": "Technischer Service | Novves",
-      "description": "NOVVES technischer Service – Support nach dem Verkauf, Störungsbehebung, Ersatzteile und Wartung."
+      "title": "Technischer Service | Romane",
+      "description": "Technischer Service von NOVVES – Kundendienst, Fehlerdiagnose, Vor-Ort-Service, Ersatzteile und Wartungsdienste."
     },
     "breadcrumb": {
       "home": "Startseite",
-      "services": "Leistungen",
+      "services": "Dienstleistungen",
       "current": "Technischer Service"
     },
     "hero": {
-      "badge": "Leistungen",
-      "titlePart1": "Technischer",
+      "badge": "Dienstleistungen",
+      "titlePart1": "Technisch",
       "titleHighlight": "Service",
-      "subtitle": "Schnelle Reaktion, zuverlässige Lösung.",
-      "weekdays": "Werktags 08:30 – 18:00",
+      "subtitle": "Kundendienst, Fehlerdiagnose und Außendienst.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxMeEHI938GIPBawznnHJ6x-kYcgHaWpo7_y-tA45eMLw1dyeWfXXQBpCwEMANg3xFir1BVv2FvVPmirhn-b4X9ul6YnVOKv9MB3UpQFZ0q2SP9FJy10ZgIbYjHLJaI3_lh28-9sUCR6Hr_mfEskGE8ZYUVySQcLt_x1PQzzeF3GGizQ3xAhnrzwB9H5OHa44K6JxUM4zTsxQmwNZtsJeHi-uacZe64iuYrnFAP9LU3XBpJ4wbk0KXrbGtNtq3-uVCmu_EqwmJnLE",
+      "weekdays": "Werktags 08:30 – 18:00 Uhr",
       "emailSupport": "Technischer Support per E-Mail"
     },
-    "intro": "Der technische Service von Novves unterstützt Sie schnell und wirksam bei Support nach dem Verkauf, Störungen, Ersatzteilen und Wartung.",
+    "intro": [
+      "Technische Serviceabteilung von NOVVES; Es bietet technische Kundendienstdienstleistungen für Ventilatorsysteme, Strahlventilatoren, Entrauchungsventilatoren, Axialventilatoren, Industrieventilatoren, Lüftungsgeräte, kühlerunterstützte HVAC-Systeme, Schalttafeln und Automatisierungslösungen.",
+      "Als NOVVES produzieren wir nicht nur Produkte; Wir unterstützen unsere Kunden bei der Inbetriebnahme, Fehlerdiagnose, Wartung, Ersatzteilversorgung, Leistungskontrolle und technischen Dokumentationsprozessen, um den korrekten, sicheren und effizienten Betrieb unserer Produkte im Feld zu unterstützen.",
+      "Unser technischer Serviceansatz; Es basiert auf schneller Reaktion, genauer Fehleranalyse, technischer Bürounterstützung, Erfahrung vor Ort und Herstellerwissen. Somit werden Serviceanfragen nicht nur mit temporären Eingriffen bewertet, sondern aus einer ingenieurtechnischen Perspektive, die auf einen dauerhaften und sicheren Betrieb der Anlage abzielt."
+    ],
     "serviceTypes": {
-      "sectionLabel": "Leistungsumfang",
+      "sectionLabel": "Unser Leistungsumfang",
       "title": "Serviceanfragen",
       "items": [
-        "Beratung zu Installation und Inbetriebnahme",
-        "Störungserkennung und Service vor Ort",
-        "Planung periodischer Wartung und Inspektion",
-        "Ersatzteilanfragen",
-        "Produktnutzung und technische Dokumentation"
+        {
+          "title": "Installations- und Inbetriebnahmeberatung",
+          "desc": "Nach der Installation eines Ventilators, Strahlventilators, Entrauchungsventilators, Lüftungsgeräts, Kühlers oder Automatisierungssystems wird technischer Support für die mechanische Installation, den elektrischen Anschluss, die Motorrichtung, die Geschwindigkeitsregelung und grundlegende Bedienelemente bereitgestellt."
+        },
+        {
+          "title": "Fehlerdiagnose und Vor-Ort-Service",
+          "desc": "In Fällen wie Geräuschen, Vibrationen, Überhitzung, geringer Leistung, Motorschaden, Bedienfeldalarm, Sensorfehler oder Betriebsunregelmäßigkeiten im System wird die Fehlerquelle technisch ausgewertet."
+        },
+        {
+          "title": "Periodische Wartungs- und Kontrollplanung",
+          "desc": "Der regelmäßige Wartungsbedarf von Lüfter-, Motor-, Automatisierungs- und Lüftungssystemen wird bewertet. Durch periodische Kontrollprozesse wird das Ausfallrisiko reduziert und die Systemleistung und Betriebssicherheit unterstützt."
+        },
+        {
+          "title": "Ersatzteilanfragen",
+          "desc": "Geeignete Ersatzteile werden anhand des Produktmodells, der Seriennummer und der Projektinformationen ermittelt. Es wird technischer Support für Motor, Propeller, Anschlussgeräte, Bedienelemente, Sensoren und Systemkomponenten geleistet."
+        },
+        {
+          "title": "Unterstützung bei Produktnutzung und technischer Dokumentation",
+          "desc": "Anfragen nach Benutzerhandbüchern, Wartungsanweisungen, technischen Datenblättern, Produktetiketten, Zertifizierungsinformationen, Leistungsdaten oder Projektdokumenten werden vom technischen Team bewertet."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Zeitraum",
+      "title": "Technischer Serviceprozess",
+      "items": [
+        {
+          "title": "Empfangen einer Serviceanfrage",
+          "desc": "Vom Kunden eingereichte Störungen, Wartungs-, Ersatzteil-, Inbetriebnahme- oder technische Supportanfragen werden erfasst."
+        },
+        {
+          "title": "Vorläufige technische Bewertung",
+          "desc": "Untersucht werden Produktmodell, Seriennummer, Projektinformationen, Fehlerbeschreibung, Fotos, Videos und ggf. frühere Serviceaufzeichnungen."
+        },
+        {
+          "title": "Überprüfung des technischen Büros",
+          "desc": "Das technische Büro von NOVVES bewertet die Anfrage im Hinblick auf Produktinformationen, Feldbedingungen, elektromechanische Eignung, Automatisierungsszenario und Systembetriebsprinzip."
+        },
+        {
+          "title": "Fernunterstützung oder Feldplanung",
+          "desc": "Je nach Art der Anfrage kann eine technische Fernberatung erfolgen oder ein Servicebesuch vor Ort geplant werden."
+        },
+        {
+          "title": "Fehlerdiagnose und Intervention",
+          "desc": "Notwendige Kontrollen werden vor Ort durchgeführt. Bewertet werden mechanische Montage, elektrische Anschlüsse, Motorbetriebszustand, Lüfterrichtung, Panelsignale, Sensoren, Vibration und Leistungswerte."
+        },
+        {
+          "title": "Ersatzteile und Lösungsvorschläge",
+          "desc": "Bei Bedarf werden passende Ersatzteile, Wartungsarbeiten, Anpassungsänderungen, Revisionen oder Systemverbesserungen angeboten."
+        },
+        {
+          "title": "Berichterstattung",
+          "desc": "Die Prüfung, Erkennung, Intervention und Vorschläge werden mit einem Serviceformular oder einem technischen Bericht festgehalten."
+        }
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Vorteile",
+      "title": "Warum der technische Service von NOVVES?",
+      "items": [
+        {
+          "title": "Schnelle Rückgabe",
+          "text": "Ihre Serviceanfragen werden von unserem technischen Team bewertet und so schnell wie möglich beantwortet."
+        },
+        {
+          "title": "Eingriff mit Herstellerinformationen",
+          "text": "Das Team, das die NOVVES-Produkte am besten kennt, ist das technische Büro und der Außendienst des Herstellers. Auf diese Weise verläuft der Fehlerdiagnose- und Lösungsprozess genauer."
+        },
+        {
+          "title": "Technische Bürounterstützung",
+          "text": "Bei Serviceanfragen handelt es sich nicht nur um Einsätze vor Ort; Bei Bedarf wird es zusammen mit Engineering-, Produktauswahl-, Automatisierungs-, Ersatzteil- und Projektinformationen ausgewertet."
+        },
+        {
+          "title": "Reduzierung des Ausfallrisikos",
+          "text": "Regelmäßige Wartung und korrekte technische Kontrolle tragen dazu bei, unerwartete Stopps und Leistungsverluste in Lüftersystemen zu reduzieren."
+        },
+        {
+          "title": "Aufrechterhaltung der Systemleistung",
+          "text": "Korrekter Service, korrekte Wartung und Verwendung der richtigen Ersatzteile; Es unterstützt die Energieeffizienz, Betriebssicherheit und dauerhafte Leistungsfähigkeit der Anlage."
+        },
+        {
+          "title": "After-Sales-Vertrauen",
+          "text": "NOVVES betrachtet die Unterstützung seiner Kunden nach der Produktlieferung als einen wichtigen Teil seines unternehmerischen Serviceansatzes."
+        }
       ]
     },
     "form": {
       "sectionLabel": "Anfrage",
-      "title": "Formular technischer Service",
-      "description": "Senden Sie Ihre Serviceanfrage über das Formular. Unser Team meldet sich schnellstmöglich.",
+      "title": "Technisches Serviceformular",
+      "subtitle": "Senden Sie uns Ihre Serviceanfrage.",
+      "description": "Über das Formular können Sie uns Ihre Serviceanfrage bezüglich Ihres Ventilators, Strahlventilators, Entrauchungsventilators, Axialventilators, Lüftungsgeräts, Kühlers, Automatisierungspanels oder Lüftungssystems senden. Unser technisches Team wird Ihre Anfrage prüfen und sich so schnell wie möglich bei Ihnen melden.",
+      "helperIntro": "Wenn möglich, beschleunigen Sie den Serviceprozess, wenn Sie die folgenden Informationen im Formular angeben:",
+      "helperFields": [
+        "Name Nachname",
+        "Name der Firma",
+        "Telefon",
+        "E-Mail",
+        "Projektname",
+        "Produktmodell",
+        "Seriennummer",
+        "Fehler- oder Anforderungsbeschreibung",
+        "Foto des Produktetiketts",
+        "Fehlerfoto oder -video",
+        "Notsituation",
+        "Orts-/Feldadresse"
+      ],
       "features": [
-        { "label": "Schnelle Reaktion", "desc": "Antwort innerhalb von 24 Stunden" },
-        { "label": "Expertenteam", "desc": "Zertifiziertes technisches Team" },
-        { "label": "Einsatz vor Ort", "desc": "Servicenetz deutschlandweit / international" }
+        {
+          "label": "Schnelle Antwort",
+          "desc": "Rückkehr innerhalb von 24 Stunden"
+        },
+        {
+          "label": "Fachpersonal",
+          "desc": "Zertifiziertes technisches Team"
+        },
+        {
+          "label": "Feldintervention",
+          "desc": "Türkiye-weites Servicenetz"
+        }
       ],
       "labels": {
-        "name": "Vollständiger Name",
-        "company": "Firmenname",
+        "name": "Vorname Nachname",
+        "company": "Name der Firma",
         "phone": "Telefon",
         "email": "E-Mail",
-        "subject": "Betreff",
-        "message": "Ihre Nachricht"
+        "projectName": "Projektname",
+        "productModel": "Produktmodell",
+        "serialNumber": "Seriennummer",
+        "urgency": "Notfallsituation",
+        "location": "Stadt-/Feldadresse",
+        "subject": "Thema",
+        "message": "Fehler- oder Anforderungsbeschreibung"
       },
-      "submit": "Absenden",
-      "successTitle": "Anfrage eingegangen",
-      "successMessage": "Wir melden uns schnellstmöglich bei Ihnen."
+      "submit": "Erstellen Sie eine technische Serviceanfrage",
+      "successTitle": "Ihre Anfrage ist eingegangen",
+      "successMessage": "Unser technisches Team wird Ihre Anfrage prüfen und sich so schnell wie möglich bei Ihnen melden."
+    },
+    "cta": {
+      "sectionLabel": "Technischer Service",
+      "title": "Erstellen Sie eine technische Serviceanfrage",
+      "subtitle": "Technisches Serviceteam von NOVVES; Es steht Ihnen für Kundendienst, Fehlerdiagnose, Ersatzteile, Wartung, Inbetriebnahme und technische Dokumentationsanfragen zur Verfügung.",
+      "ctaButton": "Erstellen Sie eine technische Serviceanfrage"
     }
   },
   "yerindeKesif": {
     "meta": {
-      "title": "Vor-Ort-Begehung | Novves",
-      "description": "NOVVES Vor-Ort-Service – Inspektion, Messung und Analyse für projektspezifische Lüftungslösungen."
+      "title": "Entdeckung vor Ort | Romane",
+      "description": "NOVVES Vor-Ort-Erkennung – präzise Lüftungs-, Rauchabzugs- und Klimatisierungslösung mit Messungen, Analysen und technischen Daten vor Ort."
     },
     "breadcrumb": {
       "home": "Startseite",
-      "services": "Leistungen",
-      "current": "Vor-Ort-Begehung"
+      "services": "Dienstleistungen",
+      "current": "Entdeckung vor Ort"
     },
     "hero": {
-      "badge": "Leistungen",
-      "titlePart1": "Vor-Ort",
-      "titleHighlight": "Begehung",
-      "subtitle": "Erster Schritt zur präzisen Projektplanung: Messung, Analyse und Bedarfsermittlung vor Ort."
+      "badge": "Dienstleistungen",
+      "titlePart1": "An Ort und Stelle",
+      "titleHighlight": "Entdeckung",
+      "subtitle": "Die richtige Lüftungslösung für Ihr Projekt beginnt vor Ort.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdk_YtFP-CGxwZSeNW5Go-mEcB-R91NQ62hvYRFn3kP0HC2labPBROzwKKTpxqfYok2fSTESW5msRiaLDm85uq_9NKpSFvbzh5-qjc9Da7_nJ05xg6ayPg0sV19aNvsnoMYDO7xyCp6adNwFupHsnwBuYl9-fPmugA06vH7qzUFtDtD8_IrmD1oHTUJ5a65jDLQluT_CWnJ4eOW2_R90z6g2G9tAUdfzri7ENaEZVk93euYlLmR1EzYACDMikxjduri48APdqtzMI"
     },
-    "intro": "Präzise Daten sind die Basis jedes Lüftungsprojekts. Die NOVVES Vor-Ort-Begehung ist der erste und entscheidende Schritt zur effizientesten und normkonformen Lösung. Unsere Ingenieure führen detaillierte Messungen und Analysen in Ihrer Anlage durch.",
+    "intro": {
+      "paragraphs": [
+        "Genaue Felddaten sind die Grundlage jedes erfolgreichen Lüftungs-, Rauchabzugs- und Klimatisierungsprojekts. NOVVES-Erkundungsservice vor Ort; Es analysiert die tatsächlichen Bedingungen Ihres Projekts vor Ort und ermittelt die am besten geeignete Ventilatorauswahl, Rauchschutzkonstruktion, Luftstromplanung und Systemlösung.",
+        "Unser kompetentes technisches Team; Es führt Feldmessungen, Beobachtungen und technische Bewertungen für Tiefgaragen, Industrieanlagen, Gewerbegebäude, Produktionsbereiche, technische Volumina, Lüftungsgeräte und Kälteanwendungen durch. Bestehende mechanische Infrastruktur, elektrische Infrastruktur, architektonische Gegebenheiten, Luftströmungsrichtungen, Abluft- und Frischluftbedarf, Brandszenarien, Installationsbereiche und Wartungszugänge werden detailliert untersucht.",
+        "Für NOVVES geht es bei der Erkundung vor Ort nicht nur um Messungen. Dabei handelt es sich um die Erfassung kritischer technischer Daten, damit das Projekt sicher, effizient, nachhaltig und in Übereinstimmung mit den Vorschriften gestaltet werden kann."
+      ]
+    },
+    "scope": {
+      "sectionLabel": "Umfang der Entdeckung",
+      "title": "Was untersuchen wir während des Entdeckungsprozesses?",
+      "items": [
+        "Projektart und Verwendungszweck",
+        "Informationen zur Flächengröße und zum Volumen",
+        "Vorhandene Lüftungsinfrastruktur",
+        "Frischluft- und Abluftbedarf",
+        "Luftströmungsrichtungen und Druckverluste",
+        "Ventilator-, Kanal-, Entlüftungs- und Schachtanordnungen",
+        "Elektrische Infrastruktur und Panel-Anschlusspunkte",
+        "Brandszenario und Anforderungen an die Rauchabsaugung",
+        "Bedarf an Strahlventilator, Axialventilator, Entrauchungsventilator oder Lüftungsgerät",
+        "Integration von Kältemaschinen und Klimaanlagen",
+        "Installations-, Wartungs- und Servicezugang",
+        "Anforderungen an Vorschriften, Standards und Projektspezifikationen"
+      ]
+    },
     "steps": {
-      "sectionLabel": "Ablauf",
-      "title": "Schritte der Begehung",
+      "sectionLabel": "Zeitraum",
+      "title": "Entdeckungsschritte",
       "items": [
         {
-          "title": "Termin und Vorinformation",
-          "desc": "Wir erfassen die Projektgrundlagen und besprechen Gebäudetyp, Fläche und Bedarf."
+          "title": "Terminvereinbarung und vorläufige Informationen",
+          "desc": "Wir lernen die allgemeinen Merkmale Ihres Projekts, den Anlagentyp, die Flächengröße, den Nutzungszweck und die technischen Anforderungen kennen. Nach der ersten Bewertung legen wir den Umfang der Erkundung fest."
         },
         {
-          "title": "Besichtigung und Messung",
-          "desc": "Unser Team besichtigt die Objekte, misst und bewertet die bestehende Infrastruktur. Luftströmungen, Temperaturverteilung und Systemstatus werden analysiert."
+          "title": "Feldbesuch und Messung",
+          "desc": "Das technische Team von NOVVES kommt vor Ort und inspiziert den Bereich vor Ort. Bewertet werden die vorhandene mechanische und elektrische Infrastruktur, Luftströmungsrichtungen, Installationsbereiche, Temperaturverteilung, Systemstatus und Anwendungsbeschränkungen."
         },
         {
-          "title": "Technische Auswertung und Bericht",
-          "desc": "Auf Basis der Daten erfolgen Lüftungsberechnungen, Strömungsanalysen und Normprüfungen. Ein ausführlicher Begehungsbericht wird erstellt."
+          "title": "Technische Analyse und Berichterstattung",
+          "desc": "Im Einklang mit den aus dem Feld erhaltenen Daten werden der Lüftungsbedarf, der Durchflussbedarf, die Ventilatorauswahl, der Bedarf an Rauchabsaugung, das Automatisierungsszenario und die Einhaltung von Vorschriften analysiert. Bei Bedarf wird ein ausführlicher Aufklärungsbericht erstellt."
         },
         {
           "title": "Lösungsvorschlag und Projektplanung",
-          "desc": "Auf Basis der Begehung erhalten Sie ein projektspezifisches Angebot mit Systemdesign, Gerätewahl und Kostenanalyse."
+          "desc": "Basierend auf den Entdeckungsergebnissen werden für das Projekt das am besten geeignete Systemdesign, die Auswahl der Ausrüstung, die Anordnung der Ventilatoren, der Rauchkontrollansatz, die technische Dokumentation und die Kostenbewertung erstellt."
         },
         {
-          "title": "Freigabe und Umsetzung",
-          "desc": "Nach Freigabe werden Produktion, Montage und Inbetriebnahme geplant und umgesetzt."
+          "title": "Genehmigung und Beginn der Umsetzung",
+          "desc": "Nach der Genehmigung der technischen Lösung und des Angebots werden Produktions-, Lieferungs-, Installations-, Inbetriebnahme- und After-Sales-Supportprozesse geplant."
         }
       ]
     },
     "whyImportant": {
-      "sectionLabel": "Warum wichtig",
-      "title": "Warum Vor-Ort-Begehung?",
+      "sectionLabel": "Warum ist es wichtig?",
+      "title": "Warum ist eine Vor-Ort-Erkennung notwendig?",
       "items": [
-        { "title": "Präzise Auslegung", "desc": "Ohne Messung vor Ort sind Dimensionierungsfehler kaum vermeidbar." },
-        { "title": "Kostenoptimierung", "desc": "Mit realen Objektdaten wird Über- oder Unterdimensionierung vermieden." },
-        { "title": "Normkonformität", "desc": "Bestehende Gebäudebedingungen werden vor Ort gegen Normen geprüft." },
-        { "title": "Integration", "desc": "Passende Lösungen zur bestehenden HLKS-Infrastruktur erfordern eine Begehung." }
+        {
+          "title": "Richtiges Design",
+          "desc": "Bei Projekten, die ohne Feldmessungen erstellt wurden, steigt das Risiko von Fehlern bei der Gerätedimensionierung, der Ventilatorauswahl, der Luftströmungsrate und den Installationspunkten. Durch die Erkundung vor Ort wird sichergestellt, dass das System den realen Bedingungen entsprechend ausgelegt wird."
+        },
+        {
+          "title": "Kostenoptimierung",
+          "desc": "Mit realen Felddaten wird die Auswahl über- oder unterdimensionierter Geräte verhindert. Auf diese Weise werden Investitionskosten, Energieverbrauch und Betriebskosten genauer gesteuert."
+        },
+        {
+          "title": "Einhaltung von Vorschriften und Standards",
+          "desc": "Projektrisiken werden durch die Bewertung von Brandschutz, Rauchabsaugung, Belüftung, elektrischer Infrastruktur und Arbeitsschutzanforderungen vor Ort reduziert."
+        },
+        {
+          "title": "Einfache Integration",
+          "desc": "Lösungen, die mit der vorhandenen mechanischen, elektrischen und automatisierten Infrastruktur kompatibel sind, können nur durch Erkundungen vor Ort genau ermittelt werden."
+        },
+        {
+          "title": "Sicherere Inbetriebnahme",
+          "desc": "Die während der Entdeckungsphase gesammelten Daten sorgen dafür, dass der Installations- und Inbetriebnahmeprozess schneller, kontrollierter und reibungsloser abläuft."
+        }
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Anwendungsbereiche",
+      "title": "Für welche Projekte führen wir eine Vor-Ort-Erkundung durch?",
+      "items": [
+        "Projekte zur Belüftung von Innenparkplätzen",
+        "Rauch- und Wärmeabzugsanlagen",
+        "Strahlventilatorsysteme",
+        "Industrielle Lüftungsprojekte",
+        "Belüftung der Produktionsanlage",
+        "Belüftung von Gewerbegebäuden und Einkaufszentren",
+        "Hotels, Krankenhäuser und öffentliche Gebäude",
+        "Anwendungen für Lüftungsgeräte",
+        "Chiller- und zentrale Kühlsysteme",
+        "Technische Bände und spezielle Ingenieurprojekte"
       ]
     },
     "cta": {
-      "sectionLabel": "Kostenlose Begehung",
-      "title": "Vor-Ort-Begehung für Ihr Projekt anfordern",
-      "subtitle": "Unser Engineering-Team besucht Ihre Anlage für Bedarfsermittlung und Messungen.",
-      "ctaButton": "Begehung anfordern"
+      "sectionLabel": "Entdeckung vor Ort",
+      "title": "Lassen Sie uns Ihr Projekt vor Ort begutachten",
+      "subtitle": "Mit dem Vor-Ort-Besichtigungsservice von NOVVES analysieren wir die Anforderungen Ihres Projekts vor Ort und ermitteln anhand technischer Daten die richtige Lüftungs- und Rauchschutzlösung.",
+      "ctaButton": "Erstellen Sie eine On-Site-Discovery-Anfrage"
+    }
+  },
+  "fanSecimi": {
+    "meta": {
+      "title": "Ventilatorauswahl und technische Projektplanung | Romane",
+      "description": "NOVVES fan seçimi ve teknik projelendirme — mühendislik odaklı seçim, PerfectusAir destekli analiz ve proje bazlı HVAC çözümleri."
+    },
+    "hero": {
+      "badge": "Dienstleistungen",
+      "titlePart1": "Fanauswahl und",
+      "titleHighlight": "Technische Projektplanung",
+      "subtitle": "Die Auswahl des richtigen Ventilators beginnt mit den richtigen technischen Daten.",
+      "imageSrc": "/images/hizmetler/fan-secimi-teknik-projelendirme.png"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES bietet ingenieurorientierte Ventilatorenauswahl und technische Projektdienstleistungen für Industrielüftung, Komfortlüftung, Rauch- und Wärmeabzugssysteme, Strahlventilatoranwendungen, Lüftungsgeräte und spezielle HVAC-Projekte.",
+        "Bei der Auswahl eines Ventilators geht es nicht nur darum, ein Produkt anhand der Durchfluss- und Druckwerte auszuwählen. Jedes Projekt; Die Bewertung sollte unter Berücksichtigung des Verwendungszwecks, des Luftstrombedarfs, der Druckverluste, der Betriebstemperatur, des Schallpegels, der Motorleistung, der Energieeffizienz, der Installationsbedingungen, des Brandszenarios, des Automatisierungsbedarfs und relevanter Normen erfolgen.",
+        "Das technische Büro von NOVVES analysiert alle diese Kriterien projektspezifisch und ermittelt den am besten geeigneten Ventilatortyp, die Motorleistung, den Betriebspunkt, die Leistungswerte und die Systemlösung. Somit ist das Projekt nicht nur ein Produkt; Es wird eine richtig ausgewählte, technisch abgesicherte und umsetzungsreife Engineering-Lösung vorgestellt."
+      ]
+    },
+    "technicalOffice": {
+      "sectionLabel": "Technisches Büro",
+      "title": "NOVVES Technisches Büro Force",
+      "paragraphs": [
+        "Technisches Büro von NOVVES; Es vereint Produktwissen, Produktionserfahrung, Felderfahrung und technische Berechnungen unter einem Dach.",
+        "Unser technisches Team; Es führt eine projektbezogene Auswahl und technische Bewertung für Axialventilatoren, Strahlventilatoren, Entrauchungsventilatoren, Industrieventilatoren, Dachventilatoren, Zellenventilatoren, Elektromotoren, Lüftungsgeräte und spezielle Lüftungssysteme durch.",
+        "Jede Ventilatorauswahl basiert nicht nur auf Katalogwerten; Es wird unter Berücksichtigung der tatsächlichen Betriebsbedingungen des Projekts, der Standortbeschränkungen, des Energieverbrauchs, des Wartungszugangs, der dauerhaften Leistung und der Systemsicherheit erstellt.",
+        "Das technische Büro von NOVVES trägt dazu bei, die richtige Produktauswahl, die richtige Systemarchitektur und die richtigen Anwendungsentscheidungen zu treffen, indem es dem Kunden vor und nach dem Verkaufsprozess technische Unterstützung bietet."
+      ]
+    },
+    "perfectusAir": {
+      "sectionLabel": "Digitale Werkzeuge",
+      "title": "PerfectusAir Fan Seçim Yazılımı ile Veri Destekli Seçim",
+      "paragraphs": [
+        "NOVVES, fan seçim süreçlerinde kendi mühendislik yaklaşımını dijital araçlarla destekler. Bu kapsamda kullanılan PerfectusAir fan seçim yazılımı, projeye uygun fan modellerinin teknik parametreler üzerinden değerlendirilmesine yardımcı olur.",
+        "PerfectusAir ile fan seçimi yapılırken; hava debisi, statik basınç, motor gücü, fan devri, verim, ses seviyesi, çalışma noktası, ürün modeli ve teknik performans değerleri birlikte analiz edilir.",
+        "Bu sayede müşteri ve proje ekipleri için daha net, izlenebilir ve karşılaştırılabilir teknik seçim çıktıları oluşturulur. PerfectusAir, NOVVES teknik ofisinin mühendislik değerlendirmesini destekleyen güçlü bir fan seçim aracıdır."
+      ]
+    },
+    "selectionCriteria": {
+      "sectionLabel": "Auswahlkriterien",
+      "title": "Kriterien, die wir bei der Fanauswahl berücksichtigen",
+      "intro": "Das technische Büro von NOVVES bewertet bei der Auswahl der Ventilatoren gemeinsam die folgenden Kriterien:",
+      "items": [
+        "Luftstrombedarf",
+        "Statische und Gesamtdruckwerte",
+        "Systemdruckverluste",
+        "Betriebspunkt des Ventilators",
+        "Motorleistung und Motoreffizienz",
+        "Lüftergeschwindigkeit",
+        "Schallpegel",
+        "Energieverbrauch",
+        "Betriebstemperatur",
+        "Umgebungsbedingungen",
+        "Installationsart und -ort",
+        "Wartungszugang",
+        "Elektro- und Automatisierungsinfrastruktur",
+        "Anforderung an Rauchabsaugung oder Feuerwiderstand",
+        "Anforderungen an Zertifizierung und Standards",
+        "Projektspezifikationen und Kundenerwartungen"
+      ]
+    },
+    "engineeringScope": {
+      "sectionLabel": "Projektplanung",
+      "title": "Unser technischer Projektdesignumfang",
+      "intro": "Nach der Fanauswahl erfolgt die technische Projektunterstützung entsprechend den Projektanforderungen. In diesem Zusammenhang können folgende Studien durchgeführt werden:",
+      "items": [
+        "Produkt- und Systemauswahl",
+        "Bewertung der Fanleistung",
+        "Kontrolle von Durchfluss- und Druckberechnungen",
+        "Vorschläge zur Platzierung von Strahlventilatoren",
+        "Auswahl des Rauchabzugsventilators",
+        "Auswahl an Frischluft- und Abluftventilatoren",
+        "Bewertung des Lüftermotors von Lüftungsgeräten",
+        "Technischer Support für die Integration von Kältemaschinen und HVAC-Systemen",
+        "Erstellung eines technischen Datenblattes",
+        "Überprüfung von Produktcode und Modell",
+        "Technische Zeichnung und Maßkontrolle",
+        "Beurteilung der Konformität mit den Projektspezifikationen",
+        "Alternativer Produkt- und Lösungsvergleich",
+        "Bereitstellung technischer Unterstützung für die Angebotsdatei"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Anwendungsbereiche",
+      "title": "In welchen Projekten wählen wir Fans aus?",
+      "intro": "NOVVES bietet Ventilatorenauswahl und technische Projektunterstützung für verschiedene Gebäudetypen und Systemanforderungen.",
+      "items": [
+        "Projekte zur Belüftung von Innenparkplätzen",
+        "Strahlventilatorsysteme",
+        "Rauch- und Wärmeabzugsanlagen",
+        "Industrielle Lüftungsprojekte",
+        "Komfortlüftungsanwendungen",
+        "Belüftung von Gewerbegebäuden und Einkaufszentren",
+        "Hotels, Krankenhäuser und öffentliche Gebäude",
+        "Produktionsanlagen",
+        "Technische Bände",
+        "Anwendungen für Lüftungsgeräte",
+        "Chiller- und zentrale Klimaanlagen",
+        "Projektbezogene Sonderlüftungslösungen"
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Wertversprechen",
+      "title": "Was Sie mit NOVVES verdienen",
+      "intro": "Der Ventilatorenauswahl- und technische Projektdesign-Service von NOVVES trägt mit sichereren, effizienteren und genaueren technischen Entscheidungen zum Fortschritt Ihres Projekts bei.",
+      "items": [
+        "Auswahl des richtigen Ventilators für das Projekt",
+        "Technische Verifizierung mit technischer Bürounterstützung",
+        "PerfectusAir fan seçim yazılımı ile veri destekli seçim",
+        "Optimierte Lösung hinsichtlich Durchfluss, Druck, Motorleistung und Geräuschpegel",
+        "Richtige Platzierung bei Rauchabzugs- und Strahlventilatorsystemen",
+        "Kontrollierteres Design im Hinblick auf Energieeffizienz und Betriebskosten",
+        "Bewertung gemäß technischen Spezifikationen und Projektanforderungen",
+        "Klare technische Dokumentation für Beschaffung, Berater, Auftragnehmer und Projektteams",
+        "Starke Koordination zwischen Produktion, technischem Büro und Außendienstteam"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Fan-Auswahl",
+      "title": "Lassen Sie uns gemeinsam den richtigen Ventilator für Ihr Projekt auswählen",
+      "subtitle": "Das technische Büro von NOVVES hilft Ihnen, die am besten geeignete Ventilator-, Motor- und Systemlösung zu ermitteln, indem es die Anforderungen Ihres Projekts analysiert.",
+      "paragraph": "Sie können unser technisches Team für Ihre Industrielüftung, Ihren Entrauchungsventilator, Ihr Strahlventilatorsystem, Ihren Axialventilator, Ihr Lüftungsgerät oder Ihr spezielles HVAC-Projekt kontaktieren.",
+      "ctaButton": "Erhalten Sie technischen Support für die Lüfterauswahl"
+    }
+  },
+  "bakimPerformans": {
+    "meta": {
+      "title": "Wartung und Leistungskontrolle | Romane",
+      "description": "NOVVES Wartungs- und Leistungskontrolle – sicherer, effizienter und langlebiger Betrieb von Ventilatoren, Motoren und Lüftungssystemen."
+    },
+    "hero": {
+      "badge": "Dienstleistungen",
+      "titlePart1": "Wartung und",
+      "titleHighlight": "Leistungskontrolle",
+      "subtitle": "Technischer Wartungsservice für einen langlebigen, sicheren und effizienten Betrieb von Lüfter-, Motor- und Lüftungsanlagen.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJ5JMO3HOjNDZbtPhy07ir84gR5S9heH0Bj7ujN3CsCTFsR1u_bMp4TPJ52F0pYrDEPuqDsLsLK-t5xxRKgaMRbrWEsK62FLYa9zGEiLJFgzkQ-sHQA-fxyhLnNx8FXJgJ8kIsQ5aiAZxhqXIqFbaQCX_MIv6r0FQPI2OgRrP0N_gpWt7FC1CtuDUMoyt_z_fFZkKMPPMPVK0BqSwk3FlDMIUcB_9aQtiKgMOFiRULZonSaNHj_VFoSbZoekVxTn_L416XlRrPIPs"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES bietet Wartungs- und Leistungskontrolldienste für Ventilatorsysteme, Strahlventilatoren, Entrauchungsventilatoren, Axialventilatoren, Industrieventilatoren, Lüftungsgeräte, kühlergestützte HVAC-Systeme, Schalttafeln und Automatisierungsinfrastrukturen.",
+        "Regelmäßige Wartung und Leistungskontrolle sind ebenso wichtig wie die richtige Produktauswahl und der korrekte Einbau in Lüftungsanlagen. Im Laufe der Zeit können sich Verunreinigungen, Vibrationen, Lagerverschleiß, eine Erhöhung der Motorlast, Probleme mit der elektrischen Verbindung, Sensorfehler, eine Verringerung des Luftstroms oder Probleme mit Automatisierungsszenarien negativ auf die Systemeffizienz auswirken.",
+        "NOVVES Wartungs- und Leistungskontrolldienst; Es stellt sicher, dass mechanische, elektrische, aerodynamische und betriebliche Steuerungen gemeinsam bewertet werden, um den sicheren, effizienten und nachhaltigen Betrieb des Systems zu unterstützen."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Unser Leistungsumfang",
+      "title": "Wartungs- und Kontrolldienste",
+      "items": [
+        {
+          "title": "Lüfter- und Motorsteuerung",
+          "desc": "Ventilatorkörper, Propeller, Motor, Befestigungselemente, Lager, Vibrationselemente, Schutzkäfige und mechanische Verbindungen werden überprüft. Bewertet werden grundlegende Betriebswerte wie Motorbetriebsstrom, Motordrehrichtung, Geräusch, Vibration und Erwärmung."
+        },
+        {
+          "title": "Steuerung des Jet-Fan-Systems",
+          "desc": "In geschlossenen Jet-Ventilatorsystemen für Parkplätze werden die Ventilatorplatzierung, die Luftrichtungsleistung, der Motorbetrieb, die Verbindungspunkte, der Vibrationspegel, die Automatisierungssignale und der szenariobasierte Betriebsstatus überprüft."
+        },
+        {
+          "title": "Steuerung des Rauchabzugsventilators",
+          "desc": "Bei Rauch- und Wärmeabzugsventilatoren werden je nach Brandszenario Motor, Propeller, Gehäuse, Anschlussgeräte, elektrische Infrastruktur, Schalttafel und Betriebsbedingungen bewertet."
+        },
+        {
+          "title": "Lüftungsgeräte und HVAC-Steuerungen",
+          "desc": "Die Ventilatoren der Lüftungsgeräte, der Filterstatus, die Motor-Ventilator-Gruppe, die Riemen-Riemenscheiben-Struktur, Klappen, Sensoren, Automatisierungsanschlüsse, der Luftdurchsatz und die Betriebsbedingungen des Systems werden überprüft."
+        },
+        {
+          "title": "Chiller-unterstützte Systemsteuerung",
+          "desc": "In kühlerunterstützten HVAC-Systemen werden die Leistungsauswirkungen im Zusammenhang mit Gebläsekonvektoren, Lüftungsgeräten, Automatisierung und luftseitigen Geräten ganzheitlich bewertet. Technische Leitlinien zur Optimierung des Systemgleichgewichts werden in Form eines Berichts präsentiert."
+        },
+        {
+          "title": "Automatisierung und Bedienfeldsteuerung",
+          "desc": "Geprüft werden MCC/DDC-Panels, Frequenzumrichter, Schütze, Schutzeinrichtungen, Sensoranschlüsse, Brandmeldesignale, CO-Sensoren und BMS-Integration."
+        },
+        {
+          "title": "Leistungsmessung und -bewertung",
+          "desc": "Systembetriebswerte; Bewertet werden Luftdurchsatz, Druck, Motorstrom, Vibration, Schallpegel, Temperatur, Lüftergeschwindigkeit und Betriebsszenarien. Bei Bedarf werden Optimierungsvorschläge angeboten."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Wartungsprozess",
+      "title": "Serviceinhalt",
+      "items": [
+        {
+          "title": "Vorläufige Bewertung",
+          "desc": "Bewertet werden Systemtyp, Produktmodell, Projektinformationen, Arbeitsbedingungen, Wartungshistorie und bestehende Beschwerden."
+        },
+        {
+          "title": "Feldkontrolle",
+          "desc": "Das technische Team von NOVVES führt vor Ort mechanische, elektrische und betriebliche Prüfungen durch. Untersucht werden Ventilator, Motor, Panel, Sensor, Anschlusstechnik und Systemkomponenten."
+        },
+        {
+          "title": "Grundlegende Leistungskontrollen",
+          "desc": "Luftstrom, Motorbetriebsstrom, Lüftergeschwindigkeit, Geräusche, Vibrationen, Heizung, Automatisierungsreaktionen und Systemverhalten werden gesteuert."
+        },
+        {
+          "title": "Fehlerrisiko- und Nichtkonformitätserkennung",
+          "desc": "Lose Verbindungen, Vibrationsquellen, Motorbelastungen, Sensorfehler, falsche Betriebsszenarien, Wartungsmängel oder Leistungseinbußen werden identifiziert."
+        },
+        {
+          "title": "Optimierungsvorschläge",
+          "desc": "Geschwindigkeitsanpassung, Automatisierungsszenario, Wartungsplan, Ersatzteilbedarf, Reinigung oder technische Verbesserungsvorschläge werden vorbereitet, damit das System effizienter arbeitet."
+        },
+        {
+          "title": "Berichterstattung",
+          "desc": "Durchgeführte Kontrollen, festgestellte Nichtkonformitäten, Vorschläge und etwaige Punkte, die ein dringendes Eingreifen erfordern, werden in einem technischen Serviceformular oder einem Wartungsbericht aufgezeichnet."
+        },
+        {
+          "title": "Periodische Wartungsplanung",
+          "desc": "Periodische Wartungsintervalle können je nach Nutzungsintensität des Systems, Arbeitsumgebung, Produkttyp und Projektkritikalität geplant werden."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Warum ist es wichtig?",
+      "title": "Warum sind Wartung und Leistungskontrolle notwendig?",
+      "items": [
+        {
+          "title": "Reduziert das Risiko einer Fehlfunktion",
+          "text": "Dank regelmäßiger Inspektion können mechanische Lockerungen, Vibrationen, Motorbelastungen, elektrische Verbindungsprobleme und Sensorfehler frühzeitig erkannt werden."
+        },
+        {
+          "title": "Unterstützt Energieeffizienz",
+          "text": "Verschmutzte, nicht richtig eingestellte oder überlastete Lüftersysteme können mehr Energie verbrauchen. Die Leistungskontrolle trägt zu einem effizienteren Betrieb des Systems bei."
+        },
+        {
+          "title": "Verlängert die Systemlebensdauer",
+          "text": "Die richtige Wartung unterstützt den gesünderen Betrieb von Lüfter-, Motor-, Lager-, Propeller-, Panel- und Automatisierungskomponenten."
+        },
+        {
+          "title": "Erhöht die Unternehmenssicherheit",
+          "text": "Für den sicheren Betrieb ist die regelmäßige Inspektion kritischer Geräte wie Rauchabzugsventilatoren, Strahlventilatoren und Parkhausbelüftungsanlagen von großer Bedeutung."
+        },
+        {
+          "title": "Verhindert Leistungsverlust",
+          "text": "Verunreinigungen, Verschleiß, falsche Einstellungen oder Probleme mit der Luftzirkulation, die im Laufe der Zeit auftreten, können die Systemleistung beeinträchtigen. Der Wartungs- und Kontrollprozess gewährleistet eine frühzeitige Erkennung dieser Verluste."
+        },
+        {
+          "title": "Stärkt den After-Sales-Prozess",
+          "text": "Regelmäßige Wartungsaufzeichnungen; Es hilft dabei, Service-, Garantie-, Ersatzteil- und technische Supportprozesse genauer zu verwalten."
+        }
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Leistungsorientierte Instandhaltung mit NOVVES",
+      "title": "Ganzheitliche technische Bewertung",
+      "paragraphs": [
+        "Der Wartungs- und Leistungskontrollservice von NOVVES umfasst nicht nur die Gerätekontrolle; Dabei handelt es sich um einen technischen Dienst, der die Betriebslogik des Systems, die Feldbedingungen und die technischen Anforderungen gemeinsam bewertet.",
+        "Unser technisches Serviceteam arbeitet bei Bedarf in Abstimmung mit dem technischen Büro von NOVVES und bietet Unterstützung bei Ventilatorauswahl, Automatisierungsszenario, Ersatzteilen, Leistungsanalyse und Systemoptimierung.",
+        "Auf diese Weise kommt es nicht nur darauf an, ob das System funktioniert oder nicht; Bewertet wird, ob es korrekt, effizient, sicher und im Einklang mit dem Projektzweck funktioniert."
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Anwendungsbereiche",
+      "title": "Für welche Systeme führen wir Wartung und Leistungskontrolle durch?",
+      "items": [
+        "Strahlventilatorsysteme",
+        "Rauch- und Wärmeabzugsventilatoren",
+        "Axialventilatoren",
+        "Industrieventilatoren",
+        "Dachventilatoren",
+        "Handy-Fans",
+        "Abluftventilatoren",
+        "Frischluftventilatoren",
+        "Lüftungsgeräte",
+        "Kältemaschinenunterstützte HVAC-Systeme",
+        "MCC/DDC-Steuerplatinen",
+        "Belüftungssysteme für Innenparkplätze",
+        "Rauchkontrollsysteme",
+        "Projektbezogene Sonderlüftungssysteme"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Wartungsanfrage",
+      "title": "Erstellen Sie Ihre Wartungsanfrage",
+      "subtitle": "Sie können vom technischen Team von NOVVES Unterstützung bei der Wartung und Leistungskontrolle für Ihren Ventilator, Strahlventilator, Rauchabzugssystem, Lüftungsgerät, kühlergestütztes HVAC-System, Automatisierungspanel oder Lüftungssystem erhalten.",
+      "paragraph": "Lassen Sie uns Ihr System vor Ort untersuchen, seine Leistung bewerten und unsere technischen Empfehlungen für einen sicheren, effizienten und langlebigen Betrieb weitergeben.",
+      "ctaButton": "Erstellen Sie eine Wartungs- und Leistungskontrollanforderung"
+    }
+  },
+  "egitimDanismanlik": {
+    "meta": {
+      "title": "Schulung und technische Beratung | Romane",
+      "description": "NOVVES Schulung und technische Beratung – ingenieurwissenschaftliche Wissensunterstützung für Ventilatoren, Rauchkontrolle, CFD, Inbetriebnahme und Automatisierung."
+    },
+    "hero": {
+      "badge": "Dienstleistungen",
+      "titlePart1": "Bildung und",
+      "titleHighlight": "Technische Beratung",
+      "subtitle": "Engineering-fokussierte technische Informationsunterstützung für Produkt-, System- und Projektteams.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3xcOoqyeafZ20LqVAF2QXkPSw0Xj5WIi6QJ_zDjZ2WgptUvNqbgsiyA_pyORA2OP7SeQ8s1yK61K1gEuWa7CCR9K3i210vBxit-ZTVS7yKGTa4t56Mpo6nGcAzHpnfjuL5fO0VH857GDmDaHtedp7AJh-VVntJoZi8sM0te2FKESj0k2Nf68qAoRmWgz2HwIXSzo5O6Dnp0xbFABrvjWEmAXLxPe6j2V4yyMyxlrq_uzrv2bJsQqYdGrZK9La9FRaZou7ZTbCR40"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES bietet Schulungen und technische Beratungsdienste für Ventilatorsysteme, Strahlventilatoren, Entrauchungsventilatoren, Axialventilatoren, Industrieventilatoren, Lüftungsgeräte, kühlergestützte HVAC-Systeme, Automatisierungspanels und Rauchkontrollsysteme an.",
+        "Bei Lüftungs- und Rauchschutzsystemen ist es neben der Auswahl des richtigen Produkts auch wichtig, das System richtig zu verstehen, es richtig zu verwenden, die richtige Wartung durchzuführen und es durch die Projektteams richtig zu interpretieren. NOVVES Schulungs- und technischer Beratungsdienst; Es bietet Informationsunterstützung für Betriebsteams, Wartungspersonal, Projektunternehmen, mechanische Installationsteams, Auftragnehmer, Berater und technische Einkaufsteams.",
+        "Für NOVVES geht es bei der Schulung nicht nur um die Produktbeschreibung. Ziel; Es geht darum, die Funktionsweise des Systems, sichere Nutzungsregeln, Wartungsbedarf, Automatisierungsszenarien, Lüfterleistung und projektspezifische technische Anforderungen verständlich zu erläutern."
+      ]
+    },
+    "trainingScope": {
+      "sectionLabel": "Unser Schulungsangebot",
+      "title": "Technische Schulungs- und Beratungsthemen",
+      "items": [
+        {
+          "title": "Schulung zu Lüftersystemen",
+          "desc": "Es werden Funktionsprinzipien, Einsatzbereiche, Auswahlkriterien und Wartungsanforderungen von Axialventilatoren, Strahlventilatoren, Entrauchungsventilatoren, Industrieventilatoren, Dachventilatoren und Zellenventilatoren erläutert."
+        },
+        {
+          "title": "Schulung zu Rauchkontrollsystemen",
+          "desc": "Die Arbeitslogik von Rauchkontrollsystemen in Tiefgaragen, Industrieanlagen und großvolumigen Strukturen, die Platzierung von Strahlventilatoren, die Organisation von Abluft und Frischluft, Brandszenarien und der Automatisierungsansatz werden erläutert."
+        },
+        {
+          "title": "CFD-Analyse und Projektbewertungsberatung",
+          "desc": "Es wird technische Unterstützung beim Lesen von CFD-Analyseergebnissen und beim Einbeziehen von Luftstrom, Rauchausbreitung, Temperaturverteilung, CO-Konzentration, Sichtbarkeit und Ventilatorplatzierung in Projektentscheidungen bereitgestellt."
+        },
+        {
+          "title": "Inbetriebnahme und Benutzerschulung",
+          "desc": "Nach der Inbetriebnahme der Anlage wird das Betriebs- oder Wartungsteam über die grundsätzliche Nutzung, zu beachtende Punkte, Betriebsmodi, Alarmsituationen und Wartungszeiträume informiert."
+        },
+        {
+          "title": "Schulung zur Wartung und Fehlerbehebung",
+          "desc": "Häufige Fehlfunktionen in Lüfter-, Motor-, Panel-, Sensor-, Automatisierungs- und HVAC-Systemen, grundlegende Steuerungsschritte, Wartungsbedarf und sichere Eingriffsgrenzen werden erläutert."
+        },
+        {
+          "title": "Schulung zu Automatisierungs- und Steuerungsszenarien",
+          "desc": "Es werden technische Informationen zu MCC/DDC-Bedienfeldern, CO-Sensoren, Brandmeldesignalen, BMS-Integration, normalem Lüftungsmodus, Brandmodus und manuellen Betriebsszenarien bereitgestellt."
+        },
+        {
+          "title": "Beratung zur Produktauswahl und technischen Dokumentation",
+          "desc": "Die Bewertung erfolgt gemeinsam mit den technischen Teams hinsichtlich Ventilatorauswahl, technischen Datenblättern, Produktcodes, Leistungswerten, Zertifizierungsumfang, Benutzerhandbüchern und Projektdokumenten."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Beratungsprozess",
+      "title": "Serviceinhalt",
+      "items": [
+        {
+          "title": "Bedarfsanalyse",
+          "desc": "Der Zweck der Schulungs- oder Beratungsanfrage wird festgelegt. Bewertet werden Teilnehmerprofil, Projekttyp, Produktgruppe, Systemumfang und technische Anforderungen."
+        },
+        {
+          "title": "Inhaltsplanung",
+          "desc": "Schulungsinhalte; Es wird je nach Produktgruppe, Anwendungsbereich, Projekttyp, Wartungsbedarf, Rauchschutzszenario oder technischem Problem erstellt."
+        },
+        {
+          "title": "Technische Schulung / Beratungssitzung",
+          "desc": "Ausbildung; Die Durchführung kann vor Ort, online oder in einem projektspezifischen technischen Meeting-Format erfolgen. Die Erläuterung erfolgt anhand von Produkten, Anlagendiagrammen, Anwendungsbeispielen, Wartungsschritten und technischen Dokumenten."
+        },
+        {
+          "title": "Fragen und Antworten und Anwendungsbewertung",
+          "desc": "Fragen der Teilnehmer zum Projekt, Produkt, Wartung, Störung, Automatisierung oder Inbetriebnahmeprozessen werden vom technischen Team beantwortet."
+        },
+        {
+          "title": "Dokumentation und Nachverfolgung",
+          "desc": "Bei Bedarf werden Schulungshinweise, technische Dokumente, Wartungsanweisungen, Benutzerhandbücher oder projektspezifische Vorschläge weitergegeben."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Warum ist es wichtig?",
+      "title": "Warum sind Schulungen und technische Beratung notwendig?",
+      "items": [
+        {
+          "title": "Gewährleistet die korrekte Verwendung des Systems",
+          "text": "Richtiges Verständnis von Ventilator-, Strahlventilator-, Rauchabzugs- und Automatisierungssystemen; Es reduziert das Risiko von Missbrauch, Fehleingriffen und unnötigen Fehlfunktionen."
+        },
+        {
+          "title": "Erhöht die Qualität der Pflege",
+          "text": "Die besseren Kenntnisse der Wartungsteams über Produkte und Systemkomponenten ermöglichen eine genauere Durchführung regelmäßiger Überprüfungen."
+        },
+        {
+          "title": "Verkürzt die Reaktionszeit bei Fehlern",
+          "text": "Die Kenntnis der grundlegenden Fehlersymptome, Alarmbedingungen und Kontrollschritte beschleunigt den ersten Bewertungsprozess."
+        },
+        {
+          "title": "Stärkt technische Entscheidungen von Projektteams",
+          "text": "Genaue Informationen zu Ventilatorauswahl, CFD-Analyse, Rauchkontrolldesign, Automatisierungsszenario und technischer Dokumentation tragen dazu bei, fundiertere Projektentscheidungen zu treffen."
+        },
+        {
+          "title": "Unterstützt sicheres Geschäft",
+          "text": "Geschultes Personal an kritischen Systemen wie Entrauchungsventilatoren, Jet-Ventilator-Systemen und geschlossenen Parkraumbelüftungssystemen bietet einen erheblichen Vorteil in Bezug auf die Betriebssicherheit."
+        },
+        {
+          "title": "Unterstützt Produktlebenszyklus und Systemleistung",
+          "text": "Korrekte Verwendung und korrekter Wartungsansatz; Es trägt zu einer längeren Lebensdauer und einem effizienten Betrieb von Lüfter, Motor, Panel, Sensor und Systemkomponenten bei."
+        }
+      ]
+    },
+    "audience": {
+      "sectionLabel": "Zielgruppe",
+      "title": "Für wen ist es geeignet?",
+      "intro": "Der Schulungs- und technische Beratungsservice von NOVVES eignet sich für folgende Personen und Teams:",
+      "items": [
+        "Technische Teams für Unternehmen",
+        "Wartungsteams",
+        "Mechanische Installationsunternehmen",
+        "Elektro- und Automatisierungsteams",
+        "Projektautoren",
+        "Brandberater",
+        "Auftragnehmerunternehmen",
+        "Einkaufs- und technische Einkaufsteams",
+        "Händler und Vertreter",
+        "Serviceteams",
+        "Facility-Management-Teams",
+        "Berater- und Controller-Teams"
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Anwendungsbereiche",
+      "title": "Für welche Systeme bieten wir Schulungen an?",
+      "items": [
+        "Strahlventilatorsysteme",
+        "Rauch- und Wärmeabzugsventilatoren",
+        "Axialventilatoren",
+        "Industrieventilatoren",
+        "Dachventilatoren",
+        "Handy-Fans",
+        "Abluft- und Frischluftventilatoren",
+        "Lüftungsgeräte",
+        "Kältemaschinenunterstützte HVAC-Systeme",
+        "MCC/DDC-Steuerplatinen",
+        "Belüftungssysteme für Innenparkplätze",
+        "Rauchkontrollsysteme",
+        "Ergebnisse der CFD-Analyse",
+        "Projektbezogene Sonderlüftungslösungen"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Steigern Sie Ihre technische Wissenskraft mit NOVAVES",
+      "title": "Ingenieursorientierter Bildungsansatz",
+      "paragraphs": [
+        "NOVVES Schulungs- und technischer Beratungsdienst; Es vereint Herstellerwissen, technische Büroerfahrung, Außendiensterfahrung und projekttechnischen Ansatz.",
+        "Unser Ziel; Um nicht nur die Installation von Produkten und Systemen zu unterstützen, sondern auch deren richtiges Verständnis, korrekte Verwendung und sicheren Betrieb auf lange Sicht.",
+        "Sie können Schulungen und Beratungsunterstützung für Ihr Team zu Ventilatorsystemen, Rauchschutzdesign, CFD-Analyse, Inbetriebnahme, Wartung, Fehlerbehebung oder technischer Dokumentation erhalten."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Schulungsanfrage",
+      "title": "Erstellen Sie eine Schulungs- und technische Beratungsanfrage",
+      "subtitle": "Technisches Team von NOVVES; Es hilft Ihnen bei der Planung eines Schulungs- und Beratungsprogramms speziell für Ihre Institution, Ihr Projekt oder Ihr Team.",
+      "ctaButton": "Erstellen Sie eine Schulungs- und technische Beratungsanfrage"
     }
   }
 }

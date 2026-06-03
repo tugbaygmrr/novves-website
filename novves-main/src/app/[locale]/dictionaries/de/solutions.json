@@ -9,30 +9,72 @@
     "ctaSecondary": "CFD-Analyse",
     "ctaSecondaryHref": "/hizmetler/cfd-analizi",
     "trustStrip": [
-      { "value": "EN 12101-3", "label": "Normkonformität" },
-      { "value": "F300/2H", "label": "Feuerwiderstand" },
-      { "value": "CFD", "label": "Simulationsgestützt" },
-      { "value": "113+", "label": "Abgeschlossene Projekte" }
+      {
+        "value": "EN 12101-3",
+        "label": "Normkonformität"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Feuerwiderstand"
+      },
+      {
+        "value": "CFD",
+        "label": "Simulationsgestützt"
+      },
+      {
+        "value": "113+",
+        "label": "Abgeschlossene Projekte"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Die erste Gefahr bei einem Brand ist der Rauch",
     "whyImportantP1": "Brandstatistiken zeigen: Die meisten Opfer fordern nicht die Flammen, sondern dichter Rauch und giftige Gase. Ein wirksames Rauchabzugssystem hält Fluchtwege sichtbar und atmungsaktiv, erleichtert den Einsatz der Feuerwehr und begrenzt Gebäudeschäden.",
     "whyImportantP2": "NOVVES begleitet den gesamten Ablauf von der Planung bis zur Inbetriebnahme mit einem eigenen Ingenieurteam. Für jedes Projekt wird eine CFD-Analyse durchgeführt, um Anordnung der Ventilatoren, Rauchausbreitungsszenarien und Räumungszeiten zu simulieren.",
     "steps": [
-      { "label": "Bestandsaufnahme & Analyse", "desc": "Begehung, CFD-Simulation, Prüfung der Normenrelevanz" },
-      { "label": "Engineering", "desc": "Ventilatorauswahl, Kanalplanung, Klappenplatzierung, Automatisierungsszenario" },
-      { "label": "Fertigung & Montage", "desc": "Eigenfertigung, fachgerechte Montage vor Ort" },
-      { "label": "Inbetriebnahme & Wartung", "desc": "Prüfung, Berichtswesen, wiederkehrende Inspektion und 24/7-Service" }
+      {
+        "label": "Bestandsaufnahme & Analyse",
+        "desc": "Begehung, CFD-Simulation, Prüfung der Normenrelevanz"
+      },
+      {
+        "label": "Engineering",
+        "desc": "Ventilatorauswahl, Kanalplanung, Klappenplatzierung, Automatisierungsszenario"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "Eigenfertigung, fachgerechte Montage vor Ort"
+      },
+      {
+        "label": "Inbetriebnahme & Wartung",
+        "desc": "Prüfung, Berichtswesen, wiederkehrende Inspektion und 24/7-Service"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Jet-Ventilator-Systeme", "desc": "Hochtemperaturbeständige axiale und radiale Jet-Ventilatoren zur Strömungsführung und zum Rauchabzug in geschlossenen Bereichen." },
-      { "title": "Rauchabzugsventilatoren", "desc": "Nach EN 12101-3 zertifiziert, Feuerwiderstandsklasse F300/2H mit 2 Stunden Dauerbetrieb bei 300\u00b0C." },
-      { "title": "Klappensysteme", "desc": "Servomotorisch angetriebene Schacht-Rauchklappen und Druckentlastungsklappen für Brand- und Rauchzonierung." },
-      { "title": "Sensoren & Meldung", "desc": "CO-, Rauch- und Hitzesensoren mit zonaler Datenerfassung und Grenzwertüberwachung." },
-      { "title": "Automatisierungsschaltungen", "desc": "PLC-gesteuerte MSR-Schaltschränke, BMS-Anbindung, szenariobasierte automatische Ventilatorsteuerung." },
-      { "title": "CFD-Engineering", "desc": "Projektspezifische numerische Strömungssimulation (CFD), Brandszenario-Simulation und Berichtswesen." }
+      {
+        "title": "Jet-Ventilator-Systeme",
+        "desc": "Hochtemperaturbeständige axiale und radiale Jet-Ventilatoren zur Strömungsführung und zum Rauchabzug in geschlossenen Bereichen."
+      },
+      {
+        "title": "Rauchabzugsventilatoren",
+        "desc": "Nach EN 12101-3 zertifiziert, Feuerwiderstandsklasse F300/2H mit 2 Stunden Dauerbetrieb bei 300°C."
+      },
+      {
+        "title": "Klappensysteme",
+        "desc": "Servomotorisch angetriebene Schacht-Rauchklappen und Druckentlastungsklappen für Brand- und Rauchzonierung."
+      },
+      {
+        "title": "Sensoren & Meldung",
+        "desc": "CO-, Rauch- und Hitzesensoren mit zonaler Datenerfassung und Grenzwertüberwachung."
+      },
+      {
+        "title": "Automatisierungsschaltungen",
+        "desc": "PLC-gesteuerte MSR-Schaltschränke, BMS-Anbindung, szenariobasierte automatische Ventilatorsteuerung."
+      },
+      {
+        "title": "CFD-Engineering",
+        "desc": "Projektspezifische numerische Strömungssimulation (CFD), Brandszenario-Simulation und Berichtswesen."
+      }
     ],
     "midCtaTitle": "Begehung und Angebot für Ihr Projekt anfordern",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -40,41 +82,247 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Konformität zu EN 12101-3", "desc": "Alle Systeme werden nach europäischen Brandschutzstandards ausgelegt und zertifiziert." },
-      { "title": "Feuerwiderstand F300/2H", "desc": "Zwei Stunden Dauerbetrieb bei 300\u00b0C, um die kritische Räumungszeit zu sichern." },
-      { "title": "CFD-gestützte Auslegung", "desc": "3D-Simulation je Projekt zur Verifikation von Rauchausbreitung, Temperatur und Sichtweite." },
-      { "title": "Rundum-Service", "desc": "Bestandsaufnahme, Engineering, Fertigung, Montage, Inbetriebnahme und wiederkehrende Wartung aus einer Hand." }
+      {
+        "title": "Konformität zu EN 12101-3",
+        "desc": "Alle Systeme werden nach europäischen Brandschutzstandards ausgelegt und zertifiziert."
+      },
+      {
+        "title": "Feuerwiderstand F300/2H",
+        "desc": "Zwei Stunden Dauerbetrieb bei 300°C, um die kritische Räumungszeit zu sichern."
+      },
+      {
+        "title": "CFD-gestützte Auslegung",
+        "desc": "3D-Simulation je Projekt zur Verifikation von Rauchausbreitung, Temperatur und Sichtweite."
+      },
+      {
+        "title": "Rundum-Service",
+        "desc": "Bestandsaufnahme, Engineering, Fertigung, Montage, Inbetriebnahme und wiederkehrende Wartung aus einer Hand."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Für jedes Projekt wird die passende Produktkombination festgelegt.",
     "areas": [
-      { "title": "Geschlossene Parkhäuser", "description": "CO-Abführung und Rauchabzug im Brandfall", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Straßen- und Schienentunnel", "description": "Brandzonierung und Strömungsführung", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Verkleidete Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Einkaufszentren", "description": "Rauchhaltung und -abführung", "products": [{ "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }, { "name": "MARLIN", "type": "Verkleidete Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Stadien und Konferenzhallen", "description": "Rauchabzug im Notfall", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Verkleidete Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Industrie Produktionsstätten", "description": "Prozessbedingte Heißgasabsaugung", "products": [{ "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }, { "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }] },
-      { "title": "Krankenhäuser und Gesundheitseinrichtungen", "description": "Rauchzonierung in Patientenbereichen", "products": [{ "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Flughäfen und U-Bahn-Stationen", "description": "Rauchabzug in unteren Ebenen", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Verkleidete Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }] },
-      { "title": "Lager und Logistikzentren", "description": "Rauchhaltung in großen Volumina", "products": [{ "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }, { "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Kraftwerke und Maschinenräume", "description": "Absaugung bei elektrischen Bränden", "products": [{ "name": "BEAR", "type": "Explosionsschutzventilatoren (Ex)", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
-      { "title": "Hotels und Wohnungen (Hochhaus)", "description": "Treppenhausüberdruckung, Rauchabzug", "products": [{ "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] }
+      {
+        "title": "Geschlossene Parkhäuser",
+        "description": "CO-Abführung und Rauchabzug im Brandfall",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Straßen- und Schienentunnel",
+        "description": "Brandzonierung und Strömungsführung",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Verkleidete Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Einkaufszentren",
+        "description": "Rauchhaltung und -abführung",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Verkleidete Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Stadien und Konferenzhallen",
+        "description": "Rauchabzug im Notfall",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Verkleidete Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Industrie Produktionsstätten",
+        "description": "Prozessbedingte Heißgasabsaugung",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Krankenhäuser und Gesundheitseinrichtungen",
+        "description": "Rauchzonierung in Patientenbereichen",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Flughäfen und U-Bahn-Stationen",
+        "description": "Rauchabzug in unteren Ebenen",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Verkleidete Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Lager und Logistikzentren",
+        "description": "Rauchhaltung in großen Volumina",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Kraftwerke und Maschinenräume",
+        "description": "Absaugung bei elektrischen Bränden",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Explosionsschutzventilatoren (Ex)",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Hotels und Wohnungen (Hochhaus)",
+        "description": "Treppenhausüberdruckung, Rauchabzug",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "In welchen Gebäuden ist ein Rauchabzugssystem vorgeschrieben?", "a": "Nach den jeweiligen Brandschutzvorschriften sind Rauchabzugssysteme u. a. in geschlossenen Parkhäusern, Einkaufszentren, Hochhäusern, Tunneln und Industrieanlagen erforderlich. Kontaktieren Sie uns für eine projektspezifische Bedarfsanalyse." },
-      { "q": "Was bedeutet die Zertifizierung nach EN 12101-3?", "a": "EN 12101-3 ist die europäische Norm, die die Leistungsfähigkeit von Rauch- und Wärmeabzugsventilatoren unter Brandbedingungen (Hochtemperatur) für eine definierte Zeit bestätigt. NOVVES-Produkte werden konform zu dieser Norm gefertigt." },
-      { "q": "Warum ist eine CFD-Analyse notwendig?", "a": "Die CFD-Analyse ermöglicht die Simulation von Jet-Ventilator-Standorten, Rauchausbreitung und Räumungszeiten rechnerisch. So wird die Systemleistung vor der Montage verifiziert und die Normkonformität dokumentiert." },
-      { "q": "Lässt sich eine Anbindung an bestehende Anlagen realisieren?", "a": "Ja, NOVVES-Rauchabzugssysteme lassen sich in vorhandene BMS-Infrastrukturen, Brandmeldezentrale und Automatisierung integrieren." }
+      {
+        "q": "In welchen Gebäuden ist ein Rauchabzugssystem vorgeschrieben?",
+        "a": "Nach den jeweiligen Brandschutzvorschriften sind Rauchabzugssysteme u. a. in geschlossenen Parkhäusern, Einkaufszentren, Hochhäusern, Tunneln und Industrieanlagen erforderlich. Kontaktieren Sie uns für eine projektspezifische Bedarfsanalyse."
+      },
+      {
+        "q": "Was bedeutet die Zertifizierung nach EN 12101-3?",
+        "a": "EN 12101-3 ist die europäische Norm, die die Leistungsfähigkeit von Rauch- und Wärmeabzugsventilatoren unter Brandbedingungen (Hochtemperatur) für eine definierte Zeit bestätigt. NOVVES-Produkte werden konform zu dieser Norm gefertigt."
+      },
+      {
+        "q": "Warum ist eine CFD-Analyse notwendig?",
+        "a": "Die CFD-Analyse ermöglicht die Simulation von Jet-Ventilator-Standorten, Rauchausbreitung und Räumungszeiten rechnerisch. So wird die Systemleistung vor der Montage verifiziert und die Normkonformität dokumentiert."
+      },
+      {
+        "q": "Lässt sich eine Anbindung an bestehende Anlagen realisieren?",
+        "a": "Ja, NOVVES-Rauchabzugssysteme lassen sich in vorhandene BMS-Infrastrukturen, Brandmeldezentrale und Automatisierung integrieren."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Benötigen Sie ein Rauchabzugssystem?",
     "finalCtaDesc": "Wenden Sie sich an unser Experten-Ingenieurteam für Begehung, CFD-Analyse, Engineering und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Rauch- und Wärmeabzugsanlagen; Es ist eine der wichtigsten elektromechanischen Komponenten des Brandschutzes in Parkhäusern, Tunneln, U-Bahn-Stationen, Flughäfen, Krankenhäusern, Energieanlagen und großvolumigen Bauwerken. Während es im täglichen Einsatz dafür sorgt, dass CO, NOx und ähnliche Schadstoffe auf einem sicheren Niveau gehalten werden, trägt es dazu bei, Fluchtwege offen zu halten, die Sicht aufrechtzuerhalten und Feuerwehrleuten dabei zu helfen, den Brandherd sicher zu erreichen, indem es Rauch und heiße Gase im Brandfall kontrolliert leitet.\n\nNOVVES bietet einen integrierten Rauchkontrollansatz mit DRAGONFLY-Entrauchungsventilatoren und Jet-Ventilatoren, HOUND-Rauchklappen, MARLIN-Frischluftventilatoren und HAWK-Automatisierungspanels. System; Es besteht nicht nur aus leistungsstarken Ventilatoren, sondern ist auch mit Automatisierung, abgedichteten Klappen, Frischluftausgleich, CFD-Verifizierung und EN/NFPA-konformer Technik ausgestattet, die je nach Brandszenario arbeitet. Ventilatoren der Temperaturklasse F300/F400 bringen die Gebäudesicherheit mit CO/NOx-sensorgesteuerter täglicher Belüftung und szenariobasierter Brandbekämpfung auf die nächste Stufe."
+    }
   },
-
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Komfort-Klima (HVAC)",
     "badge": "Lösungen",
@@ -85,30 +333,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/iklimlendirme",
     "trustStrip": [
-      { "value": "EC Motor", "label": "Energieeffizienz" },
-      { "value": "Eurovent", "label": "Zertifiziert" },
-      { "value": "BMS", "label": "Integration" },
-      { "value": "200+", "label": "Abgeschlossene Projekte" }
+      {
+        "value": "EC Motor",
+        "label": "Energieeffizienz"
+      },
+      {
+        "value": "Eurovent",
+        "label": "Zertifiziert"
+      },
+      {
+        "value": "BMS",
+        "label": "Integration"
+      },
+      {
+        "value": "200+",
+        "label": "Abgeschlossene Projekte"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Effiziente Klimatechnik bedeutet Komfort und Einsparungen",
     "whyImportantP1": "In gewerblichen und öffentlichen Gebäuden entfällt der größte Energieanteil häufig auf die Klimatechnik. Eine sachgerecht ausgelegte Anlage senkt die Betriebskosten deutlich und erhöht den Komfort für die Nutzer.",
     "whyImportantP2": "NOVVES liefert projektspezifische Lösungen mit modularen Luftbehandlungsaggregaten und Wärmerückgewinnung. EC-Motorenventilatoren, hocheffiziente Wärmeübertrager und intelligente Regelung minimieren den Energieverbrauch.",
     "steps": [
-      { "label": "Bedarfsermittlung", "desc": "Gebäudetyp, Nutzung, klimatische Randbedingungen und Komfortanforderungen" },
-      { "label": "Systemauslegung", "desc": "Auswahl LÜA, Kanalplanung, Diffusorplatzierung, Automatisierungsszenario" },
-      { "label": "Fertigung & Montage", "desc": "Modulare LÜA-Fertigung, fachgerechte Montage vor Ort" },
-      { "label": "Inbetriebnahme & Wartung", "desc": "Leistungsprüfung, Hydronischer Abgleich, periodischer Filter- und Wartungsservice" }
+      {
+        "label": "Bedarfsermittlung",
+        "desc": "Gebäudetyp, Nutzung, klimatische Randbedingungen und Komfortanforderungen"
+      },
+      {
+        "label": "Systemauslegung",
+        "desc": "Auswahl LÜA, Kanalplanung, Diffusorplatzierung, Automatisierungsszenario"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "Modulare LÜA-Fertigung, fachgerechte Montage vor Ort"
+      },
+      {
+        "label": "Inbetriebnahme & Wartung",
+        "desc": "Leistungsprüfung, Hydronischer Abgleich, periodischer Filter- und Wartungsservice"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Luftbehandlungsaggregate (TIGER)", "desc": "500–125.000 m³/h Leistung, modularer Aufbau, hocheffiziente Wärmeübertrager und EC-Ventilatoroptionen." },
-      { "title": "Wärmerückgewinnungsgeräte", "desc": "Rückgewinnung von Energie aus Abluft; Heiz- und Kühlkosten bis zu etwa 70 % reduzierbar." },
-      { "title": "Entfeuchtungsgeräte (DOLPHIN)", "desc": "Spezialisierte Feuchteregelung für Hallenbäder, SPAs und feuchte Bereiche." },
-      { "title": "Kanalventilatoren (KOI)", "desc": "Kompakte, leise Kanalventilatoren für Druckerhöhung und Luftverteilung im Kanal." },
-      { "title": "Diffusoren und Gitter", "desc": "Decken-, Wand- und Bodendiffusoren mit Volumenstromklappen für eine homogene Luftverteilung." },
-      { "title": "Automatisierung und Regelung", "desc": "Temperatur-, Feuchte- und CO2-Sensoren mit BMS-integrierten intelligenten Regelungsfeldern." }
+      {
+        "title": "Luftbehandlungsaggregate (TIGER)",
+        "desc": "500–125.000 m³/h Leistung, modularer Aufbau, hocheffiziente Wärmeübertrager und EC-Ventilatoroptionen."
+      },
+      {
+        "title": "Wärmerückgewinnungsgeräte",
+        "desc": "Rückgewinnung von Energie aus Abluft; Heiz- und Kühlkosten bis zu etwa 70 % reduzierbar."
+      },
+      {
+        "title": "Entfeuchtungsgeräte (DOLPHIN)",
+        "desc": "Spezialisierte Feuchteregelung für Hallenbäder, SPAs und feuchte Bereiche."
+      },
+      {
+        "title": "Kanalventilatoren (KOI)",
+        "desc": "Kompakte, leise Kanalventilatoren für Druckerhöhung und Luftverteilung im Kanal."
+      },
+      {
+        "title": "Diffusoren und Gitter",
+        "desc": "Decken-, Wand- und Bodendiffusoren mit Volumenstromklappen für eine homogene Luftverteilung."
+      },
+      {
+        "title": "Automatisierung und Regelung",
+        "desc": "Temperatur-, Feuchte- und CO2-Sensoren mit BMS-integrierten intelligenten Regelungsfeldern."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Komfort-Klimaprojekt",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -116,36 +406,142 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Energieeffizienz", "desc": "Bis zu etwa 40 % Einsparungen bei den Betriebskosten durch EC-Motoren und Wärmerückgewinnung." },
-      { "title": "Modularer Aufbau", "desc": "Individuell konfigurierte LÜA-Fertigung in der für Ihr Projekt benötigten Leistungsklasse." },
-      { "title": "Leiser Betrieb", "desc": "Geringe Schallpegel in Komfortbereichen durch akustisch gedämmtes Gehäuse und Schwingungsisolierung." },
-      { "title": "Alles aus einer Hand", "desc": "Engineering, Fertigung, Montage und Inbetriebnahme mit NOVVES-Garantie dahinter." }
+      {
+        "title": "Energieeffizienz",
+        "desc": "Bis zu etwa 40 % Einsparungen bei den Betriebskosten durch EC-Motoren und Wärmerückgewinnung."
+      },
+      {
+        "title": "Modularer Aufbau",
+        "desc": "Individuell konfigurierte LÜA-Fertigung in der für Ihr Projekt benötigten Leistungsklasse."
+      },
+      {
+        "title": "Leiser Betrieb",
+        "desc": "Geringe Schallpegel in Komfortbereichen durch akustisch gedämmtes Gehäuse und Schwingungsisolierung."
+      },
+      {
+        "title": "Alles aus einer Hand",
+        "desc": "Engineering, Fertigung, Montage und Inbetriebnahme mit NOVVES-Garantie dahinter."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Klimalösungen, abgestimmt auf jeden Gebäudetyp.",
     "areas": [
-      { "title": "Büros und Business-Center", "description": "Komfortbelüftung in Großraumbüros und Besprechungsräumen", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Hotels und Wohnanlagen", "description": "Zonenweise Temperaturregelung und Zuluftversorgung", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC-Ventilatoren", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Einkaufszentren", "description": "Homogene Klimaführung in stark frequentierten Bereichen", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }] },
-      { "title": "Krankenhäuser und Gesundheitseinrichtungen", "description": "Präzise Temperaturregelung bei hygienischen Luftbedingungen", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Pool- und SPA-Bereiche", "description": "Feuchteregelung und Komfort", "products": [{ "name": "DOLPHIN", "type": "Entfeuchtungsgeräte", "image": "/images/products/dolphin-main.jpg" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Büros und Business-Center",
+        "description": "Komfortbelüftung in Großraumbüros und Besprechungsräumen",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Hotels und Wohnanlagen",
+        "description": "Zonenweise Temperaturregelung und Zuluftversorgung",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC-Ventilatoren",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Einkaufszentren",
+        "description": "Homogene Klimaführung in stark frequentierten Bereichen",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Krankenhäuser und Gesundheitseinrichtungen",
+        "description": "Präzise Temperaturregelung bei hygienischen Luftbedingungen",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Pool- und SPA-Bereiche",
+        "description": "Feuchteregelung und Komfort",
+        "products": [
+          {
+            "name": "DOLPHIN",
+            "type": "Entfeuchtungsgeräte",
+            "image": "/images/products/dolphin-main.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Was ist der Unterschied zwischen einem LÜA und einer Split-Klimaanlage?", "a": "Ein LÜA ist eine zentrale Anlage, die über große Flächen hinweg homogene Temperatur, Feuchteregelung und Filtration bereitstellt. Splitgeräte arbeiten raumweise. Für Gewerbegebäude sind zentrale LÜA-Systeme in der Regel deutlich effizienter." },
-      { "q": "Wie viel Energie spart Wärmerückgewinnung?", "a": "Je nach Betrieb sind Einsparungen in der Größenordnung von 50–70 % möglich. Wärme aus der Abluft wird der Zuluft zugeführt und reduziert Heiz- und Kühllasten erheblich." },
-      { "q": "Lässt sich eine Klimaanlage in Bestandsgebäuden nachrüsten?", "a": "Ja, modulare NOVVES-LÜA lassen sich dank kompakter Abmessungen in Bestandsgebäude integrieren. Nach einer Begehung schlagen wir die passende Lösung vor." },
-      { "q": "Welche Wartungsintervalle gelten?", "a": "Filterwechsel üblicherweise alle 3–6 Monate. Eine allgemeine Anlagenwartung wird mindestens zweimal jährlich empfohlen. NOVVES-Wartungsverträge sorgen dafür, dass Ihre Anlagen dauerhaft effizient laufen." }
+      {
+        "q": "Was ist der Unterschied zwischen einem LÜA und einer Split-Klimaanlage?",
+        "a": "Ein LÜA ist eine zentrale Anlage, die über große Flächen hinweg homogene Temperatur, Feuchteregelung und Filtration bereitstellt. Splitgeräte arbeiten raumweise. Für Gewerbegebäude sind zentrale LÜA-Systeme in der Regel deutlich effizienter."
+      },
+      {
+        "q": "Wie viel Energie spart Wärmerückgewinnung?",
+        "a": "Je nach Betrieb sind Einsparungen in der Größenordnung von 50–70 % möglich. Wärme aus der Abluft wird der Zuluft zugeführt und reduziert Heiz- und Kühllasten erheblich."
+      },
+      {
+        "q": "Lässt sich eine Klimaanlage in Bestandsgebäuden nachrüsten?",
+        "a": "Ja, modulare NOVVES-LÜA lassen sich dank kompakter Abmessungen in Bestandsgebäude integrieren. Nach einer Begehung schlagen wir die passende Lösung vor."
+      },
+      {
+        "q": "Welche Wartungsintervalle gelten?",
+        "a": "Filterwechsel üblicherweise alle 3–6 Monate. Eine allgemeine Anlagenwartung wird mindestens zweimal jährlich empfohlen. NOVVES-Wartungsverträge sorgen dafür, dass Ihre Anlagen dauerhaft effizient laufen."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine Komfort-Klimaanlage?",
     "finalCtaDesc": "Wenden Sie sich an unser Engineering-Team für Projektplanung, LÜA-Auswahl und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Komfortklimaanlagen; Es wurde entwickelt, um die Raumluftqualität, den thermischen Komfort, die Ruhe und die Energieeffizienz in Büros, Hotels, Schulen, Verwaltungsbereichen von Krankenhäusern, Einkaufszentren, Wohnhäusern, Banken, öffentlichen Gebäuden, Flughäfen, Restaurants und Fitnessstudios gemeinsam zu verwalten. Da Menschen in modernen Gebäuden die meiste Zeit in geschlossenen Räumen verbringen, stehen Parameter wie CO₂, VOC, Partikel, Luftfeuchtigkeit, Temperatur und Luftgeschwindigkeit in direktem Zusammenhang mit Gesundheit, Effizienz und Benutzerzufriedenheit.\n\nNOVVES entwickelt gebäudetypspezifische Klimatisierungslösungen mit CARACAL-Wärmerückgewinnungsgeräten, TIGER-Klimageräten, HUMMINGBIRD-EC-Ventilatoren, HOUND-Luftregulierungs- und VAV-Klappen, KOI-Silent-Rohrventilatoren, SEAHORSE-Badventilatoren, TURTLE-Zellenventilatoren, DRAGONFLY-Luftbewegungslösungen mit hoher Kapazität und BUTTERFLY-Küchenabluftventilatoren. Systeme; Es ist mit bedarfsgesteuerter Belüftung, Wärmerückgewinnung, niedrigem Schallpegel, freier Kühlung, zonenbasierter Steuerung, hoher Filterung und energieeffizienten Betriebszielen ausgestattet."
+    }
   },
-
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Hygienische Filter-Lüftung",
     "badge": "Lösungen",
@@ -156,30 +552,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-filtrasyonu",
     "trustStrip": [
-      { "value": "HEPA H14", "label": "Filterklasse" },
-      { "value": "ISO 14644", "label": "Reinraumstandard" },
-      { "value": "GMP", "label": "Konforme Auslegung" },
-      { "value": "99.995%", "label": "Partikelrückhalt" }
+      {
+        "value": "HEPA H14",
+        "label": "Filterklasse"
+      },
+      {
+        "value": "ISO 14644",
+        "label": "Reinraumstandard"
+      },
+      {
+        "value": "GMP",
+        "label": "Konforme Auslegung"
+      },
+      {
+        "value": "99.995%",
+        "label": "Partikelrückhalt"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Saubere Luft, sicheres Umfeld",
     "whyImportantP1": "In Operationssälen, pharmazeutischen Produktionsstätten, Lebensmittelbereichen und Laboratorien wirken sich Luftpartikel und mikrobiologische Kontaminationen direkt auf die Gesundheit und die Produktqualität aus.",
     "whyImportantP2": "NOVVES-Hygienelüftung schafft klassifizierte Reinraumumgebungen durch mehrstufige Filtration (G4-Vorfilter + F7/F9-Taschenfilter + HEPA H13/H14), Über- und Unterdruckführung sowie Laminarstromtechnik.",
     "steps": [
-      { "label": "Reinraumklassifizierung", "desc": "Festlegung nach ISO 14644 / GMP, Partikel- und Druckanforderungen" },
-      { "label": "Systemauslegung", "desc": "Filterstufen, Luftwechselrate, Druckkaskaden-Auslegung" },
-      { "label": "Fertigung & Montage", "desc": "Gehäuse aus Edelstahl, Integration HEPA-Filter, Montage vor Ort" },
-      { "label": "Validierung & Wartung", "desc": "Partikelzählung, Dichtigkeitsprüfung DOP/PAO, wiederkehrende Wartung" }
+      {
+        "label": "Reinraumklassifizierung",
+        "desc": "Festlegung nach ISO 14644 / GMP, Partikel- und Druckanforderungen"
+      },
+      {
+        "label": "Systemauslegung",
+        "desc": "Filterstufen, Luftwechselrate, Druckkaskaden-Auslegung"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "Gehäuse aus Edelstahl, Integration HEPA-Filter, Montage vor Ort"
+      },
+      {
+        "label": "Validierung & Wartung",
+        "desc": "Partikelzählung, Dichtigkeitsprüfung DOP/PAO, wiederkehrende Wartung"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Hygiene-Luftbehandlungsaggregate", "desc": "Edelstahlgehäuse, Innenbeschichtungen, Hygienepaneele und modularer Aufbau gemäß Reinraumstandards." },
-      { "title": "HEPA-Filtrationseinheit", "desc": "HEPA-Filter der Klassen H13/H14 mit 99,995 % Partikelrückhalt." },
-      { "title": "Laminarstromgerät (LAF)", "desc": "Gerichtete Strömung in Operationssälen und Reinräumen für partikelarme Umgebungen." },
-      { "title": "Druckregelsysteme", "desc": "Raum-zu-Raum-Differenzdrucküberwachung und automatische Klappenregelung." },
-      { "title": "Vorfilter und Taschenfilter", "desc": "G4-Vorfilters und F7/F9-Taschenfilter verlängern die HEPA-Lebensdauer durch Mehrstufigkeit." },
-      { "title": "Überwachung und Automatisierung", "desc": "Partikelzähler, Drucksensoren und BMS-Anbindung für 24/7-Überwachung." }
+      {
+        "title": "Hygiene-Luftbehandlungsaggregate",
+        "desc": "Edelstahlgehäuse, Innenbeschichtungen, Hygienepaneele und modularer Aufbau gemäß Reinraumstandards."
+      },
+      {
+        "title": "HEPA-Filtrationseinheit",
+        "desc": "HEPA-Filter der Klassen H13/H14 mit 99,995 % Partikelrückhalt."
+      },
+      {
+        "title": "Laminarstromgerät (LAF)",
+        "desc": "Gerichtete Strömung in Operationssälen und Reinräumen für partikelarme Umgebungen."
+      },
+      {
+        "title": "Druckregelsysteme",
+        "desc": "Raum-zu-Raum-Differenzdrucküberwachung und automatische Klappenregelung."
+      },
+      {
+        "title": "Vorfilter und Taschenfilter",
+        "desc": "G4-Vorfilters und F7/F9-Taschenfilter verlängern die HEPA-Lebensdauer durch Mehrstufigkeit."
+      },
+      {
+        "title": "Überwachung und Automatisierung",
+        "desc": "Partikelzähler, Drucksensoren und BMS-Anbindung für 24/7-Überwachung."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Hygiene-Lüftungsprojekt",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -187,36 +625,142 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Konformität zu ISO 14644", "desc": "Planung und Validierung entsprechend der Reinraumklassifizierung." },
-      { "title": "GMP-konforme Auslegung", "desc": "Systemplanung nach GMP-Anforderungen der Pharma- und Lebensmittelindustrie." },
-      { "title": "Mehrstufige Filtration", "desc": "G4 + F7/F9 + HEPA H14 für höchste Luftreinheit." },
-      { "title": "Rundum-Service", "desc": "Planung, Fertigung, Montage, Validierung und wiederkehrende Wartung aus einer Hand." }
+      {
+        "title": "Konformität zu ISO 14644",
+        "desc": "Planung und Validierung entsprechend der Reinraumklassifizierung."
+      },
+      {
+        "title": "GMP-konforme Auslegung",
+        "desc": "Systemplanung nach GMP-Anforderungen der Pharma- und Lebensmittelindustrie."
+      },
+      {
+        "title": "Mehrstufige Filtration",
+        "desc": "G4 + F7/F9 + HEPA H14 für höchste Luftreinheit."
+      },
+      {
+        "title": "Rundum-Service",
+        "desc": "Planung, Fertigung, Montage, Validierung und wiederkehrende Wartung aus einer Hand."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Lösungen für alle kritischen Bereiche mit hygienischer Lüftung.",
     "areas": [
-      { "title": "Operationssäle", "description": "Laminarstrom, HEPA-gefilterte sterile Umgebung", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Pharmazeutische Produktion", "description": "Reinraumlüftung nach GMP-Klassen", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Lebensmittelverarbeitung", "description": "Kontaminationsarme Produktionsumgebung", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC-Ventilatoren", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Laboratorien", "description": "Unter- und Überdruckbereiche mit Trennung", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Elektronik- und Halbleiterfertigung", "description": "Partikelkontrolle in Ultra-Reinräumen", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] }
+      {
+        "title": "Operationssäle",
+        "description": "Laminarstrom, HEPA-gefilterte sterile Umgebung",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Pharmazeutische Produktion",
+        "description": "Reinraumlüftung nach GMP-Klassen",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Lebensmittelverarbeitung",
+        "description": "Kontaminationsarme Produktionsumgebung",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC-Ventilatoren",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Laboratorien",
+        "description": "Unter- und Überdruckbereiche mit Trennung",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Elektronik- und Halbleiterfertigung",
+        "description": "Partikelkontrolle in Ultra-Reinräumen",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Wie oft sollten HEPA-Filter gewechselt werden?", "a": "Die Lebensdauer von HEPA-Filtern liegt je nach Betrieb bei etwa 2–5 Jahren. Regelmäßiger Austausch von Vor- und Taschenfiltern verlängert die HEPA-Lebensdauer erheblich. Der Differenzdruck bestimmt den Wechselzeitpunkt zuverlässig." },
-      { "q": "Wie wird die Reinraumklassifizierung festgelegt?", "a": "Sie basiert auf der Partikelkonzentration in der Luft nach ISO 14644-1. Beispielsweise wird für Operationssäle häufig ISO 5 genutzt, für pharmazeutische Produktion typischerweise ISO 7–8." },
-      { "q": "Lassen sich HEPA-Filter in eine bestehende Lüftung integrieren?", "a": "Je nach Kapazität und Druckverlust der Bestandsanlage ist eine Integration möglich. Für mehrstufige Filtration wird in der Regel jedoch eine Anpassung des LÜA empfohlen." },
-      { "q": "Bieten Sie Validierungsleistungen an?", "a": "Ja, NOVVES erbringt Validierungsleistungen für hygienische Lüftungsprojekte, u. a. Partikelzählung, Dichtigkeitsprüfungen DOP/PAO und Druckmapping." }
+      {
+        "q": "Wie oft sollten HEPA-Filter gewechselt werden?",
+        "a": "Die Lebensdauer von HEPA-Filtern liegt je nach Betrieb bei etwa 2–5 Jahren. Regelmäßiger Austausch von Vor- und Taschenfiltern verlängert die HEPA-Lebensdauer erheblich. Der Differenzdruck bestimmt den Wechselzeitpunkt zuverlässig."
+      },
+      {
+        "q": "Wie wird die Reinraumklassifizierung festgelegt?",
+        "a": "Sie basiert auf der Partikelkonzentration in der Luft nach ISO 14644-1. Beispielsweise wird für Operationssäle häufig ISO 5 genutzt, für pharmazeutische Produktion typischerweise ISO 7–8."
+      },
+      {
+        "q": "Lassen sich HEPA-Filter in eine bestehende Lüftung integrieren?",
+        "a": "Je nach Kapazität und Druckverlust der Bestandsanlage ist eine Integration möglich. Für mehrstufige Filtration wird in der Regel jedoch eine Anpassung des LÜA empfohlen."
+      },
+      {
+        "q": "Bieten Sie Validierungsleistungen an?",
+        "a": "Ja, NOVVES erbringt Validierungsleistungen für hygienische Lüftungsprojekte, u. a. Partikelzählung, Dichtigkeitsprüfungen DOP/PAO und Druckmapping."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine hygienische Lüftungslösung?",
     "finalCtaDesc": "Wenden Sie sich an unser Engineering-Team für Reinraumklassifizierung, Projektplanung und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Belüftung in Hygienebereichen; Über den Komfort hinaus ist es ein kritisches technisches Hindernis, das sich direkt auf die menschliche Gesundheit, die Produktqualität und die Betriebssicherheit auswirkt. Luft in Operationssälen, Intensivstationen, Reinräumen, pharmazeutischen Produktionsanlagen, Lebensmittelproduktionsbereichen, Labors, Krankenhausdiensten, Industrieküchen und Veterinär-/Tierhaltungsbereichen; Es sollte auf Partikel, Krankheitserreger, Geruch, Feuchtigkeit, Kreuzkontamination und Druckunterschiede überprüft werden. Unzureichender Luftstrom in diesen Bereichen; Es kann zu Infektionsrisiken, Produktverunreinigungen, Kondensation, mikrobiologischer Vermehrung und Arbeitssicherheitsproblemen kommen.\n\nNOVVES bietet integrierte Lüftungslösungen speziell für kritische Bereiche mit hygienischen TIGER HYG-Lüftungsgeräten, TURTLE-Zellenventilatoren, DRAGONFLY-Rauch-/Absauglösungen, CARACAL-Wärmerückgewinnungsgeräten, HUMMINGBIRD EC-Ventilatoren, versiegelten HOUND-Klappen, BUTTERFLY-Küchenabluftventilatoren und NAUTILUS-Hochleistungsventilatoren. Systemdesigns; Es ist nach Kriterien wie HEPA/ULPA-Filtration, Über-/Unterdruckkaskade, laminarem Luftstrom, Null-Rezirkulation, Kondensationskontrolle, Abwaschbeständigkeit und Verhinderung von Kreuzkontaminationen konzipiert."
+    }
   },
-
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Industrielles Luftmanagement",
     "badge": "Lösungen",
@@ -227,30 +771,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "120\u00b0C", "label": "Temperaturbeständigkeit" },
-      { "value": "ATEX", "label": "Ex-Option" },
-      { "value": "IP55", "label": "Schutzart" },
-      { "value": "300+", "label": "Abgeschlossene Projekte" }
+      {
+        "value": "120°C",
+        "label": "Temperaturbeständigkeit"
+      },
+      {
+        "value": "ATEX",
+        "label": "Ex-Option"
+      },
+      {
+        "value": "IP55",
+        "label": "Schutzart"
+      },
+      {
+        "value": "300+",
+        "label": "Abgeschlossene Projekte"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Sachgerechtes Luftmanagement für die Produktionseffizienz",
     "whyImportantP1": "In Industrieanlagen beeinflussen prozessbedingt anfallende Wärme, Feuchte, Staub und Gase direkt die Gesundheit der Beschäftigten, die Produktqualität und die Lebensdauer der Anlagen. Wirksames Luftmanagement ist zugleich Grundlage des Arbeitsschutzes.",
     "whyImportantP2": "NOVVES bündelt Heißgasabsaugung, Zuluft und Generalentlüftung aus einer Quelle: leistungsstarke Ventilatoren, Kanalkonzepte und Automatisierung, speziell auf industrielle Anforderungen abgestimmt.",
     "steps": [
-      { "label": "Begehung", "desc": "Anlagentyp, Prozessbedingungen, Analyse Temperatur/Feuchte/Staub" },
-      { "label": "Engineering", "desc": "Ventilatorauswahl, Kanalberechnung, Ausgleich Abluft/Zuluft" },
-      { "label": "Fertigung & Montage", "desc": "Hoch belastbare Ventilatoren, industrielle Kanalherstellung, Montage vor Ort" },
-      { "label": "Inbetriebnahme & Service", "desc": "Leistungsmessung, Abgleich, wiederkehrende Wartung und 24/7-Support" }
+      {
+        "label": "Begehung",
+        "desc": "Anlagentyp, Prozessbedingungen, Analyse Temperatur/Feuchte/Staub"
+      },
+      {
+        "label": "Engineering",
+        "desc": "Ventilatorauswahl, Kanalberechnung, Ausgleich Abluft/Zuluft"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "Hoch belastbare Ventilatoren, industrielle Kanalherstellung, Montage vor Ort"
+      },
+      {
+        "label": "Inbetriebnahme & Service",
+        "desc": "Leistungsmessung, Abgleich, wiederkehrende Wartung und 24/7-Support"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Industrie-Radialventilatoren (NAUTILUS)", "desc": "Druck- und temperaturbeständige Radialventilatoren mit Einfach- oder Doppelwand." },
-      { "title": "Axialventilatoren (MARLIN)", "desc": "Axialventilatoren mit hohem Volumenstrom, verkleidet oder mit Schaufeln, für große Räume." },
-      { "title": "Dachventilatoren (HERON)", "desc": "Radiale und axiale Dachventilatoren zur Abluft oder Zuluft auf Dächern." },
-      { "title": "Wandventilatoren (OWL)", "desc": "Fassadenmontierte radiale und axiale Wandventilatoren für Zuluft oder Abluft." },
-      { "title": "Kanalventilatoren (KOI)", "desc": "Kompakte Kanalventilatoren für Druckerhöhung und Lufttransport im Kanal." },
-      { "title": "Automatisierung und Regelung", "desc": "Frequenzumrichter, Temperatur-/Feuchtesensoren, PLC-Felder und BMS-Integration." }
+      {
+        "title": "Industrie-Radialventilatoren (NAUTILUS)",
+        "desc": "Druck- und temperaturbeständige Radialventilatoren mit Einfach- oder Doppelwand."
+      },
+      {
+        "title": "Axialventilatoren (MARLIN)",
+        "desc": "Axialventilatoren mit hohem Volumenstrom, verkleidet oder mit Schaufeln, für große Räume."
+      },
+      {
+        "title": "Dachventilatoren (HERON)",
+        "desc": "Radiale und axiale Dachventilatoren zur Abluft oder Zuluft auf Dächern."
+      },
+      {
+        "title": "Wandventilatoren (OWL)",
+        "desc": "Fassadenmontierte radiale und axiale Wandventilatoren für Zuluft oder Abluft."
+      },
+      {
+        "title": "Kanalventilatoren (KOI)",
+        "desc": "Kompakte Kanalventilatoren für Druckerhöhung und Lufttransport im Kanal."
+      },
+      {
+        "title": "Automatisierung und Regelung",
+        "desc": "Frequenzumrichter, Temperatur-/Feuchtesensoren, PLC-Felder und BMS-Integration."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Industrielüftungsprojekt",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -258,36 +844,142 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Hohe Temperaturbeständigkeit", "desc": "Ventilatoroptionen mit Dauerbetrieb bis 120\u00b0C für Prozessabsaugung." },
-      { "title": "Robuste Bauweise", "desc": "Dicke Gehäusebleche, verstärkte Lagerungen und korrosionsbeständige Beschichtungsoptionen." },
-      { "title": "Breites Produktspektrum", "desc": "Radial-, Axial-, Dach-, Wand- und Kanalventilatoren für vielfältige Anforderungen." },
-      { "title": "Dauerhafte Leistung", "desc": "Kontinuierlicher Betrieb mit schweren Lagerbaugruppen, Auswuchtung und Schwingungsüberwachung." }
+      {
+        "title": "Hohe Temperaturbeständigkeit",
+        "desc": "Ventilatoroptionen mit Dauerbetrieb bis 120°C für Prozessabsaugung."
+      },
+      {
+        "title": "Robuste Bauweise",
+        "desc": "Dicke Gehäusebleche, verstärkte Lagerungen und korrosionsbeständige Beschichtungsoptionen."
+      },
+      {
+        "title": "Breites Produktspektrum",
+        "desc": "Radial-, Axial-, Dach-, Wand- und Kanalventilatoren für vielfältige Anforderungen."
+      },
+      {
+        "title": "Dauerhafte Leistung",
+        "desc": "Kontinuierlicher Betrieb mit schweren Lagerbaugruppen, Auswuchtung und Schwingungsüberwachung."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Lösungen für alle Produktions- und Anlagenarten mit industrieller Lüftung.",
     "areas": [
-      { "title": "Automobilwerke", "description": "Lackierkabinenabsaugung, Schweißrauchabsaugung", "products": [{ "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Metall- und Stahlwerke", "description": "Heißgasabsaugung und Zuluftversorgung", "products": [{ "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }] },
-      { "title": "Textilfabriken", "description": "Feuchteregelung und Faserstaubabsaugung", "products": [{ "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Chemie- und Petrochemie", "description": "Absaugung aggressiver Gase und Zuluftversorgung", "products": [{ "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
-      { "title": "Lager und Logistikzentren", "description": "Generallüftung und Temperaturführung", "products": [{ "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Automobilwerke",
+        "description": "Lackierkabinenabsaugung, Schweißrauchabsaugung",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Metall- und Stahlwerke",
+        "description": "Heißgasabsaugung und Zuluftversorgung",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Textilfabriken",
+        "description": "Feuchteregelung und Faserstaubabsaugung",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Chemie- und Petrochemie",
+        "description": "Absaugung aggressiver Gase und Zuluftversorgung",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Lager und Logistikzentren",
+        "description": "Generallüftung und Temperaturführung",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Worauf ist bei der Auswahl eines Industrieventilators zu achten?", "a": "Luftmenge, Druckverlust, Betriebstemperatur, Umgebungsbedingungen (Staub, Feuchte, aggressive Gase) und Geräuschpegel sind zentrale Kriterien. Das NOVVES-Engineering wählt je Projekt den passenden Ventilatortyp." },
-      { "q": "Welche Ventilatoren kommen bei hohen Temperaturen zum Einsatz?", "a": "Radialventilatoren der Serie NAUTILUS sind für Dauerbetrieb bis 120\u00b0C ausgelegt. Bei höheren Temperaturen werden Werkstoffe und Kühlkonzepte speziell angepasst." },
-      { "q": "Ist ein ATEX-zertifizierter Ventilator erforderlich?", "a": "In Bereichen mit explosionsfähiger Atmosphäre (Chemie, Petrochemie, Lackiererei, Getreidesilo usw.) sind die ATEX-zertifizierten Ventilatoren der Serie BEAR vorgeschrieben." },
-      { "q": "Kann eine Bestandsanlage nachgerüstet werden?", "a": "Ja, Leistungserhöhungen oder neue Abluftstränge lassen sich an bestehende Kanal- und Ventilatoranlagen anbinden. Nach einer Begehung ermitteln wir die geeignete Lösung." }
+      {
+        "q": "Worauf ist bei der Auswahl eines Industrieventilators zu achten?",
+        "a": "Luftmenge, Druckverlust, Betriebstemperatur, Umgebungsbedingungen (Staub, Feuchte, aggressive Gase) und Geräuschpegel sind zentrale Kriterien. Das NOVVES-Engineering wählt je Projekt den passenden Ventilatortyp."
+      },
+      {
+        "q": "Welche Ventilatoren kommen bei hohen Temperaturen zum Einsatz?",
+        "a": "Radialventilatoren der Serie NAUTILUS sind für Dauerbetrieb bis 120°C ausgelegt. Bei höheren Temperaturen werden Werkstoffe und Kühlkonzepte speziell angepasst."
+      },
+      {
+        "q": "Ist ein ATEX-zertifizierter Ventilator erforderlich?",
+        "a": "In Bereichen mit explosionsfähiger Atmosphäre (Chemie, Petrochemie, Lackiererei, Getreidesilo usw.) sind die ATEX-zertifizierten Ventilatoren der Serie BEAR vorgeschrieben."
+      },
+      {
+        "q": "Kann eine Bestandsanlage nachgerüstet werden?",
+        "a": "Ja, Leistungserhöhungen oder neue Abluftstränge lassen sich an bestehende Kanal- und Ventilatoranlagen anbinden. Nach einer Begehung ermitteln wir die geeignete Lösung."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine Industrielüftung?",
     "finalCtaDesc": "Kontaktieren Sie uns für Begehung, Engineering und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Luftmanagement in Industrieanlagen; Es handelt sich um eine der grundlegenden Infrastrukturen für Produktionskontinuität, Mitarbeitergesundheit, Brandschutz, Umweltemissionskontrolle und Prozessqualität. Staub, Rauch, VOC, Ölnebel, korrosive Gase sowie hohe Temperatur- und Feuchtigkeitsbelastungen, die in Branchen wie Schwerindustrie, Schweißen, Farben, Gießen, Metallurgie, Textil, Papier, Energie, Automobil, Maschinenbau, Abfallverarbeitung und Möbel freigesetzt werden, können mit Standard-HLK-Ansätzen nicht bewältigt werden. Das Wetter in diesen Gebieten; Es sollte als Teil des Prozesses entsprechend der Ingenieursdisziplin entworfen werden.\n\nNOVVES bietet die Erfassung von Schadstoffen an der Quelle, die Einteilung in Unterdruckzonen, die Evakuierung thermischer Lasten, die Staubabsaugung, die Absaugung von Lösungsmitteln, das Wärmemanagement und die Kontinuität des industriellen Betriebs rund um die Uhr mit leistungsstarken Ventilator- und Luftmanagementlösungen. Hochdruck-Schneckenventilatoren NAUTILUS, Abluftventilatoren vom Dachtyp HERON, Industrieventilatoren vom Wandtyp OWL, Staubsammelsysteme ELEPHANT, Klima-/Befeuchtungsanlagen TIGER und Axiallösungen MARLIN; Sie werden entsprechend den Prozessrisiken der Anlage gemeinsam oder getrennt konzipiert."
+    }
   },
-
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Lüftung landwirtschaftlicher Betriebe",
     "badge": "Lösungen",
@@ -298,30 +990,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "IP55", "label": "Schutzart" },
-      { "value": "Anti-Corrosion", "label": "Beschichtung" },
-      { "value": "EC Motor", "label": "Energieeinsparung" },
-      { "value": "150+", "label": "Abgeschlossene Projekte" }
+      {
+        "value": "IP55",
+        "label": "Schutzart"
+      },
+      {
+        "value": "Anti-Corrosion",
+        "label": "Beschichtung"
+      },
+      {
+        "value": "EC Motor",
+        "label": "Energieeinsparung"
+      },
+      {
+        "value": "150+",
+        "label": "Abgeschlossene Projekte"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Tierwohl und Produktionseffizienz",
     "whyImportantP1": "In Tierhaltungsbetrieben erhöhen Ammoniak, Feuchte, Wärmestau und mangelnde Zirkulation den Stress der Tiere und mindern Wachstum, Milchleistung und Eierproduktion.",
     "whyImportantP2": "NOVVES hält Temperatur, Feuchte und Gaskonzentration im optimalen Bereich mit korrosionsbeständigen Ventilatorsystemen für Geflügel, Rinderställe und sonstige Haltungen. EC-Motoren und intelligente Regelung senken die Betriebskosten.",
     "steps": [
-      { "label": "Anlagenanalyse", "desc": "Tierart, Gebäudemaße, Klima und Lüftungsbedarf" },
-      { "label": "Systemauslegung", "desc": "Ventilatorauswahl, Anordnung, Zuluft-/Abluftbilanz, Kühlintegration" },
-      { "label": "Fertigung & Montage", "desc": "Korrosionsbeständige Ventilatoren, fachgerechte Montage vor Ort" },
-      { "label": "Inbetriebnahme & Support", "desc": "Leistungsprüfung, Kalibrierung der Automatisierung, Wartung und technischer Support" }
+      {
+        "label": "Anlagenanalyse",
+        "desc": "Tierart, Gebäudemaße, Klima und Lüftungsbedarf"
+      },
+      {
+        "label": "Systemauslegung",
+        "desc": "Ventilatorauswahl, Anordnung, Zuluft-/Abluftbilanz, Kühlintegration"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "Korrosionsbeständige Ventilatoren, fachgerechte Montage vor Ort"
+      },
+      {
+        "label": "Inbetriebnahme & Support",
+        "desc": "Leistungsprüfung, Kalibrierung der Automatisierung, Wartung und technischer Support"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Geflügelstall-Ventilatoren (CHICKEN)", "desc": "Korrosionsbeständige Axialventilatoren mit hohem Volumenstrom, speziell für Geflügel und kleine Nutztiere." },
-      { "title": "Wand-Abluftventilatoren (OWL)", "desc": "Fassadenmontierte Abluftventilatoren mit verzinktem Gehäuse für Rinderställe und Tierhaltung." },
-      { "title": "Dachventilatoren (HERON)", "desc": "Korrosionsbeständige Dachventilatoren für Abluft und Zuluft." },
-      { "title": "Verdunstungskühl-Pads", "desc": "Adiabate Waben-Kühlsysteme zur Senkung der Innentemperaturen in heißen Klimazonen." },
-      { "title": "Zuluftgitter", "desc": "Verstellbare Lamellengitter für gesteuerte Zuluft und Tunnelbelüftung." },
-      { "title": "Automatisierung und Regelung", "desc": "Temperatur-, Feuchte- und Ammoniaksensoren mit automatischer Drehzahlregelung und Klimamanagement." }
+      {
+        "title": "Geflügelstall-Ventilatoren (CHICKEN)",
+        "desc": "Korrosionsbeständige Axialventilatoren mit hohem Volumenstrom, speziell für Geflügel und kleine Nutztiere."
+      },
+      {
+        "title": "Wand-Abluftventilatoren (OWL)",
+        "desc": "Fassadenmontierte Abluftventilatoren mit verzinktem Gehäuse für Rinderställe und Tierhaltung."
+      },
+      {
+        "title": "Dachventilatoren (HERON)",
+        "desc": "Korrosionsbeständige Dachventilatoren für Abluft und Zuluft."
+      },
+      {
+        "title": "Verdunstungskühl-Pads",
+        "desc": "Adiabate Waben-Kühlsysteme zur Senkung der Innentemperaturen in heißen Klimazonen."
+      },
+      {
+        "title": "Zuluftgitter",
+        "desc": "Verstellbare Lamellengitter für gesteuerte Zuluft und Tunnelbelüftung."
+      },
+      {
+        "title": "Automatisierung und Regelung",
+        "desc": "Temperatur-, Feuchte- und Ammoniaksensoren mit automatischer Drehzahlregelung und Klimamanagement."
+      }
     ],
     "midCtaTitle": "Angebot für die Lüftung Ihres Tierhaltungsbetriebs",
     "midCtaDesc": "Unser Expertenteam unterbreitet Ihnen ein maßgeschneidertes Konzept.",
@@ -329,35 +1063,126 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Korrosionsbeständigkeit", "desc": "Verzinkung und Sonderbeschichtungen für lange Lebensdauer trotz Ammoniak und Feuchte." },
-      { "title": "Hoher Luftvolumenstrom", "desc": "Große Laufraddurchmesser für wirksame Zirkulation in weiten Räumen." },
-      { "title": "Energieeffizienz", "desc": "Deutliche Senkung der Energiekosten durch EC-Motoren und drehzahlgeregelten Betrieb." },
-      { "title": "Fokus auf Tierwohl", "desc": "Stressfaktoren werden durch optimale Temperatur und Luftqualität reduziert." }
+      {
+        "title": "Korrosionsbeständigkeit",
+        "desc": "Verzinkung und Sonderbeschichtungen für lange Lebensdauer trotz Ammoniak und Feuchte."
+      },
+      {
+        "title": "Hoher Luftvolumenstrom",
+        "desc": "Große Laufraddurchmesser für wirksame Zirkulation in weiten Räumen."
+      },
+      {
+        "title": "Energieeffizienz",
+        "desc": "Deutliche Senkung der Energiekosten durch EC-Motoren und drehzahlgeregelten Betrieb."
+      },
+      {
+        "title": "Fokus auf Tierwohl",
+        "desc": "Stressfaktoren werden durch optimale Temperatur und Luftqualität reduziert."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Individuelle Lüftungskonzepte für jede Form der Tierhaltung.",
     "areas": [
-      { "title": "Geflügelställe (Mast/Leg)", "description": "Tunnelbelüftung und Verdunstungskühlung", "products": [{ "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Rinderställe", "description": "Ammoniakabsaugung und Zuluftversorgung", "products": [{ "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Milchviehbetriebe", "description": "Klimaführung Melkstand und Laufstall", "products": [{ "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Kleine Wiederkäuer", "description": "Lüftung in Schaf- und Ziegenstallungen", "products": [{ "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] }
+      {
+        "title": "Geflügelställe (Mast/Leg)",
+        "description": "Tunnelbelüftung und Verdunstungskühlung",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Rinderställe",
+        "description": "Ammoniakabsaugung und Zuluftversorgung",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Milchviehbetriebe",
+        "description": "Klimaführung Melkstand und Laufstall",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Kleine Wiederkäuer",
+        "description": "Lüftung in Schaf- und Ziegenstallungen",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Welches Lüftungssystem eignet sich für Geflügelställe?", "a": "Je nach Stallgröße und Klima kommen Tunnelbelüftung (Unterdruck) oder Querlüftung zum Einsatz. In heißen Regionen ist die Integration von Verdunstungskühlung wesentlich." },
-      { "q": "Wie wird der Ammoniakgehalt geregelt?", "a": "Kontinuierliche Messung mit Ammoniaksensoren passt die Ventilatordrehzahl automatisch an. Mindestlüftungsraten halten die Konzentration unter sicheren Grenzwerten." },
-      { "q": "Wie funktioniert die Lüftung im Winter?", "a": "Im Winter sorgt ein Mindestlüftungsmodus für Luftqualität bei möglichst geringen Wärmeverlusten. Drehzahlregelung und automatische Zuluftöffnungen halten das System im Gleichgewicht." },
-      { "q": "Wie hoch ist der Energieverbrauch?", "a": "EC-Ventilatoren verbrauchen gegenüber klassischen AC-Motoren oft 30–50 % weniger Energie. Die Automatisierung fährt Ventilatoren nur bei Bedarf und vermeidet unnötigen Verbrauch." }
+      {
+        "q": "Welches Lüftungssystem eignet sich für Geflügelställe?",
+        "a": "Je nach Stallgröße und Klima kommen Tunnelbelüftung (Unterdruck) oder Querlüftung zum Einsatz. In heißen Regionen ist die Integration von Verdunstungskühlung wesentlich."
+      },
+      {
+        "q": "Wie wird der Ammoniakgehalt geregelt?",
+        "a": "Kontinuierliche Messung mit Ammoniaksensoren passt die Ventilatordrehzahl automatisch an. Mindestlüftungsraten halten die Konzentration unter sicheren Grenzwerten."
+      },
+      {
+        "q": "Wie funktioniert die Lüftung im Winter?",
+        "a": "Im Winter sorgt ein Mindestlüftungsmodus für Luftqualität bei möglichst geringen Wärmeverlusten. Drehzahlregelung und automatische Zuluftöffnungen halten das System im Gleichgewicht."
+      },
+      {
+        "q": "Wie hoch ist der Energieverbrauch?",
+        "a": "EC-Ventilatoren verbrauchen gegenüber klassischen AC-Motoren oft 30–50 % weniger Energie. Die Automatisierung fährt Ventilatoren nur bei Bedarf und vermeidet unnötigen Verbrauch."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine Stalllüftung?",
     "finalCtaDesc": "Kontaktieren Sie uns für Anlagenanalyse, Systemplanung und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Belüftung in modernen Tierhaltungsanlagen; Es spielt eine entscheidende Rolle im Hinblick auf Tierwohl, Biosicherheit, Effizienz und unternehmerische Nachhaltigkeit. Hühnerfarmen, Eierproduktionsanlagen, Brütereien und Rinderställe; Aufgrund der höheren Stoffwechselwärme, Feuchtigkeit, Ammoniak, Kohlendioxid, Methan, Flusen-/Staubpartikel und Geruchsbelastung sind die Wetterbedingungen in ihnen deutlich härter als in Gewerbegebäuden. Falsch konzipierte Belüftung; Dies kann zu Hitzestress, Krankheitsrisiko, Futterverwertungsverlusten, geringer Effizienz und hohen Betriebskosten führen.\n\nNOVVES bietet Ventilatorlösungen mit hoher Durchflussrate, korrosionsbeständig und für den Dauerbetrieb in Tierhaltungsanlagen geeignet. Geflügel-Abluftventilatoren der CHICKEN-Serie, Wandventilatoren OWL, HAWK-Automatisierungssysteme, interne Zirkulationsventilatoren MARLIN, präzisionsgesteuerte Lüftungsgeräte TIGER, Drucklösungen TURTLE und Dachventilatoren HERON; Es dient zur Steuerung von Temperatur, Luftfeuchtigkeit, Gaskonzentration, Druckausgleich und Biosicherheitsanforderungen je nach Anlagentyp. So werden in landwirtschaftlichen Betrieben eine gesündere Umgebung, eine ausgewogenere Luftführung und effizientere Produktionsbedingungen angestrebt."
+    }
   },
-
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Ventilatoren für Transformatoren- und Energieräume",
     "badge": "Lösungen",
@@ -368,30 +1193,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "IP55", "label": "Schutzart" },
-      { "value": "Class F", "label": "Motorisolation" },
-      { "value": "TEDAS", "label": "Konforme Auslegung" },
-      { "value": "500+", "label": "Installierte Systeme" }
+      {
+        "value": "IP55",
+        "label": "Schutzart"
+      },
+      {
+        "value": "Class F",
+        "label": "Motorisolation"
+      },
+      {
+        "value": "TEDAS",
+        "label": "Konforme Auslegung"
+      },
+      {
+        "value": "500+",
+        "label": "Installierte Systeme"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Kritische Temperaturführung für die Lebensdauer der Betriebsmittel",
     "whyImportantP1": "Umspannstationen und Energieräume können durch Verlustwärme der elektrischen Betriebsmittel gefährlich hohe Temperaturen erreichen. Überhitzung beschleunigt die Alterung von Transformatorenöl, schwächt Kabelisolationen und kann Ausfälle verursachen.",
     "whyImportantP2": "NOVVES sorgt für Temperaturführung in Transformatorenräumen, Mittelspannungsschaltanlagen, Aggregaträumen und USV-Räumen mit Lüftungskonzepten nach den technischen Vorgaben von TEDAŞ.",
     "steps": [
-      { "label": "Wärmelastberechnung", "desc": "Transformatorenleistung, Verlustleistung, Raummaße und Außentemperatur" },
-      { "label": "Systemauslegung", "desc": "Ventilatorauswahl, Gitterdimensionierung, Bilanz Abluft/Zuluft" },
-      { "label": "Fertigung & Montage", "desc": "Ventilatoren in Schutzart IP55, Montage vor Ort" },
-      { "label": "Inbetriebnahme & Prüfung", "desc": "Temperaturmessung, Thermostatkalibrierung, Leistungsnachweis" }
+      {
+        "label": "Wärmelastberechnung",
+        "desc": "Transformatorenleistung, Verlustleistung, Raummaße und Außentemperatur"
+      },
+      {
+        "label": "Systemauslegung",
+        "desc": "Ventilatorauswahl, Gitterdimensionierung, Bilanz Abluft/Zuluft"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "Ventilatoren in Schutzart IP55, Montage vor Ort"
+      },
+      {
+        "label": "Inbetriebnahme & Prüfung",
+        "desc": "Temperaturmessung, Thermostatkalibrierung, Leistungsnachweis"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Wandventilatoren (OWL)", "desc": "Nach IP55, verzinktes Gehäuse, Abluft und Zuluft für Transformatorenräume." },
-      { "title": "Dachventilatoren (HERON)", "desc": "Radiale und axiale Dachventilatoren zur Abführung warmer Luft über das Dach." },
-      { "title": "Kanalventilatoren (KOI)", "desc": "Kompakte Kanalventilatoren für den Transport warmer Luft über größere Kanalstrecken." },
-      { "title": "Außenluftgitter", "desc": "Gefilterte Zuluftgitter mit Insektenschutz gemäß TEDAŞ-Vorgaben." },
-      { "title": "Thermostat und Regelung", "desc": "Automatisches Ein-/Abschalten und Stufensteuerung der Ventilatoren je Raumtemperatur." },
-      { "title": "Klappensysteme", "desc": "Motorische Klappen und Druckausgleichsklappen für Brand- und Heißluftzonierung." }
+      {
+        "title": "Wandventilatoren (OWL)",
+        "desc": "Nach IP55, verzinktes Gehäuse, Abluft und Zuluft für Transformatorenräume."
+      },
+      {
+        "title": "Dachventilatoren (HERON)",
+        "desc": "Radiale und axiale Dachventilatoren zur Abführung warmer Luft über das Dach."
+      },
+      {
+        "title": "Kanalventilatoren (KOI)",
+        "desc": "Kompakte Kanalventilatoren für den Transport warmer Luft über größere Kanalstrecken."
+      },
+      {
+        "title": "Außenluftgitter",
+        "desc": "Gefilterte Zuluftgitter mit Insektenschutz gemäß TEDAŞ-Vorgaben."
+      },
+      {
+        "title": "Thermostat und Regelung",
+        "desc": "Automatisches Ein-/Abschalten und Stufensteuerung der Ventilatoren je Raumtemperatur."
+      },
+      {
+        "title": "Klappensysteme",
+        "desc": "Motorische Klappen und Druckausgleichsklappen für Brand- und Heißluftzonierung."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Projekt Transformatorenraum-Lüftung",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -399,35 +1266,126 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "TEDAŞ-konform", "desc": "Ventilator- und Gitterlösungen vollständig im Einklang mit den technischen Regeln der türkischen Energieverteilung." },
-      { "title": "Schutzart IP55", "desc": "Hoher Schutz von Motoren und Gehäusen gegen Staub und Strahlwasser." },
-      { "title": "Geringer Geräuschpegel", "desc": "Geräuscharme Betriebsweise, passend zur Umgebung in Versorgungszentren." },
-      { "title": "Langlebige Auslegung", "desc": "Zuverlässiger Dauerbetrieb mit Isolationsklasse F am Motor und verzinktem Gehäuse." }
+      {
+        "title": "TEDAŞ-konform",
+        "desc": "Ventilator- und Gitterlösungen vollständig im Einklang mit den technischen Regeln der türkischen Energieverteilung."
+      },
+      {
+        "title": "Schutzart IP55",
+        "desc": "Hoher Schutz von Motoren und Gehäusen gegen Staub und Strahlwasser."
+      },
+      {
+        "title": "Geringer Geräuschpegel",
+        "desc": "Geräuscharme Betriebsweise, passend zur Umgebung in Versorgungszentren."
+      },
+      {
+        "title": "Langlebige Auslegung",
+        "desc": "Zuverlässiger Dauerbetrieb mit Isolationsklasse F am Motor und verzinktem Gehäuse."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Lösungen für alle kritischen Bereiche der elektrischen und energetischen Infrastruktur.",
     "areas": [
-      { "title": "Umspannstationen", "description": "Abführung der Transformatorenverlustwärme, Temperaturführung", "products": [{ "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Aggregaträume", "description": "Abgas- und Wärmeabsaugung", "products": [{ "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }] },
-      { "title": "USV- und Batterieräume", "description": "Wasserstoffabführung und Temperaturführung", "products": [{ "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Mittelspannungsschaltanlagen", "description": "Abführung elektrisch erzeugter Wärme", "products": [{ "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Umspannstationen",
+        "description": "Abführung der Transformatorenverlustwärme, Temperaturführung",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Aggregaträume",
+        "description": "Abgas- und Wärmeabsaugung",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "USV- und Batterieräume",
+        "description": "Wasserstoffabführung und Temperaturführung",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Mittelspannungsschaltanlagen",
+        "description": "Abführung elektrisch erzeugter Wärme",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Warum ist Lüftung in Transformatorenräumen vorgeschrieben?", "a": "Verlustwärme der Transformatoren staut sich im Raum; Umgebungstemperaturen über 40\u00b0C verkürzen die Lebensdauer, beschleunigen Ölalterung und Isolationsversagen. TEDAŞ-Vorschriften fordern ausreichende Lüftung." },
-      { "q": "Welcher Ventilatortyp eignet sich für Transformatorenräume?", "a": "Je nach Raumgröße und Wärmelast kommen Wandtypen (OWL), Dachtypen (HERON) oder Kanaltypen (KOI) zum Einsatz. Üblich ist die Kombination Abluft plus Zuluft." },
-      { "q": "Wie funktioniert die thermostatgeführte Betriebsweise?", "a": "Erreicht die Raumtemperatur den oberen Sollwert, schalten die Ventilatoren automatisch ein und wieder aus, wenn die Temperatur sinkt. Mehrstufige Anlagen sparen Energie." },
-      { "q": "Gibt es Besonderheiten für USV-Räume?", "a": "Ja, in Batteriegruppen kann beim Laden Wasserstoff entstehen. USV-Räume erfordern daher angemessene Lüftung und gegebenenfalls Gasmeldekonzepte unter Berücksichtigung von Explosionsschutz." }
+      {
+        "q": "Warum ist Lüftung in Transformatorenräumen vorgeschrieben?",
+        "a": "Verlustwärme der Transformatoren staut sich im Raum; Umgebungstemperaturen über 40°C verkürzen die Lebensdauer, beschleunigen Ölalterung und Isolationsversagen. TEDAŞ-Vorschriften fordern ausreichende Lüftung."
+      },
+      {
+        "q": "Welcher Ventilatortyp eignet sich für Transformatorenräume?",
+        "a": "Je nach Raumgröße und Wärmelast kommen Wandtypen (OWL), Dachtypen (HERON) oder Kanaltypen (KOI) zum Einsatz. Üblich ist die Kombination Abluft plus Zuluft."
+      },
+      {
+        "q": "Wie funktioniert die thermostatgeführte Betriebsweise?",
+        "a": "Erreicht die Raumtemperatur den oberen Sollwert, schalten die Ventilatoren automatisch ein und wieder aus, wenn die Temperatur sinkt. Mehrstufige Anlagen sparen Energie."
+      },
+      {
+        "q": "Gibt es Besonderheiten für USV-Räume?",
+        "a": "Ja, in Batteriegruppen kann beim Laden Wasserstoff entstehen. USV-Räume erfordern daher angemessene Lüftung und gegebenenfalls Gasmeldekonzepte unter Berücksichtigung von Explosionsschutz."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine Lösung zur Transformatorenraum-Lüftung?",
     "finalCtaDesc": "Wenden Sie sich an unser Engineering-Team für Wärmelastberechnung, Systemplanung und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Transformatorzentren, MS/NS-Räume, Generatorräume, Umspannwerke, USV-Räume und Energiebereiche von Rechenzentren; Es handelt sich um kritische Infrastrukturen, die das Netz unterbrechungsfrei mit Strom versorgen. Wenn die in diesen Bereichen auftretende Wärmebelastung nicht kontrolliert wird, verkürzt sich die Lebensdauer der Transformatorisolierung, es kann zu Kondensation und Oxidation in den Schalttafeln kommen, leistungselektronische Geräte können thermische Grenzen erreichen und im schlimmsten Fall kann es zu einem Systemausfall oder einem Brandrisiko kommen. Aus diesem Grund handelt es sich bei der Belüftung von Energieräumen nicht um eine einfache Abluftanwendung; Es handelt sich um ein Wärmemanagementsystem, das auf Zuverlässigkeit rund um die Uhr ausgelegt ist.\n\nNovves; Es sorgt für eine spezielle Luftzirkulation in Transformator- und Energieräumen mit Axialventilatoren vom Typ MARLIN mit Hülse, Wandventilatoren vom Typ OWL, Dachventilatoren HERON, EC-Ventilatoren HUMMINGBIRD, Kanalventilatoren KOI und Zellenventilatorlösungen TURTLE. Systeme; Die Form richtet sich nach den Anforderungen, z. B. der Ableitung heißer Luft aus den oberen Ebenen in Transformatorräumen, der Ansaugung von Frischluft an der richtigen Stelle, der Bereitstellung von Verbrennungs-/Kühlluft in Generatorräumen, der Kondensationskontrolle in Umspannwerken und der Batteriesicherheit in USV-/ESS-Räumen."
+    }
   },
-
   "seraTarimsal": {
     "breadcrumbCurrent": "Gewächshaus- & landwirtschaftliche Lüftung",
     "badge": "Lösungen",
@@ -438,30 +1396,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "Anti-Corrosion", "label": "Beschichtung" },
-      { "value": "EC Motor", "label": "Energieeinsparung" },
-      { "value": "IoT", "label": "Fernüberwachung" },
-      { "value": "100+", "label": "Abgeschlossene Projekte" }
+      {
+        "value": "Anti-Corrosion",
+        "label": "Beschichtung"
+      },
+      {
+        "value": "EC Motor",
+        "label": "Energieeinsparung"
+      },
+      {
+        "value": "IoT",
+        "label": "Fernüberwachung"
+      },
+      {
+        "value": "100+",
+        "label": "Abgeschlossene Projekte"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Sachgerechtes Klima für effiziente Landwirtschaft",
     "whyImportantP1": "In Gewächshäusern und landwirtschaftlichen Strukturen beeinflussen Temperatur, Feuchte und CO2 direkt Wachstum, Qualität und Ertrag. Sommerliche Überhitzung und mangelnde Winterlüftung verursachen hohe Verluste.",
     "whyImportantP2": "NOVVES liefert Verdunstungskühlung, natürliche und maschinelle Belüftung sowie intelligente Klimaregelung. Jedes Projekt wird an regionale Klimadaten und Kulturarten angepasst.",
     "steps": [
-      { "label": "Anlagenanalyse", "desc": "Gewächshausgröße, Kulturart, Regionalklima und Lüftungsbedarf" },
-      { "label": "Systemauslegung", "desc": "Ventilatorauswahl, Kühlpads, Dach-/Seitenlüftung, Automatisierungsszenario" },
-      { "label": "Fertigung & Montage", "desc": "Korrosionsbeständige Ventilatoren und Zubehör, Montage vor Ort" },
-      { "label": "Inbetriebnahme & Support", "desc": "Kalibrierung der Klimasensoren, Prüfung der Automatisierung, technischer Support" }
+      {
+        "label": "Anlagenanalyse",
+        "desc": "Gewächshausgröße, Kulturart, Regionalklima und Lüftungsbedarf"
+      },
+      {
+        "label": "Systemauslegung",
+        "desc": "Ventilatorauswahl, Kühlpads, Dach-/Seitenlüftung, Automatisierungsszenario"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "Korrosionsbeständige Ventilatoren und Zubehör, Montage vor Ort"
+      },
+      {
+        "label": "Inbetriebnahme & Support",
+        "desc": "Kalibrierung der Klimasensoren, Prüfung der Automatisierung, technischer Support"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Wand-Abluftventilatoren (OWL)", "desc": "Verzinktes Gehäuse, hoher Volumenstrom, Montage an Gewächshauswänden." },
-      { "title": "Verdunstungskühlung", "desc": "Adiabate Wabenkühlsysteme zur Senkung der Gewächshaustemperatur um 8–12\u00b0C." },
-      { "title": "Dachlüftung (HERON)", "desc": "Dachventilatoren zur Abführung warmer Luft und Zuluft auf Gewächshausdächern." },
-      { "title": "Umluftventilatoren", "desc": "Horizontale Umluft für gleichmäßige Temperatur und Feuchte im Inneren." },
-      { "title": "Zuluft-Beschattungssysteme", "desc": "Motorische Seitenverkleidungen und Dachöffnungen für gesteuerte Frischluftzufuhr." },
-      { "title": "Intelligente Klimaregelung", "desc": "IoT-basierte Fernüberwachung und Steuerung mit Temperatur-, Feuchte-, CO2- und Lichtsensoren." }
+      {
+        "title": "Wand-Abluftventilatoren (OWL)",
+        "desc": "Verzinktes Gehäuse, hoher Volumenstrom, Montage an Gewächshauswänden."
+      },
+      {
+        "title": "Verdunstungskühlung",
+        "desc": "Adiabate Wabenkühlsysteme zur Senkung der Gewächshaustemperatur um 8–12°C."
+      },
+      {
+        "title": "Dachlüftung (HERON)",
+        "desc": "Dachventilatoren zur Abführung warmer Luft und Zuluft auf Gewächshausdächern."
+      },
+      {
+        "title": "Umluftventilatoren",
+        "desc": "Horizontale Umluft für gleichmäßige Temperatur und Feuchte im Inneren."
+      },
+      {
+        "title": "Zuluft-Beschattungssysteme",
+        "desc": "Motorische Seitenverkleidungen und Dachöffnungen für gesteuerte Frischluftzufuhr."
+      },
+      {
+        "title": "Intelligente Klimaregelung",
+        "desc": "IoT-basierte Fernüberwachung und Steuerung mit Temperatur-, Feuchte-, CO2- und Lichtsensoren."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Gewächshaus-Lüftungsprojekt",
     "midCtaDesc": "Unser Expertenteam unterbreitet Ihnen ein maßgeschneidertes Konzept.",
@@ -469,35 +1469,126 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Landwirtschaftliche Robustheit", "desc": "Lange Lebensdauer in feuchter Umgebung dank Verzinkung und korrosionsbeständigen Beschichtungen." },
-      { "title": "Energieschonende Kühlung", "desc": "Mit Verdunstungskühlung deutlich geringerer Energiebedarf als bei klassischer Klimaanlage (ca. 80 % weniger)." },
-      { "title": "Intelligente Automatisierung", "desc": "IoT-basierte Klimaüberwachung mit Fernzugriff und datenbasierter Entscheidungshilfe." },
-      { "title": "Projektbasierte Auslegung", "desc": "Lüftungssystem, abgestimmt auf Gewächshausgröße, Kulturart und Klimadaten." }
+      {
+        "title": "Landwirtschaftliche Robustheit",
+        "desc": "Lange Lebensdauer in feuchter Umgebung dank Verzinkung und korrosionsbeständigen Beschichtungen."
+      },
+      {
+        "title": "Energieschonende Kühlung",
+        "desc": "Mit Verdunstungskühlung deutlich geringerer Energiebedarf als bei klassischer Klimaanlage (ca. 80 % weniger)."
+      },
+      {
+        "title": "Intelligente Automatisierung",
+        "desc": "IoT-basierte Klimaüberwachung mit Fernzugriff und datenbasierter Entscheidungshilfe."
+      },
+      {
+        "title": "Projektbasierte Auslegung",
+        "desc": "Lüftungssystem, abgestimmt auf Gewächshausgröße, Kulturart und Klimadaten."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Klimalösungen für alle geschlossenen landwirtschaftlichen Produktionsbereiche.",
     "areas": [
-      { "title": "Glas- und Folien-Gewächshäuser", "description": "Temperatur- und Feuchteregelung, Verdunstungskühlung", "products": [{ "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Pilzkulturen", "description": "Präzise Feuchte- und Temperaturführung, Frischluftzufuhr", "products": [{ "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC-Ventilatoren", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Jungpflanzen-Gewächshäuser", "description": "Homogene Klimaverteilung und Kühlung", "products": [{ "name": "OWL", "type": "Wandventilatoren", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Getreidelager", "description": "Feuchteregelung und Belüftung", "products": [{ "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Glas- und Folien-Gewächshäuser",
+        "description": "Temperatur- und Feuchteregelung, Verdunstungskühlung",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Pilzkulturen",
+        "description": "Präzise Feuchte- und Temperaturführung, Frischluftzufuhr",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC-Ventilatoren",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Jungpflanzen-Gewächshäuser",
+        "description": "Homogene Klimaverteilung und Kühlung",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wandventilatoren",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Getreidelager",
+        "description": "Feuchteregelung und Belüftung",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Welches Lüftungssystem eignet sich am besten für Gewächshäuser?", "a": "Je nach Größe, Standort und Kulturart kommen Unterdruck (Abluft + Kühlpad) oder Überdrucksysteme zum Einsatz. In heißen Regionen ist die Verdunstungskühlung von großer Bedeutung." },
-      { "q": "Wie stark kann Verdunstungskühlung die Temperatur senken?", "a": "Je nach Luftfeuchte der Region sind 8–12\u00b0C Temperaturabnahme möglich. Die Effizienz ist in trockenen Regionen höher." },
-      { "q": "Ist Gewächshauslüftung im Winter erforderlich?", "a": "Ja, auch im Winter braucht es Mindestlüftung zur Feuchteregelung und CO2-Zufuhr. Sonst steigen Pilzbefall und Pflanzenstress." },
-      { "q": "Sind Fernüberwachung und Steuerung möglich?", "a": "Ja, NOVVES-Klimaregelsysteme ermöglichen über IoT die Fernüberwachung von Temperatur, Feuchte und CO2, Ventilatorsteuerung und Alarmmanagement." }
+      {
+        "q": "Welches Lüftungssystem eignet sich am besten für Gewächshäuser?",
+        "a": "Je nach Größe, Standort und Kulturart kommen Unterdruck (Abluft + Kühlpad) oder Überdrucksysteme zum Einsatz. In heißen Regionen ist die Verdunstungskühlung von großer Bedeutung."
+      },
+      {
+        "q": "Wie stark kann Verdunstungskühlung die Temperatur senken?",
+        "a": "Je nach Luftfeuchte der Region sind 8–12°C Temperaturabnahme möglich. Die Effizienz ist in trockenen Regionen höher."
+      },
+      {
+        "q": "Ist Gewächshauslüftung im Winter erforderlich?",
+        "a": "Ja, auch im Winter braucht es Mindestlüftung zur Feuchteregelung und CO2-Zufuhr. Sonst steigen Pilzbefall und Pflanzenstress."
+      },
+      {
+        "q": "Sind Fernüberwachung und Steuerung möglich?",
+        "a": "Ja, NOVVES-Klimaregelsysteme ermöglichen über IoT die Fernüberwachung von Temperatur, Feuchte und CO2, Ventilatorsteuerung und Alarmmanagement."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie ein Gewächshaus-Lüftungssystem?",
     "finalCtaDesc": "Kontaktieren Sie uns für Anlagenanalyse, Systemplanung und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Effizienz in modernen Gewächshäusern; Sie wird nicht nur durch Bewässerung, Düngung oder Lichtmenge bestimmt, sondern auch durch das richtige Management von Temperatur, relativer Luftfeuchtigkeit, CO₂-Gehalt und VPD-Werten. Wenn die Luft in geschlossenen landwirtschaftlichen Strukturen stagniert, wird das Gleichgewicht der Transpiration in Pflanzen gestört, es kommt zu Kondensation auf der Blattoberfläche, Pilzkrankheiten nehmen zu und die Effizienz der Photosynthese nimmt ab. Daher ist die Belüftung von Gewächshäusern keine einfache Ventilatoranwendung; Es handelt sich um ein technisches System, das Pflanzenphysiologie, Mikroklimakontrolle und Energieeffizienz gemeinsam berücksichtigt.\n\nNOVVES bietet verschiedene Luftmanagementlösungen für Gewächshäuser aus Glas und Polycarbonat, Tunnelgewächshäuser aus Kunststoff, intelligente hydroponische/erdlose Landwirtschaftsanlagen, tropische oder Kaltklima-Gewächshäuser, Baumzucht und Rasenproduktionsbereiche. Produktfamilien MARLIN, CHICKEN, KOI, OWL, HUMMINGBIRD, REMORA und HOUND; Es wird entsprechend der Architektur des Gewächshauses, den Klimabedingungen, dem Produkttyp und dem Automatisierungsbedarf ausgewählt und sorgt für eine homogene Luftzirkulation, ein Temperatur-Feuchtigkeits-Gleichgewicht, eine CO₂-Verteilung, einen Luftstrom mit niedriger Geschwindigkeit über der Anlage und eine energieeffiziente Steuerung.\n\nBei intelligenten Gewächshausanwendungen werden Daten von Temperatur-, Feuchtigkeits-, CO₂- und Lichtsensoren von Automatisierungspanels ausgewertet; EC-Motor- oder frequenzgesteuerte Ventilatoren werden nur mit dem erforderlichen Volumenstrom betrieben. Dieser Ansatz schützt Pflanzen vor plötzlichen Klimaschwankungen, reduziert gleichzeitig den Energieverbrauch und schafft das ganze Jahr über stabilere Produktionsbedingungen. NOVVES Gewächshausbelüftungslösungen; Ziel ist es, den Ertrag zu steigern, Krankheitsrisiken zu reduzieren und für ein kontrolliertes, nachhaltiges Mikroklima in der landwirtschaftlichen Produktion zu sorgen."
+    }
   },
-
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX Explosionsschutz",
     "badge": "Lösungen",
@@ -508,30 +1599,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "ATEX", "label": "Zertifiziert" },
-      { "value": "Zone 1/2", "label": "Einsatzbereich" },
-      { "value": "IECEx", "label": "Internationale Zulassung" },
-      { "value": "200+", "label": "Installierte Systeme" }
+      {
+        "value": "ATEX",
+        "label": "Zertifiziert"
+      },
+      {
+        "value": "Zone 1/2",
+        "label": "Einsatzbereich"
+      },
+      {
+        "value": "IECEx",
+        "label": "Internationale Zulassung"
+      },
+      {
+        "value": "200+",
+        "label": "Installierte Systeme"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Sicherheit hat in Ex-Zonen oberste Priorität",
     "whyImportantP1": "In Chemie, Petrochemie, Lackiererei, Pharmazie, Getreidesilos und Bergbau können entzündliche Gase, Dämpfe und Stäube explosionsfähige Atmosphären bilden. Normale Geräte stellen hier erhebliche Risiken dar.",
     "whyImportantP2": "Die ATEX-zertifizierten Ventilatoren der NOVVES-Serie BEAR sind für die Zonen 1, 2, 21 und 22 ausgelegt. Funkenfreie Werkstoffe, druckfeste Motoren und spezielle Dichtkonzepte gewährleisten sichere Belüftung.",
     "steps": [
-      { "label": "Risikoanalyse", "desc": "Klassifizierung explosionsfähiger Atmosphäre, Zonenfestlegung, Gas-/Staubanalyse" },
-      { "label": "Systemauslegung", "desc": "ATEX-Ventilatorauswahl, Kanalplanung, Erdung, Ex-gerechte Automatisierung" },
-      { "label": "Fertigung & Montage", "desc": "ATEX-zertifizierte Ventilatoren, Ex-gerechte Verkabelung und Anschlüsse" },
-      { "label": "Inbetriebnahme & Zertifizierung", "desc": "Prüfung, Leistungsmessung, ATEX-Konformitätsnachweis" }
+      {
+        "label": "Risikoanalyse",
+        "desc": "Klassifizierung explosionsfähiger Atmosphäre, Zonenfestlegung, Gas-/Staubanalyse"
+      },
+      {
+        "label": "Systemauslegung",
+        "desc": "ATEX-Ventilatorauswahl, Kanalplanung, Erdung, Ex-gerechte Automatisierung"
+      },
+      {
+        "label": "Fertigung & Montage",
+        "desc": "ATEX-zertifizierte Ventilatoren, Ex-gerechte Verkabelung und Anschlüsse"
+      },
+      {
+        "label": "Inbetriebnahme & Zertifizierung",
+        "desc": "Prüfung, Leistungsmessung, ATEX-Konformitätsnachweis"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "ATEX-Radialventilatoren (BEAR)", "desc": "Zertifizierte Radialventilatoren mit funkensicheren Materialien für Zone 1/2 und 21/22." },
-      { "title": "ATEX-Axialventilatoren (BEAR)", "desc": "Verkleidete und geschaufelte Axialventilatoren für explosionsgefährdete Bereiche." },
-      { "title": "Ex-Dachventilatoren (BEAR)", "desc": "Dachmontierte Abluftventilatoren mit druckfesten Motoren bei explosivem Gas/Staub." },
-      { "title": "Ex-Motoren und Bedienung", "desc": "ATEX-Motoren, Ex-Bedienelemente, Signalleuchten und Ex-Schaltschränke." },
-      { "title": "Antistatische Kanäle und Zubehör", "desc": "Geerdete Kanäle und Verbindungselemente zur Vermeidung elektrostatischer Aufladung." },
-      { "title": "Gasdetektion und Automatisierung", "desc": "Sensoren für brennbare Gase/Stäube, PLC-gestützte Not-Aus- und Lüftungsszenarien." }
+      {
+        "title": "ATEX-Radialventilatoren (BEAR)",
+        "desc": "Zertifizierte Radialventilatoren mit funkensicheren Materialien für Zone 1/2 und 21/22."
+      },
+      {
+        "title": "ATEX-Axialventilatoren (BEAR)",
+        "desc": "Verkleidete und geschaufelte Axialventilatoren für explosionsgefährdete Bereiche."
+      },
+      {
+        "title": "Ex-Dachventilatoren (BEAR)",
+        "desc": "Dachmontierte Abluftventilatoren mit druckfesten Motoren bei explosivem Gas/Staub."
+      },
+      {
+        "title": "Ex-Motoren und Bedienung",
+        "desc": "ATEX-Motoren, Ex-Bedienelemente, Signalleuchten und Ex-Schaltschränke."
+      },
+      {
+        "title": "Antistatische Kanäle und Zubehör",
+        "desc": "Geerdete Kanäle und Verbindungselemente zur Vermeidung elektrostatischer Aufladung."
+      },
+      {
+        "title": "Gasdetektion und Automatisierung",
+        "desc": "Sensoren für brennbare Gase/Stäube, PLC-gestützte Not-Aus- und Lüftungsszenarien."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr ATEX-Lüftungsprojekt",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -539,36 +1672,142 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "ATEX-zertifiziert", "desc": "Fertigung und Zertifizierung gemäß ATEX-Richtlinie 2014/34/EU." },
-      { "title": "Konformität Zone 1 & 2", "desc": "Passende Ventilatorauswahl und Auslegung nach Gasgruppe und Temperaturklasse." },
-      { "title": "Funkenfreie Konstruktion", "desc": "Aluminium-/Bronzelegierungen, Spezialbeschichtungen und antistatische Bauteile." },
-      { "title": "Rundum-Lösung", "desc": "Risikoanalyse, Ventilatorauswahl, Ex-Automatisierung und Zertifizierung aus einer Hand." }
+      {
+        "title": "ATEX-zertifiziert",
+        "desc": "Fertigung und Zertifizierung gemäß ATEX-Richtlinie 2014/34/EU."
+      },
+      {
+        "title": "Konformität Zone 1 & 2",
+        "desc": "Passende Ventilatorauswahl und Auslegung nach Gasgruppe und Temperaturklasse."
+      },
+      {
+        "title": "Funkenfreie Konstruktion",
+        "desc": "Aluminium-/Bronzelegierungen, Spezialbeschichtungen und antistatische Bauteile."
+      },
+      {
+        "title": "Rundum-Lösung",
+        "desc": "Risikoanalyse, Ventilatorauswahl, Ex-Automatisierung und Zertifizierung aus einer Hand."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "ATEX-Lösungen für alle Industrieanlagen mit explosionsfähiger Atmosphäre.",
     "areas": [
-      { "title": "Chemie- und Petrochemie", "description": "Absaugung brennbarer Gase und Dämpfe", "products": [{ "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX-Dachventilatoren", "image": "/images/products/bear-reb.jpg" }] },
-      { "title": "Lack- und Firniswerke", "description": "Absaugung Lösemitteldämpfe", "products": [{ "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX-Wandventilatoren", "image": "/images/products/bear-w.jpg" }] },
-      { "title": "Getreidesilos und Mühlen", "description": "Absaugung brennbarer Stäube", "products": [{ "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX-Kanalventilatoren", "image": "/images/products/bear-t.jpg" }] },
-      { "title": "Bergbau und Tunnel", "description": "Methanabsaugung und Belüftung", "products": [{ "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Pharma- und Kosmetikproduktion", "description": "Absaugung brennbarer Lösemittel und Stäube", "products": [{ "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-c.jpg" }, { "name": "BEAR", "type": "ATEX-Radialventilatoren", "image": "/images/products/bear-r.jpg" }] }
+      {
+        "title": "Chemie- und Petrochemie",
+        "description": "Absaugung brennbarer Gase und Dämpfe",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX-Dachventilatoren",
+            "image": "/images/products/bear-reb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Lack- und Firniswerke",
+        "description": "Absaugung Lösemitteldämpfe",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX-Wandventilatoren",
+            "image": "/images/products/bear-w.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Getreidesilos und Mühlen",
+        "description": "Absaugung brennbarer Stäube",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX-Kanalventilatoren",
+            "image": "/images/products/bear-t.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Bergbau und Tunnel",
+        "description": "Methanabsaugung und Belüftung",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Pharma- und Kosmetikproduktion",
+        "description": "Absaugung brennbarer Lösemittel und Stäube",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-c.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX-Radialventilatoren",
+            "image": "/images/products/bear-r.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Was bedeutet ATEX-Zertifizierung?", "a": "ATEX (ATmospheres EXplosibles) bezeichnet die EU-Richtlinie 2014/34/EU mit Auslegungs- und Fertigungsstandards für Geräte in explosionsgefährdeten Bereichen. Ventilatoren der Serie BEAR werden konform zu dieser Richtlinie gefertigt." },
-      { "q": "Worin unterscheiden sich Zone 1 und Zone 2?", "a": "Zone 1: explosive Atmosphäre kann unter normalen Betriebsbedingungen gelegentlich auftreten. Zone 2: explosive Atmosphäre tritt nur selten und kurzzeitig unter abnormalen Bedingungen auf." },
-      { "q": "Für welche Gasgruppen fertigen Sie Ventilatoren?", "a": "Die Serie BEAR ist in Ausführungen für Gasgruppe IIA (Propan, Methan), IIB (Ethylen) und IIC (Wasserstoff, Acetylen) verfügbar." },
-      { "q": "Lässt sich ein ATEX-Ventilator in eine Bestandsanlage integrieren?", "a": "Ja, die Integration ATEX-zertifizierter Ventilatoren in bestehende Lüftung ist möglich. Kanäle, Verbindungen und Automatisierung müssen jedoch ebenfalls auf ATEX-Konformität geprüft werden." }
+      {
+        "q": "Was bedeutet ATEX-Zertifizierung?",
+        "a": "ATEX (ATmospheres EXplosibles) bezeichnet die EU-Richtlinie 2014/34/EU mit Auslegungs- und Fertigungsstandards für Geräte in explosionsgefährdeten Bereichen. Ventilatoren der Serie BEAR werden konform zu dieser Richtlinie gefertigt."
+      },
+      {
+        "q": "Worin unterscheiden sich Zone 1 und Zone 2?",
+        "a": "Zone 1: explosive Atmosphäre kann unter normalen Betriebsbedingungen gelegentlich auftreten. Zone 2: explosive Atmosphäre tritt nur selten und kurzzeitig unter abnormalen Bedingungen auf."
+      },
+      {
+        "q": "Für welche Gasgruppen fertigen Sie Ventilatoren?",
+        "a": "Die Serie BEAR ist in Ausführungen für Gasgruppe IIA (Propan, Methan), IIB (Ethylen) und IIC (Wasserstoff, Acetylen) verfügbar."
+      },
+      {
+        "q": "Lässt sich ein ATEX-Ventilator in eine Bestandsanlage integrieren?",
+        "a": "Ja, die Integration ATEX-zertifizierter Ventilatoren in bestehende Lüftung ist möglich. Kanäle, Verbindungen und Automatisierung müssen jedoch ebenfalls auf ATEX-Konformität geprüft werden."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine ATEX-Lüftungslösung?",
     "finalCtaDesc": "Wenden Sie sich an unser Engineering-Team für Risikoanalyse, ATEX-Ventilatorauswahl und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "In Industriebereichen, in denen explosive Gase, Dampf, Nebel, Lösungsmittel, VOCs oder brennbarer Staub vorhanden sind, handelt es sich bei dem Belüftungssystem nicht um eine Standard-Luftübertragungsausrüstung; Es ist ein direkter Bestandteil der Anlagensicherheit. Auswahl des richtigen Ventilators in Chemie- und Petrochemieanlagen, Kraftstoffabfüllbereichen, Lackierereien, Mehl-Zucker-Pulver-Prozessen, pharmazeutischer Produktion und ähnlichen Hochrisikoumgebungen; Es ist wichtig, die Risiken von Funken, statischer Elektrizität, heißen Oberflächen und Gasansammlungen zu kontrollieren.\n\nNOVVES bietet sicheres Luftmanagement in explosionsgefährdeten Bereichen mit Lüfter-, Dämpfer- und Filterlösungen speziell für ATEX- und Ex-geschützte Anwendungen. Produktfamilien BEAR, NAUTILUS, HOUND, KOI und ELEPHANT; Es bietet eine integrierte Lösung für sichere Absaugung, VOC-Entladung, Kontrolle von brennbarem Staub und Schutz vor statischer Entladung, indem es entsprechend Zonenklasse, Gas-/Staubcharakter, Prozesstemperatur und Wartungsanforderungen ausgelegt ist."
+    }
   },
-
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Intelligente Automatisierung und Regelung",
     "badge": "Lösungen",
@@ -579,30 +1818,72 @@
     "ctaSecondary": "Unsere Leistungen",
     "ctaSecondaryHref": "/hizmetler",
     "trustStrip": [
-      { "value": "BMS", "label": "Integration" },
-      { "value": "PLC/SCADA", "label": "Leittechnik" },
-      { "value": "IoT", "label": "Fernüberwachung" },
-      { "value": "24/7", "label": "Support" }
+      {
+        "value": "BMS",
+        "label": "Integration"
+      },
+      {
+        "value": "PLC/SCADA",
+        "label": "Leittechnik"
+      },
+      {
+        "value": "IoT",
+        "label": "Fernüberwachung"
+      },
+      {
+        "value": "24/7",
+        "label": "Support"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Intelligente Systeme für Effizienz und Kontrolle",
     "whyImportantP1": "In modernen Gebäuden und Industrieanlagen führt manuelle Steuerung der Lüftung zu Ineffizienz, Energieverschwendung und Wartungsproblemen. Intelligente Automatisierung optimiert die Anlagen anhand von Sensordaten.",
     "whyImportantP2": "NOVVES-Automatisierung gewährleistet die vollständige Steuerung der Lüftung mit PLC-basierten MSR-Schaltschränken, Frequenzumrichter-Anbindung, BMS-Verknüpfung und IoT-Fernüberwachung. Szenarienbasierte Betriebsarten minimieren den Energieverbrauch.",
     "steps": [
-      { "label": "Bedarfsermittlung", "desc": "Bestandsaufnahme, Automatisierungsanforderungen, Bewertung der BMS-Infrastruktur" },
-      { "label": "Automatisierungsplanung", "desc": "PLC-Programmierung, Sensorauswahl, Schaltschrankplanung, BMS-Integrationsszenario" },
-      { "label": "Schaltschrankfertigung & Montage", "desc": "Fertigung MSR-/Automatisierungsschränke, Verdrahtung vor Ort, Gerätemontage" },
-      { "label": "Inbetriebnahme & Schulung", "desc": "Systemtests, Szenarioverifikation, Einweisung von Bedienpersonal" }
+      {
+        "label": "Bedarfsermittlung",
+        "desc": "Bestandsaufnahme, Automatisierungsanforderungen, Bewertung der BMS-Infrastruktur"
+      },
+      {
+        "label": "Automatisierungsplanung",
+        "desc": "PLC-Programmierung, Sensorauswahl, Schaltschrankplanung, BMS-Integrationsszenario"
+      },
+      {
+        "label": "Schaltschrankfertigung & Montage",
+        "desc": "Fertigung MSR-/Automatisierungsschränke, Verdrahtung vor Ort, Gerätemontage"
+      },
+      {
+        "label": "Inbetriebnahme & Schulung",
+        "desc": "Systemtests, Szenarioverifikation, Einweisung von Bedienpersonal"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "PLC-gesteuerte MSR-Schaltschränke", "desc": "Motorsteuerzentrum mit Ventilator Ein/Aus, Stufensteuerung, Störmeldung und Schutzrelais-Integration." },
-      { "title": "Frequenzumrichter-Management", "desc": "Drehzahlgeregelte Ventilatoren für Energieeinsparung und präzise Volumenstromführung." },
-      { "title": "BMS-Integration", "desc": "Vollständige Anbindung an Gebäudeleittechnik über Modbus, BACnet oder LON." },
-      { "title": "Sensornetzwerke", "desc": "Temperatur-, Feuchte-, CO-, CO2-, Druck- und Rauchsensoren mit zonaler Datenerfassung." },
-      { "title": "IoT und Fernüberwachung", "desc": "Cloud-Dashboard, mobile App, Alarmierung und Analyse des Energieverbrauchs." },
-      { "title": "Szenarienbasierte Betriebsarten", "desc": "Vordefinierte oder individuelle Szenarien: Normal, Nacht, Brand, Parkhaus-CO-Absaugung usw." }
+      {
+        "title": "PLC-gesteuerte MSR-Schaltschränke",
+        "desc": "Motorsteuerzentrum mit Ventilator Ein/Aus, Stufensteuerung, Störmeldung und Schutzrelais-Integration."
+      },
+      {
+        "title": "Frequenzumrichter-Management",
+        "desc": "Drehzahlgeregelte Ventilatoren für Energieeinsparung und präzise Volumenstromführung."
+      },
+      {
+        "title": "BMS-Integration",
+        "desc": "Vollständige Anbindung an Gebäudeleittechnik über Modbus, BACnet oder LON."
+      },
+      {
+        "title": "Sensornetzwerke",
+        "desc": "Temperatur-, Feuchte-, CO-, CO2-, Druck- und Rauchsensoren mit zonaler Datenerfassung."
+      },
+      {
+        "title": "IoT und Fernüberwachung",
+        "desc": "Cloud-Dashboard, mobile App, Alarmierung und Analyse des Energieverbrauchs."
+      },
+      {
+        "title": "Szenarienbasierte Betriebsarten",
+        "desc": "Vordefinierte oder individuelle Szenarien: Normal, Nacht, Brand, Parkhaus-CO-Absaugung usw."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Automatisierungsprojekt",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -610,35 +1891,126 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Energieoptimierung", "desc": "30–50 % Einsparung durch intelligente Regelung auf Basis von Frequenzumrichtern und Sensordaten." },
-      { "title": "BMS-Kompatibilität", "desc": "Integration in alle GLT-Systeme über offene Protokolle wie Modbus, BACnet, LON." },
-      { "title": "Fernüberwachung", "desc": "IoT-basierte 24/7-Überwachung, Alarmierung und Berichte zum Energieverbrauch." },
-      { "title": "Alles aus einer Hand", "desc": "Schaltschrankplanung, PLC-Programmierung, Montage vor Ort und Inbetriebnahme aus einer Quelle." }
+      {
+        "title": "Energieoptimierung",
+        "desc": "30–50 % Einsparung durch intelligente Regelung auf Basis von Frequenzumrichtern und Sensordaten."
+      },
+      {
+        "title": "BMS-Kompatibilität",
+        "desc": "Integration in alle GLT-Systeme über offene Protokolle wie Modbus, BACnet, LON."
+      },
+      {
+        "title": "Fernüberwachung",
+        "desc": "IoT-basierte 24/7-Überwachung, Alarmierung und Berichte zum Energieverbrauch."
+      },
+      {
+        "title": "Alles aus einer Hand",
+        "desc": "Schaltschrankplanung, PLC-Programmierung, Montage vor Ort und Inbetriebnahme aus einer Quelle."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "In welchen Projekten wird es eingesetzt?",
     "areasDesc": "Lösungen für alle Gebäude- und Anlagentypen mit Lüftungsautomatisierung.",
     "areas": [
-      { "title": "Automation geschlossener Parkhäuser", "description": "CO-sensorgeführtes Jet-Ventilator-Management", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Einkaufszentrum und Gewerbe-BMS", "description": "Zentrale Lüftungsautomatisierung und Überwachung", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }] },
-      { "title": "Automation Industrieanlagen", "description": "Prozesslüftung und Absaugsteuerung", "products": [{ "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Krankenhaus und Reinraum", "description": "Druckkaskade und Filterüberwachung", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] }
+      {
+        "title": "Automation geschlossener Parkhäuser",
+        "description": "CO-sensorgeführtes Jet-Ventilator-Management",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Einkaufszentrum und Gewerbe-BMS",
+        "description": "Zentrale Lüftungsautomatisierung und Überwachung",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Automation Industrieanlagen",
+        "description": "Prozesslüftung und Absaugsteuerung",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Krankenhaus und Reinraum",
+        "description": "Druckkaskade und Filterüberwachung",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Kann eine Bestandsanlage automatisiert werden?", "a": "Ja, PLC-Schaltschränke, Frequenzumrichter und Sensoren lassen sich in bestehende Ventilator- und Lüftungsanlagen integrieren und den Automatisierungsgrad erhöhen." },
-      { "q": "Welche BMS-Protokolle unterstützen Sie?", "a": "Wir unterstützen Modbus RTU/TCP, BACnet IP/MSTP und LON. Die passende Integrationsmethode wird an Ihre vorhandene BMS-Infrastruktur angepasst." },
-      { "q": "Ist für die Fernüberwachung eine Internetverbindung erforderlich?", "a": "Ja, für IoT-basierte Fernüberwachung wird in der Anlage eine Internetanbindung benötigt. Die Datenübertragung zur Cloud erfolgt z. B. per 4G/5G-Modem oder Ethernet." },
-      { "q": "Wie viel Energie spart die Automatisierung?", "a": "Drehzahlgeregelte Ventilatoren auf Basis von Sensordaten können 30–50 % Energie einsparen. Nacht- und Abwesenheitsszenarien bringen zusätzliche Einsparungen." }
+      {
+        "q": "Kann eine Bestandsanlage automatisiert werden?",
+        "a": "Ja, PLC-Schaltschränke, Frequenzumrichter und Sensoren lassen sich in bestehende Ventilator- und Lüftungsanlagen integrieren und den Automatisierungsgrad erhöhen."
+      },
+      {
+        "q": "Welche BMS-Protokolle unterstützen Sie?",
+        "a": "Wir unterstützen Modbus RTU/TCP, BACnet IP/MSTP und LON. Die passende Integrationsmethode wird an Ihre vorhandene BMS-Infrastruktur angepasst."
+      },
+      {
+        "q": "Ist für die Fernüberwachung eine Internetverbindung erforderlich?",
+        "a": "Ja, für IoT-basierte Fernüberwachung wird in der Anlage eine Internetanbindung benötigt. Die Datenübertragung zur Cloud erfolgt z. B. per 4G/5G-Modem oder Ethernet."
+      },
+      {
+        "q": "Wie viel Energie spart die Automatisierung?",
+        "a": "Drehzahlgeregelte Ventilatoren auf Basis von Sensordaten können 30–50 % Energie einsparen. Nacht- und Abwesenheitsszenarien bringen zusätzliche Einsparungen."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine Lüftungsautomatisierung?",
     "finalCtaDesc": "Wenden Sie sich an unser Engineering-Team für Automatisierungsplanung, Schaltschrankfertigung und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Lüftungs- und Klimaanlagen bestehen nur aus mechanischen Geräten, ohne Sensoren und Regelalgorithmen. Intelligente Automatisierungssysteme hingegen verwalten diese Geräte wie das „zentrale Nervensystem“ des Gebäudes oder der Anlage, steigern die Energieeffizienz, aktivieren sicher Feuer-/Rauchszenarien, überwachen die Luftqualität in Innenräumen und machen Wartungsprozesse vorhersehbarer. Die Automatisierungseinrichtung für intelligente Gebäude, Industrieanlagen, Tunnel- und Parkprojekte, Wohnhäuser, Krankenhäuser, Reinräume und Rechenzentren sollte mit einer anderen technischen Logik gehandhabt werden.\n\nNOVVES-Automatisierungslösungen; Integriert sich in BMS, SCADA, SPS, Modbus, BACnet, CO/NOx-Detektoren, Temperatur-Feuchtigkeits-Sensoren, Differenzdruckregelung, Brandszenario-Matrix und bedarfsgesteuerte Lüftungsarchitektur. Dank REMORA-Bedienfeldern, automatischen HOUND-Dämpfern, LION-Lüftersteuerungsmodulen, DRAGONFLY-Jet-Ventilatoren und HUMMINGBIRD-EC-Ventilatoren ist das System; Es sorgt im täglichen Betrieb für Energieeinsparungen und reagiert automatisch je nach Szenario, wenn ein Brand- oder Prozessrisiko auftritt."
+    }
   },
-
   "konutHavalandirma": {
     "breadcrumbCurrent": "Wohnungslüftung",
     "badge": "Lösungen",
@@ -649,30 +2021,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "EC Motor", "label": "Leiser Betrieb" },
-      { "value": "Heat Recovery", "label": "90 % Wirkungsgrad" },
-      { "value": "dB(A) <25", "label": "Schallpegel" },
-      { "value": "A+", "label": "Energieeffizienzklasse" }
+      {
+        "value": "EC Motor",
+        "label": "Leiser Betrieb"
+      },
+      {
+        "value": "Heat Recovery",
+        "label": "90 % Wirkungsgrad"
+      },
+      {
+        "value": "dB(A) <25",
+        "label": "Schallpegel"
+      },
+      {
+        "value": "A+",
+        "label": "Energieeffizienzklasse"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Frische Luft für gesundes Wohnen",
     "whyImportantP1": "In modernen Wohnungen nimmt mit besserer Dämmung der natürliche Luftaustausch ab; die Raumluftqualität wird zum Thema. Zu wenig Lüftung führt zu Feuchte, Schimmel, Gerüchen und stickiger Luft.",
     "whyImportantP2": "NOVVES-Wohnungslüftung schafft gesunde und komfortable Räume mit zentralem WRG (Wärmerückgewinn), das Energieverluste minimiert. Leiser Betrieb und kompakte Bauform passen zu vielen Wohnformen.",
     "steps": [
-      { "label": "Bedarfsermittlung", "desc": "Wohnform, Zimmeranzahl, Fläche und Lüftungsbedarf" },
-      { "label": "Geräteauswahl", "desc": "Geräteleistung, Kanalführung, Planung der Zuluft-/Abluftöffnungen" },
-      { "label": "Montage", "desc": "Fachgerechte Montage, Kanalanschluss und Elektroinstallation" },
-      { "label": "Inbetriebnahme", "desc": "Volumenstrommessung, Schallprüfung und Einweisung" }
+      {
+        "label": "Bedarfsermittlung",
+        "desc": "Wohnform, Zimmeranzahl, Fläche und Lüftungsbedarf"
+      },
+      {
+        "label": "Geräteauswahl",
+        "desc": "Geräteleistung, Kanalführung, Planung der Zuluft-/Abluftöffnungen"
+      },
+      {
+        "label": "Montage",
+        "desc": "Fachgerechte Montage, Kanalanschluss und Elektroinstallation"
+      },
+      {
+        "label": "Inbetriebnahme",
+        "desc": "Volumenstrommessung, Schallprüfung und Einweisung"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Wärmerückgewinnungsgeräte", "desc": "Gegenstrom- oder Rotationswärmetauscher mit bis zu 90 % Rückgewinnung der Wärme aus der Abluft." },
-      { "title": "Bad- und WC-Lüfter (SEAHORSE)", "desc": "Leise, energieeffiziente und kompakte Bad-Abluftventilatoren." },
-      { "title": "Kanalventilatoren (KOI)", "desc": "Leise Kompaktventilatoren für Zuluft und Abluft im Kanal." },
-      { "title": "Küchenventilatoren (BUTTERFLY)", "desc": "Dunstabzugsventilatoren mit Fettfilter und leisem Lauf." },
-      { "title": "Gitter und Diffusoren", "desc": "Decken-, Wand- und Bodengitter für gleichmäßige Luftverteilung." },
-      { "title": "Bedienung", "desc": "Funkfernbedienung, Feuchtesensor, Timer und Stufenregelung." }
+      {
+        "title": "Wärmerückgewinnungsgeräte",
+        "desc": "Gegenstrom- oder Rotationswärmetauscher mit bis zu 90 % Rückgewinnung der Wärme aus der Abluft."
+      },
+      {
+        "title": "Bad- und WC-Lüfter (SEAHORSE)",
+        "desc": "Leise, energieeffiziente und kompakte Bad-Abluftventilatoren."
+      },
+      {
+        "title": "Kanalventilatoren (KOI)",
+        "desc": "Leise Kompaktventilatoren für Zuluft und Abluft im Kanal."
+      },
+      {
+        "title": "Küchenventilatoren (BUTTERFLY)",
+        "desc": "Dunstabzugsventilatoren mit Fettfilter und leisem Lauf."
+      },
+      {
+        "title": "Gitter und Diffusoren",
+        "desc": "Decken-, Wand- und Bodengitter für gleichmäßige Luftverteilung."
+      },
+      {
+        "title": "Bedienung",
+        "desc": "Funkfernbedienung, Feuchtesensor, Timer und Stufenregelung."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Wohnungslüftungsprojekt",
     "midCtaDesc": "Unser Expertenteam meldet sich schnellstmöglich bei Ihnen.",
@@ -680,35 +2094,126 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Leiser Betrieb", "desc": "Schallpegel unter 25 dB(A) – auch für Schlafräume geeignet." },
-      { "title": "Wärmerückgewinnung", "desc": "Bis zu 90 % der Energie aus der Abluft wird zurückgewonnen." },
-      { "title": "Kompakte Bauform", "desc": "Optionen für abgehängte Decke, Einbauschrank und Wandnische." },
-      { "title": "Gesunde Raumluft", "desc": "Filterung und Zuluft reduzieren Pollen, Staub und Schadstoffe." }
+      {
+        "title": "Leiser Betrieb",
+        "desc": "Schallpegel unter 25 dB(A) – auch für Schlafräume geeignet."
+      },
+      {
+        "title": "Wärmerückgewinnung",
+        "desc": "Bis zu 90 % der Energie aus der Abluft wird zurückgewonnen."
+      },
+      {
+        "title": "Kompakte Bauform",
+        "desc": "Optionen für abgehängte Decke, Einbauschrank und Wandnische."
+      },
+      {
+        "title": "Gesunde Raumluft",
+        "desc": "Filterung und Zuluft reduzieren Pollen, Staub und Schadstoffe."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Für welche Wohnformen?",
     "areasDesc": "Lüftungslösungen für alle Wohnformen.",
     "areas": [
-      { "title": "Wohnungen", "description": "Zentrale oder dezentrale Zuluft- und Abluft", "products": [{ "name": "SEAHORSE", "type": "Badlüfter", "image": "/images/products/banyo-fan-1.jpg" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Villen und Einfamilienhäuser", "description": "Zentrale Lüftung mit WRG", "products": [{ "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }, { "name": "BUTTERFLY", "type": "Küchenventilatoren", "image": "/images/products/butterfly-b.jpg" }] },
-      { "title": "Residenzen und Hochhäuser", "description": "Zentrale Lüftung und Überdruckhaltung", "products": [{ "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }, { "name": "SEAHORSE", "type": "Badlüfter", "image": "/images/products/banyo-fan-2.jpg" }] },
-      { "title": "Großwohnprojekte", "description": "Schachtlüftung und Dachabsaugung", "products": [{ "name": "HERON", "type": "Dachventilatoren", "image": "/images/products/heron-ah.jpg" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] }
+      {
+        "title": "Wohnungen",
+        "description": "Zentrale oder dezentrale Zuluft- und Abluft",
+        "products": [
+          {
+            "name": "SEAHORSE",
+            "type": "Badlüfter",
+            "image": "/images/products/banyo-fan-1.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Villen und Einfamilienhäuser",
+        "description": "Zentrale Lüftung mit WRG",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "BUTTERFLY",
+            "type": "Küchenventilatoren",
+            "image": "/images/products/butterfly-b.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Residenzen und Hochhäuser",
+        "description": "Zentrale Lüftung und Überdruckhaltung",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "SEAHORSE",
+            "type": "Badlüfter",
+            "image": "/images/products/banyo-fan-2.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Großwohnprojekte",
+        "description": "Schachtlüftung und Dachabsaugung",
+        "products": [
+          {
+            "name": "HERON",
+            "type": "Dachventilatoren",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Verursacht Wohnungslüftung Energieverlust?", "a": "Bei Anlagen mit Wärmerückgewinnung lassen sich bis zu 90 % der Energie aus der Abluft nutzen. Die Zuluft gelingt so nahezu ohne spürbaren Wärmeverlust." },
-      { "q": "Wie laut ist ein Badlüfter?", "a": "Badlüfter der Serie SEAHORSE arbeiten sehr leise unter 25 dB(A). Ein Nachtmodus senkt den Pegel weiter." },
-      { "q": "Lässt sich ein System im Bestand nachrüsten?", "a": "Ja, dezentrale Zuluftgeräte ohne aufwändige Kanäle oder kompakte Kanallösungen ermöglichen die Nachrüstung in Bestandswohnungen." },
-      { "q": "Wie oft sollten Filter gewechselt werden?", "a": "Je nach Nutzung und Außenluftqualität alle 3–6 Monate. Modelle mit Filterkontrollanzeige sind verfügbar." }
+      {
+        "q": "Verursacht Wohnungslüftung Energieverlust?",
+        "a": "Bei Anlagen mit Wärmerückgewinnung lassen sich bis zu 90 % der Energie aus der Abluft nutzen. Die Zuluft gelingt so nahezu ohne spürbaren Wärmeverlust."
+      },
+      {
+        "q": "Wie laut ist ein Badlüfter?",
+        "a": "Badlüfter der Serie SEAHORSE arbeiten sehr leise unter 25 dB(A). Ein Nachtmodus senkt den Pegel weiter."
+      },
+      {
+        "q": "Lässt sich ein System im Bestand nachrüsten?",
+        "a": "Ja, dezentrale Zuluftgeräte ohne aufwändige Kanäle oder kompakte Kanallösungen ermöglichen die Nachrüstung in Bestandswohnungen."
+      },
+      {
+        "q": "Wie oft sollten Filter gewechselt werden?",
+        "a": "Je nach Nutzung und Außenluftqualität alle 3–6 Monate. Modelle mit Filterkontrollanzeige sind verfügbar."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine Wohnungslüftung?",
     "finalCtaDesc": "Kontaktieren Sie uns für ein passendes Konzept zu Ihrem Zuhause und ein Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "In Wohnhäusern der neuen Generation sorgen hochisolierte und luftdichte Gebäudehüllen für Energieeinsparungen und reduzieren den natürlichen Luftaustausch deutlich. Diese Situation; Es kann zur Ansammlung von CO₂, VOC, Radon, Feuchtigkeit, Gerüchen und Schimmel im Innenraum führen. Deshalb ist Wohnraumlüftung kein Luxusartikel mehr; Es handelt sich um ein technisches System, das für gesundes Wohnen, Energieeffizienz und Gebäudeschutz notwendig ist. Wohnungen, Villen, Residenzen, Einfamilienhäuser, Tiny Houses/Fertiggebäude und Gemeinschaftsbereiche auf dem Gelände haben unterschiedliche Luftdurchsatzraten, Schallpegel, Installationsbereiche und Steuerungsanforderungen.\n\nNOVVES-Lösungen für den Wohnbereich; Es basiert auf kompakter Architektur, niedrigem Geräuschpegel, EC-Motortechnologie, Wärmerückgewinnung, feuchtigkeitsgesteuertem Betrieb und Smart-Home-Integration. KOI-Kompaktkanalventilatoren, CARACAL-Wärmerückgewinnungsgeräte, TIGER-Kompaktlüftungsgeräte, HUMMINGBIRD-Smart-EC-Ventilatoren, isolierte Zellenventilatoren TURTLE, ALPACA-Luftverteilungsgeräte, SEAHORSE-Bad-/WC-Ventilatoren, BUTTERFLY-Abluftventilatoren für die Küche und OWL-Abluftventilatoren für Gemeinschaftsbereiche; Es dient der Schaffung eines ruhigen, gesunden und energieeffizienten Mikroklimas in Wohnräumen."
+    }
   },
-
   "marinOffshore": {
     "breadcrumbCurrent": "Schiffs- & Offshore-Lüftung",
     "badge": "Lösungen",
@@ -719,30 +2224,72 @@
     "ctaSecondary": "Produktkatalog",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "DNV-GL", "label": "Schiffsklasse" },
-      { "value": "IP56", "label": "Schutzart" },
-      { "value": "SS316", "label": "Werkstoffqualität" },
-      { "value": "50+", "label": "Abgeschlossene Projekte" }
+      {
+        "value": "DNV-GL",
+        "label": "Schiffsklasse"
+      },
+      {
+        "value": "IP56",
+        "label": "Schutzart"
+      },
+      {
+        "value": "SS316",
+        "label": "Werkstoffqualität"
+      },
+      {
+        "value": "50+",
+        "label": "Abgeschlossene Projekte"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Zuverlässige Lüftung in maritimer Umgebung",
     "whyImportantP1": "Marine Umgebungen stellen durch Salzwasser, hohe Feuchte und aggressive Atmosphäre andere Anforderungen als Landanwendungen. Standard-Lüftungstechnik korrodiert und fällt hier schnell aus.",
     "whyImportantP2": "NOVVES-Marinlüftung nutzt Edelstahl (SS316), Spezialbeschichtungen und Zulassungen mariner Klassifikationsgesellschaften (DNV-GL, Lloyd's, BV). Zuverlässige Belüftung in Maschinenräumen, Passagierbereichen, Laderäumen und Sonderräumen.",
     "steps": [
-      { "label": "Projektanalyse", "desc": "Schiff/Plattform, Zonenklassifizierung, Anforderungen mariner Normen" },
-      { "label": "Engineering", "desc": "Ventilatorauswahl, Kanalplanung, Werkstoffwahl, Brandzonierung" },
-      { "label": "Fertigung & Lieferung", "desc": "Fertigung SS316/Spezialbeschichtung, Lieferung klassifizierter Produkte" },
-      { "label": "Montage & Inbetriebnahme", "desc": "Werft- oder Feldmontage, Leistungsprüfung und Klassenfreigabe" }
+      {
+        "label": "Projektanalyse",
+        "desc": "Schiff/Plattform, Zonenklassifizierung, Anforderungen mariner Normen"
+      },
+      {
+        "label": "Engineering",
+        "desc": "Ventilatorauswahl, Kanalplanung, Werkstoffwahl, Brandzonierung"
+      },
+      {
+        "label": "Fertigung & Lieferung",
+        "desc": "Fertigung SS316/Spezialbeschichtung, Lieferung klassifizierter Produkte"
+      },
+      {
+        "label": "Montage & Inbetriebnahme",
+        "desc": "Werft- oder Feldmontage, Leistungsprüfung und Klassenfreigabe"
+      }
     ],
     "systemLabel": "Systemarchitektur",
     "systemTitle": "Komponenten der Lösung",
     "systemComponents": [
-      { "title": "Marine Axialventilatoren", "desc": "Salzwasserbeständig, Gehäuse SS316, klassifizierte Axialventilatoren." },
-      { "title": "Marine Radialventilatoren", "desc": "Hochdruck-, korrosionsbeständige Radialventilatoren für Maschinen- und Laderäume." },
-      { "title": "Brandschutzklappen", "desc": "Automatisch schließende Brandschutzklappen gemäß maritimen Brandschutzstandards." },
-      { "title": "Wetterfeste Gitter", "desc": "Zuluft-/Abluftgitter mit Schutz gegen Wellen und Regen." },
-      { "title": "Ex-Ventilatoren (BEAR)", "desc": "Für marine Bereiche mit explosionsfähiger Atmosphäre, z. B. Laderäume und Tankzonen." },
-      { "title": "Regelung und Automatisierung", "desc": "Klassifizierte Schaltschränke, Brandmeldeanbindung und Fernüberwachung." }
+      {
+        "title": "Marine Axialventilatoren",
+        "desc": "Salzwasserbeständig, Gehäuse SS316, klassifizierte Axialventilatoren."
+      },
+      {
+        "title": "Marine Radialventilatoren",
+        "desc": "Hochdruck-, korrosionsbeständige Radialventilatoren für Maschinen- und Laderäume."
+      },
+      {
+        "title": "Brandschutzklappen",
+        "desc": "Automatisch schließende Brandschutzklappen gemäß maritimen Brandschutzstandards."
+      },
+      {
+        "title": "Wetterfeste Gitter",
+        "desc": "Zuluft-/Abluftgitter mit Schutz gegen Wellen und Regen."
+      },
+      {
+        "title": "Ex-Ventilatoren (BEAR)",
+        "desc": "Für marine Bereiche mit explosionsfähiger Atmosphäre, z. B. Laderäume und Tankzonen."
+      },
+      {
+        "title": "Regelung und Automatisierung",
+        "desc": "Klassifizierte Schaltschränke, Brandmeldeanbindung und Fernüberwachung."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr Schiffs-/Offshore-Lüftungsprojekt",
     "midCtaDesc": "Unser Experten-Ingenieurteam meldet sich schnellstmöglich bei Ihnen.",
@@ -750,35 +2297,126 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Klassenzulassung", "desc": "Produktion mit Zulassung u. a. durch DNV-GL, Lloyd's Register und Bureau Veritas." },
-      { "title": "Korrosionsbeständigkeit", "desc": "Lange Lebensdauer mit Edelstahl SS316, Epoxybeschichtung und Sonderlegierungen." },
-      { "title": "Brandschutz", "desc": "Klappen- und Ventilatorlösungen gemäß SOLAS und maritimen Brandschutzvorschriften." },
-      { "title": "Sonderfertigung", "desc": "Maß-, werkstoff- und leistungsspezifische Ausführungen je Schiff oder Plattform." }
+      {
+        "title": "Klassenzulassung",
+        "desc": "Produktion mit Zulassung u. a. durch DNV-GL, Lloyd's Register und Bureau Veritas."
+      },
+      {
+        "title": "Korrosionsbeständigkeit",
+        "desc": "Lange Lebensdauer mit Edelstahl SS316, Epoxybeschichtung und Sonderlegierungen."
+      },
+      {
+        "title": "Brandschutz",
+        "desc": "Klappen- und Ventilatorlösungen gemäß SOLAS und maritimen Brandschutzvorschriften."
+      },
+      {
+        "title": "Sonderfertigung",
+        "desc": "Maß-, werkstoff- und leistungsspezifische Ausführungen je Schiff oder Plattform."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "Wo kommt es zum Einsatz?",
     "areasDesc": "Lösungen für alle Lüftungsanforderungen in der maritimen Wirtschaft.",
     "areas": [
-      { "title": "Passagierschiffe und Fähren", "description": "Klimaführung in Passagier- und Besatzungsbereichen", "products": [{ "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Frachtschiffe", "description": "Laderaum- und Maschinenraumlüftung", "products": [{ "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }] },
-      { "title": "Offshore-Plattformen", "description": "Plattformlüftung und Ex-Absaugung", "products": [{ "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Yachten und Megayachten", "description": "Komfortlüftung und Maschinenraumabluft", "products": [{ "name": "KOI", "type": "Kanalventilatoren", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC-Ventilatoren", "image": "/images/products/hummingbird-drb-ec.jpg" }] }
+      {
+        "title": "Passagierschiffe und Fähren",
+        "description": "Klimaführung in Passagier- und Besatzungsbereichen",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Frachtschiffe",
+        "description": "Laderaum- und Maschinenraumlüftung",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Offshore-Plattformen",
+        "description": "Plattformlüftung und Ex-Absaugung",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Yachten und Megayachten",
+        "description": "Komfortlüftung und Maschinenraumabluft",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Kanalventilatoren",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC-Ventilatoren",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Welche Klassifikationsfreigaben gibt es für Marineventilatoren?", "a": "NOVVES-Marineventilatoren können mit Freigaben internationaler Klassifikationsgesellschaften u. a. DNV-GL, Lloyd's Register, Bureau Veritas und ABS gefertigt werden." },
-      { "q": "Warum wird Werkstoff SS316 bevorzugt?", "a": "Edelstahl SS316 bietet in salzhaltiger Umgebung deutlich bessere Beständigkeit als unlegierte Stähle und wird besonders für Decks und wetterexponierte Bereiche bevorzugt." },
-      { "q": "Welche Ventilatoren werden im Maschinenraum eingesetzt?", "a": "Großvolumige radiale oder axiale Ventilatoren für hohe Temperaturen und Abgasbedingungen; bei Ex-Anforderung die Serie BEAR." },
-      { "q": "Ist eine Nachrüstung auf bestehenden Schiffen möglich?", "a": "Ja, Retrofit-Lösungen zur Erneuerung oder Leistungserhöhung der Lüftung sind verfügbar." }
+      {
+        "q": "Welche Klassifikationsfreigaben gibt es für Marineventilatoren?",
+        "a": "NOVVES-Marineventilatoren können mit Freigaben internationaler Klassifikationsgesellschaften u. a. DNV-GL, Lloyd's Register, Bureau Veritas und ABS gefertigt werden."
+      },
+      {
+        "q": "Warum wird Werkstoff SS316 bevorzugt?",
+        "a": "Edelstahl SS316 bietet in salzhaltiger Umgebung deutlich bessere Beständigkeit als unlegierte Stähle und wird besonders für Decks und wetterexponierte Bereiche bevorzugt."
+      },
+      {
+        "q": "Welche Ventilatoren werden im Maschinenraum eingesetzt?",
+        "a": "Großvolumige radiale oder axiale Ventilatoren für hohe Temperaturen und Abgasbedingungen; bei Ex-Anforderung die Serie BEAR."
+      },
+      {
+        "q": "Ist eine Nachrüstung auf bestehenden Schiffen möglich?",
+        "a": "Ja, Retrofit-Lösungen zur Erneuerung oder Leistungserhöhung der Lüftung sind verfügbar."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Suchen Sie eine marine Lüftungslösung?",
     "finalCtaDesc": "Kontaktieren Sie uns für Engineering und Angebot zu Ihrem Schiffs- oder Plattformprojekt.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Lüftungssysteme in Meeres- und Offshore-Strukturen; Es ist nicht nur darauf ausgelegt, einen Luftaustausch für Komfort zu gewährleisten, sondern auch für Gerätesicherheit, Feuerbeständigkeit, Korrosionsschutz, Management explosionsfähiger Atmosphäre und Betriebskontinuität rund um die Uhr. Schiffsmaschinenräume, Generatorräume, Pumpenräume, Küchenabgasleitungen, Wohnräume, technische Räume, Offshore-Plattformen, FPSO-Einheiten und Werftprojekte; Aufgrund der Risiken hoher Luftfeuchtigkeit, salzhaltiger Atmosphäre, Vibrationen, begrenztem Platzangebot, hoher Temperaturen und brennbarer Gase sind technische Systeme erforderlich, die wesentlich langlebiger sind als Standard-HLK-Lösungen.\n\nNOVVES bietet spezielle Ventilator-, Dämpfer-, Rauchabsaug-, Abluft-, Frischluft- und Filterlösungen für Marine- und Offshore-Projekte. MARLIN-Axialventilatoren werden in Frischluft- und Abluftanwendungen mit hohem Durchfluss eingesetzt; Ex-geschützte Ventilatoren von BEAR werden in explosionsgefährdeten Bereichen eingesetzt, in denen die Gefahr explosiver Gase besteht. Hochleistungs-Schneckenventilatoren von NAUTILUS werden in der Hochdruck-Abluft- und Prozessluftübertragung eingesetzt; HOUND-Dämpfer werden in Bereichen eingesetzt, in denen eine Luftstromkontrolle und -abdichtung erforderlich ist. DRAGONFLY-Entrauchungsventilatoren spielen in Brandszenarien eine entscheidende Rolle.\n\nAusrüstung zur Verwendung in der Meeresumwelt; Es muss mit speziellen Material-, Beschichtungs- und Motorschutzklassen gegen salzhaltige Luft, Feuchtigkeit, Vibration und Dauerbetriebsbedingungen ausgelegt sein. NOVVES-Lösungen; Mit Verzinkung, Epoxidbeschichtung, Edelstahl, Marine-Lacksystemen, Motoren mit hoher IP-Schutzart, vibrationsreduzierenden Anschlüssen und kompakten Montagegeometrien lässt es sich projektspezifisch anpassen. Bei Offshore-Plattformen und Bordanwendungen werden die Platzierungen von Ventilatoren und Luftkanälen durch technische Berechnungen optimiert, wobei begrenztes Volumen, Wartungszugang und Sicherheitsanforderungen berücksichtigt werden.\n\nNOVVES Marine- und Offshore-Belüftungslösungen; Es erfüllt unterschiedliche Anforderungen wie Maschinenraumkühlung, Abgas- und Heißluftableitung, Komfortlüftung von Wohnräumen, Küchenabluft, Batterie-/Energieraumlüftung, Luftmanagement in Ex-geschützten Bereichen und Rauchkontrolle im Brandfall mit einem einzigen integrierten Systemansatz. Somit wird ein sicheres, langlebiges, effizientes und langlebiges Luftmanagement in Schiffen, Werften und Offshore-Projekten gewährleistet."
+    }
   },
-
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Projektspezialfertigung",
     "badge": "Lösungen",
@@ -789,30 +2427,72 @@
     "ctaSecondary": "Unsere Leistungen",
     "ctaSecondaryHref": "/hizmetler",
     "trustStrip": [
-      { "value": "3D CAD", "label": "Konstruktion" },
-      { "value": "FEA", "label": "Strukturanalyse" },
-      { "value": "CNC", "label": "Präzisionsfertigung" },
-      { "value": "75+", "label": "Sonderprojekte" }
+      {
+        "value": "3D CAD",
+        "label": "Konstruktion"
+      },
+      {
+        "value": "FEA",
+        "label": "Strukturanalyse"
+      },
+      {
+        "value": "CNC",
+        "label": "Präzisionsfertigung"
+      },
+      {
+        "value": "75+",
+        "label": "Sonderprojekte"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Jedes Projekt ist einzigartig",
     "whyImportantP1": "Manche Projekte verlangen Maße, Werkstoffe, Temperaturbeständigkeit oder Leistungen, die im Standardkatalog fehlen. Hohe Temperaturen, Korrosion, enge Einbauorte oder ungewöhnliche Druck-/Volumenstromanforderungen lassen sich nicht mit Serienprodukten lösen.",
     "whyImportantP2": "NOVVES fertigt projektspezifische Ventilatoren, Klappen, Kanäle und Zubehör mit eigenem Engineering und Produktion. Jedes Sonderprodukt stützt sich auf 3D-CAD, FEA und CFD-Strömungssimulation.",
     "steps": [
-      { "label": "Anforderungsdefinition", "desc": "Sondermaße, Werkstoff, Temperatur, Volumenstrom, Druck und Einbaubedingungen" },
-      { "label": "Engineering", "desc": "3D-CAD, FEA, CFD-Simulation und Detailzeichnungen" },
-      { "label": "Prototyp & Serienstart", "desc": "CNC-Bearbeitung, Schweißen, Auswuchten und Qualitätskontrolle" },
-      { "label": "Prüfung & Lieferung", "desc": "Leistungsprüfung, Schwingungsmessung, Zertifizierung und Auslieferung" }
+      {
+        "label": "Anforderungsdefinition",
+        "desc": "Sondermaße, Werkstoff, Temperatur, Volumenstrom, Druck und Einbaubedingungen"
+      },
+      {
+        "label": "Engineering",
+        "desc": "3D-CAD, FEA, CFD-Simulation und Detailzeichnungen"
+      },
+      {
+        "label": "Prototyp & Serienstart",
+        "desc": "CNC-Bearbeitung, Schweißen, Auswuchten und Qualitätskontrolle"
+      },
+      {
+        "label": "Prüfung & Lieferung",
+        "desc": "Leistungsprüfung, Schwingungsmessung, Zertifizierung und Auslieferung"
+      }
     ],
     "systemLabel": "Fertigungskompetenz",
     "systemTitle": "Was können wir fertigen?",
     "systemComponents": [
-      { "title": "Ventilatoren in Sondergröße", "desc": "Axiale, radiale und diagonal abströmende Ventilatoren in nicht genormten Durchmessern, Breiten und Leistungen." },
-      { "title": "Hochtemperatur-Ventilatoren", "desc": "Spezialwerkstoffe und Konstruktionen für Dauerbetrieb bis 400\u00b0C und darüber." },
-      { "title": "Ventilatoren für Korrosion", "desc": "Edelstahl, Titan, GFK und Spezialbeschichtungen für aggressive Gase und Dämpfe." },
-      { "title": "Sonderklappen und Kanäle", "desc": "Klappen, Kanäle und Verbindungselemente in Sondermaßen und -werkstoffen." },
-      { "title": "Spezielle Aufstellkonzepte", "desc": "Konsolen und Tragkonstruktionen für beengte Räume, Deckenabhängung, Podeste oder Schwingungsisolierung." },
-      { "title": "Prüfung und Zertifizierung", "desc": "Aerodynamische Prüfstandsmessungen, Schwingungsanalyse und projektspezifische Zertifikate." }
+      {
+        "title": "Ventilatoren in Sondergröße",
+        "desc": "Axiale, radiale und diagonal abströmende Ventilatoren in nicht genormten Durchmessern, Breiten und Leistungen."
+      },
+      {
+        "title": "Hochtemperatur-Ventilatoren",
+        "desc": "Spezialwerkstoffe und Konstruktionen für Dauerbetrieb bis 400°C und darüber."
+      },
+      {
+        "title": "Ventilatoren für Korrosion",
+        "desc": "Edelstahl, Titan, GFK und Spezialbeschichtungen für aggressive Gase und Dämpfe."
+      },
+      {
+        "title": "Sonderklappen und Kanäle",
+        "desc": "Klappen, Kanäle und Verbindungselemente in Sondermaßen und -werkstoffen."
+      },
+      {
+        "title": "Spezielle Aufstellkonzepte",
+        "desc": "Konsolen und Tragkonstruktionen für beengte Räume, Deckenabhängung, Podeste oder Schwingungsisolierung."
+      },
+      {
+        "title": "Prüfung und Zertifizierung",
+        "desc": "Aerodynamische Prüfstandsmessungen, Schwingungsanalyse und projektspezifische Zertifikate."
+      }
     ],
     "midCtaTitle": "Angebot für Ihre Sonderfertigung",
     "midCtaDesc": "Unser Engineering-Team prüft Ihre Anforderungen.",
@@ -820,35 +2500,126 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Ingenieurgesichert", "desc": "Auslegung verifiziert mit 3D-CAD, FEA und CFD; projektspezifische Berechnungsberichte." },
-      { "title": "Eigene Fertigung", "desc": "Präzisionsfertigung mit CNC, robotergestütztem Schweißen und Auswuchtanlage." },
-      { "title": "Flexible Werkstoffe", "desc": "Unlegierter und legierter Stahl, Edelstahl, Aluminium, GFK, Titan und Sonderlegierungen." },
-      { "title": "Schnelle Prototypen", "desc": "Zielgerichteter Übergang vom Entwurf zum Prototyp und Leistungsnachweis." }
+      {
+        "title": "Ingenieurgesichert",
+        "desc": "Auslegung verifiziert mit 3D-CAD, FEA und CFD; projektspezifische Berechnungsberichte."
+      },
+      {
+        "title": "Eigene Fertigung",
+        "desc": "Präzisionsfertigung mit CNC, robotergestütztem Schweißen und Auswuchtanlage."
+      },
+      {
+        "title": "Flexible Werkstoffe",
+        "desc": "Unlegierter und legierter Stahl, Edelstahl, Aluminium, GFK, Titan und Sonderlegierungen."
+      },
+      {
+        "title": "Schnelle Prototypen",
+        "desc": "Zielgerichteter Übergang vom Entwurf zum Prototyp und Leistungsnachweis."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "In welchen Projekten wird es eingesetzt?",
     "areasDesc": "Projektbezogene Fertigung, wenn Standardprodukte nicht ausreichen.",
     "areas": [
-      { "title": "Industrielle Prozessanlagen", "description": "Sonderventilatoren für Hochtemperatur und korrosive Gase", "products": [{ "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX-Ventilatoren", "image": "/images/products/bear-bp.jpg" }] },
-      { "title": "Kraftwerke", "description": "Abluft- und Zuluftventilatoren in Sondergröße und -leistung", "products": [{ "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Schiffs- und Offshoreprojekte", "description": "Marine Ventilatoren mit klassifizierter Sonderausführung", "products": [{ "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }, { "name": "NAUTILUS", "type": "Industrieventilatoren", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
-      { "title": "Infrastruktur und Tunnel", "description": "Tunnelventilatoren mit Sonderdurchmesser und Leistungsdaten", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] }
+      {
+        "title": "Industrielle Prozessanlagen",
+        "description": "Sonderventilatoren für Hochtemperatur und korrosive Gase",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX-Ventilatoren",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Kraftwerke",
+        "description": "Abluft- und Zuluftventilatoren in Sondergröße und -leistung",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Schiffs- und Offshoreprojekte",
+        "description": "Marine Ventilatoren mit klassifizierter Sonderausführung",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Industrieventilatoren",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Infrastruktur und Tunnel",
+        "description": "Tunnelventilatoren mit Sonderdurchmesser und Leistungsdaten",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Gibt es eine Mindestbestellmenge für Sonderfertigung?", "a": "Nein. NOVVES arbeitet projektbezogen; auch Einzelstück-Sonderfertigung ist möglich." },
-      { "q": "Wie lang sind die Lieferzeiten?", "a": "Je nach Komplexität beträgt die Lieferzeit nach Freigabe der Konstruktion typischerweise 4–12 Wochen. Für eilige Projekte gibt es beschleunigte Programme." },
-      { "q": "Kann ein vorhandener Ventilator umgebaut werden?", "a": "Ja, z. B. Laufradaustausch, Gehäuseänderung, Motortausch oder Werkstoffwechsel für Bestandsventilatoren." },
-      { "q": "Welche Prüf- und Zertifizierungsleistungen bieten Sie?", "a": "Aerodynamische Kennfeldprüfung (Volumenstrom, Druck, Leistung), Schwingungsanalyse, Schallmessung und projektspezifische Prüfberichte. Prüfmöglichkeiten nach AMCA, ISO und EN sind verfügbar." }
+      {
+        "q": "Gibt es eine Mindestbestellmenge für Sonderfertigung?",
+        "a": "Nein. NOVVES arbeitet projektbezogen; auch Einzelstück-Sonderfertigung ist möglich."
+      },
+      {
+        "q": "Wie lang sind die Lieferzeiten?",
+        "a": "Je nach Komplexität beträgt die Lieferzeit nach Freigabe der Konstruktion typischerweise 4–12 Wochen. Für eilige Projekte gibt es beschleunigte Programme."
+      },
+      {
+        "q": "Kann ein vorhandener Ventilator umgebaut werden?",
+        "a": "Ja, z. B. Laufradaustausch, Gehäuseänderung, Motortausch oder Werkstoffwechsel für Bestandsventilatoren."
+      },
+      {
+        "q": "Welche Prüf- und Zertifizierungsleistungen bieten Sie?",
+        "a": "Aerodynamische Kennfeldprüfung (Volumenstrom, Druck, Leistung), Schwingungsanalyse, Schallmessung und projektspezifische Prüfberichte. Prüfmöglichkeiten nach AMCA, ISO und EN sind verfügbar."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Benötigen Sie eine Sonderfertigung?",
     "finalCtaDesc": "Teilen Sie uns Ihre Anforderungen mit – unser Engineering-Team unterbreitet ein maßgeschneidertes Konzept.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Bei modernen Architekturentwürfen, Sanierungsprojekten und speziellen Industrieprozessen reicht eine Standardlüftungsausrüstung nicht immer aus. Verfügbare Schachtabmessungen, enge Maschinenräume, akustische Grenzen, architektonische ästhetische Erwartungen, Hygieneanforderungen oder besondere Materialanforderungen; Es erfordert einen projektspezifischen Engineering- und Fertigungsansatz. Zu diesem Zeitpunkt muss das Lüftungsgerät nicht in die Architektur passen, sondern das Gerät muss entsprechend den physischen, akustischen und betrieblichen Anforderungen des Projekts neu gestaltet werden.\n\nMit seiner F&E- und Engineering-Infrastruktur entwickelt NOVVES maßgeschneiderte Ventilatoren, Zellen, Gehäuse, Schalldämpfer, Dämpfer und Luftverteilungslösungen. Bei Retrofit-Projekten werden Sonderkonstruktionen angefertigt, die sich vollständig an vorhandene Kanäle, Flansche, Wellen und Befestigungspunkte anpassen; Niedriger Schallpegel, spezielle Schalldämmung und Schalldämpferintegration stehen in Hotels, Studios, Konferenzräumen und Prestigeprojekten im Vordergrund. In Hochhäusern und Bereichen mit schwierigen Passagen wird der Montageprozess durch modulare, zerlegbare und leichte Bauprodukte erleichtert.\n\nNOVVES in Prestigewohnungen, Luxusarchitektur und unsichtbaren Klimaanlagenanwendungen; Es bietet Sonderlösungen unter Berücksichtigung von verdecktem Einbau, speziellen RAL-Oberflächenbeschichtungen, zugfreier Luftverteilung und architektonischer Integrität. Im Lebensmittel-, Pharma- und Medizinbereich werden projektspezifische Biosicherheits- und Sauberkeitsanforderungen mit Optionen wie einem Edelstahlgehäuse aus AISI 304/316, waschbarem Hygienedesign, HEPA-Filterung und UV-C-Integration erfüllt. So bietet NOVVES maßgeschneiderte Fertigungslösungen; Es geht über die Grenzen von Standardprodukten hinaus und schafft Systeme, die projektspezifisch, anwendbar und mit hoher technischer Genauigkeit sind."
+    }
   },
-
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD-Ingenieurberatung",
     "badge": "Lösungen",
@@ -859,30 +2630,72 @@
     "ctaSecondary": "Unsere Leistungen",
     "ctaSecondaryHref": "/hizmetler/cfd-analizi",
     "trustStrip": [
-      { "value": "3D CFD", "label": "Simulation" },
-      { "value": "ANSYS", "label": "Solver-Plattform" },
-      { "value": "ISO 7730", "label": "Komfortanalyse" },
-      { "value": "85+", "label": "Abgeschlossene Analysen" }
+      {
+        "value": "3D CFD",
+        "label": "Simulation"
+      },
+      {
+        "value": "ANSYS",
+        "label": "Solver-Plattform"
+      },
+      {
+        "value": "ISO 7730",
+        "label": "Komfortanalyse"
+      },
+      {
+        "value": "85+",
+        "label": "Abgeschlossene Analysen"
+      }
     ],
     "whyImportantLabel": "Warum wichtig",
     "whyImportantTitle": "Simulieren, bevor Sie bauen",
     "whyImportantP1": "Die reale Leistung von Lüftungs- und Rauchabzugssystemen vor der Installation zu kennen, vermeidet teure Fehlentscheidungen und dokumentiert die Normkonformität. CFD visualisiert Strömung, Temperaturfelder und Rauchausbreitung in 3D.",
     "whyImportantP2": "Das NOVVES-CFD-Team führt projektspezifische Simulationen mit ANSYS Fluent und OpenFOAM durch. Engineering-Unterstützung für Jet-Ventilator-Platzierung, Rauchabzugszeit, Komfortanalyse, Wärmelast und Systemoptimierung.",
     "steps": [
-      { "label": "Projektdefinition", "desc": "Geometrie, Randbedingungen, Brandszenario oder Lüftungsanforderungen" },
-      { "label": "3D-Modell & Netz", "desc": "CAD-Geometrieerstellung oder -import, Erzeugung des Rechennetzes" },
-      { "label": "Simulation & Lösung", "desc": "Strömungs-, Temperatur- und Rauchlösung mit RANS/LES-Turbulenzmodellen" },
-      { "label": "Bericht & Optimierung", "desc": "Ergebnisdarstellung, Leistungsbewertung, Verbesserungsempfehlungen" }
+      {
+        "label": "Projektdefinition",
+        "desc": "Geometrie, Randbedingungen, Brandszenario oder Lüftungsanforderungen"
+      },
+      {
+        "label": "3D-Modell & Netz",
+        "desc": "CAD-Geometrieerstellung oder -import, Erzeugung des Rechennetzes"
+      },
+      {
+        "label": "Simulation & Lösung",
+        "desc": "Strömungs-, Temperatur- und Rauchlösung mit RANS/LES-Turbulenzmodellen"
+      },
+      {
+        "label": "Bericht & Optimierung",
+        "desc": "Ergebnisdarstellung, Leistungsbewertung, Verbesserungsempfehlungen"
+      }
     ],
     "systemLabel": "Leistungsbereiche",
     "systemTitle": "Wozu dient CFD?",
     "systemComponents": [
-      { "title": "Rauchabzugssimulation", "desc": "Rauchausbreitung, Sichtweite und Räumungszeit in Brandszenarien." },
-      { "title": "Optimierung Jet-Ventilator-Standort", "desc": "Ermittlung von Anzahl, Lage und Ausblaswinkel per Simulation in Parkhäusern und Tunneln." },
-      { "title": "Komfortlüftungsanalyse", "desc": "Temperatur, Luftgeschwindigkeit und PMV/PPD-Komfort in Büros, Einkaufszentren und Versammlungsstätten." },
-      { "title": "Wärmeübertragungsanalyse", "desc": "Temperaturverteilung in Transformatorenräumen, Rechenzentren und Industrieanlagen." },
-      { "title": "Reinraumströmung", "desc": "Partikelverteilung, Laminarströmung und Druckkaskade in Reinräumen." },
-      { "title": "Systemoptimierung", "desc": "CFD-Review bestehender Lüftung und Empfehlungen zur Leistungsverbesserung." }
+      {
+        "title": "Rauchabzugssimulation",
+        "desc": "Rauchausbreitung, Sichtweite und Räumungszeit in Brandszenarien."
+      },
+      {
+        "title": "Optimierung Jet-Ventilator-Standort",
+        "desc": "Ermittlung von Anzahl, Lage und Ausblaswinkel per Simulation in Parkhäusern und Tunneln."
+      },
+      {
+        "title": "Komfortlüftungsanalyse",
+        "desc": "Temperatur, Luftgeschwindigkeit und PMV/PPD-Komfort in Büros, Einkaufszentren und Versammlungsstätten."
+      },
+      {
+        "title": "Wärmeübertragungsanalyse",
+        "desc": "Temperaturverteilung in Transformatorenräumen, Rechenzentren und Industrieanlagen."
+      },
+      {
+        "title": "Reinraumströmung",
+        "desc": "Partikelverteilung, Laminarströmung und Druckkaskade in Reinräumen."
+      },
+      {
+        "title": "Systemoptimierung",
+        "desc": "CFD-Review bestehender Lüftung und Empfehlungen zur Leistungsverbesserung."
+      }
     ],
     "midCtaTitle": "Angebot für Ihr CFD-Projekt",
     "midCtaDesc": "Unser CFD-Engineering-Team meldet sich schnellstmöglich bei Ihnen.",
@@ -890,32 +2703,124 @@
     "advantagesLabel": "Warum NOVVES",
     "advantagesTitle": "Zentrale Vorteile",
     "advantages": [
-      { "title": "Erfahrenes CFD-Team", "desc": "Spezialisten für Lüftungstechnik und Brandschutz." },
-      { "title": "Marktführende Software", "desc": "Belastbare Ergebnisse mit ANSYS Fluent, OpenFOAM und FDS." },
-      { "title": "Normkonformität", "desc": "Analysen und Berichte im Einklang mit EN 12101, ASHRAE und NFPA." },
-      { "title": "Design-Integration", "desc": "CFD-Ergebnisse direkt in den Engineering-Prozess für belastbare Umsetzung eingebunden." }
+      {
+        "title": "Erfahrenes CFD-Team",
+        "desc": "Spezialisten für Lüftungstechnik und Brandschutz."
+      },
+      {
+        "title": "Marktführende Software",
+        "desc": "Belastbare Ergebnisse mit ANSYS Fluent, OpenFOAM und FDS."
+      },
+      {
+        "title": "Normkonformität",
+        "desc": "Analysen und Berichte im Einklang mit EN 12101, ASHRAE und NFPA."
+      },
+      {
+        "title": "Design-Integration",
+        "desc": "CFD-Ergebnisse direkt in den Engineering-Prozess für belastbare Umsetzung eingebunden."
+      }
     ],
     "areasLabel": "Einsatzbereiche",
     "areasTitle": "In welchen Projekten wird es eingesetzt?",
     "areasDesc": "Beratung für alle Lüftungs- und Wärmeübertragungsprojekte mit CFD-Bedarfsnachweis.",
     "areas": [
-      { "title": "Geschlossene Parkhausprojekte", "description": "Jet-Ventilator-Standort und CO-/Rauchsimulation", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Klappen", "image": "/images/products/hound-al.png" }] },
-      { "title": "Tunnelbelüftung", "description": "Brandszenario und Strömungsgeschwindigkeitsanalyse", "products": [{ "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Axialventilatoren", "image": "/images/products/marlin.png" }] },
-      { "title": "Rechenzentrumskühlung", "description": "Temperaturverteilung auf Rack-Ebene und Hotspot-Analyse", "products": [{ "name": "TIGER", "type": "Luftbehandlungsaggregate", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC-Ventilatoren", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Rauchhaltung in Hochhäusern", "description": "Simulation überdruckter Treppenhäuser und Rauchzonierung", "products": [{ "name": "TURTLE", "type": "Zellenradventilatoren", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Rauch- und Wärmeabzugsventilatoren", "image": "/images/products/dragonfly-c.png" }] }
+      {
+        "title": "Geschlossene Parkhausprojekte",
+        "description": "Jet-Ventilator-Standort und CO-/Rauchsimulation",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Klappen",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Tunnelbelüftung",
+        "description": "Brandszenario und Strömungsgeschwindigkeitsanalyse",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axialventilatoren",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Rechenzentrumskühlung",
+        "description": "Temperaturverteilung auf Rack-Ebene und Hotspot-Analyse",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Luftbehandlungsaggregate",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC-Ventilatoren",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Rauchhaltung in Hochhäusern",
+        "description": "Simulation überdruckter Treppenhäuser und Rauchzonierung",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Zellenradventilatoren",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Rauch- und Wärmeabzugsventilatoren",
+            "image": "/images/products/dragonfly-c.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqItems": [
-      { "q": "Wie lange dauert eine CFD-Analyse?", "a": "Je nach Komplexität 1–4 Wochen. Einfache Ein-Szenario-Analysen sind schneller; mehrere Brandfälle oder Optimierungen dauern länger." },
-      { "q": "Welche Unterlagen werden für CFD benötigt?", "a": "Architektenpläne (DWG/Revit), Angaben zu Ventilator- und Gitterstandorten, Betriebsbedingungen (Temperatur, Volumenstrom usw.) und gegebenenfalls Brandfalldefinitionen." },
-      { "q": "Wird ein CFD-Bericht als Amtshilfe anerkannt?", "a": "Der CFD-Bericht dient als ingenieurtechnische Nachweisunterlage in Bau- und Brandschutzgenehmigungsverfahren. Pro Projekt werden auf Wunsch unterzeichnete und gestempelte Berichte erstellt." },
-      { "q": "Kann ich nur CFD-Leistungen beauftragen?", "a": "Ja, NOVVES bietet auch unabhängige CFD-Beratung. Simulation und Berichtswesen sind ohne Koppelung an den Geräteverkauf möglich." }
+      {
+        "q": "Wie lange dauert eine CFD-Analyse?",
+        "a": "Je nach Komplexität 1–4 Wochen. Einfache Ein-Szenario-Analysen sind schneller; mehrere Brandfälle oder Optimierungen dauern länger."
+      },
+      {
+        "q": "Welche Unterlagen werden für CFD benötigt?",
+        "a": "Architektenpläne (DWG/Revit), Angaben zu Ventilator- und Gitterstandorten, Betriebsbedingungen (Temperatur, Volumenstrom usw.) und gegebenenfalls Brandfalldefinitionen."
+      },
+      {
+        "q": "Wird ein CFD-Bericht als Amtshilfe anerkannt?",
+        "a": "Der CFD-Bericht dient als ingenieurtechnische Nachweisunterlage in Bau- und Brandschutzgenehmigungsverfahren. Pro Projekt werden auf Wunsch unterzeichnete und gestempelte Berichte erstellt."
+      },
+      {
+        "q": "Kann ich nur CFD-Leistungen beauftragen?",
+        "a": "Ja, NOVVES bietet auch unabhängige CFD-Beratung. Simulation und Berichtswesen sind ohne Koppelung an den Geräteverkauf möglich."
+      }
     ],
     "finalCtaLabel": "Für Ihr Projekt",
     "finalCtaTitle": "Benötigen Sie eine CFD-Analyse?",
     "finalCtaDesc": "Wenden Sie sich an unser CFD-Engineering-Team für Projektdefinition, Simulation und Angebot.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Angebot anfordern"
+    "finalCtaButton": "Angebot anfordern",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Bei modernen Brandschutz- und Lüftungsprojekten reicht es oft nicht aus, die Systemleistung allein mit Standardberechnungen zu überprüfen. Luftströmung in Parkhäusern, Tunneln, U-Bahn-Stationen, Flughäfen, Einkaufszentren, Stadien und großvolumigen Bauwerken; Es verhält sich komplex je nach architektonischen Hindernissen, Schachtstandorten, Düsenplatzierungen, Rauchschichtung und Brandszenarien. Daher CFD-Analyse, leistungsbasiertes Design und szenariobasierter Engineering-Ansatz; Es spielt eine entscheidende Rolle sowohl für die Lebenssicherheit als auch für die richtige Optimierung der Investitionskosten.\n\nNOVVES geht Projekte nicht nur als Produktlieferant, sondern auch als Partner für technische Lösungen an. Es gewährleistet den sicheren Fortschritt des Projekts vom Konzept bis zur Genehmigung mit Dienstleistungen wie Strahlventilatorpositionierung, CO-Diffusionssimulation, Rauchevakuierungsszenario, Analyse der kritischen Tunnelgeschwindigkeit, Feuerwehrgenehmigungsdatei, feuertechnischer Unterstützung, technischen Spezifikationen und CAD-gestütztem Systemlayout. Produktfamilien DRAGONFLY, HOUND, REMORA, MARLIN, TIGER und TURTLE; Es wird im Rahmen CFD-verifizierter Systementwürfe in das Projekt integriert."
+    }
   }
 }

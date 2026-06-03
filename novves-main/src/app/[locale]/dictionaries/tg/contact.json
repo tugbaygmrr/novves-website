@@ -70,5 +70,171 @@
     "title2": "ВАО",
     "desc": "Бизни ижтимоий тармоқларимизда кузатиб боринг ва янгиликлардан хабардор бўлинг.",
     "visitPage": "Боздид аз саҳифа"
+  },
+  "iletisimHub": {
+    "breadcrumbHome": "Хона",
+    "breadcrumbSection": "Тамос ва дастгирӣ",
+    "breadcrumbCurrent": "Дар тамос шавед",
+    "sidebarSubtitle": "Тамос бо Hub",
+    "navContactSupport": "Тамос ва дастгирӣ",
+    "navContact": "Тамос",
+    "navTechnicalSupport": "Дархост барои дастгирии техникӣ",
+    "navPartners": "Шарикони стратегӣ",
+    "navGlobalPartners": "Шарикони глобалии мо",
+    "navPartnership": "Шарики ҳалли",
+    "workingHours": "Соатхои корй",
+    "weekdays": "Рӯзҳои ҳафта",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "шанбе",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "Якшанбе",
+    "sundayClosed": "баста",
+    "downloadSpecs": "Ҳуҷҷатҳои техникӣ",
+    "heroBadge": "Тамос ва дастгирӣ",
+    "heroTitle": "Биё созем",
+    "heroTitleLine2": "Оянда Якҷоя.",
+    "heroDesc": "Гурӯҳи коршиносони мо NOVVES барои дастгирии техникӣ, машварати лоиҳа ва ҳалли стратегӣ дар ин ҷост.",
+    "formTitle": "Шакли тамос",
+    "formDesc": "Барои маълумоти муфассал дар бораи лоиҳаи худ варақаи зерро пур кунед.",
+    "successMessage": "Паёми шумо бо муваффақият фиристода шуд. Мо ба зудӣ ба шумо бармегардем.",
+    "labelName": "Номи пурра",
+    "labelCompany": "номи ширкат",
+    "labelEmail": "Почтаи электронӣ",
+    "labelPhone": "Телефон",
+    "labelDepartment": "Кафедра",
+    "labelSubject": "Мавзӯъ",
+    "labelMessage": "Паёми шумо",
+    "placeholderName": "Номи пурраи шумо",
+    "placeholderCompany": "Ташкилоти шумо",
+    "placeholderEmail": "corporate@email.com",
+    "placeholderPhone": "+1 (___) ___-____",
+    "placeholderSelect": "Интихоб кунед",
+    "placeholderSubject": "Сатри мавзӯъ",
+    "placeholderMessage": "Тафсилот дар бораи лоиҳа ё саволи шумо ...",
+    "departments": [
+      "Хизматрасонии техникӣ",
+      "Тадқиқот дар сайт",
+      "Пурсиши маҳсулот ё дастгирӣ",
+      "Машварати техникӣ",
+      "Дархости пайгирӣ"
+    ],
+    "kvkkConsent": "Бо пешниҳоди ин шакл, шумо ба коркарди маълумоти шахсии шумо тибқи қонуни дахлдори ҳифзи додаҳо розӣ мешавед.",
+    "submit": "Шакли пешниҳод",
+    "locationsTitle": "Ҷойҳои мо",
+    "locationsDesc": "Ба марказҳои амалиётии мо дар саросари Туркия муроҷиат кунед.",
+    "getDirections": "Дастрасҳоро гиред",
+    "locations": [
+      {
+        "id": "hq",
+        "badge": "Идораи Марказӣ",
+        "title": "Дафтари Истанбул",
+        "address": "19 май мах. Сумер Сок.\nЗиташ Плаза C2 Блоки № 7\nКадыкой / Истанбул"
+      },
+      {
+        "id": "factory",
+        "badge": "Factory",
+        "title": "Заводи истехсолии Ялова",
+        "address": "Ташкөпрю марказ Маҳ. Чайдере Сок.\nБинои раками 9/1 Фабрикаи капи 2\nЧифтликкой / Ялова"
+      },
+      {
+        "id": "service",
+        "badge": "Хизматрасонии техникӣ",
+        "title": "Маркази хизматрасонӣ",
+        "address": "Минтақаи муташаккили саноатии Дудулло\nУмрания / Истанбул"
+      }
+    ],
+    "fabLabel": "Дастгирии зинда"
+  },
+  "sosyalMedyaHub": {
+    "breadcrumbHome": "Хона",
+    "breadcrumbContact": "Тамос",
+    "breadcrumbSocialMedia": "ВАО иҷтимоӣ",
+    "heroTitle1": "ИЧТИМОИ",
+    "heroTitle2": "ХУБ",
+    "heroDesc": "Басомади асосии худро интихоб кунед. Андешаҳои муҳандисӣ дар саросари ҷараёнҳои ҷаҳонӣ ва маҳаллӣ.",
+    "channels": {
+      "instagram": {
+        "label": "Instagram",
+        "titleLine1": "Визуалӣ",
+        "titleLine2": "Аъло",
+        "trLink": "TR FEED",
+        "globalLink": "ХУРОКИ ГЛОБАЛЙ"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "titleLine1": "Корпоратив",
+        "titleLine2": "Андешаҳо",
+        "trLink": "TR NETWORK",
+        "globalLink": "ШАБАКАИ ГЛОБАЛӢ"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "titleLine1": "Бевосита",
+        "titleLine2": "Канал",
+        "trLink": "TR CONTACT",
+        "globalLink": "ТАМОКАИ ГЛОБАЛӢ"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "titleLine1": "Пахш кардан",
+        "titleLine2": "Хаб",
+        "trLink": "TR КАНАЛИ",
+        "globalLink": "КАНАЛИ ГЛОБАЛ"
+      }
+    },
+    "momentsTitle1": "ЛАХЗАХОИ",
+    "momentsTitle2": "НАВОВАРОН",
+    "momentsDesc": "Архиви зиндаи муҷаҳҳазшудаи дастовардҳои муҳандисӣ ва барҷастаҳои ҷомеа.",
+    "filterLatest": "Филтр: Навтарин",
+    "viewArchive": "Намоиши Архив",
+    "featuredPost": "Паёми барҷаста",
+    "share": "Мубодила",
+    "caseStudy": "Омӯзиши мисол",
+    "statsValue": "113+",
+    "statsLabel": "Лоиҳаҳо дар саросари ҷаҳон",
+    "subscribeTitle1": "ХАМРОХ шавед",
+    "subscribeTitle2": "ЭВОЛЮЦИЯ",
+    "subscribeDesc": "Ба брифинги техникии мо обуна шавед ва ҳеҷ гоҳ пешрафти муҳандисии ҳаракати ҳаворо аз даст надиҳед.",
+    "subscribePlaceholder": "Имейли тиҷоратии худро ворид кунед",
+    "subscribeButton": "Обуна шавед",
+    "subscribeSuccess": "Ташаккур - шумо дар рӯйхат ҳастед.",
+    "backToContact": "Бозгашт ба тамос",
+    "feedPosts": {
+      "featured": {
+        "alt": "Анбори 2M Logistics Gebze — системаи вентилятори реактивии Novves",
+        "title": "2M LOGISTICS GEBZE",
+        "titleLine2": "АНБОР",
+        "description": "Назорати дуди вентилятсияи реактивӣ ва ҳалли вентилятсия, ки аз ҷониби NOVVES таҳия ва таъмин карда шудааст.",
+        "likes": "2.4k",
+        "comments": "184"
+      },
+      "square-1": {
+        "alt": "Лоиҳаи вентилятсияи иншооти саноатии ASELSAN Коня",
+        "title": "АСЕЛСАН КОНЯ",
+        "likes": "842",
+        "comments": "32"
+      },
+      "square-2": {
+        "alt": "Лоиҳаи истиқоматии 3S Kale Topaz дар Зейтинбурну",
+        "title": "3S KALE TOPAZ",
+        "likes": "1.2k",
+        "comments": "56"
+      },
+      "tall": {
+        "alt": "Касалхонаи 100 кати Адана Юрегир — дуд ва гармй",
+        "title": "БЕМОРХОНАИ АДАНА YÜREĞİR",
+        "likes": "560",
+        "comments": "21"
+      },
+      "stats": {
+        "alt": ""
+      },
+      "square-3": {
+        "alt": "Вентилятсияи парки мошинҳои бисёрошёнаи муниципалитети Адыяман",
+        "title": "МОШИНБОЗОРИ АДИЯМАН",
+        "likes": "430",
+        "comments": "18"
+      }
+    }
   }
 }

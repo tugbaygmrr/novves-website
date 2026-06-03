@@ -70,5 +70,171 @@
     "title2": "Žiniasklaida",
     "desc": "Sekite mus socialinėje žiniasklaidoje ir sekite naujausius pokyčius.",
     "visitPage": "Apsilankykite puslapyje"
+  },
+  "iletisimHub": {
+    "breadcrumbHome": "Pradžia",
+    "breadcrumbSection": "Susisiekite ir palaikymas",
+    "breadcrumbCurrent": "Susisiekite",
+    "sidebarSubtitle": "Susisiekite su centru",
+    "navContactSupport": "Susisiekite ir palaikymas",
+    "navContact": "Susisiekite",
+    "navTechnicalSupport": "Techninės pagalbos užklausa",
+    "navPartners": "Strateginiai partneriai",
+    "navGlobalPartners": "Mūsų pasauliniai partneriai",
+    "navPartnership": "Sprendimų partnerystė",
+    "workingHours": "Darbo valandos",
+    "weekdays": "Darbo dienomis",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "šeštadienis",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "sekmadienis",
+    "sundayClosed": "Uždaryta",
+    "downloadSpecs": "Techniniai dokumentai",
+    "heroBadge": "Susisiekite ir palaikymas",
+    "heroTitle": "Pastatykime",
+    "heroTitleLine2": "ateitis kartu.",
+    "heroDesc": "Mūsų NOVVES ekspertų komanda teikia techninę pagalbą, konsultuoja projektuose ir teikia strateginius sprendimus.",
+    "formTitle": "Susisiekimo forma",
+    "formDesc": "Norėdami gauti išsamios informacijos apie savo projektą, užpildykite žemiau esančią formą.",
+    "successMessage": "Jūsų žinutė sėkmingai išsiųsta. Netrukus su jumis susisieksime.",
+    "labelName": "Pilnas vardas",
+    "labelCompany": "Įmonės pavadinimas",
+    "labelEmail": "El. paštas",
+    "labelPhone": "Telefonas",
+    "labelDepartment": "skyrius",
+    "labelSubject": "Tema",
+    "labelMessage": "Jūsų žinutė",
+    "placeholderName": "Jūsų pilnas vardas",
+    "placeholderCompany": "Jūsų organizacija",
+    "placeholderEmail": "corporate@email.com",
+    "placeholderPhone": "+1 (___) ___-____",
+    "placeholderSelect": "Pasirinkite",
+    "placeholderSubject": "Temos eilutė",
+    "placeholderMessage": "Išsami informacija apie jūsų projektą arba klausimą...",
+    "departments": [
+      "Techninė tarnyba",
+      "Apklausa vietoje",
+      "Produkto užklausa arba palaikymas",
+      "Techninės konsultacijos",
+      "Tolesnis prašymas"
+    ],
+    "kvkkConsent": "Pateikdami šią formą sutinkate, kad jūsų asmens duomenys būtų tvarkomi pagal galiojančius duomenų apsaugos įstatymus.",
+    "submit": "Pateikti formą",
+    "locationsTitle": "Mūsų vietos",
+    "locationsDesc": "Pasiekite mūsų operacijų centrus visoje Turkijoje.",
+    "getDirections": "Gaukite nuorodas",
+    "locations": [
+      {
+        "id": "hq",
+        "badge": "Pagrindinė buveinė",
+        "title": "Stambulo biuras",
+        "address": "19 Mayıs Mah. Sümer Sok.\nZitaş Plaza C2 Blok Nr.7\nKadiköy / Stambulas"
+      },
+      {
+        "id": "factory",
+        "badge": "Factory",
+        "title": "Yalovos gamykla",
+        "address": "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova"
+      },
+      {
+        "id": "service",
+        "badge": "Techninė tarnyba",
+        "title": "Aptarnavimo centras",
+        "address": "Dudullu organizuota pramoninė zona\nÜmraniye / Stambulas"
+      }
+    ],
+    "fabLabel": "Tiesioginis palaikymas"
+  },
+  "sosyalMedyaHub": {
+    "breadcrumbHome": "Pradžia",
+    "breadcrumbContact": "Susisiekite",
+    "breadcrumbSocialMedia": "Socialinė žiniasklaida",
+    "heroTitle1": "SOCIALINĖ",
+    "heroTitle2": "HUB",
+    "heroDesc": "Pasirinkite pagrindinį dažnį. Inžinerinės įžvalgos, pateiktos visame pasaulyje ir vietiniuose srautuose.",
+    "channels": {
+      "instagram": {
+        "label": "Instagram",
+        "titleLine1": "Vizualinis",
+        "titleLine2": "Puikybė",
+        "trLink": "TR FEED",
+        "globalLink": "PASAULINIS ŠARAS"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "titleLine1": "Įmonės",
+        "titleLine2": "Įžvalgos",
+        "trLink": "TR TINKLAS",
+        "globalLink": "PASAULINIS TINKLAS"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "titleLine1": "Tiesioginis",
+        "titleLine2": "Kanalas",
+        "trLink": "TR KONTAKTAI",
+        "globalLink": "PASAULINIS KONTAKTAS"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "titleLine1": "Transliacija",
+        "titleLine2": "Hub",
+        "trLink": "TR KANALAS",
+        "globalLink": "PASAULINIS KANALAS"
+      }
+    },
+    "momentsTitle1": "AKIMIRKOS",
+    "momentsTitle2": "INOVACIJOS",
+    "momentsDesc": "Kuruojamas tiesioginis inžinerinių laimėjimų ir svarbiausių bendruomenės įvykių archyvas.",
+    "filterLatest": "Filtras: naujausias",
+    "viewArchive": "Žiūrėti archyvą",
+    "featuredPost": "Teminiai įrašai",
+    "share": "Dalintis",
+    "caseStudy": "Atvejo analizė",
+    "statsValue": "113+",
+    "statsLabel": "Projektai pristatyti visame pasaulyje",
+    "subscribeTitle1": "PRISIJUNK PRIE",
+    "subscribeTitle2": "EVOLIUCIJA",
+    "subscribeDesc": "Užsisakykite mūsų techninį instruktažą ir niekada nepraleiskite proveržio oro judėjimo inžinerijoje.",
+    "subscribePlaceholder": "Įveskite savo verslo el",
+    "subscribeButton": "Prenumeruoti",
+    "subscribeSuccess": "Ačiū – esate sąraše.",
+    "backToContact": "Atgal į kontaktą",
+    "feedPosts": {
+      "featured": {
+        "alt": "2M Logistics Gebze sandėlis — Novves reaktyvinių ventiliatorių sistema",
+        "title": "2M LOGISTICS GEBZE",
+        "titleLine2": "SANDĖLIS",
+        "description": "Reaktyvinio ventiliatoriaus dūmų kontrolės ir vėdinimo sprendimai, kuriuos sukūrė ir tiekia NOVVES.",
+        "likes": "2.4k",
+        "comments": "184"
+      },
+      "square-1": {
+        "alt": "ASELSAN Konya pramoninio objekto vėdinimo projektas",
+        "title": "ASELSAN KONYA",
+        "likes": "842",
+        "comments": "32"
+      },
+      "square-2": {
+        "alt": "3S Kale Topaz gyvenamasis projektas Zeytinburnu mieste",
+        "title": "3S KALE TOPAZ",
+        "likes": "1.2k",
+        "comments": "56"
+      },
+      "tall": {
+        "alt": "Adana Yüreğir 100 lovų ligoninė – dūmų ir šilumos išmetimas",
+        "title": "ADANA YÜREĞİR LIGONINĖ",
+        "likes": "560",
+        "comments": "21"
+      },
+      "stats": {
+        "alt": ""
+      },
+      "square-3": {
+        "alt": "Adıyaman savivaldybės kelių aukštų automobilių stovėjimo aikštelės vėdinimas",
+        "title": "ADIYAMAN AUTOMOBILIŲ AIKŠTELĖ",
+        "likes": "430",
+        "comments": "18"
+      }
+    }
   }
 }

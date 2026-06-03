@@ -2,22 +2,22 @@
   "blog": {
     "meta": {
       "title": "Technische Artikel | Novves",
-      "description": "NOVVES-Technikartikel – regulatorische Änderungen und branchenspezifische Fachpublikationen."
+      "description": "Technische Artikel von NOVVES – regulatorische Änderungen, technische Dokumente der Branche."
     },
     "breadcrumb": {
-      "home": "Startseite",
+      "home": "Heim",
       "technicalCenter": "Technisches Zentrum",
       "current": "Technische Artikel"
     },
     "hero": {
       "badge": "Technisches Zentrum",
-      "titlePart1": "Technische",
+      "titlePart1": "Technisch",
       "titleHighlight": "Artikel",
-      "subtitle": "Regulatorische Änderungen, branchenspezifische Fachartikel und Anwendungsleitfäden."
+      "subtitle": "Regulatorische Änderungen, technische Dokumente der Branche und Anwendungsleitfäden."
     },
     "comingSoon": {
-      "title": "Demnächst",
-      "text": "Die Inhalte für den Bereich Technische Artikel werden vorbereitet. Hier finden Sie bald regulatorische Änderungen und Fachpublikationen."
+      "title": "Demnächst erhältlich",
+      "text": "Der Inhalt für den Bereich „Technische Artikel“ ist in Vorbereitung. Regulatorische Änderungen und technische Dokumente der Branche werden in Kürze hier veröffentlicht."
     },
     "topicAreas": {
       "sectionLabel": "Themen",
@@ -25,45 +25,45 @@
       "items": [
         {
           "title": "Regulatorische Änderungen",
-          "description": "Aktuelle Änderungen in Lüftungs- und Brandschutzvorschriften"
+          "description": "Aktuelle Änderungen der Lüftungs- und Brandschutzvorschriften"
         },
         {
-          "title": "Branchen-Fachartikel",
-          "description": "Vertiefende Artikel zu Lüftungstechnik und HVAC"
+          "title": "Technische Dokumente aus der Industrie",
+          "description": "Ausführliche Artikel zu Lüftungstechnik und HVAC"
         },
         {
           "title": "Anwendungsleitfäden",
-          "description": "Praxisnahe Leitfäden von der Projektplanung bis zur Inbetriebnahme"
+          "description": "Praktische Leitfäden vom Projektentwurf bis zur Inbetriebnahme"
         }
       ],
-      "comingSoonLabel": "Demnächst"
+      "comingSoonLabel": "Demnächst erhältlich"
     },
     "cta": {
       "sectionLabel": "Kontakt",
       "title": "Haben Sie eine technische Frage?",
-      "subtitle": "Unser Engineering-Team beantwortet Ihre technischen Anfragen schnellstmöglich.",
+      "subtitle": "Unser Engineering-Team wird Ihre technischen Fragen so schnell wie möglich beantworten.",
       "contactForm": "Kontaktformular"
     }
   },
   "dokumanKutuphanesi": {
     "meta": {
       "title": "Dokumentenbibliothek | Novves",
-      "description": "NOVVES-Dokumentenbibliothek – Kataloge, technische Datenblätter und Spezifikationen."
+      "description": "NOVVES-Dokumentenbibliothek – Kataloge, technische Datenblätter und Datenblätter."
     },
     "breadcrumb": {
-      "home": "Startseite",
+      "home": "Heim",
       "technicalCenter": "Technisches Zentrum",
       "current": "Dokumentenbibliothek"
     },
     "hero": {
       "badge": "Technisches Zentrum",
-      "titlePart1": "Dokumenten",
-      "titleHighlight": "bibliothek",
-      "subtitle": "Kataloge, technische Datenblätter und Spezifikationen."
+      "titlePart1": "Dokumentieren",
+      "titleHighlight": "Bibliothek",
+      "subtitle": "Kataloge, technische Datenblätter und Datenblätter."
     },
     "comingSoon": {
-      "title": "Demnächst",
-      "text": "Die Inhalte der Dokumentenbibliothek werden aufgebaut. Kataloge, technische Datenblätter und Spezifikationen erscheinen hier in Kürze."
+      "title": "Demnächst erhältlich",
+      "text": "Inhalte für die Dokumentbibliothek werden vorbereitet. Kataloge, technische Datenblätter und Datenblätter werden in Kürze hier veröffentlicht."
     },
     "documentTypes": {
       "sectionLabel": "Inhalt",
@@ -71,115 +71,251 @@
       "items": [
         {
           "title": "Kataloge",
-          "description": "Aktuelle NOVVES-Kataloge nach Produktgruppe"
+          "description": "Aktuelle NOVVES-Kataloge nach Produktgruppen"
         },
         {
           "title": "Technische Datenblätter",
-          "description": "Produktspezifische technische Angaben und Leistungsblätter"
+          "description": "Produktbezogene technische Spezifikationen und Leistungsdatenblätter"
         },
         {
           "title": "Datenblätter",
-          "description": "Detaillierte technische Seiten und Kennlinien"
+          "description": "Detaillierte technische Datenseiten und Leistungsdiagramme"
         }
       ],
-      "comingSoonLabel": "Demnächst"
+      "comingSoonLabel": "Demnächst erhältlich"
     },
     "cta": {
       "sectionLabel": "Kontakt",
       "title": "Benötigen Sie ein technisches Dokument?",
-      "subtitle": "Kontaktieren Sie uns für den gewünschten Katalog, das Datenblatt oder die Spezifikation.",
+      "subtitle": "Kontaktieren Sie uns für den Katalog, das technische Datenblatt oder das Datenblatt, das Sie benötigen.",
       "contactForm": "Kontaktformular"
+    },
+    "library": {
+      "brandTitle": "TECHNISCHES ARCHIV VON NOVVES",
+      "brandSubtitle": "Technisches Archiv",
+      "nav": {
+        "dashboard": "Armaturenbrett",
+        "inventory": "Inventar",
+        "compliance": "Einhaltung",
+        "audit": "Prüfung"
+      },
+      "sidebar": {
+        "libraryName": "Novves-Bibliothek",
+        "libraryTag": "Technisches Repository",
+        "uploadAsset": "Asset hochladen",
+        "hierarchy": "Hierarchie",
+        "collapseSidebar": "Seitenleiste einklappen",
+        "expandSidebar": "Seitenleiste erweitern",
+        "tree": {
+          "documentLibrary": "Dokumentenbibliothek",
+          "catalogs": "Kataloge",
+          "dataSheets": "Datenblätter",
+          "brochures": "Broschüren",
+          "usageManuals": "Nutzungs- und Wartungshandbücher",
+          "certifications": "Zertifikate und Compliance",
+          "cadBim": "CAD / BIM / Technische Zeichnungen",
+          "training": "Schulungszentrum",
+          "troubleshooting": "Fehlerbehebung",
+          "testPerformance": "Test- und Leistungsdaten",
+          "energyEfficiency": "Energieeffizienz"
+        }
+      },
+      "searchPlaceholder": "Durchsuchen Sie das technische Archiv, CAD-Nummern oder Schlüsselwörter ...",
+      "table": {
+        "category": "Kategorie (IA)",
+        "documentNo": "Dokument Nr",
+        "documentName": "Dokumentname",
+        "status": "Status",
+        "statusActive": "Aktiv",
+        "statusPassive": "Passiv",
+        "statusCritical": "Kritisch",
+        "statusCurrent": "Aktuell",
+        "statusApproved": "Genehmigt",
+        "statusVideo": "Video"
+      },
+      "widgets": {
+        "emergencyTitle": "Notfallunterstützung bei Fehlern",
+        "emergencyText": "Verwenden Sie das Fehlerbehebungsfenster, um schnelle Lösungen für kritische Systemfehler zu finden.",
+        "emergencyCta": "Öffnen Sie den Lösungsleitfaden",
+        "complianceLabel": "Compliance-Rate",
+        "complianceValue": "98%",
+        "efficiencyLabel": "Effizienzklasse",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Asset-Details",
+        "previewTag": "PREVIEW",
+        "docSummary": "Dokumentzusammenfassung",
+        "fileFormat": "Format",
+        "revision": "Revision",
+        "lastModified": "Zuletzt aktualisiert",
+        "revisionLogs": "Revisionsverlauf",
+        "shareDocument": "Aktie",
+        "shareLink": "Link",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "E-Mail",
+        "secureDownload": "Sicherer Download",
+        "secureDownloadNote": "Für einige technische Dokumente sind möglicherweise eine Autorisierung und ein Passwort erforderlich.",
+        "downloadDocument": "Dokument herunterladen",
+        "close": "Panel schließen"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Industrial Systems. Abteilung Technische Dokumentation.",
+        "privacy": "Datenschutzrichtlinie",
+        "terms": "Nutzungsbedingungen",
+        "security": "Sicherheitsaudit"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Kleinere Textanpassungen",
+        "minorWhen": "Gestern um 14:20",
+        "initialUpload": "Erster Upload",
+        "initialWhen": "10. Okt. 2024"
+      },
+      "emptyResults": "Keine Dokumente entsprechen Ihrer Suche.",
+      "documents": [
+        {
+          "id": "cat-nv-2024-01",
+          "category": "Kataloge",
+          "code": "CAT-NV-2024-01",
+          "title": "Hauptproduktkatalog v2",
+          "status": "aktiv",
+          "highlight": true,
+          "treeCategory": "Kataloge"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Fehlerbehebung",
+          "code": "TS-FAN-003",
+          "title": "Leitfaden zur Fehlerbehebung bei hohen Vibrationen",
+          "status": "kritisch",
+          "criticalTitle": true,
+          "treeCategory": "Fehlerbehebung"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD/BIM",
+          "code": "BIM-AXL-315",
+          "title": "3D-Revit-Modell der Serie 315",
+          "status": "aktuell",
+          "treeCategory": "CAD / BIM / Technische Zeichnungen"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "Energieeffizienz",
+          "code": "EFF-EC-2024",
+          "title": "EC-Motor-LCC-Analyse",
+          "status": "aktiv",
+          "treeCategory": "Energieeffizienz"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Zertifikate",
+          "code": "CE-12101-3-2024",
+          "title": "Konformitätszertifikat EN 12101-3",
+          "status": "genehmigt",
+          "treeCategory": "Zertifikate und Compliance"
+        },
+        {
+          "id": "web-24-05",
+          "category": "Schulungszentrum",
+          "code": "WEB-24-05",
+          "title": "Webinar-Aufzeichnung zu Montagetechniken",
+          "status": "Video",
+          "highlight": true,
+          "treeCategory": "Schulungszentrum"
+        }
+      ]
     }
   },
   "fanSecici": {
     "meta": {
-      "title": "Ventilatorauswahl | Novves",
-      "description": "NOVVES Online-Tools zur Ventilator- und Geräteauswahl."
+      "title": "Lüfterauswahl | Novves",
+      "description": "Online-Tools zur Auswahl von Ventilatoren und Geräten von NOVVES."
     },
     "breadcrumb": {
-      "home": "Startseite",
+      "home": "Heim",
       "technicalCenter": "Technisches Zentrum",
-      "current": "Ventilatorauswahl"
+      "current": "Lüfterauswahl"
     },
     "hero": {
       "badge": "Technisches Zentrum",
-      "titlePart1": "Ventilator",
-      "titleHighlight": "auswahl",
-      "subtitle": "Online-Tools zur Ventilator- und Geräteauswahl."
+      "titlePart1": "Lüfter",
+      "titleHighlight": "Wähler",
+      "subtitle": "Online-Tools zur Auswahl von Ventilatoren und Geräten."
     },
     "comingSoon": {
-      "title": "Demnächst",
-      "text": "Die Online-Tools zur Ventilator- und Geräteauswahl werden entwickelt. Bald stehen Ihnen Hilfen zur Auswahl passender Geräte nach Volumenstrom, Druck und Anwendung zur Verfügung."
+      "title": "Demnächst erhältlich",
+      "text": "Es werden Online-Tools zur Auswahl von Ventilatoren und Geräten entwickelt. Tools zur Auswahl der am besten geeigneten Ausrüstung basierend auf Durchflussrate, Druck und Anwendungstyp werden in Kürze verfügbar sein."
     },
     "toolTypes": {
-      "sectionLabel": "Tools",
+      "sectionLabel": "Werkzeuge",
       "title": "Geplante Funktionen",
       "items": [
         {
-          "title": "Ventilator-Auswahltool",
-          "description": "Wählen Sie das passende Modell nach Volumenstrom, Druck und Anwendung"
+          "title": "Fan-Auswahltool",
+          "description": "Wählen Sie das am besten geeignete Ventilatormodell basierend auf Durchflussrate, Druck und Anwendungstyp"
         },
         {
           "title": "Gerätevergleich",
-          "description": "Vergleichen Sie Modelle nebeneinander und finden Sie die beste Lösung für Ihr Projekt"
+          "description": "Vergleichen Sie verschiedene Modelle nebeneinander und wählen Sie die beste Lösung für Ihr Projekt aus"
         },
         {
           "title": "Leistungsrechner",
-          "description": "Berechnung von Energieverbrauch, Schallpegel und Wirkungsgrad"
+          "description": "Energieverbrauchs-, Geräuschpegel- und Effizienzberechnungen"
         }
       ],
-      "comingSoonLabel": "Demnächst"
+      "comingSoonLabel": "Demnächst erhältlich"
     },
     "cta": {
       "sectionLabel": "Kontakt",
-      "title": "Unterstützung bei der Ventilatorauswahl?",
-      "subtitle": "Bis die Tools verfügbar sind, unterstützt Sie unser Engineering-Team bei der Auswahl.",
+      "title": "Benötigen Sie Hilfe bei der Ventilatorauswahl?",
+      "subtitle": "Bis die Werkzeuge verfügbar sind, kann Ihnen unser Technikteam bei der Ventilatorauswahl behilflich sein.",
       "contactForm": "Kontaktformular"
     }
   },
   "patentlerimiz": {
     "meta": {
       "title": "Unsere Patente | Novves",
-      "description": "NOVVES-Patente und eingetragene Technologien."
+      "description": "NOVVES-Patente und registrierte Technologien."
     },
     "breadcrumb": {
-      "home": "Startseite",
+      "home": "Heim",
       "technicalCenter": "Technisches Zentrum",
       "current": "Unsere Patente"
     },
     "hero": {
       "badge": "Technisches Zentrum",
-      "titlePart1": "Unsere",
+      "titlePart1": "Unser",
       "titleHighlight": "Patente",
-      "subtitle": "Eingetragene Technologien und unser Innovationsportfolio."
+      "subtitle": "Registrierte Technologien und unser Innovationsportfolio."
     },
     "comingSoon": {
-      "title": "Demnächst",
-      "text": "Ausführliche Informationen zu unserem Patentportfolio und eingetragenen Technologien werden hier in Kürze veröffentlicht."
+      "title": "Demnächst erhältlich",
+      "text": "Detaillierte Informationen zu unserem Patentportfolio und den angemeldeten Technologien werden in Kürze hier veröffentlicht."
     },
     "patentAreas": {
       "sectionLabel": "Innovation",
       "title": "Patentbereiche",
       "items": [
         {
-          "title": "Ventilator-Design-Patente",
-          "description": "Eingetragene Erfindungen zu Laufradprofilen und Gehäusedesigns"
+          "title": "Designpatente für Ventilatoren",
+          "description": "Eingetragene Erfindungen für einzigartige Klingenprofile und Körperdesigns"
         },
         {
           "title": "Automatisierungstechnologien",
-          "description": "Intelligente Regelalgorithmen und IoT-Integrationslösungen"
+          "description": "Intelligente Lüftersteuerungsalgorithmen und IoT-Integrationslösungen"
         },
         {
-          "title": "Fertigungsverfahren",
-          "description": "Innovative Fertigungsmethoden und Qualitätskontrollprozesse"
+          "title": "Patente für Herstellungsverfahren",
+          "description": "Innovative Herstellungsmethoden und Qualitätskontrollprozesse"
         }
       ],
-      "comingSoonLabel": "Demnächst"
+      "comingSoonLabel": "Demnächst erhältlich"
     },
     "cta": {
       "sectionLabel": "Kontakt",
-      "title": "Technologie-Kooperation",
-      "subtitle": "Kontaktieren Sie uns bei Anfragen zu Patenten und Technologiepartnerschaften.",
+      "title": "Für technologische Zusammenarbeit",
+      "subtitle": "Kontaktieren Sie uns für Anfragen zur Patent- und Technologiekooperation.",
       "contactForm": "Kontaktformular"
     }
   }

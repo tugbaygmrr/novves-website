@@ -89,6 +89,142 @@
       "title": "Оё шумо дархости ҳуҷҷати техникӣ доред?",
       "subtitle": "Шумо метавонед барои каталог, варақаи техникӣ ё варақаи маълумоти ба шумо лозима бо мо тамос гиред.",
       "contactForm": "Шакли тамос"
+    },
+    "library": {
+      "brandTitle": "АРХИВИ ТЕХНИКИИ НОВВЕС",
+      "brandSubtitle": "Архиви техникӣ",
+      "nav": {
+        "dashboard": "Сафҳаи идоракунӣ",
+        "inventory": "Инвентаризатсия",
+        "compliance": "Муносибат",
+        "audit": "Назорат"
+      },
+      "sidebar": {
+        "libraryName": "Китобхонаи Novves",
+        "libraryTag": "Анбори техникӣ",
+        "uploadAsset": "Зеркашии дороиҳо",
+        "hierarchy": "ИЕРАРХИЯ",
+        "collapseSidebar": "Паҳлӯи паҳлӯ",
+        "expandSidebar": "Панели паҳлӯро васеъ кунед",
+        "tree": {
+          "documentLibrary": "Китобхонаи ҳуҷҷатҳо",
+          "catalogs": "Каталогҳо",
+          "dataSheets": "Варақаҳои маълумот",
+          "brochures": "брошюраҳо",
+          "usageManuals": "Дастурҳои истифода ва нигоҳдорӣ",
+          "certifications": "Сертификатсия ва мутобиқат",
+          "cadBim": "CAD / BIM / Нақшаҳои техникӣ",
+          "training": "Маркази таълимӣ",
+          "troubleshooting": "Мушкилкушо",
+          "testPerformance": "Маълумот дар бораи санҷиш ва иҷроиш",
+          "energyEfficiency": "Самаранокии энергия"
+        }
+      },
+      "searchPlaceholder": "Ҷустуҷӯи Архиви техникӣ, рақамҳои CAD ё калимаҳои калидӣ…",
+      "table": {
+        "category": "Категория (IA)",
+        "documentNo": "Рақами ҳуҷҷат",
+        "documentName": "Номи ҳуҷҷат",
+        "status": "Вазъият",
+        "statusActive": "Фаъол",
+        "statusPassive": "Пассив",
+        "statusCritical": "Интиқодӣ",
+        "statusCurrent": "ҷорӣ",
+        "statusApproved": "Тасдик карда шуд",
+        "statusVideo": "Видео"
+      },
+      "widgets": {
+        "emergencyTitle": "Дастгирии корношоямии фавқулодда",
+        "emergencyText": "Бо истифода аз панели ҳалли мушкилот, ҳалли зуд барои хатогиҳои муҳиме, ки дар система рух медиҳанд, пайдо кунед.",
+        "emergencyCta": "Дастури ҳалли кушода",
+        "complianceLabel": "Меъёри мувофиқат",
+        "complianceValue": "%98",
+        "efficiencyLabel": "Синфи самаранокӣ",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Тафсилоти дороиҳо",
+        "previewTag": "ПЕШНАМОЗ",
+        "docSummary": "Хулосаи ҳуҷҷат",
+        "fileFormat": "Формат",
+        "revision": "Барраси",
+        "lastModified": "Навсозии охирин",
+        "revisionLogs": "Таърихи ревизия",
+        "shareDocument": "Мубодила",
+        "shareLink": "Пайвастшавӣ",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "Почтаи электронӣ",
+        "secureDownload": "Зеркашии бехатар",
+        "secureDownloadNote": "Барои баъзе ҳуҷҷатҳои техникӣ метавонад иҷозат ва парол талаб карда шавад.",
+        "downloadDocument": "Ҳуҷҷатро зеркашӣ кунед",
+        "close": "панелро пӯшед"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Industrial Systems. Шӯъбаи ҳуҷҷатҳои техникӣ.",
+        "privacy": "Сиёсати Корбурди Маълумоти Шахсӣ",
+        "terms": "Шартҳои истифода",
+        "security": "Аудити амният"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Таҳрири матн",
+        "minorWhen": "Дирӯз 14:20",
+        "initialUpload": "Аввалин насб",
+        "initialWhen": "10 октябри соли 2024"
+      },
+      "emptyResults": "Ягон ҳуҷҷате, ки ба ҷустуҷӯи шумо мувофиқат мекунад, ёфт нашуд.",
+      "documents": [
+        {
+          "id": "cat-nv-2024-01",
+          "category": "Каталогҳо",
+          "code": "CAT-NV-2024-01",
+          "title": "Каталоги асосии маҳсулот v2",
+          "status": "фаъол",
+          "highlight": true,
+          "treeCategory": "Каталогҳо"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Мушкилкушо",
+          "code": "TS-FAN-003",
+          "title": "Дастури бартарафсозии ларзишҳои баланд",
+          "status": "танцидй",
+          "criticalTitle": true,
+          "treeCategory": "Мушкилкушо"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD/BIM",
+          "code": "BIM-AXL-315",
+          "title": "315 Силсилаи 3D Revit Модели",
+          "status": "ҷорӣ",
+          "treeCategory": "CAD / BIM / Нақшаҳои техникӣ"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "Самаранокии энергия",
+          "code": "EFF-EC-2024",
+          "title": "Таҳлили EC Engine LCC",
+          "status": "фаъол",
+          "treeCategory": "Самаранокии энергия"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Шаҳодатномаҳо",
+          "code": "CE-12101-3-2024",
+          "title": "EN 12101-3 Сертификати мутобиқат",
+          "status": "тасдик карда шуд",
+          "treeCategory": "Сертификатсия ва мутобиқат"
+        },
+        {
+          "id": "веб-24-05",
+          "category": "Маркази таълимӣ",
+          "code": "WEB-24-05",
+          "title": "Сабти Вебинар Усулҳои васлкунӣ",
+          "status": "видео",
+          "highlight": true,
+          "treeCategory": "Маркази таълимӣ"
+        }
+      ]
     }
   },
   "fanSecici": {

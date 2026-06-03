@@ -9,30 +9,72 @@
     "ctaSecondary": "CFD təhlili",
     "ctaSecondaryHref": "/hizmetler/cfd-analizi",
     "trustStrip": [
-      { "value": "EN 12101-3", "label": "Standarta uyğunluq" },
-      { "value": "F300/2H", "label": "Yanğın davamlılığı" },
-      { "value": "CFD", "label": "Simulyasiya dəstəyi" },
-      { "value": "113+", "label": "Tamamlanmış layihə" }
+      {
+        "value": "EN 12101-3",
+        "label": "Standarta uyğunluq"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Yanğın davamlılığı"
+      },
+      {
+        "value": "CFD",
+        "label": "Simulyasiya dəstəyi"
+      },
+      {
+        "value": "113+",
+        "label": "Tamamlanmış layihə"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Yanğında ilk təhlükə tüstüdür",
     "whyImportantP1": "Yanğın statistikası göstərir ki, itkilər əsasən alovlardan deyil, sıx tüstü və zəhərli qazlardan baş verir. Effektiv tüstü sorğu sistemi çıxış yollarını görünən və nəfəs alına bilən saxlayır; yanğınsöndürən müdaxiləsini asanlaşdırır; struktur zədəsini minimuma endirir.",
     "whyImportantP2": "NOVVES öz mühəndis heyəti ilə layihədən istismara qədər bütün prosesi idarə edir. Hər layihə üçün ventilyator yerləşməsi, tüstünün yayılması ssenariləri və təxliyə müddətlərini simulyasiya etmək məqsədilə CFD təhlili aparılır.",
     "steps": [
-      { "label": "Müşahidə və təhlil", "desc": "Obyekt müayinəsi, CFD simulyasiyası, normativ uyğunluq yoxlaması" },
-      { "label": "Mühəndislik", "desc": "Ventilyator seçimi, kanal layihəsi, regulyator yerləşməsi, avtomatika ssenarisi" },
-      { "label": "İstehsal və montaj", "desc": "Öz istehsalı, peşəkar obyektdə montaj" },
-      { "label": "İstismara qəbul və texniki xidmət", "desc": "Sınaq, hesabat, dövrüvi yoxlama və 24/7 xidmət dəstəyi" }
+      {
+        "label": "Müşahidə və təhlil",
+        "desc": "Obyekt müayinəsi, CFD simulyasiyası, normativ uyğunluq yoxlaması"
+      },
+      {
+        "label": "Mühəndislik",
+        "desc": "Ventilyator seçimi, kanal layihəsi, regulyator yerləşməsi, avtomatika ssenarisi"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "Öz istehsalı, peşəkar obyektdə montaj"
+      },
+      {
+        "label": "İstismara qəbul və texniki xidmət",
+        "desc": "Sınaq, hesabat, dövrüvi yoxlama və 24/7 xidmət dəstəyi"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Jet ventilyator sistemləri", "desc": "Bağlı məkanlarda hava istiqamətləndirməsi və tüstü sorğu üçün yüksək temperatura davamlı aksial və radial jet ventilyatorlar." },
-      { "title": "Tüstü sorğu ventilyatorları", "desc": "EN 12101-3 sertifikatlı, F300/2H sinfi yanğın davamlılığı ilə 300\u00b0C-də 2 saat davamlı iş." },
-      { "title": "Regulyator sistemləri", "desc": "Yanğın və tüstü zonalaşdırması üçün servo mühərrikli şaxta tüstü və təzyiq boşaltma regulyatorları." },
-      { "title": "Sensorlar və deteksiya", "desc": "Zonalı məlumat toplama və limit qiymət monitorinqi ilə CO, tüstü və istilik sensorları." },
-      { "title": "Avtomatika panelləri", "desc": "PLC ilə idarə olunan MCC panelləri, BMS inteqrasiyası, ssenari əsaslı avtomatik ventilyator idarəetməsi." },
-      { "title": "CFD mühəndisliyi", "desc": "Layihəyə xüsusi hesablı maye dinamikası təhlili, yanğın ssenarisi simulyasiyası və hesabat." }
+      {
+        "title": "Jet ventilyator sistemləri",
+        "desc": "Bağlı məkanlarda hava istiqamətləndirməsi və tüstü sorğu üçün yüksək temperatura davamlı aksial və radial jet ventilyatorlar."
+      },
+      {
+        "title": "Tüstü sorğu ventilyatorları",
+        "desc": "EN 12101-3 sertifikatlı, F300/2H sinfi yanğın davamlılığı ilə 300°C-də 2 saat davamlı iş."
+      },
+      {
+        "title": "Regulyator sistemləri",
+        "desc": "Yanğın və tüstü zonalaşdırması üçün servo mühərrikli şaxta tüstü və təzyiq boşaltma regulyatorları."
+      },
+      {
+        "title": "Sensorlar və deteksiya",
+        "desc": "Zonalı məlumat toplama və limit qiymət monitorinqi ilə CO, tüstü və istilik sensorları."
+      },
+      {
+        "title": "Avtomatika panelləri",
+        "desc": "PLC ilə idarə olunan MCC panelləri, BMS inteqrasiyası, ssenari əsaslı avtomatik ventilyator idarəetməsi."
+      },
+      {
+        "title": "CFD mühəndisliyi",
+        "desc": "Layihəyə xüsusi hesablı maye dinamikası təhlili, yanğın ssenarisi simulyasiyası və hesabat."
+      }
     ],
     "midCtaTitle": "Layihəniz üçün müşahidə və qiymət təklifi sorğu edin",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -40,41 +82,247 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "EN 12101-3 uyğunluğu", "desc": "Bütün sistemlər Avropa yanğın təhlükəsizliyi standartlarına uyğun layihələndirilir və sertifikatlaşdırılır." },
-      { "title": "F300/2H yanğın davamlılığı", "desc": "300\u00b0C-də 2 saat davamlı işləmə ilə kritik təxliyə müddətinin təmin edilməsi." },
-      { "title": "CFD dəstəkli layihə", "desc": "Hər layihədə tüstünün yayılması, temperatur və görünürlük məsafəsini təsdiqləmək üçün 3D simulyasiya." },
-      { "title": "Tam dövrəli xidmət", "desc": "Müşahidə, mühəndislik, istehsal, montaj, istismara qəbul və dövrüvi texniki xidmət tək mənbədən." }
+      {
+        "title": "EN 12101-3 uyğunluğu",
+        "desc": "Bütün sistemlər Avropa yanğın təhlükəsizliyi standartlarına uyğun layihələndirilir və sertifikatlaşdırılır."
+      },
+      {
+        "title": "F300/2H yanğın davamlılığı",
+        "desc": "300°C-də 2 saat davamlı işləmə ilə kritik təxliyə müddətinin təmin edilməsi."
+      },
+      {
+        "title": "CFD dəstəkli layihə",
+        "desc": "Hər layihədə tüstünün yayılması, temperatur və görünürlük məsafəsini təsdiqləmək üçün 3D simulyasiya."
+      },
+      {
+        "title": "Tam dövrəli xidmət",
+        "desc": "Müşahidə, mühəndislik, istehsal, montaj, istismara qəbul və dövrüvi texniki xidmət tək mənbədən."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Hər layihə üçün ən uyğun məhsul kombinasiyası müəyyən edilir.",
     "areas": [
-      { "title": "Bağlı avtodayanacaqlar", "description": "CO sorğu + yanğın zamanı tüstünün sorğu edilməsi", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Magistral və dəmir yolu tunelləri", "description": "Yanğın zonalaşdırması və hava istiqamətləndirməsi", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Alış-veriş mərkəzləri", "description": "Tüstünün idarə edilməsi və sorğu", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Stadionlar və konfrans zalları", "description": "Təcili tüstü sorğu", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Sənaye istehsal obyektləri", "description": "Prosesə bağlı isti qaz sorğu", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }, { "name": "OWL", "type": "Wall Type Fans", "image": "/images/products/owl-cer.jpg" }] },
-      { "title": "Xəstəxanalar və səhiyyə obyektləri", "description": "Xəstə zonalarında tüstü zonalaşdırması", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Hava limanları və metro stansiyaları", "description": "Aşağı qatda tüstü sorğu", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Cowled Axial Fans", "image": "/images/products/marlin.png" }, { "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }] },
-      { "title": "Anbarlar və logistika mərkəzləri", "description": "Böyük həcmdə tüstünün idarə edilməsi", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Elektrik stansiyaları və generator otaqları", "description": "Elektrik yanğınlarına qarşı sorğu", "products": [{ "name": "BEAR", "type": "Exproof Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
-      { "title": "Otellər və yaşayış (hündür mərtəbəli)", "description": "Pilləkən qəfəsinin təzyiqləndirilməsi, tüstü sorğu", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] }
+      {
+        "title": "Bağlı avtodayanacaqlar",
+        "description": "CO sorğu + yanğın zamanı tüstünün sorğu edilməsi",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Magistral və dəmir yolu tunelləri",
+        "description": "Yanğın zonalaşdırması və hava istiqamətləndirməsi",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Cowled Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Alış-veriş mərkəzləri",
+        "description": "Tüstünün idarə edilməsi və sorğu",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Cowled Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Stadionlar və konfrans zalları",
+        "description": "Təcili tüstü sorğu",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Cowled Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Sənaye istehsal obyektləri",
+        "description": "Prosesə bağlı isti qaz sorğu",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Wall Type Fans",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Xəstəxanalar və səhiyyə obyektləri",
+        "description": "Xəstə zonalarında tüstü zonalaşdırması",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Hava limanları və metro stansiyaları",
+        "description": "Aşağı qatda tüstü sorğu",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Cowled Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Anbarlar və logistika mərkəzləri",
+        "description": "Böyük həcmdə tüstünün idarə edilməsi",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Elektrik stansiyaları və generator otaqları",
+        "description": "Elektrik yanğınlarına qarşı sorğu",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "Exproof Fans",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Otellər və yaşayış (hündür mərtəbəli)",
+        "description": "Pilləkən qəfəsinin təzyiqləndirilməsi, tüstü sorğu",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Hansı binalarda tüstü sorğu sistemi məcburidir?", "a": "Yanğın normativlərinə əsasən bağlı avtodayanacaqlarda, alış-veriş mərkəzlərində, çoxmərtəbəli binalarda, tunellərdə və sənaye obyektlərində tüstü sorğu sistemləri məcburidir. Layihəyə xüsusi ehtiyac təhlili üçün bizimlə əlaqə saxlayın." },
-      { "q": "EN 12101-3 sertifikatı nə deməkdir?", "a": "EN 12101-3, tüstü və istilik sorğu ventilyatorlarının yanğın şəraitində (yüksək temperatur) müəyyən müddət ərzində işləmə qabiliyyətini təsdiq edən Avropa standartıdır. NOVVES məhsulları bu standarta uyğun istehsal olunur." },
-      { "q": "Niyə CFD təhlili vacibdir?", "a": "CFD təhlili kompüter mühitində jet ventilyator yerləşməsi, tüstü ssenariləri və təxliyə müddətlərinin simulyasiyasına imkan verir. Bu, quraşdırmadan əvvəl sistemin performansını təsdiqləyir və normativ uyğunluğu sənədləşdirir." },
-      { "q": "Mövcud sistemlərlə inteqrasiya mümkündürmü?", "a": "Bəli, NOVVES tüstü sorğu sistemləri mövcud BMS infrastrukturu, yanğın aşkarlama panelləri və avtomatika sistemləri ilə inteqrasiya oluna bilər." }
+      {
+        "q": "Hansı binalarda tüstü sorğu sistemi məcburidir?",
+        "a": "Yanğın normativlərinə əsasən bağlı avtodayanacaqlarda, alış-veriş mərkəzlərində, çoxmərtəbəli binalarda, tunellərdə və sənaye obyektlərində tüstü sorğu sistemləri məcburidir. Layihəyə xüsusi ehtiyac təhlili üçün bizimlə əlaqə saxlayın."
+      },
+      {
+        "q": "EN 12101-3 sertifikatı nə deməkdir?",
+        "a": "EN 12101-3, tüstü və istilik sorğu ventilyatorlarının yanğın şəraitində (yüksək temperatur) müəyyən müddət ərzində işləmə qabiliyyətini təsdiq edən Avropa standartıdır. NOVVES məhsulları bu standarta uyğun istehsal olunur."
+      },
+      {
+        "q": "Niyə CFD təhlili vacibdir?",
+        "a": "CFD təhlili kompüter mühitində jet ventilyator yerləşməsi, tüstü ssenariləri və təxliyə müddətlərinin simulyasiyasına imkan verir. Bu, quraşdırmadan əvvəl sistemin performansını təsdiqləyir və normativ uyğunluğu sənədləşdirir."
+      },
+      {
+        "q": "Mövcud sistemlərlə inteqrasiya mümkündürmü?",
+        "a": "Bəli, NOVVES tüstü sorğu sistemləri mövcud BMS infrastrukturu, yanğın aşkarlama panelləri və avtomatika sistemləri ilə inteqrasiya oluna bilər."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Tüstü sorğu sisteminə ehtiyacınız var?",
     "finalCtaDesc": "Müşahidə, CFD təhlili, mühəndislik və qiymət təklifi prosesləri üçün peşəkar mühəndis heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Duman və istilik çıxarma sistemləri; O, qapalı dayanacaqlarda, tunellərdə, metro stansiyalarında, hava limanlarında, xəstəxanalarda, enerji obyektlərində və böyük həcmli strukturlarda yanğın təhlükəsizliyinin ən vacib elektromexaniki komponentlərindən biridir. Gündəlik istifadədə CO, NOx və oxşar çirkləndiricilərin təhlükəsiz səviyyədə saxlanmasını təmin etməklə yanaşı, yanğın zamanı tüstü və isti qazları nəzarətli şəkildə istiqamətləndirərək xilasetmə yollarının açıq olmasına, görünürlüğün qorunmasına və yanğınsöndürənlərin yanğın mənbəyinə təhlükəsiz çatmasına kömək edir.\n\nNOVVES DRAGONFLY tüstü çıxarma fanatları və reaktiv ventilyatorları, HOUND tüstü damperləri, MARLIN təmiz hava fanatları və HAWK avtomatlaşdırma panelləri ilə inteqrasiya olunmuş tüstü nəzarəti yanaşmasını təklif edir. Sistem; O, təkcə güclü fanatlardan ibarət deyil, həm də avtomatlaşdırma, möhürlənmiş amortizatorlar, təmiz hava balansı, CFD yoxlaması və yanğın ssenarilərinə uyğun işləyən EN/NFPA uyğun mühəndislik ilə inteqrasiya edir. F300/F400 temperatur sinfi ventilyatorları CO/NOx sensoru ilə idarə olunan gündəlik ventilyasiya və ssenari əsaslı yanğın nəzarəti ilə bina təhlükəsizliyini növbəti səviyyəyə qaldırır."
+    }
   },
-
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Konfort HVAC",
     "badge": "Həllər",
@@ -85,30 +333,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/iklimlendirme",
     "trustStrip": [
-      { "value": "EC Motor", "label": "Enerji səmərəliliyi" },
-      { "value": "Eurovent", "label": "Sertifikatlı" },
-      { "value": "BMS", "label": "İnteqrasiya" },
-      { "value": "200+", "label": "Tamamlanmış layihə" }
+      {
+        "value": "EC Motor",
+        "label": "Enerji səmərəliliyi"
+      },
+      {
+        "value": "Eurovent",
+        "label": "Sertifikatlı"
+      },
+      {
+        "value": "BMS",
+        "label": "İnteqrasiya"
+      },
+      {
+        "value": "200+",
+        "label": "Tamamlanmış layihə"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Səmərəli HVAC rahatlıq və qənaət deməkdir",
     "whyImportantP1": "Kommersiya və ictimai binalarda HVAC ən böyük enerji istehlakı kateqoriyasıdır. Düzgün layihələndirilmiş sistem işləmə xərclərini əhəmiyyətli dərəcədə azaldarkən, rahatlığı artırır.",
     "whyImportantP2": "NOVVES modul hava hazırlayıcı qurğuları və istilik bərpa sistemləri ilə layihəyə xüsusi həllər təqdim edir. EC mühərrikli ventilyatorlar, yüksək səmərəlilikli istilik mübadiləçiləri və ağıllı idarəetmə sistemləri enerji istehlakını minimuma endirir.",
     "steps": [
-      { "label": "Ehtiyac təhlili", "desc": "Bina tipi, istifadə sahəsi, iqlim şəraiti və konfort tələblərinin qiymətləndirilməsi" },
-      { "label": "Sistem layihəsi", "desc": "AHU seçimi, kanal layihəsi, diffuzer yerləşməsi, avtomatika ssenarisi" },
-      { "label": "İstehsal və montaj", "desc": "Modul AHU istehsalı, peşəkar obyektdə montaj" },
-      { "label": "İstismara qəbul və texniki xidmət", "desc": "Performans sınağı, balanslama, dövrüvi filtr və xidmət" }
+      {
+        "label": "Ehtiyac təhlili",
+        "desc": "Bina tipi, istifadə sahəsi, iqlim şəraiti və konfort tələblərinin qiymətləndirilməsi"
+      },
+      {
+        "label": "Sistem layihəsi",
+        "desc": "AHU seçimi, kanal layihəsi, diffuzer yerləşməsi, avtomatika ssenarisi"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "Modul AHU istehsalı, peşəkar obyektdə montaj"
+      },
+      {
+        "label": "İstismara qəbul və texniki xidmət",
+        "desc": "Performans sınağı, balanslama, dövrüvi filtr və xidmət"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Hava hazırlayıcı qurğular (TIGER)", "desc": "500 - 125.000 m3/saat tutum, modul layihə, yüksək səmərəlilikli istilik mübadiləçiləri və EC ventilyator seçimləri." },
-      { "title": "İstilik bərpa qurğuları", "desc": "Çıxan havadan enerjini bərpa edərək isitmə/soyutma xərclərini 70%-ə qədər azaldır." },
-      { "title": "Nəmlik sorğu qurğuları (DOLPHIN)", "desc": "Havuz, SPA və yüksək rütubətli sahələr üçün ixtisaslaşmış rütubət idarəetməsi." },
-      { "title": "Kanal ventilyatorları (KOI)", "desc": "Kanal daxilində təzyiq artırımı və hava paylanması üçün kompakt, aşağı səslə kanal ventilyatorları." },
-      { "title": "Diffuzer və barmaqlıq sistemləri", "desc": "Həcmi tənzimlənən regulyatorlarla tavan, divar və döşəmə diffuzerləri, homojen hava paylanması." },
-      { "title": "Avtomatika və idarəetmə", "desc": "BMS ilə inteqrasiya olunmuş ağıllı idarə panelləri ilə temperatur, rütubət və CO2 sensorları." }
+      {
+        "title": "Hava hazırlayıcı qurğular (TIGER)",
+        "desc": "500 - 125.000 m3/saat tutum, modul layihə, yüksək səmərəlilikli istilik mübadiləçiləri və EC ventilyator seçimləri."
+      },
+      {
+        "title": "İstilik bərpa qurğuları",
+        "desc": "Çıxan havadan enerjini bərpa edərək isitmə/soyutma xərclərini 70%-ə qədər azaldır."
+      },
+      {
+        "title": "Nəmlik sorğu qurğuları (DOLPHIN)",
+        "desc": "Havuz, SPA və yüksək rütubətli sahələr üçün ixtisaslaşmış rütubət idarəetməsi."
+      },
+      {
+        "title": "Kanal ventilyatorları (KOI)",
+        "desc": "Kanal daxilində təzyiq artırımı və hava paylanması üçün kompakt, aşağı səslə kanal ventilyatorları."
+      },
+      {
+        "title": "Diffuzer və barmaqlıq sistemləri",
+        "desc": "Həcmi tənzimlənən regulyatorlarla tavan, divar və döşəmə diffuzerləri, homojen hava paylanması."
+      },
+      {
+        "title": "Avtomatika və idarəetmə",
+        "desc": "BMS ilə inteqrasiya olunmuş ağıllı idarə panelləri ilə temperatur, rütubət və CO2 sensorları."
+      }
     ],
     "midCtaTitle": "Konfort HVAC layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -116,36 +406,142 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Enerji səmərəliliyi", "desc": "EC mühərriklər və istilik bərpası ilə işləmə xərclərində 40%-ə qədər qənaət." },
-      { "title": "Modul layihə", "desc": "Hər layihə üçün istənilən tutumda fərdi konfiqurasiyalı AHU istehsalı." },
-      { "title": "Sakit işləmə", "desc": "Akustik izolyasiyalı qabıq və vibrasiya izolyatorları ilə konfort zonalarında aşağı səs səviyyəsi." },
-      { "title": "Tək mənbə həlli", "desc": "Mühəndislik, istehsal, montaj və istismara qəbul NOVVES zəmanəti ilə." }
+      {
+        "title": "Enerji səmərəliliyi",
+        "desc": "EC mühərriklər və istilik bərpası ilə işləmə xərclərində 40%-ə qədər qənaət."
+      },
+      {
+        "title": "Modul layihə",
+        "desc": "Hər layihə üçün istənilən tutumda fərdi konfiqurasiyalı AHU istehsalı."
+      },
+      {
+        "title": "Sakit işləmə",
+        "desc": "Akustik izolyasiyalı qabıq və vibrasiya izolyatorları ilə konfort zonalarında aşağı səs səviyyəsi."
+      },
+      {
+        "title": "Tək mənbə həlli",
+        "desc": "Mühəndislik, istehsal, montaj və istismara qəbul NOVVES zəmanəti ilə."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Hər bina tipinə uyğun HVAC həlləri.",
     "areas": [
-      { "title": "Ofislər və biznes mərkəzləri", "description": "Açıq ofis və iclas otaqlarında rahat havalandırma", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Otellər və yaşayış", "description": "Otaq səviyyəsində temperatur idarəetməsi və təmiz hava təchizatı", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Alış-veriş mərkəzləri", "description": "Yüksək sıxlıqlı zonada homojen iqlim idarəetməsi", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }] },
-      { "title": "Xəstəxanalar və səhiyyə obyektləri", "description": "Higiyenik hava şəraitində dəqiq temperatur idarəetməsi", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Havuz və SPA zonaları", "description": "Yüksək rütubət idarəetməsi və konfort", "products": [{ "name": "DOLPHIN", "type": "Dehumidification Units", "image": "/images/products/dolphin-main.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Ofislər və biznes mərkəzləri",
+        "description": "Açıq ofis və iclas otaqlarında rahat havalandırma",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Otellər və yaşayış",
+        "description": "Otaq səviyyəsində temperatur idarəetməsi və təmiz hava təchizatı",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC Fans",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Alış-veriş mərkəzləri",
+        "description": "Yüksək sıxlıqlı zonada homojen iqlim idarəetməsi",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Xəstəxanalar və səhiyyə obyektləri",
+        "description": "Higiyenik hava şəraitində dəqiq temperatur idarəetməsi",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Havuz və SPA zonaları",
+        "description": "Yüksək rütubət idarəetməsi və konfort",
+        "products": [
+          {
+            "name": "DOLPHIN",
+            "type": "Dehumidification Units",
+            "image": "/images/products/dolphin-main.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "AHU ilə split kondisioner arasında fərq nədir?", "a": "AHU böyük sahələrdə homojen temperatur, rütubət idarəetməsi və filtrasiya təmin edən mərkəzləşdirilmiş sistemdir. Split qurğular otaq üzrə işləyir. Kommersiya binaları üçün mərkəzləşdirilmiş AHU sistemləri çox daha səmərəlidir." },
-      { "q": "İstilik bərpası nə qədər enerji qənaət edir?", "a": "İş rejimindən asılı olaraq 50-70% enerji qənaəti mümkündür. Çıxan havadakı istilik təmiz havaya ötürülərək isitmə/soyutma yükü əhəmiyyətli azalır." },
-      { "q": "Mövcud binalarda HVAC quraşdırıla bilərmi?", "a": "Bəli, NOVVES modul AHU kompakt ölçüləri ilə mövcud binalara uyğunlaşdırıla bilər. Obyekt müşahidəsindən sonra ən uyğun həll təklif olunur." },
-      { "q": "Texniki xidmət intervalı necədir?", "a": "Filtr dəyişimi adətən 3-6 ayda bir aparılır. Ümumi sistem qulluğu ildə ən azı iki dəfə tövsiyə olunur. NOVVES dövrüvi qulluq müqavilələri sistemlərinizin hər zaman səmərəli işləməsini təmin edir." }
+      {
+        "q": "AHU ilə split kondisioner arasında fərq nədir?",
+        "a": "AHU böyük sahələrdə homojen temperatur, rütubət idarəetməsi və filtrasiya təmin edən mərkəzləşdirilmiş sistemdir. Split qurğular otaq üzrə işləyir. Kommersiya binaları üçün mərkəzləşdirilmiş AHU sistemləri çox daha səmərəlidir."
+      },
+      {
+        "q": "İstilik bərpası nə qədər enerji qənaət edir?",
+        "a": "İş rejimindən asılı olaraq 50-70% enerji qənaəti mümkündür. Çıxan havadakı istilik təmiz havaya ötürülərək isitmə/soyutma yükü əhəmiyyətli azalır."
+      },
+      {
+        "q": "Mövcud binalarda HVAC quraşdırıla bilərmi?",
+        "a": "Bəli, NOVVES modul AHU kompakt ölçüləri ilə mövcud binalara uyğunlaşdırıla bilər. Obyekt müşahidəsindən sonra ən uyğun həll təklif olunur."
+      },
+      {
+        "q": "Texniki xidmət intervalı necədir?",
+        "a": "Filtr dəyişimi adətən 3-6 ayda bir aparılır. Ümumi sistem qulluğu ildə ən azı iki dəfə tövsiyə olunur. NOVVES dövrüvi qulluq müqavilələri sistemlərinizin hər zaman səmərəli işləməsini təmin edir."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Konfort HVAC sistemi axtarırsınız?",
     "finalCtaDesc": "Layihə layihəsi, AHU seçimi və qiymət təklifi üçün mühəndis heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Komfortlu kondisioner sistemləri; Ofislərdə, otellərdə, məktəblərdə, xəstəxanaların inzibati ərazilərində, ticarət mərkəzlərində, yaşayış yerlərində, banklarda, ictimai binalarda, hava limanlarında, restoranlarda və idman zallarında daxili hava keyfiyyətini, istilik rahatlığını, səssizliyi və enerji səmərəliliyini birlikdə idarə etmək üçün nəzərdə tutulmuşdur. Müasir binalarda insanlar vaxtlarının çoxunu qapalı məkanlarda keçirdiklərindən, CO₂, VOC, hissəciklər, rütubət, temperatur və hava sürəti kimi parametrlər birbaşa sağlamlıq, səmərəlilik və istifadəçi məmnuniyyəti ilə bağlıdır.\n\nNOVVES CARACAL istilik bərpa cihazları, TIGER kondisioner qurğuları, HUMMINGBIRD EC fanatları, HOUND hava tənzimlənməsi və VAV amortizatorları, KOI səssiz kanal ventilyatorları, SEAHORSE vanna otağı fanatları, Tısbağa hüceyrə fanatları, DRAGONFLY yüksək tutumlu mətbəx hava hərəkəti ventilyatorları ilə bina tipinə xas kondisioner həllər hazırlayır. Sistemlər; O, tələbatla idarə olunan ventilyasiya, istilik bərpası, aşağı səs səviyyəsi, sərbəst soyutma, zona əsaslı idarəetmə, yüksək filtrasiya və enerjiyə qənaətli əməliyyat hədəfləri ilə hazırlanmışdır."
+    }
   },
-
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Higiyenik filtrasiya havalandırması",
     "badge": "Həllər",
@@ -156,30 +552,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-filtrasyonu",
     "trustStrip": [
-      { "value": "HEPA H14", "label": "Filtrasiya sinfi" },
-      { "value": "ISO 14644", "label": "Təmiz otaq standartı" },
-      { "value": "GMP", "label": "Uyğun layihə" },
-      { "value": "99.995%", "label": "Hissə tutumu" }
+      {
+        "value": "HEPA H14",
+        "label": "Filtrasiya sinfi"
+      },
+      {
+        "value": "ISO 14644",
+        "label": "Təmiz otaq standartı"
+      },
+      {
+        "value": "GMP",
+        "label": "Uyğun layihə"
+      },
+      {
+        "value": "99.995%",
+        "label": "Hissə tutumu"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Təmiz hava, təhlükəsiz mühit",
     "whyImportantP1": "Əməliyyat otaqlarında, əczaçılıq istehsalında, qida emalı zonalarında və laboratoriyalarda havadakı hissəcik və mikrobioloji çirklənmə birbaşa insan sağlamlığı və məhsul keyfiyyətinə təsir edir.",
     "whyImportantP2": "NOVVES higiyenik havalandırma sistemləri çoxmərhələli filtrasiya (G4 ön filtr + F7/F9 torba filtr + HEPA H13/H14), müsbət/mənfi təzyiq idarəetməsi və laminar axın texnologiyası ilə təmiz otaq təsnifatlarına uyğun mühit yaradır.",
     "steps": [
-      { "label": "Təmiz otaq təsnifatı", "desc": "ISO 14644 / GMP sinfi müəyyənləşdirməsi, hissə və təzyiq tələbləri" },
-      { "label": "Sistem layihəsi", "desc": "Filtrasiya mərhələləri, hava dəyişmə sürəti, təzyiq kaskad layihəsi" },
-      { "label": "İstehsal və montaj", "desc": "Paslanmayan polad qabıq istehsalı, HEPA filtr inteqrasiyası, obyektdə montaj" },
-      { "label": "Validasiya və texniki xidmət", "desc": "Hissə sayımı testi, DOP/PAO filtr bütövlük testi, dövrüvi qulluq" }
+      {
+        "label": "Təmiz otaq təsnifatı",
+        "desc": "ISO 14644 / GMP sinfi müəyyənləşdirməsi, hissə və təzyiq tələbləri"
+      },
+      {
+        "label": "Sistem layihəsi",
+        "desc": "Filtrasiya mərhələləri, hava dəyişmə sürəti, təzyiq kaskad layihəsi"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "Paslanmayan polad qabıq istehsalı, HEPA filtr inteqrasiyası, obyektdə montaj"
+      },
+      {
+        "label": "Validasiya və texniki xidmət",
+        "desc": "Hissə sayımı testi, DOP/PAO filtr bütövlük testi, dövrüvi qulluq"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Higiyenik hava hazırlayıcı qurğular", "desc": "Paslanmayan polad qabıq, daxili səth örtükləri, higiyenik panellər və təmiz otaq standartlarına uyğun modul konstruksiya." },
-      { "title": "HEPA filtrasiya bloku", "desc": "99.995% hissə tutumu olan H13/H14 sinfi HEPA filtrləri." },
-      { "title": "Laminar axın qurğusu (LAF)", "desc": "Əməliyyat və təmiz otaqlarda hissəsiz mühit üçün tək istiqamətli hava axını." },
-      { "title": "Təzyiq idarəetmə sistemləri", "desc": "Otaqlar arası diferensial təzyiq monitorinqi və avtomatik regulyator idarəetməsi." },
-      { "title": "Ön filtr və torba filtr", "desc": "Çoxmərhələli filtrasiya ilə HEPA ömrünü uzadan G4 ön və F7/F9 torba filtrləri." },
-      { "title": "Monitorinq və avtomatika", "desc": "24/7 monitorinq üçün hissə sayğacı, təzyiq sensoru və BMS inteqrasiyası." }
+      {
+        "title": "Higiyenik hava hazırlayıcı qurğular",
+        "desc": "Paslanmayan polad qabıq, daxili səth örtükləri, higiyenik panellər və təmiz otaq standartlarına uyğun modul konstruksiya."
+      },
+      {
+        "title": "HEPA filtrasiya bloku",
+        "desc": "99.995% hissə tutumu olan H13/H14 sinfi HEPA filtrləri."
+      },
+      {
+        "title": "Laminar axın qurğusu (LAF)",
+        "desc": "Əməliyyat və təmiz otaqlarda hissəsiz mühit üçün tək istiqamətli hava axını."
+      },
+      {
+        "title": "Təzyiq idarəetmə sistemləri",
+        "desc": "Otaqlar arası diferensial təzyiq monitorinqi və avtomatik regulyator idarəetməsi."
+      },
+      {
+        "title": "Ön filtr və torba filtr",
+        "desc": "Çoxmərhələli filtrasiya ilə HEPA ömrünü uzadan G4 ön və F7/F9 torba filtrləri."
+      },
+      {
+        "title": "Monitorinq və avtomatika",
+        "desc": "24/7 monitorinq üçün hissə sayğacı, təzyiq sensoru və BMS inteqrasiyası."
+      }
     ],
     "midCtaTitle": "Higiyenik havalandırma layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -187,36 +625,142 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "ISO 14644 uyğunluğu", "desc": "Təmiz otaq təsnifatına uyğun layihə və validasiya xidmətləri." },
-      { "title": "GMP uyğun istehsal", "desc": "Əczaçılıq və qida sənayesi GMP tələblərinə cavab verən sistem layihəsi." },
-      { "title": "Çoxmərhələli filtrasiya", "desc": "Ən yüksək hava təmizliyi üçün G4 + F7/F9 + HEPA H14." },
-      { "title": "Tam dövrəli xidmət", "desc": "Layihə, istehsal, montaj, validasiya və dövrüvi texniki xidmət tək mənbədən." }
+      {
+        "title": "ISO 14644 uyğunluğu",
+        "desc": "Təmiz otaq təsnifatına uyğun layihə və validasiya xidmətləri."
+      },
+      {
+        "title": "GMP uyğun istehsal",
+        "desc": "Əczaçılıq və qida sənayesi GMP tələblərinə cavab verən sistem layihəsi."
+      },
+      {
+        "title": "Çoxmərhələli filtrasiya",
+        "desc": "Ən yüksək hava təmizliyi üçün G4 + F7/F9 + HEPA H14."
+      },
+      {
+        "title": "Tam dövrəli xidmət",
+        "desc": "Layihə, istehsal, montaj, validasiya və dövrüvi texniki xidmət tək mənbədən."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Higiyenik havalandırma tələb edən bütün kritik zonalar üçün həllər.",
     "areas": [
-      { "title": "Xəstəxana əməliyyat otaqları", "description": "Laminar axın, HEPA filtrli steril mühit", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Əczaçılıq istehsal obyektləri", "description": "GMP sinfi təmiz otaq havalandırması", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Qida emalı obyektləri", "description": "Çirklənməsiz istehsal mühiti", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Laboratoriyalar", "description": "Mənfi/müsbət təzyiqli izolyasiya olunmuş mühitlər", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Elektronika və yarımkeçirici istehsalı", "description": "Ultra təmiz otaq sinfi hissə idarəetməsi", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] }
+      {
+        "title": "Xəstəxana əməliyyat otaqları",
+        "description": "Laminar axın, HEPA filtrli steril mühit",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Əczaçılıq istehsal obyektləri",
+        "description": "GMP sinfi təmiz otaq havalandırması",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Qida emalı obyektləri",
+        "description": "Çirklənməsiz istehsal mühiti",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC Fans",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Laboratoriyalar",
+        "description": "Mənfi/müsbət təzyiqli izolyasiya olunmuş mühitlər",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Elektronika və yarımkeçirici istehsalı",
+        "description": "Ultra təmiz otaq sinfi hissə idarəetməsi",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "HEPA filtrlər nə tez-tez dəyişdirilməlidir?", "a": "HEPA filtr ömrü iş şəraitindən asılı olaraq 2-5 il arası dəyişir. Ön və torba filtrlərin düzgün dəyişdirilməsi HEPA ömrünü əhəmiyyətli uzadır. Diferensial təzyiq monitorinqi dəyişmə vaxtını dəqiq müəyyən edir." },
-      { "q": "Təmiz otaq təsnifatı necə müəyyən edilir?", "a": "Təsnifat ISO 14644-1-ə əsasən havadakı hissə sayına görə aparılır. Məsələn, əməliyyat otaqları üçün tez-tez ISO 5, əczaçılıq istehsalı üçün ISO 7-8 tipikdir." },
-      { "q": "Mövcud havalandırma sistemində HEPA əlavə etmək mümkündürmü?", "a": "Mövcud sistemin tutumu və təzyiq itkisinə bağlı olaraq HEPA inteqrasiyası mümkündür. Lakin çoxmərhələli filtrasiya üçün adətən AHU yenilənməsi tövsiyə olunur." },
-      { "q": "Validasiya xidməti təqdim edirsiniz?", "a": "Bəli, NOVVES bütün higiyenik havalandırma layihələri üçün hissə sayımı, DOP/PAO filtr bütövlük testi və təzyiq xəritələşdirməsi daxil olmaqla validasiya xidmətləri göstərir." }
+      {
+        "q": "HEPA filtrlər nə tez-tez dəyişdirilməlidir?",
+        "a": "HEPA filtr ömrü iş şəraitindən asılı olaraq 2-5 il arası dəyişir. Ön və torba filtrlərin düzgün dəyişdirilməsi HEPA ömrünü əhəmiyyətli uzadır. Diferensial təzyiq monitorinqi dəyişmə vaxtını dəqiq müəyyən edir."
+      },
+      {
+        "q": "Təmiz otaq təsnifatı necə müəyyən edilir?",
+        "a": "Təsnifat ISO 14644-1-ə əsasən havadakı hissə sayına görə aparılır. Məsələn, əməliyyat otaqları üçün tez-tez ISO 5, əczaçılıq istehsalı üçün ISO 7-8 tipikdir."
+      },
+      {
+        "q": "Mövcud havalandırma sistemində HEPA əlavə etmək mümkündürmü?",
+        "a": "Mövcud sistemin tutumu və təzyiq itkisinə bağlı olaraq HEPA inteqrasiyası mümkündür. Lakin çoxmərhələli filtrasiya üçün adətən AHU yenilənməsi tövsiyə olunur."
+      },
+      {
+        "q": "Validasiya xidməti təqdim edirsiniz?",
+        "a": "Bəli, NOVVES bütün higiyenik havalandırma layihələri üçün hissə sayımı, DOP/PAO filtr bütövlük testi və təzyiq xəritələşdirməsi daxil olmaqla validasiya xidmətləri göstərir."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Higiyenik havalandırma sistemi axtarırsınız?",
     "finalCtaDesc": "Təmiz otaq təsnifatı, layihə layihəsi və qiymət təklifi üçün mühəndis heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Gigiyenik yerlərdə havalandırma; Rahatlıqdan əlavə, insan sağlamlığına, məhsulun keyfiyyətinə və əməliyyat təhlükəsizliyinə birbaşa təsir edən mühüm mühəndislik maneəsidir. Əməliyyat otaqlarında, reanimasiya şöbələrində, təmiz otaqlarda, əczaçılıq istehsalat obyektlərində, qida istehsalı sahələrində, laboratoriyalarda, xəstəxana xidmətlərində, sənaye mətbəxlərində və baytarlıq/heyvandarlıq sahələrində hava; Hissəciklər, patogenlər, qoxu, nəmlik, çarpaz çirklənmə və təzyiq fərqi üçün yoxlanılmalıdır. Bu ərazilərdə düzgün olmayan hava axını; Bu, infeksiya riski, məhsulun çirklənməsi, kondensasiya, mikrobioloji çoxalma və əməyin mühafizəsi problemlərinə səbəb ola bilər.\n\nNOVVES xüsusi olaraq TIGER HYG gigiyenik kondisionerləri, TURTLE hüceyrə fanatları, DRAGONFLY tüstü/egzoz məhlulları, CARACAL istilik bərpa cihazları, HUMMINGBIRD EC fanatları, HOUND möhürlənmiş amortizatorlar, BUTTERFLY ventilyatorları və ağır mətbəx fanatları ilə kritik ərazilər üçün inteqrasiya olunmuş havalandırma həlləri təklif edir. Sistem dizaynları; O, HEPA/ULPA filtrasiyası, müsbət-mənfi təzyiq şəlaləsi, laminar hava axını, sıfır resirkulyasiya, kondensasiyaya nəzarət, yuyulma müqaviməti və çarpaz çirklənmənin qarşısının alınması kimi meyarlara uyğun olaraq hazırlanmışdır."
+    }
   },
-
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Sənaye hava idarəetməsi",
     "badge": "Həllər",
@@ -227,30 +771,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "120\u00b0C", "label": "Temperatura davamlılığı" },
-      { "value": "ATEX", "label": "Partlayışa davamlı seçim" },
-      { "value": "IP55", "label": "Qoruma sinfi" },
-      { "value": "300+", "label": "Tamamlanmış layihə" }
+      {
+        "value": "120°C",
+        "label": "Temperatura davamlılığı"
+      },
+      {
+        "value": "ATEX",
+        "label": "Partlayışa davamlı seçim"
+      },
+      {
+        "value": "IP55",
+        "label": "Qoruma sinfi"
+      },
+      {
+        "value": "300+",
+        "label": "Tamamlanmış layihə"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "İstehsal səmərəliliyi üçün düzgün hava idarəetməsi",
     "whyImportantP1": "Sənaye obyektlərində prosesdən yaranan istilik, rütubət, toz və qaz yığılması birbaşa işçi sağlamlığına, məhsul keyfiyyətinə və avadanlıq ömrünə təsir edir. Effektiv hava idarəetməsi əməyin mühafizəsi uyğunluğu üçün də əsas tələbdir.",
     "whyImportantP2": "NOVVES sənaye obyekt ehtiyaclarına görə layihələndirilmiş yüksək tutumlu ventilyator sistemləri, kanal layihələri və avtomatika həlləri ilə isti qaz sorğu, təmiz hava təchizatı və ümumi havalandırma layihələrini tək mənbədən idarə edir.",
     "steps": [
-      { "label": "Obyekt müşahidəsi", "desc": "Obyekt tipi, proses şəraiti, temperatur/rütubət/toz təhlili" },
-      { "label": "Mühəndis layihəsi", "desc": "Ventilyator seçimi, kanal hesablaması, sorğu/təchizat balansı" },
-      { "label": "İstehsal və montaj", "desc": "Ağır rejim ventilyatorları, sənaye kanalı istehsalı və obyektdə montaj" },
-      { "label": "İstismara qəbul və xidmət", "desc": "Performans ölçümü, balanslama, dövrüvi qulluq və 24/7 dəstək" }
+      {
+        "label": "Obyekt müşahidəsi",
+        "desc": "Obyekt tipi, proses şəraiti, temperatur/rütubət/toz təhlili"
+      },
+      {
+        "label": "Mühəndis layihəsi",
+        "desc": "Ventilyator seçimi, kanal hesablaması, sorğu/təchizat balansı"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "Ağır rejim ventilyatorları, sənaye kanalı istehsalı və obyektdə montaj"
+      },
+      {
+        "label": "İstismara qəbul və xidmət",
+        "desc": "Performans ölçümü, balanslama, dövrüvi qulluq və 24/7 dəstək"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Sənaye sentrifugal ventilyatorlar (NAUTILUS)", "desc": "Yüksək təzyiq və temperatura davamlı, tək və ya ikiqat divarlı sentrifugal ventilyatorlar." },
-      { "title": "Aksial ventilyatorlar (MARLIN)", "desc": "Böyük məkanlar üçün yüksək həcm tutumu olan qapaqlı və ya qanadlı aksial ventilyatorlar." },
-      { "title": "Dam ventilyatorları (HERON)", "desc": "Obyekt damında sorğu və ya təmiz hava üçün radial və aksial dam ventilyatorları." },
-      { "title": "Divar ventilyatorları (OWL)", "desc": "Sorğu və ya təchizat üçün fasad üzrə radial və aksial divar ventilyatorları." },
-      { "title": "Kanal ventilyatorları (KOI)", "desc": "Kanal daxilində təzyiq artırımı və hava ötürülməsi üçün kompakt kanal ventilyatorları." },
-      { "title": "Avtomatika və idarəetmə", "desc": "Dəyişən sürət sürücüləri, temperatur/rütubət sensorları, PLC panelləri və BMS inteqrasiyası." }
+      {
+        "title": "Sənaye sentrifugal ventilyatorlar (NAUTILUS)",
+        "desc": "Yüksək təzyiq və temperatura davamlı, tək və ya ikiqat divarlı sentrifugal ventilyatorlar."
+      },
+      {
+        "title": "Aksial ventilyatorlar (MARLIN)",
+        "desc": "Böyük məkanlar üçün yüksək həcm tutumu olan qapaqlı və ya qanadlı aksial ventilyatorlar."
+      },
+      {
+        "title": "Dam ventilyatorları (HERON)",
+        "desc": "Obyekt damında sorğu və ya təmiz hava üçün radial və aksial dam ventilyatorları."
+      },
+      {
+        "title": "Divar ventilyatorları (OWL)",
+        "desc": "Sorğu və ya təchizat üçün fasad üzrə radial və aksial divar ventilyatorları."
+      },
+      {
+        "title": "Kanal ventilyatorları (KOI)",
+        "desc": "Kanal daxilində təzyiq artırımı və hava ötürülməsi üçün kompakt kanal ventilyatorları."
+      },
+      {
+        "title": "Avtomatika və idarəetmə",
+        "desc": "Dəyişən sürət sürücüləri, temperatur/rütubət sensorları, PLC panelləri və BMS inteqrasiyası."
+      }
     ],
     "midCtaTitle": "Sənaye havalandırma layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -258,36 +844,142 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Yüksək temperatura davamlılığı", "desc": "Proses sorğu üçün 120\u00b0C-yə qədər davamlı iş tutumu olan ventilyator seçimləri." },
-      { "title": "Ağır rejim layihəsi", "desc": "Qalın qabıq lövhəsi, gücləndirilmiş yastıq qrupları və korroziyaya davamlı örtük seçimləri." },
-      { "title": "Geniş məhsul çeşidi", "desc": "Hər ehtiyaca cavab verən sentrifugal, aksial, dam, divar və kanal ventilyatorları." },
-      { "title": "Uzunömürlü performans", "desc": "Ağır rejim yastıq qrupları, dinamik balanslama və vibrasiya monitorinqi ilə davamlı performans." }
+      {
+        "title": "Yüksək temperatura davamlılığı",
+        "desc": "Proses sorğu üçün 120°C-yə qədər davamlı iş tutumu olan ventilyator seçimləri."
+      },
+      {
+        "title": "Ağır rejim layihəsi",
+        "desc": "Qalın qabıq lövhəsi, gücləndirilmiş yastıq qrupları və korroziyaya davamlı örtük seçimləri."
+      },
+      {
+        "title": "Geniş məhsul çeşidi",
+        "desc": "Hər ehtiyaca cavab verən sentrifugal, aksial, dam, divar və kanal ventilyatorları."
+      },
+      {
+        "title": "Uzunömürlü performans",
+        "desc": "Ağır rejim yastıq qrupları, dinamik balanslama və vibrasiya monitorinqi ilə davamlı performans."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Sənaye havalandırması tələb edən bütün istehsal və obyekt tipləri üçün həllər.",
     "areas": [
-      { "title": "Avtomobil zavodları", "description": "Rəsm kabini sorğu, qaynaq tüstüsünün sorğu edilməsi", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Metal və polad zavodları", "description": "İsti qaz sorğu və təmiz hava təchizatı", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }] },
-      { "title": "Tekstil zavodları", "description": "Rütubət idarəetməsi və lif tozunun sorğu edilməsi", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Kimya və neft-kimya zavodları", "description": "Korroziv qaz sorğu və təmiz hava təchizatı", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
-      { "title": "Anbarlar və logistika mərkəzləri", "description": "Ümumi havalandırma və temperatur idarəetməsi", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Avtomobil zavodları",
+        "description": "Rəsm kabini sorğu, qaynaq tüstüsünün sorğu edilməsi",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Metal və polad zavodları",
+        "description": "İsti qaz sorğu və təmiz hava təchizatı",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Tekstil zavodları",
+        "description": "Rütubət idarəetməsi və lif tozunun sorğu edilməsi",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Kimya və neft-kimya zavodları",
+        "description": "Korroziv qaz sorğu və təmiz hava təchizatı",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Anbarlar və logistika mərkəzləri",
+        "description": "Ümumi havalandırma və temperatur idarəetməsi",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Sənaye ventilyatoru seçərkən nəyə diqqət yetirmək lazımdır?", "a": "Hava həcmi, təzyiq itkisi, iş temperaturu, mühit şəraiti (toz, rütubət, korroziv qazlar) və səs səviyyəsi əsas seçim meyarlarıdır. NOVVES mühəndis heyəti hər layihə üçün ən uyğun ventilyator tipini müəyyən edir." },
-      { "q": "Yüksək temperatur mühitində hansı ventilyorlar istifadə olunur?", "a": "NAUTILUS seriyası sentrifugal ventilyatorlar 120\u00b0C-yə qədər davamlı iş üçün layihələndirilir. Daha yüksək temperaturlarda xüsusi materiallar və soyutma həlləri tətbiq olunur." },
-      { "q": "ATEX sertifikatlı ventilyator vacibdir?", "a": "Partlayıcı atmosfer riski olan zonalarında (kimya, neft-kimya, boya, taxıl silosu və s.) ATEX sertifikatlı BEAR seriyası ventilyatorlar məcburidir." },
-      { "q": "Mövcud obyektlərə əlavə havalandırma əlavə etmək mümkündürmü?", "a": "Bəli, mövcud kanal və ventilyator sistemlərinə tutum artımı və ya yeni sorğu xətləri əlavə olun bilər. Ən uyğun həll obyekt müşahidəsindən sonra müəyyən edilir." }
+      {
+        "q": "Sənaye ventilyatoru seçərkən nəyə diqqət yetirmək lazımdır?",
+        "a": "Hava həcmi, təzyiq itkisi, iş temperaturu, mühit şəraiti (toz, rütubət, korroziv qazlar) və səs səviyyəsi əsas seçim meyarlarıdır. NOVVES mühəndis heyəti hər layihə üçün ən uyğun ventilyator tipini müəyyən edir."
+      },
+      {
+        "q": "Yüksək temperatur mühitində hansı ventilyorlar istifadə olunur?",
+        "a": "NAUTILUS seriyası sentrifugal ventilyatorlar 120°C-yə qədər davamlı iş üçün layihələndirilir. Daha yüksək temperaturlarda xüsusi materiallar və soyutma həlləri tətbiq olunur."
+      },
+      {
+        "q": "ATEX sertifikatlı ventilyator vacibdir?",
+        "a": "Partlayıcı atmosfer riski olan zonalarında (kimya, neft-kimya, boya, taxıl silosu və s.) ATEX sertifikatlı BEAR seriyası ventilyatorlar məcburidir."
+      },
+      {
+        "q": "Mövcud obyektlərə əlavə havalandırma əlavə etmək mümkündürmü?",
+        "a": "Bəli, mövcud kanal və ventilyator sistemlərinə tutum artımı və ya yeni sorğu xətləri əlavə olun bilər. Ən uyğun həll obyekt müşahidəsindən sonra müəyyən edilir."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Sənaye havalandırma sistemi axtarırsınız?",
     "finalCtaDesc": "Obyekt müşahidəsi, mühəndis layihəsi və qiymət təklifi üçün heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Sənaye obyektlərində havanın idarə edilməsi; O, istehsalın fasiləsizliyi, işçilərin sağlamlığı, yanğın təhlükəsizliyi, ətraf mühitə emissiyaya nəzarət və proses keyfiyyəti üçün əsas infrastrukturlardan biridir. Ağır sənaye, qaynaq, boya, tökmə, metallurgiya, tekstil, kağız, enerji, avtomobil, maşın istehsalı, tullantıların emalı və mebel kimi sektorlarda yayılan toz, tüstü, VOC, neft dumanı, aşındırıcı qaz, yüksək temperatur və rütubət yükləri standart HVAC yanaşmaları ilə idarə oluna bilməz. Bu ərazilərdə hava; Prosesin bir hissəsi kimi mühəndislik intizamına uyğun tərtib edilməlidir.\n\nNOVVES çirkləndiricilərin mənbəyində tutulmasını, mənfi təzyiqin zonalaşdırılmasını, termal yükün evakuasiyasını, tozun yığılmasını, həlledicinin atılmasını, istiliyin idarə olunmasını və ağır yüklü fan və hava idarəetmə həlləri ilə 24/7 sənaye əməliyyatının davamlılığını təmin edir. NAUTILUS yüksək təzyiqli salyangoz ventilyatorları, HERON dam tipli egzoz ventilyatorları, OWL divar tipli sənaye ventilyatorları, ELEPHANT toz toplama sistemləri, TIGER kondisioner/nəmləndirici qurğular və MARLIN eksenel həllər; Onlar obyektin proses risklərinə uyğun olaraq birlikdə və ya ayrıca dizayn edilir."
+    }
   },
-
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Heyvandarlıq obyekti havalandırması",
     "badge": "Həllər",
@@ -298,30 +990,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "IP55", "label": "Qoruma sinfi" },
-      { "value": "Anti-Corrosion", "label": "Örtük" },
-      { "value": "EC Motor", "label": "Enerji qənaəti" },
-      { "value": "150+", "label": "Tamamlanmış layihə" }
+      {
+        "value": "IP55",
+        "label": "Qoruma sinfi"
+      },
+      {
+        "value": "Anti-Corrosion",
+        "label": "Örtük"
+      },
+      {
+        "value": "EC Motor",
+        "label": "Enerji qənaəti"
+      },
+      {
+        "value": "150+",
+        "label": "Tamamlanmış layihə"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Heyvan rifahı və istehsal səmərəliliyi",
     "whyImportantP1": "Heyvandarlıq obyektlərində ammonyak, rütubət, istilik yığılması və kifayət qədər hava dövranı heyvan stressini artırır, böyümə performansını, süd məhsulunu və yumurta istehsalını birbaşa azaldır.",
     "whyImportantP2": "NOVVES quşçuluq evləri, tövlələr və saxlama obyektləri üçün xüsusi layihələndirilmiş korroziyaya davamlı ventilyator sistemləri ilə optimum temperatur, rütubət və qaz konsentrasiyasını saxlayır. Enerji səmərəli EC mühərriklər və ağıllı idarəetmə işləmə xərclərini minimuma endirir.",
     "steps": [
-      { "label": "Obyekt təhlili", "desc": "Heyvan növü, obyekt ölçüləri, iqlim şəraiti və havalandırma ehtiyacının qiymətləndirilməsi" },
-      { "label": "Sistem layihəsi", "desc": "Ventilyator seçimi, yerləşmə planı, hava giriş/çıxış balansı, soyutma inteqrasiyası" },
-      { "label": "İstehsal və montaj", "desc": "Korroziyaya davamlı ventilyator istehsalı, peşəkar obyektdə montaj" },
-      { "label": "İstismara qəbul və dəstək", "desc": "Performans sınağı, avtomatika kalibrləməsi, dövrüvi qulluq və texniki dəstək" }
+      {
+        "label": "Obyekt təhlili",
+        "desc": "Heyvan növü, obyekt ölçüləri, iqlim şəraiti və havalandırma ehtiyacının qiymətləndirilməsi"
+      },
+      {
+        "label": "Sistem layihəsi",
+        "desc": "Ventilyator seçimi, yerləşmə planı, hava giriş/çıxış balansı, soyutma inteqrasiyası"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "Korroziyaya davamlı ventilyator istehsalı, peşəkar obyektdə montaj"
+      },
+      {
+        "label": "İstismara qəbul və dəstək",
+        "desc": "Performans sınağı, avtomatika kalibrləməsi, dövrüvi qulluq və texniki dəstək"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Quşçuluq evi ventilyatorları (CHICKEN)", "desc": "Quş və xırda heyvan saxlama üçün xüsusi layihələndirilmiş korroziyaya davamlı, yüksək həcm aksial ventilyatorlar." },
-      { "title": "Divar üzrə sorğu ventilyatorları (OWL)", "desc": "İribuynuz tövlələri və heyvan saxlama üçün fasad üzrə, sinklənmiş gövdə sorğu ventilyatorları." },
-      { "title": "Dam ventilyatorları (HERON)", "desc": "Dam sorğu və təmiz hava üçün korroziyaya davamlı dam ventilyatorları." },
-      { "title": "Evaporativ soyutma paneləri", "desc": "İsti iqlimlərdə daxili temperaturu azaldan adiabatik soyutma petek sistemləri." },
-      { "title": "Hava giriş barmaqlıqları", "desc": "İdarə olunan təmiz hava qəbulu və tunel havalandırması üçün tənzimlənən qanadlı barmaqlıqlar." },
-      { "title": "Avtomatika və idarəetmə", "desc": "Avtomatik ventilyator sürəti və iqlim idarəetməsi ilə temperatur, rütubət və ammonyak sensorları." }
+      {
+        "title": "Quşçuluq evi ventilyatorları (CHICKEN)",
+        "desc": "Quş və xırda heyvan saxlama üçün xüsusi layihələndirilmiş korroziyaya davamlı, yüksək həcm aksial ventilyatorlar."
+      },
+      {
+        "title": "Divar üzrə sorğu ventilyatorları (OWL)",
+        "desc": "İribuynuz tövlələri və heyvan saxlama üçün fasad üzrə, sinklənmiş gövdə sorğu ventilyatorları."
+      },
+      {
+        "title": "Dam ventilyatorları (HERON)",
+        "desc": "Dam sorğu və təmiz hava üçün korroziyaya davamlı dam ventilyatorları."
+      },
+      {
+        "title": "Evaporativ soyutma paneləri",
+        "desc": "İsti iqlimlərdə daxili temperaturu azaldan adiabatik soyutma petek sistemləri."
+      },
+      {
+        "title": "Hava giriş barmaqlıqları",
+        "desc": "İdarə olunan təmiz hava qəbulu və tunel havalandırması üçün tənzimlənən qanadlı barmaqlıqlar."
+      },
+      {
+        "title": "Avtomatika və idarəetmə",
+        "desc": "Avtomatik ventilyator sürəti və iqlim idarəetməsi ilə temperatur, rütubət və ammonyak sensorları."
+      }
     ],
     "midCtaTitle": "Heyvandarlıq obyekti havalandırması üçün təklif alın",
     "midCtaDesc": "Peşəkar heyətimiz obyektiniz üçün fərdi həll təklifi təqdim edəcək.",
@@ -329,35 +1063,126 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Korroziyaya davamlılıq", "desc": "Ammonyak və rütubətə qarşı uzunömürlü performans üçün sinkləmə və xüsusi örtük seçimləri." },
-      { "title": "Yüksək hava həcmi", "desc": "Geniş həcmdə effektiv hava dövranı üçün böyük diametrli ventilyator seçimləri." },
-      { "title": "Enerji səmərəliliyi", "desc": "EC mühərriklər və dəyişən sürət idarəetməsi ilə əhəmiyyətli enerji qənaəti." },
-      { "title": "Heyvan rifahı yönümlü", "desc": "Optimum temperatur və hava keyfiyyəti ilə stress amillərinin minimuma endirilməsi." }
+      {
+        "title": "Korroziyaya davamlılıq",
+        "desc": "Ammonyak və rütubətə qarşı uzunömürlü performans üçün sinkləmə və xüsusi örtük seçimləri."
+      },
+      {
+        "title": "Yüksək hava həcmi",
+        "desc": "Geniş həcmdə effektiv hava dövranı üçün böyük diametrli ventilyator seçimləri."
+      },
+      {
+        "title": "Enerji səmərəliliyi",
+        "desc": "EC mühərriklər və dəyişən sürət idarəetməsi ilə əhəmiyyətli enerji qənaəti."
+      },
+      {
+        "title": "Heyvan rifahı yönümlü",
+        "desc": "Optimum temperatur və hava keyfiyyəti ilə stress amillərinin minimuma endirilməsi."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Hər heyvandarlıq obyekti tipi üçün fərdi havalandırma həlləri.",
     "areas": [
-      { "title": "Quşçuluq evləri (broyler/yumurtlayan)", "description": "Tunel havalandırması və evaporativ soyutma", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "İribuynuz tövlələri", "description": "Ammonyak sorğu və təmiz hava təchizatı", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Süd fermaları", "description": "Sağım zonası və saxlama iqlim idarəetməsi", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Xırda heyvan saxlama", "description": "Qoyun və keçi tövlələrində havalandırma", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] }
+      {
+        "title": "Quşçuluq evləri (broyler/yumurtlayan)",
+        "description": "Tunel havalandırması və evaporativ soyutma",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "İribuynuz tövlələri",
+        "description": "Ammonyak sorğu və təmiz hava təchizatı",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Süd fermaları",
+        "description": "Sağım zonası və saxlama iqlim idarəetməsi",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Xırda heyvan saxlama",
+        "description": "Qoyun və keçi tövlələrində havalandırma",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Quşçuluq evləri üçün hansı havalandırma sistemi üstünlük verilməlidir?", "a": "Ev ölçüsü və iqlimdən asılı olaraq tunel havalandırması (mənfi təzyiq) və ya çarpaz havalandırma istifadə olunur. İsti iqlimlərdə evaporativ soyutma panel inteqrasiyası vacibdir." },
-      { "q": "Ammonyak səviyyəsi necə idarə olunur?", "a": "Ammonyak sensorları ilə davamlı monitorinq ventilyator sürətlərini avtomatik tənzimləyir. Minimum havalandırma sürətləri ammonyak konsentrasiyasını təhlükəsiz limitlərin altında saxlayır." },
-      { "q": "Qış aylarında havalandırma necə idarə olunur?", "a": "Qışda minimum havalandırma rejimi hava keyfiyyətini saxlayarkən istilik itkisini minimuma endirir. Dəyişən sürətli ventilyatorlar və avtomatik giriş idarəetməsi balanslı sistem yaradır." },
-      { "q": "Sistem nə qədər enerji istehlak edir?", "a": "EC mühərrikli ventilyator sistemləri ənənəvi AC mühərriklərlə müqayisədə 30-50% daha az enerji istehlak edir. Avtomatika sistemi ventilyatorları yalnız ehtiyac olduqda işlədərək enerji itkisinin qarşısını alır." }
+      {
+        "q": "Quşçuluq evləri üçün hansı havalandırma sistemi üstünlük verilməlidir?",
+        "a": "Ev ölçüsü və iqlimdən asılı olaraq tunel havalandırması (mənfi təzyiq) və ya çarpaz havalandırma istifadə olunur. İsti iqlimlərdə evaporativ soyutma panel inteqrasiyası vacibdir."
+      },
+      {
+        "q": "Ammonyak səviyyəsi necə idarə olunur?",
+        "a": "Ammonyak sensorları ilə davamlı monitorinq ventilyator sürətlərini avtomatik tənzimləyir. Minimum havalandırma sürətləri ammonyak konsentrasiyasını təhlükəsiz limitlərin altında saxlayır."
+      },
+      {
+        "q": "Qış aylarında havalandırma necə idarə olunur?",
+        "a": "Qışda minimum havalandırma rejimi hava keyfiyyətini saxlayarkən istilik itkisini minimuma endirir. Dəyişən sürətli ventilyatorlar və avtomatik giriş idarəetməsi balanslı sistem yaradır."
+      },
+      {
+        "q": "Sistem nə qədər enerji istehlak edir?",
+        "a": "EC mühərrikli ventilyator sistemləri ənənəvi AC mühərriklərlə müqayisədə 30-50% daha az enerji istehlak edir. Avtomatika sistemi ventilyatorları yalnız ehtiyac olduqda işlədərək enerji itkisinin qarşısını alır."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Heyvandarlıq obyekti havalandırması axtarırsınız?",
     "finalCtaDesc": "Obyekt təhlili, sistem layihəsi və qiymət təklifi üçün peşəkar heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Müasir heyvandarlıq obyektlərində havalandırma; Heyvanların rifahı, biotəhlükəsizlik, səmərəlilik və biznesin davamlılığı baxımından həlledici rol oynayır. Toyuq fermaları, yumurta istehsalı müəssisələri, inkubasiya və mal-qara tövlələri; Onlar yüksək metabolik istilik, rütubət, ammonyak, karbon dioksid, metan, tük/toz hissəcikləri və qoxu yüklərinə görə kommersiya binalarından daha sərt hava şəraitinə malikdirlər. Yanlış dizayn edilmiş havalandırma; İstilik stressinə, xəstəlik riskinə, yem çevrilmə itkisinə, aşağı səmərəliliyə və yüksək əməliyyat xərclərinə səbəb ola bilər.\n\nNOVVES yüksək axın sürətinə, korroziyaya davamlı və heyvandarlıq obyektlərində fasiləsiz işləməyə uyğun olan fan həlləri təklif edir. CHICKEN seriyalı quşçuluq ventilyatorları, OWL divar tipli ventilyatorlar, HAWK avtomatlaşdırma sistemləri, MARLIN daxili sirkulyasiya ventilyatorları, TIGER dəqiqliklə idarə olunan hava idarəetmə qurğuları, TURTLE təzyiq həlləri və HERON dam fanatları; O, obyektin növünə uyğun olaraq temperatur, rütubət, qaz konsentrasiyası, təzyiq balansı və biotəhlükəsizlik tələblərini idarə etmək üçün istifadə olunur. Beləliklə, təsərrüfatlarda daha sağlam mühit, daha balanslı hava axını və daha səmərəli istehsal şəraiti hədəflənir."
+    }
   },
-
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Transformator və enerji otağı ventilyatorları",
     "badge": "Həllər",
@@ -368,30 +1193,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "IP55", "label": "Qoruma sinfi" },
-      { "value": "Class F", "label": "Mühərrik izolyasiyası" },
-      { "value": "TEDAS", "label": "Uyğun layihə" },
-      { "value": "500+", "label": "Quraşdırılmış sistem" }
+      {
+        "value": "IP55",
+        "label": "Qoruma sinfi"
+      },
+      {
+        "value": "Class F",
+        "label": "Mühərrik izolyasiyası"
+      },
+      {
+        "value": "TEDAS",
+        "label": "Uyğun layihə"
+      },
+      {
+        "value": "500+",
+        "label": "Quraşdırılmış sistem"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Avadanlıq ömrü üçün kritik temperatur idarəetməsi",
     "whyImportantP1": "Transformator yarımstansiyaları və enerji otaqları elektrik avadanlığının yaratdığı istilik səbəbindən təhlükəli temperatura çata bilər. Həddindən artıq istilik transformator yağının pozulmasına, kabel izolyasiyasının itkisinə və sistem nasazlıqlarına səbəb olur.",
     "whyImportantP2": "NOVVES transformator otaqları, orta gərginlik şalter qurğuları, generator və UPS məkanlarında TEDAS texniki şərtlərinə uyğun layihələndirilmiş havalandırma ilə temperatur idarəetməsini təmin edir.",
     "steps": [
-      { "label": "İstilik yükünün hesablanması", "desc": "Transformator gücü, istilik itkisi, otaq ölçüləri və xarici temperatur təhlili" },
-      { "label": "Sistem layihəsi", "desc": "Ventilyator seçimi, barmaqlıq ölçüsü, sorğu/təchizat balansı" },
-      { "label": "İstehsal və montaj", "desc": "IP55 sinfi ventilyator istehsalı və obyektdə montaj" },
-      { "label": "İstismara qəbul və sınaq", "desc": "Temperatur ölçümü, termostat kalibrləməsi və performans təsdiqi" }
+      {
+        "label": "İstilik yükünün hesablanması",
+        "desc": "Transformator gücü, istilik itkisi, otaq ölçüləri və xarici temperatur təhlili"
+      },
+      {
+        "label": "Sistem layihəsi",
+        "desc": "Ventilyator seçimi, barmaqlıq ölçüsü, sorğu/təchizat balansı"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "IP55 sinfi ventilyator istehsalı və obyektdə montaj"
+      },
+      {
+        "label": "İstismara qəbul və sınaq",
+        "desc": "Temperatur ölçümü, termostat kalibrləməsi və performans təsdiqi"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Divar ventilyatorları (OWL)", "desc": "Transformator otaqları üçün IP55 sinfi, sinklənmiş gövdə divar tipli sorğu və təchizat ventilyatorları." },
-      { "title": "Dam ventilyatorları (HERON)", "desc": "Enerji otağı damından isti havanın sorğu edilməsi üçün radial və aksial dam ventilyatorları." },
-      { "title": "Kanal ventilyatorları (KOI)", "desc": "Kanal sistemləri vasitəsilə isti havanı uzun məsafəyə ötürmək üçün kompakt kanal ventilyatorları." },
-      { "title": "Hava qəbul barmaqlıqları", "desc": "TEDAS şərtlərinə uyğun filtrli və həşərata qarşı torlu hava qəbul barmaqlıqları." },
-      { "title": "Termostat və idarəetmə", "desc": "Otaq temperaturuna əsasən avtomatik ventilyator açılıb-bağlanması və mərhələli idarəetmə." },
-      { "title": "Regulyator sistemləri", "desc": "Yanğın və isti hava zonalaşdırması üçün mühərrikli regulyatorlar və təzyiq balans regulyatorları." }
+      {
+        "title": "Divar ventilyatorları (OWL)",
+        "desc": "Transformator otaqları üçün IP55 sinfi, sinklənmiş gövdə divar tipli sorğu və təchizat ventilyatorları."
+      },
+      {
+        "title": "Dam ventilyatorları (HERON)",
+        "desc": "Enerji otağı damından isti havanın sorğu edilməsi üçün radial və aksial dam ventilyatorları."
+      },
+      {
+        "title": "Kanal ventilyatorları (KOI)",
+        "desc": "Kanal sistemləri vasitəsilə isti havanı uzun məsafəyə ötürmək üçün kompakt kanal ventilyatorları."
+      },
+      {
+        "title": "Hava qəbul barmaqlıqları",
+        "desc": "TEDAS şərtlərinə uyğun filtrli və həşərata qarşı torlu hava qəbul barmaqlıqları."
+      },
+      {
+        "title": "Termostat və idarəetmə",
+        "desc": "Otaq temperaturuna əsasən avtomatik ventilyator açılıb-bağlanması və mərhələli idarəetmə."
+      },
+      {
+        "title": "Regulyator sistemləri",
+        "desc": "Yanğın və isti hava zonalaşdırması üçün mühərrikli regulyatorlar və təzyiq balans regulyatorları."
+      }
     ],
     "midCtaTitle": "Transformator otağı havalandırma layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -399,35 +1266,126 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "TEDAS uyğunluğu", "desc": "Türkiyə elektrik paylanması texniki şərtlərinə tam uyğun ventilyator və barmaqlıq həlləri." },
-      { "title": "IP55 qorunması", "desc": "Toz və su sıçramasına qarşı yüksək qoruma sinfi mühərrik və qabıqlar." },
-      { "title": "Aşağı səs səviyyəsi", "desc": "Elektrik paylayıcı mərkəzlərdə mühitə uyğun sakit iş performansı." },
-      { "title": "Uzunömürlü layihə", "desc": "Sinif F mühərrik izolyasiyası və sinklənmiş gövdə ilə uzunmüddətli etibarlı iş." }
+      {
+        "title": "TEDAS uyğunluğu",
+        "desc": "Türkiyə elektrik paylanması texniki şərtlərinə tam uyğun ventilyator və barmaqlıq həlləri."
+      },
+      {
+        "title": "IP55 qorunması",
+        "desc": "Toz və su sıçramasına qarşı yüksək qoruma sinfi mühərrik və qabıqlar."
+      },
+      {
+        "title": "Aşağı səs səviyyəsi",
+        "desc": "Elektrik paylayıcı mərkəzlərdə mühitə uyğun sakit iş performansı."
+      },
+      {
+        "title": "Uzunömürlü layihə",
+        "desc": "Sinif F mühərrik izolyasiyası və sinklənmiş gövdə ilə uzunmüddətli etibarlı iş."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Elektrik və enerji infrastrukturunun bütün kritik məkanları üçün həllər.",
     "areas": [
-      { "title": "Transformator yarımstansiyaları", "description": "Transformator istilik itkisi sorğu və temperatur idarəetməsi", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Generator otaqları", "description": "Egzoz qazı və istilik sorğu", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }] },
-      { "title": "UPS və batareya otaqları", "description": "Hidrogen qazı sorğu və temperatur idarəetməsi", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Orta gərginlik şalter qurğuları", "description": "Elektrik istilik yığılmasının sorğu edilməsi", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Transformator yarımstansiyaları",
+        "description": "Transformator istilik itkisi sorğu və temperatur idarəetməsi",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Generator otaqları",
+        "description": "Egzoz qazı və istilik sorğu",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          }
+        ]
+      },
+      {
+        "title": "UPS və batareya otaqları",
+        "description": "Hidrogen qazı sorğu və temperatur idarəetməsi",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Orta gərginlik şalter qurğuları",
+        "description": "Elektrik istilik yığılmasının sorğu edilməsi",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Transformator otaqlarında havalandırma niyə məcburidir?", "a": "Transformatorlardan gələn istilik otaqda yığılır və 40\u00b0C-dən yüksək mühit temperaturu transformator ömrünü qısaldır, yağ pozulması və izolyasiya nasazlıqlarına səbəb olur. TEDAS şərtləri kifayət qədər havalandırmanı tələb edir." },
-      { "q": "Transformator otaqları üçün hansı ventilyator tipi uyğundur?", "a": "Otaq ölçüsü və istilik yükündən asılı olaraq divar tipli (OWL), dam tipli (HERON) və ya kanal tipli (KOI) ventilyatorlar istifadə olunur. Adətən sorğu + təmiz hava təchizatı kombinasiyası tətbiq olunur." },
-      { "q": "Termostatlı iş necə işləyir?", "a": "Otaq temperaturu təyin olunmuş yuxarı həddə çatdıqda ventilyatorlar avtomatik işə düşür və temperatur düşəndə söndürülür. Çoxlu mərhələlər enerji qənaəti təmin edir." },
-      { "q": "UPS otaqları üçün xüsusi tələblər var?", "a": "Bəli, doldurma zamanı batareya qruplarında hidrogen qazı əmələ gələ bilər. Buna görə UPS otaqları partlayış riski nəzərə alınaraq uyğun havalandırma və qaz deteksiya sistemləri tələb edir." }
+      {
+        "q": "Transformator otaqlarında havalandırma niyə məcburidir?",
+        "a": "Transformatorlardan gələn istilik otaqda yığılır və 40°C-dən yüksək mühit temperaturu transformator ömrünü qısaldır, yağ pozulması və izolyasiya nasazlıqlarına səbəb olur. TEDAS şərtləri kifayət qədər havalandırmanı tələb edir."
+      },
+      {
+        "q": "Transformator otaqları üçün hansı ventilyator tipi uyğundur?",
+        "a": "Otaq ölçüsü və istilik yükündən asılı olaraq divar tipli (OWL), dam tipli (HERON) və ya kanal tipli (KOI) ventilyatorlar istifadə olunur. Adətən sorğu + təmiz hava təchizatı kombinasiyası tətbiq olunur."
+      },
+      {
+        "q": "Termostatlı iş necə işləyir?",
+        "a": "Otaq temperaturu təyin olunmuş yuxarı həddə çatdıqda ventilyatorlar avtomatik işə düşür və temperatur düşəndə söndürülür. Çoxlu mərhələlər enerji qənaəti təmin edir."
+      },
+      {
+        "q": "UPS otaqları üçün xüsusi tələblər var?",
+        "a": "Bəli, doldurma zamanı batareya qruplarında hidrogen qazı əmələ gələ bilər. Buna görə UPS otaqları partlayış riski nəzərə alınaraq uyğun havalandırma və qaz deteksiya sistemləri tələb edir."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Transformator otağı havalandırma həlli axtarırsınız?",
     "finalCtaDesc": "İstilik yükü hesablaması, sistem layihəsi və qiymət təklifi üçün mühəndis heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Transformator mərkəzləri, OG/LV otaqları, generator otaqları, enerji ötürücü yarımstansiyalar, UPS otaqları və məlumat mərkəzinin enerji sahələri; Onlar şəbəkəni fasiləsiz enerji ilə təmin edən kritik infrastrukturlardır. Bu ərazilərdə baş verən istilik yükü nəzarət altına alınmazsa, transformatorun izolyasiyasının ömrü qısalacaq, panellərdə kondensasiya və oksidləşmə baş verə bilər, güc elektron avadanlıqları istilik həddinə çata bilər, ən pis vəziyyətdə isə sistemin nasazlığı və ya yanğın riski yarana bilər. Bu səbəbdən enerji otaqlarında havalandırma sadə bir egzoz tətbiqi deyil; 24/7 etibarlılıq üçün nəzərdə tutulmuş istilik idarəetmə sistemidir.\n\nNOVVES; MARLIN kol tipli eksenel ventilyatorlar, OWL divar tipli ventilyatorlar, HERON dam ventilyatorları, HUMMINGIRD EC fanatları, KOI kanal fanatları və TURTLE hüceyrə fan həlləri ilə transformator və enerji otaqlarına xüsusi hava sirkulyasiyasını təmin edir. Sistemlər; Transformator otaqlarında yuxarı mərtəbələrdən isti havanın çıxarılması, təmiz havanın lazımi nöqtədən alınması, generator otaqlarında yanma/soyuducu havanın təmin edilməsi, yarımstansiyalarda kondensasiya nəzarəti və UPS/ESS otaqlarında akkumulyatorun təhlükəsizliyi kimi ehtiyaclara uyğun formalaşdırılır."
+    }
   },
-
   "seraTarimsal": {
     "breadcrumbCurrent": "İstixana və kənd təsərrüfatı havalandırması",
     "badge": "Həllər",
@@ -438,30 +1396,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "Anti-Corrosion", "label": "Örtük" },
-      { "value": "EC Motor", "label": "Enerji qənaəti" },
-      { "value": "IoT", "label": "Uzaqdan monitorinq" },
-      { "value": "100+", "label": "Tamamlanmış layihə" }
+      {
+        "value": "Anti-Corrosion",
+        "label": "Örtük"
+      },
+      {
+        "value": "EC Motor",
+        "label": "Enerji qənaəti"
+      },
+      {
+        "value": "IoT",
+        "label": "Uzaqdan monitorinq"
+      },
+      {
+        "value": "100+",
+        "label": "Tamamlanmış layihə"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Səmərəli kənd təsərrüfatı üçün düzgün iqlim idarəetməsi",
     "whyImportantP1": "İstixanalarda temperatur, rütubət və CO2 səviyyəsinin idarə edilməsi birbaşa bitki böyüməsinə, məhsul keyfiyyətinə və məhsula təsir edir. Yayda həddindən artıq istilik və qışda kifayət qədər havalandırmanın olmaması ciddi məhsul itkisinə səbəb olur.",
     "whyImportantP2": "NOVVES istixana və kənd təsərrüfatı obyektləri üçün evaporativ soyutma, təbii/mexaniki havalandırma və ağıllı iqlim idarəetməsi təqdim edir. Hər layihə regional iqlim məlumatları və məhsul tələblərinə əsasən xüsusi layihələndirilir.",
     "steps": [
-      { "label": "Obyekt təhlili", "desc": "İstixana ölçüsü, məhsul növü, regional iqlim və havalandırma ehtiyacının qiymətləndirilməsi" },
-      { "label": "Sistem layihəsi", "desc": "Ventilyator seçimi, soyutma paneli, dam/yanal perde havalandırması və avtomatika ssenarisi" },
-      { "label": "İstehsal və montaj", "desc": "Korroziyaya davamlı ventilyator və aksesuar istehsalı, obyektdə montaj" },
-      { "label": "İstismara qəbul və dəstək", "desc": "İqlim sensoru kalibrləməsi, avtomatika sınağı və texniki dəstək" }
+      {
+        "label": "Obyekt təhlili",
+        "desc": "İstixana ölçüsü, məhsul növü, regional iqlim və havalandırma ehtiyacının qiymətləndirilməsi"
+      },
+      {
+        "label": "Sistem layihəsi",
+        "desc": "Ventilyator seçimi, soyutma paneli, dam/yanal perde havalandırması və avtomatika ssenarisi"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "Korroziyaya davamlı ventilyator və aksesuar istehsalı, obyektdə montaj"
+      },
+      {
+        "label": "İstismara qəbul və dəstək",
+        "desc": "İqlim sensoru kalibrləməsi, avtomatika sınağı və texniki dəstək"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Divar üzrə sorğu ventilyatorları (OWL)", "desc": "İstixana divarlarına montaj olunmuş sinklənmiş gövdə, yüksək həcm havalandırma ventilyatorları." },
-      { "title": "Evaporativ soyutma sistemləri", "desc": "İstixana temperaturunu 8-12\u00b0C azaldan adiabatik soyutma petek sistemləri." },
-      { "title": "Dam havalandırma qurğusu (HERON)", "desc": "İstixana damında isti havanın sorğu edilməsi və təmiz hava üçün dam ventilyatorları." },
-      { "title": "Dövrə ventilyatorları", "desc": "İstixana daxilində homojen temperatur və rütubət paylanması üçün üfüqi hava dövrə ventilyatorları." },
-      { "title": "Hava giriş pərdələri", "desc": "İdarə olunan təmiz hava qəbulu üçün mühərrikli yan perde və dam pəncərə sistemləri." },
-      { "title": "Ağıllı iqlim idarəetməsi", "desc": "Temperatur, rütubət, CO2 və işıq sensorları ilə IoT əsaslı uzaqdan monitorinq və idarəetmə." }
+      {
+        "title": "Divar üzrə sorğu ventilyatorları (OWL)",
+        "desc": "İstixana divarlarına montaj olunmuş sinklənmiş gövdə, yüksək həcm havalandırma ventilyatorları."
+      },
+      {
+        "title": "Evaporativ soyutma sistemləri",
+        "desc": "İstixana temperaturunu 8-12°C azaldan adiabatik soyutma petek sistemləri."
+      },
+      {
+        "title": "Dam havalandırma qurğusu (HERON)",
+        "desc": "İstixana damında isti havanın sorğu edilməsi və təmiz hava üçün dam ventilyatorları."
+      },
+      {
+        "title": "Dövrə ventilyatorları",
+        "desc": "İstixana daxilində homojen temperatur və rütubət paylanması üçün üfüqi hava dövrə ventilyatorları."
+      },
+      {
+        "title": "Hava giriş pərdələri",
+        "desc": "İdarə olunan təmiz hava qəbulu üçün mühərrikli yan perde və dam pəncərə sistemləri."
+      },
+      {
+        "title": "Ağıllı iqlim idarəetməsi",
+        "desc": "Temperatur, rütubət, CO2 və işıq sensorları ilə IoT əsaslı uzaqdan monitorinq və idarəetmə."
+      }
     ],
     "midCtaTitle": "İstixana havalandırma layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar heyətimiz obyektiniz üçün fərdi həll təklifi təqdim edəcək.",
@@ -469,35 +1469,126 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Kənd təsərrüfatı davamlılığı", "desc": "Sinkləmə və korroziyaya davamlı örtüklərlə yüksək rütubət mühitində uzunömürlü performans." },
-      { "title": "Enerji səmərəli soyutma", "desc": "Evaporativ soyutma ilə ənənəvi kondisionerlərə nisbətən 80% daha az enerji istehlakı." },
-      { "title": "Ağıllı avtomatika", "desc": "IoT əsaslı iqlim monitorinqi, uzaqdan idarəetmə və məlumat əsaslı qərar dəstəyi." },
-      { "title": "Layihəyə uyğun dizayn", "desc": "İstixana ölçüsü, məhsul növü və iqlim məlumatlarına əsasən fərdi havalandırma sistemi." }
+      {
+        "title": "Kənd təsərrüfatı davamlılığı",
+        "desc": "Sinkləmə və korroziyaya davamlı örtüklərlə yüksək rütubət mühitində uzunömürlü performans."
+      },
+      {
+        "title": "Enerji səmərəli soyutma",
+        "desc": "Evaporativ soyutma ilə ənənəvi kondisionerlərə nisbətən 80% daha az enerji istehlakı."
+      },
+      {
+        "title": "Ağıllı avtomatika",
+        "desc": "IoT əsaslı iqlim monitorinqi, uzaqdan idarəetmə və məlumat əsaslı qərar dəstəyi."
+      },
+      {
+        "title": "Layihəyə uyğun dizayn",
+        "desc": "İstixana ölçüsü, məhsul növü və iqlim məlumatlarına əsasən fərdi havalandırma sistemi."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Bağlı kənd təsərrüfatı istehsalı üçün iqlim idarəetməsi həlləri.",
     "areas": [
-      { "title": "Şüşə və plastik istixanalar", "description": "Temperatur və rütubət idarəetməsi, evaporativ soyutma", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Göbələk yetişdirmə obyektləri", "description": "Dəqiq rütubət və temperatur idarəetməsi, təmiz hava təchizatı", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Şitil istixanaları", "description": "Homojen iqlim paylanması və soyutma", "products": [{ "name": "OWL", "type": "Wall Fans", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Taxıl saxlama obyektləri", "description": "Rütubət idarəetməsi və havalandırma", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }] }
+      {
+        "title": "Şüşə və plastik istixanalar",
+        "description": "Temperatur və rütubət idarəetməsi, evaporativ soyutma",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Göbələk yetişdirmə obyektləri",
+        "description": "Dəqiq rütubət və temperatur idarəetməsi, təmiz hava təchizatı",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC Fans",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Şitil istixanaları",
+        "description": "Homojen iqlim paylanması və soyutma",
+        "products": [
+          {
+            "name": "OWL",
+            "type": "Wall Fans",
+            "image": "/images/products/owl-cer.jpg"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Taxıl saxlama obyektləri",
+        "description": "Rütubət idarəetməsi və havalandırma",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "İstixanalar üçün ən uyğun havalandırma sistemi hansıdır?", "a": "İstixana ölçüsü, yeri və məhsul növündən asılı olaraq mənfi təzyiq (sorğu + soyutma paneli) və ya müsbət təzyiq sistemləri istifadə olunur. İsti iqlimlərdə evaporativ soyutma inteqrasiyası çox vacibdir." },
-      { "q": "Evaporativ soyutma nə qədər temperatur azaldılması verə bilər?", "a": "Regionun rütubət səviyyəsindən asılı olaraq 8-12\u00b0C temperatur azalması əldə olun bilər. Aşağı rütubətli regionlarda səmərəlilik daha yüksəkdir." },
-      { "q": "Qışda istixana havalandırması lazımdırmı?", "a": "Bəli, qışda da rütubət idarəetməsi və CO2 əlavəsi üçün minimum havalandırma lazımdır. Əks halda göbələk xəstəlikləri və bitki stressi arta bilər." },
-      { "q": "Uzaqdan monitorinq və idarəetmə mümkündürmü?", "a": "Bəli, NOVVES ağıllı iqlim idarə panelləri IoT infrastrukturu vasitəsilə temperatur, rütubət və CO2 monitorinqi, ventilyator idarəetməsi və siqnal idarəetməsini təmin edir." }
+      {
+        "q": "İstixanalar üçün ən uyğun havalandırma sistemi hansıdır?",
+        "a": "İstixana ölçüsü, yeri və məhsul növündən asılı olaraq mənfi təzyiq (sorğu + soyutma paneli) və ya müsbət təzyiq sistemləri istifadə olunur. İsti iqlimlərdə evaporativ soyutma inteqrasiyası çox vacibdir."
+      },
+      {
+        "q": "Evaporativ soyutma nə qədər temperatur azaldılması verə bilər?",
+        "a": "Regionun rütubət səviyyəsindən asılı olaraq 8-12°C temperatur azalması əldə olun bilər. Aşağı rütubətli regionlarda səmərəlilik daha yüksəkdir."
+      },
+      {
+        "q": "Qışda istixana havalandırması lazımdırmı?",
+        "a": "Bəli, qışda da rütubət idarəetməsi və CO2 əlavəsi üçün minimum havalandırma lazımdır. Əks halda göbələk xəstəlikləri və bitki stressi arta bilər."
+      },
+      {
+        "q": "Uzaqdan monitorinq və idarəetmə mümkündürmü?",
+        "a": "Bəli, NOVVES ağıllı iqlim idarə panelləri IoT infrastrukturu vasitəsilə temperatur, rütubət və CO2 monitorinqi, ventilyator idarəetməsi və siqnal idarəetməsini təmin edir."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "İstixana havalandırma sistemi axtarırsınız?",
     "finalCtaDesc": "Obyekt təhlili, sistem layihəsi və qiymət təklifi üçün peşəkar heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Müasir istixanalarda səmərəlilik; Bu, yalnız suvarma, gübrələmə və ya işıq miqdarı ilə deyil, temperaturun, nisbi rütubətin, CO₂ səviyyəsinin və VPD dəyərlərinin düzgün idarə edilməsi ilə müəyyən edilir. Qapalı kənd təsərrüfatı strukturlarında hava durğun qaldıqda bitkilərdə transpirasiya tarazlığı pozulur, yarpaq səthində kondensasiya baş verir, göbələk xəstəlikləri artır və fotosintezin səmərəliliyi azalır. Buna görə istixana ventilyasiyası sadə bir fan tətbiqi deyil; Bitki fiziologiyasını, mikroiqlimə nəzarəti və enerji səmərəliliyini birlikdə nəzərə alan mühəndislik sistemidir.\n\nNOVVES şüşə və polikarbonat istixanaları, plastik tunel istixanaları, ağıllı hidroponik/torpaqsız əkinçilik obyektləri, tropik və ya soyuq iqlim istixanaları, ağacçılıq və çəmənlik istehsal sahələri üçün müxtəlif hava idarəetmə həlləri təklif edir. MARLIN, CHICKEN, KOI, OWL, HUMMINGBIRD, REMORA və HOUND məhsul ailələri; İstixananın arxitekturasına, iqlim şəraitinə, məhsul növünə və avtomatlaşdırma ehtiyacına uyğun olaraq seçilir və homojen hava sirkulyasiyasını, temperatur-rütubət balansını, CO₂ paylanmasını, zavodun üzərində aşağı sürətli hava axını və enerjiyə qənaətli nəzarəti təmin edir.\n\nIn smart greenhouse applications, data from temperature, humidity, CO₂ and light sensors are evaluated by automation panels; EC motor or frequency controlled fans are operated only at the required flow rate. Bu yanaşma bitkiləri ani iqlim dəyişmələrindən qoruyur, eyni zamanda enerji istehlakını azaldır və il ərzində daha sabit istehsal şəraiti yaradır. NOVVES istixana havalandırma həlləri; It aims to increase yield, reduce disease risks and provide a controlled, sustainable microclimate in agricultural production."
+    }
   },
-
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX partlayış qorunması",
     "badge": "Həllər",
@@ -508,30 +1599,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "ATEX", "label": "Sertifikatlı" },
-      { "value": "Zone 1/2", "label": "Tətbiq sahəsi" },
-      { "value": "IECEx", "label": "Beynəlxalq təsdiq" },
-      { "value": "200+", "label": "Quraşdırılmış sistem" }
+      {
+        "value": "ATEX",
+        "label": "Sertifikatlı"
+      },
+      {
+        "value": "Zone 1/2",
+        "label": "Tətbiq sahəsi"
+      },
+      {
+        "value": "IECEx",
+        "label": "Beynəlxalq təsdiq"
+      },
+      {
+        "value": "200+",
+        "label": "Quraşdırılmış sistem"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Partlayıcı mühitlərdə təhlükəsizlik prioritetdir",
     "whyImportantP1": "Kimya, neft-kimya, boya, əczaçılıq, taxıl silosu və mədənçilik kimi obyektlərdə yanıcı qaz, buxar və toz konsentrasiyaları partlayıcı atmosfer yarada bilər. Bu mühitlərdə standart avadanlıq ciddi risklər yaradır.",
     "whyImportantP2": "NOVVES BEAR seriyası ATEX sertifikatlı ventilyatorlar partlayıcı atmosfer təsnifatına (Zone 1, Zone 2, Zone 21, Zone 22) uyğun layihələndirilir. Qığılcımsız materiallar, partlayışa davamlı mühərriklər və xüsusi sızdırmazlıq təhlükəsiz havalandırma təmin edir.",
     "steps": [
-      { "label": "Risk təhlili", "desc": "Partlayıcı atmosfer təsnifatı, zona müəyyənləşdirməsi, qaz/toz tipi təhlili" },
-      { "label": "Sistem layihəsi", "desc": "ATEX ventilyator seçimi, kanal layihəsi, torpaqlama və exproof avtomatika" },
-      { "label": "İstehsal və montaj", "desc": "ATEX sertifikatlı ventilyator istehsalı, exproof kabel və bağlantı montajı" },
-      { "label": "İstismara qəbul və sertifikatlaşdırma", "desc": "Sınaq, performans ölçümü, ATEX uyğunluq sertifikatı" }
+      {
+        "label": "Risk təhlili",
+        "desc": "Partlayıcı atmosfer təsnifatı, zona müəyyənləşdirməsi, qaz/toz tipi təhlili"
+      },
+      {
+        "label": "Sistem layihəsi",
+        "desc": "ATEX ventilyator seçimi, kanal layihəsi, torpaqlama və exproof avtomatika"
+      },
+      {
+        "label": "İstehsal və montaj",
+        "desc": "ATEX sertifikatlı ventilyator istehsalı, exproof kabel və bağlantı montajı"
+      },
+      {
+        "label": "İstismara qəbul və sertifikatlaşdırma",
+        "desc": "Sınaq, performans ölçümü, ATEX uyğunluq sertifikatı"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "ATEX sentrifugal ventilyatorlar (BEAR)", "desc": "Zone 1/2 və Zone 21/22 üçün qığılcımsız materiallı sertifikatlı sentrifugal ventilyatorlar." },
-      { "title": "ATEX aksial ventilyatorlar (BEAR)", "desc": "Partlayıcı mühitlərə uyğun qapaqlı və qanadlı aksial havalandırma ventilyatorları." },
-      { "title": "Exproof dam ventilyatorları (BEAR)", "desc": "Partlayıcı qaz/tozu olan obyektlərdə dam üzrə sorğu üçün partlayışa davamlı mühərrikli ventilyatorlar." },
-      { "title": "Exproof mühərrik və idarəetmə", "desc": "ATEX təsdiqli mühərriklər, exproof düymələr, siqnal lampaları və idarə qabları." },
-      { "title": "Antistatik kanal və aksesuarlar", "desc": "Statik elektrik yığılmasının qarşısını alan torpaqlanmış kanallar və birləşdirici elementlər." },
-      { "title": "Qaz deteksiyası və avtomatika", "desc": "Yanıcı qaz/toz sensorları, PLC ilə idarə olunan təcili söndürmə və havalandırma ssenariləri." }
+      {
+        "title": "ATEX sentrifugal ventilyatorlar (BEAR)",
+        "desc": "Zone 1/2 və Zone 21/22 üçün qığılcımsız materiallı sertifikatlı sentrifugal ventilyatorlar."
+      },
+      {
+        "title": "ATEX aksial ventilyatorlar (BEAR)",
+        "desc": "Partlayıcı mühitlərə uyğun qapaqlı və qanadlı aksial havalandırma ventilyatorları."
+      },
+      {
+        "title": "Exproof dam ventilyatorları (BEAR)",
+        "desc": "Partlayıcı qaz/tozu olan obyektlərdə dam üzrə sorğu üçün partlayışa davamlı mühərrikli ventilyatorlar."
+      },
+      {
+        "title": "Exproof mühərrik və idarəetmə",
+        "desc": "ATEX təsdiqli mühərriklər, exproof düymələr, siqnal lampaları və idarə qabları."
+      },
+      {
+        "title": "Antistatik kanal və aksesuarlar",
+        "desc": "Statik elektrik yığılmasının qarşısını alan torpaqlanmış kanallar və birləşdirici elementlər."
+      },
+      {
+        "title": "Qaz deteksiyası və avtomatika",
+        "desc": "Yanıcı qaz/toz sensorları, PLC ilə idarə olunan təcili söndürmə və havalandırma ssenariləri."
+      }
     ],
     "midCtaTitle": "ATEX havalandırma layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -539,36 +1672,142 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "ATEX sertifikatlı", "desc": "2014/34/EU ATEX direktivinə uyğun istehsal və sertifikatlaşdırma." },
-      { "title": "Zone 1 və Zone 2 uyğunluğu", "desc": "Qaz qrupu və temperatur sinfinə uyğun ventilyator seçimi və layihəsi." },
-      { "title": "Qığılcımsız layihə", "desc": "Alüminium/bronza ərintiləri, xüsusi örtüklər və antistatik komponentlər." },
-      { "title": "Tam dövrəli həll", "desc": "Risk təhlili, ventilyator seçimi, exproof avtomatika və sertifikatlaşdırma tək mənbədən." }
+      {
+        "title": "ATEX sertifikatlı",
+        "desc": "2014/34/EU ATEX direktivinə uyğun istehsal və sertifikatlaşdırma."
+      },
+      {
+        "title": "Zone 1 və Zone 2 uyğunluğu",
+        "desc": "Qaz qrupu və temperatur sinfinə uyğun ventilyator seçimi və layihəsi."
+      },
+      {
+        "title": "Qığılcımsız layihə",
+        "desc": "Alüminium/bronza ərintiləri, xüsusi örtüklər və antistatik komponentlər."
+      },
+      {
+        "title": "Tam dövrəli həll",
+        "desc": "Risk təhlili, ventilyator seçimi, exproof avtomatika və sertifikatlaşdırma tək mənbədən."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Partlayıcı atmosfer riski olan bütün sənaye obyektləri üçün ATEX həlləri.",
     "areas": [
-      { "title": "Kimya və neft-kimya zavodları", "description": "Yanıcı qaz və buxar sorğu", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Roof Fans", "image": "/images/products/bear-reb.jpg" }] },
-      { "title": "Boya və lak zavodları", "description": "Solvent buxarının sorğu edilməsi", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Wall Fans", "image": "/images/products/bear-w.jpg" }] },
-      { "title": "Taxıl siloları və un fabrikləri", "description": "Yanıcı toz sorğu", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "BEAR", "type": "ATEX Duct Fans", "image": "/images/products/bear-t.jpg" }] },
-      { "title": "Mədən və tunel obyektləri", "description": "Metan qazı sorğu və havalandırma", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Əczaçılıq və kosmetika istehsalı", "description": "Yanıcı solvent və toz sorğu", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-c.jpg" }, { "name": "BEAR", "type": "ATEX Centrifugal Fans", "image": "/images/products/bear-r.jpg" }] }
+      {
+        "title": "Kimya və neft-kimya zavodları",
+        "description": "Yanıcı qaz və buxar sorğu",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX Roof Fans",
+            "image": "/images/products/bear-reb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Boya və lak zavodları",
+        "description": "Solvent buxarının sorğu edilməsi",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX Wall Fans",
+            "image": "/images/products/bear-w.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Taxıl siloları və un fabrikləri",
+        "description": "Yanıcı toz sorğu",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX Duct Fans",
+            "image": "/images/products/bear-t.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Mədən və tunel obyektləri",
+        "description": "Metan qazı sorğu və havalandırma",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Əczaçılıq və kosmetika istehsalı",
+        "description": "Yanıcı solvent və toz sorğu",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-c.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX Centrifugal Fans",
+            "image": "/images/products/bear-r.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "ATEX sertifikatı nə deməkdir?", "a": "ATEX (ATmospheres EXplosibles), partlayıcı mühitlərdə istifadə olunan avadanlığın layihə və istehsal standartlarını müəyyən edən 2014/34/EU Avropa Birliyi direktividir. BEAR seriyası ventilyatorlar bu direktivə uyğun istehsal olunur." },
-      { "q": "Zone 1 ilə Zone 2 arasında fərq nədir?", "a": "Zone 1, normal iş şəraitində partlayıcı atmosferin vaxtaşırı yarana biləcəyi zonaları təsvir edir; Zone 2 isə partlayıcı atmosferin yalnız qeyri-normal şəraitdə və qısa müddət ərzində yarana biləcəyi zonaları təsvir edir." },
-      { "q": "Hansı qaz qrupları üçün ventilyator istehsal edirsiniz?", "a": "BEAR seriyası IIA (propan, metan), IIB (etilen) və IIC (hidrogen, asetilen) qaz qruplarına uyğun modellərdə istehsal olunur." },
-      { "q": "ATEX ventilyatorunu mövcud sistemə inteqrasiya etmək mümkündürmü?", "a": "Bəli, mövcud havalandırma sistemlərinə ATEX sertifikatlı ventilyator inteqrasiyası mümkündür. Lakin kanal, bağlantı və avtomatika komponentləri də ATEX uyğunluğu üçün yoxlanmalıdır." }
+      {
+        "q": "ATEX sertifikatı nə deməkdir?",
+        "a": "ATEX (ATmospheres EXplosibles), partlayıcı mühitlərdə istifadə olunan avadanlığın layihə və istehsal standartlarını müəyyən edən 2014/34/EU Avropa Birliyi direktividir. BEAR seriyası ventilyatorlar bu direktivə uyğun istehsal olunur."
+      },
+      {
+        "q": "Zone 1 ilə Zone 2 arasında fərq nədir?",
+        "a": "Zone 1, normal iş şəraitində partlayıcı atmosferin vaxtaşırı yarana biləcəyi zonaları təsvir edir; Zone 2 isə partlayıcı atmosferin yalnız qeyri-normal şəraitdə və qısa müddət ərzində yarana biləcəyi zonaları təsvir edir."
+      },
+      {
+        "q": "Hansı qaz qrupları üçün ventilyator istehsal edirsiniz?",
+        "a": "BEAR seriyası IIA (propan, metan), IIB (etilen) və IIC (hidrogen, asetilen) qaz qruplarına uyğun modellərdə istehsal olunur."
+      },
+      {
+        "q": "ATEX ventilyatorunu mövcud sistemə inteqrasiya etmək mümkündürmü?",
+        "a": "Bəli, mövcud havalandırma sistemlərinə ATEX sertifikatlı ventilyator inteqrasiyası mümkündür. Lakin kanal, bağlantı və avtomatika komponentləri də ATEX uyğunluğu üçün yoxlanmalıdır."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "ATEX havalandırma həlli axtarırsınız?",
     "finalCtaDesc": "Risk təhlili, ATEX ventilyator seçimi və qiymət təklifi üçün mühəndis heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Partlayıcı qazlar, buxar, duman, həlledicilər, VOC və ya alışan toz olan sənaye sahələrində havalandırma sistemi standart hava ötürmə avadanlığı deyil; O, obyektin təhlükəsizliyinin birbaşa hissəsidir. Kimya və neft-kimya zavodlarında, yanacaq doldurma sahələrində, boya sexlərində, un-şəkər-toz proseslərində, əczaçılıq istehsalında və bu kimi yüksək riskli mühitlərdə düzgün ventilyator seçilməsi; Qığılcımlar, statik elektrik, isti səthlər və qaz yığılması risklərinə nəzarət etmək vacibdir.\n\nNOVVES ATEX və Ex-Proof tətbiqlərinə xas olan ventilyator, damper və filtrasiya həlləri ilə partlayıcı mühitlərdə təhlükəsiz havanın idarə edilməsini təmin edir. BEAR, NAUTILUS, HOUND, KOI və ELEPHANT məhsul ailələri; O, zona sinfi, qaz/toz xarakteri, proses temperaturu və texniki xidmət tələblərinə uyğun olaraq dizayn edilərək təhlükəsiz egzoz, VOC boşalması, alışan tozun idarə edilməsi və statik boşalmanın qorunması üçün inteqrasiya olunmuş həll təklif edir."
+    }
   },
-
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Ağıllı avtomatika və idarəetmə",
     "badge": "Həllər",
@@ -579,30 +1818,72 @@
     "ctaSecondary": "Xidmətlərimiz",
     "ctaSecondaryHref": "/hizmetler",
     "trustStrip": [
-      { "value": "BMS", "label": "İnteqrasiya" },
-      { "value": "PLC/SCADA", "label": "İdarə infrastrukturu" },
-      { "value": "IoT", "label": "Uzaqdan monitorinq" },
-      { "value": "24/7", "label": "Dəstək" }
+      {
+        "value": "BMS",
+        "label": "İnteqrasiya"
+      },
+      {
+        "value": "PLC/SCADA",
+        "label": "İdarə infrastrukturu"
+      },
+      {
+        "value": "IoT",
+        "label": "Uzaqdan monitorinq"
+      },
+      {
+        "value": "24/7",
+        "label": "Dəstək"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Səmərəlilik və idarəetmə üçün ağıllı sistemlər",
     "whyImportantP1": "Müasir binalarda və sənaye obyektlərində havalandırma sistemlərinin əl ilə idarə edilməsi qeyri-səmərəlilik, enerji itkisi və texniki xidmət problemlərinə gətirir. Ağıllı avtomatika sensor məlumatlarına əsasən sistemləri optimallaşdırır.",
     "whyImportantP2": "NOVVES avtomatika həlləri PLC əsaslı MCC panelləri, dəyişən sürət sürücüsü inteqrasiyası, BMS əlaqəsi və IoT əsaslı uzaqdan monitorinq ilə havalandırma sistemlərinin tam idarəetməsini təmin edir. Ssenari əsaslı iş rejimləri enerji istehlakını minimuma endirir.",
     "steps": [
-      { "label": "Ehtiyac təhlili", "desc": "Mövcud sistem nəzərdən keçirilməsi, avtomatika tələbləri, BMS infrastrukturunun qiymətləndirilməsi" },
-      { "label": "Avtomatika layihəsi", "desc": "PLC proqramlaşdırması, sensor seçimi, panel layihəsi, BMS inteqrasiya ssenarisi" },
-      { "label": "Panel istehsalı və montaj", "desc": "MCC/avtomatika paneli istehsalı, sahə naqilləşdirməsi və avadanlıq montajı" },
-      { "label": "İstismara qəbul və təlim", "desc": "Sistem sınağı, ssenari təsdiqi, operator/istifadəçi təlimi" }
+      {
+        "label": "Ehtiyac təhlili",
+        "desc": "Mövcud sistem nəzərdən keçirilməsi, avtomatika tələbləri, BMS infrastrukturunun qiymətləndirilməsi"
+      },
+      {
+        "label": "Avtomatika layihəsi",
+        "desc": "PLC proqramlaşdırması, sensor seçimi, panel layihəsi, BMS inteqrasiya ssenarisi"
+      },
+      {
+        "label": "Panel istehsalı və montaj",
+        "desc": "MCC/avtomatika paneli istehsalı, sahə naqilləşdirməsi və avadanlıq montajı"
+      },
+      {
+        "label": "İstismara qəbul və təlim",
+        "desc": "Sistem sınağı, ssenari təsdiqi, operator/istifadəçi təlimi"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "PLC ilə idarə olunan MCC panelləri", "desc": "Ventilyator işə salınması/dayandırılması, mərhələ idarəetməsi, nasazlıq monitorinqi və mühafizə rele inteqrasiyası olan mühərrik idarə mərkəzi." },
-      { "title": "Dəyişən sürət sürücüsü idarəetməsi", "desc": "Enerji qənaəti və dəqiq axın tənzimləməsi üçün dəyişən sürətli ventilyator idarəetməsi." },
-      { "title": "BMS inteqrasiyası", "desc": "Modbus, BACnet və ya LON protokolları vasitəsilə bina idarəetmə sistemləri ilə tam inteqrasiya." },
-      { "title": "Sensor şəbəkələri", "desc": "Zonalı məlumat toplama ilə temperatur, rütubət, CO, CO2, təzyiq və tüstü sensorları." },
-      { "title": "IoT və uzaqdan monitorinq", "desc": "Bulud əsaslı panel, mobil tətbiq, siqnal bildirişləri və enerji istehlakı təhlili." },
-      { "title": "Ssenari əsaslı iş rejimləri", "desc": "Əvvəlcədən təyin olunmuş və ya fərdi ssenarilər: normal, gecə, yanğın, avtodayanacaq CO sorğu və s." }
+      {
+        "title": "PLC ilə idarə olunan MCC panelləri",
+        "desc": "Ventilyator işə salınması/dayandırılması, mərhələ idarəetməsi, nasazlıq monitorinqi və mühafizə rele inteqrasiyası olan mühərrik idarə mərkəzi."
+      },
+      {
+        "title": "Dəyişən sürət sürücüsü idarəetməsi",
+        "desc": "Enerji qənaəti və dəqiq axın tənzimləməsi üçün dəyişən sürətli ventilyator idarəetməsi."
+      },
+      {
+        "title": "BMS inteqrasiyası",
+        "desc": "Modbus, BACnet və ya LON protokolları vasitəsilə bina idarəetmə sistemləri ilə tam inteqrasiya."
+      },
+      {
+        "title": "Sensor şəbəkələri",
+        "desc": "Zonalı məlumat toplama ilə temperatur, rütubət, CO, CO2, təzyiq və tüstü sensorları."
+      },
+      {
+        "title": "IoT və uzaqdan monitorinq",
+        "desc": "Bulud əsaslı panel, mobil tətbiq, siqnal bildirişləri və enerji istehlakı təhlili."
+      },
+      {
+        "title": "Ssenari əsaslı iş rejimləri",
+        "desc": "Əvvəlcədən təyin olunmuş və ya fərdi ssenarilər: normal, gecə, yanğın, avtodayanacaq CO sorğu və s."
+      }
     ],
     "midCtaTitle": "Avtomatika layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -610,35 +1891,126 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Enerji optimallaşdırması", "desc": "Dəyişən sürət sürücüləri və sensor məlumatlarına əsaslanan ağıllı idarəetmə ilə 30-50% enerji qənaəti." },
-      { "title": "BMS uyğunluğu", "desc": "Modbus, BACnet, LON kimi açıq protokollar vasitəsilə bütün bina idarəetmə sistemləri ilə inteqrasiya." },
-      { "title": "Uzaqdan monitorinq", "desc": "IoT əsaslı 24/7 monitorinq, siqnal bildirişləri və enerji istehlakı hesabatı." },
-      { "title": "Tək mənbə həlli", "desc": "Panel layihəsi, PLC proqramlaşdırması, sahə montajı və istismara qəbul tək mənbədən." }
+      {
+        "title": "Enerji optimallaşdırması",
+        "desc": "Dəyişən sürət sürücüləri və sensor məlumatlarına əsaslanan ağıllı idarəetmə ilə 30-50% enerji qənaəti."
+      },
+      {
+        "title": "BMS uyğunluğu",
+        "desc": "Modbus, BACnet, LON kimi açıq protokollar vasitəsilə bütün bina idarəetmə sistemləri ilə inteqrasiya."
+      },
+      {
+        "title": "Uzaqdan monitorinq",
+        "desc": "IoT əsaslı 24/7 monitorinq, siqnal bildirişləri və enerji istehlakı hesabatı."
+      },
+      {
+        "title": "Tək mənbə həlli",
+        "desc": "Panel layihəsi, PLC proqramlaşdırması, sahə montajı və istismara qəbul tək mənbədən."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Hansı layihələrdə istifadə olunur?",
     "areasDesc": "Havalandırma avtomatikasını tələb edən bütün bina və obyekt tipləri üçün həllər.",
     "areas": [
-      { "title": "Bağlı avtodayanacaq avtomatikası", "description": "CO sensoru əsaslı jet ventilyator idarəetməsi", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Alış-veriş mərkəzi və kommersiya binası BMS", "description": "Mərkəzləşdirilmiş havalandırma avtomatikası və monitorinq", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }] },
-      { "title": "Sənaye obyekti avtomatikası", "description": "Proses havalandırması və sorğu idarəetməsi", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Xəstəxana və təmiz otaq", "description": "Təzyiq kaskadı və filtrasiya monitorinqi", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] }
+      {
+        "title": "Bağlı avtodayanacaq avtomatikası",
+        "description": "CO sensoru əsaslı jet ventilyator idarəetməsi",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Alış-veriş mərkəzi və kommersiya binası BMS",
+        "description": "Mərkəzləşdirilmiş havalandırma avtomatikası və monitorinq",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Sənaye obyekti avtomatikası",
+        "description": "Proses havalandırması və sorğu idarəetməsi",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Xəstəxana və təmiz otaq",
+        "description": "Təzyiq kaskadı və filtrasiya monitorinqi",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Mövcud sistemə avtomatika əlavə etmək mümkündürmü?", "a": "Bəli, mövcud ventilyator və havalandırma sistemlərinə PLC panelləri, dəyişən sürət sürücüləri və sensor inteqrasiyası əlavə etməklə avtomatika səviyyəsi yüksəldilə bilər." },
-      { "q": "Hansı BMS protokollarını dəstəkləyirsiniz?", "a": "Modbus RTU/TCP, BACnet IP/MSTP və LON protokollarını dəstəkləyirik. Ən uyğun inteqrasiya üsulu mövcud BMS infrastrukturunuza əsasən müəyyən edilir." },
-      { "q": "Uzaqdan monitorinq üçün internet lazımdırmı?", "a": "Bəli, IoT əsaslı uzaqdan monitorinq üçün obyektdə internet bağlantısı lazımdır. Bulud platformasına məlumat ötürülməsi 4G/5G modem və ya ethernet vasitəsilə təmin edilir." },
-      { "q": "Avtomatika sistemi nə qədər enerji qənaət edir?", "a": "Sensor məlumatlarına əsaslanan dəyişən sürətli ventilyator idarəetməsi 30-50% enerji qənaəti əldə edə bilər. Gecə rejimi və boş zona ssenariləri əlavə qənaət verir." }
+      {
+        "q": "Mövcud sistemə avtomatika əlavə etmək mümkündürmü?",
+        "a": "Bəli, mövcud ventilyator və havalandırma sistemlərinə PLC panelləri, dəyişən sürət sürücüləri və sensor inteqrasiyası əlavə etməklə avtomatika səviyyəsi yüksəldilə bilər."
+      },
+      {
+        "q": "Hansı BMS protokollarını dəstəkləyirsiniz?",
+        "a": "Modbus RTU/TCP, BACnet IP/MSTP və LON protokollarını dəstəkləyirik. Ən uyğun inteqrasiya üsulu mövcud BMS infrastrukturunuza əsasən müəyyən edilir."
+      },
+      {
+        "q": "Uzaqdan monitorinq üçün internet lazımdırmı?",
+        "a": "Bəli, IoT əsaslı uzaqdan monitorinq üçün obyektdə internet bağlantısı lazımdır. Bulud platformasına məlumat ötürülməsi 4G/5G modem və ya ethernet vasitəsilə təmin edilir."
+      },
+      {
+        "q": "Avtomatika sistemi nə qədər enerji qənaət edir?",
+        "a": "Sensor məlumatlarına əsaslanan dəyişən sürətli ventilyator idarəetməsi 30-50% enerji qənaəti əldə edə bilər. Gecə rejimi və boş zona ssenariləri əlavə qənaət verir."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Havalandırma avtomatika həlli axtarırsınız?",
     "finalCtaDesc": "Avtomatika layihəsi, panel istehsalı və qiymət təklifi üçün mühəndis heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Havalandırma və kondisioner sistemləri sensorlar və nəzarət alqoritmləri olmadan yalnız mexaniki avadanlıqdan ibarətdir. Ağıllı avtomatlaşdırma sistemləri isə binanın və ya obyektin \"mərkəzi sinir sistemi\" kimi bu avadanlıqları idarə edir, enerji səmərəliliyini artırır, yanğın/tüstü ssenarilərini təhlükəsiz şəkildə aktivləşdirir, daxili havanın keyfiyyətinə nəzarət edir və texniki xidmət proseslərini daha proqnozlaşdırıla bilən edir. Ağıllı binalar, sənaye obyektləri, tunel və parkinq layihələri, yaşayış yerləri, xəstəxanalar, təmiz otaqlar və məlumat mərkəzləri üçün avtomatlaşdırma qurulması fərqli bir mühəndislik məntiqi ilə aparılmalıdır.\n\nNOVVES avtomatlaşdırma həlləri; BMS, SCADA, PLC, Modbus, BACnet, CO/NOx detektorları, temperatur-rütubət sensorları, diferensial təzyiqə nəzarət, yanğın ssenarisi matrisi və tələbatla idarə olunan ventilyasiya arxitekturası ilə inteqrasiya edir. REMORA idarəetmə panelləri, HOUND avtomatik amortizatorları, LION fan idarəetmə modulları, DRAGONFLY reaktiv ventilyatorları və HUMMINGBIRD EC fanatları sayəsində sistem; Gündəlik əməliyyatda enerjiyə qənaət təmin etməklə yanaşı, yanğın və ya proses riski baş verdikdə avtomatik olaraq ssenariyə uyğun reaksiya verir."
+    }
   },
-
   "konutHavalandirma": {
     "breadcrumbCurrent": "Yaşayış havalandırması",
     "badge": "Həllər",
@@ -649,30 +2021,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "EC Motor", "label": "Sakit işləmə" },
-      { "value": "Heat Recovery", "label": "90% səmərəlilik" },
-      { "value": "dB(A) <25", "label": "Səs səviyyəsi" },
-      { "value": "A+", "label": "Enerji sinfi" }
+      {
+        "value": "EC Motor",
+        "label": "Sakit işləmə"
+      },
+      {
+        "value": "Heat Recovery",
+        "label": "90% səmərəlilik"
+      },
+      {
+        "value": "dB(A) <25",
+        "label": "Səs səviyyəsi"
+      },
+      {
+        "value": "A+",
+        "label": "Enerji sinfi"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Sağlam yaşayış üçün təmiz hava",
     "whyImportantP1": "Müasir yaşayışda izolyasiya səviyyəsi artsa da təbii hava mübadiləsi azalıb, daxili hava keyfiyyəti ciddi məsələyə çevrilib. Kifayət qədər havalandırma olmadıqda rütubət, küf, qoxu və köhnəlmiş hava yığılır.",
     "whyImportantP2": "NOVVES yaşayış havalandırması enerji itkisini minimuma endirən istilik bərpalı təmiz hava təchizatı ilə sağlam, təmiz və rahat yaşayış məkanları yaradır. Sakit işləmə və kompakt layihə bütün yaşayış tipləri ilə uyğunlaşır.",
     "steps": [
-      { "label": "Ehtiyac qiymətləndirməsi", "desc": "Yaşayış tipi, otaq sayı, sahə və havalandırma ehtiyacının təhlili" },
-      { "label": "Sistem seçimi", "desc": "Vahid tutumu, kanal marşrutu, barmaqlıq yerləşməsinin planlanması" },
-      { "label": "Montaj", "desc": "Peşəkar montaj, kanal bağlantısı və elektrik naqilləşdirməsi" },
-      { "label": "İstismara qəbul", "desc": "Hava axını ölçümü, səs sınağı və istifadəçi təlimi" }
+      {
+        "label": "Ehtiyac qiymətləndirməsi",
+        "desc": "Yaşayış tipi, otaq sayı, sahə və havalandırma ehtiyacının təhlili"
+      },
+      {
+        "label": "Sistem seçimi",
+        "desc": "Vahid tutumu, kanal marşrutu, barmaqlıq yerləşməsinin planlanması"
+      },
+      {
+        "label": "Montaj",
+        "desc": "Peşəkar montaj, kanal bağlantısı və elektrik naqilləşdirməsi"
+      },
+      {
+        "label": "İstismara qəbul",
+        "desc": "Hava axını ölçümü, səs sınağı və istifadəçi təlimi"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "İstilik bərpa qurğuları", "desc": "Enerji qənaəti üçün çıxan havadan 90%-ə qədər istiliyi bərpa edən əks axın və ya fırlanan mübadiləçi qurğular." },
-      { "title": "Hamam və tualet ventilyatorları (SEAHORSE)", "desc": "Sakit, enerji səmərəli və kompakt hamam sorğu ventilyatorları." },
-      { "title": "Kanal ventilyatorları (KOI)", "desc": "Kanal daxilində təmiz hava təchizatı və sorğu üçün aşağı səsli kompakt ventilyatorlar." },
-      { "title": "Mətbəx ventilyatorları (BUTTERFLY)", "desc": "Yağ filtəri və sakit iş xüsusiyyətləri olan mətbəx başlığı sorğu ventilyatorları." },
-      { "title": "Barmaqlıqlar və diffuzerlər", "desc": "Homojen hava paylanması üçün tavan, divar və döşəmə barmaqlıqları." },
-      { "title": "İdarəetmə və komanda", "desc": "Simsiz pult, rütubət sensoru, taymer və sürət tənzimləmə idarəetməsi." }
+      {
+        "title": "İstilik bərpa qurğuları",
+        "desc": "Enerji qənaəti üçün çıxan havadan 90%-ə qədər istiliyi bərpa edən əks axın və ya fırlanan mübadiləçi qurğular."
+      },
+      {
+        "title": "Hamam və tualet ventilyatorları (SEAHORSE)",
+        "desc": "Sakit, enerji səmərəli və kompakt hamam sorğu ventilyatorları."
+      },
+      {
+        "title": "Kanal ventilyatorları (KOI)",
+        "desc": "Kanal daxilində təmiz hava təchizatı və sorğu üçün aşağı səsli kompakt ventilyatorlar."
+      },
+      {
+        "title": "Mətbəx ventilyatorları (BUTTERFLY)",
+        "desc": "Yağ filtəri və sakit iş xüsusiyyətləri olan mətbəx başlığı sorğu ventilyatorları."
+      },
+      {
+        "title": "Barmaqlıqlar və diffuzerlər",
+        "desc": "Homojen hava paylanması üçün tavan, divar və döşəmə barmaqlıqları."
+      },
+      {
+        "title": "İdarəetmə və komanda",
+        "desc": "Simsiz pult, rütubət sensoru, taymer və sürət tənzimləmə idarəetməsi."
+      }
     ],
     "midCtaTitle": "Yaşayış havalandırma layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -680,35 +2094,126 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Sakit işləmə", "desc": "Yataq otaqlarında belə rahat iş üçün 25 dB(A)-dan aşağı səs səviyyəsi." },
-      { "title": "İstilik bərpası", "desc": "Enerji itkisinin qarşısını almaq üçün çıxan havadan 90%-ə qədər enerji bərpası." },
-      { "title": "Kompakt layihə", "desc": "Asma tavan, şkaf daxili və divarda gömülü montaj seçimləri." },
-      { "title": "Sağlam daxili hava", "desc": "Filtrasiya və təmiz hava təchizatı ilə polen, toz və çirkləndiricilərin süzülməsi." }
+      {
+        "title": "Sakit işləmə",
+        "desc": "Yataq otaqlarında belə rahat iş üçün 25 dB(A)-dan aşağı səs səviyyəsi."
+      },
+      {
+        "title": "İstilik bərpası",
+        "desc": "Enerji itkisinin qarşısını almaq üçün çıxan havadan 90%-ə qədər enerji bərpası."
+      },
+      {
+        "title": "Kompakt layihə",
+        "desc": "Asma tavan, şkaf daxili və divarda gömülü montaj seçimləri."
+      },
+      {
+        "title": "Sağlam daxili hava",
+        "desc": "Filtrasiya və təmiz hava təchizatı ilə polen, toz və çirkləndiricilərin süzülməsi."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Hansı yaşayış tiplərində istifadə olunur?",
     "areasDesc": "Bütün yaşayış tiplərinə uyğun havalandırma həlləri.",
     "areas": [
-      { "title": "Çoxmənzilli binalar", "description": "Mərkəzləşdirilmiş və ya fərdi təmiz hava və sorğu sistemi", "products": [{ "name": "SEAHORSE", "type": "Bathroom Fans", "image": "/images/products/banyo-fan-1.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Villalar və tək tikili evlər", "description": "İstilik bərpalı təmiz hava sistemi", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "BUTTERFLY", "type": "Kitchen Fans", "image": "/images/products/butterfly-b.jpg" }] },
-      { "title": "Rezidensiyalar və yüksək mərtəbəli binalar", "description": "Mərkəzləşdirilmiş havalandırma və təzyiqləndirmə", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "SEAHORSE", "type": "Bathroom Fans", "image": "/images/products/banyo-fan-2.jpg" }] },
-      { "title": "Kütləvi yaşayış layihələri", "description": "Şaxta havalandırması və dam sorğu sistemləri", "products": [{ "name": "HERON", "type": "Roof Fans", "image": "/images/products/heron-ah.jpg" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] }
+      {
+        "title": "Çoxmənzilli binalar",
+        "description": "Mərkəzləşdirilmiş və ya fərdi təmiz hava və sorğu sistemi",
+        "products": [
+          {
+            "name": "SEAHORSE",
+            "type": "Bathroom Fans",
+            "image": "/images/products/banyo-fan-1.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Villalar və tək tikili evlər",
+        "description": "İstilik bərpalı təmiz hava sistemi",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "BUTTERFLY",
+            "type": "Kitchen Fans",
+            "image": "/images/products/butterfly-b.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Rezidensiyalar və yüksək mərtəbəli binalar",
+        "description": "Mərkəzləşdirilmiş havalandırma və təzyiqləndirmə",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "SEAHORSE",
+            "type": "Bathroom Fans",
+            "image": "/images/products/banyo-fan-2.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Kütləvi yaşayış layihələri",
+        "description": "Şaxta havalandırması və dam sorğu sistemləri",
+        "products": [
+          {
+            "name": "HERON",
+            "type": "Roof Fans",
+            "image": "/images/products/heron-ah.jpg"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Yaşayış havalandırması enerji itkisi yaradırmı?", "a": "İstilik bərpa qurğuları olan sistemlərdə çıxan havadakı enerjinin 90%-ə qədəri bərpa olunur. Bu, təmiz hava təchizatının demək olaraq sıfır enerji itkisi ilə əldə olunduğu deməkdir." },
-      { "q": "Hamam ventilyatoru nə qədər səs çıxarır?", "a": "SEAHORSE seriyası hamam ventilyatorları 25 dB(A)-dan aşağı səs səviyyəsində çox sakit işləyir. Gecə rejimi seçimi səsi daha da azaldır." },
-      { "q": "Mövcud evlərdə sistem quraşdırıla bilərmi?", "a": "Bəli, kanal tələb etməyən fərdi təmiz hava qurğuları və ya kompakt kanal işləri ilə mövcud evlərdə havalandırma quraşdırıla bilər." },
-      { "q": "Filtrlər nə tez-tez dəyişdirilməlidir?", "a": "İstifadə intensivliyi və xarici hava keyfiyyətindən asılı olaraq filtr dəyişimi 3-6 ayda bir tövsiyə olunur. Filtr tıxanması göstəricisi olan modellər mövcuddur." }
+      {
+        "q": "Yaşayış havalandırması enerji itkisi yaradırmı?",
+        "a": "İstilik bərpa qurğuları olan sistemlərdə çıxan havadakı enerjinin 90%-ə qədəri bərpa olunur. Bu, təmiz hava təchizatının demək olaraq sıfır enerji itkisi ilə əldə olunduğu deməkdir."
+      },
+      {
+        "q": "Hamam ventilyatoru nə qədər səs çıxarır?",
+        "a": "SEAHORSE seriyası hamam ventilyatorları 25 dB(A)-dan aşağı səs səviyyəsində çox sakit işləyir. Gecə rejimi seçimi səsi daha da azaldır."
+      },
+      {
+        "q": "Mövcud evlərdə sistem quraşdırıla bilərmi?",
+        "a": "Bəli, kanal tələb etməyən fərdi təmiz hava qurğuları və ya kompakt kanal işləri ilə mövcud evlərdə havalandırma quraşdırıla bilər."
+      },
+      {
+        "q": "Filtrlər nə tez-tez dəyişdirilməlidir?",
+        "a": "İstifadə intensivliyi və xarici hava keyfiyyətindən asılı olaraq filtr dəyişimi 3-6 ayda bir tövsiyə olunur. Filtr tıxanması göstəricisi olan modellər mövcuddur."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Yaşayış havalandırma sistemi axtarırsınız?",
     "finalCtaDesc": "Evinizə uyğun havalandırma həlli və qiymət təklifi üçün heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Yeni nəsil yaşayış evlərində yüksək dərəcədə izolyasiya edilmiş və hava keçirməyən bina qabıqları enerjiyə qənaət edir və təbii hava mübadiləsini əhəmiyyətli dərəcədə azaldır. Bu vəziyyət; Daxili mühitdə CO₂, VOC, radon, nəm, qoxu və kif risklərinin toplanmasına səbəb ola bilər. Məhz buna görə də yaşayış evlərinin ventilyasiyası artıq lüks xüsusiyyət deyil; Sağlam həyat, enerji səmərəliliyi və binanın qorunması üçün zəruri olan mühəndislik sistemidir. Mənzillər, villalar, yaşayış evləri, fərdi evlər, kiçik evlər/prefabrik binalar və ümumi sahələr fərqli hava axını sürətinə, səs səviyyəsinə, quraşdırma sahəsinə və nəzarət ehtiyaclarına malikdir.\n\nNOVVES yaşayış tipli həllər; O, yığcam arxitektura, aşağı səs-küy səviyyəsi, EC motor texnologiyası, istilik bərpası, rütubətə nəzarət edilən əməliyyat və ağıllı ev inteqrasiyasına əsaslanır. KOI kompakt kanal ventilyatorları, CARACAL istilik bərpa cihazları, TIGER kompakt kondisioner qurğuları, HUMMINGBIRD smart EC ventilyatorları, TURTLE izolyasiyalı hüceyrə ventilyatorları, ALPACA hava paylayıcı avadanlığı, SEAHORSE vanna otağı/tualet fanatları, BUTTERFLY mətbəx ventilyatorları və OWL ümumi sahə ventilyatorları; Yaşayış yerlərində sakit, sağlam və enerjiyə qənaət edən mikroiqlim yaratmaq üçün istifadə olunur."
+    }
   },
-
   "marinOffshore": {
     "breadcrumbCurrent": "Dəniz və offshore havalandırması",
     "badge": "Həllər",
@@ -719,30 +2224,72 @@
     "ctaSecondary": "Məhsul kataloqu",
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
-      { "value": "DNV-GL", "label": "Dəniz təsdiqi" },
-      { "value": "IP56", "label": "Qoruma sinfi" },
-      { "value": "SS316", "label": "Material keyfiyyəti" },
-      { "value": "50+", "label": "Tamamlanmış layihə" }
+      {
+        "value": "DNV-GL",
+        "label": "Dəniz təsdiqi"
+      },
+      {
+        "value": "IP56",
+        "label": "Qoruma sinfi"
+      },
+      {
+        "value": "SS316",
+        "label": "Material keyfiyyəti"
+      },
+      {
+        "value": "50+",
+        "label": "Tamamlanmış layihə"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Dəniz mühitində etibarlı havalandırma",
     "whyImportantP1": "Dəniz mühiti duzlu su, yüksək rütubət və aqressiv atmosfer şəraitilə qurudan tətbiqlərdən çox fərqlidir. Standart havalandırma avadanlığı bu şəraitdə tez korroziyaya uğrayır.",
     "whyImportantP2": "NOVVES dəniz havalandırması paslanmayan polad (SS316), xüsusi örtüklər və dəniz təsnifat cəmiyyəti (DNV-GL, Lloyd's, BV) təsdiqləri ilə layihələndirilir. Mührik otaqları, sərnişin məkanları, yük zonaları və xüsusi bölmələrdə etibarlı havalandırma təmin edilir.",
     "steps": [
-      { "label": "Layihə təhlili", "desc": "Gəmi/platform tipi, zona təsnifatı, dəniz standartı tələbləri" },
-      { "label": "Mühəndis layihəsi", "desc": "Ventilyator seçimi, kanal layihəsi, material seçimi, yanğın zonalaşdırması" },
-      { "label": "İstehsal və çatdırılma", "desc": "SS316/xüsusi örtük istehsalı, dəniz sinfi sertifikatlı məhsul çatdırılması" },
-      { "label": "Montaj və istismara qəbul", "desc": "Tərsanə və ya sahə montajı, performans sınağı və sinif təsdiqi" }
+      {
+        "label": "Layihə təhlili",
+        "desc": "Gəmi/platform tipi, zona təsnifatı, dəniz standartı tələbləri"
+      },
+      {
+        "label": "Mühəndis layihəsi",
+        "desc": "Ventilyator seçimi, kanal layihəsi, material seçimi, yanğın zonalaşdırması"
+      },
+      {
+        "label": "İstehsal və çatdırılma",
+        "desc": "SS316/xüsusi örtük istehsalı, dəniz sinfi sertifikatlı məhsul çatdırılması"
+      },
+      {
+        "label": "Montaj və istismara qəbul",
+        "desc": "Tərsanə və ya sahə montajı, performans sınağı və sinif təsdiqi"
+      }
     ],
     "systemLabel": "Sistem arxitekturası",
     "systemTitle": "Həlin komponentləri",
     "systemComponents": [
-      { "title": "Dəniz aksial ventilyatorları", "desc": "Duzlu suya davamlı, SS316 gövdə, dəniz təsnifatı təsdiqli aksial ventilyatorlar." },
-      { "title": "Dəniz sentrifugal ventilyatorları", "desc": "Mührik və yük zonaları üçün yüksək təzyiqli, korroziyaya davamlı sentrifugal ventilyatorlar." },
-      { "title": "Yanğın regulyatorları", "desc": "Dəniz yanğın təhlükəsizliyi standartlarına uyğun avtomatik bağlanan yanğın regulyatorları." },
-      { "title": "Havaşünas barmaqlıqlar", "desc": "Dalğa və yağışdan qorunan hava qəbulu/çıxış barmaqlıqları." },
-      { "title": "Exproof ventilyatorlar (BEAR)", "desc": "Yük tutumu və yanacaq zonaları kimi partlayıcı atmosfer riskli dəniz sahələri üçün." },
-      { "title": "İdarəetmə və avtomatika", "desc": "Dəniz təsdiqli idarə panelləri, yanğın siqnalı inteqrasiyası və uzaqdan monitorinq." }
+      {
+        "title": "Dəniz aksial ventilyatorları",
+        "desc": "Duzlu suya davamlı, SS316 gövdə, dəniz təsnifatı təsdiqli aksial ventilyatorlar."
+      },
+      {
+        "title": "Dəniz sentrifugal ventilyatorları",
+        "desc": "Mührik və yük zonaları üçün yüksək təzyiqli, korroziyaya davamlı sentrifugal ventilyatorlar."
+      },
+      {
+        "title": "Yanğın regulyatorları",
+        "desc": "Dəniz yanğın təhlükəsizliyi standartlarına uyğun avtomatik bağlanan yanğın regulyatorları."
+      },
+      {
+        "title": "Havaşünas barmaqlıqlar",
+        "desc": "Dalğa və yağışdan qorunan hava qəbulu/çıxış barmaqlıqları."
+      },
+      {
+        "title": "Exproof ventilyatorlar (BEAR)",
+        "desc": "Yük tutumu və yanacaq zonaları kimi partlayıcı atmosfer riskli dəniz sahələri üçün."
+      },
+      {
+        "title": "İdarəetmə və avtomatika",
+        "desc": "Dəniz təsdiqli idarə panelləri, yanğın siqnalı inteqrasiyası və uzaqdan monitorinq."
+      }
     ],
     "midCtaTitle": "Dəniz havalandırma layihəniz üçün təklif alın",
     "midCtaDesc": "Peşəkar mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -750,35 +2297,126 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Dəniz sinfi təsdiqi", "desc": "DNV-GL, Lloyd's Register və Bureau Veritas daxil olmaqla təsnifat cəmiyyətləri tərəfindən təsdiqli istehsal." },
-      { "title": "Korroziyaya davamlılıq", "desc": "SS316 paslanmayan polad, epoksi örtük və xüsusi ərintilər ilə uzunömürlü performans." },
-      { "title": "Yanğın təhlükəsizliyi", "desc": "SOLAS və dəniz yanğın standartlarına uyğun regulyator və ventilyator həlləri." },
-      { "title": "Fərdi istehsal imkanı", "desc": "Hər gəmi və platforma layihəsi üçün fərdi ölçü, material və tutum seçimləri." }
+      {
+        "title": "Dəniz sinfi təsdiqi",
+        "desc": "DNV-GL, Lloyd's Register və Bureau Veritas daxil olmaqla təsnifat cəmiyyətləri tərəfindən təsdiqli istehsal."
+      },
+      {
+        "title": "Korroziyaya davamlılıq",
+        "desc": "SS316 paslanmayan polad, epoksi örtük və xüsusi ərintilər ilə uzunömürlü performans."
+      },
+      {
+        "title": "Yanğın təhlükəsizliyi",
+        "desc": "SOLAS və dəniz yanğın standartlarına uyğun regulyator və ventilyator həlləri."
+      },
+      {
+        "title": "Fərdi istehsal imkanı",
+        "desc": "Hər gəmi və platforma layihəsi üçün fərdi ölçü, material və tutum seçimləri."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Harada istifadə olunur?",
     "areasDesc": "Dənizçilik sektorunun bütün havalandırma ehtiyacları üçün həllər.",
     "areas": [
-      { "title": "Sərnişin gəmiləri və bərələr", "description": "Sərnişin və ekipaj zonalarında iqlim idarəetməsi", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }] },
-      { "title": "Yük gəmiləri", "description": "Yük tutumu və mührik otağı havalandırması", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }] },
-      { "title": "Offshore platformalar", "description": "Açıq dəniz platforması havalandırması və exproof sorğu", "products": [{ "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Yaxtalar və mega yaxtalar", "description": "Konfort havalandırması və mührik sorğu", "products": [{ "name": "KOI", "type": "Duct Fans", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] }
+      {
+        "title": "Sərnişin gəmiləri və bərələr",
+        "description": "Sərnişin və ekipaj zonalarında iqlim idarəetməsi",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Yük gəmiləri",
+        "description": "Yük tutumu və mührik otağı havalandırması",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Offshore platformalar",
+        "description": "Açıq dəniz platforması havalandırması və exproof sorğu",
+        "products": [
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Yaxtalar və mega yaxtalar",
+        "description": "Konfort havalandırması və mührik sorğu",
+        "products": [
+          {
+            "name": "KOI",
+            "type": "Duct Fans",
+            "image": "/images/products/koi-cb.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC Fans",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Dəniz ventilyatorları üçün hansı təsnifat təsdiqləri mövcuddur?", "a": "NOVVES dəniz ventilyatorları DNV-GL, Lloyd's Register, Bureau Veritas və ABS daxil olmaqla beynəlxalq dəniz təsnifat cəmiyyətlərinin təsdiqi ilə istehsal oluna bilər." },
-      { "q": "Niyə SS316 material üstünlük verilir?", "a": "SS316 paslanmayan polad yüksək korroziyaya davamlılığı sayəsində duzlu su mühitində standart poladlara nisbətən çox daha uzunömürlü performans verir. Xüsusilə göyərtə və havaşünas zonalar üçün üstünlük verilir." },
-      { "q": "Mührik havalandırması üçün hansı ventilyatorlar istifadə olunur?", "a": "Mührik otaqlarında yüksək temperatur və egzoz qaz şəraitinə uyğun yüksək həcm radial və ya aksial ventilyatorlar istifadə olunur. Exproof tələbat olduqda BEAR seriyası üstünlük verilir." },
-      { "q": "Mövcud gəmilərdə retrofit mümkündürmü?", "a": "Bəli, mövcud gəmilərdə havalandırma sisteminin yenidən işlənməsi və ya tutum artımı üçün retrofit həlləri mövcuddur." }
+      {
+        "q": "Dəniz ventilyatorları üçün hansı təsnifat təsdiqləri mövcuddur?",
+        "a": "NOVVES dəniz ventilyatorları DNV-GL, Lloyd's Register, Bureau Veritas və ABS daxil olmaqla beynəlxalq dəniz təsnifat cəmiyyətlərinin təsdiqi ilə istehsal oluna bilər."
+      },
+      {
+        "q": "Niyə SS316 material üstünlük verilir?",
+        "a": "SS316 paslanmayan polad yüksək korroziyaya davamlılığı sayəsində duzlu su mühitində standart poladlara nisbətən çox daha uzunömürlü performans verir. Xüsusilə göyərtə və havaşünas zonalar üçün üstünlük verilir."
+      },
+      {
+        "q": "Mührik havalandırması üçün hansı ventilyatorlar istifadə olunur?",
+        "a": "Mührik otaqlarında yüksək temperatur və egzoz qaz şəraitinə uyğun yüksək həcm radial və ya aksial ventilyatorlar istifadə olunur. Exproof tələbat olduqda BEAR seriyası üstünlük verilir."
+      },
+      {
+        "q": "Mövcud gəmilərdə retrofit mümkündürmü?",
+        "a": "Bəli, mövcud gəmilərdə havalandırma sisteminin yenidən işlənməsi və ya tutum artımı üçün retrofit həlləri mövcuddur."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Dəniz havalandırma həlli axtarırsınız?",
     "finalCtaDesc": "Gəmi/platforma layihəniz üçün mühəndis layihəsi və qiymət təklifi üçün heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Dəniz və dəniz strukturlarında havalandırma sistemləri; O, yalnız rahatlıq üçün hava mübadiləsini təmin etmək üçün deyil, həm də avadanlığın təhlükəsizliyi, yanğına davamlılıq, korroziyaya nəzarət, partlayıcı atmosferin idarə edilməsi və 24/7 iş fasiləsizliyi üçün nəzərdə tutulmuşdur. Gəminin mühərrik otaqları, generator otaqları, nasos otaqları, mətbəxin egzoz xətləri, yaşayış sahələri, texniki həcmlər, dəniz platformaları, FPSO qurğuları və tərsanə layihələri; Yüksək rütubət, duzlu atmosfer, vibrasiya, məhdud məkan, yüksək temperatur və yanan qazlar risklərinə görə standart HVAC həllərindən çox daha davamlı olan mühəndis sistemləri tələb edir.\n\nNOVVES dəniz və dəniz layihələri üçün xüsusi fan, damper, tüstü evakuasiya, egzoz, təmiz hava və filtrasiya həlləri təklif edir. MARLIN eksenel ventilyatorları yüksək axınlı təmiz hava və egzoz tətbiqlərində istifadə olunur; BEAR Ex-Proof ventilyatorları partlayıcı qaz riski olan təhlükəli ərazilərdə istifadə olunur; NAUTILUS ağır ilbiz ventilyatorları yüksək təzyiqli egzoz və emal havasının ötürülməsində istifadə olunur; HOUND amortizatorları hava axınına nəzarət və sızdırmazlıq tələb edən zonalarda istifadə olunur; DRAGONFLY tüstü çıxarma fanatları yanğın ssenarilərində mühüm rol oynayır.\n\nDəniz mühitində istifadə olunan avadanlıq; Duzlu hava, rütubət, vibrasiya və davamlı iş şəraitinə qarşı xüsusi material, örtük və mühərrik mühafizə sinifləri ilə dizayn edilməlidir. NOVVES həlləri; Sinklənmiş, epoksi örtük, paslanmayan polad, dəniz tipli boya sistemləri, yüksək IP qoruma sinifinə malik mühərriklər, vibrasiya azaldan birləşmələr və yığcam montaj həndəsələri ilə layihəyə xüsusi uyğunlaşdırıla bilər. Dəniz platformalarında və bort tətbiqlərində fan və hava kanallarının yerləşdirilməsi məhdud həcm, texniki xidmətə giriş və təhlükəsizlik tələbləri nəzərə alınmaqla mühəndislik hesablamaları ilə optimallaşdırılır.\n\nNOVVES dəniz və dəniz havalandırma həlləri; Mühərrik otağının soyudulması, işlənmiş qaz və isti havanın boşaldılması, yaşayış sahəsinin rahat ventilyasiyası, mətbəxin egzozu, akkumulyator/enerji otağının havalandırılması, Ex-Proof sahəsinin havasının idarə edilməsi və tək inteqrasiya olunmuş sistem yanaşması ilə yanğın zamanı tüstü nəzarəti kimi müxtəlif ehtiyacları qarşılayır. Beləliklə, gəmilərdə, tərsanələrdə və dəniz layihələrində təhlükəsiz, davamlı, səmərəli və uzunmüddətli hava idarəçiliyi təmin edilir."
+    }
   },
-
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Layihəyə əsaslanan fərdi istehsal",
     "badge": "Həllər",
@@ -789,30 +2427,72 @@
     "ctaSecondary": "Xidmətlərimiz",
     "ctaSecondaryHref": "/hizmetler",
     "trustStrip": [
-      { "value": "3D CAD", "label": "Layihə" },
-      { "value": "FEA", "label": "Struktur təhlili" },
-      { "value": "CNC", "label": "Dəqiq istehsal" },
-      { "value": "75+", "label": "Fərdi layihə" }
+      {
+        "value": "3D CAD",
+        "label": "Layihə"
+      },
+      {
+        "value": "FEA",
+        "label": "Struktur təhlili"
+      },
+      {
+        "value": "CNC",
+        "label": "Dəqiq istehsal"
+      },
+      {
+        "value": "75+",
+        "label": "Fərdi layihə"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Hər layihə unikaldır",
     "whyImportantP1": "Bəzi layihələrdə standart kataloqlarda olmayan xüsusi ölçü, material, temperatura davamlılıq və ya performans tələbləri olur. Yüksək temperatur, korroziv mühit, xüsusi montaj zonaları və ya qeyri-adı axın/təzyiq ehtiyacları standart həllərlə ödənilmir.",
     "whyImportantP2": "NOVVES öz mühəndis heyəti və istehsal müəssisələri ilə layihəyə xüsusi ventilyatorlar, regulyatorlar, kanallar və aksesuarlar istehsal edir. Hər fərdi məhsul 3D CAD layihəsi, FEA struktur təhlili və CFD axın simulyasiyası ilə mühəndis dəstəyi daşıyır.",
     "steps": [
-      { "label": "Tələbin müəyyənləşdirilməsi", "desc": "Fərdi ölçü, material, temperatur, axın sürəti, təzyiq və montaj şəraitləri" },
-      { "label": "Mühəndis layihəsi", "desc": "3D CAD modeləşdirmə, FEA təhlili, CFD simulyasiyası və detal çertyojlar" },
-      { "label": "Prototip və istehsal", "desc": "CNC emal, qaynaq, dinamik balanslama və keyfiyyətə nəzarət" },
-      { "label": "Sınaq və çatdırılma", "desc": "Performans sınağı, vibrasiya ölçümü, sertifikatlaşdırma və çatdırılma" }
+      {
+        "label": "Tələbin müəyyənləşdirilməsi",
+        "desc": "Fərdi ölçü, material, temperatur, axın sürəti, təzyiq və montaj şəraitləri"
+      },
+      {
+        "label": "Mühəndis layihəsi",
+        "desc": "3D CAD modeləşdirmə, FEA təhlili, CFD simulyasiyası və detal çertyojlar"
+      },
+      {
+        "label": "Prototip və istehsal",
+        "desc": "CNC emal, qaynaq, dinamik balanslama və keyfiyyətə nəzarət"
+      },
+      {
+        "label": "Sınaq və çatdırılma",
+        "desc": "Performans sınağı, vibrasiya ölçümü, sertifikatlaşdırma və çatdırılma"
+      }
     ],
     "systemLabel": "İstehsal imkanları",
     "systemTitle": "Nə istehsal edə bilərik?",
     "systemComponents": [
-      { "title": "Fərdi ölçülü ventilyatorlar", "desc": "Standart olmayan diametr, en və tutum dəyərlərində aksial, sentrifugal və qarışıq axın ventilyatorları." },
-      { "title": "Yüksək temperatur ventilyatorları", "desc": "400\u00b0C və üstü davamlı iş tutumu üçün xüsusi materiallar və layihələr." },
-      { "title": "Korroziv mühit ventilyatorları", "desc": "Korroziv qaz/buxar mühitləri üçün paslanmayan polad, titan, FRP və xüsusi örtük seçimləri." },
-      { "title": "Fərdi regulyatorlar və kanallar", "desc": "Standart olmayan ölçü və materialla regulyator, kanal və birləşdirici element istehsalı." },
-      { "title": "Xüsusi montaj həlləri", "desc": "Dar məkan, tavan asılması, platforma və ya vibrasiyadan izolyasiya olunmuş quraşdırmalar üçün fərdi montaj dayaqları." },
-      { "title": "Sınaq və sertifikatlaşdırma", "desc": "Aerodinamik performans sınağı, vibrasiya təhlili və layihəyə xüsusi sertifikat hazırlanması." }
+      {
+        "title": "Fərdi ölçülü ventilyatorlar",
+        "desc": "Standart olmayan diametr, en və tutum dəyərlərində aksial, sentrifugal və qarışıq axın ventilyatorları."
+      },
+      {
+        "title": "Yüksək temperatur ventilyatorları",
+        "desc": "400°C və üstü davamlı iş tutumu üçün xüsusi materiallar və layihələr."
+      },
+      {
+        "title": "Korroziv mühit ventilyatorları",
+        "desc": "Korroziv qaz/buxar mühitləri üçün paslanmayan polad, titan, FRP və xüsusi örtük seçimləri."
+      },
+      {
+        "title": "Fərdi regulyatorlar və kanallar",
+        "desc": "Standart olmayan ölçü və materialla regulyator, kanal və birləşdirici element istehsalı."
+      },
+      {
+        "title": "Xüsusi montaj həlləri",
+        "desc": "Dar məkan, tavan asılması, platforma və ya vibrasiyadan izolyasiya olunmuş quraşdırmalar üçün fərdi montaj dayaqları."
+      },
+      {
+        "title": "Sınaq və sertifikatlaşdırma",
+        "desc": "Aerodinamik performans sınağı, vibrasiya təhlili və layihəyə xüsusi sertifikat hazırlanması."
+      }
     ],
     "midCtaTitle": "Fərdi istehsal layihəniz üçün təklif alın",
     "midCtaDesc": "Mühəndis heyətimiz xüsusi tələblərinizi qiymətləndirəcək.",
@@ -820,35 +2500,126 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Mühəndis dəstəkli", "desc": "3D CAD, FEA və CFD ilə təsdiqlənmiş layihə; layihəyə xüsusi hesabatlar." },
-      { "title": "Öz istehsal müəssisəsi", "desc": "CNC emal, robot qaynaq və dinamik balanslama ilə dəqiq istehsal." },
-      { "title": "Çevik material seçimləri", "desc": "Karbon polad, paslanmayan, alüminium, FRP, titan və xüsusi ərintilər." },
-      { "title": "Sürətli prototipləşdirmə", "desc": "Layihədən prototipə və performans təsdiqinə tez keçid." }
+      {
+        "title": "Mühəndis dəstəkli",
+        "desc": "3D CAD, FEA və CFD ilə təsdiqlənmiş layihə; layihəyə xüsusi hesabatlar."
+      },
+      {
+        "title": "Öz istehsal müəssisəsi",
+        "desc": "CNC emal, robot qaynaq və dinamik balanslama ilə dəqiq istehsal."
+      },
+      {
+        "title": "Çevik material seçimləri",
+        "desc": "Karbon polad, paslanmayan, alüminium, FRP, titan və xüsusi ərintilər."
+      },
+      {
+        "title": "Sürətli prototipləşdirmə",
+        "desc": "Layihədən prototipə və performans təsdiqinə tez keçid."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Hansı layihələrdə istifadə olunur?",
     "areasDesc": "Standart məhsullarla həll edilməyən bütün xüsusi ehtiyaclar üçün layihəyə əsaslanan istehsal.",
     "areas": [
-      { "title": "Sənaye proses obyektləri", "description": "Yüksək temperatur və korroziv qaz mühitləri üçün fərdi ventilyatorlar", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "BEAR", "type": "ATEX Fans", "image": "/images/products/bear-bp.jpg" }] },
-      { "title": "Elektrik stansiyaları", "description": "Fərdi ölçü və tutumlu sorğu və təchizat ventilyatorları", "products": [{ "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Dəniz və offshore layihələri", "description": "Sinif təsdiqli xüsusi material və ölçü tələb edən dəniz ventilyatorları", "products": [{ "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }, { "name": "NAUTILUS", "type": "Industrial Fans", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
-      { "title": "İnfrastruktur və tunel layihələri", "description": "Fərdi diametr və performans dəyərləri ilə tunel ventilyatorları", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] }
+      {
+        "title": "Sənaye proses obyektləri",
+        "description": "Yüksək temperatur və korroziv qaz mühitləri üçün fərdi ventilyatorlar",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "BEAR",
+            "type": "ATEX Fans",
+            "image": "/images/products/bear-bp.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Elektrik stansiyaları",
+        "description": "Fərdi ölçü və tutumlu sorğu və təchizat ventilyatorları",
+        "products": [
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Dəniz və offshore layihələri",
+        "description": "Sinif təsdiqli xüsusi material və ölçü tələb edən dəniz ventilyatorları",
+        "products": [
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          },
+          {
+            "name": "NAUTILUS",
+            "type": "Industrial Fans",
+            "image": "/images/products/nautilus-cif-cidarli.jpg"
+          }
+        ]
+      },
+      {
+        "title": "İnfrastruktur və tunel layihələri",
+        "description": "Fərdi diametr və performans dəyərləri ilə tunel ventilyatorları",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "Fərdi istehsal üçün minimum sifariş miqdarı var?", "a": "Xeyr, NOVVES layihə əsaslı işlədiyi üçün tək ədəd fərdi istehsal sifarişləri də qəbul olunur." },
-      { "q": "Fərdi istehsal müddəti nə qədərdir?", "a": "Məhsul mürəkkəbliyindən asılı olaraq layihə təsdiqindən sonra 4-12 həftə çatdırılma tətbiq olunur. Təcili layihələr üçün sürətləndirilmiş istehsal proqramı mövcuddur." },
-      { "q": "Mövcud ventilyatorun modifikasiyası mümkündürmü?", "a": "Bəli, mövcud ventilyatorlar üçün işçi çarx dəyişimi, qabıq yenilənməsi, mühərrik yüksəltməsi və ya material dəyişikliyi kimi modifikasiya xidmətləri mövcuddur." },
-      { "q": "Hansı sınaq və sertifikatlaşdırma xidmətləri təqdim olunur?", "a": "Aerodinamik performans sınağı (axın, təzyiq, güc), vibrasiya təhlili, səs ölçümü və layihəyə xüsusi sınaq hesabatları hazırlanır. AMCA, ISO və EN standartlarına uyğun sınaq imkanları mövcuddur." }
+      {
+        "q": "Fərdi istehsal üçün minimum sifariş miqdarı var?",
+        "a": "Xeyr, NOVVES layihə əsaslı işlədiyi üçün tək ədəd fərdi istehsal sifarişləri də qəbul olunur."
+      },
+      {
+        "q": "Fərdi istehsal müddəti nə qədərdir?",
+        "a": "Məhsul mürəkkəbliyindən asılı olaraq layihə təsdiqindən sonra 4-12 həftə çatdırılma tətbiq olunur. Təcili layihələr üçün sürətləndirilmiş istehsal proqramı mövcuddur."
+      },
+      {
+        "q": "Mövcud ventilyatorun modifikasiyası mümkündürmü?",
+        "a": "Bəli, mövcud ventilyatorlar üçün işçi çarx dəyişimi, qabıq yenilənməsi, mühərrik yüksəltməsi və ya material dəyişikliyi kimi modifikasiya xidmətləri mövcuddur."
+      },
+      {
+        "q": "Hansı sınaq və sertifikatlaşdırma xidmətləri təqdim olunur?",
+        "a": "Aerodinamik performans sınağı (axın, təzyiq, güc), vibrasiya təhlili, səs ölçümü və layihəyə xüsusi sınaq hesabatları hazırlanır. AMCA, ISO və EN standartlarına uyğun sınaq imkanları mövcuddur."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "Fərdi istehsal ehtiyacınız var?",
     "finalCtaDesc": "Tələblərinizi paylaşın, mühəndis heyətimiz fərdi həll təklifi təqdim etsin.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Müasir memarlıq dizaynlarında, yenidənqurma layihələrində və xüsusi sənaye proseslərində standart havalandırma avadanlığı həmişə kifayət deyil. Mövcud şaft ölçüləri, dar mexaniki otaqlar, akustik məhdudiyyətlər, memarlıq estetik gözləntiləri, gigiyena tələbləri və ya xüsusi material tələbləri; Bu, layihə üçün xüsusi mühəndislik və istehsal yanaşması tələb edir. Bu nöqtədə ventilyasiya cihazının arxitekturaya uyğunlaşması lazım deyil, lakin layihənin fiziki, akustik və əməliyyat ehtiyaclarına uyğun olaraq cihaz yenidən dizayn edilməlidir.\n\nAr-Ge və mühəndislik infrastrukturu ilə NOVVES xüsusi hazırlanmış fanatlar, hüceyrələr, qutular, səsboğucular, amortizatorlar və hava paylayıcı həllər hazırlayır. Yenidənqurma layihələrində, mövcud kanallara, flanşlara, şaftlara və montaj nöqtələrinə tam uyğunlaşan xüsusi dizaynlar hazırlanır; Otellərdə, studiyalarda, konfrans salonlarında və prestij layihələrində aşağı səs səviyyəsi, xüsusi akustik izolyasiya və səsboğucu inteqrasiyası ön plana çıxır. Hündürmərtəbəli binalarda və keçidi çətin olan ərazilərdə modul, sökülə bilən və yüngül çəkili tikinti məhsulları sayəsində montaj prosesi asanlaşdırılır.\n\nPrestij mənzil, lüks arxitektura və görünməz kondisioner proqramlarında NOVVES; O, gizli quraşdırma, xüsusi RAL səth örtükləri, havanın laysız paylanması və memarlıq bütövlüyünə uyğun gələn xüsusi həllər təklif edir. Qida, əczaçılıq və tibb sahələrində layihəyə xas biotəhlükəsizlik və təmizlik tələbləri AISI 304/316 paslanmayan korpus, yuyula bilən gigiyenik dizayn, HEPA filtrləmə və UV-C inteqrasiyası kimi seçimlərlə qarşılanır. Beləliklə, NOVVES xüsusi istehsal həlləri; O, standart məhsulların hüdudlarından kənara çıxır və hər bir layihəyə xas olan, tətbiq oluna bilən və yüksək mühəndislik dəqiqliyi ilə sistemlər yaradır."
+    }
   },
-
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD mühəndis məsləhəti",
     "badge": "Həllər",
@@ -859,30 +2630,72 @@
     "ctaSecondary": "Xidmətlərimiz",
     "ctaSecondaryHref": "/hizmetler/cfd-analizi",
     "trustStrip": [
-      { "value": "3D CFD", "label": "Simulyasiya" },
-      { "value": "ANSYS", "label": "Həll platforması" },
-      { "value": "ISO 7730", "label": "Konfort təhlili" },
-      { "value": "85+", "label": "Tamamlanmış təhlil" }
+      {
+        "value": "3D CFD",
+        "label": "Simulyasiya"
+      },
+      {
+        "value": "ANSYS",
+        "label": "Həll platforması"
+      },
+      {
+        "value": "ISO 7730",
+        "label": "Konfort təhlili"
+      },
+      {
+        "value": "85+",
+        "label": "Tamamlanmış təhlil"
+      }
     ],
     "whyImportantLabel": "Niyə vacibdir",
     "whyImportantTitle": "Qurmadan əvvəl simulyasiya edin",
     "whyImportantP1": "Quraşdırmadan əvvəl havalandırma və tüstü sorğu sistemlərinin real performansını bilmək bahalı səhvlərin qarşısını alır və normativ uyğunluğun sənədləşdirilməsinə imkan verir. CFD təhlili 3D kompüter simulyasiyası ilə hava axını, temperatur paylanması və tüstünün yayılmasını vizuallaşdırır.",
     "whyImportantP2": "NOVVES CFD heyəti ANSYS Fluent və OpenFOAM platformalarından istifadə edərək layihəyə xüsusi simulyasiyalar aparır. Jet ventilyator yerləşməsi, tüstü sorğu müddəti, konfort təhlili, istilik yükü hesablaması və sistem optimallaşdırması üçün mühəndis dəstəyi təqdim olunur.",
     "steps": [
-      { "label": "Layihənin müəyyənləşdirilməsi", "desc": "Geometriya, sərhəd şərtləri, yanğın ssenarisi və ya havalandırma tələbləri" },
-      { "label": "3D model və mesh", "desc": "CAD geometriyası yaradılması və ya idxal, hesablama mesh yaradılması" },
-      { "label": "Simulyasiya və həll", "desc": "RANS/LES turbulentlik modelləri ilə axın, temperatur və tüstü həlli" },
-      { "label": "Hesabat və optimallaşdırma", "desc": "Nəticələrin vizuallaşdırılması, performans qiymətləndirməsi, təkmilləşdirmə tövsiyələri" }
+      {
+        "label": "Layihənin müəyyənləşdirilməsi",
+        "desc": "Geometriya, sərhəd şərtləri, yanğın ssenarisi və ya havalandırma tələbləri"
+      },
+      {
+        "label": "3D model və mesh",
+        "desc": "CAD geometriyası yaradılması və ya idxal, hesablama mesh yaradılması"
+      },
+      {
+        "label": "Simulyasiya və həll",
+        "desc": "RANS/LES turbulentlik modelləri ilə axın, temperatur və tüstü həlli"
+      },
+      {
+        "label": "Hesabat və optimallaşdırma",
+        "desc": "Nəticələrin vizuallaşdırılması, performans qiymətləndirməsi, təkmilləşdirmə tövsiyələri"
+      }
     ],
     "systemLabel": "Xidmət sahələri",
     "systemTitle": "CFD nə edə bilər?",
     "systemComponents": [
-      { "title": "Tüstü sorğu simulyasiyası", "desc": "Yanğın ssenarilərində tüstünün yayılması, görünürlük məsafəsi və təxliyə müddəti təhlili." },
-      { "title": "Jet ventilyator yerləşməsinin optimallaşdırılması", "desc": "Avtodayanacaqlarda və tunellərdə simulyasiya vasitəsilə jet ventilyator sayı, mövqeyi və istiqamət bucağının müəyyənləşdirilməsi." },
-      { "title": "Konfort havalandırması təhlili", "desc": "Ofislərdə, alış-veriş mərkəzlərində və toplantı zonalarında temperatur, hava sürəti və PMV/PPD konfort qiymətləndirməsi." },
-      { "title": "İstilik ötürülməsi təhlili", "desc": "Transformator otaqları, məlumat mərkəzləri və sənaye obyektlərində temperatur paylanması simulyasiyası." },
-      { "title": "Təmiz otaq hava axını", "desc": "Təmiz otaqlarda hissə paylanması, laminar axın təsdiqi və təzyiq kaskad təhlili." },
-      { "title": "Sistem optimallaşdırması", "desc": "Mövcud havalandırma sistemlərinin CFD ilə nəzərdən keçirilməsi və performans təkmilləşdirmə tövsiyələri." }
+      {
+        "title": "Tüstü sorğu simulyasiyası",
+        "desc": "Yanğın ssenarilərində tüstünün yayılması, görünürlük məsafəsi və təxliyə müddəti təhlili."
+      },
+      {
+        "title": "Jet ventilyator yerləşməsinin optimallaşdırılması",
+        "desc": "Avtodayanacaqlarda və tunellərdə simulyasiya vasitəsilə jet ventilyator sayı, mövqeyi və istiqamət bucağının müəyyənləşdirilməsi."
+      },
+      {
+        "title": "Konfort havalandırması təhlili",
+        "desc": "Ofislərdə, alış-veriş mərkəzlərində və toplantı zonalarında temperatur, hava sürəti və PMV/PPD konfort qiymətləndirməsi."
+      },
+      {
+        "title": "İstilik ötürülməsi təhlili",
+        "desc": "Transformator otaqları, məlumat mərkəzləri və sənaye obyektlərində temperatur paylanması simulyasiyası."
+      },
+      {
+        "title": "Təmiz otaq hava axını",
+        "desc": "Təmiz otaqlarda hissə paylanması, laminar axın təsdiqi və təzyiq kaskad təhlili."
+      },
+      {
+        "title": "Sistem optimallaşdırması",
+        "desc": "Mövcud havalandırma sistemlərinin CFD ilə nəzərdən keçirilməsi və performans təkmilləşdirmə tövsiyələri."
+      }
     ],
     "midCtaTitle": "CFD təhlili layihəniz üçün təklif alın",
     "midCtaDesc": "CFD mühəndis heyətimiz ən qısa zamanda sizə cavab verəcək.",
@@ -890,33 +2703,124 @@
     "advantagesLabel": "Niyə NOVVES",
     "advantagesTitle": "Əsas üstünlüklər",
     "advantages": [
-      { "title": "Təcrübəli CFD heyəti", "desc": "Havalandırma və yanğın mühəndisliyində ixtisaslaşmış CFD analitikləri heyəti." },
-      { "title": "Sənaye aparıcı proqramları", "desc": "ANSYS Fluent, OpenFOAM və FDS platformaları ilə etibarlı simulyasiya nəticələri." },
-      { "title": "Normativ uyğunluq", "desc": "EN 12101, ASHRAE və NFPA standartlarına uyğun təhlil və hesabat." },
-      { "title": "Layihə inteqrasiyası", "desc": "Tətbiq təminatı üçün mühəndislik prosesinə birbaşa inteqrasiya olunmuş CFD nəticələri." }
+      {
+        "title": "Təcrübəli CFD heyəti",
+        "desc": "Havalandırma və yanğın mühəndisliyində ixtisaslaşmış CFD analitikləri heyəti."
+      },
+      {
+        "title": "Sənaye aparıcı proqramları",
+        "desc": "ANSYS Fluent, OpenFOAM və FDS platformaları ilə etibarlı simulyasiya nəticələri."
+      },
+      {
+        "title": "Normativ uyğunluq",
+        "desc": "EN 12101, ASHRAE və NFPA standartlarına uyğun təhlil və hesabat."
+      },
+      {
+        "title": "Layihə inteqrasiyası",
+        "desc": "Tətbiq təminatı üçün mühəndislik prosesinə birbaşa inteqrasiya olunmuş CFD nəticələri."
+      }
     ],
     "areasLabel": "Tətbiq sahələri",
     "areasTitle": "Hansı layihələrdə istifadə olunur?",
     "areasDesc": "CFD təhlili tələb edən bütün havalandırma və istilik ötürülməsi layihələri üçün məsləhət xidmətləri.",
     "areas": [
-      { "title": "Bağlı avtodayanacaq layihələri", "description": "Jet ventilyator yerləşməsi və CO/tüstü sorğu simulyasiyası", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Dampers", "image": "/images/products/hound-al.png" }] },
-      { "title": "Tunel havalandırması layihələri", "description": "Yanğın ssenarisi və hava sürəti təhlili", "products": [{ "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Axial Fans", "image": "/images/products/marlin.png" }] },
-      { "title": "Məlumat mərkəzi soyutması", "description": "Şkaf səviyyəsində temperatur paylanması və hotspot təhlili", "products": [{ "name": "TIGER", "type": "Air Handling Units", "image": "/images/products/tiger-main.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fans", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Çoxmərtəbəli binalarda tüstü idarəetməsi", "description": "Pilləkən qəfəsi təzyiqləndirməsi və tüstü zonalaşdırması simulyasiyası", "products": [{ "name": "TURTLE", "type": "Cellular Fans", "image": "/images/products/turtle-a.jpg" }, { "name": "DRAGONFLY", "type": "Smoke & Heat Extraction Fans", "image": "/images/products/dragonfly-c.png" }] }
+      {
+        "title": "Bağlı avtodayanacaq layihələri",
+        "description": "Jet ventilyator yerləşməsi və CO/tüstü sorğu simulyasiyası",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "HOUND",
+            "type": "Dampers",
+            "image": "/images/products/hound-al.png"
+          }
+        ]
+      },
+      {
+        "title": "Tunel havalandırması layihələri",
+        "description": "Yanğın ssenarisi və hava sürəti təhlili",
+        "products": [
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          },
+          {
+            "name": "MARLIN",
+            "type": "Axial Fans",
+            "image": "/images/products/marlin.png"
+          }
+        ]
+      },
+      {
+        "title": "Məlumat mərkəzi soyutması",
+        "description": "Şkaf səviyyəsində temperatur paylanması və hotspot təhlili",
+        "products": [
+          {
+            "name": "TIGER",
+            "type": "Air Handling Units",
+            "image": "/images/products/tiger-main.jpg"
+          },
+          {
+            "name": "HUMMINGBIRD",
+            "type": "EC Fans",
+            "image": "/images/products/hummingbird-drb-ec.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Çoxmərtəbəli binalarda tüstü idarəetməsi",
+        "description": "Pilləkən qəfəsi təzyiqləndirməsi və tüstü zonalaşdırması simulyasiyası",
+        "products": [
+          {
+            "name": "TURTLE",
+            "type": "Cellular Fans",
+            "image": "/images/products/turtle-a.jpg"
+          },
+          {
+            "name": "DRAGONFLY",
+            "type": "Smoke & Heat Extraction Fans",
+            "image": "/images/products/dragonfly-c.png"
+          }
+        ]
+      }
     ],
     "faqLabel": "FAQ",
     "faqTitle": "Tez-tez verilən suallar",
     "faqItems": [
-      { "q": "CFD təhlili nə qədər çəkir?", "a": "Layihənin mürəkkəbliyindən asılı olaraq 1-4 həftə çəkir. Sadə tək ssenarili təhlillər qısadır, çoxlu yanğın ssenariləri və ya optimallaşdırma işləri daha uzun çəkir." },
-      { "q": "CFD təhlili üçün hansı məlumat lazımdır?", "a": "Memarlıq planları (DWG/Revit), ventilyator/barmaqlıq yerləşməsi, iş şəraiti (temperatur, axın sürəti və s.) və tətbiq olunduqda yanğın ssenarisi tərifləri tələb olunur." },
-      { "q": "CFD hesabatı rəsmi sənəd kimi qəbul olunur?", "a": "CFD hesabatı bələdiyyə və yanğından mühafizə təsdiq proseslərində dəstəkləyici mühəndislik sənədi kimi istifadə olunur. Hər layihə üçün imzalı və möhürlü hesabat təqdim olunur." },
-      { "q": "Yalnız CFD təhlili xidməti ala bilərəmmi?", "a": "Bəli, NOVVES həmçinin müstəqil CFD məsləhət xidmətləri təqdim edir. Ventilyator və avadanlıq satışına bağlı olmadan simulyasiya və hesabat xidmətləri əldə etmək mümkündür." }
+      {
+        "q": "CFD təhlili nə qədər çəkir?",
+        "a": "Layihənin mürəkkəbliyindən asılı olaraq 1-4 həftə çəkir. Sadə tək ssenarili təhlillər qısadır, çoxlu yanğın ssenariləri və ya optimallaşdırma işləri daha uzun çəkir."
+      },
+      {
+        "q": "CFD təhlili üçün hansı məlumat lazımdır?",
+        "a": "Memarlıq planları (DWG/Revit), ventilyator/barmaqlıq yerləşməsi, iş şəraiti (temperatur, axın sürəti və s.) və tətbiq olunduqda yanğın ssenarisi tərifləri tələb olunur."
+      },
+      {
+        "q": "CFD hesabatı rəsmi sənəd kimi qəbul olunur?",
+        "a": "CFD hesabatı bələdiyyə və yanğından mühafizə təsdiq proseslərində dəstəkləyici mühəndislik sənədi kimi istifadə olunur. Hər layihə üçün imzalı və möhürlü hesabat təqdim olunur."
+      },
+      {
+        "q": "Yalnız CFD təhlili xidməti ala bilərəmmi?",
+        "a": "Bəli, NOVVES həmçinin müstəqil CFD məsləhət xidmətləri təqdim edir. Ventilyator və avadanlıq satışına bağlı olmadan simulyasiya və hesabat xidmətləri əldə etmək mümkündür."
+      }
     ],
     "finalCtaLabel": "Layihəniz üçün",
     "finalCtaTitle": "CFD təhlilinə ehtiyacınız var?",
     "finalCtaDesc": "Layihənin müəyyənləşdirilməsi, simulyasiya və qiymət təklifi üçün CFD mühəndis heyətimizlə əlaqə saxlayın.",
     "finalCtaPhone": "+90 216 467 47 52",
-    "finalCtaButton": "Təklif sorğu edin"
+    "finalCtaButton": "Təklif sorğu edin",
+    "library": {
+      "heroBadge": null,
+      "sidebar": {
+        "components": [],
+        "related": []
+      },
+      "bannerDescription": "Müasir yanğın və ventilyasiya layihələrində sistemin işini yalnız standart hesablamalarla yoxlamaq çox vaxt kifayət deyil. Bağlı dayanacaqlarda, tunellərdə, metro stansiyalarında, hava limanlarında, ticarət mərkəzlərində, stadionlarda və böyük həcmli tikililərdə hava axını; Memarlıq maneələrinə, şaftların yerləşdiyi yerlərə, reaktiv fan yerləşdirmələrinə, tüstü təbəqələşməsinə və yanğın ssenarilərinə görə kompleks şəkildə davranır. Buna görə CFD analizi, performansa əsaslanan dizayn və ssenari əsaslı mühəndislik yanaşması; O, həm həyat təhlükəsizliyi, həm də investisiya xərclərinin düzgün optimallaşdırılması baxımından mühüm rol oynayır.\n\nNOVVES layihələrə təkcə məhsul tədarükçüsü kimi deyil, həm də mühəndislik həlləri tərəfdaşı kimi yanaşır. Reaktiv fan yerləşdirmə, CO diffuziya simulyasiyası, tüstüdən evakuasiya ssenarisi, tunel kritik sürət təhlili, yanğınsöndürmə idarəsinin təsdiq faylı, yanğın mühəndisliyi dəstəyi, texniki spesifikasiyalar və CAD-dəstəklənən sistem tərtibatı kimi xidmətlərlə layihənin konsepsiyadan təsdiqə qədər təhlükəsiz irəliləyişini təmin edir. DRAGONFLY, HUND, REMORA, MARLIN, Pələng və Tısbağa məhsul ailələri; O, CFD tərəfindən təsdiqlənmiş sistem dizaynlarının bir hissəsi kimi layihəyə inteqrasiya olunub."
+    }
   }
-
 }

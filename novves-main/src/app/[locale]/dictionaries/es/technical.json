@@ -1,7 +1,7 @@
 {
   "blog": {
     "meta": {
-      "title": "Artículos Técnicos | Novves",
+      "title": "Artículos Técnicos | Novios",
       "description": "Artículos técnicos NOVVES - cambios regulatorios, artículos técnicos de la industria."
     },
     "breadcrumb": {
@@ -47,7 +47,7 @@
   },
   "dokumanKutuphanesi": {
     "meta": {
-      "title": "Biblioteca de documentos | Novves",
+      "title": "Biblioteca de documentos | Novios",
       "description": "Biblioteca de documentos NOVVES: catálogos, fichas técnicas y hojas de especificaciones."
     },
     "breadcrumb": {
@@ -89,11 +89,147 @@
       "title": "¿Necesita un documento técnico?",
       "subtitle": "Contáctenos para obtener el catálogo, ficha técnica o hoja de especificaciones que necesita.",
       "contactForm": "Formulario de contacto"
+    },
+    "library": {
+      "brandTitle": "ARCHIVO TÉCNICO NOVVES",
+      "brandSubtitle": "Archivo Técnico",
+      "nav": {
+        "dashboard": "Panel",
+        "inventory": "Inventario",
+        "compliance": "Cumplimiento",
+        "audit": "Auditoría"
+      },
+      "sidebar": {
+        "libraryName": "Biblioteca Novèves",
+        "libraryTag": "Repositorio técnico",
+        "uploadAsset": "Cargar recurso",
+        "hierarchy": "Jerarquía",
+        "collapseSidebar": "Contraer barra lateral",
+        "expandSidebar": "Expandir barra lateral",
+        "tree": {
+          "documentLibrary": "Biblioteca de documentos",
+          "catalogs": "Catálogos",
+          "dataSheets": "Hojas de datos",
+          "brochures": "Folletos",
+          "usageManuals": "Manuales de uso y mantenimiento",
+          "certifications": "Certificados y cumplimiento",
+          "cadBim": "CAD / BIM / Dibujos Técnicos",
+          "training": "Centro de formación",
+          "troubleshooting": "Solución de problemas",
+          "testPerformance": "Datos de prueba y rendimiento",
+          "energyEfficiency": "Eficiencia Energética"
+        }
+      },
+      "searchPlaceholder": "Busque en el archivo técnico, números CAD o palabras clave...",
+      "table": {
+        "category": "Categoría (IA)",
+        "documentNo": "Número de documento",
+        "documentName": "Nombre del documento",
+        "status": "Estado",
+        "statusActive": "Activo",
+        "statusPassive": "Pasivo",
+        "statusCritical": "Crítico",
+        "statusCurrent": "Actual",
+        "statusApproved": "Aprobado",
+        "statusVideo": "Video"
+      },
+      "widgets": {
+        "emergencyTitle": "Soporte de emergencia para fallas",
+        "emergencyText": "Utilice el panel de solución de problemas para encontrar soluciones rápidas para fallas críticas del sistema.",
+        "emergencyCta": "Abrir guía de soluciones",
+        "complianceLabel": "Tasa de cumplimiento",
+        "complianceValue": "98%",
+        "efficiencyLabel": "Clase de eficiencia",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Detalles del activo",
+        "previewTag": "PREVIEW",
+        "docSummary": "Resumen del documento",
+        "fileFormat": "Formato",
+        "revision": "Revisión",
+        "lastModified": "Última actualización",
+        "revisionLogs": "Historial de revisiones",
+        "shareDocument": "Compartir",
+        "shareLink": "Enlace",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "Correo electrónico",
+        "secureDownload": "Descarga segura",
+        "secureDownloadNote": "Algunos documentos técnicos pueden requerir autorización y una contraseña.",
+        "downloadDocument": "Descargar Documento",
+        "close": "Cerrar panel"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Sistemas Industriales. División de Documentación Técnica.",
+        "privacy": "política de privacidad",
+        "terms": "Términos de servicio",
+        "security": "Auditoría de seguridad"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Ajustes de texto menores",
+        "minorWhen": "Ayer a las 14:20",
+        "initialUpload": "Carga inicial",
+        "initialWhen": "10 de octubre de 2024"
+      },
+      "emptyResults": "Ningún documento coincide con su búsqueda.",
+      "documents": [
+        {
+          "id": "gato-nv-2024-01",
+          "category": "Catálogos",
+          "code": "CAT-NV-2024-01",
+          "title": "Catálogo de productos principal v2",
+          "status": "activo",
+          "highlight": true,
+          "treeCategory": "Catálogos"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Solución de problemas",
+          "code": "TS-FAN-003",
+          "title": "Guía de solución de problemas de alta vibración",
+          "status": "crítico",
+          "criticalTitle": true,
+          "treeCategory": "Solución de problemas"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD/BIM",
+          "code": "BIM-AXL-315",
+          "title": "Modelo 3D de Revit serie 315",
+          "status": "actual",
+          "treeCategory": "CAD / BIM / Dibujos Técnicos"
+        },
+        {
+          "id": "efectivo-ec-2024",
+          "category": "Eficiencia Energética",
+          "code": "EFF-EC-2024",
+          "title": "Análisis LCC de motores EC",
+          "status": "activo",
+          "treeCategory": "Eficiencia Energética"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Certificados",
+          "code": "CE-12101-3-2024",
+          "title": "Certificado de conformidad EN 12101-3",
+          "status": "aprobado",
+          "treeCategory": "Certificados y cumplimiento"
+        },
+        {
+          "id": "web-24-05",
+          "category": "Centro de formación",
+          "code": "WEB-24-05",
+          "title": "Grabación de seminarios web sobre técnicas de montaje",
+          "status": "video",
+          "highlight": true,
+          "treeCategory": "Centro de formación"
+        }
+      ]
     }
   },
   "fanSecici": {
     "meta": {
-      "title": "Selector de ventilador | Novves",
+      "title": "Selector de ventilador | Novios",
       "description": "NOVVES herramientas online de selección de ventiladores y equipos."
     },
     "breadcrumb": {
@@ -139,7 +275,7 @@
   },
   "patentlerimiz": {
     "meta": {
-      "title": "Nuestras Patentes | Novves",
+      "title": "Nuestras Patentes | Novios",
       "description": "NOVVES patentes y tecnologías registradas."
     },
     "breadcrumb": {

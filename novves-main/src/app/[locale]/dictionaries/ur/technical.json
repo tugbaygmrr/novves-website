@@ -89,6 +89,142 @@
       "title": "ایک تکنیکی دستاویز کی ضرورت ہے؟",
       "subtitle": "کیٹلاگ، تکنیکی ڈیٹا شیٹ یا اسپیک شیٹ کے لیے ہم سے رابطہ کریں جس کی آپ کو ضرورت ہے۔",
       "contactForm": "رابطہ فارم"
+    },
+    "library": {
+      "brandTitle": "NOVVES تکنیکی آرکائیو",
+      "brandSubtitle": "تکنیکی آرکائیو",
+      "nav": {
+        "dashboard": "ڈیش بورڈ",
+        "inventory": "انوینٹری",
+        "compliance": "تعمیل",
+        "audit": "آڈٹ"
+      },
+      "sidebar": {
+        "libraryName": "نوویس لائبریری",
+        "libraryTag": "تکنیکی ذخیرہ",
+        "uploadAsset": "اثاثہ اپ لوڈ کریں۔",
+        "hierarchy": "درجہ بندی",
+        "collapseSidebar": "سائڈبار کو سکیڑیں۔",
+        "expandSidebar": "سائڈبار کو پھیلائیں۔",
+        "tree": {
+          "documentLibrary": "دستاویز لائبریری",
+          "catalogs": "کیٹلاگ",
+          "dataSheets": "ڈیٹا شیٹس",
+          "brochures": "بروشرز",
+          "usageManuals": "استعمال اور دیکھ بھال کے دستورالعمل",
+          "certifications": "سرٹیفکیٹ اور تعمیل",
+          "cadBim": "CAD / BIM / تکنیکی ڈرائنگ",
+          "training": "ٹریننگ سینٹر",
+          "troubleshooting": "خرابی کا سراغ لگانا",
+          "testPerformance": "ٹیسٹ اور کارکردگی کا ڈیٹا",
+          "energyEfficiency": "توانائی کی کارکردگی"
+        }
+      },
+      "searchPlaceholder": "ٹیکنیکل آرکائیو، CAD نمبرز، یا مطلوبہ الفاظ تلاش کریں…",
+      "table": {
+        "category": "زمرہ (IA)",
+        "documentNo": "دستاویز نمبر",
+        "documentName": "دستاویز کا نام",
+        "status": "حیثیت",
+        "statusActive": "فعال",
+        "statusPassive": "غیر فعال",
+        "statusCritical": "تنقیدی",
+        "statusCurrent": "کرنٹ",
+        "statusApproved": "منظور شدہ",
+        "statusVideo": "ویڈیو"
+      },
+      "widgets": {
+        "emergencyTitle": "ایمرجنسی فالٹ سپورٹ",
+        "emergencyText": "نظام کی اہم خرابیوں کے فوری حل تلاش کرنے کے لیے ٹربل شوٹنگ پینل کا استعمال کریں۔",
+        "emergencyCta": "حل گائیڈ کھولیں۔",
+        "complianceLabel": "تعمیل کی شرح",
+        "complianceValue": "98%",
+        "efficiencyLabel": "کارکردگی کی کلاس",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "اثاثوں کی تفصیلات",
+        "previewTag": "PREVIEW",
+        "docSummary": "دستاویز کا خلاصہ",
+        "fileFormat": "فارمیٹ",
+        "revision": "نظر ثانی",
+        "lastModified": "آخری تازہ کاری",
+        "revisionLogs": "نظرثانی کی تاریخ",
+        "shareDocument": "شیئر کریں۔",
+        "shareLink": "لنک",
+        "shareWhatsapp": "واٹس ایپ",
+        "shareEmail": "ای میل",
+        "secureDownload": "محفوظ ڈاؤن لوڈ",
+        "secureDownloadNote": "کچھ تکنیکی دستاویزات کے لیے اجازت اور پاس ورڈ کی ضرورت پڑ سکتی ہے۔",
+        "downloadDocument": "دستاویز ڈاؤن لوڈ کریں۔",
+        "close": "پینل بند کریں۔"
+      },
+      "footer": {
+        "copyright": "© 2024 نوویس انڈسٹریل سسٹمز۔ تکنیکی دستاویزی ڈویژن۔",
+        "privacy": "رازداری کی پالیسی",
+        "terms": "سروس کی شرائط",
+        "security": "سیکیورٹی آڈٹ"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "معمولی متن کی ایڈجسٹمنٹ",
+        "minorWhen": "کل 14:20 بجے",
+        "initialUpload": "ابتدائی اپ لوڈ",
+        "initialWhen": "10 اکتوبر 2024"
+      },
+      "emptyResults": "کوئی دستاویز آپ کی تلاش سے مماثل نہیں ہے۔",
+      "documents": [
+        {
+          "id": "cat-nv-2024-01",
+          "category": "کیٹلاگ",
+          "code": "CAT-NV-2024-01",
+          "title": "مین پروڈکٹ کیٹلاگ v2",
+          "status": "فعال",
+          "highlight": true,
+          "treeCategory": "کیٹلاگ"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "خرابی کا سراغ لگانا",
+          "code": "TS-FAN-003",
+          "title": "ہائی وائبریشن ٹربل شوٹنگ گائیڈ",
+          "status": "تنقیدی",
+          "criticalTitle": true,
+          "treeCategory": "خرابی کا سراغ لگانا"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD/BIM",
+          "code": "BIM-AXL-315",
+          "title": "315 سیریز کا 3D Revit ماڈل",
+          "status": "موجودہ",
+          "treeCategory": "CAD / BIM / تکنیکی ڈرائنگ"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "توانائی کی کارکردگی",
+          "code": "EFF-EC-2024",
+          "title": "EC موٹر LCC تجزیہ",
+          "status": "فعال",
+          "treeCategory": "توانائی کی کارکردگی"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "سرٹیفکیٹس",
+          "code": "CE-12101-3-2024",
+          "title": "EN 12101-3 مطابقت کا سرٹیفکیٹ",
+          "status": "منظور شدہ",
+          "treeCategory": "سرٹیفکیٹ اور تعمیل"
+        },
+        {
+          "id": "web-24-05",
+          "category": "ٹریننگ سینٹر",
+          "code": "WEB-24-05",
+          "title": "اسمبلی تکنیک ویبینار ریکارڈنگ",
+          "status": "ویڈیو",
+          "highlight": true,
+          "treeCategory": "ٹریننگ سینٹر"
+        }
+      ]
     }
   },
   "fanSecici": {

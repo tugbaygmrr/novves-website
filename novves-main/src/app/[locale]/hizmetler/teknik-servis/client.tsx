@@ -1,32 +1,70 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import {
+  HizmetlerDetailRoot,
+} from "@/components/hizmetler/hizmetler-detail-root";
+import {
+  HizmetlerFeatureGrid,
+  HizmetlerPageCard,
+  HizmetlerPageCta,
+  HizmetlerPageHero,
+  HizmetlerPageSection,
+  HizmetlerSteps,
+} from "@/components/hizmetler/hizmetler-page-ui";
+
+type ServiceTypeItem = string | { title: string; desc: string };
 
 type TeknikServisDict = {
   breadcrumb: { home: string; services: string; current: string };
-  hero: { badge: string; titlePart1: string; titleHighlight: string; subtitle: string; weekdays: string; emailSupport: string };
-  intro: string;
-  serviceTypes: { sectionLabel: string; title: string; items: string[] };
-  form: {
-    sectionLabel: string; title: string; description: string;
-    features: { label: string; desc: string }[];
-    labels: { name: string; company: string; phone: string; email: string; subject: string; message: string };
-    submit: string; successTitle: string; successMessage: string;
+  hero: {
+    badge: string;
+    titlePart1: string;
+    titleHighlight: string;
+    subtitle: string;
+    imageSrc?: string;
+    weekdays: string;
+    emailSupport: string;
   };
+  intro: string | string[];
+  serviceTypes: { sectionLabel: string; title: string; items: ServiceTypeItem[] };
+  process?: { sectionLabel: string; title: string; items: { title: string; desc: string }[] };
+  whyNovves?: { sectionLabel: string; title: string; items: { title: string; text: string }[] };
+  form: {
+    sectionLabel: string;
+    title: string;
+    subtitle?: string;
+    description: string;
+    helperIntro?: string;
+    helperFields?: string[];
+    features: { label: string; desc: string }[];
+    labels: {
+      name: string;
+      company: string;
+      phone: string;
+      email: string;
+      projectName?: string;
+      productModel?: string;
+      serialNumber?: string;
+      urgency?: string;
+      location?: string;
+      subject?: string;
+      message: string;
+    };
+    submit: string;
+    successTitle: string;
+    successMessage: string;
+  };
+  cta?: { sectionLabel: string; title: string; subtitle?: string; ctaButton?: string };
 };
-
-const serviceIcons = [
-  "M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.049.58.025 1.193-.14 1.743",
-  "M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z",
-  "M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5",
-  "M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z",
-  "M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z",
-];
 
 const inputClass =
   "w-full rounded-lg border border-ink/10 bg-[#fbf9f3] px-4 py-3 text-sm text-secondary placeholder:text-secondary/25 outline-none transition-all duration-200 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/10";
+
+function introParagraphs(intro: string | string[]): string[] {
+  if (typeof intro === "string") return [intro];
+  return intro;
+}
 
 export function TeknikServisClient({ dict, locale }: { dict: TeknikServisDict; locale: string }) {
   const t = dict;
@@ -35,14 +73,20 @@ export function TeknikServisClient({ dict, locale }: { dict: TeknikServisDict; l
     company: "",
     phone: "",
     email: "",
+    projectName: "",
+    productModel: "",
+    serialNumber: "",
+    urgency: "",
+    location: "",
     subject: "",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
 
-  function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) {
+  const paragraphs = introParagraphs(t.intro);
+  const hasExtendedForm = Boolean(t.form.labels.projectName);
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
@@ -53,124 +97,102 @@ export function TeknikServisClient({ dict, locale }: { dict: TeknikServisDict; l
   }
 
   return (
-    <main>
-      {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[540px] items-end overflow-hidden">
-        <Image src="/images/page-hero/cozumler-main.jpg" alt="" fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-[#4e525c]/28" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/80 to-[#2f3440]/94" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
+    <HizmetlerDetailRoot>
+      <HizmetlerPageHero
+        badge={t.hero.badge}
+        titlePart1={t.hero.titlePart1}
+        titleHighlight={t.hero.titleHighlight}
+        subtitle={t.hero.subtitle}
+        imageSrc={t.hero.imageSrc ?? "/images/page-hero/cozumler-main.jpg"}
+      />
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-36">
-          <nav className="mb-8 flex items-center gap-2 text-xs text-white/40">
-            <Link href={`/${locale}`} className="transition-colors hover:text-white/70">{t.breadcrumb.home}</Link>
-            <span>/</span>
-            <Link href={`/${locale}/hizmetler/teknik-servis`} className="transition-colors hover:text-white/70">{t.breadcrumb.services}</Link>
-            <span>/</span>
-            <span className="text-white/60">{t.breadcrumb.current}</span>
-          </nav>
-
-          <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
-            </div>
-            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
-              {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
-            </h1>
-            <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
-              {t.hero.subtitle}
-            </p>
-          </div>
-
-          {/* Quick contact strip */}
-          <div className="mt-8 flex flex-wrap gap-6 border border-white/10 bg-dark/40 px-6 py-4 backdrop-blur-sm sm:mt-10">
-            <a href="tel:+902164674752" className="group flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-white">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.05] ring-1 ring-white/[0.1] transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/30">
-                <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                </svg>
-              </span>
-              <div>
-                <span className="block font-semibold">+90 216 467 47 52</span>
-                <span className="text-[11px] text-white/30">{t.hero.weekdays}</span>
-              </div>
+      <HizmetlerPageSection>
+        <HizmetlerPageCard flat>
+          <div className="flex flex-wrap gap-8 border-b border-sand-300/50 pb-6">
+            <a href="tel:+902164674752" className="text-sm text-hz-on-surface-variant hover:text-hz-secondary">
+              <span className="block font-bold text-hz-on-surface">+90 216 467 47 52</span>
+              <span className="text-xs">{t.hero.weekdays}</span>
             </a>
-            <a href="mailto:info@novves.com" className="group flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-white">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.05] ring-1 ring-white/[0.1] transition-all duration-300 group-hover:bg-primary/20 group-hover:ring-primary/30">
-                <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                </svg>
-              </span>
-              <div>
-                <span className="block font-semibold">info@novves.com</span>
-                <span className="text-[11px] text-white/30">{t.hero.emailSupport}</span>
-              </div>
+            <a href="mailto:info@novves.com" className="text-sm text-hz-on-surface-variant hover:text-hz-secondary">
+              <span className="block font-bold text-hz-on-surface">info@novves.com</span>
+              <span className="text-xs">{t.hero.emailSupport}</span>
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* ── Intro ────────────────────────────────────────────── */}
-      <section className="bg-[#ecebe6] py-6 sm:py-8">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-ink/10 bg-white/80 p-6 shadow-[0_14px_38px_-30px_rgba(15,20,30,0.25)] sm:p-7">
-            <p className="text-[15px] leading-7 text-secondary/75">{t.intro}</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Service Types ────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#ecebe6] py-14 sm:py-16">
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.12]" />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-9 flex items-end gap-6">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.serviceTypes.sectionLabel}</p>
-              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
-                {t.serviceTypes.title}
-              </h2>
-            </div>
-            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {t.serviceTypes.items.map((title: string, i: number) => (
-              <div
-                key={i}
-                className="group relative overflow-hidden rounded-xl border border-ink/10 bg-[#f5f2eb] p-6 transition-all duration-300 hover:border-primary/25 hover:bg-[#f8f5ed] hover:shadow-[0_16px_30px_-22px_rgba(15,20,30,0.3)]"
-              >
-                <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-[#1d2f4d]/90 via-primary/75 to-[#90a5bd]/75 opacity-75 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="absolute left-0 top-0 h-full w-1 bg-ink/15 transition-colors duration-300 group-hover:bg-primary" />
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-ink/10 bg-[#fbf9f3] text-secondary/45 transition-colors duration-300 group-hover:border-primary/30 group-hover:bg-primary/10 group-hover:text-primary">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d={serviceIcons[i] || serviceIcons[0]} />
-                  </svg>
-                </div>
-                <p className="mt-4 text-[13px] font-semibold leading-relaxed text-dark">{title}</p>
-              </div>
+          <div className="mt-6 space-y-4">
+            {paragraphs.map((p) => (
+              <p key={p.slice(0, 48)} className="text-[15px] leading-7 text-hz-on-surface-variant">
+                {p}
+              </p>
             ))}
           </div>
-        </div>
-      </section>
+        </HizmetlerPageCard>
+      </HizmetlerPageSection>
 
-      {/* ── Form ─────────────────────────────────────────────── */}
-      <section className="bg-[#f5f2eb] py-14 sm:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-start gap-14 lg:grid-cols-5">
-            {/* Left info */}
+      <HizmetlerPageSection label={t.serviceTypes.sectionLabel} title={t.serviceTypes.title} variant="white">
+        <div className="grid gap-4 sm:grid-cols-2">
+          {t.serviceTypes.items.map((item, i) =>
+            typeof item === "string" ? (
+              <HizmetlerPageCard key={i}>
+                <p className="flex items-start gap-2.5 font-semibold text-hz-on-surface">
+                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-hz-secondary" aria-hidden />
+                  {item}
+                </p>
+              </HizmetlerPageCard>
+            ) : (
+              <HizmetlerPageCard key={item.title}>
+                <h3 className="flex items-start gap-2.5 font-bold text-hz-on-surface">
+                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-hz-secondary" aria-hidden />
+                  {item.title}
+                </h3>
+                <p className="mt-2 pl-[18px] text-[14px] leading-relaxed text-hz-on-surface-variant">{item.desc}</p>
+              </HizmetlerPageCard>
+            ),
+          )}
+        </div>
+      </HizmetlerPageSection>
+
+      {t.process ? (
+        <HizmetlerPageSection label={t.process.sectionLabel} title={t.process.title}>
+          <HizmetlerSteps items={t.process.items.map((it) => ({ title: it.title, desc: it.desc }))} />
+        </HizmetlerPageSection>
+      ) : null}
+
+      {t.whyNovves ? (
+        <HizmetlerPageSection label={t.whyNovves.sectionLabel} title={t.whyNovves.title} variant="white">
+          <HizmetlerFeatureGrid items={t.whyNovves.items.map((it) => ({ title: it.title, desc: it.text }))} cols={3} />
+        </HizmetlerPageSection>
+      ) : null}
+
+      <HizmetlerPageSection label={t.form.sectionLabel} title={t.form.title}>
+        <div id="teknik-servis-form" className="mx-auto max-w-full scroll-mt-24">
+          <div className="grid items-start gap-8 sm:gap-10 lg:grid-cols-5 lg:gap-14">
             <div className="lg:col-span-2">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.form.sectionLabel}</p>
-              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
-                {t.form.title}
-              </h2>
-              <p className="mt-4 text-sm leading-relaxed text-secondary/55">
-                {t.form.description}
-              </p>
+              {t.form.subtitle ? (
+                <p className="text-sm font-semibold text-hz-on-surface">{t.form.subtitle}</p>
+              ) : null}
+              <p className="mt-4 text-sm leading-relaxed text-hz-on-surface-variant">{t.form.description}</p>
+
+              {t.form.helperFields && t.form.helperFields.length > 0 ? (
+                <div className="mt-8">
+                  {t.form.helperIntro ? (
+                    <p className="mb-3 text-sm font-medium text-hz-on-surface">{t.form.helperIntro}</p>
+                  ) : null}
+                  <ul className="grid gap-2 sm:grid-cols-2">
+                    {t.form.helperFields.map((field) => (
+                      <li
+                        key={field}
+                        className="flex items-center gap-2 text-xs text-hz-on-surface-variant"
+                      >
+                        <span className="h-1 w-1 shrink-0 rounded-full bg-hz-secondary" />
+                        {field}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
 
               <div className="mt-10 space-y-5">
-                {t.form.features.map((item: { label: string; desc: string }) => (
+                {t.form.features.map((item) => (
                   <div key={item.label} className="flex items-center gap-4">
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-primary/8">
                       <svg className="h-4.5 w-4.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
@@ -186,9 +208,8 @@ export function TeknikServisClient({ dict, locale }: { dict: TeknikServisDict; l
               </div>
             </div>
 
-            {/* Right form */}
             <div className="lg:col-span-3">
-              <div className="rounded-2xl border border-ink/10 bg-[#f8f5ed] p-8 shadow-[0_14px_38px_-28px_rgba(15,20,30,0.28)] sm:p-10">
+              <HizmetlerPageCard className="bg-white ring-1 ring-ink/[0.06] shadow-[0_10px_40px_-22px_rgba(15,22,36,0.25)] !p-5 sm:!p-8 lg:!p-10">
                 {submitted ? (
                   <div className="flex flex-col items-center justify-center py-16 text-center">
                     <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-50">
@@ -226,13 +247,49 @@ export function TeknikServisClient({ dict, locale }: { dict: TeknikServisDict; l
                         </label>
                         <input id="email" name="email" type="email" required value={formData.email} onChange={handleChange} className={inputClass} />
                       </div>
+                      {hasExtendedForm ? (
+                        <>
+                          <div>
+                            <label htmlFor="projectName" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
+                              {t.form.labels.projectName}
+                            </label>
+                            <input id="projectName" name="projectName" type="text" value={formData.projectName} onChange={handleChange} className={inputClass} />
+                          </div>
+                          <div>
+                            <label htmlFor="productModel" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
+                              {t.form.labels.productModel}
+                            </label>
+                            <input id="productModel" name="productModel" type="text" value={formData.productModel} onChange={handleChange} className={inputClass} />
+                          </div>
+                          <div>
+                            <label htmlFor="serialNumber" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
+                              {t.form.labels.serialNumber}
+                            </label>
+                            <input id="serialNumber" name="serialNumber" type="text" value={formData.serialNumber} onChange={handleChange} className={inputClass} />
+                          </div>
+                          <div>
+                            <label htmlFor="urgency" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
+                              {t.form.labels.urgency}
+                            </label>
+                            <input id="urgency" name="urgency" type="text" value={formData.urgency} onChange={handleChange} className={inputClass} />
+                          </div>
+                          <div className="sm:col-span-2">
+                            <label htmlFor="location" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
+                              {t.form.labels.location}
+                            </label>
+                            <input id="location" name="location" type="text" value={formData.location} onChange={handleChange} className={inputClass} />
+                          </div>
+                        </>
+                      ) : null}
                     </div>
-                    <div>
-                      <label htmlFor="subject" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
-                        {t.form.labels.subject}
-                      </label>
-                      <input id="subject" name="subject" type="text" value={formData.subject} onChange={handleChange} className={inputClass} />
-                    </div>
+                    {t.form.labels.subject ? (
+                      <div>
+                        <label htmlFor="subject" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
+                          {t.form.labels.subject}
+                        </label>
+                        <input id="subject" name="subject" type="text" value={formData.subject} onChange={handleChange} className={inputClass} />
+                      </div>
+                    ) : null}
                     <div>
                       <label htmlFor="message" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-secondary/60">
                         {t.form.labels.message}
@@ -250,11 +307,22 @@ export function TeknikServisClient({ dict, locale }: { dict: TeknikServisDict; l
                     </button>
                   </form>
                 )}
-              </div>
+              </HizmetlerPageCard>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </HizmetlerPageSection>
+
+      {t.cta ? (
+        <HizmetlerPageCta
+          label={t.cta.sectionLabel}
+          title={t.cta.title}
+          subtitle={t.cta.subtitle}
+          phone="+90 216 467 47 52"
+          primaryHref={`/${locale}/iletisim`}
+          primaryLabel={t.cta.ctaButton ?? t.form.submit}
+        />
+      ) : null}
+    </HizmetlerDetailRoot>
   );
 }

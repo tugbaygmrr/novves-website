@@ -33,7 +33,7 @@ export function HubTreePanel({
   const href = `/${locale}/${basePath}/${active.slug}`;
 
   return (
-    <div className="group/panel relative overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_30px_70px_-42px_rgba(15,22,36,0.28),0_8px_24px_-18px_rgba(15,22,36,0.18)] ring-1 ring-black/[0.02]">
+    <div className="group/panel relative overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_30px_70px_-42px_rgba(15,22,36,0.28),0_8px_24px_-18px_rgba(15,22,36,0.18)] ring-1 ring-black/[0.02] sm:rounded-3xl">
       {/* Üst ince marka çizgisi */}
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-70"
@@ -129,7 +129,7 @@ export function HubTreePanel({
         </aside>
 
         {/* Sağ — özet panel */}
-        <div className="relative flex flex-col overflow-hidden bg-[#faf9f6] p-6 sm:p-8 lg:p-10">
+        <div className="relative flex flex-col overflow-hidden bg-[#faf9f6] p-5 sm:p-8 lg:p-10">
           {/* Hafif dot pattern */}
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.04]"
@@ -159,10 +159,10 @@ export function HubTreePanel({
           </div>
 
           <div className="relative">
-            <h3 className="text-balance text-2xl font-bold tracking-tight text-ink sm:text-card">
+            <h3 className="text-balance text-xl font-bold tracking-tight text-ink sm:text-2xl lg:text-card">
               {active.name}
             </h3>
-            <p className="mt-3 max-w-prose text-[15px] leading-relaxed text-secondary/80">
+            <p className="product-card-clamp-4 mt-3 max-w-prose text-sm leading-relaxed text-secondary/80 sm:text-[15px]">
               {active.description}
             </p>
           </div>
@@ -189,11 +189,11 @@ export function HubTreePanel({
             </dl>
           ) : null}
 
-          <div className="relative mt-auto pt-8">
-            <div className="flex flex-wrap items-center gap-3">
+          <div className="relative mt-auto pt-6 sm:pt-8">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <Link
                 href={href}
-                className="group/cta inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-[0_10px_24px_-12px_rgba(239,95,23,0.55),inset_0_1px_0_rgba(255,255,255,0.18)] transition-all duration-300 hover:bg-primary-deep hover:shadow-[0_14px_30px_-12px_rgba(239,95,23,0.7),inset_0_1px_0_rgba(255,255,255,0.18)]"
+                className="group/cta inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-[0_10px_24px_-12px_rgba(239,95,23,0.55),inset_0_1px_0_rgba(255,255,255,0.18)] transition-all duration-300 hover:bg-primary-deep hover:shadow-[0_14px_30px_-12px_rgba(239,95,23,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] sm:w-auto"
               >
                 {openLabel}
                 <svg
@@ -207,7 +207,7 @@ export function HubTreePanel({
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <span className="font-mono-eng text-[10px] font-semibold uppercase tracking-[0.18em] text-secondary/45">
+              <span className="hidden font-mono-eng text-[10px] font-semibold uppercase tracking-[0.18em] text-secondary/45 sm:inline">
                 / {basePath}/{active.slug}
               </span>
             </div>

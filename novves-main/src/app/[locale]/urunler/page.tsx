@@ -37,7 +37,7 @@ export default async function UrunlerPage({
   return (
     <main>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#4a4f58] py-24 pt-40">
+      <section className="relative overflow-hidden bg-[#4a4f58] py-16 pt-28 sm:py-24 sm:pt-40">
         <Image
           src={heroFactoryImage}
           alt=""
@@ -74,10 +74,10 @@ export default async function UrunlerPage({
                 {s.productsLabel}
               </span>
             </div>
-            <h1 className="font-eurostile text-page-title font-bold leading-tight tracking-tight text-white">
+            <h1 className="font-eurostile text-3xl font-bold leading-tight tracking-tight text-white sm:text-page-title">
               {nav.products}
             </h1>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-white/55">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/55 sm:text-base">
               {nav.productsDesc}
             </p>
           </div>
@@ -85,18 +85,18 @@ export default async function UrunlerPage({
       </section>
 
       {/* Categories Grid */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-sand-200 py-12 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-14 flex items-end gap-6">
-            <div>
+          <div className="mb-8 flex flex-col gap-4 sm:mb-14 sm:flex-row sm:items-end sm:gap-6">
+            <div className="min-w-0">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">
                 {s.explore}
               </p>
-              <h2 className="mt-2 font-eurostile text-section font-bold tracking-tight text-dark">
+              <h2 className="mt-2 font-eurostile text-xl font-bold tracking-tight text-dark sm:text-section">
                 {s.productGroups}
               </h2>
             </div>
-            <div className="hidden h-px flex-1 bg-gray-200 sm:block" />
+            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
 
           <ProductHubCarousel
@@ -109,7 +109,7 @@ export default async function UrunlerPage({
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-dark py-20">
+      <section className="relative overflow-hidden bg-dark py-12 sm:py-20">
         <div
           className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"
           style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}

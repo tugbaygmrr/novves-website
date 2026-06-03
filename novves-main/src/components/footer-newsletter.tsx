@@ -5,9 +5,11 @@ import { useState } from "react";
 export function FooterNewsletter({
   placeholder,
   submitLabel,
+  successMessage,
 }: {
   placeholder: string;
   submitLabel: string;
+  successMessage: string;
 }) {
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
@@ -27,7 +29,7 @@ export function FooterNewsletter({
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder={sent ? "Teşekkürler — kaydedildi." : placeholder}
+        placeholder={sent ? successMessage : placeholder}
         aria-label={submitLabel}
         className="flex-1 bg-transparent px-3 text-fine text-white placeholder:text-white/45 focus:outline-none"
       />

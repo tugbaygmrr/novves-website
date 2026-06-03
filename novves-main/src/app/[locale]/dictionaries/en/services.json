@@ -1,11 +1,133 @@
 {
+  "genelBakis": {
+    "meta": {
+      "title": "Services | novels",
+      "description": "NOVVES end-to-end engineering, project support and field services — from on-site survey to technical service."
+    },
+    "hero": {
+      "badge": "Overview",
+      "titlePart1": "NOVVES",
+      "titleHighlight": "Services",
+      "subtitle": "End-to-end engineering, project support and field services",
+      "imageSrc": "/images/page-hero/cozumler-main.jpg"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES is not just a manufacturer that supplies industrial fan groups and air conditioning systems. It is a solution partner that analyzes each project within its own technical conditions, combines the right product with the right application and supports the project process with engineering discipline.",
+        "In industrial ventilation, comfort ventilation, parking garage ventilation, smoke and heat extraction systems, smoke control design and project-based HVAC applications; We offer end-to-end service from on-site discovery to technical project planning, from CFD analysis to fan selection, from commissioning to after-sales technical service.",
+        "Our aim in every service process is; To develop safe, efficient, sustainable and long-lasting system solutions. For this reason, NOVVES projects not only on a product basis; It holistically evaluates air flow, fire safety, energy efficiency, application conditions, maintenance access, automation scenarios and long-term operating performance."
+      ]
+    },
+    "engineeringApproach": {
+      "sectionLabel": "Approach",
+      "title": "Engineering-Focused Service Approach",
+      "paragraphs": [
+        "The NOVVES service model starts with a correct understanding of project needs. Site conditions, architectural structure, intended use, air flow requirement, pressure losses, temperature resistance, fire scenario, smoke evacuation requirements and relevant standards are evaluated together.",
+        "Thanks to this approach, not only the appropriate product is available for each project; The right system architecture, the right fan placement, the right automation scenario and the right technical support process are planned."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Scope",
+      "title": "Our Service Scope",
+      "intro": "NOVVES services are offered under the following main headings:"
+    },
+    "lifecycle": {
+      "sectionLabel": "Support",
+      "title": "Support from Project Beginning to After Sales",
+      "paragraph": "NOVVES supports its customers not only in the proposal or product delivery phase of the project process, but throughout the entire life cycle. Determining the right need at the beginning of the project, making technical analyses, creating product and system selection, preparing the necessary documentation, carrying out commissioning processes in the field and after-sales technical support services are the basic parts of NOVVES' holistic service approach."
+    },
+    "applicationAreas": {
+      "sectionLabel": "Sectors",
+      "title": "In Which Areas Do We Serve?",
+      "intro": "NOVVES; It provides engineering-supported ventilation and smoke control services in different building types and sectors. Our main application areas:",
+      "items": [
+        "Covered car parks",
+        "industrial facilities",
+        "Production areas",
+        "commercial buildings",
+        "shopping malls",
+        "Hotels",
+        "public buildings",
+        "Tunnels and infrastructure projects",
+        "Technical volumes",
+        "Special project applications",
+        "HVAC and air conditioning projects"
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Difference",
+      "title": "Why NOVVES Services?",
+      "paragraphs": [
+        "The main difference of NOVVES services is that it combines production capability and engineering knowledge under the same roof. In this way, projects; They are evaluated based on actual field conditions, application needs and performance targets, not just catalog values.",
+        "Working with NOVVES; It means right fan selection, reliable smoke extraction system, efficient ventilation solution, technical documentation support, field commissioning capability and after-sales engineering support."
+      ]
+    },
+    "servicesGrid": {
+      "sectionLabel": "Services",
+      "title": "Our Engineering and Field Services",
+      "detailsLabel": "View Details"
+    },
+    "hubCards": [
+      {
+        "slug": "yerinde-kesif",
+        "excerpt": "Our expert engineers come to your site, analyze technical requirements and collect data for the most optimized system layout.",
+        "category": "Field Service"
+      },
+      {
+        "slug": "duman-kontrol-sistemi-tasarimi",
+        "excerpt": "We design your jet fan and smoke extraction systems with a CFD-supported engineering approach in accordance with the regulations.",
+        "category": "Design",
+        "badge": "Engineering"
+      },
+      {
+        "slug": "cfd-analizi",
+        "excerpt": "Pre-verify the performance of your smoke extraction and ventilation systems with fluid mechanics simulations in a virtual environment.",
+        "category": "Engineering",
+        "badge": "Critical Process"
+      },
+      {
+        "slug": "fan-secimi-ve-teknik-projelendirme",
+        "excerpt": "Optimum fan selection according to flow rate, pressure and ambient conditions; Integrated technical project design with duct, silencer and accessories.",
+        "category": "Project planning"
+      },
+      {
+        "slug": "devreye-alma",
+        "excerpt": "We ensure a safe and efficient start by testing the systems for compliance with standards after installation.",
+        "category": "APPLICATION"
+      },
+      {
+        "slug": "teknik-servis",
+        "excerpt": "We guarantee the continuity of your ventilation systems with our 24/7 uninterrupted technical support and emergency response teams.",
+        "category": "Operation"
+      },
+      {
+        "slug": "bakim-ve-performans-kontrolu",
+        "excerpt": "Increase energy efficiency with periodic maintenance plans and reduce operational costs by extending the life of your systems.",
+        "category": "Life Cycle"
+      },
+      {
+        "slug": "egitim-ve-teknik-danismanlik",
+        "excerpt": "We offer special technical training to your operations teams and consultancy services on smoke control regulations.",
+        "category": "Knowledge"
+      }
+    ],
+    "cta": {
+      "sectionLabel": "Communication",
+      "title": "Let's Determine the Right Service for Your Project Together",
+      "paragraphs": [
+        "You can contact the NOVVES team for your industrial ventilation, smoke control system, jet fan placement, CFD analysis, fan selection, commissioning or technical service needs.",
+        "Let's evaluate the technical requirements of your project together; Let's develop a safe, efficient and long-lasting system solution."
+      ],
+      "ctaButton": "Create a Service Request for Your Project"
+    }
+  },
   "cfdAnalizi": {
     "meta": {
-      "title": "CFD Analysis | Novves",
-      "description": "NOVVES CFD (Computational Fluid Dynamics) analyses — real scenarios, real data, safe solutions."
+      "title": "CFD Analysis | novels",
+      "description": "NOVVES CFD analysis — ventilation and smoke control solutions validated with computational fluid dynamics."
     },
     "breadcrumb": {
-      "home": "Home",
+      "home": "Home Page",
       "services": "Services",
       "current": "CFD Analysis"
     },
@@ -13,137 +135,316 @@
       "badge": "Services",
       "titlePart1": "CFD",
       "titleHighlight": "Analysis",
-      "subtitle": "Real Scenarios, Real Data, Safe Solutions.",
+      "subtitle": "Ventilation and smoke control solutions validated with Computational Fluid Dynamics.",
       "stats": [
-        { "value": "3D", "label": "Simulation Model" },
-        { "value": "5", "label": "Analysis Parameters" },
-        { "value": "EN 12101-3", "label": "Standard Verification" }
+        {
+          "value": "3D",
+          "label": "Simulation Model"
+        },
+        {
+          "value": "7+",
+          "label": "Analysis Parameter"
+        },
+        {
+          "value": "EN 12101-3",
+          "label": "Standard Verification"
+        }
       ]
     },
-    "intro": "At NOVVES, we don't just manufacture fans — we also provide project-specific, engineering-based ventilation solutions. At the core of these solutions lie CFD (Computational Fluid Dynamics) analyses that allow us to test our designs before implementing them on site.",
+    "intro": [
+      "As NOVVES, we do not only produce fans, jet fans, smoke extraction fans or ventilation equipment; We develop engineering-based system solutions specific to each project. One of the most important steps of this approach is to numerically validate the design with CFD analysis before implementation into the field.",
+      "CFD, i.e. Computational Fluid Dynamics analysis; It enables three-dimensional examination of air flow, smoke dispersion, temperature change, CO concentration and fan effect in indoor parking lots, industrial facilities, technical volumes, tunnel-like structures and large closed areas.",
+      "NOVVES evaluates jet fan placement, exhaust fan capacity, fresh air organization, smoke evacuation scenarios and system performance on a project-specific basis with CFD analyses. Thus, engineering-based decisions are made for the correct number of fans, correct fan location, optimum energy use and safer evacuation conditions."
+    ],
     "whyCfd": {
       "sectionLabel": "Methodology",
       "title": "Why CFD Analysis?",
+      "intro": "CFD analysis enables ventilation and smoke control systems to be evaluated based on actual project conditions, not just theoretical calculations.",
       "items": [
-        "Fan system performance is simulated according to real environmental conditions.",
-        "Fire scenarios such as smoke, temperature and gas propagation are pre-tested.",
-        "Vital variables like visibility distance, temperature rise and CO concentration are analyzed.",
-        "Regulatory compliance and safe evacuation times are verified."
+        {
+          "title": "System performance is seen before deployment to the field",
+          "desc": "Performance of fan systems; It is simulated by taking into account the project geometry, column placement, ramp positions, ceiling height, exhaust points and fresh air inlets."
+        },
+        {
+          "title": "Fire and smoke scenarios are tested in advance",
+          "desc": "It is analyzed in which direction the smoke will spread, in which areas it will concentrate, how it may affect escape routes and how jet fans will direct the smoke."
+        },
+        {
+          "title": "Critical variables are evaluated with engineering data",
+          "desc": "Parameters such as visibility, temperature rise, air velocity, CO density, smoke layer, dead zones and exhaust efficiency are examined numerically."
+        },
+        {
+          "title": "Regulation and safe evacuation goals are supported",
+          "desc": "CFD analysis; It contributes to more reliable project decisions in terms of smoke control design, parking garage ventilation, fire safety and evacuation scenarios."
+        }
       ],
-      "resultLabel": "Result",
-      "resultText": "Correct placement, correct number of fans, optimum energy usage and maximum safety are ensured."
+      "resultLabel": "Conclusion",
+      "resultText": "Correct placement, correct number of fans, optimum energy use and maximum security are targeted."
     },
     "analysisTypes": {
-      "sectionLabel": "Analysis Scope",
+      "sectionLabel": "Scope of Analysis",
       "title": "Simulation Parameters",
       "items": [
         {
-          "title": "Air Velocity Distribution",
+          "title": "Airspeed Distribution",
           "subtitle": "Velocity Analysis",
-          "text": "The direction, speed and distribution of airflow within the enclosed space has been modeled in three dimensions. The aim is to ensure air circulation throughout the entire environment with the effect of jet fans."
+          "text": "The direction, speed and distribution of air flow within a closed space are modeled in three dimensions. It is analyzed whether sufficient air circulation is provided throughout the environment with the effect of jet fans."
         },
         {
           "title": "Temperature Change",
-          "subtitle": "Temperature Distribution",
-          "text": "How the ambient temperature changes at human level height during a fire has been analyzed. Critical temperature limits have been evaluated and risks have been identified for emergency management."
+          "subtitle": "temperature distribution",
+          "text": "It is evaluated how the ambient temperature changes at the human level, in the ceiling area and in critical escape routes during the fire scenario. By determining critical temperature zones, risks in terms of emergency safety are revealed."
         },
         {
           "title": "Visibility Assessment",
           "subtitle": "Visibility Analysis",
-          "text": "How long evacuation routes remain visible under heavy smoke has been analyzed. The rate of visibility reduction has been measured to verify evacuation safety."
+          "text": "It is analyzed how long visibility can be maintained on escape routes under dense smoke. The reduction in visibility is evaluated in terms of evacuation safety and fire department response."
         },
         {
-          "title": "Carbon Monoxide Dispersion",
+          "title": "Carbon Monoxide Release",
           "subtitle": "CO Concentration",
-          "text": "How exhaust gas CO accumulates over time in enclosed environments like parking garages and how it is evacuated by the fan system has been modeled."
+          "text": "CO accumulation due to vehicle exhaust gas is modeled in areas such as closed parking lots. The change in CO concentration over time and how it is evacuated by the fan system is analyzed."
         },
         {
-          "title": "Smoke Propagation",
+          "title": "Smoke Diffusion",
           "subtitle": "Smoke Propagation",
-          "text": "The direction and speed of smoke spread after a fire and how it is directed with the help of jet fans has been analyzed. Smoke layer formation and movement have been simulated in detail."
+          "text": "The direction and speed of smoke spread after a fire, layer formation and how it is directed with the help of jet fans are simulated. The effectiveness of the exhaust points and the performance of the smoke control strategy are evaluated."
+        },
+        {
+          "title": "Jet Fan Effect",
+          "subtitle": "Jet Fan Impact",
+          "text": "The effect of jet fans on air flow, their ability to reduce dead zones, their directing performance to exhaust fans and their contribution to air movement within the system are analyzed."
+        },
+        {
+          "title": "Exhaust and Fresh Air Balance",
+          "subtitle": "Air Balance",
+          "text": "Exhaust fans, fresh air inlets, natural openings and mechanical supply systems are evaluated together. System balance, pressure differences and air renewal performance are examined."
         }
       ]
     },
     "benefits": {
       "sectionLabel": "Value Proposition",
-      "title": "What You Gain with NOVVES",
+      "title": "What You Earn with NOVVES",
+      "intro": "NOVVES CFD analysis service bases project decisions on engineering data, not intuitive guesses.",
       "items": [
-        "Regulatory compliance verification",
-        "Engineering-based decisions for fan positioning",
-        "Pre-analysis of temperature, CO and visibility limits for evacuation safety",
-        "Clear visibility of system performance before installation",
-        "Project-based technical reporting and data-supported presentation"
-      ],
-      "quote": "Base your design not only on experience, but also on data. Build safe, powerful and optimized ventilation systems with NOVVES engineering.",
-      "ctaPrimary": "Create Project Request",
-      "ctaSecondary": "Smoke Control Design"
+        "Verification of compliance with regulations and project requirements",
+        "Engineering-based decisions in jet fan and exhaust fan positioning",
+        "More accurate fan placement in closed car park ventilation systems",
+        "Performance evaluation in smoke evacuation systems according to fire scenario",
+        "Preliminary analysis of temperature, CO and visibility limits for evacuation safety",
+        "Clear view of system performance before installation",
+        "Optimizing energy efficiency and fan operating scenarios",
+        "Project-based technical reporting and data-supported presentation opportunity",
+        "Stronger technical documentation for consultants, employers, fire consultants and project teams"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Application Areas",
+      "title": "In Which Projects Do We Use CFD Analysis?",
+      "intro": "NOVVES uses CFD analysis specifically on projects where airflow, smoke movement and fan placement are critical.",
+      "items": [
+        "Indoor car park ventilation projects",
+        "Jet fan systems",
+        "Smoke and heat extraction systems",
+        "Industrial plant ventilation",
+        "Tunnel-like structures",
+        "Technical volumes",
+        "Large volume commercial buildings",
+        "Projects requiring fire scenarios",
+        "CO evacuation and indoor air quality analysis",
+        "Project-based special ventilation solutions"
+      ]
+    },
+    "process": {
+      "sectionLabel": "Period",
+      "title": "NOVVES CFD Analysis Process",
+      "items": [
+        {
+          "title": "Collecting Project Data",
+          "desc": "Architectural plans, floor heights, intended use, fire scenario, exhaust points, fresh air inlets and existing system information are evaluated."
+        },
+        {
+          "title": "Modeling and Scenario Creation",
+          "desc": "The project geometry is modeled in three dimensions. Fire scenario, normal ventilation scenario, CO evacuation scenario or project-specific working conditions are determined."
+        },
+        {
+          "title": "Simulation and Performance Analysis",
+          "desc": "Air velocity, smoke dispersion, temperature distribution, visibility, CO concentration and fan effect are analyzed. Critical areas and system performance are examined."
+        },
+        {
+          "title": "Reporting and Technical Evaluation",
+          "desc": "Analysis results are reported with graphs, cross-sections, flow visuals, scenario outputs and technical comments. If necessary, improvement suggestions for fan placement or system scenario are provided."
+        },
+        {
+          "title": "Project Support and Implementation",
+          "desc": "According to the CFD results, fan selection, jet fan placement, exhaust capacity, fresh air organization and automation scenario are evaluated together with the project team."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "CFD Analysis",
+      "title": "Let's Verify Your Project with CFD Analysis",
+      "subtitle": "You can contact NOVVES technical team for your indoor car park, industrial facility, smoke extraction system, jet fan project or special ventilation application.",
+      "paragraph": "Let's evaluate your project with CFD analysis before applying it to the field; Let's create a safe, efficient and engineering-based system solution.",
+      "ctaButton": "Create a CFD Analysis Request",
+      "secondaryLink": "Smoke Control Design"
     }
   },
   "devreAlma": {
     "meta": {
-      "title": "Commissioning | Novves",
-      "description": "NOVVES post-sales commissioning service — installation control, performance tests, optimization and training."
+      "title": "Commissioning | novels",
+      "description": "NOVVES commissioning service — on-site mechanical and electrical control, performance tests, automation verification and reporting."
     },
     "breadcrumb": {
-      "home": "Home",
+      "home": "Home Page",
       "services": "Services",
-      "current": "Commissioning"
+      "current": "Put in to use"
     },
     "hero": {
       "badge": "Services",
-      "titlePart1": "Commission",
-      "titleHighlight": "ing",
-      "subtitle": "We guarantee full performance operation of the system after installation.",
+      "titlePart1": "commissioning",
+      "titleHighlight": "Taking",
+      "subtitle": "Professional commissioning service that verifies system performance in the field.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuASo_JruCyxDVBwlCmBSQZOFpltmGjXdUxsE3roKreES2Gu2pq9zLqHMjemLJgfWv0De6KIbjxhT4oIZaLESKuWFQLhGEp8ML5gjmpBBZvYzHre4f_lmmkw90aiDCQdjUugZKThhIwssahTOGswbLWcBSTzTrnmg05kWy8eJf79tYs2afdF8tDdUn7XmqnqV94ZL70snn4wf11cok1MFL7SZiIfqChKtJjFyLjHMiDez3pjiCgq-s0bzPrSm5Vagv2Hho13FekYu9s",
       "stats": [
-        { "value": "8", "label": "Service Steps" },
-        { "value": "4", "label": "Phases" },
-        { "value": "7/24", "label": "Support" },
-        { "value": "PDF", "label": "Reporting" }
+        {
+          "value": "9",
+          "label": "Service Step"
+        },
+        {
+          "value": "360°",
+          "label": "Field Verification"
+        },
+        {
+          "value": "7/24",
+          "label": "Support"
+        },
+        {
+          "value": "PDF",
+          "label": "Reporting"
+        }
       ]
     },
     "intro": [
-      "At Novves, we don't just produce quality products; we also guarantee full performance operation of the system after installation.",
-      "Our post-sales commissioning service is provided to ensure our customers use our products in the most efficient and safe way."
+      "As NOVVES, we not only produce quality fans, motors, jet fans, smoke extraction fans, air handling units and HVAC equipment; After installation, we offer professional commissioning service to ensure correct, safe and efficient operation of the system in the field.",
+      "The commissioning process is not the first operation of the product after assembly; It is a technical verification process that includes mechanical suitability, electrical connections, motor rotation direction, speed controller settings, automation scenarios, sensor connections, performance checks and user information.",
+      "NOVVES technical service and commissioning team; It controls the operation of the system in accordance with the project conditions in closed car park ventilation systems, jet fan systems, smoke and heat extraction fans, axial fans, industrial fans, MCC control panels, air handling units and chiller supported HVAC projects.",
+      "Proper commissioning; It increases system efficiency, detects possible installation errors at an early stage, supports product life and ensures smoother after-sales processes."
     ],
     "serviceSteps": {
-      "sectionLabel": "Process",
+      "sectionLabel": "Period",
       "title": "Service Content",
       "items": [
-        { "step": "Product installation control and mechanical compliance inspection", "phase": "Control" },
-        { "step": "Electrical connections and grounding compliance check", "phase": "Control" },
-        { "step": "Initial fan startup and motor direction verification", "phase": "Startup" },
-        { "step": "Speed control device / frequency inverter settings configuration", "phase": "Startup" },
-        { "step": "Performing basic performance tests such as flow rate, pressure, temperature", "phase": "Test" },
-        { "step": "Fan optimization according to ambient conditions", "phase": "Test" },
-        { "step": "Brief training on system operation and basic maintenance information for the user", "phase": "Training" },
-        { "step": "Recording all tests and procedures and reporting with commissioning form", "phase": "Reporting" }
+        {
+          "title": "Mechanical Assembly Compliance Check",
+          "desc": "The assembly structure of the products and their readiness for commissioning in the field are examined from a mechanical perspective."
+        },
+        {
+          "title": "Electrical Connection Check",
+          "desc": "Engine connections, panel connections, cabling, grounding, protection elements, energy supply and electrical compatibility are evaluated."
+        },
+        {
+          "title": "Start-up and Engine Direction Verification",
+          "desc": "The first start-up of the fans is done. Motor rotation direction, air flow direction, unusual noise, vibration, rubbing or mechanical impropriety are checked."
+        },
+        {
+          "title": "Speed ​​Control and Frequency Inverter Settings",
+          "desc": "In systems using VFD / frequency inverter, basic parameters, operating frequency, speed control ranges and system operating scenarios are checked."
+        },
+        {
+          "title": "Automation and Scenario Control",
+          "desc": "Jet fan systems, smoke extraction fans, exhaust fans, fresh air fans, CO sensors, fire alarm signals, MCC / DDC panels and BMS integration are tested according to the project scenario."
+        },
+        {
+          "title": "Performance Controls",
+          "desc": "Key performance indicators such as flow rate, pressure, temperature, vibration, sound level, operating current, motor load and system behavior are evaluated according to field conditions."
+        },
+        {
+          "title": "optimization",
+          "desc": "The operating mode of the fans, speed control, automation scenario and field conditions are evaluated together and the necessary settings are made for the system to operate more efficiently and stably."
+        },
+        {
+          "title": "User Information",
+          "desc": "Operation, maintenance or technical teams are informed about the operating principle of the system, basic usage steps, points to be considered and maintenance needs."
+        },
+        {
+          "title": "Reporting",
+          "desc": "Checks, tests, settings and observations are recorded. When necessary, a commissioning form, technical service report or field evaluation note is prepared."
+        }
       ]
     },
     "whyImportant": {
       "sectionLabel": "Advantages",
-      "title": "Why Is It Important?",
+      "title": "Why is Commissioning Important?",
       "items": [
-        { "title": "Warranty Activation", "text": "Activation of the warranty period" },
-        { "title": "Fault Prevention", "text": "Prevention of faults that may arise from installation errors" },
-        { "title": "Efficiency", "text": "Improvement of energy efficiency and device lifespan" },
-        { "title": "Optimization", "text": "Operating the fan in the most suitable way according to ambient conditions" }
+        {
+          "title": "Supports the Healthy Start of the Warranty Process",
+          "text": "The commissioning process helps to check that the product is installed correctly and used under suitable operating conditions. This ensures better management of warranty and after-sales processes."
+        },
+        {
+          "title": "Detects Installation Errors at Early Stages",
+          "text": "Errors in mechanical assembly, electrical connection, motor rotation direction, frequency inverter settings or automation scenarios can be detected before the system starts operating."
+        },
+        {
+          "title": "Increases System Efficiency",
+          "text": "Correctly commissioned fan and ventilation systems; It provides more efficient results in terms of energy consumption, air flow, pressure balance, sound level and long-lasting operation."
+        },
+        {
+          "title": "Reduces the Risk of Malfunction",
+          "text": "Checks made during first start-up; It reduces risks that may arise from excessive current, reverse rotation, vibration, improper connection, incorrect speed setting or field conditions."
+        },
+        {
+          "title": "Validates Automation Scenarios",
+          "text": "It is critical that fans operate according to the correct scenario in smoke control systems, jet fan systems and closed car park ventilation applications. During the commissioning process, automation and control scenarios are tested in the field."
+        },
+        {
+          "title": "Provides Secure Business Information to the User",
+          "text": "Correctly informing the technical teams that will use the system contributes to the more regular maintenance processes and the safe operation of the system."
+        }
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Scope",
+      "title": "Which Systems Does NOVVES Commissioning Service Cover?",
+      "items": [
+        "Jet fan systems",
+        "Smoke and heat extraction fans",
+        "axial fans",
+        "industrial fans",
+        "roof fans",
+        "Cell fans",
+        "Exhaust and fresh air fans",
+        "MCC / DDC control boards",
+        "Indoor car park ventilation systems",
+        "smoke control systems",
+        "Air handling unit applications",
+        "Chiller assisted HVAC systems",
+        "Project-based special ventilation systems"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Commissioning with NOVVES",
+      "title": "Holistic Technical Coordination",
+      "paragraphs": [
+        "NOVVES commissioning service; It is carried out with the coordination of production, technical office, automation, field service and after-sales support teams. In this way, all processes are evaluated holistically, from the technical design of the product to the actual working conditions in the field.",
+        "After commissioning, the operating status of the system is checked, necessary settings are made, basic information is provided to the user and the process is recorded."
       ]
     },
     "cta": {
-      "sectionLabel": "Service Request",
-      "title": "Contact us for commissioning service",
-      "contactForm": "Contact Form",
-      "weekdays": "Weekdays 08:30 – 18:00",
-      "emailSupport": "Technical support via email"
+      "sectionLabel": "Put in to use",
+      "title": "Let's Start Running Your Project Safely",
+      "subtitle": "You can get commissioning support from NOVVES technical team for your fan, jet fan, smoke extraction system, automation panel, air handling unit or HVAC project.",
+      "ctaButton": "Create a Commissioning Request",
+      "contactForm": "Create a Commissioning Request"
     }
   },
   "dumanKontrol": {
     "meta": {
-      "title": "Smoke Control System Design | Novves",
-      "description": "Jet fan system design — air flow, exhaust extraction and smoke control in enclosed parking garages."
+      "title": "Smoke Control System Design | novels",
+      "description": "NOVVES smoke control system design — jet fan, smoke evacuation and engineering-oriented solutions for indoor car parks and large volume structures."
     },
     "breadcrumb": {
-      "home": "Home",
+      "home": "Home Page",
       "services": "Services",
       "current": "Smoke Control"
     },
@@ -151,80 +452,152 @@
       "badge": "Services",
       "titlePart1": "Smoke Control",
       "titleHighlight": "System Design",
+      "subtitle": "Engineering-oriented smoke control solutions for indoor parking lots and large-volume structures.",
+      "imageSrc": "/images/hizmetler/duman-kontrol-tasarimi.png",
       "stats": [
-        { "value": "EN 12101-3", "label": "Standard Compliance" },
-        { "value": "300°C / 2h", "label": "Fire Resistance" },
-        { "value": "CFD", "label": "Simulation Supported" }
+        {
+          "value": "EN 12101-3",
+          "label": "Standard Compliance"
+        },
+        {
+          "value": "300°C / 2h",
+          "label": "Fire Resistance"
+        },
+        {
+          "value": "CFD",
+          "label": "Simulation Supported"
+        }
       ]
     },
     "intro": [
-      "The jet fan system is a mechanical ventilation system used to direct airflow, evacuate exhaust gases and control smoke in the event of a fire in enclosed parking garages.",
-      "This system has been developed by adapting tunnel ventilation technologies and is especially preferred in large and complex parking structures.",
-      "Jet fans create air movement over a wide area by blowing air at high speed, pushing and dragging the air mass in front of them. This way, harmful gases such as carbon monoxide (CO) from vehicles are effectively evacuated. During a fire, jet fans prevent the spread of smoke, ensuring the safety of escape routes and facilitating firefighter intervention."
+      "NOVVES provides smoke control system design services for indoor parking lots, industrial facilities, technical volumes, tunnel-like structures and large closed areas. This service; It is not limited to just fan selection. A holistic system design is created by evaluating the architectural structure of the project, fire scenario, air flow directions, escape routes, exhaust points, fresh air need, automation scenarios and field conditions together.",
+      "Jet fan systems; They are modern mechanical ventilation solutions used to direct air flow in indoor parking lots, evacuate exhaust gases from vehicles and ensure controlled removal of smoke in case of fire. NOVVES analyzes these systems on a project-specific basis, determines the correct fan placement and supports the smoke control scenario with engineering data.",
+      "The main goal in smoke control system design is; To protect indoor air quality under normal working conditions, to limit the uncontrolled spread of smoke in case of fire, to support the safety of escape routes and to create an air flow organization that will facilitate the intervention of fire brigades."
     ],
+    "approach": {
+      "sectionLabel": "Design Approach",
+      "title": "NOVVES Smoke Control Design Approach",
+      "intro": "Smoke control design for NOVVES is not just about equipment placement; It is an important part of the project's security strategy. The following elements are evaluated together in each project:",
+      "items": [
+        "Parking garage or building geometry",
+        "Floor height and volume information",
+        "Vehicle density and usage scenario",
+        "Fire scenario and possible smoke spread directions",
+        "Escape routes, ramps, shafts and critical access points",
+        "Jet fan, exhaust fan and fresh air fan placement",
+        "Location of CO, smoke and heat sensors",
+        "MCC / DDC control cabinet and automation scenarios",
+        "BMS integration",
+        "Need for CFD analysis",
+        "Regulation, standard and project specification requirements",
+        "Installation, maintenance and commissioning conditions"
+      ],
+      "closing": "Thanks to this approach, the system is evaluated not only according to theoretical calculations, but also according to real field conditions and air movement behavior at the time of fire."
+    },
     "components": {
       "sectionLabel": "System Architecture",
-      "title": "Jet Fan System Components",
+      "title": "Components of Jet Fan System",
       "items": [
         {
           "title": "Jet Fans",
-          "text": "The main component of the system. Mounted on the ceiling. Creates airflow to direct polluted air to exhaust fans. Two types are available: axial and radial. Axial type can operate in single or dual direction."
+          "text": "Jet fans are the main air direction elements of the system. Mounted on the ceiling, it creates high-speed airflow and directs polluted air or smoke towards exhaust points. Axial jet fan or radial jet fan types can be used depending on the project need. Axial jet fans can be selected according to one-way or two-way operating principle."
         },
         {
           "title": "Exhaust Fans",
-          "text": "Expels the polluted or smoky air directed by jet fans to the outside in a controlled manner."
+          "text": "Exhaust fans discharge polluted air, CO concentration or smoke generated in case of fire, directed by jet fans, to the outdoor environment in a controlled manner. In smoke evacuation scenarios, the temperature resistance, flow capacity and operating time of the fans are evaluated according to the project conditions."
         },
         {
           "title": "Fresh Air Fans",
-          "text": "Used for pressurization to provide clean air in place of polluted air and to prevent smoke from reaching escape routes when natural openings are insufficient or not suitably positioned."
+          "text": "Fresh air fans are used when natural openings are not sufficient or fresh air intake cannot be provided in the desired direction. These fans support the air balance of the system and contribute to the organization of pressure and air movement to help prevent smoke from being directed to escape routes."
         },
         {
-          "title": "Sensors",
-          "text": "CO, smoke and heat sensors collect data from their zone and transmit this information to the MCC panel according to set limits."
+          "title": "sensors",
+          "text": "CO sensors, smoke sensors, heat detection elements and related field equipment produce data for the automation infrastructure of the system. Information from the sensors is transmitted to the control panel in line with the determined limit values ​​and fire scenarios."
         },
         {
-          "title": "Automation and Control System (MCC Panel)",
-          "text": "The system that enables automatic activation of fans based on data from sensors. During a fire, it ensures the system operates according to predetermined scenarios. PLC controlled and can be integrated with BMS (building management system)."
+          "title": "Automation and Control System",
+          "text": "MCC / DDC control panels ensure that jet fans, exhaust fans, fresh air fans and sensors operate according to the scenario. System; It can be activated automatically according to different operating scenarios such as normal ventilation, CO evacuation and fire mode. It can be integrated with the building management system when necessary."
         }
       ]
     },
     "advantages": {
-      "sectionLabel": "Why Jet Fan?",
+      "sectionLabel": "Why Jet Fan System?",
       "title": "System Advantages",
-      "subtitle": "Jet fan systems offer significant advantages over traditional duct-type ventilation systems, especially in enclosed parking garages and tunnel systems.",
       "items": [
-        { "title": "No duct requirement", "text": "Jet fan systems work by directing air, so there is no need for air ducts, grilles or diffusers." },
-        { "title": "Space saving", "text": "In parking garages with low ceiling heights, duct systems can cause problems as they take up space. Jet fans take up less space with their compact dimensions." },
-        { "title": "Energy efficiency", "text": "Working with CO sensors, they only operate when needed, reducing energy consumption. Fans can run at variable speeds, providing optimized energy usage." },
-        { "title": "Smoke and heat extraction is under control", "text": "Operating at high speed during a fire, it controls the spread of smoke. It prevents escape routes from filling with smoke, ensuring life safety. It facilitates firefighter intervention." },
-        { "title": "Low maintenance cost", "text": "Without a duct system, cleaning and maintenance is easier. Fewer parts also reduces the risk of failure." },
-        { "title": "Easily positioned according to architecture", "text": "Redesigning the system for future changes is simpler." },
-        { "title": "Low initial investment cost", "text": "Since less equipment (ducts, grilles, diffusers, etc.) is used, the initial installation cost is lower compared to traditional systems." }
+        {
+          "title": "Reduces Channel Requirement",
+          "text": "Since jet fan systems work by directing air, they offer a more flexible solution than traditional duct type ventilation systems. In this way, the need for wide duct lines and numerous grilles or diffusers can be reduced."
+        },
+        {
+          "title": "Saves Space",
+          "text": "Ceiling height and usable volume are critical in indoor car parks. Thanks to their compact structure, jet fans take up less space and contribute to more efficient use of architectural space."
+        },
+        {
+          "title": "Supports Energy Efficiency",
+          "text": "When working with CO sensors and automation system, jet fans can be activated only when needed. Energy consumption can be optimized thanks to variable speed control and scenario-based operation."
+        },
+        {
+          "title": "Controls Smoke and Heat Evacuation",
+          "text": "In case of fire, the jet fan system helps reduce the uncontrolled spread of smoke and direct the smoke to designated exhaust points. This approach supports the safety of escape routes and contributes to a more controlled fire response."
+        },
+        {
+          "title": "Provides Ease of Maintenance and Operation",
+          "text": "As the channel density decreases, cleaning, maintenance and access processes can be managed more easily. Fewer mechanical components simplify the organization of maintenance in the operating process."
+        },
+        {
+          "title": "Easily Adapts to Architectural Structure",
+          "text": "Jet fan systems can be designed flexibly according to different car park geometries, ramp locations, column placements and ceiling heights. In this way, applicable solutions can be developed in new projects and existing structures."
+        },
+        {
+          "title": "Optimizes Initial Investment and Operating Costs",
+          "text": "Correctly designed jet fan systems; It can optimize the initial investment cost by reducing the need for channels, grilles and diffusers. Automation-supported working scenarios contribute to the management of long-term energy and operating costs."
+        }
       ]
     },
     "designFactors": {
       "sectionLabel": "Engineering",
-      "title": "Important Design Factors",
+      "title": "Important Factors in Design",
+      "intro": "In order for the smoke control system to operate efficiently and safely, all architectural, mechanical, electrical and operational conditions must be evaluated together from the first stage of design.",
+      "paragraphs": [
+        "Placement of axial fans, smoke and heat discharge fans, fresh air fans and jet fans in the jet fan project; It should be designed taking into account the noise level, the need for air direction, the absence of dead zones where fresh air cannot reach, ease of installation, maintenance access, safety of escape routes and smoke diversion strategy in case of fire.",
+        "In closed car parks, vehicle exhaust gases, CO concentration, user traffic, vehicle circulation, ramps, columns, shafts, door openings and natural ventilation facilities directly affect air movement. Therefore, correct positioning of jet fans is critical for the system to direct the air flow in the most efficient way.",
+        "In a fire scenario, the aim is to prevent the uncontrolled spread of smoke and promote the safest possible evacuation conditions. For this reason, the operating scenario of the fans, sensor locations, automation panel, fire detection system and building management system integration should be planned together.",
+        "In necessary projects, CFD analysis is used to evaluate air flow, smoke dispersion, jet fan effect, dead zones, exhaust points and evacuation scenarios numerically. CFD-supported design helps verify fan placement and analyze system performance on a project-by-project basis."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Smoke Control Design with NOVVES",
+      "title": "Our Service Scope",
+      "intro": "NOVVES offers production, engineering, CFD analysis, automation, commissioning and after-sales technical support capabilities in smoke control system design under the same roof.",
       "items": [
-        "The necessary precautions for efficient system operation are carefully controlled and designed from the first stage, and placement is installed considering all conditions.",
-        "In jet fan projects, important factors such as noise level, required air direction planning, absence of \"dead zones\" where fresh air cannot reach, ease of installation, and accessibility of evacuation and escape routes during a fire are considered in the placement of axial fans (smoke and heat extraction / fresh air) and jet fans.",
-        "In jet fan system design, adequate air change rates and air flow must be provided considering vehicle exhaust gases, pedestrian traffic and other factors. The correct position of jet fans must be placed to direct the system's airflow in the most efficient way."
+        "indoor car park smoke control design",
+        "Jet fan system layout",
+        "Smoke and heat extraction fan selection",
+        "Exhaust and fresh air fan selection",
+        "Evaluation of CO, smoke and heat sensor scenarios",
+        "MCC/DDC control board scenario support",
+        "BMS integration approach",
+        "CFD supported air flow and smoke dispersion analysis",
+        "Technical documentation and project support",
+        "Field commissioning and technical service support"
       ]
     },
     "cta": {
-      "sectionLabel": "For Your Project",
-      "title": "Get smoke control system design support",
-      "cfdLink": "CFD Analysis",
-      "supportButton": "Technical Support Request"
+      "sectionLabel": "Smoke Control Design",
+      "title": "Let's Design the Right Smoke Control System for Your Project",
+      "subtitle": "NOVVES develops safe, efficient and sustainable smoke control solutions by analyzing the architectural and technical conditions of your project.",
+      "paragraph": "If you need a jet fan system, smoke extraction fan, CFD analysis or smoke control design for your indoor car park, industrial facility or large-volume structure, you can contact our technical team.",
+      "ctaButton": "Create a Smoke Control Design Request",
+      "cfdLink": "CFD Analysis"
     }
   },
   "teknikServis": {
     "meta": {
-      "title": "Technical Service | Novves",
-      "description": "NOVVES technical service — post-sales support, fault resolution, spare parts supply and maintenance."
+      "title": "Technical Service | novels",
+      "description": "NOVVES technical service — after-sales support, fault diagnosis, on-site service, spare parts and maintenance services."
     },
     "breadcrumb": {
-      "home": "Home",
+      "home": "Home Page",
       "services": "Services",
       "current": "Technical Service"
     },
@@ -232,102 +605,722 @@
       "badge": "Services",
       "titlePart1": "Technical",
       "titleHighlight": "Service",
-      "subtitle": "Fast response, reliable solution.",
+      "subtitle": "After-sales support, fault diagnosis and field service.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxMeEHI938GIPBawznnHJ6x-kYcgHaWpo7_y-tA45eMLw1dyeWfXXQBpCwEMANg3xFir1BVv2FvVPmirhn-b4X9ul6YnVOKv9MB3UpQFZ0q2SP9FJy10ZgIbYjHLJaI3_lh28-9sUCR6Hr_mfEskGE8ZYUVySQcLt_x1PQzzeF3GGizQ3xAhnrzwB9H5OHa44K6JxUM4zTsxQmwNZtsJeHi-uacZe64iuYrnFAP9LU3XBpJ4wbk0KXrbGtNtq3-uVCmu_EqwmJnLE",
       "weekdays": "Weekdays 08:30 – 18:00",
-      "emailSupport": "Technical support via email"
+      "emailSupport": "Technical support by email"
     },
-    "intro": "Novves Technical Service Department is at your service to provide fast and effective solutions for your post-sales support, fault resolution, spare parts supply and maintenance requests.",
+    "intro": [
+      "NOVVES Technical Service Department; It provides after-sales technical support services for fan systems, jet fans, smoke extraction fans, axial fans, industrial fans, air handling units, chiller-supported HVAC systems, control panels and automation solutions.",
+      "As NOVVES, we not only produce products; We support our customers in commissioning, fault diagnosis, maintenance, spare parts supply, performance control and technical documentation processes to support the correct, safe and efficient operation of our products in the field.",
+      "Our technical service approach; It is based on fast response, accurate fault analysis, technical office support, field experience and manufacturer knowledge. Thus, service requests are evaluated not only with temporary interventions, but from an engineering perspective that aims for long-lasting and safe operation of the system."
+    ],
     "serviceTypes": {
-      "sectionLabel": "Our Scope",
+      "sectionLabel": "Our scope",
       "title": "Service Requests",
       "items": [
-        "Installation and commissioning consultancy",
-        "Fault detection and on-site service",
-        "Periodic maintenance and inspection planning",
-        "Spare parts requests",
-        "Product usage and technical documentation support"
+        {
+          "title": "Installation and Commissioning Consultancy",
+          "desc": "After the installation of fan, jet fan, smoke extraction fan, air handling unit, chiller or automation system, technical support is provided for mechanical installation, electrical connection, motor direction, speed control and basic operating controls."
+        },
+        {
+          "title": "Fault Diagnosis and On-Site Service",
+          "desc": "In cases such as sound, vibration, overheating, low performance, engine failure, panel alarm, sensor error or operating irregularity in the system, the source of the fault is evaluated technically."
+        },
+        {
+          "title": "Periodic Maintenance and Control Planning",
+          "desc": "Regular maintenance needs of fan, motor, automation and ventilation systems are evaluated. With periodic control processes, the risk of failure is reduced and system performance and operational safety are supported."
+        },
+        {
+          "title": "Spare Part Requests",
+          "desc": "Suitable spare parts are determined according to the product model, serial number and project information. Technical support is provided for engine, propeller, connection equipment, control elements, sensors and system components."
+        },
+        {
+          "title": "Product Usage and Technical Documentation Support",
+          "desc": "Requests for user manual, maintenance instructions, technical data sheet, product label, certification information, performance data or project document are evaluated by the technical team."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Period",
+      "title": "Technical Service Process",
+      "items": [
+        {
+          "title": "Receiving a Service Request",
+          "desc": "Malfunction, maintenance, spare parts, commissioning or technical support requests submitted by the customer are recorded."
+        },
+        {
+          "title": "Preliminary Technical Evaluation",
+          "desc": "Product model, serial number, project information, fault description, photographs, videos and past service records, if any, are examined."
+        },
+        {
+          "title": "Technical Office Review",
+          "desc": "NOVVES technical office evaluates the request in terms of product information, field conditions, electrical-mechanical suitability, automation scenario and system operating principle."
+        },
+        {
+          "title": "Remote Support or Field Planning",
+          "desc": "Depending on the nature of the request, remote technical guidance can be provided or an on-site service visit can be planned."
+        },
+        {
+          "title": "Fault Diagnosis and Intervention",
+          "desc": "Necessary checks are made in the field. Mechanical assembly, electrical connections, motor operating status, fan direction, panel signals, sensors, vibration and performance values ​​are evaluated."
+        },
+        {
+          "title": "Spare Parts and Solution Suggestion",
+          "desc": "If deemed necessary, suitable spare parts, maintenance operations, adjustment changes, revisions or system improvements are offered."
+        },
+        {
+          "title": "Reporting",
+          "desc": "The examination, detection, intervention and suggestions are recorded with a service form or technical report."
+        }
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Advantages",
+      "title": "Why NOVVES Technical Service?",
+      "items": [
+        {
+          "title": "Quick Return",
+          "text": "Your service requests are evaluated by our technical team and response is provided as soon as possible."
+        },
+        {
+          "title": "Intervention with Manufacturer Information",
+          "text": "The team that knows NOVVES products best is the manufacturer's technical office and field service team. In this way, the fault diagnosis and solution process proceeds more accurately."
+        },
+        {
+          "title": "Technical Office Support",
+          "text": "Service requests are not just field interventions; When necessary, it is evaluated together with engineering, product selection, automation, spare parts and project information."
+        },
+        {
+          "title": "Reducing the Risk of Failure",
+          "text": "Regular maintenance and correct technical control help reduce unexpected stops and performance losses in fan systems."
+        },
+        {
+          "title": "Maintaining System Performance",
+          "text": "Correct service, correct maintenance and use of correct spare parts; It supports the energy efficiency, operational safety and long-lasting performance of the system."
+        },
+        {
+          "title": "After Sales Trust",
+          "text": "NOVVES sees supporting its customers after product delivery as an important part of its corporate service approach."
+        }
       ]
     },
     "form": {
       "sectionLabel": "Request",
       "title": "Technical Service Form",
-      "description": "You can submit your service request by filling out the form. Our technical team will get back to you as soon as possible.",
+      "subtitle": "Send us your service request.",
+      "description": "You can send us your service request regarding your fan, jet fan, smoke extraction fan, axial fan, air handling unit, chiller, automation panel or ventilation system via the form. Our technical team will review your request and get back to you as soon as possible.",
+      "helperIntro": "If possible, sharing the following information in the form will speed up the service process:",
+      "helperFields": [
+        "name surname",
+        "Company Name",
+        "Telephone",
+        "Email",
+        "Project name",
+        "Product model",
+        "Serial number",
+        "Fault or request description",
+        "Product label photo",
+        "Fault photo or video",
+        "emergency situation",
+        "City / field address"
+      ],
       "features": [
-        { "label": "Fast Response", "desc": "Response within 24 hours" },
-        { "label": "Expert Team", "desc": "Certified technical team" },
-        { "label": "Field Intervention", "desc": "Nationwide service network" }
+        {
+          "label": "Quick Response",
+          "desc": "return within 24 hours"
+        },
+        {
+          "label": "Expert Staff",
+          "desc": "Certified technical team"
+        },
+        {
+          "label": "Field Intervention",
+          "desc": "Türkiye-wide service network"
+        }
       ],
       "labels": {
-        "name": "Full Name",
+        "name": "Name Surname",
         "company": "Company Name",
-        "phone": "Phone",
+        "phone": "Telephone",
         "email": "Email",
+        "projectName": "Project Name",
+        "productModel": "Product Model",
+        "serialNumber": "Serial number",
+        "urgency": "Emergency Situation",
+        "location": "City / Field Address",
         "subject": "Subject",
-        "message": "Your Message"
+        "message": "Fault or Request Description"
       },
-      "submit": "Submit",
-      "successTitle": "Request Received",
-      "successMessage": "We will get back to you as soon as possible."
+      "submit": "Create a Technical Service Request",
+      "successTitle": "Your Request Has Been Received",
+      "successMessage": "Our technical team will review your request and get back to you as soon as possible."
+    },
+    "cta": {
+      "sectionLabel": "Technical Service",
+      "title": "Create a Technical Service Request",
+      "subtitle": "NOVVES technical service team; It is at your service for your after-sales support, fault diagnosis, spare parts, maintenance, commissioning and technical documentation requests.",
+      "ctaButton": "Create a Technical Service Request"
     }
   },
   "yerindeKesif": {
     "meta": {
-      "title": "On-Site Survey | Novves",
-      "description": "NOVVES on-site survey service - site inspection, measurement and analysis for project-specific ventilation solutions."
+      "title": "On-Site Discovery | novels",
+      "description": "NOVVES on-site discovery — accurate ventilation, smoke extraction and air conditioning solution with on-site measurement, analysis and engineering data."
     },
     "breadcrumb": {
-      "home": "Home",
+      "home": "Home Page",
       "services": "Services",
-      "current": "On-Site Survey"
+      "current": "On-Site Discovery"
     },
     "hero": {
       "badge": "Services",
-      "titlePart1": "On-Site",
-      "titleHighlight": "Survey",
-      "subtitle": "The first step to accurate project design: on-site measurement, analysis and needs assessment."
+      "titlePart1": "In place",
+      "titleHighlight": "Discovery",
+      "subtitle": "The right ventilation solution for your project starts on site.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdk_YtFP-CGxwZSeNW5Go-mEcB-R91NQ62hvYRFn3kP0HC2labPBROzwKKTpxqfYok2fSTESW5msRiaLDm85uq_9NKpSFvbzh5-qjc9Da7_nJ05xg6ayPg0sV19aNvsnoMYDO7xyCp6adNwFupHsnwBuYl9-fPmugA06vH7qzUFtDtD8_IrmD1oHTUJ5a65jDLQluT_CWnJ4eOW2_R90z6g2G9tAUdfzri7ENaEZVk93euYlLmR1EzYACDMikxjduri48APdqtzMI"
     },
-    "intro": "Accurate data is at the foundation of every ventilation project. NOVVES on-site survey service is the first and most critical step in designing the most efficient and regulation-compliant solution by examining your project needs on-site. Our expert engineers visit your facility to perform detailed measurement, observation and analysis.",
+    "intro": {
+      "paragraphs": [
+        "Accurate field data is the foundation of every successful ventilation, smoke extraction and air conditioning project. NOVVES on-site discovery service; It analyzes the actual conditions of your project in the field and determines the most appropriate fan selection, smoke control design, air flow planning and system solution.",
+        "Our expert technical team; It carries out field measurements, observations and technical evaluations for indoor parking lots, industrial facilities, commercial buildings, production areas, technical volumes, air handling units and chiller applications. Existing mechanical infrastructure, electrical infrastructure, architectural conditions, air flow directions, exhaust and fresh air needs, fire scenarios, installation areas and maintenance access are examined in detail.",
+        "For NOVVES, on-site exploration is not just about measuring. It is the collection of critical engineering data so that the project can be designed safely, efficiently, sustainably and in accordance with regulations."
+      ]
+    },
+    "scope": {
+      "sectionLabel": "Scope of Discovery",
+      "title": "What Do We Examine During the Discovery Process?",
+      "items": [
+        "Project type and purpose of use",
+        "Area size and volume information",
+        "Existing ventilation infrastructure",
+        "Fresh air and exhaust needs",
+        "Air flow directions and pressure losses",
+        "Fan, duct, vent and shaft layouts",
+        "Electrical infrastructure and panel connection points",
+        "Fire scenario and smoke evacuation requirements",
+        "Need for jet fan, axial fan, smoke extraction fan or air handling unit",
+        "Chiller and air conditioning system integration",
+        "Installation, maintenance and service access",
+        "Regulation, standard and project specification requirements"
+      ]
+    },
     "steps": {
-      "sectionLabel": "Process",
-      "title": "Survey Steps",
+      "sectionLabel": "Period",
+      "title": "Discovery Steps",
       "items": [
         {
           "title": "Appointment and Preliminary Information",
-          "desc": "We learn the general characteristics of your project. We conduct a preliminary meeting for facility type, area size and needs analysis."
+          "desc": "We learn the general features of your project, facility type, area size, purpose of use and technical needs. After the initial evaluation, we determine the scope of exploration."
         },
         {
-          "title": "Site Visit and Measurement",
-          "desc": "Our expert team visits the site to examine the space, take measurements and evaluate the existing infrastructure. Airflow directions, temperature distribution and current system status are analyzed."
+          "title": "Field Visit and Measurement",
+          "desc": "NOVVES technical team comes to the site and inspects the area on site. Existing mechanical and electrical infrastructure, air flow directions, installation areas, temperature distribution, system status and application constraints are evaluated."
         },
         {
           "title": "Technical Analysis and Reporting",
-          "desc": "Ventilation requirement calculations, flow rate analyses and regulation compliance checks are performed on the collected data. A detailed survey report is prepared."
+          "desc": "In line with the data received from the field, ventilation need, flow rate requirement, fan selection, smoke evacuation need, automation scenario and regulation compliance are analyzed. When necessary, a detailed reconnaissance report is prepared."
         },
         {
-          "title": "Solution Proposal and Project Design",
-          "desc": "Based on survey data, a project-specific proposal is presented with the most suitable system design, equipment selection and cost analysis."
+          "title": "Solution Proposal and Project Planning",
+          "desc": "According to the discovery results, the most appropriate system design, equipment selection, fan placement, smoke control approach, technical documentation and cost evaluation are created for the project."
         },
         {
-          "title": "Approval and Implementation Start",
-          "desc": "After approving your proposal, production, installation and commissioning processes are planned and put into practice."
+          "title": "Approval and Start of Implementation",
+          "desc": "After the technical solution and offer are approved, production, supply, installation, commissioning and after-sales support processes are planned."
         }
       ]
     },
     "whyImportant": {
-      "sectionLabel": "Why Important",
-      "title": "Why Is On-Site Survey Necessary?",
+      "sectionLabel": "Why is it important?",
+      "title": "Why is On-Site Discovery Necessary?",
       "items": [
-        { "title": "Accurate Design", "desc": "Equipment sizing errors are inevitable in projects done without on-site measurement." },
-        { "title": "Cost Optimization", "desc": "Oversized or undersized equipment selection is prevented with real site data." },
-        { "title": "Regulatory Compliance", "desc": "Compliance of existing building conditions with regulatory requirements is verified on-site." },
-        { "title": "Integration Ease", "desc": "Solutions compatible with existing mechanical and electrical infrastructure can only be determined through a survey." }
+        {
+          "title": "Correct Design",
+          "desc": "In projects prepared without field measurements, the risk of errors in equipment sizing, fan selection, air flow rate and installation points increases. On-site exploration ensures that the system is designed according to real conditions."
+        },
+        {
+          "title": "Cost Optimization",
+          "desc": "With real field data, selection of oversized or undersized equipment is prevented. In this way, investment costs, energy consumption and operating costs are managed more accurately."
+        },
+        {
+          "title": "Regulation and Standard Compliance",
+          "desc": "Project risks are reduced by evaluating fire safety, smoke evacuation, ventilation, electrical infrastructure and occupational safety requirements on site."
+        },
+        {
+          "title": "Ease of Integration",
+          "desc": "Solutions compatible with the existing mechanical, electrical and automation infrastructure can only be accurately determined through on-site exploration."
+        },
+        {
+          "title": "Safer Commissioning",
+          "desc": "The data collected during the discovery phase ensures that the installation and commissioning process progresses faster, in a controlled and smooth manner."
+        }
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Application Areas",
+      "title": "For Which Projects Do We Do On-Site Discovery?",
+      "items": [
+        "Indoor car park ventilation projects",
+        "Smoke and heat extraction systems",
+        "Jet fan systems",
+        "Industrial ventilation projects",
+        "Production plant ventilation",
+        "Commercial building and shopping mall ventilation",
+        "Hotels, hospitals and public buildings",
+        "Air handling unit applications",
+        "Chiller and central cooling systems",
+        "Technical volumes and special engineering projects"
       ]
     },
     "cta": {
-      "sectionLabel": "Free Survey",
-      "title": "Request an on-site survey for your project",
-      "subtitle": "Our expert engineering team visits your facility to perform needs analysis and measurements.",
-      "ctaButton": "Request a Survey"
+      "sectionLabel": "On-Site Discovery",
+      "title": "Let's Examine Your Project On Site",
+      "subtitle": "With NOVVES on-site survey service, we analyze the needs of your project in the field and determine the correct ventilation and smoke control solution with engineering data.",
+      "ctaButton": "Create an On-Site Discovery Request"
+    }
+  },
+  "fanSecimi": {
+    "meta": {
+      "title": "Fan Selection and Technical Project Planning | novels",
+      "description": "NOVVES fan seçimi ve teknik projelendirme — mühendislik odaklı seçim, PerfectusAir destekli analiz ve proje bazlı HVAC çözümleri."
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Fan Selection and",
+      "titleHighlight": "Technical Project Planning",
+      "subtitle": "Choosing the right fan starts with the right engineering data.",
+      "imageSrc": "/images/hizmetler/fan-secimi-teknik-projelendirme.png"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES provides engineering-oriented fan selection and technical project services for industrial ventilation, comfort ventilation, smoke and heat extraction systems, jet fan applications, air handling units and special HVAC projects.",
+        "Fan selection is not just about choosing a product based on flow rate and pressure values. Every project; It should be evaluated by taking into account the intended use, air flow requirement, pressure losses, operating temperature, sound level, engine power, energy efficiency, installation conditions, fire scenario, automation need and relevant standards.",
+        "NOVVES technical office analyzes all these criteria specifically for the project and determines the most suitable fan type, engine power, operating point, performance values ​​and system solution. Thus, the project is not just a product; A correctly selected, technically validated and implementation-ready engineering solution is presented."
+      ]
+    },
+    "technicalOffice": {
+      "sectionLabel": "Technical Office",
+      "title": "NOVVES Technical Office Force",
+      "paragraphs": [
+        "Technical office of NOVVES; It combines product knowledge, production experience, field experience and engineering calculations under the same roof.",
+        "Our technical team; It makes project-based selection and technical evaluation for axial fans, jet fans, smoke extraction fans, industrial fans, roof fans, cellular fans, electric motors, air handling units and special ventilation systems.",
+        "Each fan selection is based not only on catalog values; It is created by taking into account the actual operating conditions of the project, site constraints, energy consumption, maintenance access, long-lasting performance and system security.",
+        "NOVVES technical office contributes to making the right product selection, right system architecture and right application decisions by providing engineering support to the customer before and after the sales process."
+      ]
+    },
+    "perfectusAir": {
+      "sectionLabel": "Digital Tools",
+      "title": "PerfectusAir Fan Seçim Yazılımı ile Veri Destekli Seçim",
+      "paragraphs": [
+        "NOVVES, fan seçim süreçlerinde kendi mühendislik yaklaşımını dijital araçlarla destekler. Bu kapsamda kullanılan PerfectusAir fan seçim yazılımı, projeye uygun fan modellerinin teknik parametreler üzerinden değerlendirilmesine yardımcı olur.",
+        "PerfectusAir ile fan seçimi yapılırken; hava debisi, statik basınç, motor gücü, fan devri, verim, ses seviyesi, çalışma noktası, ürün modeli ve teknik performans değerleri birlikte analiz edilir.",
+        "Bu sayede müşteri ve proje ekipleri için daha net, izlenebilir ve karşılaştırılabilir teknik seçim çıktıları oluşturulur. PerfectusAir, NOVVES teknik ofisinin mühendislik değerlendirmesini destekleyen güçlü bir fan seçim aracıdır."
+      ]
+    },
+    "selectionCriteria": {
+      "sectionLabel": "Selection Criteria",
+      "title": "Criteria We Consider in Fan Selection",
+      "intro": "NOVVES technical office evaluates the following criteria together when selecting fans:",
+      "items": [
+        "Air flow requirement",
+        "Static and total pressure values",
+        "System pressure losses",
+        "Fan operating point",
+        "Engine power and engine efficiency",
+        "fan speed",
+        "sound level",
+        "energy consumption",
+        "operating temperature",
+        "Ambient conditions",
+        "Installation type and location",
+        "maintenance access",
+        "Electrical and automation infrastructure",
+        "Smoke evacuation or fire resistance requirement",
+        "Certification and standards requirements",
+        "Project specifications and customer expectations"
+      ]
+    },
+    "engineeringScope": {
+      "sectionLabel": "Project planning",
+      "title": "Our Technical Project Design Scope",
+      "intro": "After fan selection, technical project support is provided according to the project needs. In this context, the following studies can be done:",
+      "items": [
+        "Product and system selection",
+        "Fan performance evaluation",
+        "Control of flow and pressure calculations",
+        "Jet fan placement suggestions",
+        "Smoke extraction fan selection",
+        "Fresh air and exhaust fan selection",
+        "Air handling unit fan-motor evaluation",
+        "Technical support for chiller and HVAC system integration",
+        "Preparation of technical data sheet",
+        "Product code and model verification",
+        "Technical drawing and measurement control",
+        "Assessment of conformity to project specifications",
+        "Alternative product and solution comparison",
+        "Providing technical support to the proposal file"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Application Areas",
+      "title": "In Which Projects Do We Selection Fans?",
+      "intro": "NOVVES offers fan selection and technical project support for different building types and system needs.",
+      "items": [
+        "Indoor car park ventilation projects",
+        "Jet fan systems",
+        "Smoke and heat extraction systems",
+        "Industrial ventilation projects",
+        "Comfort ventilation applications",
+        "Commercial building and shopping mall ventilation",
+        "Hotels, hospitals and public buildings",
+        "Production facilities",
+        "Technical volumes",
+        "Air handling unit applications",
+        "Chiller and central air conditioning systems",
+        "Project-based special ventilation solutions"
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Value Proposition",
+      "title": "What You Earn with NOVVES",
+      "intro": "NOVVES fan selection and technical project design service contributes to the progress of your project with safer, more efficient and more accurate engineering decisions.",
+      "items": [
+        "Choosing the right fan for the project",
+        "Engineering verification with technical office support",
+        "PerfectusAir fan seçim yazılımı ile veri destekli seçim",
+        "Optimized solution in terms of flow, pressure, engine power and sound level",
+        "Correct placement approach in smoke extraction and jet fan systems",
+        "More controlled design in terms of energy efficiency and operating costs",
+        "Evaluation in accordance with technical specifications and project needs",
+        "Clear technical documentation for procurement, consultants, contractors and project teams",
+        "Strong coordination between production, technical office and field team"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Fan Selection",
+      "title": "Let's Choose the Right Fan for Your Project Together",
+      "subtitle": "NOVVES technical office helps you determine the most suitable fan, motor and system solution by analyzing the needs of your project.",
+      "paragraph": "You can contact our technical team for your industrial ventilation, smoke extraction fan, jet fan system, axial fan, air handling unit or special HVAC project.",
+      "ctaButton": "Get Technical Support for Fan Selection"
+    }
+  },
+  "bakimPerformans": {
+    "meta": {
+      "title": "Maintenance and Performance Control | novels",
+      "description": "NOVVES maintenance and performance control — safe, efficient and long-lasting operation of fans, motors and ventilation systems."
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Maintenance and",
+      "titleHighlight": "Performance Control",
+      "subtitle": "Technical maintenance service for long-lasting, safe and efficient operation in fan, motor and ventilation systems.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJ5JMO3HOjNDZbtPhy07ir84gR5S9heH0Bj7ujN3CsCTFsR1u_bMp4TPJ52F0pYrDEPuqDsLsLK-t5xxRKgaMRbrWEsK62FLYa9zGEiLJFgzkQ-sHQA-fxyhLnNx8FXJgJ8kIsQ5aiAZxhqXIqFbaQCX_MIv6r0FQPI2OgRrP0N_gpWt7FC1CtuDUMoyt_z_fFZkKMPPMPVK0BqSwk3FlDMIUcB_9aQtiKgMOFiRULZonSaNHj_VFoSbZoekVxTn_L416XlRrPIPs"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES provides maintenance and performance control services for fan systems, jet fans, smoke extraction fans, axial fans, industrial fans, air handling units, chiller-supported HVAC systems, control panels and automation infrastructures.",
+        "Regular maintenance and performance control are as critical as correct product selection and correct installation in ventilation systems. Over time, contamination, vibration, bearing wear, engine load increase, electrical connection problems, sensor errors, air flow decrease or automation scenario problems may negatively affect system efficiency.",
+        "NOVVES maintenance and performance control service; It ensures that mechanical, electrical, aerodynamic and operational controls are evaluated together to support the safe, efficient and sustainable operation of the system."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Our scope",
+      "title": "Maintenance and Control Services",
+      "items": [
+        {
+          "title": "Fan and Motor Controls",
+          "desc": "Fan body, propeller, motor, fasteners, bearings, vibration elements, protection cages and mechanical connections are checked. Basic operating values ​​such as motor operating current, motor direction, noise, vibration and heating are evaluated."
+        },
+        {
+          "title": "Jet Fan System Control",
+          "desc": "In closed car park jet fan systems, fan placement, air direction performance, engine operation, connection points, vibration level, automation signals and scenario-based operating status are checked."
+        },
+        {
+          "title": "Smoke Evacuation Fan Control",
+          "desc": "In smoke and heat extraction fans, engine, propeller, body, connection equipment, electrical infrastructure, control panel and operating conditions depending on the fire scenario are evaluated."
+        },
+        {
+          "title": "Air Handling Unit and HVAC Controls",
+          "desc": "Air handling unit fans, filter status, motor-fan group, belt-pulley structure, dampers, sensors, automation connections, air flow rate and system operating conditions are checked."
+        },
+        {
+          "title": "Chiller Assisted System Control",
+          "desc": "In chiller-assisted HVAC systems, performance impacts associated with fan-coil, air handling unit, automation and air-side equipment are evaluated holistically. Technical guidance to optimize system balance is presented in the form of a report."
+        },
+        {
+          "title": "Automation and Control Panel Control",
+          "desc": "MCC / DDC panels, frequency inverters, contactors, protection equipment, sensor connections, fire alarm signals, CO sensors and BMS integration are checked."
+        },
+        {
+          "title": "Performance Measurement and Evaluation",
+          "desc": "System operating values; It is evaluated in terms of air flow rate, pressure, motor current, vibration, sound level, temperature, fan speed and operating scenarios. Optimization suggestions are offered when necessary."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Maintenance Process",
+      "title": "Service Content",
+      "items": [
+        {
+          "title": "Preliminary Evaluation",
+          "desc": "System type, product model, project information, working conditions, maintenance history and existing complaints are evaluated."
+        },
+        {
+          "title": "Field Control",
+          "desc": "NOVVES technical team carries out mechanical, electrical and operational checks in the field. Fan, motor, panel, sensor, connection equipment and system components are examined."
+        },
+        {
+          "title": "Basic Performance Controls",
+          "desc": "Air flow, motor operating current, fan speed, sound, vibration, heating, automation responses and system behavior are controlled."
+        },
+        {
+          "title": "Failure Risk and Nonconformity Detection",
+          "desc": "Loose connections, vibration sources, engine strain, sensor errors, incorrect operating scenarios, maintenance deficiencies or performance losses are identified."
+        },
+        {
+          "title": "Optimization Suggestions",
+          "desc": "Speed ​​adjustment, automation scenario, maintenance plan, spare parts need, cleaning or technical improvement suggestions are prepared for the system to operate more efficiently."
+        },
+        {
+          "title": "Reporting",
+          "desc": "Checks made, detected nonconformities, suggestions and points requiring urgent intervention, if any, are recorded with a technical service form or maintenance report."
+        },
+        {
+          "title": "Periodic Maintenance Planning",
+          "desc": "Periodic maintenance intervals can be planned according to the intensity of use of the system, working environment, product type and project criticality."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Why is it important?",
+      "title": "Why are Maintenance and Performance Control Necessary?",
+      "items": [
+        {
+          "title": "Reduces the Risk of Malfunction",
+          "text": "Thanks to regular inspection, mechanical loosening, vibration, motor strain, electrical connection problems and sensor errors can be detected at an early stage."
+        },
+        {
+          "title": "Supports Energy Efficiency",
+          "text": "Dirty, out-of-adjustment or stressed fan systems may consume more energy. Performance control contributes to more efficient operation of the system."
+        },
+        {
+          "title": "Extends System Life",
+          "text": "Correct maintenance supports the healthier operation of fan, motor, bearing, propeller, panel and automation components."
+        },
+        {
+          "title": "Increases Business Security",
+          "text": "Regular inspection of critical equipment such as smoke extraction fans, jet fans and indoor car park ventilation systems is of great importance for safe operation."
+        },
+        {
+          "title": "Prevents Performance Loss",
+          "text": "Contamination, wear, incorrect adjustment or airflow problems that occur over time can reduce system performance. The maintenance and control process ensures early detection of these losses."
+        },
+        {
+          "title": "Strengthens the After-Sales Process",
+          "text": "Regular maintenance records; It helps manage service, warranty, spare parts and technical support processes more accurately."
+        }
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Performance Oriented Maintenance with NOVVES",
+      "title": "Holistic Technical Assessment",
+      "paragraphs": [
+        "NOVVES maintenance and performance control service is not only equipment control; It is a technical service that evaluates the operating logic of the system, field conditions and engineering requirements together.",
+        "Our technical service team works in coordination with the NOVVES technical office when necessary and provides support on fan selection, automation scenario, spare parts, performance analysis and system optimization.",
+        "In this way, it is not just whether the system works or not; It is evaluated whether it works correctly, efficiently, safely and in accordance with the project purpose."
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Application Areas",
+      "title": "For Which Systems Do We Perform Maintenance and Performance Control?",
+      "items": [
+        "Jet fan systems",
+        "Smoke and heat extraction fans",
+        "axial fans",
+        "industrial fans",
+        "roof fans",
+        "Cell fans",
+        "exhaust fans",
+        "fresh air fans",
+        "air handling units",
+        "Chiller assisted HVAC systems",
+        "MCC / DDC control boards",
+        "Indoor car park ventilation systems",
+        "smoke control systems",
+        "Project-based special ventilation systems"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Maintenance Request",
+      "title": "Create Your Maintenance Request",
+      "subtitle": "You can get maintenance and performance control support from NOVVES technical team for your fan, jet fan, smoke extraction system, air handling unit, chiller-supported HVAC system, automation panel or ventilation system.",
+      "paragraph": "Let us examine your system on site, evaluate its performance and share our technical recommendations for safe, efficient and long-lasting operation.",
+      "ctaButton": "Create a Maintenance and Performance Control Request"
+    }
+  },
+  "egitimDanismanlik": {
+    "meta": {
+      "title": "Training and Technical Consultancy | novels",
+      "description": "NOVVES training and technical consultancy — engineering-oriented knowledge support for fans, smoke control, CFD, commissioning and automation."
+    },
+    "hero": {
+      "badge": "Services",
+      "titlePart1": "Education and",
+      "titleHighlight": "Technical Consultancy",
+      "subtitle": "Engineering-focused technical information support for product, system and project teams.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3xcOoqyeafZ20LqVAF2QXkPSw0Xj5WIi6QJ_zDjZ2WgptUvNqbgsiyA_pyORA2OP7SeQ8s1yK61K1gEuWa7CCR9K3i210vBxit-ZTVS7yKGTa4t56Mpo6nGcAzHpnfjuL5fO0VH857GDmDaHtedp7AJh-VVntJoZi8sM0te2FKESj0k2Nf68qAoRmWgz2HwIXSzo5O6Dnp0xbFABrvjWEmAXLxPe6j2V4yyMyxlrq_uzrv2bJsQqYdGrZK9La9FRaZou7ZTbCR40"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES provides training and technical consultancy services for fan systems, jet fans, smoke extraction fans, axial fans, industrial fans, air handling units, chiller-supported HVAC systems, automation panels and smoke control systems.",
+        "In ventilation and smoke control systems, as well as choosing the right product, understanding the system correctly, using it correctly, performing correct maintenance and interpreting it correctly by the project teams is also critical. NOVVES training and technical consultancy service; It provides information support to operating teams, maintenance personnel, project companies, mechanical installation teams, contractors, consultants and technical purchasing teams.",
+        "For NOVVES, training is not just about product description. Aim; It is to explain in an understandable way the operating principle of the system, safe usage rules, maintenance needs, automation scenarios, fan performance and project-specific technical requirements."
+      ]
+    },
+    "trainingScope": {
+      "sectionLabel": "Our Training Scope",
+      "title": "Technical Training and Consultancy Topics",
+      "items": [
+        {
+          "title": "Fan Systems Training",
+          "desc": "The working principles, usage areas, selection criteria and maintenance requirements of axial fans, jet fans, smoke extraction fans, industrial fans, roof fans and cell fans are explained."
+        },
+        {
+          "title": "Smoke Control Systems Training",
+          "desc": "The working logic of smoke control systems in indoor car parks, industrial facilities and large volume structures, jet fan placement, exhaust and fresh air organization, fire scenarios and automation approach are explained."
+        },
+        {
+          "title": "CFD Analysis and Project Evaluation Consultancy",
+          "desc": "Technical support is provided on how to read CFD analysis results and how to reflect air flow, smoke dispersion, temperature distribution, CO concentration, visibility and fan placement outputs into project decisions."
+        },
+        {
+          "title": "Commissioning and User Training",
+          "desc": "After the system is put into operation, the operation or maintenance team is informed about basic usage, points that need attention, operating modes, alarm situations and maintenance periods."
+        },
+        {
+          "title": "Maintenance and Troubleshooting Training",
+          "desc": "Common malfunctions in fan, motor, panel, sensor, automation and HVAC systems, basic control steps, maintenance needs and safe intervention limits are explained."
+        },
+        {
+          "title": "Automation and Control Scenarios Training",
+          "desc": "Technical information is provided about MCC / DDC control panels, CO sensors, fire alarm signals, BMS integration, normal ventilation mode, fire mode and manual operation scenarios."
+        },
+        {
+          "title": "Product Selection and Technical Documentation Consultancy",
+          "desc": "Evaluation is made together with the technical teams regarding fan selection, technical data sheets, product codes, performance values, certification scope, user manuals and project documents."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Consulting Process",
+      "title": "Service Content",
+      "items": [
+        {
+          "title": "Needs Analysis",
+          "desc": "The purpose of the training or consultancy request is determined. Participant profile, project type, product group, system scope and technical needs are evaluated."
+        },
+        {
+          "title": "Content Planning",
+          "desc": "Training content; It is prepared according to product group, application area, project type, maintenance need, smoke control scenario or technical problem."
+        },
+        {
+          "title": "Technical Training / Consulting Session",
+          "desc": "Education; It can be held on-site, online or in a project-specific technical meeting format. Explanation is made through products, system diagrams, application examples, maintenance steps and technical documents."
+        },
+        {
+          "title": "Q&A and Application Evaluation",
+          "desc": "Participants' questions regarding the project, product, maintenance, malfunction, automation or commissioning processes are answered by the technical team."
+        },
+        {
+          "title": "Documentation and Tracking",
+          "desc": "When necessary, training notes, technical documents, maintenance instructions, user manuals or project-specific suggestions are shared."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Why is it important?",
+      "title": "Why is Training and Technical Consultancy Necessary?",
+      "items": [
+        {
+          "title": "Ensures Correct Use of the System",
+          "text": "Correct understanding of fan, jet fan, smoke extraction and automation systems; It reduces the risks of misuse, incorrect intervention and unnecessary malfunction."
+        },
+        {
+          "title": "Increases the Quality of Care",
+          "text": "Maintenance teams' better knowledge of products and system components enables periodic checks to be carried out more accurately."
+        },
+        {
+          "title": "Shortens Fault Response Time",
+          "text": "Knowing the basic fault symptoms, alarm conditions and control steps speeds up the initial evaluation process."
+        },
+        {
+          "title": "Strengthens Technical Decisions of Project Teams",
+          "text": "Accurate information on fan selection, CFD analysis, smoke control design, automation scenario and technical documentation contributes to making healthier project decisions."
+        },
+        {
+          "title": "Supports Safe Business",
+          "text": "Trained personnel in critical systems such as smoke extraction fans, jet fan systems and closed car park ventilation systems provide a significant advantage in terms of operational safety."
+        },
+        {
+          "title": "Supports Product Lifecycle and System Performance",
+          "text": "Correct use and correct maintenance approach; It contributes to longer life and efficient operation of fan, motor, panel, sensor and system components."
+        }
+      ]
+    },
+    "audience": {
+      "sectionLabel": "Target group",
+      "title": "Who is it suitable for?",
+      "intro": "NOVVES training and technical consultancy service is suitable for the following people and teams:",
+      "items": [
+        "Business technical teams",
+        "maintenance teams",
+        "Mechanical installation companies",
+        "Electrical and automation teams",
+        "Project authors",
+        "fire consultants",
+        "Contractor companies",
+        "Purchasing and technical purchasing teams",
+        "Dealers and representatives",
+        "Service teams",
+        "Facility management teams",
+        "Advisor and controller teams"
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Application Areas",
+      "title": "For Which Systems Do We Provide Training?",
+      "items": [
+        "Jet fan systems",
+        "Smoke and heat extraction fans",
+        "axial fans",
+        "industrial fans",
+        "roof fans",
+        "Cell fans",
+        "Exhaust and fresh air fans",
+        "air handling units",
+        "Chiller assisted HVAC systems",
+        "MCC / DDC control boards",
+        "Indoor car park ventilation systems",
+        "smoke control systems",
+        "CFD analysis outputs",
+        "Project-based special ventilation solutions"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Increase Your Technical Knowledge Power with NOVVES",
+      "title": "Engineering-Focused Education Approach",
+      "paragraphs": [
+        "NOVVES training and technical consultancy service; It brings together manufacturer knowledge, technical office experience, field service experience and project engineering approach.",
+        "Our aim; To support not only the installation of products and systems, but also their correct understanding, correct use and safe operation in the long term.",
+        "You can receive training and consultancy support for your team on fan systems, smoke control design, CFD analysis, commissioning, maintenance, troubleshooting or technical documentation."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Training Request",
+      "title": "Create a Training and Technical Consultancy Request",
+      "subtitle": "NOVVES technical team; It helps you plan a training and consultancy program specific to your institution, project or team.",
+      "ctaButton": "Create a Training and Technical Consultancy Request"
     }
   }
 }

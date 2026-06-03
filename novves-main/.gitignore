@@ -20,6 +20,12 @@
 # production
 /build
 
+# i18n translation checkpoints
+**/*.tr-to-locale.checkpoint.json
+data/legal-locales/*.tr-to-locale.checkpoint.json
+**/*.en-to-*.checkpoint.json
+**/*.tr-to-*.checkpoint.json
+
 # misc
 .DS_Store
 *.pem

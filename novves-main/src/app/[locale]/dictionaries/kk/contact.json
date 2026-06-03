@@ -70,5 +70,171 @@
     "title2": "БАҚ",
     "desc": "Бізді әлеуметтік желілердегі аккаунттарымызда бақылаңыз және оқиғалар туралы хабардар болыңыз.",
     "visitPage": "Бетке кіріңіз"
+  },
+  "iletisimHub": {
+    "breadcrumbHome": "Үй",
+    "breadcrumbSection": "Байланыс және қолдау",
+    "breadcrumbCurrent": "Хабарласыңыз",
+    "sidebarSubtitle": "Контакт орталығы",
+    "navContactSupport": "Байланыс және қолдау",
+    "navContact": "Байланыс",
+    "navTechnicalSupport": "Техникалық қолдау сұрауы",
+    "navPartners": "Стратегиялық серіктестер",
+    "navGlobalPartners": "Біздің ғаламдық серіктестеріміз",
+    "navPartnership": "Шешім серіктестігі",
+    "workingHours": "Жұмыс уақыты",
+    "weekdays": "Жұмыс күндері",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "сенбі",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "жексенбі",
+    "sundayClosed": "Жабық",
+    "downloadSpecs": "Техникалық құжаттар",
+    "heroBadge": "Байланыс және қолдау",
+    "heroTitle": "Салайық",
+    "heroTitleLine2": "Болашақ бірге.",
+    "heroDesc": "Біздің NOVVES сарапшылар тобы техникалық қолдау, жобалар бойынша кеңес беру және стратегиялық шешімдер үшін осында.",
+    "formTitle": "Байланыс формасы",
+    "formDesc": "Жобаңыз туралы толық ақпарат алу үшін төмендегі пішінді толтырыңыз.",
+    "successMessage": "Хабарлама сәтті жіберілді. Біз сізге жақын арада хабарласамыз.",
+    "labelName": "Толық аты-жөні",
+    "labelCompany": "Компания атауы",
+    "labelEmail": "Электрондық пошта",
+    "labelPhone": "Телефон",
+    "labelDepartment": "Бөлім",
+    "labelSubject": "Тақырып",
+    "labelMessage": "Сенің хатың",
+    "placeholderName": "Толық аты-жөніңіз",
+    "placeholderCompany": "Сіздің ұйымыңыз",
+    "placeholderEmail": "corporate@email.com",
+    "placeholderPhone": "+1 (___) ___-____",
+    "placeholderSelect": "таңдаңыз",
+    "placeholderSubject": "Тақырып жолы",
+    "placeholderMessage": "Жобаңыз немесе сұрағыңыз туралы мәліметтер...",
+    "departments": [
+      "Техникалық қызмет",
+      "Сайттағы сауалнама",
+      "Өнім туралы сұрау немесе қолдау",
+      "Техникалық кеңес беру",
+      "Кейінгі сұрау"
+    ],
+    "kvkkConsent": "Осы пішінді жіберу арқылы сіз жеке деректеріңізді қолданыстағы деректерді қорғау заңына сәйкес өңдеуге келісесіз.",
+    "submit": "Пішінді жіберу",
+    "locationsTitle": "Біздің орындар",
+    "locationsDesc": "Түркия бойынша біздің операциялық орталықтарымызға жетіңіз.",
+    "getDirections": "Бағыттарды алу",
+    "locations": [
+      {
+        "id": "hq",
+        "badge": "Басты кеңсесі",
+        "title": "Стамбул кеңсесі",
+        "address": "19 мамыр Мах. Сүмер Сок.\nZitaş Plaza C2 Blok №:7\nКадыкөй / Стамбул"
+      },
+      {
+        "id": "factory",
+        "badge": "Factory",
+        "title": "Ялова өндірістік зауыты",
+        "address": "Taşköprü Merkez Mah. Чайдере Сок.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Ялова"
+      },
+      {
+        "id": "service",
+        "badge": "Техникалық қызмет",
+        "title": "Қызмет көрсету орталығы",
+        "address": "Дудулла ұйымдасқан индустриялық аймағы\nҮмрание / Стамбул"
+      }
+    ],
+    "fabLabel": "Тікелей қолдау көрсету"
+  },
+  "sosyalMedyaHub": {
+    "breadcrumbHome": "Үй",
+    "breadcrumbContact": "Байланыс",
+    "breadcrumbSocialMedia": "Әлеуметтік медиа",
+    "heroTitle1": "ӘЛЕУМЕТТІК",
+    "heroTitle2": "HUB",
+    "heroDesc": "Негізгі жиілікті таңдаңыз. Жаһандық және жергілікті ағындар бойынша жеткізілетін инженерлік түсініктер.",
+    "channels": {
+      "instagram": {
+        "label": "Instagram",
+        "titleLine1": "Көрнекі",
+        "titleLine2": "Үздік",
+        "trLink": "TR FEED",
+        "globalLink": "Жаһандық арна"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "titleLine1": "Корпоративтік",
+        "titleLine2": "Түсініктер",
+        "trLink": "TR NETWORK",
+        "globalLink": "ЖАҢАЛЫҚ ЖЕЛІ"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "titleLine1": "Тікелей",
+        "titleLine2": "Арна",
+        "trLink": "TR БАЙЛАНЫС",
+        "globalLink": "ЖАҢАЛЫҚ БАЙЛАНЫС"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "titleLine1": "Хабар тарату",
+        "titleLine2": "Хаб",
+        "trLink": "TR CHANEL",
+        "globalLink": "ЖАҢАЛЫҚ АРНА"
+      }
+    },
+    "momentsTitle1": "СӘТТЕР",
+    "momentsTitle2": "ИННОВАЦИЯ",
+    "momentsDesc": "Инженерлік жетістіктер мен қауымдастықтың маңызды оқиғаларының таңдалған тірі мұрағаты.",
+    "filterLatest": "Сүзгі: соңғы",
+    "viewArchive": "Мұрағатты қарау",
+    "featuredPost": "Таңдаулы пост",
+    "share": "Бөлісу",
+    "caseStudy": "Case Study",
+    "statsValue": "113+",
+    "statsLabel": "Бүкіл әлем бойынша жеткізілетін жобалар",
+    "subscribeTitle1": "ҚОСЫЛЫҢЫЗ",
+    "subscribeTitle2": "ЭВОЛЮЦИЯ",
+    "subscribeDesc": "Біздің техникалық брифингке жазылыңыз және әуе қозғалысының инженериясындағы жаңалықты ешқашан жіберіп алмаңыз.",
+    "subscribePlaceholder": "Бизнес электрондық поштаңызды енгізіңіз",
+    "subscribeButton": "Жазылу",
+    "subscribeSuccess": "Рахмет - сіз тізімдесіз.",
+    "backToContact": "Байланысқа оралу",
+    "feedPosts": {
+      "featured": {
+        "alt": "2M Logistics Gebze қоймасы — Novves реактивті желдеткіш жүйесі",
+        "title": "2M LOGISTICS GEBZE",
+        "titleLine2": "ҚОЙМА",
+        "description": "NOVVES әзірлеген және жеткізген реактивті желдеткіш түтінін бақылау және желдету шешімдері.",
+        "likes": "2.4k",
+        "comments": "184"
+      },
+      "square-1": {
+        "alt": "ASELSAN Конья өндірістік нысанын желдету жобасы",
+        "title": "ASELSAN KONYA",
+        "likes": "842",
+        "comments": "32"
+      },
+      "square-2": {
+        "alt": "Зейтинбурнудағы 3S Kale Topaz тұрғын үй жобасы",
+        "title": "3S KALE TOPAZ",
+        "likes": "1.2k",
+        "comments": "56"
+      },
+      "tall": {
+        "alt": "Adana Yüreğir 100 төсектік аурухана — түтін мен жылу шығару",
+        "title": "ADANA YÜREĞİR ауруханасы",
+        "likes": "560",
+        "comments": "21"
+      },
+      "stats": {
+        "alt": ""
+      },
+      "square-3": {
+        "alt": "Адьяман муниципалитетінің көп қабатты автотұрағын желдету",
+        "title": "АДИЯМАН АВТОПАРК",
+        "likes": "430",
+        "comments": "18"
+      }
+    }
   }
 }

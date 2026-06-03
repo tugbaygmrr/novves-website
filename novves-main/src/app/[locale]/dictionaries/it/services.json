@@ -1,116 +1,319 @@
 {
+  "genelBakis": {
+    "meta": {
+      "title": "Servizi | romanzi",
+      "description": "NOVVES ingegneria end-to-end, supporto al progetto e servizi sul campo: dal sopralluogo in loco all'assistenza tecnica."
+    },
+    "hero": {
+      "badge": "Panoramica",
+      "titlePart1": "NOVVES",
+      "titleHighlight": "Servizi",
+      "subtitle": "Ingegneria end-to-end, supporto al progetto e servizi sul campo",
+      "imageSrc": "/images/page-hero/cozumler-main.jpg"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES non è solo un produttore che fornisce gruppi di ventilazione industriali e sistemi di condizionamento. È un partner di soluzioni che analizza ogni progetto nell'ambito delle proprie condizioni tecniche, combina il prodotto giusto con la giusta applicazione e supporta il processo progettuale con disciplina ingegneristica.",
+        "Nella ventilazione industriale, ventilazione comfort, ventilazione di parcheggi, sistemi di estrazione di fumo e calore, progettazione di controllo del fumo e applicazioni HVAC basate su progetto; Offriamo un servizio end-to-end dalla scoperta in loco alla pianificazione tecnica del progetto, dall'analisi CFD alla selezione dei ventilatori, dalla messa in servizio al servizio tecnico post-vendita.",
+        "Il nostro obiettivo in ogni processo di servizio è; Sviluppare soluzioni impiantistiche sicure, efficienti, sostenibili e durature. Per questo motivo NOVVES progetta non solo in base al prodotto; Valuta olisticamente il flusso d'aria, la sicurezza antincendio, l'efficienza energetica, le condizioni applicative, l'accesso per la manutenzione, gli scenari di automazione e le prestazioni operative a lungo termine."
+      ]
+    },
+    "engineeringApproach": {
+      "sectionLabel": "Approccio",
+      "title": "Approccio al servizio incentrato sull'ingegneria",
+      "paragraphs": [
+        "Il modello di servizio NOVVES inizia con una corretta comprensione delle esigenze del progetto. Vengono valutate insieme le condizioni del sito, la struttura architettonica, la destinazione d'uso, i requisiti di flusso d'aria, le perdite di pressione, la resistenza alla temperatura, lo scenario di incendio, i requisiti di evacuazione dei fumi e gli standard pertinenti.",
+        "Grazie a questo approccio, non solo è disponibile il prodotto appropriato per ogni progetto; Vengono pianificati la giusta architettura di sistema, il giusto posizionamento dei ventilatori, il giusto scenario di automazione e il giusto processo di supporto tecnico."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Ambito",
+      "title": "Il nostro ambito di servizio",
+      "intro": "I servizi NOVVES sono offerti nelle seguenti categorie principali:"
+    },
+    "lifecycle": {
+      "sectionLabel": "Supporto",
+      "title": "Supporto dall'inizio del progetto al post-vendita",
+      "paragraph": "NOVVES supporta i propri clienti non solo nella fase di proposta o di consegna del prodotto del processo di progetto, ma durante l'intero ciclo di vita. Determinare la giusta esigenza all'inizio del progetto, effettuare analisi tecniche, creare la selezione di prodotti e sistemi, preparare la documentazione necessaria, eseguire processi di messa in servizio sul campo e servizi di supporto tecnico post-vendita sono le parti fondamentali dell'approccio olistico al servizio di NOVVES."
+    },
+    "applicationAreas": {
+      "sectionLabel": "Settori",
+      "title": "In quali aree serviamo?",
+      "intro": "NOVVES; Fornisce servizi di ventilazione e controllo del fumo supportati dall'ingegneria in diversi tipi di edifici e settori. Le nostre principali aree di applicazione:",
+      "items": [
+        "Parcheggi coperti",
+        "impianti industriali",
+        "Aree di produzione",
+        "edifici commerciali",
+        "centri commerciali",
+        "Alberghi",
+        "edifici pubblici",
+        "Tunnel e progetti infrastrutturali",
+        "Volumi tecnici",
+        "Applicazioni di progetti speciali",
+        "Progetti HVAC e condizionamento dell'aria"
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Differenza",
+      "title": "Perché i servizi NOVVES?",
+      "paragraphs": [
+        "La differenza principale dei servizi NOVVES è che unisce capacità di produzione e conoscenze ingegneristiche sotto lo stesso tetto. In questo modo, progetti; Vengono valutati in base alle effettive condizioni del campo, alle esigenze applicative e agli obiettivi prestazionali, non solo ai valori di catalogo.",
+        "Lavorare con NOVVES; Significa scelta giusta del ventilatore, sistema di estrazione fumi affidabile, soluzione di ventilazione efficiente, supporto per la documentazione tecnica, capacità di messa in servizio sul campo e supporto tecnico post-vendita."
+      ]
+    },
+    "servicesGrid": {
+      "sectionLabel": "Servizi",
+      "title": "I nostri servizi di ingegneria e sul campo",
+      "detailsLabel": "Visualizza dettagli"
+    },
+    "hubCards": [
+      {
+        "slug": "yerinde-kesif",
+        "excerpt": "I nostri ingegneri esperti vengono presso la vostra sede, analizzano i requisiti tecnici e raccolgono dati per il layout del sistema più ottimizzato.",
+        "category": "Servizio sul campo"
+      },
+      {
+        "slug": "duman-kontrol-sistemi-tasarimi",
+        "excerpt": "Progettiamo i vostri jet fan e sistemi di estrazione fumi con un approccio ingegneristico supportato da CFD in conformità con le normative.",
+        "category": "Progetto",
+        "badge": "Ingegneria"
+      },
+      {
+        "slug": "cfd-analizi",
+        "excerpt": "Verifica preventivamente le prestazioni dei tuoi sistemi di estrazione e ventilazione dei fumi con simulazioni di meccanica dei fluidi in un ambiente virtuale.",
+        "category": "Ingegneria",
+        "badge": "Processo critico"
+      },
+      {
+        "slug": "fan-secimi-ve-teknik-projelendirme",
+        "excerpt": "Selezione ottimale del ventilatore in base alla portata, alla pressione e alle condizioni ambientali; Progettazione tecnica integrata con condotto, silenziatore ed accessori.",
+        "category": "Pianificazione del progetto"
+      },
+      {
+        "slug": "devreye-alma",
+        "excerpt": "Garantiamo un avvio sicuro ed efficiente testando la conformità dei sistemi agli standard dopo l'installazione.",
+        "category": "APPLICAZIONE"
+      },
+      {
+        "slug": "teknik-servis",
+        "excerpt": "Garantiamo la continuità dei vostri sistemi di ventilazione con il nostro supporto tecnico ininterrotto 24 ore su 24, 7 giorni su 7 e i nostri team di risposta alle emergenze.",
+        "category": "Operazione"
+      },
+      {
+        "slug": "bakim-ve-performans-kontrolu",
+        "excerpt": "Aumenta l’efficienza energetica con piani di manutenzione periodica e riduci i costi operativi allungando la vita dei tuoi sistemi.",
+        "category": "Ciclo vitale"
+      },
+      {
+        "slug": "egitim-ve-teknik-danismanlik",
+        "excerpt": "Offriamo formazione tecnica speciale ai vostri team operativi e servizi di consulenza sulle normative sul controllo del fumo.",
+        "category": "Conoscenza"
+      }
+    ],
+    "cta": {
+      "sectionLabel": "Comunicazione",
+      "title": "Determiniamo insieme il servizio giusto per il tuo progetto",
+      "paragraphs": [
+        "Puoi contattare il team NOVVES per le tue esigenze di ventilazione industriale, sistema di controllo del fumo, posizionamento dei ventilatori, analisi CFD, selezione dei ventilatori, messa in servizio o assistenza tecnica.",
+        "Valutiamo insieme i requisiti tecnici del tuo progetto; Sviluppiamo una soluzione di sistema sicura, efficiente e duratura."
+      ],
+      "ctaButton": "Crea una richiesta di servizio per il tuo progetto"
+    }
+  },
   "cfdAnalizi": {
     "meta": {
-      "title": "Analisi CFD | Novves",
-      "description": "Analisi CFD NOVVES (fluidodinamica computazionale) — scenari reali, dati reali, soluzioni sicure."
+      "title": "Analisi CFD | romanzi",
+      "description": "Analisi CFD NOVVES: soluzioni di ventilazione e controllo del fumo convalidate con la fluidodinamica computazionale."
     },
     "breadcrumb": {
-      "home": "Inizio",
+      "home": "Pagina iniziale",
       "services": "Servizi",
       "current": "Analisi CFD"
     },
     "hero": {
       "badge": "Servizi",
-      "titlePart1": "Analisi",
-      "titleHighlight": "CFD",
-      "subtitle": "Scenari reali, dati reali, soluzioni sicure.",
+      "titlePart1": "CFD",
+      "titleHighlight": "Analisi",
+      "subtitle": "Soluzioni di ventilazione e controllo del fumo validate con la fluidodinamica computazionale.",
       "stats": [
         {
           "value": "3D",
           "label": "Modello di simulazione"
         },
         {
-          "value": "5",
-          "label": "Parametri di analisi"
+          "value": "7+",
+          "label": "Parametro di analisi"
         },
         {
           "value": "EN 12101-3",
-          "label": "Verifica normativa"
+          "label": "Verifica standard"
         }
       ]
     },
-    "intro": "In NOVVES non produciamo solo ventilatori: offriamo anche soluzioni di ventilazione su misura di progetto e ingegneristiche. Al centro ci sono le analisi CFD (fluidodinamica computazionale) che permettono di testare i progetti prima del cantiere.",
+    "intro": [
+      "Come NOVVES non produciamo solo ventilatori, jet fan, aspiratori di fumo o apparecchi di ventilazione; Sviluppiamo soluzioni di sistema basate sull'ingegneria specifiche per ciascun progetto. Uno dei passaggi più importanti di questo approccio è convalidare numericamente il progetto con l'analisi CFD prima dell'implementazione sul campo.",
+      "CFD, ovvero analisi fluidodinamica computazionale; Consente l'esame tridimensionale del flusso d'aria, della dispersione dei fumi, delle variazioni di temperatura, della concentrazione di CO e dell'effetto ventola in parcheggi interni, impianti industriali, volumi tecnici, strutture a tunnel e grandi aree chiuse.",
+      "NOVVES valuta il posizionamento dei jet fan, la capacità dei ventilatori di scarico, l'organizzazione dell'aria fresca, gli scenari di evacuazione dei fumi e le prestazioni del sistema su base specifica del progetto con analisi CFD. Pertanto, vengono prese decisioni ingegneristiche per quanto riguarda il numero corretto di ventilatori, la corretta posizione dei ventilatori, l'uso ottimale dell'energia e le condizioni di evacuazione più sicure."
+    ],
     "whyCfd": {
       "sectionLabel": "Metodologia",
       "title": "Perché l’analisi CFD?",
+      "intro": "L'analisi CFD consente di valutare i sistemi di ventilazione e di controllo del fumo sulla base delle condizioni effettive del progetto e non solo dei calcoli teorici.",
       "items": [
-        "Le prestazioni del sistema ventilatori sono simulate secondo condizioni ambientali reali.",
-        "Scenari incendio come propagazione fumo, temperatura e gas sono pre-testati.",
-        "Variabili vitali come distanza di visibilità, aumento temperatura e concentrazione CO sono analizzate.",
-        "Si verifica la conformità normativa e i tempi di evacuazione sicuri."
+        {
+          "title": "Le prestazioni del sistema vengono verificate prima dell'implementazione sul campo",
+          "desc": "Prestazioni dei sistemi di ventilazione; Viene simulato tenendo conto della geometria del progetto, del posizionamento delle colonne, delle posizioni delle rampe, dell'altezza del soffitto, dei punti di scarico e delle prese d'aria fresca."
+        },
+        {
+          "title": "Gli scenari di incendio e fumo vengono testati in anticipo",
+          "desc": "Viene analizzato in quale direzione si diffonderà il fumo, in quali zone si concentrerà, come potrà influenzare le vie di fuga e come i jet fan dirigeranno il fumo."
+        },
+        {
+          "title": "Le variabili critiche vengono valutate con dati ingegneristici",
+          "desc": "Parametri come visibilità, aumento della temperatura, velocità dell'aria, densità di CO, strato di fumo, zone morte ed efficienza di scarico vengono esaminati numericamente."
+        },
+        {
+          "title": "Sono supportati la regolamentazione e gli obiettivi di evacuazione sicura",
+          "desc": "Analisi CFD; Contribuisce a prendere decisioni progettuali più affidabili in termini di progettazione del controllo del fumo, ventilazione dei parcheggi, sicurezza antincendio e scenari di evacuazione."
+        }
       ],
-      "resultLabel": "Risultato",
-      "resultText": "Posizionamento corretto, numero ottimale di ventilatori, uso energetico ottimale e massima sicurezza."
+      "resultLabel": "Conclusione",
+      "resultText": "L'obiettivo è il posizionamento corretto, il numero corretto di ventilatori, l'utilizzo ottimale dell'energia e la massima sicurezza."
     },
     "analysisTypes": {
-      "sectionLabel": "Ambito analisi",
+      "sectionLabel": "Ambito di analisi",
       "title": "Parametri di simulazione",
       "items": [
         {
-          "title": "Distribuzione velocità aria",
-          "subtitle": "Analisi velocità",
-          "text": "Direzione, velocità e distribuzione del flusso nello spazio chiuso sono modellate in tre dimensioni. Obiettivo: circolazione su tutto l’ambiente con l’effetto dei jet fan."
+          "title": "Distribuzione della velocità",
+          "subtitle": "Analisi della velocità",
+          "text": "La direzione, la velocità e la distribuzione del flusso d'aria all'interno di uno spazio chiuso sono modellate in tre dimensioni. Viene analizzato se viene fornita una circolazione d'aria sufficiente in tutto l'ambiente con l'effetto dei ventilatori a getto."
         },
         {
-          "title": "Variazione temperatura",
-          "subtitle": "Distribuzione temperatura",
-          "text": "È analizzato come cambia la temperatura ambientale all’altezza utile in caso di incendio. Limiti critici e rischi per la gestione emergenza."
+          "title": "Cambiamento di temperatura",
+          "subtitle": "distribuzione della temperatura",
+          "text": "Viene valutato come cambia la temperatura ambientale a livello umano, nella zona del soffitto e nelle vie di fuga critiche durante lo scenario di incendio. Determinando le zone di temperatura critiche, vengono rivelati i rischi in termini di sicurezza in caso di emergenza."
         },
         {
-          "title": "Valutazione visibilità",
-          "subtitle": "Analisi visibilità",
-          "text": "Per quanto tempo le vie di fuga restano visibili con fumo denso. Misura della riduzione di visibilità per verificare sicurezza evacuazione."
+          "title": "Valutazione della visibilità",
+          "subtitle": "Analisi della visibilità",
+          "text": "Viene analizzato per quanto tempo può essere mantenuta la visibilità sulle vie di fuga sotto il fumo denso. La riduzione della visibilità viene valutata in termini di sicurezza di evacuazione e di risposta dei vigili del fuoco."
         },
         {
-          "title": "Dispersione monossido di carbonio",
-          "subtitle": "Concentrazione CO",
-          "text": "Accumulo nel tempo di CO da scarico in ambienti chiusi come parcheggi ed evacuazione tramite sistema ventilatori."
+          "title": "Rilascio di monossido di carbonio",
+          "subtitle": "Concentrazione di CO",
+          "text": "L’accumulo di CO dovuto ai gas di scarico dei veicoli è modellato in aree come i parcheggi chiusi. Viene analizzata la variazione della concentrazione di CO nel tempo e il modo in cui viene evacuata dal sistema di ventilazione."
         },
         {
-          "title": "Propagazione fumo",
-          "subtitle": "Propagazione fumo",
-          "text": "Direzione e velocità di diffusione del fumo dopo incendio e come viene indirizzato dai jet fan. Formazione e movimento strato fumo simulati in dettaglio."
+          "title": "Diffusione del fumo",
+          "subtitle": "Propagazione del fumo",
+          "text": "Vengono simulati la direzione e la velocità della diffusione del fumo dopo un incendio, la formazione degli strati e il modo in cui viene diretto con l'aiuto dei ventilatori. Vengono valutate l'efficacia dei punti di scarico e le prestazioni della strategia di controllo del fumo."
+        },
+        {
+          "title": "Effetto Jet Fan",
+          "subtitle": "Impatto del Jet Fan",
+          "text": "Vengono analizzati l'effetto dei jet fan sul flusso d'aria, la loro capacità di ridurre le zone morte, le loro prestazioni di indirizzamento verso gli aspiratori e il loro contributo al movimento dell'aria all'interno del sistema."
+        },
+        {
+          "title": "Bilanciamento dell'aria di scarico e dell'aria fresca",
+          "subtitle": "Equilibrio aereo",
+          "text": "Vengono valutati insieme ventilatori di estrazione, prese d'aria fresca, aperture naturali e sistemi di alimentazione meccanica. Vengono esaminati l'equilibrio del sistema, le differenze di pressione e le prestazioni di ricambio dell'aria."
         }
       ]
     },
     "benefits": {
       "sectionLabel": "Proposta di valore",
-      "title": "Cosa ottieni con NOVVES",
+      "title": "Cosa guadagni con NOVVES",
+      "intro": "Il servizio di analisi CFD di NOVVES basa le decisioni di progetto su dati ingegneristici, non su ipotesi intuitive.",
       "items": [
-        "Verifica conformità normativa",
-        "Decisioni ingegneristiche sul posizionamento ventilatori",
-        "Pre-analisi limiti temperatura, CO e visibilità per evacuazione",
-        "Chiarezza sulle prestazioni prima dell’installazione",
-        "Reporting tecnico di progetto e presentazione basata su dati"
-      ],
-      "quote": "Fonda il progetto non solo sull’esperienza ma anche sui dati. Costruisci sistemi di ventilazione sicuri, potenti e ottimizzati con l’ingegneria NOVVES.",
-      "ctaPrimary": "Crea richiesta progetto",
-      "ctaSecondary": "Progettazione controllo fumo"
+        "Verifica del rispetto delle normative e dei requisiti di progetto",
+        "Decisioni basate sull'ingegneria nel posizionamento della ventola a getto e della ventola di scarico",
+        "Posizionamento più accurato delle ventole nei sistemi di ventilazione dei parcheggi chiusi",
+        "Valutazione delle prestazioni dei sistemi di evacuazione dei fumi in funzione dello scenario d'incendio",
+        "Analisi preliminare dei limiti di temperatura, CO e visibilità per la sicurezza dell'evacuazione",
+        "Visualizzazione chiara delle prestazioni del sistema prima dell'installazione",
+        "Ottimizzazione dell'efficienza energetica e degli scenari operativi dei ventilatori",
+        "Reporting tecnico basato sul progetto e opportunità di presentazione supportata da dati",
+        "Documentazione tecnica più solida per consulenti, datori di lavoro, consulenti antincendio e team di progetto"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Aree di applicazione",
+      "title": "In quali progetti utilizziamo l'analisi CFD?",
+      "intro": "NOVVES utilizza l'analisi CFD specificamente su progetti in cui il flusso d'aria, il movimento del fumo e il posizionamento dei ventilatori sono fondamentali.",
+      "items": [
+        "Progetti di ventilazione di parcheggi interni",
+        "Sistemi di ventilatori a getto",
+        "Sistemi di estrazione fumo e calore",
+        "Ventilazione impianti industriali",
+        "Strutture simili a tunnel",
+        "Volumi tecnici",
+        "Edifici commerciali di grande volumetria",
+        "Progetti che richiedono scenari di incendio",
+        "Evacuazione della CO e analisi della qualità dell'aria interna",
+        "Soluzioni di ventilazione speciali basate su progetto"
+      ]
+    },
+    "process": {
+      "sectionLabel": "Periodo",
+      "title": "Processo di analisi CFD di NOVVES",
+      "items": [
+        {
+          "title": "Raccolta dei dati del progetto",
+          "desc": "Vengono valutati i progetti architettonici, le altezze dei pavimenti, la destinazione d'uso, lo scenario di incendio, i punti di scarico, le prese d'aria fresca e le informazioni sul sistema esistente."
+        },
+        {
+          "title": "Modellazione e creazione di scenari",
+          "desc": "La geometria del progetto è modellata in tre dimensioni. Vengono determinati lo scenario di incendio, lo scenario di ventilazione normale, lo scenario di evacuazione di CO o le condizioni di lavoro specifiche del progetto."
+        },
+        {
+          "title": "Simulazione e analisi delle prestazioni",
+          "desc": "Vengono analizzati la velocità dell'aria, la dispersione del fumo, la distribuzione della temperatura, la visibilità, la concentrazione di CO e l'effetto del ventilatore. Vengono esaminate le aree critiche e le prestazioni del sistema."
+        },
+        {
+          "title": "Reporting e valutazione tecnica",
+          "desc": "I risultati dell'analisi vengono riportati con grafici, sezioni trasversali, immagini del flusso, output degli scenari e commenti tecnici. Se necessario, vengono forniti suggerimenti di miglioramento per il posizionamento dei ventilatori o lo scenario del sistema."
+        },
+        {
+          "title": "Supporto e implementazione del progetto",
+          "desc": "In base ai risultati CFD, insieme al team di progetto vengono valutati la selezione dei ventilatori, il posizionamento dei jet fan, la capacità di scarico, l'organizzazione dell'aria fresca e lo scenario di automazione."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Analisi CFD",
+      "title": "Verifichiamo il tuo progetto con l'analisi CFD",
+      "subtitle": "Puoi contattare il team tecnico NOVVES per il tuo parcheggio coperto, impianto industriale, sistema di estrazione fumi, progetto di ventilatore a getto o applicazione speciale di ventilazione.",
+      "paragraph": "Valutiamo il tuo progetto con analisi CFD prima di applicarlo sul campo; Creiamo una soluzione di sistema sicura, efficiente e basata sull'ingegneria.",
+      "ctaButton": "Crea una richiesta di analisi CFD",
+      "secondaryLink": "Progettazione del controllo del fumo"
     }
   },
   "devreAlma": {
     "meta": {
-      "title": "Messa in servizio | Novves",
-      "description": "Servizio post-vendita commissioning NOVVES — controllo installazione, prove prestazioni, ottimizzazione e formazione."
+      "title": "Messa in servizio | romanzi",
+      "description": "Servizio di messa in servizio NOVVES: controllo meccanico ed elettrico in loco, test delle prestazioni, verifica e reporting dell'automazione."
     },
     "breadcrumb": {
-      "home": "Inizio",
+      "home": "Pagina iniziale",
       "services": "Servizi",
-      "current": "Messa in servizio"
+      "current": "Mettere in uso"
     },
     "hero": {
       "badge": "Servizi",
-      "titlePart1": "Messa in",
-      "titleHighlight": "servizio",
-      "subtitle": "Garantiamo il funzionamento a piena prestazione dopo l’installazione.",
+      "titlePart1": "messa in servizio",
+      "titleHighlight": "Prendendo",
+      "subtitle": "Servizio di messa in servizio professionale che verifica le prestazioni del sistema sul campo.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuASo_JruCyxDVBwlCmBSQZOFpltmGjXdUxsE3roKreES2Gu2pq9zLqHMjemLJgfWv0De6KIbjxhT4oIZaLESKuWFQLhGEp8ML5gjmpBBZvYzHre4f_lmmkw90aiDCQdjUugZKThhIwssahTOGswbLWcBSTzTrnmg05kWy8eJf79tYs2afdF8tDdUn7XmqnqV94ZL70snn4wf11cok1MFL7SZiIfqChKtJjFyLjHMiDez3pjiCgq-s0bzPrSm5Vagv2Hho13FekYu9s",
       "stats": [
         {
-          "value": "8",
-          "label": "Fasi servizio"
+          "value": "9",
+          "label": "Fase di servizio"
         },
         {
-          "value": "4",
-          "label": "Fasi"
+          "value": "360°",
+          "label": "Verifica sul campo"
         },
         {
           "value": "7/24",
@@ -118,324 +321,1006 @@
         },
         {
           "value": "PDF",
-          "label": "Berichte"
+          "label": "Segnalazione"
         }
       ]
     },
     "intro": [
-      "In Novves non produciamo solo prodotti di qualità; garantiamo anche il funzionamento completo dopo l’installazione.",
-      "Il nostro commissioning post-vendita assicura l’uso più efficiente e sicuro dei nostri prodotti."
+      "Come NOVVES, non produciamo solo ventilatori, motori, ventilatori a reazione, ventilatori per l'estrazione dei fumi, unità di trattamento dell'aria e apparecchiature HVAC di qualità; Dopo l'installazione, offriamo un servizio di messa in servizio professionale per garantire il funzionamento corretto, sicuro ed efficiente del sistema sul campo.",
+      "Il processo di messa in servizio non è la prima operazione del prodotto dopo l'assemblaggio; Si tratta di un processo di verifica tecnica che include l'idoneità meccanica, i collegamenti elettrici, la direzione di rotazione del motore, le impostazioni del controller di velocità, gli scenari di automazione, i collegamenti dei sensori, i controlli delle prestazioni e le informazioni sull'utente.",
+      "Servizio tecnico NOVVES e team di messa in servizio; Controlla il funzionamento del sistema in conformità con le condizioni del progetto in sistemi di ventilazione di parcheggi chiusi, sistemi di ventilazione a getto, ventilatori per l'estrazione di fumo e calore, ventilatori assiali, ventilatori industriali, pannelli di controllo MCC, unità di trattamento dell'aria e progetti HVAC supportati da refrigeratori.",
+      "Messa in servizio corretta; Aumenta l'efficienza del sistema, rileva possibili errori di installazione in una fase iniziale, supporta la vita del prodotto e garantisce processi post-vendita più fluidi."
     ],
     "serviceSteps": {
-      "sectionLabel": "Processo",
-      "title": "Contenuto servizio",
+      "sectionLabel": "Periodo",
+      "title": "Contenuto del servizio",
       "items": [
         {
-          "step": "Controllo installazione prodotto e verifica conformità meccanica",
-          "phase": "Controllo"
+          "title": "Controllo di conformità dell'assemblaggio meccanico",
+          "desc": "La struttura di assemblaggio dei prodotti e la loro disponibilità per la messa in servizio sul campo vengono esaminati dal punto di vista meccanico."
         },
         {
-          "step": "Verifica collegamenti elettrici e messa a terra",
-          "phase": "Controllo"
+          "title": "Controllo del collegamento elettrico",
+          "desc": "Vengono valutati i collegamenti del motore, i collegamenti dei pannelli, il cablaggio, la messa a terra, gli elementi di protezione, l'alimentazione energetica e la compatibilità elettrica."
         },
         {
-          "step": "Primo avvio ventilatore e verifica senso rotazione motore",
-          "phase": "Avvio"
+          "title": "Verifica dell'avviamento e della direzione del motore",
+          "desc": "Il primo avvio dei ventilatori è terminato. Vengono controllati il ​​senso di rotazione del motore, la direzione del flusso d'aria, rumori insoliti, vibrazioni, sfregamenti o irregolarità meccaniche."
         },
         {
-          "step": "Configurazione variatore di velocità / inverter",
-          "phase": "Avvio"
+          "title": "Impostazioni del controllo della velocità e dell'inverter",
+          "desc": "Nei sistemi che utilizzano VFD/inverter, vengono controllati i parametri di base, la frequenza operativa, gli intervalli di controllo della velocità e gli scenari operativi del sistema."
         },
         {
-          "step": "Prove prestazioni base: portata, pressione, temperatura",
-          "phase": "Test"
+          "title": "Automazione e Controllo Scenari",
+          "desc": "I sistemi Jet Fan, i ventilatori per l'estrazione del fumo, i ventilatori di scarico, i ventilatori dell'aria fresca, i sensori di CO, i segnali di allarme antincendio, i pannelli MCC/DDC e l'integrazione BMS vengono testati in base allo scenario del progetto."
         },
         {
-          "step": "Ottimizzazione ventilatore secondo condizioni ambiente",
-          "phase": "Test"
+          "title": "Controlli delle prestazioni",
+          "desc": "Gli indicatori chiave delle prestazioni come portata, pressione, temperatura, vibrazione, livello sonoro, corrente operativa, carico del motore e comportamento del sistema vengono valutati in base alle condizioni sul campo."
         },
         {
-          "step": "Breve formazione su uso sistema e manutenzione base",
-          "phase": "Formazione"
+          "title": "ottimizzazione",
+          "desc": "La modalità operativa dei ventilatori, il controllo della velocità, lo scenario di automazione e le condizioni del campo vengono valutati insieme e vengono effettuate le impostazioni necessarie affinché il sistema funzioni in modo più efficiente e stabile."
         },
         {
-          "step": "Registrazione prove e report con modulo commissioning",
-          "phase": "Bericht"
+          "title": "Informazioni sull'utente",
+          "desc": "I team operativi, di manutenzione o tecnici vengono informati sul principio di funzionamento del sistema, sulle fasi di utilizzo di base, sui punti da considerare e sulle esigenze di manutenzione."
+        },
+        {
+          "title": "Segnalazione",
+          "desc": "Verifiche, prove, impostazioni e osservazioni vengono registrate. Se necessario, viene preparato un modulo di messa in servizio, un rapporto di servizio tecnico o una nota di valutazione sul campo."
         }
       ]
     },
     "whyImportant": {
       "sectionLabel": "Vantaggi",
-      "title": "Perché è importante?",
+      "title": "Perché la messa in servizio è importante?",
       "items": [
         {
-          "title": "Attivazione garanzia",
-          "text": "Avvio periodo di garanzia"
+          "title": "Supporta il corretto avvio del processo di garanzia",
+          "text": "Il processo di messa in servizio aiuta a verificare che il prodotto sia installato correttamente e utilizzato in condizioni operative adeguate. Ciò garantisce una migliore gestione della garanzia e dei processi post-vendita."
         },
         {
-          "title": "Prevenzione guasti",
-          "text": "Prevenzione errori di installazione"
+          "title": "Rileva gli errori di installazione nelle fasi iniziali",
+          "text": "Errori nell'assemblaggio meccanico, nel collegamento elettrico, nella direzione di rotazione del motore, nelle impostazioni del convertitore di frequenza o negli scenari di automazione possono essere rilevati prima che il sistema inizi a funzionare."
         },
         {
-          "title": "Efficienza",
-          "text": "Miglior efficienza energetica e vita utile"
+          "title": "Aumenta l'efficienza del sistema",
+          "text": "Sistemi di ventilazione e ventilazione correttamente commissionati; Fornisce risultati più efficienti in termini di consumo energetico, flusso d'aria, equilibrio di pressione, livello sonoro e funzionamento di lunga durata."
         },
         {
-          "title": "Ottimizzazione",
-          "text": "Funzionamento ottimale in condizioni reali"
+          "title": "Riduce il rischio di malfunzionamento",
+          "text": "Controlli effettuati durante la prima accensione; Riduce i rischi che potrebbero derivare da corrente eccessiva, rotazione inversa, vibrazioni, collegamento improprio, impostazione errata della velocità o condizioni del campo."
+        },
+        {
+          "title": "Convalida gli scenari di automazione",
+          "text": "È fondamentale che i ventilatori funzionino secondo lo scenario corretto nei sistemi di controllo del fumo, nei sistemi di ventilazione a getto e nelle applicazioni di ventilazione dei parcheggi chiusi. Durante il processo di messa in servizio, gli scenari di automazione e controllo vengono testati sul campo."
+        },
+        {
+          "title": "Fornisce informazioni aziendali sicure all'utente",
+          "text": "Informare correttamente le squadre tecniche che utilizzeranno il sistema contribuisce a processi di manutenzione più regolari e al funzionamento sicuro del sistema."
         }
       ]
     },
+    "systemScope": {
+      "sectionLabel": "Ambito",
+      "title": "Quali sistemi copre il servizio di messa in servizio NOVVES?",
+      "items": [
+        "Sistemi di ventilatori a getto",
+        "Ventilatori per estrazione fumo e calore",
+        "ventilatori assiali",
+        "ventilatori industriali",
+        "ventilatori da tetto",
+        "Ventilatori cellulari",
+        "Ventilatori di scarico e aria fresca",
+        "Schede di controllo MCC/DDC",
+        "Sistemi di ventilazione per parcheggi interni",
+        "sistemi di controllo del fumo",
+        "Applicazioni delle unità di trattamento aria",
+        "Sistemi HVAC assistiti da refrigeratori",
+        "Sistemi di ventilazione speciali su progetto"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Messa in servizio con NOVVES",
+      "title": "Coordinamento tecnico olistico",
+      "paragraphs": [
+        "Servizio di messa in servizio NOVVES; Si realizza con il coordinamento dei team di produzione, ufficio tecnico, automazione, field service e supporto post-vendita. In questo modo, tutti i processi vengono valutati in modo olistico, dalla progettazione tecnica del prodotto alle effettive condizioni di lavoro sul campo.",
+        "Dopo la messa in servizio viene controllato lo stato operativo del sistema, vengono effettuate le impostazioni necessarie, vengono fornite all'utente le informazioni di base e il processo viene registrato."
+      ]
+    },
     "cta": {
-      "sectionLabel": "Richiesta servizio",
-      "title": "Contattaci per il commissioning",
-      "contactForm": "Modulo contatti",
-      "weekdays": "Lun–Ven 08:30 – 18:00",
-      "emailSupport": "Supporto tecnico via email"
+      "sectionLabel": "Mettere in uso",
+      "title": "Iniziamo a gestire il tuo progetto in sicurezza",
+      "subtitle": "Puoi ottenere supporto per la messa in servizio dal team tecnico NOVVES per il tuo ventilatore, ventilatore a getto, sistema di estrazione fumi, pannello di automazione, unità di trattamento dell'aria o progetto HVAC.",
+      "ctaButton": "Creare una richiesta di messa in servizio",
+      "contactForm": "Creare una richiesta di messa in servizio"
     }
   },
   "dumanKontrol": {
     "meta": {
-      "title": "Progettazione controllo fumo | Novves",
-      "description": "Progettazione sistemi jet fan — flusso aria, estrazione e controllo fumo in parcheggi chiusi."
+      "title": "Progettazione del sistema di controllo del fumo | romanzi",
+      "description": "Progettazione di sistemi di controllo del fumo NOVVES: jet fan, evacuazione dei fumi e soluzioni ingegneristiche per parcheggi interni e strutture di grandi volumi."
     },
     "breadcrumb": {
-      "home": "Inizio",
+      "home": "Pagina iniziale",
       "services": "Servizi",
-      "current": "Controllo fumo"
+      "current": "Controllo del fumo"
     },
     "hero": {
       "badge": "Servizi",
-      "titlePart1": "Controllo fumo",
-      "titleHighlight": "progettazione sistema",
+      "titlePart1": "Controllo del fumo",
+      "titleHighlight": "Progettazione del sistema",
+      "subtitle": "Soluzioni di controllo del fumo orientate all'ingegneria per parcheggi interni e strutture di grandi volumi.",
+      "imageSrc": "/images/hizmetler/duman-kontrol-tasarimi.png",
       "stats": [
         {
           "value": "EN 12101-3",
-          "label": "Conformità normativa"
+          "label": "Conformità agli standard"
         },
         {
-          "value": "300 °C / 2 h",
+          "value": "300°C / 2 ore",
           "label": "Resistenza al fuoco"
         },
         {
           "value": "CFD",
-          "label": "Supporto simulazione"
+          "label": "Simulazione supportata"
         }
       ]
     },
     "intro": [
-      "Il sistema jet fan è una ventilazione meccanica per dirigere il flusso, evacuare gas di scarico e controllare il fumo in caso di incendio nei parcheggi chiusi.",
-      "È sviluppato adattando tecnologie da tunnel ed è preferito soprattutto in parcheggi grandi e complessi.",
-      "I jet fan muovono l’aria ad alta velocità spingendo la massa d’aria davanti a sé. Gas nocivi come la CO vengono evacuati efficacemente. In incendio i jet fan limitano la diffusione del fumo, proteggono le vie di fuga e facilitano l’intervento."
+      "NOVVES fornisce servizi di progettazione di sistemi di controllo fumi per parcheggi coperti, impianti industriali, volumi tecnici, strutture a tunnel e grandi aree chiuse. Questo servizio; Non si limita solo alla selezione dei fan. Viene creata una progettazione olistica del sistema valutando insieme la struttura architettonica del progetto, lo scenario di incendio, le direzioni del flusso d'aria, le vie di fuga, i punti di scarico, il fabbisogno di aria fresca, gli scenari di automazione e le condizioni sul campo.",
+      "Sistemi di ventilatori a getto; Sono moderne soluzioni di ventilazione meccanica utilizzate per dirigere il flusso d'aria nei parcheggi coperti, evacuare i gas di scarico dei veicoli e garantire l'evacuazione controllata dei fumi in caso di incendio. NOVVES analizza questi sistemi in base al progetto specifico, determina il corretto posizionamento dei ventilatori e supporta lo scenario di controllo del fumo con dati ingegneristici.",
+      "L'obiettivo principale nella progettazione del sistema di controllo del fumo è: Proteggere la qualità dell'aria interna nelle normali condizioni di lavoro, limitare la diffusione incontrollata del fumo in caso di incendio, supportare la sicurezza delle vie di fuga e creare un'organizzazione dei flussi d'aria che faciliti l'intervento dei vigili del fuoco."
     ],
+    "approach": {
+      "sectionLabel": "Approccio progettuale",
+      "title": "Approccio progettuale per il controllo del fumo NOVVES",
+      "intro": "La progettazione del controllo del fumo per NOVVES non riguarda solo il posizionamento delle apparecchiature; È una parte importante della strategia di sicurezza del progetto. In ogni progetto vengono valutati insieme i seguenti elementi:",
+      "items": [
+        "Garage o geometria dell'edificio",
+        "Informazioni sull'altezza del pavimento e sul volume",
+        "Densità dei veicoli e scenario di utilizzo",
+        "Scenario di incendio e possibili direzioni di diffusione del fumo",
+        "Vie di fuga, rampe, pozzi e punti di accesso critici",
+        "Posizionamento del ventilatore a getto, del ventilatore di scarico e del ventilatore dell'aria fresca",
+        "Posizione dei sensori di CO, fumo e calore",
+        "Quadro elettrico MCC/DDC e scenari di automazione",
+        "Integrazione BMS",
+        "Necessità di analisi CFD",
+        "Requisiti di regolamento, standard e specifiche di progetto",
+        "Condizioni di installazione, manutenzione e messa in servizio"
+      ],
+      "closing": "Grazie a questo approccio, il sistema viene valutato non solo secondo calcoli teorici, ma anche in base alle condizioni reali del campo e al comportamento del movimento dell'aria al momento dell'incendio."
+    },
     "components": {
-      "sectionLabel": "Architettura sistema",
-      "title": "Componenti sistema jet fan",
+      "sectionLabel": "Architettura del sistema",
+      "title": "Componenti del sistema Jet Fan",
       "items": [
         {
-          "title": "Jet fan",
-          "text": "Componente principale, montato a soffitto. Dirige l’aria verso gli estrattori. Tipi assiale e radiale; assiale mono o bidirezionale."
+          "title": "Fan dei jet",
+          "text": "I jet fan sono i principali elementi di direzione dell'aria del sistema. Montato a soffitto, crea un flusso d'aria ad alta velocità e dirige l'aria inquinata o il fumo verso i punti di scarico. A seconda delle necessità del progetto, è possibile utilizzare i tipi di ventilatori a getto assiale o di ventilatori a getto radiale. I ventilatori a getto assiale possono essere selezionati in base al principio di funzionamento unidirezionale o bidirezionale."
         },
         {
-          "title": "Ventilatori estrazione",
-          "text": "Scaricano in modo controllato aria inquinata o fumosa verso l’esterno."
+          "title": "Ventole di scarico",
+          "text": "Gli aspiratori scaricano l'aria inquinata, la concentrazione di CO o il fumo generato in caso di incendio, diretti dai ventilatori a getto, nell'ambiente esterno in modo controllato. Negli scenari di evacuazione dei fumi, la resistenza alla temperatura, la portata e il tempo di funzionamento dei ventilatori vengono valutati in base alle condizioni del progetto."
         },
         {
-          "title": "Ventilatori aria fresca",
-          "text": "Pressurizzazione e aria pulita quando gli ingressi naturali sono insufficienti o mal posizionati."
+          "title": "Ventilatori di aria fresca",
+          "text": "I ventilatori per l'aria fresca vengono utilizzati quando le aperture naturali non sono sufficienti o l'aspirazione dell'aria fresca non può essere fornita nella direzione desiderata. Questi ventilatori supportano il bilanciamento dell'aria del sistema e contribuiscono all'organizzazione della pressione e del movimento dell'aria per evitare che il fumo venga indirizzato verso le vie di fuga."
         },
         {
-          "title": "Sensori",
-          "text": "Sensori CO, fumo e calore raccolgono dati e li trasmettono al quadro MCC secondo limiti impostati."
+          "title": "sensori",
+          "text": "I sensori di CO, i sensori di fumo, gli elementi di rilevamento del calore e le relative apparecchiature di campo producono dati per l'infrastruttura di automazione del sistema. Le informazioni dai sensori vengono trasmesse alla centrale in linea con i valori limite determinati e gli scenari di incendio."
         },
         {
-          "title": "Automazione e controllo (quadro MCC)",
-          "text": "Attivazione automatica in base ai sensori; in incendio scenari predefiniti. PLC e integrazione BMS."
+          "title": "Sistema di automazione e controllo",
+          "text": "I pannelli di controllo MCC/DDC assicurano che i ventilatori a getto, i ventilatori di scarico, i ventilatori dell'aria fresca e i sensori funzionino in base allo scenario. Sistema; Può essere attivato automaticamente in base a diversi scenari operativi come ventilazione normale, evacuazione CO e modalità incendio. Può essere integrato con il sistema di gestione dell'edificio quando necessario."
         }
       ]
     },
     "advantages": {
-      "sectionLabel": "Perché jet fan",
+      "sectionLabel": "Perché il sistema Jet Fan?",
       "title": "Vantaggi del sistema",
-      "subtitle": "Vantaggi significativi rispetto alla ventilazione a canalizzazione tradizionale, soprattutto in parcheggi e tunnel.",
       "items": [
         {
-          "title": "Senza canalizzazioni",
-          "text": "Il sistema dirige l’aria senza bisogno di duct, griglie o diffusori."
+          "title": "Riduce i requisiti di canale",
+          "text": "Poiché i sistemi jet fan funzionano dirigendo l'aria, offrono una soluzione più flessibile rispetto ai tradizionali sistemi di ventilazione a condotto. In questo modo è possibile ridurre la necessità di ampie linee di condotti e di numerose griglie o diffusori."
         },
         {
-          "title": "Risparmio spazio",
-          "text": "Soffitti bassi: i duct occupano spazio; i jet fan sono compatti."
+          "title": "Risparmia spazio",
+          "text": "L'altezza del soffitto e il volume utilizzabile sono fondamentali nei parcheggi interni. Grazie alla loro struttura compatta, i jet fan occupano meno spazio e contribuiscono ad un utilizzo più efficiente dello spazio architettonico."
         },
         {
-          "title": "Efficienza energetica",
-          "text": "Con sensori CO funzionano solo quando serve; velocità variabile."
+          "title": "Supporta l'efficienza energetica",
+          "text": "Quando si lavora con sensori di CO e sistema di automazione, i ventilatori a getto possono essere attivati ​​solo quando necessario. Il consumo energetico può essere ottimizzato grazie al controllo della velocità variabile e al funzionamento basato su scenari."
         },
         {
-          "title": "Estrazione fumo e calore controllata",
-          "text": "Alta velocità in incendio; vie di fumo protette; intervento vigili del fuoco facilitato."
+          "title": "Controlla l'evacuazione del fumo e del calore",
+          "text": "In caso di incendio, il sistema jet fan aiuta a ridurre la diffusione incontrollata del fumo e a convogliare il fumo verso punti di scarico designati. Questo approccio supporta la sicurezza delle vie di fuga e contribuisce a una risposta al fuoco più controllata."
         },
         {
-          "title": "Manutenzione ridotta",
-          "text": "Senza duct la pulizia è più semplice; meno parti, meno guasti."
+          "title": "Fornisce facilità di manutenzione e funzionamento",
+          "text": "Man mano che la densità dei canali diminuisce, i processi di pulizia, manutenzione e accesso possono essere gestiti più facilmente. Un minor numero di componenti meccanici semplifica l'organizzazione della manutenzione nel processo operativo."
         },
         {
-          "title": "Posizionamento flessibile",
-          "text": "Riprogettazione futura più semplice."
+          "title": "Si adatta facilmente alla struttura architettonica",
+          "text": "I sistemi Jet Fan possono essere progettati in modo flessibile in base alle diverse geometrie dei parcheggi, alla posizione delle rampe, al posizionamento delle colonne e alle altezze del soffitto. In questo modo è possibile sviluppare soluzioni applicabili in nuovi progetti e strutture esistenti."
         },
         {
-          "title": "Investimento iniziale contenuto",
-          "text": "Meno attrezzature (duct, griglie, diffusori) rispetto ai sistemi tradizionali."
+          "title": "Ottimizza l'investimento iniziale e i costi operativi",
+          "text": "Sistemi di jet fan correttamente progettati; Può ottimizzare il costo dell'investimento iniziale riducendo la necessità di canali, griglie e diffusori. Gli scenari di lavoro supportati dall'automazione contribuiscono alla gestione dei costi energetici e operativi a lungo termine."
         }
       ]
     },
     "designFactors": {
       "sectionLabel": "Ingegneria",
-      "title": "Fattori di progetto importanti",
+      "title": "Fattori importanti nella progettazione",
+      "intro": "Affinché il sistema di controllo del fumo possa funzionare in modo efficiente e sicuro, tutte le condizioni architettoniche, meccaniche, elettriche e operative devono essere valutate insieme fin dalla prima fase di progettazione.",
+      "paragraphs": [
+        "Posizionamento di ventilatori assiali, ventilatori per scarico fumo e calore, ventilatori per rinnovo aria e jet fan nel progetto jet fan; Dovrebbe essere progettato tenendo conto del livello di rumore, della necessità di direzione dell'aria, dell'assenza di zone morte dove l'aria fresca non può raggiungere, della facilità di installazione, dell'accesso per la manutenzione, della sicurezza delle vie di fuga e della strategia di deviazione del fumo in caso di incendio.",
+        "Nei parcheggi chiusi, i gas di scarico dei veicoli, la concentrazione di CO, il traffico degli utenti, la circolazione dei veicoli, le rampe, le colonne, i pozzi, le aperture delle porte e gli impianti di ventilazione naturale influiscono direttamente sul movimento dell'aria. Pertanto, il corretto posizionamento dei jet fan è fondamentale affinché il sistema possa dirigere il flusso d'aria nel modo più efficiente.",
+        "In uno scenario di incendio l’obiettivo è impedire la diffusione incontrollata del fumo e favorire condizioni di evacuazione quanto più sicure possibili. Per questo motivo, lo scenario operativo dei ventilatori, delle posizioni dei sensori, del pannello di automazione, del sistema di rilevamento incendi e dell'integrazione del sistema di gestione dell'edificio dovrebbe essere pianificato insieme.",
+        "Nei progetti necessari, l'analisi CFD viene utilizzata per valutare numericamente il flusso d'aria, la dispersione del fumo, l'effetto jet fan, le zone morte, i punti di scarico e gli scenari di evacuazione. La progettazione supportata da CFD aiuta a verificare il posizionamento delle ventole e ad analizzare le prestazioni del sistema progetto per progetto."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Progettazione del controllo del fumo con NOVVES",
+      "title": "Il nostro ambito di servizio",
+      "intro": "NOVVES offre sotto lo stesso tetto capacità di produzione, ingegneria, analisi CFD, automazione, messa in servizio e supporto tecnico post-vendita nella progettazione di sistemi di controllo del fumo.",
       "items": [
-        "Precauzioni per efficienza operative sono controllate dalla prima fase con considerazione di tutte le condizioni.",
-        "Nei progetti jet fan si considerano rumore, direzione aria, assenza zone morte, installabilità e accessibilità vie di fuga nel posizionamento di assiali ed estrattori.",
-        "Nel design servono ricambi aria adeguati e portata considerando gas scarico, traffico pedonale e altri fattori; posizione jet fan per massima efficienza del flusso."
+        "progettazione del controllo del fumo del parcheggio interno",
+        "Disposizione del sistema Jet Fan",
+        "Scelta del ventilatore per l'estrazione di fumo e calore",
+        "Selezione del ventilatore di scarico e aria fresca",
+        "Valutazione degli scenari dei sensori di CO, fumo e calore",
+        "Supporto scenario scheda di controllo MCC/DDC",
+        "Approccio di integrazione BMS",
+        "La CFD ha supportato l'analisi del flusso d'aria e della dispersione del fumo",
+        "Documentazione tecnica e supporto al progetto",
+        "Messa in servizio sul campo e supporto tecnico"
       ]
     },
     "cta": {
-      "sectionLabel": "Per il tuo progetto",
-      "title": "Supporto progettazione controllo fumo",
-      "cfdLink": "Analisi CFD",
-      "supportButton": "Richiesta supporto tecnico"
+      "sectionLabel": "Progettazione del controllo del fumo",
+      "title": "Progettiamo il sistema di controllo del fumo giusto per il tuo progetto",
+      "subtitle": "NOVVES sviluppa soluzioni di controllo del fumo sicure, efficienti e sostenibili analizzando le condizioni architettoniche e tecniche del vostro progetto.",
+      "paragraph": "Se hai bisogno di un sistema di ventilazione, di un ventilatore per l'estrazione dei fumi, di un'analisi CFD o di una progettazione per il controllo dei fumi per il tuo parcheggio coperto, impianto industriale o struttura di grandi volumi, puoi contattare il nostro team tecnico.",
+      "ctaButton": "Creare una richiesta di progettazione per il controllo del fumo",
+      "cfdLink": "Analisi CFD"
     }
   },
   "teknikServis": {
     "meta": {
-      "title": "Assistenza tecnica | Novves",
-      "description": "Assistenza tecnica NOVVES — post-vendita, risoluzione guasti, ricambi e manutenzione."
+      "title": "Servizio Tecnico | romanzi",
+      "description": "Servizio tecnico NOVVES: supporto post-vendita, diagnosi dei guasti, assistenza in loco, pezzi di ricambio e servizi di manutenzione."
     },
     "breadcrumb": {
-      "home": "Inizio",
+      "home": "Pagina iniziale",
       "services": "Servizi",
-      "current": "Assistenza tecnica"
+      "current": "Servizio tecnico"
     },
     "hero": {
       "badge": "Servizi",
-      "titlePart1": "Assistenza",
-      "titleHighlight": "tecnica",
-      "subtitle": "Risposta rapida, soluzione affidabile.",
-      "weekdays": "Lun–Ven 08:30 – 18:00",
-      "emailSupport": "Supporto tecnico via email"
+      "titlePart1": "Tecnico",
+      "titleHighlight": "Servizio",
+      "subtitle": "Supporto post-vendita, diagnosi dei guasti e assistenza sul campo.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxMeEHI938GIPBawznnHJ6x-kYcgHaWpo7_y-tA45eMLw1dyeWfXXQBpCwEMANg3xFir1BVv2FvVPmirhn-b4X9ul6YnVOKv9MB3UpQFZ0q2SP9FJy10ZgIbYjHLJaI3_lh28-9sUCR6Hr_mfEskGE8ZYUVySQcLt_x1PQzzeF3GGizQ3xAhnrzwB9H5OHa44K6JxUM4zTsxQmwNZtsJeHi-uacZe64iuYrnFAP9LU3XBpJ4wbk0KXrbGtNtq3-uVCmu_EqwmJnLE",
+      "weekdays": "Giorni feriali 08:30 – 18:00",
+      "emailSupport": "Supporto tecnico via e-mail"
     },
-    "intro": "Il reparto assistenza tecnica Novves è al tuo servizio per post-vendita, risoluzione guasti, ricambi e manutenzione.",
+    "intro": [
+      "Dipartimento Assistenza Tecnica NOVVES; Fornisce servizi di supporto tecnico post-vendita per sistemi di ventilazione, ventilatori a getto, ventilatori per l'estrazione dei fumi, ventilatori assiali, ventilatori industriali, unità di trattamento dell'aria, sistemi HVAC supportati da refrigeratori, pannelli di controllo e soluzioni di automazione.",
+      "Come NOVVES, non produciamo solo prodotti; Supportiamo i nostri clienti nei processi di messa in servizio, diagnosi dei guasti, manutenzione, fornitura di pezzi di ricambio, controllo delle prestazioni e documentazione tecnica per supportare il funzionamento corretto, sicuro ed efficiente dei nostri prodotti sul campo.",
+      "Il nostro approccio al servizio tecnico; Si basa su una risposta rapida, un'analisi accurata dei guasti, il supporto dell'ufficio tecnico, l'esperienza sul campo e la conoscenza del produttore. Pertanto, le richieste di servizio vengono valutate non solo con interventi temporanei, ma da una prospettiva ingegneristica che punta al funzionamento duraturo e sicuro del sistema."
+    ],
     "serviceTypes": {
       "sectionLabel": "Il nostro ambito",
       "title": "Richieste di servizio",
       "items": [
-        "Consulenza installazione e commissioning",
-        "Diagnosi guasti e intervento in cantiere",
-        "Pianificazione manutenzione e ispezioni",
-        "Richieste ricambi",
-        "Supporto uso prodotto e documentazione tecnica"
+        {
+          "title": "Consulenza per l'installazione e la messa in servizio",
+          "desc": "Dopo l'installazione di ventilatore, ventilatore a getto, ventilatore di estrazione fumi, unità di trattamento aria, refrigeratore o sistema di automazione, viene fornito supporto tecnico per l'installazione meccanica, il collegamento elettrico, la direzione del motore, il controllo della velocità e i controlli operativi di base."
+        },
+        {
+          "title": "Diagnosi dei guasti e assistenza in loco",
+          "desc": "In casi quali rumore, vibrazione, surriscaldamento, prestazioni ridotte, guasto del motore, allarme del pannello, errore del sensore o irregolarità di funzionamento nel sistema, la fonte del guasto viene valutata tecnicamente."
+        },
+        {
+          "title": "Pianificazione della manutenzione periodica e del controllo",
+          "desc": "Vengono valutate le esigenze di manutenzione periodica di ventilatori, motori, sistemi di automazione e ventilazione. Con processi di controllo periodici, il rischio di guasti viene ridotto e vengono supportate le prestazioni del sistema e la sicurezza operativa."
+        },
+        {
+          "title": "Richieste di pezzi di ricambio",
+          "desc": "I pezzi di ricambio adatti vengono determinati in base al modello del prodotto, al numero di serie e alle informazioni sul progetto. Viene fornito supporto tecnico per motore, elica, apparecchiature di collegamento, elementi di controllo, sensori e componenti del sistema."
+        },
+        {
+          "title": "Supporto per l'utilizzo del prodotto e la documentazione tecnica",
+          "desc": "Le richieste di manuale utente, istruzioni di manutenzione, scheda tecnica, etichetta prodotto, informazioni sulla certificazione, dati prestazionali o documento di progetto vengono valutate dal team tecnico."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Periodo",
+      "title": "Processo di servizio tecnico",
+      "items": [
+        {
+          "title": "Ricezione di una richiesta di servizio",
+          "desc": "Vengono registrate le richieste di malfunzionamento, manutenzione, ricambi, messa in servizio o supporto tecnico inoltrate dal cliente."
+        },
+        {
+          "title": "Valutazione Tecnica Preliminare",
+          "desc": "Vengono esaminati il ​​modello del prodotto, il numero di serie, le informazioni sul progetto, la descrizione del guasto, le fotografie, i video e gli eventuali registri di assistenza precedenti."
+        },
+        {
+          "title": "Revisione dell'Ufficio Tecnico",
+          "desc": "L'ufficio tecnico NOVVES valuta la richiesta in termini di informazioni sul prodotto, condizioni di campo, idoneità elettromeccanica, scenario di automazione e principio di funzionamento del sistema."
+        },
+        {
+          "title": "Supporto remoto o pianificazione sul campo",
+          "desc": "A seconda della natura della richiesta, è possibile fornire assistenza tecnica remota o pianificare una visita di assistenza in loco."
+        },
+        {
+          "title": "Diagnosi e intervento dei guasti",
+          "desc": "Vengono effettuati i necessari controlli sul campo. Vengono valutati l'assemblaggio meccanico, i collegamenti elettrici, lo stato di funzionamento del motore, la direzione della ventola, i segnali del pannello, i sensori, le vibrazioni e i valori di prestazione."
+        },
+        {
+          "title": "Parti di ricambio e suggerimento di soluzioni",
+          "desc": "Se ritenuto necessario vengono offerti ricambi idonei, interventi di manutenzione, modifiche di regolazione, revisioni o miglioramenti del sistema."
+        },
+        {
+          "title": "Segnalazione",
+          "desc": "L'esame, la rilevazione, l'intervento ed i suggerimenti vengono registrati con un modulo di servizio o relazione tecnica."
+        }
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Vantaggi",
+      "title": "Perchè il Servizio Tecnico NOVVES?",
+      "items": [
+        {
+          "title": "Ritorno rapido",
+          "text": "Le vostre richieste di servizio vengono valutate dal nostro team tecnico e la risposta viene fornita il prima possibile."
+        },
+        {
+          "title": "Intervento con informazioni sul produttore",
+          "text": "Il team che conosce meglio i prodotti NOVVES è l'ufficio tecnico e il team di assistenza sul campo del produttore. In questo modo, il processo di diagnosi e risoluzione dei guasti procede in modo più accurato."
+        },
+        {
+          "title": "Supporto Ufficio Tecnico",
+          "text": "Le richieste di servizio non sono solo interventi sul campo; Quando necessario, viene valutato insieme all'ingegneria, alla selezione del prodotto, all'automazione, ai pezzi di ricambio e alle informazioni sul progetto."
+        },
+        {
+          "title": "Ridurre il rischio di fallimento",
+          "text": "La manutenzione regolare e il corretto controllo tecnico aiutano a ridurre gli arresti imprevisti e le perdite di prestazioni nei sistemi di ventilazione."
+        },
+        {
+          "title": "Mantenimento delle prestazioni del sistema",
+          "text": "Servizio corretto, corretta manutenzione e utilizzo di pezzi di ricambio corretti; Supporta l'efficienza energetica, la sicurezza operativa e le prestazioni di lunga durata del sistema."
+        },
+        {
+          "title": "Fiducia nel post-vendita",
+          "text": "NOVVES considera il supporto ai propri clienti dopo la consegna del prodotto come una parte importante del proprio approccio al servizio aziendale."
+        }
       ]
     },
     "form": {
       "sectionLabel": "Richiesta",
-      "title": "Modulo assistenza tecnica",
-      "description": "Compila il modulo per inviare la richiesta. Il team tecnico ti ricontatterà al più presto.",
+      "title": "Modulo di servizio tecnico",
+      "subtitle": "Inviaci la tua richiesta di servizio.",
+      "description": "Puoi inviarci la tua richiesta di servizio relativa al tuo ventilatore, jet fan, ventilatore per estrazione fumi, ventilatore assiale, unità di trattamento aria, refrigeratore, pannello di automazione o sistema di ventilazione tramite il modulo. Il nostro team tecnico esaminerà la tua richiesta e ti ricontatterà il prima possibile.",
+      "helperIntro": "Se possibile, condividere le seguenti informazioni nel modulo accelererà il processo di assistenza:",
+      "helperFields": [
+        "nome cognome",
+        "Nome dell'azienda",
+        "Telefono",
+        "E-mail",
+        "Nome del progetto",
+        "Modello del prodotto",
+        "Numero di serie",
+        "Descrizione del guasto o della richiesta",
+        "Foto dell'etichetta del prodotto",
+        "Foto o video difettosi",
+        "situazione di emergenza",
+        "Indirizzo della città/campo"
+      ],
       "features": [
         {
           "label": "Risposta rapida",
-          "desc": "Risposta entro 24 ore"
+          "desc": "restituzione entro 24 ore"
         },
         {
-          "label": "Team esperto",
+          "label": "Personale esperto",
           "desc": "Team tecnico certificato"
         },
         {
           "label": "Intervento sul campo",
-          "desc": "Rete assistenza nazionale"
+          "desc": "Rete di servizi in tutta la Turchia"
         }
       ],
       "labels": {
-        "name": "Nome e cognome",
-        "company": "Azienda",
+        "name": "Nome Cognome",
+        "company": "Nome dell'azienda",
         "phone": "Telefono",
-        "email": "E-Mail",
-        "subject": "Oggetto",
-        "message": "Messaggio"
+        "email": "E-mail",
+        "projectName": "Nome del progetto",
+        "productModel": "Modello del prodotto",
+        "serialNumber": "Numero di serie",
+        "urgency": "Situazione di emergenza",
+        "location": "Indirizzo città/campo",
+        "subject": "Soggetto",
+        "message": "Descrizione del guasto o della richiesta"
       },
-      "submit": "Invia",
-      "successTitle": "Richiesta ricevuta",
-      "successMessage": "Ti ricontatteremo al più presto."
+      "submit": "Creare una richiesta di servizio tecnico",
+      "successTitle": "La tua richiesta è stata ricevuta",
+      "successMessage": "Il nostro team tecnico esaminerà la tua richiesta e ti ricontatterà il prima possibile."
+    },
+    "cta": {
+      "sectionLabel": "Servizio tecnico",
+      "title": "Creare una richiesta di servizio tecnico",
+      "subtitle": "Squadra di servizio tecnico di NOVVES; È a vostra disposizione per supporto post-vendita, diagnosi guasti, ricambi, manutenzione, messa in servizio e richieste di documentazione tecnica.",
+      "ctaButton": "Creare una richiesta di servizio tecnico"
     }
   },
   "yerindeKesif": {
     "meta": {
-      "title": "Rilievo in cantiere | Novves",
-      "description": "Servizio rilievo NOVVES — ispezione, misure e analisi per soluzioni di ventilazione su progetto."
+      "title": "Scoperta sul posto | romanzi",
+      "description": "NOVVES on-site discovery: soluzione accurata di ventilazione, estrazione dei fumi e condizionamento dell'aria con misurazioni, analisi e dati tecnici in loco."
     },
     "breadcrumb": {
-      "home": "Inizio",
+      "home": "Pagina iniziale",
       "services": "Servizi",
-      "current": "Rilievo in cantiere"
+      "current": "Scoperta in loco"
     },
     "hero": {
       "badge": "Servizi",
-      "titlePart1": "Rilievo",
-      "titleHighlight": "in cantiere",
-      "subtitle": "Primo passo per un progetto corretto: misure, analisi e valutazione esigenze sul posto."
+      "titlePart1": "A posto",
+      "titleHighlight": "Scoperta",
+      "subtitle": "La giusta soluzione di ventilazione per il vostro progetto inizia in loco.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdk_YtFP-CGxwZSeNW5Go-mEcB-R91NQ62hvYRFn3kP0HC2labPBROzwKKTpxqfYok2fSTESW5msRiaLDm85uq_9NKpSFvbzh5-qjc9Da7_nJ05xg6ayPg0sV19aNvsnoMYDO7xyCp6adNwFupHsnwBuYl9-fPmugA06vH7qzUFtDtD8_IrmD1oHTUJ5a65jDLQluT_CWnJ4eOW2_R90z6g2G9tAUdfzri7ENaEZVk93euYlLmR1EzYACDMikxjduri48APdqtzMI"
     },
-    "intro": "Dati accurati sono alla base di ogni progetto di ventilazione. Il rilievo NOVVES è il primo passo critico per progettare la soluzione più efficiente e conforme. I nostri ingegneri visitano l’impianto per misure, osservazioni e analisi dettagliate.",
+    "intro": {
+      "paragraphs": [
+        "Dati accurati sul campo sono la base di ogni progetto di successo di ventilazione, estrazione dei fumi e condizionamento dell'aria. NOVVES servizio di scoperta in loco; Analizza le condizioni reali del vostro progetto sul campo e determina la selezione del ventilatore, la progettazione del controllo del fumo, la pianificazione del flusso d'aria e la soluzione di sistema più appropriati.",
+        "Il nostro team tecnico esperto; Effettua misurazioni sul campo, osservazioni e valutazioni tecniche per parcheggi coperti, impianti industriali, edifici commerciali, aree produttive, volumi tecnici, unità di trattamento dell'aria e applicazioni di refrigerazione. Vengono esaminate in dettaglio l'infrastruttura meccanica esistente, l'infrastruttura elettrica, le condizioni architettoniche, le direzioni del flusso d'aria, il fabbisogno di aria di scarico e di rinnovo, gli scenari di incendio, le aree di installazione e l'accesso per la manutenzione.",
+        "Per NOVVES, l’esplorazione in loco non significa solo misurare. È la raccolta di dati ingegneristici critici affinché il progetto possa essere progettato in modo sicuro, efficiente, sostenibile e in conformità con le normative."
+      ]
+    },
+    "scope": {
+      "sectionLabel": "Ambito della scoperta",
+      "title": "Cosa esaminiamo durante il processo di scoperta?",
+      "items": [
+        "Tipologia di progetto e finalità d'uso",
+        "Informazioni sulle dimensioni e sul volume dell'area",
+        "Infrastruttura di ventilazione esistente",
+        "Esigenze di aria fresca e di scarico",
+        "Direzioni del flusso d'aria e perdite di carico",
+        "Disposizioni di ventilatori, condotti, sfiati e alberi",
+        "Infrastruttura elettrica e punti di connessione dei pannelli",
+        "Scenario di incendio e requisiti di evacuazione dei fumi",
+        "Necessità di jet fan, ventilatore assiale, ventilatore di estrazione fumi o unità di trattamento aria",
+        "Integrazione di refrigeratori e sistemi di condizionamento",
+        "Installazione, manutenzione e accesso al servizio",
+        "Requisiti di regolamento, standard e specifiche di progetto"
+      ]
+    },
     "steps": {
-      "sectionLabel": "Processo",
-      "title": "Fasi del rilievo",
+      "sectionLabel": "Periodo",
+      "title": "Passaggi di scoperta",
       "items": [
         {
-          "title": "Appuntamento e informazioni preliminari",
-          "desc": "Caratteristiche generali del progetto, tipo impianto, dimensioni e analisi bisogni."
+          "title": "Nomina e informazioni preliminari",
+          "desc": "Impariamo le caratteristiche generali del tuo progetto, la tipologia della struttura, le dimensioni dell'area, lo scopo d'uso e le esigenze tecniche. Dopo la valutazione iniziale, determiniamo l’ambito dell’esplorazione."
         },
         {
-          "title": "Visita e misure",
-          "desc": "Il team esamina lo spazio, effettua misure e valuta l’infrastruttura esistente. Direzioni flusso, temperatura e stato sistema."
+          "title": "Visita sul campo e misurazione",
+          "desc": "Il team tecnico di NOVVES si reca sul posto e ispeziona l'area in loco. Vengono valutate l'infrastruttura meccanica ed elettrica esistente, le direzioni del flusso d'aria, le aree di installazione, la distribuzione della temperatura, lo stato del sistema e i vincoli applicativi."
         },
         {
-          "title": "Analisi tecnica e report",
-          "desc": "Calcoli richiesta ventilazione, analisi portate e verifica normativa. Report di rilievo dettagliato."
+          "title": "Analisi tecnica e reporting",
+          "desc": "In linea con i dati ricevuti dal campo, vengono analizzati i bisogni di ventilazione, i requisiti di portata, la selezione dei ventilatori, i bisogni di evacuazione dei fumi, lo scenario di automazione e la conformità alle normative. Quando necessario viene preparato un dettagliato rapporto di ricognizione."
         },
         {
-          "title": "Proposta e progetto",
-          "desc": "In base ai dati: proposta con sistema, selezione attrezzature e analisi costi."
+          "title": "Proposta di soluzione e pianificazione del progetto",
+          "desc": "In base ai risultati della scoperta, vengono creati per il progetto la progettazione del sistema, la selezione delle apparecchiature, il posizionamento dei ventilatori, l'approccio al controllo del fumo, la documentazione tecnica e la valutazione dei costi più appropriati."
         },
         {
-          "title": "Approvazione e avvio",
-          "desc": "Dopo approvazione: pianificazione produzione, installazione e commissioning."
+          "title": "Approvazione e avvio dell'implementazione",
+          "desc": "Dopo l'approvazione della soluzione tecnica e dell'offerta, vengono pianificati i processi di produzione, fornitura, installazione, messa in servizio e supporto post-vendita."
         }
       ]
     },
     "whyImportant": {
-      "sectionLabel": "Perché importante",
-      "title": "Perché serve il rilievo in cantiere?",
+      "sectionLabel": "Perché è importante?",
+      "title": "Perché è necessaria la scoperta in loco?",
       "items": [
         {
-          "title": "Progetto accurato",
-          "desc": "Senza misure in sito errori di dimensionamento sono probabili."
+          "title": "Progettazione corretta",
+          "desc": "Nei progetti preparati senza misurazioni sul campo, aumenta il rischio di errori nel dimensionamento delle apparecchiature, nella scelta dei ventilatori, nella portata d'aria e nei punti di installazione. L'esplorazione in loco garantisce che il sistema sia progettato in base alle condizioni reali."
         },
         {
-          "title": "Ottimizzazione costi",
-          "desc": "Si evita sovra/sotto-dimensionamento con dati reali."
+          "title": "Ottimizzazione dei costi",
+          "desc": "Con i dati reali sul campo, si evita la selezione di attrezzature sovradimensionate o sottodimensionate. In questo modo i costi di investimento, i consumi energetici e i costi operativi vengono gestiti in modo più accurato."
         },
         {
-          "title": "Conformità normativa",
-          "desc": "Verifica sul posto delle condizioni edificio vs requisiti."
+          "title": "Regolamento e conformità agli standard",
+          "desc": "I rischi del progetto vengono ridotti valutando la sicurezza antincendio, l'evacuazione dei fumi, la ventilazione, l'infrastruttura elettrica e i requisiti di sicurezza sul lavoro in loco."
         },
         {
-          "title": "Integrazione",
-          "desc": "Compatibilità con impianti meccanici ed elettrici solo tramite rilievo."
+          "title": "Facilità di integrazione",
+          "desc": "Le soluzioni compatibili con l’infrastruttura meccanica, elettrica e di automazione esistente possono essere determinate con precisione solo attraverso l’esplorazione in loco."
+        },
+        {
+          "title": "Messa in servizio più sicura",
+          "desc": "I dati raccolti durante la fase di rilevamento garantiscono che il processo di installazione e messa in servizio proceda più velocemente, in modo controllato e senza intoppi."
         }
       ]
     },
+    "projectTypes": {
+      "sectionLabel": "Aree di applicazione",
+      "title": "Per quali progetti effettuiamo il rilevamento in loco?",
+      "items": [
+        "Progetti di ventilazione di parcheggi interni",
+        "Sistemi di estrazione fumo e calore",
+        "Sistemi di ventilatori a getto",
+        "Progetti di ventilazione industriale",
+        "Ventilazione degli impianti di produzione",
+        "Ventilazione di edifici commerciali e centri commerciali",
+        "Alberghi, ospedali ed edifici pubblici",
+        "Applicazioni delle unità di trattamento aria",
+        "Sistemi chiller e di raffreddamento centralizzati",
+        "Volumi tecnici e progetti di ingegneria speciale"
+      ]
+    },
     "cta": {
-      "sectionLabel": "Rilievo gratuito",
-      "title": "Richiedi un rilievo per il tuo progetto",
-      "subtitle": "Il nostro team ingegneristico visita l’impianto per analisi esigenze e misure.",
-      "ctaButton": "Richiedi rilievo"
+      "sectionLabel": "Scoperta in loco",
+      "title": "Esaminiamo il tuo progetto sul posto",
+      "subtitle": "Con il servizio di sopralluogo in loco NOVVES, analizziamo le esigenze del vostro progetto sul campo e determiniamo la corretta soluzione di ventilazione e controllo del fumo con dati ingegneristici.",
+      "ctaButton": "Crea una richiesta di rilevamento in loco"
+    }
+  },
+  "fanSecimi": {
+    "meta": {
+      "title": "Selezione dei ventilatori e pianificazione del progetto tecnico | romanzi",
+      "description": "NOVVES fan seçimi ve teknik projelendirme — mühendislik odaklı seçim, PerfectusAir destekli analiz ve proje bazlı HVAC çözümleri."
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Selezione ventola e",
+      "titleHighlight": "Pianificazione del progetto tecnico",
+      "subtitle": "La scelta del ventilatore giusto inizia dai dati tecnici giusti.",
+      "imageSrc": "/images/hizmetler/fan-secimi-teknik-projelendirme.png"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES fornisce una selezione di ventilatori orientata all'ingegneria e servizi di progettazione tecnica per ventilazione industriale, ventilazione comfort, sistemi di estrazione di fumo e calore, applicazioni di ventilatori a getto, unità di trattamento dell'aria e progetti HVAC speciali.",
+        "Scegliere un ventilatore non significa solo scegliere un prodotto in base ai valori di portata e pressione. Ogni progetto; Dovrebbe essere valutato tenendo conto dell'uso previsto, dei requisiti di flusso d'aria, delle perdite di pressione, della temperatura operativa, del livello sonoro, della potenza del motore, dell'efficienza energetica, delle condizioni di installazione, dello scenario di incendio, delle esigenze di automazione e degli standard pertinenti.",
+        "L'ufficio tecnico NOVVES analizza tutti questi criteri specificatamente per il progetto e determina il tipo di ventilatore, la potenza del motore, il punto di funzionamento, i valori prestazionali e la soluzione di sistema più adatti. Quindi il progetto non è solo un prodotto; Viene presentata una soluzione ingegneristica correttamente selezionata, validata tecnicamente e pronta per l'implementazione."
+      ]
+    },
+    "technicalOffice": {
+      "sectionLabel": "Ufficio Tecnico",
+      "title": "Forza Ufficio Tecnico NOVVES",
+      "paragraphs": [
+        "Ufficio tecnico della NOVVES; It combines product knowledge, production experience, field experience and engineering calculations under the same roof.",
+        "Il nostro team tecnico; Effettua selezione e valutazione tecnica su progetto di ventilatori assiali, ventilatori a getto, ventilatori per estrazione fumi, ventilatori industriali, ventilatori da tetto, ventilatori cellulari, motori elettrici, unità di trattamento dell'aria e sistemi di ventilazione speciali.",
+        "Ogni selezione di ventilatori si basa non solo sui valori di catalogo; Viene creato tenendo conto delle effettive condizioni operative del progetto, dei vincoli del sito, del consumo energetico, dell'accesso per la manutenzione, delle prestazioni di lunga durata e della sicurezza del sistema.",
+        "L'ufficio tecnico NOVVES contribuisce a effettuare la giusta selezione del prodotto, la giusta architettura del sistema e le giuste decisioni applicative fornendo supporto tecnico al cliente prima e dopo il processo di vendita."
+      ]
+    },
+    "perfectusAir": {
+      "sectionLabel": "Strumenti digitali",
+      "title": "PerfectusAir Fan Seçim Yazılımı ile Veri Destekli Seçim",
+      "paragraphs": [
+        "NOVVES, fan seçim süreçlerinde kendi mühendislik yaklaşımını dijital araçlarla destekler. Bu kapsamda kullanılan PerfectusAir fan seçim yazılımı, projeye uygun fan modellerinin teknik parametreler üzerinden değerlendirilmesine yardımcı olur.",
+        "PerfectusAir ile fan seçimi yapılırken; hava debisi, statik basınç, motor gücü, fan devri, verim, ses seviyesi, çalışma noktası, ürün modeli ve teknik performans değerleri birlikte analiz edilir.",
+        "Bu sayede müşteri ve proje ekipleri için daha net, izlenebilir ve karşılaştırılabilir teknik seçim çıktıları oluşturulur. PerfectusAir, NOVVES teknik ofisinin mühendislik değerlendirmesini destekleyen güçlü bir fan seçim aracıdır."
+      ]
+    },
+    "selectionCriteria": {
+      "sectionLabel": "Criteri di selezione",
+      "title": "Criteri che consideriamo nella selezione dei fan",
+      "intro": "L'ufficio tecnico NOVVES valuta congiuntamente i seguenti criteri nella scelta dei ventilatori:",
+      "items": [
+        "Requisito del flusso d'aria",
+        "Valori di pressione statica e totale",
+        "Perdite di pressione del sistema",
+        "Punto di funzionamento del ventilatore",
+        "Potenza del motore ed efficienza del motore",
+        "velocità della ventola",
+        "livello sonoro",
+        "consumo energetico",
+        "temperatura operativa",
+        "Condizioni ambientali",
+        "Tipo di installazione e posizione",
+        "accesso per manutenzione",
+        "Infrastrutture elettriche e di automazione",
+        "Requisiti di evacuazione dei fumi o di resistenza al fuoco",
+        "Requisiti di certificazione e standard",
+        "Specifiche del progetto e aspettative del cliente"
+      ]
+    },
+    "engineeringScope": {
+      "sectionLabel": "Pianificazione del progetto",
+      "title": "Il nostro ambito di progettazione del progetto tecnico",
+      "intro": "Dopo la selezione del ventilatore, viene fornito supporto tecnico al progetto in base alle esigenze del progetto. In questo contesto si possono effettuare i seguenti studi:",
+      "items": [
+        "Scelta del prodotto e del sistema",
+        "Valutazione delle prestazioni dei ventilatori",
+        "Controllo dei calcoli di portata e pressione",
+        "Suggerimenti per il posizionamento del jet fan",
+        "Selezione ventilatore estrazione fumi",
+        "Selezione dell'aria fresca e della ventola di scarico",
+        "Valutazione del motore del ventilatore dell'unità di trattamento aria",
+        "Supporto tecnico per l'integrazione di refrigeratori e sistemi HVAC",
+        "Preparazione scheda tecnica",
+        "Verifica del codice prodotto e del modello",
+        "Disegno tecnico e controllo misure",
+        "Valutazione della conformità alle specifiche di progetto",
+        "Confronto di prodotti e soluzioni alternative",
+        "Fornire supporto tecnico al file di proposta"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Aree di applicazione",
+      "title": "In quali progetti selezioniamo i fan?",
+      "intro": "NOVVES offre selezione di ventilatori e supporto tecnico progettuale per diversi tipi di edifici ed esigenze di sistema.",
+      "items": [
+        "Progetti di ventilazione di parcheggi interni",
+        "Sistemi di ventilatori a getto",
+        "Sistemi di estrazione fumo e calore",
+        "Progetti di ventilazione industriale",
+        "Applicazioni di ventilazione comfort",
+        "Ventilazione di edifici commerciali e centri commerciali",
+        "Alberghi, ospedali ed edifici pubblici",
+        "Impianti di produzione",
+        "Volumi tecnici",
+        "Applicazioni delle unità di trattamento aria",
+        "Impianti di refrigerazione e condizionamento centralizzato",
+        "Soluzioni di ventilazione speciali basate su progetto"
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Proposta di valore",
+      "title": "Cosa guadagni con NOVVES",
+      "intro": "Il servizio di selezione dei ventilatori e di progettazione tecnica di NOVVES contribuisce al progresso del vostro progetto con decisioni ingegneristiche più sicure, più efficienti e più accurate.",
+      "items": [
+        "Scegliere il ventilatore giusto per il progetto",
+        "Verifiche ingegneristiche con supporto ufficio tecnico",
+        "PerfectusAir fan seçim yazılımı ile veri destekli seçim",
+        "Soluzione ottimizzata in termini di flusso, pressione, potenza del motore e livello sonoro",
+        "Approccio corretto al posizionamento nei sistemi di estrazione fumi e jet fan",
+        "Progettazione più controllata in termini di efficienza energetica e costi operativi",
+        "Valutazione in accordo alle specifiche tecniche e alle esigenze del progetto",
+        "Documentazione tecnica chiara per appalti, consulenti, appaltatori e team di progetto",
+        "Forte coordinamento tra produzione, ufficio tecnico e team sul campo"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Selezione del ventilatore",
+      "title": "Scegliamo insieme il ventilatore giusto per il tuo progetto",
+      "subtitle": "L'ufficio tecnico NOVVES ti aiuta a determinare la soluzione di ventilatore, motore e sistema più adatta analizzando le esigenze del tuo progetto.",
+      "paragraph": "Puoi contattare il nostro team tecnico per la tua ventilazione industriale, ventilatore per estrazione fumi, sistema jet fan, ventilatore assiale, unità di trattamento aria o progetto speciale HVAC.",
+      "ctaButton": "Ottieni supporto tecnico per la selezione della ventola"
+    }
+  },
+  "bakimPerformans": {
+    "meta": {
+      "title": "Manutenzione e controllo delle prestazioni | romanzi",
+      "description": "NOVVES manutenzione e controllo delle prestazioni: funzionamento sicuro, efficiente e duraturo di ventilatori, motori e sistemi di ventilazione."
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Manutenzione e",
+      "titleHighlight": "Controllo delle prestazioni",
+      "subtitle": "Servizio di manutenzione tecnica per un funzionamento duraturo, sicuro ed efficiente di ventilatori, motori e sistemi di ventilazione.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJ5JMO3HOjNDZbtPhy07ir84gR5S9heH0Bj7ujN3CsCTFsR1u_bMp4TPJ52F0pYrDEPuqDsLsLK-t5xxRKgaMRbrWEsK62FLYa9zGEiLJFgzkQ-sHQA-fxyhLnNx8FXJgJ8kIsQ5aiAZxhqXIqFbaQCX_MIv6r0FQPI2OgRrP0N_gpWt7FC1CtuDUMoyt_z_fFZkKMPPMPVK0BqSwk3FlDMIUcB_9aQtiKgMOFiRULZonSaNHj_VFoSbZoekVxTn_L416XlRrPIPs"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES fornisce servizi di manutenzione e controllo delle prestazioni per sistemi di ventilazione, ventilatori a getto, ventilatori per l'estrazione dei fumi, ventilatori assiali, ventilatori industriali, unità di trattamento dell'aria, sistemi HVAC supportati da refrigeratori, pannelli di controllo e infrastrutture di automazione.",
+        "La manutenzione regolare e il controllo delle prestazioni sono fondamentali tanto quanto la corretta selezione del prodotto e la corretta installazione nei sistemi di ventilazione. Con il passare del tempo, contaminazione, vibrazioni, usura dei cuscinetti, aumento del carico del motore, problemi di collegamento elettrico, errori dei sensori, diminuzione del flusso d'aria o problemi legati allo scenario di automazione possono influire negativamente sull'efficienza del sistema.",
+        "Servizio di manutenzione e controllo prestazioni NOVVES; Garantisce che i controlli meccanici, elettrici, aerodinamici e operativi siano valutati insieme per supportare il funzionamento sicuro, efficiente e sostenibile del sistema."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Il nostro ambito",
+      "title": "Servizi di manutenzione e controllo",
+      "items": [
+        {
+          "title": "Controlli del motore e della ventola",
+          "desc": "Vengono controllati corpo ventilatore, elica, motore, elementi di fissaggio, cuscinetti, elementi vibranti, gabbie di protezione e collegamenti meccanici. Vengono valutati i valori operativi di base come la corrente operativa del motore, la direzione del motore, il rumore, le vibrazioni e il riscaldamento."
+        },
+        {
+          "title": "Controllo del sistema Jet Fan",
+          "desc": "Nei parcheggi chiusi vengono controllati i sistemi di ventilazione a getto, il posizionamento della ventola, le prestazioni della direzione dell'aria, il funzionamento del motore, i punti di connessione, il livello di vibrazione, i segnali di automazione e lo stato operativo basato sullo scenario."
+        },
+        {
+          "title": "Controllo ventola evacuazione fumi",
+          "desc": "Nelle ventole per l'estrazione di fumo e calore vengono valutati il ​​motore, l'elica, la carrozzeria, le apparecchiature di collegamento, l'infrastruttura elettrica, il pannello di controllo e le condizioni operative a seconda dello scenario di incendio."
+        },
+        {
+          "title": "Unità di trattamento aria e controlli HVAC",
+          "desc": "Vengono controllati i ventilatori delle centrali di trattamento aria, lo stato dei filtri, il gruppo motore-ventilatore, la struttura della cinghia-puleggia, le serrande, i sensori, i collegamenti dell'automazione, la portata d'aria e le condizioni di funzionamento dell'impianto."
+        },
+        {
+          "title": "Controllo del sistema assistito dal refrigeratore",
+          "desc": "Nei sistemi HVAC assistiti da refrigeratori, gli impatti sulle prestazioni associati a fan-coil, unità di trattamento dell'aria, automazione e apparecchiature lato aria vengono valutati in modo olistico. La guida tecnica per ottimizzare l'equilibrio del sistema è presentata sotto forma di rapporto."
+        },
+        {
+          "title": "Controllo dell'automazione e del quadro di controllo",
+          "desc": "Vengono controllati i pannelli MCC/DDC, gli inverter di frequenza, i contattori, i dispositivi di protezione, i collegamenti dei sensori, i segnali di allarme antincendio, i sensori di CO e l'integrazione BMS."
+        },
+        {
+          "title": "Misurazione e valutazione delle prestazioni",
+          "desc": "Valori di funzionamento del sistema; Viene valutato in termini di portata d'aria, pressione, corrente del motore, vibrazioni, livello sonoro, temperatura, velocità della ventola e scenari operativi. Suggerimenti per l'ottimizzazione vengono offerti quando necessario."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Processo di manutenzione",
+      "title": "Contenuto del servizio",
+      "items": [
+        {
+          "title": "Valutazione preliminare",
+          "desc": "Vengono valutati il ​​tipo di sistema, il modello del prodotto, le informazioni sul progetto, le condizioni di lavoro, la cronologia della manutenzione e i reclami esistenti."
+        },
+        {
+          "title": "Controllo sul campo",
+          "desc": "Il team tecnico NOVVES effettua verifiche meccaniche, elettriche e funzionali sul campo. Vengono esaminati ventilatore, motore, pannello, sensore, apparecchiature di collegamento e componenti del sistema."
+        },
+        {
+          "title": "Controlli delle prestazioni di base",
+          "desc": "Vengono controllati il ​​flusso d'aria, la corrente operativa del motore, la velocità della ventola, il suono, le vibrazioni, il riscaldamento, le risposte dell'automazione e il comportamento del sistema."
+        },
+        {
+          "title": "Rischio di fallimento e rilevamento delle non conformità",
+          "desc": "Vengono identificati collegamenti allentati, fonti di vibrazioni, sollecitazione del motore, errori dei sensori, scenari operativi errati, carenze di manutenzione o perdite di prestazioni."
+        },
+        {
+          "title": "Suggerimenti per l'ottimizzazione",
+          "desc": "Vengono preparati la regolazione della velocità, lo scenario di automazione, il piano di manutenzione, la necessità di pezzi di ricambio, la pulizia o suggerimenti di miglioramento tecnico affinché il sistema funzioni in modo più efficiente."
+        },
+        {
+          "title": "Segnalazione",
+          "desc": "Le verifiche effettuate, le non conformità rilevate, i suggerimenti e gli eventuali punti che richiedono un intervento urgente, vengono registrati con una scheda di servizio tecnico o un rapporto di manutenzione."
+        },
+        {
+          "title": "Pianificazione della manutenzione periodica",
+          "desc": "Gli intervalli di manutenzione periodica possono essere pianificati in base all'intensità di utilizzo del sistema, all'ambiente di lavoro, alla tipologia di prodotto e alla criticità del progetto."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Perché è importante?",
+      "title": "Perché sono necessari la manutenzione e il controllo delle prestazioni?",
+      "items": [
+        {
+          "title": "Riduce il rischio di malfunzionamento",
+          "text": "Grazie ad un'ispezione regolare è possibile riconoscere tempestivamente allentamenti meccanici, vibrazioni, sollecitazioni del motore, problemi di collegamento elettrico ed errori dei sensori."
+        },
+        {
+          "title": "Supporta l'efficienza energetica",
+          "text": "I sistemi di ventilazione sporchi, non regolati o sollecitati possono consumare più energia. Il controllo delle prestazioni contribuisce a un funzionamento più efficiente del sistema."
+        },
+        {
+          "title": "Estende la vita del sistema",
+          "text": "Una corretta manutenzione favorisce il funzionamento più sano di ventilatori, motori, cuscinetti, eliche, pannelli e componenti di automazione."
+        },
+        {
+          "title": "Aumenta la sicurezza aziendale",
+          "text": "L'ispezione regolare di apparecchiature critiche come ventilatori per l'estrazione del fumo, ventilatori a getto e sistemi di ventilazione per parcheggi interni è di grande importanza per un funzionamento sicuro."
+        },
+        {
+          "title": "Previene la perdita di prestazioni",
+          "text": "Contaminazione, usura, regolazione errata o problemi di flusso d'aria che si verificano nel tempo possono ridurre le prestazioni del sistema. Il processo di manutenzione e controllo garantisce il rilevamento tempestivo di queste perdite."
+        },
+        {
+          "title": "Rafforza il processo post-vendita",
+          "text": "Registri di manutenzione regolare; Aiuta a gestire in modo più accurato i processi di assistenza, garanzia, pezzi di ricambio e supporto tecnico."
+        }
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Manutenzione orientata alle prestazioni con NOVVES",
+      "title": "Valutazione Tecnica Olistica",
+      "paragraphs": [
+        "Il servizio di manutenzione e controllo delle prestazioni NOVVES non è solo controllo delle apparecchiature; È un servizio tecnico che valuta insieme la logica di funzionamento del sistema, le condizioni del campo e i requisiti ingegneristici.",
+        "Il nostro team di assistenza tecnica lavora in coordinamento con l'ufficio tecnico NOVVES quando necessario e fornisce supporto sulla selezione dei ventilatori, sullo scenario di automazione, sui pezzi di ricambio, sull'analisi delle prestazioni e sull'ottimizzazione del sistema.",
+        "In questo modo, la questione non è solo se il sistema funziona o meno; Viene valutato se funziona correttamente, efficientemente, in sicurezza e in conformità con lo scopo del progetto."
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Aree di applicazione",
+      "title": "Per quali sistemi eseguiamo manutenzione e controllo delle prestazioni?",
+      "items": [
+        "Sistemi di ventilatori a getto",
+        "Ventilatori per estrazione fumo e calore",
+        "ventilatori assiali",
+        "ventilatori industriali",
+        "ventilatori da tetto",
+        "Ventilatori cellulari",
+        "ventilatori di scarico",
+        "ventilatori per l'aria fresca",
+        "unità di trattamento dell'aria",
+        "Sistemi HVAC assistiti da refrigeratori",
+        "Schede di controllo MCC/DDC",
+        "Sistemi di ventilazione per parcheggi interni",
+        "sistemi di controllo del fumo",
+        "Sistemi di ventilazione speciali su progetto"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Richiesta di manutenzione",
+      "title": "Crea la tua richiesta di manutenzione",
+      "subtitle": "Puoi ottenere supporto per la manutenzione e il controllo delle prestazioni dal team tecnico NOVVES per il tuo ventilatore, ventilatore a getto, sistema di estrazione fumi, unità di trattamento dell'aria, sistema HVAC supportato da refrigeratore, pannello di automazione o sistema di ventilazione.",
+      "paragraph": "Esaminiamo il tuo sistema in loco, valutiamo le sue prestazioni e condividiamo i nostri consigli tecnici per un funzionamento sicuro, efficiente e duraturo.",
+      "ctaButton": "Creare una richiesta di manutenzione e controllo delle prestazioni"
+    }
+  },
+  "egitimDanismanlik": {
+    "meta": {
+      "title": "Formazione e Consulenza Tecnica | romanzi",
+      "description": "Formazione e consulenza tecnica NOVVES: supporto conoscitivo orientato all'ingegneria per ventilatori, controllo del fumo, CFD, messa in servizio e automazione."
+    },
+    "hero": {
+      "badge": "Servizi",
+      "titlePart1": "Istruzione e",
+      "titleHighlight": "Consulenza Tecnica",
+      "subtitle": "Supporto informativo tecnico incentrato sull'ingegneria per team di prodotti, sistemi e progetti.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3xcOoqyeafZ20LqVAF2QXkPSw0Xj5WIi6QJ_zDjZ2WgptUvNqbgsiyA_pyORA2OP7SeQ8s1yK61K1gEuWa7CCR9K3i210vBxit-ZTVS7yKGTa4t56Mpo6nGcAzHpnfjuL5fO0VH857GDmDaHtedp7AJh-VVntJoZi8sM0te2FKESj0k2Nf68qAoRmWgz2HwIXSzo5O6Dnp0xbFABrvjWEmAXLxPe6j2V4yyMyxlrq_uzrv2bJsQqYdGrZK9La9FRaZou7ZTbCR40"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES fornisce servizi di formazione e consulenza tecnica per sistemi di ventilazione, ventilatori a getto, ventilatori per l'estrazione dei fumi, ventilatori assiali, ventilatori industriali, unità di trattamento dell'aria, sistemi HVAC supportati da refrigeratori, pannelli di automazione e sistemi di controllo del fumo.",
+        "Nei sistemi di ventilazione e controllo del fumo, oltre a scegliere il prodotto giusto, è fondamentale anche comprendere correttamente il sistema, utilizzarlo correttamente, eseguire una corretta manutenzione e interpretarlo correttamente da parte dei team di progetto. NOVVES servizio di formazione e consulenza tecnica; Fornisce supporto informativo ai team operativi, al personale di manutenzione, alle società di progetto, ai team di installazione meccanica, agli appaltatori, ai consulenti e ai team tecnici di acquisto.",
+        "Per NOVVES la formazione non riguarda solo la descrizione del prodotto. Scopo; Si tratta di spiegare in modo comprensibile il principio di funzionamento del sistema, le regole di utilizzo sicuro, le esigenze di manutenzione, gli scenari di automazione, le prestazioni dei ventilatori e i requisiti tecnici specifici del progetto."
+      ]
+    },
+    "trainingScope": {
+      "sectionLabel": "Il nostro ambito di formazione",
+      "title": "Argomenti di formazione tecnica e consulenza",
+      "items": [
+        {
+          "title": "Formazione sui sistemi di ventilazione",
+          "desc": "Vengono spiegati i principi di funzionamento, le aree di utilizzo, i criteri di selezione e i requisiti di manutenzione dei ventilatori assiali, dei ventilatori a getto, dei ventilatori per l'estrazione dei fumi, dei ventilatori industriali, dei ventilatori da tetto e dei ventilatori a celle."
+        },
+        {
+          "title": "Formazione sui sistemi di controllo del fumo",
+          "desc": "Vengono spiegati la logica di funzionamento dei sistemi di controllo del fumo nei parcheggi coperti, negli impianti industriali e nelle strutture di grande volume, il posizionamento dei ventilatori a getto, l'organizzazione dell'aria fresca e di scarico, gli scenari di incendio e l'approccio all'automazione."
+        },
+        {
+          "title": "Consulenza sull'analisi CFD e sulla valutazione dei progetti",
+          "desc": "Viene fornito supporto tecnico su come leggere i risultati dell'analisi CFD e su come riflettere i risultati del flusso d'aria, della dispersione del fumo, della distribuzione della temperatura, della concentrazione di CO, della visibilità e del posizionamento dei ventilatori nelle decisioni di progetto."
+        },
+        {
+          "title": "Messa in servizio e formazione degli utenti",
+          "desc": "Dopo la messa in funzione del sistema, il team operativo o di manutenzione viene informato sull'utilizzo di base, sui punti che richiedono attenzione, sulle modalità operative, sulle situazioni di allarme e sui periodi di manutenzione."
+        },
+        {
+          "title": "Formazione sulla manutenzione e sulla risoluzione dei problemi",
+          "desc": "Vengono spiegati i malfunzionamenti comuni nei sistemi di ventilazione, motore, pannello, sensore, automazione e HVAC, le fasi di controllo di base, le esigenze di manutenzione e i limiti di intervento sicuri."
+        },
+        {
+          "title": "Formazione sugli scenari di automazione e controllo",
+          "desc": "Vengono fornite informazioni tecniche sui pannelli di controllo MCC/DDC, sensori di CO, segnali di allarme antincendio, integrazione BMS, modalità di ventilazione normale, modalità incendio e scenari di funzionamento manuale."
+        },
+        {
+          "title": "Selezione dei prodotti e consulenza sulla documentazione tecnica",
+          "desc": "La valutazione viene effettuata insieme ai team tecnici per quanto riguarda la selezione dei ventilatori, le schede tecniche, i codici prodotto, i valori prestazionali, l'ambito di certificazione, i manuali d'uso e i documenti di progetto."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Processo di consulenza",
+      "title": "Contenuto del servizio",
+      "items": [
+        {
+          "title": "Analisi dei bisogni",
+          "desc": "Viene determinato lo scopo della richiesta di formazione o consulenza. Vengono valutati il ​​profilo del partecipante, il tipo di progetto, il gruppo di prodotti, l'ambito del sistema e le esigenze tecniche."
+        },
+        {
+          "title": "Pianificazione dei contenuti",
+          "desc": "Contenuti della formazione; È preparato in base al gruppo di prodotti, all'area di applicazione, al tipo di progetto, alle esigenze di manutenzione, allo scenario di controllo del fumo o al problema tecnico."
+        },
+        {
+          "title": "Sessione di formazione tecnica/consulenza",
+          "desc": "Istruzione; Può svolgersi in loco, online o in un formato di riunione tecnica specifica per il progetto. La spiegazione avviene attraverso prodotti, schemi di sistema, esempi di applicazione, fasi di manutenzione e documenti tecnici."
+        },
+        {
+          "title": "Domande e risposte e valutazione della domanda",
+          "desc": "Il team tecnico risponde alle domande dei partecipanti riguardanti il ​​progetto, il prodotto, la manutenzione, il malfunzionamento, l'automazione o i processi di messa in servizio."
+        },
+        {
+          "title": "Documentazione e tracciamento",
+          "desc": "Quando necessario vengono condivisi appunti formativi, documenti tecnici, istruzioni di manutenzione, manuali utente o suggerimenti specifici per il progetto."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Perché è importante?",
+      "title": "Perché è necessaria la formazione e la consulenza tecnica?",
+      "items": [
+        {
+          "title": "Garantisce il corretto utilizzo del sistema",
+          "text": "Corretta conoscenza dei sistemi di ventilazione, jet fan, aspirazione fumi e automazione; Riduce i rischi di uso improprio, intervento errato e malfunzionamento non necessario."
+        },
+        {
+          "title": "Aumenta la qualità delle cure",
+          "text": "La migliore conoscenza dei prodotti e dei componenti del sistema da parte dei team di manutenzione consente di eseguire controlli periodici in modo più accurato."
+        },
+        {
+          "title": "Riduce il tempo di risposta ai guasti",
+          "text": "Conoscere i sintomi di guasto di base, le condizioni di allarme e le fasi di controllo accelera il processo di valutazione iniziale."
+        },
+        {
+          "title": "Rafforza le decisioni tecniche dei team di progetto",
+          "text": "Informazioni accurate sulla selezione dei ventilatori, sull'analisi CFD, sulla progettazione del controllo del fumo, sullo scenario di automazione e sulla documentazione tecnica contribuiscono a prendere decisioni di progetto più sane."
+        },
+        {
+          "title": "Supporta il business sicuro",
+          "text": "Il personale addestrato in sistemi critici come ventilatori di estrazione fumi, sistemi di ventilazione a getto e sistemi di ventilazione di parcheggi chiusi offre un vantaggio significativo in termini di sicurezza operativa."
+        },
+        {
+          "title": "Supporta il ciclo di vita del prodotto e le prestazioni del sistema",
+          "text": "Corretto utilizzo e corretto approccio alla manutenzione; Contribuisce a una maggiore durata e al funzionamento efficiente di ventilatori, motori, pannelli, sensori e componenti del sistema."
+        }
+      ]
+    },
+    "audience": {
+      "sectionLabel": "Gruppo target",
+      "title": "Per chi è adatto?",
+      "intro": "Il servizio di formazione e consulenza tecnica NOVVES è adatto alle seguenti persone e team:",
+      "items": [
+        "Squadre tecniche aziendali",
+        "squadre di manutenzione",
+        "Imprese di installazione meccanica",
+        "Squadre elettriche e di automazione",
+        "Autori del progetto",
+        "consulenti antincendio",
+        "Aziende appaltatrici",
+        "Team acquisti e tecnici acquisti",
+        "Rivenditori e rappresentanti",
+        "Squadre di servizio",
+        "Team di gestione delle strutture",
+        "Team di consulenti e controllori"
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Aree di applicazione",
+      "title": "Per quali sistemi forniamo formazione?",
+      "items": [
+        "Sistemi di ventilatori a getto",
+        "Ventilatori per estrazione fumo e calore",
+        "ventilatori assiali",
+        "ventilatori industriali",
+        "ventilatori da tetto",
+        "Ventilatori cellulari",
+        "Ventilatori di scarico e aria fresca",
+        "unità di trattamento dell'aria",
+        "Sistemi HVAC assistiti da refrigeratori",
+        "Schede di controllo MCC/DDC",
+        "Sistemi di ventilazione per parcheggi interni",
+        "sistemi di controllo del fumo",
+        "Risultati dell'analisi CFD",
+        "Soluzioni di ventilazione speciali basate su progetto"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "Aumenta il tuo potere di conoscenza tecnica con NOVVES",
+      "title": "Approccio formativo incentrato sull'ingegneria",
+      "paragraphs": [
+        "NOVVES servizio di formazione e consulenza tecnica; Riunisce la conoscenza del produttore, l'esperienza dell'ufficio tecnico, l'esperienza del servizio sul campo e l'approccio ingegneristico del progetto.",
+        "Il nostro obiettivo; Per supportare non solo l'installazione di prodotti e sistemi, ma anche la loro corretta comprensione, corretto utilizzo e funzionamento sicuro nel lungo termine.",
+        "Puoi ricevere supporto di formazione e consulenza per il tuo team su sistemi di ventilazione, progettazione del controllo del fumo, analisi CFD, messa in servizio, manutenzione, risoluzione dei problemi o documentazione tecnica."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Richiesta di formazione",
+      "title": "Crea una richiesta di formazione e consulenza tecnica",
+      "subtitle": "Gruppo tecnico NOVVES; Ti aiuta a pianificare un programma di formazione e consulenza specifico per la tua istituzione, progetto o team.",
+      "ctaButton": "Crea una richiesta di formazione e consulenza tecnica"
     }
   }
 }

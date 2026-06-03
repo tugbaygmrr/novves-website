@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FooterCookieSettings } from "@/components/footer-cookie-settings";
 import { FooterNewsletter } from "@/components/footer-newsletter";
 import { getFooterStrings } from "@/components/footer-i18n";
 import { locales, localeUi } from "@/i18n/config";
@@ -42,12 +41,12 @@ const sectionHrefs = {
     "/hizmetler/cfd-analizi",
   ],
   resources: [
-    "/teknik-merkez",
-    "/teknik-merkez",
+    "/teknik-merkez/dokuman-kutuphanesi",
+    "/teknik-merkez/dokuman-kutuphanesi",
     "/kurumsal/sertifikalar",
     "/kurumsal/referanslar",
     "/kurumsal/haberler",
-    "/teknik-merkez",
+    "/teknik-merkez/dokuman-kutuphanesi",
   ],
   corporate: [
     "/kurumsal/biz-kimiz",
@@ -55,7 +54,7 @@ const sectionHrefs = {
     "/kurumsal/ekibimiz",
     "/kurumsal/politikamiz",
     "/surdurulebilirlik",
-    "/kvkk/kisisel-verilerin-korunmasi",
+    "/legal",
     "/iletisim",
   ],
 } as const;
@@ -336,14 +335,22 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
           aria-hidden
         />
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0f1d33] via-[#0f1d33]/90 to-[#0f1d33]/10"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0f1d33] via-[#0f1d33]/92 to-[#0f1d33]/55"
+          aria-hidden
+        />
+        {/* Yazıların okunurluğu için ek dikey gölge katmanı (alt/üst koyu) */}
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#0f1d33]/70 via-transparent to-[#0f1d33]/80"
           aria-hidden
         />
       </div>
 
       {/* ─ Top CTA Card ────────────────────────────────────────────────── */}
-      <div className="relative z-10 mx-auto max-w-[1600px] px-4 pt-12 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-white/[0.08] bg-[rgba(17,29,51,0.85)] px-6 py-7 shadow-[0_20px_60px_-30px_rgba(0,0,0,0.6)] backdrop-blur-sm sm:px-8">
+      <div className="relative z-10 mx-auto max-w-[1600px] px-4 pt-4 sm:px-6 lg:px-8">
+        <div
+          className="rounded-2xl border border-white/[0.14] px-6 py-7 shadow-[0_30px_80px_-24px_rgba(0,0,0,0.85)] ring-1 ring-primary/15 backdrop-blur-md sm:px-8"
+          style={{ backgroundImage: "linear-gradient(135deg, #1c2e4d 0%, #16243f 55%, #182a48 100%)" }}
+        >
           <div className="flex flex-col items-stretch gap-7 lg:flex-row lg:items-center lg:gap-10">
             {/* Title block with icon */}
             <div className="flex items-start gap-4 lg:w-[320px] lg:shrink-0">
@@ -356,7 +363,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 <h3 className="text-meta font-semibold leading-snug text-white">
                   {t.cta.title}
                 </h3>
-                <p className="mt-1.5 text-fine leading-relaxed text-white/55">
+                <p className="mt-1.5 text-fine leading-relaxed text-white/95">
                   {t.cta.desc}
                 </p>
               </div>
@@ -365,7 +372,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
             {/* Pillars */}
             <div className="grid flex-1 grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-4">
               {t.pillars.map((p, i) => (
-                <div key={`${p.line1}-${i}`} className="flex flex-col items-center gap-2 text-center text-white/85">
+                <div key={`${p.line1}-${i}`} className="flex flex-col items-center gap-2 text-center text-white/92">
                   <span className="text-primary">{pillarIcons[i]}</span>
                   <span className="text-fine leading-tight">
                     {p.line1}
@@ -387,7 +394,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <span className="text-fine text-white/45">{t.cta.note}</span>
+              <span className="text-fine text-white/92">{t.cta.note}</span>
             </div>
           </div>
         </div>
@@ -409,7 +416,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               />
             </Link>
 
-            <p className="mt-5 max-w-2xl text-fine leading-relaxed text-white/55">
+            <p className="mt-5 max-w-2xl text-fine leading-relaxed text-white/95">
               {t.brand.desc}
             </p>
 
@@ -417,7 +424,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
             <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-xl border border-white/[0.09] bg-[#0b1018] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/6pXFGhKW6Lw?rel=0&modestbranding=1"
-                title="Novves tanıtım"
+                title={t.videoTitle}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -438,7 +445,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/65 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:bg-primary/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1d33]"
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/92 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:bg-primary/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1d33]"
                   >
                     {s.icon}
                   </a>
@@ -448,33 +455,33 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               {/* İletişim 2x2 */}
               <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-3">
               {/* Telefon */}
-              <a href="tel:+902164674752" className="group flex items-start gap-2.5 text-white/72 transition-colors hover:text-white">
+              <a href="tel:+902164674752" className="group flex items-start gap-2.5 text-white/95 transition-colors hover:text-white">
                 <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary transition-all group-hover:bg-primary/20 group-hover:ring-primary/30">
                   <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                   </svg>
                 </span>
                 <div className="leading-tight">
-                  <p className="text-fine font-semibold text-primary">Telefon</p>
-                  <p className="mt-0.5 text-fine text-white/72">+90 216 467 47 52</p>
+                  <p className="text-fine font-semibold text-primary">{t.contactLabels.phone}</p>
+                  <p className="mt-0.5 text-fine text-white/95">+90 216 467 47 52</p>
                 </div>
               </a>
 
               {/* Email */}
-              <a href="mailto:info@novves.com" className="group flex items-start gap-2.5 text-white/72 transition-colors hover:text-white">
+              <a href="mailto:info@novves.com" className="group flex items-start gap-2.5 text-white/95 transition-colors hover:text-white">
                 <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary transition-all group-hover:bg-primary/20 group-hover:ring-primary/30">
                   <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                   </svg>
                 </span>
                 <div className="leading-tight">
-                  <p className="text-fine font-semibold text-primary">Email</p>
-                  <p className="mt-0.5 text-fine text-white/72">info@novves.com</p>
+                  <p className="text-fine font-semibold text-primary">{t.contactLabels.email}</p>
+                  <p className="mt-0.5 text-fine text-white/95">info@novves.com</p>
                 </div>
               </a>
 
               {/* Ofis */}
-              <div className="flex items-start gap-2.5 text-white/58">
+              <div className="flex items-start gap-2.5 text-white/95">
                 <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary">
                   <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -483,7 +490,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 </span>
                 <div className="leading-tight">
                   <p className="text-fine font-semibold text-primary">{t.contact.headOffice}</p>
-                  <p className="mt-0.5 text-fine leading-snug text-white/72">
+                  <p className="mt-0.5 text-fine leading-snug text-white/95">
                     19 Mayıs Mh. Sümer Sk.
                     <br />
                     Zitaş Plaza C2 Blok No:7
@@ -494,7 +501,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               </div>
 
               {/* Tesis */}
-              <div className="flex items-start gap-2.5 text-white/58">
+              <div className="flex items-start gap-2.5 text-white/95">
                 <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.05] ring-1 ring-white/[0.08] text-primary">
                   <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21V8.25l8.25-4.5 8.25 4.5V21M3.75 21h16.5M9 21v-6h6v6" />
@@ -502,7 +509,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 </span>
                 <div className="leading-tight">
                   <p className="text-fine font-semibold text-primary">{t.contact.factory}</p>
-                  <p className="mt-0.5 text-fine leading-snug text-white/72">
+                  <p className="mt-0.5 text-fine leading-snug text-white/95">
                     Yalova Organize Sanayi Bölgesi
                     <br />
                     2. Cadde No:12
@@ -521,14 +528,14 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
             {/* Brand slogan — kolonların üstünde marka tagline'ı (hero ile birebir aynı) */}
             <div className="mb-10 border-b border-white/[0.07] pb-8">
               <h2 className="font-display text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
-                Born to Flow: Havayı Şekillendiren Mühendislik
+                {t.brandSlogan}
               </h2>
             </div>
 
             <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 lg:grid-cols-5 lg:gap-x-6 lg:w-full">
               {sections.map((section) => (
                 <div key={section.title}>
-                  <h4 className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em] text-white/88">
+                  <h4 className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em] text-white/95">
                     <span className="h-px w-3 bg-primary" />
                     {section.title}
                   </h4>
@@ -537,7 +544,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                       <li key={`${section.title}-${i}`}>
                         <Link
                           href={`/${locale}${section.hrefs[i]}`}
-                          className="group flex items-center text-fine text-white/62 transition-all duration-300 hover:text-white/95"
+                          className="group flex items-center text-fine text-white/92 transition-all duration-300 hover:text-white/95"
                         >
                           <span className="inline-block w-0 overflow-hidden text-primary transition-all duration-300 group-hover:w-3.5">
                             &rsaquo;&nbsp;
@@ -573,7 +580,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                         <p className="text-[13px] font-bold tracking-[0.02em] text-white">
                           {code}
                         </p>
-                        <p className="mt-1.5 text-[11px] leading-snug text-white/55">
+                        <p className="mt-1.5 text-[11px] leading-snug text-white/95">
                           {t.certificates.items[i]}
                         </p>
                       </div>
@@ -583,7 +590,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
 
                 {/* Right: Download catalogue */}
                 <Link
-                  href={`/${locale}/teknik-merkez`}
+                  href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
                   className="group flex items-center gap-3 lg:shrink-0 lg:border-l lg:border-white/10 lg:pl-7"
                 >
                   <span className="flex h-11 w-11 items-center justify-center rounded-md bg-primary/15 text-primary transition-all duration-300 group-hover:bg-primary/25">
@@ -595,7 +602,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                     <p className="text-meta font-bold tracking-wide text-primary group-hover:text-primary-deep">
                       {t.certificates.downloadCatalog}
                     </p>
-                    <p className="mt-0.5 text-fine text-white/55">{t.certificates.downloadCatalogDesc}</p>
+                    <p className="mt-0.5 text-fine text-white/95">{t.certificates.downloadCatalogDesc}</p>
                   </div>
                 </Link>
               </div>
@@ -617,22 +624,23 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
               </span>
               <div className="flex-1">
                 <p className="text-meta font-semibold text-white">{t.newsletter.title}</p>
-                <p className="mt-0.5 text-fine text-white/55">{t.newsletter.desc}</p>
+                <p className="mt-0.5 text-fine text-white/95">{t.newsletter.desc}</p>
                 <FooterNewsletter
                   placeholder={t.newsletter.placeholder}
                   submitLabel={t.newsletter.title}
+                  successMessage={t.newsletter.success}
                 />
               </div>
             </div>
 
             {/* Application areas */}
             <div className="lg:col-span-6">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/88">{t.applicationAreas.title}</p>
+              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/95">{t.applicationAreas.title}</p>
               <ul className="mt-3 grid grid-cols-6 gap-x-1 gap-y-2">
                 {t.applicationAreas.items.map((a, i) => (
                   <li key={`${a.line1}-${i}`} className="flex flex-col items-center gap-1 text-center">
-                    <span className="text-white/72">{applicationAreaIcons[i]}</span>
-                    <span className="text-[10px] leading-tight text-white/60">
+                    <span className="text-white/95">{applicationAreaIcons[i]}</span>
+                    <span className="text-[10px] leading-tight text-white/90">
                       {a.line1}
                       {a.line2 ? (
                         <>
@@ -648,8 +656,8 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
 
             {/* Global caption + dotted world map */}
             <div className="flex items-center gap-3 lg:col-span-2 lg:justify-end">
-              <WorldMapDots className="h-16 w-32 text-white/65" />
-              <p className="max-w-[120px] text-fine font-medium leading-snug text-white/80">
+              <WorldMapDots className="h-16 w-32 text-white/92" />
+              <p className="max-w-[120px] text-fine font-medium leading-snug text-white/90">
                 {t.globalCaption.line1}
                 <br />
                 {t.globalCaption.line2}
@@ -664,7 +672,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
         <div className="mx-auto flex max-w-[1600px] justify-start px-4 py-5 sm:px-6 lg:px-8">
           {/* Sol: Dil seçimi — tek satır, sola çekilmiş */}
           <div className="w-full lg:mr-auto lg:w-auto">
-            <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-white/88 sm:text-left">
+            <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-white/95 sm:text-left">
               {t.langTitle}
             </p>
             <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 sm:justify-start lg:flex-nowrap">
@@ -679,7 +687,7 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                     className={`flex h-8 w-8 items-center justify-center rounded-full text-[10px] font-bold tracking-wide transition-all duration-300 ${
                       isActive
                         ? "bg-primary text-white shadow-md shadow-primary/30"
-                        : "border border-white/15 bg-white/[0.04] text-white/65 hover:border-primary/40 hover:text-white"
+                        : "border border-white/15 bg-white/[0.04] text-white/92 hover:border-primary/40 hover:text-white"
                     }`}
                   >
                     {localeUi[code].short}
@@ -694,32 +702,37 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
       {/* ─ Bottom bar ──────────────────────────────────────────────────── */}
       <div className="relative z-10 border-t border-white/[0.06]">
         <div className="mx-auto flex max-w-[1600px] flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row sm:px-6 lg:px-8">
-          <p className="text-fine tracking-wide text-white/65">{t.bottom.copyright}</p>
+          <p className="text-fine tracking-wide text-white/92">{t.bottom.copyright}</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link
-              href={`/${locale}/kvkk/kisisel-verilerin-korunmasi`}
-              className="text-fine tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
+              href={`/${locale}/legal`}
+              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
             >
-              {t.bottom.kvkk}
+              {t.bottom.legalCenter}
             </Link>
             <Link
-              href={`/${locale}/kvkk/guvenlik-ve-gizlilik-politikasi`}
-              className="text-fine tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
+              href={`/${locale}/privacy`}
+              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
             >
               {t.bottom.privacyPolicy}
             </Link>
-            <FooterCookieSettings label={t.bottom.cookieSettings} />
+            <Link
+              href={`/${locale}/cookies`}
+              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
+            >
+              {t.bottom.cookieSettings}
+            </Link>
             <a
               href="/kvkk/FR-0057-Kisisel-Veri-Sahibi-Basvuru-Formu.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-fine tracking-wide text-white/65 transition-colors duration-300 hover:text-white"
+              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
             >
               {t.bottom.applicationForm}
             </a>
             <span className="hidden h-3 w-px bg-white/15 sm:inline-block" />
             <span className="flex items-center gap-2">
-              <span className="text-fine text-white/55">{t.bottom.poweredBy}</span>
+              <span className="text-fine text-white/95">{t.bottom.poweredBy}</span>
               <a
                 href="https://tasarloji.com"
                 target="_blank"

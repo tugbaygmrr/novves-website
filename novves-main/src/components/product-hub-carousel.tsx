@@ -244,8 +244,8 @@ function ProductCard({
         </h3>
 
         <ul className="mt-4 min-h-0 flex-1 space-y-2.5">
-          {card.families.map((fam) => (
-            <li key={fam} className="flex items-start gap-2.5 text-fine leading-snug text-secondary/85">
+          {card.families.map((fam, i) => (
+            <li key={`${fam}-${i}`} className="flex items-start gap-2.5 text-fine leading-snug text-secondary/85">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden />
               <span className="line-clamp-2">{fam}</span>
             </li>

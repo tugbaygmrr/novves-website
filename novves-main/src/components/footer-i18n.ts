@@ -9,10 +9,21 @@
  *    any locale that doesn't have a full translation yet.
  *
  * To add/improve a translation: copy the EN block, replace strings, register it
- * in FOOTER_I18N below.
+ * in FOOTER_I18N below — or add `data/footer-locales/{locale}.json` and import it.
  */
 
+import kkFooter from "../../data/footer-locales/kk.json";
+import tgFooter from "../../data/footer-locales/tg.json";
+import zhFooter from "../../data/footer-locales/zh.json";
+import urFooter from "../../data/footer-locales/ur.json";
+import ltFooter from "../../data/footer-locales/lt.json";
+import plFooter from "../../data/footer-locales/pl.json";
+import azFooter from "../../data/footer-locales/az.json";
+
 export type FooterStrings = {
+  brandSlogan: string;
+  contactLabels: { phone: string; email: string };
+  videoTitle: string;
   cta: { title: string; desc: string; button: string; note: string };
   /** 4 pillars, each rendered as two short lines (line1 / line2). */
   pillars: { line1: string; line2: string }[];
@@ -39,7 +50,7 @@ export type FooterStrings = {
     downloadCatalog: string;
     downloadCatalogDesc: string;
   };
-  newsletter: { title: string; desc: string; placeholder: string };
+  newsletter: { title: string; desc: string; placeholder: string; success: string };
   langTitle: string;
   applicationAreas: {
     title: string;
@@ -48,6 +59,7 @@ export type FooterStrings = {
   globalCaption: { line1: string; line2: string };
   bottom: {
     copyright: string;
+    legalCenter: string;
     kvkk: string;
     privacyPolicy: string;
     cookieSettings: string;
@@ -59,6 +71,9 @@ export type FooterStrings = {
 /* ── Turkish (source) ────────────────────────────────────────────────── */
 
 const tr: FooterStrings = {
+  brandSlogan: "Born to Flow: Havayı Şekillendiren Mühendislik",
+  contactLabels: { phone: "Telefon", email: "E-posta" },
+  videoTitle: "Novves tanıtım videosu",
   cta: {
     title: "Projeniz için mühendislik desteğine mi ihtiyacınız var?",
     desc: "Duman tahliye, fan seçimi, CFD analizi ve devreye alma süreçlerinde uzman mühendis ekibimizle yanınızdayız.",
@@ -126,7 +141,7 @@ const tr: FooterStrings = {
       "Ekibimiz",
       "Kalite Politikamız",
       "Sürdürülebilirlik",
-      "KVKK ve Gizlilik",
+      "Gizlilik ve Uyum",
       "İletişim",
     ],
   },
@@ -146,6 +161,7 @@ const tr: FooterStrings = {
     title: "Yeniliklerden haberdar olun",
     desc: "Ürünler, projeler ve sektörel gelişmeler hakkında e-bültenimize abone olun.",
     placeholder: "E-posta adresiniz",
+    success: "Teşekkürler — kaydedildi.",
   },
   langTitle: "Dil Seçimi",
   applicationAreas: {
@@ -162,6 +178,7 @@ const tr: FooterStrings = {
   globalCaption: { line1: "Global çözümler,", line2: "yerel destek." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Elektrik Motor A.Ş.  Tüm Hakları Saklıdır.",
+    legalCenter: "Gizlilik ve Uyum",
     kvkk: "KVKK",
     privacyPolicy: "Gizlilik Politikası",
     cookieSettings: "Çerez Politikası",
@@ -173,6 +190,9 @@ const tr: FooterStrings = {
 /* ── English (fallback for unspecified locales) ──────────────────────── */
 
 const en: FooterStrings = {
+  brandSlogan: "Born to Flow: Engineering That Shapes the Air",
+  contactLabels: { phone: "Phone", email: "Email" },
+  videoTitle: "Novves company video",
   cta: {
     title: "Need engineering support for your project?",
     desc: "Our expert engineers support you through smoke extraction, fan selection, CFD analysis and commissioning.",
@@ -240,7 +260,7 @@ const en: FooterStrings = {
       "Our Team",
       "Quality Policy",
       "Sustainability",
-      "KVKK & Privacy",
+      "Privacy & Legal Center",
       "Contact",
     ],
   },
@@ -260,6 +280,7 @@ const en: FooterStrings = {
     title: "Stay informed",
     desc: "Subscribe to our newsletter for product, project and industry updates.",
     placeholder: "Your email address",
+    success: "Thank you — you're subscribed.",
   },
   langTitle: "Language",
   applicationAreas: {
@@ -276,6 +297,7 @@ const en: FooterStrings = {
   globalCaption: { line1: "Global solutions,", line2: "local support." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  All Rights Reserved.",
+    legalCenter: "Privacy & Legal Center",
     kvkk: "KVKK",
     privacyPolicy: "Privacy Policy",
     cookieSettings: "Cookie Policy",
@@ -287,6 +309,9 @@ const en: FooterStrings = {
 /* ── Russian ─────────────────────────────────────────────────────────── */
 
 const ru: FooterStrings = {
+  brandSlogan: "Born to Flow: Инженерия, формирующая воздух",
+  contactLabels: { phone: "Телефон", email: "E-mail" },
+  videoTitle: "Корпоративное видео Novves",
   cta: {
     title: "Нужна инженерная поддержка для вашего проекта?",
     desc: "Наша команда инженеров поможет в дымоудалении, подборе вентиляторов, CFD-анализе и пусконаладке.",
@@ -374,6 +399,7 @@ const ru: FooterStrings = {
     title: "Будьте в курсе",
     desc: "Подпишитесь на рассылку о продукции и отраслевых новостях.",
     placeholder: "Ваш e-mail",
+    success: "Спасибо — вы подписаны.",
   },
   langTitle: "Язык",
   applicationAreas: {
@@ -390,6 +416,7 @@ const ru: FooterStrings = {
   globalCaption: { line1: "Глобальные решения,", line2: "локальная поддержка." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  Все права защищены.",
+    legalCenter: "Legal Center",
     kvkk: "KVKK",
     privacyPolicy: "Политика конфиденциальности",
     cookieSettings: "Политика cookie",
@@ -401,6 +428,9 @@ const ru: FooterStrings = {
 /* ── Arabic ──────────────────────────────────────────────────────────── */
 
 const ar: FooterStrings = {
+  brandSlogan: "Born to Flow: هندسة تشكّل الهواء",
+  contactLabels: { phone: "الهاتف", email: "البريد الإلكتروني" },
+  videoTitle: "فيديو تعريفي بشركة Novves",
   cta: {
     title: "هل تحتاج إلى دعم هندسي لمشروعك؟",
     desc: "فريق المهندسين لدينا يدعمك في استخراج الدخان واختيار المراوح وتحليل CFD والتشغيل.",
@@ -488,6 +518,7 @@ const ar: FooterStrings = {
     title: "ابقَ على اطلاع",
     desc: "اشترك في النشرة لمتابعة المنتجات والمشاريع وأخبار القطاع.",
     placeholder: "بريدك الإلكتروني",
+    success: "شكرًا — تم الاشتراك.",
   },
   langTitle: "اللغة",
   applicationAreas: {
@@ -504,6 +535,7 @@ const ar: FooterStrings = {
   globalCaption: { line1: "حلول عالمية،", line2: "دعم محلي." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  جميع الحقوق محفوظة.",
+    legalCenter: "Legal Center",
     kvkk: "حماية البيانات",
     privacyPolicy: "سياسة الخصوصية",
     cookieSettings: "سياسة الكوكيز",
@@ -515,6 +547,9 @@ const ar: FooterStrings = {
 /* ── German ──────────────────────────────────────────────────────────── */
 
 const de: FooterStrings = {
+  brandSlogan: "Born to Flow: Ingenieurkunst, die Luft formt",
+  contactLabels: { phone: "Telefon", email: "E-Mail" },
+  videoTitle: "Novves Unternehmensvideo",
   cta: {
     title: "Brauchen Sie technische Unterstützung für Ihr Projekt?",
     desc: "Unser Ingenieurteam unterstützt Sie bei Entrauchung, Ventilatorauswahl, CFD-Analyse und Inbetriebnahme.",
@@ -602,6 +637,7 @@ const de: FooterStrings = {
     title: "Bleiben Sie informiert",
     desc: "Abonnieren Sie unseren Newsletter zu Produkten und Branchenneuigkeiten.",
     placeholder: "Ihre E-Mail-Adresse",
+    success: "Danke — Sie sind angemeldet.",
   },
   langTitle: "Sprache",
   applicationAreas: {
@@ -618,6 +654,7 @@ const de: FooterStrings = {
   globalCaption: { line1: "Globale Lösungen,", line2: "lokale Unterstützung." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  Alle Rechte vorbehalten.",
+    legalCenter: "Legal Center",
     kvkk: "Datenschutz",
     privacyPolicy: "Datenschutzerklärung",
     cookieSettings: "Cookie-Richtlinie",
@@ -629,6 +666,9 @@ const de: FooterStrings = {
 /* ── French ──────────────────────────────────────────────────────────── */
 
 const fr: FooterStrings = {
+  brandSlogan: "Born to Flow : L'ingénierie qui façonne l'air",
+  contactLabels: { phone: "Téléphone", email: "E-mail" },
+  videoTitle: "Vidéo de présentation Novves",
   cta: {
     title: "Besoin d'un accompagnement technique pour votre projet ?",
     desc: "Nos ingénieurs vous accompagnent en désenfumage, sélection de ventilateurs, analyse CFD et mise en service.",
@@ -716,6 +756,7 @@ const fr: FooterStrings = {
     title: "Restez informé",
     desc: "Abonnez-vous à notre newsletter sur les produits et l'actualité du secteur.",
     placeholder: "Votre adresse e-mail",
+    success: "Merci — vous êtes inscrit.",
   },
   langTitle: "Langue",
   applicationAreas: {
@@ -732,6 +773,7 @@ const fr: FooterStrings = {
   globalCaption: { line1: "Solutions globales,", line2: "support local." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  Tous droits réservés.",
+    legalCenter: "Legal Center",
     kvkk: "Données personnelles",
     privacyPolicy: "Politique de confidentialité",
     cookieSettings: "Politique cookies",
@@ -743,6 +785,9 @@ const fr: FooterStrings = {
 /* ── Italian ─────────────────────────────────────────────────────────── */
 
 const it: FooterStrings = {
+  brandSlogan: "Born to Flow: L'ingegneria che plasma l'aria",
+  contactLabels: { phone: "Telefono", email: "E-mail" },
+  videoTitle: "Video aziendale Novves",
   cta: {
     title: "Hai bisogno di supporto ingegneristico per il tuo progetto?",
     desc: "I nostri ingegneri ti supportano in evacuazione fumi, scelta dei ventilatori, analisi CFD e messa in servizio.",
@@ -830,6 +875,7 @@ const it: FooterStrings = {
     title: "Resta aggiornato",
     desc: "Iscriviti alla nostra newsletter su prodotti e novità del settore.",
     placeholder: "Il tuo indirizzo e-mail",
+    success: "Grazie — iscrizione completata.",
   },
   langTitle: "Lingua",
   applicationAreas: {
@@ -846,6 +892,7 @@ const it: FooterStrings = {
   globalCaption: { line1: "Soluzioni globali,", line2: "supporto locale." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  Tutti i diritti riservati.",
+    legalCenter: "Legal Center",
     kvkk: "Privacy",
     privacyPolicy: "Privacy Policy",
     cookieSettings: "Politica cookie",
@@ -857,6 +904,9 @@ const it: FooterStrings = {
 /* ── Spanish ─────────────────────────────────────────────────────────── */
 
 const es: FooterStrings = {
+  brandSlogan: "Born to Flow: Ingeniería que da forma al aire",
+  contactLabels: { phone: "Teléfono", email: "Correo electrónico" },
+  videoTitle: "Vídeo corporativo de Novves",
   cta: {
     title: "¿Necesitas soporte de ingeniería para tu proyecto?",
     desc: "Nuestros ingenieros te apoyan en extracción de humos, selección de ventiladores, análisis CFD y puesta en marcha.",
@@ -944,6 +994,7 @@ const es: FooterStrings = {
     title: "Mantente informado",
     desc: "Suscríbete a nuestra newsletter para novedades de productos y sector.",
     placeholder: "Tu correo electrónico",
+    success: "Gracias — ya estás suscrito.",
   },
   langTitle: "Idioma",
   applicationAreas: {
@@ -960,6 +1011,7 @@ const es: FooterStrings = {
   globalCaption: { line1: "Soluciones globales,", line2: "soporte local." },
   bottom: {
     copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  Todos los derechos reservados.",
+    legalCenter: "Legal Center",
     kvkk: "Privacidad",
     privacyPolicy: "Política de privacidad",
     cookieSettings: "Política de cookies",
@@ -968,87 +1020,32 @@ const es: FooterStrings = {
   },
 };
 
-/* ── Azerbaijani (close to TR — quick adaptation) ────────────────────── */
-
-const az: FooterStrings = {
-  cta: {
-    title: "Layihəniz üçün mühəndislik dəstəyinə ehtiyacınız var?",
-    desc: "Tüstü tahliyəsi, fan seçimi, CFD analizi və istismara qəbul mərhələlərində mütəxəssis komandamızla yanınızdayıq.",
-    button: "Layihənizi paylaşın",
-    note: "Mühəndislərimiz sizinlə əlaqə saxlayacaq.",
-  },
-  pillars: [
-    { line1: "CFD əsaslı", line2: "sistem dizaynı" },
-    { line1: "Düzgün fan", line2: "seçimi" },
-    { line1: "İstismara qəbul", line2: "& test" },
-    { line1: "Texniki xidmət", line2: "& dəstək" },
-  ],
-  brand: {
-    desc: "Yanğın təhlükəsizliyi, sənaye ventilyasiyası və hava idarəetməsi üçün yüksək performanslı fan sistemləri hazırlayırıq.",
-  },
-  contact: { headOffice: "Baş ofis", factory: "İstehsal müəssisəsi" },
-  sections: {
-    products: "MƏHSULLAR",
-    solutions: "HƏLLƏR",
-    engineering: "MÜHƏNDİSLİK XİDMƏTLƏRİ",
-    resources: "RESURSLAR",
-    corporate: "ŞİRKƏT",
-  },
-  links: en.links, // Use English for less-common locale; refine later
-  certificates: {
-    ...en.certificates,
-    title: "Sertifikatlar və Standartlar",
-    downloadCatalog: "KATALOQU YÜKLƏ",
-    downloadCatalogDesc: "Bütün məhsul kataloqlarımızı yükləyə bilərsiniz.",
-  },
-  newsletter: {
-    title: "Xəbərdar olun",
-    desc: "Məhsul və sənaye yenilikləri üçün bülletenimizə abunə olun.",
-    placeholder: "E-poçt ünvanınız",
-  },
-  langTitle: "Dil",
-  applicationAreas: {
-    title: "Tətbiq sahələri",
-    items: [
-      { line1: "Avtomobil" , line2: "dayanacaqları"},
-      { line1: "Tunellər" },
-      { line1: "Sənaye", line2: "obyektləri" },
-      { line1: "Xəstəxanalar" },
-      { line1: "Otellər" },
-      { line1: "Fabriklər" },
-    ],
-  },
-  globalCaption: { line1: "Qlobal həllər,", line2: "yerli dəstək." },
-  bottom: {
-    copyright: "© 2013 – 2026 NOVVES Electric Motor Inc.  Bütün hüquqlar qorunur.",
-    kvkk: "Məxfilik",
-    privacyPolicy: "Məxfilik siyasəti",
-    cookieSettings: "Kuki siyasəti",
-    applicationForm: "Müraciət forması",
-    poweredBy: "Veb dizayn və inkişaf",
-  },
-};
-
-/* ── Locales without dedicated translation fall back to English ─────── */
-/* For: kk, tg, zh, ur, lt, pl — admin can refine later via PRs.       */
+function withLegalHubLabel(base: FooterStrings, label: string): FooterStrings {
+  const corporate = [...base.links.corporate];
+  if (corporate.length > 5) corporate[5] = label;
+  return {
+    ...base,
+    links: { ...base.links, corporate },
+    bottom: { ...base.bottom, legalCenter: label },
+  };
+}
 
 const FOOTER_I18N: Record<string, FooterStrings> = {
   tr,
-  en,
-  ru,
-  ar,
-  de,
-  fr,
-  it,
-  es,
-  az,
-  // Fallbacks — point to English until proper translations land
-  kk: en,
-  tg: en,
-  zh: en,
-  ur: en,
-  lt: en,
-  pl: en,
+  en: withLegalHubLabel(en, "Privacy and Compliance"),
+  ru: withLegalHubLabel(ru, "Конфиденциальность и соответствие требованиям"),
+  ar: withLegalHubLabel(ar, "الخصوصية والامتثال"),
+  de: withLegalHubLabel(de, "Datenschutz und Compliance"),
+  fr: withLegalHubLabel(fr, "Confidentialité et conformité"),
+  it: withLegalHubLabel(it, "Privacy e conformità"),
+  es: withLegalHubLabel(es, "Privacidad y cumplimiento"),
+  az: azFooter as FooterStrings,
+  kk: kkFooter as FooterStrings,
+  tg: tgFooter as FooterStrings,
+  zh: zhFooter as FooterStrings,
+  ur: urFooter as FooterStrings,
+  lt: ltFooter as FooterStrings,
+  pl: plFooter as FooterStrings,
 };
 
 export function getFooterStrings(locale: string): FooterStrings {

@@ -79,6 +79,8 @@ const nextConfig: NextConfig = {
       "**/node_modules/**",
       "**/.git/**",
       "**/public/animation/**",
+      "**/data/legal-locales/**",
+      "**/*.tr-to-locale.checkpoint.json",
     ];
     const apply = (c: { watchOptions?: Record<string, unknown> }) => {
       c.watchOptions = { ...c.watchOptions, ignored };
@@ -96,6 +98,36 @@ const nextConfig: NextConfig = {
     return [
       { source: "/trbu", destination: "/tr", permanent: false },
       { source: "/trbu/:path*", destination: "/tr/:path*", permanent: false },
+      {
+        source: "/:locale/legal/terms",
+        destination: "/:locale/terms",
+        permanent: false,
+      },
+      {
+        source: "/:locale/legal/privacy",
+        destination: "/:locale/privacy",
+        permanent: false,
+      },
+      {
+        source: "/:locale/legal/visitor",
+        destination: "/:locale/visitor",
+        permanent: false,
+      },
+      {
+        source: "/:locale/legal/cookies",
+        destination: "/:locale/cookies",
+        permanent: false,
+      },
+      {
+        source: "/:locale/legal/customer",
+        destination: "/:locale/customer",
+        permanent: false,
+      },
+      {
+        source: "/:locale/legal/product-safety",
+        destination: "/:locale/product-safety",
+        permanent: false,
+      },
     ];
   },
   async headers() {
@@ -129,7 +161,14 @@ const nextConfig: NextConfig = {
      * `search` vermeden sadece pathname ile eşleşince sorgu dizgesine izin verilir (cache bust).
      */
     localPatterns: [{ pathname: "/images/**" }, { pathname: "/animation/**" }],
-    qualities: [75, 90, 92],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        pathname: "/**",
+      },
+    ],
+    qualities: [75, 80, 82, 90, 92],
   },
 
   experimental: {

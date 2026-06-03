@@ -89,6 +89,142 @@
       "title": "Reikia techninio dokumento?",
       "subtitle": "Susisiekite su mumis dėl jums reikalingo katalogo, techninių duomenų lapo ar specifikacijų lapo.",
       "contactForm": "Susisiekimo forma"
+    },
+    "library": {
+      "brandTitle": "NOVVES TECHNINIS ARCHYVAS",
+      "brandSubtitle": "Techninis archyvas",
+      "nav": {
+        "dashboard": "Prietaisų skydelis",
+        "inventory": "Inventorius",
+        "compliance": "Atitiktis",
+        "audit": "Auditas"
+      },
+      "sidebar": {
+        "libraryName": "Novves biblioteka",
+        "libraryTag": "Techninė saugykla",
+        "uploadAsset": "Įkelti išteklius",
+        "hierarchy": "Hierarchija",
+        "collapseSidebar": "Sutraukti šoninę juostą",
+        "expandSidebar": "Išskleisti šoninę juostą",
+        "tree": {
+          "documentLibrary": "Dokumentų biblioteka",
+          "catalogs": "Katalogai",
+          "dataSheets": "Duomenų lapai",
+          "brochures": "Brošiūros",
+          "usageManuals": "Naudojimo ir priežiūros vadovai",
+          "certifications": "Sertifikatai ir atitiktis",
+          "cadBim": "CAD / BIM / Techniniai brėžiniai",
+          "training": "Mokymo centras",
+          "troubleshooting": "Trikčių šalinimas",
+          "testPerformance": "Bandymo ir našumo duomenys",
+          "energyEfficiency": "Energijos efektyvumas"
+        }
+      },
+      "searchPlaceholder": "Ieškokite techninio archyvo, CAD numerių arba raktinių žodžių...",
+      "table": {
+        "category": "Kategorija (IA)",
+        "documentNo": "Dokumentas Nr",
+        "documentName": "Dokumento pavadinimas",
+        "status": "Būsena",
+        "statusActive": "Aktyvus",
+        "statusPassive": "Pasyvus",
+        "statusCritical": "Kritinis",
+        "statusCurrent": "Dabartinė",
+        "statusApproved": "Patvirtinta",
+        "statusVideo": "Vaizdo įrašas"
+      },
+      "widgets": {
+        "emergencyTitle": "Avarinių gedimų palaikymas",
+        "emergencyText": "Naudokite Trikčių šalinimo skydelį, kad rastumėte greitus sprendimus dėl kritinių sistemos gedimų.",
+        "emergencyCta": "Atidarykite Sprendimo vadovą",
+        "complianceLabel": "Atitikties rodiklis",
+        "complianceValue": "98%",
+        "efficiencyLabel": "Efektyvumo klasė",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Išsami turto informacija",
+        "previewTag": "PREVIEW",
+        "docSummary": "Dokumento santrauka",
+        "fileFormat": "Formatas",
+        "revision": "Peržiūra",
+        "lastModified": "Paskutinį kartą atnaujinta",
+        "revisionLogs": "Revizijos istorija",
+        "shareDocument": "Dalintis",
+        "shareLink": "Nuoroda",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "El. paštas",
+        "secureDownload": "Saugus atsisiuntimas",
+        "secureDownloadNote": "Kai kuriems techniniams dokumentams gali reikėti leidimo ir slaptažodžio.",
+        "downloadDocument": "Atsisiųsti dokumentą",
+        "close": "Uždaryti skydelį"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Industrial Systems. Techninės dokumentacijos skyrius.",
+        "privacy": "Privatumo politika",
+        "terms": "Paslaugų teikimo sąlygos",
+        "security": "Saugumo auditas"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Nedideli teksto koregavimai",
+        "minorWhen": "Vakar 14:20 val",
+        "initialUpload": "Pradinis įkėlimas",
+        "initialWhen": "2024 m. spalio 10 d"
+      },
+      "emptyResults": "Jūsų paiešką atitinkančių dokumentų nėra.",
+      "documents": [
+        {
+          "id": "cat-nv-2024-01",
+          "category": "Katalogai",
+          "code": "CAT-NV-2024-01",
+          "title": "Pagrindinis produktų katalogas v2",
+          "status": "aktyvus",
+          "highlight": true,
+          "treeCategory": "Katalogai"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Trikčių šalinimas",
+          "code": "TS-FAN-003",
+          "title": "Didelės vibracijos trikčių šalinimo vadovas",
+          "status": "kritiškas",
+          "criticalTitle": true,
+          "treeCategory": "Trikčių šalinimas"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD / BIM",
+          "code": "BIM-AXL-315",
+          "title": "315 serijos 3D Revit modelis",
+          "status": "srovė",
+          "treeCategory": "CAD / BIM / Techniniai brėžiniai"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "Energijos efektyvumas",
+          "code": "EFF-EC-2024",
+          "title": "EC Motor LCC analizė",
+          "status": "aktyvus",
+          "treeCategory": "Energijos efektyvumas"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Sertifikatai",
+          "code": "CE-12101-3-2024",
+          "title": "EN 12101-3 Atitikties sertifikatas",
+          "status": "patvirtino",
+          "treeCategory": "Sertifikatai ir atitiktis"
+        },
+        {
+          "id": "web-24-05",
+          "category": "Mokymo centras",
+          "code": "WEB-24-05",
+          "title": "Surinkimo technikos internetinio seminaro įrašymas",
+          "status": "vaizdo įrašą",
+          "highlight": true,
+          "treeCategory": "Mokymo centras"
+        }
+      ]
     }
   },
   "fanSecici": {
@@ -125,7 +261,7 @@
         },
         {
           "title": "Našumo skaičiuoklė",
-          "description": "Energijos sąnaudų, triukšmo lygio ir efektyvumo skaičiavimai"
+          "description": "Energijos suvartojimo, triukšmo lygio ir efektyvumo skaičiavimai"
         }
       ],
       "comingSoonLabel": "Netrukus"

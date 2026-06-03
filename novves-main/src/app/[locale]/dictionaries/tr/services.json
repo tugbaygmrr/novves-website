@@ -1,8 +1,130 @@
 {
+  "genelBakis": {
+    "meta": {
+      "title": "Hizmetler | Novves",
+      "description": "NOVVES uçtan uca mühendislik, proje desteği ve saha hizmetleri — yerinde keşiften teknik servise."
+    },
+    "hero": {
+      "badge": "Genel Bakış",
+      "titlePart1": "NOVVES",
+      "titleHighlight": "Hizmetleri",
+      "subtitle": "Uçtan uca mühendislik, proje desteği ve saha hizmetleri",
+      "imageSrc": "/images/page-hero/cozumler-main.jpg"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES, yalnızca endüstriyel fan grupları ve iklimlendirme sistemleri tedarik eden bir üretici değildir. Her projeyi kendi teknik koşulları içinde analiz eden, doğru ürünü doğru uygulama ile buluşturan ve proje sürecini mühendislik disipliniyle destekleyen bir çözüm ortağıdır.",
+        "Endüstriyel havalandırma, konfor havalandırma, kapalı otopark havalandırması, duman ve ısı tahliye sistemleri, duman kontrol tasarımı ve proje bazlı HVAC uygulamalarında; yerinde keşiften teknik projelendirmeye, CFD analizinden fan seçimine, devreye almadan satış sonrası teknik servise kadar uçtan uca hizmet sunuyoruz.",
+        "Her hizmet sürecimizde amacımız; güvenli, verimli, sürdürülebilir ve uzun ömürlü sistem çözümleri geliştirmektir. Bu nedenle NOVVES, projeleri yalnızca ürün bazında değil; hava akışı, yangın güvenliği, enerji verimliliği, uygulama koşulları, bakım erişimi, otomasyon senaryoları ve uzun vadeli işletme performansı açısından bütünsel olarak değerlendirir."
+      ]
+    },
+    "engineeringApproach": {
+      "sectionLabel": "Yaklaşım",
+      "title": "Mühendislik Odaklı Hizmet Yaklaşımı",
+      "paragraphs": [
+        "NOVVES hizmet modeli, proje ihtiyaçlarının doğru anlaşılmasıyla başlar. Saha koşulları, mimari yapı, kullanım amacı, hava debisi ihtiyacı, basınç kayıpları, sıcaklık dayanımı, yangın senaryosu, duman tahliye gereklilikleri ve ilgili standartlar birlikte değerlendirilir.",
+        "Bu yaklaşım sayesinde her proje için yalnızca uygun ürün değil; doğru sistem mimarisi, doğru fan yerleşimi, doğru otomasyon senaryosu ve doğru teknik destek süreci planlanır."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Kapsam",
+      "title": "Hizmet Kapsamımız",
+      "intro": "NOVVES hizmetleri aşağıdaki ana başlıklarda sunulur:"
+    },
+    "lifecycle": {
+      "sectionLabel": "Destek",
+      "title": "Proje Başından Satış Sonrasına Kadar Destek",
+      "paragraph": "NOVVES, proje sürecinin yalnızca teklif veya ürün teslimi aşamasında değil, tüm yaşam döngüsünde müşterilerinin yanında yer alır. Proje başlangıcında doğru ihtiyacın belirlenmesi, teknik analizlerin yapılması, ürün ve sistem seçiminin oluşturulması, gerekli dokümantasyonun hazırlanması, sahada devreye alma süreçlerinin yürütülmesi ve satış sonrası teknik destek hizmetleri NOVVES'in bütünsel hizmet yaklaşımının temel parçalarıdır."
+    },
+    "applicationAreas": {
+      "sectionLabel": "Sektörler",
+      "title": "Hangi Alanlarda Hizmet Veriyoruz?",
+      "intro": "NOVVES; farklı yapı tipleri ve sektörlerde mühendislik destekli havalandırma ve duman kontrol hizmetleri sunar. Başlıca uygulama alanlarımız:",
+      "items": [
+        "Kapalı otoparklar",
+        "Endüstriyel tesisler",
+        "Üretim alanları",
+        "Ticari binalar",
+        "Alışveriş merkezleri",
+        "Oteller",
+        "Kamu yapıları",
+        "Tüneller ve altyapı projeleri",
+        "Teknik hacimler",
+        "Özel proje uygulamaları",
+        "HVAC ve iklimlendirme projeleri"
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Fark",
+      "title": "Neden NOVVES Hizmetleri?",
+      "paragraphs": [
+        "NOVVES hizmetlerinin temel farkı, üretim kabiliyeti ile mühendislik bilgisini aynı çatı altında birleştirmesidir. Bu sayede projeler; yalnızca katalog değerlerine göre değil, gerçek saha koşullarına, uygulama ihtiyaçlarına ve performans hedeflerine göre değerlendirilir.",
+        "NOVVES ile çalışmak; doğru fan seçimi, güvenilir duman tahliye sistemi, verimli havalandırma çözümü, teknik dokümantasyon desteği, saha devreye alma kabiliyeti ve satış sonrası mühendislik desteği anlamına gelir."
+      ]
+    },
+    "servicesGrid": {
+      "sectionLabel": "Hizmetler",
+      "title": "Mühendislik ve Saha Hizmetlerimiz",
+      "detailsLabel": "Detayları İncele"
+    },
+    "hubCards": [
+      {
+        "slug": "yerinde-kesif",
+        "excerpt": "Uzman mühendislerimiz sahanıza gelerek teknik gereksinimleri analiz eder ve en optimize sistem yerleşimi için veriler toplar.",
+        "category": "Saha Hizmeti"
+      },
+      {
+        "slug": "duman-kontrol-sistemi-tasarimi",
+        "excerpt": "Jet fan ve duman tahliye sistemlerinizi yönetmeliklere uygun, CFD destekli mühendislik yaklaşımıyla projelendiriyoruz.",
+        "category": "Tasarım",
+        "badge": "Mühendislik"
+      },
+      {
+        "slug": "cfd-analizi",
+        "excerpt": "Sanal ortamda akışkanlar mekaniği simülasyonları ile duman tahliye ve havalandırma sistemlerinizin performansını önceden doğrulayın.",
+        "category": "Mühendislik",
+        "badge": "Kritik Süreç"
+      },
+      {
+        "slug": "fan-secimi-ve-teknik-projelendirme",
+        "excerpt": "Debi, basınç ve ortam koşullarına göre optimum fan seçimi; kanal, susturucu ve aksesuarlarla bütünleşik teknik projelendirme.",
+        "category": "Projelendirme"
+      },
+      {
+        "slug": "devreye-alma",
+        "excerpt": "Kurulum sonrası sistemlerin standartlara uygunluk testlerini yaparak güvenli ve verimli bir başlangıç sağlıyoruz.",
+        "category": "Uygulama"
+      },
+      {
+        "slug": "teknik-servis",
+        "excerpt": "7/24 kesintisiz teknik destek ve acil müdahale ekiplerimizle havalandırma sistemlerinizin sürekliliğini garanti altına alıyoruz.",
+        "category": "Operasyon"
+      },
+      {
+        "slug": "bakim-ve-performans-kontrolu",
+        "excerpt": "Periyodik bakım planları ile enerji verimliliğini artırın ve sistemlerinizin ömrünü uzatarak operasyonel maliyetleri düşürün.",
+        "category": "Yaşam Döngüsü"
+      },
+      {
+        "slug": "egitim-ve-teknik-danismanlik",
+        "excerpt": "Operasyon ekiplerinize özel teknik eğitimler ve duman kontrol mevzuatları üzerine danışmanlık hizmetleri sunuyoruz.",
+        "category": "Bilgi Birikimi"
+      }
+    ],
+    "cta": {
+      "sectionLabel": "İletişim",
+      "title": "Projeniz İçin Doğru Hizmeti Birlikte Belirleyelim",
+      "paragraphs": [
+        "Endüstriyel havalandırma, duman kontrol sistemi, jet fan yerleşimi, CFD analizi, fan seçimi, devreye alma veya teknik servis ihtiyacınız için NOVVES ekibiyle iletişime geçebilirsiniz.",
+        "Projenizin teknik gereksinimlerini birlikte değerlendirelim; güvenli, verimli ve uzun ömürlü bir sistem çözümü geliştirelim."
+      ],
+      "ctaButton": "Projeniz İçin Hizmet Talebi Oluşturun"
+    }
+  },
   "cfdAnalizi": {
     "meta": {
       "title": "CFD Analizi | Novves",
-      "description": "NOVVES CFD (Hesaplamalı Akışkanlar Dinamiği) analizleri — gerçek senaryolar, gerçek veriler, güvenli çözümler."
+      "description": "NOVVES CFD analizi — hesaplamalı akışkanlar dinamiği ile doğrulanmış havalandırma ve duman kontrol çözümleri."
     },
     "breadcrumb": {
       "home": "Ana Sayfa",
@@ -13,25 +135,42 @@
       "badge": "Hizmetler",
       "titlePart1": "CFD",
       "titleHighlight": "Analizi",
-      "subtitle": "Gerçek Senaryolar, Gerçek Veriler, Güvenli Çözümler.",
+      "subtitle": "Hesaplamalı Akışkanlar Dinamiği ile doğrulanmış havalandırma ve duman kontrol çözümleri.",
       "stats": [
         { "value": "3D", "label": "Simülasyon Modeli" },
-        { "value": "5", "label": "Analiz Parametresi" },
+        { "value": "7+", "label": "Analiz Parametresi" },
         { "value": "EN 12101-3", "label": "Standart Doğrulama" }
       ]
     },
-    "intro": "NOVVES olarak yalnızca fan üretmiyor, aynı zamanda projeye özel geliştirilmiş mühendislik tabanlı havalandırma çözümleri sunuyoruz. Bu çözümlerin temelinde, tasarımlarımızı sahaya uygulamadan önce test etmemizi sağlayan CFD (Hesaplamalı Akışkanlar Dinamiği) analizleri yer alır.",
+    "intro": [
+      "NOVVES olarak yalnızca fan, jet fan, duman tahliye fanı veya havalandırma ekipmanı üretmiyoruz; her projeye özel mühendislik tabanlı sistem çözümleri geliştiriyoruz. Bu yaklaşımın en önemli adımlarından biri, tasarımın sahaya uygulanmadan önce CFD analizi ile sayısal olarak doğrulanmasıdır.",
+      "CFD, yani Hesaplamalı Akışkanlar Dinamiği analizi; kapalı otoparklar, endüstriyel tesisler, teknik hacimler, tünel benzeri yapılar ve büyük kapalı alanlarda hava akışının, duman yayılımının, sıcaklık değişiminin, CO yoğunluğunun ve fan etkisinin üç boyutlu olarak incelenmesini sağlar.",
+      "NOVVES, CFD analizleriyle jet fan yerleşimini, egzoz fanı kapasitesini, taze hava organizasyonunu, duman tahliye senaryolarını ve sistem performansını proje özelinde değerlendirir. Böylece doğru fan sayısı, doğru fan konumu, optimum enerji kullanımı ve daha güvenli tahliye koşulları için mühendislik temelli kararlar alınır."
+    ],
     "whyCfd": {
       "sectionLabel": "Metodoloji",
       "title": "Neden CFD Analizi?",
+      "intro": "CFD analizi, havalandırma ve duman kontrol sistemlerinin yalnızca teorik hesaplara göre değil, gerçek proje koşullarına göre değerlendirilmesini sağlar.",
       "items": [
-        "Fan sistemlerinin performansı, gerçek ortam koşullarına göre simüle edilir.",
-        "Duman, sıcaklık ve gaz yayılımı gibi yangın senaryoları önceden test edilir.",
-        "Görüş mesafesi, sıcaklık artışı ve CO yoğunluğu gibi hayati değişkenler analiz edilir.",
-        "Yönetmeliklere uygunluk ve güvenli tahliye süreleri doğrulanır."
+        {
+          "title": "Sistem performansı sahaya uygulanmadan önce görülür",
+          "desc": "Fan sistemlerinin performansı; proje geometrisi, kolon yerleşimi, rampa konumları, tavan yüksekliği, egzoz noktaları ve taze hava girişleri dikkate alınarak simüle edilir."
+        },
+        {
+          "title": "Yangın ve duman senaryoları önceden test edilir",
+          "desc": "Dumanın hangi yönde yayılacağı, hangi bölgelerde yoğunlaşacağı, kaçış yollarını nasıl etkileyebileceği ve jet fanların dumanı nasıl yönlendireceği analiz edilir."
+        },
+        {
+          "title": "Kritik değişkenler mühendislik verisiyle değerlendirilir",
+          "desc": "Görüş mesafesi, sıcaklık artışı, hava hızı, CO yoğunluğu, duman tabakası, ölü bölgeler ve egzoz verimliliği gibi parametreler sayısal olarak incelenir."
+        },
+        {
+          "title": "Yönetmelik ve güvenli tahliye hedefleri desteklenir",
+          "desc": "CFD analizi; duman kontrol tasarımı, kapalı otopark havalandırması, yangın güvenliği ve tahliye senaryoları açısından proje kararlarının daha güvenilir şekilde alınmasına katkı sağlar."
+        }
       ],
       "resultLabel": "Sonuç",
-      "resultText": "Doğru yerleşim, doğru fan sayısı, optimum enerji kullanımı ve maksimum güvenlik sağlanır."
+      "resultText": "Doğru yerleşim, doğru fan sayısı, optimum enerji kullanımı ve maksimum güvenlik hedeflenir."
     },
     "analysisTypes": {
       "sectionLabel": "Analiz Kapsamı",
@@ -40,49 +179,112 @@
         {
           "title": "Hava Hızı Dağılımı",
           "subtitle": "Velocity Analysis",
-          "text": "Kapalı alan içerisinde hava akımının yönü, hızı ve yayılımı üç boyutlu olarak modellenmiştir. Jet fanların etkisi ile ortamın tamamında hava sirkülasyonunun sağlanması hedeflenmiştir."
+          "text": "Kapalı alan içerisindeki hava akışının yönü, hızı ve yayılımı üç boyutlu olarak modellenir. Jet fanların etkisiyle ortam genelinde yeterli hava sirkülasyonu sağlanıp sağlanmadığı analiz edilir."
         },
         {
           "title": "Sıcaklık Değişimi",
           "subtitle": "Temperature Distribution",
-          "text": "Yangın anında ortam sıcaklığının insan seviyesi yüksekliğinde nasıl değiştiği analiz edilmiştir. Kritik sıcaklık sınırları değerlendirilmiş, acil durum yönetimi açısından riskler ortaya konmuştur."
+          "text": "Yangın senaryosu sırasında ortam sıcaklığının insan seviyesinde, tavan bölgesinde ve kritik kaçış güzergâhlarında nasıl değiştiği değerlendirilir. Kritik sıcaklık bölgeleri belirlenerek acil durum güvenliği açısından riskler ortaya konur."
         },
         {
           "title": "Görünürlük Değerlendirmesi",
           "subtitle": "Visibility Analysis",
-          "text": "Yoğun duman altında tahliye yollarının ne kadar süreyle görünür kaldığı analiz edilmiştir. Görüş mesafesindeki azalma hızı ölçülerek, tahliye güvenliği doğrulanmıştır."
+          "text": "Yoğun duman altında kaçış yollarında görüş mesafesinin ne kadar süre korunabildiği analiz edilir. Görüş mesafesindeki azalma, tahliye güvenliği ve itfaiye müdahalesi açısından değerlendirilir."
         },
         {
           "title": "Karbonmonoksit Yayılımı",
           "subtitle": "CO Concentration",
-          "text": "Otopark gibi kapalı ortamlarda egzoz gazı olan CO'nun zamanla nasıl biriktiği ve fan sistemiyle nasıl tahliye edildiği modellenmiştir."
+          "text": "Kapalı otopark gibi alanlarda araç egzoz gazı kaynaklı CO birikimi modellenir. CO yoğunluğunun zaman içindeki değişimi ve fan sistemiyle nasıl tahliye edildiği analiz edilir."
         },
         {
           "title": "Duman Yayılımı",
           "subtitle": "Smoke Propagation",
-          "text": "Yangın sonrası dumanın yayılma yönü, hızı ve jet fanlar yardımıyla nasıl yönlendirildiği analiz edilmiştir. Duman tabakası oluşumu ve hareketi detaylı şekilde simüle edilmiştir."
+          "text": "Yangın sonrası dumanın yayılma yönü, hızı, tabaka oluşumu ve jet fanlar yardımıyla nasıl yönlendirildiği simüle edilir. Egzoz noktalarının etkinliği ve duman kontrol stratejisinin performansı değerlendirilir."
+        },
+        {
+          "title": "Jet Fan Etkisi",
+          "subtitle": "Jet Fan Impact",
+          "text": "Jet fanların hava akışına etkisi, ölü bölgeleri azaltma kabiliyeti, egzoz fanlarına yönlendirme performansı ve sistem içindeki hava hareketine katkısı analiz edilir."
+        },
+        {
+          "title": "Egzoz ve Taze Hava Dengesi",
+          "subtitle": "Air Balance",
+          "text": "Egzoz fanları, taze hava girişleri, doğal açıklıklar ve mekanik besleme sistemleri birlikte değerlendirilir. Sistem dengesi, basınç farkları ve hava yenileme performansı incelenir."
         }
       ]
     },
     "benefits": {
       "sectionLabel": "Değer Önerisi",
       "title": "NOVVES ile Kazandıklarınız",
+      "intro": "NOVVES CFD analizi hizmeti, proje kararlarını sezgisel tahminlere değil, mühendislik verilerine dayandırır.",
       "items": [
-        "Yönetmeliklere uygunluk doğrulaması",
-        "Fan konumlandırmasında mühendislik temelli kararlar",
-        "Tahliye güvenliği için sıcaklık, CO ve görüş sınırlarının ön analizi",
+        "Yönetmeliklere ve proje şartlarına uygunluk doğrulaması",
+        "Jet fan ve egzoz fanı konumlandırmasında mühendislik temelli kararlar",
+        "Kapalı otopark havalandırma sistemlerinde daha doğru fan yerleşimi",
+        "Duman tahliye sistemlerinde yangın senaryosuna göre performans değerlendirmesi",
+        "Tahliye güvenliği için sıcaklık, CO ve görüş mesafesi sınırlarının ön analizi",
         "Kurulum öncesi sistem performansının net şekilde görülmesi",
-        "Proje bazlı teknik raporlama ve veri destekli sunum"
-      ],
-      "quote": "Tasarımınızı yalnızca deneyime değil, veriye de dayandırın. NOVVES mühendisliğiyle güvenli, güçlü ve optimize edilmiş havalandırma sistemleri kurun.",
-      "ctaPrimary": "Proje Talebi Oluştur",
-      "ctaSecondary": "Duman Kontrol Tasarımı"
+        "Enerji verimliliği ve fan çalışma senaryolarının optimize edilmesi",
+        "Proje bazlı teknik raporlama ve veri destekli sunum imkânı",
+        "Müşavir, işveren, yangın danışmanı ve proje ekipleri için daha güçlü teknik dokümantasyon"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Uygulama Alanları",
+      "title": "Hangi Projelerde CFD Analizi Kullanıyoruz?",
+      "intro": "NOVVES, CFD analizini özellikle hava akışının, duman hareketinin ve fan yerleşiminin kritik olduğu projelerde kullanır.",
+      "items": [
+        "Kapalı otopark havalandırma projeleri",
+        "Jet fan sistemleri",
+        "Duman ve ısı tahliye sistemleri",
+        "Endüstriyel tesis havalandırması",
+        "Tünel benzeri yapılar",
+        "Teknik hacimler",
+        "Büyük hacimli ticari yapılar",
+        "Yangın senaryosu gerektiren projeler",
+        "CO tahliye ve iç hava kalitesi analizleri",
+        "Proje bazlı özel havalandırma çözümleri"
+      ]
+    },
+    "process": {
+      "sectionLabel": "Süreç",
+      "title": "NOVVES CFD Analizi Süreci",
+      "items": [
+        {
+          "title": "Proje Verilerinin Toplanması",
+          "desc": "Mimari planlar, kat yükseklikleri, kullanım amacı, yangın senaryosu, egzoz noktaları, taze hava girişleri ve mevcut sistem bilgileri değerlendirilir."
+        },
+        {
+          "title": "Modelleme ve Senaryo Oluşturma",
+          "desc": "Proje geometrisi üç boyutlu olarak modellenir. Yangın senaryosu, normal havalandırma senaryosu, CO tahliye senaryosu veya proje özelindeki çalışma koşulları belirlenir."
+        },
+        {
+          "title": "Simülasyon ve Performans Analizi",
+          "desc": "Hava hızı, duman yayılımı, sıcaklık dağılımı, görünürlük, CO yoğunluğu ve fan etkisi analiz edilir. Kritik bölgeler ve sistem performansı incelenir."
+        },
+        {
+          "title": "Raporlama ve Teknik Değerlendirme",
+          "desc": "Analiz sonuçları grafikler, kesitler, akış görselleri, senaryo çıktıları ve teknik yorumlarla raporlanır. Gerekirse fan yerleşimi veya sistem senaryosu için iyileştirme önerileri sunulur."
+        },
+        {
+          "title": "Proje Desteği ve Uygulama",
+          "desc": "CFD sonuçlarına göre fan seçimi, jet fan yerleşimi, egzoz kapasitesi, taze hava organizasyonu ve otomasyon senaryosu proje ekibiyle birlikte değerlendirilir."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "CFD Analizi",
+      "title": "Projenizi CFD Analizi ile Doğrulayalım",
+      "subtitle": "Kapalı otopark, endüstriyel tesis, duman tahliye sistemi, jet fan projesi veya özel havalandırma uygulamanız için NOVVES teknik ekibiyle iletişime geçebilirsiniz.",
+      "paragraph": "Projenizi sahaya uygulamadan önce CFD analizi ile değerlendirelim; güvenli, verimli ve mühendislik temelli bir sistem çözümü oluşturalım.",
+      "ctaButton": "CFD Analizi Talebi Oluşturun",
+      "secondaryLink": "Duman Kontrol Tasarımı"
     }
   },
   "devreAlma": {
     "meta": {
       "title": "Devreye Alma | Novves",
-      "description": "NOVVES satış sonrası devreye alma hizmeti — montaj kontrolü, performans testleri, optimizasyon ve eğitim."
+      "description": "NOVVES devreye alma hizmeti — sahada mekanik ve elektrik kontrolü, performans testleri, otomasyon doğrulama ve raporlama."
     },
     "breadcrumb": {
       "home": "Ana Sayfa",
@@ -93,54 +295,132 @@
       "badge": "Hizmetler",
       "titlePart1": "Devreye",
       "titleHighlight": "Alma",
-      "subtitle": "Kurulum sonrası sistemin tam performansla çalışmasını garanti altına alıyoruz.",
+      "subtitle": "Sistem performansını sahada doğrulayan profesyonel devreye alma hizmeti.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuASo_JruCyxDVBwlCmBSQZOFpltmGjXdUxsE3roKreES2Gu2pq9zLqHMjemLJgfWv0De6KIbjxhT4oIZaLESKuWFQLhGEp8ML5gjmpBBZvYzHre4f_lmmkw90aiDCQdjUugZKThhIwssahTOGswbLWcBSTzTrnmg05kWy8eJf79tYs2afdF8tDdUn7XmqnqV94ZL70snn4wf11cok1MFL7SZiIfqChKtJjFyLjHMiDez3pjiCgq-s0bzPrSm5Vagv2Hho13FekYu9s",
       "stats": [
-        { "value": "8", "label": "Hizmet Adımı" },
-        { "value": "4", "label": "Faz" },
+        { "value": "9", "label": "Hizmet Adımı" },
+        { "value": "360°", "label": "Saha Doğrulama" },
         { "value": "7/24", "label": "Destek" },
         { "value": "PDF", "label": "Raporlama" }
       ]
     },
     "intro": [
-      "Novves olarak, yalnızca kaliteli ürünler üretmekle kalmıyor; kurulum sonrası sistemin tam performansla çalışmasını da garanti altına alıyoruz.",
-      "Satış sonrası devreye alma hizmetimiz, müşterilerimizin ürünlerimizi en verimli ve güvenli şekilde kullanmasını sağlamak amacıyla sunulmaktadır."
+      "NOVVES olarak yalnızca kaliteli fan, motor, jet fan, duman tahliye fanı, klima santrali ve HVAC ekipmanları üretmekle kalmıyor; kurulum sonrasında sistemin sahada doğru, güvenli ve verimli çalışması için profesyonel devreye alma hizmeti sunuyoruz.",
+      "Devreye alma süreci, ürünün montaj sonrası ilk çalıştırılması değil; mekanik uygunluk, elektrik bağlantıları, motor dönüş yönü, hız kontrol cihazı ayarları, otomasyon senaryoları, sensör bağlantıları, performans kontrolleri ve kullanıcı bilgilendirmesini kapsayan teknik bir doğrulama sürecidir.",
+      "NOVVES teknik servis ve devreye alma ekibi; kapalı otopark havalandırma sistemleri, jet fan sistemleri, duman ve ısı tahliye fanları, aksiyal fanlar, endüstriyel fanlar, MCC kontrol panoları, klima santralleri ve chiller destekli HVAC projelerinde sistemin proje şartlarına uygun şekilde çalışmasını kontrol eder.",
+      "Doğru yapılan devreye alma; sistem verimliliğini artırır, olası kurulum hatalarını erken aşamada tespit eder, ürün ömrünü destekler ve satış sonrası süreçlerin daha sağlıklı ilerlemesini sağlar."
     ],
     "serviceSteps": {
       "sectionLabel": "Süreç",
       "title": "Hizmet İçeriği",
       "items": [
-        { "step": "Ürün montaj kontrolü ve mekanik uygunluk denetimi", "phase": "Kontrol" },
-        { "step": "Elektrik bağlantıları ve topraklama uygunluğunun kontrolü", "phase": "Kontrol" },
-        { "step": "Fanların ilk çalıştırılması ve motor yönü doğrulaması", "phase": "Çalıştırma" },
-        { "step": "Hız kontrol cihazı / frekans invertörü ayarlarının yapılması", "phase": "Çalıştırma" },
-        { "step": "Debi, basınç, sıcaklık gibi temel performans testlerinin gerçekleştirilmesi", "phase": "Test" },
-        { "step": "Fanın ortam koşullarına göre optimizasyonu", "phase": "Test" },
-        { "step": "Kullanıcıya sistemin işleyişi hakkında kısa eğitim verilmesi ve temel bakım bilgilendirmesi", "phase": "Eğitim" },
-        { "step": "Tüm test ve işlemlerin kayıt altına alınarak devreye alma formu ile raporlanması", "phase": "Raporlama" }
+        {
+          "title": "Mekanik Montaj Uygunluk Kontrolü",
+          "desc": "Ürünlerin montaj yapısı ve sahada devreye almaya hazır olma durumları mekanik açıdan incelenir."
+        },
+        {
+          "title": "Elektrik Bağlantı Kontrolü",
+          "desc": "Motor bağlantıları, pano bağlantıları, kablolama, topraklama, koruma elemanları, enerji beslemesi ve elektriksel uygunluk değerlendirilir."
+        },
+        {
+          "title": "İlk Çalıştırma ve Motor Yönü Doğrulama",
+          "desc": "Fanların ilk çalıştırması yapılır. Motor dönüş yönü, hava akış yönü, olağan dışı ses, titreşim, sürtme veya mekanik uygunsuzluk kontrol edilir."
+        },
+        {
+          "title": "Hız Kontrol ve Frekans İnvertörü Ayarları",
+          "desc": "VFD / frekans invertörü kullanılan sistemlerde temel parametreler, çalışma frekansı, hız kontrol aralıkları ve sistem çalışma senaryoları kontrol edilir."
+        },
+        {
+          "title": "Otomasyon ve Senaryo Kontrolü",
+          "desc": "Jet fan sistemleri, duman tahliye fanları, egzoz fanları, taze hava fanları, CO sensörleri, yangın alarm sinyalleri, MCC / DDC panoları ve BMS entegrasyonu proje senaryosuna göre test edilir."
+        },
+        {
+          "title": "Performans Kontrolleri",
+          "desc": "Debi, basınç, sıcaklık, titreşim, ses seviyesi, çalışma akımı, motor yükü ve sistem davranışı gibi temel performans göstergeleri saha koşullarına göre değerlendirilir."
+        },
+        {
+          "title": "Optimizasyon",
+          "desc": "Fanların çalışma şekli, hız kontrolü, otomasyon senaryosu ve saha koşulları birlikte değerlendirilerek sistemin daha verimli ve stabil çalışması için gerekli ayarlar yapılır."
+        },
+        {
+          "title": "Kullanıcı Bilgilendirmesi",
+          "desc": "İşletme, bakım veya teknik ekiplerine sistemin çalışma prensibi, temel kullanım adımları, dikkat edilmesi gereken noktalar ve bakım ihtiyaçları hakkında bilgilendirme yapılır."
+        },
+        {
+          "title": "Raporlama",
+          "desc": "Yapılan kontroller, testler, ayarlar ve gözlemler kayıt altına alınır. Gerekli durumlarda devreye alma formu, teknik servis raporu veya saha değerlendirme notu hazırlanır."
+        }
       ]
     },
     "whyImportant": {
       "sectionLabel": "Avantajlar",
-      "title": "Neden Önemli?",
+      "title": "Devreye Alma Neden Önemlidir?",
       "items": [
-        { "title": "Garanti Aktivasyonu", "text": "Garanti süresinin aktif hâle gelmesi" },
-        { "title": "Arıza Önleme", "text": "Kurulum hatalarından doğabilecek arızaların önlenmesi" },
-        { "title": "Verimlilik", "text": "Enerji verimliliğinin ve cihaz ömrünün artırılması" },
-        { "title": "Optimizasyon", "text": "Fanın ortam şartlarına göre en uygun şekilde çalıştırılması" }
+        {
+          "title": "Garanti Sürecinin Sağlıklı Başlamasını Destekler",
+          "text": "Devreye alma süreci, ürünün doğru montaj ve uygun çalışma koşullarında kullanıldığının kontrol edilmesine yardımcı olur. Bu da garanti ve satış sonrası süreçlerin daha sağlıklı yönetilmesini sağlar."
+        },
+        {
+          "title": "Kurulum Hatalarını Erken Aşamada Tespit Eder",
+          "text": "Mekanik montaj, elektrik bağlantısı, motor dönüş yönü, frekans invertörü ayarları veya otomasyon senaryolarındaki hatalar sistem çalışmaya başlamadan önce tespit edilebilir."
+        },
+        {
+          "title": "Sistem Verimliliğini Artırır",
+          "text": "Doğru devreye alınmış fan ve havalandırma sistemleri; enerji tüketimi, hava debisi, basınç dengesi, ses seviyesi ve uzun ömürlü çalışma açısından daha verimli sonuç verir."
+        },
+        {
+          "title": "Arıza Riskini Azaltır",
+          "text": "İlk çalıştırma sırasında yapılan kontroller; aşırı akım, ters dönüş, titreşim, uygunsuz bağlantı, yanlış hız ayarı veya saha koşullarından kaynaklanabilecek riskleri azaltır."
+        },
+        {
+          "title": "Otomasyon Senaryolarını Doğrular",
+          "text": "Duman kontrol sistemleri, jet fan sistemleri ve kapalı otopark havalandırma uygulamalarında fanların doğru senaryoya göre çalışması kritik öneme sahiptir. Devreye alma sürecinde otomasyon ve kontrol senaryoları sahada test edilir."
+        },
+        {
+          "title": "Kullanıcıya Güvenli İşletme Bilgisi Sağlar",
+          "text": "Sistemi kullanacak teknik ekiplerin doğru bilgilendirilmesi, bakım süreçlerinin daha düzenli yürütülmesine ve sistemin güvenli şekilde işletilmesine katkı sağlar."
+        }
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Kapsam",
+      "title": "NOVVES Devreye Alma Hizmeti Hangi Sistemleri Kapsar?",
+      "items": [
+        "Jet fan sistemleri",
+        "Duman ve ısı tahliye fanları",
+        "Aksiyal fanlar",
+        "Endüstriyel fanlar",
+        "Çatı fanları",
+        "Hücreli fanlar",
+        "Egzoz ve taze hava fanları",
+        "MCC / DDC kontrol panoları",
+        "Kapalı otopark havalandırma sistemleri",
+        "Duman kontrol sistemleri",
+        "Klima santrali uygulamaları",
+        "Chiller destekli HVAC sistemleri",
+        "Proje bazlı özel havalandırma sistemleri"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "NOVVES ile Devreye Alma",
+      "title": "Bütünsel Teknik Koordinasyon",
+      "paragraphs": [
+        "NOVVES devreye alma hizmeti; üretim, teknik ofis, otomasyon, saha servis ve satış sonrası destek ekiplerinin koordinasyonuyla yürütülür. Bu sayede ürünün teknik tasarımından sahadaki gerçek çalışma koşullarına kadar tüm süreçler bütünsel olarak değerlendirilir.",
+        "Devreye alma sonrasında sistemin çalışma durumu kontrol edilir, gerekli ayarlar yapılır, kullanıcıya temel bilgilendirme sağlanır ve süreç kayıt altına alınır."
       ]
     },
     "cta": {
-      "sectionLabel": "Hizmet Talebi",
-      "title": "Devreye alma hizmeti için bizimle iletişime geçin",
-      "contactForm": "İletişim Formu",
-      "weekdays": "Hafta içi 08:30 – 18:00",
-      "emailSupport": "E-posta ile teknik destek"
+      "sectionLabel": "Devreye Alma",
+      "title": "Projenizi Güvenli Şekilde Çalıştırmaya Başlayalım",
+      "subtitle": "Fan, jet fan, duman tahliye sistemi, otomasyon panosu, klima santrali veya HVAC projeniz için NOVVES teknik ekibinden devreye alma desteği alabilirsiniz.",
+      "ctaButton": "Devreye Alma Talebi Oluşturun",
+      "contactForm": "Devreye Alma Talebi Oluşturun"
     }
   },
   "dumanKontrol": {
     "meta": {
       "title": "Duman Kontrol Sistem Tasarımı | Novves",
-      "description": "Jet fan sistemi tasarımı — kapalı otoparklarda hava akışı, egzoz tahliyesi ve yangın durumunda duman kontrolü."
+      "description": "NOVVES duman kontrol sistem tasarımı — kapalı otopark ve büyük hacimli yapılar için jet fan, duman tahliye ve mühendislik odaklı çözümler."
     },
     "breadcrumb": {
       "home": "Ana Sayfa",
@@ -151,6 +431,8 @@
       "badge": "Hizmetler",
       "titlePart1": "Duman Kontrol",
       "titleHighlight": "Sistem Tasarımı",
+      "subtitle": "Kapalı otoparklar ve büyük hacimli yapılar için mühendislik odaklı duman kontrol çözümleri.",
+      "imageSrc": "/images/hizmetler/duman-kontrol-tasarimi.png",
       "stats": [
         { "value": "EN 12101-3", "label": "Standart Uyumu" },
         { "value": "300°C / 2h", "label": "Yangın Dayanımı" },
@@ -158,70 +440,131 @@
       ]
     },
     "intro": [
-      "Jet fan sistemi, kapalı otoparklarda hava akışını yönlendirmek, egzoz gazlarını tahliye etmek ve yangın durumunda dumanın kontrolünü sağlamak amacıyla kullanılan mekanik bir havalandırma sistemidir.",
-      "Bu sistem, tünel havalandırma teknolojilerinden uyarlanarak geliştirilmiştir ve özellikle büyük ve karmaşık yapılı otoparklarda tercih edilir.",
-      "Jet fanlar, yüksek hızda hava üfleyerek önlerindeki hava kütlesini itme ve sürükleme yoluyla geniş bir alanda hava hareketi oluştururlar. Bu sayede, araçlardan çıkan karbonmonoksit (CO) gibi zararlı gazlar etkin bir şekilde tahliye edilir. Yangın anında ise jet fanlar, dumanın yayılmasını engelleyerek kaçış yollarının güvenliğini sağlar ve itfaiye ekiplerinin müdahalesini kolaylaştırır."
+      "NOVVES, kapalı otoparklar, endüstriyel tesisler, teknik hacimler, tünel benzeri yapılar ve büyük kapalı alanlar için duman kontrol sistem tasarımı hizmeti sunar. Bu hizmet; yalnızca fan seçimi yapmakla sınırlı değildir. Projenin mimari yapısı, yangın senaryosu, hava akış yönleri, kaçış yolları, egzoz noktaları, taze hava ihtiyacı, otomasyon senaryoları ve saha koşulları birlikte değerlendirilerek bütünsel bir sistem tasarımı oluşturulur.",
+      "Jet fan sistemleri; kapalı otoparklarda hava akışını yönlendirmek, araçlardan kaynaklanan egzoz gazlarını tahliye etmek ve yangın durumunda dumanın kontrollü şekilde uzaklaştırılmasını sağlamak amacıyla kullanılan modern mekanik havalandırma çözümleridir. NOVVES, bu sistemleri proje özelinde analiz eder, doğru fan yerleşimini belirler ve duman kontrol senaryosunu mühendislik verileriyle destekler.",
+      "Duman kontrol sistem tasarımında temel hedef; normal çalışma koşullarında iç hava kalitesini korumak, yangın anında dumanın kontrolsüz yayılmasını sınırlandırmak, kaçış yollarının güvenliğini desteklemek ve itfaiye ekiplerinin müdahalesini kolaylaştıracak bir hava akış organizasyonu oluşturmaktır."
     ],
+    "approach": {
+      "sectionLabel": "Tasarım Yaklaşımı",
+      "title": "NOVVES Duman Kontrol Tasarım Yaklaşımı",
+      "intro": "NOVVES için duman kontrol tasarımı, yalnızca ekipman yerleşimi değil; projenin güvenlik stratejisinin önemli bir parçasıdır. Her projede aşağıdaki unsurlar birlikte değerlendirilir:",
+      "items": [
+        "Kapalı otopark veya yapı geometrisi",
+        "Kat yüksekliği ve hacim bilgileri",
+        "Araç yoğunluğu ve kullanım senaryosu",
+        "Yangın senaryosu ve olası duman yayılım yönleri",
+        "Kaçış yolları, rampalar, şaftlar ve kritik geçiş noktaları",
+        "Jet fan, egzoz fanı ve taze hava fanı yerleşimi",
+        "CO, duman ve ısı sensörlerinin konumu",
+        "MCC / DDC kontrol panosu ve otomasyon senaryoları",
+        "BMS entegrasyonu",
+        "CFD analizi ihtiyacı",
+        "Yönetmelik, standart ve proje şartnamesi gereklilikleri",
+        "Montaj, bakım ve devreye alma koşulları"
+      ],
+      "closing": "Bu yaklaşım sayesinde sistem, yalnızca teorik hesaplara göre değil, gerçek saha koşullarına ve yangın anındaki hava hareketi davranışına göre değerlendirilir."
+    },
     "components": {
       "sectionLabel": "Sistem Mimarisi",
       "title": "Jet Fan Sisteminin Bileşenleri",
       "items": [
         {
           "title": "Jet Fanlar",
-          "text": "Sistemin ana bileşenidir. Tavana monte edilir. Hava akımı yaratarak kirli havayı egzoz fanlarına yönlendirir. İki tip mevcuttur; aksiyal ve radyal. Aksiyal Tip tek yön veya çift yönlü çalışabilmektedir."
+          "text": "Jet fanlar, sistemin ana hava yönlendirme elemanlarıdır. Tavana monte edilerek yüksek hızlı hava akışı oluşturur ve kirli havayı veya dumanı egzoz noktalarına doğru yönlendirir. Proje ihtiyacına göre aksiyal jet fan veya radyal jet fan tipleri kullanılabilir. Aksiyal jet fanlar tek yönlü veya çift yönlü çalışma prensibine göre seçilebilir."
         },
         {
           "title": "Egzoz Fanları",
-          "text": "Jet fanların yönlendirdiği kirli veya dumanlı havayı kontrollü bir şekilde dış ortama atar."
+          "text": "Egzoz fanları, jet fanlar tarafından yönlendirilen kirli havayı, CO yoğunluğunu veya yangın anında oluşan dumanı kontrollü şekilde dış ortama tahliye eder. Duman tahliye senaryolarında fanların sıcaklık dayanımı, debi kapasitesi ve çalışma süresi proje şartlarına göre değerlendirilir."
         },
         {
           "title": "Taze Hava Fanları",
-          "text": "Doğal açıklıkların yeterli olmaması veya uygun konumda bulunmaması durumunda, kirli havanın yerine temiz hava sağlamak ve dumanın kaçış yollarına ulaşmasını önlemek amacıyla basınçlandırma yapmak için kullanılır."
+          "text": "Doğal açıklıkların yeterli olmadığı veya taze hava girişinin istenen yönde sağlanamadığı durumlarda taze hava fanları kullanılır. Bu fanlar, sistemin hava dengesini destekler ve dumanın kaçış yollarına yönlenmesini önlemeye yardımcı olacak basınç ve hava hareketi organizasyonuna katkı sağlar."
         },
         {
           "title": "Sensörler",
-          "text": "CO, duman ve ısı sensörleri bulundukları zondan verileri toplar ve belirlenen limitlere göre bu bilgileri MCC panosuna iletir."
+          "text": "CO sensörleri, duman sensörleri, ısı algılama elemanları ve ilgili saha ekipmanları, sistemin otomasyon altyapısı için veri üretir. Sensörlerden gelen bilgiler, belirlenen limit değerler ve yangın senaryoları doğrultusunda kontrol panosuna iletilir."
         },
         {
-          "title": "Otomasyon ve Kontrol Sistemi (MCC Pano)",
-          "text": "Sensörlerden gelen veriler ile fanların otomatik olarak devreye girmesini sağlayan sistemdir. Yangın anında, belirlenen senaryolara göre sistemin çalışmasını sağlamaktadır. PLC kontrollü olup, BMS (bina yönetim sistemi) ile entegre olabilmektedir."
+          "title": "Otomasyon ve Kontrol Sistemi",
+          "text": "MCC / DDC kontrol panoları, jet fanların, egzoz fanlarının, taze hava fanlarının ve sensörlerin senaryoya uygun şekilde çalışmasını sağlar. Sistem; normal havalandırma, CO tahliyesi ve yangın modu gibi farklı çalışma senaryolarına göre otomatik olarak devreye girebilir. Gerekli durumlarda bina yönetim sistemi ile entegre edilebilir."
         }
       ]
     },
     "advantages": {
-      "sectionLabel": "Neden Jet Fan?",
+      "sectionLabel": "Neden Jet Fan Sistemi?",
       "title": "Sistem Avantajları",
-      "subtitle": "Jet fan sistemleri, özellikle kapalı otoparklar ve tünel sistemleri gibi alanlarda geleneksel kanal tipi havalandırma sistemlerine göre önemli avantajlar sunar.",
       "items": [
-        { "title": "Kanal gereksinimi yoktur", "text": "Jet fan sistemleri, havayı yönlendirerek çalıştığı için hava kanallarına, menfezlere veya difüzörlere gerek kalmaz." },
-        { "title": "Alan tasarrufu sağlar", "text": "Tavan yüksekliği düşük olan otoparklarda kanal sistemleri yer kapladığı için sorun yaratabilir. Jet fanlar ise kompakt boyutlarıyla daha az yer kaplar." },
-        { "title": "Enerji verimliliği sağlar", "text": "CO sensörleriyle birlikte çalışarak yalnızca ihtiyaç anında çalışır, bu da enerji tüketimini azaltır. Fanlar değişken hızda çalışabilir, bu da optimize edilmiş enerji kullanımı sağlar." },
-        { "title": "Duman ve ısı tahliyesi kontrol altındadır", "text": "Yangın durumunda yüksek devirde çalışarak dumanın yayılmasını kontrol altına alır. Kaçış yollarının dumanla dolmasını engeller, can güvenliği sağlar. İtfaiyenin müdahalesini kolaylaştırır." },
-        { "title": "Bakım maliyeti düşüktür", "text": "Kanal sistemi olmadığı için temizlik ve bakım daha kolaydır. Daha az parça olması, arıza riskini de azaltır." },
-        { "title": "Mimari yapıya göre kolayca konumlandırılabilir", "text": "İleride yapılacak değişikliklerde sistemin yeniden tasarlanması daha basittir." },
-        { "title": "İlk yatırım maliyeti düşüktür", "text": "Daha az ekipman (kanal, menfez, difüzör vs.) kullanıldığı için ilk kurulum maliyeti geleneksel sistemlere göre daha düşüktür." }
+        {
+          "title": "Kanal Gereksinimini Azaltır",
+          "text": "Jet fan sistemleri, havayı yönlendirerek çalıştığı için geleneksel kanal tipi havalandırma sistemlerine göre daha esnek bir çözüm sunar. Bu sayede geniş kanal hatları, çok sayıda menfez veya difüzör ihtiyacı azaltılabilir."
+        },
+        {
+          "title": "Alan Tasarrufu Sağlar",
+          "text": "Kapalı otoparklarda tavan yüksekliği ve kullanılabilir hacim kritik öneme sahiptir. Jet fanlar kompakt yapıları sayesinde daha az yer kaplar ve mimari alanın daha verimli kullanılmasına katkı sağlar."
+        },
+        {
+          "title": "Enerji Verimliliğini Destekler",
+          "text": "CO sensörleri ve otomasyon sistemi ile birlikte çalıştığında jet fanlar yalnızca ihtiyaç halinde devreye alınabilir. Değişken hız kontrolü ve senaryo bazlı çalışma sayesinde enerji tüketimi optimize edilebilir."
+        },
+        {
+          "title": "Duman ve Isı Tahliyesini Kontrol Altına Alır",
+          "text": "Yangın durumunda jet fan sistemi, dumanın kontrolsüz yayılımını azaltmaya ve dumanı belirlenen egzoz noktalarına yönlendirmeye yardımcı olur. Bu yaklaşım, kaçış yollarının güvenliğini destekler ve itfaiye müdahalesinin daha kontrollü yapılmasına katkı sağlar."
+        },
+        {
+          "title": "Bakım ve İşletme Kolaylığı Sağlar",
+          "text": "Kanal yoğunluğu azaldığı için temizlik, bakım ve erişim süreçleri daha kolay yönetilebilir. Daha az mekanik bileşen, işletme sürecinde bakım organizasyonunu sadeleştirir."
+        },
+        {
+          "title": "Mimari Yapıya Kolay Uyum Sağlar",
+          "text": "Jet fan sistemleri, farklı otopark geometrilerine, rampa konumlarına, kolon yerleşimlerine ve tavan yüksekliklerine göre esnek şekilde tasarlanabilir. Bu sayede yeni projelerde ve mevcut yapılarda uygulanabilir çözümler geliştirilebilir."
+        },
+        {
+          "title": "İlk Yatırım ve İşletme Maliyetlerini Optimize Eder",
+          "text": "Doğru tasarlanmış jet fan sistemleri; kanal, menfez ve difüzör ihtiyacını azaltarak ilk yatırım maliyetini optimize edebilir. Otomasyon destekli çalışma senaryoları ise uzun vadeli enerji ve işletme maliyetlerinin yönetilmesine katkı sağlar."
+        }
       ]
     },
     "designFactors": {
       "sectionLabel": "Mühendislik",
       "title": "Tasarımda Önemli Etkenler",
+      "intro": "Duman kontrol sisteminin verimli ve güvenli çalışabilmesi için tasarımın ilk aşamasından itibaren tüm mimari, mekanik, elektriksel ve operasyonel koşullar birlikte değerlendirilmelidir.",
+      "paragraphs": [
+        "Jet fan projesinde aksiyal fanların, duman ve ısı tahliye fanlarının, taze hava fanlarının ve jet fanların yerleşimi; gürültü seviyesi, hava yönlendirme ihtiyacı, taze havanın ulaşamadığı ölü bölgelerin oluşmaması, montaj kolaylığı, bakım erişimi, kaçış yollarının güvenliği ve yangın anında duman yönlendirme stratejisi dikkate alınarak tasarlanmalıdır.",
+        "Kapalı otoparklarda araç egzoz gazları, CO yoğunluğu, kullanıcı trafiği, araç sirkülasyonu, rampalar, kolonlar, şaftlar, kapı açıklıkları ve doğal havalandırma imkanları hava hareketini doğrudan etkiler. Bu nedenle jet fanların doğru pozisyonlandırılması, sistemin hava akışını en verimli şekilde yönlendirmesi açısından kritik öneme sahiptir.",
+        "Yangın senaryosunda amaç, dumanın kontrolsüz şekilde yayılmasını önlemek ve mümkün olan en güvenli tahliye koşullarını desteklemektir. Bu nedenle fanların çalışma senaryosu, sensör konumları, otomasyon panosu, yangın algılama sistemi ve bina yönetim sistemi entegrasyonu birlikte planlanmalıdır.",
+        "Gerekli projelerde CFD analizi kullanılarak hava akışı, duman yayılımı, jet fan etkisi, ölü bölgeler, egzoz noktaları ve tahliye senaryoları sayısal olarak değerlendirilir. CFD destekli tasarım, fan yerleşiminin doğrulanmasına ve sistem performansının proje özelinde analiz edilmesine yardımcı olur."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "NOVVES ile Duman Kontrol Tasarımı",
+      "title": "Hizmet Kapsamımız",
+      "intro": "NOVVES, duman kontrol sistem tasarımında üretim, mühendislik, CFD analizi, otomasyon, devreye alma ve satış sonrası teknik destek kabiliyetlerini aynı çatı altında sunar.",
       "items": [
-        "Sistemin verimli çalışması için gerekli önlemler ilk aşamadan dikkatli bir şekilde kontrol edilerek tasarlanır ve yerleşimi tüm şartlar göz önünde bulunularak montaj edilir.",
-        "Jet fan projesinde aksiyal fanların (duman ve ısı tahliye / taze hava) ve jet fanların yerleşiminde gürültü seviyesi, gerekli hava yönlendirme planlaması, taze havanın ulaşamadığı \u201cölü bölgeler\u201din olmaması, montaj kolaylığı, yangın anında tahliye ve kaçış yönlerinin ulaşılabilir olması gibi önemli etkenler göz önünde bulundurularak sistem tasarlanır.",
-        "Jet fan sistem tasarımında araçların egzoz gazları, insan trafiği ve diğer faktörler dikkate alınarak yeterli hava değişim hızları ve hava debisi sağlanmalıdır. Jet fanların doğru pozisyonu, sistemin hava akışını en verimli şekilde yönlendirecek şekilde konumlandırılmalıdır."
+        "Kapalı otopark duman kontrol tasarımı",
+        "Jet fan sistem yerleşimi",
+        "Duman ve ısı tahliye fanı seçimi",
+        "Egzoz ve taze hava fanı seçimi",
+        "CO, duman ve ısı sensörü senaryolarının değerlendirilmesi",
+        "MCC / DDC kontrol panosu senaryo desteği",
+        "BMS entegrasyon yaklaşımı",
+        "CFD destekli hava akış ve duman yayılım analizi",
+        "Teknik dokümantasyon ve proje desteği",
+        "Saha devreye alma ve teknik servis desteği"
       ]
     },
     "cta": {
-      "sectionLabel": "Projeniz İçin",
-      "title": "Duman kontrol sistemi tasarımı desteği alın",
-      "cfdLink": "CFD Analizi",
-      "supportButton": "Teknik Destek Talebi"
+      "sectionLabel": "Duman Kontrol Tasarımı",
+      "title": "Projeniz İçin Doğru Duman Kontrol Sistemini Tasarlayalım",
+      "subtitle": "NOVVES, projenizin mimari ve teknik koşullarını analiz ederek güvenli, verimli ve sürdürülebilir duman kontrol çözümleri geliştirir.",
+      "paragraph": "Kapalı otopark, endüstriyel tesis veya büyük hacimli yapınız için jet fan sistemi, duman tahliye fanı, CFD analizi veya duman kontrol tasarımı ihtiyacınız varsa teknik ekibimizle iletişime geçebilirsiniz.",
+      "ctaButton": "Duman Kontrol Tasarım Talebi Oluşturun",
+      "cfdLink": "CFD Analizi"
     }
   },
   "teknikServis": {
     "meta": {
       "title": "Teknik Servis | Novves",
-      "description": "NOVVES teknik servis — satış sonrası destek, arıza giderme, yedek parça temini ve bakım."
+      "description": "NOVVES teknik servis — satış sonrası destek, arıza teşhisi, yerinde servis, yedek parça ve bakım hizmetleri."
     },
     "breadcrumb": {
       "home": "Ana Sayfa",
@@ -232,26 +575,126 @@
       "badge": "Hizmetler",
       "titlePart1": "Teknik",
       "titleHighlight": "Servis",
-      "subtitle": "Hızlı müdahale, güvenilir çözüm.",
+      "subtitle": "Satış sonrası destek, arıza teşhisi ve saha servis hizmetleri.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxMeEHI938GIPBawznnHJ6x-kYcgHaWpo7_y-tA45eMLw1dyeWfXXQBpCwEMANg3xFir1BVv2FvVPmirhn-b4X9ul6YnVOKv9MB3UpQFZ0q2SP9FJy10ZgIbYjHLJaI3_lh28-9sUCR6Hr_mfEskGE8ZYUVySQcLt_x1PQzzeF3GGizQ3xAhnrzwB9H5OHa44K6JxUM4zTsxQmwNZtsJeHi-uacZe64iuYrnFAP9LU3XBpJ4wbk0KXrbGtNtq3-uVCmu_EqwmJnLE",
       "weekdays": "Hafta içi 08:30 – 18:00",
       "emailSupport": "E-posta ile teknik destek"
     },
-    "intro": "Novves Teknik Servis Departmanı, satış sonrası destek, arıza giderme, yedek parça temini ve bakım taleplerinizde size hızlı ve etkin çözümler sunmak için hizmetinizdedir.",
+    "intro": [
+      "NOVVES Teknik Servis Departmanı; fan sistemleri, jet fanlar, duman tahliye fanları, aksiyal fanlar, endüstriyel fanlar, klima santralleri, chiller destekli HVAC sistemleri, kontrol panoları ve otomasyon çözümleri için satış sonrası teknik destek hizmeti sunar.",
+      "NOVVES olarak yalnızca ürün üretmekle kalmıyor; ürünlerimizin sahada doğru, güvenli ve verimli şekilde çalışmasını desteklemek için devreye alma, arıza teşhisi, bakım, yedek parça temini, performans kontrolü ve teknik dokümantasyon süreçlerinde müşterilerimizin yanında yer alıyoruz.",
+      "Teknik servis yaklaşımımız; hızlı geri dönüş, doğru arıza analizi, teknik ofis desteği, saha deneyimi ve üretici bilgisi üzerine kuruludur. Böylece servis talepleri yalnızca geçici müdahalelerle değil, sistemin uzun ömürlü ve güvenli çalışmasını hedefleyen mühendislik bakışıyla değerlendirilir."
+    ],
     "serviceTypes": {
       "sectionLabel": "Kapsamımız",
       "title": "Servis Talepleri",
       "items": [
-        "Montaj ve devreye alma danışmanlığı",
-        "Arıza tespiti ve yerinde servis hizmeti",
-        "Periyodik bakım ve kontrol planlaması",
-        "Yedek parça talepleri",
-        "Ürün kullanım ve teknik dokümantasyon desteği"
+        {
+          "title": "Montaj ve Devreye Alma Danışmanlığı",
+          "desc": "Fan, jet fan, duman tahliye fanı, klima santrali, chiller veya otomasyon sistemi kurulumu sonrasında mekanik montaj, elektrik bağlantısı, motor yönü, hız kontrolü ve temel çalışma kontrolleri için teknik destek sağlanır."
+        },
+        {
+          "title": "Arıza Teşhisi ve Yerinde Servis Hizmeti",
+          "desc": "Sistemde yaşanan ses, titreşim, aşırı ısınma, düşük performans, motor arızası, pano alarmı, sensör hatası veya çalışma düzensizliği gibi durumlarda arıza kaynağı teknik olarak değerlendirilir."
+        },
+        {
+          "title": "Periyodik Bakım ve Kontrol Planlaması",
+          "desc": "Fan, motor, otomasyon ve havalandırma sistemlerinin düzenli bakım ihtiyaçları değerlendirilir. Periyodik kontrol süreçleriyle arıza riski azaltılır, sistem performansı ve işletme güvenliği desteklenir."
+        },
+        {
+          "title": "Yedek Parça Talepleri",
+          "desc": "Ürün modeli, seri numarası ve proje bilgilerine göre uygun yedek parça tespiti yapılır. Motor, pervane, bağlantı ekipmanları, kontrol elemanları, sensörler ve sistem bileşenleri için teknik destek sağlanır."
+        },
+        {
+          "title": "Ürün Kullanım ve Teknik Dokümantasyon Desteği",
+          "desc": "Kullanım kılavuzu, bakım talimatı, teknik veri sayfası, ürün etiketi, sertifika bilgisi, performans verisi veya proje dokümanı talepleri teknik ekip tarafından değerlendirilir."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Süreç",
+      "title": "Teknik Servis Süreci",
+      "items": [
+        {
+          "title": "Servis Talebinin Alınması",
+          "desc": "Müşteri tarafından iletilen arıza, bakım, yedek parça, devreye alma veya teknik destek talebi kayıt altına alınır."
+        },
+        {
+          "title": "Ön Teknik Değerlendirme",
+          "desc": "Ürün modeli, seri numarası, proje bilgisi, arıza açıklaması, fotoğraf, video ve varsa geçmiş servis kayıtları incelenir."
+        },
+        {
+          "title": "Teknik Ofis İncelemesi",
+          "desc": "NOVVES teknik ofisi, talebi ürün bilgisi, saha koşulları, elektrik-mekanik uygunluk, otomasyon senaryosu ve sistem çalışma prensibi açısından değerlendirir."
+        },
+        {
+          "title": "Uzaktan Destek veya Saha Planlaması",
+          "desc": "Talebin niteliğine göre uzaktan teknik yönlendirme yapılabilir veya yerinde servis ziyareti planlanabilir."
+        },
+        {
+          "title": "Arıza Teşhisi ve Müdahale",
+          "desc": "Sahada gerekli kontroller yapılır. Mekanik montaj, elektrik bağlantıları, motor çalışma durumu, fan yönü, pano sinyalleri, sensörler, titreşim ve performans değerleri değerlendirilir."
+        },
+        {
+          "title": "Yedek Parça ve Çözüm Önerisi",
+          "desc": "Gerekli görülmesi halinde uygun yedek parça, bakım işlemi, ayar değişikliği, revizyon veya sistem iyileştirme önerisi sunulur."
+        },
+        {
+          "title": "Raporlama",
+          "desc": "Yapılan inceleme, tespit, müdahale ve öneriler servis formu veya teknik rapor ile kayıt altına alınır."
+        }
+      ]
+    },
+    "whyNovves": {
+      "sectionLabel": "Avantajlar",
+      "title": "Neden NOVVES Teknik Servis?",
+      "items": [
+        {
+          "title": "Hızlı Geri Dönüş",
+          "text": "Servis talepleriniz teknik ekibimiz tarafından değerlendirilir ve mümkün olan en kısa sürede geri dönüş sağlanır."
+        },
+        {
+          "title": "Üretici Bilgisiyle Müdahale",
+          "text": "NOVVES ürünlerini en iyi tanıyan ekip, üretici teknik ofisi ve saha servis ekibidir. Bu sayede arıza teşhisi ve çözüm süreci daha doğru ilerler."
+        },
+        {
+          "title": "Teknik Ofis Desteği",
+          "text": "Servis talepleri yalnızca saha müdahalesi olarak değil; gerektiğinde mühendislik, ürün seçimi, otomasyon, yedek parça ve proje bilgisiyle birlikte değerlendirilir."
+        },
+        {
+          "title": "Arıza Riskini Azaltma",
+          "text": "Düzenli bakım ve doğru teknik kontrol, fan sistemlerinde beklenmeyen duruşları ve performans kayıplarını azaltmaya yardımcı olur."
+        },
+        {
+          "title": "Sistem Performansını Koruma",
+          "text": "Doğru servis, doğru bakım ve doğru yedek parça kullanımı; sistemin enerji verimliliğini, çalışma güvenliğini ve uzun ömürlü performansını destekler."
+        },
+        {
+          "title": "Satış Sonrası Güven",
+          "text": "NOVVES, ürün tesliminden sonra da müşterilerinin yanında olmayı kurumsal hizmet anlayışının önemli bir parçası olarak görür."
+        }
       ]
     },
     "form": {
       "sectionLabel": "Talep",
       "title": "Teknik Servis Formu",
-      "description": "Formu doldurarak servis talebinizi iletebilirsiniz. Teknik ekibimiz en kısa sürede size dönüş yapacaktır.",
+      "subtitle": "Servis talebinizi bize iletin.",
+      "description": "Fan, jet fan, duman tahliye fanı, aksiyal fan, klima santrali, chiller, otomasyon panosu veya havalandırma sisteminizle ilgili servis talebinizi form üzerinden bize iletebilirsiniz. Teknik ekibimiz talebinizi inceleyerek size en kısa sürede dönüş yapacaktır.",
+      "helperIntro": "Formda mümkünse aşağıdaki bilgileri paylaşmanız servis sürecini hızlandırır:",
+      "helperFields": [
+        "Ad soyad",
+        "Firma adı",
+        "Telefon",
+        "E-posta",
+        "Proje adı",
+        "Ürün modeli",
+        "Seri numarası",
+        "Arıza veya talep açıklaması",
+        "Ürün etiketi fotoğrafı",
+        "Arıza fotoğrafı veya videosu",
+        "Aciliyet durumu",
+        "Bulunduğu şehir / saha adresi"
+      ],
       "features": [
         { "label": "Hızlı Yanıt", "desc": "24 saat içinde dönüş" },
         { "label": "Uzman Kadro", "desc": "Sertifikalı teknik ekip" },
@@ -262,18 +705,29 @@
         "company": "Firma Adı",
         "phone": "Telefon",
         "email": "E-Posta",
+        "projectName": "Proje Adı",
+        "productModel": "Ürün Modeli",
+        "serialNumber": "Seri Numarası",
+        "urgency": "Aciliyet Durumu",
+        "location": "Şehir / Saha Adresi",
         "subject": "Konu",
-        "message": "Mesajınız"
+        "message": "Arıza veya Talep Açıklaması"
       },
-      "submit": "Gönder",
+      "submit": "Teknik Servis Talebi Oluşturun",
       "successTitle": "Talebiniz Alındı",
-      "successMessage": "En kısa sürede size dönüş yapacağız."
+      "successMessage": "Teknik ekibimiz talebinizi inceleyerek en kısa sürede size dönüş yapacaktır."
+    },
+    "cta": {
+      "sectionLabel": "Teknik Servis",
+      "title": "Teknik Servis Talebi Oluşturun",
+      "subtitle": "NOVVES teknik servis ekibi; satış sonrası destek, arıza teşhisi, yedek parça, bakım, devreye alma ve teknik dokümantasyon talepleriniz için yanınızdadır.",
+      "ctaButton": "Teknik Servis Talebi Oluşturun"
     }
   },
   "yerindeKesif": {
     "meta": {
       "title": "Yerinde Keşif | Novves",
-      "description": "NOVVES yerinde keşif hizmeti - saha inceleme, ölçüm ve analiz ile projenize özel havalandırma çözümü."
+      "description": "NOVVES yerinde keşif — sahada ölçüm, analiz ve mühendislik verisiyle doğru havalandırma, duman tahliye ve iklimlendirme çözümü."
     },
     "breadcrumb": {
       "home": "Ana Sayfa",
@@ -284,50 +738,550 @@
       "badge": "Hizmetler",
       "titlePart1": "Yerinde",
       "titleHighlight": "Keşif",
-      "subtitle": "Doğru projelendirmenin ilk adımı: sahada ölçüm, analiz ve ihtiyaç tespiti."
+      "subtitle": "Projeniz için doğru havalandırma çözümü sahada başlar.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdk_YtFP-CGxwZSeNW5Go-mEcB-R91NQ62hvYRFn3kP0HC2labPBROzwKKTpxqfYok2fSTESW5msRiaLDm85uq_9NKpSFvbzh5-qjc9Da7_nJ05xg6ayPg0sV19aNvsnoMYDO7xyCp6adNwFupHsnwBuYl9-fPmugA06vH7qzUFtDtD8_IrmD1oHTUJ5a65jDLQluT_CWnJ4eOW2_R90z6g2G9tAUdfzri7ENaEZVk93euYlLmR1EzYACDMikxjduri48APdqtzMI"
     },
-    "intro": "Her havalandırma projesinin temelinde doğru veri vardır. NOVVES yerinde keşif hizmeti, projenizin ihtiyaçlarını sahada birebir inceleyerek en verimli ve yönetmeliklere uygun çözümü tasarlamanın ilk ve en kritik adımıdır. Uzman mühendislerimiz tesisinize gelerek detaylı ölçüm, gözlem ve analiz gerçekleştirir.",
+    "intro": {
+      "paragraphs": [
+        "Her başarılı havalandırma, duman tahliye ve iklimlendirme projesinin temelinde doğru saha verisi vardır. NOVVES yerinde keşif hizmeti; projenizin gerçek koşullarını sahada analiz ederek en uygun fan seçimi, duman kontrol tasarımı, hava akışı planlaması ve sistem çözümünün belirlenmesini sağlar.",
+        "Uzman teknik ekibimiz; kapalı otoparklar, endüstriyel tesisler, ticari binalar, üretim alanları, teknik hacimler, klima santrali ve chiller uygulamaları için sahada ölçüm, gözlem ve teknik değerlendirme yapar. Mevcut mekanik altyapı, elektrik altyapısı, mimari koşullar, hava akış yönleri, egzoz ve taze hava ihtiyaçları, yangın senaryoları, montaj alanları ve bakım erişimi detaylı şekilde incelenir.",
+        "NOVVES için yerinde keşif yalnızca ölçüm yapmak değildir. Projenin güvenli, verimli, sürdürülebilir ve yönetmeliklere uygun şekilde tasarlanabilmesi için kritik mühendislik verilerinin toplanmasıdır."
+      ]
+    },
+    "scope": {
+      "sectionLabel": "Keşif Kapsamı",
+      "title": "Keşif Sürecinde Neleri İnceliyoruz?",
+      "items": [
+        "Proje tipi ve kullanım amacı",
+        "Alan büyüklüğü ve hacim bilgileri",
+        "Mevcut havalandırma altyapısı",
+        "Taze hava ve egzoz ihtiyaçları",
+        "Hava akış yönleri ve basınç kayıpları",
+        "Fan, kanal, menfez ve şaft yerleşimleri",
+        "Elektrik altyapısı ve pano bağlantı noktaları",
+        "Yangın senaryosu ve duman tahliye gereksinimleri",
+        "Jet fan, aksiyal fan, duman tahliye fanı veya klima santrali ihtiyacı",
+        "Chiller ve iklimlendirme sistemi entegrasyonu",
+        "Montaj, bakım ve servis erişimi",
+        "Yönetmelik, standart ve proje şartnamesi gereklilikleri"
+      ]
+    },
     "steps": {
       "sectionLabel": "Süreç",
       "title": "Keşif Adımları",
       "items": [
         {
           "title": "Randevu ve Ön Bilgilendirme",
-          "desc": "Projenizin genel özelliklerini öğreniyoruz. Tesis tipi, alan büyüklüğü ve ihtiyaç analizi için ön görüşme gerçekleştiriyoruz."
+          "desc": "Projenizin genel özelliklerini, tesis tipini, alan büyüklüğünü, kullanım amacını ve teknik ihtiyaçlarını öğreniyoruz. İlk değerlendirme sonrasında keşif kapsamını belirliyoruz."
         },
         {
           "title": "Saha Ziyareti ve Ölçüm",
-          "desc": "Uzman ekibimiz sahaya gelerek mekanı inceler, ölçüm yapar ve mevcut altyapıyı değerlendirir. Hava akış yönleri, sıcaklık dağılımı ve mevcut sistem durumu analiz edilir."
+          "desc": "NOVVES teknik ekibi sahaya gelerek alanı yerinde inceler. Mevcut mekanik ve elektrik altyapısı, hava akış yönleri, montaj alanları, sıcaklık dağılımı, sistem durumu ve uygulama kısıtları değerlendirilir."
         },
         {
           "title": "Teknik Analiz ve Raporlama",
-          "desc": "Toplanan veriler üzerinden havalandırma ihtiyaç hesapları, debi analizleri ve yönetmelik uyum kontrolleri yapılır. Detaylı keşif raporu hazırlanır."
+          "desc": "Sahadan alınan veriler doğrultusunda havalandırma ihtiyacı, debi gereksinimi, fan seçimi, duman tahliye ihtiyacı, otomasyon senaryosu ve yönetmelik uyumu analiz edilir. Gerekli durumlarda detaylı keşif raporu hazırlanır."
         },
         {
           "title": "Çözüm Önerisi ve Projelendirme",
-          "desc": "Keşif verilerine dayanarak en uygun sistem tasarımı, ekipman seçimi ve maliyet analizi ile projenize özel teklif sunulur."
+          "desc": "Keşif sonuçlarına göre projeye en uygun sistem tasarımı, ekipman seçimi, fan yerleşimi, duman kontrol yaklaşımı, teknik dokümantasyon ve maliyet değerlendirmesi oluşturulur."
         },
         {
           "title": "Onay ve Uygulama Başlangıcı",
-          "desc": "Teklifinizi onayladıktan sonra üretim, montaj ve devreye alma süreçleri planlanır ve uygulamaya alınır."
+          "desc": "Teknik çözüm ve teklif onaylandıktan sonra üretim, tedarik, montaj, devreye alma ve satış sonrası destek süreçleri planlanır."
         }
       ]
     },
     "whyImportant": {
       "sectionLabel": "Neden Önemli",
-      "title": "Yerinde Keşif Neden Gerekli?",
+      "title": "Yerinde Keşif Neden Gereklidir?",
       "items": [
-        { "title": "Doğru Tasarım", "desc": "Yerinde ölçüm olmadan yapılan projelerde ekipman boyutlandırma hataları kaçınılmazdır." },
-        { "title": "Maliyet Optimizasyonu", "desc": "Gerçek saha verileri ile gereğinden büyük veya küçük ekipman seçimi önlenir." },
-        { "title": "Yönetmelik Uyumu", "desc": "Mevcut yapı koşullarının yönetmelik gereksinimleriyle uyumu sahada doğrulanır." },
-        { "title": "Entegrasyon Kolaylığı", "desc": "Mevcut mekanik ve elektrik altyapısına uyumlu çözümler ancak keşifle belirlenebilir." }
+        {
+          "title": "Doğru Tasarım",
+          "desc": "Saha ölçümü yapılmadan hazırlanan projelerde ekipman boyutlandırma, fan seçimi, hava debisi ve montaj noktalarında hata riski artar. Yerinde keşif, sistemin gerçek koşullara göre tasarlanmasını sağlar."
+        },
+        {
+          "title": "Maliyet Optimizasyonu",
+          "desc": "Gerçek saha verileriyle gereğinden büyük veya küçük ekipman seçimi önlenir. Bu sayede yatırım maliyeti, enerji tüketimi ve işletme maliyetleri daha doğru yönetilir."
+        },
+        {
+          "title": "Yönetmelik ve Standart Uyumu",
+          "desc": "Yangın güvenliği, duman tahliye, havalandırma, elektrik altyapısı ve iş güvenliği gereklilikleri sahada değerlendirilerek proje riskleri azaltılır."
+        },
+        {
+          "title": "Entegrasyon Kolaylığı",
+          "desc": "Mevcut mekanik, elektrik ve otomasyon altyapısına uyumlu çözümler ancak yerinde keşifle doğru şekilde belirlenebilir."
+        },
+        {
+          "title": "Daha Güvenli Devreye Alma",
+          "desc": "Keşif aşamasında toplanan veriler, montaj ve devreye alma sürecinin daha hızlı, kontrollü ve sorunsuz ilerlemesini sağlar."
+        }
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Uygulama Alanları",
+      "title": "Hangi Projeler İçin Yerinde Keşif Yapıyoruz?",
+      "items": [
+        "Kapalı otopark havalandırma projeleri",
+        "Duman ve ısı tahliye sistemleri",
+        "Jet fan sistemleri",
+        "Endüstriyel havalandırma projeleri",
+        "Üretim tesisi havalandırması",
+        "Ticari bina ve AVM havalandırması",
+        "Otel, hastane ve kamu yapıları",
+        "Klima santrali uygulamaları",
+        "Chiller ve merkezi soğutma sistemleri",
+        "Teknik hacimler ve özel mühendislik projeleri"
       ]
     },
     "cta": {
-      "sectionLabel": "Ücretsiz Keşif",
-      "title": "Projeniz için yerinde keşif talep edin",
-      "subtitle": "Uzman mühendislik ekibimiz tesisinize gelerek ihtiyaç analizi ve ölçüm gerçekleştirir.",
-      "ctaButton": "Keşif Talep Edin"
+      "sectionLabel": "Yerinde Keşif",
+      "title": "Projenizi Yerinde İnceleyelim",
+      "subtitle": "NOVVES yerinde keşif hizmetiyle projenizin ihtiyaçlarını sahada analiz ediyor, doğru havalandırma ve duman kontrol çözümünü mühendislik verileriyle belirliyoruz.",
+      "ctaButton": "Yerinde Keşif Talebi Oluşturun"
+    }
+  },
+  "fanSecimi": {
+    "meta": {
+      "title": "Fan Seçimi ve Teknik Projelendirme | Novves",
+      "description": "NOVVES fan seçimi ve teknik projelendirme — mühendislik odaklı seçim, PerfectusAir destekli analiz ve proje bazlı HVAC çözümleri."
+    },
+    "hero": {
+      "badge": "Hizmetler",
+      "titlePart1": "Fan Seçimi ve",
+      "titleHighlight": "Teknik Projelendirme",
+      "subtitle": "Doğru fan seçimi, doğru mühendislik verisiyle başlar.",
+      "imageSrc": "/images/hizmetler/fan-secimi-teknik-projelendirme.png"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES, endüstriyel havalandırma, konfor havalandırma, duman ve ısı tahliye sistemleri, jet fan uygulamaları, klima santrali ve özel HVAC projeleri için mühendislik odaklı fan seçimi ve teknik projelendirme hizmeti sunar.",
+        "Fan seçimi yalnızca debi ve basınç değerlerine göre ürün belirlemek değildir. Her proje; kullanım amacı, hava debisi ihtiyacı, basınç kayıpları, çalışma sıcaklığı, ses seviyesi, motor gücü, enerji verimliliği, montaj koşulları, yangın senaryosu, otomasyon ihtiyacı ve ilgili standartlar dikkate alınarak değerlendirilmelidir.",
+        "NOVVES teknik ofisi, proje özelinde tüm bu kriterleri analiz ederek en uygun fan tipini, motor gücünü, çalışma noktasını, performans değerlerini ve sistem çözümünü belirler. Böylece projeye yalnızca bir ürün değil; doğru seçilmiş, teknik olarak doğrulanmış ve uygulamaya hazır bir mühendislik çözümü sunulur."
+      ]
+    },
+    "technicalOffice": {
+      "sectionLabel": "Teknik Ofis",
+      "title": "NOVVES Teknik Ofis Gücü",
+      "paragraphs": [
+        "NOVVES'in teknik ofisi; ürün bilgisi, üretim tecrübesi, saha deneyimi ve mühendislik hesaplarını aynı çatı altında birleştirir.",
+        "Teknik ekibimiz; aksiyal fanlar, jet fanlar, duman tahliye fanları, endüstriyel fanlar, çatı fanları, hücreli fanlar, elektrik motorları, klima santralleri ve özel havalandırma sistemleri için proje bazlı seçim ve teknik değerlendirme yapar.",
+        "Her fan seçimi, yalnızca katalog değerleri üzerinden değil; projenin gerçek çalışma koşulları, saha kısıtları, enerji tüketimi, bakım erişimi, uzun ömürlü performans ve sistem güvenliği dikkate alınarak oluşturulur.",
+        "NOVVES teknik ofisi, satış sürecinden önce ve sonra müşteriye mühendislik desteği sağlayarak doğru ürün seçimi, doğru sistem mimarisi ve doğru uygulama kararlarının alınmasına katkı sağlar."
+      ]
+    },
+    "perfectusAir": {
+      "sectionLabel": "Dijital Araçlar",
+      "title": "PerfectusAir Fan Seçim Yazılımı ile Veri Destekli Seçim",
+      "paragraphs": [
+        "NOVVES, fan seçim süreçlerinde kendi mühendislik yaklaşımını dijital araçlarla destekler. Bu kapsamda kullanılan PerfectusAir fan seçim yazılımı, projeye uygun fan modellerinin teknik parametreler üzerinden değerlendirilmesine yardımcı olur.",
+        "PerfectusAir ile fan seçimi yapılırken; hava debisi, statik basınç, motor gücü, fan devri, verim, ses seviyesi, çalışma noktası, ürün modeli ve teknik performans değerleri birlikte analiz edilir.",
+        "Bu sayede müşteri ve proje ekipleri için daha net, izlenebilir ve karşılaştırılabilir teknik seçim çıktıları oluşturulur. PerfectusAir, NOVVES teknik ofisinin mühendislik değerlendirmesini destekleyen güçlü bir fan seçim aracıdır."
+      ]
+    },
+    "selectionCriteria": {
+      "sectionLabel": "Seçim Kriterleri",
+      "title": "Fan Seçiminde Değerlendirdiğimiz Kriterler",
+      "intro": "NOVVES teknik ofisi fan seçimi yaparken aşağıdaki kriterleri birlikte değerlendirir:",
+      "items": [
+        "Hava debisi ihtiyacı",
+        "Statik ve toplam basınç değerleri",
+        "Sistem basınç kayıpları",
+        "Fan çalışma noktası",
+        "Motor gücü ve motor verimliliği",
+        "Fan devri",
+        "Ses seviyesi",
+        "Enerji tüketimi",
+        "Çalışma sıcaklığı",
+        "Ortam koşulları",
+        "Montaj tipi ve yerleşim alanı",
+        "Bakım erişimi",
+        "Elektrik ve otomasyon altyapısı",
+        "Duman tahliye veya yangın dayanım ihtiyacı",
+        "Sertifika ve standart gereklilikleri",
+        "Proje şartnamesi ve müşteri beklentileri"
+      ]
+    },
+    "engineeringScope": {
+      "sectionLabel": "Projelendirme",
+      "title": "Teknik Projelendirme Kapsamımız",
+      "intro": "Fan seçimi sonrasında proje ihtiyacına göre teknik projelendirme desteği sağlanır. Bu kapsamda aşağıdaki çalışmalar yapılabilir:",
+      "items": [
+        "Ürün ve sistem seçimi",
+        "Fan performans değerlendirmesi",
+        "Debi ve basınç hesaplarının kontrolü",
+        "Jet fan yerleşim önerileri",
+        "Duman tahliye fanı seçimi",
+        "Taze hava ve egzoz fanı seçimi",
+        "Klima santrali fan-motor değerlendirmesi",
+        "Chiller ve HVAC sistem entegrasyonuna yönelik teknik destek",
+        "Teknik veri sayfası hazırlanması",
+        "Ürün kodu ve model doğrulaması",
+        "Teknik çizim ve ölçü kontrolü",
+        "Proje şartnamesine uygunluk değerlendirmesi",
+        "Alternatif ürün ve çözüm karşılaştırması",
+        "Teklif dosyasına teknik destek sağlanması"
+      ]
+    },
+    "projectTypes": {
+      "sectionLabel": "Uygulama Alanları",
+      "title": "Hangi Projelerde Fan Seçimi Yapıyoruz?",
+      "intro": "NOVVES, farklı yapı tipleri ve sistem ihtiyaçları için fan seçimi ve teknik projelendirme desteği sunar.",
+      "items": [
+        "Kapalı otopark havalandırma projeleri",
+        "Jet fan sistemleri",
+        "Duman ve ısı tahliye sistemleri",
+        "Endüstriyel havalandırma projeleri",
+        "Konfor havalandırma uygulamaları",
+        "Ticari bina ve AVM havalandırması",
+        "Otel, hastane ve kamu yapıları",
+        "Üretim tesisleri",
+        "Teknik hacimler",
+        "Klima santrali uygulamaları",
+        "Chiller ve merkezi iklimlendirme sistemleri",
+        "Proje bazlı özel havalandırma çözümleri"
+      ]
+    },
+    "benefits": {
+      "sectionLabel": "Değer Önerisi",
+      "title": "NOVVES ile Kazandıklarınız",
+      "intro": "NOVVES fan seçimi ve teknik projelendirme hizmeti, projenizin daha güvenli, daha verimli ve daha doğru mühendislik kararlarıyla ilerlemesine katkı sağlar.",
+      "items": [
+        "Projeye uygun doğru fan seçimi",
+        "Teknik ofis desteğiyle mühendislik doğrulaması",
+        "PerfectusAir fan seçim yazılımı ile veri destekli seçim",
+        "Debi, basınç, motor gücü ve ses seviyesi açısından optimize edilmiş çözüm",
+        "Duman tahliye ve jet fan sistemlerinde doğru yerleşim yaklaşımı",
+        "Enerji verimliliği ve işletme maliyeti açısından daha kontrollü tasarım",
+        "Teknik şartnameye ve proje ihtiyaçlarına uygun değerlendirme",
+        "Satın alma, müşavir, yüklenici ve proje ekipleri için net teknik dokümantasyon",
+        "Üretim, teknik ofis ve saha ekibi arasında güçlü koordinasyon"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Fan Seçimi",
+      "title": "Projeniz İçin Doğru Fanı Birlikte Seçelim",
+      "subtitle": "NOVVES teknik ofisi, projenizin ihtiyaçlarını analiz ederek en uygun fan, motor ve sistem çözümünü belirlemenize destek olur.",
+      "paragraph": "Endüstriyel havalandırma, duman tahliye fanı, jet fan sistemi, aksiyal fan, klima santrali veya özel HVAC projeniz için teknik ekibimizle iletişime geçebilirsiniz.",
+      "ctaButton": "Fan Seçimi İçin Teknik Destek Alın"
+    }
+  },
+  "bakimPerformans": {
+    "meta": {
+      "title": "Bakım ve Performans Kontrolü | Novves",
+      "description": "NOVVES bakım ve performans kontrolü — fan, motor ve havalandırma sistemlerinde güvenli, verimli ve uzun ömürlü çalışma."
+    },
+    "hero": {
+      "badge": "Hizmetler",
+      "titlePart1": "Bakım ve",
+      "titleHighlight": "Performans Kontrolü",
+      "subtitle": "Fan, motor ve havalandırma sistemlerinde uzun ömürlü, güvenli ve verimli çalışma için teknik bakım hizmeti.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJ5JMO3HOjNDZbtPhy07ir84gR5S9heH0Bj7ujN3CsCTFsR1u_bMp4TPJ52F0pYrDEPuqDsLsLK-t5xxRKgaMRbrWEsK62FLYa9zGEiLJFgzkQ-sHQA-fxyhLnNx8FXJgJ8kIsQ5aiAZxhqXIqFbaQCX_MIv6r0FQPI2OgRrP0N_gpWt7FC1CtuDUMoyt_z_fFZkKMPPMPVK0BqSwk3FlDMIUcB_9aQtiKgMOFiRULZonSaNHj_VFoSbZoekVxTn_L416XlRrPIPs"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES, fan sistemleri, jet fanlar, duman tahliye fanları, aksiyal fanlar, endüstriyel fanlar, klima santralleri, chiller destekli HVAC sistemleri, kontrol panoları ve otomasyon altyapıları için bakım ve performans kontrolü hizmeti sunar.",
+        "Havalandırma sistemlerinde doğru ürün seçimi ve doğru montaj kadar, düzenli bakım ve performans kontrolü de kritik öneme sahiptir. Zaman içinde kirlenme, titreşim, yatak aşınması, motor yükü artışı, elektriksel bağlantı sorunları, sensör hataları, hava debisi düşüşü veya otomasyon senaryosu problemleri sistem verimliliğini olumsuz etkileyebilir.",
+        "NOVVES bakım ve performans kontrolü hizmeti; sistemin güvenli, verimli ve sürdürülebilir şekilde çalışmasını desteklemek amacıyla mekanik, elektriksel, aerodinamik ve operasyonel kontrollerin birlikte değerlendirilmesini sağlar."
+      ]
+    },
+    "serviceScope": {
+      "sectionLabel": "Kapsamımız",
+      "title": "Bakım ve Kontrol Hizmetleri",
+      "items": [
+        {
+          "title": "Fan ve Motor Kontrolleri",
+          "desc": "Fan gövdesi, pervane, motor, bağlantı elemanları, yataklar, titreşim elemanları, koruma kafesleri ve mekanik bağlantılar kontrol edilir. Motor çalışma akımı, motor yönü, ses, titreşim ve ısınma gibi temel işletme değerleri değerlendirilir."
+        },
+        {
+          "title": "Jet Fan Sistem Kontrolü",
+          "desc": "Kapalı otopark jet fan sistemlerinde fan yerleşimi, hava yönlendirme performansı, motor çalışması, bağlantı noktaları, titreşim seviyesi, otomasyon sinyalleri ve senaryo bazlı çalışma durumu kontrol edilir."
+        },
+        {
+          "title": "Duman Tahliye Fanı Kontrolü",
+          "desc": "Duman ve ısı tahliye fanlarında motor, pervane, gövde, bağlantı ekipmanları, elektrik altyapısı, kontrol panosu ve yangın senaryosuna bağlı çalışma koşulları değerlendirilir."
+        },
+        {
+          "title": "Klima Santrali ve HVAC Kontrolleri",
+          "desc": "Klima santrali fanları, filtre durumu, motor-fan grubu, kayış-kasnak yapısı, damperler, sensörler, otomasyon bağlantıları, hava debisi ve sistem çalışma koşulları kontrol edilir."
+        },
+        {
+          "title": "Chiller Destekli Sistem Kontrolü",
+          "desc": "Chiller destekli HVAC sistemlerinde fan-coil, klima santrali, otomasyon ve hava tarafı ekipmanlarıyla ilişkili performans etkileri bütünsel olarak değerlendirilir. Sistem dengesini optimize edecek teknik yönlendirmeler rapor halinde sunulur."
+        },
+        {
+          "title": "Otomasyon ve Kontrol Panosu Kontrolü",
+          "desc": "MCC / DDC panoları, frekans invertörleri, kontaktörler, koruma ekipmanları, sensör bağlantıları, yangın alarm sinyalleri, CO sensörleri ve BMS entegrasyonu kontrol edilir."
+        },
+        {
+          "title": "Performans Ölçüm ve Değerlendirme",
+          "desc": "Sistem çalışma değerleri; hava debisi, basınç, motor akımı, titreşim, ses seviyesi, sıcaklık, fan devri ve çalışma senaryoları açısından değerlendirilir. Gerekli durumlarda optimizasyon önerileri sunulur."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Bakım Süreci",
+      "title": "Hizmet İçeriği",
+      "items": [
+        {
+          "title": "Ön Değerlendirme",
+          "desc": "Sistem tipi, ürün modeli, proje bilgisi, çalışma koşulları, bakım geçmişi ve mevcut şikâyetler değerlendirilir."
+        },
+        {
+          "title": "Saha Kontrolü",
+          "desc": "NOVVES teknik ekibi sahada mekanik, elektriksel ve operasyonel kontroller yapar. Fan, motor, pano, sensör, bağlantı ekipmanları ve sistem bileşenleri incelenir."
+        },
+        {
+          "title": "Temel Performans Kontrolleri",
+          "desc": "Hava akışı, motor çalışma akımı, fan devri, ses, titreşim, ısınma, otomasyon tepkileri ve sistem davranışı kontrol edilir."
+        },
+        {
+          "title": "Arıza Riski ve Uygunsuzluk Tespiti",
+          "desc": "Gevşek bağlantılar, titreşim kaynakları, motor zorlanması, sensör hataları, yanlış çalışma senaryoları, bakım eksikleri veya performans kayıpları belirlenir."
+        },
+        {
+          "title": "Optimizasyon Önerileri",
+          "desc": "Sistemin daha verimli çalışması için hız ayarı, otomasyon senaryosu, bakım planı, yedek parça ihtiyacı, temizlik veya teknik iyileştirme önerileri hazırlanır."
+        },
+        {
+          "title": "Raporlama",
+          "desc": "Yapılan kontroller, tespit edilen uygunsuzluklar, öneriler ve varsa acil müdahale gerektiren noktalar teknik servis formu veya bakım raporu ile kayıt altına alınır."
+        },
+        {
+          "title": "Periyodik Bakım Planlaması",
+          "desc": "Sistemin kullanım yoğunluğuna, çalışma ortamına, ürün tipine ve proje kritikliğine göre periyodik bakım aralıkları planlanabilir."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Neden Önemli?",
+      "title": "Bakım ve Performans Kontrolü Neden Gereklidir?",
+      "items": [
+        {
+          "title": "Arıza Riskini Azaltır",
+          "text": "Düzenli kontrol sayesinde mekanik gevşeme, titreşim, motor zorlanması, elektriksel bağlantı problemleri ve sensör hataları erken aşamada tespit edilebilir."
+        },
+        {
+          "title": "Enerji Verimliliğini Destekler",
+          "text": "Kirli, ayarsız veya zorlanan fan sistemleri daha fazla enerji tüketebilir. Performans kontrolü, sistemin daha verimli çalışmasına katkı sağlar."
+        },
+        {
+          "title": "Sistem Ömrünü Uzatır",
+          "text": "Doğru bakım, fan, motor, yatak, pervane, pano ve otomasyon bileşenlerinin daha sağlıklı çalışmasını destekler."
+        },
+        {
+          "title": "İşletme Güvenliğini Artırır",
+          "text": "Duman tahliye fanları, jet fanlar ve kapalı otopark havalandırma sistemleri gibi kritik ekipmanlarda düzenli kontrol, güvenli işletme açısından büyük önem taşır."
+        },
+        {
+          "title": "Performans Kaybını Önler",
+          "text": "Zamanla oluşan kirlenme, aşınma, yanlış ayar veya hava akışı problemleri sistem performansını düşürebilir. Bakım ve kontrol süreci bu kayıpların erken tespit edilmesini sağlar."
+        },
+        {
+          "title": "Satış Sonrası Süreci Güçlendirir",
+          "text": "Düzenli bakım kayıtları; servis, garanti, yedek parça ve teknik destek süreçlerinin daha doğru yönetilmesine yardımcı olur."
+        }
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "NOVVES ile Performans Odaklı Bakım",
+      "title": "Bütünsel Teknik Değerlendirme",
+      "paragraphs": [
+        "NOVVES bakım ve performans kontrolü hizmeti, yalnızca ekipman kontrolü değil; sistemin çalışma mantığını, saha koşullarını ve mühendislik gerekliliklerini birlikte değerlendiren bir teknik hizmettir.",
+        "Teknik servis ekibimiz, gerektiğinde NOVVES teknik ofisiyle koordineli çalışarak fan seçimi, otomasyon senaryosu, yedek parça, performans analizi ve sistem optimizasyonu konularında destek sağlar.",
+        "Bu sayede sistemin yalnızca çalışıp çalışmadığı değil; doğru, verimli, güvenli ve proje amacına uygun çalışıp çalışmadığı değerlendirilir."
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Uygulama Alanları",
+      "title": "Hangi Sistemler İçin Bakım ve Performans Kontrolü Yapıyoruz?",
+      "items": [
+        "Jet fan sistemleri",
+        "Duman ve ısı tahliye fanları",
+        "Aksiyal fanlar",
+        "Endüstriyel fanlar",
+        "Çatı fanları",
+        "Hücreli fanlar",
+        "Egzoz fanları",
+        "Taze hava fanları",
+        "Klima santralleri",
+        "Chiller destekli HVAC sistemleri",
+        "MCC / DDC kontrol panoları",
+        "Kapalı otopark havalandırma sistemleri",
+        "Duman kontrol sistemleri",
+        "Proje bazlı özel havalandırma sistemleri"
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Bakım Talebi",
+      "title": "Bakım Talebinizi Oluşturun",
+      "subtitle": "Fan, jet fan, duman tahliye sistemi, klima santrali, chiller destekli HVAC sistemi, otomasyon panosu veya havalandırma sisteminiz için NOVVES teknik ekibinden bakım ve performans kontrolü desteği alabilirsiniz.",
+      "paragraph": "Sisteminizi yerinde inceleyelim, performansını değerlendirelim ve güvenli, verimli, uzun ömürlü çalışma için teknik önerilerimizi paylaşalım.",
+      "ctaButton": "Bakım ve Performans Kontrolü Talebi Oluşturun"
+    }
+  },
+  "egitimDanismanlik": {
+    "meta": {
+      "title": "Eğitim ve Teknik Danışmanlık | Novves",
+      "description": "NOVVES eğitim ve teknik danışmanlık — fan, duman kontrol, CFD, devreye alma ve otomasyon için mühendislik odaklı bilgi desteği."
+    },
+    "hero": {
+      "badge": "Hizmetler",
+      "titlePart1": "Eğitim ve",
+      "titleHighlight": "Teknik Danışmanlık",
+      "subtitle": "Ürün, sistem ve proje ekipleri için mühendislik odaklı teknik bilgi desteği.",
+      "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3xcOoqyeafZ20LqVAF2QXkPSw0Xj5WIi6QJ_zDjZ2WgptUvNqbgsiyA_pyORA2OP7SeQ8s1yK61K1gEuWa7CCR9K3i210vBxit-ZTVS7yKGTa4t56Mpo6nGcAzHpnfjuL5fO0VH857GDmDaHtedp7AJh-VVntJoZi8sM0te2FKESj0k2Nf68qAoRmWgz2HwIXSzo5O6Dnp0xbFABrvjWEmAXLxPe6j2V4yyMyxlrq_uzrv2bJsQqYdGrZK9La9FRaZou7ZTbCR40"
+    },
+    "intro": {
+      "paragraphs": [
+        "NOVVES, fan sistemleri, jet fanlar, duman tahliye fanları, aksiyal fanlar, endüstriyel fanlar, klima santralleri, chiller destekli HVAC sistemleri, otomasyon panoları ve duman kontrol sistemleri için eğitim ve teknik danışmanlık hizmetleri sunar.",
+        "Havalandırma ve duman kontrol sistemlerinde doğru ürün seçimi kadar, sistemin doğru anlaşılması, doğru kullanılması, doğru bakımının yapılması ve proje ekipleri tarafından doğru yorumlanması da kritik öneme sahiptir. NOVVES eğitim ve teknik danışmanlık hizmeti; işletme ekiplerine, bakım personeline, proje firmalarına, mekanik tesisat ekiplerine, yüklenicilere, danışmanlara ve teknik satın alma ekiplerine yönelik bilgi desteği sağlar.",
+        "NOVVES için eğitim yalnızca ürün anlatımı değildir. Amaç; sistemin çalışma prensibini, güvenli kullanım kurallarını, bakım ihtiyaçlarını, otomasyon senaryolarını, fan performansını ve proje özelindeki teknik gereklilikleri anlaşılır şekilde aktarmaktır."
+      ]
+    },
+    "trainingScope": {
+      "sectionLabel": "Eğitim Kapsamımız",
+      "title": "Teknik Eğitim ve Danışmanlık Başlıkları",
+      "items": [
+        {
+          "title": "Fan Sistemleri Eğitimi",
+          "desc": "Aksiyal fanlar, jet fanlar, duman tahliye fanları, endüstriyel fanlar, çatı fanları ve hücreli fanların çalışma prensipleri, kullanım alanları, seçim kriterleri ve bakım gereklilikleri anlatılır."
+        },
+        {
+          "title": "Duman Kontrol Sistemleri Eğitimi",
+          "desc": "Kapalı otoparklar, endüstriyel tesisler ve büyük hacimli yapılarda duman kontrol sistemlerinin çalışma mantığı, jet fan yerleşimi, egzoz ve taze hava organizasyonu, yangın senaryoları ve otomasyon yaklaşımı açıklanır."
+        },
+        {
+          "title": "CFD Analizi ve Proje Değerlendirme Danışmanlığı",
+          "desc": "CFD analiz sonuçlarının nasıl okunacağı, hava akışı, duman yayılımı, sıcaklık dağılımı, CO yoğunluğu, görüş mesafesi ve fan yerleşimi çıktılarının proje kararlarına nasıl yansıtılacağı konusunda teknik destek verilir."
+        },
+        {
+          "title": "Devreye Alma ve Kullanıcı Eğitimi",
+          "desc": "Sistem devreye alındıktan sonra işletme veya bakım ekibine temel kullanım, dikkat edilmesi gereken noktalar, çalışma modları, alarm durumları ve bakım periyotları hakkında bilgilendirme yapılır."
+        },
+        {
+          "title": "Bakım ve Arıza Giderme Eğitimi",
+          "desc": "Fan, motor, pano, sensör, otomasyon ve HVAC sistemlerinde sık karşılaşılan arızalar, temel kontrol adımları, bakım ihtiyaçları ve güvenli müdahale sınırları anlatılır."
+        },
+        {
+          "title": "Otomasyon ve Kontrol Senaryoları Eğitimi",
+          "desc": "MCC / DDC kontrol panoları, CO sensörleri, yangın alarm sinyalleri, BMS entegrasyonu, normal havalandırma modu, yangın modu ve manuel çalışma senaryoları hakkında teknik bilgilendirme yapılır."
+        },
+        {
+          "title": "Ürün Seçimi ve Teknik Dokümantasyon Danışmanlığı",
+          "desc": "Fan seçimi, teknik veri sayfaları, ürün kodları, performans değerleri, sertifika kapsamı, kullanım kılavuzları ve proje dokümanları konusunda teknik ekiplerle birlikte değerlendirme yapılır."
+        }
+      ]
+    },
+    "process": {
+      "sectionLabel": "Danışmanlık Süreci",
+      "title": "Hizmet İçeriği",
+      "items": [
+        {
+          "title": "İhtiyaç Analizi",
+          "desc": "Eğitim veya danışmanlık talebinin amacı belirlenir. Katılımcı profili, proje tipi, ürün grubu, sistem kapsamı ve teknik ihtiyaçlar değerlendirilir."
+        },
+        {
+          "title": "İçerik Planlama",
+          "desc": "Eğitim içeriği; ürün grubu, uygulama alanı, proje türü, bakım ihtiyacı, duman kontrol senaryosu veya teknik problem başlığına göre hazırlanır."
+        },
+        {
+          "title": "Teknik Eğitim / Danışmanlık Oturumu",
+          "desc": "Eğitim; yerinde, çevrim içi veya proje özelinde teknik toplantı formatında gerçekleştirilebilir. Ürünler, sistem şemaları, uygulama örnekleri, bakım adımları ve teknik dokümanlar üzerinden anlatım yapılır."
+        },
+        {
+          "title": "Soru-Cevap ve Uygulama Değerlendirmesi",
+          "desc": "Katılımcıların proje, ürün, bakım, arıza, otomasyon veya devreye alma süreçlerine ilişkin soruları teknik ekip tarafından yanıtlanır."
+        },
+        {
+          "title": "Dokümantasyon ve Takip",
+          "desc": "Gerekli durumlarda eğitim notları, teknik dokümanlar, bakım talimatları, kullanım kılavuzları veya proje özelinde öneriler paylaşılır."
+        }
+      ]
+    },
+    "whyImportant": {
+      "sectionLabel": "Neden Önemli?",
+      "title": "Eğitim ve Teknik Danışmanlık Neden Gereklidir?",
+      "items": [
+        {
+          "title": "Sistemin Doğru Kullanılmasını Sağlar",
+          "text": "Fan, jet fan, duman tahliye ve otomasyon sistemlerinin doğru anlaşılması; hatalı kullanım, yanlış müdahale ve gereksiz arıza risklerini azaltır."
+        },
+        {
+          "title": "Bakım Kalitesini Artırır",
+          "text": "Bakım ekiplerinin ürünleri ve sistem bileşenlerini daha iyi tanıması, periyodik kontrollerin daha doğru yapılmasını sağlar."
+        },
+        {
+          "title": "Arıza Müdahale Süresini Kısaltır",
+          "text": "Temel arıza belirtilerinin, alarm durumlarının ve kontrol adımlarının bilinmesi, ilk değerlendirme sürecini hızlandırır."
+        },
+        {
+          "title": "Proje Ekiplerinin Teknik Kararlarını Güçlendirir",
+          "text": "Fan seçimi, CFD analizi, duman kontrol tasarımı, otomasyon senaryosu ve teknik dokümantasyon konularında doğru bilgi, daha sağlıklı proje kararları alınmasına katkı sağlar."
+        },
+        {
+          "title": "Güvenli İşletmeyi Destekler",
+          "text": "Duman tahliye fanları, jet fan sistemleri ve kapalı otopark havalandırma sistemleri gibi kritik sistemlerde eğitimli personel, işletme güvenliği açısından önemli avantaj sağlar."
+        },
+        {
+          "title": "Ürün Ömrünü ve Sistem Performansını Destekler",
+          "text": "Doğru kullanım ve doğru bakım yaklaşımı; fan, motor, pano, sensör ve sistem bileşenlerinin daha uzun ömürlü ve verimli çalışmasına katkı sağlar."
+        }
+      ]
+    },
+    "audience": {
+      "sectionLabel": "Hedef Kitle",
+      "title": "Kimler İçin Uygundur?",
+      "intro": "NOVVES eğitim ve teknik danışmanlık hizmeti aşağıdaki kişi ve ekipler için uygundur:",
+      "items": [
+        "İşletme teknik ekipleri",
+        "Bakım ekipleri",
+        "Mekanik tesisat firmaları",
+        "Elektrik ve otomasyon ekipleri",
+        "Proje müellifleri",
+        "Yangın danışmanları",
+        "Yüklenici firmalar",
+        "Satın alma ve teknik satın alma ekipleri",
+        "Bayiler ve temsilciler",
+        "Servis ekipleri",
+        "Tesis yönetimi ekipleri",
+        "Müşavir ve kontrolör ekipler"
+      ]
+    },
+    "systemScope": {
+      "sectionLabel": "Uygulama Alanları",
+      "title": "Hangi Sistemler İçin Eğitim Veriyoruz?",
+      "items": [
+        "Jet fan sistemleri",
+        "Duman ve ısı tahliye fanları",
+        "Aksiyal fanlar",
+        "Endüstriyel fanlar",
+        "Çatı fanları",
+        "Hücreli fanlar",
+        "Egzoz ve taze hava fanları",
+        "Klima santralleri",
+        "Chiller destekli HVAC sistemleri",
+        "MCC / DDC kontrol panoları",
+        "Kapalı otopark havalandırma sistemleri",
+        "Duman kontrol sistemleri",
+        "CFD analiz çıktıları",
+        "Proje bazlı özel havalandırma çözümleri"
+      ]
+    },
+    "coordination": {
+      "sectionLabel": "NOVVES ile Teknik Bilgi Gücünüzü Artırın",
+      "title": "Mühendislik Odaklı Eğitim Yaklaşımı",
+      "paragraphs": [
+        "NOVVES eğitim ve teknik danışmanlık hizmeti; üretici bilgisi, teknik ofis deneyimi, saha servis tecrübesi ve proje mühendisliği yaklaşımını bir araya getirir.",
+        "Amacımız; ürün ve sistemlerin yalnızca kurulmasını değil, doğru anlaşılmasını, doğru kullanılmasını ve uzun vadede güvenli şekilde işletilmesini desteklemektir.",
+        "Fan sistemleri, duman kontrol tasarımı, CFD analizi, devreye alma, bakım, arıza giderme veya teknik dokümantasyon konularında ekibiniz için eğitim ve danışmanlık desteği alabilirsiniz."
+      ]
+    },
+    "cta": {
+      "sectionLabel": "Eğitim Talebi",
+      "title": "Eğitim ve Teknik Danışmanlık Talebi Oluşturun",
+      "subtitle": "NOVVES teknik ekibi; kurumunuza, projenize veya ekibinize özel eğitim ve danışmanlık programı planlamanıza destek olur.",
+      "ctaButton": "Eğitim ve Teknik Danışmanlık Talebi Oluşturun"
     }
   }
 }

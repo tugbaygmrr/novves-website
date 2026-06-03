@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { HizmetlerDetailRoot } from "@/components/hizmetler/hizmetler-detail-root";
+import {
+  HizmetlerPageCard,
+  HizmetlerPageCta,
+  HizmetlerPageHero,
+  HizmetlerPageSection,
+  HizmetlerSteps,
+} from "@/components/hizmetler/hizmetler-page-ui";
 import { getDictionary, hasLocale } from "../../dictionaries";
 import { serviceDetailMetadata } from "@/lib/i18n-metadata";
 
@@ -16,238 +22,253 @@ export async function generateMetadata({
 
 const accentMap = [
   { accent: "border-l-[#1d2f4d]", badge: "bg-[#1d2f4d]/12 text-[#1d2f4d]" },
-  { accent: "border-l-primary", badge: "bg-primary/12 text-primary" },
+  { accent: "border-l-hz-secondary", badge: "bg-hz-secondary/12 text-hz-secondary" },
   { accent: "border-l-[#2f3f58]", badge: "bg-[#2f3f58]/12 text-[#2f3f58]" },
   { accent: "border-l-[#334866]", badge: "bg-[#334866]/12 text-[#334866]" },
   { accent: "border-l-[#6b7280]", badge: "bg-[#6b7280]/12 text-[#4b5563]" },
+  { accent: "border-l-[#1d2f4d]", badge: "bg-[#1d2f4d]/12 text-[#1d2f4d]" },
+  { accent: "border-l-hz-secondary", badge: "bg-hz-secondary/12 text-hz-secondary" },
 ];
+
+type WhyCfdItem = string | { title: string; desc: string };
+
+type ListSection = {
+  sectionLabel: string;
+  title: string;
+  intro?: string;
+  items: string[];
+};
+
+function introParagraphs(intro: string | string[]): string[] {
+  if (typeof intro === "string") return [intro];
+  return intro;
+}
 
 export default async function CfdAnalizi({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!hasLocale(locale)) notFound();
   const dict = await getDictionary(locale);
-  const t = dict.services.cfdAnalizi;
+  const t = dict.services.cfdAnalizi as typeof dict.services.cfdAnalizi & {
+    projectTypes?: ListSection;
+    process?: { sectionLabel: string; title: string; items: { title: string; desc: string }[] };
+    whyCfd: {
+      intro?: string;
+      items: WhyCfdItem[];
+      resultLabel: string;
+      resultText: string;
+    };
+    benefits: {
+      intro?: string;
+      items: string[];
+      quote?: string;
+      ctaPrimary?: string;
+      ctaSecondary?: string;
+    };
+    cta?: {
+      sectionLabel: string;
+      title: string;
+      subtitle?: string;
+      paragraph?: string;
+      ctaButton?: string;
+      secondaryLink?: string;
+    };
+  };
+
+  const paragraphs = introParagraphs(t.intro);
+  const ctaSubtitle = t.cta
+    ? [t.cta.subtitle, t.cta.paragraph].filter(Boolean).join(" ")
+    : undefined;
 
   return (
-    <main>
-      {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[540px] items-end overflow-hidden">
-        <Image src="/images/page-hero/cfd.jpg" alt="" fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-[#4e525c]/28" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/80 to-[#2f3440]/94" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.08]" />
+    <HizmetlerDetailRoot>
+      <HizmetlerPageHero
+        badge={t.hero.badge}
+        titlePart1={t.hero.titlePart1}
+        titleHighlight={t.hero.titleHighlight}
+        subtitle={t.hero.subtitle}
+        imageSrc="/images/page-hero/cfd.jpg"
+        stats={t.hero.stats}
+      />
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-36">
-          <nav className="mb-8 flex items-center gap-2 text-xs text-white/40">
-            <Link href={`/${locale}`} className="transition-colors hover:text-white/70">{t.breadcrumb.home}</Link>
-            <span>/</span>
-            <Link href={`/${locale}/hizmetler/cfd-analizi`} className="transition-colors hover:text-white/70">{t.breadcrumb.services}</Link>
-            <span>/</span>
-            <span className="text-white/60">{t.breadcrumb.current}</span>
-          </nav>
-
-          <div className="max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_28px_70px_-40px_rgba(10,12,16,0.75)] backdrop-blur-[2px] sm:p-8 lg:p-10">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/12 px-3.5 py-1.5 backdrop-blur-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">{t.hero.badge}</span>
-            </div>
-            <h1 className="font-display text-hero font-extrabold leading-[1.04] tracking-[-0.02em] text-white">
-              {t.hero.titlePart1} <span className="text-primary">{t.hero.titleHighlight}</span>
-            </h1>
-            <p className="mt-6 max-w-[52ch] text-[18px] leading-[1.62] text-white/72">
-              {t.hero.subtitle}
+      <HizmetlerPageSection>
+        <HizmetlerPageCard flat className="space-y-4">
+          {paragraphs.map((p) => (
+            <p key={p.slice(0, 48)} className="text-[15px] leading-7 text-hz-on-surface-variant">
+              {p}
             </p>
-          </div>
+          ))}
+        </HizmetlerPageCard>
+      </HizmetlerPageSection>
 
-          {/* Stats */}
-          <div className="mt-8 grid grid-cols-1 divide-y divide-white/10 border border-white/10 bg-dark/40 backdrop-blur-sm sm:mt-10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-            {t.hero.stats.map((s: { value: string; label: string }) => (
-              <div key={s.label} className="py-4 text-center sm:py-5">
-                <p className="text-lg font-bold text-primary sm:text-xl">{s.value}</p>
-                <p className="mt-0.5 text-[11px] font-medium uppercase tracking-wider text-white/40">{s.label}</p>
-              </div>
+      <HizmetlerPageSection label={t.whyCfd.sectionLabel} title={t.whyCfd.title} variant="white">
+        {t.whyCfd.intro ? (
+          <p className="mb-6 max-w-3xl text-[15px] leading-7 text-hz-on-surface-variant">{t.whyCfd.intro}</p>
+        ) : null}
+        <div className="grid items-stretch gap-8 lg:grid-cols-2">
+          <div className="space-y-4">
+            {t.whyCfd.items.map((item: string | { title: string; desc: string }, i: number) => (
+              <HizmetlerPageCard key={typeof item === "string" ? item.slice(0, 48) : item.title} className="!p-5">
+                <div className="flex items-start gap-4">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-hz-secondary-container/15 text-[11px] font-bold text-hz-secondary">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    {typeof item === "string" ? (
+                      <p className="text-[14px] leading-relaxed text-hz-on-surface-variant">{item}</p>
+                    ) : (
+                      <>
+                        <h3 className="font-bold text-hz-on-surface">{item.title}</h3>
+                        <p className="mt-2 text-[14px] leading-relaxed text-hz-on-surface-variant">{item.desc}</p>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </HizmetlerPageCard>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── Intro ────────────────────────────────────────────── */}
-      <section className="bg-[#ecebe6] py-6 sm:py-8">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-ink/10 bg-white/80 p-6 shadow-[0_14px_38px_-30px_rgba(15,20,30,0.25)] sm:p-7">
-            <p className="text-[15px] leading-7 text-secondary/75">{t.intro}</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Why CFD ──────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#ecebe6] py-14 sm:py-16">
-        <div className="pointer-events-none absolute inset-0 blueprint-grid-light opacity-[0.12]" />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-14 lg:grid-cols-2">
-            <div>
-              <div className="mb-8 flex items-end gap-4">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.whyCfd.sectionLabel}</p>
-                  <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
-                    {t.whyCfd.title}
-                  </h2>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                {t.whyCfd.items.map((item: string, i: number) => (
-                  <div
-                    key={i}
-                    className="flex items-start gap-4 rounded-xl border border-ink/10 bg-[#f5f2eb] p-5"
-                  >
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[11px] font-bold text-primary">
-                      {i + 1}
-                    </span>
-                    <p className="text-[13px] leading-relaxed text-secondary/70">{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Result highlight */}
-            <div className="relative overflow-hidden rounded-2xl bg-[#2f3f58] p-8 sm:p-10">
-              <div className="absolute inset-0 bg-gradient-to-b from-[#334866] via-[#263a57] to-[#1c2f48]" />
-              <div
-                className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full opacity-10"
-                style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
-              />
-              <div
-                className="pointer-events-none absolute inset-0 opacity-[0.04]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)",
-                  backgroundSize: "40px 40px",
-                }}
-              />
-              <div className="relative">
-                <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/15 px-3 py-1">
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-primary">{t.whyCfd.resultLabel}</span>
-                </span>
-                <p className="text-lg font-bold leading-relaxed text-white sm:text-xl">
-                  {t.whyCfd.resultText}
-                </p>
-                <div className="mt-6 flex items-center gap-2">
-                  <span className="h-px w-8 bg-primary/40" />
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                  <span className="h-px w-8 bg-primary/40" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Analysis Types ───────────────────────────────────── */}
-      <section className="bg-[#f5f2eb] py-14 sm:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-9 flex items-end gap-6">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.analysisTypes.sectionLabel}</p>
-              <h2 className="mt-2 font-display text-section font-bold tracking-tight text-dark">
-                {t.analysisTypes.title}
-              </h2>
-            </div>
-            <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
-          </div>
-
-          <div className="space-y-3">
-            {t.analysisTypes.items.map((a: { title: string; subtitle: string; text: string }, i: number) => (
-              <div
-                key={a.title}
-                className={`group overflow-hidden rounded-xl border-l-4 ${accentMap[i]?.accent ?? "border-l-gray-400"} border border-ink/10 bg-[#f8f5ed] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_30px_-22px_rgba(15,20,30,0.3)]`}
-              >
-                <div className="flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:gap-8">
-                  <div className="shrink-0 sm:w-64">
-                    <span className={`mb-2 inline-block rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider ${accentMap[i]?.badge ?? "bg-gray-400/10 text-gray-500"}`}>
-                      {a.subtitle}
-                    </span>
-                    <h3 className="text-base font-bold text-dark">{a.title}</h3>
-                  </div>
-                  <div className="hidden h-12 w-px bg-ink/10 sm:block" />
-                  <p className="flex-1 text-[13px] leading-relaxed text-secondary/65">{a.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Benefits ─────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-dark py-18 sm:py-20">
-        <div
-          className="pointer-events-none absolute -left-40 -bottom-40 h-[500px] w-[500px] rounded-full opacity-[0.06]"
-          style={{ background: "radial-gradient(circle, #ef5f17, transparent 70%)" }}
-        />
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-14 lg:grid-cols-2">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.benefits.sectionLabel}</p>
-              <h2 className="mt-2 font-display text-section font-bold text-white">
-                {t.benefits.title}
-              </h2>
-              <div className="mt-8 space-y-3">
-                {t.benefits.items.map((b: string, i: number) => (
-                  <div key={i} className="flex items-start gap-4">
-                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-primary/15">
-                      <svg className="h-3.5 w-3.5 text-primary" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                    </span>
-                    <p className="text-sm leading-relaxed text-white/70">{b}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA card */}
-            <div className="rounded-2xl bg-white/[0.06] p-8 ring-1 ring-white/[0.1] backdrop-blur-sm lg:p-10">
-              <span
-                className="mb-4 block font-serif text-5xl leading-none text-primary/20 select-none"
-                aria-hidden="true"
-              >
-                &ldquo;
+          <HizmetlerPageCard className="relative flex h-full flex-col justify-between gap-8 overflow-hidden !border-hz-primary-container !bg-hz-primary-container !text-white">
+            <span
+              aria-hidden
+              className="material-symbols-outlined pointer-events-none absolute -right-6 -top-4 select-none text-[9rem] leading-none text-white/[0.06]"
+            >
+              target
+            </span>
+            <div className="relative">
+              <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-hz-secondary-container/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-hz-secondary-container">
+                <span className="material-symbols-outlined text-sm">verified</span>
+                {t.whyCfd.resultLabel}
               </span>
-              <p className="text-base leading-7 text-white/80">
-                {t.benefits.quote}
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href={`/${locale}/iletisim`}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30"
-                >
-                  {t.benefits.ctaPrimary}
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </Link>
-                <Link
-                  href={`/${locale}/hizmetler/duman-kontrol-sistemi-tasarimi`}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/10 px-6 py-3 text-sm font-medium text-white/70 transition-all duration-300 hover:border-primary/30 hover:text-white"
-                >
-                  {t.benefits.ctaSecondary}
-                </Link>
-              </div>
+              <p className="text-2xl font-black leading-snug sm:text-[1.7rem]">{t.whyCfd.resultText}</p>
+              {t.whyCfd.intro ? (
+                <p className="mt-4 text-sm leading-relaxed text-white/70">{t.whyCfd.intro}</p>
+              ) : null}
             </div>
-          </div>
+
+            {t.benefits?.items && t.benefits.items.length > 0 ? (
+              <ul className="relative space-y-2.5">
+                {t.benefits.items.slice(0, 4).map((b: string) => (
+                  <li key={b.slice(0, 40)} className="flex items-start gap-2.5 text-[13px] leading-snug text-white/85">
+                    <span className="material-symbols-outlined mt-0.5 shrink-0 text-base text-hz-secondary-container">check_circle</span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+
+            {t.hero.stats && t.hero.stats.length > 0 ? (
+              <div className="relative grid grid-cols-3 gap-3 border-t border-white/10 pt-6">
+                {t.hero.stats.map((s: { value: string; label: string }) => (
+                  <div key={s.label}>
+                    <p className="text-xl font-black leading-none text-hz-secondary-container sm:text-2xl">{s.value}</p>
+                    <p className="mt-1.5 text-[11px] leading-tight text-white/60">{s.label}</p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+          </HizmetlerPageCard>
         </div>
-      </section>
-    </main>
+      </HizmetlerPageSection>
+
+      <HizmetlerPageSection label={t.analysisTypes.sectionLabel} title={t.analysisTypes.title}>
+        <div className="space-y-4">
+          {t.analysisTypes.items.map((a: { title: string; subtitle: string; text: string }, i: number) => (
+            <HizmetlerPageCard
+              key={a.title}
+              className={`border-l-4 ${accentMap[i % accentMap.length].accent} !py-5`}
+            >
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-8">
+                <div className="shrink-0 sm:w-56">
+                  <span
+                    className={`mb-2 inline-block rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider ${accentMap[i % accentMap.length].badge}`}
+                  >
+                    {a.subtitle}
+                  </span>
+                  <h3 className="text-base font-bold text-hz-on-surface">{a.title}</h3>
+                </div>
+                <p className="flex-1 text-[14px] leading-relaxed text-hz-on-surface-variant">{a.text}</p>
+              </div>
+            </HizmetlerPageCard>
+          ))}
+        </div>
+      </HizmetlerPageSection>
+
+      <HizmetlerPageSection
+        label={t.benefits.sectionLabel}
+        title={t.benefits.title}
+        className="!bg-hz-primary-container [&_h2]:!text-hz-on-primary"
+      >
+        {t.benefits.intro ? (
+          <p className="mb-6 max-w-3xl text-[15px] leading-7 text-hz-on-primary-container">{t.benefits.intro}</p>
+        ) : null}
+        <div className="grid gap-3 sm:grid-cols-2">
+          {t.benefits.items.map((b: string) => (
+            <div key={b.slice(0, 48)} className="flex items-start gap-3 text-sm text-white/80">
+              <span className="mt-0.5 shrink-0 text-hz-secondary-container">✓</span>
+              <span>{b}</span>
+            </div>
+          ))}
+        </div>
+        {t.benefits.quote && !t.cta ? (
+          <HizmetlerPageCard className="mt-8 !bg-white/10 !text-white ring-1 ring-white/15">
+            <p className="text-base leading-7 text-white/85">{t.benefits.quote}</p>
+          </HizmetlerPageCard>
+        ) : null}
+      </HizmetlerPageSection>
+
+      {t.projectTypes ? (
+        <HizmetlerPageSection label={t.projectTypes.sectionLabel} title={t.projectTypes.title} variant="white">
+          <HizmetlerPageCard>
+            {t.projectTypes.intro ? (
+              <p className="mb-4 text-[15px] leading-7 text-hz-on-surface-variant">{t.projectTypes.intro}</p>
+            ) : null}
+            <ul className="grid gap-2 sm:grid-cols-2">
+              {t.projectTypes.items.map((item: string) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-2 rounded-lg border border-sand-300/40 bg-sand-200/50 px-3 py-2.5 text-sm font-medium text-hz-on-surface"
+                >
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-hz-secondary" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </HizmetlerPageCard>
+        </HizmetlerPageSection>
+      ) : null}
+
+      {t.process ? (
+        <HizmetlerPageSection label={t.process.sectionLabel} title={t.process.title}>
+          <HizmetlerSteps items={t.process.items.map((it: { title: string; desc: string }) => ({ title: it.title, desc: it.desc }))} />
+        </HizmetlerPageSection>
+      ) : null}
+
+      {t.cta?.ctaButton ? (
+        <HizmetlerPageCta
+          label={t.cta.sectionLabel}
+          title={t.cta.title}
+          subtitle={ctaSubtitle}
+          phone="+90 216 467 47 52"
+          primaryHref={`/${locale}/iletisim`}
+          primaryLabel={t.cta.ctaButton}
+          secondaryHref={
+            t.cta.secondaryLink ? `/${locale}/hizmetler/duman-kontrol-sistemi-tasarimi` : undefined
+          }
+          secondaryLabel={t.cta.secondaryLink}
+        />
+      ) : t.benefits.ctaPrimary ? (
+        <HizmetlerPageCta
+          label={t.benefits.sectionLabel}
+          title={t.benefits.title}
+          subtitle={t.benefits.quote}
+          phone="+90 216 467 47 52"
+          primaryHref={`/${locale}/iletisim`}
+          primaryLabel={t.benefits.ctaPrimary}
+          secondaryHref={
+            t.benefits.ctaSecondary ? `/${locale}/hizmetler/duman-kontrol-sistemi-tasarimi` : undefined
+          }
+          secondaryLabel={t.benefits.ctaSecondary}
+        />
+      ) : null}
+    </HizmetlerDetailRoot>
   );
 }

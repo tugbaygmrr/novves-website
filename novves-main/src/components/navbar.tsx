@@ -14,6 +14,7 @@ import {
   readCookieConsentRaw,
   resetCookieConsent,
 } from "@/lib/cookie-consent-storage";
+import { getHizmetlerNavbarLinks } from "@/lib/hizmetler-nav";
 
 /* â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
@@ -30,6 +31,11 @@ type MegaMenu = {
 /** Yalnızca Çözümler + Ürünler: satır hover’ında sağda görsel önizleme */
 function menuHasImagePreview(menu: MegaMenu): boolean {
   return menu.href === "/cozumler" || menu.href === "/urunler";
+}
+
+/** Alt menü yok — tıklanınca doğrudan hedef sayfaya gider (ör. Teknik Merkez → Doküman Kütüphanesi). */
+function menuIsDirectLink(menu: MegaMenu): boolean {
+  return menu.links.length === 0;
 }
 
 type NavbarContent = {
@@ -56,6 +62,27 @@ type CommonDict = {
   navbar: NavbarContent;
   footer: { cookieSettings: string };
 };
+
+function mediaCenterLabelForLocale(locale: string): string {
+  const map: Record<string, string> = {
+    tr: "Medya Merkezi",
+    en: "Media Center",
+    ru: "Медиа-центр",
+    ar: "مركز الوسائط",
+    de: "Medienzentrum",
+    it: "Centro Media",
+    fr: "Centre Média",
+    az: "Media Mərkəzi",
+    kk: "Медиа орталығы",
+    tg: "Маркази медиа",
+    es: "Centro de Medios",
+    zh: "媒体中心",
+    ur: "میڈیا سینٹر",
+    lt: "Medijos Centras",
+    pl: "Centrum Mediów",
+  };
+  return map[locale] ?? "Media Center";
+}
 
 /* â”€â”€ Icons (consistent outline, 1.5 strokeWidth) â”€â”€â”€â”€â”€â”€ */
 
@@ -94,9 +121,10 @@ const icons = {
 
 /* â”€â”€ Build menus from dict â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-function buildMenus(dict: CommonDict): MegaMenu[] {
+function buildMenus(dict: CommonDict, locale: string): MegaMenu[] {
   const d = dict.navbar;
   const l = d.links;
+  const mediaCenterLabel = mediaCenterLabelForLocale(locale);
   return [
     {
       label: d.solutions,
@@ -231,29 +259,14 @@ function buildMenus(dict: CommonDict): MegaMenu[] {
       href: "/hizmetler",
       desc: d.servicesDesc,
       icon: icons.hizmetler,
-      links: [
-        { label: l.onSiteInspection, href: "/hizmetler/yerinde-kesif" },
-        { label: l.smokeControlDesign, href: "/hizmetler/duman-kontrol-sistemi-tasarimi" },
-        { label: l.commissioning, href: "/hizmetler/devreye-alma" },
-        { label: l.technicalService, href: "/hizmetler/teknik-servis" },
-        { label: l.cfdAnalysis, href: "/hizmetler/cfd-analizi" },
-      ],
+      links: getHizmetlerNavbarLinks(l as Record<string, string>, locale),
     },
     {
       label: d.technicalCenter,
-      href: "/teknik-merkez",
+      href: "/teknik-merkez/dokuman-kutuphanesi",
       desc: d.technicalCenterDesc,
       icon: icons.teknik,
-      links: [
-        { label: l.documentLibrary, href: "/teknik-merkez/dokuman-kutuphanesi" },
-        { label: l.certificates, href: "/kurumsal/sertifikalar" },
-        { label: l.sustainability, href: "/surdurulebilirlik" },
-        { label: l.co2, href: "/surdurulebilirlik/co2" },
-        { label: l.recycling, href: "/surdurulebilirlik/geri-donusum" },
-        { label: l.technicalArticles, href: "/teknik-merkez/blog" },
-        { label: l.fanSelectorLink, href: "/teknik-merkez/fan-secici" },
-        { label: l.patents, href: "/teknik-merkez/patentlerimiz" },
-      ],
+      links: [],
     },
     {
       label: d.corporate,
@@ -265,10 +278,8 @@ function buildMenus(dict: CommonDict): MegaMenu[] {
         { label: l.whoWeAre, href: "/kurumsal/biz-kimiz" },
         { label: l.ourTeam, href: "/kurumsal/ekibimiz" },
         { label: l.references, href: "/kurumsal/referanslar" },
-        { label: l.ourPolicy, href: "/kurumsal/politikamiz" },
-        { label: l.pressRoom, href: "/kurumsal/basin-odasi" },
-        { label: l.news, href: "/kurumsal/haberler" },
-        { label: l.kvkk, href: "/kvkk" },
+        { label: mediaCenterLabel, href: "/kurumsal/medya-merkezi" },
+        { label: l.kvkk, href: "/legal" },
       ],
     },
     {
@@ -309,9 +320,9 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
   }, []);
 
   const menus = useMemo(() => {
-    const all = buildMenus(dict);
+    const all = buildMenus(dict, locale);
     if (!consentRestricted) return all;
-    return all.filter((m) => m.href !== "/teknik-merkez");
+    return all.filter((m) => !m.href.startsWith("/teknik-merkez"));
   }, [dict, consentRestricted]);
   /** Navbar stays white on all routes (no transparent / inverted hero overlay). */
   const inverted = false;
@@ -377,36 +388,51 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
             <li
               key={menu.label}
               className="relative min-w-0"
-              onMouseEnter={() => handleEnter(menu.label)}
-              onMouseLeave={handleLeave}
+              onMouseEnter={
+                menuIsDirectLink(menu) ? undefined : () => handleEnter(menu.label)
+              }
+              onMouseLeave={menuIsDirectLink(menu) ? undefined : handleLeave}
             >
-              <button
-                type="button"
-                className={`inline-flex max-w-full items-center gap-0.5 truncate px-1.5 py-2 text-meta font-medium tracking-normal transition-colors duration-200 xl:gap-1 xl:px-2 2xl:gap-1.5 2xl:px-3 ${
-                  openMenu === menu.label
-                    ? "text-primary"
-                    : inverted
+              {menuIsDirectLink(menu) ? (
+                <Link
+                  href={`/${locale}${menu.href}`}
+                  className={`inline-flex max-w-full items-center truncate px-1.5 py-2 text-meta font-medium tracking-normal transition-colors duration-200 xl:px-2 2xl:px-3 ${
+                    inverted
                       ? "text-white/80 hover:text-white"
                       : "text-neutral-700 hover:text-neutral-900"
-                }`}
-              >
-                {menu.label}
-                <svg
-                  className={`h-2.5 w-2.5 transition-transform duration-200 ${
-                    openMenu === menu.label
-                      ? "rotate-180 text-primary"
-                      : inverted
-                        ? "text-white/35"
-                        : "text-secondary/25"
                   }`}
-                  fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
+                  {menu.label}
+                </Link>
+              ) : (
+                <button
+                  type="button"
+                  className={`inline-flex max-w-full items-center gap-0.5 truncate px-1.5 py-2 text-meta font-medium tracking-normal transition-colors duration-200 xl:gap-1 xl:px-2 2xl:gap-1.5 2xl:px-3 ${
+                    openMenu === menu.label
+                      ? "text-primary"
+                      : inverted
+                        ? "text-white/80 hover:text-white"
+                        : "text-neutral-700 hover:text-neutral-900"
+                  }`}
+                >
+                  {menu.label}
+                  <svg
+                    className={`h-2.5 w-2.5 transition-transform duration-200 ${
+                      openMenu === menu.label
+                        ? "rotate-180 text-primary"
+                        : inverted
+                          ? "text-white/35"
+                          : "text-secondary/25"
+                    }`}
+                    fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </button>
+              )}
 
               {/* Mega Dropdown */}
-              {openMenu === menu.label && (
+              {!menuIsDirectLink(menu) && openMenu === menu.label && (
                 <div
                   className={`absolute top-full pt-4 start-0 ${isRtlLocale ? "" : "-ms-2"}`}
                   onMouseEnter={() => handleEnter(menu.label)}
@@ -642,27 +668,43 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
           <div className="space-y-1 px-4 py-4">
             {menus.map((menu) => (
               <div key={menu.label}>
-                <button
-                  type="button"
-                  onClick={() => setMobileExpanded(mobileExpanded === menu.label ? null : menu.label)}
-                  className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-start transition-colors hover:bg-gray-50"
-                >
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/8 text-primary">
-                    {menu.icon}
-                  </span>
-                  <div className="min-w-0 flex-1">
-                    <span className="text-sm font-semibold text-dark">{menu.label}</span>
-                    <span className="ms-2 text-[11px] text-secondary/35">{menu.desc}</span>
-                  </div>
-                  <svg
-                    className={`h-4 w-4 shrink-0 text-secondary/25 transition-transform duration-200 ${mobileExpanded === menu.label ? "rotate-180" : ""}`}
-                    fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"
+                {menuIsDirectLink(menu) ? (
+                  <Link
+                    href={`/${locale}${menu.href}`}
+                    onClick={() => setMobileOpen(false)}
+                    className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-start transition-colors hover:bg-gray-50"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </button>
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/8 text-primary">
+                      {menu.icon}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <span className="text-sm font-semibold text-dark">{menu.label}</span>
+                      <span className="ms-2 text-[11px] text-secondary/35">{menu.desc}</span>
+                    </div>
+                  </Link>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setMobileExpanded(mobileExpanded === menu.label ? null : menu.label)}
+                    className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-start transition-colors hover:bg-gray-50"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/8 text-primary">
+                      {menu.icon}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <span className="text-sm font-semibold text-dark">{menu.label}</span>
+                      <span className="ms-2 text-[11px] text-secondary/35">{menu.desc}</span>
+                    </div>
+                    <svg
+                      className={`h-4 w-4 shrink-0 text-secondary/25 transition-transform duration-200 ${mobileExpanded === menu.label ? "rotate-180" : ""}`}
+                      fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </button>
+                )}
 
-                {mobileExpanded === menu.label && (
+                {!menuIsDirectLink(menu) && mobileExpanded === menu.label && (
                   <div className="ms-11 space-y-0.5 border-s-2 border-primary/10 py-1 ps-4">
                     {menu.links.map((link) => {
                       const cozumSlug = link.href.replace(/^\/cozumler\//, "").replace(/^\//, "");

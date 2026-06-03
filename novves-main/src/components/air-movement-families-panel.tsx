@@ -3,6 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import {
+  PRODUCT_STANDARD_MEDIA_BG,
+  ProductStandardMedia,
+} from "@/components/product-standard-media";
 
 export type AirMovementFamily = {
   name: string;
@@ -154,7 +158,10 @@ export function AirMovementFamiliesPanel({
           <div className="flex min-h-0 flex-col p-5 sm:p-6 lg:p-8">
             {product.comingSoon ? (
               <div className="shrink-0 overflow-hidden rounded-[1.35rem] border border-dashed border-ink/15 bg-white/70 p-6 ring-1 ring-ink/[0.04]">
-                <div className="flex min-h-[240px] items-center justify-center rounded-2xl bg-gradient-to-b from-[#faf9f6] to-[#eceae4]">
+                <div
+                  className="flex min-h-[240px] items-center justify-center rounded-2xl"
+                  style={{ backgroundColor: PRODUCT_STANDARD_MEDIA_BG }}
+                >
                   <span className="rounded-full bg-ink/[0.06] px-4 py-2 text-sm font-medium text-secondary/50">{comingSoonLabel}</span>
                 </div>
               </div>
@@ -162,17 +169,18 @@ export function AirMovementFamiliesPanel({
               <div className="flex min-h-0 flex-col gap-4">
                 <Link
                   href={`${hrefBase}/${slug}`}
-                  className="group relative isolate h-[13.5rem] w-full shrink-0 overflow-hidden rounded-[1.35rem] border border-white/80 bg-gradient-to-b from-[#f8f7f3] to-[#e5e3dc] shadow-[0_18px_50px_-34px_rgba(15,23,42,0.18)] ring-1 ring-ink/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_28px_60px_-32px_rgba(15,23,42,0.26)] sm:h-60 lg:h-[14.5rem] lg:min-h-0 lg:flex-none"
+                  className="group relative isolate block h-[13.5rem] w-full shrink-0 overflow-hidden rounded-[1.35rem] shadow-[0_18px_50px_-34px_rgba(15,23,42,0.18)] ring-1 ring-ink/[0.06] transition-all duration-300 hover:-translate-y-1 hover:ring-primary/25 hover:shadow-[0_28px_60px_-32px_rgba(15,23,42,0.26)] sm:h-60 lg:h-[14.5rem] lg:min-h-0 lg:flex-none"
                 >
-                  <div className="absolute inset-x-0 top-0 z-[1] h-1 bg-gradient-to-r from-[#1d2f4d]/90 via-primary/75 to-[#8fa4bc]/85" />
-                  <Image
+                  <div className="absolute inset-x-0 top-0 z-[2] h-1 bg-gradient-to-r from-[#1d2f4d]/90 via-primary/75 to-[#8fa4bc]/85" />
+                  <ProductStandardMedia
                     src={img}
                     alt={product.name}
-                    fill
-                    className="object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-[1.04]"
+                    aspect="none"
+                    containerClassName="absolute inset-0 rounded-none ring-0"
+                    className="rounded-none"
                     sizes="(max-width:1024px) 100vw, 66vw"
                   />
-                  <div className="absolute right-4 top-4 rounded-full border border-white/20 bg-[#1b2c48]/85 px-3 py-1.5 text-[10px] font-bold text-white shadow-lg backdrop-blur-md">
+                  <div className="absolute right-4 top-4 z-[2] rounded-full border border-white/20 bg-[#1b2c48]/85 px-3 py-1.5 text-[10px] font-bold text-white shadow-lg backdrop-blur-md">
                     {(product.subModels || []).length} {modelsLabel}
                   </div>
                 </Link>

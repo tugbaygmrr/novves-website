@@ -15,6 +15,12 @@
     "i18n:fill-equals-en": "node scripts/fill-dict-from-donor-when-equals-en.mjs",
     "i18n:parity:fix": "node scripts/i18n-parity.mjs --fix",
     "i18n:debt": "node scripts/i18n-equals-ref.mjs",
+    "i18n:banner-descriptions": "node scripts/i18n-banner-descriptions.mjs",
+    "legal:export": "npx tsx scripts/legal-export-json.ts",
+    "i18n:legal": "node scripts/i18n-legal-tr-to-locales.mjs",
+    "i18n:legal:fresh": "node scripts/i18n-legal-tr-to-locales.mjs --fresh",
+    "i18n:legal:remaining": "node scripts/i18n-legal-tr-to-locales.mjs --fresh --locale kk,tg,es,zh,ur,lt,pl",
+    "legal:repair-types": "node scripts/legal-repair-block-types.mjs",
     "i18n:tr-to-kk": "node scripts/i18n-tr-to-kk.mjs",
     "i18n:tr-to-tg": "node scripts/i18n-tr-to-tg.mjs",
     "i18n:en-to-es": "node scripts/i18n-en-to-es.mjs",
@@ -33,6 +39,7 @@
     "search:setup": "node scripts/search-setup.mjs",
     "search:index": "node scripts/search-index-content.mjs",
     "admin:create": "node scripts/create-admin.mjs",
+    "iletisim:google-photos": "node scripts/fetch-iletisim-google-photos.mjs",
     "deploy": "bash scripts/deploy.sh",
     "pm2:start": "pm2 start ecosystem.config.cjs",
     "pm2:reload": "pm2 reload ecosystem.config.cjs --update-env"
@@ -62,6 +69,7 @@
     "@vitalets/google-translate-api": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

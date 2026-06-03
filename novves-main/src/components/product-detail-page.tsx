@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ProductStandardMedia } from "@/components/product-standard-media";
 import Link from "next/link";
 
 export type ProductModel = {
@@ -16,6 +17,11 @@ export type ProductDetailPageProps = {
   locale: string;
   dict: any;
 };
+
+function introParagraphs(intro: string): string[] {
+  const parts = intro.split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
+  return parts.length > 0 ? parts : [intro];
+}
 
 export function ProductDetailPage({
   title,
@@ -56,7 +62,14 @@ export function ProductDetailPage({
         <section className="bg-[#ecebe6] py-8 sm:py-10">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="rounded-2xl border border-ink/10 bg-white/80 p-6 shadow-[0_14px_38px_-30px_rgba(15,20,30,0.25)] sm:p-7">
-              <p className="text-base leading-7 text-secondary/80">{intro}</p>
+              {introParagraphs(intro).map((paragraph, index) => (
+                <p
+                  key={index}
+                  className={`text-base leading-7 text-secondary/80 ${index > 0 ? "mt-4" : ""}`}
+                >
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </section>
@@ -72,21 +85,19 @@ export function ProductDetailPage({
                 key={model.name}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white/95 shadow-[0_14px_38px_-28px_rgba(15,20,30,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_24px_52px_-28px_rgba(15,20,30,0.35)]"
               >
-                <div className="relative h-56 w-full overflow-hidden bg-white">
-                  <Image
-                    src={resolveModelImage(model.image)}
-                    alt={model.name}
-                    fill
-                    className="object-contain p-4 transition-transform duration-500 group-hover:scale-[1.03]"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col border-t border-ink/10 p-5">
-                  <h3 className="font-eurostile text-card font-bold leading-[1.05] tracking-[-0.02em] text-dark">{model.name}</h3>
-                  <p className="mt-1 text-sm font-medium text-primary">
+                <ProductStandardMedia
+                  src={resolveModelImage(model.image)}
+                  alt={model.name}
+                  aspect="none"
+                  containerClassName="h-56"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="flex min-h-0 flex-1 flex-col border-t border-ink/10 p-5">
+                  <h3 className="product-card-clamp-2 font-eurostile text-card font-bold leading-[1.05] tracking-[-0.02em] text-dark">{model.name}</h3>
+                  <p className="mt-1 truncate text-sm font-medium text-primary">
                     {model.type}
                   </p>
-                  <p className="mt-2 text-xs leading-5 text-secondary/62 line-clamp-3">
+                  <p className="product-card-clamp-3 mt-2 text-xs leading-5 text-secondary/62">
                     {model.description}
                   </p>
                   <div className="mt-auto pt-5">

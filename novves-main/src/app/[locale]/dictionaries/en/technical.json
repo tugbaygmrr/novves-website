@@ -89,6 +89,142 @@
       "title": "Need a technical document?",
       "subtitle": "Contact us for the catalog, technical data sheet or spec sheet you need.",
       "contactForm": "Contact Form"
+    },
+    "library": {
+      "brandTitle": "NOVVES TECHNICAL ARCHIVE",
+      "brandSubtitle": "Technical Archive",
+      "nav": {
+        "dashboard": "Dashboard",
+        "inventory": "Inventory",
+        "compliance": "Compliance",
+        "audit": "Audit"
+      },
+      "sidebar": {
+        "libraryName": "Novves Library",
+        "libraryTag": "Technical Repository",
+        "uploadAsset": "Upload Asset",
+        "hierarchy": "Hierarchy",
+        "collapseSidebar": "Collapse sidebar",
+        "expandSidebar": "Expand sidebar",
+        "tree": {
+          "documentLibrary": "Document Library",
+          "catalogs": "Catalogs",
+          "dataSheets": "Data Sheets",
+          "brochures": "Brochures",
+          "usageManuals": "Usage & Maintenance Manuals",
+          "certifications": "Certificates & Compliance",
+          "cadBim": "CAD / BIM / Technical Drawings",
+          "training": "Training Center",
+          "troubleshooting": "Troubleshooting",
+          "testPerformance": "Test & Performance Data",
+          "energyEfficiency": "Energy Efficiency"
+        }
+      },
+      "searchPlaceholder": "Search Technical Archive, CAD numbers, or keywords…",
+      "table": {
+        "category": "Category (IA)",
+        "documentNo": "Document No",
+        "documentName": "Document Name",
+        "status": "Status",
+        "statusActive": "Active",
+        "statusPassive": "Passive",
+        "statusCritical": "Critical",
+        "statusCurrent": "Current",
+        "statusApproved": "Approved",
+        "statusVideo": "Video"
+      },
+      "widgets": {
+        "emergencyTitle": "Emergency Fault Support",
+        "emergencyText": "Use the Troubleshooting panel to find quick solutions for critical system faults.",
+        "emergencyCta": "Open Solution Guide",
+        "complianceLabel": "Compliance Rate",
+        "complianceValue": "98%",
+        "efficiencyLabel": "Efficiency Class",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Asset Details",
+        "previewTag": "PREVIEW",
+        "docSummary": "Document Summary",
+        "fileFormat": "Format",
+        "revision": "Revision",
+        "lastModified": "Last Updated",
+        "revisionLogs": "Revision History",
+        "shareDocument": "Share",
+        "shareLink": "Link",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "Email",
+        "secureDownload": "Secure Download",
+        "secureDownloadNote": "Some technical documents may require authorization and a password.",
+        "downloadDocument": "Download Document",
+        "close": "Close panel"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Industrial Systems. Technical Documentation Division.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "security": "Security Audit"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Minor Text Adjustments",
+        "minorWhen": "Yesterday at 14:20",
+        "initialUpload": "Initial Upload",
+        "initialWhen": "Oct 10, 2024"
+      },
+      "emptyResults": "No documents match your search.",
+      "documents": [
+        {
+          "id": "cat-nv-2024-01",
+          "category": "Catalogs",
+          "code": "CAT-NV-2024-01",
+          "title": "Main Product Catalog v2",
+          "status": "active",
+          "highlight": true,
+          "treeCategory": "Catalogs"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Troubleshooting",
+          "code": "TS-FAN-003",
+          "title": "High Vibration Troubleshooting Guide",
+          "status": "critical",
+          "criticalTitle": true,
+          "treeCategory": "Troubleshooting"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD / BIM",
+          "code": "BIM-AXL-315",
+          "title": "315 Series 3D Revit Model",
+          "status": "current",
+          "treeCategory": "CAD / BIM / Technical Drawings"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "Energy Efficiency",
+          "code": "EFF-EC-2024",
+          "title": "EC Motor LCC Analysis",
+          "status": "active",
+          "treeCategory": "Energy Efficiency"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Certificates",
+          "code": "CE-12101-3-2024",
+          "title": "EN 12101-3 Conformity Certificate",
+          "status": "approved",
+          "treeCategory": "Certificates & Compliance"
+        },
+        {
+          "id": "web-24-05",
+          "category": "Training Center",
+          "code": "WEB-24-05",
+          "title": "Assembly Techniques Webinar Recording",
+          "status": "video",
+          "highlight": true,
+          "treeCategory": "Training Center"
+        }
+      ]
     }
   },
   "fanSecici": {

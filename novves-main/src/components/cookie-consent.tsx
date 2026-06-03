@@ -169,7 +169,7 @@ export function CookieConsent({ locale = "tr" }: { locale?: string }) {
             <p className="mt-3 text-[13px] leading-[1.65] text-ink/70">
               {t.desc}{" "}
               <Link
-                href={`/${loc}/kvkk/kisisel-verilerin-korunmasi`}
+                href={`/${loc}/privacy`}
                 className="font-medium text-primary underline underline-offset-2 transition-opacity hover:opacity-80"
               >
                 {t.learnMore}

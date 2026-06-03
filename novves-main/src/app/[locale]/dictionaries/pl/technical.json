@@ -89,6 +89,142 @@
       "title": "Potrzebujesz dokumentu technicznego?",
       "subtitle": "Skontaktuj się z nami, aby uzyskać potrzebny katalog, kartę danych technicznych lub specyfikację.",
       "contactForm": "Formularz kontaktowy"
+    },
+    "library": {
+      "brandTitle": "ARCHIWUM TECHNICZNE NOVVES",
+      "brandSubtitle": "Archiwum techniczne",
+      "nav": {
+        "dashboard": "Panel",
+        "inventory": "Spis",
+        "compliance": "Zgodność",
+        "audit": "Rewizja"
+      },
+      "sidebar": {
+        "libraryName": "Biblioteka Novves",
+        "libraryTag": "Repozytorium techniczne",
+        "uploadAsset": "Prześlij zasób",
+        "hierarchy": "Hierarchia",
+        "collapseSidebar": "Zwiń pasek boczny",
+        "expandSidebar": "Rozwiń pasek boczny",
+        "tree": {
+          "documentLibrary": "Biblioteka dokumentów",
+          "catalogs": "Katalogi",
+          "dataSheets": "Arkusze danych",
+          "brochures": "Broszury",
+          "usageManuals": "Instrukcje użytkowania i konserwacji",
+          "certifications": "Certyfikaty i zgodność",
+          "cadBim": "CAD/BIM/Rysunki Techniczne",
+          "training": "Centrum Szkoleniowe",
+          "troubleshooting": "Rozwiązywanie problemów",
+          "testPerformance": "Dane testowe i wydajnościowe",
+          "energyEfficiency": "Efektywność energetyczna"
+        }
+      },
+      "searchPlaceholder": "Przeszukaj archiwum techniczne, numery CAD lub słowa kluczowe…",
+      "table": {
+        "category": "Kategoria (IA)",
+        "documentNo": "Nr dokumentu",
+        "documentName": "Nazwa dokumentu",
+        "status": "Status",
+        "statusActive": "Aktywny",
+        "statusPassive": "Pasywny",
+        "statusCritical": "Krytyczny",
+        "statusCurrent": "Aktualny",
+        "statusApproved": "Zatwierdzony",
+        "statusVideo": "Wideo"
+      },
+      "widgets": {
+        "emergencyTitle": "Pomoc w przypadku awarii w sytuacjach awaryjnych",
+        "emergencyText": "Skorzystaj z panelu Rozwiązywanie problemów, aby znaleźć szybkie rozwiązania krytycznych usterek systemu.",
+        "emergencyCta": "Otwórz przewodnik po rozwiązaniach",
+        "complianceLabel": "Wskaźnik zgodności",
+        "complianceValue": "98%",
+        "efficiencyLabel": "Klasa efektywności",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Szczegóły zasobu",
+        "previewTag": "PREVIEW",
+        "docSummary": "Podsumowanie dokumentu",
+        "fileFormat": "Format",
+        "revision": "Rewizja",
+        "lastModified": "Ostatnia aktualizacja",
+        "revisionLogs": "Historia wersji",
+        "shareDocument": "Udział",
+        "shareLink": "Połączyć",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "E-mail",
+        "secureDownload": "Bezpieczne pobieranie",
+        "secureDownloadNote": "Niektóre dokumenty techniczne mogą wymagać autoryzacji i hasła.",
+        "downloadDocument": "Pobierz dokument",
+        "close": "Zamknij panel"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Industrial Systems. Dział Dokumentacji Technicznej.",
+        "privacy": "Polityka prywatności",
+        "terms": "Warunki świadczenia usług",
+        "security": "Audyt bezpieczeństwa"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Drobne poprawki tekstu",
+        "minorWhen": "Wczoraj o 14:20",
+        "initialUpload": "Początkowe przesyłanie",
+        "initialWhen": "10 października 2024 r"
+      },
+      "emptyResults": "Żaden dokument nie pasuje do Twojego wyszukiwania.",
+      "documents": [
+        {
+          "id": "kot-nv-2024-01",
+          "category": "Katalogi",
+          "code": "CAT-NV-2024-01",
+          "title": "Główny Katalog Produktów v2",
+          "status": "aktywny",
+          "highlight": true,
+          "treeCategory": "Katalogi"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Rozwiązywanie problemów",
+          "code": "TS-FAN-003",
+          "title": "Przewodnik rozwiązywania problemów z wysokimi wibracjami",
+          "status": "krytyczny",
+          "criticalTitle": true,
+          "treeCategory": "Rozwiązywanie problemów"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD/BIM-a",
+          "code": "BIM-AXL-315",
+          "title": "Model 3D programu Revit serii 315",
+          "status": "aktualny",
+          "treeCategory": "CAD/BIM/Rysunki Techniczne"
+        },
+        {
+          "id": "efekt-ec-2024",
+          "category": "Efektywność energetyczna",
+          "code": "EFF-EC-2024",
+          "title": "Analiza LCC silnika EC",
+          "status": "aktywny",
+          "treeCategory": "Efektywność energetyczna"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Certyfikaty",
+          "code": "CE-12101-3-2024",
+          "title": "Certyfikat zgodności EN 12101-3",
+          "status": "zatwierdzony",
+          "treeCategory": "Certyfikaty i zgodność"
+        },
+        {
+          "id": "web-24-05",
+          "category": "Centrum Szkoleniowe",
+          "code": "WEB-24-05",
+          "title": "Nagranie seminarium internetowego dotyczącego technik montażu",
+          "status": "wideo",
+          "highlight": true,
+          "treeCategory": "Centrum Szkoleniowe"
+        }
+      ]
     }
   },
   "fanSecici": {
@@ -109,7 +245,7 @@
     },
     "comingSoon": {
       "title": "Już wkrótce",
-      "text": "Trwają prace nad internetowymi narzędziami doboru wentylatorów i sprzętu. Wkrótce dostępne będą narzędzia umożliwiające wybór najbardziej odpowiedniego sprzętu na podstawie natężenia przepływu, ciśnienia i rodzaju zastosowania."
+      "text": "Trwają prace nad narzędziami online doboru wentylatorów i sprzętu. Wkrótce dostępne będą narzędzia umożliwiające wybór najbardziej odpowiedniego sprzętu na podstawie natężenia przepływu, ciśnienia i rodzaju zastosowania."
     },
     "toolTypes": {
       "sectionLabel": "Narzędzia",

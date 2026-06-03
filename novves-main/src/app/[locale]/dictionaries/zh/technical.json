@@ -1,7 +1,7 @@
 {
   "blog": {
     "meta": {
-      "title": "技术文章 | Novves",
+      "title": "技术文章 |诺维斯",
       "description": "NOVVES 技术文章 - 法规变化、行业技术论文。"
     },
     "breadcrumb": {
@@ -47,7 +47,7 @@
   },
   "dokumanKutuphanesi": {
     "meta": {
-      "title": "文献库| Novves",
+      "title": "文献库|诺维斯",
       "description": "NOVVES 文档库 - 目录、技术数据表和规格表。"
     },
     "breadcrumb": {
@@ -89,11 +89,147 @@
       "title": "需要技术文件吗？",
       "subtitle": "请联系我们获取您需要的目录、技术数据表或规格表。",
       "contactForm": "联系表"
+    },
+    "library": {
+      "brandTitle": "NOVVES 技术档案",
+      "brandSubtitle": "技术档案",
+      "nav": {
+        "dashboard": "仪表板",
+        "inventory": "存货",
+        "compliance": "遵守",
+        "audit": "审计"
+      },
+      "sidebar": {
+        "libraryName": "诺维斯图书馆",
+        "libraryTag": "技术资料库",
+        "uploadAsset": "上传资源",
+        "hierarchy": "等级制度",
+        "collapseSidebar": "折叠侧边栏",
+        "expandSidebar": "展开侧边栏",
+        "tree": {
+          "documentLibrary": "文档库",
+          "catalogs": "目录",
+          "dataSheets": "数据表",
+          "brochures": "宣传册",
+          "usageManuals": "使用和维护手册",
+          "certifications": "证书与合规性",
+          "cadBim": "CAD / BIM / 技术图纸",
+          "training": "培训中心",
+          "troubleshooting": "故障排除",
+          "testPerformance": "测试和性能数据",
+          "energyEfficiency": "能源效率"
+        }
+      },
+      "searchPlaceholder": "搜索技术档案、CAD 编号或关键字...",
+      "table": {
+        "category": "类别（IA）",
+        "documentNo": "文件编号",
+        "documentName": "文件名称",
+        "status": "地位",
+        "statusActive": "积极的",
+        "statusPassive": "被动的",
+        "statusCritical": "批判的",
+        "statusCurrent": "当前的",
+        "statusApproved": "得到正式认可的",
+        "statusVideo": "视频"
+      },
+      "widgets": {
+        "emergencyTitle": "紧急故障支持",
+        "emergencyText": "使用“故障排除”面板可以快速找到关键系统故障的解决方案。",
+        "emergencyCta": "打开解决方案指南",
+        "complianceLabel": "达标率",
+        "complianceValue": "98%",
+        "efficiencyLabel": "效率等级",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "资产详情",
+        "previewTag": "PREVIEW",
+        "docSummary": "文件摘要",
+        "fileFormat": "格式",
+        "revision": "修订",
+        "lastModified": "最后更新",
+        "revisionLogs": "修订历史",
+        "shareDocument": "分享",
+        "shareLink": "关联",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "电子邮件",
+        "secureDownload": "安全下载",
+        "secureDownloadNote": "某些技术文档可能需要授权和密码。",
+        "downloadDocument": "下载文件",
+        "close": "关闭面板"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves 工业系统。技术文档部。",
+        "privacy": "隐私政策",
+        "terms": "服务条款",
+        "security": "安全审计"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "细微的文本调整",
+        "minorWhen": "昨天 14:20",
+        "initialUpload": "初始上传",
+        "initialWhen": "2024 年 10 月 10 日"
+      },
+      "emptyResults": "没有符合您搜索的文档。",
+      "documents": [
+        {
+          "id": "猫-NV-2024-01",
+          "category": "目录",
+          "code": "CAT-NV-2024-01",
+          "title": "主要产品目录v2",
+          "status": "积极的",
+          "highlight": true,
+          "treeCategory": "目录"
+        },
+        {
+          "id": "TS-风扇-003",
+          "category": "故障排除",
+          "code": "TS-FAN-003",
+          "title": "高振动故障排除指南",
+          "status": "批判的",
+          "criticalTitle": true,
+          "treeCategory": "故障排除"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "计算机辅助设计/建筑信息模型",
+          "code": "BIM-AXL-315",
+          "title": "315系列3D Revit模型",
+          "status": "当前的",
+          "treeCategory": "CAD / BIM / 技术图纸"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "能源效率",
+          "code": "EFF-EC-2024",
+          "title": "EC电机LCC分析",
+          "status": "积极的",
+          "treeCategory": "能源效率"
+        },
+        {
+          "id": "CE-12101-3-2024",
+          "category": "证书",
+          "code": "CE-12101-3-2024",
+          "title": "EN 12101-3 合格证书",
+          "status": "得到正式认可的",
+          "treeCategory": "证书与合规性"
+        },
+        {
+          "id": "网络-24-05",
+          "category": "培训中心",
+          "code": "WEB-24-05",
+          "title": "装配技术网络研讨会录音",
+          "status": "视频",
+          "highlight": true,
+          "treeCategory": "培训中心"
+        }
+      ]
     }
   },
   "fanSecici": {
     "meta": {
-      "title": "风扇选择器| Novves",
+      "title": "风扇选择器|诺维斯",
       "description": "NOVVES 在线风机和设备选择工具。"
     },
     "breadcrumb": {
@@ -139,7 +275,7 @@
   },
   "patentlerimiz": {
     "meta": {
-      "title": "我们的专利 | Novves",
+      "title": "我们的专利 |诺维斯",
       "description": "NOVVES 专利和注册技术。"
     },
     "breadcrumb": {

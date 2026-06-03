@@ -89,6 +89,142 @@
       "title": "Teknik doküman talebiniz mi var?",
       "subtitle": "İhtiyacınız olan katalog, teknik föy veya datasheet için bizimle iletişime geçebilirsiniz.",
       "contactForm": "İletişim Formu"
+    },
+    "library": {
+      "brandTitle": "NOVVES TEKNİK ARŞİV",
+      "brandSubtitle": "Technical Archive",
+      "nav": {
+        "dashboard": "Kontrol Paneli",
+        "inventory": "Envanter",
+        "compliance": "Uyum",
+        "audit": "Denetim"
+      },
+      "sidebar": {
+        "libraryName": "Novves Kütüphanesi",
+        "libraryTag": "Teknik Depo",
+        "uploadAsset": "Varlık Yükle",
+        "hierarchy": "HİYERARŞİ",
+        "collapseSidebar": "Kenar çubuğunu daralt",
+        "expandSidebar": "Kenar çubuğunu genişlet",
+        "tree": {
+          "documentLibrary": "Doküman Kütüphanesi",
+          "catalogs": "Kataloglar",
+          "dataSheets": "Veri Sayfaları",
+          "brochures": "Broşürler",
+          "usageManuals": "Kullanım ve Bakım Kılavuzları",
+          "certifications": "Sertifikalar ve Uygunluk",
+          "cadBim": "CAD / BIM / Teknik Çizimler",
+          "training": "Eğitim Merkezi",
+          "troubleshooting": "Arıza Giderme",
+          "testPerformance": "Test ve Performans Verileri",
+          "energyEfficiency": "Enerji Verimliliği"
+        }
+      },
+      "searchPlaceholder": "Teknik Arşiv, CAD numaraları veya anahtar kelimelerde ara…",
+      "table": {
+        "category": "Kategori (IA)",
+        "documentNo": "Doküman No",
+        "documentName": "Doküman Adı",
+        "status": "Durum",
+        "statusActive": "Aktif",
+        "statusPassive": "Pasif",
+        "statusCritical": "Kritik",
+        "statusCurrent": "Güncel",
+        "statusApproved": "Onaylı",
+        "statusVideo": "Video"
+      },
+      "widgets": {
+        "emergencyTitle": "Acil Arıza Desteği",
+        "emergencyText": "Sistemde oluşan kritik arızalar için Arıza Giderme panelini kullanarak hızlı çözüm bulun.",
+        "emergencyCta": "Çözüm Rehberini Aç",
+        "complianceLabel": "Uygunluk Oranı",
+        "complianceValue": "%98",
+        "efficiencyLabel": "Verimlilik Sınıfı",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Varlık Detayları",
+        "previewTag": "ÖNİZLEME",
+        "docSummary": "Doküman Özeti",
+        "fileFormat": "Format",
+        "revision": "Revizyon",
+        "lastModified": "Son Güncelleme",
+        "revisionLogs": "Revizyon Geçmişi",
+        "shareDocument": "Paylaş",
+        "shareLink": "Bağlantı",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "E-posta",
+        "secureDownload": "Güvenli İndirme",
+        "secureDownloadNote": "Bazı teknik dokümanlar için yetki ve şifre gerekebilir.",
+        "downloadDocument": "Dokümanı İndir",
+        "close": "Paneli kapat"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Industrial Systems. Teknik Dokümantasyon Birimi.",
+        "privacy": "Gizlilik Politikası",
+        "terms": "Kullanım Şartları",
+        "security": "Güvenlik Denetimi"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Metin Düzenlemeleri",
+        "minorWhen": "Dün 14:20",
+        "initialUpload": "İlk Yükleme",
+        "initialWhen": "10 Ekim 2024"
+      },
+      "emptyResults": "Aramanızla eşleşen doküman bulunamadı.",
+      "documents": [
+        {
+          "id": "cat-nv-2024-01",
+          "category": "Kataloglar",
+          "code": "CAT-NV-2024-01",
+          "title": "Ana Ürün Kataloğu v2",
+          "status": "active",
+          "highlight": true,
+          "treeCategory": "Kataloglar"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Arıza Giderme",
+          "code": "TS-FAN-003",
+          "title": "Yüksek Titreşim Giderme Kılavuzu",
+          "status": "critical",
+          "criticalTitle": true,
+          "treeCategory": "Arıza Giderme"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD / BIM",
+          "code": "BIM-AXL-315",
+          "title": "315 Serisi 3D Revit Modeli",
+          "status": "current",
+          "treeCategory": "CAD / BIM / Teknik Çizimler"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "Enerji Verimliliği",
+          "code": "EFF-EC-2024",
+          "title": "EC Motor LCC Analizi",
+          "status": "active",
+          "treeCategory": "Enerji Verimliliği"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Sertifikalar",
+          "code": "CE-12101-3-2024",
+          "title": "EN 12101-3 Uygunluk Belgesi",
+          "status": "approved",
+          "treeCategory": "Sertifikalar ve Uygunluk"
+        },
+        {
+          "id": "web-24-05",
+          "category": "Eğitim Merkezi",
+          "code": "WEB-24-05",
+          "title": "Montaj Teknikleri Webinar Kaydı",
+          "status": "video",
+          "highlight": true,
+          "treeCategory": "Eğitim Merkezi"
+        }
+      ]
     }
   },
   "fanSecici": {

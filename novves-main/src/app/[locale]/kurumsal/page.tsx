@@ -38,18 +38,31 @@ const corporateItems: { key: string; slug: string }[] = [
     slug: "sertifikalar",
   },
   {
-    key: "politikamiz",
-    slug: "politikamiz",
-  },
-  {
-    key: "basinOdasi",
-    slug: "basin-odasi",
-  },
-  {
-    key: "haberler",
-    slug: "haberler",
+    key: "medyaMerkezi",
+    slug: "medya-merkezi",
   },
 ];
+
+function mediaCenterLabelForLocale(locale: string): string {
+  const map: Record<string, string> = {
+    tr: "Medya Merkezi",
+    en: "Media Center",
+    ru: "Медиа-центр",
+    ar: "مركز الوسائط",
+    de: "Medienzentrum",
+    it: "Centro Media",
+    fr: "Centre Média",
+    az: "Media Mərkəzi",
+    kk: "Медиа орталығы",
+    tg: "Маркази медиа",
+    es: "Centro de Medios",
+    zh: "媒体中心",
+    ur: "میڈیا سینٹر",
+    lt: "Medijos Centras",
+    pl: "Centrum Mediów",
+  };
+  return map[locale] ?? "Media Center";
+}
 
 export default async function KurumsalPage({
   params,
@@ -64,6 +77,7 @@ export default async function KurumsalPage({
   const s = dict.products.shared;
 
   const getCorporateName = (key: string) => {
+    if (key === "medyaMerkezi") return mediaCenterLabelForLocale(locale);
     const page = corporate[key as keyof typeof corporate] as Record<string, unknown>;
     if (!page) return key;
     if (typeof page.breadcrumbPage === "string") return page.breadcrumbPage;

@@ -64,36 +64,197 @@
     "heroDesc": "لاحتياجات التهوية الصناعية والمريحة",
     "heroDescSuffix": "عائلة منتجات.",
     "stats": [
-      { "value": "1,200+", "label": "تنوع المنتجات" },
-      { "value": "12", "label": "عائلات المنتجات" },
-      { "value": "EN 12101-3", "label": "معتمد" },
-      { "value": "F300/2H", "label": "مقاومة الحريق" }
+      {
+        "value": "1,200+",
+        "label": "تنوع المنتجات"
+      },
+      {
+        "value": "12",
+        "label": "عائلات المنتجات"
+      },
+      {
+        "value": "EN 12101-3",
+        "label": "معتمد"
+      },
+      {
+        "value": "F300/2H",
+        "label": "مقاومة الحريق"
+      }
     ],
     "products": [
-      { "name": "DRAGONFLY", "type": "مروحة استخراج الدخان والحرارة", "subModels": ["DF T", "DF TS", "DF C", "DF R", "DF RV", "DF TJF", "DF JR", "DF JA", "DF WH", "DF RH"] },
-      { "name": "MARLIN", "type": "مروحة محورية", "subModels": ["MARLIN", "MARLIN S", "MARLIN B", "MARLIN 2S"] },
-      { "name": "BEAR", "type": "مروحة ATEX", "subModels": ["BEAR REB EX", "BEAR RVS EX", "BEAR RHS EX", "BEAR T", "BEAR C", "BEAR R", "BEAR W", "BEAR LPF EX", "BEAR TB"] },
-      { "name": "NAUTILUS", "type": "مروحة طارفة صناعية", "subModels": ["NAUTILUS LPF", "NAUTILUS MPF", "NAUTILUS HPF", "NAUTILUS SILENCE"] },
-      { "name": "HUMMINGBIRD", "type": "مروحة EC", "subModels": ["HUMMINGBIRD DRB EC", "HUMMINGBIRD RRV EC", "HUMMINGBIRD RRH EC", "HUMMINGBIRD CBP EC"] },
-      { "name": "HERON", "type": "مروحة سقفية", "subModels": ["HERON RH", "HERON RHS", "HERON RV", "HERON RVS", "HERON AH", "HERON AV", "HERON H"] },
-      { "name": "OWL", "type": "مروحة حائطية", "subModels": ["OWL RER", "OWL R", "OWL H"] },
-      { "name": "SEAHORSE", "type": "مروحة حمام", "subModels": ["SEAHORSE AP", "SEAHORSE RP V1", "SEAHORSE RP V2"] },
-      { "name": "KOI", "type": "مروحة قناة", "subModels": ["KOI CB", "KOI RB", "KOI REB", "KOI X"] },
-      { "name": "TURTLE", "type": "مروحة غرفة ضاغطة", "subModels": ["TURTLE B", "TURTLE BPA", "TURTLE F", "TURTLE BP", "TURTLE A"] },
-      { "name": "BUTTERFLY", "type": "مروحة شفط مطبخ", "subModels": ["BUTTERFLY ECO", "BUTTERFLY ECO HR"] },
-      { "name": "FOX", "type": "مروحة ملجأ", "subModels": ["FOX D", "FOX C"] },
-      { "name": "CHICKEN", "type": "مروحة دواجن", "comingSoon": true },
-      { "name": "ELEPHANT", "type": "جمع غبار", "comingSoon": true }
+      {
+        "name": "DRAGONFLY",
+        "type": "مروحة استخراج الدخان والحرارة",
+        "subModels": [
+          "DF T",
+          "DF TS",
+          "DF C",
+          "DF R",
+          "DF RV",
+          "DF TJF",
+          "DF JR",
+          "DF JA",
+          "DF WH",
+          "DF RH"
+        ]
+      },
+      {
+        "name": "MARLIN",
+        "type": "مروحة محورية",
+        "subModels": [
+          "MARLIN",
+          "MARLIN S",
+          "MARLIN B",
+          "MARLIN 2S"
+        ]
+      },
+      {
+        "name": "BEAR",
+        "type": "مروحة ATEX",
+        "subModels": [
+          "BEAR REB EX",
+          "BEAR RVS EX",
+          "BEAR RHS EX",
+          "BEAR T",
+          "BEAR C",
+          "BEAR R",
+          "BEAR W",
+          "BEAR LPF EX",
+          "BEAR TB"
+        ]
+      },
+      {
+        "name": "NAUTILUS",
+        "type": "مروحة طارفة صناعية",
+        "subModels": [
+          "NAUTILUS LPF",
+          "NAUTILUS MPF",
+          "NAUTILUS HPF",
+          "NAUTILUS SILENCE"
+        ]
+      },
+      {
+        "name": "HUMMINGBIRD",
+        "type": "مروحة EC",
+        "subModels": [
+          "HUMMINGBIRD DRB EC",
+          "HUMMINGBIRD RRV EC",
+          "HUMMINGBIRD RRH EC",
+          "HUMMINGBIRD CBP EC"
+        ]
+      },
+      {
+        "name": "HERON",
+        "type": "مروحة سقفية",
+        "subModels": [
+          "HERON RH",
+          "HERON RHS",
+          "HERON RV",
+          "HERON RVS",
+          "HERON AH",
+          "HERON AV",
+          "HERON H"
+        ]
+      },
+      {
+        "name": "OWL",
+        "type": "مروحة حائطية",
+        "subModels": [
+          "OWL RER",
+          "OWL R",
+          "OWL H"
+        ]
+      },
+      {
+        "name": "SEAHORSE",
+        "type": "مروحة حمام",
+        "subModels": [
+          "SEAHORSE AP",
+          "SEAHORSE RP V1",
+          "SEAHORSE RP V2"
+        ]
+      },
+      {
+        "name": "KOI",
+        "type": "مروحة قناة",
+        "subModels": [
+          "KOI CB",
+          "KOI RB",
+          "KOI REB",
+          "KOI X"
+        ]
+      },
+      {
+        "name": "TURTLE",
+        "type": "مروحة غرفة ضاغطة",
+        "subModels": [
+          "TURTLE B",
+          "TURTLE BPA",
+          "TURTLE F",
+          "TURTLE BP",
+          "TURTLE A"
+        ]
+      },
+      {
+        "name": "BUTTERFLY",
+        "type": "مروحة شفط مطبخ",
+        "subModels": [
+          "BUTTERFLY ECO",
+          "BUTTERFLY ECO HR"
+        ]
+      },
+      {
+        "name": "FOX",
+        "type": "مروحة ملجأ",
+        "subModels": [
+          "FOX D",
+          "FOX C"
+        ]
+      },
+      {
+        "name": "CHICKEN",
+        "type": "مروحة دواجن",
+        "comingSoon": true
+      },
+      {
+        "name": "ELEPHANT",
+        "type": "جمع غبار",
+        "comingSoon": true
+      }
     ],
     "otherCategories": [
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ],
     "ctaDesc": "تواصل مع فريق الهندسة الخبير لاختيار الحل الأنسب لمشروعك من بين أكثر من 1,200 تنوع منتج."
   },
@@ -101,23 +262,46 @@
     "title": "تكييف الهواء",
     "titleFirst": "تكييف",
     "titleHighlight": "الهواء",
-    "pills": ["3 عائلات منتجات", "تكوين وحدات", "مروحة EC وطارفة", "ترشيح HEPA"],
+    "pills": [
+      "3 عائلات منتجات",
+      "تكوين وحدات",
+      "مروحة EC وطارفة",
+      "ترشيح HEPA"
+    ],
     "tiger": {
       "label": "وحدة معالجة الهواء",
       "desc": "حل وحدة معالجة هواء بتصميم وحدات ومكونات عالية كفاءة الطاقة وأداء تشغيل هادئ في نطاق تدفق 500 – 125,000 م³/س.",
       "specs": [
-        { "label": "التدفق", "value": "500–125K m³/h" },
-        { "label": "الضغط", "value": "10–3,000 Pa" },
-        { "label": "الهيكل", "value": "ألومنيوم معالج أنوديكاً" }
+        {
+          "label": "التدفق",
+          "value": "500–125K m³/h"
+        },
+        {
+          "label": "الضغط",
+          "value": "10–3,000 Pa"
+        },
+        {
+          "label": "الهيكل",
+          "value": "ألومنيوم معالج أنوديكاً"
+        }
       ]
     },
     "dolphin": {
       "label": "وحدة إزالة رطوبة المسابح",
       "desc": "يمنع أضرار الرطوبة لهياكل المباني في المسابح الداخلية مع تعظيم راحة المستخدمين. يتميز بكفاءة طاقة عالية وبناء طويل الأمد وتشغيل هادئ.",
       "specs": [
-        { "label": "السعة", "value": "6 طرازات" },
-        { "label": "التدفق", "value": "3,000–9,000 m³/h" },
-        { "label": "مساحة المسبح", "value": "50–250 m²" }
+        {
+          "label": "السعة",
+          "value": "6 طرازات"
+        },
+        {
+          "label": "التدفق",
+          "value": "3,000–9,000 m³/h"
+        },
+        {
+          "label": "مساحة المسبح",
+          "value": "50–250 m²"
+        }
       ]
     },
     "caracal": {
@@ -126,14 +310,38 @@
     },
     "ctaDesc": "فريقنا الفني جاهز لتقديم حل تكييف الهواء الأنسب لك.",
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ]
   },
   "sogutmaVeIsitma": {
@@ -144,21 +352,70 @@
     "comingSoonNotice": "ستُنشر منتجات هذه الفئة بالتفصيل قريباً. للمعلومات الفنية وعروض الأسعار",
     "comingSoonLink": "اتصل بنا",
     "products": [
-      { "name": "CHILLER (Polar Bear)", "type": "وحدة تبريد", "subModels": [] },
-      { "name": "OUTDOOR UNITS", "type": "وحدة تبريد", "subModels": [] },
-      { "name": "INDOOR UNITS", "type": "وحدة تبريد", "subModels": [] },
-      { "name": "ELECTRIC HEATERS", "type": "سخان كهربائي", "subModels": ["EH (Rectangular)", "EHC (Cylindrical)"] },
-      { "name": "WATER COIL", "type": "ملف", "subModels": ["WC"] }
+      {
+        "name": "CHILLER (Polar Bear)",
+        "type": "وحدة تبريد",
+        "subModels": []
+      },
+      {
+        "name": "OUTDOOR UNITS",
+        "type": "وحدة تبريد",
+        "subModels": []
+      },
+      {
+        "name": "INDOOR UNITS",
+        "type": "وحدة تبريد",
+        "subModels": []
+      },
+      {
+        "name": "ELECTRIC HEATERS",
+        "type": "سخان كهربائي",
+        "subModels": [
+          "EH (Rectangular)",
+          "EHC (Cylindrical)"
+        ]
+      },
+      {
+        "name": "WATER COIL",
+        "type": "ملف",
+        "subModels": [
+          "WC"
+        ]
+      }
     ],
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ]
   },
   "havaYonetimi": {
@@ -169,17 +426,53 @@
     "hound": {
       "label": "سدادة الهواء",
       "desc": "سلسلة سدادات مصممة لأقصى تحكم وأمان في أكثر نقاط أنظمة التهوية والسلامة من الحريق حرجية.",
-      "subModels": ["MSD", "MSFD-R", "MSFD-B", "SFD-B", "SFD-R", "RSFD-B", "RSFD-Drain-B", "FFD", "MFD", "RD", "GS"]
+      "subModels": [
+        "MSD",
+        "MSFD-R",
+        "MSFD-B",
+        "SFD-B",
+        "SFD-R",
+        "RSFD-B",
+        "RSFD-Drain-B",
+        "FFD",
+        "MFD",
+        "RD",
+        "GS"
+      ]
     },
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ]
   },
   "havaDagitimi": {
@@ -191,22 +484,62 @@
       "label": "شبكات وموزعات، إلخ",
       "desc": "طرازات متعددة وحلول مخصصة لجميع احتياجات توزيع الهواء.",
       "subModels": [
-        "ALPACA-GL-SD", "ALPACA-GL-DD", "ALPACA-GL-RA", "ALPACA-GL-PRF", "ALPACA-GL-OB",
-        "ALPACA-DF-SQ", "ALPACA-DF-CR", "ALPACA-DF-LS", "ALPACA-DF-JET", "ALPACA-DF-ADJ",
-        "ALPACA-LV-FX", "ALPACA-LV-ADJ", "ALPACA-LV-WP", "ALPACA-LV-AC",
-        "ALPACA-AM-SQ", "ALPACA-AM-CR", "ALPACA-AM-ADJ",
-        "ALPACA-SP-FR", "ALPACA-SP-DEC", "ALPACA-SP-AC", "ALPACA-SP-JET"
+        "ALPACA-GL-SD",
+        "ALPACA-GL-DD",
+        "ALPACA-GL-RA",
+        "ALPACA-GL-PRF",
+        "ALPACA-GL-OB",
+        "ALPACA-DF-SQ",
+        "ALPACA-DF-CR",
+        "ALPACA-DF-LS",
+        "ALPACA-DF-JET",
+        "ALPACA-DF-ADJ",
+        "ALPACA-LV-FX",
+        "ALPACA-LV-ADJ",
+        "ALPACA-LV-WP",
+        "ALPACA-LV-AC",
+        "ALPACA-AM-SQ",
+        "ALPACA-AM-CR",
+        "ALPACA-AM-ADJ",
+        "ALPACA-SP-FR",
+        "ALPACA-SP-DEC",
+        "ALPACA-SP-AC",
+        "ALPACA-SP-JET"
       ]
     },
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ]
   },
   "havaFiltrasyonu": {
@@ -218,19 +551,50 @@
       "label": "سلسلة المرشحات",
       "desc": "طرازات مرشحات متعددة وحلول مخصصة لجميع احتياجات ترشيح الهواء.",
       "subModels": [
-        "SCALLOP PF", "SCALLOP MF", "SCALLOP GF", "SCALLOP ABF", "SCALLOP CF",
-        "SCALLOP BF", "SCALLOP HP", "SCALLOP UF", "SCALLOP FF"
+        "SCALLOP PF",
+        "SCALLOP MF",
+        "SCALLOP GF",
+        "SCALLOP ABF",
+        "SCALLOP CF",
+        "SCALLOP BF",
+        "SCALLOP HP",
+        "SCALLOP UF",
+        "SCALLOP FF"
       ]
     },
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ]
   },
   "aksesuarlar": {
@@ -240,47 +604,195 @@
     "productCount": "منتجات",
     "ctaTitle": "تبحث عن الإكسسوار المناسب لمشروعك؟",
     "accessories": [
-      { "name": "عازل اهتزاز زنبركي", "image": "/images/products/yayli-titresim-izolatoru.png", "description": "تُستخدم عوازل الاهتزاز الزنبركية في أنظمة التهوية والتكييف وتركيبات المعدات الميكانيكية لتقليل الاهتزازات المنخفضة التي قد تنتقل من النظام إلى الأرض أو البيئة المحيطة." },
-      { "name": "أقدام تثبيت AE SF", "image": "/images/products/ae-sf-baglanti-ayaklari.jpg", "description": "أقدام التثبيت عناصر تثبيت عالية القوة مصممة لتثبيت المراوح بأمان على الأرض أو السطح الداعم وفق متطلبات المشروع." },
-      { "name": "AE PM شبكة حماية سلكية", "image": "/images/products/ae-pm-tel-kafes.jpg", "description": "شبكات الحماية مصنوعة من سلك فولاذي عالي القوة، لضمان سلامة المستخدم على جانب الشفط أو الطرد في أنظمة المراوح ولمنع دخول أجسام غريبة إلى منطقة التشغيل." },
-      { "name": "AE IC مخروط مدخل", "image": "/images/products/ae-ic-giris-konisi.jpg", "description": "سلسلة AE IC لمخاريط المدخل مصممة لتحسين تدفق الهواء على جانب الشفط وتقليل الاضطراب وزيادة كفاءة النظام." },
-      { "name": "AE CF شفة مقابلة", "image": "/images/products/ae-cf-karsi-flans.jpg", "description": "سلسلة AE CF للشف المقابلة معدات اتصال مقاومة لدرجات الحرارة العالية لربط المراوح بنظام القنوات وضمان عدم تسرب الهواء." },
-      { "name": "AE FJF شفة مقابلة لوصل مرن", "image": "/images/products/ae-fjf.png", "description": "سلسلة AE FJF للشف المقابلة للوصل المرن عناصر اتصال خاصة لمنع نقل الاهتزاز بين المروحة والقنوات وتقليل تأثير التمدد وتوفير بيئة تشغيل أهدأ." },
-      { "name": "AE FJF فئة F400 شفة مقابلة لوصل مرن", "image": "/images/products/ae-fjf.png", "description": "سلسلة AE FJF فئة F400 مصممة لاتصال مرن وآمن ومحكم الهواء بين المروحة والقنوات في تطبيقات مقاومة للحريق." },
-      { "name": "AE FJ2F لوصل مرن بشف مقابل مزدوج", "image": "/images/products/ae-fj2f.jpg", "description": "لوصل مرن بشف مقابل على الطرفين لاستيعاب الاهتزاز والتمدد وأخطاء التركيب بين أنظمة المراوح والقنوات." },
-      { "name": "AE FJ2F F400 لوصل مرن بشف مزدوج", "image": "/images/products/ae-fj2f.jpg", "description": "سلسلة AE FJ2F-HR حلول لوصل مرن بشف مزدوج بمقاومة حرارة عالية للأنظمة التي تتطلب مقاومة حريق." },
-      { "name": "AE S-D100 كاتم صوت دائري", "image": "/images/products/ae-sd100.jpg", "description": "سلسلة AE S-D100 كاتمات صوت دائرية عالية الأداء للتحكم الصوتي وتخفيض الضوضاء وتحسين الراحة في أنظمة التهوية." },
-      { "name": "AE RS كاتم صوت قناة مستطيلة", "image": "/images/products/ae-rs.jpg", "description": "سلسلة AE RS كاتمات صوت قناة مستطيلة عالية الكفاءة لتقليل ضوضاء تدفق الهواء وتحسين الراحة الصوتية في القنوات." },
-      { "name": "AE-SS كاتم صوت مقبس", "image": "/images/products/emniyet-salteri.jpg", "description": "سلسلة AE SS كاتمات صوت مقبس اختيارية للمشاريع التي تحتاج تخفيض ضوضاء خصوصاً على جانب المدخل." },
-      { "name": "AE-V ريشة موجهة", "image": "/images/products/free.jpg", "description": "سلسلة AE V ريش موجهة هوائية لتحسين التدفق وتقليل الاضطراب وضمان توزيع متجانس في أنظمة المراوح والقنوات." },
-      { "name": "AE-OC غطاء مخرج", "image": "/images/products/free.jpg", "description": "سلسلة AE OC أغطية مخرج متينة لحماية نقاط الطرد من الظروف الخارجية والحفاظ على أداء النظام." },
-      { "name": "AE-DFC وصل مرن مستطيل", "image": "/images/products/ae-dfc.jpg", "description": "سلسلة AE DFC وصلات مرنة مستطيلة متينة لعزل الاهتزاز ومنع انتقال الصوت وتعزيز عدم تسرب الهواء في القنوات." },
-      { "name": "AE-AF إطار محول سقف", "image": "/images/products/free.jpg", "description": "سلسلة AE AF إطارات محول سقف عالية القوة لتركيب آمن ومستقر ومحكم الهواء للمراوح ومعدات التهوية على الأسطح." },
-      { "name": "AE FRS مقبس سقف مسطح", "image": "/images/products/ae-frs.jpg", "description": "سلسلة AE FRS مقابس سقف مسطح لتركيب آمن ومعزول ومستقر للمراوح والمعدات على الأسطح المسطحة." },
-      { "name": "AE-CB صندوق اتصال سقف", "image": "/images/products/free.jpg", "description": "سلسلة AE CB صناديق اتصال سقف لتركيب آمن ومستقر لأنظمة المراوح واتصالات القنوات." },
-      { "name": "AE-EH سخان كهربائي نوع قناة", "image": "/images/products/ae-eh-elektrikli-isitici.jpg", "description": "سلسلة AE EH سخانات كهربائية نوع قناة مدمجة وعالية الكفاءة لتطبيقات الراحة مثل تسخين الهواء النقي في أنظمة التهوية." },
-      { "name": "مفتاح أمان", "image": "/images/products/emniyet-salteri.jpg", "description": "مفتاح أمان عنصر تحكم بمعايير حماية عالية لتشغيل وإيقاف المراوح والمعدات الكهربائية بأمان." },
-      { "name": "مفتاح أمان محمي", "image": "/images/products/korumali-emniyet-salteri.jpg", "description": "مفتاح أمان محمي متين للتحكم الآمن مع حماية ضد العوامل البيئية." },
-      { "name": "منظم سرعة أحادي الطور", "image": "/images/products/monofaze-hiz-kontrol-cihazi.jpg", "description": "وحدة تحكم سهلة الاستخدام لضبط سرعة دوران المراوح بدقة وباستمرار مع محركات أحادية الطور غير متزامنة يتحكم بها الجهد." },
-      { "name": "عاكس تردد", "image": "/images/products/frekans-inventoru.jpg", "description": "وحدة قيادة جيل جديد لزيادة كفاءة الطاقة والتحكم الأمثل بالسرعة في أنظمة المراوح المحركة." },
-      { "name": "لوحة تحكم بالضغط الإيجابي", "image": "/images/products/basinclandirma-kontrol-panosu.png", "description": "لوحة تحكم متقدمة مع عاكس تردد لتشغيل تلقائي ومُحسَّن للمراوح في أنظمة الضغط الإيجابي." },
-      { "name": "مستشعر ضغط تفاضلي", "image": "/images/products/diferansiyel-basinc-sensoru.jpg", "description": "مستشعر ضغط تفاضلي عالي الدقة لقياس والتحكم بفروق ضغط الهواء في أنظمة التهوية والترشيح." },
-      { "name": "مستشعر ضغط تفاضلي PI (خرج 0-10V)", "image": "/images/products/diferansiyel-basinc-sensoru-pi10v.jpg", "description": "نظام مستشعر متقدم مع تحكم PI لمراقبة ضغط الهواء أو التدفق وتنظيمهما تلقائياً بدقة في أنظمة التهوية." },
-      { "name": "مستشعر دخان نوع قناة", "image": "/images/products/kanal-tipi-duman-sensoru.jpg", "description": "جهاز كشف عالي الحساسية للدخان ومنتجات الاحتراق مبكراً في الهواء ضمن أنظمة التهوية والتكييف." },
-      { "name": "مرشح لوحي G4", "image": "/images/products/g4-panel-filtre.jpg", "description": "مرشحات لوحية G4 ما قبل ترشيح عالية الكفاءة لالتقاط الجسيمات الخشنة والغبار والملوثات في أنظمة التهوية والتكييف." },
-      { "name": "مرشح لوحي G2-G3", "image": "/images/products/g2-g3-panel-filtre.jpg", "description": "مرشحات G2-G3 موثوقة لالتقاط جسيمات متوسطة وكبيرة في أنظمة التهوية والتكييف." },
-      { "name": "مرشح دهون معدني G2", "image": "/images/products/g2-metal-yag-tutucu-filtre.jpg", "description": "مرشحات دهون معدنية G2 عالية المتانة لالتقاط بخار الدهون والجسيمات الكبيرة في التهوية وشفط المطابخ." },
-      { "name": "مرشح دهون معدني G2-G3", "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.jpg", "description": "مرشحات دهون معدنية G2-G3 متينة لالتقاط فعال لبخار الدهون والجسيمات الكبيرة في التهوية وشفط المطابخ." }
+      {
+        "name": "عازل اهتزاز زنبركي",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "تُستخدم عوازل الاهتزاز الزنبركية في أنظمة التهوية والتكييف وتركيبات المعدات الميكانيكية لتقليل الاهتزازات المنخفضة التي قد تنتقل من النظام إلى الأرض أو البيئة المحيطة."
+      },
+      {
+        "name": "أقدام تثبيت AE SF",
+        "image": "/images/products/ae-sf-baglanti-ayaklari.png",
+        "description": "أقدام التثبيت عناصر تثبيت عالية القوة مصممة لتثبيت المراوح بأمان على الأرض أو السطح الداعم وفق متطلبات المشروع."
+      },
+      {
+        "name": "AE PM شبكة حماية سلكية",
+        "image": "/images/products/ae-pm-tel-kafes.png",
+        "description": "شبكات الحماية مصنوعة من سلك فولاذي عالي القوة، لضمان سلامة المستخدم على جانب الشفط أو الطرد في أنظمة المراوح ولمنع دخول أجسام غريبة إلى منطقة التشغيل."
+      },
+      {
+        "name": "AE IC مخروط مدخل",
+        "image": "/images/products/ae-ic-giris-konisi.png",
+        "description": "سلسلة AE IC لمخاريط المدخل مصممة لتحسين تدفق الهواء على جانب الشفط وتقليل الاضطراب وزيادة كفاءة النظام."
+      },
+      {
+        "name": "AE CF شفة مقابلة",
+        "image": "/images/products/ae-cf-karsi-flans.png",
+        "description": "سلسلة AE CF للشف المقابلة معدات اتصال مقاومة لدرجات الحرارة العالية لربط المراوح بنظام القنوات وضمان عدم تسرب الهواء."
+      },
+      {
+        "name": "AE FJF شفة مقابلة لوصل مرن",
+        "image": "/images/products/ae-fjf.png",
+        "description": "سلسلة AE FJF للشف المقابلة للوصل المرن عناصر اتصال خاصة لمنع نقل الاهتزاز بين المروحة والقنوات وتقليل تأثير التمدد وتوفير بيئة تشغيل أهدأ."
+      },
+      {
+        "name": "AE FJF فئة F400 شفة مقابلة لوصل مرن",
+        "image": "/images/products/ae-fjf.png",
+        "description": "سلسلة AE FJF فئة F400 مصممة لاتصال مرن وآمن ومحكم الهواء بين المروحة والقنوات في تطبيقات مقاومة للحريق."
+      },
+      {
+        "name": "AE FJ2F لوصل مرن بشف مقابل مزدوج",
+        "image": "/images/products/ae-fj2f.png",
+        "description": "لوصل مرن بشف مقابل على الطرفين لاستيعاب الاهتزاز والتمدد وأخطاء التركيب بين أنظمة المراوح والقنوات."
+      },
+      {
+        "name": "AE FJ2F F400 لوصل مرن بشف مزدوج",
+        "image": "/images/products/ae-fj2f.png",
+        "description": "سلسلة AE FJ2F-HR حلول لوصل مرن بشف مزدوج بمقاومة حرارة عالية للأنظمة التي تتطلب مقاومة حريق."
+      },
+      {
+        "name": "AE S-D100 كاتم صوت دائري",
+        "image": "/images/products/ae-sd100.png",
+        "description": "سلسلة AE S-D100 كاتمات صوت دائرية عالية الأداء للتحكم الصوتي وتخفيض الضوضاء وتحسين الراحة في أنظمة التهوية."
+      },
+      {
+        "name": "AE RS كاتم صوت قناة مستطيلة",
+        "image": "/images/products/ae-rs.png",
+        "description": "سلسلة AE RS كاتمات صوت قناة مستطيلة عالية الكفاءة لتقليل ضوضاء تدفق الهواء وتحسين الراحة الصوتية في القنوات."
+      },
+      {
+        "name": "AE-SS كاتم صوت مقبس",
+        "image": "/images/products/ae-ss-soket-susturucu.png",
+        "description": "سلسلة AE SS كاتمات صوت مقبس اختيارية للمشاريع التي تحتاج تخفيض ضوضاء خصوصاً على جانب المدخل."
+      },
+      {
+        "name": "AE-V ريشة موجهة",
+        "image": "/images/products/ae-v-yonlendirici-kanat.png",
+        "description": "سلسلة AE V ريش موجهة هوائية لتحسين التدفق وتقليل الاضطراب وضمان توزيع متجانس في أنظمة المراوح والقنوات."
+      },
+      {
+        "name": "AE-OC غطاء مخرج",
+        "image": "/images/products/ae-oc-cikis-basligi.png",
+        "description": "سلسلة AE OC أغطية مخرج متينة لحماية نقاط الطرد من الظروف الخارجية والحفاظ على أداء النظام."
+      },
+      {
+        "name": "AE-DFC وصل مرن مستطيل",
+        "image": "/images/products/ae-dfc.png",
+        "description": "سلسلة AE DFC وصلات مرنة مستطيلة متينة لعزل الاهتزاز ومنع انتقال الصوت وتعزيز عدم تسرب الهواء في القنوات."
+      },
+      {
+        "name": "AE-AF إطار محول سقف",
+        "image": "/images/products/ae-af-cati-adaptor.png",
+        "description": "سلسلة AE AF إطارات محول سقف عالية القوة لتركيب آمن ومستقر ومحكم الهواء للمراوح ومعدات التهوية على الأسطح."
+      },
+      {
+        "name": "AE FRS مقبس سقف مسطح",
+        "image": "/images/products/ae-frs.png",
+        "description": "سلسلة AE FRS مقابس سقف مسطح لتركيب آمن ومعزول ومستقر للمراوح والمعدات على الأسطح المسطحة."
+      },
+      {
+        "name": "AE-CB صندوق اتصال سقف",
+        "image": "/images/products/ae-cb-cati-baglanti-kutusu.png",
+        "description": "سلسلة AE CB صناديق اتصال سقف لتركيب آمن ومستقر لأنظمة المراوح واتصالات القنوات."
+      },
+      {
+        "name": "AE-EH سخان كهربائي نوع قناة",
+        "image": "/images/products/ae-eh-elektrikli-isitici.png",
+        "description": "سلسلة AE EH سخانات كهربائية نوع قناة مدمجة وعالية الكفاءة لتطبيقات الراحة مثل تسخين الهواء النقي في أنظمة التهوية."
+      },
+      {
+        "name": "مفتاح أمان",
+        "image": "/images/products/emniyet-salteri.png",
+        "description": "مفتاح أمان عنصر تحكم بمعايير حماية عالية لتشغيل وإيقاف المراوح والمعدات الكهربائية بأمان."
+      },
+      {
+        "name": "مفتاح أمان محمي",
+        "image": "/images/products/korumali-emniyet-salteri.png",
+        "description": "مفتاح أمان محمي متين للتحكم الآمن مع حماية ضد العوامل البيئية."
+      },
+      {
+        "name": "منظم سرعة أحادي الطور",
+        "image": "/images/products/monofaze-hiz-kontrol-cihazi.png",
+        "description": "وحدة تحكم سهلة الاستخدام لضبط سرعة دوران المراوح بدقة وباستمرار مع محركات أحادية الطور غير متزامنة يتحكم بها الجهد."
+      },
+      {
+        "name": "عاكس تردد",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "وحدة قيادة جيل جديد لزيادة كفاءة الطاقة والتحكم الأمثل بالسرعة في أنظمة المراوح المحركة."
+      },
+      {
+        "name": "لوحة تحكم بالضغط الإيجابي",
+        "image": "/images/products/basinclandirma-kontrol-panosu.png",
+        "description": "لوحة تحكم متقدمة مع عاكس تردد لتشغيل تلقائي ومُحسَّن للمراوح في أنظمة الضغط الإيجابي."
+      },
+      {
+        "name": "مستشعر ضغط تفاضلي",
+        "image": "/images/products/diferansiyel-basinc-sensoru.png",
+        "description": "مستشعر ضغط تفاضلي عالي الدقة لقياس والتحكم بفروق ضغط الهواء في أنظمة التهوية والترشيح."
+      },
+      {
+        "name": "مستشعر ضغط تفاضلي PI (خرج 0-10V)",
+        "image": "/images/products/diferansiyel-basinc-sensoru.png",
+        "description": "نظام مستشعر متقدم مع تحكم PI لمراقبة ضغط الهواء أو التدفق وتنظيمهما تلقائياً بدقة في أنظمة التهوية."
+      },
+      {
+        "name": "مستشعر دخان نوع قناة",
+        "image": "/images/products/kanal-tipi-duman-sensoru.png",
+        "description": "جهاز كشف عالي الحساسية للدخان ومنتجات الاحتراق مبكراً في الهواء ضمن أنظمة التهوية والتكييف."
+      },
+      {
+        "name": "مرشح لوحي G4",
+        "image": "/images/products/g4-panel-filtre.png",
+        "description": "مرشحات لوحية G4 ما قبل ترشيح عالية الكفاءة لالتقاط الجسيمات الخشنة والغبار والملوثات في أنظمة التهوية والتكييف."
+      },
+      {
+        "name": "مرشح لوحي G2-G3",
+        "image": "/images/products/g2-g3-panel-filtre.png",
+        "description": "مرشحات G2-G3 موثوقة لالتقاط جسيمات متوسطة وكبيرة في أنظمة التهوية والتكييف."
+      },
+      {
+        "name": "مرشح دهون معدني G2",
+        "image": "/images/products/g2-metal-yag-tutucu-filtre.png",
+        "description": "مرشحات دهون معدنية G2 عالية المتانة لالتقاط بخار الدهون والجسيمات الكبيرة في التهوية وشفط المطابخ."
+      },
+      {
+        "name": "مرشح دهون معدني G2-G3",
+        "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.png",
+        "description": "مرشحات دهون معدنية G2-G3 متينة لالتقاط فعال لبخار الدهون والجسيمات الكبيرة في التهوية وشفط المطابخ."
+      }
     ],
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ]
   },
   "otomasyonMalzemeleri": {
@@ -288,20 +800,67 @@
     "titleFirst": "معدات",
     "titleHighlight": "الأتمتة",
     "products": [
-      { "name": "PANEL", "subModels": [] },
-      { "name": "PLC", "subModels": [] },
-      { "name": "SENSOR", "subModels": ["FCP-DSC", "FCP-DCS", "TECASE-ST110"] },
-      { "name": "CONTROL BOARDS - SWITCHES", "subModels": ["TP01-TSD", "TP01-CC"] }
+      {
+        "name": "PANEL",
+        "subModels": [],
+        "image": "/images/products/otomasyon-pano.png"
+      },
+      {
+        "name": "PLC",
+        "subModels": [],
+        "image": "/images/products/otomasyon-plc.png"
+      },
+      {
+        "name": "SENSOR",
+        "subModels": [
+          "FCP-DSC",
+          "FCP-DCS",
+          "TECASE-ST110"
+        ],
+        "image": "/images/products/otomasyon-sensor.png?v=2"
+      },
+      {
+        "name": "CONTROL BOARDS - SWITCHES",
+        "subModels": [
+          "TP01-TSD",
+          "TP01-CC"
+        ],
+        "image": "/images/products/otomasyon-kontrol-kartlari.png?v=2"
+      }
     ],
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "العزل عن الاهتزاز والصوت", "slug": "titresim-ve-ses-izolasyon" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "العزل عن الاهتزاز والصوت",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
     ]
   },
   "titresimVeSesIzolasyon": {
@@ -313,21 +872,50 @@
       "label": "كاتمات صوت، وسائد مطاطية، عوازل اهتزاز",
       "desc": "طرازات متعددة وحلول مخصصة لاحتياجات عزل الاهتزاز والصوت.",
       "subModels": [
-        "ROO T1-ISO10N-NIP", "ROO T1-ISO15N-100kg-NIP",
-        "ROO T2-ISO20N-FIP", "ROO T2-ISO30N-150kg-FIP",
-        "ROO T3-ISO5Hz-200kg-OSI", "ROO T3-ISO10Hz-300kg-OSI",
-        "ROO T4-ISOComb-100kg-5Hz-HSI", "ROO T4-ISO100kg-10Hz-HSI", "ROO T4-ISO500kg-10Hz-HSI"
+        "ROO T1-ISO10N-NIP",
+        "ROO T1-ISO15N-100kg-NIP",
+        "ROO T2-ISO20N-FIP",
+        "ROO T2-ISO30N-150kg-FIP",
+        "ROO T3-ISO5Hz-200kg-OSI",
+        "ROO T3-ISO10Hz-300kg-OSI",
+        "ROO T4-ISOComb-100kg-5Hz-HSI",
+        "ROO T4-ISO100kg-10Hz-HSI",
+        "ROO T4-ISO500kg-10Hz-HSI"
       ]
     },
     "otherCategories": [
-      { "label": "حركة الهواء", "slug": "hava-hareketi" },
-      { "label": "تكييف الهواء", "slug": "iklimlendirme" },
-      { "label": "التبريد والتدفئة", "slug": "sogutma-ve-isitma" },
-      { "label": "إدارة الهواء", "slug": "hava-yonetimi" },
-      { "label": "توزيع الهواء", "slug": "hava-dagitimi" },
-      { "label": "ترشيح الهواء", "slug": "hava-filtrasyonu" },
-      { "label": "إكسسوارات", "slug": "aksesuarlar" },
-      { "label": "معدات الأتمتة", "slug": "otomasyon-malzemeleri" }
+      {
+        "label": "حركة الهواء",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "تكييف الهواء",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "التبريد والتدفئة",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "إدارة الهواء",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "توزيع الهواء",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "ترشيح الهواء",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "إكسسوارات",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "معدات الأتمتة",
+        "slug": "otomasyon-malzemeleri"
+      }
     ]
   },
   "banyoFanlari": {
@@ -335,9 +923,24 @@
     "subtitle": "مراوح الحمام",
     "intro": "تُستخدم مراوح الحمام لاستخراج الروائح والبخار بسرعة في مساحات صغيرة ومتوسطة مثل الحمامات والمراحيض والمخازن، وتلعب دوراً مهماً في النظافة والراحة.",
     "models": [
-      { "name": "Seahorse AP", "type": "مروحة حمام محورية", "image": "/images/products/banyo-fan-1.jpg", "description": "تجمع مروحة الحمام الزخرفية AP بين الجمال والوظيفة في المساكن بتصميم أنيق متناغم مع العمارة الحديثة وبناء عالي الأداء." },
-      { "name": "Seahorse RP V1", "type": "مروحة شفط حمام سقفية", "image": "/images/products/banyo-fan-2.jpg", "description": "مروحة الشفط السقفية القابلة للضبط RP V1 هي حل التهوية المثالي للمساكن الحديثة بتصميم أنيق وآلية تثبيت متقدمة." },
-      { "name": "Seahorse RP V2", "type": "مروحة شفط حمام سقفية V2", "image": "/images/products/banyo-fan-3.jpg", "description": "تتميز RP V2 بلوحة أمامية عريضة بتصميم حديث وأداء قوي، مصممة للمساحات التي تُعطي الأولوية للجمال والوظيفة." }
+      {
+        "name": "Seahorse AP",
+        "type": "مروحة حمام محورية",
+        "image": "/images/products/banyo-fan-1.jpg",
+        "description": "تجمع مروحة الحمام الزخرفية AP بين الجمال والوظيفة في المساكن بتصميم أنيق متناغم مع العمارة الحديثة وبناء عالي الأداء."
+      },
+      {
+        "name": "Seahorse RP V1",
+        "type": "مروحة شفط حمام سقفية",
+        "image": "/images/products/banyo-fan-2.jpg",
+        "description": "مروحة الشفط السقفية القابلة للضبط RP V1 هي حل التهوية المثالي للمساكن الحديثة بتصميم أنيق وآلية تثبيت متقدمة."
+      },
+      {
+        "name": "Seahorse RP V2",
+        "type": "مروحة شفط حمام سقفية V2",
+        "image": "/images/products/banyo-fan-3.jpg",
+        "description": "تتميز RP V2 بلوحة أمامية عريضة بتصميم حديث وأداء قوي، مصممة للمساحات التي تُعطي الأولوية للجمال والوظيفة."
+      }
     ]
   },
   "catiFanlari": {
@@ -345,12 +948,42 @@
     "subtitle": "مراوح السقف",
     "intro": "",
     "models": [
-      { "name": "Heron RH", "type": "مروحة سقف طارفة بإخراج أفقي", "image": "/images/products/heron-rh.jpg", "description": "مصممة خصيصاً لتطبيقات إخراج الهواء التي تتطلب تركيباً على السطح." },
-      { "name": "Heron RHS", "type": "مروحة سقف طارفة محرك خارجي بإخراج أفقي", "image": "/images/products/heron-rhs.jpg", "description": "للتطبيقات التي تتطلب إخراج هواء حار وملوث ودرجة حرارة عالية." },
-      { "name": "Heron RV", "type": "مروحة سقف طارفة بإخراج عمودي", "image": "/images/products/heron-rv.jpg", "description": "كفاءة عالية في التطبيقات التي تتطلب إخراج هواء عمودياً." },
-      { "name": "Heron RVS", "type": "مروحة سقف طارفة محرك خارجي بإخراج عمودي", "image": "/images/products/heron-rvs.jpg", "description": "إخراج هواء حار وبخار كثيف." },
-      { "name": "Heron AH", "type": "مروحة سقف محورية بإخراج أفقي", "image": "/images/products/heron-ah.jpg", "description": "تغذية هواء نقي أو إخراج في مساحات كبيرة الحجم." },
-      { "name": "Heron AVH", "type": "مروحة سقف محورية مغطاة", "image": "/images/products/free.jpg", "description": "مروحة سقف محورية مغطاة." }
+      {
+        "name": "Heron RH",
+        "type": "مروحة سقف طارفة بإخراج أفقي",
+        "image": "/images/products/heron-rh.jpg",
+        "description": "مصممة خصيصاً لتطبيقات إخراج الهواء التي تتطلب تركيباً على السطح."
+      },
+      {
+        "name": "Heron RHS",
+        "type": "مروحة سقف طارفة محرك خارجي بإخراج أفقي",
+        "image": "/images/products/heron-rhs.jpg",
+        "description": "للتطبيقات التي تتطلب إخراج هواء حار وملوث ودرجة حرارة عالية."
+      },
+      {
+        "name": "Heron RV",
+        "type": "مروحة سقف طارفة بإخراج عمودي",
+        "image": "/images/products/heron-rv.jpg",
+        "description": "كفاءة عالية في التطبيقات التي تتطلب إخراج هواء عمودياً."
+      },
+      {
+        "name": "Heron RVS",
+        "type": "مروحة سقف طارفة محرك خارجي بإخراج عمودي",
+        "image": "/images/products/heron-rvs.jpg",
+        "description": "إخراج هواء حار وبخار كثيف."
+      },
+      {
+        "name": "Heron AH",
+        "type": "مروحة سقف محورية بإخراج أفقي",
+        "image": "/images/products/heron-ah.jpg",
+        "description": "تغذية هواء نقي أو إخراج في مساحات كبيرة الحجم."
+      },
+      {
+        "name": "Heron AVH",
+        "type": "مروحة سقف محورية مغطاة",
+        "image": "/images/products/free.jpg",
+        "description": "مروحة سقف محورية مغطاة."
+      }
     ]
   },
   "damperler": {
@@ -358,9 +991,24 @@
     "subtitle": "سدادات",
     "intro": "سدادات سلسلة Novves HOUND مصممة لأقصى تحكم وأمان في أكثر نقاط أنظمة التهوية والسلامة من الحريق حرجية.",
     "models": [
-      { "name": "Hound SD M24", "type": "سدادة دخان عمودية بمحرك سيرفو 24 فولت", "image": "/images/products/hound-sd-m24.jpg", "description": "مطورة لإخراج هواء آمن في أنظمة الحريق والتحكم بالدخان، بتصنيف تسرب EN 17051 فئة C وتوافق محرك سيرفو." },
-      { "name": "Hound AL", "type": "لوفر هواء", "image": "/images/products/hound-al.png", "description": "نظام لوفر بتصميم جمالي يوجِّه تدفق الهواء عند مداخل ومخارج الهواء ويحمي من العناصر الخارجية." },
-      { "name": "Hound CRD", "type": "سدادة أمان ضغط", "image": "/images/products/hound-crd.jpg", "description": "سدادة تفتح تلقائياً لتخفيف الضغط الزائد وحماية مكونات النظام." }
+      {
+        "name": "Hound SD M24",
+        "type": "سدادة دخان عمودية بمحرك سيرفو 24 فولت",
+        "image": "/images/products/hound-sd-m24.jpg",
+        "description": "مطورة لإخراج هواء آمن في أنظمة الحريق والتحكم بالدخان، بتصنيف تسرب EN 17051 فئة C وتوافق محرك سيرفو."
+      },
+      {
+        "name": "Hound AL",
+        "type": "لوفر هواء",
+        "image": "/images/products/hound-al.png",
+        "description": "نظام لوفر بتصميم جمالي يوجِّه تدفق الهواء عند مداخل ومخارج الهواء ويحمي من العناصر الخارجية."
+      },
+      {
+        "name": "Hound CRD",
+        "type": "سدادة أمان ضغط",
+        "image": "/images/products/hound-crd.jpg",
+        "description": "سدادة تفتح تلقائياً لتخفيف الضغط الزائد وحماية مكونات النظام."
+      }
     ]
   },
   "dumanIsiTahliyeFanlari": {
@@ -368,12 +1016,42 @@
     "subtitle": "مراوح استخراج الدخان والحرارة",
     "intro": "سلسلة مراوح استخراج الدخان والحرارة مع اعتماد مقاومة حريق فئة F300، مصممة لتحمل 300°م لمدة ساعتين.",
     "models": [
-      { "name": "Dragonfly T", "type": "مروحة محورية مغلفة لاستخراج الدخان والحرارة", "image": "/images/products/dragonfly-t.jpg", "description": "مروحة محورية مغلفة مقاومة لدرجات الحرارة العالية لاستخراج فعال للدخان والهواء الساخن أثناء الحريق. معتمدة EN 12101-3." },
-      { "name": "Dragonfly R", "type": "مروحة سقف محورية لاستخراج الدخان والحرارة", "image": "/images/products/dragonfly-r.jpg", "description": "مروحة سقف مقاومة لدرجات الحرارة العالية تضمن استخراجاً سريعاً وآمناً وفعالاً للدخان والهواء الساخن أثناء الحريق. معتمدة EN 12101-3." },
-      { "name": "Dragonfly C", "type": "مروحة غرفة ضاغطة محورية لاستخراج الدخان والحرارة", "image": "/images/products/dragonfly-c.png", "description": "وحدة خزانة مقاومة للحرارة ومنخفضة الضوضاء لاستخراج آمن للدخان والهواء شديد الحرارة أثناء الحريق. معتمدة EN 12101-3." },
-      { "name": "Dragonfly JAU", "type": "مروحة نفث محورية أحادية الاتجاه", "image": "/images/products/dragonfly-jau.jpg", "description": "لاستخراج الدخان وتدوير الهواء في مواقف السيارات والأنفاق والأماكن المغلقة، بمقاومة حرارة عالية. معتمدة EN 12101-3." },
-      { "name": "Dragonfly JAR", "type": "مروحة نفث محورية ثنائية الاتجاه", "image": "/images/products/dragonfly-jar.jpg", "description": "لاستخراج الدخان والتهوية وتدوير الهواء في مواقف مغلقة ومساحات داخلية كبيرة، ثنائية الاتجاه، ضوضاء منخفضة وأداء عالٍ." },
-      { "name": "Dragonfly JR", "type": "مروحة نفث شعاعية/طارفة", "image": "/images/products/dragonfly-jr.jpg", "description": "مصممة خصيصاً لاستخراج الدخان والتهوية الطارئة في أحجام داخلية صعبة مثل مواقف مغلقة وأنفاق ومناطق حريق. معتمدة EN 12101-3." }
+      {
+        "name": "Dragonfly T",
+        "type": "مروحة محورية مغلفة لاستخراج الدخان والحرارة",
+        "image": "/images/products/dragonfly-t.jpg",
+        "description": "مروحة محورية مغلفة مقاومة لدرجات الحرارة العالية لاستخراج فعال للدخان والهواء الساخن أثناء الحريق. معتمدة EN 12101-3."
+      },
+      {
+        "name": "Dragonfly R",
+        "type": "مروحة سقف محورية لاستخراج الدخان والحرارة",
+        "image": "/images/products/dragonfly-r.jpg",
+        "description": "مروحة سقف مقاومة لدرجات الحرارة العالية تضمن استخراجاً سريعاً وآمناً وفعالاً للدخان والهواء الساخن أثناء الحريق. معتمدة EN 12101-3."
+      },
+      {
+        "name": "Dragonfly C",
+        "type": "مروحة غرفة ضاغطة محورية لاستخراج الدخان والحرارة",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "وحدة خزانة مقاومة للحرارة ومنخفضة الضوضاء لاستخراج آمن للدخان والهواء شديد الحرارة أثناء الحريق. معتمدة EN 12101-3."
+      },
+      {
+        "name": "Dragonfly JAU",
+        "type": "مروحة نفث محورية أحادية الاتجاه",
+        "image": "/images/products/dragonfly-jau.jpg",
+        "description": "لاستخراج الدخان وتدوير الهواء في مواقف السيارات والأنفاق والأماكن المغلقة، بمقاومة حرارة عالية. معتمدة EN 12101-3."
+      },
+      {
+        "name": "Dragonfly JAR",
+        "type": "مروحة نفث محورية ثنائية الاتجاه",
+        "image": "/images/products/dragonfly-jar.jpg",
+        "description": "لاستخراج الدخان والتهوية وتدوير الهواء في مواقف مغلقة ومساحات داخلية كبيرة، ثنائية الاتجاه، ضوضاء منخفضة وأداء عالٍ."
+      },
+      {
+        "name": "Dragonfly JR",
+        "type": "مروحة نفث شعاعية/طارفة",
+        "image": "/images/products/dragonfly-jr.jpg",
+        "description": "مصممة خصيصاً لاستخراج الدخان والتهوية الطارئة في أحجام داخلية صعبة مثل مواقف مغلقة وأنفاق ومناطق حريق. معتمدة EN 12101-3."
+      }
     ]
   },
   "duvarTipiFanlar": {
@@ -381,10 +1059,30 @@
     "subtitle": "مراوح حائطية",
     "intro": "",
     "models": [
-      { "name": "Owl RER", "type": "مروحة حائطية مستطيلة", "image": "/images/products/owl-rer.jpg", "description": "حل مروحة محورية بريش معدني للتركيب على الحائط، بناء متين وسرعة قابلة للضبط." },
-      { "name": "Owl CER", "type": "مروحة حائطية دائرية", "image": "/images/products/owl-cer.jpg", "description": "طراز مدمج وعالي الكفاءة بريش معدني للتركيب الدائري على الحائط." },
-      { "name": "Owl RWA", "type": "مروحة محورية حائطية مستطيلة", "image": "/images/products/owl-rwa.jpg", "description": "مروحة محورية بريش هوائي عالي الكفاءة للتركيب المستطيل على الحائط." },
-      { "name": "Owl CWA", "type": "مروحة محورية حائطية دائرية", "image": "/images/products/owl-cwa.jpg", "description": "مروحة محورية مدمجة للتركيب الدائري على الحائط بريش هوائي خفيف ومتين." }
+      {
+        "name": "Owl RER",
+        "type": "مروحة حائطية مستطيلة",
+        "image": "/images/products/owl-rer.jpg",
+        "description": "حل مروحة محورية بريش معدني للتركيب على الحائط، بناء متين وسرعة قابلة للضبط."
+      },
+      {
+        "name": "Owl CER",
+        "type": "مروحة حائطية دائرية",
+        "image": "/images/products/owl-cer.jpg",
+        "description": "طراز مدمج وعالي الكفاءة بريش معدني للتركيب الدائري على الحائط."
+      },
+      {
+        "name": "Owl RWA",
+        "type": "مروحة محورية حائطية مستطيلة",
+        "image": "/images/products/owl-rwa.jpg",
+        "description": "مروحة محورية بريش هوائي عالي الكفاءة للتركيب المستطيل على الحائط."
+      },
+      {
+        "name": "Owl CWA",
+        "type": "مروحة محورية حائطية دائرية",
+        "image": "/images/products/owl-cwa.jpg",
+        "description": "مروحة محورية مدمجة للتركيب الدائري على الحائط بريش هوائي خفيف ومتين."
+      }
     ]
   },
   "ecFanlar": {
@@ -392,8 +1090,18 @@
     "subtitle": "مراوح EC",
     "intro": "تقدم سلسلة Hummingbird حلول مراوح سقف وقناة تجمع بين الأداء العالي وتوفير الطاقة بتقنية محركات EC.",
     "models": [
-      { "name": "Hummingbird RRV", "type": "مروحة سقف EC بإخراج عمودي", "image": "/images/products/hummingbird-rh.jpg", "description": "مروحة سقف بإخراج عمودي للمباني الحديثة بمحركات EC عالية الكفاءة. مع خيارات تحكم ذكية واستهلاك طاقة منخفض وتشغيل هادئ في تهوية الراحة والصناعة." },
-      { "name": "Hummingbird DRB", "type": "مروحة قناة مستطيلة EC", "image": "/images/products/hummingbird-drb-ec.jpg", "description": "مروحة قناة مستطيلة بمحرك EC عالي الكفاءة للأنظمة الحديثة. هيكل مدمج وتشغيل هادئ وقابلية دمج مع الأتمتة." }
+      {
+        "name": "Hummingbird RRV",
+        "type": "مروحة سقف EC بإخراج عمودي",
+        "image": "/images/products/hummingbird-rh.jpg",
+        "description": "مروحة سقف بإخراج عمودي للمباني الحديثة بمحركات EC عالية الكفاءة. مع خيارات تحكم ذكية واستهلاك طاقة منخفض وتشغيل هادئ في تهوية الراحة والصناعة."
+      },
+      {
+        "name": "Hummingbird DRB",
+        "type": "مروحة قناة مستطيلة EC",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "مروحة قناة مستطيلة بمحرك EC عالي الكفاءة للأنظمة الحديثة. هيكل مدمج وتشغيل هادئ وقابلية دمج مع الأتمتة."
+      }
     ]
   },
   "endustriyelFanlar": {
@@ -401,8 +1109,18 @@
     "subtitle": "مراوح طارفة صناعية",
     "intro": "تجمع المراوح الصناعية بين الأداء العالي وتوفير الطاقة مع ريش منحنية للخلف ومحرك مباشر القيادة.",
     "models": [
-      { "name": "Nautilus LPF", "type": "مروحة طارفة صناعية", "image": "/images/products/nautilus-lfp.jpg", "description": "مروحة صناعية تجمع الأداء العالي وتوفير الطاقة." },
-      { "name": "Nautilus Silence", "type": "مروحة طارفة جدار مزدوج", "image": "/images/products/nautilus-cif-cidarli.jpg", "description": "سلسلة NAUTILUS Silence مراوح طارفة تعمل بكفاءة عالية في أنظمة نقل هواء منخفض الضغط، بهيكل مدمج وتصميم قيادة مباشرة." }
+      {
+        "name": "Nautilus LPF",
+        "type": "مروحة طارفة صناعية",
+        "image": "/images/products/nautilus-lfp.jpg",
+        "description": "مروحة صناعية تجمع الأداء العالي وتوفير الطاقة."
+      },
+      {
+        "name": "Nautilus Silence",
+        "type": "مروحة طارفة جدار مزدوج",
+        "image": "/images/products/nautilus-cif-cidarli.jpg",
+        "description": "سلسلة NAUTILUS Silence مراوح طارفة تعمل بكفاءة عالية في أنظمة نقل هواء منخفض الضغط، بهيكل مدمج وتصميم قيادة مباشرة."
+      }
     ]
   },
   "exproofFanlar": {
@@ -410,15 +1128,60 @@
     "subtitle": "مراوح مقاومة للانفجار",
     "intro": "مراوح سلسلة Bear حلول Ex-Proof للاستخدام في بيئات الغازات المتفجرة والقابلة للاشتعال.",
     "models": [
-      { "name": "Bear EX-REB", "type": "مروحة قناة مستطيلة مقاومة للانفجار", "image": "/images/products/bear-reb.jpg", "description": "Ex-Proof لتهوية آمنة في بيئات غازية متفجرة. معايير أمان عالية وتشغيل بعاكس تردد ومتوافقة مناطق ATEX." },
-      { "name": "Bear EX-T", "type": "مروحة محورية مغلفة مقاومة للانفجار", "image": "/images/products/bear-t.jpg", "description": "نقل هواء آمن في بيئات متفجرة، تصميم دوار متوازن. لتطبيقات صناعية مع مخاطر شرر وحريق." },
-      { "name": "Bear EX-RRH", "type": "مروحة سقف طارفة مقاومة للانفجار بإخراج أفقي", "image": "/images/products/bear-rrh.jpg", "description": "مصممة للتطبيقات التي تتطلب إخراجاً أفقياً على السطح. مناطق ATEX 1 و2." },
-      { "name": "Bear EX-RRV", "type": "مروحة سقف طارفة مقاومة للانفجار بإخراج عمودي", "image": "/images/products/bear-rrv.jpg", "description": "إخراج هواء عالي الضغط ومقاومة خارجية طويلة الأمد." },
-      { "name": "Bear EX-BP", "type": "مروحة غرفة ضاغطة طارفة مقاومة للانفجار", "image": "/images/products/bear-bp.jpg", "description": "حل مروحة بهيكل غرفة ضاغطة وحداتي وأداء قوي وهادئ." },
-      { "name": "Bear EX-C", "type": "مروحة محورية غرفة ضاغطة مقاومة للانفجار", "image": "/images/products/bear-c.jpg", "description": "تشغيل هادئ، صيانة سهلة، امتثال ATEX." },
-      { "name": "Bear LPF", "type": "مروحة طارفة مقاومة للانفجار", "image": "/images/products/bear-lpf.jpg", "description": "إخراج هواء آمن في بيئات تحتوي غازات أو بخاراً متفجراً." },
-      { "name": "Bear R", "type": "مروحة سقف محورية", "image": "/images/products/bear-r.jpg", "description": "تلبي احتياجات التهوية الطبيعية والإخراج للمنشآت ذات الحجم الكبير." },
-      { "name": "Bear W", "type": "مروحة محورية مقاومة للانفجار (حائطية)", "image": "/images/products/bear-w.jpg", "description": "مانعة لللهب، متوافقة ATEX، أداء عالٍ." }
+      {
+        "name": "Bear EX-REB",
+        "type": "مروحة قناة مستطيلة مقاومة للانفجار",
+        "image": "/images/products/bear-reb.jpg",
+        "description": "Ex-Proof لتهوية آمنة في بيئات غازية متفجرة. معايير أمان عالية وتشغيل بعاكس تردد ومتوافقة مناطق ATEX."
+      },
+      {
+        "name": "Bear EX-T",
+        "type": "مروحة محورية مغلفة مقاومة للانفجار",
+        "image": "/images/products/bear-t.jpg",
+        "description": "نقل هواء آمن في بيئات متفجرة، تصميم دوار متوازن. لتطبيقات صناعية مع مخاطر شرر وحريق."
+      },
+      {
+        "name": "Bear EX-RRH",
+        "type": "مروحة سقف طارفة مقاومة للانفجار بإخراج أفقي",
+        "image": "/images/products/bear-rrh.jpg",
+        "description": "مصممة للتطبيقات التي تتطلب إخراجاً أفقياً على السطح. مناطق ATEX 1 و2."
+      },
+      {
+        "name": "Bear EX-RRV",
+        "type": "مروحة سقف طارفة مقاومة للانفجار بإخراج عمودي",
+        "image": "/images/products/bear-rrv.jpg",
+        "description": "إخراج هواء عالي الضغط ومقاومة خارجية طويلة الأمد."
+      },
+      {
+        "name": "Bear EX-BP",
+        "type": "مروحة غرفة ضاغطة طارفة مقاومة للانفجار",
+        "image": "/images/products/bear-bp.jpg",
+        "description": "حل مروحة بهيكل غرفة ضاغطة وحداتي وأداء قوي وهادئ."
+      },
+      {
+        "name": "Bear EX-C",
+        "type": "مروحة محورية غرفة ضاغطة مقاومة للانفجار",
+        "image": "/images/products/bear-c.jpg",
+        "description": "تشغيل هادئ، صيانة سهلة، امتثال ATEX."
+      },
+      {
+        "name": "Bear LPF",
+        "type": "مروحة طارفة مقاومة للانفجار",
+        "image": "/images/products/bear-lpf.jpg",
+        "description": "إخراج هواء آمن في بيئات تحتوي غازات أو بخاراً متفجراً."
+      },
+      {
+        "name": "Bear R",
+        "type": "مروحة سقف محورية",
+        "image": "/images/products/bear-r.jpg",
+        "description": "تلبي احتياجات التهوية الطبيعية والإخراج للمنشآت ذات الحجم الكبير."
+      },
+      {
+        "name": "Bear W",
+        "type": "مروحة محورية مقاومة للانفجار (حائطية)",
+        "image": "/images/products/bear-w.jpg",
+        "description": "مانعة لللهب، متوافقة ATEX، أداء عالٍ."
+      }
     ]
   },
   "havuzNemAlmaSantrali": {
@@ -434,12 +1197,54 @@
       "waterHeater": "سخان الماء (كيلوواط)"
     },
     "models": [
-      { "model": "DOLPHIN 300", "airFlow": "3,000", "area": "50", "cooling": "21.1", "condenser": "26.4", "water": "26.15" },
-      { "model": "DOLPHIN 400", "airFlow": "4,000", "area": "75", "cooling": "28.7", "condenser": "35.67", "water": "34.12" },
-      { "model": "DOLPHIN 450", "airFlow": "4,500", "area": "100", "cooling": "33.3", "condenser": "40.96", "water": "36.24" },
-      { "model": "DOLPHIN 600", "airFlow": "6,000", "area": "150", "cooling": "42.2", "condenser": "52.88", "water": "50.58" },
-      { "model": "DOLPHIN 750", "airFlow": "7,500", "area": "200", "cooling": "52.6", "condenser": "65.9", "water": "62.97" },
-      { "model": "DOLPHIN 900", "airFlow": "9,000", "area": "250", "cooling": "36.8", "condenser": "80.68", "water": "77.1" }
+      {
+        "model": "DOLPHIN 300",
+        "airFlow": "3,000",
+        "area": "50",
+        "cooling": "21.1",
+        "condenser": "26.4",
+        "water": "26.15"
+      },
+      {
+        "model": "DOLPHIN 400",
+        "airFlow": "4,000",
+        "area": "75",
+        "cooling": "28.7",
+        "condenser": "35.67",
+        "water": "34.12"
+      },
+      {
+        "model": "DOLPHIN 450",
+        "airFlow": "4,500",
+        "area": "100",
+        "cooling": "33.3",
+        "condenser": "40.96",
+        "water": "36.24"
+      },
+      {
+        "model": "DOLPHIN 600",
+        "airFlow": "6,000",
+        "area": "150",
+        "cooling": "42.2",
+        "condenser": "52.88",
+        "water": "50.58"
+      },
+      {
+        "model": "DOLPHIN 750",
+        "airFlow": "7,500",
+        "area": "200",
+        "cooling": "52.6",
+        "condenser": "65.9",
+        "water": "62.97"
+      },
+      {
+        "model": "DOLPHIN 900",
+        "airFlow": "9,000",
+        "area": "250",
+        "cooling": "36.8",
+        "condenser": "80.68",
+        "water": "77.1"
+      }
     ]
   },
   "hucreliFanlar": {
@@ -447,11 +1252,36 @@
     "subtitle": "مراوح غرفة ضاغطة",
     "intro": "يمكن استخدام مراوح Turtle ذات الغرفة الضاغطة لتغذية الهواء النقي واستخراج الهواء المخرج. بهيكل مدمج يتيح التثبيت المباشر على الأرض، وحشو صوف صخري بين الجدران الداخلية يوفر عزلًا صوتياً فعالاً.",
     "models": [
-      { "name": "Turtle B", "type": "مروحة غرفة ضاغطة بسير", "image": "/images/products/turtle-b.jpg", "description": "طراز مروحة خزانة بسير يقدم حلولاً موثوقة وهادئة في أنظمة نقل هواء بحجم كبير." },
-      { "name": "Turtle BP", "type": "مروحة بلَج غرفة ضاغطة بريش منحنٍ للخلف", "image": "/images/products/turtle-bp.jpg", "description": "طراز خزانة عالي الأداء بهواء هادئ وفعال ومدمج." },
-      { "name": "Turtle BPA", "type": "مروحة طارفة غرفة ضاغطة بريش منحنٍ للخلف", "image": "/images/products/turtle-a.jpg", "description": "حل تهوية صناعي بأداء كفاءة عالية وهادئ بهيكل غرفة ضاغطة وتقنية طارفة بريش منحنٍ للخلف." },
-      { "name": "Turtle F", "type": "مروحة غرفة ضاغطة بريش منحنٍ للأمام", "image": "/images/products/turtle-f.jpg", "description": "طراز خزانة مدخل مزدوج بلَج يتميز بتشغيل هادئ وفعال في أنظمة نقل هواء منخفض الضغط." },
-      { "name": "Turtle A", "type": "مروحة محورية غرفة ضاغطة", "image": "/images/products/turtle-a.jpg", "description": "حلول مروحة محورية خزانة مدمجة لأنظمة تتطلب نقل هواء بحجم كبير." }
+      {
+        "name": "Turtle B",
+        "type": "مروحة غرفة ضاغطة بسير",
+        "image": "/images/products/turtle-b.jpg",
+        "description": "طراز مروحة خزانة بسير يقدم حلولاً موثوقة وهادئة في أنظمة نقل هواء بحجم كبير."
+      },
+      {
+        "name": "Turtle BP",
+        "type": "مروحة بلَج غرفة ضاغطة بريش منحنٍ للخلف",
+        "image": "/images/products/turtle-bp.jpg",
+        "description": "طراز خزانة عالي الأداء بهواء هادئ وفعال ومدمج."
+      },
+      {
+        "name": "Turtle BPA",
+        "type": "مروحة طارفة غرفة ضاغطة بريش منحنٍ للخلف",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "حل تهوية صناعي بأداء كفاءة عالية وهادئ بهيكل غرفة ضاغطة وتقنية طارفة بريش منحنٍ للخلف."
+      },
+      {
+        "name": "Turtle F",
+        "type": "مروحة غرفة ضاغطة بريش منحنٍ للأمام",
+        "image": "/images/products/turtle-f.jpg",
+        "description": "طراز خزانة مدخل مزدوج بلَج يتميز بتشغيل هادئ وفعال في أنظمة نقل هواء منخفض الضغط."
+      },
+      {
+        "name": "Turtle A",
+        "type": "مروحة محورية غرفة ضاغطة",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "حلول مروحة محورية خزانة مدمجة لأنظمة تتطلب نقل هواء بحجم كبير."
+      }
     ]
   },
   "isiGeriKazanimCihazlari": {
@@ -469,10 +1299,30 @@
     "subtitle": "مراوح قناة",
     "intro": "",
     "models": [
-      { "name": "Koi CB", "type": "مروحة قناة دائرية", "image": "/images/products/koi-cb.jpg", "description": "سلسلة Novves KOI-CB مراوح قناة دائرية مدمجة وعالية الأداء لاحتياجات التهوية بالقنوات." },
-      { "name": "Koi RB", "type": "مروحة قناة مستطيلة", "image": "/images/products/koi-rb.jpg", "description": "سلسلة KOI-RB مطورة لنقل هواء عالي الأداء في المباني الصناعية والتجارية." },
-      { "name": "Koi REB", "type": "مروحة قناة مستطيلة محرك خارجي", "image": "/images/products/koi-reb.jpg", "description": "سلسلة KOI-REB مصممة لتطبيقات تهوية تتطلب مقاومة حرارة عالية." },
-      { "name": "Koi X", "type": "مروحة قناة تدفق مختلط", "image": "/images/products/koi-x.jpg", "description": "سلسلة KOI-X مصممة لأقصى كفاءة خصوصاً في مناطق الراحة، بهيكل مدمج وتشغيل هادئ وخيار محرك بسرعتين." }
+      {
+        "name": "Koi CB",
+        "type": "مروحة قناة دائرية",
+        "image": "/images/products/koi-cb.jpg",
+        "description": "سلسلة Novves KOI-CB مراوح قناة دائرية مدمجة وعالية الأداء لاحتياجات التهوية بالقنوات."
+      },
+      {
+        "name": "Koi RB",
+        "type": "مروحة قناة مستطيلة",
+        "image": "/images/products/koi-rb.jpg",
+        "description": "سلسلة KOI-RB مطورة لنقل هواء عالي الأداء في المباني الصناعية والتجارية."
+      },
+      {
+        "name": "Koi REB",
+        "type": "مروحة قناة مستطيلة محرك خارجي",
+        "image": "/images/products/koi-reb.jpg",
+        "description": "سلسلة KOI-REB مصممة لتطبيقات تهوية تتطلب مقاومة حرارة عالية."
+      },
+      {
+        "name": "Koi X",
+        "type": "مروحة قناة تدفق مختلط",
+        "image": "/images/products/koi-x.jpg",
+        "description": "سلسلة KOI-X مصممة لأقصى كفاءة خصوصاً في مناطق الراحة، بهيكل مدمج وتشغيل هادئ وخيار محرك بسرعتين."
+      }
     ]
   },
   "klimaSantralleri": {
@@ -480,12 +1330,30 @@
     "subtitle": "وحدات معالجة الهواء",
     "intro": "حل وحدة معالجة هواء وحداتي موجه للكفاءة لتلبية احتياجات تهوية وتكييف عالية الأداء. يتميز بنطاق تدفق واسع ومكونات موفرة للطاقة وأداء تشغيل هادئ.",
     "specs": [
-      { "label": "التدفق", "value": "500 - 125,000 m³/h" },
-      { "label": "الضغط", "value": "10 - 3,000 Pa" },
-      { "label": "الهيكل", "value": "ألومنيوم معالج أنوديكاً" },
-      { "label": "اللوح", "value": "لوح ساندويتش جدار مزدوج" },
-      { "label": "نوع المروحة", "value": "مروحة طارفة / بلَج EC" },
-      { "label": "استعادة الحرارة", "value": "لوحي، دوار، ماء-جليكول" }
+      {
+        "label": "التدفق",
+        "value": "500 - 125,000 m³/h"
+      },
+      {
+        "label": "الضغط",
+        "value": "10 - 3,000 Pa"
+      },
+      {
+        "label": "الهيكل",
+        "value": "ألومنيوم معالج أنوديكاً"
+      },
+      {
+        "label": "اللوح",
+        "value": "لوح ساندويتش جدار مزدوج"
+      },
+      {
+        "label": "نوع المروحة",
+        "value": "مروحة طارفة / بلَج EC"
+      },
+      {
+        "label": "استعادة الحرارة",
+        "value": "لوحي، دوار، ماء-جليكول"
+      }
     ]
   },
   "kovanTipiAksiyalFanlar": {
@@ -493,8 +1361,18 @@
     "subtitle": "مراوح محورية مغلفة",
     "intro": "تُستخدم مراوح Marlin المحورية المغلفة لتغذية الهواء النقي أو الإخراج أو كمراوح قناة، وكمراوح ضغط إيجابي لمنع دخول الدخان إلى مسارات الهروب مثل السلالم وبئر المصعد أثناء الحريق.",
     "models": [
-      { "name": "Marlin", "type": "مروحة محورية مغلفة", "image": "/images/products/marlin.png", "description": "سلسلة MARLIN تجمع أداءً قوياً ومرونة تركيب وكفاءة طاقة في أنظمة تتطلب تدفق هواء عالٍ." },
-      { "name": "Marlin B", "type": "مروحة محورية مشعبة", "image": "/images/products/marlin-b.jpg", "description": "مروحة محورية مشعبة." }
+      {
+        "name": "Marlin",
+        "type": "مروحة محورية مغلفة",
+        "image": "/images/products/marlin.png",
+        "description": "سلسلة MARLIN تجمع أداءً قوياً ومرونة تركيب وكفاءة طاقة في أنظمة تتطلب تدفق هواء عالٍ."
+      },
+      {
+        "name": "Marlin B",
+        "type": "مروحة محورية مشعبة",
+        "image": "/images/products/marlin-b.jpg",
+        "description": "مروحة محورية مشعبة."
+      }
     ]
   },
   "mutfakFanlari": {
@@ -502,7 +1380,12 @@
     "subtitle": "مراوح شفط مطبخ",
     "intro": "",
     "models": [
-      { "name": "Butterfly B", "type": "مروحة شفط مطبخ بمرشح معدني", "image": "/images/products/butterfly-b.jpg", "description": "سلسلة Butterfly B حل تهوية متين وعالي الكفاءة لاستخراج البخار الكثيف والدهون والروائح في المطابخ الصناعية والتجارية. بنظام ترشيح متقدم وتشغيل هادئ وبناء طويل الأمد، مثالية للمطابخ المهنية." }
+      {
+        "name": "Butterfly B",
+        "type": "مروحة شفط مطبخ بمرشح معدني",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "سلسلة Butterfly B حل تهوية متين وعالي الكفاءة لاستخراج البخار الكثيف والدهون والروائح في المطابخ الصناعية والتجارية. بنظام ترشيح متقدم وتشغيل هادئ وبناء طويل الأمد، مثالية للمطابخ المهنية."
+      }
     ]
   },
   "siginakFanlari": {
@@ -510,8 +1393,18 @@
     "subtitle": "مراوح ملجأ",
     "intro": "طُورت سلسلة Fox للملاجئ المبنية للحماية من الإشعاع والتهديدات النووية والبيولوجية والكيميائية أو الكوارث الطبيعية.",
     "models": [
-      { "name": "Fox D", "type": "مروحة ملجأ نوع قناة", "image": "/images/products/fox-d.jpg", "description": "سلسلة FOX D مروحة ملجأ نوع قناة متينة وموثوقة بسعة ترشيح عالية لاحتياجات تهوية الملاجئ والمناطق الآمنة." },
-      { "name": "Fox C", "type": "مروحة ملجأ نوع خزانة", "image": "/images/products/fox-c.jpg", "description": "سلسلة FOX C حل تهوية مهني للمناطق عالية الأمان، تشغيل هادئ ونظام ترشيح قوي." }
+      {
+        "name": "Fox D",
+        "type": "مروحة ملجأ نوع قناة",
+        "image": "/images/products/fox-d.jpg",
+        "description": "سلسلة FOX D مروحة ملجأ نوع قناة متينة وموثوقة بسعة ترشيح عالية لاحتياجات تهوية الملاجئ والمناطق الآمنة."
+      },
+      {
+        "name": "Fox C",
+        "type": "مروحة ملجأ نوع خزانة",
+        "image": "/images/products/fox-c.jpg",
+        "description": "سلسلة FOX C حل تهوية مهني للمناطق عالية الأمان، تشغيل هادئ ونظام ترشيح قوي."
+      }
     ]
   }
 }

@@ -17,6 +17,7 @@ const FAMILY_NAME_TO_PRODUCTS_SECTION: Record<string, string> = {
   TURTLE: "hucreliFanlar",
   TIGER: "klimaSantralleri",
   DOLPHIN: "havuzNemAlmaSantrali",
+  CARACAL: "isiGeriKazanimCihazlari",
   BUTTERFLY: "mutfakFanlari",
   FOX: "siginakFanlari",
 };

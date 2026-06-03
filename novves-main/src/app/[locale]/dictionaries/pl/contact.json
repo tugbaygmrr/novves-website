@@ -70,5 +70,171 @@
     "title2": "Głoska bezdźwięczna",
     "desc": "Śledź nas w mediach społecznościowych i bądź na bieżąco z najnowszymi wydarzeniami.",
     "visitPage": "Odwiedź stronę"
+  },
+  "iletisimHub": {
+    "breadcrumbHome": "Dom",
+    "breadcrumbSection": "Kontakt i wsparcie",
+    "breadcrumbCurrent": "Skontaktuj się",
+    "sidebarSubtitle": "Centrum kontaktowe",
+    "navContactSupport": "Kontakt i wsparcie",
+    "navContact": "Kontakt",
+    "navTechnicalSupport": "Prośba o wsparcie techniczne",
+    "navPartners": "Partnerzy strategiczni",
+    "navGlobalPartners": "Nasi globalni partnerzy",
+    "navPartnership": "Partnerstwo rozwiązań",
+    "workingHours": "Godziny pracy",
+    "weekdays": "Dni powszednie",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "Sobota",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "Niedziela",
+    "sundayClosed": "Zamknięte",
+    "downloadSpecs": "Dokumenty techniczne",
+    "heroBadge": "Kontakt i wsparcie",
+    "heroTitle": "Budujmy",
+    "heroTitleLine2": "przyszłość razem.",
+    "heroDesc": "Nasz zespół ekspertów NOVVES zapewnia wsparcie techniczne, doradztwo projektowe i rozwiązania strategiczne.",
+    "formTitle": "Formularz kontaktowy",
+    "formDesc": "Wypełnij poniższy formularz, aby uzyskać szczegółowe informacje na temat swojego projektu.",
+    "successMessage": "Twoja wiadomość została pomyślnie wysłana. Wkrótce skontaktujemy się z Tobą.",
+    "labelName": "Pełne imię i nazwisko",
+    "labelCompany": "Nazwa firmy",
+    "labelEmail": "E-mail",
+    "labelPhone": "Telefon",
+    "labelDepartment": "Dział",
+    "labelSubject": "Temat",
+    "labelMessage": "Twoja wiadomość",
+    "placeholderName": "Twoje pełne imię i nazwisko",
+    "placeholderCompany": "Twoja organizacja",
+    "placeholderEmail": "corporate@email.com",
+    "placeholderPhone": "+1 (___) ____-____",
+    "placeholderSelect": "Wybierać",
+    "placeholderSubject": "Temat",
+    "placeholderMessage": "Szczegóły dotyczące Twojego projektu lub pytania...",
+    "departments": [
+      "Serwis Techniczny",
+      "Ankieta na miejscu",
+      "Zapytanie o produkt lub wsparcie",
+      "Doradztwo techniczne",
+      "Dalsze żądanie"
+    ],
+    "kvkkConsent": "Przesyłając ten formularz wyrażasz zgodę na przetwarzanie swoich danych osobowych zgodnie z obowiązującymi przepisami o ochronie danych.",
+    "submit": "Prześlij formularz",
+    "locationsTitle": "Nasze lokalizacje",
+    "locationsDesc": "Dotrzyj do naszych centrów operacyjnych w całej Turcji.",
+    "getDirections": "Uzyskaj wskazówki",
+    "locations": [
+      {
+        "id": "hq",
+        "badge": "Siedziba główna",
+        "title": "Biuro w Stambule",
+        "address": "19 maja Mah. Sumer Sok.\nZitaş Plaza C2 Blok nr 7\nKadıköy / Stambuł"
+      },
+      {
+        "id": "factory",
+        "badge": "Factory",
+        "title": "Zakład produkcyjny Yalova",
+        "address": "Taşköprü Merkez Mah. Caydere Sok.\nBina nr: 9/1 Fabrika Kapı nr: 2\nÇiftlikköy / Yalova"
+      },
+      {
+        "id": "service",
+        "badge": "Serwis Techniczny",
+        "title": "Centrum usług",
+        "address": "Zorganizowana strefa przemysłowa Dudullu\nÜmraniye / Stambuł"
+      }
+    ],
+    "fabLabel": "Wsparcie na żywo"
+  },
+  "sosyalMedyaHub": {
+    "breadcrumbHome": "Dom",
+    "breadcrumbContact": "Kontakt",
+    "breadcrumbSocialMedia": "Media społecznościowe",
+    "heroTitle1": "SPOŁECZNY",
+    "heroTitle2": "CENTRUM",
+    "heroDesc": "Wybierz częstotliwość podstawową. Spostrzeżenia inżynieryjne dostarczane w strumieniach globalnych i lokalnych.",
+    "channels": {
+      "instagram": {
+        "label": "Instagram",
+        "titleLine1": "Wizualny",
+        "titleLine2": "Doskonałość",
+        "trLink": "PODAJNIK TR",
+        "globalLink": "GLOBALNY PASZ"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "titleLine1": "Zbiorowy",
+        "titleLine2": "Spostrzeżenia",
+        "trLink": "SIEĆ TR",
+        "globalLink": "GLOBALNA SIEĆ"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "titleLine1": "Bezpośredni",
+        "titleLine2": "Kanał",
+        "trLink": "KONTAKT TR",
+        "globalLink": "GLOBALNY KONTAKT"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "titleLine1": "Audycja",
+        "titleLine2": "Centrum",
+        "trLink": "KANAŁ TR",
+        "globalLink": "KANAŁ GLOBALNY"
+      }
+    },
+    "momentsTitle1": "CHWILE",
+    "momentsTitle2": "INNOWACJA",
+    "momentsDesc": "Wyselekcjonowane na żywo archiwum przełomowych rozwiązań inżynieryjnych i najważniejszych wydarzeń społeczności.",
+    "filterLatest": "Filtr: najnowsze",
+    "viewArchive": "Zobacz archiwum",
+    "featuredPost": "Polecany wpis",
+    "share": "Udział",
+    "caseStudy": "Studium przypadku",
+    "statsValue": "113+",
+    "statsLabel": "Projekty dostarczane na całym świecie",
+    "subscribeTitle1": "DOŁĄCZ DO",
+    "subscribeTitle2": "EWOLUCJA",
+    "subscribeDesc": "Zapisz się na naszą odprawę techniczną i nigdy nie przegap przełomu w inżynierii ruchu powietrznego.",
+    "subscribePlaceholder": "Wpisz swój firmowy adres e-mail",
+    "subscribeButton": "Subskrybować",
+    "subscribeSuccess": "Dziękuję – jesteś na liście.",
+    "backToContact": "Powrót do kontaktu",
+    "feedPosts": {
+      "featured": {
+        "alt": "Magazyn 2M Logistics Gebze — system wentylatorów strumieniowych Novves",
+        "title": "2M LOGISTYKA GEBZE",
+        "titleLine2": "MAGAZYN",
+        "description": "Rozwiązania w zakresie kontroli dymu i wentylacji za pomocą wentylatorów strumieniowych zaprojektowane i dostarczone przez firmę NOVVES.",
+        "likes": "2.4k",
+        "comments": "184"
+      },
+      "square-1": {
+        "alt": "Projekt wentylacji obiektu przemysłowego ASELSAN Konya",
+        "title": "ASELSAN KONYA",
+        "likes": "842",
+        "comments": "32"
+      },
+      "square-2": {
+        "alt": "Projekt mieszkaniowy 3S Kale Topaz w Zeytinburnu",
+        "title": "TOPAZ 3S JURUS",
+        "likes": "1.2k",
+        "comments": "56"
+      },
+      "tall": {
+        "alt": "Szpital Adana Yüreğir na 100 łóżek — odprowadzanie dymu i ciepła",
+        "title": "SZPITAL ADANA YÜREĞİR",
+        "likes": "560",
+        "comments": "21"
+      },
+      "stats": {
+        "alt": ""
+      },
+      "square-3": {
+        "alt": "Wentylacja wielopoziomowego parkingu gminy Adıyaman",
+        "title": "PARKING ADIYAMAN",
+        "likes": "430",
+        "comments": "18"
+      }
+    }
   }
 }

@@ -70,5 +70,171 @@
     "title2": "媒体",
     "desc": "在社交媒体上关注我们并及时了解最新动态。",
     "visitPage": "访问页面"
+  },
+  "iletisimHub": {
+    "breadcrumbHome": "家",
+    "breadcrumbSection": "联系与支持",
+    "breadcrumbCurrent": "联系我们",
+    "sidebarSubtitle": "联系中心",
+    "navContactSupport": "联系与支持",
+    "navContact": "接触",
+    "navTechnicalSupport": "技术支持请求",
+    "navPartners": "战略合作伙伴",
+    "navGlobalPartners": "我们的全球合作伙伴",
+    "navPartnership": "解决方案合作伙伴",
+    "workingHours": "工作时间",
+    "weekdays": "平日",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "周六",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "星期日",
+    "sundayClosed": "关闭",
+    "downloadSpecs": "技术文件",
+    "heroBadge": "联系与支持",
+    "heroTitle": "让我们构建",
+    "heroTitleLine2": "共同未来。",
+    "heroDesc": "我们的 NOVVES 专家团队随时为您提供技术支持、项目咨询和战略解决方案。",
+    "formTitle": "联系表",
+    "formDesc": "填写下面的表格以获取有关您的项目的详细信息。",
+    "successMessage": "您的消息已成功发送。我们会尽快回复您。",
+    "labelName": "姓名",
+    "labelCompany": "公司名称",
+    "labelEmail": "电子邮件",
+    "labelPhone": "电话",
+    "labelDepartment": "部门",
+    "labelSubject": "主题",
+    "labelMessage": "您的留言",
+    "placeholderName": "你的全名",
+    "placeholderCompany": "您的组织",
+    "placeholderEmail": "corporate@email.com",
+    "placeholderPhone": "+1 (___) ___-____",
+    "placeholderSelect": "选择",
+    "placeholderSubject": "主题行",
+    "placeholderMessage": "有关您的项目或问题的详细信息...",
+    "departments": [
+      "技术服务",
+      "现场勘察",
+      "产品查询或支持",
+      "技术咨询",
+      "后续请求"
+    ],
+    "kvkkConsent": "提交此表格即表示您同意根据适用的数据保护法处理您的个人数据。",
+    "submit": "提交表格",
+    "locationsTitle": "我们的地点",
+    "locationsDesc": "到达我们遍布土耳其的运营中心。",
+    "getDirections": "获取路线",
+    "locations": [
+      {
+        "id": "hq",
+        "badge": "总公司",
+        "title": "伊斯坦布尔办事处",
+        "address": "19 月 日苏梅尔·索克。\nZitaş 广场 C2 号楼：7\n卡德柯伊 / 伊斯坦布尔"
+      },
+      {
+        "id": "factory",
+        "badge": "Factory",
+        "title": "亚洛瓦生产厂",
+        "address": "Taşköprü Merkez Mah.卡伊代雷·索克。\nBina 编号：9/1 Fabrika Kapı 编号：2\n恰夫利科伊/亚洛瓦"
+      },
+      {
+        "id": "service",
+        "badge": "技术服务",
+        "title": "服务中心",
+        "address": "都都鲁工业区\n乌姆拉尼耶 / 伊斯坦布尔"
+      }
+    ],
+    "fabLabel": "实时支持"
+  },
+  "sosyalMedyaHub": {
+    "breadcrumbHome": "家",
+    "breadcrumbContact": "接触",
+    "breadcrumbSocialMedia": "社交媒体",
+    "heroTitle1": "社会的",
+    "heroTitle2": "中心",
+    "heroDesc": "选择您的主要频率。跨全球和本地流提供工程见解。",
+    "channels": {
+      "instagram": {
+        "label": "Instagram",
+        "titleLine1": "视觉的",
+        "titleLine2": "卓越",
+        "trLink": "饲料",
+        "globalLink": "全球饲料"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "titleLine1": "公司的",
+        "titleLine2": "见解",
+        "trLink": "TR网络",
+        "globalLink": "全球网络"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "titleLine1": "直接的",
+        "titleLine2": "渠道",
+        "trLink": "联系方式",
+        "globalLink": "全球联系方式"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "titleLine1": "播送",
+        "titleLine2": "中心",
+        "trLink": "电视频道",
+        "globalLink": "全球频道"
+      }
+    },
+    "momentsTitle1": "的时刻",
+    "momentsTitle2": "创新",
+    "momentsDesc": "精心策划的工程突破和社区亮点的实时档案。",
+    "filterLatest": "筛选： 最新",
+    "viewArchive": "查看档案",
+    "featuredPost": "特色帖子",
+    "share": "分享",
+    "caseStudy": "案例研究",
+    "statsValue": "113+",
+    "statsLabel": "全球交付的项目",
+    "subscribeTitle1": "加入",
+    "subscribeTitle2": "进化",
+    "subscribeDesc": "订阅我们的技术简报，不错过空气运动工程领域的突破。",
+    "subscribePlaceholder": "输入您的企业电子邮件",
+    "subscribeButton": "订阅",
+    "subscribeSuccess": "谢谢你——你在名单上。",
+    "backToContact": "返回联系方式",
+    "feedPosts": {
+      "featured": {
+        "alt": "2M Logistics 盖布泽仓库 — Novves 射流风机系统",
+        "title": "2M 物流盖布泽",
+        "titleLine2": "仓库",
+        "description": "射流风机烟雾控制和通风解决方案由 NOVVES 设计和提供。",
+        "likes": "2.4k",
+        "comments": "184"
+      },
+      "square-1": {
+        "alt": "ASELSAN科尼亚工业设施通风项目",
+        "title": "阿塞尔桑·科尼亚",
+        "likes": "842",
+        "comments": "32"
+      },
+      "square-2": {
+        "alt": "Zeytinburnu 3S Kale Topaz 住宅项目",
+        "title": "3S 羽衣甘蓝黄玉",
+        "likes": "1.2k",
+        "comments": "56"
+      },
+      "tall": {
+        "alt": "Adana Yüreğir 100 个床位的医院 — 排烟排热",
+        "title": "阿达纳尤勒伊尔医院",
+        "likes": "560",
+        "comments": "21"
+      },
+      "stats": {
+        "alt": ""
+      },
+      "square-3": {
+        "alt": "阿德亚曼市多层停车场通风",
+        "title": "阿迪亚曼停车场",
+        "likes": "430",
+        "comments": "18"
+      }
+    }
   }
 }

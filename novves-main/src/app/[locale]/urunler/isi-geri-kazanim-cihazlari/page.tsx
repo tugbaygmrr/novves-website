@@ -5,6 +5,11 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
 import { productLeafMetadata } from "@/lib/i18n-metadata";
 
+function introParagraphs(intro: string): string[] {
+  const parts = intro.split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
+  return parts.length > 0 ? parts : [intro];
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -42,7 +47,14 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <section className="bg-[#ecebe6] py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-ink/10 bg-white/80 p-6 shadow-[0_14px_38px_-30px_rgba(15,20,30,0.25)] sm:p-7">
-            <p className="text-base leading-7 text-secondary/80">{t.intro}</p>
+            {introParagraphs(t.intro).map((paragraph, index) => (
+              <p
+                key={index}
+                className={`text-base leading-7 text-secondary/80 ${index > 0 ? "mt-4" : ""}`}
+              >
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
       </section>
