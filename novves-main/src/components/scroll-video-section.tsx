@@ -71,16 +71,32 @@ const START_CARD_CERTS: ReadonlyArray<{ src: string; alt: string }> = [
   { src: "/images/cert-iso14001.png", alt: "ISO 14001" },
 ];
 
-/** Start card liste ikonları — sırasıyla titleLine1/2/3 ile eşleşir
- * (Duman Tahliye Fanları → fan, Klima Santralleri → kar tanesi, Endüstriyel Fanlar → fabrika). */
+/** Hero sol kenar şeridi — dik sütun, yukarıdan aşağı: CE, ISO14001, Efectis, BSI, TSE, ISO, EN. */
+const HERO_CERT_STRIP: ReadonlyArray<{ src: string; alt: string }> = [
+  { src: "/images/cert-ce.png", alt: "CE" },
+  { src: "/images/cert-iso14001.png", alt: "ISO 14001" },
+  { src: "/images/cert-efectis.png", alt: "Efectis" },
+  { src: "/images/cert-bsi.png", alt: "BSI" },
+  { src: "/images/cert-tse.png", alt: "TSE" },
+  { src: "/images/cert-iso.png", alt: "ISO" },
+  { src: "/images/cert-en.png", alt: "EN" },
+];
+
+/** Start card liste ikonları — titleLine1/2/3: fabrika, fan, klima */
 const START_CARD_LIST_ICONS = [
   (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <circle cx="12" cy="12" r="1.8" />
-      <path d="M10.83 10.83C10.83 7.5 8.5 3 12 3s5.17 4.5 5.17 7.83" />
-      <path d="M13.17 13.17C13.17 16.5 15.5 21 12 21s-5.17-4.5-5.17-7.83" />
-      <path d="M10.83 13.17C7.5 13.17 3 15.5 3 12s4.5-5.17 7.83-5.17" />
-      <path d="M13.17 10.83C16.5 10.83 21 8.5 21 12s-4.5 5.17-7.83 5.17" />
+      <path d="M2 20V8.5a1 1 0 0 1 1.6-.8L9 12V8.5a1 1 0 0 1 1.6-.8L16 12V4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16" />
+      <path d="M2 20h20" />
+      <path d="M6 16h1" />
+      <path d="M11 16h1" />
+      <path d="M17 16h1" />
+    </svg>
+  ),
+  (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
+      <circle cx="12" cy="12" r="1.1" />
     </svg>
   ),
   (
@@ -94,16 +110,40 @@ const START_CARD_LIST_ICONS = [
       <path d="M21 9.5l-2.6 1.5L21 12.5" />
     </svg>
   ),
+];
+
+/** Hero istatistik ikonları — 500+ proje (insan grubu), 30+ ülke (globe), 7000+ ürün (kutu) */
+const START_CARD_STAT_ICONS = [
   (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M2 20V8.5a1 1 0 0 1 1.6-.8L9 12V8.5a1 1 0 0 1 1.6-.8L16 12V4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16" />
-      <path d="M2 20h20" />
-      <path d="M6 16h1" />
-      <path d="M11 16h1" />
-      <path d="M17 16h1" />
+      <circle cx="12" cy="7.2" r="2.5" />
+      <path d="M6.8 18v-.7a5.2 5.2 0 0 1 10.4 0v.7" />
+      <circle cx="5.2" cy="9.8" r="1.9" />
+      <path d="M2.2 17.6v-.5a3.4 3.4 0 0 1 3-3.38" />
+      <circle cx="18.8" cy="9.8" r="1.9" />
+      <path d="M21.8 17.6v-.5a3.4 3.4 0 0 0-3-3.38" />
+    </svg>
+  ),
+  (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18" />
+      <ellipse cx="12" cy="12" rx="4" ry="9" />
+    </svg>
+  ),
+  (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+      <path d="M3.3 7.2 12 12l8.7-4.8" />
+      <path d="M12 22V12" />
     </svg>
   ),
 ];
+
+function heroDisplayStats(stats?: StartCard["stats"]) {
+  if (!stats?.length) return [];
+  return stats.slice(0, 3);
+}
 
 
 /** Masaüstü scroll animasyonu — tüm kareleri aynı anda yüklemek zayıf PC’lerde donmaya yol açar */
@@ -137,11 +177,8 @@ function scrubVideoTo(v: HTMLVideoElement, seconds: number, scrollScrub?: boolea
   const t = Math.min(Math.max(seconds, 0), d - 0.001);
   const fast = (v as HTMLVideoElement & { fastSeek?: (time: number) => void }).fastSeek;
   if (scrollScrub) {
-    /** Mobile / scroll-driven — dar eşik (0.06s) + fastSeek (yakın keyframe, decode ucuz) */
+    /** Scroll-driven: intra-only video için precise currentTime, GSAP scrub akışını bozmaz. */
     if (Math.abs(t - v.currentTime) < 0.06) return;
-    if (typeof fast === "function") {
-      try { fast.call(v, t); return; } catch { /* fall through */ }
-    }
     v.currentTime = t;
     return;
   }
@@ -187,6 +224,7 @@ function primeIOSVideoFirstFrame(v: HTMLVideoElement) {
 export function ScrollVideoSection({
   framesPath,
   totalFrames,
+  frameExt = "jpg",
   videoSrc,
   scrollImageSrc,
   scrollImageAlt = "",
@@ -208,6 +246,7 @@ export function ScrollVideoSection({
 }: {
   framesPath?: string;
   totalFrames?: number;
+  frameExt?: "jpg" | "png" | "webp";
   /** MP4 scroll-scrub (kare dizisi yerine) */
   videoSrc?: string;
   /** Tek görsel + scroll — video seek yok, kasma biter (ör. ana sayfa hero) */
@@ -238,6 +277,7 @@ export function ScrollVideoSection({
   const canvasWashRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const navyHaloRef = useRef<HTMLDivElement>(null);
+  const heroGradientRef = useRef<HTMLDivElement>(null);
   const startCardRef = useRef<HTMLDivElement>(null);
   const startCardSurfaceRef = useRef<HTMLDivElement>(null);
   const endCardSurfaceRef = useRef<HTMLDivElement>(null);
@@ -246,6 +286,7 @@ export function ScrollVideoSection({
   const sideLabelRef = useRef<HTMLSpanElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
   const endCardRef = useRef<HTMLDivElement>(null);
+  const mobileFinalCardRef = useRef<HTMLDivElement>(null);
   const frameCacheRef = useRef<Map<number, HTMLImageElement>>(new Map());
   const currentFrameRef = useRef(0);
   const rafRef = useRef<number>(0);
@@ -255,23 +296,13 @@ export function ScrollVideoSection({
     setMounted(true);
   }, []);
 
-  /** Dar ekranda gizli masaüstü <video> hero MP4 çekmesin — yalnızca lg+ iken preload + load */
+  /** Responsive hero artık tüm ekranlarda aynı video/canvas katmanını kullanır. */
   useEffect(() => {
     if (!mounted || !isVideoMode || !videoSrc) return;
     const el = videoRef.current;
     if (!el) return;
-    const mq = window.matchMedia("(min-width: 1024px)");
-    const sync = () => {
-      if (mq.matches) {
-        el.preload = "auto";
-        void el.load();
-      } else {
-        el.preload = "none";
-      }
-    };
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
+    el.preload = "auto";
+    void el.load();
   }, [mounted, isVideoMode, videoSrc]);
 
   const renderFrame = useCallback((index: number) => {
@@ -284,6 +315,7 @@ export function ScrollVideoSection({
     if (!img || !img.complete) return;
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 0, 0);
   }, [isVideoMode, isScrollStill]);
 
@@ -303,7 +335,7 @@ export function ScrollVideoSection({
 
     function frameSrc(i: number) {
       const num = String(i + 1).padStart(4, "0");
-      return `${framesPath}/frame-${num}.jpg`;
+      return `${framesPath}/frame-${num}.${frameExt}`;
     }
 
     function syncFrameWindow(centerIndex: number) {
@@ -378,7 +410,7 @@ export function ScrollVideoSection({
           stickyShellRef.current.style.backgroundColor = shellBg;
         }
         if (navyHaloRef.current) {
-          navyHaloRef.current.style.opacity = String(Math.max(1 - open * 1.4, 0));
+          navyHaloRef.current.style.opacity = "0";
         }
         if (canvasWashRef.current) {
           canvasWashRef.current.style.opacity = "0";
@@ -394,7 +426,7 @@ export function ScrollVideoSection({
           sideLabelRef.current.style.color = lerpRgb([210, 208, 200], [118, 114, 108], open);
         }
 
-        for (const el of [startCardSurfaceRef.current, endCardSurfaceRef.current]) {
+        for (const el of [endCardSurfaceRef.current]) {
           if (!el) continue;
           el.style.backgroundColor = boxFill;
           el.style.borderColor = boxEdge;
@@ -471,6 +503,9 @@ export function ScrollVideoSection({
         const pq = mk / MOTION_DOM_STEPS;
         // Start card görünmezse (fade=0) DOM yazımı atla — opacity 0'da paint zaten kalkmış
         const startFade = Math.max(1 - pq * 2.4, 0);
+        if (heroGradientRef.current) {
+          heroGradientRef.current.style.opacity = String(startFade);
+        }
         if (startCardRef.current && startFade > 0) {
           startCardRef.current.style.opacity = String(startFade);
           startCardRef.current.style.transform = `translate3d(0,-${pq * 30}px,0)`;
@@ -484,8 +519,21 @@ export function ScrollVideoSection({
         const mediaEl = isScrollStill ? heroImageRef.current : isVideoMode ? videoRef.current : canvasRef.current;
         if (mediaEl) {
           const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
-          const fanX = 18 + transition * 14;
-          const fanScale = 1.14 - transition * 0.04;
+          const viewportWidth = typeof window !== "undefined" ? window.innerWidth : 1440;
+          const isNarrow = viewportWidth < 768;
+          const isTablet = viewportWidth >= 768 && viewportWidth < 1024;
+          const settle = Math.min(transition / 0.58, 1);
+          const cover = Math.min(Math.max((transition - 0.58) / 0.42, 0), 1);
+          const fanX = isNarrow
+            ? 100 - settle * 58 - cover * 46
+            : isTablet
+              ? 100 - settle * 58 - cover * 46
+            : 18 + transition * 14;
+          const fanScale = isNarrow
+            ? 1 + cover * 0.72
+            : isTablet
+              ? 1 + cover * 0.72
+            : 1.14 - transition * 0.04;
           mediaEl.style.objectPosition = `${fanX.toFixed(1)}% center`;
           (mediaEl as HTMLElement).style.transform = `translateZ(0) scale(${fanScale.toFixed(3)})`;
         }
@@ -494,6 +542,11 @@ export function ScrollVideoSection({
           const shift = Math.max(40 - endFade * 40, 0);
           endCardRef.current.style.opacity = String(Math.min(endFade, 1));
           endCardRef.current.style.transform = `translate3d(${shift}px,0,0)`;
+        }
+        if (mobileFinalCardRef.current && (endFade > 0 || mobileFinalCardRef.current.style.opacity !== "0")) {
+          const lift = Math.max(24 - endFade * 24, 0);
+          mobileFinalCardRef.current.style.opacity = String(Math.min(endFade, 1));
+          mobileFinalCardRef.current.style.transform = `translate3d(0,${lift}px,0)`;
         }
         if (statsRef.current) {
           const sFade = Math.max(1 - pq * 3.2, 0);
@@ -548,35 +601,15 @@ export function ScrollVideoSection({
       if (!isVideoMode && !isScrollStill) cache.clear();
       specRowCells = null;
     };
-  }, [mounted, isVideoMode, isScrollStill, scrollImageSrc, videoSrc, framesPath, renderFrame, totalFrames]);
+  }, [mounted, isVideoMode, isScrollStill, scrollImageSrc, videoSrc, framesPath, frameExt, renderFrame, totalFrames]);
 
   return (
     <>
-      {/* ── Mobile version ── */}
-      <MobileScrollSection
-        framesPath={framesPath}
-        totalFrames={totalFrames}
-        videoSrc={videoSrc}
-        scrollImageSrc={scrollImageSrc}
-        scrollImageAlt={scrollImageAlt}
-        mobileVideoReplacementSrc={mobileVideoReplacementSrc}
-        mobileVideoReplacementAlt={mobileVideoReplacementAlt}
-        mobileHeroImageSrc={mobileHeroImageSrc}
-        mobileHeroImageAlt={mobileHeroImageAlt}
-        mobilePlainHero={mobilePlainHero}
-        scrollVh={scrollVh}
-        startCard={startCard}
-        endCard={endCard}
-        locale={locale}
-        productHref={productHref}
-        sideLabel={sideLabel}
-      />
-
-      {/* ── Desktop version (lg+) ── */}
+      {/* ── Responsive sticky hero: desktop ile aynı GSAP / scroll mantığı tüm ekranlarda ── */}
       <div
         ref={containerRef}
         id={id}
-        className="relative hidden lg:block"
+        className="relative block"
         style={{ height: `${scrollVh}vh`, backgroundColor: "#f4f4ea" }}
       >
       <div
@@ -608,13 +641,13 @@ export function ScrollVideoSection({
             disablePictureInPicture
             disableRemotePlayback
             className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden] [contain:layout_paint]"
-            style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
+            style={{ objectPosition: "100% center", transform: "translateZ(0) scale(1)" }}
           />
         ) : (
           <canvas
             ref={canvasRef}
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
+            style={{ objectPosition: "100% center", transform: "translateZ(0) scale(1)", backgroundColor: "#f4f4ea", imageRendering: "auto" }}
           />
         )}
         <div
@@ -660,245 +693,213 @@ export function ScrollVideoSection({
           </div>
         )}
 
-        {/* Box yansıma efekti — sol-merkez radial soft glow, dışa doğru fade */}
+        {/* Koyu halo kapalı — hero arka planı header ile aynı tek cream renk kalır */}
         <div
           ref={navyHaloRef}
           className="pointer-events-none absolute inset-0 z-10"
           style={{
-            background:
-              "radial-gradient(ellipse 55% 75% at 18% 50%, rgba(15,29,51,0.45) 0%, rgba(15,29,51,0.22) 35%, rgba(15,29,51,0.08) 60%, rgba(15,29,51,0) 80%)",
-            opacity: 1,
+            background: "transparent",
+            opacity: 0,
             transition: "opacity 0.15s linear",
           }}
           aria-hidden
         />
 
-        {/* START CARD — geniş kutu, metalik H1 + turuncu H2 + iconlu liste + glass CTA + sertifika marquee */}
+        {/* Header renginden videoya soldan sağa yumuşak geçiş */}
+        {startCard && (
+          <div
+            ref={heroGradientRef}
+            className="pointer-events-none absolute inset-y-0 left-0 z-[6] w-[70%]"
+            style={{
+              background:
+                "linear-gradient(90deg, #f4f4ea 0%, rgba(244,244,234,0.96) 38%, rgba(244,244,234,0.58) 64%, rgba(244,244,234,0) 100%)",
+              opacity: 1,
+              transition: "opacity 0.12s linear",
+            }}
+            aria-hidden
+          />
+        )}
+
+
+        {/* START CARD — mockup: sol metin + orta istatistikler + scroll video sağda */}
         {startCard && (
           <div
             ref={startCardRef}
-            className="absolute top-[60px] bottom-[70px] left-0 z-20 flex w-full max-w-[min(740px,min(60vw,calc(100vw-2.5rem)))] items-center pl-5 pr-4 sm:pl-8 sm:pr-5 xl:pl-14 xl:pr-8"
+            className="absolute inset-y-0 left-0 z-20 flex w-full max-w-[calc(100vw-1.5rem)] items-start pl-5 pr-4 pt-[5.5rem] sm:max-w-[min(760px,76vw)] sm:pl-10 sm:pt-0 md:max-w-[min(760px,72vw)] md:items-center lg:max-w-[min(980px,min(68vw,calc(100vw-2.5rem)))] lg:pl-14 lg:pr-6 xl:pl-[4.5rem] xl:pr-8"
           >
             <div
               ref={startCardSurfaceRef}
-              className="group relative w-full overflow-hidden rounded-[2rem] px-7 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.35)] sm:px-9 sm:py-5 [transform:translateZ(0)]"
+              className="group relative flex h-full w-full items-start overflow-visible pb-8 pt-0 md:items-center lg:items-start lg:pt-[clamp(9.5rem,25vh,15rem)] [transform:translateZ(0)]"
               style={
                 {
-                  backgroundColor: "#0f1d33",
-                  borderColor: "transparent",
-                  color: "rgb(230, 230, 230)",
-                  ["--c-title" as string]: "rgb(255, 255, 255)",
-                  ["--c-sub" as string]: "rgb(209, 209, 209)",
-                  ["--c-accent" as string]: `rgb(${SCROLL_ACCENT_DARK[0]}, ${SCROLL_ACCENT_DARK[1]}, ${SCROLL_ACCENT_DARK[2]})`,
-                  ["--c-spec-v" as string]: "rgb(255, 255, 255)",
+                  background: "transparent",
+                  color: "rgb(58, 60, 61)",
                 } as CSSProperties
               }
             >
-              {/* Arka plan — Gemini generated blueprint görseli (tam opak) */}
+              {/* İki eş merkezli ince halka — sertifika bölgesine uzanır, certlerin altından görünür */}
               <div
-                className="pointer-events-none absolute inset-0"
-                style={{
-                  backgroundImage: "url('/images/Gemini_Generated_Image_auvf7pauvf7pauvf.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
                 aria-hidden
-              />
-              {/* Metin okunabilirlik darken — sol karanlık, sağa transparent (map glow korunur) */}
-              <div
-                className="pointer-events-none absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(to right, rgba(8,15,35,0.7) 0%, rgba(8,15,35,0.55) 35%, rgba(8,15,35,0.25) 60%, rgba(8,15,35,0) 80%)",
-                }}
-                aria-hidden
-              />
-              {/* Hero H1 — Montserrat ExtraBold 800, 48px metalik başlık */}
-              {startCard.eyebrow && (() => {
-                const lines = startCard.eyebrow.split(/\n/).map(s => s.trim()).filter(Boolean).slice(0, 2);
-                const h1Style: CSSProperties = {
-                  fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
-                  fontWeight: 800,
-                  fontSize: "3rem",
-                  lineHeight: 1.04,
-                  letterSpacing: "-0.015em",
-                  backgroundImage: "linear-gradient(180deg, #f4f4ea 0%, #eaeadf 45%, #c4c4b6 100%)",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.5)) drop-shadow(0 4px 12px rgba(0,0,0,0.45))",
-                };
-                return (
-                  <div className="relative space-y-1">
-                    {lines.map((line, i) => (
-                      <h1 key={i} className="relative uppercase text-balance" style={h1Style}>
-                        {line}
+                className="pointer-events-none absolute left-[38%] top-[57%] z-0 -translate-x-1/2 -translate-y-1/2"
+              >
+                <div className="absolute left-1/2 top-1/2 h-[min(56rem,92vh)] w-[min(56rem,92vh)] -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary/25" />
+                <div className="absolute left-1/2 top-1/2 h-[min(30rem,54vh)] w-[min(30rem,54vh)] -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary/[0.18]" />
+              </div>
+
+              <div className="relative z-20 flex w-full min-w-0 items-start gap-4 sm:items-center sm:gap-6 xl:gap-10">
+                <div className="min-w-0 flex-1 max-w-[min(560px,92vw)] pl-0 sm:max-w-[min(580px,52vw)] sm:pl-6 md:max-w-[min(660px,64vw)] lg:max-w-[min(580px,52vw)] lg:pl-10 xl:pl-14">
+                  <span className="inline-flex items-center gap-1.5 rounded-md bg-primary/[0.12] px-3 py-1.5 text-[11px] font-semibold tracking-[0.04em] text-primary sm:-mt-3 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-base">
+                    <span className="text-base leading-none font-semibold">+</span>
+                    {startCard.badge}
+                  </span>
+
+                  {startCard.eyebrow && (() => {
+                    const lines = startCard.eyebrow.split(/\n/).map((s) => s.trim()).filter(Boolean).slice(0, 2);
+                    return (
+                      <h1
+                        className="relative mt-5 text-[clamp(2.35rem,8.8vw,3.9rem)] font-semibold leading-[1.02] tracking-[-0.02em] md:text-[clamp(4rem,7vw,4.7rem)] lg:text-[clamp(2.35rem,8.8vw,3.9rem)]"
+                        style={{
+                          fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
+                          fontWeight: 600,
+                        }}
+                      >
+                        <span className="block whitespace-nowrap text-primary">{lines[0]}</span>
+                        {lines[1] ? <span className="block text-ink">{lines[1]}</span> : null}
                       </h1>
-                    ))}
+                    );
+                  })()}
+
+                  <p className="relative mt-4 max-w-[38ch] text-[15px] font-bold leading-[1.62] text-ink drop-shadow-[0_1px_0_rgba(244,244,234,0.9)] sm:mt-5 sm:max-w-[58ch] sm:text-[16.5px] sm:font-medium sm:leading-[1.7] sm:text-secondary sm:drop-shadow-none md:max-w-[54ch] md:text-[18px] lg:max-w-[58ch] lg:text-[16.5px]">
+                    {startCard.subtitle}
+                  </p>
+
+                  {(startCard.titleLine1 || startCard.titleLine2 || startCard.titleLine3) && (
+                    <ul className="relative mt-5 space-y-2.5 sm:mt-6 sm:space-y-3 md:mt-7 md:space-y-4 lg:mt-6 lg:space-y-3">
+                      {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
+                        if (!raw) return null;
+                        const label = raw.replace(/^[•·*—–-]\s*/u, "");
+                        return (
+                          <li key={i} className="flex items-center gap-3 text-primary">
+                            <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-6 lg:w-6" aria-hidden>
+                              {START_CARD_LIST_ICONS[i]}
+                            </span>
+                            <span
+                              className="text-[clamp(0.95rem,1.2vw,1.2rem)] font-normal md:text-[clamp(1.2rem,2vw,1.45rem)] lg:text-[clamp(0.95rem,1.2vw,1.2rem)]"
+                              style={{
+                                fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
+                                fontWeight: 400,
+                              }}
+                            >
+                              {label}
+                            </span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+
+                  {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
+                    <div className="relative mt-6 flex flex-wrap items-center gap-3 md:mt-8 md:gap-4 lg:mt-6 lg:gap-3">
+                      {startCard.ctaPrimary && (
+                        <Link
+                          href={`/${locale}/iletisim`}
+                          className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_-10px_rgba(239,95,23,0.55)] transition-colors duration-300 hover:bg-primary-deep md:px-8 md:py-4 md:text-base lg:px-6 lg:py-3 lg:text-sm"
+                          style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                        >
+                          {startCard.ctaPrimary}
+                        </Link>
+                      )}
+                      {startCard.ctaSecondary && (
+                        <Link
+                          href={`/${locale}/urunler`}
+                          className="inline-flex items-center justify-center rounded-full border-2 border-primary bg-white px-6 py-3 text-sm font-semibold text-primary shadow-[0_10px_28px_-12px_rgba(239,95,23,0.5)] transition-colors duration-300 hover:bg-primary/5 hover:shadow-[0_12px_32px_-12px_rgba(239,95,23,0.62)] md:px-8 md:py-4 md:text-base lg:px-6 lg:py-3 lg:text-sm"
+                          style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                        >
+                          {startCard.ctaSecondary}
+                        </Link>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* İstatistikler — dış (son) halkanın sağ yayı üzerinde konumlu */}
+              {(() => {
+                const displayStats = heroDisplayStats(startCard.stats);
+                if (!displayStats.length) return null;
+                return (
+                  <div
+                    ref={statsRef}
+                    className="absolute top-[57%] z-20 hidden min-w-[180px] flex-col justify-center gap-12 min-[1200px]:flex"
+                    style={{ left: "calc(38% + min(28rem, 46vh))", transform: "translate(-1.125rem, -50%)" }}
+                  >
+                    {displayStats.map((stat, i) => {
+                      /** Üst/alt satırlar halka eğrisini takip etsin diye içeri çekilir (orta satır rightmost noktada) */
+                      const arcInset = i === 1 ? 0 : 16;
+                      return (
+                      <div
+                        key={stat.label}
+                        className="flex items-center gap-5"
+                        style={{ transform: `translateX(-${arcInset}px)` }}
+                      >
+                        <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center text-primary" aria-hidden>
+                          {START_CARD_STAT_ICONS[i]}
+                        </span>
+                        <div>
+                          <p
+                            className="font-semibold leading-none text-ink"
+                            style={{
+                              fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
+                              fontWeight: 600,
+                              fontSize: "clamp(1.85rem, 2.3vw, 2.5rem)",
+                            }}
+                          >
+                            {stat.value}
+                          </p>
+                          <p className="mt-1.5 text-[12.5px] font-normal leading-snug text-secondary">{stat.label}</p>
+                        </div>
+                      </div>
+                      );
+                    })}
                   </div>
                 );
               })()}
+            </div>
 
-              {/* H2 Ana Başlık — Montserrat Bold 700, 36px turuncu, '●' prefix ile badge */}
-              <h2
-                className={`relative text-balance ${startCard.eyebrow ? "mt-3" : ""}`}
-                style={{
-                  fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
-                  fontWeight: 700,
-                  fontSize: "2.25rem",
-                  lineHeight: 1.08,
-                  letterSpacing: "-0.015em",
-                  color: "var(--c-accent)",
-                  textTransform: "uppercase",
-                }}
-              >
-                ● {startCard.badge}
-              </h2>
-
-              {/* Liste — yuvarlak çerçeveli ikon + metin (tire yok) */}
-              {(startCard.titleLine1 || startCard.titleLine2 || startCard.titleLine3) && (
-                <ul className="relative mt-3 space-y-2">
-                  {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
-                    if (!raw) return null;
-                    const label = raw.replace(/^[—–-]\s*/u, "");
-                    return (
-                      <li key={i} className="flex items-center gap-3.5">
-                        <span
-                          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/14 bg-white/[0.07] text-white"
-                          aria-hidden
-                        >
-                          <span className="h-5 w-5">{START_CARD_LIST_ICONS[i]}</span>
-                        </span>
-                        <span
-                          className="font-semibold"
-                          style={{
-                            fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
-                            fontSize: "clamp(0.98rem, 1.15vw, 1.15rem)",
-                            color: "var(--c-title)",
-                            letterSpacing: "-0.005em",
-                          }}
-                        >
-                          {label}
-                        </span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-
-              <p
-                className="relative mt-3 max-w-[48ch] text-[13px] leading-[1.5]"
-                style={{
-                  fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
-                  color: "var(--c-sub)",
-                }}
-              >
-                {startCard.subtitle}
-              </p>
-
-              {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                <div className="relative mt-4 flex w-full flex-col items-stretch gap-2.5 min-[520px]:flex-row min-[520px]:flex-wrap min-[520px]:items-stretch min-[520px]:gap-3">
-                  {startCard.ctaPrimary && (
-                    <Link
-                      href={`/${locale}/iletisim`}
-                      className="group inline-flex flex-1 items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-4 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
-                    >
-                      <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
-                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                          <path d="M9 4h7l4 4v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" />
-                          <path d="M16 4v4h4" />
-                          <path d="M11 13h6" />
-                          <path d="M11 17h6" />
-                          <path d="M11 9h2" />
-                        </svg>
-                      </span>
-                      <span
-                        className="flex-1 text-fine font-semibold uppercase leading-[1.2] tracking-[0.16em]"
-                        style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
-                      >
-                        {startCard.ctaPrimary}
-                      </span>
-                      <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </Link>
-                  )}
-
-                  {startCard.ctaSecondary && (
-                    <Link
-                      href={`/${locale}/urunler`}
-                      className="group inline-flex flex-1 items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-4 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
-                    >
-                      <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
-                        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                          <circle cx="12" cy="12" r="9" />
-                          <path d="M15.5 8.5l-2 5-5 2 2-5z" />
-                        </svg>
-                      </span>
-                      <span
-                        className="flex-1 text-fine font-semibold uppercase leading-[1.2] tracking-[0.16em]"
-                        style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
-                      >
-                        {startCard.ctaSecondary}
-                      </span>
-                      <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </Link>
-                  )}
-                </div>
-              )}
-
-              {/* Sertifika marquee — buton altında, 7 ayrı logo PNG, seamless loop için 2x */}
-              <div className="relative mt-3 -mx-7 -mb-4 overflow-hidden pb-2 pt-2 sm:-mx-9 sm:-mb-5 sm:pb-2.5">
-                <div className="card-cert-marquee-track flex w-max items-center">
-                  {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
-                    // eslint-disable-next-line @next/next/no-img-element
+            {/* Sertifikalar — sürekli dikey kayan marquee, yana çevrili logolar + aralarında yatay çizgiler. Beyaz PNG'ler invert ile açık gri. */}
+            <div
+              className="pointer-events-none absolute inset-y-0 left-0 z-30 hidden w-20 overflow-hidden sm:block"
+              style={{
+                maskImage: "linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%)",
+                WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%)",
+              }}
+            >
+              <div className="hero-cert-marquee-track flex w-full flex-col items-center">
+                {[...HERO_CERT_STRIP, ...HERO_CERT_STRIP].map((cert, i) => (
+                  <span key={`hero-cert-${cert.alt}-${i}`} className="contents">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      key={`${cert.alt}-${i}`}
                       src={cert.src}
-                      alt={i < START_CARD_CERTS.length ? cert.alt : ""}
-                      aria-hidden={i >= START_CARD_CERTS.length || undefined}
-                      className="block h-9 w-auto shrink-0 px-4 sm:h-10"
+                      alt={i < HERO_CERT_STRIP.length ? cert.alt : ""}
+                      aria-hidden={i >= HERO_CERT_STRIP.length || undefined}
+                      className="my-7 h-12 w-auto shrink-0 opacity-30 [filter:invert(1)] [transform:rotate(-90deg)]"
                       loading="lazy"
                       decoding="async"
                     />
-                  ))}
-                </div>
+                    <span className="h-px w-8 bg-ink/25" aria-hidden />
+                  </span>
+                ))}
               </div>
             </div>
           </div>
         )}
 
-        {startCard?.stats && startCard.stats.length > 0 && (
-          <div ref={statsRef} className="absolute bottom-0 left-0 right-0 z-25 border-t border-ink/15 bg-sand-100">
-            <div className="grid grid-cols-2 gap-px bg-ink/10 sm:grid-cols-4">
-              {startCard.stats.map((s) => (
-                <div key={s.label} className="min-w-0 bg-sand-100 px-4 py-4 sm:px-6 sm:py-5 xl:px-10">
-                  <p
-                    className="font-bold text-[clamp(1.35rem,4vw,2.2rem)] leading-none text-ink"
-                    style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
-                  >
-                    {s.value}
-                  </p>
-                  <p
-                    className="mt-2 text-[9px] uppercase leading-snug tracking-[0.2em] text-ink/55 sm:text-[10px] sm:tracking-[0.22em]"
-                    style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
-                  >
-                    {s.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* END CARD — right, sand on ink, editorial */}
         {endCard && (
           <div
             ref={endCardRef}
-            className="pointer-events-none absolute inset-y-0 right-0 z-20 flex items-center pt-[130px]"
+            className="pointer-events-none absolute inset-y-0 right-0 z-20 hidden items-center pt-[130px] lg:flex"
             style={{ opacity: 0 }}
           >
             <div className="pointer-events-auto mr-6 w-[min(580px,min(54vw,calc(100vw-2.5rem)))] xl:mr-14">
@@ -985,6 +986,46 @@ export function ScrollVideoSection({
             </div>
           </div>
         )}
+
+        {endCard && (
+          <div
+            ref={mobileFinalCardRef}
+            className="absolute inset-x-4 bottom-5 z-30 lg:hidden"
+            style={{ opacity: 0, transform: "translate3d(0,24px,0)" }}
+          >
+            <Link
+              href={`/${locale ?? "tr"}${productHref ?? "/urunler"}`}
+              className="block rounded-2xl border border-ink/10 bg-white/95 p-4 shadow-[0_18px_42px_-26px_rgba(21,26,33,0.35)] transition-transform duration-300 active:scale-[0.99]"
+            >
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center gap-2 font-mono-eng text-[9px] uppercase tracking-[0.2em] text-ink/58">
+                  <span className="h-px w-5 bg-primary" />
+                  {endCard.series}
+                </span>
+                <span className="inline-flex items-center gap-1.5 font-mono-eng text-[8px] uppercase tracking-[0.18em] text-ink/55">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  {endCard.spec3Value}
+                </span>
+              </div>
+              <h3 className="mt-2 font-eurostile text-[1.45rem] font-bold leading-[1.04] tracking-[-0.02em] text-ink">
+                {endCard.title}
+              </h3>
+              <p className="mt-2 line-clamp-2 text-[12px] leading-[1.45] text-ink/65">{endCard.desc}</p>
+              <div className="mt-3 grid grid-cols-3 divide-x divide-ink/10 border-t border-ink/10 pt-2.5">
+                {[
+                  { v: endCard.spec1Value, l: endCard.spec1Label },
+                  { v: endCard.spec2Value, l: endCard.spec2Label },
+                  { v: endCard.spec3Value, l: endCard.spec3Label },
+                ].map((s) => (
+                  <div key={s.l} className="px-2 text-center first:pl-0 last:pr-0">
+                    <p className="text-[0.9rem] font-semibold leading-none text-ink">{s.v}</p>
+                    <p className="mt-1 truncate font-mono-eng text-[7px] uppercase tracking-[0.12em] text-ink/50">{s.l}</p>
+                  </div>
+                ))}
+              </div>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
     </>
@@ -1003,6 +1044,7 @@ export function ScrollVideoSection({
 function MobileScrollSection({
   framesPath,
   totalFrames,
+  frameExt = "jpg",
   videoSrc,
   scrollImageSrc,
   scrollImageAlt = "",
@@ -1020,6 +1062,7 @@ function MobileScrollSection({
 }: {
   framesPath?: string;
   totalFrames?: number;
+  frameExt?: "jpg" | "png" | "webp";
   videoSrc?: string;
   scrollImageSrc?: string;
   scrollImageAlt?: string;
@@ -1056,7 +1099,7 @@ function MobileScrollSection({
   const lastMobileFrameRef = useRef(tf);
   const lastMobileProgressRef = useRef(0);
 
-  const mobileStageHeightSvh = Math.max(180, Math.round((235 * scrollVh) / 260));
+  const mobileStageHeightSvh = Math.max(165, Math.round((210 * scrollVh) / 260));
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -1119,11 +1162,11 @@ function MobileScrollSection({
         const pq = mk / MOBILE_MOTION_DOM_STEPS;
 
         const transition = Math.min(Math.max((pq - 0.08) / 0.76, 0), 1);
-        const fanX = 18 + transition * 14;
-        const fanScale = 1.14 - transition * 0.04;
+        const fanX = 92 - transition * 24;
+        const fanScale = 1.08 - transition * 0.03;
         const overlayOpacity = Math.max(0.64 - transition * 0.64, 0);
-        const panelOpacity = Math.max(1 - transition * 1.15, 0);
-        const panelLift = transition * 105;
+        const panelOpacity = 1;
+        const panelLift = 0;
         const finalTextOpacity = Math.min(Math.max((transition - 0.78) / 0.2, 0), 1);
         const finalTextLift = (1 - finalTextOpacity) * 24;
         const root = mobileHeroBgRef.current;
@@ -1252,33 +1295,29 @@ function MobileScrollSection({
       const num = String(idx).padStart(4, "0");
       const img = new window.Image();
       img.decoding = "async";
-      img.src = `${framesPath}/frame-${num}.jpg`;
+      img.src = `${framesPath}/frame-${num}.${frameExt}`;
     });
-  }, [framesPath, mobileFrame, tf, isMobileVideo, isMobileStill]);
+  }, [framesPath, frameExt, mobileFrame, tf, isMobileVideo, isMobileStill]);
 
   const finalFrameSrc =
-    framesPath && !isMobileMotion ? `${framesPath}/frame-${String(mobileFrame).padStart(4, "0")}.jpg` : "";
+    framesPath && !isMobileMotion ? `${framesPath}/frame-${String(mobileFrame).padStart(4, "0")}.${frameExt}` : "";
   const transition = Math.min(Math.max((mobileProgress - 0.08) / 0.76, 0), 1);
-  const fanX = 18 + transition * 14;
+  const fanX = 92 - transition * 24;
   const fanScale = 1.14 - transition * 0.04;
   const overlayOpacity = Math.max(0.64 - transition * 0.64, 0);
   const panelOpacity = Math.max(1 - transition * 1.15, 0);
   const panelLift = transition * 105;
   const finalTextOpacity = Math.min(Math.max((transition - 0.78) / 0.2, 0), 1);
   const finalTextLift = (1 - finalTextOpacity) * 24;
-  const bgR = 15;
-  const bgG = 29;
-  const bgB = 51;
-
   return (
     <section ref={sectionRef} className="relative bg-sand-200 pt-[80px] lg:hidden">
       <div ref={stageRef} className="relative bg-sand-200" style={{ height: `${mobileStageHeightSvh}svh` }}>
         <section className="sticky top-[92px]">
           <div
             ref={mobileHeroBgRef}
-            className="relative min-h-[calc(100svh-92px)] overflow-hidden"
+            className="relative min-h-[calc(86svh-92px)] overflow-hidden md:min-h-[calc(86svh-92px)]"
             style={{
-              backgroundColor: isMobileMotion ? "rgb(15, 29, 51)" : `rgb(${bgR}, ${bgG}, ${bgB})`,
+              backgroundColor: "#f4f4ea",
             }}
           >
             {isMobileStill && mobileStillSrc ? (
@@ -1291,8 +1330,8 @@ function MobileScrollSection({
                 fetchPriority="high"
                 className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden]"
                 style={{
-                  objectPosition: "18% center",
-                  transform: "translateZ(0) scale(1.14)",
+                  objectPosition: "92% center",
+                  transform: "translateZ(0) scale(1.08)",
                 }}
               />
             ) : isMobileVideo && videoSrc ? (
@@ -1327,8 +1366,8 @@ function MobileScrollSection({
                 }}
                 className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden] [contain:layout_paint_size_style]"
                 style={{
-                  objectPosition: "18% center",
-                  transform: "translateZ(0) scale(1.14)",
+                  objectPosition: "92% center",
+                  transform: "translateZ(0) scale(1.08)",
                 }}
               />
             ) : mobileUsePlain ? null : (
@@ -1348,98 +1387,67 @@ function MobileScrollSection({
             {/* Arka plan overlay'leri — yumuşak normal gradient (lacivert maskleme yok) */}
             <div
               ref={mobileOverlayARef}
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_46%,rgba(212,218,228,0.16)_0%,rgba(58,63,74,0.22)_40%,rgba(31,35,43,0.5)_100%)]"
-              style={{ opacity: isMobileMotion ? 0.5 : overlayOpacity }}
+              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,#f4f4ea_0%,#f4f4ea_52%,rgba(244,244,234,0.78)_70%,rgba(244,244,234,0)_100%)]"
+              style={{ opacity: isMobileMotion ? 1 : overlayOpacity }}
             />
             <div
               ref={mobileOverlayBRef}
-              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,39,46,0.32)_0%,rgba(36,39,46,0.10)_40%,rgba(36,39,46,0.20)_100%)]"
-              style={{ opacity: isMobileMotion ? 0.5 : overlayOpacity }}
+              className="pointer-events-none absolute inset-0"
+              style={{ opacity: 0 }}
             />
 
             {startCard && (
               <div
                 ref={mobileStartPanelRef}
-                className="absolute inset-x-4 bottom-4 overflow-hidden rounded-[1.5rem] border border-white/10 px-4 pb-0 pt-3.5 shadow-[0_8px_32px_rgba(0,0,0,0.25)] backdrop-blur-[14px]"
+                className="absolute inset-x-5 top-6 z-10 max-h-[calc(86svh-250px)] overflow-y-auto rounded-none border-0 px-0 pb-3 pt-0 shadow-none"
                 style={{
-                  backgroundColor: "rgba(8, 15, 35, 0.42)",
-                  WebkitBackdropFilter: "blur(18px)",
-                  borderColor: "rgba(255,255,255,0.15)",
+                  backgroundColor: "transparent",
+                  WebkitBackdropFilter: "none",
+                  borderColor: "transparent",
                   opacity: isMobileMotion ? 1 : panelOpacity,
                   transform: isMobileMotion ? "translateY(0px)" : `translateY(-${panelLift}px)`,
                 }}
               >
-                {/* Arka plan: global harita görseli — glassmorphism için daha görünür */}
-                <div
-                  className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-80"
-                  style={{ backgroundImage: "url('/images/world-map.png')" }}
-                  aria-hidden
-                />
-                {/* Alt kısımda hafif transparent gradient — cinematic finish */}
-                <div
-                  className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2"
-                  style={{
-                    background:
-                      "linear-gradient(to bottom, transparent 0%, rgba(8,15,35,0.15) 60%, rgba(8,15,35,0.3) 100%)",
-                  }}
-                  aria-hidden
-                />
+                <span className="relative inline-flex items-center gap-1.5 rounded-md bg-primary/[0.12] px-3 py-1.5 text-[11px] font-semibold tracking-[0.04em] text-primary">
+                  <span className="text-sm leading-none font-semibold">+</span>
+                  {startCard.badge}
+                </span>
 
-                {/* Hero H1 — Montserrat ExtraBold 800, mobile metalik başlık */}
+                {/* Hero H1 — desktop tasarımının mobil uyarlaması */}
                 {startCard.eyebrow && (() => {
                   const lines = startCard.eyebrow.split(/\n/).map(s => s.trim()).filter(Boolean).slice(0, 2);
                   const h1Style: CSSProperties = {
                     fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
-                    fontWeight: 800,
-                    fontSize: "clamp(1.4rem, 6vw, 2rem)",
-                    lineHeight: 1.04,
-                    letterSpacing: "-0.015em",
-                    backgroundImage: "linear-gradient(180deg, #f4f4ea 0%, #eaeadf 45%, #c4c4b6 100%)",
-                    WebkitBackgroundClip: "text",
-                    backgroundClip: "text",
-                    color: "transparent",
-                    filter: "drop-shadow(0 2px 0 rgba(0,0,0,0.5)) drop-shadow(0 4px 12px rgba(0,0,0,0.45))",
+                    fontWeight: 600,
+                    fontSize: "clamp(2.1rem, 10vw, 3.25rem)",
+                    lineHeight: 1.02,
+                    letterSpacing: "-0.02em",
                   };
                   return (
-                    <div className="relative space-y-0.5">
-                      {lines.map((line, i) => (
-                        <h1 key={i} className="relative uppercase text-balance" style={h1Style}>
-                          {line}
-                        </h1>
-                      ))}
-                    </div>
+                    <h1 className="relative mt-4 max-w-[11ch] text-balance" style={h1Style}>
+                      <span className="block text-primary">{lines[0]}</span>
+                      {lines[1] ? <span className="block text-ink">{lines[1]}</span> : null}
+                    </h1>
                   );
                 })()}
 
-                {/* H2 Ana Başlık — Montserrat Bold 700, mobile clamped, '●' prefix ile badge */}
-                <h2
-                  className={`relative uppercase text-balance text-primary leading-[1.1] tracking-[-0.015em] ${startCard.eyebrow ? "mt-2" : ""}`}
-                  style={{
-                    fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
-                    fontWeight: 700,
-                    fontSize: "clamp(1.1rem, 5vw, 1.75rem)",
-                  }}
-                >
-                  ● {startCard.badge}
-                </h2>
-
                 {/* Liste — yuvarlak çerçeveli ikon + metin (tire yok) */}
                 {(startCard.titleLine1 || startCard.titleLine2 || startCard.titleLine3) && (
-                  <ul className="relative mt-3 space-y-2">
+                  <ul className="relative mt-5 space-y-2.5">
                     {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
                       if (!raw) return null;
                       const label = raw.replace(/^[—–-]\s*/u, "");
                       return (
                         <li key={i} className="flex items-center gap-3">
                           <span
-                            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/14 bg-white/[0.07] text-white"
+                            className="inline-flex h-6 w-6 shrink-0 items-center justify-center text-primary"
                             aria-hidden
                           >
-                            <span className="h-4 w-4">{START_CARD_LIST_ICONS[i]}</span>
+                            <span className="h-5 w-5">{START_CARD_LIST_ICONS[i]}</span>
                           </span>
                           <span
-                            className="font-semibold text-white text-[0.92rem] leading-[1.2]"
-                            style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
+                            className="text-[1rem] font-normal leading-[1.2] text-primary"
+                            style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif', fontWeight: 400 }}
                           >
                             {label}
                           </span>
@@ -1450,67 +1458,36 @@ function MobileScrollSection({
                 )}
 
                 <p
-                  className="relative mt-3 text-fine leading-[1.5] text-white/80"
+                  className="relative mt-5 max-w-[34ch] text-[0.95rem] leading-[1.65] text-secondary"
                   style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
                 >
                   {startCard.subtitle}
                 </p>
 
-                {/* CTAs — glass + turuncu kenar, sol ikon + sağ ok */}
+                {/* CTAs — desktop tasarımının mobil uyarlaması */}
                 {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                  <div className="relative mt-3.5 flex flex-col gap-2.5">
+                  <div className="relative mt-5 hidden flex-col gap-2.5 min-[420px]:flex-row">
                     {startCard.ctaPrimary && (
                       <Link
                         href={`/${locale}/iletisim`}
-                        className="group inline-flex items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-3.5 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
+                        className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_-10px_rgba(239,95,23,0.55)] transition-colors duration-300 hover:bg-primary-deep"
                       >
-                        <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
-                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                            <path d="M9 4h7l4 4v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" />
-                            <path d="M16 4v4h4" />
-                            <path d="M11 13h6" />
-                            <path d="M11 17h6" />
-                            <path d="M11 9h2" />
-                          </svg>
-                        </span>
-                        <span
-                          className="flex-1 text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]"
-                          style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
-                        >
-                          {startCard.ctaPrimary}
-                        </span>
-                        <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
+                        {startCard.ctaPrimary}
                       </Link>
                     )}
                     {startCard.ctaSecondary && (
                       <Link
                         href={`/${locale}/urunler`}
-                        className="group inline-flex items-center justify-between gap-3 rounded-xl border border-primary/55 bg-white/[0.04] px-3.5 py-2.5 text-left text-white transition-all duration-300 hover:border-primary hover:bg-primary/10"
+                        className="inline-flex items-center justify-center rounded-full border-2 border-primary bg-white px-5 py-3 text-sm font-semibold text-primary shadow-[0_10px_28px_-12px_rgba(239,95,23,0.5)] transition-colors duration-300 hover:bg-primary/5"
                       >
-                        <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/55 text-primary">
-                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                            <circle cx="12" cy="12" r="9" />
-                            <path d="M15.5 8.5l-2 5-5 2 2-5z" />
-                          </svg>
-                        </span>
-                        <span
-                          className="flex-1 text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.14em]"
-                          style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
-                        >
-                          {startCard.ctaSecondary}
-                        </span>
-                        <svg className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
+                        {startCard.ctaSecondary}
                       </Link>
                     )}
                   </div>
                 )}
 
                 {/* Sertifika marquee — buton altı, kart alt edge */}
-                <div className="relative mt-3.5 -mx-4 overflow-hidden">
+                <div className="relative mt-3.5 -mx-4 hidden overflow-hidden">
                   <div className="card-cert-marquee-track flex w-max items-center py-2">
                     {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -1552,6 +1529,48 @@ function MobileScrollSection({
                   <h2 className="mt-3 font-eurostile text-ink">
                     <span className="block text-[2.05rem] font-bold leading-[1.02] tracking-[-0.025em]">{endCard.title}</span>
                   </h2>
+                </div>
+              </div>
+            )}
+
+            {startCard && locale && (
+              <div className="absolute inset-x-5 bottom-5 z-20">
+                {(startCard.ctaPrimary || startCard.ctaSecondary) && (
+                  <div className="flex flex-col gap-3 min-[420px]:flex-row">
+                    {startCard.ctaPrimary && (
+                      <Link
+                        href={`/${locale}/iletisim`}
+                        className="inline-flex flex-1 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_-10px_rgba(239,95,23,0.55)]"
+                      >
+                        {startCard.ctaPrimary}
+                      </Link>
+                    )}
+                    {startCard.ctaSecondary && (
+                      <Link
+                        href={`/${locale}/urunler`}
+                        className="inline-flex flex-1 items-center justify-center rounded-full border-2 border-primary bg-white px-5 py-3 text-sm font-semibold text-primary shadow-[0_10px_28px_-12px_rgba(239,95,23,0.5)]"
+                      >
+                        {startCard.ctaSecondary}
+                      </Link>
+                    )}
+                  </div>
+                )}
+
+                <div className="relative mt-4 overflow-hidden border-y border-ink/10 py-2">
+                  <div className="card-cert-marquee-track flex w-max items-center">
+                    {[...START_CARD_CERTS, ...START_CARD_CERTS].map((cert, i) => (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        key={`mobile-bottom-cert-${cert.alt}-${i}`}
+                        src={cert.src}
+                        alt={i < START_CARD_CERTS.length ? cert.alt : ""}
+                        aria-hidden={i >= START_CARD_CERTS.length || undefined}
+                        className="block h-7 w-auto shrink-0 px-4 opacity-45 [filter:invert(1)]"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             )}

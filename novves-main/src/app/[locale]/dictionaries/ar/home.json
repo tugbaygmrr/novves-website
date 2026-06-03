@@ -1,881 +1,881 @@
 {
-    "hero":  {
-                 "eyebrow":  "مشاريع منجزة حول العالم",
-                 "badge":  "حلول التهوية من الألف إلى الياء",
-                 "titleLine1":  "الهندسة",
-                 "titleLine2":  "حركة الهواء",
-                 "titleLine3":  "والحلول",
-                 "subtitle":  "حلول هندسية متكاملة لاستخراج الدخان، التكييف المريح، والتهوية الصناعية.",
-                 "ctaPrimary":  "اطلب عرض سعر لمشروعك",
-                 "ctaSecondary":  "استكشف المنتجات",
-                 "heroImageAlt":  "مروحة محورية خلية",
-                 "heroLabel":  "سلسلة HOUND",
-                 "stats":  [
-                               {
-                                   "value":  "+7,000",
-                                   "label":  "تنوعات المنتجات"
-                               },
-                               {
-                                   "value":  "+500",
-                                   "label":  "مشاريع منجزة"
-                               },
-                               {
-                                   "value":  "+30",
-                                   "label":  "دول تصدير"
-                               },
-                               {
-                                   "value":  "24/7",
-                                   "label":  "دعم فني"
-                               }
-                           ],
-                 "endCard":  {
-                                 "series":  "سلسلة HOUND",
-                                 "title":  "مروحة محورية غرفة",
-                                 "desc":  "معتمدة EN 12101-3، مروحة محورية غرفة مقاومة للحريق F300/F400. تدفق هواء عالٍ ومستوى ضوضاء منخفض لأداء تهوية صناعي ممتاز.",
-                                 "spec1Value":  "F300/F400",
-                                 "spec1Label":  "فئة الحريق",
-                                 "spec2Value":  "2H",
-                                 "spec2Label":  "التحمل",
-                                 "spec3Value":  "EN 12101-3",
-                                 "spec3Label":  "الشهادة",
-                                 "cta":  "استكشف المنتج",
-                                 "scroll":  "مرر"
-                             }
-             },
-    "pillars":  [
-                    {
-                        "tag":  "الهندسة والتصميم",
-                        "title":  "التوأم الرقمي للذكاء التحليلي",
-                        "intro":  "لا يبدأ عملنا بمنتج، بل بتحليل المشكلة. بالنسبة لـ NOVVES، الهندسة تعني أكثر من اختيار مروحة — تعني التنبؤ رياضياً بسلوك الدخان والحرارة داخل المبنى.",
-                        "items":  [
-                                      {
-                                          "label":  "محاكاة CFD",
-                                          "desc":  "نحاكي سيناريوهات الحريق رقمياً ونثبت أداء النظام قبل التركيب."
-                                      },
-                                      {
-                                          "label":  "حسابات دقيقة",
-                                          "desc":  "بحسابات تدفق الهواء والضغط الخاصة بالمبنى نقلل التكاليف الهندسية الزائدة ونحقق أقصى كفاءة."
-                                      },
-                                      {
-                                          "label":  "نهج يركز على المشروع",
-                                          "desc":  "نصنع منتجات متوافقة بالكامل مع المواصفات الفنية."
-                                      }
-                                  ]
-                    },
-                    {
-                        "tag":  "التصنيع والجودة",
-                        "title":  "حرفية فوق المعايير",
-                        "intro":  "كل نقطة بيانات اعتمدت في التصميم تتحول إلى أداء فعلي في مصانعنا. بدمج نظام الهندسة لدينا وتقنيات الإنتاج الحديثة، نقلل هامش الخطأ إلى الصفر.",
-                        "items":  [
-                                      {
-                                          "label":  "أداء معتمد",
-                                          "desc":  "كل مروحة وسداد نصنعهما يختبر في مختبرات معتمدة وفق معايير مقاومة الحريق الدولية مثل EN 12101-3."
-                                      },
-                                      {
-                                          "label":  "تصنيع دقيق",
-                                          "desc":  "من القطع بالليزر إلى موازنة ديناميكية، نعمل بت tolerances بالمليمتر في كل مرحلة."
-                                      },
-                                      {
-                                          "label":  "مواد مستدامة",
-                                          "desc":  "نعظم دورة حياة النظام بمواد متينة مقاومة للتآكل وبكفاءة طاقة عالية."
-                                      }
-                                  ]
-                    },
-                    {
-                        "tag":  "التركيب والتطبيق",
-                        "title":  "أداء مثالي في الموقع",
-                        "intro":  "أفضل منتج ينقذ الأرواح عندما يُدمج بشكل صحيح. الحلقة الأخيرة في سلسلة ابتكارنا هي ضمان عمل النظام في تناغم مع بنية المبنى.",
-                        "items":  [
-                                      {
-                                          "label":  "إشراف ميداني",
-                                          "desc":  "نوفر إرشاداً فنياً أثناء التركيب لضمان وضع النظام كما صُمم."
-                                      },
-                                      {
-                                          "label":  "التشغيل التجريبي",
-                                          "desc":  "عبر اختبارات دخان بارد وساخن نتحقق من زمن الاستجابة وسعة الاستخراج في الموقع."
-                                      },
-                                      {
-                                          "label":  "تكامل الأتمتة الذكية",
-                                          "desc":  "نضمن مزامنة مروحيات النفث والسدادات مع أنظمة كشف الحريق خلال مللي ثانية."
-                                      }
-                                  ]
-                    }
-                ],
-    "animation2":  {
-                       "startCard":  {
-                                         "badge":  "تقنية مروحة النفث",
-                                         "titleLine1":  "تهوية",
-                                         "titleLine2":  "مواقف",
-                                         "titleLine3":  "السيارات",
-                                         "subtitle":  "حلول مروحة نفث عالية الأداء لاستخراج الدخان وجودة الهواء في مواقف سيارات مغلقة."
-                                     },
-                       "endCard":  {
-                                       "series":  "سلسلة Jet Fan",
-                                       "title":  "DRAGONFLY",
-                                       "desc":  "مراوح نفث مطابقة لمعيار EN 12101-3 بخيارات تحمل حراري F300/F400؛ مصممة للتحكم بالدخان وتصريف ثاني أكسيد الكربون والتهوية اليومية في مواقف السيارات المغلقة، ولسيناريوهات توجيه الدخان والهواء بقوة دفع عالية في الأنفاق.",
-                                       "spec1Value":  "60-3000 نيوتن",
-                                       "spec1Label":  "قوة الدفع",
-                                       "spec2Value":  "موقف سيارات ونفق",
-                                       "spec2Label":  "مجال التطبيق",
-                                       "spec3Value":  "F300/F400",
-                                       "spec3Label":  "فئة الحريق",
-                                       "cta":  "استكشف المنتج"
-                                   }
-                   },
-    "midCta":  {
-                   "title":  "احصل على دعم هندسي لمشروعك",
-                   "desc":  "تواصل معنا لمعاينات الموقع، تحليل CFD، تصميم المشروع، وعروض الأسعار.",
-                   "button":  "اطلب عرض سعر"
-               },
-    "productCategories":  {
-                              "tag":  "مجال المنتجات",
-                              "title":  "+1,200 تنوع للمنتجات",
-                              "desc":  "محفظة منتجات شاملة لاحتياجات التهوية الصناعية والمريحة.",
-                              "imagePlaceholder":  "صورة",
-                              "items":  [
-                                            {
-                                                "label":  "حركة الهواء"
-                                            },
-                                            {
-                                                "label":  "التكييف"
-                                            },
-                                            {
-                                                "label":  "التبريد والتدفئة"
-                                            },
-                                            {
-                                                "label":  "إدارة الهواء"
-                                            },
-                                            {
-                                                "label":  "توزيع الهواء"
-                                            },
-                                            {
-                                                "label":  "ترشيح الهواء"
-                                            },
-                                            {
-                                                "label":  "الإكسسوارات"
-                                            },
-                                            {
-                                                "label":  "معدات الأتمتة"
-                                            },
-                                            {
-                                                "label":  "عزل الاهتزاز والصوت"
-                                            }
-                                        ]
-                          },
-    "video":  {
-                  "tag":  "الشركة",
-                  "title":  "Born to Flow: هندسة تشكّل الهواء",
-                  "desc":  "ننقل حلولنا في المراوح وإجلاء الدخان ووحدات معالجة الهواء والمحركات عالية التقنية إلى المستقبل من خلال البحث والتطوير والاختبار والـ CFD وقدرات الإنتاج الرقمي.",
-                  "aboutUs":  "من نحن",
-                  "references":  "مراجعنا",
-                  "iframeTitle":  "فيلم تعريفي لشركة NOVVES"
-              },
-    "faq":  {
-                "tag":  "الأسئلة الشائعة",
-                "title":  "أسئلة متكررة",
-                "items":  [
-                              {
-                                  "q":  "ما القطاعات التي تخدمها NOVVES؟",
-                                  "a":  "توفر NOVVES حلول استخراج الدخان والتهوية المريحة وإدارة الهواء الصناعي في قطاعات واسعة تشمل مواقف السيارات والأنفاق والمراكز التجارية والمستشفيات والفنادق والمنشآت الصناعية والبيوت المحمية ومحطات الطاقة والمباني السكنية."
-                              },
-                              {
-                                  "q":  "ما المعايير التي تلتزم بها منتجاتكم؟",
-                                  "a":  "تُصنع منتجاتنا وفق EN 12101-3 وISO 9001 وISO 14001 وISO 45001 وCE وATEX، وتُختبر في مختبرات معتمدة."
-                              },
-                              {
-                                  "q":  "هل تقدمون خدمات تحليل CFD؟",
-                                  "a":  "نعم، نجري محاكاة CFD ثلاثية الأبعاد لكل مشروع لتحليل انتشار الدخان ودرجة الحرارة وتركيز أول أكسيد الكربون ومسافة الرؤية، وتحسين مواضع مروحة النفث."
-                              },
-                              {
-                                  "q":  "هل يتوفر دعم ما بعد البيع؟",
-                                  "a":  "نوفر دعماً شاملاً بعد البيع يشمل التشغيل التجريبي والصيانة الدورية وتوريد قطع الغيار والخدمة الفنية على مدار الساعة."
-                              },
-                              {
-                                  "q":  "هل تقدمون اختيار مروحة وتصميم نظام مخصص للمشروع؟",
-                                  "a":  "نعم. تقيّم NOVVES كل مشروع مع التدفق، الضغط، مقاومة الحرارة، سيناريو الاستخدام، ظروف الموقع، احتياجات الأتمتة ومتطلبات المعايير. يتم تحديد اختيار المروحة، التخطيط، سيناريوهات التحكم والمعدات المساعدة على أساس كل مشروع.",
-                                  "linkHref":  "/muhendislik/projeye-ozel-fan-secimi",
-                                  "linkLabel":  "Learn about project-specific fan selection →",
-                                  "linkAriaLabel":  "Learn about NOVVES project-specific fan selection, flow-pressure assessment, fan layout and system design approach."
-                              },
-                              {
-                                  "q":  "ما الحلول التي تقدمونها لأنظمة طرد الدخان والحرارة؟",
-                                  "a":  "تقدم NOVVES حلولاً متكاملة لطرد الدخان والحرارة من خلال مراوح طرد الدخان F300/F400، أنظمة المراوح النفاثة، مراوح طرد الدخان السقفية، المراوح الجدارية، الدامبرات، كاتمات الصوت ولوحات التحكم القائمة على السيناريو.",
-                                  "linkHref":  "/cozumler/duman-isi-tahliye-sistemleri",
-                                  "linkLabel":  "Explore smoke and heat exhaust solutions →",
-                                  "linkAriaLabel":  "Explore NOVVES smoke and heat exhaust solutions with F300/F400 fans, jet fan systems, dampers, silencers and control panels."
-                              },
-                              {
-                                  "q":  "هل تقدمون دعمًا بعد البيع؟",
-                                  "a":  "نعم. تدعم NOVVES العملاء بعد التسليم بالوثائق التقنية، دعم التشغيل، قطع الغيار، إرشادات الصيانة والدعم الهندسي بعد البيع — لضمان تشغيل الأنظمة بأمان وكفاءة واستدامة في الموقع.",
-                                  "linkHref":  "/hizmetler/teknik-servis",
-                                  "linkLabel":  "Explore our after-sales support process →",
-                                  "linkAriaLabel":  "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
-                              }
-                          ]
-            },
-    "finalCta":  {
-                     "tag":  "لمشروعك",
-                     "title":  "تبحث عن حل تهوية؟",
-                     "desc":  "تواصل مع فريقنا الهندسي اليوم لمعاينات الموقع وتحليل CFD وتصميم المشروع وعروض الأسعار.",
-                     "requestQuote":  "اطلب عرض سعر"
-                 },
-    "pageChrome":  {
-                       "catalogsVertical":  "الكتالوجات",
-                       "previousSolutions":  "الحلول السابقة",
-                       "nextSolutions":  "الحلول التالية",
-                       "previousProducts":  "المنتجات السابقة",
-                       "nextProducts":  "المنتجات التالية",
-                       "defaultSolutionDesc":  "اكتشف الحل الهندسي المناسب لمشروعك.",
-                       "productFallbackDesc":  "اكتشف حلولاً موثوقة وفعّالة تناسب مشروعك.",
-                       "catalogKindLabel":  "كتالوج",
-                       "catalogCardDesc":  "اطلع على ملفات PDF والمستندات في المركز التقني.",
-                       "referenceEyebrow":  "مرجع",
-                       "referenceCardDesc":  "اطّلع على أبرز المشاريع التي نفّذناها.",
-                       "certificateEyebrow":  "شهادة",
-                       "certificateCardDesc":  "اطّلع على شهادات الجودة والسلامة والامتثال الدولية.",
-                       "companyEyebrow":  "الشركة",
-                       "companyCardDesc":  "اكتشف قصة NOVVES والقيادة وهيكل الفريق.",
-                       "companyProfileVertical":  "ملف الشركة",
-                       "pillarExpandAria":  "عرض المزيد",
-                       "pillarCollapseAria":  "طي النص",
-                       "pillarCta":  "التفاصيل",
-                       "productCardCta":  "التفاصيل",
-                       "solutionCardCta":  "التفاصيل",
-                       "midCtaBullet1":  "تقييم أولي خلال 48 ساعة",
-                       "midCtaBullet2":  "تسليم موجّه بالحلول",
-                       "midCtaBullet3":  "تكامل الموقع + CFD",
-                       "videoStatMeta":  "+30 دولة · +500 مشروع",
-                       "scrollVideoSideLabel":  "تهوية مواقف السيارات",
-                       "engineeringAlt1":  "NOVVES: قطع بالليزر CNC دقيق على الصفائح المعدنية",
-                       "engineeringAlt2":  "NOVVES: تركيب وخدمة فنية في الموقع",
-                       "pillarsFallbackTitle":  "نهجنا الهندسي"
-                   },
-    "solutionCarouselByHref":  {
-                                   "/cozumler/duman-isi-tahliye-sistemleri":  {
-                                                                                  "title":  "أنظمة استخراج الدخان والحرارة",
-                                                                                  "description":  "استخراج آمن للدخان والحرارة في سيناريوهات الحريق."
-                                                                              },
-                                   "/cozumler/konfor-iklimlendirme-sistemleri":  {
-                                                                                     "title":  "أنظمة التكييف المريح",
-                                                                                     "description":  "حلول HVAC للراحة والكفاءة."
-                                                                                 },
-                                   "/cozumler/hijyenik-filtrasyonlu-havalandirma":  {
-                                                                                        "title":  "تهوية صحية بالترشيح",
-                                                                                        "description":  "ترشيح صحي للمساحات الحساسة."
-                                                                                    },
-                                   "/cozumler/endustriyel-hava-yonetimi":  {
-                                                                               "title":  "إدارة الهواء الصناعي",
-                                                                               "description":  "إدارة هواء قوية للمنشآت الصناعية."
-                                                                           },
-                                   "/cozumler/atex-patlama-koruma-cozumleri":  {
-                                                                                   "title":  "حماية انفجارات ATEX",
-                                                                                   "description":  "حلول تهوية آمنة ومتوافقة مع ATEX."
-                                                                               },
-                                   "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri":  {
-                                                                                                        "title":  "تهوية منشآت الثروة الحيوانية",
-                                                                                                        "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                                                    },
-                                   "/cozumler/trafo-enerji-odalari-fanlari":  {
-                                                                                  "title":  "مراوح غرف المحولات والطاقة",
-                                                                                  "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                              },
-                                   "/cozumler/sera-tarimsal-havalandirma-sistemleri":  {
-                                                                                           "title":  "تهوية البيوت المحمية والزراعة",
-                                                                                           "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                                       },
-                                   "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri":  {
-                                                                                            "title":  "الأتمتة الذكية والتحكم",
-                                                                                            "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                                        },
-                                   "/cozumler/konut-tipi-havalandirma-sistemleri":  {
-                                                                                        "title":  "تهوية المساكن",
-                                                                                        "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                                    },
-                                   "/cozumler/marin-offshore-havalandirma-sistemleri":  {
-                                                                                            "title":  "تهوية بحرية وبحر عميق",
-                                                                                            "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                                        },
-                                   "/cozumler/proje-bazli-ozel-imalatlar":  {
-                                                                                "title":  "تصنيع مخصص حسب المشروع",
-                                                                                "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                            },
-                                   "/cozumler/cfd-muhendislik-danismanligi":  {
-                                                                                  "title":  "استشارات هندسة CFD",
-                                                                                  "description":  "اكتشف الحل الهندسي المناسب لمشروعك."
-                                                                              }
-                               },
-    "productCategoryBlurbs":  [
-                                  "تدوير هواء موثوق بمراوح معتمدة.",
-                                  "تحكم مناخي متوازن يركز على الراحة.",
-                                  "تدفئة وتبريد موسميان بكفاءة في الطاقة.",
-                                  "إدارة تدفق الهواء لرفع الكفاءة.",
-                                  "توزيع متجانس في المساحة.",
-                                  "ترشيح فعّال لهواء أنظف.",
-                                  "إكسسوارات تُكمل التركيب.",
-                                  "حلول تحكم ذكية وعملية.",
-                                  "تشغيل أهدأ مع عزل الاهتزاز والضوضاء."
-                              ],
-    "catalogPreview":  [
-                           {
-                               "title":  "كتالوج المنتجات",
-                               "href":  "/teknik-merkez/dokuman-kutuphanesi",
-                               "image":  "/images/catalogs/katalog-mockup-kapak-website-icin.png"
-                           },
-                           {
-                               "title":  "ملخصات تقنية",
-                               "href":  "/teknik-merkez/dokuman-kutuphanesi",
-                               "image":  "/images/catalogs/dumantahliye-mockup.png"
-                           },
-                           {
-                               "title":  "أرشيف بطاقات البيانات",
-                               "href":  "/teknik-merkez/dokuman-kutuphanesi",
-                               "image":  "/images/catalogs/sirketprofili-mockup.png"
-                           }
-                       ],
-    "referencePreview":  [
-                             {
-                                 "title":  "2M لوجستيك جيبزة مستودع",
-                                 "href":  "/kurumsal/referanslar",
-                                 "image":  "/images/references/lojistik-2m-depo-hero.png?v=1"
-                             },
-                             {
-                                 "title":  "3S كالي توباز زيتينبورنو",
-                                 "href":  "/kurumsal/referanslar",
-                                 "image":  "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
-                             },
-                             {
-                                 "title":  "مستشفى أضنة يوريغير 100 سرير",
-                                 "href":  "/kurumsal/referanslar",
-                                 "image":  "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
-                             },
-                             {
-                                 "title":  "المنشآت الصناعية",
-                                 "sector":  "المنشآت الصناعية",
-                                 "example":  "منشأة إنتاج Eczacıbaşı",
-                                 "projectCount":  "6",
-                                 "href":  "/kurumsal/referanslar",
-                                 "image":  "/images/references/endustriyel-aselsan-konya-hero.png?v=1",
-                                 "theme":  "zinc"
-                             }
-                         ],
-    "certificatePreview":  [
-                               {
-                                   "title":  "شهادات EN",
-                                   "href":  "/kurumsal/sertifikalar",
-                                   "image":  "/images/certificates/Efectis.png?v=2",
-                                   "desc":  "اطلع على شهادات الأداء المتوافقة مع EN لمراوح طرد الدخان والحرارة لدينا."
-                               },
-                               {
-                                   "title":  "وثائق ISO",
-                                   "href":  "/kurumsal/sertifikalar",
-                                   "image":  "/images/certificates/bsi9001.png?v=2",
-                                   "desc":  "راجع شهادات ISO التي توثق إدارة الجودة والعمليات المؤسسية لدينا."
-                               },
-                               {
-                                   "title":  "الجودة والامتثال",
-                                   "href":  "/kurumsal/sertifikalar",
-                                   "image":  "/images/certificates/iso-sertifika-mockup.png",
-                                   "desc":  "تصفح موثوقية المنتج وعمليات الاختبار ووثائق التطابق."
-                               }
-                           ],
-    "companyProfileCards":  [
-                                {
-                                    "href":  "/kurumsal/biz-kimiz",
-                                    "image":  "/images/biz-kimiz-sag.png?v=4",
-                                    "title":  "من نحن"
-                                },
-                                {
-                                    "href":  "/kurumsal/ceo-mesaji",
-                                    "image":  "/images/page-hero/ceo.png?v=2",
-                                    "title":  "رسالة الرئيس التنفيذي"
-                                },
-                                {
-                                    "href":  "/kurumsal/ekibimiz",
-                                    "image":  "/images/page-hero/novves-vision.png?v=1",
-                                    "title":  "فريقنا"
-                                }
-                            ],
-    "companyProfileSection":  {
-                                  "timelineIntro":  "بخبرة تزيد على عشر سنوات، نُدير مشاريع طرد الدخان وتكييف الراحة والتهوية الصناعية من البداية إلى النهاية؛ ونُقدّم هندسة موثوقة من الإنتاج إلى الميدان.",
-                                  "timelineHeadlinePart1":  "بدأت رحلتنا في عام ",
-                                  "timelineHeadlineEm1":  "2019",
-                                  "timelineHeadlinePart2":  "، واليوم نحن حاضرون في ",
-                                  "timelineHeadlineEm2":  "جميع أنحاء تركيا",
-                                  "timelineHeadlinePart3":  ".",
-                                  "milestones":  [
-                                                     {
-                                                         "year":  "2019",
-                                                         "title":  "التأسيس",
-                                                         "body":  "في 01.08.2019 انطلقنا في مسيرة إنتاج قائمة على الهندسة في ورشة بمساحة 150 م² في يالوفا.",
-                                                         "image":  "/images/corporate/novves-kurulus-bina.png?v=2",
-                                                         "icon":  "flag"
-                                                     },
-                                                     {
-                                                         "year":  "2020",
-                                                         "title":  "الخطوة الأولى نحو التصدير",
-                                                         "body":  "بإيصال منتجاتنا إلى الأسواق الخارجية، أطلقنا مسيرة النمو العالمي لـ NOVVES.",
-                                                         "image":  "/images/corporate/novves-2020-jetfan.png?v=1",
-                                                         "icon":  "chart"
-                                                     },
-                                                     {
-                                                         "year":  "2021",
-                                                         "title":  "مصنع جديد",
-                                                         "body":  "مع تنامي طاقتنا الإنتاجية، انتقلنا إلى مصنعنا الجديد بمساحة مغلقة تبلغ 1500 م².",
-                                                         "image":  "/images/corporate/novves-liderlik.png?v=2",
-                                                         "icon":  "certificate"
-                                                     },
-                                                     {
-                                                         "year":  "2022",
-                                                         "title":  "الاستثمار في أسطول الآلات",
-                                                         "body":  "بفضل استثمارات جديدة في الآلات، رفعنا طاقتنا الإنتاجية ومعايير الجودة وقوتنا التشغيلية.",
-                                                         "image":  "/images/corporate/novves-gunumuz.png?v=2",
-                                                         "icon":  "star"
-                                                     },
-                                                     {
-                                                         "year":  "2023",
-                                                         "title":  "مساحة إنتاج متنامية",
-                                                         "body":  "بتوسيع مساحة الإنتاج إلى 3000 م²، أنشأنا بنية تحتية متينة قادرة على تلبية مشاريع أكبر.",
-                                                         "image":  "/images/corporate/novves-buyume-bina.png?v=2",
-                                                         "icon":  "people"
-                                                     },
-                                                     {
-                                                         "year":  "2024",
-                                                         "title":  "إنتاج المراوح",
-                                                         "body":  "بفضل أعمالنا المدعومة من TÜBİTAK، طوّرنا قدرتنا الذاتية على تصنيع المراوح الداخلية، محققين خطوة مهمة في أداء المنتج.",
-                                                         "image":  "/images/corporate/tubitak-logo.png?v=1",
-                                                         "icon":  "star"
-                                                     },
-                                                     {
-                                                         "year":  "2025",
-                                                         "title":  "العلامة التجارية والتحول الرقمي",
-                                                         "body":  "عزّزنا مسيرة التحوّل الرقمي عبر Microsoft Dynamics 365 وبرنامج MES وAutodesk Inventor Vault Pro.",
-                                                         "image":  "/images/corporate/novves-liderlik.png?v=2",
-                                                         "icon":  "certificate",
-                                                         "logos":  [
-                                                                       "/images/corporate/logo-2025-0.png?v=2",
-                                                                       "/images/corporate/logo-2025-1.png?v=2",
-                                                                       "/images/corporate/logo-2025-2.png?v=3",
-                                                                       "/images/corporate/logo-2025-3.png?v=3"
-                                                                   ]
-                                                     }
-                                                 ],
-                                  "goalsTitle":  "هندسة تصنع المستقبل",
-                                  "goalsIntro":  "في NOVVES، هدفنا أن نكون علامة تجارية عالمية لا تكتفي بتطوير منتجات في تصنيع المراوح وإجلاء الدخان ووحدات معالجة الهواء والمحركات عالية التقنية، بل تقدم أداءً قابلًا للقياس عبر حلول هندسية معتمدة ومصممة خصيصًا لكل مشروع. من خلال تطوير قدرتنا الإنتاجية باستمرار عبر البحث والتطوير والبنية التحتية للاختبار والتحوّل الرقمي والخبرة الميدانية، نعمل من أجل مبانٍ أكثر أمانًا وأنظمة أكثر كفاءة ومشاريع أكثر استدامة.",
-                                  "goalsPillars":  [
-                                                       {
-                                                           "title":  "المراوح وأنظمة إجلاء الدخان",
-                                                           "body":  "نطوّر حلولًا عالية الأداء وموثوقة ومطابقة للمعايير الدولية في المراوح الصناعية ومراوح النفث وأنظمة إجلاء الدخان."
-                                                       },
-                                                       {
-                                                           "title":  "وحدات معالجة الهواء وإدارة الهواء",
-                                                           "body":  "نطوّر حلول وحدات معالجة الهواء والهواء النقي والشفط وإدارة الهواء وفقًا لكفاءة الطاقة والنظافة والراحة ومتطلبات المشروع."
-                                                       },
-                                                       {
-                                                           "title":  "تصنيع المحركات عالية التقنية",
-                                                           "body":  "نعمل على تقنيات محركات EC وBLDC والتطبيقات الخاصة بهدف إنتاج أنظمة قيادة أكثر كفاءة وأكثر اكتنازًا وأكثر ذكاءً."
-                                                       },
-                                                       {
-                                                           "title":  "البحث والتطوير والاختبار والتحول الرقمي",
-                                                           "body":  "بواسطة تحليلات CFD وبرامج الاختيار ولوحات الأتمتة وأنظمة التحكم الذكية وبنيتنا التحتية للاختبار، نُحوّل عمليات الهندسة إلى عمليات رقمية وقابلة للقياس."
-                                                       }
-                                                   ],
-                                  "goalsAsideImage":  "/images/page-hero/novves-vision.png?v=1",
-                                  "goalsAsideImageAlt":  "فريق NOVVES",
-                                  "bannerTitle":  "نحن لا نلحق بالتغيير، بل نرسم اتجاهه.",
-                                  "bannerLine1":  "بقدراتنا في التصنيع والبحث والتطوير والاختبار والهندسة الرقمية، نبني اليوم معايير الغد في المراوح وإجلاء الدخان ووحدات معالجة الهواء وتقنيات المحركات.",
-                                  "bannerLine2":  "",
-                                  "bannerLogoAlt":  "NOVVES HVAC"
-                              },
-    "engineeringShowcase":  {
-                                "title":  "هندسة مدعومة بـ CFD",
-                                "subtitle":  "هندسة تجعل التدفق مرئيًا",
-                                "body":  "تبدأ عمليتنا ليس باختيار المنتج بل بفهم السلوك الديناميكي للمبنى. تحاكي NOVVES حركة الدخان والحرارة والهواء داخل المبنى بتحليلات CFD؛ ونصمم موقع المروحة، التدفق، الضغط، ومنطق التشغيل القائم على السيناريو ونتحقق منها ببيانات هندسية.",
-                                "cta":  "استكشف عملية CFD"
-                            },
-    "engineeringPillarsSection":  {
-                                      "title":  "من الهندسة إلى الميدان",
-                                      "subtitle":  "حل المشروع من الألف إلى الياء",
-                                      "lead":  "NOVVES لا تتعامل مع المشاريع كمجرد توريد منتجات. نحلل الحاجة، نصمم النظام الصحيح، نُنتجه، ونجعله قابلاً للتطبيق في الموقع.",
-                                      "eyebrow":  "عملية إدارة المشاريع لدينا",
-                                      "sidebarCardTitle":  "من الألف إلى الياء",
-                                      "sidebarCardDesc":  "نحن بجانبكم خلال دورة حياة المشروع بأكملها.",
-                                      "mainCta":  "اكتشف العملية كاملة",
-                                      "cardCta":  "عرض التفاصيل",
-                                      "stats":  [
-                                                    "+30 دولة\n+500 مشروع",
-                                                    "جودة عالية\nإنتاج معتمد",
-                                                    "فريق هندسي\nمتخصص",
-                                                    "دعم تقني\n24/7"
-                                                ]
-                                  },
-    "homeBands":  {
-                      "solutionStripFeatureRows":  [
-                                                       [
-                                                           {
-                                                               "label":  "Fire scenarios",
-                                                               "desc":  "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios."
-                                                           },
-                                                           {
-                                                               "label":  "Jet \u0026 natural",
-                                                               "desc":  "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies."
-                                                           },
-                                                           {
-                                                               "label":  "EN 12101 ready",
-                                                               "desc":  "Certified products and type-test documentation packaged for code reviews and inspections."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Comfort band",
-                                                               "desc":  "Stable temperature–humidity bands for offices, hotels, and retail."
-                                                           },
-                                                           {
-                                                               "label":  "Acoustics",
-                                                               "desc":  "Low-SPL selections and isolation for shafts, façades, and plant rooms."
-                                                           },
-                                                           {
-                                                               "label":  "Energy \u0026 VRF",
-                                                               "desc":  "Flow and pressure planning coordinated with heat pumps and VRF systems."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Room pressure",
-                                                               "desc":  "Positive/negative pressure cascades and leakage control to protect critical spaces."
-                                                           },
-                                                           {
-                                                               "label":  "HEPA \u0026 fine",
-                                                               "desc":  "Hospital, GMP, and food lines with filter classes and change-out strategies."
-                                                           },
-                                                           {
-                                                               "label":  "Monitoring",
-                                                               "desc":  "DP, humidity, and particle sensing with logging and alarms for compliance."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Process airflow",
-                                                               "desc":  "High-temperature and abrasive-duty fans for drying, emission, and line pressure."
-                                                           },
-                                                           {
-                                                               "label":  "Dust \u0026 filters",
-                                                               "desc":  "Fan curves matched to dust loading, filter dp, and maintenance cycles."
-                                                           },
-                                                           {
-                                                               "label":  "Uptime",
-                                                               "desc":  "Standby fans, spare-part paths, and service access to shorten planned stops."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Hazard zones",
-                                                               "desc":  "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas."
-                                                           },
-                                                           {
-                                                               "label":  "Spark-free",
-                                                               "desc":  "Ex d/m/e and compatible drives for explosive gas and dust atmospheres."
-                                                           },
-                                                           {
-                                                               "label":  "ATEX dossier",
-                                                               "desc":  "Risk study, technical file, and site marking ready for audits."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Stocking density",
-                                                               "desc":  "Fresh-air and exhaust rates sized for headcount, season, and heat stress."
-                                                           },
-                                                           {
-                                                               "label":  "Gas \u0026 moisture",
-                                                               "desc":  "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts."
-                                                           },
-                                                           {
-                                                               "label":  "Corrosion tough",
-                                                               "desc":  "Materials and motor protection for wash-down and aggressive barn environments."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Transformer heat",
-                                                               "desc":  "Cooling airflow sized for transformer and busbar losses with design margin."
-                                                           },
-                                                           {
-                                                               "label":  "Fire \u0026 smoke",
-                                                               "desc":  "Smoke exhaust and pressurisation coordinated with electrical infrastructure."
-                                                           },
-                                                           {
-                                                               "label":  "Utility specs",
-                                                               "desc":  "Product ranges aligned with OEM, utility, and IEC-oriented specifications."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Tunnel \u0026 poly",
-                                                               "desc":  "Even velocity profiles and temperature stratification for tunnel and multi-span houses."
-                                                           },
-                                                           {
-                                                               "label":  "CO₂ \u0026 RH",
-                                                               "desc":  "Ventilation paired with humidification or dehumidification for crop response."
-                                                           },
-                                                           {
-                                                               "label":  "Seasonal energy",
-                                                               "desc":  "VFD and control strategies to trim fan energy across seasonal loads."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Panels \u0026 logic",
-                                                               "desc":  "Central panels for fire, process, and comfort fans with clear interlocks."
-                                                           },
-                                                           {
-                                                               "label":  "BMS / SCADA",
-                                                               "desc":  "Modbus, BACnet, and site-wide automation interfaces and sequences."
-                                                           },
-                                                           {
-                                                               "label":  "Commissioning",
-                                                               "desc":  "Stepwise testing, handover scripts, and operator screens for maintenance."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Shaft \u0026 wet rooms",
-                                                               "desc":  "Compact, low-noise units for central shafts, bathrooms, and kitchens."
-                                                           },
-                                                           {
-                                                               "label":  "Façade fit",
-                                                               "desc":  "Balcony and wall-mounted options that respect acoustic and architectural limits."
-                                                           },
-                                                           {
-                                                               "label":  "Energy labels",
-                                                               "desc":  "Efficiency classes aligned with residential regulations and running cost."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Salt spray",
-                                                               "desc":  "Coatings and stainless options aligned with C4/C5 marine exposure classes."
-                                                           },
-                                                           {
-                                                               "label":  "Class society",
-                                                               "desc":  "Technical files and tests aligned with vessel class and offshore norms."
-                                                           },
-                                                           {
-                                                               "label":  "Redundancy",
-                                                               "desc":  "N+1 layouts and access paths for offshore availability and service."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Custom geometry",
-                                                               "desc":  "Project-specific casings for tight footprints, flanges, and duct transitions."
-                                                           },
-                                                           {
-                                                               "label":  "Materials \u0026 weld",
-                                                               "desc":  "Stainless, aluminium, specials; weld and NDT procedures on request."
-                                                           },
-                                                           {
-                                                               "label":  "FAT \u0026 traceability",
-                                                               "desc":  "Factory acceptance testing with certificates and full material traceability."
-                                                           }
-                                                       ],
-                                                       [
-                                                           {
-                                                               "label":  "Smoke \u0026 visibility",
-                                                               "desc":  "3D smoke modelling for jet fan placement, visibility, and temperature fields."
-                                                           },
-                                                           {
-                                                               "label":  "Heat \u0026 contaminants",
-                                                               "desc":  "Distribution studies for kitchens, process exhaust, and waste heat."
-                                                           },
-                                                           {
-                                                               "label":  "Client-ready reports",
-                                                               "desc":  "Summaries, sections, and visuals for investors, AHJs, and design reviews."
-                                                           }
-                                                       ]
-                                                   ],
-                      "productStripFeatureRows":  [
-                                                      [
-                                                          {
-                                                              "label":  "High performance",
-                                                              "desc":  "High airflow and thrust tailored to the application."
-                                                          },
-                                                          {
-                                                              "label":  "Durable",
-                                                              "desc":  "Reliable operation in industrial environments."
-                                                          },
-                                                          {
-                                                              "label":  "Quiet operation",
-                                                              "desc":  "Lower noise for comfortable spaces."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "Energy efficiency",
-                                                              "desc":  "Optimized consumption across the system."
-                                                          },
-                                                          {
-                                                              "label":  "Smart control",
-                                                              "desc":  "Integrated automation and monitoring."
-                                                          },
-                                                          {
-                                                              "label":  "Flexible solutions",
-                                                              "desc":  "Adaptable layouts for different buildings."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "High capacity",
-                                                              "desc":  "Cooling and heating power for large loads."
-                                                          },
-                                                          {
-                                                              "label":  "Reliable performance",
-                                                              "desc":  "Stable seasonal operation."
-                                                          },
-                                                          {
-                                                              "label":  "All-season use",
-                                                              "desc":  "Designed for year-round comfort and process needs."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "Modular design",
-                                                              "desc":  "Configurable air handling building blocks."
-                                                          },
-                                                          {
-                                                              "label":  "High efficiency",
-                                                              "desc":  "Heat recovery and fan efficiency options."
-                                                          },
-                                                          {
-                                                              "label":  "Smart monitoring",
-                                                              "desc":  "Visibility for operators and maintenance teams."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "Even distribution",
-                                                              "desc":  "Homogeneous airflow in the served zone."
-                                                          },
-                                                          {
-                                                              "label":  "Aesthetic design",
-                                                              "desc":  "Architect-friendly grilles and diffusers."
-                                                          },
-                                                          {
-                                                              "label":  "Easy installation",
-                                                              "desc":  "Practical mounting and commissioning on site."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "Filter classes",
-                                                              "desc":  "From coarse pre-filtration to fine and HEPA-grade options."
-                                                          },
-                                                          {
-                                                              "label":  "Indoor air quality",
-                                                              "desc":  "Cleaner supply air for comfort and critical applications."
-                                                          },
-                                                          {
-                                                              "label":  "Standards alignment",
-                                                              "desc":  "Selections aligned with hygiene and project specifications."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "Mounting \u0026 hardware",
-                                                              "desc":  "Dampers, supports, and accessories that complete the system."
-                                                          },
-                                                          {
-                                                              "label":  "Wide compatibility",
-                                                              "desc":  "Components matched to fans, ducts, and air devices."
-                                                          },
-                                                          {
-                                                              "label":  "Practical logistics",
-                                                              "desc":  "Straightforward sourcing for site schedules."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "Control \u0026 panels",
-                                                              "desc":  "Monitoring and control hardware for ventilation plants."
-                                                          },
-                                                          {
-                                                              "label":  "BMS integration",
-                                                              "desc":  "Signals and interfaces suited to building automation."
-                                                          },
-                                                          {
-                                                              "label":  "Field-ready kits",
-                                                              "desc":  "Practical layouts for installation and commissioning."
-                                                          }
-                                                      ],
-                                                      [
-                                                          {
-                                                              "label":  "Vibration suspension",
-                                                              "desc":  "Springs and isolators tuned to equipment loads."
-                                                          },
-                                                          {
-                                                              "label":  "Noise control",
-                                                              "desc":  "Reduced structure-borne and airborne noise paths."
-                                                          },
-                                                          {
-                                                              "label":  "Decoupled supports",
-                                                              "desc":  "Stable equipment mounting with controlled transfer."
-                                                          }
-                                                      ]
-                                                  ]
-                  },
-    "productCategoryFeatures":  [
-                                    [
-                                        "Axial Box Fan Family",
-                                        "Ex-proof Fan Family",
-                                        "Industrial Centrifugal Fan Family",
-                                        "EC Motor Fan Systems Family",
-                                        "Roof Fan Family",
-                                        "Wall Fan Family",
-                                        "Bathroom Fan Family",
-                                        "Duct Fan Family",
-                                        "Cell Type Fan Family",
-                                        "Kitchen Ventilation Systems Family",
-                                        "Shelter Fan Family",
-                                        "Poultry Farm Ventilation System Family",
-                                        "Dust Collection Systems Family"
-                                    ],
-                                    [
-                                        "Air Handling Unit Family",
-                                        "Dehumidification Unit Family",
-                                        "Heat Recovery Unit Family",
-                                        "Explosion-proof Air Handling Unit (Ex-proof AHU)"
-                                    ],
-                                    [
-                                        "Compact, Packaged and Industrial Cooling Family",
-                                        "Heat Pump Outdoor Unit Family",
-                                        "Indoor Unit Family",
-                                        "Heating / Cooling Coils Family",
-                                        "Electric Heater Family",
-                                        "Heat Exchanger Family",
-                                        "Precision-controlled HVAC Family"
-                                    ],
-                                    [
-                                        "Damper Systems Family"
-                                    ],
-                                    [
-                                        "Grille and Diffuser Systems Family"
-                                    ],
-                                    [
-                                        "Filter and Filtration Elements Family"
-                                    ],
-                                    [
-                                        "Fan and HVAC Accessories Family"
-                                    ],
-                                    [
-                                        "Automation Panel Systems Family",
-                                        "PLC and Programmable Control Systems Family",
-                                        "Sensor and Detection Systems Family",
-                                        "Control Cards and Operator Panels Family",
-                                        "Timing and Control Devices Family",
-                                        "Power Electronics Systems Family",
-                                        "Panel Power and Switching Components Family"
-                                    ],
-                                    [
-                                        "Vibration Isolators Family"
-                                    ]
-                                ]
+  "hero": {
+    "eyebrow": "مشاريع منجزة\nحول العالم",
+    "badge": "حلول التهوية من الألف إلى الياء",
+    "titleLine1": "مراوح صناعية",
+    "titleLine2": "مراوح سحب الدخان",
+    "titleLine3": "وحدات مناولة الهواء",
+    "subtitle": "نقدم حلولاً عالية الأداء وموثوقة ومستدامة لأنظمة سحب الدخان والتكييف والمراوح الصناعية.",
+    "ctaPrimary": "اطلب عرضاً لمشروعك",
+    "ctaSecondary": "استكشف المنتجات",
+    "heroImageAlt": "مروحة محورية خلية",
+    "heroLabel": "سلسلة HOUND",
+    "stats": [
+      {
+        "value": "+500",
+        "label": "مشروع منجز"
+      },
+      {
+        "value": "+30",
+        "label": "دولة تصدير"
+      },
+      {
+        "value": "+7000",
+        "label": "تنوع منتج"
+      },
+      {
+        "value": "24/7",
+        "label": "دعم فني"
+      }
+    ],
+    "endCard": {
+      "series": "سلسلة HOUND",
+      "title": "مروحة محورية غرفة",
+      "desc": "معتمدة EN 12101-3، مروحة محورية غرفة مقاومة للحريق F300/F400. تدفق هواء عالٍ ومستوى ضوضاء منخفض لأداء تهوية صناعي ممتاز.",
+      "spec1Value": "F300/F400",
+      "spec1Label": "فئة الحريق",
+      "spec2Value": "2H",
+      "spec2Label": "التحمل",
+      "spec3Value": "EN 12101-3",
+      "spec3Label": "الشهادة",
+      "cta": "استكشف المنتج",
+      "scroll": "مرر"
+    }
+  },
+  "pillars": [
+    {
+      "tag": "الهندسة والتصميم",
+      "title": "التوأم الرقمي للذكاء التحليلي",
+      "intro": "لا يبدأ عملنا بمنتج، بل بتحليل المشكلة. بالنسبة لـ NOVVES، الهندسة تعني أكثر من اختيار مروحة — تعني التنبؤ رياضياً بسلوك الدخان والحرارة داخل المبنى.",
+      "items": [
+        {
+          "label": "محاكاة CFD",
+          "desc": "نحاكي سيناريوهات الحريق رقمياً ونثبت أداء النظام قبل التركيب."
+        },
+        {
+          "label": "حسابات دقيقة",
+          "desc": "بحسابات تدفق الهواء والضغط الخاصة بالمبنى نقلل التكاليف الهندسية الزائدة ونحقق أقصى كفاءة."
+        },
+        {
+          "label": "نهج يركز على المشروع",
+          "desc": "نصنع منتجات متوافقة بالكامل مع المواصفات الفنية."
+        }
+      ]
+    },
+    {
+      "tag": "التصنيع والجودة",
+      "title": "حرفية فوق المعايير",
+      "intro": "كل نقطة بيانات اعتمدت في التصميم تتحول إلى أداء فعلي في مصانعنا. بدمج نظام الهندسة لدينا وتقنيات الإنتاج الحديثة، نقلل هامش الخطأ إلى الصفر.",
+      "items": [
+        {
+          "label": "أداء معتمد",
+          "desc": "كل مروحة وسداد نصنعهما يختبر في مختبرات معتمدة وفق معايير مقاومة الحريق الدولية مثل EN 12101-3."
+        },
+        {
+          "label": "تصنيع دقيق",
+          "desc": "من القطع بالليزر إلى موازنة ديناميكية، نعمل بت tolerances بالمليمتر في كل مرحلة."
+        },
+        {
+          "label": "مواد مستدامة",
+          "desc": "نعظم دورة حياة النظام بمواد متينة مقاومة للتآكل وبكفاءة طاقة عالية."
+        }
+      ]
+    },
+    {
+      "tag": "التركيب والتطبيق",
+      "title": "أداء مثالي في الموقع",
+      "intro": "أفضل منتج ينقذ الأرواح عندما يُدمج بشكل صحيح. الحلقة الأخيرة في سلسلة ابتكارنا هي ضمان عمل النظام في تناغم مع بنية المبنى.",
+      "items": [
+        {
+          "label": "إشراف ميداني",
+          "desc": "نوفر إرشاداً فنياً أثناء التركيب لضمان وضع النظام كما صُمم."
+        },
+        {
+          "label": "التشغيل التجريبي",
+          "desc": "عبر اختبارات دخان بارد وساخن نتحقق من زمن الاستجابة وسعة الاستخراج في الموقع."
+        },
+        {
+          "label": "تكامل الأتمتة الذكية",
+          "desc": "نضمن مزامنة مروحيات النفث والسدادات مع أنظمة كشف الحريق خلال مللي ثانية."
+        }
+      ]
+    }
+  ],
+  "animation2": {
+    "startCard": {
+      "badge": "تقنية مروحة النفث",
+      "titleLine1": "تهوية",
+      "titleLine2": "مواقف",
+      "titleLine3": "السيارات",
+      "subtitle": "حلول مروحة نفث عالية الأداء لاستخراج الدخان وجودة الهواء في مواقف سيارات مغلقة."
+    },
+    "endCard": {
+      "series": "سلسلة Jet Fan",
+      "title": "DRAGONFLY",
+      "desc": "مراوح نفث مطابقة لمعيار EN 12101-3 بخيارات تحمل حراري F300/F400؛ مصممة للتحكم بالدخان وتصريف ثاني أكسيد الكربون والتهوية اليومية في مواقف السيارات المغلقة، ولسيناريوهات توجيه الدخان والهواء بقوة دفع عالية في الأنفاق.",
+      "spec1Value": "60-3000 نيوتن",
+      "spec1Label": "قوة الدفع",
+      "spec2Value": "موقف سيارات ونفق",
+      "spec2Label": "مجال التطبيق",
+      "spec3Value": "F300/F400",
+      "spec3Label": "فئة الحريق",
+      "cta": "استكشف المنتج"
+    }
+  },
+  "midCta": {
+    "title": "احصل على دعم هندسي لمشروعك",
+    "desc": "تواصل معنا لمعاينات الموقع، تحليل CFD، تصميم المشروع، وعروض الأسعار.",
+    "button": "اطلب عرض سعر"
+  },
+  "productCategories": {
+    "tag": "مجال المنتجات",
+    "title": "+1,200 تنوع للمنتجات",
+    "desc": "محفظة منتجات شاملة لاحتياجات التهوية الصناعية والمريحة.",
+    "imagePlaceholder": "صورة",
+    "items": [
+      {
+        "label": "حركة الهواء"
+      },
+      {
+        "label": "التكييف"
+      },
+      {
+        "label": "التبريد والتدفئة"
+      },
+      {
+        "label": "إدارة الهواء"
+      },
+      {
+        "label": "توزيع الهواء"
+      },
+      {
+        "label": "ترشيح الهواء"
+      },
+      {
+        "label": "الإكسسوارات"
+      },
+      {
+        "label": "معدات الأتمتة"
+      },
+      {
+        "label": "عزل الاهتزاز والصوت"
+      }
+    ]
+  },
+  "video": {
+    "tag": "الشركة",
+    "title": "Born to Flow: هندسة تشكّل الهواء",
+    "desc": "ننقل حلولنا في المراوح وإجلاء الدخان ووحدات معالجة الهواء والمحركات عالية التقنية إلى المستقبل من خلال البحث والتطوير والاختبار والـ CFD وقدرات الإنتاج الرقمي.",
+    "aboutUs": "من نحن",
+    "references": "مراجعنا",
+    "iframeTitle": "فيلم تعريفي لشركة NOVVES"
+  },
+  "faq": {
+    "tag": "الأسئلة الشائعة",
+    "title": "أسئلة متكررة",
+    "items": [
+      {
+        "q": "ما القطاعات التي تخدمها NOVVES؟",
+        "a": "توفر NOVVES حلول استخراج الدخان والتهوية المريحة وإدارة الهواء الصناعي في قطاعات واسعة تشمل مواقف السيارات والأنفاق والمراكز التجارية والمستشفيات والفنادق والمنشآت الصناعية والبيوت المحمية ومحطات الطاقة والمباني السكنية."
+      },
+      {
+        "q": "ما المعايير التي تلتزم بها منتجاتكم؟",
+        "a": "تُصنع منتجاتنا وفق EN 12101-3 وISO 9001 وISO 14001 وISO 45001 وCE وATEX، وتُختبر في مختبرات معتمدة."
+      },
+      {
+        "q": "هل تقدمون خدمات تحليل CFD؟",
+        "a": "نعم، نجري محاكاة CFD ثلاثية الأبعاد لكل مشروع لتحليل انتشار الدخان ودرجة الحرارة وتركيز أول أكسيد الكربون ومسافة الرؤية، وتحسين مواضع مروحة النفث."
+      },
+      {
+        "q": "هل يتوفر دعم ما بعد البيع؟",
+        "a": "نوفر دعماً شاملاً بعد البيع يشمل التشغيل التجريبي والصيانة الدورية وتوريد قطع الغيار والخدمة الفنية على مدار الساعة."
+      },
+      {
+        "q": "هل تقدمون اختيار مروحة وتصميم نظام مخصص للمشروع؟",
+        "a": "نعم. تقيّم NOVVES كل مشروع مع التدفق، الضغط، مقاومة الحرارة، سيناريو الاستخدام، ظروف الموقع، احتياجات الأتمتة ومتطلبات المعايير. يتم تحديد اختيار المروحة، التخطيط، سيناريوهات التحكم والمعدات المساعدة على أساس كل مشروع.",
+        "linkHref": "/muhendislik/projeye-ozel-fan-secimi",
+        "linkLabel": "Learn about project-specific fan selection →",
+        "linkAriaLabel": "Learn about NOVVES project-specific fan selection, flow-pressure assessment, fan layout and system design approach."
+      },
+      {
+        "q": "ما الحلول التي تقدمونها لأنظمة طرد الدخان والحرارة؟",
+        "a": "تقدم NOVVES حلولاً متكاملة لطرد الدخان والحرارة من خلال مراوح طرد الدخان F300/F400، أنظمة المراوح النفاثة، مراوح طرد الدخان السقفية، المراوح الجدارية، الدامبرات، كاتمات الصوت ولوحات التحكم القائمة على السيناريو.",
+        "linkHref": "/cozumler/duman-isi-tahliye-sistemleri",
+        "linkLabel": "Explore smoke and heat exhaust solutions →",
+        "linkAriaLabel": "Explore NOVVES smoke and heat exhaust solutions with F300/F400 fans, jet fan systems, dampers, silencers and control panels."
+      },
+      {
+        "q": "هل تقدمون دعمًا بعد البيع؟",
+        "a": "نعم. تدعم NOVVES العملاء بعد التسليم بالوثائق التقنية، دعم التشغيل، قطع الغيار، إرشادات الصيانة والدعم الهندسي بعد البيع — لضمان تشغيل الأنظمة بأمان وكفاءة واستدامة في الموقع.",
+        "linkHref": "/hizmetler/teknik-servis",
+        "linkLabel": "Explore our after-sales support process →",
+        "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
+      }
+    ]
+  },
+  "finalCta": {
+    "tag": "لمشروعك",
+    "title": "تبحث عن حل تهوية؟",
+    "desc": "تواصل مع فريقنا الهندسي اليوم لمعاينات الموقع وتحليل CFD وتصميم المشروع وعروض الأسعار.",
+    "requestQuote": "اطلب عرض سعر"
+  },
+  "pageChrome": {
+    "catalogsVertical": "الكتالوجات",
+    "previousSolutions": "الحلول السابقة",
+    "nextSolutions": "الحلول التالية",
+    "previousProducts": "المنتجات السابقة",
+    "nextProducts": "المنتجات التالية",
+    "defaultSolutionDesc": "اكتشف الحل الهندسي المناسب لمشروعك.",
+    "productFallbackDesc": "اكتشف حلولاً موثوقة وفعّالة تناسب مشروعك.",
+    "catalogKindLabel": "كتالوج",
+    "catalogCardDesc": "اطلع على ملفات PDF والمستندات في المركز التقني.",
+    "referenceEyebrow": "مرجع",
+    "referenceCardDesc": "اطّلع على أبرز المشاريع التي نفّذناها.",
+    "certificateEyebrow": "شهادة",
+    "certificateCardDesc": "اطّلع على شهادات الجودة والسلامة والامتثال الدولية.",
+    "companyEyebrow": "الشركة",
+    "companyCardDesc": "اكتشف قصة NOVVES والقيادة وهيكل الفريق.",
+    "companyProfileVertical": "ملف الشركة",
+    "pillarExpandAria": "عرض المزيد",
+    "pillarCollapseAria": "طي النص",
+    "pillarCta": "التفاصيل",
+    "productCardCta": "التفاصيل",
+    "solutionCardCta": "التفاصيل",
+    "midCtaBullet1": "تقييم أولي خلال 48 ساعة",
+    "midCtaBullet2": "تسليم موجّه بالحلول",
+    "midCtaBullet3": "تكامل الموقع + CFD",
+    "videoStatMeta": "+30 دولة · +500 مشروع",
+    "scrollVideoSideLabel": "تهوية مواقف السيارات",
+    "engineeringAlt1": "NOVVES: قطع بالليزر CNC دقيق على الصفائح المعدنية",
+    "engineeringAlt2": "NOVVES: تركيب وخدمة فنية في الموقع",
+    "pillarsFallbackTitle": "نهجنا الهندسي"
+  },
+  "solutionCarouselByHref": {
+    "/cozumler/duman-isi-tahliye-sistemleri": {
+      "title": "أنظمة استخراج الدخان والحرارة",
+      "description": "استخراج آمن للدخان والحرارة في سيناريوهات الحريق."
+    },
+    "/cozumler/konfor-iklimlendirme-sistemleri": {
+      "title": "أنظمة التكييف المريح",
+      "description": "حلول HVAC للراحة والكفاءة."
+    },
+    "/cozumler/hijyenik-filtrasyonlu-havalandirma": {
+      "title": "تهوية صحية بالترشيح",
+      "description": "ترشيح صحي للمساحات الحساسة."
+    },
+    "/cozumler/endustriyel-hava-yonetimi": {
+      "title": "إدارة الهواء الصناعي",
+      "description": "إدارة هواء قوية للمنشآت الصناعية."
+    },
+    "/cozumler/atex-patlama-koruma-cozumleri": {
+      "title": "حماية انفجارات ATEX",
+      "description": "حلول تهوية آمنة ومتوافقة مع ATEX."
+    },
+    "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri": {
+      "title": "تهوية منشآت الثروة الحيوانية",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    },
+    "/cozumler/trafo-enerji-odalari-fanlari": {
+      "title": "مراوح غرف المحولات والطاقة",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    },
+    "/cozumler/sera-tarimsal-havalandirma-sistemleri": {
+      "title": "تهوية البيوت المحمية والزراعة",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    },
+    "/cozumler/akilli-otomasyon-ve-kontrol-sistemleri": {
+      "title": "الأتمتة الذكية والتحكم",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    },
+    "/cozumler/konut-tipi-havalandirma-sistemleri": {
+      "title": "تهوية المساكن",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    },
+    "/cozumler/marin-offshore-havalandirma-sistemleri": {
+      "title": "تهوية بحرية وبحر عميق",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    },
+    "/cozumler/proje-bazli-ozel-imalatlar": {
+      "title": "تصنيع مخصص حسب المشروع",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    },
+    "/cozumler/cfd-muhendislik-danismanligi": {
+      "title": "استشارات هندسة CFD",
+      "description": "اكتشف الحل الهندسي المناسب لمشروعك."
+    }
+  },
+  "productCategoryBlurbs": [
+    "تدوير هواء موثوق بمراوح معتمدة.",
+    "تحكم مناخي متوازن يركز على الراحة.",
+    "تدفئة وتبريد موسميان بكفاءة في الطاقة.",
+    "إدارة تدفق الهواء لرفع الكفاءة.",
+    "توزيع متجانس في المساحة.",
+    "ترشيح فعّال لهواء أنظف.",
+    "إكسسوارات تُكمل التركيب.",
+    "حلول تحكم ذكية وعملية.",
+    "تشغيل أهدأ مع عزل الاهتزاز والضوضاء."
+  ],
+  "catalogPreview": [
+    {
+      "title": "كتالوج المنتجات",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+    },
+    {
+      "title": "ملخصات تقنية",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
+      "image": "/images/catalogs/dumantahliye-mockup.png"
+    },
+    {
+      "title": "أرشيف بطاقات البيانات",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
+      "image": "/images/catalogs/sirketprofili-mockup.png"
+    }
+  ],
+  "referencePreview": [
+    {
+      "title": "2M لوجستيك جيبزة مستودع",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+    },
+    {
+      "title": "3S كالي توباز زيتينبورنو",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+    },
+    {
+      "title": "مستشفى أضنة يوريغير 100 سرير",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+    },
+    {
+      "title": "المنشآت الصناعية",
+      "sector": "المنشآت الصناعية",
+      "example": "منشأة إنتاج Eczacıbaşı",
+      "projectCount": "6",
+      "href": "/kurumsal/referanslar",
+      "image": "/images/references/endustriyel-aselsan-konya-hero.png?v=1",
+      "theme": "zinc"
+    }
+  ],
+  "certificatePreview": [
+    {
+      "title": "شهادات EN",
+      "href": "/kurumsal/sertifikalar",
+      "image": "/images/certificates/Efectis.png?v=2",
+      "desc": "اطلع على شهادات الأداء المتوافقة مع EN لمراوح طرد الدخان والحرارة لدينا."
+    },
+    {
+      "title": "وثائق ISO",
+      "href": "/kurumsal/sertifikalar",
+      "image": "/images/certificates/bsi9001.png?v=2",
+      "desc": "راجع شهادات ISO التي توثق إدارة الجودة والعمليات المؤسسية لدينا."
+    },
+    {
+      "title": "الجودة والامتثال",
+      "href": "/kurumsal/sertifikalar",
+      "image": "/images/certificates/iso-sertifika-mockup.png",
+      "desc": "تصفح موثوقية المنتج وعمليات الاختبار ووثائق التطابق."
+    }
+  ],
+  "companyProfileCards": [
+    {
+      "href": "/kurumsal/biz-kimiz",
+      "image": "/images/biz-kimiz-sag.png?v=4",
+      "title": "من نحن"
+    },
+    {
+      "href": "/kurumsal/ceo-mesaji",
+      "image": "/images/page-hero/ceo.png?v=2",
+      "title": "رسالة الرئيس التنفيذي"
+    },
+    {
+      "href": "/kurumsal/ekibimiz",
+      "image": "/images/page-hero/novves-vision.png?v=1",
+      "title": "فريقنا"
+    }
+  ],
+  "companyProfileSection": {
+    "timelineIntro": "بخبرة تزيد على عشر سنوات، نُدير مشاريع طرد الدخان وتكييف الراحة والتهوية الصناعية من البداية إلى النهاية؛ ونُقدّم هندسة موثوقة من الإنتاج إلى الميدان.",
+    "timelineHeadlinePart1": "بدأت رحلتنا في عام ",
+    "timelineHeadlineEm1": "2019",
+    "timelineHeadlinePart2": "، واليوم نحن حاضرون في ",
+    "timelineHeadlineEm2": "جميع أنحاء تركيا",
+    "timelineHeadlinePart3": ".",
+    "milestones": [
+      {
+        "year": "2019",
+        "title": "التأسيس",
+        "body": "في 01.08.2019 انطلقنا في مسيرة إنتاج قائمة على الهندسة في ورشة بمساحة 150 م² في يالوفا.",
+        "image": "/images/corporate/novves-kurulus-bina.png?v=2",
+        "icon": "flag"
+      },
+      {
+        "year": "2020",
+        "title": "الخطوة الأولى نحو التصدير",
+        "body": "بإيصال منتجاتنا إلى الأسواق الخارجية، أطلقنا مسيرة النمو العالمي لـ NOVVES.",
+        "image": "/images/corporate/novves-2020-jetfan.png?v=1",
+        "icon": "chart"
+      },
+      {
+        "year": "2021",
+        "title": "مصنع جديد",
+        "body": "مع تنامي طاقتنا الإنتاجية، انتقلنا إلى مصنعنا الجديد بمساحة مغلقة تبلغ 1500 م².",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "icon": "certificate"
+      },
+      {
+        "year": "2022",
+        "title": "الاستثمار في أسطول الآلات",
+        "body": "بفضل استثمارات جديدة في الآلات، رفعنا طاقتنا الإنتاجية ومعايير الجودة وقوتنا التشغيلية.",
+        "image": "/images/corporate/novves-gunumuz.png?v=2",
+        "icon": "star"
+      },
+      {
+        "year": "2023",
+        "title": "مساحة إنتاج متنامية",
+        "body": "بتوسيع مساحة الإنتاج إلى 3000 م²، أنشأنا بنية تحتية متينة قادرة على تلبية مشاريع أكبر.",
+        "image": "/images/corporate/novves-buyume-bina.png?v=2",
+        "icon": "people"
+      },
+      {
+        "year": "2024",
+        "title": "إنتاج المراوح",
+        "body": "بفضل أعمالنا المدعومة من TÜBİTAK، طوّرنا قدرتنا الذاتية على تصنيع المراوح الداخلية، محققين خطوة مهمة في أداء المنتج.",
+        "image": "/images/corporate/tubitak-logo.png?v=1",
+        "icon": "star"
+      },
+      {
+        "year": "2025",
+        "title": "العلامة التجارية والتحول الرقمي",
+        "body": "عزّزنا مسيرة التحوّل الرقمي عبر Microsoft Dynamics 365 وبرنامج MES وAutodesk Inventor Vault Pro.",
+        "image": "/images/corporate/novves-liderlik.png?v=2",
+        "icon": "certificate",
+        "logos": [
+          "/images/corporate/logo-2025-0.png?v=2",
+          "/images/corporate/logo-2025-1.png?v=2",
+          "/images/corporate/logo-2025-2.png?v=3",
+          "/images/corporate/logo-2025-3.png?v=3"
+        ]
+      }
+    ],
+    "goalsTitle": "هندسة تصنع المستقبل",
+    "goalsIntro": "في NOVVES، هدفنا أن نكون علامة تجارية عالمية لا تكتفي بتطوير منتجات في تصنيع المراوح وإجلاء الدخان ووحدات معالجة الهواء والمحركات عالية التقنية، بل تقدم أداءً قابلًا للقياس عبر حلول هندسية معتمدة ومصممة خصيصًا لكل مشروع. من خلال تطوير قدرتنا الإنتاجية باستمرار عبر البحث والتطوير والبنية التحتية للاختبار والتحوّل الرقمي والخبرة الميدانية، نعمل من أجل مبانٍ أكثر أمانًا وأنظمة أكثر كفاءة ومشاريع أكثر استدامة.",
+    "goalsPillars": [
+      {
+        "title": "المراوح وأنظمة إجلاء الدخان",
+        "body": "نطوّر حلولًا عالية الأداء وموثوقة ومطابقة للمعايير الدولية في المراوح الصناعية ومراوح النفث وأنظمة إجلاء الدخان."
+      },
+      {
+        "title": "وحدات معالجة الهواء وإدارة الهواء",
+        "body": "نطوّر حلول وحدات معالجة الهواء والهواء النقي والشفط وإدارة الهواء وفقًا لكفاءة الطاقة والنظافة والراحة ومتطلبات المشروع."
+      },
+      {
+        "title": "تصنيع المحركات عالية التقنية",
+        "body": "نعمل على تقنيات محركات EC وBLDC والتطبيقات الخاصة بهدف إنتاج أنظمة قيادة أكثر كفاءة وأكثر اكتنازًا وأكثر ذكاءً."
+      },
+      {
+        "title": "البحث والتطوير والاختبار والتحول الرقمي",
+        "body": "بواسطة تحليلات CFD وبرامج الاختيار ولوحات الأتمتة وأنظمة التحكم الذكية وبنيتنا التحتية للاختبار، نُحوّل عمليات الهندسة إلى عمليات رقمية وقابلة للقياس."
+      }
+    ],
+    "goalsAsideImage": "/images/page-hero/novves-vision.png?v=1",
+    "goalsAsideImageAlt": "فريق NOVVES",
+    "bannerTitle": "نحن لا نلحق بالتغيير، بل نرسم اتجاهه.",
+    "bannerLine1": "بقدراتنا في التصنيع والبحث والتطوير والاختبار والهندسة الرقمية، نبني اليوم معايير الغد في المراوح وإجلاء الدخان ووحدات معالجة الهواء وتقنيات المحركات.",
+    "bannerLine2": "",
+    "bannerLogoAlt": "NOVVES HVAC"
+  },
+  "engineeringShowcase": {
+    "title": "هندسة مدعومة بـ CFD",
+    "subtitle": "هندسة تجعل التدفق مرئيًا",
+    "body": "تبدأ عمليتنا ليس باختيار المنتج بل بفهم السلوك الديناميكي للمبنى. تحاكي NOVVES حركة الدخان والحرارة والهواء داخل المبنى بتحليلات CFD؛ ونصمم موقع المروحة، التدفق، الضغط، ومنطق التشغيل القائم على السيناريو ونتحقق منها ببيانات هندسية.",
+    "cta": "استكشف عملية CFD"
+  },
+  "engineeringPillarsSection": {
+    "title": "من الهندسة إلى الميدان",
+    "subtitle": "حل المشروع من الألف إلى الياء",
+    "lead": "NOVVES لا تتعامل مع المشاريع كمجرد توريد منتجات. نحلل الحاجة، نصمم النظام الصحيح، نُنتجه، ونجعله قابلاً للتطبيق في الموقع.",
+    "eyebrow": "عملية إدارة المشاريع لدينا",
+    "sidebarCardTitle": "من الألف إلى الياء",
+    "sidebarCardDesc": "نحن بجانبكم خلال دورة حياة المشروع بأكملها.",
+    "mainCta": "اكتشف العملية كاملة",
+    "cardCta": "عرض التفاصيل",
+    "stats": [
+      "+30 دولة\n+500 مشروع",
+      "جودة عالية\nإنتاج معتمد",
+      "فريق هندسي\nمتخصص",
+      "دعم تقني\n24/7"
+    ]
+  },
+  "homeBands": {
+    "solutionStripFeatureRows": [
+      [
+        {
+          "label": "Fire scenarios",
+          "desc": "Fan sizing for car parks, tunnels, and large volumes under smoke and heat exhaust scenarios."
+        },
+        {
+          "label": "Jet & natural",
+          "desc": "Balanced thrust and flow for jet fans, induction, and natural smoke shaft strategies."
+        },
+        {
+          "label": "EN 12101 ready",
+          "desc": "Certified products and type-test documentation packaged for code reviews and inspections."
+        }
+      ],
+      [
+        {
+          "label": "Comfort band",
+          "desc": "Stable temperature–humidity bands for offices, hotels, and retail."
+        },
+        {
+          "label": "Acoustics",
+          "desc": "Low-SPL selections and isolation for shafts, façades, and plant rooms."
+        },
+        {
+          "label": "Energy & VRF",
+          "desc": "Flow and pressure planning coordinated with heat pumps and VRF systems."
+        }
+      ],
+      [
+        {
+          "label": "Room pressure",
+          "desc": "Positive/negative pressure cascades and leakage control to protect critical spaces."
+        },
+        {
+          "label": "HEPA & fine",
+          "desc": "Hospital, GMP, and food lines with filter classes and change-out strategies."
+        },
+        {
+          "label": "Monitoring",
+          "desc": "DP, humidity, and particle sensing with logging and alarms for compliance."
+        }
+      ],
+      [
+        {
+          "label": "Process airflow",
+          "desc": "High-temperature and abrasive-duty fans for drying, emission, and line pressure."
+        },
+        {
+          "label": "Dust & filters",
+          "desc": "Fan curves matched to dust loading, filter dp, and maintenance cycles."
+        },
+        {
+          "label": "Uptime",
+          "desc": "Standby fans, spare-part paths, and service access to shorten planned stops."
+        }
+      ],
+      [
+        {
+          "label": "Hazard zones",
+          "desc": "Equipment and protection types for Zone 1/2 or 21/22 hazardous areas."
+        },
+        {
+          "label": "Spark-free",
+          "desc": "Ex d/m/e and compatible drives for explosive gas and dust atmospheres."
+        },
+        {
+          "label": "ATEX dossier",
+          "desc": "Risk study, technical file, and site marking ready for audits."
+        }
+      ],
+      [
+        {
+          "label": "Stocking density",
+          "desc": "Fresh-air and exhaust rates sized for headcount, season, and heat stress."
+        },
+        {
+          "label": "Gas & moisture",
+          "desc": "Ammonia, CO₂, and humidity targets reflected in airflow and duct layouts."
+        },
+        {
+          "label": "Corrosion tough",
+          "desc": "Materials and motor protection for wash-down and aggressive barn environments."
+        }
+      ],
+      [
+        {
+          "label": "Transformer heat",
+          "desc": "Cooling airflow sized for transformer and busbar losses with design margin."
+        },
+        {
+          "label": "Fire & smoke",
+          "desc": "Smoke exhaust and pressurisation coordinated with electrical infrastructure."
+        },
+        {
+          "label": "Utility specs",
+          "desc": "Product ranges aligned with OEM, utility, and IEC-oriented specifications."
+        }
+      ],
+      [
+        {
+          "label": "Tunnel & poly",
+          "desc": "Even velocity profiles and temperature stratification for tunnel and multi-span houses."
+        },
+        {
+          "label": "CO₂ & RH",
+          "desc": "Ventilation paired with humidification or dehumidification for crop response."
+        },
+        {
+          "label": "Seasonal energy",
+          "desc": "VFD and control strategies to trim fan energy across seasonal loads."
+        }
+      ],
+      [
+        {
+          "label": "Panels & logic",
+          "desc": "Central panels for fire, process, and comfort fans with clear interlocks."
+        },
+        {
+          "label": "BMS / SCADA",
+          "desc": "Modbus, BACnet, and site-wide automation interfaces and sequences."
+        },
+        {
+          "label": "Commissioning",
+          "desc": "Stepwise testing, handover scripts, and operator screens for maintenance."
+        }
+      ],
+      [
+        {
+          "label": "Shaft & wet rooms",
+          "desc": "Compact, low-noise units for central shafts, bathrooms, and kitchens."
+        },
+        {
+          "label": "Façade fit",
+          "desc": "Balcony and wall-mounted options that respect acoustic and architectural limits."
+        },
+        {
+          "label": "Energy labels",
+          "desc": "Efficiency classes aligned with residential regulations and running cost."
+        }
+      ],
+      [
+        {
+          "label": "Salt spray",
+          "desc": "Coatings and stainless options aligned with C4/C5 marine exposure classes."
+        },
+        {
+          "label": "Class society",
+          "desc": "Technical files and tests aligned with vessel class and offshore norms."
+        },
+        {
+          "label": "Redundancy",
+          "desc": "N+1 layouts and access paths for offshore availability and service."
+        }
+      ],
+      [
+        {
+          "label": "Custom geometry",
+          "desc": "Project-specific casings for tight footprints, flanges, and duct transitions."
+        },
+        {
+          "label": "Materials & weld",
+          "desc": "Stainless, aluminium, specials; weld and NDT procedures on request."
+        },
+        {
+          "label": "FAT & traceability",
+          "desc": "Factory acceptance testing with certificates and full material traceability."
+        }
+      ],
+      [
+        {
+          "label": "Smoke & visibility",
+          "desc": "3D smoke modelling for jet fan placement, visibility, and temperature fields."
+        },
+        {
+          "label": "Heat & contaminants",
+          "desc": "Distribution studies for kitchens, process exhaust, and waste heat."
+        },
+        {
+          "label": "Client-ready reports",
+          "desc": "Summaries, sections, and visuals for investors, AHJs, and design reviews."
+        }
+      ]
+    ],
+    "productStripFeatureRows": [
+      [
+        {
+          "label": "High performance",
+          "desc": "High airflow and thrust tailored to the application."
+        },
+        {
+          "label": "Durable",
+          "desc": "Reliable operation in industrial environments."
+        },
+        {
+          "label": "Quiet operation",
+          "desc": "Lower noise for comfortable spaces."
+        }
+      ],
+      [
+        {
+          "label": "Energy efficiency",
+          "desc": "Optimized consumption across the system."
+        },
+        {
+          "label": "Smart control",
+          "desc": "Integrated automation and monitoring."
+        },
+        {
+          "label": "Flexible solutions",
+          "desc": "Adaptable layouts for different buildings."
+        }
+      ],
+      [
+        {
+          "label": "High capacity",
+          "desc": "Cooling and heating power for large loads."
+        },
+        {
+          "label": "Reliable performance",
+          "desc": "Stable seasonal operation."
+        },
+        {
+          "label": "All-season use",
+          "desc": "Designed for year-round comfort and process needs."
+        }
+      ],
+      [
+        {
+          "label": "Modular design",
+          "desc": "Configurable air handling building blocks."
+        },
+        {
+          "label": "High efficiency",
+          "desc": "Heat recovery and fan efficiency options."
+        },
+        {
+          "label": "Smart monitoring",
+          "desc": "Visibility for operators and maintenance teams."
+        }
+      ],
+      [
+        {
+          "label": "Even distribution",
+          "desc": "Homogeneous airflow in the served zone."
+        },
+        {
+          "label": "Aesthetic design",
+          "desc": "Architect-friendly grilles and diffusers."
+        },
+        {
+          "label": "Easy installation",
+          "desc": "Practical mounting and commissioning on site."
+        }
+      ],
+      [
+        {
+          "label": "Filter classes",
+          "desc": "From coarse pre-filtration to fine and HEPA-grade options."
+        },
+        {
+          "label": "Indoor air quality",
+          "desc": "Cleaner supply air for comfort and critical applications."
+        },
+        {
+          "label": "Standards alignment",
+          "desc": "Selections aligned with hygiene and project specifications."
+        }
+      ],
+      [
+        {
+          "label": "Mounting & hardware",
+          "desc": "Dampers, supports, and accessories that complete the system."
+        },
+        {
+          "label": "Wide compatibility",
+          "desc": "Components matched to fans, ducts, and air devices."
+        },
+        {
+          "label": "Practical logistics",
+          "desc": "Straightforward sourcing for site schedules."
+        }
+      ],
+      [
+        {
+          "label": "Control & panels",
+          "desc": "Monitoring and control hardware for ventilation plants."
+        },
+        {
+          "label": "BMS integration",
+          "desc": "Signals and interfaces suited to building automation."
+        },
+        {
+          "label": "Field-ready kits",
+          "desc": "Practical layouts for installation and commissioning."
+        }
+      ],
+      [
+        {
+          "label": "Vibration suspension",
+          "desc": "Springs and isolators tuned to equipment loads."
+        },
+        {
+          "label": "Noise control",
+          "desc": "Reduced structure-borne and airborne noise paths."
+        },
+        {
+          "label": "Decoupled supports",
+          "desc": "Stable equipment mounting with controlled transfer."
+        }
+      ]
+    ]
+  },
+  "productCategoryFeatures": [
+    [
+      "Axial Box Fan Family",
+      "Ex-proof Fan Family",
+      "Industrial Centrifugal Fan Family",
+      "EC Motor Fan Systems Family",
+      "Roof Fan Family",
+      "Wall Fan Family",
+      "Bathroom Fan Family",
+      "Duct Fan Family",
+      "Cell Type Fan Family",
+      "Kitchen Ventilation Systems Family",
+      "Shelter Fan Family",
+      "Poultry Farm Ventilation System Family",
+      "Dust Collection Systems Family"
+    ],
+    [
+      "Air Handling Unit Family",
+      "Dehumidification Unit Family",
+      "Heat Recovery Unit Family",
+      "Explosion-proof Air Handling Unit (Ex-proof AHU)"
+    ],
+    [
+      "Compact, Packaged and Industrial Cooling Family",
+      "Heat Pump Outdoor Unit Family",
+      "Indoor Unit Family",
+      "Heating / Cooling Coils Family",
+      "Electric Heater Family",
+      "Heat Exchanger Family",
+      "Precision-controlled HVAC Family"
+    ],
+    [
+      "Damper Systems Family"
+    ],
+    [
+      "Grille and Diffuser Systems Family"
+    ],
+    [
+      "Filter and Filtration Elements Family"
+    ],
+    [
+      "Fan and HVAC Accessories Family"
+    ],
+    [
+      "Automation Panel Systems Family",
+      "PLC and Programmable Control Systems Family",
+      "Sensor and Detection Systems Family",
+      "Control Cards and Operator Panels Family",
+      "Timing and Control Devices Family",
+      "Power Electronics Systems Family",
+      "Panel Power and Switching Components Family"
+    ],
+    [
+      "Vibration Isolators Family"
+    ]
+  ]
 }

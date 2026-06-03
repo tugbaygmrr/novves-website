@@ -55,6 +55,7 @@ type CompanyProfileSection = {
 type HomeDict = {
   hero: {
     badge: string;
+    eyebrow: string;
     titleLine1: string;
     titleLine2: string;
     titleLine3: string;
@@ -520,7 +521,7 @@ const solutionCategorySlides: SolutionBandSlide[] = SOLUTION_STRIP_HREFS.map((hr
     href,
     image: m.thumbnails[0],
     heroImage: m.hero,
-    thumbnails: m.thumbnails,
+    thumbnails: [m.thumbnails[0], m.thumbnails[1], m.thumbnails[2]] as const,
   };
 });
 
@@ -1383,7 +1384,7 @@ function HomeProductCategoryCard({
 
       {/* Gövde */}
       <div className="flex min-h-0 flex-1 flex-col px-4 pb-3 pt-7 sm:px-5 sm:pb-4 sm:pt-9">
-        <h3 className="line-clamp-1 shrink-0 text-balance text-[15px] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-body">
+        <h3 className="truncate shrink-0 text-[15px] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-body">
           {title}
         </h3>
 
@@ -2139,7 +2140,7 @@ function HomeEngineeringPillarsJourneyStrip({
                   <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                     {label}
                   </h3>
-                  <p className="mt-2 line-clamp-4 text-meta leading-relaxed text-ink/65 sm:text-[15px]">
+                  <p className="product-card-clamp-4 mt-2 text-meta leading-relaxed text-ink/65 sm:text-[15px]">
                     {desc}
                   </p>
 
@@ -2277,7 +2278,7 @@ export default function HomeClient({
       {/* 01 — SCROLL VIDEO: KOVAN TIPI */}
       <div id="hero-main" className="scroll-mt-24 md:scroll-mt-[5.5rem]">
         <ScrollVideoSection
-          videoSrc="/video/hero-scroll.mp4"
+          videoSrc="/video/hero-scroll-sand.mp4"
           mobileVideoReplacementAlt={dict.hero.heroImageAlt}
           scrollVh={260}
           id="animation-2"
@@ -2476,7 +2477,7 @@ export default function HomeClient({
                       <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                         {item.title}
                       </h3>
-                      <p className="mt-2 line-clamp-4 text-meta leading-relaxed text-ink/65 sm:text-[15px]">{cardDesc}</p>
+                      <p className="product-card-clamp-4 mt-2 text-meta leading-relaxed text-ink/65 sm:text-[15px]">{cardDesc}</p>
                       <span className="mt-6 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
                         {ctaLabel}
                         <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -2582,7 +2583,7 @@ export default function HomeClient({
                             </p>
                           ) : (
                             <p
-                              className={`mt-1.5 line-clamp-3 text-[13px] leading-snug sm:text-meta ${onLight ? "text-[#4a5568]" : "text-white/88"}`}
+                              className={`product-card-clamp-3 mt-1.5 text-[13px] leading-snug sm:text-meta ${onLight ? "text-[#4a5568]" : "text-white/88"}`}
                             >
                               {pc.referenceCardDesc}
                             </p>
@@ -2666,7 +2667,7 @@ export default function HomeClient({
                       <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                         {item.title}
                       </h3>
-                      <p className="mt-2 line-clamp-4 text-meta leading-relaxed text-ink/65 sm:text-[15px]">{item.desc ?? pc.certificateCardDesc}</p>
+                      <p className="product-card-clamp-4 mt-2 text-meta leading-relaxed text-ink/65 sm:text-[15px]">{item.desc ?? pc.certificateCardDesc}</p>
                       <span className="mt-6 inline-flex w-fit items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3.5 text-[13px] font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 [@media(hover:hover)]:group-hover:bg-primary-deep [@media(hover:hover)]:group-hover:shadow-xl [@media(hover:hover)]:group-hover:shadow-primary/30">
                         {ctaLabel}
                         <svg className="h-4 w-4 transition-transform duration-300 [@media(hover:hover)]:group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -3045,10 +3046,10 @@ export default function HomeClient({
                           <p className="font-mono-eng text-[10px] uppercase tracking-[0.2em] text-ink/45">
                             {pc.companyEyebrow}
                           </p>
-                          <h3 className="mt-2 line-clamp-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#243044] sm:text-[1.28rem]">
+                          <h3 className="product-card-clamp-2 mt-2 text-[1.2rem] font-semibold leading-[1.15] text-ink transition-colors group-hover:text-[#243044] sm:text-[1.28rem]">
                             {title}
                           </h3>
-                          <p className="mt-2 line-clamp-3 text-[13px] leading-[1.55] text-ink/62 sm:text-meta">
+                          <p className="product-card-clamp-3 mt-2 text-[13px] leading-[1.55] text-ink/62 sm:text-meta">
                             {pc.companyCardDesc}
                           </p>
                           <div className="mt-auto pt-2.5 font-mono-eng text-[9px] font-medium tracking-[0.12em] text-[#243044] sm:text-[10px]">

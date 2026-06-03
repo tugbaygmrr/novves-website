@@ -75,6 +75,25 @@
   --color-light: var(--light);
   --color-success: var(--success);
 
+  /* Hizmetler (Stitch) — site --secondary ile karışmasın diye hz- öneki */
+  --color-hz-secondary: #ab3500;
+  --color-hz-secondary-container: #fe6a34;
+  --color-hz-on-secondary-container: #5d1900;
+  --color-hz-primary-container: #131b2e;
+  --color-hz-on-surface: #191c1e;
+  --color-hz-on-surface-variant: #45464d;
+  --color-hz-on-primary-container: #7c839b;
+  --color-hz-on-primary: #ffffff;
+  --color-hz-outline: #76777d;
+  --color-hz-outline-variant: #c6c6cd;
+  --color-hz-on-secondary-fixed: #390c00;
+  --color-hz-secondary-fixed: #ffdbd0;
+  --color-hz-surface: #f7f9fb;
+  --color-hz-surface-container-lowest: #ffffff;
+  --color-hz-surface-container-low: #f2f4f6;
+  --color-hz-surface-container-high: #e6e8ea;
+  --color-hz-surface-variant: #e0e3e5;
+
   /* Font aileleri — site-geneli tipografi standardı */
   --font-sans: var(--font-inter), "Helvetica Neue", "Helvetica", sans-serif;
   --font-serif: var(--font-instrument-serif), "Georgia", serif;
@@ -115,6 +134,15 @@ html {
   :focus-visible {
     outline: 2px solid CanvasText;
   }
+}
+
+/* Doküman kütüphanesi — Industrial Architect yüzeyleri (DESIGN.md) */
+.doc-lib-root {
+  --doc-surface: #f7f9fb;
+  --doc-surface-low: #f2f4f6;
+  --doc-primary-container: var(--dark);
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Çerez diyaloğu açıkken mobil atlama çubuğu — z-index katman sırasından bağımsız */
@@ -175,6 +203,103 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-clamp: 2;
+  text-overflow: ellipsis;
+}
+
+.product-card-clamp-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  text-overflow: ellipsis;
+}
+
+/* Hizmetler hero — stitch industrial-gradient */
+.hizmetler-industrial-gradient {
+  background: linear-gradient(135deg, #131b2e 0%, #000000 100%);
+}
+
+/* Teknik Merkez (Doküman Kütüphanesi) — mavi (dark) tonu lacivere çekilir; yalnızca bu sayfa kapsamında */
+.doc-lib-root {
+  --dark: #1d2f4d;
+  --dark-rgb: 29, 47, 77;
+}
+
+/* Hizmetler — milimetrik kare ızgara (Kurumsal Kimlik / blueprint tarzı) */
+.hizmetler-checker-white {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(rgba(var(--dark-rgb), 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--dark-rgb), 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Referanslar — Stitch Technical Archive */
+.referanslar-hero-gradient {
+  background: linear-gradient(135deg, #131b2e 0%, #000000 100%);
+}
+
+.referanslar-float-catalog {
+  animation: referanslar-float 6s ease-in-out infinite;
+}
+
+@keyframes referanslar-float {
+  0% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+}
+
+/* Sosyal Medya Hub — Stitch */
+.sosyal-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sosyal-orange-glow {
+  box-shadow: 0 0 25px -5px rgba(254, 106, 52, 0.35);
+}
+
+.sosyal-orange-glow-hover:hover {
+  box-shadow: 0 0 35px -5px rgba(254, 106, 52, 0.5);
+  border-color: #fe6a34;
+}
+
+.sosyal-insta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .sosyal-insta-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sosyal-insta-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sosyal-post-overlay {
+  background: rgba(15, 23, 42, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sosyal-post-card:hover .sosyal-post-overlay {
+  opacity: 1;
 }
 
 .product-card-clamp-4 {
@@ -183,6 +308,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
+  text-overflow: ellipsis;
 }
 
 /** Ürün kartı gövde metni — kart yüksekliğine göre güvenli satır sayısı, taşanda … */
@@ -316,10 +442,19 @@ body {
   background-size: 48px 48px;
 }
 
-/* Blueprint — sparse, technical */
-.blueprint-grid-light,
+/* Blueprint — ince kare ızgara */
+.blueprint-grid-light {
+  background-image:
+    linear-gradient(rgba(var(--dark-rgb), 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--dark-rgb), 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
 .blueprint-grid-dark {
-  background-image: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 /* Hero scroll-end: warm paper / canvas (very subtle grain + soft vignette) */
@@ -380,6 +515,19 @@ body {
   .card-cert-marquee-track { animation: none; }
 }
 
+/* Hero sol kenar sertifika şeridi — sürekli dikey kayma (logolar 2x render, %50 kayma = kusursuz loop) */
+@keyframes heroCertMarqueeY {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(0, -50%, 0); }
+}
+.hero-cert-marquee-track {
+  animation: heroCertMarqueeY 22s linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-cert-marquee-track { animation: none; }
+}
+
 /* Hairline rules */
 .hairline-ink { border-color: rgba(10, 14, 20, 0.1); }
 .hairline-white { border-color: rgba(255, 255, 255, 0.1); }
@@ -388,4 +536,15 @@ body {
 ::selection {
   background: var(--primary);
   color: var(--white);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
 }
