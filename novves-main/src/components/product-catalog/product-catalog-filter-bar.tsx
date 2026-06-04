@@ -67,7 +67,7 @@ export function ProductCatalogFilterBar({
   return (
     <div className="rounded-xl bg-white p-4 shadow-[0_8px_32px_-24px_rgba(15,22,36,0.12)] ring-1 ring-ink/[0.06] sm:p-5">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-12 xl:items-end xl:gap-3">
-        <label className="xl:col-span-4">
+        <label className="xl:col-span-5">
           <span className={labelClass}>{ui.filterSeries}</span>
           <select
             value={draft.series}
@@ -86,7 +86,7 @@ export function ProductCatalogFilterBar({
           </select>
         </label>
 
-        <label className="xl:col-span-5">
+        <label className="xl:col-span-7">
           <span className={labelClass}>{ui.filterDescription}</span>
           <div className="relative">
             <input
@@ -102,35 +102,6 @@ export function ProductCatalogFilterBar({
             <IconSearch className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-secondary/40" />
           </div>
         </label>
-
-        <div className="xl:col-span-3">
-          <span className={labelClass}>{ui.filterModelRange}</span>
-          <div className="flex items-center gap-2">
-            <input
-              type="number"
-              min={0}
-              inputMode="numeric"
-              value={draft.modelMin}
-              onChange={(e) => patch({ modelMin: e.target.value })}
-              placeholder={ui.filterMin}
-              className={`${fieldClass} min-w-0 text-center`}
-              aria-label={ui.filterMin}
-            />
-            <span className="shrink-0 text-sm font-medium text-secondary/45" aria-hidden>
-              –
-            </span>
-            <input
-              type="number"
-              min={0}
-              inputMode="numeric"
-              value={draft.modelMax}
-              onChange={(e) => patch({ modelMax: e.target.value })}
-              placeholder={ui.filterMax}
-              className={`${fieldClass} min-w-0 text-center`}
-              aria-label={ui.filterMax}
-            />
-          </div>
-        </div>
       </div>
 
       <div className="mt-4 flex flex-col gap-3 border-t border-ink/[0.06] pt-4 sm:flex-row sm:items-end">

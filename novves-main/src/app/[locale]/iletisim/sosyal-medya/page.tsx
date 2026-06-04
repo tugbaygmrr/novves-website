@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SosyalMedyaPage } from "@/components/sosyal-medya/sosyal-medya-page";
 import { resolveSosyalMedyaCopy, type SosyalMedyaHubJson } from "@/lib/sosyal-medya/copy";
+import { getInstagramFeedPosts } from "@/lib/sosyal-medya/instagram";
 import { getDictionary, hasLocale } from "../../dictionaries";
 
 export async function generateMetadata({
@@ -31,6 +32,7 @@ export default async function SosyalMedya({
   const dict = await getDictionary(locale);
   const hub = dict.contact?.sosyalMedyaHub as SosyalMedyaHubJson | undefined;
   const copy = resolveSosyalMedyaCopy(hub, locale);
+  const instagramPosts = await getInstagramFeedPosts();
 
-  return <SosyalMedyaPage locale={locale} copy={copy} hub={hub} />;
+  return <SosyalMedyaPage locale={locale} copy={copy} hub={hub} feedPosts={instagramPosts} />;
 }

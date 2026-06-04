@@ -287,7 +287,6 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
                   alt=""
                   fill
                   className="object-cover"
-                  priority
                   sizes="(max-width: 1280px) 100vw, 1280px"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-hz-primary-container via-hz-primary-container/85 to-transparent" />

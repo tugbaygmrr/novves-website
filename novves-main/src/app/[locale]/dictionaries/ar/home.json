@@ -47,58 +47,25 @@
       "tag": "الهندسة والتصميم",
       "title": "التوأم الرقمي للذكاء التحليلي",
       "intro": "لا يبدأ عملنا بمنتج، بل بتحليل المشكلة. بالنسبة لـ NOVVES، الهندسة تعني أكثر من اختيار مروحة — تعني التنبؤ رياضياً بسلوك الدخان والحرارة داخل المبنى.",
-      "items": [
-        {
-          "label": "محاكاة CFD",
-          "desc": "نحاكي سيناريوهات الحريق رقمياً ونثبت أداء النظام قبل التركيب."
-        },
-        {
-          "label": "حسابات دقيقة",
-          "desc": "بحسابات تدفق الهواء والضغط الخاصة بالمبنى نقلل التكاليف الهندسية الزائدة ونحقق أقصى كفاءة."
-        },
-        {
-          "label": "نهج يركز على المشروع",
-          "desc": "نصنع منتجات متوافقة بالكامل مع المواصفات الفنية."
-        }
-      ]
+      "items": [],
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "التصنيع والجودة",
       "title": "حرفية فوق المعايير",
       "intro": "كل نقطة بيانات اعتمدت في التصميم تتحول إلى أداء فعلي في مصانعنا. بدمج نظام الهندسة لدينا وتقنيات الإنتاج الحديثة، نقلل هامش الخطأ إلى الصفر.",
-      "items": [
-        {
-          "label": "أداء معتمد",
-          "desc": "كل مروحة وسداد نصنعهما يختبر في مختبرات معتمدة وفق معايير مقاومة الحريق الدولية مثل EN 12101-3."
-        },
-        {
-          "label": "تصنيع دقيق",
-          "desc": "من القطع بالليزر إلى موازنة ديناميكية، نعمل بت tolerances بالمليمتر في كل مرحلة."
-        },
-        {
-          "label": "مواد مستدامة",
-          "desc": "نعظم دورة حياة النظام بمواد متينة مقاومة للتآكل وبكفاءة طاقة عالية."
-        }
-      ]
+      "items": [],
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "التركيب والتطبيق",
       "title": "أداء مثالي في الموقع",
       "intro": "أفضل منتج ينقذ الأرواح عندما يُدمج بشكل صحيح. الحلقة الأخيرة في سلسلة ابتكارنا هي ضمان عمل النظام في تناغم مع بنية المبنى.",
-      "items": [
-        {
-          "label": "إشراف ميداني",
-          "desc": "نوفر إرشاداً فنياً أثناء التركيب لضمان وضع النظام كما صُمم."
-        },
-        {
-          "label": "التشغيل التجريبي",
-          "desc": "عبر اختبارات دخان بارد وساخن نتحقق من زمن الاستجابة وسعة الاستخراج في الموقع."
-        },
-        {
-          "label": "تكامل الأتمتة الذكية",
-          "desc": "نضمن مزامنة مروحيات النفث والسدادات مع أنظمة كشف الحريق خلال مللي ثانية."
-        }
-      ]
+      "items": [],
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -176,19 +143,31 @@
     "items": [
       {
         "q": "ما القطاعات التي تخدمها NOVVES؟",
-        "a": "توفر NOVVES حلول استخراج الدخان والتهوية المريحة وإدارة الهواء الصناعي في قطاعات واسعة تشمل مواقف السيارات والأنفاق والمراكز التجارية والمستشفيات والفنادق والمنشآت الصناعية والبيوت المحمية ومحطات الطاقة والمباني السكنية."
+        "a": "توفر NOVVES حلول استخراج الدخان والتهوية المريحة وإدارة الهواء الصناعي في قطاعات واسعة تشمل مواقف السيارات والأنفاق والمراكز التجارية والمستشفيات والفنادق والمنشآت الصناعية والبيوت المحمية ومحطات الطاقة والمباني السكنية.",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "q": "ما المعايير التي تلتزم بها منتجاتكم؟",
-        "a": "تُصنع منتجاتنا وفق EN 12101-3 وISO 9001 وISO 14001 وISO 45001 وCE وATEX، وتُختبر في مختبرات معتمدة."
+        "a": "تُصنع منتجاتنا وفق EN 12101-3 وISO 9001 وISO 14001 وISO 45001 وCE وATEX، وتُختبر في مختبرات معتمدة.",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "q": "هل تقدمون خدمات تحليل CFD؟",
-        "a": "نعم، نجري محاكاة CFD ثلاثية الأبعاد لكل مشروع لتحليل انتشار الدخان ودرجة الحرارة وتركيز أول أكسيد الكربون ومسافة الرؤية، وتحسين مواضع مروحة النفث."
+        "a": "نعم، نجري محاكاة CFD ثلاثية الأبعاد لكل مشروع لتحليل انتشار الدخان ودرجة الحرارة وتركيز أول أكسيد الكربون ومسافة الرؤية، وتحسين مواضع مروحة النفث.",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "q": "هل يتوفر دعم ما بعد البيع؟",
-        "a": "نوفر دعماً شاملاً بعد البيع يشمل التشغيل التجريبي والصيانة الدورية وتوريد قطع الغيار والخدمة الفنية على مدار الساعة."
+        "a": "نوفر دعماً شاملاً بعد البيع يشمل التشغيل التجريبي والصيانة الدورية وتوريد قطع الغيار والخدمة الفنية على مدار الساعة.",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "هل تقدمون اختيار مروحة وتصميم نظام مخصص للمشروع؟",
@@ -211,13 +190,24 @@
         "linkLabel": "Explore our after-sales support process →",
         "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
-    ]
+    ],
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "لمشروعك",
     "title": "تبحث عن حل تهوية؟",
     "desc": "تواصل مع فريقنا الهندسي اليوم لمعاينات الموقع وتحليل CFD وتصميم المشروع وعروض الأسعار.",
-    "requestQuote": "اطلب عرض سعر"
+    "requestQuote": "اطلب عرض سعر",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pageChrome": {
     "catalogsVertical": "الكتالوجات",
@@ -248,7 +238,14 @@
     "scrollVideoSideLabel": "تهوية مواقف السيارات",
     "engineeringAlt1": "NOVVES: قطع بالليزر CNC دقيق على الصفائح المعدنية",
     "engineeringAlt2": "NOVVES: تركيب وخدمة فنية في الموقع",
-    "pillarsFallbackTitle": "نهجنا الهندسي"
+    "pillarsFallbackTitle": "نهجنا الهندسي",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
+    "catalogCardCta": "View"
   },
   "solutionCarouselByHref": {
     "/cozumler/duman-isi-tahliye-sistemleri": {
@@ -319,34 +316,49 @@
     {
       "title": "كتالوج المنتجات",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "ملخصات تقنية",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "أرشيف بطاقات البيانات",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "referencePreview": [
     {
       "title": "2M لوجستيك جيبزة مستودع",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S كالي توباز زيتينبورنو",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "مستشفى أضنة يوريغير 100 سرير",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "المنشآت الصناعية",

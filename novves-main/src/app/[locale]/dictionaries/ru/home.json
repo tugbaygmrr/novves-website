@@ -47,58 +47,25 @@
       "tag": "ПРОЕКТИРОВАНИЕ И ДИЗАЙН",
       "title": "Цифровой двойник аналитического интеллекта",
       "intro": "Наш процесс начинается не с продукта, а с анализа проблемы. Для NOVVES инжиниринг — это не просто выбор вентилятора, а математическое прогнозирование поведения дыма и тепла внутри здания.",
-      "items": [
-        {
-          "label": "CFD-моделирование",
-          "desc": "Мы моделируем пожарные сценарии в цифровой среде, подтверждая работоспособность системы ещё до монтажа."
-        },
-        {
-          "label": "Точные расчёты",
-          "desc": "Благодаря расчётам воздушных потоков и давления для конкретного здания мы исключаем избыточные инженерные затраты и достигаем оптимальной эффективности."
-        },
-        {
-          "label": "Проектный подход",
-          "desc": "Мы производим продукцию, полностью соответствующую техническим спецификациям."
-        }
-      ]
+      "items": [],
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "ПРОИЗВОДСТВО И КАЧЕСТВО",
       "title": "Мастерство, превосходящее стандарты",
       "intro": "Каждый параметр, утверждённый на этапе проектирования, превращается в реальные характеристики на нашем производстве. Сочетая инженерную экосистему с современными производственными технологиями, мы сводим погрешность к нулю.",
-      "items": [
-        {
-          "label": "Сертифицированные характеристики",
-          "desc": "Каждый вентилятор и клапан, произведённый нами, проходит испытания в аккредитованных лабораториях на соответствие международным стандартам огнестойкости, таким как EN 12101-3."
-        },
-        {
-          "label": "Прецизионное производство",
-          "desc": "От лазерной резки до динамической балансировки — мы работаем с миллиметровыми допусками на каждом этапе."
-        },
-        {
-          "label": "Экологичные материалы",
-          "desc": "Мы увеличиваем срок службы систем, используя долговечные, коррозионностойкие материалы с высокой энергоэффективностью."
-        }
-      ]
+      "items": [],
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "МОНТАЖ И ПРИМЕНЕНИЕ",
       "title": "Безупречная работа на объекте",
       "intro": "Лучший продукт спасает жизни только при правильной интеграции. Завершающее звено нашей инновационной цепочки — обеспечение бесперебойной работы системы в гармонии с инфраструктурой здания.",
-      "items": [
-        {
-          "label": "Авторский надзор",
-          "desc": "Мы обеспечиваем техническое сопровождение при монтаже для правильного размещения системы в соответствии с проектом."
-        },
-        {
-          "label": "Пусконаладочные работы",
-          "desc": "С помощью испытаний холодным и горячим дымом мы проверяем время отклика системы и мощность дымоудаления на объекте."
-        },
-        {
-          "label": "Интеграция интеллектуальной автоматизации",
-          "desc": "Мы гарантируем синхронизацию струйных вентиляторов и клапанов с системами обнаружения пожара в течение миллисекунд."
-        }
-      ]
+      "items": [],
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -176,19 +143,31 @@
     "items": [
       {
         "q": "Какие отрасли обслуживает NOVVES?",
-        "a": "NOVVES предоставляет решения по дымоудалению, комфортной вентиляции и промышленному управлению воздухом для широкого спектра объектов: парковки, тоннели, торговые центры, больницы, гостиницы, промышленные объекты, теплицы, электростанции и жилые здания."
+        "a": "NOVVES предоставляет решения по дымоудалению, комфортной вентиляции и промышленному управлению воздухом для широкого спектра объектов: парковки, тоннели, торговые центры, больницы, гостиницы, промышленные объекты, теплицы, электростанции и жилые здания.",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "q": "Каким стандартам соответствует ваша продукция?",
-        "a": "Наша продукция производится в соответствии со стандартами EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE и ATEX и проходит испытания в аккредитованных лабораториях."
+        "a": "Наша продукция производится в соответствии со стандартами EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE и ATEX и проходит испытания в аккредитованных лабораториях.",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "q": "Вы предоставляете услуги CFD-анализа?",
-        "a": "Да, мы выполняем трёхмерное CFD-моделирование для каждого проекта, анализируя распространение дыма, температуру, концентрацию CO и дальность видимости, оптимизируя размещение струйных вентиляторов."
+        "a": "Да, мы выполняем трёхмерное CFD-моделирование для каждого проекта, анализируя распространение дыма, температуру, концентрацию CO и дальность видимости, оптимизируя размещение струйных вентиляторов.",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "q": "Оказываете ли вы послепродажную поддержку?",
-        "a": "Мы обеспечиваем комплексную послепродажную поддержку, включая пусконаладочные работы, периодическое техническое обслуживание, поставку запасных частей и круглосуточный технический сервис."
+        "a": "Мы обеспечиваем комплексную послепродажную поддержку, включая пусконаладочные работы, периодическое техническое обслуживание, поставку запасных частей и круглосуточный технический сервис.",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "Делаете ли вы проектно-специфичный подбор вентилятора и проектирование систем?",
@@ -211,13 +190,24 @@
         "linkLabel": "Explore our after-sales support process →",
         "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
-    ]
+    ],
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "Для вашего проекта",
     "title": "Ищете решение по вентиляции?",
     "desc": "Свяжитесь с нашей инженерной командой для выездного обследования, CFD-анализа, проектирования и расчёта стоимости.",
-    "requestQuote": "Запросить предложение"
+    "requestQuote": "Запросить предложение",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pageChrome": {
     "catalogsVertical": "Каталоги",
@@ -326,17 +316,20 @@
     {
       "title": "Каталог продукции",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "Технические брошюры",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "Архив datasheet",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "certificatePreview": [
@@ -380,17 +373,29 @@
     {
       "title": "2M Lojistik Gebze Depo",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S Kale Topaz Zeytinburnu",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "Adana Yüreğir 100 Yataklı Hastane",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "Промышленные объекты",

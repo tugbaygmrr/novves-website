@@ -189,7 +189,7 @@
           {
             "name": "OWL",
             "type": "壁挂式风扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           }
         ]
       },
@@ -289,7 +289,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -317,11 +317,83 @@
     "library": {
       "heroBadge": null,
       "sidebar": {
-        "components": [],
-        "related": []
+        "components": [
+          {
+            "title": "射流风机系统",
+            "href": "#bilesen-0"
+          },
+          {
+            "title": "烟控柜",
+            "href": "#bilesen-2"
+          },
+          {
+            "title": "自然泄压风阀",
+            "href": "#bilesen-1"
+          }
+        ],
+        "related": [
+          {
+            "label": "火灾探测",
+            "href": "#bilesen-2",
+            "icon": "fire"
+          },
+          {
+            "label": "气体探测",
+            "href": "#bolum-urunler",
+            "icon": "gas"
+          },
+          {
+            "label": "档案记录",
+            "href": "#bolum-dokumantasyon",
+            "icon": "archive"
+          }
+        ]
       },
-      "bannerDescription": "排烟排热系统；它是室内停车场、隧道、地铁站、机场、医院、能源设施和大体积结构消防安全最关键的机电部件之一。它不仅确保日常使用中二氧化碳、氮氧化物和类似污染物保持在安全水平，还有助于保持逃生路线畅通、保持能见度，并在发生火灾时以受控方式引导烟雾和热气，帮助消防员安全到达火源。\n\nNOVVES 提供集成烟雾控制方法，包括 DRAGONFLY 排烟风机和射流风机、HOUND 防烟阀、MARLIN 新鲜空气风机和 HAWK 自动化面板。系统;它不仅由强大的风扇组成，还集成了自动化、密封风门、新鲜空气平衡、CFD 验证和根据火灾场景工作的 EN/NFPA 合规工程。 F300/F400 温度等级风机通过 CO/NOx 传感器控制的日常通风和基于场景的消防控制，将建筑安全提升到新的水平。"
-    }
+      "bannerDescription": "排烟排热系统；它是室内停车场、隧道、地铁站、机场、医院、能源设施和大体积结构消防安全最关键的机电部件之一。它不仅确保日常使用中二氧化碳、氮氧化物和类似污染物保持在安全水平，还有助于保持逃生路线畅通、保持能见度，并在发生火灾时以受控方式引导烟雾和热气，帮助消防员安全到达火源。\n\nNOVVES 提供集成烟雾控制方法，包括 DRAGONFLY 排烟风机和射流风机、HOUND 防烟阀、MARLIN 新鲜空气风机和 HAWK 自动化面板。系统;它不仅由强大的风扇组成，还集成了自动化、密封风门、新鲜空气平衡、CFD 验证和根据火灾场景工作的 EN/NFPA 合规工程。 F300/F400 温度等级风机通过 CO/NOx 传感器控制的日常通风和基于场景的消防控制，将建筑安全提升到新的水平。",
+      "products": [
+        {
+          "name": "Dragonfly",
+          "description": "符合 EN 12101-3、具备 F300/2H 高温等级的轴流排烟风机。",
+          "image": "/images/products/dragonfly-c.png",
+          "href": "/urunler/duman-isi-tahliye-fanlari"
+        },
+        {
+          "name": "Hound",
+          "description": "用于防火及防烟分区、具备高密封性的伺服驱动排烟阀。",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "Hawk",
+          "description": "基于场景的排烟自动化，集成 BMS 并兼容消防控制盘。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ],
+      "documents": [
+        {
+          "title": "NAX 技术样本 2024",
+          "meta": "PDF • 14.2 MB",
+          "icon": "pdf"
+        },
+        {
+          "title": "排烟设计指南",
+          "meta": "PDF • 8.5 MB",
+          "icon": "doc"
+        },
+        {
+          "title": "NVD-500 Revit 族文件 (BIM)",
+          "meta": "RFA • 22.1 MB",
+          "icon": "bim"
+        },
+        {
+          "title": "LPCB 烟控管理证书",
+          "meta": "PDF • 2.1 MB",
+          "icon": "cert"
+        }
+      ]
+    },
+    "breadcrumbCategory": "消防安全"
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "舒适暖通空调",
@@ -508,7 +580,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -539,7 +611,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "舒适空调系统；它旨在对办公室、酒店、学校、医院行政区域、购物中心、住宅、银行、公共建筑、机场、餐厅和健身房的室内空气质量、热舒适性、安静和能源效率进行综合管理。由于人们大部分时间都在现代建筑的封闭空间中度过，二氧化碳、VOC、颗粒物、湿度、温度和风速等参数与健康、效率和用户满意度直接相关。\n\nNOVVES 开发针对建筑类型的空调解决方案，包括 CARACAL 热回收设备、TIGER 空气处理机组、HUMMINGBIRD EC 风扇、HOUND 空气调节和 VAV 阻尼器、KOI 静音管道风扇、SEAHORSE 浴室风扇、TURTLE 细胞风扇、DRAGONFLY 高容量空气流动解决方案和 BUTTERFLY 厨房排气扇。系统；它的设计具有按需控制通风、热回收、低噪音、自然冷却、分区控制、高过滤和节能运行目标。"
+      "bannerDescription": "舒适空调系统；它旨在对办公室、酒店、学校、医院行政区域、购物中心、住宅、银行、公共建筑、机场、餐厅和健身房的室内空气质量、热舒适性、安静和能源效率进行综合管理。由于人们大部分时间都在现代建筑的封闭空间中度过，二氧化碳、VOC、颗粒物、湿度、温度和风速等参数与健康、效率和用户满意度直接相关。\n\nNOVVES 开发针对建筑类型的空调解决方案，包括 CARACAL 热回收设备、TIGER 空气处理机组、HUMMINGBIRD EC 风扇、HOUND 空气调节和 VAV 阻尼器、KOI 静音管道风扇、SEAHORSE 浴室风扇、TURTLE 细胞风扇、DRAGONFLY 高容量空气流动解决方案和 BUTTERFLY 厨房排气扇。系统；它的设计具有按需控制通风、热回收、低噪音、自然冷却、分区控制、高过滤和节能运行目标。",
+      "products": [
+        {
+          "name": "Tiger",
+          "description": "500 - 125,000 m³/h 风量，模块化设计，高效热交换器及 EC 风机选配。",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Caracal",
+          "description": "回收排风中的能量，使供暖/制冷成本降低高达 70%。",
+          "image": "/images/products/caracal.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Dolphin",
+          "description": "针对室内泳池、SPA 及高湿度区域的专业湿度控制。",
+          "image": "/images/products/dolphin-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Koi",
+          "description": "用于管道内增压及送风的紧凑型低噪声管道风机。",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "带风量调节阀的顶置、壁式及地置散流器，实现均匀送风。",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "配备 BMS 集成智能控制柜的温度、湿度及 CO₂ 传感器。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "hijyenikFiltrasyon": {
@@ -727,7 +837,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -758,7 +868,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "卫生区域的通风；除了舒适性之外，它还是直接影响人类健康、产品质量和操作安全的关键工程障碍。手术室、重症监护室、洁净室、药品生产设施、食品生产区、实验室、医院服务、工业厨房和兽医/畜牧区的空气；应检查颗粒、病原体、气味、水分、交叉污染和压力差。这些区域的空气流通不当；它可能导致感染风险、产品污染、冷凝、微生物繁殖和职业安全问题。\n\nNOVVES 专门为关键区域提供集成通风解决方案，包括 TIGER HYG 卫生空气处理机组、TURTLE 细胞风扇、DRAGONFLY 排烟/排气解决方案、CARACAL 热回收装置、HUMMINGBIRD EC 风扇、HOUND 密封阻尼器、BUTTERFLY 厨房排气扇和 NAUTILUS 重型风扇。系统设计；它是根据 HEPA/ULPA 过滤、正负压级联、层流气流、零再循环、冷凝控制、耐冲洗和防止交叉污染等标准设计的。"
+      "bannerDescription": "卫生区域的通风；除了舒适性之外，它还是直接影响人类健康、产品质量和操作安全的关键工程障碍。手术室、重症监护室、洁净室、药品生产设施、食品生产区、实验室、医院服务、工业厨房和兽医/畜牧区的空气；应检查颗粒、病原体、气味、水分、交叉污染和压力差。这些区域的空气流通不当；它可能导致感染风险、产品污染、冷凝、微生物繁殖和职业安全问题。\n\nNOVVES 专门为关键区域提供集成通风解决方案，包括 TIGER HYG 卫生空气处理机组、TURTLE 细胞风扇、DRAGONFLY 排烟/排气解决方案、CARACAL 热回收装置、HUMMINGBIRD EC 风扇、HOUND 密封阻尼器、BUTTERFLY 厨房排气扇和 NAUTILUS 重型风扇。系统设计；它是根据 HEPA/ULPA 过滤、正负压级联、层流气流、零再循环、冷凝控制、耐冲洗和防止交叉污染等标准设计的。",
+      "products": [
+        {
+          "name": "Tiger",
+          "description": "不锈钢机壳、卫生级面板及符合洁净室标准的模块化结构。",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Turtle",
+          "description": "颗粒过滤率达 99.995% 的 H13/H14 级 HEPA 过滤器。",
+          "image": "/images/products/turtle-a.png",
+          "href": "/urunler/hava-filtrasyonu"
+        },
+        {
+          "name": "Marlin",
+          "description": "手术室及洁净室内的单向气流，营造无颗粒环境。",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hound",
+          "description": "房间之间的压差监测及自动风阀控制。",
+          "image": "/images/products/hound-crd.png",
+          "href": "/urunler/hava-yonetimi"
+        },
+        {
+          "name": "初效及袋式过滤级",
+          "description": "G4 初效过滤器及 F7/F9 袋式过滤器，通过多级过滤延长 HEPA 使用寿命。",
+          "image": "/images/products/cyclone.png",
+          "href": "/urunler/hava-filtrasyonu"
+        },
+        {
+          "name": "压力及监测传感器",
+          "description": "用于持续监测的颗粒计数、压力传感器及 BMS 集成。",
+          "image": "/images/products/diferansiyel-basinc-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "endustriyelHavaYonetimi": {
@@ -893,7 +1041,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           }
         ]
       },
@@ -946,7 +1094,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -977,7 +1125,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "工业设施的空气管理；它是生产连续性、员工健康、消防安全、环境排放控制和过程质量的基础设施之一。重工业、焊接、油漆、铸造、冶金、纺织、造纸、能源、汽车、机械生产、废物处理和家具等行业释放的粉尘、烟雾、VOC、油雾、腐蚀性气体、高温和潮湿负荷无法用标准的暖通空调方法进行管理。这些地区的天气；它应该根据工程学科作为过程的一部分进行设计。\n\nNOVVES 通过重型风扇和空气管理解决方案提供源头污染物捕获、负压分区、热负荷疏散、除尘、溶剂排放、热管理和 24/7 工业运行连续性。 NAUTILUS高压蜗牛风机、HERON屋顶式排气扇、OWL壁式工业风机、ELEPHANT除尘系统、TIGER空调/加湿装置和MARLIN轴流解决方案；它们根据设施的过程风险一起或单独设计。"
+      "bannerDescription": "工业设施的空气管理；它是生产连续性、员工健康、消防安全、环境排放控制和过程质量的基础设施之一。重工业、焊接、油漆、铸造、冶金、纺织、造纸、能源、汽车、机械生产、废物处理和家具等行业释放的粉尘、烟雾、VOC、油雾、腐蚀性气体、高温和潮湿负荷无法用标准的暖通空调方法进行管理。这些地区的天气；它应该根据工程学科作为过程的一部分进行设计。\n\nNOVVES 通过重型风扇和空气管理解决方案提供源头污染物捕获、负压分区、热负荷疏散、除尘、溶剂排放、热管理和 24/7 工业运行连续性。 NAUTILUS高压蜗牛风机、HERON屋顶式排气扇、OWL壁式工业风机、ELEPHANT除尘系统、TIGER空调/加湿装置和MARLIN轴流解决方案；它们根据设施的过程风险一起或单独设计。",
+      "products": [
+        {
+          "name": "Nautilus",
+          "description": "耐高压高温的双层或单层壁离心风机。",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Marlin",
+          "description": "适用于大型空间的大风量带罩或叶片式轴流风机。",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "用于设施屋顶排风或新风送风的径流式及轴流式屋顶风机。",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Owl",
+          "description": "用于排风或送风的立面安装径流式及轴流式壁式风机。",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Koi",
+          "description": "用于管道内增压及空气输送的紧凑型管道风机。",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hawk",
+          "description": "变频器、温度/湿度传感器、PLC 控制柜及 BMS 集成。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "hayvancilikTesisleri": {
@@ -1091,7 +1277,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "MARLIN",
@@ -1107,7 +1293,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1139,7 +1325,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "KOI",
@@ -1149,7 +1335,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -1180,7 +1366,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "现代畜牧设施的通风；它在动物福利、生物安全、效率和业务可持续性方面发挥着决定性作用。养鸡场、产蛋设施、孵化场和牛棚；由于代谢热、水分、氨、二氧化碳、甲烷、绒毛/灰尘颗粒和气味负荷较高，它们的天气条件比商业建筑要恶劣得多。通风设计不当；它会导致热应激、疾病风险、饲料转化损失、效率低和运营成本高。\n\nNOVVES 提供高流量、耐腐蚀且适合畜牧设施连续运行的风机解决方案。 CHICKEN系列家禽排气扇、OWL壁挂式风机、HAWK自动化系统、MARLIN内循环风机、TIGER精密控制空气处理机组、TURTLE增压解决方案和HERON屋顶风机；它用于根据设施类型管理温度、湿度、气体浓度、压力平衡和生物安全要求。因此，农场的目标是更健康的环境、更平衡的气流和更高效的生产条件。"
+      "bannerDescription": "现代畜牧设施的通风；它在动物福利、生物安全、效率和业务可持续性方面发挥着决定性作用。养鸡场、产蛋设施、孵化场和牛棚；由于代谢热、水分、氨、二氧化碳、甲烷、绒毛/灰尘颗粒和气味负荷较高，它们的天气条件比商业建筑要恶劣得多。通风设计不当；它会导致热应激、疾病风险、饲料转化损失、效率低和运营成本高。\n\nNOVVES 提供高流量、耐腐蚀且适合畜牧设施连续运行的风机解决方案。 CHICKEN系列家禽排气扇、OWL壁挂式风机、HAWK自动化系统、MARLIN内循环风机、TIGER精密控制空气处理机组、TURTLE增压解决方案和HERON屋顶风机；它用于根据设施类型管理温度、湿度、气体浓度、压力平衡和生物安全要求。因此，农场的目标是更健康的环境、更平衡的气流和更高效的生产条件。",
+      "products": [
+        {
+          "name": "Chicken",
+          "description": "用于家禽及小型畜禽舍的耐腐蚀大风量轴流风机。",
+          "image": "/images/products/chicken.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Owl",
+          "description": "用于牛舍及畜禽舍的立面安装镀锌机壳排风机。",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "用于屋顶排风及新风送风的耐腐蚀屋顶风机。",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Marlin",
+          "description": "采用绝热降温的大风量通风，可降低炎热气候下的室内温度。",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "用于受控新风进气及隧道通风布局的可调式格栅。",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "配备自动风机调速及气候管理的温度、湿度及氨气传感器。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "trafoEnerjiOdalari": {
@@ -1294,7 +1518,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1315,7 +1539,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           }
         ]
       },
@@ -1342,7 +1566,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1352,7 +1576,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -1383,7 +1607,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "变电中心、中低压机房、发电机房、输变电所、UPS机房及数据中心能源区；它们是为电网提供不间断电力的关键基础设施。如果这些区域产生的热负荷得不到控制，变压器绝缘寿命将缩短，面板内可能发生凝露和氧化，电力电子设备可能达到热极限，最坏的情况下，可能会出现系统故障或火灾风险。因此，能源室的通风并不是简单的排气应用；它是专为 24/7 可靠性而设计的热管理系统。\n\n新奇；它通过 MARLIN 套筒式轴流风机、OWL 壁式风机、HERON 屋顶风机、HUMMINGBIRD EC 风机、KOI 管道风机和 TURTLE 单元风机解决方案为变压器和能源室提供特殊的空气循环。系统；它是根据诸如从变压器室上层排出热空气、从正确的位置获取新鲜空气、为发电机房提供燃烧/冷却空气、变电站的冷凝控制以及UPS/ESS机房的电池安全等需求而设计的。"
+      "bannerDescription": "变电中心、中低压机房、发电机房、输变电所、UPS机房及数据中心能源区；它们是为电网提供不间断电力的关键基础设施。如果这些区域产生的热负荷得不到控制，变压器绝缘寿命将缩短，面板内可能发生凝露和氧化，电力电子设备可能达到热极限，最坏的情况下，可能会出现系统故障或火灾风险。因此，能源室的通风并不是简单的排气应用；它是专为 24/7 可靠性而设计的热管理系统。\n\n新奇；它通过 MARLIN 套筒式轴流风机、OWL 壁式风机、HERON 屋顶风机、HUMMINGBIRD EC 风机、KOI 管道风机和 TURTLE 单元风机解决方案为变压器和能源室提供特殊的空气循环。系统；它是根据诸如从变压器室上层排出热空气、从正确的位置获取新鲜空气、为发电机房提供燃烧/冷却空气、变电站的冷凝控制以及UPS/ESS机房的电池安全等需求而设计的。",
+      "products": [
+        {
+          "name": "Owl",
+          "description": "IP55 等级、镀锌机壳的变压器室壁式排风及送风机。",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "用于能源机房屋顶热风排放的径流式及轴流式屋顶风机。",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Koi",
+          "description": "通过管道系统长距离输送热风的紧凑型管道风机。",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "符合 TEDAS 规范、带过滤及防虫网的进气格栅。",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "根据室内温度实现风机自动启停、分级控制及气候管理。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Hound",
+          "description": "用于防火及热风分区的电动风阀及压力平衡风阀。",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        }
+      ]
     }
   },
   "seraTarimsal": {
@@ -1497,7 +1759,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "MARLIN",
@@ -1529,7 +1791,7 @@
           {
             "name": "OWL",
             "type": "壁扇",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1555,7 +1817,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -1586,7 +1848,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "现代温室的效率；它不仅取决于灌溉、施肥或光照量，还取决于温度、相对湿度、二氧化碳水平和 VPD 值的正确管理。当封闭的农业结构中空气保持停滞时，植物蒸腾作用的平衡被破坏，叶面发生凝结，真菌病害增加，光合作用效率降低。因此，温室通风不是简单的风机应用；它是一个综合考虑植物生理学、小气候控制和能源效率的工程系统。\n\nNOVVES 为玻璃和聚碳酸酯温室、塑料隧道温室、智能水培/无土农业设施、热带或寒冷气候温室、树木栽培和草坪生产区提供不同的空气管理解决方案。马林鱼、鸡肉、锦鲤、猫头鹰、蜂鸟、雷莫拉和猎犬产品系列；它根据温室的建筑、气候条件、产品类型和自动化需求进行选择，并提供均匀的空气循环、温湿度平衡、二氧化碳分布、工厂上方的低速气流和节能控制。\n\n在智能温室应用中，来自温度、湿度、二氧化碳和光传感器的数据由自动化面板进行评估； EC 电机或变频控制风扇仅在所需的流量下运行。这种方法可以保护工厂免受突然的气候波动的影响，同时减少能源消耗并创造全年更稳定的生产条件。 NOVVES温室通风解决方案；它旨在提高产量、降低疾病风险并为农业生产提供受控、可持续的小气候。"
+      "bannerDescription": "现代温室的效率；它不仅取决于灌溉、施肥或光照量，还取决于温度、相对湿度、二氧化碳水平和 VPD 值的正确管理。当封闭的农业结构中空气保持停滞时，植物蒸腾作用的平衡被破坏，叶面发生凝结，真菌病害增加，光合作用效率降低。因此，温室通风不是简单的风机应用；它是一个综合考虑植物生理学、小气候控制和能源效率的工程系统。\n\nNOVVES 为玻璃和聚碳酸酯温室、塑料隧道温室、智能水培/无土农业设施、热带或寒冷气候温室、树木栽培和草坪生产区提供不同的空气管理解决方案。马林鱼、鸡肉、锦鲤、猫头鹰、蜂鸟、雷莫拉和猎犬产品系列；它根据温室的建筑、气候条件、产品类型和自动化需求进行选择，并提供均匀的空气循环、温湿度平衡、二氧化碳分布、工厂上方的低速气流和节能控制。\n\n在智能温室应用中，来自温度、湿度、二氧化碳和光传感器的数据由自动化面板进行评估； EC 电机或变频控制风扇仅在所需的流量下运行。这种方法可以保护工厂免受突然的气候波动的影响，同时减少能源消耗并创造全年更稳定的生产条件。 NOVVES温室通风解决方案；它旨在提高产量、降低疾病风险并为农业生产提供受控、可持续的小气候。",
+      "products": [
+        {
+          "name": "Owl",
+          "description": "安装于温室墙体的镀锌机壳大风量通风机。",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Marlin",
+          "description": "绝热降温蜂窝系统，可使温室温度降低 8–12°C。",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "用于温室屋顶热风排放及新风送风的屋顶风机。",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Turtle",
+          "description": "用于温室内部均匀分布温度及湿度的水平空气循环风机。",
+          "image": "/images/products/turtle-a.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "用于受控新风进气的电动侧帘及天窗系统。",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "基于 IoT 的远程监控与管理，配备温度、湿度、CO₂ 及光照传感器。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "atexPatlamaKoruma": {
@@ -1774,7 +2074,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -1805,7 +2105,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "在存在爆炸性气体、蒸汽、雾气、溶剂、VOC或可燃粉尘的工业区域，通风系统不是标准的送风设备；它是设施安全的直接组成部分。在化工厂和石化厂、燃料加注区、涂装车间、面粉糖粉工艺、制药生产和类似的高风险环境中选择合适的风机；控制火花、静电、热表面和气体积聚的风险至关重要。\n\nNOVVES 通过专门针对 ATEX 和防爆应用的风扇、阻尼器和过滤解决方案，在爆炸性环境中提供安全的空气管理。 BEAR、NAUTILUS、HOUND、KOI 和 ELEPHANT 产品系列；根据区域等级、气体/粉尘特性、工艺温度和维护要求进行设计，提供安全排气、VOC排放、可燃粉尘控制和静电放电防护的集成解决方案。"
+      "bannerDescription": "在存在爆炸性气体、蒸汽、雾气、溶剂、VOC或可燃粉尘的工业区域，通风系统不是标准的送风设备；它是设施安全的直接组成部分。在化工厂和石化厂、燃料加注区、涂装车间、面粉糖粉工艺、制药生产和类似的高风险环境中选择合适的风机；控制火花、静电、热表面和气体积聚的风险至关重要。\n\nNOVVES 通过专门针对 ATEX 和防爆应用的风扇、阻尼器和过滤解决方案，在爆炸性环境中提供安全的空气管理。 BEAR、NAUTILUS、HOUND、KOI 和 ELEPHANT 产品系列；根据区域等级、气体/粉尘特性、工艺温度和维护要求进行设计，提供安全排气、VOC排放、可燃粉尘控制和静电放电防护的集成解决方案。",
+      "products": [
+        {
+          "name": "Bear",
+          "description": "采用无火花材料、适用于 1/2 区及 21/22 区的认证离心风机。",
+          "image": "/images/products/bear-lpf.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Bear",
+          "description": "适用于爆炸性环境的带罩及叶片式轴流通风机。",
+          "image": "/images/products/bear-t.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Bear",
+          "description": "用于存在爆炸性气体/粉尘场所、配备防爆电机的屋顶安装排风机。",
+          "image": "/images/products/bear-reb.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Hawk",
+          "description": "ATEX 认证电机、防爆按钮、信号灯及控制柜。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Koi",
+          "description": "接地风管及连接件，防止静电积聚。",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "气体探测传感器",
+          "description": "可燃气体/粉尘传感器、PLC 控制的紧急停机及通风方案。",
+          "image": "/images/products/kanal-tipi-duman-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "akilliOtomasyon": {
@@ -1977,7 +2315,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -2008,7 +2346,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "通风和空调系统仅由机械设备组成，没有传感器和控制算法。另一方面，智能自动化系统像建筑物或设施的“中枢神经系统”一样管理这些设备，提高能源效率，安全激活火灾/烟雾场景，监控室内空气质量并使维护过程更加可预测。智能建筑、工业设施、隧道和停车项目、住宅、医院、洁净室和数据中心的自动化设置应采用不同的工程逻辑进行处理。\n\nNOVVES自动化解决方案；与 BMS、SCADA、PLC、Modbus、BACnet、CO/NOx 探测器、温湿度传感器、压差控制、火灾场景矩阵和需求控制通风架构集成。得益于 REMORA 控制面板、HOUND 自动风门、LION 风扇控制模块、DRAGONFLY 射流风扇和 HUMMINGBIRD EC 风扇，该系统；在日常运行中提供节能的同时，当发生火灾或过程风险时，它会根据场景自动做出反应。"
+      "bannerDescription": "通风和空调系统仅由机械设备组成，没有传感器和控制算法。另一方面，智能自动化系统像建筑物或设施的“中枢神经系统”一样管理这些设备，提高能源效率，安全激活火灾/烟雾场景，监控室内空气质量并使维护过程更加可预测。智能建筑、工业设施、隧道和停车项目、住宅、医院、洁净室和数据中心的自动化设置应采用不同的工程逻辑进行处理。\n\nNOVVES自动化解决方案；与 BMS、SCADA、PLC、Modbus、BACnet、CO/NOx 探测器、温湿度传感器、压差控制、火灾场景矩阵和需求控制通风架构集成。得益于 REMORA 控制面板、HOUND 自动风门、LION 风扇控制模块、DRAGONFLY 射流风扇和 HUMMINGBIRD EC 风扇，该系统；在日常运行中提供节能的同时，当发生火灾或过程风险时，它会根据场景自动做出反应。",
+      "products": [
+        {
+          "name": "Hawk",
+          "description": "电机控制中心，具备风机启停、分级控制、故障监测及保护继电器集成。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Koi",
+          "description": "集成变频器的变速风机控制，实现节能及精确风量调节。",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hound",
+          "description": "用于 BMS 集成、兼容 Modbus/BACnet 的调节风阀及分区控制。",
+          "image": "/images/products/hound-crd.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "压差传感器",
+          "description": "针对温度、湿度、压力及过滤区域的精确传感器数据及 PI 控制。",
+          "image": "/images/products/diferansiyel-basinc-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "管道烟雾/CO 传感器",
+          "description": "CO、CO₂ 及烟雾探测，集成 IoT 仪表盘、报警及远程监控。",
+          "image": "/images/products/kanal-tipi-duman-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Hound",
+          "description": "基于场景的模式分区：正常、夜间、火灾、停车场 CO 排放等。",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        }
+      ]
     }
   },
   "konutHavalandirma": {
@@ -2180,7 +2556,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -2211,7 +2587,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "在新一代住宅中，高度隔热和气密的建筑外壳可节省能源并显着减少自然空气交换。这种情况；它可能会导致二氧化碳、挥发性有机化合物、氡气、湿气、异味和霉菌风险在室内环境中积聚。这就是为什么住宅通风不再是一个奢侈的功能；它是健康生活、能源效率和建筑保护所必需的工程系统。公寓、别墅、住宅、独立屋、微型住宅/装配式建筑以及场地公共区域具有不同的风量、声级、安装面积和控制需求。\n\nNOVVES住宅类型解决方案；它基于紧凑的架构、低噪音水平、EC 电机技术、热回收、湿度控制操作和智能家居集成。 KOI紧凑型管道风机、CARACAL热回收装置、TIGER紧凑型空气处理机组、HUMMINGBIRD智能EC风机、TURTLE绝缘细胞风机、ALPACA空气分配设备、SEAHORSE浴室/卫生间风机、BUTTERFLY厨房排气扇和OWL公共区域排气扇；它用于在生活空间中创造安静、健康和节能的微气候。"
+      "bannerDescription": "在新一代住宅中，高度隔热和气密的建筑外壳可节省能源并显着减少自然空气交换。这种情况；它可能会导致二氧化碳、挥发性有机化合物、氡气、湿气、异味和霉菌风险在室内环境中积聚。这就是为什么住宅通风不再是一个奢侈的功能；它是健康生活、能源效率和建筑保护所必需的工程系统。公寓、别墅、住宅、独立屋、微型住宅/装配式建筑以及场地公共区域具有不同的风量、声级、安装面积和控制需求。\n\nNOVVES住宅类型解决方案；它基于紧凑的架构、低噪音水平、EC 电机技术、热回收、湿度控制操作和智能家居集成。 KOI紧凑型管道风机、CARACAL热回收装置、TIGER紧凑型空气处理机组、HUMMINGBIRD智能EC风机、TURTLE绝缘细胞风机、ALPACA空气分配设备、SEAHORSE浴室/卫生间风机、BUTTERFLY厨房排气扇和OWL公共区域排气扇；它用于在生活空间中创造安静、健康和节能的微气候。",
+      "products": [
+        {
+          "name": "Tiger",
+          "description": "可回收排风中高达 90% 热量的紧凑型新风机组，实现节能。",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Seahorse",
+          "description": "静音、节能且紧凑的浴室及卫生间排风机。",
+          "image": "/images/products/banyo-fan-1.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Koi",
+          "description": "用于管道内新风送风及排风的低噪声紧凑型风机。",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Turtle",
+          "description": "用于厨房及生活区管道、兼容油脂过滤器的静音排风及送风。",
+          "image": "/images/products/turtle-a.png",
+          "href": "/urunler/mutfak-fanlari"
+        },
+        {
+          "name": "Alpaca",
+          "description": "用于均匀送风的顶置、壁式及地置格栅。",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "无线遥控、湿度传感器、定时器及调速控制。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "marinOffshore": {
@@ -2383,7 +2797,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -2414,7 +2828,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "海洋和近海结构的通风系统；它的设计不仅是为了提供舒适的空气交换，还为了设备安全、防火、腐蚀控制、爆炸性环境管理和 24/7 操作连续性。船舶发动机舱、发电机舱、泵房、厨房排气管线、生活空间、技术容积、海上平台、FPSO装置和造船厂项目；由于存在高湿度、含盐大气、振动、有限空间、高温和易燃气体的风险，它需要比标准 HVAC 解决方案更耐用的工程系统。\n\nNOVVES 为船舶和海上项目提供特殊的风扇、风门、排烟、排气、新鲜空气和过滤解决方案。 MARLIN 轴流风机用于高流量新鲜空气和排气应用； BEAR防爆风机用于存在爆炸性气体风险的危险区域； NAUTILUS 重型蜗牛风机用于高压排气和工艺空气输送； HOUND 阻尼器用于需要气流控制和密封的区域；蜻蜓排烟风机在火灾场景中发挥着至关重要的作用。\n\n海洋环境中使用的设备；它必须采用特殊材料、涂层和发动机防护等级来设计，以抵御含盐空气、湿度、振动和连续运行条件。 NOVVES 解决方案；它可以专门适应具有镀锌、环氧涂层、不锈钢、船用型油漆系统、高 IP 防护等级电机、减振连接和紧凑安装几何形状的项目。在海上平台和船上应用中，风扇和空气管道的放置通过工程计算进行优化，同时考虑到有限的体积、维护通道和安全要求。\n\nNOVVES 船舶和近海通风解决方案；它通过单一集成系统方法满足不同的需求，例如机舱冷却、废气和热空气排放、居住空间舒适通风、厨房排气、电池/能源室通风、防爆区域空气管理和火灾时的烟雾控制。因此，可以为船舶、造船厂和海上项目提供安全、耐用、高效和持久的空气管理。"
+      "bannerDescription": "海洋和近海结构的通风系统；它的设计不仅是为了提供舒适的空气交换，还为了设备安全、防火、腐蚀控制、爆炸性环境管理和 24/7 操作连续性。船舶发动机舱、发电机舱、泵房、厨房排气管线、生活空间、技术容积、海上平台、FPSO装置和造船厂项目；由于存在高湿度、含盐大气、振动、有限空间、高温和易燃气体的风险，它需要比标准 HVAC 解决方案更耐用的工程系统。\n\nNOVVES 为船舶和海上项目提供特殊的风扇、风门、排烟、排气、新鲜空气和过滤解决方案。 MARLIN 轴流风机用于高流量新鲜空气和排气应用； BEAR防爆风机用于存在爆炸性气体风险的危险区域； NAUTILUS 重型蜗牛风机用于高压排气和工艺空气输送； HOUND 阻尼器用于需要气流控制和密封的区域；蜻蜓排烟风机在火灾场景中发挥着至关重要的作用。\n\n海洋环境中使用的设备；它必须采用特殊材料、涂层和发动机防护等级来设计，以抵御含盐空气、湿度、振动和连续运行条件。 NOVVES 解决方案；它可以专门适应具有镀锌、环氧涂层、不锈钢、船用型油漆系统、高 IP 防护等级电机、减振连接和紧凑安装几何形状的项目。在海上平台和船上应用中，风扇和空气管道的放置通过工程计算进行优化，同时考虑到有限的体积、维护通道和安全要求。\n\nNOVVES 船舶和近海通风解决方案；它通过单一集成系统方法满足不同的需求，例如机舱冷却、废气和热空气排放、居住空间舒适通风、厨房排气、电池/能源室通风、防爆区域空气管理和火灾时的烟雾控制。因此，可以为船舶、造船厂和海上项目提供安全、耐用、高效和持久的空气管理。",
+      "products": [
+        {
+          "name": "Marlin",
+          "description": "采用 SS316 机壳、耐海水腐蚀的船用认证轴流风机。",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Nautilus",
+          "description": "用于机舱及货舱高压工况的耐腐蚀离心风机。",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hound",
+          "description": "符合船舶防火标准的自动关闭式防火阀。",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "Alpaca",
+          "description": "防浪防雨的进排气格栅。",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Bear",
+          "description": "适用于货舱、燃油区等存在爆炸性气体风险海域的 ATEX 风机。",
+          "image": "/images/products/bear-reb.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Hawk",
+          "description": "船用认证控制柜、火灾报警集成及远程监控。",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "projeBazliOzelImalat": {
@@ -2586,7 +3038,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -2617,7 +3069,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "在现代建筑设计、改造项目和特殊工业流程中，标准通风设备并不总是足够的。可用的竖井尺寸、狭窄的机械室、声学限制、建筑美学期望、卫生要求或特殊材料要求；它需要针对特定​​项目的工程和制造方法。此时，通风装置不需要融入建筑，但必须根据项目的物理、声学和运营需求重新设计该装置。\n\n凭借其研发和工程基础设施，NOVVES 开发定制风扇、电池、机箱、消音器、阻尼器和空气分配解决方案。在改造项目中，进行特殊设计，完全适应现有的管道、法兰、轴和安装点；低声级、特殊隔音和消音器集成在酒店、工作室、会议厅和知名项目中脱颖而出。在高层建筑和通道困难的区域，模块化、可拆卸和轻型建筑产品简化了组装过程。\n\nNOVVES 在高档住宅、豪华建筑和隐形空调应用中的应用；它提供符合隐蔽安装、特殊 RAL 表面涂层、无风气流分布和建筑完整性的特殊解决方案。在食品、制药和医疗领域，AISI 304/316 不锈钢机身、可清洗卫生设计、HEPA 过滤和 UV-C 集成等选项可满足项目特定的生物安全和清洁要求。因此，NOVVES定制制造解决方案；它超越了标准产品的限制，创建了针对每个项目、适用且具有高工程精度的系统。"
+      "bannerDescription": "在现代建筑设计、改造项目和特殊工业流程中，标准通风设备并不总是足够的。可用的竖井尺寸、狭窄的机械室、声学限制、建筑美学期望、卫生要求或特殊材料要求；它需要针对特定​​项目的工程和制造方法。此时，通风装置不需要融入建筑，但必须根据项目的物理、声学和运营需求重新设计该装置。\n\n凭借其研发和工程基础设施，NOVVES 开发定制风扇、电池、机箱、消音器、阻尼器和空气分配解决方案。在改造项目中，进行特殊设计，完全适应现有的管道、法兰、轴和安装点；低声级、特殊隔音和消音器集成在酒店、工作室、会议厅和知名项目中脱颖而出。在高层建筑和通道困难的区域，模块化、可拆卸和轻型建筑产品简化了组装过程。\n\nNOVVES 在高档住宅、豪华建筑和隐形空调应用中的应用；它提供符合隐蔽安装、特殊 RAL 表面涂层、无风气流分布和建筑完整性的特殊解决方案。在食品、制药和医疗领域，AISI 304/316 不锈钢机身、可清洗卫生设计、HEPA 过滤和 UV-C 集成等选项可满足项目特定的生物安全和清洁要求。因此，NOVVES定制制造解决方案；它超越了标准产品的限制，创建了针对每个项目、适用且具有高工程精度的系统。",
+      "products": [
+        {
+          "name": "Marlin",
+          "description": "非标直径、宽度及风量数值的项目专属轴流风机制造。",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Nautilus",
+          "description": "针对高压及大风量应用的定制径流式风机设计。",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Dragonfly",
+          "description": "可在 400°C 及以上持续运行的特殊材料及工程设计。",
+          "image": "/images/products/dragonfly-c.png",
+          "href": "/urunler/duman-isi-tahliye-fanlari"
+        },
+        {
+          "name": "Bear",
+          "description": "不锈钢、特殊涂层及符合 ATEX 的防爆机壳选配。",
+          "image": "/images/products/bear-lpf.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Hound",
+          "description": "非标尺寸及材质的电动风阀及风管连接件。",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "减振隔离器及安装件",
+          "description": "适用于狭窄空间及平台安装的定制悬挂及减振隔离解决方案。",
+          "image": "/images/products/yayli-titresim-izolatoru.png",
+          "href": "/urunler/titresim-ve-ses-izolasyon"
+        }
+      ]
     }
   },
   "cfdDanismanlik": {
@@ -2789,7 +3279,7 @@
         ]
       }
     ],
-    "faqLabel": "FAQ",
+    "faqLabel": "常见问题",
     "faqTitle": "常见问题解答",
     "faqItems": [
       {
@@ -2820,7 +3310,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "在现代消防和通风项目中，仅通过标准计算来验证系统性能通常是不够的。室内停车场、隧道、地铁站、机场、商场、体育场馆及大体量建筑物内的气流；它根据建筑障碍物、竖井位置、射流风扇位置、烟雾分层和火灾场景表现出复杂的行为。因此，CFD分析、基于性能的设计和基于场景的工程方法；它对于生命安全和投资成本的正确优化都起着至关重要的作用。\n\nNOVVES 不仅作为产品供应商，而且作为工程解决方案合作伙伴来处理项目。通过射流风机定位、CO扩散模拟、排烟场景、隧道临界速度分析、消防部门审批文件、消防工程支持、技术规范和CAD支持的系统布局等服务，确保项目从概念到审批的安全进行。 DRAGONFLY、HOUND、REMORA、MARLIN、TIGER 和 TURTLE 产品系列；它作为 CFD 验证系统设计的一部分集成到项目中。"
+      "bannerDescription": "在现代消防和通风项目中，仅通过标准计算来验证系统性能通常是不够的。室内停车场、隧道、地铁站、机场、商场、体育场馆及大体量建筑物内的气流；它根据建筑障碍物、竖井位置、射流风扇位置、烟雾分层和火灾场景表现出复杂的行为。因此，CFD分析、基于性能的设计和基于场景的工程方法；它对于生命安全和投资成本的正确优化都起着至关重要的作用。\n\nNOVVES 不仅作为产品供应商，而且作为工程解决方案合作伙伴来处理项目。通过射流风机定位、CO扩散模拟、排烟场景、隧道临界速度分析、消防部门审批文件、消防工程支持、技术规范和CAD支持的系统布局等服务，确保项目从概念到审批的安全进行。 DRAGONFLY、HOUND、REMORA、MARLIN、TIGER 和 TURTLE 产品系列；它作为 CFD 验证系统设计的一部分集成到项目中。",
+      "products": [
+        {
+          "name": "排烟仿真",
+          "description": "火灾场景下的烟雾蔓延、能见距离及疏散时间分析。",
+          "image": "/images/products/dragonfly-c.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "射流风机布置优化",
+          "description": "通过停车场及隧道仿真确定射流风机数量、位置及方向角度。",
+          "image": "/images/products/dragonfly-jr.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "舒适性通风分析",
+          "description": "办公室、购物中心及集会场所的温度、风速及 PMV/PPD 舒适度评估。",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "传热分析",
+          "description": "变压器室、数据中心及工业设施的温度分布仿真。",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "洁净室气流",
+          "description": "洁净室内颗粒分布、层流验证及压力梯度分析。",
+          "image": "/images/products/cyclone.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "系统优化",
+          "description": "对现有通风系统进行 CFD 评估并提供性能改进建议。",
+          "image": "/images/products/marlin.png",
+          "href": "/hizmetler/cfd-analizi"
+        }
+      ]
     }
   }
 }

@@ -47,58 +47,25 @@
       "tag": "工程与设计",
       "title": "分析智能的数字孪生",
       "intro": "我们的流程不是从产品开始，而是从问题分析开始。对于 NOVVES 来说，工程不仅仅意味着选择风扇，还意味着以数学方式预测结构内烟雾和热量的行为。",
-      "items": [
-        {
-          "label": "CFD 模拟",
-          "desc": "我们在数字环境中模拟火灾场景，在安装前验证系统性能。"
-        },
-        {
-          "label": "精确计算",
-          "desc": "通过针对特定建筑的气流和增压计算，我们可以避免多余的工程成本并实现最佳效率。"
-        },
-        {
-          "label": "以项目为中心的方法",
-          "desc": "我们生产的产品完全符合技术规范。"
-        }
-      ]
+      "items": [],
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "制造与质量",
       "title": "超越标准的工艺",
       "intro": "设计阶段批准的每个数据点都会转化为我们制造工厂的物理性能。通过将我们的工程生态系统与现代生产技术相结合，我们将误差幅度降至零。",
-      "items": [
-        {
-          "label": "认证性能",
-          "desc": "我们制造的每台风扇和风门均经过认可实验室的测试，符合 EN 12101-3 等国际防火标准。"
-        },
-        {
-          "label": "精密制造",
-          "desc": "从激光切割到动平衡测试，我们在每个阶段都遵循毫米级公差。"
-        },
-        {
-          "label": "可持续材料",
-          "desc": "我们使用耐用、耐腐蚀且能效高的材料来最大限度地延长系统生命周期。"
-        }
-      ]
+      "items": [],
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "安装与应用",
       "title": "完美的现场性能",
       "intro": "最好的产品只有正确集成才能挽救生命。我们创新链的最后一个环节是确保系统与建筑物的基础设施无缝协调。",
-      "items": [
-        {
-          "label": "现场监理",
-          "desc": "我们在安装过程中提供技术指导，以确保系统按设计正确定位。"
-        },
-        {
-          "label": "调试",
-          "desc": "通过冷热烟测试，我们现场验证了系统的响应时间和抽排能力。"
-        },
-        {
-          "label": "智能自动化集成",
-          "desc": "我们保证射流风机和风门与火灾探测系统在几毫秒内同步。"
-        }
-      ]
+      "items": [],
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -176,19 +143,31 @@
     "items": [
       {
         "q": "NOVVES 服务于哪些行业？",
-        "a": "NOVVES 为停车场、隧道、购物中心、医院、酒店、工业设施、温室、发电厂和住宅建筑等广泛领域提供排烟、舒适通风和工业空气管理解决方案。"
+        "a": "NOVVES 为停车场、隧道、购物中心、医院、酒店、工业设施、温室、发电厂和住宅建筑等广泛领域提供排烟、舒适通风和工业空气管理解决方案。",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "q": "你们的产品符合哪些标准？",
-        "a": "我们的产品按照 EN 12101-3、ISO 9001、ISO 14001、ISO 45001、CE 和 ATEX 标准制造，并在认可的实验室进行测试。"
+        "a": "我们的产品按照 EN 12101-3、ISO 9001、ISO 14001、ISO 45001、CE 和 ATEX 标准制造，并在认可的实验室进行测试。",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "q": "你们提供 CFD 分析服务吗？",
-        "a": "是的，我们对每个项目进行 3D CFD 模拟，以分析烟雾传播、温度、CO 浓度和能见距离，从而优化射流风扇的放置。"
+        "a": "是的，我们对每个项目进行 3D CFD 模拟，以分析烟雾传播、温度、CO 浓度和能见距离，从而优化射流风扇的放置。",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "q": "你们提供售后支持吗？",
-        "a": "我们提供全面的售后支持，包括调试、定期维护、备件供应和 24/7 技术服务。"
+        "a": "我们提供全面的售后支持，包括调试、定期维护、备件供应和 24/7 技术服务。",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "您是否提供项目特定的风机选型和系统设计？",
@@ -211,13 +190,24 @@
         "linkLabel": "Explore our after-sales support process →",
         "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
-    ]
+    ],
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "为您的项目",
     "title": "正在寻找通风解决方案？",
     "desc": "请立即联系我们的专家工程团队，了解现场勘察、CFD 分析、项目设计和报价。",
-    "requestQuote": "索取报价"
+    "requestQuote": "索取报价",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pageChrome": {
     "catalogsVertical": "目录",
@@ -248,7 +238,14 @@
     "scrollVideoSideLabel": "停车场通风",
     "engineeringAlt1": "NOVVES CNC激光切割钣金精密制造",
     "engineeringAlt2": "NOVVES现场组装和技术服务",
-    "pillarsFallbackTitle": "我们的工程方法"
+    "pillarsFallbackTitle": "我们的工程方法",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
+    "catalogCardCta": "View"
   },
   "solutionCarouselByHref": {
     "/cozumler/duman-isi-tahliye-sistemleri": {
@@ -319,34 +316,49 @@
     {
       "title": "产品目录",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "技术简介",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "数据表存档",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "referencePreview": [
     {
       "title": "2M Lojistik Gebze Depo",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S 羽衣甘蓝黄玉 Zeytinburnu",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "Adana Yureğir 100 Yataklı Hastane",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "工业设施",

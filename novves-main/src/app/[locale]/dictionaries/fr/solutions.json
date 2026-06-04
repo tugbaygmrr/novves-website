@@ -189,7 +189,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           }
         ]
       },
@@ -317,11 +317,83 @@
     "library": {
       "heroBadge": null,
       "sidebar": {
-        "components": [],
-        "related": []
+        "components": [
+          {
+            "title": "Systèmes de ventilateurs jet",
+            "href": "#bilesen-0"
+          },
+          {
+            "title": "Tableaux de contrôle du désenfumage",
+            "href": "#bilesen-2"
+          },
+          {
+            "title": "Registres de désenfumage naturel",
+            "href": "#bilesen-1"
+          }
+        ],
+        "related": [
+          {
+            "label": "Détection d'incendie",
+            "href": "#bilesen-2",
+            "icon": "fire"
+          },
+          {
+            "label": "Détection de gaz",
+            "href": "#bolum-urunler",
+            "icon": "gas"
+          },
+          {
+            "label": "Archives",
+            "href": "#bolum-dokumantasyon",
+            "icon": "archive"
+          }
+        ]
       },
-      "bannerDescription": "Systèmes d'extraction de fumée et de chaleur ; C'est l'un des composants électromécaniques les plus critiques pour la sécurité incendie dans les parkings intérieurs, les tunnels, les stations de métro, les aéroports, les hôpitaux, les installations énergétiques et les structures à grand volume. Tout en garantissant que le CO, les NOx et les polluants similaires sont maintenus à des niveaux sûrs lors d'une utilisation quotidienne, il contribue à maintenir les voies d'évacuation ouvertes, à maintenir la visibilité et à aider les pompiers à atteindre la source d'incendie en toute sécurité en dirigeant la fumée et les gaz chauds de manière contrôlée en cas d'incendie.\n\nNOVVES propose une approche intégrée de désenfumage avec les ventilateurs de désenfumage et les ventilateurs à jet DRAGONFLY, les volets de désenfumage HOUND, les ventilateurs d'air frais MARLIN et les panneaux d'automatisation HAWK. Système; Il ne se compose pas seulement de ventilateurs puissants, mais s'intègre également à l'automatisation, aux registres scellés, à l'équilibrage de l'air frais, à la vérification CFD et à une ingénierie conforme à la norme EN/NFPA qui fonctionne selon les scénarios d'incendie. Les ventilateurs de classe de température F300/F400 font passer la sécurité des bâtiments à un niveau supérieur avec une ventilation quotidienne contrôlée par des capteurs de CO/NOx et un contrôle d'incendie basé sur des scénarios."
-    }
+      "bannerDescription": "Systèmes d'extraction de fumée et de chaleur ; C'est l'un des composants électromécaniques les plus critiques pour la sécurité incendie dans les parkings intérieurs, les tunnels, les stations de métro, les aéroports, les hôpitaux, les installations énergétiques et les structures à grand volume. Tout en garantissant que le CO, les NOx et les polluants similaires sont maintenus à des niveaux sûrs lors d'une utilisation quotidienne, il contribue à maintenir les voies d'évacuation ouvertes, à maintenir la visibilité et à aider les pompiers à atteindre la source d'incendie en toute sécurité en dirigeant la fumée et les gaz chauds de manière contrôlée en cas d'incendie.\n\nNOVVES propose une approche intégrée de désenfumage avec les ventilateurs de désenfumage et les ventilateurs à jet DRAGONFLY, les volets de désenfumage HOUND, les ventilateurs d'air frais MARLIN et les panneaux d'automatisation HAWK. Système; Il ne se compose pas seulement de ventilateurs puissants, mais s'intègre également à l'automatisation, aux registres scellés, à l'équilibrage de l'air frais, à la vérification CFD et à une ingénierie conforme à la norme EN/NFPA qui fonctionne selon les scénarios d'incendie. Les ventilateurs de classe de température F300/F400 font passer la sécurité des bâtiments à un niveau supérieur avec une ventilation quotidienne contrôlée par des capteurs de CO/NOx et un contrôle d'incendie basé sur des scénarios.",
+      "products": [
+        {
+          "name": "Dragonfly",
+          "description": "Ventilateur de désenfumage axial conforme à la norme EN 12101-3 avec classement haute température F300/2H.",
+          "image": "/images/products/dragonfly-c.png",
+          "href": "/urunler/duman-isi-tahliye-fanlari"
+        },
+        {
+          "name": "Hound",
+          "description": "Clapet de désenfumage à entraînement servo pour le zonage feu et fumée avec étanchéité de haute intégrité.",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "Hawk",
+          "description": "Automatisation du désenfumage par scénarios avec intégration BMS et compatibilité avec le tableau de commande incendie.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ],
+      "documents": [
+        {
+          "title": "Catalogue technique NAX 2024",
+          "meta": "PDF • 14,2 Mo",
+          "icon": "pdf"
+        },
+        {
+          "title": "Directives de conception du désenfumage",
+          "meta": "PDF • 8,5 Mo",
+          "icon": "doc"
+        },
+        {
+          "title": "Famille Revit NVD-500 (BIM)",
+          "meta": "RFA • 22,1 Mo",
+          "icon": "bim"
+        },
+        {
+          "title": "Certificat de gestion des fumées LPCB",
+          "meta": "PDF • 2,1 Mo",
+          "icon": "cert"
+        }
+      ]
+    },
+    "breadcrumbCategory": "Sécurité incendie"
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "CVC confort",
@@ -539,7 +611,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Systèmes de climatisation de confort ; Il est conçu pour gérer ensemble la qualité de l'air intérieur, le confort thermique, le silence et l'efficacité énergétique dans les bureaux, les hôtels, les écoles, les zones administratives des hôpitaux, les centres commerciaux, les résidences, les banques, les bâtiments publics, les aéroports, les restaurants et les gymnases. Étant donné que les gens passent la plupart de leur temps dans des espaces fermés dans des bâtiments modernes, des paramètres tels que le CO₂, les COV, les particules, l'humidité, la température et la vitesse de l'air sont directement liés à la santé, à l'efficacité et à la satisfaction des utilisateurs.\n\nNOVVES développe des solutions de climatisation spécifiques au type de bâtiment avec les récupérateurs de chaleur CARACAL, les centrales de traitement d'air TIGER, les ventilateurs HUMMINGBIRD EC, les registres de réglage d'air HOUND et VAV, les ventilateurs de conduit silencieux KOI, les ventilateurs de salle de bains SEAHORSE, les ventilateurs à cellules TURTLE, les solutions de mouvement d'air haute capacité DRAGONFLY et les ventilateurs d'extraction de cuisine BUTTERFLY. Systèmes ; Il est conçu avec une ventilation à la demande, une récupération de chaleur, un faible niveau sonore, un refroidissement gratuit, un contrôle par zone, une filtration élevée et des objectifs de fonctionnement économes en énergie."
+      "bannerDescription": "Systèmes de climatisation de confort ; Il est conçu pour gérer ensemble la qualité de l'air intérieur, le confort thermique, le silence et l'efficacité énergétique dans les bureaux, les hôtels, les écoles, les zones administratives des hôpitaux, les centres commerciaux, les résidences, les banques, les bâtiments publics, les aéroports, les restaurants et les gymnases. Étant donné que les gens passent la plupart de leur temps dans des espaces fermés dans des bâtiments modernes, des paramètres tels que le CO₂, les COV, les particules, l'humidité, la température et la vitesse de l'air sont directement liés à la santé, à l'efficacité et à la satisfaction des utilisateurs.\n\nNOVVES développe des solutions de climatisation spécifiques au type de bâtiment avec les récupérateurs de chaleur CARACAL, les centrales de traitement d'air TIGER, les ventilateurs HUMMINGBIRD EC, les registres de réglage d'air HOUND et VAV, les ventilateurs de conduit silencieux KOI, les ventilateurs de salle de bains SEAHORSE, les ventilateurs à cellules TURTLE, les solutions de mouvement d'air haute capacité DRAGONFLY et les ventilateurs d'extraction de cuisine BUTTERFLY. Systèmes ; Il est conçu avec une ventilation à la demande, une récupération de chaleur, un faible niveau sonore, un refroidissement gratuit, un contrôle par zone, une filtration élevée et des objectifs de fonctionnement économes en énergie.",
+      "products": [
+        {
+          "name": "Tiger",
+          "description": "Capacité de 500 à 125 000 m³/h, conception modulaire, échangeurs de chaleur à haut rendement et options de ventilateurs EC.",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Caracal",
+          "description": "Récupère l'énergie de l'air extrait, réduisant les coûts de chauffage/refroidissement jusqu'à 70 %.",
+          "image": "/images/products/caracal.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Dolphin",
+          "description": "Contrôle d'humidité spécialisé pour les piscines intérieures, les SPA et les zones à forte humidité.",
+          "image": "/images/products/dolphin-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Koi",
+          "description": "Ventilateurs de gaine compacts et silencieux pour la surpression en conduit et la distribution d'air.",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "Diffuseurs de plafond, muraux et de sol avec registres de débit d'air pour une distribution homogène.",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "Capteurs de température, d'humidité et de CO₂ avec tableaux de commande intelligents intégrés au BMS.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "hijyenikFiltrasyon": {
@@ -758,7 +868,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Ventilation dans les zones hygiéniques ; Au-delà du confort, il s’agit d’une barrière technique essentielle qui affecte directement la santé humaine, la qualité des produits et la sécurité opérationnelle. Air dans les salles d'opération, les unités de soins intensifs, les salles blanches, les installations de production pharmaceutique, les zones de production alimentaire, les laboratoires, les services hospitaliers, les cuisines industrielles et les zones vétérinaires/d'élevage ; Il convient de vérifier la présence de particules, d'agents pathogènes, d'odeurs, d'humidité, de contamination croisée et de différence de pression. Mauvaise circulation de l'air dans ces zones ; Cela peut entraîner des risques d'infection, de contamination du produit, de condensation, de reproduction microbiologique et des problèmes de sécurité au travail.\n\nNOVVES propose des solutions de ventilation intégrées spécifiquement pour les zones critiques avec les centrales de traitement d'air hygiénique TIGER HYG, les ventilateurs cellulaires TURTLE, les solutions de fumée/évacuation DRAGONFLY, les récupérateurs de chaleur CARACAL, les ventilateurs HUMMINGBIRD EC, les registres étanches HOUND, les ventilateurs d'extraction de cuisine BUTTERFLY et les ventilateurs robustes NAUTILUS. Conceptions de systèmes ; Il est conçu selon des critères tels que la filtration HEPA/ULPA, la cascade de pression positive-négative, le flux d'air laminaire, la recirculation nulle, le contrôle de la condensation, la résistance au lavage et la prévention de la contamination croisée."
+      "bannerDescription": "Ventilation dans les zones hygiéniques ; Au-delà du confort, il s’agit d’une barrière technique essentielle qui affecte directement la santé humaine, la qualité des produits et la sécurité opérationnelle. Air dans les salles d'opération, les unités de soins intensifs, les salles blanches, les installations de production pharmaceutique, les zones de production alimentaire, les laboratoires, les services hospitaliers, les cuisines industrielles et les zones vétérinaires/d'élevage ; Il convient de vérifier la présence de particules, d'agents pathogènes, d'odeurs, d'humidité, de contamination croisée et de différence de pression. Mauvaise circulation de l'air dans ces zones ; Cela peut entraîner des risques d'infection, de contamination du produit, de condensation, de reproduction microbiologique et des problèmes de sécurité au travail.\n\nNOVVES propose des solutions de ventilation intégrées spécifiquement pour les zones critiques avec les centrales de traitement d'air hygiénique TIGER HYG, les ventilateurs cellulaires TURTLE, les solutions de fumée/évacuation DRAGONFLY, les récupérateurs de chaleur CARACAL, les ventilateurs HUMMINGBIRD EC, les registres étanches HOUND, les ventilateurs d'extraction de cuisine BUTTERFLY et les ventilateurs robustes NAUTILUS. Conceptions de systèmes ; Il est conçu selon des critères tels que la filtration HEPA/ULPA, la cascade de pression positive-négative, le flux d'air laminaire, la recirculation nulle, le contrôle de la condensation, la résistance au lavage et la prévention de la contamination croisée.",
+      "products": [
+        {
+          "name": "Tiger",
+          "description": "Caisson en acier inoxydable, panneaux hygiéniques et construction modulaire répondant aux normes des salles blanches.",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Turtle",
+          "description": "Filtres HEPA de classe H13/H14 avec un taux de rétention des particules de 99,995 %.",
+          "image": "/images/products/turtle-a.png",
+          "href": "/urunler/hava-filtrasyonu"
+        },
+        {
+          "name": "Marlin",
+          "description": "Flux d'air unidirectionnel dans les salles d'opération et les salles blanches pour des environnements exempts de particules.",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hound",
+          "description": "Surveillance de la pression différentielle entre pièces et commande automatique des registres.",
+          "image": "/images/products/hound-crd.png",
+          "href": "/urunler/hava-yonetimi"
+        },
+        {
+          "name": "Étage de préfiltration et de filtration à poches",
+          "description": "Préfiltres G4 et filtres à poches F7/F9 prolongeant la durée de vie des filtres HEPA grâce à une filtration multi-étagée.",
+          "image": "/images/products/cyclone.png",
+          "href": "/urunler/hava-filtrasyonu"
+        },
+        {
+          "name": "Capteurs de pression et de surveillance",
+          "description": "Comptage de particules, capteurs de pression et intégration BMS pour une surveillance continue.",
+          "image": "/images/products/diferansiyel-basinc-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "endustriyelHavaYonetimi": {
@@ -893,7 +1041,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           }
         ]
       },
@@ -977,7 +1125,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Gestion de l'air dans les installations industrielles ; C'est l'une des infrastructures de base pour la continuité de la production, la santé des employés, la sécurité incendie, le contrôle des émissions environnementales et la qualité des processus. La poussière, la fumée, les COV, les brouillards d'huile, les gaz corrosifs, les charges élevées de température et d'humidité libérées dans des secteurs tels que l'industrie lourde, le soudage, la peinture, la fonderie, la métallurgie, le textile, le papier, l'énergie, l'automobile, la production de machines, le traitement des déchets et l'ameublement ne peuvent pas être gérés avec les approches CVC standard. La météo dans ces zones ; Il doit être conçu en fonction de la discipline d'ingénierie dans le cadre du processus.\n\nNOVVES assure la capture des polluants à la source, le zonage à pression négative, l'évacuation des charges thermiques, la collecte des poussières, l'évacuation des solvants, la gestion de la chaleur et la continuité des opérations industrielles 24h/24 et 7j/7 avec des solutions de ventilateurs et de gestion de l'air robustes. Ventilateurs escargot haute pression NAUTILUS, ventilateurs d'extraction de type toit HERON, ventilateurs industriels de type mural OWL, systèmes de dépoussiérage ELEPHANT, installations de climatisation/humidification TIGER et solutions axiales MARLIN ; Ils sont conçus ensemble ou séparément en fonction des risques liés aux procédés de l'installation."
+      "bannerDescription": "Gestion de l'air dans les installations industrielles ; C'est l'une des infrastructures de base pour la continuité de la production, la santé des employés, la sécurité incendie, le contrôle des émissions environnementales et la qualité des processus. La poussière, la fumée, les COV, les brouillards d'huile, les gaz corrosifs, les charges élevées de température et d'humidité libérées dans des secteurs tels que l'industrie lourde, le soudage, la peinture, la fonderie, la métallurgie, le textile, le papier, l'énergie, l'automobile, la production de machines, le traitement des déchets et l'ameublement ne peuvent pas être gérés avec les approches CVC standard. La météo dans ces zones ; Il doit être conçu en fonction de la discipline d'ingénierie dans le cadre du processus.\n\nNOVVES assure la capture des polluants à la source, le zonage à pression négative, l'évacuation des charges thermiques, la collecte des poussières, l'évacuation des solvants, la gestion de la chaleur et la continuité des opérations industrielles 24h/24 et 7j/7 avec des solutions de ventilateurs et de gestion de l'air robustes. Ventilateurs escargot haute pression NAUTILUS, ventilateurs d'extraction de type toit HERON, ventilateurs industriels de type mural OWL, systèmes de dépoussiérage ELEPHANT, installations de climatisation/humidification TIGER et solutions axiales MARLIN ; Ils sont conçus ensemble ou séparément en fonction des risques liés aux procédés de l'installation.",
+      "products": [
+        {
+          "name": "Nautilus",
+          "description": "Ventilateurs centrifuges simple ou double paroi résistants aux hautes pressions et températures.",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Marlin",
+          "description": "Ventilateurs axiaux à virole ou à pales à grande capacité de débit pour les grands espaces.",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "Ventilateurs de toiture radiaux et axiaux pour l'extraction ou l'apport d'air frais en toiture d'installations.",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Owl",
+          "description": "Ventilateurs muraux radiaux et axiaux montés en façade pour l'extraction ou le soufflage.",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Koi",
+          "description": "Ventilateurs de gaine compacts pour la surpression en conduit et le transfert d'air.",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hawk",
+          "description": "Variateurs de fréquence, capteurs de température/humidité, armoires PLC et intégration BMS.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "hayvancilikTesisleri": {
@@ -995,7 +1181,7 @@
         "label": "Indice de protection"
       },
       {
-        "value": "Anti-Corrosion",
+        "value": "Anticorrosion",
         "label": "Revêtement"
       },
       {
@@ -1091,7 +1277,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "MARLIN",
@@ -1107,7 +1293,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1139,7 +1325,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "KOI",
@@ -1180,7 +1366,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Ventilation dans les installations d'élevage modernes ; Elle joue un rôle déterminant en termes de bien-être animal, de biosécurité, d’efficacité et de durabilité des entreprises. Fermes de poulets, installations de production d’œufs, couvoirs et étables à bétail ; Ils subissent des conditions météorologiques beaucoup plus rudes que les bâtiments commerciaux en raison d’une chaleur métabolique, d’une humidité, d’une ammoniac, d’un dioxyde de carbone, d’un méthane, de particules de peluches/poussière et d’odeurs plus élevées. Ventilation mal conçue ; Cela peut entraîner un stress thermique, un risque de maladie, une perte de conversion alimentaire, une faible efficacité et des coûts d’exploitation élevés.\n\nNOVVES propose des solutions de ventilateurs à haut débit, résistants à la corrosion et adaptés au fonctionnement continu dans les installations d'élevage. Ventilateurs d'extraction pour volailles de la série CHICKEN, ventilateurs muraux OWL, systèmes d'automatisation HAWK, ventilateurs de circulation interne MARLIN, unités de traitement d'air contrôlées avec précision TIGER, solutions de pressurisation TURTLE et ventilateurs de toit HERON ; Il est utilisé pour gérer les exigences de température, d’humidité, de concentration de gaz, d’équilibre de pression et de biosécurité selon le type d’installation. Ainsi, un environnement plus sain, un flux d’air plus équilibré et des conditions de production plus efficaces sont visés dans les exploitations agricoles."
+      "bannerDescription": "Ventilation dans les installations d'élevage modernes ; Elle joue un rôle déterminant en termes de bien-être animal, de biosécurité, d’efficacité et de durabilité des entreprises. Fermes de poulets, installations de production d’œufs, couvoirs et étables à bétail ; Ils subissent des conditions météorologiques beaucoup plus rudes que les bâtiments commerciaux en raison d’une chaleur métabolique, d’une humidité, d’une ammoniac, d’un dioxyde de carbone, d’un méthane, de particules de peluches/poussière et d’odeurs plus élevées. Ventilation mal conçue ; Cela peut entraîner un stress thermique, un risque de maladie, une perte de conversion alimentaire, une faible efficacité et des coûts d’exploitation élevés.\n\nNOVVES propose des solutions de ventilateurs à haut débit, résistants à la corrosion et adaptés au fonctionnement continu dans les installations d'élevage. Ventilateurs d'extraction pour volailles de la série CHICKEN, ventilateurs muraux OWL, systèmes d'automatisation HAWK, ventilateurs de circulation interne MARLIN, unités de traitement d'air contrôlées avec précision TIGER, solutions de pressurisation TURTLE et ventilateurs de toit HERON ; Il est utilisé pour gérer les exigences de température, d’humidité, de concentration de gaz, d’équilibre de pression et de biosécurité selon le type d’installation. Ainsi, un environnement plus sain, un flux d’air plus équilibré et des conditions de production plus efficaces sont visés dans les exploitations agricoles.",
+      "products": [
+        {
+          "name": "Chicken",
+          "description": "Ventilateurs axiaux à grand débit résistants à la corrosion pour l'élevage de volailles et de petit bétail.",
+          "image": "/images/products/chicken.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Owl",
+          "description": "Ventilateurs d'extraction à corps galvanisé montés en façade pour les étables et les bâtiments d'élevage.",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "Ventilateurs de toiture résistants à la corrosion pour le rejet en toiture et l'apport d'air frais.",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Marlin",
+          "description": "Ventilation à grand débit avec refroidissement adiabatique pour réduire la température intérieure dans les climats chauds.",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "Grilles réglables pour une prise d'air frais contrôlée et une disposition de ventilation en tunnel.",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "Capteurs de température, d'humidité et d'ammoniac avec commande automatique de la vitesse des ventilateurs et gestion du climat.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "trafoEnerjiOdalari": {
@@ -1198,7 +1422,7 @@
         "label": "Indice de protection"
       },
       {
-        "value": "Class F",
+        "value": "Classe F",
         "label": "Isolation moteur"
       },
       {
@@ -1294,7 +1518,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1315,7 +1539,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           }
         ]
       },
@@ -1342,7 +1566,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1383,7 +1607,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Centres de transformation, salles MT/BT, salles de générateurs, sous-stations de transport d'énergie, salles UPS et zones énergétiques des centres de données ; Ce sont des infrastructures critiques qui fournissent une alimentation ininterrompue au réseau. Si la charge thermique se produisant dans ces zones n'est pas contrôlée, la durée de vie de l'isolation du transformateur sera raccourcie, de la condensation et de l'oxydation peuvent se produire dans les panneaux, les équipements électroniques de puissance peuvent atteindre les limites thermiques et, dans le pire des cas, une défaillance du système ou un risque d'incendie peut survenir. Pour cette raison, la ventilation des locaux énergétiques n’est pas une simple application d’évacuation ; Il s'agit d'un système de gestion thermique conçu pour une fiabilité 24h/24 et 7j/7.\n\nNOUVELLES ; Il assure une circulation d'air spéciale dans les salles de transformation et d'énergie avec des ventilateurs axiaux de type manchon MARLIN, des ventilateurs muraux OWL, des ventilateurs de toit HERON, des ventilateurs HUMMINGBIRD EC, des ventilateurs de conduit KOI et des solutions de ventilateurs à cellules TURTLE. Systèmes ; Il est façonné en fonction des besoins tels que l'évacuation de l'air chaud des niveaux supérieurs dans les salles de transformateurs, le prélèvement d'air frais au bon point, la fourniture d'air de combustion/refroidissement dans les salles des générateurs, le contrôle de la condensation dans les sous-stations et la sécurité des batteries dans les salles UPS/ESS."
+      "bannerDescription": "Centres de transformation, salles MT/BT, salles de générateurs, sous-stations de transport d'énergie, salles UPS et zones énergétiques des centres de données ; Ce sont des infrastructures critiques qui fournissent une alimentation ininterrompue au réseau. Si la charge thermique se produisant dans ces zones n'est pas contrôlée, la durée de vie de l'isolation du transformateur sera raccourcie, de la condensation et de l'oxydation peuvent se produire dans les panneaux, les équipements électroniques de puissance peuvent atteindre les limites thermiques et, dans le pire des cas, une défaillance du système ou un risque d'incendie peut survenir. Pour cette raison, la ventilation des locaux énergétiques n’est pas une simple application d’évacuation ; Il s'agit d'un système de gestion thermique conçu pour une fiabilité 24h/24 et 7j/7.\n\nNOUVELLES ; Il assure une circulation d'air spéciale dans les salles de transformation et d'énergie avec des ventilateurs axiaux de type manchon MARLIN, des ventilateurs muraux OWL, des ventilateurs de toit HERON, des ventilateurs HUMMINGBIRD EC, des ventilateurs de conduit KOI et des solutions de ventilateurs à cellules TURTLE. Systèmes ; Il est façonné en fonction des besoins tels que l'évacuation de l'air chaud des niveaux supérieurs dans les salles de transformateurs, le prélèvement d'air frais au bon point, la fourniture d'air de combustion/refroidissement dans les salles des générateurs, le contrôle de la condensation dans les sous-stations et la sécurité des batteries dans les salles UPS/ESS.",
+      "products": [
+        {
+          "name": "Owl",
+          "description": "Ventilateurs d'extraction et de soufflage muraux à corps galvanisé, classés IP55, pour les locaux de transformateurs.",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "Ventilateurs de toiture radiaux et axiaux pour l'extraction d'air chaud en toiture de locaux énergétiques.",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Koi",
+          "description": "Ventilateurs de gaine compacts pour le transport d'air chaud sur de longues distances à travers les réseaux de gaines.",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "Grilles de prise d'air filtrées et munies de moustiquaires conformes aux spécifications TEDAS.",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "Marche/arrêt automatique du ventilateur, commande par étages et gestion du climat en fonction de la température ambiante.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Hound",
+          "description": "Registres motorisés et registres d'équilibrage de pression pour le zonage des fumées et de l'air chaud.",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        }
+      ]
     }
   },
   "seraTarimsal": {
@@ -1397,7 +1659,7 @@
     "ctaSecondaryHref": "/urunler/hava-hareketi",
     "trustStrip": [
       {
-        "value": "Anti-Corrosion",
+        "value": "Anticorrosion",
         "label": "Revêtement"
       },
       {
@@ -1497,7 +1759,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "MARLIN",
@@ -1529,7 +1791,7 @@
           {
             "name": "OWL",
             "type": "Ventilateurs muraux",
-            "image": "/images/products/owl-cer.jpg"
+            "image": "/images/products/owl-rer.jpg"
           },
           {
             "name": "HERON",
@@ -1586,7 +1848,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Efficacité dans les serres modernes ; Elle est déterminée non seulement par l'irrigation, la fertilisation ou la quantité de lumière, mais aussi par la gestion correcte de la température, de l'humidité relative, du niveau de CO₂ et des valeurs VPD. Lorsque l’air stagne dans les structures agricoles fermées, l’équilibre de la transpiration des plantes est perturbé, de la condensation se produit à la surface des feuilles, les maladies fongiques augmentent et l’efficacité de la photosynthèse diminue. Par conséquent, la ventilation des serres n’est pas une simple application de ventilateur ; Il s’agit d’un système d’ingénierie qui prend en compte ensemble la physiologie des plantes, le contrôle du microclimat et l’efficacité énergétique.\n\nNOVVES propose différentes solutions de gestion de l'air pour les serres en verre et polycarbonate, les serres tunnel en plastique, les installations agricoles intelligentes hydroponiques/hors-sol, les serres tropicales ou à climat froid, les zones d'arboriculture et de production de gazon. Familles de produits MARLIN, CHICKEN, KOI, OWL, HUMMINGBIRD, REMORA et HOUND ; Il est sélectionné en fonction de l'architecture de la serre, des conditions climatiques, du type de produit et des besoins d'automatisation et assure une circulation d'air homogène, un équilibre température-humidité, une distribution de CO₂, un flux d'air à faible vitesse au-dessus de l'usine et un contrôle économe en énergie.\n\nDans les applications de serres intelligentes, les données des capteurs de température, d'humidité, de CO₂ et de lumière sont évaluées par des panneaux d'automatisation ; Le moteur EC ou les ventilateurs à fréquence contrôlée fonctionnent uniquement au débit requis. Cette approche protège les plantes des brusques fluctuations climatiques tout en réduisant la consommation d’énergie et en créant des conditions de production plus stables tout au long de l’année. Solutions de ventilation pour serres NOVVES ; Il vise à augmenter les rendements, à réduire les risques de maladies et à fournir un microclimat contrôlé et durable dans la production agricole."
+      "bannerDescription": "Efficacité dans les serres modernes ; Elle est déterminée non seulement par l'irrigation, la fertilisation ou la quantité de lumière, mais aussi par la gestion correcte de la température, de l'humidité relative, du niveau de CO₂ et des valeurs VPD. Lorsque l’air stagne dans les structures agricoles fermées, l’équilibre de la transpiration des plantes est perturbé, de la condensation se produit à la surface des feuilles, les maladies fongiques augmentent et l’efficacité de la photosynthèse diminue. Par conséquent, la ventilation des serres n’est pas une simple application de ventilateur ; Il s’agit d’un système d’ingénierie qui prend en compte ensemble la physiologie des plantes, le contrôle du microclimat et l’efficacité énergétique.\n\nNOVVES propose différentes solutions de gestion de l'air pour les serres en verre et polycarbonate, les serres tunnel en plastique, les installations agricoles intelligentes hydroponiques/hors-sol, les serres tropicales ou à climat froid, les zones d'arboriculture et de production de gazon. Familles de produits MARLIN, CHICKEN, KOI, OWL, HUMMINGBIRD, REMORA et HOUND ; Il est sélectionné en fonction de l'architecture de la serre, des conditions climatiques, du type de produit et des besoins d'automatisation et assure une circulation d'air homogène, un équilibre température-humidité, une distribution de CO₂, un flux d'air à faible vitesse au-dessus de l'usine et un contrôle économe en énergie.\n\nDans les applications de serres intelligentes, les données des capteurs de température, d'humidité, de CO₂ et de lumière sont évaluées par des panneaux d'automatisation ; Le moteur EC ou les ventilateurs à fréquence contrôlée fonctionnent uniquement au débit requis. Cette approche protège les plantes des brusques fluctuations climatiques tout en réduisant la consommation d’énergie et en créant des conditions de production plus stables tout au long de l’année. Solutions de ventilation pour serres NOVVES ; Il vise à augmenter les rendements, à réduire les risques de maladies et à fournir un microclimat contrôlé et durable dans la production agricole.",
+      "products": [
+        {
+          "name": "Owl",
+          "description": "Ventilateurs de ventilation à grand débit, à corps galvanisé, montés sur les parois de serre.",
+          "image": "/images/products/owl-rer.jpg",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Marlin",
+          "description": "Systèmes de refroidissement adiabatique en nid d'abeille réduisant la température de la serre de 8 à 12 °C.",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Heron",
+          "description": "Ventilateurs de toiture pour l'extraction d'air chaud et l'apport d'air frais en toiture de serres.",
+          "image": "/images/products/heron-rv.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Turtle",
+          "description": "Ventilateurs de circulation d'air horizontaux pour une distribution homogène de la température et de l'humidité à l'intérieur des serres.",
+          "image": "/images/products/turtle-a.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Alpaca",
+          "description": "Systèmes motorisés de bâches latérales et de fenêtres de toit pour une prise d'air frais contrôlée.",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "Surveillance et gestion à distance basées sur l'IoT avec capteurs de température, d'humidité, de CO₂ et de luminosité.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "atexPatlamaKoruma": {
@@ -1805,7 +2105,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Dans les zones industrielles où se trouvent des gaz explosifs, de la vapeur, du brouillard, des solvants, des COV ou des poussières inflammables, le système de ventilation n'est pas un équipement standard de transfert d'air ; Cela fait directement partie de la sécurité des installations. Choisir le bon ventilateur dans les usines chimiques et pétrochimiques, les zones de remplissage de carburant, les ateliers de peinture, les processus farine-sucre-poudre, la production pharmaceutique et les environnements similaires à haut risque ; Il est essentiel de contrôler les risques d’étincelles, d’électricité statique, de surfaces chaudes et d’accumulation de gaz.\n\nNOVVES assure une gestion sécurisée de l’air en atmosphères explosives avec des solutions de ventilateurs, de registres et de filtration spécifiques aux applications ATEX et Ex-Proof. Familles de produits BEAR, NAUTILUS, HOUND, KOI et ELEPHANT ; Il offre une solution intégrée pour un échappement sûr, une décharge de COV, un contrôle des poussières inflammables et une protection contre les décharges statiques en étant conçu en fonction de la classe de zone, du caractère des gaz/poussières, de la température du processus et des exigences de maintenance."
+      "bannerDescription": "Dans les zones industrielles où se trouvent des gaz explosifs, de la vapeur, du brouillard, des solvants, des COV ou des poussières inflammables, le système de ventilation n'est pas un équipement standard de transfert d'air ; Cela fait directement partie de la sécurité des installations. Choisir le bon ventilateur dans les usines chimiques et pétrochimiques, les zones de remplissage de carburant, les ateliers de peinture, les processus farine-sucre-poudre, la production pharmaceutique et les environnements similaires à haut risque ; Il est essentiel de contrôler les risques d’étincelles, d’électricité statique, de surfaces chaudes et d’accumulation de gaz.\n\nNOVVES assure une gestion sécurisée de l’air en atmosphères explosives avec des solutions de ventilateurs, de registres et de filtration spécifiques aux applications ATEX et Ex-Proof. Familles de produits BEAR, NAUTILUS, HOUND, KOI et ELEPHANT ; Il offre une solution intégrée pour un échappement sûr, une décharge de COV, un contrôle des poussières inflammables et une protection contre les décharges statiques en étant conçu en fonction de la classe de zone, du caractère des gaz/poussières, de la température du processus et des exigences de maintenance.",
+      "products": [
+        {
+          "name": "Bear",
+          "description": "Ventilateurs centrifuges certifiés en matériaux anti-étincelles pour zones 1/2 et zones 21/22.",
+          "image": "/images/products/bear-lpf.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Bear",
+          "description": "Ventilateurs de ventilation axiaux à virole et à pales adaptés aux environnements explosifs.",
+          "image": "/images/products/bear-t.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Bear",
+          "description": "Ventilateurs d'extraction de toiture à moteurs antidéflagrants pour les installations présentant des gaz/poussières explosifs.",
+          "image": "/images/products/bear-reb.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Hawk",
+          "description": "Moteurs certifiés ATEX, boutons antidéflagrants, lampes de signalisation et coffrets de commande.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Koi",
+          "description": "Gaines et éléments de raccordement mis à la terre empêchant l'accumulation d'électricité statique.",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Capteur de détection de gaz",
+          "description": "Capteurs de gaz/poussières inflammables, arrêt d'urgence piloté par PLC et scénarios de ventilation.",
+          "image": "/images/products/kanal-tipi-duman-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "akilliOtomasyon": {
@@ -2008,7 +2346,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Les systèmes de ventilation et de climatisation sont constitués uniquement d'équipements mécaniques, sans capteurs ni algorithmes de contrôle. Les systèmes d'automatisation intelligents, quant à eux, gèrent ces équipements comme le « système nerveux central » du bâtiment ou de l'installation, augmentant l'efficacité énergétique, activant en toute sécurité des scénarios d'incendie/fumée, surveillant la qualité de l'air intérieur et rendant les processus de maintenance plus prévisibles. La configuration de l'automatisation pour les bâtiments intelligents, les installations industrielles, les projets de tunnels et de parkings, les résidences, les hôpitaux, les salles blanches et les centres de données doit être gérée avec une logique d'ingénierie différente.\n\nSolutions d'automatisation NOVVES ; S'intègre aux détecteurs BMS, SCADA, PLC, Modbus, BACnet, CO/NOx, aux capteurs de température et d'humidité, au contrôle de pression différentielle, à la matrice de scénarios d'incendie et à l'architecture de ventilation à demande. Grâce aux panneaux de commande REMORA, aux registres automatiques HOUND, aux modules de commande de ventilateur LION, aux ventilateurs à jet DRAGONFLY et aux ventilateurs HUMMINGBIRD EC, le système ; Tout en permettant des économies d'énergie dans le fonctionnement quotidien, il réagit automatiquement en fonction du scénario lorsqu'un incendie ou un risque de processus survient."
+      "bannerDescription": "Les systèmes de ventilation et de climatisation sont constitués uniquement d'équipements mécaniques, sans capteurs ni algorithmes de contrôle. Les systèmes d'automatisation intelligents, quant à eux, gèrent ces équipements comme le « système nerveux central » du bâtiment ou de l'installation, augmentant l'efficacité énergétique, activant en toute sécurité des scénarios d'incendie/fumée, surveillant la qualité de l'air intérieur et rendant les processus de maintenance plus prévisibles. La configuration de l'automatisation pour les bâtiments intelligents, les installations industrielles, les projets de tunnels et de parkings, les résidences, les hôpitaux, les salles blanches et les centres de données doit être gérée avec une logique d'ingénierie différente.\n\nSolutions d'automatisation NOVVES ; S'intègre aux détecteurs BMS, SCADA, PLC, Modbus, BACnet, CO/NOx, aux capteurs de température et d'humidité, au contrôle de pression différentielle, à la matrice de scénarios d'incendie et à l'architecture de ventilation à demande. Grâce aux panneaux de commande REMORA, aux registres automatiques HOUND, aux modules de commande de ventilateur LION, aux ventilateurs à jet DRAGONFLY et aux ventilateurs HUMMINGBIRD EC, le système ; Tout en permettant des économies d'énergie dans le fonctionnement quotidien, il réagit automatiquement en fonction du scénario lorsqu'un incendie ou un risque de processus survient.",
+      "products": [
+        {
+          "name": "Hawk",
+          "description": "Centre de commande moteur avec démarrage/arrêt des ventilateurs, commande par étages, surveillance des défauts et intégration de relais de protection.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Koi",
+          "description": "Commande de ventilateur à vitesse variable avec intégration de variateur de fréquence (VFD) pour des économies d'énergie et un réglage précis du débit.",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hound",
+          "description": "Registre modulant et régulation de zone pour l'intégration BMS compatible Modbus/BACnet.",
+          "image": "/images/products/hound-crd.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "Capteur de pression différentielle",
+          "description": "Données de capteurs précises et régulation PI pour les zones de température, d'humidité, de pression et de filtration.",
+          "image": "/images/products/diferansiyel-basinc-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Capteur de fumée / CO en gaine",
+          "description": "Détection de CO, CO₂ et de fumée avec tableau de bord IoT, alarme et intégration de surveillance à distance.",
+          "image": "/images/products/kanal-tipi-duman-sensoru.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        },
+        {
+          "name": "Hound",
+          "description": "Zonage pour des modes basés sur des scénarios : normal, nuit, incendie, extraction CO de parking, et plus encore.",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        }
+      ]
     }
   },
   "konutHavalandirma": {
@@ -2026,7 +2402,7 @@
         "label": "Fonctionnement silencieux"
       },
       {
-        "value": "Heat Recovery",
+        "value": "Récupération de chaleur",
         "label": "Rendement 90 %"
       },
       {
@@ -2211,7 +2587,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Dans les résidences nouvelle génération, les enveloppes de bâtiments très isolées et étanches à l’air permettent des économies d’énergie et réduisent considérablement les échanges naturels d’air. Cette situation; Cela peut entraîner l’accumulation de CO₂, de COV, de radon, d’humidité, d’odeurs et de moisissures dans l’environnement intérieur. C'est pourquoi la ventilation résidentielle n'est plus un élément de luxe ; Il s'agit d'un système d'ingénierie nécessaire à un mode de vie sain, à l'efficacité énergétique et à la protection des bâtiments. Les appartements, villas, résidences, maisons individuelles, mini-maisons/bâtiments préfabriqués et espaces communs de chantier ont des besoins de débit d'air, de niveau sonore, de zone d'installation et de contrôle différents.\n\nSolutions de type résidentiel NOVVES ; Il repose sur une architecture compacte, un faible niveau sonore, une technologie de moteur EC, une récupération de chaleur, un fonctionnement à humidité contrôlée et une intégration de maison intelligente. Ventilateurs de conduit compacts KOI, récupérateurs de chaleur CARACAL, centrales de traitement d'air compactes TIGER, ventilateurs HUMMINGBIRD smart EC, ventilateurs à cellules isolées TURTLE, équipements de distribution d'air ALPACA, ventilateurs de salle de bain/WC SEAHORSE, ventilateurs d'extraction de cuisine BUTTERFLY et ventilateurs d'extraction d'espace commun OWL ; Il est utilisé pour créer un microclimat calme, sain et économe en énergie dans les espaces de vie."
+      "bannerDescription": "Dans les résidences nouvelle génération, les enveloppes de bâtiments très isolées et étanches à l’air permettent des économies d’énergie et réduisent considérablement les échanges naturels d’air. Cette situation; Cela peut entraîner l’accumulation de CO₂, de COV, de radon, d’humidité, d’odeurs et de moisissures dans l’environnement intérieur. C'est pourquoi la ventilation résidentielle n'est plus un élément de luxe ; Il s'agit d'un système d'ingénierie nécessaire à un mode de vie sain, à l'efficacité énergétique et à la protection des bâtiments. Les appartements, villas, résidences, maisons individuelles, mini-maisons/bâtiments préfabriqués et espaces communs de chantier ont des besoins de débit d'air, de niveau sonore, de zone d'installation et de contrôle différents.\n\nSolutions de type résidentiel NOVVES ; Il repose sur une architecture compacte, un faible niveau sonore, une technologie de moteur EC, une récupération de chaleur, un fonctionnement à humidité contrôlée et une intégration de maison intelligente. Ventilateurs de conduit compacts KOI, récupérateurs de chaleur CARACAL, centrales de traitement d'air compactes TIGER, ventilateurs HUMMINGBIRD smart EC, ventilateurs à cellules isolées TURTLE, équipements de distribution d'air ALPACA, ventilateurs de salle de bain/WC SEAHORSE, ventilateurs d'extraction de cuisine BUTTERFLY et ventilateurs d'extraction d'espace commun OWL ; Il est utilisé pour créer un microclimat calme, sain et économe en énergie dans les espaces de vie.",
+      "products": [
+        {
+          "name": "Tiger",
+          "description": "Unités d'air frais compactes récupérant jusqu'à 90 % de la chaleur de l'air extrait pour des économies d'énergie.",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/urunler/iklimlendirme"
+        },
+        {
+          "name": "Seahorse",
+          "description": "Ventilateurs d'extraction de salle de bain et de toilettes silencieux, économes en énergie et compacts.",
+          "image": "/images/products/banyo-fan-1.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Koi",
+          "description": "Ventilateurs compacts silencieux pour l'apport et l'extraction d'air frais en gaine.",
+          "image": "/images/products/koi-cb.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Turtle",
+          "description": "Extraction et soufflage silencieux pour les réseaux de gaines de cuisine et d'espaces de vie, avec compatibilité filtre à graisse.",
+          "image": "/images/products/turtle-a.png",
+          "href": "/urunler/mutfak-fanlari"
+        },
+        {
+          "name": "Alpaca",
+          "description": "Grilles de plafond, murales et de sol pour une distribution d'air homogène.",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Hawk",
+          "description": "Commande par télécommande sans fil, capteur d'humidité, minuterie et réglage de la vitesse.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "marinOffshore": {
@@ -2414,7 +2828,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Systèmes de ventilation dans les structures marines et offshore ; Il est conçu non seulement pour assurer l'échange d'air pour le confort, mais également pour la sécurité des équipements, la résistance au feu, le contrôle de la corrosion, la gestion des atmosphères explosives et la continuité de fonctionnement 24h/24 et 7j/7. Salles des machines de navires, salles des générateurs, salles des pompes, lignes d'échappement des cuisines, espaces de vie, volumes techniques, plateformes offshore, unités FPSO et projets de chantiers navals ; Cela nécessite des systèmes d'ingénierie beaucoup plus durables que les solutions CVC standard en raison des risques d'humidité élevée, d'atmosphère salée, de vibrations, d'espace limité, de température élevée et de gaz inflammables.\n\nNOVVES propose des solutions spéciales de ventilateurs, registres, désenfumage, échappement, air frais et filtration pour les projets marins et offshore. Les ventilateurs axiaux MARLIN sont utilisés dans les applications d'air frais et d'échappement à haut débit ; Les ventilateurs BEAR Ex-Proof sont utilisés dans les zones dangereuses où il existe un risque de gaz explosifs ; Les ventilateurs escargot robustes NAUTILUS sont utilisés pour l'échappement à haute pression et le transfert d'air de traitement ; Les registres HOUND sont utilisés dans les zones nécessitant un contrôle et une étanchéité du débit d'air ; Les ventilateurs de désenfumage DRAGONFLY jouent un rôle essentiel dans les scénarios d’incendie.\n\nÉquipements utilisés en milieu marin; Il doit être conçu avec des classes spéciales de matériaux, de revêtements et de protection du moteur contre l'air salin, l'humidité, les vibrations et les conditions de fonctionnement continu. Solutions NOVVES; Il peut être adapté spécifiquement au projet avec des systèmes de peinture galvanisés, époxy, en acier inoxydable, de type marin, des moteurs avec un indice de protection IP élevé, des connexions réduisant les vibrations et des géométries de montage compactes. Sur les plates-formes offshore et les applications embarquées, l'emplacement des ventilateurs et des conduits d'air est optimisé grâce à des calculs techniques, en tenant compte du volume limité, de l'accès pour la maintenance et des exigences de sécurité.\n\nSolutions de ventilation marine et offshore NOVVES ; Il répond à différents besoins tels que le refroidissement de la salle des machines, l'évacuation des gaz d'échappement et de l'air chaud, la ventilation de confort des espaces de vie, l'évacuation des cuisines, la ventilation des salles de batteries/énergie, la gestion de l'air des zones antidéflagrantes et le contrôle des fumées en cas d'incendie avec une approche système intégrée unique. Ainsi, une gestion de l’air sûre, durable, efficace et durable est assurée dans les navires, les chantiers navals et les projets offshore."
+      "bannerDescription": "Systèmes de ventilation dans les structures marines et offshore ; Il est conçu non seulement pour assurer l'échange d'air pour le confort, mais également pour la sécurité des équipements, la résistance au feu, le contrôle de la corrosion, la gestion des atmosphères explosives et la continuité de fonctionnement 24h/24 et 7j/7. Salles des machines de navires, salles des générateurs, salles des pompes, lignes d'échappement des cuisines, espaces de vie, volumes techniques, plateformes offshore, unités FPSO et projets de chantiers navals ; Cela nécessite des systèmes d'ingénierie beaucoup plus durables que les solutions CVC standard en raison des risques d'humidité élevée, d'atmosphère salée, de vibrations, d'espace limité, de température élevée et de gaz inflammables.\n\nNOVVES propose des solutions spéciales de ventilateurs, registres, désenfumage, échappement, air frais et filtration pour les projets marins et offshore. Les ventilateurs axiaux MARLIN sont utilisés dans les applications d'air frais et d'échappement à haut débit ; Les ventilateurs BEAR Ex-Proof sont utilisés dans les zones dangereuses où il existe un risque de gaz explosifs ; Les ventilateurs escargot robustes NAUTILUS sont utilisés pour l'échappement à haute pression et le transfert d'air de traitement ; Les registres HOUND sont utilisés dans les zones nécessitant un contrôle et une étanchéité du débit d'air ; Les ventilateurs de désenfumage DRAGONFLY jouent un rôle essentiel dans les scénarios d’incendie.\n\nÉquipements utilisés en milieu marin; Il doit être conçu avec des classes spéciales de matériaux, de revêtements et de protection du moteur contre l'air salin, l'humidité, les vibrations et les conditions de fonctionnement continu. Solutions NOVVES; Il peut être adapté spécifiquement au projet avec des systèmes de peinture galvanisés, époxy, en acier inoxydable, de type marin, des moteurs avec un indice de protection IP élevé, des connexions réduisant les vibrations et des géométries de montage compactes. Sur les plates-formes offshore et les applications embarquées, l'emplacement des ventilateurs et des conduits d'air est optimisé grâce à des calculs techniques, en tenant compte du volume limité, de l'accès pour la maintenance et des exigences de sécurité.\n\nSolutions de ventilation marine et offshore NOVVES ; Il répond à différents besoins tels que le refroidissement de la salle des machines, l'évacuation des gaz d'échappement et de l'air chaud, la ventilation de confort des espaces de vie, l'évacuation des cuisines, la ventilation des salles de batteries/énergie, la gestion de l'air des zones antidéflagrantes et le contrôle des fumées en cas d'incendie avec une approche système intégrée unique. Ainsi, une gestion de l’air sûre, durable, efficace et durable est assurée dans les navires, les chantiers navals et les projets offshore.",
+      "products": [
+        {
+          "name": "Marlin",
+          "description": "Ventilateurs axiaux agréés maritime à corps SS316 résistant à la corrosion par l'eau de mer.",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Nautilus",
+          "description": "Ventilateurs centrifuges résistants à la corrosion pour hautes pressions dans les salles des machines et les cales.",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Hound",
+          "description": "Clapets coupe-feu à fermeture automatique conformes aux normes maritimes de protection incendie.",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "Alpaca",
+          "description": "Grilles de prise et de rejet d'air protégées contre les vagues et la pluie.",
+          "image": "/images/products/alpaca-am.png",
+          "href": "/urunler/hava-dagitimi"
+        },
+        {
+          "name": "Bear",
+          "description": "Ventilateurs ATEX pour les zones maritimes présentant un risque d'atmosphère explosive, telles que les cales et les zones de carburant.",
+          "image": "/images/products/bear-reb.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Hawk",
+          "description": "Coffrets de commande agréés maritime, intégration d'alarme incendie et surveillance à distance.",
+          "image": "/images/products/basinclandirma-kontrol-panosu.png",
+          "href": "/urunler/otomasyon-malzemeleri"
+        }
+      ]
     }
   },
   "projeBazliOzelImalat": {
@@ -2617,7 +3069,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Dans les conceptions architecturales modernes, les projets de rénovation et les processus industriels spéciaux, les équipements de ventilation standard ne suffisent pas toujours. Dimensions des gaines disponibles, salles mécaniques étroites, limites acoustiques, attentes esthétiques architecturales, exigences d'hygiène ou exigences matérielles particulières ; Cela nécessite une approche d’ingénierie et de fabrication spécifique au projet. À ce stade, le dispositif de ventilation n’a pas besoin de s’intégrer à l’architecture, mais le dispositif doit être repensé en fonction des besoins physiques, acoustiques et opérationnels du projet.\n\nGrâce à son infrastructure de R&D et d'ingénierie, NOVVES développe des ventilateurs, cellules, boîtiers, silencieux, registres et solutions de distribution d'air sur mesure. Dans les projets de rénovation, des conceptions spéciales sont réalisées qui s'adaptent entièrement aux conduits, brides, arbres et points de montage existants ; Un faible niveau sonore, une isolation acoustique spéciale et l'intégration de silencieux sont mis en avant dans les hôtels, studios, salles de conférence et projets de prestige. Dans les immeubles de grande hauteur et les zones aux passages difficiles, le processus de montage est facilité grâce à des produits de construction modulaires, démontables et légers.\n\nNOVVES dans les applications d'habitat de prestige, d'architecture de luxe et de climatisation invisible ; Il propose des solutions spéciales conformes à l'installation cachée, aux revêtements de surface spéciaux RAL, à la distribution d'air sans courant d'air et à l'intégrité architecturale. Dans les domaines alimentaire, pharmaceutique et médical, les exigences de biosécurité et de propreté spécifiques au projet sont satisfaites grâce à des options telles que le corps en acier inoxydable AISI 304/316, la conception hygiénique lavable, le filtrage HEPA et l'intégration UV-C. Ainsi, les solutions de fabrication sur mesure NOVVES ; Elle dépasse les limites des produits standards et crée des systèmes spécifiques à chaque projet, applicables et d'une grande précision technique."
+      "bannerDescription": "Dans les conceptions architecturales modernes, les projets de rénovation et les processus industriels spéciaux, les équipements de ventilation standard ne suffisent pas toujours. Dimensions des gaines disponibles, salles mécaniques étroites, limites acoustiques, attentes esthétiques architecturales, exigences d'hygiène ou exigences matérielles particulières ; Cela nécessite une approche d’ingénierie et de fabrication spécifique au projet. À ce stade, le dispositif de ventilation n’a pas besoin de s’intégrer à l’architecture, mais le dispositif doit être repensé en fonction des besoins physiques, acoustiques et opérationnels du projet.\n\nGrâce à son infrastructure de R&D et d'ingénierie, NOVVES développe des ventilateurs, cellules, boîtiers, silencieux, registres et solutions de distribution d'air sur mesure. Dans les projets de rénovation, des conceptions spéciales sont réalisées qui s'adaptent entièrement aux conduits, brides, arbres et points de montage existants ; Un faible niveau sonore, une isolation acoustique spéciale et l'intégration de silencieux sont mis en avant dans les hôtels, studios, salles de conférence et projets de prestige. Dans les immeubles de grande hauteur et les zones aux passages difficiles, le processus de montage est facilité grâce à des produits de construction modulaires, démontables et légers.\n\nNOVVES dans les applications d'habitat de prestige, d'architecture de luxe et de climatisation invisible ; Il propose des solutions spéciales conformes à l'installation cachée, aux revêtements de surface spéciaux RAL, à la distribution d'air sans courant d'air et à l'intégrité architecturale. Dans les domaines alimentaire, pharmaceutique et médical, les exigences de biosécurité et de propreté spécifiques au projet sont satisfaites grâce à des options telles que le corps en acier inoxydable AISI 304/316, la conception hygiénique lavable, le filtrage HEPA et l'intégration UV-C. Ainsi, les solutions de fabrication sur mesure NOVVES ; Elle dépasse les limites des produits standards et crée des systèmes spécifiques à chaque projet, applicables et d'une grande précision technique.",
+      "products": [
+        {
+          "name": "Marlin",
+          "description": "Fabrication de ventilateurs axiaux spécifiques au projet avec des valeurs de diamètre, de largeur et de capacité hors normes.",
+          "image": "/images/products/marlin.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Nautilus",
+          "description": "Conception de ventilateurs radiaux sur mesure pour les applications nécessitant une pression et un débit élevés.",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/urunler/hava-hareketi"
+        },
+        {
+          "name": "Dragonfly",
+          "description": "Matériaux spéciaux et conception technique pour un fonctionnement continu jusqu'à 400 °C et au-delà.",
+          "image": "/images/products/dragonfly-c.png",
+          "href": "/urunler/duman-isi-tahliye-fanlari"
+        },
+        {
+          "name": "Bear",
+          "description": "Options de corps antidéflagrant en acier inoxydable, à revêtement spécial et conforme ATEX.",
+          "image": "/images/products/bear-lpf.png",
+          "href": "/urunler/exproof-fanlar"
+        },
+        {
+          "name": "Hound",
+          "description": "Registres motorisés et éléments de raccordement de gaine dans des dimensions et matériaux hors normes.",
+          "image": "/images/products/hound-al.png",
+          "href": "/urunler/damperler"
+        },
+        {
+          "name": "Isolateur antivibratoire et fixation",
+          "description": "Solutions de suspension et d'isolation antivibratoire sur mesure pour les espaces confinés et les installations sur plateforme.",
+          "image": "/images/products/yayli-titresim-izolatoru.png",
+          "href": "/urunler/titresim-ve-ses-izolasyon"
+        }
+      ]
     }
   },
   "cfdDanismanlik": {
@@ -2820,7 +3310,45 @@
         "components": [],
         "related": []
       },
-      "bannerDescription": "Dans les projets modernes d'incendie et de ventilation, il ne suffit souvent pas de vérifier les performances du système avec les seuls calculs standards. Flux d'air dans les parkings intérieurs, les tunnels, les stations de métro, les aéroports, les centres commerciaux, les stades et les structures à grand volume ; Il se comporte de manière complexe en fonction des obstacles architecturaux, de l'emplacement des puits, de l'emplacement des ventilateurs, de la stratification de la fumée et des scénarios d'incendie. Par conséquent, l'analyse CFD, la conception basée sur les performances et l'approche d'ingénierie basée sur des scénarios ; Il joue un rôle crucial tant en termes de sécurité des personnes que d’optimisation correcte des coûts d’investissement.\n\nNOVVES aborde les projets non seulement en tant que fournisseur de produits mais aussi en tant que partenaire de solutions d'ingénierie. Il assure l'avancement en toute sécurité du projet depuis la conception jusqu'à l'approbation avec des services tels que le positionnement du ventilateur, la simulation de diffusion de CO, le scénario d'évacuation des fumées, l'analyse de la vitesse critique du tunnel, le dossier d'approbation des pompiers, le support technique en matière d'incendie, les spécifications techniques et la configuration du système prise en charge par CAO. Familles de produits DRAGONFLY, HOUND, REMORA, MARLIN, TIGER et TURTLE ; Il est intégré au projet dans le cadre des conceptions de systèmes vérifiées par CFD."
+      "bannerDescription": "Dans les projets modernes d'incendie et de ventilation, il ne suffit souvent pas de vérifier les performances du système avec les seuls calculs standards. Flux d'air dans les parkings intérieurs, les tunnels, les stations de métro, les aéroports, les centres commerciaux, les stades et les structures à grand volume ; Il se comporte de manière complexe en fonction des obstacles architecturaux, de l'emplacement des puits, de l'emplacement des ventilateurs, de la stratification de la fumée et des scénarios d'incendie. Par conséquent, l'analyse CFD, la conception basée sur les performances et l'approche d'ingénierie basée sur des scénarios ; Il joue un rôle crucial tant en termes de sécurité des personnes que d’optimisation correcte des coûts d’investissement.\n\nNOVVES aborde les projets non seulement en tant que fournisseur de produits mais aussi en tant que partenaire de solutions d'ingénierie. Il assure l'avancement en toute sécurité du projet depuis la conception jusqu'à l'approbation avec des services tels que le positionnement du ventilateur, la simulation de diffusion de CO, le scénario d'évacuation des fumées, l'analyse de la vitesse critique du tunnel, le dossier d'approbation des pompiers, le support technique en matière d'incendie, les spécifications techniques et la configuration du système prise en charge par CAO. Familles de produits DRAGONFLY, HOUND, REMORA, MARLIN, TIGER et TURTLE ; Il est intégré au projet dans le cadre des conceptions de systèmes vérifiées par CFD.",
+      "products": [
+        {
+          "name": "Simulation de désenfumage",
+          "description": "Analyse de la propagation des fumées, de la distance de visibilité et du temps d'évacuation dans les scénarios d'incendie.",
+          "image": "/images/products/dragonfly-c.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "Optimisation du positionnement des ventilateurs jet",
+          "description": "Détermination du nombre, de la position et de l'angle d'orientation des ventilateurs jet par simulation dans les parkings et les tunnels.",
+          "image": "/images/products/dragonfly-jr.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "Analyse de la ventilation de confort",
+          "description": "Évaluation du confort en température, vitesse d'air et PMV/PPD dans les bureaux, centres commerciaux et salles de rassemblement.",
+          "image": "/images/products/tiger-pre.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "Analyse du transfert thermique",
+          "description": "Simulation de la distribution de température dans les locaux de transformateurs, les centres de données et les installations industrielles.",
+          "image": "/images/products/nautilus-cif-cidarli.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "Flux d'air en salle blanche",
+          "description": "Analyse de la distribution des particules, vérification du flux laminaire et analyse de la cascade de pression en salles blanches.",
+          "image": "/images/products/cyclone.png",
+          "href": "/hizmetler/cfd-analizi"
+        },
+        {
+          "name": "Optimisation du système",
+          "description": "Étude CFD des systèmes de ventilation existants et recommandations d'amélioration des performances.",
+          "image": "/images/products/marlin.png",
+          "href": "/hizmetler/cfd-analizi"
+        }
+      ]
     }
   }
 }

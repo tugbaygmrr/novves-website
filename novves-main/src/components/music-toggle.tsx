@@ -38,7 +38,7 @@ export function MusicToggle({ inverted = false }: { inverted?: boolean }) {
         ref={audioRef}
         src={AUDIO_URL}
         loop
-        preload="auto"
+        preload="metadata"
         onPlay={() => setOn(true)}
         onPause={() => setOn(false)}
         onEnded={() => setOn(false)}

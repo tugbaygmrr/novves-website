@@ -54,6 +54,7 @@ const sectionHrefs = {
     "/kurumsal/ekibimiz",
     "/kurumsal/politikamiz",
     "/surdurulebilirlik",
+    "/kariyer",
     "/legal",
     "/iletisim",
   ],
@@ -320,9 +321,9 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
         />
         <div className="absolute inset-0 blueprint-grid-dark opacity-25" />
 
-        {/* Dünya haritası — sağa yaslı (hero kartı ile aynı mantık); sol yarı lacivert overlay ile karartılır */}
+        {/* Dünya haritası — masaüstü (lg+): sağa yaslı (hero kartı ile aynı mantık); sol yarı lacivert overlay ile karartılır */}
         <div
-          className="pointer-events-none absolute inset-0"
+          className="pointer-events-none absolute inset-0 hidden lg:block"
           style={{
             backgroundImage: "url('/images/world-map.png')",
             backgroundSize: "auto 130%",
@@ -331,6 +332,18 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
             opacity: 0.7,
             maskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 95%, black 100%)",
             WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 95%, black 100%)",
+          }}
+          aria-hidden
+        />
+        {/* Dünya haritası — mobil + tablet: tam genişliğe sığar, ortalanmış ve hafif soluk */}
+        <div
+          className="pointer-events-none absolute inset-0 lg:hidden"
+          style={{
+            backgroundImage: "url('/images/world-map.png')",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.45,
           }}
           aria-hidden
         />

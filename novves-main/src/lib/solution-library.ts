@@ -134,20 +134,20 @@ const SOLUTION_LIBRARY_COMPONENT_IMAGES: Record<string, readonly string[]> = {
     "/images/products/nautilus-cif-cidarli.png",
     "/images/products/marlin.png",
     "/images/products/heron-rv.png",
-    "/images/products/owl-cer.png",
+    "/images/products/owl-rer.jpg",
     "/images/products/koi-cb.png",
     "/images/products/basinclandirma-kontrol-panosu.png",
   ],
   "hayvancilik-tesisleri-icin-havalandirma-sistemleri": [
     "/images/products/chicken.png",
-    "/images/products/owl-cer.png",
+    "/images/products/owl-rer.jpg",
     "/images/products/heron-rv.png",
     "/images/products/marlin.png",
     "/images/products/alpaca-am.png",
     "/images/products/basinclandirma-kontrol-panosu.png",
   ],
   "trafo-enerji-odalari-fanlari": [
-    "/images/products/owl-cer.png",
+    "/images/products/owl-rer.jpg",
     "/images/products/heron-rv.png",
     "/images/products/koi-cb.png",
     "/images/products/alpaca-am.png",
@@ -155,7 +155,7 @@ const SOLUTION_LIBRARY_COMPONENT_IMAGES: Record<string, readonly string[]> = {
     "/images/products/hound-al.png",
   ],
   "sera-tarimsal-havalandirma-sistemleri": [
-    "/images/products/owl-cer.png",
+    "/images/products/owl-rer.jpg",
     "/images/products/marlin.png",
     "/images/products/heron-rv.png",
     "/images/products/turtle-a.png",
@@ -436,7 +436,7 @@ export function buildSolutionLibraryPageData(
     products,
     documents,
     showDocumentation,
-    catalogHref: `/${locale}/urunler`,
+    catalogHref: `/${locale}/urunler/hava-hareketi`,
   };
 }
 

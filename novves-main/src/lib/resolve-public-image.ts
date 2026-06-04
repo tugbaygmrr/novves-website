@@ -21,11 +21,9 @@ const BASENAME_ALIASES: Record<string, string> = {
   "ae-rs": "/images/products/ae-fjf.png",
   "ae-dfc": "/images/products/ae-fjf.png",
   "ae-frs": "/images/products/heron-rv.png",
-  "ae-eh-elektrikli-isitici": "/images/products/tiger-pre.png",
   "emniyet-salteri": "/images/products/basinclandirma-kontrol-panosu.png",
   "korumali-emniyet-salteri": "/images/products/basinclandirma-kontrol-panosu.png",
   "monofaze-hiz-kontrol-cihazi": "/images/products/basinclandirma-kontrol-panosu.png",
-  "frekans-inventoru": "/images/products/basinclandirma-kontrol-panosu.png",
   "g4-panel-filtre": "/images/products/cyclone.png",
   "g2-g3-panel-filtre": "/images/products/cyclone.png",
   "g2-metal-yag-tutucu-filtre": "/images/products/cyclone.png",
@@ -39,7 +37,7 @@ const ACCESSORY_KEYWORD_FALLBACK: { match: RegExp; image: string }[] = [
   { match: /şalter|switch/i, image: "/images/products/basinclandirma-kontrol-panosu.png" },
   { match: /sensör|sensor|invertör|inverter|kontrol|panos/i, image: "/images/products/basinclandirma-kontrol-panosu.png" },
   { match: /flanş|flexibl|bağlantı|kafes|konisi|koni/i, image: "/images/products/ae-fjf.png" },
-  { match: /ısıtıcı|isitici/i, image: "/images/products/tiger-pre.png" },
+  { match: /ısıtıcı|isitici/i, image: "/images/products/elektrikli-isitici.png" },
   { match: /çatı|cati|adaptör|soket|başlık|baslik|çıkış|cikis/i, image: "/images/products/heron-rv.png" },
   { match: /kanat|yönlendirici|yonlendirici/i, image: "/images/products/ae-fjf.png" },
   { match: /izolatör|titreşim/i, image: "/images/products/yayli-titresim-izolatoru.png" },
@@ -47,9 +45,14 @@ const ACCESSORY_KEYWORD_FALLBACK: { match: RegExp; image: string }[] = [
   { match: /kutu/i, image: "/images/products/heron-rv.png" },
 ];
 
+function stripQueryHash(src: string): string {
+  return src.split(/[?#]/)[0];
+}
+
 function fileExists(publicPath: string): boolean {
-  if (!publicPath.startsWith("/")) return false;
-  const full = path.join(getPublicDir(), publicPath.replace(/^\//, ""));
+  const clean = stripQueryHash(publicPath);
+  if (!clean.startsWith("/")) return false;
+  const full = path.join(getPublicDir(), clean.replace(/^\//, ""));
   try {
     return fs.statSync(full).isFile();
   } catch {
@@ -89,20 +92,23 @@ export function resolvePublicImage(
   const trimmed = src.trim();
 
   // JSON’da tanımlı dosya varsa doğrudan kullan (etiket anahtar sözcüğü yanlış eşlemesin)
-  if (trimmed) {
-    for (const variant of extensionVariants(trimmed)) {
-      if (fileExists(variant)) return variant;
+  const pathOnly = stripQueryHash(trimmed);
+  const cacheSuffix = trimmed.slice(pathOnly.length);
+
+  if (pathOnly) {
+    for (const variant of extensionVariants(pathOnly)) {
+      if (fileExists(variant)) return variant + cacheSuffix;
     }
   }
 
   const candidates: string[] = [];
 
-  if (trimmed) {
-    const alias = IMAGE_ALIASES[trimmed];
+  if (pathOnly) {
+    const alias = IMAGE_ALIASES[pathOnly];
     if (alias) candidates.push(alias);
-    candidates.push(...extensionVariants(trimmed));
+    candidates.push(...extensionVariants(pathOnly));
 
-    const base = basenameFromPublicPath(trimmed);
+    const base = basenameFromPublicPath(pathOnly);
     if (base && BASENAME_ALIASES[base]) candidates.push(BASENAME_ALIASES[base]);
   }
 
@@ -117,7 +123,7 @@ export function resolvePublicImage(
   for (const c of candidates) {
     if (!c || seen.has(c)) continue;
     seen.add(c);
-    if (fileExists(c)) return c;
+    if (fileExists(c)) return c + cacheSuffix;
   }
 
   return fallback;

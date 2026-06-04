@@ -1020,32 +1020,33 @@ const es: FooterStrings = {
   },
 };
 
-function withLegalHubLabel(base: FooterStrings, label: string): FooterStrings {
+function withCorporateFooterLabels(base: FooterStrings, legalLabel: string, careerLabel: string): FooterStrings {
   const corporate = [...base.links.corporate];
-  if (corporate.length > 5) corporate[5] = label;
+  if (corporate.length > 5) corporate[5] = legalLabel;
+  corporate.splice(5, 0, careerLabel);
   return {
     ...base,
     links: { ...base.links, corporate },
-    bottom: { ...base.bottom, legalCenter: label },
+    bottom: { ...base.bottom, legalCenter: legalLabel },
   };
 }
 
 const FOOTER_I18N: Record<string, FooterStrings> = {
-  tr,
-  en: withLegalHubLabel(en, "Privacy and Compliance"),
-  ru: withLegalHubLabel(ru, "Конфиденциальность и соответствие требованиям"),
-  ar: withLegalHubLabel(ar, "الخصوصية والامتثال"),
-  de: withLegalHubLabel(de, "Datenschutz und Compliance"),
-  fr: withLegalHubLabel(fr, "Confidentialité et conformité"),
-  it: withLegalHubLabel(it, "Privacy e conformità"),
-  es: withLegalHubLabel(es, "Privacidad y cumplimiento"),
-  az: azFooter as FooterStrings,
-  kk: kkFooter as FooterStrings,
-  tg: tgFooter as FooterStrings,
-  zh: zhFooter as FooterStrings,
-  ur: urFooter as FooterStrings,
-  lt: ltFooter as FooterStrings,
-  pl: plFooter as FooterStrings,
+  tr: withCorporateFooterLabels(tr, "Gizlilik ve Uyum", "Kariyer"),
+  en: withCorporateFooterLabels(en, "Privacy and Compliance", "Career"),
+  ru: withCorporateFooterLabels(ru, "Конфиденциальность и соответствие требованиям", "Карьера"),
+  ar: withCorporateFooterLabels(ar, "الخصوصية والامتثال", "الوظائف"),
+  de: withCorporateFooterLabels(de, "Datenschutz und Compliance", "Karriere"),
+  fr: withCorporateFooterLabels(fr, "Confidentialité et conformité", "Carrière"),
+  it: withCorporateFooterLabels(it, "Privacy e conformità", "Carriere"),
+  es: withCorporateFooterLabels(es, "Privacidad y cumplimiento", "Carrera"),
+  az: withCorporateFooterLabels(azFooter as FooterStrings, "Məxfilik və uyğunluq", "Karyera"),
+  kk: withCorporateFooterLabels(kkFooter as FooterStrings, "Құпиялылық және сәйкестік", "Мансап"),
+  tg: withCorporateFooterLabels(tgFooter as FooterStrings, "Махфият ва мутобиқат", "Карера"),
+  zh: withCorporateFooterLabels(zhFooter as FooterStrings, "隐私与合规", "职业发展"),
+  ur: withCorporateFooterLabels(urFooter as FooterStrings, "رازداری اور تعمیل", "کیریئر"),
+  lt: withCorporateFooterLabels(ltFooter as FooterStrings, "Privatumas ir atitiktis", "Karjera"),
+  pl: withCorporateFooterLabels(plFooter as FooterStrings, "Prywatność i zgodność", "Kariera"),
 };
 
 export function getFooterStrings(locale: string): FooterStrings {

@@ -368,10 +368,76 @@ const pillarVideos: Record<number, { src: string; poster: string } | undefined> 
 const ENGINEERING_COLLAGE_ASSET_V = "20260511-1";
 const engineeringCollage = {
   primaryVideo: `/video/novves-product-lineup.mp4?v=${ENGINEERING_COLLAGE_ASSET_V}`,
+  primaryPoster: `/video/novves-product-lineup-poster.jpg?v=${ENGINEERING_COLLAGE_ASSET_V}`,
 } as const;
 
+/** CFD vitrin videosu — görünür alana girince yüklenir; kapak görseli her zaman kalır */
+function EngineeringPrimaryVideo({
+  src,
+  poster,
+  ariaLabel,
+}: {
+  src: string;
+  poster: string;
+  ariaLabel: string;
+}) {
+  const shellRef = useRef<HTMLDivElement | null>(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    const root = shellRef.current;
+    if (!root) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setLoadVideo(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadVideo(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "160px 0px" },
+    );
+    io.observe(root);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={shellRef}
+      className="relative aspect-[16/10] w-full min-h-0 lg:aspect-auto lg:h-full lg:min-h-[12rem]"
+    >
+      <img
+        src={poster}
+        alt=""
+        aria-hidden
+        decoding="async"
+        className="absolute inset-0 z-0 h-full w-full object-cover object-center"
+      />
+      {loadVideo ? (
+        <video
+          src={src}
+          poster={poster}
+          className={`absolute inset-0 z-[1] h-full w-full object-cover object-center transition-opacity duration-300 motion-reduce:transition-none ${
+            videoReady ? "opacity-100" : "opacity-0"
+          }`}
+          aria-label={ariaLabel}
+          controls
+          playsInline
+          loop
+          preload="metadata"
+          onLoadedData={() => setVideoReady(true)}
+        />
+      ) : null}
+    </div>
+  );
+}
+
 /** Pillar card “Detayları İncele” targets — engineering / products / services */
-const pillarLinks = ["/cozumler", "/urunler", "/hizmetler"] as const;
+const pillarLinks = ["/cozumler/duman-isi-tahliye-sistemleri", "/urunler/hava-hareketi", "/hizmetler"] as const;
 
 const productCategoryMeta = [
   {
@@ -386,8 +452,8 @@ const productCategoryMeta = [
   },
   {
     href: "/urunler/sogutma-ve-isitma",
-    image: "/images/products/marlin.png",
-    thumbs: ["/images/products/marlin.png", "/images/products/tiger-pre.png", "/images/products/dragonfly-c.png"],
+    image: "/images/products/chiller.png",
+    thumbs: ["/images/products/chiller.png", "/images/products/chiller.png", "/images/products/elektrikli-isitici.png"],
   },
   {
     href: "/urunler/hava-yonetimi",
@@ -396,23 +462,23 @@ const productCategoryMeta = [
   },
   {
     href: "/urunler/hava-dagitimi",
-    image: "/images/products/hound-al.png",
-    thumbs: ["/images/products/hound-al.png", "/images/products/marlin.png", "/images/products/tiger-pre.png"],
+    image: "/images/products/alpaca-am.png",
+    thumbs: ["/images/products/alpaca-am.png", "/images/products/hound-al.png", "/images/products/marlin.png"],
   },
   {
     href: "/urunler/hava-filtrasyonu",
-    image: "/images/products/marlin.png",
-    thumbs: ["/images/products/marlin.png", "/images/products/dragonfly-c.png", "/images/products/hound-al.png"],
+    image: "/images/products/cyclone.png",
+    thumbs: ["/images/products/cyclone.png", "/images/products/g4-panel-filtre.png", "/images/products/hound-al.png"],
   },
   {
     href: "/urunler/aksesuarlar",
-    image: "/images/products/hound-al.png",
-    thumbs: ["/images/products/hound-al.png", "/images/products/basinclandirma-kontrol-panosu.png", "/images/products/dragonfly-c.png"],
+    image: "/images/products/remora.png",
+    thumbs: ["/images/products/remora.png", "/images/products/ae-cf-karsi-flans.png", "/images/products/ae-fjf.png"],
   },
   {
     href: "/urunler/otomasyon-malzemeleri",
-    image: "/images/products/basinclandirma-kontrol-panosu.png",
-    thumbs: ["/images/products/basinclandirma-kontrol-panosu.png", "/images/products/marlin.png", "/images/products/hound-al.png"],
+    image: "/images/products/frekans-inventoru.png",
+    thumbs: ["/images/products/frekans-inventoru.png", "/images/products/otomasyon-pano.png", "/images/products/otomasyon-plc.png"],
   },
   {
     href: "/urunler/titresim-ve-ses-izolasyon",
@@ -1207,6 +1273,11 @@ const THUMB_VISUAL_SCALE: Record<string, number> = {
   "/images/products/marlin.png": 1.09,
   "/images/products/hound-al.png": 1.25,
   "/images/products/tiger-pre.png": 1.12,
+  "/images/products/chiller.png": 1.1,
+  "/images/products/alpaca-am.png": 1.08,
+  "/images/products/cyclone.png": 1.1,
+  "/images/products/remora.png": 1.1,
+  "/images/products/frekans-inventoru.png": 1.12,
   "/images/products/basinclandirma-kontrol-panosu.png": 1.39,
   "/images/products/yayli-titresim-izolatoru.png": 1.26,
 };
@@ -1621,28 +1692,24 @@ const HOME_PRODUCT_BAND_FEATURE_FALLBACKS: readonly (readonly string[])[] = [
     "Patlamaya Dayanıklı Klima Santrali (Ex-proof AHU)",
   ],
   [
-    "Kompakt, Paket, Endüstriyel Soğutma Ailesi",
-    "Isı Pompası Dış Ünite Ailesi",
-    "İç Ünite Ailesi",
-    "Isıtma / Soğutma Bataryaları (Coil) Ailesi",
+    "Chiller Ailesi",
+    "Dış Üniteler Ailesi",
+    "İç Üniteler Ailesi",
     "Elektrikli Isıtıcı Ailesi",
-    "Isı Eşanjörü Ailesi",
-    "Hassas Kontrollü Klima Ailesi",
+    "Sulu Isıtıcı Ailesi",
   ],
-  ["Damper Sistemleri Ailesi"],
-  ["Menfez ve Difüzör Sistemleri Ailesi"],
-  ["Filtre ve Filtrasyon Elemanları Ailesi"],
-  ["Fan ve HVAC Aksesuarları Ailesi"],
+  ["Hound Yangın, Duman ve Hava Damperleri Ailesi"],
+  ["Alpaca Menfez, Panjur, Difüzör ve Anemostad Ailesi"],
+  ["Scallop ISO 16890 Uyumlu Filtreler Ailesi"],
+  ["Remora Karşı Flanş, Redüksiyon ve Bağlantı Elemanları Ailesi"],
   [
-    "Otomasyon Pano Sistemleri Ailesi",
-    "PLC ve Programlanabilir Kontrol Sistemleri Ailesi",
-    "Sensör ve Algılama Sistemleri Ailesi",
-    "Kontrol Kartları ve Operatör Panelleri Ailesi",
-    "Zamanlama ve Kontrol Cihazları Ailesi",
-    "Güç Elektroniği Sistemleri Ailesi",
-    "Pano Güç ve Anahtarlama Elemanları Ailesi",
+    "Pano Ailesi",
+    "PLC Ailesi",
+    "Sensör Ailesi",
+    "Kontrol Kartları ve Anahtarlar Ailesi",
+    "Güç Elektroniği Ailesi",
   ],
-  ["Titreşim İzolatörleri Ailesi"],
+  ["Roo Titreşim İzolatörleri ve Ses İzolasyon Elemanları Ailesi"],
 ];
 
 /** Ana sayfa tipografi: display ↔ mono arası lead (17–18px), gövde (15px); dikey ritim 8px tabanı */
@@ -2714,17 +2781,11 @@ export default function HomeClient({
               >
                 <div className="relative flex min-h-0 w-full flex-1 flex-col lg:min-h-0 lg:flex-row lg:max-w-none">
                   <div className="group relative min-h-0 flex-1 overflow-hidden rounded-[1.75rem] shadow-[0_28px_72px_-40px_rgba(15,22,36,0.32)] ring-1 ring-[#243044]/[0.08] transition-[transform,box-shadow] duration-700 ease-out will-change-transform hover:scale-[1.012] hover:shadow-[0_36px_88px_-44px_rgba(15,22,36,0.36)] motion-reduce:transition-none motion-reduce:hover:scale-100 lg:flex lg:min-h-0">
-                    <div className="relative aspect-[16/10] w-full min-h-0 lg:aspect-auto lg:h-full lg:min-h-[12rem]">
-                      <video
-                        src={engineeringCollage.primaryVideo}
-                        className="absolute inset-0 h-full w-full object-cover object-center transition-[filter] duration-700 group-hover:brightness-[1.03] motion-reduce:transition-none"
-                        aria-label={pc.engineeringAlt1}
-                        controls
-                        playsInline
-                        loop
-                        preload="auto"
-                      />
-                    </div>
+                    <EngineeringPrimaryVideo
+                      src={engineeringCollage.primaryVideo}
+                      poster={engineeringCollage.primaryPoster}
+                      ariaLabel={pc.engineeringAlt1}
+                    />
                   </div>
                 </div>
               </div>

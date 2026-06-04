@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { HIZMETLER_PAGE_PADDING_TOP } from "@/lib/hizmetler/layout";
 import type { SosyalMedyaHubJson } from "@/lib/sosyal-medya/copy";
-import { getSosyalMedyaFeedPosts, type SosyalMedyaFeedItem } from "@/lib/sosyal-medya/feed";
+import { getSosyalMedyaFeedPosts, type SosyalMedyaResolvedFeedPost } from "@/lib/sosyal-medya/feed";
 import { SOSYAL_MEDYA_PLATFORMS } from "@/lib/sosyal-medya/platforms";
 import type { SosyalMedyaCopy } from "@/lib/sosyal-medya/types";
 import { PlatformIcon } from "./platform-icons";
@@ -14,6 +14,7 @@ type Props = {
   locale: string;
   copy: SosyalMedyaCopy;
   hub?: SosyalMedyaHubJson;
+  feedPosts?: SosyalMedyaResolvedFeedPost[];
 };
 
 function ChannelCard({
@@ -68,14 +69,7 @@ function ChannelCard({
   );
 }
 
-type FeedPostData = SosyalMedyaFeedItem & {
-  alt: string;
-  title?: string;
-  titleLine2?: string;
-  description?: string;
-  likes?: string;
-  comments?: string;
-};
+type FeedPostData = SosyalMedyaResolvedFeedPost;
 
 const NETWORK_LABEL: Record<string, string> = {
   tr: "Ağ", en: "Network", ru: "Сеть", ar: "شبكة", de: "Netzwerk", it: "Rete",
@@ -83,33 +77,231 @@ const NETWORK_LABEL: Record<string, string> = {
   ur: "نیٹ ورک", lt: "Tinklas", pl: "Sieć",
 };
 
-function FeedPost({ post, copy, networkLabel }: { post: FeedPostData; copy: SosyalMedyaCopy; networkLabel: string }) {
+const SOCIAL_FEED_LABELS: Record<string, {
+  stream: string;
+  openPost: string;
+  followAccount: string;
+  latestPosts: string;
+  captionFallback: string;
+  comingSoon: string;
+  comingSoonTitle: string;
+  comingSoonDesc: string;
+}> = {
+  tr: {
+    stream: "Sosyal Akış",
+    openPost: "Paylaşımı Aç",
+    followAccount: "Hesabı Aç",
+    latestPosts: "Güncel Paylaşımlar",
+    captionFallback: "NOVVES sosyal medya akışından proje, üretim ve saha notu.",
+    comingSoon: "Yakında",
+    comingSoonTitle: "Güncel sosyal medya akışı yakında burada",
+    comingSoonDesc: "Bu alan novves.turkiye hesabındaki güncel paylaşımlar için hazırlanıyor.",
+  },
+  en: {
+    stream: "Social Feed",
+    openPost: "Open Post",
+    followAccount: "Open Account",
+    latestPosts: "Latest Posts",
+    captionFallback: "A project, production and field note from the NOVVES social feed.",
+    comingSoon: "Coming Soon",
+    comingSoonTitle: "Latest social media feed will be here soon",
+    comingSoonDesc: "This area is being prepared for the latest posts from novves.turkiye.",
+  },
+  ru: {
+    stream: "Социальная лента",
+    openPost: "Открыть публикацию",
+    followAccount: "Открыть аккаунт",
+    latestPosts: "Последние публикации",
+    captionFallback: "Проектная, производственная или полевая заметка из социальной ленты NOVVES.",
+    comingSoon: "Скоро",
+    comingSoonTitle: "Актуальная лента соцсетей скоро появится здесь",
+    comingSoonDesc: "Этот раздел готовится для новых публикаций аккаунта novves.turkiye.",
+  },
+  ar: {
+    stream: "تدفق اجتماعي",
+    openPost: "فتح المنشور",
+    followAccount: "فتح الحساب",
+    latestPosts: "أحدث المنشورات",
+    captionFallback: "ملاحظة مشروع أو إنتاج أو موقع من تدفق NOVVES الاجتماعي.",
+    comingSoon: "قريبًا",
+    comingSoonTitle: "سيظهر تدفق وسائل التواصل الاجتماعي هنا قريبًا",
+    comingSoonDesc: "يتم تجهيز هذه المنطقة للمنشورات الحديثة من حساب novves.turkiye.",
+  },
+  de: {
+    stream: "Social Feed",
+    openPost: "Beitrag öffnen",
+    followAccount: "Account öffnen",
+    latestPosts: "Aktuelle Beiträge",
+    captionFallback: "Ein Projekt-, Produktions- oder Feldhinweis aus dem NOVVES Social Feed.",
+    comingSoon: "Demnächst",
+    comingSoonTitle: "Der aktuelle Social-Media-Feed erscheint bald hier",
+    comingSoonDesc: "Dieser Bereich wird für aktuelle Beiträge des Kontos novves.turkiye vorbereitet.",
+  },
+  it: {
+    stream: "Feed social",
+    openPost: "Apri post",
+    followAccount: "Apri account",
+    latestPosts: "Post recenti",
+    captionFallback: "Una nota di progetto, produzione o cantiere dal feed social NOVVES.",
+    comingSoon: "Prossimamente",
+    comingSoonTitle: "Il feed social aggiornato sarà presto qui",
+    comingSoonDesc: "Questa area è in preparazione per i post recenti dell'account novves.turkiye.",
+  },
+  fr: {
+    stream: "Flux social",
+    openPost: "Ouvrir la publication",
+    followAccount: "Ouvrir le compte",
+    latestPosts: "Publications récentes",
+    captionFallback: "Une note de projet, de production ou de terrain issue du flux social NOVVES.",
+    comingSoon: "Bientôt",
+    comingSoonTitle: "Le flux social actualisé apparaîtra bientôt ici",
+    comingSoonDesc: "Cet espace est en préparation pour les publications récentes du compte novves.turkiye.",
+  },
+  az: {
+    stream: "Sosial axın",
+    openPost: "Paylaşımı aç",
+    followAccount: "Hesabı aç",
+    latestPosts: "Son paylaşımlar",
+    captionFallback: "NOVVES sosial axınından layihə, istehsal və ya sahə qeydi.",
+    comingSoon: "Tezliklə",
+    comingSoonTitle: "Aktual sosial media axını tezliklə burada olacaq",
+    comingSoonDesc: "Bu sahə novves.turkiye hesabının son paylaşımları üçün hazırlanır.",
+  },
+  kk: {
+    stream: "Әлеуметтік лента",
+    openPost: "Жазбаны ашу",
+    followAccount: "Аккаунтты ашу",
+    latestPosts: "Соңғы жазбалар",
+    captionFallback: "NOVVES әлеуметтік лентасынан жоба, өндіріс немесе алаң жазбасы.",
+    comingSoon: "Жақында",
+    comingSoonTitle: "Жаңартылған әлеуметтік медиа лентасы жақында осында болады",
+    comingSoonDesc: "Бұл бөлім novves.turkiye аккаунтындағы соңғы жазбалар үшін дайындалып жатыр.",
+  },
+  tg: {
+    stream: "Ҷараёни иҷтимоӣ",
+    openPost: "Кушодани пост",
+    followAccount: "Кушодани ҳисоб",
+    latestPosts: "Постҳои нав",
+    captionFallback: "Ёддошти лоиҳа, истеҳсол ё майдон аз ҷараёни иҷтимоии NOVVES.",
+    comingSoon: "Ба зудӣ",
+    comingSoonTitle: "Ҷараёни нави шабакаҳои иҷтимоӣ ба зудӣ дар ин ҷо хоҳад буд",
+    comingSoonDesc: "Ин бахш барои постҳои нави ҳисоби novves.turkiye омода мешавад.",
+  },
+  es: {
+    stream: "Feed social",
+    openPost: "Abrir publicación",
+    followAccount: "Abrir cuenta",
+    latestPosts: "Publicaciones recientes",
+    captionFallback: "Una nota de proyecto, producción o campo del feed social de NOVVES.",
+    comingSoon: "Próximamente",
+    comingSoonTitle: "El feed social actualizado estará aquí pronto",
+    comingSoonDesc: "Esta área se está preparando para las publicaciones recientes de la cuenta novves.turkiye.",
+  },
+  zh: {
+    stream: "社交动态",
+    openPost: "打开帖子",
+    followAccount: "打开账号",
+    latestPosts: "最新帖子",
+    captionFallback: "来自 NOVVES 社交动态的项目、生产或现场记录。",
+    comingSoon: "即将上线",
+    comingSoonTitle: "最新社交媒体动态即将在此显示",
+    comingSoonDesc: "此区域正在为 novves.turkiye 账号的最新帖子做准备。",
+  },
+  ur: {
+    stream: "سوشل فیڈ",
+    openPost: "پوسٹ کھولیں",
+    followAccount: "اکاؤنٹ کھولیں",
+    latestPosts: "تازہ پوسٹس",
+    captionFallback: "NOVVES سوشل فیڈ سے پراجیکٹ، پیداوار یا سائٹ نوٹ۔",
+    comingSoon: "جلد آرہا ہے",
+    comingSoonTitle: "تازہ سوشل میڈیا فیڈ جلد یہاں ہوگی",
+    comingSoonDesc: "یہ حصہ novves.turkiye اکاؤنٹ کی تازہ پوسٹس کے لیے تیار کیا جا رہا ہے۔",
+  },
+  lt: {
+    stream: "Socialinis srautas",
+    openPost: "Atidaryti įrašą",
+    followAccount: "Atidaryti paskyrą",
+    latestPosts: "Naujausi įrašai",
+    captionFallback: "NOVVES socialinio srauto projekto, gamybos ar vietos įrašas.",
+    comingSoon: "Netrukus",
+    comingSoonTitle: "Naujausias socialinių tinklų srautas netrukus bus čia",
+    comingSoonDesc: "Ši vieta ruošiama naujausiems novves.turkiye paskyros įrašams.",
+  },
+  pl: {
+    stream: "Kanał społecznościowy",
+    openPost: "Otwórz post",
+    followAccount: "Otwórz konto",
+    latestPosts: "Najnowsze posty",
+    captionFallback: "Notatka projektowa, produkcyjna lub terenowa z kanału społecznościowego NOVVES.",
+    comingSoon: "Wkrótce",
+    comingSoonTitle: "Aktualny kanał social media wkrótce pojawi się tutaj",
+    comingSoonDesc: "Ta sekcja jest przygotowywana dla najnowszych postów z konta novves.turkiye.",
+  },
+};
+
+function feedPlatformForPost(post: FeedPostData) {
+  if (post.platformId) {
+    return SOSYAL_MEDYA_PLATFORMS.find((platform) => platform.id === post.platformId) ?? SOSYAL_MEDYA_PLATFORMS[0];
+  }
+  const platformId = post.id === "tall" || post.id === "square-3" ? "linkedin" : "instagram";
+  return SOSYAL_MEDYA_PLATFORMS.find((platform) => platform.id === platformId) ?? SOSYAL_MEDYA_PLATFORMS[0];
+}
+
+function feedAccountName(platformId: string, locale: string): string {
+  if (platformId === "linkedin") return locale === "tr" ? "NOVVES Türkiye" : "NOVVES Global";
+  return locale === "tr" ? "@novves.turkiye" : "@novves.global";
+}
+
+function FeedPost({
+  post,
+  copy,
+  locale,
+  networkLabel,
+}: {
+  post: FeedPostData;
+  copy: SosyalMedyaCopy;
+  locale: string;
+  networkLabel: string;
+}) {
+  const labels = SOCIAL_FEED_LABELS[locale] ?? SOCIAL_FEED_LABELS.en;
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   if (post.layout === "stats") {
     return (
-      <div className="sosyal-orange-glow relative flex min-h-[16rem] flex-col justify-between overflow-hidden rounded-[2rem] bg-gradient-to-br from-hz-secondary-container to-[#ff8c00] p-6 sm:p-8 md:row-span-2 md:min-h-[18rem]">
+      <div className="sosyal-orange-glow relative flex min-h-[16rem] flex-col justify-between overflow-hidden rounded-[2rem] bg-gradient-to-br from-hz-secondary-container to-[#ff8c00] p-6 sm:p-8 md:min-h-[18rem]">
         <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-white/10 blur-2xl" />
         <div className="relative z-10 flex items-start justify-between gap-3">
           <span className="material-symbols-outlined text-3xl text-white sm:text-4xl">language</span>
           <span className="text-[9px] font-black uppercase tracking-[0.25em] text-white/50">{networkLabel}</span>
         </div>
         <div className="relative z-10">
+          <span className="mb-3 block text-[10px] font-black uppercase tracking-[0.24em] text-white/60">
+            {labels.latestPosts}
+          </span>
           <span className="block text-3xl font-black leading-none tracking-tighter text-white sm:text-4xl">
             {copy.statsValue}
           </span>
           <span className="mt-2 block text-[10px] font-bold uppercase leading-snug tracking-widest text-white/95 sm:text-xs">
             {copy.statsLabel}
           </span>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {SOSYAL_MEDYA_PLATFORMS.slice(0, 2).map((platform) => (
+              <a
+                key={platform.id}
+                href={locale === "tr" ? platform.trHref : platform.globalHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-white transition hover:bg-white/25"
+              >
+                <PlatformIcon type={platform.icon} className="h-3.5 w-3.5" />
+                {platform.id}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     );
   }
-
-  const layoutClass =
-    post.layout === "featured"
-      ? "md:col-span-2 md:row-span-2 min-h-[20rem] md:min-h-[28rem]"
-      : post.layout === "tall" || post.id === "square-3"
-        ? "md:row-span-2 min-h-[18rem]"
-        : "aspect-square min-h-[16rem]";
 
   const badgeText =
     post.badge === "featured"
@@ -117,101 +309,124 @@ function FeedPost({ post, copy, networkLabel }: { post: FeedPostData; copy: Sosy
       : post.badge === "caseStudy"
         ? copy.caseStudy
         : post.badge;
+  const platform = feedPlatformForPost(post);
+  const href = post.permalink ?? (locale === "tr" ? platform.trHref : platform.globalHref);
+  const account = post.username ? `@${post.username}` : feedAccountName(platform.id, locale);
+  const isFeatured = post.layout === "featured";
+  const caption = post.description ?? labels.captionFallback;
 
   return (
     <article
-      className={`sosyal-post-card group relative cursor-pointer overflow-hidden rounded-[2rem] shadow-2xl ${layoutClass}`}
+      className={`sosyal-glass-card group overflow-hidden rounded-[2rem] shadow-2xl transition-all sosyal-orange-glow-hover ${
+        isFeatured ? "md:col-span-2" : ""
+      }`}
     >
-      <Image
-        src={post.image}
-        alt={post.alt}
-        fill
-        className="object-cover transition-transform duration-700 group-hover:scale-105"
-        sizes={
-          post.layout === "featured"
-            ? "(max-width: 768px) 100vw, 66vw"
-            : "(max-width: 768px) 100vw, 33vw"
-        }
-      />
-      {post.year ? (
-        <div className="absolute right-4 top-4 z-10 rounded bg-hz-primary-container px-3 py-1 text-xs font-bold text-white">
-          {post.year}
+      <div className="flex items-center justify-between gap-4 border-b border-white/10 px-4 py-4 sm:px-5">
+        <div className="flex min-w-0 items-center gap-3">
+          <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full p-2 text-white ${platform.iconBgClass}`}>
+            <PlatformIcon type={platform.icon} className="h-full w-full" />
+          </span>
+          <div className="min-w-0">
+            <p className="truncate text-sm font-black text-white">{account}</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/35">
+              {labels.stream}
+            </p>
+          </div>
         </div>
-      ) : null}
-      {post.layout === "featured" ? (
-        <>
-          <div className="absolute inset-0 bg-gradient-to-t from-hz-primary-container via-transparent to-transparent opacity-80" />
-          <div className="absolute bottom-0 left-0 w-full p-5 sm:p-12">
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full border border-white/10 px-3 py-2 text-[9px] font-black uppercase tracking-[0.16em] text-white/55 transition hover:border-hz-secondary-container hover:text-white"
+        >
+          {labels.followAccount}
+        </a>
+      </div>
+
+      <a href={href} target="_blank" rel="noopener noreferrer" className="block">
+        <div className={`relative w-full overflow-hidden bg-white/5 ${isFeatured ? "aspect-[16/10]" : "aspect-square"}`}>
+          <div
+            className={`pointer-events-none absolute inset-0 overflow-hidden transition-opacity duration-500 ${
+              imageLoaded ? "opacity-0" : "opacity-100"
+            }`}
+            aria-hidden
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-white/[0.035] to-hz-secondary-container/10" />
+            <div className="absolute inset-y-0 -left-1/2 w-1/2 animate-[productMediaSkeleton_1.25s_ease-in-out_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+          </div>
+          <Image
+            src={post.image}
+            alt={post.alt}
+            fill
+            onLoad={() => setImageLoaded(true)}
+            className={`object-cover transition duration-700 group-hover:scale-105 ${
+              imageLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            sizes={isFeatured ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+          />
+          <div className="absolute left-4 top-4 flex flex-wrap gap-2">
             {badgeText ? (
-              <span className="mb-4 inline-block rounded-full bg-hz-secondary-container px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-hz-on-primary">
+              <span className="rounded-full bg-hz-secondary-container px-3 py-1.5 text-[9px] font-black uppercase tracking-[0.18em] text-hz-on-primary">
                 {badgeText}
               </span>
             ) : null}
-            {post.title ? (
-              <h3 className="mb-4 text-2xl font-black leading-none text-white sm:text-4xl lg:text-5xl">
-                {post.title}
-                {post.titleLine2 ? (
-                  <>
-                    <br />
-                    {post.titleLine2}
-                  </>
-                ) : null}
-              </h3>
-            ) : null}
-            {post.description ? (
-              <p className="mb-6 max-w-xl text-base text-white/60 sm:text-lg">{post.description}</p>
-            ) : null}
-            {post.likes ? (
-              <div className="flex flex-wrap items-center gap-6 text-white/50">
-                <span className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-hz-secondary-container">favorite</span>
-                  {post.likes}
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-hz-secondary-container">chat_bubble</span>
-                  {post.comments}
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-hz-secondary-container">share</span>
-                  {copy.share}
-                </span>
-              </div>
+            {post.year ? (
+              <span className="rounded-full bg-hz-primary-container/85 px-3 py-1.5 text-[9px] font-black uppercase tracking-[0.18em] text-white">
+                {post.year}
+              </span>
             ) : null}
           </div>
-        </>
-      ) : post.layout === "tall" || post.id === "square-3" ? (
-        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hz-primary-container/90 to-transparent p-6 sm:p-8">
-          {badgeText ? (
-            <span className="mb-2 block text-[10px] font-black uppercase tracking-[0.3em] text-white/70">
-              {badgeText}
+        </div>
+      </a>
+
+      <div className="space-y-4 p-4 sm:p-5">
+        <div className="flex flex-wrap items-center gap-5 text-sm text-white/58">
+          {post.likes ? (
+            <span className="flex items-center gap-2 font-bold">
+              <span className="material-symbols-outlined text-base text-hz-secondary-container">favorite</span>
+              {post.likes}
             </span>
           ) : null}
-          {post.title ? (
-            <h4 className="text-lg font-black italic text-white sm:text-xl">{post.title}</h4>
+          {post.comments ? (
+            <span className="flex items-center gap-2 font-bold">
+              <span className="material-symbols-outlined text-base text-hz-secondary-container">chat_bubble</span>
+              {post.comments}
+            </span>
           ) : null}
+          <span className="flex items-center gap-2 font-bold">
+            <span className="material-symbols-outlined text-base text-hz-secondary-container">share</span>
+            {copy.share}
+          </span>
         </div>
-      ) : null}
-
-      <div className="sosyal-post-overlay absolute inset-0 flex items-center justify-center gap-8 text-white">
-        {post.likes ? (
-          <span className="flex items-center gap-2 font-black">
-            <span className="material-symbols-outlined">favorite</span>
-            {post.likes}
-          </span>
+        {post.title ? (
+          <h3 className="text-xl font-black uppercase italic leading-tight text-white sm:text-2xl">
+            {post.title}
+            {post.titleLine2 ? (
+              <>
+                <br />
+                {post.titleLine2}
+              </>
+            ) : null}
+          </h3>
         ) : null}
-        {post.comments ? (
-          <span className="flex items-center gap-2 font-black">
-            <span className="material-symbols-outlined">chat_bubble</span>
-            {post.comments}
-          </span>
-        ) : null}
+        <p className="text-sm leading-relaxed text-white/50">{caption}</p>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-hz-secondary-container transition hover:text-white"
+        >
+          {labels.openPost}
+          <span className="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
       </div>
     </article>
   );
 }
 
-export function SosyalMedyaPage({ locale, copy, hub }: Props) {
-  const feedPosts = getSosyalMedyaFeedPosts(locale, hub);
+export function SosyalMedyaPage({ locale, copy, hub, feedPosts: feedPostsProp }: Props) {
+  const feedPosts = feedPostsProp ?? getSosyalMedyaFeedPosts(locale, hub);
+  const feedLabels = SOCIAL_FEED_LABELS[locale] ?? SOCIAL_FEED_LABELS.en;
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -270,26 +485,62 @@ export function SosyalMedyaPage({ locale, copy, hub }: Props) {
               <p className="text-lg font-medium text-white/40 sm:text-xl">{copy.momentsDesc}</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <button
-                type="button"
-                className="rounded-full border border-white/10 px-8 py-4 text-xs font-bold uppercase tracking-widest text-white/50 transition-all hover:border-hz-secondary-container hover:text-white"
-              >
-                {copy.filterLatest}
-              </button>
-              <Link
-                href={`/${locale}/kurumsal/referanslar`}
-                className="rounded-full bg-white/5 px-8 py-4 text-xs font-bold uppercase tracking-widest text-white transition-all hover:bg-hz-secondary-container"
-              >
-                {copy.viewArchive}
-              </Link>
+              <span className="inline-flex items-center gap-2 rounded-full bg-hz-secondary-container px-6 py-4 text-xs font-black uppercase tracking-widest text-hz-on-primary shadow-lg shadow-hz-secondary/20">
+                <span className="material-symbols-outlined text-base">schedule</span>
+                {feedLabels.comingSoon}
+              </span>
+              {SOSYAL_MEDYA_PLATFORMS.slice(0, 2).map((platform) => (
+                <a
+                  key={platform.id}
+                  href={locale === "tr" ? platform.trHref : platform.globalHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-4 text-xs font-bold uppercase tracking-widest text-white/60 transition-all hover:border-hz-secondary-container hover:text-white"
+                >
+                  <PlatformIcon type={platform.icon} className="h-4 w-4" />
+                  {platform.id}
+                </a>
+              ))}
             </div>
           </div>
 
-          <div className="sosyal-insta-grid">
-            {feedPosts.map((post) => (
-              <FeedPost key={post.id} post={post} copy={copy} networkLabel={NETWORK_LABEL[locale] ?? NETWORK_LABEL.en} />
-            ))}
-          </div>
+          {feedPosts.length > 0 ? (
+            <div className="sosyal-insta-grid">
+              {feedPosts.map((post) => (
+                <FeedPost
+                  key={post.id}
+                  post={post}
+                  copy={copy}
+                  locale={locale}
+                  networkLabel={NETWORK_LABEL[locale] ?? NETWORK_LABEL.en}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="flex flex-col items-start gap-4 border-l-2 border-hz-secondary-container/70 pl-5 sm:max-w-2xl sm:pl-6">
+              <span className="inline-flex items-center gap-2 rounded-full bg-hz-secondary-container/12 px-4 py-2 text-[10px] font-black uppercase tracking-[0.22em] text-hz-secondary-container ring-1 ring-hz-secondary-container/25">
+                <span className="material-symbols-outlined text-sm">schedule</span>
+                {feedLabels.comingSoon}
+              </span>
+              <div>
+                <h3 className="text-xl font-black uppercase italic tracking-tight text-white sm:text-2xl">
+                  {feedLabels.comingSoonTitle}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/45 sm:text-base">
+                  {feedLabels.comingSoonDesc}
+                </p>
+              </div>
+              <a
+                href="https://www.instagram.com/novves.turkiye/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-hz-secondary-container transition hover:text-white"
+              >
+                Instagram
+                <span className="material-symbols-outlined text-sm">open_in_new</span>
+              </a>
+            </div>
+          )}
         </section>
 
         {/* Subscribe CTA */}

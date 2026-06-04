@@ -47,58 +47,25 @@
       "tag": "MÜHƏNDİSLİK VƏ DİZAYN",
       "title": "Analitik intellektin rəqəmsal əkizi",
       "intro": "Prosesimiz məhsulla deyil, problemin təhlili ilə başlayır. NOVVES üçün mühəndislik sadəcə ventilyator seçmək demək deyil — quruluşda tüstü və istiliyin davranışını riyazi olaraq proqnozlaşdırmaq deməkdir.",
-      "items": [
-        {
-          "label": "CFD simulyasiyaları",
-          "desc": "Yanğın ssenarilərini rəqəmsal mühitdə modelləşdirir, quraşdırmadan əvvəl sistemin performansını sübut edirik."
-        },
-        {
-          "label": "Dəqiq hesablamalar",
-          "desc": "Bina üzrə hava axını və təzyiq hesablamaları ilə artıq mühəndislik xərclərindən qaçır və optimal səmərəlilik əldə edirik."
-        },
-        {
-          "label": "Layihəyə yönəlmiş yanaşma",
-          "desc": "Texniki spesifikasiyalara tam uyğun məhsullar istehsal edirik."
-        }
-      ]
+      "items": [],
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "İSTEHSAL VƏ KEYFİYYƏT",
       "title": "Standartların üstündə sənətkarlıq",
       "intro": "Dizayn mərhələsində təsdiqlənən hər bir məlumat nöqtəsi istehsal müəssisələrimizdə fiziki performansa çevrilir. Mühəndislik ekosistemimizi müasir istehsal texnologiyaları ilə birləşdirərək xəta marjasını sıfıra endiririk.",
-      "items": [
-        {
-          "label": "Sertifikatlı performans",
-          "desc": "İstehsal etdiyimiz hər ventilyator və damper EN 12101-3 kimi beynəlxalq yanğın davamlılığı standartlarına uyğun olaraq akkreditə olunmuş laboratoriyalarda sınaqdan keçirilir."
-        },
-        {
-          "label": "Dəqiq istehsal",
-          "desc": "Lazer kəsimindən dinamik balans sınaqlarına qədər hər mərhələdə millimetrik toleranslarla işləyirik."
-        },
-        {
-          "label": "Davamlı materiallar",
-          "desc": "Uzunömürlü, korroziyaya davamlı və yüksək enerji səmərəliliyinə malik materiallarla sistemin ömrünü maksimuma çatdırırıq."
-        }
-      ]
+      "items": [],
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "QURAŞDIRMA VƏ TƏTBİQ",
       "title": "Obyektdə əksiksiz performans",
       "intro": "Ən yaxşı məhsul yalnız düzgün inteqrasiya olunduqda həyat xilas edir. İnovasiya zəncirimizin son halqası sistemin binanın infrastrukturu ilə problemsiz uyğun işləməsini təmin etməkdir.",
-      "items": [
-        {
-          "label": "Obyekt nəzarəti",
-          "desc": "Quraşdırma zamanı texniki rəhbərlik göstəririk ki, sistem layihədə nəzərdə tutulduğu kimi düzgün yerləşdirilsin."
-        },
-        {
-          "label": "İşə düşmə (komissiyalaşdırma)",
-          "desc": "Soyuq və isti tüstü sınaqları ilə sistemin reaksiya vaxtını və təhlükəsizlik tutumunu yerində yoxlayırıq."
-        },
-        {
-          "label": "Ağıllı avtomatika inteqrasiyası",
-          "desc": "Jet fanların və damperlərin yanğın aşkarlama sistemləri ilə millisaniyələr içində sinxronlaşmasını zəmanət veririk."
-        }
-      ]
+      "items": [],
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -176,19 +143,31 @@
     "items": [
       {
         "q": "NOVVES hansı sənayelərə xidmət göstərir?",
-        "a": "NOVVES avtoparklar, tunellər, ticarət mərkəzləri, xəstəxanalar, otellər, sənaye obyektləri, istixanalar, elektrik stansiyaları və yaşayış binaları daxil olmaqla geniş sektorlarda tüstü təhlükəsizliyi, konfort havalandırması və sənaye hava idarəetməsi həlləri təqdim edir."
+        "a": "NOVVES avtoparklar, tunellər, ticarət mərkəzləri, xəstəxanalar, otellər, sənaye obyektləri, istixanalar, elektrik stansiyaları və yaşayış binaları daxil olmaqla geniş sektorlarda tüstü təhlükəsizliyi, konfort havalandırması və sənaye hava idarəetməsi həlləri təqdim edir.",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "q": "Məhsullarınız hansı standartlara uyğundur?",
-        "a": "Məhsullarımız EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE və ATEX standartlarına uyğun istehsal olunur və akkreditə olunmuş laboratoriyalarda sınaqdan keçirilir."
+        "a": "Məhsullarımız EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE və ATEX standartlarına uyğun istehsal olunur və akkreditə olunmuş laboratoriyalarda sınaqdan keçirilir.",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "q": "CFD təhlil xidməti təqdim edirsiniz?",
-        "a": "Bəli, hər layihə üçün 3D CFD simulyasiyaları aparırıq: tüstünün yayılması, temperatur, CO konsentrasiyası və görünürlük məsafəsini təhlil edərək jet fanların yerləşdirilməsini optimallaşdırırıq."
+        "a": "Bəli, hər layihə üçün 3D CFD simulyasiyaları aparırıq: tüstünün yayılması, temperatur, CO konsentrasiyası və görünürlük məsafəsini təhlil edərək jet fanların yerləşdirilməsini optimallaşdırırıq.",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "q": "Satışdan sonrakı dəstək var?",
-        "a": "Komissiyalaşdırma, dövri texniki qulluq, ehtiyat hissələri təchizatı və 24/7 texniki xidmət daxil olmaqla geniş satışdan sonrakı dəstək göstəririk."
+        "a": "Komissiyalaşdırma, dövri texniki qulluq, ehtiyat hissələri təchizatı və 24/7 texniki xidmət daxil olmaqla geniş satışdan sonrakı dəstək göstəririk.",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "Layihəyə xüsusi fan seçimi və sistem dizaynı edirsiniz?",
@@ -211,13 +190,24 @@
         "linkLabel": "Explore our after-sales support process →",
         "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
-    ]
+    ],
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "Layihəniz üçün",
     "title": "Havalandırma həlli axtarırsınız?",
     "desc": "Obyekt baxışları, CFD təhlili, layihə dizaynı və qiymət təklifləri üçün bu gün mütəxəssis mühəndis komandamızla əlaqə saxlayın.",
-    "requestQuote": "Qiymət sorğusu göndərin"
+    "requestQuote": "Qiymət sorğusu göndərin",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pageChrome": {
     "catalogsVertical": "Kataloqlar",
@@ -248,7 +238,14 @@
     "scrollVideoSideLabel": "Avtopark havalandırması",
     "engineeringAlt1": "NOVVES CNC lazer kəsimi ilə dəst metalda dəqiq istehsal",
     "engineeringAlt2": "NOVVES obyektdə montaj və texniki xidmət",
-    "pillarsFallbackTitle": "Mühəndislik yanaşmamız"
+    "pillarsFallbackTitle": "Mühəndislik yanaşmamız",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
+    "catalogCardCta": "View"
   },
   "solutionCarouselByHref": {
     "/cozumler/duman-isi-tahliye-sistemleri": {
@@ -319,34 +316,49 @@
     {
       "title": "Məhsul kataloqu",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "Texniki qısa məruzələr",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "Datasheet arxivi",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "referencePreview": [
     {
       "title": "2M Lojistik Gebze anbarı",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S Kale Topaz Zeytinburnu",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "Adana Yüreğir 100 çarpaylı xəstəxanası",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "Sənaye obyektləri",

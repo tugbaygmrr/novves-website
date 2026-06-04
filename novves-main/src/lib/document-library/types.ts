@@ -28,6 +28,7 @@ export type DocumentLibraryItem = {
   highlight?: boolean;
   criticalTitle?: boolean;
   fileFormat?: string;
+  downloadHref?: string;
   revision?: string;
   lastModified?: string;
   previewImage?: string;

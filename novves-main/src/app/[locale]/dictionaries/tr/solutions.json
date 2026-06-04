@@ -54,7 +54,7 @@
       { "title": "Karayolu ve Demiryolu Tünelleri", "description": "Yangın zonlama ve hava yönlendirme", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
       { "title": "Alışveriş Merkezleri (AVM)", "description": "Duman kontrolü ve tahliyesi", "products": [{ "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound-al.png" }] },
       { "title": "Stadyumlar ve Toplantı Salonları", "description": "Acil durumlarda duman boşaltımı", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
-      { "title": "Endüstriyel Üretim Tesisleri", "description": "Proses kaynaklı sıcak gaz tahliyesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }, { "name": "OWL", "type": "Duvar Tipi Fanlar", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "Endüstriyel Üretim Tesisleri", "description": "Proses kaynaklı sıcak gaz tahliyesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }, { "name": "OWL", "type": "Duvar Tipi Fanlar", "image": "/images/products/owl-rer.jpg" }] },
       { "title": "Hastaneler ve Sağlık Tesisleri", "description": "Hasta alanlarında duman zonlaması", "products": [{ "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound-al.png" }] },
       { "title": "Havalimanları ve Metro İstasyonları", "description": "Alt katman duman tahliyesi", "products": [{ "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "MARLIN", "type": "Kovan Tipi Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "TURTLE", "type": "Hücreli Fanlar", "image": "/images/products/turtle-a.jpg" }] },
       { "title": "Depo ve Lojistik Merkezleri", "description": "Yüksek hacimlerde duman kontrolü", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "DRAGONFLY", "type": "Duman ve Isı Tahliye Fanları", "image": "/images/products/dragonfly-c.png" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound-al.png" }] },
@@ -91,19 +91,19 @@
       },
       "products": [
         {
-          "name": "NAX-1000 Duman Tahliye Fanı",
+          "name": "Dragonfly",
           "description": "EN 12101-3 uyumlu, F300/2H sınıfı yüksek sıcaklık dayanımlı aksiyal duman tahliye fanı.",
           "image": "/images/products/dragonfly-c.png",
           "href": "/urunler/duman-isi-tahliye-fanlari"
         },
         {
-          "name": "NVD-500 Motorlu Damper",
+          "name": "Hound",
           "description": "Yangın ve duman bölgelendirmesi için servo motorlu, yüksek sızdırmazlıklı duman damperi.",
           "image": "/images/products/hound-al.png",
           "href": "/urunler/damperler"
         },
         {
-          "name": "NVK-300 Kontrol Paneli",
+          "name": "Hawk",
           "description": "Senaryo bazlı duman tahliye otomasyonu; BMS entegrasyonu ve yangın paneli uyumu.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
@@ -208,37 +208,37 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "TIGER Klima Santrali",
+          "name": "Tiger",
           "description": "500 - 125.000 m³/h kapasite, modüler yapı, yüksek verimli ısı değiştiriciler ve EC fan seçenekleri.",
           "image": "/images/products/tiger-pre.png",
           "href": "/urunler/iklimlendirme"
         },
         {
-          "name": "Isı Geri Kazanım Ünitesi",
+          "name": "Caracal",
           "description": "Egzoz havasındaki enerjiyi geri kazanarak ısıtma/soğutma maliyetlerini %70'e kadar azaltır.",
           "image": "/images/products/caracal.png",
           "href": "/urunler/iklimlendirme"
         },
         {
-          "name": "DOLPHIN Nem Alma Santrali",
+          "name": "Dolphin",
           "description": "Kapalı havuz, SPA ve yüksek nemli alanlar için özel nem kontrol çözümleri.",
           "image": "/images/products/dolphin-pre.png",
           "href": "/urunler/iklimlendirme"
         },
         {
-          "name": "KOI Kanal Fanı",
+          "name": "Koi",
           "description": "Kanal içi basınç takviyesi ve hava dağılımı için kompakt, düşük sesli kanal fanları.",
           "image": "/images/products/koi-cb.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "Difüzör ve Menfez Sistemleri",
+          "name": "Alpaca",
           "description": "Homojen hava dağılımı için tavan, duvar ve yer difüzörleri ile hava ayar damperleri.",
           "image": "/images/products/alpaca-am.png",
           "href": "/urunler/hava-dagitimi"
         },
         {
-          "name": "Otomasyon ve Kontrol Paneli",
+          "name": "Hawk",
           "description": "Sıcaklık, nem ve CO₂ sensörleri ile BMS entegreli akıllı kontrol panoları.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
@@ -321,25 +321,25 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "Hijyenik Klima Santrali (TIGER)",
+          "name": "Tiger",
           "description": "Paslanmaz çelik gövde, hijyenik panel ve modüler yapı ile temiz oda standartlarına uygun santral.",
           "image": "/images/products/tiger-pre.png",
           "href": "/urunler/iklimlendirme"
         },
         {
-          "name": "HEPA Filtrasyon Ünitesi",
+          "name": "Turtle",
           "description": "H13/H14 sınıfı HEPA filtreler ile %99,995 partikül tutuculuk oranı.",
           "image": "/images/products/turtle-a.png",
           "href": "/urunler/hava-filtrasyonu"
         },
         {
-          "name": "Laminar Akım Ünitesi (LAF)",
+          "name": "Marlin",
           "description": "Ameliyathane ve temiz odalarda tek yönlü hava akışı ile partikülsüz ortam.",
           "image": "/images/products/marlin.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "Basınç Kontrol Damperi (HOUND)",
+          "name": "Hound",
           "description": "Oda arası diferansiyel basınç izleme ve otomatik damper kontrolü.",
           "image": "/images/products/hound-crd.png",
           "href": "/urunler/hava-yonetimi"
@@ -411,7 +411,7 @@
     "areasDesc": "Endüstriyel havalandırma gerektiren tüm üretim ve tesis tiplerine yönelik çözümler.",
     "areas": [
       { "title": "Otomotiv Fabrikaları", "description": "Boya kabini egzozu, kaynak dumanı tahliyesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Metal ve Çelik Tesisleri", "description": "Sıcak gaz tahliyesi ve taze hava beslemesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "Metal ve Çelik Tesisleri", "description": "Sıcak gaz tahliyesi ve taze hava beslemesi", "products": [{ "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }, { "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }] },
       { "title": "Tekstil Fabrikaları", "description": "Nem kontrolü ve lif tozu tahliyesi", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] },
       { "title": "Kimya ve Petrokimya Tesisleri", "description": "Korozif gaz egzozu ve taze hava besleme", "products": [{ "name": "BEAR", "type": "ATEX Fanlar", "image": "/images/products/bear-bp.jpg" }, { "name": "NAUTILUS", "type": "Endüstriyel Fanlar", "image": "/images/products/nautilus-cif-cidarli.jpg" }] },
       { "title": "Depo ve Lojistik Merkezleri", "description": "Genel havalandırma ve sıcaklık kontrolü", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
@@ -434,37 +434,37 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "NAUTILUS Salyangoz Fan",
+          "name": "Nautilus",
           "description": "Yüksek basınç ve sıcaklık dayanımlı, çift cidarlı veya tek cidarlı salyangoz fanlar.",
           "image": "/images/products/nautilus-cif-cidarli.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "MARLIN Aksiyal Fan",
+          "name": "Marlin",
           "description": "Büyük hacimlerde yüksek debi kapasiteli, kovan tipli veya kanatlı aksiyal fanlar.",
           "image": "/images/products/marlin.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "HERON Çatı Fanı",
+          "name": "Heron",
           "description": "Tesis çatısında egzoz veya taze hava beslemesi için radyal ve aksiyal çatı fanları.",
           "image": "/images/products/heron-rv.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "OWL Duvar Fanı",
+          "name": "Owl",
           "description": "Cephe montajlı egzoz veya besleme için duvar tipi radyal ve aksiyal fanlar.",
-          "image": "/images/products/owl-cer.png",
+          "image": "/images/products/owl-rer.jpg",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "KOI Kanal Fanı",
+          "name": "Koi",
           "description": "Kanal içi basınç takviyesi ve hava transferi için kompakt kanal fanları.",
           "image": "/images/products/koi-cb.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "Otomasyon ve Kontrol Paneli",
+          "name": "Hawk",
           "description": "Frekans invertör, sıcaklık/nem sensörleri, PLC pano ve BMS entegrasyonu.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
@@ -523,10 +523,10 @@
     "areasTitle": "Hangi Tesislerde Kullanılır?",
     "areasDesc": "Her hayvancılık tesisi tipine özel havalandırma çözümleri sunulmaktadır.",
     "areas": [
-      { "title": "Tavuk Kümesleri (Broiler/Yumurta)", "description": "Tünel havalandırma ve evaporatif soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
-      { "title": "Büyükbaş Ahırları", "description": "Amonyak tahliyesi ve taze hava beslemesi", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Tavuk Kümesleri (Broiler/Yumurta)", "description": "Tünel havalandırma ve evaporatif soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Büyükbaş Ahırları", "description": "Amonyak tahliyesi ve taze hava beslemesi", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
       { "title": "Süt Çiftlikleri", "description": "Sağım alanı ve barınma iklim kontrolü", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Küçükbaş Barınma Tesisleri", "description": "Koyun ve keçi barınaklarında havalandırma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] }
+      { "title": "Küçükbaş Barınma Tesisleri", "description": "Koyun ve keçi barınaklarında havalandırma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }, { "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }] }
     ],
     "faqLabel": "SSS",
     "faqTitle": "Sıkça Sorulan Sorular",
@@ -546,37 +546,37 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "CHICKEN Kümes Fanı",
-          "description": "Tavuk kümes ve küçükbaş barınma tesisleri için korozyona dayanıklı, yüksek debili aksiyal fanlar.",
+          "name": "Chicken",
+          "description": "Kapalı kümeslerde hassas hava kalitesi için tasarlanmış yüksek verimli tavukçu fanları; ortam havasını taze tutar, zararlı gaz birikimini önler ve dengeli dolaşımla sıcaklık kontrolü sağlar.",
           "image": "/images/products/chicken.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "OWL Duvar Egzoz Fanı",
+          "name": "Owl",
           "description": "Büyükbaş ahır ve barınma tesislerinde cephe montajlı, galvaniz gövdeli egzoz fanları.",
-          "image": "/images/products/owl-cer.png",
+          "image": "/images/products/owl-rer.jpg",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "HERON Çatı Fanı",
+          "name": "Heron",
           "description": "Çatıdan egzoz ve taze hava beslemesi için korozyona dayanıklı çatı fanları.",
           "image": "/images/products/heron-rv.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "Evaporatif Soğutma Sistemi",
+          "name": "Marlin",
           "description": "Sıcak iklimlerde adyabatik soğutma ile tesis içi sıcaklığı düşüren yüksek debili havalandırma.",
           "image": "/images/products/marlin.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "ALPACA Hava Giriş Menfezi",
+          "name": "Alpaca",
           "description": "Kontrollü taze hava girişi için ayarlanabilir menfezler ve tünel havalandırma yapısı.",
           "image": "/images/products/alpaca-am.png",
           "href": "/urunler/hava-dagitimi"
         },
         {
-          "name": "İklim Kontrol ve Otomasyon",
+          "name": "Hawk",
           "description": "Sıcaklık, nem ve amonyak sensörleri ile otomatik fan hız kontrolü ve iklim yönetimi.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
@@ -635,10 +635,10 @@
     "areasTitle": "Hangi Alanlarda Kullanılır?",
     "areasDesc": "Elektrik ve enerji altyapısındaki tüm kritik mekanlar için çözümler.",
     "areas": [
-      { "title": "Trafo Merkezleri", "description": "Trafo kayıp ısısı tahliyesi ve sıcaklık kontrolü", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
-      { "title": "Jeneratör Odaları", "description": "Egzoz gazı ve ısı tahliyesi", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }] },
+      { "title": "Trafo Merkezleri", "description": "Trafo kayıp ısısı tahliyesi ve sıcaklık kontrolü", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Jeneratör Odaları", "description": "Egzoz gazı ve ısı tahliyesi", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }] },
       { "title": "UPS ve Akü Odaları", "description": "Hidrojen gazı tahliyesi ve sıcaklık kontrolü", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "HOUND", "type": "Damperler", "image": "/images/products/hound-al.png" }] },
-      { "title": "Orta Gerilim Hücreleri", "description": "Elektriksel ısı birikimi tahliyesi", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
+      { "title": "Orta Gerilim Hücreleri", "description": "Elektriksel ısı birikimi tahliyesi", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
     ],
     "faqLabel": "SSS",
     "faqTitle": "Sıkça Sorulan Sorular",
@@ -658,37 +658,37 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "OWL Duvar Tipi Fan",
+          "name": "Owl",
           "description": "Trafo odaları için IP55 korumalı, galvaniz gövdeli duvar tipi egzoz ve besleme fanları.",
-          "image": "/images/products/owl-cer.png",
+          "image": "/images/products/owl-rer.jpg",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "HERON Çatı Fanı",
+          "name": "Heron",
           "description": "Enerji odaları çatısında sıcak hava tahliyesi için radyal ve aksiyal çatı fanları.",
           "image": "/images/products/heron-rv.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "KOI Kanal Fanı",
+          "name": "Koi",
           "description": "Kanal sistemi ile sıcak havanın uzak mesafeye taşınması için kompakt kanal fanları.",
           "image": "/images/products/koi-cb.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "ALPACA Hava Giriş Menfezi",
+          "name": "Alpaca",
           "description": "TEDAŞ şartnamelerine uygun filtreli ve böcekli hava giriş menfezleri.",
           "image": "/images/products/alpaca-am.png",
           "href": "/urunler/hava-dagitimi"
         },
         {
-          "name": "İklim Kontrol ve Termostat",
+          "name": "Hawk",
           "description": "Oda sıcaklığına bağlı otomatik fan açma/kapama, kademe kontrolü ve iklim yönetimi.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
         },
         {
-          "name": "HOUND Motorlu Damper",
+          "name": "Hound",
           "description": "Yangın ve sıcak hava zonlama için motorlu damperler ve basınç dengeleme damperleri.",
           "image": "/images/products/hound-al.png",
           "href": "/urunler/damperler"
@@ -747,9 +747,9 @@
     "areasTitle": "Hangi Tesislerde Kullanılır?",
     "areasDesc": "Tarımsal üretim yapılan tüm kapalı alanlarda iklim kontrolü çözümleri.",
     "areas": [
-      { "title": "Cam ve Plastik Seralar", "description": "Sıcaklık ve nem kontrolü, evaporatif soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
+      { "title": "Cam ve Plastik Seralar", "description": "Sıcaklık ve nem kontrolü, evaporatif soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }, { "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }] },
       { "title": "Mantar Yetiştirme Tesisleri", "description": "Hassas nem ve sıcaklık kontrolü, taze hava besleme", "products": [{ "name": "KOI", "type": "Kanal Fanları", "image": "/images/products/koi-cb.jpg" }, { "name": "HUMMINGBIRD", "type": "EC Fanlar", "image": "/images/products/hummingbird-drb-ec.jpg" }] },
-      { "title": "Fide Yetiştirme Seraları", "description": "Homojen iklim dağılımı ve soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-cer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
+      { "title": "Fide Yetiştirme Seraları", "description": "Homojen iklim dağılımı ve soğutma", "products": [{ "name": "OWL", "type": "Duvar Fanları", "image": "/images/products/owl-rer.jpg" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] },
       { "title": "Tahıl Depolama Tesisleri", "description": "Nem kontrolü ve havalandırma", "products": [{ "name": "MARLIN", "type": "Aksiyal Fanlar", "image": "/images/products/marlin.png" }, { "name": "HERON", "type": "Çatı Fanları", "image": "/images/products/heron-ah.jpg" }] }
     ],
     "faqLabel": "SSS",
@@ -770,37 +770,37 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "OWL Duvar Tipi Egzoz Fanı",
+          "name": "Owl",
           "description": "Sera duvarlarında montajlı, galvaniz gövdeli, yüksek debili havalandırma fanları.",
-          "image": "/images/products/owl-cer.png",
+          "image": "/images/products/owl-rer.jpg",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "Evaporatif Soğutma Sistemi",
+          "name": "Marlin",
           "description": "Adyabatik soğutma prensipli petek sistemler ile sera içi sıcaklığı 8–12°C düşürme.",
           "image": "/images/products/marlin.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "HERON Çatı Havalandırma Ünitesi",
+          "name": "Heron",
           "description": "Sera çatısında sıcak hava tahliyesi ve taze hava beslemesi için çatı fanları.",
           "image": "/images/products/heron-rv.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "TURTLE Sirkülasyon Fanı",
+          "name": "Turtle",
           "description": "Sera içinde homojen sıcaklık ve nem dağılımı için yatay hava sirkülasyon fanları.",
           "image": "/images/products/turtle-a.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "ALPACA Hava Giriş Perdesi",
+          "name": "Alpaca",
           "description": "Kontrollü taze hava girişi için motorlu yan perde ve çatı pencere sistemleri.",
           "image": "/images/products/alpaca-am.png",
           "href": "/urunler/hava-dagitimi"
         },
         {
-          "name": "Akıllı İklim Kontrol Paneli",
+          "name": "Hawk",
           "description": "Sıcaklık, nem, CO₂ ve ışık sensörleri ile IoT tabanlı uzaktan izleme ve yönetim.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
@@ -883,31 +883,31 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "BEAR ATEX Radyal Fan",
+          "name": "Bear",
           "description": "Zone 1/2 ve Zone 21/22 için sertifikalı, kıvılcımsız malzemeli salyangoz fanlar.",
           "image": "/images/products/bear-lpf.png",
           "href": "/urunler/exproof-fanlar"
         },
         {
-          "name": "BEAR ATEX Kanal Fanı",
+          "name": "Bear",
           "description": "Patlayıcı ortamlara uygun, kovan tipli ve kanatlı aksiyal havalandırma fanları.",
           "image": "/images/products/bear-t.png",
           "href": "/urunler/exproof-fanlar"
         },
         {
-          "name": "BEAR Exproof Çatı Fanı",
+          "name": "Bear",
           "description": "Patlayıcı gaz/toz bulunan tesislerde çatı montajlı, exproof motorlu tahliye fanları.",
           "image": "/images/products/bear-reb.png",
           "href": "/urunler/exproof-fanlar"
         },
         {
-          "name": "Exproof Kumanda ve Motor",
+          "name": "Hawk",
           "description": "ATEX onaylı motorlar, exproof butonlar, sinyal lambaları ve kumanda kutusu.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
         },
         {
-          "name": "KOI Kanal ve Bağlantı Sistemi",
+          "name": "Koi",
           "description": "Statik elektrik birikimini önleyen topraklamalı kanal ve bağlantı elemanları.",
           "image": "/images/products/koi-cb.png",
           "href": "/urunler/hava-hareketi"
@@ -995,19 +995,19 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "PLC Kontrollü MCC Panosu",
+          "name": "Hawk",
           "description": "Fan başlatma/durdurma, kademe kontrolü, arıza izleme ve koruma rölesi entegrasyonlu motor kontrol merkezi.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
         },
         {
-          "name": "KOI Kanal Fanı ve Hız Kontrolü",
+          "name": "Koi",
           "description": "Frekans invertör entegrasyonu ile değişken hızlı fan kontrolü; enerji tasarrufu ve hassas debi ayarı.",
           "image": "/images/products/koi-cb.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "HOUND CRD Motorlu Damper",
+          "name": "Hound",
           "description": "Modbus/BACnet uyumlu BMS entegrasyonu için modülasyonlu damper ve zon kontrolü.",
           "image": "/images/products/hound-crd.png",
           "href": "/urunler/damperler"
@@ -1025,7 +1025,7 @@
           "href": "/urunler/otomasyon-malzemeleri"
         },
         {
-          "name": "HOUND Motorlu Damper",
+          "name": "Hound",
           "description": "Normal, gece, yangın ve otopark CO tahliyesi gibi senaryo bazlı çalışma modları için zonlama.",
           "image": "/images/products/hound-al.png",
           "href": "/urunler/damperler"
@@ -1107,37 +1107,37 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "TIGER Isı Geri Kazanım Ünitesi",
+          "name": "Tiger",
           "description": "Egzoz havasındaki ısıyı %90'a kadar geri kazanarak enerji tasarrufu sağlayan kompakt taze hava üniteleri.",
           "image": "/images/products/tiger-pre.png",
           "href": "/urunler/iklimlendirme"
         },
         {
-          "name": "SEAHORSE Banyo Fanı",
+          "name": "Seahorse",
           "description": "Sessiz, enerji verimli ve kompakt tasarımlı banyo ve tuvalet aspiratörleri.",
           "image": "/images/products/banyo-fan-1.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "KOI Kanal Fanı",
+          "name": "Koi",
           "description": "Kanal içi taze hava besleme ve egzoz için düşük sesli kompakt fanlar.",
           "image": "/images/products/koi-cb.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "TURTLE Hücreli Kanal Fanı",
+          "name": "Turtle",
           "description": "Mutfak ve yaşam alanı kanal hatlarında yağ filtresi uyumlu, sessiz egzoz ve besleme.",
           "image": "/images/products/turtle-a.png",
           "href": "/urunler/mutfak-fanlari"
         },
         {
-          "name": "ALPACA Menfez ve Difüzör",
+          "name": "Alpaca",
           "description": "Tavan, duvar ve yer menfezleri ile homojen hava dağılımı.",
           "image": "/images/products/alpaca-am.png",
           "href": "/urunler/hava-dagitimi"
         },
         {
-          "name": "Kontrol ve Kumanda Paneli",
+          "name": "Hawk",
           "description": "Kablosuz kumanda, nem sensörü, zamanlayıcı ve hız ayar kontrolü.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
@@ -1219,37 +1219,37 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "MARLIN Marin Aksiyal Fan",
+          "name": "Marlin",
           "description": "Tuzlu su korozyonuna dayanıklı, SS316 gövdeli, denizcilik onaylı aksiyal fanlar.",
           "image": "/images/products/marlin.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "NAUTILUS Marin Radyal Fan",
+          "name": "Nautilus",
           "description": "Makine dairesi ve kargo alanları için yüksek basınçlı, korozyona dayanıklı salyangoz fanlar.",
           "image": "/images/products/nautilus-cif-cidarli.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "HOUND Yangın Damperi",
+          "name": "Hound",
           "description": "Denizcilik yangın standartlarına uygun, otomatik kapanmalı yangın damperleri.",
           "image": "/images/products/hound-al.png",
           "href": "/urunler/damperler"
         },
         {
-          "name": "ALPACA Weatherproof Menfez",
+          "name": "Alpaca",
           "description": "Dalga ve yağmura karşı korunmalı, hava giriş ve çıkış menfezleri.",
           "image": "/images/products/alpaca-am.png",
           "href": "/urunler/hava-dagitimi"
         },
         {
-          "name": "BEAR Exproof Marin Fan",
+          "name": "Bear",
           "description": "Kargo ambar ve yakıt bölgesi gibi patlayıcı atmosfer riski olan marin alanlar için ATEX fanlar.",
           "image": "/images/products/bear-reb.png",
           "href": "/urunler/exproof-fanlar"
         },
         {
-          "name": "Marin Kontrol ve Otomasyon",
+          "name": "Hawk",
           "description": "Denizcilik onaylı kontrol panoları, yangın alarm entegrasyonu ve uzaktan izleme.",
           "image": "/images/products/basinclandirma-kontrol-panosu.png",
           "href": "/urunler/otomasyon-malzemeleri"
@@ -1331,31 +1331,31 @@
       "heroBadge": null,
       "products": [
         {
-          "name": "Özel Boyut Aksiyal Fan",
+          "name": "Marlin",
           "description": "Standart dışında çap, genişlik ve kapasite değerlerinde proje özel aksiyal fan imalatı.",
           "image": "/images/products/marlin.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "Özel Boyut Salyangoz Fan",
+          "name": "Nautilus",
           "description": "Yüksek basınç ve debi gerektiren uygulamalarda özel ölçü radyal fan tasarımı.",
           "image": "/images/products/nautilus-cif-cidarli.png",
           "href": "/urunler/hava-hareketi"
         },
         {
-          "name": "Yüksek Sıcaklık Fanı",
+          "name": "Dragonfly",
           "description": "400°C ve üzerine kadar sürekli çalışma için özel malzeme ve mühendislik tasarımı.",
           "image": "/images/products/dragonfly-c.png",
           "href": "/urunler/duman-isi-tahliye-fanlari"
         },
         {
-          "name": "Korozif Ortam Fanı",
+          "name": "Bear",
           "description": "Paslanmaz çelik, özel kaplama ve ATEX uyumlu exproof gövde seçenekleri.",
           "image": "/images/products/bear-lpf.png",
           "href": "/urunler/exproof-fanlar"
         },
         {
-          "name": "Özel Damper ve Kanal",
+          "name": "Hound",
           "description": "Non-standart boyut ve malzemede motorlu damper ile kanal bağlantı elemanları.",
           "image": "/images/products/hound-al.png",
           "href": "/urunler/damperler"

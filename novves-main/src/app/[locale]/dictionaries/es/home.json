@@ -47,58 +47,25 @@
       "tag": "INGENIERÍA Y DISEÑO",
       "title": "El gemelo digital de la inteligencia analítica",
       "intro": "Nuestro proceso comienza no con un producto, sino con el análisis del problema. Para NOVVES, la ingeniería significa más que seleccionar un ventilador: significa predecir matemáticamente el comportamiento del humo y el calor dentro de una estructura.",
-      "items": [
-        {
-          "label": "Simulaciones de CFD",
-          "desc": "Simulamos escenarios de incendio en un entorno digital, probando el rendimiento del sistema antes de su instalación."
-        },
-        {
-          "label": "Cálculos de precisión",
-          "desc": "Con cálculos de presurización y flujo de aire específicos del edificio, evitamos costos de ingeniería redundantes y logramos una eficiencia óptima."
-        },
-        {
-          "label": "Enfoque centrado en proyectos",
-          "desc": "Fabricamos productos que cumplen totalmente con las especificaciones técnicas."
-        }
-      ]
+      "items": [],
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "FABRICACIÓN Y CALIDAD",
       "title": "Artesanía más allá de los estándares",
       "intro": "Cada punto de datos aprobado durante la fase de diseño se transforma en rendimiento físico en nuestras instalaciones de fabricación. Al combinar nuestro ecosistema de ingeniería con tecnologías de producción modernas, reducimos el margen de error a cero.",
-      "items": [
-        {
-          "label": "Rendimiento certificado",
-          "desc": "Cada ventilador y compuerta que fabricamos es probado por laboratorios acreditados según estándares internacionales de resistencia al fuego como EN 12101-3."
-        },
-        {
-          "label": "Fabricación de precisión",
-          "desc": "Desde el corte por láser hasta las pruebas de equilibrio dinámico, trabajamos con tolerancias milimétricas en cada etapa."
-        },
-        {
-          "label": "Materiales Sostenibles",
-          "desc": "Maximizamos el ciclo de vida del sistema utilizando materiales duraderos y resistentes a la corrosión con alta eficiencia energética."
-        }
-      ]
+      "items": [],
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "INSTALACIÓN Y APLICACIÓN",
       "title": "Rendimiento impecable en el sitio",
       "intro": "El mejor producto salva vidas sólo cuando se integra adecuadamente. El último eslabón de nuestra cadena de innovación es garantizar que el sistema funcione en perfecta armonía con la infraestructura del edificio.",
-      "items": [
-        {
-          "label": "Supervisión del sitio",
-          "desc": "Proporcionamos orientación técnica durante la instalación para garantizar el posicionamiento adecuado del sistema según lo diseñado."
-        },
-        {
-          "label": "Puesta en servicio",
-          "desc": "A través de pruebas de humo frío y caliente verificamos en sitio el tiempo de respuesta del sistema y la capacidad de extracción."
-        },
-        {
-          "label": "Integración de automatización inteligente",
-          "desc": "Garantizamos la sincronización de los jet fans y compuertas con los sistemas de detección de incendios en milisegundos."
-        }
-      ]
+      "items": [],
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -176,19 +143,31 @@
     "items": [
       {
         "q": "¿A qué industrias sirve NOVVES?",
-        "a": "NOVVES ofrece soluciones de extracción de humo, ventilación confortable y gestión del aire industrial en una amplia gama de sectores, incluidos estacionamientos, túneles, centros comerciales, hospitales, hoteles, instalaciones industriales, invernaderos, plantas de energía y edificios residenciales."
+        "a": "NOVVES ofrece soluciones de extracción de humo, ventilación confortable y gestión del aire industrial en una amplia gama de sectores, incluidos estacionamientos, túneles, centros comerciales, hospitales, hoteles, instalaciones industriales, invernaderos, plantas de energía y edificios residenciales.",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "q": "¿Qué estándares cumplen sus productos?",
-        "a": "Nuestros productos se fabrican de conformidad con las normas EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE y ATEX, y se prueban en laboratorios acreditados."
+        "a": "Nuestros productos se fabrican de conformidad con las normas EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE y ATEX, y se prueban en laboratorios acreditados.",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "q": "¿Ofrecen servicios de análisis de CFD?",
-        "a": "Sí, realizamos simulaciones CFD en 3D para cada proyecto para analizar la propagación del humo, la temperatura, la concentración de CO y la distancia de visibilidad, optimizando la ubicación de los ventiladores."
+        "a": "Sí, realizamos simulaciones CFD en 3D para cada proyecto para analizar la propagación del humo, la temperatura, la concentración de CO y la distancia de visibilidad, optimizando la ubicación de los ventiladores.",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "q": "¿Ofrecen soporte postventa?",
-        "a": "Brindamos soporte postventa integral que incluye puesta en marcha, mantenimiento periódico, suministro de repuestos y servicio técnico 24 horas al día, 7 días a la semana."
+        "a": "Brindamos soporte postventa integral que incluye puesta en marcha, mantenimiento periódico, suministro de repuestos y servicio técnico 24 horas al día, 7 días a la semana.",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "¿Ofrecen selección de ventiladores y diseño de sistemas específicos para cada proyecto?",
@@ -203,14 +182,32 @@
         "linkHref": "/cozumler/duman-isi-tahliye-sistemleri",
         "linkLabel": "Explore smoke and heat exhaust solutions →",
         "linkAriaLabel": "Explore NOVVES smoke and heat exhaust solutions with F300/F400 fans, jet fan systems, dampers, silencers and control panels."
+      },
+      {
+        "q": "Do you provide after-sales support?",
+        "a": "Yes. NOVVES supports customers after delivery with technical documentation, commissioning assistance, spare parts, maintenance guidance and post-sales engineering support—so systems operate safely, efficiently and sustainably in the field.",
+        "linkHref": "/hizmetler/teknik-servis",
+        "linkLabel": "Explore our after-sales support process →",
+        "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
-    ]
+    ],
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "Para tu proyecto",
     "title": "¿Busca una solución de ventilación?",
     "desc": "Póngase en contacto con nuestro equipo de ingeniería experto hoy para realizar estudios del sitio, análisis CFD, diseño de proyectos y cotizaciones.",
-    "requestQuote": "Solicitar una cotización"
+    "requestQuote": "Solicitar una cotización",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pageChrome": {
     "catalogsVertical": "Catálogos",
@@ -241,7 +238,14 @@
     "scrollVideoSideLabel": "Ventilación del aparcamiento",
     "engineeringAlt1": "NOVVES Corte por láser CNC Fabricación de precisión sobre chapa",
     "engineeringAlt2": "NOVVES montaje in situ y servicio técnico",
-    "pillarsFallbackTitle": "Nuestro enfoque de ingeniería"
+    "pillarsFallbackTitle": "Nuestro enfoque de ingeniería",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
+    "catalogCardCta": "View"
   },
   "solutionCarouselByHref": {
     "/cozumler/duman-isi-tahliye-sistemleri": {
@@ -312,34 +316,49 @@
     {
       "title": "Catálogo de productos",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "Resúmenes técnicos",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "Archivo de hojas de datos",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "referencePreview": [
     {
       "title": "2M Lojistik Gebze Depo",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S Kale Topacio Zeytinburnu",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "Adana Yüreğir 100 Yataklı Hastane",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "Instalaciones industriales",

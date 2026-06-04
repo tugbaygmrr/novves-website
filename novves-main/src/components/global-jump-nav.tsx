@@ -73,14 +73,14 @@ export function GlobalJumpNav({
       {
         id: "solution-categories",
         label: labels.solutions,
-        href: `/${locale}/cozumler`,
+        href: `/${locale}/cozumler/duman-isi-tahliye-sistemleri`,
         matchPath: `/${locale}/cozumler`,
         homeSectionId: "solution-categories",
       },
       {
         id: "product-categories",
         label: labels.products,
-        href: `/${locale}/urunler`,
+        href: `/${locale}/urunler/hava-hareketi`,
         matchPath: `/${locale}/urunler`,
         homeSectionId: "product-categories",
       },
@@ -153,20 +153,22 @@ export function GlobalJumpNav({
      * "ratio'su yüksek" diye yapışıp kalmasını önler. */
     const computeActive = () => {
       const viewportTop = 120; // navbar offset
-      let best: { id: string; dist: number } | null = null;
-      sectionIds.forEach((id) => {
+      let activeId: string | null = null;
+      let bestDist = Number.POSITIVE_INFINITY;
+      for (const id of sectionIds) {
         const el = document.getElementById(id);
-        if (!el) return;
+        if (!el) continue;
         const rect = el.getBoundingClientRect();
         // Section top viewport'un üst threshold'unun altında olmalı (yani section başlamış)
         // Bottom da hâlâ aşağıda olmalı (yani henüz tamamen geçmemiş)
-        if (rect.bottom <= viewportTop) return; // tamamen üstte kaldı, geç
+        if (rect.bottom <= viewportTop) continue; // tamamen üstte kaldı, geç
         const dist = Math.abs(rect.top - viewportTop);
-        if (!best || dist < best.dist) {
-          best = { id, dist };
+        if (dist < bestDist) {
+          bestDist = dist;
+          activeId = id;
         }
-      });
-      if (best) setActiveHomeSection(best.id);
+      }
+      if (activeId) setActiveHomeSection(activeId);
     };
 
     const onScroll = () => {

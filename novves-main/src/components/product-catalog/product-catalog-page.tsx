@@ -129,7 +129,7 @@ export function ProductCatalogPage({
                   </li>
                   <li className="flex items-center gap-1">
                     <IconChevronRight className="h-3 w-3 shrink-0" />
-                    <Link href={`/${locale}/urunler`} className="hover:text-primary">
+                    <Link href={`/${locale}/urunler/hava-hareketi`} className="hover:text-primary">
                       {ui.products}
                     </Link>
                   </li>
@@ -221,9 +221,6 @@ export function ProductCatalogPage({
                             aria-label={`${ui.productNo} ${product.number}`}
                           >
                             {product.number}
-                          </span>
-                          <span className="absolute right-3 top-3 rounded-full bg-[#FFDBD0] px-2 py-0.5 text-[8px] font-black uppercase tracking-wide text-[#390C00]">
-                            {ui.inStock}
                           </span>
                         </ProductCatalogProductMedia>
                       )}

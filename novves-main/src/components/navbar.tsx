@@ -38,6 +38,16 @@ function menuIsDirectLink(menu: MegaMenu): boolean {
   return menu.links.length === 0;
 }
 
+function menuViewAllHref(menu: MegaMenu): string {
+  if (menu.href === "/cozumler") return "/cozumler/duman-isi-tahliye-sistemleri";
+  if (menu.href === "/urunler") return "/urunler/hava-hareketi";
+  return menu.href;
+}
+
+function menuShowsViewAll(menu: MegaMenu): boolean {
+  return menu.href !== "/kurumsal";
+}
+
 type NavbarContent = {
   solutions: string;
   solutionsDesc: string;
@@ -84,6 +94,27 @@ function mediaCenterLabelForLocale(locale: string): string {
   return map[locale] ?? "Media Center";
 }
 
+function careerLabelForLocale(locale: string): string {
+  const map: Record<string, string> = {
+    tr: "Kariyer",
+    en: "Career",
+    ru: "Карьера",
+    ar: "الوظائف",
+    de: "Karriere",
+    it: "Carriere",
+    fr: "Carrière",
+    az: "Karyera",
+    kk: "Мансап",
+    tg: "Карера",
+    es: "Carrera",
+    zh: "职业发展",
+    ur: "کیریئر",
+    lt: "Karjera",
+    pl: "Kariera",
+  };
+  return map[locale] ?? "Career";
+}
+
 /* â”€â”€ Icons (consistent outline, 1.5 strokeWidth) â”€â”€â”€â”€â”€â”€ */
 
 const icons = {
@@ -125,6 +156,7 @@ function buildMenus(dict: CommonDict, locale: string): MegaMenu[] {
   const d = dict.navbar;
   const l = d.links;
   const mediaCenterLabel = mediaCenterLabelForLocale(locale);
+  const careerLabel = careerLabelForLocale(locale);
   return [
     {
       label: d.solutions,
@@ -156,7 +188,7 @@ function buildMenus(dict: CommonDict, locale: string): MegaMenu[] {
         {
           label: l.livestockFacilities,
           href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri",
-          image: "/images/products/owl-cer.jpg",
+          image: "/images/products/owl-rer.jpg",
         },
         {
           label: l.transformerEnergyRooms,
@@ -220,37 +252,37 @@ function buildMenus(dict: CommonDict, locale: string): MegaMenu[] {
         {
           label: l.coolingAndHeating,
           href: "/urunler/sogutma-ve-isitma",
-          image: "/images/products/dolphin-main.jpg",
+          image: "/images/products/nav/chiller.png",
         },
         {
           label: l.airManagement,
           href: "/urunler/hava-yonetimi",
-          image: "/images/products/heron-ah.jpg",
+          image: "/images/products/nav/hound-al.png",
         },
         {
           label: l.airDistribution,
           href: "/urunler/hava-dagitimi",
-          image: "/images/products/koi-cb.jpg",
+          image: "/images/products/nav/alpaca-am.png",
         },
         {
           label: l.airFiltration,
           href: "/urunler/hava-filtrasyonu",
-          image: "/images/products/turtle-a.jpg",
+          image: "/images/products/nav/cyclone.png",
         },
         {
           label: l.accessories,
           href: "/urunler/aksesuarlar",
-          image: "/images/products/hound-al.png",
+          image: "/images/products/nav/remora.png",
         },
         {
           label: l.automationMaterials,
           href: "/urunler/otomasyon-malzemeleri",
-          image: "/images/products/hummingbird-drb-ec.jpg",
+          image: "/images/products/nav/otomasyon-pano.png",
         },
         {
           label: l.vibrationSoundInsulation,
           href: "/urunler/titresim-ve-ses-izolasyon",
-          image: "/images/products/nautilus-cif-cidarli.jpg",
+          image: "/images/products/nav/yayli-titresim-izolatoru.png",
         },
       ],
     },
@@ -279,6 +311,7 @@ function buildMenus(dict: CommonDict, locale: string): MegaMenu[] {
         { label: l.ourTeam, href: "/kurumsal/ekibimiz" },
         { label: l.references, href: "/kurumsal/referanslar" },
         { label: mediaCenterLabel, href: "/kurumsal/medya-merkezi" },
+        { label: careerLabel, href: "/kariyer" },
         { label: l.kvkk, href: "/legal" },
       ],
     },
@@ -304,7 +337,6 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
   /** Sağ önizleme: hangi alt menü satırının görseli gösterilsin */
   const [previewHref, setPreviewHref] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
-  const [scrolled, setScrolled] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -323,7 +355,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
     const all = buildMenus(dict, locale);
     if (!consentRestricted) return all;
     return all.filter((m) => !m.href.startsWith("/teknik-merkez"));
-  }, [dict, consentRestricted]);
+  }, [dict, locale, consentRestricted]);
   /** Navbar stays white on all routes (no transparent / inverted hero overlay). */
   const inverted = false;
   /** Root layout sets dir=rtl — mega menus must anchor with inline-start so the panel grows into the viewport (end-0 grows off the right edge in RTL). */
@@ -336,15 +368,9 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
         setPreviewHref(null);
       }
     }
-    function handleScroll() {
-      setScrolled(window.scrollY > 80);
-    }
     document.addEventListener("click", handleClick);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
     return () => {
       document.removeEventListener("click", handleClick);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -369,7 +395,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
     <header
       className="fixed top-0 z-50 w-full max-w-[100vw] overflow-visible bg-sand-200 pb-3 pt-4 transition-all duration-300"
     >
-      <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between overflow-visible pl-6 pr-2 sm:pl-8 sm:pr-3 lg:pl-10 lg:pr-4">
+      <nav ref={navRef} className="mx-auto flex h-14 max-w-[1600px] items-center justify-between overflow-visible pl-2 pr-2 sm:pl-6 sm:pr-3 lg:pl-10 lg:pr-4">
         {/* Logo (tagline görselin içinde) */}
         <Link href={`/${locale}`} className="flex flex-shrink-0 items-center leading-none">
           <Image
@@ -504,28 +530,29 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                         })}
                       </div>
 
-                      {/* View all */}
-                      <div className="mt-4 border-t border-gray-100 pt-3">
-                        <Link
-                          href={`/${locale}${menu.href}`}
-                          onClick={() => {
-                            setOpenMenu(null);
-                            setPreviewHref(null);
-                          }}
-                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary-deep"
-                        >
-                          {dict.navbar.viewAll}
-                          <svg
-                            className={`h-3 w-3 ${isRtlLocale ? "rotate-180" : ""}`}
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2.5}
-                            stroke="currentColor"
+                      {menuShowsViewAll(menu) ? (
+                        <div className="mt-4 border-t border-gray-100 pt-3">
+                          <Link
+                            href={`/${locale}${menuViewAllHref(menu)}`}
+                            onClick={() => {
+                              setOpenMenu(null);
+                              setPreviewHref(null);
+                            }}
+                            className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary-deep"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                          </svg>
-                        </Link>
-                      </div>
+                            {dict.navbar.viewAll}
+                            <svg
+                              className={`h-3 w-3 ${isRtlLocale ? "rotate-180" : ""}`}
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={2.5}
+                              stroke="currentColor"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                          </Link>
+                        </div>
+                      ) : null}
                     </div>
 
                     {menuHasImagePreview(menu) &&
@@ -535,6 +562,7 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                           menu.links.find((x) => x.image) ??
                           null;
                         if (!preview?.image) return null;
+                        const previewPng = /\.png(\?|#|$)/i.test(preview.image);
                         return (
                           <div className="w-56 min-w-0 shrink-0 border-s border-gray-100 bg-gray-50 p-5">
                             <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.15em] text-secondary/30">
@@ -554,7 +582,8 @@ export function Navbar({ locale, dict }: { locale: string; dict: CommonDict }) {
                                   src={preview.image}
                                   alt={preview.label}
                                   fill
-                                  className="object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+                                  unoptimized={previewPng}
+                                  className="object-contain object-center p-4 transition-transform duration-500 group-hover:scale-110"
                                   sizes="200px"
                                 />
                               </div>

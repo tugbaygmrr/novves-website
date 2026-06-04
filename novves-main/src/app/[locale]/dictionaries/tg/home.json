@@ -4,19 +4,31 @@
     "items": [
       {
         "a": "NOVVES истихроҷи дуд, вентилятсияи бароҳат ва идоракунии ҳавои саноатиро дар доираи васеи минтақаҳо, аз қабили таваққуфгоҳҳо, нақбҳо, марказҳои савдо, беморхонаҳо, меҳмонхонаҳо, иншооти саноатӣ, гармхонаҳо, нерӯгоҳҳо ва манзилҳо пешниҳод мекунад.",
-        "q": "NOVVES ба кадом бахшҳо хизмат мерасонад?"
+        "q": "NOVVES ба кадом бахшҳо хизмат мерасонад?",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "a": "Маҳсулоти мо мувофиқи стандартҳои EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE ва ATEX истеҳсол ва дар лабораторияҳои аккредитатсияшуда санҷида мешаванд.",
-        "q": "Маҳсулоти шумо ба кадом стандартҳо мувофиқат мекунад?"
+        "q": "Маҳсулоти шумо ба кадом стандартҳо мувофиқат мекунад?",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "a": "Бале, барои ҳар як лоиҳа, мо паҳншавии дуд, ҳарорат, консентратсияи CO ва намоёнро бо симулятсияи 3D CFD таҳлил мекунем ва ҷойгиркунии мухлиси реактивиро оптимизатсия мекунем.",
-        "q": "Оё шумо хидматҳои таҳлили CFD пешниҳод мекунед?"
+        "q": "Оё шумо хидматҳои таҳлили CFD пешниҳод мекунед?",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "a": "Мо дастгирии пурраи пас аз фурӯшро бо ба истифода додан, нигоҳдории давравӣ, таъминоти қисмҳои эҳтиётӣ ва хидмати техникии шабонарӯзӣ пешкаш мекунем.",
-        "q": "Оё шумо дастгирии пас аз фурӯш пешниҳод мекунед?"
+        "q": "Оё шумо дастгирии пас аз фурӯш пешниҳод мекунед?",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "Оё интихоби бодрезаи махсуси лоиҳавӣ ва тарҳрезии система анҷом медиҳед?",
@@ -40,71 +52,49 @@
         "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
     ],
-    "title": "Саволҳои зуд-зуд додашаванда"
+    "title": "Саволҳои зуд-зуд додашаванда",
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "Барои лоиҳаи шумо",
     "desc": "Барои кашф, таҳлили CFD, банақшагирии лоиҳа ва равандҳои тендер фавран бо дастаи муҳандисии коршиноси мо тамос гиред.",
     "title": "Оё шумо роҳи ҳалли вентилятсияро меҷӯед?",
-    "requestQuote": "Иқтибосро дархост кунед"
+    "requestQuote": "Иқтибосро дархост кунед",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pillars": [
     {
       "tag": "муҳандисӣ ва тарроҳӣ",
       "intro": "Раванди мо аз таҳлили мушкилот оғоз мешавад, на маҳсулот. Муҳандиси барои NOVVES; Ин на танҳо дар бораи интихоби мухлис, балки ба таври математикӣ пешгӯии сафари дуд ва гармӣ дар дохили сохтор аст.",
-      "items": [
-        {
-          "desc": "Мо сенарияҳои сӯхторро дар муҳити рақамӣ тақлид мекунем ва кори системаро пеш аз насб исбот мекунем.",
-          "label": "Симуляцияҳои CFD"
-        },
-        {
-          "desc": "Бо суръати ҷараён ва ҳисобҳои фишор, ки ба ҳар як сохтор хос аст, мо аз хароҷоти \"муҳандисии ҷудогона\" канорагирӣ мекунем ва ба самаранокии беҳтарин ноил мешавем.",
-          "label": "Ҳисобкунии дақиқ"
-        },
-        {
-          "desc": "Мо махсулоте истехсол мекунем, ки ба нишондодхои техникй комилан мувофиканд.",
-          "label": "Самти лоиҳа"
-        }
-      ],
-      "title": "Дугоникҳои рақамии зеҳни таҳлилӣ"
+      "items": [],
+      "title": "Дугоникҳои рақамии зеҳни таҳлилӣ",
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "ИСТЕХСОЛ ВА СИФАТ",
       "intro": "Ҳар як маълумоте, ки дар марҳилаи тарҳрезӣ тасдиқ карда шудааст, дар иншооти истеҳсолии мо ба қувваи ҷисмонӣ табдил меёбад. Бо омезиши экосистемаи муҳандисӣ бо технологияҳои муосири истеҳсолӣ, мо маржаи хатогиҳоро ба сифр кам мекунем.",
-      "items": [
-        {
-          "desc": "Ҳар як вентилятор ва дампере, ки мо истеҳсол мекунем, аз ҷониби лабораторияҳои аккредитатсияшуда мувофиқи стандартҳои байналмилалии муқовимат ба оташ ба монанди EN 12101-3 санҷида мешавад.",
-          "label": "Қувваи сертификатсияшуда"
-        },
-        {
-          "desc": "Мо бо таҳаммулпазирии миллиметрӣ дар ҳар марҳила кор мекунем, аз буридани лазерӣ то санҷишҳои тавозуни динамикӣ.",
-          "label": "Истеҳсоли дақиқ"
-        },
-        {
-          "desc": "Мо давраи ҳаёти системаро бо ашёи хоми дарозмуддат, ба зангзанӣ тобовар ва каммасраф ба ҳадди аксар афзоиш медиҳем.",
-          "label": "Маводи устувор"
-        }
-      ],
-      "title": "Ҳунар аз стандартҳо"
+      "items": [],
+      "title": "Ҳунар аз стандартҳо",
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "НАСБ ВА БАРНОМА",
       "intro": "Беҳтарин маҳсулот танҳо вақте ки он ба таври оптималӣ муттаҳид карда шудааст, ҳаётро наҷот медиҳад. Звенои охирини инноватсионии мо дар он аст, ки система бо системаи асаби бино комилан ҳамоҳанг кор мекунад.",
-      "items": [
-        {
-          "desc": "Бо пешниҳоди роҳнамоии техникӣ дар марҳилаи васлкунӣ, мо кафолат медиҳем, ки система дар лоиҳа дуруст ҷойгир карда шудааст.",
-          "label": "Назорати саҳроӣ"
-        },
-        {
-          "desc": "Мо вақти вокуниш ва қобилияти эвакуатсияи системаро дар саҳро бо озмоишҳои дуди сард ва гарм тафтиш мекунем.",
-          "label": "Ба истифода гузоред"
-        },
-        {
-          "desc": "Мо кафолат медиҳем, ки мухлисони реактивӣ ва амортизаторҳо дар тӯли миллисонияҳо бо системаҳои ошкоркунии сӯхтор ҳамоҳанг карда мешаванд.",
-          "label": "Интегратсияи автоматикунонии интеллектуалӣ"
-        }
-      ],
-      "title": "Фаъолияти бенуқсон дар саҳро"
+      "items": [],
+      "title": "Фаъолияти бенуқсон дар саҳро",
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -248,7 +238,14 @@
     "scrollVideoSideLabel": "Вентилятсияи парки мошин",
     "engineeringAlt1": "Истеҳсоли дақиқ дар варақ бо буридани лазерии NOVVES CNC",
     "engineeringAlt2": "NOVVES насб ва дахолати техникӣ дар саҳро",
-    "pillarsFallbackTitle": "Фаҳмиши мо дар бораи муҳандисӣ"
+    "pillarsFallbackTitle": "Фаҳмиши мо дар бораи муҳандисӣ",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
+    "catalogCardCta": "View"
   },
   "solutionCarouselByHref": {
     "/cozumler/duman-isi-tahliye-sistemleri": {
@@ -319,17 +316,20 @@
     {
       "title": "Каталоги маҳсулот",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "Варақаҳои техникӣ",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "Архив варақаи маълумот",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "certificatePreview": [
@@ -373,17 +373,29 @@
     {
       "title": "Анбори 2M Logistics Gebze",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S Kale Topaz Zeytinburnu",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "Беморхонаи 100 кати Адана Юрегир",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "Иншооти саноатӣ",

@@ -246,7 +246,7 @@ export function SolutionDetailPillarClient({
 
                 <nav className="flex-1 overflow-y-auto px-2 py-3">
                   <Link
-                    href={`/${locale}/cozumler`}
+                    href={`/${locale}/cozumler/duman-isi-tahliye-sistemleri`}
                     className="mb-1 flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-[14px] font-medium uppercase tracking-[0.14em] text-white/80 transition-colors hover:bg-white/[0.06] hover:text-white"
                   >
                     <span className="grid h-4 w-4 grid-cols-2 gap-[2px]">
@@ -317,7 +317,7 @@ export function SolutionDetailPillarClient({
                   className="flex cursor-grab select-none items-center gap-2 overflow-x-auto px-4 py-3 active:cursor-grabbing sm:px-6 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
                 >
                   <Link
-                    href={`/${locale}/cozumler`}
+                    href={`/${locale}/cozumler/duman-isi-tahliye-sistemleri`}
                     className="flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.04] px-3 py-1.5 text-[12px] font-medium uppercase tracking-[0.1em] text-white/85 transition-colors hover:border-primary/40 hover:text-white"
                   >
                     <span className="grid h-3 w-3 grid-cols-2 gap-[1.5px]">
@@ -380,7 +380,7 @@ export function SolutionDetailPillarClient({
                       {jumpNavHomeLabel(locale as Locale)}
                     </Link>
                     <span className="text-white/55">/</span>
-                    <Link href={`/${locale}/cozumler`} className="transition-colors hover:text-primary">
+                    <Link href={`/${locale}/cozumler/duman-isi-tahliye-sistemleri`} className="transition-colors hover:text-primary">
                       {navLabel}
                     </Link>
                     <span className="text-white/55">/</span>

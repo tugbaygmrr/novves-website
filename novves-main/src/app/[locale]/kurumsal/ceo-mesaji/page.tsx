@@ -106,13 +106,17 @@ export default async function CeoMesaji({ params }: { params: Promise<{ locale: 
           <div className="grid items-start gap-8 md:gap-10 lg:grid-cols-[minmax(280px,38%)_1fr] lg:gap-12 xl:grid-cols-[minmax(300px,400px)_1fr] xl:gap-14">
             <aside className="flex w-full min-w-0 flex-col gap-4 sm:gap-5 md:gap-6 lg:sticky lg:top-28 lg:gap-6">
               <div className="w-full sm:mx-auto sm:max-w-[20rem] md:max-w-md lg:mx-0 lg:max-w-none">
-                <div className="w-full rounded-2xl border border-ink/10 bg-[#f8f5ed] p-3 shadow-[0_18px_40px_-28px_rgba(15,20,30,0.42)] sm:rounded-[2rem] sm:p-4">
+                <div className="group w-full rounded-2xl border border-ink/10 bg-[#f8f5ed] p-3 shadow-[0_18px_40px_-28px_rgba(15,20,30,0.42)] transition-all duration-500 hover:border-primary/25 hover:shadow-[0_34px_80px_-34px_rgba(239,95,23,0.34)] sm:rounded-[2rem] sm:p-4">
                   <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-[#eef1f4] sm:rounded-[1.5rem]">
+                    <div className="pointer-events-none absolute inset-0 z-10 opacity-0 transition-opacity duration-700 group-hover:opacity-100" aria-hidden>
+                      <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/15 blur-3xl" />
+                      <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-white/10" />
+                    </div>
                     <Image
                       src="/images/zeki-kadir-ozunturk.jpg"
                       alt={ceoName}
                       fill
-                      className="object-cover object-[center_12%] grayscale transition-all duration-700 hover:grayscale-0 sm:object-[center_18%]"
+                      className="object-cover object-[center_12%] saturate-[1.05] transition-all duration-700 group-hover:brightness-110 group-hover:saturate-[1.2] sm:object-[center_18%]"
                       sizes="(max-width: 1024px) 100vw, 400px"
                       priority
                     />

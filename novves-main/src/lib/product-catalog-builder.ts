@@ -8,9 +8,12 @@ import {
   CATEGORY_ENTITY_BRAND,
   CATEGORY_ENTITY_KEYS,
   CATALOG_FAMILY_META,
+  resolveCoolingCatalogImage,
 } from "@/lib/product-catalog-family-meta";
 import { getProductFamilyPageBlurb } from "@/lib/solution-product-blurb";
 import { resolvePublicImage } from "@/lib/resolve-public-image";
+import { getProductCatalogUi } from "@/lib/product-catalog-ui";
+import type { Locale } from "@/i18n/config";
 
 const BLOCK_SKIP_KEYS = new Set([
   "title",
@@ -112,7 +115,7 @@ function buildItem(
     getProductFamilyPageBlurb(productsDict, input.name, image) ||
     "";
 
-  const modelsLabel = locale === "tr" ? "model" : "models";
+  const modelsLabel = getProductCatalogUi(locale as Locale).modelsLabel;
 
   return {
     id: input.id,
@@ -146,7 +149,7 @@ function fromProductsArray(
       id: name,
       name,
       type: trim(p.type) || name,
-      image: trim(p.image) || meta?.image || "/images/products/marlin.png",
+      image: resolveCoolingCatalogImage(name, meta, trim(p.image)),
       description: trim(p.description),
       leafSlug: meta?.leafSlug,
       subModels: p.subModels,
@@ -173,7 +176,7 @@ function fromAccessories(
     return buildItem(locale, productsDict, {
       id: slugifyId(name),
       name,
-      type: locale === "tr" ? "Aksesuar" : "Accessory",
+      type: getProductCatalogUi(locale as Locale).accessoryType,
       image,
       description: trim(a.description),
       subModels: [],
@@ -282,18 +285,19 @@ function categorySubtitle(
 
 function defaultDocs(locale: string, title: string): Pick<ProductCatalogPageData, "catalogs" | "guides"> {
   const tc = `/${locale}/teknik-merkez/dokuman-kutuphanesi`;
+  const ui = getProductCatalogUi(locale as Locale);
   return {
     catalogs: [
       {
         id: "cat-cat",
-        title: locale === "tr" ? `${title} ürün kataloğu` : `${title} product catalog`,
+        title: ui.docCatalogTitle.replace("{name}", title),
         meta: "PDF",
         href: tc,
         kind: "catalog",
       },
       {
         id: "cat-gen",
-        title: locale === "tr" ? "NOVVES genel ürün kataloğu" : "NOVVES general product catalog",
+        title: ui.docGeneralCatalog,
         meta: "PDF",
         href: tc,
         kind: "catalog",
@@ -302,14 +306,14 @@ function defaultDocs(locale: string, title: string): Pick<ProductCatalogPageData
     guides: [
       {
         id: "g1",
-        title: locale === "tr" ? "Montaj ve bakım kılavuzu" : "Installation & maintenance manual",
+        title: ui.docInstallManual,
         meta: "Rev. 2024.2",
         href: tc,
         kind: "guide",
       },
       {
         id: "g2",
-        title: locale === "tr" ? "Teknik veri föyleri" : "Technical datasheets",
+        title: ui.docDatasheets,
         meta: "PDF",
         href: tc,
         kind: "guide",
@@ -341,7 +345,7 @@ export function buildProductCatalogPage(
     categorySlug,
     breadcrumbCategory: categoryLabels[categoryKey] ?? title,
     pageTitle: `${title.toLocaleUpperCase(locale === "tr" ? "tr-TR" : "en-US")} ${
-      locale === "tr" ? "ürünleri" : "products"
+      getProductCatalogUi(locale as Locale).pageProductsSuffix
     }`,
     pageSubtitle: categorySubtitle(locale, obj, title),
     categories: buildProductCatalogCategories(locale, categoryLabels, categorySlug),

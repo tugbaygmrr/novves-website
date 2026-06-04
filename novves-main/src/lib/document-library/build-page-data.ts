@@ -14,6 +14,7 @@ type RawDoc = {
   criticalTitle?: boolean;
   treeCategory?: string;
   fileFormat?: string;
+  downloadHref?: string;
   revision?: string;
   lastModified?: string;
 };
@@ -33,6 +34,11 @@ const PREVIEW_BY_DOC_ID: Record<string, string> = {
   "web-24-05": "/images/products/nautilus-cif-cidarli.jpg",
   "ql-pro10": "/images/products/marlin.png",
   "el-2024": "/images/products/dragonfly-c.png",
+  "novves-company-profile": "/images/corporate/novves-logo-sloganli.png",
+  "novves-biyomimetik-catalog": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+  "novves-duman-tahliye-catalog": "/images/catalogs/dumantahliye-mockup.png",
+  "novves-certificates-catalog": "/images/certificates/bsi9001.png",
+  "novves-references-catalog": "/images/corporate/novves-buyume-bina.png",
 };
 
 export function buildDocumentLibraryTree(ui: DocumentLibraryUi): DocumentLibraryTreeNode[] {
@@ -81,7 +87,75 @@ export function buildDocumentLibraryTree(ui: DocumentLibraryUi): DocumentLibrary
 }
 
 export function buildDocumentLibraryPageData(ui: DocumentLibraryUi, dict: LibraryDict) {
-  const documents: DocumentLibraryItem[] = dict.documents.map((d) => ({
+  const sharedDocuments: RawDoc[] = [
+    {
+      id: "novves-references-catalog",
+      category: ui.sidebar.tree.catalogs,
+      code: "CAT-NV-REF-2026",
+      title: "NOVVES Referans Kataloğu",
+      status: "active",
+      highlight: true,
+      treeCategory: ui.sidebar.tree.catalogs,
+      fileFormat: "PDF Katalog",
+      revision: "B / 2026",
+      lastModified: "25 May 2026",
+      downloadHref: "/documents/novves-referans-katalogu.pdf",
+    },
+    {
+      id: "novves-biyomimetik-catalog",
+      category: ui.sidebar.tree.catalogs,
+      code: "CAT-NV-BIO-2026",
+      title: "NOVVES Biyomimetik Ürün Kataloğu",
+      status: "active",
+      highlight: true,
+      treeCategory: ui.sidebar.tree.catalogs,
+      fileFormat: "PDF Katalog",
+      revision: "B / 2026",
+      lastModified: "25 May 2026",
+      downloadHref: "/documents/novves-biyomimetik-katalog.pdf",
+    },
+    {
+      id: "novves-duman-tahliye-catalog",
+      category: ui.sidebar.tree.catalogs,
+      code: "CAT-NV-SMOKE-2026",
+      title: "NOVVES Duman Tahliye Kataloğu",
+      status: "active",
+      highlight: true,
+      treeCategory: ui.sidebar.tree.catalogs,
+      fileFormat: "PDF Katalog",
+      revision: "B / 2026",
+      lastModified: "25 May 2026",
+      downloadHref: "/documents/novves-duman-tahliye-katalog.pdf",
+    },
+    {
+      id: "novves-company-profile",
+      category: ui.sidebar.tree.catalogs,
+      code: "CAT-NV-PROFILE-2026",
+      title: "NOVVES Şirket Profili Kataloğu",
+      status: "active",
+      highlight: true,
+      treeCategory: ui.sidebar.tree.catalogs,
+      fileFormat: "PDF Katalog",
+      revision: "2026",
+      lastModified: "25 May 2026",
+      downloadHref: "/documents/novves-sirket-profili.pdf",
+    },
+    {
+      id: "novves-certificates-catalog",
+      category: ui.sidebar.tree.certifications,
+      code: "CAT-NV-CERT-2026",
+      title: "NOVVES Sertifikalar Kataloğu",
+      status: "approved",
+      highlight: true,
+      treeCategory: ui.sidebar.tree.certifications,
+      fileFormat: "PDF Katalog",
+      revision: "B / 2026",
+      lastModified: "25 May 2026",
+      downloadHref: "/documents/novves-sertifikalar-katalogu.pdf",
+    },
+  ];
+
+  const documents: DocumentLibraryItem[] = [...sharedDocuments, ...dict.documents].map((d) => ({
     ...d,
     fileFormat: d.fileFormat ?? "PDF / CAD",
     revision: d.revision ?? "v2.4.1",

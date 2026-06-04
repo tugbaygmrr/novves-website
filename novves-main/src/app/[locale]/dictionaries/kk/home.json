@@ -4,19 +4,31 @@
     "items": [
       {
         "a": "NOVVES автотұрақтар, туннельдер, сауда орталықтары, ауруханалар, қонақ үйлер, өнеркәсіптік нысандар, жылыжайлар, электр станциялары және тұрғын үйлер сияқты кең ауқымда түтін шығару, жайлы желдету және өнеркәсіптік ауаны басқару шешімдерін ұсынады.",
-        "q": "NOVVES қай секторларға қызмет көрсетеді?"
+        "q": "NOVVES қай секторларға қызмет көрсетеді?",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "a": "Біздің өнімдер EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE және ATEX стандарттарына сәйкес шығарылады және аккредиттелген зертханаларда сыналады.",
-        "q": "Сіздің өнімдеріңіз қандай стандарттарға сәйкес келеді?"
+        "q": "Сіздің өнімдеріңіз қандай стандарттарға сәйкес келеді?",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "a": "Иә, әрбір жоба үшін біз 3D CFD модельдеуімен түтіннің таралуын, температурасын, СО концентрациясын және көрінуді талдаймыз және реактивті желдеткіштің орналасуын оңтайландырамыз.",
-        "q": "Сіз CFD талдау қызметтерін ұсынасыз ба?"
+        "q": "Сіз CFD талдау қызметтерін ұсынасыз ба?",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "a": "Біз іске қосу, мерзімді техникалық қызмет көрсету, қосалқы бөлшектерді жеткізу және тәулік бойы техникалық қызмет көрсету арқылы сатылымнан кейінгі толық қолдау көрсетеміз.",
-        "q": "Сіз сатудан кейінгі қолдауды ұсынасыз ба?"
+        "q": "Сіз сатудан кейінгі қолдауды ұсынасыз ба?",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "Жобаға арнайы желдеткіш таңдау және жүйе жобалау жасайсыз ба?",
@@ -40,71 +52,49 @@
         "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
     ],
-    "title": "Жиі қойылатын сұрақтар"
+    "title": "Жиі қойылатын сұрақтар",
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "Сіздің жобаңыз үшін",
     "desc": "Ашу, CFD талдауы, жобаны жоспарлау және тендерлік үдерістер үшін біздің сарапшы инженерлік топқа дереу хабарласыңыз.",
     "title": "Сіз желдету шешімін іздеп жүрсіз бе?",
-    "requestQuote": "Баға сұрау"
+    "requestQuote": "Баға сұрау",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pillars": [
     {
       "tag": "ТЕХНИКАЛЫҚ ЖӘНЕ ДИЗАЙН",
       "intro": "Біздің процесс өнім емес, мәселені талдаудан басталады. NOVVES үшін инженерия; Бұл желдеткішті таңдау ғана емес, сонымен қатар құрылымдағы түтін мен жылудың саяхатын математикалық түрде болжау.",
-      "items": [
-        {
-          "desc": "Біз сандық ортада өрт сценарийлерін имитациялаймыз және орнату алдында жүйенің өнімділігін дәлелдейміз.",
-          "label": "CFD симуляциялары"
-        },
-        {
-          "desc": "Әрбір құрылымға тән ағын жылдамдығы мен қысымды есептеу арқылы біз «жеке инженерлік» шығындардан аулақ боламыз және оңтайлы тиімділікке қол жеткіземіз.",
-          "label": "Дәлдік есептеу"
-        },
-        {
-          "desc": "Біз техникалық шарттарға толық сәйкес келетін өнімдерді шығарамыз.",
-          "label": "Жобаға бағдарлану"
-        }
-      ],
-      "title": "Аналитикалық интеллекттің цифрлық егізі"
+      "items": [],
+      "title": "Аналитикалық интеллекттің цифрлық егізі",
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "ӨНДІРІС ЖӘНЕ САПА",
       "intro": "Жобалау кезеңінде бекітілген әрбір деректер біздің өндіріс орындарында физикалық күшке айналады. Инженерлік экожүйені заманауи өндіріс технологияларымен үйлестіре отырып, біз қателік шегін нөлге дейін азайтамыз.",
-      "items": [
-        {
-          "desc": "Біз шығаратын әрбір желдеткіш пен демпфер EN 12101-3 сияқты халықаралық отқа төзімділік стандарттарына сәйкес аккредиттелген зертханаларда сыналады.",
-          "label": "Сертификатталған қуат"
-        },
-        {
-          "desc": "Біз лазерлік кесуден динамикалық тепе-теңдік сынақтарына дейін әрбір кезеңде миллиметрлік рұқсаттармен жұмыс істейміз.",
-          "label": "Дәлдік өндіріс"
-        },
-        {
-          "desc": "Біз ұзаққа созылатын, коррозияға төзімді және энергияны үнемдейтін шикізат арқылы жүйенің өмірлік циклін барынша арттырамыз.",
-          "label": "Тұрақты материал"
-        }
-      ],
-      "title": "Стандарттардан тыс қолөнер"
+      "items": [],
+      "title": "Стандарттардан тыс қолөнер",
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "ОРНАТУ ЖӘНЕ ҚОЛДАНУ",
       "intro": "Ең жақсы өнім оңтайлы біріктірілгенде ғана өмірді сақтайды. Біздің инновациямыздың соңғы буыны - бұл жүйе ғимараттың жүйке жүйесімен тамаша үйлесімде жұмыс істейді.",
-      "items": [
-        {
-          "desc": "Құрастыру кезеңінде техникалық нұсқаулар бере отырып, біз жүйенің жобадағыдай дұрыс орналасуын қамтамасыз етеміз.",
-          "label": "Далалық қадағалау"
-        },
-        {
-          "desc": "Біз далада суық және ыстық түтін сынақтары арқылы жүйенің жауап беру уақыты мен эвакуациялау мүмкіндігін тексереміз.",
-          "label": "Қолдануға салыңыз"
-        },
-        {
-          "desc": "Біз реактивті желдеткіштер мен демпферлердің өртті анықтау жүйелерімен миллисекунд ішінде синхрондалуын қамтамасыз етеміз.",
-          "label": "Интеллектуалды автоматтандыру интеграциясы"
-        }
-      ],
-      "title": "Даладағы мінсіз өнімділік"
+      "items": [],
+      "title": "Даладағы мінсіз өнімділік",
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -248,7 +238,14 @@
     "scrollVideoSideLabel": "Автокөлік тұрағын желдету",
     "engineeringAlt1": "NOVVES CNC лазерлік кесу арқылы қаңылтырда дәлдікпен өндіру",
     "engineeringAlt2": "NOVVES орнату және далаға техникалық араласу",
-    "pillarsFallbackTitle": "Біздің инженерия туралы түсінігіміз"
+    "pillarsFallbackTitle": "Біздің инженерия туралы түсінігіміз",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
+    "catalogCardCta": "View"
   },
   "solutionCarouselByHref": {
     "/cozumler/duman-isi-tahliye-sistemleri": {
@@ -319,17 +316,20 @@
     {
       "title": "Өнім каталогы",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "Техникалық парақшалар",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "Деректер парағының мұрағаты",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "certificatePreview": [
@@ -373,17 +373,29 @@
     {
       "title": "2M Logistics Gebze қоймасы",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S Kale Topaz Zeytinburnu",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "Adana Yüreğir 100 төсектік аурухана",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "Өнеркәсіптік нысандар",

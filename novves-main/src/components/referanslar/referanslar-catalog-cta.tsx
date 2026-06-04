@@ -15,6 +15,8 @@ type Props = {
   locale: string;
   dict: ReferanslarCatalogCtaDict;
   catalogHref?: string;
+  /** Doğrudan PDF indirme (varsa buton bu dosyayı açar) */
+  catalogDownloadHref?: string;
   className?: string;
 };
 
@@ -22,6 +24,7 @@ export function ReferanslarCatalogCta({
   locale,
   dict,
   catalogHref = `/${locale}/teknik-merkez/dokuman-kutuphanesi`,
+  catalogDownloadHref = "/documents/novves-referans-katalogu.pdf",
   className = "",
 }: Props) {
   return (
@@ -39,12 +42,19 @@ export function ReferanslarCatalogCta({
               className="referanslar-float-catalog mx-auto h-auto w-full max-w-[240px] drop-shadow-[0_28px_28px_rgba(0,0,0,0.45)] sm:max-w-[280px]"
             />
           </div>
-          <Link
-            href={catalogHref}
+          <a
+            href={catalogDownloadHref}
+            download
             className="flex w-full items-center justify-center gap-3 rounded-2xl bg-hz-secondary-container py-4 text-base font-black text-hz-on-primary transition-opacity hover:opacity-90 sm:py-5 sm:text-lg"
           >
             {dict.button}
             <span className="material-symbols-outlined text-xl">download</span>
+          </a>
+          <Link
+            href={catalogHref}
+            className="mt-3 block text-center text-xs font-semibold text-white/70 underline-offset-2 hover:text-white hover:underline"
+          >
+            {locale === "tr" ? "Doküman kütüphanesi" : "Document library"}
           </Link>
           <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-8">
             <div className="flex items-center gap-4">

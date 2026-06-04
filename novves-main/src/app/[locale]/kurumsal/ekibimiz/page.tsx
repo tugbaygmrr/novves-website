@@ -76,6 +76,9 @@ function LeaderCard({ member, index }: { member: Leader; index: number }) {
           {String(index + 1).padStart(2, "0")}
         </span>
       </div>
+      <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100" aria-hidden>
+        <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/15 blur-3xl" />
+      </div>
       <div className="relative z-10 flex flex-col items-center gap-6 sm:gap-8 md:flex-row md:items-start md:gap-10">
         <div className="relative shrink-0">
           <div className="absolute -inset-2 animate-pulse rounded-full border border-primary/20 sm:-inset-3" aria-hidden />
@@ -84,7 +87,7 @@ function LeaderCard({ member, index }: { member: Leader; index: number }) {
               src={member.image}
               alt={member.name}
               fill
-              className="rounded-full object-cover object-top grayscale transition-all duration-700 group-hover:grayscale-0"
+              className="rounded-full object-cover object-top saturate-[1.05] transition-all duration-700 group-hover:brightness-110 group-hover:saturate-[1.2]"
               sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, 256px"
             />
           </div>
@@ -131,8 +134,11 @@ function DetailMemberCard({
   profileDetailLabel: string;
 }) {
   return (
-    <div className="group relative overflow-hidden border border-ink/10 bg-white p-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] sm:p-8 md:p-10">
+    <div className="group relative overflow-hidden border border-ink/10 bg-white p-5 transition-all duration-500 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_40px_90px_-28px_rgba(239,95,23,0.26)] sm:p-8 md:p-10">
       <div className="absolute left-0 top-0 h-0.5 w-full origin-left scale-x-0 bg-primary transition-transform duration-500 group-hover:scale-x-100" />
+      <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100" aria-hidden>
+        <div className="absolute -top-20 left-1/2 h-44 w-44 -translate-x-1/2 rounded-full bg-primary/12 blur-3xl" />
+      </div>
       <div className="flex flex-col items-center text-center">
         <div className="relative mb-5 sm:mb-8">
           <div className="relative h-28 w-28 overflow-hidden sm:h-36 sm:w-36 md:h-40 md:w-40">
@@ -140,7 +146,7 @@ function DetailMemberCard({
               src={member.image}
               alt={member.name}
               fill
-              className="object-cover object-top grayscale transition-all duration-700 group-hover:grayscale-0"
+              className="object-cover object-top saturate-[1.05] transition-all duration-700 group-hover:brightness-110 group-hover:saturate-[1.2]"
               sizes="(max-width: 640px) 112px, 160px"
             />
           </div>
@@ -177,15 +183,18 @@ function ContactMemberCard({
   phoneAriaLabel: string;
 }) {
   return (
-    <div className="group relative overflow-hidden border border-ink/10 bg-white p-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] sm:p-8 md:p-10">
+    <div className="group relative overflow-hidden border border-ink/10 bg-white p-5 transition-all duration-500 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_40px_90px_-28px_rgba(239,95,23,0.26)] sm:p-8 md:p-10">
       <div className="absolute right-0 top-0 h-0.5 w-0 origin-right bg-primary transition-all duration-500 group-hover:w-full" />
+      <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100" aria-hidden>
+        <div className="absolute -top-20 left-1/2 h-44 w-44 -translate-x-1/2 rounded-full bg-primary/12 blur-3xl" />
+      </div>
       <div className="flex flex-col items-center text-center">
         <div className="relative mb-5 h-28 w-28 overflow-hidden sm:mb-8 sm:h-36 sm:w-36 md:h-40 md:w-40">
           <Image
             src={member.image}
             alt={member.name}
             fill
-            className="object-cover object-top grayscale transition-all duration-700 group-hover:grayscale-0"
+            className="object-cover object-top saturate-[1.05] transition-all duration-700 group-hover:brightness-110 group-hover:saturate-[1.2]"
             sizes="(max-width: 640px) 112px, 160px"
           />
         </div>

@@ -42,7 +42,7 @@ export default async function CO2({ params }: { params: Promise<{ locale: string
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-start gap-5 rounded-2xl border border-ink/10 bg-white/80 p-4 shadow-[0_14px_38px_-30px_rgba(15,20,30,0.25)] md:grid-cols-[minmax(220px,300px),1fr] sm:p-5">
           <div className="relative overflow-hidden rounded-lg border border-ink/10 bg-transparent">
-            <Image src="/images/co2-emisyonu-custom.png" alt={t.sectionTitle} width={600} height={400} className="h-[170px] w-full object-cover sm:h-[190px]" priority />
+            <Image src="/images/co2-emisyonu-custom.png" alt={t.sectionTitle} width={600} height={400} className="h-[170px] w-full object-cover sm:h-[190px]" loading="lazy" />
           </div>
           <div className="flex-1 space-y-5">
             <h2 className="font-display text-card font-bold text-dark">

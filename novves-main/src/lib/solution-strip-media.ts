@@ -27,7 +27,7 @@ export const solutionStripPageProductMedia: Record<string, SolutionStripPageMedi
     hero: "/images/solutions/hayvancilik-card-hero.png?v=2",
     thumbnails: [
       "/images/products/chicken.png",
-      "/images/products/owl-cer.png",
+      "/images/products/owl-rer.jpg",
       "/images/products/heron-rv.png",
       "/images/products/marlin.png",
       "/images/products/alpaca-am.png",
@@ -37,7 +37,7 @@ export const solutionStripPageProductMedia: Record<string, SolutionStripPageMedi
   "/cozumler/sera-tarimsal-havalandirma-sistemleri": {
     hero: "/images/solutions/sera-tarimsal-card-hero.png?v=1",
     thumbnails: [
-      "/images/products/owl-cer.png",
+      "/images/products/owl-rer.jpg",
       "/images/products/marlin.png",
       "/images/products/heron-rv.png",
       "/images/products/turtle-a.png",
@@ -95,7 +95,7 @@ export const solutionStripPageProductMedia: Record<string, SolutionStripPageMedi
       "/images/products/nautilus-cif-cidarli.png",
       "/images/products/marlin.png",
       "/images/products/heron-rv.png",
-      "/images/products/owl-cer.png",
+      "/images/products/owl-rer.jpg",
       "/images/products/koi-cb.png",
       "/images/products/basinclandirma-kontrol-panosu.png",
     ],
@@ -103,7 +103,7 @@ export const solutionStripPageProductMedia: Record<string, SolutionStripPageMedi
   "/cozumler/trafo-enerji-odalari-fanlari": {
     hero: "/images/solutions/trafo-enerji-odalari-card-hero.png?v=1",
     thumbnails: [
-      "/images/products/owl-cer.png",
+      "/images/products/owl-rer.jpg",
       "/images/products/heron-rv.png",
       "/images/products/koi-cb.png",
       "/images/products/alpaca-am.png",

@@ -146,6 +146,9 @@ function heroDisplayStats(stats?: StartCard["stats"]) {
 }
 
 
+/** Hero MP4 kapak — lazy/preload öncesi boş siyah kutu olmasın */
+const DEFAULT_HERO_VIDEO_POSTER = "/images/hero/hero-poster.jpg";
+
 /** Masaüstü scroll animasyonu — tüm kareleri aynı anda yüklemek zayıf PC’lerde donmaya yol açar */
 const FRAME_LOAD_RADIUS = 15;
 const FRAME_EVICT_DISTANCE = 42;
@@ -633,11 +636,11 @@ export function ScrollVideoSection({
           <video
             ref={videoRef}
             src={videoSrc}
-            poster={mobileVideoReplacementSrc || undefined}
+            poster={mobileVideoReplacementSrc || DEFAULT_HERO_VIDEO_POSTER}
             aria-label={mobileVideoReplacementAlt || undefined}
             muted
             playsInline
-            preload="none"
+            preload="metadata"
             disablePictureInPicture
             disableRemotePlayback
             className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden] [contain:layout_paint]"
@@ -747,8 +750,10 @@ export function ScrollVideoSection({
               </div>
 
               <div className="relative z-20 flex w-full min-w-0 items-start gap-4 sm:items-center sm:gap-6 xl:gap-10">
-                <div className="min-w-0 flex-1 max-w-[min(560px,92vw)] pl-0 sm:max-w-[min(580px,52vw)] sm:pl-6 md:max-w-[min(660px,64vw)] lg:max-w-[min(580px,52vw)] lg:pl-10 xl:pl-14">
-                  <span className="inline-flex items-center gap-1.5 rounded-md bg-primary/[0.12] px-3 py-1.5 text-[11px] font-semibold tracking-[0.04em] text-primary sm:-mt-3 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-base">
+                <div className="relative min-w-0 flex-1 max-w-[min(560px,92vw)] pl-0 sm:max-w-[min(580px,52vw)] sm:pl-6 md:max-w-[min(660px,64vw)] lg:max-w-[min(580px,52vw)] lg:pl-10 xl:pl-14">
+                  <div className="pointer-events-none absolute -left-8 top-8 h-[14rem] w-[min(24rem,92vw)] rounded-full bg-white/75 blur-2xl md:hidden" aria-hidden />
+                  <div className="pointer-events-none absolute -left-8 top-8 hidden h-[17rem] w-[min(34rem,72vw)] rounded-full bg-white/58 blur-3xl md:block lg:hidden" aria-hidden />
+                  <span className="relative z-10 inline-flex items-center gap-1.5 rounded-md bg-primary/[0.12] px-3 py-1.5 text-[11px] font-semibold tracking-[0.04em] text-primary sm:-mt-3 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-base">
                     <span className="text-base leading-none font-semibold">+</span>
                     {startCard.badge}
                   </span>
@@ -757,7 +762,7 @@ export function ScrollVideoSection({
                     const lines = startCard.eyebrow.split(/\n/).map((s) => s.trim()).filter(Boolean).slice(0, 2);
                     return (
                       <h1
-                        className="relative mt-5 text-[clamp(2.35rem,8.8vw,3.9rem)] font-semibold leading-[1.02] tracking-[-0.02em] md:text-[clamp(4rem,7vw,4.7rem)] lg:text-[clamp(2.35rem,8.8vw,3.9rem)]"
+                        className="relative z-10 mt-5 text-[clamp(2.35rem,8.8vw,3.9rem)] font-semibold leading-[1.02] tracking-[-0.02em] md:text-[clamp(4rem,7vw,4.7rem)] lg:text-[clamp(2.35rem,8.8vw,3.9rem)]"
                         style={{
                           fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                           fontWeight: 600,
@@ -769,12 +774,12 @@ export function ScrollVideoSection({
                     );
                   })()}
 
-                  <p className="relative mt-4 max-w-[38ch] text-[15px] font-bold leading-[1.62] text-ink drop-shadow-[0_1px_0_rgba(244,244,234,0.9)] sm:mt-5 sm:max-w-[58ch] sm:text-[16.5px] sm:font-medium sm:leading-[1.7] sm:text-secondary sm:drop-shadow-none md:max-w-[54ch] md:text-[18px] lg:max-w-[58ch] lg:text-[16.5px]">
+                  <p className="relative z-10 mt-4 max-w-[34ch] text-[13px] font-bold leading-[1.58] text-[#25292c] drop-shadow-[0_1px_0_rgba(255,255,255,0.95)] sm:mt-5 sm:max-w-[58ch] sm:text-[16.5px] sm:font-medium sm:leading-[1.7] sm:text-secondary md:max-w-[54ch] md:text-[18px] lg:max-w-[58ch] lg:text-[16.5px] lg:drop-shadow-none">
                     {startCard.subtitle}
                   </p>
 
                   {(startCard.titleLine1 || startCard.titleLine2 || startCard.titleLine3) && (
-                    <ul className="relative mt-5 space-y-2.5 sm:mt-6 sm:space-y-3 md:mt-7 md:space-y-4 lg:mt-6 lg:space-y-3">
+                    <ul className="relative z-10 mt-5 space-y-2.5 sm:mt-6 sm:space-y-3 md:mt-7 md:space-y-4 lg:mt-6 lg:space-y-3">
                       {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
                         if (!raw) return null;
                         const label = raw.replace(/^[•·*—–-]\s*/u, "");
@@ -799,7 +804,7 @@ export function ScrollVideoSection({
                   )}
 
                   {locale && (startCard.ctaPrimary || startCard.ctaSecondary) && (
-                    <div className="relative mt-6 flex flex-wrap items-center gap-3 md:mt-8 md:gap-4 lg:mt-6 lg:gap-3">
+                    <div className="relative z-10 mt-6 flex flex-wrap items-center gap-3 md:mt-8 md:gap-4 lg:mt-6 lg:gap-3">
                       {startCard.ctaPrimary && (
                         <Link
                           href={`/${locale}/iletisim`}
@@ -811,7 +816,7 @@ export function ScrollVideoSection({
                       )}
                       {startCard.ctaSecondary && (
                         <Link
-                          href={`/${locale}/urunler`}
+                          href={`/${locale}/urunler/hava-hareketi`}
                           className="inline-flex items-center justify-center rounded-full border-2 border-primary bg-white px-6 py-3 text-sm font-semibold text-primary shadow-[0_10px_28px_-12px_rgba(239,95,23,0.5)] transition-colors duration-300 hover:bg-primary/5 hover:shadow-[0_12px_32px_-12px_rgba(239,95,23,0.62)] md:px-8 md:py-4 md:text-base lg:px-6 lg:py-3 lg:text-sm"
                           style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
                         >
@@ -994,7 +999,7 @@ export function ScrollVideoSection({
             style={{ opacity: 0, transform: "translate3d(0,24px,0)" }}
           >
             <Link
-              href={`/${locale ?? "tr"}${productHref ?? "/urunler"}`}
+              href={`/${locale ?? "tr"}${productHref ?? "/urunler/hava-hareketi"}`}
               className="block rounded-2xl border border-ink/10 bg-white/95 p-4 shadow-[0_18px_42px_-26px_rgba(21,26,33,0.35)] transition-transform duration-300 active:scale-[0.99]"
             >
               <div className="flex items-center justify-between">
@@ -1338,11 +1343,11 @@ function MobileScrollSection({
               <video
                 ref={mobileVideoRef}
                 src={videoSrc}
-                poster={mobileVideoReplacementSrc || "/images/hero/hero-poster.jpg"}
+                poster={mobileVideoReplacementSrc || DEFAULT_HERO_VIDEO_POSTER}
                 aria-label={mobileVideoReplacementAlt || undefined}
                 muted
                 playsInline
-                preload="auto"
+                preload="metadata"
                 disablePictureInPicture
                 disableRemotePlayback
                 onLoadedMetadata={(e) => {
@@ -1387,8 +1392,12 @@ function MobileScrollSection({
             {/* Arka plan overlay'leri — yumuşak normal gradient (lacivert maskleme yok) */}
             <div
               ref={mobileOverlayARef}
-              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,#f4f4ea_0%,#f4f4ea_52%,rgba(244,244,234,0.78)_70%,rgba(244,244,234,0)_100%)]"
+              className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(244,244,234,0.88)_0%,rgba(244,244,234,0.72)_48%,rgba(244,244,234,0.34)_76%,rgba(244,244,234,0)_100%)]"
               style={{ opacity: isMobileMotion ? 1 : overlayOpacity }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(244,244,234,0.72)_0%,rgba(244,244,234,0.38)_58%,rgba(244,244,234,0.08)_100%)]"
+              aria-hidden
             />
             <div
               ref={mobileOverlayBRef}
@@ -1408,7 +1417,8 @@ function MobileScrollSection({
                   transform: isMobileMotion ? "translateY(0px)" : `translateY(-${panelLift}px)`,
                 }}
               >
-                <span className="relative inline-flex items-center gap-1.5 rounded-md bg-primary/[0.12] px-3 py-1.5 text-[11px] font-semibold tracking-[0.04em] text-primary">
+                <div className="pointer-events-none absolute -left-5 -top-6 h-[calc(100%+2.5rem)] w-[min(28rem,92vw)] bg-[linear-gradient(90deg,rgba(244,244,234,0.98)_0%,rgba(244,244,234,0.9)_58%,rgba(244,244,234,0)_100%)] blur-[2px]" aria-hidden />
+                <span className="relative inline-flex items-center gap-1.5 rounded-md bg-primary/[0.12] px-2.5 py-1.5 text-[10px] font-semibold tracking-[0.035em] text-primary">
                   <span className="text-sm leading-none font-semibold">+</span>
                   {startCard.badge}
                 </span>
@@ -1419,12 +1429,12 @@ function MobileScrollSection({
                   const h1Style: CSSProperties = {
                     fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                     fontWeight: 600,
-                    fontSize: "clamp(2.1rem, 10vw, 3.25rem)",
+                    fontSize: "clamp(1.82rem, 8.8vw, 2.75rem)",
                     lineHeight: 1.02,
                     letterSpacing: "-0.02em",
                   };
                   return (
-                    <h1 className="relative mt-4 max-w-[11ch] text-balance" style={h1Style}>
+                    <h1 className="relative mt-3.5 max-w-[11ch] text-balance" style={h1Style}>
                       <span className="block text-primary">{lines[0]}</span>
                       {lines[1] ? <span className="block text-ink">{lines[1]}</span> : null}
                     </h1>
@@ -1433,20 +1443,20 @@ function MobileScrollSection({
 
                 {/* Liste — yuvarlak çerçeveli ikon + metin (tire yok) */}
                 {(startCard.titleLine1 || startCard.titleLine2 || startCard.titleLine3) && (
-                  <ul className="relative mt-5 space-y-2.5">
+                  <ul className="relative mt-4 space-y-2">
                     {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
                       if (!raw) return null;
                       const label = raw.replace(/^[—–-]\s*/u, "");
                       return (
                         <li key={i} className="flex items-center gap-3">
                           <span
-                            className="inline-flex h-6 w-6 shrink-0 items-center justify-center text-primary"
+                            className="inline-flex h-5 w-5 shrink-0 items-center justify-center text-primary"
                             aria-hidden
                           >
-                            <span className="h-5 w-5">{START_CARD_LIST_ICONS[i]}</span>
+                            <span className="h-[18px] w-[18px]">{START_CARD_LIST_ICONS[i]}</span>
                           </span>
                           <span
-                            className="text-[1rem] font-normal leading-[1.2] text-primary"
+                            className="text-[0.9rem] font-normal leading-[1.2] text-primary"
                             style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif', fontWeight: 400 }}
                           >
                             {label}
@@ -1458,7 +1468,7 @@ function MobileScrollSection({
                 )}
 
                 <p
-                  className="relative mt-5 max-w-[34ch] text-[0.95rem] leading-[1.65] text-secondary"
+                  className="relative mt-4 max-w-[31ch] rounded-2xl border border-ink/10 bg-[#f4f4ea] px-4 py-3 text-[0.84rem] font-bold leading-[1.58] text-[#2f3336] shadow-[0_18px_42px_-24px_rgba(15,20,30,0.45)]"
                   style={{ fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif' }}
                 >
                   {startCard.subtitle}
@@ -1477,7 +1487,7 @@ function MobileScrollSection({
                     )}
                     {startCard.ctaSecondary && (
                       <Link
-                        href={`/${locale}/urunler`}
+                        href={`/${locale}/urunler/hava-hareketi`}
                         className="inline-flex items-center justify-center rounded-full border-2 border-primary bg-white px-5 py-3 text-sm font-semibold text-primary shadow-[0_10px_28px_-12px_rgba(239,95,23,0.5)] transition-colors duration-300 hover:bg-primary/5"
                       >
                         {startCard.ctaSecondary}
@@ -1547,7 +1557,7 @@ function MobileScrollSection({
                     )}
                     {startCard.ctaSecondary && (
                       <Link
-                        href={`/${locale}/urunler`}
+                        href={`/${locale}/urunler/hava-hareketi`}
                         className="inline-flex flex-1 items-center justify-center rounded-full border-2 border-primary bg-white px-5 py-3 text-sm font-semibold text-primary shadow-[0_10px_28px_-12px_rgba(239,95,23,0.5)]"
                       >
                         {startCard.ctaSecondary}

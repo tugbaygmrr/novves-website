@@ -47,58 +47,25 @@
       "tag": "INŽINERIJA IR DIZAINAS",
       "title": "Skaitmeninis analitinio intelekto dvynys",
       "intro": "Mūsų procesas prasideda ne nuo produkto, o nuo problemos analizės. NOVVES inžinerija reiškia daugiau nei ventiliatoriaus pasirinkimą – tai reiškia matematiškai nuspėti dūmų ir šilumos elgesį konstrukcijoje.",
-      "items": [
-        {
-          "label": "CFD modeliavimas",
-          "desc": "Simuliuojame gaisro scenarijus skaitmeninėje aplinkoje, įrodydami sistemos veikimą prieš įdiegiant."
-        },
-        {
-          "label": "Tikslūs skaičiavimai",
-          "desc": "Atlikdami konkrečiam pastatui pritaikytus oro srauto ir slėgio skaičiavimus, išvengiame perteklinių inžinerinių išlaidų ir pasiekiame optimalų efektyvumą."
-        },
-        {
-          "label": "Į projektą orientuotas požiūris",
-          "desc": "Gaminame gaminius visiškai atitinkančius technines specifikacijas."
-        }
-      ]
+      "items": [],
+      "cta": "Explore the engineering process",
+      "href": "/hizmetler"
     },
     {
       "tag": "GAMYBA IR KOKYBĖ",
       "title": "Meistriškumas viršija standartus",
       "intro": "Kiekvienas projektavimo etape patvirtintas duomenų taškas paverčiamas fizine veikla mūsų gamybos įmonėse. Sujungę savo inžinerinę ekosistemą su šiuolaikinėmis gamybos technologijomis, paklaidą sumažiname iki nulio.",
-      "items": [
-        {
-          "label": "Sertifikuotas našumas",
-          "desc": "Kiekvienas mūsų gaminamas ventiliatorius ir sklendė yra patikrintas akredituotose laboratorijose pagal tarptautinius atsparumo ugniai standartus, tokius kaip EN 12101-3."
-        },
-        {
-          "label": "Tikslioji gamyba",
-          "desc": "Nuo pjovimo lazeriu iki dinaminio balanso testavimo – kiekviename etape dirbame su milimetriniais nuokrypiais."
-        },
-        {
-          "label": "Tvarios medžiagos",
-          "desc": "Mes maksimaliai padidiname sistemos gyvavimo ciklą naudodami patvarias, korozijai atsparias medžiagas, kurios pasižymi dideliu energijos vartojimo efektyvumu."
-        }
-      ]
+      "items": [],
+      "cta": "Discover our manufacturing strength",
+      "href": "/urunler/hava-hareketi"
     },
     {
       "tag": "MONTAVIMAS IR TAIKYMAS",
       "title": "Nepriekaištingas našumas vietoje",
       "intro": "Geriausias produktas gelbsti gyvybes tik tinkamai integruotas. Paskutinė mūsų inovacijų grandinės grandis yra užtikrinti, kad sistema veiktų sklandžiai suderinta su pastato infrastruktūra.",
-      "items": [
-        {
-          "label": "Svetainės priežiūra",
-          "desc": "Diegimo metu teikiame technines gaires, kad užtikrintume tinkamą sistemos padėtį, kaip suprojektuota."
-        },
-        {
-          "label": "Paleidimas eksploatuoti",
-          "desc": "Atlikdami šaltų ir karštų dūmų testus, patikriname sistemos reakcijos laiką ir ištraukimo pajėgumus vietoje."
-        },
-        {
-          "label": "Išmanioji automatikos integracija",
-          "desc": "Garantuojame reaktyvinių ventiliatorių ir sklendių sinchronizavimą su gaisro aptikimo sistemomis per milisekundes."
-        }
-      ]
+      "items": [],
+      "cta": "Explore field support",
+      "href": "/hizmetler"
     }
   ],
   "animation2": {
@@ -176,19 +143,31 @@
     "items": [
       {
         "q": "Kurias pramonės šakas aptarnauja NOVVES?",
-        "a": "NOVVES teikia dūmų šalinimo, komforto vėdinimo ir pramoninio oro valdymo sprendimus įvairiuose sektoriuose, įskaitant automobilių stovėjimo garažus, tunelius, prekybos centrus, ligonines, viešbučius, pramoninius objektus, šiltnamius, elektrines ir gyvenamuosius pastatus."
+        "a": "NOVVES teikia dūmų šalinimo, komforto vėdinimo ir pramoninio oro valdymo sprendimus įvairiuose sektoriuose, įskaitant automobilių stovėjimo garažus, tunelius, prekybos centrus, ligonines, viešbučius, pramoninius objektus, šiltnamius, elektrines ir gyvenamuosius pastatus.",
+        "linkHref": "/cozumler",
+        "linkLabel": "Explore all sector solutions →",
+        "linkAriaLabel": "Explore NOVVES ventilation and smoke extraction solutions for car parks, tunnels, industrial facilities and large-scale buildings."
       },
       {
         "q": "Kokius standartus atitinka jūsų gaminiai?",
-        "a": "Mūsų gaminiai gaminami laikantis EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE ir ATEX standartų, yra išbandyti akredituotose laboratorijose."
+        "a": "Mūsų gaminiai gaminami laikantis EN 12101-3, ISO 9001, ISO 14001, ISO 45001, CE ir ATEX standartų, yra išbandyti akredituotose laboratorijose.",
+        "linkHref": "/urunler/hava-hareketi",
+        "linkLabel": "Explore NOVVES product families →",
+        "linkAriaLabel": "Explore NOVVES product families including smoke exhaust fans, axial fans, jet fans, dampers, silencers and control panels."
       },
       {
         "q": "Ar teikiate CFD analizės paslaugas?",
-        "a": "Taip, kiekvienam projektui atliekame 3D CFD modeliavimą, kad analizuotume dūmų plitimą, temperatūrą, CO koncentraciją ir matomumo atstumą, optimizuodami reaktyvinių ventiliatorių išdėstymą."
+        "a": "Taip, kiekvienam projektui atliekame 3D CFD modeliavimą, kad analizuotume dūmų plitimą, temperatūrą, CO koncentraciją ir matomumo atstumą, optimizuodami reaktyvinių ventiliatorių išdėstymą.",
+        "linkHref": "/kurumsal/sertifikalar",
+        "linkLabel": "Explore our standards and certification approach →",
+        "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
       {
         "q": "Ar siūlote palaikymą po pardavimo?",
-        "a": "Teikiame visapusišką aptarnavimą po pardavimo, įskaitant paleidimą, periodinę techninę priežiūrą, atsarginių dalių tiekimą ir visą parą veikiančią techninę priežiūrą."
+        "a": "Teikiame visapusišką aptarnavimą po pardavimo, įskaitant paleidimą, periodinę techninę priežiūrą, atsarginių dalių tiekimą ir visą parą veikiančią techninę priežiūrą.",
+        "linkHref": "/hizmetler/cfd-analizi",
+        "linkLabel": "Explore our CFD-supported engineering process →",
+        "linkAriaLabel": "Explore NOVVES CFD-supported airflow, smoke movement, temperature distribution and fan placement analysis process."
       },
       {
         "q": "Ar teikiate projekto specifinį ventiliatoriaus parinkimą ir sistemos projektavimą?",
@@ -211,13 +190,24 @@
         "linkLabel": "Explore our after-sales support process →",
         "linkAriaLabel": "Explore NOVVES commissioning, technical documentation, spare parts, maintenance guidance and after-sales engineering support."
       }
-    ]
+    ],
+    "headline": "Transparency in Engineering Solutions.",
+    "desc": "The technical details most often asked about NOVVES industrial standards and our CFD analysis processes.",
+    "footerLinkHref": "/sss",
+    "footerLinkLabel": "View all frequently asked questions →",
+    "footerLinkAriaLabel": "View all frequently asked questions about NOVVES products, engineering services, standards, CFD analyses, after-sales support and project processes."
   },
   "finalCta": {
     "tag": "Jūsų projektui",
     "title": "Ieškote vėdinimo sprendimo?",
     "desc": "Susisiekite su mūsų ekspertų inžinierių komanda šiandien, jei norite atlikti svetainės tyrimus, CFD analizę, projektuoti ir pateikti citatas.",
-    "requestQuote": "Prašyti kainos pasiūlymo"
+    "requestQuote": "Prašyti kainos pasiūlymo",
+    "callBack": "Request a Call Back",
+    "stat1Label": "PRELIMINARY ASSESSMENT",
+    "stat1Value": "Within 2 Business Days",
+    "stat2Label": "GLOBAL SUPPORT",
+    "stat2Value": "Project Support in 30+ Countries",
+    "image": "/images/uretim.png"
   },
   "pageChrome": {
     "catalogsVertical": "Katalogai",
@@ -248,7 +238,14 @@
     "scrollVideoSideLabel": "Automobilių stovėjimo aikštelės vėdinimas",
     "engineeringAlt1": "NOVVES CNC pjovimo lazeriu precizinė gamyba ant lakštinio metalo",
     "engineeringAlt2": "NOVVES surinkimas vietoje ir techninis aptarnavimas",
-    "pillarsFallbackTitle": "Mūsų inžinerinis požiūris"
+    "pillarsFallbackTitle": "Mūsų inžinerinis požiūris",
+    "referenceStripVertical": "REFERENCES",
+    "referenceBySectorKicker": "BY SECTOR",
+    "referenceBySectorHeadline": "REFERENCES",
+    "referenceBySectorTitle": "REFERENCES BY SECTOR",
+    "referenceProjectWord": "projects",
+    "referenceExploreCta": "Explore",
+    "catalogCardCta": "View"
   },
   "solutionCarouselByHref": {
     "/cozumler/duman-isi-tahliye-sistemleri": {
@@ -319,34 +316,49 @@
     {
       "title": "Produktų katalogas",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png"
+      "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
+      "desc": "Explore the NOVVES range at a glance—series lines, sizing spans, and selection summaries."
     },
     {
       "title": "Techninės trumpikės",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/dumantahliye-mockup.png"
+      "image": "/images/catalogs/dumantahliye-mockup.png",
+      "desc": "DRAGONFLY and smoke & heat extraction product families — NOVVES catalog (May 2026, Rev. B)."
     },
     {
       "title": "Duomenų lapo archyvas",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
-      "image": "/images/catalogs/sirketprofili-mockup.png"
+      "image": "/images/catalogs/sirketprofili-mockup.png",
+      "desc": "Performance curves, acoustic and thrust data, type datasheets, and supporting approvals."
     }
   ],
   "referencePreview": [
     {
       "title": "2M Lojistik Gebze Depo",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/lojistik-2m-depo-hero.png?v=1"
+      "image": "/images/references/lojistik-2m-depo-hero.png?v=1",
+      "sector": "Healthcare Facilities",
+      "example": "Adana Yüreğir State Hospital",
+      "projectCount": "3",
+      "theme": "orange"
     },
     {
       "title": "3S Kale Topaz Zeytinburnu",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1"
+      "image": "/images/references/ticari-3s-kale-topaz-hero.png?v=1",
+      "sector": "Logistics & Warehousing",
+      "example": "2M Logistics Distribution Center",
+      "projectCount": "5",
+      "theme": "sky"
     },
     {
       "title": "Adana Yüreğir 100 Yataklı Hastane",
       "href": "/kurumsal/referanslar",
-      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1"
+      "image": "/images/references/saglik-kuruluslari-adana-hero.png?v=1",
+      "sector": "Commercial Buildings",
+      "example": "3S Kale Topaz Mall & Office Complex",
+      "projectCount": "8",
+      "theme": "emerald"
     },
     {
       "title": "Pramonės objektai",

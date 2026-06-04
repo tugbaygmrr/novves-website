@@ -19,7 +19,7 @@ import type {
 } from "@/lib/document-library/types";
 
 function TreeIcon({ name, className }: { name: DocumentLibraryTreeIcon; className?: string }) {
-  const iconClass = ["h-4", "w-4", "shrink-0", "block", "text-dark", className]
+  const iconClass = ["h-4", "w-4", "shrink-0", "block", className ?? "text-dark"]
     .filter(Boolean)
     .join(" ");
   const p = {
@@ -90,7 +90,7 @@ function TreeIcon({ name, className }: { name: DocumentLibraryTreeIcon; classNam
       );
     case "troubleshooting":
       return (
-        <svg {...p} className={[iconClass, "text-primary"].join(" ")}>
+        <svg {...p}>
           <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
         </svg>
       );
@@ -249,10 +249,10 @@ function TreeSection({
   const isTroubleshooting = node.variant === "troubleshooting";
   const isActive = node.filterCategory && activeFilter === node.filterCategory;
 
-  const rowClass = isTroubleshooting
-    ? "bg-primary/5 font-bold text-primary hover:bg-primary/10"
-    : isActive
-      ? "bg-sand-200/90 text-ink font-semibold"
+  const rowClass = isActive
+    ? "bg-primary/10 font-bold text-primary hover:bg-primary/15"
+    : isTroubleshooting
+      ? "font-semibold text-ink/80 hover:bg-primary/5 hover:text-primary"
       : "text-ink/80 hover:bg-sand-200/80";
 
   const handleSelect = () => {
@@ -278,7 +278,7 @@ function TreeSection({
         onClick={handleSelect}
         className={`flex w-full items-center justify-center rounded-lg p-2.5 transition-colors ${rowClass}`}
       >
-        {node.icon ? <TreeIcon name={node.icon} /> : null}
+        {node.icon ? <TreeIcon name={node.icon} className={isActive ? "text-primary" : undefined} /> : null}
       </button>
     );
   }
@@ -287,7 +287,7 @@ function TreeSection({
     <div className={depth > 0 ? "ml-1" : ""}>
       <div
         className={`flex w-full items-center gap-0.5 rounded-lg pr-1 transition-colors ${rowClass} ${
-          isActive ? "ring-1 ring-primary/25" : ""
+          isActive ? "ring-1 ring-primary/35" : ""
         }`}
       >
         {hasChildren ? (
@@ -311,7 +311,7 @@ function TreeSection({
           onClick={handleSelect}
           className="flex min-w-0 flex-1 items-center gap-2 py-1.5 text-left text-xs font-medium"
         >
-          {node.icon ? <TreeIcon name={node.icon} /> : null}
+          {node.icon ? <TreeIcon name={node.icon} className={isActive ? "text-primary" : undefined} /> : null}
           <span className="truncate">{node.label}</span>
         </button>
       </div>
@@ -402,18 +402,6 @@ function DocumentLibrarySidebarPanel({
         </button>
       </div>
 
-      <button
-        type="button"
-        title={ui.sidebar.uploadAsset}
-        className={`mb-4 shrink-0 rounded-xl bg-primary font-bold text-white shadow-[0_8px_32px_-8px_rgba(0,0,0,0.06)] transition-colors hover:bg-primary-deep ${
-          collapsed ? "flex w-full items-center justify-center p-2.5" : "flex w-full items-center justify-center gap-2 px-4 py-2.5 text-xs"
-        }`}
-      >
-        <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5-5 5 5M12 5v12" />
-        </svg>
-        {!collapsed ? <span>{ui.sidebar.uploadAsset}</span> : null}
-      </button>
 
       {!collapsed ? (
         <p className="mb-2 shrink-0 text-[10px] font-bold tracking-[0.15em] text-secondary">{ui.sidebar.hierarchy}</p>
@@ -502,15 +490,20 @@ function DocumentLibraryInspectorPanel({
         </span>
         {ui.inspector.secureDownloadNote}
       </p>
-      <button
-        type="button"
-        className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-dark px-4 py-3 text-xs font-bold text-white transition-colors hover:bg-[#131b2e]"
+      <a
+        href={selected.downloadHref ?? "#"}
+        target={selected.downloadHref ? "_blank" : undefined}
+        rel={selected.downloadHref ? "noopener noreferrer" : undefined}
+        aria-disabled={!selected.downloadHref}
+        className={`mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-dark px-4 py-3 text-xs font-bold text-white transition-colors hover:bg-[#131b2e] ${
+          selected.downloadHref ? "" : "pointer-events-none opacity-70"
+        }`}
       >
         <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
           <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5-5 5 5M12 15V5" />
         </svg>
         {ui.inspector.downloadDocument}
-      </button>
+      </a>
     </>
   );
 }

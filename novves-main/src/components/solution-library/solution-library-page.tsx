@@ -645,16 +645,12 @@ export function SolutionLibraryPage({
           <nav className={`${SOLUTION_LIBRARY_PAGE_X} py-3`} aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-x-1 gap-y-1 text-[9px] font-semibold uppercase tracking-[0.12em] text-secondary/70 sm:gap-x-1.5 sm:text-[10px] sm:tracking-[0.2em]">
             <li>
-              <Link href={`/${locale}/cozumler`} className="hover:text-primary">
-                {solutionsHubLabel}
-              </Link>
+              <span>{solutionsHubLabel}</span>
             </li>
             {data.breadcrumbCategory ? (
               <li className="flex items-center gap-1.5">
                 <IconChevronRight className="h-3 w-3 shrink-0" />
-                <Link href={`/${locale}/cozumler`} className="hover:text-primary">
-                  {data.breadcrumbCategory}
-                </Link>
+                <span>{data.breadcrumbCategory}</span>
               </li>
             ) : null}
             <li className="flex items-center gap-1.5">
