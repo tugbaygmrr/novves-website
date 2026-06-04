@@ -72,6 +72,6 @@ export function getSosyalMedyaFeedPosts(
 
   return SOSYAL_MEDYA_FEED_ITEMS.map((item) => ({
     ...item,
-    ...text[item.id],
+    ...(text[item.id] ?? { alt: "" }),
   }));
 }

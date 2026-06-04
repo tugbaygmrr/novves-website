@@ -187,7 +187,7 @@ export function ProductDetailPage({
               <div className="relative overflow-hidden rounded-[1.5rem] border border-white/12 bg-sand-100/10 p-3 shadow-[0_30px_90px_-44px_rgba(0,0,0,0.9)] backdrop-blur-sm sm:rounded-[2rem] sm:p-4">
                 {featuredModel ? (
                   <ProductStandardMedia
-                    src={featuredImage}
+                    src={featuredImage ?? ""}
                     alt={featuredModel.name}
                     aspect="4/3"
                     fit="intrinsic"

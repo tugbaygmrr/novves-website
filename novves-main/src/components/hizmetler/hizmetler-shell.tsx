@@ -1,4 +1,4 @@
-import { getDictionary } from "@/app/[locale]/dictionaries";
+import { getDictionary, hasLocale } from "@/app/[locale]/dictionaries";
 import { buildHizmetlerNavLabels } from "@/lib/hizmetler-nav";
 import { HIZMETLER_MOBILE_CONTENT_PADDING_BOTTOM, HIZMETLER_PAGE_PADDING_TOP } from "@/lib/hizmetler/layout";
 import { HizmetlerMobileNav } from "./hizmetler-mobile-nav";
@@ -29,7 +29,7 @@ type Props = {
 };
 
 export async function HizmetlerShell({ locale, children }: Props) {
-  const dict = await getDictionary(locale);
+  const dict = await getDictionary(hasLocale(locale) ? locale : "en");
   const links = dict.common.navbar.links as Record<string, string>;
   const searchUi = searchUiByLocale[locale] ?? searchUiByLocale.en;
 
