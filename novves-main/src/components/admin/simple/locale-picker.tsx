@@ -49,7 +49,7 @@ export function LocalePicker({
           disabled={copying}
           className="min-h-[44px] rounded-xl border border-orange-200 bg-orange-50 px-4 py-2.5 text-[14px] font-semibold text-orange-600 transition-colors hover:bg-orange-100 disabled:opacity-50"
         >
-          {copying ? "Kopyalaniyor..." : "Turkce'den kopyala"}
+          {copying ? "Kopyalanıyor..." : "Türkçe'den kopyala"}
         </button>
       )}
     </div>

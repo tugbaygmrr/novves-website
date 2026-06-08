@@ -1,7 +1,7 @@
 /** Human descriptions for simple-mode page cards. */
 
 export const PAGE_GROUP_DESCRIPTIONS: Record<string, string> = {
-  home: "Ana sayfadaki başlıkları, metinleri ve butonları düzenleyin",
+  home: "Ana sayfadaki bölümleri sayfa akışı sırasıyla düzenleyin",
   common: "Üst menü ve alt bilgi (footer) yazılarını değiştirin",
   products: "Ürün sayfalarındaki açıklama ve başlıkları düzenleyin",
   solutions: "Çözüm sayfalarındaki metinleri güncelleyin",

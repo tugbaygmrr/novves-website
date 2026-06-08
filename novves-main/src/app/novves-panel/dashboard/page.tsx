@@ -1,16 +1,16 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { localeUi } from "@/i18n/config";
-import { ADMIN_PAGE_GROUPS } from "@/lib/admin/content-sections";
+import { getAdminPageGroups } from "@/lib/admin/content-sections";
 import { getSectionSchema, hasSectionSchema } from "@/lib/admin/field-schemas";
 import { getPreviewUrl } from "@/lib/admin/preview-routes";
 import { AdminShell, type AdminMode } from "@/components/admin/admin-shell";
 import { AdvancedSidebar } from "@/components/admin/advanced/sidebar";
 import { FieldEditor } from "@/components/admin/advanced/field-editor";
 import { PageGrid } from "@/components/admin/simple/page-grid";
-import { SectionList } from "@/components/admin/simple/section-list";
+import { SectionPreviewPanel } from "@/components/admin/simple/section-preview-panel";
 import { SchemaForm } from "@/components/admin/simple/schema-form";
 import { SmartFallbackForm } from "@/components/admin/simple/smart-fallback-form";
 import { SaveBar } from "@/components/admin/simple/save-bar";
@@ -19,17 +19,9 @@ import { confirmIfDirty, isDirty, snapshotData } from "@/components/admin/shared
 const PARTNER_RECORDS_FILE = "partner-records";
 const MODE_STORAGE_KEY = "novves-admin-mode";
 
-const PAGE_GROUPS = [
-  ...ADMIN_PAGE_GROUPS,
-  {
-    file: PARTNER_RECORDS_FILE,
-    label: "Partnerler",
-    icon: "M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l-.001.027c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681-2.72 8.986 8.986 0 013.742.477m.94 3.198a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z",
-    sections: [{ key: "records", label: "Partner Listesi" }],
-  },
-];
+const HIDDEN_PANEL_FILES = new Set(["sustainability", "kvkk", PARTNER_RECORDS_FILE]);
 
-type SimpleView = "pages" | "sections" | "edit";
+type SimpleView = "pages" | "edit";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -53,9 +45,14 @@ export default function DashboardPage() {
   const [restoring, setRestoring] = useState(false);
   const modeInitialized = useRef(false);
 
+  const pageGroups = useMemo(
+    () => getAdminPageGroups(mode).filter((g) => !HIDDEN_PANEL_FILES.has(g.file)),
+    [mode]
+  );
+
   const isPartnerRecords = activeFile === PARTNER_RECORDS_FILE;
   const dirty = isDirty(savedSnapshot, formData);
-  const currentGroup = PAGE_GROUPS.find((g) => g.file === activeFile);
+  const currentGroup = pageGroups.find((g) => g.file === activeFile);
   const currentSection = currentGroup?.sections.find((s) => s.key === activeSection);
   const sectionSchema = getSectionSchema(activeFile, activeSection);
   const previewUrl = getPreviewUrl(locale, activeFile, activeSection);
@@ -82,6 +79,11 @@ export default function DashboardPage() {
   }, [router]);
 
   const loadContent = useCallback(async () => {
+    if (mode === "simple" && simpleView !== "edit") {
+      setLoading(false);
+      return;
+    }
+
     setLoading(true);
     try {
       if (isPartnerRecords) {
@@ -103,13 +105,13 @@ export default function DashboardPage() {
       const sectionData = json.data[activeSection] ?? null;
       setFormData(sectionData);
       setSavedSnapshot(snapshotData(sectionData));
-      setContentSource(json.source === "db+json" ? "JSON + DB" : "JSON dosyasi");
+      setContentSource(json.source === "db+json" ? "JSON + DB" : "JSON dosyası");
     } catch {
-      setMessage({ type: "error", text: "Icerik yuklenemedi" });
+      setMessage({ type: "error", text: "İçerik yüklenemedi" });
     } finally {
       setLoading(false);
     }
-  }, [locale, activeFile, activeSection, isPartnerRecords]);
+  }, [locale, activeFile, activeSection, isPartnerRecords, mode, simpleView]);
 
   useEffect(() => {
     loadContent();
@@ -161,7 +163,7 @@ export default function DashboardPage() {
 
   async function handleCopyFromTr() {
     if (locale === "tr" || isPartnerRecords) return;
-    if (!window.confirm("Bu bolumun Turkce icerigi mevcut dile kopyalanacak. Emin misiniz?")) return;
+    if (!window.confirm("Bu bölümün Türkçe içeriği mevcut dile kopyalanacak. Emin misiniz?")) return;
     setCopying(true);
     try {
       if (isPartnerRecords) return;
@@ -171,10 +173,10 @@ export default function DashboardPage() {
       const trData = json.data[activeSection];
       if (trData !== undefined) {
         setFormData(trData);
-        setMessage({ type: "success", text: "Turkce icerik kopyalandi. Kaydetmeyi unutmayin." });
+        setMessage({ type: "success", text: "Türkçe içerik kopyalandı. Kaydetmeyi unutmayın." });
       }
     } catch {
-      setMessage({ type: "error", text: "Kopyalama basarisiz" });
+      setMessage({ type: "error", text: "Kopyalama başarısız" });
     } finally {
       setCopying(false);
     }
@@ -207,14 +209,14 @@ export default function DashboardPage() {
         body: JSON.stringify(body),
       });
       const json = await res.json();
-      if (!res.ok) setMessage({ type: "error", text: json.error || "Kaydetme basarisiz" });
+      if (!res.ok) setMessage({ type: "error", text: json.error || "Kaydetme başarısız" });
       else {
         setMessage({ type: "success", text: "Kaydedildi!" });
         setSavedSnapshot(snapshotData(formData));
         loadContent();
       }
     } catch {
-      setMessage({ type: "error", text: "Sunucu hatasi" });
+      setMessage({ type: "error", text: "Sunucu hatası" });
     } finally {
       setSaving(false);
     }
@@ -226,10 +228,10 @@ export default function DashboardPage() {
     try {
       const res = await fetch("/api/admin/content/backup", { method: "POST" });
       const json = await res.json();
-      if (!res.ok) setMessage({ type: "error", text: json.error || "Yedekleme basarisiz" });
-      else setMessage({ type: "success", text: "Tum sozluk dosyalari yedeklendi" });
+      if (!res.ok) setMessage({ type: "error", text: json.error || "Yedekleme başarısız" });
+      else setMessage({ type: "success", text: "Tüm sözlük dosyaları yedeklendi" });
     } catch {
-      setMessage({ type: "error", text: "Yedekleme hatasi" });
+      setMessage({ type: "error", text: "Yedekleme hatası" });
     } finally {
       setBackingUp(false);
     }
@@ -237,25 +239,25 @@ export default function DashboardPage() {
 
   async function handleRestore() {
     if (isPartnerRecords) return;
-    if (!window.confirm(`${activeFile}.json (${locale}) yedekten geri yuklensin mi?`)) return;
+    if (!window.confirm(`${activeFile}.json (${locale}) yedekten geri yüklensin mi?`)) return;
     setRestoring(true);
     try {
       const res = await fetch(`/api/admin/content/backup?locale=${locale}&file=${activeFile}`);
       const json = await res.json();
-      if (!res.ok) setMessage({ type: "error", text: json.error || "Geri yukleme basarisiz" });
+      if (!res.ok) setMessage({ type: "error", text: json.error || "Geri yükleme başarısız" });
       else {
-        setMessage({ type: "success", text: json.message || "Geri yuklendi" });
+        setMessage({ type: "success", text: json.message || "Geri yüklendi" });
         loadContent();
       }
     } catch {
-      setMessage({ type: "error", text: "Geri yukleme hatasi" });
+      setMessage({ type: "error", text: "Geri yükleme hatası" });
     } finally {
       setRestoring(false);
     }
   }
 
   async function handleLogout() {
-    if (!confirmIfDirty(dirty, "Kaydedilmemis degisiklikler var. Cikmak istiyor musunuz?")) return;
+    if (!confirmIfDirty(dirty, "Kaydedilmemiş değişiklikler var. Çıkmak istiyor musunuz?")) return;
     await fetch("/api/admin/auth/logout", { method: "POST" });
     router.replace("/novves-panel");
   }
@@ -266,7 +268,7 @@ export default function DashboardPage() {
         <div className="flex h-80 items-center justify-center rounded-2xl border border-gray-200 bg-white">
           <div className="flex flex-col items-center gap-3">
             <div className="h-10 w-10 animate-spin rounded-full border-2 border-gray-200 border-t-orange-500" />
-            <span className="text-[14px] text-gray-400">Yukleniyor...</span>
+                <span className="text-[14px] text-gray-400">Yükleniyor...</span>
           </div>
         </div>
       );
@@ -275,7 +277,7 @@ export default function DashboardPage() {
     if (formData === null) {
       return (
         <div className="flex h-40 items-center justify-center rounded-2xl border border-gray-200 bg-white text-[15px] text-gray-400">
-          Bu bolum icin icerik bulunamadi
+          Bu bölüm için içerik bulunamadı
         </div>
       );
     }
@@ -300,15 +302,13 @@ export default function DashboardPage() {
   const breadcrumb =
     mode === "simple" ? (
       <div className="flex flex-wrap items-center gap-2">
-        {simpleView !== "pages" && (
+        {simpleView === "edit" && (
           <button
             type="button"
-            onClick={() =>
-              guardedAction(() => setSimpleView(simpleView === "edit" ? "sections" : "pages"))
-            }
+            onClick={() => guardedAction(() => setSimpleView("pages"))}
             className="font-semibold text-orange-600 hover:underline"
           >
-            {simpleView === "edit" ? currentGroup?.label : "Ana Menu"}
+            {currentGroup?.label}
           </button>
         )}
         {simpleView === "edit" && (
@@ -341,7 +341,7 @@ export default function DashboardPage() {
     return (
       <div className="flex min-h-screen bg-[#f8f9fb]">
         <AdvancedSidebar
-          groups={PAGE_GROUPS}
+          groups={pageGroups}
           activeFile={activeFile}
           activeSection={activeSection}
           locale={locale}
@@ -355,7 +355,7 @@ export default function DashboardPage() {
             setExpandedGroup(expandedGroup === file && !sidebarSearch ? "" : file);
             if (activeFile !== file) {
               setActiveFile(file);
-              setActiveSection(PAGE_GROUPS.find((g) => g.file === file)?.sections[0]?.key ?? "");
+              setActiveSection(pageGroups.find((g) => g.file === file)?.sections[0]?.key ?? "");
             }
           }}
           onSelectSection={selectSection}
@@ -385,7 +385,7 @@ export default function DashboardPage() {
                   disabled={restoring || isPartnerRecords}
                   className="rounded-lg border border-gray-200 px-3 py-1.5 text-[11px] font-medium text-gray-500 hover:border-blue-200 hover:text-blue-600 disabled:opacity-50"
                 >
-                  {restoring ? "Geri yukleniyor..." : "Yedekten Geri Yukle"}
+                  {restoring ? "Geri yükleniyor..." : "Yedekten Geri Yükle"}
                 </button>
                 <button
                   type="button"
@@ -393,7 +393,7 @@ export default function DashboardPage() {
                   disabled={backingUp}
                   className="rounded-lg border border-gray-200 px-3 py-1.5 text-[11px] font-medium text-gray-500 hover:border-orange-200 hover:text-orange-600 disabled:opacity-50"
                 >
-                  {backingUp ? "Yedekleniyor..." : "Tumunu Yedekle"}
+                  {backingUp ? "Yedekleniyor..." : "Tümünü Yedekle"}
                 </button>
               </div>
             </div>
@@ -419,6 +419,15 @@ export default function DashboardPage() {
     );
   }
 
+  function handleTabSelect(file: string) {
+    guardedAction(() => {
+      setActiveFile(file);
+      setExpandedGroup(file);
+      setActiveSection(pageGroups.find((g) => g.file === file)?.sections[0]?.key ?? "");
+      if (simpleView === "edit") setSimpleView("pages");
+    });
+  }
+
   return (
     <AdminShell
       mode={mode}
@@ -429,28 +438,22 @@ export default function DashboardPage() {
       onCopyFromTr={simpleView === "edit" ? handleCopyFromTr : undefined}
       copying={copying}
       hideLocale={simpleView !== "edit" || isPartnerRecords}
-      breadcrumb={simpleView !== "pages" ? breadcrumb : undefined}
+      breadcrumb={simpleView === "edit" ? breadcrumb : undefined}
+      pageTabs={
+        mode === "simple"
+          ? {
+              items: pageGroups.map((g) => ({ id: g.file, label: g.label })),
+              activeId: activeFile,
+              onSelect: handleTabSelect,
+            }
+          : undefined
+      }
       onLogout={handleLogout}
     >
       {message && <MessageBanner message={message} onDismiss={() => setMessage(null)} />}
 
-      {simpleView === "pages" && (
-        <PageGrid
-          groups={PAGE_GROUPS}
-          onSelect={(file) => {
-            setActiveFile(file);
-            setExpandedGroup(file);
-            setSimpleView("sections");
-          }}
-        />
-      )}
-
-      {simpleView === "sections" && currentGroup && (
-        <SectionList
-          group={currentGroup}
-          onSelect={(key) => selectSection(activeFile, key)}
-          onBack={() => guardedAction(() => setSimpleView("pages"))}
-        />
+      {simpleView === "pages" && currentGroup && (
+        <PageGrid group={currentGroup} onSelectSection={(key) => selectSection(activeFile, key)} />
       )}
 
       {simpleView === "edit" && (
@@ -460,10 +463,18 @@ export default function DashboardPage() {
               {sectionSchema?.title ?? currentSection?.label}
             </h2>
             {hasSectionSchema(activeFile, activeSection) && (
-              <p className="mt-1 text-[13px] text-green-600">Kolay duzenleme modu aktif</p>
+              <p className="mt-1 text-[13px] text-green-600">Kolay düzenleme modu aktif</p>
             )}
           </div>
           <div className="max-h-[calc(100vh-280px)] overflow-y-auto px-6 py-6">
+            {!isPartnerRecords && (
+              <SectionPreviewPanel
+                file={activeFile}
+                sectionKey={activeSection}
+                title={sectionSchema?.title ?? currentSection?.label ?? activeSection}
+                variant="banner"
+              />
+            )}
             {renderForm()}
           </div>
           <SaveBar

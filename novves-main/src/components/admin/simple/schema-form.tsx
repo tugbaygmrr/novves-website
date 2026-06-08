@@ -1,6 +1,7 @@
 "use client";
 
 import type { FieldSchema, SectionSchema } from "@/lib/admin/field-schemas";
+import { IconField } from "@/components/admin/shared/icon-field";
 import { getByPath, setByPath } from "@/lib/admin/path-utils";
 
 const inputClass =
@@ -66,6 +67,10 @@ function FieldInput({
     );
   }
 
+  if (field.type === "icon") {
+    return <IconField value={str} onChange={(v) => onChange(v)} showCustomImage={false} />;
+  }
+
   return (
     <input
       type="text"
@@ -97,7 +102,7 @@ function ListField({
         <div key={i} className="rounded-2xl border-2 border-gray-100 bg-gray-50/50 p-5">
           <div className="mb-4 flex items-center justify-between">
             <span className="text-[14px] font-bold text-gray-700">
-              {field.listLabel ?? "Oge"} #{i + 1}
+              {field.listLabel ?? "Öğe"} #{i + 1}
             </span>
             <button
               type="button"
@@ -141,7 +146,7 @@ function ListField({
         }}
         className="flex min-h-[48px] w-full items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-orange-200 bg-orange-50/50 text-[14px] font-semibold text-orange-600 hover:bg-orange-50"
       >
-        + Yeni {field.listLabel?.toLowerCase() ?? "oge"} ekle
+        + Yeni {field.listLabel?.toLowerCase() ?? "öğe"} ekle
       </button>
     </div>
   );
@@ -218,7 +223,7 @@ export function SchemaForm({
       {advancedFields.length > 0 && !showAdvanced && (
         <details className="rounded-2xl border border-gray-200 bg-gray-50 p-4">
           <summary className="cursor-pointer text-[14px] font-semibold text-gray-500">
-            Gelismis ayarlar (linkler, teknik alanlar)
+            Gelişmiş ayarlar (linkler, teknik alanlar)
           </summary>
           <div className="mt-4 space-y-4">
             {advancedFields.map((field) => (

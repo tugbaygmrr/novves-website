@@ -2,6 +2,7 @@ export type FieldType =
   | "text"
   | "textarea"
   | "image"
+  | "icon"
   | "link"
   | "number"
   | "toggle"

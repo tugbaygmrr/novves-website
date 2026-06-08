@@ -16,9 +16,20 @@ const FILE_ROUTES: Record<string, string> = {
 
 const SECTION_ROUTES: Record<string, Record<string, string>> = {
   home: {
-    hero: "",
-    faq: "/sss",
-    finalCta: "",
+    hero: "#hero-main",
+    animation2: "#hero-main",
+    solutionCarouselByHref: "#solution-categories",
+    productCategories: "#product-categories",
+    catalogPreview: "#catalogs",
+    referencePreview: "#references",
+    certificatePreview: "#certificates",
+    engineeringPillarsSection: "#pillars-journey",
+    pillars: "#pillars-journey",
+    engineeringShowcase: "#engineering",
+    faq: "#faq",
+    finalCta: "#final-cta",
+    companyProfileSection: "#company-profile",
+    pageChrome: "",
   },
   common: {
     navbar: "",

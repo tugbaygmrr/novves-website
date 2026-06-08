@@ -58,7 +58,7 @@ export function AdvancedSidebar({
           <img src="/images/novves-icon.svg" alt="Novves" className="h-8 w-8" />
           <div>
             <h1 className="text-[13px] font-bold text-gray-900">NOVVES CMS</h1>
-            <p className="text-[10px] text-gray-400">Gelismis Mod</p>
+            <p className="text-[10px] text-gray-400">Gelişmiş Mod</p>
           </div>
         </div>
         <span className="rounded-md bg-gray-100 px-2 py-0.5 text-[10px] font-semibold text-gray-500">v3</span>
@@ -94,7 +94,7 @@ export function AdvancedSidebar({
           </svg>
           <input
             type="text"
-            placeholder="Bolum ara..."
+            placeholder="Bölüm ara..."
             value={sidebarSearch}
             onChange={(e) => onSearchChange(e.target.value)}
             className="w-full rounded-lg border border-gray-100 bg-gray-50/50 py-2 pl-9 pr-3 text-[12px] text-gray-700 placeholder-gray-300 outline-none focus:border-orange-300 focus:bg-white focus:ring-1 focus:ring-orange-200"
@@ -157,14 +157,14 @@ export function AdvancedSidebar({
             </div>
             <div>
               <p className="text-[12px] font-semibold text-gray-700">{username}</p>
-              <p className="text-[10px] text-gray-300">Yonetici</p>
+              <p className="text-[10px] text-gray-300">Yönetici</p>
             </div>
           </div>
           <button
             type="button"
             onClick={onLogout}
             className="rounded-lg p-2 text-gray-300 hover:bg-red-50 hover:text-red-500"
-            title="Cikis"
+            title="Çıkış"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />

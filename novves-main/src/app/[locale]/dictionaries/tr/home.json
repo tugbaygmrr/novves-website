@@ -56,7 +56,8 @@
         "linkLabel": "Satış sonrası destek sürecini inceleyin →",
         "linkAriaLabel": "NOVVES'in devreye alma, teknik dokümantasyon, yedek parça, bakım yönlendirmesi ve satış sonrası mühendislik destek sürecini inceleyin."
       }
-    ]
+    ],
+    "image": "/images/faq-visual.jpg?v=4"
   },
   "finalCta": {
     "tag": "İletişime Geçin",
@@ -77,7 +78,11 @@
       "intro": "Her proje; mimari yapı, kullanım amacı, yangın senaryosu, hava debisi, basınç ihtiyacı ve saha koşullarıyla birlikte değerlendirilir. Gerekli durumlarda CFD analizleri, fan seçimleri ve sistem senaryoları mühendislik verileriyle oluşturulur.",
       "cta": "Mühendislik Sürecini İncele",
       "href": "/hizmetler",
-      "items": []
+      "items": [],
+      "image": "/images/pillars/pillar-01-muhendislik-tasarim.png?v=20260512-2",
+      "videoSrc": "/video/engineering-pillar-01.mp4",
+      "videoPoster": "/video/engineering-pillar-01-poster.jpg",
+      "icon": "monitor"
     },
     {
       "tag": "02 — Üretim & Kalite",
@@ -85,7 +90,11 @@
       "intro": "Onaylanan teknik veriler, NOVVES üretim altyapısında projeye uygun fan, damper, susturucu, kontrol panosu ve yardımcı ekipmanlara dönüştürülür. Üretim süreci; kalite kontrol, performans beklentisi ve standart gereksinimleri dikkate alınarak yönetilir.",
       "cta": "Üretim Gücümüzü Keşfet",
       "href": "/urunler/hava-hareketi",
-      "items": []
+      "items": [],
+      "image": "/images/pillars/pillar-02-uretim-saha.png?v=20260512-1",
+      "videoSrc": "/video/engineering-pillar-02.mp4",
+      "videoPoster": "/video/engineering-pillar-02-poster.jpg",
+      "icon": "factory"
     },
     {
       "tag": "03 — Uygulama & Destek",
@@ -93,7 +102,9 @@
       "intro": "Ürün teslimiyle süreç bitmez. NOVVES; montaj koordinasyonu, devreye alma desteği, kontrol senaryoları, teknik dokümantasyon ve satış sonrası destek süreçleriyle sistemin sahada doğru çalışmasına odaklanır.",
       "cta": "Devreye Alma Sürecini İncele",
       "href": "/hizmetler",
-      "items": []
+      "items": [],
+      "image": "/images/pillars/pillar-03-saha-uygulama.png?v=20260512-1",
+      "icon": "helmet"
     }
   ],
   "engineeringShowcase": {
@@ -542,7 +553,9 @@
     "titleLine2": "Duman Tahliye Fanları",
     "titleLine3": "Klima Santralleri",
     "ctaSecondary": "Ürünleri Keşfet",
-    "heroImageAlt": "Aksiyal Hücreli Fan"
+    "heroImageAlt": "Aksiyal Hücreli Fan",
+    "videoSrc": "/video/hero-scroll-sand.mp4",
+    "mobileHeroImage": "/images/hero/endustriyel-mutfaklar.png"
   },
   "pageChrome": {
     "catalogsVertical": "Kataloglar",
@@ -708,19 +721,22 @@
       "title": "Biyomimetik Ürün Kataloğu",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/catalogs/katalog-mockup-kapak-website-icin.png",
-      "desc": "Hayvan isimli ürün aileleri, teknik özetler ve seçim rehberi — güncel NOVVES biyomimetik katalog (Mayıs 2026)."
+      "desc": "Hayvan isimli ürün aileleri, teknik özetler ve seçim rehberi — güncel NOVVES biyomimetik katalog (Mayıs 2026).",
+      "icon": "document"
     },
     {
       "title": "Duman Tahliye Kataloğu",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/catalogs/dumantahliye-mockup.png",
-      "desc": "DRAGONFLY ve duman-ısı tahliye ürün aileleri — güncel NOVVES katalog (Mayıs 2026, Rev. B)."
+      "desc": "DRAGONFLY ve duman-ısı tahliye ürün aileleri — güncel NOVVES katalog (Mayıs 2026, Rev. B).",
+      "icon": "list"
     },
     {
       "title": "Datasheet Arşivi",
       "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/catalogs/sirketprofili-mockup.png",
-      "desc": "Performans eğrileri, ses ve itki verileri; tip bazlı datasheet ve onay dokümanları."
+      "desc": "Performans eğrileri, ses ve itki verileri; tip bazlı datasheet ve onay dokümanları.",
+      "icon": "folder"
     }
   ],
   "certificatePreview": [
@@ -728,19 +744,22 @@
       "title": "EN Sertifikaları",
       "href": "/kurumsal/sertifikalar",
       "image": "/images/certificates/Efectis.png?v=2",
-      "desc": "Duman ve ısı tahliye fanlarımızın EN standartlarına uygun performans belgelerine ulaşın."
+      "desc": "Duman ve ısı tahliye fanlarımızın EN standartlarına uygun performans belgelerine ulaşın.",
+      "icon": "certificate"
     },
     {
       "title": "ISO Belgeleri",
       "href": "/kurumsal/sertifikalar",
       "image": "/images/certificates/bsi9001.png?v=2",
-      "desc": "Kalite yönetimi ve kurumsal süreçlerimizi belgeleyen ISO sertifikalarımızı inceleyin."
+      "desc": "Kalite yönetimi ve kurumsal süreçlerimizi belgeleyen ISO sertifikalarımızı inceleyin.",
+      "icon": "shield"
     },
     {
       "title": "Kalite ve Uygunluk",
       "href": "/kurumsal/sertifikalar",
       "image": "/images/certificates/iso-sertifika-mockup.png",
-      "desc": "Ürün güvenilirliğimizi, test süreçlerimizi ve uygunluk belgelerimizi görüntüleyin."
+      "desc": "Ürün güvenilirliğimizi, test süreçlerimizi ve uygunluk belgelerimizi görüntüleyin.",
+      "icon": "star"
     }
   ],
   "companyProfileSection": {
@@ -812,19 +831,23 @@
     "goalsPillars": [
       {
         "title": "Fan ve Duman Tahliye Sistemleri",
-        "body": "Endüstriyel fan, jet fan ve duman tahliye sistemlerinde yüksek performanslı, güvenilir ve uluslararası standartlara uygun çözümler geliştiriyoruz."
+        "body": "Endüstriyel fan, jet fan ve duman tahliye sistemlerinde yüksek performanslı, güvenilir ve uluslararası standartlara uygun çözümler geliştiriyoruz.",
+        "icon": "fan"
       },
       {
         "title": "Klima Santrali ve Hava Yönetimi",
-        "body": "Klima santrali, taze hava, egzoz ve hava yönetimi çözümlerimizi; enerji verimliliği, hijyen, konfor ve proje ihtiyaçlarına göre geliştiriyoruz."
+        "body": "Klima santrali, taze hava, egzoz ve hava yönetimi çözümlerimizi; enerji verimliliği, hijyen, konfor ve proje ihtiyaçlarına göre geliştiriyoruz.",
+        "icon": "ahu"
       },
       {
         "title": "Yüksek Teknoloji Motor Üretimi",
-        "body": "EC, BLDC ve özel uygulamalara yönelik motor teknolojileri üzerinde çalışarak; daha verimli, daha kompakt ve daha akıllı tahrik sistemleri üretmeyi hedefliyoruz."
+        "body": "EC, BLDC ve özel uygulamalara yönelik motor teknolojileri üzerinde çalışarak; daha verimli, daha kompakt ve daha akıllı tahrik sistemleri üretmeyi hedefliyoruz.",
+        "icon": "motor"
       },
       {
         "title": "Ar-Ge, Test ve Dijitalleşme",
-        "body": "CFD analizleri, seçim yazılımları, otomasyon panelleri, akıllı kontrol sistemleri ve test altyapımızla mühendislik süreçlerimizi dijital ve ölçülebilir hale getiriyoruz."
+        "body": "CFD analizleri, seçim yazılımları, otomasyon panelleri, akıllı kontrol sistemleri ve test altyapımızla mühendislik süreçlerimizi dijital ve ölçülebilir hale getiriyoruz.",
+        "icon": "monitor"
       }
     ],
     "goalsAsideImage": "/images/page-hero/novves-vision.png?v=1",

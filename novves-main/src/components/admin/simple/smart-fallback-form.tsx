@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
+import { IconField } from "@/components/admin/shared/icon-field";
 import { getFieldLabel, shouldHideInSimpleMode } from "@/lib/admin/field-labels";
 import { setByPath } from "@/lib/admin/path-utils";
 
@@ -137,7 +138,7 @@ function SmartField({
         })}
         {hiddenCount > 0 && !showAll && (
           <p className="text-[12px] text-gray-400">
-            {hiddenCount} teknik alan gizlendi. &quot;Tum alanlari goster&quot; ile acabilirsiniz.
+            {hiddenCount} teknik alan gizlendi. &quot;Tüm alanları göster&quot; ile açabilirsiniz.
           </p>
         )}
       </div>

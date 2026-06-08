@@ -15,7 +15,7 @@ export function isDirty(saved: string, current: unknown): boolean {
 
 export function confirmIfDirty(
   dirty: boolean,
-  message = "Kaydedilmemis degisiklikler var. Devam etmek istiyor musunuz?"
+  message = "Kaydedilmemi? de?i?iklikler var. Devam etmek istiyor musunuz?"
 ): boolean {
   if (!dirty) return true;
   return window.confirm(message);

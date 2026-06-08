@@ -133,7 +133,7 @@ export function FieldEditor({
                 <span className="text-[12px] font-semibold text-gray-600">{humanize(key)}</span>
                 {isArray && (
                   <span className="rounded bg-blue-50 px-1.5 py-0.5 text-[9px] font-medium text-blue-500">
-                    {(value as unknown[]).length} oge
+                    {(value as unknown[]).length} öğe
                   </span>
                 )}
               </label>

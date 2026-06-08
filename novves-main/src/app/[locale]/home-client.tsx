@@ -4,7 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { SectionStripLabel } from "@/components/carousel-strip-label";
+import { HomeContentIcon } from "@/components/home-content-icon";
 import { ScrollVideoSection } from "@/components/scroll-video-section";
+import {
+  CATALOG_ICON_BY_INDEX,
+  CERTIFICATE_ICON_BY_INDEX,
+  GOAL_PILLAR_ICON_BY_INDEX,
+  PILLAR_JOURNEY_ICON_BY_INDEX,
+} from "@/lib/admin/icon-presets";
 import { getHomeVideoStrings } from "@/components/home-video-i18n";
 import {
   COOKIE_CONSENT_EVENT,
@@ -16,14 +23,13 @@ import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
 import { productStripCategoryMedia } from "@/lib/product-strip-media";
 import { solutionStripPageProductMedia } from "@/lib/solution-strip-media";
 
-type CompanyProfileMilestoneIcon = "flag" | "chart" | "certificate" | "star" | "people";
-
 type CompanyProfileMilestone = {
   year: string;
   title: string;
   body: string;
   image: string;
-  icon?: CompanyProfileMilestoneIcon;
+  icon?: string;
+  iconImage?: string;
   /** Alternatif: tek image yerine 2-4 küçük logo grid'i (örn 2025: Microsoft, Autodesk, Vault) */
   logos?: string[];
 };
@@ -31,6 +37,8 @@ type CompanyProfileMilestone = {
 type CompanyProfileGoalPillar = {
   title: string;
   body: string;
+  icon?: string;
+  iconImage?: string;
 };
 
 type CompanyProfileSection = {
@@ -64,6 +72,8 @@ type HomeDict = {
     ctaSecondary: string;
     heroImageAlt: string;
     heroLabel: string;
+    videoSrc?: string;
+    mobileHeroImage?: string;
     stats: { value: string; label: string }[];
     endCard: {
       series: string;
@@ -88,6 +98,11 @@ type HomeDict = {
     cta?: string;
     /** `/${locale}` ön eki ile birleştirilir; yoksa `pillarLinks` sırası */
     href?: string;
+    image?: string;
+    videoSrc?: string;
+    videoPoster?: string;
+    icon?: string;
+    iconImage?: string;
   }[];
   /** Mühendislik vitrininin üst metin bloğu (CFD) — yalnızca tanımlı dillerde gösterilir */
   engineeringShowcase?: {
@@ -145,6 +160,7 @@ type HomeDict = {
     title?: string;
     headline?: string;
     desc?: string;
+    image?: string;
     footerLinkHref?: string;
     footerLinkLabel?: string;
     footerLinkAriaLabel?: string;
@@ -173,7 +189,7 @@ type HomeDict = {
   solutionCarouselByHref?: Record<string, { title: string; description: string }>;
   productCategoryBlurbs?: string[];
   productCategoryFeatures?: string[][];
-  catalogPreview?: { title: string; href: string; image: string; desc?: string }[];
+  catalogPreview?: { title: string; href: string; image: string; desc?: string; icon?: string; iconImage?: string }[];
   referencePreview?: {
     title: string;
     href: string;
@@ -186,10 +202,10 @@ type HomeDict = {
     projectCount?: string;
     theme?: "orange" | "sky" | "emerald" | "zinc";
   }[];
-  certificatePreview?: { title: string; href: string; image: string; desc?: string }[];
+  certificatePreview?: { title: string; href: string; image: string; desc?: string; icon?: string; iconImage?: string }[];
   /** Yeni şirket profili düzeni (zaman çizelgesi + hedefler + banner); yoksa `companyProfileCards` kullanılır */
   companyProfileSection?: CompanyProfileSection;
-  companyProfileCards?: { title: string; href: string; image: string }[];
+  companyProfileCards?: { title: string; href: string; image: string; icon?: string; iconImage?: string }[];
   /** Anasayfa çözüm/ürün şerit kartları — her kartta 3 özellik (başlık + kısa açıklama). */
   homeBands?: {
     solutionStripFeatureRows?: { label: string; desc: string }[][];
@@ -763,73 +779,6 @@ function SolutionShowcaseLeadIconByKind({ kind, inverted }: { kind: SolutionLead
 
 const COMPANY_PROFILE_NAVY = "#1e3a5f";
 
-function CompanyProfileGoalPillarIcon({ index }: { index: number }) {
-  const cls = "h-6 w-6 shrink-0";
-  const sw = 1.65;
-  const stroke = COMPANY_PROFILE_NAVY;
-  const i = index % 4;
-  if (i === 0) {
-    // Fan / smoke evacuation: turbine blades
-    return (
-      <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-        <circle cx="12" cy="12" r="9" stroke={stroke} strokeWidth={sw} />
-        <path
-          d="M12 12c0-3 1-6 4-7-1 4-2 6-4 7zM12 12c3 0 6 1 7 4-4-1-6-2-7-4zM12 12c0 3-1 6-4 7 1-4 2-6 4-7zM12 12c-3 0-6-1-7-4 4 1 6 2 7 4z"
-          stroke={stroke}
-          strokeWidth={sw}
-          strokeLinejoin="round"
-        />
-        <circle cx="12" cy="12" r="1.4" fill={stroke} />
-      </svg>
-    );
-  }
-  if (i === 1) {
-    // AHU / air handling: box with airflow lines
-    return (
-      <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-        <rect x="3" y="7" width="13" height="10" rx="1.5" stroke={stroke} strokeWidth={sw} />
-        <path
-          d="M6 10c1.5-1 3 0 4.5-1M6 14c1.5 1 3 0 4.5 1"
-          stroke={stroke}
-          strokeWidth={sw}
-          strokeLinecap="round"
-        />
-        <path d="M18 9.5h3M18 12h3M18 14.5h3" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-      </svg>
-    );
-  }
-  if (i === 2) {
-    // High-tech motor: motor cylinder with cooling fins and shaft
-    return (
-      <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-        <rect x="4" y="8" width="12" height="8" rx="1" stroke={stroke} strokeWidth={sw} />
-        <path
-          d="M6 8V6M9 8V6M12 8V6M14 8V6M6 18v-2M9 18v-2M12 18v-2M14 18v-2"
-          stroke={stroke}
-          strokeWidth={sw}
-          strokeLinecap="round"
-        />
-        <path d="M16 12h4" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-        <circle cx="21" cy="12" r="1.4" stroke={stroke} strokeWidth={sw} />
-      </svg>
-    );
-  }
-  // R&D, test & digital: monitor with CFD/chart curve
-  return (
-    <svg className={cls} viewBox="0 0 24 24" fill="none" aria-hidden>
-      <rect x="3" y="4" width="18" height="13" rx="1.5" stroke={stroke} strokeWidth={sw} />
-      <path
-        d="M6 14c2-1 3-4 5-4s3 3 5 1 2-4 2-4"
-        stroke={stroke}
-        strokeWidth={sw}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path d="M9 21h6M12 17v4" stroke={stroke} strokeWidth={sw} strokeLinecap="round" />
-    </svg>
-  );
-}
-
 function HomeCompanyProfileGoalsTargetIcon() {
   const stroke = COMPANY_PROFILE_NAVY;
   return (
@@ -906,6 +855,11 @@ function HomeCompanyProfileSectionBlock({
                     {section.milestones.map((m, index) => {
                       return (
                         <li key={`${m.year}-${m.title}`} className="relative z-[1] flex flex-col items-center text-center">
+                          {(m.icon || m.iconImage) ? (
+                            <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg border border-[#1e3a5f]/12 bg-white shadow-sm">
+                              <HomeContentIcon name={m.icon} image={m.iconImage} className="h-5 w-5" stroke={COMPANY_PROFILE_NAVY} />
+                            </div>
+                          ) : null}
                           <div className="mb-3 flex h-11 items-center justify-center rounded-full border-2 border-[#1e3a5f] bg-sand-100 px-3 shadow-sm">
                             <span className={`font-mono-eng text-fine font-bold tracking-[0.08em] ${navy}`}>{m.year}</span>
                           </div>
@@ -976,7 +930,12 @@ function HomeCompanyProfileSectionBlock({
                     {section.goalsPillars.map((p, i) => (
                       <li key={p.title} className="flex gap-3 text-left sm:gap-4">
                         <div className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-[#1e3a5f]/12 bg-sand-100">
-                          <CompanyProfileGoalPillarIcon index={i} />
+                          <HomeContentIcon
+                            name={p.icon ?? GOAL_PILLAR_ICON_BY_INDEX[i % GOAL_PILLAR_ICON_BY_INDEX.length]}
+                            image={p.iconImage}
+                            className="h-6 w-6"
+                            stroke={COMPANY_PROFILE_NAVY}
+                          />
                         </div>
                         <div>
                           <p className={`text-[18px] font-bold leading-snug ${navy}`}>{p.title}</p>
@@ -1139,35 +1098,6 @@ function HomeReferenceSectorIcon({ theme }: { theme: ReferenceSectorTheme }) {
         <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
           <path strokeLinecap="round" strokeLinejoin="round" d="M4 21h16M4 21V10l4-2 2 2V8l4-2 4 2v13" />
           <path strokeLinecap="round" d="M10 8V5h4v3M14 5v3" />
-        </svg>
-      );
-  }
-}
-
-function HomeCatalogDocIcon({ variant }: { variant: number }) {
-  const cls = "h-5 w-5";
-  const sw = 1.75;
-  switch (variant % 3) {
-    case 0:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7 3h7l3 3v15a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" />
-          <path strokeLinecap="round" d="M14 3v4h4M9 12h6M9 16h6" />
-        </svg>
-      );
-    case 1:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h10M4 18h14" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 10l2 2-2 2" />
-        </svg>
-      );
-    default:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 4h9l3 3v13a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1z" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M10 4v4h4M8 14h8M8 18h6" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 21h12" opacity={0.45} />
         </svg>
       );
   }
@@ -2176,46 +2106,17 @@ function HomeEngineeringPillarsJourneyStrip({
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-7 lg:mt-14 lg:grid-cols-3 lg:gap-8">
           {pillars.slice(0, 3).map((pillar, index) => {
             const num = String(index + 1).padStart(2, "0");
-            const img = pillarImages[index] ?? pillarImages[0]!;
+            const img = pillar.image ?? pillarImages[index] ?? pillarImages[0]!;
+            const pillarVideo =
+              pillar.videoSrc && pillar.videoPoster
+                ? { src: pillar.videoSrc, poster: pillar.videoPoster }
+                : pillarVideos[index];
             const rawPath = (pillar.href ?? pillarLinks[index] ?? "/kurumsal").trim() || "/kurumsal";
             const path = rawPath.startsWith("/") ? rawPath : `/${rawPath}`;
             const pillarHref = `/${locale}${path}`;
             const label = shortLabel(pillar.tag);
             const desc = shortDesc(pillar.intro);
-
-            /** Kart ortası floating icon — pillar başına alakalı */
-            const cardIcon = [
-              // 01: CFD / monitor + akış grafiği — analiz & mühendislik
-              (
-                <svg key="01" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                  <rect x="2" y="3" width="20" height="14" rx="1.5" />
-                  <line x1="8" y1="21" x2="16" y2="21" />
-                  <line x1="12" y1="17" x2="12" y2="21" />
-                  <polyline points="5 13 9 9 12 12 19 6" />
-                  <circle cx="19" cy="6" r="0.6" fill="currentColor" />
-                </svg>
-              ),
-              // 02: fabrika / üretim — üretim & kalite
-              (
-                <svg key="02" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                  <path d="M2 20h20" />
-                  <path d="M3 20V9l5 3V9l5 3V9l8 4v7" />
-                  <line x1="8" y1="15" x2="8" y2="17" />
-                  <line x1="13" y1="15" x2="13" y2="17" />
-                  <line x1="18" y1="16" x2="18" y2="18" />
-                </svg>
-              ),
-              // 03: baret / sahada mühendis — saha & destek
-              (
-                <svg key="03" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                  <path d="M3 18h18v-2a3 3 0 00-3-3h-1V9a5 5 0 00-10 0v4H6a3 3 0 00-3 3v2z" />
-                  <line x1="12" y1="4" x2="12" y2="6" />
-                  <line x1="3" y1="18" x2="21" y2="18" />
-                </svg>
-              ),
-            ][index];
-
-            const hasVideo = !!pillarVideos[index];
+            const hasVideo = !!pillarVideo;
 
             return (
               <Link
@@ -2229,8 +2130,8 @@ function HomeEngineeringPillarsJourneyStrip({
                   <div className="relative aspect-[16/11] overflow-hidden rounded-xl border border-white/90 bg-[#e4e7ec] shadow-[0_22px_48px_-28px_rgba(15,22,36,0.42)] ring-1 ring-black/[0.06] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_28px_56px_-28px_rgba(15,22,36,0.48)]">
                     {hasVideo ? (
                       <PillarVideoPlayer
-                        src={pillarVideos[index]!.src}
-                        poster={pillarVideos[index]!.poster}
+                        src={pillarVideo!.src}
+                        poster={pillarVideo!.poster}
                         label={pillar.title}
                         playButtonClassName="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
                         playButtonSize="h-14 w-14"
@@ -2251,8 +2152,14 @@ function HomeEngineeringPillarsJourneyStrip({
 
                 {/* Alt content kartı — sertifika formatı, image üstüne -mt-8 overlap */}
                 <div className="relative z-[1] -mt-8 flex flex-1 flex-col rounded-2xl border border-ink/10 bg-white px-5 pb-6 pt-11 shadow-[0_16px_44px_-30px_rgba(15,22,36,0.28)] ring-1 ring-black/[0.03] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_22px_50px_-30px_rgba(15,22,36,0.34)] sm:px-6 sm:pb-7 sm:pt-12">
-                  {/* Üst — sadece numara, ikon yok */}
-                  <div className="mb-3">
+                  <div className="mb-3 flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/22 bg-primary/[0.09] text-primary">
+                      <HomeContentIcon
+                        name={pillar.icon ?? PILLAR_JOURNEY_ICON_BY_INDEX[index % PILLAR_JOURNEY_ICON_BY_INDEX.length]}
+                        image={pillar.iconImage}
+                        className="h-5 w-5"
+                      />
+                    </div>
                     <span
                       className="font-product-card-num text-[1.75rem] leading-none text-primary"
                       style={{ fontWeight: 300, letterSpacing: "-0.02em" }}
@@ -2402,7 +2309,9 @@ export default function HomeClient({
       {/* 01 — SCROLL VIDEO: KOVAN TIPI */}
       <div id="hero-main" className="scroll-mt-24 md:scroll-mt-[5.5rem]">
         <ScrollVideoSection
-          videoSrc="/video/hero-scroll-sand.mp4"
+          videoSrc={dict.hero.videoSrc ?? "/video/hero-scroll-sand.mp4"}
+          mobileVideoSrc="/video/hero-scroll-sand-mobile.mp4"
+          mobileVideoReplacementSrc={dict.hero.mobileHeroImage}
           mobileVideoReplacementAlt={dict.hero.heroImageAlt}
           scrollVh={260}
           id="animation-2"
@@ -2596,7 +2505,11 @@ export default function HomeClient({
                     </div>
                     <div className="relative z-[1] -mt-8 flex flex-1 flex-col rounded-2xl border border-ink/10 bg-white px-5 pb-6 pt-11 shadow-[0_16px_44px_-30px_rgba(15,22,36,0.28)] ring-1 ring-black/[0.03] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_22px_50px_-30px_rgba(15,22,36,0.34)] sm:px-6 sm:pb-7 sm:pt-12">
                       <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg border border-primary/22 bg-primary/[0.09] text-primary">
-                        <HomeCatalogDocIcon variant={index} />
+                        <HomeContentIcon
+                          name={item.icon ?? CATALOG_ICON_BY_INDEX[index % CATALOG_ICON_BY_INDEX.length]}
+                          image={item.iconImage}
+                          className="h-5 w-5"
+                        />
                       </div>
                       <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                         {item.title}
@@ -2786,7 +2699,11 @@ export default function HomeClient({
                     </div>
                     <div className="relative z-[1] -mt-8 flex flex-1 flex-col rounded-2xl border border-ink/10 bg-white px-5 pb-6 pt-11 shadow-[0_16px_44px_-30px_rgba(15,22,36,0.28)] ring-1 ring-black/[0.03] transition-[box-shadow] duration-300 [@media(hover:hover)]:group-hover:shadow-[0_22px_50px_-30px_rgba(15,22,36,0.34)] sm:px-6 sm:pb-7 sm:pt-12">
                       <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg border border-primary/22 bg-primary/[0.09] text-primary">
-                        <HomeCatalogDocIcon variant={index} />
+                        <HomeContentIcon
+                          name={item.icon ?? CERTIFICATE_ICON_BY_INDEX[index % CERTIFICATE_ICON_BY_INDEX.length]}
+                          image={item.iconImage}
+                          className="h-5 w-5"
+                        />
                       </div>
                       <h3 className="text-balance text-[1.15rem] font-bold leading-snug tracking-[-0.02em] text-ink sm:text-[1.28rem]">
                         {item.title}
@@ -2934,7 +2851,7 @@ export default function HomeClient({
               <div className="mt-6 hidden flex-1 lg:block">
                 <div className="relative h-full min-h-[320px] w-full overflow-hidden rounded-2xl bg-[#0f1d33] ring-1 ring-ink/[0.08] shadow-[0_22px_46px_-28px_rgba(15,22,36,0.32)]">
                   <Image
-                    src="/images/faq-visual.jpg?v=4"
+                    src={dict.faq.image ?? "/images/faq-visual.jpg?v=4"}
                     alt={dict.faq.tag}
                     fill
                     sizes="(min-width: 1024px) 33vw, 100vw"
@@ -3093,7 +3010,7 @@ export default function HomeClient({
 
                 <div className="relative hidden min-h-[22rem] lg:block">
                   <Image
-                    src="/images/finalcta.png"
+                    src={dict.finalCta.image ?? "/images/finalcta.png"}
                     alt={dict.finalCta.title}
                     fill
                     className="object-cover object-center"

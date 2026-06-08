@@ -2,38 +2,38 @@
 
 import type { AdminPageGroup } from "@/lib/admin/content-sections";
 import { PAGE_GROUP_DESCRIPTIONS } from "@/lib/admin/page-group-meta";
+import { SectionPreviewPanel } from "@/components/admin/simple/section-preview-panel";
 
 export function PageGrid({
-  groups,
-  onSelect,
+  group,
+  onSelectSection,
 }: {
-  groups: AdminPageGroup[];
-  onSelect: (file: string) => void;
+  group: AdminPageGroup;
+  onSelectSection: (sectionKey: string) => void;
 }) {
   return (
     <div>
-      <h2 className="mb-2 text-2xl font-bold text-gray-900">Ne degistirmek istiyorsunuz?</h2>
-      <p className="mb-8 text-[15px] text-gray-500">Asagidaki kartlardan birini secin</p>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {groups.map((group) => (
+      <h2 className="mb-2 text-2xl font-bold text-gray-900">{group.label}</h2>
+      <p className="mb-8 text-[15px] text-gray-500">
+        {PAGE_GROUP_DESCRIPTIONS[group.file] ?? "Düzenlemek istediğiniz bölümü seçin"}
+      </p>
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {group.sections.map((section) => (
           <button
-            key={group.file}
+            key={section.key}
             type="button"
-            onClick={() => onSelect(group.file)}
-            className="group flex min-h-[140px] flex-col rounded-2xl border-2 border-gray-100 bg-white p-6 text-left shadow-sm transition-all hover:border-orange-300 hover:shadow-md active:scale-[0.98]"
+            onClick={() => onSelectSection(section.key)}
+            className="group flex flex-col overflow-hidden rounded-2xl border-2 border-gray-100 bg-white text-left shadow-sm transition-all hover:border-orange-300 hover:shadow-md active:scale-[0.98]"
           >
-            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-orange-500 transition-colors group-hover:bg-orange-100">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d={group.icon} />
-              </svg>
+            <div className="p-3 pb-0">
+              <SectionPreviewPanel file={group.file} sectionKey={section.key} title={section.label} variant="card" />
             </div>
-            <h3 className="text-[17px] font-bold text-gray-900">{group.label}</h3>
-            <p className="mt-1 flex-1 text-[13px] leading-snug text-gray-500">
-              {PAGE_GROUP_DESCRIPTIONS[group.file] ?? "Bu sayfadaki metinleri duzenleyin"}
-            </p>
-            <span className="mt-3 text-[12px] font-medium text-orange-500">
-              {group.sections.length} bolum &rarr;
-            </span>
+            <div className="flex flex-1 flex-col px-4 pb-4 pt-2">
+              <h3 className="text-[16px] font-bold text-gray-900">{section.label}</h3>
+              <span className="mt-auto pt-3 text-[12px] font-medium text-orange-500">
+                Düzenle &rarr;
+              </span>
+            </div>
           </button>
         ))}
       </div>

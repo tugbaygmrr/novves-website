@@ -150,7 +150,6 @@ function heroDisplayStats(stats?: StartCard["stats"]) {
 
 
 /** Hero MP4 kapak — lazy/preload oncesi bos siyah kutu olmasin */
-const DEFAULT_HERO_VIDEO_POSTER = "/images/hero/hero-poster.jpg";
 
 /** LCP sonrasi videoyu tamamen buffer'la — scroll/touch ile erken tetiklenir.
  * `preload="auto"`: scrub'dan once tum video insin ki ilk kaydirma kasmasin
@@ -170,6 +169,9 @@ function useDeferredVideoMetadata(
       v.preload = "auto";
       void v.load();
     };
+    /** Kapak fotosu kaldirildi: artik bos hero gorunmesin diye videoyu hemen yuklemeye basla.
+     *  rAF ile ilk paint'i bloke etmeden, idle/scroll beklemeden ilk frame en kisa surede insin. */
+    const rafHandle = window.requestAnimationFrame(prime);
     let idleHandle = 0;
     if (typeof window.requestIdleCallback === "function") {
       idleHandle = window.requestIdleCallback(prime, { timeout: 2500 });
@@ -180,6 +182,7 @@ function useDeferredVideoMetadata(
     window.addEventListener("touchstart", prime, { once: true, passive: true });
     window.addEventListener("wheel", prime, { once: true, passive: true });
     return () => {
+      window.cancelAnimationFrame(rafHandle);
       if (typeof window.cancelIdleCallback === "function") {
         window.cancelIdleCallback(idleHandle);
       } else {
@@ -272,6 +275,8 @@ export function ScrollVideoSection({
   totalFrames,
   frameExt = "jpg",
   videoSrc,
+  /** Telefonlar için daha küçük/düşük çözünürlüklü video (≤767px); verilmezse `videoSrc` kullanılır */
+  mobileVideoSrc,
   scrollImageSrc,
   scrollImageAlt = "",
   /** Video poster (masaüstü/mobil); isteğe bağlı */
@@ -295,6 +300,8 @@ export function ScrollVideoSection({
   frameExt?: "jpg" | "png" | "webp";
   /** MP4 scroll-scrub (kare dizisi yerine) */
   videoSrc?: string;
+  /** Telefonlar için daha küçük video kaynağı (≤767px media source) */
+  mobileVideoSrc?: string;
   /** Tek görsel + scroll — video seek yok, kasma biter (ör. ana sayfa hero) */
   scrollImageSrc?: string;
   /** İsteğe bağlı poster + video `aria-label` (masaüstü/mobil) */
@@ -346,17 +353,20 @@ export function ScrollVideoSection({
    *  mobil/tablet rest = 100%/scale 1. Aksi halde inline scale(1) ile paint olup applyScene
    *  1.14'e atlayinca "kucukten buyume" gorunur (özellikle masaustu). */
   useIsoLayoutEffect(() => {
+    const isDesktop = window.innerWidth >= 1024;
+    const fanX = isDesktop ? 18 : 100;
+    const fanScale = isDesktop ? 1.14 : 1;
+    const pos = `${fanX}% center`;
+    const xform = `translateZ(0) scale(${fanScale})`;
     const mediaEl = isScrollStill
       ? heroImageRef.current
       : isVideoMode
         ? videoRef.current
         : canvasRef.current;
-    if (!mediaEl) return;
-    const isDesktop = window.innerWidth >= 1024;
-    const fanX = isDesktop ? 18 : 100;
-    const fanScale = isDesktop ? 1.14 : 1;
-    mediaEl.style.objectPosition = `${fanX}% center`;
-    mediaEl.style.transform = `translateZ(0) scale(${fanScale})`;
+    if (mediaEl) {
+      mediaEl.style.objectPosition = pos;
+      mediaEl.style.transform = xform;
+    }
   }, [isScrollStill, isVideoMode]);
 
   useDeferredVideoMetadata(videoRef, mounted && isVideoMode && Boolean(videoSrc));
@@ -695,17 +705,21 @@ export function ScrollVideoSection({
         ) : isVideoMode && videoSrc ? (
           <video
             ref={videoRef}
-            src={videoSrc}
-            poster={mobileVideoReplacementSrc || DEFAULT_HERO_VIDEO_POSTER}
             aria-label={mobileVideoReplacementAlt || undefined}
             muted
             playsInline
-            preload="none"
+            preload="auto"
             disablePictureInPicture
             disableRemotePlayback
             className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden] [contain:layout_paint]"
-            style={{ objectPosition: "100% center", transform: "translateZ(0) scale(1)" }}
-          />
+            style={{ objectPosition: "18% center", transform: "translateZ(0) scale(1.14)" }}
+          >
+            {/* Telefonda küçük dosya (≤767px), masaüstünde tam çözünürlük — tarayıcı media'ya göre seçer */}
+            {mobileVideoSrc ? (
+              <source src={mobileVideoSrc} media="(max-width: 767px)" type="video/mp4" />
+            ) : null}
+            <source src={videoSrc} type="video/mp4" />
+          </video>
         ) : (
           <canvas
             ref={canvasRef}
@@ -1405,11 +1419,10 @@ function MobileScrollSection({
               <video
                 ref={mobileVideoRef}
                 src={videoSrc}
-                poster={mobileVideoReplacementSrc || DEFAULT_HERO_VIDEO_POSTER}
                 aria-label={mobileVideoReplacementAlt || undefined}
                 muted
                 playsInline
-                preload="none"
+                preload="auto"
                 disablePictureInPicture
                 disableRemotePlayback
                 onLoadedMetadata={(e) => {

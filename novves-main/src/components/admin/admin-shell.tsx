@@ -15,6 +15,7 @@ export function AdminShell({
   copying,
   hideLocale,
   breadcrumb,
+  pageTabs,
   onLogout,
   children,
   headerExtra,
@@ -28,6 +29,11 @@ export function AdminShell({
   copying?: boolean;
   hideLocale?: boolean;
   breadcrumb?: ReactNode;
+  pageTabs?: {
+    items: { id: string; label: string }[];
+    activeId: string;
+    onSelect: (id: string) => void;
+  };
   onLogout: () => void;
   children: ReactNode;
   headerExtra?: ReactNode;
@@ -39,8 +45,8 @@ export function AdminShell({
           <div className="flex items-center gap-3">
             <img src="/images/novves-icon.svg" alt="" className="h-9 w-9" />
             <div>
-              <h1 className="text-[15px] font-bold text-gray-900">NOVVES Icerik Paneli</h1>
-              <p className="text-[11px] text-gray-400">Hos geldin, {username}</p>
+              <h1 className="text-[15px] font-bold text-gray-900">NOVVES İçerik Paneli</h1>
+              <p className="text-[11px] text-gray-400">Hoş geldin, {username}</p>
             </div>
           </div>
 
@@ -62,7 +68,7 @@ export function AdminShell({
                   mode === "advanced" ? "bg-white text-orange-600 shadow-sm" : "text-gray-500 hover:text-gray-700"
                 }`}
               >
-                Gelismis
+                Gelişmiş
               </button>
             </div>
 
@@ -71,10 +77,36 @@ export function AdminShell({
               onClick={onLogout}
               className="rounded-xl border border-gray-200 px-4 py-2 text-[13px] font-medium text-gray-500 hover:border-red-200 hover:bg-red-50 hover:text-red-600"
             >
-              Cikis
+              Çıkış
             </button>
           </div>
         </div>
+
+        {pageTabs && (
+          <div className="border-t border-gray-100 bg-white px-4 sm:px-6">
+            <div className="mx-auto max-w-6xl overflow-x-auto">
+              <div className="flex min-w-max gap-1 py-2.5">
+                {pageTabs.items.map((tab) => {
+                  const active = pageTabs.activeId === tab.id;
+                  return (
+                    <button
+                      key={tab.id}
+                      type="button"
+                      onClick={() => pageTabs.onSelect(tab.id)}
+                      className={`shrink-0 rounded-xl px-4 py-2.5 text-[13px] font-semibold transition-all ${
+                        active
+                          ? "bg-orange-500 text-white shadow-sm shadow-orange-500/25"
+                          : "text-gray-500 hover:bg-gray-50 hover:text-gray-800"
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        )}
 
         {(breadcrumb || !hideLocale || headerExtra) && (
           <div className="border-t border-gray-100 bg-white px-4 py-3 sm:px-6">

@@ -24,7 +24,7 @@ export function SectionList({
         Geri
       </button>
       <h2 className="mb-2 text-2xl font-bold text-gray-900">{group.label}</h2>
-      <p className="mb-8 text-[15px] text-gray-500">Duzenlemek istediginiz bolumu secin</p>
+      <p className="mb-8 text-[15px] text-gray-500">Düzenlemek istediğiniz bölümü seçin</p>
       <div className="grid gap-3 sm:grid-cols-2">
         {group.sections.map((section) => (
           <button

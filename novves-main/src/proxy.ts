@@ -179,6 +179,7 @@ export function proxy(request: NextRequest) {
     pathname.startsWith("/models") ||
     pathname.startsWith("/audio") ||
     pathname.startsWith("/textures") ||
+    pathname.startsWith("/vendor") ||
     pathname === "/icon.svg" ||
     pathname === "/robots.txt" ||
     pathname === "/sitemap.xml" ||

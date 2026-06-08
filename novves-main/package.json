@@ -38,6 +38,7 @@
     "i18n:sync-pl-product-codes": "node scripts/i18n-sync-pl-product-codes-from-en.mjs",
     "search:setup": "node scripts/search-setup.mjs",
     "search:index": "node scripts/search-index-content.mjs",
+    "admin:capture-previews": "node scripts/capture-admin-previews.mjs",
     "admin:setup": "node scripts/admin-db-setup.mjs",
     "admin:create": "node scripts/create-admin.mjs",
     "iletisim:google-photos": "node scripts/fetch-iletisim-google-photos.mjs",
@@ -71,6 +72,7 @@
     "@vitalets/google-translate-api": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "playwright": "^1.60.0",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
