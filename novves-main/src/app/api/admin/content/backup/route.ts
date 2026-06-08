@@ -120,7 +120,7 @@ export async function GET(request: NextRequest) {
   const locale = request.nextUrl.searchParams.get("locale");
   if (!isValidLocale(locale)) {
     return NextResponse.json(
-      { error: "Invalid locale. Must be one of: tr, en, ru" },
+      { error: `Invalid locale. Must be one of: ${locales.join(", ")}` },
       { status: 400 }
     );
   }

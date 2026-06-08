@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import fs from "fs";
-import path from "path";
 import {
   verifyToken,
   verifyCsrfToken,
@@ -11,102 +9,17 @@ import {
 } from "@/lib/admin/auth";
 import pool from "@/lib/admin/db";
 import { locales, type Locale } from "@/i18n/config";
+import { FILE_SECTIONS, VALID_DICT_FILES } from "@/lib/admin/content-sections";
+import {
+  backupFile,
+  getDictionaryPath,
+  loadJsonFile,
+  writeJsonFile,
+} from "@/lib/admin/dictionary-io";
 
 export const dynamic = "force-dynamic";
 
-// ---------------------------------------------------------------------------
-// Valid dictionary files and their sections
-// ---------------------------------------------------------------------------
-const FILE_SECTIONS: Record<string, readonly string[]> = {
-  common: ["navbar", "footer", "shared"],
-  contact: ["main", "partnerlerimiz", "sosyalMedya"],
-  corporate: [
-    "bizKimiz",
-    "ceoMesaji",
-    "ekibimiz",
-    "referanslar",
-    "sertifikalar",
-    "politikamiz",
-    "basinOdasi",
-    "haberler",
-  ],
-  home: [
-    "hero",
-    "pillars",
-    "animation2",
-    "midCta",
-    "productCategories",
-    "video",
-    "faq",
-    "finalCta",
-  ],
-  kvkk: [
-    "breadcrumbHome",
-    "breadcrumbKvkk",
-    "badge",
-    "title",
-    "titleHighlight",
-    "desc",
-    "sectionLabel",
-    "sectionTitle",
-    "viewDetails",
-    "links",
-  ],
-  products: [
-    "shared",
-    "havaHareketi",
-    "iklimlendirme",
-    "sogutmaVeIsitma",
-    "havaYonetimi",
-    "havaDagitimi",
-    "havaFiltrasyonu",
-    "aksesuarlar",
-    "otomasyonMalzemeleri",
-    "titresimVeSesIzolasyon",
-    "banyoFanlari",
-    "catiFanlari",
-    "damperler",
-    "dumanIsiTahliyeFanlari",
-    "duvarTipiFanlar",
-    "ecFanlar",
-    "endustriyelFanlar",
-    "exproofFanlar",
-    "havuzNemAlmaSantrali",
-    "hucreliFanlar",
-    "isiGeriKazanimCihazlari",
-    "kanalFanlari",
-    "klimaSantralleri",
-    "kovanTipiAksiyalFanlar",
-    "mutfakFanlari",
-    "siginakFanlari",
-  ],
-  services: [
-    "cfdAnalizi",
-    "devreAlma",
-    "dumanKontrol",
-    "teknikServis",
-    "yerindeKesif",
-  ],
-  solutions: [
-    "dumanIsiTahliye",
-    "konforIklimlendirme",
-    "hijyenikFiltrasyon",
-    "endustriyelHavaYonetimi",
-    "hayvancilikTesisleri",
-    "trafoEnerjiOdalari",
-    "seraTarimsal",
-    "atexPatlamaKoruma",
-    "akilliOtomasyon",
-    "konutHavalandirma",
-    "marinOffshore",
-    "projeBazliOzelImalat",
-    "cfdDanismanlik",
-  ],
-  sustainability: ["main", "co2", "geriDonusum"],
-  technical: ["blog", "dokumanKutuphanesi", "fanSecici", "patentlerimiz"],
-} as const;
-
-const VALID_FILES = Object.keys(FILE_SECTIONS);
+const VALID_FILES = VALID_DICT_FILES;
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -164,28 +77,12 @@ function stripHtml(value: unknown): unknown {
   return value;
 }
 
-function getDictionaryPath(locale: Locale, file: string): string {
-  return path.join(
-    process.cwd(),
-    "src",
-    "app",
-    "[locale]",
-    "dictionaries",
-    locale,
-    `${file}.json`
-  );
+function loadContentFromJsonFile(file: string, locale: Locale): Record<string, unknown> {
+  return loadJsonFile(getDictionaryPath(locale, file));
 }
 
-function loadContentFromJsonFile(file: string, locale: Locale): Record<string, unknown> {
-  const filePath = getDictionaryPath(locale, file);
-  if (!fs.existsSync(filePath)) return {};
-  const raw = fs.readFileSync(filePath, "utf-8").trim();
-  if (!raw) return {};
-  try {
-    return JSON.parse(raw) as Record<string, unknown>;
-  } catch {
-    return {};
-  }
+function localeListLabel(): string {
+  return locales.join(", ");
 }
 
 function authenticate(request: NextRequest): string | null {
@@ -196,22 +93,23 @@ function authenticate(request: NextRequest): string | null {
   return payload.username;
 }
 
-/** DB'den oku, JSON dosyasına yaz (sayfa render için) */
+/** Merge DB overrides onto JSON file (JSON is live-site source of truth). */
 async function syncDbToFile(file: string, locale: Locale) {
   const result = await pool.query(
     "SELECT section, data FROM page_content WHERE file = $1 AND locale = $2",
-    [file, locale]
+    [file, locale],
   );
 
   if (result.rows.length === 0) return;
 
-  const content: Record<string, unknown> = {};
+  const filePath = getDictionaryPath(locale, file);
+  const content: Record<string, unknown> = { ...loadContentFromJsonFile(file, locale) };
   for (const row of result.rows) {
     content[row.section] = row.data;
   }
 
-  const filePath = getDictionaryPath(locale, file);
-  fs.writeFileSync(filePath, JSON.stringify(content, null, 2), "utf-8");
+  backupFile(filePath);
+  writeJsonFile(filePath, content);
 }
 
 // ---------------------------------------------------------------------------
@@ -238,21 +136,27 @@ export async function GET(
   const locale = request.nextUrl.searchParams.get("locale");
   if (!isValidLocale(locale)) {
     return NextResponse.json(
-      { error: "Invalid locale. Must be one of: tr, en, ru" },
-      { status: 400 }
+      { error: `Invalid locale. Must be one of: ${localeListLabel()}` },
+      { status: 400 },
     );
   }
 
   try {
-    // Veritabanından oku
-    const result = await pool.query(
-      "SELECT section, data FROM page_content WHERE file = $1 AND locale = $2 ORDER BY section",
-      [file, locale]
-    );
+    const jsonData = loadContentFromJsonFile(file, locale);
+    const data: Record<string, unknown> = { ...jsonData };
+    let source: "json-file" | "db+json" = "json-file";
 
-    const data: Record<string, unknown> = {};
-    for (const row of result.rows) {
-      data[row.section] = row.data;
+    try {
+      const result = await pool.query(
+        "SELECT section, data FROM page_content WHERE file = $1 AND locale = $2 ORDER BY section",
+        [file, locale],
+      );
+      for (const row of result.rows) {
+        data[row.section] = row.data;
+      }
+      if (result.rows.length > 0) source = "db+json";
+    } catch (dbErr) {
+      console.error(`DB read failed for ${file}/${locale}, using JSON only:`, dbErr);
     }
 
     return NextResponse.json({
@@ -260,25 +164,11 @@ export async function GET(
       locale,
       sections: FILE_SECTIONS[file],
       data,
+      source,
     });
   } catch (err) {
-    console.error(`Failed to read ${file} for locale ${locale} from DB, falling back to JSON:`, err);
-    try {
-      const data = loadContentFromJsonFile(file, locale);
-      return NextResponse.json({
-        file,
-        locale,
-        sections: FILE_SECTIONS[file],
-        data,
-        fallback: "json-file",
-      });
-    } catch (fallbackErr) {
-      console.error(`Fallback read failed for ${file} / ${locale}:`, fallbackErr);
-      return NextResponse.json(
-        { error: "Failed to read content" },
-        { status: 500 }
-      );
-    }
+    console.error(`Failed to read ${file} for locale ${locale}:`, err);
+    return NextResponse.json({ error: "Failed to read content" }, { status: 500 });
   }
 }
 
@@ -323,8 +213,8 @@ export async function PUT(
 
   if (!isValidLocale(locale)) {
     return NextResponse.json(
-      { error: "Invalid locale. Must be one of: tr, en, ru" },
-      { status: 400 }
+      { error: `Invalid locale. Must be one of: ${localeListLabel()}` },
+      { status: 400 },
     );
   }
 

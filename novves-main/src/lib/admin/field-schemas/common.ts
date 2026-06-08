@@ -1,0 +1,48 @@
+import type { SectionSchema } from "./types";
+
+export const COMMON_SCHEMAS: SectionSchema[] = [
+  {
+    file: "common",
+    section: "navbar",
+    title: "Üst Menü",
+    description: "Sitenin üst k?sm?ndaki menü yaz?lar?",
+    fields: [
+      { path: "solutions", label: "Çözümler", type: "text" },
+      { path: "solutionsDesc", label: "Çözümler aç?klamas?", type: "text" },
+      { path: "products", label: "Ürünler", type: "text" },
+      { path: "productsDesc", label: "Ürünler aç?klamas?", type: "text" },
+      { path: "services", label: "Hizmetler", type: "text" },
+      { path: "servicesDesc", label: "Hizmetler aç?klamas?", type: "text" },
+      { path: "technicalCenter", label: "Teknik Merkez", type: "text" },
+      { path: "technicalCenterDesc", label: "Teknik Merkez aç?klamas?", type: "text" },
+      { path: "corporate", label: "Kurumsal", type: "text" },
+      { path: "corporateDesc", label: "Kurumsal aç?klamas?", type: "text" },
+      { path: "contact", label: "?leti?im", type: "text" },
+      { path: "contactDesc", label: "?leti?im aç?klamas?", type: "text" },
+      { path: "fanSelector", label: "Fan Seçici butonu", type: "text" },
+      { path: "viewAll", label: "Tümünü Gör", type: "text" },
+      { path: "featured", label: "Öne Ç?kan", type: "text" },
+      { path: "openMenu", label: "Menü açma yaz?s?", type: "text", advancedOnly: true },
+    ],
+  },
+  {
+    file: "common",
+    section: "footer",
+    title: "Alt Bilgi (Footer)",
+    description: "Sitenin alt k?sm?ndaki yaz?lar",
+    fields: [
+      { path: "ctaTitle", label: "Üst ça?r? ba?l???", type: "text" },
+      { path: "ctaDesc", label: "Üst ça?r? aç?klamas?", type: "textarea", rows: 2 },
+      { path: "ctaButton", label: "Üst ça?r? butonu", type: "text" },
+      { path: "brandDesc", label: "Marka aç?klamas?", type: "textarea", rows: 3 },
+      { path: "copyright", label: "Telif hakk? yaz?s?", type: "text" },
+      { path: "cookieSettings", label: "Çerez ayarlar?", type: "text" },
+      { path: "kvkk", label: "KVKK linki", type: "text" },
+      { path: "privacyPolicy", label: "Gizlilik politikas?", type: "text" },
+      { path: "sections.products", label: "Ürünler ba?l???", type: "text" },
+      { path: "sections.solutions", label: "Çözümler ba?l???", type: "text" },
+      { path: "sections.corporate", label: "Kurumsal ba?l???", type: "text" },
+      { path: "sections.services", label: "Hizmetler ba?l???", type: "text" },
+    ],
+  },
+];

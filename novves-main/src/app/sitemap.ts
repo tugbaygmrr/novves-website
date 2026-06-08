@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { locales, type Locale } from "@/i18n/config";
+import { locales } from "@/i18n/config";
 import {
   buildLocalePath,
   buildSitemapLanguageAlternates,
@@ -13,27 +13,26 @@ function entryPriority(pathAfterLocale: string): number {
   return 0.7;
 }
 
-function entryChangeFrequency(pathAfterLocale: string): MetadataRoute.Sitemap[0]["changeFrequency"] {
+function entryChangeFrequency(
+  pathAfterLocale: string,
+): MetadataRoute.Sitemap[0]["changeFrequency"] {
   return pathAfterLocale === "" ? "weekly" : "monthly";
 }
 
-/** Locale-chunked sitemap index: /sitemap.xml -> /sitemap/tr.xml, /sitemap/en.xml, ... */
-export async function generateSitemaps() {
-  return locales.map((locale) => ({ id: locale }));
-}
-
-export default function sitemap({ id }: { id: string }): MetadataRoute.Sitemap {
-  const locale = id as Locale;
+/** Single sitemap at /sitemap.xml (all locales, hreflang alternates per URL). */
+export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
   const paths = collectPublicPathSegments();
 
-  return paths.map((pathAfterLocale) => ({
-    url: `${siteUrl}${buildLocalePath(locale, pathAfterLocale)}`,
-    lastModified: new Date(),
-    changeFrequency: entryChangeFrequency(pathAfterLocale),
-    priority: entryPriority(pathAfterLocale),
-    alternates: {
-      languages: buildSitemapLanguageAlternates(pathAfterLocale),
-    },
-  }));
+  return locales.flatMap((locale) =>
+    paths.map((pathAfterLocale) => ({
+      url: `${siteUrl}${buildLocalePath(locale, pathAfterLocale)}`,
+      lastModified: new Date(),
+      changeFrequency: entryChangeFrequency(pathAfterLocale),
+      priority: entryPriority(pathAfterLocale),
+      alternates: {
+        languages: buildSitemapLanguageAlternates(pathAfterLocale),
+      },
+    })),
+  );
 }

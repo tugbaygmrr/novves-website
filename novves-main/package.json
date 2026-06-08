@@ -38,6 +38,7 @@
     "i18n:sync-pl-product-codes": "node scripts/i18n-sync-pl-product-codes-from-en.mjs",
     "search:setup": "node scripts/search-setup.mjs",
     "search:index": "node scripts/search-index-content.mjs",
+    "admin:setup": "node scripts/admin-db-setup.mjs",
     "admin:create": "node scripts/create-admin.mjs",
     "iletisim:google-photos": "node scripts/fetch-iletisim-google-photos.mjs",
     "deploy": "bash scripts/deploy.sh",
