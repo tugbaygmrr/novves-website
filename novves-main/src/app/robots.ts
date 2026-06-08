@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { locales } from "@/i18n/config";
 import { getSiteUrl, PRODUCTION_SITE_URL } from "@/lib/seo/metadata";
 
 export default function robots(): MetadataRoute.Robots {
@@ -6,7 +7,10 @@ export default function robots(): MetadataRoute.Robots {
     process.env.NODE_ENV === "production" && getSiteUrl().includes("localhost")
       ? PRODUCTION_SITE_URL
       : getSiteUrl();
-  const sitemapUrl = `${siteUrl.replace(/\/$/, "")}/sitemap.xml`;
+  const base = siteUrl.replace(/\/$/, "");
+  // Next 16 generateSitemaps serves per-locale chunks at /sitemap/<id>.xml and
+  // does NOT emit a /sitemap.xml index ? list every chunk so crawlers find them all.
+  const sitemap = locales.map((locale) => `${base}/sitemap/${locale}.xml`);
 
   return {
     rules: {
@@ -14,6 +18,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/novves-panel/", "/api/"],
     },
-    sitemap: sitemapUrl,
+    sitemap,
   };
 }
