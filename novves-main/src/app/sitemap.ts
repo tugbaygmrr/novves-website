@@ -22,8 +22,12 @@ export async function generateSitemaps() {
   return locales.map((locale) => ({ id: locale }));
 }
 
-export default function sitemap({ id }: { id: string }): MetadataRoute.Sitemap {
-  const locale = id as Locale;
+export default async function sitemap({
+  id,
+}: {
+  id: Promise<string>;
+}): Promise<MetadataRoute.Sitemap> {
+  const locale = (await id) as Locale;
   const siteUrl = getSiteUrl();
   const paths = collectPublicPathSegments();
 
