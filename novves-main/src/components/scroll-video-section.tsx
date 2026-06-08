@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState, useCallback, type CSSProperties, type RefObject } from "react";
+import { useRef, useEffect, useLayoutEffect, useState, useCallback, type CSSProperties, type RefObject } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
@@ -9,6 +9,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
+
+/** SSR'da useEffect'e duser (uyari vermez), client'ta paint oncesi calisir. */
+const useIsoLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 type StartCard = {
   eyebrow?: string;
@@ -149,7 +152,9 @@ function heroDisplayStats(stats?: StartCard["stats"]) {
 /** Hero MP4 kapak — lazy/preload oncesi bos siyah kutu olmasin */
 const DEFAULT_HERO_VIDEO_POSTER = "/images/hero/hero-poster.jpg";
 
-/** LCP sonrasi metadata yukle — scroll/touch ile erken tetiklenir. */
+/** LCP sonrasi videoyu tamamen buffer'la — scroll/touch ile erken tetiklenir.
+ * `preload="auto"`: scrub'dan once tum video insin ki ilk kaydirma kasmasin
+ * (metadata yalnizca sure/boyut verir, scrub byte'lari o an indirip decode eder = jank). */
 function useDeferredVideoMetadata(
   videoRef: RefObject<HTMLVideoElement | null>,
   enabled: boolean,
@@ -162,7 +167,7 @@ function useDeferredVideoMetadata(
       const v = videoRef.current;
       if (!v) return;
       done = true;
-      v.preload = "metadata";
+      v.preload = "auto";
       void v.load();
     };
     let idleHandle = 0;
@@ -336,6 +341,23 @@ export function ScrollVideoSection({
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  /** Paint oncesi dinlenme durumunu (progress=0) uygula: masaustu rest = 18%/scale 1.14,
+   *  mobil/tablet rest = 100%/scale 1. Aksi halde inline scale(1) ile paint olup applyScene
+   *  1.14'e atlayinca "kucukten buyume" gorunur (özellikle masaustu). */
+  useIsoLayoutEffect(() => {
+    const mediaEl = isScrollStill
+      ? heroImageRef.current
+      : isVideoMode
+        ? videoRef.current
+        : canvasRef.current;
+    if (!mediaEl) return;
+    const isDesktop = window.innerWidth >= 1024;
+    const fanX = isDesktop ? 18 : 100;
+    const fanScale = isDesktop ? 1.14 : 1;
+    mediaEl.style.objectPosition = `${fanX}% center`;
+    mediaEl.style.transform = `translateZ(0) scale(${fanScale})`;
+  }, [isScrollStill, isVideoMode]);
 
   useDeferredVideoMetadata(videoRef, mounted && isVideoMode && Boolean(videoSrc));
 
@@ -607,8 +629,9 @@ export function ScrollVideoSection({
 
     /** GSAP ScrollTrigger: `scrub` değeri inertia/lerp ekler — video seek baskısını azaltıp ipeksi his verir.
      *  prefers-reduced-motion: anlık (scrub: true), aksi halde ~0.9 sn yumuşatma (daha az kasma). */
+    let st: ScrollTrigger | undefined;
     const ctx = gsap.context(() => {
-      ScrollTrigger.create({
+      st = ScrollTrigger.create({
         trigger: container,
         start: "top top",
         end: "bottom bottom",
@@ -622,11 +645,15 @@ export function ScrollVideoSection({
     applyScene(0);
 
     const v = videoRef.current;
+    /** Video metadata gelince scene'i MEVCUT scroll pozisyonunda anında yeniden uygula.
+     *  ScrollTrigger.refresh() kullanmiyoruz: scrub:0.6 ile refresh, sahneyi eased "oturtuyor"
+     *  (sayfa basta sabit degil gibi gorunur). Dogrudan applyScene = animasyonsuz, sadece dogru
+     *  frame'e seek + DOM'u tazele. */
     const onMeta = () => {
       lastMotionDomKey = -999;
       lastDesktopVideoStep = -1;
       lastProgressBarKey = -999;
-      ScrollTrigger.refresh();
+      applyScene(st ? st.progress : 0);
     };
     if (isVideoMode && v) v.addEventListener("loadedmetadata", onMeta);
 
