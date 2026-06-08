@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 
 type NavItem = { icon: string; label: string };
 
@@ -47,7 +48,7 @@ export function MediaCenterSidebar({
           </p>
         </div>
 
-        <nav className="min-h-0 flex-1 space-y-1 overflow-y-auto px-3 pb-4 custom-scrollbar">
+        <nav className={`min-h-0 flex-1 space-y-1 px-3 pb-4 ${SIDEBAR_PANEL_SCROLL}`}>
           {mainItems.map((item, i) => {
             const isActive = i === activeMainIndex;
             const cls = isActive ? active : passive;

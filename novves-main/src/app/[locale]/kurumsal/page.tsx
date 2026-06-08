@@ -88,7 +88,7 @@ export default async function KurumsalPage({
     <main>
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#4a4f58] py-24 pt-40">
-        <Image src={heroFactoryImage} alt="" fill priority className="object-cover" sizes="100vw" />
+        <Image src={heroFactoryImage} alt="" fill priority className="object-cover" sizes="(max-width: 768px) 100vw, 1280px" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
         <div
           className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-[0.07]"

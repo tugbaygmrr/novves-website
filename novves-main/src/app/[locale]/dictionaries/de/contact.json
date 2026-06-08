@@ -10,7 +10,7 @@
     "headOffice": "Hauptsitz",
     "headOfficeAddress": "19 Mayıs Mah. Sümer Sok.\nZitaş Plaza C2 Blok No:7\nKadıköy / İstanbul / Türkiye",
     "factory": "Werk",
-    "factoryAddress": "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
+    "factoryAddress": "Yalova Organize Sanayi Bölgesi\n2. Cadde No:12\nÇiftlikköy / Yalova",
     "workingHours": "Öffnungszeiten",
     "weekdays": "Montag – Freitag",
     "saturday": "Samstag",
@@ -59,7 +59,100 @@
     "heroLead": "Verlässliche Kooperationen entlang der Lieferkette, der Feldmontage und des Technologie-Ökosystems – das Rückgrat nachhaltig skalierender Novves-Lösungen.",
     "desc": "Unsere Geschäfts- und Lösungspartner.",
     "comingSoon": "Demnächst",
-    "comingSoonDesc": "Die Inhalte der Partnerseite werden vorbereitet. Informationen zu unseren Partnern erscheinen hier in Kürze."
+    "comingSoonDesc": "Die Inhalte der Partnerseite werden vorbereitet. Informationen zu unseren Partnern erscheinen hier in Kürze.",
+    "heroStats": [
+      {
+        "value": "3",
+        "label": "Partnerschaftsachsen"
+      },
+      {
+        "value": "TR + Global",
+        "label": "Skala"
+      },
+      {
+        "value": "NOVVES",
+        "label": "Marke"
+      }
+    ],
+    "partnerRecords": {
+      "mmsc": {
+        "name": "MMSC (M.M. Steel Corporation Pvt. Ltd.)",
+        "subtitle": "Lösungen für Bau- und TGA-Technik",
+        "description": "MMSC (M.M. Steel Corporation Pvt. Ltd.) ist hauptsächlich in den Bereichen Bauwesen und MEP-Lösungen (Mechanical, Electrical & Plumbing) tätig. Das Unternehmen ist ein Importeur und Vertreiber von professionellen Baumaterialien und technischen Produkten in Pakistan.",
+        "expertise": [
+          "Konstruktion",
+          "MdEP",
+          "Baustoffe",
+          "Technische Produkte",
+          "Import",
+          "Verteilung"
+        ]
+      },
+      "kazema": {
+        "name": "Kazema Traders Company WLL",
+        "subtitle": "HVAC-, Kühl- und Handelslösungen",
+        "description": "Kazema Traders Company WLL ist eine Tochtergesellschaft der Kazema Global Holding. Seit 1976 ist das Unternehmen in Kuwait in den Bereichen Klimatisierung, Kühlung, Handel und Vertrieb technischer Produkte tätig.",
+        "expertise": [
+          "HVAC",
+          "Kühlung",
+          "Handel",
+          "Industrielle Lösungen",
+          "Import",
+          "Verteilung"
+        ]
+      },
+      "ventdelux": {
+        "name": "VentDelux LLP",
+        "subtitle": "Lüftungs-, Klima- und Automatisierungssysteme",
+        "description": "VentDelux LLP hat seinen Sitz in Astana, Kasachstan und bietet Design, Installation und Service für Lüftungs-, Klima- und Automatisierungssysteme. Es ist regionaler Partner für NOVVES-Jet-Ventilationslösungen.",
+        "expertise": [
+          "Belüftung",
+          "HVAC",
+          "Automatisierung",
+          "Design",
+          "Installation",
+          "Service"
+        ]
+      },
+      "sanlygala": {
+        "name": "Sanly Gala ES",
+        "subtitle": "Lüftungs- und technische Lösungen",
+        "description": "Sanly Gala ES ist in Aschgabat, Turkmenistan, als regionaler Partner für NOVVES-Lüftungs- und Engineering-Lösungen tätig.",
+        "expertise": [
+          "Belüftung",
+          "HVAC",
+          "Maschinenbau",
+          "Verteilung",
+          "Installation",
+          "Service"
+        ]
+      }
+    },
+    "partnerList": {
+      "sectionLabel": "Unsere Partner",
+      "heroTitle1": "Stärker mit unserem",
+      "heroTitle2": "Partnernetzwerk.",
+      "heroDesc": "Gemeinsam mit vertrauenswürdigen Partnern steigern wir den Wert Ihrer Projekte und liefern nachhaltige Lösungen.",
+      "searchPlaceholder": "Suchen Sie nach Firma, Dienstleistung oder Stichwort...",
+      "allCountries": "Alle Länder",
+      "allCategories": "Alle Kategorien",
+      "filter": "Filter",
+      "colCompany": "Unternehmen",
+      "colCountry": "Land / Region",
+      "colExpertise": "Fachgebiete",
+      "colContact": "Kontaktdaten",
+      "colWebsite": "Webseite",
+      "ctaQuestion": "Möchten Sie mehr über neue Kooperationen und unser Partnerprogramm erfahren?",
+      "ctaButton": "Kontaktieren Sie uns",
+      "valueTrust": "Vertrauenswürdige Partner",
+      "valueQuality": "Qualitätslösungen",
+      "valueGrowth": "Nachhaltiges Wachstum",
+      "categoryAutomation": "Automatisierung",
+      "categoryEnergy": "Energie",
+      "categoryDigital": "Digitalisierung",
+      "categoryConstruction": "Bau & MEP",
+      "noResults": "Zu Ihrer Suche passen keine Partner."
+    }
   },
   "sosyalMedya": {
     "breadcrumbHome": "Startseite",

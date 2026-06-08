@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { getLegacyNextRedirects } from "./src/lib/seo/legacy-redirects";
 
 const configDir = path.dirname(fileURLToPath(import.meta.url));
 
@@ -93,9 +94,10 @@ const nextConfig: NextConfig = {
     return config;
   },
 
-  /** Slash yanlışlığı veya "tr"+"bu" yapışık yazım: /trbu → /tr */
+  /** Eski statik URL'ler (.html), slash varyantlari ve migrasyon 301'leri */
   async redirects() {
     return [
+      ...getLegacyNextRedirects(),
       { source: "/trbu", destination: "/tr", permanent: false },
       { source: "/trbu/:path*", destination: "/tr/:path*", permanent: false },
       {
@@ -151,7 +153,7 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     /** Mobil öncelikli daha küçük ara genişlikler */
-    deviceSizes: [384, 512, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    deviceSizes: [384, 512, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 24, 32, 48, 64, 96, 128, 256, 384],
     dangerouslyAllowSVG: false,
     /** Yerel public görseli değişince eski optimize çıktısının takılı kalmaması için (özellikle dev). */

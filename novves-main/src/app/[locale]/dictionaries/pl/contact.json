@@ -10,7 +10,7 @@
     "headOffice": "Siedziba główna",
     "headOfficeAddress": "19 maja Mah. Sumer Sok.\nZitaş Plaza C2 Blok nr 7\nKadıköy / Stambuł / Türkiye",
     "factory": "Fabryka",
-    "factoryAddress": "Taşköprü Merkez Mah. Caydere Sok.\nBina nr: 9/1 Fabrika Kapı nr: 2\nÇiftlikköy / Yalova",
+    "factoryAddress": "Yalova Organize Sanayi Bölgesi\n2. Cadde No:12\nÇiftlikköy / Yalova",
     "workingHours": "Godziny pracy",
     "weekdays": "poniedziałek – piątek",
     "saturday": "Sobota",
@@ -59,7 +59,100 @@
     "heroLead": "Zaufana współpraca w całym łańcuchu dostaw, dostawach w terenie i ekosystemie technologicznym — kręgosłup, który zapewnia zrównoważone skalowanie rozwiązań Novves.",
     "desc": "Nasi partnerzy biznesowi i partnerzy w zakresie rozwiązań.",
     "comingSoon": "Już wkrótce",
-    "comingSoonDesc": "Trwa przygotowywanie treści na stronę naszych partnerów. Informacje o naszych partnerach biznesowych i partnerach oferujących rozwiązania zostaną wkrótce opublikowane w tym miejscu."
+    "comingSoonDesc": "Trwa przygotowywanie treści na stronę naszych partnerów. Informacje o naszych partnerach biznesowych i partnerach oferujących rozwiązania zostaną wkrótce opublikowane w tym miejscu.",
+    "heroStats": [
+      {
+        "value": "3",
+        "label": "Osie partnerstwa"
+      },
+      {
+        "value": "TR + Global",
+        "label": "Skala"
+      },
+      {
+        "value": "NOVVES",
+        "label": "Marka"
+      }
+    ],
+    "partnerRecords": {
+      "mmsc": {
+        "name": "MMSC (M.M. Steel Corporation Pvt. Ltd.)",
+        "subtitle": "Rozwiązania konstrukcyjne i inżynieryjne MEP",
+        "description": "MMSC (MM Steel Corporation Pvt. Ltd.) działa głównie w branży rozwiązań konstrukcyjnych i inżynieryjnych MEP (mechanicznych, elektrycznych i hydraulicznych). Firma jest importerem i dystrybutorem profesjonalnych materiałów budowlanych i wyrobów inżynieryjnych w Pakistanie.",
+        "expertise": [
+          "Budowa",
+          "poseł do Parlamentu Europejskiego",
+          "Materiały budowlane",
+          "Produkty inżynieryjne",
+          "Import",
+          "Dystrybucja"
+        ]
+      },
+      "kazema": {
+        "name": "Kazema Traders Company WLL",
+        "subtitle": "Rozwiązania HVAC, chłodnicze i handlowe",
+        "description": "Kazema Traders Company WLL jest spółką zależną Kazema Global Holding. Od 1976 roku działa w Kuwejcie w zakresie klimatyzacji, chłodnictwa, handlu i dystrybucji produktami inżynieryjnymi.",
+        "expertise": [
+          "HVAC",
+          "Chłodzenie",
+          "Handlowy",
+          "Rozwiązania przemysłowe",
+          "Import",
+          "Dystrybucja"
+        ]
+      },
+      "ventdelux": {
+        "name": "VentDelux LLP",
+        "subtitle": "Systemy wentylacji, klimatyzacji i automatyki",
+        "description": "VentDelux LLP ma siedzibę w Astanie w Kazachstanie i zajmuje się projektowaniem, montażem i serwisem systemów wentylacji, klimatyzacji i automatyki. Jest regionalnym partnerem rozwiązań wentylacji strumieniowej NOVVES.",
+        "expertise": [
+          "Wentylacja",
+          "HVAC",
+          "Automatyzacja",
+          "Projekt",
+          "Instalacja",
+          "Praca"
+        ]
+      },
+      "sanlygala": {
+        "name": "Sanly Gala ES",
+        "subtitle": "Wentylacja i rozwiązania inżynieryjne",
+        "description": "Sanly Gala ES działa w Aszchabadzie w Turkmenistanie jako regionalny partner w zakresie rozwiązań wentylacyjnych i inżynieryjnych NOVVES.",
+        "expertise": [
+          "Wentylacja",
+          "HVAC",
+          "Inżynieria",
+          "Dystrybucja",
+          "Instalacja",
+          "Praca"
+        ]
+      }
+    },
+    "partnerList": {
+      "sectionLabel": "Nasi partnerzy",
+      "heroTitle1": "Silniejszy z naszymi",
+      "heroTitle2": "sieć partnerska.",
+      "heroDesc": "Razem z zaufanymi partnerami dodajemy wartość do Twoich projektów i dostarczamy zrównoważone rozwiązania.",
+      "searchPlaceholder": "Wyszukaj firmę, usługę lub słowo kluczowe...",
+      "allCountries": "Wszystkie kraje",
+      "allCategories": "Wszystkie kategorie",
+      "filter": "Filtr",
+      "colCompany": "Firma",
+      "colCountry": "Kraj/region",
+      "colExpertise": "Obszary specjalizacji",
+      "colContact": "Dane kontaktowe",
+      "colWebsite": "Strona internetowa",
+      "ctaQuestion": "Czy chcesz dowiedzieć się o nowej współpracy i naszym programie partnerskim?",
+      "ctaButton": "Skontaktuj się z nami",
+      "valueTrust": "Zaufani partnerzy",
+      "valueQuality": "Rozwiązania jakościowe",
+      "valueGrowth": "Zrównoważony wzrost",
+      "categoryAutomation": "Automatyzacja",
+      "categoryEnergy": "Energia",
+      "categoryDigital": "Cyfryzacja",
+      "categoryConstruction": "Budownictwo i poseł do Parlamentu Europejskiego",
+      "noResults": "Żaden partner nie pasuje do Twojego wyszukiwania."
+    }
   },
   "sosyalMedya": {
     "breadcrumbHome": "Dom",

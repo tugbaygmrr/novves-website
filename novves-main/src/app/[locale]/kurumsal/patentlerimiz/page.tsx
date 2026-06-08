@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import fs from "node:fs/promises";
 import { notFound } from "next/navigation";
 import { hasLocale } from "../../dictionaries";
 import { MediaHtmlFrame } from "@/components/media-html-frame";
 import { MediaCenterSidebar } from "@/components/media-center-sidebar";
+import {
+  mediaCenterHtmlMissingMessage,
+  readMediaCenterHtml,
+  readPatentsHtml,
+} from "@/lib/media-center-html";
 import { extractMediaSidebar } from "@/lib/media-center-nav";
+import { withPageSeo } from "@/lib/seo/page-metadata";
 import patentTrToLocalesAuto from "@/lib/patent-tr-to-locales.auto.json";
 
 export const dynamic = "force-dynamic";
@@ -110,10 +115,12 @@ const patentPageDescriptions: Record<string, string> = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  return {
+  return withPageSeo({
+    locale,
+    pathAfterLocale: "kurumsal/patentlerimiz",
     title: patentPageTitles[locale] ?? patentPageTitles.en,
     description: patentPageDescriptions[locale] ?? patentPageDescriptions.en,
-  };
+  });
 }
 
 export default async function PatentlerimizPage({
@@ -125,29 +132,15 @@ export default async function PatentlerimizPage({
   if (!hasLocale(locale)) notFound();
   const patentUi = patentUiByLocale[locale] ?? patentUiByLocale.en;
 
-  const mediaCenterHtmlPath = "C:/Users/Tuğba/Desktop/Medya Merkezi stitch_digital_document_library/code.html";
-  const patentHtmlPath =
-    "C:/Users/Tuğba/Desktop/Medya Merkezi-PAtentlerimiz_stitch_digital_document_library (1)/code.html";
-
   let mediaHtml = "";
   let patentHtml = "";
   try {
-    mediaHtml = await fs.readFile(mediaCenterHtmlPath, "utf8");
+    mediaHtml = await readMediaCenterHtml();
   } catch {
-    mediaHtml = `
-      <!doctype html>
-      <html lang="tr">
-        <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /></head>
-        <body style="font-family:Inter,Arial,sans-serif;padding:24px;">
-          <h2>Medya Merkezi kod dosyası bulunamadı.</h2>
-          <p>Lütfen şu dosya yolunu kontrol edin:</p>
-          <code>${mediaCenterHtmlPath}</code>
-        </body>
-      </html>
-    `;
+    mediaHtml = mediaCenterHtmlMissingMessage("media");
   }
   try {
-    patentHtml = await fs.readFile(patentHtmlPath, "utf8");
+    patentHtml = await readPatentsHtml();
   } catch {
     patentHtml = "";
   }

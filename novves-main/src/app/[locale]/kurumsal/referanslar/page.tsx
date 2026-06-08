@@ -1,9 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import type { Locale } from "@/i18n/config";
 import { getDictionary, hasLocale } from "../../dictionaries";
 import { corporateDetailMetadata } from "@/lib/i18n-metadata";
 import { references } from "@/data/references";
+import { applyReferencesLocale } from "@/lib/references/apply-reference-locale";
 import { ReferanslarClient } from "./client";
 
 export async function generateMetadata({
@@ -181,6 +183,9 @@ function humanClassName(classKey: string, className: string, localeLabels?: Reco
     "karayolu-tuneli": "KARAYOLU TÜNELİ",
     havalimani: "HAVALİMANI",
     ibadethane: "İBADETHANE",
+    depo: "DEPO",
+    showroom: "SHOWROOM",
+    "karma-kullanim": "KARMA KULLANIM",
   };
 
   const key = normalizeLookupKey(classKey);
@@ -198,8 +203,9 @@ function uniqueOptions(items: { key: string; label: string }[]): { value: string
 }
 
 /** Referans verisini seçili dilin sınıf etiketleriyle hazırla (modül değil, istek başına). */
-function buildReferenceData(classLabels?: Record<string, string>) {
-  const sanitizedReferences = references.map((item) => ({
+function buildReferenceData(locale: Locale, classLabels?: Record<string, string>) {
+  const localizedReferences = applyReferencesLocale(references, locale);
+  const sanitizedReferences = localizedReferences.map((item) => ({
     ...item,
     title: cleanDisplayText(item.title),
     description: cleanDisplayText(item.description),
@@ -225,7 +231,7 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
 
   const classLabels = (t as { classLabels?: Record<string, string> }).classLabels;
   const { sanitizedReferences, countryOptions, classOptions, countryCount } =
-    buildReferenceData(classLabels);
+    buildReferenceData(locale, classLabels);
 
   const stats = [
     { value: `${sanitizedReferences.length}+`, label: t.completedProjects, accent: true },

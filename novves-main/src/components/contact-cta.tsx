@@ -29,7 +29,7 @@ export function ContactCta({
         src="/images/contact-cta-bg.jpg"
         alt=""
         fill
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, 1280px"
         priority={false}
         className="pointer-events-none absolute inset-0 z-0 object-cover object-center"
       />

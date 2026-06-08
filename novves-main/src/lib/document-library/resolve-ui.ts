@@ -18,6 +18,7 @@ export function resolveDocumentLibraryUi(
     table: { ...fallback.table, ...fromDict.table },
     widgets: { ...fallback.widgets, ...fromDict.widgets },
     emptyResults: fromDict.emptyResults ?? fallback.emptyResults,
+    searchAllLanguages: fromDict.searchAllLanguages ?? fallback.searchAllLanguages,
     inspector: { ...fallback.inspector, ...fromDict.inspector },
     footer: { ...fallback.footer, ...fromDict.footer },
     revisionLogs: { ...fallback.revisionLogs, ...fromDict.revisionLogs },

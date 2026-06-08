@@ -1,14 +1,23 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { LocaleFlag } from "@/components/locale-flags";
+import { hasLocale, localeUi, type Locale } from "@/i18n/config";
 import {
   DOCUMENT_LIBRARY_MOBILE_DRAWER,
   DOCUMENT_LIBRARY_PAGE_PADDING_TOP,
   DOCUMENT_LIBRARY_PAGE_X,
   DOCUMENT_LIBRARY_TOUCH_TARGET,
 } from "@/lib/document-library/layout";
-import { filterDocuments } from "@/lib/document-library/search";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
+import {
+  collectDocumentLanguages,
+  filterDocuments,
+  getDocumentDownloadHref,
+  getDocumentLanguages,
+} from "@/lib/document-library/search";
 import type {
   DocumentLibraryItem,
   DocumentLibraryPageProps,
@@ -17,6 +26,36 @@ import type {
   DocumentLibraryTreeNode,
   DocumentLibraryUi,
 } from "@/lib/document-library/types";
+
+/** PNG bayraklar — doküman kütüphanesi dil filtresi */
+const DOC_LIB_FLAG_PNG: Partial<Record<Locale, string>> = {
+  tr: "/images/flags/tr.png",
+  en: "/images/flags/en.png",
+};
+
+function DocumentLibraryFlagImage({
+  locale,
+  size = "md",
+}: {
+  locale: string;
+  size?: "sm" | "md";
+}) {
+  const src = DOC_LIB_FLAG_PNG[locale as Locale];
+  if (!src) {
+    return <LocaleFlag locale={locale} className={size === "sm" ? "h-3.5 w-[1.05rem]" : "h-5 w-7"} />;
+  }
+  const dim = size === "sm" ? { w: 28, h: 20, className: "h-5 w-7" } : { w: 36, h: 26, className: "h-6 w-9" };
+  return (
+    <Image
+      src={src}
+      alt=""
+      width={dim.w}
+      height={dim.h}
+      unoptimized
+      className={`shrink-0 rounded-[3px] border border-black/[0.08] object-cover shadow-sm ${dim.className}`}
+    />
+  );
+}
 
 function TreeIcon({ name, className }: { name: DocumentLibraryTreeIcon; className?: string }) {
   const iconClass = ["h-4", "w-4", "shrink-0", "block", className ?? "text-dark"]
@@ -207,6 +246,182 @@ function StatusBadge({
     <span className={`inline-flex rounded-full px-2.5 py-0.5 text-[10px] font-bold tracking-wide ${styles[status]}`}>
       {labels[status]}
     </span>
+  );
+}
+
+function DocumentRowLanguageFlags({ doc }: { doc: DocumentLibraryItem }) {
+  const langs = getDocumentLanguages(doc);
+  return (
+    <span className="inline-flex items-center gap-1" aria-label={langs.join(", ")}>
+      {langs.map((lang) => (
+        <span
+          key={lang}
+          title={hasLocale(lang) ? localeUi[lang as Locale].label : lang.toUpperCase()}
+          className="inline-flex rounded-md p-0.5"
+        >
+          <DocumentLibraryFlagImage locale={lang} size="sm" />
+        </span>
+      ))}
+    </span>
+  );
+}
+
+function DocumentLanguageFlagButtons({
+  languages,
+  active,
+  onSelect,
+  stopPropagation = false,
+  size = "md",
+}: {
+  languages: string[];
+  active: string | null;
+  onSelect: (lang: string) => void;
+  stopPropagation?: boolean;
+  size?: "sm" | "md";
+}) {
+  return (
+    <span className="inline-flex items-center gap-1.5" role="group" aria-label="Dil filtresi">
+      {languages.map((lang) => {
+        if (!hasLocale(lang)) return null;
+        const cfg = localeUi[lang as Locale];
+        const isActive = active === lang;
+        return (
+          <button
+            key={lang}
+            type="button"
+            title={cfg.label}
+            aria-pressed={isActive}
+            aria-label={cfg.label}
+            onClick={(e) => {
+              if (stopPropagation) {
+                e.stopPropagation();
+                e.preventDefault();
+              }
+              onSelect(lang);
+            }}
+            className={`rounded-lg p-1 transition-all ${
+              isActive
+                ? "bg-primary/15 ring-2 ring-primary/55 shadow-sm"
+                : "bg-white ring-1 ring-ink/10 hover:ring-primary/35"
+            }`}
+          >
+            <DocumentLibraryFlagImage locale={lang} size={size} />
+          </button>
+        );
+      })}
+    </span>
+  );
+}
+
+function DocumentLanguageFilterDropdown({
+  languages,
+  active,
+  onSelect,
+  allLabel,
+  languageLabel,
+  open,
+  onOpenChange,
+}: {
+  languages: string[];
+  active: string | null;
+  onSelect: (lang: string | null) => void;
+  allLabel: string;
+  languageLabel: string;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const handleClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        onOpenChange(false);
+      }
+    };
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
+  }, [open, onOpenChange]);
+
+  const activeCfg = active && hasLocale(active) ? localeUi[active as Locale] : null;
+
+  return (
+    <div ref={ref} className="relative mb-2.5 sm:mb-3">
+      <button
+        type="button"
+        onClick={() => onOpenChange(!open)}
+        aria-expanded={open}
+        aria-haspopup="listbox"
+        className="flex w-full items-center justify-between gap-3 rounded-xl bg-white px-3 py-2.5 text-left shadow-[0_8px_32px_-12px_rgba(25,28,30,0.06)] ring-1 ring-ink/10 transition-colors hover:ring-primary/25 sm:px-4 sm:py-3"
+      >
+        <span className="flex min-w-0 items-center gap-2.5">
+          {activeCfg ? (
+            <DocumentLibraryFlagImage locale={active!} size="sm" />
+          ) : (
+            <span className="flex h-5 w-7 shrink-0 items-center justify-center rounded-[3px] bg-sand-100 text-[10px] text-secondary">
+              …
+            </span>
+          )}
+          <span className="min-w-0 truncate text-xs font-semibold text-ink sm:text-sm">
+            <span className="text-secondary">{languageLabel}: </span>
+            {activeCfg ? activeCfg.label : allLabel}
+          </span>
+        </span>
+        <svg
+          className={`h-4 w-4 shrink-0 text-secondary/60 transition-transform ${open ? "rotate-180" : ""}`}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          aria-hidden
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+      </button>
+
+      {open ? (
+        <ul
+          role="listbox"
+          aria-label={languageLabel}
+          className="absolute inset-x-0 top-full z-30 mt-1 overflow-hidden rounded-xl border border-sand-200 bg-white py-1 shadow-[0_16px_40px_-12px_rgba(25,28,30,0.18)]"
+        >
+          <li role="option" aria-selected={active === null}>
+            <button
+              type="button"
+              onClick={() => onSelect(null)}
+              className={`flex w-full items-center gap-2.5 px-3 py-2.5 text-left text-xs font-semibold transition-colors hover:bg-sand-100 sm:px-4 sm:text-sm ${
+                active === null ? "bg-primary/8 text-primary" : "text-ink"
+              }`}
+            >
+              <span className="flex h-5 w-7 shrink-0 items-center justify-center rounded-[3px] bg-sand-100 text-[9px] font-bold text-secondary">
+                ALL
+              </span>
+              {allLabel}
+            </button>
+          </li>
+          {languages.map((lang) => {
+            if (!hasLocale(lang)) return null;
+            const cfg = localeUi[lang as Locale];
+            const isActive = active === lang;
+            return (
+              <li key={lang} role="option" aria-selected={isActive}>
+                <button
+                  type="button"
+                  onClick={() => onSelect(lang)}
+                  className={`flex w-full items-center gap-2.5 px-3 py-2.5 text-left text-xs font-semibold transition-colors hover:bg-sand-100 sm:px-4 sm:text-sm ${
+                    isActive ? "bg-primary/8 text-primary" : "text-ink"
+                  }`}
+                >
+                  <DocumentLibraryFlagImage locale={lang} size="sm" />
+                  <span>{cfg.label}</span>
+                  <span className="ml-auto font-mono text-[10px] text-secondary/70">{cfg.short}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      ) : null}
+    </div>
   );
 }
 
@@ -407,7 +622,7 @@ function DocumentLibrarySidebarPanel({
         <p className="mb-2 shrink-0 text-[10px] font-bold tracking-[0.15em] text-secondary">{ui.sidebar.hierarchy}</p>
       ) : null}
 
-      <div className="min-h-0 flex-1 space-y-1 overflow-y-auto">
+      <div className={`min-h-0 flex-1 space-y-1 ${SIDEBAR_PANEL_SCROLL}`}>
         {tree.map((node) => (
           <TreeSection
             key={node.id}
@@ -428,10 +643,21 @@ function DocumentLibrarySidebarPanel({
 function DocumentLibraryInspectorPanel({
   ui,
   selected,
+  downloadLanguage,
+  onDownloadLanguageChange,
 }: {
   ui: DocumentLibraryUi;
   selected: DocumentLibraryItem;
+  downloadLanguage: string | null;
+  onDownloadLanguageChange: (lang: string) => void;
 }) {
+  const downloadLangs = selected.languages?.length ? selected.languages : null;
+  const activeDownloadLang =
+    downloadLanguage && downloadLangs?.includes(downloadLanguage)
+      ? downloadLanguage
+      : (downloadLangs?.[0] ?? selected.language);
+  const downloadHref = getDocumentDownloadHref(selected, activeDownloadLang);
+
   return (
     <>
       <DocumentPreviewIcon
@@ -484,6 +710,16 @@ function DocumentLibraryInspectorPanel({
         ))}
       </div>
       <p className="mt-6 text-[10px] font-bold tracking-[0.15em] text-secondary">{ui.inspector.secureDownload}</p>
+      {downloadLangs && downloadLangs.length > 1 ? (
+        <div className="mt-3 flex items-center gap-2">
+          <span className="text-[10px] font-semibold text-secondary">{ui.table.language}:</span>
+          <DocumentLanguageFlagButtons
+            languages={downloadLangs}
+            active={activeDownloadLang}
+            onSelect={onDownloadLanguageChange}
+          />
+        </div>
+      ) : null}
       <p className="mt-2 flex gap-2 text-[11px] leading-relaxed text-secondary">
         <span className="shrink-0" aria-hidden>
           🔒
@@ -491,12 +727,12 @@ function DocumentLibraryInspectorPanel({
         {ui.inspector.secureDownloadNote}
       </p>
       <a
-        href={selected.downloadHref ?? "#"}
-        target={selected.downloadHref ? "_blank" : undefined}
-        rel={selected.downloadHref ? "noopener noreferrer" : undefined}
-        aria-disabled={!selected.downloadHref}
+        href={downloadHref ?? "#"}
+        target={downloadHref ? "_blank" : undefined}
+        rel={downloadHref ? "noopener noreferrer" : undefined}
+        aria-disabled={!downloadHref}
         className={`mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-dark px-4 py-3 text-xs font-bold text-white transition-colors hover:bg-[#131b2e] ${
-          selected.downloadHref ? "" : "pointer-events-none opacity-70"
+          downloadHref ? "" : "pointer-events-none opacity-70"
         }`}
       >
         <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
@@ -516,6 +752,9 @@ export function DocumentLibraryPage({
 }: DocumentLibraryPageProps) {
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
+  const [languageFilter, setLanguageFilter] = useState<string | null>(null);
+  const [languageFilterOpen, setLanguageFilterOpen] = useState(false);
+  const [downloadLanguage, setDownloadLanguage] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState(documents[0]?.id ?? "");
   const [inspectorOpen, setInspectorOpen] = useState(true);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -526,9 +765,20 @@ export function DocumentLibraryPage({
   const [activeNav, setActiveNav] = useState<"inventory" | "dashboard" | "compliance" | "audit">("inventory");
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
+  const availableLanguages = useMemo(
+    () => collectDocumentLanguages(documents, locale),
+    [documents, locale],
+  );
+  const showLanguageFlags = availableLanguages.length > 1;
+
+  const selectLanguageFilter = useCallback((lang: string | null) => {
+    setLanguageFilter(lang);
+    setLanguageFilterOpen(false);
+  }, []);
+
   const filtered = useMemo(
-    () => filterDocuments(documents, search, categoryFilter),
-    [documents, search, categoryFilter],
+    () => filterDocuments(documents, search, categoryFilter, languageFilter),
+    [documents, search, categoryFilter, languageFilter],
   );
   const selected =
     filtered.find((d) => d.id === selectedId) ?? filtered[0] ?? documents[0] ?? null;
@@ -551,10 +801,13 @@ export function DocumentLibraryPage({
   const selectDocument = useCallback((id: string) => {
     setSelectedId(id);
     setInspectorOpen(true);
-    if (typeof window !== "undefined" && window.matchMedia("(max-width: 1279px)").matches) {
-      setMobileInspectorOpen(true);
+    const doc = documents.find((d) => d.id === id);
+    if (doc?.languages?.length) {
+      setDownloadLanguage(languageFilter && doc.languages.includes(languageFilter) ? languageFilter : doc.languages[0]);
+    } else {
+      setDownloadLanguage(null);
     }
-  }, []);
+  }, [documents, languageFilter]);
 
   const focusTroubleshooting = useCallback(() => {
     const t = ui.sidebar.tree.troubleshooting;
@@ -595,9 +848,13 @@ export function DocumentLibraryPage({
   const titleClass = (doc: DocumentLibraryItem) =>
     doc.criticalTitle ? "text-primary" : doc.highlight ? "text-primary" : "text-ink";
 
+  const renderDocumentTitle = (doc: DocumentLibraryItem) => (
+    <span className={titleClass(doc)}>{doc.title}</span>
+  );
+
   return (
     <div
-      className={`doc-lib-root flex min-h-dvh flex-col bg-sand-200 text-[#191C1E] ${DOCUMENT_LIBRARY_PAGE_PADDING_TOP}`}
+      className={`doc-lib-root flex flex-col bg-sand-200 text-[#191C1E] ${DOCUMENT_LIBRARY_PAGE_PADDING_TOP} lg:max-h-dvh lg:min-h-dvh`}
     >
       <header className="shrink-0 bg-dark px-3 py-3 sm:px-6">
         <div className="mx-auto flex max-w-[1800px] flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-6">
@@ -692,14 +949,19 @@ export function DocumentLibraryPage({
                 </button>
               </div>
             </div>
-            <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-6 pt-3">
-              <DocumentLibraryInspectorPanel ui={ui} selected={selected} />
+            <div className={`min-h-0 flex-1 px-4 pb-6 pt-3 ${SIDEBAR_PANEL_SCROLL}`}>
+              <DocumentLibraryInspectorPanel
+                ui={ui}
+                selected={selected}
+                downloadLanguage={downloadLanguage}
+                onDownloadLanguageChange={setDownloadLanguage}
+              />
             </div>
           </aside>
         </>
       ) : null}
 
-      <div className="mx-auto flex w-full min-h-0 max-w-[1800px] flex-1 flex-col overflow-hidden lg:flex-row">
+      <div className="mx-auto flex w-full max-w-[1800px] flex-col lg:min-h-0 lg:flex-1 lg:flex-row lg:overflow-hidden">
         <aside
           className={`hidden min-h-0 shrink-0 flex-col overflow-hidden bg-sand-100 transition-[width] duration-200 ease-out lg:flex ${
             sidebarCollapsed ? "w-[4.5rem] p-2" : "w-[min(100%,17rem)] min-w-[14rem] p-3 xl:p-4"
@@ -717,31 +979,44 @@ export function DocumentLibraryPage({
           />
         </aside>
 
-        <div className="flex min-h-0 min-w-0 flex-1 flex-col">
+        <div className="flex min-w-0 flex-col lg:min-h-0 lg:flex-1">
           <div
             className={`sticky top-0 z-20 shrink-0 border-b border-ink/[0.04] bg-sand-200/95 py-3 backdrop-blur-md sm:py-4 lg:static lg:border-0 lg:bg-sand-200 lg:backdrop-blur-none ${DOCUMENT_LIBRARY_PAGE_X}`}
           >
-            <label className="relative mx-auto block max-w-4xl">
-              <span className="sr-only">{ui.searchPlaceholder}</span>
-              <svg
-                className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-secondary/60 sm:left-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                aria-hidden
-              >
-                <circle cx="11" cy="11" r="7" />
-                <path strokeLinecap="round" d="M20 20l-3-3" />
-              </svg>
-              <input
-                type="search"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder={ui.searchPlaceholder}
-                className="w-full rounded-xl bg-white py-3 pl-10 pr-3 text-sm text-ink shadow-[0_8px_32px_-12px_rgba(25,28,30,0.06)] outline-none ring-1 ring-ink/10 placeholder:text-secondary/50 focus:ring-2 focus:ring-primary/35 sm:rounded-2xl sm:py-3.5 sm:pl-12 sm:pr-4"
-              />
-            </label>
+            <div className="mx-auto max-w-4xl">
+              {showLanguageFlags ? (
+                <DocumentLanguageFilterDropdown
+                  languages={availableLanguages}
+                  active={languageFilter}
+                  onSelect={selectLanguageFilter}
+                  allLabel={ui.searchAllLanguages}
+                  languageLabel={ui.table.language}
+                  open={languageFilterOpen}
+                  onOpenChange={setLanguageFilterOpen}
+                />
+              ) : null}
+              <label className="relative block">
+                <span className="sr-only">{ui.searchPlaceholder}</span>
+                <svg
+                  className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-secondary/60 sm:left-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  aria-hidden
+                >
+                  <circle cx="11" cy="11" r="7" />
+                  <path strokeLinecap="round" d="M20 20l-3-3" />
+                </svg>
+                <input
+                  type="search"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder={ui.searchPlaceholder}
+                  className="w-full rounded-xl bg-white py-3 pl-10 pr-3 text-sm text-ink shadow-[0_8px_32px_-12px_rgba(25,28,30,0.06)] outline-none ring-1 ring-ink/10 placeholder:text-secondary/50 focus:ring-2 focus:ring-primary/35 sm:rounded-2xl sm:py-3.5 sm:pl-12 sm:pr-4"
+                />
+              </label>
+            </div>
 
             {categoryFilter ? (
               <div className="mx-auto mt-2 flex max-w-4xl flex-wrap items-center gap-2">
@@ -785,22 +1060,29 @@ export function DocumentLibraryPage({
           </div>
 
           <div
-            className={`min-h-0 flex-1 overflow-y-auto overscroll-contain pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-3 sm:pt-4 ${DOCUMENT_LIBRARY_PAGE_X}`}
+            className={`pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-3 sm:pt-4 lg:min-h-0 lg:flex-1 lg:overflow-y-auto lg:overscroll-contain ${DOCUMENT_LIBRARY_PAGE_X}`}
           >
-            <div className="overflow-hidden rounded-xl bg-white shadow-[0_8px_32px_-12px_rgba(25,28,30,0.06)] sm:rounded-2xl">
+            <div className="overflow-visible rounded-xl bg-white shadow-[0_8px_32px_-12px_rgba(25,28,30,0.06)] sm:overflow-hidden sm:rounded-2xl">
               <div className="hidden md:block">
                 <div className="relative max-h-[min(50vh,28rem)] overflow-auto lg:max-h-[min(55vh,32rem)] xl:max-h-[min(60vh,36rem)]">
-                  <table className="w-full min-w-[40rem] border-collapse text-left">
+                  <table className="w-full min-w-[44rem] border-collapse text-left">
                     <thead className="sticky top-0 z-10 bg-sand-100 shadow-[0_1px_0_0_#F2F4F6]">
                       <tr>
-                        {[ui.table.category, ui.table.documentNo, ui.table.documentName, ui.table.status].map((h) => (
-                          <th
-                            key={h}
-                            className="whitespace-nowrap px-3 py-3 text-[10px] font-bold uppercase tracking-wider text-secondary sm:px-5"
-                          >
-                            {h}
-                          </th>
-                        ))}
+                        <th className="whitespace-nowrap px-3 py-3 text-[10px] font-bold uppercase tracking-wider text-secondary sm:px-5">
+                          {ui.table.category}
+                        </th>
+                        <th className="whitespace-nowrap px-3 py-3 text-[10px] font-bold uppercase tracking-wider text-secondary sm:px-5">
+                          {ui.table.documentNo}
+                        </th>
+                        <th className="whitespace-nowrap px-3 py-3 text-[10px] font-bold uppercase tracking-wider text-secondary sm:px-5">
+                          {ui.table.documentName}
+                        </th>
+                        <th className="whitespace-nowrap px-3 py-3 text-[10px] font-bold uppercase tracking-wider text-secondary sm:px-5">
+                          {ui.table.language}
+                        </th>
+                        <th className="whitespace-nowrap px-3 py-3 text-[10px] font-bold uppercase tracking-wider text-secondary sm:px-5">
+                          {ui.table.status}
+                        </th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-sand-200">
@@ -818,8 +1100,11 @@ export function DocumentLibraryPage({
                           <td className="whitespace-nowrap px-3 py-3 font-mono text-[10px] text-secondary/80 sm:px-5 sm:py-4 sm:text-xs">
                             {doc.code}
                           </td>
-                          <td className={`min-w-[12rem] px-3 py-3 text-sm font-semibold leading-snug sm:px-5 sm:py-4 ${titleClass(doc)}`}>
-                            {doc.title}
+                          <td className="min-w-[12rem] px-3 py-3 text-sm font-semibold leading-snug sm:px-5 sm:py-4">
+                            {renderDocumentTitle(doc)}
+                          </td>
+                          <td className="whitespace-nowrap px-3 py-3 sm:px-5 sm:py-4">
+                            <DocumentRowLanguageFlags doc={doc} />
                           </td>
                           <td className="whitespace-nowrap px-3 py-3 sm:px-5 sm:py-4">
                             <StatusBadge status={doc.status} table={ui.table} />
@@ -847,9 +1132,12 @@ export function DocumentLibraryPage({
                         <span className="text-[10px] font-bold uppercase tracking-wide text-secondary">
                           {doc.category}
                         </span>
-                        <StatusBadge status={doc.status} table={ui.table} />
+                        <div className="flex shrink-0 items-center gap-2">
+                          <DocumentRowLanguageFlags doc={doc} />
+                          <StatusBadge status={doc.status} table={ui.table} />
+                        </div>
                       </div>
-                      <span className={`text-sm font-semibold leading-snug ${titleClass(doc)}`}>{doc.title}</span>
+                      <span className="text-sm font-semibold leading-snug">{renderDocumentTitle(doc)}</span>
                       <span className="font-mono text-[10px] text-secondary/80">{doc.code}</span>
                     </button>
                   </li>
@@ -922,8 +1210,13 @@ export function DocumentLibraryPage({
                 ✕
               </button>
             </div>
-            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 pb-4 pt-3 sm:px-4">
-              <DocumentLibraryInspectorPanel ui={ui} selected={selected} />
+            <div className={`min-h-0 flex-1 px-3 pb-4 pt-3 sm:px-4 ${SIDEBAR_PANEL_SCROLL}`}>
+              <DocumentLibraryInspectorPanel
+                ui={ui}
+                selected={selected}
+                downloadLanguage={downloadLanguage}
+                onDownloadLanguageChange={setDownloadLanguage}
+              />
             </div>
           </aside>
         ) : null}

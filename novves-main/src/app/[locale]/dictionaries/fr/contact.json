@@ -10,7 +10,7 @@
     "headOffice": "Siège social",
     "headOfficeAddress": "19 Mayıs Mah. Sümer Sok.\nZitaş Plaza C2 Blok No:7\nKadıköy / İstanbul / Türkiye",
     "factory": "Usine",
-    "factoryAddress": "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
+    "factoryAddress": "Yalova Organize Sanayi Bölgesi\n2. Cadde No:12\nÇiftlikköy / Yalova",
     "workingHours": "Horaires d’ouverture",
     "weekdays": "Lundi – vendredi",
     "saturday": "Samedi",
@@ -59,7 +59,100 @@
     "heroLead": "Des collaborations de confiance tout au long de la chaîne d’approvisionnement, sur le terrain et dans l’écosystème technologique — le socle qui permet aux solutions Novves de se déployer durablement.",
     "desc": "Nos partenaires commerciaux et partenaires solutions.",
     "comingSoon": "Bientôt disponible",
-    "comingSoonDesc": "Le contenu de notre page partenaires est en cours de préparation. Les informations sur nos partenaires commerciaux et partenaires solutions seront publiées prochainement ici."
+    "comingSoonDesc": "Le contenu de notre page partenaires est en cours de préparation. Les informations sur nos partenaires commerciaux et partenaires solutions seront publiées prochainement ici.",
+    "heroStats": [
+      {
+        "value": "3",
+        "label": "Axes de partenariat"
+      },
+      {
+        "value": "TR + Global",
+        "label": "Échelle"
+      },
+      {
+        "value": "NOVVES",
+        "label": "Marque"
+      }
+    ],
+    "partnerRecords": {
+      "mmsc": {
+        "name": "MMSC (M.M. Steel Corporation Pvt. Ltd.)",
+        "subtitle": "Solutions d'ingénierie de construction et MEP",
+        "description": "MMSC (M.M. Steel Corporation Pvt. Ltd.) opère principalement dans les solutions d'ingénierie de construction et MEP (mécanique, électrique et plomberie). La société est un importateur et un distributeur de matériaux de construction professionnels et de produits d'ingénierie au Pakistan.",
+        "expertise": [
+          "Construction",
+          "Député européen",
+          "Matériaux de construction",
+          "Produits d'ingénierie",
+          "Importer",
+          "Distribution"
+        ]
+      },
+      "kazema": {
+        "name": "Kazema Traders Company WLL",
+        "subtitle": "Solutions CVC, réfrigération et commerce",
+        "description": "Kazema Traders Company WLL est une filiale de Kazema Global Holding. Depuis 1976, elle opère au Koweït dans les domaines de la climatisation, de la réfrigération, du commerce et de la distribution de produits d'ingénierie.",
+        "expertise": [
+          "CVC",
+          "Réfrigération",
+          "Commerce",
+          "Solutions industrielles",
+          "Importer",
+          "Distribution"
+        ]
+      },
+      "ventdelux": {
+        "name": "VentDelux LLP",
+        "subtitle": "Systèmes de ventilation, de climatisation et d'automatisation",
+        "description": "VentDelux LLP est basée à Astana, au Kazakhstan, et propose la conception, l'installation et le service de systèmes de ventilation, de climatisation et d'automatisation. C'est un partenaire régional des solutions de ventilation jet NOVVES.",
+        "expertise": [
+          "Ventilation",
+          "CVC",
+          "Automation",
+          "Conception",
+          "Installation",
+          "Service"
+        ]
+      },
+      "sanlygala": {
+        "name": "Sanly Gala ES",
+        "subtitle": "Solutions de ventilation et d'ingénierie",
+        "description": "Sanly Gala ES opère à Achgabat, au Turkménistan, en tant que partenaire régional pour les solutions de ventilation et d'ingénierie NOVVES.",
+        "expertise": [
+          "Ventilation",
+          "CVC",
+          "Ingénierie",
+          "Distribution",
+          "Installation",
+          "Service"
+        ]
+      }
+    },
+    "partnerList": {
+      "sectionLabel": "Nos partenaires",
+      "heroTitle1": "Plus fort avec notre",
+      "heroTitle2": "réseau de partenaires.",
+      "heroDesc": "En collaboration avec des partenaires de confiance, nous ajoutons de la valeur à vos projets et proposons des solutions durables.",
+      "searchPlaceholder": "Rechercher une entreprise, un service ou un mot-clé...",
+      "allCountries": "Tous les pays",
+      "allCategories": "Toutes les catégories",
+      "filter": "Filtre",
+      "colCompany": "Entreprise",
+      "colCountry": "Pays/Région",
+      "colExpertise": "Domaines d'expertise",
+      "colContact": "Coordonnées",
+      "colWebsite": "Site web",
+      "ctaQuestion": "Vous souhaitez en savoir plus sur les nouvelles collaborations et notre programme partenaire ?",
+      "ctaButton": "Contactez-nous",
+      "valueTrust": "Partenaires de confiance",
+      "valueQuality": "Solutions de qualité",
+      "valueGrowth": "Croissance durable",
+      "categoryAutomation": "Automation",
+      "categoryEnergy": "Énergie",
+      "categoryDigital": "Numérisation",
+      "categoryConstruction": "Construction et député européen",
+      "noResults": "Aucun partenaire ne correspond à votre recherche."
+    }
   },
   "sosyalMedya": {
     "breadcrumbHome": "Accueil",

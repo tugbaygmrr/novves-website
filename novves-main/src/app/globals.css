@@ -557,3 +557,25 @@ body {
   background: rgba(0, 0, 0, 0.08);
   border-radius: 10px;
 }
+
+/* Çözüm / ürün sol paneli — görünür kaydırma çubuğu */
+.sidebar-panel-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 56, 107, 0.4) rgba(0, 0, 0, 0.06);
+  -webkit-overflow-scrolling: touch;
+}
+.sidebar-panel-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-panel-scroll::-webkit-scrollbar-track {
+  margin: 4px 0;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.sidebar-panel-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 56, 107, 0.38);
+  border-radius: 10px;
+}
+.sidebar-panel-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 56, 107, 0.55);
+}

@@ -7,6 +7,7 @@ import {
   getHizmetlerNavLabel,
   resolveActiveHizmetlerNavId,
 } from "@/lib/hizmetler-nav";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 
 type Props = {
   locale: string;
@@ -24,11 +25,11 @@ export function HizmetlerSidebar({ locale, title, linkLabels, downloadSpecLabel 
       id="hizmetlerSidebar"
       className="hidden w-64 shrink-0 border-r border-sand-300/60 bg-sand-200 lg:block xl:w-72"
     >
-      <div className="sticky top-28 flex h-[calc(100vh-7rem)] flex-col">
+      <div className="sticky top-28 flex h-[calc(100vh-7rem)] min-h-0 flex-col">
       <div className="border-b border-sand-300/70 px-4 py-5">
         <h2 className="text-xl font-extrabold uppercase tracking-wide text-hz-on-surface">{title}</h2>
       </div>
-      <nav className="flex flex-1 flex-col gap-1 overflow-y-auto p-4">
+      <nav className={`flex min-h-0 flex-1 flex-col gap-1 p-4 ${SIDEBAR_PANEL_SCROLL}`}>
         {HIZMETLER_NAV_ITEMS.map((item) => {
           const label = getHizmetlerNavLabel(item.labelKey, linkLabels);
           const isActive = item.id === activeId;

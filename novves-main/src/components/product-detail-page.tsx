@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ProductStandardMedia } from "@/components/product-standard-media";
+import { ProductPageJsonLd } from "@/components/seo/product-page-json-ld";
 import Link from "next/link";
 import { getProductCatalogUi } from "@/lib/product-catalog-ui";
 import type { Locale } from "@/i18n/config";
@@ -94,7 +95,14 @@ export function ProductDetailPage({
   const featuredImage = featuredModel ? resolveModelImage(featuredModel.image) : undefined;
 
   return (
-    <main className="overflow-x-clip bg-sand-200 text-ink">
+    <>
+      <ProductPageJsonLd
+        name={title}
+        description={intro}
+        image={featuredImage}
+        models={models}
+      />
+      <main className="overflow-x-clip bg-sand-200 text-ink">
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#111827] pb-9 pt-[5.5rem] text-white sm:pb-14 sm:pt-28 lg:pb-16 lg:pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(239,95,23,0.22),transparent_34%),linear-gradient(135deg,#111827_0%,#1e3a5f_48%,#10141f_100%)]" />
@@ -345,5 +353,6 @@ export function ProductDetailPage({
         </div>
       </section>
     </main>
+    </>
   );
 }

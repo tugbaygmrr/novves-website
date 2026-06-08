@@ -7,18 +7,23 @@ import type { DocumentLibraryUi } from "@/lib/document-library/types";
 import { getDictionary, hasLocale, type Locale } from "../../dictionaries";
 import { technicalDetailMetadata } from "@/lib/i18n-metadata";
 
-type LibraryDict = DocumentLibraryUi & {
-  documents: {
-    id: string;
-    category: string;
-    code: string;
-    title: string;
-    status: "active" | "passive" | "critical" | "current" | "approved" | "video";
-    highlight?: boolean;
-    criticalTitle?: boolean;
-    treeCategory?: string;
-  }[];
+type LibraryBlock = DocumentLibraryUi & {
+  documents?: unknown[];
 };
+
+async function loadLibraryDict(locale: Locale): Promise<LibraryBlock> {
+  const dict = await getDictionary(locale);
+  const block = dict.technical.dokumanKutuphanesi.library as LibraryBlock | undefined;
+  if (block?.documents?.length) return block;
+
+  if (locale !== "en") {
+    const en = await getDictionary("en");
+    const enBlock = en.technical.dokumanKutuphanesi.library as LibraryBlock | undefined;
+    if (enBlock?.documents?.length) return enBlock;
+  }
+
+  throw new Error("document library dictionary missing");
+}
 
 export async function generateMetadata({
   params,
@@ -27,20 +32,6 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return technicalDetailMetadata(locale, "dokumanKutuphanesi");
-}
-
-async function loadLibraryDict(locale: Locale): Promise<LibraryDict> {
-  const dict = await getDictionary(locale);
-  const block = dict.technical.dokumanKutuphanesi.library as LibraryDict | undefined;
-  if (block?.documents?.length) return block;
-
-  if (locale !== "en") {
-    const en = await getDictionary("en");
-    const enBlock = en.technical.dokumanKutuphanesi.library as LibraryDict | undefined;
-    if (enBlock?.documents?.length) return enBlock;
-  }
-
-  throw new Error("document library dictionary missing");
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
@@ -52,7 +43,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const libraryDict = await loadLibraryDict(locale);
   const { documents: _docs, ...uiFromLocale } = libraryDict;
   const ui = resolveDocumentLibraryUi(uiFromLocale, enLibrary ?? uiFromLocale);
-  const { documents, tree, defaultPreviewImage } = buildDocumentLibraryPageData(ui, libraryDict);
+  const { documents, tree, defaultPreviewImage } = buildDocumentLibraryPageData(ui);
 
   return (
     <DocumentLibraryPage

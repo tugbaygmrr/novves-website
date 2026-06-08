@@ -467,7 +467,7 @@ export function ReferanslarClient({
                   <span className="material-symbols-outlined text-sm">location_on</span>
                   {selectedRef.countryName}
                 </span>
-                <span className="rounded-full bg-[#eceef0] px-3 py-1 text-xs font-bold uppercase text-hz-on-surface-variant">
+                <span className="inline-flex items-center rounded-full bg-[#eceef0] px-3 pt-1.5 pb-1 text-xs font-bold uppercase leading-none text-hz-on-surface-variant">
                   {selectedRef.className}
                 </span>
               </div>
@@ -531,7 +531,7 @@ function ReferenceCard({
             <span className="material-symbols-outlined text-sm">location_on</span>
             {ref_.countryName}
           </span>
-          <span className="rounded-full bg-[#eceef0] px-3 py-1 text-[10px] font-bold uppercase text-hz-on-surface-variant sm:text-xs">
+          <span className="inline-flex items-center rounded-full bg-[#eceef0] px-3 pt-1.5 pb-1 text-[10px] font-bold uppercase leading-none text-hz-on-surface-variant sm:text-xs">
             {ref_.className}
           </span>
         </div>
@@ -577,7 +577,7 @@ function ReferenceListRow({
             <span className="inline-flex items-center gap-1 rounded-full bg-hz-secondary-fixed px-2.5 py-0.5 text-[10px] font-bold uppercase text-hz-on-secondary-fixed">
               {ref_.countryName}
             </span>
-            <span className="rounded-full bg-[#eceef0] px-2.5 py-0.5 text-[10px] font-bold uppercase text-hz-on-surface-variant">
+            <span className="inline-flex items-center rounded-full bg-[#eceef0] px-2.5 pt-1 pb-0.5 text-[10px] font-bold uppercase leading-none text-hz-on-surface-variant">
               {ref_.className}
             </span>
           </div>

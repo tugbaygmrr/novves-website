@@ -1,4 +1,5 @@
 import type { SosyalMedyaPlatformId } from "./types";
+import { NOVVES_PRIMARY_LINKEDIN } from "@/lib/company/addresses";
 
 export type SosyalMedyaPlatformConfig = {
   id: SosyalMedyaPlatformId;
@@ -20,8 +21,8 @@ export const SOSYAL_MEDYA_PLATFORMS: SosyalMedyaPlatformConfig[] = [
     id: "linkedin",
     icon: "linkedin",
     iconBgClass: "bg-[#0077b5]",
-    trHref: "https://tr.linkedin.com/company/novvesturkiye",
-    globalHref: "https://tr.linkedin.com/company/novvesglobal",
+    trHref: NOVVES_PRIMARY_LINKEDIN,
+    globalHref: NOVVES_PRIMARY_LINKEDIN,
   },
   {
     id: "whatsapp",

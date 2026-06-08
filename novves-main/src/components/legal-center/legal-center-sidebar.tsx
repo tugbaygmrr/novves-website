@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { LegalCenterUi } from "@/lib/legal-center/types";
 import type { LegalDocId } from "@/lib/legal-center/types";
 import { LegalDocIcon } from "@/components/legal-center/legal-center-icons";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 
 export type LegalNavItem = {
   id: LegalDocId;
@@ -58,7 +59,7 @@ export function LegalCenterSidebar({ locale, activeId, items, ui, onNavigate }: 
       </div>
 
       <nav
-        className="min-h-0 flex-1 space-y-0.5 overflow-y-auto overscroll-y-contain px-3 pb-6 custom-scrollbar [-webkit-overflow-scrolling:touch]"
+        className={`min-h-0 flex-1 space-y-0.5 px-3 pb-6 ${SIDEBAR_PANEL_SCROLL}`}
         aria-label={ui.treeTitle}
       >
         <p className="mb-3 mt-1 px-2 text-[10px] font-bold uppercase tracking-widest text-primary/80">

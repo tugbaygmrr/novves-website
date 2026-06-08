@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { sustainabilityMetadata } from "@/lib/i18n-metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return sustainabilityMetadata(locale, "geriDonusum");
+}
 
 export default async function GeriDonusum({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -12,7 +23,7 @@ export default async function GeriDonusum({ params }: { params: Promise<{ locale
   return (
     <main>
       <section className="relative flex min-h-[540px] items-end overflow-hidden">
-        <Image src="/images/page-hero/cozumler-main.jpg" alt="" fill priority className="object-cover" sizes="100vw" />
+        <Image src="/images/page-hero/cozumler-main.jpg" alt="" fill priority className="object-cover" sizes="(max-width: 768px) 100vw, 1280px" />
         <div className="absolute inset-0 bg-[#4e525c]/28" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/80 to-[#2f3440]/94" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_10%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_86%_96%,rgba(17,22,33,0.42)_0%,rgba(17,22,33,0)_55%)]" />

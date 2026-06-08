@@ -10,7 +10,7 @@
     "headOffice": "Oficina central",
     "headOfficeAddress": "19 de mayo Mah. Sumer Sok.\nZitaş Plaza C2 Bloque No:7\nKadıköy / Estambul / Türkiye",
     "factory": "Fábrica",
-    "factoryAddress": "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
+    "factoryAddress": "Yalova Organize Sanayi Bölgesi\n2. Cadde No:12\nÇiftlikköy / Yalova",
     "workingHours": "Horas de trabajo",
     "weekdays": "Lunes – Viernes",
     "saturday": "Sábado",
@@ -59,7 +59,100 @@
     "heroLead": "Colaboraciones confiables en toda la cadena de suministro, la entrega en campo y el ecosistema tecnológico: la columna vertebral que mantiene las soluciones de Novves escalando de manera sostenible.",
     "desc": "Nuestros socios comerciales y socios de soluciones.",
     "comingSoon": "Muy pronto",
-    "comingSoonDesc": "Se está preparando el contenido para nuestra página de socios. Próximamente se publicará aquí información sobre nuestros socios comerciales y socios de soluciones."
+    "comingSoonDesc": "Se está preparando el contenido para nuestra página de socios. Próximamente se publicará aquí información sobre nuestros socios comerciales y socios de soluciones.",
+    "heroStats": [
+      {
+        "value": "3",
+        "label": "Ejes de asociación"
+      },
+      {
+        "value": "TR + Global",
+        "label": "Escala"
+      },
+      {
+        "value": "NOVVES",
+        "label": "Marca"
+      }
+    ],
+    "partnerRecords": {
+      "mmsc": {
+        "name": "MMSC (M.M. Steel Corporation Pvt. Ltd.)",
+        "subtitle": "Soluciones de construcción e ingeniería MEP",
+        "description": "MMSC (M.M. Steel Corporation Pvt. Ltd.) opera principalmente en soluciones de ingeniería de construcción y MEP (mecánica, eléctrica y plomería). La empresa es importadora y distribuidora de materiales de construcción profesionales y productos de ingeniería en Pakistán.",
+        "expertise": [
+          "Construcción",
+          "eurodiputado",
+          "Materiales de construcción",
+          "Productos de ingeniería",
+          "Importar",
+          "Distribución"
+        ]
+      },
+      "kazema": {
+        "name": "Kazema Traders Company WLL",
+        "subtitle": "HVAC, refrigeración y soluciones comerciales.",
+        "description": "Kazema Traders Company WLL es una subsidiaria de Kazema Global Holding. Desde 1976, opera en Kuwait en los sectores de aire acondicionado, refrigeración, comercialización y distribución de productos de ingeniería.",
+        "expertise": [
+          "climatización",
+          "Refrigeración",
+          "Comercio",
+          "Soluciones industriales",
+          "Importar",
+          "Distribución"
+        ]
+      },
+      "ventdelux": {
+        "name": "VentDelux LLP",
+        "subtitle": "Sistemas de ventilación, aire acondicionado y automatización.",
+        "description": "VentDelux LLP tiene su sede en Astana, Kazajstán, y ofrece diseño, instalación y servicio para sistemas de ventilación, aire acondicionado y automatización. Es un socio regional para las soluciones de ventilación por chorro de NOVVES.",
+        "expertise": [
+          "Ventilación",
+          "climatización",
+          "Automatización",
+          "Diseño",
+          "Instalación",
+          "Servicio"
+        ]
+      },
+      "sanlygala": {
+        "name": "Sanly Gala ES",
+        "subtitle": "Soluciones de ventilación e ingeniería.",
+        "description": "Sanly Gala ES opera en Ashgabat, Turkmenistán, como socio regional de las soluciones de ingeniería y ventilación de NOVVES.",
+        "expertise": [
+          "Ventilación",
+          "climatización",
+          "Ingeniería",
+          "Distribución",
+          "Instalación",
+          "Servicio"
+        ]
+      }
+    },
+    "partnerList": {
+      "sectionLabel": "Nuestros socios",
+      "heroTitle1": "Más fuertes con nuestro",
+      "heroTitle2": "red de socios.",
+      "heroDesc": "Junto con socios de confianza, agregamos valor a sus proyectos y brindamos soluciones sostenibles.",
+      "searchPlaceholder": "Buscar empresa, servicio o palabra clave...",
+      "allCountries": "Todos los países",
+      "allCategories": "Todas las categorías",
+      "filter": "Filtrar",
+      "colCompany": "Compañía",
+      "colCountry": "País / Región",
+      "colExpertise": "Áreas de especialización",
+      "colContact": "Detalles de contacto",
+      "colWebsite": "Sitio web",
+      "ctaQuestion": "¿Le gustaría conocer nuevas colaboraciones y nuestro programa de socios?",
+      "ctaButton": "Contáctenos",
+      "valueTrust": "Socios de confianza",
+      "valueQuality": "Soluciones de calidad",
+      "valueGrowth": "Crecimiento Sostenible",
+      "categoryAutomation": "Automatización",
+      "categoryEnergy": "Energía",
+      "categoryDigital": "Digitalización",
+      "categoryConstruction": "Construcción y eurodiputado",
+      "noResults": "Ningún socio coincide con su búsqueda."
+    }
   },
   "sosyalMedya": {
     "breadcrumbHome": "Hogar",

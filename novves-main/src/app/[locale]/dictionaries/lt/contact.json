@@ -10,7 +10,7 @@
     "headOffice": "Pagrindinė buveinė",
     "headOfficeAddress": "19 Mayıs Mah. Sümer Sok.\nZitaş Plaza C2 Blok Nr.7\nKadiköy / İstanbul / Türkiye",
     "factory": "Gamykla",
-    "factoryAddress": "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
+    "factoryAddress": "Yalova Organize Sanayi Bölgesi\n2. Cadde No:12\nÇiftlikköy / Yalova",
     "workingHours": "Darbo valandos",
     "weekdays": "Pirmadienis – penktadienis",
     "saturday": "šeštadienis",
@@ -59,7 +59,100 @@
     "heroLead": "Patikimas bendradarbiavimas tiekimo grandinėje, pristatymas vietoje ir technologijų ekosistema – pagrindas, užtikrinantis tvarų „Novves“ sprendimų mastelį.",
     "desc": "Mūsų verslo partneriai ir sprendimų partneriai.",
     "comingSoon": "Netrukus",
-    "comingSoonDesc": "Mūsų partnerių puslapio turinys ruošiamas. Netrukus čia bus paskelbta informacija apie mūsų verslo partnerius ir sprendimų partnerius."
+    "comingSoonDesc": "Mūsų partnerių puslapio turinys ruošiamas. Netrukus čia bus paskelbta informacija apie mūsų verslo partnerius ir sprendimų partnerius.",
+    "heroStats": [
+      {
+        "value": "3",
+        "label": "Partnerystės ašys"
+      },
+      {
+        "value": "TR + Global",
+        "label": "Skalė"
+      },
+      {
+        "value": "NOVVES",
+        "label": "Prekės ženklas"
+      }
+    ],
+    "partnerRecords": {
+      "mmsc": {
+        "name": "MMSC (M.M. Steel Corporation Pvt. Ltd.)",
+        "subtitle": "Statybos ir MEP inžineriniai sprendimai",
+        "description": "MMSC (M.M. Steel Corporation Pvt. Ltd.) daugiausia dirba statybų ir MEP (Mechanical, Electrical & Plumbing) inžinerinių sprendimų srityje. Įmonė yra profesionalių statybinių medžiagų ir inžinerinių produktų importuotoja ir platintoja Pakistane.",
+        "expertise": [
+          "Statyba",
+          "EP narys",
+          "Statybinės medžiagos",
+          "Inžineriniai produktai",
+          "Importuoti",
+          "Paskirstymas"
+        ]
+      },
+      "kazema": {
+        "name": "Kazema Traders Company WLL",
+        "subtitle": "ŠVOK, šaldymo ir prekybos sprendimai",
+        "description": "„Kazema Traders Company WLL“ yra „Kazema Global Holding“ dukterinė įmonė. Nuo 1976 m. Kuveite veikia oro kondicionavimo, šaldymo, inžinerinių produktų prekybos ir platinimo srityse.",
+        "expertise": [
+          "ŠVOK",
+          "Šaldymas",
+          "Prekyba",
+          "Pramoniniai sprendimai",
+          "Importuoti",
+          "Paskirstymas"
+        ]
+      },
+      "ventdelux": {
+        "name": "VentDelux LLP",
+        "subtitle": "Vėdinimo, oro kondicionavimo ir automatikos sistemos",
+        "description": "VentDelux LLP yra įsikūrusi Astanoje, Kazachstane, teikianti vėdinimo, oro kondicionavimo ir automatikos sistemų projektavimą, montavimą ir aptarnavimą. Tai regioninis NOVVES reaktyvinio vėdinimo sprendimų partneris.",
+        "expertise": [
+          "Vėdinimas",
+          "ŠVOK",
+          "Automatika",
+          "Dizainas",
+          "Montavimas",
+          "Aptarnavimas"
+        ]
+      },
+      "sanlygala": {
+        "name": "Sanly Gala ES",
+        "subtitle": "Vėdinimo ir inžineriniai sprendimai",
+        "description": "Sanly Gala ES veikia Ašchabade, Turkmėnistane, kaip NOVVES vėdinimo ir inžinerinių sprendimų regioninis partneris.",
+        "expertise": [
+          "Vėdinimas",
+          "ŠVOK",
+          "Inžinerija",
+          "Paskirstymas",
+          "Montavimas",
+          "Aptarnavimas"
+        ]
+      }
+    },
+    "partnerList": {
+      "sectionLabel": "Mūsų partneriai",
+      "heroTitle1": "Stipresnis su mūsų",
+      "heroTitle2": "partnerių tinklas.",
+      "heroDesc": "Kartu su patikimais partneriais sukuriame pridėtinę vertę jūsų projektams ir teikiame tvarius sprendimus.",
+      "searchPlaceholder": "Ieškokite įmonės, paslaugos ar raktinio žodžio...",
+      "allCountries": "Visos šalys",
+      "allCategories": "Visos kategorijos",
+      "filter": "Filtruoti",
+      "colCompany": "Įmonė",
+      "colCountry": "Šalis / Regionas",
+      "colExpertise": "Ekspertizės sritys",
+      "colContact": "Kontaktiniai duomenys",
+      "colWebsite": "Svetainė",
+      "ctaQuestion": "Ar norėtumėte sužinoti apie naujus bendradarbiavimus ir mūsų partnerių programą?",
+      "ctaButton": "Susisiekite su mumis",
+      "valueTrust": "Patikimi partneriai",
+      "valueQuality": "Kokybiški sprendimai",
+      "valueGrowth": "Tvarus augimas",
+      "categoryAutomation": "Automatika",
+      "categoryEnergy": "Energija",
+      "categoryDigital": "Skaitmeninimas",
+      "categoryConstruction": "Statyba ir europarlamentaras",
+      "noResults": "Nėra partnerių, atitinkančių jūsų paiešką."
+    }
   },
   "sosyalMedya": {
     "breadcrumbHome": "Pradžia",

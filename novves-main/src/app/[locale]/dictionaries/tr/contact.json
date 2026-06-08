@@ -10,7 +10,7 @@
     "headOffice": "Merkez Ofis",
     "headOfficeAddress": "19 Mayıs Mah. Sümer Sok.\nZitaş Plaza C2 Blok No:7\nKadıköy / İstanbul / Türkiye",
     "factory": "Fabrika",
-    "factoryAddress": "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
+    "factoryAddress": "Yalova Organize Sanayi Bölgesi\n2. Cadde No:12\nÇiftlikköy / Yalova",
     "workingHours": "Çalışma Saatleri",
     "weekdays": "Pazartesi – Cuma",
     "saturday": "Cumartesi",
@@ -59,7 +59,100 @@
     "heroLead": "Tedarik zinciri, saha kurulumu ve teknoloji ekosisteminde güvenilir iş birlikleri; Novves çözümlerinin sürdürülebilir şekilde büyümesinin omurgası.",
     "desc": "İş ortaklarımız ve çözüm partnerlerimiz.",
     "comingSoon": "Çok Yakında",
-    "comingSoonDesc": "Partner sayfamız için içerikler hazırlanmaktadır. İş ortaklarımız ve çözüm partnerlerimiz hakkında bilgiler yakında burada yayınlanacaktır."
+    "comingSoonDesc": "Partner sayfamız için içerikler hazırlanmaktadır. İş ortaklarımız ve çözüm partnerlerimiz hakkında bilgiler yakında burada yayınlanacaktır.",
+    "heroStats": [
+      {
+        "value": "3",
+        "label": "Ortaklık ekseni"
+      },
+      {
+        "value": "TR + Global",
+        "label": "Ölçek"
+      },
+      {
+        "value": "NOVVES",
+        "label": "Marka"
+      }
+    ],
+    "partnerRecords": {
+      "mmsc": {
+        "name": "MMSC (M.M. Steel Corporation Pvt. Ltd.)",
+        "subtitle": "İnşaat ve MEP mühendisliği çözümleri",
+        "description": "MMSC (M.M. Steel Corporation Pvt. Ltd.) ağırlıklı olarak inşaat ve MEP (Mechanical, Electrical & Plumbing) mühendisliği çözümleri sektöründe faaliyet göstermektedir. Şirket, Pakistan'da profesyonel yapı malzemeleri ve mühendislik ürünlerinin ithalatçısı ve distribütörüdür.",
+        "expertise": [
+          "İnşaat",
+          "MEP",
+          "Yapı Malzemeleri",
+          "Mühendislik Ürünleri",
+          "İthalat",
+          "Distribütörlük"
+        ]
+      },
+      "kazema": {
+        "name": "Kazema Traders Company WLL",
+        "subtitle": "HVAC, soğutma ve ticaret çözümleri",
+        "description": "Kazema Traders Company WLL, Kazema Global Holding'in iştiraklerinden biridir. 1976'dan bu yana Kuveyt'te iklimlendirme, soğutma, mühendislik ürünleri ticareti ve dağıtım alanlarında faaliyet göstermektedir.",
+        "expertise": [
+          "HVAC",
+          "Soğutma",
+          "Ticaret",
+          "Endüstriyel Çözümler",
+          "İthalat",
+          "Dağıtım"
+        ]
+      },
+      "ventdelux": {
+        "name": "VentDelux LLP",
+        "subtitle": "Havalandırma, iklimlendirme ve otomasyon sistemleri",
+        "description": "VentDelux LLP, Kazakistan'ın Astana kentinde faaliyet gösteren; havalandırma, iklimlendirme ve otomasyon sistemlerinin projelendirilmesi, montajı ve servis hizmetleri sunan bir partnerdir. NOVVES jet havalandırma çözümlerinin bölgesel iş ortağıdır.",
+        "expertise": [
+          "Havalandırma",
+          "HVAC",
+          "Otomasyon",
+          "Proje",
+          "Montaj",
+          "Servis"
+        ]
+      },
+      "sanlygala": {
+        "name": "Sanly Gala ES",
+        "subtitle": "Havalandırma ve mühendislik çözümleri",
+        "description": "Sanly Gala ES, Turkmenistan'ın Aşgabat kentinde faaliyet gösteren bir iş ortağıdır. Havalandırma ve mühendislik çözümleri alanında NOVVES ile bölgesel iş birliği yürütmektedir.",
+        "expertise": [
+          "Havalandırma",
+          "HVAC",
+          "Mühendislik",
+          "Distribütörlük",
+          "Montaj",
+          "Servis"
+        ]
+      }
+    },
+    "partnerList": {
+      "sectionLabel": "Partnerlerimiz",
+      "heroTitle1": "Partner ağımızla",
+      "heroTitle2": "daha güçlüyüz.",
+      "heroDesc": "Güvenilir iş ortaklarımızla birlikte, projelerinize değer katıyor ve sürdürülebilir çözümler sunuyoruz.",
+      "searchPlaceholder": "Firma adı, hizmet veya anahtar kelime ara...",
+      "allCountries": "Tüm Ülkeler",
+      "allCategories": "Tüm Kategoriler",
+      "filter": "Filtrele",
+      "colCompany": "Firma Adı",
+      "colCountry": "Ülke / Bölge",
+      "colExpertise": "Uzmanlık Alanları",
+      "colContact": "İletişim Bilgileri",
+      "colWebsite": "Web Sitesi",
+      "ctaQuestion": "Yeni iş birlikleri ve partner programımız hakkında bilgi almak ister misiniz?",
+      "ctaButton": "Bizimle İletişime Geçin",
+      "valueTrust": "Güvenilir İş Ortakları",
+      "valueQuality": "Kaliteli Çözümler",
+      "valueGrowth": "Sürdürülebilir Büyüme",
+      "categoryAutomation": "Otomasyon",
+      "categoryEnergy": "Enerji",
+      "categoryDigital": "Dijitalleşme",
+      "categoryConstruction": "İnşaat & MEP",
+      "noResults": "Aramanızla eşleşen partner bulunamadı."
+    }
   },
   "sosyalMedya": {
     "breadcrumbHome": "Ana Sayfa",

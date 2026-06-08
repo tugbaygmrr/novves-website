@@ -5,6 +5,11 @@ import {
   pickLocaleFromAcceptLanguage,
   type Locale,
 } from "@/i18n/config";
+import {
+  resolveLegacyHostRedirect,
+  resolveLegacyRedirect,
+} from "@/lib/seo/legacy-redirects";
+import { getSiteUrl, PRODUCTION_SITE_URL } from "@/lib/seo/metadata";
 
 /** cookie-consent-storage ile aynı anahtar — Edge paketinde tarayıcı API’si olmadan kullanılmalı */
 const CONSENT_RESTRICTED_COOKIE_NAME = "NOVVES_consent_restricted";
@@ -43,8 +48,10 @@ function hasAuthCookie(cookieValue: string | undefined): boolean {
   return typeof cookieValue === "string" && cookieValue.length > 0;
 }
 
-/** Kök `app/layout.tsx` içinde `<html lang>` için — URL’deki `[locale]` segmenti */
+/** Kök `app/layout.tsx` içinde `<html lang>` için — URL'deki `[locale]` segmenti */
 const LOCALE_HEADER = "x-novves-locale";
+/** generateMetadata — dinamik canonical / hreflang için tam sayfa yolu */
+const PATHNAME_HEADER = "x-pathname";
 
 function requestHeadersWithLocale(request: NextRequest, pathname: string): Headers {
   const requestHeaders = new Headers(request.headers);
@@ -52,7 +59,34 @@ function requestHeadersWithLocale(request: NextRequest, pathname: string): Heade
   const loc =
     seg && locales.includes(seg as Locale) ? seg : defaultLocale;
   requestHeaders.set(LOCALE_HEADER, loc);
+  requestHeaders.set(PATHNAME_HEADER, pathname);
   return requestHeaders;
+}
+
+function canonicalSiteOrigin(): string {
+  try {
+    return new URL(getSiteUrl()).origin;
+  } catch {
+    return PRODUCTION_SITE_URL;
+  }
+}
+
+/** 301 — production'da kanonik domaine, dev'de ayni host'ta. */
+function permanentRedirect(request: NextRequest, pathname: string) {
+  const url = request.nextUrl.clone();
+  const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  if (process.env.NODE_ENV === "production") {
+    url.href = `${canonicalSiteOrigin()}${path}`;
+  } else {
+    url.pathname = path;
+  }
+  return NextResponse.redirect(url, 301);
+}
+
+function legacyHostRedirect(request: NextRequest, host: string, pathname: string) {
+  const target = resolveLegacyHostRedirect(host, pathname);
+  if (target) return permanentRedirect(request, target);
+  return null;
 }
 
 export function proxy(request: NextRequest) {
@@ -71,6 +105,14 @@ export function proxy(request: NextRequest) {
       { status: 429 }
     );
   }
+
+  // --- Eski site / alt domain migrasyonu (301) ---
+  const host = request.headers.get("host")?.split(":")[0]?.toLowerCase() ?? "";
+  const hostRedirect = legacyHostRedirect(request, host, pathname);
+  if (hostRedirect) return hostRedirect;
+
+  const legacyPath = resolveLegacyRedirect(pathname, "tr");
+  if (legacyPath) return permanentRedirect(request, legacyPath);
 
   // --- API & Next internals — never locale-prefix (/_next/data RSC vb. yoksa 404) ---
   if (pathname.startsWith("/api") || pathname.startsWith("/_next")) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState, useCallback, type CSSProperties } from "react";
+import { useRef, useEffect, useState, useCallback, type CSSProperties, type RefObject } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
@@ -146,8 +146,46 @@ function heroDisplayStats(stats?: StartCard["stats"]) {
 }
 
 
-/** Hero MP4 kapak — lazy/preload öncesi boş siyah kutu olmasın */
+/** Hero MP4 kapak — lazy/preload oncesi bos siyah kutu olmasin */
 const DEFAULT_HERO_VIDEO_POSTER = "/images/hero/hero-poster.jpg";
+
+/** LCP sonrasi metadata yukle — scroll/touch ile erken tetiklenir. */
+function useDeferredVideoMetadata(
+  videoRef: RefObject<HTMLVideoElement | null>,
+  enabled: boolean,
+) {
+  useEffect(() => {
+    if (!enabled) return;
+    let done = false;
+    const prime = () => {
+      if (done) return;
+      const v = videoRef.current;
+      if (!v) return;
+      done = true;
+      v.preload = "metadata";
+      void v.load();
+    };
+    let idleHandle = 0;
+    if (typeof window.requestIdleCallback === "function") {
+      idleHandle = window.requestIdleCallback(prime, { timeout: 2500 });
+    } else {
+      idleHandle = window.setTimeout(prime, 1500);
+    }
+    window.addEventListener("scroll", prime, { once: true, passive: true });
+    window.addEventListener("touchstart", prime, { once: true, passive: true });
+    window.addEventListener("wheel", prime, { once: true, passive: true });
+    return () => {
+      if (typeof window.cancelIdleCallback === "function") {
+        window.cancelIdleCallback(idleHandle);
+      } else {
+        window.clearTimeout(idleHandle);
+      }
+      window.removeEventListener("scroll", prime);
+      window.removeEventListener("touchstart", prime);
+      window.removeEventListener("wheel", prime);
+    };
+  }, [enabled, videoRef]);
+}
 
 /** Masaüstü scroll animasyonu — tüm kareleri aynı anda yüklemek zayıf PC’lerde donmaya yol açar */
 const FRAME_LOAD_RADIUS = 15;
@@ -299,14 +337,9 @@ export function ScrollVideoSection({
     setMounted(true);
   }, []);
 
-  /** Responsive hero artık tüm ekranlarda aynı video/canvas katmanını kullanır. */
-  useEffect(() => {
-    if (!mounted || !isVideoMode || !videoSrc) return;
-    const el = videoRef.current;
-    if (!el) return;
-    el.preload = "auto";
-    void el.load();
-  }, [mounted, isVideoMode, videoSrc]);
+  useDeferredVideoMetadata(videoRef, mounted && isVideoMode && Boolean(videoSrc));
+
+  /** Responsive hero artik tum ekranlarda ayni video/canvas katmanini kullanir. */
 
   const renderFrame = useCallback((index: number) => {
     if (isVideoMode || isScrollStill) return;
@@ -640,7 +673,7 @@ export function ScrollVideoSection({
             aria-label={mobileVideoReplacementAlt || undefined}
             muted
             playsInline
-            preload="metadata"
+            preload="none"
             disablePictureInPicture
             disableRemotePlayback
             className="absolute inset-0 h-full w-full object-cover will-change-[transform,object-position] [transform:translateZ(0)] [backface-visibility:hidden] [contain:layout_paint]"
@@ -1106,6 +1139,8 @@ function MobileScrollSection({
 
   const mobileStageHeightSvh = Math.max(165, Math.round((210 * scrollVh) / 260));
 
+  useDeferredVideoMetadata(mobileVideoRef, isMobileVideo && Boolean(videoSrc));
+
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -1347,7 +1382,7 @@ function MobileScrollSection({
                 aria-label={mobileVideoReplacementAlt || undefined}
                 muted
                 playsInline
-                preload="metadata"
+                preload="none"
                 disablePictureInPicture
                 disableRemotePlayback
                 onLoadedMetadata={(e) => {
@@ -1380,7 +1415,7 @@ function MobileScrollSection({
                 src={finalFrameSrc}
                 alt={endCard?.title ?? "Fan"}
                 fill
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 1200px"
                 className="object-cover"
                 style={{
                   objectPosition: `${fanX}% center`,
@@ -1608,7 +1643,7 @@ function ProductCard({ endCard, imageSrc }: { endCard: EndCard; imageSrc: string
           src={imageSrc}
           alt={endCard.title}
           fill
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 480px"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
           style={{ objectPosition: "center center", filter: "contrast(1.05) saturate(1.08)" }}
         />

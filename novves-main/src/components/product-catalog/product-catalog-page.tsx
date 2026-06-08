@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import type { ProductCatalogPageData } from "@/lib/product-catalog";
 import {
   PRODUCT_CATALOG_MOBILE_DRAWER,
   PRODUCT_CATALOG_PAGE_PADDING_TOP,
   PRODUCT_CATALOG_PAGE_X,
 } from "@/lib/product-catalog-routes";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 import type { ProductCatalogUi } from "@/lib/product-catalog-ui";
 import {
   EMPTY_PRODUCT_CATALOG_FILTERS,
@@ -38,6 +40,76 @@ function IconDownload({ className = "h-4 w-4" }: { className?: string }) {
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0l4-4m-4 4l-4-4M4 19h16" />
     </svg>
+  );
+}
+
+function ProductCatalogMobileDrawer({
+  categories,
+  ui,
+  locale,
+  open,
+  onClose,
+}: {
+  categories: ProductCatalogPageData["categories"];
+  ui: ProductCatalogUi;
+  locale: string;
+  open: boolean;
+  onClose: () => void;
+}) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!open || !mounted) return null;
+
+  return createPortal(
+    <>
+      <button
+        type="button"
+        className="fixed inset-0 z-[55] bg-ink/40 touch-none lg:hidden"
+        aria-label={ui.closeMenu}
+        onClick={onClose}
+      />
+      <div
+        className={`fixed bottom-0 left-0 z-[60] w-[min(100vw-3rem,18rem)] transition-transform duration-300 ease-out lg:hidden ${PRODUCT_CATALOG_MOBILE_DRAWER} ${
+          open ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <aside
+          id="product-catalog-mobile-drawer"
+          role="dialog"
+          aria-modal="true"
+          aria-label={ui.categoriesTitle}
+          className={`flex h-full flex-col overflow-y-auto overscroll-contain bg-sand-100 shadow-2xl ${SIDEBAR_PANEL_SCROLL}`}
+        >
+          <div className="sticky top-0 z-10 flex shrink-0 items-center justify-between border-b border-ink/[0.06] bg-sand-100 px-4 py-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-ink">{ui.categoriesTitle}</span>
+            <button
+              type="button"
+              onClick={onClose}
+              className="rounded-lg p-2 text-secondary/60 hover:bg-white"
+              aria-label={ui.closeMenu}
+            >
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+                <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div className="px-2 pb-[max(5.5rem,env(safe-area-inset-bottom))] pt-2">
+            <ProductCatalogSidebar
+              categories={categories}
+              ui={ui}
+              locale={locale}
+              onNavigate={onClose}
+              compact
+            />
+          </div>
+        </aside>
+      </div>
+    </>,
+    document.body,
   );
 }
 
@@ -97,6 +169,23 @@ export function ProductCatalogPage({
 
   const closeMobileNav = useCallback(() => setMobileNav(false), []);
 
+  useEffect(() => {
+    if (!mobileNav) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [mobileNav]);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileNav(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, []);
+
   return (
     <div className={`overflow-x-clip bg-sand-200 text-ink ${PRODUCT_CATALOG_PAGE_PADDING_TOP}`}>
       <div className="mx-auto flex w-full max-w-[1600px] flex-col lg:grid lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:items-stretch">
@@ -110,7 +199,9 @@ export function ProductCatalogPage({
           <button
             type="button"
             onClick={() => setMobileNav(true)}
-            className="fixed bottom-6 left-4 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-[#00386B] text-white shadow-lg ring-2 ring-white/90 lg:hidden"
+            className={`fixed bottom-6 left-4 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-[#00386B] text-white shadow-lg ring-2 ring-white/90 transition-opacity lg:hidden ${
+              mobileNav ? "pointer-events-none opacity-0" : "opacity-100"
+            }`}
             aria-label={ui.openMenu}
           >
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
@@ -356,39 +447,13 @@ export function ProductCatalogPage({
         </div>
       </div>
 
-      {mobileNav ? (
-        <>
-          <button
-            type="button"
-            className="fixed inset-0 z-40 bg-ink/40 lg:hidden"
-            aria-label={ui.closeMenu}
-            onClick={closeMobileNav}
-          />
-          <aside
-            className={`fixed left-0 z-50 flex w-[min(100vw-3rem,18rem)] flex-col bg-sand-100 shadow-2xl lg:hidden ${PRODUCT_CATALOG_MOBILE_DRAWER}`}
-          >
-            <div className="flex items-center justify-between border-b border-ink/[0.06] px-4 py-3">
-              <span className="text-xs font-bold uppercase tracking-wider text-ink">{ui.categoriesTitle}</span>
-              <button
-                type="button"
-                onClick={closeMobileNav}
-                className="rounded-lg p-2 text-secondary/60 hover:bg-white"
-                aria-label={ui.closeMenu}
-              >
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
-                  <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <ProductCatalogSidebar
-              categories={data.categories}
-              ui={ui}
-              locale={locale}
-              onNavigate={closeMobileNav}
-            />
-          </aside>
-        </>
-      ) : null}
+      <ProductCatalogMobileDrawer
+        categories={data.categories}
+        ui={ui}
+        locale={locale}
+        open={mobileNav}
+        onClose={closeMobileNav}
+      />
     </div>
   );
 }

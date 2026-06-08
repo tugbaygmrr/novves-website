@@ -9,6 +9,7 @@ import {
   resolveActiveHizmetlerNavId,
 } from "@/lib/hizmetler-nav";
 import { HIZMETLER_MOBILE_DRAWER } from "@/lib/hizmetler/layout";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 
 type Props = {
   locale: string;
@@ -75,7 +76,7 @@ export function HizmetlerMobileNav({ locale, title, linkLabels, downloadSpecLabe
                 close
               </button>
             </div>
-            <nav className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-3 sm:p-4">
+            <nav className={`min-h-0 flex-1 p-3 sm:p-4 ${SIDEBAR_PANEL_SCROLL}`}>
               {HIZMETLER_NAV_ITEMS.map((item) => {
                 const label = getHizmetlerNavLabel(item.labelKey, linkLabels);
                 const isActive = item.id === activeId;

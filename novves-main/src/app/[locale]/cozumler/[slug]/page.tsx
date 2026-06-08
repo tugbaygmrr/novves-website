@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
 import { solutionDetailMetadata } from "@/lib/i18n-metadata";
 import { SolutionLibraryPage } from "@/components/solution-library/solution-library-page";
+import { FaqJsonLd } from "@/components/seo/faq-json-ld";
 import {
   allSolutionSlugs,
   buildSolutionLibraryPageData,
@@ -27,7 +28,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function SolutionDetailPage({ params }: PageProps) {
   const { locale, slug } = await params;
   if (!hasLocale(locale)) notFound();
-  if (!getSolutionEntryBySlug(slug)) notFound();
+  const entry = getSolutionEntryBySlug(slug);
+  if (!entry) notFound();
 
   const dict = await getDictionary(locale);
   const solutionsDict = dict.solutions as Record<string, unknown>;
@@ -37,7 +39,18 @@ export default async function SolutionDetailPage({ params }: PageProps) {
   const nav = dict.common?.navbar;
   const solutionsHubLabel = typeof nav?.solutions === "string" ? nav.solutions : "Çözümler";
 
+  const rawSolution = solutionsDict[entry.key] as
+    | { faqItems?: Array<{ q?: string; a?: string }> }
+    | undefined;
+  const faqItems =
+    rawSolution?.faqItems
+      ?.filter((item) => item.q && item.a)
+      .map((item) => ({ question: item.q!, answer: item.a! })) ?? [];
+
   return (
-    <SolutionLibraryPage data={data} locale={locale} solutionsHubLabel={solutionsHubLabel} />
+    <>
+      {faqItems.length > 0 ? <FaqJsonLd items={faqItems} /> : null}
+      <SolutionLibraryPage data={data} locale={locale} solutionsHubLabel={solutionsHubLabel} />
+    </>
   );
 }

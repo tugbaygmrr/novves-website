@@ -371,7 +371,7 @@ const engineeringCollage = {
   primaryPoster: `/video/novves-product-lineup-poster.jpg?v=${ENGINEERING_COLLAGE_ASSET_V}`,
 } as const;
 
-/** CFD vitrin videosu — görünür alana girince yüklenir; kapak görseli her zaman kalır */
+/** CFD vitrin videosu — gorunur alana girince yuklenir; poster + kontroller hemen calisir. */
 function EngineeringPrimaryVideo({
   src,
   poster,
@@ -382,8 +382,8 @@ function EngineeringPrimaryVideo({
   ariaLabel: string;
 }) {
   const shellRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [loadVideo, setLoadVideo] = useState(false);
-  const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
     const root = shellRef.current;
@@ -405,33 +405,40 @@ function EngineeringPrimaryVideo({
     return () => io.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (!loadVideo) return;
+    const v = videoRef.current;
+    if (!v) return;
+    v.preload = "metadata";
+    void v.load();
+  }, [loadVideo]);
+
   return (
     <div
       ref={shellRef}
       className="relative aspect-[16/10] w-full min-h-0 lg:aspect-auto lg:h-full lg:min-h-[12rem]"
     >
-      <img
-        src={poster}
-        alt=""
-        aria-hidden
-        decoding="async"
-        className="absolute inset-0 z-0 h-full w-full object-cover object-center"
-      />
-      {loadVideo ? (
+      {!loadVideo ? (
+        <img
+          src={poster}
+          alt=""
+          aria-hidden
+          decoding="async"
+          className="absolute inset-0 z-0 h-full w-full object-cover object-center"
+        />
+      ) : (
         <video
+          ref={videoRef}
           src={src}
           poster={poster}
-          className={`absolute inset-0 z-[1] h-full w-full object-cover object-center transition-opacity duration-300 motion-reduce:transition-none ${
-            videoReady ? "opacity-100" : "opacity-0"
-          }`}
+          className="absolute inset-0 z-[1] h-full w-full object-cover object-center"
           aria-label={ariaLabel}
           controls
           playsInline
           loop
           preload="metadata"
-          onLoadedData={() => setVideoReady(true)}
         />
-      ) : null}
+      )}
     </div>
   );
 }
@@ -1831,40 +1838,90 @@ function PillarVideoPlayer({
   src: string;
   poster: string;
   label: string;
-  /** Play butonunu özel konuma yerleştirmek için (örn. clip-path'li container'da polygon merkezi) */
+  /** Play butonunu ozel konuma yerlestirmek icin (orn. clip-path'li container'da polygon merkezi) */
   playButtonClassName?: string;
   playButtonSize?: string;
   playIconSize?: string;
 }) {
+  const shellRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const pendingPlayRef = useRef(false);
+  const [loadVideo, setLoadVideo] = useState(false);
   const [playing, setPlaying] = useState(false);
+
+  useEffect(() => {
+    const root = shellRef.current;
+    if (!root) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setLoadVideo(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadVideo(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "120px 0px" },
+    );
+    io.observe(root);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!loadVideo) return;
+    const v = videoRef.current;
+    if (!v) return;
+    v.preload = "metadata";
+    void v.load();
+    if (pendingPlayRef.current) {
+      pendingPlayRef.current = false;
+      void v.play().catch(() => {});
+    }
+  }, [loadVideo]);
 
   const toggle = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    if (!loadVideo) {
+      pendingPlayRef.current = true;
+      setLoadVideo(true);
+      return;
+    }
     const v = videoRef.current;
     if (!v) return;
-    if (v.paused) v.play().catch(() => {});
+    if (v.paused) void v.play().catch(() => {});
     else v.pause();
   };
 
   const buttonPos = playButtonClassName ?? "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2";
 
   return (
-    <>
-      <video
-        ref={videoRef}
-        src={src}
-        poster={poster}
-        playsInline
-        loop
-        preload="metadata"
-        aria-label={label}
-        onPlay={() => setPlaying(true)}
-        onPause={() => setPlaying(false)}
-        onEnded={() => setPlaying(false)}
+    <div ref={shellRef} className="absolute inset-0">
+      <img
+        src={poster}
+        alt=""
+        aria-hidden
+        decoding="async"
+        loading="lazy"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
+      {loadVideo ? (
+        <video
+          ref={videoRef}
+          src={src}
+          poster={poster}
+          playsInline
+          loop
+          preload="metadata"
+          aria-label={label}
+          onPlay={() => setPlaying(true)}
+          onPause={() => setPlaying(false)}
+          onEnded={() => setPlaying(false)}
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+      ) : null}
       {/* Click-to-pause genel kapak — video çalarken */}
       {playing && (
         <button
@@ -1887,7 +1944,7 @@ function PillarVideoPlayer({
           </svg>
         </button>
       )}
-    </>
+    </div>
   );
 }
 

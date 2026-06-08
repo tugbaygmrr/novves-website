@@ -1,5 +1,5 @@
 /**
- * Stüdyo zemini (kum #ecebe6 veya çok aç?k gri) -> saf beyaz; ürün piksellerine dokunmaz.
+ * Stï¿½dyo zemini (kum #ecebe6 veya ï¿½ok aï¿½?k gri) -> saf beyaz; ï¿½rï¿½n piksellerine dokunmaz.
  * node scripts/product-bg-to-white.mjs yayli-titresim-izolatoru.png
  */
 import fs from "fs";
@@ -18,13 +18,13 @@ function isSand(r, g, b) {
   );
 }
 
-/** neutralize-product-bg.mjs ile ayn? stüdyo beyaz? */
+/** neutralize-product-bg.mjs ile ayn? stï¿½dyo beyaz? */
 function isStudioWhite(r, g, b) {
   if (r > 242 && g > 242 && b > 242) return true;
   return false;
 }
 
-/** Orta gri metal – yanl??l?kla boyanmas?n */
+/** Orta gri metal ï¿½ yanl??l?kla boyanmas?n */
 function isProductMetal(r, g, b) {
   const mean = (r + g + b) / 3;
   const chroma = Math.max(r, g, b) - Math.min(r, g, b);

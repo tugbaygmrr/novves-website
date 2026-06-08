@@ -10,7 +10,7 @@
     "headOffice": "总公司",
     "headOfficeAddress": "19 月 日苏梅尔·索克。\nZitaş 广场 C2 号楼：7\n卡德柯伊 / 伊斯坦布尔 / 土耳其",
     "factory": "工厂",
-    "factoryAddress": "Taşköprü Merkez Mah.卡伊代雷·索克。\nBina 编号：9/1 Fabrika Kapı 编号：2\n恰夫利科伊/亚洛瓦",
+    "factoryAddress": "Yalova Organize Sanayi Bölgesi\n2. Cadde No:12\nÇiftlikköy / Yalova",
     "workingHours": "工作时间",
     "weekdays": "周一至周五",
     "saturday": "周六",
@@ -59,7 +59,100 @@
     "heroLead": "整个供应链、现场交付和技术生态系统中值得信赖的协作是 Novves 解决方案可持续扩展的支柱。",
     "desc": "我们的业务合作伙伴和解决方案合作伙伴。",
     "comingSoon": "即将推出",
-    "comingSoonDesc": "我们的合作伙伴页面的内容正在准备中。有关我们的业务合作伙伴和解决方案合作伙伴的信息将很快在此发布。"
+    "comingSoonDesc": "我们的合作伙伴页面的内容正在准备中。有关我们的业务合作伙伴和解决方案合作伙伴的信息将很快在此发布。",
+    "heroStats": [
+      {
+        "value": "3",
+        "label": "伙伴关系轴"
+      },
+      {
+        "value": "TR + Global",
+        "label": "规模"
+      },
+      {
+        "value": "NOVVES",
+        "label": "品牌"
+      }
+    ],
+    "partnerRecords": {
+      "mmsc": {
+        "name": "MMSC (M.M. Steel Corporation Pvt. Ltd.)",
+        "subtitle": "建筑和机电工程解决方案",
+        "description": "MMSC（M.M. Steel Corporation Pvt. Ltd.）主要从事建筑和 MEP（机械、电气和管道）工程解决方案。该公司是巴基斯坦专业建筑材料和工程产品的进口商和经销商。",
+        "expertise": [
+          "建造",
+          "环境保护部",
+          "建筑材料",
+          "工程产品",
+          "进口",
+          "分配"
+        ]
+      },
+      "kazema": {
+        "name": "Kazema Traders Company WLL",
+        "subtitle": "HVAC、制冷和贸易解决方案",
+        "description": "Kazema Traders Company WLL 是 Kazema Global Holding 的子公司。自1976年以来，它在科威特开展空调、制冷、工程产品贸易和分销业务。",
+        "expertise": [
+          "暖通空调",
+          "冷藏",
+          "贸易",
+          "工业解决方案",
+          "进口",
+          "分配"
+        ]
+      },
+      "ventdelux": {
+        "name": "VentDelux LLP",
+        "subtitle": "通风、空调和自动化系统",
+        "description": "VentDelux LLP 总部位于哈萨克斯坦阿斯塔纳，提供通风、空调和自动化系统的设计、安装和服务。它是 NOVVES 喷射通风解决方案的区域合作伙伴。",
+        "expertise": [
+          "通风",
+          "暖通空调",
+          "自动化",
+          "设计",
+          "安装",
+          "服务"
+        ]
+      },
+      "sanlygala": {
+        "name": "Sanly Gala ES",
+        "subtitle": "通风及工程解决方案",
+        "description": "Sanly Gala ES 在土库曼斯坦阿什哈巴德运营，作为 NOVVES 通风和工程解决方案的区域合作伙伴。",
+        "expertise": [
+          "通风",
+          "暖通空调",
+          "工程",
+          "分配",
+          "安装",
+          "服务"
+        ]
+      }
+    },
+    "partnerList": {
+      "sectionLabel": "我们的合作伙伴",
+      "heroTitle1": "与我们一起变得更强",
+      "heroTitle2": "合作伙伴网络。",
+      "heroDesc": "我们与值得信赖的合作伙伴一起，为您的项目增加价值并提供可持续的解决方案。",
+      "searchPlaceholder": "搜索公司、服务或关键字...",
+      "allCountries": "所有国家",
+      "allCategories": "所有类别",
+      "filter": "筛选",
+      "colCompany": "公司",
+      "colCountry": "国家/地区",
+      "colExpertise": "专业领域",
+      "colContact": "联系方式",
+      "colWebsite": "网站",
+      "ctaQuestion": "您想了解新的合作和我们的合作伙伴计划吗？",
+      "ctaButton": "联系我们",
+      "valueTrust": "值得信赖的合作伙伴",
+      "valueQuality": "质量解决方案",
+      "valueGrowth": "可持续增长",
+      "categoryAutomation": "自动化",
+      "categoryEnergy": "活力",
+      "categoryDigital": "数字化",
+      "categoryConstruction": "建筑及机电",
+      "noResults": "没有符合您搜索条件的合作伙伴。"
+    }
   },
   "sosyalMedya": {
     "breadcrumbHome": "家",

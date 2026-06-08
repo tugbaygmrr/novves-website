@@ -10,6 +10,7 @@ import {
   HIZMETLER_MOBILE_DRAWER,
   HIZMETLER_PAGE_PADDING_TOP,
 } from "@/lib/hizmetler/layout";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 
 type Props = {
   locale: string;
@@ -204,7 +205,7 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
         >
           {/* Sol panel — masaüstü (sticky) */}
           <aside className="hidden w-80 shrink-0 self-stretch border-r border-sand-300/60 bg-sand-200 lg:block">
-            <div className="sticky top-28 flex h-[calc(100vh-7rem)] flex-col overflow-y-auto custom-scrollbar">
+            <div className={`sticky top-28 flex h-[calc(100vh-7rem)] min-h-0 flex-col ${SIDEBAR_PANEL_SCROLL}`}>
               {sidebar}
             </div>
           </aside>
@@ -235,7 +236,7 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
                 id="iletisim-mobile-drawer"
                 className={`absolute bottom-0 left-0 flex w-[min(20rem,calc(100vw-2rem))] min-h-0 flex-col overflow-hidden bg-sand-200 shadow-xl ${HIZMETLER_MOBILE_DRAWER}`}
               >
-                <div className="relative flex min-h-0 flex-1 flex-col overflow-y-auto">
+                <div className={`relative flex min-h-0 flex-1 flex-col ${SIDEBAR_PANEL_SCROLL}`}>
                   <button
                     type="button"
                     onClick={() => setMobileNavOpen(false)}

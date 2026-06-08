@@ -1,9 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
 import { jumpNavHomeLabel } from "@/i18n/jump-nav-labels";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { kvkkPageMetadata } from "@/lib/i18n-metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return kvkkPageMetadata(locale, "kvkkVeIslenmesiBeyani");
+}
 
 export default async function KvkkVeIslenmesiBeyani({
   params,
@@ -24,7 +35,7 @@ export default async function KvkkVeIslenmesiBeyani({
           fill
           priority
           className="object-cover"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 1280px"
         />
         <div className="absolute inset-0 bg-[#4e525c]/28" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />

@@ -85,7 +85,7 @@ export function SolutionDetailClient({
     <main>
       {/* 1. HERO */}
       <section className="relative flex min-h-[580px] items-end overflow-hidden">
-        <Image src={heroImage ?? "/images/page-hero/cozumler-main.jpg"} alt="" fill priority className="object-cover" sizes="100vw" />
+        <Image src={heroImage ?? "/images/page-hero/cozumler-main.jpg"} alt="" fill priority className="object-cover" sizes="(max-width: 768px) 100vw, 1280px" />
         <div className="absolute inset-0 bg-[#4e525c]/28" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#72767d]/62 via-[#4a4f58]/78 to-[#31353e]/95" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_15%_12%,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_52%),radial-gradient(ellipse_at_88%_95%,rgba(17,22,33,0.45)_0%,rgba(17,22,33,0)_55%)]" />

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { IletisimPage } from "@/components/iletisim/iletisim-page";
 import { resolveIletisimPageCopy } from "@/lib/iletisim/copy";
 import { getDictionary, hasLocale } from "../dictionaries";
+import { withPageSeo } from "@/lib/seo/page-metadata";
 
 export async function generateMetadata({
   params,
@@ -13,10 +14,13 @@ export async function generateMetadata({
   if (!hasLocale(locale)) return {};
   const dict = await getDictionary(locale);
   const title = dict.common?.contact ?? (locale === "tr" ? "İletişim" : "Contact");
-  return {
+  const description = dict.contact?.main?.heroDesc ?? "";
+  return withPageSeo({
+    locale,
+    pathAfterLocale: "iletisim",
     title: `${title} | NOVVES`,
-    description: dict.contact?.main?.heroDesc,
-  };
+    description,
+  });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

@@ -21,6 +21,12 @@ export type DocumentLibraryTreeIcon =
 
 export type DocumentLibraryItem = {
   id: string;
+  /** Primary document language. */
+  language: string;
+  /** Available language versions (e.g. reference catalog TR + EN). */
+  languages?: string[];
+  /** Per-language download paths when `languages` has multiple entries. */
+  downloadByLanguage?: Record<string, string>;
   category: string;
   code: string;
   title: string;
@@ -78,10 +84,12 @@ export type DocumentLibraryUi = {
     };
   };
   searchPlaceholder: string;
+  searchAllLanguages: string;
   table: {
     category: string;
     documentNo: string;
     documentName: string;
+    language: string;
     status: string;
     statusActive: string;
     statusPassive: string;

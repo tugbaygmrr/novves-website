@@ -4,6 +4,7 @@ import { SosyalMedyaPage } from "@/components/sosyal-medya/sosyal-medya-page";
 import { resolveSosyalMedyaCopy, type SosyalMedyaHubJson } from "@/lib/sosyal-medya/copy";
 import { getInstagramFeedPosts } from "@/lib/sosyal-medya/instagram";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { withPageSeo } from "@/lib/seo/page-metadata";
 
 export async function generateMetadata({
   params,
@@ -15,10 +16,12 @@ export async function generateMetadata({
   const dict = await getDictionary(locale);
   const copy = resolveSosyalMedyaCopy(dict.contact?.sosyalMedyaHub as SosyalMedyaHubJson | undefined, locale);
 
-  return {
+  return withPageSeo({
+    locale,
+    pathAfterLocale: "iletisim/sosyal-medya",
     title: `${copy.heroTitle1} ${copy.heroTitle2} | Novves`,
     description: copy.heroDesc,
-  };
+  });
 }
 
 export default async function SosyalMedya({

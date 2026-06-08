@@ -170,7 +170,7 @@ export default async function BizKimiz({ params }: { params: Promise<{ locale: s
           fill
           priority
           className="object-cover object-center opacity-50 mix-blend-overlay sm:opacity-60"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 1280px"
         />
         <div
           className="absolute inset-0 bg-gradient-to-b from-[#131b2e]/95 via-[#131b2e]/80 to-[#131b2e]/70 lg:bg-gradient-to-r lg:from-[#131b2e] lg:via-[#131b2e]/70 lg:to-transparent"

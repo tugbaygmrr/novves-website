@@ -1,4 +1,8 @@
 import { ILETISIM_LOCATION_META } from "./location-meta";
+import {
+  NOVVES_FACTORY_ADDRESS,
+  NOVVES_HEAD_OFFICE_ADDRESS,
+} from "@/lib/company/addresses";
 
 export type IletisimLocation = {
   id: "hq" | "factory" | "service";
@@ -73,13 +77,13 @@ const defaultLocationsEn: IletisimHubJson["locations"] = [
     id: "hq",
     badge: "Head Office",
     title: "Istanbul Office",
-    address: "19 Mayıs Mah. Sümer Sok.\nZitaş Plaza C2 Blok No:7\nKadıköy / Istanbul",
+    address: NOVVES_HEAD_OFFICE_ADDRESS.replace(" / Türkiye", ""),
   },
   {
     id: "factory",
     badge: "Factory",
     title: "Yalova Production Plant",
-    address: "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
+    address: NOVVES_FACTORY_ADDRESS.replace(" / Türkiye", ""),
   },
   {
     id: "service",
@@ -94,13 +98,13 @@ const defaultLocationsTr: IletisimHubJson["locations"] = [
     id: "hq",
     badge: "Merkez Ofis",
     title: "İstanbul Ofis",
-    address: "19 Mayıs Mah. Sümer Sok.\nZitaş Plaza C2 Blok No:7\nKadıköy / İstanbul",
+    address: NOVVES_HEAD_OFFICE_ADDRESS.replace(" / Türkiye", ""),
   },
   {
     id: "factory",
     badge: "Fabrika",
     title: "Yalova Üretim Tesisi",
-    address: "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
+    address: NOVVES_FACTORY_ADDRESS.replace(" / Türkiye", ""),
   },
   {
     id: "service",
@@ -224,6 +228,18 @@ const fallbackTr: IletisimPageCopy = {
   fabLabel: "Canlı Destek",
 };
 
+function applyCanonicalAddresses(locations: IletisimLocation[]): IletisimLocation[] {
+  return locations.map((loc) => {
+    if (loc.id === "hq") {
+      return { ...loc, address: NOVVES_HEAD_OFFICE_ADDRESS.replace(" / Türkiye", "") };
+    }
+    if (loc.id === "factory") {
+      return { ...loc, address: NOVVES_FACTORY_ADDRESS.replace(" / Türkiye", "") };
+    }
+    return loc;
+  });
+}
+
 function attachLocationMeta(
   locations: IletisimHubJson["locations"] | undefined,
 ): IletisimLocation[] {
@@ -244,7 +260,9 @@ export function resolveIletisimPageCopy(
 ): IletisimPageCopy {
   const fallback = locale === "tr" ? fallbackTr : fallbackEn;
   const defaultLocations = locale === "tr" ? defaultLocationsTr : defaultLocationsEn;
-  const locations = attachLocationMeta(hub?.locations ?? defaultLocations);
+  const locations = applyCanonicalAddresses(
+    attachLocationMeta(hub?.locations ?? defaultLocations),
+  );
 
   if (!hub) return { ...fallback, locations };
 

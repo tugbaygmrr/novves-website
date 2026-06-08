@@ -145,7 +145,7 @@ function MobileHero({ dict, locale }: { dict: HeroDict; locale: string }) {
               alt={dict.endCard.title}
               fill
               priority
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, 1280px"
               className="object-cover"
               style={{
                 objectPosition: `${fanX}% center`,

@@ -6,8 +6,8 @@ const AUDIO_URL = "/audio/novves-heart.mp3";
 const VOLUME = 0.7;
 
 /**
- * Navbar müzik toggle — "Novves'in kalbi".
- * Tarayıcı autoplay politikası nedeniyle ilk play kullanıcı tıklamasıyla başlar.
+ * Navbar muzik toggle — "Novves'in kalbi".
+ * Ses dosyasi yalnizca kullanici tikladiginda yuklenir.
  */
 export function MusicToggle({ inverted = false }: { inverted?: boolean }) {
   const [on, setOn] = useState(false);
@@ -22,6 +22,7 @@ export function MusicToggle({ inverted = false }: { inverted?: boolean }) {
       return;
     }
     try {
+      if (!a.src) a.src = AUDIO_URL;
       a.volume = VOLUME;
       a.muted = false;
       await a.play();
@@ -36,9 +37,8 @@ export function MusicToggle({ inverted = false }: { inverted?: boolean }) {
     <>
       <audio
         ref={audioRef}
-        src={AUDIO_URL}
         loop
-        preload="metadata"
+        preload="none"
         onPlay={() => setOn(true)}
         onPause={() => setOn(false)}
         onEnded={() => setOn(false)}
@@ -46,9 +46,9 @@ export function MusicToggle({ inverted = false }: { inverted?: boolean }) {
       <button
         type="button"
         onClick={toggle}
-        aria-label={on ? "Müziği kapat" : "Müziği aç"}
+        aria-label={on ? "Muzigi kapat" : "Muzigi ac"}
         aria-pressed={on}
-        title={on ? "Müziği kapat" : "Novves'in kalbi"}
+        title={on ? "Muzigi kapat" : "Novves'in kalbi"}
         className={`relative inline-flex h-9 w-9 items-center justify-center rounded-full border transition-all duration-300 ${
           inverted
             ? "border-white/15 bg-white/[0.04] text-white/75 hover:border-white/40 hover:text-white"

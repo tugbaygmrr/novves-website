@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { HubTreeRow } from "@/lib/hub-tree-rows";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 
 export type { HubTreeRow } from "@/lib/hub-tree-rows";
 
@@ -52,7 +53,7 @@ export function HubTreePanel({
               {String(items.length).padStart(2, "0")}
             </span>
           </div>
-          <nav className="min-h-0 flex-1 overflow-y-auto overscroll-y-contain px-2 py-3 [-webkit-overflow-scrolling:touch]">
+          <nav className={`min-h-0 flex-1 px-2 py-3 ${SIDEBAR_PANEL_SCROLL}`}>
             <ul className="relative space-y-1 ps-2">
               <span
                 className="pointer-events-none absolute start-4 top-2 bottom-2 w-px bg-ink/12"

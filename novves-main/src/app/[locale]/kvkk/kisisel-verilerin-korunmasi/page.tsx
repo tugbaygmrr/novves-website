@@ -1,9 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
 import { jumpNavHomeLabel } from "@/i18n/jump-nav-labels";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import { kvkkPageMetadata } from "@/lib/i18n-metadata";
+import {
+  NOVVES_FACTORY_DISPLAY_LINES,
+  NOVVES_HEAD_OFFICE_DISPLAY_LINES,
+} from "@/lib/company/addresses";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return kvkkPageMetadata(locale, "kisiselVerilerinKorunmasi");
+}
 
 export default async function KisiselVerilerinKorunmasi({
   params,
@@ -24,7 +39,7 @@ export default async function KisiselVerilerinKorunmasi({
           fill
           priority
           className="object-cover"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 1280px"
         />
         <div className="absolute inset-0 bg-[#4e525c]/28" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#71757d]/60 via-[#4a4f58]/82 to-[#2f3440]/94" />
@@ -321,11 +336,12 @@ export default async function KisiselVerilerinKorunmasi({
                 <p className="text-sm leading-6 text-secondary/70">
                   NOVVES ELEKTRIK MOTOR ANONIM SIRKETI
                   <br />
-                  Ikitelli OSB Mah. Aykosan Sanayi Sitesi
-                  <br />
-                  1. Kisim 22. Ada No: 58-59-60
-                  <br />
-                  Basaksehir / Istanbul
+                  {NOVVES_HEAD_OFFICE_DISPLAY_LINES.map((line, index) => (
+                    <span key={line}>
+                      {index > 0 && <br />}
+                      {line}
+                    </span>
+                  ))}
                 </p>
               </div>
               <div className="rounded-xl border border-gray-100 bg-gray-50 p-6">
@@ -333,9 +349,12 @@ export default async function KisiselVerilerinKorunmasi({
                 <p className="text-sm leading-6 text-secondary/70">
                   NOVVES ELEKTRIK MOTOR ANONIM SIRKETI
                   <br />
-                  Sakarya 4. Organize Sanayi Bolgesi
-                  <br />
-                  3. Cadde No: 13 Akyazi / Sakarya
+                  {NOVVES_FACTORY_DISPLAY_LINES.map((line, index) => (
+                    <span key={line}>
+                      {index > 0 && <br />}
+                      {line}
+                    </span>
+                  ))}
                 </p>
               </div>
             </div>

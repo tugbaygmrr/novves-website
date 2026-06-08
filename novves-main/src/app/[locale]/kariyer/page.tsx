@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { withPageSeo } from "@/lib/seo/page-metadata";
 import { hasLocale } from "../dictionaries";
 
 type CareerCopy = {
@@ -307,10 +308,12 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!hasLocale(locale)) return {};
   const t = careerCopy(locale);
-  return {
+  return withPageSeo({
+    locale,
+    pathAfterLocale: "kariyer",
     title: t.metaTitle,
     description: t.metaDesc,
-  };
+  });
 }
 
 export default async function KariyerPage({ params }: { params: Promise<{ locale: string }> }) {

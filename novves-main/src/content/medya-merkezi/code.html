@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NOVVES | Medya Merkezi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#fe6a34",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#000000",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#131b2e",
+                    "on-tertiary-fixed": "#0d1c2f",
+                    "on-surface-variant": "#45464d",
+                    "inverse-surface": "#2d3133",
+                    "surface": "#f7f9fb",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary-fixed": "#dae2fd",
+                    "on-surface": "#191c1e",
+                    "secondary": "#ab3500",
+                    "on-tertiary-fixed-variant": "#3a485c",
+                    "secondary-fixed-dim": "#ffb59d",
+                    "primary-fixed-dim": "#bec6e0",
+                    "surface-container-low": "#f2f4f6",
+                    "inverse-primary": "#bec6e0",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container": "#eceef0",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#76859b",
+                    "tertiary-fixed-dim": "#b9c7e0",
+                    "surface-tint": "#565e74",
+                    "surface-bright": "#f7f9fb",
+                    "surface-container-highest": "#e0e3e5",
+                    "outline": "#76777d",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#191c1e",
+                    "tertiary-fixed": "#d5e3fd",
+                    "surface-container-high": "#e6e8ea",
+                    "secondary-fixed": "#ffdbd0",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000000",
+                    "outline-variant": "#c6c6cd",
+                    "on-secondary-container": "#5d1900",
+                    "on-primary-container": "#7c839b",
+                    "on-secondary-fixed": "#390c00",
+                    "background": "#f7f9fb",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-dim": "#d8dadc",
+                    "on-secondary-fixed-variant": "#832600"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "display": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .industrial-grid {
+            background-image: linear-gradient(to right, rgba(124, 131, 155, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(124, 131, 155, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .machine-gradient {
+            background-image: linear-gradient(135deg, #131B2E 0%, #000000 100%);
+        }
+        .ambient-shadow {
+            box-shadow: 0 8px 40px rgba(25, 28, 30, 0.06);
+        }
+        .ghost-border {
+            border: 1px solid rgba(198, 198, 205, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<div id="mobileSidebarBackdrop" class="lg:hidden fixed inset-0 bg-black/40 z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+<div class="flex min-h-screen flex-col lg:flex-row">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex h-screen w-80 docked-left overflow-y-auto sticky top-0 bg-[#f4f4ea] text-on-surface flex-col py-8 px-6 gap-y-1 shadow-none">
+<div class="mb-10 px-4">
+<h1 class="text-2xl font-black tracking-tight text-on-surface uppercase">NOVVES</h1>
+<div class="mt-2">
+<p class="text-headline-sm font-bold text-on-surface">Medya Merkezi</p>
+<p class="text-label-md font-semibold text-on-surface-variant/70">Teknik Arşiv v2.4</p>
+</div>
+</div>
+<nav class="flex-grow space-y-1">
+<a class="bg-white text-secondary rounded-lg font-bold px-4 py-3 flex items-center gap-3 hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="branding_watermark">branding_watermark</span>
+<span class="text-label-md">Logo &amp; Kimlik</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="domain">domain</span>
+<span class="text-label-md">Kurumsal Görseller</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="conveyor_belt">conveyor_belt</span>
+<span class="text-label-md">Ürün Görselleri</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="smart_display">smart_display</span>
+<span class="text-label-md">Videolar</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="video_library">video_library</span>
+<span class="text-label-md">YouTube İçerikleri</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="volume_up">volume_up</span>
+<span class="text-label-md">Kurumsal Sesler</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="text-label-md">Basın Bültenleri</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="text-label-md">Teknik Kataloglar</span>
+</a>
+<a id="desktopPatentLink" class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="lightbulb">lightbulb</span>
+<span class="text-label-md">Patentlerimiz</span>
+</a>
+</nav>
+<div class="mt-8 px-4">
+<button class="w-full bg-secondary-container text-on-secondary-container font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="upload">upload</span>
+                    Varlık Yükle
+                </button>
+</div>
+<div class="mt-auto pt-8">
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-3 hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="settings">settings</span>
+<span class="text-label-md">Ayarlar</span>
+</a>
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-3 hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="help">help</span>
+<span class="text-label-md">Destek</span>
+</a>
+</div>
+</aside>
+<!-- Mobile SideNav -->
+<aside id="mobileSidebar" class="lg:hidden fixed inset-y-0 left-0 z-50 w-[86vw] max-w-[320px] overflow-y-auto bg-[#f4f4ea] text-on-surface flex flex-col px-6 pt-4 pb-8 gap-y-1 shadow-xl -translate-x-full transition-transform duration-300">
+<div class="mb-6 -mx-6 px-6 py-4 bg-[#f4f4ea] border-b border-black/5 flex items-start justify-between gap-3">
+<div>
+<h2 class="text-2xl font-black tracking-tight text-on-surface uppercase">NOVVES</h2>
+<p class="mt-2 text-headline-sm font-bold text-on-surface">Medya Merkezi</p>
+<p class="text-label-md font-semibold text-on-surface-variant/70">Teknik Arşiv v2.4</p>
+</div>
+<button id="mobileMenuClose" aria-label="Menüyü kapat" class="rounded-lg p-2 text-on-surface-variant hover:bg-white">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex-grow space-y-1 pt-1">
+<a class="bg-white text-secondary rounded-lg font-bold px-4 py-3 flex items-center gap-3 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">branding_watermark</span>
+<span class="text-label-md">Logo &amp; Kimlik</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">domain</span>
+<span class="text-label-md">Kurumsal Görseller</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">conveyor_belt</span>
+<span class="text-label-md">Ürün Görselleri</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">smart_display</span>
+<span class="text-label-md">Videolar</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">video_library</span>
+<span class="text-label-md">YouTube İçerikleri</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">volume_up</span>
+<span class="text-label-md">Kurumsal Sesler</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-label-md">Basın Bültenleri</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-label-md">Teknik Kataloglar</span>
+</a>
+<a id="mobilePatentLink" class="text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150" href="#">
+<span class="material-symbols-outlined">lightbulb</span>
+<span class="text-label-md">Patentlerimiz</span>
+</a>
+</nav>
+<div class="mt-8 px-2">
+<button class="w-full bg-secondary-container text-on-secondary-container font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">upload</span>
+Varlık Yükle
+</button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-grow industrial-grid relative overflow-x-hidden min-w-0">
+<!-- TopNavBar (Simulated for Search/Context) -->
+<header class="sticky top-0 z-40 h-16 sm:h-20 machine-gradient ambient-shadow flex items-center w-full px-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-3 sm:gap-4 text-on-primary w-full">
+<span class="material-symbols-outlined text-xl sm:text-2xl" data-icon="search">search</span>
+<input id="mediaSearchInput" class="bg-transparent border-none focus:ring-0 text-label-md font-medium w-full placeholder:text-on-primary-container/60" placeholder="Medya varlıklarında ara..." type="text"/>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[360px] sm:min-h-[420px] lg:h-[450px] flex items-center px-4 sm:px-8 lg:px-12 overflow-hidden machine-gradient">
+<div class="absolute inset-0 opacity-40">
+<img alt="Industrial Background" class="w-full h-full object-cover mix-blend-overlay" data-alt="An expansive view of a highly advanced, automated industrial manufacturing facility featuring robotic arms and high-precision machinery. The environment is bathed in a dramatic combination of deep midnight blue shadows and sharp, luminous orange highlights from welding sparks and safety indicators. The atmosphere is powerful, clean, and technologically sophisticated, representing the engineering authority of NOVVES." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGl-oJ8mR1RmtBxswxckfZ_WAp6wdf1tl8Gy7O-LLRkvA0WEy20ebXH2e3k-anOaglwxATr2GfxLXCdoEV_cwohecrTYxT5z9Q5JxBNCeJwfWzgcUwJssRQlyyRYCYee9ds2yR5h-5BxO6NUjuR96Iz5Q7FCdK-RYy8z25OnTjIdLvolyrAcXQQ4noO-nwFsO1apm02iUf1Hal5zesSwolHJR2jRNC7Y-PoIg6vu2FPH8ZJpfj0oePjqQdKARo7gG4kU-259FjK_I"/>
+</div>
+<div class="relative z-10 max-w-3xl">
+<span class="inline-block px-4 py-1 bg-secondary text-on-primary text-[10px] font-black uppercase tracking-[0.2em] mb-6 rounded-sm">Technical Archive</span>
+<h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-on-primary leading-tight mb-4 sm:mb-6">
+                        NOVVES <span class="text-secondary-container">Medya Merkezi</span>
+</h2>
+<p class="text-sm sm:text-lg lg:text-xl text-on-primary-container max-w-2xl font-light leading-relaxed">
+                        Logolar, teknik görseller, kurumsal videolar ve ses dosyaları dahil olmak üzere tüm marka materyallerine erişin. Mühendislik otoritesi ve modern medya vizyonumuzun dijital arşivi.
+                    </p>
+<div class="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-5 sm:px-8 py-3 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:translate-y-[-2px] transition-all shadow-lg shadow-secondary/20">
+<span class="material-symbols-outlined" data-icon="cloud_download">cloud_download</span>
+                            Marka Kitini İndir
+                        </button>
+<button class="ghost-border text-on-primary px-5 sm:px-8 py-3 sm:py-4 rounded-xl font-bold hover:bg-on-primary-container/10 transition-all">
+                            Varlıkları Keşfet
+                        </button>
+</div>
+</div>
+</section>
+<!-- Media Categories Bento Grid -->
+<section class="px-4 sm:px-8 lg:px-12 py-10 sm:py-16 lg:py-20">
+<div class="grid grid-cols-12 gap-4 sm:gap-6">
+<div data-search-item class="col-span-12 lg:col-span-8 bg-surface-container-lowest p-5 sm:p-8 rounded-2xl group cursor-pointer overflow-hidden relative hover:bg-surface-bright transition-all">
+<div class="absolute top-0 right-0 p-8 opacity-5 group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-9xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold mb-2">Ürün Galerisi</h3>
+<p class="text-on-surface-variant max-w-md">Endüstriyel fanlar, jet fanlar ve chiller ünitelerinin yüksek çözünürlüklü teknik fotoğrafları.</p>
+<div class="mt-6 flex gap-2">
+<span class="px-3 py-1 bg-surface-container text-label-md font-medium rounded-full">480+ Görsel</span>
+<span class="px-3 py-1 bg-surface-container text-label-md font-medium rounded-full">RAW / JPG</span>
+</div>
+</div>
+</div>
+<div data-search-item class="col-span-12 lg:col-span-4 machine-gradient text-on-primary p-5 sm:p-8 rounded-2xl ambient-shadow relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-10 transition-opacity"></div>
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-4" data-icon="smart_display">smart_display</span>
+<h3 class="text-2xl font-bold mb-2">Video Arşivi</h3>
+<p class="opacity-70">YouTube içerikleri ve kurumsal tanıtım filmleri.</p>
+</div>
+<div data-search-item class="col-span-12 lg:col-span-4 bg-surface-container-low p-5 sm:p-8 rounded-2xl group cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="volume_up">volume_up</span>
+<h3 class="text-2xl font-bold mb-2">Kurumsal Sesler</h3>
+<p class="text-on-surface-variant">NOVVES "Born to Flow" ses kimliği ve jingle kütüphanesi.</p>
+</div>
+<div data-search-item class="col-span-12 lg:col-span-8 bg-surface-container-highest p-5 sm:p-8 rounded-2xl flex items-center justify-between group cursor-pointer overflow-hidden">
+<div>
+<h3 class="text-2xl font-bold mb-2">Teknik Kataloglar</h3>
+<p class="text-on-surface-variant">2024 Güncel ürün spesifikasyonları ve teknik dökümanlar.</p>
+</div>
+<div class="flex -space-x-4">
+<div class="hidden sm:flex w-16 h-20 bg-white shadow-md rounded-sm transform rotate-[-5deg] items-center justify-center">
+<span class="text-[8px] font-bold text-secondary">PDF</span>
+</div>
+<div class="hidden sm:flex w-16 h-20 bg-white shadow-xl rounded-sm transform rotate-[5deg] items-center justify-center relative z-10">
+<span class="text-[8px] font-bold text-secondary">PDF</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Logo & Identity Section -->
+<section class="px-4 sm:px-8 lg:px-12 py-10 sm:py-14 lg:py-16 bg-surface industrial-grid">
+<div class="flex items-baseline justify-between mb-12">
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">Logo &amp; Kurumsal <span class="text-secondary">Kimlik</span></h2>
+<a class="text-secondary font-bold flex items-center gap-2 hover:underline" href="#">Tümünü İndir <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-8">
+<!-- Identity Card -->
+<div data-search-item class="bg-surface-container-lowest p-1 rounded-2xl overflow-hidden hover:bg-surface-bright transition-colors">
+<div class="aspect-video bg-primary-container flex items-center justify-center p-12 rounded-t-lg">
+<h4 class="text-4xl font-black text-white tracking-tighter">NOVVES</h4>
+</div>
+<div class="p-6">
+<h4 class="font-bold text-lg mb-1">Birincil Logo (Koyu)</h4>
+<p class="text-label-md text-on-surface-variant mb-4">Koyu zeminler için beyaz tipografi.</p>
+<div class="flex gap-2">
+<button class="flex-1 py-2 bg-surface-container-high rounded-lg text-xs font-bold hover:bg-secondary-container hover:text-white transition-colors">PNG</button>
+<button class="flex-1 py-2 bg-surface-container-high rounded-lg text-xs font-bold hover:bg-secondary-container hover:text-white transition-colors">SVG</button>
+<button class="flex-1 py-2 bg-surface-container-high rounded-lg text-xs font-bold hover:bg-secondary-container hover:text-white transition-colors">AI</button>
+</div>
+</div>
+</div>
+<!-- Color Palette Card -->
+<div data-search-item class="bg-surface-container-lowest p-8 rounded-2xl flex flex-col justify-between hover:bg-surface-bright transition-colors">
+<h4 class="font-bold text-lg mb-6">Renk Paleti</h4>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-[#0F172A] shadow-inner"></div>
+<div>
+<p class="font-bold text-sm">Industrial Navy</p>
+<p class="text-xs text-on-surface-variant">#0F172A</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-[#FE6A34] shadow-inner"></div>
+<div>
+<p class="font-bold text-sm">Safety Orange</p>
+<p class="text-xs text-on-surface-variant">#FE6A34</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-[#F2F4F6] border border-outline-variant shadow-inner"></div>
+<div>
+<p class="font-bold text-sm">Steel Gray</p>
+<p class="text-xs text-on-surface-variant">#F2F4F6</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Usage Rules Card -->
+<div data-search-item class="machine-gradient p-8 rounded-2xl ambient-shadow text-on-primary">
+<h4 class="font-bold text-lg mb-4">Kullanım Rehberi</h4>
+<p class="text-sm opacity-70 mb-8 leading-relaxed">Logo kullanımı, tipografi hiyerarşisi ve marka tonlaması hakkında detaylı kuralları içeren PDF dökümanı.</p>
+<div class="p-4 bg-white/5 rounded-lg ghost-border flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="picture_as_pdf">picture_as_pdf</span>
+<span class="text-xs font-bold uppercase tracking-wider">Brand_Guidelines_v2.pdf</span>
+</div>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container" data-icon="download">download</span>
+</div>
+</div>
+</div>
+</section>
+<!-- NOVVES Sounds Section -->
+<section class="px-4 sm:px-8 lg:px-12 py-10 sm:py-16 lg:py-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl sm:text-4xl font-extrabold mb-4 italic">"Born to Flow"</h2>
+<p class="text-on-surface-variant">NOVVES işitsel kimliğini keşfedin. Akışın mühendislikteki ses karşılığı.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl ambient-shadow overflow-hidden">
+<div class="p-4 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+<div class="w-32 h-32 bg-primary-container rounded-xl flex items-center justify-center group relative cursor-pointer">
+<img alt="Sound Visual" class="absolute inset-0 w-full h-full object-cover opacity-40 rounded-xl" data-alt="Abstract visualization of sound waves and air currents interacting in a high-tech laboratory. The visual is dominated by deep indigo and electric orange gradients, creating a pulsing, rhythmic aesthetic that feels both mechanical and organic. The lighting is low and focused, highlighting the precise digital frequencies of a corporate soundscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwMjuIGC2VmLmCfn-iwaxJm7LvJYHv_avhrVZRwBpmwAgqpoiTYIK7nLj161edtHYcK9MoS68tSEWBep0sniwv9hmyeOg1RIvY8vMCXaDWh1T26iUuKK3zNyUQMtgJ5ZuIEhIBTJClG2YDloR940zdzOSrj_zlwmBVfMnV7z6P4mOrksVicUXie1YKH26ccyRyuNWS4Ljt1Irs-AYOink8USTmL4Nvhir5CM7XuAxGQcIHOerzOn3WDWUirVhUmCPoYh2cgLdpLpA"/>
+<span class="material-symbols-outlined text-on-primary text-5xl relative z-10 group-hover:scale-110 transition-transform" data-icon="play_circle" data-weight="fill">play_circle</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-end mb-4">
+<div>
+<h3 class="text-2xl font-bold">Born to Flow (Main Anthem)</h3>
+<p class="text-on-surface-variant font-medium">Kurumsal Ses Kimliği</p>
+</div>
+<span class="text-label-md font-bold text-secondary">03:42</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full w-1/3 bg-gradient-to-r from-secondary to-secondary-container"></div>
+</div>
+<div class="mt-4 flex gap-4">
+<button class="flex items-center gap-2 text-xs font-bold hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span> MP3
+                                    </button>
+<button class="flex items-center gap-2 text-xs font-bold hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span> WAV
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video & Gallery Section -->
+<section class="px-4 sm:px-8 lg:px-12 py-10 sm:py-16 lg:py-20 machine-gradient text-on-primary rounded-t-[2rem] sm:rounded-t-[3rem]">
+<div class="flex items-end justify-between gap-4 mb-8 sm:mb-12">
+<div>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-4">Video &amp; Görsel Kütüphanesi</h2>
+<div class="flex gap-4">
+<button class="text-secondary-container font-bold border-b-2 border-secondary-container pb-1">Tümü</button>
+<button class="opacity-50 hover:opacity-100 transition-opacity font-bold">Fabrika</button>
+<button class="opacity-50 hover:opacity-100 transition-opacity font-bold">Ürünler</button>
+<button class="opacity-50 hover:opacity-100 transition-opacity font-bold">Saha Uygulamaları</button>
+</div>
+</div>
+<button class="bg-white/10 hover:bg-white/20 transition-all p-4 rounded-full">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video Card -->
+<div data-search-item class="group relative rounded-2xl overflow-hidden aspect-video cursor-pointer">
+<img alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" data-alt="A cinematic overhead shot of a massive, pristine manufacturing floor featuring NOVVES jet fans and cooling towers. The floor is polished concrete, reflecting the overhead cool-white LED lighting. Subtle orange safety lines guide the eye through the symmetrical layout of the machines. The mood is one of industrial excellence and absolute order." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV8HPl7WMbP9w1ksBjEDlZyFucbCNFiBj66-2JqKu7xSopq6hdi-wjpoico8w7t4kJncUq4RKUQVGwJgOcpsJZu9NunJHd_uEZt5U4HReEtaXt6HJZI3D9AQzGoM8YKXm63urm8PA4Bv0iBijHaexMOlTd-f808GmdZHPOZtFns8WY8QnhUe_r7MNHLjnYUlExUqUagKzjAVrR9fThIVsQYk1zbEtClZ-dY6reW9yjLfA6Wl_2qOE8XWSRKju8ktc4YVbuQBW_9xo"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary-container to-transparent">
+<p class="text-xs font-black text-secondary tracking-widest uppercase mb-1">Kurumsal Film</p>
+<h4 class="font-bold text-lg">Havanın Gücünü Tasarlamak</h4>
+</div>
+</div>
+<!-- Image Card -->
+<div data-search-item class="group relative rounded-2xl overflow-hidden aspect-video cursor-pointer">
+<img alt="Product Detail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" data-alt="A close-up, high-detail macro shot of an industrial fan blade assembly. The metal surface has a brushed finish with a slight blueish tint from professional industrial lighting. Sharp orange accents on the bolt heads provide a pop of safety color. The focus is razor-sharp on the engineering precision of the parts, conveying authority and quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0-EuYiv1Lb_1oicw7Vh_nAXvf3jWVFMnCxqsBB0j6fizaagE9okU0w3cP_i9T7yUyakRdKQNkim-xUy-S9Wu8OcSiFhmGg1idiyyH3FyqCAgiR04TP1cRhvtmIc121BsZoxpDMGgARNirW5B1lm1kDSO6-6V96m9baeYX9oG2DXKP488jbzlCJ3VG9ZRBL4YQvaMMcJ035AnltbUU1-WBGAcDPvnBZ0_22PwsBjrznYTC-V_cc1wzBX1Fi5wTqFUg1-10G0HZNss"/>
+<div class="absolute top-4 right-4 bg-black/50 backdrop-blur-md p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white" data-icon="open_in_full">open_in_full</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary-container to-transparent">
+<p class="text-xs font-black text-secondary tracking-widest uppercase mb-1">Ürün Görseli</p>
+<h4 class="font-bold text-lg">Series-X Jet Fan Detayı</h4>
+</div>
+</div>
+<!-- Factory Card -->
+<div data-search-item class="group relative rounded-2xl overflow-hidden aspect-video cursor-pointer">
+<img alt="Factory Floor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" data-alt="A high-tech control room with large monitoring screens displaying airflow simulations and factory metrics. The lighting is dimmed, with the glowing blue and orange data on the screens providing the primary illumination. A professional operator in a NOVVES-branded vest is seen in silhouette, emphasizing the human-machine collaboration. The style is ultra-modern and data-driven." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWsMqt3zwJr492kwpuDebzPa3aJP-_crStBhyk5vXg-BrGG1tG3Ry1tQX_twNdodwBBozBx_r4Qzh8D5tciSYWXJvIfnwFxcL_0pI0znKiFnf4tR5soXPFXpQCgI6MKiNjp_6300L6pSJFXfuJ3MXTTB5lkt6pwDdWprATuA1EGjXiLBB8C2r7hC977wN7jmq4H558Q0jAPXTSGPlWq8mDYAotnD9qGKuepxFPLJQpd14yp1kDSew8x8D9vqQjkHwy0IuoqbqRik4"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary-container to-transparent">
+<p class="text-xs font-black text-secondary tracking-widest uppercase mb-1">Fabrika</p>
+<h4 class="font-bold text-lg">Ar-Ge Merkezi Kontrol Odası</h4>
+</div>
+</div>
+</div>
+<div class="mt-10 sm:mt-16 pt-10 sm:pt-16 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
+<div>
+<h4 class="text-2xl font-bold mb-2">Medya İletişimi</h4>
+<p class="opacity-60">Özel röportaj veya yüksek çözünürlüklü basılı materyaller için ekibimizle iletişime geçin.</p>
+</div>
+<div class="flex gap-4">
+<a class="px-8 py-3 bg-white text-primary-container font-bold rounded-xl hover:bg-secondary-container hover:text-white transition-all" href="mailto:press@novves.com">press@novves.com</a>
+</div>
+</div>
+</section>
+<!-- Patents & Innovation Section -->
+<section id="patentlerimiz" class="px-4 sm:px-8 lg:px-12 py-10 sm:py-16 bg-surface">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<div class="lg:col-span-8">
+<p class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Arşiv / Teknik Merkez</p>
+<h2 class="mt-3 text-4xl sm:text-5xl font-black tracking-tight text-primary-container">Patentlerimiz</h2>
+<p class="mt-4 text-on-surface-variant max-w-3xl">
+Novves Ar-Ge merkezi, endüstriyel havalandırma ve otomasyon dünyasında geleceği bugünden inşa ediyor.
+Global standartlarda tescillenmiş buluşlarımızla mühendislik sınırlarını zorluyoruz.
+</p>
+</div>
+<div class="lg:col-span-4">
+<div class="machine-gradient rounded-2xl p-6 text-on-primary ambient-shadow">
+<p class="text-4xl font-black leading-none">42+</p>
+<p class="mt-2 text-xs uppercase tracking-[0.14em] text-on-primary-container">Aktif Tescil &amp; Başvuru</p>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+<article data-search-item class="bg-surface-container-lowest rounded-2xl p-6 hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">mode_fan</span>
+<h3 class="mt-4 text-xl font-bold text-primary-container">Fan Tasarım Patentleri</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Aerodinamik verimliliği maksimize eden, düşük ses seviyeli yeni nesil pervane geometrileri.</p>
+</article>
+<article data-search-item class="bg-surface-container-lowest rounded-2xl p-6 hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">settings_input_component</span>
+<h3 class="mt-4 text-xl font-bold text-primary-container">Otomasyon Teknolojileri</h3>
+<p class="mt-2 text-sm text-on-surface-variant">AI-ready kontrol algoritmaları ve sensör dizileri ile entegre otomasyon bileşenleri.</p>
+</article>
+<article data-search-item class="bg-surface-container-lowest rounded-2xl p-6 hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">precision_manufacturing</span>
+<h3 class="mt-4 text-xl font-bold text-primary-container">Üretim Süreç Patentleri</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Robotik montaj hatları için optimize edilmiş, sıfır atık odaklı patentli üretim metodolojileri.</p>
+</article>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<article data-search-item class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-6 sm:p-8">
+<div class="inline-flex items-center gap-2 rounded-full bg-secondary text-white px-3 py-1 text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">verified</span>
+Patent Alındı
+</div>
+<h3 class="mt-4 text-3xl font-black leading-tight text-primary-container">Ultra-Sessiz <span class="text-secondary">Vortex</span> Akış Teknolojisi</h3>
+<p class="mt-3 text-sm text-on-surface-variant">Türbülansı %14 oranında azaltan patentli kanat ucu teknolojimiz, enerji tüketiminde yıllık bazda %9 tasarruf sağlamaktadır.</p>
+</article>
+<article data-search-item class="lg:col-span-5 machine-gradient rounded-2xl p-8 text-on-primary ambient-shadow">
+<h3 class="text-2xl font-bold">Patent Yolculuğumuz</h3>
+<p class="mt-2 text-on-primary-container">Geleceğin standartlarını tasarlıyoruz.</p>
+<p class="mt-10 text-4xl font-black uppercase">Çok Yakında</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Footer Meta -->
+<footer class="p-6 sm:p-10 lg:p-12 text-on-surface-variant/40 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs font-medium">
+<p>© 2024 NOVVES Industry &amp; Engineering. Tüm hakları saklıdır.</p>
+<div class="flex gap-6 uppercase tracking-widest">
+<a class="hover:text-secondary" href="#">Yasal Uyarı</a>
+<a class="hover:text-secondary" href="#">Gizlilik Politikası</a>
+<a class="hover:text-secondary" href="#">Kullanım Koşulları</a>
+</div>
+</footer>
+</main>
+</div>
+<script>
+        // Simple micro-interactions for active state logic
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                document.querySelectorAll('nav a').forEach(l => {
+                    l.className = "text-on-surface-variant px-4 py-3 flex items-center gap-3 hover:bg-white hover:text-secondary rounded-lg transition-all duration-150 hover:translate-x-1";
+                });
+                link.className = "bg-white text-secondary rounded-lg font-bold px-4 py-3 flex items-center gap-3 hover:translate-x-1 transition-transform duration-200";
+            });
+        });
+
+        // Search filter for media cards
+        const searchInput = document.getElementById('mediaSearchInput');
+        const searchableItems = Array.from(document.querySelectorAll('[data-search-item]'));
+        if (searchInput) {
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.trim().toLowerCase();
+                searchableItems.forEach((item) => {
+                    const text = item.textContent.toLowerCase();
+                    const matched = query.length === 0 || text.includes(query);
+                    item.style.display = matched ? '' : 'none';
+                });
+            });
+        }
+
+        // Mobile sidebar toggle
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const mobileSidebarBackdrop = document.getElementById('mobileSidebarBackdrop');
+        const openMobileMenu = () => {
+            if (!mobileSidebar || !mobileSidebarBackdrop) return;
+            mobileSidebar.classList.remove('-translate-x-full');
+            mobileSidebarBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+            mobileSidebar.scrollTop = 0;
+        };
+        const closeMobileMenu = () => {
+            if (!mobileSidebar || !mobileSidebarBackdrop) return;
+            mobileSidebar.classList.add('-translate-x-full');
+            mobileSidebarBackdrop.classList.add('opacity-0', 'pointer-events-none');
+        };
+        mobileMenuClose?.addEventListener('click', closeMobileMenu);
+        mobileSidebarBackdrop?.addEventListener('click', closeMobileMenu);
+        document.getElementById('desktopPatentLink')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.parent?.postMessage({ type: 'navigate-patents' }, '*');
+        });
+        document.getElementById('mobilePatentLink')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeMobileMenu();
+            window.parent?.postMessage({ type: 'navigate-patents' }, '*');
+        });
+
+        // iframe dışından menü kontrolü
+        window.addEventListener('message', (event) => {
+            if (!event?.data || typeof event.data !== 'object') return;
+            if (event.data.type === 'open-mobile-menu') openMobileMenu();
+            if (event.data.type === 'close-mobile-menu') closeMobileMenu();
+            if (event.data.type === 'toggle-mobile-menu') {
+                if (!mobileSidebar) return;
+                const isOpen = !mobileSidebar.classList.contains('-translate-x-full');
+                if (isOpen) closeMobileMenu();
+                else openMobileMenu();
+            }
+        });
+
+        // Report document height to parent (for iframe auto-height sync)
+        const postHeight = () => {
+            const h = Math.max(
+                document.body?.scrollHeight || 0,
+                document.documentElement?.scrollHeight || 0,
+                document.body?.offsetHeight || 0,
+                document.documentElement?.offsetHeight || 0
+            );
+            window.parent?.postMessage({ type: 'media-center-height', height: h }, '*');
+        };
+        window.addEventListener('load', postHeight);
+        window.addEventListener('resize', postHeight);
+        setInterval(postHeight, 700);
+    </script>
+</body></html>

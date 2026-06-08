@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import type { SolutionLibraryPageData } from "@/lib/solution-library";
 import { SolutionLibrarySidebar } from "@/components/solution-library/solution-library-sidebar";
 import { SolutionLibraryProductMedia } from "@/components/solution-library/solution-library-product-media";
@@ -22,10 +23,12 @@ import {
 import type { SolutionLibraryUi } from "@/lib/solution-library-ui";
 import { SolutionLibraryStripFooter } from "@/components/solution-library/solution-library-strip-footer";
 import {
+  SOLUTION_LIBRARY_DESKTOP_SIDEBAR,
   SOLUTION_LIBRARY_MOBILE_DRAWER,
   SOLUTION_LIBRARY_PAGE_PADDING_TOP,
   SOLUTION_LIBRARY_PAGE_X,
 } from "@/lib/solution-library-routes";
+import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 
 function IconChevronRight({ className = "h-4 w-4" }: { className?: string }) {
   return (
@@ -269,44 +272,63 @@ function SolutionLibraryMobileDrawer({
   searchQuery: string;
 }) {
   const { ui } = data;
-  if (!open) return null;
+  const [mounted, setMounted] = useState(false);
 
-  return (
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!open || !mounted) return null;
+
+  return createPortal(
     <>
       <button
         type="button"
-        className="fixed inset-0 z-40 bg-ink/40 lg:hidden"
+        className="fixed inset-0 z-[55] bg-ink/40 touch-none lg:hidden"
         aria-label={ui.closeMenu}
         onClick={onClose}
       />
-      <aside
-        className={`fixed left-0 z-50 flex w-[min(100vw-3rem,18rem)] flex-col bg-sand-100 shadow-2xl transition-transform duration-300 lg:hidden ${SOLUTION_LIBRARY_MOBILE_DRAWER} ${
+      {/* transform dis katmanda — iOS ic scroll icin kaydirma transform'suz olmali */}
+      <div
+        className={`fixed bottom-0 left-0 z-[60] w-[min(100vw-3rem,18rem)] transition-transform duration-300 ease-out lg:hidden ${SOLUTION_LIBRARY_MOBILE_DRAWER} ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between border-b border-ink/[0.06] px-4 py-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-ink">{ui.categoriesTitle}</span>
-          <button
-            type="button"
-            onClick={onClose}
-            className="rounded-lg p-2 text-secondary/60 hover:bg-white"
-            aria-label={ui.closeMenu}
-          >
-            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
-              <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <SolutionLibrarySidebar
-          items={data.sidebar}
-          activeSlug={data.slug}
-          ui={ui}
-          locale={locale}
-          onNavigate={onClose}
-          searchQuery={searchQuery}
-        />
-      </aside>
-    </>
+        <aside
+          id="solution-library-mobile-drawer"
+          role="dialog"
+          aria-modal="true"
+          aria-label={ui.categoriesTitle}
+          className={`flex h-full flex-col overflow-y-auto overscroll-contain bg-sand-100 shadow-2xl ${SIDEBAR_PANEL_SCROLL}`}
+        >
+          <div className="sticky top-0 z-10 flex shrink-0 items-center justify-between border-b border-ink/[0.06] bg-sand-100 px-4 py-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-ink">{ui.categoriesTitle}</span>
+            <button
+              type="button"
+              onClick={onClose}
+              className="rounded-lg p-2 text-secondary/60 hover:bg-white"
+              aria-label={ui.closeMenu}
+            >
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+                <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div className="px-2 pb-[max(5.5rem,env(safe-area-inset-bottom))] pt-2">
+            <SolutionLibrarySidebar
+              items={data.sidebar}
+              activeSlug={data.slug}
+              ui={ui}
+              locale={locale}
+              onNavigate={onClose}
+              searchQuery={searchQuery}
+              compact
+            />
+          </div>
+        </aside>
+      </div>
+    </>,
+    document.body,
   );
 }
 
@@ -374,10 +396,29 @@ export function SolutionLibraryPage({
   }, []);
 
   useEffect(() => {
+    const onScroll = () => {
+      setSearchOpen(false);
+      setFilterOpen(false);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!mobileNav) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [mobileNav]);
+
+  useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setFilterOpen(false);
         setSearchOpen(false);
+        setMobileNav(false);
       }
     };
     document.addEventListener("keydown", onKeyDown);
@@ -415,28 +456,29 @@ export function SolutionLibraryPage({
   const closeMobileNav = useCallback(() => setMobileNav(false), []);
 
   return (
-    <div className={`overflow-x-clip bg-sand-200 text-ink ${SOLUTION_LIBRARY_PAGE_PADDING_TOP}`}>
-      <div className="mx-auto flex w-full max-w-[1600px] flex-col lg:grid lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:items-stretch">
-        <aside id="solution-library-sidebar" className="hidden min-h-full shrink-0 bg-sand-100 lg:block">
-          <div className="sticky top-28 flex h-[calc(100vh-7rem)] flex-col">
-            <SolutionLibrarySidebar
-              items={data.sidebar}
-              activeSlug={data.slug}
-              ui={ui}
-              locale={locale}
-              searchQuery={search}
-            />
-          </div>
+    <div className={`bg-sand-200 text-ink ${SOLUTION_LIBRARY_PAGE_PADDING_TOP}`}>
+      <div className="mx-auto flex w-full max-w-[1600px] flex-col lg:grid lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:items-start">
+        <aside
+          id="solution-library-sidebar"
+          className={`hidden shrink-0 bg-sand-100 lg:flex lg:min-h-0 lg:flex-col ${SOLUTION_LIBRARY_DESKTOP_SIDEBAR}`}
+        >
+          <SolutionLibrarySidebar
+            items={data.sidebar}
+            activeSlug={data.slug}
+            ui={ui}
+            locale={locale}
+            searchQuery={search}
+          />
         </aside>
 
-        <div className="flex min-w-0 flex-col">
+        <div className="flex min-w-0 flex-col overflow-x-clip">
         <main className={`min-w-0 flex-1 ${selected.size > 0 ? "pb-28 sm:pb-32" : ""}`}>
           <button
             type="button"
             onClick={() => setMobileNav(true)}
-            className={`fixed left-4 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-[#00386B] text-white shadow-lg ring-2 ring-white/90 lg:hidden ${
-              selected.size > 0 ? "bottom-28 sm:bottom-32" : "bottom-6"
-            }`}
+            className={`fixed left-4 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-[#00386B] text-white shadow-lg ring-2 ring-white/90 transition-opacity lg:hidden ${
+              mobileNav ? "pointer-events-none opacity-0" : "opacity-100"
+            } ${selected.size > 0 ? "bottom-28 sm:bottom-32" : "bottom-6"}`}
             aria-label={ui.openMenu}
           >
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
@@ -756,7 +798,7 @@ export function SolutionLibraryPage({
 
           {showDocsSection ? (
           <section id="bolum-dokumantasyon" className={`${SOLUTION_LIBRARY_PAGE_X} pb-8 scroll-mt-28`}>
-            <div className="rounded-xl border border-sand-300/80 bg-sand-100 p-5 sm:rounded-[1.5rem] sm:p-8">
+            <div className="overflow-visible rounded-xl border border-sand-300/80 bg-sand-100 p-5 sm:rounded-[1.5rem] sm:p-8">
               <div className="mb-6 flex flex-wrap items-center gap-3 sm:mb-8 sm:gap-4">
                 <span className="flex h-10 w-10 items-center justify-center text-primary" aria-hidden>
                   <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.6}>
@@ -770,9 +812,9 @@ export function SolutionLibraryPage({
                 </span>
                 <h2 className="text-xl font-black uppercase tracking-tighter text-ink">{ui.documentation}</h2>
               </div>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="flex flex-col gap-3 sm:gap-4 md:grid md:grid-cols-2 md:gap-4">
                 {filteredDocs.length === 0 ? (
-                  <p className="col-span-full rounded-xl border border-sand-300/80 bg-white px-5 py-8 text-sm leading-relaxed text-secondary/75">
+                  <p className="rounded-xl border border-sand-300/80 bg-white px-5 py-8 text-sm leading-relaxed text-secondary/75 md:col-span-2">
                     {filteredView.hasActiveFilters
                       ? ui.filterNoResults
                       : searchResults.hasQuery
@@ -782,12 +824,12 @@ export function SolutionLibraryPage({
                 ) : (
                   filteredDocs.map((doc) => {
                     const isSelected = selected.has(doc.id);
-                    const rowClass = `group flex w-full items-center justify-between gap-4 rounded-xl border border-sand-300/80 bg-white p-4 text-left transition-colors hover:bg-sand-200/80 ${
+                    const rowClass = `relative isolate flex w-full shrink-0 items-center justify-between gap-3 rounded-xl border border-sand-300/80 bg-white p-4 text-left transition-colors hover:bg-sand-200/80 sm:gap-4 ${
                       isSelected ? "ring-2 ring-primary/40" : ""
                     }`;
                     const inner = (
                       <>
-                        <div className="flex min-w-0 items-center gap-4">
+                        <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
                           <div
                             className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg transition-colors ${
                               isSelected ? "bg-primary text-white" : docIconTone(doc.icon)
@@ -795,9 +837,11 @@ export function SolutionLibraryPage({
                           >
                             <DocIcon kind={doc.icon} />
                           </div>
-                          <div className="min-w-0">
-                            <p className="truncate text-sm font-bold text-ink group-hover:text-primary">{doc.title}</p>
-                            <p className="text-[10px] font-semibold text-secondary/65">{doc.meta}</p>
+                          <div className="min-w-0 flex-1">
+                            <p className="text-sm font-bold leading-snug text-ink [overflow-wrap:anywhere] group-hover:text-primary sm:truncate">
+                              {doc.title}
+                            </p>
+                            <p className="mt-0.5 text-[10px] font-semibold text-secondary/65">{doc.meta}</p>
                           </div>
                         </div>
                         {doc.href ? (
@@ -821,12 +865,12 @@ export function SolutionLibraryPage({
                         href={doc.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={rowClass}
+                        className={`${rowClass} group`}
                       >
                         {inner}
                       </a>
                     ) : (
-                      <button key={doc.id} type="button" onClick={() => toggle(doc.id)} className={rowClass}>
+                      <button key={doc.id} type="button" onClick={() => toggle(doc.id)} className={`${rowClass} group`}>
                         {inner}
                       </button>
                     );

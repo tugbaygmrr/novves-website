@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import fs from "node:fs/promises";
 import { notFound } from "next/navigation";
 import { hasLocale } from "../../dictionaries";
 import { MediaHtmlFrame } from "@/components/media-html-frame";
 import { MediaCenterSidebar } from "@/components/media-center-sidebar";
+import { mediaCenterHtmlMissingMessage, readMediaCenterHtml } from "@/lib/media-center-html";
+import { withPageSeo } from "@/lib/seo/page-metadata";
 import patentTrToLocalesAuto from "@/lib/patent-tr-to-locales.auto.json";
 
 export const dynamic = "force-dynamic";
@@ -1008,10 +1009,12 @@ function localizeMediaHtml(locale: string, html: string): string {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  return {
+  return withPageSeo({
+    locale,
+    pathAfterLocale: "kurumsal/medya-merkezi",
     title: mediaCenterTitles[locale] ?? mediaCenterTitles.en,
     description: mediaCenterDescriptions[locale] ?? mediaCenterDescriptions.en,
-  };
+  });
 }
 
 export default async function MedyaMerkeziPage({
@@ -1022,38 +1025,11 @@ export default async function MedyaMerkeziPage({
   const { locale } = await params;
   if (!hasLocale(locale)) notFound();
 
-  const externalHtmlPath =
-    "C:/Users/Tuğba/Desktop/Medya Merkezi stitch_digital_document_library/code.html";
-
   let html = "";
   try {
-    html = await fs.readFile(externalHtmlPath, "utf8");
+    html = await readMediaCenterHtml();
   } catch {
-    html = "";
-  }
-
-  if (!html) {
-    html = `
-      <!doctype html>
-      <html lang="tr">
-        <head>
-          <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Medya Merkezi</title>
-          <style>
-            body { font-family: Inter, Arial, sans-serif; padding: 24px; }
-            .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; }
-          </style>
-        </head>
-        <body>
-          <div class="card">
-            <h2>Medya Merkezi kod dosyası bulunamadı.</h2>
-            <p>Lütfen şu dosya yolunu kontrol edin:</p>
-            <code>${externalHtmlPath}</code>
-          </div>
-        </body>
-      </html>
-    `;
+    html = mediaCenterHtmlMissingMessage("media");
   }
 
   html = localizeMediaHtml(locale, html);

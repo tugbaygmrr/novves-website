@@ -3,6 +3,11 @@ import Link from "next/link";
 import { FooterNewsletter } from "@/components/footer-newsletter";
 import { getFooterStrings } from "@/components/footer-i18n";
 import { locales, localeUi } from "@/i18n/config";
+import {
+  NOVVES_FACTORY_DISPLAY_LINES,
+  NOVVES_HEAD_OFFICE_DISPLAY_LINES,
+  NOVVES_PRIMARY_LINKEDIN,
+} from "@/lib/company/addresses";
 
 // Kept for backwards compatibility with the existing layout.tsx caller —
 // the new footer no longer reads from `dict` (uses centralized footer-i18n).
@@ -65,7 +70,7 @@ const sectionHrefs = {
 const socialLinks = [
   {
     label: "LinkedIn",
-    href: "https://tr.linkedin.com/company/novvesturkiye",
+    href: NOVVES_PRIMARY_LINKEDIN,
     icon: (
       <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -504,11 +509,12 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 <div className="leading-tight">
                   <p className="text-fine font-semibold text-primary">{t.contact.headOffice}</p>
                   <p className="mt-0.5 text-fine leading-snug text-white/95">
-                    19 Mayıs Mh. Sümer Sk.
-                    <br />
-                    Zitaş Plaza C2 Blok No:7
-                    <br />
-                    Kadıköy / İstanbul / Türkiye
+                    {NOVVES_HEAD_OFFICE_DISPLAY_LINES.map((line, index) => (
+                      <span key={line}>
+                        {index > 0 && <br />}
+                        {line}
+                      </span>
+                    ))}
                   </p>
                 </div>
               </div>
@@ -523,11 +529,12 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
                 <div className="leading-tight">
                   <p className="text-fine font-semibold text-primary">{t.contact.factory}</p>
                   <p className="mt-0.5 text-fine leading-snug text-white/95">
-                    Yalova Organize Sanayi Bölgesi
-                    <br />
-                    2. Cadde No:12
-                    <br />
-                    Çiftlikköy / Yalova / Türkiye
+                    {NOVVES_FACTORY_DISPLAY_LINES.map((line, index) => (
+                      <span key={line}>
+                        {index > 0 && <br />}
+                        {line}
+                      </span>
+                    ))}
                   </p>
                 </div>
               </div>

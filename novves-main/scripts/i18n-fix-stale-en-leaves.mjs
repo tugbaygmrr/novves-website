@@ -55,7 +55,7 @@ function shouldSkipString(s) {
   if (typeof s !== "string") return true;
   const t = s.trim();
   if (t.length === 0) return true;
-  if (/^[\d\s+.,:/\-ùù()%TLù$]+$/.test(t) && t.length < 80) return true;
+  if (/^[\d\s+.,:/\-ÔøΩÔøΩ()%TLÔøΩ$]+$/.test(t) && t.length < 80) return true;
   if (/^\/[a-z0-9\-\/]*$/i.test(t) && t.length < 160) return true;
   if (/^\+?\d[\d\s\-]+$/.test(t)) return true;
   if (t.includes("http://") || t.includes("https://")) return true;
@@ -226,7 +226,7 @@ async function processLocale(locale) {
         continue;
       }
       if (DRY) {
-        console.log(`[dry] ${locale} ${cpKey}: ${enVal.slice(0, 70)}ù`);
+        console.log(`[dry] ${locale} ${cpKey}: ${enVal.slice(0, 70)}ÔøΩ`);
         continue;
       }
       let out = cache.get(enVal);
@@ -245,7 +245,7 @@ async function processLocale(locale) {
     }
   }
 
-  console.error(`${locale} done ù translated ${translated}, checkpoint-skipped ${skipped}`);
+  console.error(`${locale} done ÔøΩ translated ${translated}, checkpoint-skipped ${skipped}`);
 }
 
 for (const locale of TARGET_LOCALES) {

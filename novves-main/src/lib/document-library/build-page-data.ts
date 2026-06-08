@@ -6,6 +6,9 @@ import type {
 
 type RawDoc = {
   id: string;
+  language: string;
+  languages?: string[];
+  downloadByLanguage?: Record<string, string>;
   category: string;
   code: string;
   title: string;
@@ -17,10 +20,6 @@ type RawDoc = {
   downloadHref?: string;
   revision?: string;
   lastModified?: string;
-};
-
-type LibraryDict = DocumentLibraryUi & {
-  documents: RawDoc[];
 };
 
 const DEFAULT_PREVIEW = "/images/products/marlin.png";
@@ -86,10 +85,16 @@ export function buildDocumentLibraryTree(ui: DocumentLibraryUi): DocumentLibrary
   ];
 }
 
-export function buildDocumentLibraryPageData(ui: DocumentLibraryUi, dict: LibraryDict) {
+export function buildDocumentLibraryPageData(ui: DocumentLibraryUi) {
   const sharedDocuments: RawDoc[] = [
     {
       id: "novves-references-catalog",
+      language: "tr",
+      languages: ["tr", "en"],
+      downloadByLanguage: {
+        tr: "/documents/novves-referans-katalogu.pdf",
+        en: "/documents/novves-reference-catalog-en.pdf",
+      },
       category: ui.sidebar.tree.catalogs,
       code: "CAT-NV-REF-2026",
       title: "NOVVES Referans Kataloğu",
@@ -103,6 +108,12 @@ export function buildDocumentLibraryPageData(ui: DocumentLibraryUi, dict: Librar
     },
     {
       id: "novves-biyomimetik-catalog",
+      language: "tr",
+      languages: ["tr", "en"],
+      downloadByLanguage: {
+        tr: "/documents/novves-biyomimetik-katalog.pdf",
+        en: "/documents/novves-biyomimetik-catalog-en.pdf",
+      },
       category: ui.sidebar.tree.catalogs,
       code: "CAT-NV-BIO-2026",
       title: "NOVVES Biyomimetik Ürün Kataloğu",
@@ -116,6 +127,7 @@ export function buildDocumentLibraryPageData(ui: DocumentLibraryUi, dict: Librar
     },
     {
       id: "novves-duman-tahliye-catalog",
+      language: "tr",
       category: ui.sidebar.tree.catalogs,
       code: "CAT-NV-SMOKE-2026",
       title: "NOVVES Duman Tahliye Kataloğu",
@@ -129,6 +141,7 @@ export function buildDocumentLibraryPageData(ui: DocumentLibraryUi, dict: Librar
     },
     {
       id: "novves-company-profile",
+      language: "tr",
       category: ui.sidebar.tree.catalogs,
       code: "CAT-NV-PROFILE-2026",
       title: "NOVVES Şirket Profili Kataloğu",
@@ -142,6 +155,7 @@ export function buildDocumentLibraryPageData(ui: DocumentLibraryUi, dict: Librar
     },
     {
       id: "novves-certificates-catalog",
+      language: "tr",
       category: ui.sidebar.tree.certifications,
       code: "CAT-NV-CERT-2026",
       title: "NOVVES Sertifikalar Kataloğu",
@@ -155,7 +169,7 @@ export function buildDocumentLibraryPageData(ui: DocumentLibraryUi, dict: Librar
     },
   ];
 
-  const documents: DocumentLibraryItem[] = [...sharedDocuments, ...dict.documents].map((d) => ({
+  const documents: DocumentLibraryItem[] = sharedDocuments.map((d) => ({
     ...d,
     fileFormat: d.fileFormat ?? "PDF / CAD",
     revision: d.revision ?? "v2.4.1",
