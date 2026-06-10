@@ -4,6 +4,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../../dictionaries";
 import { technicalDetailMetadata } from "@/lib/i18n-metadata";
+import { getPublishedArticles } from "@/lib/blog/db";
+
+// İçerik admin panelinden (DB) geldiği için her istekte taze.
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -25,6 +29,7 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
   if (!hasLocale(locale)) notFound();
   const dict = await getDictionary(locale);
   const t = dict.technical.blog;
+  const articles = await getPublishedArticles(locale);
 
   return (
     <main>
@@ -56,6 +61,47 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
+      {/* Yayınlanmış yazılar (DB) */}
+      {articles.length > 0 && (
+        <section className="bg-[#ecebe6] py-14 sm:py-16">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-9 flex items-end gap-4">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{t.topicAreas.sectionLabel}</p>
+                <h3 className="mt-1 font-eurostile text-card-sm font-bold text-dark">{t.hero.titlePart1} {t.hero.titleHighlight}</h3>
+              </div>
+              <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {articles.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/${locale}/teknik-merkez/blog/${a.slug}`}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-[#f8f5ed] transition-all hover:border-primary/30 hover:shadow-[0_18px_40px_-26px_rgba(15,20,30,0.4)]"
+                >
+                  <div className="relative aspect-[16/9] overflow-hidden bg-ink/5">
+                    {a.cover ? (
+                      <Image src={a.cover} alt="" fill className="object-cover transition-transform duration-300 group-hover:scale-105" sizes="(max-width:768px) 100vw, 33vw" />
+                    ) : null}
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    {a.category ? <span className="text-[11px] font-semibold uppercase tracking-wide text-primary">{a.category}</span> : null}
+                    <h4 className="mt-1.5 font-eurostile text-[18px] font-bold leading-snug text-dark">{a.title}</h4>
+                    {a.excerpt ? <p className="mt-2 line-clamp-3 text-[13.5px] leading-relaxed text-secondary/60">{a.excerpt}</p> : null}
+                    <div className="mt-auto pt-4 text-[12px] text-secondary/45">
+                      {a.publishAt ? new Date(a.publishAt).toLocaleDateString("tr-TR", { year: "numeric", month: "long", day: "numeric" }) : null}
+                      {a.author ? ` · ${a.author}` : ""}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {articles.length === 0 && (
+      <>
       {/* Coming Soon */}
       <section className="bg-[#ecebe6] py-6 sm:py-8">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
@@ -101,6 +147,8 @@ export default async function Blog({ params }: { params: Promise<{ locale: strin
           </div>
         </div>
       </section>
+      </>
+      )}
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-dark py-18 sm:py-20">

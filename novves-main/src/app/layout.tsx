@@ -9,6 +9,7 @@ import {
 } from "@/i18n/config";
 import { getSiteUrl } from "@/lib/seo/metadata";
 import { buildOgImageMetadata, buildTwitterImageMetadata } from "@/lib/seo/og-image";
+import { AnalyticsScripts } from "@/components/analytics-scripts";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -44,6 +45,7 @@ export default async function RootLayout({
         <Script id="novves-html-lang-sync" strategy="beforeInteractive">
           {HTML_LANG_SYNC_SCRIPT}
         </Script>
+        <AnalyticsScripts />
         {children}
       </body>
     </html>

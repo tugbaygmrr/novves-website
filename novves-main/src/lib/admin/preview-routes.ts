@@ -9,7 +9,7 @@ const FILE_ROUTES: Record<string, string> = {
   corporate: "/kurumsal/biz-kimiz",
   contact: "/iletisim",
   sustainability: "/surdurulebilirlik",
-  technical: "/teknik-merkez",
+  technical: "/teknik-merkez/dokuman-kutuphanesi",
   kvkk: "/kvkk",
   "partner-records": "/iletisim/partnerlerimiz",
 };
@@ -45,7 +45,7 @@ const SECTION_ROUTES: Record<string, Record<string, string>> = {
     ceoMesaji: "/kurumsal/ceo-mesaji",
     ekibimiz: "/kurumsal/ekibimiz",
     referanslar: "/kurumsal/referanslar",
-    sertifikalar: "/kurumsal/sertifikalar",
+    sertifikalar: "/teknik-merkez/dokuman-kutuphanesi",
     politikamiz: "/kurumsal/politikamiz",
     basinOdasi: "/kurumsal/basin-odasi",
     haberler: "/kurumsal/haberler",

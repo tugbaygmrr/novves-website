@@ -159,6 +159,62 @@ function PresetSvg({
           <path d="M9 12l2 2 4-4" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       );
+    case "team":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <circle cx="12" cy="7.2" r="2.5" />
+          <path d="M6.8 18v-.7a5.2 5.2 0 0 1 10.4 0v.7" />
+          <circle cx="5.2" cy="9.8" r="1.9" />
+          <path d="M2.2 17.6v-.5a3.4 3.4 0 0 1 3-3.38" />
+          <circle cx="18.8" cy="9.8" r="1.9" />
+          <path d="M21.8 17.6v-.5a3.4 3.4 0 0 0-3-3.38" />
+        </svg>
+      );
+    case "globe":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18" />
+          <ellipse cx="12" cy="12" rx="4" ry="9" />
+        </svg>
+      );
+    case "box":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+          <path d="M3.3 7.2 12 12l8.7-4.8" />
+          <path d="M12 22V12" />
+        </svg>
+      );
+    case "industry":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <path d="M2 20V8.5a1 1 0 0 1 1.6-.8L9 12V8.5a1 1 0 0 1 1.6-.8L16 12V4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16" />
+          <path d="M2 20h20" />
+          <path d="M6 16h1" />
+          <path d="M11 16h1" />
+          <path d="M17 16h1" />
+        </svg>
+      );
+    case "pinwheel":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
+          <circle cx="12" cy="12" r="1.1" />
+        </svg>
+      );
+    case "snowflake":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <path d="M12 2v20" />
+          <path d="M3.5 7.5l17 9" />
+          <path d="M20.5 7.5l-17 9" />
+          <path d="M9 3.5l3 2.5 3-2.5" />
+          <path d="M9 20.5l3-2.5 3 2.5" />
+          <path d="M3 9.5l2.6 1.5L3 12.5" />
+          <path d="M21 9.5l-2.6 1.5L21 12.5" />
+        </svg>
+      );
     default:
       return null;
   }

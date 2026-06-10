@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FooterNewsletter } from "@/components/footer-newsletter";
 import { getFooterStrings } from "@/components/footer-i18n";
+import { getMenu } from "@/lib/menu/db";
 import { locales, localeUi } from "@/i18n/config";
 import {
   NOVVES_FACTORY_DISPLAY_LINES,
@@ -48,7 +49,7 @@ const sectionHrefs = {
   resources: [
     "/teknik-merkez/dokuman-kutuphanesi",
     "/teknik-merkez/dokuman-kutuphanesi",
-    "/kurumsal/sertifikalar",
+    "/teknik-merkez/dokuman-kutuphanesi",
     "/kurumsal/referanslar",
     "/kurumsal/haberler",
     "/teknik-merkez/dokuman-kutuphanesi",
@@ -309,9 +310,21 @@ function buildSections(t: ReturnType<typeof getFooterStrings>) {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFooterDict }) {
+export async function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFooterDict }) {
   const t = getFooterStrings(locale);
   const sections = buildSections(t);
+
+  // Alt bar yasal linkleri: Menü Yönetimi'nden (footer_legal) gelir; yoksa sabit içeriğe düşülür.
+  const dbLegal = await getMenu("footer_legal", locale);
+  const legalLinks =
+    dbLegal.length > 0
+      ? dbLegal.map((m) => ({ label: m.label, href: m.href, external: m.external }))
+      : [
+          { label: t.bottom.legalCenter, href: "/legal", external: false },
+          { label: t.bottom.privacyPolicy, href: "/privacy", external: false },
+          { label: t.bottom.cookieSettings, href: "/cookies", external: false },
+          { label: t.bottom.applicationForm, href: "/kvkk/FR-0057-Kisisel-Veri-Sahibi-Basvuru-Formu.pdf", external: true },
+        ];
 
   return (
     <footer className="relative overflow-hidden bg-[#0f1d33] text-white">
@@ -724,32 +737,27 @@ export function Footer({ locale, dict: _dict }: { locale: string; dict: CommonFo
         <div className="mx-auto flex max-w-[1600px] flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row sm:px-6 lg:px-8">
           <p className="text-fine tracking-wide text-white/92">{t.bottom.copyright}</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            <Link
-              href={`/${locale}/legal`}
-              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
-            >
-              {t.bottom.legalCenter}
-            </Link>
-            <Link
-              href={`/${locale}/privacy`}
-              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
-            >
-              {t.bottom.privacyPolicy}
-            </Link>
-            <Link
-              href={`/${locale}/cookies`}
-              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
-            >
-              {t.bottom.cookieSettings}
-            </Link>
-            <a
-              href="/kvkk/FR-0057-Kisisel-Veri-Sahibi-Basvuru-Formu.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
-            >
-              {t.bottom.applicationForm}
-            </a>
+            {legalLinks.map((lnk) =>
+              lnk.external ? (
+                <a
+                  key={lnk.href}
+                  href={lnk.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
+                >
+                  {lnk.label}
+                </a>
+              ) : (
+                <Link
+                  key={lnk.href}
+                  href={`/${locale}${lnk.href}`}
+                  className="text-fine tracking-wide text-white/92 transition-colors duration-300 hover:text-white"
+                >
+                  {lnk.label}
+                </Link>
+              ),
+            )}
             <span className="hidden h-3 w-px bg-white/15 sm:inline-block" />
             <span className="flex items-center gap-2">
               <span className="text-fine text-white/95">{t.bottom.poweredBy}</span>

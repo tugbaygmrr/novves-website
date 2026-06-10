@@ -121,7 +121,135 @@
   --text-page-title: 2.625rem; /* 42px — Teknik & ürün sayfa H1 */
   --text-section: 2.25rem;     /* 36px — Anasayfa bölüm H2 */
   --text-hero: 3rem;           /* 48px — Hero slogan */
+
+  /* ── NOVVES Admin Panel tokens (yalnızca panel; değerler .panel-shell altında) ── */
+  --color-panel-bg: var(--panel-bg);
+  --color-panel-surface: var(--panel-surface);
+  --color-panel-surface-2: var(--panel-surface-2);
+  --color-panel-elevated: var(--panel-elevated);
+  --color-panel-border: var(--panel-border);
+  --color-panel-border-strong: var(--panel-border-strong);
+  --color-panel-fg: var(--panel-fg);
+  --color-panel-fg-muted: var(--panel-fg-muted);
+  --color-panel-fg-subtle: var(--panel-fg-subtle);
+  --color-panel-accent: var(--panel-accent);
+  --color-panel-accent-fg: var(--panel-accent-fg);
+  --color-panel-accent-soft: var(--panel-accent-soft);
+  --color-panel-success: var(--panel-success);
+  --color-panel-success-soft: var(--panel-success-soft);
+  --color-panel-warning: var(--panel-warning);
+  --color-panel-warning-soft: var(--panel-warning-soft);
+  --color-panel-danger: var(--panel-danger);
+  --color-panel-danger-soft: var(--panel-danger-soft);
+  --color-panel-info: var(--panel-info);
+  --color-panel-info-soft: var(--panel-info-soft);
+  --color-panel-sidebar: var(--panel-sidebar);
+  --color-panel-sidebar-fg: var(--panel-sidebar-fg);
+  --color-panel-sidebar-muted: var(--panel-sidebar-muted);
+  --color-panel-sidebar-active: var(--panel-sidebar-active);
+  --color-panel-sidebar-border: var(--panel-sidebar-border);
 }
+
+/* ════════════ NOVVES Admin Panel — tema değişkenleri (yalnızca .panel-shell) ════════════ */
+.panel-shell {
+  --panel-bg: #f5f6f8;
+  --panel-surface: #ffffff;
+  --panel-surface-2: #fafbfc;
+  --panel-elevated: #ffffff;
+  --panel-border: #eaecf0;
+  --panel-border-strong: #d9dde3;
+  --panel-fg: #16181d;
+  --panel-fg-muted: #5b6471;
+  --panel-fg-subtle: #98a1ae;
+  --panel-accent: #ef5f17;
+  --panel-accent-fg: #ffffff;
+  --panel-accent-soft: #fff2eb;
+  --panel-success: #15924f;
+  --panel-success-soft: #e7f6ee;
+  --panel-warning: #b7791f;
+  --panel-warning-soft: #fdf3e2;
+  --panel-danger: #d22d2d;
+  --panel-danger-soft: #fdecec;
+  --panel-info: #2563eb;
+  --panel-info-soft: #e9f0fe;
+  --panel-sidebar: #ffffff;
+  --panel-sidebar-fg: #1f2937;
+  --panel-sidebar-muted: #6b7280;
+  --panel-sidebar-active: #fff2eb;
+  --panel-sidebar-border: #eef0f3;
+  --panel-ring: rgba(239, 95, 23, 0.30);
+  --panel-shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --panel-shadow-md: 0 4px 12px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.05);
+  --panel-shadow-lg: 0 12px 32px -8px rgba(16, 24, 40, 0.14);
+  color-scheme: light;
+}
+
+.panel-shell[data-panel-theme="dark"] {
+  --panel-bg: #0a0c10;
+  --panel-surface: #14171d;
+  --panel-surface-2: #181c23;
+  --panel-elevated: #1b1f27;
+  --panel-border: #252b34;
+  --panel-border-strong: #323945;
+  --panel-fg: #e7eaee;
+  --panel-fg-muted: #98a1ae;
+  --panel-fg-subtle: #6a7585;
+  --panel-accent: #f56a22;
+  --panel-accent-fg: #ffffff;
+  --panel-accent-soft: #2a1a10;
+  --panel-success: #34d27f;
+  --panel-success-soft: #11251a;
+  --panel-warning: #e0a83a;
+  --panel-warning-soft: #2a2010;
+  --panel-danger: #f06363;
+  --panel-danger-soft: #2a1414;
+  --panel-info: #5b9bff;
+  --panel-info-soft: #111d33;
+  --panel-sidebar: #0e1115;
+  --panel-sidebar-fg: #d6dae0;
+  --panel-sidebar-muted: #818b98;
+  --panel-sidebar-active: #1c2129;
+  --panel-sidebar-border: #1d222a;
+  --panel-ring: rgba(245, 106, 34, 0.40);
+  --panel-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.30);
+  --panel-shadow-md: 0 4px 14px -2px rgba(0, 0, 0, 0.50);
+  --panel-shadow-lg: 0 16px 40px -10px rgba(0, 0, 0, 0.60);
+  color-scheme: dark;
+}
+
+/* Panel yardımcı sınıfları */
+.panel-shell {
+  background: var(--panel-bg);
+  color: var(--panel-fg);
+}
+.panel-shadow-sm { box-shadow: var(--panel-shadow-sm); }
+.panel-shadow-md { box-shadow: var(--panel-shadow-md); }
+.panel-shadow-lg { box-shadow: var(--panel-shadow-lg); }
+.panel-ring-accent { box-shadow: 0 0 0 3px var(--panel-ring); }
+
+/* Kart hover yükseltme — token tabanlı yumuşak gölge */
+.panel-hover-raise { transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+.panel-hover-raise:hover { transform: translateY(-2px); box-shadow: var(--panel-shadow-md); }
+@media (prefers-reduced-motion: reduce) {
+  .panel-hover-raise:hover { transform: none; }
+}
+
+/* İnce kaydırma çubuğu — panel */
+.panel-scroll { scrollbar-width: thin; scrollbar-color: var(--panel-border-strong) transparent; }
+.panel-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+.panel-scroll::-webkit-scrollbar-track { background: transparent; }
+.panel-scroll::-webkit-scrollbar-thumb { background: var(--panel-border-strong); border-radius: 9999px; border: 2px solid transparent; background-clip: content-box; }
+.panel-scroll::-webkit-scrollbar-thumb:hover { background: var(--panel-fg-subtle); background-clip: content-box; }
+
+/* Skeleton shimmer — panel */
+@keyframes panelShimmer { 100% { transform: translateX(100%); } }
+.panel-skeleton { position: relative; overflow: hidden; background: var(--panel-surface-2); }
+.panel-skeleton::after {
+  content: ""; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(127, 127, 127, 0.10), transparent);
+  animation: panelShimmer 1.5s infinite;
+}
+@media (prefers-reduced-motion: reduce) { .panel-skeleton::after { animation: none; } }
 
 /* clip: yatay taşmayı keser; overflow:hidden gibi sticky + scroll-driven hero’yu bozmaz */
 html {

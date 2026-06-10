@@ -20,6 +20,8 @@ import {
   readCookieConsentRaw,
 } from "@/lib/cookie-consent-storage";
 import { PRODUCT_CATEGORY_NAV } from "@/lib/hub-nav-config";
+import { ProductCategoryIcon } from "@/components/product-category-icon";
+import { ReferenceSectorIcon, type ReferenceSectorTheme } from "@/components/reference-sector-icon";
 import { productStripCategoryMedia } from "@/lib/product-strip-media";
 import { solutionStripPageProductMedia } from "@/lib/solution-strip-media";
 
@@ -73,7 +75,6 @@ type HomeDict = {
     heroImageAlt: string;
     heroLabel: string;
     videoSrc?: string;
-    mobileHeroImage?: string;
     stats: { value: string; label: string }[];
     endCard: {
       series: string;
@@ -1025,8 +1026,6 @@ function HomeCompanyProfileSectionBlock({
   );
 }
 
-type ReferenceSectorTheme = "orange" | "sky" | "emerald" | "zinc";
-
 const REFERENCE_SECTOR_THEME_CYCLE: ReferenceSectorTheme[] = ["orange", "sky", "emerald", "zinc"];
 
 function resolveReferenceSectorTheme(index: number, raw?: string): ReferenceSectorTheme {
@@ -1069,39 +1068,7 @@ const REFERENCE_SECTOR_THEME_STYLES: Record<
   },
 };
 
-function HomeReferenceSectorIcon({ theme }: { theme: ReferenceSectorTheme }) {
-  const cls = "h-7 w-7 text-white";
-  const sw = 1.65;
-  switch (theme) {
-    case "orange":
-      return (
-        <svg className="h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-        </svg>
-      );
-    case "sky":
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 10h16v8H4v-8z" />
-          <path strokeLinecap="round" d="M8 10V7a4 4 0 018 0v3M6 18h12" />
-        </svg>
-      );
-    case "emerald":
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 21h12M6 21V8l6-4 6 4v13" />
-          <path strokeLinecap="round" d="M9 13h2M13 13h2M9 17h6" />
-        </svg>
-      );
-    default:
-      return (
-        <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={sw} aria-hidden>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 21h16M4 21V10l4-2 2 2V8l4-2 4 2v13" />
-          <path strokeLinecap="round" d="M10 8V5h4v3M14 5v3" />
-        </svg>
-      );
-  }
-}
+// HomeReferenceSectorIcon → @/components/reference-sector-icon (paylaşılan: ReferenceSectorIcon)
 
 function HomeSolutionShowcaseCard({
   locale,
@@ -1231,101 +1198,7 @@ const PRODUCT_CATEGORY_ICON_BY_SLUG: Record<string, string> = {
   "titresim-ve-ses-izolasyon": "equalizer",
 };
 
-function ProductCategoryIcon({ name, className }: { name: string; className?: string }) {
-  const common = {
-    fill: "none" as const,
-    stroke: "currentColor" as const,
-    strokeWidth: 1.6,
-    strokeLinecap: "round" as const,
-    strokeLinejoin: "round" as const,
-    viewBox: "0 0 24 24",
-    className,
-  };
-  switch (name) {
-    case "wind":
-      return (
-        <svg {...common} aria-hidden>
-          <path d="M3 8h11a3 3 0 1 0-3-3" />
-          <path d="M3 12h16a3 3 0 1 1-3 3" />
-          <path d="M3 16h9" />
-        </svg>
-      );
-    case "snowflake":
-      return (
-        <svg {...common} aria-hidden>
-          <path d="M12 3v18" />
-          <path d="M3 12h18" />
-          <path d="M5.5 5.5l13 13" />
-          <path d="M18.5 5.5l-13 13" />
-          <path d="M9 5l3 -2 3 2" />
-          <path d="M9 19l3 2 3-2" />
-        </svg>
-      );
-    case "thermo":
-      return (
-        <svg {...common} aria-hidden>
-          <circle cx="12" cy="12" r="3" />
-          <path d="M12 2v3" />
-          <path d="M12 19v3" />
-          <path d="M4.2 4.2l2.1 2.1" />
-          <path d="M17.7 17.7l2.1 2.1" />
-          <path d="M2 12h3" />
-          <path d="M19 12h3" />
-          <path d="M4.2 19.8l2.1-2.1" />
-          <path d="M17.7 6.3l2.1-2.1" />
-        </svg>
-      );
-    case "waves":
-      return (
-        <svg {...common} aria-hidden>
-          <path d="M3 7c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
-          <path d="M3 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
-          <path d="M3 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
-        </svg>
-      );
-    case "diffuser":
-      return (
-        <svg {...common} fill="currentColor" stroke="none" aria-hidden>
-          {[5, 12, 19].flatMap((y) =>
-            [5, 12, 19].map((x) => <circle key={`${x}-${y}`} cx={x} cy={y} r="1.3" />),
-          )}
-        </svg>
-      );
-    case "filter":
-      return (
-        <svg {...common} aria-hidden>
-          <path d="M3 5h18l-7 9v6l-4-2v-4z" />
-        </svg>
-      );
-    case "wrench":
-      return (
-        <svg {...common} aria-hidden>
-          <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6 2.6 2.6 6-6a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.6-2.6 2.3-2.3z" />
-        </svg>
-      );
-    case "chip":
-      return (
-        <svg {...common} aria-hidden>
-          <rect x="6" y="6" width="12" height="12" rx="1.5" />
-          <rect x="9" y="9" width="6" height="6" rx="0.6" />
-          <path d="M9 3v3M12 3v3M15 3v3M9 18v3M12 18v3M15 18v3M3 9h3M3 12h3M3 15h3M18 9h3M18 12h3M18 15h3" />
-        </svg>
-      );
-    case "equalizer":
-      return (
-        <svg {...common} aria-hidden>
-          <path d="M6 20V8" />
-          <path d="M12 20V4" />
-          <path d="M18 20v-8" />
-          <circle cx="6" cy="6" r="1.3" />
-          <circle cx="12" cy="2.5" r="1.3" />
-          <circle cx="18" cy="10" r="1.3" />
-        </svg>
-      );
-    default:
-      return null;
-  }
-}
+// ProductCategoryIcon → @/components/product-category-icon (paylaşılan)
 
 function HomeProductCategoryCard({
   locale,
@@ -1334,6 +1207,7 @@ function HomeProductCategoryCard({
   description,
   families,
   image,
+  icon,
   index,
   cta,
   imagePriority = false,
@@ -1344,13 +1218,14 @@ function HomeProductCategoryCard({
   description: string;
   families?: readonly string[];
   image: string;
+  icon?: string;
   index: number;
   cta: string;
   imagePriority?: boolean;
 }) {
   const num = String(index + 1).padStart(2, "0");
   const slug = href.split("/").filter(Boolean).pop() ?? "";
-  const iconName = PRODUCT_CATEGORY_ICON_BY_SLUG[slug] ?? "wind";
+  const iconName = icon || PRODUCT_CATEGORY_ICON_BY_SLUG[slug] || "wind";
   const all = families ?? [];
   const hasFamilies = all.length > 0;
   const familiesText = all.join(" • ");
@@ -2200,6 +2075,11 @@ export default function HomeClient({
   locale,
   productCategoryLabels = {},
   referencePreviewProjectCounts,
+  solutionStrip = [],
+  productStrip = [],
+  referenceStrip = { button: {}, cards: [] },
+  certificateStrip = [],
+  engineeringStrip = { header: {}, boxes: [] },
 }: {
   dict: HomeDict;
   common?: HomeCommonNav | null;
@@ -2208,13 +2088,142 @@ export default function HomeClient({
   productCategoryLabels?: Record<string, string>;
   /** `@/data/references` üzerinden; referanslar sayfası ile aynı veri — `referencePreview` sırasıyla */
   referencePreviewProjectCounts?: number[];
+  /** Çözüm şeridi kartları (sıra + görseller) — `src/data/solution-strip.json` */
+  solutionStrip?: { href: string; hero: string; thumbnails: string[] }[];
+  /** Ürün kategorileri şeridi — `src/data/product-strip.json` */
+  productStrip?: {
+    slug: string;
+    href: string;
+    icon: string;
+    image: string;
+    title: Record<string, string>;
+    description: Record<string, string>;
+    features: Record<string, string[]>;
+  }[];
+  /** Referans sektör kartları — `src/data/reference-strip.json` */
+  referenceStrip?: {
+    button: Record<string, string>;
+    cards: {
+      href: string;
+      theme: string;
+      image: string;
+      sector: Record<string, string>;
+      example: Record<string, string>;
+      projectCount: Record<string, string>;
+    }[];
+  };
+  /** Sertifika kartları — `src/data/certificate-strip.json` */
+  certificateStrip?: {
+    href: string;
+    icon: string;
+    iconImage: string;
+    image: string;
+    title: Record<string, string>;
+    description: Record<string, string>;
+  }[];
+  /** "Mühendislikten Sahaya" şeridi — `src/data/engineering-strip.json` */
+  engineeringStrip?: {
+    header: Partial<{
+      eyebrow: Record<string, string>;
+      title: Record<string, string>;
+      lead: Record<string, string>;
+      sidebarCardTitle: Record<string, string>;
+      sidebarCardDesc: Record<string, string>;
+      cardCta: Record<string, string>;
+      mainCta: Record<string, string>;
+    }>;
+    boxes: {
+      href: string;
+      icon: string;
+      iconImage: string;
+      image: string;
+      videoSrc: string;
+      videoPoster: string;
+      title: Record<string, string>;
+      description: Record<string, string>;
+    }[];
+  };
 }) {
   const n = mergeHomeCommon(common).navbar;
   const pc = pageChromeFromDict(dict);
   const solutionByHref = dict.solutionCarouselByHref ?? {};
+  const homeSolutionSlides: SolutionBandSlide[] = solutionStrip.length
+    ? solutionStrip.map((c) => ({
+        href: c.href,
+        image: c.thumbnails[0] ?? "",
+        heroImage: c.hero,
+        thumbnails: [c.thumbnails[0] ?? "", c.thumbnails[1] ?? "", c.thumbnails[2] ?? ""] as const,
+      }))
+    : homeSolutionBandSlides;
   const catalogPreview = dict.catalogPreview ?? [];
-  const referencePreview = dict.referencePreview ?? [];
-  const certificatePreview = dict.certificatePreview ?? [];
+  const referencePreview = referenceStrip.cards.length
+    ? referenceStrip.cards.map((c) => ({
+        title: c.sector[locale] || c.sector.tr || "",
+        href: c.href,
+        image: c.image,
+        sector: c.sector[locale] || c.sector.tr || "",
+        example: c.example[locale] || c.example.tr || "",
+        projectCount: c.projectCount[locale] || c.projectCount.tr || "",
+        theme: c.theme as ReferenceSectorTheme,
+      }))
+    : (dict.referencePreview ?? []);
+  const certificatePreview = certificateStrip.length
+    ? certificateStrip.map((c) => ({
+        title: c.title[locale] || c.title.tr || "",
+        href: c.href,
+        image: c.image,
+        desc: c.description[locale] || c.description.tr || "",
+        icon: c.icon,
+        iconImage: c.iconImage,
+      }))
+    : (dict.certificatePreview ?? []);
+  // "Mühendislikten Sahaya" — admin JSON varsa onu, yoksa dict'i kullan
+  const engPick = (m?: Record<string, string>) => (m ? m[locale] || m.tr || "" : "");
+  const engHeader = engineeringStrip.header ?? {};
+  const engHasHeader = Object.values(engHeader).some((m) => m && (m[locale] || m.tr));
+  const engBase = (dict.engineeringPillarsSection ?? {}) as {
+    title?: string;
+    subtitle?: string;
+    lead?: string;
+    eyebrow?: string;
+    sidebarCardTitle?: string;
+    sidebarCardDesc?: string;
+    mainCta?: string;
+    cardCta?: string;
+    stats?: string[];
+  };
+  const engineeringSection =
+    engHasHeader || engineeringStrip.boxes.length
+      ? {
+          ...engBase,
+          title: engPick(engHeader.title) || engBase.title || "",
+          subtitle: engBase.subtitle || "",
+          lead: engPick(engHeader.lead) || engBase.lead || "",
+          eyebrow: engPick(engHeader.eyebrow) || engBase.eyebrow || "",
+          sidebarCardTitle: engPick(engHeader.sidebarCardTitle) || engBase.sidebarCardTitle || "",
+          sidebarCardDesc: engPick(engHeader.sidebarCardDesc) || engBase.sidebarCardDesc || "",
+          cardCta: engPick(engHeader.cardCta) || engBase.cardCta || "",
+          mainCta: engPick(engHeader.mainCta) || engBase.mainCta || "",
+        }
+      : dict.engineeringPillarsSection;
+  const engineeringPillars = engineeringStrip.boxes.length
+    ? engineeringStrip.boxes.map((b) => {
+        const t = b.title[locale] || b.title.tr || "";
+        return {
+          tag: t,
+          title: t,
+          intro: b.description[locale] || b.description.tr || "",
+          cta: "",
+          href: b.href,
+          items: [] as { label: string; desc: string }[],
+          image: b.image,
+          videoSrc: b.videoSrc,
+          videoPoster: b.videoPoster,
+          icon: b.icon,
+          iconImage: b.iconImage,
+        };
+      })
+    : dict.pillars;
   const companyProfileSection = dict.companyProfileSection;
   const companyProfileCards = dict.companyProfileCards ?? [];
   const productBlurbs = dict.productCategoryBlurbs ?? [];
@@ -2265,7 +2274,7 @@ export default function HomeClient({
   }, []);
 
   const homeItems = dict.productCategories.items;
-  const homeProductBandRows = PRODUCT_CATEGORY_NAV.map((nav, i) => {
+  const homeProductBandRowsFallback = PRODUCT_CATEGORY_NAV.map((nav, i) => {
     const meta = productCategoryMeta[i];
     const href = meta?.href ?? `/urunler/${nav.slug}`;
     const labelFromProducts = productCategoryLabels[nav.key]?.trim();
@@ -2289,8 +2298,20 @@ export default function HomeClient({
       thumbs,
       blurb: productBlurbs[i] ?? pc.productFallbackDesc,
       features,
+      icon: PRODUCT_CATEGORY_ICON_BY_SLUG[nav.slug] ?? "wind",
     };
   });
+  const homeProductBandRows = productStrip.length
+    ? productStrip.map((c) => ({
+        label: c.title[locale] || c.title.tr || productSlugToFallbackLabel(c.slug),
+        href: c.href,
+        image: c.image,
+        thumbs: [c.image, c.image, c.image] as const,
+        blurb: c.description[locale] || c.description.tr || pc.productFallbackDesc,
+        features: c.features[locale] || c.features.tr || [],
+        icon: c.icon,
+      }))
+    : homeProductBandRowsFallback;
   const scrollSolutionStrip = (direction: "prev" | "next") => {
     scrollHorizontalStrip(solutionStripCarouselRef.current, "[data-solution-strip-card]", direction, SOLUTION_STRIP_PAGE_CARD_COUNT);
   };
@@ -2311,7 +2332,6 @@ export default function HomeClient({
         <ScrollVideoSection
           videoSrc={dict.hero.videoSrc ?? "/video/hero-scroll-sand.mp4"}
           mobileVideoSrc="/video/hero-scroll-sand-mobile.mp4"
-          mobileVideoReplacementSrc={dict.hero.mobileHeroImage}
           mobileVideoReplacementAlt={dict.hero.heroImageAlt}
           scrollVh={260}
           id="animation-2"
@@ -2349,7 +2369,7 @@ export default function HomeClient({
                     className="flex items-stretch gap-2 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] scroll-smooth snap-x snap-mandatory sm:gap-3 sm:py-2.5 [&::-webkit-scrollbar]:hidden"
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                   >
-                    {homeSolutionBandSlides.map((item, i) => {
+                    {homeSolutionSlides.map((item, i) => {
                       const entry = solutionByHref[item.href];
                       const title = entry?.title ?? item.href;
                       const desc = entry?.description ?? pc.defaultSolutionDesc;
@@ -2428,6 +2448,7 @@ export default function HomeClient({
                       description={row.blurb}
                       families={row.features}
                       image={row.image}
+                      icon={row.icon}
                       index={i}
                       cta={pc.productCardCta}
                       imagePriority={i === 0}
@@ -2571,12 +2592,18 @@ export default function HomeClient({
                     const sector = (item.sector ?? item.title).trim();
                     const example = (item.example ?? "").trim();
                     const serverCount = referencePreviewProjectCounts?.[index];
+                    const manualCount = (item.projectCount ?? "").trim();
+                    // Kategori bazlı gerçek sayı (@/data/references) öncelikli; yoksa manuel.
                     const count =
-                      typeof serverCount === "number"
-                        ? String(serverCount)
-                        : (item.projectCount ?? "").trim();
+                      typeof serverCount === "number" ? String(serverCount) : manualCount;
                     const projectWord = (pc.referenceProjectWord || "Proje").trim();
-                    const explore = (pc.referenceExploreCta || pc.catalogCardCta || pc.pillarCta).trim();
+                    const explore = (
+                      referenceStrip.button[locale] ||
+                      referenceStrip.button.tr ||
+                      pc.referenceExploreCta ||
+                      pc.catalogCardCta ||
+                      pc.pillarCta
+                    ).trim();
                     const aria = example ? `${sector}: ${example}` : sector;
                     return (
                       <Link
@@ -2602,7 +2629,7 @@ export default function HomeClient({
                             <div
                               className={`flex h-[3.25rem] w-[3.25rem] shrink-0 items-center justify-center rounded-full shadow-[0_12px_28px_-6px_rgba(15,22,36,0.45)] ring-2 ring-white/85 ${styles.iconCircle}`}
                             >
-                              <HomeReferenceSectorIcon theme={theme} />
+                              <ReferenceSectorIcon theme={theme} />
                             </div>
                           </div>
                         </div>
@@ -2665,7 +2692,7 @@ export default function HomeClient({
               <h2 className="font-display text-lg font-bold uppercase tracking-[0.2em] text-ink sm:text-xl">{n.links.certificates}</h2>
               <div className="mb-0.5 h-px min-w-[4rem] flex-1 max-w-[14rem] bg-primary" aria-hidden />
               <Link
-                href={`/${locale}/kurumsal/sertifikalar`}
+                href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
                 className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary transition-colors hover:text-primary-deep"
               >
                 <span>{n.viewAll}</span>
@@ -2725,9 +2752,9 @@ export default function HomeClient({
 
           {/* Mühendislik adımları — büyük adım numarası, paralelkenar görsel, alternatif satır düzeni */}
           <HomeEngineeringPillarsJourneyStrip
-            pillars={dict.pillars}
+            pillars={engineeringPillars}
             locale={locale}
-            strip={dict.engineeringPillarsSection}
+            strip={engineeringSection}
             fallbackTitle={pc.pillarsFallbackTitle}
             pc={pc}
           />

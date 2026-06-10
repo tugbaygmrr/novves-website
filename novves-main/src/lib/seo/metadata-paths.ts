@@ -35,7 +35,6 @@ export const CORPORATE_PATHS: Record<string, string> = {
   ceoMesaji: "kurumsal/ceo-mesaji",
   ekibimiz: "kurumsal/ekibimiz",
   referanslar: "kurumsal/referanslar",
-  sertifikalar: "kurumsal/sertifikalar",
   politikamiz: "kurumsal/politikamiz",
   basinOdasi: "kurumsal/basin-odasi",
   haberler: "kurumsal/haberler",

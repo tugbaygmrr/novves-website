@@ -188,7 +188,7 @@ function buildMenus(dict: CommonDict, locale: string): MegaMenu[] {
         {
           label: l.livestockFacilities,
           href: "/cozumler/hayvancilik-tesisleri-icin-havalandirma-sistemleri",
-          image: "/images/products/owl-rer.jpg",
+          image: "/images/products/owl-rer.png",
         },
         {
           label: l.transformerEnergyRooms,

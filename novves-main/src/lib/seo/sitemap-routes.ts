@@ -28,7 +28,6 @@ export function collectPublicPathSegments(): string[] {
     "kurumsal/ceo-mesaji",
     "kurumsal/ekibimiz",
     "kurumsal/referanslar",
-    "kurumsal/sertifikalar",
     "kurumsal/politikamiz",
     "kurumsal/basin-odasi",
     "kurumsal/haberler",

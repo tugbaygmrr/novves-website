@@ -94,10 +94,22 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    try {
+      const res = await fetch("/api/contact-submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, kvkkConsent: true, website: "" }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", company: "", email: "", phone: "", message: "" });
+        setTimeout(() => setSubmitted(false), 5000);
+      }
+    } catch {
+      // sessiz; kullanıcı tekrar deneyebilir
+    }
   }
 
   const sidebar = (

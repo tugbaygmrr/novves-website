@@ -18,7 +18,13 @@ export type AdminIconSlug =
   | "wind"
   | "building"
   | "target"
-  | "shield";
+  | "shield"
+  | "team"
+  | "globe"
+  | "box"
+  | "industry"
+  | "pinwheel"
+  | "snowflake";
 
 export const ADMIN_ICON_PRESETS: { value: AdminIconSlug; label: string }[] = [
   { value: "document", label: "Belge" },
@@ -39,6 +45,12 @@ export const ADMIN_ICON_PRESETS: { value: AdminIconSlug; label: string }[] = [
   { value: "building", label: "Bina" },
   { value: "target", label: "Hedef" },
   { value: "shield", label: "Kalkan / güvenlik" },
+  { value: "team", label: "Ekip (grup)" },
+  { value: "globe", label: "Dünya / ihracat" },
+  { value: "box", label: "Kutu / ürün" },
+  { value: "industry", label: "Fabrika / endüstri" },
+  { value: "pinwheel", label: "Pervane / fan" },
+  { value: "snowflake", label: "Kar tanesi / klima" },
 ];
 
 export const ADMIN_ICON_SLUGS = ADMIN_ICON_PRESETS.map((p) => p.value);

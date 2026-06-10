@@ -26,7 +26,7 @@ for (const rel of ["src/lib/admin", "src/components/admin", "src/app/novves-pane
       bad++;
     }
     const s = buf.toString("utf8");
-    if (/listLabel \"/.test(s) || /Ã|Ä/.test(s)) {
+    if (/listLabel \"/.test(s) || /ï¿½|ï¿½/.test(s)) {
       console.log("MOJIBAKE", path.relative(ROOT, f));
       bad++;
     }

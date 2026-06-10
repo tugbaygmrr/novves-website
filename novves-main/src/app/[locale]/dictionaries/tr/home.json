@@ -24,7 +24,7 @@
       {
         "q": "Ürünleriniz hangi standartlara göre tasarlanır?",
         "a": "NOVVES ürünleri; ürün grubu, uygulama alanı ve proje gereksinimine göre EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 ve ilgili havalandırma, performans ve yangın güvenliği standartları dikkate alınarak tasarlanır, test edilir ve dokümante edilir.",
-        "linkHref": "/kurumsal/sertifikalar",
+        "linkHref": "/teknik-merkez/dokuman-kutuphanesi",
         "linkLabel": "Standart ve sertifikasyon yaklaşımımızı inceleyin →",
         "linkAriaLabel": "NOVVES ürünlerinde dikkate alınan EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 ve ilgili performans standartları hakkında bilgi alın."
       },
@@ -518,19 +518,18 @@
     "stats": [
       {
         "value": "500+",
-        "label": "Tamamlanmış Proje"
+        "label": "Tamamlanmış Proje",
+        "icon": "team"
       },
       {
         "value": "30+",
-        "label": "Ülkeye İhracat"
+        "label": "Ülkeye İhracat",
+        "icon": "globe"
       },
       {
         "value": "7000+",
-        "label": "Ürün Varyasyonu"
-      },
-      {
-        "value": "7/24",
-        "label": "Teknik Destek"
+        "label": "Ürün Varyasyonu",
+        "icon": "box"
       }
     ],
     "endCard": {
@@ -550,12 +549,14 @@
     "heroLabel": "HOUND Serisi",
     "ctaPrimary": "Projen İçin Teklif Al",
     "titleLine1": "Endüstriyel Fanlar",
+    "titleLine1Icon": "industry",
     "titleLine2": "Duman Tahliye Fanları",
+    "titleLine2Icon": "pinwheel",
     "titleLine3": "Klima Santralleri",
+    "titleLine3Icon": "snowflake",
     "ctaSecondary": "Ürünleri Keşfet",
     "heroImageAlt": "Aksiyal Hücreli Fan",
-    "videoSrc": "/video/hero-scroll-sand.mp4",
-    "mobileHeroImage": "/images/hero/endustriyel-mutfaklar.png"
+    "videoSrc": "/video/hero-scroll-sand.mp4"
   },
   "pageChrome": {
     "catalogsVertical": "Kataloglar",
@@ -742,21 +743,21 @@
   "certificatePreview": [
     {
       "title": "EN Sertifikaları",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/Efectis.png?v=2",
       "desc": "Duman ve ısı tahliye fanlarımızın EN standartlarına uygun performans belgelerine ulaşın.",
       "icon": "certificate"
     },
     {
       "title": "ISO Belgeleri",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/bsi9001.png?v=2",
       "desc": "Kalite yönetimi ve kurumsal süreçlerimizi belgeleyen ISO sertifikalarımızı inceleyin.",
       "icon": "shield"
     },
     {
       "title": "Kalite ve Uygunluk",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/iso-sertifika-mockup.png",
       "desc": "Ürün güvenilirliğimizi, test süreçlerimizi ve uygunluk belgelerimizi görüntüleyin.",
       "icon": "star"

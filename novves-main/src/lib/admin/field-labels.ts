@@ -59,6 +59,8 @@ const GLOBAL_LABELS: Record<string, string> = {
   companyProfileVertical: "Şirket profili etiketi",
   icon: "İkon",
   iconImage: "Özel ikon görseli",
+  bannerTitle: "Banner başlığı",
+  bannerLine1: "Banner açıklaması",
 };
 
 /** Keys hidden in simple-mode fallback unless "show all" is on */

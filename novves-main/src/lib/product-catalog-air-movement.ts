@@ -7,7 +7,7 @@ export const AIR_MOVEMENT_PRODUCT_IMAGES: Record<string, string> = {
   NAUTILUS: "/images/products/nautilus-cif-cidarli.png",
   HUMMINGBIRD: "/images/products/hummingbird-drb-ec.jpg",
   HERON: "/images/products/heron-rv.png",
-  OWL: "/images/products/owl-rer.jpg",
+  OWL: "/images/products/owl-rer.png",
   SEAHORSE: "/images/products/banyo-fan-1.png",
   KOI: "/images/products/koi-cb.png",
   TURTLE: "/images/products/turtle-a.png",

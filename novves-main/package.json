@@ -10,6 +10,10 @@
     "dev:clean": "node scripts/clean-next.mjs && next dev --webpack",
     "build": "next build",
     "start": "next start",
+    "postinstall": "prisma generate",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio",
     "lint": "eslint",
     "i18n:parity": "node scripts/i18n-parity.mjs",
     "i18n:fill-equals-en": "node scripts/fill-dict-from-donor-when-equals-en.mjs",
@@ -48,17 +52,27 @@
     "pm2:reload": "pm2 reload ecosystem.config.cjs --update-env"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.3",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
     "bcryptjs": "^3.0.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
     "gsap": "^3.14.2",
     "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.17.0",
     "next": "16.2.1",
     "pg": "^8.20.0",
+    "prisma": "^6.19.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "server-only": "^0.0.1",
-    "three": "^0.184.0"
+    "sharp": "^0.34.5",
+    "tailwind-merge": "^3.6.0",
+    "three": "^0.184.0",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -73,7 +87,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
     "playwright": "^1.60.0",
-    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

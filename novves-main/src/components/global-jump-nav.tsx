@@ -88,7 +88,7 @@ export function GlobalJumpNav({
         id: "catalogs",
         label: labels.catalogs,
         href: `/${locale}/teknik-merkez/dokuman-kutuphanesi`,
-        matchPath: `/${locale}/teknik-merkez`,
+        matchPath: `/${locale}/teknik-merkez/dokuman-kutuphanesi`,
         homeSectionId: "catalogs",
       },
       {
@@ -101,8 +101,8 @@ export function GlobalJumpNav({
       {
         id: "certificates",
         label: labels.certificates,
-        href: `/${locale}/kurumsal/sertifikalar`,
-        matchPath: `/${locale}/kurumsal/sertifikalar`,
+        href: `/${locale}/teknik-merkez/dokuman-kutuphanesi`,
+        matchPath: `/${locale}/teknik-merkez/dokuman-kutuphanesi`,
         homeSectionId: "certificates",
       },
       {

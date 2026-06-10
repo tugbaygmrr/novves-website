@@ -1,0 +1,404 @@
+// NOVVES Kurumsal CMS — Prisma şeması
+// Mevcut tablolar (admin_users, login_logs, page_content) introspect ile alındı.
+// Yeni CMS modelleri aşağıda eklenir; diğer dinamik modüller (Ürün, Referans, Ekip,
+// Haber/Blog, Partner, İletişim, SEO) kendi fazlarında eklenecek.
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ── Mevcut tablolar (raw pg ile de kullanılıyor) ──────────────────────────────
+model admin_users {
+  id              Int       @id @default(autoincrement())
+  username        String    @unique @db.VarChar(255)
+  password_hash   String
+  role            String    @default("admin") @db.VarChar(50)
+  is_active       Boolean   @default(true)
+  failed_attempts Int       @default(0)
+  locked_until    DateTime? @db.Timestamptz(6)
+  last_login      DateTime? @db.Timestamptz(6)
+  created_at      DateTime  @default(now()) @db.Timestamptz(6)
+  updated_at      DateTime  @default(now()) @db.Timestamptz(6)
+}
+
+model login_logs {
+  id         Int      @id @default(autoincrement())
+  username   String?  @db.VarChar(255)
+  ip_address String?  @db.VarChar(100)
+  success    Boolean  @default(false)
+  user_agent String?
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model page_content {
+  id         Int      @id @default(autoincrement())
+  file       String   @db.VarChar(100)
+  locale     String   @db.VarChar(10)
+  section    String   @db.VarChar(100)
+  data       Json     @default("{}")
+  updated_by String?  @db.VarChar(255)
+  updated_at DateTime @default(now()) @db.Timestamptz(6)
+
+  @@unique([file, locale, section])
+}
+
+// ── Faz 0: Medya + Denetim ────────────────────────────────────────────────────
+enum MediaKind {
+  IMAGE
+  DOCUMENT
+}
+
+enum DocStatus {
+  DRAFT
+  PUBLISHED
+}
+
+enum SubmissionStatus {
+  NEW
+  READ
+  ARCHIVED
+}
+
+model MediaFolder {
+  id        Int           @id @default(autoincrement())
+  name      String
+  parentId  Int?
+  parent    MediaFolder?  @relation("FolderTree", fields: [parentId], references: [id], onDelete: SetNull)
+  children  MediaFolder[] @relation("FolderTree")
+  media     Media[]
+  createdAt DateTime      @default(now())
+}
+
+model Media {
+  id         Int          @id @default(autoincrement())
+  kind       MediaKind
+  fileName   String // orijinal dosya adı
+  path       String       @unique // public yol, ör. /images/uploads/x.png veya /documents/uploads/y.pdf
+  mimeType   String
+  size       Int // byte
+  width      Int?
+  height     Int?
+  alt        String?
+  version    String?
+  folderId   Int?
+  folder     MediaFolder? @relation(fields: [folderId], references: [id], onDelete: SetNull)
+  uploadedBy String?
+  createdAt  DateTime     @default(now())
+
+  docFiles      TechnicalDocument[] @relation("DocFile")
+  docCovers     TechnicalDocument[] @relation("DocCover")
+  refLogos      Reference[]         @relation("RefLogo")
+  teamPhotos    TeamMember[]        @relation("TeamPhoto")
+  articleCovers Article[]           @relation("ArticleCover")
+
+  @@index([kind])
+  @@index([folderId])
+}
+
+model AuditLog {
+  id        Int      @id @default(autoincrement())
+  userId    Int?
+  username  String?
+  action    String // create | update | delete | publish | login ...
+  entity    String // "TechnicalDocument", "Media" ...
+  entityId  String?
+  diff      Json?
+  createdAt DateTime @default(now())
+
+  @@index([entity, entityId])
+  @@index([createdAt])
+}
+
+// ── Faz 1: Teknik Merkez ──────────────────────────────────────────────────────
+model DocCategory {
+  id           Int                      @id @default(autoincrement())
+  slug         String                   @unique // teknik-dokuman, sertifika, katalog, test-raporu, cfd-raporu, brosur, montaj-kilavuzu
+  order        Int                      @default(0)
+  createdAt    DateTime                 @default(now())
+  translations DocCategoryTranslation[]
+  documents    TechnicalDocument[]
+}
+
+model DocCategoryTranslation {
+  id          Int         @id @default(autoincrement())
+  categoryId  Int
+  category    DocCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  locale      String      @db.VarChar(10)
+  name        String
+  description String?
+
+  @@unique([categoryId, locale])
+}
+
+model TechnicalDocument {
+  id           Int                            @id @default(autoincrement())
+  slug         String                         @unique
+  categoryId   Int
+  category     DocCategory                    @relation(fields: [categoryId], references: [id])
+  fileId       Int
+  file         Media                          @relation("DocFile", fields: [fileId], references: [id])
+  coverId      Int?
+  cover        Media?                         @relation("DocCover", fields: [coverId], references: [id], onDelete: SetNull)
+  version      String?
+  publishDate  DateTime?
+  productSlug  String? // ürün modülü gelince FK'ye çevrilecek
+  status       DocStatus                      @default(DRAFT)
+  order        Int                            @default(0)
+  createdBy    String?
+  createdAt    DateTime                       @default(now())
+  updatedAt    DateTime                       @updatedAt
+  translations TechnicalDocumentTranslation[]
+
+  @@index([categoryId])
+  @@index([status])
+}
+
+model TechnicalDocumentTranslation {
+  id          Int               @id @default(autoincrement())
+  documentId  Int
+  document    TechnicalDocument @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  locale      String            @db.VarChar(10)
+  title       String
+  description String?
+
+  @@unique([documentId, locale])
+}
+
+// ── Faz 2: Referanslar ────────────────────────────────────────────────────────
+model Reference {
+  id             Int                    @id @default(autoincrement())
+  firmName       String
+  logoId         Int?
+  logo           Media?                 @relation("RefLogo", fields: [logoId], references: [id], onDelete: SetNull)
+  sector         String?
+  location       String?
+  completionDate DateTime?
+  featured       Boolean                @default(false)
+  status         DocStatus              @default(PUBLISHED)
+  order          Int                    @default(0)
+  gallery        Json? // görsel yolları (string[])
+  createdAt      DateTime               @default(now())
+  updatedAt      DateTime               @updatedAt
+  translations   ReferenceTranslation[]
+
+  @@index([status])
+}
+
+model ReferenceTranslation {
+  id          Int       @id @default(autoincrement())
+  referenceId Int
+  reference   Reference @relation(fields: [referenceId], references: [id], onDelete: Cascade)
+  locale      String    @db.VarChar(10)
+  projectName String?
+  description String?
+
+  @@unique([referenceId, locale])
+}
+
+// ── Faz 2: Ekibimiz ───────────────────────────────────────────────────────────
+model TeamMember {
+  id           Int                     @id @default(autoincrement())
+  photoId      Int?
+  photo        Media?                  @relation("TeamPhoto", fields: [photoId], references: [id], onDelete: SetNull)
+  email        String?
+  phone        String?
+  linkedin     String?
+  department   String?
+  status       DocStatus               @default(PUBLISHED)
+  order        Int                     @default(0)
+  createdAt    DateTime                @default(now())
+  updatedAt    DateTime                @updatedAt
+  translations TeamMemberTranslation[]
+
+  @@index([status])
+}
+
+model TeamMemberTranslation {
+  id       Int        @id @default(autoincrement())
+  memberId Int
+  member   TeamMember @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  locale   String     @db.VarChar(10)
+  name     String
+  title    String?
+  bio      String?
+
+  @@unique([memberId, locale])
+}
+
+// ── Faz 2: Ürünler ────────────────────────────────────────────────────────────
+model ProductCategory {
+  id           Int                          @id @default(autoincrement())
+  slug         String                       @unique
+  iconSlug     String? // preset ikon slug'ı
+  order        Int                          @default(0)
+  status       DocStatus                    @default(PUBLISHED)
+  createdAt    DateTime                     @default(now())
+  translations ProductCategoryTranslation[]
+  products     Product[]
+}
+
+model ProductCategoryTranslation {
+  id          Int             @id @default(autoincrement())
+  categoryId  Int
+  category    ProductCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  locale      String          @db.VarChar(10)
+  name        String
+  description String?
+
+  @@unique([categoryId, locale])
+}
+
+model Product {
+  id           Int                  @id @default(autoincrement())
+  slug         String               @unique
+  categoryId   Int
+  category     ProductCategory      @relation(fields: [categoryId], references: [id])
+  coverPath    String?
+  gallery      Json? // string[] görsel yolları
+  specs        Json? // [{ label, value }] teknik özellikler
+  files        Json? // [{ path, kind, label }] datasheet/katalog/sertifika/çizim
+  relatedSlugs String[]
+  featured     Boolean              @default(false)
+  status       DocStatus            @default(DRAFT)
+  order        Int                  @default(0)
+  createdAt    DateTime             @default(now())
+  updatedAt    DateTime             @updatedAt
+  translations ProductTranslation[]
+
+  @@index([categoryId])
+  @@index([status])
+}
+
+model ProductTranslation {
+  id        Int     @id @default(autoincrement())
+  productId Int
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  locale    String  @db.VarChar(10)
+  name      String
+  shortDesc String?
+  longDesc  String?
+
+  @@unique([productId, locale])
+}
+
+// ── Faz 2: Blog / Haber (Articles) ────────────────────────────────────────────
+model Article {
+  id           Int                  @id @default(autoincrement())
+  slug         String               @unique
+  coverId      Int?
+  cover        Media?               @relation("ArticleCover", fields: [coverId], references: [id], onDelete: SetNull)
+  category     String? // Haber, Blog, Duyuru, Basın...
+  tags         String[]
+  author       String?
+  status       DocStatus            @default(DRAFT)
+  publishAt    DateTime?
+  order        Int                  @default(0)
+  createdAt    DateTime             @default(now())
+  updatedAt    DateTime             @updatedAt
+  translations ArticleTranslation[]
+
+  @@index([status])
+  @@index([publishAt])
+}
+
+model ArticleTranslation {
+  id        Int     @id @default(autoincrement())
+  articleId Int
+  article   Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  locale    String  @db.VarChar(10)
+  title     String
+  excerpt   String?
+  body      String? // markdown / HTML
+
+  @@unique([articleId, locale])
+}
+
+// ── Faz 2: SEO & Site Ayarları ────────────────────────────────────────────────
+model SiteSetting {
+  key       String   @id // ga_id, gtm_id, search_console, social_*, contact_*
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+model Redirect {
+  id        Int      @id @default(autoincrement())
+  source    String   @unique // /eski-yol
+  target    String // /yeni-yol veya https://...
+  permanent Boolean  @default(true) // 301 / 302
+  hits      Int      @default(0)
+  createdAt DateTime @default(now())
+}
+
+model SeoMeta {
+  id          Int      @id @default(autoincrement())
+  path        String // ör. /urunler (locale öneksiz)
+  locale      String   @db.VarChar(10)
+  title       String?
+  description String?
+  canonical   String?
+  ogImage     String?
+  keywords    String[]
+  noindex     Boolean  @default(false)
+  updatedBy   String?
+  updatedAt   DateTime @updatedAt
+
+  @@unique([path, locale])
+}
+
+// ── Menü Yönetimi ─────────────────────────────────────────────────────────────
+// location: "header" (üst navigasyon üst seviye), "footer_legal" (alt bar yasal linkler),
+// "footer_quick" (footer hızlı erişim). Etiketler çeviri tablosunda (tr/en/ru düzenlenir,
+// diğer diller fallback). Public bileşenler DB satırı yoksa mevcut sabit içeriğe döner.
+model MenuItem {
+  id           Int                   @id @default(autoincrement())
+  location     String                @db.VarChar(40)
+  parentId     Int?
+  parent       MenuItem?             @relation("MenuChildren", fields: [parentId], references: [id], onDelete: Cascade)
+  children     MenuItem[]            @relation("MenuChildren")
+  href         String
+  icon         String?
+  order        Int                   @default(0)
+  visible      Boolean               @default(true)
+  external     Boolean               @default(false)
+  createdAt    DateTime              @default(now())
+  updatedAt    DateTime              @updatedAt
+  translations MenuItemTranslation[]
+
+  @@index([location, order])
+}
+
+model MenuItemTranslation {
+  id     Int      @id @default(autoincrement())
+  itemId Int
+  item   MenuItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  locale String   @db.VarChar(10)
+  label  String
+
+  @@unique([itemId, locale])
+}
+
+// ── Faz 2: İletişim form başvuruları ──────────────────────────────────────────
+model ContactSubmission {
+  id          Int              @id @default(autoincrement())
+  name        String
+  company     String?
+  email       String
+  phone       String?
+  department  String?
+  subject     String?
+  message     String
+  kvkkConsent Boolean          @default(false)
+  ip          String?
+  userAgent   String?
+  status      SubmissionStatus @default(NEW)
+  createdAt   DateTime         @default(now())
+
+  @@index([status])
+  @@index([createdAt])
+}

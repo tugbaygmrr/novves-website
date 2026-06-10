@@ -3,8 +3,11 @@
     "eyebrow": "Завершённые проекты\nпо всему миру",
     "badge": "Вентиляционные решения от А до Я",
     "titleLine1": "Промышленные вентиляторы",
+    "titleLine1Icon": "industry",
     "titleLine2": "Вентиляторы дымоудаления",
+    "titleLine2Icon": "pinwheel",
     "titleLine3": "Приточно-вытяжные установки",
+    "titleLine3Icon": "snowflake",
     "subtitle": "Мы предлагаем высокопроизводительные, надёжные и устойчивые решения для дымоудаления, кондиционирования и промышленных вентиляторных систем.",
     "ctaPrimary": "Получить предложение для проекта",
     "ctaSecondary": "Изучить продукты",
@@ -13,19 +16,18 @@
     "stats": [
       {
         "value": "500+",
-        "label": "Завершённых проектов"
+        "label": "Завершённых проектов",
+        "icon": "team"
       },
       {
         "value": "30+",
-        "label": "Стран экспорта"
+        "label": "Стран экспорта",
+        "icon": "globe"
       },
       {
         "value": "7000+",
-        "label": "Вариантов продукции"
-      },
-      {
-        "value": "24/7",
-        "label": "Техническая поддержка"
+        "label": "Вариантов продукции",
+        "icon": "box"
       }
     ],
     "endCard": {
@@ -158,7 +160,7 @@
       {
         "q": "Вы предоставляете услуги CFD-анализа?",
         "a": "Да, мы выполняем трёхмерное CFD-моделирование для каждого проекта, анализируя распространение дыма, температуру, концентрацию CO и дальность видимости, оптимизируя размещение струйных вентиляторов.",
-        "linkHref": "/kurumsal/sertifikalar",
+        "linkHref": "/teknik-merkez/dokuman-kutuphanesi",
         "linkLabel": "Explore our standards and certification approach →",
         "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
@@ -335,19 +337,19 @@
   "certificatePreview": [
     {
       "title": "Сертификаты EN",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/Efectis.png?v=2",
       "desc": "Ознакомьтесь с сертификатами производительности EN наших дымоудаляющих и тепловытяжных вентиляторов."
     },
     {
       "title": "Документы ISO",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/bsi9001.png?v=2",
       "desc": "Изучите сертификаты ISO, подтверждающие нашу систему управления качеством и корпоративные процессы."
     },
     {
       "title": "Качество и соответствие",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/iso-sertifika-mockup.png",
       "desc": "Просмотрите документацию о надёжности продукции, испытаниях и соответствии."
     }

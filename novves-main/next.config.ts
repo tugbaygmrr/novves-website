@@ -98,6 +98,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       ...getLegacyNextRedirects(),
+      // Sertifikalar sayfası kaldırıldı → Teknik Merkez
+      { source: "/:locale/kurumsal/sertifikalar", destination: "/:locale/teknik-merkez/dokuman-kutuphanesi", permanent: true },
       { source: "/trbu", destination: "/tr", permanent: false },
       { source: "/trbu/:path*", destination: "/tr/:path*", permanent: false },
       {

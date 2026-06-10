@@ -5,6 +5,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Html, Line, OrbitControls, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
+import { PartnerHeroMap } from "./partner-hero-map";
 
 export type PartnerPin = {
   name: string;
@@ -390,6 +391,10 @@ export function PartnerWorldMap({
   const earthRef = useRef<THREE.Group | null>(null);
   const initialIndex = pins.findIndex((p) => p.defaultSelected === true);
   const [selectedIndex, setSelectedIndex] = useState<number>(initialIndex >= 0 ? initialIndex : -1);
+  // WebGL bağlamı kaybolduğunda (mobil GPU bellek baskısı vb.) canvas bozuk
+  // bir framebuffer'ı ekranda bırakır. Bu durumda üstüne opak statik harita
+  // bindirilir; bağlam geri gelince (webglcontextrestored) küreye dönülür.
+  const [glLost, setGlLost] = useState(false);
 
   const zoomBy = (factor: number) => {
     const controls = controlsRef.current;
@@ -421,6 +426,17 @@ export function PartnerWorldMap({
           gl.setClearColor("#050a18", 1);
           gl.toneMapping = THREE.NoToneMapping;
           gl.toneMappingExposure = 1.0;
+          const canvas = gl.domElement;
+          canvas.addEventListener(
+            "webglcontextlost",
+            (e) => {
+              // preventDefault → tarayıcının bağlamı geri yükleme şansı korunur
+              e.preventDefault();
+              setGlLost(true);
+            },
+            false,
+          );
+          canvas.addEventListener("webglcontextrestored", () => setGlLost(false), false);
         }}
       >
         <GlobeScene
@@ -432,8 +448,17 @@ export function PartnerWorldMap({
         />
       </Canvas>
 
+      {/* WebGL bağlamı kaybolduğunda bozuk canvas'ı örten opak statik harita */}
+      {glLost && (
+        <div className="absolute inset-0 z-30 flex items-center justify-center bg-[#050a18]">
+          <PartnerHeroMap className="h-auto w-[88%] max-w-3xl opacity-90" />
+        </div>
+      )}
+
       {/* Controls */}
-      <div className="absolute bottom-4 right-4 z-20 flex flex-col gap-1.5">
+      <div
+        className={`absolute bottom-4 right-4 z-20 flex flex-col gap-1.5 ${glLost ? "hidden" : ""}`}
+      >
         <button
           type="button"
           onClick={() => zoomBy(1.3)}

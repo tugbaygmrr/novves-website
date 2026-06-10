@@ -125,18 +125,14 @@ export const HOME_SIMPLE_SECTIONS: AdminSection[] = [
   { key: "animation2", label: "Video Sonu Ürün Kartı" },
   { key: "solutionCarouselByHref", label: "Çözüm Kartları Şeridi" },
   { key: "productCategories", label: "Ürün Kategorileri Şeridi" },
-  { key: "productCategoryBlurbs", label: "Ürün Kart Açıklamaları" },
-  { key: "productCategoryFeatures", label: "Ürün Kart Özellikleri" },
   { key: "catalogPreview", label: "Katalog Önizleme Kartları" },
   { key: "referencePreview", label: "Referans Proje Kartları" },
   { key: "certificatePreview", label: "Sertifika Kartları" },
-  { key: "engineeringPillarsSection", label: "Mühendislik Süreci Başlığı" },
-  { key: "pillars", label: "3 Mühendislik Adımı" },
+  { key: "engineeringPillarsSection", label: "Mühendislikten Sahaya" },
   { key: "engineeringShowcase", label: "CFD Tanıtım Paneli" },
   { key: "faq", label: "Sık Sorulan Sorular" },
   { key: "finalCta", label: "Alt Teklif Çağrısı" },
   { key: "companyProfileSection", label: "Şirket Profili & Zaman Çizelgesi" },
-  { key: "pageChrome", label: "Buton ve Ortak Etiketler" },
 ];
 
 /** Eski şablon — yalnızca gelişmiş modda. */
@@ -283,11 +279,9 @@ export const ADMIN_PAGE_GROUPS: AdminPageGroup[] = [
   },
 ];
 
-/** Panel groups filtered by mode (home includes legacy sections in advanced). */
-export function getAdminPageGroups(mode: "simple" | "advanced"): AdminPageGroup[] {
-  return ADMIN_PAGE_GROUPS.map((g) =>
-    g.file === "home" ? buildHomePageGroup(mode) : g
-  );
+/** Panel groups for the simple editor (single mode). */
+export function getAdminPageGroups(): AdminPageGroup[] {
+  return ADMIN_PAGE_GROUPS;
 }
 
 /** Partner structural records (locale-independent JSON). */

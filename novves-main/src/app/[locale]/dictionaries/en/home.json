@@ -3,8 +3,11 @@
     "eyebrow": "Projects Completed\nWorldwide",
     "badge": "A-to-Z Ventilation Solutions",
     "titleLine1": "Industrial Fans",
+    "titleLine1Icon": "industry",
     "titleLine2": "Smoke Extraction Fans",
+    "titleLine2Icon": "pinwheel",
     "titleLine3": "Air Handling Units",
+    "titleLine3Icon": "snowflake",
     "subtitle": "We deliver high-performance, reliable and sustainable solutions for smoke extraction, air conditioning and industrial fan systems.",
     "ctaPrimary": "Get a Quote for Your Project",
     "ctaSecondary": "Explore Products",
@@ -13,19 +16,18 @@
     "stats": [
       {
         "value": "500+",
-        "label": "Completed Projects"
+        "label": "Completed Projects",
+        "icon": "team"
       },
       {
         "value": "30+",
-        "label": "Export Countries"
+        "label": "Export Countries",
+        "icon": "globe"
       },
       {
         "value": "7000+",
-        "label": "Product Variations"
-      },
-      {
-        "value": "24/7",
-        "label": "Technical Support"
+        "label": "Product Variations",
+        "icon": "box"
       }
     ],
     "endCard": {
@@ -498,7 +500,7 @@
       {
         "q": "Which standards are your products designed to?",
         "a": "NOVVES products are designed, tested and documented in line with EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and relevant ventilation, performance and fire-safety standards—depending on product group, application and project requirements.",
-        "linkHref": "/kurumsal/sertifikalar",
+        "linkHref": "/teknik-merkez/dokuman-kutuphanesi",
         "linkLabel": "Explore our standards and certification approach →",
         "linkAriaLabel": "Learn about EN 12101-3, AMCA 210 / ASHRAE 51, ISO 5801 and related performance standards applied to NOVVES products."
       },
@@ -764,19 +766,19 @@
   "certificatePreview": [
     {
       "title": "EN Certificates",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/Efectis.png?v=2",
       "desc": "Access EN-compliant performance certificates for our smoke and heat extraction fans."
     },
     {
       "title": "ISO Documents",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/bsi9001.png?v=2",
       "desc": "Review the ISO certificates that document our quality management and corporate processes."
     },
     {
       "title": "Quality & Compliance",
-      "href": "/kurumsal/sertifikalar",
+      "href": "/teknik-merkez/dokuman-kutuphanesi",
       "image": "/images/certificates/iso-sertifika-mockup.png",
       "desc": "View our product reliability, testing processes, and conformity documentation."
     }

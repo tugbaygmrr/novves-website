@@ -375,7 +375,7 @@ const GLOBAL_LABELS: Record<string, string> = {
   catalogsVertical: "Kataloglar ba\u015fl\u0131\u011f\u0131",
   pillarCta: "S\u00fctun butonu",
   catalogCardCta: "Katalog butonu",
-  productCardCta: "ùrùn butonu",
+  productCardCta: "ÔøΩrÔøΩn butonu",
   companyProfileVertical: "\u015eirket profili etiketi",
   icon: "\u0130kon",
   iconImage: "\u00d6zel ikon g\u00f6rseli",
@@ -443,7 +443,7 @@ export const PRODUCT_SECTION_LABELS: Record<string, string> = {
 
 // Fix typo in field-labels - productCardCta has wrong char
 let fl = fs.readFileSync(path.join(ROOT, "src/lib/admin/field-labels.ts"), "utf8");
-fl = fl.replace('productCardCta: "ùrùn butonu"', 'productCardCta: "\\u00dcr\\u00fcn butonu"');
+fl = fl.replace('productCardCta: "ÔøΩrÔøΩn butonu"', 'productCardCta: "\\u00dcr\\u00fcn butonu"');
 fs.writeFileSync(path.join(ROOT, "src/lib/admin/field-labels.ts"), fl, "utf8");
 
 // --- page-group-meta.ts home description ---

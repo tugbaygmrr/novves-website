@@ -155,7 +155,8 @@ export function proxy(request: NextRequest) {
       `object-src 'none'`,
       `base-uri 'self'`,
       `form-action 'self'`,
-      `frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com`,
+      // 'self': admin panelin bölüm önizlemeleri kendi sayfalarımızı iframe'e gömer
+      `frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com`,
       `frame-ancestors 'self'`,
       `upgrade-insecure-requests`,
     ].join("; ");

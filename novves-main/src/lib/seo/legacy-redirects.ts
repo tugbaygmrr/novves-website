@@ -56,10 +56,10 @@ const LEGACY_PATH_TARGETS: Record<string, string> = {
   "/basin.html": "kurumsal/basin-odasi",
   "/press.html": "kurumsal/basin-odasi",
 
-  "/sertifikalar.html": "kurumsal/sertifikalar",
-  "/sertifikalar": "kurumsal/sertifikalar",
-  "/certificates.html": "kurumsal/sertifikalar",
-  "/certificates": "kurumsal/sertifikalar",
+  "/sertifikalar.html": "teknik-merkez/dokuman-kutuphanesi",
+  "/sertifikalar": "teknik-merkez/dokuman-kutuphanesi",
+  "/certificates.html": "teknik-merkez/dokuman-kutuphanesi",
+  "/certificates": "teknik-merkez/dokuman-kutuphanesi",
 
   "/patentler.html": "kurumsal/patentlerimiz",
   "/patents.html": "kurumsal/patentlerimiz",

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DocumentLibraryPage } from "@/components/document-library/document-library-page";
 import { buildDocumentLibraryPageData } from "@/lib/document-library/build-page-data";
+import { getDbLibraryDocuments } from "@/lib/document-library/db-documents";
 import { resolveDocumentLibraryUi } from "@/lib/document-library/resolve-ui";
 import type { DocumentLibraryUi } from "@/lib/document-library/types";
 import { getDictionary, hasLocale, type Locale } from "../../dictionaries";
 import { technicalDetailMetadata } from "@/lib/i18n-metadata";
+
+// İçerik DB'den (admin panel) okunduğu için her istekte taze.
+export const dynamic = "force-dynamic";
 
 type LibraryBlock = DocumentLibraryUi & {
   documents?: unknown[];
@@ -43,7 +47,11 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const libraryDict = await loadLibraryDict(locale);
   const { documents: _docs, ...uiFromLocale } = libraryDict;
   const ui = resolveDocumentLibraryUi(uiFromLocale, enLibrary ?? uiFromLocale);
-  const { documents, tree, defaultPreviewImage } = buildDocumentLibraryPageData(ui);
+  const { documents: jsonDocuments, tree, defaultPreviewImage } = buildDocumentLibraryPageData(ui);
+
+  // Admin panelinden yayınlanmış dokümanlar (DB) en üstte; küratörlü JSON dokümanları altında.
+  const dbDocuments = await getDbLibraryDocuments(ui, locale);
+  const documents = [...dbDocuments, ...jsonDocuments];
 
   return (
     <DocumentLibraryPage

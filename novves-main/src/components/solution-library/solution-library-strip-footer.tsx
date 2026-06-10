@@ -33,7 +33,7 @@ export function SolutionLibraryStripFooter({
             {ui.footerPrivacy}
           </Link>
           <Link
-            href={`/${locale}/kurumsal/sertifikalar`}
+            href={`/${locale}/teknik-merkez/dokuman-kutuphanesi`}
             className="transition-colors hover:text-primary"
           >
             {ui.footerStandards}

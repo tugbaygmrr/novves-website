@@ -14,8 +14,8 @@ let src = fs.readFileSync(FILE, "utf8");
 
 if (!src.includes("DEFAULT_HERO_VIDEO_POSTER")) {
   src = src.replace(
-    "/** Hero MP4 kapak — lazy/preload oncesi bos siyah kutu olmasin */\n",
-    `/** Hero MP4 kapak — lazy/preload oncesi bos siyah kutu olmasin */
+    "/** Hero MP4 kapak ï¿½ lazy/preload oncesi bos siyah kutu olmasin */\n",
+    `/** Hero MP4 kapak ï¿½ lazy/preload oncesi bos siyah kutu olmasin */
 const DEFAULT_HERO_VIDEO_POSTER = "/images/hero/hero-poster.jpg";
 const HERO_FAN_PLACEHOLDER_FADE = 0.05;
 

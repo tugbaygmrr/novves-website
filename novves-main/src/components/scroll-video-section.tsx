@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { HomeContentIcon } from "@/components/home-content-icon";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,11 +20,14 @@ type StartCard = {
   titleLine1: string;
   titleLine2: string;
   titleLine3: string;
+  titleLine1Icon?: string;
+  titleLine2Icon?: string;
+  titleLine3Icon?: string;
   subtitle: string;
   features?: string[];
   ctaPrimary?: string;
   ctaSecondary?: string;
-  stats?: { value: string; label: string }[];
+  stats?: { value: string; label: string; icon?: string }[];
 };
 
 type EndCard = {
@@ -85,63 +89,11 @@ const HERO_CERT_STRIP: ReadonlyArray<{ src: string; alt: string }> = [
   { src: "/images/cert-en.png", alt: "EN" },
 ];
 
-/** Start card liste ikonları — titleLine1/2/3: fabrika, fan, klima */
-const START_CARD_LIST_ICONS = [
-  (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M2 20V8.5a1 1 0 0 1 1.6-.8L9 12V8.5a1 1 0 0 1 1.6-.8L16 12V4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16" />
-      <path d="M2 20h20" />
-      <path d="M6 16h1" />
-      <path d="M11 16h1" />
-      <path d="M17 16h1" />
-    </svg>
-  ),
-  (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
-      <circle cx="12" cy="12" r="1.1" />
-    </svg>
-  ),
-  (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M12 2v20" />
-      <path d="M3.5 7.5l17 9" />
-      <path d="M20.5 7.5l-17 9" />
-      <path d="M9 3.5l3 2.5 3-2.5" />
-      <path d="M9 20.5l3-2.5 3 2.5" />
-      <path d="M3 9.5l2.6 1.5L3 12.5" />
-      <path d="M21 9.5l-2.6 1.5L21 12.5" />
-    </svg>
-  ),
-];
+/** Start card başlık satırı varsayılan ikonları (veri `titleLineNIcon` taşımıyorsa). */
+const START_CARD_LIST_ICON_SLUGS = ["industry", "pinwheel", "snowflake"];
 
-/** Hero istatistik ikonları — 500+ proje (insan grubu), 30+ ülke (globe), 7000+ ürün (kutu) */
-const START_CARD_STAT_ICONS = [
-  (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <circle cx="12" cy="7.2" r="2.5" />
-      <path d="M6.8 18v-.7a5.2 5.2 0 0 1 10.4 0v.7" />
-      <circle cx="5.2" cy="9.8" r="1.9" />
-      <path d="M2.2 17.6v-.5a3.4 3.4 0 0 1 3-3.38" />
-      <circle cx="18.8" cy="9.8" r="1.9" />
-      <path d="M21.8 17.6v-.5a3.4 3.4 0 0 0-3-3.38" />
-    </svg>
-  ),
-  (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M3 12h18" />
-      <ellipse cx="12" cy="12" rx="4" ry="9" />
-    </svg>
-  ),
-  (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-      <path d="M3.3 7.2 12 12l8.7-4.8" />
-      <path d="M12 22V12" />
-    </svg>
-  ),
-];
+/** Hero istatistik varsayılan ikonları (veri `icon` taşımıyorsa) — index'e göre. */
+const START_CARD_STAT_ICON_SLUGS = ["team", "globe", "box"];
 
 function heroDisplayStats(stats?: StartCard["stats"]) {
   if (!stats?.length) return [];
@@ -857,10 +809,19 @@ export function ScrollVideoSection({
                       {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
                         if (!raw) return null;
                         const label = raw.replace(/^[•·*—–-]\s*/u, "");
+                        const lineIcon =
+                          [startCard.titleLine1Icon, startCard.titleLine2Icon, startCard.titleLine3Icon][i] ||
+                          START_CARD_LIST_ICON_SLUGS[i] ||
+                          "fan";
                         return (
                           <li key={i} className="flex items-center gap-3 text-primary">
                             <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-6 lg:w-6" aria-hidden>
-                              {START_CARD_LIST_ICONS[i]}
+                              <HomeContentIcon
+                                name={lineIcon}
+                                image={lineIcon.startsWith("/images/") ? lineIcon : undefined}
+                                className="h-full w-full"
+                                strokeWidth={1.5}
+                              />
                             </span>
                             <span
                               className="text-[clamp(0.95rem,1.2vw,1.2rem)] font-normal md:text-[clamp(1.2rem,2vw,1.45rem)] lg:text-[clamp(0.95rem,1.2vw,1.2rem)]"
@@ -922,7 +883,12 @@ export function ScrollVideoSection({
                         style={{ transform: `translateX(-${arcInset}px)` }}
                       >
                         <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center text-primary" aria-hidden>
-                          {START_CARD_STAT_ICONS[i]}
+                          <HomeContentIcon
+                            name={stat.icon || START_CARD_STAT_ICON_SLUGS[i] || "target"}
+                            image={stat.icon && stat.icon.startsWith("/images/") ? stat.icon : undefined}
+                            className="h-7 w-7"
+                            strokeWidth={1.5}
+                          />
                         </span>
                         <div>
                           <p
@@ -1522,13 +1488,24 @@ function MobileScrollSection({
                     {[startCard.titleLine1, startCard.titleLine2, startCard.titleLine3].map((raw, i) => {
                       if (!raw) return null;
                       const label = raw.replace(/^[—–-]\s*/u, "");
+                      const lineIcon =
+                        [startCard.titleLine1Icon, startCard.titleLine2Icon, startCard.titleLine3Icon][i] ||
+                        START_CARD_LIST_ICON_SLUGS[i] ||
+                        "fan";
                       return (
                         <li key={i} className="flex items-center gap-3">
                           <span
                             className="inline-flex h-5 w-5 shrink-0 items-center justify-center text-primary"
                             aria-hidden
                           >
-                            <span className="h-[18px] w-[18px]">{START_CARD_LIST_ICONS[i]}</span>
+                            <span className="h-[18px] w-[18px]">
+                              <HomeContentIcon
+                                name={lineIcon}
+                                image={lineIcon.startsWith("/images/") ? lineIcon : undefined}
+                                className="h-full w-full"
+                                strokeWidth={1.5}
+                              />
+                            </span>
                           </span>
                           <span
                             className="text-[0.9rem] font-normal leading-[1.2] text-primary"
