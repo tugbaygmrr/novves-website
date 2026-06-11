@@ -745,4 +745,216 @@ export const sosyalMedyaCopyExtras: Partial<Record<Locale, LocalizedSocialPageCo
       },
     },
   },
+  ro: {
+    heroKicker: "Prezență digitală",
+    heroLead:
+      "Am reunit actualizările corporative, videoclipurile de produs și poveștile din teren într-un singur strat social clar. Fiecare canal are o sarcină specifică; această pagină face acea structură imediat lizibilă.",
+    stats: [
+      { value: "6", label: "canale active" },
+      { value: "TR + Global", label: "focus de piață" },
+      { value: "Corporate + Product", label: "axa de conținut" },
+    ],
+    primaryCta: "Înapoi la pagina de contact",
+    secondaryCta: "Vezi partenerii noștri",
+    previewEyebrow: "Arhitectură de publicare",
+    previewTitle: "Fiecare canal joacă un rol diferit.",
+    previewDesc:
+      "Conturile LinkedIn pentru Turcia și global poartă povestea corporativă la scări diferite, Facebook susține o vizibilitate socială mai largă, YouTube aprofundează narațiunea de produs și inginerie, iar conturile Instagram fac vizibil ritmul brandului pentru audiențe diferite.",
+    previewCards: [
+      {
+        label: "Narațiune corporativă",
+        title: "Povești de echipă, brand și referințe",
+        stat: "LinkedIn TR / Global / Facebook",
+      },
+      {
+        label: "Conținut tehnic",
+        title: "Video, demonstrații și explicații centrate pe produs",
+        stat: "YouTube",
+      },
+      {
+        label: "Flux live",
+        title: "Vitrină socială separată pentru Turcia și piețele globale",
+        stat: "Instagram",
+      },
+    ],
+    highlightsLabel: "Hartă de conținut",
+    highlightsTitle: "Înțelege dintr-o privire la ce servește fiecare canal.",
+    highlightsDesc:
+      "Această pagină este concepută ca un strat digital de brand, nu ca o simplă listă de linkuri. Blocurile de mai jos arată ce valoare oferă fiecare canal social.",
+    highlights: [
+      {
+        title: "Încredere corporativă",
+        description:
+          "Locul potrivit pentru referințe, vizibilitate la evenimente, știri de companie și comunicare în rețeaua profesională.",
+        stat: "Focus corporativ",
+      },
+      {
+        title: "Storytelling de inginerie",
+        description:
+          "Un flux centrat pe video pentru explicații de produs, narațiuni tehnice și consum mai profund.",
+        stat: "Focus video",
+      },
+      {
+        title: "Împărțirea pieței",
+        description:
+          "Conturi separate pentru Turcia și global permit fiecărei audiențe să urmărească brandul în propriul ritm.",
+        stat: "Focus regional",
+      },
+    ],
+    sectionLabel: "Selectarea canalului",
+    sectionTitle: "Intră în fluxul social potrivit pentru nevoia ta.",
+    sectionDesc:
+      "Cardurile arată mai mult decât platforma; semnalează tonul, tipul de conținut și ce să te aștepți după clic.",
+    externalNote: "Toate linkurile se deschid într-o filă nouă.",
+    footerLabel: "Pasul următor",
+    footerTitle: "De la vizibilitate socială la contact direct pe proiect.",
+    footerDesc:
+      "Pentru descoperire, consultanță tehnică sau orientare de produs, contactează direct echipa noastră. Canalele sociale creează familiaritate; impulsul proiectului începe cu comunicarea directă.",
+    footerPrimary: "Formular de contact",
+    footerSecondary: "Partenerii noștri",
+    platforms: {
+      linkedin: {
+        eyebrow: "LinkedIn Turcia",
+        summary:
+          "Vitrina principală pentru actualizări corporative axate pe Turcia, știri de proiect și networking profesional.",
+        tags: ["Referințe", "Știri de companie"],
+      },
+      linkedinGlobal: {
+        eyebrow: "LinkedIn global",
+        summary:
+          "Un strat LinkedIn separat pentru vizibilitate internațională, limbaj de business global și storytelling corporativ spre exterior.",
+        tags: ["Rețea globală", "Comunicare corporativă"],
+      },
+      youtube: {
+        eyebrow: "Canal video",
+        summary:
+          "Pentru cei care vor să exploreze comportamentul produsului și conținutul de inginerie mai în profunzime.",
+        tags: ["Videoclipuri de produs", "Explicații tehnice"],
+      },
+      facebook: {
+        eyebrow: "Flux comunitate",
+        summary:
+          "Un canal de susținere pentru vizibilitate socială mai largă, anunțuri și actualizări continue de brand.",
+        tags: ["Anunțuri", "Acoperire comunitate"],
+      },
+      instagramTr: {
+        eyebrow: "Cont Turcia",
+        summary:
+          "Un flux Novves mai cald, mai imediat și mai vizual în limba pieței locale.",
+        tags: ["Conținut local", "Vitrină vizuală"],
+      },
+      instagramGlobal: {
+        eyebrow: "Cont global",
+        summary:
+          "Un canal distinct pentru storytelling internațional, vizibilitatea brandului și audiență globală.",
+        tags: ["Vitrină globală", "Vocea brandului"],
+      },
+    },
+  },
+  hu: {
+    heroKicker: "Digitális jelenlét",
+    heroLead:
+      "A vállalati frissítéseket, a termékvideókat és a terepi történeteket egyetlen áttekinthető közösségi rétegbe gyűjtöttük. Minden csatornának külön feladata van; ez az oldal azonnal olvashatóvá teszi ezt a struktúrát.",
+    stats: [
+      { value: "6", label: "aktív csatorna" },
+      { value: "TR + Global", label: "piaci fókusz" },
+      { value: "Corporate + Product", label: "tartalmi tengely" },
+    ],
+    primaryCta: "Vissza a kapcsolat oldalra",
+    secondaryCta: "Partnereink megtekintése",
+    previewEyebrow: "Publikációs architektúra",
+    previewTitle: "Minden csatorna más szerepet tölt be.",
+    previewDesc:
+      "A törökországi és globális LinkedIn-fiókok eltérő léptékben viszik a vállalati történetet, a Facebook a szélesebb közösségi láthatóságot támogatja, a YouTube elmélyíti a termék- és mérnöki narratívát, az Instagram-fiókok pedig láthatóvá teszik a márka ritmusát a különböző közönségek számára.",
+    previewCards: [
+      {
+        label: "Vállalati narratíva",
+        title: "Csapat-, márka- és referenciatörténetek",
+        stat: "LinkedIn TR / Global / Facebook",
+      },
+      {
+        label: "Műszaki tartalom",
+        title: "Videó, demók és termékközpontú magyarázatok",
+        stat: "YouTube",
+      },
+      {
+        label: "Élő folyam",
+        title: "Külön közösségi kirakat Törökország és a globális piacok számára",
+        stat: "Instagram",
+      },
+    ],
+    highlightsLabel: "Tartalmi térkép",
+    highlightsTitle: "Egy pillantásra értsd meg, mire szolgál minden csatorna.",
+    highlightsDesc:
+      "Ez az oldal digitális márkarétegként készült, nem pedig egyszerű linklistaként. Az alábbi blokkok megmutatják, milyen értéket nyújt az egyes közösségi csatornák.",
+    highlights: [
+      {
+        title: "Vállalati bizalom",
+        description:
+          "A megfelelő hely a referenciák, az események láthatósága, a céges hírek és a szakmai hálózati kommunikáció számára.",
+        stat: "Vállalati fókusz",
+      },
+      {
+        title: "Mérnöki storytelling",
+        description:
+          "Videóközpontú folyam a termékmagyarázatokhoz, a műszaki narratívákhoz és a mélyebb tartalomfogyasztáshoz.",
+        stat: "Videófókusz",
+      },
+      {
+        title: "Piaci felosztás",
+        description:
+          "A külön törökországi és globális fiókok lehetővé teszik, hogy minden közönség a saját ritmusában kövesse a márkát.",
+        stat: "Regionális fókusz",
+      },
+    ],
+    sectionLabel: "Csatornaválasztás",
+    sectionTitle: "Lépj be az igényednek megfelelő közösségi folyamba.",
+    sectionDesc:
+      "A kártyák többet mutatnak a platformnál; jelzik a hangnemet, a tartalom típusát és azt, hogy mire számíthatsz a kattintás után.",
+    externalNote: "Minden link új lapon nyílik meg.",
+    footerLabel: "Következő lépés",
+    footerTitle: "A közösségi láthatóságtól a közvetlen projektkapcsolatig.",
+    footerDesc:
+      "Felfedezéshez, műszaki tanácsadáshoz vagy termékorientációhoz vedd fel közvetlenül a kapcsolatot csapatunkkal. A közösségi csatornák ismerősséget építenek; a projekt lendülete a közvetlen kommunikációval indul.",
+    footerPrimary: "Kapcsolatfelvételi űrlap",
+    footerSecondary: "Partnereink",
+    platforms: {
+      linkedin: {
+        eyebrow: "LinkedIn Törökország",
+        summary:
+          "A fő kirakat a Törökországra fókuszáló vállalati frissítésekhez, projekthírekhez és szakmai hálózatépítéshez.",
+        tags: ["Referenciák", "Céges hírek"],
+      },
+      linkedinGlobal: {
+        eyebrow: "Globális LinkedIn",
+        summary:
+          "Külön LinkedIn-réteg a nemzetközi láthatósághoz, a globális üzleti nyelvhez és a kifelé irányuló vállalati storytellinghez.",
+        tags: ["Globális hálózat", "Vállalati kommunikáció"],
+      },
+      youtube: {
+        eyebrow: "Videócsatorna",
+        summary:
+          "Azoknak, akik mélyebben szeretnék megismerni a termék viselkedését és a mérnöki tartalmat.",
+        tags: ["Termékvideók", "Műszaki magyarázatok"],
+      },
+      facebook: {
+        eyebrow: "Közösségi hírfolyam",
+        summary:
+          "Támogató csatorna a szélesebb közösségi láthatósághoz, a bejelentésekhez és a folyamatos márkafrissítésekhez.",
+        tags: ["Bejelentések", "Közösségi elérés"],
+      },
+      instagramTr: {
+        eyebrow: "Törökországi fiók",
+        summary:
+          "Melegebb, közvetlenebb és vizuálisabb Novves-folyam a helyi piac nyelvén.",
+        tags: ["Helyi tartalom", "Vizuális kirakat"],
+      },
+      instagramGlobal: {
+        eyebrow: "Globális fiók",
+        summary:
+          "Külön csatorna a nemzetközi storytellinghez, a márka láthatóságához és a globális közönséghez.",
+        tags: ["Globális kirakat", "Márkahang"],
+      },
+    },
+  },
 };

@@ -18,6 +18,8 @@ const FLAG_SRC: Partial<Record<Locale, string>> = {
   ur: "/images/flags/pk.svg",
   lt: "/images/flags/lt.svg",
   pl: "/images/flags/pl.svg",
+  ro: "/images/flags/ro.svg",
+  hu: "/images/flags/hu.svg",
 };
 
 export function LocaleFlag({

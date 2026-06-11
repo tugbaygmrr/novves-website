@@ -441,4 +441,60 @@ export const cookieConsentByLocale: Record<Locale, CookieConsentStrings> = {
       },
     },
   },
+  ro: {
+    badgePrefix: "● ",
+    badgeWord: "Cookie",
+    complianceBadges: "GDPR / KVKK",
+    title: "Gestionați preferințele privind modulele cookie",
+    desc: "Folosim module cookie pentru a vă îmbunătăți experiența, a analiza traficul și a personaliza conținutul. Apăsați „Acceptați toate” pentru a permite toate modulele cookie sau personalizați-vă preferințele.",
+    learnMore: "Politica de confidențialitate",
+    acceptAll: "Acceptați toate",
+    rejectAll: "Respingeți toate",
+    customize: "Personalizați",
+    savePrefs: "Salvați preferințele",
+    back: "Înapoi",
+    categories: {
+      essential: {
+        title: "Module cookie esențiale",
+        desc: "Necesare pentru funcționalitatea de bază a site-ului. Nu pot fi dezactivate.",
+        tag: "Obligatoriu",
+      },
+      analytics: {
+        title: "Module cookie de analiză",
+        desc: "Colectează date anonime despre numărul de vizitatori, sursele de trafic și utilizarea site-ului.",
+      },
+      marketing: {
+        title: "Module cookie de marketing",
+        desc: "Utilizate pentru a afișa conținut și reclame în funcție de interesele dumneavoastră.",
+      },
+    },
+  },
+  hu: {
+    badgePrefix: "● ",
+    badgeWord: "Süti",
+    complianceBadges: "GDPR / KVKK",
+    title: "Süti-beállítások kezelése",
+    desc: "Sütiket használunk az élmény javítása, a forgalom elemzése és a tartalom személyre szabása érdekében. Kattintson az „Összes elfogadása” gombra az összes süti engedélyezéséhez, vagy szabja testre a beállításait.",
+    learnMore: "Adatvédelmi szabályzat",
+    acceptAll: "Összes elfogadása",
+    rejectAll: "Összes elutasítása",
+    customize: "Testreszabás",
+    savePrefs: "Beállítások mentése",
+    back: "Vissza",
+    categories: {
+      essential: {
+        title: "Szükséges sütik",
+        desc: "A webhely alapvető működéséhez szükségesek. Nem kapcsolhatók ki.",
+        tag: "Kötelező",
+      },
+      analytics: {
+        title: "Analitikai sütik",
+        desc: "Névtelen adatokat gyűjtenek a látogatók számáról, a forgalom forrásairól és a webhely használatáról.",
+      },
+      marketing: {
+        title: "Marketing sütik",
+        desc: "Az érdeklődési körének megfelelő tartalom és hirdetések megjelenítésére szolgálnak.",
+      },
+    },
+  },
 };

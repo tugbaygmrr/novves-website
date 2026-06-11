@@ -85,155 +85,116 @@
       {
         "name": "DRAGONFLY",
         "type": "排烟排热风机",
-        "subModels": [
-          "DF T",
-          "DF TS",
-          "DF C",
-          "DF R",
-          "DF RV",
-          "DF TJF",
-          "DF JR",
-          "DF JA",
-          "DF WH",
-          "DF RH"
-        ],
+        "image": "/images/products/dragonfly-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Dragonfly 系列为高温消防排烟排热风机，专为火灾发生时安全排出烟气、热量以及有毒和窒息性气体而研发。提供轴流式、离心式、射流式、屋顶式、墙壁式、屏蔽式和离心式等多种型式，可适应各类工程的广泛需求。"
       },
       {
         "name": "MARLIN",
         "type": "轴流风扇",
-        "subModels": [
-          "MARLIN",
-          "MARLIN S",
-          "MARLIN B",
-          "MARLIN 2S"
-        ],
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Marlin 系列为轴流风机，专为送风、排风、管道通风和加压送风应用而研发。机壳紧凑、噪声低、风量大、安装方式灵活，可在舒适性通风、工业通风、竖井系统和建筑加压送风中提供可靠而经济的性能。"
       },
       {
         "name": "BEAR",
         "type": "ATEX 风扇",
-        "subModels": [
-          "BEAR REB EX",
-          "BEAR RVS EX",
-          "BEAR RHS EX",
-          "BEAR T",
-          "BEAR C",
-          "BEAR R",
-          "BEAR W",
-          "BEAR LPF EX",
-          "BEAR TB"
-        ],
+        "image": "/images/products/bear-reb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Bear 系列为 Ex-proof（防爆）风机，专为存在爆炸性环境风险的工业场所提供安全通风、排风和工艺空气抽排而研发。采用 Ex-proof 电机、可降低火花风险的结构细节、坚固机壳以及轴流/离心型式，适用于化工厂、喷漆车间、处理厂、溶剂工艺及工业排风等应用。"
       },
       {
         "name": "NAUTILUS",
         "type": "工业离心风机",
-        "subModels": [
-          "NAUTILUS LPF",
-          "NAUTILUS MPF",
-          "NAUTILUS HPF",
-          "NAUTILUS SILENCE"
-        ],
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Nautilus 系列为工业离心风机，适用于送风、排风、工艺空气及一般工业通风。采用后弯式叶轮、直联传动、紧凑的蜗壳结构和多种压力等级，可在低压、中压、高压及静音工况下实现高效可靠的空气输送。"
       },
       {
         "name": "HUMMINGBIRD",
         "type": "节能风扇",
-        "subModels": [
-          "HUMMINGBIRD DRB EC",
-          "HUMMINGBIRD RRV EC",
-          "HUMMINGBIRD RRH EC",
-          "HUMMINGBIRD CBP EC"
-        ],
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Hummingbird 系列为 EC 电机风机，具有高能效、精确调速和低运行成本的特点。适用于送风、排风、屋顶、管道、插入式、静音离心、热回收和防护室等应用，可通过 0-10 V 控制、调速开关、压差传感器和 BMS 集成实现智能化的气流管理。"
       },
       {
         "name": "HERON",
         "type": "屋顶风扇",
-        "subModels": [
-          "HERON RH",
-          "HERON RHS",
-          "HERON RV",
-          "HERON RVS",
-          "HERON AH",
-          "HERON AV",
-          "HERON H"
-        ],
+        "image": "/images/products/heron-rv.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Heron 系列为屋顶风机，专为改善室内空气质量、排出污染空气并在需要时提供送风而研发。提供离心水平/垂直排放、电机置于气流之外、轴流式及屏蔽式屋顶机型，适用于商业建筑、工业设施、设备机房、竖井及屋顶安装等场合。"
       },
       {
         "name": "OWL",
         "type": "壁挂式风扇",
-        "subModels": [
-          "OWL RER",
-          "OWL R",
-          "OWL H"
-        ],
+        "image": "/images/products/owl-rer.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Owl 系列为壁挂式轴流风机，用于排出大容积空间内污染、温热、潮湿或污浊的室内空气。提供方形或圆形框架、机身紧凑、噪声低、风量大，是仓库、机库、工厂、车间、设备机房和大型工业厂房的实用解决方案。"
       },
       {
         "name": "SEAHORSE",
         "type": "浴室风扇",
-        "subModels": [
-          "SEAHORSE AP",
-          "SEAHORSE RP V1",
-          "SEAHORSE RP V2"
-        ],
+        "image": "/images/products/banyo-fan-1.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Seahorse 系列为塑料排风机，用于浴室、卫生间、地下室及类似中小型空间，排除异味、水汽、湿气和污浊空气。提供轴流和离心型式，采用 ABS 外壳、噪声低、面板易于清洁，并可选配延时控制，适用于住宅、酒店、办公及商业室内空间。"
       },
       {
         "name": "KOI",
         "type": "管道风机",
-        "subModels": [
-          "KOI CB",
-          "KOI RB",
-          "KOI REB",
-          "KOI X"
-        ],
+        "image": "/images/products/koi-cb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Koi 系列为紧凑型管道风机，满足中小风量的送风、排风和管道通风需求。提供圆形、矩形、电机置于气流之外、混流式及轴流式塑料等多种型式，可在住宅、商业建筑、设备机房、地下室、车间及中小型工程中实现实用、安静、经济的空气输送。"
       },
       {
         "name": "TURTLE",
         "type": "静压风扇",
-        "subModels": [
-          "TURTLE B",
-          "TURTLE BPA",
-          "TURTLE F",
-          "TURTLE BP",
-          "TURTLE A"
-        ],
+        "image": "/images/products/turtle-a.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Turtle 系列为双层保温箱式风机，适用于送风和排风应用。采用隔声机壳、检修门、皮带传动或插入式电机选项以及多种叶轮型式，可在动力机房、设备空间、商业建筑和工业通风中提供安静、耐用的性能。"
       },
       {
         "name": "BUTTERFLY",
         "type": "厨房排气扇",
-        "subModels": [
-          "BUTTERFLY ECO",
-          "BUTTERFLY ECO HR"
-        ],
+        "image": "/images/products/butterfly-b.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Butterfly 系列为厨房排风机和环保净化机组，用于在商用厨房中安全、过滤、可控地排出高温、油腻、烟雾和异味空气。采用电机置于气流之外、双层保温机壳、油烟过滤器、检修门及支持 VFD 的设计，适用于餐厅、酒店、商场、餐饮配送和生产厨房。"
       },
       {
         "name": "FOX",
         "type": "庇护扇",
-        "subModels": [
-          "FOX D",
-          "FOX C"
-        ],
+        "image": "/images/products/fox-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Fox 系列为防护室通风风机，用于向防护室和受保护空间输送经过过滤的室外空气。提供 G4、活性炭、HEPA/核级颗粒过滤及旁通风阀等选项，可在正常通风及 CBRN 威胁情景下实现受控的空气供给。"
       },
       {
         "name": "CHICKEN",
         "type": "家禽风扇",
-        "comingSoon": true,
-        "description": "Chicken 系列为高效家禽风机，专为在封闭式禽舍内维持敏感的空气质量而设计。如同对温度、湿度和氨气敏感的禽类一样，这些风机可保持空气新鲜，辅助温度控制，有助于保护禽群健康和生产效率。"
+        "image": "/images/products/chicken.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Chicken 系列为高效家禽风机，专为在封闭式禽舍内维持敏感的空气质量而设计。如同对温度、湿度和氨气敏感的禽类一样，这些风机可保持空气新鲜，辅助温度控制，有助于保护禽群健康和生产效率。",
+        "comingSoon": true
       },
       {
         "name": "ELEPHANT",
         "type": "除尘",
-        "comingSoon": true,
-        "description": "Elephant 系列灵感源自大象的力量与敏锐感知，以高排风能力在高产区域收集粉尘和颗粒物。机身坚固、吸力稳定、结构耐用，可实现受控的重载空气管理，营造更健康、更高效的工作环境。"
+        "image": "/images/products/elephant.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Elephant 系列灵感源自大象的力量与敏锐感知，以高排风能力在高产区域收集粉尘和颗粒物。机身坚固、吸力稳定、结构耐用，可实现受控的重载空气管理，营造更健康、更高效的工作环境。",
+        "comingSoon": true
       }
     ],
     "otherCategories": [
@@ -270,7 +231,31 @@
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
       }
     ],
-    "ctaDesc": "请联系我们的专家工程团队，从 1,200 多个产品品种中找到最适合您的项目的解决方案。"
+    "ctaDesc": "请联系我们的专家工程团队，从 1,200 多个产品品种中找到最适合您的项目的解决方案。",
+    "catalogs": [
+      {
+        "title": "空气流动 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
   },
   "iklimlendirme": {
     "title": "空调",
@@ -285,42 +270,23 @@
     "tiger": {
       "label": "空气处理机组",
       "desc": "空气处理机组解决方案具有模块化结构、高能效组件以及 500 – 125,000 立方米/小时气流范围内的安静运行性能。",
-      "specs": [
-        {
-          "label": "空气流动",
-          "value": "500–125K 立方米/小时"
-        },
-        {
-          "label": "压力",
-          "value": "10–3,000帕"
-        },
-        {
-          "label": "机壳",
-          "value": "阳极氧化铝"
-        }
-      ]
+      "image": "/images/products/tiger-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "dolphin": {
       "label": "泳池除湿装置",
       "desc": "防止室内泳池的建筑结构受潮损坏，同时最大限度地提高用户舒适度。以其高能源效率、持久的结构和安静的运行而脱颖而出。",
-      "specs": [
-        {
-          "label": "容量",
-          "value": "6 型号"
-        },
-        {
-          "label": "空气流动",
-          "value": "3,000–9,000 立方米/小时"
-        },
-        {
-          "label": "泳池区",
-          "value": "50–250 平方米"
-        }
-      ]
+      "image": "/images/products/dolphin-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "caracal": {
       "label": "热回收",
-      "desc": "提供受控空调以满足新鲜空气需求并改善办公室、学校、酒店、医院和社交空间的现有空气质量。"
+      "desc": "提供受控空调以满足新鲜空气需求并改善办公室、学校、酒店、医院和社交空间的现有空气质量。",
+      "image": "/images/products/caracal.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "ctaDesc": "我们的技术团队随时为您提供最合适的空调解决方案。",
     "otherCategories": [
@@ -356,6 +322,30 @@
         "label": "振动和隔音",
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "空调 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "sogutmaVeIsitma": {
@@ -369,27 +359,30 @@
       {
         "name": "冷水机（北极熊）",
         "type": "冷却装置",
-        "subModels": []
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "室外机",
         "type": "冷却装置",
-        "subModels": []
+        "image": "/images/products/chiller.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "电暖器",
         "type": "电暖器",
-        "subModels": [
-          "EH（矩形）",
-          "EHC（圆柱形）"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "水盘管",
         "type": "线圈",
-        "subModels": [
-          "厕所"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       }
     ],
     "otherCategories": [
@@ -425,6 +418,30 @@
         "label": "振动和隔音",
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "冷却和加热 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaYonetimi": {
@@ -435,19 +452,9 @@
     "hound": {
       "label": "空气阻尼器",
       "desc": "阻尼器系列旨在在通风和消防安全系统的最关键点提供最大程度的控制和安全。",
-      "subModels": [
-        "MSD",
-        "MSFD-R",
-        "MSFD-B",
-        "SFD-B",
-        "SFD-R",
-        "RSFD-B",
-        "RSFD-漏极-B",
-        "FFD",
-        "MFD",
-        "研发",
-        "GS"
-      ]
+      "image": "/images/products/hound-al.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -481,6 +488,30 @@
       {
         "label": "振动和隔音",
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "空气管理 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -492,29 +523,9 @@
     "alpaca": {
       "label": "格栅、扩散器等",
       "desc": "不同的型号具有针对所有空气分配需求的定制解决方案。",
-      "subModels": [
-        "ALPACA-GL-SD",
-        "ALPACA-GL-DD",
-        "ALPACA-GL-RA",
-        "ALPACA-GL-PRF",
-        "ALPACA-GL-OB",
-        "ALPACA-DF-SQ",
-        "ALPACA-DF-CR",
-        "ALPACA-DF-LS",
-        "ALPACA-DF-JET",
-        "ALPACA-DF-ADJ",
-        "ALPACA-LV-FX",
-        "ALPACA-LV-ADJ",
-        "ALPACA-LV-WP",
-        "ALPACA-LV-AC",
-        "ALPACA-AM-SQ",
-        "ALPACA-AM-CR",
-        "ALPACA-AM-ADJ",
-        "ALPACA-SP-FR",
-        "ALPACA-SP-DEC",
-        "ALPACA-SP-AC",
-        "ALPACA-SP-JET"
-      ]
+      "image": "/images/products/alpaca-am.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -549,6 +560,30 @@
         "label": "振动和隔音",
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "空气分配 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaFiltrasyonu": {
@@ -559,17 +594,9 @@
     "scallop": {
       "label": "过滤器系列",
       "desc": "不同的过滤器型号以及可满足所有空气过滤需求的定制解决方案。",
-      "subModels": [
-        "扇贝 PF",
-        "扇贝 MF",
-        "扇贝GF",
-        "扇贝ABF",
-        "扇贝CF",
-        "扇贝BF",
-        "扇贝HP",
-        "扇贝超滤",
-        "扇贝FF"
-      ]
+      "image": "/images/products/cyclone.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -603,6 +630,30 @@
       {
         "label": "振动和隔音",
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "空气过滤 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -802,6 +853,30 @@
         "label": "振动和隔音",
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "配件 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "otomasyonMalzemeleri": {
@@ -811,41 +886,35 @@
     "products": [
       {
         "name": "PANEL",
-        "subModels": [],
         "image": "/images/products/otomasyon-pano.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "HAWK 自动化控制柜旨在以可靠、稳定和智能的控制，从单一中心管理风机系统、HVAC 机组和基础设施单元。快速响应、精确监测和先进的控制架构，即使在复杂情景下也能保持系统稳定。凭借能源管理、安全集成、精确控制和远程监控，HAWK 为工程项目增添全局掌控能力。"
       },
       {
         "name": "PLC",
-        "subModels": [],
-        "image": "/images/products/otomasyon-plc.png"
+        "image": "/images/products/otomasyon-plc.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "传感器",
-        "subModels": [
-          "FCP-DSC",
-          "FCP-DCS",
-          "TECASE-ST110"
-        ],
-        "image": "/images/products/otomasyon-sensor.png?v=7"
+        "image": "/images/products/otomasyon-sensor.png?v=7",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "控制板 - 开关",
-        "subModels": [
-          "TP01-TSD",
-          "TP01-CC"
-        ],
-        "image": "/images/products/otomasyon-kontrol-kartlari.png"
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "Lion 系列灵感源自狮子的力量、威严以及对力量的有度运用，是用于调节、管理和优化电能的电力电子设备。如同在恰当时机施展力量的狮子，Lion 能够智能地控制电力，尤其应用于变频器和驱动器。专为风机、电机和 HVAC 系统而研发，可提供精确调速、软启动、节能和系统保护，以可靠而权威的性能延长设备使用寿命。",
-        "subModels": [
-          "逆变器",
-          "BLDC 驱动器",
-          "MOSFET 模块"
-        ]
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Lion 系列灵感源自狮子的力量、威严以及对力量的有度运用，是用于调节、管理和优化电能的电力电子设备。如同在恰当时机施展力量的狮子，Lion 能够智能地控制电力，尤其应用于变频器和驱动器。专为风机、电机和 HVAC 系统而研发，可提供精确调速、软启动、节能和系统保护，以可靠而权威的性能延长设备使用寿命。"
       }
     ],
     "otherCategories": [
@@ -881,6 +950,30 @@
         "label": "振动和隔音",
         "slug": "蒂特雷西姆·维·塞伊索拉西翁"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "自动化设备 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "titresimVeSesIzolasyon": {
@@ -891,17 +984,9 @@
     "roo": {
       "label": "消音器、橡胶垫、隔振器",
       "desc": "不同的型号具有针对振动和隔音需求的定制解决方案。",
-      "subModels": [
-        "ROO T1-ISO10N-NIP",
-        "ROO T1-ISO15N-100kg-NIP",
-        "ROO T2-ISO20N-FIP",
-        "ROO T2-ISO30N-150kg-FIP",
-        "ROO T3-ISO5Hz-200kg-OSI",
-        "ROO T3-ISO10Hz-300kg-OSI",
-        "ROO T4-ISOComb-100kg-5Hz-HSI",
-        "ROO T4-ISO100kg-10Hz-HSI",
-        "ROO T4-ISO500kg-10Hz-HSI"
-      ]
+      "image": "/images/products/yayli-titresim-izolatoru.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -936,6 +1021,30 @@
         "label": "自动化设备",
         "slug": "奥托马松－马尔泽梅莱里"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "振动和隔音 产品目录",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES 通用产品目录",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "安装与维护手册",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "技术数据表",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "banyoFanlari": {
@@ -961,7 +1070,26 @@
         "image": "/images/products/banyo-fan-3.jpg",
         "description": "RP V2 宽前面板排气扇以其现代设计和强大性能脱颖而出，专为注重美观和功能的生活空间而设计。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "catiFanlari": {
     "title": "HERON",
@@ -1004,7 +1132,26 @@
         "image": "/images/products/free.jpg",
         "description": "带盖轴流屋顶风扇。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "damperler": {
     "title": "HOUND",
@@ -1029,7 +1176,26 @@
         "image": "/images/products/hound-crd.jpg",
         "description": "自动打开的泄压阻尼器，用于过压控制和系统组件保护。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
@@ -1072,7 +1238,26 @@
         "image": "/images/products/dragonfly-jr.jpg",
         "description": "专为封闭停车场、隧道和火灾区等要求严格的室内空间的排烟和紧急通风而设计。经过 EN 12101-3 认证。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
@@ -1091,7 +1276,26 @@
         "image": "/images/products/owl-rwa.jpg",
         "description": "轴流风扇解决方案采用高效翼型叶片设计，适合矩形壁挂式安装。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
@@ -1110,7 +1314,26 @@
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "description": "高效 EC 电机矩形管道风扇解决方案，设计用于现代通风系统。凭借其紧凑的结构、安静的运行和自动化系统集成能力，它成为舒适和工业应用中可靠的首选。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
@@ -1129,7 +1352,26 @@
         "image": "/images/products/nautilus-cif-cidarli.jpg",
         "description": "NAUTILUS Silence 系列是离心式风机，可在需要低压空气传输的系统中高效运行，具有紧凑的结构和直接驱动设计。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "exproofFanlar": {
     "title": "BEAR",
@@ -1190,7 +1432,26 @@
         "image": "/images/products/bear-w.jpg",
         "description": "防火、符合 ATEX 标准、高性能。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
@@ -1290,7 +1551,26 @@
         "image": "/images/products/turtle-a.jpg",
         "description": "紧凑型轴流柜式风扇解决方案，专为具有大风量空气传输要求的系统而设计。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
@@ -1300,6 +1580,25 @@
       "title": "狞猫D",
       "type": "热回收装置",
       "description": "Caracal D 系列（热回收装置）是一款紧凑型高性能解决方案，旨在清新室内空气，同时提高能源效率。凭借其耐用的结构和用户友好的控制面板，它提供舒适和可持续的通风。"
+    },
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
     }
   },
   "kanalFanlari": {
@@ -1331,7 +1630,26 @@
         "image": "/images/products/koi-x.jpg",
         "description": "KOI-X 系列混流管道风扇旨在提供最大效率，尤其是在舒适区域，其结构紧凑、运行安静，并配有双速电机选项。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "klimaSantralleri": {
     "title": "TIGER",
@@ -1381,7 +1699,26 @@
         "image": "/images/products/marlin-b.jpg",
         "description": "分叉轴流风扇。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
@@ -1394,7 +1731,26 @@
         "image": "/images/products/butterfly-b.jpg",
         "description": "Butterfly B 系列厨房型风扇是一款耐用且高效的通风解决方案，专为工业和商业厨房中的重蒸汽、油脂和异味去除而开发。凭借其先进的过滤系统、安静的运行和持久的结构，它是专业厨房的理想选择。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   },
   "siginakFanlari": {
     "title": "FOX",
@@ -1413,6 +1769,25 @@
         "image": "/images/products/fox-c.png",
         "description": "FOX C系列柜式防护风机是专为安全要求高的区域开发的专业通风解决方案，适合安静运行，并配备强大的过滤系统。"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "家",
+      "products": "产品",
+      "productFamily": "产品系列",
+      "certified": "已认证",
+      "productRange": "产品范围",
+      "technicalSupport": "技术支援",
+      "model": "模型",
+      "models": "模型",
+      "technicalSupportRequest": "技术支持请求",
+      "allProducts": "所有产品",
+      "mostPreferred": "最受青睐",
+      "detailedView": "查看详情",
+      "productFamilies": "产品系列",
+      "inspect": "探索",
+      "lookingForProduct": "正在寻找适合您的项目的产品？",
+      "teamReady": "我们的技术团队随时准备为您提供最合适的解决方案。",
+      "allSolutions": "查看所有解决方案"
+    }
   }
 }

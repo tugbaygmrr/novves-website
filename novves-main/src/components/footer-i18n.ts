@@ -12,6 +12,8 @@
  * in FOOTER_I18N below — or add `data/footer-locales/{locale}.json` and import it.
  */
 
+import fs from "fs";
+import path from "path";
 import kkFooter from "../../data/footer-locales/kk.json";
 import tgFooter from "../../data/footer-locales/tg.json";
 import zhFooter from "../../data/footer-locales/zh.json";
@@ -19,14 +21,30 @@ import urFooter from "../../data/footer-locales/ur.json";
 import ltFooter from "../../data/footer-locales/lt.json";
 import plFooter from "../../data/footer-locales/pl.json";
 import azFooter from "../../data/footer-locales/az.json";
+import roFooter from "../../data/footer-locales/ro.json";
+import huFooter from "../../data/footer-locales/hu.json";
 
 export type FooterStrings = {
   brandSlogan: string;
   contactLabels: { phone: string; email: string };
+  /** İletişim bloğundaki gerçek telefon/e-posta değerleri (panelden düzenlenebilir). */
+  phone?: string;
+  email?: string;
   videoTitle: string;
-  cta: { title: string; desc: string; button: string; note: string };
-  /** 4 pillars, each rendered as two short lines (line1 / line2). */
-  pillars: { line1: string; line2: string }[];
+  /** İletişim bloğundaki 4 öğenin ikonları; boşsa footer'daki sabit varsayılan SVG kullanılır. */
+  contactIcons?: {
+    phone?: { icon?: string; iconImage?: string };
+    email?: { icon?: string; iconImage?: string };
+    headOffice?: { icon?: string; iconImage?: string };
+    factory?: { icon?: string; iconImage?: string };
+  };
+  /** icon/iconImage opsiyonel; boşsa footer'daki sabit mikrofon ikonu kullanılır. */
+  cta: { title: string; desc: string; button: string; note: string; icon?: string; iconImage?: string };
+  /**
+   * 4 pillars, each rendered as two short lines (line1 / line2).
+   * icon/iconImage opsiyoneldir; boşsa footer'daki sabit varsayılan SVG kullanılır.
+   */
+  pillars: { line1: string; line2: string; icon?: string; iconImage?: string }[];
   brand: { desc: string };
   contact: { headOffice: string; factory: string };
   sections: {
@@ -47,14 +65,20 @@ export type FooterStrings = {
     title: string;
     /** Description under each cert code (codes EN 12101-3 / ISO 9001 / ISO 27001 / ISO 14001 / ISO 45001 are universal). */
     items: string[];
+    /** Her sertifika kodunun ikonu (items ile aynı sıra); boşsa varsayılan rozet kullanılır. */
+    itemIcons?: { icon?: string; iconImage?: string }[];
+    /** "Sertifika kataloğu indir" butonunun ikonu; boşsa varsayılan indirme ikonu. */
+    downloadIcon?: { icon?: string; iconImage?: string };
     downloadCatalog: string;
     downloadCatalogDesc: string;
   };
-  newsletter: { title: string; desc: string; placeholder: string; success: string };
+  /** icon/iconImage opsiyonel; boşsa footer'daki sabit zarf ikonu kullanılır. */
+  newsletter: { title: string; desc: string; placeholder: string; success: string; icon?: string; iconImage?: string };
   langTitle: string;
   applicationAreas: {
     title: string;
-    items: { line1: string; line2?: string }[];
+    /** icon/iconImage opsiyoneldir; boşsa footer'daki sabit varsayılan SVG kullanılır. */
+    items: { line1: string; line2?: string; icon?: string; iconImage?: string }[];
   };
   globalCaption: { line1: string; line2: string };
   bottom: {
@@ -1047,8 +1071,52 @@ const FOOTER_I18N: Record<string, FooterStrings> = {
   ur: withCorporateFooterLabels(urFooter as FooterStrings, "رازداری اور تعمیل", "کیریئر"),
   lt: withCorporateFooterLabels(ltFooter as FooterStrings, "Privatumas ir atitiktis", "Karjera"),
   pl: withCorporateFooterLabels(plFooter as FooterStrings, "Prywatność i zgodność", "Kariera"),
+  ro: withCorporateFooterLabels(roFooter as FooterStrings, "Confidențialitate și conformitate", "Cariere"),
+  hu: withCorporateFooterLabels(huFooter as FooterStrings, "Adatvédelem és megfelelőség", "Karrier"),
 };
 
+/* ── Panelden gelen override'lar (src/data/footer-content.json) ──────────
+ * Footer kopyası varsayılan olarak yukarıdaki TS bloklarından gelir; panel
+ * üzerinden düzenlenen alanlar bu JSON'a yazılır ve burada üstüne birleştirilir.
+ * Bu modül yalnızca sunucu bileşeni `footer.tsx` ve `/api/admin/footer`
+ * tarafından kullanılır, bu yüzden fs okuması güvenlidir. */
+
+const DEFAULT_PHONE = "+90 216 467 47 52";
+const DEFAULT_EMAIL = "info@novves.com";
+const OVERRIDES_PATH = path.join(process.cwd(), "src", "data", "footer-content.json");
+
+type DeepPartial<T> = { [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K] };
+
+function readFooterOverrides(): Record<string, DeepPartial<FooterStrings>> {
+  try {
+    return JSON.parse(fs.readFileSync(OVERRIDES_PATH, "utf-8"));
+  } catch {
+    return {};
+  }
+}
+
+/** base'in üstüne override'ı derin birleştirir; diziler tümüyle değiştirilir. */
+function deepMerge<T>(base: T, override: unknown): T {
+  if (override === undefined || override === null) return base;
+  if (Array.isArray(base) || Array.isArray(override)) return override as T;
+  if (typeof base === "object" && typeof override === "object") {
+    const out: Record<string, unknown> = { ...(base as Record<string, unknown>) };
+    for (const key of Object.keys(override as Record<string, unknown>)) {
+      out[key] = deepMerge((base as Record<string, unknown>)[key], (override as Record<string, unknown>)[key]);
+    }
+    return out as T;
+  }
+  return override as T;
+}
+
+/** Bir dilin varsayılan (override'sız) footer metinleri. */
+export function getFooterDefaults(locale: string): FooterStrings {
+  const base = FOOTER_I18N[locale] ?? en;
+  return { ...base, phone: base.phone ?? DEFAULT_PHONE, email: base.email ?? DEFAULT_EMAIL };
+}
+
 export function getFooterStrings(locale: string): FooterStrings {
-  return FOOTER_I18N[locale] ?? en;
+  const base = getFooterDefaults(locale);
+  const override = readFooterOverrides()[locale];
+  return override ? deepMerge(base, override) : base;
 }

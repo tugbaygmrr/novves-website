@@ -85,155 +85,116 @@
       {
         "name": "DRAGONFLY",
         "type": "دھواں اور حرارت نکالنے والا پنکھا۔",
-        "subModels": [
-          "DF T",
-          "DF TS",
-          "DF C",
-          "DF R",
-          "DF RV",
-          "DF TJF",
-          "DF JR",
-          "DF JA",
-          "DF WH",
-          "DF RH"
-        ],
+        "image": "/images/products/dragonfly-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Dragonfly سیریز اعلیٰ درجہ حرارت کے دھوئیں اور حرارت کے اخراج کے پنکھوں پر مشتمل ہے جو آگ کے دوران دھوئیں، حرارت، زہریلی اور دم گھٹانے والی گیسوں کو محفوظ طریقے سے خارج کرنے کے لیے تیار کیے گئے ہیں۔ axial، radial، jet، roof، wall، covered اور centrifugal اختیارات کے ساتھ، یہ منصوبوں کی وسیع پیمانے پر ضروریات کے مطابق ڈھل جاتی ہے۔"
       },
       {
         "name": "MARLIN",
         "type": "محوری پنکھا ۔",
-        "subModels": [
-          "MARLIN",
-          "MARLIN S",
-          "MARLIN B",
-          "MARLIN 2S"
-        ],
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Marlin خاندان axial پنکھوں پر مشتمل ہے جو سپلائی ایئر، اخراجی ہوا، ڈکٹ وینٹیلیشن اور پریشرائزیشن کے استعمال کے لیے تیار کیے گئے ہیں۔ کمپیکٹ کیسنگ، کم آواز کی سطح، زیادہ ایئر فلو اور لچکدار ماؤنٹنگ اختیارات کے ساتھ، یہ آرام دہ وینٹیلیشن، صنعتی وینٹیلیشن، شافٹ سسٹمز اور عمارت کی پریشرائزیشن میں قابلِ اعتماد اور معاشی کارکردگی فراہم کرتا ہے۔"
       },
       {
         "name": "BEAR",
         "type": "ATEX فین",
-        "subModels": [
-          "BEAR REB EX",
-          "BEAR RVS EX",
-          "BEAR RHS EX",
-          "BEAR T",
-          "BEAR C",
-          "BEAR R",
-          "BEAR W",
-          "BEAR LPF EX",
-          "BEAR TB"
-        ],
+        "image": "/images/products/bear-reb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Bear خاندان Ex-proof پنکھوں پر مشتمل ہے جو دھماکہ خیز ماحول کے خطرے والے صنعتی علاقوں میں محفوظ وینٹیلیشن، اخراج اور پروسیس ایئر کے اخراج کے لیے تیار کیے گئے ہیں۔ Ex-proof موٹرز، چنگاری کے خطرے کو کم کرنے والی ساختی تفصیلات، مضبوط کیسنگز اور axial/radial اختیارات کے ساتھ، یہ کیمیکل پلانٹس، پینٹ شاپس، ٹریٹمنٹ پلانٹس، سالوینٹ پروسیسز اور صنعتی اخراج کے استعمال میں خدمات فراہم کرتا ہے۔"
       },
       {
         "name": "NAUTILUS",
         "type": "صنعتی سینٹرفیوگل فین",
-        "subModels": [
-          "NAUTILUS LPF",
-          "NAUTILUS MPF",
-          "NAUTILUS HPF",
-          "NAUTILUS SILENCE"
-        ],
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Nautilus خاندان صنعتی centrifugal پنکھوں پر مشتمل ہے جو سپلائی ایئر، اخراجی ہوا، پروسیس ایئر اور عام صنعتی وینٹیلیشن کے لیے ہیں۔ بیک ورڈ کرو امپیلرز، براہِ راست منسلک ڈرائیوز، کمپیکٹ اسکرول جیومیٹری اور متعدد پریشر کلاسز کے ساتھ، یہ کم، درمیانے، اعلیٰ دباؤ اور خاموش ڈیوٹی کے استعمال میں موثر اور قابلِ اعتماد منتقلی کو ممکن بناتا ہے۔"
       },
       {
         "name": "HUMMINGBIRD",
         "type": "ای سی فین",
-        "subModels": [
-          "HUMMINGBIRD DRB EC",
-          "HUMMINGBIRD RRV EC",
-          "HUMMINGBIRD RRH EC",
-          "HUMMINGBIRD CBP EC"
-        ],
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Hummingbird خاندان EC موٹر پنکھوں پر مشتمل ہے جو اعلیٰ توانائی کی کارکردگی، درست رفتار کنٹرول اور کم آپریٹنگ لاگت فراہم کرتے ہیں۔ سپلائی، اخراج، roof، ڈکٹ، plug، خاموش centrifugal، حرارت کی بازیافت اور شیلٹر کے استعمال کے لیے، یہ 0-10 V کنٹرول، اسپیڈ سوئچز، ڈفرینشل پریشر سینسرز اور BMS انضمام کے ساتھ سمارٹ ایئر فلو مینجمنٹ کو ممکن بناتا ہے۔"
       },
       {
         "name": "HERON",
         "type": "چھت کا پنکھا ۔",
-        "subModels": [
-          "HERON RH",
-          "HERON RHS",
-          "HERON RV",
-          "HERON RVS",
-          "HERON AH",
-          "HERON AV",
-          "HERON H"
-        ],
+        "image": "/images/products/heron-rv.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Heron خاندان roof پنکھوں پر مشتمل ہے جو اندرونی ہوا کے معیار کو بہتر بنانے، آلودہ ہوا کو خارج کرنے اور جہاں ضرورت ہو وہاں سپلائی ایئر فراہم کرنے کے لیے تیار کیے گئے ہیں۔ radial افقی/عمودی ڈسچارج، ہوا کے بہاؤ سے باہر موٹرز، axial اور covered roof ماڈلز کے ساتھ، یہ تجارتی عمارتوں، صنعتی تنصیبات، تکنیکی کمروں، شافٹس اور چھت پر کی جانے والی تنصیبات میں خدمات فراہم کرتا ہے۔"
       },
       {
         "name": "OWL",
         "type": "وال ماونٹڈ پنکھا۔",
-        "subModels": [
-          "OWL RER",
-          "OWL R",
-          "OWL H"
-        ],
+        "image": "/images/products/owl-rer.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Owl خاندان دیوار پر نصب ہونے والے axial پنکھوں پر مشتمل ہے جو بڑے حجم والی جگہوں میں آلودہ، گرم، نمی والی یا باسی اندرونی ہوا کو خارج کرنے کے لیے ہیں۔ مربع یا گول فریموں، کمپیکٹ باڈیز، کم آواز اور زیادہ ایئر فلو کے ساتھ، یہ گوداموں، ہینگرز، فیکٹریوں، ورکشاپس، تکنیکی کمروں اور بڑے صنعتی ہالز کے لیے ایک عملی حل ہے۔"
       },
       {
         "name": "SEAHORSE",
         "type": "باتھ روم پنکھا",
-        "subModels": [
-          "SEAHORSE AP",
-          "SEAHORSE RP V1",
-          "SEAHORSE RP V2"
-        ],
+        "image": "/images/products/banyo-fan-1.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Seahorse خاندان پلاسٹک کے اخراجی پنکھوں پر مشتمل ہے جو باتھ رومز، WCs، تہہ خانوں اور اسی طرح کی چھوٹی سے درمیانی جگہوں سے بدبو، بھاپ، نمی اور باسی ہوا کو دور کرنے کے لیے ہیں۔ axial اور radial اختیارات، ABS ہاؤسنگز، کم آواز، آسانی سے صاف ہونے والے فرنٹ پینلز اور اختیاری ٹائم ڈیلے کنٹرول کے ساتھ، یہ رہائشی، ہوٹل، دفتر اور تجارتی اندرونی جگہوں کے لیے موزوں ہے۔"
       },
       {
         "name": "KOI",
         "type": "ڈکٹ پنکھا۔",
-        "subModels": [
-          "KOI CB",
-          "KOI RB",
-          "KOI REB",
-          "KOI X"
-        ],
+        "image": "/images/products/koi-cb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Koi خاندان کمپیکٹ ڈکٹ پنکھوں پر مشتمل ہے جو کم سے درمیانے سپلائی، اخراج اور ڈکٹ وینٹیلیشن کی ضروریات کے لیے ہیں۔ گول، مستطیل، ہوا کے بہاؤ سے باہر موٹرز، مکسڈ فلو اور axial پلاسٹک اختیارات کے ساتھ، یہ گھروں، تجارتی عمارتوں، تکنیکی کمروں، تہہ خانوں، ورکشاپس اور چھوٹی سے درمیانی تنصیبات میں عملی، خاموش اور معاشی منتقلی فراہم کرتا ہے۔"
       },
       {
         "name": "TURTLE",
         "type": "پلینم فین",
-        "subModels": [
-          "TURTLE B",
-          "TURTLE BPA",
-          "TURTLE F",
-          "TURTLE BP",
-          "TURTLE A"
-        ],
+        "image": "/images/products/turtle-a.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Turtle خاندان دوہری تہہ والے، انسولیٹڈ plenum پنکھوں پر مشتمل ہے جو سپلائی اور اخراج کے استعمال کے لیے ہیں۔ صوتی کیسنگز، رسائی کے دروازوں، بیلٹ ڈرائیو یا plug موٹر اختیارات اور متعدد امپیلر اقسام کے ساتھ، یہ پلانٹ رومز، تکنیکی جگہوں، تجارتی عمارتوں اور صنعتی وینٹیلیشن میں خاموش اور پائیدار کارکردگی فراہم کرتا ہے۔"
       },
       {
         "name": "BUTTERFLY",
         "type": "کچن ایگزاسٹ فین",
-        "subModels": [
-          "BUTTERFLY ECO",
-          "BUTTERFLY ECO HR"
-        ],
+        "image": "/images/products/butterfly-b.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Butterfly خاندان کچن کے اخراجی پنکھوں اور ماحول دوست یونٹس پر مشتمل ہے جو تجارتی کچنوں میں گرم، چکنی، دھوئیں دار اور بدبودار ہوا کے محفوظ، فلٹر شدہ اور کنٹرول شدہ اخراج کے لیے ہیں۔ ہوا کے بہاؤ سے باہر موٹرز، دوہری تہہ والی انسولیٹڈ کیسنگز، گریس فلٹرز، رسائی کے دروازوں اور VFD کے لیے تیار ڈیزائن کے ساتھ، یہ ریستورانوں، ہوٹلوں، مالز، کیٹرنگ اور پروڈکشن کچنوں میں خدمات فراہم کرتا ہے۔"
       },
       {
         "name": "FOX",
         "type": "شیلٹر فین",
-        "subModels": [
-          "FOX D",
-          "FOX C"
-        ],
+        "image": "/images/products/fox-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Fox خاندان شیلٹر وینٹیلیشن پنکھوں پر مشتمل ہے جو شیلٹرز اور محفوظ جگہوں میں فلٹر شدہ بیرونی ہوا فراہم کرتے ہیں۔ G4، ایکٹیویٹڈ کاربن، HEPA/نیوکلیئر پارٹیکیولیٹ اور بائی پاس ڈیمپر اختیارات کے ساتھ، یہ عام وینٹیلیشن اور CBRN خطرے کے منظرناموں میں کنٹرول شدہ ہوا کی فراہمی کی حمایت کرتا ہے۔"
       },
       {
         "name": "CHICKEN",
         "type": "پولٹری پنکھا۔",
-        "comingSoon": true,
-        "description": "Chicken سیریز اعلیٰ کارکردگی والے پولٹری پنکھوں پر مشتمل ہے جو بند پولٹری ہاؤسز میں حساس ہوا کے معیار کو برقرار رکھنے کے لیے ڈیزائن کیے گئے ہیں۔ درجہ حرارت، نمی اور امونیا کے لیے حساس پرندوں کی طرح، یہ پنکھے ہوا کو تازہ رکھتے ہیں، درجہ حرارت کنٹرول کی حمایت کرتے ہیں اور ریوڑ کی صحت اور پیداواری صلاحیت کے تحفظ میں مدد دیتے ہیں۔"
+        "image": "/images/products/chicken.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Chicken سیریز اعلیٰ کارکردگی والے پولٹری پنکھوں پر مشتمل ہے جو بند پولٹری ہاؤسز میں حساس ہوا کے معیار کو برقرار رکھنے کے لیے ڈیزائن کیے گئے ہیں۔ درجہ حرارت، نمی اور امونیا کے لیے حساس پرندوں کی طرح، یہ پنکھے ہوا کو تازہ رکھتے ہیں، درجہ حرارت کنٹرول کی حمایت کرتے ہیں اور ریوڑ کی صحت اور پیداواری صلاحیت کے تحفظ میں مدد دیتے ہیں۔",
+        "comingSoon": true
       },
       {
         "name": "ELEPHANT",
         "type": "دھول جمع کرنا",
-        "comingSoon": true,
-        "description": "Elephant سیریز، جانور کی طاقت اور باریک ادراک سے متاثر ہو کر، اعلیٰ پیداوار والے علاقوں میں اعلیٰ اخراجی صلاحیت کے ساتھ گرد و غبار اور ذرات کو جمع کرتی ہے۔ مضبوط باڈی، مستحکم سکشن اور پائیدار ساخت کے ساتھ، یہ صحت مند اور زیادہ موثر کام کی جگہوں کے لیے کنٹرول شدہ ہیوی ڈیوٹی ایئر مینجمنٹ فراہم کرتی ہے۔"
+        "image": "/images/products/elephant.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Elephant سیریز، جانور کی طاقت اور باریک ادراک سے متاثر ہو کر، اعلیٰ پیداوار والے علاقوں میں اعلیٰ اخراجی صلاحیت کے ساتھ گرد و غبار اور ذرات کو جمع کرتی ہے۔ مضبوط باڈی، مستحکم سکشن اور پائیدار ساخت کے ساتھ، یہ صحت مند اور زیادہ موثر کام کی جگہوں کے لیے کنٹرول شدہ ہیوی ڈیوٹی ایئر مینجمنٹ فراہم کرتی ہے۔",
+        "comingSoon": true
       }
     ],
     "otherCategories": [
@@ -270,7 +231,31 @@
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
-    "ctaDesc": "1,200+ سے زیادہ مصنوعات کی اقسام سے اپنے پروجیکٹ کے لیے موزوں ترین حل تلاش کرنے کے لیے ہماری ماہر انجینئرنگ ٹیم سے رابطہ کریں۔"
+    "ctaDesc": "1,200+ سے زیادہ مصنوعات کی اقسام سے اپنے پروجیکٹ کے لیے موزوں ترین حل تلاش کرنے کے لیے ہماری ماہر انجینئرنگ ٹیم سے رابطہ کریں۔",
+    "catalogs": [
+      {
+        "title": "ہوا کی نقل و حرکت پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
   },
   "iklimlendirme": {
     "title": "ایئر کنڈیشنگ",
@@ -285,42 +270,23 @@
     "tiger": {
       "label": "ایئر ہینڈلنگ یونٹ",
       "desc": "500 - 125,000 m³/h ایئر فلو رینج میں ماڈیولر تعمیرات، اعلی توانائی کے موثر اجزاء، اور پرسکون آپریشن کی کارکردگی پر مشتمل ایک ایئر ہینڈلنگ یونٹ سلوشن۔",
-      "specs": [
-        {
-          "label": "ہوا کا بہاؤ",
-          "value": "500–125K m³/h"
-        },
-        {
-          "label": "دباؤ",
-          "value": "10–3,000 Pa"
-        },
-        {
-          "label": "چیسس",
-          "value": "انوڈائزڈ ایلومینیم"
-        }
-      ]
+      "image": "/images/products/tiger-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "dolphin": {
       "label": "پول ڈیہومیڈیفیکیشن یونٹ",
       "desc": "صارف کے آرام کو زیادہ سے زیادہ کرتے ہوئے اندرونی تالابوں میں تعمیراتی ڈھانچے کو نمی کو پہنچنے والے نقصان کو روکتا ہے۔ اپنی اعلی توانائی کی کارکردگی، دیرپا تعمیر، اور پرسکون آپریشن کے ساتھ نمایاں ہے۔",
-      "specs": [
-        {
-          "label": "صلاحیت",
-          "value": "6 ماڈلز"
-        },
-        {
-          "label": "ہوا کا بہاؤ",
-          "value": "3,000–9,000 m³/h"
-        },
-        {
-          "label": "پول ایریا",
-          "value": "50–250 m²"
-        }
-      ]
+      "image": "/images/products/dolphin-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "caracal": {
       "label": "گرمی کی بازیابی۔",
-      "desc": "تازہ ہوا کی ضروریات کو پورا کرنے اور دفاتر، اسکولوں، ہوٹلوں، ہسپتالوں اور سماجی جگہوں میں ہوا کے موجودہ معیار کو بہتر بنانے کے لیے کنٹرول شدہ ایئر کنڈیشن فراہم کرتا ہے۔"
+      "desc": "تازہ ہوا کی ضروریات کو پورا کرنے اور دفاتر، اسکولوں، ہوٹلوں، ہسپتالوں اور سماجی جگہوں میں ہوا کے موجودہ معیار کو بہتر بنانے کے لیے کنٹرول شدہ ایئر کنڈیشن فراہم کرتا ہے۔",
+      "image": "/images/products/caracal.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "ctaDesc": "ہماری تکنیکی ٹیم آپ کو سب سے موزوں ایئر کنڈیشنگ حل فراہم کرنے کے لیے تیار ہے۔",
     "otherCategories": [
@@ -356,6 +322,30 @@
         "label": "کمپن اور آواز کی موصلیت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "ایئر کنڈیشنگ پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "sogutmaVeIsitma": {
@@ -369,27 +359,30 @@
       {
         "name": "چلر (پولر ریچھ)",
         "type": "کولنگ یونٹ",
-        "subModels": []
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "آؤٹ ڈور یونٹس",
         "type": "کولنگ یونٹ",
-        "subModels": []
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "الیکٹرک ہیٹر",
         "type": "الیکٹرک ہیٹر",
-        "subModels": [
-          "EH (مستطیل)",
-          "EHC (سلنڈریکل)"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "پانی کی کنڈلی",
         "type": "کنڈلی",
-        "subModels": [
-          "ڈبلیو سی"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       }
     ],
     "otherCategories": [
@@ -425,6 +418,30 @@
         "label": "کمپن اور آواز کی موصلیت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "کولنگ اور ہیٹنگ پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaYonetimi": {
@@ -435,19 +452,9 @@
     "hound": {
       "label": "ایئر ڈیمپر",
       "desc": "وینٹیلیشن اور فائر سیفٹی سسٹم کے انتہائی اہم مقامات پر زیادہ سے زیادہ کنٹرول اور حفاظت فراہم کرنے کے لیے ڈیمپر سیریز ڈیزائن کی گئی ہے۔",
-      "subModels": [
-        "MSD",
-        "MSFD-R",
-        "MSFD-B",
-        "SFD-B",
-        "SFD-R",
-        "RSFD-B",
-        "RSFD-ڈرین-B",
-        "FFD",
-        "MFD",
-        "آر ڈی",
-        "جی ایس"
-      ]
+      "image": "/images/products/hound-al.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -481,6 +488,30 @@
       {
         "label": "کمپن اور آواز کی موصلیت",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "ایئر مینجمنٹ پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -492,29 +523,9 @@
     "alpaca": {
       "label": "Grilles، Diffusers، وغیرہ",
       "desc": "ہوا کی تقسیم کی تمام ضروریات کے لیے موزوں حل کے ساتھ مختلف ماڈلز۔",
-      "subModels": [
-        "ALPACA-GL-SD",
-        "ALPACA-GL-DD",
-        "ALPACA-GL-RA",
-        "ALPACA-GL-PRF",
-        "ALPACA-GL-OB",
-        "ALPACA-DF-SQ",
-        "ALPACA-DF-CR",
-        "ALPACA-DF-LS",
-        "ALPACA-DF-JET",
-        "ALPACA-DF-ADJ",
-        "ALPACA-LV-FX",
-        "ALPACA-LV-ADJ",
-        "ALPACA-LV-WP",
-        "ALPACA-LV-AC",
-        "ALPACA-AM-SQ",
-        "ALPACA-AM-CR",
-        "ALPACA-AM-ADJ",
-        "ALPACA-SP-FR",
-        "ALPACA-SP-DEC",
-        "ALPACA-SP-AC",
-        "ALPACA-SP-JET"
-      ]
+      "image": "/images/products/alpaca-am.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -549,6 +560,30 @@
         "label": "کمپن اور آواز کی موصلیت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "ہوا کی تقسیم پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaFiltrasyonu": {
@@ -559,17 +594,9 @@
     "scallop": {
       "label": "فلٹر سیریز",
       "desc": "ایئر فلٹریشن کی تمام ضروریات کے لیے موزوں حل کے ساتھ مختلف فلٹر ماڈل۔",
-      "subModels": [
-        "اسکیلپ پی ایف",
-        "SCALLOP MF",
-        "SCALLOP GF",
-        "اسکیلپ اے بی ایف",
-        "SCALLOP CF",
-        "اسکیلپ بی ایف",
-        "سکیلپ ایچ پی",
-        "SCALLOP UF",
-        "SCALLOP FF"
-      ]
+      "image": "/images/products/cyclone.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -603,6 +630,30 @@
       {
         "label": "کمپن اور آواز کی موصلیت",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "ایئر فلٹریشن پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -802,6 +853,30 @@
         "label": "کمپن اور آواز کی موصلیت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "لوازمات پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "otomasyonMalzemeleri": {
@@ -811,41 +886,35 @@
     "products": [
       {
         "name": "PANEL",
-        "subModels": [],
         "image": "/images/products/otomasyon-pano.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "HAWK آٹومیشن پینلز پنکھوں کے سسٹمز، HVAC یونٹس اور بنیادی ڈھانچے کے عناصر کو ایک ہی مرکز سے قابلِ اعتماد، مستحکم اور ذہین کنٹرول کے ساتھ چلانے کے لیے ڈیزائن کیے گئے ہیں۔ تیز ردعمل، درست نگرانی اور جدید کنٹرول آرکیٹیکچر سسٹم کو پیچیدہ منظرناموں میں بھی مستحکم رکھتے ہیں۔ انرجی مینجمنٹ، سیفٹی انضمام، درست کنٹرول اور دور دراز سے نگرانی کے ساتھ، HAWK منصوبے میں کمانڈنگ نگرانی کا اضافہ کرتا ہے۔"
       },
       {
         "name": "PLC",
-        "subModels": [],
-        "image": "/images/products/otomasyon-plc.png"
+        "image": "/images/products/otomasyon-plc.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "سینسر",
-        "subModels": [
-          "FCP-DSC",
-          "FCP-DCS",
-          "TECASE-ST110"
-        ],
-        "image": "/images/products/otomasyon-sensor.png?v=7"
+        "image": "/images/products/otomasyon-sensor.png?v=7",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "کنٹرول بورڈز - سوئچز",
-        "subModels": [
-          "TP01-TSD",
-          "TP01-CC"
-        ],
-        "image": "/images/products/otomasyon-kontrol-kartlari.png"
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "شیر کی طاقت، اختیار اور قوت کے کنٹرول شدہ استعمال سے متاثر ہو کر، Lion سیریز پاور الیکٹرانکس پر مشتمل ہے جو برقی توانائی کو ریگولیٹ، منظم اور بہتر بناتی ہے۔ ٹھیک وقت پر طاقت لگانے والے شیر کی طرح، Lion برقی طاقت کو ذہانت سے کنٹرول کرتا ہے، خاص طور پر فریکوئنسی کنورٹرز اور ڈرائیوز میں۔ پنکھوں، موٹرز اور HVAC سسٹمز کے لیے تیار کیا گیا، یہ درست رفتار کنٹرول، سافٹ اسٹارٹ، توانائی کی کارکردگی اور سسٹم کا تحفظ فراہم کرتا ہے، اور قابلِ اعتماد و مستند کارکردگی کے ساتھ آلات کی زندگی میں اضافہ کرتا ہے۔",
-        "subModels": [
-          "انورٹر",
-          "BLDC ڈرائیو",
-          "MOSFET ماڈیولز"
-        ]
+        "specFlow": "",
+        "specPressure": "",
+        "description": "شیر کی طاقت، اختیار اور قوت کے کنٹرول شدہ استعمال سے متاثر ہو کر، Lion سیریز پاور الیکٹرانکس پر مشتمل ہے جو برقی توانائی کو ریگولیٹ، منظم اور بہتر بناتی ہے۔ ٹھیک وقت پر طاقت لگانے والے شیر کی طرح، Lion برقی طاقت کو ذہانت سے کنٹرول کرتا ہے، خاص طور پر فریکوئنسی کنورٹرز اور ڈرائیوز میں۔ پنکھوں، موٹرز اور HVAC سسٹمز کے لیے تیار کیا گیا، یہ درست رفتار کنٹرول، سافٹ اسٹارٹ، توانائی کی کارکردگی اور سسٹم کا تحفظ فراہم کرتا ہے، اور قابلِ اعتماد و مستند کارکردگی کے ساتھ آلات کی زندگی میں اضافہ کرتا ہے۔"
       }
     ],
     "otherCategories": [
@@ -881,6 +950,30 @@
         "label": "کمپن اور آواز کی موصلیت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "آٹومیشن کا سامان پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "titresimVeSesIzolasyon": {
@@ -891,17 +984,9 @@
     "roo": {
       "label": "سائلنسر، ربڑ پیڈ، وائبریشن آئسولیٹر",
       "desc": "کمپن اور آواز کی موصلیت کی ضروریات کے لیے موزوں حل کے ساتھ مختلف ماڈلز۔",
-      "subModels": [
-        "ROO T1-ISO10N-NIP",
-        "ROO T1-ISO15N-100kg-NIP",
-        "ROO T2-ISO20N-FIP",
-        "ROO T2-ISO30N-150kg-FIP",
-        "ROO T3-ISO5Hz-200kg-OSI",
-        "ROO T3-ISO10Hz-300kg-OSI",
-        "ROO T4-ISOComb-100kg-5Hz-HSI",
-        "ROO T4-ISO100kg-10Hz-HSI",
-        "ROO T4-ISO500kg-10Hz-HSI"
-      ]
+      "image": "/images/products/yayli-titresim-izolatoru.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -936,6 +1021,30 @@
         "label": "آٹومیشن کا سامان",
         "slug": "otomasyon-malzemeleri"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "کمپن اور آواز کی موصلیت پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES جنرل پروڈکٹ کیٹلاگ",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "تنصیب اور دیکھ بھال مینوئل",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "تکنیکی ڈیٹا شیٹس",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "banyoFanlari": {
@@ -961,7 +1070,26 @@
         "image": "/images/products/banyo-fan-3.jpg",
         "description": "اپنے جدید ڈیزائن اور طاقتور کارکردگی کے ساتھ نمایاں، RP V2 وائڈ فرنٹ پینل ایگزاسٹ فین کو رہنے کی جگہوں کے لیے ڈیزائن کیا گیا ہے جہاں جمالیات اور فعالیت دونوں ترجیحات میں شامل ہیں۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "catiFanlari": {
     "title": "HERON",
@@ -1004,7 +1132,26 @@
         "image": "/images/products/free.jpg",
         "description": "ڈھکن والا محوری چھت کا پنکھا۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "damperler": {
     "title": "HOUND",
@@ -1029,7 +1176,26 @@
         "image": "/images/products/hound-crd.jpg",
         "description": "اوور پریشر کنٹرول اور سسٹم کے اجزاء کے تحفظ کے لیے خودکار طور پر کھلنے والا پریشر ریلیف ڈیمپر۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
@@ -1072,7 +1238,26 @@
         "image": "/images/products/dragonfly-jr.jpg",
         "description": "خاص طور پر بند کار پارکس، سرنگوں اور فائر زونز جیسے اندرونی حجم کا مطالبہ کرنے میں دھواں نکالنے اور ہنگامی وینٹیلیشن کے لیے ڈیزائن کیا گیا ہے۔ EN 12101-3 مصدقہ۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
@@ -1091,7 +1276,26 @@
         "image": "/images/products/owl-rwa.jpg",
         "description": "ایک محوری پنکھے کا حل جس میں اعلی کارکردگی والے ایروفوائل بلیڈ ڈیزائن کی خاصیت ہے، جو مستطیل دیوار پر نصب تنصیب کے لیے موزوں ہے۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
@@ -1110,7 +1314,26 @@
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "description": "ایک اعلی کارکردگی والا EC موٹر مستطیل ڈکٹ پنکھا حل جو جدید وینٹیلیشن سسٹم میں استعمال کے لیے ڈیزائن کیا گیا ہے۔ اس کے کمپیکٹ ڈھانچے، پرسکون آپریشن، اور آٹومیشن سسٹم کے انضمام کی صلاحیت کے ساتھ، اسے آرام اور صنعتی ایپلی کیشنز میں قابل اعتماد طور پر ترجیح دی جاتی ہے۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
@@ -1129,7 +1352,26 @@
         "image": "/images/products/nautilus-cif-cidarli.jpg",
         "description": "NAUTILUS سائلنس سیریز سینٹرفیوگل پرستار ہیں جو کم دباؤ والے ہوا کی منتقلی کی ضرورت والے نظاموں میں اعلی کارکردگی کے ساتھ کام کرتے ہیں، جس میں ایک کمپیکٹ ڈھانچہ اور ڈائریکٹ ڈرائیو ڈیزائن ہوتا ہے۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "exproofFanlar": {
     "title": "BEAR",
@@ -1190,7 +1432,26 @@
         "image": "/images/products/bear-w.jpg",
         "description": "شعلہ پروف، ATEX کے مطابق، اعلی کارکردگی۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
@@ -1290,7 +1551,26 @@
         "image": "/images/products/turtle-a.jpg",
         "description": "کومپیکٹ محوری کابینہ کی قسم کے پنکھے کے حل جو اعلی حجم کی ہوا کی منتقلی کی ضروریات کے ساتھ سسٹمز کے لیے ڈیزائن کیے گئے ہیں۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
@@ -1300,6 +1580,25 @@
       "title": "کیراکل ڈی",
       "type": "ہیٹ ریکوری یونٹ",
       "description": "Caracal D سیریز (ہیٹ ریکوری یونٹ) ایک کمپیکٹ اور اعلی کارکردگی والا حل ہے جو توانائی کی کارکردگی میں اضافہ کرتے ہوئے اندر کی ہوا کو تازہ کرنے کے لیے تیار کیا گیا ہے۔ اس کی پائیدار تعمیر اور صارف دوست کنٹرول پینل کے ساتھ، یہ آرام دہ اور پائیدار وینٹیلیشن فراہم کرتا ہے۔"
+    },
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
     }
   },
   "kanalFanlari": {
@@ -1331,7 +1630,26 @@
         "image": "/images/products/koi-x.jpg",
         "description": "KOI-X سیریز کے مکسڈ فلو ڈکٹ فین کو خاص طور پر آرام دہ علاقوں میں زیادہ سے زیادہ کارکردگی فراہم کرنے کے لیے ڈیزائن کیا گیا ہے، اس کے کمپیکٹ ڈھانچے، پرسکون آپریشن، اور دوہری رفتار موٹر آپشن کے ساتھ۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "klimaSantralleri": {
     "title": "TIGER",
@@ -1381,7 +1699,26 @@
         "image": "/images/products/marlin-b.jpg",
         "description": "منقسم محوری پنکھا ۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
@@ -1394,7 +1731,26 @@
         "image": "/images/products/butterfly-b.jpg",
         "description": "بٹر فلائی بی سیریز کچن ٹائپ فین ایک پائیدار اور اعلی کارکردگی والا وینٹیلیشن حل ہے جو صنعتی اور تجارتی کچن میں بھاری بھاپ، چکنائی اور بدبو کو نکالنے کے لیے تیار کیا گیا ہے۔ اس کے جدید فلٹریشن سسٹم، پرسکون آپریشن، اور دیرپا تعمیر کے ساتھ، یہ پیشہ ور کچن کے لیے مثالی ہے۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   },
   "siginakFanlari": {
     "title": "FOX",
@@ -1413,6 +1769,25 @@
         "image": "/images/products/fox-c.png",
         "description": "FOX C سیریز کیبنٹ ٹائپ شیلٹر فین ایک پیشہ ور وینٹیلیشن سلوشن ہے جو خاص طور پر ان علاقوں کے لیے تیار کیا گیا ہے جن کو ہائی سیکیورٹی کی ضرورت ہوتی ہے، جو پرسکون آپریشن کے لیے موزوں ہے، اور ایک طاقتور فلٹریشن سسٹم سے لیس ہے۔"
       }
-    ]
+    ],
+    "chrome": {
+      "home": "گھر",
+      "products": "مصنوعات",
+      "productFamily": "پروڈکٹ فیملی",
+      "certified": "تصدیق شدہ",
+      "productRange": "مصنوعات کی حد",
+      "technicalSupport": "ٹیکنیکل سپورٹ",
+      "model": "ماڈل",
+      "models": "ماڈل",
+      "technicalSupportRequest": "تکنیکی مدد کی درخواست",
+      "allProducts": "تمام مصنوعات",
+      "mostPreferred": "سب سے زیادہ پسندیدہ",
+      "detailedView": "تفصیلات دیکھیں",
+      "productFamilies": "پروڈکٹ فیملیز",
+      "inspect": "دریافت کریں۔",
+      "lookingForProduct": "اپنے پروجیکٹ کے لیے صحیح پروڈکٹ تلاش کر رہے ہیں؟",
+      "teamReady": "ہماری تکنیکی ٹیم آپ کو موزوں ترین حل فراہم کرنے کے لیے تیار ہے۔",
+      "allSolutions": "تمام حل دیکھیں"
+    }
   }
 }

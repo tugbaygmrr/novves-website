@@ -19,7 +19,7 @@ import { relativeTimeTr } from "@/lib/panel/format";
 import { toast } from "@/lib/panel/stores/toast-store";
 import { useEditorStore, selectDirty } from "@/lib/panel/stores/editor-store";
 import { getPreviewUrl } from "@/lib/admin/preview-routes";
-import { getSectionPreview } from "@/lib/admin/section-preview-meta";
+import { getSectionPreview, hasSectionPreview } from "@/lib/admin/section-preview-meta";
 import { getHiddenFields } from "@/lib/panel/hidden-fields";
 import { Button } from "../ui/button";
 import { Switch } from "../ui/switch";
@@ -64,6 +64,8 @@ export function SectionEditor({
 
   const previewUrl = getPreviewUrl(locale, file, section);
   const preview = getSectionPreview(file, section);
+  // Önizleme tanımı olmayan bölümlerde (ör. ürünler) sağdaki "Bölüm Görünümü" gösterilmez.
+  const hasPreview = hasSectionPreview(file, section);
 
   const save = React.useCallback(
     async (silent = false) => {
@@ -160,7 +162,13 @@ export function SectionEditor({
       : "Kaydedildi";
 
   return (
-    <div className="grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(360px,480px)]">
+    <div
+      className={
+        hasPreview
+          ? "grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(360px,480px)]"
+          : "grid grid-cols-1 gap-5"
+      }
+    >
       {/* Editör */}
       <div className="overflow-hidden rounded-2xl border border-panel-border bg-panel-surface">
         {/* Başlık çubuğu */}
@@ -230,16 +238,18 @@ export function SectionEditor({
               )}
             </Dropdown>
 
-            <Tooltip content={showPreview ? "Görseli gizle" : "Görseli göster"} side="bottom">
-              <button
-                type="button"
-                onClick={() => setShowPreview((v) => !v)}
-                className="hidden h-8 w-8 items-center justify-center rounded-lg text-panel-fg-muted transition-colors hover:bg-panel-surface-2 hover:text-panel-fg xl:flex"
-                aria-label="Önizlemeyi aç/kapat"
-              >
-                {showPreview ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-              </button>
-            </Tooltip>
+            {hasPreview && (
+              <Tooltip content={showPreview ? "Görseli gizle" : "Görseli göster"} side="bottom">
+                <button
+                  type="button"
+                  onClick={() => setShowPreview((v) => !v)}
+                  className="hidden h-8 w-8 items-center justify-center rounded-lg text-panel-fg-muted transition-colors hover:bg-panel-surface-2 hover:text-panel-fg xl:flex"
+                  aria-label="Önizlemeyi aç/kapat"
+                >
+                  {showPreview ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                </button>
+              </Tooltip>
+            )}
           </div>
         </div>
 
@@ -295,7 +305,7 @@ export function SectionEditor({
       </div>
 
       {/* Bölüm görünümü (ekran görüntüsü) */}
-      {showPreview && (
+      {showPreview && hasPreview && (
         <div className="hidden xl:block">
           <div className="sticky top-20 overflow-hidden rounded-2xl border border-panel-border bg-panel-surface">
             <div className="flex items-center justify-between border-b border-panel-border px-4 py-2.5">

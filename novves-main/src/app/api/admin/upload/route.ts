@@ -19,8 +19,13 @@ const ALLOWED = new Map<string, string>([
   ["image/avif", "avif"],
 ]);
 
-const MAX_BYTES = 8 * 1024 * 1024; // 8 MB
+// Dokümanlar: uzantı ile (DWG/DXF MIME'ı octet-stream gelebilir, güvenilmez).
+const DOC_EXT = new Set(["pdf", "dwg", "dxf", "doc", "docx", "xls", "xlsx", "ppt", "pptx", "zip", "rar"]);
+
+const MAX_BYTES = 8 * 1024 * 1024; // 8 MB (görsel)
+const MAX_DOC_BYTES = 40 * 1024 * 1024; // 40 MB (doküman)
 const UPLOAD_DIR = path.join(process.cwd(), "public", "images", "uploads");
+const DOC_UPLOAD_DIR = path.join(process.cwd(), "public", "documents", "uploads");
 
 function authenticate(request: NextRequest): string | null {
   const token = getCookieValue(request, COOKIE_ACCESS_TOKEN);
@@ -67,10 +72,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Dosya bulunamadı" }, { status: 400 });
   }
 
-  const ext = ALLOWED.get(file.type);
-  if (!ext) {
+  const imgExt = ALLOWED.get(file.type);
+  const nameExt = file.name.split(".").pop()?.toLowerCase() ?? "";
+  const isDoc = !imgExt && DOC_EXT.has(nameExt);
+
+  if (!imgExt && !isDoc) {
     return NextResponse.json(
-      { error: "Yalnızca PNG, WebP veya AVIF yükleyebilirsiniz (JPG/SVG desteklenmez)." },
+      { error: "Görsel (PNG/WebP/AVIF) veya doküman (PDF/DWG/DXF/DOCX/XLSX/PPTX/ZIP/RAR) yükleyin." },
       { status: 415 },
     );
   }
@@ -78,23 +86,27 @@ export async function POST(request: NextRequest) {
   if (file.size === 0) {
     return NextResponse.json({ error: "Boş dosya" }, { status: 400 });
   }
-  if (file.size > MAX_BYTES) {
+  const limit = isDoc ? MAX_DOC_BYTES : MAX_BYTES;
+  if (file.size > limit) {
     return NextResponse.json(
-      { error: `Dosya çok büyük (en fazla ${MAX_BYTES / (1024 * 1024)} MB).` },
+      { error: `Dosya çok büyük (en fazla ${limit / (1024 * 1024)} MB).` },
       { status: 413 },
     );
   }
 
+  const ext = isDoc ? nameExt : imgExt!;
+  const dir = isDoc ? DOC_UPLOAD_DIR : UPLOAD_DIR;
+  const publicBase = isDoc ? "/documents/uploads" : "/images/uploads";
   const fileName = `${slugifyBase(file.name)}-${randomUUID().slice(0, 8)}.${ext}`;
 
   try {
-    await mkdir(UPLOAD_DIR, { recursive: true });
+    await mkdir(dir, { recursive: true });
     const buffer = Buffer.from(await file.arrayBuffer());
-    await writeFile(path.join(UPLOAD_DIR, fileName), buffer);
+    await writeFile(path.join(dir, fileName), buffer);
   } catch (err) {
-    console.error("Görsel yükleme başarısız:", err);
-    return NextResponse.json({ error: "Görsel kaydedilemedi" }, { status: 500 });
+    console.error("Yükleme başarısız:", err);
+    return NextResponse.json({ error: "Dosya kaydedilemedi" }, { status: 500 });
   }
 
-  return NextResponse.json({ success: true, path: `/images/uploads/${fileName}` });
+  return NextResponse.json({ success: true, path: `${publicBase}/${fileName}` });
 }

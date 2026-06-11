@@ -5,7 +5,7 @@ import { ChevronRight, FileText, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/panel/cn";
 import { toast } from "@/lib/panel/stores/toast-store";
 import { useEditorStore } from "@/lib/panel/stores/editor-store";
-import { getAdminPageGroups } from "@/lib/admin/content-sections";
+import { getAdminPageGroups, SECTION_DIVIDER_KEY } from "@/lib/admin/content-sections";
 import { getPreviewUrl } from "@/lib/admin/preview-routes";
 import { PageHeader } from "@/components/panel/shell/page-header";
 import { Button } from "@/components/panel/ui/button";
@@ -16,6 +16,7 @@ import { ProductStripManager } from "@/components/panel/modules/product-strip-ma
 import { ReferenceStripManager } from "@/components/panel/modules/reference-strip-manager";
 import { CertificateStripManager } from "@/components/panel/modules/certificate-strip-manager";
 import { EngineeringStripManager } from "@/components/panel/modules/engineering-strip-manager";
+import { FooterManager } from "@/components/panel/modules/footer-manager";
 
 const CUSTOM_HOME_SECTIONS = [
   "solutionCarouselByHref",
@@ -27,6 +28,7 @@ const CUSTOM_HOME_SECTIONS = [
 
 /** Bu (file, section) jenerik editör yerine özel yönetici ile düzenlenir. */
 function isCustomSection(file: string, section: string) {
+  if (file === "common" && section === "footer") return true;
   return file === "home" && CUSTOM_HOME_SECTIONS.includes(section);
 }
 
@@ -115,26 +117,43 @@ export function SayfalarClient({ initialFile }: { initialFile?: string }) {
 
       {view === "pages" && currentGroup && (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {currentGroup.sections.map((s, i) => (
-            <button
-              key={s.key}
-              type="button"
-              onClick={() => {
-                setActiveSection(s.key);
-                setView("edit");
-              }}
-              className="group flex items-center gap-3 rounded-xl border border-panel-border bg-panel-surface p-4 text-left transition-all panel-hover-raise"
-            >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-panel-surface-2 text-panel-fg-subtle group-hover:bg-panel-accent-soft group-hover:text-panel-accent">
-                <FileText className="h-5 w-5" />
-              </span>
-              <div className="min-w-0 flex-1">
-                <p className="truncate text-[14px] font-semibold text-panel-fg">{s.label}</p>
-                <p className="text-[11.5px] text-panel-fg-subtle">Bölüm {i + 1}</p>
-              </div>
-              <ChevronRight className="h-4 w-4 shrink-0 text-panel-fg-subtle transition-transform group-hover:translate-x-0.5" />
-            </button>
-          ))}
+          {(() => {
+            let n = 0;
+            return currentGroup.sections.map((s) => {
+              if (s.key === SECTION_DIVIDER_KEY) {
+                return (
+                  <div key="__divider__" className="col-span-full flex items-center gap-3 pt-3">
+                    <span className="text-[12px] font-semibold uppercase tracking-wider text-panel-fg-muted">
+                      {s.label}
+                    </span>
+                    <span className="h-px flex-1 bg-panel-border" />
+                  </div>
+                );
+              }
+              n += 1;
+              const num = n;
+              return (
+                <button
+                  key={s.key}
+                  type="button"
+                  onClick={() => {
+                    setActiveSection(s.key);
+                    setView("edit");
+                  }}
+                  className="group flex items-center gap-3 rounded-xl border border-panel-border bg-panel-surface p-4 text-left transition-all panel-hover-raise"
+                >
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-panel-surface-2 text-panel-fg-subtle group-hover:bg-panel-accent-soft group-hover:text-panel-accent">
+                    <FileText className="h-5 w-5" />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-[14px] font-semibold text-panel-fg">{s.label}</p>
+                    <p className="text-[11.5px] text-panel-fg-subtle">Bölüm {num}</p>
+                  </div>
+                  <ChevronRight className="h-4 w-4 shrink-0 text-panel-fg-subtle transition-transform group-hover:translate-x-0.5" />
+                </button>
+              );
+            });
+          })()}
         </div>
       )}
 
@@ -145,6 +164,7 @@ export function SayfalarClient({ initialFile }: { initialFile?: string }) {
               setView("pages");
               setActiveSection("");
             };
+            if (activeFile === "common" && activeSection === "footer") return <FooterManager onBack={back} />;
             if (activeSection === "solutionCarouselByHref") return <SolutionStripManager onBack={back} />;
             if (activeSection === "productCategories") return <ProductStripManager onBack={back} />;
             if (activeSection === "referencePreview") return <ReferenceStripManager onBack={back} />;

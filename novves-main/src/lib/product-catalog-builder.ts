@@ -31,6 +31,8 @@ const BLOCK_SKIP_KEYS = new Set([
   "tableHeaders",
   "accessories",
   "products",
+  "catalogs",
+  "guides",
 ]);
 
 type RawProductRow = {
@@ -39,6 +41,9 @@ type RawProductRow = {
   image?: string;
   description?: string;
   subModels?: string[];
+  /** Kart spec hücreleri — panelden düzenlenir (eski subModels türevinin yerine). */
+  specFlow?: string;
+  specPressure?: string;
   comingSoon?: boolean;
 };
 
@@ -53,6 +58,10 @@ type EntityRow = {
   desc?: string;
   subModels?: string[];
   specs?: { label: string; value: string }[];
+  /** Panelden düzenlenir; boşsa eski specs/meta'dan türetilir. */
+  image?: string;
+  specFlow?: string;
+  specPressure?: string;
 };
 
 function trim(v: unknown): string {
@@ -154,8 +163,10 @@ function fromProductsArray(
       leafSlug: meta?.leafSlug,
       subModels: p.subModels,
       comingSoon: p.comingSoon,
+      specFlow: trim(p.specFlow) || undefined,
       specPressure:
-        name === "DRAGONFLY" || meta?.leafSlug === "duman-isi-tahliye-fanlari" ? "EN 12101-3" : undefined,
+        trim(p.specPressure) ||
+        (name === "DRAGONFLY" || meta?.leafSlug === "duman-isi-tahliye-fanlari" ? "EN 12101-3" : undefined),
     });
   });
 }
@@ -212,13 +223,13 @@ function fromEntities(
         id: brandName,
         name: brandName,
         type: trim(entity.label) || brandName,
-        image: meta?.image ?? "/images/products/marlin.png",
+        image: trim(entity.image) || meta?.image || "/images/products/marlin.png",
         leafSlug: meta?.leafSlug,
         description: trim(entity.desc),
         subModels,
         comingSoon: false,
-        specFlow: flow,
-        specPressure: pressure,
+        specFlow: trim(entity.specFlow) || flow,
+        specPressure: trim(entity.specPressure) || pressure,
       }),
     );
   }
@@ -322,6 +333,30 @@ function defaultDocs(locale: string, title: string): Pick<ProductCatalogPageData
   };
 }
 
+/** Panelden düzenlenen catalogs/guides dizisini okur; yoksa null (varsayılana düşülür). */
+function readBlockDocs(
+  raw: unknown,
+  kind: "catalog" | "guide",
+  fallbackHref: string,
+): ProductCatalogPageData["catalogs"] | null {
+  if (!Array.isArray(raw) || raw.length === 0) return null;
+  const docs = raw
+    .map((d, i) => {
+      const o = (d ?? {}) as { title?: string; meta?: string; href?: string };
+      const title = trim(o.title);
+      if (!title) return null;
+      return {
+        id: `${kind}-${i}`,
+        title,
+        meta: trim(o.meta),
+        href: trim(o.href) || fallbackHref,
+        kind,
+      };
+    })
+    .filter((d): d is NonNullable<typeof d> => d !== null);
+  return docs.length > 0 ? docs : null;
+}
+
 export function getProductCategoryBySlug(slug: string) {
   return PRODUCT_CATEGORY_NAV.find((n) => n.slug === slug);
 }
@@ -339,6 +374,9 @@ export function buildProductCatalogPage(
   const title = trim(obj.title) || categoryLabels[categoryKey] || categoryKey;
   const products = withProductNumbers(extractProducts(locale, categoryKey, obj, productsDict));
   const docs = defaultDocs(locale, title);
+  const tc = `/${locale}/teknik-merkez/dokuman-kutuphanesi`;
+  const catalogs = readBlockDocs(obj.catalogs, "catalog", tc) ?? docs.catalogs;
+  const guides = readBlockDocs(obj.guides, "guide", tc) ?? docs.guides;
 
   return {
     categoryKey,
@@ -350,9 +388,9 @@ export function buildProductCatalogPage(
     pageSubtitle: categorySubtitle(locale, obj, title),
     categories: buildProductCatalogCategories(locale, categoryLabels, categorySlug),
     products,
-    catalogs: docs.catalogs,
-    guides: docs.guides,
-    technicalCenterHref: `/${locale}/teknik-merkez/dokuman-kutuphanesi`,
+    catalogs,
+    guides,
+    technicalCenterHref: tc,
     perfectusHref: "https://perfectusair.com/",
   };
 }

@@ -61,6 +61,10 @@ const GLOBAL_LABELS: Record<string, string> = {
   iconImage: "Özel ikon görseli",
   bannerTitle: "Banner başlığı",
   bannerLine1: "Banner açıklaması",
+  bannerDescription: "Hero açıklaması (banner metni)",
+  specFlow: "Max debi",
+  specPressure: "Basınç",
+  chrome: "Sayfa Etiketleri (breadcrumb, rozetler, butonlar, CTA)",
 };
 
 /** Keys hidden in simple-mode fallback unless "show all" is on */

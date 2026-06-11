@@ -96,6 +96,8 @@ type RawSolution = {
   titleLine1?: string;
   titleHighlight?: string;
   subtitle?: string;
+  /** Hero banner açıklaması — üst seviye (panelden düzenlenir); eski veride library.bannerDescription'daydı. */
+  bannerDescription?: string;
   ctaPrimary?: string;
   ctaSecondary?: string;
   ctaSecondaryHref?: string;
@@ -419,9 +421,11 @@ export function buildSolutionLibraryPageData(
     titleLine1: solution.titleLine1 ?? name,
     titleHighlight: solution.titleHighlight ?? "",
     subtitle:
-      typeof lib?.bannerDescription === "string" && lib.bannerDescription.trim().length > 0
-        ? lib.bannerDescription.trim()
-        : "",
+      typeof solution.bannerDescription === "string" && solution.bannerDescription.trim().length > 0
+        ? solution.bannerDescription.trim()
+        : typeof lib?.bannerDescription === "string" && lib.bannerDescription.trim().length > 0
+          ? lib.bannerDescription.trim()
+          : "",
     ctaPrimary: solution.ctaPrimary ?? ui.expertQuote,
     ctaPrimaryHref: `/${locale}/iletisim`,
     ctaSecondary: solution.ctaSecondary ?? ui.expertQuote,

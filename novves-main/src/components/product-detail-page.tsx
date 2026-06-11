@@ -33,6 +33,9 @@ type ProductDetailDictionary = {
   };
 };
 
+/** Sayfaya özel chrome/etiket override'ları (boş bırakılanlar ortak dict.shared'tan gelir). */
+export type ProductChrome = Partial<ProductDetailDictionary["shared"]> & { allSolutions?: string };
+
 export type ProductDetailPageProps = {
   title: string;
   subtitle: string;
@@ -40,10 +43,12 @@ export type ProductDetailPageProps = {
   models: ProductModel[];
   locale: string;
   dict: ProductDetailDictionary;
+  /** Bu ürün sayfasına özel etiket metinleri (panelden düzenlenir). */
+  chrome?: ProductChrome;
   /** Varsayılan: hava-hareketi ürün hub */
   productsHubHref?: string;
   solutionsHref?: string;
-  /** Varsayılan: `dict.shared.allProducts` + hava-hareketi */
+  /** Varsayılan: `c.allProducts` + hava-hareketi */
   categoryCtaHref?: string;
   categoryCtaLabel?: string;
 };
@@ -61,10 +66,6 @@ function productImageShadowClass(image: string): string {
   return /\.(jpe?g)(\?|#|$)/i.test(image) ? "" : "drop-shadow-[0_18px_30px_rgba(0,0,0,0.16)]";
 }
 
-function allSolutionsLabel(locale: string): string {
-  return getProductCatalogUi(locale as Locale).allSolutions;
-}
-
 export function ProductDetailPage({
   title,
   subtitle,
@@ -72,15 +73,20 @@ export function ProductDetailPage({
   models,
   locale,
   dict,
+  chrome,
   productsHubHref,
   solutionsHref,
   categoryCtaHref,
   categoryCtaLabel,
 }: ProductDetailPageProps) {
+  // Sayfaya özel etiketler ortak dict.shared'ın üstüne biner.
+  const c = { ...dict.shared, ...(chrome ?? {}) };
+  const allSolutionsText =
+    chrome?.allSolutions?.trim() || getProductCatalogUi(locale as Locale).allSolutions;
   const hubHref = productsHubHref ?? `/${locale}/urunler/hava-hareketi`;
   const solutionsLink = solutionsHref ?? `/${locale}/cozumler/duman-isi-tahliye-sistemleri`;
   const categoryHref = categoryCtaHref ?? `/${locale}/urunler/hava-hareketi`;
-  const categoryLabel = categoryCtaLabel ?? dict.shared.allProducts;
+  const categoryLabel = categoryCtaLabel ?? c.allProducts;
 
   const resolveModelImage = (image: string) => {
     if (!image || image.endsWith("/free.jpg")) {
@@ -90,7 +96,7 @@ export function ProductDetailPage({
   };
   const featuredModel = models[0];
   const modelCount = models.length;
-  const modelCountLabel = modelCount === 1 ? dict.shared.model : dict.shared.models;
+  const modelCountLabel = modelCount === 1 ? c.model : c.models;
   const introParts = introParagraphs(intro);
   const featuredImage = featuredModel ? resolveModelImage(featuredModel.image) : undefined;
 
@@ -116,13 +122,13 @@ export function ProductDetailPage({
               <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[9px] font-semibold uppercase tracking-[0.14em] text-white/48 sm:text-[10px] sm:tracking-[0.18em]">
                 <li>
                   <Link href={`/${locale}`} className="transition-colors hover:text-white">
-                    {dict.shared.home}
+                    {c.home}
                   </Link>
                 </li>
                 <li className="text-white/28">/</li>
                 <li>
                   <Link href={hubHref} className="transition-colors hover:text-white">
-                    {dict.shared.products}
+                    {c.products}
                   </Link>
                 </li>
                 <li className="text-white/28">/</li>
@@ -141,11 +147,11 @@ export function ProductDetailPage({
                   <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                   </svg>
-                  {allSolutionsLabel(locale)}
+                  {allSolutionsText}
                 </Link>
                 <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-primary shadow-[0_10px_34px_-24px_rgba(239,95,23,0.75)] backdrop-blur-sm sm:px-3.5 sm:text-[11px] sm:tracking-[0.22em]">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                  {dict.shared.productFamily}
+                  {c.productFamily}
                 </div>
               </div>
               <h1 className="max-w-4xl break-words font-eurostile text-[clamp(2.35rem,16vw,4.5rem)] font-black uppercase leading-[0.92] tracking-[-0.045em] text-white sm:text-[clamp(3.25rem,10vw,6.35rem)] lg:text-[clamp(3.7rem,6vw,6.35rem)]">
@@ -162,12 +168,12 @@ export function ProductDetailPage({
                   <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-white/45 sm:text-[10px] sm:tracking-[0.18em]">{modelCountLabel}</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-sand-100/10 p-3.5 shadow-[0_22px_60px_-42px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:p-4">
-                  <p className="font-eurostile text-xl font-bold leading-none text-white sm:text-2xl">{dict.shared.certified}</p>
-                  <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-white/45 sm:text-[10px] sm:tracking-[0.18em]">{dict.shared.productRange}</p>
+                  <p className="font-eurostile text-xl font-bold leading-none text-white sm:text-2xl">{c.certified}</p>
+                  <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-white/45 sm:text-[10px] sm:tracking-[0.18em]">{c.productRange}</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-sand-100/10 p-3.5 shadow-[0_22px_60px_-42px_rgba(0,0,0,0.7)] backdrop-blur-sm min-[480px]:col-span-2 sm:col-span-1 sm:p-4">
                   <p className="font-eurostile text-xl font-bold leading-none text-white sm:text-2xl">NOVVES</p>
-                  <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-white/45 sm:text-[10px] sm:tracking-[0.18em]">{dict.shared.technicalSupport}</p>
+                  <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-white/45 sm:text-[10px] sm:tracking-[0.18em]">{c.technicalSupport}</p>
                 </div>
               </div>
 
@@ -176,7 +182,7 @@ export function ProductDetailPage({
                   href={`/${locale}/iletisim`}
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white shadow-[0_18px_46px_-20px_rgba(239,95,23,0.8)] transition hover:bg-primary-deep sm:px-6 sm:py-3.5"
                 >
-                  {dict.shared.technicalSupportRequest}
+                  {c.technicalSupportRequest}
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -208,13 +214,13 @@ export function ProductDetailPage({
                       01
                     </span>
                     <span className="absolute right-3 top-3 rounded-full bg-[#FFDBD0] px-2.5 py-1 text-[8px] font-black uppercase tracking-[0.14em] text-[#390C00] sm:right-4 sm:top-4 sm:px-3 sm:text-[9px] sm:tracking-[0.16em]">
-                      {dict.shared.mostPreferred}
+                      {c.mostPreferred}
                     </span>
                   </ProductStandardMedia>
                 ) : null}
                 <div className="mt-3 rounded-2xl border border-white/10 bg-sand-100/95 p-3.5 text-ink sm:mt-4 sm:p-4">
                   <p className="font-eurostile text-lg font-bold leading-tight tracking-[-0.02em] sm:text-xl">{featuredModel?.name ?? title}</p>
-                  <p className="mt-1 text-sm font-semibold text-primary">{featuredModel?.type ?? dict.shared.productFamily}</p>
+                  <p className="mt-1 text-sm font-semibold text-primary">{featuredModel?.type ?? c.productFamily}</p>
                 </div>
               </div>
             </div>
@@ -232,10 +238,10 @@ export function ProductDetailPage({
                   href="#product-models"
                   className="inline-flex text-[10px] font-bold uppercase tracking-[0.18em] text-primary transition-colors hover:text-primary-deep sm:text-[11px] sm:tracking-[0.22em]"
                 >
-                  {dict.shared.detailedView}
+                  {c.detailedView}
                 </Link>
                 <h2 className="mt-2 font-eurostile text-[1.55rem] font-bold leading-tight tracking-[-0.02em] text-ink sm:text-3xl">
-                  {dict.shared.productRange}
+                  {c.productRange}
                 </h2>
               </div>
               <div className="space-y-3 sm:space-y-4">
@@ -256,9 +262,9 @@ export function ProductDetailPage({
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-6 flex flex-col gap-3 sm:mb-9 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-primary sm:text-[11px] sm:tracking-[0.22em]">{dict.shared.productFamilies}</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-primary sm:text-[11px] sm:tracking-[0.22em]">{c.productFamilies}</p>
               <h2 className="mt-2 font-eurostile text-[1.8rem] font-bold leading-tight tracking-[-0.03em] text-ink sm:text-4xl">
-                {dict.shared.productRange}
+                {c.productRange}
               </h2>
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
@@ -283,7 +289,7 @@ export function ProductDetailPage({
                     {formatModelNumber(index)}
                   </span>
                   <span className="absolute right-2.5 top-2.5 rounded-full bg-sand-100/90 px-2 py-1 text-[7px] font-black uppercase tracking-[0.12em] text-primary ring-1 ring-ink/[0.06] sm:right-3 sm:top-3 sm:px-2.5 sm:text-[8px] sm:tracking-[0.14em]">
-                    {dict.shared.productFamily}
+                    {c.productFamily}
                   </span>
                 </ProductStandardMedia>
                 <div className="flex min-h-0 flex-1 flex-col pt-3.5 sm:pt-4">
@@ -301,7 +307,7 @@ export function ProductDetailPage({
                   </p>
                   <div className="mt-auto pt-5">
                     <div className="flex items-center justify-between border-t border-ink/10 pt-3">
-                      <span className="text-[9px] font-bold uppercase tracking-[0.16em] text-secondary/45 sm:text-[10px] sm:tracking-[0.18em]">{dict.shared.inspect}</span>
+                      <span className="text-[9px] font-bold uppercase tracking-[0.16em] text-secondary/45 sm:text-[10px] sm:tracking-[0.18em]">{c.inspect}</span>
                       <Image
                         src="/images/novves-logo.svg"
                         alt="Novves"
@@ -326,12 +332,12 @@ export function ProductDetailPage({
             <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
             <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
-                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-primary sm:text-[11px] sm:tracking-[0.22em]">{dict.shared.technicalSupport}</p>
+                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-primary sm:text-[11px] sm:tracking-[0.22em]">{c.technicalSupport}</p>
                 <h3 className="mt-3 font-eurostile text-[1.85rem] font-bold leading-tight tracking-[-0.03em] text-white sm:text-4xl">
-                  {dict.shared.lookingForProduct}
+                  {c.lookingForProduct}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/64 sm:text-base">
-                  {dict.shared.teamReady}
+                  {c.teamReady}
                 </p>
               </div>
               <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
@@ -339,7 +345,7 @@ export function ProductDetailPage({
                   href={`/${locale}/iletisim`}
                   className="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white shadow-[0_18px_46px_-20px_rgba(239,95,23,0.8)] transition hover:bg-primary-deep sm:px-6 sm:py-3.5"
                 >
-                  {dict.shared.technicalSupportRequest}
+                  {c.technicalSupportRequest}
                 </Link>
                 <Link
                   href={categoryHref}

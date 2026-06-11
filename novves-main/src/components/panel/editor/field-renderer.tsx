@@ -8,6 +8,7 @@ import { Textarea } from "../ui/textarea";
 import { Switch } from "../ui/switch";
 import { IconField } from "../fields/icon-field";
 import { ImageField } from "../fields/image-field";
+import { FileField } from "../fields/file-field";
 
 // ── İçerik-sözleşmesi alan tespiti (AutoForm ile aynı kurallar) ──────────────
 const IMAGE_KEY = /(image|img|logo|poster|photo|cover|thumbnail|favicon|gorsel|resim|avatar)/i;
@@ -193,8 +194,15 @@ function SmartField({
       if (imgK) pairedImageKeys.add(imgK);
     }
 
+    // documents/catalogs/guides[] içindeki dosya bağlantısı → belge yükleme alanı.
+    const isDocFileField = (key: string) =>
+      /^(documents|catalogs|guides)$/.test(fieldKey) && /^(href|url|file)$/i.test(key);
+
     const entries = Object.entries(obj).filter(([key, value]) => {
-      if (path === "" && hideKeys.has(key)) return false; // section kökünde gizlenen (ölü) alanlar
+      const fullPath = path ? `${path}.${key}` : key;
+      // Gizlenen (ölü) alanlar — kök anahtar ("badge") veya nested yol ("library.sidebar")
+      if (hideKeys.has(fullPath)) return false;
+      if (isDocFileField(key)) return true; // belge yükleme alanı — gizleme/sade-mod kurallarını atla
       if (!showAll && shouldHideInSimpleMode(key)) return false;
       if (!showAll && A11Y_TEXT_KEY.test(key)) return false; // alt / aria metinleri
       if (pairedImageKeys.has(key)) return false;
@@ -206,6 +214,18 @@ function SmartField({
       <div className="space-y-4">
         {entries.map(([key, value]) => {
           const fieldPath = path ? `${path}.${key}` : key;
+
+          if (isDocFileField(key) && (typeof value === "string" || value == null)) {
+            return (
+              <div key={key}>
+                <label className="mb-1.5 block text-[13px] font-medium text-panel-fg">Belge dosyası</label>
+                <FileField
+                  value={typeof value === "string" ? value : ""}
+                  onChange={(v) => onChange(fieldPath, v)}
+                />
+              </div>
+            );
+          }
 
           if (isIconKey(key) && (typeof value === "string" || value == null)) {
             const imgK = allKeys.find((x) => x.toLowerCase() === imageKeyFor(key).toLowerCase());

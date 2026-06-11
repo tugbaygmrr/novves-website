@@ -1,0 +1,324 @@
+{
+  "blog": {
+    "meta": {
+      "title": "Műszaki cikkek | Novves",
+      "description": "NOVVES műszaki cikkek - szabályozási változások, ágazati műszaki tanulmányok."
+    },
+    "breadcrumb": {
+      "home": "Főoldal",
+      "technicalCenter": "Műszaki központ",
+      "current": "Műszaki cikkek"
+    },
+    "hero": {
+      "badge": "Műszaki központ",
+      "titlePart1": "Műszaki",
+      "titleHighlight": "cikkek",
+      "subtitle": "Szabályozási változások, ágazati műszaki tanulmányok és alkalmazási útmutatók."
+    },
+    "comingSoon": {
+      "title": "Hamarosan",
+      "text": "A műszaki cikkek szekció tartalma készülőben van. A szabályozási változásokat és az ágazati műszaki tanulmányokat hamarosan itt tesszük közzé."
+    },
+    "topicAreas": {
+      "sectionLabel": "Témakörök",
+      "title": "Tartalmi területek",
+      "items": [
+        {
+          "title": "Szabályozási változások",
+          "description": "Aktuális változások a szellőztetési és tűzvédelmi szabályozásokban"
+        },
+        {
+          "title": "Ágazati műszaki tanulmányok",
+          "description": "Elmélyült cikkek a szellőztetéstechnikáról és a HVAC területéről"
+        },
+        {
+          "title": "Alkalmazási útmutatók",
+          "description": "Gyakorlati útmutatók a projekttervezéstől az üzembe helyezésig"
+        }
+      ],
+      "comingSoonLabel": "Hamarosan"
+    },
+    "cta": {
+      "sectionLabel": "Kapcsolat",
+      "title": "Van egy műszaki kérdése?",
+      "subtitle": "Mérnöki csapatunk a lehető leghamarabb válaszol műszaki kérdéseire.",
+      "contactForm": "Kapcsolatfelvételi űrlap"
+    }
+  },
+  "dokumanKutuphanesi": {
+    "meta": {
+      "title": "Dokumentumtár | Novves",
+      "description": "NOVVES dokumentumtár - katalógusok, műszaki adatlapok és specifikációs lapok."
+    },
+    "breadcrumb": {
+      "home": "Főoldal",
+      "technicalCenter": "Műszaki központ",
+      "current": "Dokumentumtár"
+    },
+    "hero": {
+      "badge": "Műszaki központ",
+      "titlePart1": "Dokumentum-",
+      "titleHighlight": "tár",
+      "subtitle": "Katalógusok, műszaki adatlapok és specifikációs lapok."
+    },
+    "comingSoon": {
+      "title": "Hamarosan",
+      "text": "A dokumentumtár tartalma készülőben van. A katalógusokat, műszaki adatlapokat és specifikációs lapokat hamarosan itt tesszük közzé."
+    },
+    "documentTypes": {
+      "sectionLabel": "Tartalom",
+      "title": "Dokumentumtípusok",
+      "items": [
+        {
+          "title": "Katalógusok",
+          "description": "Naprakész NOVVES katalógusok termékcsoportonként"
+        },
+        {
+          "title": "Műszaki adatlapok",
+          "description": "Termékalapú műszaki specifikációk és teljesítménylapok"
+        },
+        {
+          "title": "Adatlapok",
+          "description": "Részletes műszaki adatlapok és teljesítménydiagramok"
+        }
+      ],
+      "comingSoonLabel": "Hamarosan"
+    },
+    "cta": {
+      "sectionLabel": "Kapcsolat",
+      "title": "Műszaki dokumentumra van szüksége?",
+      "subtitle": "Lépjen velünk kapcsolatba a szükséges katalógusért, műszaki adatlapért vagy specifikációs lapért.",
+      "contactForm": "Kapcsolatfelvételi űrlap"
+    },
+    "library": {
+      "brandTitle": "NOVVES MŰSZAKI ARCHÍVUM",
+      "brandSubtitle": "Műszaki archívum",
+      "nav": {
+        "dashboard": "Irányítópult",
+        "inventory": "Leltár",
+        "compliance": "Megfelelőség",
+        "audit": "Audit"
+      },
+      "sidebar": {
+        "libraryName": "Novves könyvtár",
+        "libraryTag": "Műszaki adattár",
+        "uploadAsset": "Eszköz feltöltése",
+        "hierarchy": "Hierarchia",
+        "collapseSidebar": "Oldalsáv összecsukása",
+        "expandSidebar": "Oldalsáv kibontása",
+        "tree": {
+          "documentLibrary": "Dokumentumtár",
+          "catalogs": "Katalógusok",
+          "dataSheets": "Adatlapok",
+          "brochures": "Brosúrák",
+          "usageManuals": "Használati és karbantartási kézikönyvek",
+          "certifications": "Tanúsítványok és megfelelőség",
+          "cadBim": "CAD / BIM / Műszaki rajzok",
+          "training": "Képzési központ",
+          "troubleshooting": "Hibaelhárítás",
+          "testPerformance": "Teszt- és teljesítményadatok",
+          "energyEfficiency": "Energiahatékonyság"
+        }
+      },
+      "searchPlaceholder": "Keresés a műszaki archívumban, CAD-számokra vagy kulcsszavakra…",
+      "searchAllLanguages": "Minden nyelv",
+      "table": {
+        "category": "Kategória (IA)",
+        "documentNo": "Dokumentumszám",
+        "documentName": "Dokumentum neve",
+        "language": "Nyelv",
+        "status": "Állapot",
+        "statusActive": "Aktív",
+        "statusPassive": "Passzív",
+        "statusCritical": "Kritikus",
+        "statusCurrent": "Aktuális",
+        "statusApproved": "Jóváhagyott",
+        "statusVideo": "Videó"
+      },
+      "widgets": {
+        "emergencyTitle": "Sürgősségi hibatámogatás",
+        "emergencyText": "Használja a Hibaelhárítás panelt a kritikus rendszerhibák gyors megoldásához.",
+        "emergencyCta": "Megoldási útmutató megnyitása",
+        "complianceLabel": "Megfelelőségi arány",
+        "complianceValue": "98%",
+        "efficiencyLabel": "Hatékonysági osztály",
+        "efficiencyValue": "A++"
+      },
+      "inspector": {
+        "title": "Eszköz részletei",
+        "previewTag": "ELŐNÉZET",
+        "docSummary": "Dokumentum összefoglalója",
+        "fileFormat": "Formátum",
+        "revision": "Revízió",
+        "lastModified": "Utolsó frissítés",
+        "revisionLogs": "Revíziótörténet",
+        "shareDocument": "Megosztás",
+        "shareLink": "Hivatkozás",
+        "shareWhatsapp": "WhatsApp",
+        "shareEmail": "E-mail",
+        "secureDownload": "Biztonságos letöltés",
+        "secureDownloadNote": "Egyes műszaki dokumentumok engedélyt és jelszót igényelhetnek.",
+        "downloadDocument": "Dokumentum letöltése",
+        "close": "Panel bezárása"
+      },
+      "footer": {
+        "copyright": "© 2024 Novves Industrial Systems. Műszaki dokumentációs részleg.",
+        "privacy": "Adatvédelmi irányelvek",
+        "terms": "Felhasználási feltételek",
+        "security": "Biztonsági audit"
+      },
+      "revisionLogs": {
+        "minorAdjustments": "Apró szövegmódosítások",
+        "minorWhen": "Tegnap 14:20-kor",
+        "initialUpload": "Kezdeti feltöltés",
+        "initialWhen": "2024. okt. 10."
+      },
+      "emptyResults": "Egy dokumentum sem felel meg a keresésnek.",
+      "documents": [
+        {
+          "id": "cat-nv-2024-01",
+          "category": "Katalógusok",
+          "code": "CAT-NV-2024-01",
+          "title": "Fő termékkatalógus v2",
+          "status": "active",
+          "highlight": true,
+          "treeCategory": "Katalógusok"
+        },
+        {
+          "id": "ts-fan-003",
+          "category": "Hibaelhárítás",
+          "code": "TS-FAN-003",
+          "title": "Erős rezgés hibaelhárítási útmutató",
+          "status": "critical",
+          "criticalTitle": true,
+          "treeCategory": "Hibaelhárítás"
+        },
+        {
+          "id": "bim-axl-315",
+          "category": "CAD / BIM",
+          "code": "BIM-AXL-315",
+          "title": "315-ös sorozat 3D Revit modell",
+          "status": "current",
+          "treeCategory": "CAD / BIM / Műszaki rajzok"
+        },
+        {
+          "id": "eff-ec-2024",
+          "category": "Energiahatékonyság",
+          "code": "EFF-EC-2024",
+          "title": "EC motor LCC elemzés",
+          "status": "active",
+          "treeCategory": "Energiahatékonyság"
+        },
+        {
+          "id": "ce-12101-3-2024",
+          "category": "Tanúsítványok",
+          "code": "CE-12101-3-2024",
+          "title": "EN 12101-3 megfelelőségi tanúsítvány",
+          "status": "approved",
+          "treeCategory": "Tanúsítványok és megfelelőség"
+        },
+        {
+          "id": "web-24-05",
+          "category": "Képzési központ",
+          "code": "WEB-24-05",
+          "title": "Szerelési technikák webinárium felvétele",
+          "status": "video",
+          "highlight": true,
+          "treeCategory": "Képzési központ"
+        }
+      ]
+    }
+  },
+  "fanSecici": {
+    "meta": {
+      "title": "Ventilátorválasztó | Novves",
+      "description": "NOVVES online ventilátor- és berendezésválasztó eszközök."
+    },
+    "breadcrumb": {
+      "home": "Főoldal",
+      "technicalCenter": "Műszaki központ",
+      "current": "Ventilátorválasztó"
+    },
+    "hero": {
+      "badge": "Műszaki központ",
+      "titlePart1": "Ventilátor-",
+      "titleHighlight": "választó",
+      "subtitle": "Online ventilátor- és berendezésválasztó eszközök."
+    },
+    "comingSoon": {
+      "title": "Hamarosan",
+      "text": "Az online ventilátor- és berendezésválasztó eszközök fejlesztés alatt állnak. Hamarosan elérhetők lesznek azok az eszközök, amelyek a térfogatáram, a nyomás és az alkalmazás típusa alapján kiválasztják a legmegfelelőbb berendezést."
+    },
+    "toolTypes": {
+      "sectionLabel": "Eszközök",
+      "title": "Tervezett funkciók",
+      "items": [
+        {
+          "title": "Ventilátorválasztó eszköz",
+          "description": "Válassza ki a legmegfelelőbb ventilátormodellt a térfogatáram, a nyomás és az alkalmazás típusa alapján"
+        },
+        {
+          "title": "Berendezések összehasonlítása",
+          "description": "Hasonlítsa össze a különböző modelleket egymás mellett, és válassza ki a projektjéhez legjobban illőt"
+        },
+        {
+          "title": "Teljesítménykalkulátor",
+          "description": "Energiafogyasztás, zajszint és hatékonyság számítása"
+        }
+      ],
+      "comingSoonLabel": "Hamarosan"
+    },
+    "cta": {
+      "sectionLabel": "Kapcsolat",
+      "title": "Segítségre van szüksége a ventilátorválasztáshoz?",
+      "subtitle": "Amíg az eszközök elérhetővé válnak, mérnöki csapatunk segít Önnek a ventilátorválasztásban.",
+      "contactForm": "Kapcsolatfelvételi űrlap"
+    }
+  },
+  "patentlerimiz": {
+    "meta": {
+      "title": "Szabadalmaink | Novves",
+      "description": "NOVVES szabadalmak és bejegyzett technológiák."
+    },
+    "breadcrumb": {
+      "home": "Főoldal",
+      "technicalCenter": "Műszaki központ",
+      "current": "Szabadalmaink"
+    },
+    "hero": {
+      "badge": "Műszaki központ",
+      "titlePart1": "Szabadal-",
+      "titleHighlight": "maink",
+      "subtitle": "Bejegyzett technológiák és innovációs portfóliónk."
+    },
+    "comingSoon": {
+      "title": "Hamarosan",
+      "text": "A szabadalmi portfóliónkról és a bejegyzett technológiáinkról szóló részletes információkat hamarosan itt tesszük közzé."
+    },
+    "patentAreas": {
+      "sectionLabel": "Innováció",
+      "title": "Szabadalmi területek",
+      "items": [
+        {
+          "title": "Ventilátortervezési szabadalmak",
+          "description": "Bejegyzett találmányok egyedi lapátprofilokhoz és háztervekhez"
+        },
+        {
+          "title": "Automatizálási technológiák",
+          "description": "Intelligens ventilátorvezérlési algoritmusok és IoT-integrációs megoldások"
+        },
+        {
+          "title": "Gyártási folyamat szabadalmak",
+          "description": "Innovatív gyártási módszerek és minőségellenőrzési folyamatok"
+        }
+      ],
+      "comingSoonLabel": "Hamarosan"
+    },
+    "cta": {
+      "sectionLabel": "Kapcsolat",
+      "title": "Technológiai együttműködéshez",
+      "subtitle": "Lépjen velünk kapcsolatba szabadalmi és technológiai együttműködési kérésekkel.",
+      "contactForm": "Kapcsolatfelvételi űrlap"
+    }
+  }
+}

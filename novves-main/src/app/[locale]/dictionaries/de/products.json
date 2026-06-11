@@ -85,155 +85,116 @@
       {
         "name": "DRAGONFLY",
         "type": "Rauch- und Wärmeabzugsventilator",
-        "subModels": [
-          "DF T",
-          "DF TS",
-          "DF C",
-          "DF R",
-          "DF RV",
-          "DF TJF",
-          "DF JR",
-          "DF JA",
-          "DF WH",
-          "DF RH"
-        ],
+        "image": "/images/products/dragonfly-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Dragonfly-Serie umfasst Hochtemperatur-Rauch- und Wärmeabzugsventilatoren, die für die sichere Ableitung von Rauch, Hitze, giftigen und erstickenden Gasen im Brandfall entwickelt wurden. Mit Axial-, Radial-, Strahl-, Dach-, Wand-, Abdeckungs- und Zentrifugaloptionen passt es sich an eine Vielzahl von Projektanforderungen an."
       },
       {
         "name": "MARLIN",
         "type": "Axialventilator",
-        "subModels": [
-          "MARLIN",
-          "MARLIN S",
-          "MARLIN B",
-          "MARLIN 2S"
-        ],
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Marlin-Familie umfasst Axialventilatoren, die für Zuluft-, Abluft-, Kanalbelüftungs- und Druckanwendungen entwickelt wurden. Mit einem kompakten Gehäuse, niedrigem Schallpegel, hohem Luftstrom und flexiblen Montagemöglichkeiten liefert es zuverlässige und wirtschaftliche Leistung in der Komfortlüftung, Industrielüftung, Schachtsystemen und Gebäudedruckhaltung."
       },
       {
         "name": "BEAR",
         "type": "ATEX-Ventilator",
-        "subModels": [
-          "BEAR REB EX",
-          "BEAR RVS EX",
-          "BEAR RHS EX",
-          "BEAR T",
-          "BEAR C",
-          "BEAR R",
-          "BEAR W",
-          "BEAR LPF EX",
-          "BEAR TB"
-        ],
+        "image": "/images/products/bear-reb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Bear-Familie umfasst explosionsgeschützte Ventilatoren, die für die sichere Belüftung, Abluft- und Prozessluftabsaugung in Industriebereichen mit explosionsgefährdeter Atmosphäre entwickelt wurden. Mit explosionsgeschützten Motoren, Konstruktionsdetails zur Reduzierung des Funkenrisikos, robusten Gehäusen und Axial-/Radialoptionen eignet es sich für Chemieanlagen, Lackierereien, Aufbereitungsanlagen, Lösungsmittelprozesse und industrielle Abgasanwendungen."
       },
       {
         "name": "NAUTILUS",
         "type": "Industrie-Radialventilator",
-        "subModels": [
-          "NAUTILUS LPF",
-          "NAUTILUS MPF",
-          "NAUTILUS HPF",
-          "NAUTILUS SILENCE"
-        ],
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Nautilus-Familie umfasst industrielle Radialventilatoren für Zuluft, Abluft, Prozessluft und allgemeine Industrielüftung. Mit rückwärtsgekrümmten Laufrädern, direkt gekoppelten Antrieben, kompakter Spiralgeometrie und mehreren Druckklassen ermöglicht es eine effiziente und zuverlässige Förderung in Anwendungen mit niedrigem, mittlerem und hohem Druck und geräuschlosem Betrieb."
       },
       {
         "name": "HUMMINGBIRD",
         "type": "EC-Ventilator",
-        "subModels": [
-          "HUMMINGBIRD DRB EC",
-          "HUMMINGBIRD RRV EC",
-          "HUMMINGBIRD RRH EC",
-          "HUMMINGBIRD CBP EC"
-        ],
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Hummingbird-Familie umfasst Ventilatoren mit EC-Motor, die eine hohe Energieeffizienz, präzise Drehzahlregelung und niedrige Betriebskosten bieten. Für Versorgungs-, Abluft-, Dach-, Kanal-, Stecker-, geräuschlose Zentrifugal-, Wärmerückgewinnungs- und Schutzanwendungen ermöglicht es ein intelligentes Luftstrommanagement mit 0,10-V-Steuerung, Geschwindigkeitsschaltern, Differenzdrucksensoren und BMS-Integration."
       },
       {
         "name": "HERON",
         "type": "Dachventilator",
-        "subModels": [
-          "HERON RH",
-          "HERON RHS",
-          "HERON RV",
-          "HERON RVS",
-          "HERON AH",
-          "HERON AV",
-          "HERON H"
-        ],
+        "image": "/images/products/heron-rv.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Heron-Familie umfasst Dachventilatoren, die entwickelt wurden, um die Luftqualität in Innenräumen zu verbessern, kontaminierte Luft abzuleiten und bei Bedarf für Zuluft zu sorgen. Mit radialer horizontaler/vertikaler Entladung, Motoren außerhalb des Luftstroms, axialen und überdachten Dachmodellen dient es Gewerbegebäuden, Industrieanlagen, Technikräumen, Schächten und Dachinstallationen."
       },
       {
         "name": "OWL",
         "type": "Wandventilator",
-        "subModels": [
-          "OWL RER",
-          "OWL R",
-          "OWL H"
-        ],
+        "image": "/images/products/owl-rer.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Owl-Familie umfasst wandmontierte Axialventilatoren zur Absaugung verunreinigter, warmer, feuchter oder verbrauchter Raumluft in großvolumigen Räumen. Mit quadratischen oder runden Rahmen, kompakten Gehäusen, geringem Schallpegel und hohem Luftstrom ist es eine praktische Lösung für Lager, Hangars, Fabriken, Werkstätten, Technikräume und große Industriehallen."
       },
       {
         "name": "SEAHORSE",
         "type": "Badlüfter",
-        "subModels": [
-          "SEAHORSE AP",
-          "SEAHORSE RP V1",
-          "SEAHORSE RP V2"
-        ],
+        "image": "/images/products/banyo-fan-1.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Seahorse-Familie umfasst Abluftventilatoren aus Kunststoff für Badezimmer, WCs, Keller und ähnliche kleine bis mittelgroße Räume zur Entfernung von Gerüchen, Dämpfen, Feuchtigkeit und verbrauchter Luft. Mit axialen und radialen Optionen, ABS-Gehäusen, geringem Geräuschpegel, leicht zu reinigenden Frontplatten und optionaler Zeitverzögerungssteuerung eignet es sich für Wohn-, Hotel-, Büro- und Gewerberäume."
       },
       {
         "name": "KOI",
         "type": "Kanalventilator",
-        "subModels": [
-          "KOI CB",
-          "KOI RB",
-          "KOI REB",
-          "KOI X"
-        ],
+        "image": "/images/products/koi-cb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Koi-Familie umfasst kompakte Rohrventilatoren für geringe bis mittlere Zu-, Abluft- und Kanalbelüftungsanforderungen. Mit runden, rechteckigen Motoren, Motoren außerhalb des Luftstroms, Mischstrom- und axialen Kunststoffoptionen ermöglicht es einen praktischen, leisen und wirtschaftlichen Transfer in Häusern, Gewerbegebäuden, Technikräumen, Kellern, Werkstätten und kleinen bis mittleren Installationen."
       },
       {
         "name": "TURTLE",
         "type": "Kammer-/Plenum-Ventilator",
-        "subModels": [
-          "TURTLE B",
-          "TURTLE BPA",
-          "TURTLE F",
-          "TURTLE BP",
-          "TURTLE A"
-        ],
+        "image": "/images/products/turtle-a.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Turtle-Familie umfasst doppelwandige, isolierte Plenumventilatoren für Zu- und Abluftanwendungen. Mit Schallschutzgehäusen, Zugangstüren, Optionen für Riemenantrieb oder Steckermotor und mehreren Laufradtypen sorgt es für leisen, langlebigen Betrieb in Technikräumen, Technikräumen, Gewerbegebäuden und industrieller Lüftung."
       },
       {
         "name": "BUTTERFLY",
         "type": "Küchenabluftventilator",
-        "subModels": [
-          "BUTTERFLY ECO",
-          "BUTTERFLY ECO HR"
-        ],
+        "image": "/images/products/butterfly-b.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Butterfly-Familie umfasst Küchenabluftventilatoren und umweltfreundliche Geräte für die sichere, gefilterte und kontrollierte Ableitung heißer, fettiger, rauchiger und geruchsintensiver Luft in Großküchen. Mit Motoren außerhalb des Luftstroms, doppelwandigen isolierten Gehäusen, Fettfiltern, Zugangstüren und VFD-fähigem Design bedient es Restaurants, Hotels, Einkaufszentren, Catering- und Produktionsküchen."
       },
       {
         "name": "FOX",
         "type": "Schutzraum-Ventilator",
-        "subModels": [
-          "FOX D",
-          "FOX C"
-        ],
+        "image": "/images/products/fox-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "Die Fox-Familie umfasst Lüftungsventilatoren für Notunterkünfte, die gefilterte Außenluft in Notunterkünfte und geschützte Räume liefern. Mit den Optionen G4, Aktivkohle, HEPA/Kernstaub und Bypass-Dämpfer unterstützt es normale Belüftung und CBRN-Bedrohungsszenarien mit kontrollierter Luftzufuhr."
       },
       {
         "name": "CHICKEN",
         "type": "Landwirtschaftslüfter",
-        "comingSoon": true,
-        "description": "Die Chicken-Serie umfasst hocheffiziente Geflügelventilatoren, die für die Aufrechterhaltung einer sensiblen Luftqualität in geschlossenen Geflügelställen konzipiert sind. Wie Vögel, die empfindlich auf Temperatur, Feuchtigkeit und Ammoniak reagieren, halten diese Ventilatoren die Luft frisch, unterstützen die Temperaturkontrolle und helfen, die Gesundheit und Produktivität der Herde zu schützen."
+        "image": "/images/products/chicken.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Die Chicken-Serie umfasst hocheffiziente Geflügelventilatoren, die für die Aufrechterhaltung einer sensiblen Luftqualität in geschlossenen Geflügelställen konzipiert sind. Wie Vögel, die empfindlich auf Temperatur, Feuchtigkeit und Ammoniak reagieren, halten diese Ventilatoren die Luft frisch, unterstützen die Temperaturkontrolle und helfen, die Gesundheit und Produktivität der Herde zu schützen.",
+        "comingSoon": true
       },
       {
         "name": "ELEPHANT",
         "type": "Entstaubung",
-        "comingSoon": true,
-        "description": "Die Elephant-Serie, inspiriert von der Kraft und der feinen Wahrnehmung des Tieres, sammelt Staub und Partikel in Bereichen mit hoher Produktion und hoher Absaugleistung. Mit einem robusten Gehäuse, einer stabilen Absaugung und einer langlebigen Konstruktion bietet es ein kontrolliertes Hochleistungs-Luftmanagement für gesündere und effizientere Arbeitsplätze."
+        "image": "/images/products/elephant.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Die Elephant-Serie, inspiriert von der Kraft und der feinen Wahrnehmung des Tieres, sammelt Staub und Partikel in Bereichen mit hoher Produktion und hoher Absaugleistung. Mit einem robusten Gehäuse, einer stabilen Absaugung und einer langlebigen Konstruktion bietet es ein kontrolliertes Hochleistungs-Luftmanagement für gesündere und effizientere Arbeitsplätze.",
+        "comingSoon": true
       }
     ],
     "otherCategories": [
@@ -270,7 +231,31 @@
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
-    "ctaDesc": "Kontaktieren Sie unser Engineering-Team, um aus über 1.200 Produktvarianten die passende Lösung für Ihr Projekt zu finden."
+    "ctaDesc": "Kontaktieren Sie unser Engineering-Team, um aus über 1.200 Produktvarianten die passende Lösung für Ihr Projekt zu finden.",
+    "catalogs": [
+      {
+        "title": "Lufttechnik Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
   },
   "iklimlendirme": {
     "title": "Klima/Lüftung",
@@ -285,42 +270,23 @@
     "tiger": {
       "label": "Klima-/Lüftungszentrale",
       "desc": "Modular aufgebaute Zuluftzentrale mit hocheffizienten Bauteilen und leisem Betrieb im Luftbereich 500 bis 125.000 m³/h.",
-      "specs": [
-        {
-          "label": "Luftmenge",
-          "value": "500–125K m³/h"
-        },
-        {
-          "label": "Druck",
-          "value": "10–3.000 Pa"
-        },
-        {
-          "label": "Gehäuse",
-          "value": "Anodisiertes Aluminium"
-        }
-      ]
+      "image": "/images/products/tiger-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "dolphin": {
       "label": "Hallenschwimmbad-Entfeuchtung",
       "desc": "Schützt die Bausubstanz in überdachten Pools und erhöht den Komfort für Nutzer. Hohe Energieeffizienz, langlebige Bauweise und leiser Lauf.",
-      "specs": [
-        {
-          "label": "Leistungsstufen",
-          "value": "6 Modelle"
-        },
-        {
-          "label": "Luftmenge",
-          "value": "3.000–9.000 m³/h"
-        },
-        {
-          "label": "Fläche Schwimmbecken",
-          "value": "50–250 m²"
-        }
-      ]
+      "image": "/images/products/dolphin-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "caracal": {
       "label": "Wärmerückgewinnung",
-      "desc": "Gebündelte Lüftung und Raumluftführung für Frischluftbedarf und bessere Luftqualität in Büros, Schulen, Hotels, Krankenhäusern und Sozialbereichen."
+      "desc": "Gebündelte Lüftung und Raumluftführung für Frischluftbedarf und bessere Luftqualität in Büros, Schulen, Hotels, Krankenhäusern und Sozialbereichen.",
+      "image": "/images/products/caracal.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "ctaDesc": "Unser technisches Team berät Sie zur passenden Klimalösung.",
     "otherCategories": [
@@ -356,6 +322,30 @@
         "label": "Schwingungs- und Schallschutz",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Klima/Lüftung Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "sogutmaVeIsitma": {
@@ -369,27 +359,30 @@
       {
         "name": "CHILLER (Eisbär)",
         "type": "Kältemodul",
-        "subModels": []
+        "image": "/images/products/chiller.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "AUSSENGERÄTE",
         "type": "Kältemodul",
-        "subModels": []
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "ELEKTRISCHE HEIZUNGEN",
         "type": "Elektroheizung",
-        "subModels": [
-          "EH (eckig)",
-          "EHC (rund)"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "WASSERSPULE",
         "type": "Register",
-        "subModels": [
-          "WC"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       }
     ],
     "otherCategories": [
@@ -425,6 +418,30 @@
         "label": "Schwingungs- und Schallschutz",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Kühlung & Heizung Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaYonetimi": {
@@ -435,19 +452,9 @@
     "hound": {
       "label": "Luftklappe",
       "desc": "Klappenprogramm für maximalen Regelkomfort und Sicherheit an den kritischen Punkten von Lüftungs- und Brandschutzinstallationen.",
-      "subModels": [
-        "MSD",
-        "MSFD-R",
-        "MSFD-B",
-        "SFD-B",
-        "SFD-R",
-        "RSFD-B",
-        "RSFD-Drain-B",
-        "FFD",
-        "MFD",
-        "RD",
-        "GS"
-      ]
+      "image": "/images/products/hound-al.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -481,6 +488,30 @@
       {
         "label": "Schwingungs- und Schallschutz",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Luftführung Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -492,29 +523,9 @@
     "alpaca": {
       "label": "Gitter, Luftauslässe usw.",
       "desc": "verschiedene Modelle für maßgeschneiderte Luftverteilung.",
-      "subModels": [
-        "ALPACA-GL-SD",
-        "ALPACA-GL-DD",
-        "ALPACA-GL-RA",
-        "ALPACA-GL-PRF",
-        "ALPACA-GL-OB",
-        "ALPACA-DF-SQ",
-        "ALPACA-DF-CR",
-        "ALPACA-DF-LS",
-        "ALPACA-DF-JET",
-        "ALPACA-DF-ADJ",
-        "ALPACA-LV-FX",
-        "ALPACA-LV-ADJ",
-        "ALPACA-LV-WP",
-        "ALPACA-LV-AC",
-        "ALPACA-AM-SQ",
-        "ALPACA-AM-CR",
-        "ALPACA-AM-ADJ",
-        "ALPACA-SP-FR",
-        "ALPACA-SP-DEC",
-        "ALPACA-SP-AC",
-        "ALPACA-SP-JET"
-      ]
+      "image": "/images/products/alpaca-am.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -549,6 +560,30 @@
         "label": "Schwingungs- und Schallschutz",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Luftverteilung Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaFiltrasyonu": {
@@ -559,17 +594,9 @@
     "scallop": {
       "label": "Filterserien",
       "desc": "verschiedene Filtermodelle für projektbezogene Filtrationsbedürfnisse.",
-      "subModels": [
-        "SCALLOP PF",
-        "SCALLOP MF",
-        "SCALLOP GF",
-        "SCALLOP ABF",
-        "SCALLOP CF",
-        "SCALLOP BF",
-        "SCALLOP HP",
-        "SCALLOP UF",
-        "SCALLOP FF"
-      ]
+      "image": "/images/products/cyclone.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -603,6 +630,30 @@
       {
         "label": "Schwingungs- und Schallschutz",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Luftfiltration Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -802,6 +853,30 @@
         "label": "Schwingungs- und Schallschutz",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Zubehör Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "otomasyonMalzemeleri": {
@@ -811,41 +886,35 @@
     "products": [
       {
         "name": "PANEL",
-        "subModels": [],
         "image": "/images/products/otomasyon-pano.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "HAWK-Automatisierungspanels sind darauf ausgelegt, Ventilatorsysteme, HVAC-Einheiten und Infrastrukturelemente von einem einzigen Zentrum aus mit zuverlässiger, stabiler und intelligenter Steuerung zu verwalten. Schnelle Reaktion, präzise Überwachung und fortschrittliche Steuerungsarchitektur halten das System auch in komplexen Szenarien stabil. Mit Energiemanagement, Sicherheitsintegration, Präzisionssteuerung und Fernüberwachung verleiht HAWK dem Projekt eine souveräne Kontrolle."
       },
       {
         "name": "PLC",
-        "subModels": [],
-        "image": "/images/products/otomasyon-plc.png"
+        "image": "/images/products/otomasyon-plc.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "SENSOR",
-        "subModels": [
-          "FCP-DSC",
-          "FCP-DCS",
-          "TECASE-ST110"
-        ],
-        "image": "/images/products/otomasyon-sensor.png?v=7"
+        "image": "/images/products/otomasyon-sensor.png?v=7",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "STEUERPLATTEN – SCHALTER",
-        "subModels": [
-          "TP01-TSD",
-          "TP01-CC"
-        ],
-        "image": "/images/products/otomasyon-kontrol-kartlari.png?v=3"
+        "image": "/images/products/otomasyon-kontrol-kartlari.png?v=3",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "Inspiriert von der Kraft, Autorität und kontrollierten Gewaltanwendung des Löwen umfasst die Lion-Serie Leistungselektronik, die elektrische Energie reguliert, verwaltet und optimiert. Wie ein Löwe, der im richtigen Moment Kraft entfaltet, steuert Lion die elektrische Energie intelligent – ​​insbesondere in Frequenzumrichtern und Antrieben. Es wurde für Lüfter, Motoren und HVAC-Systeme entwickelt und bietet präzise Drehzahlregelung, Sanftanlauf, Energieeffizienz und Systemschutz, wodurch die Lebensdauer der Geräte durch zuverlässige, zuverlässige Leistung verlängert wird.",
-        "subModels": [
-          "Wechselrichter",
-          "BLDC-Antrieb",
-          "MOSFET-Module"
-        ]
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Inspiriert von der Kraft, Autorität und kontrollierten Gewaltanwendung des Löwen umfasst die Lion-Serie Leistungselektronik, die elektrische Energie reguliert, verwaltet und optimiert. Wie ein Löwe, der im richtigen Moment Kraft entfaltet, steuert Lion die elektrische Energie intelligent – ​​insbesondere in Frequenzumrichtern und Antrieben. Es wurde für Lüfter, Motoren und HVAC-Systeme entwickelt und bietet präzise Drehzahlregelung, Sanftanlauf, Energieeffizienz und Systemschutz, wodurch die Lebensdauer der Geräte durch zuverlässige, zuverlässige Leistung verlängert wird."
       }
     ],
     "otherCategories": [
@@ -881,6 +950,30 @@
         "label": "Schwingungs- und Schallschutz",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Automatisierung Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "titresimVeSesIzolasyon": {
@@ -891,17 +984,9 @@
     "roo": {
       "label": "Schalldämpfer, Gummipuffer, Schwingungsisolierung",
       "desc": "verschiedene Modelle für schall- und vibrationsarme Aufstellung.",
-      "subModels": [
-        "ROO T1-ISO10N-NIP",
-        "ROO T1-ISO15N-100kg-NIP",
-        "ROO T2-ISO20N-FIP",
-        "ROO T2-ISO30N-150kg-FIP",
-        "ROO T3-ISO5Hz-200kg-OSI",
-        "ROO T3-ISO10Hz-300kg-OSI",
-        "ROO T4-ISOComb-100kg-5Hz-HSI",
-        "ROO T4-ISO100kg-10Hz-HSI",
-        "ROO T4-ISO500kg-10Hz-HSI"
-      ]
+      "image": "/images/products/yayli-titresim-izolatoru.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -936,6 +1021,30 @@
         "label": "Automatisierung",
         "slug": "otomasyon-malzemeleri"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Schwingungs- und Schallschutz Produktkatalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES Gesamtproduktkatalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Montage- und Wartungshandbuch",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technische Datenblätter",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "banyoFanlari": {
@@ -961,7 +1070,26 @@
         "image": "/images/products/banyo-fan-3.jpg",
         "description": "RP V2: große Blendfront, moderner Auftritt und starke Luftleistung, wenn Design und Funktion gleichwertig gefordert sind."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "catiFanlari": {
     "title": "HERON",
@@ -1004,7 +1132,26 @@
         "image": "/images/products/free.jpg",
         "description": "Axialer Dachventilator mit Wetterschutzhaube."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "damperler": {
     "title": "HOUND",
@@ -1029,7 +1176,26 @@
         "image": "/images/products/hound-crd.jpg",
         "description": "Druckentlastung bei Überdruck zum Schutz der Anlagenbauteile."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
@@ -1072,7 +1238,26 @@
         "image": "/images/products/dragonfly-jr.jpg",
         "description": "Für anspruchsvolle Volumina: Tiefgaragen, Tunnel, Brandzonen – Notlüftung und Rauchabzug. EN 12101-3."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
@@ -1091,7 +1276,26 @@
         "image": "/images/products/owl-rwa.jpg",
         "description": "Tragflügel-Schaufeln für rechteckige Wandinstallation."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
@@ -1110,7 +1314,26 @@
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "description": "Rechteckiger Kanaltyp mit EC-Motor – kompakt, leise, automatisierungstauglich."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
@@ -1129,7 +1352,26 @@
         "image": "/images/products/nautilus-cif-cidarli.jpg",
         "description": "NAUTILUS Silence: gedämmtes Gehäuse, Direktantrieb und hohe Wirksamkeit bei niedrigem Druckbedarf."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "exproofFanlar": {
     "title": "BEAR",
@@ -1190,7 +1432,26 @@
         "image": "/images/products/bear-w.jpg",
         "description": "Flammensicher gekapselt nach ATEX, hohe Leistung."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
@@ -1290,7 +1551,26 @@
         "image": "/images/products/turtle-a.jpg",
         "description": "Kompakter Axialeinsatz bei großen Luftmengen."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
@@ -1300,6 +1580,25 @@
       "title": "Caracal D",
       "type": "WRG-Gerät",
       "description": "Caracal D WRG kompakt, leistungsfähig, mit robuster Bauweise und klar bedienbarem Paneel für nachhaltige Raumlüftung."
+    },
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
     }
   },
   "kanalFanlari": {
@@ -1331,7 +1630,26 @@
         "image": "/images/products/koi-x.jpg",
         "description": "KOI-X: Diagonalrad für Komfortbereiche mit Zwei-Stufen-Motor möglich."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "klimaSantralleri": {
     "title": "TIGER",
@@ -1381,7 +1699,26 @@
         "image": "/images/products/marlin-b.jpg",
         "description": "Bifurkations-Axo mit geteiltem Gehäuse."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
@@ -1394,7 +1731,26 @@
         "image": "/images/products/butterfly-b.jpg",
         "description": "Butterfly B für Dampf, Fett und Geruch in Großküchen; starke Metallfilterung, laufruhig."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   },
   "siginakFanlari": {
     "title": "FOX",
@@ -1413,6 +1769,25 @@
         "image": "/images/products/fox-c.png",
         "description": "Fox C gehäusetyp mit leisen und filtreintensivem Betrieb bei hohem Sicherheitsniveau."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Start",
+      "products": "Produkte",
+      "productFamily": "Produktfamilie",
+      "certified": "Zertifiziert",
+      "productRange": "Produktpalette",
+      "technicalSupport": "Technischer Support",
+      "model": "Modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Technische Supportanfrage",
+      "allProducts": "Alle Produkte",
+      "mostPreferred": "Besonders gefragt",
+      "detailedView": "Details anzeigen",
+      "productFamilies": "Produktfamilien",
+      "inspect": "Entdecken",
+      "lookingForProduct": "Suchen Sie das passende Produkt für Ihr Projekt?",
+      "teamReady": "Unser technisches Team findet gemeinsam mit Ihnen die passende Lösung.",
+      "allSolutions": "Alle Lösungen ansehen"
+    }
   }
 }

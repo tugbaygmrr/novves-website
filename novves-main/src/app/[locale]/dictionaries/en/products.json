@@ -85,152 +85,113 @@
       {
         "name": "DRAGONFLY",
         "type": "Smoke & Heat Extraction Fan",
-        "subModels": [
-          "DF T",
-          "DF TS",
-          "DF C",
-          "DF R",
-          "DF RV",
-          "DF TJF",
-          "DF JR",
-          "DF JA",
-          "DF WH",
-          "DF RH"
-        ],
+        "image": "/images/products/dragonfly-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Dragonfly series comprises high-temperature smoke and heat exhaust fans developed to safely evacuate smoke, heat, toxic and asphyxiating gases during a fire. With axial, radial, jet, roof, wall, covered and centrifugal options, it adapts to a wide range of project requirements."
       },
       {
         "name": "MARLIN",
         "type": "Axial Fan",
-        "subModels": [
-          "MARLIN",
-          "MARLIN S",
-          "MARLIN B",
-          "MARLIN 2S"
-        ],
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Marlin family comprises axial fans developed for supply air, exhaust air, duct ventilation and pressurisation applications. With a compact casing, low sound level, high airflow and flexible mounting options, it delivers reliable, economical performance in comfort ventilation, industrial ventilation, shaft systems and building pressurisation."
       },
       {
         "name": "BEAR",
         "type": "ATEX Fan",
-        "subModels": [
-          "BEAR REB EX",
-          "BEAR RVS EX",
-          "BEAR RHS EX",
-          "BEAR T",
-          "BEAR C",
-          "BEAR R",
-          "BEAR W",
-          "BEAR LPF EX",
-          "BEAR TB"
-        ],
+        "image": "/images/products/bear-reb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Bear family comprises Ex-proof fans developed for safe ventilation, exhaust and process air extraction in industrial areas with explosive atmosphere risk. With Ex-proof motors, spark-risk-reducing construction details, robust casings and axial/radial options, it serves chemical plants, paint shops, treatment plants, solvent processes and industrial exhaust applications."
       },
       {
         "name": "NAUTILUS",
         "type": "Industrial Centrifugal Fan",
-        "subModels": [
-          "NAUTILUS LPF",
-          "NAUTILUS MPF",
-          "NAUTILUS HPF",
-          "NAUTILUS SILENCE"
-        ],
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Nautilus family comprises industrial centrifugal fans for supply air, exhaust air, process air and general industrial ventilation. With backward-curved impellers, direct-coupled drives, compact scroll geometry and multiple pressure classes, it enables efficient, reliable transfer in low, medium, high-pressure and silent-duty applications."
       },
       {
         "name": "HUMMINGBIRD",
         "type": "EC Fan",
-        "subModels": [
-          "HUMMINGBIRD DRB EC",
-          "HUMMINGBIRD RRV EC",
-          "HUMMINGBIRD RRH EC",
-          "HUMMINGBIRD CBP EC"
-        ],
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Hummingbird family comprises EC-motor fans delivering high energy efficiency, precise speed control and low operating cost. For supply, exhaust, roof, duct, plug, silent centrifugal, heat recovery and shelter applications, it enables smart airflow management with 0-10 V control, speed switches, differential pressure sensors and BMS integration."
       },
       {
         "name": "HERON",
         "type": "Roof Fan",
-        "subModels": [
-          "HERON RH",
-          "HERON RHS",
-          "HERON RV",
-          "HERON RVS",
-          "HERON AH",
-          "HERON AV",
-          "HERON H"
-        ],
+        "image": "/images/products/heron-rv.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Heron family comprises roof fans developed to improve indoor air quality, exhaust contaminated air and, where required, provide supply air. With radial horizontal/vertical discharge, motors out of the airstream, axial and covered roof models, it serves commercial buildings, industrial facilities, technical rooms, shafts and rooftop installations."
       },
       {
         "name": "OWL",
         "type": "Wall Mounted Fan",
-        "subModels": [
-          "OWL RER",
-          "OWL R",
-          "OWL H"
-        ],
+        "image": "/images/products/owl-rer.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Owl family comprises wall-mounted axial fans for exhausting contaminated, warm, humid or stale indoor air in large-volume spaces. With square or round frames, compact bodies, low sound and high airflow, it is a practical solution for warehouses, hangars, factories, workshops, technical rooms and large industrial halls."
       },
       {
         "name": "SEAHORSE",
         "type": "Bathroom Fan",
-        "subModels": [
-          "SEAHORSE AP",
-          "SEAHORSE RP V1",
-          "SEAHORSE RP V2"
-        ],
+        "image": "/images/products/banyo-fan-1.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Seahorse family comprises plastic exhaust fans for bathrooms, WCs, basements and similar small to medium spaces to remove odour, vapour, humidity and stale air. With axial and radial options, ABS housings, low sound, easy-clean front panels and optional time-delay control, it suits residential, hotel, office and commercial interiors."
       },
       {
         "name": "KOI",
         "type": "Duct Fan",
-        "subModels": [
-          "KOI CB",
-          "KOI RB",
-          "KOI REB",
-          "KOI X"
-        ],
+        "image": "/images/products/koi-cb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Koi family comprises compact duct fans for low to medium supply, exhaust and duct ventilation needs. With round, rectangular, motors out of the airstream, mixed-flow and axial plastic options, it provides practical, quiet, economical transfer in homes, commercial buildings, technical rooms, basements, workshops and small to medium installations."
       },
       {
         "name": "TURTLE",
         "type": "Plenum Fan",
-        "subModels": [
-          "TURTLE B",
-          "TURTLE BPA",
-          "TURTLE F",
-          "TURTLE BP",
-          "TURTLE A"
-        ],
+        "image": "/images/products/turtle-a.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Turtle family comprises double-skinned, insulated plenum fans for supply and exhaust applications. With acoustic casings, access doors, belt-drive or plug motor options and multiple impeller types, it delivers quiet, durable performance in plant rooms, technical spaces, commercial buildings and industrial ventilation."
       },
       {
         "name": "BUTTERFLY",
         "type": "Kitchen Exhaust Fan",
-        "subModels": [
-          "BUTTERFLY ECO",
-          "BUTTERFLY ECO HR"
-        ],
+        "image": "/images/products/butterfly-b.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Butterfly family comprises kitchen exhaust fans and ecological units for safe, filtered, controlled discharge of hot, greasy, smoky and odorous air in commercial kitchens. With motors out of the airstream, double-skinned insulated casings, grease filters, access doors and VFD-ready design, it serves restaurants, hotels, malls, catering and production kitchens."
       },
       {
         "name": "FOX",
         "type": "Shelter Fan",
-        "subModels": [
-          "FOX D",
-          "FOX C"
-        ],
+        "image": "/images/products/fox-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Fox family comprises shelter ventilation fans to deliver filtered outdoor air into shelters and protected spaces. With G4, activated carbon, HEPA/nuclear particulate and bypass damper options, it supports normal ventilation and CBRN threat scenarios with controlled air supply."
       },
       {
         "name": "CHICKEN",
         "type": "Poultry Fan",
+        "image": "/images/products/chicken.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Chicken series comprises high-efficiency poultry fans designed to maintain sensitive air quality in enclosed poultry houses. Like birds sensitive to temperature, humidity and ammonia, these fans keep air fresh, support temperature control and help protect flock health and productivity."
       },
       {
         "name": "ELEPHANT",
         "type": "Dust Collection",
+        "image": "/images/products/elephant.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "The Elephant series, inspired by the animal's strength and fine perception, collects dust and particulates in high-production areas with high exhaust capacity. With a robust body, stable suction and durable construction, it delivers controlled heavy-duty air management for healthier, more efficient workplaces."
       }
     ],
@@ -268,7 +229,31 @@
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
-    "ctaDesc": "Contact our expert engineering team to find the most suitable solution for your project from over 1,200+ product varieties."
+    "ctaDesc": "Contact our expert engineering team to find the most suitable solution for your project from over 1,200+ product varieties.",
+    "catalogs": [
+      {
+        "title": "Air Movement product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
   },
   "iklimlendirme": {
     "title": "Air Conditioning",
@@ -283,42 +268,23 @@
     "tiger": {
       "label": "Air Handling Unit",
       "desc": "An air handling unit solution featuring modular construction, high energy-efficient components, and quiet operation performance in the 500 – 125,000 m³/h airflow range.",
-      "specs": [
-        {
-          "label": "Airflow",
-          "value": "500–125K m³/h"
-        },
-        {
-          "label": "Pressure",
-          "value": "10–3,000 Pa"
-        },
-        {
-          "label": "Chassis",
-          "value": "Anodized Aluminum"
-        }
-      ]
+      "image": "/images/products/tiger-pre.png",
+      "specFlow": "500–125K m³/h",
+      "specPressure": "10–3,000 Pa"
     },
     "dolphin": {
       "label": "Pool Dehumidification Unit",
       "desc": "Prevents moisture damage to building structures in indoor pools while maximizing user comfort. Stands out with its high energy efficiency, long-lasting construction, and quiet operation.",
-      "specs": [
-        {
-          "label": "Capacity",
-          "value": "6 Models"
-        },
-        {
-          "label": "Airflow",
-          "value": "3,000–9,000 m³/h"
-        },
-        {
-          "label": "Pool Area",
-          "value": "50–250 m²"
-        }
-      ]
+      "image": "/images/products/dolphin-pre.png",
+      "specFlow": "3,000–9,000 m³/h",
+      "specPressure": "6 Models"
     },
     "caracal": {
       "label": "Heat Recovery",
-      "desc": "Provides controlled air conditioning to meet fresh air requirements and improve existing air quality in offices, schools, hotels, hospitals, and social spaces."
+      "desc": "Provides controlled air conditioning to meet fresh air requirements and improve existing air quality in offices, schools, hotels, hospitals, and social spaces.",
+      "image": "/images/products/caracal.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "ctaDesc": "Our technical team is ready to provide you with the most suitable air conditioning solution.",
     "otherCategories": [
@@ -354,6 +320,30 @@
         "label": "Vibration & Sound Insulation",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Air Conditioning product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "sogutmaVeIsitma": {
@@ -367,27 +357,30 @@
       {
         "name": "CHILLER (Polar Bear)",
         "type": "Cooling Unit",
-        "subModels": []
+        "image": "/images/products/chiller.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "OUTDOOR UNITS",
         "type": "Cooling Unit",
-        "subModels": []
+        "image": "/images/products/chiller.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "ELECTRIC HEATERS",
         "type": "Electric Heater",
-        "subModels": [
-          "EH (Rectangular)",
-          "EHC (Cylindrical)"
-        ]
+        "image": "/images/products/elektrikli-isitici.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "WATER COIL",
         "type": "Coil",
-        "subModels": [
-          "WC"
-        ]
+        "image": "/images/products/elektrikli-isitici.png",
+        "specFlow": "",
+        "specPressure": ""
       }
     ],
     "otherCategories": [
@@ -423,6 +416,30 @@
         "label": "Vibration & Sound Insulation",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Cooling & Heating product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaYonetimi": {
@@ -433,19 +450,9 @@
     "hound": {
       "label": "Air Damper",
       "desc": "A damper series designed to provide maximum control and safety at the most critical points of ventilation and fire safety systems.",
-      "subModels": [
-        "MSD",
-        "MSFD-R",
-        "MSFD-B",
-        "SFD-B",
-        "SFD-R",
-        "RSFD-B",
-        "RSFD-Drain-B",
-        "FFD",
-        "MFD",
-        "RD",
-        "GS"
-      ]
+      "image": "/images/products/hound-al.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -479,6 +486,30 @@
       {
         "label": "Vibration & Sound Insulation",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Air Management product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -490,29 +521,9 @@
     "alpaca": {
       "label": "Grilles, Diffusers, etc.",
       "desc": "different models with tailored solutions for all air distribution needs.",
-      "subModels": [
-        "ALPACA-GL-SD",
-        "ALPACA-GL-DD",
-        "ALPACA-GL-RA",
-        "ALPACA-GL-PRF",
-        "ALPACA-GL-OB",
-        "ALPACA-DF-SQ",
-        "ALPACA-DF-CR",
-        "ALPACA-DF-LS",
-        "ALPACA-DF-JET",
-        "ALPACA-DF-ADJ",
-        "ALPACA-LV-FX",
-        "ALPACA-LV-ADJ",
-        "ALPACA-LV-WP",
-        "ALPACA-LV-AC",
-        "ALPACA-AM-SQ",
-        "ALPACA-AM-CR",
-        "ALPACA-AM-ADJ",
-        "ALPACA-SP-FR",
-        "ALPACA-SP-DEC",
-        "ALPACA-SP-AC",
-        "ALPACA-SP-JET"
-      ]
+      "image": "/images/products/alpaca-am.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -547,6 +558,30 @@
         "label": "Vibration & Sound Insulation",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Air Distribution product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaFiltrasyonu": {
@@ -557,17 +592,9 @@
     "scallop": {
       "label": "Filter Series",
       "desc": "different filter models with tailored solutions for all air filtration needs.",
-      "subModels": [
-        "SCALLOP PF",
-        "SCALLOP MF",
-        "SCALLOP GF",
-        "SCALLOP ABF",
-        "SCALLOP CF",
-        "SCALLOP BF",
-        "SCALLOP HP",
-        "SCALLOP UF",
-        "SCALLOP FF"
-      ]
+      "image": "/images/products/cyclone.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -601,6 +628,30 @@
       {
         "label": "Vibration & Sound Insulation",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Air Filtration product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -800,6 +851,30 @@
         "label": "Vibration & Sound Insulation",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Accessories product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "otomasyonMalzemeleri": {
@@ -810,40 +885,34 @@
       {
         "name": "HAWK",
         "image": "/images/products/otomasyon-pano.png",
-        "subModels": [],
+        "specFlow": "",
+        "specPressure": "",
         "description": "HAWK automation panels are designed to manage fan systems, HVAC units and infrastructure elements from a single centre with reliable, stable and intelligent control. Fast response, precise monitoring and advanced control architecture keep the system stable even in complex scenarios. With energy management, safety integration, precision control and remote monitoring, HAWK adds commanding oversight to the project."
       },
       {
         "name": "PLC",
         "image": "/images/products/otomasyon-plc.png",
-        "subModels": []
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "SENSOR",
         "image": "/images/products/otomasyon-sensor.png?v=7",
-        "subModels": [
-          "FCP-DSC",
-          "FCP-DCS",
-          "TECASE-ST110"
-        ]
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "CONTROL BOARDS - SWITCHES",
         "image": "/images/products/otomasyon-kontrol-kartlari.png?v=3",
-        "subModels": [
-          "TP01-TSD",
-          "TP01-CC"
-        ]
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "Inspired by the lion's power, authority and controlled use of force, the Lion series comprises power electronics that regulate, manage and optimise electrical energy. Like a lion that applies strength at the right moment, Lion controls electrical power intelligently, especially in frequency converters and drives. Developed for fans, motors and HVAC systems, it provides precise speed control, soft start, energy efficiency and system protection, extending equipment life with reliable, authoritative performance.",
-        "subModels": [
-          "Inverter",
-          "BLDC Drive",
-          "MOSFET Modules"
-        ]
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Inspired by the lion's power, authority and controlled use of force, the Lion series comprises power electronics that regulate, manage and optimise electrical energy. Like a lion that applies strength at the right moment, Lion controls electrical power intelligently, especially in frequency converters and drives. Developed for fans, motors and HVAC systems, it provides precise speed control, soft start, energy efficiency and system protection, extending equipment life with reliable, authoritative performance."
       }
     ],
     "otherCategories": [
@@ -879,6 +948,30 @@
         "label": "Vibration & Sound Insulation",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Automation Equipment product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "titresimVeSesIzolasyon": {
@@ -889,17 +982,9 @@
     "roo": {
       "label": "Silencers, Rubber Pads, Vibration Isolators",
       "desc": "different models with tailored solutions for vibration and sound insulation needs.",
-      "subModels": [
-        "ROO T1-ISO10N-NIP",
-        "ROO T1-ISO15N-100kg-NIP",
-        "ROO T2-ISO20N-FIP",
-        "ROO T2-ISO30N-150kg-FIP",
-        "ROO T3-ISO5Hz-200kg-OSI",
-        "ROO T3-ISO10Hz-300kg-OSI",
-        "ROO T4-ISOComb-100kg-5Hz-HSI",
-        "ROO T4-ISO100kg-10Hz-HSI",
-        "ROO T4-ISO500kg-10Hz-HSI"
-      ]
+      "image": "/images/products/yayli-titresim-izolatoru.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -934,6 +1019,30 @@
         "label": "Automation Equipment",
         "slug": "otomasyon-malzemeleri"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "Vibration and Sound Insulation Systems product catalog",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES general product catalog",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Installation & maintenance manual",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Technical datasheets",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "banyoFanlari": {
@@ -959,7 +1068,26 @@
         "image": "/images/products/banyo-fan-3.jpg",
         "description": "Standing out with its modern design and powerful performance, the RP V2 Wide Front Panel Exhaust Fan is designed for living spaces where both aesthetics and functionality are priorities."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "catiFanlari": {
     "title": "HERON",
@@ -1002,7 +1130,26 @@
         "image": "/images/products/free.jpg",
         "description": "Lidded axial roof fan."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "damperler": {
     "title": "HOUND",
@@ -1027,7 +1174,26 @@
         "image": "/images/products/hound-crd.jpg",
         "description": "An automatic-opening pressure relief damper for overpressure control and system component protection."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
@@ -1070,7 +1236,26 @@
         "image": "/images/products/dragonfly-jr.jpg",
         "description": "Specially designed for smoke extraction and emergency ventilation in demanding indoor volumes such as enclosed car parks, tunnels, and fire zones. EN 12101-3 certified."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
@@ -1089,7 +1274,26 @@
         "image": "/images/products/owl-rwa.jpg",
         "description": "An axial fan solution featuring a high-efficiency aerofoil blade design, suitable for rectangular wall-mounted installation."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
@@ -1108,7 +1312,26 @@
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "description": "A high-efficiency EC motor rectangular duct fan solution designed for use in modern ventilation systems. With its compact structure, quiet operation, and automation system integration capability, it is reliably preferred in comfort and industrial applications."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
@@ -1127,7 +1350,26 @@
         "image": "/images/products/nautilus-cif-cidarli.jpg",
         "description": "The NAUTILUS Silence Series are centrifugal fans that operate with high efficiency in systems requiring low-pressure air transfer, featuring a compact structure and direct-drive design."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "exproofFanlar": {
     "title": "BEAR",
@@ -1188,7 +1430,26 @@
         "image": "/images/products/bear-w.jpg",
         "description": "Flame-proof, ATEX compliant, high performance."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
@@ -1288,7 +1549,26 @@
         "image": "/images/products/turtle-a.jpg",
         "description": "Compact axial cabinet type fan solutions designed for systems with high-volume air transfer requirements."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
@@ -1298,6 +1578,25 @@
       "title": "Caracal D",
       "type": "Heat Recovery Unit",
       "description": "The Caracal D Series (Heat Recovery Unit) is a compact and high-performance solution developed to refresh indoor air while increasing energy efficiency. With its durable construction and user-friendly control panel, it provides comfortable and sustainable ventilation."
+    },
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
     }
   },
   "kanalFanlari": {
@@ -1329,7 +1628,26 @@
         "image": "/images/products/koi-x.jpg",
         "description": "The KOI-X Series Mixed Flow Duct Fan is designed to deliver maximum efficiency especially in comfort areas, with its compact structure, quiet operation, and dual-speed motor option."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "klimaSantralleri": {
     "title": "TIGER",
@@ -1379,7 +1697,26 @@
         "image": "/images/products/marlin-b.jpg",
         "description": "Bifurcated axial fan."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
@@ -1392,7 +1729,26 @@
         "image": "/images/products/butterfly-b.jpg",
         "description": "The Butterfly B Series Kitchen Type Fan is a durable and high-efficiency ventilation solution developed for heavy steam, grease, and odor extraction in industrial and commercial kitchens. With its advanced filtration system, quiet operation, and long-lasting construction, it is ideal for professional kitchens."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   },
   "siginakFanlari": {
     "title": "FOX",
@@ -1411,6 +1767,25 @@
         "image": "/images/products/fox-c.png",
         "description": "The FOX C Series Cabinet Type Shelter Fan is a professional ventilation solution specially developed for areas requiring high security, suitable for quiet operation, and equipped with a powerful filtration system."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "Home",
+      "products": "Products",
+      "productFamily": "Product Family",
+      "certified": "Certified",
+      "productRange": "Product Range",
+      "technicalSupport": "Technical Support",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Technical Support Request",
+      "allProducts": "All Products",
+      "mostPreferred": "Most Preferred",
+      "detailedView": "View Details",
+      "productFamilies": "Product Families",
+      "inspect": "Explore",
+      "lookingForProduct": "Looking for the right product for your project?",
+      "teamReady": "Our technical team is ready to provide you with the most suitable solution.",
+      "allSolutions": "View All Solutions"
+    }
   }
 }

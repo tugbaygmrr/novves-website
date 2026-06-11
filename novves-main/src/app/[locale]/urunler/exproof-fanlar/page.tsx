@@ -27,6 +27,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       models={t.models}
       locale={locale}
       dict={dict.products}
+      chrome={t.chrome}
     />
   );
 }

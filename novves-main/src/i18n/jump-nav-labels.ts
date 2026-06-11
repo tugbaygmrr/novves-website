@@ -28,6 +28,8 @@ const JUMP_HOME: Record<Locale, string> = {
   ur: "ہوم",
   lt: "Pradžia",
   pl: "Strona główna",
+  ro: "Acasă",
+  hu: "Főoldal",
 };
 
 /** Doküman Kütüphanesi yerine kısa "Kataloglar" — barda yerden kazanmak için */
@@ -47,6 +49,8 @@ const JUMP_CATALOGS: Record<Locale, string> = {
   ur: "کیٹلاگز",
   lt: "Katalogai",
   pl: "Katalogi",
+  ro: "Cataloage",
+  hu: "Katalógusok",
 };
 
 /** Sıkça Sorulan Sorular yerine kısa "SSS" / FAQ — barda yerden kazanmak için */
@@ -66,6 +70,8 @@ const JUMP_FAQ: Record<Locale, string> = {
   ur: "عمومی سوالات",
   lt: "DUK",
   pl: "FAQ",
+  ro: "FAQ",
+  hu: "GYIK",
 };
 
 export function jumpNavHomeLabel(locale: Locale): string {

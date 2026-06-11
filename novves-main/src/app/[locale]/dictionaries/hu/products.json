@@ -1,0 +1,1791 @@
+{
+  "shared": {
+    "home": "Főoldal",
+    "products": "Termékek",
+    "productsLabel": "Termékek",
+    "explore": "Felfedezés",
+    "otherCategories": "További termékkategóriák",
+    "technicalSupport": "Műszaki támogatás",
+    "technicalSupportRequest": "Műszaki támogatási kérelem",
+    "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+    "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+    "allProducts": "Összes termék",
+    "viewProduct": "Termék megtekintése",
+    "detailedView": "Részletek megtekintése",
+    "comingSoon": "Hamarosan",
+    "inspect": "Felfedezés",
+    "model": "modell",
+    "models": "Modell",
+    "results": "találat",
+    "noResults": "Nincs találat.",
+    "searchProducts": "Termékek keresése...",
+    "clear": "Törlés",
+    "readMore": "Tovább",
+    "readLess": "Kevesebb",
+    "getQuote": "Ajánlatkérés",
+    "allIklimlendirmeProducts": "Összes légkondicionálási termék",
+    "forYourProject": "A projektjéhez megfelelő megoldásért",
+    "productCatalog": "Termékkatalógus",
+    "productRange": "Termékkínálat",
+    "productFamilies": "Termékcsaládok",
+    "productGroups": "Termékcsoportok",
+    "fullProductRange": "Teljes termékkínálat",
+    "allProductFamilies": "Összes termékcsalád",
+    "mostPreferred": "Legkedveltebb",
+    "featuredProducts": "Kiemelt termékek",
+    "productVariety": "Termékválaszték",
+    "productFamily": "Termékcsalád",
+    "certified": "Tanúsított",
+    "fireResistance": "Tűzállóság",
+    "filterSeries": "Szűrősorozat",
+    "exploreNovves": "Fedezze fel a NOVVES termékkínálat további kategóriáit.",
+    "comingSoonNotice": "Ebben a kategóriában a termékek hamarosan részletesen bemutatásra kerülnek. Műszaki információkért és árajánlatokért",
+    "contactUs": "vegye fel velünk a kapcsolatot",
+    "airDamper": "Légcsappantyú",
+    "grilleDiffuser": "Rácsok, befúvók stb.",
+    "panoPLCSensor": "Kapcsolószekrények, PLC, érzékelők",
+    "silencerRubberPadIsolators": "Hangtompítók, gumipárnák, rezgéscsillapítók",
+    "categories": {
+      "havaHareketi": "Légmozgatás",
+      "iklimlendirme": "Légkondicionálás",
+      "sogutmaVeIsitma": "Hűtés és fűtés",
+      "havaYonetimi": "Légkezelés",
+      "havaDagitimi": "Légelosztás",
+      "havaFiltrasyonu": "Légszűrés",
+      "aksesuarlar": "Tartozékok",
+      "otomasyonMalzemeleri": "Automatizálási, vezérlési és tápellátási rendszerek",
+      "titresimVeSesIzolasyon": "Rezgés- és hangszigetelő rendszerek"
+    }
+  },
+  "havaHareketi": {
+    "title": "Légmozgatás",
+    "titleFirst": "Lég",
+    "titleHighlight": "mozgatás",
+    "heroDesc": "Ipari és komfortszellőztetési igényeihez",
+    "heroDescSuffix": "termékcsalád.",
+    "stats": [
+      {
+        "value": "1 200+",
+        "label": "Termékválaszték"
+      },
+      {
+        "value": "12",
+        "label": "Termékcsaládok"
+      },
+      {
+        "value": "EN 12101-3",
+        "label": "Tanúsított"
+      },
+      {
+        "value": "F300/2H",
+        "label": "Tűzállóság"
+      }
+    ],
+    "products": [
+      {
+        "name": "DRAGONFLY",
+        "type": "Füst- és hőelvezető ventilátor",
+        "image": "/images/products/dragonfly-c.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Dragonfly sorozat magas hőmérsékletű füst- és hőelvezető ventilátorokat foglal magában, amelyeket tűz esetén a füst, a hő, a mérgező és fojtó gázok biztonságos elvezetésére fejlesztettek ki. Axiális, radiális, jet, tetőre, falra szerelt, fedett és centrifugális kivitelben a projektkövetelmények széles köréhez alkalmazkodik."
+      },
+      {
+        "name": "MARLIN",
+        "type": "Axiális ventilátor",
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Marlin család befúvási, elszívási, légcsatorna-szellőztetési és túlnyomás-előállítási alkalmazásokhoz kifejlesztett axiális ventilátorokat foglal magában. Kompakt házával, alacsony zajszintjével, nagy légszállításával és rugalmas szerelési lehetőségeivel megbízható, gazdaságos teljesítményt nyújt komfortszellőztetésben, ipari szellőztetésben, aknarendszerekben és épülettúlnyomásolásban."
+      },
+      {
+        "name": "BEAR",
+        "type": "ATEX ventilátor",
+        "image": "/images/products/bear-reb.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Bear család robbanásbiztos ventilátorokat foglal magában, amelyeket robbanásveszélyes légtér kockázatával rendelkező ipari területeken történő biztonságos szellőztetésre, elszívásra és technológiai légelvezetésre fejlesztettek ki. Robbanásbiztos motorokkal, a szikrázás kockázatát csökkentő szerkezeti megoldásokkal, robusztus házakkal és axiális/radiális kivitelben szolgálja a vegyi üzemeket, fényezőműhelyeket, tisztítótelepeket, oldószeres folyamatokat és ipari elszívási alkalmazásokat."
+      },
+      {
+        "name": "NAUTILUS",
+        "type": "Ipari centrifugális ventilátor",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Nautilus család befúvási, elszívási, technológiai és általános ipari szellőztetési célú ipari centrifugális ventilátorokat foglal magában. Hátrahajló lapátozású járókerekekkel, közvetlen hajtással, kompakt spirálházzal és több nyomásosztállyal hatékony, megbízható légszállítást tesz lehetővé kis, közepes, nagy nyomású és csendes üzemű alkalmazásokban."
+      },
+      {
+        "name": "HUMMINGBIRD",
+        "type": "EC ventilátor",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Hummingbird család EC-motoros ventilátorokat foglal magában, amelyek magas energiahatékonyságot, pontos fordulatszám-szabályozást és alacsony üzemeltetési költséget biztosítanak. Befúvási, elszívási, tetőre szerelt, légcsatorna, plug, csendes centrifugális, hővisszanyerő és óvóhelyi alkalmazásokhoz intelligens légáramlás-kezelést tesz lehetővé 0–10 V-os vezérléssel, fordulatszám-kapcsolókkal, nyomáskülönbség-érzékelőkkel és BMS-integrációval."
+      },
+      {
+        "name": "HERON",
+        "type": "Tetőventilátor",
+        "image": "/images/products/heron-rv.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Heron család tetőventilátorokat foglal magában, amelyeket a beltéri levegőminőség javítására, a szennyezett levegő elszívására és szükség esetén befúvott levegő biztosítására fejlesztettek ki. Radiális vízszintes/függőleges kifúvással, a légáramon kívül elhelyezett motorokkal, axiális és fedett tetőmodellekkel szolgálja a kereskedelmi épületeket, ipari létesítményeket, gépházakat, aknákat és tetőtéri telepítéseket."
+      },
+      {
+        "name": "OWL",
+        "type": "Falra szerelhető ventilátor",
+        "image": "/images/products/owl-rer.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Az Owl család falra szerelhető axiális ventilátorokat foglal magában a szennyezett, meleg, párás vagy elhasznált beltéri levegő elszívására nagy légterű helyiségekben. Négyszögletes vagy kör alakú kerettel, kompakt házzal, alacsony zajszinttel és nagy légszállítással praktikus megoldás raktárak, hangárok, gyárak, műhelyek, gépházak és nagy ipari csarnokok számára."
+      },
+      {
+        "name": "SEAHORSE",
+        "type": "Fürdőszobai ventilátor",
+        "image": "/images/products/banyo-fan-1.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Seahorse család műanyag elszívó ventilátorokat foglal magában fürdőszobákhoz, WC-khez, pincékhez és hasonló kis és közepes méretű terekhez a szagok, pára, nedvesség és elhasznált levegő eltávolítására. Axiális és radiális kivitelben, ABS házzal, alacsony zajszinttel, könnyen tisztítható előlappal és opcionális késleltetett kikapcsolással alkalmas lakó-, szállodai, irodai és kereskedelmi beltérhez."
+      },
+      {
+        "name": "KOI",
+        "type": "Légcsatorna-ventilátor",
+        "image": "/images/products/koi-cb.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Koi család kompakt légcsatorna-ventilátorokat foglal magában kis és közepes befúvási, elszívási és légcsatorna-szellőztetési igényekhez. Kör, négyszögletes, légáramon kívüli motorral, mixed-flow és axiális műanyag kivitelben praktikus, csendes, gazdaságos légszállítást biztosít lakásokban, kereskedelmi épületekben, gépházakban, pincékben, műhelyekben, valamint kis és közepes telepítésekben."
+      },
+      {
+        "name": "TURTLE",
+        "type": "Plenum ventilátor",
+        "image": "/images/products/turtle-a.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Turtle család kettős falú, szigetelt plenum ventilátorokat foglal magában befúvási és elszívási alkalmazásokhoz. Akusztikus házakkal, karbantartó ajtókkal, szíjhajtásos vagy plug motoros kivitelekkel és többféle járókeréktípussal csendes, tartós teljesítményt nyújt gépházakban, technológiai terekben, kereskedelmi épületekben és ipari szellőztetésben."
+      },
+      {
+        "name": "BUTTERFLY",
+        "type": "Konyhai elszívó ventilátor",
+        "image": "/images/products/butterfly-b.jpg",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Butterfly család konyhai elszívó ventilátorokat és ökológiai egységeket foglal magában a forró, zsíros, füstös és szagló levegő biztonságos, szűrt, szabályozott elvezetésére kereskedelmi konyhákban. A légáramon kívüli motorokkal, kettős falú szigetelt házakkal, zsírszűrőkkel, karbantartó ajtókkal és frekvenciaváltóra kész kivitellel szolgálja az éttermeket, szállodákat, bevásárlóközpontokat, vendéglátást és termelőkonyhákat."
+      },
+      {
+        "name": "FOX",
+        "type": "Óvóhelyi ventilátor",
+        "image": "/images/products/fox-c.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Fox család óvóhelyi szellőztető ventilátorokat foglal magában a szűrt kültéri levegő óvóhelyekre és védett terekbe juttatására. G4, aktívszenes, HEPA/nukleáris részecskeszűrő és bypass csappantyú opciókkal támogatja a normál szellőztetést és az ABV-fenyegetési forgatókönyveket szabályozott légellátással."
+      },
+      {
+        "name": "CHICKEN",
+        "type": "Baromfiventilátor",
+        "image": "/images/products/chicken.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A Chicken sorozat nagy hatékonyságú baromfiventilátorokat foglal magában, amelyeket a zárt baromfiólak érzékeny levegőminőségének fenntartására terveztek. Akárcsak a hőmérsékletre, páratartalomra és ammóniára érzékeny madarak, ezek a ventilátorok frissen tartják a levegőt, támogatják a hőmérséklet-szabályozást, és segítenek megóvni az állomány egészségét és termelékenységét."
+      },
+      {
+        "name": "ELEPHANT",
+        "type": "Porgyűjtés",
+        "image": "/images/products/elephant.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Az Elephant sorozat – az állat erejéből és finom érzékeléséből merítve – nagy elszívási kapacitással gyűjti össze a port és a részecskéket a nagy termelési területeken. Robusztus testével, stabil szívásával és tartós szerkezetével szabályozott, nagy igénybevételű légkezelést nyújt az egészségesebb, hatékonyabb munkahelyekért."
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "ctaDesc": "Vegye fel a kapcsolatot szakértő mérnökcsapatunkkal, hogy az 1 200+ termékváltozat közül megtalálja a projektjéhez legmegfelelőbb megoldást.",
+    "catalogs": [
+      {
+        "title": "Légmozgatás termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "iklimlendirme": {
+    "title": "Légkondicionálás",
+    "titleFirst": "Lég",
+    "titleHighlight": "kondicionálás",
+    "pills": [
+      "3 termékcsalád",
+      "Moduláris kialakítás",
+      "EC és centrifugális ventilátor",
+      "HEPA szűrés"
+    ],
+    "tiger": {
+      "label": "Légkezelő egység",
+      "desc": "Moduláris felépítésű, magas energiahatékonyságú komponensekkel és csendes üzemű teljesítménnyel rendelkező légkezelő egység megoldás az 500–125 000 m³/h légszállítási tartományban.",
+      "image": "/images/products/tiger-pre.png",
+      "specFlow": "500–125K m³/h",
+      "specPressure": "10–3 000 Pa"
+    },
+    "dolphin": {
+      "label": "Uszodai páramentesítő egység",
+      "desc": "Megakadályozza a nedvesség okozta károkat az épületszerkezetekben a fedett uszodákban, miközben maximalizálja a felhasználói komfortot. Magas energiahatékonyságával, tartós szerkezetével és csendes üzemével tűnik ki.",
+      "image": "/images/products/dolphin-pre.png",
+      "specFlow": "3 000–9 000 m³/h",
+      "specPressure": "6 modell"
+    },
+    "caracal": {
+      "label": "Hővisszanyerés",
+      "desc": "Szabályozott légkondicionálást biztosít a frisslevegő-igények kielégítésére és a meglévő levegőminőség javítására irodákban, iskolákban, szállodákban, kórházakban és közösségi terekben.",
+      "image": "/images/products/caracal.png",
+      "specFlow": "",
+      "specPressure": ""
+    },
+    "ctaDesc": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb légkondicionálási megoldást nyújtsa Önnek.",
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Légkondicionálás termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "sogutmaVeIsitma": {
+    "title": "Hűtés és fűtés",
+    "titleFirst": "Hűtés és",
+    "titleHighlight": "fűtés",
+    "heroDesc": "Folyadékhűtő, kültéri egységek, elektromos fűtőelemek és vizes hőcserélő megoldások.",
+    "comingSoonNotice": "Ebben a kategóriában a termékek hamarosan részletesen bemutatásra kerülnek. Műszaki információkért és árajánlatokért",
+    "comingSoonLink": "vegye fel velünk a kapcsolatot",
+    "products": [
+      {
+        "name": "CHILLER (Polar Bear)",
+        "type": "Hűtőegység",
+        "image": "/images/products/chiller.png",
+        "specFlow": "",
+        "specPressure": ""
+      },
+      {
+        "name": "OUTDOOR UNITS",
+        "type": "Hűtőegység",
+        "image": "/images/products/chiller.png",
+        "specFlow": "",
+        "specPressure": ""
+      },
+      {
+        "name": "ELECTRIC HEATERS",
+        "type": "Elektromos fűtőelem",
+        "image": "/images/products/elektrikli-isitici.png",
+        "specFlow": "",
+        "specPressure": ""
+      },
+      {
+        "name": "WATER COIL",
+        "type": "Hőcserélő",
+        "image": "/images/products/elektrikli-isitici.png",
+        "specFlow": "",
+        "specPressure": ""
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Hűtés és fűtés termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "havaYonetimi": {
+    "title": "Légkezelés",
+    "titleFirst": "Lég",
+    "titleHighlight": "kezelés",
+    "heroDesc": "Légcsappantyú megoldások.",
+    "hound": {
+      "label": "Légcsappantyú",
+      "desc": "Csappantyúsorozat, amelyet a szellőztetési és tűzvédelmi rendszerek legkritikusabb pontjain a maximális szabályozás és biztonság biztosítására terveztek.",
+      "image": "/images/products/hound-al.png",
+      "specFlow": "",
+      "specPressure": ""
+    },
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Légkezelés termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "havaDagitimi": {
+    "title": "Légelosztás",
+    "titleFirst": "Lég",
+    "titleHighlight": "elosztás",
+    "heroDesc": "Rács, befúvó, anemosztát és zsalu megoldások.",
+    "alpaca": {
+      "label": "Rácsok, befúvók stb.",
+      "desc": "különböző modellek testreszabott megoldásokkal minden légelosztási igényhez.",
+      "image": "/images/products/alpaca-am.png",
+      "specFlow": "",
+      "specPressure": ""
+    },
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Légelosztás termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "havaFiltrasyonu": {
+    "title": "Légszűrés",
+    "titleFirst": "Lég",
+    "titleHighlight": "szűrés",
+    "heroDesc": "Szűrőmegoldások ipari és komfortalkalmazásokhoz.",
+    "scallop": {
+      "label": "Szűrősorozat",
+      "desc": "különböző szűrőmodellek testreszabott megoldásokkal minden légszűrési igényhez.",
+      "image": "/images/products/cyclone.png",
+      "specFlow": "",
+      "specPressure": ""
+    },
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Légszűrés termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "aksesuarlar": {
+    "title": "Tartozékok",
+    "titleFirst": "Tarto",
+    "titleHighlight": "zékok",
+    "productCount": "termék",
+    "ctaTitle": "A projektjéhez megfelelő tartozékot keres?",
+    "accessories": [
+      {
+        "name": "Rugós rezgéscsillapító",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "A rugós rezgéscsillapítókat HVAC-rendszerekben és gépészeti berendezések telepítésénél használják azon alacsony szintű rezgések csökkentésére, amelyek a rendszerből a padlóra vagy a környezetbe továbbítódhatnak."
+      },
+      {
+        "name": "AE SF rögzítőtalpak",
+        "image": "/images/products/ae-sf-baglanti-ayaklari.png",
+        "description": "A rögzítőtalpak nagy szilárdságú rögzítőelemek, amelyeket a ventilátorok padlóhoz vagy tartófelülethez történő biztonságos rögzítésére terveztek a projektkövetelményeknek megfelelően."
+      },
+      {
+        "name": "AE PM védőrács",
+        "image": "/images/products/ae-pm-tel-kafes.png",
+        "description": "A védőrácsok nagy szilárdságú acélhuzalból készült védőrácsok, amelyeket a ventilátorrendszerek szívó- vagy nyomóoldalán a felhasználói biztonság garantálására és az idegen testek üzemi területre jutásának megakadályozására terveztek."
+      },
+      {
+        "name": "AE IC szívókúp",
+        "image": "/images/products/ae-ic-giris-konisi.png",
+        "description": "Az AE IC sorozatú szívókúpokat a ventilátorok szívóoldalán a légáramlás optimalizálására, a légörvénylés csökkentésére és a rendszer hatékonyságának növelésére tervezték."
+      },
+      {
+        "name": "AE CF ellenkarima",
+        "image": "/images/products/ae-cf-karsi-flans.png",
+        "description": "Az AE CF sorozatú ellenkarimák magas hőmérsékletnek ellenálló csatlakozóelemek, amelyeket a ventilátorok légcsatorna-rendszerhez csatlakoztatására és a légtömörség biztosítására használnak."
+      },
+      {
+        "name": "AE FJF rugalmas csatlakozós ellenkarima",
+        "image": "/images/products/ae-fjf.png",
+        "description": "Az AE FJF sorozatú rugalmas csatlakozós ellenkarimák speciális csatlakozóelemek, amelyeket a ventilátor- és légcsatorna-rendszerek közötti rezgésátadás megakadályozására, a tágulási hatások csökkentésére és csendesebb üzemi környezet biztosítására terveztek."
+      },
+      {
+        "name": "AE FJF F400 osztályú rugalmas csatlakozós ellenkarima",
+        "image": "/images/products/ae-fjf.png",
+        "description": "Az AE FJF sorozatú F400 osztályú rugalmas csatlakozós ellenkarimákat úgy tervezték, hogy rugalmas, biztonságos és légtömör csatlakozást biztosítsanak a ventilátor- és légcsatorna-rendszerek között tűzálló alkalmazásokban."
+      },
+      {
+        "name": "AE FJ2F kettős ellenkarimás rugalmas csatlakozó",
+        "image": "/images/products/ae-fj2f.png",
+        "description": "A kettős ellenkarimás rugalmas csatlakozók rendkívül rugalmas csatlakozóelemek, mindkét végükön ellenkarimával felszerelve, amelyeket a ventilátor- és légcsatorna-rendszerek közötti rezgés, tágulás és szerelési pontatlanságok elnyelésére terveztek."
+      },
+      {
+        "name": "AE FJ2F F400 kettős ellenkarimás rugalmas csatlakozó",
+        "image": "/images/products/ae-fj2f.png",
+        "description": "Az AE FJ2F-HR sorozat magas hőmérsékletnek ellenálló kettős ellenkarimás rugalmas csatlakozó megoldás, amelyet tűzállóságot igénylő rendszerekben való használatra terveztek."
+      },
+      {
+        "name": "AE S-D100 kör keresztmetszetű hangtompító",
+        "image": "/images/products/ae-sd100.png",
+        "description": "Az AE S-D100 sorozatú kör keresztmetszetű hangtompítók nagy teljesítményű akusztikai szabályozóelemek, amelyeket a szellőztetőrendszerek zajszintjének csökkentésére és a komfortviszonyok javítására terveztek."
+      },
+      {
+        "name": "AE RS négyszögletes légcsatorna típusú hangtompító",
+        "image": "/images/products/ae-rs.png",
+        "description": "Az AE RS sorozatú négyszögletes légcsatorna típusú hangtompítók nagy hatékonyságú hangszigetelő elemek, amelyeket a légcsatorna-rendszerekben a légáramlás keltette zajszint csökkentésére és az akusztikai komfort növelésére terveztek."
+      },
+      {
+        "name": "AE-SS karmantyús hangtompító",
+        "image": "/images/products/ae-ss-soket-susturucu.png",
+        "description": "Az AE SS sorozatú karmantyús hangtompítók akusztikai szabályozó tartozékok, amelyeket opcionálisan biztosítanak a különösen a szívóoldalon zajcsökkentést igénylő projektekhez."
+      },
+      {
+        "name": "AE-V terelőlapát",
+        "image": "/images/products/ae-v-yonlendirici-kanat.png",
+        "description": "Az AE V sorozatú terelőlapátok kiegészítő aerodinamikai elemek, amelyeket a légáramlás optimalizálására, a turbulencia csökkentésére és a ventilátor- és légcsatorna-rendszerekben az egyenletes áramláseloszlás biztosítására terveztek."
+      },
+      {
+        "name": "AE-OC kifúvósapka",
+        "image": "/images/products/ae-oc-cikis-basligi.png",
+        "description": "Az AE OC sorozatú kifúvósapkák tartós szerkezeti elemek, amelyeket a ventilátorrendszerek kifúvási pontjainál a kültéri körülmények elleni védelemre és a rendszer teljesítményének fenntartására terveztek."
+      },
+      {
+        "name": "AE-DFC négyszögletes rugalmas csatlakozó",
+        "image": "/images/products/ae-dfc.png",
+        "description": "Az AE DFC sorozatú négyszögletes rugalmas csatlakozók tartós csatlakozóelemek, amelyeket a légcsatorna-rendszerekben a rezgésszigetelés biztosítására, a hangátadás megakadályozására és a légtömörség növelésére terveztek."
+      },
+      {
+        "name": "AE-AF tetőadapter keret",
+        "image": "/images/products/ae-af-cati-adaptor.png",
+        "description": "Az AE AF sorozatú tetőadapter keretek nagy szilárdságú csatlakozóelemek, amelyeket a ventilátorok és más HVAC-berendezések tetőkön történő biztonságos, stabil és légtömör telepítésének biztosítására terveztek."
+      },
+      {
+        "name": "AE FRS lapostető-karmantyú",
+        "image": "/images/products/ae-frs.png",
+        "description": "Az AE FRS sorozatú lapostető-karmantyúk kiegészítő szerkezeti elemek, amelyeket a ventilátorok és HVAC-berendezések lapostetős alkalmazásokban történő biztonságos, szigetelt és stabil telepítésére terveztek."
+      },
+      {
+        "name": "AE-CB tetőcsatlakozó doboz",
+        "image": "/images/products/ae-cb-cati-baglanti-kutusu.png",
+        "description": "Az AE CB sorozatú tetőcsatlakozó dobozok kiegészítő szerkezeti elemek, amelyeket a ventilátorrendszerek és légcsatorna-csatlakozások biztonságos és stabil telepítésére terveztek."
+      },
+      {
+        "name": "AE-EH légcsatorna típusú elektromos fűtőelem",
+        "image": "/images/products/ae-eh-elektrikli-isitici.png",
+        "description": "Az AE EH sorozatú légcsatorna típusú elektromos fűtőelemek kompakt és nagy hatékonyságú fűtőegységek, amelyeket komfortorientált alkalmazásokhoz, például a szellőztetőrendszerekben a frisslevegő fűtéséhez fejlesztettek ki."
+      },
+      {
+        "name": "Biztonsági kapcsoló",
+        "image": "/images/products/emniyet-salteri.png",
+        "description": "A biztonsági kapcsoló magas védelmi szabványú vezérlőelem, amelyet a ventilátorok és más elektromos berendezések biztonságos be- és kikapcsolására terveztek."
+      },
+      {
+        "name": "Védett biztonsági kapcsoló",
+        "image": "/images/products/korumali-emniyet-salteri.png",
+        "description": "A védett biztonsági kapcsoló tartós vezérlőelem, amelyet az elektromos berendezések biztonságos be-/kikapcsolására terveztek, miközben védelmet nyújt a környezeti tényezőkkel szemben."
+      },
+      {
+        "name": "Egyfázisú fordulatszám-szabályozó",
+        "image": "/images/products/monofaze-hiz-kontrol-cihazi.png",
+        "description": "Az egyfázisú fordulatszám-szabályozó felhasználóbarát vezérlőegység, amelyet a feszültségszabályozott egyfázisú aszinkronmotorral szerelt ventilátorok fordulatszámának folyamatos és pontos beállítására terveztek."
+      },
+      {
+        "name": "Frekvenciaváltó",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "A frekvenciaváltó új generációs hajtóegység, amelyet az energiahatékonyság növelésére és az optimális fordulatszám-szabályozás biztosítására fejlesztettek ki motoros ventilátor- és szellőztetőrendszerekben."
+      },
+      {
+        "name": "Túlnyomásolási vezérlőszekrény",
+        "image": "/images/products/basinclandirma-kontrol-panosu.png",
+        "description": "A túlnyomásolási vezérlőszekrény frekvenciaváltóval felszerelt fejlett vezérlőegység, amelyet a ventilátorok automatikus és optimalizált működésének biztosítására terveztek túlnyomásolási rendszerekben."
+      },
+      {
+        "name": "Nyomáskülönbség-érzékelő",
+        "image": "/images/products/diferansiyel-basinc-sensoru.png",
+        "description": "A nyomáskülönbség-érzékelő nagy pontosságú vezérlőelem, amelyet a szellőztető- és szűrőrendszerekben a légnyomáskülönbségek mérésére és szabályozására terveztek."
+      },
+      {
+        "name": "Nyomáskülönbség-érzékelő PI (0–10V kimenet)",
+        "image": "/images/products/diferansiyel-basinc-sensoru.png",
+        "description": "A nyomáskülönbség-érzékelő + PI szabályozás fejlett érzékelőrendszer, amelyet a szellőztetőrendszerekben a légnyomás vagy a légáramlás pontos felügyeletére és automatikus szabályozására fejlesztettek ki."
+      },
+      {
+        "name": "Légcsatorna típusú füstérzékelő",
+        "image": "/images/products/kanal-tipi-duman-sensoru.png",
+        "description": "A légcsatorna típusú füstérzékelő nagy érzékenységű érzékelőeszköz, amelyet a szellőztető- és légkondicionáló rendszereken belüli levegőben lévő füst és égéstermékek korai szakaszú érzékelésére terveztek."
+      },
+      {
+        "name": "G4 panelszűrő",
+        "image": "/images/products/g4-panel-filtre.png",
+        "description": "A G4 panelszűrők nagy hatékonyságú előszűrők, amelyeket a szellőztető- és légkondicionáló rendszerekben a levegőből származó durva részecskék, por és szennyezőanyagok megkötésére terveztek."
+      },
+      {
+        "name": "G2-G3 panelszűrő",
+        "image": "/images/products/g2-g3-panel-filtre.png",
+        "description": "A G2-G3 panelszűrők megbízható előszűrő megoldások, amelyeket a szellőztető- és légkondicionáló rendszerekben a közepes és nagy részecskék megkötésére terveztek."
+      },
+      {
+        "name": "G2 fém zsírszűrő",
+        "image": "/images/products/g2-metal-yag-tutucu-filtre.png",
+        "description": "A G2 fém zsírszűrők nagy tartósságú szűrőelemek, amelyeket kifejezetten a zsírgőz és a nagy részecskék megkötésére terveztek szellőztető- és konyhai elszívórendszerekben."
+      },
+      {
+        "name": "G2-G3 fém zsírszűrő",
+        "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.png",
+        "description": "A G2-G3 fém zsírszűrők tartós szűrőmegoldások, amelyeket a zsírgőz és a nagy részecskék hatékony megkötésére terveztek szellőztető- és konyhai elszívórendszerekben."
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Tartozékok termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "otomasyonMalzemeleri": {
+    "title": "Automatizálási berendezések",
+    "titleFirst": "Automatizálási",
+    "titleHighlight": "berendezések",
+    "products": [
+      {
+        "name": "HAWK",
+        "image": "/images/products/otomasyon-pano.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "A HAWK automatizálási szekrényeket úgy tervezték, hogy a ventilátorrendszereket, HVAC-egységeket és infrastruktúra-elemeket egyetlen központból, megbízható, stabil és intelligens vezérléssel kezeljék. A gyors reagálás, a pontos felügyelet és a fejlett vezérlési architektúra még összetett forgatókönyvek esetén is stabilan tartja a rendszert. Az energiagazdálkodással, biztonsági integrációval, precíziós vezérléssel és távfelügyelettel a HAWK irányító felügyeletet ad a projekthez."
+      },
+      {
+        "name": "PLC",
+        "image": "/images/products/otomasyon-plc.png",
+        "specFlow": "",
+        "specPressure": ""
+      },
+      {
+        "name": "SENSOR",
+        "image": "/images/products/otomasyon-sensor.png?v=7",
+        "specFlow": "",
+        "specPressure": ""
+      },
+      {
+        "name": "CONTROL BOARDS - SWITCHES",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png?v=3",
+        "specFlow": "",
+        "specPressure": ""
+      },
+      {
+        "name": "LION",
+        "image": "/images/products/frekans-inventoru.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Az oroszlán erejéből, tekintélyéből és az erő szabályozott alkalmazásából merítve a Lion sorozat olyan teljesítményelektronikát foglal magában, amely szabályozza, kezeli és optimalizálja az elektromos energiát. Akárcsak az oroszlán, amely a megfelelő pillanatban fejti ki erejét, a Lion intelligensen szabályozza az elektromos teljesítményt, különösen frekvenciaváltókban és hajtásokban. Ventilátorokhoz, motorokhoz és HVAC-rendszerekhez kifejlesztve precíz fordulatszám-szabályozást, lágy indítást, energiahatékonyságot és rendszervédelmet biztosít, megbízható, tekintélyt parancsoló teljesítménnyel meghosszabbítva a berendezések élettartamát."
+      }
+    ],
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Rezgés- és hangszigetelés",
+        "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Automatizálási berendezések termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "titresimVeSesIzolasyon": {
+    "title": "Rezgés- és hangszigetelő rendszerek",
+    "titleFirst": "Rezgés- és hangszigetelő",
+    "titleHighlight": "szigetelő",
+    "heroDesc": "Hangtompítók, gumipárnák és rezgéscsillapítók.",
+    "roo": {
+      "label": "Hangtompítók, gumipárnák, rezgéscsillapítók",
+      "desc": "különböző modellek testreszabott megoldásokkal a rezgés- és hangszigetelési igényekhez.",
+      "image": "/images/products/yayli-titresim-izolatoru.png",
+      "specFlow": "",
+      "specPressure": ""
+    },
+    "otherCategories": [
+      {
+        "label": "Légmozgatás",
+        "slug": "hava-hareketi"
+      },
+      {
+        "label": "Légkondicionálás",
+        "slug": "iklimlendirme"
+      },
+      {
+        "label": "Hűtés és fűtés",
+        "slug": "sogutma-ve-isitma"
+      },
+      {
+        "label": "Légkezelés",
+        "slug": "hava-yonetimi"
+      },
+      {
+        "label": "Légelosztás",
+        "slug": "hava-dagitimi"
+      },
+      {
+        "label": "Légszűrés",
+        "slug": "hava-filtrasyonu"
+      },
+      {
+        "label": "Tartozékok",
+        "slug": "aksesuarlar"
+      },
+      {
+        "label": "Automatizálási berendezések",
+        "slug": "otomasyon-malzemeleri"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "Rezgés- és hangszigetelő rendszerek termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "NOVVES általános termékkatalógus",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "Telepítési és karbantartási kézikönyv",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "Műszaki adatlapok",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
+  },
+  "banyoFanlari": {
+    "title": "SEAHORSE",
+    "subtitle": "Fürdőszobai ventilátorok",
+    "intro": "A fürdőszobai ventilátorok, amelyeket a szagok és a pára gyors elszívására használnak kis és közepes méretű terekben, például fürdőszobákban, WC-kben és kamrákban, fontos szerepet játszanak mind a higiéniában, mind a komfortban.",
+    "models": [
+      {
+        "name": "Seahorse AP",
+        "type": "Axiális fürdőszobai ventilátor",
+        "image": "/images/products/banyo-fan-1.jpg",
+        "description": "Az AP dekoratív fürdőszobai ventilátor a modern építészettel harmonizáló elegáns kialakításával és nagy teljesítményű szerkezetével egyesíti az esztétikát és a funkcionalitást a lakóterekben."
+      },
+      {
+        "name": "Seahorse RP V1",
+        "type": "Mennyezetre szerelhető fürdőszobai elszívó ventilátor",
+        "image": "/images/products/banyo-fan-2.jpg",
+        "description": "Az RP V1 állítható, mennyezetre szerelhető elszívó ventilátor a stílusos kialakításával és fejlett szerelési mechanizmusával a modern lakóterekhez tervezett ideális szellőztetési megoldás."
+      },
+      {
+        "name": "Seahorse RP V2",
+        "type": "Mennyezetre szerelhető fürdőszobai V2 elszívó ventilátor",
+        "image": "/images/products/banyo-fan-3.jpg",
+        "description": "Modern kialakításával és erőteljes teljesítményével kitűnő RP V2 széles előlapos elszívó ventilátort olyan lakóterekhez tervezték, ahol mind az esztétika, mind a funkcionalitás elsődleges szempont."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "catiFanlari": {
+    "title": "HERON",
+    "subtitle": "Tetőventilátorok",
+    "intro": "",
+    "models": [
+      {
+        "name": "Heron RH",
+        "type": "Vízszintes kifúvású centrifugális tetőventilátor",
+        "image": "/images/products/heron-rh.jpg",
+        "description": "Kifejezetten tetőtéri telepítést igénylő légelszívási alkalmazásokhoz tervezve."
+      },
+      {
+        "name": "Heron RHS",
+        "type": "Vízszintes kifúvású, külső motoros centrifugális tetőventilátor",
+        "image": "/images/products/heron-rhs.jpg",
+        "description": "Magas hőmérsékletű és szennyezett levegő elszívását igénylő alkalmazásokhoz."
+      },
+      {
+        "name": "Heron RV",
+        "type": "Függőleges kifúvású centrifugális tetőventilátor",
+        "image": "/images/products/heron-rv.jpg",
+        "description": "Magas hatékonyság a függőleges légelszívást igénylő alkalmazásokban."
+      },
+      {
+        "name": "Heron RVS",
+        "type": "Függőleges kifúvású, külső motoros centrifugális tetőventilátor",
+        "image": "/images/products/heron-rvs.jpg",
+        "description": "Magas hőmérsékletű és erős párás levegő elszívása."
+      },
+      {
+        "name": "Heron AH",
+        "type": "Vízszintes kifúvású axiális tetőventilátor",
+        "image": "/images/products/heron-ah.jpg",
+        "description": "Frisslevegő-befúvás vagy elszívás nagy légterű helyiségekben."
+      },
+      {
+        "name": "Heron AVH",
+        "type": "Fedett axiális tetőventilátor",
+        "image": "/images/products/free.jpg",
+        "description": "Fedett axiális tetőventilátor."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "damperler": {
+    "title": "HOUND",
+    "subtitle": "Csappantyúk",
+    "intro": "A Novves HOUND sorozatú csappantyúkat úgy tervezték, hogy maximális szabályozást és biztonságot nyújtsanak a szellőztetési és tűzvédelmi rendszerek legkritikusabb pontjain.",
+    "models": [
+      {
+        "name": "Hound SD M24",
+        "type": "Aknafüst-csappantyú 24V szervomotorral",
+        "image": "/images/products/hound-sd-m24.jpg",
+        "description": "Tűz- és füstvezérlő rendszerekben történő biztonságos légelszívásra fejlesztve, EN 17051 C osztályú tömörségi besorolással és szervomotor-kompatibilitással."
+      },
+      {
+        "name": "Hound AL",
+        "type": "Légzsalu",
+        "image": "/images/products/hound-al.png",
+        "description": "Esztétikusan megtervezett zsalurendszer, amely a légbeszívó és -kifúvó pontokon irányítja a légáramlást, és védelmet nyújt a külső hatások ellen."
+      },
+      {
+        "name": "Hound CRD",
+        "type": "Túlnyomás-lefúvató csappantyú",
+        "image": "/images/products/hound-crd.jpg",
+        "description": "Automatikusan nyíló túlnyomás-lefúvató csappantyú a túlnyomás szabályozására és a rendszerelemek védelmére."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "dumanIsiTahliyeFanlari": {
+    "title": "DRAGONFLY",
+    "subtitle": "Füst- és hőelvezető ventilátorok",
+    "intro": "Füst- és hőelvezető ventilátorsorozat F300 osztályú tűzállósági tanúsítvánnyal, amelyet úgy terveztek, hogy 2 órán át ellenálljon a 300 °C-os hőmérsékletnek.",
+    "models": [
+      {
+        "name": "Dragonfly T",
+        "type": "Házas axiális füst- és hőelvezető ventilátor",
+        "image": "/images/products/dragonfly-t.jpg",
+        "description": "Magas hőmérsékletnek ellenálló házas axiális ventilátor, amelyet a füst és a forró levegő hatékony elvezetésére terveztek tűzesetek során. EN 12101-3 tanúsított."
+      },
+      {
+        "name": "Dragonfly R",
+        "type": "Axiális tetőtípusú füst- és hőelvezető ventilátor",
+        "image": "/images/products/dragonfly-r.jpg",
+        "description": "Magas hőmérsékletnek ellenálló tetőtéri ventilátor, amely tűzesetek során biztosítja a füst és a forró levegő gyors, biztonságos és hatékony elvezetését. EN 12101-3 tanúsított."
+      },
+      {
+        "name": "Dragonfly C",
+        "type": "Axiális plenum füst- és hőelvezető ventilátor",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Magas hőmérsékletnek ellenálló és alacsony zajszintű szekrénytípusú egység, amelyet a füst és a magas hőmérsékletű levegő biztonságos elvezetésére fejlesztettek ki tűzesetek során. EN 12101-3 tanúsított."
+      },
+      {
+        "name": "Dragonfly JAU",
+        "type": "Egyirányú axiális jet ventilátor",
+        "image": "/images/products/dragonfly-jau.jpg",
+        "description": "Parkolóházakban, alagutakban és zárt terekben történő füstelvezetésre és légkeringetésre tervezve, magas hőmérsékletállósággal. EN 12101-3 tanúsított."
+      },
+      {
+        "name": "Dragonfly JAR",
+        "type": "Kétirányú axiális jet ventilátor",
+        "image": "/images/products/dragonfly-jar.jpg",
+        "description": "Zárt parkolóházakban és nagy légterű beltéri terekben történő füstelvezetésre, szellőztetésre és légkeringetésre fejlesztve, kétirányú. Alacsony zajszint és magas teljesítmény."
+      },
+      {
+        "name": "Dragonfly JR",
+        "type": "Radiális/centrifugális jet ventilátor",
+        "image": "/images/products/dragonfly-jr.jpg",
+        "description": "Kifejezetten füstelvezetésre és vészszellőztetésre tervezve igényes beltéri terekben, például zárt parkolóházakban, alagutakban és tűzzónákban. EN 12101-3 tanúsított."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "duvarTipiFanlar": {
+    "title": "OWL",
+    "subtitle": "Falra szerelhető ventilátorok",
+    "intro": "",
+    "models": [
+      {
+        "name": "Owl RER",
+        "type": "Négyszögletes falra szerelhető ventilátor",
+        "image": "/images/products/owl-rer.png",
+        "description": "Fémlapátos axiális ventilátor megoldás, amelyet kifejezetten falra szerelt telepítéshez terveztek, tartós szerkezettel és állítható fordulatszámmal."
+      },
+      {
+        "name": "Owl RWA",
+        "type": "Négyszögletes axiális falra szerelhető ventilátor",
+        "image": "/images/products/owl-rwa.jpg",
+        "description": "Axiális ventilátor megoldás nagy hatékonyságú aerodinamikai lapátkialakítással, négyszögletes falra szerelt telepítéshez alkalmas."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "ecFanlar": {
+    "title": "HUMMINGBIRD",
+    "subtitle": "EC ventilátorok",
+    "intro": "A Hummingbird sorozat tetőre és légcsatornába szerelhető ventilátormegoldásokat kínál, amelyek az EC-motor technológia révén a magas teljesítményt energiamegtakarítással ötvözik.",
+    "models": [
+      {
+        "name": "Hummingbird RRV",
+        "type": "EC függőleges kifúvású tetőventilátor",
+        "image": "/images/products/hummingbird-rh.jpg",
+        "description": "Modern épületekhez kifejlesztett függőleges kifúvású tetőventilátor megoldás, amely nagy hatékonyságú EC-motorokkal működik. Intelligens vezérlési lehetőségeivel, alacsony energiafogyasztásával és csendes üzemével tűnik ki a komfort- és ipari szellőztetési alkalmazásokban."
+      },
+      {
+        "name": "Hummingbird DRB",
+        "type": "EC négyszögletes légcsatorna-ventilátor",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Nagy hatékonyságú EC-motoros négyszögletes légcsatorna-ventilátor megoldás, amelyet modern szellőztetőrendszerekben való használatra terveztek. Kompakt szerkezetével, csendes üzemével és az automatizálási rendszerbe való integrálhatóságával megbízhatóan választott a komfort- és ipari alkalmazásokban."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "endustriyelFanlar": {
+    "title": "NAUTILUS",
+    "subtitle": "Ipari centrifugális ventilátorok",
+    "intro": "A magas teljesítményt energiamegtakarítással ötvöző ipari ventilátorok erőteljes és hatékony szellőztetési megoldást kínálnak hátrahajló lapátkialakítással és közvetlen hajtású motorkonfigurációval.",
+    "models": [
+      {
+        "name": "Nautilus LPF",
+        "type": "Ipari centrifugális ventilátor",
+        "image": "/images/products/nautilus-lfp.jpg",
+        "description": "Ipari ventilátor, amely a magas teljesítményt energiamegtakarítással ötvözi."
+      },
+      {
+        "name": "Nautilus Silence",
+        "type": "Kettős falú centrifugális ventilátor",
+        "image": "/images/products/nautilus-cif-cidarli.jpg",
+        "description": "A NAUTILUS Silence sorozat olyan centrifugális ventilátorokat foglal magában, amelyek nagy hatékonysággal működnek az alacsony nyomású légszállítást igénylő rendszerekben, kompakt szerkezettel és közvetlen hajtású kialakítással."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "exproofFanlar": {
+    "title": "BEAR",
+    "subtitle": "Robbanásbiztos ventilátorok",
+    "intro": "A Bear sorozat ventilátorai robbanásbiztos ventilátormegoldások, amelyeket robbanásveszélyes és gyúlékony gázokat tartalmazó környezetben való használatra terveztek.",
+    "models": [
+      {
+        "name": "Bear EX-REB",
+        "type": "Négyszögletes légcsatorna típusú robbanásbiztos ventilátor",
+        "image": "/images/products/bear-reb.jpg",
+        "description": "Robbanásbiztos, robbanásveszélyes gázkörnyezetben történő biztonságos szellőztetésre tervezve. Magas biztonsági szabványok, frekvenciaszabályozott üzem, ATEX zónakompatibilis."
+      },
+      {
+        "name": "Bear EX-T",
+        "type": "Házas axiális robbanásbiztos ventilátor",
+        "image": "/images/products/bear-t.jpg",
+        "description": "Biztonságos légszállítás robbanásveszélyes környezetben, kiegyensúlyozott járókerék-kialakítás. Tűz- és szikraveszéllyel járó ipari alkalmazásokhoz."
+      },
+      {
+        "name": "Bear EX-RRH",
+        "type": "Vízszintes kifúvású tetőtípusú robbanásbiztos centrifugális ventilátor",
+        "image": "/images/products/bear-rrh.jpg",
+        "description": "Kifejezetten tetőtéri vízszintes elszívást igénylő alkalmazásokhoz tervezve. ATEX 1. zóna és 2. zóna."
+      },
+      {
+        "name": "Bear EX-RRV",
+        "type": "Függőleges kifúvású tetőtípusú robbanásbiztos centrifugális ventilátor",
+        "image": "/images/products/bear-rrv.jpg",
+        "description": "Magas nyomású légelszívás, hosszú élettartamú kültéri ellenállás."
+      },
+      {
+        "name": "Bear EX-BP",
+        "type": "Plenum robbanásbiztos centrifugális ventilátor",
+        "image": "/images/products/bear-bp.jpg",
+        "description": "Moduláris plenum szerkezetű ventilátor megoldás, amely erőteljes és csendes üzemet kínál."
+      },
+      {
+        "name": "Bear EX-C",
+        "type": "Plenum robbanásbiztos axiális ventilátor",
+        "image": "/images/products/bear-c.jpg",
+        "description": "Csendes üzem, egyszerű karbantartás, ATEX-megfelelőség."
+      },
+      {
+        "name": "Bear LPF",
+        "type": "Centrifugális robbanásbiztos ventilátor",
+        "image": "/images/products/bear-lpf.jpg",
+        "description": "Biztonságos légelszívás robbanásveszélyes gázokat vagy gőzöket tartalmazó környezetben."
+      },
+      {
+        "name": "Bear R",
+        "type": "Axiális tetőtípusú ventilátor",
+        "image": "/images/products/bear-r.jpg",
+        "description": "A nagy légterű szerkezetek természetes szellőztetési és elszívási igényeinek kielégítésére tervezve."
+      },
+      {
+        "name": "Bear W",
+        "type": "Robbanásbiztos axiális ventilátor (falra szerelhető)",
+        "image": "/images/products/bear-w.jpg",
+        "description": "Lángbiztos, ATEX-megfelelő, magas teljesítményű."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "havuzNemAlmaSantrali": {
+    "title": "DOLPHIN",
+    "subtitle": "Uszodai páramentesítő egység",
+    "intro": "A NOVVES által kifejlesztett Dolphin sorozatú uszodai páramentesítő egységek megakadályozzák a nedvesség okozta károkat az épületszerkezetekben a fedett uszodákban, miközben maximalizálják a felhasználói komfortot. Magas energiahatékonyságával, tartós szerkezetével és csendes üzemével kitűnő Dolphin sorozat a professzionális választás az uszodai klímaszabályozási megoldásokban.",
+    "tableHeaders": {
+      "model": "Modell",
+      "airFlow": "Légszállítás (m³/h)",
+      "poolArea": "Medencefelület (m²)",
+      "cooling": "Hűtés (kW)",
+      "condenser": "Kondenzátor (kW)",
+      "waterHeater": "Vízmelegítő (kW)"
+    },
+    "models": [
+      {
+        "model": "DOLPHIN 300",
+        "airFlow": "3 000",
+        "area": "50",
+        "cooling": "21.1",
+        "condenser": "26.4",
+        "water": "26.15"
+      },
+      {
+        "model": "DOLPHIN 400",
+        "airFlow": "4 000",
+        "area": "75",
+        "cooling": "28.7",
+        "condenser": "35.67",
+        "water": "34.12"
+      },
+      {
+        "model": "DOLPHIN 450",
+        "airFlow": "4 500",
+        "area": "100",
+        "cooling": "33.3",
+        "condenser": "40.96",
+        "water": "36.24"
+      },
+      {
+        "model": "DOLPHIN 600",
+        "airFlow": "6 000",
+        "area": "150",
+        "cooling": "42.2",
+        "condenser": "52.88",
+        "water": "50.58"
+      },
+      {
+        "model": "DOLPHIN 750",
+        "airFlow": "7 500",
+        "area": "200",
+        "cooling": "52.6",
+        "condenser": "65.9",
+        "water": "62.97"
+      },
+      {
+        "model": "DOLPHIN 900",
+        "airFlow": "9 000",
+        "area": "250",
+        "cooling": "36.8",
+        "condenser": "80.68",
+        "water": "77.1"
+      }
+    ]
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Plenum ventilátorok",
+    "intro": "A Turtle sorozatú plenum ventilátorok mind frisslevegő-befúvásra, mind elszívásra használhatók. Kompakt szerkezetüknek köszönhetően egyszerű, közvetlen padlóra szerelést kínálnak, miközben a belső falak közötti kőzetgyapot töltés hatékony akusztikai szigetelést biztosít.",
+    "models": [
+      {
+        "name": "Turtle B",
+        "type": "Szíjhajtásos plenum ventilátor",
+        "image": "/images/products/turtle-b.jpg",
+        "description": "Szíjhajtásos szekrénytípusú ventilátormodell, amely megbízható és csendes megoldásokat kínál a nagy légmennyiségű légszállítást igénylő rendszerekben."
+      },
+      {
+        "name": "Turtle BP",
+        "type": "Plenum típusú hátrahajló lapátozású plug ventilátor",
+        "image": "/images/products/turtle-bp.jpg",
+        "description": "Nagy teljesítményű szekrénytípusú ventilátormodell, amely csendes, hatékony és kompakt légmegoldásokat kínál."
+      },
+      {
+        "name": "Turtle BPA",
+        "type": "Plenum típusú hátrahajló lapátozású centrifugális ventilátor",
+        "image": "/images/products/turtle-bpa.png",
+        "description": "Ipari szellőztetési megoldás, amely a plenum típusú szerkezetével és a hátrahajló lapátozású centrifugális ventilátortechnológiájával nagy hatékonyságú és csendes üzemű teljesítményt kínál."
+      },
+      {
+        "name": "Turtle F",
+        "type": "Plenum előrehajló lapátozású ventilátor",
+        "image": "/images/products/turtle-f.jpg",
+        "description": "Plug típusú, kettős beömlésű szekrénytípusú ventilátormodell, amely csendes és hatékony üzemével tűnik ki az alacsony nyomású légszállítást igénylő rendszerekben."
+      },
+      {
+        "name": "Turtle A",
+        "type": "Axiális plenum ventilátor",
+        "image": "/images/products/turtle-a.jpg",
+        "description": "Kompakt axiális szekrénytípusú ventilátormegoldások, amelyeket nagy légmennyiségű légszállítást igénylő rendszerekhez terveztek."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "isiGeriKazanimCihazlari": {
+    "title": "CARACAL",
+    "subtitle": "Hővisszanyerő egységek",
+    "intro": "A Caracal sorozat szabályozott légkondicionálást biztosít a frisslevegő-igények kielégítésére és a meglévő levegőminőség javítására irodákban, iskolákban, szállodákban, kórházakban, üzleti központokban, bevásárlóközpontokban, rendezvényhelyszíneken és étkezdékben.",
+    "caracalD": {
+      "title": "Caracal D",
+      "type": "Hővisszanyerő egység",
+      "description": "A Caracal D sorozat (hővisszanyerő egység) kompakt és nagy teljesítményű megoldás, amelyet a beltéri levegő felfrissítésére fejlesztettek ki, miközben növeli az energiahatékonyságot. Tartós szerkezetével és felhasználóbarát vezérlőpaneljével kényelmes és fenntartható szellőztetést biztosít."
+    },
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "kanalFanlari": {
+    "title": "KOI",
+    "subtitle": "Légcsatorna-ventilátorok",
+    "intro": "",
+    "models": [
+      {
+        "name": "Koi CB",
+        "type": "Kör keresztmetszetű légcsatorna-ventilátor",
+        "image": "/images/products/koi-cb.jpg",
+        "description": "A Novves KOI-CB sorozatú kör keresztmetszetű légcsatorna-ventilátorok kompakt és nagy teljesítményű megoldásokat kínálnak, amelyeket légcsatorna típusú szellőztetési igényekhez fejlesztettek ki."
+      },
+      {
+        "name": "Koi RB",
+        "type": "Négyszögletes légcsatorna-ventilátor",
+        "image": "/images/products/koi-rb.jpg",
+        "description": "A Novves KOI-RB sorozatú négyszögletes légcsatorna-ventilátorokat kifejezetten ipari és kereskedelmi épületekben történő nagy teljesítményű légszállításra fejlesztették ki."
+      },
+      {
+        "name": "Koi REB",
+        "type": "Külső motoros négyszögletes légcsatorna-ventilátor",
+        "image": "/images/products/koi-reb.jpg",
+        "description": "A KOI-REB sorozatú külső motoros légcsatorna-ventilátorokat kifejezetten magas hőmérsékletállóságot igénylő szellőztetési alkalmazásokhoz tervezték."
+      },
+      {
+        "name": "Koi X",
+        "type": "Mixed-flow légcsatorna-ventilátor",
+        "image": "/images/products/koi-x.jpg",
+        "description": "A KOI-X sorozatú mixed-flow légcsatorna-ventilátort úgy tervezték, hogy maximális hatékonyságot nyújtson különösen a komfortterületeken, kompakt szerkezetével, csendes üzemével és kétfokozatú motorlehetőségével."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "klimaSantralleri": {
+    "title": "TIGER",
+    "subtitle": "Légkezelő egységek",
+    "intro": "Moduláris, hatékonyságorientált légkezelő egység megoldás, amelyet nagy teljesítményű szellőztetési és légkondicionálási igényekhez fejlesztettek ki. Széles légszállítási tartományával, magas energiahatékonyságú komponenseivel és csendes üzemű teljesítményével tűnik ki.",
+    "specs": [
+      {
+        "label": "Légszállítás",
+        "value": "500 - 125 000 m³/h"
+      },
+      {
+        "label": "Nyomás",
+        "value": "10 - 3 000 Pa"
+      },
+      {
+        "label": "Váz",
+        "value": "Eloxált alumínium"
+      },
+      {
+        "label": "Panel",
+        "value": "Kettős falú szendvicspanel"
+      },
+      {
+        "label": "Ventilátortípus",
+        "value": "Centrifugális ventilátor / EC plug ventilátor"
+      },
+      {
+        "label": "Hővisszanyerés",
+        "value": "Lemezes, forgódobos, víz-glikol"
+      }
+    ]
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Házas axiális ventilátorok",
+    "intro": "A Marlin sorozatú házas axiális ventilátorokat frisslevegő-befúvásra, elszívásra vagy légcsatorna-ventilátorként használják, valamint túlnyomásolási ventilátorként szolgálnak, hogy tűzesetek során megakadályozzák a füst bejutását a menekülési útvonalakra, például a lépcsőházakba és a liftaknákba.",
+    "models": [
+      {
+        "name": "Marlin",
+        "type": "Házas axiális ventilátor",
+        "image": "/images/products/marlin.png",
+        "description": "A Novves MARLIN sorozatú házas axiális ventilátor olyan megoldás, amely a nagy légszállítást igénylő rendszerekben egyesíti az erőteljes teljesítményt, a telepítési rugalmasságot és az energiahatékonyságot."
+      },
+      {
+        "name": "Marlin B",
+        "type": "Elágazó házas axiális ventilátor",
+        "image": "/images/products/marlin-b.jpg",
+        "description": "Elágazó házas axiális ventilátor."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "mutfakFanlari": {
+    "title": "BUTTERFLY",
+    "subtitle": "Konyhai elszívó ventilátorok",
+    "intro": "",
+    "models": [
+      {
+        "name": "Butterfly B",
+        "type": "Fémszűrős konyhai elszívó ventilátor",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "A Butterfly B sorozatú konyhai típusú ventilátor tartós és nagy hatékonyságú szellőztetési megoldás, amelyet erős pára, zsír és szag elszívására fejlesztettek ki ipari és kereskedelmi konyhákban. Fejlett szűrőrendszerével, csendes üzemével és hosszú élettartamú szerkezetével ideális a professzionális konyhák számára."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  },
+  "siginakFanlari": {
+    "title": "FOX",
+    "subtitle": "Óvóhelyi ventilátorok",
+    "intro": "A Fox sorozatot olyan óvóhelyekhez fejlesztették ki, amelyeket sugárzás, nukleáris, biológiai és kémiai fenyegetések vagy természeti katasztrófák elleni védelem biztosítására építettek.",
+    "models": [
+      {
+        "name": "Fox D",
+        "type": "Légcsatorna típusú óvóhelyi ventilátor",
+        "image": "/images/products/fox-d.jpg",
+        "description": "A FOX D sorozatú légcsatorna típusú óvóhelyi ventilátor tartós és megbízható megoldás magas szűrési kapacitással, amelyet kifejezetten óvóhelyi és biztonságos területi szellőztetési igényekhez fejlesztettek ki."
+      },
+      {
+        "name": "Fox C",
+        "type": "Szekrénytípusú óvóhelyi ventilátor",
+        "image": "/images/products/fox-c.png",
+        "description": "A FOX C sorozatú szekrénytípusú óvóhelyi ventilátor professzionális szellőztetési megoldás, amelyet kifejezetten magas biztonságot igénylő területekhez fejlesztettek ki, csendes üzemre alkalmas és erőteljes szűrőrendszerrel felszerelt."
+      }
+    ],
+    "chrome": {
+      "home": "Főoldal",
+      "products": "Termékek",
+      "productFamily": "Termékcsalád",
+      "certified": "Tanúsított",
+      "productRange": "Termékkínálat",
+      "technicalSupport": "Műszaki támogatás",
+      "model": "modell",
+      "models": "Modell",
+      "technicalSupportRequest": "Műszaki támogatási kérelem",
+      "allProducts": "Összes termék",
+      "mostPreferred": "Legkedveltebb",
+      "detailedView": "Részletek megtekintése",
+      "productFamilies": "Termékcsaládok",
+      "inspect": "Felfedezés",
+      "lookingForProduct": "A projektjéhez megfelelő terméket keres?",
+      "teamReady": "Műszaki csapatunk készen áll, hogy a legmegfelelőbb megoldást nyújtsa Önnek.",
+      "allSolutions": "Összes megoldás megtekintése"
+    }
+  }
+}

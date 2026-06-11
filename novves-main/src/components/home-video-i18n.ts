@@ -521,8 +521,74 @@ const pl: HomeVideoStrings = {
   },
 };
 
+/* ── Romanian ────────────────────────────────────────────────────────── */
+
+const ro: HomeVideoStrings = {
+  subtitle: "Aruncați o privire de aproape asupra puterii de producție, abordării inginerești și viziunii globale a NOVVES.",
+  sideButtons: {
+    facilities: {
+      title: "Unitățile Noastre",
+      desc: "Descoperiți fabrica noastră modernă din Yalova OIZ.",
+    },
+    references: {
+      title: "Referințele Noastre",
+      desc: "Proiecte de succes livrate în peste 30 de țări.",
+    },
+  },
+  featureCards: [
+    { title: "Inginerie susținută de CFD", desc: "Analizele CFD specifice proiectului oferă cele mai precise soluții." },
+    { title: "Capacitate ridicată de producție", desc: "Producție la cele mai înalte standarde de calitate în fabrica noastră modernă din Yalova." },
+    { title: "Experiență globală în proiecte", desc: "Exporturi în peste 30 de țări și sute de proiecte livrate cu succes." },
+  ],
+  pillars: [
+    { title: "3.000 m² suprafață de producție", desc: "Infrastructură de producție modernă" },
+    { title: "Exporturi în peste 30 de țări", desc: "Experiență globală în proiecte" },
+    { title: "Proiectare bazată pe CFD", desc: "Soluții bazate pe inginerie" },
+    { title: "Familie de produse certificată", desc: "BSI, ATEX și standarde internaționale" },
+    { title: "Capacitate de C&D și testare", desc: "Performanță măsurabilă" },
+  ],
+  cta: {
+    title: "Să proiectăm împreună soluția corectă de aer pentru proiectul dumneavoastră.",
+    desc: "Cu echipa noastră de experți în tehnologii de ventilatoare, evacuare a fumului, centrale de tratare a aerului și motoare, oferim suport ingineresc specific proiectului.",
+    button: "Partajați-vă proiectul",
+  },
+};
+
+/* ── Hungarian ───────────────────────────────────────────────────────── */
+
+const hu: HomeVideoStrings = {
+  subtitle: "Ismerje meg közelről a NOVVES gyártási erejét, mérnöki megközelítését és globális jövőképét.",
+  sideButtons: {
+    facilities: {
+      title: "Létesítményeink",
+      desc: "Fedezze fel modern gyártóüzemünket a yalovai OIZ-ben.",
+    },
+    references: {
+      title: "Referenciáink",
+      desc: "Több mint 30 országban megvalósított sikeres projektek.",
+    },
+  },
+  featureCards: [
+    { title: "CFD-alapú mérnöki munka", desc: "A projektspecifikus CFD-elemzések biztosítják a legpontosabb megoldásokat." },
+    { title: "Magas gyártási kapacitás", desc: "Gyártás a legmagasabb minőségi szabványok szerint modern yalovai üzemünkben." },
+    { title: "Globális projekttapasztalat", desc: "Export több mint 30 országba és több száz sikeres projekt." },
+  ],
+  pillars: [
+    { title: "3 000 m² gyártóterület", desc: "Modern gyártási infrastruktúra" },
+    { title: "Export több mint 30 országba", desc: "Globális projekttapasztalat" },
+    { title: "CFD-alapú tervezés", desc: "Mérnöki alapú megoldások" },
+    { title: "Tanúsított termékcsalád", desc: "BSI, ATEX és nemzetközi szabványok" },
+    { title: "K+F és tesztelési képesség", desc: "Mérhető teljesítmény" },
+  ],
+  cta: {
+    title: "Tervezzük meg együtt a megfelelő légtechnikai megoldást projektjéhez.",
+    desc: "Ventilátorok, füstelvezetés, légkezelő egységek és motortechnológiák szakértői csapatával projektspecifikus mérnöki támogatást nyújtunk.",
+    button: "Ossza meg projektjét",
+  },
+};
+
 const HOME_VIDEO_I18N: Record<string, HomeVideoStrings> = {
-  tr, en, ru, ar, de, fr, it, es, az, kk, tg, zh, ur, lt, pl,
+  tr, en, ru, ar, de, fr, it, es, az, kk, tg, zh, ur, lt, pl, ro, hu,
 };
 
 export function getHomeVideoStrings(locale: string): HomeVideoStrings {

@@ -36,6 +36,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       models={models}
       locale={locale}
       dict={dict.products}
+      chrome={t.chrome}
       productsHubHref={`/${locale}/urunler/iklimlendirme`}
       solutionsHref={`/${locale}/cozumler/konfor-iklimlendirme-sistemleri`}
       categoryCtaHref={`/${locale}/urunler/iklimlendirme`}

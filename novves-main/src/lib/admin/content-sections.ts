@@ -4,6 +4,9 @@ import { PRODUCT_SECTION_LABELS } from "./field-labels";
 
 export type AdminSection = { key: string; label: string };
 
+/** Bölüm listesinde tam genişlik ayraç (kart değil) olarak render edilen özel anahtar. */
+export const SECTION_DIVIDER_KEY = "__divider__";
+
 export type AdminPageGroup = {
   file: string;
   label: string;
@@ -119,6 +122,39 @@ export const FILE_SECTIONS: Record<string, readonly string[]> = {
 
 export const VALID_DICT_FILES = Object.keys(FILE_SECTIONS);
 
+/** Leaf ürün bölümü → ürün adı (panelde kart başlığı; sayfa = bu ürünün detayı). */
+export const PRODUCT_LEAF_PAGE_LABELS: Record<string, string> = {
+  dumanIsiTahliyeFanlari: "DRAGONFLY",
+  kovanTipiAksiyalFanlar: "MARLIN",
+  exproofFanlar: "BEAR",
+  endustriyelFanlar: "NAUTILUS",
+  ecFanlar: "HUMMINGBIRD",
+  catiFanlari: "HERON",
+  duvarTipiFanlar: "OWL",
+  banyoFanlari: "SEAHORSE",
+  kanalFanlari: "KOI",
+  hucreliFanlar: "TURTLE",
+  mutfakFanlari: "BUTTERFLY",
+  siginakFanlari: "FOX",
+  klimaSantralleri: "TIGER",
+  havuzNemAlmaSantrali: "DOLPHIN",
+  isiGeriKazanimCihazlari: "CARACAL",
+  damperler: "HOUND",
+};
+
+/** Ürünler sekmesinde gösterilen kategori bölümleri (leaf ürünler ve "shared" hariç). */
+export const PRODUCT_PANEL_CATEGORY_KEYS = [
+  "havaHareketi",
+  "iklimlendirme",
+  "sogutmaVeIsitma",
+  "havaYonetimi",
+  "havaDagitimi",
+  "havaFiltrasyonu",
+  "aksesuarlar",
+  "otomasyonMalzemeleri",
+  "titresimVeSesIzolasyon",
+] as const;
+
 /** Ana sayfa — kolay modda gösterilen bölümler (sayfa akışı sırası). */
 export const HOME_SIMPLE_SECTIONS: AdminSection[] = [
   { key: "hero", label: "Üst Video ve Başlık" },
@@ -158,23 +194,35 @@ export const ADMIN_PAGE_GROUPS: AdminPageGroup[] = [
   buildHomePageGroup("simple"),
   {
     file: "common",
-    label: "Genel (Navbar/Footer)",
+    label: "Genel",
     icon: "M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75",
     sections: [
-      { key: "navbar", label: "Navbar" },
       { key: "footer", label: "Footer" },
-      { key: "shared", label: "Ortak Metinler" },
-      { key: "solutionDetail", label: "Çözüm Detay Ortak" },
     ],
   },
   {
     file: "products",
     label: "Ürünler",
     icon: "M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9",
-    sections: FILE_SECTIONS.products.map((key) => ({
-      key,
-      label: PRODUCT_SECTION_LABELS[key] ?? key,
-    })),
+    // Üstte ürün kategorileri, bir ayraç, altında ürün (leaf) sayfaları.
+    // "shared" (UI metinleri) gösterilmez.
+    sections: [
+      ...PRODUCT_PANEL_CATEGORY_KEYS.map((key) => ({
+        key,
+        label: PRODUCT_SECTION_LABELS[key] ?? key,
+      })),
+      { key: SECTION_DIVIDER_KEY, label: "Ürün Sayfaları" },
+      ...FILE_SECTIONS.products
+        .filter(
+          (key) =>
+            key !== "shared" &&
+            !(PRODUCT_PANEL_CATEGORY_KEYS as readonly string[]).includes(key),
+        )
+        .map((key) => ({
+          key,
+          label: PRODUCT_LEAF_PAGE_LABELS[key] ?? PRODUCT_SECTION_LABELS[key] ?? key,
+        })),
+    ],
   },
   {
     file: "solutions",

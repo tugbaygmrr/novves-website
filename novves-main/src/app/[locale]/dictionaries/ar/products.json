@@ -85,155 +85,116 @@
       {
         "name": "DRAGONFLY",
         "type": "مروحة استخراج الدخان والحرارة",
-        "subModels": [
-          "DF T",
-          "DF TS",
-          "DF C",
-          "DF R",
-          "DF RV",
-          "DF TJF",
-          "DF JR",
-          "DF JA",
-          "DF WH",
-          "DF RH"
-        ],
+        "image": "/images/products/dragonfly-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف سلسلة Dragonfly من مراوح تصريف الدخان والحرارة عالية الحرارة، المطوّرة لإخلاء الدخان والحرارة والغازات السامة والخانقة بأمان أثناء الحريق. وبفضل خيارات المراوح المحورية والشعاعية والنفّاثة والسطحية والجدارية والمغطّاة والطاردة المركزية، فإنها تتكيّف مع طيف واسع من متطلبات المشاريع."
       },
       {
         "name": "MARLIN",
         "type": "مروحة محورية",
-        "subModels": [
-          "MARLIN",
-          "MARLIN S",
-          "MARLIN B",
-          "MARLIN 2S"
-        ],
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Marlin من مراوح محورية مطوّرة لتطبيقات هواء الإمداد والطرد وتهوية المجاري والضغط الإيجابي. وبفضل هيكلها المدمج ومستوى الصوت المنخفض ومعدل تدفق الهواء العالي وخيارات التركيب المرنة، فإنها تقدّم أداءً موثوقًا واقتصاديًا في تهوية الراحة والتهوية الصناعية وأنظمة المهابط والضغط الإيجابي للمباني."
       },
       {
         "name": "BEAR",
         "type": "مروحة ATEX",
-        "subModels": [
-          "BEAR REB EX",
-          "BEAR RVS EX",
-          "BEAR RHS EX",
-          "BEAR T",
-          "BEAR C",
-          "BEAR R",
-          "BEAR W",
-          "BEAR LPF EX",
-          "BEAR TB"
-        ],
+        "image": "/images/products/bear-reb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Bear من مراوح Ex-proof مطوّرة للتهوية الآمنة والطرد وسحب هواء العمليات في المناطق الصناعية المعرّضة لخطر الأجواء القابلة للانفجار. وبفضل محركات Ex-proof وتفاصيل التصنيع التي تقلّل من خطر الشرر والهياكل المتينة وخيارات المراوح المحورية/الشعاعية، فإنها تخدم المصانع الكيميائية وورش الطلاء ومحطات المعالجة وعمليات المذيبات وتطبيقات الطرد الصناعي."
       },
       {
         "name": "NAUTILUS",
         "type": "مروحة طارفة صناعية",
-        "subModels": [
-          "NAUTILUS LPF",
-          "NAUTILUS MPF",
-          "NAUTILUS HPF",
-          "NAUTILUS SILENCE"
-        ],
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Nautilus من مراوح طاردة مركزية صناعية لهواء الإمداد والطرد وهواء العمليات والتهوية الصناعية العامة. وبفضل المراوح ذات الشفرات المنحنية للخلف ومحركات الدفع المباشر الاقتران والهندسة الحلزونية المدمجة وفئات الضغط المتعددة، فإنها تتيح نقلًا فعّالًا وموثوقًا في تطبيقات الضغط المنخفض والمتوسط والعالي والتشغيل الصامت."
       },
       {
         "name": "HUMMINGBIRD",
         "type": "مروحة EC",
-        "subModels": [
-          "HUMMINGBIRD DRB EC",
-          "HUMMINGBIRD RRV EC",
-          "HUMMINGBIRD RRH EC",
-          "HUMMINGBIRD CBP EC"
-        ],
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Hummingbird من مراوح بمحركات EC تقدّم كفاءة طاقة عالية وتحكّمًا دقيقًا بالسرعة وتكلفة تشغيل منخفضة. ولتطبيقات الإمداد والطرد والسطحية والمجاري والمراوح من نوع plug والطاردة المركزية الصامتة واسترداد الحرارة والملاجئ، فإنها تتيح إدارة ذكية لتدفق الهواء عبر التحكم 0-10 V ومفاتيح السرعة وحساسات فرق الضغط والتكامل مع BMS."
       },
       {
         "name": "HERON",
         "type": "مروحة سقفية",
-        "subModels": [
-          "HERON RH",
-          "HERON RHS",
-          "HERON RV",
-          "HERON RVS",
-          "HERON AH",
-          "HERON AV",
-          "HERON H"
-        ],
+        "image": "/images/products/heron-rv.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Heron من مراوح سطحية مطوّرة لتحسين جودة الهواء الداخلي وطرد الهواء الملوّث، وعند الحاجة، توفير هواء الإمداد. وبفضل التصريف الشعاعي الأفقي/العمودي والمحركات الموجودة خارج تيار الهواء والطرازات السطحية المحورية والمغطّاة، فإنها تخدم المباني التجارية والمنشآت الصناعية والغرف التقنية والمهابط والتركيبات على الأسطح."
       },
       {
         "name": "OWL",
         "type": "مروحة حائطية",
-        "subModels": [
-          "OWL RER",
-          "OWL R",
-          "OWL H"
-        ],
+        "image": "/images/products/owl-rer.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Owl من مراوح محورية مثبّتة على الجدار لطرد الهواء الداخلي الملوّث أو الدافئ أو الرطب أو الراكد في المساحات كبيرة الحجم. وبفضل الإطارات المربّعة أو الدائرية والأجسام المدمجة والصوت المنخفض وتدفق الهواء العالي، فإنها حل عملي للمستودعات والحظائر والمصانع وورش العمل والغرف التقنية والقاعات الصناعية الكبيرة."
       },
       {
         "name": "SEAHORSE",
         "type": "مروحة حمام",
-        "subModels": [
-          "SEAHORSE AP",
-          "SEAHORSE RP V1",
-          "SEAHORSE RP V2"
-        ],
+        "image": "/images/products/banyo-fan-1.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Seahorse من مراوح طرد بلاستيكية للحمّامات ودورات المياه والأقبية والمساحات الصغيرة إلى المتوسطة المماثلة، لإزالة الروائح والأبخرة والرطوبة والهواء الراكد. وبفضل الخيارات المحورية والشعاعية وأغلفة ABS والصوت المنخفض واللوحات الأمامية سهلة التنظيف وخيار التحكم بالتأخير الزمني، فإنها تناسب المساحات الداخلية السكنية والفندقية والمكتبية والتجارية."
       },
       {
         "name": "KOI",
         "type": "مروحة قناة",
-        "subModels": [
-          "KOI CB",
-          "KOI RB",
-          "KOI REB",
-          "KOI X"
-        ],
+        "image": "/images/products/koi-cb.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Koi من مراوح مجاري مدمجة لاحتياجات الإمداد والطرد وتهوية المجاري المنخفضة إلى المتوسطة. وبفضل الخيارات الدائرية والمستطيلة والمحركات الموجودة خارج تيار الهواء وخيارات التدفق المختلط والمحورية البلاستيكية، فإنها توفّر نقلًا عمليًا وهادئًا واقتصاديًا في المنازل والمباني التجارية والغرف التقنية والأقبية وورش العمل والتركيبات الصغيرة إلى المتوسطة."
       },
       {
         "name": "TURTLE",
         "type": "مروحة غرفة ضاغطة",
-        "subModels": [
-          "TURTLE B",
-          "TURTLE BPA",
-          "TURTLE F",
-          "TURTLE BP",
-          "TURTLE A"
-        ],
+        "image": "/images/products/turtle-a.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Turtle من مراوح plenum مزدوجة الجدار ومعزولة لتطبيقات الإمداد والطرد. وبفضل الهياكل العازلة للصوت وأبواب الوصول وخيارات الدفع بالسير أو محركات plug وأنواع المراوح المتعددة، فإنها تقدّم أداءً هادئًا ومتينًا في غرف المعدّات والمساحات التقنية والمباني التجارية والتهوية الصناعية."
       },
       {
         "name": "BUTTERFLY",
         "type": "مروحة شفط مطبخ",
-        "subModels": [
-          "BUTTERFLY ECO",
-          "BUTTERFLY ECO HR"
-        ],
+        "image": "/images/products/butterfly-b.jpg",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Butterfly من مراوح طرد المطابخ والوحدات البيئية للتصريف الآمن والمُرشّح والمتحكّم به للهواء الساخن والدهني والمليء بالدخان والروائح في المطابخ التجارية. وبفضل المحركات الموجودة خارج تيار الهواء والهياكل المعزولة مزدوجة الجدار ومرشّحات الدهون وأبواب الوصول والتصميم الجاهز لـ VFD، فإنها تخدم المطاعم والفنادق والمراكز التجارية وخدمات التموين ومطابخ الإنتاج."
       },
       {
         "name": "FOX",
         "type": "مروحة ملجأ",
-        "subModels": [
-          "FOX D",
-          "FOX C"
-        ],
+        "image": "/images/products/fox-c.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "تتألف عائلة Fox من مراوح تهوية الملاجئ لإيصال الهواء الخارجي المُرشّح إلى الملاجئ والمساحات المحمية. وبفضل خيارات G4 والكربون المنشّط وHEPA/الجسيمات النووية ومخمّد التحويل (bypass)، فإنها تدعم التهوية الطبيعية وسيناريوهات تهديد CBRN مع إمداد هواء متحكَّم به."
       },
       {
         "name": "CHICKEN",
         "type": "مروحة دواجن",
-        "comingSoon": true,
-        "description": "تتألف سلسلة Chicken من مراوح الدواجن عالية الكفاءة المصمّمة للحفاظ على جودة هواء حسّاسة في بيوت الدواجن المغلقة. وكما أن الطيور حسّاسة تجاه درجة الحرارة والرطوبة والأمونيا، تحافظ هذه المراوح على نقاء الهواء وتدعم التحكّم بدرجة الحرارة وتساعد على حماية صحة القطيع وإنتاجيته."
+        "image": "/images/products/chicken.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "تتألف سلسلة Chicken من مراوح الدواجن عالية الكفاءة المصمّمة للحفاظ على جودة هواء حسّاسة في بيوت الدواجن المغلقة. وكما أن الطيور حسّاسة تجاه درجة الحرارة والرطوبة والأمونيا، تحافظ هذه المراوح على نقاء الهواء وتدعم التحكّم بدرجة الحرارة وتساعد على حماية صحة القطيع وإنتاجيته.",
+        "comingSoon": true
       },
       {
         "name": "ELEPHANT",
         "type": "جمع غبار",
-        "comingSoon": true,
-        "description": "تجمع سلسلة Elephant، المستوحاة من قوة الحيوان وإدراكه الدقيق، الغبار والجسيمات في المناطق عالية الإنتاج بقدرة طرد عالية. وبفضل جسمها المتين وقوة الشفط الثابتة والتصنيع المتين، فإنها تقدّم إدارة هواء متحكَّمًا بها للأعمال الشاقة من أجل أماكن عمل أكثر صحة وكفاءة."
+        "image": "/images/products/elephant.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "تجمع سلسلة Elephant، المستوحاة من قوة الحيوان وإدراكه الدقيق، الغبار والجسيمات في المناطق عالية الإنتاج بقدرة طرد عالية. وبفضل جسمها المتين وقوة الشفط الثابتة والتصنيع المتين، فإنها تقدّم إدارة هواء متحكَّمًا بها للأعمال الشاقة من أجل أماكن عمل أكثر صحة وكفاءة.",
+        "comingSoon": true
       }
     ],
     "otherCategories": [
@@ -270,7 +231,31 @@
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
-    "ctaDesc": "تواصل مع فريق الهندسة الخبير لاختيار الحل الأنسب لمشروعك من بين أكثر من 1,200 تنوع منتج."
+    "ctaDesc": "تواصل مع فريق الهندسة الخبير لاختيار الحل الأنسب لمشروعك من بين أكثر من 1,200 تنوع منتج.",
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات حركة الهواء",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
+      }
+    ]
   },
   "iklimlendirme": {
     "title": "تكييف الهواء",
@@ -285,42 +270,23 @@
     "tiger": {
       "label": "وحدة معالجة الهواء",
       "desc": "حل وحدة معالجة هواء بتصميم وحدات ومكونات عالية كفاءة الطاقة وأداء تشغيل هادئ في نطاق تدفق 500 – 125,000 م³/س.",
-      "specs": [
-        {
-          "label": "التدفق",
-          "value": "500–125K m³/h"
-        },
-        {
-          "label": "الضغط",
-          "value": "10–3,000 Pa"
-        },
-        {
-          "label": "الهيكل",
-          "value": "ألومنيوم معالج أنوديكاً"
-        }
-      ]
+      "image": "/images/products/tiger-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "dolphin": {
       "label": "وحدة إزالة رطوبة المسابح",
       "desc": "يمنع أضرار الرطوبة لهياكل المباني في المسابح الداخلية مع تعظيم راحة المستخدمين. يتميز بكفاءة طاقة عالية وبناء طويل الأمد وتشغيل هادئ.",
-      "specs": [
-        {
-          "label": "السعة",
-          "value": "6 طرازات"
-        },
-        {
-          "label": "التدفق",
-          "value": "3,000–9,000 m³/h"
-        },
-        {
-          "label": "مساحة المسبح",
-          "value": "50–250 m²"
-        }
-      ]
+      "image": "/images/products/dolphin-pre.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "caracal": {
       "label": "استعادة الحرارة",
-      "desc": "يوفر تكييفاً مسيطراً عليه لتلبية احتياجات الهواء النقي وتحسين جودة الهواء القائم في المكاتب والمدارس والفنادق والمستشفيات والأماكن الاجتماعية."
+      "desc": "يوفر تكييفاً مسيطراً عليه لتلبية احتياجات الهواء النقي وتحسين جودة الهواء القائم في المكاتب والمدارس والفنادق والمستشفيات والأماكن الاجتماعية.",
+      "image": "/images/products/caracal.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "ctaDesc": "فريقنا الفني جاهز لتقديم حل تكييف الهواء الأنسب لك.",
     "otherCategories": [
@@ -356,6 +322,30 @@
         "label": "العزل عن الاهتزاز والصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات تكييف الهواء",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "sogutmaVeIsitma": {
@@ -369,27 +359,30 @@
       {
         "name": "CHILLER",
         "type": "وحدة تبريد",
-        "subModels": []
+        "image": "/images/products/chiller.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "الوحدات الخارجية",
         "type": "وحدة تبريد",
-        "subModels": []
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "سخانات كهربائية",
         "type": "سخان كهربائي",
-        "subModels": [
-          "EH",
-          "EHC"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "سخان مائي",
         "type": "ملف",
-        "subModels": [
-          "WC"
-        ]
+        "image": "/images/products/marlin.png",
+        "specFlow": "",
+        "specPressure": ""
       }
     ],
     "otherCategories": [
@@ -425,6 +418,30 @@
         "label": "العزل عن الاهتزاز والصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات التبريد والتدفئة",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaYonetimi": {
@@ -435,19 +452,9 @@
     "hound": {
       "label": "سدادة الهواء",
       "desc": "سلسلة سدادات مصممة لأقصى تحكم وأمان في أكثر نقاط أنظمة التهوية والسلامة من الحريق حرجية.",
-      "subModels": [
-        "MSD",
-        "MSFD-R",
-        "MSFD-B",
-        "SFD-B",
-        "SFD-R",
-        "RSFD-B",
-        "RSFD-Drain-B",
-        "FFD",
-        "MFD",
-        "RD",
-        "GS"
-      ]
+      "image": "/images/products/hound-al.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -481,6 +488,30 @@
       {
         "label": "العزل عن الاهتزاز والصوت",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات إدارة الهواء",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -492,29 +523,9 @@
     "alpaca": {
       "label": "شبكات وموزعات، إلخ",
       "desc": "طرازات متعددة وحلول مخصصة لجميع احتياجات توزيع الهواء.",
-      "subModels": [
-        "ALPACA-GL-SD",
-        "ALPACA-GL-DD",
-        "ALPACA-GL-RA",
-        "ALPACA-GL-PRF",
-        "ALPACA-GL-OB",
-        "ALPACA-DF-SQ",
-        "ALPACA-DF-CR",
-        "ALPACA-DF-LS",
-        "ALPACA-DF-JET",
-        "ALPACA-DF-ADJ",
-        "ALPACA-LV-FX",
-        "ALPACA-LV-ADJ",
-        "ALPACA-LV-WP",
-        "ALPACA-LV-AC",
-        "ALPACA-AM-SQ",
-        "ALPACA-AM-CR",
-        "ALPACA-AM-ADJ",
-        "ALPACA-SP-FR",
-        "ALPACA-SP-DEC",
-        "ALPACA-SP-AC",
-        "ALPACA-SP-JET"
-      ]
+      "image": "/images/products/alpaca-am.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -549,6 +560,30 @@
         "label": "العزل عن الاهتزاز والصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات توزيع الهواء",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "havaFiltrasyonu": {
@@ -559,17 +594,9 @@
     "scallop": {
       "label": "سلسلة المرشحات",
       "desc": "طرازات مرشحات متعددة وحلول مخصصة لجميع احتياجات ترشيح الهواء.",
-      "subModels": [
-        "SCALLOP PF",
-        "SCALLOP MF",
-        "SCALLOP GF",
-        "SCALLOP ABF",
-        "SCALLOP CF",
-        "SCALLOP BF",
-        "SCALLOP HP",
-        "SCALLOP UF",
-        "SCALLOP FF"
-      ]
+      "image": "/images/products/cyclone.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -603,6 +630,30 @@
       {
         "label": "العزل عن الاهتزاز والصوت",
         "slug": "titresim-ve-ses-izolasyon"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات ترشيح الهواء",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
       }
     ]
   },
@@ -802,6 +853,30 @@
         "label": "العزل عن الاهتزاز والصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات إكسسوارات",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "otomasyonMalzemeleri": {
@@ -811,41 +886,35 @@
     "products": [
       {
         "name": "PANEL",
-        "subModels": [],
         "image": "/images/products/otomasyon-pano.png",
+        "specFlow": "",
+        "specPressure": "",
         "description": "صُمّمت لوحات الأتمتة HAWK لإدارة أنظمة المراوح ووحدات HVAC وعناصر البنية التحتية من مركز واحد مع تحكّم موثوق ومستقر وذكي. إن الاستجابة السريعة والمراقبة الدقيقة وبنية التحكّم المتقدّمة تُبقي النظام مستقرًا حتى في السيناريوهات المعقّدة. وبفضل إدارة الطاقة وتكامل السلامة والتحكّم الدقيق والمراقبة عن بُعد، تضيف HAWK إشرافًا قياديًا إلى المشروع."
       },
       {
         "name": "PLC",
-        "subModels": [],
-        "image": "/images/products/otomasyon-plc.png"
+        "image": "/images/products/otomasyon-plc.png",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "مستشعر",
-        "subModels": [
-          "FCP-DSC",
-          "FCP-DCS",
-          "TECASE-ST110"
-        ],
-        "image": "/images/products/otomasyon-sensor.png?v=7"
+        "image": "/images/products/otomasyon-sensor.png?v=7",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "لوحات التحكم - المفاتيح",
-        "subModels": [
-          "TP01-TSD",
-          "TP01-CC"
-        ],
-        "image": "/images/products/otomasyon-kontrol-kartlari.png?v=3"
+        "image": "/images/products/otomasyon-kontrol-kartlari.png?v=3",
+        "specFlow": "",
+        "specPressure": ""
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "مستوحاة من قوة الأسد وهيبته واستخدامه المتحكَّم به للقوة، تتألف سلسلة Lion من إلكترونيات القدرة التي تنظّم الطاقة الكهربائية وتديرها وتحسّنها. وكما يستخدم الأسد قوّته في اللحظة المناسبة، تتحكّم Lion بالطاقة الكهربائية بذكاء، ولا سيّما في محوّلات التردد وأنظمة الدفع. ولأنها مطوّرة للمراوح والمحركات وأنظمة HVAC، فإنها توفّر تحكّمًا دقيقًا بالسرعة وبدء تشغيل سلسًا وكفاءة في الطاقة وحماية للنظام، مما يطيل عمر المعدّات بأداء موثوق وقيادي.",
-        "subModels": [
-          "عاكس",
-          "محرك BLDC",
-          "وحدات MOSFET"
-        ]
+        "specFlow": "",
+        "specPressure": "",
+        "description": "مستوحاة من قوة الأسد وهيبته واستخدامه المتحكَّم به للقوة، تتألف سلسلة Lion من إلكترونيات القدرة التي تنظّم الطاقة الكهربائية وتديرها وتحسّنها. وكما يستخدم الأسد قوّته في اللحظة المناسبة، تتحكّم Lion بالطاقة الكهربائية بذكاء، ولا سيّما في محوّلات التردد وأنظمة الدفع. ولأنها مطوّرة للمراوح والمحركات وأنظمة HVAC، فإنها توفّر تحكّمًا دقيقًا بالسرعة وبدء تشغيل سلسًا وكفاءة في الطاقة وحماية للنظام، مما يطيل عمر المعدّات بأداء موثوق وقيادي."
       }
     ],
     "otherCategories": [
@@ -881,6 +950,30 @@
         "label": "العزل عن الاهتزاز والصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات معدات الأتمتة",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "titresimVeSesIzolasyon": {
@@ -891,17 +984,9 @@
     "roo": {
       "label": "كاتمات صوت، وسائد مطاطية، عوازل اهتزاز",
       "desc": "طرازات متعددة وحلول مخصصة لاحتياجات عزل الاهتزاز والصوت.",
-      "subModels": [
-        "ROO T1-ISO10N-NIP",
-        "ROO T1-ISO15N-100kg-NIP",
-        "ROO T2-ISO20N-FIP",
-        "ROO T2-ISO30N-150kg-FIP",
-        "ROO T3-ISO5Hz-200kg-OSI",
-        "ROO T3-ISO10Hz-300kg-OSI",
-        "ROO T4-ISOComb-100kg-5Hz-HSI",
-        "ROO T4-ISO100kg-10Hz-HSI",
-        "ROO T4-ISO500kg-10Hz-HSI"
-      ]
+      "image": "/images/products/yayli-titresim-izolatoru.png",
+      "specFlow": "",
+      "specPressure": ""
     },
     "otherCategories": [
       {
@@ -936,6 +1021,30 @@
         "label": "معدات الأتمتة",
         "slug": "otomasyon-malzemeleri"
       }
+    ],
+    "catalogs": [
+      {
+        "title": "كتالوج منتجات العزل عن الاهتزاز والصوت",
+        "meta": "PDF",
+        "href": ""
+      },
+      {
+        "title": "كتالوج منتجات NOVVES العام",
+        "meta": "PDF",
+        "href": ""
+      }
+    ],
+    "guides": [
+      {
+        "title": "دليل التركيب والصيانة",
+        "meta": "Rev. 2024.2",
+        "href": ""
+      },
+      {
+        "title": "صحائف البيانات الفنية",
+        "meta": "PDF",
+        "href": ""
+      }
     ]
   },
   "banyoFanlari": {
@@ -961,7 +1070,26 @@
         "image": "/images/products/banyo-fan-3.jpg",
         "description": "تتميز RP V2 بلوحة أمامية عريضة بتصميم حديث وأداء قوي، مصممة للمساحات التي تُعطي الأولوية للجمال والوظيفة."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "catiFanlari": {
     "title": "HERON",
@@ -1004,7 +1132,26 @@
         "image": "/images/products/free.jpg",
         "description": "مروحة سقف محورية مغطاة."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "damperler": {
     "title": "HOUND",
@@ -1029,7 +1176,26 @@
         "image": "/images/products/hound-crd.jpg",
         "description": "سدادة تفتح تلقائياً لتخفيف الضغط الزائد وحماية مكونات النظام."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
@@ -1072,7 +1238,26 @@
         "image": "/images/products/dragonfly-jr.jpg",
         "description": "مصممة خصيصاً لاستخراج الدخان والتهوية الطارئة في أحجام داخلية صعبة مثل مواقف مغلقة وأنفاق ومناطق حريق. معتمدة EN 12101-3."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
@@ -1091,7 +1276,26 @@
         "image": "/images/products/owl-rwa.jpg",
         "description": "مروحة محورية بريش هوائي عالي الكفاءة للتركيب المستطيل على الحائط."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
@@ -1110,7 +1314,26 @@
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "description": "مروحة قناة مستطيلة بمحرك EC عالي الكفاءة للأنظمة الحديثة. هيكل مدمج وتشغيل هادئ وقابلية دمج مع الأتمتة."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
@@ -1129,7 +1352,26 @@
         "image": "/images/products/nautilus-cif-cidarli.jpg",
         "description": "سلسلة NAUTILUS Silence مراوح طارفة تعمل بكفاءة عالية في أنظمة نقل هواء منخفض الضغط، بهيكل مدمج وتصميم قيادة مباشرة."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "exproofFanlar": {
     "title": "BEAR",
@@ -1190,7 +1432,26 @@
         "image": "/images/products/bear-w.jpg",
         "description": "مانعة لللهب، متوافقة ATEX، أداء عالٍ."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
@@ -1290,7 +1551,26 @@
         "image": "/images/products/turtle-a.jpg",
         "description": "حلول مروحة محورية خزانة مدمجة لأنظمة تتطلب نقل هواء بحجم كبير."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
@@ -1300,6 +1580,25 @@
       "title": "Caracal D",
       "type": "وحدة استعادة حرارة",
       "description": "سلسلة Caracal D (وحدة استعادة حرارة) حل مدمج وعالي الأداء لتجديد الهواء الداخلي وزيادة كفاءة الطاقة. ببناء متين ولوحة تحكم سهلة توفر تهوية مريحة ومستدامة."
+    },
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
     }
   },
   "kanalFanlari": {
@@ -1331,7 +1630,26 @@
         "image": "/images/products/koi-x.jpg",
         "description": "سلسلة KOI-X مصممة لأقصى كفاءة خصوصاً في مناطق الراحة، بهيكل مدمج وتشغيل هادئ وخيار محرك بسرعتين."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "klimaSantralleri": {
     "title": "TIGER",
@@ -1381,7 +1699,26 @@
         "image": "/images/products/marlin-b.jpg",
         "description": "مروحة محورية مشعبة."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
@@ -1394,7 +1731,26 @@
         "image": "/images/products/butterfly-b.jpg",
         "description": "سلسلة Butterfly B حل تهوية متين وعالي الكفاءة لاستخراج البخار الكثيف والدهون والروائح في المطابخ الصناعية والتجارية. بنظام ترشيح متقدم وتشغيل هادئ وبناء طويل الأمد، مثالية للمطابخ المهنية."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   },
   "siginakFanlari": {
     "title": "FOX",
@@ -1413,6 +1769,25 @@
         "image": "/images/products/fox-c.png",
         "description": "سلسلة FOX C حل تهوية مهني للمناطق عالية الأمان، تشغيل هادئ ونظام ترشيح قوي."
       }
-    ]
+    ],
+    "chrome": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "مجموعة المنتجات",
+      "technicalSupport": "الدعم الفني",
+      "model": "طراز",
+      "models": "طراز",
+      "technicalSupportRequest": "طلب دعم فني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر طلباً",
+      "detailedView": "عرض التفاصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "استكشف",
+      "lookingForProduct": "تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني جاهز لتقديم الحل الأنسب لك.",
+      "allSolutions": "عرض جميع الحلول"
+    }
   }
 }

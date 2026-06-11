@@ -18,6 +18,8 @@ export const locales = [
   "ur",
   "lt",
   "pl",
+  "ro",
+  "hu",
 ] as const;
 
 export type Locale = (typeof locales)[number];
@@ -48,6 +50,8 @@ export const localeUi: Record<
   ur: { label: "اردو", short: "UR", flagEmoji: "🇵🇰" },
   lt: { label: "Lietuvių", short: "LT", flagEmoji: "🇱🇹" },
   pl: { label: "Polski", short: "PL", flagEmoji: "🇵🇱" },
+  ro: { label: "Română", short: "RO", flagEmoji: "🇷🇴" },
+  hu: { label: "Magyar", short: "HU", flagEmoji: "🇭🇺" },
 };
 
 /** Accept-Language ana etiketi → locale (bilinmeyen → tr) */
@@ -67,6 +71,8 @@ const ACCEPT_PRIMARY_TO_LOCALE: Record<string, Locale> = {
   ur: "ur",
   lt: "lt",
   pl: "pl",
+  ro: "ro",
+  hu: "hu",
 };
 
 export function pickLocaleFromAcceptLanguage(header: string | null): Locale {
