@@ -6,6 +6,7 @@ import { getDictionary, hasLocale } from "../../dictionaries";
 import { corporateDetailMetadata } from "@/lib/i18n-metadata";
 import { references } from "@/data/references";
 import { applyReferencesLocale } from "@/lib/references/apply-reference-locale";
+import { buildReferenceProductFamilyOptions } from "@/lib/references/reference-product-family";
 import { ReferanslarClient } from "./client";
 
 export async function generateMetadata({
@@ -172,7 +173,7 @@ function humanClassName(classKey: string, className: string, localeLabels?: Reco
     fabrika: "FABRİKA",
     "kamu-binasi": "KAMU BİNASI",
     stadyum: "STADYUM",
-    metro: "METRO",
+    metro: "Metro-Rayl\u0131 Sistem",
     tunel: "TÜNEL",
     "veri-merkezi": "VERİ MERKEZİ",
     tersane: "TERSANE",
@@ -216,11 +217,9 @@ function buildReferenceData(locale: Locale, classLabels?: Record<string, string>
   const countryOptions = uniqueOptions(
     sanitizedReferences.map((r) => ({ key: r.country, label: r.countryName })),
   );
-  const classOptions = uniqueOptions(
-    sanitizedReferences.map((r) => ({ key: r.classKey, label: r.className })),
-  );
+  const productFamilyOptions = buildReferenceProductFamilyOptions(sanitizedReferences);
   const countryCount = new Set(sanitizedReferences.map((r) => r.country)).size;
-  return { sanitizedReferences, countryOptions, classOptions, countryCount };
+  return { sanitizedReferences, countryOptions, productFamilyOptions, countryCount };
 }
 
 export default async function Referanslar({ params }: { params: Promise<{ locale: string }> }) {
@@ -230,13 +229,25 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
   const t = dict.corporate.referanslar;
 
   const classLabels = (t as { classLabels?: Record<string, string> }).classLabels;
-  const { sanitizedReferences, countryOptions, classOptions, countryCount } =
+  const { sanitizedReferences, countryOptions, productFamilyOptions, countryCount } =
     buildReferenceData(locale, classLabels);
 
   const stats = [
-    { value: `${sanitizedReferences.length}+`, label: t.completedProjects, accent: true },
-    { value: `${countryCount}`, label: t.country, accent: false },
-    { value: "2021–2025", label: t.projectPeriod, accent: false },
+    {
+      value: (t as { statsProjectsValue?: string }).statsProjectsValue ?? `${sanitizedReferences.length}+`,
+      label: t.completedProjects,
+      accent: true,
+    },
+    {
+      value: (t as { statsCountriesValue?: string }).statsCountriesValue ?? `${countryCount}`,
+      label: t.country,
+      accent: false,
+    },
+    {
+      value: (t as { statsPeriodValue?: string }).statsPeriodValue ?? "2021–2025",
+      label: t.projectPeriod,
+      accent: false,
+    },
   ];
 
   const header = (
@@ -271,7 +282,7 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
         </div>
       </section>
 
-      <section className="relative z-20 mx-auto -mt-16 max-w-[1400px] px-4 sm:px-6 lg:px-8">
+      <section className="relative z-20 -mt-16 w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 divide-y divide-[#c6c6cd]/20 rounded-2xl bg-white p-6 shadow-[0_32px_48px_-12px_rgba(25,28,30,0.12)] sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:p-8">
           {stats.map((s) => (
             <div key={s.label} className="py-4 text-center sm:py-0">
@@ -301,7 +312,7 @@ export default async function Referanslar({ params }: { params: Promise<{ locale
         locale={locale}
         references={sanitizedReferences}
         countryOptions={countryOptions}
-        classOptions={classOptions}
+        productFamilyOptions={productFamilyOptions}
         dict={t}
         header={header}
       />

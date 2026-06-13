@@ -7,8 +7,8 @@
     "bannerDescription": "Sistemas de extracción de humos y calor; Es uno de los componentes electromecánicos más críticos de la seguridad contra incendios en estacionamientos interiores, túneles, estaciones de metro, aeropuertos, hospitales, instalaciones energéticas y estructuras de gran volumen. Si bien garantiza que el CO, el NOx y contaminantes similares se mantengan en niveles seguros en el uso diario, ayuda a mantener abiertas las rutas de escape, mantener la visibilidad y ayudar a los bomberos a llegar a la fuente del incendio de manera segura al dirigir el humo y los gases calientes de manera controlada en caso de incendio.\n\nNOVVES ofrece un enfoque de control de humo integrado con ventiladores de extracción de humo y ventiladores de chorro DRAGONFLY, compuertas de humo HOUND, ventiladores de aire fresco MARLIN y paneles de automatización HAWK. Sistema; No solo consta de potentes ventiladores, sino que también se integra con automatización, compuertas selladas, equilibrio de aire fresco, verificación CFD e ingeniería compatible con EN/NFPA que funciona según escenarios de incendio. Los ventiladores de clase de temperatura F300/F400 llevan la seguridad del edificio al siguiente nivel con ventilación diaria controlada por sensor de CO/NOx y control de incendios basado en escenarios.",
     "subtitle": "Evacuación controlada de humo y calor durante incendios; Soluciones de extremo a extremo, respaldadas por ingeniería y que cumplen con las regulaciones.",
     "ctaPrimary": "Obtenga una cotización para su proyecto",
-    "ctaSecondary": "Análisis de CFD",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Ventiladores de extracción de humo",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "Seguridad contra incendios"
+    "breadcrumbCategory": "Seguridad contra incendios",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Aparcamientos cubiertos",
+        "description": "CO evacuación + eliminación de humos en caso de incendio",
+        "products": "Jet Fan, ventilador de humo, compuerta",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Túneles de carretera y ferrocarril",
+        "description": "Zonificación de incendios y ruta de aire",
+        "products": "Jet Fan, ventilador axial",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Centros Comerciales (Centros Comerciales)",
+        "description": "Control y evacuación de humos.",
+        "products": "Ventilador celular, ventilador axial, amortiguador",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Estadios y salas de reuniones",
+        "description": "Evacuación de humos en situaciones de emergencia.",
+        "products": "Ventilador axial, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Instalaciones de producción industrial",
+        "description": "Descarga de gas caliente inducida por el proceso",
+        "products": "Ventilador tipo caracol, ventilador de techo, extractor de aire",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Hospitales e instalaciones de salud",
+        "description": "Zonificación de humo en áreas de pacientes",
+        "products": "Ventilador celular, amortiguador",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "aeropuertos",
+        "description": "Evacuación de humos en la capa inferior",
+        "products": "Jet Fan, ventilador axial, ventilador de presurización",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Centros de Almacén y Logística",
+        "description": "Control de humo a altos volúmenes.",
+        "products": "Ventilador de conducto, Jet Fan, compuerta",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Plantas de energía y salas de generadores",
+        "description": "Escape contra incendios eléctricos.",
+        "products": "Ventilador a prueba de explosiones, ventilador de caracol",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Hoteles y Residencias (Edificios de gran altura)",
+        "description": "Presurización de escaleras, evacuación de humos.",
+        "products": "Ventilador celular, ventilador de presurización, compuerta",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Climatización confort",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Edificios de oficinas",
+        "description": "Aire acondicionado central, circulación de aire fresco.",
+        "products": "Unidad de tratamiento de aire, ventilador de conducto, ventilación",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Hoteles y Resorts",
+        "description": "Cómoda distribución del aire, recuperación de calor, funcionamiento silencioso.",
+        "products": "AHU, ventilador celular, filtro",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Escuelas y universidades",
+        "description": "Aire fresco en las aulas, ahorro energético",
+        "products": "Recuperación de calor, ventilador de conducto, ventilación",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Hospitales (departamentos de confort)",
+        "description": "Flujo de aire silencioso y equilibrado para habitaciones y pasillos de pacientes",
+        "products": "AHU, EC Fan, Filtro",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Centros comerciales y tiendas",
+        "description": "Climatización confort, distribución homogénea del aire.",
+        "products": "AHU, ventilador celular, anemostato",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Casas y Residencias",
+        "description": "Soluciones compactas, sistemas de aire silenciosos y energéticamente eficientes.",
+        "products": "Ventilador de conducto, recuperación de calor, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Bancos y edificios públicos",
+        "description": "Sistemas de aire acondicionado central y necesidades de aire fresco.",
+        "products": "Unidad de tratamiento de aire, ventilación, compuerta",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Aeropuertos y terminales",
+        "description": "Sistemas de aire acondicionado de alto volumen",
+        "products": "Gran capacidad AHU, ventiladores celulares",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Restaurantes y cafeterías",
+        "description": "Control de olores, manteniendo el equilibrio de temperatura.",
+        "products": "Ventilador celular, extractor de cocina, filtro",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Gimnasios y centros de fitness",
+        "description": "Aire fresco, circulación de alto flujo.",
+        "products": "Unidad de tratamiento de aire, ventilador de conducto, ventilación",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Ventilación por filtración higiénica",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Quirófanos y Unidades de Cuidados Intensivos",
+        "description": "Filtración microbiológica, control de presión.",
+        "products": "Higiénico AHU, HEPA Filtro, UV-C Ventilador",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Salas limpias",
+        "description": "Control de partículas, nivel de higiene entre clase 100-100.000",
+        "products": "HEPA Ventilador del sistema, presurizado AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Instalaciones de producción farmacéutica",
+        "description": "Cumple con GMP, filtrado y control de presión.",
+        "products": "Unidad de tratamiento de aire higiénico, ventilador de celda filtrada",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Áreas de producción de alimentos",
+        "description": "Circulación higiénica del aire, control de olores y partículas.",
+        "products": "Higiénico AHU, EC Fan, filtro, cuerpo inoxidable",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "laboratorios",
+        "description": "Control de gases y partículas, zonificación de presión negativa/positiva.",
+        "products": "HEPA Ventilador de celda filtrada, compuerta, filtro",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Pisos de Servicio Hospitalarios",
+        "description": "Suministro de aire fresco, control de olores y riesgos de infección.",
+        "products": "Higiénico AHU, EC Fan, ventilador de conducto, filtro",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Cocinas ocupadas (industriales y médicas)",
+        "description": "Neblina de aceite + control de calidad del aire, necesidad de filtro lavable",
+        "products": "Ventilador de cocina, ventilador celular, filtro",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Áreas de Clínica Ganadera y Veterinaria",
+        "description": "Control de microorganismos y malos olores.",
+        "products": "Ventilador con filtro, EC Fan, recuperación de calor",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Gestión del aire industrial",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Instalaciones de la industria pesada",
+        "description": "Evacuación de altas temperaturas, polvo, partículas y gases químicos.",
+        "products": "Ventilador industrial tipo caracol, extractor de aire, amortiguador",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Líneas de Soldadura, Pintura y Producción de Polvos",
+        "description": "Succión local, escape, zonificación de presión negativa.",
+        "products": "Extractor de aire, ventilador recolector de polvo",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Empresas de fundición y metalúrgicas.",
+        "description": "Evacuación de altas temperaturas y humos.",
+        "products": "Ventilador axial resistente a altas temperaturas, ventilador de techo",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Producción de papel, embalaje y textiles.",
+        "description": "Evacuación de fibra, polvo y humedad, recuperación de energía.",
+        "products": "EC Fan, recuperación de calor, ventilador celular",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Plantas de energía",
+        "description": "Ventilación de la sala del generador, evacuación de gases residuales.",
+        "products": "Ventilador de caracol, extractor de aire, ventilador a prueba de explosiones",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Líneas de montaje de maquinaria y automóviles",
+        "description": "Evacuación de calor y humos, recuperación de energía.",
+        "products": "Ventilador celular, ventilador de conducto, ventilador de caracol",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Instalaciones de reciclaje y procesamiento de residuos",
+        "description": "Evacuación de olores, humos y partículas.",
+        "products": "Extractor de aire, ventilador de conducto, filtro",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Áreas de logística y almacenamiento",
+        "description": "Descarga de aire caliente, circulación de aire.",
+        "products": "Ventilador axial, ventilador de techo, ventilador celular",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Talleres de Madera y Muebles",
+        "description": "Evacuación de virutas, polvo y disolventes.",
+        "products": "Ventilador recolector de polvo, compuerta y filtro",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Ventilación de instalaciones ganaderas",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Granjas de pollos",
+        "description": "Sistema de escape de alto flujo para eliminación intensa de humedad, calor y gases.",
+        "products": "Ventilador para aves de corral, extractor de aire",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Unidades de producción de huevos",
+        "description": "Circulación de aire lineal que evita la acumulación de calor y gas.",
+        "products": "Ventilador de conducto, ventilador para aves de corral",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Instalaciones de incubación",
+        "description": "Control preciso del ventilador para una temperatura y movimiento de aire estables",
+        "products": "EC Fan, abanico de pollo",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Ventilación de ganado y graneros",
+        "description": "Control de humedad, amoniaco y CO₂ con circulación de aire.",
+        "products": "Ventilador axial, extractor de aire",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Ventiladores de sala de energía y transformadores",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Centros de Transformación (MT/BT)",
+        "description": "Evacuación obligatoria de aire y gases calientes, confiabilidad 24 horas al día, 7 días a la semana",
+        "products": "Ventilador axial, ventilador de techo",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Salas de generadores",
+        "description": "Escape continuo contra el escape de calor de los motores.",
+        "products": "Ventilador de caracol, extractor de aire",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Subestaciones de Transmisión de Energía",
+        "description": "Soluciones de ventiladores compactos para evitar el calentamiento incontrolado",
+        "products": "Ventilador de conducto, ventilador de pared",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Salas de energía del centro de datos",
+        "description": "Salas de transformadores/UPS que necesitan funcionar a temperatura estable",
+        "products": "EC Fan, ventilador celular",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Ventilación agrícola y de invernaderos",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Invernadero de vidrio o policarbonato",
+        "description": "Control de temperatura, humedad y nivel CO₂; circulación de aire",
+        "products": "Ventilador axial, ventilador de pollo, ventilador de conducto",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Invernadero de túnel de plástico",
+        "description": "Transferencia de aire a baja presión para ayudar a la ventilación natural.",
+        "products": "Ventilador de pollo, ventilador de pared",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Invernadero inteligente (IoT controlado)",
+        "description": "Control automático del ventilador basado en sensores de humedad, temperatura y luz.",
+        "products": "EC Fan, Panel de automatización",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Invernaderos de clima tropical/frío",
+        "description": "Movimiento de aire bidireccional y enrutamiento automático según el clima.",
+        "products": "Ventilador axial bidireccional, amortiguador",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Invernaderos para arboricultura y producción de pasto",
+        "description": "Sistemas de ventiladores livianos para disipar el calor y equilibrar la humedad",
+        "products": "Ventilador tipo conducto, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "Protección contra explosiones ATEX",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Instalaciones químicas y petroquímicas",
+        "description": "Ventilación segura en ambientes explosivos de gas y vapor.",
+        "products": "Ventiladores axiales y de caracol a prueba de explosiones",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Áreas de almacenamiento y llenado de combustible",
+        "description": "Eliminación de gases inflamables del medio ambiente.",
+        "products": "Ventilador de pared a prueba de explosiones, amortiguador",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Talleres de tintura y producciones que utilizan disolventes",
+        "description": "Escape seguro contra la electricidad estática y la acumulación de gases disolventes.",
+        "products": "Ventilador de conducto a prueba de explosiones, recolección de polvo",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Instalaciones de harina, azúcar y polvo químico",
+        "description": "Ventilador antiestático y sistemas cerrados contra explosión de polvo.",
+        "products": "Ventilador axial a prueba de explosiones, sistema ciclónico",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Áreas de Producción de Química Médica y Farmacéutica",
+        "description": "Sistemas de ventiladores filtrados y controlados por presión contra componentes inflamables.",
+        "products": "Ventilador higiénico a prueba de explosiones, extractor con filtro",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Laboratorios de análisis y llenado de gas",
+        "description": "Escape seguro y silencioso para entornos de gases sensibles",
+        "products": "Ventilador compacto a prueba de explosiones, amortiguador",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Automatización y control inteligentes",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Edificios inteligentes (centro comercial, oficinas, hospitales)",
+        "description": "BMS integración, control automático basado en temperatura/humedad/gas",
+        "products": "PLC Panel, sensor, cableado de señal, compuerta automática",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Instalaciones Industriales",
+        "description": "Control de ventiladores basado en procesos, monitoreo remoto, gestión de escenarios",
+        "products": "Panel de automatización, relé, módulo de ventilador automático",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Proyectos de Túneles y Aparcamientos",
+        "description": "Sistemas integrados con ventilador de chorro y sensores CO",
+        "products": "Jet Fan, CO Detector con sensor, panel de automatización",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Vivienda y Residencias",
+        "description": "Sistemas de control compactos, soluciones HVAC respaldadas por interfaces fáciles de usar",
+        "products": "Mini PLC, sensor inteligente, ventilador compacto",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Hospitales y salas limpias",
+        "description": "Sensores de diferencia de presión, nivel de partículas y contaminación de filtros.",
+        "products": "HEPA Ventilador, F9 Sensor, Compuerta automatizada",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Centros de datos",
+        "description": "Gestión de ventilación basada en temperatura, control redundante",
+        "products": "Ventiladores EC de módulo dual controlados por sensor de temperatura",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Ventilación residencial",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Residencias individuales (pisos y villas)",
+        "description": "Soluciones silenciosas, que ahorran espacio y ahorran energía",
+        "products": "Ventilador de conducto, recuperación de calor, compacto AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Proyectos de residencias y viviendas de lujo",
+        "description": "Sistemas de aspecto estético, silenciosos y controlados.",
+        "products": "EC Fan, ventilador celular, ventilación",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Viviendas unifamiliares",
+        "description": "Suministro de aire fresco, escape de baño y cocina.",
+        "products": "Ventilador de baño, ventilador de cocina, ventilador de conducto",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Casas pequeñas y edificios prefabricados",
+        "description": "Productos de tamaño compacto y fáciles de montar.",
+        "products": "EC Fan, ventilador de conducto compacto",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Áreas comunes del sitio",
+        "description": "Extractores de aire y solución de confort central",
+        "products": "Ventilador de pared, ventilador celular",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Ventilación marina y costa afuera",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Salas de máquinas de barcos",
+        "description": "Escape continuo y aire fresco en condiciones de alta temperatura, gases de escape y vibración.",
+        "products": "Ventilador axial, ventilador radial, ventilador ATEX",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Salas de generadores y bombas",
+        "description": "Riesgo de liberación de gases inflamables y calor; Integración de automatización y zonificación sellada.",
+        "products": "Ventilador axial, compuerta, panel de automatización",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Cruceros y ferries",
+        "description": "Ventilación de confort en zonas de pasajeros y tripulación.",
+        "products": "Ventilador axial, ventilador de conducto",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Buques de carga",
+        "description": "Bodega de carga y ventilación de la sala de máquinas.",
+        "products": "Ventilador industrial, ventilador ATEX",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Plataformas costa afuera",
+        "description": "Ventilación de plataformas marinas y escape a prueba de explosiones",
+        "products": "ATEX Ventilador, ventilador axial, compuerta cortafuegos",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "Unidades FPSO y Proyectos de Astilleros",
+        "description": "Integración de automatización, extracción de humo y ventilador marino aprobados en su clase",
+        "products": "Ventilador marino, ventilador de humo, compuerta, panel de automatización",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Yates y Megayates",
+        "description": "Ventilación confortable y escape de la sala de máquinas.",
+        "products": "Ventilador de conducto, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Fabricación personalizada basada en proyectos",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sector / Tipo de proyecto",
+        "description": "Explicación",
+        "products": "Tipos de soluciones basadas en proyectos",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Proyectos de reemplazo arquitectónico",
+        "description": "Requisito de dimensión/conexión especial según la infraestructura del edificio existente",
+        "products": "Diseño de celda/caja a medida",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Proyectos con Restricciones Acústicas (Hoteles, Estudios, etc.)",
+        "description": "Aplicaciones que requieren alto rendimiento bajo límites de ruido",
+        "products": "Diseño de ventilador silencioso, silenciador integrado.",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Edificios altos y zonas de difícil paso",
+        "description": "Productos livianos que pueden caber en un espacio estrecho dentro del eje.",
+        "products": "Ventilador compacto, diseño de producto de montaje modular.",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Vivienda Prestij y proyectos arquitectónicos de lujo",
+        "description": "Aspecto estético, revestimiento superficial y objetivo sonoro mínimo.",
+        "products": "Exterior pintado, instalación oculta, salida de aire invisible.",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Áreas especiales de arquitectura de alimentos y medicinas",
+        "description": "Material antibacteriano, superficie fácil de limpiar y estructura de filtro especial.",
+        "products": "Cuerpo de acero inoxidable, diseño interior con filtro UV.",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "Consultoría de ingeniería CFD",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Aparcamientos cubiertos",
+        "description": "Colocación de ventiladores de chorro, escenario de incendio, simulación de propagación CO",
+        "products": "CFD Análisis, Jet Fan Posicionamiento, Ficha Técnica",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "túneles",
+        "description": "Escenario de ventilación de túneles, análisis de presión y flujo.",
+        "products": "Análisis de flujo, optimización de la dirección del ventilador de chorro.",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Aeropuerto y Estaciones de Metro",
+        "description": "Zonificación de incendios, simulación de capa de humo.",
+        "products": "Elaboración de expediente de proyecto, informe contable.",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Estructuras de gran volumen como centros comerciales y estadios.",
+        "description": "Escenarios de evacuación de humos y diseños adecuados para la evacuación de pasajeros.",
+        "products": "Soporte de ingeniería contra incendios, asesoramiento de escenarios.",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Oficinas de arquitectura y proyectos",
+        "description": "Exploración y cálculo asistidos por software Jet Fan",
+        "products": "CAD diseño admitido, preparación de plantilla técnica",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

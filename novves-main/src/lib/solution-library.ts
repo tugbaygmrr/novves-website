@@ -53,6 +53,14 @@ export type SolutionLibraryPageData = {
   documents: SolutionLibraryDocument[];
   catalogHref: string;
   showDocumentation: boolean;
+  sectorBuildingTypes: SolutionSectorBuildingType[];
+};
+
+export type SolutionSectorBuildingType = {
+  buildingType: string;
+  description: string;
+  products: string;
+  productFamilies: string;
 };
 
 type RawLibraryProduct = {
@@ -102,6 +110,7 @@ type RawSolution = {
   ctaSecondary?: string;
   ctaSecondaryHref?: string;
   systemComponents?: { title: string; desc: string }[];
+  sectorBuildingTypes?: SolutionSectorBuildingType[];
   library?: {
     /** Mavi hero banner altındaki açıklama — `solutions.json` içinde siz doldurursunuz */
     bannerDescription?: string;
@@ -441,6 +450,11 @@ export function buildSolutionLibraryPageData(
     documents,
     showDocumentation,
     catalogHref: `/${locale}/urunler/hava-hareketi`,
+    sectorBuildingTypes: Array.isArray(solution.sectorBuildingTypes)
+      ? solution.sectorBuildingTypes.filter(
+          (item) => item?.buildingType && (item.description || item.products || item.productFamilies),
+        )
+      : [],
   };
 }
 

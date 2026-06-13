@@ -7,8 +7,8 @@
     "bannerDescription": "Systemy odprowadzania dymu i ciepła; Jest to jeden z najważniejszych elektromechanicznych elementów zapewniających bezpieczeństwo przeciwpożarowe na krytych parkingach, tunelach, stacjach metra, lotniskach, szpitalach, obiektach energetycznych i konstrukcjach wielkogabarytowych. Chociaż zapewnia utrzymanie CO, NOx i podobnych substancji zanieczyszczających na bezpiecznym poziomie w codziennym użytkowaniu, pomaga utrzymać otwarte drogi ewakuacyjne, utrzymać widoczność i pomóc strażakom w bezpiecznym dotarciu do źródła pożaru poprzez kierowanie dymu i gorących gazów w kontrolowany sposób w przypadku pożaru.\n\nNOVVES oferuje zintegrowane podejście do kontroli dymu z wentylatorami oddymiającymi i strumieniowymi DRAGONFLY, klapami dymowymi HOUND, wentylatorami świeżego powietrza MARLIN i panelami automatyki HAWK. System; Składa się nie tylko z wydajnych wentylatorów, ale także integruje się z automatyką, uszczelnionymi przepustnicami, bilansem świeżego powietrza, weryfikacją CFD i inżynierią zgodną z EN/NFPA, która działa zgodnie ze scenariuszami pożarowymi. Wentylatory klasy temperaturowej F300/F400 przenoszą bezpieczeństwo budynku na wyższy poziom dzięki codziennej wentylacji sterowanej czujnikami CO/NOx i kontroli przeciwpożarowej opartej na scenariuszach.",
     "subtitle": "Kontrolowane usuwanie dymu i ciepła podczas pożarów; zgodne z przepisami, wspierane przez inżynierów, kompleksowe rozwiązania.",
     "ctaPrimary": "Uzyskaj wycenę swojego projektu",
-    "ctaSecondary": "Analiza CFD",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Wentylatory dymowe",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "Bezpieczeństwo pożarowe"
+    "breadcrumbCategory": "Bezpieczeństwo pożarowe",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Zadaszone parkingi",
+        "description": "CO ewakuacja + oddymianie w przypadku pożaru",
+        "products": "Jet Fan, wentylator oddymiający, przepustnica",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Tunele drogowe i kolejowe",
+        "description": "Strefy pożarowe i prowadzenie powietrza",
+        "products": "Jet Fan, Wentylator osiowy",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Centra handlowe (centra handlowe)",
+        "description": "Kontrola dymu i ewakuacja",
+        "products": "Wentylator komórkowy, wentylator osiowy, amortyzator",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Stadiony i sale konferencyjne",
+        "description": "Oddymianie w sytuacjach awaryjnych",
+        "products": "Wentylator osiowy, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Przemysłowe obiekty produkcyjne",
+        "description": "Wywołane procesem wyładowanie gorącego gazu",
+        "products": "Wentylator ślimakowy, wentylator dachowy, wentylator wyciągowy",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Szpitale i placówki służby zdrowia",
+        "description": "Strefy zadymione w obszarach pacjentów",
+        "products": "Wentylator komórkowy, amortyzator",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "lotniska",
+        "description": "Oddymianie dolnej warstwy",
+        "products": "Jet Fan, wentylator osiowy, wentylator ciśnieniowy",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Centra magazynowe i logistyczne",
+        "description": "Kontrola dymu przy dużych ilościach",
+        "products": "Wentylator kanałowy, Jet Fan, przepustnica",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Elektrownie i pomieszczenia generatorów",
+        "description": "Wydech chroniący przed pożarami urządzeń elektrycznych",
+        "products": "Wentylator przeciwwybuchowy, wentylator ślimakowy",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Hotele i rezydencje (budynki wieżowe)",
+        "description": "Zwiększanie ciśnienia na schodach, oddymianie",
+        "products": "Wentylator komórkowy, wentylator ciśnieniowy, amortyzator",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Komfortowa klimatyzacja",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Budynki biurowe",
+        "description": "Centralna klimatyzacja, dopływ świeżego powietrza",
+        "products": "Centrala wentylacyjna, wentylator kanałowy, wentylacja",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Hotele i kurorty",
+        "description": "Komfortowa dystrybucja powietrza, odzysk ciepła, cicha praca",
+        "products": "AHU, wentylator komórkowy, filtr",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Szkoły i uniwersytety",
+        "description": "Świeże powietrze w salach lekcyjnych, oszczędność energii",
+        "products": "Odzysk ciepła, wentylator kanałowy, wentylacja",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Szpitale (oddziały komfortu)",
+        "description": "Cichy i zrównoważony przepływ powietrza w pokojach pacjentów i na korytarzach",
+        "products": "AHU, EC Fan, Filtr",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Centra handlowe i sklepy",
+        "description": "Komfortowa klimatyzacja, równomierna dystrybucja powietrza",
+        "products": "AHU, wentylator komórkowy, anemostat",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Domy i rezydencje",
+        "description": "Kompaktowe rozwiązania, ciche i energooszczędne systemy wentylacyjne",
+        "products": "Wentylator kanałowy, odzysk ciepła, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Banki i budynki użyteczności publicznej",
+        "description": "Centralne systemy klimatyzacji a zapotrzebowanie na świeże powietrze",
+        "products": "Centrala wentylacyjna, odpowietrznik, przepustnica",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Lotniska i terminale",
+        "description": "Systemy klimatyzacji o dużej wydajności",
+        "products": "Duża pojemność AHU, wentylatory komórkowe",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Restauracje i kawiarnie",
+        "description": "Kontrola zapachu, utrzymanie równowagi temperaturowej",
+        "products": "Wentylator komórkowy, kuchenny wentylator wyciągowy, filtr",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Siłownie i centra fitness",
+        "description": "Świeże powietrze, wysoki przepływ cyrkulacji",
+        "products": "Centrala wentylacyjna, wentylator kanałowy, wentylacja",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Higieniczna wentylacja filtracyjna",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sale operacyjne i oddziały intensywnej terapii",
+        "description": "Filtracja mikrobiologiczna, kontrola ciśnienia",
+        "products": "Higieniczny AHU, HEPA Filtr, UV-C Wentylator",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Pomieszczenia czyste",
+        "description": "Kontrola cząstek, poziom higieny pomiędzy klasami 100-100 000",
+        "products": "HEPA Wentylator systemowy, pod ciśnieniem AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Zakłady Produkcji Farmaceutycznej",
+        "description": "Zgodny z GMP, filtrowanie i kontrola ciśnienia",
+        "products": "Higieniczna centrala wentylacyjna, wentylator z filtrem komorowym",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Obszary produkcji żywności",
+        "description": "Higieniczna cyrkulacja powietrza, kontrola zapachów i cząstek",
+        "products": "Higieniczny AHU, EC Fan, filtr, korpus ze stali nierdzewnej",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "laboratoria",
+        "description": "Kontrola gazów i cząstek, strefy podciśnienia/nadciśnienia",
+        "products": "HEPA Wentylator komorowy z filtrem, przepustnica, filtr",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Piętra służbowe szpitala",
+        "description": "Dopływ świeżego powietrza, kontrola zapachu i ryzyka infekcji",
+        "products": "Higieniczny AHU, EC Fan, wentylator kanałowy, filtr",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Zajęte kuchnie (przemysłowe i medyczne)",
+        "description": "Mgła olejowa + kontrola jakości powietrza, konieczność stosowania zmywalnego filtra",
+        "products": "Wentylator kuchenny, wentylator komórkowy, filtr",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Obszary kliniki hodowlanej i weterynaryjnej",
+        "description": "Kontrola mikroorganizmów i nieprzyjemnych zapachów",
+        "products": "Wentylator z filtrem, EC Fan, odzysk ciepła",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Zarządzanie powietrzem przemysłowym",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Obiekty przemysłu ciężkiego",
+        "description": "Wysoka temperatura, odprowadzanie pyłu, cząstek i gazów chemicznych",
+        "products": "Przemysłowy wentylator ślimakowy, wentylator wyciągowy, przepustnica",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Linie spawalnicze, malarskie i proszkowe",
+        "description": "Lokalne ssanie, wydech, strefa podciśnienia",
+        "products": "Wentylator wyciągowy, wentylator zbierający kurz",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Przedsiębiorstwa odlewnicze i metalurgiczne",
+        "description": "Wysoka temperatura i odprowadzanie dymu",
+        "products": "Wentylator osiowy odporny na wysokie temperatury, wentylator dachowy",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Produkcja papieru, opakowań i tekstyliów",
+        "description": "Odprowadzanie włókien, kurzu i wilgoci, odzysk energii",
+        "products": "EC Fan, Odzysk ciepła, Wentylator komórkowy",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Elektrownie",
+        "description": "Wentylacja pomieszczenia generatora, odprowadzanie gazów odlotowych",
+        "products": "Wentylator ślimakowy, wentylator wyciągowy, wentylator przeciwwybuchowy",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Linie montażowe samochodów i maszyn",
+        "description": "Odprowadzanie ciepła i dymu, odzysk energii",
+        "products": "Wentylator komórkowy, wentylator kanałowy, wentylator ślimakowy",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Urządzenia do recyklingu i przetwarzania odpadów",
+        "description": "Usuwanie zapachów, dymu i cząstek",
+        "products": "Wentylator wyciągowy, wentylator kanałowy, filtr",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Powierzchnie logistyczne i magazynowe",
+        "description": "Wylot gorącego powietrza, cyrkulacja powietrza",
+        "products": "Wentylator osiowy, wentylator dachowy, wentylator komórkowy",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Warsztaty Drewniane i Meblarskie",
+        "description": "Usuwanie wiórów, pyłu i rozpuszczalników",
+        "products": "Wentylator odpylający, tłumik, filtr",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Wentylacja obiektów inwentarskich",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Farmy kurczaków",
+        "description": "Układ wydechowy o wysokim przepływie do intensywnego usuwania wilgoci, ciepła i gazów",
+        "products": "Wentylator do drobiu, wentylator wyciągowy",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Jednostki Produkcji Jaj",
+        "description": "Liniowy obieg powietrza zapobiegający gromadzeniu się ciepła i gazów",
+        "products": "Wentylator kanałowy, wentylator do drobiu",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Inkubatory",
+        "description": "Precyzyjne sterowanie wentylatorem zapewnia stabilną temperaturę i ruch powietrza",
+        "products": "EC Fan, Wachlarz kurczaków",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Wentylacja bydła i obór",
+        "description": "Kontrola wilgotności, amoniaku i CO₂ poprzez cyrkulację powietrza",
+        "products": "Wentylator osiowy, wentylator wyciągowy",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Wentylatory pokojowe transformatorowe i energetyczne",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Centra transformatorowe (SN/NN)",
+        "description": "Obowiązkowe odprowadzanie ogrzanego powietrza i gazów, niezawodność 24/7",
+        "products": "Wentylator osiowy, wentylator dachowy",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Pokoje generatorów",
+        "description": "Ciągły wydech przeciw spalinom cieplnym z silników",
+        "products": "Wentylator ślimakowy, wentylator wyciągowy",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Podstacje przesyłu energii",
+        "description": "Kompaktowe rozwiązania wentylatorowe zapobiegające niekontrolowanemu nagrzewaniu",
+        "products": "Wentylator kanałowy, wentylator ścienny",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Pomieszczenia energetyczne centrum danych",
+        "description": "Pomieszczenia transformatorowe/UPS, które muszą pracować w stabilnej temperaturze",
+        "products": "EC Fan, Wentylator komórkowy",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Wentylacja szklarniowa i rolnicza",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Szklarnia ze szkła lub poliwęglanu",
+        "description": "Kontrola temperatury, wilgotności i poziomu CO₂; cyrkulacja powietrza",
+        "products": "Wentylator osiowy, wentylator do kurczaka, wentylator kanałowy",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Plastikowa szklarnia tunelowa",
+        "description": "Przepływ powietrza pod niskim ciśnieniem w celu wspomagania naturalnej wentylacji",
+        "products": "Wentylator do kurczaka, wentylator ścienny",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Inteligentna szklarnia (IoT kontrolowana)",
+        "description": "Automatyczne sterowanie wentylatorem w oparciu o czujniki wilgotności, temperatury i światła",
+        "products": "EC Fan, Panel automatyzacji",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Szklarnie o klimacie tropikalnym/zimnym",
+        "description": "Dwukierunkowy przepływ powietrza i automatyczne wyznaczanie tras w zależności od klimatu",
+        "products": "Dwukierunkowy wentylator osiowy, amortyzator",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Szklarnie do uprawy drzew i trawy",
+        "description": "Lekkie systemy wentylatorów do odprowadzania ciepła i równoważenia wilgotności",
+        "products": "Wentylator kanałowy, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "Ochrona przeciwwybuchowa ATEX",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Obiekty chemiczne i petrochemiczne",
+        "description": "Bezpieczna wentylacja w środowiskach wybuchowych gazów i oparów",
+        "products": "Wentylatory osiowe i ślimakowe w wykonaniu przeciwwybuchowym",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Miejsca przechowywania i tankowania paliwa",
+        "description": "Usuwanie gazów palnych z otoczenia",
+        "products": "Wentylator ścienny przeciwwybuchowy, tłumik",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Farbownie i produkcje wykorzystujące rozpuszczalniki",
+        "description": "Bezpieczny układ wydechowy chroniący przed elektrycznością statyczną i gromadzeniem się gazów rozpuszczalnikowych",
+        "products": "Wentylator kanałowy przeciwwybuchowy, zbieranie kurzu",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Mąka, cukier, proszki chemiczne",
+        "description": "Wentylator antystatyczny i systemy zamknięte chroniące przed wybuchem pyłu",
+        "products": "Wentylator osiowy odporny na eksplozje, system cyklonowy",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Obszary produkcyjne branży farmaceutycznej i chemii medycznej",
+        "description": "Systemy wentylatorów z filtrem i kontrolą ciśnienia chroniące przed składnikami łatwopalnymi",
+        "products": "Higieniczny wentylator przeciwwybuchowy, wentylator wyciągowy z filtrem",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Laboratoria napełniania i analizowania gazu",
+        "description": "Bezpieczny i cichy wydech dla wrażliwego środowiska gazowego",
+        "products": "Kompaktowy wentylator przeciwwybuchowy, przepustnica",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Inteligentna automatyka i sterowanie",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Inteligentne budynki (centrum handlowe, biuro, szpital)",
+        "description": "BMS integracja, automatyczne sterowanie w oparciu o temperaturę/wilgotność/gaz",
+        "products": "PLC Panel, czujnik, okablowanie sygnałowe, automatyczny tłumik",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Obiekty przemysłowe",
+        "description": "Sterowanie wentylatorami w oparciu o proces, zdalne monitorowanie, zarządzanie scenariuszami",
+        "products": "Panel automatyki, przekaźnik, moduł automatycznego wentylatora",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Projekty tuneli i parkingów",
+        "description": "Zintegrowane systemy z wentylatorem strumieniowym i czujnikami CO",
+        "products": "Jet Fan, CO Czujka z czujnikiem, panel automatyki",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Mieszkania i rezydencje",
+        "description": "Kompaktowe systemy sterowania, rozwiązania HVAC wspierane przez przyjazne dla użytkownika interfejsy",
+        "products": "Mini PLC, inteligentny czujnik, kompaktowy wentylator",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Szpitale i pomieszczenia czyste",
+        "description": "Czujniki różnicy ciśnień, poziomu cząstek i zanieczyszczeń filtrów",
+        "products": "HEPA Wentylator, F9 Czujnik, automatyczna przepustnica",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Centra danych",
+        "description": "Zarządzanie wentylacją w oparciu o temperaturę, sterowanie redundantne",
+        "products": "Dwumodułowe, sterowane czujnikiem temperatury wentylatory EC",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Wentylacja mieszkalna",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Indywidualne rezydencje (mieszkania i wille)",
+        "description": "Ciche, oszczędzające miejsce i energooszczędne rozwiązania",
+        "products": "Wentylator kanałowy, odzysk ciepła, kompaktowy AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Projekty rezydencji i luksusowych domów",
+        "description": "Estetycznie wyglądające, ciche i kontrolowane systemy",
+        "products": "EC Fan, wentylator komórkowy, wentylacja",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Domy wolnostojące",
+        "description": "Dopływ świeżego powietrza, wyciąg z łazienki i kuchni",
+        "products": "Wentylator łazienkowy, wentylator kuchenny, wentylator kanałowy",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Mały dom i budynki prefabrykowane",
+        "description": "Kompaktowe rozmiary, produkty łatwe w montażu",
+        "products": "EC Fan, Kompaktowy wentylator kanałowy",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Obszary wspólne witryny",
+        "description": "Wentylatory wyciągowe i centralne rozwiązanie zapewniające komfort",
+        "products": "Wentylator ścienny, wentylator komórkowy",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Wentylacja morska i morska",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Pomieszczenia maszynowni statku",
+        "description": "Ciągły wydech i świeże powietrze w warunkach wysokiej temperatury, spalin i wibracji",
+        "products": "Wentylator osiowy, wentylator promieniowy, ATEX wentylator",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Generatory i pompownie",
+        "description": "Ryzyko uwolnienia łatwopalnego gazu i ciepła; szczelne zagospodarowanie przestrzenne i integracja automatyki",
+        "products": "Wentylator osiowy, przepustnica, panel automatyki",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Statki wycieczkowe i promy",
+        "description": "Komfortowa wentylacja w pomieszczeniach dla pasażerów i załogi",
+        "products": "Wentylator osiowy, wentylator kanałowy",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Statki towarowe",
+        "description": "Wentylacja ładowni i maszynowni",
+        "products": "Wentylator przemysłowy, ATEX Wentylator",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Platformy offshore",
+        "description": "Wentylacja platformy morskiej i wyciąg przeciwwybuchowy",
+        "products": "ATEX Wentylator, wentylator osiowy, klapa przeciwpożarowa",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "Jednostki FPSO i projekty stoczniowe",
+        "description": "Zatwierdzony w klasie wentylator morski, integracja oddymiania i automatyki",
+        "products": "Wentylator morski, wentylator dymu, przepustnica, panel automatyki",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Jachty i megajachty",
+        "description": "Wentylacja komfortowa i wyciąg z maszynowni",
+        "products": "Wentylator kanałowy, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Produkcja na zamówienie w oparciu o projekt",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sektor/typ projektu",
+        "description": "Wyjaśnienie",
+        "products": "Typy rozwiązań opartych na projektach",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Projekty wymiany architektonicznej",
+        "description": "Specjalne wymagania dotyczące wymiarów/połączeń w oparciu o istniejącą infrastrukturę budynku",
+        "products": "Indywidualny projekt ogniwa/obudowy",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Projekty z ograniczeniami akustycznymi (hotele, studia itp.)",
+        "description": "Zastosowania wymagające wysokiej wydajności w ramach limitów hałasu",
+        "products": "Konstrukcja wentylatora o niskim poziomie hałasu, zintegrowany tłumik",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Wysokie budynki i obszary o trudnym przejściu",
+        "description": "Lekkie produkty, które mieszczą się w wąskiej przestrzeni wewnątrz trzonu",
+        "products": "Kompaktowy wentylator, modułowa konstrukcja produktu",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij Mieszkania i Luksusowe Projekty Architektoniczne",
+        "description": "Estetyczny wygląd, powłoka powierzchniowa i minimalny poziom dźwięku",
+        "products": "Malowana obudowa zewnętrzna, instalacja podtynkowa, niewidoczny wylot powietrza",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Obszary specjalne architektury żywności i medycyny",
+        "description": "Materiał antybakteryjny, powierzchnia łatwa do czyszczenia i specjalna konstrukcja filtra",
+        "products": "Korpus ze stali nierdzewnej, wnętrze z filtrem UV",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "Doradztwo inżynieryjne CFD",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Zadaszone parkingi",
+        "description": "Umiejscowienie wentylatora strumieniowego, scenariusz pożaru, symulacja propagacji CO",
+        "products": "CFD Analiza, Jet Fan Pozycjonowanie, Plik techniczny",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "tunele",
+        "description": "Scenariusz wentylacji tunelu, analiza ciśnienia i przepływu",
+        "products": "Analiza przepływu, optymalizacja kierunku wentylatora strumieniowego",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Lotniska i stacje metra",
+        "description": "Strefy pożarowe, symulacja warstwy dymu",
+        "products": "Przygotowanie dokumentacji projektu, raportu księgowego",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Obiekty o dużej kubaturze, takie jak centra handlowe i stadiony",
+        "description": "Scenariusze i projekty ewakuacji dymu odpowiednie do ewakuacji pasażerów",
+        "products": "Wsparcie inżynierii pożarnej, doradztwo scenariuszowe",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Biura architektoniczne i projektowe",
+        "description": "Eksploracja i obliczenia wspomagane oprogramowaniem wentylatora strumieniowego",
+        "products": "CAD obsługiwany układ, przygotowanie szablonu technicznego",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

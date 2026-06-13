@@ -438,31 +438,24 @@
     "heroDescStitch": "ترکی اور دنیا بھر میں انجینئرنگ کی درستگی اور صنعتی مہارت کے ساتھ مکمل کیے گئے باوقار پروجیکٹس۔",
     "sidebarTitle": "ہمارے حوالہ جات",
     "sidebarSubtitle": "پروجیکٹ کا درجہ بندی",
-    "categories": {
-      "all": "عالمی پروجیکٹس",
-      "industrial": "صنعتی تنصیبات",
-      "residential": "رہائشی اور دفتری",
-      "special": "خصوصی حل"
-    },
     "supportTitle": "مدد درکار ہے؟",
     "supportDesc": "ہماری تکنیکی ٹیم کو آپ کے پروجیکٹس کی تفصیلات آپ کے ساتھ مرتب کرنے دیں۔",
     "supportCta": "نمائندے سے رابطہ کریں",
     "listViewLabel": "فہرست منظر",
     "catalogCta": {
-      "title": "پروجیکٹ کی تفصیلات آپ کی جیب میں",
+      "title": "جیب میں حمارے حوالے",
       "description": "ہمارا انٹرایکٹو کیٹلاگ ڈاؤن لوڈ کریں جس میں تمام حوالہ جات، تکنیکی تفصیلات اور انجینئرنگ حل شامل ہیں۔",
       "button": "کیٹلاگ ڈاؤن لوڈ کریں",
       "pdfFormat": "PDF فارمیٹ",
       "pdfMeta": "24.5 MB • اپ ڈیٹ شدہ: 12.2024",
       "languages": "کثیر لسانی معاونت",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "دستاویز لائبریری"
     },
     "completedProjects": "مکمل شدہ پروجیکٹس",
     "country": "ممالک",
     "projectPeriod": "پروجیکٹ کی مدت",
     "searchPlaceholder": "پروجیکٹ، ملک یا پروڈکٹ تلاش کریں...",
     "allCountries": "تمام ممالک",
-    "allClasses": "تمام زمرے",
     "gridViewLabel": "گرڈ کا منظر",
     "countryViewLabel": "ملک کا نظارہ",
     "clear": "صاف",
@@ -485,7 +478,7 @@
       "fabrika": "کارخانہ",
       "kamu-binasi": "سرکاری عمارت",
       "stadyum": "اسٹیڈیم",
-      "metro": "میٹرو",
+      "metro": "Metro-Rail System",
       "tunel": "سرنگ",
       "veri-merkezi": "ڈیٹا سینٹر",
       "tersane": "جہاز گاہ",
@@ -499,6 +492,140 @@
       "depo": "گودام",
       "showroom": "شو روم",
       "karma-kullanim": "مخلوط استعمال"
+    },
+    "all": "تمام پروجیکٹس",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "بنیادی اور ترانسپورٹ",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "سفر ٹرمنل — ایئرپورٹ"
+          },
+          {
+            "id": "parking",
+            "label": "پارکنگ اور ایپرن سہولیاں"
+          },
+          {
+            "id": "public-building-market",
+            "label": "عمارتی عمارت — مولٹی پرپز بازار"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "صنعتی عمارات اور فیکڑریاں",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "مینوفیکتری پلانٹس"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "لاجسٹکس اور گودام"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "باری صنعتی عمارات"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "صحت کی سہولیاں",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "شہری اسپتال"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "سرکاری اور نجی اسپتال"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "صحت کی کیمپس"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "سیاحت اور مہمان نوازی",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "ہوٹل"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "شاپنگ مالز"
+          },
+          {
+            "id": "office-buildings",
+            "label": "آفس عمارات"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "رہائشی اور شہری بحالی پروجیکٹس",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "اجماعی رہائشی پروجیکٹس"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "شہری بحالی علاقے"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "رہائشی مجمعے"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "عمارتی عمارات اور حکومتی پروجیکٹس",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "تعلیمی عمارات"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "تولید برق اور بنیادی پروجیکٹس",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "پاور پلانٹس"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "بنیادی سہولیاں"
+          },
+          {
+            "id": "utility-service",
+            "label": "فنی اور سروس عمارات"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "تمام پروڈکٹ فیملیز",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

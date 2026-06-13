@@ -438,31 +438,24 @@
     "heroDescStitch": "Престижные проекты, реализованные в Турции и по всему миру с инженерной точностью и промышленным авторитетом.",
     "sidebarTitle": "Наши референсы",
     "sidebarSubtitle": "Иерархия проектов",
-    "categories": {
-      "all": "Глобальные проекты",
-      "industrial": "Промышленные объекты",
-      "residential": "Жильё и офисы",
-      "special": "Специальные решения"
-    },
     "supportTitle": "Нужна поддержка?",
     "supportDesc": "Позвольте нашей технической команде детально проработать ваши проекты вместе с вами.",
     "supportCta": "Связаться с представителем",
     "listViewLabel": "Списком",
     "catalogCta": {
-      "title": "Детали проекта в вашем кармане",
+      "title": "Наши референсы в вашем кармане",
       "description": "Скачайте наш интерактивный каталог со всеми референсами, техническими деталями и инженерными решениями.",
       "button": "Скачать каталог",
       "pdfFormat": "Формат PDF",
       "pdfMeta": "24.5 MB • Обновлено: 12.2024",
       "languages": "Поддержка нескольких языков",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Библиотека документов"
     },
     "completedProjects": "Реализованные проекты",
     "country": "Страны",
     "projectPeriod": "Период проектов",
     "searchPlaceholder": "Поиск проекта, страны или продукции...",
     "allCountries": "Все страны",
-    "allClasses": "Все категории",
     "gridViewLabel": "Табличный вид",
     "countryViewLabel": "Вид по странам",
     "clear": "Очистить",
@@ -485,7 +478,7 @@
       "fabrika": "Завод",
       "kamu-binasi": "Государственное Здание",
       "stadyum": "Стадион",
-      "metro": "Метро",
+      "metro": "Метро-железнодорожная система",
       "tunel": "Тоннель",
       "veri-merkezi": "Центр Обработки Данных",
       "tersane": "Судоверфь",
@@ -499,6 +492,140 @@
       "depo": "Склад",
       "showroom": "Шоурум",
       "karma-kullanim": "Смешанное использование"
+    },
+    "all": "Все проекты",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Инфраструктура и транспорт",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Пассажирские терминалы — Аэропорт"
+          },
+          {
+            "id": "parking",
+            "label": "Парковки и перронные зоны"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Государственное здание — Рынок"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Промышленные объекты и заводы",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Производственные площадки"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Логистика и склады"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Объекты тяжёлой промышленности"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Объекты здравоохранения",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Городские больницы"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Государственные и частные больницы"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Медицинские кампусы"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Туризм и гостиничный бизнес",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Отели"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Торговые центры"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Офисные здания"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Жилые и городские проекты",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Массовое жилищное строительство"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Зоны городской реконструкции"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Жилые комплексы"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Государственные здания и официальные проекты",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Образовательные здания"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Энергетические и инфраструктурные проекты",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Электростанции"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Инфраструктурные объекты"
+          },
+          {
+            "id": "utility-service",
+            "label": "Технические и служебные здания"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Все семейства продукции",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Изображение",
+      "sector": "Сектор",
+      "buildingType": "Тип здания",
+      "projectName": "Название проекта",
+      "productsUsed": "Используемые продукты",
+      "productFamilies": "Названия продуктовых семейств",
+      "country": "Страна"
     }
   },
   "sertifikalar": {

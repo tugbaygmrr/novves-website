@@ -438,31 +438,24 @@
     "heroDescStitch": "Mérnöki precizitással és ipari tekintéllyel Törökország-szerte és világszerte teljesített rangos projektek.",
     "sidebarTitle": "Referenciáink",
     "sidebarSubtitle": "Projekthierarchia",
-    "categories": {
-      "all": "Globális projektek",
-      "industrial": "Ipari létesítmények",
-      "residential": "Lakó- és iroda",
-      "special": "Speciális megoldások"
-    },
     "supportTitle": "Segítségre van szüksége?",
     "supportDesc": "Hagyja, hogy műszaki csapatunk Önnel együtt részletezze projektjeit.",
     "supportCta": "Kapcsolódjon egy képviselőhöz",
     "listViewLabel": "Listanézet",
     "catalogCta": {
-      "title": "Projektrészletek a zsebében",
+      "title": "Referenciáink a zsebedben",
       "description": "Töltse le interaktív katalógusunkat az összes referenciával, műszaki részletekkel és mérnöki megoldásokkal.",
       "button": "Katalógus letöltése",
       "pdfFormat": "PDF formátum",
       "pdfMeta": "24.5 MB • Frissítve: 12.2024",
       "languages": "Többnyelvű támogatás",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Dokumentumtár"
     },
     "completedProjects": "Befejezett projektek",
     "country": "Országok",
     "projectPeriod": "Projektidőszak",
     "searchPlaceholder": "Keresés projekt, ország vagy termék szerint...",
     "allCountries": "Minden ország",
-    "allClasses": "Minden kategória",
     "gridViewLabel": "Rácsnézet",
     "countryViewLabel": "Országnézet",
     "clear": "Törlés",
@@ -485,7 +478,7 @@
       "fabrika": "Gyár",
       "kamu-binasi": "Középület",
       "stadyum": "Stadion",
-      "metro": "Metró",
+      "metro": "Metro-Rail System",
       "tunel": "Alagút",
       "veri-merkezi": "Adatközpont",
       "tersane": "Hajógyár",
@@ -499,6 +492,140 @@
       "depo": "Raktár",
       "showroom": "Bemutatóterem",
       "karma-kullanim": "Vegyes használat"
+    },
+    "all": "Összes projekt",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Infrastruktúra és közlekedés",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Utasterminálok — Repülőtér"
+          },
+          {
+            "id": "parking",
+            "label": "Parkolók és apron területek"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Középület — Többcélú piac"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Ipari létesítmények és gyárak",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Gyártó üzemek"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Logisztika és raktárak"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Nehezipari létesítmények"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Egészségügyi létesítmények",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Városi kórházak"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Állami és magán kórházak"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Egészségügyi campusok"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Turizmus és vendéglátás",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Szállodák"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Bevásárlóközpontok"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Irodaházak"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Lakó- és városfejlesztési projektek",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Tömeges lakásépítési projektek"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Városi megújulási területek"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Lakóparkok"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Középületek és hivatalos projektek",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Oktatási épületek"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Energia- és infrastruktúra-projektek",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Erőművek"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Infrastrukturális létesítmények"
+          },
+          {
+            "id": "utility-service",
+            "label": "Műszaki és szolgáltató épületek"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Összes termékcsalád",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

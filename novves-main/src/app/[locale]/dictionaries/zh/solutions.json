@@ -7,8 +7,8 @@
     "bannerDescription": "排烟排热系统；它是室内停车场、隧道、地铁站、机场、医院、能源设施和大体积结构消防安全最关键的机电部件之一。它不仅确保日常使用中二氧化碳、氮氧化物和类似污染物保持在安全水平，还有助于保持逃生路线畅通、保持能见度，并在发生火灾时以受控方式引导烟雾和热气，帮助消防员安全到达火源。\n\nNOVVES 提供集成烟雾控制方法，包括 DRAGONFLY 排烟风机和射流风机、HOUND 防烟阀、MARLIN 新鲜空气风机和 HAWK 自动化面板。系统;它不仅由强大的风扇组成，还集成了自动化、密封风门、新鲜空气平衡、CFD 验证和根据火灾场景工作的 EN/NFPA 合规工程。 F300/F400 温度等级风机通过 CO/NOx 传感器控制的日常通风和基于场景的消防控制，将建筑安全提升到新的水平。",
     "subtitle": "火灾期间控制烟雾和热量的疏散；符合法规、工程支持的端到端解决方案。",
     "ctaPrimary": "获取您的项目报价",
-    "ctaSecondary": "CFD分析",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "排烟风机",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "消防安全"
+    "breadcrumbCategory": "消防安全",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "有盖停车场",
+        "description": "发生火灾时 CO 疏散 + 排烟",
+        "products": "__学期_10__，排烟扇，风门",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "公路和铁路隧道",
+        "description": "火分区和空气路由",
+        "products": "__学期_10__，轴流风扇",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "购物中心（购物中心）",
+        "description": "烟雾控制和疏散",
+        "products": "蜂窝风扇、轴流风扇、风门",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "体育场馆和会议厅",
+        "description": "紧急情况下的排烟",
+        "products": "轴流风扇，__学期_10__",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "工业生产设施",
+        "description": "过程引起的热气体放电",
+        "products": "蜗牛风扇、屋顶风扇、排气扇",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "医院和卫生设施",
+        "description": "患者区域的烟雾分区",
+        "products": "蜂窝风扇、阻尼器",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "机场",
+        "description": "底层排烟",
+        "products": "Jet Fan，轴流风机，增压风机",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "仓储及物流中心",
+        "description": "大容量烟雾控制",
+        "products": "管道风机，Jet Fan，阻尼器",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "发电厂和发电机房",
+        "description": "排气防止电气火灾",
+        "products": "防爆风扇、蜗牛风扇",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "酒店及住宅（高层建筑）",
+        "description": "楼梯增压、排烟",
+        "products": "蜂窝风扇、增压风扇、风门",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "舒适暖通空调",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "办公楼",
+        "description": "中央空调、新风循环",
+        "products": "空气处理机组、管道风扇、通风口",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "酒店及度假村",
+        "description": "气流分布舒适，热回收，运行安静",
+        "products": "__学期_29__，蜂窝风扇，过滤器",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "学校和大学",
+        "description": "教室空气新鲜，节能",
+        "products": "热回收、管道风扇、通风口",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "医院（安慰科室）",
+        "description": "为病房和走廊提供安静、平衡的气流",
+        "products": "AHU、EC Fan、过滤器",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "购物中心和商店",
+        "description": "舒适空调，空气分布均匀",
+        "products": "__学期_29__，蜂窝风扇，麻醉器",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "独立屋及住宅",
+        "description": "紧凑的解决方案、安静且节能的空气系统",
+        "products": "管道风机，热回收，__学期_15__",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "银行和公共建筑",
+        "description": "中央空调系统和新风需求",
+        "products": "空气处理装置、通风口、风门",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "机场和航站楼",
+        "description": "大容量空调系统",
+        "products": "大容量AHU，蜂窝风扇",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "餐厅和咖啡馆",
+        "description": "控制气味，保持温度平衡",
+        "products": "蜂窝风扇、厨房排气扇、过滤器",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "健身房和健身中心",
+        "description": "空气新鲜，大流量循环",
+        "products": "空气处理机组、管道风扇、通风口",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "卫生过滤通风",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "手术室和重症监护室",
+        "description": "微生物过滤、压力控制",
+        "products": "卫生 AHU、HEPA 过滤器、UV-C 风扇",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "洁净室",
+        "description": "颗粒物控制，卫生等级100-10万级之间",
+        "products": "HEPA 系统风扇，加压 AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "药品生产设施",
+        "description": "符合 GMP 标准，过滤和压力控制",
+        "products": "卫生空气处理装置，过滤电池风扇",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "食品产区",
+        "description": "卫生的空气循环、气味和颗粒控制",
+        "products": "卫生 AHU、EC Fan、过滤器、不锈钢机身",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "实验室",
+        "description": "气体和颗粒控制、负/正压分区",
+        "products": "HEPA 过滤单元风扇、阻尼器、过滤器",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "医院服务楼层",
+        "description": "新风供应、异味及感染风险控制",
+        "products": "卫生 AHU、EC Fan、管道风扇、过滤器",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "繁忙的厨房（工业和医疗）",
+        "description": "油雾+空气质量控制，需要可清洗过滤器",
+        "products": "厨房风扇、蜂窝风扇、过滤器",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "畜牧兽医诊所区",
+        "description": "微生物和不良气味控制",
+        "products": "带过滤器的风扇，EC Fan，热回收",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "工业空气管理",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "重工业设施",
+        "description": "高温、灰尘、颗粒和化学气体的排出",
+        "products": "工业蜗牛风机、排气扇、风门",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "焊接、涂装、喷粉生产线",
+        "description": "局部吸、排气、负压分区",
+        "products": "排风机、除尘风机",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "铸造冶金企业",
+        "description": "高温排烟",
+        "products": "耐高温轴流风机、屋顶风机",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "纸张、包装和纺织品生产",
+        "description": "纤维、灰尘和湿气排出，能量回收",
+        "products": "__学期_15__，热回收，蜂窝风扇",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "发电厂",
+        "description": "发电机房通风、废气排空",
+        "products": "蜗牛风扇、排气扇、防爆风扇",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "汽车和机械装配线",
+        "description": "排热排烟、能量回收",
+        "products": "细胞风扇、管道风扇、蜗牛风扇",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "回收和废物处理设施",
+        "description": "气味、烟雾和颗粒的排出",
+        "products": "排气扇、管道风机、过滤器",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "物流及仓储区",
+        "description": "热风排出、空气循环",
+        "products": "轴流风机、屋顶风机、蜂窝风机",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "木材和家具车间",
+        "description": "切屑、灰尘和溶剂排出",
+        "products": "除尘风机、风阀、过滤器",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "畜牧设施通风",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "养鸡场",
+        "description": "高流量排气系统可去除强烈的湿度、热量和气体",
+        "products": "家禽风机、排气扇",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "产蛋量",
+        "description": "线性空气循环防止热量和气体积聚",
+        "products": "管道风机、家禽风机",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "孵化设施",
+        "description": "精确的风扇控制可实现稳定的温度和空气流动",
+        "products": "__学期_15__，鸡粉丝",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "牛和谷仓通风",
+        "description": "通过空气循环控制湿度、氨气和二氧化碳",
+        "products": "轴流风机、排气扇",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "变压器和能源室风扇",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "变压器中心 (MV/LV)",
+        "description": "强制排出热空气和气体，24/7 可靠性",
+        "products": "轴流风机、屋顶风机",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "发电机房",
+        "description": "连续排气对抗发动机排热",
+        "products": "蜗牛风扇、排气扇",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "能源传输变电站",
+        "description": "紧凑型风扇解决方案可防止不受控制的加热",
+        "products": "管道风扇、壁扇",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "数据中心能源室",
+        "description": "需要稳定温度运行的变压器/UPS机房",
+        "products": "__学期_15__，手机风扇",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "温室和农业通风",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "玻璃或聚碳酸酯温室",
+        "description": "温度、湿度和二氧化碳浓度控制；空气流通",
+        "products": "轴流风机、鸡风机、管道风机",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "塑料隧道温室",
+        "description": "低压空气输送有助于自然通风",
+        "products": "鸡风扇、壁挂式风扇",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "智能温室（物联网控制）",
+        "description": "基于湿度、温度和光传感器的自动风扇控制",
+        "products": "__学期_15__，自动化仪表板",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "热带/寒冷气候温室",
+        "description": "双向空气流动和根据气候自动路由",
+        "products": "双向轴流风机、风门",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "树木栽培和牧草温室",
+        "description": "用于散热和湿度平衡的轻型风扇系统",
+        "products": "管道式风扇，__学期_15__",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX 防爆",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "化学和石化设施",
+        "description": "爆炸性气体和蒸汽环境中的安全通风",
+        "products": "防爆轴流式和蜗牛式风扇",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "燃料储存和加注区",
+        "description": "去除环境中的易燃气体",
+        "products": "防爆壁扇、风门",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "使用溶剂的染色车间和生产",
+        "description": "安全排气，防止静电和溶剂气体积聚",
+        "products": "防爆管道风机、除尘",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "面粉、糖、化学粉末设施",
+        "description": "防静电风扇和封闭系统，防止粉尘爆炸",
+        "products": "防爆轴流风机、旋风系统",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "制药及医学化学生产区",
+        "description": "针对易燃部件的过滤和压力控制风扇系统",
+        "products": "卫生防爆风机、带过滤器排气扇",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "气体填充和分析实验室",
+        "description": "敏感气体环境安全安静排气",
+        "products": "紧凑型防爆风扇、风门",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "智能自动化与控制",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "智能建筑（购物中心、办公室、医院）",
+        "description": "BMS集成，温度/湿度/气体自动控制",
+        "products": "PLC 面板、传感器、信号线、自动阻尼器",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "工业设施",
+        "description": "基于流程的风扇控制、远程监控、场景管理",
+        "products": "自动化面板、继电器、自动风扇模块",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "隧道及停车场项目",
+        "description": "带有射流风扇和 CO 传感器的集成系统",
+        "products": "Jet Fan，带传感器的 CO 检测器，自动化面板",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "住房和住宅",
+        "description": "紧凑型控制系统、HVAC 解决方案由用户友好的界面支持",
+        "products": "迷你 PLC，智能传感器，紧凑型风扇",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "医院和洁净室",
+        "description": "压差、颗粒水平和过滤器污染传感器",
+        "products": "HEPA 风扇、F9 传感器、自动风门",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "数据中心",
+        "description": "基于温度的通风管理，冗余控制",
+        "products": "双模块、温度传感器控制 EC 风扇",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "住宅通风",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "个人住宅（公寓和别墅）",
+        "description": "安静、节省空间、节能的解决方案",
+        "products": "管道风机，热回收，紧凑型 AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "住宅和豪华住宅项目",
+        "description": "美观、安静且受控的系统",
+        "products": "__学期_15__，蜂窝风扇，通风口",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "独立式住宅",
+        "description": "新风供应、浴室及厨房排风",
+        "products": "浴室风扇、厨房风扇、管道风扇",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "小房子和预制建筑",
+        "description": "尺寸紧凑，产品组装方便",
+        "products": "__学期_15__，紧凑型管道风扇",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "站点公共区域",
+        "description": "排气扇和中央舒适解决方案",
+        "products": "壁扇、蜂窝风扇",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "船舶和近海通风",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "船舶机舱",
+        "description": "高温、废气、振动条件下连续排气、新风",
+        "products": "轴流式风扇、径流式风扇、ATEX 风扇",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "发电机和泵房",
+        "description": "易燃气体和放热的风险；密封分区和自动化集成",
+        "products": "轴流风机、风门、自动化面板",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "游轮和渡轮",
+        "description": "乘客和船员区域的舒适通风",
+        "products": "轴流风机、管道风机",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "货船",
+        "description": "货舱和机舱通风",
+        "products": "工业风扇，ATEX 风扇",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "海上平台",
+        "description": "海上平台通风及防爆排气",
+        "products": "__学期_24__ 风机、轴流风机、防火阀",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "__学期_26__ 单位和造船厂项目",
+        "description": "经过船级社认证的船用风机、排烟和自动化集成",
+        "products": "船用风机、排烟风机、风阀、自动化面板",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "游艇和巨型游艇",
+        "description": "舒适通风和机舱排气",
+        "products": "管道风扇，__学期_15__",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "基于项目的定制制造",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "部门/项目类型",
+        "description": "解释",
+        "products": "基于项目的解决方案类型",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "建筑更换项目",
+        "description": "基于现有建筑基础设施的特殊尺寸/连接要求",
+        "products": "定制电池/外壳设计",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "有声学限制的项目（酒店、工作室等）",
+        "description": "在噪声限制下需要高性能的应用",
+        "products": "低噪音风扇设计，集成消音器",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "高层建筑及通行困难区域",
+        "description": "可装入井道内狭窄空间的轻量产品",
+        "products": "紧凑型风扇，模块化组装产品设计",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij 住房和豪华建筑项目",
+        "description": "美观的外观、表面涂层和最小声音目标",
+        "products": "外喷漆、暗装、隐形出风口",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "食品与医药建筑特殊领域",
+        "description": "抗菌材料、易清洁表面和特殊过滤结构",
+        "products": "不锈钢机身，过滤紫外线的内部设计",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD工程咨询",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "有盖停车场",
+        "description": "射流风扇放置、火灾场景、CO 扩散模拟",
+        "products": "CFD 分析、Jet Fan 定位、技术文件",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "隧道",
+        "description": "隧道通风场景、压力和流量分析",
+        "products": "流动分析、射流风机方向优化",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "机场和地铁站",
+        "description": "火分区、烟层模拟",
+        "products": "项目文件准备、会计报告",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "大体量结构，如购物中心、体育场馆",
+        "description": "适合乘客疏散的烟雾疏散场景和设计",
+        "products": "消防工程支持、场景咨询",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "建筑和项目办公室",
+        "description": "射流风扇软件辅助勘探计算",
+        "products": "CAD 支持布局、技术模板准备",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

@@ -7,8 +7,8 @@
     "bannerDescription": "Системаҳои истихроҷи дуд ва гармӣ; Он яке аз муҳимтарин ҷузъҳои электромеханикии бехатарии сӯхтор дар таваққуфгоҳҳои дарунӣ, нақбҳо, истгоҳҳои метро, ​​фурудгоҳҳо, беморхонаҳо, иншооти энергетикӣ ва иншооти калонҳаҷм мебошад. Гарчанде ки он кафолат медиҳад, ки CO, NOx ва ифлоскунандаҳои шабеҳ дар сатҳи бехатар дар истифодаи ҳамарӯза нигоҳ дошта шаванд, он барои кушода нигоҳ доштани роҳҳои гурез, нигоҳ доштани намуди зоҳирӣ ва ба сӯхторнишонон кӯмак мекунад, ки бо роҳи идора кардани дуду газҳои гарм ба таври назоратшаванда ба манбаи сӯхтор дастрас шаванд.\n\nNOVVES як усули ҳамгирошудаи назорати дудро бо мухлисони истихроҷи дуди DRAGONFLY ва мухлисони реактивӣ, дамперҳои дуди HOUND, мухлисони ҳавои тозаи MARLIN ва панелҳои автоматикунонии HAWK пешниҳод мекунад. Система; Он на танҳо аз мухлисони пурқувват иборат аст, балки бо автоматика, амортизаторҳои мӯҳрдор, тавозуни ҳавои тоза, санҷиши CFD ва муҳандисии мувофиқи EN/NFPA, ки мувофиқи сенарияҳои сӯхтор кор мекунад, муттаҳид мешавад. Мухлисони дараҷаи ҳарорати ҳарорат F300/F400 бехатарии биноро бо вентилятсияи ҳаррӯзаи аз ҷониби сенсори CO/NOx идорашаванда ва назорати сенарияи сӯхтор ба сатҳи оянда мебароранд.",
     "subtitle": "Эвакуатсияи назоратшавандаи дуд ва гармӣ дар оташ; Қарорҳои аз ҷониби муҳандисӣ дастгирӣшаванда, ба таври ниҳоӣ, ки ба қоидаҳо мувофиқанд.",
     "ctaPrimary": "Барои лоиҳаи худ нархнома гиред",
-    "ctaSecondary": "Таҳлили CFD",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Вентиляторҳои истихроҷи дуд",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "Бехатарии сӯхтор"
+    "breadcrumbCategory": "Бехатарии сӯхтор",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Паркҳои мошинҳои пӯшида",
+        "description": "Эвакуатсияи CO + тоза кардани дуд ҳангоми сӯхтор",
+        "products": "Jet Fan, вентилятори дуд, дампер",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Туннелхои рох ва рохи охан",
+        "description": "Минтақаҳои сӯхтор ва масири ҳавоӣ",
+        "products": "Jet Fan, вентилятори меҳварӣ",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Марказҳои савдо (Марказҳои савдо)",
+        "description": "Назорати дуд ва эвакуатсия",
+        "products": "Фанҳои мобилӣ, мухлиси аксиалӣ, дампер",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Стадионхо ва залхои мачлисхо",
+        "description": "Эвакуатсияи дуд дар ҳолатҳои фавқулодда",
+        "products": "Фатили меҳвар, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Объектхои истехсолии саноатй",
+        "description": "Ихроҷи гази гарм, ки дар натиҷаи раванд",
+        "products": "Фалли хазон, вентилятори бом, вентилятори ихроҷ",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Беморхонаҳо ва муассисаҳои тандурустӣ",
+        "description": "Минтақаи дуд дар минтақаҳои бемор",
+        "products": "Фанҳои мобилӣ, дампер",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "фурудгоҳҳо",
+        "description": "Эвакуатсияи дуд аз қабати поён",
+        "products": "Jet Fan, Фати меҳвар, Фати фишороварӣ",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Марказҳои анбор ва логистика",
+        "description": "Назорати тамоку дар ҳаҷми баланд",
+        "products": "Фати каналӣ, Jet Fan, Дампер",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Нерӯгоҳҳои барқӣ ва утоқҳои генераторӣ",
+        "description": "Бар зидди сӯхторҳои барқӣ",
+        "products": "Фасли собиқ, Фалли снаул",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Меҳмонхонаҳо ва манзилҳо (биноҳои баландошёна)",
+        "description": "Фишор кардани зинапоя, эвакуацияи дуд",
+        "products": "Фанҳои мобилӣ, мухлиси фишор, дампер",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Кондиционери бароҳат",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Биноҳои офисӣ",
+        "description": "Кондиционери марказӣ, гардиши ҳавои тоза",
+        "products": "Шӯъбаи коркарди ҳаво, вентилятори каналӣ, вентилятсия",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Меҳмонхонаҳо ва курортҳо",
+        "description": "Тақсимоти бароҳати ҳаво, барқарорсозии гармӣ, кори ором",
+        "products": "AHU, Фанҳои мобилӣ, Филтр",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Мактабҳо ва Донишгоҳҳо",
+        "description": "Ҳавои тоза дар синфхонаҳо, сарфаи энергия",
+        "products": "Барқарорсозии гармӣ, Фати каналӣ, вентилятсия",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Беморхонаҳо (шӯъбаҳои бароҳатӣ)",
+        "description": "Ҷараёни ҳавои ором ва мутавозин барои утоқҳои беморон ва долонҳо",
+        "products": "AHU, EC Fan, Филтр",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Мағозаҳо ва марказҳои савдо",
+        "description": "Кондитсионери бароҳат, тақсимоти якхелаи ҳаво",
+        "products": "AHU, Мухлиси мобилӣ, Анемостат",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Хонаҳо ва манзилҳо",
+        "description": "Қарорҳои паймон, системаҳои ҳавои ором ва каммасраф",
+        "products": "Фалли каналӣ, Барқарорсозии гармӣ, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Бонкҳо ва биноҳои ҷамъиятӣ",
+        "description": "Системаҳои кондитсионерии марказӣ ва ниёзҳои ҳавои тоза",
+        "products": "Шӯъбаи коркарди ҳаво, вентилятсия, дампер",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Фурудгоҳҳо ва Терминалҳо",
+        "description": "Системаҳои кондитсионерии ҳаҷми баланд",
+        "products": "Иқтидори калон AHU, Мухлисони мобилӣ",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Тарабхонаҳо ва қаҳвахонаҳо",
+        "description": "Назорати бӯй, нигоҳ доштани тавозуни ҳарорат",
+        "products": "Фанҳои мобилӣ, мухлиси ихроҷи ошхона, филтр",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Толорҳои варзишӣ ва марказҳои фитнес",
+        "description": "Ҳавои тоза, гардиши баланд",
+        "products": "Шӯъбаи коркарди ҳаво, вентилятори каналӣ, вентилятсия",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Вентилятсияи филтратсияи гигиенӣ",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Утоқҳои амалиётӣ ва шӯъбаҳои реаниматсионӣ",
+        "description": "Филтркунии микробиологӣ, назорати фишор",
+        "products": "Гигиенӣ AHU, HEPA Филтр, UV-C Фан",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Хонаҳои тоза",
+        "description": "Назорати зарраҳо, сатҳи гигиенӣ байни синфи 100-100,000",
+        "products": "HEPA мухлиси система, фишоровар AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Муассисаҳои истеҳсоли дорусозӣ",
+        "description": "GMP мувофиқ, филтр ва назорати фишор",
+        "products": "Шӯъбаи коркарди ҳавои гигиенӣ, вентилятори филтршуда",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Майдонхои истехсоли хурокворй",
+        "description": "Муомилоти гигиении ҳаво, назорати бӯй ва зарраҳо",
+        "products": "Гигиенӣ AHU, EC Fan, Филтр, Бадани зангногир",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "лабораторияхо",
+        "description": "Назорати газ ва зарраҳо, минтақаҳои фишори манфӣ / мусбӣ",
+        "products": "HEPA Фанҳои филтршудаи ҳуҷайра, дампер, филтр",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Ошёнаҳои хидматрасонии беморхона",
+        "description": "Таъмини ҳавои тоза, бӯй ва назорати хатари сироят",
+        "products": "Гигиенӣ AHU, EC Fan, вентилятори каналӣ, филтр",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Ошхонаҳои серкор (саноатӣ ва тиббӣ)",
+        "description": "Тумани нафт + назорати сифати ҳаво, ниёз ба филтри шусташаванда",
+        "products": "Фанҳои ошхона, Фати мобилӣ, Филтр",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Участкахои клиникии чорводорй ва ветеринарй",
+        "description": "Микроорганизмҳо ва мубориза бо бӯи бад",
+        "products": "Фан бо Филтр, EC Fan, Барқарорсозии гармӣ",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Идоракунии ҳавои саноатӣ",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Объектхои саноати вазнин",
+        "description": "Ҳарорати баланд, чанг, зарраҳо ва эвакуатсияи гази химиявӣ",
+        "products": "Фанҳои саноатӣ, вентилятори ихроҷӣ, дампер",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Хатхои истехсоли кафшер, рангубор ва хока",
+        "description": "Сохти маҳаллӣ, ихроҷ, минтақаҳои фишори манфӣ",
+        "products": "Фанҳои ихроҷӣ, мухлиси ҷамъоварии хок",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Корхонахои рехтагарй ва металлурги",
+        "description": "Ҳарорати баланд ва эвакуатсияи дуд",
+        "products": "Ба ҳарорати баланд тобовар Фан Axial, Фан боми",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Истеҳсоли коғаз, бастабандӣ ва нассоҷӣ",
+        "description": "Эвакуатсияи нах, чанг ва намӣ, барқарорсозии энергия",
+        "products": "EC Fan, Барқарорсозии гармӣ, Фати мобилӣ",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Нерӯгоҳҳои барқӣ",
+        "description": "Вентилятсияи ҳуҷраи генератор, эвакуатсияи партовҳои газ",
+        "products": "Фанҳои хазон, Фанҳои ихроҷӣ, Фали собиқ",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Хатҳои васлкунии мошинсозӣ ва мошинсозӣ",
+        "description": "Эвакуатсияи гармӣ ва дуд, барқарорсозии энергия",
+        "products": "Фанҳои ҳуҷайра, мухлиси каналҳо, мухлиси ҳаяҷон",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Муассисаҳои коркарди дубора ва коркарди партовҳо",
+        "description": "Бӯй, дуд ва эвакуатсияи зарраҳо",
+        "products": "Фанҳои ихроҷӣ, вентилятори каналӣ, филтр",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Логистика ва минтақаҳои нигоҳдорӣ",
+        "description": "Ихроҷи ҳавои гарм, гардиши ҳаво",
+        "products": "Фан меҳвари, Фанҳои бом, Фати мобилӣ",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Устохонахои чубу тахта ва мебельсозй",
+        "description": "Эвакуатсияи чип, чанг ва ҳалкунанда",
+        "products": "Фанҳои Ҷамъоварии Хок, Дампер, Филтр",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Вентиляцияи объектхои чорводорй",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Фермахои мургпарварй",
+        "description": "Системаи баланди ҷараёни ихроҷ барои намии шадид, гармӣ ва хориҷ кардани газ",
+        "products": "Паррандапарварӣ, вентилятор",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Участкахои истехсоли тухм",
+        "description": "Муомилоти хатии ҳаво, ки ҷамъшавии гармӣ ва газро пешгирӣ мекунад",
+        "products": "вентили каналӣ, вентилятори мурғпарварӣ",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Муассисаҳои инкубаторӣ",
+        "description": "Назорати дақиқи вентилятор барои ҳарорати мӯътадил ва ҳаракати ҳаво",
+        "products": "EC Fan, Мухлиси мурғ",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Вентилятсияи чорво ва анбор",
+        "description": "Назорати намӣ, аммиак ва CO₂ бо гардиши ҳаво",
+        "products": "Фасли меҳвар, вентили ихроҷӣ",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Мухлисони утоқи трансформатор ва энергетикӣ",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Марказҳои трансформаторӣ (MV/LV)",
+        "description": "Эвакуатсияи ҳатмии ҳаво ва газҳои гармшуда, эътимоднокии 24/7",
+        "products": "Фасли меҳвар, вентилятори бом",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Ҳуҷраҳои генераторӣ",
+        "description": "Ихроҷи доимӣ бар зидди ихроҷи гармии муҳаррикҳо",
+        "products": "Фалли хазон, мухлиси ихроҷ",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Станцияхои ёрирасони энергия",
+        "description": "Қарорҳои вентиляторӣ барои пешгирии гармии беназорат",
+        "products": "Шабакаи каналӣ, мухлиси девор",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Ҳуҷраҳои энергетикии маркази маълумот",
+        "description": "Ҳуҷраҳои трансформатор/UPS, ки бояд дар ҳарорати мӯътадил кор кунанд",
+        "products": "EC Fan, Мухлисони мобилӣ",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Гармхона ва вентилятсияи кишоварзӣ",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Гармхонаи шиша ё поликарбонат",
+        "description": "Назорати ҳарорат, намӣ ва сатҳи CO₂; гардиши ҳаво",
+        "products": "Фан меҳвари, Фати мурғ, Фати каналӣ",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Гармхонаи туннели пластикӣ",
+        "description": "Интиқоли ҳавои фишори паст барои кӯмак ба вентилятсияи табиӣ",
+        "products": "Фасли мурғ, мухлиси деворӣ",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Гармхонаи интеллектуалӣ (IoT идорашаванда)",
+        "description": "Назорати автоматии вентилятор дар асоси намӣ, ҳарорат ва сенсорҳои рӯшноӣ",
+        "products": "EC Fan, панели автоматикунонӣ",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Гармхонаҳои тропикӣ/иқлими сард",
+        "description": "Ҳаракати дуҷонибаи ҳаво ва масири автоматӣ мувофиқи иқлим",
+        "products": "Фасли меҳвари дуҷониба, дампер",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Гармхонаҳои дарахтпарварӣ ва истеҳсоли алаф",
+        "description": "Системаҳои вентилятори сабук барои паҳнкунии гармӣ ва мувозинати намӣ",
+        "products": "Фанҳои навъи канал, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "Муҳофизати таркиш ATEX",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Муассисаҳои кимиё ва нефт",
+        "description": "Вентилятсияи бехатар дар муҳити тарканда ва буғ",
+        "products": "Собиқ мухлисони Axial ва Snail",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Минтақаҳои нигоҳдории сӯзишворӣ ва пуркунӣ",
+        "description": "Хориҷ кардани газҳои оташгиранда аз муҳити зист",
+        "products": "Собиқ вентилятори девор, дампер",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Дӯконҳои ранг ва истеҳсолот бо истифода аз ҳалкунандаҳо",
+        "description": "Истеъмоли бехатар бар зидди қувваи барқи статикӣ ва ҷамъшавии гази ҳалкунанда",
+        "products": "Собиқ Фанҳои каналӣ, Ҷамъоварии чанг",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Муассисахои орд, канд, хокаи химиявй",
+        "description": "Фанҳои зидди статикӣ ва системаҳои пӯшида бар зидди таркиши чанг",
+        "products": "Собиқ далели Axial Фан, Системаи сиклон",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Майдонхои истехсоли химияи фармацевтй ва тиббй",
+        "description": "Системаҳои вентилятори филтршуда ва фишори назоратшаванда бар зидди ҷузъҳои оташгиранда",
+        "products": "Фанҳои гигиении Ex-proof, Фати ихроҷӣ бо филтр",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Лабораторияҳои пуркунии газ ва таҳлил",
+        "description": "Ихроҷи бехатар ва ором барои муҳити ҳассос газ",
+        "products": "Фанҳои паймон Ex-proof, Damper",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Автоматизатсия ва идоракунии интеллектуалӣ",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Биноҳои интеллектуалӣ (Маркази савдо, офис, беморхона)",
+        "description": "Интегратсияи BMS, назорати автоматии ҳарорат / намӣ / газ дар асоси",
+        "products": "PLC Панел, сенсор, ноқилҳои сигнал, дамперҳои автоматӣ",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Объектхои саноатй",
+        "description": "Назорати мухлиси дар асоси раванд, мониторинги дурдаст, идоракунии сенария",
+        "products": "Панели автоматизатсия, реле, модули мухлиси худкор",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Лоиҳаҳои нақб ва таваққуфгоҳ",
+        "description": "Системаҳои интегратсионӣ бо вентилятори реактивӣ ва сенсорҳои CO",
+        "products": "Jet Fan, Детектори CO бо сенсор, Панели автоматизатсия",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Манзил ва манзил",
+        "description": "Системаҳои назорати паймон, ҳалли HVAC, ки аз ҷониби интерфейсҳои дӯстона дастгирӣ карда мешаванд",
+        "products": "Мини PLC, Сенсори интеллектуалӣ, Фанҳои паймон",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Беморхонаҳо ва ҳуҷраҳои тоза",
+        "description": "Фарқияти фишор, сатҳи зарраҳо ва датчикҳои ифлосшавии филтр",
+        "products": "HEPA вентилятор, сенсори F9, вентилятсияи автоматӣ",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Марказҳои маълумот",
+        "description": "Идоракунии вентилятсияи ҳарорат, назорати зиёдатӣ",
+        "products": "Модули дугона, мухлисони EC-сенсори ҳарорат идорашаванда",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Вентилятсияи манзил",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Хонаҳои инфиродӣ (квартираҳо ва виллаҳо)",
+        "description": "Ҳалли ором, каммасрафи фазо ва энергияи каммасраф",
+        "products": "Фалли каналӣ, Барқарорсозии гармӣ, Компакт AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Лоиҳаҳои истиқоматӣ ва манзилҳои боҳашамат",
+        "description": "Системаҳои эстетикӣ, ором ва назоратшаванда",
+        "products": "EC Fan, Фати мобилӣ, Вент",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Хонаҳои алоҳида",
+        "description": "Таъмини ҳавои тоза, ихроҷи ванна ва ошхона",
+        "products": "Фанҳои ҳаммом, Фати ошхона, Фати каналӣ",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Хонаҳои хурд ва биноҳои васлшаванда",
+        "description": "Андозаи паймон, осон барои васл кардани маҳсулот",
+        "products": "EC Fan, вентилятори паймон",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Минтақаҳои умумии сайт",
+        "description": "Мухлисони ихроҷкунанда ва ҳалли бароҳати марказӣ",
+        "products": "Фанҳои деворӣ, мухлиси мобилӣ",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Вентилятсияи баҳрӣ ва оффшорӣ",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ҳуҷраҳои муҳаррики киштӣ",
+        "description": "Истеъмоли доимӣ ва ҳавои тоза дар ҳарорати баланд, газҳои ихроҷшуда ва ларзиш",
+        "products": "Фати меҳвар, Фати радиалӣ, ATEX Фан",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Хонаи генератор ва насос",
+        "description": "Хавфи гази оташгиранда ва паҳншавии гармӣ; минтақаҳои мӯҳр ва ҳамгироии автоматикунонӣ",
+        "products": "Фанҳои аксиалӣ, дампер, панели автоматикунонӣ",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Киштиҳои круизӣ ва паромҳо",
+        "description": "Вентилятсияи бароҳат дар минтақаҳои мусофирон ва экипаж",
+        "products": "Фасли меҳвар, мухлиси канал",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Киштиҳои боркаш",
+        "description": "Нигоҳдории бор ва вентилятсияи ҳуҷраи мошин",
+        "products": "Мухлиси саноатӣ, ATEX Фан",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Платформаҳои оффшорӣ",
+        "description": "Вентилятсияи платформаи оффшорӣ ва ихроҷи изофӣ",
+        "products": "ATEX вентилятор, вентилятори меҳварӣ, оташдон",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "FPSO Агрегатхо ва лоихахои киштисозй",
+        "description": "Синфи тасвибшуда мухлиси баҳрӣ, истихроҷи дуд ва ҳамгироии автоматикунонӣ",
+        "products": "Фан Marine, Фан дуд, Damper, Панели автоматикунонии",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Яхтаҳо ва яхтаҳои мега",
+        "description": "Вентилятсияи бароҳат ва ихроҷи ҳуҷраи муҳаррик",
+        "products": "Фати каналӣ, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Истеҳсоли махсус дар асоси лоиҳа",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Бахш / Навъи лоиҳа",
+        "description": "Шарҳ",
+        "products": "Намудҳои ҳалли лоиҳа",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Лоиҳаҳои ивазкунии меъморӣ",
+        "description": "Талаботи махсуси андоза/пайвастшавӣ дар асоси инфрасохтори мавҷудаи бино",
+        "products": "Тарҳрезии ҳуҷайра / корпуси фармоишӣ",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Лоиҳаҳои дорои маҳдудиятҳои акустикӣ (меҳмонхонаҳо, студияҳо ва ғ.)",
+        "description": "Барномаҳое, ки иҷрои баландро дар маҳдудиятҳои садо талаб мекунанд",
+        "products": "Тарҳрезии мухлиси садои паст, хомӯшкунандаи ҳамгирошуда",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Биноҳои баланд ва минтақаҳое, ки гузариши мушкил доранд",
+        "description": "Маҳсулоти сабук, ки метавонанд ба фазои танги дохили чоҳ ҷойгир шаванд",
+        "products": "мухлиси паймон, тарҳи маҳсулоти калисо модулӣ",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Лоиҳаҳои меъмории Prestij Manzil & Luxury",
+        "description": "Намуди зоҳирии эстетикӣ, пӯшиши рӯизаминӣ ва ҳадди ақали ҳадафи садо",
+        "products": "берунии рангубор, насби пинҳонӣ, баромади ҳаво ноаён",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Минтақаҳои махсуси меъмории ғизо ва дору",
+        "description": "Маводи антибактериалӣ, сатҳи тозашаванда ва сохтори махсуси филтр",
+        "products": "Бадани зангногир, тарҳи дохилии ултрабунафш филтршуда",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "Машварати муҳандисии CFD",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Паркҳои мошинҳои пӯшида",
+        "description": "Ҷойгиркунии мухлиси реактивӣ, сенарияи сӯхтор, моделсозии паҳншавии CO",
+        "products": "Таҳлили CFD, Jet Fan Ҷойгиркунӣ, Файли техникӣ",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "нақбҳо",
+        "description": "Сенарияи вентилятсияи туннел, таҳлили фишор ва ҷараёни",
+        "products": "Таҳлили ҷараён, оптимизатсияи самти ҳавои реактивӣ",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Фурудгоҳҳо ва истгоҳҳои метро",
+        "description": "Минтақаи сӯхтор, симулятсияи қабати дуд",
+        "products": "Тартиб додани файли лоиҳа, ҳисоботи баҳисобгирӣ",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Сохторҳои калонҳаҷм ба монанди марказҳои савдо ва стадионҳо",
+        "description": "Сенарияҳо ва тарҳҳои эвакуатсияи дуд, ки барои эвакуатсияи мусофирон мувофиқанд",
+        "products": "Дастгирии муҳандисии оташнишонӣ, машварати сенария",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Идораҳои меъморӣ ва лоиҳавӣ",
+        "description": "Таҳқиқ ва ҳисобкунии нармафзори фанни Jet",
+        "products": "CAD тарҳбандии дастгирӣ, омодасозии шаблон техникӣ",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

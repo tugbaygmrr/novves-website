@@ -438,31 +438,24 @@
     "heroDescStitch": "我们以工程精度和行业权威，在土耳其及全球各地完成的高端项目。",
     "sidebarTitle": "参考案例",
     "sidebarSubtitle": "项目层级",
-    "categories": {
-      "all": "全球项目",
-      "industrial": "工业设施",
-      "residential": "住宅与办公",
-      "special": "特殊解决方案"
-    },
     "supportTitle": "需要支持吗？",
     "supportDesc": "让我们的技术团队与您一同细化项目方案。",
     "supportCta": "联系业务代表",
     "listViewLabel": "列表视图",
     "catalogCta": {
-      "title": "项目详情尽在掌中",
+      "title": "随身参考项目",
       "description": "立即下载我们的交互式产品目录，涵盖所有参考案例、技术细节和工程解决方案。",
       "button": "下载目录",
       "pdfFormat": "PDF 格式",
       "pdfMeta": "24.5 MB • 更新于：12.2024",
       "languages": "多语言支持",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "文档库"
     },
     "completedProjects": "已完成项目",
     "country": "国家",
     "projectPeriod": "项目期间",
     "searchPlaceholder": "搜索项目、国家或产品...",
     "allCountries": "所有国家",
-    "allClasses": "所有类别",
     "gridViewLabel": "网格视图",
     "countryViewLabel": "乡村景观",
     "clear": "清除",
@@ -485,7 +478,7 @@
       "fabrika": "工厂",
       "kamu-binasi": "公共建筑",
       "stadyum": "体育场",
-      "metro": "地铁",
+      "metro": "Metro-Rail System",
       "tunel": "隧道",
       "veri-merkezi": "数据中心",
       "tersane": "造船厂",
@@ -499,6 +492,140 @@
       "depo": "仓库",
       "showroom": "展厅",
       "karma-kullanim": "混合用途"
+    },
+    "all": "全部项目",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "基础设施与交通",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "旅客站楼 — 机场"
+          },
+          {
+            "id": "parking",
+            "label": "停车场与机坪区域"
+          },
+          {
+            "id": "public-building-market",
+            "label": "公共建筑 — 多功能市场"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "工业设施与工厂",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "生产设施"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "物流与仓库"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "重工业设施"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "医疗设施",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "市级医院"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "公立与私立医院"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "医疗园区"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "旅游与酒店",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "酒店"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "购物中心"
+          },
+          {
+            "id": "office-buildings",
+            "label": "办公楼"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "住宅与城市更新项目",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "大规模住宅项目"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "城市更新区域"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "住宅综合体"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "公共建筑与政府项目",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "教育建筑"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "能源与基础设施项目",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "电力厂"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "基础设施项目"
+          },
+          {
+            "id": "utility-service",
+            "label": "技术与服务建筑"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "所有产品系列",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

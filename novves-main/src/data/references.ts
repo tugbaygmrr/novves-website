@@ -1677,8 +1677,8 @@ export const references: Reference[] = [
     "country": "turkiye",
     "countryName": "TÜRKİYE",
     "title": "GEBZE DARICA METRO",
-    "classKey": "demir-yolu-tuneli",
-    "className": "DEMİR YOLU ToNELİ",
+    "classKey": "metro",
+    "className": "METRO-RAYLI SISTEM",
     "productNames": [
       "Dragonfly T",
       "Dragonfly JR",

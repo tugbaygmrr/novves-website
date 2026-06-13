@@ -63,9 +63,190 @@ export type SolutionLibraryUi = {
   docGuidelines: string;
   docBim: string;
   docCert: string;
+  sectorBuildingTypesTitle: string;
+  sectorBuildingTypesDesc: string;
+  sectorColBuildingType: string;
+  sectorColDescription: string;
+  sectorColProducts: string;
+  sectorColFamilies: string;
 };
 
-const UI: Record<Locale, SolutionLibraryUi> = {
+type SolutionLibraryUiBase = Omit<
+  SolutionLibraryUi,
+  | "sectorBuildingTypesTitle"
+  | "sectorBuildingTypesDesc"
+  | "sectorColBuildingType"
+  | "sectorColDescription"
+  | "sectorColProducts"
+  | "sectorColFamilies"
+>;
+
+type SolutionSectorUi = Pick<
+  SolutionLibraryUi,
+  | "sectorBuildingTypesTitle"
+  | "sectorBuildingTypesDesc"
+  | "sectorColBuildingType"
+  | "sectorColDescription"
+  | "sectorColProducts"
+  | "sectorColFamilies"
+>;
+
+const SECTOR_UI: Record<Locale, SolutionSectorUi> = {
+  tr: {
+    sectorBuildingTypesTitle: "Sektör / Yapı Tipi",
+    sectorBuildingTypesDesc:
+      "NOVVES çözümlerinin uygulandığı sektör ve yapı türlerine göre önerilen ürün grupları.",
+    sectorColBuildingType: "Sektör / Yapı Tipi",
+    sectorColDescription: "Açıklama",
+    sectorColProducts: "Kullanılan Ürünler",
+    sectorColFamilies: "Ürün Ailesi Adları",
+  },
+  en: {
+    sectorBuildingTypesTitle: "Sector / Building Type",
+    sectorBuildingTypesDesc:
+      "Recommended product groups by sector and building type for NOVVES solutions.",
+    sectorColBuildingType: "Sector / Building Type",
+    sectorColDescription: "Description",
+    sectorColProducts: "Products Used",
+    sectorColFamilies: "Product Family Names",
+  },
+  ru: {
+    sectorBuildingTypesTitle: "Сектор / Тип здания",
+    sectorBuildingTypesDesc:
+      "Рекомендуемые группы продуктов по сектору и типу здания для решений NOVVES.",
+    sectorColBuildingType: "Сектор / Тип здания",
+    sectorColDescription: "Описание",
+    sectorColProducts: "Используемые продукты",
+    sectorColFamilies: "Названия продуктовых семейств",
+  },
+  ar: {
+    sectorBuildingTypesTitle: "القطاع / نوع المبنى",
+    sectorBuildingTypesDesc:
+      "مجموعات المنتجات الموصى بها حسب القطاع ونوع المبنى لحلول NOVVES.",
+    sectorColBuildingType: "القطاع / نوع المبنى",
+    sectorColDescription: "الوصف",
+    sectorColProducts: "المنتجات المستخدمة",
+    sectorColFamilies: "أسماء عائلات المنتجات",
+  },
+  de: {
+    sectorBuildingTypesTitle: "Sektor / Gebäudetyp",
+    sectorBuildingTypesDesc:
+      "Empfohlene Produktgruppen nach Sektor und Gebäudetyp für NOVVES-Lösungen.",
+    sectorColBuildingType: "Sektor / Gebäudetyp",
+    sectorColDescription: "Beschreibung",
+    sectorColProducts: "Verwendete Produkte",
+    sectorColFamilies: "Produktfamiliennamen",
+  },
+  it: {
+    sectorBuildingTypesTitle: "Settore / Tipo di edificio",
+    sectorBuildingTypesDesc:
+      "Gruppi di prodotti consigliati per settore e tipo di edificio per le soluzioni NOVVES.",
+    sectorColBuildingType: "Settore / Tipo di edificio",
+    sectorColDescription: "Descrizione",
+    sectorColProducts: "Prodotti utilizzati",
+    sectorColFamilies: "Nomi delle famiglie di prodotti",
+  },
+  fr: {
+    sectorBuildingTypesTitle: "Secteur / Type de bâtiment",
+    sectorBuildingTypesDesc:
+      "Groupes de produits recommandés par secteur et type de bâtiment pour les solutions NOVVES.",
+    sectorColBuildingType: "Secteur / Type de bâtiment",
+    sectorColDescription: "Description",
+    sectorColProducts: "Produits utilisés",
+    sectorColFamilies: "Noms des familles de produits",
+  },
+  az: {
+    sectorBuildingTypesTitle: "Sektor / Bina növü",
+    sectorBuildingTypesDesc:
+      "NOVVES həlləri üçün sektor və bina növünə görə tövsiyə olunan məhsul qrupları.",
+    sectorColBuildingType: "Sektor / Bina növü",
+    sectorColDescription: "Təsvir",
+    sectorColProducts: "İstifadə olunan məhsullar",
+    sectorColFamilies: "Məhsul ailəsi adları",
+  },
+  kk: {
+    sectorBuildingTypesTitle: "Сектор / Ғимарат түрі",
+    sectorBuildingTypesDesc:
+      "NOVVES шешімдері үшін сектор мен ғимарат түріне қарай ұсынылған өнім топтамалары.",
+    sectorColBuildingType: "Сектор / Ғимарат түрі",
+    sectorColDescription: "Сипаттама",
+    sectorColProducts: "Пайдаланылатын өнімдер",
+    sectorColFamilies: "Өнім отбасы атаулары",
+  },
+  tg: {
+    sectorBuildingTypesTitle: "Сектор / Навъи бино",
+    sectorBuildingTypesDesc:
+      "Гурӯҳҳои маҳсулоти тавсияшуда барои ҳалли NOVVES аз рӯи сектор ва навъи бино.",
+    sectorColBuildingType: "Сектор / Навъи бино",
+    sectorColDescription: "Тавсиф",
+    sectorColProducts: "Маҳсулоти истифодашуда",
+    sectorColFamilies: "Номҳои оилаи маҳсулот",
+  },
+  es: {
+    sectorBuildingTypesTitle: "Sector / Tipo de edificio",
+    sectorBuildingTypesDesc:
+      "Grupos de productos recomendados por sector y tipo de edificio para soluciones NOVVES.",
+    sectorColBuildingType: "Sector / Tipo de edificio",
+    sectorColDescription: "Descripción",
+    sectorColProducts: "Productos utilizados",
+    sectorColFamilies: "Nombres de familias de productos",
+  },
+  zh: {
+    sectorBuildingTypesTitle: "行业 / 建筑类型",
+    sectorBuildingTypesDesc: "按行业和建筑类型划分的 NOVVES 解决方案推荐产品组。",
+    sectorColBuildingType: "行业 / 建筑类型",
+    sectorColDescription: "说明",
+    sectorColProducts: "使用的产品",
+    sectorColFamilies: "产品系列名称",
+  },
+  ur: {
+    sectorBuildingTypesTitle: "شعبہ / عمارت کی قسم",
+    sectorBuildingTypesDesc:
+      "NOVVES حلول کے لیے شعبے اور عمارت کی قسم کے مطابق تجویز کردہ پروڈکٹ گروپس۔",
+    sectorColBuildingType: "شعبہ / عمارت کی قسم",
+    sectorColDescription: "تفصیل",
+    sectorColProducts: "استعمال شدہ مصنوعات",
+    sectorColFamilies: "پروڈکٹ فیملی کے نام",
+  },
+  lt: {
+    sectorBuildingTypesTitle: "Sektorius / Pastato tipas",
+    sectorBuildingTypesDesc:
+      "Rekomenduojamos produktų grupės pagal sektorių ir pastato tipą NOVVES sprendimams.",
+    sectorColBuildingType: "Sektorius / Pastato tipas",
+    sectorColDescription: "Aprašymas",
+    sectorColProducts: "Naudojami produktai",
+    sectorColFamilies: "Produktų šeimų pavadinimai",
+  },
+  pl: {
+    sectorBuildingTypesTitle: "Sektor / Typ budynku",
+    sectorBuildingTypesDesc:
+      "Zalecane grupy produktów według sektora i typu budynku dla rozwiązań NOVVES.",
+    sectorColBuildingType: "Sektor / Typ budynku",
+    sectorColDescription: "Opis",
+    sectorColProducts: "Używane produkty",
+    sectorColFamilies: "Nazwy rodzin produktów",
+  },
+  ro: {
+    sectorBuildingTypesTitle: "Sector / Tip clădire",
+    sectorBuildingTypesDesc:
+      "Grupuri de produse recomandate după sector și tip de clădire pentru soluțiile NOVVES.",
+    sectorColBuildingType: "Sector / Tip clădire",
+    sectorColDescription: "Descriere",
+    sectorColProducts: "Produse utilizate",
+    sectorColFamilies: "Denumiri familii de produse",
+  },
+  hu: {
+    sectorBuildingTypesTitle: "Ágazat / Épülettípus",
+    sectorBuildingTypesDesc:
+      "Ajánlott termékcsoportok ágazat és épülettípus szerint a NOVVES megoldásokhoz.",
+    sectorColBuildingType: "Ágazat / Épülettípus",
+    sectorColDescription: "Leírás",
+    sectorColProducts: "Használt termékek",
+    sectorColFamilies: "Termékcsalád nevek",
+  },
+};
+
+const UI: Record<Locale, SolutionLibraryUiBase> = {
   tr: {
     categoriesTitle: "Çözüm Kategorileri",
     sidebarSupportTitle: "Teknik destek",
@@ -1157,5 +1338,7 @@ const UI: Record<Locale, SolutionLibraryUi> = {
 };
 
 export function solutionLibraryUi(locale: string): SolutionLibraryUi {
-  return UI[locale as Locale] ?? UI.en;
+  const base = UI[locale as Locale] ?? UI.en;
+  const sector = SECTOR_UI[locale as Locale] ?? SECTOR_UI.en;
+  return { ...base, ...sector };
 }

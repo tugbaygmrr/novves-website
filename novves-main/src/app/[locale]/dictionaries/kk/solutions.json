@@ -7,8 +7,8 @@
     "bannerDescription": "Түтін және жылу сору жүйелері; Бұл жабық тұрақтарда, туннельдерде, метро станцияларында, әуежайларда, ауруханаларда, энергетикалық нысандарда және үлкен көлемді құрылымдарда өрт қауіпсіздігінің ең маңызды электромеханикалық құрамдастарының бірі болып табылады. Бұл CO, NOx және ұқсас ластаушы заттардың күнделікті пайдалануда қауіпсіз деңгейде сақталуын қамтамасыз ете отырып, ол эвакуация жолдарын ашық ұстауға, көрінуді сақтауға және өрт кезінде түтін мен ыстық газдарды бақыланатын түрде бағыттау арқылы өрт сөндірушілерге өрт көзіне қауіпсіз жетуге көмектеседі.\n\nNOVVES DRAGONFLY түтін сорғыш желдеткіштерімен және реактивті желдеткіштермен, HOUND түтін демперлерімен, MARLIN таза ауа желдеткіштерімен және HAWK автоматтандыру панельдерімен біріктірілген түтін бақылау әдісін ұсынады. Жүйе; Ол тек қуатты желдеткіштерден тұрады, сонымен қатар автоматикамен, тығыздалған амортизаторлармен, таза ауа балансымен, CFD тексеруімен және өрт сценарийлеріне сәйкес жұмыс істейтін EN/NFPA сәйкес инженериямен біріктірілген. F300/F400 температура класындағы желдеткіштер CO/NOx сенсорымен басқарылатын күнделікті желдету және сценарийге негізделген өртті бақылау арқылы ғимарат қауіпсіздігін келесі деңгейге көтереді.",
     "subtitle": "Өртте түтін мен жылуды бақыланатын эвакуациялау; Инженерлік қолдау көрсететін, ережелерге сәйкес келетін түпкілікті шешімдер.",
     "ctaPrimary": "Жобаңызға баға ұсынысын алыңыз",
-    "ctaSecondary": "CFD талдауы",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Түтін шығару желдеткіштері",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "Өрт қауіпсіздігі"
+    "breadcrumbCategory": "Өрт қауіпсіздігі",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Жабық автотұрақтар",
+        "description": "СО эвакуациялау + өрт кезінде түтін шығару",
+        "products": "Jet Fan, түтін желдеткіші, демппер",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Автомобиль және темір жол туннельдері",
+        "description": "Өртті аймақтарға бөлу және ауа маршруты",
+        "products": "Jet Fan, осьтік желдеткіш",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Сауда орталықтары (сауда орталықтары)",
+        "description": "Түтінді бақылау және эвакуациялау",
+        "products": "Ұялы желдеткіш, осьтік желдеткіш, демппер",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Стадиондар мен мәжіліс залдары",
+        "description": "Төтенше жағдайларда түтінді эвакуациялау",
+        "products": "Осьтік желдеткіш, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Өнеркәсіптік өндіріс объектілері",
+        "description": "Процесті тудыратын ыстық газ разряды",
+        "products": "Ұлу желдеткіші, шатыр желдеткіші, сорғыш желдеткіш",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Ауруханалар мен денсаулық сақтау мекемелері",
+        "description": "Науқас аймақтарында түтінді аймақтарға бөлу",
+        "products": "Ұялы желдеткіш, демппер",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "әуежайлар",
+        "description": "Түтіннің төменгі қабатын эвакуациялау",
+        "products": "Jet Fan, осьтік желдеткіш, қысымды желдеткіш",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Қойма және логистикалық орталықтар",
+        "description": "Жоғары көлемдегі түтінді бақылау",
+        "products": "Желдеткіш, Jet Fan, демпфер",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Электр станциялары және генераторлық бөлмелер",
+        "description": "Электрлік өртке қарсы шығатын газдар",
+        "products": "Бұрынғы төзімді желдеткіш, ұлуларға арналған желдеткіш",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Қонақ үйлер мен резиденциялар (көп қабатты үйлер)",
+        "description": "Баспалдақпен қысым жасау, түтін шығару",
+        "products": "Ұялы желдеткіш, қысымды желдеткіш, демппер",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Жайлылық кондиционері",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Офистік ғимараттар",
+        "description": "Орталық кондиционер, таза ауа айналымы",
+        "products": "Ауа өңдеу блогы, желдеткіш, желдеткіш",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Қонақ үйлер мен курорттар",
+        "description": "Ыңғайлы ауа бөлу, жылуды қалпына келтіру, тыныш жұмыс",
+        "products": "AHU, ұялы желдеткіш, сүзгі",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Мектептер және университеттер",
+        "description": "Сыныптардағы таза ауа, энергияны үнемдеу",
+        "products": "Жылуды қалпына келтіру, құбыр желдеткіші, желдеткіш",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Ауруханалар (жайлылық бөлімдері)",
+        "description": "Пациент бөлмелері мен дәліздер үшін тыныш және теңдестірілген ауа ағыны",
+        "products": "AHU, EC Fan, Сүзгі",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Сауда орталықтары мен дүкендер",
+        "description": "Ыңғайлы кондиционер, ауаны біркелкі бөлу",
+        "products": "AHU, ұялы желдеткіш, анемостат",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Үйлер мен тұрғын үйлер",
+        "description": "Ықшам шешімдер, тыныш және энергияны үнемдейтін ауа жүйелері",
+        "products": "Желдеткіш, жылуды қалпына келтіру, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Банктер және қоғамдық ғимараттар",
+        "description": "Орталық ауаны баптау жүйелері және таза ауа қажеттілігі",
+        "products": "Ауа өңдеу блогы, желдеткіш, демппер",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Әуежайлар мен терминалдар",
+        "description": "Жоғары көлемді ауа баптау жүйелері",
+        "products": "Үлкен сыйымдылық AHU, Ұялы желдеткіштер",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Мейрамханалар мен кафелер",
+        "description": "Иісті бақылау, температура тепе-теңдігін сақтау",
+        "products": "Ұялы желдеткіш, ас үйге арналған желдеткіш, сүзгі",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Спорт залдары мен фитнес орталықтары",
+        "description": "Таза ауа, жоғары ағын айналымы",
+        "products": "Ауа өңдеу блогы, желдеткіш, желдеткіш",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Гигиеналық фильтрациялық желдету",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Операция бөлмелері және қарқынды терапия бөлімдері",
+        "description": "Микробиологиялық сүзу, қысымды бақылау",
+        "products": "Гигиеналық AHU, HEPA сүзгі, UV-C желдеткіш",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Таза бөлмелер",
+        "description": "Бөлшектерді бақылау, гигиеналық деңгей 100-100 000 сынып аралығында",
+        "products": "HEPA Жүйе желдеткіші, қысымды AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Фармацевтикалық өндіріс орындары",
+        "description": "GMP сәйкес, сүзгілеу және қысымды бақылау",
+        "products": "Гигиеналық ауаны өңдеу қондырғысы, сүзгіден өткен желдеткіш",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Азық-түлік өндірісінің аймақтары",
+        "description": "Гигиеналық ауа айналымы, иіс пен бөлшектерді бақылау",
+        "products": "Гигиеналық AHU, EC Fan, Сүзгі, Тот баспайтын корпус",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "зертханалар",
+        "description": "Газ және бөлшектерді бақылау, теріс/оң қысымды аймақтарға бөлу",
+        "products": "HEPA Сүзілген ұяшық желдеткіші, демпфер, сүзгі",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Ауруханаға қызмет көрсету қабаттары",
+        "description": "Таза ауамен қамтамасыз ету, иіс және инфекция қаупін бақылау",
+        "products": "Гигиеналық AHU, EC Fan, желдеткіш, сүзгі",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Бос асүйлер (өндірістік және медициналық)",
+        "description": "Майлы тұман + ауа сапасын бақылау, жууға болатын сүзгі қажет",
+        "products": "Ас үй желдеткіші, ұялы желдеткіш, сүзгі",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Мал шаруашылығы және ветеринариялық клиника аймақтары",
+        "description": "Микроорганизм және жағымсыз иіспен күресу",
+        "products": "Сүзгі бар желдеткіш, EC Fan, Жылуды қалпына келтіру",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Өнеркәсіптік ауаны басқару",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ауыр өнеркәсіп нысандары",
+        "description": "Жоғары температура, шаң, бөлшектер және химиялық газды эвакуациялау",
+        "products": "Өнеркәсіптік ұлу желдеткіші, сорғыш желдеткіш, демппер",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Дәнекерлеу, бояу және ұнтақты өндіру желілері",
+        "description": "Жергілікті сору, шығару, теріс қысымды аудандастыру",
+        "products": "Шығару желдеткіші, шаң жинау желдеткіші",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Құю және металлургиялық кәсіпорындар",
+        "description": "Жоғары температура мен түтінді эвакуациялау",
+        "products": "Жоғары температураға төзімді осьтік желдеткіш, шатыр желдеткіші",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Қағаз, орау және тоқыма өндірісі",
+        "description": "Талшықты, шаңды және ылғалды эвакуациялау, энергияны қалпына келтіру",
+        "products": "EC Fan, Жылуды қалпына келтіру, ұялы желдеткіш",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Электр станциялары",
+        "description": "Генератор бөлмесін желдету, қалдық газды эвакуациялау",
+        "products": "Ұлу желдеткіші, сорғыш желдеткіш, Ex-proof желдеткіш",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Автокөлік және машина құрастыру желілері",
+        "description": "Жылу мен түтінді эвакуациялау, энергияны қалпына келтіру",
+        "products": "Ұяшық желдеткіші, арна желдеткіші, ұлу желдеткіші",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Қайта өңдеу және қалдықтарды қайта өңдеу қондырғылары",
+        "description": "Иіс, түтін және бөлшектерді эвакуациялау",
+        "products": "Шығару желдеткіші, түтік желдеткіші, сүзгі",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Логистика және сақтау аймақтары",
+        "description": "Ыстық ауа шығару, ауа айналымы",
+        "products": "Осьтік желдеткіш, шатыр желдеткіші, ұялы желдеткіш",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Ағаш және жиһаз шеберханалары",
+        "description": "Чипті, шаңды және еріткіштерді эвакуациялау",
+        "products": "Шаң жинауға арналған желдеткіш, демппер, сүзгі",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Мал шаруашылығы объектілерін желдету",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Тауық фермалары",
+        "description": "Ылғалдылықты, жылуды және газды кетіруге арналған жоғары ағынды шығару жүйесі",
+        "products": "Құс еті желдеткіші, сорғыш желдеткіш",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Жұмыртқа өндіру бөлімшелері",
+        "description": "Жылу мен газдың жиналуын болдырмайтын сызықтық ауа айналымы",
+        "products": "Арна желдеткіші, құс еті желдеткіші",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Инкубациялық қондырғылар",
+        "description": "Тұрақты температура мен ауа қозғалысы үшін желдеткішті дәл басқару",
+        "products": "EC Fan, тауық желдеткіші",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Мал мен қораны желдету",
+        "description": "Ауа айналымы арқылы ылғалдылық, аммиак және CO₂ деңгейін бақылау",
+        "products": "Осьтік желдеткіш, сору желдеткіші",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Трансформатор және энергия бөлмесінің желдеткіштері",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Трансформатор орталықтары (ОЖ/ЖҚ)",
+        "description": "Қыздырылған ауа мен газдарды міндетті түрде эвакуациялау, тәулік бойы сенімділік",
+        "products": "Осьтік желдеткіш, шатыр желдеткіші",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Генератор бөлмелері",
+        "description": "Қозғалтқыштардың жылу шығаруына қарсы үздіксіз газ шығару",
+        "products": "Ұлу желдеткіші, сорғыш желдеткіш",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Энергия тасымалдау қосалқы станциялары",
+        "description": "Бақыланбайтын қыздыруды болдырмау үшін ықшам желдеткіш шешімдер",
+        "products": "Түтік желдеткіші, қабырға желдеткіші",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Деректер орталығының энергетикалық бөлмелері",
+        "description": "Тұрақты температурада жұмыс істеуі қажет трансформатор/UPS бөлмелері",
+        "products": "EC Fan, ұялы желдеткіш",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Жылыжай және ауылшаруашылық желдету",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Шыны немесе поликарбонат жылыжайы",
+        "description": "Температураны, ылғалдылықты және CO₂ деңгейін бақылау; ауа айналымы",
+        "products": "Осьтік желдеткіш, тауық желдеткіші, арна желдеткіші",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Пластикалық туннельді жылыжай",
+        "description": "Табиғи желдетуге көмектесу үшін төмен қысымды ауаны тасымалдау",
+        "products": "Тауық желдеткіші, қабырғаға орнатылған желдеткіш",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Ақылды жылыжай (IoT басқарылатын)",
+        "description": "Ылғалдылық, температура және жарық сенсорларына негізделген желдеткішті автоматты басқару",
+        "products": "EC Fan, Автоматтандыру бақылау тақтасы",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Тропикалық/суық климаттық жылыжайлар",
+        "description": "Екі жақты ауа қозғалысы және климатқа сәйкес автоматты бағыттау",
+        "products": "Екі жақты осьтік желдеткіш, демпфер",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Ағаш өсіру және шөп өсіру жылыжайлары",
+        "description": "Жылуды таратуға және ылғалдылықты теңестіруге арналған жеңіл желдеткіш жүйелері",
+        "products": "Арна түрі желдеткіш, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX жарылыстан қорғау",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Химия және мұнай-химия объектілері",
+        "description": "Жарылыс қаупі бар газ және бу орталарында қауіпсіз желдету",
+        "products": "Экс-proof осьтік және ұлулар желдеткіштері",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Жанармай сақтау және құю аймақтары",
+        "description": "Жанғыш газдарды қоршаған ортадан шығару",
+        "products": "Қабырғаға төзімді желдеткіш, демппер",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Еріткіштерді пайдаланатын бояу цехтары мен өндірістері",
+        "description": "Статикалық электр тогы мен еріткіш газдың жиналуына қарсы қауіпсіз шығару",
+        "products": "Ex-proof арна желдеткіші, шаң жинау",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Ұн, қант, химиялық ұнтақ зауыттары",
+        "description": "Антистатикалық желдеткіш және шаңның жарылуына қарсы жабық жүйелер",
+        "products": "Ex-proof осьтік желдеткіш, циклон жүйесі",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Фармацевтикалық және медициналық химия өндірісі аймақтары",
+        "description": "Жанғыш компоненттерге қарсы фильтрленген және қысыммен басқарылатын желдеткіш жүйелері",
+        "products": "Гигиеналық таза желдеткіш, сүзгісі бар сору желдеткіші",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Газды толтыру және талдау зертханалары",
+        "description": "Сезімтал газ ортасы үшін қауіпсіз және тыныш сору",
+        "products": "Ықшам Ex-proof желдеткіш, демппер",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Интеллектуалды автоматтандыру және басқару",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ақылды ғимараттар (сауда орталығы, кеңсе, аурухана)",
+        "description": "BMS интеграциясы, температура/ылғалдылық/газ негізіндегі автоматты басқару",
+        "products": "PLC Панель, Датчик, Сигнал сымдары, Автоматты демпер",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Өнеркәсіптік нысандар",
+        "description": "Процесс негізінде желдеткішті басқару, қашықтан бақылау, сценарийді басқару",
+        "products": "Автоматтандыру тақтасы, реле, автоматты желдеткіш модулі",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Туннель және автотұрақ жобалары",
+        "description": "Реактивті желдеткіш және CO сенсорлары бар біріктірілген жүйелер",
+        "products": "Jet Fan, сенсоры бар СО детекторы, автоматтандыру тақтасы",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Тұрғын үй және тұрғын үйлер",
+        "description": "Ықшам басқару жүйелері, пайдаланушыға ыңғайлы интерфейстер қолдайтын HVAC шешімдері",
+        "products": "Мини PLC, Smart сенсор, ықшам желдеткіш",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Ауруханалар және таза бөлмелер",
+        "description": "Қысым айырмашылығы, бөлшектер деңгейі және сүзгі ластануы сенсорлары",
+        "products": "HEPA Желдеткіш, F9 сенсоры, автоматтандырылған демппер",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Деректер орталықтары",
+        "description": "Температураға негізделген желдетуді басқару, артық бақылау",
+        "products": "Қос модуль, температура сенсорымен басқарылатын EC желдеткіштері",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Тұрғын үйді желдету",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Жеке тұрғын үйлер (пәтерлер мен виллалар)",
+        "description": "Тыныш, кеңістікті үнемдейтін, энергияны үнемдейтін шешімдер",
+        "products": "Желдеткіш, жылуды қалпына келтіру, ықшам AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Тұрғын үй және сәнді тұрғын үй жобалары",
+        "description": "Эстетикалық көрінетін, тыныш және басқарылатын жүйелер",
+        "products": "EC Fan, ұялы желдеткіш, желдеткіш",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Жеке үйлер",
+        "description": "Таза ауамен қамтамасыз ету, жуынатын бөлме мен ас үйді шығару",
+        "products": "Жуынатын бөлме желдеткіші, ас үй желдеткіші, арна желдеткіші",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Кішкентай үйлер және құрастырмалы ғимараттар",
+        "description": "Ықшам өлшем, оңай құрастырылатын бұйымдар",
+        "products": "EC Fan, ықшам түтік желдеткіші",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Сайттың ортақ аймақтары",
+        "description": "Шығару желдеткіштері және орталық жайлылық шешімі",
+        "products": "Қабырға желдеткіші, ұялы желдеткіш",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Теңіз және теңіздегі желдету",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Кеме қозғалтқыш бөлмелері",
+        "description": "Жоғары температура, пайдаланылған газ және діріл жағдайында үздіксіз шығарылатын және таза ауа",
+        "products": "Осьтік желдеткіш, радиалды желдеткіш, ATEX желдеткіш",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Генератор және сорғы бөлмелері",
+        "description": "Жанғыш газдың және жылудың бөліну қаупі; мөрленген аймақтарға бөлу және автоматтандыруды біріктіру",
+        "products": "Осьтік желдеткіш, демппер, автоматтандыру панелі",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Круиздік кемелер мен паромдар",
+        "description": "Жолаушылар мен экипаждар орналасқан аумақтарда жайлы желдету",
+        "products": "Осьтік желдеткіш, каналдық желдеткіш",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Жүк кемелері",
+        "description": "Жүк қоймасы мен машина бөлмесін желдету",
+        "products": "Өнеркәсіптік желдеткіш, ATEX Желдеткіш",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Оффшорлық платформалар",
+        "description": "Теңіз платформасының желдетуі және экспрессиялық сору",
+        "products": "ATEX Желдеткіш, осьтік желдеткіш, өрт сөндіруші",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "FPSO Бірліктер және кеме жасау зауыты жобалары",
+        "description": "Класс бекітілген теңіз желдеткіші, түтін шығару және автоматтандыру интеграциясы",
+        "products": "Теңіз желдеткіші, түтін желдеткіші, демппер, автоматтандыру панелі",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Яхталар және мега яхталар",
+        "description": "Ыңғайлы желдету және қозғалтқыш бөлмесінің сорғыштары",
+        "products": "Желдеткіш, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Жобаға негізделген арнайы өндіріс",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Сектор/Жоба түрі",
+        "description": "Түсіндіру",
+        "products": "Жобаға негізделген шешім түрлері",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Архитектураны ауыстыру жобалары",
+        "description": "Бар құрылыс инфрақұрылымына негізделген арнайы өлшем/қосылу талабы",
+        "products": "Тапсырыспен жасалған ұяшық/қорап дизайны",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Акустикалық шектеулері бар жобалар (қонақ үйлер, студиялар және т.б.)",
+        "description": "Шу шектеулері кезінде жоғары өнімділікті қажет ететін қолданбалар",
+        "products": "Төмен шуыл желдеткіш дизайны, дыбыс өшіргіш біріктірілген",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Биік ғимараттар мен өтуі қиын аумақтар",
+        "description": "Білік ішіндегі тар кеңістікке сыятын жеңіл өнімдер",
+        "products": "Ықшам желдеткіш, модульдік құрастыру өнімінің дизайны",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij тұрғын үй және люкс сәулет жобалары",
+        "description": "Эстетикалық көрініс, бетті жабу және минималды дыбыстық мақсат",
+        "products": "Сырты боялған, жасырын қондырғы, көзге көрінбейтін ауа шығатын",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Азық-түлік және медицина архитектурасының арнайы аймақтары",
+        "description": "Антибактериалды материал, оңай тазартылатын беті және арнайы сүзгі құрылымы",
+        "products": "Тот баспайтын корпус, ультракүлгін сүзгіден өткен интерьер дизайны",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD инженерлік кеңес беру",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Жабық автотұрақтар",
+        "description": "Реактивті желдеткішті орналастыру, өрт сценарийі, СО таралу симуляциясы",
+        "products": "CFD талдауы, Jet Fan позициялау, техникалық файл",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "туннельдер",
+        "description": "Туннельді желдету сценарийі, қысым мен ағынды талдау",
+        "products": "Ағынды талдау, реактивті желдеткіш бағытын оңтайландыру",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Әуежай және метро станциялары",
+        "description": "Өртті аймақтарға бөлу, түтін қабатын модельдеу",
+        "products": "Жоба файлын дайындау, бухгалтерлік есеп беру",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Сауда орталықтары мен стадиондар сияқты үлкен көлемді құрылымдар",
+        "description": "Түтінді эвакуациялау сценарийлері және жолаушыларды эвакуациялауға қолайлы конструкциялар",
+        "products": "Өртке қарсы техникалық қолдау, сценарий бойынша кеңес беру",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Сәулет және жобалық кеңселер",
+        "description": "Реактивті желдеткіш бағдарламалық құрал көмегімен барлау және есептеу",
+        "products": "CAD қолдау көрсетілетін макет, техникалық үлгіні дайындау",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

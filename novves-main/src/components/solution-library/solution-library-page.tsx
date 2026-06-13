@@ -22,6 +22,7 @@ import {
 } from "@/lib/solution-library-search";
 import type { SolutionLibraryUi } from "@/lib/solution-library-ui";
 import { SolutionLibraryStripFooter } from "@/components/solution-library/solution-library-strip-footer";
+import { SolutionLibrarySectorSection } from "@/components/solution-library/solution-library-sector-section";
 import {
   SOLUTION_LIBRARY_DESKTOP_SIDEBAR,
   SOLUTION_LIBRARY_MOBILE_DRAWER,
@@ -715,6 +716,12 @@ export function SolutionLibraryPage({
               ctaSecondaryHref={data.ctaSecondaryHref}
             />
           </section>
+
+          {data.sectorBuildingTypes.length > 0 ? (
+            <section className={`${SOLUTION_LIBRARY_PAGE_X} pb-8`}>
+              <SolutionLibrarySectorSection items={data.sectorBuildingTypes} ui={ui} />
+            </section>
+          ) : null}
 
           {showProductsSection ? (
           <section id="bolum-urunler" className={`${SOLUTION_LIBRARY_PAGE_X} pb-10 scroll-mt-28`}>

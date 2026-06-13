@@ -438,31 +438,24 @@
     "heroDescStitch": "Prestižiniai projektai, įgyvendinti visoje Turkijoje ir pasaulyje pasitelkiant inžinerinį tikslumą ir pramoninę kompetenciją.",
     "sidebarTitle": "Mūsų referencijos",
     "sidebarSubtitle": "Projektų hierarchija",
-    "categories": {
-      "all": "Pasauliniai projektai",
-      "industrial": "Pramoniniai objektai",
-      "residential": "Būstas ir biurai",
-      "special": "Specialūs sprendimai"
-    },
     "supportTitle": "Reikia pagalbos?",
     "supportDesc": "Leiskite mūsų techninei komandai aptarti jūsų projektus su jumis.",
     "supportCta": "Susisiekti su atstovu",
     "listViewLabel": "Sąrašo rodinys",
     "catalogCta": {
-      "title": "Projektų informacija jūsų kišenėje",
+      "title": "Mūsų referencijos kišenėje",
       "description": "Atsisiųskite mūsų interaktyvų katalogą su visomis referencijomis, techninėmis detalėmis ir inžineriniais sprendimais.",
       "button": "Atsisiųsti katalogą",
       "pdfFormat": "PDF formatas",
       "pdfMeta": "24.5 MB • Atnaujinta: 12.2024",
       "languages": "Daugiakalbis palaikymas",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Dokumentų biblioteka"
     },
     "completedProjects": "Užbaigti projektai",
     "country": "Šalys",
     "projectPeriod": "Projekto laikotarpis",
     "searchPlaceholder": "Ieškokite projekto, šalies ar produkto...",
     "allCountries": "Visos šalys",
-    "allClasses": "Visos kategorijos",
     "gridViewLabel": "Tinklelio vaizdas",
     "countryViewLabel": "Šalies vaizdas",
     "clear": "Aišku",
@@ -485,7 +478,7 @@
       "fabrika": "Gamykla",
       "kamu-binasi": "Viešasis pastatas",
       "stadyum": "Stadionas",
-      "metro": "Metro",
+      "metro": "Metro-Rail System",
       "tunel": "Tunelis",
       "veri-merkezi": "Duomenų centras",
       "tersane": "Laivų statykla",
@@ -499,6 +492,140 @@
       "depo": "Sandėlis",
       "showroom": "Showroom",
       "karma-kullanim": "Mišraus naudojimo"
+    },
+    "all": "Visi projektai",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Infrastruktūra ir transportas",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Keleivių terminalai — Oro uostas"
+          },
+          {
+            "id": "parking",
+            "label": "Automobilių stovėjimo aikštelės ir apronai"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Viešasis pastatas — Daugiapaskirtė rinka"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Pramonės objektai ir gamyklos",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Gamyklos"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Logistika ir sandėliai"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Sunkiosios pramonės objektai"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Sveikatos priežiūros objektai",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Miesto ligoninės"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Valstybinės ir privačios ligoninės"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Sveikatos campusai"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Turizmas ir svetingumas",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Viešbučiai"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Prekybos centrai"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Biurų pastatai"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Būtų ir urbanistinės regeneracijos projektai",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Masinio būtų statybos projektai"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Miesto atnaujinimo zonos"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Gyvenamieji kompleksai"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Viešieji pastatai ir oficialūs projektai",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Švietimo pastatai"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Energijos ir infrastruktūros projektai",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Elektrinės"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Infrastruktūros objektai"
+          },
+          {
+            "id": "utility-service",
+            "label": "Techniniai ir aptarnavimo pastatai"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Visos produktų šeimos",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

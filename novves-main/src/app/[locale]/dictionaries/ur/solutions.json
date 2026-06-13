@@ -7,8 +7,8 @@
     "bannerDescription": "دھواں اور گرمی نکالنے کے نظام؛ یہ انڈور پارکنگ لاٹس، سرنگوں، میٹرو سٹیشنوں، ہوائی اڈوں، ہسپتالوں، توانائی کی سہولیات اور بڑے حجم کے ڈھانچے میں فائر سیفٹی کے سب سے اہم الیکٹرو مکینیکل اجزاء میں سے ایک ہے۔ اگرچہ یہ یقینی بناتا ہے کہ CO، NOx اور اسی طرح کے آلودگیوں کو روزانہ استعمال میں محفوظ سطح پر رکھا جائے، یہ فرار کے راستوں کو کھلا رکھنے، مرئیت کو برقرار رکھنے اور آگ لگنے کی صورت میں دھویں اور گرم گیسوں کو کنٹرول کے ذریعے آگ بجھانے والوں کو محفوظ طریقے سے آگ کے منبع تک پہنچنے میں مدد کرتا ہے۔\n\nNOVVES DRAGONFLY دھواں نکالنے کے پرستاروں اور جیٹ پنکھوں، HOUND smoke dampers، MARLIN کی تازہ ہوا کے پرستاروں اور HAWK آٹومیشن پینلز کے ساتھ ایک مربوط سموک کنٹرول اپروچ پیش کرتا ہے۔ نظام; یہ نہ صرف طاقتور پنکھوں پر مشتمل ہے بلکہ آٹومیشن، سیل شدہ ڈیمپرز، تازہ ہوا کا توازن، CFD تصدیق اور EN/NFPA کمپلائنٹ انجینئرنگ کے ساتھ بھی مربوط ہے جو آگ کے حالات کے مطابق کام کرتی ہے۔ F300/F400 درجہ حرارت کلاس کے پرستار CO/NOx سینسر کے زیر کنٹرول روزانہ وینٹیلیشن اور منظر نامے پر مبنی فائر کنٹرول کے ساتھ عمارت کی حفاظت کو اگلے درجے تک لے جاتے ہیں۔",
     "subtitle": "آگ کے دوران دھوئیں اور گرمی کا کنٹرول شدہ انخلاء؛ ریگولیشن کے مطابق، انجینئرنگ سے تعاون یافتہ، آخر سے آخر تک حل۔",
     "ctaPrimary": "اپنے پروجیکٹ کے لیے ایک اقتباس حاصل کریں۔",
-    "ctaSecondary": "CFD تجزیہ",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "دھواں نکالنے والے پنکھے",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "فائر سیفٹی"
+    "breadcrumbCategory": "فائر سیفٹی",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "کور پارکس",
+        "description": "آگ لگنے کی صورت میں CO انخلاء + دھواں ہٹانا",
+        "products": "Jet Fan، دھواں والا پنکھا، ڈیمپر",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "سڑک اور ریلوے سرنگیں۔",
+        "description": "فائر زوننگ اور ایئر روٹنگ",
+        "products": "Jet Fan، محوری پنکھا۔",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "شاپنگ مالز (شاپنگ مالز)",
+        "description": "دھواں کنٹرول اور انخلاء",
+        "products": "سیلولر پنکھا، محوری پنکھا، ڈیمپر",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "اسٹیڈیم اور میٹنگ ہال",
+        "description": "ہنگامی حالات میں دھواں نکالنا",
+        "products": "محوری پنکھا، Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "صنعتی پیداواری سہولیات",
+        "description": "عمل کی حوصلہ افزائی گرم گیس خارج ہونے والے مادہ",
+        "products": "گھونگے کا پنکھا، چھت کا پنکھا، ایگزاسٹ پنکھا۔",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "ہسپتال اور صحت کی سہولیات",
+        "description": "مریضوں کے علاقوں میں دھواں زوننگ",
+        "products": "سیلولر پنکھا، ڈیمپر",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "ہوائی اڈے",
+        "description": "نیچے کی تہہ سے دھواں نکالنا",
+        "products": "Jet Fan، محوری پنکھا، دباؤ کا پنکھا۔",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "گودام اور لاجسٹک مراکز",
+        "description": "زیادہ مقدار میں دھواں کنٹرول",
+        "products": "ڈکٹ فین، Jet Fan، ڈیمپر",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "پاور پلانٹس اور جنریٹر کے کمرے",
+        "description": "بجلی کی آگ کے خلاف راستہ",
+        "products": "سابق پروف فین، گھونگھے کا پرستار",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "ہوٹل اور رہائش گاہیں (اونچی عمارتیں)",
+        "description": "سیڑھیوں کا دباؤ، دھواں نکالنا",
+        "products": "سیلولر فین، پریشرائزیشن فین، ڈیمپر",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "کمفرٹ HVAC",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "دفتری عمارتیں",
+        "description": "مرکزی ایئر کنڈیشنگ، تازہ ہوا کی گردش",
+        "products": "ایئر ہینڈلنگ یونٹ، ڈکٹ فین، وینٹ",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "ہوٹل اور ریزورٹس",
+        "description": "آرام دہ اور پرسکون ہوا کی تقسیم، گرمی کی بحالی، پرسکون آپریشن",
+        "products": "AHU، سیلولر فین، فلٹر",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "اسکول اور یونیورسٹیاں",
+        "description": "کلاس رومز میں تازہ ہوا، توانائی کی بچت",
+        "products": "ہیٹ ریکوری، ڈکٹ فین، وینٹ",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "ہسپتال (آرام کے شعبے)",
+        "description": "مریض کے کمروں اور راہداریوں کے لیے پرسکون اور متوازن ہوا کا بہاؤ",
+        "products": "AHU، EC Fan، فلٹر",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "شاپنگ مالز اور اسٹورز",
+        "description": "آرام دہ اور پرسکون ایئر کنڈیشنگ، یکساں ہوا تقسیم",
+        "products": "AHU، سیلولر فین، انیموسٹیٹ",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "مکانات اور رہائش گاہیں",
+        "description": "کومپیکٹ حل، پرسکون اور توانائی سے موثر ہوا کا نظام",
+        "products": "ڈکٹ فین، ہیٹ ریکوری، EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "بینک اور عوامی عمارتیں",
+        "description": "سنٹرل ایئر کنڈیشنگ سسٹم اور تازہ ہوا کی ضروریات",
+        "products": "ایئر ہینڈلنگ یونٹ، وینٹ، ڈیمپر",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "ہوائی اڈے اور ٹرمینلز",
+        "description": "ہائی حجم ایئر کنڈیشنگ سسٹم",
+        "products": "بڑی گنجائش AHU، سیلولر پنکھے۔",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "ریستوراں اور کیفے",
+        "description": "گند کنٹرول، درجہ حرارت کے توازن کو برقرار رکھنے",
+        "products": "سیلولر پنکھا، کچن ایگزاسٹ فین، فلٹر",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "جم اور صحت کے مراکز",
+        "description": "تازہ ہوا، اعلی بہاؤ گردش",
+        "products": "ایئر ہینڈلنگ یونٹ، ڈکٹ فین، وینٹ",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "صحت بخش فلٹریشن وینٹیلیشن",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "آپریٹنگ رومز اور انتہائی نگہداشت کے یونٹ",
+        "description": "مائکروبیولوجیکل فلٹریشن، پریشر کنٹرول",
+        "products": "حفظان صحت AHU، HEPA فلٹر، UV-C پنکھا",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "صاف کمرے",
+        "description": "پارٹیکل کنٹرول، کلاس 100-100,000 کے درمیان حفظان صحت کی سطح",
+        "products": "HEPA سسٹم فین، پریشرائزڈ AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "دواسازی کی پیداوار کی سہولیات",
+        "description": "جی ایم پی کے مطابق، فلٹرنگ اور پریشر کنٹرول",
+        "products": "ہائجینک ایئر ہینڈلنگ یونٹ، فلٹرڈ سیل فین",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "خوراک کی پیداوار کے علاقے",
+        "description": "صحت بخش ہوا کی گردش، بدبو اور ذرہ کنٹرول",
+        "products": "حفظان صحت AHU، EC Fan، فلٹر، سٹینلیس باڈی",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "لیبارٹریز",
+        "description": "گیس اور پارٹیکل کنٹرول، منفی/مثبت پریشر زوننگ",
+        "products": "HEPA فلٹر شدہ سیل فین، ڈیمپر، فلٹر",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "ہسپتال کی خدمت کے فرش",
+        "description": "تازہ ہوا کی فراہمی، بدبو اور انفیکشن کا خطرہ کنٹرول",
+        "products": "حفظان صحت AHU، EC Fan، ڈکٹ فین، فلٹر",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "مصروف کچن (صنعتی اور طبی)",
+        "description": "آئل مسٹ + ایئر کوالٹی کنٹرول، دھو سکتے فلٹر کی ضرورت ہے۔",
+        "products": "کچن کا پنکھا، سیلولر پنکھا، فلٹر",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "لائیو سٹاک اور ویٹرنری کلینک کے علاقے",
+        "description": "مائکروجنزم اور بدبو پر قابو پانا",
+        "products": "فلٹر کے ساتھ پنکھا، EC Fan، ہیٹ ریکوری",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "صنعتی ایئر مینجمنٹ",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "بھاری صنعت کی سہولیات",
+        "description": "اعلی درجہ حرارت، دھول، ذرہ اور کیمیائی گیس کا انخلاء",
+        "products": "صنعتی سست پنکھا، ایگزاسٹ فین، ڈیمپر",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "ویلڈنگ، پینٹنگ اور پاؤڈرڈ پروڈکشن لائنز",
+        "description": "مقامی سکشن، ایگزاسٹ، منفی پریشر زوننگ",
+        "products": "ایگزاسٹ فین، ڈسٹ کلیکشن فین",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "فاؤنڈری اور میٹالرجیکل انٹرپرائزز",
+        "description": "اعلی درجہ حرارت اور دھواں انخلاء",
+        "products": "اعلی درجہ حرارت مزاحم محوری پنکھا، چھت کا پنکھا۔",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "کاغذ، پیکیجنگ اور ٹیکسٹائل کی پیداوار",
+        "description": "فائبر، دھول اور نمی کا انخلاء، توانائی کی بحالی",
+        "products": "EC Fan، ہیٹ ریکوری، سیلولر فین",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "پاور پلانٹس",
+        "description": "جنریٹر روم وینٹیلیشن، فضلہ گیس کا انخلاء",
+        "products": "گھونگا پنکھا، ایگزاسٹ فین، سابق پروف پنکھا۔",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "آٹوموٹو اور مشینری اسمبلی لائنز",
+        "description": "گرمی اور دھوئیں کا انخلاء، توانائی کی بحالی",
+        "products": "سیل فین، ڈکٹ پنکھا، گھونگھے کا پنکھا۔",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "ری سائیکلنگ اور ویسٹ پروسیسنگ کی سہولیات",
+        "description": "بدبو، دھواں اور ذرات کا اخراج",
+        "products": "ایگزاسٹ فین، ڈکٹ فین، فلٹر",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "لاجسٹکس اور اسٹوریج ایریاز",
+        "description": "گرم ہوا خارج ہونے والا مادہ، ہوا کی گردش",
+        "products": "محوری پنکھا، چھت کا پنکھا، سیلولر پنکھا۔",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "لکڑی اور فرنیچر کی ورکشاپس",
+        "description": "چپ، دھول اور سالوینٹ انخلاء",
+        "products": "دھول جمع کرنے والا پنکھا، ڈیمپر، فلٹر",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "لائیوسٹاک کی سہولت وینٹیلیشن",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "چکن فارمز",
+        "description": "شدید نمی، گرمی اور گیس کو ہٹانے کے لیے ہائی فلو ریٹ ایگزاسٹ سسٹم",
+        "products": "پولٹری فین، ایگزاسٹ فین",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "انڈے کی پیداوار کے یونٹ",
+        "description": "لکیری ہوا کی گردش گرمی اور گیس کے جمع ہونے کو روکتی ہے۔",
+        "products": "ڈکٹ پنکھا، پولٹری پنکھا۔",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "انکیوبیشن کی سہولیات",
+        "description": "مستحکم درجہ حرارت اور ہوا کی نقل و حرکت کے لئے عین مطابق پنکھے کا کنٹرول",
+        "products": "EC Fan، چکن فین",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "مویشی اور بارن وینٹیلیشن",
+        "description": "ہوا کی گردش کے ساتھ نمی، امونیا اور CO₂ کنٹرول",
+        "products": "محوری پنکھا، ایگزاسٹ فین",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "ٹرانسفارمر اور انرجی روم کے پنکھے۔",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "ٹرانسفارمر سینٹرز (MV/LV)",
+        "description": "گرم ہوا اور گیسوں کا لازمی انخلاء، 24/7 وشوسنییتا",
+        "products": "محوری پنکھا، چھت کا پنکھا۔",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "جنریٹر رومز",
+        "description": "انجنوں کے گرمی کے اخراج کے خلاف مسلسل راستہ",
+        "products": "گھونگا پنکھا، ایگزاسٹ فین",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "انرجی ٹرانسمیشن سب سٹیشنز",
+        "description": "بے قابو ہیٹنگ کو روکنے کے لیے کومپیکٹ پنکھے کے حل",
+        "products": "ڈکٹ فین، وال فین",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "ڈیٹا سینٹر انرجی رومز",
+        "description": "ٹرانسفارمر/یو پی ایس کمرے جنہیں مستحکم درجہ حرارت پر کام کرنے کی ضرورت ہے۔",
+        "products": "EC Fan، سیلولر فین",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "گرین ہاؤس اور زرعی وینٹیلیشن",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "گلاس یا پولی کاربونیٹ گرین ہاؤس",
+        "description": "درجہ حرارت، نمی اور CO₂ لیول کنٹرول؛ ہوا کی گردش",
+        "products": "محوری پنکھا، چکن پنکھا، ڈکٹ فین",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "پلاسٹک ٹنل گرین ہاؤس",
+        "description": "قدرتی وینٹیلیشن کی مدد کے لئے کم دباؤ ہوا کی منتقلی",
+        "products": "چکن پنکھا، وال ماونٹڈ پنکھا۔",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "اسمارٹ گرین ہاؤس (IoT کنٹرولڈ)",
+        "description": "نمی، درجہ حرارت اور روشنی کے سینسر کی بنیاد پر خودکار پنکھے کا کنٹرول",
+        "products": "EC Fan، آٹومیشن ڈیش بورڈ",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "اشنکٹبندیی/سرد آب و ہوا کے گرین ہاؤسز",
+        "description": "آب و ہوا کے مطابق دو طرفہ ہوا کی نقل و حرکت اور خودکار روٹنگ",
+        "products": "دو طرفہ محوری پنکھا، ڈیمپر",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "آربریکلچر اور گھاس کی پیداوار کے گرین ہاؤسز",
+        "description": "گرمی کی کھپت اور نمی کے توازن کے لیے ہلکے پنکھے کے نظام",
+        "products": "ڈکٹ ٹائپ فین، EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX دھماکے سے تحفظ",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "کیمیکل اور پیٹرو کیمیکل سہولیات",
+        "description": "دھماکہ خیز گیس اور بخارات کے ماحول میں محفوظ وینٹیلیشن",
+        "products": "سابق پروف محوری اور گھونگھے کے پرستار",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "ایندھن ذخیرہ کرنے اور بھرنے کے علاقے",
+        "description": "ماحول سے آتش گیر گیسوں کو ہٹانا",
+        "products": "سابق پروف وال فین، ڈیمپر",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "سالوینٹس کا استعمال کرتے ہوئے ڈائی شاپس اور پروڈکشنز",
+        "description": "جامد بجلی اور سالوینٹ گیس کے جمع ہونے کے خلاف محفوظ راستہ",
+        "products": "سابق پروف ڈکٹ فین، ڈسٹ کلیکشن",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "آٹا، چینی، کیمیکل پاؤڈر کی سہولیات",
+        "description": "مخالف جامد پرستار اور دھول دھماکے کے خلاف بند نظام",
+        "products": "ایکس پروف محوری پنکھا، سائکلون سسٹم",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "فارماسیوٹیکل اور میڈیکل کیمسٹری کی پیداوار کے علاقے",
+        "description": "آتش گیر اجزاء کے خلاف فلٹرڈ اور پریشر کنٹرولڈ فین سسٹم",
+        "products": "ہائیجینک ایکس پروف فین، فلٹر کے ساتھ ایگزاسٹ فین",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "گیس بھرنے اور تجزیہ کرنے والی لیبارٹریز",
+        "description": "حساس گیس کے ماحول کے لیے محفوظ اور پرسکون راستہ",
+        "products": "کومپیکٹ سابق پروف پنکھا، ڈیمپر",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "اسمارٹ آٹومیشن اور کنٹرول",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "سمارٹ بلڈنگز (شاپنگ مال، آفس، ہسپتال)",
+        "description": "BMS انضمام، درجہ حرارت/نمی/گیس پر مبنی خودکار کنٹرول",
+        "products": "PLC پینل، سینسر، سگنل وائرنگ، خودکار ڈیمپر",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "صنعتی سہولیات",
+        "description": "عمل پر مبنی پنکھے کا کنٹرول، ریموٹ مانیٹرنگ، منظر نامے کا انتظام",
+        "products": "آٹومیشن پینل، ریلے، خودکار فین ماڈیول",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "ٹنل اور پارکنگ کے منصوبے",
+        "description": "جیٹ فین اور CO سینسر کے ساتھ مربوط نظام",
+        "products": "Jet Fan، سینسر کے ساتھ CO ڈیٹیکٹر، آٹومیشن پینل",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "رہائش اور رہائش",
+        "description": "کومپیکٹ کنٹرول سسٹم، HVAC حل جو صارف دوست انٹرفیس کے ذریعے تعاون یافتہ ہیں۔",
+        "products": "منی PLC، اسمارٹ سینسر، کومپیکٹ فین",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "ہسپتال اور صاف ستھرے کمرے",
+        "description": "دباؤ کا فرق، ذرہ کی سطح اور فلٹر آلودگی کے سینسر",
+        "products": "HEPA پنکھا، F9 سینسر، خودکار ڈیمپر",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "ڈیٹا سینٹرز",
+        "description": "درجہ حرارت پر مبنی وینٹیلیشن کا انتظام، بے کار کنٹرول",
+        "products": "دوہری ماڈیول، درجہ حرارت سینسر کنٹرول EC پرستار",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "رہائشی وینٹیلیشن",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "انفرادی رہائش گاہیں (فلیٹ اور ولاز)",
+        "description": "پرسکون، جگہ کی بچت، توانائی کے موثر حل",
+        "products": "ڈکٹ فین، ہیٹ ریکوری، کمپیکٹ AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "رہائش اور لگژری ہاؤسنگ پروجیکٹس",
+        "description": "جمالیاتی نظر آنے والے، پرسکون اور کنٹرول شدہ نظام",
+        "products": "EC Fan، سیلولر فین، وینٹ",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "علیحدہ مکانات",
+        "description": "تازہ ہوا کی فراہمی، باتھ روم اور کچن کا راستہ",
+        "products": "باتھ روم کا پنکھا، کچن کا پنکھا، ڈکٹ پنکھا۔",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "چھوٹے گھر اور تیار شدہ عمارتیں۔",
+        "description": "کومپیکٹ سائز، مصنوعات کو جمع کرنے میں آسان",
+        "products": "EC Fan، کومپیکٹ ڈکٹ فین",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "سائٹ کامن ایریاز",
+        "description": "ایگزاسٹ پنکھے اور مرکزی آرام کا حل",
+        "products": "وال فین، سیلولر فین",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "میرین اور آف شور وینٹیلیشن",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "جہاز کے انجن کے کمرے",
+        "description": "اعلی درجہ حرارت، ایگزاسٹ گیس اور وائبریشن کے حالات میں مسلسل راستہ اور تازہ ہوا",
+        "products": "محوری پنکھا، ریڈیل فین، ATEX پنکھا۔",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "جنریٹر اور پمپ روم",
+        "description": "آتش گیر گیس اور گرمی کی رہائی کا خطرہ؛ سیل شدہ زوننگ اور آٹومیشن انضمام",
+        "products": "محوری پنکھا، ڈیمپر، آٹومیشن پینل",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "کروز بحری جہاز اور فیریز",
+        "description": "مسافروں اور عملے کے علاقوں میں آرام دہ وینٹیلیشن",
+        "products": "محوری پنکھا، ڈکٹ پنکھا۔",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "کارگو جہاز",
+        "description": "کارگو ہولڈ اور انجن روم وینٹیلیشن",
+        "products": "صنعتی پنکھا، ATEX پرستار",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "آف شور پلیٹ فارمز",
+        "description": "آف شور پلیٹ فارم وینٹیلیشن اور ایکسپرو ایگزاسٹ",
+        "products": "ATEX پنکھا، محوری پنکھا، فائر ڈیمپر",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "FPSO یونٹس اور شپ یارڈ پروجیکٹس",
+        "description": "کلاس منظور شدہ سمندری پنکھا، دھواں نکالنے اور آٹومیشن انضمام",
+        "products": "میرین فین، اسموک فین، ڈیمپر، آٹومیشن پینل",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "یاٹ اور میگا یاٹ",
+        "description": "کمفرٹ وینٹیلیشن اور انجن روم ایگزاسٹ",
+        "products": "ڈکٹ فین، EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "پروجیکٹ پر مبنی کسٹم مینوفیکچرنگ",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "سیکٹر / پروجیکٹ کی قسم",
+        "description": "وضاحت",
+        "products": "پروجیکٹ پر مبنی حل کی اقسام",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "تعمیراتی تبدیلی کے منصوبے",
+        "description": "موجودہ عمارت کے بنیادی ڈھانچے کی بنیاد پر خصوصی جہت/کنکشن کی ضرورت",
+        "products": "اپنی مرضی کے مطابق سیل/کیس ڈیزائن",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "صوتی پابندیوں والے پروجیکٹس (ہوٹل، اسٹوڈیوز، وغیرہ)",
+        "description": "ایپلی کیشنز جو شور کی حد کے تحت اعلی کارکردگی کی ضرورت ہوتی ہے",
+        "products": "کم شور والے پنکھے کا ڈیزائن، سائلنسر مربوط",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "اونچی عمارتیں اور مشکل گزرنے والے علاقے",
+        "description": "ہلکی پھلکی مصنوعات جو شافٹ کے اندر ایک تنگ جگہ میں فٹ ہو سکتی ہیں۔",
+        "products": "کومپیکٹ فین، ماڈیولر اسمبلی پروڈکٹ ڈیزائن",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "پریسٹیج ہاؤسنگ اور لگژری آرکیٹیکچرل پروجیکٹس",
+        "description": "جمالیاتی ظاہری شکل، سطح کی کوٹنگ اور کم از کم آواز کا ہدف",
+        "products": "پینٹ شدہ بیرونی، پوشیدہ تنصیب، پوشیدہ ایئر آؤٹ لیٹ",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "فوڈ اینڈ میڈیسن آرکیٹیکچر کے خصوصی علاقے",
+        "description": "اینٹی بیکٹیریل مواد، صاف کرنے میں آسان سطح اور خصوصی فلٹر ڈھانچہ",
+        "products": "سٹینلیس باڈی، یووی فلٹرڈ اندرونی ڈیزائن",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD انجینئرنگ کنسلٹنسی",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "کور پارکس",
+        "description": "جیٹ فین کی جگہ کا تعین، آگ کا منظر، CO پھیلاؤ تخروپن",
+        "products": "CFD تجزیہ، Jet Fan پوزیشننگ، ٹیکنیکل فائل",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "سرنگیں",
+        "description": "ٹنل وینٹیلیشن کا منظر نامہ، دباؤ اور بہاؤ کا تجزیہ",
+        "products": "بہاؤ کا تجزیہ، جیٹ پنکھے کی سمت کی اصلاح",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "ہوائی اڈے اور میٹرو اسٹیشن",
+        "description": "فائر زوننگ، دھوئیں کی پرت کا تخروپن",
+        "products": "پروجیکٹ فائل کی تیاری، اکاؤنٹنگ رپورٹ",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "بڑے حجم کے ڈھانچے جیسے شاپنگ مالز اور اسٹیڈیم",
+        "description": "دھواں نکالنے کے منظرنامے اور ڈیزائن مسافروں کے انخلاء کے لیے موزوں ہیں۔",
+        "products": "فائر انجینئرنگ سپورٹ، سیناریو کنسلٹنسی",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "آرکیٹیکچرل اور پروجیکٹ آفسز",
+        "description": "جیٹ فین سافٹ ویئر کی مدد سے ایکسپلوریشن اور حساب کتاب",
+        "products": "CAD تعاون یافتہ لے آؤٹ، تکنیکی ٹیمپلیٹ کی تیاری",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

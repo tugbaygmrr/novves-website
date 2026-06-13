@@ -7,8 +7,8 @@
     "bannerDescription": "أنظمة استخراج الدخان والحرارة. إنه أحد المكونات الكهروميكانيكية الأكثر أهمية للسلامة من الحرائق في مواقف السيارات الداخلية والأنفاق ومحطات المترو والمطارات والمستشفيات ومنشآت الطاقة والهياكل كبيرة الحجم. في حين أنه يضمن الحفاظ على ثاني أكسيد الكربون وأكاسيد النيتروجين والملوثات المماثلة عند مستويات آمنة في الاستخدام اليومي، فإنه يساعد على إبقاء طرق الهروب مفتوحة والحفاظ على الرؤية ومساعدة رجال الإطفاء في الوصول إلى مصدر الحريق بأمان عن طريق توجيه الدخان والغازات الساخنة بطريقة يمكن التحكم فيها في حالة نشوب حريق.\n\nتقدم NOVVES أسلوبًا متكاملاً للتحكم في الدخان من خلال مراوح استخراج الدخان DRAGONFLY والمراوح النفاثة ومخمدات الدخان HOUND ومراوح الهواء النقي MARLIN ولوحات التشغيل الآلي HAWK. نظام؛ إنها لا تتكون من مراوح قوية فحسب، بل تتكامل أيضًا مع الأتمتة والمخمدات المغلقة وتوازن الهواء النقي والتحقق من CFD والهندسة المتوافقة مع EN/NFPA التي تعمل وفقًا لسيناريوهات الحريق. ترتقي مراوح فئة درجة الحرارة F300/F400 بسلامة المبنى إلى المستوى التالي من خلال التهوية اليومية التي يتم التحكم فيها بواسطة مستشعر ثاني أكسيد الكربون/أكاسيد النيتروجين والتحكم في الحرائق القائم على السيناريو.",
     "subtitle": "إخلاء منضبط للدخان والحرارة أثناء الحرائق؛ حلول متوافقة مع اللوائح، مدعومة هندسيًا، من التصميم حتى التسليم.",
     "ctaPrimary": "اطلب عرض سعر لمشروعك",
-    "ctaSecondary": "تحليل CFD",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "مراوح إخلاء الدخان",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "السلامة من الحريق"
+    "breadcrumbCategory": "السلامة من الحريق",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "مواقف السيارات المغطاة",
+        "description": "CO الإخلاء + إزالة الدخان في حالة نشوب حريق",
+        "products": "Jet Fan، مروحة الدخان، المثبط",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "أنفاق الطرق والسكك الحديدية",
+        "description": "تقسيم مناطق الحريق وتوجيه الهواء",
+        "products": "Jet Fan، مروحة محورية",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "مراكز التسوق (مراكز التسوق)",
+        "description": "التحكم في الدخان والإخلاء",
+        "products": "المروحة الخلوية، المروحة المحورية، المثبط",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "الملاعب وقاعات الاجتماعات",
+        "description": "إخلاء الدخان في حالات الطوارئ",
+        "products": "مروحة محورية، Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "مرافق الإنتاج الصناعي",
+        "description": "عملية تفريغ الغاز الساخن الناجم عن العملية",
+        "products": "مروحة الحلزون، مروحة السقف، مروحة العادم",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "المستشفيات والمرافق الصحية",
+        "description": "تقسيم الدخان في مناطق المرضى",
+        "products": "مروحة الخلوية، المثبط",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "المطارات",
+        "description": "إخلاء الطبقة السفلية من الدخان",
+        "products": "Jet Fan، مروحة محورية، مروحة الضغط",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "المستودعات والمراكز اللوجستية",
+        "description": "التحكم في الدخان بكميات كبيرة",
+        "products": "مروحة القناة، Jet Fan، المثبط",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "محطات توليد الطاقة وغرف المولدات",
+        "description": "العادم ضد الحرائق الكهربائية",
+        "products": "مروحة مقاومة سابقة، مروحة الحلزون",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "الفنادق والمساكن (المباني الشاهقة)",
+        "description": "الضغط على الدرج، وإخلاء الدخان",
+        "products": "المروحة الخلوية، مروحة الضغط، المثبط",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "تكييف الراحة",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "مباني المكاتب",
+        "description": "تكييف مركزي، دوران الهواء النقي",
+        "products": "وحدة معالجة الهواء، مروحة القناة، فتحة التهوية",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "الفنادق والمنتجعات",
+        "description": "توزيع مريح للهواء، واستعادة الحرارة، وتشغيل هادئ",
+        "products": "AHU، مروحة خلوية، فلتر",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "المدارس والجامعات",
+        "description": "الهواء النقي في الفصول الدراسية، وتوفير الطاقة",
+        "products": "استعادة الحرارة، مروحة القناة، تنفيس",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "المستشفيات (أقسام الراحة)",
+        "description": "تدفق هواء هادئ ومتوازن لغرف المرضى والممرات",
+        "products": "AHU، EC Fan، مرشح",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "مراكز التسوق والمحلات التجارية",
+        "description": "تكييف هواء مريح، توزيع متجانس للهواء",
+        "products": "AHU، المروحة الخلوية، المنيموستات",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "المنازل والمساكن",
+        "description": "حلول مدمجة وأنظمة هواء هادئة وموفرة للطاقة",
+        "products": "مروحة القناة، استعادة الحرارة، EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "البنوك والمباني العامة",
+        "description": "أنظمة التكييف المركزي واحتياجات الهواء النقي",
+        "products": "وحدة معالجة الهواء، فتحة التهوية، المثبط",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "المطارات والمحطات",
+        "description": "أنظمة تكييف الهواء ذات الحجم الكبير",
+        "products": "سعة كبيرة AHU، مراوح خلوية",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "مطاعم ومقاهي",
+        "description": "التحكم في الرائحة، والحفاظ على توازن درجة الحرارة",
+        "products": "مروحة خلوية، مروحة عادم المطبخ، فلتر",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "صالات رياضية ومراكز للياقة البدنية",
+        "description": "هواء نقي، دوران عالي التدفق",
+        "products": "وحدة معالجة الهواء، مروحة القناة، فتحة التهوية",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "تهوية الترشيح الصحّي",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "غرف العمليات ووحدات العناية المركزة",
+        "description": "الترشيح الميكروبيولوجي والتحكم في الضغط",
+        "products": "صحي AHU، HEPA مرشح، UV-C مروحة",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "غرف الأبحاث",
+        "description": "مراقبة الجسيمات، مستوى النظافة بين فئة 100-100000",
+        "products": "HEPA مروحة النظام، مضغوطة AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "مرافق إنتاج الأدوية",
+        "description": "متوافق مع GMP، والتصفية والتحكم في الضغط",
+        "products": "وحدة معالجة الهواء الصحي، ومروحة الخلية المفلترة",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "مناطق إنتاج الغذاء",
+        "description": "دوران الهواء الصحي والتحكم في الرائحة والجسيمات",
+        "products": "صحي AHU، EC Fan، فلتر، جسم غير قابل للصدأ",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "المختبرات",
+        "description": "التحكم في الغاز والجسيمات، تقسيم الضغط السلبي/الإيجابي",
+        "products": "HEPA مروحة الخلية المفلترة، المثبط، المرشح",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "طوابق خدمة المستشفى",
+        "description": "إمداد الهواء النقي والرائحة ومكافحة مخاطر العدوى",
+        "products": "صحي AHU، EC Fan، مروحة القناة، الفلتر",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "المطابخ المزدحمة (الصناعية والطبية)",
+        "description": "رذاذ الزيت + مراقبة جودة الهواء، الحاجة إلى مرشح قابل للغسل",
+        "products": "مروحة مطبخ، مروحة خلوية، فلتر",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "مناطق الثروة الحيوانية والعيادة البيطرية",
+        "description": "الكائنات الحية الدقيقة والسيطرة على الرائحة الكريهة",
+        "products": "مروحة مع فلتر، EC Fan، استعادة الحرارة",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "إدارة الهواء الصناعي",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "مرافق الصناعة الثقيلة",
+        "description": "ارتفاع درجة الحرارة والغبار والجسيمات وإخلاء الغازات الكيميائية",
+        "products": "مروحة الحلزون الصناعية، مروحة العادم، المثبط",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "خطوط اللحام والدهان وإنتاج البودرة",
+        "description": "الشفط المحلي والعادم وتقسيم الضغط السلبي",
+        "products": "مروحة العادم، مروحة تجميع الغبار",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "شركات المسبك والمعادن",
+        "description": "ارتفاع درجة الحرارة وإخلاء الدخان",
+        "products": "مروحة محورية مقاومة لدرجات الحرارة العالية، مروحة سقف",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "إنتاج الورق والتغليف والمنسوجات",
+        "description": "إخلاء الألياف والغبار والرطوبة واستعادة الطاقة",
+        "products": "EC Fan، استعادة الحرارة، المروحة الخلوية",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "محطات توليد الطاقة",
+        "description": "تهوية غرفة المولد وإخلاء غازات النفايات",
+        "products": "مروحة الحلزون، مروحة العادم، مروحة مقاومة سابقة",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "خطوط تجميع السيارات والآلات",
+        "description": "إخلاء الحرارة والدخان، واستعادة الطاقة",
+        "products": "مروحة الخلية، مروحة القناة، مروحة الحلزون",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "مرافق إعادة التدوير ومعالجة النفايات",
+        "description": "إخلاء الرائحة والدخان والجسيمات",
+        "products": "مروحة العادم، مروحة القناة، مرشح",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "المناطق اللوجستية والتخزين",
+        "description": "تفريغ الهواء الساخن، دوران الهواء",
+        "products": "مروحة محورية، مروحة سقف، مروحة خلوية",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "ورش الخشب والأثاث",
+        "description": "إخلاء الرقائق والغبار والمذيبات",
+        "products": "مروحة تجميع الغبار، المثبط، المرشح",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "تهوية منشآت تربية المواشي",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "مزارع الدجاج",
+        "description": "نظام عادم ذو معدل تدفق عالي لإزالة الرطوبة الشديدة والحرارة والغاز",
+        "products": "مروحة الدواجن، مروحة العادم",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "وحدات إنتاج البيض",
+        "description": "دوران الهواء الخطي يمنع تراكم الحرارة والغاز",
+        "products": "مروحة القناة، مروحة الدواجن",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "مرافق الحضانة",
+        "description": "تحكم دقيق في المروحة من أجل درجة حرارة ثابتة وحركة الهواء",
+        "products": "EC Fan، مروحة الدجاج",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "تهوية الماشية والحظائر",
+        "description": "التحكم في الرطوبة والأمونيا وCO₂ من خلال دوران الهواء",
+        "products": "مروحة محورية، مروحة العادم",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "مراوح غرف المحوّلات والطاقة",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "مراكز المحولات (MV/LV)",
+        "description": "الإخلاء الإلزامي للهواء الساخن والغازات، موثوقية 24/7",
+        "products": "مروحة محورية، مروحة سقف",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "غرف المولدات",
+        "description": "العادم المستمر ضد العادم الحراري للمحركات",
+        "products": "مروحة الحلزون، مروحة العادم",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "محطات نقل الطاقة الفرعية",
+        "description": "حلول مروحة مدمجة لمنع التسخين غير المنضبط",
+        "products": "مروحة القناة، مروحة الحائط",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "غرف الطاقة في مركز البيانات",
+        "description": "غرف المحولات/UPS التي تحتاج إلى العمل في درجة حرارة ثابتة",
+        "products": "EC Fan، المروحة الخلوية",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "تهوية البيوت المحمية والزراعة",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "الدفيئة الزجاجية أو البولي كربونات",
+        "description": "التحكم في درجة الحرارة والرطوبة ومستوى CO₂؛ دوران الهواء",
+        "products": "مروحة محورية، مروحة الدجاج، مروحة القناة",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "الدفيئة النفقية البلاستيكية",
+        "description": "نقل هواء منخفض الضغط للمساعدة في التهوية الطبيعية",
+        "products": "مروحة الدجاج، مروحة مثبتة على الحائط",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "الدفيئة الذكية (IoT خاضعة للرقابة)",
+        "description": "التحكم التلقائي في المروحة على أساس أجهزة استشعار الرطوبة ودرجة الحرارة والضوء",
+        "products": "EC Fan، لوحة تحكم التشغيل الآلي",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "الدفيئات المناخية الاستوائية/الباردة",
+        "description": "حركة هواء ثنائية الاتجاه وتوجيه تلقائي حسب المناخ",
+        "products": "مروحة محورية ثنائية الاتجاه، المثبط",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "التشجير وإنتاج العشب الدفيئات الزراعية",
+        "description": "أنظمة مراوح خفيفة الوزن لتبديد الحرارة وموازنة الرطوبة",
+        "products": "مروحة من نوع مجاري الهواء، EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "حماية من انفجار ATEX",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "المنشآت الكيميائية والبتروكيماوية",
+        "description": "تهوية آمنة في بيئات الغاز والبخار المتفجرة",
+        "products": "مراوح محورية وحلزونية مقاومة سابقًا",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "مناطق تخزين وتعبئة الوقود",
+        "description": "إزالة الغازات القابلة للاشتعال من البيئة",
+        "products": "مروحة حائط مقاومة للصدمات، ومخمد",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "محلات الأصباغ والإنتاج باستخدام المذيبات",
+        "description": "عادم آمن ضد الكهرباء الساكنة وتراكم الغازات المذيبة",
+        "products": "مروحة قناة مقاومة للصدمات، مجموعة الغبار",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "مرافق الدقيق والسكر والمساحيق الكيماوية",
+        "description": "مروحة مضادة للكهرباء الساكنة وأنظمة مغلقة ضد انفجار الغبار",
+        "products": "مروحة محورية مقاومة للصدمات، نظام إعصاري",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "مناطق إنتاج الكيمياء الصيدلانية والطبية",
+        "description": "أنظمة مراوح مفلترة ومتحكم فيها بالضغط ضد المكونات القابلة للاشتعال",
+        "products": "مروحة صحية مقاومة للصدمات، ومروحة عادم مزودة بفلتر",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "مختبرات تعبئة وتحليل الغاز",
+        "description": "عادم آمن وهادئ لبيئة الغاز الحساسة",
+        "products": "مروحة مدمجة مقاومة للصدمات، ومخمد",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "الأتمتة والتحكم الذكي",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "المباني الذكية (مركز تسوق، مكتب، مستشفى)",
+        "description": "BMS التكامل، التحكم الآلي في درجة الحرارة/الرطوبة/الغاز",
+        "products": "PLC اللوحة، المستشعر، أسلاك الإشارة، المخمد التلقائي",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "المنشآت الصناعية",
+        "description": "التحكم في المروحة على أساس العملية، والمراقبة عن بعد، وإدارة السيناريوهات",
+        "products": "لوحة الأتمتة، المرحل، وحدة المروحة الأوتوماتيكية",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "مشاريع الأنفاق ومواقف السيارات",
+        "description": "أنظمة متكاملة مع مروحة نفاثة وأجهزة استشعار CO",
+        "products": "Jet Fan، CO كاشف مزود بمستشعر، لوحة التشغيل الآلي",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "الإسكان والمساكن",
+        "description": "أنظمة تحكم مدمجة، وحلول التدفئة والتهوية وتكييف الهواء (HVAC) مدعومة بواجهات سهلة الاستخدام",
+        "products": "Mini PLC، مستشعر ذكي، مروحة مدمجة",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "المستشفيات والغرف النظيفة",
+        "description": "فرق الضغط ومستوى الجسيمات وأجهزة استشعار تلوث المرشح",
+        "products": "HEPA المروحة، F9 المستشعر، المخمد الآلي",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "مراكز البيانات",
+        "description": "إدارة التهوية على أساس درجة الحرارة، والتحكم الزائد",
+        "products": "وحدة مزدوجة، مراوح EC يتم التحكم فيها بواسطة مستشعر درجة الحرارة",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "تهوية سكنية",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "المساكن الفردية (الشقق والفلل)",
+        "description": "حلول هادئة وموفرة للمساحة وموفرة للطاقة",
+        "products": "مروحة قناة، استرداد الحرارة، مدمجة AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "مشاريع الإقامة والإسكان الفاخر",
+        "description": "أنظمة ذات مظهر جمالي وهادئ ومسيطر عليها",
+        "products": "EC Fan، المروحة الخلوية، فتحة التهوية",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "منازل منفصلة",
+        "description": "إمداد الهواء النقي وعادم الحمام والمطبخ",
+        "products": "مروحة الحمام، مروحة المطبخ، مروحة القناة",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "البيت الصغير والمباني الجاهزة",
+        "description": "حجم صغير، سهل تجميع المنتجات",
+        "products": "EC Fan، مروحة قناة مدمجة",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "المناطق المشتركة بالموقع",
+        "description": "مراوح العادم وحل الراحة المركزية",
+        "products": "مروحة حائط، مروحة خلوية",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "تهوية بحرية وفي الأوفشور",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "غرف محركات السفن",
+        "description": "العادم المستمر والهواء النقي تحت درجة حرارة عالية وغازات العادم وظروف الاهتزاز",
+        "products": "مروحة محورية، مروحة شعاعية، ATEX مروحة",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "غرف المولدات والمضخات",
+        "description": "خطر الغازات القابلة للاشتعال وانبعاث الحرارة؛ تقسيم المناطق المختومة والتكامل الآلي",
+        "products": "مروحة محورية، مخمد، لوحة التشغيل الآلي",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "السفن السياحية والعبارات",
+        "description": "تهوية مريحة في مناطق الركاب والطاقم",
+        "products": "مروحة محورية، مروحة القناة",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "سفن الشحن",
+        "description": "مخزن الحمولة وتهوية غرفة المحرك",
+        "products": "مروحة صناعية، ATEX مروحة",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "المنصات البحرية",
+        "description": "تهوية المنصة البحرية والعادم الخارجي",
+        "products": "ATEX المروحة، المروحة المحورية، مانع الحريق",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "وحدات FPSO ومشاريع بناء السفن",
+        "description": "مروحة بحرية معتمدة من الفئة، واستخراج الدخان وتكامل التشغيل الآلي",
+        "products": "المروحة البحرية، مروحة الدخان، المثبط، لوحة التشغيل الآلي",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "اليخوت واليخوت الضخمة",
+        "description": "تهوية مريحة وعادم غرفة المحرك",
+        "products": "مروحة القناة، EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "تصنيع مخصص حسب المشروع",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "القطاع / نوع المشروع",
+        "description": "توضيح",
+        "products": "أنواع الحلول القائمة على المشروع",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "مشاريع الاستبدال المعماري",
+        "description": "البعد الخاص/متطلبات الاتصال بناءً على البنية التحتية الحالية للمبنى",
+        "products": "تصميم الخلية/الحالة حسب الطلب",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "المشاريع ذات القيود الصوتية (الفنادق، الاستوديوهات، الخ)",
+        "description": "التطبيقات التي تتطلب أداءً عاليًا في ظل حدود الضوضاء",
+        "products": "تصميم مروحة منخفض الضوضاء، كاتم صوت مدمج",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "المباني الشاهقة والمناطق ذات الممرات الصعبة",
+        "description": "منتجات خفيفة الوزن يمكن وضعها في مساحة ضيقة داخل العمود",
+        "products": "مروحة مدمجة، تصميم منتج تجميعي معياري",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "برستيج للإسكان والمشاريع المعمارية الفاخرة",
+        "description": "المظهر الجمالي وطلاء السطح والحد الأدنى من هدف الصوت",
+        "products": "طلاء خارجي، تركيب مخفي، مخرج هواء غير مرئي",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "مجالات خاصة بهندسة الغذاء والدواء",
+        "description": "مادة مضادة للبكتيريا، سطح سهل التنظيف وهيكل مرشح خاص",
+        "products": "جسم مقاوم للصدأ، تصميم داخلي مصفى للأشعة فوق البنفسجية",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "استشارات هندسة CFD",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "مواقف السيارات المغطاة",
+        "description": "وضع المروحة النفاثة، سيناريو الحريق، CO محاكاة الانتشار",
+        "products": "CFD التحليل، Jet Fan تحديد المواقع، الملف الفني",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "الأنفاق",
+        "description": "سيناريو التهوية النفقية وتحليل الضغط والتدفق",
+        "products": "تحليل التدفق، تحسين اتجاه المروحة النفاثة",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "محطات المطار والمترو",
+        "description": "تقسيم مناطق الحرائق، محاكاة طبقة الدخان",
+        "products": "إعداد ملف المشروع، التقرير المحاسبي",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "الهياكل كبيرة الحجم مثل مراكز التسوق والملاعب",
+        "description": "سيناريوهات الإخلاء بالدخان والتصميمات المناسبة لإخلاء الركاب",
+        "products": "دعم هندسة الحرائق، استشارات السيناريو",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "مكاتب الهندسة المعمارية والمشاريع",
+        "description": "الاستكشاف والحساب بمساعدة برنامج Jet fan",
+        "products": "CAD التخطيط المدعوم، إعداد القالب الفني",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

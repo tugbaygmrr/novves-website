@@ -1,0 +1,2720 @@
+{
+  "az": {
+    "dumanIsiTahliye": [
+      {
+        "buildingType": "Qapalı Avtomobil Parkları",
+        "description": "Yanğın zamanı CO evakuasiyası + tüstünün çıxarılması",
+        "products": "Jet Fan, Duman ventilyatoru, Damper"
+      },
+      {
+        "buildingType": "Avtomobil və dəmir yolu tunelləri",
+        "description": "Yanğın zonası və hava marşrutu",
+        "products": "Jet Fan, Eksenel Fan"
+      },
+      {
+        "buildingType": "Alış-veriş mərkəzləri (Alış-veriş mərkəzləri)",
+        "description": "Tüstüyə nəzarət və evakuasiya",
+        "products": "Hüceyrə Fan, Eksenel Fan, Damper"
+      },
+      {
+        "buildingType": "Stadionlar və İclas Zalları",
+        "description": "Fövqəladə hallarda tüstünün evakuasiyası",
+        "products": "Eksenel Fan, Jet Fan"
+      },
+      {
+        "buildingType": "Sənaye İstehsalat Obyektləri",
+        "description": "Prosesdən qaynaqlanan isti qaz boşalması",
+        "products": "Salyangoz ventilyatoru, dam ventilyatoru, egzoz ventilyatoru"
+      },
+      {
+        "buildingType": "Xəstəxanalar və Sağlamlıq Obyektləri",
+        "description": "Xəstə ərazilərində tüstü rayonlaşdırılması",
+        "products": "Hüceyrə Fan, Damper"
+      },
+      {
+        "buildingType": "hava limanları",
+        "description": "Alt təbəqənin tüstünün evakuasiyası",
+        "products": "Jet Fan, Eksenel Fan, Təzyiqli Fan"
+      },
+      {
+        "buildingType": "Anbar və Logistika Mərkəzləri",
+        "description": "Yüksək həcmdə tüstüyə nəzarət",
+        "products": "Kanal Fan, Jet Fan, Damper"
+      },
+      {
+        "buildingType": "Elektrik Stansiyaları və Generator Otaqları",
+        "description": "Elektrik yanğınlarına qarşı egzoz",
+        "products": "Köhnə ventilyator, İlbiz Fan"
+      },
+      {
+        "buildingType": "Otellər və Rezidensiyalar (Hündürmərtəbəli binalar)",
+        "description": "Pilləkənlərin təzyiqi, tüstünün çıxarılması",
+        "products": "Hüceyrə ventilyatoru, təzyiq ventilyatoru, damper"
+      }
+    ],
+    "konforIklimlendirme": [
+      {
+        "buildingType": "Ofis binaları",
+        "description": "Mərkəzi kondisioner, təmiz hava sirkulyasiyası",
+        "products": "Kondisioner, Kanal Fan, Havalandırma"
+      },
+      {
+        "buildingType": "Otellər və kurortlar",
+        "description": "Rahat hava paylanması, istilik bərpası, səssiz işləmə",
+        "products": "AHU, Mobil Fan, Filtr"
+      },
+      {
+        "buildingType": "Məktəblər və Universitetlər",
+        "description": "Sinif otaqlarında təmiz hava, enerjiyə qənaət",
+        "products": "İstiliyin Bərpası, Kanal Fan, Havalandırma"
+      },
+      {
+        "buildingType": "Xəstəxanalar (komfort şöbələri)",
+        "description": "Xəstə otaqları və dəhlizləri üçün sakit və balanslaşdırılmış hava axını",
+        "products": "AHU, EC Fan, Filtr"
+      },
+      {
+        "buildingType": "Ticarət Mərkəzləri və Mağazalar",
+        "description": "Komfortlu kondisioner, homojen hava paylanması",
+        "products": "AHU, Mobil Fan, Anemostat"
+      },
+      {
+        "buildingType": "Evlər və Yaşayışlar",
+        "description": "Kompakt həllər, səssiz və enerjiyə qənaət edən hava sistemləri",
+        "products": "Kanal Fan, İstiliyin Bərpası, EC Fan"
+      },
+      {
+        "buildingType": "Banklar və İctimai Binalar",
+        "description": "Mərkəzi kondisioner sistemləri və təmiz hava tələb olunur",
+        "products": "Kondisioner, Havalandırma, Damper"
+      },
+      {
+        "buildingType": "Hava limanları və terminallar",
+        "description": "Yüksək həcmli kondisioner sistemləri",
+        "products": "Böyük tutumlu AHU, Mobil Fanatlar"
+      },
+      {
+        "buildingType": "Restoranlar və Kafelər",
+        "description": "Qoxuya nəzarət, temperatur balansını saxlamaq",
+        "products": "Hüceyrə ventilyatoru, Mətbəxdən çıxan ventilyator, Filtr"
+      },
+      {
+        "buildingType": "İdman Zalları və Fitnes Mərkəzləri",
+        "description": "Təmiz hava, yüksək axın sirkulyasiyası",
+        "products": "Kondisioner, Kanal Fan, Havalandırma"
+      }
+    ],
+    "hijyenikFiltrasyon": [
+      {
+        "buildingType": "Əməliyyat otaqları və reanimasiya şöbələri",
+        "description": "Mikrobioloji filtrasiya, təzyiqə nəzarət",
+        "products": "Gigiyenik AHU, HEPA Filtr, UV-C Fan"
+      },
+      {
+        "buildingType": "Təmiz otaqlar",
+        "description": "Hissəciklərə nəzarət, gigiyena səviyyəsi sinif 100-100.000 arasındadır",
+        "products": "HEPA Sistem Fan, Təzyiqli AHU"
+      },
+      {
+        "buildingType": "Əczaçılıq İstehsalat Obyektləri",
+        "description": "GMP uyğun, filtrasiya və təzyiqə nəzarət",
+        "products": "Gigiyenik Kondisioner Cihazı, Filtrlənmiş Hüceyrə Fan"
+      },
+      {
+        "buildingType": "Qida İstehsal Sahələri",
+        "description": "Gigiyenik hava sirkulyasiyası, qoxu və hissəciklərə nəzarət",
+        "products": "Gigiyenik AHU, EC Fan, Filtr, Paslanmayan Korpus"
+      },
+      {
+        "buildingType": "laboratoriyalar",
+        "description": "Qaz və hissəciklərə nəzarət, mənfi/müsbət təzyiq zonası",
+        "products": "HEPA Filtrlənmiş Hüceyrə Fan, Damper, Filtr"
+      },
+      {
+        "buildingType": "Xəstəxana xidmət mərtəbələri",
+        "description": "Təmiz hava təchizatı, qoxu və infeksiya riskinə nəzarət",
+        "products": "Gigiyenik AHU, EC Fan, Kanal ventilyatoru, Filtr"
+      },
+      {
+        "buildingType": "Məşğul Mətbəxlər (Sənaye və Tibb)",
+        "description": "Yağ dumanı + havanın keyfiyyətinə nəzarət, yuyula bilən filtr lazımdır",
+        "products": "Mətbəx ventilyatoru, mobil ventilyator, filtr"
+      },
+      {
+        "buildingType": "Heyvandarlıq və Baytarlıq Klinika Sahələri",
+        "description": "Mikroorqanizm və pis qoxuya qarşı mübarizə",
+        "products": "Filtrli ventilyator, EC Fan, İstiliyin Bərpası"
+      }
+    ],
+    "endustriyelHavaYonetimi": [
+      {
+        "buildingType": "Ağır Sənaye Obyektləri",
+        "description": "Yüksək temperatur, toz, hissəcik və kimyəvi qazın evakuasiyası",
+        "products": "Sənaye İlbiz Fan, Egzoz Ventilyator, Damper"
+      },
+      {
+        "buildingType": "Qaynaq, Boyama və Pudra İstehsal Xətləri",
+        "description": "Yerli emiş, egzoz, mənfi təzyiq zonası",
+        "products": "Egzoz ventilyatoru, toz toplama ventilyatoru"
+      },
+      {
+        "buildingType": "Tökmə və Metallurgiya Müəssisələri",
+        "description": "Yüksək temperatur və tüstünün evakuasiyası",
+        "products": "Yüksək temperatura davamlı eksenel ventilyator, dam ventilyatoru"
+      },
+      {
+        "buildingType": "Kağız, Qablaşdırma və Tekstil İstehsalatı",
+        "description": "Lif, toz və nəmin evakuasiyası, enerjinin bərpası",
+        "products": "EC Fan, İstiliyin Bərpası, Mobil Fan"
+      },
+      {
+        "buildingType": "Elektrik stansiyaları",
+        "description": "Generator otağının ventilyasiyası, tullantı qazının evakuasiyası",
+        "products": "Salyangoz ventilyatoru, egzoz ventilyatoru, köhnə ventilyator"
+      },
+      {
+        "buildingType": "Avtomobil və Maşın Quraşdırma Xətləri",
+        "description": "İstilik və tüstünün evakuasiyası, enerjinin bərpası",
+        "products": "Hüceyrə ventilyatoru, kanal ventilyatoru, ilbiz fanatı"
+      },
+      {
+        "buildingType": "Təkrar Emal və Tullantıların Emalı Obyektləri",
+        "description": "Qoxu, tüstü və hissəciklərin evakuasiyası",
+        "products": "Egzoz ventilyatoru, kanal ventilyatoru, filtr"
+      },
+      {
+        "buildingType": "Logistika və Saxlama Sahələri",
+        "description": "İsti havanın boşaldılması, hava dövranı",
+        "products": "Eksenel Fan, Dam ventilyatoru, Mobil Fan"
+      },
+      {
+        "buildingType": "Taxta və Mebel emalatxanaları",
+        "description": "Çip, toz və həlledicinin evakuasiyası",
+        "products": "Toz toplama ventilyatoru, damper, filtr"
+      }
+    ],
+    "hayvancilikTesisleri": [
+      {
+        "buildingType": "Toyuq fermaları",
+        "description": "Güclü rütubət, istilik və qazın çıxarılması üçün yüksək axın sürəti egzoz sistemi",
+        "products": "Quşçuluq ventilyatoru, egzoz ventilyatoru"
+      },
+      {
+        "buildingType": "Yumurta İstehsal Bölmələri",
+        "description": "İstilik və qaz yığılmasının qarşısını alan xətti hava dövranı",
+        "products": "Kanal ventilyatoru, quşçuluq ventilyatoru"
+      },
+      {
+        "buildingType": "İnkubasiya Obyektləri",
+        "description": "Sabit temperatur və hava hərəkəti üçün dəqiq fan nəzarəti",
+        "products": "EC Fan, Toyuq Fanatı"
+      },
+      {
+        "buildingType": "Mal-qara və Tövlə Havalandırması",
+        "description": "Hava sirkulyasiyası ilə rütubət, ammonyak və CO₂ nəzarəti",
+        "products": "Eksenel Fan, Egzoz Fan"
+      }
+    ],
+    "trafoEnerjiOdalari": [
+      {
+        "buildingType": "Transformator Mərkəzləri (MV/LV)",
+        "description": "Qızdırılan havanın və qazların məcburi evakuasiyası, 24/7 etibarlılıq",
+        "products": "Eksenel ventilyator, dam ventilyatoru"
+      },
+      {
+        "buildingType": "Generator otaqları",
+        "description": "Mühərriklərin istilik egzozuna qarşı davamlı egzoz",
+        "products": "Salyangoz ventilyatoru, egzoz ventilyatoru"
+      },
+      {
+        "buildingType": "Enerji ötürücü yarımstansiyalar",
+        "description": "Nəzarətsiz istiləşmənin qarşısını almaq üçün kompakt fan həlləri",
+        "products": "Kanal Fan, Divar Fan"
+      },
+      {
+        "buildingType": "Məlumat Mərkəzi Enerji Otaqları",
+        "description": "Sabit temperaturda işləməli olan transformator/UPS otaqları",
+        "products": "EC Fan, Mobil Fan"
+      }
+    ],
+    "seraTarimsal": [
+      {
+        "buildingType": "Şüşə və ya polikarbonat istixana",
+        "description": "Temperatur, rütubət və CO₂ səviyyəsinə nəzarət; hava dövranı",
+        "products": "Eksenel ventilyator, toyuq ventilyatoru, kanal ventilyatoru"
+      },
+      {
+        "buildingType": "Plastik Tunel İstixanası",
+        "description": "Təbii havalandırmaya kömək etmək üçün aşağı təzyiqli hava ötürülməsi",
+        "products": "Toyuq ventilyatoru, divara quraşdırılmış yelçəkən"
+      },
+      {
+        "buildingType": "Ağıllı İstixana (IoT Nəzarətli)",
+        "description": "Rütubət, temperatur və işıq sensorlarına əsaslanan avtomatik fan nəzarəti",
+        "products": "EC Fan, Avtomatlaşdırma İdarəetmə Paneli"
+      },
+      {
+        "buildingType": "Tropik/Soyuq İqlim İstixanaları",
+        "description": "İki istiqamətli hava hərəkəti və iqlimə görə avtomatik marşrutlaşdırma",
+        "products": "İki istiqamətli eksenel fan, damper"
+      },
+      {
+        "buildingType": "Ağacçılıq və Ot İstehsalı İstixanaları",
+        "description": "İstiliyin yayılması və rütubətin balanslaşdırılması üçün yüngül fan sistemləri",
+        "products": "Kanal Tipi Fan, EC Fan"
+      }
+    ],
+    "atexPatlamaKoruma": [
+      {
+        "buildingType": "Kimya və Neft-Kimya Obyektləri",
+        "description": "Partlayıcı qaz və buxar mühitlərində təhlükəsiz havalandırma",
+        "products": "Eksenel və ilbiz pərəstişkarları"
+      },
+      {
+        "buildingType": "Yanacaq Saxlama və Doldurma Sahələri",
+        "description": "Yanan qazların ətraf mühitdən çıxarılması",
+        "products": "Keçmiş divar ventilyatoru, damper"
+      },
+      {
+        "buildingType": "Solventlərdən istifadə edən boya sexləri və istehsalları",
+        "description": "Statik elektrik və həlledici qazın yığılmasına qarşı təhlükəsiz egzoz",
+        "products": "Ex-proof Kanal Fan, Toz Toplanması"
+      },
+      {
+        "buildingType": "Un, Şəkər, Kimyəvi Toz Obyektləri",
+        "description": "Toz partlayışına qarşı antistatik fan və qapalı sistemlər",
+        "products": "Ex-proof Axial Fan, Siklon Sistemi"
+      },
+      {
+        "buildingType": "Əczaçılıq və Tibbi Kimya İstehsal Sahələri",
+        "description": "Yanan komponentlərə qarşı filtrlənmiş və təzyiqlə idarə olunan fan sistemləri",
+        "products": "Gigiyenik Ex-proof Ventilyator, Filtrli Egzoz Fan"
+      },
+      {
+        "buildingType": "Qaz Doldurma və Analiz Laboratoriyaları",
+        "description": "Həssas qaz mühiti üçün təhlükəsiz və səssiz egzoz",
+        "products": "Kompakt Ex-proof Fan, Damper"
+      }
+    ],
+    "akilliOtomasyon": [
+      {
+        "buildingType": "Ağıllı Binalar (Ticarət Mərkəzi, Ofis, Xəstəxana)",
+        "description": "BMS inteqrasiyası, temperatur/rütubət/qaz əsaslı avtomatik idarəetmə",
+        "products": "PLC Panel, Sensor, Siqnal Naqilləri, Avtomatik Damper"
+      },
+      {
+        "buildingType": "Sənaye Obyektləri",
+        "description": "Prosesə əsaslanan fan nəzarəti, uzaqdan monitorinq, ssenarinin idarə edilməsi",
+        "products": "Avtomatlaşdırma Paneli, Rele, Avtomatik Fan Modulu"
+      },
+      {
+        "buildingType": "Tunel və Parkinq Layihələri",
+        "description": "Reaktiv fan və CO sensorları ilə inteqrasiya olunmuş sistemlər",
+        "products": "Jet Fan, Sensorlu CO Detektoru, Avtomatlaşdırma Paneli"
+      },
+      {
+        "buildingType": "Mənzil və Yaşayış yerləri",
+        "description": "Kompakt idarəetmə sistemləri, istifadəçi dostu interfeyslərlə dəstəklənən HVAC həlləri",
+        "products": "Mini PLC, Ağıllı Sensor, Kompakt Fan"
+      },
+      {
+        "buildingType": "Xəstəxanalar və Təmiz Otaqlar",
+        "description": "Təzyiq fərqi, hissəcik səviyyəsi və filtr çirklənmə sensorları",
+        "products": "HEPA Fan, F9 Sensor, Avtomatlaşdırılmış Damper"
+      },
+      {
+        "buildingType": "Məlumat Mərkəzləri",
+        "description": "Temperatur əsaslı ventilyasiya idarəetməsi, lazımsız nəzarət",
+        "products": "İki modul, temperatur sensoru ilə idarə olunan EC fanatları"
+      }
+    ],
+    "konutHavalandirma": [
+      {
+        "buildingType": "Fərdi Yaşayışlar (Mənzillər və Villalar)",
+        "description": "Sakit, yerə qənaət edən, enerjiyə qənaət edən həllər",
+        "products": "Kanal Fan, İstilik Bərpası, Kompakt AHU"
+      },
+      {
+        "buildingType": "Yaşayış və Lüks Mənzil Layihələri",
+        "description": "Estetik görünüşlü, səssiz və idarə olunan sistemlər",
+        "products": "EC Fan, Mobil Fan, Havalandırma"
+      },
+      {
+        "buildingType": "Fərdi Evlər",
+        "description": "Təmiz hava təchizatı, vanna otağı və mətbəx egzozu",
+        "products": "Vanna otağı ventilyatoru, mətbəx ventilyatoru, kanal ventilyatoru"
+      },
+      {
+        "buildingType": "Kiçik Evlər və Prefabrik Binalar",
+        "description": "Kompakt ölçü, asan yığılan məhsullar",
+        "products": "EC Fan, Yığcam Kanal Fan"
+      },
+      {
+        "buildingType": "Saytın Ümumi Sahələri",
+        "description": "Egzoz fanatları və mərkəzi rahatlıq həlli",
+        "products": "Divar fanatı, mobil fanat"
+      }
+    ],
+    "marinOffshore": [
+      {
+        "buildingType": "Gəmi mühərrik otaqları",
+        "description": "Yüksək temperatur, işlənmiş qaz və vibrasiya şəraitində davamlı egzoz və təmiz hava",
+        "products": "Eksenel Fan, Radial Fan, ATEX Fan"
+      },
+      {
+        "buildingType": "Generator və nasos otaqları",
+        "description": "Yanan qaz və istilik yayılması riski; möhürlənmiş rayonlaşdırma və avtomatlaşdırma inteqrasiyası",
+        "products": "Eksenel Fan, Damper, Avtomatlaşdırma Paneli"
+      },
+      {
+        "buildingType": "Kruiz gəmiləri və bərələr",
+        "description": "Sərnişin və ekipaj yerlərində rahat havalandırma",
+        "products": "Eksenel Fan, Kanal Fan"
+      },
+      {
+        "buildingType": "Yük gəmiləri",
+        "description": "Yük saxlama və maşın otağının havalandırılması",
+        "products": "Sənaye Fan, ATEX Fan"
+      },
+      {
+        "buildingType": "Dəniz platformaları",
+        "description": "Dəniz platformasının ventilyasiyası və sızdırmaz egzoz",
+        "products": "ATEX Ventilyator, Eksenel Fan, Yanğınsöndürən"
+      },
+      {
+        "buildingType": "FPSO Bölmələr və Gəmiqayırma Layihələri",
+        "description": "Sinif təsdiqlənmiş dəniz fanatı, tüstü çıxarma və avtomatlaşdırma inteqrasiyası",
+        "products": "Dəniz Ventilyatoru, Duman Fan, Damper, Avtomatlaşdırma Paneli"
+      },
+      {
+        "buildingType": "Yaxtalar və Meqa Yaxtalar",
+        "description": "Komfortlu havalandırma və mühərrik otağının egzozu",
+        "products": "Kanal Fan, EC Fan"
+      }
+    ],
+    "projeBazliOzelImalat": [
+      {
+        "buildingType": "Sektor / Layihə Növü",
+        "description": "İzahat",
+        "products": "Layihə əsaslı həll növləri"
+      },
+      {
+        "buildingType": "Memarlıq dəyişdirmə layihələri",
+        "description": "Mövcud bina infrastrukturuna əsaslanan xüsusi ölçü/bağlantı tələbi",
+        "products": "Sifarişlə hazırlanmış hüceyrə/korpus dizaynı"
+      },
+      {
+        "buildingType": "Akustik Məhdudiyyətli Layihələr (Otellər, Studiyalar və s.)",
+        "description": "Səs-küy limitləri altında yüksək performans tələb edən proqramlar",
+        "products": "Aşağı səs-küylü fan dizaynı, səsboğucu inteqrasiya edilmişdir"
+      },
+      {
+        "buildingType": "Hündür binalar və keçidi çətin olan ərazilər",
+        "description": "Şaftın içərisində dar bir yerə uyğunlaşa bilən yüngül məhsullar",
+        "products": "Kompakt fan, modul montaj məhsulu dizaynı"
+      },
+      {
+        "buildingType": "Prestij Mənzil və Lüks Memarlıq Layihələri",
+        "description": "Estetik görünüş, səth örtüyü və minimum səs hədəfi",
+        "products": "Boyalı xarici, gizli quraşdırma, görünməz hava çıxışı"
+      },
+      {
+        "buildingType": "Qida və Tibb Memarlığı Xüsusi Sahələri",
+        "description": "Antibakterial material, asan təmizlənən səth və xüsusi filtr quruluşu",
+        "products": "Paslanmayan korpus, UV filtrli interyer dizaynı"
+      }
+    ],
+    "cfdDanismanlik": [
+      {
+        "buildingType": "Qapalı Avtomobil Parkları",
+        "description": "Jet fan yerləşdirilməsi, yanğın ssenarisi, CO yayılması simulyasiyası",
+        "products": "CFD Analizi, Jet Fan Yerləşdirmə, Texniki Fayl"
+      },
+      {
+        "buildingType": "tunellər",
+        "description": "Tunel havalandırma ssenarisi, təzyiq və axın təhlili",
+        "products": "Axın təhlili, reaktiv fan istiqamətinin optimallaşdırılması"
+      },
+      {
+        "buildingType": "Hava limanı və metro stansiyaları",
+        "description": "Yanğın zonası, tüstü qatının simulyasiyası",
+        "products": "Layihə faylının hazırlanması, mühasibat hesabatı"
+      },
+      {
+        "buildingType": "Ticarət mərkəzləri və stadionlar kimi böyük həcmli strukturlar",
+        "description": "Tüstü evakuasiya ssenariləri və sərnişinlərin evakuasiyası üçün uyğun dizaynlar",
+        "products": "Yanğın mühəndisliyi dəstəyi, ssenari məsləhəti"
+      },
+      {
+        "buildingType": "Memarlıq və Layihə Ofisləri",
+        "description": "Jet fan proqram təminatı ilə kəşfiyyat və hesablama",
+        "products": "CAD dəstəklənən tərtibat, texniki şablon hazırlanması"
+      }
+    ]
+  },
+  "kk": {
+    "dumanIsiTahliye": [
+      {
+        "buildingType": "Жабық автотұрақтар",
+        "description": "СО эвакуациялау + өрт кезінде түтін шығару",
+        "products": "Jet Fan, түтін желдеткіші, демппер"
+      },
+      {
+        "buildingType": "Автомобиль және темір жол туннельдері",
+        "description": "Өртті аймақтарға бөлу және ауа маршруты",
+        "products": "Jet Fan, осьтік желдеткіш"
+      },
+      {
+        "buildingType": "Сауда орталықтары (сауда орталықтары)",
+        "description": "Түтінді бақылау және эвакуациялау",
+        "products": "Ұялы желдеткіш, осьтік желдеткіш, демппер"
+      },
+      {
+        "buildingType": "Стадиондар мен мәжіліс залдары",
+        "description": "Төтенше жағдайларда түтінді эвакуациялау",
+        "products": "Осьтік желдеткіш, Jet Fan"
+      },
+      {
+        "buildingType": "Өнеркәсіптік өндіріс объектілері",
+        "description": "Процесті тудыратын ыстық газ разряды",
+        "products": "Ұлу желдеткіші, шатыр желдеткіші, сорғыш желдеткіш"
+      },
+      {
+        "buildingType": "Ауруханалар мен денсаулық сақтау мекемелері",
+        "description": "Науқас аймақтарында түтінді аймақтарға бөлу",
+        "products": "Ұялы желдеткіш, демппер"
+      },
+      {
+        "buildingType": "әуежайлар",
+        "description": "Түтіннің төменгі қабатын эвакуациялау",
+        "products": "Jet Fan, осьтік желдеткіш, қысымды желдеткіш"
+      },
+      {
+        "buildingType": "Қойма және логистикалық орталықтар",
+        "description": "Жоғары көлемдегі түтінді бақылау",
+        "products": "Желдеткіш, Jet Fan, демпфер"
+      },
+      {
+        "buildingType": "Электр станциялары және генераторлық бөлмелер",
+        "description": "Электрлік өртке қарсы шығатын газдар",
+        "products": "Бұрынғы төзімді желдеткіш, ұлуларға арналған желдеткіш"
+      },
+      {
+        "buildingType": "Қонақ үйлер мен резиденциялар (көп қабатты үйлер)",
+        "description": "Баспалдақпен қысым жасау, түтін шығару",
+        "products": "Ұялы желдеткіш, қысымды желдеткіш, демппер"
+      }
+    ],
+    "konforIklimlendirme": [
+      {
+        "buildingType": "Офистік ғимараттар",
+        "description": "Орталық кондиционер, таза ауа айналымы",
+        "products": "Ауа өңдеу блогы, желдеткіш, желдеткіш"
+      },
+      {
+        "buildingType": "Қонақ үйлер мен курорттар",
+        "description": "Ыңғайлы ауа бөлу, жылуды қалпына келтіру, тыныш жұмыс",
+        "products": "AHU, ұялы желдеткіш, сүзгі"
+      },
+      {
+        "buildingType": "Мектептер және университеттер",
+        "description": "Сыныптардағы таза ауа, энергияны үнемдеу",
+        "products": "Жылуды қалпына келтіру, құбыр желдеткіші, желдеткіш"
+      },
+      {
+        "buildingType": "Ауруханалар (жайлылық бөлімдері)",
+        "description": "Пациент бөлмелері мен дәліздер үшін тыныш және теңдестірілген ауа ағыны",
+        "products": "AHU, EC Fan, Сүзгі"
+      },
+      {
+        "buildingType": "Сауда орталықтары мен дүкендер",
+        "description": "Ыңғайлы кондиционер, ауаны біркелкі бөлу",
+        "products": "AHU, ұялы желдеткіш, анемостат"
+      },
+      {
+        "buildingType": "Үйлер мен тұрғын үйлер",
+        "description": "Ықшам шешімдер, тыныш және энергияны үнемдейтін ауа жүйелері",
+        "products": "Желдеткіш, жылуды қалпына келтіру, EC Fan"
+      },
+      {
+        "buildingType": "Банктер және қоғамдық ғимараттар",
+        "description": "Орталық ауаны баптау жүйелері және таза ауа қажеттілігі",
+        "products": "Ауа өңдеу блогы, желдеткіш, демппер"
+      },
+      {
+        "buildingType": "Әуежайлар мен терминалдар",
+        "description": "Жоғары көлемді ауа баптау жүйелері",
+        "products": "Үлкен сыйымдылық AHU, Ұялы желдеткіштер"
+      },
+      {
+        "buildingType": "Мейрамханалар мен кафелер",
+        "description": "Иісті бақылау, температура тепе-теңдігін сақтау",
+        "products": "Ұялы желдеткіш, ас үйге арналған желдеткіш, сүзгі"
+      },
+      {
+        "buildingType": "Спорт залдары мен фитнес орталықтары",
+        "description": "Таза ауа, жоғары ағын айналымы",
+        "products": "Ауа өңдеу блогы, желдеткіш, желдеткіш"
+      }
+    ],
+    "hijyenikFiltrasyon": [
+      {
+        "buildingType": "Операция бөлмелері және қарқынды терапия бөлімдері",
+        "description": "Микробиологиялық сүзу, қысымды бақылау",
+        "products": "Гигиеналық AHU, HEPA сүзгі, UV-C желдеткіш"
+      },
+      {
+        "buildingType": "Таза бөлмелер",
+        "description": "Бөлшектерді бақылау, гигиеналық деңгей 100-100 000 сынып аралығында",
+        "products": "HEPA Жүйе желдеткіші, қысымды AHU"
+      },
+      {
+        "buildingType": "Фармацевтикалық өндіріс орындары",
+        "description": "GMP сәйкес, сүзгілеу және қысымды бақылау",
+        "products": "Гигиеналық ауаны өңдеу қондырғысы, сүзгіден өткен желдеткіш"
+      },
+      {
+        "buildingType": "Азық-түлік өндірісінің аймақтары",
+        "description": "Гигиеналық ауа айналымы, иіс пен бөлшектерді бақылау",
+        "products": "Гигиеналық AHU, EC Fan, Сүзгі, Тот баспайтын корпус"
+      },
+      {
+        "buildingType": "зертханалар",
+        "description": "Газ және бөлшектерді бақылау, теріс/оң қысымды аймақтарға бөлу",
+        "products": "HEPA Сүзілген ұяшық желдеткіші, демпфер, сүзгі"
+      },
+      {
+        "buildingType": "Ауруханаға қызмет көрсету қабаттары",
+        "description": "Таза ауамен қамтамасыз ету, иіс және инфекция қаупін бақылау",
+        "products": "Гигиеналық AHU, EC Fan, желдеткіш, сүзгі"
+      },
+      {
+        "buildingType": "Бос асүйлер (өндірістік және медициналық)",
+        "description": "Майлы тұман + ауа сапасын бақылау, жууға болатын сүзгі қажет",
+        "products": "Ас үй желдеткіші, ұялы желдеткіш, сүзгі"
+      },
+      {
+        "buildingType": "Мал шаруашылығы және ветеринариялық клиника аймақтары",
+        "description": "Микроорганизм және жағымсыз иіспен күресу",
+        "products": "Сүзгі бар желдеткіш, EC Fan, Жылуды қалпына келтіру"
+      }
+    ],
+    "endustriyelHavaYonetimi": [
+      {
+        "buildingType": "Ауыр өнеркәсіп нысандары",
+        "description": "Жоғары температура, шаң, бөлшектер және химиялық газды эвакуациялау",
+        "products": "Өнеркәсіптік ұлу желдеткіші, сорғыш желдеткіш, демппер"
+      },
+      {
+        "buildingType": "Дәнекерлеу, бояу және ұнтақты өндіру желілері",
+        "description": "Жергілікті сору, шығару, теріс қысымды аудандастыру",
+        "products": "Шығару желдеткіші, шаң жинау желдеткіші"
+      },
+      {
+        "buildingType": "Құю және металлургиялық кәсіпорындар",
+        "description": "Жоғары температура мен түтінді эвакуациялау",
+        "products": "Жоғары температураға төзімді осьтік желдеткіш, шатыр желдеткіші"
+      },
+      {
+        "buildingType": "Қағаз, орау және тоқыма өндірісі",
+        "description": "Талшықты, шаңды және ылғалды эвакуациялау, энергияны қалпына келтіру",
+        "products": "EC Fan, Жылуды қалпына келтіру, ұялы желдеткіш"
+      },
+      {
+        "buildingType": "Электр станциялары",
+        "description": "Генератор бөлмесін желдету, қалдық газды эвакуациялау",
+        "products": "Ұлу желдеткіші, сорғыш желдеткіш, Ex-proof желдеткіш"
+      },
+      {
+        "buildingType": "Автокөлік және машина құрастыру желілері",
+        "description": "Жылу мен түтінді эвакуациялау, энергияны қалпына келтіру",
+        "products": "Ұяшық желдеткіші, арна желдеткіші, ұлу желдеткіші"
+      },
+      {
+        "buildingType": "Қайта өңдеу және қалдықтарды қайта өңдеу қондырғылары",
+        "description": "Иіс, түтін және бөлшектерді эвакуациялау",
+        "products": "Шығару желдеткіші, түтік желдеткіші, сүзгі"
+      },
+      {
+        "buildingType": "Логистика және сақтау аймақтары",
+        "description": "Ыстық ауа шығару, ауа айналымы",
+        "products": "Осьтік желдеткіш, шатыр желдеткіші, ұялы желдеткіш"
+      },
+      {
+        "buildingType": "Ағаш және жиһаз шеберханалары",
+        "description": "Чипті, шаңды және еріткіштерді эвакуациялау",
+        "products": "Шаң жинауға арналған желдеткіш, демппер, сүзгі"
+      }
+    ],
+    "hayvancilikTesisleri": [
+      {
+        "buildingType": "Тауық фермалары",
+        "description": "Ылғалдылықты, жылуды және газды кетіруге арналған жоғары ағынды шығару жүйесі",
+        "products": "Құс еті желдеткіші, сорғыш желдеткіш"
+      },
+      {
+        "buildingType": "Жұмыртқа өндіру бөлімшелері",
+        "description": "Жылу мен газдың жиналуын болдырмайтын сызықтық ауа айналымы",
+        "products": "Арна желдеткіші, құс еті желдеткіші"
+      },
+      {
+        "buildingType": "Инкубациялық қондырғылар",
+        "description": "Тұрақты температура мен ауа қозғалысы үшін желдеткішті дәл басқару",
+        "products": "EC Fan, тауық желдеткіші"
+      },
+      {
+        "buildingType": "Мал мен қораны желдету",
+        "description": "Ауа айналымы арқылы ылғалдылық, аммиак және CO₂ деңгейін бақылау",
+        "products": "Осьтік желдеткіш, сору желдеткіші"
+      }
+    ],
+    "trafoEnerjiOdalari": [
+      {
+        "buildingType": "Трансформатор орталықтары (ОЖ/ЖҚ)",
+        "description": "Қыздырылған ауа мен газдарды міндетті түрде эвакуациялау, тәулік бойы сенімділік",
+        "products": "Осьтік желдеткіш, шатыр желдеткіші"
+      },
+      {
+        "buildingType": "Генератор бөлмелері",
+        "description": "Қозғалтқыштардың жылу шығаруына қарсы үздіксіз газ шығару",
+        "products": "Ұлу желдеткіші, сорғыш желдеткіш"
+      },
+      {
+        "buildingType": "Энергия тасымалдау қосалқы станциялары",
+        "description": "Бақыланбайтын қыздыруды болдырмау үшін ықшам желдеткіш шешімдер",
+        "products": "Түтік желдеткіші, қабырға желдеткіші"
+      },
+      {
+        "buildingType": "Деректер орталығының энергетикалық бөлмелері",
+        "description": "Тұрақты температурада жұмыс істеуі қажет трансформатор/UPS бөлмелері",
+        "products": "EC Fan, ұялы желдеткіш"
+      }
+    ],
+    "seraTarimsal": [
+      {
+        "buildingType": "Шыны немесе поликарбонат жылыжайы",
+        "description": "Температураны, ылғалдылықты және CO₂ деңгейін бақылау; ауа айналымы",
+        "products": "Осьтік желдеткіш, тауық желдеткіші, арна желдеткіші"
+      },
+      {
+        "buildingType": "Пластикалық туннельді жылыжай",
+        "description": "Табиғи желдетуге көмектесу үшін төмен қысымды ауаны тасымалдау",
+        "products": "Тауық желдеткіші, қабырғаға орнатылған желдеткіш"
+      },
+      {
+        "buildingType": "Ақылды жылыжай (IoT басқарылатын)",
+        "description": "Ылғалдылық, температура және жарық сенсорларына негізделген желдеткішті автоматты басқару",
+        "products": "EC Fan, Автоматтандыру бақылау тақтасы"
+      },
+      {
+        "buildingType": "Тропикалық/суық климаттық жылыжайлар",
+        "description": "Екі жақты ауа қозғалысы және климатқа сәйкес автоматты бағыттау",
+        "products": "Екі жақты осьтік желдеткіш, демпфер"
+      },
+      {
+        "buildingType": "Ағаш өсіру және шөп өсіру жылыжайлары",
+        "description": "Жылуды таратуға және ылғалдылықты теңестіруге арналған жеңіл желдеткіш жүйелері",
+        "products": "Арна түрі желдеткіш, EC Fan"
+      }
+    ],
+    "atexPatlamaKoruma": [
+      {
+        "buildingType": "Химия және мұнай-химия объектілері",
+        "description": "Жарылыс қаупі бар газ және бу орталарында қауіпсіз желдету",
+        "products": "Экс-proof осьтік және ұлулар желдеткіштері"
+      },
+      {
+        "buildingType": "Жанармай сақтау және құю аймақтары",
+        "description": "Жанғыш газдарды қоршаған ортадан шығару",
+        "products": "Қабырғаға төзімді желдеткіш, демппер"
+      },
+      {
+        "buildingType": "Еріткіштерді пайдаланатын бояу цехтары мен өндірістері",
+        "description": "Статикалық электр тогы мен еріткіш газдың жиналуына қарсы қауіпсіз шығару",
+        "products": "Ex-proof арна желдеткіші, шаң жинау"
+      },
+      {
+        "buildingType": "Ұн, қант, химиялық ұнтақ зауыттары",
+        "description": "Антистатикалық желдеткіш және шаңның жарылуына қарсы жабық жүйелер",
+        "products": "Ex-proof осьтік желдеткіш, циклон жүйесі"
+      },
+      {
+        "buildingType": "Фармацевтикалық және медициналық химия өндірісі аймақтары",
+        "description": "Жанғыш компоненттерге қарсы фильтрленген және қысыммен басқарылатын желдеткіш жүйелері",
+        "products": "Гигиеналық таза желдеткіш, сүзгісі бар сору желдеткіші"
+      },
+      {
+        "buildingType": "Газды толтыру және талдау зертханалары",
+        "description": "Сезімтал газ ортасы үшін қауіпсіз және тыныш сору",
+        "products": "Ықшам Ex-proof желдеткіш, демппер"
+      }
+    ],
+    "akilliOtomasyon": [
+      {
+        "buildingType": "Ақылды ғимараттар (сауда орталығы, кеңсе, аурухана)",
+        "description": "BMS интеграциясы, температура/ылғалдылық/газ негізіндегі автоматты басқару",
+        "products": "PLC Панель, Датчик, Сигнал сымдары, Автоматты демпер"
+      },
+      {
+        "buildingType": "Өнеркәсіптік нысандар",
+        "description": "Процесс негізінде желдеткішті басқару, қашықтан бақылау, сценарийді басқару",
+        "products": "Автоматтандыру тақтасы, реле, автоматты желдеткіш модулі"
+      },
+      {
+        "buildingType": "Туннель және автотұрақ жобалары",
+        "description": "Реактивті желдеткіш және CO сенсорлары бар біріктірілген жүйелер",
+        "products": "Jet Fan, сенсоры бар СО детекторы, автоматтандыру тақтасы"
+      },
+      {
+        "buildingType": "Тұрғын үй және тұрғын үйлер",
+        "description": "Ықшам басқару жүйелері, пайдаланушыға ыңғайлы интерфейстер қолдайтын HVAC шешімдері",
+        "products": "Мини PLC, Smart сенсор, ықшам желдеткіш"
+      },
+      {
+        "buildingType": "Ауруханалар және таза бөлмелер",
+        "description": "Қысым айырмашылығы, бөлшектер деңгейі және сүзгі ластануы сенсорлары",
+        "products": "HEPA Желдеткіш, F9 сенсоры, автоматтандырылған демппер"
+      },
+      {
+        "buildingType": "Деректер орталықтары",
+        "description": "Температураға негізделген желдетуді басқару, артық бақылау",
+        "products": "Қос модуль, температура сенсорымен басқарылатын EC желдеткіштері"
+      }
+    ],
+    "konutHavalandirma": [
+      {
+        "buildingType": "Жеке тұрғын үйлер (пәтерлер мен виллалар)",
+        "description": "Тыныш, кеңістікті үнемдейтін, энергияны үнемдейтін шешімдер",
+        "products": "Желдеткіш, жылуды қалпына келтіру, ықшам AHU"
+      },
+      {
+        "buildingType": "Тұрғын үй және сәнді тұрғын үй жобалары",
+        "description": "Эстетикалық көрінетін, тыныш және басқарылатын жүйелер",
+        "products": "EC Fan, ұялы желдеткіш, желдеткіш"
+      },
+      {
+        "buildingType": "Жеке үйлер",
+        "description": "Таза ауамен қамтамасыз ету, жуынатын бөлме мен ас үйді шығару",
+        "products": "Жуынатын бөлме желдеткіші, ас үй желдеткіші, арна желдеткіші"
+      },
+      {
+        "buildingType": "Кішкентай үйлер және құрастырмалы ғимараттар",
+        "description": "Ықшам өлшем, оңай құрастырылатын бұйымдар",
+        "products": "EC Fan, ықшам түтік желдеткіші"
+      },
+      {
+        "buildingType": "Сайттың ортақ аймақтары",
+        "description": "Шығару желдеткіштері және орталық жайлылық шешімі",
+        "products": "Қабырға желдеткіші, ұялы желдеткіш"
+      }
+    ],
+    "marinOffshore": [
+      {
+        "buildingType": "Кеме қозғалтқыш бөлмелері",
+        "description": "Жоғары температура, пайдаланылған газ және діріл жағдайында үздіксіз шығарылатын және таза ауа",
+        "products": "Осьтік желдеткіш, радиалды желдеткіш, ATEX желдеткіш"
+      },
+      {
+        "buildingType": "Генератор және сорғы бөлмелері",
+        "description": "Жанғыш газдың және жылудың бөліну қаупі; мөрленген аймақтарға бөлу және автоматтандыруды біріктіру",
+        "products": "Осьтік желдеткіш, демппер, автоматтандыру панелі"
+      },
+      {
+        "buildingType": "Круиздік кемелер мен паромдар",
+        "description": "Жолаушылар мен экипаждар орналасқан аумақтарда жайлы желдету",
+        "products": "Осьтік желдеткіш, каналдық желдеткіш"
+      },
+      {
+        "buildingType": "Жүк кемелері",
+        "description": "Жүк қоймасы мен машина бөлмесін желдету",
+        "products": "Өнеркәсіптік желдеткіш, ATEX Желдеткіш"
+      },
+      {
+        "buildingType": "Оффшорлық платформалар",
+        "description": "Теңіз платформасының желдетуі және экспрессиялық сору",
+        "products": "ATEX Желдеткіш, осьтік желдеткіш, өрт сөндіруші"
+      },
+      {
+        "buildingType": "FPSO Бірліктер және кеме жасау зауыты жобалары",
+        "description": "Класс бекітілген теңіз желдеткіші, түтін шығару және автоматтандыру интеграциясы",
+        "products": "Теңіз желдеткіші, түтін желдеткіші, демппер, автоматтандыру панелі"
+      },
+      {
+        "buildingType": "Яхталар және мега яхталар",
+        "description": "Ыңғайлы желдету және қозғалтқыш бөлмесінің сорғыштары",
+        "products": "Желдеткіш, EC Fan"
+      }
+    ],
+    "projeBazliOzelImalat": [
+      {
+        "buildingType": "Сектор/Жоба түрі",
+        "description": "Түсіндіру",
+        "products": "Жобаға негізделген шешім түрлері"
+      },
+      {
+        "buildingType": "Архитектураны ауыстыру жобалары",
+        "description": "Бар құрылыс инфрақұрылымына негізделген арнайы өлшем/қосылу талабы",
+        "products": "Тапсырыспен жасалған ұяшық/қорап дизайны"
+      },
+      {
+        "buildingType": "Акустикалық шектеулері бар жобалар (қонақ үйлер, студиялар және т.б.)",
+        "description": "Шу шектеулері кезінде жоғары өнімділікті қажет ететін қолданбалар",
+        "products": "Төмен шуыл желдеткіш дизайны, дыбыс өшіргіш біріктірілген"
+      },
+      {
+        "buildingType": "Биік ғимараттар мен өтуі қиын аумақтар",
+        "description": "Білік ішіндегі тар кеңістікке сыятын жеңіл өнімдер",
+        "products": "Ықшам желдеткіш, модульдік құрастыру өнімінің дизайны"
+      },
+      {
+        "buildingType": "Prestij тұрғын үй және люкс сәулет жобалары",
+        "description": "Эстетикалық көрініс, бетті жабу және минималды дыбыстық мақсат",
+        "products": "Сырты боялған, жасырын қондырғы, көзге көрінбейтін ауа шығатын"
+      },
+      {
+        "buildingType": "Азық-түлік және медицина архитектурасының арнайы аймақтары",
+        "description": "Антибактериалды материал, оңай тазартылатын беті және арнайы сүзгі құрылымы",
+        "products": "Тот баспайтын корпус, ультракүлгін сүзгіден өткен интерьер дизайны"
+      }
+    ],
+    "cfdDanismanlik": [
+      {
+        "buildingType": "Жабық автотұрақтар",
+        "description": "Реактивті желдеткішті орналастыру, өрт сценарийі, СО таралу симуляциясы",
+        "products": "CFD талдауы, Jet Fan позициялау, техникалық файл"
+      },
+      {
+        "buildingType": "туннельдер",
+        "description": "Туннельді желдету сценарийі, қысым мен ағынды талдау",
+        "products": "Ағынды талдау, реактивті желдеткіш бағытын оңтайландыру"
+      },
+      {
+        "buildingType": "Әуежай және метро станциялары",
+        "description": "Өртті аймақтарға бөлу, түтін қабатын модельдеу",
+        "products": "Жоба файлын дайындау, бухгалтерлік есеп беру"
+      },
+      {
+        "buildingType": "Сауда орталықтары мен стадиондар сияқты үлкен көлемді құрылымдар",
+        "description": "Түтінді эвакуациялау сценарийлері және жолаушыларды эвакуациялауға қолайлы конструкциялар",
+        "products": "Өртке қарсы техникалық қолдау, сценарий бойынша кеңес беру"
+      },
+      {
+        "buildingType": "Сәулет және жобалық кеңселер",
+        "description": "Реактивті желдеткіш бағдарламалық құрал көмегімен барлау және есептеу",
+        "products": "CAD қолдау көрсетілетін макет, техникалық үлгіні дайындау"
+      }
+    ]
+  },
+  "tg": {
+    "dumanIsiTahliye": [
+      {
+        "buildingType": "Паркҳои мошинҳои пӯшида",
+        "description": "Эвакуатсияи CO + тоза кардани дуд ҳангоми сӯхтор",
+        "products": "Jet Fan, вентилятори дуд, дампер"
+      },
+      {
+        "buildingType": "Туннелхои рох ва рохи охан",
+        "description": "Минтақаҳои сӯхтор ва масири ҳавоӣ",
+        "products": "Jet Fan, вентилятори меҳварӣ"
+      },
+      {
+        "buildingType": "Марказҳои савдо (Марказҳои савдо)",
+        "description": "Назорати дуд ва эвакуатсия",
+        "products": "Фанҳои мобилӣ, мухлиси аксиалӣ, дампер"
+      },
+      {
+        "buildingType": "Стадионхо ва залхои мачлисхо",
+        "description": "Эвакуатсияи дуд дар ҳолатҳои фавқулодда",
+        "products": "Фатили меҳвар, Jet Fan"
+      },
+      {
+        "buildingType": "Объектхои истехсолии саноатй",
+        "description": "Ихроҷи гази гарм, ки дар натиҷаи раванд",
+        "products": "Фалли хазон, вентилятори бом, вентилятори ихроҷ"
+      },
+      {
+        "buildingType": "Беморхонаҳо ва муассисаҳои тандурустӣ",
+        "description": "Минтақаи дуд дар минтақаҳои бемор",
+        "products": "Фанҳои мобилӣ, дампер"
+      },
+      {
+        "buildingType": "фурудгоҳҳо",
+        "description": "Эвакуатсияи дуд аз қабати поён",
+        "products": "Jet Fan, Фати меҳвар, Фати фишороварӣ"
+      },
+      {
+        "buildingType": "Марказҳои анбор ва логистика",
+        "description": "Назорати тамоку дар ҳаҷми баланд",
+        "products": "Фати каналӣ, Jet Fan, Дампер"
+      },
+      {
+        "buildingType": "Нерӯгоҳҳои барқӣ ва утоқҳои генераторӣ",
+        "description": "Бар зидди сӯхторҳои барқӣ",
+        "products": "Фасли собиқ, Фалли снаул"
+      },
+      {
+        "buildingType": "Меҳмонхонаҳо ва манзилҳо (биноҳои баландошёна)",
+        "description": "Фишор кардани зинапоя, эвакуацияи дуд",
+        "products": "Фанҳои мобилӣ, мухлиси фишор, дампер"
+      }
+    ],
+    "konforIklimlendirme": [
+      {
+        "buildingType": "Биноҳои офисӣ",
+        "description": "Кондиционери марказӣ, гардиши ҳавои тоза",
+        "products": "Шӯъбаи коркарди ҳаво, вентилятори каналӣ, вентилятсия"
+      },
+      {
+        "buildingType": "Меҳмонхонаҳо ва курортҳо",
+        "description": "Тақсимоти бароҳати ҳаво, барқарорсозии гармӣ, кори ором",
+        "products": "AHU, Фанҳои мобилӣ, Филтр"
+      },
+      {
+        "buildingType": "Мактабҳо ва Донишгоҳҳо",
+        "description": "Ҳавои тоза дар синфхонаҳо, сарфаи энергия",
+        "products": "Барқарорсозии гармӣ, Фати каналӣ, вентилятсия"
+      },
+      {
+        "buildingType": "Беморхонаҳо (шӯъбаҳои бароҳатӣ)",
+        "description": "Ҷараёни ҳавои ором ва мутавозин барои утоқҳои беморон ва долонҳо",
+        "products": "AHU, EC Fan, Филтр"
+      },
+      {
+        "buildingType": "Мағозаҳо ва марказҳои савдо",
+        "description": "Кондитсионери бароҳат, тақсимоти якхелаи ҳаво",
+        "products": "AHU, Мухлиси мобилӣ, Анемостат"
+      },
+      {
+        "buildingType": "Хонаҳо ва манзилҳо",
+        "description": "Қарорҳои паймон, системаҳои ҳавои ором ва каммасраф",
+        "products": "Фалли каналӣ, Барқарорсозии гармӣ, EC Fan"
+      },
+      {
+        "buildingType": "Бонкҳо ва биноҳои ҷамъиятӣ",
+        "description": "Системаҳои кондитсионерии марказӣ ва ниёзҳои ҳавои тоза",
+        "products": "Шӯъбаи коркарди ҳаво, вентилятсия, дампер"
+      },
+      {
+        "buildingType": "Фурудгоҳҳо ва Терминалҳо",
+        "description": "Системаҳои кондитсионерии ҳаҷми баланд",
+        "products": "Иқтидори калон AHU, Мухлисони мобилӣ"
+      },
+      {
+        "buildingType": "Тарабхонаҳо ва қаҳвахонаҳо",
+        "description": "Назорати бӯй, нигоҳ доштани тавозуни ҳарорат",
+        "products": "Фанҳои мобилӣ, мухлиси ихроҷи ошхона, филтр"
+      },
+      {
+        "buildingType": "Толорҳои варзишӣ ва марказҳои фитнес",
+        "description": "Ҳавои тоза, гардиши баланд",
+        "products": "Шӯъбаи коркарди ҳаво, вентилятори каналӣ, вентилятсия"
+      }
+    ],
+    "hijyenikFiltrasyon": [
+      {
+        "buildingType": "Утоқҳои амалиётӣ ва шӯъбаҳои реаниматсионӣ",
+        "description": "Филтркунии микробиологӣ, назорати фишор",
+        "products": "Гигиенӣ AHU, HEPA Филтр, UV-C Фан"
+      },
+      {
+        "buildingType": "Хонаҳои тоза",
+        "description": "Назорати зарраҳо, сатҳи гигиенӣ байни синфи 100-100,000",
+        "products": "HEPA мухлиси система, фишоровар AHU"
+      },
+      {
+        "buildingType": "Муассисаҳои истеҳсоли дорусозӣ",
+        "description": "GMP мувофиқ, филтр ва назорати фишор",
+        "products": "Шӯъбаи коркарди ҳавои гигиенӣ, вентилятори филтршуда"
+      },
+      {
+        "buildingType": "Майдонхои истехсоли хурокворй",
+        "description": "Муомилоти гигиении ҳаво, назорати бӯй ва зарраҳо",
+        "products": "Гигиенӣ AHU, EC Fan, Филтр, Бадани зангногир"
+      },
+      {
+        "buildingType": "лабораторияхо",
+        "description": "Назорати газ ва зарраҳо, минтақаҳои фишори манфӣ / мусбӣ",
+        "products": "HEPA Фанҳои филтршудаи ҳуҷайра, дампер, филтр"
+      },
+      {
+        "buildingType": "Ошёнаҳои хидматрасонии беморхона",
+        "description": "Таъмини ҳавои тоза, бӯй ва назорати хатари сироят",
+        "products": "Гигиенӣ AHU, EC Fan, вентилятори каналӣ, филтр"
+      },
+      {
+        "buildingType": "Ошхонаҳои серкор (саноатӣ ва тиббӣ)",
+        "description": "Тумани нафт + назорати сифати ҳаво, ниёз ба филтри шусташаванда",
+        "products": "Фанҳои ошхона, Фати мобилӣ, Филтр"
+      },
+      {
+        "buildingType": "Участкахои клиникии чорводорй ва ветеринарй",
+        "description": "Микроорганизмҳо ва мубориза бо бӯи бад",
+        "products": "Фан бо Филтр, EC Fan, Барқарорсозии гармӣ"
+      }
+    ],
+    "endustriyelHavaYonetimi": [
+      {
+        "buildingType": "Объектхои саноати вазнин",
+        "description": "Ҳарорати баланд, чанг, зарраҳо ва эвакуатсияи гази химиявӣ",
+        "products": "Фанҳои саноатӣ, вентилятори ихроҷӣ, дампер"
+      },
+      {
+        "buildingType": "Хатхои истехсоли кафшер, рангубор ва хока",
+        "description": "Сохти маҳаллӣ, ихроҷ, минтақаҳои фишори манфӣ",
+        "products": "Фанҳои ихроҷӣ, мухлиси ҷамъоварии хок"
+      },
+      {
+        "buildingType": "Корхонахои рехтагарй ва металлурги",
+        "description": "Ҳарорати баланд ва эвакуатсияи дуд",
+        "products": "Ба ҳарорати баланд тобовар Фан Axial, Фан боми"
+      },
+      {
+        "buildingType": "Истеҳсоли коғаз, бастабандӣ ва нассоҷӣ",
+        "description": "Эвакуатсияи нах, чанг ва намӣ, барқарорсозии энергия",
+        "products": "EC Fan, Барқарорсозии гармӣ, Фати мобилӣ"
+      },
+      {
+        "buildingType": "Нерӯгоҳҳои барқӣ",
+        "description": "Вентилятсияи ҳуҷраи генератор, эвакуатсияи партовҳои газ",
+        "products": "Фанҳои хазон, Фанҳои ихроҷӣ, Фали собиқ"
+      },
+      {
+        "buildingType": "Хатҳои васлкунии мошинсозӣ ва мошинсозӣ",
+        "description": "Эвакуатсияи гармӣ ва дуд, барқарорсозии энергия",
+        "products": "Фанҳои ҳуҷайра, мухлиси каналҳо, мухлиси ҳаяҷон"
+      },
+      {
+        "buildingType": "Муассисаҳои коркарди дубора ва коркарди партовҳо",
+        "description": "Бӯй, дуд ва эвакуатсияи зарраҳо",
+        "products": "Фанҳои ихроҷӣ, вентилятори каналӣ, филтр"
+      },
+      {
+        "buildingType": "Логистика ва минтақаҳои нигоҳдорӣ",
+        "description": "Ихроҷи ҳавои гарм, гардиши ҳаво",
+        "products": "Фан меҳвари, Фанҳои бом, Фати мобилӣ"
+      },
+      {
+        "buildingType": "Устохонахои чубу тахта ва мебельсозй",
+        "description": "Эвакуатсияи чип, чанг ва ҳалкунанда",
+        "products": "Фанҳои Ҷамъоварии Хок, Дампер, Филтр"
+      }
+    ],
+    "hayvancilikTesisleri": [
+      {
+        "buildingType": "Фермахои мургпарварй",
+        "description": "Системаи баланди ҷараёни ихроҷ барои намии шадид, гармӣ ва хориҷ кардани газ",
+        "products": "Паррандапарварӣ, вентилятор"
+      },
+      {
+        "buildingType": "Участкахои истехсоли тухм",
+        "description": "Муомилоти хатии ҳаво, ки ҷамъшавии гармӣ ва газро пешгирӣ мекунад",
+        "products": "вентили каналӣ, вентилятори мурғпарварӣ"
+      },
+      {
+        "buildingType": "Муассисаҳои инкубаторӣ",
+        "description": "Назорати дақиқи вентилятор барои ҳарорати мӯътадил ва ҳаракати ҳаво",
+        "products": "EC Fan, Мухлиси мурғ"
+      },
+      {
+        "buildingType": "Вентилятсияи чорво ва анбор",
+        "description": "Назорати намӣ, аммиак ва CO₂ бо гардиши ҳаво",
+        "products": "Фасли меҳвар, вентили ихроҷӣ"
+      }
+    ],
+    "trafoEnerjiOdalari": [
+      {
+        "buildingType": "Марказҳои трансформаторӣ (MV/LV)",
+        "description": "Эвакуатсияи ҳатмии ҳаво ва газҳои гармшуда, эътимоднокии 24/7",
+        "products": "Фасли меҳвар, вентилятори бом"
+      },
+      {
+        "buildingType": "Ҳуҷраҳои генераторӣ",
+        "description": "Ихроҷи доимӣ бар зидди ихроҷи гармии муҳаррикҳо",
+        "products": "Фалли хазон, мухлиси ихроҷ"
+      },
+      {
+        "buildingType": "Станцияхои ёрирасони энергия",
+        "description": "Қарорҳои вентиляторӣ барои пешгирии гармии беназорат",
+        "products": "Шабакаи каналӣ, мухлиси девор"
+      },
+      {
+        "buildingType": "Ҳуҷраҳои энергетикии маркази маълумот",
+        "description": "Ҳуҷраҳои трансформатор/UPS, ки бояд дар ҳарорати мӯътадил кор кунанд",
+        "products": "EC Fan, Мухлисони мобилӣ"
+      }
+    ],
+    "seraTarimsal": [
+      {
+        "buildingType": "Гармхонаи шиша ё поликарбонат",
+        "description": "Назорати ҳарорат, намӣ ва сатҳи CO₂; гардиши ҳаво",
+        "products": "Фан меҳвари, Фати мурғ, Фати каналӣ"
+      },
+      {
+        "buildingType": "Гармхонаи туннели пластикӣ",
+        "description": "Интиқоли ҳавои фишори паст барои кӯмак ба вентилятсияи табиӣ",
+        "products": "Фасли мурғ, мухлиси деворӣ"
+      },
+      {
+        "buildingType": "Гармхонаи интеллектуалӣ (IoT идорашаванда)",
+        "description": "Назорати автоматии вентилятор дар асоси намӣ, ҳарорат ва сенсорҳои рӯшноӣ",
+        "products": "EC Fan, панели автоматикунонӣ"
+      },
+      {
+        "buildingType": "Гармхонаҳои тропикӣ/иқлими сард",
+        "description": "Ҳаракати дуҷонибаи ҳаво ва масири автоматӣ мувофиқи иқлим",
+        "products": "Фасли меҳвари дуҷониба, дампер"
+      },
+      {
+        "buildingType": "Гармхонаҳои дарахтпарварӣ ва истеҳсоли алаф",
+        "description": "Системаҳои вентилятори сабук барои паҳнкунии гармӣ ва мувозинати намӣ",
+        "products": "Фанҳои навъи канал, EC Fan"
+      }
+    ],
+    "atexPatlamaKoruma": [
+      {
+        "buildingType": "Муассисаҳои кимиё ва нефт",
+        "description": "Вентилятсияи бехатар дар муҳити тарканда ва буғ",
+        "products": "Собиқ мухлисони Axial ва Snail"
+      },
+      {
+        "buildingType": "Минтақаҳои нигоҳдории сӯзишворӣ ва пуркунӣ",
+        "description": "Хориҷ кардани газҳои оташгиранда аз муҳити зист",
+        "products": "Собиқ вентилятори девор, дампер"
+      },
+      {
+        "buildingType": "Дӯконҳои ранг ва истеҳсолот бо истифода аз ҳалкунандаҳо",
+        "description": "Истеъмоли бехатар бар зидди қувваи барқи статикӣ ва ҷамъшавии гази ҳалкунанда",
+        "products": "Собиқ Фанҳои каналӣ, Ҷамъоварии чанг"
+      },
+      {
+        "buildingType": "Муассисахои орд, канд, хокаи химиявй",
+        "description": "Фанҳои зидди статикӣ ва системаҳои пӯшида бар зидди таркиши чанг",
+        "products": "Собиқ далели Axial Фан, Системаи сиклон"
+      },
+      {
+        "buildingType": "Майдонхои истехсоли химияи фармацевтй ва тиббй",
+        "description": "Системаҳои вентилятори филтршуда ва фишори назоратшаванда бар зидди ҷузъҳои оташгиранда",
+        "products": "Фанҳои гигиении Ex-proof, Фати ихроҷӣ бо филтр"
+      },
+      {
+        "buildingType": "Лабораторияҳои пуркунии газ ва таҳлил",
+        "description": "Ихроҷи бехатар ва ором барои муҳити ҳассос газ",
+        "products": "Фанҳои паймон Ex-proof, Damper"
+      }
+    ],
+    "akilliOtomasyon": [
+      {
+        "buildingType": "Биноҳои интеллектуалӣ (Маркази савдо, офис, беморхона)",
+        "description": "Интегратсияи BMS, назорати автоматии ҳарорат / намӣ / газ дар асоси",
+        "products": "PLC Панел, сенсор, ноқилҳои сигнал, дамперҳои автоматӣ"
+      },
+      {
+        "buildingType": "Объектхои саноатй",
+        "description": "Назорати мухлиси дар асоси раванд, мониторинги дурдаст, идоракунии сенария",
+        "products": "Панели автоматизатсия, реле, модули мухлиси худкор"
+      },
+      {
+        "buildingType": "Лоиҳаҳои нақб ва таваққуфгоҳ",
+        "description": "Системаҳои интегратсионӣ бо вентилятори реактивӣ ва сенсорҳои CO",
+        "products": "Jet Fan, Детектори CO бо сенсор, Панели автоматизатсия"
+      },
+      {
+        "buildingType": "Манзил ва манзил",
+        "description": "Системаҳои назорати паймон, ҳалли HVAC, ки аз ҷониби интерфейсҳои дӯстона дастгирӣ карда мешаванд",
+        "products": "Мини PLC, Сенсори интеллектуалӣ, Фанҳои паймон"
+      },
+      {
+        "buildingType": "Беморхонаҳо ва ҳуҷраҳои тоза",
+        "description": "Фарқияти фишор, сатҳи зарраҳо ва датчикҳои ифлосшавии филтр",
+        "products": "HEPA вентилятор, сенсори F9, вентилятсияи автоматӣ"
+      },
+      {
+        "buildingType": "Марказҳои маълумот",
+        "description": "Идоракунии вентилятсияи ҳарорат, назорати зиёдатӣ",
+        "products": "Модули дугона, мухлисони EC-сенсори ҳарорат идорашаванда"
+      }
+    ],
+    "konutHavalandirma": [
+      {
+        "buildingType": "Хонаҳои инфиродӣ (квартираҳо ва виллаҳо)",
+        "description": "Ҳалли ором, каммасрафи фазо ва энергияи каммасраф",
+        "products": "Фалли каналӣ, Барқарорсозии гармӣ, Компакт AHU"
+      },
+      {
+        "buildingType": "Лоиҳаҳои истиқоматӣ ва манзилҳои боҳашамат",
+        "description": "Системаҳои эстетикӣ, ором ва назоратшаванда",
+        "products": "EC Fan, Фати мобилӣ, Вент"
+      },
+      {
+        "buildingType": "Хонаҳои алоҳида",
+        "description": "Таъмини ҳавои тоза, ихроҷи ванна ва ошхона",
+        "products": "Фанҳои ҳаммом, Фати ошхона, Фати каналӣ"
+      },
+      {
+        "buildingType": "Хонаҳои хурд ва биноҳои васлшаванда",
+        "description": "Андозаи паймон, осон барои васл кардани маҳсулот",
+        "products": "EC Fan, вентилятори паймон"
+      },
+      {
+        "buildingType": "Минтақаҳои умумии сайт",
+        "description": "Мухлисони ихроҷкунанда ва ҳалли бароҳати марказӣ",
+        "products": "Фанҳои деворӣ, мухлиси мобилӣ"
+      }
+    ],
+    "marinOffshore": [
+      {
+        "buildingType": "Ҳуҷраҳои муҳаррики киштӣ",
+        "description": "Истеъмоли доимӣ ва ҳавои тоза дар ҳарорати баланд, газҳои ихроҷшуда ва ларзиш",
+        "products": "Фати меҳвар, Фати радиалӣ, ATEX Фан"
+      },
+      {
+        "buildingType": "Хонаи генератор ва насос",
+        "description": "Хавфи гази оташгиранда ва паҳншавии гармӣ; минтақаҳои мӯҳр ва ҳамгироии автоматикунонӣ",
+        "products": "Фанҳои аксиалӣ, дампер, панели автоматикунонӣ"
+      },
+      {
+        "buildingType": "Киштиҳои круизӣ ва паромҳо",
+        "description": "Вентилятсияи бароҳат дар минтақаҳои мусофирон ва экипаж",
+        "products": "Фасли меҳвар, мухлиси канал"
+      },
+      {
+        "buildingType": "Киштиҳои боркаш",
+        "description": "Нигоҳдории бор ва вентилятсияи ҳуҷраи мошин",
+        "products": "Мухлиси саноатӣ, ATEX Фан"
+      },
+      {
+        "buildingType": "Платформаҳои оффшорӣ",
+        "description": "Вентилятсияи платформаи оффшорӣ ва ихроҷи изофӣ",
+        "products": "ATEX вентилятор, вентилятори меҳварӣ, оташдон"
+      },
+      {
+        "buildingType": "FPSO Агрегатхо ва лоихахои киштисозй",
+        "description": "Синфи тасвибшуда мухлиси баҳрӣ, истихроҷи дуд ва ҳамгироии автоматикунонӣ",
+        "products": "Фан Marine, Фан дуд, Damper, Панели автоматикунонии"
+      },
+      {
+        "buildingType": "Яхтаҳо ва яхтаҳои мега",
+        "description": "Вентилятсияи бароҳат ва ихроҷи ҳуҷраи муҳаррик",
+        "products": "Фати каналӣ, EC Fan"
+      }
+    ],
+    "projeBazliOzelImalat": [
+      {
+        "buildingType": "Бахш / Навъи лоиҳа",
+        "description": "Шарҳ",
+        "products": "Намудҳои ҳалли лоиҳа"
+      },
+      {
+        "buildingType": "Лоиҳаҳои ивазкунии меъморӣ",
+        "description": "Талаботи махсуси андоза/пайвастшавӣ дар асоси инфрасохтори мавҷудаи бино",
+        "products": "Тарҳрезии ҳуҷайра / корпуси фармоишӣ"
+      },
+      {
+        "buildingType": "Лоиҳаҳои дорои маҳдудиятҳои акустикӣ (меҳмонхонаҳо, студияҳо ва ғ.)",
+        "description": "Барномаҳое, ки иҷрои баландро дар маҳдудиятҳои садо талаб мекунанд",
+        "products": "Тарҳрезии мухлиси садои паст, хомӯшкунандаи ҳамгирошуда"
+      },
+      {
+        "buildingType": "Биноҳои баланд ва минтақаҳое, ки гузариши мушкил доранд",
+        "description": "Маҳсулоти сабук, ки метавонанд ба фазои танги дохили чоҳ ҷойгир шаванд",
+        "products": "мухлиси паймон, тарҳи маҳсулоти калисо модулӣ"
+      },
+      {
+        "buildingType": "Лоиҳаҳои меъмории Prestij Manzil & Luxury",
+        "description": "Намуди зоҳирии эстетикӣ, пӯшиши рӯизаминӣ ва ҳадди ақали ҳадафи садо",
+        "products": "берунии рангубор, насби пинҳонӣ, баромади ҳаво ноаён"
+      },
+      {
+        "buildingType": "Минтақаҳои махсуси меъмории ғизо ва дору",
+        "description": "Маводи антибактериалӣ, сатҳи тозашаванда ва сохтори махсуси филтр",
+        "products": "Бадани зангногир, тарҳи дохилии ултрабунафш филтршуда"
+      }
+    ],
+    "cfdDanismanlik": [
+      {
+        "buildingType": "Паркҳои мошинҳои пӯшида",
+        "description": "Ҷойгиркунии мухлиси реактивӣ, сенарияи сӯхтор, моделсозии паҳншавии CO",
+        "products": "Таҳлили CFD, Jet Fan Ҷойгиркунӣ, Файли техникӣ"
+      },
+      {
+        "buildingType": "нақбҳо",
+        "description": "Сенарияи вентилятсияи туннел, таҳлили фишор ва ҷараёни",
+        "products": "Таҳлили ҷараён, оптимизатсияи самти ҳавои реактивӣ"
+      },
+      {
+        "buildingType": "Фурудгоҳҳо ва истгоҳҳои метро",
+        "description": "Минтақаи сӯхтор, симулятсияи қабати дуд",
+        "products": "Тартиб додани файли лоиҳа, ҳисоботи баҳисобгирӣ"
+      },
+      {
+        "buildingType": "Сохторҳои калонҳаҷм ба монанди марказҳои савдо ва стадионҳо",
+        "description": "Сенарияҳо ва тарҳҳои эвакуатсияи дуд, ки барои эвакуатсияи мусофирон мувофиқанд",
+        "products": "Дастгирии муҳандисии оташнишонӣ, машварати сенария"
+      },
+      {
+        "buildingType": "Идораҳои меъморӣ ва лоиҳавӣ",
+        "description": "Таҳқиқ ва ҳисобкунии нармафзори фанни Jet",
+        "products": "CAD тарҳбандии дастгирӣ, омодасозии шаблон техникӣ"
+      }
+    ]
+  },
+  "zh": {
+    "dumanIsiTahliye": [
+      {
+        "buildingType": "有盖停车场",
+        "description": "发生火灾时 CO 疏散 + 排烟",
+        "products": "__学期_10__，排烟扇，风门"
+      },
+      {
+        "buildingType": "公路和铁路隧道",
+        "description": "火分区和空气路由",
+        "products": "__学期_10__，轴流风扇"
+      },
+      {
+        "buildingType": "购物中心（购物中心）",
+        "description": "烟雾控制和疏散",
+        "products": "蜂窝风扇、轴流风扇、风门"
+      },
+      {
+        "buildingType": "体育场馆和会议厅",
+        "description": "紧急情况下的排烟",
+        "products": "轴流风扇，__学期_10__"
+      },
+      {
+        "buildingType": "工业生产设施",
+        "description": "过程引起的热气体放电",
+        "products": "蜗牛风扇、屋顶风扇、排气扇"
+      },
+      {
+        "buildingType": "医院和卫生设施",
+        "description": "患者区域的烟雾分区",
+        "products": "蜂窝风扇、阻尼器"
+      },
+      {
+        "buildingType": "机场",
+        "description": "底层排烟",
+        "products": "Jet Fan，轴流风机，增压风机"
+      },
+      {
+        "buildingType": "仓储及物流中心",
+        "description": "大容量烟雾控制",
+        "products": "管道风机，Jet Fan，阻尼器"
+      },
+      {
+        "buildingType": "发电厂和发电机房",
+        "description": "排气防止电气火灾",
+        "products": "防爆风扇、蜗牛风扇"
+      },
+      {
+        "buildingType": "酒店及住宅（高层建筑）",
+        "description": "楼梯增压、排烟",
+        "products": "蜂窝风扇、增压风扇、风门"
+      }
+    ],
+    "konforIklimlendirme": [
+      {
+        "buildingType": "办公楼",
+        "description": "中央空调，新风循环",
+        "products": "空气处理机组、管道风扇、通风口"
+      },
+      {
+        "buildingType": "酒店及度假村",
+        "description": "气流分布舒适，热回收，运行安静",
+        "products": "__学期_29__，蜂窝风扇，过滤器"
+      },
+      {
+        "buildingType": "学校和大学",
+        "description": "教室空气新鲜，节能",
+        "products": "热回收、管道风扇、通风口"
+      },
+      {
+        "buildingType": "医院（安慰科室）",
+        "description": "为病房和走廊提供安静、平衡的气流",
+        "products": "AHU、EC Fan、过滤器"
+      },
+      {
+        "buildingType": "购物中心和商店",
+        "description": "舒适空调，空气分布均匀",
+        "products": "__学期_29__，蜂窝风扇，麻醉器"
+      },
+      {
+        "buildingType": "独立屋及住宅",
+        "description": "紧凑的解决方案、安静且节能的空气系统",
+        "products": "管道风机，热回收，__学期_15__"
+      },
+      {
+        "buildingType": "银行和公共建筑",
+        "description": "中央空调系统和新风需求",
+        "products": "空气处理装置、通风口、风门"
+      },
+      {
+        "buildingType": "机场和航站楼",
+        "description": "大容量空调系统",
+        "products": "大容量AHU，蜂窝风扇"
+      },
+      {
+        "buildingType": "餐厅和咖啡馆",
+        "description": "控制气味，保持温度平衡",
+        "products": "蜂窝风扇、厨房排气扇、过滤器"
+      },
+      {
+        "buildingType": "健身房和健身中心",
+        "description": "空气新鲜，大流量循环",
+        "products": "空气处理机组、管道风扇、通风口"
+      }
+    ],
+    "hijyenikFiltrasyon": [
+      {
+        "buildingType": "手术室和重症监护室",
+        "description": "微生物过滤、压力控制",
+        "products": "卫生 AHU、HEPA 过滤器、UV-C 风扇"
+      },
+      {
+        "buildingType": "洁净室",
+        "description": "颗粒物控制，卫生等级100-10万级之间",
+        "products": "HEPA 系统风扇，加压 AHU"
+      },
+      {
+        "buildingType": "药品生产设施",
+        "description": "符合 GMP 标准，过滤和压力控制",
+        "products": "卫生空气处理装置，过滤电池风扇"
+      },
+      {
+        "buildingType": "食品产区",
+        "description": "卫生的空气循环、气味和颗粒控制",
+        "products": "卫生 AHU、EC Fan、过滤器、不锈钢机身"
+      },
+      {
+        "buildingType": "实验室",
+        "description": "气体和颗粒控制、负/正压分区",
+        "products": "HEPA 过滤单元风扇、阻尼器、过滤器"
+      },
+      {
+        "buildingType": "医院服务楼层",
+        "description": "新风供应、异味及感染风险控制",
+        "products": "卫生 AHU、EC Fan、管道风扇、过滤器"
+      },
+      {
+        "buildingType": "繁忙的厨房（工业和医疗）",
+        "description": "油雾+空气质量控制，需要可清洗过滤器",
+        "products": "厨房风扇、蜂窝风扇、过滤器"
+      },
+      {
+        "buildingType": "畜牧兽医诊所区",
+        "description": "微生物和不良气味控制",
+        "products": "带过滤器的风扇，EC Fan，热回收"
+      }
+    ],
+    "endustriyelHavaYonetimi": [
+      {
+        "buildingType": "重工业设施",
+        "description": "高温、灰尘、颗粒和化学气体的排出",
+        "products": "工业蜗牛风机、排气扇、风门"
+      },
+      {
+        "buildingType": "焊接、涂装、喷粉生产线",
+        "description": "局部吸、排气、负压分区",
+        "products": "排风机、除尘风机"
+      },
+      {
+        "buildingType": "铸造冶金企业",
+        "description": "高温排烟",
+        "products": "耐高温轴流风机、屋顶风机"
+      },
+      {
+        "buildingType": "纸张、包装和纺织品生产",
+        "description": "纤维、灰尘和湿气排出，能量回收",
+        "products": "__学期_15__，热回收，蜂窝风扇"
+      },
+      {
+        "buildingType": "发电厂",
+        "description": "发电机房通风、废气排空",
+        "products": "蜗牛风扇、排气扇、防爆风扇"
+      },
+      {
+        "buildingType": "汽车和机械装配线",
+        "description": "排热排烟、能量回收",
+        "products": "蜂窝风扇、管道风扇、蜗牛风扇"
+      },
+      {
+        "buildingType": "回收和废物处理设施",
+        "description": "气味、烟雾和颗粒的排出",
+        "products": "排气扇、管道风机、过滤器"
+      },
+      {
+        "buildingType": "物流及仓储区",
+        "description": "热风排出、空气循环",
+        "products": "轴流风机、屋顶风机、蜂窝风机"
+      },
+      {
+        "buildingType": "木材和家具车间",
+        "description": "切屑、灰尘和溶剂排出",
+        "products": "除尘风机、风阀、过滤器"
+      }
+    ],
+    "hayvancilikTesisleri": [
+      {
+        "buildingType": "养鸡场",
+        "description": "高流量排气系统可去除强烈的湿度、热量和气体",
+        "products": "家禽风机、排气扇"
+      },
+      {
+        "buildingType": "产蛋量",
+        "description": "线性空气循环防止热量和气体积聚",
+        "products": "管道风机、家禽风机"
+      },
+      {
+        "buildingType": "孵化设施",
+        "description": "精确的风扇控制可实现稳定的温度和空气流动",
+        "products": "__学期_15__，鸡粉丝"
+      },
+      {
+        "buildingType": "牛和谷仓通风",
+        "description": "通过空气循环控制湿度、氨气和二氧化碳",
+        "products": "轴流风机、排气扇"
+      }
+    ],
+    "trafoEnerjiOdalari": [
+      {
+        "buildingType": "变压器中心 (MV/LV)",
+        "description": "强制排出热空气和气体，24/7 可靠性",
+        "products": "轴流风机、屋顶风机"
+      },
+      {
+        "buildingType": "发电机房",
+        "description": "连续排气对抗发动机排热",
+        "products": "蜗牛风扇、排气扇"
+      },
+      {
+        "buildingType": "能源传输变电站",
+        "description": "紧凑型风扇解决方案可防止不受控制的加热",
+        "products": "管道风扇、壁扇"
+      },
+      {
+        "buildingType": "数据中心能源室",
+        "description": "需要稳定温度运行的变压器/UPS机房",
+        "products": "__学期_15__，手机风扇"
+      }
+    ],
+    "seraTarimsal": [
+      {
+        "buildingType": "玻璃或聚碳酸酯温室",
+        "description": "温度、湿度和二氧化碳浓度控制；空气流通",
+        "products": "轴流风机、鸡风机、管道风机"
+      },
+      {
+        "buildingType": "塑料隧道温室",
+        "description": "低压空气输送有助于自然通风",
+        "products": "鸡风扇、壁挂式风扇"
+      },
+      {
+        "buildingType": "智能温室（物联网控制）",
+        "description": "基于湿度、温度和光传感器的自动风扇控制",
+        "products": "__学期_15__，自动化仪表板"
+      },
+      {
+        "buildingType": "热带/寒冷气候温室",
+        "description": "双向空气流动和根据气候自动路由",
+        "products": "双向轴流风机、风门"
+      },
+      {
+        "buildingType": "树木栽培和牧草温室",
+        "description": "用于散热和湿度平衡的轻型风扇系统",
+        "products": "管道式风扇，__学期_15__"
+      }
+    ],
+    "atexPatlamaKoruma": [
+      {
+        "buildingType": "化学和石化设施",
+        "description": "爆炸性气体和蒸汽环境中的安全通风",
+        "products": "防爆轴流式和蜗牛式风扇"
+      },
+      {
+        "buildingType": "燃料储存和加注区",
+        "description": "去除环境中的易燃气体",
+        "products": "防爆壁扇、风门"
+      },
+      {
+        "buildingType": "使用溶剂的染色车间和生产",
+        "description": "安全排气，防止静电和溶剂气体积聚",
+        "products": "防爆管道风机、除尘"
+      },
+      {
+        "buildingType": "面粉、糖、化学粉末设施",
+        "description": "防静电风扇和封闭系统，防止粉尘爆炸",
+        "products": "防爆轴流风机、旋风系统"
+      },
+      {
+        "buildingType": "制药及医学化学生产区",
+        "description": "针对易燃部件的过滤和压力控制风扇系统",
+        "products": "卫生防爆风机、带过滤器排气扇"
+      },
+      {
+        "buildingType": "气体填充和分析实验室",
+        "description": "敏感气体环境安全安静排气",
+        "products": "紧凑型防爆风扇、风门"
+      }
+    ],
+    "akilliOtomasyon": [
+      {
+        "buildingType": "智能建筑（购物中心、办公室、医院）",
+        "description": "BMS集成，温度/湿度/气体自动控制",
+        "products": "PLC 面板、传感器、信号线、自动阻尼器"
+      },
+      {
+        "buildingType": "工业设施",
+        "description": "基于流程的风扇控制、远程监控、场景管理",
+        "products": "自动化面板、继电器、自动风扇模块"
+      },
+      {
+        "buildingType": "隧道及停车场项目",
+        "description": "带有射流风扇和 CO 传感器的集成系统",
+        "products": "Jet Fan，带传感器的 CO 检测器，自动化面板"
+      },
+      {
+        "buildingType": "住房和住宅",
+        "description": "紧凑型控制系统、HVAC 解决方案由用户友好的界面支持",
+        "products": "迷你 PLC，智能传感器，紧凑型风扇"
+      },
+      {
+        "buildingType": "医院和洁净室",
+        "description": "压差、颗粒水平和过滤器污染传感器",
+        "products": "HEPA 风扇、F9 传感器、自动风门"
+      },
+      {
+        "buildingType": "数据中心",
+        "description": "基于温度的通风管理，冗余控制",
+        "products": "双模块、温度传感器控制 EC 风扇"
+      }
+    ],
+    "konutHavalandirma": [
+      {
+        "buildingType": "个人住宅（公寓和别墅）",
+        "description": "安静、节省空间、节能的解决方案",
+        "products": "管道风机，热回收，紧凑型 AHU"
+      },
+      {
+        "buildingType": "住宅和豪华住宅项目",
+        "description": "美观、安静且受控的系统",
+        "products": "__学期_15__，蜂窝风扇，通风口"
+      },
+      {
+        "buildingType": "独立式住宅",
+        "description": "新风供应、浴室及厨房排风",
+        "products": "浴室风扇、厨房风扇、管道风扇"
+      },
+      {
+        "buildingType": "小房子和预制建筑",
+        "description": "尺寸紧凑，产品组装方便",
+        "products": "__学期_15__，紧凑型管道风扇"
+      },
+      {
+        "buildingType": "站点公共区域",
+        "description": "排气扇和中央舒适解决方案",
+        "products": "壁扇、蜂窝风扇"
+      }
+    ],
+    "marinOffshore": [
+      {
+        "buildingType": "船舶机舱",
+        "description": "高温、废气、振动条件下连续排气、新风",
+        "products": "轴流式风扇、径流式风扇、ATEX 风扇"
+      },
+      {
+        "buildingType": "发电机和泵房",
+        "description": "易燃气体和放热的风险；密封分区和自动化集成",
+        "products": "轴流风机、风门、自动化面板"
+      },
+      {
+        "buildingType": "游轮和渡轮",
+        "description": "乘客和船员区域的舒适通风",
+        "products": "轴流风机、管道风机"
+      },
+      {
+        "buildingType": "货船",
+        "description": "货舱和机舱通风",
+        "products": "工业风扇，ATEX 风扇"
+      },
+      {
+        "buildingType": "海上平台",
+        "description": "海上平台通风及防爆排气",
+        "products": "__学期_24__ 风机、轴流风机、防火阀"
+      },
+      {
+        "buildingType": "__学期_26__ 单位和造船厂项目",
+        "description": "经过船级社认证的船用风机、排烟和自动化集成",
+        "products": "船用风机、排烟风机、风阀、自动化面板"
+      },
+      {
+        "buildingType": "游艇和巨型游艇",
+        "description": "舒适通风和机舱排气",
+        "products": "管道风扇，__学期_15__"
+      }
+    ],
+    "projeBazliOzelImalat": [
+      {
+        "buildingType": "部门/项目类型",
+        "description": "解释",
+        "products": "基于项目的解决方案类型"
+      },
+      {
+        "buildingType": "建筑更换项目",
+        "description": "基于现有建筑基础设施的特殊尺寸/连接要求",
+        "products": "定制电池/外壳设计"
+      },
+      {
+        "buildingType": "有声学限制的项目（酒店、工作室等）",
+        "description": "在噪声限制下需要高性能的应用",
+        "products": "低噪音风扇设计，集成消音器"
+      },
+      {
+        "buildingType": "高层建筑及通行困难区域",
+        "description": "可装入井道内狭窄空间的轻量产品",
+        "products": "紧凑型风扇，模块化组装产品设计"
+      },
+      {
+        "buildingType": "Prestij 住房和豪华建筑项目",
+        "description": "美观的外观、表面涂层和最小声音目标",
+        "products": "外喷漆、暗装、隐形出风口"
+      },
+      {
+        "buildingType": "食品与医药建筑特殊领域",
+        "description": "抗菌材料、易清洁表面和特殊过滤结构",
+        "products": "不锈钢机身，过滤紫外线的内部设计"
+      }
+    ],
+    "cfdDanismanlik": [
+      {
+        "buildingType": "有盖停车场",
+        "description": "射流风扇放置、火灾场景、CO 扩散模拟",
+        "products": "CFD 分析、Jet Fan 定位、技术文件"
+      },
+      {
+        "buildingType": "隧道",
+        "description": "隧道通风场景、压力和流量分析",
+        "products": "流动分析、射流风机方向优化"
+      },
+      {
+        "buildingType": "机场和地铁站",
+        "description": "火分区、烟层模拟",
+        "products": "项目文件准备、会计报告"
+      },
+      {
+        "buildingType": "大体量结构，如购物中心、体育场馆",
+        "description": "适合乘客疏散的烟雾疏散场景和设计",
+        "products": "消防工程支持、场景咨询"
+      },
+      {
+        "buildingType": "建筑和项目办公室",
+        "description": "射流风扇软件辅助勘探计算",
+        "products": "CAD 支持布局、技术模板准备"
+      }
+    ]
+  },
+  "ur": {
+    "dumanIsiTahliye": [
+      {
+        "buildingType": "کور پارکس",
+        "description": "آگ لگنے کی صورت میں CO انخلاء + دھواں ہٹانا",
+        "products": "Jet Fan، دھواں والا پنکھا، ڈیمپر"
+      },
+      {
+        "buildingType": "سڑک اور ریلوے سرنگیں۔",
+        "description": "فائر زوننگ اور ایئر روٹنگ",
+        "products": "Jet Fan، محوری پنکھا۔"
+      },
+      {
+        "buildingType": "شاپنگ مالز (شاپنگ مالز)",
+        "description": "دھواں کنٹرول اور انخلاء",
+        "products": "سیلولر پنکھا، محوری پنکھا، ڈیمپر"
+      },
+      {
+        "buildingType": "اسٹیڈیم اور میٹنگ ہال",
+        "description": "ہنگامی حالات میں دھواں نکالنا",
+        "products": "محوری پنکھا، Jet Fan"
+      },
+      {
+        "buildingType": "صنعتی پیداواری سہولیات",
+        "description": "عمل کی حوصلہ افزائی گرم گیس خارج ہونے والے مادہ",
+        "products": "گھونگے کا پنکھا، چھت کا پنکھا، ایگزاسٹ پنکھا۔"
+      },
+      {
+        "buildingType": "ہسپتال اور صحت کی سہولیات",
+        "description": "مریضوں کے علاقوں میں دھواں زوننگ",
+        "products": "سیلولر پنکھا، ڈیمپر"
+      },
+      {
+        "buildingType": "ہوائی اڈے",
+        "description": "نیچے کی تہہ سے دھواں نکالنا",
+        "products": "Jet Fan، محوری پنکھا، دباؤ کا پنکھا۔"
+      },
+      {
+        "buildingType": "گودام اور لاجسٹک مراکز",
+        "description": "زیادہ مقدار میں دھواں کنٹرول",
+        "products": "ڈکٹ فین، Jet Fan، ڈیمپر"
+      },
+      {
+        "buildingType": "پاور پلانٹس اور جنریٹر کے کمرے",
+        "description": "بجلی کی آگ کے خلاف راستہ",
+        "products": "سابق پروف فین، گھونگھے کا پرستار"
+      },
+      {
+        "buildingType": "ہوٹل اور رہائش گاہیں (اونچی عمارتیں)",
+        "description": "سیڑھیوں کا دباؤ، دھواں نکالنا",
+        "products": "سیلولر فین، پریشرائزیشن فین، ڈیمپر"
+      }
+    ],
+    "konforIklimlendirme": [
+      {
+        "buildingType": "دفتری عمارتیں",
+        "description": "مرکزی ایئر کنڈیشنگ، تازہ ہوا کی گردش",
+        "products": "ایئر ہینڈلنگ یونٹ، ڈکٹ فین، وینٹ"
+      },
+      {
+        "buildingType": "ہوٹل اور ریزورٹس",
+        "description": "آرام دہ اور پرسکون ہوا کی تقسیم، گرمی کی بحالی، پرسکون آپریشن",
+        "products": "AHU، سیلولر فین، فلٹر"
+      },
+      {
+        "buildingType": "اسکول اور یونیورسٹیاں",
+        "description": "کلاس رومز میں تازہ ہوا، توانائی کی بچت",
+        "products": "ہیٹ ریکوری، ڈکٹ فین، وینٹ"
+      },
+      {
+        "buildingType": "ہسپتال (آرام کے شعبے)",
+        "description": "مریض کے کمروں اور راہداریوں کے لیے پرسکون اور متوازن ہوا کا بہاؤ",
+        "products": "AHU، EC Fan، فلٹر"
+      },
+      {
+        "buildingType": "شاپنگ مالز اور اسٹورز",
+        "description": "آرام دہ اور پرسکون ایئر کنڈیشنگ، یکساں ہوا تقسیم",
+        "products": "AHU، سیلولر فین، انیموسٹیٹ"
+      },
+      {
+        "buildingType": "مکانات اور رہائش گاہیں",
+        "description": "کومپیکٹ حل، پرسکون اور توانائی سے موثر ہوا کا نظام",
+        "products": "ڈکٹ فین، ہیٹ ریکوری، EC Fan"
+      },
+      {
+        "buildingType": "بینک اور عوامی عمارتیں",
+        "description": "سنٹرل ایئر کنڈیشنگ سسٹم اور تازہ ہوا کی ضروریات",
+        "products": "ایئر ہینڈلنگ یونٹ، وینٹ، ڈیمپر"
+      },
+      {
+        "buildingType": "ہوائی اڈے اور ٹرمینلز",
+        "description": "ہائی حجم ایئر کنڈیشنگ سسٹم",
+        "products": "بڑی گنجائش AHU، سیلولر پنکھے۔"
+      },
+      {
+        "buildingType": "ریستوراں اور کیفے",
+        "description": "گند کنٹرول، درجہ حرارت کے توازن کو برقرار رکھنے",
+        "products": "سیلولر پنکھا، کچن ایگزاسٹ فین، فلٹر"
+      },
+      {
+        "buildingType": "جم اور صحت کے مراکز",
+        "description": "تازہ ہوا، اعلی بہاؤ گردش",
+        "products": "ایئر ہینڈلنگ یونٹ، ڈکٹ فین، وینٹ"
+      }
+    ],
+    "hijyenikFiltrasyon": [
+      {
+        "buildingType": "آپریٹنگ رومز اور انتہائی نگہداشت کے یونٹ",
+        "description": "مائکروبیولوجیکل فلٹریشن، پریشر کنٹرول",
+        "products": "حفظان صحت AHU، HEPA فلٹر، UV-C پنکھا"
+      },
+      {
+        "buildingType": "صاف کمرے",
+        "description": "پارٹیکل کنٹرول، کلاس 100-100,000 کے درمیان حفظان صحت کی سطح",
+        "products": "HEPA سسٹم فین، پریشرائزڈ AHU"
+      },
+      {
+        "buildingType": "دواسازی کی پیداوار کی سہولیات",
+        "description": "جی ایم پی کے مطابق، فلٹرنگ اور پریشر کنٹرول",
+        "products": "ہائجینک ایئر ہینڈلنگ یونٹ، فلٹرڈ سیل فین"
+      },
+      {
+        "buildingType": "خوراک کی پیداوار کے علاقے",
+        "description": "صحت بخش ہوا کی گردش، بدبو اور ذرہ کنٹرول",
+        "products": "حفظان صحت AHU، EC Fan، فلٹر، سٹینلیس باڈی"
+      },
+      {
+        "buildingType": "لیبارٹریز",
+        "description": "گیس اور پارٹیکل کنٹرول، منفی/مثبت پریشر زوننگ",
+        "products": "HEPA فلٹر شدہ سیل فین، ڈیمپر، فلٹر"
+      },
+      {
+        "buildingType": "ہسپتال کی خدمت کے فرش",
+        "description": "تازہ ہوا کی فراہمی، بدبو اور انفیکشن کا خطرہ کنٹرول",
+        "products": "حفظان صحت AHU، EC Fan، ڈکٹ فین، فلٹر"
+      },
+      {
+        "buildingType": "مصروف کچن (صنعتی اور طبی)",
+        "description": "آئل مسٹ + ایئر کوالٹی کنٹرول، دھو سکتے فلٹر کی ضرورت ہے۔",
+        "products": "کچن کا پنکھا، سیلولر پنکھا، فلٹر"
+      },
+      {
+        "buildingType": "لائیو سٹاک اور ویٹرنری کلینک کے علاقے",
+        "description": "مائکروجنزم اور بدبو پر قابو پانا",
+        "products": "فلٹر کے ساتھ پنکھا، EC Fan، ہیٹ ریکوری"
+      }
+    ],
+    "endustriyelHavaYonetimi": [
+      {
+        "buildingType": "بھاری صنعت کی سہولیات",
+        "description": "اعلی درجہ حرارت، دھول، ذرہ اور کیمیائی گیس کا انخلاء",
+        "products": "صنعتی سست پنکھا، ایگزاسٹ فین، ڈیمپر"
+      },
+      {
+        "buildingType": "ویلڈنگ، پینٹنگ اور پاؤڈرڈ پروڈکشن لائنز",
+        "description": "مقامی سکشن، ایگزاسٹ، منفی پریشر زوننگ",
+        "products": "ایگزاسٹ فین، ڈسٹ کلیکشن فین"
+      },
+      {
+        "buildingType": "فاؤنڈری اور میٹالرجیکل انٹرپرائزز",
+        "description": "اعلی درجہ حرارت اور دھواں انخلاء",
+        "products": "اعلی درجہ حرارت مزاحم محوری پنکھا، چھت کا پنکھا۔"
+      },
+      {
+        "buildingType": "کاغذ، پیکیجنگ اور ٹیکسٹائل کی پیداوار",
+        "description": "فائبر، دھول اور نمی کا انخلاء، توانائی کی بحالی",
+        "products": "EC Fan، ہیٹ ریکوری، سیلولر فین"
+      },
+      {
+        "buildingType": "پاور پلانٹس",
+        "description": "جنریٹر روم وینٹیلیشن، فضلہ گیس کا انخلاء",
+        "products": "گھونگا پنکھا، ایگزاسٹ فین، سابق پروف پنکھا۔"
+      },
+      {
+        "buildingType": "آٹوموٹو اور مشینری اسمبلی لائنز",
+        "description": "گرمی اور دھوئیں کا انخلاء، توانائی کی بحالی",
+        "products": "سیل فین، ڈکٹ پنکھا، گھونگھے کا پنکھا۔"
+      },
+      {
+        "buildingType": "ری سائیکلنگ اور ویسٹ پروسیسنگ کی سہولیات",
+        "description": "بدبو، دھواں اور ذرات کا اخراج",
+        "products": "ایگزاسٹ فین، ڈکٹ فین، فلٹر"
+      },
+      {
+        "buildingType": "لاجسٹکس اور اسٹوریج ایریاز",
+        "description": "گرم ہوا خارج ہونے والا مادہ، ہوا کی گردش",
+        "products": "محوری پنکھا، چھت کا پنکھا، سیلولر پنکھا۔"
+      },
+      {
+        "buildingType": "لکڑی اور فرنیچر کی ورکشاپس",
+        "description": "چپ، دھول اور سالوینٹ انخلاء",
+        "products": "دھول جمع کرنے والا پنکھا، ڈیمپر، فلٹر"
+      }
+    ],
+    "hayvancilikTesisleri": [
+      {
+        "buildingType": "چکن فارمز",
+        "description": "شدید نمی، گرمی اور گیس کو ہٹانے کے لیے ہائی فلو ریٹ ایگزاسٹ سسٹم",
+        "products": "پولٹری فین، ایگزاسٹ فین"
+      },
+      {
+        "buildingType": "انڈے کی پیداوار کے یونٹ",
+        "description": "لکیری ہوا کی گردش گرمی اور گیس کے جمع ہونے کو روکتی ہے۔",
+        "products": "ڈکٹ پنکھا، پولٹری پنکھا۔"
+      },
+      {
+        "buildingType": "انکیوبیشن کی سہولیات",
+        "description": "مستحکم درجہ حرارت اور ہوا کی نقل و حرکت کے لئے عین مطابق پنکھے کا کنٹرول",
+        "products": "EC Fan، چکن فین"
+      },
+      {
+        "buildingType": "مویشی اور بارن وینٹیلیشن",
+        "description": "ہوا کی گردش کے ساتھ نمی، امونیا اور CO₂ کنٹرول",
+        "products": "محوری پنکھا، ایگزاسٹ فین"
+      }
+    ],
+    "trafoEnerjiOdalari": [
+      {
+        "buildingType": "ٹرانسفارمر سینٹرز (MV/LV)",
+        "description": "گرم ہوا اور گیسوں کا لازمی انخلاء، 24/7 وشوسنییتا",
+        "products": "محوری پنکھا، چھت کا پنکھا۔"
+      },
+      {
+        "buildingType": "جنریٹر رومز",
+        "description": "انجنوں کے گرمی کے اخراج کے خلاف مسلسل راستہ",
+        "products": "گھونگا پنکھا، ایگزاسٹ فین"
+      },
+      {
+        "buildingType": "انرجی ٹرانسمیشن سب سٹیشنز",
+        "description": "بے قابو ہیٹنگ کو روکنے کے لیے کومپیکٹ پنکھے کے حل",
+        "products": "ڈکٹ فین، وال فین"
+      },
+      {
+        "buildingType": "ڈیٹا سینٹر انرجی رومز",
+        "description": "ٹرانسفارمر/یو پی ایس کمرے جنہیں مستحکم درجہ حرارت پر کام کرنے کی ضرورت ہے۔",
+        "products": "EC Fan، سیلولر فین"
+      }
+    ],
+    "seraTarimsal": [
+      {
+        "buildingType": "گلاس یا پولی کاربونیٹ گرین ہاؤس",
+        "description": "درجہ حرارت، نمی اور CO₂ لیول کنٹرول؛ ہوا کی گردش",
+        "products": "محوری پنکھا، چکن پنکھا، ڈکٹ فین"
+      },
+      {
+        "buildingType": "پلاسٹک ٹنل گرین ہاؤس",
+        "description": "قدرتی وینٹیلیشن کی مدد کے لئے کم دباؤ ہوا کی منتقلی",
+        "products": "چکن پنکھا، وال ماونٹڈ پنکھا۔"
+      },
+      {
+        "buildingType": "اسمارٹ گرین ہاؤس (IoT کنٹرولڈ)",
+        "description": "نمی، درجہ حرارت اور روشنی کے سینسر کی بنیاد پر خودکار پنکھے کا کنٹرول",
+        "products": "EC Fan، آٹومیشن ڈیش بورڈ"
+      },
+      {
+        "buildingType": "اشنکٹبندیی/سرد آب و ہوا کے گرین ہاؤسز",
+        "description": "آب و ہوا کے مطابق دو طرفہ ہوا کی نقل و حرکت اور خودکار روٹنگ",
+        "products": "دو طرفہ محوری پنکھا، ڈیمپر"
+      },
+      {
+        "buildingType": "آربریکلچر اور گھاس کی پیداوار کے گرین ہاؤسز",
+        "description": "گرمی کی کھپت اور نمی کے توازن کے لیے ہلکے پنکھے کے نظام",
+        "products": "ڈکٹ ٹائپ فین، EC Fan"
+      }
+    ],
+    "atexPatlamaKoruma": [
+      {
+        "buildingType": "کیمیکل اور پیٹرو کیمیکل سہولیات",
+        "description": "دھماکہ خیز گیس اور بخارات کے ماحول میں محفوظ وینٹیلیشن",
+        "products": "سابق پروف محوری اور گھونگھے کے پرستار"
+      },
+      {
+        "buildingType": "ایندھن ذخیرہ کرنے اور بھرنے کے علاقے",
+        "description": "ماحول سے آتش گیر گیسوں کو ہٹانا",
+        "products": "سابق پروف وال فین، ڈیمپر"
+      },
+      {
+        "buildingType": "سالوینٹس کا استعمال کرتے ہوئے ڈائی شاپس اور پروڈکشنز",
+        "description": "جامد بجلی اور سالوینٹ گیس کے جمع ہونے کے خلاف محفوظ راستہ",
+        "products": "سابق پروف ڈکٹ فین، ڈسٹ کلیکشن"
+      },
+      {
+        "buildingType": "آٹا، چینی، کیمیکل پاؤڈر کی سہولیات",
+        "description": "مخالف جامد پرستار اور دھول دھماکے کے خلاف بند نظام",
+        "products": "ایکس پروف محوری پنکھا، سائیکلون سسٹم"
+      },
+      {
+        "buildingType": "فارماسیوٹیکل اور میڈیکل کیمسٹری کی پیداوار کے علاقے",
+        "description": "آتش گیر اجزاء کے خلاف فلٹرڈ اور پریشر کنٹرولڈ فین سسٹم",
+        "products": "ہائیجینک ایکس پروف فین، فلٹر کے ساتھ ایگزاسٹ فین"
+      },
+      {
+        "buildingType": "گیس بھرنے اور تجزیہ کرنے والی لیبارٹریز",
+        "description": "حساس گیس کے ماحول کے لیے محفوظ اور پرسکون راستہ",
+        "products": "کومپیکٹ سابق پروف پنکھا، ڈیمپر"
+      }
+    ],
+    "akilliOtomasyon": [
+      {
+        "buildingType": "سمارٹ بلڈنگز (شاپنگ مال، آفس، ہسپتال)",
+        "description": "BMS انضمام، درجہ حرارت/نمی/گیس پر مبنی خودکار کنٹرول",
+        "products": "PLC پینل، سینسر، سگنل وائرنگ، خودکار ڈیمپر"
+      },
+      {
+        "buildingType": "صنعتی سہولیات",
+        "description": "عمل پر مبنی پنکھے کا کنٹرول، ریموٹ مانیٹرنگ، منظر نامے کا انتظام",
+        "products": "آٹومیشن پینل، ریلے، خودکار فین ماڈیول"
+      },
+      {
+        "buildingType": "ٹنل اور پارکنگ کے منصوبے",
+        "description": "جیٹ فین اور CO سینسر کے ساتھ مربوط نظام",
+        "products": "Jet Fan، سینسر کے ساتھ CO ڈیٹیکٹر، آٹومیشن پینل"
+      },
+      {
+        "buildingType": "رہائش اور رہائش",
+        "description": "کومپیکٹ کنٹرول سسٹم، HVAC حل جو صارف دوست انٹرفیس کے ذریعے تعاون یافتہ ہیں۔",
+        "products": "منی PLC، اسمارٹ سینسر، کومپیکٹ فین"
+      },
+      {
+        "buildingType": "ہسپتال اور صاف ستھرے کمرے",
+        "description": "دباؤ کا فرق، ذرہ کی سطح اور فلٹر آلودگی کے سینسر",
+        "products": "HEPA پنکھا، F9 سینسر، خودکار ڈیمپر"
+      },
+      {
+        "buildingType": "ڈیٹا سینٹرز",
+        "description": "درجہ حرارت پر مبنی وینٹیلیشن کا انتظام، بے کار کنٹرول",
+        "products": "دوہری ماڈیول، درجہ حرارت سینسر کنٹرول EC پرستار"
+      }
+    ],
+    "konutHavalandirma": [
+      {
+        "buildingType": "انفرادی رہائش گاہیں (فلیٹ اور ولاز)",
+        "description": "پرسکون، جگہ کی بچت، توانائی کے موثر حل",
+        "products": "ڈکٹ فین، ہیٹ ریکوری، کمپیکٹ AHU"
+      },
+      {
+        "buildingType": "رہائش اور لگژری ہاؤسنگ پروجیکٹس",
+        "description": "جمالیاتی نظر آنے والے، پرسکون اور کنٹرول شدہ نظام",
+        "products": "EC Fan، سیلولر فین، وینٹ"
+      },
+      {
+        "buildingType": "علیحدہ مکانات",
+        "description": "تازہ ہوا کی فراہمی، باتھ روم اور کچن کا راستہ",
+        "products": "باتھ روم کا پنکھا، کچن کا پنکھا، ڈکٹ پنکھا۔"
+      },
+      {
+        "buildingType": "چھوٹے گھر اور تیار شدہ عمارتیں۔",
+        "description": "کومپیکٹ سائز، مصنوعات کو جمع کرنے میں آسان",
+        "products": "EC Fan، کومپیکٹ ڈکٹ فین"
+      },
+      {
+        "buildingType": "سائٹ کامن ایریاز",
+        "description": "ایگزاسٹ پنکھے اور مرکزی آرام کا حل",
+        "products": "وال فین، سیلولر فین"
+      }
+    ],
+    "marinOffshore": [
+      {
+        "buildingType": "جہاز کے انجن کے کمرے",
+        "description": "اعلی درجہ حرارت، ایگزاسٹ گیس اور وائبریشن کے حالات میں مسلسل راستہ اور تازہ ہوا",
+        "products": "محوری پنکھا، ریڈیل فین، ATEX پنکھا۔"
+      },
+      {
+        "buildingType": "جنریٹر اور پمپ روم",
+        "description": "آتش گیر گیس اور گرمی کی رہائی کا خطرہ؛ سیل شدہ زوننگ اور آٹومیشن انضمام",
+        "products": "محوری پنکھا، ڈیمپر، آٹومیشن پینل"
+      },
+      {
+        "buildingType": "کروز بحری جہاز اور فیریز",
+        "description": "مسافروں اور عملے کے علاقوں میں آرام دہ وینٹیلیشن",
+        "products": "محوری پنکھا، ڈکٹ پنکھا۔"
+      },
+      {
+        "buildingType": "کارگو جہاز",
+        "description": "کارگو ہولڈ اور انجن روم وینٹیلیشن",
+        "products": "صنعتی پنکھا، ATEX پرستار"
+      },
+      {
+        "buildingType": "آف شور پلیٹ فارمز",
+        "description": "آف شور پلیٹ فارم وینٹیلیشن اور ایکسپرو ایگزاسٹ",
+        "products": "ATEX پنکھا، محوری پنکھا، فائر ڈیمپر"
+      },
+      {
+        "buildingType": "FPSO یونٹس اور شپ یارڈ پروجیکٹس",
+        "description": "کلاس منظور شدہ سمندری پنکھا، دھواں نکالنے اور آٹومیشن انضمام",
+        "products": "میرین فین، اسموک فین، ڈیمپر، آٹومیشن پینل"
+      },
+      {
+        "buildingType": "یاٹ اور میگا یاٹ",
+        "description": "کمفرٹ وینٹیلیشن اور انجن روم ایگزاسٹ",
+        "products": "ڈکٹ فین، EC Fan"
+      }
+    ],
+    "projeBazliOzelImalat": [
+      {
+        "buildingType": "سیکٹر / پروجیکٹ کی قسم",
+        "description": "وضاحت",
+        "products": "پروجیکٹ پر مبنی حل کی اقسام"
+      },
+      {
+        "buildingType": "تعمیراتی تبدیلی کے منصوبے",
+        "description": "موجودہ عمارت کے بنیادی ڈھانچے کی بنیاد پر خصوصی جہت/کنکشن کی ضرورت",
+        "products": "اپنی مرضی کے مطابق سیل/کیس ڈیزائن"
+      },
+      {
+        "buildingType": "صوتی پابندیوں والے پروجیکٹس (ہوٹل، اسٹوڈیوز، وغیرہ)",
+        "description": "ایپلی کیشنز جو شور کی حد کے تحت اعلی کارکردگی کی ضرورت ہوتی ہے",
+        "products": "کم شور والے پنکھے کا ڈیزائن، سائلنسر مربوط"
+      },
+      {
+        "buildingType": "اونچی عمارتیں اور مشکل گزرنے والے علاقے",
+        "description": "ہلکی پھلکی مصنوعات جو شافٹ کے اندر ایک تنگ جگہ میں فٹ ہو سکتی ہیں۔",
+        "products": "کومپیکٹ فین، ماڈیولر اسمبلی پروڈکٹ ڈیزائن"
+      },
+      {
+        "buildingType": "پریسٹیج ہاؤسنگ اور لگژری آرکیٹیکچرل پروجیکٹس",
+        "description": "جمالیاتی ظاہری شکل، سطح کی کوٹنگ اور کم از کم آواز کا ہدف",
+        "products": "پینٹ شدہ بیرونی، پوشیدہ تنصیب، پوشیدہ ایئر آؤٹ لیٹ"
+      },
+      {
+        "buildingType": "فوڈ اینڈ میڈیسن آرکیٹیکچر کے خصوصی علاقے",
+        "description": "اینٹی بیکٹیریل مواد، صاف کرنے میں آسان سطح اور خصوصی فلٹر ڈھانچہ",
+        "products": "سٹینلیس باڈی، یووی فلٹرڈ اندرونی ڈیزائن"
+      }
+    ],
+    "cfdDanismanlik": [
+      {
+        "buildingType": "کور پارکس",
+        "description": "جیٹ فین کی جگہ کا تعین، آگ کا منظر، CO پھیلاؤ تخروپن",
+        "products": "CFD تجزیہ، Jet Fan پوزیشننگ، ٹیکنیکل فائل"
+      },
+      {
+        "buildingType": "سرنگیں",
+        "description": "ٹنل وینٹیلیشن کا منظر نامہ، دباؤ اور بہاؤ کا تجزیہ",
+        "products": "بہاؤ کا تجزیہ، جیٹ پنکھے کی سمت کی اصلاح"
+      },
+      {
+        "buildingType": "ہوائی اڈے اور میٹرو اسٹیشن",
+        "description": "فائر زوننگ، دھوئیں کی پرت کا تخروپن",
+        "products": "پروجیکٹ فائل کی تیاری، اکاؤنٹنگ رپورٹ"
+      },
+      {
+        "buildingType": "بڑے حجم کے ڈھانچے جیسے شاپنگ مالز اور اسٹیڈیم",
+        "description": "دھواں نکالنے کے منظرنامے اور ڈیزائن مسافروں کے انخلاء کے لیے موزوں ہیں۔",
+        "products": "فائر انجینئرنگ سپورٹ، سیناریو کنسلٹنسی"
+      },
+      {
+        "buildingType": "آرکیٹیکچرل اور پروجیکٹ آفسز",
+        "description": "جیٹ فین سافٹ ویئر کی مدد سے ایکسپلوریشن اور حساب کتاب",
+        "products": "CAD تعاون یافتہ لے آؤٹ، تکنیکی ٹیمپلیٹ کی تیاری"
+      }
+    ]
+  },
+  "ro": {
+    "dumanIsiTahliye": [
+      {
+        "buildingType": "Parcari acoperite",
+        "description": "Evacuarea CO + eliminarea fumului in caz de incendiu",
+        "products": "Jet Fan, ventilator de fum, amortizor"
+      },
+      {
+        "buildingType": "Tuneluri rutiere și feroviare",
+        "description": "Zonarea incendiilor și direcționarea aerului",
+        "products": "Jet Fan, Ventilator axial"
+      },
+      {
+        "buildingType": "Centre comerciale (Mall-uri)",
+        "description": "Controlul fumului și evacuarea",
+        "products": "Ventilator celular, ventilator axial, amortizor"
+      },
+      {
+        "buildingType": "Stadioane și săli de ședințe",
+        "description": "Evacuarea fumului în situații de urgență",
+        "products": "Ventilator axial, Jet Fan"
+      },
+      {
+        "buildingType": "Instalatii de productie industriala",
+        "description": "Descărcare de gaz fierbinte indusă de proces",
+        "products": "Ventilator melc, ventilator de acoperiș, ventilator de evacuare"
+      },
+      {
+        "buildingType": "Spitale și unități sanitare",
+        "description": "Zonarea fumului în zonele pacienților",
+        "products": "Ventilator celular, amortizor"
+      },
+      {
+        "buildingType": "aeroporturi",
+        "description": "Evacuarea fumului din stratul inferior",
+        "products": "Jet Fan, Ventilator axial, Ventilator de presurizare"
+      },
+      {
+        "buildingType": "Centre de depozitare și logistică",
+        "description": "Controlul fumului la volume mari",
+        "products": "Ventilator de conductă, Jet Fan, Amortizor"
+      },
+      {
+        "buildingType": "Centrale electrice și camere generatoare",
+        "description": "Evacuare împotriva incendiilor electrice",
+        "products": "Ventilator antideflagrant, ventilator melc"
+      },
+      {
+        "buildingType": "Hoteluri și reședințe (clădiri înalte)",
+        "description": "Presurizare scara, evacuare fum",
+        "products": "Ventilator celular, ventilator de presurizare, amortizor"
+      }
+    ],
+    "konforIklimlendirme": [
+      {
+        "buildingType": "Clădiri de birouri",
+        "description": "Aer conditionat centralizat, circulatie aer proaspat",
+        "products": "Unitate de tratare a aerului, ventilator de conductă, ventilație"
+      },
+      {
+        "buildingType": "Hoteluri și stațiuni",
+        "description": "Distribuție confortabilă a aerului, recuperare de căldură, funcționare silențioasă",
+        "products": "AHU, Ventilator celular, Filtru"
+      },
+      {
+        "buildingType": "Școli și universități",
+        "description": "Aer proaspăt în sălile de clasă, economie de energie",
+        "products": "Recuperare căldură, ventilator în conductă, aerisire"
+      },
+      {
+        "buildingType": "Spitale (secții de confort)",
+        "description": "Flux de aer silențios și echilibrat pentru camerele și coridoarele pacienților",
+        "products": "AHU, EC Fan, Filtru"
+      },
+      {
+        "buildingType": "Centre comerciale și magazine",
+        "description": "Aer condiționat confort, distribuție omogenă a aerului",
+        "products": "AHU, Ventilator celular, Anemostat"
+      },
+      {
+        "buildingType": "Case și reședințe",
+        "description": "Soluții compacte, sisteme de aer silențioase și eficiente din punct de vedere energetic",
+        "products": "Ventilator de conductă, Recuperare căldură, EC Fan"
+      },
+      {
+        "buildingType": "Bănci și clădiri publice",
+        "description": "Sisteme centrale de aer condiționat și nevoi de aer proaspăt",
+        "products": "Unitate de tratare a aerului, aerisire, amortizor"
+      },
+      {
+        "buildingType": "Aeroporturi și terminale",
+        "description": "Sisteme de aer conditionat de mare volum",
+        "products": "Capacitate mare AHU, ventilatoare celulare"
+      },
+      {
+        "buildingType": "Restaurante și cafenele",
+        "description": "Controlul mirosurilor, menținerea echilibrului temperaturii",
+        "products": "Ventilator celular, ventilator de evacuare bucatarie, filtru"
+      },
+      {
+        "buildingType": "Săli de sport și centre de fitness",
+        "description": "Aer proaspăt, circulație cu debit mare",
+        "products": "Unitate de tratare a aerului, ventilator de conductă, ventilație"
+      }
+    ],
+    "hijyenikFiltrasyon": [
+      {
+        "buildingType": "Săli de operație și unități de terapie intensivă",
+        "description": "Filtrare microbiologică, control al presiunii",
+        "products": "Igienic AHU, HEPA Filtru, UV-C Ventilator"
+      },
+      {
+        "buildingType": "Camere curate",
+        "description": "Controlul particulelor, nivel de igienă între clasa 100-100.000",
+        "products": "HEPA Ventilator sistem, presurizat AHU"
+      },
+      {
+        "buildingType": "Unități de producție farmaceutică",
+        "description": "Conform GMP, filtrare și control al presiunii",
+        "products": "Unitate de tratare a aerului igienic, ventilator cu celule filtrate"
+      },
+      {
+        "buildingType": "Zone de producție alimentară",
+        "description": "Circulația igienă a aerului, controlul mirosurilor și al particulelor",
+        "products": "Igienic AHU, EC Fan, filtru, corp inoxidabil"
+      },
+      {
+        "buildingType": "laboratoare",
+        "description": "Controlul gazelor și particulelor, zonarea presiunii negative/pozitive",
+        "products": "HEPA Ventilator cu celule filtrate, clapete, filtru"
+      },
+      {
+        "buildingType": "Pardoseli Serviciu Spital",
+        "description": "Alimentarea cu aer proaspăt, controlul mirosurilor și al riscului de infecție",
+        "products": "Igienic AHU, EC Fan, ventilator de conductă, filtru"
+      },
+      {
+        "buildingType": "Bucătării ocupate (industriale și medicale)",
+        "description": "Ceața de ulei + controlul calității aerului, nevoie de filtru lavabil",
+        "products": "Ventilator de bucătărie, ventilator celular, filtru"
+      },
+      {
+        "buildingType": "Zonele Zootehnie și Clinică Veterinară",
+        "description": "Controlul microorganismelor și al mirosurilor neplăcute",
+        "products": "Ventilator cu filtru, EC Fan, recuperare de căldură"
+      }
+    ],
+    "endustriyelHavaYonetimi": [
+      {
+        "buildingType": "Facilități pentru industria grea",
+        "description": "Evacuare la temperaturi ridicate, praf, particule și gaze chimice",
+        "products": "Ventilator melc industrial, ventilator de evacuare, amortizor"
+      },
+      {
+        "buildingType": "Linii de sudare, vopsire și pulbere",
+        "description": "Zona de aspirație locală, evacuare, presiune negativă",
+        "products": "Ventilator de evacuare, ventilator de colectare a prafului"
+      },
+      {
+        "buildingType": "Întreprinderi de turnătorie și metalurgie",
+        "description": "Temperatură ridicată și evacuare a fumului",
+        "products": "Ventilator axial rezistent la temperaturi ridicate, ventilator de acoperiș"
+      },
+      {
+        "buildingType": "Producția de hârtie, ambalaje și textile",
+        "description": "Evacuare fibre, praf și umiditate, recuperare de energie",
+        "products": "EC Fan, recuperare de căldură, ventilator celular"
+      },
+      {
+        "buildingType": "Centrale electrice",
+        "description": "Ventilatie camera generatorului, evacuare gaze reziduale",
+        "products": "Ventilator melc, ventilator de evacuare, ventilator antideflagrant"
+      },
+      {
+        "buildingType": "Linii de asamblare auto și mașini",
+        "description": "Evacuare căldură și fum, recuperare de energie",
+        "products": "Ventilator de celule, ventilator de conductă, ventilator de melci"
+      },
+      {
+        "buildingType": "Instalatii de reciclare si procesare a deseurilor",
+        "description": "Evacuarea mirosurilor, a fumului și a particulelor",
+        "products": "Ventilator de evacuare, ventilator de conductă, filtru"
+      },
+      {
+        "buildingType": "Logistică și zone de depozitare",
+        "description": "Evacuarea aerului cald, circulatia aerului",
+        "products": "Ventilator axial, ventilator de acoperiș, ventilator celular"
+      },
+      {
+        "buildingType": "Ateliere lemn si mobila",
+        "description": "Evacuare așchii, praf și solvenți",
+        "products": "Ventilator de colectare a prafului, amortizor, filtru"
+      }
+    ],
+    "hayvancilikTesisleri": [
+      {
+        "buildingType": "Ferme de pui",
+        "description": "Sistem de evacuare cu debit mare pentru eliminarea intensă a umidității, căldurii și gazelor",
+        "products": "Ventilator păsări de curte, ventilator de evacuare"
+      },
+      {
+        "buildingType": "Unități de producție de ouă",
+        "description": "Circulația liniară a aerului previne acumularea de căldură și gaz",
+        "products": "Ventilator pentru conducte, ventilator pentru păsări de curte"
+      },
+      {
+        "buildingType": "Facilități de incubație",
+        "description": "Control precis al ventilatorului pentru o temperatură stabilă și mișcarea aerului",
+        "products": "EC Fan, Ventilator de pui"
+      },
+      {
+        "buildingType": "Ventilarea vitelor și hambarului",
+        "description": "Controlul umidității, amoniacului și CO₂ prin circulație a aerului",
+        "products": "Ventilator axial, ventilator de evacuare"
+      }
+    ],
+    "trafoEnerjiOdalari": [
+      {
+        "buildingType": "Centre de transformare (MV/LV)",
+        "description": "Evacuarea obligatorie a aerului si gazelor incalzite, fiabilitate 24/7",
+        "products": "Ventilator axial, ventilator de acoperiș"
+      },
+      {
+        "buildingType": "Camere generatoare",
+        "description": "Evacuare continuă împotriva căldurii de evacuare a motoarelor",
+        "products": "Ventilator melc, ventilator de evacuare"
+      },
+      {
+        "buildingType": "Substații de transport de energie",
+        "description": "Soluții compacte de ventilatoare pentru a preveni încălzirea necontrolată",
+        "products": "Ventilator de conductă, ventilator de perete"
+      },
+      {
+        "buildingType": "Camere de energie ale centrului de date",
+        "description": "Camere cu transformatoare/UPS care trebuie să funcționeze la temperatură stabilă",
+        "products": "EC Fan, Ventilator celular"
+      }
+    ],
+    "seraTarimsal": [
+      {
+        "buildingType": "Sere din sticlă sau policarbonat",
+        "description": "Controlul temperaturii, umidității și nivelului de CO₂; circulatia aerului",
+        "products": "Ventilator axial, ventilator de pui, ventilator de conductă"
+      },
+      {
+        "buildingType": "Sere tunel din plastic",
+        "description": "Transfer de aer de joasă presiune pentru a ajuta ventilația naturală",
+        "products": "Ventilator de pui, ventilator montat pe perete"
+      },
+      {
+        "buildingType": "Seră inteligentă (controlată IoT)",
+        "description": "Control automat al ventilatorului bazat pe senzori de umiditate, temperatură și lumină",
+        "products": "EC Fan, Tabloul de bord automatizare"
+      },
+      {
+        "buildingType": "Sere cu climă tropicală/rece",
+        "description": "Mișcarea aerului bidirecțională și direcționarea automată în funcție de climă",
+        "products": "Ventilator axial bidirecțional, amortizor"
+      },
+      {
+        "buildingType": "Sere pentru arboricultură și producție de iarbă",
+        "description": "Sisteme de ventilatoare ușoare pentru disiparea căldurii și echilibrarea umidității",
+        "products": "Ventilator tip conductă, EC Fan"
+      }
+    ],
+    "atexPatlamaKoruma": [
+      {
+        "buildingType": "Instalatii chimice si petrochimice",
+        "description": "Ventilație sigură în medii explozive cu gaz și vapori",
+        "products": "Ventilatoare axiale și melci antideflagrante"
+      },
+      {
+        "buildingType": "Zone de depozitare și umplere a combustibilului",
+        "description": "Eliminarea gazelor inflamabile din mediu",
+        "products": "Ventilator de perete antideflagrant, amortizor"
+      },
+      {
+        "buildingType": "Vopsitori și producții care folosesc solvenți",
+        "description": "Evacuare sigură împotriva electricității statice și a acumulării de gaz solvenți",
+        "products": "Ventilator antideflagrant, colectare praf"
+      },
+      {
+        "buildingType": "Facilități pentru făină, zahăr, pulbere chimică",
+        "description": "Ventilator antistatic si sisteme inchise impotriva exploziei prafului",
+        "products": "Ventilator axial antideflagrant, sistem ciclon"
+      },
+      {
+        "buildingType": "Domenii de Producție Farmaceutică și Chimie Medicală",
+        "description": "Sisteme de ventilatoare filtrate și cu presiune controlată împotriva componentelor inflamabile",
+        "products": "Ventilator igienic antideflagrant, ventilator de evacuare cu filtru"
+      },
+      {
+        "buildingType": "Laboratoare de umplere și analiză cu gaze",
+        "description": "Evacuare sigură și silențioasă pentru mediul sensibil la gaz",
+        "products": "Ventilator compact antideflagrant, amortizor"
+      }
+    ],
+    "akilliOtomasyon": [
+      {
+        "buildingType": "Clădiri inteligente (mall comercial, birou, spital)",
+        "description": "Integrare BMS, control automat pe bază de temperatură/umiditate/gaz",
+        "products": "PLC Panou, senzor, cablare semnal, amortizor automat"
+      },
+      {
+        "buildingType": "Facilități industriale",
+        "description": "Controlul ventilatorului bazat pe proces, monitorizarea de la distanță, managementul scenariilor",
+        "products": "Panou de automatizare, releu, modul ventilator automat"
+      },
+      {
+        "buildingType": "Proiecte de tunel și parcări",
+        "description": "Sisteme integrate cu ventilator cu jet și senzori de CO",
+        "products": "Jet Fan, Detector de CO cu senzor, Panou de automatizare"
+      },
+      {
+        "buildingType": "Locuințe și reședințe",
+        "description": "Sisteme de control compacte, soluții HVAC susținute de interfețe ușor de utilizat",
+        "products": "Mini PLC, senzor inteligent, ventilator compact"
+      },
+      {
+        "buildingType": "Spitale și camere curate",
+        "description": "Diferență de presiune, nivel de particule și senzori de poluare a filtrului",
+        "products": "HEPA Ventilator, senzor F9, amortizor automat"
+      },
+      {
+        "buildingType": "Centre de date",
+        "description": "Managementul ventilației pe bază de temperatură, control redundant",
+        "products": "Modul dublu, ventilatoare EC controlate de senzor de temperatură"
+      }
+    ],
+    "konutHavalandirma": [
+      {
+        "buildingType": "Reședințe individuale (apartamente și vile)",
+        "description": "Soluții silențioase, care economisesc spațiu și eficiente energetic",
+        "products": "Ventilator de conductă, recuperare de căldură, compact AHU"
+      },
+      {
+        "buildingType": "Proiecte de locuințe și locuințe de lux",
+        "description": "Sisteme cu aspect estetic, silențioase și controlate",
+        "products": "EC Fan, ventilator celular, ventilație"
+      },
+      {
+        "buildingType": "Case decomandate",
+        "description": "Alimentare cu aer proaspăt, evacuare baie și bucătărie",
+        "products": "Ventilator de baie, ventilator de bucătărie, ventilator de conductă"
+      },
+      {
+        "buildingType": "Case mici și clădiri prefabricate",
+        "description": "Dimensiune compactă, produse ușor de asamblat",
+        "products": "EC Fan, Ventilator compact"
+      },
+      {
+        "buildingType": "Zone comune ale amplasamentului",
+        "description": "Ventilatoare de evacuare și soluție de confort central",
+        "products": "Ventilator de perete, ventilator celular"
+      }
+    ],
+    "marinOffshore": [
+      {
+        "buildingType": "Camerele motoarelor navei",
+        "description": "Evacuare continuă și aer proaspăt în condiții de temperatură ridicată, gaze de eșapament și vibrații",
+        "products": "Ventilator axial, ventilator radial, ventilator ATEX"
+      },
+      {
+        "buildingType": "Camere de generatoare și pompe",
+        "description": "Risc de degajare de gaze inflamabile și căldură; zonarea sigilată și integrarea automatizării",
+        "products": "Ventilator axial, amortizor, panou de automatizare"
+      },
+      {
+        "buildingType": "Nave de croazieră și feriboturi",
+        "description": "Ventilație confortabilă în zonele pentru pasageri și echipaj",
+        "products": "Ventilator axial, ventilator de conductă"
+      },
+      {
+        "buildingType": "Nave de marfă",
+        "description": "Cală de marfă și ventilație din camera mașinilor",
+        "products": "Ventilator industrial, ATEX Ventilator"
+      },
+      {
+        "buildingType": "Platforme offshore",
+        "description": "Ventilație pe platformă offshore și evacuare antiext",
+        "products": "ATEX Ventilator, Ventilator axial, Clapet antifoc"
+      },
+      {
+        "buildingType": "FPSO Proiecte de unități și șantier naval",
+        "description": "Ventilator marin omologat de clasă, extracție fum și integrare automatizare",
+        "products": "Ventilator marin, ventilator de fum, amortizor, panou de automatizare"
+      },
+      {
+        "buildingType": "Iahturi și Mega Yacht-uri",
+        "description": "Ventilație confortabilă și evacuare a camerei motoarelor",
+        "products": "Ventilator, EC Fan"
+      }
+    ],
+    "projeBazliOzelImalat": [
+      {
+        "buildingType": "Sector / Tip de proiect",
+        "description": "Explicaţie",
+        "products": "Tipuri de soluții bazate pe proiecte"
+      },
+      {
+        "buildingType": "Proiecte de înlocuire arhitecturală",
+        "description": "Cerință de dimensiune/conexiune specială bazată pe infrastructura existentă a clădirii",
+        "products": "Design personalizat pentru celulă/carcasa"
+      },
+      {
+        "buildingType": "Proiecte cu restricții acustice (Hoteluri, studiouri etc.)",
+        "description": "Aplicații care necesită performanțe ridicate sub limite de zgomot",
+        "products": "Design ventilator cu zgomot redus, amortizor integrat"
+      },
+      {
+        "buildingType": "Clădiri înalte și zone cu trecere dificilă",
+        "description": "Produse ușoare care se pot încadra într-un spațiu îngust din interiorul arborelui",
+        "products": "Ventilator compact, design de produs de asamblare modulară"
+      },
+      {
+        "buildingType": "Prestij Housing & Luxury Architectural Projects",
+        "description": "Aspect estetic, acoperire a suprafeței și țintă sonoră minimă",
+        "products": "Exterior vopsit, montaj ascuns, evacuare aer invizibila"
+      },
+      {
+        "buildingType": "Arhitectură Alimentară și Medicină Zone speciale",
+        "description": "Material antibacterian, suprafață ușor de curățat și structură specială a filtrului",
+        "products": "Corp din inox, design interior cu filtrare UV"
+      }
+    ],
+    "cfdDanismanlik": [
+      {
+        "buildingType": "Parcari acoperite",
+        "description": "Amplasarea ventilatorului cu jet, scenariul de incendiu, simularea răspândirii CO",
+        "products": "Analiză CFD, Jet Fan Poziționare, Dosar Tehnic"
+      },
+      {
+        "buildingType": "tuneluri",
+        "description": "Scenariul de ventilație tunel, analiza presiunii și debitului",
+        "products": "Analiza debitului, optimizarea direcției ventilatorului cu jet"
+      },
+      {
+        "buildingType": "Aeroport și stații de metrou",
+        "description": "Zonarea incendiilor, simularea stratului de fum",
+        "products": "Intocmire dosar proiect, raport contabil"
+      },
+      {
+        "buildingType": "Structuri cu volum mare, cum ar fi mall-uri și stadioane",
+        "description": "Scenarii de evacuare a fumului și proiecte adecvate pentru evacuarea pasagerilor",
+        "products": "Suport inginerie incendiu, consultanta scenarii"
+      },
+      {
+        "buildingType": "Birouri de arhitectură și proiect",
+        "description": "Explorare și calcule asistate de software Jet fan",
+        "products": "CAD aspect suportat, pregătirea șablonului tehnic"
+      }
+    ]
+  }
+}

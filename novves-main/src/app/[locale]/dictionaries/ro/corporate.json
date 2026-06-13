@@ -438,31 +438,24 @@
     "heroDescStitch": "Proiecte prestigioase finalizate în întreaga Turcie și în întreaga lume cu precizie inginerească și autoritate industrială.",
     "sidebarTitle": "Referințele noastre",
     "sidebarSubtitle": "Ierarhia proiectelor",
-    "categories": {
-      "all": "Proiecte globale",
-      "industrial": "Instalații industriale",
-      "residential": "Rezidențial și birouri",
-      "special": "Soluții speciale"
-    },
     "supportTitle": "Aveți nevoie de suport?",
     "supportDesc": "Lăsați echipa noastră tehnică să detalieze împreună cu dumneavoastră proiectele.",
     "supportCta": "Conectați-vă cu un reprezentant",
     "listViewLabel": "Vizualizare listă",
     "catalogCta": {
-      "title": "Detaliile proiectelor în buzunarul dumneavoastră",
+      "title": "Referințele noastre în buzunar",
       "description": "Descărcați catalogul nostru interactiv cu toate referințele, detaliile tehnice și soluțiile inginerești.",
       "button": "Descarcă catalogul",
       "pdfFormat": "Format PDF",
       "pdfMeta": "24.5 MB • Actualizat: 12.2024",
       "languages": "Suport multilingv",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Biblioteca de documente"
     },
     "completedProjects": "Proiecte finalizate",
     "country": "Țări",
     "projectPeriod": "Perioada proiectului",
     "searchPlaceholder": "Căutați proiect, țară sau produs...",
     "allCountries": "Toate țările",
-    "allClasses": "Toate categoriile",
     "gridViewLabel": "Vizualizare grilă",
     "countryViewLabel": "Vizualizare pe țări",
     "clear": "Șterge",
@@ -485,7 +478,7 @@
       "fabrika": "Fabrică",
       "kamu-binasi": "Clădire publică",
       "stadyum": "Stadion",
-      "metro": "Metrou",
+      "metro": "Metro-Rail System",
       "tunel": "Tunel",
       "veri-merkezi": "Centru de date",
       "tersane": "Șantier naval",
@@ -499,6 +492,140 @@
       "depo": "Depozit",
       "showroom": "Showroom",
       "karma-kullanim": "Utilizare mixtă"
+    },
+    "all": "Toate proiectele",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Infrastructură și transport",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Terminale pasageri — Aeroport"
+          },
+          {
+            "id": "parking",
+            "label": "Parcări și platforme"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Clădire publică — Piață multifuncțională"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Facilități industriale și fabrici",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Unități de producție"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Logistică și depozite"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Facilități de industrie grea"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Facilități medicale",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Spitale municipale"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Spitale de stat și private"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Campusuri medicale"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Turism și ospitalitate",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Hoteluri"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Centre comerciale"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Clădiri de birouri"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Proiecte rezidențiale și de regenerare urbană",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Proiecte de locuințe sociale"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Zone de regenerare urbană"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Complexuri rezidențiale"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Clădiri publice și proiecte guvernamentale",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Clădiri educaționale"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Proiecte energetice și de infrastructură",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Centrale electrice"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Facilități de infrastructură"
+          },
+          {
+            "id": "utility-service",
+            "label": "Clădiri tehnice și de servicii"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Toate familiile de produse",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

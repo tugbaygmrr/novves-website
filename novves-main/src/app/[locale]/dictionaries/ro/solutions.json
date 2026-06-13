@@ -8,8 +8,8 @@
     "bannerDescription": "Sistemele de evacuare a fumului și căldurii reprezintă una dintre cele mai critice componente electromecanice ale siguranței la incendiu în parcările interioare, tuneluri, stații de metrou, aeroporturi, spitale, instalații energetice și structuri cu volum mare. În timp ce asigură menținerea la niveluri sigure a CO, NOx și a poluanților similari în utilizarea zilnică, în caz de incendiu contribuie la menținerea deschisă a căilor de evacuare, la păstrarea vizibilității și la sprijinirea pompierilor pentru a ajunge în siguranță la sursa incendiului, dirijând în mod controlat fumul și gazele fierbinți.\n\nNOVVES oferă o abordare integrată de control al fumului cu ventilatoarele de evacuare a fumului și jet fan-urile DRAGONFLY, clapetele de fum HOUND, ventilatoarele de aer proaspăt MARLIN și panourile de automatizare HAWK. Sistemul nu constă doar din ventilatoare puternice, ci se integrează și cu automatizarea, clapetele etanșe, echilibrul de aer proaspăt, verificarea CFD și ingineria conformă EN/NFPA care funcționează în funcție de scenariile de incendiu. Ventilatoarele din clasa de temperatură F300/F400 duc siguranța clădirii la nivelul următor prin ventilația zilnică controlată de senzori CO/NOx și controlul incendiului bazat pe scenarii.",
     "subtitle": "Evacuarea controlată a fumului și căldurii în timpul incendiilor; soluții conforme cu reglementările, susținute de inginerie, de la cap la cap.",
     "ctaPrimary": "Solicitați o ofertă pentru proiectul dvs.",
-    "ctaSecondary": "Analiză CFD",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Ventilatoare de evacuare fum",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Parcari acoperite",
+        "description": "CO evacuare + îndepărtarea fumului în caz de incendiu",
+        "products": "Jet Fan, ventilator de fum, amortizor",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Tuneluri rutiere și feroviare",
+        "description": "Zonarea incendiilor și direcționarea aerului",
+        "products": "Jet Fan, Ventilator axial",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Centre comerciale (Mall-uri)",
+        "description": "Controlul fumului și evacuarea",
+        "products": "Ventilator celular, ventilator axial, amortizor",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Stadioane și săli de ședințe",
+        "description": "Evacuarea fumului în situații de urgență",
+        "products": "Ventilator axial, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Instalatii de productie industriala",
+        "description": "Descărcare de gaz fierbinte indusă de proces",
+        "products": "Ventilator melc, ventilator de acoperiș, ventilator de evacuare",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Spitale și unități sanitare",
+        "description": "Zonarea fumului în zonele pacienților",
+        "products": "Ventilator celular, amortizor",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "aeroporturi",
+        "description": "Evacuarea fumului din stratul inferior",
+        "products": "Jet Fan, Ventilator axial, Ventilator de presurizare",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Centre de depozitare și logistică",
+        "description": "Controlul fumului la volume mari",
+        "products": "Ventilator de conductă, Jet Fan, Amortizor",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Centrale electrice și camere generatoare",
+        "description": "Evacuare împotriva incendiilor electrice",
+        "products": "Ventilator antideflagrant, ventilator melc",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Hoteluri și reședințe (clădiri înalte)",
+        "description": "Presurizare scara, evacuare fum",
+        "products": "Ventilator celular, ventilator de presurizare, amortizor",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "HVAC de confort",
@@ -676,7 +738,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Clădiri de birouri",
+        "description": "Aer conditionat centralizat, circulatie aer proaspat",
+        "products": "Unitate de tratare a aerului, ventilator de conductă, ventilație",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Hoteluri și stațiuni",
+        "description": "Distribuție confortabilă a aerului, recuperare de căldură, funcționare silențioasă",
+        "products": "AHU, Ventilator celular, Filtru",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Școli și universități",
+        "description": "Aer proaspăt în sălile de clasă, economie de energie",
+        "products": "Recuperare căldură, ventilator în conductă, aerisire",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Spitale (secții de confort)",
+        "description": "Flux de aer silențios și echilibrat pentru camerele și coridoarele pacienților",
+        "products": "AHU, EC Fan, Filtru",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Centre comerciale și magazine",
+        "description": "Aer condiționat confort, distribuție omogenă a aerului",
+        "products": "AHU, Ventilator celular, Anemostat",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Case și reședințe",
+        "description": "Soluții compacte, sisteme de aer silențioase și eficiente din punct de vedere energetic",
+        "products": "Ventilator de conductă, Recuperare căldură, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Bănci și clădiri publice",
+        "description": "Sisteme centrale de aer condiționat și nevoi de aer proaspăt",
+        "products": "Unitate de tratare a aerului, aerisire, amortizor",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Aeroporturi și terminale",
+        "description": "Sisteme de aer conditionat de mare volum",
+        "products": "Capacitate mare AHU, ventilatoare celulare",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Restaurante și cafenele",
+        "description": "Controlul mirosurilor, menținerea echilibrului temperaturii",
+        "products": "Ventilator celular, ventilator de evacuare bucatarie, filtru",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Săli de sport și centre de fitness",
+        "description": "Aer proaspăt, circulație cu debit mare",
+        "products": "Unitate de tratare a aerului, ventilator de conductă, ventilație",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Ventilație cu Filtrare Igienică",
@@ -955,7 +1079,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Săli de operație și unități de terapie intensivă",
+        "description": "Filtrare microbiologică, control al presiunii",
+        "products": "Igienic AHU, HEPA Filtru, UV-C Ventilator",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Camere curate",
+        "description": "Controlul particulelor, nivel de igienă între clasa 100-100.000",
+        "products": "HEPA Ventilator sistem, presurizat AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Unități de producție farmaceutică",
+        "description": "Conform GMP, filtrare și control al presiunii",
+        "products": "Unitate de tratare a aerului igienic, ventilator cu celule filtrate",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Zone de producție alimentară",
+        "description": "Circulația igienă a aerului, controlul mirosurilor și al particulelor",
+        "products": "Igienic AHU, EC Fan, filtru, corp inoxidabil",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "laboratoare",
+        "description": "Controlul gazelor și particulelor, zonarea presiunii negative/pozitive",
+        "products": "HEPA Ventilator cu celule filtrate, clapete, filtru",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Pardoseli Serviciu Spital",
+        "description": "Alimentarea cu aer proaspăt, controlul mirosurilor și al riscului de infecție",
+        "products": "Igienic AHU, EC Fan, ventilator de conductă, filtru",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Bucătării ocupate (industriale și medicale)",
+        "description": "Ceața de ulei + controlul calității aerului, nevoie de filtru lavabil",
+        "products": "Ventilator de bucătărie, ventilator celular, filtru",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Zonele Zootehnie și Clinică Veterinară",
+        "description": "Controlul microorganismelor și al mirosurilor neplăcute",
+        "products": "Ventilator cu filtru, EC Fan, recuperare de căldură",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Managementul Aerului Industrial",
@@ -1234,7 +1408,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Facilități pentru industria grea",
+        "description": "Evacuare la temperaturi ridicate, praf, particule și gaze chimice",
+        "products": "Ventilator melc industrial, ventilator de evacuare, amortizor",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Linii de sudare, vopsire și pulbere",
+        "description": "Zona de aspirație locală, evacuare, presiune negativă",
+        "products": "Ventilator de evacuare, ventilator de colectare a prafului",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Întreprinderi de turnătorie și metalurgie",
+        "description": "Temperatură ridicată și evacuare a fumului",
+        "products": "Ventilator axial rezistent la temperaturi ridicate, ventilator de acoperiș",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Producția de hârtie, ambalaje și textile",
+        "description": "Evacuare fibre, praf și umiditate, recuperare de energie",
+        "products": "EC Fan, recuperare de căldură, ventilator celular",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Centrale electrice",
+        "description": "Ventilatie camera generatorului, evacuare gaze reziduale",
+        "products": "Ventilator melc, ventilator de evacuare, ventilator antideflagrant",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Linii de asamblare auto și mașini",
+        "description": "Evacuare căldură și fum, recuperare de energie",
+        "products": "Ventilator de celule, ventilator de conductă, ventilator de melci",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Instalatii de reciclare si procesare a deseurilor",
+        "description": "Evacuarea mirosurilor, a fumului și a particulelor",
+        "products": "Ventilator de evacuare, ventilator de conductă, filtru",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Logistică și zone de depozitare",
+        "description": "Evacuarea aerului cald, circulatia aerului",
+        "products": "Ventilator axial, ventilator de acoperiș, ventilator celular",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Ateliere lemn si mobila",
+        "description": "Evacuare așchii, praf și solvenți",
+        "products": "Ventilator de colectare a prafului, amortizor, filtru",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Ventilarea fermelor zootehnice",
@@ -1497,7 +1727,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ferme de pui",
+        "description": "Sistem de evacuare cu debit mare pentru eliminarea intensă a umidității, căldurii și gazelor",
+        "products": "Ventilator păsări de curte, ventilator de evacuare",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Unități de producție de ouă",
+        "description": "Circulația liniară a aerului previne acumularea de căldură și gaz",
+        "products": "Ventilator pentru conducte, ventilator pentru păsări de curte",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Facilități de incubație",
+        "description": "Control precis al ventilatorului pentru o temperatură stabilă și mișcarea aerului",
+        "products": "EC Fan, Ventilator de pui",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Ventilarea vitelor și hambarului",
+        "description": "Controlul umidității, amoniacului și CO₂ cu circulație a aerului",
+        "products": "Ventilator axial, ventilator de evacuare",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Ventilatoare pentru camere de transformatoare și energie",
@@ -1760,7 +2016,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Centre de transformare (MV/LV)",
+        "description": "Evacuarea obligatorie a aerului si gazelor incalzite, fiabilitate 24/7",
+        "products": "Ventilator axial, ventilator de acoperiș",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Camere generatoare",
+        "description": "Evacuare continuă împotriva căldurii de evacuare a motoarelor",
+        "products": "Ventilator melc, ventilator de evacuare",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Substații de transport de energie",
+        "description": "Soluții compacte de ventilatoare pentru a preveni încălzirea necontrolată",
+        "products": "Ventilator de conductă, ventilator de perete",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Camere de energie ale centrului de date",
+        "description": "Camere cu transformatoare/UPS care trebuie să funcționeze la temperatură stabilă",
+        "products": "EC Fan, Ventilator celular",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Ventilație pentru sere și agricultură",
@@ -2023,7 +2305,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sere din sticlă sau policarbonat",
+        "description": "Controlul temperaturii, umidității și nivelului CO₂; circulatia aerului",
+        "products": "Ventilator axial, ventilator de pui, ventilator de conductă",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Sere tunel din plastic",
+        "description": "Transfer de aer de joasă presiune pentru a ajuta ventilația naturală",
+        "products": "Ventilator de pui, ventilator montat pe perete",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Seră inteligentă (IoT controlată)",
+        "description": "Control automat al ventilatorului bazat pe senzori de umiditate, temperatură și lumină",
+        "products": "EC Fan, Tabloul de bord automatizare",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Sere cu climă tropicală/rece",
+        "description": "Mișcarea aerului bidirecțională și direcționarea automată în funcție de climă",
+        "products": "Ventilator axial bidirecțional, amortizor",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Sere pentru arboricultură și producție de iarbă",
+        "description": "Sisteme de ventilatoare ușoare pentru disiparea căldurii și echilibrarea umidității",
+        "products": "Ventilator tip conductă, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "Protecție împotriva exploziilor ATEX",
@@ -2302,7 +2616,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Instalatii chimice si petrochimice",
+        "description": "Ventilație sigură în medii explozive cu gaz și vapori",
+        "products": "Ventilatoare axiale și melci antideflagrante",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Zone de depozitare și umplere a combustibilului",
+        "description": "Eliminarea gazelor inflamabile din mediu",
+        "products": "Ventilator de perete antideflagrant, amortizor",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Vopsitori și producții care folosesc solvenți",
+        "description": "Evacuare sigură împotriva electricității statice și a acumulării de gaz solvenți",
+        "products": "Ventilator antideflagrant, colectare praf",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Facilități pentru făină, zahăr, pulbere chimică",
+        "description": "Ventilator antistatic si sisteme inchise impotriva exploziei prafului",
+        "products": "Ventilator axial antideflagrant, sistem ciclon",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Domenii de Producție Farmaceutică și Chimie Medicală",
+        "description": "Sisteme de ventilatoare filtrate și cu presiune controlată împotriva componentelor inflamabile",
+        "products": "Ventilator igienic antideflagrant, ventilator de evacuare cu filtru",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Laboratoare de umplere și analiză cu gaze",
+        "description": "Evacuare sigură și silențioasă pentru mediul de gaz sensibil",
+        "products": "Ventilator compact antideflagrant, amortizor",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Automatizare și Control Inteligent",
@@ -2565,7 +2917,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Clădiri inteligente (mall comercial, birou, spital)",
+        "description": "BMS integrare, control automat pe bază de temperatură/umiditate/gaz",
+        "products": "PLC Panou, senzor, cablare semnal, amortizor automat",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Facilități industriale",
+        "description": "Controlul ventilatorului bazat pe proces, monitorizarea de la distanță, managementul scenariilor",
+        "products": "Panou de automatizare, releu, modul ventilator automat",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Proiecte de tunel și parcări",
+        "description": "Sisteme integrate cu ventilator cu jet și senzori CO",
+        "products": "Jet Fan, CO Detector cu senzor, panou de automatizare",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Locuințe și reședințe",
+        "description": "Sisteme de control compacte, soluții HVAC susținute de interfețe ușor de utilizat",
+        "products": "Mini PLC, senzor inteligent, ventilator compact",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Spitale și camere curate",
+        "description": "Diferență de presiune, nivel de particule și senzori de poluare a filtrului",
+        "products": "HEPA Ventilator, F9 Senzor, Amortizor automat",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Centre de date",
+        "description": "Managementul ventilației pe bază de temperatură, control redundant",
+        "products": "Modul dublu, ventilatoare EC controlate de senzor de temperatură",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Ventilație rezidențială",
@@ -2828,7 +3218,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Reședințe individuale (apartamente și vile)",
+        "description": "Soluții silențioase, care economisesc spațiu și eficiente energetic",
+        "products": "Ventilator de conductă, recuperare de căldură, compact AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Proiecte de locuințe și locuințe de lux",
+        "description": "Sisteme cu aspect estetic, silențioase și controlate",
+        "products": "EC Fan, ventilator celular, ventilație",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Case decomandate",
+        "description": "Alimentare cu aer proaspăt, evacuare baie și bucătărie",
+        "products": "Ventilator de baie, ventilator de bucătărie, ventilator de conductă",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Case mici și clădiri prefabricate",
+        "description": "Dimensiune compactă, produse ușor de asamblat",
+        "products": "EC Fan, Ventilator compact",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Zone comune ale amplasamentului",
+        "description": "Ventilatoare de evacuare și soluție de confort central",
+        "products": "Ventilator de perete, ventilator celular",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Ventilație navală și offshore",
@@ -3091,7 +3513,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Camerele motoarelor navei",
+        "description": "Evacuare continuă și aer proaspăt în condiții de temperatură ridicată, gaze de eșapament și vibrații",
+        "products": "Ventilator axial, ventilator radial, ventilator ATEX",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Camere de generatoare și pompe",
+        "description": "Risc de degajare de gaze inflamabile și căldură; zonarea sigilată și integrarea automatizării",
+        "products": "Ventilator axial, amortizor, panou de automatizare",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Nave de croazieră și feriboturi",
+        "description": "Ventilație confortabilă în zonele pentru pasageri și echipaj",
+        "products": "Ventilator axial, ventilator de conductă",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Nave de marfă",
+        "description": "Cală de marfă și ventilație din camera mașinilor",
+        "products": "Ventilator industrial, ATEX Ventilator",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Platforme offshore",
+        "description": "Ventilație pe platformă offshore și evacuare antiext",
+        "products": "ATEX Ventilator, Ventilator axial, Clapet antifoc",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "Unități FPSO și proiecte șantier naval",
+        "description": "Ventilator marin omologat de clasă, extracție fum și integrare automatizare",
+        "products": "Ventilator marin, ventilator de fum, amortizor, panou de automatizare",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Iahturi și Mega Yacht-uri",
+        "description": "Ventilație confortabilă și evacuare a camerei motoarelor",
+        "products": "Ventilator, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Fabricație personalizată bazată pe proiect",
@@ -3354,7 +3820,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sector / Tip de proiect",
+        "description": "Explicaţie",
+        "products": "Tipuri de soluții bazate pe proiecte",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Proiecte de înlocuire arhitecturală",
+        "description": "Cerință de dimensiune/conexiune specială bazată pe infrastructura existentă a clădirii",
+        "products": "Design personalizat pentru celulă/carcasa",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Proiecte cu restricții acustice (Hoteluri, studiouri etc.)",
+        "description": "Aplicații care necesită performanțe ridicate sub limite de zgomot",
+        "products": "Design ventilator cu zgomot redus, amortizor integrat",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Clădiri înalte și zone cu trecere dificilă",
+        "description": "Produse ușoare care se pot încadra într-un spațiu îngust din interiorul arborelui",
+        "products": "Ventilator compact, design de produs de asamblare modulară",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij Housing & Luxury Architectural Projects",
+        "description": "Aspect estetic, acoperire a suprafeței și țintă sonoră minimă",
+        "products": "Exterior vopsit, montaj ascuns, evacuare aer invizibila",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Arhitectură Alimentară și Medicină Zone speciale",
+        "description": "Material antibacterian, suprafață ușor de curățat și structură specială a filtrului",
+        "products": "Corp din inox, design interior cu filtrare UV",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "Consultanță Inginerie CFD",
@@ -3617,6 +4121,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Parcari acoperite",
+        "description": "Plasarea ventilatorului cu reacție, scenariu de incendiu, simulare de propagare CO",
+        "products": "CFD Analiză, Jet Fan Poziționare, Dosar Tehnic",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "tuneluri",
+        "description": "Scenariul de ventilație tunel, analiza presiunii și debitului",
+        "products": "Analiza debitului, optimizarea direcției ventilatorului cu jet",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Aeroport și stații de metrou",
+        "description": "Zonarea incendiilor, simularea stratului de fum",
+        "products": "Intocmire dosar proiect, raport contabil",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Structuri cu volum mare, cum ar fi mall-uri și stadioane",
+        "description": "Scenarii de evacuare a fumului și proiecte adecvate pentru evacuarea pasagerilor",
+        "products": "Suport inginerie incendiu, consultanta scenarii",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Birouri de arhitectură și proiect",
+        "description": "Explorare și calcule asistate de software Jet fan",
+        "products": "CAD aspect suportat, pregătirea șablonului tehnic",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

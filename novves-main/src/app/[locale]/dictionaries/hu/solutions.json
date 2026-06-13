@@ -8,8 +8,8 @@
     "bannerDescription": "A füst- és hőelvezető rendszerek; a zárt parkolók, alagutak, metróállomások, repülőterek, kórházak, energetikai létesítmények és nagy légterű épületek tűzvédelmének egyik legkritikusabb elektromechanikus elemei. Míg a mindennapi használat során biztosítják a CO, NOx és hasonló szennyezőanyagok biztonságos szinten tartását, addig tűz esetén a füst és a forró gázok ellenőrzött elvezetésével segítenek a menekülési útvonalak szabadon tartásában, a látótávolság fenntartásában és abban, hogy a tűzoltók biztonságosan elérhessék a tűzfészket.\n\nA NOVVES integrált füstvédelmi megközelítést kínál a DRAGONFLY füstelvezető ventilátorokkal és jet ventilátorokkal, a HOUND füstcsappantyúkkal, a MARLIN frisslevegő-ventilátorokkal és a HAWK automatizálási panelekkel. A rendszer nem csak nagy teljesítményű ventilátorokból áll, hanem integrálódik az automatizálással, a tömör csappantyúkkal, a frisslevegő-egyensúllyal, a CFD-validációval és a tűzforgatókönyvek szerint működő, EN/NFPA szerinti mérnöki tervezéssel is. Az F300/F400 hőmérséklet-osztályú ventilátorok a CO/NOx érzékelővel vezérelt napi szellőztetéssel és a forgatókönyv-alapú tűzvezérléssel az épület biztonságát új szintre emelik.",
     "subtitle": "A füst és a hő ellenőrzött elvezetése tűz esetén; szabályozásnak megfelelő, mérnöki támogatású, végponttól végpontig terjedő megoldások.",
     "ctaPrimary": "Kérjen árajánlatot projektjéhez",
-    "ctaSecondary": "CFD-elemzés",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Füstelszívó ventilátorok",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Fedett parkolók",
+        "description": "CO kiürítés + füstelvezetés tűz esetén",
+        "products": "Jet Fan, Füstventilátor, csappantyú",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Közúti és vasúti alagutak",
+        "description": "Tűz zónázása és légterelés",
+        "products": "Jet Fan, Axiális ventilátor",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Bevásárlóközpontok (bevásárlóközpontok)",
+        "description": "Füstszabályozás és evakuálás",
+        "products": "Cellular ventilátor, axiális ventilátor, lengéscsillapító",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Stadionok és tárgyalótermek",
+        "description": "Füsteltávolítás vészhelyzetekben",
+        "products": "Axiális ventilátor, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Ipari termelési létesítmények",
+        "description": "Folyamat okozta forró gáz kisülés",
+        "products": "Csigaventilátor, tetőventilátor, kipufogóventilátor",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Kórházak és egészségügyi létesítmények",
+        "description": "Füstövezetek besorolása a betegterületeken",
+        "products": "Cellular ventilátor, lengéscsillapító",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "repülőterek",
+        "description": "Az alsó réteg füstelvezetése",
+        "products": "Jet Fan, axiális ventilátor, nyomástartó ventilátor",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Raktári és Logisztikai Központok",
+        "description": "Füstszabályozás nagy hangerőn",
+        "products": "Légcsatorna ventilátor, Jet Fan, csappantyú",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Erőművek és generátorszobák",
+        "description": "Kipufogó elektromos tüzek ellen",
+        "products": "Ex-proof ventilátor, csigalegyező",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Szállodák és rezidenciák (magas épületek)",
+        "description": "Lépcsőnyomás, füstelvezetés",
+        "products": "Celluláris ventilátor, túlnyomásos ventilátor, csappantyú",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Komfort HVAC",
@@ -676,7 +738,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Irodaházak",
+        "description": "Központi klíma, friss levegő keringtetés",
+        "products": "Légkezelő egység, légcsatorna ventilátor, szellőző",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Szállodák és üdülőhelyek",
+        "description": "Kényelmes légelosztás, hővisszanyerés, csendes működés",
+        "products": "AHU, Mobilventilátor, szűrő",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Iskolák és egyetemek",
+        "description": "Friss levegő az osztálytermekben, energiatakarékosság",
+        "products": "Hővisszanyerő, légcsatorna ventilátor, szellőző",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Kórházak (komfort osztályok)",
+        "description": "Csendes és kiegyensúlyozott légáramlás a betegszobákban és a folyosókban",
+        "products": "AHU, EC Fan, Szűrés",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Bevásárlóközpontok és üzletek",
+        "description": "Komfort klíma, homogén légelosztás",
+        "products": "AHU, Cellular Fan, Anemostat",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Házak és rezidenciák",
+        "description": "Kompakt megoldások, csendes és energiatakarékos levegőrendszerek",
+        "products": "Légcsatorna ventilátor, hővisszanyerő, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Bankok és középületek",
+        "description": "Központi klímaberendezések és friss levegő igény",
+        "products": "Légkezelő egység, szellőző, csappantyú",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Repülőterek és terminálok",
+        "description": "Nagy teljesítményű klímaberendezések",
+        "products": "Nagy kapacitású AHU, cellás ventilátorok",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Éttermek és kávézók",
+        "description": "Szagszabályozás, hőmérséklet-egyensúly fenntartása",
+        "products": "Mobilventilátor, konyhai kipufogóventilátor, szűrő",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Edzőtermek és fitneszközpontok",
+        "description": "Friss levegő, nagy áramlású keringés",
+        "products": "Légkezelő egység, légcsatorna ventilátor, szellőző",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Higiénikus szűrésű szellőztetés",
@@ -955,7 +1079,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Műtők és intenzív osztályok",
+        "description": "Mikrobiológiai szűrés, nyomásszabályozás",
+        "products": "Higiénikus AHU, HEPA Szűrő, UV-C Ventilátor",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Tisztaterek",
+        "description": "Részecskekontroll, higiéniai szint 100-100 000 osztály között",
+        "products": "HEPA Rendszerventilátor, túlnyomásos AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Gyógyszergyártó létesítmények",
+        "description": "GMP-kompatibilis, szűrés és nyomásszabályozás",
+        "products": "Higiénikus légkezelő egység, szűrt cellás ventilátor",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Élelmiszer-előállítási területek",
+        "description": "Higiénikus légáramlás, szag- és részecskeszabályozás",
+        "products": "Higiénikus AHU, EC Fan, szűrő, rozsdamentes ház",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "laboratóriumok",
+        "description": "Gáz- és részecskeszabályozás, negatív/pozitív nyomású zónák",
+        "products": "HEPA Szűrt cellás ventilátor, csappantyú, szűrő",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Kórházi kiszolgáló emeletek",
+        "description": "Friss levegő ellátás, szag- és fertőzésveszély ellenőrzése",
+        "products": "Higiénikus AHU, EC Fan, légcsatorna ventilátor, szűrő",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Forgalmas konyhák (ipari és orvosi)",
+        "description": "Olajköd + levegőminőség ellenőrzés, mosható szűrő szükséges",
+        "products": "Konyhai ventilátor, cellás ventilátor, szűrő",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Állattenyésztési és állatorvosi rendelők területei",
+        "description": "Mikroorganizmusok és rossz szagok elleni küzdelem",
+        "products": "Ventilátor szűrővel, EC Fan, hővisszanyerő",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Ipari légkezelés",
@@ -1234,7 +1408,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Nehézipari létesítmények",
+        "description": "Magas hőmérséklet, por, részecskék és vegyi gázok eltávolítása",
+        "products": "Ipari csigaventilátor, kipufogó ventilátor, lengéscsillapító",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Hegesztő, festő és porított gyártósorok",
+        "description": "Helyi szívás, kipufogó, negatív nyomású zónák",
+        "products": "Kipufogó ventilátor, porgyűjtő ventilátor",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Öntödei és Kohászati ​​Vállalatok",
+        "description": "Magas hőmérséklet és füstelvezetés",
+        "products": "Magas hőmérsékletnek ellenálló axiálventilátor, tetőventilátor",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Papír-, csomagoló- és textilgyártás",
+        "description": "Szál-, por- és nedvességelvezetés, energia-visszanyerés",
+        "products": "EC Fan, Hővisszanyerés, Cellular Ventilátor",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Erőművek",
+        "description": "Generátor helyiség szellőztetés, füstgáz elvezetés",
+        "products": "Csigaventilátor, kipufogóventilátor, ex-biztos ventilátor",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Autóipari és gépipari összeszerelő sorok",
+        "description": "Hő- és füstelvezetés, energiavisszanyerés",
+        "products": "Cell ventilátor, légcsatorna ventilátor, csigaventilátor",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Újrahasznosító és hulladékfeldolgozó létesítmények",
+        "description": "Szag, füst és részecskék eltávolítása",
+        "products": "Kipufogó ventilátor, légcsatorna ventilátor, szűrő",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Logisztikai és raktárterületek",
+        "description": "Meleg levegő kivezetés, levegő keringtetés",
+        "products": "Axiális ventilátor, tetőventilátor, cellás ventilátor",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Fa- és bútorműhelyek",
+        "description": "Forgács, por és oldószer elszívása",
+        "products": "Porgyűjtő ventilátor, csappantyú, szűrő",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Állattartó létesítmények szellőztetése",
@@ -1497,7 +1727,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Csirkefarmok",
+        "description": "Nagy áramlási sebességű kipufogórendszer az intenzív nedvesség-, hő- és gázelvezetéshez",
+        "products": "Baromfi ventilátor, kipufogó ventilátor",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Tojástermelő egységek",
+        "description": "Lineáris légáramlás, amely megakadályozza a hő és a gáz felhalmozódását",
+        "products": "Légcsatorna ventilátor, baromfi ventilátor",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Inkubációs létesítmények",
+        "description": "Pontos ventilátorvezérlés a stabil hőmérséklet és légmozgás érdekében",
+        "products": "EC Fan, Chicken Fan",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Szarvasmarha és istálló szellőztetése",
+        "description": "Páratartalom, ammónia és CO₂ szabályozás légkeringtetéssel",
+        "products": "Axiális ventilátor, kipufogó ventilátor",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Transzformátor- és energiahelyiség-ventilátorok",
@@ -1760,7 +2016,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Transformer Centers (MV/LV)",
+        "description": "A felmelegített levegő és gázok kötelező elszívása, 24/7 megbízhatóság",
+        "products": "Axiálventilátor, tetőventilátor",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Generátor szobák",
+        "description": "Folyamatos kipufogógáz a motorok hőelvezetése ellen",
+        "products": "Csiga ventilátor, kipufogó ventilátor",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Energiaátviteli alállomások",
+        "description": "Kompakt ventilátormegoldások az ellenőrizetlen felfűtés megakadályozására",
+        "products": "Légcsatorna ventilátor, fali ventilátor",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Adatközponti energiatermek",
+        "description": "Transzformátor/UPS helyiségek, amelyeknek stabil hőmérsékleten kell működniük",
+        "products": "EC Fan, Cellular Fan",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Üvegház- és mezőgazdasági szellőztetés",
@@ -2023,7 +2305,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Üveg vagy polikarbonát üvegház",
+        "description": "Hőmérséklet, páratartalom és CO₂ szintszabályozás; légkeringés",
+        "products": "Axiális ventilátor, csirke ventilátor, légcsatorna ventilátor",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Műanyag alagút üvegház",
+        "description": "Alacsony nyomású légszállítás a természetes szellőzés elősegítésére",
+        "products": "Csirke ventilátor, falra szerelhető ventilátor",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Intelligens üvegház (IoT Irányított)",
+        "description": "Automatikus ventilátorvezérlés páratartalom, hőmérséklet és fényérzékelők alapján",
+        "products": "EC Fan, Automatizálási irányítópult",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Trópusi/hideg éghajlatú üvegházak",
+        "description": "Kétirányú légmozgás és automatikus légterelés az éghajlatnak megfelelően",
+        "products": "Kétirányú axiális ventilátor, lengéscsillapító",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Fatermesztés és fűtermesztő üvegházak",
+        "description": "Könnyű ventilátorrendszerek a hőelvezetéshez és a páratartalom kiegyensúlyozásához",
+        "products": "Légcsatorna típusú ventilátor, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX robbanásvédelem",
@@ -2302,7 +2616,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Vegyipari és petrolkémiai létesítmények",
+        "description": "Biztonságos szellőztetés robbanásveszélyes gáz- és gőzkörnyezetben",
+        "products": "Ex-biztos axiális és csigaventilátorok",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Üzemanyag tárolási és töltőterületek",
+        "description": "A gyúlékony gázok eltávolítása a környezetből",
+        "products": "Ex-biztos fali ventilátor, lengéscsillapító",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Festéküzletek és gyártás oldószerek használatával",
+        "description": "Biztonságos kipufogó a statikus elektromosság és az oldószeres gázok felhalmozódása ellen",
+        "products": "Ex-biztos légcsatorna ventilátor, porgyűjtő",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Liszt, cukor, vegyi por létesítmények",
+        "description": "Antisztatikus ventilátor és zárt rendszerek porrobbanás ellen",
+        "products": "Ex-biztos axiális ventilátor, ciklon rendszer",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Gyógyszerészeti és orvosi kémia termelési területek",
+        "description": "Szűrt és nyomásvezérelt ventilátorrendszerek gyúlékony alkatrészek ellen",
+        "products": "Higiénikus Ex-biztos ventilátor, kipufogóventilátor szűrővel",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Gáztöltő és -elemző laboratóriumok",
+        "description": "Biztonságos és csendes kipufogógáz érzékeny gázkörnyezethez",
+        "products": "Kompakt Ex-biztos ventilátor, lengéscsillapító",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Intelligens automatika és vezérlés",
@@ -2565,7 +2917,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Intelligens épületek (bevásárlóközpont, iroda, kórház)",
+        "description": "BMS integráció, hőmérséklet/páratartalom/gáz alapú automatikus szabályozás",
+        "products": "PLC Panel, érzékelő, jelkábelezés, automatikus lengéscsillapító",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Ipari létesítmények",
+        "description": "Folyamat alapú ventilátorvezérlés, távfelügyelet, forgatókönyv-kezelés",
+        "products": "Automatizálási panel, relé, automatikus ventilátor modul",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Alagút- és parkolóprojektek",
+        "description": "Integrált rendszerek jet ventilátorral és CO érzékelőkkel",
+        "products": "Jet Fan, CO érzékelő érzékelővel, automatizálási panel",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Lakás és lakóhely",
+        "description": "Kompakt vezérlőrendszerek, felhasználóbarát felületekkel támogatott HVAC megoldások",
+        "products": "Mini PLC, intelligens érzékelő, kompakt ventilátor",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Kórházak és tiszta szobák",
+        "description": "Nyomáskülönbség-, részecskeszint- és szűrőszennyezés-érzékelők",
+        "products": "HEPA Ventilátor, F9 érzékelő, automata lengéscsillapító",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Adatközpontok",
+        "description": "Hőmérséklet alapú szellőztetés szabályozás, redundáns szabályozás",
+        "products": "Kétmodulos, hőmérséklet-érzékelővel vezérelt EC ventilátorok",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Lakossági szellőztetés",
@@ -2828,7 +3218,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Egyéni rezidenciák (lakások és villák)",
+        "description": "Csendes, helytakarékos, energiatakarékos megoldások",
+        "products": "Légcsatorna ventilátor, hővisszanyerő, kompakt AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Lakó- és luxuslakásprojektek",
+        "description": "Esztétikus megjelenésű, csendes és szabályozott rendszerek",
+        "products": "EC Fan, Mobilventilátor, Szellőző",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Családi házak",
+        "description": "Friss levegő befúvás, fürdőszoba és konyha elszívása",
+        "products": "Fürdőszoba ventilátor, konyhai ventilátor, légcsatorna ventilátor",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Apró házak és előregyártott épületek",
+        "description": "Kompakt méret, könnyen összeszerelhető termékek",
+        "products": "EC Fan, Kompakt légcsatorna ventilátor",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Az oldal közös területei",
+        "description": "Elszívó ventilátorok és központi komfortmegoldás",
+        "products": "Fali ventilátor, cellás ventilátor",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Tengeri és offshore szellőztetés",
@@ -3091,7 +3513,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Hajógépterek",
+        "description": "Folyamatos elszívás és friss levegő magas hőmérséklet, kipufogógáz és vibráció mellett",
+        "products": "Axiális ventilátor, radiális ventilátor, ATEX ventilátor",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Generátor és szivattyú helyiségek",
+        "description": "Gyúlékony gáz és hőkibocsátás veszélye; zárt zónázás és automatizálási integráció",
+        "products": "Axiális ventilátor, lengéscsillapító, automatizálási panel",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Tengerjáró hajók és kompok",
+        "description": "Kényelmes szellőzés az utasok és a személyzet területén",
+        "products": "Axiális ventilátor, légcsatorna ventilátor",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Teherszállító hajók",
+        "description": "Rakotér és géptér szellőztetése",
+        "products": "Ipari ventilátor, ATEX Ventilátor",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Offshore platformok",
+        "description": "Offshore platform szellőzés és exproof elszívás",
+        "products": "ATEX Ventilátor, axiális ventilátor, tűzvédelmi csappantyú",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "FPSO egységek és hajógyári projektek",
+        "description": "Kategóriájú tengeri ventilátor, füstelvezetés és automatizálás integráció",
+        "products": "Tengeri ventilátor, füstventilátor, csappantyú, automatizálási panel",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Yachtok és Mega Yachtok",
+        "description": "Komfort szellőzés és motorházi elszívás",
+        "products": "Légcsatorna ventilátor, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Projektalapú egyedi gyártás",
@@ -3354,7 +3820,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Szektor/projekt típusa",
+        "description": "Magyarázat",
+        "products": "Projekt alapú megoldástípusok",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Építészeti csereprojektek",
+        "description": "Speciális méret/bekötési követelmény a meglévő épületinfrastruktúra alapján",
+        "products": "Egyedi cella/tok kialakítás",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Projektek akusztikai korlátozásokkal (szállodák, stúdiók stb.)",
+        "description": "Zajhatárok mellett nagy teljesítményt igénylő alkalmazások",
+        "products": "Alacsony zajszintű ventilátor kialakítás, beépített hangtompító",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Magas épületek és nehezen átjárható területek",
+        "description": "Könnyű termékek, amelyek az aknán belüli szűk helyre is beférnek",
+        "products": "Kompakt ventilátor, moduláris összeszerelésű termékkialakítás",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij lakás- és luxusépítészeti projektek",
+        "description": "Esztétikus megjelenés, felületi bevonat és minimális hangcél",
+        "products": "Festett külső, rejtett beépítés, láthatatlan levegőkivezetés",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Élelmiszer- és gyógyszerépítészet speciális területei",
+        "description": "Antibakteriális anyag, könnyen tisztítható felület és speciális szűrőszerkezet",
+        "products": "Rozsdamentes ház, UV szűrős belső kialakítás",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD mérnöki tanácsadás",
@@ -3617,6 +4121,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Fedett parkolók",
+        "description": "Sugárventilátor elhelyezése, tűz forgatókönyve, CO terjedési szimuláció",
+        "products": "CFD Elemzés, Jet Fan Elhelyezés, Műszaki fájl",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "alagutak",
+        "description": "Alagútszellőztetési forgatókönyv, nyomás és áramlás elemzése",
+        "products": "Áramláselemzés, sugárirányító optimalizálása",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Repülőtér és metróállomások",
+        "description": "Tűzzónázás, füstréteg szimuláció",
+        "products": "Projekt akta készítés, számviteli beszámoló",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Nagy volumenű építmények, például bevásárlóközpontok és stadionok",
+        "description": "Füsteltávolítási forgatókönyvek és utasok evakuálására alkalmas tervek",
+        "products": "Tűzoltómérnöki támogatás, forgatókönyv-tanácsadás",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Építészeti és projekt irodák",
+        "description": "Jet ventilátor szoftverrel segített feltárás és számítás",
+        "products": "CAD támogatott elrendezés, műszaki sablon készítés",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

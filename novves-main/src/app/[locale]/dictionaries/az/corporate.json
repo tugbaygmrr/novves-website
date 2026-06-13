@@ -438,31 +438,24 @@
     "heroDescStitch": "Türkiyə və dünya miqyasında, mühəndislik dəqiqliyi və sənaye nüfuzu ilə tamamladığımız nüfuzlu layihələr.",
     "sidebarTitle": "Referanslarımız",
     "sidebarSubtitle": "Layihə İyerarxiyası",
-    "categories": {
-      "all": "Qlobal Layihələr",
-      "industrial": "Sənaye Obyektləri",
-      "residential": "Yaşayış və Ofis",
-      "special": "Xüsusi Həllər"
-    },
     "supportTitle": "Dəstəyə Ehtiyacınız Var?",
     "supportDesc": "Texniki komandamızla layihələrinizi təfərrüatlandıraq.",
     "supportCta": "Nümayəndə ilə Əlaqə",
     "listViewLabel": "Siyahı görünüşü",
     "catalogCta": {
-      "title": "Layihə Təfərrüatları Cibinizdə",
+      "title": "Referanslarımız cibinizdə",
       "description": "Bütün referanslarımızı, texniki təfərrüatları və mühəndislik həllərimizi əhatə edən interaktiv kataloqumuzu indi yükləyin.",
       "button": "Kataloqu Yüklə",
       "pdfFormat": "PDF Formatı",
       "pdfMeta": "24.5 MB • Yeniləndi: 12.2024",
       "languages": "Çoxdilli Dəstək",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Sənədlər kitabxanası"
     },
     "completedProjects": "Tamamlanmış layihələr",
     "country": "Ölkələr",
     "projectPeriod": "Layihə dövrü",
     "searchPlaceholder": "Layihə, ölkə və ya məhsul axtarın...",
     "allCountries": "Bütün ölkələr",
-    "allClasses": "Bütün kateqoriyalar",
     "gridViewLabel": "Şəbəkə görünüşü",
     "countryViewLabel": "Ölkə görünüşü",
     "clear": "Təmizlə",
@@ -485,7 +478,7 @@
       "fabrika": "Fabrik",
       "kamu-binasi": "Dövlət Binası",
       "stadyum": "Stadion",
-      "metro": "Metro",
+      "metro": "Metro-Rail System",
       "tunel": "Tunel",
       "veri-merkezi": "Məlumat Mərkəzi",
       "tersane": "Gəmiqayırma Zavodu",
@@ -499,6 +492,140 @@
       "depo": "Anbar",
       "showroom": "Showroom",
       "karma-kullanim": "Qarışıq istifadə"
+    },
+    "all": "Bütün layihələr",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Infrastruktur və nəqliyyat",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Sərnişin terminalları — Hava limanı"
+          },
+          {
+            "id": "parking",
+            "label": "Parkinq və apron sahələri"
+          },
+          {
+            "id": "public-building-market",
+            "label": "İctimai bina — Çoxməqsədli bazar"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Sənaye obyektləri və zavodlar",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "İstehsal obyektləri"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Logistika və anbar sahələri"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Ağır sənaye obyektləri"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Səhiyyə obyektləri",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Şəhər xəstəxanaları"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Dövlət və şəxsi xəstəxanalar"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Səhiyyə kampusları"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Turizm və qonaqxana",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Otellər"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Ticarət mərkəzləri"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Ofis binaları"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "İşəq və şəhərin yenilənməsi layihələri",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Kütləvi məskunlaşma layihələri"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Şəhərin yenilənməsi sahələri"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "İşəq kompleksləri"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "İctimai binalar və rəsmi layihələr",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Təhsil binaları"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Enerji və infrastruktur layihələri",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Elektrik stansiyaları"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Infrastruktur obyektləri"
+          },
+          {
+            "id": "utility-service",
+            "label": "Texniki və xidmət binaları"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Bütün məhsul ailələri",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

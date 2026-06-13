@@ -1,5 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  getReferenceCatalogDownloadForLocale,
+  getReferenceCatalogDownloadHref,
+  getReferenceCatalogLanguageDisplayName,
+  getReferenceCatalogLanguageLabel,
+  REFERENCE_CATALOG,
+  type ReferenceCatalogLanguage,
+} from "@/lib/references/reference-catalog-download";
 
 export type ReferanslarCatalogCtaDict = {
   title: string;
@@ -8,15 +16,15 @@ export type ReferanslarCatalogCtaDict = {
   pdfFormat: string;
   pdfMeta: string;
   languages: string;
-  languagesList: string;
+  /** @deprecated use per-language download links in component */
+  languagesList?: string;
+  documentLibraryLink?: string;
 };
 
 type Props = {
   locale: string;
   dict: ReferanslarCatalogCtaDict;
   catalogHref?: string;
-  /** Doğrudan PDF indirme (varsa buton bu dosyayı açar) */
-  catalogDownloadHref?: string;
   className?: string;
 };
 
@@ -24,9 +32,13 @@ export function ReferanslarCatalogCta({
   locale,
   dict,
   catalogHref = `/${locale}/teknik-merkez/dokuman-kutuphanesi`,
-  catalogDownloadHref = "/documents/novves-referans-katalogu.pdf",
   className = "",
 }: Props) {
+  const catalogDownloadHref = getReferenceCatalogDownloadForLocale(locale);
+  const pdfMeta = dict.pdfMeta || REFERENCE_CATALOG.pdfMeta;
+  const docLibraryLabel =
+    dict.documentLibraryLink ?? (locale === "tr" ? "Doküman kütüphanesi" : "Document library");
+
   return (
     <aside className={className}>
       <div className="relative overflow-hidden rounded-3xl bg-hz-primary-container p-8 text-white shadow-[0_32px_48px_-12px_rgba(25,28,30,0.35)] sm:p-10">
@@ -54,7 +66,7 @@ export function ReferanslarCatalogCta({
             href={catalogHref}
             className="mt-3 block text-center text-xs font-semibold text-white/70 underline-offset-2 hover:text-white hover:underline"
           >
-            {locale === "tr" ? "Doküman kütüphanesi" : "Document library"}
+            {docLibraryLabel}
           </Link>
           <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-8">
             <div className="flex items-center gap-4">
@@ -63,16 +75,31 @@ export function ReferanslarCatalogCta({
               </span>
               <div>
                 <p className="text-sm font-bold">{dict.pdfFormat}</p>
-                <p className="text-xs text-white/60">{dict.pdfMeta}</p>
+                <p className="text-xs text-white/60">{pdfMeta}</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-start gap-4">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
                 <span className="material-symbols-outlined text-hz-secondary-container">language</span>
               </span>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-bold">{dict.languages}</p>
-                <p className="text-xs text-white/60">{dict.languagesList}</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {REFERENCE_CATALOG.languages.map((lang: ReferenceCatalogLanguage) => (
+                    <a
+                      key={lang}
+                      href={getReferenceCatalogDownloadHref(lang)}
+                      download
+                      className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-white transition-colors hover:bg-white/20"
+                    >
+                      <span>{getReferenceCatalogLanguageLabel(lang)}</span>
+                      <span className="font-medium normal-case text-white/70">
+                        {getReferenceCatalogLanguageDisplayName(lang, locale)}
+                      </span>
+                      <span className="material-symbols-outlined text-sm">download</span>
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -7,8 +7,8 @@
     "bannerDescription": "Dūmų ir šilumos šalinimo sistemos; Tai vienas iš svarbiausių elektromechaninių gaisrinės saugos komponentų uždarose automobilių stovėjimo aikštelėse, tuneliuose, metro stotyse, oro uostuose, ligoninėse, energetikos objektuose ir didelės apimties statiniuose. Nors tai užtikrina, kad CO, NOx ir panašių teršalų lygis būtų saugus kasdienio naudojimo metu, jis padeda išlaikyti atvirus evakuacijos kelius, išlaikyti matomumą ir padėti ugniagesiams saugiai pasiekti gaisro šaltinį, kontroliuojamai nukreipiant dūmus ir karštas dujas gaisro atveju.\n\nNOVVES siūlo integruotą dūmų kontrolės metodą su DRAGONFLY dūmų ištraukimo ventiliatoriais ir reaktyviniais ventiliatoriais, HOUND dūmų sklendėmis, MARLIN gryno oro ventiliatoriais ir HAWK automatikos plokštėmis. Sistema; Jį sudaro ne tik galingi ventiliatoriai, bet ir automatika, sandarios sklendės, gryno oro balansas, CFD patikra ir EN/NFPA suderinama inžinerija, kuri veikia pagal gaisro scenarijus. F300/F400 temperatūros klasės ventiliatoriai pakelia pastato saugą į kitą lygį su CO/NOx jutikliu valdoma kasdienine ventiliacija ir pagal scenarijų pagrįstą gaisro valdymą.",
     "subtitle": "Kontroliuojamas dūmų ir karščio pašalinimas gaisro metu; reglamentus atitinkantys, inžinerijos palaikomi, visapusiški sprendimai.",
     "ctaPrimary": "Gaukite projekto pasiūlymą",
-    "ctaSecondary": "CFD analizė",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Dūmų ištraukimo ventiliatoriai",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "Priešgaisrinė sauga"
+    "breadcrumbCategory": "Priešgaisrinė sauga",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Dengtos automobilių stovėjimo aikštelės",
+        "description": "CO evakuacija + dūmų pašalinimas gaisro atveju",
+        "products": "Jet Fan, dūmų ventiliatorius, sklendė",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Kelių ir geležinkelių tuneliai",
+        "description": "Gaisro zonavimas ir oro maršrutas",
+        "products": "Jet Fan, ašinis ventiliatorius",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Prekybos centrai (prekybos centrai)",
+        "description": "Dūmų kontrolė ir evakuacija",
+        "products": "Korinis ventiliatorius, ašinis ventiliatorius, amortizatorius",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Stadionai ir posėdžių salės",
+        "description": "Dūmų evakavimas avarinėse situacijose",
+        "products": "Ašinis ventiliatorius, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Pramoninės gamybos įrenginiai",
+        "description": "Proceso sukeltas karštų dujų išleidimas",
+        "products": "Sraigės ventiliatorius, stogo ventiliatorius, išmetimo ventiliatorius",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Ligoninės ir sveikatos priežiūros įstaigos",
+        "description": "Dūmų zonų suskirstymas pacientų zonose",
+        "products": "Korinio ryšio ventiliatorius, sklendė",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "oro uostai",
+        "description": "Apatinio sluoksnio dūmų pašalinimas",
+        "products": "Jet Fan, ašinis ventiliatorius, slėgio didinimo ventiliatorius",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Sandėliai ir logistikos centrai",
+        "description": "Dūmų kontrolė esant dideliam garsui",
+        "products": "Ortakio ventiliatorius, Jet Fan, sklendė",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Elektrinės ir generatorių patalpos",
+        "description": "Išmetimas nuo elektros gaisrų",
+        "products": "Buvęs atsparus ventiliatorius, sraigių ventiliatorius",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Viešbučiai ir rezidencijos (aukšti pastatai)",
+        "description": "Laiptų slėgis, dūmų pašalinimas",
+        "products": "Korinis ventiliatorius, slėgio didinimo ventiliatorius, sklendė",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Komfortiška ŠVOK",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Biurų pastatai",
+        "description": "Centrinis kondicionierius, gryno oro cirkuliacija",
+        "products": "Vėdinimo įrenginys, ortakio ventiliatorius, ventiliatorius",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Viešbučiai ir kurortai",
+        "description": "Patogus oro paskirstymas, šilumos atgavimas, tylus veikimas",
+        "products": "AHU, korinio ryšio ventiliatorius, filtras",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Mokyklos ir universitetai",
+        "description": "Grynas oras klasėse, energijos taupymas",
+        "products": "Šilumos rekuperatorius, ortakio ventiliatorius, ventiliatorius",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Ligoninės (komforto skyriai)",
+        "description": "Tylus ir subalansuotas oro srautas pacientų kambariuose ir koridoriuose",
+        "products": "AHU, EC Fan, Filtruoti",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Prekybos centrai ir parduotuvės",
+        "description": "Komfortiškas oro kondicionierius, vienodas oro paskirstymas",
+        "products": "AHU, mobiliojo ryšio ventiliatorius, anemostatas",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Namai ir rezidencijos",
+        "description": "Kompaktiški sprendimai, tylios ir energiją taupančios oro sistemos",
+        "products": "Ortakio ventiliatorius, šilumos atgavimas, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Bankai ir viešieji pastatai",
+        "description": "Centrinės oro kondicionavimo sistemos ir gryno oro poreikis",
+        "products": "Vėdinimo įrenginys, ventiliacija, sklendė",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Oro uostai ir terminalai",
+        "description": "Didelio tūrio oro kondicionavimo sistemos",
+        "products": "Didelės talpos AHU, korinio ryšio ventiliatoriai",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Restoranai ir kavinės",
+        "description": "Kvapų kontrolė, temperatūros balanso palaikymas",
+        "products": "Korinis ventiliatorius, virtuvės išmetimo ventiliatorius, filtras",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Sporto salės ir kūno rengybos centrai",
+        "description": "Grynas oras, didelio srauto cirkuliacija",
+        "products": "Vėdinimo įrenginys, ortakio ventiliatorius, ventiliatorius",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Higieninis filtravimo vėdinimas",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Operacinės ir intensyvios terapijos skyriai",
+        "description": "Mikrobiologinis filtravimas, slėgio kontrolė",
+        "products": "Higieninis AHU, HEPA filtras, UV-C Ventiliatorius",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Švarios patalpos",
+        "description": "Dalelių kontrolė, higienos lygis tarp 100-100 000 klasės",
+        "products": "HEPA Sistemos ventiliatorius, suslėgtas AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Farmacijos gamybos įrenginiai",
+        "description": "Atitinka GMP, filtravimas ir slėgio kontrolė",
+        "products": "Higieninis vėdinimo įrenginys, filtruojamas elementų ventiliatorius",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Maisto gamybos sritys",
+        "description": "Higieniška oro cirkuliacija, kvapų ir dalelių kontrolė",
+        "products": "Higieninis AHU, EC Fan, filtras, nerūdijantis korpusas",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "laboratorijos",
+        "description": "Dujų ir dalelių kontrolė, neigiamo/teigiamo slėgio zonavimas",
+        "products": "HEPA Filtruotas elementų ventiliatorius, sklendė, filtras",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Ligoninės aptarnavimo aukštai",
+        "description": "Gryno oro tiekimas, kvapų ir infekcijų rizikos kontrolė",
+        "products": "Higieninis AHU, EC Fan, ortakio ventiliatorius, filtras",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Judrios virtuvės (pramonės ir medicinos)",
+        "description": "Alyvos dulksna + oro kokybės kontrolė, reikalingas plaunamas filtras",
+        "products": "Virtuvės ventiliatorius, korinis ventiliatorius, filtras",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Gyvulininkystės ir veterinarijos klinikų teritorijos",
+        "description": "Mikroorganizmų ir blogo kvapo kontrolė",
+        "products": "Ventiliatorius su filtru, EC Fan, šilumos atgavimas",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Pramoninis oro valdymas",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sunkiosios pramonės įrenginiai",
+        "description": "Aukštos temperatūros, dulkių, dalelių ir cheminių dujų pašalinimas",
+        "products": "Pramoninis sraigių ventiliatorius, išmetimo ventiliatorius, sklendė",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Suvirinimo, dažymo ir miltelinės gamybos linijos",
+        "description": "Vietinis siurbimas, išmetimas, neigiamo slėgio zonavimas",
+        "products": "Išmetimo ventiliatorius, dulkių surinkimo ventiliatorius",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Liejyklos ir metalurgijos įmonės",
+        "description": "Aukštos temperatūros ir dūmų pašalinimas",
+        "products": "Aukštai temperatūrai atsparus ašinis ventiliatorius, stogo ventiliatorius",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Popieriaus, pakuočių ir tekstilės gamyba",
+        "description": "Pluošto, dulkių ir drėgmės pašalinimas, energijos atgavimas",
+        "products": "EC Fan, šilumos atgavimas, korinio ryšio ventiliatorius",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Elektrinės",
+        "description": "Generatoriaus patalpos vėdinimas, išmetamųjų dujų pašalinimas",
+        "products": "Sraigių ventiliatorius, išmetimo ventiliatorius, buvęs atsparus ventiliatorius",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Automobilių ir mašinų surinkimo linijos",
+        "description": "Šilumos ir dūmų šalinimas, energijos atgavimas",
+        "products": "Ląstelių ventiliatorius, kanalinis ventiliatorius, sraigių ventiliatorius",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Perdirbimo ir atliekų apdorojimo įrenginiai",
+        "description": "Kvapo, dūmų ir dalelių pašalinimas",
+        "products": "Išmetimo ventiliatorius, ortakio ventiliatorius, filtras",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Logistikos ir sandėliavimo zonos",
+        "description": "Karšto oro išleidimas, oro cirkuliacija",
+        "products": "Ašinis ventiliatorius, stogo ventiliatorius, korinis ventiliatorius",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Medienos ir baldų dirbtuvės",
+        "description": "Skiedrų, dulkių ir tirpiklio pašalinimas",
+        "products": "Dulkių surinkimo ventiliatorius, sklendė, filtras",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Gyvulininkystės patalpų vėdinimas",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Vištienos fermos",
+        "description": "Didelio srauto išmetimo sistema, skirta intensyviai drėgmei, šilumai ir dujoms pašalinti",
+        "products": "Paukštienos ventiliatorius, išmetimo ventiliatorius",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Kiaušinių gamybos padaliniai",
+        "description": "Linijinė oro cirkuliacija neleidžia kauptis šilumai ir dujoms",
+        "products": "Ortakių ventiliatorius, paukštienos ventiliatorius",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Inkubavimo patalpos",
+        "description": "Tikslus ventiliatoriaus valdymas, užtikrinantis stabilią temperatūrą ir oro judėjimą",
+        "products": "EC Fan, vištienos ventiliatorius",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Galvijų ir tvartų vėdinimas",
+        "description": "Drėgmės, amoniako ir CO₂ valdymas su oro cirkuliacija",
+        "products": "Ašinis ventiliatorius, išmetimo ventiliatorius",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Transformatorių ir energijos kambario ventiliatoriai",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Transformatorių centrai (MV/LV)",
+        "description": "Privalomas įkaitusio oro ir dujų pašalinimas, 24/7 patikimumas",
+        "products": "Ašinis ventiliatorius, stogo ventiliatorius",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Generatorių kambariai",
+        "description": "Nuolatinis išmetimas prieš variklių šilumos išmetimą",
+        "products": "Sraigės ventiliatorius, išmetimo ventiliatorius",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Energijos perdavimo pastotės",
+        "description": "Kompaktiški ventiliatoriaus sprendimai, apsaugantys nuo nekontroliuojamo šildymo",
+        "products": "Ortakio ventiliatorius, sieninis ventiliatorius",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Duomenų centro energijos kambariai",
+        "description": "Transformatorių/UPS patalpos, kurios turi veikti stabilioje temperatūroje",
+        "products": "EC Fan, mobiliojo ryšio ventiliatorius",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Šiltnamių ir žemės ūkio vėdinimas",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Stiklo arba polikarbonato šiltnamis",
+        "description": "Temperatūros, drėgmės ir CO₂ lygio valdymas; oro cirkuliacija",
+        "products": "Ašinis ventiliatorius, vištienos ventiliatorius, kanalinis ventiliatorius",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Plastikinis tunelis šiltnamis",
+        "description": "Žemo slėgio oro perdavimas natūraliai ventiliacijai palengvinti",
+        "products": "Vištienos ventiliatorius, sieninis ventiliatorius",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Išmanusis šiltnamis (IoT Valdomas)",
+        "description": "Automatinis ventiliatoriaus valdymas pagal drėgmės, temperatūros ir šviesos jutiklius",
+        "products": "EC Fan, automatizavimo prietaisų skydelis",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Atogrąžų/šalto klimato šiltnamiai",
+        "description": "Dviejų krypčių oro judėjimas ir automatinis maršrutas pagal klimatą",
+        "products": "Dviejų krypčių ašinis ventiliatorius, slopintuvas",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Arboristikos ir žolės gamybos šiltnamiai",
+        "description": "Lengvos ventiliatorių sistemos šilumos išsklaidymo ir drėgmės balansavimui",
+        "products": "Ortakio tipo ventiliatorius, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX apsauga nuo sprogimo",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Chemijos ir naftos chemijos gamyklos",
+        "description": "Saugi vėdinimas sprogioje dujų ir garų aplinkoje",
+        "products": "Ex-proof ašiniai ir sraigių ventiliatoriai",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Kuro sandėliavimo ir pildymo vietos",
+        "description": "Degiųjų dujų pašalinimas iš aplinkos",
+        "products": "Buvęs atsparus sieninis ventiliatorius, sklendė",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Dažų parduotuvės ir gamyba naudojant tirpiklius",
+        "description": "Saugus išmetimas nuo statinės elektros ir tirpiųjų dujų kaupimosi",
+        "products": "Buvęs atsparus ortakių ventiliatorius, dulkių surinkimas",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Miltų, cukraus, cheminių miltelių įrenginiai",
+        "description": "Antistatinis ventiliatorius ir uždaros sistemos nuo dulkių sprogimo",
+        "products": "Ex-proof ašinis ventiliatorius, ciklono sistema",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Farmacijos ir medicininės chemijos gamybos sritys",
+        "description": "Filtruojamos ir kontroliuojamos slėgio ventiliatorių sistemos nuo degių komponentų",
+        "products": "Higieniškas Ex-proof ventiliatorius, išmetimo ventiliatorius su filtru",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Dujų užpildymo ir analizės laboratorijos",
+        "description": "Saugus ir tylus išmetimas jautriai dujų aplinkai",
+        "products": "Kompaktiškas Ex-proof ventiliatorius, sklendė",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Išmanusis automatizavimas ir valdymas",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Išmanieji pastatai (prekybos centras, biuras, ligoninė)",
+        "description": "BMS integracija, temperatūros/drėgmės/dujų automatinis valdymas",
+        "products": "PLC Skydas, jutiklis, signalo laidai, automatinis amortizatorius",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Pramonės įrenginiai",
+        "description": "Procesu pagrįstas ventiliatorių valdymas, nuotolinis stebėjimas, scenarijų valdymas",
+        "products": "Automatikos skydelis, relė, automatinis ventiliatoriaus modulis",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Tunelių ir parkavimo projektai",
+        "description": "Integruotos sistemos su reaktyviniu ventiliatoriumi ir CO jutikliais",
+        "products": "Jet Fan, CO detektorius su jutikliu, automatikos skydelis",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Būstas ir rezidencijos",
+        "description": "Kompaktiškos valdymo sistemos, ŠVOK sprendimai palaikomi patogiomis sąsajomis",
+        "products": "Mini PLC, išmanusis jutiklis, kompaktiškas ventiliatorius",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Ligoninės ir švarios patalpos",
+        "description": "Slėgio skirtumo, dalelių lygio ir filtrų užterštumo jutikliai",
+        "products": "HEPA Ventiliatorius, F9 jutiklis, automatinis amortizatorius",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Duomenų centrai",
+        "description": "Temperatūra pagrįstas vėdinimo valdymas, perteklinė kontrolė",
+        "products": "Dviejų modulių, temperatūros jutikliu valdomi EC ventiliatoriai",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Gyvenamųjų patalpų vėdinimas",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Individualios rezidencijos (butai ir vilos)",
+        "description": "Tylūs, erdvę taupantys, energiją taupantys sprendimai",
+        "products": "Ortakio ventiliatorius, šilumos rekuperatorius, kompaktiškas AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Gyvenamųjų namų ir prabangaus būsto projektai",
+        "description": "Estetiškai atrodančios, tylios ir valdomos sistemos",
+        "products": "EC Fan, mobiliojo ryšio ventiliatorius, ventiliatorius",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Individualūs namai",
+        "description": "Šviežio oro tiekimas, vonios ir virtuvės ištraukimas",
+        "products": "Vonios ventiliatorius, virtuvės ventiliatorius, ortakio ventiliatorius",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Maži namai ir surenkamieji pastatai",
+        "description": "Kompaktiškas dydis, lengvai surenkami gaminiai",
+        "products": "EC Fan, kompaktiškas ortakių ventiliatorius",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Svetainės bendros erdvės",
+        "description": "Išmetimo ventiliatoriai ir centrinis komforto sprendimas",
+        "products": "Sieninis ventiliatorius, korinis ventiliatorius",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Vėdinimas jūroje ir atviroje jūroje",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Laivų mašinų skyriai",
+        "description": "Nuolatinis išmetimas ir grynas oras esant aukštai temperatūrai, išmetamosioms dujoms ir vibracijai",
+        "products": "Ašinis ventiliatorius, radialinis ventiliatorius, ATEX ventiliatorius",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Generatorių ir siurblių patalpos",
+        "description": "Degiųjų dujų ir šilumos išsiskyrimo pavojus; sandarus zonavimas ir automatikos integravimas",
+        "products": "Ašinis ventiliatorius, sklendė, automatikos skydelis",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Kruiziniai laivai ir keltai",
+        "description": "Komfortiška ventiliacija keleivių ir įgulos vietose",
+        "products": "Ašinis ventiliatorius, kanalinis ventiliatorius",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Krovininiai laivai",
+        "description": "Krovinių skyriaus ir mašinų skyriaus vėdinimas",
+        "products": "Pramoninis ventiliatorius, ATEX Ventiliatorius",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Užsieninės platformos",
+        "description": "Jūros platformos vėdinimas ir nepertraukiamas išmetimas",
+        "products": "ATEX Ventiliatorius, ašinis ventiliatorius, priešgaisrinė sklendė",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "FPSO padaliniai ir laivų statyklos projektai",
+        "description": "Klasės patvirtintas jūrinis ventiliatorius, dūmų šalinimo ir automatikos integravimas",
+        "products": "Jūrinis ventiliatorius, dūmų ventiliatorius, sklendė, automatikos skydas",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Jachtos ir Mega jachtos",
+        "description": "Komfortiška ventiliacija ir mašinų skyriaus išmetimas",
+        "products": "Ortakio ventiliatorius, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Projektinė gamyba pagal užsakymą",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sektorius / projekto tipas",
+        "description": "Paaiškinimas",
+        "products": "Projektu pagrįstų sprendimų tipai",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Architektūriniai keitimo projektai",
+        "description": "Specialūs matmenys / sujungimo reikalavimas, pagrįstas esama pastato infrastruktūra",
+        "products": "Pagal užsakymą pagamintas elementų / korpuso dizainas",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Projektai su akustiniais apribojimais (viešbučiai, studijos ir kt.)",
+        "description": "Programos, kurioms reikalingas didelis našumas esant triukšmo riboms",
+        "products": "Mažo triukšmo ventiliatoriaus dizainas, integruotas duslintuvas",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Aukšti pastatai ir sunkiai pravažiuojamos vietos",
+        "description": "Lengvi gaminiai, kurie gali tilpti į siaurą erdvę veleno viduje",
+        "products": "Kompaktiškas ventiliatorius, modulinio surinkimo gaminio dizainas",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij būstas ir prabangūs architektūros projektai",
+        "description": "Estetinė išvaizda, paviršiaus danga ir minimalus garso tikslas",
+        "products": "Dažyta išorė, paslėptas montavimas, nematomas oro išėjimas",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Specialios maisto ir medicinos architektūros sritys",
+        "description": "Antibakterinė medžiaga, lengvai valomas paviršius ir speciali filtro struktūra",
+        "products": "Nerūdijančio plieno korpusas, vidinis dizainas su UV filtru",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD inžinerinės konsultacijos",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Dengtos automobilių stovėjimo aikštelės",
+        "description": "Reaktyvinio ventiliatoriaus išdėstymas, gaisro scenarijus, CO plitimo modeliavimas",
+        "products": "CFD Analizė, Jet Fan Padėties nustatymas, Techninė byla",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "tuneliai",
+        "description": "Tunelio vėdinimo scenarijus, slėgio ir srauto analizė",
+        "products": "Srauto analizė, reaktyvinio ventiliatoriaus krypties optimizavimas",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Oro uostas ir metro stotys",
+        "description": "Gaisro zonavimas, dūmų sluoksnio modeliavimas",
+        "products": "Projekto bylos rengimas, apskaitos ataskaita",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Didelės apimties statiniai, tokie kaip prekybos centrai ir stadionai",
+        "description": "Dūmų evakavimo scenarijai ir dizainai, tinkami keleivių evakuacijai",
+        "products": "Priešgaisrinės inžinerijos pagalba, scenarijų konsultavimas",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Architektūros ir projektų biurai",
+        "description": "Reaktyvinių ventiliatorių programinė įranga padedamas tyrinėjimas ir skaičiavimas",
+        "products": "CAD palaikomas maketavimas, techninio šablono paruošimas",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

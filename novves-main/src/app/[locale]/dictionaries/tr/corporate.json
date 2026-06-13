@@ -447,29 +447,22 @@
     "heroDescStitch": "Türkiye ve dünya genelinde, mühendislik hassasiyeti ve endüstriyel otoriteyle tamamladığımız prestijli projeler.",
     "sidebarTitle": "Referanslarımız",
     "sidebarSubtitle": "Proje Hiyerarşisi",
-    "categories": {
-      "all": "Global Projeler",
-      "industrial": "Endüstriyel Tesisler",
-      "residential": "Konut ve Ofis",
-      "special": "Özel Çözümler"
-    },
     "supportTitle": "Desteğe mi İhtiyacınız Var?",
     "supportDesc": "Teknik ekibimizle projelerinizi detaylandıralım.",
     "supportCta": "Temsilciye Bağlan",
     "listViewLabel": "Liste görünümü",
     "catalogCta": {
-      "title": "Proje Detayları Cebinizde",
+      "title": "Referanslarımız Cebinizde",
       "description": "Tamamlanan projelerimizi, sektör örneklerimizi ve mühendislik çözümlerimizi içeren güncel referans kataloğumuzu indirin.",
       "button": "Kataloğu İndir",
       "pdfFormat": "PDF Formatı",
       "pdfMeta": "Güncellendi: 05.2026",
       "languages": "Çoklu Dil Desteği",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Doküman kütüphanesi"
     },
     "showMore": "Daha Fazla Göster",
     "metaTitle": "Referanslar | Novves",
     "noResults": "Sonuç bulunamadı.",
-    "allClasses": "Tüm Sınıflar",
     "heroTitle1": "Proje",
     "viewDetails": "Detayları Gör",
     "allCountries": "Tüm Ülkeler",
@@ -498,7 +491,7 @@
       "fabrika": "FABRİKA",
       "kamu-binasi": "KAMU BİNASI",
       "stadyum": "STADYUM",
-      "metro": "METRO",
+      "metro": "Metro-Raylı Sistem",
       "tunel": "TÜNEL",
       "veri-merkezi": "VERİ MERKEZİ",
       "tersane": "TERSANE",
@@ -512,6 +505,140 @@
       "depo": "DEPO",
       "showroom": "SHOWROOM",
       "karma-kullanim": "KARMA KULLANIM"
+    },
+    "all": "Tüm Projeler",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Altyapı Ulaşım",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Yolcu Terminalleri - Havalimanı"
+          },
+          {
+            "id": "parking",
+            "label": "Otopark"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Kamu binası - Pazaryeri"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Endüstriyel Tesisler & Fabrikalar",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Üretim Tesisleri"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Lojistik & Depolama Alanları"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Ağır Sanayi Tesisleri"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Sağlık Yapıları",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Şehir Hastaneleri"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Devlet & Özel Hastaneler"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Sağlık Kampüsleri"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Turizm Konaklama",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Oteller"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Alışveriş Merkezleri"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Ofis Binaları"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Konut & Kentsel Dönüşüm Projeleri",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Toplu Konut Projeleri"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Kentsel Dönüşüm Alanları"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Konut Siteleri"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Kamu Binaları & Resmi Projeler",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Eğitim Yapıları"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Enerji & Altyapı Projeleri",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Enerji Santralleri"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Altyapı Tesisleri"
+          },
+          {
+            "id": "utility-service",
+            "label": "Teknik & Servis Yapıları"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Ürün Ailesine Göre",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Görsel",
+      "sector": "Sektör",
+      "buildingType": "Yapı Türü",
+      "projectName": "Proje Adı",
+      "productsUsed": "Kullanılan Ürünler",
+      "productFamilies": "Ürün Ailesi Adları",
+      "country": "Ülke"
     }
   },
   "sertifikalar": {

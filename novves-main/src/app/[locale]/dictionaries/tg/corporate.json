@@ -451,31 +451,24 @@
     "heroDescStitch": "Лоиҳаҳои бонуфузе, ки дар саросари Туркия ва ҷаҳон бо дақиқии муҳандисӣ ва эътибори саноатӣ ба анҷом расонидаем.",
     "sidebarTitle": "Маълумотномаҳои мо",
     "sidebarSubtitle": "Иерархияи лоиҳа",
-    "categories": {
-      "all": "Лоиҳаҳои ҷаҳонӣ",
-      "industrial": "Иншооти саноатӣ",
-      "residential": "Манзил ва идора",
-      "special": "Ҳалли махсус"
-    },
     "supportTitle": "Ба дастгирӣ ниёз доред?",
     "supportDesc": "Бигзор гурӯҳи техникии мо лоиҳаҳои шуморо ҳамроҳи шумо муфассал созад.",
     "supportCta": "Пайвастшавӣ ба намоянда",
     "listViewLabel": "Намоиши рӯйхат",
     "catalogCta": {
-      "title": "Тафсилоти лоиҳаҳо дар кисаи шумо",
+      "title": "Маҷои ма дар ҷеби шума",
       "description": "Каталоги интерактивии моро, ки тамоми маълумотномаҳо, тафсилоти техникӣ ва ҳалли муҳандисиро дар бар мегирад, ҳозир зеркашӣ кунед.",
       "button": "Зеркашии каталог",
       "pdfFormat": "Формати PDF",
       "pdfMeta": "24.5 MB • Навсозӣ шуд: 12.2024",
       "languages": "Дастгирии бисёрзабона",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Китобхонаи ҷамот"
     },
     "completedProjects": "Лоиҳаи анҷомёфта",
     "country": "кишвар",
     "projectPeriod": "Давраи лоиҳа",
     "searchPlaceholder": "Ҷустуҷӯи лоиҳаҳо, кишварҳо ё маҳсулот...",
     "allCountries": "Ҳама кишварҳо",
-    "allClasses": "Ҳама синфҳо",
     "gridViewLabel": "Намоиши шабака",
     "countryViewLabel": "манзараи кишвар",
     "clear": "равшан",
@@ -498,7 +491,7 @@
       "fabrika": "Корхона",
       "kamu-binasi": "Бинои давлатӣ",
       "stadyum": "Варзишгоҳ",
-      "metro": "Метро",
+      "metro": "Metro-Rail System",
       "tunel": "Нақб",
       "veri-merkezi": "Маркази додаҳо",
       "tersane": "Киштисозӣ",
@@ -512,6 +505,140 @@
       "depo": "Анбор",
       "showroom": "Showroom",
       "karma-kullanim": "Истифодаи омехта"
+    },
+    "all": "Ҳамаи лоиҳаҳо",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Зерҳаҳати инфрасоҳа ва нақлиет",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Терминалҳоҳои мусофир — Фурудгоҳи ҳавоҳӣи"
+          },
+          {
+            "id": "parking",
+            "label": "Мавозингҳоҳо ва майдонҳоҳои apron"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Бинои давлатӣ — Бозори чандаҳӣи"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Ишолохҳоҳои сохта ва заводҳоҳо",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Ишолохҳои маҳоилот"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Логистика ва анборҳоҳо"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Сохтаҳои сонати сенгӣнати"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Инои сохтаҳоҳои санаторӣӣ",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Бимороҳои бемористонҳо"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Бемористонҳои давлатӣ ва хусусӣ"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Кампусҳои санаторӣӣ"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Сиҷҳҳат ва меҷмонҳӣии",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Меҷмонҳоҳо"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Маркзаҳоҳои марказҳо"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Биноҳоҳои идорӣ"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Лоиҳаҳои маскун ва бесҳазокунӣии шаҳар",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Лоиҳаҳои оммавӣ"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Манаҷи бесҳазокунӣии шаҳар"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Маскунҳои комплексҳо"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Биноҳоҳои давлатӣ ва лоиҳаҳои расмӣ",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Биноҳоҳои таълимӣ"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Лоиҳаҳои энергетика ва зерҳаҳати инфрасоҳа",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Нигоҳоҳои электростансияҳо"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Инфрасохои сохтаҳоҳо"
+          },
+          {
+            "id": "utility-service",
+            "label": "Биноҳоҳои техникӣ ва хизматрасонӣ"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Ҳама оилаҳои маҳсулот",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

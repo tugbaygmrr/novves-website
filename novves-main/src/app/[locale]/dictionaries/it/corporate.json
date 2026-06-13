@@ -438,31 +438,24 @@
     "heroDescStitch": "Progetti prestigiosi realizzati in Turchia e in tutto il mondo con precisione ingegneristica e autorevolezza industriale.",
     "sidebarTitle": "Le nostre referenze",
     "sidebarSubtitle": "Gerarchia dei progetti",
-    "categories": {
-      "all": "Progetti globali",
-      "industrial": "Impianti industriali",
-      "residential": "Residenziale e uffici",
-      "special": "Soluzioni speciali"
-    },
     "supportTitle": "Hai bisogno di supporto?",
     "supportDesc": "Lascia che il nostro team tecnico definisca i dettagli dei tuoi progetti insieme a te.",
     "supportCta": "Contatta un referente",
     "listViewLabel": "Vista elenco",
     "catalogCta": {
-      "title": "I dettagli del progetto a portata di mano",
+      "title": "I nostri riferimenti in tasca",
       "description": "Scarica subito il nostro catalogo interattivo con tutte le referenze, i dettagli tecnici e le nostre soluzioni ingegneristiche.",
       "button": "Scarica il catalogo",
       "pdfFormat": "Formato PDF",
       "pdfMeta": "24.5 MB • Aggiornato: 12.2024",
       "languages": "Supporto multilingue",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Biblioteca documenti"
     },
     "completedProjects": "Progetti completati",
     "country": "Paesi",
     "projectPeriod": "Periodo progetto",
     "searchPlaceholder": "Cerca progetto, paese o prodotto...",
     "allCountries": "Tutti i paesi",
-    "allClasses": "Tutte le categorie",
     "gridViewLabel": "Vista griglia",
     "countryViewLabel": "Vista paese",
     "clear": "Cancella",
@@ -485,7 +478,7 @@
       "fabrika": "Fabbrica",
       "kamu-binasi": "Edificio Pubblico",
       "stadyum": "Stadio",
-      "metro": "Metropolitana",
+      "metro": "Metro-Rail System",
       "tunel": "Galleria",
       "veri-merkezi": "Data Center",
       "tersane": "Cantiere Navale",
@@ -499,6 +492,140 @@
       "depo": "Magazzino",
       "showroom": "Showroom",
       "karma-kullanim": "Uso misto"
+    },
+    "all": "Tutti i progetti",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Infrastrutture e trasporti",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Terminal passeggeri — Aeroporto"
+          },
+          {
+            "id": "parking",
+            "label": "Parcheggi e piazzali"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Edificio pubblico — Mercato polifunzionale"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Impianti industriali e fabbriche",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Stabilimenti produttivi"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Logistica e magazzini"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Impianti di industria pesante"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Strutture sanitarie",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Ospedali cittadini"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Ospedali pubblici e privati"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Campus sanitari"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Turismo e ospitalità",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Hotel"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Centri commerciali"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Edifici per uffici"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Progetti residenziali e di rigenerazione urbana",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Progetti di edilizia residenziale pubblica"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Aree di rigenerazione urbana"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Complessi residenziali"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Edifici pubblici e progetti istituzionali",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Edifici scolastici"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Progetti energetici e infrastrutturali",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Centrali elettriche"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Impianti infrastrutturali"
+          },
+          {
+            "id": "utility-service",
+            "label": "Edifici tecnici e di servizio"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Tutte le famiglie di prodotti",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

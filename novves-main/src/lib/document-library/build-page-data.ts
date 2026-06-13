@@ -93,7 +93,7 @@ export function buildDocumentLibraryPageData(ui: DocumentLibraryUi) {
       languages: ["tr", "en"],
       downloadByLanguage: {
         tr: "/documents/novves-referans-katalogu.pdf",
-        en: "/documents/novves-reference-catalog-en.pdf",
+        en: "/documents/novves-referans-katalogu.pdf",
       },
       category: ui.sidebar.tree.catalogs,
       code: "CAT-NV-REF-2026",

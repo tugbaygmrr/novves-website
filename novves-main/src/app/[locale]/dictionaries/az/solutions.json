@@ -7,8 +7,8 @@
     "bannerDescription": "Duman və istilik çıxarma sistemləri; O, qapalı dayanacaqlarda, tunellərdə, metro stansiyalarında, hava limanlarında, xəstəxanalarda, enerji obyektlərində və böyük həcmli strukturlarda yanğın təhlükəsizliyinin ən vacib elektromexaniki komponentlərindən biridir. Gündəlik istifadədə CO, NOx və oxşar çirkləndiricilərin təhlükəsiz səviyyədə saxlanmasını təmin etməklə yanaşı, yanğın zamanı tüstü və isti qazları nəzarətli şəkildə istiqamətləndirərək xilasetmə yollarının açıq olmasına, görünürlüğün qorunmasına və yanğınsöndürənlərin yanğın mənbəyinə təhlükəsiz çatmasına kömək edir.\n\nNOVVES DRAGONFLY tüstü çıxarma fanatları və reaktiv ventilyatorları, HOUND tüstü damperləri, MARLIN təmiz hava fanatları və HAWK avtomatlaşdırma panelləri ilə inteqrasiya olunmuş tüstü nəzarəti yanaşmasını təklif edir. Sistem; O, təkcə güclü fanatlardan ibarət deyil, həm də avtomatlaşdırma, möhürlənmiş amortizatorlar, təmiz hava balansı, CFD yoxlaması və yanğın ssenarilərinə uyğun işləyən EN/NFPA uyğun mühəndislik ilə inteqrasiya edir. F300/F400 temperatur sinfi ventilyatorları CO/NOx sensoru ilə idarə olunan gündəlik ventilyasiya və ssenari əsaslı yanğın nəzarəti ilə bina təhlükəsizliyini növbəti səviyyəyə qaldırır.",
     "subtitle": "Yanğın zamanı tüstü və istiliyin idarə olunmuş sorğu edilməsi; normativlərə uyğun, mühəndis dəstəyi olan, tam dövrəli həllər.",
     "ctaPrimary": "Layihəniz üçün təklif alın",
-    "ctaSecondary": "CFD təhlili",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Tüstü çıxarma ventilyatorları",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
         }
       ]
     },
-    "breadcrumbCategory": "Yanğın Təhlükəsizliyi"
+    "breadcrumbCategory": "Yanğın Təhlükəsizliyi",
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Qapalı Avtomobil Parkları",
+        "description": "Yanğın zamanı CO evakuasiyası + tüstünün çıxarılması",
+        "products": "Jet Fan, Duman ventilyatoru, Damper",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Avtomobil və dəmir yolu tunelləri",
+        "description": "Yanğın zonası və hava marşrutu",
+        "products": "Jet Fan, Eksenel Fan",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Alış-veriş mərkəzləri (Alış-veriş mərkəzləri)",
+        "description": "Tüstüyə nəzarət və evakuasiya",
+        "products": "Hüceyrə Fan, Eksenel Fan, Damper",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Stadionlar və İclas Zalları",
+        "description": "Fövqəladə hallarda tüstünün evakuasiyası",
+        "products": "Eksenel Fan, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Sənaye İstehsalat Obyektləri",
+        "description": "Prosesdən qaynaqlanan isti qaz boşalması",
+        "products": "Salyangoz ventilyatoru, dam ventilyatoru, egzoz ventilyatoru",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Xəstəxanalar və Sağlamlıq Obyektləri",
+        "description": "Xəstə ərazilərində tüstü rayonlaşdırılması",
+        "products": "Hüceyrə Fan, Damper",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "hava limanları",
+        "description": "Alt təbəqənin tüstünün evakuasiyası",
+        "products": "Jet Fan, Eksenel Fan, Təzyiqli Fan",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Anbar və Logistika Mərkəzləri",
+        "description": "Yüksək həcmdə tüstüyə nəzarət",
+        "products": "Kanal ventilyatoru, Jet Fan, Damper",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Elektrik Stansiyaları və Generator Otaqları",
+        "description": "Elektrik yanğınlarına qarşı egzoz",
+        "products": "Köhnə ventilyator, İlbiz Fan",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Otellər və Rezidensiyalar (Hündürmərtəbəli binalar)",
+        "description": "Pilləkənlərin təzyiqi, tüstünün çıxarılması",
+        "products": "Hüceyrə ventilyatoru, təzyiq ventilyatoru, damper",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Konfort HVAC",
@@ -680,7 +742,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ofis binaları",
+        "description": "Mərkəzi kondisioner, təmiz hava sirkulyasiyası",
+        "products": "Kondisioner, kanal ventilyatoru, ventilyasiya",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Otellər və kurortlar",
+        "description": "Rahat hava paylanması, istilik bərpası, səssiz işləmə",
+        "products": "AHU, Mobil Fan, Filtr",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Məktəblər və Universitetlər",
+        "description": "Sinif otaqlarında təmiz hava, enerjiyə qənaət",
+        "products": "İstilik bərpası, kanal ventilyatoru, ventilyasiya",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Xəstəxanalar (komfort şöbələri)",
+        "description": "Xəstə otaqları və dəhlizləri üçün sakit və balanslaşdırılmış hava axını",
+        "products": "AHU, EC Fan, Filtr",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Ticarət Mərkəzləri və Mağazalar",
+        "description": "Komfortlu kondisioner, homojen hava paylanması",
+        "products": "AHU, Mobil Fan, Anemostat",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Evlər və Yaşayışlar",
+        "description": "Kompakt həllər, səssiz və enerjiyə qənaət edən hava sistemləri",
+        "products": "Kanal ventilyatoru, istilik bərpası, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Banklar və İctimai Binalar",
+        "description": "Mərkəzi kondisioner sistemləri və təmiz hava tələb olunur",
+        "products": "Kondisioner, ventilyasiya, Damper",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Hava limanları və terminallar",
+        "description": "Yüksək həcmli kondisioner sistemləri",
+        "products": "Böyük tutumlu AHU, Mobil Fanatlar",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Restoranlar və Kafelər",
+        "description": "Qoxuya nəzarət, temperatur balansını saxlamaq",
+        "products": "Hüceyrə ventilyatoru, Mətbəxdən çıxan ventilyator, Filtr",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "İdman Zalları və Fitnes Mərkəzləri",
+        "description": "Təmiz hava, yüksək axın sirkulyasiyası",
+        "products": "Kondisioner, kanal ventilyatoru, ventilyasiya",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Higiyenik filtrasiya havalandırması",
@@ -963,7 +1087,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Əməliyyat otaqları və reanimasiya şöbələri",
+        "description": "Mikrobioloji filtrasiya, təzyiqə nəzarət",
+        "products": "Gigiyenik AHU, HEPA Filtr, UV-C Fan",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Təmiz otaqlar",
+        "description": "Hissəciklərə nəzarət, gigiyena səviyyəsi sinif 100-100.000 arasındadır",
+        "products": "HEPA Sistem Fan, Təzyiqli AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Əczaçılıq İstehsalat Obyektləri",
+        "description": "GMP uyğun, filtrasiya və təzyiqə nəzarət",
+        "products": "Gigiyenik Kondisioner Cihazı, Filtrlənmiş Hüceyrə Fan",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Qida İstehsal Sahələri",
+        "description": "Gigiyenik hava sirkulyasiyası, qoxu və hissəciklərə nəzarət",
+        "products": "Gigiyenik AHU, EC Fan, Filtr, Paslanmayan Korpus",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "laboratoriyalar",
+        "description": "Qaz və hissəciklərə nəzarət, mənfi/müsbət təzyiq zonası",
+        "products": "HEPA Filtrlənmiş Hüceyrə Fan, Damper, Filtr",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Xəstəxana xidmət mərtəbələri",
+        "description": "Təmiz hava təchizatı, qoxu və infeksiya riskinə nəzarət",
+        "products": "Gigiyenik AHU, EC Fan, Kanal ventilyatoru, Filtr",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Məşğul Mətbəxlər (Sənaye və Tibb)",
+        "description": "Yağ dumanı + havanın keyfiyyətinə nəzarət, yuyula bilən filtr lazımdır",
+        "products": "Mətbəx ventilyatoru, mobil ventilyator, filtr",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Heyvandarlıq və Baytarlıq Klinika Sahələri",
+        "description": "Mikroorqanizm və pis qoxuya qarşı mübarizə",
+        "products": "Filtrli ventilyator, EC Fan, İstiliyin Bərpası",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Sənaye hava idarəetməsi",
@@ -1246,7 +1420,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ağır Sənaye Obyektləri",
+        "description": "Yüksək temperatur, toz, hissəcik və kimyəvi qazın evakuasiyası",
+        "products": "Sənaye İlbiz Fan, Egzoz Ventilyator, Damper",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Qaynaq, Boyama və Pudra İstehsal Xətləri",
+        "description": "Yerli emiş, egzoz, mənfi təzyiq zonası",
+        "products": "Egzoz ventilyatoru, toz toplama ventilyatoru",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Tökmə və Metallurgiya Müəssisələri",
+        "description": "Yüksək temperatur və tüstünün evakuasiyası",
+        "products": "Yüksək temperatura davamlı eksenel ventilyator, dam ventilyatoru",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Kağız, Qablaşdırma və Tekstil İstehsalatı",
+        "description": "Lif, toz və nəmin evakuasiyası, enerjinin bərpası",
+        "products": "EC Fan, İstiliyin Bərpası, Mobil Fan",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Elektrik stansiyaları",
+        "description": "Generator otağının ventilyasiyası, tullantı qazının evakuasiyası",
+        "products": "Salyangoz ventilyatoru, egzoz ventilyatoru, köhnə ventilyator",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Avtomobil və Maşın Quraşdırma Xətləri",
+        "description": "İstilik və tüstünün evakuasiyası, enerjinin bərpası",
+        "products": "Hüceyrə ventilyatoru, kanal ventilyatoru, ilbiz fanatı",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Təkrar Emal və Tullantıların Emalı Obyektləri",
+        "description": "Qoxu, tüstü və hissəciklərin evakuasiyası",
+        "products": "Egzoz ventilyatoru, kanal ventilyatoru, filtr",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Logistika və Saxlama Sahələri",
+        "description": "İsti havanın boşaldılması, hava dövranı",
+        "products": "Eksenel Fan, Dam ventilyatoru, Mobil Fan",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Taxta və Mebel emalatxanaları",
+        "description": "Çip, toz və həlledicinin evakuasiyası",
+        "products": "Toz toplama ventilyatoru, damper, filtr",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Heyvandarlıq obyekti havalandırması",
@@ -1513,7 +1743,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Toyuq fermaları",
+        "description": "Güclü rütubət, istilik və qazın çıxarılması üçün yüksək axın sürəti egzoz sistemi",
+        "products": "Quşçuluq ventilyatoru, egzoz ventilyatoru",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Yumurta İstehsal Bölmələri",
+        "description": "İstilik və qaz yığılmasının qarşısını alan xətti hava dövranı",
+        "products": "Kanal ventilyatoru, quşçuluq ventilyatoru",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "İnkubasiya Obyektləri",
+        "description": "Sabit temperatur və hava hərəkəti üçün dəqiq fan nəzarəti",
+        "products": "EC Fan, Toyuq Fanatı",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Mal-qara və tövlə ventilyasiyası",
+        "description": "Hava sirkulyasiyası ilə rütubət, ammonyak və CO₂ nəzarəti",
+        "products": "Eksenel Fan, Egzoz Fan",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Transformator və enerji otağı ventilyatorları",
@@ -1780,7 +2036,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Transformator Mərkəzləri (MV/LV)",
+        "description": "Qızdırılan havanın və qazların məcburi evakuasiyası, 24/7 etibarlılıq",
+        "products": "Eksenel ventilyator, dam ventilyatoru",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Generator otaqları",
+        "description": "Mühərriklərin istilik egzozuna qarşı davamlı egzoz",
+        "products": "Salyangoz ventilyatoru, egzoz ventilyatoru",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Enerji ötürücü yarımstansiyalar",
+        "description": "Nəzarətsiz istiləşmənin qarşısını almaq üçün kompakt fan həlləri",
+        "products": "Kanal ventilyatoru, divar ventilyatoru",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Məlumat Mərkəzi Enerji Otaqları",
+        "description": "Sabit temperaturda işləməli olan transformator/UPS otaqları",
+        "products": "EC Fan, Mobil Fan",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "İstixana və kənd təsərrüfatı havalandırması",
@@ -2047,7 +2329,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Şüşə və ya polikarbonat istixana",
+        "description": "Temperatur, rütubət və CO₂ səviyyəsinə nəzarət; hava dövranı",
+        "products": "Eksenel ventilyator, toyuq ventilyatoru, kanal ventilyatoru",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Plastik Tunel İstixanası",
+        "description": "Təbii havalandırmaya kömək etmək üçün aşağı təzyiqli hava ötürülməsi",
+        "products": "Toyuq ventilyatoru, divara quraşdırılmış yelçəkən",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Ağıllı İstixana (IoT Nəzarətli)",
+        "description": "Rütubət, temperatur və işıq sensorlarına əsaslanan avtomatik fan nəzarəti",
+        "products": "EC Fan, Avtomatlaşdırma İdarəetmə Paneli",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Tropik/Soyuq İqlim İstixanaları",
+        "description": "İki istiqamətli hava hərəkəti və iqlimə görə avtomatik marşrutlaşdırma",
+        "products": "İki istiqamətli eksenel fan, damper",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Ağacçılıq və Ot İstehsalı İstixanaları",
+        "description": "İstiliyin yayılması və rütubətin balanslaşdırılması üçün yüngül fan sistemləri",
+        "products": "Kanal tipli ventilyator, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX partlayış qorunması",
@@ -2330,7 +2644,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Kimya və Neft-Kimya Obyektləri",
+        "description": "Partlayıcı qaz və buxar mühitlərində təhlükəsiz havalandırma",
+        "products": "Eksenel və ilbiz pərəstişkarları",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Yanacaq Saxlama və Doldurma Sahələri",
+        "description": "Yanan qazların ətraf mühitdən çıxarılması",
+        "products": "Keçmiş divar ventilyatoru, damper",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Solventlərdən istifadə edən boya sexləri və istehsalları",
+        "description": "Statik elektrik və həlledici qazın yığılmasına qarşı təhlükəsiz egzoz",
+        "products": "Ex-proof kanal ventilyatoru, toz toplama",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Un, Şəkər, Kimyəvi Toz Obyektləri",
+        "description": "Toz partlayışına qarşı antistatik fan və qapalı sistemlər",
+        "products": "Ex-proof Axial Fan, Siklon Sistemi",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Əczaçılıq və Tibbi Kimya İstehsal Sahələri",
+        "description": "Yanan komponentlərə qarşı filtrlənmiş və təzyiqlə idarə olunan fan sistemləri",
+        "products": "Gigiyenik Ex-proof Ventilyator, Filtrli Egzoz Fan",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Qaz Doldurma və Analiz Laboratoriyaları",
+        "description": "Həssas qaz mühiti üçün təhlükəsiz və səssiz egzoz",
+        "products": "Kompakt Ex-proof ventilyator, Damper",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Ağıllı avtomatika və idarəetmə",
@@ -2597,7 +2949,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ağıllı Binalar (Ticarət Mərkəzi, Ofis, Xəstəxana)",
+        "description": "BMS inteqrasiyası, temperatur/rütubət/qaz əsaslı avtomatik idarəetmə",
+        "products": "PLC Panel, Sensor, Siqnal Naqilləri, Avtomatik Damper",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Sənaye Obyektləri",
+        "description": "Prosesə əsaslanan fan nəzarəti, uzaqdan monitorinq, ssenarinin idarə edilməsi",
+        "products": "Avtomatlaşdırma Paneli, Rele, Avtomatik Fan Modulu",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Tunel və Parkinq Layihələri",
+        "description": "Reaktiv fan və CO sensorları ilə inteqrasiya olunmuş sistemlər",
+        "products": "Jet Fan, Sensorlu CO Detektoru, Avtomatlaşdırma Paneli",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Mənzil və Yaşayış yerləri",
+        "description": "Kompakt idarəetmə sistemləri, istifadəçi dostu interfeyslərlə dəstəklənən HVAC həlləri",
+        "products": "Mini PLC, Ağıllı Sensor, Kompakt Fan",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Xəstəxanalar və Təmiz Otaqlar",
+        "description": "Təzyiq fərqi, hissəcik səviyyəsi və filtr çirklənmə sensorları",
+        "products": "HEPA Fan, F9 Sensor, Avtomatlaşdırılmış Damper",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Məlumat Mərkəzləri",
+        "description": "Temperatur əsaslı ventilyasiya idarəetməsi, lazımsız nəzarət",
+        "products": "İki modul, temperatur sensoru ilə idarə olunan EC fanatları",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Yaşayış havalandırması",
@@ -2864,7 +3254,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Fərdi Yaşayışlar (Mənzillər və Villalar)",
+        "description": "Sakit, yerə qənaət edən, enerjiyə qənaət edən həllər",
+        "products": "Kanal ventilyatoru, istilik bərpası, kompakt AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Yaşayış və Lüks Mənzil Layihələri",
+        "description": "Estetik görünüşlü, səssiz və idarə olunan sistemlər",
+        "products": "EC Fan, mobil ventilyator, ventilyasiya",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Fərdi Evlər",
+        "description": "Təmiz hava təchizatı, vanna otağı və mətbəx egzozu",
+        "products": "Vanna otağı ventilyatoru, mətbəx ventilyatoru, kanal ventilyatoru",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Kiçik Evlər və Prefabrik Binalar",
+        "description": "Kompakt ölçü, asan yığılan məhsullar",
+        "products": "EC Fan, yığcam kanal ventilyatoru",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Saytın Ümumi Sahələri",
+        "description": "Egzoz fanatları və mərkəzi rahatlıq həlli",
+        "products": "Divar fanatı, mobil fanat",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Dəniz və offshore havalandırması",
@@ -3131,7 +3553,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Gəmi mühərrik otaqları",
+        "description": "Yüksək temperatur, işlənmiş qaz və vibrasiya şəraitində davamlı egzoz və təmiz hava",
+        "products": "Eksenel Fan, Radial Fan, ATEX Fan",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Generator və nasos otaqları",
+        "description": "Yanan qaz və istilik yayılması riski; möhürlənmiş rayonlaşdırma və avtomatlaşdırma inteqrasiyası",
+        "products": "Eksenel Fan, Damper, Avtomatlaşdırma Paneli",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Kruiz gəmiləri və bərələr",
+        "description": "Sərnişin və ekipaj yerlərində rahat havalandırma",
+        "products": "Eksenel ventilyator, kanal ventilyatoru",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Yük gəmiləri",
+        "description": "Yük saxlama və maşın otağının havalandırılması",
+        "products": "Sənaye Fan, ATEX Fan",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Dəniz platformaları",
+        "description": "Dəniz platformasının ventilyasiyası və sızdırmaz egzoz",
+        "products": "ATEX Ventilyator, Eksenel Fan, Yanğınsöndürən",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "FPSO Bölmələr və Gəmiqayırma Layihələri",
+        "description": "Sinif təsdiqlənmiş dəniz fanatı, tüstü çıxarma və avtomatlaşdırma inteqrasiyası",
+        "products": "Dəniz Ventilyatoru, Duman Fan, Damper, Avtomatlaşdırma Paneli",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Yaxtalar və Meqa Yaxtalar",
+        "description": "Komfortlu havalandırma və mühərrik otağının egzozu",
+        "products": "Kanal ventilyatoru, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Layihəyə əsaslanan fərdi istehsal",
@@ -3398,7 +3864,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sektor / Layihə Növü",
+        "description": "İzahat",
+        "products": "Layihə əsaslı həll növləri",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Memarlıq dəyişdirmə layihələri",
+        "description": "Mövcud bina infrastrukturuna əsaslanan xüsusi ölçü/bağlantı tələbi",
+        "products": "Sifarişlə hazırlanmış hüceyrə/korpus dizaynı",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Akustik Məhdudiyyətli Layihələr (Otellər, Studiyalar və s.)",
+        "description": "Səs-küy limitləri altında yüksək performans tələb edən proqramlar",
+        "products": "Aşağı səs-küylü fan dizaynı, səsboğucu inteqrasiya edilmişdir",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Hündür binalar və keçidi çətin olan ərazilər",
+        "description": "Şaftın içərisində dar bir yerə uyğunlaşa bilən yüngül məhsullar",
+        "products": "Kompakt fan, modul montaj məhsulu dizaynı",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij Mənzil və Lüks Memarlıq Layihələri",
+        "description": "Estetik görünüş, səth örtüyü və minimum səs hədəfi",
+        "products": "Boyalı xarici, gizli quraşdırma, görünməz hava çıxışı",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Qida və Tibb Memarlığı Xüsusi Sahələri",
+        "description": "Antibakterial material, asan təmizlənən səth və xüsusi filtr quruluşu",
+        "products": "Paslanmayan korpus, UV filtrli interyer dizaynı",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD mühəndis məsləhəti",
@@ -3665,6 +4169,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Qapalı Avtomobil Parkları",
+        "description": "Jet fan yerləşdirilməsi, yanğın ssenarisi, CO yayılması simulyasiyası",
+        "products": "CFD Analizi, Jet Fan Yerləşdirmə, Texniki Fayl",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "tunellər",
+        "description": "Tunel havalandırma ssenarisi, təzyiq və axın təhlili",
+        "products": "Axın təhlili, reaktiv fan istiqamətinin optimallaşdırılması",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Hava limanı və metro stansiyaları",
+        "description": "Yanğın zonası, tüstü qatının simulyasiyası",
+        "products": "Layihə faylının hazırlanması, mühasibat hesabatı",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Ticarət mərkəzləri və stadionlar kimi böyük həcmli strukturlar",
+        "description": "Tüstü evakuasiya ssenariləri və sərnişinlərin evakuasiyası üçün uyğun dizaynlar",
+        "products": "Yanğın mühəndisliyi dəstəyi, ssenari məsləhəti",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Memarlıq və Layihə Ofisləri",
+        "description": "Jet fan proqram təminatı ilə kəşfiyyat və hesablama",
+        "products": "CAD dəstəklənən tərtibat, texniki şablon hazırlanması",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

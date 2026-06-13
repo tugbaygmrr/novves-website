@@ -8,8 +8,8 @@
     "bannerDescription": "Smoke and heat extraction systems; It is one of the most critical electromechanical components of fire safety in indoor parking lots, tunnels, metro stations, airports, hospitals, energy facilities and large-volume structures. While it ensures that CO, NOx and similar pollutants are kept at safe levels in daily use, it helps to keep escape routes open, maintain visibility and help firefighters reach the fire source safely by directing smoke and hot gases in a controlled manner in case of fire.\n\nNOVVES offers an integrated smoke control approach with DRAGONFLY smoke extraction fans and jet fans, HOUND smoke dampers, MARLIN fresh air fans and HAWK automation panels. System; It does not only consist of powerful fans, but also integrates with automation, sealed dampers, fresh air balance, CFD verification and EN/NFPA compliant engineering that works according to fire scenarios. F300/F400 temperature class fans take building safety to the next level with CO/NOx sensor-controlled daily ventilation and scenario-based fire control.",
     "subtitle": "Controlled evacuation of smoke and heat during fires; regulation-compliant, engineering-supported, end-to-end solutions.",
     "ctaPrimary": "Get a Quote for Your Project",
-    "ctaSecondary": "CFD Analysis",
-    "ctaSecondaryHref": "/hizmetler/cfd-analizi",
+    "ctaSecondary": "Smoke Exhaust Fans",
+    "ctaSecondaryHref": "/urunler/duman-isi-tahliye-fanlari",
     "trustStrip": [
       {
         "value": "EN 12101-3",
@@ -397,7 +397,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Covered Car Parks",
+        "description": "CO evacuation + smoke removal in case of fire",
+        "products": "Jet Fan, Smoke Fan, Damper",
+        "productFamilies": "Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Road and Railway Tunnels",
+        "description": "Fire zoning and air routing",
+        "products": "Jet Fan, Axial Fan",
+        "productFamilies": "Dragonfly, Marlin"
+      },
+      {
+        "buildingType": "Shopping Malls (Shopping Malls)",
+        "description": "Smoke control and evacuation",
+        "products": "Cellular Fan, Axial Fan, Damper",
+        "productFamilies": "Turtle, Marlin, Hound"
+      },
+      {
+        "buildingType": "Stadiums and Meeting Halls",
+        "description": "Smoke evacuation in emergency situations",
+        "products": "Axial Fan, Jet Fan",
+        "productFamilies": "Marlin, Dragonfly"
+      },
+      {
+        "buildingType": "Industrial Production Facilities",
+        "description": "Process-induced hot gas discharge",
+        "products": "Snail Fan, Roof Fan, Exhaust Fan",
+        "productFamilies": "Nautilus, Heron, Owl"
+      },
+      {
+        "buildingType": "Hospitals and Health Facilities",
+        "description": "Smoke zoning in patient areas",
+        "products": "Cellular Fan, Damper",
+        "productFamilies": "Turtle, Hound"
+      },
+      {
+        "buildingType": "airports",
+        "description": "Bottom layer smoke evacuation",
+        "products": "Jet Fan, Axial Fan, Pressurization Fan",
+        "productFamilies": "Dragonfly, Marlin, Turtle"
+      },
+      {
+        "buildingType": "Warehouse and Logistics Centers",
+        "description": "Smoke control at high volumes",
+        "products": "Duct Fan, Jet Fan, Damper",
+        "productFamilies": "Koi, Dragonfly, Hound"
+      },
+      {
+        "buildingType": "Power Plants & Generator Rooms",
+        "description": "Exhaust against electrical fires",
+        "products": "Ex-proof Fan, Snail Fan",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Hotels and Residences (High-Rise Buildings)",
+        "description": "Stair pressurization, smoke evacuation",
+        "products": "Cellular Fan, Pressurization Fan, Damper",
+        "productFamilies": "Turtle, Dragonfly, Hound"
+      }
+    ]
   },
   "konforIklimlendirme": {
     "breadcrumbCurrent": "Comfort HVAC",
@@ -676,7 +738,69 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Office Buildings",
+        "description": "Central air conditioning, fresh air circulation",
+        "products": "Air Handling Unit, Duct Fan, Vent",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Hotels and Resorts",
+        "description": "Comfortable air distribution, heat recovery, quiet operation",
+        "products": "AHU, Cellular Fan, Filter",
+        "productFamilies": "Tiger, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Schools & Universities",
+        "description": "Fresh air in classrooms, energy saving",
+        "products": "Heat Recovery, Duct Fan, Vent",
+        "productFamilies": "Caracal, Koi, Alpaca"
+      },
+      {
+        "buildingType": "Hospitals (comfort departments)",
+        "description": "Quiet and balanced air flow for patient rooms and corridors",
+        "products": "AHU, EC Fan, Filter",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "Shopping Malls and Stores",
+        "description": "Comfort air conditioning, homogeneous air distribution",
+        "products": "AHU, Cellular Fan, Anemostat",
+        "productFamilies": "Tiger, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Houses & Residences",
+        "description": "Compact solutions, quiet and energy efficient air systems",
+        "products": "Duct Fan, Heat Recovery, EC Fan",
+        "productFamilies": "Koi, Caracal, Hummingbird"
+      },
+      {
+        "buildingType": "Banks & Public Buildings",
+        "description": "Central air conditioning systems and fresh air needs",
+        "products": "Air Handling Unit, Vent, Damper",
+        "productFamilies": "Tiger, Alpaca, Hound"
+      },
+      {
+        "buildingType": "Airports & Terminals",
+        "description": "High volume air conditioning systems",
+        "products": "Large capacity AHU, Cellular Fans",
+        "productFamilies": "Tiger, Turtle"
+      },
+      {
+        "buildingType": "Restaurants and Cafes",
+        "description": "Odor control, maintaining temperature balance",
+        "products": "Cellular Fan, Kitchen Exhaust Fan, Filter",
+        "productFamilies": "Turtle, Butterfly, Scallop"
+      },
+      {
+        "buildingType": "Gyms & Fitness Centers",
+        "description": "Fresh air, high flow circulation",
+        "products": "Air Handling Unit, Duct Fan, Vent",
+        "productFamilies": "Tiger, Koi, Alpaca"
+      }
+    ]
   },
   "hijyenikFiltrasyon": {
     "breadcrumbCurrent": "Hygienic Filtration Ventilation",
@@ -955,7 +1079,57 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Operating Rooms & Intensive Care Units",
+        "description": "Microbiological filtration, pressure control",
+        "products": "Hygienic AHU, HEPA Filter, UV-C Fan",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Cleanrooms",
+        "description": "Particle control, hygiene level between class 100-100,000",
+        "products": "HEPA System Fan, Pressurized AHU",
+        "productFamilies": "Turtle, Scallop, Caracal"
+      },
+      {
+        "buildingType": "Pharmaceutical Production Facilities",
+        "description": "GMP compliant, filtering and pressure control",
+        "products": "Hygienic Air Handling Unit, Filtered Cell Fan",
+        "productFamilies": "Tiger, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Food Production Areas",
+        "description": "Hygienic air circulation, odor and particle control",
+        "products": "Hygienic AHU, EC Fan, Filter, Stainless Body",
+        "productFamilies": "Tiger, Hummingbird, Scallop"
+      },
+      {
+        "buildingType": "laboratories",
+        "description": "Gas and particle control, negative/positive pressure zoning",
+        "products": "HEPA Filtered Cell Fan, Damper, Filter",
+        "productFamilies": "Turtle, Hound, Scallop"
+      },
+      {
+        "buildingType": "Hospital Service Floors",
+        "description": "Fresh air supply, odor and infection risk control",
+        "products": "Hygienic AHU, EC Fan, Duct Fan, Filter",
+        "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+      },
+      {
+        "buildingType": "Busy Kitchens (Industrial and Medical)",
+        "description": "Oil mist + air quality control, need for washable filter",
+        "products": "Kitchen Fan, Cellular Fan, Filter",
+        "productFamilies": "Butterfly, Turtle, Scallop"
+      },
+      {
+        "buildingType": "Livestock and Veterinary Clinic Areas",
+        "description": "Microorganism and bad odor control",
+        "products": "Fan with Filter, EC Fan, Heat Recovery",
+        "productFamilies": "Scallop, Hummingbird, Caracal"
+      }
+    ]
   },
   "endustriyelHavaYonetimi": {
     "breadcrumbCurrent": "Industrial Air Management",
@@ -1234,7 +1408,63 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Heavy Industry Facilities",
+        "description": "High temperature, dust, particle and chemical gas evacuation",
+        "products": "Industrial Snail Fan, Exhaust Fan, Damper",
+        "productFamilies": "Nautilus, Owl, Hound"
+      },
+      {
+        "buildingType": "Welding, Painting and Powdered Production Lines",
+        "description": "Local suction, exhaust, negative pressure zoning",
+        "products": "Exhaust Fan, Dust Collection Fan",
+        "productFamilies": "Owl, Elephant"
+      },
+      {
+        "buildingType": "Foundry and Metallurgical Enterprises",
+        "description": "High temperature and smoke evacuation",
+        "products": "High Temperature Resistant Axial Fan, Roof Fan",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Paper, Packaging and Textile Production",
+        "description": "Fiber, dust and moisture evacuation, energy recovery",
+        "products": "EC Fan, Heat Recovery, Cellular Fan",
+        "productFamilies": "Hummingbird, Caracal, Turtle"
+      },
+      {
+        "buildingType": "Power Plants",
+        "description": "Generator room ventilation, waste gas evacuation",
+        "products": "Snail Fan, Exhaust Fan, Ex-proof Fan",
+        "productFamilies": "Nautilus, Owl, Bear"
+      },
+      {
+        "buildingType": "Automotive & Machinery Assembly Lines",
+        "description": "Heat and smoke evacuation, energy recovery",
+        "products": "Cell Fan, Duct Fan, Snail Fan",
+        "productFamilies": "Turtle, Koi, Nautilus"
+      },
+      {
+        "buildingType": "Recycling and Waste Processing Facilities",
+        "description": "Odor, smoke and particle evacuation",
+        "products": "Exhaust Fan, Duct Fan, Filter",
+        "productFamilies": "Owl, Koi, Scallop"
+      },
+      {
+        "buildingType": "Logistics & Storage Areas",
+        "description": "Hot air discharge, air circulation",
+        "products": "Axial Fan, Roof Fan, Cellular Fan",
+        "productFamilies": "Marlin, Heron, Turtle"
+      },
+      {
+        "buildingType": "Wood and Furniture Workshops",
+        "description": "Chip, dust and solvent evacuation",
+        "products": "Dust Collection Fan, Damper, Filter",
+        "productFamilies": "Elephant, Hound, Scallop"
+      }
+    ]
   },
   "hayvancilikTesisleri": {
     "breadcrumbCurrent": "Livestock Facility Ventilation",
@@ -1497,7 +1727,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Chicken Farms",
+        "description": "High flow rate exhaust system for intense humidity, heat and gas removal",
+        "products": "Poultry Fan, Exhaust Fan",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Egg Production Units",
+        "description": "Linear air circulation preventing heat and gas accumulation",
+        "products": "Duct Fan, Poultry Fan",
+        "productFamilies": "Koi, Chicken"
+      },
+      {
+        "buildingType": "Incubation Facilities",
+        "description": "Precise fan control for stable temperature and air movement",
+        "products": "EC Fan, Chicken Fan",
+        "productFamilies": "Hummingbird, Chicken"
+      },
+      {
+        "buildingType": "Cattle & Barn Ventilation",
+        "description": "Humidity, ammonia and CO₂ control with air circulation",
+        "products": "Axial Fan, Exhaust Fan",
+        "productFamilies": "Marlin, Owl"
+      }
+    ]
   },
   "trafoEnerjiOdalari": {
     "breadcrumbCurrent": "Transformer & Energy Room Fans",
@@ -1760,7 +2016,33 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Transformer Centers (MV/LV)",
+        "description": "Mandatory evacuation of heated air and gases, 24/7 reliability",
+        "products": "Axial Fan, Roof Fan",
+        "productFamilies": "Marlin, Heron"
+      },
+      {
+        "buildingType": "Generator Rooms",
+        "description": "Continuous exhaust against heat exhaust of engines",
+        "products": "Snail Fan, Exhaust Fan",
+        "productFamilies": "Nautilus, Owl"
+      },
+      {
+        "buildingType": "Energy Transmission Substations",
+        "description": "Compact fan solutions to prevent uncontrolled heating",
+        "products": "Duct Fan, Wall Fan",
+        "productFamilies": "Koi, Owl"
+      },
+      {
+        "buildingType": "Data Center Energy Rooms",
+        "description": "Transformer/UPS rooms that need to operate at stable temperature",
+        "products": "EC Fan, Cellular Fan",
+        "productFamilies": "Hummingbird, Turtle"
+      }
+    ]
   },
   "seraTarimsal": {
     "breadcrumbCurrent": "Greenhouse & Agricultural Ventilation",
@@ -2023,7 +2305,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Glass or Polycarbonate Greenhouse",
+        "description": "Temperature, humidity and CO₂ level control; air circulation",
+        "products": "Axial Fan, Chicken Fan, Duct Fan",
+        "productFamilies": "Marlin, Chicken, Koi"
+      },
+      {
+        "buildingType": "Plastic Tunnel Greenhouse",
+        "description": "Low pressure air transfer to assist natural ventilation",
+        "products": "Chicken Fan, Wall Mounted Fan",
+        "productFamilies": "Chicken, Owl"
+      },
+      {
+        "buildingType": "Smart Greenhouse (IoT Controlled)",
+        "description": "Automatic fan control based on humidity, temperature and light sensors",
+        "products": "EC Fan, Automation Dashboard",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Tropical/Cold Climate Greenhouses",
+        "description": "Bi-directional air movement & automatic routing according to climate",
+        "products": "Bidirectional Axial Fan, Damper",
+        "productFamilies": "Marlin, Hound"
+      },
+      {
+        "buildingType": "Arboriculture & Grass Production Greenhouses",
+        "description": "Lightweight fan systems for heat dissipation and humidity balancing",
+        "products": "Duct Type Fan, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "atexPatlamaKoruma": {
     "breadcrumbCurrent": "ATEX Explosion Protection",
@@ -2302,7 +2616,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Chemical & Petrochemical Facilities",
+        "description": "Safe ventilation in explosive gas and vapor environments",
+        "products": "Ex-proof Axial and Snail Fans",
+        "productFamilies": "Bear, Nautilus"
+      },
+      {
+        "buildingType": "Fuel Storage & Filling Areas",
+        "description": "Removing flammable gases from the environment",
+        "products": "Ex-proof Wall Fan, Damper",
+        "productFamilies": "Bear, Owl, Hound"
+      },
+      {
+        "buildingType": "Dye Shops & Productions Using Solvents",
+        "description": "Safe exhaust against static electricity and solvent gas accumulation",
+        "products": "Ex-proof Duct Fan, Dust Collection",
+        "productFamilies": "Bear, Koi, Elephant"
+      },
+      {
+        "buildingType": "Flour, Sugar, Chemical Powder Facilities",
+        "description": "Anti-static fan and closed systems against dust explosion",
+        "products": "Ex-proof Axial Fan, Cyclone System",
+        "productFamilies": "Bear, Marlin, Elephant"
+      },
+      {
+        "buildingType": "Pharmaceutical and Medical Chemistry Production Areas",
+        "description": "Filtered & pressure controlled fan systems against flammable components",
+        "products": "Hygienic Ex-proof Fan, Exhaust Fan with Filter",
+        "productFamilies": "Bear, Scallop, Turtle"
+      },
+      {
+        "buildingType": "Gas Filling & Analysis Laboratories",
+        "description": "Safe and quiet exhaust for sensitive gas environment",
+        "products": "Compact Ex-proof Fan, Damper",
+        "productFamilies": "Bear, Hummingbird, Hound"
+      }
+    ]
   },
   "akilliOtomasyon": {
     "breadcrumbCurrent": "Smart Automation and Control",
@@ -2565,7 +2917,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Smart Buildings (Shopping Mall, Office, Hospital)",
+        "description": "BMS integration, temperature/humidity/gas based automatic control",
+        "products": "PLC Panel, Sensor, Signal Wiring, Automatic Damper",
+        "productFamilies": "REMORA, Hound"
+      },
+      {
+        "buildingType": "Industrial Facilities",
+        "description": "Process-based fan control, remote monitoring, scenario management",
+        "products": "Automation Panel, Relay, Automatic Fan Module",
+        "productFamilies": "REMORA, Lion, Hound"
+      },
+      {
+        "buildingType": "Tunnel and Parking Projects",
+        "description": "Integrated systems with jet fan & CO sensors",
+        "products": "Jet Fan, CO Detector with Sensor, Automation Panel",
+        "productFamilies": "Dragonfly, REMORA, Hound"
+      },
+      {
+        "buildingType": "Housing and Residences",
+        "description": "Compact control systems, HVAC solutions supported by user-friendly interfaces",
+        "products": "Mini PLC, Smart Sensor, Compact Fan",
+        "productFamilies": "Hummingbird, REMORA"
+      },
+      {
+        "buildingType": "Hospitals & Clean Rooms",
+        "description": "Pressure difference, particle level and filter pollution sensors",
+        "products": "HEPA Fan, F9 Sensor, Automated Damper",
+        "productFamilies": "Scallop, Hound, FlaktEdge"
+      },
+      {
+        "buildingType": "Data Centers",
+        "description": "Temperature-based ventilation management, redundant control",
+        "products": "Dual module, temperature-sensor controlled EC fans",
+        "productFamilies": "Hummingbird, REMORA"
+      }
+    ]
   },
   "konutHavalandirma": {
     "breadcrumbCurrent": "Residential Ventilation",
@@ -2828,7 +3218,39 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Individual Residences (Flats & Villas)",
+        "description": "Quiet, space-saving, energy efficient solutions",
+        "products": "Duct Fan, Heat Recovery, Compact AHU",
+        "productFamilies": "Koi, Caracal, Tiger"
+      },
+      {
+        "buildingType": "Residence and Luxury Housing Projects",
+        "description": "Aesthetic looking, quiet and controlled systems",
+        "products": "EC Fan, Cellular Fan, Vent",
+        "productFamilies": "Hummingbird, Turtle, Alpaca"
+      },
+      {
+        "buildingType": "Detached Houses",
+        "description": "Fresh air supply, bathroom & kitchen exhaust",
+        "products": "Bathroom Fan, Kitchen Fan, Duct Fan",
+        "productFamilies": "Seahorse, Butterfly, Koi"
+      },
+      {
+        "buildingType": "Tiny House & Prefabricated Buildings",
+        "description": "Compact size, easy to assemble products",
+        "products": "EC Fan, Compact Duct Fan",
+        "productFamilies": "Hummingbird, Koi"
+      },
+      {
+        "buildingType": "Site Common Areas",
+        "description": "Exhaust fans and central comfort solution",
+        "products": "Wall Fan, Cellular Fan",
+        "productFamilies": "Owl, Turtle"
+      }
+    ]
   },
   "marinOffshore": {
     "breadcrumbCurrent": "Marine & Offshore Ventilation",
@@ -3091,7 +3513,51 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Ship Engine Rooms",
+        "description": "Continuous exhaust and fresh air under high temperature, exhaust gas and vibration conditions",
+        "products": "Axial Fan, Radial Fan, ATEX Fan",
+        "productFamilies": "Marlin, Nautilus, Bear"
+      },
+      {
+        "buildingType": "Generator and Pump Rooms",
+        "description": "Risk of flammable gas and heat release; sealed zoning and automation integration",
+        "products": "Axial Fan, Damper, Automation Panel",
+        "productFamilies": "Marlin, Hound, Hawk"
+      },
+      {
+        "buildingType": "Cruise Ships and Ferries",
+        "description": "Comfort ventilation in passenger and crew areas",
+        "products": "Axial Fan, Duct Fan",
+        "productFamilies": "Marlin, Koi"
+      },
+      {
+        "buildingType": "Cargo Ships",
+        "description": "Cargo hold and engine room ventilation",
+        "products": "Industrial Fan, ATEX Fan",
+        "productFamilies": "Nautilus, Bear"
+      },
+      {
+        "buildingType": "Offshore Platforms",
+        "description": "Offshore platform ventilation and exproof exhaust",
+        "products": "ATEX Fan, Axial Fan, Fire Damper",
+        "productFamilies": "Bear, Marlin, Hound"
+      },
+      {
+        "buildingType": "FPSO Units and Shipyard Projects",
+        "description": "Class approved marine fan, smoke extraction and automation integration",
+        "products": "Marine Fan, Smoke Fan, Damper, Automation Panel",
+        "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+      },
+      {
+        "buildingType": "Yachts and Mega Yachts",
+        "description": "Comfort ventilation and engine room exhaust",
+        "products": "Duct Fan, EC Fan",
+        "productFamilies": "Koi, Hummingbird"
+      }
+    ]
   },
   "projeBazliOzelImalat": {
     "breadcrumbCurrent": "Project-Based Custom Manufacturing",
@@ -3354,7 +3820,45 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Sector / Project Type",
+        "description": "Explanation",
+        "products": "Project Based Solution Types",
+        "productFamilies": "Uygun NOVVES Ürünleri"
+      },
+      {
+        "buildingType": "Architectural Replacement Projects",
+        "description": "Special dimension/connection requirement based on existing building infrastructure",
+        "products": "Custom-made cell/case design",
+        "productFamilies": "Hücreli Fan, Aksiyel Fan"
+      },
+      {
+        "buildingType": "Projects with Acoustic Restrictions (Hotels, Studios, etc.)",
+        "description": "Applications requiring high performance under noise limits",
+        "products": "Low noise fan design, silencer integrated",
+        "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+      },
+      {
+        "buildingType": "Tall Buildings and Areas with Difficult Passage",
+        "description": "Lightweight products that can fit into a narrow space inside the shaft",
+        "products": "Compact fan, modular assembly product design",
+        "productFamilies": "Kompakt AHU, EC Fan"
+      },
+      {
+        "buildingType": "Prestij Housing & Luxury Architectural Projects",
+        "description": "Aesthetic appearance, surface coating and minimum sound target",
+        "products": "Painted exterior, concealed installation, invisible air outlet",
+        "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+      },
+      {
+        "buildingType": "Food & Medicine Architecture Special Areas",
+        "description": "Antibacterial material, easy-to-clean surface and special filter structure",
+        "products": "Stainless body, UV filtered interior design",
+        "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+      }
+    ]
   },
   "cfdDanismanlik": {
     "breadcrumbCurrent": "CFD Engineering Consultancy",
@@ -3617,6 +4121,38 @@
           "icon": "cert"
         }
       ]
-    }
+    },
+    "sectorBuildingTypes": [
+      {
+        "buildingType": "Covered Car Parks",
+        "description": "Jet fan placement, fire scenario, CO propagation simulation",
+        "products": "CFD Analysis, Jet Fan Positioning, Technical File",
+        "productFamilies": "Dragonfly, Hound, REMORA"
+      },
+      {
+        "buildingType": "tunnels",
+        "description": "Tunnel ventilation scenario, pressure and flow analysis",
+        "products": "Flow analysis, jet fan direction optimization",
+        "productFamilies": "Dragonfly, Marlin, REMORA"
+      },
+      {
+        "buildingType": "Airport and Metro Stations",
+        "description": "Fire zoning, smoke layer simulation",
+        "products": "Project file preparation, accounting report",
+        "productFamilies": "Dragonfly, Turtle"
+      },
+      {
+        "buildingType": "Large volume structures such as shopping malls and stadiums",
+        "description": "Smoke evacuation scenarios and designs suitable for passenger evacuation",
+        "products": "Fire engineering support, scenario consultancy",
+        "productFamilies": "Marlin, Tiger, Hound"
+      },
+      {
+        "buildingType": "Architectural & Project Offices",
+        "description": "Jet fan software-assisted exploration and calculation",
+        "products": "CAD supported layout, technical template preparation",
+        "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+      }
+    ]
   }
 }

@@ -451,31 +451,24 @@
     "heroDescStitch": "Түркияда және бүкіл әлемде инженерлік дәлдікпен әрі өнеркәсіптік беделмен аяқтаған беделді жобаларымыз.",
     "sidebarTitle": "Біздің сілтемелер",
     "sidebarSubtitle": "Жобалар иерархиясы",
-    "categories": {
-      "all": "Жаһандық жобалар",
-      "industrial": "Өнеркәсіптік нысандар",
-      "residential": "Тұрғын үй және кеңсе",
-      "special": "Арнайы шешімдер"
-    },
     "supportTitle": "Қолдау қажет пе?",
     "supportDesc": "Техникалық тобымызбен жобаларыңызды егжей-тегжейлі талқылайық.",
     "supportCta": "Өкілмен байланысу",
     "listViewLabel": "Тізім көрінісі",
     "catalogCta": {
-      "title": "Жоба мәліметтері қалтаңызда",
+      "title": "Referansлар себебізде",
       "description": "Барлық сілтемелерді, техникалық мәліметтер мен инженерлік шешімдерді қамтитын интерактивті каталогымызды қазір жүктеп алыңыз.",
       "button": "Каталогты жүктеу",
       "pdfFormat": "PDF форматы",
       "pdfMeta": "24.5 MB • Жаңартылды: 12.2024",
       "languages": "Көптілді қолдау",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Құжаттар кітапханасы"
     },
     "completedProjects": "Аяқталған жоба",
     "country": "Ел",
     "projectPeriod": "Жоба кезеңі",
     "searchPlaceholder": "Жобаларды, елдерді немесе өнімдерді іздеу...",
     "allCountries": "Барлық елдер",
-    "allClasses": "Барлық кластар",
     "gridViewLabel": "Тор көрінісі",
     "countryViewLabel": "Ел көрінісі",
     "clear": "Тазарту",
@@ -498,7 +491,7 @@
       "fabrika": "Зауыт",
       "kamu-binasi": "Мемлекеттік ғимарат",
       "stadyum": "Стадион",
-      "metro": "Метро",
+      "metro": "Metro-Rail System",
       "tunel": "Туннель",
       "veri-merkezi": "Деректер орталығы",
       "tersane": "Кеме жасау зауыты",
@@ -512,6 +505,140 @@
       "depo": "Қойма",
       "showroom": "Showroom",
       "karma-kullanim": "Аралас пайдалану"
+    },
+    "all": "Барлық жобалар",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Инфракура жөне көлік коммуналдары",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Жолаушы терминалдары — Аэропорт"
+          },
+          {
+            "id": "parking",
+            "label": "Автотөкежай жөне apron аландары"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Мемлекет гимараты — Коп маңгы нарық"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Онеркасы нысандар жөне зауыттар",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Ондыру нысандары"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Логистика жөне қоя аландары"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Ағыр онеркасы нысандар"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Денсаулық нысандар",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "Қала аурулары"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "Мемлекет жөне жеке аурулары"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Денсау кампустары"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Туризм жөне қонақ кұзетшілігі",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Қонақ үй жерлері"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Сауда орталық орындары"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Офис ғимараттары"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Түрғы жөне қала қайта жаңарту жобалары",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Коп түрғы науан жобалары"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Қала жаңарту аймақтары"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Түрғы комплекстері"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Мемлекет гимараттары жөне ресми жобалар",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Білім беру гимараттары"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Энергетика жөне инфракура жобалары",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Электр станциялары"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Инфракуралық нысандар"
+          },
+          {
+            "id": "utility-service",
+            "label": "Техникалық жөне қызмет көрсеткілері"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "Барлық өнім отбасылары",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

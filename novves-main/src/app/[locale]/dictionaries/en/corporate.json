@@ -438,31 +438,24 @@
     "heroDescStitch": "Prestigious projects completed across Turkey and worldwide with engineering precision and industrial authority.",
     "sidebarTitle": "Our References",
     "sidebarSubtitle": "Project Hierarchy",
-    "categories": {
-      "all": "Global Projects",
-      "industrial": "Industrial Facilities",
-      "residential": "Residential & Office",
-      "special": "Special Solutions"
-    },
     "supportTitle": "Need Support?",
     "supportDesc": "Let our technical team detail your projects with you.",
     "supportCta": "Connect to a Representative",
     "listViewLabel": "List view",
     "catalogCta": {
-      "title": "Project Details in Your Pocket",
+      "title": "Our References in Your Pocket",
       "description": "Download our interactive catalog with all references, technical details and engineering solutions.",
       "button": "Download Catalog",
       "pdfFormat": "PDF Format",
       "pdfMeta": "24.5 MB • Updated: 12.2024",
       "languages": "Multilingual Support",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "Document library"
     },
     "completedProjects": "Completed Projects",
     "country": "Countries",
     "projectPeriod": "Project Period",
     "searchPlaceholder": "Search project, country or product...",
     "allCountries": "All Countries",
-    "allClasses": "All Categories",
     "gridViewLabel": "Grid view",
     "countryViewLabel": "Country view",
     "clear": "Clear",
@@ -485,7 +478,7 @@
       "fabrika": "Factory",
       "kamu-binasi": "Public Building",
       "stadyum": "Stadium",
-      "metro": "Metro",
+      "metro": "Metro-Rail System",
       "tunel": "Tunnel",
       "veri-merkezi": "Data Center",
       "tersane": "Shipyard",
@@ -499,6 +492,140 @@
       "depo": "Warehouse",
       "showroom": "Showroom",
       "karma-kullanim": "Mixed Use"
+    },
+    "all": "All Projects",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "Infrastructure and Transportation",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "Passenger Terminals — Airport"
+          },
+          {
+            "id": "parking",
+            "label": "Parking & Apron Facilities"
+          },
+          {
+            "id": "public-building-market",
+            "label": "Public Building — Multi-Purpose Market"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Industrial Plants & Factories",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "Manufacturing Plants"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "Logistics & Warehouses"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "Heavy Industry Facilities"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Healthcare Facilities",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "City Hospitals"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "State & Private Hospitals"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "Healthcare Campuses"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "Tourism and Hospitality",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "Hotels"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "Shopping Malls"
+          },
+          {
+            "id": "office-buildings",
+            "label": "Office Buildings"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "Residential & Urban Regeneration Projects",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "Mass Housing Projects"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "Urban Renewal Areas"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "Residential Complexes"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "Public Buildings & Government Projects",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "Educational Buildings"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "Energy & Infrastructure Projects",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "Power Plants"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "Infrastructure Facilities"
+          },
+          {
+            "id": "utility-service",
+            "label": "Utility & Service Buildings"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "By Product Family",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "Image",
+      "sector": "Sector",
+      "buildingType": "Building Type",
+      "projectName": "Project Name",
+      "productsUsed": "Products Used",
+      "productFamilies": "Product Family Names",
+      "country": "Country"
     }
   },
   "sertifikalar": {

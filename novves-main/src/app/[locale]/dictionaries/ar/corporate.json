@@ -438,31 +438,24 @@
     "heroDescStitch": "مشاريع مرموقة أنجزناها في تركيا وحول العالم بدقة هندسية وريادة صناعية.",
     "sidebarTitle": "مراجعنا",
     "sidebarSubtitle": "التسلسل الهرمي للمشاريع",
-    "categories": {
-      "all": "مشاريع عالمية",
-      "industrial": "المنشآت الصناعية",
-      "residential": "السكني والمكتبي",
-      "special": "حلول خاصة"
-    },
     "supportTitle": "هل تحتاج إلى دعم؟",
     "supportDesc": "دع فريقنا التقني يفصّل مشاريعك معك.",
     "supportCta": "تواصل مع أحد الممثلين",
     "listViewLabel": "عرض القائمة",
     "catalogCta": {
-      "title": "تفاصيل المشاريع في متناول يدك",
+      "title": "مراجعنا في جيبك",
       "description": "حمّل الآن كتالوجنا التفاعلي الذي يضم جميع مراجعنا والتفاصيل التقنية وحلولنا الهندسية.",
       "button": "تحميل الكتالوج",
       "pdfFormat": "صيغة PDF",
       "pdfMeta": "24.5 MB • تم التحديث: 12.2024",
       "languages": "دعم متعدد اللغات",
-      "languagesList": "TR, EN, DE, FR"
+      "documentLibraryLink": "مكتبة الوثائق"
     },
     "completedProjects": "مشاريع مكتملة",
     "country": "الدول",
     "projectPeriod": "فترة المشروع",
     "searchPlaceholder": "ابحث عن مشروع أو دولة أو منتج...",
     "allCountries": "جميع الدول",
-    "allClasses": "جميع الفئات",
     "gridViewLabel": "عرض شبكي",
     "countryViewLabel": "عرض حسب الدولة",
     "clear": "مسح",
@@ -485,7 +478,7 @@
       "fabrika": "مصنع",
       "kamu-binasi": "مبنى حكومي",
       "stadyum": "ملعب",
-      "metro": "مترو",
+      "metro": "نظام المترو السككي",
       "tunel": "نفق",
       "veri-merkezi": "مركز بيانات",
       "tersane": "حوض بناء السفن",
@@ -499,6 +492,140 @@
       "depo": "مستودع",
       "showroom": "صالة عرض",
       "karma-kullanim": "استخدام مختلط"
+    },
+    "all": "جميع المشاريع",
+    "categoryTree": [
+      {
+        "id": "infrastructure-transport",
+        "label": "البنية التحتية والنقل",
+        "subcategories": [
+          {
+            "id": "passenger-terminals-airport",
+            "label": "مبائي الركاب — المطار"
+          },
+          {
+            "id": "parking",
+            "label": "مواقف ومرافق الطائرات"
+          },
+          {
+            "id": "public-building-market",
+            "label": "مبنى حكومي — سوق متعدد الأغراض"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "المصانع والمرافق الصناعية",
+        "subcategories": [
+          {
+            "id": "manufacturing",
+            "label": "مصانع الإنتاج"
+          },
+          {
+            "id": "logistics-warehouses",
+            "label": "اللوجستيات والمستودعات"
+          },
+          {
+            "id": "heavy-industry",
+            "label": "مرافق الصناعة الثقيلة"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "المرافق الصحية",
+        "subcategories": [
+          {
+            "id": "city-hospitals",
+            "label": "مستشفيات المدينة"
+          },
+          {
+            "id": "state-private-hospitals",
+            "label": "مستشفيات حكومية وخاصة"
+          },
+          {
+            "id": "healthcare-campuses",
+            "label": "المجمعات الطبية"
+          }
+        ]
+      },
+      {
+        "id": "tourism-hospitality",
+        "label": "السياحة والضيافة",
+        "subcategories": [
+          {
+            "id": "hotels",
+            "label": "الفنادق"
+          },
+          {
+            "id": "shopping-malls",
+            "label": "مراكز التسوق"
+          },
+          {
+            "id": "office-buildings",
+            "label": "مباني المكاتب"
+          }
+        ]
+      },
+      {
+        "id": "residential-urban",
+        "label": "مشاريع الإسكان والتنمية الحضرية",
+        "subcategories": [
+          {
+            "id": "mass-housing",
+            "label": "مشاريع الإسكان الجماعي"
+          },
+          {
+            "id": "urban-renewal",
+            "label": "مناطق التنمية الحضرية"
+          },
+          {
+            "id": "residential-complexes",
+            "label": "مجمعات سكنية"
+          }
+        ]
+      },
+      {
+        "id": "public-government",
+        "label": "المباني الحكومية والمشاريع الرسمية",
+        "subcategories": [
+          {
+            "id": "educational",
+            "label": "المباني التعليمية"
+          }
+        ]
+      },
+      {
+        "id": "energy-infrastructure",
+        "label": "مشاريع الطاقة والبنية التحتية",
+        "subcategories": [
+          {
+            "id": "power-plants",
+            "label": "محطات الطاقة"
+          },
+          {
+            "id": "infrastructure-facilities",
+            "label": "مرافق بنية تحتية"
+          },
+          {
+            "id": "utility-service",
+            "label": "مباني تقنية وخدمة"
+          }
+        ]
+      }
+    ],
+    "allProductFamilies": "جميع عائلات المنتجات",
+    "statsProjectsValue": "300+",
+    "statsCountriesValue": "30",
+    "statsPeriodValue": "2019–2026",
+    "table": {
+      "image": "الصورة",
+      "sector": "القطاع",
+      "buildingType": "نوع المبنى",
+      "projectName": "اسم المشروع",
+      "productsUsed": "المنتجات المستخدمة",
+      "productFamilies": "أسماء عائلة المنتجات",
+      "country": "البلد"
     }
   },
   "sertifikalar": {

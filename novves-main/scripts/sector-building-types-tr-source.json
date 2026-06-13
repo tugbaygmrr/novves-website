@@ -1,0 +1,538 @@
+{
+  "dumanIsiTahliye": [
+    {
+      "buildingType": "Kapalı Otoparklar",
+      "description": "CO tahliyesi + yangın anında duman atımı",
+      "products": "Jet Fan, Duman Fanı, Damper",
+      "productFamilies": "Dragonfly, Hound"
+    },
+    {
+      "buildingType": "Karayolu ve Demiryolu Tünelleri",
+      "description": "Yangın zonlama ve hava yönlendirme",
+      "products": "Jet Fan, Aksiyel Fan",
+      "productFamilies": "Dragonfly, Marlin"
+    },
+    {
+      "buildingType": "Alışveriş Merkezleri (AVM)",
+      "description": "Duman kontrolü ve tahliyesi",
+      "products": "Hücreli Fan, Aksiyel Fan, Damper",
+      "productFamilies": "Turtle, Marlin, Hound"
+    },
+    {
+      "buildingType": "Stadyumlar ve Toplantı Salonları",
+      "description": "Acil durumlarda duman boşaltımı",
+      "products": "Aksiyel Fan, Jet Fan",
+      "productFamilies": "Marlin, Dragonfly"
+    },
+    {
+      "buildingType": "Endüstriyel Üretim Tesisleri",
+      "description": "Proses kaynaklı sıcak gaz tahliyesi",
+      "products": "Salyangoz Fan, Çatı Fan, Egzoz Fan",
+      "productFamilies": "Nautilus, Heron, Owl"
+    },
+    {
+      "buildingType": "Hastaneler ve Sağlık Tesisleri",
+      "description": "Hasta alanlarında duman zonlaması",
+      "products": "Hücreli Fan, Damper",
+      "productFamilies": "Turtle, Hound"
+    },
+    {
+      "buildingType": "Havalimanları",
+      "description": "Alt katman duman tahliyesi",
+      "products": "Jet Fan, Aksiyel Fan, Basınçlandırma Fanı",
+      "productFamilies": "Dragonfly, Marlin, Turtle"
+    },
+    {
+      "buildingType": "Depo ve Lojistik Merkezleri",
+      "description": "Yüksek hacimlerde duman kontrolü",
+      "products": "Kanal Fan, Jet Fan, Damper",
+      "productFamilies": "Koi, Dragonfly, Hound"
+    },
+    {
+      "buildingType": "Enerji Santralleri & Jeneratör Odaları",
+      "description": "Elektriksel yangınlara karşı egzoz",
+      "products": "Ex-proof Fan, Salyangoz Fan",
+      "productFamilies": "Bear, Nautilus"
+    },
+    {
+      "buildingType": "Otel ve Rezidanslar (Yüksek Yapılar)",
+      "description": "Merdiven basınçlandırma, duman tahliyesi",
+      "products": "Hücreli Fan, Basınçlandırma Fan, Damper",
+      "productFamilies": "Turtle, Dragonfly, Hound"
+    }
+  ],
+  "konforIklimlendirme": [
+    {
+      "buildingType": "Ofis Binaları",
+      "description": "Merkezi iklimlendirme, taze hava sirkülasyonu",
+      "products": "Klima Santrali, Kanal Fanı, Menfez",
+      "productFamilies": "Tiger, Koi, Alpaca"
+    },
+    {
+      "buildingType": "Oteller ve Tatil Köyleri",
+      "description": "Konforlu hava dağıtımı, ısı geri kazanımı, sessiz çalışma",
+      "products": "AHU, Hücreli Fan, Filtre",
+      "productFamilies": "Tiger, Turtle, Scallop"
+    },
+    {
+      "buildingType": "Okullar & Üniversiteler",
+      "description": "Sınıflarda taze hava, enerji tasarrufu",
+      "products": "Isı Geri Kazanım, Kanal Fanı, Menfez",
+      "productFamilies": "Caracal, Koi, Alpaca"
+    },
+    {
+      "buildingType": "Hastaneler (konfor bölümleri)",
+      "description": "Hasta odaları, koridorlar için sessiz ve dengeli hava akışı",
+      "products": "AHU, EC Fan, Filtre",
+      "productFamilies": "Tiger, Hummingbird, Scallop"
+    },
+    {
+      "buildingType": "AVM ve Mağazalar",
+      "description": "Konfor iklimlendirme, homojen hava dağıtımı",
+      "products": "AHU, Hücreli Fan, Anemostad",
+      "productFamilies": "Tiger, Turtle, Alpaca"
+    },
+    {
+      "buildingType": "Konutlar & Rezidanslar",
+      "description": "Kompakt çözümler, sessiz ve enerji verimli hava sistemleri",
+      "products": "Kanal Fan, Isı Geri Kazanım, EC Fan",
+      "productFamilies": "Koi, Caracal, Hummingbird"
+    },
+    {
+      "buildingType": "Bankalar & Kamu Binaları",
+      "description": "Merkezî klima sistemleri ve taze hava ihtiyacı",
+      "products": "Klima Santrali, Menfez, Damper",
+      "productFamilies": "Tiger, Alpaca, Hound"
+    },
+    {
+      "buildingType": "Havalimanları & Terminaller",
+      "description": "Yüksek hacimli iklimlendirme sistemleri",
+      "products": "Büyük kapasiteli AHU, Hücreli Fanlar",
+      "productFamilies": "Tiger, Turtle"
+    },
+    {
+      "buildingType": "Restoran ve Kafeler",
+      "description": "Koku kontrolü, sıcaklık dengesini sağlama",
+      "products": "Hücreli Fan, Mutfak Egzoz Fanı, Filtre",
+      "productFamilies": "Turtle, Butterfly, Scallop"
+    },
+    {
+      "buildingType": "Spor Salonları & Fitness Merkezleri",
+      "description": "Taze hava, yüksek debili sirkülasyon",
+      "products": "Klima Santrali, Kanal Fan, Menfez",
+      "productFamilies": "Tiger, Koi, Alpaca"
+    }
+  ],
+  "hijyenikFiltrasyon": [
+    {
+      "buildingType": "Ameliyathaneler & Yoğun Bakım Üniteleri",
+      "description": "Mikrobiyolojik filtreleme, basınç kontrolü",
+      "products": "Hijyenik AHU, HEPA Filtre, UV-C Fan",
+      "productFamilies": "Tiger, Scallop, Turtle"
+    },
+    {
+      "buildingType": "Temiz Odalar (Cleanroom)",
+      "description": "Partikül kontrolü, sınıf 100-100.000 arası hijyen düzeyi",
+      "products": "HEPA Sistemli Fan, Basınçlandırmalı AHU",
+      "productFamilies": "Turtle, Scallop, Caracal"
+    },
+    {
+      "buildingType": "İlaç Üretim Tesisleri",
+      "description": "GMP uyumlu, filtreleme ve basınç kontrolü",
+      "products": "Hijyenik Klima Santrali, Filtreli Hücreli Fan",
+      "productFamilies": "Tiger, Scallop, Turtle"
+    },
+    {
+      "buildingType": "Gıda Üretim Alanları",
+      "description": "Hijyenik hava sirkülasyonu, koku ve partikül kontrolü",
+      "products": "Hijyenik AHU, EC Fan, Filtre, Paslanmaz Gövde",
+      "productFamilies": "Tiger, Hummingbird, Scallop"
+    },
+    {
+      "buildingType": "Laboratuvarlar",
+      "description": "Gaz ve partikül kontrolü, negatif/pozitif basınç zonlaması",
+      "products": "HEPA Filtreli Hücreli Fan, Damper, Filtre",
+      "productFamilies": "Turtle, Hound, Scallop"
+    },
+    {
+      "buildingType": "Hastane Servis Katları",
+      "description": "Temiz hava beslemesi, koku ve enfeksiyon riski kontrolü",
+      "products": "Hijyenik AHU, EC Fan, Kanal Fan, Filtre",
+      "productFamilies": "Tiger, Hummingbird, Koi, Scallop"
+    },
+    {
+      "buildingType": "Yoğun Mutfaklar (Endüstriyel ve Medikal)",
+      "description": "Yağ buharı + hava kalitesi kontrolü, yıkanabilir filtre ihtiyacı",
+      "products": "Mutfak Fanı, Hücreli Fan, Filtre",
+      "productFamilies": "Butterfly, Turtle, Scallop"
+    },
+    {
+      "buildingType": "Hayvancılık ve Veteriner Klinik Alanları",
+      "description": "Mikroorganizma ve kötü koku kontrolü",
+      "products": "Filtreli Fan, EC Fan, Isı Geri Kazanım",
+      "productFamilies": "Scallop, Hummingbird, Caracal"
+    }
+  ],
+  "endustriyelHavaYonetimi": [
+    {
+      "buildingType": "Ağır Sanayi Tesisleri",
+      "description": "Yüksek sıcaklık, toz, partikül ve kimyasal gaz tahliyesi",
+      "products": "Endüstriyel Salyangoz Fan, Egzoz Fan, Damper",
+      "productFamilies": "Nautilus, Owl, Hound"
+    },
+    {
+      "buildingType": "Kaynak, Boya ve Tozlu Üretim Hatları",
+      "description": "Lokal emiş, egzoz, negatif basınçlı zonlama",
+      "products": "Egzoz Fan, Toz Toplama Fanı",
+      "productFamilies": "Owl, Elephant"
+    },
+    {
+      "buildingType": "Dökümhane ve Metalurji İşletmeleri",
+      "description": "Yüksek sıcaklık ve duman tahliyesi",
+      "products": "Yüksek Isıya Dayanıklı Aksiyel Fan, Çatı Fanı",
+      "productFamilies": "Marlin, Heron"
+    },
+    {
+      "buildingType": "Kağıt, Ambalaj ve Tekstil Üretimi",
+      "description": "Elyaf, toz ve nem tahliyesi, enerji geri kazanım",
+      "products": "EC Fan, Isı Geri Kazanım, Hücreli Fan",
+      "productFamilies": "Hummingbird, Caracal, Turtle"
+    },
+    {
+      "buildingType": "Enerji Santralleri",
+      "description": "Jeneratör odası havalandırması, atık gaz tahliyesi",
+      "products": "Salyangoz Fan, Egzoz Fan, Ex-proof Fan",
+      "productFamilies": "Nautilus, Owl, Bear"
+    },
+    {
+      "buildingType": "Otomotiv & Makine Montaj Hatları",
+      "description": "Isı ve duman tahliyesi, enerji geri kazanımı",
+      "products": "Hücreli Fan, Kanal Fan, Salyangoz Fan",
+      "productFamilies": "Turtle, Koi, Nautilus"
+    },
+    {
+      "buildingType": "Geri Dönüşüm ve Atık İşleme Tesisleri",
+      "description": "Koku, duman ve partikül tahliyesi",
+      "products": "Egzoz Fan, Kanal Fan, Filtre",
+      "productFamilies": "Owl, Koi, Scallop"
+    },
+    {
+      "buildingType": "Lojistik & Depolama Alanları",
+      "description": "Sıcak hava tahliyesi, hava sirkülasyonu",
+      "products": "Aksiyel Fan, Çatı Fan, Hücreli Fan",
+      "productFamilies": "Marlin, Heron, Turtle"
+    },
+    {
+      "buildingType": "Ahşap ve Mobilya Atölyeleri",
+      "description": "Talaş, toz ve solvent tahliyesi",
+      "products": "Toz Toplama Fanı, Damper, Filtre",
+      "productFamilies": "Elephant, Hound, Scallop"
+    }
+  ],
+  "hayvancilikTesisleri": [
+    {
+      "buildingType": "Tavuk Çiftlikleri",
+      "description": "Yoğun nem, sıcaklık ve gaz atımı için yüksek debili egzoz sistemi",
+      "products": "Tavukçu Fanı, Egzoz Fanı",
+      "productFamilies": "Chicken, Owl"
+    },
+    {
+      "buildingType": "Yumurta Üretim Üniteleri",
+      "description": "Isı ve gaz birikimini önleyici lineer hava sirkülasyonu",
+      "products": "Kanal Fanı, Tavukçu Fanı",
+      "productFamilies": "Koi, Chicken"
+    },
+    {
+      "buildingType": "Kuluçka Tesisleri",
+      "description": "Stabil sıcaklık ve hava hareketi için hassas fan kontrolü",
+      "products": "EC Fan, Tavuk Fanı",
+      "productFamilies": "Hummingbird, Chicken"
+    },
+    {
+      "buildingType": "Büyükbaş & Ahır Havalandırması",
+      "description": "Hava sirkülasyonu ile nem, amonyak ve CO₂ kontrolü",
+      "products": "Aksiyel Fan, Egzoz Fan",
+      "productFamilies": "Marlin, Owl"
+    }
+  ],
+  "trafoEnerjiOdalari": [
+    {
+      "buildingType": "Trafo Merkezleri (OG/AG)",
+      "description": "Isınan hava ve gazların zorunlu tahliyesi, 7/24 güvenilirlik",
+      "products": "Aksiyel Fan, Çatı Fanı",
+      "productFamilies": "Marlin, Heron"
+    },
+    {
+      "buildingType": "Jeneratör Odaları",
+      "description": "Motorların sıcaklık atığına karşı sürekli egzoz",
+      "products": "Salyangoz Fan, Egzoz Fanı",
+      "productFamilies": "Nautilus, Owl"
+    },
+    {
+      "buildingType": "Enerji Nakil Alt İstasyonları",
+      "description": "Kontrolsüz ısınmanın önlenmesi için kompakt fan çözümleri",
+      "products": "Kanal Fan, Duvar Fanı",
+      "productFamilies": "Koi, Owl"
+    },
+    {
+      "buildingType": "Data Center Enerji Odaları",
+      "description": "Stabil sıcaklıkta çalışması gereken trafo/UPS odaları",
+      "products": "EC Fan, Hücreli Fan",
+      "productFamilies": "Hummingbird, Turtle"
+    }
+  ],
+  "seraTarimsal": [
+    {
+      "buildingType": "Cam veya Polikarbon Sera",
+      "description": "Sıcaklık, nem ve CO₂ seviyesi kontrolü; hava sirkülasyonu",
+      "products": "Aksiyel Fan, Tavuk Fanı, Kanal Fanı",
+      "productFamilies": "Marlin, Chicken, Koi"
+    },
+    {
+      "buildingType": "Plastik Tünel Sera",
+      "description": "Doğal havalandırmaya yardımcı düşük basınçlı hava transferi",
+      "products": "Tavukçu Fan, Duvar Tipi Fan",
+      "productFamilies": "Chicken, Owl"
+    },
+    {
+      "buildingType": "Akıllı Sera (IoT Kontrollü)",
+      "description": "Nem, sıcaklık ve ışık sensörlerine bağlı otomatik fan kontrolü",
+      "products": "EC Fan, Otomasyon Panosu",
+      "productFamilies": "Hummingbird, REMORA"
+    },
+    {
+      "buildingType": "Tropikal/Soğuk İklim Seraları",
+      "description": "İklime göre çift yönlü hava hareketi & otomatik yönlendirme",
+      "products": "Çift yönlü Aksiyel Fan, Damper",
+      "productFamilies": "Marlin, Hound"
+    },
+    {
+      "buildingType": "Fidancılık & Çim Üretim Seraları",
+      "description": "Isı dağılımı ve nem dengeleme amaçlı hafif fan sistemleri",
+      "products": "Kanal Tipi Fan, EC Fan",
+      "productFamilies": "Koi, Hummingbird"
+    }
+  ],
+  "atexPatlamaKoruma": [
+    {
+      "buildingType": "Kimya & Petrokimya Tesisleri",
+      "description": "Patlayıcı gaz ve buhar ortamlarında güvenli havalandırma",
+      "products": "Ex-proof Aksiyel ve Salyangoz Fanlar",
+      "productFamilies": "Bear, Nautilus"
+    },
+    {
+      "buildingType": "Akaryakıt Depolama & Dolum Alanları",
+      "description": "Yanıcı gazların ortamdan uzaklaştırılması",
+      "products": "Ex-proof Duvar Fanı, Damper",
+      "productFamilies": "Bear, Owl, Hound"
+    },
+    {
+      "buildingType": "Boyahaneler & Solvent Kullanılan Üretimler",
+      "description": "Statik elektrik ve solvent gazı birikimine karşı güvenli egzoz",
+      "products": "Ex-proof Kanal Fan, Toz Toplama",
+      "productFamilies": "Bear, Koi, Elephant"
+    },
+    {
+      "buildingType": "Un, Şeker, Kimyasal Toz Tesisleri",
+      "description": "Toz patlamasına karşı anti-statik fan ve kapalı sistemler",
+      "products": "Ex-proof Aksiyel Fan, Siklonlu Sistem",
+      "productFamilies": "Bear, Marlin, Elephant"
+    },
+    {
+      "buildingType": "İlaç ve Medikal Kimya Üretim Alanları",
+      "description": "Alevlenebilir bileşenlere karşı filtreli & basınç kontrollü fan sistemleri",
+      "products": "Hijyenik Ex-proof Fan, Filtreli Egzoz Fan",
+      "productFamilies": "Bear, Scallop, Turtle"
+    },
+    {
+      "buildingType": "Gaz Dolum & Analiz Laboratuvarları",
+      "description": "Hassas gaz ortamı için güvenli ve sessiz egzoz",
+      "products": "Kompakt Ex-proof Fan, Damper",
+      "productFamilies": "Bear, Hummingbird, Hound"
+    }
+  ],
+  "akilliOtomasyon": [
+    {
+      "buildingType": "Akıllı Binalar (AVM, Ofis, Hastane)",
+      "description": "BMS entegrasyonu, sıcaklık/nem/gaz bazlı otomatik kontrol",
+      "products": "PLC Panel, Sensör, Sinyal Kablolama, Otomatik Damper",
+      "productFamilies": "REMORA, Hound"
+    },
+    {
+      "buildingType": "Endüstriyel Tesisler",
+      "description": "Proses bazlı fan kontrolü, uzaktan izleme, senaryo yönetimi",
+      "products": "Otomasyon Panosu, Röle, Otomatik Fan Modülü",
+      "productFamilies": "REMORA, Lion, Hound"
+    },
+    {
+      "buildingType": "Tünel ve Otopark Projeleri",
+      "description": "Jet fan & CO sensörleri ile entegre sistemler",
+      "products": "Sensörlü Jet Fan, CO Dedektör, Otomasyon Pano",
+      "productFamilies": "Dragonfly, REMORA, Hound"
+    },
+    {
+      "buildingType": "Konut ve Rezidanslar",
+      "description": "Kompakt kontrol sistemleri, kullanıcı dostu arayüzlerle destekli HVAC çözümleri",
+      "products": "Mini PLC, Akıllı Sensör, Kompakt Fan",
+      "productFamilies": "Hummingbird, REMORA"
+    },
+    {
+      "buildingType": "Hastaneler & Temiz Odalar",
+      "description": "Basınç farkı, partikül seviyesi ve filtre kirliliği sensörleri",
+      "products": "HEPA Fan, F9 Sensör, Otomasyonlu Damper",
+      "productFamilies": "Scallop, Hound, FlaktEdge"
+    },
+    {
+      "buildingType": "Veri Merkezleri",
+      "description": "Sıcaklık bazlı havalandırma yönetimi, yedekli kontrol",
+      "products": "Dual modül, sıcaklık-sensör kontrollü EC fanlar",
+      "productFamilies": "Hummingbird, REMORA"
+    }
+  ],
+  "konutHavalandirma": [
+    {
+      "buildingType": "Bireysel Konutlar (Daire & Villa)",
+      "description": "Sessiz, az yer kaplayan, enerji verimli çözümler",
+      "products": "Kanal Fan, Isı Geri Kazanım, Kompakt AHU",
+      "productFamilies": "Koi, Caracal, Tiger"
+    },
+    {
+      "buildingType": "Rezidans ve Lüks Konut Projeleri",
+      "description": "Estetik görünümlü, sessiz ve kontrollü sistemler",
+      "products": "EC Fan, Hücreli Fan, Menfez",
+      "productFamilies": "Hummingbird, Turtle, Alpaca"
+    },
+    {
+      "buildingType": "Müstakil Evler",
+      "description": "Taze hava beslemesi, banyo & mutfak egzostu",
+      "products": "Banyo Fanı, Mutfak Fanı, Kanal Fan",
+      "productFamilies": "Seahorse, Butterfly, Koi"
+    },
+    {
+      "buildingType": "Tiny House & Prefabrik Yapılar",
+      "description": "Kompakt boyutlu, kolay montajlanabilir ürünler",
+      "products": "EC Fan, Kompakt Kanal Fan",
+      "productFamilies": "Hummingbird, Koi"
+    },
+    {
+      "buildingType": "Site Ortak Alanları",
+      "description": "Egzoz fanları ve merkezi konfor çözümü",
+      "products": "Duvar Fanı, Hücreli Fan",
+      "productFamilies": "Owl, Turtle"
+    }
+  ],
+  "marinOffshore": [
+    {
+      "buildingType": "Gemi Makine Daireleri",
+      "description": "Yüksek sıcaklık, egzoz gazı ve titreşim koşullarında sürekli egzoz ve taze hava",
+      "products": "Aksiyel Fan, Radyal Fan, ATEX Fan",
+      "productFamilies": "Marlin, Nautilus, Bear"
+    },
+    {
+      "buildingType": "Jeneratör ve Pompa Odaları",
+      "description": "Yanıcı gaz riski ve ısı tahliyesi; sızdırmaz zonlama ve otomasyon entegrasyonu",
+      "products": "Aksiyel Fan, Damper, Otomasyon Paneli",
+      "productFamilies": "Marlin, Hound, Hawk"
+    },
+    {
+      "buildingType": "Yolcu Gemileri ve Feribotlar",
+      "description": "Yolcu mekanları ve mürettebat alanlarında konfor havalandırması",
+      "products": "Aksiyel Fan, Kanal Fanı",
+      "productFamilies": "Marlin, Koi"
+    },
+    {
+      "buildingType": "Kargo Gemileri",
+      "description": "Kargo ambarı ve makine dairesi havalandırması",
+      "products": "Endüstriyel Fan, ATEX Fan",
+      "productFamilies": "Nautilus, Bear"
+    },
+    {
+      "buildingType": "Offshore Platformları",
+      "description": "Açık deniz platformu havalandırma ve exproof egzoz",
+      "products": "ATEX Fan, Aksiyel Fan, Yangın Damperi",
+      "productFamilies": "Bear, Marlin, Hound"
+    },
+    {
+      "buildingType": "FPSO Üniteleri ve Tersane Projeleri",
+      "description": "Sınıf onaylı marin fan, duman tahliye ve otomasyon entegrasyonu",
+      "products": "Marin Fan, Duman Fanı, Damper, Otomasyon Paneli",
+      "productFamilies": "Marlin, Dragonfly, Hound, Hawk"
+    },
+    {
+      "buildingType": "Yatlar ve Mega Yatlar",
+      "description": "Konfor havalandırma ve makine dairesi egzozu",
+      "products": "Kanal Fanı, EC Fan",
+      "productFamilies": "Koi, Hummingbird"
+    }
+  ],
+  "projeBazliOzelImalat": [
+    {
+      "buildingType": "Sektör / Proje Tipi",
+      "description": "Açıklama",
+      "products": "Proje Bazlı Çözüm Tipleri",
+      "productFamilies": "Uygun NOVVES Ürünleri"
+    },
+    {
+      "buildingType": "Mimari İkame Projeleri",
+      "description": "Mevcut bina altyapısına göre özel ölçü/bağlantı gereksinimi",
+      "products": "Ölçüye özel hücre/kasa tasarımı",
+      "productFamilies": "Hücreli Fan, Aksiyel Fan"
+    },
+    {
+      "buildingType": "Akustik Kısıtlı Projeler (Oteller, Stüdyo vb.)",
+      "description": "Gürültü sınırları altında yüksek performans gerektiren uygulamalar",
+      "products": "Düşük sesli fan tasarımı, susturucu entegresi",
+      "productFamilies": "EC Fan, Susturuculu Hücreli Fan"
+    },
+    {
+      "buildingType": "Yüksek Bina ve Zor Geçişli Alanlar",
+      "description": "Şaft içinde dar alana sığabilecek, hafif yapıdaki ürünler",
+      "products": "Kompakt fan, modüler montajlı ürün tasarımı",
+      "productFamilies": "Kompakt AHU, EC Fan"
+    },
+    {
+      "buildingType": "Prestij Konut & Lüks Mimari Projeleri",
+      "description": "Estetik görünüm, yüzey kaplama ve minimum ses hedefi",
+      "products": "Boyalı dış yüzey, gizli montaj, görünmeyen hava çıkışı",
+      "productFamilies": "Kanal Fan, Hücreli Fan, Menfez"
+    },
+    {
+      "buildingType": "Gıda & İlaç Mimari Özel Alanlar",
+      "description": "Antibakteriyel malzeme, kolay temizlenebilir yüzey ve özel filtre yapısı",
+      "products": "Paslanmaz gövde, UV filtreli iç tasarım",
+      "productFamilies": "Hijyenik Hücreli Fan, UV-C Sistemli AHU"
+    }
+  ],
+  "cfdDanismanlik": [
+    {
+      "buildingType": "Kapalı Otoparklar",
+      "description": "Jet fan yerleşimi, yangın senaryosu, CO yayılım simülasyonu",
+      "products": "CFD Analizi, Jet Fan Konumlandırma, Teknik Dosya",
+      "productFamilies": "Dragonfly, Hound, REMORA"
+    },
+    {
+      "buildingType": "Tüneller",
+      "description": "Tünel havalandırması senaryosu, basınç ve akış analizi",
+      "products": "Akış analizleri, jet fan yön optimizasyonu",
+      "productFamilies": "Dragonfly, Marlin, REMORA"
+    },
+    {
+      "buildingType": "Havalimanı ve Metro İstasyonları",
+      "description": "Yangın zonlama, duman katmanı simülasyonu",
+      "products": "Proje dosyası hazırlığı, hesap raporu",
+      "productFamilies": "Dragonfly, Turtle"
+    },
+    {
+      "buildingType": "AVM, Stadyum gibi büyük hacimli yapılar",
+      "description": "Duman tahliyesi senaryoları ve yolcu tahliyesine uygun tasarımlar",
+      "products": "Yangın mühendisliği desteği, senaryo danışmanlığı",
+      "productFamilies": "Marlin, Tiger, Hound"
+    },
+    {
+      "buildingType": "Mimari & Proje Ofisleri",
+      "description": "Jet fan yazılım destekli keşif ve hesaplama",
+      "products": "CAD destekli yerleşim, teknik şablon hazırlama",
+      "productFamilies": "Tüm NOVVES hava hareketi ürünleri"
+    }
+  ]
+}
