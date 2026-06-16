@@ -128,6 +128,11 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: "/:locale/urunler/chillerler",
+        destination: "/:locale/urunler/dis-uniteler",
+        permanent: true,
+      },
+      {
         source: "/:locale/legal/product-safety",
         destination: "/:locale/product-safety",
         permanent: false,

@@ -4,7 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { LocationCard } from "@/components/iletisim/location-card";
+import { QuoteBasketFormSection } from "@/components/quote-basket/quote-basket-form-section";
+import { useQuoteBasket } from "@/components/quote-basket/quote-basket-provider";
 import type { IletisimPageCopy } from "@/lib/iletisim/copy";
+import { buildContactMessage } from "@/lib/quote-basket/format-message";
+import { getQuoteBasketUi } from "@/lib/quote-basket/ui";
 import {
   HIZMETLER_MOBILE_CONTENT_PADDING_BOTTOM,
   HIZMETLER_MOBILE_DRAWER,
@@ -72,14 +76,32 @@ const CLOSE_LABEL: Record<string, string> = {
   ur: "بند کریں", lt: "Uždaryti", pl: "Zamknij",
 };
 
+const FORM_STATUS: Record<string, { sending: string; errorGeneric: string; errorEmpty: string }> = {
+  tr: {
+    sending: "Gönderiliyor...",
+    errorGeneric: "Form gönderilemedi. Lütfen tekrar deneyin.",
+    errorEmpty: "Lütfen mesajınızı yazın veya teklif sepetine ürün ekleyin.",
+  },
+  en: {
+    sending: "Sending...",
+    errorGeneric: "Could not submit the form. Please try again.",
+    errorEmpty: "Please write a message or add products to your quote basket.",
+  },
+};
+
 export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
   const base = `/${locale}`;
   const closeLabel = CLOSE_LABEL[locale] ?? CLOSE_LABEL.en;
+  const formStatus = FORM_STATUS[locale] ?? FORM_STATUS.en;
+  const { items, clearItems } = useQuoteBasket();
+  const hasBasketItems = items.length > 0;
 
   const [contactOpen, setContactOpen] = useState(true);
   const [partnersOpen, setPartnersOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -96,19 +118,49 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setSubmitError(null);
+
+    const finalMessage = buildContactMessage(
+      formData.message,
+      items,
+      getQuoteBasketUi(locale).messageHeader,
+    );
+    if (!finalMessage.trim()) {
+      setSubmitError(formStatus.errorEmpty);
+      return;
+    }
+
+    setSubmitting(true);
     try {
       const res = await fetch("/api/contact-submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, kvkkConsent: true, website: "" }),
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          company: formData.company.trim() || undefined,
+          email: formData.email.trim(),
+          phone: formData.phone.trim() || undefined,
+          message: finalMessage,
+          kvkkConsent: true,
+          website: "",
+        }),
       });
-      if (res.ok) {
-        setSubmitted(true);
-        setFormData({ name: "", company: "", email: "", phone: "", message: "" });
-        setTimeout(() => setSubmitted(false), 5000);
+
+      const payload = (await res.json().catch(() => null)) as { error?: string } | null;
+
+      if (!res.ok) {
+        setSubmitError(payload?.error ?? formStatus.errorGeneric);
+        return;
       }
+
+      setSubmitted(true);
+      setFormData({ name: "", company: "", email: "", phone: "", message: "" });
+      clearItems();
+      setTimeout(() => setSubmitted(false), 5000);
     } catch {
-      // sessiz; kullanıcı tekrar deneyebilir
+      setSubmitError(formStatus.errorGeneric);
+    } finally {
+      setSubmitting(false);
     }
   }
 
@@ -333,6 +385,15 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
                   </div>
                 ) : null}
 
+                {submitError ? (
+                  <div className="mb-8 flex items-start gap-3 rounded-xl bg-red-50 p-4 text-red-800 ring-1 ring-red-100">
+                    <span className="material-symbols-outlined shrink-0 text-red-600">error</span>
+                    <p className="text-sm font-medium">{submitError}</p>
+                  </div>
+                ) : null}
+
+                <QuoteBasketFormSection locale={locale} />
+
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-5 sm:gap-8 md:grid-cols-2">
                   <div className="space-y-2">
                     <label
@@ -415,7 +476,7 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
                       id="iletisim-message"
                       name="message"
                       rows={4}
-                      required
+                      required={!hasBasketItems}
                       value={formData.message}
                       onChange={handleChange}
                       placeholder={copy.placeholderMessage}
@@ -428,10 +489,11 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
                   <div className="md:col-span-2 md:flex md:justify-end">
                     <button
                       type="submit"
-                      className="flex w-full items-center justify-center gap-3 rounded-2xl bg-hz-secondary px-8 py-3.5 text-base font-bold text-white shadow-lg shadow-hz-secondary/20 transition-all hover:bg-hz-secondary/90 sm:px-12 sm:py-4 sm:text-lg md:w-auto"
+                      disabled={submitting}
+                      className="flex w-full items-center justify-center gap-3 rounded-2xl bg-hz-secondary px-8 py-3.5 text-base font-bold text-white shadow-lg shadow-hz-secondary/20 transition-all hover:bg-hz-secondary/90 disabled:cursor-not-allowed disabled:opacity-70 sm:px-12 sm:py-4 sm:text-lg md:w-auto"
                     >
-                      {copy.submit}
-                      <span className="material-symbols-outlined">send</span>
+                      {submitting ? formStatus.sending : copy.submit}
+                      <span className="material-symbols-outlined">{submitting ? "hourglass_top" : "send"}</span>
                     </button>
                   </div>
                 </form>

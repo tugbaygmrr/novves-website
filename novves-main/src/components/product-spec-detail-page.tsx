@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProductStandardMedia } from "@/components/product-standard-media";
+import { ProductModelLinesSection } from "@/components/product-model-lines-section";
+import type { ProductModel } from "@/components/product-detail-page";
 import { getProductCatalogUi } from "@/lib/product-catalog-ui";
 import type { Locale } from "@/i18n/config";
 
@@ -17,10 +19,13 @@ type ProductSpecDetailDictionary = {
     home: string;
     inspect: string;
     lookingForProduct: string;
+    model: string;
+    models: string;
     productFamilies: string;
     productFamily: string;
     productRange: string;
     products: string;
+    readLess: string;
     teamReady: string;
     technicalSupport: string;
     technicalSupportRequest: string;
@@ -32,6 +37,7 @@ export type ProductSpecDetailPageProps = {
   subtitle: string;
   intro: string;
   specs: ProductSpec[];
+  productLines?: ProductModel[];
   heroImage: string;
   galleryImages: string[];
   locale: string;
@@ -69,6 +75,7 @@ export function ProductSpecDetailPage({
   subtitle,
   intro,
   specs,
+  productLines = [],
   heroImage,
   galleryImages,
   locale,
@@ -76,6 +83,7 @@ export function ProductSpecDetailPage({
 }: ProductSpecDetailPageProps) {
   const introParts = introParagraphs(intro);
   const specCount = specs.length;
+  const lineCount = productLines.length;
   const solutionsHref = `/${locale}/cozumler/konfor-iklimlendirme-sistemleri`;
   const categoryHref = `/${locale}/urunler/iklimlendirme`;
 
@@ -135,9 +143,9 @@ export function ProductSpecDetailPage({
 
               <div className="mt-6 grid max-w-xl grid-cols-1 gap-2.5 min-[480px]:grid-cols-2 sm:mt-8 sm:grid-cols-3 sm:gap-3">
                 <div className="rounded-2xl border border-white/10 bg-sand-100/10 p-3.5 shadow-[0_22px_60px_-42px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:p-4">
-                  <p className="font-eurostile text-xl font-bold leading-none text-white sm:text-2xl">{specCount}</p>
+                  <p className="font-eurostile text-xl font-bold leading-none text-white sm:text-2xl">{lineCount || specCount}</p>
                   <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-white/45 sm:text-[10px] sm:tracking-[0.18em]">
-                    {specCountLabel(locale, specCount)}
+                    {lineCount > 0 ? (lineCount === 1 ? dict.shared.model : dict.shared.models) : specCountLabel(locale, specCount)}
                   </p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-sand-100/10 p-3.5 shadow-[0_22px_60px_-42px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:p-4">
@@ -228,6 +236,25 @@ export function ProductSpecDetailPage({
             </div>
           </div>
         </section>
+      ) : null}
+
+      {productLines.length > 0 ? (
+        <ProductModelLinesSection
+          id="product-lines"
+          productLines={productLines}
+          familyTitle={title}
+          locale={locale}
+          labels={{
+            productFamilies: dict.shared.productFamilies,
+            productRange: dict.shared.productRange,
+            productFamily: dict.shared.productFamily,
+            inspect: dict.shared.inspect,
+            detailedView: dict.shared.detailedView,
+            readLess: dict.shared.readLess,
+            technicalSupportRequest: dict.shared.technicalSupportRequest,
+          }}
+          contactHref={`/${locale}/iletisim`}
+        />
       ) : null}
 
       <section id="product-specs" className="relative scroll-mt-24 overflow-hidden bg-sand-200 py-9 sm:scroll-mt-28 sm:py-12 lg:py-14">

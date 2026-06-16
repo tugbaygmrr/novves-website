@@ -58,990 +58,856 @@
     }
   },
   "havaHareketi": {
-    "title": "Ruch Powietrzny",
-    "titleFirst": "Powietrze",
-    "titleHighlight": "Ruch",
-    "heroDesc": "Dla Twoich potrzeb w zakresie wentylacji przemysłowej i komfortowej",
-    "heroDescSuffix": "rodzina produktów.",
+    "title": "Hava Hareketi",
+    "titleFirst": "Hava",
+    "titleHighlight": "Hareketi",
+    "heroDesc": "Endüstriyel ve konfor havalandırma ihtiyaçlarınız için",
+    "heroDescSuffix": "ürün ailesi.",
     "stats": [
       {
-        "value": "1,200+",
-        "label": "Różnorodność produktów"
+        "value": "1.200+",
+        "label": "Ürün Çeşidi"
       },
       {
         "value": "12",
-        "label": "Rodziny produktów"
+        "label": "Ürün Ailesi"
       },
       {
         "value": "EN 12101-3",
-        "label": "Atestowany"
+        "label": "Sertifikalı"
       },
       {
         "value": "F300/2H",
-        "label": "Odporność na ogień"
+        "label": "Yangın Dayanımı"
       }
     ],
     "products": [
       {
         "name": "DRAGONFLY",
-        "type": "Wentylator odprowadzający dym i ciepło",
+        "type": "Duman ve Isı Tahliye Fanı",
         "image": "/images/products/dragonfly-c.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Seria Dragonfly obejmuje wentylatory oddymiające pracujące w wysokich temperaturach, opracowane do bezpiecznego odprowadzania dymu, ciepła oraz gazów toksycznych i duszących podczas pożaru. Dzięki wersjom osiowym, promieniowym, strumieniowym, dachowym, ściennym, osłoniętym oraz odśrodkowym dostosowuje się do szerokiego zakresu wymagań projektowych."
+        "description": "Yusufçuk gibi çevik ve kararlı biçimde hareket eden bu fanlar, yangın anında oluşan dumanı ve ısıyı hızla tahliye ederek ortamın güvenliğini sağlar. Sessizliği ve ani tepki kapasitesiyle tam zamanında devreye girer."
       },
       {
         "name": "MARLIN",
-        "type": "Wentylator osiowy",
+        "type": "Aksiyal Fanlar",
         "image": "/images/products/marlin.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Marlin obejmuje wentylatory osiowe opracowane do zastosowań nawiewnych, wywiewnych, wentylacji kanałowej oraz wytwarzania nadciśnienia. Dzięki kompaktowej obudowie, niskiemu poziomowi hałasu, wysokiej wydajności przepływu i elastycznym opcjom montażu zapewnia niezawodną i ekonomiczną pracę w wentylacji komfortowej, wentylacji przemysłowej, systemach szybowych oraz wytwarzaniu nadciśnienia w budynkach."
+        "description": "Marlin gibi kararlı, güçlü ve yönlü çalışan bu fanlar, doğrudan hava akışı sağlamak için tasarlanmıştır. Minimum dirençle maksimum debi sunar; geniş alanlarda yüksek verimli havalandırma sağlar."
       },
       {
         "name": "BEAR",
-        "type": "Wentylator ATEX",
+        "type": "Ex-proof Fanlar",
         "image": "/images/products/bear-reb.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Bear obejmuje wentylatory w wykonaniu Ex-proof, opracowane do bezpiecznej wentylacji, wywiewu i odciągu powietrza procesowego w strefach przemysłowych zagrożonych atmosferą wybuchową. Dzięki silnikom Ex-proof, rozwiązaniom konstrukcyjnym ograniczającym ryzyko iskrzenia, wytrzymałym obudowom oraz opcjom osiowym/promieniowym sprawdza się w zakładach chemicznych, lakierniach, oczyszczalniach, procesach z użyciem rozpuszczalników oraz w przemysłowych zastosowaniach wywiewnych."
+        "description": "Ayı gibi güçlü, dayanıklı ve her koşulda güvenle çalışan bu fanlar, tehlikeli ve patlayıcı ortamlarda yüksek koruma sağlar. Güvenliğin ön planda olduğu alanlarda, sarsılmaz bir güven sunar."
       },
       {
         "name": "NAUTILUS",
-        "type": "Przemysłowy wentylator odśrodkowy",
+        "type": "Endüstriyel Salyangoz Fanlar",
         "image": "/images/products/nautilus-cif-cidarli.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Nautilus obejmuje przemysłowe wentylatory odśrodkowe do zastosowań nawiewnych, wywiewnych, powietrza procesowego oraz ogólnej wentylacji przemysłowej. Dzięki wirnikom z łopatkami odgiętymi do tyłu, napędom bezpośrednim, kompaktowej geometrii spirali oraz wielu klasom ciśnienia umożliwia efektywny i niezawodny transport powietrza w zastosowaniach niskociśnieniowych, średniociśnieniowych, wysokociśnieniowych oraz cichobieżnych."
+        "description": "Salyangoz gibi spiral formu sayesinde yüksek basınçla hava yönlendirmesi yapan bu fanlar, endüstriyel ortamlarda güçlü ve dengeli hava tahliyesi sağlar. Nautilus’un iç yapısındaki doğa harikası düzen, mühendisliğimizin temel ilhamıdır."
       },
       {
         "name": "HUMMINGBIRD",
-        "type": "Wentylator EC",
+        "type": "EC Fanlar",
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Hummingbird obejmuje wentylatory z silnikami EC, zapewniające wysoką efektywność energetyczną, precyzyjną regulację obrotów i niskie koszty eksploatacji. Przeznaczona do zastosowań nawiewnych, wywiewnych, dachowych, kanałowych, typu plug, cichych wentylatorów odśrodkowych, odzysku ciepła oraz schronów, umożliwia inteligentne zarządzanie przepływem powietrza dzięki sterowaniu 0-10 V, przełącznikom obrotów, czujnikom różnicy ciśnień oraz integracji z BMS."
+        "description": "Sinek kuşu gibi küçük boyutuna rağmen olağanüstü verimli ve hassas çalışan bu fanlar, enerji tasarrufu ve sessiz çalışma gerektiren sistemler için idealdir. Hızlı tepki kabiliyeti ve akıllı kontrolü ile sisteminizi bir doğa harikası gibi dengeler."
       },
       {
         "name": "HERON",
-        "type": "Wentylator dachowy",
+        "type": "Çatı Fanları",
         "image": "/images/products/heron-rv.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Heron obejmuje wentylatory dachowe opracowane w celu poprawy jakości powietrza wewnętrznego, wywiewu powietrza zanieczyszczonego oraz, w razie potrzeby, zapewnienia nawiewu. Dzięki promieniowemu wyrzutowi poziomemu/pionowemu, silnikom umieszczonym poza strumieniem powietrza oraz modelom osiowym i osłoniętym dachowym sprawdza się w budynkach komercyjnych, obiektach przemysłowych, pomieszczeniach technicznych, szybach oraz instalacjach dachowych."
+        "description": "Balıkçıl gibi yükseklerde konumlanan çatı fanları, sistemin genel havasını dengede tutar. Sessiz, dengeli ve sürekli devinim içinde olmayan yapısıyla gerektiğinde devreye girerek maksimum etki sağlar. Duruşuyla bile sistemi yukarıdan kontrol eder."
       },
       {
         "name": "OWL",
-        "type": "Wentylator montowany na ścianie",
+        "type": "Duvar Fanları",
         "image": "/images/products/owl-rer.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Owl obejmuje ścienne wentylatory osiowe do wywiewu zanieczyszczonego, ciepłego, wilgotnego lub zużytego powietrza wewnętrznego w pomieszczeniach o dużej kubaturze. Dzięki kwadratowym lub okrągłym ramom, kompaktowym korpusom, niskiemu poziomowi hałasu i wysokiej wydajności przepływu stanowi praktyczne rozwiązanie dla magazynów, hangarów, fabryk, warsztatów, pomieszczeń technicznych oraz dużych hal przemysłowych."
+        "description": "Baykuş gibi duvarlara sabitlenmiş bir gözetleyici gibi çalışan bu fanlar, yüksekten ve geniş açıyla güçlü hava tahliyesi yapar. Her an tetikte, çevresine hâkimdir; yönlendirdiği hava akımıyla ortamı hızla dönüştürür. Baykuş gibi odaklanmış, etkili ve alan üzerinde kontrol sahibidir."
       },
       {
         "name": "SEAHORSE",
-        "type": "Wentylator łazienkowy",
+        "type": "Banyo Fanları",
         "image": "/images/products/banyo-fan-1.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Seahorse obejmuje wentylatory wywiewne z tworzywa sztucznego do łazienek, toalet, piwnic i podobnych pomieszczeń o małej i średniej wielkości, służące do usuwania zapachów, oparów, wilgoci i zużytego powietrza. Dzięki opcjom osiowym i promieniowym, obudowom z ABS, niskiemu poziomowi hałasu, łatwym w czyszczeniu panelom przednim oraz opcjonalnemu sterowaniu z opóźnieniem czasowym nadaje się do wnętrz mieszkalnych, hotelowych, biurowych i komercyjnych."
+        "description": "Denizatı gibi küçük alanlara ustalıkla uyum sağlayan bu fanlar, banyolarda fazla yer kaplamadan etkili tahliye sağlar. Dengeli, zarif ve kontrollü çalışmasıyla nemi ve kokuyu ortamdan uzaklaştırırken, varlığıyla değil işleviyle hissedilir. Kompakt ama işlevsel bir çözüm sunar."
       },
       {
         "name": "KOI",
-        "type": "Wentylator kanałowy",
+        "type": "Kanal Fanları",
         "image": "/images/products/koi-cb.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Koi obejmuje kompaktowe wentylatory kanałowe do niskich i średnich potrzeb nawiewnych, wywiewnych oraz wentylacji kanałowej. Dzięki opcjom okrągłym, prostokątnym, z silnikami poza strumieniem powietrza, o przepływie mieszanym oraz osiowym z tworzywa sztucznego zapewnia praktyczny, cichy i ekonomiczny transport powietrza w domach, budynkach komercyjnych, pomieszczeniach technicznych, piwnicach, warsztatach oraz instalacjach małej i średniej wielkości."
+        "description": "Koi balığı gibi yönünü kaybetmeden kanal içinde akışı sürdürür. Bu fanlar,  kanal sistemleri boyunca istikrarlı hava hareketi sağlayarak sistemin sürekliliğini ve dengesini korur. Zarif ama güçlü bir taşıyıcıdır; tıpkı bir Koi’nin suyu huzurla yarması gibi."
       },
       {
         "name": "TURTLE",
-        "type": "Wentylator Plenum",
+        "type": "Hücreli Fanlar",
         "image": "/images/products/turtle-a.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Turtle obejmuje dwupłaszczowe, izolowane wentylatory plenum do zastosowań nawiewnych i wywiewnych. Dzięki obudowom akustycznym, drzwiom rewizyjnym, opcjom napędu pasowego lub silnika typu plug oraz wielu typom wirników zapewnia cichą i trwałą pracę w pomieszczeniach maszynowni, przestrzeniach technicznych, budynkach komercyjnych oraz wentylacji przemysłowej."
+        "description": "Kaplumbağa gibi sağlam bir dış gövdeye ve korunaklı iç yapıya sahip hücreli fanlar, sistemin kalbinde uzun yıllar boyunca güvenle çalışır. Her bir hücre, görevini kaplumbağanın kabuğundaki desen kadar düzenli ve dirençli şekilde yerine getirir. Dış etkilere karşı güçlü, içte ise daima hazırdır."
       },
       {
         "name": "BUTTERFLY",
-        "type": "Kuchenny wentylator wyciągowy",
+        "type": "Mutfak Fanları",
         "image": "/images/products/butterfly-b.jpg",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Butterfly obejmuje wentylatory wywiewne do kuchni oraz jednostki ekologiczne służące do bezpiecznego, filtrowanego i kontrolowanego odprowadzania gorącego, tłustego, zadymionego i zapachowego powietrza w kuchniach gastronomicznych. Dzięki silnikom umieszczonym poza strumieniem powietrza, dwupłaszczowym izolowanym obudowom, filtrom tłuszczu, drzwiom rewizyjnym oraz konstrukcji przystosowanej do VFD sprawdza się w restauracjach, hotelach, centrach handlowych, cateringu oraz kuchniach produkcyjnych."
+        "description": "Kelebek gibi narin görünen ama her kanat çırpışında çevresine yön veren bu fanlar, mutfağın kalbinde kokuyu, buharı ve dumanı zarifçe süpürüp uzaklaştırır. Tıpkı bir kelebeğin çiçekten havalanıp ortamdaki havayı değiştirmesi gibi, bu fan da mutfağı ferah ve yaşanabilir tutar. Sessizce yaklaşmaz, doğrudan etki eder — mutfağın görünmeyen ama vazgeçilmez kanat gücüdür."
       },
       {
         "name": "FOX",
-        "type": "Fan schroniska",
+        "type": "Sığınak Fanları",
         "image": "/images/products/fox-c.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rodzina Fox obejmuje wentylatory do wentylacji schronów, dostarczające filtrowane powietrze zewnętrzne do schronów i pomieszczeń chronionych. Dzięki opcjom filtrów G4, węgla aktywnego, HEPA/cząstek promieniotwórczych oraz przepustnicy obejściowej obsługuje zarówno normalną wentylację, jak i scenariusze zagrożenia CBRN z kontrolowanym nawiewem powietrza."
+        "description": "Tilki gibi tehlikeyi sezdiğinde anında pozisyon alan bu fanlar, sığınaklarda hayati hava döngüsünü sürdürür. Dar hacimlerde etkili hava yönetimiyle içerideki yaşamı korur, dış ortamdan gelebilecek tehditleri filtreler. Zekice konumlanır, stratejik çalışır ve görünmeden korur — sığınağın sessiz bekçisidir."
       },
       {
         "name": "CHICKEN",
-        "type": "Miłośnik drobiu",
+        "type": "Tavukçu Fanı",
         "image": "/images/products/chicken.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Seria Chicken obejmuje wysokowydajne wentylatory do hodowli drobiu, zaprojektowane do utrzymywania wrażliwej jakości powietrza w zamkniętych kurnikach. Podobnie jak ptaki wrażliwe na temperaturę, wilgotność i amoniak, wentylatory te zapewniają świeżość powietrza, wspomagają kontrolę temperatury oraz pomagają chronić zdrowie i produktywność stada.",
-        "comingSoon": true
+        "description": "Tavuk gibi hassas yaşam alanlarında görev yapan bu fanlar, ortam havasını sürekli taze tutar, ısıyı dengeler ve zararlı gazların birikmesini önler. Kümesin her köşesine can verir, üretimin sağlığını ve verimliliğini doğrudan etkiler. Sessiz değil, sadık bir koruyucu gibi çalışır; tavukların konforu, bu fanın sorumluluğundadır."
       },
       {
         "name": "ELEPHANT",
-        "type": "Zbiórka kurzu",
+        "type": "Toz Toplama Ünitesi",
         "image": "/images/products/elephant.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Seria Elephant, inspirowana siłą i wyczuciem tego zwierzęcia, zbiera pył i cząstki stałe na obszarach o wysokiej produkcji dzięki dużej wydajności wywiewu. Dzięki wytrzymałemu korpusowi, stabilnemu ssaniu i trwałej konstrukcji zapewnia kontrolowane zarządzanie powietrzem w trudnych warunkach, tworząc zdrowsze i bardziej wydajne miejsca pracy.",
-        "comingSoon": true
+        "description": "Fil gibi güçlü ama kontrollü çalışan bu sistemler, yoğun üretim ortamlarında havadaki tozu güvenle yakalar. Yüksek debili emiş gücüyle ortamı arındırır; üretim sürecini daha sağlıklı, daha verimli hâle getirir. Bir fil gibi ağır işlerin altından kalkar, ama her nefesinde temiz bir soluk kazandırır."
       }
     ],
     "otherCategories": [
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
-    "ctaDesc": "Skontaktuj się z naszym zespołem inżynierów, aby znaleźć najbardziej odpowiednie rozwiązanie dla Twojego projektu spośród ponad 1200 odmian produktów.",
+    "ctaDesc": "1.200+ ürün çeşidi arasından projenize en uygun çözümü bulmak için uzman mühendislik ekibimizle iletişime geçin.",
     "catalogs": [
       {
-        "title": "Katalog produktów Ruch Powietrzny",
+        "title": "Hava Hareketi ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "iklimlendirme": {
-    "title": "Klimatyzacja",
-    "titleFirst": "Powietrze",
-    "titleHighlight": "Kondycjonowanie",
+    "title": "İklimlendirme",
+    "titleFirst": "İklim",
+    "titleHighlight": "lendirme",
     "pills": [
-      "3 rodziny produktów",
-      "Konfiguracja modułowa",
-      "EC i wentylator odśrodkowy",
-      "Filtracja HEPA"
+      "3 Ürün Ailesi",
+      "Modüler Konfigürasyon",
+      "EC & Radyal Fan",
+      "HEPA Filtrasyon"
     ],
     "tiger": {
-      "label": "Jednostka wentylacyjna",
-      "desc": "Rozwiązanie centrali wentylacyjnej charakteryzujące się modułową konstrukcją, wysoce energooszczędnymi komponentami i cichą pracą w zakresie przepływu powietrza 500 – 125 000 m³/h.",
+      "label": "Klima Santralleri",
+      "desc": "Kaplan gibi kontrolü elden bırakmayan bu santraller, büyük hacimlerde hava kalitesini hassasiyetle yönetir. Gücünü sadece ihtiyaç duyulan noktaya yönlendirir, ortamın iklimini dengeler. Her zaman hazır, her zaman kararlı; sistemin kalbinde güçlü bir nefes gibi çalışır. Sessiz lider, görünmeyen kontrol merkezidir.",
       "image": "/images/products/tiger-pre.png",
-      "specFlow": "",
-      "specPressure": ""
+      "specFlow": "500–125K m³/h",
+      "specPressure": "10–3.000 Pa"
     },
     "dolphin": {
-      "label": "Jednostka osuszania basenu",
-      "desc": "Zapobiega uszkodzeniom konstrukcji budynków w basenach krytych przez wilgoć, jednocześnie maksymalizując komfort użytkownika. Wyróżnia się wysoką energooszczędnością, trwałą konstrukcją i cichą pracą.",
+      "label": "Nem Alma Santralleri",
+      "desc": "Yunus gibi çevik ve sezgisel çalışan bu santraller, ortam nemini hassas biçimde dengeler. Aşırı nemi fark eder, fazlasını çeker ve içeriği konforlu hale getirir. Sistem içinde zarafetiyle fark edilmez ama konforu baştan sona şekillendirir. Her nefeste ferahlık sunar, her ortamda dengeyi sağlar.",
       "image": "/images/products/dolphin-pre.png",
-      "specFlow": "",
-      "specPressure": ""
+      "specFlow": "6 Model",
+      "specPressure": "6 Model"
     },
     "caracal": {
-      "label": "Odzysk ciepła",
-      "desc": "Zapewnia kontrolowaną klimatyzację, aby spełnić wymagania dotyczące świeżego powietrza i poprawić istniejącą jakość powietrza w biurach, szkołach, hotelach, szpitalach i pomieszczeniach socjalnych.",
+      "label": "Isı Geri Kazanım",
+      "desc": "Karakulak gibi çevresini anında algılayan bu sistem, içerideki sıcak havayı israf etmeden yeniden kazandırır. Isı kaybını asgariye indirirken temiz hava döngüsünü sürekli tutar. Tıpkı bir karakulak gibi, görünmeden izler, enerji kaybını fark eder ve sessizce sistemi optimize eder. Enerjiyi geri kazandıran zarif bir avcı gibidir.",
       "image": "/images/products/caracal.png",
       "specFlow": "",
       "specPressure": ""
     },
-    "ctaDesc": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie w zakresie klimatyzacji.",
+    "ctaDesc": "Teknik ekibimiz size en uygun iklimlendirme çözümünü sunmak için hazır.",
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Klimatyzacja",
+        "title": "İklimlendirme ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "sogutmaVeIsitma": {
-    "title": "Chłodzenie i ogrzewanie",
-    "titleFirst": "Chłodzenie i",
-    "titleHighlight": "Ogrzewanie",
-    "heroDesc": "Agregaty chłodnicze, jednostki zewnętrzne, grzejniki elektryczne i wężownice wodne.",
-    "comingSoonNotice": "Produkty w tej kategorii zostaną wkrótce opublikowane szczegółowo. Informacje techniczne i oferty cenowe",
-    "comingSoonLink": "skontaktuj się z nami",
+    "title": "Soğutma ve Isıtma",
+    "titleFirst": "Soğutma ve",
+    "titleHighlight": "Isıtma",
+    "heroDesc": "Polar Bear, Orca Coil, Orca Heater ve Orca HX soğutma ve ısıtma çözümleri.",
+    "comingSoonNotice": "Bu kategorideki ürünler yakında detaylı olarak yayınlanacaktır. Teknik bilgi ve fiyat teklifi için",
+    "comingSoonLink": "iletişime geçebilirsiniz",
     "products": [
       {
-        "name": "CHILLER (Niedźwiedź polarny)",
-        "type": "Jednostka chłodząca",
+        "name": "POLAR BEAR",
+        "type": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri • Isı Pompası Dış Ünitesi • Fan Coil İç Ünitesi",
         "image": "/images/products/chiller.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi; Orta Tip Paket Endüstriyel Soğutma Ünitesi; Ağır Tip Paket Endüstriyel Soğutma Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; Orta Tip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; OrtaTip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi"
       },
       {
-        "name": "JEDNOSTKI ZEWNĘTRZNE",
-        "type": "Jednostka chłodząca",
-        "image": "/images/products/chiller.png",
-        "specFlow": "",
-        "specPressure": ""
-      },
-      {
-        "name": "GRZEJNIKI ELEKTRYCZNE",
-        "type": "Grzejnik elektryczny",
+        "name": "ORCA HEATER",
+        "type": "Elektrikli Isıtıcı",
         "image": "/images/products/elektrikli-isitici.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı; Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı"
       },
       {
-        "name": "WĘŻOWNICA WODNA",
-        "type": "Cewka",
+        "name": "ORCA COIL",
+        "type": "Termal Batarya",
         "image": "/images/products/elektrikli-isitici.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Sıcak Su Bataryası; Soğuk su Bataryası; DX Batarya; Buhar Bataryası"
+      },
+      {
+        "name": "ORCA HX",
+        "type": "Isı Eşanjörü",
+        "image": "/images/products/caracal.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Rotary Tip Isı Geri Kazanım Modülü; Selülozik Reküparatör Modulü; Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı; Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
       }
     ],
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Chłodzenie i ogrzewanie",
+        "title": "Soğutma ve Isıtma ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaYonetimi": {
-    "title": "Zarządzanie powietrzem",
-    "titleFirst": "Powietrze",
-    "titleHighlight": "Kierownictwo",
-    "heroDesc": "Rozwiązania przepustnic powietrza.",
+    "title": "Hava Yönetimi",
+    "titleFirst": "Hava",
+    "titleHighlight": "Yönetimi",
+    "heroDesc": "Hava damperi çözümleri.",
     "hound": {
-      "label": "Przepustnica powietrza",
-      "desc": "Seria klap zaprojektowana z myślą o zapewnieniu maksymalnej kontroli i bezpieczeństwa w najbardziej krytycznych punktach instalacji wentylacyjnych i przeciwpożarowych.",
+      "label": "Damperler",
+      "desc": "Tazı gibi yön sezgisi güçlü olan bu damperler, hava akışını doğru zamanda, doğru yöne yönlendirir. Hızlı tepki verir, anında devreye girer; sistemin hava haritasını kontrol altında tutar. Görünmeden yol çizen, ama yönü belirleyen sadık bir rehber gibidir.",
       "image": "/images/products/hound-al.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Zarządzanie powietrzem",
+        "title": "Hava Yönetimi ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaDagitimi": {
-    "title": "Dystrybucja powietrza",
-    "titleFirst": "Powietrze",
-    "titleHighlight": "Dystrybucja",
-    "heroDesc": "Rozwiązania z kratkami, nawiewnikami, anemostatami i żaluzjami.",
+    "title": "Hava Dağıtımı",
+    "titleFirst": "Hava",
+    "titleHighlight": "Dağıtımı",
+    "heroDesc": "Menfez, panjur, difüzör ve anemostad çözümleri.",
     "alpaca": {
-      "label": "Kratki, dyfuzory itp.",
-      "desc": "różne modele z rozwiązaniami dostosowanymi do wszystkich potrzeb w zakresie dystrybucji powietrza.",
+      "label": "Menfez, Anemostad, Panjurlar",
+      "desc": "Alpaka gibi ortama huzurla entegre olan bu elemanlar, havayı doğru noktalara estetik ve dengeli biçimde dağıtır. Ne çok öne çıkar ne de kaybolur; sistemin mimarisine zarifçe uyum sağlar. Her hava akımının son dokunuşunda onun izi vardır. Sessiz bir işçi, görünmez bir denge ustasıdır.",
       "image": "/images/products/alpaca-am.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Dystrybucja powietrza",
+        "title": "Hava Dağıtımı ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaFiltrasyonu": {
-    "title": "Filtracja powietrza",
-    "titleFirst": "Powietrze",
-    "titleHighlight": "Filtrowanie",
-    "heroDesc": "Rozwiązania filtracyjne do zastosowań przemysłowych i komfortowych.",
+    "title": "Hava Filtrasyonu",
+    "titleFirst": "Hava",
+    "titleHighlight": "Filtrasyonu",
+    "heroDesc": "Endüstriyel ve konfor uygulamaları için filtre çözümleri.",
     "scallop": {
-      "label": "Seria filtrów",
-      "desc": "różne modele filtrów z rozwiązaniami dostosowanymi do wszystkich potrzeb w zakresie filtracji powietrza.",
+      "label": "Filtreler",
+      "desc": "Deniz tarağı gibi gözenekli ve katmanlı yapısıyla, ortamdan istenmeyen parçacıkları ustalıkla süzen ve temiz hava geçişine olanak sağlayan sistemler.",
       "image": "/images/products/cyclone.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Filtracja powietrza",
+        "title": "Hava Filtrasyonu ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "aksesuarlar": {
-    "title": "Akcesoria",
-    "titleFirst": "Dostęp",
-    "titleHighlight": "sory",
-    "productCount": "produkty",
-    "ctaTitle": "Szukasz odpowiedniego akcesorium do swojego projektu?",
+    "title": "Aksesuarlar",
+    "titleFirst": "Akse",
+    "titleHighlight": "suarlar",
+    "productCount": "ürün",
+    "ctaTitle": "Projenize uygun aksesuarı mı arıyorsunuz?",
     "accessories": [
       {
-        "name": "Wibroizolator sprężynowy",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Sprężynowe izolatory drgań są stosowane w systemach HVAC i instalacjach urządzeń mechanicznych w celu zmniejszenia wibracji o niskim poziomie, które mogą być przenoszone z systemu na podłogę lub otaczające środowisko."
-      },
-      {
-        "name": "Stopki montażowe AE SF",
-        "image": "/images/products/ae-sf-baglanti-ayaklari.png",
-        "description": "Stopki montażowe to elementy montażowe o dużej wytrzymałości, przeznaczone do bezpiecznego mocowania wentylatorów do podłogi lub powierzchni nośnej, zgodnie z wymaganiami projektu."
-      },
-      {
-        "name": "Osłona druciana AE PM",
-        "image": "/images/products/ae-pm-tel-kafes.png",
-        "description": "Wire Guards to kratki ochronne wykonane z drutu stalowego o wysokiej wytrzymałości, zaprojektowane w celu zapewnienia bezpieczeństwa użytkownika po stronie ssącej lub tłocznej systemów wentylatorów oraz zapobiegania przedostawaniu się ciał obcych do obszaru roboczego."
-      },
-      {
-        "name": "Stożek wlotowy AE IC",
-        "image": "/images/products/ae-ic-giris-konisi.png",
-        "description": "Stożki wlotowe serii AE IC zostały zaprojektowane w celu optymalizacji przepływu powietrza po stronie ssącej wentylatorów, zmniejszenia turbulencji powietrza i zwiększenia wydajności systemu."
-      },
-      {
-        "name": "Przeciwkołnierz AE CF",
-        "image": "/images/products/ae-cf-karsi-flans.png",
-        "description": "Przeciwkołnierze serii AE CF to odporne na wysokie temperatury elementy łączące stosowane do łączenia wentylatorów z systemem kanałów i zapewniające szczelność."
-      },
-      {
-        "name": "Elastyczny przeciwkołnierz AE FJF",
-        "image": "/images/products/ae-fjf.png",
-        "description": "Elastyczne przeciwkołnierze serii AE FJF to specjalne elementy łączące zaprojektowane w celu zapobiegania przenoszeniu drgań pomiędzy wentylatorem a systemem kanałów, zmniejszania efektu rozszerzania i zapewniania cichszego środowiska pracy."
-      },
-      {
-        "name": "Elastyczny przeciwkołnierz przegubowy klasy AE FJF F400",
-        "image": "/images/products/ae-fjf.png",
-        "description": "Elastyczne przeciwkołnierze złączne klasy F400 AE FJF zostały zaprojektowane w celu zapewnienia elastycznego, bezpiecznego i hermetycznego połączenia pomiędzy wentylatorami i systemami kanałów w zastosowaniach ognioodpornych."
-      },
-      {
-        "name": "Elastyczne złącze podwójnego przeciwkołnierza AE FJ2F",
-        "image": "/images/products/ae-fj2f.png",
-        "description": "Złącza elastyczne z podwójnym przeciwkołnierzem to bardzo elastyczne elementy łączące wyposażone w przeciwkołnierze na obu końcach, zaprojektowane tak, aby pochłaniać wibracje, rozszerzanie i niewspółosiowość montażową pomiędzy systemami wentylatorów i kanałów."
-      },
-      {
-        "name": "AE FJ2F F400 Elastyczne złącze z podwójnym przeciwkołnierzem",
-        "image": "/images/products/ae-fj2f.png",
-        "description": "Seria AE FJ2F-HR to elastyczne złącza z dwoma przeciwkołnierzami i odpornością na wysoką temperaturę, przeznaczone do stosowania w systemach wymagających odporności ogniowej."
-      },
-      {
-        "name": "Tłumik okrągły AE S-D100",
-        "image": "/images/products/ae-sd100.png",
-        "description": "Tłumiki okrągłe serii AE S-D100 to wysokowydajne elementy kontroli akustycznej, zaprojektowane w celu zmniejszenia poziomu hałasu i poprawy warunków komfortu w systemach wentylacyjnych."
-      },
-      {
-        "name": "Tłumik prostokątny AE RS",
-        "image": "/images/products/ae-rs.png",
-        "description": "Tłumiki prostokątne serii AE RS to wysokowydajne elementy izolacji akustycznej zaprojektowane w celu zmniejszenia poziomu hałasu generowanego przez przepływ powietrza i zwiększenia komfortu akustycznego w systemach kanałów."
-      },
-      {
-        "name": "Tłumik gniazdowy AE-SS",
-        "image": "/images/products/emniyet-salteri.png",
-        "description": "Tłumiki gniazdowe serii AE SS to akcesoria do kontroli akustycznej, dostarczane opcjonalnie do projektów wymagających redukcji hałasu, szczególnie po stronie wlotu."
-      },
-      {
-        "name": "Łopatka prowadząca AE-V",
-        "image": "/images/products/free.jpg",
-        "description": "Łopatki kierujące serii AE V to pomocnicze elementy aerodynamiczne zaprojektowane w celu optymalizacji przepływu powietrza, zmniejszenia turbulencji i zapewnienia równomiernego rozkładu przepływu w systemach wentylatorów i kanałów."
-      },
-      {
-        "name": "Zatyczka wylotowa AE-OC",
-        "image": "/images/products/free.jpg",
-        "description": "Zaślepki wylotowe serii AE OC to trwałe elementy konstrukcyjne zaprojektowane w celu ochrony przed warunkami zewnętrznymi w punktach wylotowych systemów wentylatorów i utrzymania wydajności systemu."
-      },
-      {
-        "name": "Prostokątne złącze elastyczne AE-DFC",
-        "image": "/images/products/ae-dfc.png",
-        "description": "Złącza elastyczne prostokątne serii AE DFC to trwałe elementy łączące zaprojektowane w celu zapewnienia izolacji drgań, zapobiegania przenoszeniu dźwięku i poprawy szczelności w systemach kanałów."
-      },
-      {
-        "name": "Rama adaptera dachowego AE-AF",
-        "image": "/images/products/free.jpg",
-        "description": "Ramy adapterów dachowych serii AE AF to elementy łączące o wysokiej wytrzymałości, zaprojektowane w celu zapewnienia bezpiecznej, stabilnej i szczelnej instalacji wentylatorów i innego sprzętu HVAC na dachach."
-      },
-      {
-        "name": "Podstawa do dachów płaskich AE FRS",
-        "image": "/images/products/ae-frs.png",
-        "description": "Gniazda do dachów płaskich serii AE FRS to pomocnicze elementy konstrukcyjne przeznaczone do bezpiecznego, izolowanego i stabilnego montażu wentylatorów i sprzętu HVAC w zastosowaniach na dachach płaskich."
-      },
-      {
-        "name": "Skrzynka przyłączeniowa dachowa AE-CB",
-        "image": "/images/products/free.jpg",
-        "description": "Puszki dachowe serii AE CB to pomocnicze elementy konstrukcyjne przeznaczone do bezpiecznego i stabilnego montażu systemów wentylacyjnych i połączeń kanałów."
-      },
-      {
-        "name": "Nagrzewnica elektryczna typu AE-EH",
-        "image": "/images/products/ae-eh-elektrikli-isitici.png",
-        "description": "Elektryczne nagrzewnice kanałowe serii AE EH to kompaktowe i wysokowydajne urządzenia grzewcze opracowane do zastosowań zorientowanych na komfort, takich jak ogrzewanie świeżego powietrza w systemach wentylacyjnych."
-      },
-      {
-        "name": "Przełącznik bezpieczeństwa",
-        "image": "/images/products/emniyet-salteri.png",
-        "description": "Wyłącznik bezpieczeństwa to element sterujący o wysokich standardach ochrony, przeznaczony do bezpiecznego włączania i wyłączania wentylatorów i innych urządzeń elektrycznych."
-      },
-      {
-        "name": "Chroniony wyłącznik bezpieczeństwa",
-        "image": "/images/products/korumali-emniyet-salteri.png",
-        "description": "Chroniony wyłącznik bezpieczeństwa to trwały element sterujący zaprojektowany w celu zapewnienia bezpiecznego włączania/wyłączania urządzeń elektrycznych, zapewniając jednocześnie ochronę przed czynnikami środowiskowymi."
-      },
-      {
-        "name": "Jednofazowy regulator prędkości",
-        "image": "/images/products/monofaze-hiz-kontrol-cihazi.png",
-        "description": "Jednofazowy regulator prędkości jest przyjazną dla użytkownika jednostką sterującą zaprojektowaną do ciągłej i precyzyjnej regulacji prędkości obrotowej wentylatorów z jednofazowymi silnikami asynchronicznymi sterowanymi napięciem."
-      },
-      {
-        "name": "Przetwornica częstotliwości",
-        "image": "/images/products/frekans-inventoru.png",
-        "description": "Przetwornica częstotliwości to jednostka napędowa nowej generacji, opracowana w celu zwiększenia efektywności energetycznej i zapewnienia optymalnej kontroli prędkości w wentylatorach z napędem silnikowym i systemach wentylacyjnych."
-      },
-      {
-        "name": "Panel sterowania ciśnieniem",
-        "image": "/images/products/basinclandirma-kontrol-panosu.png",
-        "description": "Panel Sterowania Utrzymywaniem Ciśnienia to zaawansowana jednostka sterująca z przetwornicą częstotliwości, zaprojektowana w celu zapewnienia automatycznej i zoptymalizowanej pracy wentylatorów w układach ciśnieniowych."
-      },
-      {
-        "name": "Czujnik różnicy ciśnień",
-        "image": "/images/products/diferansiyel-basinc-sensoru.png",
-        "description": "Czujnik różnicy ciśnień to precyzyjny element regulacyjny przeznaczony do pomiaru i kontroli różnic ciśnień powietrza w systemach wentylacyjnych i filtracyjnych."
-      },
-      {
-        "name": "Czujnik różnicy ciśnień PI (wyjście 0-10 V)",
-        "image": "/images/products/diferansiyel-basinc-sensoru.png",
-        "description": "Czujnik różnicy ciśnień + sterowanie PI to zaawansowany system czujników opracowany w celu precyzyjnego monitorowania i automatycznej regulacji ciśnienia powietrza lub przepływu powietrza w systemach wentylacyjnych."
-      },
-      {
-        "name": "Czujnik dymu typu kanałowego",
-        "image": "/images/products/kanal-tipi-duman-sensoru.png",
-        "description": "Kanałowy czujnik dymu jest urządzeniem detekcyjnym o wysokiej czułości, przeznaczonym do wczesnego wykrywania dymu i produktów spalania w powietrzu w systemach wentylacyjnych i klimatyzacyjnych."
-      },
-      {
-        "name": "Filtr panelowy G4",
-        "image": "/images/products/g4-panel-filtre.png",
-        "description": "Filtry panelowe G4 to wysokowydajne filtry wstępne przeznaczone do wychwytywania grubych cząstek, kurzu i zanieczyszczeń z powietrza w systemach wentylacyjnych i klimatyzacyjnych."
-      },
-      {
-        "name": "Filtr panelowy G2-G3",
-        "image": "/images/products/g2-g3-panel-filtre.png",
-        "description": "Filtry panelowe G2-G3 to niezawodne rozwiązania filtrów wstępnych przeznaczone do wychwytywania średnich i dużych cząstek w systemach wentylacyjnych i klimatyzacyjnych."
-      },
-      {
-        "name": "Metalowy filtr przeciwtłuszczowy G2",
-        "image": "/images/products/g2-metal-yag-tutucu-filtre.png",
-        "description": "Metalowe filtry przeciwtłuszczowe G2 to elementy filtracyjne o wysokiej trwałości, zaprojektowane specjalnie do wychwytywania oparów tłuszczu i dużych cząstek w systemach wentylacyjnych i wyciągowych w kuchni."
-      },
-      {
-        "name": "Metalowy filtr przeciwtłuszczowy G2-G3",
-        "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.png",
-        "description": "Metalowe filtry przeciwtłuszczowe G2-G3 to trwałe rozwiązania filtracyjne przeznaczone do skutecznego wychwytywania oparów tłuszczu i dużych cząstek w systemach wentylacyjnych i wyciągowych w kuchni."
+        "name": "REMORA",
+        "image": "/images/products/remora.png",
+        "description": "Fan aksesuarları; Remora’nın doğadaki fonksiyonunu yansıtarak, sistemin güvenli bir şekilde sabitlenmesini, titreşimden arındırılmasını ve hava akışının kontrollü yönlendirilmesini sağlar. Tıpkı Remora’nın taşıyıcısıyla kurduğu uyum gibi, bu parçalar da fan sisteminin bütünlüğünü ve verimliliğini destekler.",
+        "specFlow": "",
+        "specPressure": ""
       }
     ],
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Akcesoria",
+        "title": "Aksesuarlar ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
-    ]
+    ],
+    "heroDesc": "REMORA fan aksesuar ailesi; montaj, bağlantı, susturucu ve koruma çözümleri."
   },
   "otomasyonMalzemeleri": {
-    "title": "Sprzęt automatyki",
-    "titleFirst": "Automatyzacja",
-    "titleHighlight": "Sprzęt",
+    "title": "Otomasyon Malzemeleri",
+    "titleFirst": "Otomasyon",
+    "titleHighlight": "Malzemeleri",
     "products": [
       {
-        "name": "PANEL",
+        "name": "HAWK",
         "image": "/images/products/otomasyon-pano.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Panele automatyki HAWK zostały zaprojektowane do zarządzania systemami wentylatorów, jednostkami HVAC oraz elementami infrastruktury z jednego centrum, zapewniając niezawodne, stabilne i inteligentne sterowanie. Szybka reakcja, precyzyjne monitorowanie oraz zaawansowana architektura sterowania utrzymują stabilność systemu nawet w złożonych scenariuszach. Dzięki zarządzaniu energią, integracji bezpieczeństwa, precyzyjnemu sterowaniu oraz zdalnemu monitorowaniu HAWK zapewnia projektowi pełną kontrolę nadzorczą."
+        "description": "Hawk serisi otomasyon panoları, tıpkı bir şahinin geniş perspektifli kontrol yeteneği gibi, fan ve HVAC sistemlerinin tüm bileşenlerini tek merkezden güvenilir şekilde yönetmek için tasarlanmıştır.\r\nHızlı tepki süresi, hassas izleme kabiliyeti ve akıllı kontrol mimarisi sayesinde, karmaşık senaryolarda dahi sistemi kararlı tutar.\r\nEnerji yönetimi, güvenlik mantığı, hassas kumanda ve uzaktan izleme özellikleriyle Hawk; projeye “üstten bakan” bir kontrol zekâsı kazandırır.\r\nŞahin metaforunun temsil ettiği sezgi, hız ve hâkimiyet; bu panoların mühendislik karakterinin doğrudan karşılığıdır."
       },
       {
         "name": "PLC",
         "image": "/images/products/otomasyon-plc.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Panasonic Programlanabilir Lojik Kontrolör"
       },
       {
-        "name": "CZUJNIK",
-        "image": "/images/products/otomasyon-sensor.png?v=7",
+        "name": "SENSÖR",
+        "image": "/images/products/otomasyon-sensor.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "PI-PU Fark Basınç Sensörü; Fark Basınç Anahtarı; Sıcaklık Sensörü; Isı Sensörü; Duman Sensörü/ Kanal Tipi Duman Dedektörü; Titreşim Sensörü; Hava Kalite Sensörü; Hava Akış Sensörü; Sıcaklık Termostatı; CO Sensörü"
       },
       {
-        "name": "TABLICY STEROWANIA - PRZEŁĄCZNIKI",
+        "name": "NEXUS",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Kontrol Kartı; Panel Termostat; Duman ve Basınç Sensörleri Haberleşme Kartı; CO Paneli"
+      },
+      {
+        "name": "ZAMANLAMA ve KONTROL CİHAZLARI",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Hız Kontrol Ünitesi; Dijital Zaman Ayar Rölesi; Mekanik Zaman Ayar Rölesi"
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Inspirowana siłą, autorytetem i kontrolowanym użyciem mocy lwa, seria Lion obejmuje energoelektronikę, która reguluje, zarządza i optymalizuje energię elektryczną. Niczym lew używający siły we właściwym momencie, Lion inteligentnie steruje mocą elektryczną, zwłaszcza w przemiennikach częstotliwości i napędach. Opracowana z myślą o wentylatorach, silnikach i systemach HVAC, zapewnia precyzyjną regulację obrotów, łagodny rozruch, efektywność energetyczną oraz ochronę systemu, wydłużając żywotność urządzeń dzięki niezawodnej i autorytatywnej pracy."
+        "description": "Lion serisi güç elektroniği ürünleri, sistemin kalbinde liderlik rolünü üstlenir. Kritik durumlarda kararlı tepki verir; yüksek enerji taleplerinde bile güvenle çalışır. Tıpkı bir aslan gibi sessizce ama etkili biçimde kontrolü elinde tutar. Dayanıklılığı, istikrarı ve sistem üzerindeki hâkimiyeti ile her koşulda güçlü kalır."
       }
     ],
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Izolacja wibracyjna i akustyczna",
+        "label": "Titreşim ve Ses İzolasyonu",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Sprzęt automatyki",
+        "title": "Otomasyon Malzemeleri ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
-    ]
+    ],
+    "heroDesc": "HAWK otomasyon panoları, PLC, SENSE sensörler, NEXUS kontrol kartları, zamanlama cihazları ve LION güç elektroniği."
   },
   "titresimVeSesIzolasyon": {
-    "title": "Izolacja wibracyjna i akustyczna",
-    "titleFirst": "Wibracje i dźwięk",
-    "titleHighlight": "Izolacja",
-    "heroDesc": "Tłumiki, podkładki gumowe i wibroizolatory.",
+    "title": "Titreşim & Ses İzolasyon",
+    "titleFirst": "Titreşim ve Ses İzolasyon",
+    "titleHighlight": "İzolasyon",
+    "heroDesc": "Titreşim izolatörleri ve ses izolasyon elemanları.",
     "roo": {
-      "label": "Tłumiki, podkładki gumowe, wibroizolatory",
-      "desc": "różne modele z rozwiązaniami dostosowanymi do potrzeb w zakresie izolacji wibracyjnej i akustycznej.",
+      "label": "Titreşim İzolatörleri",
+      "desc": "Roo serisi titreşim izolatörleri, makinelerinizin ve yapılarınızın titreşim kaynaklı hasarlardan korunmasını sağlar. Yüksek esneklik, darbe sönümleme ve uzun ömürlü kullanım için optimize edilmiştir.\r\nTıpkı bir kangurunun yere yumuşak inişi gibi, Roo da titreşimi sessizce absorbe eder.",
       "image": "/images/products/yayli-titresim-izolatoru.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ruch Powietrzny",
+        "label": "Hava Hareketi",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Klimatyzacja",
+        "label": "İklimlendirme",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Chłodzenie i ogrzewanie",
+        "label": "Soğutma ve Isıtma",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Zarządzanie powietrzem",
+        "label": "Hava Yönetimi",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Dystrybucja powietrza",
+        "label": "Hava Dağıtımı",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Filtracja powietrza",
+        "label": "Hava Filtrasyonu",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Akcesoria",
+        "label": "Aksesuarlar",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Sprzęt automatyki",
+        "label": "Otomasyon Malzemeleri",
         "slug": "otomasyon-malzemeleri"
       }
     ],
     "catalogs": [
       {
-        "title": "Katalog produktów Izolacja wibracyjna i akustyczna",
+        "title": "Titreşim & Ses İzolasyon ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Ogólny katalog produktów NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Instrukcja montażu i konserwacji",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Karty katalogowe",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
@@ -1049,745 +915,2148 @@
   },
   "banyoFanlari": {
     "title": "SEAHORSE",
-    "subtitle": "Wentylatory łazienkowe",
-    "intro": "Wentylatory łazienkowe, stosowane do szybkiego usuwania nieprzyjemnych zapachów i pary w małych i średnich pomieszczeniach, takich jak łazienki, toalety i spiżarnie, odgrywają ważną rolę zarówno pod względem higieny, jak i komfortu.",
+    "subtitle": "Banyo Fanları",
+    "intro": "Denizatları, kompakt yapıları ve dik duruşlarıyla dar alanlarda dengeli şekilde hareket edebilen nadir canlılardandır. Durgun suların içinde sabit kalabilir ve narin yapısıyla bulunduğu ortama zarar vermeden uyum sağlar. Bu özellik, banyo gibi küçük ve hassas alanlarda çalışan fanlar için doğrudan bir ilhamdır.\n\nDenizatı gibi küçük alanlara ustalıkla uyum sağlayan bu fanlar, banyolarda fazla yer kaplamadan etkili tahliye sağlar. Dengeli, zarif ve kontrollü çalışmasıyla nemi ve kokuyu ortamdan uzaklaştırırken, varlığıyla değil işleviyle hissedilir. Kompakt ama işlevsel bir çözüm sunar.",
     "models": [
       {
-        "name": "Konik morski AP",
-        "type": "Osiowy wentylator łazienkowy",
-        "image": "/images/products/banyo-fan-1.jpg",
-        "description": "Dekoracyjny wentylator łazienkowy AP łączy w sobie estetykę i funkcjonalność w pomieszczeniach mieszkalnych z eleganckim designem zharmonizowanym z nowoczesną architekturą i wysokowydajną konstrukcją."
+        "name": "Seahorse AP",
+        "type": "Aksiyal Plastik Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Aksiyal Plastik Banyo Fanı"
       },
       {
-        "name": "Konik morski RP V1",
-        "type": "Łazienkowy wentylator wyciągowy montowany na suficie",
-        "image": "/images/products/banyo-fan-2.jpg",
-        "description": "Regulowany wentylator wyciągowy RP V1 do montażu sufitowego to idealne rozwiązanie wentylacyjne przeznaczone do nowoczesnych pomieszczeń mieszkalnych dzięki stylowemu wyglądowi i zaawansowanemu mechanizmowi montażu."
+        "name": "Seahorse APS",
+        "type": "Aksiyal Plastik Panjurlu Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Aksiyal Plastik Panjurlu Banyo Fanı"
       },
       {
-        "name": "Konik morski RP V2",
-        "type": "Montowany na suficie łazienkowy wentylator wyciągowy V2",
-        "image": "/images/products/banyo-fan-3.jpg",
-        "description": "Wyróżniający się nowoczesnym designem i dużą wydajnością, szeroki wentylator wyciągowy RP V2 na przednim panelu jest przeznaczony do pomieszczeń mieszkalnych, w których priorytetem jest zarówno estetyka, jak i funkcjonalność."
+        "name": "Seahorse APC",
+        "type": "Aksiyal Plastik Kapaklı Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Aksiyal Plastik Kapaklı Banyo Fanı"
+      },
+      {
+        "name": "Seahorse RP",
+        "type": "Radyal Plastik Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Radyal Plastik Banyo Fanı"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "catiFanlari": {
     "title": "HERON",
-    "subtitle": "Wentylatory dachowe",
-    "intro": "",
+    "subtitle": "Çatı Fanları",
+    "intro": "Balıkçıl kuşları; yüksek noktalarda hareketsiz durarak çevreyi gözlemler ve yalnızca gerektiğinde kanat çırpar. Uzun bacakları ve boynu sayesinde yukarıdan aşağıya doğru hakimiyet kurar. Bu özellik, çatı fanlarının konumlandığı yüksek bölgelerden havayı tahliye etme işlevine doğrudan ilham verir.\n\nBalıkçıl gibi yükseklerde konumlanan çatı fanları, sistemin genel havasını dengede tutar. Sessiz, dengeli ve sürekli devinim içinde olmayan yapısıyla gerektiğinde devreye girerek maksimum etki sağlar. Duruşuyla bile sistemi yukarıdan kontrol eder.",
     "models": [
       {
-        "name": "Czapla RH",
-        "type": "Odśrodkowy wentylator dachowy z poziomym wyrzutem",
-        "image": "/images/products/heron-rh.jpg",
-        "description": "Specjalnie zaprojektowany do zastosowań związanych z wywiewem powietrza wymagających montażu na dachu."
+        "name": "Heron RH",
+        "type": "Radyal Yatay Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Radyal Yatay Atışlı Çatı Tipi Fan"
       },
       {
-        "name": "Czapla RHS",
-        "type": "Wentylator dachowy odśrodkowy z poziomym wydmuchem i silnikiem zewnętrznym",
-        "image": "/images/products/heron-rhs.jpg",
-        "description": "Do zastosowań wymagających wysokiej temperatury i odprowadzania zanieczyszczonego powietrza."
+        "name": "Heron RHS",
+        "type": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan"
       },
       {
-        "name": "Czapla samochód kempingowy",
-        "type": "Odśrodkowy wentylator dachowy z pionowym wydmuchem",
-        "image": "/images/products/heron-rv.jpg",
-        "description": "Wysoka wydajność w zastosowaniach wymagających pionowego wydmuchu powietrza."
+        "name": "Heron RV",
+        "type": "Radyal Dikey Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Radyal Dikey Atışlı Çatı Tipi Fan"
       },
       {
-        "name": "Czapla RVS",
-        "type": "Pionowy wentylator odśrodkowy z silnikiem zewnętrznym",
-        "image": "/images/products/heron-rvs.jpg",
-        "description": "Wylot powietrza o wysokiej temperaturze i dużej ilości pary."
+        "name": "Heron RVS",
+        "type": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan"
       },
       {
-        "name": "Czapla AH",
-        "type": "Osiowy wentylator dachowy z poziomym wyrzutem",
-        "image": "/images/products/heron-ah.jpg",
-        "description": "Dopływ lub wywiew świeżego powietrza w pomieszczeniach o dużej kubaturze."
+        "name": "Heron AH",
+        "type": "Aksiyal Yatay Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Aksiyal Yatay Çatı Tipi Fan"
       },
       {
-        "name": "Czapla AVH",
-        "type": "Osiowy wentylator dachowy z pokrywą",
-        "image": "/images/products/free.jpg",
-        "description": "Osiowy wentylator dachowy z pokrywą."
+        "name": "Heron AV",
+        "type": "Aksiyal Dikey Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Aksiyal Dikey Çatı Tipi Fan"
+      },
+      {
+        "name": "Heron H",
+        "type": "Aksiyal Dikey Kapaklı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Aksiyal Dikey Kapaklı Çatı Tipi Fan"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "damperler": {
     "title": "HOUND",
-    "subtitle": "Amortyzatory",
-    "intro": "Przepustnice serii Novves HOUND zostały zaprojektowane tak, aby zapewnić maksymalną kontrolę i bezpieczeństwo w najbardziej krytycznych punktach systemów wentylacji i bezpieczeństwa pożarowego.",
+    "subtitle": "Damperler",
+    "intro": "Tazılar, çevik yapıları ve hedefe kilitlenen hassas duyularıyla tanınan av köpekleridir. Yön bulma becerileri, hızlı tepkileri ve akışı kontrol edebilmeleriyle öne çıkarlar. Hava yönlendirme sistemlerinde görev yapan damperlerle bu özellikleri birebir örtüşür.\n\nTazı gibi yön sezgisi güçlü olan bu damperler, hava akışını doğru zamanda, doğru yöne yönlendirir. Hızlı tepki verir, anında devreye girer; sistemin hava haritasını kontrol altında tutar. Görünmeden yol çizen, ama yönü belirleyen sadık bir rehber gibidir.",
     "models": [
       {
-        "name": "Pies SD M24",
-        "type": "Wałowa klapa dymowa z serwosilnikiem 24V",
-        "image": "/images/products/hound-sd-m24.jpg",
-        "description": "Opracowany do bezpiecznego odprowadzania powietrza w systemach przeciwpożarowych i przeciwdymowych, oferujący klasyfikację szczelności klasy C zgodnie z normą EN 17051 i kompatybilność z serwomotorami."
-      },
-      {
-        "name": "Pies AL",
-        "type": "Żaluzja powietrzna",
+        "name": "Hound MSD",
+        "type": "Motorlu Şaft / Kat Duman Tahliye Damperi",
         "image": "/images/products/hound-al.png",
-        "description": "Estetycznie zaprojektowany system żaluzji, który kieruje przepływ powietrza w miejsca wlotu i wylotu powietrza oraz zapewnia ochronę przed czynnikami zewnętrznymi."
+        "description": "Motorlu Şaft / Kat Duman Tahliye Damperi"
       },
       {
-        "name": "Pies CRD",
-        "type": "Amortyzator nadmiarowy",
-        "image": "/images/products/hound-crd.jpg",
-        "description": "Automatycznie otwierająca się przepustnica nadmiarowa ciśnienia, służąca do kontroli nadciśnienia i ochrony elementów systemu."
+        "name": "Hound MSFD-R",
+        "type": "Motorlu Duman Fan Damperi – Dikdörtgen",
+        "image": "/images/products/hound-al.png",
+        "description": "Motorlu Duman Fan Damperi – Dikdörtgen"
+      },
+      {
+        "name": "Hound MSFD-B",
+        "type": "Motorlu Duman Fan Damperi – Kelebek Tipi",
+        "image": "/images/products/hound-al.png",
+        "description": "Motorlu Duman Fan Damperi – Kelebek Tipi"
+      },
+      {
+        "name": "Hound SFD-B",
+        "type": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Kelebek Tipi",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Kelebek Tipi"
+      },
+      {
+        "name": "Hound SFD-R",
+        "type": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen"
+      },
+      {
+        "name": "Hound RSFD-B",
+        "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi"
+      },
+      {
+        "name": "Hound RSFD-DraIn-B",
+        "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi"
+      },
+      {
+        "name": "Hound BD",
+        "type": "By-Pass Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "By-Pass Damperi"
+      },
+      {
+        "name": "Hound FFD",
+        "type": "Sigortalı Yangın Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "Sigortalı Yangın Damperi"
+      },
+      {
+        "name": "Hound MFD",
+        "type": "Motorlu Yangın Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "Motorlu Yangın Damperi"
+      },
+      {
+        "name": "Hound RD",
+        "type": "Tahliye Damperi (Relief)",
+        "image": "/images/products/hound-al.png",
+        "description": "Tahliye Damperi (Relief)"
+      },
+      {
+        "name": "Hound GS",
+        "type": "Serbest Kanatlı Klape (Gravity)",
+        "image": "/images/products/hound-al.png",
+        "description": "Serbest Kanatlı Klape (Gravity)"
+      },
+      {
+        "name": "Hound NRD-B",
+        "type": "Geri Dönüşsüz Damper – Kelebek",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Damper – Kelebek"
+      },
+      {
+        "name": "Hound NRD-R",
+        "type": "Geri Dönüşsüz Damper – Dikdörtgen",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Damper – Dikdörtgen"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
-    "subtitle": "Wentylatory odprowadzające dym i ciepło",
-    "intro": "Seria wentylatorów oddymiających i odprowadzających ciepło, posiadająca certyfikat odporności ogniowej klasy F300, zaprojektowana tak, aby wytrzymać temperaturę 300°C przez 2 godziny.",
+    "subtitle": "Duman ve Isı Tahliye Fanları",
+    "intro": "Yusufçuklar doğadaki en çevik uçucular arasındadır. Ani yön değiştirerek rüzgârla uyum içinde hareket ederler. Bu kabiliyetleriyle sıcak hava, duman ve tehlikeli gazların hızla boşaltılmasını temsil eder.\n\nYusufçuk gibi çevik ve kararlı biçimde hareket eden bu fanlar, yangın anında oluşan dumanı ve ısıyı hızla tahliye ederek ortamın güvenliğini sağlar. Sessizliği ve ani tepki kapasitesiyle tam zamanında devreye girer.",
     "models": [
       {
-        "name": "Ważka T",
-        "type": "Osiowy wentylator odprowadzający dym i ciepło w obudowie",
+        "name": "Dragonfly T",
+        "type": "Kovan Tipi Aksiyal Duman ve Isı Tahliye Fanı F300",
         "image": "/images/products/dragonfly-t.jpg",
-        "description": "Wentylator osiowy w obudowie odporny na wysokie temperatury, przeznaczony do skutecznego usuwania dymu i gorącego powietrza podczas pożarów. Certyfikat EN 12101-3."
+        "description": "Kovan Tipi Aksiyal Duman ve Isı Tahliye Fanı F300"
       },
       {
-        "name": "Ważka R",
-        "type": "Osiowy wentylator dachowy do odprowadzania dymu i ciepła",
-        "image": "/images/products/dragonfly-r.jpg",
-        "description": "Wentylator dachowy odporny na wysokie temperatury, zapewniający szybkie, bezpieczne i skuteczne odsysanie dymu i gorącego powietrza podczas pożaru. Certyfikat EN 12101-3."
-      },
-      {
-        "name": "Ważka C",
-        "type": "Osiowy wentylator oddymiający i odprowadzający ciepło",
+        "name": "Dragonfly TS",
+        "type": "Kısa Kovanlı Duman ve Isı Tahliye Fanı",
         "image": "/images/products/dragonfly-c.png",
-        "description": "Odporna na wysokie temperatury i cicha jednostka szafkowa, opracowana w celu bezpiecznego odprowadzania dymu i powietrza o wysokiej temperaturze podczas pożaru. Certyfikat EN 12101-3."
+        "description": "Kısa Kovanlı Duman ve Isı Tahliye Fanı"
       },
       {
-        "name": "Ważka JAU",
-        "type": "Jednokierunkowy osiowy wentylator strumieniowy",
-        "image": "/images/products/dragonfly-jau.jpg",
-        "description": "Przeznaczone do oddymiania i cyrkulacji powietrza w parkingach, tunelach i pomieszczeniach zamkniętych, charakteryzują się dużą odpornością na temperaturę. Certyfikat EN 12101-3."
+        "name": "Dragonfly C",
+        "type": "Hücreli Tip Aksiyal Duman&Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png?v=3",
+        "description": "Hücreli Tip Aksiyal Duman&Isı Tahliye Fanı F300"
       },
       {
-        "name": "SŁOik ważki",
-        "type": "Dwukierunkowy osiowy wentylator strumieniowy",
-        "image": "/images/products/dragonfly-jar.jpg",
-        "description": "Przeznaczone do oddymiania, wentylacji i cyrkulacji powietrza na zamkniętych parkingach oraz w pomieszczeniach zamkniętych o dużej kubaturze, dwukierunkowe. Niski poziom hałasu i wysoka wydajność."
+        "name": "Dragonfly R",
+        "type": "Yatay Çatı Tipi Aksiyal Duman&Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-r.jpg",
+        "description": "Yatay Çatı Tipi Aksiyal Duman&Isı Tahliye Fanı F300"
       },
       {
-        "name": "Ważka JR",
-        "type": "Wentylator promieniowy/odśrodkowy",
+        "name": "Dragonfly RV",
+        "type": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly TJF",
+        "type": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly JR",
+        "type": "Radyal Jet Fan Duman ve Isı Tahliye Fanı",
         "image": "/images/products/dragonfly-jr.jpg",
-        "description": "Zaprojektowane specjalnie do oddymiania i wentylacji awaryjnej w wymagających przestrzeniach wewnętrznych, takich jak zamknięte parkingi, tunele i strefy pożarowe. Certyfikat EN 12101-3."
+        "description": "Radyal Jet Fan Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly JA",
+        "type": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300"
+      },
+      {
+        "name": "Dragonfly W",
+        "type": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300"
+      },
+      {
+        "name": "Dragonfly WH",
+        "type": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300"
+      },
+      {
+        "name": "Dragonfly RH",
+        "type": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly LPF",
+        "type": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
-    "subtitle": "Wentylatory ścienne",
-    "intro": "",
+    "subtitle": "Duvar Fanları",
+    "intro": "Baykuşlar, genellikle yüksek ve sabit noktalarda konumlanarak çevreyi geniş bir açıyla gözlemlerler. Keskin görüş açıları ve sabit duruşlarıyla dikkat çekerler. Duvar fanları da sabit bir konumdan geniş alanlara yönlü hava akışı sağlayarak benzer bir görev üstlenir.\n\nBaykuş gibi duvarlara sabitlenmiş bir gözetleyici gibi çalışan bu fanlar, yüksekten ve geniş açıyla güçlü hava tahliyesi yapar. Her an tetikte, çevresine hâkimdir; yönlendirdiği hava akımıyla ortamı hızla dönüştürür. Baykuş gibi odaklanmış, etkili ve alan üzerinde kontrol sahibidir.",
     "models": [
       {
-        "name": "Sowa RER",
-        "type": "Prostokątny wentylator montowany na ścianie",
+        "name": "Owl RER",
+        "type": "Dikdörtgen Dıştan Rotorlı Duvar Tipi Fan",
         "image": "/images/products/owl-rer.png",
-        "description": "Wentylator osiowy z metalowymi łopatkami, specjalnie zaprojektowany do montażu na ścianie, charakteryzujący się trwałą konstrukcją i regulowaną prędkością."
+        "description": "Dikdörtgen Dıştan Rotorlı Duvar Tipi Fan"
       },
       {
-        "name": "Sowa RWA",
-        "type": "Prostokątny osiowy wentylator montowany na ścianie",
-        "image": "/images/products/owl-rwa.jpg",
-        "description": "Rozwiązanie z wentylatorem osiowym, charakteryzujące się wysoką wydajnością łopatek w kształcie płata, odpowiednie do prostokątnego montażu na ścianie."
+        "name": "Owl R",
+        "type": "Dikdörtgen Aksiyal Duvar Tipi Fan",
+        "image": "/images/products/owl-rer.png",
+        "description": "Dikdörtgen Aksiyal Duvar Tipi Fan"
+      },
+      {
+        "name": "Owl H",
+        "type": "Aksiyal Kapaklı Duvar Tipi Fan",
+        "image": "/images/products/owl-rer.png",
+        "description": "Aksiyal Kapaklı Duvar Tipi Fan"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
-    "subtitle": "Fani EC",
-    "intro": "Seria Hummingbird oferuje rozwiązania wentylatorów dachowych i kanałowych, które łączą wysoką wydajność z oszczędnością energii dzięki technologii silników EC.",
+    "subtitle": "EC Fanlar",
+    "intro": "Sinek kuşu, doğanın en küçük ama en çevik canlılarından biridir. Dakikada binlerce kez kanat çırpabilir, yerinde sabit durabilir ve yönünü anında değiştirebilir. Tüm bunları son derece verimli bir enerji kullanımıyla yapar — tıpkı EC (Electronically Commutated) fanlar gibi.\n\nSinek kuşu gibi küçük boyutuna rağmen olağanüstü verimli ve hassas çalışan bu fanlar, enerji tasarrufu ve sessiz çalışma gerektiren sistemler için idealdir. Hızlı tepki kabiliyeti ve akıllı kontrolü ile sisteminizi bir doğa harikası gibi dengeler.",
     "models": [
       {
-        "name": "Koliber RRV",
-        "type": "Wentylator dachowy z pionowym wyrzutem EC",
-        "image": "/images/products/hummingbird-rh.jpg",
-        "description": "Rozwiązanie wentylatora dachowego z pionowym wyrzutem powietrza opracowane z myślą o nowoczesnych budynkach, współpracujące z wysokowydajnymi silnikami EC. Dzięki inteligentnym opcjom sterowania, niskiemu zużyciu energii i cichej pracy wyróżnia się w zastosowaniach zapewniających komfort i wentylację przemysłową."
+        "name": "Hummingbird DRB EC",
+        "type": "Dikdörtgen Kanal Tipi EC Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Dikdörtgen Kanal Tipi EC Fan"
       },
       {
-        "name": "Koliber DRB",
-        "type": "Prostokątny wentylator kanałowy EC",
+        "name": "Hummingbird RRV EC",
+        "type": "Dikey Atışlı Çatı Tipi Radyal EC Fan",
         "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Wysokowydajny prostokątny wentylator kanałowy z silnikiem EC, przeznaczony do stosowania w nowoczesnych systemach wentylacyjnych. Dzięki zwartej budowie, cichej pracy i możliwości integracji z systemami automatyki jest niezawodnie preferowany w zastosowaniach komfortowych i przemysłowych."
+        "description": "Dikey Atışlı Çatı Tipi Radyal EC Fan"
+      },
+      {
+        "name": "Hummingbird RRH EC",
+        "type": "Yatay Atışlı Çatı Tipi Radyal EC Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Yatay Atışlı Çatı Tipi Radyal EC Fan"
+      },
+      {
+        "name": "Hummingbird CBP EC",
+        "type": "Hücreli Tip Geriye Eğimli Plug EC Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Hücreli Tip Geriye Eğimli Plug EC Fan"
+      },
+      {
+        "name": "Hummingbird NS EC",
+        "type": "Çift Cidarlı Sessiz EC Salyangoz Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Çift Cidarlı Sessiz EC Salyangoz Fan"
+      },
+      {
+        "name": "Hummingbird CARACAL DS EC",
+        "type": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Hummingbird FOX D EC",
+        "type": "Kanal Tipi EC Sığınak Havalandırma Fanı",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Kanal Tipi EC Sığınak Havalandırma Fanı"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
-    "subtitle": "Przemysłowe wentylatory odśrodkowe",
-    "intro": "Łącząc wysoką wydajność z oszczędnością energii, wentylatory przemysłowe oferują wydajne i wydajne rozwiązanie wentylacyjne z łopatkami wygiętymi do tyłu i konfiguracją silnika z napędem bezpośrednim.",
+    "subtitle": "Endüstriyel Salyangoz Fanlar",
+    "intro": "Nautilus, doğada mükemmel logaritmik spiral yapıya sahip nadir canlılardandır. Kabuk yapısı hava akışını doğal olarak yönlendiren ve basınç oluşturan bir formdadır. Bu simetri ve iç hacim kullanımı, endüstriyel salyangoz fanların işleyişine doğrudan ilham verir.\n\nSalyangoz gibi spiral formu sayesinde yüksek basınçla hava yönlendirmesi yapan bu fanlar, endüstriyel ortamlarda güçlü ve dengeli hava tahliyesi sağlar. Nautilus’un iç yapısındaki doğa harikası düzen, mühendisliğimizin temel ilhamıdır.",
     "models": [
       {
-        "name": "Nautilusa LPF",
-        "type": "Przemysłowy wentylator odśrodkowy",
-        "image": "/images/products/nautilus-lfp.jpg",
-        "description": "Wentylator przemysłowy łączący wysoką wydajność z oszczędnością energii."
+        "name": "Nautilus LPF",
+        "type": "Alçak Basınçlı Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Alçak Basınçlı Endüstriyel Salyangoz Fan"
       },
       {
-        "name": "Cisza Nautilusa",
-        "type": "Dwuścienny wentylator odśrodkowy",
-        "image": "/images/products/nautilus-cif-cidarli.jpg",
-        "description": "Seria NAUTILUS Silence to wentylatory odśrodkowe, które działają z dużą wydajnością w systemach wymagających przesyłu powietrza pod niskim ciśnieniem, charakteryzując się zwartą konstrukcją i konstrukcją z napędem bezpośrednim."
+        "name": "Nautilus MPF",
+        "type": "Orta Basınçlı Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Orta Basınçlı Endüstriyel Salyangoz Fan"
+      },
+      {
+        "name": "Nautilus HPF",
+        "type": "Yüksek Basınçlı Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Yüksek Basınçlı Endüstriyel Salyangoz Fan"
+      },
+      {
+        "name": "Nautilus SILENCE",
+        "type": "Sessiz Tip Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Sessiz Tip Endüstriyel Salyangoz Fan"
+      },
+      {
+        "name": "Nautilus PARTS",
+        "type": "NAUTILUS ORTAK",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "NAUTILUS ORTAK"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "exproofFanlar": {
     "title": "BEAR",
-    "subtitle": "Wentylatory przeciwwybuchowe",
-    "intro": "Wentylatory z serii Bear to rozwiązania wentylatorów Ex-Proof przeznaczone do stosowania w środowiskach wybuchowych i gazów łatwopalnych.",
+    "subtitle": "Ex-proof Fanlar",
+    "intro": "Ayılar; doğada güçlü, dirençli ve tehlike karşısında soğukkanlılıkla hareket eden canlılardır. Zorlu ortam koşullarına uyum sağlayabilmeleri ve fiziksel dayanıklılıklarıyla ön plana çıkarlar. Bu özellikler, patlama riski taşıyan ortamlarda kullanılan ATEX fanlarının doğasını yansıtır.\n\nAyı gibi güçlü, dayanıklı ve her koşulda güvenle çalışan bu fanlar, tehlikeli ve patlayıcı ortamlarda yüksek koruma sağlar. Güvenliğin ön planda olduğu alanlarda, sarsılmaz bir güven sunar.",
     "models": [
       {
-        "name": "Niedźwiedź EX-REB",
-        "type": "Prostokątny wentylator kanałowy przeciwwybuchowy",
-        "image": "/images/products/bear-reb.jpg",
-        "description": "Ex-Proof, przeznaczony do bezpiecznej wentylacji w środowiskach zagrożonych wybuchem gazów. Wysokie standardy bezpieczeństwa, praca sterowana częstotliwością, kompatybilność ze strefą ATEX."
+        "name": "Bear REB EX",
+        "type": "Ex-proof Dikdörtgen Kanal Fanı",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Dikdörtgen Kanal Fanı"
       },
       {
-        "name": "Niedźwiedź EX-T",
-        "type": "Osiowy wentylator przeciwwybuchowy w obudowie",
-        "image": "/images/products/bear-t.jpg",
-        "description": "Bezpieczny transfer powietrza w środowiskach zagrożonych wybuchem, wyważona konstrukcja wirnika. Do zastosowań przemysłowych, w których występuje ryzyko pożaru i iskier."
+        "name": "Bear RVS EX",
+        "type": "Ex-proof Dikey Radyal Atışlı Çatı Fanı",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Dikey Radyal Atışlı Çatı Fanı"
       },
       {
-        "name": "Niedźwiedź EX-RRH",
-        "type": "Przeciwwybuchowy wentylator odśrodkowy z poziomym wydmuchem",
-        "image": "/images/products/bear-rrh.jpg",
-        "description": "Specjalnie zaprojektowany do zastosowań wymagających poziomego wyciągu z dachu. Strefa 1 i Strefa 2 ATEX."
+        "name": "Bear RHS EX",
+        "type": "Ex-proof Yatay Atışlı Radyal Çatı Fanı",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Yatay Atışlı Radyal Çatı Fanı"
       },
       {
-        "name": "Niedźwiedź EX-RRV",
-        "type": "Przeciwwybuchowy wentylator odśrodkowy typu dachowego z pionowym wydmuchem",
-        "image": "/images/products/bear-rrv.jpg",
-        "description": "Wysys powietrza pod wysokim ciśnieniem, długotrwały opór zewnętrzny."
+        "name": "Bear T",
+        "type": "Ex-proof Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Kovan Tipi Aksiyal Fan"
       },
       {
-        "name": "Niedźwiedź EX-BP",
-        "type": "Przeciwwybuchowy wentylator odśrodkowy Plenum",
-        "image": "/images/products/bear-bp.jpg",
-        "description": "Rozwiązanie wentylatorowe o modułowej strukturze komory, zapewniające mocną i cichą pracę."
+        "name": "Bear C",
+        "type": "Ex-proof Aksiyal Hücreli Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Aksiyal Hücreli Fan"
       },
       {
-        "name": "Niedźwiedź EX-C",
-        "type": "Przeciwwybuchowy wentylator osiowy Plenum",
-        "image": "/images/products/bear-c.jpg",
-        "description": "Cicha praca, łatwa konserwacja, zgodność z ATEX."
+        "name": "Bear R",
+        "type": "Ex-proof  Yatay Atışlı Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof  Yatay Atışlı Aksiyal Fan"
       },
       {
-        "name": "Niedźwiedź LPF",
-        "type": "Wentylator odśrodkowy przeciwwybuchowy",
-        "image": "/images/products/bear-lpf.jpg",
-        "description": "Bezpieczny wyciąg powietrza w środowiskach zawierających wybuchowe gazy lub opary."
+        "name": "Bear W",
+        "type": "Ex-proof Duvar Tipi Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Duvar Tipi Aksiyal Fan"
       },
       {
-        "name": "Niedźwiedź R",
-        "type": "Osiowy wentylator dachowy",
-        "image": "/images/products/bear-r.jpg",
-        "description": "Zaprojektowane, aby zaspokoić potrzeby naturalnej wentylacji i wyciągu w konstrukcjach o dużej kubaturze."
+        "name": "Bear LPF EX",
+        "type": "Ex-proof  Salyangoz Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof  Salyangoz Fan"
       },
       {
-        "name": "Niedźwiedź W",
-        "type": "Przeciwwybuchowy wentylator osiowy (typ ścienny)",
-        "image": "/images/products/bear-w.jpg",
-        "description": "Ognioszczelne, zgodne z ATEX, o wysokiej wydajności."
+        "name": "Bear TB",
+        "type": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan"
+      },
+      {
+        "name": "Bear BPA EX",
+        "type": "Ex-proof Radyal Hücreli Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Radyal Hücreli Fan"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
-    "subtitle": "Jednostka osuszania basenu",
-    "intro": "Opracowane przez NOVVES, osuszacze basenowe serii Dolphin zapobiegają uszkodzeniom konstrukcji budynków w basenach krytych przez wilgoć, jednocześnie maksymalizując komfort użytkownika. Wyróżniająca się wysoką efektywnością energetyczną, długotrwałą konstrukcją i cichą pracą, seria Dolphin to profesjonalny wybór w zakresie rozwiązań kontroli klimatu w basenie.",
+    "subtitle": "Nem Alma Santralleri",
+    "intro": "Yunuslar; zeki, çevik ve ortam koşullarına hızlı uyum sağlayan deniz canlılarıdır. Sudan gelen nemi doğal olarak yönetebilen bu canlılar, çevrelerine duyarlı ve dengeli yaşamlarıyla bilinirler. Bu özellik, ortam havasındaki nemin sürekli kontrol altında tutulduğu sistemlere doğrudan ilham verir.\n\nYunus gibi çevik ve sezgisel çalışan bu santraller, ortam nemini hassas biçimde dengeler. Aşırı nemi fark eder, fazlasını çeker ve içeriği konforlu hale getirir. Sistem içinde zarafetiyle fark edilmez ama konforu baştan sona şekillendirir. Her nefeste ferahlık sunar, her ortamda dengeyi sağlar.",
     "tableHeaders": {
       "model": "Model",
-      "airFlow": "Przepływ powietrza (m³/h)",
-      "poolArea": "Powierzchnia basenu (m²)",
-      "cooling": "Chłodzenie (kW)",
-      "condenser": "Skraplacz (kW)",
-      "waterHeater": "Podgrzewacz wody (kW)"
+      "airFlow": "Hava Debisi (m³/h)",
+      "poolArea": "Havuz Alanı (m²)",
+      "cooling": "Soğutma (kW)",
+      "condenser": "Kondenser (kW)",
+      "waterHeater": "Su Isıtıcı (kW)"
     },
     "models": [
       {
-        "model": "DELFIN 300",
-        "airFlow": "3,000",
+        "model": "DOLPHIN 300",
+        "airFlow": "3.000",
         "area": "50",
-        "cooling": "21.1",
-        "condenser": "26.4",
-        "water": "26.15"
+        "cooling": "21,1",
+        "condenser": "26,4",
+        "water": "26,15"
       },
       {
-        "model": "DELFIN 400",
-        "airFlow": "4,000",
+        "model": "DOLPHIN 400",
+        "airFlow": "4.000",
         "area": "75",
-        "cooling": "28.7",
-        "condenser": "35.67",
-        "water": "34.12"
+        "cooling": "28,7",
+        "condenser": "35,67",
+        "water": "34,12"
       },
       {
-        "model": "DELFIN 450",
-        "airFlow": "4,500",
+        "model": "DOLPHIN 450",
+        "airFlow": "4.500",
         "area": "100",
-        "cooling": "33.3",
-        "condenser": "40.96",
-        "water": "36.24"
+        "cooling": "33,3",
+        "condenser": "40,96",
+        "water": "36,24"
       },
       {
-        "model": "DELFIN 600",
-        "airFlow": "6,000",
+        "model": "DOLPHIN 600",
+        "airFlow": "6.000",
         "area": "150",
-        "cooling": "42.2",
-        "condenser": "52.88",
-        "water": "50.58"
+        "cooling": "42,2",
+        "condenser": "52,88",
+        "water": "50,58"
       },
       {
-        "model": "DELFIN 750",
-        "airFlow": "7,500",
+        "model": "DOLPHIN 750",
+        "airFlow": "7.500",
         "area": "200",
-        "cooling": "52.6",
-        "condenser": "65.9",
-        "water": "62.97"
+        "cooling": "52,6",
+        "condenser": "65,9",
+        "water": "62,97"
       },
       {
-        "model": "DELFIN 900",
-        "airFlow": "9,000",
+        "model": "DOLPHIN 900",
+        "airFlow": "9.000",
         "area": "250",
-        "cooling": "36.8",
-        "condenser": "80.68",
-        "water": "77.1"
+        "cooling": "36,8",
+        "condenser": "80,68",
+        "water": "77,1"
       }
-    ]
-  },
-  "hucreliFanlar": {
-    "title": "TURTLE",
-    "subtitle": "Fani Plenum",
-    "intro": "Wentylatory plenum serii Turtle mogą być stosowane zarówno do nawiewu świeżego powietrza, jak i wyciągu powietrza wywiewanego. Dzięki zwartej budowie umożliwiają łatwy bezpośredni montaż na podłodze, a wypełnienie wełną mineralną pomiędzy ściankami wewnętrznymi zapewnia skuteczną izolację akustyczną.",
-    "models": [
+    ],
+    "productLines": [
       {
-        "name": "Żółw B",
-        "type": "Wentylator rozprężny z napędem pasowym",
-        "image": "/images/products/turtle-b.jpg",
-        "description": "Model wentylatora szafkowego z napędem pasowym, oferujący niezawodne i ciche rozwiązania w systemach wymagających przenoszenia powietrza o dużej objętości."
+        "name": "Dolphin S",
+        "type": "Standart Nem Alma Santrali",
+        "image": "/images/products/dolphin-pre.png",
+        "description": "Standart Nem Alma Santrali"
       },
       {
-        "name": "Żółw BP",
-        "type": "Wentylator wtykowy typu Plenum z wygiętymi do tyłu",
-        "image": "/images/products/turtle-bp.jpg",
-        "description": "Wysokowydajny model wentylatora szafkowego oferujący ciche, wydajne i kompaktowe rozwiązania powietrzne."
+        "name": "Dolphin HR",
+        "type": "Isı Geri Kazanımlı Nem Alma Santrali",
+        "image": "/images/products/dolphin-pre.png",
+        "description": "Isı Geri Kazanımlı Nem Alma Santrali"
       },
       {
-        "name": "Żółw BPA",
-        "type": "Wentylator odśrodkowy typu Plenum, wygięty do tyłu",
-        "image": "/images/products/turtle-bpa.png",
-        "description": "Rozwiązanie wentylacji przemysłowej zapewniające wysoką wydajność i cichą pracę dzięki konstrukcji typu plenum i technologii wentylatorów odśrodkowych wygiętych do tyłu."
-      },
-      {
-        "name": "Żółw F",
-        "type": "Wentylator z łopatkami wygiętymi do przodu w komorze Plenum",
-        "image": "/images/products/turtle-f.jpg",
-        "description": "Wtykowy model wentylatora szafkowego z podwójnym wlotem, wyróżniający się cichą i wydajną pracą w systemach wymagających przesyłu powietrza pod niskim ciśnieniem."
-      },
-      {
-        "name": "Żółw A",
-        "type": "Wentylator osiowy",
-        "image": "/images/products/turtle-a.jpg",
-        "description": "Kompaktowe rozwiązania w zakresie wentylatorów osiowych przeznaczone do systemów o dużych wymaganiach dotyczących transferu powietrza."
+        "name": "Dolphin POOL",
+        "type": "Havuz Tipi Nem Alma Santrali",
+        "image": "/images/products/dolphin-pre.png",
+        "description": "Havuz Tipi Nem Alma Santrali"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Hücreli Fanlar",
+    "intro": "Kaplumbağalar; korunaklı, modüler ve uzun ömürlü yapılarıyla tanınır. Dış kabukları onları çevresel etkilere karşı korurken, iç sistemleri güvenle çalışır. Yavaş ama kararlı ilerlemeleriyle güvenilirliği ve sağlamlığı simgelerler.\n\nKaplumbağa gibi sağlam bir dış gövdeye ve korunaklı iç yapıya sahip hücreli fanlar, sistemin kalbinde uzun yıllar boyunca güvenle çalışır. Her bir hücre, görevini kaplumbağanın kabuğundaki desen kadar düzenli ve dirençli şekilde yerine getirir. Dış etkilere karşı güçlü, içte ise daima hazırdır.",
+    "models": [
+      {
+        "name": "Turtle B",
+        "type": "Geriye Eğik Kayış Kasnaklı Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Geriye Eğik Kayış Kasnaklı Hücreli Fan"
+      },
+      {
+        "name": "Turtle BPA",
+        "type": "Geriye Eğik Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Geriye Eğik Hücreli Fan"
+      },
+      {
+        "name": "Turtle BP",
+        "type": "Geri Eğik Plug Motorlu Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Geri Eğik Plug Motorlu Hücreli Fan"
+      },
+      {
+        "name": "Turtle F",
+        "type": "Öne Eğik Kayış Kasnaklı Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Öne Eğik Kayış Kasnaklı Hücreli Fan"
+      },
+      {
+        "name": "Turtle FP",
+        "type": "Öne Eğik Plug Motorlu Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Öne Eğik Plug Motorlu Hücreli Fan"
+      },
+      {
+        "name": "Turtle A",
+        "type": "Aksiyal Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Aksiyal Hücreli Fan"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
-    "subtitle": "Jednostki odzysku ciepła",
-    "intro": "Seria Caracal zapewnia kontrolowaną klimatyzację, aby spełnić wymagania dotyczące świeżego powietrza i poprawić istniejącą jakość powietrza w biurach, szkołach, hotelach, szpitalach, centrach biznesowych, centrach handlowych, salach koncertowych i kawiarniach.",
-    "caracalD": {
-      "title": "Karakal D",
-      "type": "Jednostka odzysku ciepła",
-      "description": "Seria Caracal D (jednostka odzysku ciepła) to kompaktowe i wydajne rozwiązanie opracowane w celu odświeżania powietrza w pomieszczeniach przy jednoczesnym zwiększeniu efektywności energetycznej. Dzięki trwałej konstrukcji i przyjaznemu dla użytkownika panelowi sterowania zapewnia wygodną i trwałą wentylację."
-    },
+    "subtitle": "Isı Geri Kazanım",
+    "intro": "Karakulaklar, çevreye karşı olağanüstü duyarlılığıyla bilinen yırtıcılardır. En ufak hareketi algılayabilen kulak yapıları ve enerji kaybını minimumda tutan avlanma teknikleriyle dikkat çekerler. Doğada enerji israf etmeyen ve verimliliği ön planda tutan nadir canlılardandır.\n\nKarakulak gibi çevresini anında algılayan bu sistem, içerideki sıcak havayı israf etmeden yeniden kazandırır. Isı kaybını asgariye indirirken temiz hava döngüsünü sürekli tutar. Tıpkı bir karakulak gibi, görünmeden izler, enerji kaybını fark eder ve sessizce sistemi optimize eder. Enerjiyi geri kazandıran zarif bir avcı gibidir.",
+    "models": [
+      {
+        "name": "Caracal D",
+        "type": "Kanal Bağlantılı Tavan Tipi Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Kanal Bağlantılı Tavan Tipi Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal RD",
+        "type": "Konut Tipi Kanal Bağlantılı Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Konut Tipi Kanal Bağlantılı Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal RC",
+        "type": "Konut Tipi Hücreli Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Konut Tipi Hücreli Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal C",
+        "type": "Hücreli Tip Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Hücreli Tip Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal DX D",
+        "type": "Isı Pompası Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Isı Pompası Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal SX D",
+        "type": "Selüloz Isı Eşanjörlü Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Selüloz Isı Eşanjörlü Isı Geri Kazanım Ünitesi"
+      }
+    ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "kanalFanlari": {
     "title": "KOI",
-    "subtitle": "Wentylatory kanałowe",
-    "intro": "",
+    "subtitle": "Kanal Fanları",
+    "intro": "Koi balıkları, zarif hareketleriyle dar su kanallarında bile akıcı şekilde ilerleyebilen simgesel canlılardır. Hem dayanıklı hem de uyumlu yapılarıyla, suyun içinde yönünü kaybetmeden sürekli akışı temsil ederler.\n\nKoi balığı gibi yönünü kaybetmeden kanal içinde akışı sürdürür. Bu fanlar,  kanal sistemleri boyunca istikrarlı hava hareketi sağlayarak sistemin sürekliliğini ve dengesini korur. Zarif ama güçlü bir taşıyıcıdır; tıpkı bir Koi’nin suyu huzurla yarması gibi.",
     "models": [
       {
         "name": "Koi CB",
-        "type": "Okrągły wentylator kanałowy",
-        "image": "/images/products/koi-cb.jpg",
-        "description": "Okrągłe wentylatory kanałowe Novves KOI-CB oferują kompaktowe i wydajne rozwiązania opracowane z myślą o potrzebach wentylacji kanałowej."
+        "type": "Yuvarlak Geriye Eğimli Kanal Tipi Fan",
+        "image": "/images/products/koi-cb.png",
+        "description": "Yuvarlak Geriye Eğimli Kanal Tipi Fan"
       },
       {
         "name": "Koi RB",
-        "type": "Prostokątny wentylator kanałowy",
-        "image": "/images/products/koi-rb.jpg",
-        "description": "Prostokątne wentylatory kanałowe Novves KOI-RB serii zostały opracowane specjalnie do wysokowydajnego przesyłu powietrza w budynkach przemysłowych i komercyjnych."
+        "type": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan",
+        "image": "/images/products/koi-cb.png",
+        "description": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan"
       },
       {
         "name": "Koi REB",
-        "type": "Wentylator kanałowy prostokątny z silnikiem zewnętrznym",
-        "image": "/images/products/koi-reb.jpg",
-        "description": "Zewnętrzne wentylatory kanałowe serii KOI-REB zostały specjalnie zaprojektowane do zastosowań wentylacyjnych wymagających odporności na wysoką temperaturę."
+        "type": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan",
+        "image": "/images/products/koi-cb.png",
+        "description": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan"
       },
       {
         "name": "Koi X",
-        "type": "Wentylator kanałowy o mieszanym przepływie",
-        "image": "/images/products/koi-x.jpg",
-        "description": "Wentylator kanałowy o mieszanym przepływie serii KOI-X został zaprojektowany z myślą o zapewnieniu maksymalnej wydajności, szczególnie w obszarach komfortu, dzięki zwartej konstrukcji, cichej pracy i opcji silnika o dwóch prędkościach."
+        "type": "Karma Akışlı Kanal Fanı",
+        "image": "/images/products/koi-cb.png",
+        "description": "Karma Akışlı Kanal Fanı"
+      },
+      {
+        "name": "Koi CP",
+        "type": "Yuvarlak Aksiyal Plastik Kanal Fanı",
+        "image": "/images/products/koi-cb.png",
+        "description": "Yuvarlak Aksiyal Plastik Kanal Fanı"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "klimaSantralleri": {
     "title": "TIGER",
-    "subtitle": "Centrale wentylacyjne",
-    "intro": "Modułowe, zorientowane na efektywność rozwiązanie centrali wentylacyjnej opracowane z myślą o potrzebach wysokowydajnej wentylacji i klimatyzacji. Wyróżnia się szerokim zakresem przepływu powietrza, wysoce energooszczędnymi komponentami i cichą pracą.",
+    "subtitle": "Klima Santralleri",
+    "intro": "Kaplan; doğanın en güçlü ve dengeli yırtıcılarından biridir. Gücünü yalnızca ihtiyaç anında kullanır, enerjisini stratejik olarak dağıtır ve bulunduğu ortama tam hâkimiyet kurar. Bu özellikler, merkezi hava yönetimini sağlayan klima santrallerinin karakteriyle doğrudan örtüşür.\n\nKaplan gibi kontrolü elden bırakmayan bu santraller, büyük hacimlerde hava kalitesini hassasiyetle yönetir. Gücünü sadece ihtiyaç duyulan noktaya yönlendirir, ortamın iklimini dengeler. Her zaman hazır, her zaman kararlı; sistemin kalbinde güçlü bir nefes gibi çalışır. Sessiz lider, görünmeyen kontrol merkezidir.",
     "specs": [
       {
-        "label": "Przepływ powietrza",
-        "value": "500 - 125 000 m³/h"
+        "label": "Hava Debisi",
+        "value": "500 - 125.000 m³/h"
       },
       {
-        "label": "Ciśnienie",
-        "value": "10 - 3000 Pa"
+        "label": "Basınç",
+        "value": "10 - 3.000 Pa"
       },
       {
-        "label": "Podwozie",
-        "value": "Anodowane aluminium"
+        "label": "Şasi",
+        "value": "Anodize alüminyum"
       },
       {
-        "label": "Płyta",
-        "value": "Dwuścienna płyta warstwowa"
+        "label": "Panel",
+        "value": "Çift cidarlı sandviç panel"
       },
       {
-        "label": "Typ wentylatora",
-        "value": "Wentylator odśrodkowy / wentylator z wtyczką EC"
+        "label": "Fan Tipi",
+        "value": "Radyal fan / EC Plug fan"
       },
       {
-        "label": "Odzysk ciepła",
-        "value": "Talerz obrotowy, wodno-glikolowy"
+        "label": "Isı Geri Kazanım",
+        "value": "Plakalı, rotary, su-glikol"
       }
-    ]
-  },
-  "kovanTipiAksiyalFanlar": {
-    "title": "MARLIN",
-    "subtitle": "Wentylatory osiowe w obudowie",
-    "intro": "Wentylatory osiowe z obudową serii Marlin służą do nawiewu świeżego powietrza, wyciągu lub jako wentylatory kanałowe, a także służą jako wentylatory ciśnieniowe, zapobiegając przedostawaniu się dymu do dróg ewakuacyjnych, takich jak klatki schodowe i szyby wind, podczas pożaru.",
-    "models": [
+    ],
+    "productLines": [
       {
-        "name": "Marlin",
-        "type": "Wentylator osiowy w obudowie",
-        "image": "/images/products/marlin.png",
-        "description": "Obudowa wentylatora osiowego Novves MARLIN to rozwiązanie, które łączy w sobie wysoką wydajność, elastyczność instalacji i efektywność energetyczną w systemach wymagających dużego przepływu powietrza."
+        "name": "Tiger S",
+        "type": "Standart Klima Santrali",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Standart Klima Santrali"
       },
       {
-        "name": "Marlina B",
-        "type": "Rozwidlony wentylator osiowy",
-        "image": "/images/products/marlin-b.jpg",
-        "description": "Rozwidlony wentylator osiowy."
+        "name": "Tiger HR",
+        "type": "Isı Geri Kazanımlı Klima Santrali",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Isı Geri Kazanımlı Klima Santrali"
+      },
+      {
+        "name": "Tiger HP",
+        "type": "Hijyenik Klima Santrali",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Hijyenik Klima Santrali"
+      },
+      {
+        "name": "Tiger RT",
+        "type": "Rooftop",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Rooftop"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Aksiyal Fanlar",
+    "intro": "Marlin, yani mızrak balığı; denizlerin en hızlı ve en doğrusal ilerleyen avcılarındandır. Kaslı yapısı, hedefe kilitlenen keskin burnu ve düşük sürtünmeli gövdesiyle yüksek hızda kararlı bir akışı temsil eder.\n\nMarlin gibi kararlı, güçlü ve yönlü çalışan bu fanlar, doğrudan hava akışı sağlamak için tasarlanmıştır. Minimum dirençle maksimum debi sunar; geniş alanlarda yüksek verimli havalandırma sağlar.",
+    "models": [
+      {
+        "name": "Marlin EMPTY",
+        "type": "Aksiyal Kovan Tipi Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Aksiyal Kovan Tipi Fan"
+      },
+      {
+        "name": "Marlin S",
+        "type": "Kısa Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Kısa Kovan Tipi Aksiyal Fan"
+      },
+      {
+        "name": "Marlin B",
+        "type": "Bifurkasyonlu Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Bifurkasyonlu Kovan Tipi Aksiyal Fan"
+      },
+      {
+        "name": "Marlin 2S",
+        "type": "Seri Bağlantılı Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Seri Bağlantılı Kovan Tipi Aksiyal Fan"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
-    "subtitle": "Wentylatory wyciągowe kuchenne",
-    "intro": "",
+    "subtitle": "Mutfak Fanları",
+    "intro": "Kelebekler, hafif yapıları ve hassas hareketleriyle çevreyle nazik bir etkileşim kurar. Aynı zamanda, bulundukları ortamda havadaki değişimleri hızla algılayarak tepki verirler. Estetik görünümleriyle dikkat çekerken doğanın dengesine katkı sağlarlar. Bu özellikler, mutfak ortamındaki hassas hava yönetimiyle örtüşür.\n\nKelebek gibi narin görünen ama her kanat çırpışında çevresine yön veren bu fanlar, mutfağın kalbinde kokuyu, buharı ve dumanı zarifçe süpürüp uzaklaştırır. Tıpkı bir kelebeğin çiçekten havalanıp ortamdaki havayı değiştirmesi gibi, bu fan da mutfağı ferah ve yaşanabilir tutar. Sessizce yaklaşmaz, doğrudan etki eder — mutfağın görünmeyen ama vazgeçilmez kanat gücüdür.",
     "models": [
       {
-        "name": "Motyl B",
-        "type": "Kuchenny wentylator wyciągowy z metalowym filtrem",
+        "name": "Butterfly B",
+        "type": "Geriye Eğik Motor Hava Akımı Dışında Hücreli Mutfak Fanı",
         "image": "/images/products/butterfly-b.jpg",
-        "description": "Wentylator kuchenny Butterfly B Series to trwałe i wysokowydajne rozwiązanie wentylacyjne opracowane do usuwania ciężkiej pary, tłuszczu i zapachów w kuchniach przemysłowych i komercyjnych. Dzięki zaawansowanemu systemowi filtracji, cichej pracy i trwałej konstrukcji idealnie nadaje się do profesjonalnych kuchni."
+        "description": "Geriye Eğik Motor Hava Akımı Dışında Hücreli Mutfak Fanı"
+      },
+      {
+        "name": "Butterfly ECO",
+        "type": "Hücreli Tip Mutfak Havalandırma Ünitesi",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "Hücreli Tip Mutfak Havalandırma Ünitesi"
+      },
+      {
+        "name": "Butterfly ECO HR",
+        "type": "Isı Geri Kazanımlı Hücreli Tip Mutfak Havalandırma Ünitesi",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "Isı Geri Kazanımlı Hücreli Tip Mutfak Havalandırma Ünitesi"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "siginakFanlari": {
     "title": "FOX",
-    "subtitle": "Fani schroniska",
-    "intro": "Seria Fox została opracowana dla schronów budowanych w celu zapewnienia ochrony przed promieniowaniem, zagrożeniami nuklearnymi, biologicznymi i chemicznymi oraz klęskami żywiołowymi.",
+    "subtitle": "Sığınak Fanları",
+    "intro": "Tilkiler; dar alanlara kolayca girip çıkabilen, tehlikeden hızlıca uzaklaşabilen ve her ortamda kendine güvenli bir yaşam alanı oluşturan çevik ve zeki canlılardır. Bu içgüdüsel koruma ve sığınma davranışı, sığınak fanlarının işleviyle birebir örtüşür.\n\nTilki gibi tehlikeyi sezdiğinde anında pozisyon alan bu fanlar, sığınaklarda hayati hava döngüsünü sürdürür. Dar hacimlerde etkili hava yönetimiyle içerideki yaşamı korur, dış ortamdan gelebilecek tehditleri filtreler. Zekice konumlanır, stratejik çalışır ve görünmeden korur — sığınağın sessiz bekçisidir.",
     "models": [
       {
-        "name": "Lis D",
-        "type": "Wentylator osłonowy typu kanałowego",
-        "image": "/images/products/fox-d.jpg",
-        "description": "Wentylator osłonowy FOX serii D to trwałe i niezawodne rozwiązanie o dużej wydajności filtracji, opracowane specjalnie na potrzeby wentylacji schronów i obszarów bezpiecznych."
+        "name": "Fox D",
+        "type": "Kanal Tipi Sığınak Havalandırma Fanı",
+        "image": "/images/products/fox-c.png",
+        "description": "Kanal Tipi Sığınak Havalandırma Fanı"
       },
       {
-        "name": "Lis C",
-        "type": "Wentylator osłonowy typu szafkowego",
+        "name": "Fox C",
+        "type": "Hücreli Tip Sığınak Havalandırma Fanı",
         "image": "/images/products/fox-c.png",
-        "description": "Wentylator osłonowy FOX serii C to profesjonalne rozwiązanie wentylacyjne opracowane specjalnie dla obszarów wymagających wysokiego bezpieczeństwa, przystosowane do cichej pracy i wyposażone w wydajny system filtracji."
+        "description": "Hücreli Tip Sığınak Havalandırma Fanı"
       }
     ],
     "chrome": {
-      "home": "Dom",
-      "products": "Produkty",
-      "productFamily": "Rodzina produktów",
-      "certified": "Atestowany",
-      "productRange": "Asortyment produktów",
-      "technicalSupport": "Wsparcie techniczne",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
       "model": "model",
       "models": "Model",
-      "technicalSupportRequest": "Prośba o wsparcie techniczne",
-      "allProducts": "Wszystkie produkty",
-      "mostPreferred": "Najbardziej preferowane",
-      "detailedView": "Zobacz szczegóły",
-      "productFamilies": "Rodziny produktów",
-      "inspect": "Badać",
-      "lookingForProduct": "Szukasz odpowiedniego produktu do swojego projektu?",
-      "teamReady": "Nasz zespół techniczny jest gotowy zapewnić Państwu najbardziej odpowiednie rozwiązanie.",
-      "allSolutions": "Zobacz wszystkie rozwiązania"
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "tavukcuFanlari": {
+    "title": "CHICKEN",
+    "subtitle": "Tavukçu Fanları",
+    "intro": "Tavuklar, kapalı alanlarda sürekli hava dolaşımına ihtiyaç duyan narin canlılardır. Yüksek sıcaklık, nem ve amonyak gibi zararlı gazlara karşı hassastırlar. Bu hassasiyet, hava kalitesinin kontrolünü kritik hâle getirir — tıpkı bu fanların görev yaptığı tavuk üretim tesislerinde olduğu gibi.\n\nTavuk gibi hassas yaşam alanlarında görev yapan bu fanlar, ortam havasını sürekli taze tutar, ısıyı dengeler ve zararlı gazların birikmesini önler. Kümesin her köşesine can verir, üretimin sağlığını ve verimliliğini doğrudan etkiler. Sessiz değil, sadık bir koruyucu gibi çalışır; tavukların konforu, bu fanın sorumluluğundadır.",
+    "models": [
+      {
+        "name": "Chicken W",
+        "type": "Duvar Tipi Tavuk Çiftliği Havalandırma Fanı",
+        "image": "/images/products/chicken.png",
+        "description": "Duvar Tipi Tavuk Çiftliği Havalandırma Fanı"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "tozToplamaUniteleri": {
+    "title": "ELEPHANT",
+    "subtitle": "Toz Toplama Üniteleri",
+    "intro": "Filler; güçlü burunlarıyla hem büyük hacimli cisimleri kaldırabilir hem de en ince tozları algılayabilir. Bu olağanüstü hassasiyet ve güç dengesi, endüstriyel toz toplama sistemlerinin işleyişine doğrudan yansır: büyük kütleleri etkili biçimde çekmek ve kontrol altında tutmak.\n\nFil gibi güçlü ama kontrollü çalışan bu sistemler, yoğun üretim ortamlarında havadaki tozu güvenle yakalar. Yüksek debili emiş gücüyle ortamı arındırır; üretim sürecini daha sağlıklı, daha verimli hâle getirir. Bir fil gibi ağır işlerin altından kalkar, ama her nefesinde temiz bir soluk kazandırır.",
+    "models": [
+      {
+        "name": "Elephant BF",
+        "type": "Torbalı Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Torbalı Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant CF",
+        "type": "Kartuş Tipi Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Kartuş Tipi Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant CY",
+        "type": "Siklon Tipi Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Siklon Tipi Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant WS",
+        "type": "Islak Tip (Wet Scrubber) Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Islak Tip (Wet Scrubber) Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant CENTRAL",
+        "type": "Merkezi Toz Toplama Sistemi",
+        "image": "/images/products/elephant.png",
+        "description": "Merkezi Toz Toplama Sistemi"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "menfezPanjurlar": {
+    "title": "ALPACA",
+    "subtitle": "Menfez, Anemostad, Panjurlar",
+    "intro": "Alpakalar, uyumlu yapıları ve yumuşak duruşlarıyla bulundukları ortama nazikçe entegre olan canlılardır. Sessiz, dikkat çekmeyen ama bulunduğu çevreye katkı sağlayan yapılarıyla bilinirler. Görünüşte sade, işlevde ise tamamlayıcıdırlar — tıpkı hava dağıtım sistemlerinin son elemanları gibi.\n\nAlpaka gibi ortama huzurla entegre olan bu elemanlar, havayı doğru noktalara estetik ve dengeli biçimde dağıtır. Ne çok öne çıkar ne de kaybolur; sistemin mimarisine zarifçe uyum sağlar. Her hava akımının son dokunuşunda onun izi vardır. Sessiz bir işçi, görünmez bir denge ustasıdır.",
+    "models": [
+      {
+        "name": "Alpaca GL-SD",
+        "type": "Tek Sıra Kanatlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Tek Sıra Kanatlı Menfez"
+      },
+      {
+        "name": "Alpaca GL-DD",
+        "type": "Çift Sıra Kanatlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Çift Sıra Kanatlı Menfez"
+      },
+      {
+        "name": "Alpaca GL-RA",
+        "type": "Dönüş Havası Menfezi",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dönüş Havası Menfezi"
+      },
+      {
+        "name": "Alpaca GL-PRF",
+        "type": "Perfore Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Perfore Menfez"
+      },
+      {
+        "name": "Alpaca GL-OB",
+        "type": "Karşıt (Opposed) Kanatlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Karşıt (Opposed) Kanatlı Menfez"
+      },
+      {
+        "name": "Alpaca DF-SQ",
+        "type": "Kare Tavan Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Kare Tavan Difüzör"
+      },
+      {
+        "name": "Alpaca DF-CR",
+        "type": "Dairesel Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dairesel Difüzör"
+      },
+      {
+        "name": "Alpaca DF-LS",
+        "type": "Lineer Slot Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Lineer Slot Difüzör"
+      },
+      {
+        "name": "Alpaca DF-JET",
+        "type": "Jet Nozül Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Jet Nozül Difüzör"
+      },
+      {
+        "name": "Alpaca DF-ADJ",
+        "type": "Ayarlanabilir Kanatlı Swirl Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Ayarlanabilir Kanatlı Swirl Difüzör"
+      },
+      {
+        "name": "Alpaca LV-FX",
+        "type": "Sabit Hava Panjuru",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Sabit Hava Panjuru"
+      },
+      {
+        "name": "Alpaca LV-ADJ",
+        "type": "Ayarlanabilir Panjur",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Ayarlanabilir Panjur"
+      },
+      {
+        "name": "Alpaca LV-WP",
+        "type": "Dış Hava Panjuru",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dış Hava Panjuru"
+      },
+      {
+        "name": "Alpaca LV-AC",
+        "type": "Akustik Panjur",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Akustik Panjur"
+      },
+      {
+        "name": "Alpaca AM-SQ",
+        "type": "Kare Tavan Anemostat",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Kare Tavan Anemostat"
+      },
+      {
+        "name": "Alpaca AM-CR",
+        "type": "Dairesel Tavan Anemostat",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dairesel Tavan Anemostat"
+      },
+      {
+        "name": "Alpaca AM-ADJ",
+        "type": "Ayarlanabilir Kanatlı Anemostat",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Ayarlanabilir Kanatlı Anemostat"
+      },
+      {
+        "name": "Alpaca SP-FR",
+        "type": "Yangına Dayanımlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Yangına Dayanımlı Menfez"
+      },
+      {
+        "name": "Alpaca SP-DE",
+        "type": "Dekoratif Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dekoratif Menfez"
+      },
+      {
+        "name": "Alpaca SP-AC",
+        "type": "Akustik Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Akustik Menfez"
+      },
+      {
+        "name": "Alpaca SP-JET",
+        "type": "Yüksek Debili Jet Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Yüksek Debili Jet Difüzör"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "filtreler": {
+    "title": "SCALLOP",
+    "subtitle": "Filtreler",
+    "intro": "Doğal yapısındaki radyal çizgiler ve katmanlı, gözenekli yüzeyiyle deniz tarağı; suyu ve partikülleri süzme işlevini doğanın içinde ustalıkla gerçekleştiren canlılardan biridir. Filtre sistemlerinin çok katmanlı ve seçici yapısına ilham verir.\n\nDeniz tarağı gibi gözenekli ve katmanlı yapısıyla, ortamdan istenmeyen parçacıkları ustalıkla süzen ve temiz hava geçişine olanak sağlayan sistemler.",
+    "models": [
+      {
+        "name": "Scallop ABF",
+        "type": "Anti-Bakteriyel Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Anti-Bakteriyel Filtre"
+      },
+      {
+        "name": "Scallop CF",
+        "type": "Karbon Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Karbon Filtre"
+      },
+      {
+        "name": "Scallop FF",
+        "type": "Fiberglas Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Fiberglas Filtre"
+      },
+      {
+        "name": "Scallop GF",
+        "type": "Cam Elyaf Panel Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Cam Elyaf Panel Filtre"
+      },
+      {
+        "name": "Scallop MF",
+        "type": "Metal Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Metal Filtre"
+      },
+      {
+        "name": "Scallop BF",
+        "type": "Torba Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Torba Filtre"
+      },
+      {
+        "name": "Scallop HP",
+        "type": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)",
+        "image": "/images/products/cyclone.png",
+        "description": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)"
+      },
+      {
+        "name": "Scallop UF",
+        "type": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)",
+        "image": "/images/products/cyclone.png",
+        "description": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)"
+      },
+      {
+        "name": "Scallop CCF",
+        "type": "Silindirik Karbon Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Silindirik Karbon Filtre"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "titresimIzolatorleri": {
+    "title": "ROO",
+    "subtitle": "Titreşim İzolatörleri",
+    "intro": "Kanguru – Doğanın ustalıkla tasarlanmış denge ustası. Güçlü arka bacaklarıyla titreşimi emer, stabil zeminde ilerlemeyi mümkün kılar. Roo, yük altında bile zıplamadan sarsılmaz.\n\nRoo serisi titreşim izolatörleri, makinelerinizin ve yapılarınızın titreşim kaynaklı hasarlardan korunmasını sağlar. Yüksek esneklik, darbe sönümleme ve uzun ömürlü kullanım için optimize edilmiştir.\r\nTıpkı bir kangurunun yere yumuşak inişi gibi, Roo da titreşimi sessizce absorbe eder.",
+    "models": [
+      {
+        "name": "Roo T1 NIP",
+        "type": "Neopren Titreşim Yalıtım Pedi",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Neopren Titreşim Yalıtım Pedi"
+      },
+      {
+        "name": "Roo T1 FIP",
+        "type": "Fiberglas Titreşim Yalıtım Pedi",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Fiberglas Titreşim Yalıtım Pedi"
+      },
+      {
+        "name": "Roo T2 NIM",
+        "type": "Neopren Titreşim Yalıtım Takozu",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Neopren Titreşim Yalıtım Takozu"
+      },
+      {
+        "name": "Roo T2 FIM",
+        "type": "Fiberglas Titreşim Yalıtım Takozu",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Fiberglas Titreşim Yalıtım Takozu"
+      },
+      {
+        "name": "Roo T3 OSI",
+        "type": "Açık Yaylı Titreşim İzolatörü",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Açık Yaylı Titreşim İzolatörü"
+      },
+      {
+        "name": "Roo T3 HNG-S",
+        "type": "Yaylı Asma Tip İzolatör",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Yaylı Asma Tip İzolatör"
+      },
+      {
+        "name": "Roo T4 HSI",
+        "type": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "otomasyonPanolari": {
+    "title": "HAWK",
+    "subtitle": "Otomasyon Panoları",
+    "intro": "Şahinler; keskin görüşleri, yüksek irtifadan hedefi anında tespit edebilme yetenekleri ve olağanüstü odaklanmış uçuş kararlılıklarıyla bilinen yırtıcılardır. Doğada çevresine hâkim, tepeden tüm alanı kontrol eden bu canlılar, hassasiyet ve hızlı reaksiyon gerektiren durumların sembolüdür.\n\nHawk serisi otomasyon panoları, tıpkı bir şahinin geniş perspektifli kontrol yeteneği gibi, fan ve HVAC sistemlerinin tüm bileşenlerini tek merkezden güvenilir şekilde yönetmek için tasarlanmıştır.\r\nHızlı tepki süresi, hassas izleme kabiliyeti ve akıllı kontrol mimarisi sayesinde, karmaşık senaryolarda dahi sistemi kararlı tutar.\r\nEnerji yönetimi, güvenlik mantığı, hassas kumanda ve uzaktan izleme özellikleriyle Hawk; projeye “üstten bakan” bir kontrol zekâsı kazandırır.\r\nŞahin metaforunun temsil ettiği sezgi, hız ve hâkimiyet; bu panoların mühendislik karakterinin doğrudan karşılığıdır.",
+    "models": [
+      {
+        "name": "Hawk JF",
+        "type": "Jet Fan Sistemi Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Jet Fan Sistemi Panosu"
+      },
+      {
+        "name": "Hawk S",
+        "type": "Duman Ve Isı Tahliye Fanı Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Duman Ve Isı Tahliye Fanı Panosu"
+      },
+      {
+        "name": "Hawk PS",
+        "type": "Merdiven Ve Basınçlandırma Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Merdiven Ve Basınçlandırma Panosu"
+      },
+      {
+        "name": "Hawk VF",
+        "type": "Havalandırma Fan Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Havalandırma Fan Panosu"
+      },
+      {
+        "name": "Hawk AHU",
+        "type": "Klima Santrali (Ahu) Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Klima Santrali (Ahu) Panosu"
+      },
+      {
+        "name": "Hawk HRU",
+        "type": "Isı Geri Kazanım Ünitesi Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Isı Geri Kazanım Ünitesi Panosu"
+      },
+      {
+        "name": "Hawk FAP",
+        "type": "Yangın Algılama Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Yangın Algılama Panosu"
+      },
+      {
+        "name": "Hawk CO",
+        "type": "Karbonmonoksit Sistemi Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Karbonmonoksit Sistemi Panosu"
+      },
+      {
+        "name": "Hawk X",
+        "type": "Proje Bazlı Özel Panolar",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Proje Bazlı Özel Panolar"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "plcOtomasyon": {
+    "title": "PLC",
+    "subtitle": "PLC",
+    "intro": "Panasonic Programlanabilir Lojik Kontrolör",
+    "models": [
+      {
+        "name": "Plc Panasonic PLC",
+        "type": "Panasonic Programlanabilir Lojik Kontrolör",
+        "image": "/images/products/otomasyon-plc.png",
+        "description": "Panasonic Programlanabilir Lojik Kontrolör"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "sensorler": {
+    "title": "SENSÖR",
+    "subtitle": "SENSE",
+    "intro": "PI-PU Fark Basınç Sensörü; Fark Basınç Anahtarı; Sıcaklık Sensörü; Isı Sensörü; Duman Sensörü/ Kanal Tipi Duman Dedektörü; Titreşim Sensörü; Hava Kalite Sensörü; Hava Akış Sensörü; Sıcaklık Termostatı; CO Sensörü",
+    "models": [
+      {
+        "name": "Sense DPS-PIPU",
+        "type": "PI-PU Fark Basınç Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "PI-PU Fark Basınç Sensörü"
+      },
+      {
+        "name": "Sense DPS",
+        "type": "Fark Basınç Anahtarı",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Fark Basınç Anahtarı"
+      },
+      {
+        "name": "Sense TS",
+        "type": "Sıcaklık Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Sıcaklık Sensörü"
+      },
+      {
+        "name": "Sense HS",
+        "type": "Isı Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Isı Sensörü"
+      },
+      {
+        "name": "Sense SS",
+        "type": "Duman Sensörü/ Kanal Tipi Duman Dedektörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Duman Sensörü/ Kanal Tipi Duman Dedektörü"
+      },
+      {
+        "name": "Sense VS",
+        "type": "Titreşim Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Titreşim Sensörü"
+      },
+      {
+        "name": "Sense AQS",
+        "type": "Hava Kalite Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Hava Kalite Sensörü"
+      },
+      {
+        "name": "Sense AFS",
+        "type": "Hava Akış Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Hava Akış Sensörü"
+      },
+      {
+        "name": "Sense HT",
+        "type": "Sıcaklık Termostatı",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Sıcaklık Termostatı"
+      },
+      {
+        "name": "Sense CO",
+        "type": "CO Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "CO Sensörü"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "kontrolKartlari": {
+    "title": "NEXUS",
+    "subtitle": "NEXUS",
+    "intro": "Kontrol Kartı; Panel Termostat; Duman ve Basınç Sensörleri Haberleşme Kartı; CO Paneli",
+    "models": [
+      {
+        "name": "Nexus FCB",
+        "type": "Kontrol Kartı",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Kontrol Kartı"
+      },
+      {
+        "name": "Nexus RT",
+        "type": "Panel Termostat",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Panel Termostat"
+      },
+      {
+        "name": "Nexus ICB",
+        "type": "Duman ve Basınç Sensörleri Haberleşme Kartı",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Duman ve Basınç Sensörleri Haberleşme Kartı"
+      },
+      {
+        "name": "Nexus CO",
+        "type": "CO Paneli",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "CO Paneli"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "gucElektronigi": {
+    "title": "LION",
+    "subtitle": "Güç Elektroniği",
+    "intro": "Aslan, doğanın en güçlü ve karizmatik lideridir. Sahip olduğu kudret, kararlılık ve hâkimiyet duygusu ile çevresine güven verir. Sessiz ama etkili duruşu, enerjisini doğru anda ve doğru şekilde kullanması ile bilinir.\n\nLion serisi güç elektroniği ürünleri, sistemin kalbinde liderlik rolünü üstlenir. Kritik durumlarda kararlı tepki verir; yüksek enerji taleplerinde bile güvenle çalışır. Tıpkı bir aslan gibi sessizce ama etkili biçimde kontrolü elinde tutar. Dayanıklılığı, istikrarı ve sistem üzerindeki hâkimiyeti ile her koşulda güçlü kalır.",
+    "models": [
+      {
+        "name": "Lion FC",
+        "type": "Frekans Dönüştürücü",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "Frekans Dönüştürücü"
+      },
+      {
+        "name": "Lion FC-FD",
+        "type": "Yangın Modlu Frekans Dönüştürücü",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "Yangın Modlu Frekans Dönüştürücü"
+      },
+      {
+        "name": "Lion SS",
+        "type": "Yumuşak Yol Verici (Soft Starter)",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "Yumuşak Yol Verici (Soft Starter)"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "disUniteler": {
+    "title": "POLAR BEAR",
+    "subtitle": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri",
+    "intro": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi; Orta Tip Paket Endüstriyel Soğutma Ünitesi; Ağır Tip Paket Endüstriyel Soğutma Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; Orta Tip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; OrtaTip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi",
+    "models": [
+      {
+        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC S",
+        "type": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi"
+      },
+      {
+        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC M",
+        "type": "Orta Tip Paket Endüstriyel Soğutma Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Orta Tip Paket Endüstriyel Soğutma Ünitesi"
+      },
+      {
+        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC H",
+        "type": "Ağır Tip Paket Endüstriyel Soğutma Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Ağır Tip Paket Endüstriyel Soğutma Ünitesi"
+      },
+      {
+        "name": "Isı Pompası Dış Ünitesi HP S",
+        "type": "Hafif Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Hafif Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Isı Pompası Dış Ünitesi HP M",
+        "type": "Orta Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Orta Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Isı Pompası Dış Ünitesi HP H",
+        "type": "Ağır Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Ağır Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Fan Coil İç Ünitesi IN FC",
+        "type": "Hafif Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Hafif Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Fan Coil İç Ünitesi IN FC",
+        "type": "OrtaTip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "OrtaTip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Fan Coil İç Ünitesi IN FC",
+        "type": "Ağır Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Ağır Tip Isı Pompası Dış Ünitesi"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "elektrikliIsitici": {
+    "title": "ORCA HEATER",
+    "subtitle": "Elektrikli Isıtıcı",
+    "intro": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı; Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı",
+    "models": [
+      {
+        "name": "Elektrikli Isıtıcı EH-R",
+        "type": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı"
+      },
+      {
+        "name": "Elektrikli Isıtıcı EH-C",
+        "type": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "suluIsitici": {
+    "title": "ORCA COIL",
+    "subtitle": "Termal Batarya",
+    "intro": "Sıcak Su Bataryası; Soğuk su Bataryası; DX Batarya; Buhar Bataryası",
+    "models": [
+      {
+        "name": "Termal Batarya HW",
+        "type": "Sıcak Su Bataryası",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Sıcak Su Bataryası"
+      },
+      {
+        "name": "Termal Batarya CW",
+        "type": "Soğuk su Bataryası",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Soğuk su Bataryası"
+      },
+      {
+        "name": "Termal Batarya DX D",
+        "type": "DX Batarya",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "DX Batarya"
+      },
+      {
+        "name": "Termal Batarya ST",
+        "type": "Buhar Bataryası",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Buhar Bataryası"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "orcaHx": {
+    "title": "ORCA HX",
+    "subtitle": "Isı Eşanjörü",
+    "intro": "Rotary Tip Isı Geri Kazanım Modülü; Selülozik Reküparatör Modulü; Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı; Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)",
+    "models": [
+      {
+        "name": "Isı Eşanjörü R",
+        "type": "Rotary Tip Isı Geri Kazanım Modülü",
+        "image": "/images/products/caracal.png",
+        "description": "Rotary Tip Isı Geri Kazanım Modülü"
+      },
+      {
+        "name": "Isı Eşanjörü C",
+        "type": "Selülozik Reküparatör Modulü",
+        "image": "/images/products/caracal.png",
+        "description": "Selülozik Reküparatör Modulü"
+      },
+      {
+        "name": "Isı Eşanjörü AR-R",
+        "type": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı",
+        "image": "/images/products/caracal.png",
+        "description": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı"
+      },
+      {
+        "name": "Isı Eşanjörü AR-H",
+        "type": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)",
+        "image": "/images/products/caracal.png",
+        "description": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "remoraAksesuarlari": {
+    "title": "REMORA",
+    "subtitle": "HVAC Aksesuarları",
+    "intro": "Kendine özgü yapışkan diskiyle büyük deniz canlılarına tutunarak yol alan Remora, doğada kusursuz bir adaptasyon örneğidir. Hem sabitlenme hem de enerji verimliliği sağlayan bu stratejisi, fan sistemlerinde kullanılan bağlantı ve montaj aksesuarlarına ilham verir.\n\nFan aksesuarları; Remora’nın doğadaki fonksiyonunu yansıtarak, sistemin güvenli bir şekilde sabitlenmesini, titreşimden arındırılmasını ve hava akışının kontrollü yönlendirilmesini sağlar. Tıpkı Remora’nın taşıyıcısıyla kurduğu uyum gibi, bu parçalar da fan sisteminin bütünlüğünü ve verimliliğini destekler.",
+    "models": [
+      {
+        "name": "Remora SF",
+        "type": "Yatay Bağlantı Ayağı",
+        "image": "/images/products/remora-sf.png",
+        "description": "Yatay Bağlantı Ayağı"
+      },
+      {
+        "name": "Remora VSF",
+        "type": "Dikey Bağlantı Ayağı",
+        "image": "/images/products/remora-sf.png",
+        "description": "Dikey Bağlantı Ayağı"
+      },
+      {
+        "name": "Remora FJ",
+        "type": "Esnek Bağlantı",
+        "image": "/images/products/remora-fj.png",
+        "description": "Esnek Bağlantı"
+      },
+      {
+        "name": "Remora CF",
+        "type": "Karşı Flanş",
+        "image": "/images/products/remora-cf.png",
+        "description": "Karşı Flanş"
+      },
+      {
+        "name": "Remora FJCF",
+        "type": "Esnek Bağlantılı Tekli Karşı Flanş",
+        "image": "/images/products/remora-fj.png",
+        "description": "Esnek Bağlantılı Tekli Karşı Flanş"
+      },
+      {
+        "name": "Remora FJ2CF",
+        "type": "Esnek Bağlantılı İkili Karşı Flanş",
+        "image": "/images/products/remora-fj2f.png",
+        "description": "Esnek Bağlantılı İkili Karşı Flanş"
+      },
+      {
+        "name": "Remora FJCF-F400",
+        "type": "F400 Esnek Bağlantılı Tekli Karşı Flanş",
+        "image": "/images/products/remora-fj.png",
+        "description": "F400 Esnek Bağlantılı Tekli Karşı Flanş"
+      },
+      {
+        "name": "Remora FJ2CF-F400",
+        "type": "F400 Esnek Bağlantılı İkili Karşı Flanş",
+        "image": "/images/products/remora-fj2f.png",
+        "description": "F400 Esnek Bağlantılı İkili Karşı Flanş"
+      },
+      {
+        "name": "Remora R-FJCF",
+        "type": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş",
+        "image": "/images/products/remora-fj.png",
+        "description": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş"
+      },
+      {
+        "name": "Remora R-FJ2CF",
+        "type": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş",
+        "image": "/images/products/remora-fj2f.png",
+        "description": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş"
+      },
+      {
+        "name": "Remora PM",
+        "type": "Tel Kafes (Koruma Kafesi)",
+        "image": "/images/products/remora-pm.png",
+        "description": "Tel Kafes (Koruma Kafesi)"
+      },
+      {
+        "name": "Remora IC",
+        "type": "Giriş Konisi",
+        "image": "/images/products/remora-ic.png",
+        "description": "Giriş Konisi"
+      },
+      {
+        "name": "Remora IH",
+        "type": "Kovan Tipi Fan Denetim Kapağı",
+        "image": "/images/products/remora-ic.png",
+        "description": "Kovan Tipi Fan Denetim Kapağı"
+      },
+      {
+        "name": "Remora S",
+        "type": "Silindirik Susturucu",
+        "image": "/images/products/remora-s.png",
+        "description": "Silindirik Susturucu"
+      },
+      {
+        "name": "Remora SP",
+        "type": "Podlu Silindirik Susturucu",
+        "image": "/images/products/remora-s.png",
+        "description": "Podlu Silindirik Susturucu"
+      },
+      {
+        "name": "Remora RS",
+        "type": "Dikdörtgen Susturucu",
+        "image": "/images/products/remora-rs.png",
+        "description": "Dikdörtgen Susturucu"
+      },
+      {
+        "name": "Remora RED",
+        "type": "Redüksiyon",
+        "image": "/images/products/remora-red.png",
+        "description": "Redüksiyon"
+      },
+      {
+        "name": "Remora SS",
+        "type": "Soket Susturucu",
+        "image": "/images/products/remora-ss.png",
+        "description": "Soket Susturucu"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "zamanlamaKontrol": {
+    "title": "ZAMANLAMA ve KONTROL CİHAZLARI",
+    "subtitle": "CONTROL & TIMING",
+    "intro": "Hız Kontrol Ünitesi; Dijital Zaman Ayar Rölesi; Mekanik Zaman Ayar Rölesi",
+    "models": [
+      {
+        "name": "Timer SCU",
+        "type": "Hız Kontrol Ünitesi",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Hız Kontrol Ünitesi"
+      },
+      {
+        "name": "Timer DTR",
+        "type": "Dijital Zaman Ayar Rölesi",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Dijital Zaman Ayar Rölesi"
+      },
+      {
+        "name": "Timer MTR",
+        "type": "Mekanik Zaman Ayar Rölesi",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Mekanik Zaman Ayar Rölesi"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   }
 }

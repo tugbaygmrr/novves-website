@@ -1,8 +1,9 @@
-import Image from "next/image";
+import { ProductModelCardsGrid } from "@/components/product-model-cards-grid";
 import { ProductStandardMedia } from "@/components/product-standard-media";
 import { ProductPageJsonLd } from "@/components/seo/product-page-json-ld";
 import Link from "next/link";
 import { getProductCatalogUi } from "@/lib/product-catalog-ui";
+import { productImageShadowClass, resolveDefaultModelImage } from "@/lib/product-model-media";
 import type { Locale } from "@/i18n/config";
 
 export type ProductModel = {
@@ -27,6 +28,7 @@ type ProductDetailDictionary = {
     productFamily: string;
     productRange: string;
     products: string;
+    readLess: string;
     teamReady: string;
     technicalSupport: string;
     technicalSupportRequest: string;
@@ -58,14 +60,6 @@ function introParagraphs(intro: string): string[] {
   return parts.length > 0 ? parts : [intro];
 }
 
-function formatModelNumber(index: number): string {
-  return String(index + 1).padStart(2, "0");
-}
-
-function productImageShadowClass(image: string): string {
-  return /\.(jpe?g)(\?|#|$)/i.test(image) ? "" : "drop-shadow-[0_18px_30px_rgba(0,0,0,0.16)]";
-}
-
 export function ProductDetailPage({
   title,
   subtitle,
@@ -88,12 +82,7 @@ export function ProductDetailPage({
   const categoryHref = categoryCtaHref ?? `/${locale}/urunler/hava-hareketi`;
   const categoryLabel = categoryCtaLabel ?? c.allProducts;
 
-  const resolveModelImage = (image: string) => {
-    if (!image || image.endsWith("/free.jpg")) {
-      return "/images/products/heron-ah.jpg";
-    }
-    return image;
-  };
+  const resolveModelImage = (image: string) => resolveDefaultModelImage(image);
   const featuredModel = models[0];
   const modelCount = models.length;
   const modelCountLabel = modelCount === 1 ? c.model : c.models;
@@ -269,59 +258,22 @@ export function ProductDetailPage({
             </div>
             <div className="hidden h-px flex-1 bg-ink/10 sm:block" />
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3 xl:gap-6">
-            {models.map((model, index) => {
-              const modelImage = resolveModelImage(model.image);
-              return (
-              <div
-                key={model.name}
-                className="group flex h-full flex-col overflow-hidden rounded-[1.15rem] bg-sand-100/85 p-4 shadow-[0_8px_32px_-24px_rgba(15,22,36,0.16)] ring-1 ring-ink/[0.06] transition duration-300 hover:-translate-y-1 hover:bg-sand-100 hover:shadow-[0_20px_54px_-30px_rgba(15,22,36,0.3)] sm:rounded-[1.35rem] sm:p-5"
-              >
-                <ProductStandardMedia
-                  src={modelImage}
-                  alt={model.name}
-                  aspect="3/2"
-                  containerClassName="min-h-[11.5rem] sm:min-h-[12.5rem] lg:min-h-[13.5rem]"
-                  imageClassName={productImageShadowClass(modelImage)}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                >
-                  <span className="absolute left-2.5 top-2.5 rounded-full bg-ink px-2.5 py-1 font-eurostile text-[10px] font-bold tabular-nums tracking-wide text-white sm:left-3 sm:top-3">
-                    {formatModelNumber(index)}
-                  </span>
-                  <span className="absolute right-2.5 top-2.5 rounded-full bg-sand-100/90 px-2 py-1 text-[7px] font-black uppercase tracking-[0.12em] text-primary ring-1 ring-ink/[0.06] sm:right-3 sm:top-3 sm:px-2.5 sm:text-[8px] sm:tracking-[0.14em]">
-                    {c.productFamily}
-                  </span>
-                </ProductStandardMedia>
-                <div className="flex min-h-0 flex-1 flex-col pt-3.5 sm:pt-4">
-                  <div className="flex min-w-0 items-start gap-2.5 sm:gap-3">
-                    <span className="shrink-0 font-eurostile text-base font-bold tabular-nums leading-tight text-primary sm:text-lg">
-                      {formatModelNumber(index)}
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <h3 className="product-card-clamp-2 font-eurostile text-lg font-bold leading-[1.05] tracking-[-0.025em] text-ink sm:text-xl">{model.name}</h3>
-                      <p className="mt-1 truncate text-[13px] font-semibold text-primary sm:text-sm">{model.type}</p>
-                    </div>
-                  </div>
-                  <p className="product-card-clamp-3 mt-3 text-[13px] leading-6 text-secondary/72 sm:text-sm">
-                    {model.description}
-                  </p>
-                  <div className="mt-auto pt-5">
-                    <div className="flex items-center justify-between border-t border-ink/10 pt-3">
-                      <span className="text-[9px] font-bold uppercase tracking-[0.16em] text-secondary/45 sm:text-[10px] sm:tracking-[0.18em]">{c.inspect}</span>
-                      <Image
-                        src="/images/novves-logo.svg"
-                        alt="Novves"
-                        width={100}
-                        height={28}
-                        className="h-5 w-auto opacity-[0.82] transition-opacity duration-300 group-hover:opacity-100 sm:h-6"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              );
-            })}
-          </div>
+          <ProductModelCardsGrid
+            models={models.map((model) => ({
+              ...model,
+              image: resolveModelImage(model.image),
+            }))}
+            familyTitle={title}
+            locale={locale}
+            labels={{
+              productFamily: c.productFamily,
+              inspect: c.inspect,
+              detailedView: c.detailedView,
+              readLess: dict.shared.readLess,
+              technicalSupportRequest: c.technicalSupportRequest,
+            }}
+            contactHref={`/${locale}/iletisim`}
+          />
         </div>
       </section>
 

@@ -68,6 +68,22 @@ export function collectPublicPathSegments(): string[] {
     "urunler/kovan-tipi-aksiyal-fanlar",
     "urunler/mutfak-fanlari",
     "urunler/siginak-fanlari",
+    "urunler/tavukcu-fanlari",
+    "urunler/toz-toplama-uniteleri",
+    "urunler/menfez-panjurlar",
+    "urunler/filtreler",
+    "urunler/titresim-izolatorleri",
+    "urunler/otomasyon-panolari",
+    "urunler/plc-otomasyon",
+    "urunler/sensorler",
+    "urunler/kontrol-kartlari",
+    "urunler/zamanlama-kontrol",
+    "urunler/guc-elektronigi",
+    "urunler/dis-uniteler",
+    "urunler/elektrikli-isitici",
+    "urunler/sulu-isitici",
+    "urunler/orca-hx",
+    "urunler/remora",
   ];
 
   const solutionPaths = SOLUTION_NAV.map((s) => `cozumler/${s.slug}`);

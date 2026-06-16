@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { persistContactSubmission } from "@/lib/contact-submission-persist";
 import { contactSubmissionSchema } from "@/lib/admin/schemas/contact-submission";
 
 export const dynamic = "force-dynamic";
@@ -53,20 +53,18 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true });
   }
 
-  await prisma.contactSubmission.create({
-    data: {
-      name: data.name,
-      company: data.company || null,
-      email: data.email,
-      phone: data.phone || null,
-      department: data.department || null,
-      subject: data.subject || null,
-      message: data.message,
-      kvkkConsent: data.kvkkConsent,
-      ip,
-      userAgent: request.headers.get("user-agent")?.slice(0, 400) ?? null,
-    },
+  const result = await persistContactSubmission({
+    ...data,
+    ip,
+    userAgent: request.headers.get("user-agent")?.slice(0, 400) ?? null,
   });
 
-  return NextResponse.json({ success: true });
+  if (!result.ok) {
+    return NextResponse.json({ error: result.error }, { status: 500 });
+  }
+
+  return NextResponse.json({
+    success: true,
+    fallback: result.fallback === true,
+  });
 }

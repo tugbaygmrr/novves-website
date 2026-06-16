@@ -5887,5 +5887,458 @@
         "products": "CAD obsługiwany układ, przygotowanie szablonu technicznego"
       }
     ]
+  },
+  "lt": {
+    "dumanIsiTahliye": [
+      {
+        "buildingType": "Dengtos automobilių stovėjimo aikštelės",
+        "description": "CO evakuacija + dūmų pašalinimas gaisro atveju",
+        "products": "Jet Fan, dūmų ventiliatorius, sklendė"
+      },
+      {
+        "buildingType": "Kelių ir geležinkelių tuneliai",
+        "description": "Gaisro zonavimas ir oro maršrutas",
+        "products": "Jet Fan, ašinis ventiliatorius"
+      },
+      {
+        "buildingType": "Prekybos centrai (prekybos centrai)",
+        "description": "Dūmų kontrolė ir evakuacija",
+        "products": "Korinis ventiliatorius, ašinis ventiliatorius, amortizatorius"
+      },
+      {
+        "buildingType": "Stadionai ir posėdžių salės",
+        "description": "Dūmų evakavimas avarinėse situacijose",
+        "products": "Ašinis ventiliatorius, Jet Fan"
+      },
+      {
+        "buildingType": "Pramoninės gamybos įrenginiai",
+        "description": "Proceso sukeltas karštų dujų išleidimas",
+        "products": "Sraigės ventiliatorius, stogo ventiliatorius, išmetimo ventiliatorius"
+      },
+      {
+        "buildingType": "Ligoninės ir sveikatos priežiūros įstaigos",
+        "description": "Dūmų zonų suskirstymas pacientų zonose",
+        "products": "Korinio ryšio ventiliatorius, sklendė"
+      },
+      {
+        "buildingType": "oro uostai",
+        "description": "Apatinio sluoksnio dūmų pašalinimas",
+        "products": "Jet Fan, ašinis ventiliatorius, slėgio ventiliatorius"
+      },
+      {
+        "buildingType": "Sandėliai ir logistikos centrai",
+        "description": "Dūmų kontrolė esant dideliam garsui",
+        "products": "Ortakio ventiliatorius, Jet Fan, sklendė"
+      },
+      {
+        "buildingType": "Elektrinės ir generatorių patalpos",
+        "description": "Išmetimas nuo elektros gaisrų",
+        "products": "Ex-proof ventiliatorius, sraigių ventiliatorius"
+      },
+      {
+        "buildingType": "Viešbučiai ir rezidencijos (aukšti pastatai)",
+        "description": "Laiptų slėgis, dūmų pašalinimas",
+        "products": "Korinis ventiliatorius, slėgio didinimo ventiliatorius, sklendė"
+      }
+    ],
+    "konforIklimlendirme": [
+      {
+        "buildingType": "Biurų pastatai",
+        "description": "Centrinis kondicionierius, gryno oro cirkuliacija",
+        "products": "Vėdinimo įrenginys, ortakio ventiliatorius, ventiliatorius"
+      },
+      {
+        "buildingType": "Viešbučiai ir kurortai",
+        "description": "Patogus oro paskirstymas, šilumos atgavimas, tylus veikimas",
+        "products": "AHU, korinis ventiliatorius, filtras"
+      },
+      {
+        "buildingType": "Mokyklos ir universitetai",
+        "description": "Grynas oras klasėse, energijos taupymas",
+        "products": "Šilumos rekuperatorius, ortakio ventiliatorius, ventiliatorius"
+      },
+      {
+        "buildingType": "Ligoninės (komforto skyriai)",
+        "description": "Tylus ir subalansuotas oro srautas pacientų kambariuose ir koridoriuose",
+        "products": "AHU, EC Fan, Filtras"
+      },
+      {
+        "buildingType": "Prekybos centrai ir parduotuvės",
+        "description": "Komfortiškas oro kondicionierius, vienodas oro paskirstymas",
+        "products": "AHU, korinis ventiliatorius, anemostatas"
+      },
+      {
+        "buildingType": "Namai ir rezidencijos",
+        "description": "Kompaktiški sprendimai, tylios ir energiją taupančios oro sistemos",
+        "products": "Ortakio ventiliatorius, šilumos atgavimas, EC Fan"
+      },
+      {
+        "buildingType": "Bankai ir viešieji pastatai",
+        "description": "Centrinės oro kondicionavimo sistemos ir gryno oro poreikis",
+        "products": "Vėdinimo įrenginys, ventiliacija, sklendė"
+      },
+      {
+        "buildingType": "Oro uostai ir terminalai",
+        "description": "Didelio tūrio oro kondicionavimo sistemos",
+        "products": "Didelės talpos AHU, koriniai ventiliatoriai"
+      },
+      {
+        "buildingType": "Restoranai ir kavinės",
+        "description": "Kvapų kontrolė, temperatūros balanso palaikymas",
+        "products": "Korinis ventiliatorius, virtuvės išmetimo ventiliatorius, filtras"
+      },
+      {
+        "buildingType": "Sporto salės ir kūno rengybos centrai",
+        "description": "Grynas oras, didelio srauto cirkuliacija",
+        "products": "Vėdinimo įrenginys, ortakio ventiliatorius, ventiliatorius"
+      }
+    ],
+    "hijyenikFiltrasyon": [
+      {
+        "buildingType": "Operacinės ir intensyvios terapijos skyriai",
+        "description": "Mikrobiologinis filtravimas, slėgio kontrolė",
+        "products": "Higieninis AHU, HEPA filtras, UV-C ventiliatorius"
+      },
+      {
+        "buildingType": "Švarios patalpos",
+        "description": "Dalelių kontrolė, higienos lygis tarp 100-100 000 klasės",
+        "products": "HEPA sistemos ventiliatorius, slėgis AHU"
+      },
+      {
+        "buildingType": "Farmacijos gamybos įrenginiai",
+        "description": "Suderinamas su GMP, filtravimas ir slėgio valdymas",
+        "products": "Higieninis vėdinimo įrenginys, filtruojamas elementų ventiliatorius"
+      },
+      {
+        "buildingType": "Maisto gamybos sritys",
+        "description": "Higieniška oro cirkuliacija, kvapų ir dalelių kontrolė",
+        "products": "Higieninis AHU, EC Fan, filtras, nerūdijantis korpusas"
+      },
+      {
+        "buildingType": "laboratorijos",
+        "description": "Dujų ir dalelių kontrolė, neigiamo/teigiamo slėgio zonavimas",
+        "products": "HEPA Filtruotas elementų ventiliatorius, sklendė, filtras"
+      },
+      {
+        "buildingType": "Ligoninės aptarnavimo aukštai",
+        "description": "Gryno oro tiekimas, kvapų ir infekcijų rizikos kontrolė",
+        "products": "Higieninis AHU, EC Fan, Ortakio ventiliatorius, filtras"
+      },
+      {
+        "buildingType": "Judrios virtuvės (pramonės ir medicinos)",
+        "description": "Alyvos dulksna + oro kokybės kontrolė, reikalingas plaunamas filtras",
+        "products": "Virtuvės ventiliatorius, korinis ventiliatorius, filtras"
+      },
+      {
+        "buildingType": "Gyvulininkystės ir veterinarijos klinikų teritorijos",
+        "description": "Mikroorganizmų ir blogo kvapo kontrolė",
+        "products": "Ventiliatorius su filtru, EC Fan, šilumos atgavimas"
+      }
+    ],
+    "endustriyelHavaYonetimi": [
+      {
+        "buildingType": "Sunkiosios pramonės įrenginiai",
+        "description": "Aukštos temperatūros, dulkių, dalelių ir cheminių dujų pašalinimas",
+        "products": "Pramoninis sraigių ventiliatorius, išmetimo ventiliatorius, sklendė"
+      },
+      {
+        "buildingType": "Suvirinimo, dažymo ir miltelinės gamybos linijos",
+        "description": "Vietinis siurbimas, išmetimas, neigiamo slėgio zonavimas",
+        "products": "Išmetimo ventiliatorius, dulkių surinkimo ventiliatorius"
+      },
+      {
+        "buildingType": "Liejyklos ir metalurgijos įmonės",
+        "description": "Aukštos temperatūros ir dūmų pašalinimas",
+        "products": "Aukštai temperatūrai atsparus ašinis ventiliatorius, stogo ventiliatorius"
+      },
+      {
+        "buildingType": "Popieriaus, pakuočių ir tekstilės gamyba",
+        "description": "Pluošto, dulkių ir drėgmės pašalinimas, energijos atgavimas",
+        "products": "EC Fan, šilumos atgavimas, korinis ventiliatorius"
+      },
+      {
+        "buildingType": "Elektrinės",
+        "description": "Generatoriaus patalpos vėdinimas, išmetamųjų dujų pašalinimas",
+        "products": "Sraigių ventiliatorius, išmetimo ventiliatorius, Ex-proof ventiliatorius"
+      },
+      {
+        "buildingType": "Automobilių ir mašinų surinkimo linijos",
+        "description": "Šilumos ir dūmų šalinimas, energijos atgavimas",
+        "products": "Ląstelių ventiliatorius, kanalinis ventiliatorius, sraigių ventiliatorius"
+      },
+      {
+        "buildingType": "Perdirbimo ir atliekų apdorojimo įrenginiai",
+        "description": "Kvapo, dūmų ir dalelių pašalinimas",
+        "products": "Išmetimo ventiliatorius, ortakio ventiliatorius, filtras"
+      },
+      {
+        "buildingType": "Logistikos ir sandėliavimo zonos",
+        "description": "Karšto oro išleidimas, oro cirkuliacija",
+        "products": "Ašinis ventiliatorius, stogo ventiliatorius, korinis ventiliatorius"
+      },
+      {
+        "buildingType": "Medienos ir baldų dirbtuvės",
+        "description": "Skiedrų, dulkių ir tirpiklio pašalinimas",
+        "products": "Dulkių surinkimo ventiliatorius, sklendė, filtras"
+      }
+    ],
+    "hayvancilikTesisleri": [
+      {
+        "buildingType": "Vištienos fermos",
+        "description": "Didelio srauto išmetimo sistema, skirta intensyviai drėgmei, šilumai ir dujoms pašalinti",
+        "products": "Paukštienos ventiliatorius, išmetimo ventiliatorius"
+      },
+      {
+        "buildingType": "Kiaušinių gamybos padaliniai",
+        "description": "Linijinė oro cirkuliacija neleidžia kauptis šilumai ir dujoms",
+        "products": "Ortakių ventiliatorius, paukštienos ventiliatorius"
+      },
+      {
+        "buildingType": "Inkubavimo patalpos",
+        "description": "Tikslus ventiliatoriaus valdymas, užtikrinantis stabilią temperatūrą ir oro judėjimą",
+        "products": "EC Fan, vištienos ventiliatorius"
+      },
+      {
+        "buildingType": "Galvijų ir tvartų vėdinimas",
+        "description": "Drėgmės, amoniako ir CO₂ kontrolė su oro cirkuliacija",
+        "products": "Ašinis ventiliatorius, išmetimo ventiliatorius"
+      }
+    ],
+    "trafoEnerjiOdalari": [
+      {
+        "buildingType": "Pastotės (OG / AG)",
+        "description": "Privalomas įkaitusio oro ir dujų pašalinimas, 24/7 patikimumas",
+        "products": "Ašinis ventiliatorius, stogo ventiliatorius"
+      },
+      {
+        "buildingType": "Generatorių kambariai",
+        "description": "Nuolatinis išmetimas prieš variklių šilumos išmetimą",
+        "products": "Sraigės ventiliatorius, išmetimo ventiliatorius"
+      },
+      {
+        "buildingType": "Energijos perdavimo pastotės",
+        "description": "Kompaktiški ventiliatoriaus sprendimai, apsaugantys nuo nekontroliuojamo šildymo",
+        "products": "Ortakio ventiliatorius, sieninis ventiliatorius"
+      },
+      {
+        "buildingType": "Duomenų centro energijos kambariai",
+        "description": "Transformatorius/UPS patalpos, kurios turi veikti stabilioje temperatūroje",
+        "products": "EC Fan, korinis ventiliatorius"
+      }
+    ],
+    "seraTarimsal": [
+      {
+        "buildingType": "Stiklo arba polikarbonato šiltnamis",
+        "description": "Temperatūros, drėgmės ir CO₂ lygio kontrolė; oro cirkuliacija",
+        "products": "Ašinis ventiliatorius, vištienos ventiliatorius, kanalinis ventiliatorius"
+      },
+      {
+        "buildingType": "Plastikinis tunelis šiltnamis",
+        "description": "Žemo slėgio oro perdavimas natūraliai ventiliacijai palengvinti",
+        "products": "Vištienos ventiliatorius, sieninis ventiliatorius"
+      },
+      {
+        "buildingType": "Išmanusis šiltnamis (IoT valdomas)",
+        "description": "Automatinis ventiliatoriaus valdymas pagal drėgmės, temperatūros ir šviesos jutiklius",
+        "products": "EC Fan, Automatikos plokštė"
+      },
+      {
+        "buildingType": "Atogrąžų/šalto klimato šiltnamiai",
+        "description": "Dviejų krypčių oro judėjimas ir automatinis maršrutas pagal klimatą",
+        "products": "Dviejų krypčių ašinis ventiliatorius, slopintuvas"
+      },
+      {
+        "buildingType": "Arboristikos ir žolės gamybos šiltnamiai",
+        "description": "Lengvos ventiliatorių sistemos šilumos išsklaidymo ir drėgmės balansavimui",
+        "products": "Ortakio tipo ventiliatorius, EC Fan"
+      }
+    ],
+    "atexPatlamaKoruma": [
+      {
+        "buildingType": "Chemijos ir naftos chemijos gamyklos",
+        "description": "Saugi vėdinimas sprogioje dujų ir garų aplinkoje",
+        "products": "Ex-proof Ašiniai ir sraigių ventiliatoriai"
+      },
+      {
+        "buildingType": "Kuro sandėliavimo ir pildymo vietos",
+        "description": "Degiųjų dujų pašalinimas iš aplinkos",
+        "products": "Ex-proof Sieninis ventiliatorius, sklendė"
+      },
+      {
+        "buildingType": "Dažų parduotuvės ir gamyba naudojant tirpiklius",
+        "description": "Saugus išmetimas nuo statinės elektros ir tirpiųjų dujų kaupimosi",
+        "products": "Ex-proof Ortakio ventiliatorius, dulkių surinkimas"
+      },
+      {
+        "buildingType": "Miltų, cukraus, cheminių miltelių įrenginiai",
+        "description": "Antistatinis ventiliatorius ir uždaros sistemos nuo dulkių sprogimo",
+        "products": "Ex-proof ašinis ventiliatorius, ciklono sistema"
+      },
+      {
+        "buildingType": "Farmacijos ir medicininės chemijos gamybos sritys",
+        "description": "Filtruojamos ir kontroliuojamos slėgio ventiliatorių sistemos nuo degių komponentų",
+        "products": "Higieninis ventiliatorius Ex-proof, išmetimo ventiliatorius su filtru"
+      },
+      {
+        "buildingType": "Dujų užpildymo ir analizės laboratorijos",
+        "description": "Saugus ir tylus išmetimas jautriai dujų aplinkai",
+        "products": "Kompaktiškas Ex-proof ventiliatorius, sklendė"
+      }
+    ],
+    "akilliOtomasyon": [
+      {
+        "buildingType": "Išmanieji pastatai (prekybos centras, biuras, ligoninė)",
+        "description": "BMS integracija, temperatūros / drėgmės / dujų automatinis valdymas",
+        "products": "PLC Skydas, jutiklis, signalų laidai, automatinis amortizatorius"
+      },
+      {
+        "buildingType": "Pramonės įrenginiai",
+        "description": "Procesu pagrįstas ventiliatorių valdymas, nuotolinis stebėjimas, scenarijų valdymas",
+        "products": "Automatikos skydelis, relė, automatinis ventiliatoriaus modulis"
+      },
+      {
+        "buildingType": "Tunelių ir parkavimo projektai",
+        "description": "Integruotos sistemos su Jet fan ir CO jutikliais",
+        "products": "Jet Fan, CO detektorius su jutikliu, automatikos skydeliu"
+      },
+      {
+        "buildingType": "Būstas ir rezidencijos",
+        "description": "Kompaktiškos valdymo sistemos, ŠVOK sprendimai palaikomi patogiomis sąsajomis",
+        "products": "Mini PLC, išmanusis jutiklis, kompaktiškas ventiliatorius"
+      },
+      {
+        "buildingType": "Ligoninės ir švarios patalpos",
+        "description": "Slėgio skirtumo, dalelių lygio ir filtrų užterštumo jutikliai",
+        "products": "HEPA ventiliatorius, F9 jutiklis, automatinis amortizatorius"
+      },
+      {
+        "buildingType": "Duomenų centrai",
+        "description": "Temperatūra pagrįstas vėdinimo valdymas, perteklinė kontrolė",
+        "products": "Dviejų modulių, temperatūros jutikliu valdomi EC ventiliatoriai"
+      }
+    ],
+    "konutHavalandirma": [
+      {
+        "buildingType": "Individualios rezidencijos (butai ir vilos)",
+        "description": "Tylūs, erdvę taupantys, energiją taupantys sprendimai",
+        "products": "Ortakio ventiliatorius, šilumos rekuperatorius, kompaktiškas AHU"
+      },
+      {
+        "buildingType": "Gyvenamųjų namų ir prabangaus būsto projektai",
+        "description": "Estetiškai atrodančios, tylios ir valdomos sistemos",
+        "products": "EC Fan, korinis ventiliatorius, ventiliatorius"
+      },
+      {
+        "buildingType": "Individualūs namai",
+        "description": "Šviežio oro tiekimas, vonios ir virtuvės ištraukimas",
+        "products": "Vonios ventiliatorius, virtuvės ventiliatorius, ortakio ventiliatorius"
+      },
+      {
+        "buildingType": "Maži namai ir surenkamieji pastatai",
+        "description": "Kompaktiškas dydis, lengvai surenkami gaminiai",
+        "products": "EC Fan, kompaktiškas kanalinis ventiliatorius"
+      },
+      {
+        "buildingType": "Svetainės bendros erdvės",
+        "description": "Išmetimo ventiliatoriai ir centrinis komforto sprendimas",
+        "products": "Sieninis ventiliatorius, korinis ventiliatorius"
+      }
+    ],
+    "marinOffshore": [
+      {
+        "buildingType": "Laivų mašinų skyriai",
+        "description": "Nuolatinis išmetimas ir grynas oras esant aukštai temperatūrai, išmetamosioms dujoms ir vibracijai",
+        "products": "Ašinis ventiliatorius, radialinis ventiliatorius, ATEX Fan"
+      },
+      {
+        "buildingType": "Generatorių ir siurblių patalpos",
+        "description": "Degiųjų dujų ir šilumos išsiskyrimo pavojus; sandarus zonavimas ir automatikos integravimas",
+        "products": "Ašinis ventiliatorius, sklendė, automatikos skydelis"
+      },
+      {
+        "buildingType": "Kruiziniai laivai ir keltai",
+        "description": "Komfortiška ventiliacija keleivių ir įgulos vietose",
+        "products": "Ašinis ventiliatorius, kanalinis ventiliatorius"
+      },
+      {
+        "buildingType": "Krovininiai laivai",
+        "description": "Krovinių skyriaus ir mašinų skyriaus vėdinimas",
+        "products": "Pramoninis ventiliatorius, ATEX Fan"
+      },
+      {
+        "buildingType": "Užsieninės platformos",
+        "description": "Jūros platformos vėdinimas ir nepertraukiamas išmetimas",
+        "products": "ATEX Fan, ašinis ventiliatorius, priešgaisrinė sklendė"
+      },
+      {
+        "buildingType": "FPSO blokai ir laivų statyklos projektai",
+        "description": "Klasės patvirtintas jūrinis ventiliatorius, dūmų šalinimo ir automatikos integravimas",
+        "products": "Jūrinis ventiliatorius, dūmų ventiliatorius, sklendė, automatikos skydas"
+      },
+      {
+        "buildingType": "Jachtos ir Mega jachtos",
+        "description": "Komfortiška ventiliacija ir mašinų skyriaus išmetimas",
+        "products": "Ortakio ventiliatorius, EC Fan"
+      }
+    ],
+    "projeBazliOzelImalat": [
+      {
+        "buildingType": "Sektorius / projekto tipas",
+        "description": "Paaiškinimas",
+        "products": "Projektu pagrįstų sprendimų tipai"
+      },
+      {
+        "buildingType": "Architektūriniai keitimo projektai",
+        "description": "Specialūs matmenys / sujungimo reikalavimas, pagrįstas esama pastato infrastruktūra",
+        "products": "Pagal užsakymą pagamintas elementų / korpuso dizainas"
+      },
+      {
+        "buildingType": "Projektai su akustiniais apribojimais (viešbučiai, studijos ir kt.)",
+        "description": "Programos, kurioms reikalingas didelis našumas esant triukšmo riboms",
+        "products": "Mažo triukšmo ventiliatoriaus dizainas, integruotas duslintuvas"
+      },
+      {
+        "buildingType": "Aukšti pastatai ir sunkiai pravažiuojamos vietos",
+        "description": "Lengvi gaminiai, kurie gali tilpti į siaurą erdvę veleno viduje",
+        "products": "Kompaktiškas ventiliatorius, modulinio surinkimo gaminio dizainas"
+      },
+      {
+        "buildingType": "Prestij būstas ir prabangūs architektūros projektai",
+        "description": "Estetinė išvaizda, paviršiaus danga ir minimalus garso tikslas",
+        "products": "Dažyta išorė, paslėptas montavimas, nematomas oro išėjimas"
+      },
+      {
+        "buildingType": "Specialios maisto ir medicinos architektūros sritys",
+        "description": "Antibakterinė medžiaga, lengvai valomas paviršius ir speciali filtro struktūra",
+        "products": "Nerūdijančio plieno korpusas, vidinis dizainas su UV filtru"
+      }
+    ],
+    "cfdDanismanlik": [
+      {
+        "buildingType": "Dengtos automobilių stovėjimo aikštelės",
+        "description": "Jet fan išdėstymas, gaisro scenarijus, CO plitimo modeliavimas",
+        "products": "CFD Analizė, Jet Fan Padėties nustatymas, Techninė byla"
+      },
+      {
+        "buildingType": "tuneliai",
+        "description": "Tunelio vėdinimo scenarijus, slėgio ir srauto analizė",
+        "products": "Srauto analizė, jet fan krypties optimizavimas"
+      },
+      {
+        "buildingType": "Oro uostas ir metro stotys",
+        "description": "Gaisro zonavimas, dūmų sluoksnio modeliavimas",
+        "products": "Projekto bylos rengimas, apskaitos ataskaita"
+      },
+      {
+        "buildingType": "Didelės apimties statiniai, tokie kaip prekybos centrai ir stadionai",
+        "description": "Dūmų evakavimo scenarijai ir dizainai, tinkami keleivių evakuacijai",
+        "products": "Priešgaisrinės inžinerijos pagalba, scenarijų konsultavimas"
+      },
+      {
+        "buildingType": "Architektūros ir projektų biurai",
+        "description": "Jet fan programinė įranga padedamas tyrinėjimas ir skaičiavimas",
+        "products": "CAD palaikomas maketavimas, techninio šablono paruošimas"
+      }
+    ]
   }
 }

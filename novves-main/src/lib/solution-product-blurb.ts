@@ -20,6 +20,18 @@ const FAMILY_NAME_TO_PRODUCTS_SECTION: Record<string, string> = {
   CARACAL: "isiGeriKazanimCihazlari",
   BUTTERFLY: "mutfakFanlari",
   FOX: "siginakFanlari",
+  CHICKEN: "tavukcuFanlari",
+  ELEPHANT: "tozToplamaUniteleri",
+  ALPACA: "menfezPanjurlar",
+  SCALLOP: "filtreler",
+  ROO: "titresimIzolatorleri",
+  HAWK: "otomasyonPanolari",
+  PLC: "plcOtomasyon",
+  SENSÖR: "sensorler",
+  NEXUS: "kontrolKartlari",
+  "ZAMANLAMA VE KONTROL CİHAZLARI": "zamanlamaKontrol",
+  LION: "gucElektronigi",
+  REMORA: "remoraAksesuarlari",
 };
 
 type ModelRow = { image?: string; description?: string };

@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 import type { ReactNode } from "react";
 
-/** Tüm ürün kartları — tek tip bej kanvas (çözüm kütüphanesi ile aynı) */
-export const PRODUCT_STANDARD_MEDIA_BG = "#ecebe6";
+/** Tüm ürün kartları — site CSS değişkeni ile birebir aynı ton */
+export const PRODUCT_STANDARD_MEDIA_BG = "var(--sand-200)";
 
 export type ProductMediaAspect = "3/2" | "4/3" | "square" | "none";
 
@@ -45,7 +45,6 @@ export function productImageNeedsMultiply(src: string): boolean {
       /ae-eh-elektrikli-isitici\.png$/i.test(pathOnly) ||
       /alpaca-am\.png$/i.test(pathOnly) ||
       /cyclone\.png$/i.test(pathOnly) ||
-      /remora\.png$/i.test(pathOnly) ||
       /frekans-inventoru\.png$/i.test(pathOnly)
     ) {
       return true;

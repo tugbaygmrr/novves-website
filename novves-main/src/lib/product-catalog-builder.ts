@@ -8,6 +8,7 @@ import {
   CATEGORY_ENTITY_BRAND,
   CATEGORY_ENTITY_KEYS,
   CATALOG_FAMILY_META,
+  catalogMetaForName,
   resolveCoolingCatalogImage,
 } from "@/lib/product-catalog-family-meta";
 import { getProductFamilyPageBlurb } from "@/lib/solution-product-blurb";
@@ -153,7 +154,7 @@ function fromProductsArray(
 ): ProductCatalogItem[] {
   return rows.map((p) => {
     const name = trim(p.name);
-    const meta = CATALOG_FAMILY_META[name.toUpperCase()];
+    const meta = catalogMetaForName(name);
     return buildItem(locale, productsDict, {
       id: name,
       name,
@@ -180,6 +181,7 @@ function fromAccessories(
 
   return rows.map((a) => {
     const name = trim(a.name);
+    const meta = catalogMetaForName(name);
     const image = resolvePublicImage(trim(a.image), {
       fallback: accessoryFallback,
       label: name,
@@ -188,8 +190,9 @@ function fromAccessories(
       id: slugifyId(name),
       name,
       type: getProductCatalogUi(locale as Locale).accessoryType,
-      image,
+      image: meta?.image ?? image,
       description: trim(a.description),
+      leafSlug: meta?.leafSlug,
       subModels: [],
       comingSoon: false,
       specFlow: "",

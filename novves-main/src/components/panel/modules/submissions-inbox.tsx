@@ -22,7 +22,7 @@ interface Submission {
   email: string;
   company: string | null;
   phone: string | null;
-  subject: string;
+  subject: string | null;
   message: string;
   status: string;
   createdAt: string;

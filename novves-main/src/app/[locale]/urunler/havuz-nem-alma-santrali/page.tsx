@@ -26,6 +26,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       intro={t.intro}
       tableHeaders={t.tableHeaders}
       models={t.models}
+      productLines={t.productLines}
       heroImage="/images/products/dolphin-main.jpg"
       locale={locale}
       dict={dict.products}

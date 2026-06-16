@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ProductStandardMedia } from "@/components/product-standard-media";
+import { ProductModelLinesSection } from "@/components/product-model-lines-section";
+import type { ProductModel } from "@/components/product-detail-page";
 import { getProductCatalogUi } from "@/lib/product-catalog-ui";
 import type { Locale } from "@/i18n/config";
 
@@ -29,11 +31,13 @@ type ProductTableDetailDictionary = {
     home: string;
     model: string;
     models: string;
+    inspect: string;
     lookingForProduct: string;
     productFamilies: string;
     productFamily: string;
     productRange: string;
     products: string;
+    readLess: string;
     teamReady: string;
     technicalSupport: string;
     technicalSupportRequest: string;
@@ -46,6 +50,7 @@ export type ProductTableDetailPageProps = {
   intro: string;
   tableHeaders: ProductTableHeaders;
   models: ProductTableRow[];
+  productLines?: ProductModel[];
   heroImage: string;
   locale: string;
   dict: ProductTableDetailDictionary;
@@ -70,12 +75,13 @@ export function ProductTableDetailPage({
   intro,
   tableHeaders,
   models,
+  productLines = [],
   heroImage,
   locale,
   dict,
 }: ProductTableDetailPageProps) {
   const introParts = introParagraphs(intro);
-  const modelCount = models.length;
+  const modelCount = productLines.length || models.length;
   const modelCountLabel = modelCount === 1 ? dict.shared.model : dict.shared.models;
   const solutionsHref = `/${locale}/cozumler/konfor-iklimlendirme-sistemleri`;
   const categoryHref = `/${locale}/urunler/iklimlendirme`;
@@ -229,6 +235,25 @@ export function ProductTableDetailPage({
             </div>
           </div>
         </section>
+      ) : null}
+
+      {productLines.length > 0 ? (
+        <ProductModelLinesSection
+          id="product-lines"
+          productLines={productLines}
+          familyTitle={title}
+          locale={locale}
+          labels={{
+            productFamilies: dict.shared.productFamilies,
+            productRange: dict.shared.productRange,
+            productFamily: dict.shared.productFamily,
+            inspect: dict.shared.inspect,
+            detailedView: dict.shared.detailedView,
+            readLess: dict.shared.readLess,
+            technicalSupportRequest: dict.shared.technicalSupportRequest,
+          }}
+          contactHref={`/${locale}/iletisim`}
+        />
       ) : null}
 
       <section id="product-models-table" className="relative scroll-mt-24 overflow-hidden bg-sand-200 py-9 sm:scroll-mt-28 sm:py-12 lg:py-14">

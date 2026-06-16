@@ -31,6 +31,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       subtitle={t.subtitle}
       intro={t.intro}
       specs={t.specs}
+      productLines={t.productLines}
       heroImage="/images/products/tiger-main.jpg"
       galleryImages={[...TIGER_GALLERY]}
       locale={locale}

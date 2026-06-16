@@ -66,8 +66,11 @@ export function resolveCoolingCatalogImage(
   const explicit = rowImage?.trim();
   if (explicit) return explicit;
   if (meta?.image) return meta.image;
-  if (isChillerCatalogName(name) || isCoolingOutdoorUnitName(name)) return CHILLER_CATALOG_IMAGE;
-  if (isElectricHeaterCatalogName(name) || isWaterCoilHeaterCatalogName(name)) {
+  const key = name.trim().toUpperCase();
+  if (key === "ORCA" || key === "POLAR BEAR" || isChillerCatalogName(name) || isCoolingOutdoorUnitName(name)) {
+    return CHILLER_CATALOG_IMAGE;
+  }
+  if (key === "ORCA HEATER" || key === "ORCA COIL" || key === "ORCA HX" || isElectricHeaterCatalogName(name) || isWaterCoilHeaterCatalogName(name)) {
     return ELECTRIC_HEATER_CATALOG_IMAGE;
   }
   return "/images/products/marlin.png";
@@ -88,13 +91,18 @@ export const CATALOG_FAMILY_META: Record<string, CatalogFamilyMeta> = {
   DOLPHIN: { image: "/images/products/dolphin-pre.png", leafSlug: "havuz-nem-alma-santrali" },
   CARACAL: { image: "/images/products/caracal.png", leafSlug: "isi-geri-kazanim-cihazlari" },
   HOUND: { image: "/images/products/hound-al.png", leafSlug: "damperler" },
-  ALPACA: { image: "/images/products/alpaca-am.png" },
-  SCALLOP: { image: "/images/products/cyclone.png" },
-  ROO: { image: "/images/products/yayli-titresim-izolatoru.png" },
-  REMORA: { image: "/images/products/remora.png" },
+  ALPACA: { image: "/images/products/alpaca-am.png", leafSlug: "menfez-panjurlar" },
+  SCALLOP: { image: "/images/products/cyclone.png", leafSlug: "filtreler" },
+  ROO: { image: "/images/products/yayli-titresim-izolatoru.png", leafSlug: "titresim-izolatorleri" },
+  REMORA: { image: "/images/products/remora.png", leafSlug: "remora" },
+  ORCA: { image: CHILLER_CATALOG_IMAGE },
+  "POLAR BEAR": { image: CHILLER_CATALOG_IMAGE, leafSlug: "dis-uniteler" },
+  "ORCA HEATER": { image: ELECTRIC_HEATER_CATALOG_IMAGE, leafSlug: "elektrikli-isitici" },
+  "ORCA COIL": { image: ELECTRIC_HEATER_CATALOG_IMAGE, leafSlug: "sulu-isitici" },
+  "ORCA HX": { image: "/images/products/caracal.png", leafSlug: "orca-hx" },
   "CHILLER (POLAR BEAR)": { image: CHILLER_CATALOG_IMAGE },
-  CHILLER: { image: CHILLER_CATALOG_IMAGE },
-  "DIŞ ÜNİTELER": { image: CHILLER_CATALOG_IMAGE },
+  CHILLER: { image: CHILLER_CATALOG_IMAGE, leafSlug: "dis-uniteler" },
+  "DIŞ ÜNİTELER": { image: CHILLER_CATALOG_IMAGE, leafSlug: "dis-uniteler" },
   "OUTDOOR UNITS": { image: CHILLER_CATALOG_IMAGE },
   "JEDNOSTKI ZEWNĘTRZNE": { image: CHILLER_CATALOG_IMAGE },
   "UNIDADES EXTERIORES": { image: CHILLER_CATALOG_IMAGE },
@@ -102,27 +110,60 @@ export const CATALOG_FAMILY_META: Record<string, CatalogFamilyMeta> = {
   "СЫРТҚЫ БӨЛІМДЕР": { image: CHILLER_CATALOG_IMAGE },
   "ВОДИҲОИ БЕРУНӢ": { image: CHILLER_CATALOG_IMAGE },
   "室外机": { image: CHILLER_CATALOG_IMAGE },
-  "ELEKTRİKLİ ISITICI": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
+  "ELEKTRİKLİ ISITICI": { image: ELECTRIC_HEATER_CATALOG_IMAGE, leafSlug: "elektrikli-isitici" },
   "ELEKTRİKLİ ISITICILAR": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
   "ELECTRIC HEATERS": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
   "GRZEJNIKI ELEKTRYCZNE": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
   "CALENTADORES ELÉCTRICOS": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
   "SULU BATARYA": { image: "/images/products/nautilus-lfp.png" },
-  "SULU ISITICI": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
+  "SULU ISITICI": { image: ELECTRIC_HEATER_CATALOG_IMAGE, leafSlug: "sulu-isitici" },
   "WATER COIL": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
   "WĘŻOWNICA WODNA": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
   "BOBINA DE AGUA": { image: ELECTRIC_HEATER_CATALOG_IMAGE },
-  HAWK: { image: "/images/products/otomasyon-pano.png" },
-  PANO: { image: "/images/products/otomasyon-pano.png" },
-  PANEL: { image: "/images/products/otomasyon-pano.png" },
-  PLC: { image: "/images/products/otomasyon-plc.png" },
-  SENSÖR: { image: "/images/products/otomasyon-sensor.png" },
-  SENSOR: { image: "/images/products/otomasyon-sensor.png" },
-  "KONTROL KARTLARI - ANAHTARLAR": { image: "/images/products/otomasyon-kontrol-kartlari.png" },
-  LION: { image: "/images/products/frekans-inventoru.png" },
-  "GÜÇ ELEKTRONİĞİ": { image: "/images/products/frekans-inventoru.png" },
+  HAWK: { image: "/images/products/otomasyon-pano.png", leafSlug: "otomasyon-panolari" },
+  PANO: { image: "/images/products/otomasyon-pano.png", leafSlug: "otomasyon-panolari" },
+  PANEL: { image: "/images/products/otomasyon-pano.png", leafSlug: "otomasyon-panolari" },
+  PLC: { image: "/images/products/otomasyon-plc.png", leafSlug: "plc-otomasyon" },
+  SENSÖR: { image: "/images/products/otomasyon-sensor.png", leafSlug: "sensorler" },
+  SENSOR: { image: "/images/products/otomasyon-sensor.png", leafSlug: "sensorler" },
+  "KONTROL KARTLARI - ANAHTARLAR": {
+    image: "/images/products/otomasyon-kontrol-kartlari.png",
+    leafSlug: "kontrol-kartlari",
+  },
+  NEXUS: {
+    image: "/images/products/otomasyon-kontrol-kartlari.png",
+    leafSlug: "kontrol-kartlari",
+  },
+  "ZAMANLAMA ve KONTROL CİHAZLARI": {
+    image: "/images/products/otomasyon-kontrol-kartlari.png",
+    leafSlug: "zamanlama-kontrol",
+  },
+  LION: { image: "/images/products/frekans-inventoru.png", leafSlug: "guc-elektronigi" },
+  "GÜÇ ELEKTRONİĞİ": { image: "/images/products/frekans-inventoru.png", leafSlug: "guc-elektronigi" },
   "CONTROL BOARDS - SWITCHES": { image: "/images/products/otomasyon-kontrol-kartlari.png" },
+  "ZAMANLAMA VE KONTROL CİHAZLARI": {
+    image: "/images/products/otomasyon-kontrol-kartlari.png",
+    leafSlug: "zamanlama-kontrol",
+  },
 };
+
+/** Katalog kart adı → meta (büyük/küçük harf ve `ve`/`VE` farkına toleranslı) */
+export function catalogMetaForName(name: string): CatalogFamilyMeta | undefined {
+  const trimmed = name.trim();
+  if (!trimmed) return undefined;
+
+  const direct =
+    CATALOG_FAMILY_META[trimmed] ??
+    CATALOG_FAMILY_META[trimmed.toUpperCase()] ??
+    CATALOG_FAMILY_META[trimmed.toLocaleUpperCase("tr-TR")];
+  if (direct) return direct;
+
+  const upper = trimmed.toLocaleUpperCase("tr-TR");
+  const entry = Object.entries(CATALOG_FAMILY_META).find(
+    ([key]) => key.toLocaleUpperCase("tr-TR") === upper,
+  );
+  return entry?.[1];
+}
 
 /** Kategori → JSON içindeki varlık blok anahtarları (tiger, hound, …) */
 export const CATEGORY_ENTITY_KEYS: Record<string, string[]> = {

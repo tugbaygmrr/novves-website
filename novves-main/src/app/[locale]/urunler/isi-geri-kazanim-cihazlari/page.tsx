@@ -19,21 +19,12 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const dict = await getDictionary(locale);
   const t = dict.products.isiGeriKazanimCihazlari;
 
-  const models = [
-    {
-      name: t.caracalD.title,
-      type: t.caracalD.type,
-      image: "/images/products/caracal.jpg",
-      description: t.caracalD.description,
-    },
-  ];
-
   return (
     <ProductDetailPage
       title={t.title}
       subtitle={t.subtitle}
       intro={t.intro}
-      models={models}
+      models={t.models}
       locale={locale}
       dict={dict.products}
       chrome={t.chrome}

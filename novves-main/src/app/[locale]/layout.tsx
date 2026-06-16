@@ -12,6 +12,7 @@ import { locales, type Locale } from "@/i18n/config";
 import { buildJumpNavLabels } from "@/i18n/jump-nav-labels";
 import { hasLocale, getLocaleShellDictionary } from "./dictionaries";
 import { SiteJsonLd } from "@/components/seo/site-json-ld";
+import { QuoteBasketShell } from "@/components/quote-basket/quote-basket-shell";
 import { RouteBreadcrumbJsonLd } from "@/components/seo/route-breadcrumb-json-ld";
 
 export const viewport: Viewport = {
@@ -58,9 +59,11 @@ export default async function LocaleLayout({
       />
       <SetHtmlLang locale={locale} />
       <ConsentRestrictedCookieSync />
-      <Navbar locale={locale} dict={dict.common} />
-      <div className="min-w-0 flex-1">{children}</div>
-      <Footer locale={locale} dict={dict.common} />
+      <QuoteBasketShell locale={locale}>
+        <Navbar locale={locale} dict={dict.common} />
+        <div className="min-w-0 flex-1">{children}</div>
+        <Footer locale={locale} dict={dict.common} />
+      </QuoteBasketShell>
       <CookieConsentLoader locale={locale} />
       <GlobalJumpNav locale={locale} labels={jumpLabels} />
     </>

@@ -30,4 +30,6 @@ export const AIR_MOVEMENT_PRODUCT_HREFS: Record<string, string> = {
   TURTLE: "hucreli-fanlar",
   BUTTERFLY: "mutfak-fanlari",
   FOX: "siginak-fanlari",
+  CHICKEN: "tavukcu-fanlari",
+  ELEPHANT: "toz-toplama-uniteleri",
 };

@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: novves-postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "112233"
+      POSTGRES_DB: novves
+    volumes:
+      - novves_pg_data:/var/lib/postgresql/data
+
+volumes:
+  novves_pg_data:

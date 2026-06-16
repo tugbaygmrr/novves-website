@@ -28,6 +28,22 @@ export const PRODUCT_LEAF_PATHS: Record<string, string> = {
   kovanTipiAksiyalFanlar: "urunler/kovan-tipi-aksiyal-fanlar",
   mutfakFanlari: "urunler/mutfak-fanlari",
   siginakFanlari: "urunler/siginak-fanlari",
+  tavukcuFanlari: "urunler/tavukcu-fanlari",
+  tozToplamaUniteleri: "urunler/toz-toplama-uniteleri",
+  menfezPanjurlar: "urunler/menfez-panjurlar",
+  filtreler: "urunler/filtreler",
+  titresimIzolatorleri: "urunler/titresim-izolatorleri",
+  otomasyonPanolari: "urunler/otomasyon-panolari",
+  plcOtomasyon: "urunler/plc-otomasyon",
+  sensorler: "urunler/sensorler",
+  kontrolKartlari: "urunler/kontrol-kartlari",
+  zamanlamaKontrol: "urunler/zamanlama-kontrol",
+  gucElektronigi: "urunler/guc-elektronigi",
+  disUniteler: "urunler/dis-uniteler",
+  elektrikliIsitici: "urunler/elektrikli-isitici",
+  suluIsitici: "urunler/sulu-isitici",
+  orcaHx: "urunler/orca-hx",
+  remoraAksesuarlari: "urunler/remora",
 };
 
 export const CORPORATE_PATHS: Record<string, string> = {

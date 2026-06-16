@@ -58,990 +58,856 @@
     }
   },
   "havaHareketi": {
-    "title": "Ҳаракати ҳавоӣ",
-    "titleFirst": "Обу ҳаво",
-    "titleHighlight": "ҳаракат",
-    "heroDesc": "Барои эҳтиёҷоти вентилятсияи саноатӣ ва бароҳатии шумо",
-    "heroDescSuffix": "оилаи маҳсулот.",
+    "title": "Hava Hareketi",
+    "titleFirst": "Hava",
+    "titleHighlight": "Hareketi",
+    "heroDesc": "Endüstriyel ve konfor havalandırma ihtiyaçlarınız için",
+    "heroDescSuffix": "ürün ailesi.",
     "stats": [
       {
         "value": "1.200+",
-        "label": "Навъи маҳсулот"
+        "label": "Ürün Çeşidi"
       },
       {
         "value": "12",
-        "label": "Оилаи маҳсулот"
+        "label": "Ürün Ailesi"
       },
       {
         "value": "EN 12101-3",
-        "label": "Сертификатсия шудааст"
+        "label": "Sertifikalı"
       },
       {
         "value": "F300/2H",
-        "label": "Муқовимат ба оташ"
+        "label": "Yangın Dayanımı"
       }
     ],
     "products": [
       {
         "name": "DRAGONFLY",
-        "type": "Фанҳои эвакуатсияи дуд ва гармӣ",
+        "type": "Duman ve Isı Tahliye Fanı",
         "image": "/images/products/dragonfly-c.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Силсилаи Dragonfly аз вентиляторҳои баландҳарорати тахлияи дуд ва гармӣ иборат аст, ки барои бехатар берун кардани дуд, гармӣ, газҳои заҳрнок ва нафасгир ҳангоми сӯхтор таҳия шудаанд. Бо вариантҳои аксиалӣ, радиалӣ, реактивӣ (jet), бомӣ, деворӣ, пӯшида ва центробежӣ он ба доираи васеи талаботи лоиҳаҳо мутобиқ мешавад."
+        "description": "Yusufçuk gibi çevik ve kararlı biçimde hareket eden bu fanlar, yangın anında oluşan dumanı ve ısıyı hızla tahliye ederek ortamın güvenliğini sağlar. Sessizliği ve ani tepki kapasitesiyle tam zamanında devreye girer."
       },
       {
         "name": "MARLIN",
-        "type": "Фанти аксиалӣ",
+        "type": "Aksiyal Fanlar",
         "image": "/images/products/marlin.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Marlin аз вентиляторҳои аксиалӣ иборат аст, ки барои интиқоли ҳавои тоза, тахлияи ҳаво, вентилятсияи каналӣ ва корбасти зердориҳои фишор (pressurisation) таҳия шудаанд. Бо корпуси ҷамъу ҷур, сатҳи пасти садо, ҳаҷми баланди ҷараёни ҳаво ва имконоти насби фасеҳ он дар вентилятсияи роҳат, вентилятсияи саноатӣ, системаҳои шахта ва зердори фишори бино корбарии боэътимоду сарфакоронаро таъмин мекунад."
+        "description": "Marlin gibi kararlı, güçlü ve yönlü çalışan bu fanlar, doğrudan hava akışı sağlamak için tasarlanmıştır. Minimum dirençle maksimum debi sunar; geniş alanlarda yüksek verimli havalandırma sağlar."
       },
       {
         "name": "BEAR",
-        "type": "Мухлиси ATEX",
+        "type": "Ex-proof Fanlar",
         "image": "/images/products/bear-reb.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Bear аз вентиляторҳои Ex-proof иборат аст, ки барои вентилятсия, тахлия ва кашиши бехатари ҳавои технологӣ дар минтақаҳои саноатии дорои хатари муҳити таркиш таҳия шудаанд. Бо муҳаррикҳои Ex-proof, ҷузъиёти сохторие, ки хатари ҷарроқаро коҳиш медиҳанд, корпусҳои мустаҳкам ва вариантҳои аксиалӣ/радиалӣ он ба корхонаҳои кимиёвӣ, устохонаҳои рангзанӣ, иншооти тозакунӣ, равандҳои ҳалкунанда (solvent) ва корбасти тахлияи саноатӣ хидмат мекунад."
+        "description": "Ayı gibi güçlü, dayanıklı ve her koşulda güvenle çalışan bu fanlar, tehlikeli ve patlayıcı ortamlarda yüksek koruma sağlar. Güvenliğin ön planda olduğu alanlarda, sarsılmaz bir güven sunar."
       },
       {
         "name": "NAUTILUS",
-        "type": "Фанҳои саноатӣ",
+        "type": "Endüstriyel Salyangoz Fanlar",
         "image": "/images/products/nautilus-cif-cidarli.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Nautilus аз вентиляторҳои центробежии саноатӣ барои интиқоли ҳавои тоза, тахлияи ҳаво, ҳавои технологӣ ва вентилятсияи умумии саноатӣ иборат аст. Бо парраҳои ба ақиб хамида (backward-curved), интиқоли мустақим, геометрияи ҷамъу ҷури spiralшакл ва синфҳои гуногуни фишор он интиқоли самаранок ва боэътимодро дар корбасти фишори паст, миёна, баланд ва корбасти ороми (silent) имконпазир мекунад."
+        "description": "Salyangoz gibi spiral formu sayesinde yüksek basınçla hava yönlendirmesi yapan bu fanlar, endüstriyel ortamlarda güçlü ve dengeli hava tahliyesi sağlar. Nautilus’un iç yapısındaki doğa harikası düzen, mühendisliğimizin temel ilhamıdır."
       },
       {
         "name": "HUMMINGBIRD",
-        "type": "Мухлиси EC",
+        "type": "EC Fanlar",
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Hummingbird аз вентиляторҳои дорои муҳаррики EC иборат аст, ки самаранокии баланди энергетикӣ, идоракунии дақиқи суръат ва хароҷоти пасти корбариро таъмин мекунанд. Барои корбасти интиқоли ҳаво, тахлия, бомӣ, каналӣ, plug, центробежии ором, барқарорсозии гармӣ ва паноҳгоҳ (shelter) он идоракунии ҳушмандонаи ҷараёни ҳаворо бо идоракунии 0-10 V, калидҳои суръат, сенсорҳои фишори дифференсиалӣ ва ҳамгироӣ бо BMS имконпазир мекунад."
+        "description": "Sinek kuşu gibi küçük boyutuna rağmen olağanüstü verimli ve hassas çalışan bu fanlar, enerji tasarrufu ve sessiz çalışma gerektiren sistemler için idealdir. Hızlı tepki kabiliyeti ve akıllı kontrolü ile sisteminizi bir doğa harikası gibi dengeler."
       },
       {
         "name": "HERON",
-        "type": "Фанти сақф",
+        "type": "Çatı Fanları",
         "image": "/images/products/heron-rv.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Heron аз вентиляторҳои бомӣ иборат аст, ки барои беҳтар намудани сифати ҳавои дохилӣ, тахлияи ҳавои олуда ва дар ҳолати зарурӣ таъмини ҳавои тоза таҳия шудаанд. Бо хуруҷи радиалии уфуқӣ/амудӣ, муҳаррикҳое, ки берун аз ҷараёни ҳаво ҷойгир шудаанд, моделҳои аксиалӣ ва бомии пӯшида он ба биноҳои тиҷоратӣ, иншооти саноатӣ, ҳуҷраҳои техникӣ, шахтаҳо ва насбҳои болобомӣ хидмат мекунад."
+        "description": "Balıkçıl gibi yükseklerde konumlanan çatı fanları, sistemin genel havasını dengede tutar. Sessiz, dengeli ve sürekli devinim içinde olmayan yapısıyla gerektiğinde devreye girerek maksimum etki sağlar. Duruşuyla bile sistemi yukarıdan kontrol eder."
       },
       {
         "name": "OWL",
-        "type": "Фанҳои деворӣ",
+        "type": "Duvar Fanları",
         "image": "/images/products/owl-rer.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Owl аз вентиляторҳои аксиалии деворӣ иборат аст, ки барои тахлияи ҳавои олуда, гарм, намнок ё кӯҳнаи дохилӣ дар фазоҳои ҳаҷман калон пешбинӣ шудаанд. Бо чорчӯбаҳои чоркунҷа ё мудаввар, ҷисмҳои ҷамъу ҷур, садои паст ва ҳаҷми баланди ҷараёни ҳаво он як ҳалли амалӣ барои анборҳо, ангарҳо (hangar), корхонаҳо, устохонаҳо, ҳуҷраҳои техникӣ ва толорҳои бузурги саноатӣ мебошад."
+        "description": "Baykuş gibi duvarlara sabitlenmiş bir gözetleyici gibi çalışan bu fanlar, yüksekten ve geniş açıyla güçlü hava tahliyesi yapar. Her an tetikte, çevresine hâkimdir; yönlendirdiği hava akımıyla ortamı hızla dönüştürür. Baykuş gibi odaklanmış, etkili ve alan üzerinde kontrol sahibidir."
       },
       {
         "name": "SEAHORSE",
-        "type": "Фалли ванна",
+        "type": "Banyo Fanları",
         "image": "/images/products/banyo-fan-1.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Seahorse аз вентиляторҳои тахлияи пластикӣ барои ҳаммомҳо, ҳоҷатхонаҳо, таҳхонаҳо ва фазоҳои хурду миёнаи монанд барои аз байн бурдани бӯй, буғ, намӣ ва ҳавои кӯҳна иборат аст. Бо вариантҳои аксиалӣ ва радиалӣ, корпусҳои ABS, садои паст, панелҳои пеши тозакунии осон ва идоракунии ихтиёрии таъхири вақт он ба фазоҳои дохилии манзилӣ, меҳмонхонавӣ, идоравӣ ва тиҷоратӣ мувофиқ аст."
+        "description": "Denizatı gibi küçük alanlara ustalıkla uyum sağlayan bu fanlar, banyolarda fazla yer kaplamadan etkili tahliye sağlar. Dengeli, zarif ve kontrollü çalışmasıyla nemi ve kokuyu ortamdan uzaklaştırırken, varlığıyla değil işleviyle hissedilir. Kompakt ama işlevsel bir çözüm sunar."
       },
       {
         "name": "KOI",
-        "type": "Фанҳои каналӣ",
+        "type": "Kanal Fanları",
         "image": "/images/products/koi-cb.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Koi аз вентиляторҳои ҷамъу ҷури каналӣ барои ниёзҳои интиқол, тахлия ва вентилятсияи каналии паст то миёна иборат аст. Бо вариантҳои мудаввар, росткунҷа, муҳаррикҳои берун аз ҷараёни ҳаво, ҷараёни омехта (mixed-flow) ва аксиалии пластикӣ он интиқоли амалӣ, ором ва сарфакоронаро дар хонаҳо, биноҳои тиҷоратӣ, ҳуҷраҳои техникӣ, таҳхонаҳо, устохонаҳо ва насбҳои хурду миёна таъмин мекунад."
+        "description": "Koi balığı gibi yönünü kaybetmeden kanal içinde akışı sürdürür. Bu fanlar,  kanal sistemleri boyunca istikrarlı hava hareketi sağlayarak sistemin sürekliliğini ve dengesini korur. Zarif ama güçlü bir taşıyıcıdır; tıpkı bir Koi’nin suyu huzurla yarması gibi."
       },
       {
         "name": "TURTLE",
-        "type": "Фанҳои ҳуҷайра",
+        "type": "Hücreli Fanlar",
         "image": "/images/products/turtle-a.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Turtle аз вентиляторҳои plenum-и дуқабата ва изолятсияшуда барои корбасти интиқол ва тахлияи ҳаво иборат аст. Бо корпусҳои акустикӣ, дарҳои дастрасӣ, вариантҳои интиқоли тасмавӣ (belt-drive) ё муҳаррики plug ва навъҳои гуногуни паррак он корбарии ором ва бодавомро дар ҳуҷраҳои таҷҳизотӣ, фазоҳои техникӣ, биноҳои тиҷоратӣ ва вентилятсияи саноатӣ таъмин мекунад."
+        "description": "Kaplumbağa gibi sağlam bir dış gövdeye ve korunaklı iç yapıya sahip hücreli fanlar, sistemin kalbinde uzun yıllar boyunca güvenle çalışır. Her bir hücre, görevini kaplumbağanın kabuğundaki desen kadar düzenli ve dirençli şekilde yerine getirir. Dış etkilere karşı güçlü, içte ise daima hazırdır."
       },
       {
         "name": "BUTTERFLY",
-        "type": "Фалли ошхона",
+        "type": "Mutfak Fanları",
         "image": "/images/products/butterfly-b.jpg",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Butterfly аз вентиляторҳои тахлияи ошхона ва воҳидҳои экологӣ барои хуруҷи бехатар, филтршуда ва идорашавандаи ҳавои гарм, равғанӣ, дуднок ва бӯйнок дар ошхонаҳои тиҷоратӣ иборат аст. Бо муҳаррикҳои берун аз ҷараёни ҳаво, корпусҳои дуқабатаи изолятсияшуда, филтрҳои равған, дарҳои дастрасӣ ва тарроҳии омодаи VFD он ба тарабхонаҳо, меҳмонхонаҳо, марказҳои савдо, кейтеринг ва ошхонаҳои истеҳсолӣ хидмат мекунад."
+        "description": "Kelebek gibi narin görünen ama her kanat çırpışında çevresine yön veren bu fanlar, mutfağın kalbinde kokuyu, buharı ve dumanı zarifçe süpürüp uzaklaştırır. Tıpkı bir kelebeğin çiçekten havalanıp ortamdaki havayı değiştirmesi gibi, bu fan da mutfağı ferah ve yaşanabilir tutar. Sessizce yaklaşmaz, doğrudan etki eder — mutfağın görünmeyen ama vazgeçilmez kanat gücüdür."
       },
       {
         "name": "FOX",
-        "type": "Фанҳои паноҳгоҳ",
+        "type": "Sığınak Fanları",
         "image": "/images/products/fox-c.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Оилаи Fox аз вентиляторҳои вентилятсияи паноҳгоҳ иборат аст, ки ҳавои берунаи филтршударо ба паноҳгоҳҳо ва фазоҳои муҳофизатшуда мерасонанд. Бо вариантҳои G4, ангишти фаъолшуда (activated carbon), HEPA/филтри зарраҳои ядроӣ ва damper-и bypass он вентилятсияи муқаррарӣ ва сенарияҳои таҳдиди CBRN-ро бо таъмини идорашавандаи ҳаво дастгирӣ мекунад."
+        "description": "Tilki gibi tehlikeyi sezdiğinde anında pozisyon alan bu fanlar, sığınaklarda hayati hava döngüsünü sürdürür. Dar hacimlerde etkili hava yönetimiyle içerideki yaşamı korur, dış ortamdan gelebilecek tehditleri filtreler. Zekice konumlanır, stratejik çalışır ve görünmeden korur — sığınağın sessiz bekçisidir."
       },
       {
         "name": "CHICKEN",
-        "type": "Мухлиси мурғ",
+        "type": "Tavukçu Fanı",
         "image": "/images/products/chicken.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Силсилаи Chicken аз вентиляторҳои паррандапарварии серсамар иборат аст, ки барои нигоҳ доштани сифати ҳассоси ҳаво дар мурғхонаҳои пӯшида тарроҳӣ шудаанд. Монанди паррандагоне, ки ба ҳарорат, намӣ ва аммиак ҳассосанд, ин вентиляторҳо ҳаворо тоза нигоҳ медоранд, идоракунии ҳароратро дастгирӣ мекунанд ва ба ҳифзи саломатӣ ва маҳсулнокии рама кӯмак мерасонанд.",
-        "comingSoon": true
+        "description": "Tavuk gibi hassas yaşam alanlarında görev yapan bu fanlar, ortam havasını sürekli taze tutar, ısıyı dengeler ve zararlı gazların birikmesini önler. Kümesin her köşesine can verir, üretimin sağlığını ve verimliliğini doğrudan etkiler. Sessiz değil, sadık bir koruyucu gibi çalışır; tavukların konforu, bu fanın sorumluluğundadır."
       },
       {
         "name": "ELEPHANT",
-        "type": "Ҷамъоварии хок",
+        "type": "Toz Toplama Ünitesi",
         "image": "/images/products/elephant.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Силсилаи Elephant, ки аз қувват ва дарки нозуки ин ҳайвон илҳом гирифтааст, гарду чанг ва зарраҳоро дар минтақаҳои сериистеҳсол бо иқтидори баланди тахлия ҷамъ меоварад. Бо ҷисми мустаҳкам, кашиши устувор ва сохти бодавом он идоракунии идорашавандаи вазнини ҳаворо барои ҷойҳои кории солимтар ва самараноктар таъмин мекунад.",
-        "comingSoon": true
+        "description": "Fil gibi güçlü ama kontrollü çalışan bu sistemler, yoğun üretim ortamlarında havadaki tozu güvenle yakalar. Yüksek debili emiş gücüyle ortamı arındırır; üretim sürecini daha sağlıklı, daha verimli hâle getirir. Bir fil gibi ağır işlerin altından kalkar, ama her nefesinde temiz bir soluk kazandırır."
       }
     ],
     "otherCategories": [
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
-    "ctaDesc": "Бо дастаи муҳандисии коршиноси мо тамос гиред, то дар байни 1200+ намуди маҳсулот ҳалли мувофиқтаринро барои лоиҳаи шумо пайдо кунед.",
+    "ctaDesc": "1.200+ ürün çeşidi arasından projenize en uygun çözümü bulmak için uzman mühendislik ekibimizle iletişime geçin.",
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Ҳаракати ҳавоӣ",
+        "title": "Hava Hareketi ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "iklimlendirme": {
-    "title": "ҳавополо",
-    "titleFirst": "Иқлим",
-    "titleHighlight": "даст кашидан",
+    "title": "İklimlendirme",
+    "titleFirst": "İklim",
+    "titleHighlight": "lendirme",
     "pills": [
-      "3 Оилаҳои Маҳсулот",
-      "Конфигуратсияи модулӣ",
-      "EC & Фанҳои радиалӣ",
-      "Филтркунии HEPA"
+      "3 Ürün Ailesi",
+      "Modüler Konfigürasyon",
+      "EC & Radyal Fan",
+      "HEPA Filtrasyon"
     ],
     "tiger": {
-      "label": "Шӯъбаи коркарди ҳаво",
-      "desc": "Як ҳалли воҳиди коркарди ҳаво бо суръати ҷараёни ҳаво аз 500 - 125,000 м³/соат, сохтори модулӣ, ҷузъҳои самараноки энергия ва иҷрои оромии кори.",
+      "label": "Klima Santralleri",
+      "desc": "Kaplan gibi kontrolü elden bırakmayan bu santraller, büyük hacimlerde hava kalitesini hassasiyetle yönetir. Gücünü sadece ihtiyaç duyulan noktaya yönlendirir, ortamın iklimini dengeler. Her zaman hazır, her zaman kararlı; sistemin kalbinde güçlü bir nefes gibi çalışır. Sessiz lider, görünmeyen kontrol merkezidir.",
       "image": "/images/products/tiger-pre.png",
-      "specFlow": "",
-      "specPressure": ""
+      "specFlow": "500–125K m³/h",
+      "specPressure": "10–3.000 Pa"
     },
     "dolphin": {
-      "label": "Заводи намноккунй",
-      "desc": "Он бароҳатии корбарро ба ҳадди аксар мерасонад ва ҳангоми пешгирӣ кардани намӣ дар ҳавзҳои дарунӣ аз вайрон кардани сохтор. Он бо самаранокии баланди энергия, сохтори дарозмуддат ва кори оромаш фарқ мекунад.",
+      "label": "Nem Alma Santralleri",
+      "desc": "Yunus gibi çevik ve sezgisel çalışan bu santraller, ortam nemini hassas biçimde dengeler. Aşırı nemi fark eder, fazlasını çeker ve içeriği konforlu hale getirir. Sistem içinde zarafetiyle fark edilmez ama konforu baştan sona şekillendirir. Her nefeste ferahlık sunar, her ortamda dengeyi sağlar.",
       "image": "/images/products/dolphin-pre.png",
-      "specFlow": "",
-      "specPressure": ""
+      "specFlow": "6 Model",
+      "specPressure": "6 Model"
     },
     "caracal": {
-      "label": "Барқарорсозии гармӣ",
-      "desc": "Он кондитсионери идорашавандаро дар офисҳо, мактабҳо, меҳмонхонаҳо, беморхонаҳо ва минтақаҳои иҷтимоӣ барои қонеъ кардани ниёз ба ҳавои тоза ва беҳтар кардани сифати ҳавои мавҷуда таъмин мекунад.",
+      "label": "Isı Geri Kazanım",
+      "desc": "Karakulak gibi çevresini anında algılayan bu sistem, içerideki sıcak havayı israf etmeden yeniden kazandırır. Isı kaybını asgariye indirirken temiz hava döngüsünü sürekli tutar. Tıpkı bir karakulak gibi, görünmeden izler, enerji kaybını fark eder ve sessizce sistemi optimize eder. Enerjiyi geri kazandıran zarif bir avcı gibidir.",
       "image": "/images/products/caracal.png",
       "specFlow": "",
       "specPressure": ""
     },
-    "ctaDesc": "Гурӯҳи техникии мо омода аст, ки ба шумо ҳалли мувофиқтарини кондитсионерро пешниҳод кунад.",
+    "ctaDesc": "Teknik ekibimiz size en uygun iklimlendirme çözümünü sunmak için hazır.",
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти ҳавополо",
+        "title": "İklimlendirme ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "sogutmaVeIsitma": {
-    "title": "Гармкунӣ ва хунуккунӣ",
-    "titleFirst": "хунуккунӣ ва",
-    "titleHighlight": "Гармкунӣ",
-    "heroDesc": "Чиллерҳо, агрегатҳои берунӣ, гармкунакҳои барқӣ ва ҳалли батареяҳои об.",
-    "comingSoonNotice": "Маҳсулоти ин категория ба наздикӣ ба таври муфассал нашр карда мешаванд. Барои маълумоти техникӣ ва пешниҳоди нарх",
-    "comingSoonLink": "тамос гирифта метавонед",
+    "title": "Soğutma ve Isıtma",
+    "titleFirst": "Soğutma ve",
+    "titleHighlight": "Isıtma",
+    "heroDesc": "Polar Bear, Orca Coil, Orca Heater ve Orca HX soğutma ve ısıtma çözümleri.",
+    "comingSoonNotice": "Bu kategorideki ürünler yakında detaylı olarak yayınlanacaktır. Teknik bilgi ve fiyat teklifi için",
+    "comingSoonLink": "iletişime geçebilirsiniz",
     "products": [
       {
-        "name": "CHILLER (Хирси қутбӣ)",
-        "type": "Воҳиди хунуккунӣ",
+        "name": "POLAR BEAR",
+        "type": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri • Isı Pompası Dış Ünitesi • Fan Coil İç Ünitesi",
         "image": "/images/products/chiller.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi; Orta Tip Paket Endüstriyel Soğutma Ünitesi; Ağır Tip Paket Endüstriyel Soğutma Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; Orta Tip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; OrtaTip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi"
       },
       {
-        "name": "ВОДИҲОИ БЕРУНӢ",
-        "type": "Воҳиди хунуккунӣ",
-        "image": "/images/products/chiller.png",
+        "name": "ORCA HEATER",
+        "type": "Elektrikli Isıtıcı",
+        "image": "/images/products/elektrikli-isitici.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı; Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı"
       },
       {
-        "name": "ГАРМАНДАГОНИ ЭЛЕКТРЙ",
-        "type": "Гармкунаки барқӣ",
-        "image": "/images/products/marlin.png",
+        "name": "ORCA COIL",
+        "type": "Termal Batarya",
+        "image": "/images/products/elektrikli-isitici.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Sıcak Su Bataryası; Soğuk su Bataryası; DX Batarya; Buhar Bataryası"
       },
       {
-        "name": "Батареяи об",
-        "type": "Батарея",
-        "image": "/images/products/marlin.png",
+        "name": "ORCA HX",
+        "type": "Isı Eşanjörü",
+        "image": "/images/products/caracal.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Rotary Tip Isı Geri Kazanım Modülü; Selülozik Reküparatör Modulü; Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı; Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
       }
     ],
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Гармкунӣ ва хунуккунӣ",
+        "title": "Soğutma ve Isıtma ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaYonetimi": {
-    "title": "Идоракунии ҳаво",
-    "titleFirst": "Обу ҳаво",
-    "titleHighlight": "Идоракунӣ",
-    "heroDesc": "Роҳҳои ҳалли ҳаво.",
+    "title": "Hava Yönetimi",
+    "titleFirst": "Hava",
+    "titleHighlight": "Yönetimi",
+    "heroDesc": "Hava damperi çözümleri.",
     "hound": {
-      "label": "Тозакунандаи ҳаво",
-      "desc": "Силсилаи дамперҳо барои таъмини ҳадди аксар назорат ва амният дар нуқтаҳои муҳимтарини вентилятсия ва системаҳои бехатарии сӯхтор пешбинӣ шудааст.",
+      "label": "Damperler",
+      "desc": "Tazı gibi yön sezgisi güçlü olan bu damperler, hava akışını doğru zamanda, doğru yöne yönlendirir. Hızlı tepki verir, anında devreye girer; sistemin hava haritasını kontrol altında tutar. Görünmeden yol çizen, ama yönü belirleyen sadık bir rehber gibidir.",
       "image": "/images/products/hound-al.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Идоракунии ҳаво",
+        "title": "Hava Yönetimi ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaDagitimi": {
-    "title": "Тақсимоти ҳаво",
-    "titleFirst": "Обу ҳаво",
-    "titleHighlight": "Тақсим",
-    "heroDesc": "Маҳлулҳои гриль, анемостат, диффузор ва лювер.",
+    "title": "Hava Dağıtımı",
+    "titleFirst": "Hava",
+    "titleHighlight": "Dağıtımı",
+    "heroDesc": "Menfez, panjur, difüzör ve anemostad çözümleri.",
     "alpaca": {
-      "label": "Vent, Anemostat ва ғайра.",
-      "desc": "Қарорҳои махсус барои ҳама гуна ниёзҳои тақсимоти ҳаво бо моделҳои гуногун.",
+      "label": "Menfez, Anemostad, Panjurlar",
+      "desc": "Alpaka gibi ortama huzurla entegre olan bu elemanlar, havayı doğru noktalara estetik ve dengeli biçimde dağıtır. Ne çok öne çıkar ne de kaybolur; sistemin mimarisine zarifçe uyum sağlar. Her hava akımının son dokunuşunda onun izi vardır. Sessiz bir işçi, görünmez bir denge ustasıdır.",
       "image": "/images/products/alpaca-am.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Тақсимоти ҳаво",
+        "title": "Hava Dağıtımı ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaFiltrasyonu": {
-    "title": "Филтркунии ҳаво",
-    "titleFirst": "Обу ҳаво",
-    "titleHighlight": "филтратсия",
-    "heroDesc": "Қарорҳои филтрӣ барои барномаҳои саноатӣ ва бароҳат.",
+    "title": "Hava Filtrasyonu",
+    "titleFirst": "Hava",
+    "titleHighlight": "Filtrasyonu",
+    "heroDesc": "Endüstriyel ve konfor uygulamaları için filtre çözümleri.",
     "scallop": {
-      "label": "Силсилаи филтр",
-      "desc": "Қарорҳои махсус барои ҳама намуди эҳтиёҷоти филтратсия бо моделҳои гуногуни филтр.",
+      "label": "Filtreler",
+      "desc": "Deniz tarağı gibi gözenekli ve katmanlı yapısıyla, ortamdan istenmeyen parçacıkları ustalıkla süzen ve temiz hava geçişine olanak sağlayan sistemler.",
       "image": "/images/products/cyclone.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Филтркунии ҳаво",
+        "title": "Hava Filtrasyonu ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "aksesuarlar": {
-    "title": "Лавозимот",
-    "titleFirst": "Аксе",
-    "titleHighlight": "Суарс",
-    "productCount": "маҳсулот",
-    "ctaTitle": "Оё шумо барои лоиҳаи худ лавозимоти мувофиқро меҷӯед?",
+    "title": "Aksesuarlar",
+    "titleFirst": "Akse",
+    "titleHighlight": "suarlar",
+    "productCount": "ürün",
+    "ctaTitle": "Projenize uygun aksesuarı mı arıyorsunuz?",
     "accessories": [
       {
-        "name": "Изолатори ларзиши баҳорӣ",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Изоляторҳои ларзиши баҳорӣ дар системаҳои HVAC ва насби таҷҳизоти механикӣ барои коҳиш додани ларзишҳои сатҳи паст, ки аз система ба замин ё муҳити зист интиқол дода мешаванд, истифода мешаванд."
-      },
-      {
-        "name": "Пойҳои пайвасти AE SF",
-        "image": "/images/products/ae-sf-baglanti-ayaklari.png",
-        "description": "Пойҳои пайвастшавӣ унсурҳои мустаҳками васлкунӣ мебошанд, ки барои таъмини бехатарии мухлисон мувофиқи лоиҳа ба фарш ё сатҳи интиқолдиҳанда мустаҳкам карда шудаанд."
-      },
-      {
-        "name": "Қафаси сими AE PM",
-        "image": "/images/products/ae-pm-tel-kafes.png",
-        "description": "Қафасҳои симӣ торҳои муҳофизатӣ мебошанд, ки аз сими пӯлоди пурқувват дар паҳлӯи даргиранда ё шамолдиҳии системаҳои вентиляторӣ сохта шудаанд, ки барои таъмини амнияти корбар ва пешгирии вуруди ашёи бегона ба майдони кории система пешбинӣ шудаанд."
-      },
-      {
-        "name": "Конуси вуруди AE IC",
-        "image": "/images/products/ae-ic-giris-konisi.png",
-        "description": "Конусҳои воридотии AE IC Series барои оптимизатсияи ҷараёни ҳаво дар паҳлӯи ҷабби мухлисон, кам кардани нооромии ҳаво ва баланд бардоштани самаранокии система тарҳрезӣ шудаанд."
-      },
-      {
-        "name": "AE CF Counter Flange",
-        "image": "/images/products/ae-cf-karsi-flans.png",
-        "description": "AE CF Series counter flanges таҷҳизоти пайвастшавӣ ба ҳарорати баланд тобовар мебошанд, ки барои пайваст кардани мухлисон ба системаи канал ва кафолати мӯҳр истифода мешаванд."
-      },
-      {
-        "name": "AE FJF Flange Пайвастшавӣ чандир Counter",
-        "image": "/images/products/ae-fjf.png",
-        "description": "Силсилаи AE FJF фланецҳои фасеҳи пайвастшавӣ барои ҳисобкунакҳо унсурҳои махсуси пайвастшавӣ мебошанд, ки барои пешгирии интиқоли ларзиш байни системаҳои вентилятор ва каналҳо, коҳиш додани таъсири васеъшавӣ ва фароҳам овардани муҳити оромтари корӣ пешбинӣ шудаанд."
-      },
-      {
-        "name": "AE FJF F400 Синфи чандир Пайвастшавӣ Counter Flange",
-        "image": "/images/products/ae-fjf.png",
-        "description": "Силсилаи AE FJF F400 Фланҷҳои ҳисобкунакҳои фасеҳи пайвастшавӣ барои таъмин кардани пайвасти фасеҳ, бехатар ва ихроҷ байни системаҳои вентилятор ва канал дар барномаҳои ба оташ тобовар тарҳрезӣ шудаанд."
-      },
-      {
-        "name": "AE FJ2F Пайвастшавӣ чандир бо дучандон Counter Flange",
-        "image": "/images/products/ae-fj2f.png",
-        "description": "Пайвасткуниҳои чандирии дукаратаи ҳалқаи дугона унсурҳои пайвасти хеле чандир мебошанд, ки дар ҳарду канор бо ҳалқаҳои муқобил муҷаҳҳаз шудаанд, барои азхудкунии ларзиш, тавсеа ва хатогиҳои васлкунӣ, ки метавонанд дар байни системаҳои вентилятор ва каналҳо рух диҳанд, таҳия карда шудаанд."
-      },
-      {
-        "name": "AE FJ2F F400 Дучандон Counter Flange Пайвастшавӣ чандир",
-        "image": "/images/products/ae-fj2f.png",
-        "description": "AE FJ2F-HR Силсилаи ҳалли чандирии васлкунандаи дучандон бо муқовимати ҳарорати баланд, ки барои истифода дар системаҳое, ки муқовимати оташро талаб мекунанд, пешбинӣ шудаанд."
-      },
-      {
-        "name": "AE S-D100 Хомушкунаки даврӣ",
-        "image": "/images/products/ae-sd100.png",
-        "description": "Хомӯшкунакҳои даврии AE S-D100 Силсилаи унсурҳои идоракунии акустикии баландсифат мебошанд, ки барои паст кардани сатҳи садо ва беҳтар кардани шароити бароҳат дар системаҳои вентилятсия пешбинӣ шудаанд."
-      },
-      {
-        "name": "AE RS канали Намуди росткунҷаи хомӯшкунанда",
-        "image": "/images/products/ae-rs.png",
-        "description": "Хомӯшкунакҳои навъи росткунҷаи каналҳои AE RS ин унсурҳои баландсифати изолятсияи садо мебошанд, ки барои коҳиш додани сатҳи садои аз ҷараёни ҳаво дар системаҳои каналҳо ва баланд бардоштани бароҳатии акустикӣ пешбинӣ шудаанд."
-      },
-      {
-        "name": "Хомушкунаки васлаки AE-SS",
-        "image": "/images/products/emniyet-salteri.png",
-        "description": "AE SS Series Socket Silencers лавозимоти ихтиёрии назорати акустикӣ мебошанд, махсусан дар лоиҳаҳое, ки дар тарафи даромад заруранд."
-      },
-      {
-        "name": "AE-V боли роҳбарикунанда",
-        "image": "/images/products/free.jpg",
-        "description": "AE V Series Guide Vanes унсурҳои ёрирасони аэродинамикӣ мебошанд, ки барои оптимизатсияи ҷараёни ҳаво дар системаҳои вентилятор ва каналҳо, кам кардани турбулентӣ ва таъмини ҷараёни мунтазам пешбинӣ шудаанд."
-      },
-      {
-        "name": "Сарлавҳаи хуруҷи AE-OC",
-        "image": "/images/products/free.jpg",
-        "description": "Сарлавҳаҳои баромади AE OC Силсилаи унсурҳои устувори сохторӣ мебошанд, ки барои муҳофизат аз шароити муҳити беруна дар нуқтаҳои баромади системаҳои вентиляторӣ ва нигоҳ доштани кори система пешбинӣ шудаанд."
-      },
-      {
-        "name": "AE-DFC Пайвастшавӣ чандир росткунҷаест,",
-        "image": "/images/products/ae-dfc.png",
-        "description": "Пайвастҳои чандирии росткунҷаи Силсилаи AE DFC унсурҳои пайвастаи пойдор мебошанд, ки барои таъмини изолятсияи ларзиш дар системаҳои каналҳо, пешгирии интиқоли садо ва баланд бардоштани фишори ҳаво пешбинӣ шудаанд."
-      },
-      {
-        "name": "Чорчӯбаи адаптер AE-AF боми",
-        "image": "/images/products/free.jpg",
-        "description": "Чорчӯбҳои AE AF Силсилаи Боми Адаптерҳо мустаҳкамкунакҳои баландсифат мебошанд, ки барои таъмини бехатар, устувор ва рахнанопазир насб кардани мухлисон ва дигар таҷҳизоти HVAC дар бомҳо пешбинӣ шудаанд."
-      },
-      {
-        "name": "AE FRS васлаки боми ҳамвор",
-        "image": "/images/products/ae-frs.png",
-        "description": "Сокетҳои боми ҳамвор AE FRS Series унсурҳои ёрирасони сохторӣ мебошанд, ки барои таъмини насби бехатар, изолятсия ва устувори мухлисон ва таҷҳизоти HVAC дар барномаҳои боми ҳамвор пешбинӣ шудаанд."
-      },
-      {
-        "name": "Қуттии пайванди боми AE-CB",
-        "image": "/images/products/free.jpg",
-        "description": "Қуттиҳои Ҷунбиши Боми Силсилаи AE CB унсурҳои ёрирасони сохторӣ мебошанд, ки барои насби бехатар ва устувори системаҳои вентилятор ва пайвастҳои канал пешбинӣ шудаанд."
-      },
-      {
-        "name": "AE-EH канали Намуди гармкунаки барқӣ",
-        "image": "/images/products/ae-eh-elektrikli-isitici.png",
-        "description": "Гармкунакҳои барқии навъи AE EH силсилаи қубурҳо агрегатҳои гармкунаки паймон ва хеле самаранок мебошанд, ки барои барномаҳои бароҳат нигаронидашуда ба монанди гарм кардани ҳавои тоза дар системаҳои вентилятсия таҳия шудаанд."
-      },
-      {
-        "name": "Калиди бехатарӣ",
-        "image": "/images/products/emniyet-salteri.png",
-        "description": "Калиди бехатарӣ як унсури идоракунӣ бо стандартҳои баланди муҳофизатӣ мебошад, ки барои фаъолсозӣ ва ғайрифаъолкунии бехатари мухлисон ва дигар таҷҳизоти барқӣ пешбинӣ шудааст."
-      },
-      {
-        "name": "Калиди бехатарии муҳофизатшуда",
-        "image": "/images/products/korumali-emniyet-salteri.png",
-        "description": "Калиди муҳофизатшудаи бехатарӣ як унсури устувори идоракунӣ мебошад, ки барои таъмини назорати бехатари таҷҳизоти барқӣ ва ҳамзамон муҳофизат аз таъсири муҳити зист пешбинӣ шудааст."
-      },
-      {
-        "name": "Назорати суръати як марҳила",
-        "image": "/images/products/monofaze-hiz-kontrol-cihazi.png",
-        "description": "Controller суръати монофаза як воҳиди идоракунии барои корбар аст, ки барои пайваста ва дақиқ танзим кардани суръати гардиши мухлисон бо муҳаррикҳои асинхронии монофаза бо шиддат идорашаванда пешбинӣ шудааст."
-      },
-      {
-        "name": "Инвертер басомад",
-        "image": "/images/products/frekans-inventoru.png",
-        "description": "Инвертер басомад як воҳиди гардонандаи насли нав аст, ки барои баланд бардоштани самаранокии энергия ва таъмини назорати беҳтарини суръат дар системаҳои вентилятсияи мотордор ва вентилятсия таҳия шудааст."
-      },
-      {
-        "name": "Панели назорати фишор",
-        "image": "/images/products/basinclandirma-kontrol-panosu.png",
-        "description": "Панели назорати фишор як воҳиди пешрафтаи идоракунӣ бо инвертер басомад аст, ки барои таъмини кори худкор ва оптимизатсияи мухлисон дар системаҳои фишордиҳӣ пешбинӣ шудааст."
-      },
-      {
-        "name": "Сенсори дифференсиалии фишор",
-        "image": "/images/products/diferansiyel-basinc-sensoru.png",
-        "description": "Сенсори дифференсиалии фишор як унсури назоратии дақиқи баланд аст, ки барои чен кардан ва назорат кардани фарқияти фишори ҳаво дар системаҳои вентилятсия ва филтратсия пешбинӣ шудааст."
-      },
-      {
-        "name": "Сенсори дифференсиалии фишори PI (баромади 0-10V)",
-        "image": "/images/products/diferansiyel-basinc-sensoru.png",
-        "description": "Сенсори дифференсиалии фишор + Назорати PI як системаи пешрафтаи санҷандаест, ки барои дақиқ назорат ва ба таври худкор танзими фишори ҳаво ё ҷараёни ҳаво дар системаҳои вентилятсия таҳия шудааст."
-      },
-      {
-        "name": "Сенсори навъи дуд",
-        "image": "/images/products/kanal-tipi-duman-sensoru.png",
-        "description": "Сенсори навъи дуд як дастгоҳи ҳассосияти баландест, ки барои муайян кардани дуд ва маҳсулоти сӯзиш дар ҳавои муҳити зист дар системаҳои вентилятсия ва кондитсионер дар марҳилаи аввал пешбинӣ шудааст."
-      },
-      {
-        "name": "Филтри панели G4",
-        "image": "/images/products/g4-panel-filtre.png",
-        "description": "Филтрҳои панели G4 филтрҳои пешакии самаранок мебошанд, ки барои нигоҳ доштани зарраҳои дағал, чанг ва ифлоскунандаҳо дар ҳаво дар системаҳои вентилятсия ва кондитсионер пешбинӣ шудаанд."
-      },
-      {
-        "name": "Филтри панели G2-G3",
-        "image": "/images/products/g2-g3-panel-filtre.png",
-        "description": "Филтрҳои панели G2-G3 ҳалли боэътимоди пеш аз филтр мебошанд, ки барои нигоҳ доштани зарраҳои миёна ва калон дар системаҳои вентилятсия ва кондитсионер пешбинӣ шудаанд."
-      },
-      {
-        "name": "G2 Филтри доми нафти металлӣ",
-        "image": "/images/products/g2-metal-yag-tutucu-filtre.png",
-        "description": "Филтрҳои филтрҳои металлии G2 унсурҳои пурқуввати филтратсия мебошанд, ки барои нигоҳ доштани буғи равған ва зарраҳои калон, махсусан дар системаҳои вентилятсия ва ихроҷи ошхона пешбинӣ шудаанд."
-      },
-      {
-        "name": "G2-G3 Филтри доми нафти металлӣ",
-        "image": "/images/products/g2-g3-metal-yag-tutucu-filtre.png",
-        "description": "Филтрҳои домани металлии G2-G3 ҳалли филтратсия бо сохтори пойдор мебошанд, ки барои самаранок нигоҳ доштани тумани нафт ва зарраҳои калон дар вентилятсия ва системаҳои ихроҷи ошхона таҳия шудаанд."
+        "name": "REMORA",
+        "image": "/images/products/remora.png",
+        "description": "Fan aksesuarları; Remora’nın doğadaki fonksiyonunu yansıtarak, sistemin güvenli bir şekilde sabitlenmesini, titreşimden arındırılmasını ve hava akışının kontrollü yönlendirilmesini sağlar. Tıpkı Remora’nın taşıyıcısıyla kurduğu uyum gibi, bu parçalar da fan sisteminin bütünlüğünü ve verimliliğini destekler.",
+        "specFlow": "",
+        "specPressure": ""
       }
     ],
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Лавозимот",
+        "title": "Aksesuarlar ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
-    ]
+    ],
+    "heroDesc": "REMORA fan aksesuar ailesi; montaj, bağlantı, susturucu ve koruma çözümleri."
   },
   "otomasyonMalzemeleri": {
-    "title": "Маводҳои автоматикунонӣ",
-    "titleFirst": "Автоматика",
-    "titleHighlight": "Таъминот",
+    "title": "Otomasyon Malzemeleri",
+    "titleFirst": "Otomasyon",
+    "titleHighlight": "Malzemeleri",
     "products": [
       {
-        "name": "PANO",
+        "name": "HAWK",
         "image": "/images/products/otomasyon-pano.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Панелҳои автоматикунонии HAWK барои идоракунии системаҳои вентилятор, воҳидҳои HVAC ва унсурҳои инфрасохтор аз як маркази ягона бо идоракунии боэътимод, устувор ва ҳушмандона тарроҳӣ шудаанд. Вокуниши зуд, мониторинги дақиқ ва меъмории пешрафтаи идоракунӣ системаро ҳатто дар сенарияҳои мураккаб устувор нигоҳ медоранд. Бо идоракунии энергия, ҳамгироии бехатарӣ, идоракунии дақиқ ва мониторинги фосилавӣ HAWK ба лоиҳа назорати фармонфармоиро меафзояд."
+        "description": "Hawk serisi otomasyon panoları, tıpkı bir şahinin geniş perspektifli kontrol yeteneği gibi, fan ve HVAC sistemlerinin tüm bileşenlerini tek merkezden güvenilir şekilde yönetmek için tasarlanmıştır.\r\nHızlı tepki süresi, hassas izleme kabiliyeti ve akıllı kontrol mimarisi sayesinde, karmaşık senaryolarda dahi sistemi kararlı tutar.\r\nEnerji yönetimi, güvenlik mantığı, hassas kumanda ve uzaktan izleme özellikleriyle Hawk; projeye “üstten bakan” bir kontrol zekâsı kazandırır.\r\nŞahin metaforunun temsil ettiği sezgi, hız ve hâkimiyet; bu panoların mühendislik karakterinin doğrudan karşılığıdır."
       },
       {
         "name": "PLC",
         "image": "/images/products/otomasyon-plc.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Panasonic Programlanabilir Lojik Kontrolör"
       },
       {
-        "name": "СЕНСОР",
-        "image": "/images/products/otomasyon-sensor.png?v=7",
+        "name": "SENSÖR",
+        "image": "/images/products/otomasyon-sensor.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "PI-PU Fark Basınç Sensörü; Fark Basınç Anahtarı; Sıcaklık Sensörü; Isı Sensörü; Duman Sensörü/ Kanal Tipi Duman Dedektörü; Titreşim Sensörü; Hava Kalite Sensörü; Hava Akış Sensörü; Sıcaklık Termostatı; CO Sensörü"
       },
       {
-        "name": "КАРТАҲОИ НАЗОРӢ - КАЛИДҲО",
+        "name": "NEXUS",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
         "specFlow": "",
-        "specPressure": ""
+        "specPressure": "",
+        "description": "Kontrol Kartı; Panel Termostat; Duman ve Basınç Sensörleri Haberleşme Kartı; CO Paneli"
+      },
+      {
+        "name": "ZAMANLAMA ve KONTROL CİHAZLARI",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "specFlow": "",
+        "specPressure": "",
+        "description": "Hız Kontrol Ünitesi; Dijital Zaman Ayar Rölesi; Mekanik Zaman Ayar Rölesi"
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Бо илҳом аз қувват, ҳокимият ва истифодаи идорашавандаи қувваи шер, силсилаи Lion аз электроникаи қувва иборат аст, ки энергияи электриро танзим, идора ва оптималӣ мекунад. Монанди шере, ки қувватро дар лаҳзаи дуруст ба кор мебарад, Lion қувваи электриро ҳушмандона идора мекунад, бахусус дар табдилдиҳандаҳои басомад (frequency converter) ва драйвҳо. Барои вентиляторҳо, муҳаррикҳо ва системаҳои HVAC таҳия шуда, он идоракунии дақиқи суръат, оғози нарм (soft start), самаранокии энергетикӣ ва ҳифзи системаро таъмин намуда, умри таҷҳизотро бо корбарии боэътимоду босалоҳият дароз мекунад."
+        "description": "Lion serisi güç elektroniği ürünleri, sistemin kalbinde liderlik rolünü üstlenir. Kritik durumlarda kararlı tepki verir; yüksek enerji taleplerinde bile güvenle çalışır. Tıpkı bir aslan gibi sessizce ama etkili biçimde kontrolü elinde tutar. Dayanıklılığı, istikrarı ve sistem üzerindeki hâkimiyeti ile her koşulda güçlü kalır."
       }
     ],
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Вибрация ва изолятсияи садо",
-        "slug": "изолятсияи ларзиш ва садо"
+        "label": "Titreşim ve Ses İzolasyonu",
+        "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Маводҳои автоматикунонӣ",
+        "title": "Otomasyon Malzemeleri ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
-    ]
+    ],
+    "heroDesc": "HAWK otomasyon panoları, PLC, SENSE sensörler, NEXUS kontrol kartları, zamanlama cihazları ve LION güç elektroniği."
   },
   "titresimVeSesIzolasyon": {
-    "title": "Вибрация ва изолятсияи садо",
-    "titleFirst": "Вибрация ва садо",
-    "titleHighlight": "Изолятсия",
-    "heroDesc": "Хомушкунак, васлкунакҳои резинӣ ва изоляторҳои ларзиш.",
+    "title": "Titreşim & Ses İzolasyon",
+    "titleFirst": "Titreşim ve Ses İzolasyon",
+    "titleHighlight": "İzolasyon",
+    "heroDesc": "Titreşim izolatörleri ve ses izolasyon elemanları.",
     "roo": {
-      "label": "Хомушкунак, овезаҳои резинӣ, изоляторҳои ларзиш",
-      "desc": "Қарорҳои махсус барои эҳтиёҷоти изолятсияи садо ва ларзиш бо моделҳои гуногун.",
+      "label": "Titreşim İzolatörleri",
+      "desc": "Roo serisi titreşim izolatörleri, makinelerinizin ve yapılarınızın titreşim kaynaklı hasarlardan korunmasını sağlar. Yüksek esneklik, darbe sönümleme ve uzun ömürlü kullanım için optimize edilmiştir.\r\nTıpkı bir kangurunun yere yumuşak inişi gibi, Roo da titreşimi sessizce absorbe eder.",
       "image": "/images/products/yayli-titresim-izolatoru.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Ҳаракати ҳавоӣ",
-        "slug": "ҳаракати ҳаво"
+        "label": "Hava Hareketi",
+        "slug": "hava-hareketi"
       },
       {
-        "label": "ҳавополо",
-        "slug": "ҳавополо"
+        "label": "İklimlendirme",
+        "slug": "iklimlendirme"
       },
       {
-        "label": "Гармкунӣ ва хунуккунӣ",
-        "slug": "хунуккунй ва гармкунй"
+        "label": "Soğutma ve Isıtma",
+        "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Идоракунии ҳаво",
-        "slug": "идоракунии ҳаво"
+        "label": "Hava Yönetimi",
+        "slug": "hava-yonetimi"
       },
       {
-        "label": "Тақсимоти ҳаво",
-        "slug": "тақсимоти ҳаво"
+        "label": "Hava Dağıtımı",
+        "slug": "hava-dagitimi"
       },
       {
-        "label": "Филтркунии ҳаво",
-        "slug": "филтратсия ҳаво"
+        "label": "Hava Filtrasyonu",
+        "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Лавозимот",
-        "slug": "лавозимот"
+        "label": "Aksesuarlar",
+        "slug": "aksesuarlar"
       },
       {
-        "label": "Маводҳои автоматикунонӣ",
-        "slug": "автоматика-таъминот"
+        "label": "Otomasyon Malzemeleri",
+        "slug": "otomasyon-malzemeleri"
       }
     ],
     "catalogs": [
       {
-        "title": "Каталоги маҳсулоти Вибрация ва изолятсияи садо",
+        "title": "Titreşim & Ses İzolasyon ürün kataloğu",
         "meta": "PDF",
         "href": ""
       },
       {
-        "title": "Каталоги умумии маҳсулоти NOVVES",
+        "title": "NOVVES genel ürün kataloğu",
         "meta": "PDF",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Дастури насб ва нигоҳдорӣ",
+        "title": "Montaj ve bakım kılavuzu",
         "meta": "Rev. 2024.2",
         "href": ""
       },
       {
-        "title": "Варақаҳои маълумоти техникӣ",
+        "title": "Teknik veri föyleri",
         "meta": "PDF",
         "href": ""
       }
@@ -1049,425 +915,599 @@
   },
   "banyoFanlari": {
     "title": "SEAHORSE",
-    "subtitle": "Мухлисони ванна",
-    "intro": "Мухлисони ҳаммом, ки барои зуд бартараф кардани бӯи бад ва буғ дар минтақаҳои хурду миёна ба мисли ҳаммом, ҳоҷатхона ва анборҳо истифода мешаванд, ҳам аз ҷиҳати гигиена ва ҳам аз ҷиҳати роҳат нақши муҳим доранд.",
+    "subtitle": "Banyo Fanları",
+    "intro": "Denizatları, kompakt yapıları ve dik duruşlarıyla dar alanlarda dengeli şekilde hareket edebilen nadir canlılardandır. Durgun suların içinde sabit kalabilir ve narin yapısıyla bulunduğu ortama zarar vermeden uyum sağlar. Bu özellik, banyo gibi küçük ve hassas alanlarda çalışan fanlar için doğrudan bir ilhamdır.\n\nDenizatı gibi küçük alanlara ustalıkla uyum sağlayan bu fanlar, banyolarda fazla yer kaplamadan etkili tahliye sağlar. Dengeli, zarif ve kontrollü çalışmasıyla nemi ve kokuyu ortamdan uzaklaştırırken, varlığıyla değil işleviyle hissedilir. Kompakt ama işlevsel bir çözüm sunar.",
     "models": [
       {
         "name": "Seahorse AP",
-        "type": "Фанҳои аксиалии ванна",
-        "image": "/images/products/banyo-fan-1.jpg",
-        "description": "Фанҳои ороишии ҳаммоми навъи AP эстетика ва функсияро дар ҷойҳои зист бо тарҳи шево ва сохтори баландсифати мувофиқ бо меъмории муосир муттаҳид мекунад."
+        "type": "Aksiyal Plastik Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Aksiyal Plastik Banyo Fanı"
       },
       {
-        "name": "Seahorse RP V1",
-        "type": "Аспиратори навъи шифт барои ванна",
-        "image": "/images/products/banyo-fan-2.jpg",
-        "description": "Аспиратори танзимшавандаи шифти RP V1 як ҳалли беҳтарини вентилятсияест, ки барои ҷойҳои зисти муосир бо тарҳи услубӣ ва механизми пешрафтаи васлкунӣ пешбинӣ шудааст."
+        "name": "Seahorse APS",
+        "type": "Aksiyal Plastik Panjurlu Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Aksiyal Plastik Panjurlu Banyo Fanı"
       },
       {
-        "name": "Seahorse RP V2",
-        "type": "Намуди шифт барои ванна V2 Аспиратор",
-        "image": "/images/products/banyo-fan-3.jpg",
-        "description": "Аспиратори RP V2 Wide Front Panel Aspirator бо тарҳи замонавӣ ва иҷрои пурқудрати худ таваҷҷӯҳро ба худ ҷалб мекунад, барои ҷойҳои зист тарҳрезӣ шудааст, ки дар он ҳам визуалӣ ва ҳам функсия дар мадди аввал қарор доранд."
+        "name": "Seahorse APC",
+        "type": "Aksiyal Plastik Kapaklı Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Aksiyal Plastik Kapaklı Banyo Fanı"
+      },
+      {
+        "name": "Seahorse RP",
+        "type": "Radyal Plastik Banyo Fanı",
+        "image": "/images/products/banyo-fan-1.png",
+        "description": "Radyal Plastik Banyo Fanı"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "catiFanlari": {
     "title": "HERON",
-    "subtitle": "Мухлисони бом",
-    "intro": "",
+    "subtitle": "Çatı Fanları",
+    "intro": "Balıkçıl kuşları; yüksek noktalarda hareketsiz durarak çevreyi gözlemler ve yalnızca gerektiğinde kanat çırpar. Uzun bacakları ve boynu sayesinde yukarıdan aşağıya doğru hakimiyet kurar. Bu özellik, çatı fanlarının konumlandığı yüksek bölgelerden havayı tahliye etme işlevine doğrudan ilham verir.\n\nBalıkçıl gibi yükseklerde konumlanan çatı fanları, sistemin genel havasını dengede tutar. Sessiz, dengeli ve sürekli devinim içinde olmayan yapısıyla gerektiğinde devreye girerek maksimum etki sağlar. Duruşuyla bile sistemi yukarıdan kontrol eder.",
     "models": [
       {
-        "name": "Ҳерон Р.Х.",
-        "type": "Резиши уфуқӣ Радиал Боми Намуди Фан",
-        "image": "/images/products/heron-rh.jpg",
-        "description": "Махсусан барои барномаҳои истихроҷи ҳаво тарҳрезӣ шудааст, ки насби болои бомро талаб мекунанд."
+        "name": "Heron RH",
+        "type": "Radyal Yatay Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Radyal Yatay Atışlı Çatı Tipi Fan"
       },
       {
-        "name": "HeronRHS",
-        "type": "Резиши уфуқӣ Мотор беруна Радиал Боми Фан",
-        "image": "/images/products/heron-rhs.jpg",
-        "description": "Дар барномаҳое, ки ҳарорати баланд ва эвакуатсияи ҳавои ифлос лозим аст."
+        "name": "Heron RHS",
+        "type": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan"
       },
       {
-        "name": "Ҳерон Р.В",
-        "type": "Пардохти амудии Радиал Боми Намуди Фан",
-        "image": "/images/products/heron-rv.jpg",
-        "description": "Самаранокии баланд дар барномаҳое, ки ихроҷи амудии ҳаворо талаб мекунанд."
+        "name": "Heron RV",
+        "type": "Radyal Dikey Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Radyal Dikey Atışlı Çatı Tipi Fan"
       },
       {
         "name": "Heron RVS",
-        "type": "Пардохти амудии муҳаррики берунии Радиали Боми Фан",
-        "image": "/images/products/heron-rvs.jpg",
-        "description": "Ҳарорати баланд ва ихроҷи ҳавои буғ."
+        "type": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan"
       },
       {
-        "name": "Ҳерон А",
-        "type": "Ҷараёни уфуқӣ Axial Боми Фан",
-        "image": "/images/products/heron-ah.jpg",
-        "description": "Таъмини ҳавои тоза ё ихроҷ дар минтақаҳои ҳаҷми калон."
+        "name": "Heron AH",
+        "type": "Aksiyal Yatay Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Aksiyal Yatay Çatı Tipi Fan"
       },
       {
-        "name": "Ҳерон AVH",
-        "type": "Намуди боми пӯшида мухлиси аксиалӣ",
-        "image": "/images/products/free.jpg",
-        "description": "Боми навъи вентилятори меҳвари бо сарпӯш."
+        "name": "Heron AV",
+        "type": "Aksiyal Dikey Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Aksiyal Dikey Çatı Tipi Fan"
+      },
+      {
+        "name": "Heron H",
+        "type": "Aksiyal Dikey Kapaklı Çatı Tipi Fan",
+        "image": "/images/products/heron-rv.png",
+        "description": "Aksiyal Dikey Kapaklı Çatı Tipi Fan"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "damperler": {
     "title": "HOUND",
-    "subtitle": "Амнаторҳо",
-    "intro": "Демпферҳои силсилаи Novves HOUND барои таъмини ҳадди аксар назорат ва бехатарӣ дар нуқтаҳои муҳимтарини вентилятсия ва системаҳои бехатарии сӯхтор тарҳрезӣ шудаанд.",
+    "subtitle": "Damperler",
+    "intro": "Tazılar, çevik yapıları ve hedefe kilitlenen hassas duyularıyla tanınan av köpekleridir. Yön bulma becerileri, hızlı tepkileri ve akışı kontrol edebilmeleriyle öne çıkarlar. Hava yönlendirme sistemlerinde görev yapan damperlerle bu özellikleri birebir örtüşür.\n\nTazı gibi yön sezgisi güçlü olan bu damperler, hava akışını doğru zamanda, doğru yöne yönlendirir. Hızlı tepki verir, anında devreye girer; sistemin hava haritasını kontrol altında tutar. Görünmeden yol çizen, ama yönü belirleyen sadık bir rehber gibidir.",
     "models": [
       {
-        "name": "Hound SD M24",
-        "type": "Чоҳи дуд Damper 24V Servo Motor",
-        "image": "/images/products/hound-sd-m24.jpg",
-        "description": "Маҳсулот барои эвакуатсияи бехатари ҳаво дар системаҳои назорати оташ ва дуд таҳия шудааст, ки EN 17051 синфи мӯҳри Синфи C ва мутобиқати мотори серворо пешниҳод мекунад."
-      },
-      {
-        "name": "Hound харед",
-        "type": "Ҳавои ҳаво",
+        "name": "Hound MSD",
+        "type": "Motorlu Şaft / Kat Duman Tahliye Damperi",
         "image": "/images/products/hound-al.png",
-        "description": "Системаи аз ҷиҳати эстетикӣ тарҳрезишудаи парда, ки ҷараёнро дар нуқтаҳои вуруд ва баромади ҳаво равона мекунад ва аз омилҳои беруна муҳофизат мекунад."
+        "description": "Motorlu Şaft / Kat Duman Tahliye Damperi"
       },
       {
-        "name": "Hound CRD",
-        "type": "Рельеф дампер",
-        "image": "/images/products/hound-crd.jpg",
-        "description": "Дамперҳои автоматии навъи кушодани фишор барои назорати аз ҳад зиёд ва ҳифзи ҷузъҳои система."
+        "name": "Hound MSFD-R",
+        "type": "Motorlu Duman Fan Damperi – Dikdörtgen",
+        "image": "/images/products/hound-al.png",
+        "description": "Motorlu Duman Fan Damperi – Dikdörtgen"
+      },
+      {
+        "name": "Hound MSFD-B",
+        "type": "Motorlu Duman Fan Damperi – Kelebek Tipi",
+        "image": "/images/products/hound-al.png",
+        "description": "Motorlu Duman Fan Damperi – Kelebek Tipi"
+      },
+      {
+        "name": "Hound SFD-B",
+        "type": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Kelebek Tipi",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Kelebek Tipi"
+      },
+      {
+        "name": "Hound SFD-R",
+        "type": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen"
+      },
+      {
+        "name": "Hound RSFD-B",
+        "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi"
+      },
+      {
+        "name": "Hound RSFD-DraIn-B",
+        "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi"
+      },
+      {
+        "name": "Hound BD",
+        "type": "By-Pass Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "By-Pass Damperi"
+      },
+      {
+        "name": "Hound FFD",
+        "type": "Sigortalı Yangın Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "Sigortalı Yangın Damperi"
+      },
+      {
+        "name": "Hound MFD",
+        "type": "Motorlu Yangın Damperi",
+        "image": "/images/products/hound-al.png",
+        "description": "Motorlu Yangın Damperi"
+      },
+      {
+        "name": "Hound RD",
+        "type": "Tahliye Damperi (Relief)",
+        "image": "/images/products/hound-al.png",
+        "description": "Tahliye Damperi (Relief)"
+      },
+      {
+        "name": "Hound GS",
+        "type": "Serbest Kanatlı Klape (Gravity)",
+        "image": "/images/products/hound-al.png",
+        "description": "Serbest Kanatlı Klape (Gravity)"
+      },
+      {
+        "name": "Hound NRD-B",
+        "type": "Geri Dönüşsüz Damper – Kelebek",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Damper – Kelebek"
+      },
+      {
+        "name": "Hound NRD-R",
+        "type": "Geri Dönüşsüz Damper – Dikdörtgen",
+        "image": "/images/products/hound-al.png",
+        "description": "Geri Dönüşsüz Damper – Dikdörtgen"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
-    "subtitle": "Мухлисони эвакуатсияи дуд ва гармӣ",
-    "intro": "Силсилаи венти истихроҷи дуд ва гармӣ бо шаҳодатномаи муқовимати оташнишонии синфи F300, ки барои 2 соат ба ҳарорати 300 ° C тобовар аст.",
+    "subtitle": "Duman ve Isı Tahliye Fanları",
+    "intro": "Yusufçuklar doğadaki en çevik uçucular arasındadır. Ani yön değiştirerek rüzgârla uyum içinde hareket ederler. Bu kabiliyetleriyle sıcak hava, duman ve tehlikeli gazların hızla boşaltılmasını temsil eder.\n\nYusufçuk gibi çevik ve kararlı biçimde hareket eden bu fanlar, yangın anında oluşan dumanı ve ısıyı hızla tahliye ederek ortamın güvenliğini sağlar. Sessizliği ve ani tepki kapasitesiyle tam zamanında devreye girer.",
     "models": [
       {
-        "name": "Дракон Т",
-        "type": "Axial остин Намуди дуд ва гармии эвакуатсия Фан",
+        "name": "Dragonfly T",
+        "type": "Kovan Tipi Aksiyal Duman ve Isı Tahliye Fanı F300",
         "image": "/images/products/dragonfly-t.jpg",
-        "description": "Фанти аксиалии навъи тобовар ба ҳарорати баланд барои эвакуатсияи самараноки дуд ва ҳавои гарм ҳангоми сӯхтор пешбинӣ шудааст. EN 12101-3 тасдиқ карда шудааст."
+        "description": "Kovan Tipi Aksiyal Duman ve Isı Tahliye Fanı F300"
       },
       {
-        "name": "ажнавоз Р",
-        "type": "Намуди Axial Боми Дуд ва Фанҳои эвакуатсияи гармӣ",
-        "image": "/images/products/dragonfly-r.jpg",
-        "description": "Вентели болои боми ба ҳарорати баланд тобовар, ки эвакуатсияи зуд, бехатар ва самараноки дуд ва ҳавои гармро ҳангоми сӯхтор таъмин мекунад. EN 12101-3 тасдиқ карда шудааст."
-      },
-      {
-        "name": "Ажача C",
-        "type": "Дуди меҳвари ҳуҷайра ва мухлиси ихроҷи гармӣ",
+        "name": "Dragonfly TS",
+        "type": "Kısa Kovanlı Duman ve Isı Tahliye Fanı",
         "image": "/images/products/dragonfly-c.png",
-        "description": "Навъи кабина ба ҳарорати баланд тобовар ва сатҳи пасти садо барои эвакуатсияи бехатари дуд ва ҳавои ҳарорати баланд ҳангоми сӯхтор таҳия шудааст. EN 12101-3 тасдиқ карда шудааст."
+        "description": "Kısa Kovanlı Duman ve Isı Tahliye Fanı"
       },
       {
-        "name": "Драконфля JAU",
-        "type": "Фанҳои реактивии яктарафа",
-        "image": "/images/products/dragonfly-jau.jpg",
-        "description": "Барои таъмини эвакуатсияи дуд ва гардиши ҳаво дар таваққуфгоҳҳо, нақбҳо ва минтақаҳои пӯшида, ки ба ҳарорати баланд тобоваранд, пешбинӣ шудааст. EN 12101-3 тасдиқ карда шудааст."
+        "name": "Dragonfly C",
+        "type": "Hücreli Tip Aksiyal Duman&Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png?v=3",
+        "description": "Hücreli Tip Aksiyal Duman&Isı Tahliye Fanı F300"
       },
       {
-        "name": "DragonflyJAR",
-        "type": "Фанҳои дуҷонибаи аксиалӣ",
-        "image": "/images/products/dragonfly-jar.jpg",
-        "description": "Он дутарафа буда, барои таъмини эвакуатсияи дуд, вентилятсия ва гардиши ҳаво дар таваққуфгоҳҳои дарунӣ ва фазои дохилии ҳаҷми калон таҳия шудааст. Сатҳи пасти садо ва иҷрои баланд."
+        "name": "Dragonfly R",
+        "type": "Yatay Çatı Tipi Aksiyal Duman&Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-r.jpg",
+        "description": "Yatay Çatı Tipi Aksiyal Duman&Isı Tahliye Fanı F300"
       },
       {
-        "name": "Dragonfly J.R.",
-        "type": "Фанҳои реактивии радиалӣ",
+        "name": "Dragonfly RV",
+        "type": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly TJF",
+        "type": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly JR",
+        "type": "Radyal Jet Fan Duman ve Isı Tahliye Fanı",
         "image": "/images/products/dragonfly-jr.jpg",
-        "description": "Махсусан барои эвакуатсияи дуд ва вентилятсияи фавқулодда дар ҷойҳои душвори дохилӣ ба монанди таваққуфгоҳи мошинҳои пӯшида, нақбҳо ва минтақаҳои сӯхтор тарҳрезӣ шудааст. EN 12101-3 тасдиқ карда шудааст."
+        "description": "Radyal Jet Fan Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly JA",
+        "type": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300"
+      },
+      {
+        "name": "Dragonfly W",
+        "type": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300"
+      },
+      {
+        "name": "Dragonfly WH",
+        "type": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300"
+      },
+      {
+        "name": "Dragonfly RH",
+        "type": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı"
+      },
+      {
+        "name": "Dragonfly LPF",
+        "type": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı",
+        "image": "/images/products/dragonfly-c.png",
+        "description": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
-    "subtitle": "Мухлисони ба девор васлшаванда",
-    "intro": "",
+    "subtitle": "Duvar Fanları",
+    "intro": "Baykuşlar, genellikle yüksek ve sabit noktalarda konumlanarak çevreyi geniş bir açıyla gözlemlerler. Keskin görüş açıları ve sabit duruşlarıyla dikkat çekerler. Duvar fanları da sabit bir konumdan geniş alanlara yönlü hava akışı sağlayarak benzer bir görev üstlenir.\n\nBaykuş gibi duvarlara sabitlenmiş bir gözetleyici gibi çalışan bu fanlar, yüksekten ve geniş açıyla güçlü hava tahliyesi yapar. Her an tetikte, çevresine hâkimdir; yönlendirdiği hava akımıyla ortamı hızla dönüştürür. Baykuş gibi odaklanmış, etkili ve alan üzerinde kontrol sahibidir.",
     "models": [
       {
-        "name": "Ow RER",
-        "type": "Венти росткунҷаи ба девор васлшаванда",
+        "name": "Owl RER",
+        "type": "Dikdörtgen Dıştan Rotorlı Duvar Tipi Fan",
         "image": "/images/products/owl-rer.png",
-        "description": "Ин як маҳлули вентилятори меҳварии металлӣ мебошад, ки махсус барои насби девор тарҳрезӣ шудааст, ки бо сохтори устувор ва суръати танзимшавандаи худ фарқ мекунад."
+        "description": "Dikdörtgen Dıştan Rotorlı Duvar Tipi Fan"
       },
       {
-        "name": "Owl RWA",
-        "type": "Росткунҷаи Axial Девори васлшаванда Фан",
-        "image": "/images/products/owl-rwa.jpg",
-        "description": "Ин як ҳалли вентилятори меҳварест, ки барои васлкунии девор дар шакли росткунҷа мувофиқ аст ва бо тарҳи хеле самараноки майсаи аэрофоли худ фарқ мекунад."
+        "name": "Owl R",
+        "type": "Dikdörtgen Aksiyal Duvar Tipi Fan",
+        "image": "/images/products/owl-rer.png",
+        "description": "Dikdörtgen Aksiyal Duvar Tipi Fan"
+      },
+      {
+        "name": "Owl H",
+        "type": "Aksiyal Kapaklı Duvar Tipi Fan",
+        "image": "/images/products/owl-rer.png",
+        "description": "Aksiyal Kapaklı Duvar Tipi Fan"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
-    "subtitle": "Мухлисони EC",
-    "intro": "Силсилаи Hummingbird ҳалли бом ва навъи вентиляторҳоро пешниҳод мекунад, ки иҷрои баландро бо сарфаи энергия бо технологияи мотори EC муттаҳид мекунанд.",
+    "subtitle": "EC Fanlar",
+    "intro": "Sinek kuşu, doğanın en küçük ama en çevik canlılarından biridir. Dakikada binlerce kez kanat çırpabilir, yerinde sabit durabilir ve yönünü anında değiştirebilir. Tüm bunları son derece verimli bir enerji kullanımıyla yapar — tıpkı EC (Electronically Commutated) fanlar gibi.\n\nSinek kuşu gibi küçük boyutuna rağmen olağanüstü verimli ve hassas çalışan bu fanlar, enerji tasarrufu ve sessiz çalışma gerektiren sistemler için idealdir. Hızlı tepki kabiliyeti ve akıllı kontrolü ile sisteminizi bir doğa harikası gibi dengeler.",
     "models": [
       {
-        "name": "Hummingbird RRV",
-        "type": "EC разряди амудии Боми Фан",
-        "image": "/images/products/hummingbird-rh.jpg",
-        "description": "Ин як муҳаррики самараноки EC мебошад, ки барои биноҳои муосир таҳия шудааст. Он дар барномаҳои бароҳатӣ ва вентилятсияи саноатӣ бо имконоти идоракунии оқилонаи худ, истеъмоли ками энергия ва кори хомӯшона фарқ мекунад."
+        "name": "Hummingbird DRB EC",
+        "type": "Dikdörtgen Kanal Tipi EC Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Dikdörtgen Kanal Tipi EC Fan"
       },
       {
-        "name": "Hummingbird DRB",
-        "type": "EC Rectangular канали Намуди Фан",
+        "name": "Hummingbird RRV EC",
+        "type": "Dikey Atışlı Çatı Tipi Radyal EC Fan",
         "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Ин як маҳлули мухлиси навъи росткунҷаест, ки дорои муҳаррики баландсифати EC мебошад, ки барои истифода дар системаҳои муосири вентилятсия пешбинӣ шудааст. Он дар бароҳатӣ ва барномаҳои саноатӣ бо сохтори паймон, кори ором ва қобилияти ҳамгироӣ ба системаҳои автоматикунонӣ ба таври бехатар бартарӣ дода мешавад."
+        "description": "Dikey Atışlı Çatı Tipi Radyal EC Fan"
+      },
+      {
+        "name": "Hummingbird RRH EC",
+        "type": "Yatay Atışlı Çatı Tipi Radyal EC Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Yatay Atışlı Çatı Tipi Radyal EC Fan"
+      },
+      {
+        "name": "Hummingbird CBP EC",
+        "type": "Hücreli Tip Geriye Eğimli Plug EC Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Hücreli Tip Geriye Eğimli Plug EC Fan"
+      },
+      {
+        "name": "Hummingbird NS EC",
+        "type": "Çift Cidarlı Sessiz EC Salyangoz Fan",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Çift Cidarlı Sessiz EC Salyangoz Fan"
+      },
+      {
+        "name": "Hummingbird CARACAL DS EC",
+        "type": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Hummingbird FOX D EC",
+        "type": "Kanal Tipi EC Sığınak Havalandırma Fanı",
+        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "description": "Kanal Tipi EC Sığınak Havalandırma Fanı"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
-    "subtitle": "Мухлисони Снаулҳои саноатӣ",
-    "intro": "Муносибати баландро бо сарфаи энергия муттаҳид карда, мухлисони саноатӣ ҳалли пуриқтидор ва муассири вентилятсияро бо сохтори каҷ ба ақиб ва тарҳи мотори мустақим пешниҳод мекунанд.",
+    "subtitle": "Endüstriyel Salyangoz Fanlar",
+    "intro": "Nautilus, doğada mükemmel logaritmik spiral yapıya sahip nadir canlılardandır. Kabuk yapısı hava akışını doğal olarak yönlendiren ve basınç oluşturan bir formdadır. Bu simetri ve iç hacim kullanımı, endüstriyel salyangoz fanların işleyişine doğrudan ilham verir.\n\nSalyangoz gibi spiral formu sayesinde yüksek basınçla hava yönlendirmesi yapan bu fanlar, endüstriyel ortamlarda güçlü ve dengeli hava tahliyesi sağlar. Nautilus’un iç yapısındaki doğa harikası düzen, mühendisliğimizin temel ilhamıdır.",
     "models": [
       {
-        "name": "Наутилус LPF",
-        "type": "Фанҳои саноатӣ",
-        "image": "/images/products/nautilus-lfp.jpg",
-        "description": "Мухлиси саноатӣ, ки иҷрои баландро бо сарфаи энергия муттаҳид мекунад."
+        "name": "Nautilus LPF",
+        "type": "Alçak Basınçlı Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Alçak Basınçlı Endüstriyel Salyangoz Fan"
       },
       {
-        "name": "Хомӯшии Наутилус",
-        "type": "Мухлиси дугонаи девори хазлу",
-        "image": "/images/products/nautilus-cif-cidarli.jpg",
-        "description": "Силсилаи NAUTILUS Silence мухлисони радиалӣ мебошанд, ки дар системаҳое, ки интиқоли ҳавои фишори пастро талаб мекунанд, бо самаранокии баланд кор мекунанд ва бо сохтори паймон ва тарҳи мустақими пайвасти худ фарқ мекунанд."
+        "name": "Nautilus MPF",
+        "type": "Orta Basınçlı Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Orta Basınçlı Endüstriyel Salyangoz Fan"
+      },
+      {
+        "name": "Nautilus HPF",
+        "type": "Yüksek Basınçlı Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Yüksek Basınçlı Endüstriyel Salyangoz Fan"
+      },
+      {
+        "name": "Nautilus SILENCE",
+        "type": "Sessiz Tip Endüstriyel Salyangoz Fan",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "Sessiz Tip Endüstriyel Salyangoz Fan"
+      },
+      {
+        "name": "Nautilus PARTS",
+        "type": "NAUTILUS ORTAK",
+        "image": "/images/products/nautilus-cif-cidarli.png",
+        "description": "NAUTILUS ORTAK"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "exproofFanlar": {
     "title": "BEAR",
-    "subtitle": "Мухлисони Exproof",
-    "intro": "Мухлисони силсилаи Bear ҳалли мухлиси Ex-Proof мебошанд, ки барои истифода дар муҳити гази тарканда ва оташгиранда пешбинӣ шудаанд.",
+    "subtitle": "Ex-proof Fanlar",
+    "intro": "Ayılar; doğada güçlü, dirençli ve tehlike karşısında soğukkanlılıkla hareket eden canlılardır. Zorlu ortam koşullarına uyum sağlayabilmeleri ve fiziksel dayanıklılıklarıyla ön plana çıkarlar. Bu özellikler, patlama riski taşıyan ortamlarda kullanılan ATEX fanlarının doğasını yansıtır.\n\nAyı gibi güçlü, dayanıklı ve her koşulda güvenle çalışan bu fanlar, tehlikeli ve patlayıcı ortamlarda yüksek koruma sağlar. Güvenliğin ön planda olduğu alanlarda, sarsılmaz bir güven sunar.",
     "models": [
       {
-        "name": "Хирс EX-REB",
-        "type": "Навъи канали росткунҷаи Exproof Фан",
-        "image": "/images/products/bear-reb.jpg",
-        "description": "Ex-Proof, ки барои таъмини вентилятсияи бехатар дар муҳити гази тарканда пешбинӣ шудааст. Стандарти баланди бехатарӣ, амалиёти назоратшавандаи басомад, мувофиқ бо минтақаҳои ATEX."
+        "name": "Bear REB EX",
+        "type": "Ex-proof Dikdörtgen Kanal Fanı",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Dikdörtgen Kanal Fanı"
       },
       {
-        "name": "Хирс EX-T",
-        "type": "Axial остин Намуди Exproof Фан",
-        "image": "/images/products/bear-t.jpg",
-        "description": "Интиқоли бехатари ҳаво дар муҳити тарканда, тарҳи мутавозини пропеллер. Барномаҳои саноатӣ бо хатари оташ ва шарораҳо."
+        "name": "Bear RVS EX",
+        "type": "Ex-proof Dikey Radyal Atışlı Çatı Fanı",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Dikey Radyal Atışlı Çatı Fanı"
       },
       {
-        "name": "Хирс EX-RRH",
-        "type": "Уфуқӣ разряди Боми Намуди Exproof Радиал Фан",
-        "image": "/images/products/bear-rrh.jpg",
-        "description": "Махсусан барои барномаҳое тарҳрезӣ шудааст, ки эвакуатсияи уфуқӣ аз болои сақфро талаб мекунанд. ATEX Минтақаи 1 ва Минтақаи 2."
+        "name": "Bear RHS EX",
+        "type": "Ex-proof Yatay Atışlı Radyal Çatı Fanı",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Yatay Atışlı Radyal Çatı Fanı"
       },
       {
-        "name": "Хирс EX-RRV",
-        "type": "Намуди амудии разряди Боми Exproof Радиал Фан",
-        "image": "/images/products/bear-rrv.jpg",
-        "description": "Ихроҷи ҳавои фишори баланд, муқовимати дарозмуддати берунӣ."
+        "name": "Bear T",
+        "type": "Ex-proof Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Kovan Tipi Aksiyal Fan"
       },
       {
-        "name": "Хирс EX-BP",
-        "type": "Cellular Exproof Fan Radial",
-        "image": "/images/products/bear-bp.jpg",
-        "description": "Ин як ҳалли пуриқтидор ва ором бо сохтори ҳуҷайраи модулӣ мебошад."
+        "name": "Bear C",
+        "type": "Ex-proof Aksiyal Hücreli Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Aksiyal Hücreli Fan"
       },
       {
-        "name": "Хирс EX-C",
-        "type": "Cellular Exproof Fan Axial",
-        "image": "/images/products/bear-c.jpg",
-        "description": "Фаъолияти ором, осонии нигоҳдорӣ, мутобиқати ATEX."
+        "name": "Bear R",
+        "type": "Ex-proof  Yatay Atışlı Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof  Yatay Atışlı Aksiyal Fan"
       },
       {
-        "name": "Хирс LPF",
-        "type": "Намуди Snail Ex-proof Fan",
-        "image": "/images/products/bear-lpf.jpg",
-        "description": "Эвакуатсияи бехатари ҳаво дар муҳити дорои газ ё буғи тарканда."
+        "name": "Bear W",
+        "type": "Ex-proof Duvar Tipi Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Duvar Tipi Aksiyal Fan"
       },
       {
-        "name": "хирс Р",
-        "type": "Фанҳои навъи боми аксиалӣ",
-        "image": "/images/products/bear-r.jpg",
-        "description": "Он барои қонеъ кардани эҳтиёҷоти вентилятсияи табиӣ ва ихроҷи биноҳои калонҳаҷм пешбинӣ шудааст."
+        "name": "Bear LPF EX",
+        "type": "Ex-proof  Salyangoz Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof  Salyangoz Fan"
       },
       {
-        "name": "Хирс В",
-        "type": "Фанҳои аксиалӣ (навъи девор)",
-        "image": "/images/products/bear-w.jpg",
-        "description": "Оташгиранда, мутобиқати ATEX, иҷрои баланд."
+        "name": "Bear TB",
+        "type": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan"
+      },
+      {
+        "name": "Bear BPA EX",
+        "type": "Ex-proof Radyal Hücreli Fan",
+        "image": "/images/products/bear-reb.png",
+        "description": "Ex-proof Radyal Hücreli Fan"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
-    "subtitle": "Заводи намноккунии хавз",
-    "intro": "Агрегатҳои намноккунии ҳавзи силсилаи Dolphin, ки аз ҷониби NOVVES таҳия карда шудаанд, намӣ дар ҳавзҳои дарунӣ аз вайрон кардани сохтор пешгирӣ мекунанд ва ҳамзамон бароҳатии корбаронро ба ҳадди аксар мерасонад. Бо самаранокии баланди энергия, сохтори дарозмуддат ва кори ороми худ, Dolphin Series интихоби касбӣ дар ҳалли кондитсионерии ҳавз мебошад.",
+    "subtitle": "Nem Alma Santralleri",
+    "intro": "Yunuslar; zeki, çevik ve ortam koşullarına hızlı uyum sağlayan deniz canlılarıdır. Sudan gelen nemi doğal olarak yönetebilen bu canlılar, çevrelerine duyarlı ve dengeli yaşamlarıyla bilinirler. Bu özellik, ortam havasındaki nemin sürekli kontrol altında tutulduğu sistemlere doğrudan ilham verir.\n\nYunus gibi çevik ve sezgisel çalışan bu santraller, ortam nemini hassas biçimde dengeler. Aşırı nemi fark eder, fazlasını çeker ve içeriği konforlu hale getirir. Sistem içinde zarafetiyle fark edilmez ama konforu baştan sona şekillendirir. Her nefeste ferahlık sunar, her ortamda dengeyi sağlar.",
     "tableHeaders": {
-      "model": "Модели",
-      "airFlow": "Меъёри ҷараёни ҳаво (м³/с)",
-      "poolArea": "Майдони ҳавз (м²)",
-      "cooling": "Хунуккунӣ (кВт)",
-      "condenser": "Конденсатор (кВт)",
-      "waterHeater": "Обгармкунак (кВт)"
+      "model": "Model",
+      "airFlow": "Hava Debisi (m³/h)",
+      "poolArea": "Havuz Alanı (m²)",
+      "cooling": "Soğutma (kW)",
+      "condenser": "Kondenser (kW)",
+      "waterHeater": "Su Isıtıcı (kW)"
     },
     "models": [
       {
-        "model": "ДЕЛЬФИН 300",
+        "model": "DOLPHIN 300",
         "airFlow": "3.000",
         "area": "50",
         "cooling": "21,1",
@@ -1475,7 +1515,7 @@
         "water": "26,15"
       },
       {
-        "model": "ДЕЛФИН 400",
+        "model": "DOLPHIN 400",
         "airFlow": "4.000",
         "area": "75",
         "cooling": "28,7",
@@ -1483,7 +1523,7 @@
         "water": "34,12"
       },
       {
-        "model": "ДЕЛФИН 450",
+        "model": "DOLPHIN 450",
         "airFlow": "4.500",
         "area": "100",
         "cooling": "33,3",
@@ -1491,7 +1531,7 @@
         "water": "36,24"
       },
       {
-        "model": "ДЕЛЬФИН 600",
+        "model": "DOLPHIN 600",
         "airFlow": "6.000",
         "area": "150",
         "cooling": "42,2",
@@ -1499,7 +1539,7 @@
         "water": "50,58"
       },
       {
-        "model": "ДЕЛФИН 750",
+        "model": "DOLPHIN 750",
         "airFlow": "7.500",
         "area": "200",
         "cooling": "52,6",
@@ -1507,287 +1547,1516 @@
         "water": "62,97"
       },
       {
-        "model": "ДЕЛЬФИН 900",
+        "model": "DOLPHIN 900",
         "airFlow": "9.000",
         "area": "250",
         "cooling": "36,8",
         "condenser": "80,68",
         "water": "77,1"
       }
-    ]
-  },
-  "hucreliFanlar": {
-    "title": "TURTLE",
-    "subtitle": "Мухлисони мобилӣ",
-    "intro": "Мухлисони ҳуҷайраҳои Turtle Series метавонанд ҳам барои интиқоли ҳавои тоза ва ҳам ихроҷи ҳаво истифода шаванд. Дар ҳоле ки он ба туфайли сохтори паймонаш бевосита дар фарш осонии насбро пешниҳод мекунад, он изолятсияи муассири акустикиро бо пур кардани пашми сангӣ байни деворҳои дохилӣ таъмин мекунад.",
-    "models": [
+    ],
+    "productLines": [
       {
-        "name": "Сангпушт Б.",
-        "type": "Камар шкив ронда Fan Cell",
-        "image": "/images/products/turtle-b.jpg",
-        "description": "Ин як модели вентилятори навъи шкафест, ки дар системаҳое, ки суръати баланди ҷараёни ҳаворо талаб мекунанд, ҳалли боэътимод ва бесадо пешниҳод мекунад."
+        "name": "Dolphin S",
+        "type": "Standart Nem Alma Santrali",
+        "image": "/images/products/dolphin-pre.png",
+        "description": "Standart Nem Alma Santrali"
       },
       {
-        "name": "Сангпушт BP",
-        "type": "Намуди Cellular Фан сими қубурӣ аќиб",
-        "image": "/images/products/turtle-bp.jpg",
-        "description": "Ин як модели вентилятори навъи кабинети баландсифат аст, ки ҳалли ором, муассир ва паймонро пешниҳод мекунад."
+        "name": "Dolphin HR",
+        "type": "Isı Geri Kazanımlı Nem Alma Santrali",
+        "image": "/images/products/dolphin-pre.png",
+        "description": "Isı Geri Kazanımlı Nem Alma Santrali"
       },
       {
-        "name": "Сангпушт BPA",
-        "type": "Намуди Cellular Фан радиалии каҷӣ",
-        "image": "/images/products/turtle-bpa.png",
-        "description": "Ин як ҳалли вентилятсияи саноатӣ мебошад, ки самаранокии баланд ва кори оромро бо сохтори навъи ҳуҷайра ва технологияи вентилятсияи радиалии ба ақиб каҷшуда пешниҳод мекунад."
-      },
-      {
-        "name": "Сангпушт Ф.",
-        "type": "Cellular пеш қубурӣ Blade Фан",
-        "image": "/images/products/turtle-f.jpg",
-        "description": "Ин як модели вентилятори навъи кабинаи дукарата аст, ки бо кори ором ва самараноки худ дар системаҳое, ки интиқоли ҳавои фишори пастро талаб мекунанд, фарқ мекунад."
-      },
-      {
-        "name": "Сангпушт А.",
-        "type": "Фанҳои аксиалии ҳуҷайра",
-        "image": "/images/products/turtle-a.jpg",
-        "description": "Онҳо маҳлулҳои вентилятории навъи кабинаи паймоне мебошанд, ки барои системаҳое пешбинӣ шудаанд, ки интиқоли ҷараёни баланди ҳаворо талаб мекунанд."
+        "name": "Dolphin POOL",
+        "type": "Havuz Tipi Nem Alma Santrali",
+        "image": "/images/products/dolphin-pre.png",
+        "description": "Havuz Tipi Nem Alma Santrali"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "hucreliFanlar": {
+    "title": "TURTLE",
+    "subtitle": "Hücreli Fanlar",
+    "intro": "Kaplumbağalar; korunaklı, modüler ve uzun ömürlü yapılarıyla tanınır. Dış kabukları onları çevresel etkilere karşı korurken, iç sistemleri güvenle çalışır. Yavaş ama kararlı ilerlemeleriyle güvenilirliği ve sağlamlığı simgelerler.\n\nKaplumbağa gibi sağlam bir dış gövdeye ve korunaklı iç yapıya sahip hücreli fanlar, sistemin kalbinde uzun yıllar boyunca güvenle çalışır. Her bir hücre, görevini kaplumbağanın kabuğundaki desen kadar düzenli ve dirençli şekilde yerine getirir. Dış etkilere karşı güçlü, içte ise daima hazırdır.",
+    "models": [
+      {
+        "name": "Turtle B",
+        "type": "Geriye Eğik Kayış Kasnaklı Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Geriye Eğik Kayış Kasnaklı Hücreli Fan"
+      },
+      {
+        "name": "Turtle BPA",
+        "type": "Geriye Eğik Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Geriye Eğik Hücreli Fan"
+      },
+      {
+        "name": "Turtle BP",
+        "type": "Geri Eğik Plug Motorlu Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Geri Eğik Plug Motorlu Hücreli Fan"
+      },
+      {
+        "name": "Turtle F",
+        "type": "Öne Eğik Kayış Kasnaklı Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Öne Eğik Kayış Kasnaklı Hücreli Fan"
+      },
+      {
+        "name": "Turtle FP",
+        "type": "Öne Eğik Plug Motorlu Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Öne Eğik Plug Motorlu Hücreli Fan"
+      },
+      {
+        "name": "Turtle A",
+        "type": "Aksiyal Hücreli Fan",
+        "image": "/images/products/turtle-a.png",
+        "description": "Aksiyal Hücreli Fan"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
-    "subtitle": "Дастгоҳҳои барқарорсозии гармӣ",
-    "intro": "Силсилаи Каракал кондитсионери идорашавандаро барои қонеъ кардани эҳтиёҷоти ҳавои тоза ва беҳтар кардани сифати ҳаво дар минтақаҳои иҷтимоӣ, аз қабили офисҳо, мактабҳо, меҳмонхонаҳо, беморхонаҳо, марказҳои тиҷоратӣ, марказҳои савдо, майдонҳои намоишӣ ва ошхонаҳо таъмин мекунад.",
-    "caracalD": {
-      "title": "Каракал Д.",
-      "type": "Дастгоҳи барқарорсозии гармӣ",
-      "description": "Силсилаи Caracal D (Дастгоҳи барқарорсозии гармӣ) як ҳалли паймон ва сермахсул аст, ки барои баланд бардоштани самаранокии энергия ҳангоми тароват кардани ҳавои дарунӣ таҳия шудааст. Он вентилятсияи бароҳат ва устуворро бо сохтори пойдор ва панели идоракунӣ барои истифодабарандагон таъмин мекунад."
-    },
+    "subtitle": "Isı Geri Kazanım",
+    "intro": "Karakulaklar, çevreye karşı olağanüstü duyarlılığıyla bilinen yırtıcılardır. En ufak hareketi algılayabilen kulak yapıları ve enerji kaybını minimumda tutan avlanma teknikleriyle dikkat çekerler. Doğada enerji israf etmeyen ve verimliliği ön planda tutan nadir canlılardandır.\n\nKarakulak gibi çevresini anında algılayan bu sistem, içerideki sıcak havayı israf etmeden yeniden kazandırır. Isı kaybını asgariye indirirken temiz hava döngüsünü sürekli tutar. Tıpkı bir karakulak gibi, görünmeden izler, enerji kaybını fark eder ve sessizce sistemi optimize eder. Enerjiyi geri kazandıran zarif bir avcı gibidir.",
+    "models": [
+      {
+        "name": "Caracal D",
+        "type": "Kanal Bağlantılı Tavan Tipi Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Kanal Bağlantılı Tavan Tipi Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal RD",
+        "type": "Konut Tipi Kanal Bağlantılı Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Konut Tipi Kanal Bağlantılı Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal RC",
+        "type": "Konut Tipi Hücreli Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Konut Tipi Hücreli Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal C",
+        "type": "Hücreli Tip Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Hücreli Tip Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal DX D",
+        "type": "Isı Pompası Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Isı Pompası Isı Geri Kazanım Ünitesi"
+      },
+      {
+        "name": "Caracal SX D",
+        "type": "Selüloz Isı Eşanjörlü Isı Geri Kazanım Ünitesi",
+        "image": "/images/products/caracal.png",
+        "description": "Selüloz Isı Eşanjörlü Isı Geri Kazanım Ünitesi"
+      }
+    ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "kanalFanlari": {
     "title": "KOI",
-    "subtitle": "Мухлисони канал",
-    "intro": "",
+    "subtitle": "Kanal Fanları",
+    "intro": "Koi balıkları, zarif hareketleriyle dar su kanallarında bile akıcı şekilde ilerleyebilen simgesel canlılardır. Hem dayanıklı hem de uyumlu yapılarıyla, suyun içinde yönünü kaybetmeden sürekli akışı temsil ederler.\n\nKoi balığı gibi yönünü kaybetmeden kanal içinde akışı sürdürür. Bu fanlar,  kanal sistemleri boyunca istikrarlı hava hareketi sağlayarak sistemin sürekliliğini ve dengesini korur. Zarif ama güçlü bir taşıyıcıdır; tıpkı bir Koi’nin suyu huzurla yarması gibi.",
     "models": [
       {
-        "name": "Кои CB",
-        "type": "Шабакаи мудаввар",
-        "image": "/images/products/koi-cb.jpg",
-        "description": "Мухлисони мудаввар канали Novves KOI-CB силсилаи ҳалли паймон ва баландсифатро пешниҳод мекунанд, ки барои эҳтиёҷоти вентилятсияи навъи канал таҳия шудаанд."
+        "name": "Koi CB",
+        "type": "Yuvarlak Geriye Eğimli Kanal Tipi Fan",
+        "image": "/images/products/koi-cb.png",
+        "description": "Yuvarlak Geriye Eğimli Kanal Tipi Fan"
       },
       {
-        "name": "Кои Р.Б.",
-        "type": "Фанҳои навъи росткунҷаи канал",
-        "image": "/images/products/koi-rb.jpg",
-        "description": "Мухлисони навъи росткунҷаи каналҳои силсилаи Novves KOI-RB махсус барои интиқоли ҳавои баланд дар биноҳои саноатӣ ва тиҷоратӣ таҳия шудаанд."
+        "name": "Koi RB",
+        "type": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan",
+        "image": "/images/products/koi-cb.png",
+        "description": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan"
       },
       {
-        "name": "Кои РЭБ",
-        "type": "Фанҳои навъи росткунҷаи канал бо муҳаррики беруна",
-        "image": "/images/products/koi-reb.jpg",
-        "description": "Силсилаи KOI-REB Мухлисони каналҳои беруна барои барномаҳои вентилятсия, ки муқовимати ҳарорати баландро талаб мекунанд, махсус тарҳрезӣ шудаанд."
+        "name": "Koi REB",
+        "type": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan",
+        "image": "/images/products/koi-cb.png",
+        "description": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan"
       },
       {
-        "name": "Кои",
-        "type": "Фанҳои навъи канали омехта",
-        "image": "/images/products/koi-x.jpg",
-        "description": "KOI-X Series Mixed Flow Duct Type Fan барои пешниҳоди самаранокии ҳадди аксар, махсусан дар минтақаҳои бароҳат бо сохтори паймон, кори ором ва имконоти муҳаррики дусуръат тарҳрезӣ шудааст."
+        "name": "Koi X",
+        "type": "Karma Akışlı Kanal Fanı",
+        "image": "/images/products/koi-cb.png",
+        "description": "Karma Akışlı Kanal Fanı"
+      },
+      {
+        "name": "Koi CP",
+        "type": "Yuvarlak Aksiyal Plastik Kanal Fanı",
+        "image": "/images/products/koi-cb.png",
+        "description": "Yuvarlak Aksiyal Plastik Kanal Fanı"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "klimaSantralleri": {
     "title": "TIGER",
-    "subtitle": "Агрегатҳои коркарди ҳаво",
-    "intro": "Ин як ҳалли модулии воҳиди коркарди ҳаво мебошад, ки ба самаранокӣ нигаронида шудааст, ки барои эҳтиёҷоти вентилятсияи баландсифат ва кондитсионер таҳия шудааст. Он бо доираи васеи ҷараёни ҳаво, ҷузъҳои каммасрафи энергия ва иҷрои оромии кори худ фарқ мекунад.",
+    "subtitle": "Klima Santralleri",
+    "intro": "Kaplan; doğanın en güçlü ve dengeli yırtıcılarından biridir. Gücünü yalnızca ihtiyaç anında kullanır, enerjisini stratejik olarak dağıtır ve bulunduğu ortama tam hâkimiyet kurar. Bu özellikler, merkezi hava yönetimini sağlayan klima santrallerinin karakteriyle doğrudan örtüşür.\n\nKaplan gibi kontrolü elden bırakmayan bu santraller, büyük hacimlerde hava kalitesini hassasiyetle yönetir. Gücünü sadece ihtiyaç duyulan noktaya yönlendirir, ortamın iklimini dengeler. Her zaman hazır, her zaman kararlı; sistemin kalbinde güçlü bir nefes gibi çalışır. Sessiz lider, görünmeyen kontrol merkezidir.",
     "specs": [
       {
-        "label": "Равиши ҳаво",
-        "value": "500 - 125 000 м³/соат"
+        "label": "Hava Debisi",
+        "value": "500 - 125.000 m³/h"
       },
       {
-        "label": "Фишор",
-        "value": "10 - 3000 Па"
+        "label": "Basınç",
+        "value": "10 - 3.000 Pa"
       },
       {
-        "label": "Шасси",
-        "value": "алюминийи анодшуда"
+        "label": "Şasi",
+        "value": "Anodize alüminyum"
       },
       {
-        "label": "Панел",
-        "value": "Панели сэндвич девори дукарата"
+        "label": "Panel",
+        "value": "Çift cidarlı sandviç panel"
       },
       {
-        "label": "Навъи мухлиси",
-        "value": "Мухлиси радиалӣ / мухлиси EC Plug"
+        "label": "Fan Tipi",
+        "value": "Radyal fan / EC Plug fan"
       },
       {
-        "label": "Барқарорсозии гармӣ",
-        "value": "Табақ, гардиш, об-гликол"
+        "label": "Isı Geri Kazanım",
+        "value": "Plakalı, rotary, su-glikol"
       }
-    ]
-  },
-  "kovanTipiAksiyalFanlar": {
-    "title": "MARLIN",
-    "subtitle": "Мухлисони аксиалии навъи остин",
-    "intro": "Мухлисони меҳварии навъи Марлин, ба ғайр аз он, ки ба сифати таъминоти ҳавои тоза, ихроҷ ё вентиляторҳои навъи канал истифода мешаванд, инчунин ҳамчун мухлисони фишордиҳӣ барои пешгирии ворид шудани дуд ба роҳҳои фирорӣ ба монанди зинапояҳо ва чоҳи лифт ҳангоми сӯхтор хидмат мекунанд.",
-    "models": [
+    ],
+    "productLines": [
       {
-        "name": "Marlin",
-        "type": "Фанҳои навъи Axial Hive",
-        "image": "/images/products/marlin.png",
-        "description": "Novves MARLIN Series Axial Sleeve Type Fan як ҳалли пурқувват, чандирии насб ва самаранокии энергетикиро дар системаҳое, ки ҷараёни баланди ҳаворо талаб мекунанд, муттаҳид мекунад."
+        "name": "Tiger S",
+        "type": "Standart Klima Santrali",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Standart Klima Santrali"
       },
       {
-        "name": "Марлин Б.",
-        "type": "Фанти меҳвари дугона",
-        "image": "/images/products/marlin-b.jpg",
-        "description": "Венти меҳвари дугона."
+        "name": "Tiger HR",
+        "type": "Isı Geri Kazanımlı Klima Santrali",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Isı Geri Kazanımlı Klima Santrali"
+      },
+      {
+        "name": "Tiger HP",
+        "type": "Hijyenik Klima Santrali",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Hijyenik Klima Santrali"
+      },
+      {
+        "name": "Tiger RT",
+        "type": "Rooftop",
+        "image": "/images/products/tiger-pre.png",
+        "description": "Rooftop"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "kovanTipiAksiyalFanlar": {
+    "title": "MARLIN",
+    "subtitle": "Aksiyal Fanlar",
+    "intro": "Marlin, yani mızrak balığı; denizlerin en hızlı ve en doğrusal ilerleyen avcılarındandır. Kaslı yapısı, hedefe kilitlenen keskin burnu ve düşük sürtünmeli gövdesiyle yüksek hızda kararlı bir akışı temsil eder.\n\nMarlin gibi kararlı, güçlü ve yönlü çalışan bu fanlar, doğrudan hava akışı sağlamak için tasarlanmıştır. Minimum dirençle maksimum debi sunar; geniş alanlarda yüksek verimli havalandırma sağlar.",
+    "models": [
+      {
+        "name": "Marlin EMPTY",
+        "type": "Aksiyal Kovan Tipi Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Aksiyal Kovan Tipi Fan"
+      },
+      {
+        "name": "Marlin S",
+        "type": "Kısa Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Kısa Kovan Tipi Aksiyal Fan"
+      },
+      {
+        "name": "Marlin B",
+        "type": "Bifurkasyonlu Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Bifurkasyonlu Kovan Tipi Aksiyal Fan"
+      },
+      {
+        "name": "Marlin 2S",
+        "type": "Seri Bağlantılı Kovan Tipi Aksiyal Fan",
+        "image": "/images/products/marlin.png",
+        "description": "Seri Bağlantılı Kovan Tipi Aksiyal Fan"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
-    "subtitle": "Мухлисони ошхона",
-    "intro": "",
+    "subtitle": "Mutfak Fanları",
+    "intro": "Kelebekler, hafif yapıları ve hassas hareketleriyle çevreyle nazik bir etkileşim kurar. Aynı zamanda, bulundukları ortamda havadaki değişimleri hızla algılayarak tepki verirler. Estetik görünümleriyle dikkat çekerken doğanın dengesine katkı sağlarlar. Bu özellikler, mutfak ortamındaki hassas hava yönetimiyle örtüşür.\n\nKelebek gibi narin görünen ama her kanat çırpışında çevresine yön veren bu fanlar, mutfağın kalbinde kokuyu, buharı ve dumanı zarifçe süpürüp uzaklaştırır. Tıpkı bir kelebeğin çiçekten havalanıp ortamdaki havayı değiştirmesi gibi, bu fan da mutfağı ferah ve yaşanabilir tutar. Sessizce yaklaşmaz, doğrudan etki eder — mutfağın görünmeyen ama vazgeçilmez kanat gücüdür.",
     "models": [
       {
-        "name": "Бабочка Б.",
-        "type": "Фалли ошхона бо Филтри металлӣ",
+        "name": "Butterfly B",
+        "type": "Geriye Eğik Motor Hava Akımı Dışında Hücreli Mutfak Fanı",
         "image": "/images/products/butterfly-b.jpg",
-        "description": "Butterfly B Series Kitchen Type Fan як ҳалли устувор ва самараноки вентилятсия мебошад, ки барои эвакуатсияи шадиди буғ, равған ва бӯй дар ошхонаҳои саноатӣ ва тиҷоратӣ таҳия шудааст. Он барои ошхонаҳои касбӣ бо системаи пешрафтаи филтркунӣ, кори ором ва сохтори дарозмуддат беҳтарин аст."
+        "description": "Geriye Eğik Motor Hava Akımı Dışında Hücreli Mutfak Fanı"
+      },
+      {
+        "name": "Butterfly ECO",
+        "type": "Hücreli Tip Mutfak Havalandırma Ünitesi",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "Hücreli Tip Mutfak Havalandırma Ünitesi"
+      },
+      {
+        "name": "Butterfly ECO HR",
+        "type": "Isı Geri Kazanımlı Hücreli Tip Mutfak Havalandırma Ünitesi",
+        "image": "/images/products/butterfly-b.jpg",
+        "description": "Isı Geri Kazanımlı Hücreli Tip Mutfak Havalandırma Ünitesi"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   },
   "siginakFanlari": {
     "title": "FOX",
-    "subtitle": "Мухлисони паноҳгоҳ",
-    "intro": "Силсилаи Фокс барои паноҳгоҳҳое таҳия шудааст, ки барои муҳофизат аз таҳдидҳои радиатсионӣ, ядроӣ, биологӣ ва кимиёвӣ ё офатҳои табиӣ сохта шудаанд.",
+    "subtitle": "Sığınak Fanları",
+    "intro": "Tilkiler; dar alanlara kolayca girip çıkabilen, tehlikeden hızlıca uzaklaşabilen ve her ortamda kendine güvenli bir yaşam alanı oluşturan çevik ve zeki canlılardır. Bu içgüdüsel koruma ve sığınma davranışı, sığınak fanlarının işleviyle birebir örtüşür.\n\nTilki gibi tehlikeyi sezdiğinde anında pozisyon alan bu fanlar, sığınaklarda hayati hava döngüsünü sürdürür. Dar hacimlerde etkili hava yönetimiyle içerideki yaşamı korur, dış ortamdan gelebilecek tehditleri filtreler. Zekice konumlanır, stratejik çalışır ve görünmeden korur — sığınağın sessiz bekçisidir.",
     "models": [
       {
-        "name": "рӯбоҳ д",
-        "type": "Фалли паноҳгоҳи навъи канал",
-        "image": "/images/products/fox-d.jpg",
-        "description": "FOX D Series Fan Shelter Type Duct Channel як ҳалли устувор ва боэътимод бо иқтидори баланди филтратсия мебошад, ки махсусан барои ниёзҳои паноҳгоҳ ва вентилятсияи минтақаи бехатар таҳия шудааст."
+        "name": "Fox D",
+        "type": "Kanal Tipi Sığınak Havalandırma Fanı",
+        "image": "/images/products/fox-c.png",
+        "description": "Kanal Tipi Sığınak Havalandırma Fanı"
       },
       {
-        "name": "Фокс C.",
-        "type": "Фанҳои навъи Cellular Shelter",
+        "name": "Fox C",
+        "type": "Hücreli Tip Sığınak Havalandırma Fanı",
         "image": "/images/products/fox-c.png",
-        "description": "Фанҳои FOX C Series Cabin Type Shelter як ҳалли касбии вентилятсия бо системаи пуриқтидори филтркунӣ мебошад, ки барои кори ором мувофиқ аст ва махсусан барои минтақаҳое, ки амнияти баландро талаб мекунанд, таҳия шудааст."
+        "description": "Hücreli Tip Sığınak Havalandırma Fanı"
       }
     ],
     "chrome": {
-      "home": "Саҳифаи асосӣ",
-      "products": "Маҳсулот",
-      "productFamily": "Оилаи маҳсулот",
-      "certified": "Сертификатсия шудааст",
-      "productRange": "Доираи маҳсулот",
-      "technicalSupport": "Пуштибонии фаннӣ",
-      "model": "модел",
-      "models": "Модели",
-      "technicalSupportRequest": "Дархост барои дастгирии техникӣ",
-      "allProducts": "Ҳама Маҳсулот",
-      "mostPreferred": "Аз ҳама бартарӣ",
-      "detailedView": "Муфассал тамошо кунед",
-      "productFamilies": "Оилаҳои маҳсулот",
-      "inspect": "Барраси",
-      "lookingForProduct": "Оё шумо дар ҷустуҷӯи маҳсулоте, ки барои лоиҳаи шумо мувофиқ аст?",
-      "teamReady": "Дастаи техникии мо омода аст, ки ба шумо ҳалли мувофиқтаринро пешниҳод кунад.",
-      "allSolutions": "Ҳамаи ҳалҳоро дидан"
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "tavukcuFanlari": {
+    "title": "CHICKEN",
+    "subtitle": "Tavukçu Fanları",
+    "intro": "Tavuklar, kapalı alanlarda sürekli hava dolaşımına ihtiyaç duyan narin canlılardır. Yüksek sıcaklık, nem ve amonyak gibi zararlı gazlara karşı hassastırlar. Bu hassasiyet, hava kalitesinin kontrolünü kritik hâle getirir — tıpkı bu fanların görev yaptığı tavuk üretim tesislerinde olduğu gibi.\n\nTavuk gibi hassas yaşam alanlarında görev yapan bu fanlar, ortam havasını sürekli taze tutar, ısıyı dengeler ve zararlı gazların birikmesini önler. Kümesin her köşesine can verir, üretimin sağlığını ve verimliliğini doğrudan etkiler. Sessiz değil, sadık bir koruyucu gibi çalışır; tavukların konforu, bu fanın sorumluluğundadır.",
+    "models": [
+      {
+        "name": "Chicken W",
+        "type": "Duvar Tipi Tavuk Çiftliği Havalandırma Fanı",
+        "image": "/images/products/chicken.png",
+        "description": "Duvar Tipi Tavuk Çiftliği Havalandırma Fanı"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "tozToplamaUniteleri": {
+    "title": "ELEPHANT",
+    "subtitle": "Toz Toplama Üniteleri",
+    "intro": "Filler; güçlü burunlarıyla hem büyük hacimli cisimleri kaldırabilir hem de en ince tozları algılayabilir. Bu olağanüstü hassasiyet ve güç dengesi, endüstriyel toz toplama sistemlerinin işleyişine doğrudan yansır: büyük kütleleri etkili biçimde çekmek ve kontrol altında tutmak.\n\nFil gibi güçlü ama kontrollü çalışan bu sistemler, yoğun üretim ortamlarında havadaki tozu güvenle yakalar. Yüksek debili emiş gücüyle ortamı arındırır; üretim sürecini daha sağlıklı, daha verimli hâle getirir. Bir fil gibi ağır işlerin altından kalkar, ama her nefesinde temiz bir soluk kazandırır.",
+    "models": [
+      {
+        "name": "Elephant BF",
+        "type": "Torbalı Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Torbalı Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant CF",
+        "type": "Kartuş Tipi Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Kartuş Tipi Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant CY",
+        "type": "Siklon Tipi Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Siklon Tipi Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant WS",
+        "type": "Islak Tip (Wet Scrubber) Toz Toplama Ünitesi",
+        "image": "/images/products/elephant.png",
+        "description": "Islak Tip (Wet Scrubber) Toz Toplama Ünitesi"
+      },
+      {
+        "name": "Elephant CENTRAL",
+        "type": "Merkezi Toz Toplama Sistemi",
+        "image": "/images/products/elephant.png",
+        "description": "Merkezi Toz Toplama Sistemi"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "menfezPanjurlar": {
+    "title": "ALPACA",
+    "subtitle": "Menfez, Anemostad, Panjurlar",
+    "intro": "Alpakalar, uyumlu yapıları ve yumuşak duruşlarıyla bulundukları ortama nazikçe entegre olan canlılardır. Sessiz, dikkat çekmeyen ama bulunduğu çevreye katkı sağlayan yapılarıyla bilinirler. Görünüşte sade, işlevde ise tamamlayıcıdırlar — tıpkı hava dağıtım sistemlerinin son elemanları gibi.\n\nAlpaka gibi ortama huzurla entegre olan bu elemanlar, havayı doğru noktalara estetik ve dengeli biçimde dağıtır. Ne çok öne çıkar ne de kaybolur; sistemin mimarisine zarifçe uyum sağlar. Her hava akımının son dokunuşunda onun izi vardır. Sessiz bir işçi, görünmez bir denge ustasıdır.",
+    "models": [
+      {
+        "name": "Alpaca GL-SD",
+        "type": "Tek Sıra Kanatlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Tek Sıra Kanatlı Menfez"
+      },
+      {
+        "name": "Alpaca GL-DD",
+        "type": "Çift Sıra Kanatlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Çift Sıra Kanatlı Menfez"
+      },
+      {
+        "name": "Alpaca GL-RA",
+        "type": "Dönüş Havası Menfezi",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dönüş Havası Menfezi"
+      },
+      {
+        "name": "Alpaca GL-PRF",
+        "type": "Perfore Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Perfore Menfez"
+      },
+      {
+        "name": "Alpaca GL-OB",
+        "type": "Karşıt (Opposed) Kanatlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Karşıt (Opposed) Kanatlı Menfez"
+      },
+      {
+        "name": "Alpaca DF-SQ",
+        "type": "Kare Tavan Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Kare Tavan Difüzör"
+      },
+      {
+        "name": "Alpaca DF-CR",
+        "type": "Dairesel Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dairesel Difüzör"
+      },
+      {
+        "name": "Alpaca DF-LS",
+        "type": "Lineer Slot Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Lineer Slot Difüzör"
+      },
+      {
+        "name": "Alpaca DF-JET",
+        "type": "Jet Nozül Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Jet Nozül Difüzör"
+      },
+      {
+        "name": "Alpaca DF-ADJ",
+        "type": "Ayarlanabilir Kanatlı Swirl Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Ayarlanabilir Kanatlı Swirl Difüzör"
+      },
+      {
+        "name": "Alpaca LV-FX",
+        "type": "Sabit Hava Panjuru",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Sabit Hava Panjuru"
+      },
+      {
+        "name": "Alpaca LV-ADJ",
+        "type": "Ayarlanabilir Panjur",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Ayarlanabilir Panjur"
+      },
+      {
+        "name": "Alpaca LV-WP",
+        "type": "Dış Hava Panjuru",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dış Hava Panjuru"
+      },
+      {
+        "name": "Alpaca LV-AC",
+        "type": "Akustik Panjur",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Akustik Panjur"
+      },
+      {
+        "name": "Alpaca AM-SQ",
+        "type": "Kare Tavan Anemostat",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Kare Tavan Anemostat"
+      },
+      {
+        "name": "Alpaca AM-CR",
+        "type": "Dairesel Tavan Anemostat",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dairesel Tavan Anemostat"
+      },
+      {
+        "name": "Alpaca AM-ADJ",
+        "type": "Ayarlanabilir Kanatlı Anemostat",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Ayarlanabilir Kanatlı Anemostat"
+      },
+      {
+        "name": "Alpaca SP-FR",
+        "type": "Yangına Dayanımlı Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Yangına Dayanımlı Menfez"
+      },
+      {
+        "name": "Alpaca SP-DE",
+        "type": "Dekoratif Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Dekoratif Menfez"
+      },
+      {
+        "name": "Alpaca SP-AC",
+        "type": "Akustik Menfez",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Akustik Menfez"
+      },
+      {
+        "name": "Alpaca SP-JET",
+        "type": "Yüksek Debili Jet Difüzör",
+        "image": "/images/products/alpaca-am.png",
+        "description": "Yüksek Debili Jet Difüzör"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "filtreler": {
+    "title": "SCALLOP",
+    "subtitle": "Filtreler",
+    "intro": "Doğal yapısındaki radyal çizgiler ve katmanlı, gözenekli yüzeyiyle deniz tarağı; suyu ve partikülleri süzme işlevini doğanın içinde ustalıkla gerçekleştiren canlılardan biridir. Filtre sistemlerinin çok katmanlı ve seçici yapısına ilham verir.\n\nDeniz tarağı gibi gözenekli ve katmanlı yapısıyla, ortamdan istenmeyen parçacıkları ustalıkla süzen ve temiz hava geçişine olanak sağlayan sistemler.",
+    "models": [
+      {
+        "name": "Scallop ABF",
+        "type": "Anti-Bakteriyel Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Anti-Bakteriyel Filtre"
+      },
+      {
+        "name": "Scallop CF",
+        "type": "Karbon Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Karbon Filtre"
+      },
+      {
+        "name": "Scallop FF",
+        "type": "Fiberglas Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Fiberglas Filtre"
+      },
+      {
+        "name": "Scallop GF",
+        "type": "Cam Elyaf Panel Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Cam Elyaf Panel Filtre"
+      },
+      {
+        "name": "Scallop MF",
+        "type": "Metal Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Metal Filtre"
+      },
+      {
+        "name": "Scallop BF",
+        "type": "Torba Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Torba Filtre"
+      },
+      {
+        "name": "Scallop HP",
+        "type": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)",
+        "image": "/images/products/cyclone.png",
+        "description": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)"
+      },
+      {
+        "name": "Scallop UF",
+        "type": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)",
+        "image": "/images/products/cyclone.png",
+        "description": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)"
+      },
+      {
+        "name": "Scallop CCF",
+        "type": "Silindirik Karbon Filtre",
+        "image": "/images/products/cyclone.png",
+        "description": "Silindirik Karbon Filtre"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "titresimIzolatorleri": {
+    "title": "ROO",
+    "subtitle": "Titreşim İzolatörleri",
+    "intro": "Kanguru – Doğanın ustalıkla tasarlanmış denge ustası. Güçlü arka bacaklarıyla titreşimi emer, stabil zeminde ilerlemeyi mümkün kılar. Roo, yük altında bile zıplamadan sarsılmaz.\n\nRoo serisi titreşim izolatörleri, makinelerinizin ve yapılarınızın titreşim kaynaklı hasarlardan korunmasını sağlar. Yüksek esneklik, darbe sönümleme ve uzun ömürlü kullanım için optimize edilmiştir.\r\nTıpkı bir kangurunun yere yumuşak inişi gibi, Roo da titreşimi sessizce absorbe eder.",
+    "models": [
+      {
+        "name": "Roo T1 NIP",
+        "type": "Neopren Titreşim Yalıtım Pedi",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Neopren Titreşim Yalıtım Pedi"
+      },
+      {
+        "name": "Roo T1 FIP",
+        "type": "Fiberglas Titreşim Yalıtım Pedi",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Fiberglas Titreşim Yalıtım Pedi"
+      },
+      {
+        "name": "Roo T2 NIM",
+        "type": "Neopren Titreşim Yalıtım Takozu",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Neopren Titreşim Yalıtım Takozu"
+      },
+      {
+        "name": "Roo T2 FIM",
+        "type": "Fiberglas Titreşim Yalıtım Takozu",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Fiberglas Titreşim Yalıtım Takozu"
+      },
+      {
+        "name": "Roo T3 OSI",
+        "type": "Açık Yaylı Titreşim İzolatörü",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Açık Yaylı Titreşim İzolatörü"
+      },
+      {
+        "name": "Roo T3 HNG-S",
+        "type": "Yaylı Asma Tip İzolatör",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Yaylı Asma Tip İzolatör"
+      },
+      {
+        "name": "Roo T4 HSI",
+        "type": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü",
+        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "description": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "otomasyonPanolari": {
+    "title": "HAWK",
+    "subtitle": "Otomasyon Panoları",
+    "intro": "Şahinler; keskin görüşleri, yüksek irtifadan hedefi anında tespit edebilme yetenekleri ve olağanüstü odaklanmış uçuş kararlılıklarıyla bilinen yırtıcılardır. Doğada çevresine hâkim, tepeden tüm alanı kontrol eden bu canlılar, hassasiyet ve hızlı reaksiyon gerektiren durumların sembolüdür.\n\nHawk serisi otomasyon panoları, tıpkı bir şahinin geniş perspektifli kontrol yeteneği gibi, fan ve HVAC sistemlerinin tüm bileşenlerini tek merkezden güvenilir şekilde yönetmek için tasarlanmıştır.\r\nHızlı tepki süresi, hassas izleme kabiliyeti ve akıllı kontrol mimarisi sayesinde, karmaşık senaryolarda dahi sistemi kararlı tutar.\r\nEnerji yönetimi, güvenlik mantığı, hassas kumanda ve uzaktan izleme özellikleriyle Hawk; projeye “üstten bakan” bir kontrol zekâsı kazandırır.\r\nŞahin metaforunun temsil ettiği sezgi, hız ve hâkimiyet; bu panoların mühendislik karakterinin doğrudan karşılığıdır.",
+    "models": [
+      {
+        "name": "Hawk JF",
+        "type": "Jet Fan Sistemi Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Jet Fan Sistemi Panosu"
+      },
+      {
+        "name": "Hawk S",
+        "type": "Duman Ve Isı Tahliye Fanı Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Duman Ve Isı Tahliye Fanı Panosu"
+      },
+      {
+        "name": "Hawk PS",
+        "type": "Merdiven Ve Basınçlandırma Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Merdiven Ve Basınçlandırma Panosu"
+      },
+      {
+        "name": "Hawk VF",
+        "type": "Havalandırma Fan Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Havalandırma Fan Panosu"
+      },
+      {
+        "name": "Hawk AHU",
+        "type": "Klima Santrali (Ahu) Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Klima Santrali (Ahu) Panosu"
+      },
+      {
+        "name": "Hawk HRU",
+        "type": "Isı Geri Kazanım Ünitesi Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Isı Geri Kazanım Ünitesi Panosu"
+      },
+      {
+        "name": "Hawk FAP",
+        "type": "Yangın Algılama Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Yangın Algılama Panosu"
+      },
+      {
+        "name": "Hawk CO",
+        "type": "Karbonmonoksit Sistemi Panosu",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Karbonmonoksit Sistemi Panosu"
+      },
+      {
+        "name": "Hawk X",
+        "type": "Proje Bazlı Özel Panolar",
+        "image": "/images/products/otomasyon-pano.png",
+        "description": "Proje Bazlı Özel Panolar"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "plcOtomasyon": {
+    "title": "PLC",
+    "subtitle": "PLC",
+    "intro": "Panasonic Programlanabilir Lojik Kontrolör",
+    "models": [
+      {
+        "name": "Plc Panasonic PLC",
+        "type": "Panasonic Programlanabilir Lojik Kontrolör",
+        "image": "/images/products/otomasyon-plc.png",
+        "description": "Panasonic Programlanabilir Lojik Kontrolör"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "sensorler": {
+    "title": "SENSÖR",
+    "subtitle": "SENSE",
+    "intro": "PI-PU Fark Basınç Sensörü; Fark Basınç Anahtarı; Sıcaklık Sensörü; Isı Sensörü; Duman Sensörü/ Kanal Tipi Duman Dedektörü; Titreşim Sensörü; Hava Kalite Sensörü; Hava Akış Sensörü; Sıcaklık Termostatı; CO Sensörü",
+    "models": [
+      {
+        "name": "Sense DPS-PIPU",
+        "type": "PI-PU Fark Basınç Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "PI-PU Fark Basınç Sensörü"
+      },
+      {
+        "name": "Sense DPS",
+        "type": "Fark Basınç Anahtarı",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Fark Basınç Anahtarı"
+      },
+      {
+        "name": "Sense TS",
+        "type": "Sıcaklık Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Sıcaklık Sensörü"
+      },
+      {
+        "name": "Sense HS",
+        "type": "Isı Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Isı Sensörü"
+      },
+      {
+        "name": "Sense SS",
+        "type": "Duman Sensörü/ Kanal Tipi Duman Dedektörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Duman Sensörü/ Kanal Tipi Duman Dedektörü"
+      },
+      {
+        "name": "Sense VS",
+        "type": "Titreşim Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Titreşim Sensörü"
+      },
+      {
+        "name": "Sense AQS",
+        "type": "Hava Kalite Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Hava Kalite Sensörü"
+      },
+      {
+        "name": "Sense AFS",
+        "type": "Hava Akış Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Hava Akış Sensörü"
+      },
+      {
+        "name": "Sense HT",
+        "type": "Sıcaklık Termostatı",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "Sıcaklık Termostatı"
+      },
+      {
+        "name": "Sense CO",
+        "type": "CO Sensörü",
+        "image": "/images/products/otomasyon-sensor.png",
+        "description": "CO Sensörü"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "kontrolKartlari": {
+    "title": "NEXUS",
+    "subtitle": "NEXUS",
+    "intro": "Kontrol Kartı; Panel Termostat; Duman ve Basınç Sensörleri Haberleşme Kartı; CO Paneli",
+    "models": [
+      {
+        "name": "Nexus FCB",
+        "type": "Kontrol Kartı",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Kontrol Kartı"
+      },
+      {
+        "name": "Nexus RT",
+        "type": "Panel Termostat",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Panel Termostat"
+      },
+      {
+        "name": "Nexus ICB",
+        "type": "Duman ve Basınç Sensörleri Haberleşme Kartı",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Duman ve Basınç Sensörleri Haberleşme Kartı"
+      },
+      {
+        "name": "Nexus CO",
+        "type": "CO Paneli",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "CO Paneli"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "gucElektronigi": {
+    "title": "LION",
+    "subtitle": "Güç Elektroniği",
+    "intro": "Aslan, doğanın en güçlü ve karizmatik lideridir. Sahip olduğu kudret, kararlılık ve hâkimiyet duygusu ile çevresine güven verir. Sessiz ama etkili duruşu, enerjisini doğru anda ve doğru şekilde kullanması ile bilinir.\n\nLion serisi güç elektroniği ürünleri, sistemin kalbinde liderlik rolünü üstlenir. Kritik durumlarda kararlı tepki verir; yüksek enerji taleplerinde bile güvenle çalışır. Tıpkı bir aslan gibi sessizce ama etkili biçimde kontrolü elinde tutar. Dayanıklılığı, istikrarı ve sistem üzerindeki hâkimiyeti ile her koşulda güçlü kalır.",
+    "models": [
+      {
+        "name": "Lion FC",
+        "type": "Frekans Dönüştürücü",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "Frekans Dönüştürücü"
+      },
+      {
+        "name": "Lion FC-FD",
+        "type": "Yangın Modlu Frekans Dönüştürücü",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "Yangın Modlu Frekans Dönüştürücü"
+      },
+      {
+        "name": "Lion SS",
+        "type": "Yumuşak Yol Verici (Soft Starter)",
+        "image": "/images/products/frekans-inventoru.png",
+        "description": "Yumuşak Yol Verici (Soft Starter)"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "disUniteler": {
+    "title": "POLAR BEAR",
+    "subtitle": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri",
+    "intro": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi; Orta Tip Paket Endüstriyel Soğutma Ünitesi; Ağır Tip Paket Endüstriyel Soğutma Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; Orta Tip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; OrtaTip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi",
+    "models": [
+      {
+        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC S",
+        "type": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi"
+      },
+      {
+        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC M",
+        "type": "Orta Tip Paket Endüstriyel Soğutma Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Orta Tip Paket Endüstriyel Soğutma Ünitesi"
+      },
+      {
+        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC H",
+        "type": "Ağır Tip Paket Endüstriyel Soğutma Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Ağır Tip Paket Endüstriyel Soğutma Ünitesi"
+      },
+      {
+        "name": "Isı Pompası Dış Ünitesi HP S",
+        "type": "Hafif Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Hafif Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Isı Pompası Dış Ünitesi HP M",
+        "type": "Orta Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Orta Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Isı Pompası Dış Ünitesi HP H",
+        "type": "Ağır Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Ağır Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Fan Coil İç Ünitesi IN FC",
+        "type": "Hafif Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Hafif Tip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Fan Coil İç Ünitesi IN FC",
+        "type": "OrtaTip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "OrtaTip Isı Pompası Dış Ünitesi"
+      },
+      {
+        "name": "Fan Coil İç Ünitesi IN FC",
+        "type": "Ağır Tip Isı Pompası Dış Ünitesi",
+        "image": "/images/products/chiller.png",
+        "description": "Ağır Tip Isı Pompası Dış Ünitesi"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "elektrikliIsitici": {
+    "title": "ORCA HEATER",
+    "subtitle": "Elektrikli Isıtıcı",
+    "intro": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı; Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı",
+    "models": [
+      {
+        "name": "Elektrikli Isıtıcı EH-R",
+        "type": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı"
+      },
+      {
+        "name": "Elektrikli Isıtıcı EH-C",
+        "type": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "suluIsitici": {
+    "title": "ORCA COIL",
+    "subtitle": "Termal Batarya",
+    "intro": "Sıcak Su Bataryası; Soğuk su Bataryası; DX Batarya; Buhar Bataryası",
+    "models": [
+      {
+        "name": "Termal Batarya HW",
+        "type": "Sıcak Su Bataryası",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Sıcak Su Bataryası"
+      },
+      {
+        "name": "Termal Batarya CW",
+        "type": "Soğuk su Bataryası",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Soğuk su Bataryası"
+      },
+      {
+        "name": "Termal Batarya DX D",
+        "type": "DX Batarya",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "DX Batarya"
+      },
+      {
+        "name": "Termal Batarya ST",
+        "type": "Buhar Bataryası",
+        "image": "/images/products/elektrikli-isitici.png",
+        "description": "Buhar Bataryası"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "orcaHx": {
+    "title": "ORCA HX",
+    "subtitle": "Isı Eşanjörü",
+    "intro": "Rotary Tip Isı Geri Kazanım Modülü; Selülozik Reküparatör Modulü; Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı; Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)",
+    "models": [
+      {
+        "name": "Isı Eşanjörü R",
+        "type": "Rotary Tip Isı Geri Kazanım Modülü",
+        "image": "/images/products/caracal.png",
+        "description": "Rotary Tip Isı Geri Kazanım Modülü"
+      },
+      {
+        "name": "Isı Eşanjörü C",
+        "type": "Selülozik Reküparatör Modulü",
+        "image": "/images/products/caracal.png",
+        "description": "Selülozik Reküparatör Modulü"
+      },
+      {
+        "name": "Isı Eşanjörü AR-R",
+        "type": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı",
+        "image": "/images/products/caracal.png",
+        "description": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı"
+      },
+      {
+        "name": "Isı Eşanjörü AR-H",
+        "type": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)",
+        "image": "/images/products/caracal.png",
+        "description": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "remoraAksesuarlari": {
+    "title": "REMORA",
+    "subtitle": "HVAC Aksesuarları",
+    "intro": "Kendine özgü yapışkan diskiyle büyük deniz canlılarına tutunarak yol alan Remora, doğada kusursuz bir adaptasyon örneğidir. Hem sabitlenme hem de enerji verimliliği sağlayan bu stratejisi, fan sistemlerinde kullanılan bağlantı ve montaj aksesuarlarına ilham verir.\n\nFan aksesuarları; Remora’nın doğadaki fonksiyonunu yansıtarak, sistemin güvenli bir şekilde sabitlenmesini, titreşimden arındırılmasını ve hava akışının kontrollü yönlendirilmesini sağlar. Tıpkı Remora’nın taşıyıcısıyla kurduğu uyum gibi, bu parçalar da fan sisteminin bütünlüğünü ve verimliliğini destekler.",
+    "models": [
+      {
+        "name": "Remora SF",
+        "type": "Yatay Bağlantı Ayağı",
+        "image": "/images/products/remora-sf.png",
+        "description": "Yatay Bağlantı Ayağı"
+      },
+      {
+        "name": "Remora VSF",
+        "type": "Dikey Bağlantı Ayağı",
+        "image": "/images/products/remora-sf.png",
+        "description": "Dikey Bağlantı Ayağı"
+      },
+      {
+        "name": "Remora FJ",
+        "type": "Esnek Bağlantı",
+        "image": "/images/products/remora-fj.png",
+        "description": "Esnek Bağlantı"
+      },
+      {
+        "name": "Remora CF",
+        "type": "Karşı Flanş",
+        "image": "/images/products/remora-cf.png",
+        "description": "Karşı Flanş"
+      },
+      {
+        "name": "Remora FJCF",
+        "type": "Esnek Bağlantılı Tekli Karşı Flanş",
+        "image": "/images/products/remora-fj.png",
+        "description": "Esnek Bağlantılı Tekli Karşı Flanş"
+      },
+      {
+        "name": "Remora FJ2CF",
+        "type": "Esnek Bağlantılı İkili Karşı Flanş",
+        "image": "/images/products/remora-fj2f.png",
+        "description": "Esnek Bağlantılı İkili Karşı Flanş"
+      },
+      {
+        "name": "Remora FJCF-F400",
+        "type": "F400 Esnek Bağlantılı Tekli Karşı Flanş",
+        "image": "/images/products/remora-fj.png",
+        "description": "F400 Esnek Bağlantılı Tekli Karşı Flanş"
+      },
+      {
+        "name": "Remora FJ2CF-F400",
+        "type": "F400 Esnek Bağlantılı İkili Karşı Flanş",
+        "image": "/images/products/remora-fj2f.png",
+        "description": "F400 Esnek Bağlantılı İkili Karşı Flanş"
+      },
+      {
+        "name": "Remora R-FJCF",
+        "type": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş",
+        "image": "/images/products/remora-fj.png",
+        "description": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş"
+      },
+      {
+        "name": "Remora R-FJ2CF",
+        "type": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş",
+        "image": "/images/products/remora-fj2f.png",
+        "description": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş"
+      },
+      {
+        "name": "Remora PM",
+        "type": "Tel Kafes (Koruma Kafesi)",
+        "image": "/images/products/remora-pm.png",
+        "description": "Tel Kafes (Koruma Kafesi)"
+      },
+      {
+        "name": "Remora IC",
+        "type": "Giriş Konisi",
+        "image": "/images/products/remora-ic.png",
+        "description": "Giriş Konisi"
+      },
+      {
+        "name": "Remora IH",
+        "type": "Kovan Tipi Fan Denetim Kapağı",
+        "image": "/images/products/remora-ic.png",
+        "description": "Kovan Tipi Fan Denetim Kapağı"
+      },
+      {
+        "name": "Remora S",
+        "type": "Silindirik Susturucu",
+        "image": "/images/products/remora-s.png",
+        "description": "Silindirik Susturucu"
+      },
+      {
+        "name": "Remora SP",
+        "type": "Podlu Silindirik Susturucu",
+        "image": "/images/products/remora-s.png",
+        "description": "Podlu Silindirik Susturucu"
+      },
+      {
+        "name": "Remora RS",
+        "type": "Dikdörtgen Susturucu",
+        "image": "/images/products/remora-rs.png",
+        "description": "Dikdörtgen Susturucu"
+      },
+      {
+        "name": "Remora RED",
+        "type": "Redüksiyon",
+        "image": "/images/products/remora-red.png",
+        "description": "Redüksiyon"
+      },
+      {
+        "name": "Remora SS",
+        "type": "Soket Susturucu",
+        "image": "/images/products/remora-ss.png",
+        "description": "Soket Susturucu"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
+    }
+  },
+  "zamanlamaKontrol": {
+    "title": "ZAMANLAMA ve KONTROL CİHAZLARI",
+    "subtitle": "CONTROL & TIMING",
+    "intro": "Hız Kontrol Ünitesi; Dijital Zaman Ayar Rölesi; Mekanik Zaman Ayar Rölesi",
+    "models": [
+      {
+        "name": "Timer SCU",
+        "type": "Hız Kontrol Ünitesi",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Hız Kontrol Ünitesi"
+      },
+      {
+        "name": "Timer DTR",
+        "type": "Dijital Zaman Ayar Rölesi",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Dijital Zaman Ayar Rölesi"
+      },
+      {
+        "name": "Timer MTR",
+        "type": "Mekanik Zaman Ayar Rölesi",
+        "image": "/images/products/otomasyon-kontrol-kartlari.png",
+        "description": "Mekanik Zaman Ayar Rölesi"
+      }
+    ],
+    "chrome": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "productFamily": "Ürün Ailesi",
+      "certified": "Sertifikalı",
+      "productRange": "Ürün Yelpazesi",
+      "technicalSupport": "Teknik Destek",
+      "model": "model",
+      "models": "Model",
+      "technicalSupportRequest": "Teknik Destek Talebi",
+      "allProducts": "Tüm Ürünler",
+      "mostPreferred": "En Çok Tercih Edilen",
+      "detailedView": "Detaylı İncele",
+      "productFamilies": "Ürün Aileleri",
+      "inspect": "İncele",
+      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
+      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
+      "allSolutions": "Çözümlerin Tümünü Gör"
     }
   }
 }
