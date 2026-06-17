@@ -74,12 +74,6 @@ const iletisimHubTr = {
       title: "Yalova Üretim Tesisi",
       address: "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
     },
-    {
-      id: "service",
-      badge: "Teknik Servis",
-      title: "Servis Merkezi",
-      address: "Dudullu Organize Sanayi Bölgesi\nÜmraniye / İstanbul",
-    },
   ],
   fabLabel: "Canlı Destek",
 };
@@ -150,12 +144,6 @@ const iletisimHubEn = {
       badge: "Factory",
       title: "Yalova Production Plant",
       address: "Taşköprü Merkez Mah. Çaydere Sok.\nBina No:9/1 Fabrika Kapı No:2\nÇiftlikköy / Yalova",
-    },
-    {
-      id: "service",
-      badge: "Technical Service",
-      title: "Service Center",
-      address: "Dudullu Organized Industrial Zone\nÜmraniye / Istanbul",
     },
   ],
   fabLabel: "Live Support",

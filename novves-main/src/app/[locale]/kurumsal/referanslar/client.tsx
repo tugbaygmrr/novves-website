@@ -92,10 +92,10 @@ export function ReferanslarClient({
     description:
       locale === "tr"
         ? "Tamamlanan projelerimizi, sekt\u00f6r \u00f6rneklerimizi ve m\u00fchendislik \u00e7\u00f6z\u00fcmlerimizi i\u00e7eren g\u00fcncel referans katalo\u011fumuzu indirin."
-        : "Download our up-to-date reference catalog with completed projects, sector examples, and engineering solutions.",
+        : "Download our reference catalog with completed projects, sector highlights and engineering solutions.",
     button: locale === "tr" ? "Katalo\u011fu \u0130ndir" : "Download Catalog",
     pdfFormat: locale === "tr" ? "PDF Format\u0131" : "PDF Format",
-    pdfMeta: locale === "tr" ? "G\u00fcncellendi: 05.2026" : "Updated: 05.2026",
+    pdfMeta: "CAT-RP-01 \u00b7 V0R0",
     languages: locale === "tr" ? "\u00c7oklu Dil Deste\u011fi" : "Multilingual Support",
     documentLibraryLink: locale === "tr" ? "Dok\u00fcman k\u00fct\u00fcphanesi" : "Document library",
   };

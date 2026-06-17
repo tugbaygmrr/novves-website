@@ -1,73 +1,58 @@
 import type { Locale } from "@/i18n/config";
+import type { PartnerRecord } from "./partner-directory-types";
 import type { PartnerPin } from "./partner-world-map";
 
-/**
- * Globe pin'leri için sabit jeografi: id (= site dil kodu), koordinatlar, hub bayrağı.
- * Etiketler (ülke adı + şehir) viewer locale'a göre runtime'da seçilir.
- */
-const PIN_GEO: Array<{ id: Locale; lat: number; lon: number; isHub?: boolean }> = [
-  { id: "tr", lat: 41.01, lon: 28.98, isHub: true },
-  { id: "en", lat: 51.51, lon: -0.13 },
-  { id: "ru", lat: 55.75, lon: 37.62 },
-  { id: "ar", lat: 24.71, lon: 46.68 },
-  { id: "de", lat: 52.52, lon: 13.40 },
-  { id: "it", lat: 41.90, lon: 12.50 },
-  { id: "fr", lat: 48.85, lon: 2.35 },
-  { id: "az", lat: 40.41, lon: 49.87 },
-  { id: "kk", lat: 51.16, lon: 71.43 },
-  { id: "tg", lat: 38.56, lon: 68.79 },
-  { id: "es", lat: 40.42, lon: -3.70 },
-  { id: "zh", lat: 39.90, lon: 116.41 },
-  { id: "ur", lat: 33.69, lon: 73.05 },
-  { id: "lt", lat: 54.69, lon: 25.28 },
-  { id: "pl", lat: 52.23, lon: 21.01 },
-  { id: "ro", lat: 44.43, lon: 26.10 },
-  { id: "hu", lat: 47.50, lon: 19.04 },
-];
-
-/** Pin id (= site locale) → ISO 3166-1 alpha-2 ülke kodu (Intl.DisplayNames için) */
-const PIN_TO_COUNTRY_CODE: Record<Locale, string> = {
-  tr: "TR",
-  en: "GB",
-  ru: "RU",
-  ar: "SA",
-  de: "DE",
-  it: "IT",
-  fr: "FR",
-  az: "AZ",
-  kk: "KZ",
-  tg: "TJ",
-  es: "ES",
-  zh: "CN",
-  ur: "PK",
-  lt: "LT",
-  pl: "PL",
-  ro: "RO",
-  hu: "HU",
+const HUB = {
+  lat: 40.9801,
+  lon: 29.0952,
+  countryCode: "TR",
 };
 
-/**
- * Şehir adları her bir viewer locale için ayrı.
- * Eksik bir kombinasyon olursa en fallback olarak kullanılır.
- */
-const CITY_BY_LOCALE: Record<Locale, Record<Locale, string>> = {
-  tr: { tr: "İstanbul", en: "Londra", ru: "Moskova", ar: "Riyad", de: "Berlin", it: "Roma", fr: "Paris", az: "Bakü", kk: "Astana", tg: "Duşanbe", es: "Madrid", zh: "Pekin", ur: "İslamabad", lt: "Vilnius", pl: "Varşova", ro: "Bükreş", hu: "Budapeşte" },
-  en: { tr: "Istanbul", en: "London", ru: "Moscow", ar: "Riyadh", de: "Berlin", it: "Rome", fr: "Paris", az: "Baku", kk: "Astana", tg: "Dushanbe", es: "Madrid", zh: "Beijing", ur: "Islamabad", lt: "Vilnius", pl: "Warsaw", ro: "Bucharest", hu: "Budapest" },
-  ru: { tr: "Стамбул", en: "Лондон", ru: "Москва", ar: "Эр-Рияд", de: "Берлин", it: "Рим", fr: "Париж", az: "Баку", kk: "Астана", tg: "Душанбе", es: "Мадрид", zh: "Пекин", ur: "Исламабад", lt: "Вильнюс", pl: "Варшава", ro: "Бухарест", hu: "Будапешт" },
-  ar: { tr: "إسطنبول", en: "لندن", ru: "موسكو", ar: "الرياض", de: "برلين", it: "روما", fr: "باريس", az: "باكو", kk: "أستانا", tg: "دوشنبه", es: "مدريد", zh: "بكين", ur: "إسلام آباد", lt: "فيلنيوس", pl: "وارسو", ro: "بوخارست", hu: "بودابست" },
-  de: { tr: "Istanbul", en: "London", ru: "Moskau", ar: "Riad", de: "Berlin", it: "Rom", fr: "Paris", az: "Baku", kk: "Astana", tg: "Duschanbe", es: "Madrid", zh: "Peking", ur: "Islamabad", lt: "Wilna", pl: "Warschau", ro: "Bukarest", hu: "Budapest" },
-  it: { tr: "Istanbul", en: "Londra", ru: "Mosca", ar: "Riad", de: "Berlino", it: "Roma", fr: "Parigi", az: "Baku", kk: "Astana", tg: "Dushanbe", es: "Madrid", zh: "Pechino", ur: "Islamabad", lt: "Vilnius", pl: "Varsavia", ro: "Bucarest", hu: "Budapest" },
-  fr: { tr: "Istanbul", en: "Londres", ru: "Moscou", ar: "Riyad", de: "Berlin", it: "Rome", fr: "Paris", az: "Bakou", kk: "Astana", tg: "Douchanbé", es: "Madrid", zh: "Pékin", ur: "Islamabad", lt: "Vilnius", pl: "Varsovie", ro: "Bucarest", hu: "Budapest" },
-  az: { tr: "İstanbul", en: "London", ru: "Moskva", ar: "Ər-Riyad", de: "Berlin", it: "Roma", fr: "Paris", az: "Bakı", kk: "Astana", tg: "Düşənbə", es: "Madrid", zh: "Pekin", ur: "İslamabad", lt: "Vilnüs", pl: "Varşava", ro: "Buxarest", hu: "Budapeşt" },
-  kk: { tr: "Стамбул", en: "Лондон", ru: "Мәскеу", ar: "Эр-Рияд", de: "Берлин", it: "Рим", fr: "Париж", az: "Баку", kk: "Астана", tg: "Душанбе", es: "Мадрид", zh: "Пекин", ur: "Исламабад", lt: "Вильнюс", pl: "Варшава", ro: "Бухарест", hu: "Будапешт" },
-  tg: { tr: "Истанбул", en: "Лондон", ru: "Маскав", ar: "Риёз", de: "Берлин", it: "Рим", fr: "Париж", az: "Боку", kk: "Остона", tg: "Душанбе", es: "Мадрид", zh: "Пекин", ur: "Исломобод", lt: "Вилнюс", pl: "Варшава", ro: "Бухарест", hu: "Будапешт" },
-  es: { tr: "Estambul", en: "Londres", ru: "Moscú", ar: "Riad", de: "Berlín", it: "Roma", fr: "París", az: "Bakú", kk: "Astaná", tg: "Dusambé", es: "Madrid", zh: "Pekín", ur: "Islamabad", lt: "Vilna", pl: "Varsovia", ro: "Bucarest", hu: "Budapest" },
-  zh: { tr: "伊斯坦布尔", en: "伦敦", ru: "莫斯科", ar: "利雅得", de: "柏林", it: "罗马", fr: "巴黎", az: "巴库", kk: "阿斯塔纳", tg: "杜尚别", es: "马德里", zh: "北京", ur: "伊斯兰堡", lt: "维尔纽斯", pl: "华沙", ro: "布加勒斯特", hu: "布达佩斯" },
-  ur: { tr: "استنبول", en: "لندن", ru: "ماسکو", ar: "ریاض", de: "برلن", it: "روم", fr: "پیرس", az: "باکو", kk: "آستانہ", tg: "دوشنبے", es: "میڈرڈ", zh: "بیجنگ", ur: "اسلام آباد", lt: "ولنیئس", pl: "وارسا", ro: "بخارسٹ", hu: "بوداپسٹ" },
-  lt: { tr: "Stambulas", en: "Londonas", ru: "Maskva", ar: "Rijadas", de: "Berlynas", it: "Roma", fr: "Paryžius", az: "Baku", kk: "Astana", tg: "Dušanbė", es: "Madridas", zh: "Pekinas", ur: "Islamabadas", lt: "Vilnius", pl: "Varšuva", ro: "Bukareštas", hu: "Budapeštas" },
-  pl: { tr: "Stambuł", en: "Londyn", ru: "Moskwa", ar: "Rijad", de: "Berlin", it: "Rzym", fr: "Paryż", az: "Baku", kk: "Astana", tg: "Duszanbe", es: "Madryt", zh: "Pekin", ur: "Islamabad", lt: "Wilno", pl: "Warszawa", ro: "Bukareszt", hu: "Budapeszt" },
-  ro: { tr: "Stambul", en: "Londra", ru: "Moscova", ar: "Riad", de: "Berlin", it: "Roma", fr: "Paris", az: "Baku", kk: "Astana", tg: "Dușanbe", es: "Madrid", zh: "Beijing", ur: "Islamabad", lt: "Vilnius", pl: "Varșovia", ro: "București", hu: "Budapesta" },
-  hu: { tr: "Isztambul", en: "London", ru: "Moszkva", ar: "Rijád", de: "Berlin", it: "Róma", fr: "Párizs", az: "Baku", kk: "Asztana", tg: "Dusanbe", es: "Madrid", zh: "Peking", ur: "Iszlámábád", lt: "Vilnius", pl: "Varsó", ro: "Bukarest", hu: "Budapest" },
+const HUB_CITY: Record<Locale, string> = {
+  tr: "İstanbul",
+  en: "Istanbul",
+  ru: "Стамбул",
+  ar: "إسطنبول",
+  de: "Istanbul",
+  it: "Istanbul",
+  fr: "Istanbul",
+  az: "İstanbul",
+  kk: "Стамбул",
+  tg: "Истанбул",
+  es: "Estambul",
+  zh: "伊斯坦布尔",
+  ur: "استنبول",
+  lt: "Stambulas",
+  pl: "Stambuł",
+  ro: "Stambul",
+  hu: "Isztambul",
+};
+
+/** Partner id → harita koordinatı ve şehir etiketi */
+const PARTNER_GEO: Record<
+  string,
+  { lat: number; lon: number; cities: Partial<Record<Locale, string>> & { en: string } }
+> = {
+  mmsc: {
+    lat: 33.5651,
+    lon: 73.0169,
+    cities: { en: "Rawalpindi", tr: "Rawalpindi", ur: "راولپنڈی" },
+  },
+  kazema: {
+    lat: 29.2672,
+    lon: 48.0839,
+    cities: { en: "Subhan, Kuwait", tr: "Subhan, Kuveyt", ar: "صبحان، الكويت" },
+  },
+  ventdelux: {
+    lat: 51.128,
+    lon: 71.43,
+    cities: { en: "Astana", tr: "Astana", ru: "Астана", kk: "Астана" },
+  },
+  sanlygala: {
+    lat: 37.9601,
+    lon: 58.3261,
+    cities: { en: "Ashgabat", tr: "Aşgabat", ru: "Ашхабад" },
+  },
 };
 
 /** Globe etkileşim metinleri — her dil için */
@@ -100,20 +85,43 @@ function getCountryName(viewerLocale: Locale, code: string): string {
     const result = display.of(code);
     if (result && result !== code) return result;
   } catch {
-    /* locale data missing — fall through */
+    /* locale data missing */
   }
   return code;
 }
 
-export function getLocalizedPartnerPins(viewerLocale: Locale): PartnerPin[] {
-  const cities = CITY_BY_LOCALE[viewerLocale] ?? CITY_BY_LOCALE.en;
-  return PIN_GEO.map((g) => ({
-    name: getCountryName(viewerLocale, PIN_TO_COUNTRY_CODE[g.id]),
-    location: cities[g.id] ?? CITY_BY_LOCALE.en[g.id],
-    lat: g.lat,
-    lon: g.lon,
-    isHub: g.isHub,
-  }));
+function partnerCity(partnerId: string, viewerLocale: Locale): string | undefined {
+  const geo = PARTNER_GEO[partnerId];
+  if (!geo) return undefined;
+  return geo.cities[viewerLocale] ?? geo.cities.en;
+}
+
+/** İstanbul hub + gerçek partner konumları */
+export function buildPartnerGlobePins(partners: PartnerRecord[], viewerLocale: Locale): PartnerPin[] {
+  const pins: PartnerPin[] = [
+    {
+      partnerId: "novves-hub",
+      name: getCountryName(viewerLocale, HUB.countryCode),
+      location: HUB_CITY[viewerLocale] ?? HUB_CITY.en,
+      lat: HUB.lat,
+      lon: HUB.lon,
+      isHub: true,
+    },
+  ];
+
+  for (const partner of partners) {
+    const geo = PARTNER_GEO[partner.id];
+    if (!geo) continue;
+    pins.push({
+      partnerId: partner.id,
+      name: partner.name,
+      location: partnerCity(partner.id, viewerLocale) ?? partner.country,
+      lat: geo.lat,
+      lon: geo.lon,
+    });
+  }
+
+  return pins;
 }
 
 export function getGlobeControlsCopy(viewerLocale: Locale) {

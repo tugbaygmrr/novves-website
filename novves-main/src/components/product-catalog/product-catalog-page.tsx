@@ -390,7 +390,10 @@ export function ProductCatalogPage({
                   </Link>
                 </div>
 
-                <div className="grid gap-5 lg:grid-cols-2 lg:gap-6">
+                <div
+                  className={`grid gap-5 lg:gap-6 ${data.catalogs.length > 0 && data.guides.length > 0 ? "lg:grid-cols-2" : "lg:grid-cols-1"}`}
+                >
+                  {data.catalogs.length > 0 ? (
                   <div className="overflow-hidden rounded-2xl bg-white p-4 shadow-[0_8px_32px_-24px_rgba(15,22,36,0.12)] ring-1 ring-ink/[0.06] sm:p-5">
                     <p className="mb-4 border-b border-ink/[0.06] pb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary/55">
                       {ui.catalogsTitle}
@@ -417,6 +420,7 @@ export function ProductCatalogPage({
                       ))}
                     </ul>
                   </div>
+                  ) : null}
                   <div className="overflow-hidden rounded-2xl bg-white p-4 shadow-[0_8px_32px_-24px_rgba(15,22,36,0.12)] ring-1 ring-ink/[0.06] sm:p-5">
                     <p className="mb-4 border-b border-ink/[0.06] pb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary/55">
                       {ui.guidesTitle}

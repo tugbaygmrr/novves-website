@@ -14,9 +14,4 @@ export const ILETISIM_LOCATION_META: Record<
       "https://www.google.com/maps/search/?api=1&query=Yalova+OSB+2.+Cadde+No+12+NOVVES",
     icon: "factory",
   },
-  service: {
-    mapsHref:
-      "https://www.google.com/maps/search/?api=1&query=Dudullu+Organize+Sanayi+B%C3%B6lgesi+%C3%9Cmraniye+%C4%B0stanbul",
-    icon: "home_repair_service",
-  },
 };

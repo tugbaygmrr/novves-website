@@ -7,7 +7,7 @@ export const REFERENCE_CATALOG = {
     tr: "/documents/novves-referans-katalogu.pdf",
     en: "/documents/novves-referans-katalogu.pdf",
   },
-  pdfMeta: "Updated: 05.2026",
+  pdfMeta: "CAT-RP-01 · V0R0",
 } as const;
 
 export type ReferenceCatalogLanguage = (typeof REFERENCE_CATALOG.languages)[number];

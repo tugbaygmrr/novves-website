@@ -505,7 +505,7 @@ export function IletisimPage({ locale, copy, socialMediaLabel }: Props) {
                   <h2 className="text-3xl font-black sm:text-4xl">{copy.locationsTitle}</h2>
                   <p className="mx-auto mt-3 max-w-2xl text-hz-on-surface-variant">{copy.locationsDesc}</p>
                 </div>
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                   {copy.locations.map((loc) => (
                     <LocationCard key={loc.id} location={loc} getDirections={copy.getDirections} />
                   ))}

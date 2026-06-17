@@ -1,6 +1,7 @@
 import { appendFile, mkdir } from "fs/promises";
 import path from "path";
 import { prisma } from "@/lib/prisma";
+import { isDatabaseUnavailable } from "@/lib/prisma-database";
 import type { ContactSubmissionInput } from "@/lib/admin/schemas/contact-submission";
 
 type PersistContactSubmissionInput = ContactSubmissionInput & {
@@ -9,18 +10,6 @@ type PersistContactSubmissionInput = ContactSubmissionInput & {
 };
 
 const DEV_FALLBACK_FILE = path.join(process.cwd(), "data", "contact-submissions.jsonl");
-
-function isDatabaseUnavailable(error: unknown): boolean {
-  if (!error || typeof error !== "object") return false;
-  const code = "code" in error ? String((error as { code?: string }).code) : "";
-  const message = "message" in error ? String((error as { message?: string }).message) : "";
-  return (
-    code === "P1001" ||
-    code === "P1017" ||
-    message.includes("Can't reach database server") ||
-    message.includes("Environment variable not found: DATABASE_URL")
-  );
-}
 
 async function persistToDevFallback(data: PersistContactSubmissionInput): Promise<void> {
   await mkdir(path.dirname(DEV_FALLBACK_FILE), { recursive: true });

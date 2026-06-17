@@ -707,3 +707,9 @@ body {
 .sidebar-panel-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 56, 107, 0.55);
 }
+
+.partner-globe-highlight {
+  background-color: rgba(239, 95, 23, 0.08) !important;
+  box-shadow: inset 0 0 0 2px rgba(239, 95, 23, 0.35);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}

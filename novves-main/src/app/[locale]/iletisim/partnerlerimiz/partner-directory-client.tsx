@@ -541,7 +541,7 @@ function PartnerCard({ partner, copy }: { partner: PartnerRecord; copy: PartnerL
   const hasWebsite = partner.websiteUrl !== EMPTY && partner.websiteLabel !== EMPTY;
 
   return (
-    <article className="p-4 transition hover:bg-[#faf9f7]/60 sm:p-5">
+    <article id={`partner-${partner.id}`} className="p-4 transition hover:bg-[#faf9f7]/60 sm:p-5">
       <div className="flex items-start gap-3.5">
         <PartnerLogo partner={partner} />
         <div className="min-w-0 flex-1 pt-0.5">
@@ -590,7 +590,7 @@ function PartnerRow({ partner }: { partner: PartnerRecord }) {
   const hasWebsite = partner.websiteUrl !== EMPTY && partner.websiteLabel !== EMPTY;
 
   return (
-    <tr className="border-b border-ink/[0.05] transition hover:bg-[#faf9f7]/60">
+    <tr id={`partner-${partner.id}`} className="border-b border-ink/[0.05] transition hover:bg-[#faf9f7]/60">
       <td className="align-top px-5 py-4 sm:px-6">
         <div className="flex items-start gap-3.5">
           <PartnerLogo partner={partner} />

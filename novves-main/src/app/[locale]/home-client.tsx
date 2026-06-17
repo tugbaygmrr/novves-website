@@ -2484,7 +2484,7 @@ export default function HomeClient({
 
         <div className="relative mx-auto max-w-[1600px] px-3 sm:px-10 lg:px-16">
           {/* Kataloglar — Mühendislik özetinin altında, mühendislik desteği CTA’sının üstünde */}
-          {allowRestrictedSections === true && (
+          {allowRestrictedSections === true && catalogPreview.length > 0 && (
             <>
           <div id="catalogs" className="relative mt-12 scroll-mt-24 sm:mt-14 md:scroll-mt-[5.5rem]">
             <div className="mb-8 flex flex-wrap items-end gap-3 sm:mb-10 sm:gap-4">

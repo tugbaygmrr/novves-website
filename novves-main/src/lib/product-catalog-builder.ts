@@ -301,22 +301,7 @@ function defaultDocs(locale: string, title: string): Pick<ProductCatalogPageData
   const tc = `/${locale}/teknik-merkez/dokuman-kutuphanesi`;
   const ui = getProductCatalogUi(locale as Locale);
   return {
-    catalogs: [
-      {
-        id: "cat-cat",
-        title: ui.docCatalogTitle.replace("{name}", title),
-        meta: "PDF",
-        href: tc,
-        kind: "catalog",
-      },
-      {
-        id: "cat-gen",
-        title: ui.docGeneralCatalog,
-        meta: "PDF",
-        href: tc,
-        kind: "catalog",
-      },
-    ],
+    catalogs: [],
     guides: [
       {
         id: "g1",
@@ -342,7 +327,8 @@ function readBlockDocs(
   kind: "catalog" | "guide",
   fallbackHref: string,
 ): ProductCatalogPageData["catalogs"] | null {
-  if (!Array.isArray(raw) || raw.length === 0) return null;
+  if (!Array.isArray(raw)) return null;
+  if (raw.length === 0) return [];
   const docs = raw
     .map((d, i) => {
       const o = (d ?? {}) as { title?: string; meta?: string; href?: string };

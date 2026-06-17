@@ -8,6 +8,8 @@ import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import { PartnerHeroMap } from "./partner-hero-map";
 
 export type PartnerPin = {
+  /** Partner listesindeki satıra scroll için */
+  partnerId?: string;
   name: string;
   location: string;
   /** Enlem (-90..+90, kuzey +) */
@@ -40,6 +42,14 @@ const CAM_INITIAL = new THREE.Vector3(2.4, 1.1, 3.4);
 const CAM_MIN_DIST = 1.7; // GLOBE_RADIUS + biraz boşluk → çok yakına gidebilsin
 const CAM_MAX_DIST = 9;
 const ARC_STEPS = 64;
+
+function scrollToPartnerRow(partnerId: string) {
+  const el = document.getElementById(`partner-${partnerId}`);
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "center" });
+  el.classList.add("partner-globe-highlight");
+  window.setTimeout(() => el.classList.remove("partner-globe-highlight"), 2400);
+}
 
 // three-globe.gl / earth-blue-marble texture convention:
 //   - Greenwich (lon=0) +X yönüne bakar
@@ -172,12 +182,12 @@ function PinHtml({
   position,
   pin,
   isSelected,
-  onToggle,
+  onSelect,
 }: {
   position: THREE.Vector3;
   pin: PartnerPin;
   isSelected: boolean;
-  onToggle: () => void;
+  onSelect: () => void;
 }) {
   const isHub = pin.isHub === true;
   const labelAlwaysOn = isHub || isSelected;
@@ -213,7 +223,12 @@ function PinHtml({
           onPointerDown={(e) => e.stopPropagation()}
           onClick={(e) => {
             e.stopPropagation();
-            if (!isHub) onToggle();
+            if (!isHub) {
+              onSelect();
+              if (pin.partnerId && pin.partnerId !== "novves-hub") {
+                scrollToPartnerRow(pin.partnerId);
+              }
+            }
           }}
           aria-label={`${pin.name} — ${pin.location}`}
           aria-pressed={isSelected}
@@ -343,11 +358,11 @@ function GlobeScene({
           const isSelected = !pin.isHub && selectedIndex === i;
           return (
             <PinHtml
-              key={`pin-${i}`}
+              key={pin.partnerId ?? `pin-${i}`}
               position={pinVecs[i]}
               pin={pin}
               isSelected={isSelected}
-              onToggle={() => setSelectedIndex(isSelected ? -1 : i)}
+              onSelect={() => setSelectedIndex(isSelected ? -1 : i)}
             />
           );
         })}

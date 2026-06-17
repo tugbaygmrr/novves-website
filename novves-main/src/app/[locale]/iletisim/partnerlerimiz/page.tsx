@@ -7,7 +7,7 @@ import type { PartnerListCopy, PartnerRecord } from "./partner-directory-types";
 import partnerRecordsData from "./partner-records.json";
 import { PartnerPageHero } from "./partner-page-hero";
 import { PartnerWorldMap } from "./partner-world-map";
-import { getGlobeControlsCopy, getLocalizedPartnerPins } from "./partner-globe-i18n";
+import { buildPartnerGlobePins, getGlobeControlsCopy } from "./partner-globe-i18n";
 
 const defaultHeroStats = [
   { value: "3", label: "Partnership axes" },
@@ -126,12 +126,12 @@ export default async function Partnerlerimiz({ params }: { params: Promise<{ loc
   };
   const copy = t.partnerList ?? defaultPartnerListCopy;
   const stats = t.heroStats ?? defaultHeroStats;
-  const partnerPins = getLocalizedPartnerPins(locale);
-  const globeLabels = getGlobeControlsCopy(locale);
   const partners = localizePartnerCountries(
     applyPartnerLocale(partnerRecordsData as PartnerRecord[], t.partnerRecords),
     locale,
   );
+  const partnerPins = buildPartnerGlobePins(partners, locale);
+  const globeLabels = getGlobeControlsCopy(locale);
 
   return (
     <main className="overflow-x-clip">

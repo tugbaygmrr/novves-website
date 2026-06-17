@@ -45,11 +45,6 @@ const LOCATIONS = [
     query: "NOVVES Elektrik Motor Çiftlikköy Yalova",
     out: "yalova-fabrika.jpg",
   },
-  {
-    id: "servis-merkezi",
-    query: "Dudullu Organize Sanayi Bölgesi Ümraniye",
-    out: "servis-merkezi.jpg",
-  },
 ];
 
 const outDir = path.join(root, "public", "images", "iletisim", "locations");

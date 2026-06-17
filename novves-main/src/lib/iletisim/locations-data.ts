@@ -1,5 +1,5 @@
 /** İletişim lokasyonları — Google Maps embed (yol haritası) */
-export type IletisimLocationId = "hq" | "factory" | "service";
+export type IletisimLocationId = "hq" | "factory";
 
 export type IletisimLocationData = {
   id: IletisimLocationId;
@@ -28,15 +28,6 @@ export const ILETISIM_LOCATIONS: IletisimLocationData[] = [
     mapsEmbedSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.2!2d29.4048049!3d40.6808946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cae34dfa345cc7%3A0x688866be4ac613ae!2sNOVVES%20Elektrik%20Motor!5e0!3m2!1str!2str",
     imagePath: "/images/iletisim/locations/yalova-fabrika.jpg",
-  },
-  {
-    id: "service",
-    googleQuery: "Dudullu Organize Sanayi Bölgesi Ümraniye İstanbul",
-    lat: 41.0034,
-    lng: 29.1598,
-    mapsEmbedSrc:
-      "https://maps.google.com/maps?q=Dudullu+Organize+Sanayi+B%C3%B6lgesi,+Umraniye,+Istanbul&hl=tr&z=14&output=embed",
-    imagePath: "/images/iletisim/locations/servis-merkezi.jpg",
   },
 ];
 

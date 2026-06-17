@@ -5,7 +5,7 @@ import {
 } from "@/lib/company/addresses";
 
 export type IletisimLocation = {
-  id: "hq" | "factory" | "service";
+  id: "hq" | "factory";
   badge: string;
   title: string;
   address: string;
@@ -85,12 +85,6 @@ const defaultLocationsEn: IletisimHubJson["locations"] = [
     title: "Yalova Production Plant",
     address: NOVVES_FACTORY_ADDRESS.replace(" / Türkiye", ""),
   },
-  {
-    id: "service",
-    badge: "Technical Service",
-    title: "Service Center",
-    address: "Dudullu Organized Industrial Zone\nÜmraniye / Istanbul",
-  },
 ];
 
 const defaultLocationsTr: IletisimHubJson["locations"] = [
@@ -105,12 +99,6 @@ const defaultLocationsTr: IletisimHubJson["locations"] = [
     badge: "Fabrika",
     title: "Yalova Üretim Tesisi",
     address: NOVVES_FACTORY_ADDRESS.replace(" / Türkiye", ""),
-  },
-  {
-    id: "service",
-    badge: "Teknik Servis",
-    title: "Servis Merkezi",
-    address: "Dudullu Organize Sanayi Bölgesi\nÜmraniye / İstanbul",
   },
 ];
 
