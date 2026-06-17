@@ -28,25 +28,22 @@ const fieldClass =
   "w-full rounded-lg border border-ink/10 bg-white px-3 py-2.5 text-sm font-medium text-ink placeholder:text-secondary/45 transition focus:border-primary/35 focus:outline-none focus:ring-2 focus:ring-primary/15";
 
 export type ProductCatalogFilterValues = {
-  series: string;
+  familySeries: string;
   query: string;
-  productType: string;
   modelMin: string;
   modelMax: string;
 };
 
 export const EMPTY_PRODUCT_CATALOG_FILTERS: ProductCatalogFilterValues = {
-  series: "",
+  familySeries: "",
   query: "",
-  productType: "",
   modelMin: "",
   modelMax: "",
 };
 
 export function ProductCatalogFilterBar({
   ui,
-  seriesOptions,
-  typeOptions,
+  familySeriesOptions,
   draft,
   onChange,
   onApply,
@@ -54,8 +51,7 @@ export function ProductCatalogFilterBar({
   hasActiveFilters,
 }: {
   ui: ProductCatalogUi;
-  seriesOptions: string[];
-  typeOptions: string[];
+  familySeriesOptions: { value: string; label: string }[];
   draft: ProductCatalogFilterValues;
   onChange: (next: ProductCatalogFilterValues) => void;
   onApply: () => void;
@@ -70,17 +66,17 @@ export function ProductCatalogFilterBar({
         <label className="xl:col-span-5">
           <span className={labelClass}>{ui.filterSeries}</span>
           <select
-            value={draft.series}
-            onChange={(e) => patch({ series: e.target.value })}
+            value={draft.familySeries}
+            onChange={(e) => patch({ familySeries: e.target.value })}
             className={`${fieldClass} cursor-pointer appearance-none bg-[length:1rem] bg-[right_0.65rem_center] bg-no-repeat pr-9`}
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2345464d'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 9l6 6 6-6'/%3E%3C/svg%3E")`,
             }}
           >
             <option value="">{ui.filterAllSeriesModels}</option>
-            {seriesOptions.map((name) => (
-              <option key={name} value={name}>
-                {name}
+            {familySeriesOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
               </option>
             ))}
           </select>
@@ -104,26 +100,7 @@ export function ProductCatalogFilterBar({
         </label>
       </div>
 
-      <div className="mt-4 flex flex-col gap-3 border-t border-ink/[0.06] pt-4 sm:flex-row sm:items-end">
-        <label className="min-w-0 flex-1">
-          <span className={labelClass}>{ui.filterProductType}</span>
-          <select
-            value={draft.productType}
-            onChange={(e) => patch({ productType: e.target.value })}
-            className={`${fieldClass} cursor-pointer appearance-none bg-[length:1rem] bg-[right_0.75rem_center] bg-no-repeat pr-9`}
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2345464d'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 9l6 6 6-6'/%3E%3C/svg%3E")`,
-            }}
-          >
-            <option value="">{ui.filterAny}</option>
-            {typeOptions.map((type) => (
-              <option key={type} value={type}>
-                {type}
-              </option>
-            ))}
-          </select>
-        </label>
-
+      <div className="mt-4 flex flex-col gap-3 border-t border-ink/[0.06] pt-4 sm:flex-row sm:items-end sm:justify-end">
         <div className="flex shrink-0 items-center gap-2 sm:pb-0.5">
           {hasActiveFilters ? (
             <button

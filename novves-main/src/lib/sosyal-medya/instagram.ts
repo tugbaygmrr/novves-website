@@ -1,30 +1,20 @@
 import "server-only";
 
 import type { SosyalMedyaResolvedFeedPost } from "./feed";
-
-type InstagramMediaResponse = {
-  data?: InstagramMediaItem[];
-};
-
-type InstagramMediaItem = {
-  id: string;
-  caption?: string;
-  media_type?: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
-  media_url?: string;
-  permalink?: string;
-  thumbnail_url?: string;
-  timestamp?: string;
-  username?: string;
-};
+import {
+  loadInstagramFeedCache,
+  resolveInstagramCredentials,
+  type InstagramMediaItem,
+} from "./instagram-credentials";
 
 const DEFAULT_INSTAGRAM_LIMIT = 6;
 const HIDDEN_INSTAGRAM_TERMS = [
   "adana",
-  "yüreğir",
+  "y\u00FCre\u011Fir",
   "yuregir",
   "3s kale",
   "kale topaz",
-  "adıyaman",
+  "ad\u0131yaman",
   "adiyaman",
   "otopark",
   "2m",
@@ -51,44 +41,78 @@ function shouldHideInstagramPost(caption?: string): boolean {
   return HIDDEN_INSTAGRAM_TERMS.some((term) => normalized.includes(term));
 }
 
-export async function getInstagramFeedPosts(): Promise<SosyalMedyaResolvedFeedPost[]> {
-  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
-  if (!accessToken) return [];
+function mapInstagramItems(items: InstagramMediaItem[]): SosyalMedyaResolvedFeedPost[] {
+  return items
+    .filter((item) => !shouldHideInstagramPost(item.caption))
+    .map((item, index): SosyalMedyaResolvedFeedPost | null => {
+      const image = item.media_type === "VIDEO" ? item.thumbnail_url : item.media_url;
+      if (!image) return null;
 
-  const endpoint = new URL("https://graph.instagram.com/me/media");
-  endpoint.searchParams.set("fields", "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username");
-  endpoint.searchParams.set("limit", String(instagramLimit()));
+      return {
+        id: `instagram-${item.id}`,
+        layout: index === 0 ? "featured" : "square",
+        image,
+        alt: item.caption ?? "NOVVES Instagram post",
+        title: titleFromCaption(item.caption),
+        description: item.caption,
+        badge: index === 0 ? "featured" : undefined,
+        permalink: item.permalink,
+        platformId: "instagram",
+        username: item.username,
+        timestamp: item.timestamp,
+      };
+    })
+    .filter((item): item is SosyalMedyaResolvedFeedPost => item !== null);
+}
+
+async function fetchInstagramMedia(
+  accessToken: string,
+  userId?: string,
+): Promise<InstagramMediaItem[]> {
+  const fields = "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username";
+  const limit = instagramLimit();
+
+  const endpoint = userId
+    ? new URL(`https://graph.facebook.com/v21.0/${userId}/media`)
+    : new URL("https://graph.instagram.com/me/media");
+
+  endpoint.searchParams.set("fields", fields);
+  endpoint.searchParams.set("limit", String(limit));
   endpoint.searchParams.set("access_token", accessToken);
 
-  try {
-    const response = await fetch(endpoint, {
-      next: { revalidate: 60 * 15 },
-    });
-    if (!response.ok) return [];
-
-    const payload = (await response.json()) as InstagramMediaResponse;
-    return (payload.data ?? [])
-      .filter((item) => !shouldHideInstagramPost(item.caption))
-      .map((item, index): SosyalMedyaResolvedFeedPost | null => {
-        const image = item.media_type === "VIDEO" ? item.thumbnail_url : item.media_url;
-        if (!image) return null;
-
-        return {
-          id: `instagram-${item.id}`,
-          layout: index === 0 ? "featured" : "square",
-          image,
-          alt: item.caption ?? "NOVVES Instagram paylaşımı",
-          title: titleFromCaption(item.caption),
-          description: item.caption,
-          badge: index === 0 ? "featured" : undefined,
-          permalink: item.permalink,
-          platformId: "instagram",
-          username: item.username,
-          timestamp: item.timestamp,
-        };
-      })
-      .filter((item): item is SosyalMedyaResolvedFeedPost => item !== null);
-  } catch {
+  const response = await fetch(endpoint, {
+    next: { revalidate: 60 * 15 },
+  });
+  if (!response.ok) {
+    if (process.env.NODE_ENV === "development") {
+      const detail = await response.text().catch(() => "");
+      console.warn("[instagram] API request failed:", response.status, detail.slice(0, 200));
+    }
     return [];
   }
+
+  const payload = (await response.json()) as { data?: InstagramMediaItem[] };
+  return payload.data ?? [];
+}
+
+export async function getInstagramFeedPosts(): Promise<SosyalMedyaResolvedFeedPost[]> {
+  const credentials = await resolveInstagramCredentials();
+
+  if (credentials) {
+    try {
+      const items = await fetchInstagramMedia(credentials.accessToken, credentials.userId);
+      const posts = mapInstagramItems(items);
+      if (posts.length > 0) return posts;
+    } catch (error) {
+      if (process.env.NODE_ENV === "development") {
+        console.warn("[instagram] Live feed fetch failed:", error);
+      }
+    }
+  } else if (process.env.NODE_ENV === "development") {
+    console.warn(
+      "[instagram] No INSTAGRAM_ACCESS_TOKEN or admin instagram_access_token — trying cache.",
+    );
+  }
+
+  return mapInstagramItems(loadInstagramFeedCache());
 }

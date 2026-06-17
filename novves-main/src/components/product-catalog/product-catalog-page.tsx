@@ -11,6 +11,7 @@ import {
 } from "@/lib/product-catalog-routes";
 import { SIDEBAR_PANEL_SCROLL } from "@/lib/sidebar-panel-scroll";
 import type { ProductCatalogUi } from "@/lib/product-catalog-ui";
+import { buildProductFamilySeriesOptions, parseFamilySeriesKey } from "@/lib/product-catalog-filters";
 import {
   EMPTY_PRODUCT_CATALOG_FILTERS,
   ProductCatalogFilterBar,
@@ -126,29 +127,26 @@ export function ProductCatalogPage({
   const [draftFilters, setDraftFilters] = useState<ProductCatalogFilterValues>(EMPTY_PRODUCT_CATALOG_FILTERS);
   const [appliedFilters, setAppliedFilters] = useState<ProductCatalogFilterValues>(EMPTY_PRODUCT_CATALOG_FILTERS);
 
-  const seriesOptions = useMemo(() => {
-    const names = data.products.map((p) => p.name);
-    return Array.from(new Set(names)).sort();
-  }, [data.products]);
-
-  const typeOptions = useMemo(() => {
-    const types = data.products.map((p) => p.type);
-    return Array.from(new Set(types)).sort();
-  }, [data.products]);
+  const familySeriesOptions = useMemo(
+    () => buildProductFamilySeriesOptions(data.products),
+    [data.products],
+  );
 
   const hasActiveFilters = useMemo(() => {
     const f = appliedFilters;
-    return Boolean(f.series || f.query.trim() || f.productType || f.modelMin || f.modelMax);
+    return Boolean(f.familySeries || f.query.trim() || f.modelMin || f.modelMax);
   }, [appliedFilters]);
 
   const filtered = useMemo(() => {
     const q = appliedFilters.query.trim().toLowerCase();
     const min = appliedFilters.modelMin.trim() ? Number(appliedFilters.modelMin) : null;
     const max = appliedFilters.modelMax.trim() ? Number(appliedFilters.modelMax) : null;
+    const familySeries = appliedFilters.familySeries
+      ? parseFamilySeriesKey(appliedFilters.familySeries)
+      : null;
 
     return data.products.filter((p) => {
-      if (appliedFilters.series && p.name !== appliedFilters.series) return false;
-      if (appliedFilters.productType && p.type !== appliedFilters.productType) return false;
+      if (familySeries && (p.name !== familySeries.name || p.type !== familySeries.type)) return false;
       const modelCount = p.subModels.length;
       if (min !== null && !Number.isNaN(min) && modelCount < min) return false;
       if (max !== null && !Number.isNaN(max) && modelCount > max) return false;
@@ -263,8 +261,7 @@ export function ProductCatalogPage({
             <section className={`${PRODUCT_CATALOG_PAGE_X} pb-8`} aria-label={ui.filterApply}>
               <ProductCatalogFilterBar
                 ui={ui}
-                seriesOptions={seriesOptions}
-                typeOptions={typeOptions}
+                familySeriesOptions={familySeriesOptions}
                 draft={draftFilters}
                 onChange={setDraftFilters}
                 onApply={applyFilters}

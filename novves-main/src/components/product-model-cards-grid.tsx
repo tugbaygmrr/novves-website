@@ -10,8 +10,8 @@ import { useQuoteBasket } from "@/components/quote-basket/quote-basket-provider"
 import type { ProductModel } from "@/components/product-detail-page";
 import {
   formatModelNumber,
+  parseModelImages,
   productImageShadowClass,
-  resolveDefaultModelImage,
 } from "@/lib/product-model-media";
 import { getQuoteBasketUi } from "@/lib/quote-basket/ui";
 export type ProductModelCardsLabels = {
@@ -86,7 +86,8 @@ export function ProductModelCardsGrid({
   };
 
   const selectedModel = selectedIndex !== null ? models[selectedIndex] : null;
-  const selectedImage = selectedModel ? resolveDefaultModelImage(selectedModel.image) : "";
+  const selectedImages = selectedModel ? parseModelImages(selectedModel.image) : [];
+  const selectedImage = selectedImages[0] ?? "";
 
   useEffect(() => {
     if (!selectedModel) {
@@ -110,7 +111,7 @@ export function ProductModelCardsGrid({
     <>
       <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3 xl:gap-6">
         {models.map((model, index) => {
-          const modelImage = resolveDefaultModelImage(model.image);
+          const modelImages = parseModelImages(model.image);
 
           return (
             <article
@@ -124,21 +125,43 @@ export function ProductModelCardsGrid({
                 onKeyDown={(event) => handleCardKeyDown(event, index)}
                 className="flex min-h-0 flex-1 flex-col text-left"
               >
-                <ProductStandardMedia
-                  src={modelImage}
-                  alt={model.name}
-                  aspect="3/2"
-                  containerClassName="min-h-[11.5rem] sm:min-h-[12.5rem] lg:min-h-[13.5rem]"
-                  imageClassName={productImageShadowClass(modelImage)}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                >
-                  <span className="absolute left-2.5 top-2.5 rounded-full bg-ink px-2.5 py-1 font-eurostile text-[10px] font-bold tabular-nums tracking-wide text-white sm:left-3 sm:top-3">
-                    {formatModelNumber(index)}
-                  </span>
-                  <span className="absolute right-2.5 top-2.5 rounded-full bg-sand-100/90 px-2 py-1 text-[7px] font-black uppercase tracking-[0.12em] text-primary ring-1 ring-ink/[0.06] sm:right-3 sm:top-3 sm:px-2.5 sm:text-[8px] sm:tracking-[0.14em]">
-                    {labels.productFamily}
-                  </span>
-                </ProductStandardMedia>
+                {modelImages.length > 1 ? (
+                  <div className="relative grid grid-cols-2 gap-1">
+                    {modelImages.map((src, imageIndex) => (
+                      <ProductStandardMedia
+                        key={`${src}-${imageIndex}`}
+                        src={src}
+                        alt={`${model.name} ${imageIndex + 1}`}
+                        aspect="square"
+                        containerClassName="min-h-[11.5rem] sm:min-h-[12.5rem] lg:min-h-[13.5rem]"
+                        imageClassName={productImageShadowClass(src)}
+                        sizes="(max-width: 640px) 45vw, (max-width: 1024px) 22vw, 15vw"
+                      />
+                    ))}
+                    <span className="pointer-events-none absolute left-2.5 top-2.5 rounded-full bg-ink px-2.5 py-1 font-eurostile text-[10px] font-bold tabular-nums tracking-wide text-white sm:left-3 sm:top-3">
+                      {formatModelNumber(index)}
+                    </span>
+                    <span className="pointer-events-none absolute right-2.5 top-2.5 rounded-full bg-sand-100/90 px-2 py-1 text-[7px] font-black uppercase tracking-[0.12em] text-primary ring-1 ring-ink/[0.06] sm:right-3 sm:top-3 sm:px-2.5 sm:text-[8px] sm:tracking-[0.14em]">
+                      {labels.productFamily}
+                    </span>
+                  </div>
+                ) : (
+                  <ProductStandardMedia
+                    src={modelImages[0] ?? ""}
+                    alt={model.name}
+                    aspect="3/2"
+                    containerClassName="min-h-[11.5rem] sm:min-h-[12.5rem] lg:min-h-[13.5rem]"
+                    imageClassName={productImageShadowClass(modelImages[0] ?? "")}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  >
+                    <span className="absolute left-2.5 top-2.5 rounded-full bg-ink px-2.5 py-1 font-eurostile text-[10px] font-bold tabular-nums tracking-wide text-white sm:left-3 sm:top-3">
+                      {formatModelNumber(index)}
+                    </span>
+                    <span className="absolute right-2.5 top-2.5 rounded-full bg-sand-100/90 px-2 py-1 text-[7px] font-black uppercase tracking-[0.12em] text-primary ring-1 ring-ink/[0.06] sm:right-3 sm:top-3 sm:px-2.5 sm:text-[8px] sm:tracking-[0.14em]">
+                      {labels.productFamily}
+                    </span>
+                  </ProductStandardMedia>
+                )}
                 <div className="flex min-h-0 flex-1 flex-col pt-3.5 sm:pt-4">
                   <div className="flex min-w-0 items-start gap-2.5 sm:gap-3">
                     <span className="shrink-0 font-eurostile text-base font-bold tabular-nums leading-tight text-primary sm:text-lg">
@@ -221,20 +244,41 @@ export function ProductModelCardsGrid({
 
                 <div className="overflow-y-auto overscroll-contain px-4 py-4 sm:px-6 sm:py-5">
                   <div className="grid gap-5 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] md:gap-6">
-                    <ProductStandardMedia
-                      src={selectedImage}
-                      alt={selectedModel.name}
-                      aspect="4/3"
-                      fit="intrinsic"
-                      containerClassName="min-h-[11rem] sm:min-h-[13rem]"
-                      imageClassName={productImageShadowClass(selectedImage)}
-                      className="rounded-[1rem]"
-                      sizes="(max-width: 768px) 100vw, 28vw"
-                    >
-                      <span className="absolute left-3 top-3 rounded-full bg-ink px-2.5 py-1 font-eurostile text-[10px] font-bold tabular-nums text-white sm:left-4 sm:top-4">
-                        {formatModelNumber(selectedIndex)}
-                      </span>
-                    </ProductStandardMedia>
+                    {selectedImages.length > 1 ? (
+                      <div className="relative grid grid-cols-2 gap-2">
+                        {selectedImages.map((src, imageIndex) => (
+                          <ProductStandardMedia
+                            key={`${src}-${imageIndex}`}
+                            src={src}
+                            alt={`${selectedModel.name} ${imageIndex + 1}`}
+                            aspect="square"
+                            fit="intrinsic"
+                            containerClassName="min-h-[11rem] sm:min-h-[13rem]"
+                            imageClassName={productImageShadowClass(src)}
+                            className="rounded-[1rem]"
+                            sizes="(max-width: 768px) 45vw, 14vw"
+                          />
+                        ))}
+                        <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-ink px-2.5 py-1 font-eurostile text-[10px] font-bold tabular-nums text-white sm:left-4 sm:top-4">
+                          {formatModelNumber(selectedIndex)}
+                        </span>
+                      </div>
+                    ) : (
+                      <ProductStandardMedia
+                        src={selectedImage}
+                        alt={selectedModel.name}
+                        aspect="4/3"
+                        fit="intrinsic"
+                        containerClassName="min-h-[11rem] sm:min-h-[13rem]"
+                        imageClassName={productImageShadowClass(selectedImage)}
+                        className="rounded-[1rem]"
+                        sizes="(max-width: 768px) 100vw, 28vw"
+                      >
+                        <span className="absolute left-3 top-3 rounded-full bg-ink px-2.5 py-1 font-eurostile text-[10px] font-bold tabular-nums text-white sm:left-4 sm:top-4">
+                          {formatModelNumber(selectedIndex)}
+                        </span>
+                      </ProductStandardMedia>
+                    )}
 
                     <div className="min-w-0">
                       <p className="text-[14px] leading-7 text-secondary/80 sm:text-[15px]">{selectedModel.description}</p>

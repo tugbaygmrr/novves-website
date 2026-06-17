@@ -63,14 +63,20 @@ export function resolveCoolingCatalogImage(
   meta?: CatalogFamilyMeta,
   rowImage?: string,
 ): string {
-  const explicit = rowImage?.trim();
-  if (explicit) return explicit;
-  if (meta?.image) return meta.image;
+  if (rowImage !== undefined) {
+    return rowImage.trim();
+  }
+  if (meta?.image !== undefined) {
+    return meta.image.trim();
+  }
   const key = name.trim().toUpperCase();
   if (key === "ORCA" || key === "POLAR BEAR" || isChillerCatalogName(name) || isCoolingOutdoorUnitName(name)) {
     return CHILLER_CATALOG_IMAGE;
   }
-  if (key === "ORCA HEATER" || key === "ORCA COIL" || key === "ORCA HX" || isElectricHeaterCatalogName(name) || isWaterCoilHeaterCatalogName(name)) {
+  if (key === "ORCA HEATER" || isElectricHeaterCatalogName(name)) {
+    return ELECTRIC_HEATER_CATALOG_IMAGE;
+  }
+  if (isWaterCoilHeaterCatalogName(name)) {
     return ELECTRIC_HEATER_CATALOG_IMAGE;
   }
   return "/images/products/marlin.png";
@@ -98,8 +104,8 @@ export const CATALOG_FAMILY_META: Record<string, CatalogFamilyMeta> = {
   ORCA: { image: CHILLER_CATALOG_IMAGE },
   "POLAR BEAR": { image: CHILLER_CATALOG_IMAGE, leafSlug: "dis-uniteler" },
   "ORCA HEATER": { image: ELECTRIC_HEATER_CATALOG_IMAGE, leafSlug: "elektrikli-isitici" },
-  "ORCA COIL": { image: ELECTRIC_HEATER_CATALOG_IMAGE, leafSlug: "sulu-isitici" },
-  "ORCA HX": { image: "/images/products/caracal.png", leafSlug: "orca-hx" },
+  "ORCA COIL": { image: "", leafSlug: "sulu-isitici" },
+  "ORCA HX": { image: "", leafSlug: "orca-hx" },
   "CHILLER (POLAR BEAR)": { image: CHILLER_CATALOG_IMAGE },
   CHILLER: { image: CHILLER_CATALOG_IMAGE, leafSlug: "dis-uniteler" },
   "DIŞ ÜNİTELER": { image: CHILLER_CATALOG_IMAGE, leafSlug: "dis-uniteler" },

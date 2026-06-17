@@ -112,14 +112,21 @@ function buildItem(
   const subModels = input.subModels ?? [];
   const comingSoon = Boolean(input.comingSoon);
   const defaultImage = "/images/products/marlin.png";
-  const rawImage = input.image || defaultImage;
-  const image =
-    rawImage.startsWith("/images/products/") && !rawImage.endsWith("marlin.png")
-      ? rawImage
-      : resolvePublicImage(rawImage, {
-          fallback: defaultImage,
-          label: input.name,
-        });
+
+  let image: string;
+  if (input.image === "") {
+    image = "";
+  } else {
+    const rawImage = input.image || defaultImage;
+    image =
+      rawImage.startsWith("/images/products/") && !rawImage.endsWith("marlin.png")
+        ? rawImage
+        : resolvePublicImage(rawImage, {
+            fallback: defaultImage,
+            label: input.name,
+          });
+  }
+
   const blurb =
     input.description?.trim() ||
     getProductFamilyPageBlurb(productsDict, input.name, image) ||
@@ -159,7 +166,11 @@ function fromProductsArray(
       id: name,
       name,
       type: trim(p.type) || name,
-      image: resolveCoolingCatalogImage(name, meta, trim(p.image)),
+      image: resolveCoolingCatalogImage(
+        name,
+        meta,
+        typeof p.image === "string" ? trim(p.image) : undefined,
+      ),
       description: trim(p.description),
       leafSlug: meta?.leafSlug,
       subModels: p.subModels,

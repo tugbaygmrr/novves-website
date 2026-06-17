@@ -158,6 +158,53 @@ function formatPreviewBadge(fileFormat?: string): string {
   return "DOC";
 }
 
+function DocumentPreview({
+  previewImage,
+  defaultPreviewImage,
+  previewTag,
+  fileFormat,
+  title,
+}: {
+  previewImage?: string;
+  defaultPreviewImage: string;
+  previewTag: string;
+  fileFormat?: string;
+  title: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  const src = (previewImage?.trim() || defaultPreviewImage).trim();
+
+  useEffect(() => {
+    setFailed(false);
+  }, [src]);
+
+  if (!src || failed) {
+    return (
+      <DocumentPreviewIcon previewTag={previewTag} fileFormat={fileFormat} title={title} />
+    );
+  }
+
+  return (
+    <div
+      className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-sand-200 ring-1 ring-inset ring-ink/[0.06]"
+      role="img"
+      aria-label={title}
+    >
+      <Image
+        src={src}
+        alt={title}
+        fill
+        className="object-contain object-center p-2"
+        sizes="(max-width: 1280px) 100vw, 320px"
+        onError={() => setFailed(true)}
+      />
+      <span className="absolute left-2 top-2 rounded bg-dark/85 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
+        {previewTag}
+      </span>
+    </div>
+  );
+}
+
 function DocumentPreviewIcon({
   previewTag,
   fileFormat,
@@ -643,11 +690,13 @@ function DocumentLibrarySidebarPanel({
 function DocumentLibraryInspectorPanel({
   ui,
   selected,
+  defaultPreviewImage,
   downloadLanguage,
   onDownloadLanguageChange,
 }: {
   ui: DocumentLibraryUi;
   selected: DocumentLibraryItem;
+  defaultPreviewImage: string;
   downloadLanguage: string | null;
   onDownloadLanguageChange: (lang: string) => void;
 }) {
@@ -660,7 +709,9 @@ function DocumentLibraryInspectorPanel({
 
   return (
     <>
-      <DocumentPreviewIcon
+      <DocumentPreview
+        previewImage={selected.previewImage}
+        defaultPreviewImage={defaultPreviewImage}
         previewTag={ui.inspector.previewTag}
         fileFormat={selected.fileFormat}
         title={selected.title}
@@ -749,6 +800,7 @@ export function DocumentLibraryPage({
   ui,
   documents,
   tree,
+  defaultPreviewImage,
 }: DocumentLibraryPageProps) {
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
@@ -953,6 +1005,7 @@ export function DocumentLibraryPage({
               <DocumentLibraryInspectorPanel
                 ui={ui}
                 selected={selected}
+                defaultPreviewImage={defaultPreviewImage}
                 downloadLanguage={downloadLanguage}
                 onDownloadLanguageChange={setDownloadLanguage}
               />
@@ -1214,6 +1267,7 @@ export function DocumentLibraryPage({
               <DocumentLibraryInspectorPanel
                 ui={ui}
                 selected={selected}
+                defaultPreviewImage={defaultPreviewImage}
                 downloadLanguage={downloadLanguage}
                 onDownloadLanguageChange={setDownloadLanguage}
               />

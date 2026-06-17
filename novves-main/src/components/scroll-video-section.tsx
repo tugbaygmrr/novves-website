@@ -272,6 +272,7 @@ export function ScrollVideoSection({
   productHref?: string;
   sideLabel?: string;
 }) {
+  const isRtl = locale === "ar" || locale === "ur";
   const isScrollStill = Boolean(scrollImageSrc);
   const isVideoMode = Boolean(videoSrc) && !isScrollStill;
   const containerRef = useRef<HTMLDivElement>(null);
@@ -738,10 +739,11 @@ export function ScrollVideoSection({
         {startCard && (
           <div
             ref={heroGradientRef}
-            className="pointer-events-none absolute inset-y-0 left-0 z-[6] w-[70%]"
+            className="pointer-events-none absolute inset-y-0 start-0 z-[6] w-[70%]"
             style={{
-              background:
-                "linear-gradient(90deg, #f4f4ea 0%, rgba(244,244,234,0.96) 38%, rgba(244,244,234,0.58) 64%, rgba(244,244,234,0) 100%)",
+              background: isRtl
+                ? "linear-gradient(270deg, #f4f4ea 0%, rgba(244,244,234,0.96) 38%, rgba(244,244,234,0.58) 64%, rgba(244,244,234,0) 100%)"
+                : "linear-gradient(90deg, #f4f4ea 0%, rgba(244,244,234,0.96) 38%, rgba(244,244,234,0.58) 64%, rgba(244,244,234,0) 100%)",
               opacity: 1,
               transition: "opacity 0.12s linear",
             }}
@@ -754,7 +756,7 @@ export function ScrollVideoSection({
         {startCard && (
           <div
             ref={startCardRef}
-            className="absolute inset-y-0 left-0 z-20 flex w-full max-w-[calc(100vw-1.5rem)] items-start pl-5 pr-4 pt-[5.5rem] sm:max-w-[min(760px,76vw)] sm:pl-10 sm:pt-0 md:max-w-[min(760px,72vw)] md:items-center lg:max-w-[min(980px,min(68vw,calc(100vw-2.5rem)))] lg:pl-14 lg:pr-6 xl:pl-[4.5rem] xl:pr-8"
+            className="absolute inset-y-0 start-0 z-20 flex w-full items-start ps-5 pe-4 pt-[5.5rem] sm:ps-10 sm:pt-0 md:items-center lg:pe-6 xl:ps-[4.5rem] xl:pe-8"
           >
             <div
               ref={startCardSurfaceRef}
@@ -769,16 +771,21 @@ export function ScrollVideoSection({
               {/* İki eş merkezli ince halka — sertifika bölgesine uzanır, certlerin altından görünür */}
               <div
                 aria-hidden
-                className="pointer-events-none absolute left-[38%] top-[57%] z-0 -translate-x-1/2 -translate-y-1/2"
+                className="pointer-events-none absolute top-[57%] z-0 -translate-y-1/2"
+                style={
+                  isRtl
+                    ? { right: "38%", transform: "translate(50%, -50%)" }
+                    : { left: "38%", transform: "translate(-50%, -50%)" }
+                }
               >
                 <div className="absolute left-1/2 top-1/2 h-[min(56rem,92vh)] w-[min(56rem,92vh)] -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary/25" />
                 <div className="absolute left-1/2 top-1/2 h-[min(30rem,54vh)] w-[min(30rem,54vh)] -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary/[0.18]" />
               </div>
 
               <div className="relative z-20 flex w-full min-w-0 items-start gap-4 sm:items-center sm:gap-6 xl:gap-10">
-                <div className="relative min-w-0 flex-1 max-w-[min(560px,92vw)] pl-0 sm:max-w-[min(580px,52vw)] sm:pl-6 md:max-w-[min(660px,64vw)] lg:max-w-[min(580px,52vw)] lg:pl-10 xl:pl-14">
-                  <div className="pointer-events-none absolute -left-8 top-8 h-[14rem] w-[min(24rem,92vw)] rounded-full bg-white/75 blur-2xl md:hidden" aria-hidden />
-                  <div className="pointer-events-none absolute -left-8 top-8 hidden h-[17rem] w-[min(34rem,72vw)] rounded-full bg-white/58 blur-3xl md:block lg:hidden" aria-hidden />
+                <div className="relative min-w-0 flex-1 max-w-[min(560px,92vw)] ps-0 sm:max-w-[min(580px,52vw)] sm:ps-6 md:max-w-[min(660px,64vw)] lg:max-w-[min(580px,52vw)] lg:ps-10 xl:ps-14">
+                  <div className="pointer-events-none absolute -start-8 top-8 h-[14rem] w-[min(24rem,92vw)] rounded-full bg-white/75 blur-2xl md:hidden" aria-hidden />
+                  <div className="pointer-events-none absolute -start-8 top-8 hidden h-[17rem] w-[min(34rem,72vw)] rounded-full bg-white/58 blur-3xl md:block lg:hidden" aria-hidden />
                   <span className="relative z-10 inline-flex items-center gap-1.5 rounded-md bg-primary/[0.12] px-3 py-1.5 text-[11px] font-semibold tracking-[0.04em] text-primary sm:-mt-3 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-base">
                     <span className="text-base leading-none font-semibold">+</span>
                     {startCard.badge}
@@ -794,7 +801,7 @@ export function ScrollVideoSection({
                           fontWeight: 600,
                         }}
                       >
-                        <span className="block whitespace-nowrap text-primary">{lines[0]}</span>
+                        <span className={`block text-primary ${isRtl ? "" : "whitespace-nowrap"}`}>{lines[0]}</span>
                         {lines[1] ? <span className="block text-ink">{lines[1]}</span> : null}
                       </h1>
                     );
@@ -870,17 +877,31 @@ export function ScrollVideoSection({
                 return (
                   <div
                     ref={statsRef}
-                    className="absolute top-[57%] z-20 hidden min-w-[180px] flex-col justify-center gap-12 min-[1200px]:flex"
-                    style={{ left: "calc(38% + min(28rem, 46vh))", transform: "translate(-1.125rem, -50%)" }}
+                    className={`absolute top-[57%] z-20 hidden min-w-[11.5rem] flex-col justify-center min-[1200px]:flex ${
+                      isRtl ? "gap-14" : "gap-12"
+                    }`}
+                    style={{
+                      top: "57%",
+                      ...(isRtl
+                        ? {
+                            left: "calc(62% - min(28rem, 46vh))",
+                            transform: "translate(-1.125rem, -50%)",
+                          }
+                        : {
+                            left: "calc(38% + min(28rem, 46vh))",
+                            transform: "translate(-1.125rem, -50%)",
+                          }),
+                    }}
                   >
                     {displayStats.map((stat, i) => {
                       /** Üst/alt satırlar halka eğrisini takip etsin diye içeri çekilir (orta satır rightmost noktada) */
                       const arcInset = i === 1 ? 0 : 16;
+                      const arcShift = isRtl ? arcInset : -arcInset;
                       return (
                       <div
                         key={stat.label}
                         className="flex items-center gap-5"
-                        style={{ transform: `translateX(-${arcInset}px)` }}
+                        style={{ transform: `translateX(${arcShift}px)` }}
                       >
                         <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center text-primary" aria-hidden>
                           <HomeContentIcon
@@ -890,9 +911,10 @@ export function ScrollVideoSection({
                             strokeWidth={1.5}
                           />
                         </span>
-                        <div>
+                        <div className="min-w-0">
                           <p
                             className="font-semibold leading-none text-ink"
+                            dir="ltr"
                             style={{
                               fontFamily: 'var(--font-montserrat), var(--font-inter), "Helvetica Neue", sans-serif',
                               fontWeight: 600,
@@ -913,7 +935,7 @@ export function ScrollVideoSection({
 
             {/* Sertifikalar — sürekli dikey kayan marquee, yana çevrili logolar + aralarında yatay çizgiler. Beyaz PNG'ler invert ile açık gri. */}
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 z-30 hidden w-20 overflow-hidden sm:block"
+              className="pointer-events-none absolute inset-y-0 start-0 z-30 hidden w-20 overflow-hidden sm:block"
               style={{
                 maskImage: "linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%)",
                 WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%)",

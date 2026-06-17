@@ -527,6 +527,7 @@ const PRODUCT_CARD_CTA_COLOR = "#e8956f";
 /** Çözüm / ürün şeridi: lg+ ok beş kartlık sayfa */
 const SOLUTION_STRIP_PAGE_CARD_COUNT = 5;
 const PRODUCT_STRIP_PAGE_CARD_COUNT = 5;
+const HOME_CATALOG_PREVIEW_LIMIT = 3;
 
 function stripActiveCardIndex(container: HTMLElement, cards: readonly HTMLElement[]) {
   const edge = container.getBoundingClientRect().left;
@@ -2155,7 +2156,7 @@ export default function HomeClient({
         thumbnails: [c.thumbnails[0] ?? "", c.thumbnails[1] ?? "", c.thumbnails[2] ?? ""] as const,
       }))
     : homeSolutionBandSlides;
-  const catalogPreview = dict.catalogPreview ?? [];
+  const catalogPreview = (dict.catalogPreview ?? []).slice(0, HOME_CATALOG_PREVIEW_LIMIT);
   const referencePreview = referenceStrip.cards.length
     ? referenceStrip.cards.map((c) => ({
         title: c.sector[locale] || c.sector.tr || "",

@@ -1,6 +1,6 @@
 /**
- * Modellere diskteki mevcut gùrselleri e?ler; kalanlar iùin aile gùrselinden
- * model kodlu PNG ùretir ve products.json (TR + tùm diller) gùnceller.
+ * Modellere diskteki mevcut gÔøΩrselleri e?ler; kalanlar iÔøΩin aile gÔøΩrselinden
+ * model kodlu PNG ÔøΩretir ve products.json (TR + tÔøΩm diller) gÔøΩnceller.
  *
  * node scripts/assign-product-model-images.mjs
  */
@@ -45,16 +45,16 @@ const MODEL_FILE_SLUG = {
   "Heron AV": "heron-av",
   "Heron H": "heron-h",
   "Dragonfly T": "dragonfly-t",
-  "Dragonfly TS": "dragonfly-ts",
+  "Dragonfly TS": "dragonfly-t",
   "Dragonfly C": "dragonfly-c",
   "Dragonfly R": "dragonfly-r",
-  "Dragonfly RV": "dragonfly-rv",
-  "Dragonfly TJF": "dragonfly-jar",
+  "Dragonfly RV": "",
+  "Dragonfly TJF": "dragonfly-tjf",
   "Dragonfly JR": "dragonfly-jr",
-  "Dragonfly JA": "dragonfly-jau",
+  "Dragonfly JA": "dragonfly-ja",
   "Dragonfly W": "dragonfly-w",
-  "Dragonfly WH": "dragonfly-wh",
-  "Dragonfly RH": "dragonfly-rh",
+  "Dragonfly WH": "",
+  "Dragonfly RH": "",
   "Dragonfly LPF": "dragonfly-lpf",
   "Owl RER": "owl-rer",
   "Owl R": "owl-rwa",
@@ -66,20 +66,19 @@ const MODEL_FILE_SLUG = {
   "Hummingbird NS EC": "hummingbird-ns-ec",
   "Hummingbird CARACAL DS EC": "caracal",
   "Hummingbird FOX D EC": "fox-d",
-  "Nautilus LPF": "nautilus-lfp",
-  "Nautilus MPF": "nautilus-mpf",
-  "Nautilus HPF": "nautilus-hpf",
+  "Nautilus LPF": "nautilus-lpf",
+  "Nautilus MPF": "",
+  "Nautilus HPF": "",
   "Nautilus SILENCE": "nautilus-silence",
-  Nautilus: "nautilus",
-  "Bear REB EX": "bear-reb",
-  "Bear RVS EX": "bear-rrv",
-  "Bear RHS EX": "bear-rrh",
+  "Bear REB EX": "bear-reb-ex",
+  "Bear RVS EX": "bear-rvs-ex",
+  "Bear RHS EX": "bear-rhs-ex",
   "Bear T": "bear-t",
   "Bear C": "bear-c",
   "Bear R": "bear-r",
   "Bear W": "bear-w",
-  "Bear LPF EX": "bear-lpf",
-  "Bear TB": "bear-tb",
+  "Bear LPF EX": "bear-lpf-ex",
+  "Bear TB": "marlin-b",
   "Bear BPA EX": "bear-bpa-ex",
   "Turtle B": "turtle-b",
   "Turtle BPA": "turtle-bpa",
@@ -95,7 +94,7 @@ const MODEL_FILE_SLUG = {
   "Marlin EMPTY": "marlin-empty",
   "Marlin S": "marlin-s",
   "Marlin B": "marlin-b",
-  "Marlin 2S": "marlin-2s",
+  "Marlin 2S": "",
   "Fox D": "fox-d",
   "Fox C": "fox-c",
   "Butterfly B": "butterfly-b",
@@ -132,7 +131,7 @@ function resolveDiskPath(slug, fileNames) {
   return null;
 }
 
-/** ùretimde kaynak gùrsel (slug yoksa) */
+/** ÔøΩretimde kaynak gÔøΩrsel (slug yoksa) */
 const GENERATION_BASE_SLUG = {
   "seahorse-rp": "banyo-fan-2",
   "heron-h": "heron-rv",
@@ -206,7 +205,7 @@ for (const leafKey of LEAF_KEYS) {
   if (!section?.models?.length) continue;
   const familyTitle = section.title;
 
-  // Ayn? gùrseli payla?an modelleri tespit et
+  // Ayn? gÔøΩrseli payla?an modelleri tespit et
   const byImage = new Map();
   for (const model of section.models) {
     if (!model.name || !model.image) continue;

@@ -362,7 +362,7 @@
       {
         "name": "ORCA COIL",
         "type": "Termal Batarya",
-        "image": "/images/products/elektrikli-isitici.png",
+        "image": "",
         "specFlow": "",
         "specPressure": "",
         "description": "Sıcak Su Bataryası; Soğuk su Bataryası; DX Batarya; Buhar Bataryası"
@@ -370,7 +370,7 @@
       {
         "name": "ORCA HX",
         "type": "Isı Eşanjörü",
-        "image": "/images/products/caracal.png",
+        "image": "",
         "specFlow": "",
         "specPressure": "",
         "description": "Rotary Tip Isı Geri Kazanım Modülü; Selülozik Reküparatör Modulü; Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı; Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
@@ -833,25 +833,25 @@
       {
         "name": "Seahorse AP",
         "type": "Aksiyal Plastik Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
+        "image": "/images/products/seahorse-ap.png",
         "description": "Aksiyal Plastik Banyo Fanı"
       },
       {
         "name": "Seahorse APS",
         "type": "Aksiyal Plastik Panjurlu Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
+        "image": "/images/products/seahorse-aps.png",
         "description": "Aksiyal Plastik Panjurlu Banyo Fanı"
       },
       {
         "name": "Seahorse APC",
         "type": "Aksiyal Plastik Kapaklı Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
+        "image": "/images/products/seahorse-apc.png",
         "description": "Aksiyal Plastik Kapaklı Banyo Fanı"
       },
       {
         "name": "Seahorse RP",
         "type": "Radyal Plastik Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
+        "image": "/images/products/banyo-fan-1.png|/images/products/seahorse-rp-2.png",
         "description": "Radyal Plastik Banyo Fanı"
       }
     ],
@@ -883,13 +883,13 @@
       {
         "name": "Heron RH",
         "type": "Radyal Yatay Atışlı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
+        "image": "/images/products/heron-rh.png",
         "description": "Radyal Yatay Atışlı Çatı Tipi Fan"
       },
       {
         "name": "Heron RHS",
         "type": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
+        "image": "/images/products/heron-rhs.png",
         "description": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan"
       },
       {
@@ -901,25 +901,25 @@
       {
         "name": "Heron RVS",
         "type": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
+        "image": "/images/products/heron-rvs.png",
         "description": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan"
       },
       {
         "name": "Heron AH",
         "type": "Aksiyal Yatay Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
+        "image": "/images/products/heron-ah.png",
         "description": "Aksiyal Yatay Çatı Tipi Fan"
       },
       {
         "name": "Heron AV",
         "type": "Aksiyal Dikey Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
+        "image": "",
         "description": "Aksiyal Dikey Çatı Tipi Fan"
       },
       {
         "name": "Heron H",
         "type": "Aksiyal Dikey Kapaklı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
+        "image": "",
         "description": "Aksiyal Dikey Kapaklı Çatı Tipi Fan"
       }
     ],
@@ -951,7 +951,7 @@
       {
         "name": "Hound MSD",
         "type": "Motorlu Şaft / Kat Duman Tahliye Damperi",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-msd.png",
         "description": "Motorlu Şaft / Kat Duman Tahliye Damperi"
       },
       {
@@ -963,7 +963,7 @@
       {
         "name": "Hound MSFD-B",
         "type": "Motorlu Duman Fan Damperi – Kelebek Tipi",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-msfd-b.png?v=2",
         "description": "Motorlu Duman Fan Damperi – Kelebek Tipi"
       },
       {
@@ -975,61 +975,61 @@
       {
         "name": "Hound SFD-R",
         "type": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-sfd-r.png?v=2",
         "description": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen"
       },
       {
         "name": "Hound RSFD-B",
         "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi",
-        "image": "/images/products/hound-al.png",
+        "image": "",
         "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi"
       },
       {
         "name": "Hound RSFD-DraIn-B",
         "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-rsfd-drain-b.png",
         "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi"
       },
       {
         "name": "Hound BD",
         "type": "By-Pass Damperi",
-        "image": "/images/products/hound-al.png",
+        "image": "",
         "description": "By-Pass Damperi"
       },
       {
         "name": "Hound FFD",
         "type": "Sigortalı Yangın Damperi",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-mfd.png",
         "description": "Sigortalı Yangın Damperi"
       },
       {
         "name": "Hound MFD",
         "type": "Motorlu Yangın Damperi",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-mfd.png",
         "description": "Motorlu Yangın Damperi"
       },
       {
         "name": "Hound RD",
         "type": "Tahliye Damperi (Relief)",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-rd.png",
         "description": "Tahliye Damperi (Relief)"
       },
       {
         "name": "Hound GS",
         "type": "Serbest Kanatlı Klape (Gravity)",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-gs.png?v=4",
         "description": "Serbest Kanatlı Klape (Gravity)"
       },
       {
         "name": "Hound NRD-B",
         "type": "Geri Dönüşsüz Damper – Kelebek",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-nrd-b.png",
         "description": "Geri Dönüşsüz Damper – Kelebek"
       },
       {
         "name": "Hound NRD-R",
         "type": "Geri Dönüşsüz Damper – Dikdörtgen",
-        "image": "/images/products/hound-al.png",
+        "image": "/images/products/hound-nrd-r.png",
         "description": "Geri Dönüşsüz Damper – Dikdörtgen"
       }
     ],
@@ -1067,7 +1067,7 @@
       {
         "name": "Dragonfly TS",
         "type": "Kısa Kovanlı Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "/images/products/dragonfly-t.jpg",
         "description": "Kısa Kovanlı Duman ve Isı Tahliye Fanı"
       },
       {
@@ -1085,13 +1085,13 @@
       {
         "name": "Dragonfly RV",
         "type": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "",
         "description": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı"
       },
       {
         "name": "Dragonfly TJF",
         "type": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "/images/products/dragonfly-tjf.png",
         "description": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı"
       },
       {
@@ -1103,31 +1103,31 @@
       {
         "name": "Dragonfly JA",
         "type": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "/images/products/dragonfly-ja.png",
         "description": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300"
       },
       {
         "name": "Dragonfly W",
         "type": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "/images/products/dragonfly-w.png",
         "description": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300"
       },
       {
         "name": "Dragonfly WH",
         "type": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "",
         "description": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300"
       },
       {
         "name": "Dragonfly RH",
         "type": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "",
         "description": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı"
       },
       {
         "name": "Dragonfly LPF",
         "type": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
+        "image": "/images/products/dragonfly-lpf.png",
         "description": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı"
       }
     ],
@@ -1165,13 +1165,13 @@
       {
         "name": "Owl R",
         "type": "Dikdörtgen Aksiyal Duvar Tipi Fan",
-        "image": "/images/products/owl-rer.png",
+        "image": "/images/products/owl-r.png",
         "description": "Dikdörtgen Aksiyal Duvar Tipi Fan"
       },
       {
         "name": "Owl H",
         "type": "Aksiyal Kapaklı Duvar Tipi Fan",
-        "image": "/images/products/owl-rer.png",
+        "image": "",
         "description": "Aksiyal Kapaklı Duvar Tipi Fan"
       }
     ],
@@ -1209,37 +1209,37 @@
       {
         "name": "Hummingbird RRV EC",
         "type": "Dikey Atışlı Çatı Tipi Radyal EC Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "image": "/images/products/hummingbird-rrv-ec.png",
         "description": "Dikey Atışlı Çatı Tipi Radyal EC Fan"
       },
       {
         "name": "Hummingbird RRH EC",
         "type": "Yatay Atışlı Çatı Tipi Radyal EC Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "image": "/images/products/hummingbird-rrh-ec.png",
         "description": "Yatay Atışlı Çatı Tipi Radyal EC Fan"
       },
       {
         "name": "Hummingbird CBP EC",
         "type": "Hücreli Tip Geriye Eğimli Plug EC Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "image": "/images/products/hummingbird-cbp-ec.png",
         "description": "Hücreli Tip Geriye Eğimli Plug EC Fan"
       },
       {
         "name": "Hummingbird NS EC",
         "type": "Çift Cidarlı Sessiz EC Salyangoz Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "image": "/images/products/hummingbird-ns-ec.png",
         "description": "Çift Cidarlı Sessiz EC Salyangoz Fan"
       },
       {
         "name": "Hummingbird CARACAL DS EC",
         "type": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "image": "/images/products/caracal.png",
         "description": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi"
       },
       {
         "name": "Hummingbird FOX D EC",
         "type": "Kanal Tipi EC Sığınak Havalandırma Fanı",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
+        "image": "/images/products/fox-d.png?v=3",
         "description": "Kanal Tipi EC Sığınak Havalandırma Fanı"
       }
     ],
@@ -1271,19 +1271,19 @@
       {
         "name": "Nautilus LPF",
         "type": "Alçak Basınçlı Endüstriyel Salyangoz Fan",
-        "image": "/images/products/nautilus-cif-cidarli.png",
+        "image": "/images/products/nautilus-lpf.png",
         "description": "Alçak Basınçlı Endüstriyel Salyangoz Fan"
       },
       {
         "name": "Nautilus MPF",
         "type": "Orta Basınçlı Endüstriyel Salyangoz Fan",
-        "image": "/images/products/nautilus-cif-cidarli.png",
+        "image": "",
         "description": "Orta Basınçlı Endüstriyel Salyangoz Fan"
       },
       {
         "name": "Nautilus HPF",
         "type": "Yüksek Basınçlı Endüstriyel Salyangoz Fan",
-        "image": "/images/products/nautilus-cif-cidarli.png",
+        "image": "",
         "description": "Yüksek Basınçlı Endüstriyel Salyangoz Fan"
       },
       {
@@ -1291,12 +1291,6 @@
         "type": "Sessiz Tip Endüstriyel Salyangoz Fan",
         "image": "/images/products/nautilus-cif-cidarli.png",
         "description": "Sessiz Tip Endüstriyel Salyangoz Fan"
-      },
-      {
-        "name": "Nautilus PARTS",
-        "type": "NAUTILUS ORTAK",
-        "image": "/images/products/nautilus-cif-cidarli.png",
-        "description": "NAUTILUS ORTAK"
       }
     ],
     "chrome": {
@@ -1327,61 +1321,61 @@
       {
         "name": "Bear REB EX",
         "type": "Ex-proof Dikdörtgen Kanal Fanı",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-reb-ex.png",
         "description": "Ex-proof Dikdörtgen Kanal Fanı"
       },
       {
         "name": "Bear RVS EX",
-        "type": "Ex-proof Dikey Radyal Atışlı Çatı Fanı",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Dikey Radyal Atışlı Çatı Fanı"
+        "type": "Ex-proof Dikey Atışlı Radyal Çatı Fanı",
+        "image": "/images/products/bear-rvs-ex.png?v=2",
+        "description": "Ex-proof Dikey Atışlı Radyal Çatı Fanı"
       },
       {
         "name": "Bear RHS EX",
         "type": "Ex-proof Yatay Atışlı Radyal Çatı Fanı",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-rhs-ex.png?v=2",
         "description": "Ex-proof Yatay Atışlı Radyal Çatı Fanı"
       },
       {
         "name": "Bear T",
         "type": "Ex-proof Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-t.png?v=2",
         "description": "Ex-proof Kovan Tipi Aksiyal Fan"
       },
       {
         "name": "Bear C",
         "type": "Ex-proof Aksiyal Hücreli Fan",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-c.png?v=2",
         "description": "Ex-proof Aksiyal Hücreli Fan"
       },
       {
         "name": "Bear R",
         "type": "Ex-proof  Yatay Atışlı Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-r.png?v=2",
         "description": "Ex-proof  Yatay Atışlı Aksiyal Fan"
       },
       {
         "name": "Bear W",
         "type": "Ex-proof Duvar Tipi Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-w.png?v=3",
         "description": "Ex-proof Duvar Tipi Aksiyal Fan"
       },
       {
         "name": "Bear LPF EX",
         "type": "Ex-proof  Salyangoz Fan",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-lpf-ex.png?v=3",
         "description": "Ex-proof  Salyangoz Fan"
       },
       {
         "name": "Bear TB",
         "type": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/marlin-b.png",
         "description": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan"
       },
       {
         "name": "Bear BPA EX",
         "type": "Ex-proof Radyal Hücreli Fan",
-        "image": "/images/products/bear-reb.png",
+        "image": "/images/products/bear-bpa-ex.png?v=2",
         "description": "Ex-proof Radyal Hücreli Fan"
       }
     ],
@@ -1515,31 +1509,31 @@
       {
         "name": "Turtle B",
         "type": "Geriye Eğik Kayış Kasnaklı Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
+        "image": "/images/products/turtle-b.png?v=2",
         "description": "Geriye Eğik Kayış Kasnaklı Hücreli Fan"
       },
       {
         "name": "Turtle BPA",
         "type": "Geriye Eğik Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
+        "image": "/images/products/turtle-bpa.png",
         "description": "Geriye Eğik Hücreli Fan"
       },
       {
         "name": "Turtle BP",
         "type": "Geri Eğik Plug Motorlu Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
+        "image": "/images/products/turtle-bp.png",
         "description": "Geri Eğik Plug Motorlu Hücreli Fan"
       },
       {
         "name": "Turtle F",
         "type": "Öne Eğik Kayış Kasnaklı Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
+        "image": "/images/products/turtle-f.png",
         "description": "Öne Eğik Kayış Kasnaklı Hücreli Fan"
       },
       {
         "name": "Turtle FP",
         "type": "Öne Eğik Plug Motorlu Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
+        "image": "",
         "description": "Öne Eğik Plug Motorlu Hücreli Fan"
       },
       {
@@ -1645,25 +1639,25 @@
       {
         "name": "Koi RB",
         "type": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan",
-        "image": "/images/products/koi-cb.png",
+        "image": "/images/products/koi-rb.png",
         "description": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan"
       },
       {
         "name": "Koi REB",
         "type": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan",
-        "image": "/images/products/koi-cb.png",
+        "image": "/images/products/koi-reb.png",
         "description": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan"
       },
       {
         "name": "Koi X",
         "type": "Karma Akışlı Kanal Fanı",
-        "image": "/images/products/koi-cb.png",
+        "image": "/images/products/koi-x.png",
         "description": "Karma Akışlı Kanal Fanı"
       },
       {
         "name": "Koi CP",
         "type": "Yuvarlak Aksiyal Plastik Kanal Fanı",
-        "image": "/images/products/koi-cb.png",
+        "image": "/images/products/koi-cp.png",
         "description": "Yuvarlak Aksiyal Plastik Kanal Fanı"
       }
     ],
@@ -1783,13 +1777,13 @@
       {
         "name": "Marlin B",
         "type": "Bifurkasyonlu Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/marlin.png",
+        "image": "/images/products/marlin-b.png",
         "description": "Bifurkasyonlu Kovan Tipi Aksiyal Fan"
       },
       {
         "name": "Marlin 2S",
         "type": "Seri Bağlantılı Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/marlin.png",
+        "image": "",
         "description": "Seri Bağlantılı Kovan Tipi Aksiyal Fan"
       }
     ],
@@ -1865,7 +1859,7 @@
       {
         "name": "Fox D",
         "type": "Kanal Tipi Sığınak Havalandırma Fanı",
-        "image": "/images/products/fox-c.png",
+        "image": "/images/products/fox-d.png?v=3",
         "description": "Kanal Tipi Sığınak Havalandırma Fanı"
       },
       {
@@ -2143,19 +2137,19 @@
       {
         "name": "Scallop ABF",
         "type": "Anti-Bakteriyel Filtre",
-        "image": "/images/products/cyclone.png",
+        "image": "/images/products/scallop-abf.png",
         "description": "Anti-Bakteriyel Filtre"
       },
       {
         "name": "Scallop CF",
         "type": "Karbon Filtre",
-        "image": "/images/products/cyclone.png",
+        "image": "/images/products/scallop-cf.png",
         "description": "Karbon Filtre"
       },
       {
         "name": "Scallop FF",
         "type": "Fiberglas Filtre",
-        "image": "/images/products/cyclone.png",
+        "image": "",
         "description": "Fiberglas Filtre"
       },
       {
@@ -2167,31 +2161,31 @@
       {
         "name": "Scallop MF",
         "type": "Metal Filtre",
-        "image": "/images/products/cyclone.png",
+        "image": "/images/products/scallop-mf.png",
         "description": "Metal Filtre"
       },
       {
         "name": "Scallop BF",
         "type": "Torba Filtre",
-        "image": "/images/products/cyclone.png",
+        "image": "/images/products/scallop-bf.png",
         "description": "Torba Filtre"
       },
       {
         "name": "Scallop HP",
         "type": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)",
-        "image": "/images/products/cyclone.png",
+        "image": "/images/products/scallop-hp.png",
         "description": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)"
       },
       {
         "name": "Scallop UF",
         "type": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)",
-        "image": "/images/products/cyclone.png",
+        "image": "",
         "description": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)"
       },
       {
         "name": "Scallop CCF",
         "type": "Silindirik Karbon Filtre",
-        "image": "/images/products/cyclone.png",
+        "image": "",
         "description": "Silindirik Karbon Filtre"
       }
     ],
@@ -2223,25 +2217,25 @@
       {
         "name": "Roo T1 NIP",
         "type": "Neopren Titreşim Yalıtım Pedi",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "image": "/images/products/roo-t1-nip.png",
         "description": "Neopren Titreşim Yalıtım Pedi"
       },
       {
         "name": "Roo T1 FIP",
         "type": "Fiberglas Titreşim Yalıtım Pedi",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "image": "/images/products/roo-t1-fip.png",
         "description": "Fiberglas Titreşim Yalıtım Pedi"
       },
       {
         "name": "Roo T2 NIM",
         "type": "Neopren Titreşim Yalıtım Takozu",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "image": "/images/products/roo-t2-nim.png",
         "description": "Neopren Titreşim Yalıtım Takozu"
       },
       {
         "name": "Roo T2 FIM",
         "type": "Fiberglas Titreşim Yalıtım Takozu",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "image": "/images/products/roo-t2-fim.png",
         "description": "Fiberglas Titreşim Yalıtım Takozu"
       },
       {
@@ -2253,13 +2247,13 @@
       {
         "name": "Roo T3 HNG-S",
         "type": "Yaylı Asma Tip İzolatör",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "image": "",
         "description": "Yaylı Asma Tip İzolatör"
       },
       {
         "name": "Roo T4 HSI",
         "type": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
+        "image": "",
         "description": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü"
       }
     ],
@@ -2403,25 +2397,25 @@
       {
         "name": "Sense DPS-PIPU",
         "type": "PI-PU Fark Basınç Sensörü",
-        "image": "/images/products/otomasyon-sensor.png",
+        "image": "/images/products/sense-dps-pipu.png",
         "description": "PI-PU Fark Basınç Sensörü"
       },
       {
         "name": "Sense DPS",
         "type": "Fark Basınç Anahtarı",
-        "image": "/images/products/otomasyon-sensor.png",
+        "image": "/images/products/sense-dps.png?v=2",
         "description": "Fark Basınç Anahtarı"
       },
       {
         "name": "Sense TS",
         "type": "Sıcaklık Sensörü",
-        "image": "/images/products/otomasyon-sensor.png",
+        "image": "/images/products/sense-ts.png",
         "description": "Sıcaklık Sensörü"
       },
       {
         "name": "Sense HS",
         "type": "Isı Sensörü",
-        "image": "/images/products/otomasyon-sensor.png",
+        "image": "/images/products/sense-hs.png",
         "description": "Isı Sensörü"
       },
       {
@@ -2669,7 +2663,7 @@
       {
         "name": "Elektrikli Isıtıcı EH-C",
         "type": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı",
-        "image": "/images/products/elektrikli-isitici.png",
+        "image": "",
         "description": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı"
       }
     ],
@@ -2701,25 +2695,25 @@
       {
         "name": "Termal Batarya HW",
         "type": "Sıcak Su Bataryası",
-        "image": "/images/products/elektrikli-isitici.png",
+        "image": "",
         "description": "Sıcak Su Bataryası"
       },
       {
         "name": "Termal Batarya CW",
         "type": "Soğuk su Bataryası",
-        "image": "/images/products/elektrikli-isitici.png",
+        "image": "",
         "description": "Soğuk su Bataryası"
       },
       {
         "name": "Termal Batarya DX D",
         "type": "DX Batarya",
-        "image": "/images/products/elektrikli-isitici.png",
+        "image": "",
         "description": "DX Batarya"
       },
       {
         "name": "Termal Batarya ST",
         "type": "Buhar Bataryası",
-        "image": "/images/products/elektrikli-isitici.png",
+        "image": "",
         "description": "Buhar Bataryası"
       }
     ],
@@ -2751,25 +2745,25 @@
       {
         "name": "Isı Eşanjörü R",
         "type": "Rotary Tip Isı Geri Kazanım Modülü",
-        "image": "/images/products/caracal.png",
+        "image": "",
         "description": "Rotary Tip Isı Geri Kazanım Modülü"
       },
       {
         "name": "Isı Eşanjörü C",
         "type": "Selülozik Reküparatör Modulü",
-        "image": "/images/products/caracal.png",
+        "image": "",
         "description": "Selülozik Reküparatör Modulü"
       },
       {
         "name": "Isı Eşanjörü AR-R",
         "type": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı",
-        "image": "/images/products/caracal.png",
+        "image": "",
         "description": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı"
       },
       {
         "name": "Isı Eşanjörü AR-H",
         "type": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)",
-        "image": "/images/products/caracal.png",
+        "image": "",
         "description": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
       }
     ],
@@ -2801,19 +2795,19 @@
       {
         "name": "Remora SF",
         "type": "Yatay Bağlantı Ayağı",
-        "image": "/images/products/remora-sf.png",
+        "image": "/images/products/remora-sf.png?v=2",
         "description": "Yatay Bağlantı Ayağı"
       },
       {
         "name": "Remora VSF",
         "type": "Dikey Bağlantı Ayağı",
-        "image": "/images/products/remora-sf.png",
+        "image": "/images/products/remora-vsf.png",
         "description": "Dikey Bağlantı Ayağı"
       },
       {
         "name": "Remora FJ",
         "type": "Esnek Bağlantı",
-        "image": "/images/products/remora-fj.png",
+        "image": "/images/products/remora-fj.png?v=2",
         "description": "Esnek Bağlantı"
       },
       {
@@ -2825,7 +2819,7 @@
       {
         "name": "Remora FJCF",
         "type": "Esnek Bağlantılı Tekli Karşı Flanş",
-        "image": "/images/products/remora-fj.png",
+        "image": "/images/products/remora-fjcf.png?v=2",
         "description": "Esnek Bağlantılı Tekli Karşı Flanş"
       },
       {
@@ -2837,7 +2831,7 @@
       {
         "name": "Remora FJCF-F400",
         "type": "F400 Esnek Bağlantılı Tekli Karşı Flanş",
-        "image": "/images/products/remora-fj.png",
+        "image": "/images/products/remora-fjcf.png?v=2",
         "description": "F400 Esnek Bağlantılı Tekli Karşı Flanş"
       },
       {
@@ -2849,43 +2843,43 @@
       {
         "name": "Remora R-FJCF",
         "type": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş",
-        "image": "/images/products/remora-fj.png",
+        "image": "/images/products/remora-r-fjcf.png?v=2",
         "description": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş"
       },
       {
         "name": "Remora R-FJ2CF",
         "type": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş",
-        "image": "/images/products/remora-fj2f.png",
+        "image": "/images/products/remora-r-fj2cf.png",
         "description": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş"
       },
       {
         "name": "Remora PM",
         "type": "Tel Kafes (Koruma Kafesi)",
-        "image": "/images/products/remora-pm.png",
+        "image": "/images/products/remora-pm.png?v=3",
         "description": "Tel Kafes (Koruma Kafesi)"
       },
       {
         "name": "Remora IC",
         "type": "Giriş Konisi",
-        "image": "/images/products/remora-ic.png",
+        "image": "/images/products/remora-ic.png?v=3",
         "description": "Giriş Konisi"
       },
       {
         "name": "Remora IH",
         "type": "Kovan Tipi Fan Denetim Kapağı",
-        "image": "/images/products/remora-ic.png",
+        "image": "",
         "description": "Kovan Tipi Fan Denetim Kapağı"
       },
       {
         "name": "Remora S",
         "type": "Silindirik Susturucu",
-        "image": "/images/products/remora-s.png",
+        "image": "/images/products/remora-s.png?v=2",
         "description": "Silindirik Susturucu"
       },
       {
         "name": "Remora SP",
         "type": "Podlu Silindirik Susturucu",
-        "image": "/images/products/remora-s.png",
+        "image": "/images/products/remora-sp.png",
         "description": "Podlu Silindirik Susturucu"
       },
       {
@@ -2897,13 +2891,13 @@
       {
         "name": "Remora RED",
         "type": "Redüksiyon",
-        "image": "/images/products/remora-red.png",
+        "image": "",
         "description": "Redüksiyon"
       },
       {
         "name": "Remora SS",
         "type": "Soket Susturucu",
-        "image": "/images/products/remora-ss.png",
+        "image": "/images/products/remora-ss.png?v=2",
         "description": "Soket Susturucu"
       }
     ],

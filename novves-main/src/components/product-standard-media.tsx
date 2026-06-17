@@ -37,7 +37,6 @@ export function productImageNeedsMultiply(src: string): boolean {
       /bear-reb\.png$/i.test(pathOnly) ||
       /heron-rv\.png$/i.test(pathOnly) ||
       /banyo-fan-1\.png$/i.test(pathOnly) ||
-      /fox-c\.png$/i.test(pathOnly) ||
       /chicken\.png$/i.test(pathOnly) ||
       /elephant\.png$/i.test(pathOnly) ||
       /chiller\.png$/i.test(pathOnly) ||
@@ -94,6 +93,20 @@ export function ProductStandardMedia({
   const usePngSource = isCatalogProductPng(currentSrc);
   const aspectClass = aspect === "none" ? "relative min-h-[12rem] w-full" : `relative ${ASPECT_CLASS[aspect]} w-full`;
   const canvasBg = backgroundColor ?? PRODUCT_STANDARD_MEDIA_BG;
+
+  if (!src?.trim()) {
+    const emptyAspectClass =
+      aspect === "none" ? "relative min-h-[12rem] w-full" : `relative ${ASPECT_CLASS[aspect]} w-full`;
+    return (
+      <div
+        className={`${emptyAspectClass} overflow-hidden rounded-xl ring-1 ring-inset ring-ink/[0.06] ${containerClassName} ${className}`}
+        style={{ backgroundColor: canvasBg }}
+      >
+        {children}
+      </div>
+    );
+  }
+
   const skeleton = (
     <div
       className={`pointer-events-none absolute inset-0 overflow-hidden transition-opacity duration-500 ${

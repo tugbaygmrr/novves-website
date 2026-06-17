@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -39,9 +39,9 @@ const FAMILY_IMAGES = {
   HAWK: "/images/products/otomasyon-pano.png",
   PLC: "/images/products/otomasyon-plc.png",
   LION: "/images/products/frekans-inventoru.png",
-  "ORCA COIL": "/images/products/elektrikli-isitici.png",
+  "ORCA COIL": "",
   "ORCA HEATER": "/images/products/elektrikli-isitici.png",
-  "ORCA HX": "/images/products/caracal.png",
+  "ORCA HX": "",
 };
 
 const MODEL_FAMILY_TO_LEAF = {
@@ -78,35 +78,130 @@ const MODEL_FAMILY_TO_LEAF = {
 
 const INTRO_ONLY_LEAVES = new Set(["klimaSantralleri", "havuzNemAlmaSantrali"]);
 
+/** Excel satiri var ama katalogda gosterilmez */
+const EXCLUDED_MODEL_SUBCODES = new Set(["NAUTILUS PARTS"]);
+
 const EXISTING_MODEL_IMAGES = {
   "dumanIsiTahliyeFanlari|Dragonfly T": "/images/products/dragonfly-t.jpg",
+  "dumanIsiTahliyeFanlari|Dragonfly TS": "/images/products/dragonfly-t.jpg",
+  "dumanIsiTahliyeFanlari|Dragonfly RV": "",
+  "dumanIsiTahliyeFanlari|Dragonfly TJF": "/images/products/dragonfly-tjf.png",
+  "dumanIsiTahliyeFanlari|Dragonfly JA": "/images/products/dragonfly-ja.png",
+  "dumanIsiTahliyeFanlari|Dragonfly W": "/images/products/dragonfly-w.png",
+  "dumanIsiTahliyeFanlari|Dragonfly WH": "",
+  "dumanIsiTahliyeFanlari|Dragonfly RH": "",
+  "dumanIsiTahliyeFanlari|Dragonfly LPF": "/images/products/dragonfly-lpf.png",
   "dumanIsiTahliyeFanlari|Dragonfly R": "/images/products/dragonfly-r.jpg",
   "dumanIsiTahliyeFanlari|Dragonfly C": "/images/products/dragonfly-c.png?v=3",
   "dumanIsiTahliyeFanlari|Dragonfly JR": "/images/products/dragonfly-jr.jpg",
   "damperler|Hound SD M24": "/images/products/hound-sd-m24.jpg",
   "damperler|Hound AL": "/images/products/hound-al.png",
   "damperler|Hound CRD": "/images/products/hound-crd.jpg",
+  "damperler|Hound MSD": "/images/products/hound-msd.png",
+  "damperler|Hound MSFD-B": "/images/products/hound-msfd-b.png?v=2",
+  "damperler|Hound SFD-R": "/images/products/hound-sfd-r.png?v=2",
+  "damperler|Hound RSFD-B": "",
+  "damperler|Hound RSFD-DraIn-B": "/images/products/hound-rsfd-drain-b.png",
+  "damperler|Hound BD": "",
+  "damperler|Hound RD": "/images/products/hound-rd.png",
+  "damperler|Hound MFD": "/images/products/hound-mfd.png",
+  "damperler|Hound FFD": "/images/products/hound-mfd.png",
+  "damperler|Hound GS": "/images/products/hound-gs.png?v=4",
+  "damperler|Hound NRD-B": "/images/products/hound-nrd-b.png",
+  "damperler|Hound NRD-R": "/images/products/hound-nrd-r.png",
+  "kovanTipiAksiyalFanlar|Marlin 2S": "",
+  "kovanTipiAksiyalFanlar|Marlin B": "/images/products/marlin-b.png",
+  "exproofFanlar|Bear REB EX": "/images/products/bear-reb-ex.png",
+  "exproofFanlar|Bear RVS EX": "/images/products/bear-rvs-ex.png?v=2",
+  "exproofFanlar|Bear RHS EX": "/images/products/bear-rhs-ex.png?v=2",
+  "exproofFanlar|Bear T": "/images/products/bear-t.png?v=2",
+  "exproofFanlar|Bear C": "/images/products/bear-c.png?v=2",
+  "exproofFanlar|Bear R": "/images/products/bear-r.png?v=2",
+  "exproofFanlar|Bear W": "/images/products/bear-w.png?v=3",
+  "exproofFanlar|Bear LPF EX": "/images/products/bear-lpf-ex.png?v=3",
+  "exproofFanlar|Bear TB": "/images/products/marlin-b.png",
+  "exproofFanlar|Bear BPA EX": "/images/products/bear-bpa-ex.png?v=2",
+  "endustriyelFanlar|Nautilus LPF": "/images/products/nautilus-lpf.png",
+  "endustriyelFanlar|Nautilus MPF": "",
+  "endustriyelFanlar|Nautilus HPF": "",
+  "ecFanlar|Hummingbird RRV EC": "/images/products/hummingbird-rrv-ec.png",
+  "ecFanlar|Hummingbird RRH EC": "/images/products/hummingbird-rrh-ec.png",
+  "ecFanlar|Hummingbird CBP EC": "/images/products/hummingbird-cbp-ec.png",
+  "ecFanlar|Hummingbird NS EC": "/images/products/hummingbird-ns-ec.png",
+  "ecFanlar|Hummingbird CARACAL DS EC": "/images/products/caracal.png",
+  "ecFanlar|Hummingbird FOX D EC": "/images/products/fox-d.png?v=3",
+  "catiFanlari|Heron RH": "/images/products/heron-rh.png",
+  "catiFanlari|Heron RHS": "/images/products/heron-rhs.png",
+  "catiFanlari|Heron RV": "/images/products/heron-rv.png",
+  "catiFanlari|Heron RVS": "/images/products/heron-rvs.png",
+  "catiFanlari|Heron AH": "/images/products/heron-ah.png",
+  "catiFanlari|Heron AV": "",
+  "catiFanlari|Heron H": "",
+  "duvarTipiFanlar|Owl H": "",
+  "duvarTipiFanlar|Owl R": "/images/products/owl-r.png",
+  "banyoFanlari|Seahorse AP": "/images/products/seahorse-ap.png",
+  "banyoFanlari|Seahorse APS": "/images/products/seahorse-aps.png",
+  "banyoFanlari|Seahorse APC": "/images/products/seahorse-apc.png",
+  "banyoFanlari|Seahorse RP": "/images/products/banyo-fan-1.png|/images/products/seahorse-rp-2.png",
+  "kanalFanlari|Koi RB": "/images/products/koi-rb.png",
+  "kanalFanlari|Koi REB": "/images/products/koi-reb.png",
+  "kanalFanlari|Koi X": "/images/products/koi-x.png",
+  "kanalFanlari|Koi CP": "/images/products/koi-cp.png",
+  "hucreliFanlar|Turtle BPA": "/images/products/turtle-bpa.png",
+  "hucreliFanlar|Turtle B": "/images/products/turtle-b.png?v=2",
+  "hucreliFanlar|Turtle BP": "/images/products/turtle-bp.png",
+  "hucreliFanlar|Turtle F": "/images/products/turtle-f.png",
+  "hucreliFanlar|Turtle FP": "",
+  "siginakFanlari|Fox C": "/images/products/fox-c.png",
+  "siginakFanlari|Fox D": "/images/products/fox-d.png?v=3",
+  "elektrikliIsitici|Elektrikli Isıtıcı EH-C": "",
+  "suluIsitici|Termal Batarya HW": "",
+  "suluIsitici|Termal Batarya CW": "",
+  "suluIsitici|Termal Batarya DX D": "",
+  "suluIsitici|Termal Batarya ST": "",
+  "orcaHx|Isı Eşanjörü R": "",
+  "orcaHx|Isı Eşanjörü C": "",
+  "orcaHx|Isı Eşanjörü AR-R": "",
+  "orcaHx|Isı Eşanjörü AR-H": "",
+  "titresimIzolatorleri|Roo T1 NIP": "/images/products/roo-t1-nip.png",
+  "titresimIzolatorleri|Roo T1 FIP": "/images/products/roo-t1-fip.png",
+  "titresimIzolatorleri|Roo T2 NIM": "/images/products/roo-t2-nim.png",
+  "titresimIzolatorleri|Roo T2 FIM": "/images/products/roo-t2-fim.png",
+  "titresimIzolatorleri|Roo T3 HNG-S": "",
+  "titresimIzolatorleri|Roo T4 HSI": "",
+  "filtreler|Scallop BF": "/images/products/scallop-bf.png",
+  "filtreler|Scallop CF": "/images/products/scallop-cf.png",
+  "filtreler|Scallop FF": "",
+  "filtreler|Scallop ABF": "/images/products/scallop-abf.png",
+  "filtreler|Scallop MF": "/images/products/scallop-mf.png",
+  "filtreler|Scallop HP": "/images/products/scallop-hp.png",
+  "filtreler|Scallop UF": "",
+  "filtreler|Scallop CCF": "",
+  "sensorler|Sense DPS-PIPU": "/images/products/sense-dps-pipu.png",
+  "sensorler|Sense DPS": "/images/products/sense-dps.png?v=2",
+  "sensorler|Sense TS": "/images/products/sense-ts.png",
+  "sensorler|Sense HS": "/images/products/sense-hs.png",
 };
 
 const REMORA_MODEL_IMAGES = {
-  "REMORA SF": "/images/products/remora-sf.png",
-  "REMORA VSF": "/images/products/remora-sf.png",
-  "REMORA FJ": "/images/products/remora-fj.png",
+  "REMORA SF": "/images/products/remora-sf.png?v=2",
+  "REMORA VSF": "/images/products/remora-vsf.png",
+  "REMORA FJ": "/images/products/remora-fj.png?v=2",
   "REMORA CF": "/images/products/remora-cf.png",
-  "REMORA FJCF": "/images/products/remora-fj.png",
+  "REMORA FJCF": "/images/products/remora-fjcf.png?v=2",
   "REMORA FJ2CF": "/images/products/remora-fj2f.png",
-  "REMORA FJCF-F400": "/images/products/remora-fj.png",
+  "REMORA FJCF-F400": "/images/products/remora-fjcf.png?v=2",
   "REMORA FJ2CF-F400": "/images/products/remora-fj2f.png",
-  "REMORA R-FJCF": "/images/products/remora-fj.png",
-  "REMORA R-FJ2CF": "/images/products/remora-fj2f.png",
-  "REMORA PM": "/images/products/remora-pm.png",
-  "REMORA IC": "/images/products/remora-ic.png",
-  "REMORA IH": "/images/products/remora-ic.png",
-  "REMORA S": "/images/products/remora-s.png",
-  "REMORA SP": "/images/products/remora-s.png",
+  "REMORA R-FJCF": "/images/products/remora-r-fjcf.png?v=2",
+  "REMORA R-FJ2CF": "/images/products/remora-r-fj2cf.png",
+  "REMORA PM": "/images/products/remora-pm.png?v=3",
+  "REMORA IC": "/images/products/remora-ic.png?v=3",
+  "REMORA IH": "",
+  "REMORA S": "/images/products/remora-s.png?v=2",
+  "REMORA SP": "/images/products/remora-sp.png",
   "REMORA RS": "/images/products/remora-rs.png",
-  "REMORA RED": "/images/products/remora-red.png",
-  "REMORA SS": "/images/products/remora-ss.png",
+  "REMORA RED": "",
+  "REMORA SS": "/images/products/remora-ss.png?v=2",
 };
 
 const FANI = "\u0131";
@@ -173,7 +268,9 @@ function modelDisplayName(familyEn, productCode, subCode, familyCode) {
 }
 
 function buildProductLines(modelFamilyKey, leafKey, familyByCode, modelRows, imageMap) {
-  return modelRows.map((row) => {
+  return modelRows
+    .filter((row) => !EXCLUDED_MODEL_SUBCODES.has((row.subCode || "").toUpperCase().replace(/\s+/g, " ")))
+    .map((row) => {
     const rowFamilyKey = row.familyCode || modelFamilyKey;
     const familyEn = familyEnForModelFamily(rowFamilyKey, familyByCode, [row]);
     const name = modelDisplayName(familyEn, row.productCode, row.subCode, rowFamilyKey);
@@ -188,7 +285,7 @@ function buildProductLines(modelFamilyKey, leafKey, familyByCode, modelRows, ima
 
 function guessImage(leafKey, modelName, familyCode, imageMap, subCode) {
   const key = `${leafKey}|${modelName}`;
-  if (EXISTING_MODEL_IMAGES[key]) return EXISTING_MODEL_IMAGES[key];
+  if (key in EXISTING_MODEL_IMAGES) return EXISTING_MODEL_IMAGES[key];
   if (leafKey === "remoraAksesuarlari" && subCode && REMORA_MODEL_IMAGES[subCode]) {
     return REMORA_MODEL_IMAGES[subCode];
   }

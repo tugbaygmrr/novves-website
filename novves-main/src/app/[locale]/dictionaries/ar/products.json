@@ -58,1368 +58,1362 @@
     }
   },
   "havaHareketi": {
-    "title": "Hava Hareketi",
-    "titleFirst": "Hava",
-    "titleHighlight": "Hareketi",
-    "heroDesc": "Endüstriyel ve konfor havalandırma ihtiyaçlarınız için",
-    "heroDescSuffix": "ürün ailesi.",
+    "title": "حركة الهواء",
+    "titleFirst": "هواء",
+    "titleHighlight": "الحركة",
+    "heroDesc": "لاحتياجات التهوية الصناعية والراحة الخاصة بك",
+    "heroDescSuffix": "عائلة المنتج.",
     "stats": [
       {
         "value": "1.200+",
-        "label": "Ürün Çeşidi"
+        "label": "نوع المنتج"
       },
       {
         "value": "12",
-        "label": "Ürün Ailesi"
+        "label": "عائلة المنتج"
       },
       {
         "value": "EN 12101-3",
-        "label": "Sertifikalı"
+        "label": "معتمد"
       },
       {
         "value": "F300/2H",
-        "label": "Yangın Dayanımı"
+        "label": "مقاومة الحريق"
       }
     ],
     "products": [
       {
         "name": "DRAGONFLY",
-        "type": "Duman ve Isı Tahliye Fanı",
+        "type": "مروحة إخلاء الدخان والحرارة",
         "image": "/images/products/dragonfly-c.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Yusufçuk gibi çevik ve kararlı biçimde hareket eden bu fanlar, yangın anında oluşan dumanı ve ısıyı hızla tahliye ederek ortamın güvenliğini sağlar. Sessizliği ve ani tepki kapasitesiyle tam zamanında devreye girer."
+        "description": "هذه المراوح، التي تتحرك بخفة وحزم مثل اليعسوب، تضمن سلامة البيئة من خلال إخلاء الدخان والحرارة المتولدة بسرعة في حالة نشوب حريق. يتم تشغيله في الوقت المناسب بفضل صمته وقدرته على الاستجابة الفورية."
       },
       {
         "name": "MARLIN",
-        "type": "Aksiyal Fanlar",
+        "type": "مراوح محورية",
         "image": "/images/products/marlin.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Marlin gibi kararlı, güçlü ve yönlü çalışan bu fanlar, doğrudan hava akışı sağlamak için tasarlanmıştır. Minimum dirençle maksimum debi sunar; geniş alanlarda yüksek verimli havalandırma sağlar."
+        "description": "تم تصميم هذه المراوح، المستقرة والقوية والموجهة، مثل Marlin، لتوفير تدفق هواء مباشر. يوفر أقصى تدفق مع الحد الأدنى من المقاومة؛ يوفر تهوية عالية الكفاءة في المساحات الكبيرة."
       },
       {
         "name": "BEAR",
-        "type": "Ex-proof Fanlar",
+        "type": "المشجعين السابقين",
         "image": "/images/products/bear-reb.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Ayı gibi güçlü, dayanıklı ve her koşulda güvenle çalışan bu fanlar, tehlikeli ve patlayıcı ortamlarda yüksek koruma sağlar. Güvenliğin ön planda olduğu alanlarda, sarsılmaz bir güven sunar."
+        "description": "توفر هذه المراوح القوية والمتينة والتي تعمل بأمان في جميع الظروف حماية عالية في البيئات الخطرة والمتفجرة. إنه يوفر ثقة لا تتزعزع في المناطق التي يكون فيها الأمن في المقدمة."
       },
       {
         "name": "NAUTILUS",
-        "type": "Endüstriyel Salyangoz Fanlar",
+        "type": "مراوح الحلزون الصناعية",
         "image": "/images/products/nautilus-cif-cidarli.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Salyangoz gibi spiral formu sayesinde yüksek basınçla hava yönlendirmesi yapan bu fanlar, endüstriyel ortamlarda güçlü ve dengeli hava tahliyesi sağlar. Nautilus’un iç yapısındaki doğa harikası düzen, mühendisliğimizin temel ilhamıdır."
+        "description": "توفر هذه المراوح، التي توجه الهواء عند الضغط العالي بفضل شكلها الحلزوني الذي يشبه الحلزون، تفريغًا قويًا ومتوازنًا للهواء في البيئات الصناعية. إن الترتيب الرائع في الهيكل الداخلي لـ Nautilus هو مصدر الإلهام الرئيسي لهندستنا."
       },
       {
         "name": "HUMMINGBIRD",
-        "type": "EC Fanlar",
+        "type": "مراوح المفوضية الأوروبية",
         "image": "/images/products/hummingbird-drb-ec.jpg",
         "specFlow": "",
         "specPressure": "",
-        "description": "Sinek kuşu gibi küçük boyutuna rağmen olağanüstü verimli ve hassas çalışan bu fanlar, enerji tasarrufu ve sessiz çalışma gerektiren sistemler için idealdir. Hızlı tepki kabiliyeti ve akıllı kontrolü ile sisteminizi bir doğa harikası gibi dengeler."
+        "description": "على الرغم من صغر حجمها الذي يشبه الطائر الطنان، إلا أن هذه المراوح تتسم بالكفاءة والحساسية للغاية، كما أنها مثالية للأنظمة التي تتطلب توفير الطاقة والتشغيل الهادئ. فهو يوازن نظامك وكأنه أحد عجائب الطبيعة من خلال قدرته على الاستجابة السريعة والتحكم الذكي."
       },
       {
         "name": "HERON",
-        "type": "Çatı Fanları",
+        "type": "مراوح السقف",
         "image": "/images/products/heron-rv.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Balıkçıl gibi yükseklerde konumlanan çatı fanları, sistemin genel havasını dengede tutar. Sessiz, dengeli ve sürekli devinim içinde olmayan yapısıyla gerektiğinde devreye girerek maksimum etki sağlar. Duruşuyla bile sistemi yukarıdan kontrol eder."
+        "description": "تحافظ مراوح السقف الموضوعة على ارتفاعات عالية، مثل مراوح مالك الحزين، على توازن الهواء العام للنظام. بفضل بنيته الهادئة والمتوازنة وغير المستمرة، فإنه ينشط عند الضرورة ويوفر أقصى قدر من التأثير. وحتى بموقفه فهو يسيطر على النظام من فوق."
       },
       {
         "name": "OWL",
-        "type": "Duvar Fanları",
+        "type": "مراوح الحائط",
         "image": "/images/products/owl-rer.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Baykuş gibi duvarlara sabitlenmiş bir gözetleyici gibi çalışan bu fanlar, yüksekten ve geniş açıyla güçlü hava tahliyesi yapar. Her an tetikte, çevresine hâkimdir; yönlendirdiği hava akımıyla ortamı hızla dönüştürür. Baykuş gibi odaklanmış, etkili ve alan üzerinde kontrol sahibidir."
+        "description": "تعمل هذه المراوح كمراقب مثل البومة المثبتة على الجدران، وتقوم بتفريغ هواء قوي من الأعلى وبزاوية واسعة. إنه دائمًا يقظ ومسيطر على محيطه. إنه يحول البيئة بسرعة من خلال تدفق الهواء الذي يوجهه. مثل البومة، فهو مركز وفعال ويسيطر على المنطقة."
       },
       {
         "name": "SEAHORSE",
-        "type": "Banyo Fanları",
+        "type": "مراوح الحمام",
         "image": "/images/products/banyo-fan-1.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Denizatı gibi küçük alanlara ustalıkla uyum sağlayan bu fanlar, banyolarda fazla yer kaplamadan etkili tahliye sağlar. Dengeli, zarif ve kontrollü çalışmasıyla nemi ve kokuyu ortamdan uzaklaştırırken, varlığıyla değil işleviyle hissedilir. Kompakt ama işlevsel bir çözüm sunar."
+        "description": "توفر هذه المراوح، التي تتكيف بمهارة مع المساحات الصغيرة مثل فرس البحر، عملية إخلاء فعالة دون أن تشغل مساحة كبيرة في الحمامات. في حين أنه يزيل الرطوبة والرائحة من البيئة من خلال تشغيله المتوازن والأنيق والمتحكم فيه، إلا أنه لا يتم الشعور به من خلال وجوده ولكن من خلال وظيفته. إنه يقدم حلاً مدمجًا ولكنه عملي."
       },
       {
         "name": "KOI",
-        "type": "Kanal Fanları",
+        "type": "مراوح القناة",
         "image": "/images/products/koi-cb.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Koi balığı gibi yönünü kaybetmeden kanal içinde akışı sürdürür. Bu fanlar,  kanal sistemleri boyunca istikrarlı hava hareketi sağlayarak sistemin sürekliliğini ve dengesini korur. Zarif ama güçlü bir taşıyıcıdır; tıpkı bir Koi’nin suyu huzurla yarması gibi."
+        "description": "ويواصل التدفق في القناة دون أن يفقد اتجاهه، مثل سمكة الكوي. تحافظ هذه المراوح على استمرارية النظام واستقراره من خلال توفير حركة هواء متسقة عبر أنظمة مجاري الهواء. إنها حاملة أنيقة لكنها قوية؛ تمامًا مثل كوي الذي يقسم الماء بسلام."
       },
       {
         "name": "TURTLE",
-        "type": "Hücreli Fanlar",
+        "type": "مراوح الجوال",
         "image": "/images/products/turtle-a.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Kaplumbağa gibi sağlam bir dış gövdeye ve korunaklı iç yapıya sahip hücreli fanlar, sistemin kalbinde uzun yıllar boyunca güvenle çalışır. Her bir hücre, görevini kaplumbağanın kabuğundaki desen kadar düzenli ve dirençli şekilde yerine getirir. Dış etkilere karşı güçlü, içte ise daima hazırdır."
+        "description": "المراوح الخلوية، التي لها جسم خارجي صلب وبنية داخلية محمية مثل السلحفاة، تعمل بأمان في قلب النظام لسنوات عديدة. تؤدي كل خلية واجبها بشكل منتظم ومرن مثل النموذج الموجود على قوقعة السلحفاة. إنه قوي ضد التأثيرات الخارجية وجاهز دائمًا داخليًا."
       },
       {
         "name": "BUTTERFLY",
-        "type": "Mutfak Fanları",
+        "type": "مراوح المطبخ",
         "image": "/images/products/butterfly-b.jpg",
         "specFlow": "",
         "specPressure": "",
-        "description": "Kelebek gibi narin görünen ama her kanat çırpışında çevresine yön veren bu fanlar, mutfağın kalbinde kokuyu, buharı ve dumanı zarifçe süpürüp uzaklaştırır. Tıpkı bir kelebeğin çiçekten havalanıp ortamdaki havayı değiştirmesi gibi, bu fan da mutfağı ferah ve yaşanabilir tutar. Sessizce yaklaşmaz, doğrudan etki eder — mutfağın görünmeyen ama vazgeçilmez kanat gücüdür."
+        "description": "هذه المراوح، التي تبدو حساسة مثل الفراشات ولكنها توجه محيطها مع كل رفرفة من أجنحتها، تكتسح الروائح والبخار والدخان بشكل أنيق في قلب المطبخ. تمامًا مثل الفراشة التي تنطلق من الزهرة وتغير الهواء في البيئة، تحافظ هذه المروحة على المطبخ فسيحًا وصالحًا للعيش. إنه لا يقترب بصمت، بل يعمل بشكل مباشر - قوة الجناح غير المرئية ولكن التي لا غنى عنها للمطبخ."
       },
       {
         "name": "FOX",
-        "type": "Sığınak Fanları",
+        "type": "عشاق المأوى",
         "image": "/images/products/fox-c.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Tilki gibi tehlikeyi sezdiğinde anında pozisyon alan bu fanlar, sığınaklarda hayati hava döngüsünü sürdürür. Dar hacimlerde etkili hava yönetimiyle içerideki yaşamı korur, dış ortamdan gelebilecek tehditleri filtreler. Zekice konumlanır, stratejik çalışır ve görünmeden korur — sığınağın sessiz bekçisidir."
+        "description": "هذه المراوح، التي تتخذ موقعها على الفور عندما تشعر بالخطر، مثل الثعالب، تحافظ على دورة الهواء الحيوية في الملاجئ. إنه يحمي الحياة في الداخل من خلال الإدارة الفعالة للهواء بأحجام ضيقة ويقوم بتصفية التهديدات التي قد تأتي من البيئة الخارجية. إنه يتخذ مواقعه بذكاء، ويعمل بشكل استراتيجي، ويحمي الغيب - الحارس الصامت للحرم."
       },
       {
         "name": "CHICKEN",
-        "type": "Tavukçu Fanı",
+        "type": "مروحة الدجاج",
         "image": "/images/products/chicken.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Tavuk gibi hassas yaşam alanlarında görev yapan bu fanlar, ortam havasını sürekli taze tutar, ısıyı dengeler ve zararlı gazların birikmesini önler. Kümesin her köşesine can verir, üretimin sağlığını ve verimliliğini doğrudan etkiler. Sessiz değil, sadık bir koruyucu gibi çalışır; tavukların konforu, bu fanın sorumluluğundadır."
+        "description": "هذه المراوح التي تعمل في مناطق المعيشة الحساسة مثل الدجاج، تحافظ على الهواء المحيط نقيًا باستمرار، وتوازن درجة الحرارة وتمنع تراكم الغازات الضارة. إنه يعطي الحياة لكل ركن من أركان حظيرة الدجاج ويؤثر بشكل مباشر على صحة وكفاءة الإنتاج. إنه لا يعمل بصمت، بل كحامي مخلص؛ راحة الدجاج هي مسؤولية هذه المروحة."
       },
       {
         "name": "ELEPHANT",
-        "type": "Toz Toplama Ünitesi",
+        "type": "وحدة جمع الغبار",
         "image": "/images/products/elephant.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Fil gibi güçlü ama kontrollü çalışan bu sistemler, yoğun üretim ortamlarında havadaki tozu güvenle yakalar. Yüksek debili emiş gücüyle ortamı arındırır; üretim sürecini daha sağlıklı, daha verimli hâle getirir. Bir fil gibi ağır işlerin altından kalkar, ama her nefesinde temiz bir soluk kazandırır."
+        "description": "هذه الأنظمة، التي تعمل بقوة ولكن يتم التحكم فيها مثل الفيلة، تلتقط الغبار الموجود في الهواء بأمان في بيئات الإنتاج المزدحمة. إنه ينقي البيئة بفضل قوة الشفط ذات معدل التدفق العالي؛ فهو يجعل عملية الإنتاج أكثر صحة وأكثر كفاءة. إنه يتعامل مع الأعمال الشاقة مثل الفيل، ولكنه يمنح نفسًا من الهواء النقي مع كل نفس."
       }
     ],
     "otherCategories": [
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
-    "ctaDesc": "1.200+ ürün çeşidi arasından projenize en uygun çözümü bulmak için uzman mühendislik ekibimizle iletişime geçin.",
+    "ctaDesc": "اتصل بفريقنا الهندسي الخبير للعثور على الحل الأنسب لمشروعك من بين أكثر من 1200 نوع من المنتجات.",
     "catalogs": [
       {
-        "title": "Biomimetic Product Catalog",
+        "title": "كتالوج المنتجات المحاكاة الحيوية",
         "meta": "PDF · Rev. B",
         "href": ""
       },
       {
-        "title": "Smoke & Heat Exhaust Catalog",
+        "title": "كتالوج الإخلاء من الدخان والحرارة",
         "meta": "PDF · CAT-SH-01",
         "href": ""
       }
     ],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "iklimlendirme": {
-    "title": "İklimlendirme",
-    "titleFirst": "İklim",
-    "titleHighlight": "lendirme",
+    "title": "تكييف",
+    "titleFirst": "مناخ",
+    "titleHighlight": "التخلي",
     "pills": [
-      "3 Ürün Ailesi",
-      "Modüler Konfigürasyon",
-      "EC & Radyal Fan",
-      "HEPA Filtrasyon"
+      "3 عائلات المنتج",
+      "التكوين المعياري",
+      "EC ومروحة شعاعية",
+      "ترشيح هيبا"
     ],
     "tiger": {
-      "label": "Klima Santralleri",
-      "desc": "Kaplan gibi kontrolü elden bırakmayan bu santraller, büyük hacimlerde hava kalitesini hassasiyetle yönetir. Gücünü sadece ihtiyaç duyulan noktaya yönlendirir, ortamın iklimini dengeler. Her zaman hazır, her zaman kararlı; sistemin kalbinde güçlü bir nefes gibi çalışır. Sessiz lider, görünmeyen kontrol merkezidir.",
+      "label": "وحدات معالجة الهواء",
+      "desc": "محطات الطاقة هذه، التي لا تفقد السيطرة أبدًا مثل كابلان، تدير جودة الهواء بكميات كبيرة بدقة. إنه يوجه قوته فقط إلى النقطة التي تكون هناك حاجة إليها ويوازن مناخ البيئة. جاهزون دائمًا، مصممون دائمًا؛ إنه يعمل مثل نفس قوي في قلب النظام. القائد الصامت هو مركز التحكم غير المرئي.",
       "image": "/images/products/tiger-pre.png",
-      "specFlow": "500–125K m³/h",
-      "specPressure": "10–3.000 Pa"
+      "specFlow": "500-125 ألف متر مكعب/ساعة",
+      "specPressure": "10-3000 باسكال"
     },
     "dolphin": {
-      "label": "Nem Alma Santralleri",
-      "desc": "Yunus gibi çevik ve sezgisel çalışan bu santraller, ortam nemini hassas biçimde dengeler. Aşırı nemi fark eder, fazlasını çeker ve içeriği konforlu hale getirir. Sistem içinde zarafetiyle fark edilmez ama konforu baştan sona şekillendirir. Her nefeste ferahlık sunar, her ortamda dengeyi sağlar.",
+      "label": "وحدات إزالة الرطوبة",
+      "desc": "تعمل محطات الطاقة هذه، التي تعمل بشكل رشيق وبديهي مثل الدلفين، على موازنة الرطوبة المحيطة بدقة. يكتشف الرطوبة الزائدة ويمتص الفائض ويجعل المحتوى مريحًا. لا يُلاحظ في النظام أناقته، لكنه يشكل الراحة من البداية إلى النهاية. إنه يوفر النضارة في كل نفس ويوفر التوازن في كل بيئة.",
       "image": "/images/products/dolphin-pre.png",
-      "specFlow": "6 Model",
-      "specPressure": "6 Model"
+      "specFlow": "6 نماذج",
+      "specPressure": "6 نماذج"
     },
     "caracal": {
-      "label": "Isı Geri Kazanım",
-      "desc": "Karakulak gibi çevresini anında algılayan bu sistem, içerideki sıcak havayı israf etmeden yeniden kazandırır. Isı kaybını asgariye indirirken temiz hava döngüsünü sürekli tutar. Tıpkı bir karakulak gibi, görünmeden izler, enerji kaybını fark eder ve sessizce sistemi optimize eder. Enerjiyi geri kazandıran zarif bir avcı gibidir.",
+      "label": "استعادة الحرارة",
+      "desc": "يقوم هذا النظام، الذي يستشعر محيطه على الفور مثل الوشق، بتجديد الهواء الدافئ في الداخل دون إهداره. فهو يحافظ على ثبات دورة الهواء النقي مع تقليل فقدان الحرارة. مثل الوشق، فهو يراقب ما لا يمكن رؤيته، ويكتشف فقدان الطاقة ويعمل على تحسين النظام بصمت. إنه مثل صياد رشيق يستعيد الطاقة.",
       "image": "/images/products/caracal.png",
       "specFlow": "",
       "specPressure": ""
     },
-    "ctaDesc": "Teknik ekibimiz size en uygun iklimlendirme çözümünü sunmak için hazır.",
+    "ctaDesc": "فريقنا الفني على استعداد لتقديم الحل الأنسب لتكييف الهواء.",
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "sogutmaVeIsitma": {
-    "title": "Soğutma ve Isıtma",
-    "titleFirst": "Soğutma ve",
-    "titleHighlight": "Isıtma",
-    "heroDesc": "Polar Bear, Orca Coil, Orca Heater ve Orca HX soğutma ve ısıtma çözümleri.",
-    "comingSoonNotice": "Bu kategorideki ürünler yakında detaylı olarak yayınlanacaktır. Teknik bilgi ve fiyat teklifi için",
-    "comingSoonLink": "iletişime geçebilirsiniz",
+    "title": "التبريد والتدفئة",
+    "titleFirst": "التبريد",
+    "titleHighlight": "والتدفئة",
+    "heroDesc": "حلول التبريد والتدفئة Polar Bear وOrca Coil وOrca Heater وOrca HX.",
+    "comingSoonNotice": "سيتم نشر المنتجات في هذه الفئة بالتفصيل قريبًا. للحصول على المعلومات الفنية وعرض الأسعار",
+    "comingSoonLink": "يمكنك الاتصال",
     "products": [
       {
         "name": "POLAR BEAR",
-        "type": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri • Isı Pompası Dış Ünitesi • Fan Coil İç Ünitesi",
+        "type": "مدمجة • الحزمة • حلول التبريد الصناعية • وحدة خارجية لمضخة حرارية • وحدة داخلية بملف مروحة",
         "image": "/images/products/chiller.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi; Orta Tip Paket Endüstriyel Soğutma Ünitesi; Ağır Tip Paket Endüstriyel Soğutma Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; Orta Tip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; OrtaTip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi"
+        "description": "وحدة التبريد الصناعية من النوع الخفيف؛ وحدة التبريد الصناعية من النوع المتوسط؛ وحدة التبريد الصناعية من النوع الثقيل؛ وحدة خارجية بمضخة حرارية من النوع الخفيف؛ وحدة خارجية لمضخة حرارية من النوع المتوسط؛ وحدة خارجية لمضخة حرارية من النوع الثقيل؛ وحدة خارجية بمضخة حرارية من النوع الخفيف؛ وحدة خارجية لمضخة حرارية من النوع المتوسط؛ وحدة خارجية لمضخة حرارية من النوع الثقيل"
       },
       {
         "name": "ORCA HEATER",
-        "type": "Elektrikli Isıtıcı",
+        "type": "سخان كهربائي",
         "image": "/images/products/elektrikli-isitici.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı; Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı"
+        "description": "سخان كهربائي مع وصلة أنابيب مستطيلة؛ سخان كهربائي مزود بوصلة دائرية"
       },
       {
         "name": "ORCA COIL",
-        "type": "Termal Batarya",
-        "image": "/images/products/elektrikli-isitici.png",
+        "type": "البطارية الحرارية",
+        "image": "",
         "specFlow": "",
         "specPressure": "",
-        "description": "Sıcak Su Bataryası; Soğuk su Bataryası; DX Batarya; Buhar Bataryası"
+        "description": "خلاط الماء الساخن؛ صنبور الماء البارد؛ بطارية دي إكس؛ صنبور البخار"
       },
       {
         "name": "ORCA HX",
-        "type": "Isı Eşanjörü",
-        "image": "/images/products/caracal.png",
+        "type": "مبادل حراري",
+        "image": "",
         "specFlow": "",
         "specPressure": "",
-        "description": "Rotary Tip Isı Geri Kazanım Modülü; Selülozik Reküparatör Modulü; Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı; Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
+        "description": "وحدة استعادة الحرارة من النوع الدوار؛ وحدة المسترد السليولوزية؛ وحدة استعادة الألمنيوم – لوحة مستطيلة؛ وحدة استرداد الألمنيوم – سداسية"
       }
     ],
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaYonetimi": {
-    "title": "Hava Yönetimi",
-    "titleFirst": "Hava",
-    "titleHighlight": "Yönetimi",
-    "heroDesc": "Hava damperi çözümleri.",
+    "title": "إدارة الهواء",
+    "titleFirst": "هواء",
+    "titleHighlight": "الإدارة",
+    "heroDesc": "حلول مخمدات الهواء.",
     "hound": {
-      "label": "Damperler",
-      "desc": "Tazı gibi yön sezgisi güçlü olan bu damperler, hava akışını doğru zamanda, doğru yöne yönlendirir. Hızlı tepki verir, anında devreye girer; sistemin hava haritasını kontrol altında tutar. Görünmeden yol çizen, ama yönü belirleyen sadık bir rehber gibidir.",
+      "label": "المخمدات",
+      "desc": "تقوم هذه المخمدات، التي تتمتع بإحساس قوي بالاتجاه مثل السلوقي، بتوجيه تدفق الهواء في الاتجاه الصحيح في الوقت المناسب. يتفاعل بسرعة ويتم تفعيله على الفور؛ إنها تحافظ على خريطة الطقس للنظام تحت السيطرة. إنه مثل المرشد الأمين الذي يرسم الطريق دون أن يراه أحد، لكنه يحدد الاتجاه.",
       "image": "/images/products/hound-al.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaDagitimi": {
-    "title": "Hava Dağıtımı",
-    "titleFirst": "Hava",
-    "titleHighlight": "Dağıtımı",
-    "heroDesc": "Menfez, panjur, difüzör ve anemostad çözümleri.",
+    "title": "توزيع الهواء",
+    "titleFirst": "هواء",
+    "titleHighlight": "التوزيع",
+    "heroDesc": "حلول الشبك، والمصراع، والناشر، والمانيموستات.",
     "alpaca": {
-      "label": "Menfez, Anemostad, Panjurlar",
-      "desc": "Alpaka gibi ortama huzurla entegre olan bu elemanlar, havayı doğru noktalara estetik ve dengeli biçimde dağıtır. Ne çok öne çıkar ne de kaybolur; sistemin mimarisine zarifçe uyum sağlar. Her hava akımının son dokunuşunda onun izi vardır. Sessiz bir işçi, görünmez bir denge ustasıdır.",
+      "label": "فتحات، أنيموستادس، مصاريع",
+      "desc": "هذه العناصر، مثل الألبكة، تندمج بسلام في البيئة وتوزع الهواء على النقاط الصحيحة بطريقة جمالية ومتوازنة. لا تبرز ولا تختفي. يتناسب بشكل أنيق مع بنية النظام. هناك أثره في اللمسة الأخيرة لكل تيار هوائي. إنه عامل صامت، سيد التوازن غير المرئي.",
       "image": "/images/products/alpaca-am.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "havaFiltrasyonu": {
-    "title": "Hava Filtrasyonu",
-    "titleFirst": "Hava",
-    "titleHighlight": "Filtrasyonu",
-    "heroDesc": "Endüstriyel ve konfor uygulamaları için filtre çözümleri.",
+    "title": "ترشيح الهواء",
+    "titleFirst": "هواء",
+    "titleHighlight": "الترشيح",
+    "heroDesc": "حلول التصفية للتطبيقات الصناعية والراحة.",
     "scallop": {
-      "label": "Filtreler",
-      "desc": "Deniz tarağı gibi gözenekli ve katmanlı yapısıyla, ortamdan istenmeyen parçacıkları ustalıkla süzen ve temiz hava geçişine olanak sağlayan sistemler.",
+      "label": "المرشحات",
+      "desc": "الأنظمة التي تقوم بتصفية الجزيئات غير المرغوب فيها من البيئة بمهارة وتسمح للهواء النظيف بالمرور عبر بنيتها المسامية والطبقية مثل المحار.",
       "image": "/images/products/cyclone.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "aksesuarlar": {
-    "title": "Aksesuarlar",
-    "titleFirst": "Akse",
-    "titleHighlight": "suarlar",
-    "productCount": "ürün",
-    "ctaTitle": "Projenize uygun aksesuarı mı arıyorsunuz?",
+    "title": "مُكَمِّلات",
+    "titleFirst": "إكسسو",
+    "titleHighlight": "ارات",
+    "productCount": "منتج",
+    "ctaTitle": "هل تبحث عن الإكسسوار المناسب لمشروعك؟",
     "accessories": [
       {
         "name": "REMORA",
         "image": "/images/products/remora.png",
-        "description": "Fan aksesuarları; Remora’nın doğadaki fonksiyonunu yansıtarak, sistemin güvenli bir şekilde sabitlenmesini, titreşimden arındırılmasını ve hava akışının kontrollü yönlendirilmesini sağlar. Tıpkı Remora’nın taşıyıcısıyla kurduğu uyum gibi, bu parçalar da fan sisteminin bütünlüğünü ve verimliliğini destekler.",
+        "description": "ملحقات المروحة؛ يعكس وظيفة Remora في الطبيعة، فهو يضمن تثبيت النظام بشكل آمن، وخالي من الاهتزازات، وتوجيه تدفق الهواء بطريقة يمكن التحكم فيها. تمامًا مثل انسجام Remora مع حاملها، تدعم هذه الأجزاء سلامة وكفاءة نظام المروحة.",
         "specFlow": "",
         "specPressure": ""
       }
     ],
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ],
-    "heroDesc": "REMORA fan aksesuar ailesi; montaj, bağlantı, susturucu ve koruma çözümleri."
+    "heroDesc": "عائلة ملحقات مروحة REMORA؛ حلول التركيب والتوصيل وكاتم الصوت والحماية."
   },
   "otomasyonMalzemeleri": {
-    "title": "Otomasyon Malzemeleri",
-    "titleFirst": "Otomasyon",
-    "titleHighlight": "Malzemeleri",
+    "title": "مواد الأتمتة",
+    "titleFirst": "الأتمتة",
+    "titleHighlight": "لوازم",
     "products": [
       {
         "name": "HAWK",
         "image": "/images/products/otomasyon-pano.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Hawk serisi otomasyon panoları, tıpkı bir şahinin geniş perspektifli kontrol yeteneği gibi, fan ve HVAC sistemlerinin tüm bileşenlerini tek merkezden güvenilir şekilde yönetmek için tasarlanmıştır.\r\nHızlı tepki süresi, hassas izleme kabiliyeti ve akıllı kontrol mimarisi sayesinde, karmaşık senaryolarda dahi sistemi kararlı tutar.\r\nEnerji yönetimi, güvenlik mantığı, hassas kumanda ve uzaktan izleme özellikleriyle Hawk; projeye “üstten bakan” bir kontrol zekâsı kazandırır.\r\nŞahin metaforunun temsil ettiği sezgi, hız ve hâkimiyet; bu panoların mühendislik karakterinin doğrudan karşılığıdır."
+        "description": "تم تصميم لوحات التشغيل الآلي من سلسلة Hawk لإدارة جميع مكونات المروحة وأنظمة التدفئة والتهوية وتكييف الهواء (HVAC) بشكل موثوق من مركز واحد، تمامًا مثل قدرة التحكم في المنظور الواسع للصقور.\r\nبفضل وقت الاستجابة السريع وقدرته على المراقبة الدقيقة وبنية التحكم الذكية، فإنه يحافظ على استقرار النظام حتى في السيناريوهات المعقدة.\r\nبفضل إدارة الطاقة ومنطق الأمان والتحكم الدقيق وميزات المراقبة عن بعد، فإن Hawk؛ فهو يوفر معلومات تحكم \"من الأعلى إلى الأسفل\" للمشروع.\r\nالحدس والسرعة والهيمنة المتمثلة في استعارة الصقر؛ وهذا يتوافق بشكل مباشر مع الطابع الهندسي للألواح."
       },
       {
         "name": "PLC",
         "image": "/images/products/otomasyon-plc.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Panasonic Programlanabilir Lojik Kontrolör"
+        "description": "وحدة التحكم المنطقية القابلة للبرمجة من باناسونيك"
       },
       {
-        "name": "SENSÖR",
+        "name": "مستشعر",
         "image": "/images/products/otomasyon-sensor.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "PI-PU Fark Basınç Sensörü; Fark Basınç Anahtarı; Sıcaklık Sensörü; Isı Sensörü; Duman Sensörü/ Kanal Tipi Duman Dedektörü; Titreşim Sensörü; Hava Kalite Sensörü; Hava Akış Sensörü; Sıcaklık Termostatı; CO Sensörü"
+        "description": "مستشعر الضغط التفاضلي PI-PU؛ مفتاح الضغط التفاضلي؛ مستشعر درجة الحرارة؛ مستشعر الحرارة؛ مستشعر الدخان/ كاشف الدخان من نوع القناة؛ مستشعر الاهتزاز؛ مستشعر جودة الهواء؛ مستشعر تدفق الهواء؛ ترموستات درجة الحرارة؛ مستشعر ثاني أكسيد الكربون"
       },
       {
         "name": "NEXUS",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Kontrol Kartı; Panel Termostat; Duman ve Basınç Sensörleri Haberleşme Kartı; CO Paneli"
+        "description": "بطاقة التحكم؛ ترموستات اللوحة؛ بطاقة اتصال لأجهزة استشعار الدخان والضغط؛ لوحة ثاني أكسيد الكربون"
       },
       {
-        "name": "ZAMANLAMA ve KONTROL CİHAZLARI",
+        "name": "أجهزة التوقيت والتحكم",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Hız Kontrol Ünitesi; Dijital Zaman Ayar Rölesi; Mekanik Zaman Ayar Rölesi"
+        "description": "وحدة التحكم في السرعة تتابع ضبط الوقت الرقمي؛ تتابع ضبط الوقت الميكانيكي"
       },
       {
         "name": "LION",
         "image": "/images/products/frekans-inventoru.png",
         "specFlow": "",
         "specPressure": "",
-        "description": "Lion serisi güç elektroniği ürünleri, sistemin kalbinde liderlik rolünü üstlenir. Kritik durumlarda kararlı tepki verir; yüksek enerji taleplerinde bile güvenle çalışır. Tıpkı bir aslan gibi sessizce ama etkili biçimde kontrolü elinde tutar. Dayanıklılığı, istikrarı ve sistem üzerindeki hâkimiyeti ile her koşulda güçlü kalır."
+        "description": "تأخذ منتجات إلكترونيات الطاقة من سلسلة Lion الدور القيادي في قلب النظام. يتفاعل بشكل حاسم في المواقف الحرجة؛ تعمل بأمان حتى في ظل متطلبات الطاقة العالية. تمامًا مثل الأسد، فهو يحافظ على سيطرته بصمت ولكن بفعالية. يظل قويًا في جميع الظروف بفضل متانته وثباته وهيمنته على النظام."
       }
     ],
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Titreşim ve Ses İzolasyonu",
+        "label": "الاهتزاز وعزل الصوت",
         "slug": "titresim-ve-ses-izolasyon"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ],
-    "heroDesc": "HAWK otomasyon panoları, PLC, SENSE sensörler, NEXUS kontrol kartları, zamanlama cihazları ve LION güç elektroniği."
+    "heroDesc": "لوحات التشغيل الآلي HAWK، PLC، أجهزة الاستشعار SENSE، بطاقات التحكم NEXUS، أجهزة التوقيت وإلكترونيات الطاقة LION."
   },
   "titresimVeSesIzolasyon": {
-    "title": "Titreşim & Ses İzolasyon",
-    "titleFirst": "Titreşim ve Ses İzolasyon",
-    "titleHighlight": "İzolasyon",
-    "heroDesc": "Titreşim izolatörleri ve ses izolasyon elemanları.",
+    "title": "الاهتزاز وعزل الصوت",
+    "titleFirst": "الاهتزاز وعزل الصوت",
+    "titleHighlight": "العزل",
+    "heroDesc": "عوازل الاهتزاز وعناصر عزل الصوت.",
     "roo": {
-      "label": "Titreşim İzolatörleri",
-      "desc": "Roo serisi titreşim izolatörleri, makinelerinizin ve yapılarınızın titreşim kaynaklı hasarlardan korunmasını sağlar. Yüksek esneklik, darbe sönümleme ve uzun ömürlü kullanım için optimize edilmiştir.\r\nTıpkı bir kangurunun yere yumuşak inişi gibi, Roo da titreşimi sessizce absorbe eder.",
+      "label": "عوازل الاهتزاز",
+      "desc": "تعمل عوازل الاهتزاز من سلسلة Roo على حماية أجهزتك وهياكلك من الأضرار الناجمة عن الاهتزاز. مُحسّن للمرونة العالية وامتصاص الصدمات والاستخدام طويل الأمد.\r\nتمامًا مثل الكنغر الذي يهبط بهدوء على الأرض، يمتص رو الاهتزازات بصمت.",
       "image": "/images/products/yayli-titresim-izolatoru.png",
       "specFlow": "",
       "specPressure": ""
     },
     "otherCategories": [
       {
-        "label": "Hava Hareketi",
+        "label": "حركة الهواء",
         "slug": "hava-hareketi"
       },
       {
-        "label": "İklimlendirme",
+        "label": "تكييف",
         "slug": "iklimlendirme"
       },
       {
-        "label": "Soğutma ve Isıtma",
+        "label": "التبريد والتدفئة",
         "slug": "sogutma-ve-isitma"
       },
       {
-        "label": "Hava Yönetimi",
+        "label": "إدارة الهواء",
         "slug": "hava-yonetimi"
       },
       {
-        "label": "Hava Dağıtımı",
+        "label": "توزيع الهواء",
         "slug": "hava-dagitimi"
       },
       {
-        "label": "Hava Filtrasyonu",
+        "label": "ترشيح الهواء",
         "slug": "hava-filtrasyonu"
       },
       {
-        "label": "Aksesuarlar",
+        "label": "مُكَمِّلات",
         "slug": "aksesuarlar"
       },
       {
-        "label": "Otomasyon Malzemeleri",
+        "label": "مواد الأتمتة",
         "slug": "otomasyon-malzemeleri"
       }
     ],
     "catalogs": [],
     "guides": [
       {
-        "title": "Montaj ve bakım kılavuzu",
-        "meta": "Rev. 2024.2",
+        "title": "دليل التثبيت والصيانة",
+        "meta": "القس 2024.2",
         "href": ""
       },
       {
-        "title": "Teknik veri föyleri",
+        "title": "أوراق البيانات الفنية",
         "meta": "PDF",
         "href": ""
       }
     ]
   },
   "banyoFanlari": {
-    "title": "SEAHORSE",
-    "subtitle": "Banyo Fanları",
-    "intro": "Denizatları, kompakt yapıları ve dik duruşlarıyla dar alanlarda dengeli şekilde hareket edebilen nadir canlılardandır. Durgun suların içinde sabit kalabilir ve narin yapısıyla bulunduğu ortama zarar vermeden uyum sağlar. Bu özellik, banyo gibi küçük ve hassas alanlarda çalışan fanlar için doğrudan bir ilhamdır.\n\nDenizatı gibi küçük alanlara ustalıkla uyum sağlayan bu fanlar, banyolarda fazla yer kaplamadan etkili tahliye sağlar. Dengeli, zarif ve kontrollü çalışmasıyla nemi ve kokuyu ortamdan uzaklaştırırken, varlığıyla değil işleviyle hissedilir. Kompakt ama işlevsel bir çözüm sunar.",
+    "title": "فرس البحر",
+    "subtitle": "مراوح الحمام",
+    "intro": "يعد فرس البحر من المخلوقات النادرة التي يمكنها التحرك بشكل متوازن في المساحات الضيقة بفضل بنيتها المدمجة ووقفتها المستقيمة. يمكن أن تظل مستقرة في المياه الراكدة وتتكيف مع بيئتها دون الإضرار ببنيتها الدقيقة. تعتبر هذه الميزة مصدر إلهام مباشر للمعجبين الذين يعملون في مساحات صغيرة وحساسة مثل الحمامات.\n\nتوفر هذه المراوح، التي تتكيف بمهارة مع المساحات الصغيرة مثل فرس البحر، عملية إخلاء فعالة دون أن تشغل مساحة كبيرة في الحمامات. في حين أنه يزيل الرطوبة والرائحة من البيئة من خلال تشغيله المتوازن والأنيق والمتحكم فيه، إلا أنه لا يتم الشعور به من خلال وجوده ولكن من خلال وظيفته. إنه يقدم حلاً مدمجًا ولكنه عملي.",
     "models": [
       {
         "name": "Seahorse AP",
-        "type": "Aksiyal Plastik Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
-        "description": "Aksiyal Plastik Banyo Fanı"
+        "type": "مروحة حمام بلاستيك محورية",
+        "image": "/images/products/seahorse-ap.png",
+        "description": "مروحة حمام بلاستيك محورية"
       },
       {
         "name": "Seahorse APS",
-        "type": "Aksiyal Plastik Panjurlu Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
-        "description": "Aksiyal Plastik Panjurlu Banyo Fanı"
+        "type": "مروحة حمام بفتحات بلاستيكية محورية",
+        "image": "/images/products/seahorse-aps.png",
+        "description": "مروحة حمام بفتحات بلاستيكية محورية"
       },
       {
         "name": "Seahorse APC",
-        "type": "Aksiyal Plastik Kapaklı Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
-        "description": "Aksiyal Plastik Kapaklı Banyo Fanı"
+        "type": "مروحة حمام محورية بغطاء بلاستيك",
+        "image": "/images/products/seahorse-apc.png",
+        "description": "مروحة حمام محورية بغطاء بلاستيك"
       },
       {
         "name": "Seahorse RP",
-        "type": "Radyal Plastik Banyo Fanı",
-        "image": "/images/products/banyo-fan-1.png",
-        "description": "Radyal Plastik Banyo Fanı"
+        "type": "مروحة حمام شعاعية بلاستيك",
+        "image": "/images/products/banyo-fan-1.png|/images/products/seahorse-rp-2.png",
+        "description": "مروحة حمام شعاعية بلاستيك"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "catiFanlari": {
     "title": "HERON",
-    "subtitle": "Çatı Fanları",
-    "intro": "Balıkçıl kuşları; yüksek noktalarda hareketsiz durarak çevreyi gözlemler ve yalnızca gerektiğinde kanat çırpar. Uzun bacakları ve boynu sayesinde yukarıdan aşağıya doğru hakimiyet kurar. Bu özellik, çatı fanlarının konumlandığı yüksek bölgelerden havayı tahliye etme işlevine doğrudan ilham verir.\n\nBalıkçıl gibi yükseklerde konumlanan çatı fanları, sistemin genel havasını dengede tutar. Sessiz, dengeli ve sürekli devinim içinde olmayan yapısıyla gerektiğinde devreye girerek maksimum etki sağlar. Duruşuyla bile sistemi yukarıdan kontrol eder.",
+    "subtitle": "مراوح السقف",
+    "intro": "طيور مالك الحزين؛ وهو يراقب البيئة من خلال الوقوف بلا حراك في نقاط عالية ويرفرف بجناحيه فقط عند الضرورة. بفضل أرجله ورقبته الطويلة، فهو يهيمن من الأعلى إلى الأسفل. تلهم هذه الميزة بشكل مباشر وظيفة إخلاء الهواء من المناطق المرتفعة التي توجد بها مراوح السقف.\n\nتحافظ مراوح السقف الموضوعة على ارتفاعات عالية، مثل مراوح مالك الحزين، على توازن الهواء العام للنظام. بفضل بنيته الهادئة والمتوازنة وغير المستمرة، فإنه ينشط عند الضرورة ويوفر أقصى قدر من التأثير. وحتى بموقفه فهو يسيطر على النظام من فوق.",
     "models": [
       {
         "name": "Heron RH",
-        "type": "Radyal Yatay Atışlı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
-        "description": "Radyal Yatay Atışlı Çatı Tipi Fan"
+        "type": "مروحة سقف من نوع التفريغ الأفقي الشعاعي",
+        "image": "/images/products/heron-rh.png",
+        "description": "مروحة سقف من نوع التفريغ الأفقي الشعاعي"
       },
       {
         "name": "Heron RHS",
-        "type": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
-        "description": "Motor Hava Akımı Dışında Radyal Yatay Atışlı Çatı Tipi Fan"
+        "type": "مروحة سقفية ذات تفريغ أفقي نصف قطري، وتدفق هواء خارجي للمحرك",
+        "image": "/images/products/heron-rhs.png",
+        "description": "مروحة سقفية ذات تفريغ أفقي نصف قطري، وتدفق هواء خارجي للمحرك"
       },
       {
         "name": "Heron RV",
-        "type": "Radyal Dikey Atışlı Çatı Tipi Fan",
+        "type": "مروحة سقف من نوع التفريغ العمودي الشعاعي",
         "image": "/images/products/heron-rv.png",
-        "description": "Radyal Dikey Atışlı Çatı Tipi Fan"
+        "description": "مروحة سقف من نوع التفريغ العمودي الشعاعي"
       },
       {
         "name": "Heron RVS",
-        "type": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
-        "description": "Motor Hava Akımı Dışında Radyal Dikey Atışlı Çatı Tipi Fan"
+        "type": "مروحة سقف شعاعية عمودية ذات تفريغ عمودي، وتدفق هواء خارجي للمحرك",
+        "image": "/images/products/heron-rvs.png",
+        "description": "مروحة سقف شعاعية عمودية ذات تفريغ عمودي، وتدفق هواء خارجي للمحرك"
       },
       {
         "name": "Heron AH",
-        "type": "Aksiyal Yatay Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
-        "description": "Aksiyal Yatay Çatı Tipi Fan"
+        "type": "مروحة سقف أفقية محورية",
+        "image": "/images/products/heron-ah.png",
+        "description": "مروحة سقف أفقية محورية"
       },
       {
         "name": "Heron AV",
-        "type": "Aksiyal Dikey Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
-        "description": "Aksiyal Dikey Çatı Tipi Fan"
+        "type": "مروحة سقف عمودية محورية",
+        "image": "",
+        "description": "مروحة سقف عمودية محورية"
       },
       {
         "name": "Heron H",
-        "type": "Aksiyal Dikey Kapaklı Çatı Tipi Fan",
-        "image": "/images/products/heron-rv.png",
-        "description": "Aksiyal Dikey Kapaklı Çatı Tipi Fan"
+        "type": "مروحة سقف عمودية محورية",
+        "image": "",
+        "description": "مروحة سقف عمودية محورية"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "damperler": {
     "title": "HOUND",
-    "subtitle": "Damperler",
-    "intro": "Tazılar, çevik yapıları ve hedefe kilitlenen hassas duyularıyla tanınan av köpekleridir. Yön bulma becerileri, hızlı tepkileri ve akışı kontrol edebilmeleriyle öne çıkarlar. Hava yönlendirme sistemlerinde görev yapan damperlerle bu özellikleri birebir örtüşür.\n\nTazı gibi yön sezgisi güçlü olan bu damperler, hava akışını doğru zamanda, doğru yöne yönlendirir. Hızlı tepki verir, anında devreye girer; sistemin hava haritasını kontrol altında tutar. Görünmeden yol çizen, ama yönü belirleyen sadık bir rehber gibidir.",
+    "subtitle": "المخمدات",
+    "intro": "الكلاب السلوقية هي كلاب صيد معروفة بطبيعتها الرشيقة وحواسها الحساسة التي تلتصق بالهدف. إنهم يتميزون بمهاراتهم الملاحية وردود أفعالهم السريعة وقدرتهم على التحكم في التدفق. تتوافق هذه الميزات تمامًا مع المخمدات التي تعمل في أنظمة توجيه الهواء.\n\nتقوم هذه المخمدات، التي تتمتع بإحساس قوي بالاتجاه مثل السلوقي، بتوجيه تدفق الهواء في الاتجاه الصحيح في الوقت المناسب. يتفاعل بسرعة ويتم تفعيله على الفور؛ إنها تحافظ على خريطة الطقس للنظام تحت السيطرة. إنه مثل المرشد الأمين الذي يرسم الطريق دون أن يراه أحد، لكنه يحدد الاتجاه.",
     "models": [
       {
         "name": "Hound MSD",
-        "type": "Motorlu Şaft / Kat Duman Tahliye Damperi",
-        "image": "/images/products/hound-al.png",
-        "description": "Motorlu Şaft / Kat Duman Tahliye Damperi"
+        "type": "عمود آلي / مخمد إخلاء الدخان من الأرضية",
+        "image": "/images/products/hound-msd.png",
+        "description": "عمود آلي / مخمد إخلاء الدخان من الأرضية"
       },
       {
         "name": "Hound MSFD-R",
-        "type": "Motorlu Duman Fan Damperi – Dikdörtgen",
+        "type": "مخمدات مروحة الدخان الآلية – مستطيلة",
         "image": "/images/products/hound-al.png",
-        "description": "Motorlu Duman Fan Damperi – Dikdörtgen"
+        "description": "مخمدات مروحة الدخان الآلية – مستطيلة"
       },
       {
         "name": "Hound MSFD-B",
-        "type": "Motorlu Duman Fan Damperi – Kelebek Tipi",
-        "image": "/images/products/hound-al.png",
-        "description": "Motorlu Duman Fan Damperi – Kelebek Tipi"
+        "type": "مخمدات مروحة الدخان الآلية – نوع الفراشة",
+        "image": "/images/products/hound-msfd-b.png?v=2",
+        "description": "مخمدات مروحة الدخان الآلية – نوع الفراشة"
       },
       {
         "name": "Hound SFD-B",
-        "type": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Kelebek Tipi",
+        "type": "مخمد مروحة الدخان بدون محرك وغير قابل للإرجاع – نوع الفراشة",
         "image": "/images/products/hound-al.png",
-        "description": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Kelebek Tipi"
+        "description": "مخمد مروحة الدخان بدون محرك وغير قابل للإرجاع – نوع الفراشة"
       },
       {
         "name": "Hound SFD-R",
-        "type": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen",
-        "image": "/images/products/hound-al.png",
-        "description": "Geri Dönüşsüz Motorsuz Duman Fan Damperi – Dikdörtgen"
+        "type": "مخمد مروحة الدخان بدون محرك وغير رجعي – مستطيل",
+        "image": "/images/products/hound-sfd-r.png?v=2",
+        "description": "مخمد مروحة الدخان بدون محرك وغير رجعي – مستطيل"
       },
       {
         "name": "Hound RSFD-B",
-        "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi",
-        "image": "/images/products/hound-al.png",
-        "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Duman Fanı Damperi Kelebek Tipi"
+        "type": "نوع سقف بدون محرك غير قابل للإرجاع، ومروحة دخان، نوع الفراشة",
+        "image": "",
+        "description": "نوع سقف بدون محرك غير قابل للإرجاع، ومروحة دخان، نوع الفراشة"
       },
       {
         "name": "Hound RSFD-DraIn-B",
-        "type": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi",
-        "image": "/images/products/hound-al.png",
-        "description": "Geri Dönüşsüz Motorsuz Çatı Tipi Drenajlı Duman Fanı Damperi"
+        "type": "مخمد مروحة الدخان المصفى من نوع السقف غير المزود بمحرك وغير قابل للإرجاع",
+        "image": "/images/products/hound-rsfd-drain-b.png",
+        "description": "مخمد مروحة الدخان المصفى من نوع السقف غير المزود بمحرك وغير قابل للإرجاع"
       },
       {
         "name": "Hound BD",
-        "type": "By-Pass Damperi",
-        "image": "/images/products/hound-al.png",
-        "description": "By-Pass Damperi"
+        "type": "المثبط الجانبي",
+        "image": "",
+        "description": "المثبط الجانبي"
       },
       {
         "name": "Hound FFD",
-        "type": "Sigortalı Yangın Damperi",
-        "image": "/images/products/hound-al.png",
-        "description": "Sigortalı Yangın Damperi"
+        "type": "فيوز حريق المثبط",
+        "image": "/images/products/hound-mfd.png",
+        "description": "فيوز حريق المثبط"
       },
       {
         "name": "Hound MFD",
-        "type": "Motorlu Yangın Damperi",
-        "image": "/images/products/hound-al.png",
-        "description": "Motorlu Yangın Damperi"
+        "type": "مخمدات الحريق الآلية",
+        "image": "/images/products/hound-mfd.png",
+        "description": "مخمدات الحريق الآلية"
       },
       {
         "name": "Hound RD",
-        "type": "Tahliye Damperi (Relief)",
-        "image": "/images/products/hound-al.png",
-        "description": "Tahliye Damperi (Relief)"
+        "type": "المثبط الإغاثة (الإغاثة)",
+        "image": "/images/products/hound-rd.png",
+        "description": "المثبط الإغاثة (الإغاثة)"
       },
       {
         "name": "Hound GS",
-        "type": "Serbest Kanatlı Klape (Gravity)",
-        "image": "/images/products/hound-al.png",
-        "description": "Serbest Kanatlı Klape (Gravity)"
+        "type": "صمام الجناح الحر (الجاذبية)",
+        "image": "/images/products/hound-gs.png?v=4",
+        "description": "صمام الجناح الحر (الجاذبية)"
       },
       {
         "name": "Hound NRD-B",
-        "type": "Geri Dönüşsüz Damper – Kelebek",
-        "image": "/images/products/hound-al.png",
-        "description": "Geri Dönüşsüz Damper – Kelebek"
+        "type": "مخمد عدم العودة – كيليبيك",
+        "image": "/images/products/hound-nrd-b.png",
+        "description": "مخمد عدم العودة – كيليبيك"
       },
       {
         "name": "Hound NRD-R",
-        "type": "Geri Dönüşsüz Damper – Dikdörtgen",
-        "image": "/images/products/hound-al.png",
-        "description": "Geri Dönüşsüz Damper – Dikdörtgen"
+        "type": "مخمد عدم العودة – مستطيل",
+        "image": "/images/products/hound-nrd-r.png",
+        "description": "مخمد عدم العودة – مستطيل"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "dumanIsiTahliyeFanlari": {
     "title": "DRAGONFLY",
-    "subtitle": "Duman ve Isı Tahliye Fanları",
-    "intro": "Yusufçuklar doğadaki en çevik uçucular arasındadır. Ani yön değiştirerek rüzgârla uyum içinde hareket ederler. Bu kabiliyetleriyle sıcak hava, duman ve tehlikeli gazların hızla boşaltılmasını temsil eder.\n\nYusufçuk gibi çevik ve kararlı biçimde hareket eden bu fanlar, yangın anında oluşan dumanı ve ısıyı hızla tahliye ederek ortamın güvenliğini sağlar. Sessizliği ve ani tepki kapasitesiyle tam zamanında devreye girer.",
+    "subtitle": "مراوح إخلاء الدخان والحرارة",
+    "intro": "تعد حشرات اليعسوب من بين أكثر الطائرات رشاقة في الطبيعة. إنهم يتحركون في انسجام مع الريح، ويغيرون اتجاههم فجأة. وبهذه الإمكانيات تمثل التفريغ السريع للهواء الساخن والدخان والغازات الخطرة.\n\nهذه المراوح، التي تتحرك بخفة وحزم مثل اليعسوب، تضمن سلامة البيئة من خلال إخلاء الدخان والحرارة المتولدة بسرعة في حالة نشوب حريق. يتم تشغيله في الوقت المناسب بفضل صمته وقدرته على الاستجابة الفورية.",
     "models": [
       {
         "name": "Dragonfly T",
-        "type": "Kovan Tipi Aksiyal Duman ve Isı Tahliye Fanı F300",
+        "type": "خلية من النوع المحوري للدخان ومروحة إخلاء الحرارة F300",
         "image": "/images/products/dragonfly-t.jpg",
-        "description": "Kovan Tipi Aksiyal Duman ve Isı Tahliye Fanı F300"
+        "description": "خلية من النوع المحوري للدخان ومروحة إخلاء الحرارة F300"
       },
       {
         "name": "Dragonfly TS",
-        "type": "Kısa Kovanlı Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Kısa Kovanlı Duman ve Isı Tahliye Fanı"
+        "type": "كم قصير مروحة استخلاص الدخان والحرارة",
+        "image": "/images/products/dragonfly-t.jpg",
+        "description": "كم قصير مروحة استخلاص الدخان والحرارة"
       },
       {
         "name": "Dragonfly C",
-        "type": "Hücreli Tip Aksiyal Duman&Isı Tahliye Fanı F300",
+        "type": "مروحة عادم محورية للدخان والحرارة من النوع الخلوي F300",
         "image": "/images/products/dragonfly-c.png?v=3",
-        "description": "Hücreli Tip Aksiyal Duman&Isı Tahliye Fanı F300"
+        "description": "مروحة عادم محورية للدخان والحرارة من النوع الخلوي F300"
       },
       {
         "name": "Dragonfly R",
-        "type": "Yatay Çatı Tipi Aksiyal Duman&Isı Tahliye Fanı F300",
+        "type": "نوع السقف الأفقي مروحة إخلاء محورية للدخان والحرارة F300",
         "image": "/images/products/dragonfly-r.jpg",
-        "description": "Yatay Çatı Tipi Aksiyal Duman&Isı Tahliye Fanı F300"
+        "description": "نوع السقف الأفقي مروحة إخلاء محورية للدخان والحرارة F300"
       },
       {
         "name": "Dragonfly RV",
-        "type": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Dikey Atışlı Çatı Tipi Duman ve Isı Tahliye Fanı"
+        "type": "مروحة استخلاص الدخان والحرارة من نوع السقف ذات التفريغ العمودي",
+        "image": "",
+        "description": "مروحة استخلاص الدخان والحرارة من نوع السقف ذات التفريغ العمودي"
       },
       {
         "name": "Dragonfly TJF",
-        "type": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Tünel Jet Fanı Duman ve Isı Tahliye Fanı"
+        "type": "مروحة النفق النفاثة، مروحة إخلاء الدخان والحرارة",
+        "image": "/images/products/dragonfly-tjf.png",
+        "description": "مروحة النفق النفاثة، مروحة إخلاء الدخان والحرارة"
       },
       {
         "name": "Dragonfly JR",
-        "type": "Radyal Jet Fan Duman ve Isı Tahliye Fanı",
+        "type": "مروحة عادم شعاعية للدخان والحرارة",
         "image": "/images/products/dragonfly-jr.jpg",
-        "description": "Radyal Jet Fan Duman ve Isı Tahliye Fanı"
+        "description": "مروحة عادم شعاعية للدخان والحرارة"
       },
       {
         "name": "Dragonfly JA",
-        "type": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Aksiyal Jet Fan Duman ve Isı Tahliye Fanı F300"
+        "type": "مروحة عادم دخان وحرارة F300",
+        "image": "/images/products/dragonfly-ja.png",
+        "description": "مروحة عادم دخان وحرارة F300"
       },
       {
         "name": "Dragonfly W",
-        "type": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Duvar Tipi  Aksiyal Duman ve Isı Tahliye Fanı F300"
+        "type": "مروحة عادم محورية للدخان والحرارة من النوع الجداري F300",
+        "image": "/images/products/dragonfly-w.png",
+        "description": "مروحة عادم محورية للدخان والحرارة من النوع الجداري F300"
       },
       {
         "name": "Dragonfly WH",
-        "type": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Kapaklı Duvar Duman ve Isı Tahliye Fanı F300"
+        "type": "مروحة استخلاص الدخان والحرارة المغطاة بالحائط F300",
+        "image": "",
+        "description": "مروحة استخلاص الدخان والحرارة المغطاة بالحائط F300"
       },
       {
         "name": "Dragonfly RH",
-        "type": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Kapaklı Çatı  Duman ve Isı Tahliye Fanı"
+        "type": "سقف مغطى بمروحة استخلاص الدخان والحرارة",
+        "image": "",
+        "description": "سقف مغطى بمروحة استخلاص الدخان والحرارة"
       },
       {
         "name": "Dragonfly LPF",
-        "type": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı",
-        "image": "/images/products/dragonfly-c.png",
-        "description": "Alçak Basınçlı Salyangoz  Duman ve Isı Tahliye Fanı"
+        "type": "مروحة استخلاص الحرارة والدخان الحلزوني ذات الضغط المنخفض",
+        "image": "/images/products/dragonfly-lpf.png",
+        "description": "مروحة استخلاص الحرارة والدخان الحلزوني ذات الضغط المنخفض"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "duvarTipiFanlar": {
     "title": "OWL",
-    "subtitle": "Duvar Fanları",
-    "intro": "Baykuşlar, genellikle yüksek ve sabit noktalarda konumlanarak çevreyi geniş bir açıyla gözlemlerler. Keskin görüş açıları ve sabit duruşlarıyla dikkat çekerler. Duvar fanları da sabit bir konumdan geniş alanlara yönlü hava akışı sağlayarak benzer bir görev üstlenir.\n\nBaykuş gibi duvarlara sabitlenmiş bir gözetleyici gibi çalışan bu fanlar, yüksekten ve geniş açıyla güçlü hava tahliyesi yapar. Her an tetikte, çevresine hâkimdir; yönlendirdiği hava akımıyla ortamı hızla dönüştürür. Baykuş gibi odaklanmış, etkili ve alan üzerinde kontrol sahibidir.",
+    "subtitle": "مراوح الحائط",
+    "intro": "تضع البوم نفسها عمومًا في نقاط عالية وثابتة وتراقب البيئة من زاوية واسعة. إنهم يجذبون الانتباه بزوايا المشاهدة الحادة والموقف الثابت. تؤدي مراوح الحائط مهمة مماثلة من خلال توفير تدفق هواء اتجاهي من موقع ثابت إلى مناطق واسعة.\n\nتعمل هذه المراوح كمراقب مثل البومة المثبتة على الجدران، وتقوم بتفريغ هواء قوي من الأعلى وبزاوية واسعة. إنه دائمًا يقظ ومسيطر على محيطه. إنه يحول البيئة بسرعة من خلال تدفق الهواء الذي يوجهه. مثل البومة، فهو مركز وفعال ويسيطر على المنطقة.",
     "models": [
       {
         "name": "Owl RER",
-        "type": "Dikdörtgen Dıştan Rotorlı Duvar Tipi Fan",
+        "type": "مروحة دوارة خارجية مستطيلة الشكل",
         "image": "/images/products/owl-rer.png",
-        "description": "Dikdörtgen Dıştan Rotorlı Duvar Tipi Fan"
+        "description": "مروحة دوارة خارجية مستطيلة الشكل"
       },
       {
         "name": "Owl R",
-        "type": "Dikdörtgen Aksiyal Duvar Tipi Fan",
-        "image": "/images/products/owl-rer.png",
-        "description": "Dikdörtgen Aksiyal Duvar Tipi Fan"
+        "type": "مروحة مستطيلة محورية مثبتة على الحائط",
+        "image": "/images/products/owl-r.png",
+        "description": "مروحة مستطيلة محورية مثبتة على الحائط"
       },
       {
         "name": "Owl H",
-        "type": "Aksiyal Kapaklı Duvar Tipi Fan",
-        "image": "/images/products/owl-rer.png",
-        "description": "Aksiyal Kapaklı Duvar Tipi Fan"
+        "type": "مروحة مثبتة على الحائط مغطاة محوريًا",
+        "image": "",
+        "description": "مروحة مثبتة على الحائط مغطاة محوريًا"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "ecFanlar": {
     "title": "HUMMINGBIRD",
-    "subtitle": "EC Fanlar",
-    "intro": "Sinek kuşu, doğanın en küçük ama en çevik canlılarından biridir. Dakikada binlerce kez kanat çırpabilir, yerinde sabit durabilir ve yönünü anında değiştirebilir. Tüm bunları son derece verimli bir enerji kullanımıyla yapar — tıpkı EC (Electronically Commutated) fanlar gibi.\n\nSinek kuşu gibi küçük boyutuna rağmen olağanüstü verimli ve hassas çalışan bu fanlar, enerji tasarrufu ve sessiz çalışma gerektiren sistemler için idealdir. Hızlı tepki kabiliyeti ve akıllı kontrolü ile sisteminizi bir doğa harikası gibi dengeler.",
+    "subtitle": "مراوح المفوضية الأوروبية",
+    "intro": "الطائر الطنان هو أحد أصغر المخلوقات في الطبيعة ولكنه أكثرها مرونة. يمكنه أن يرفرف بجناحيه آلاف المرات في الدقيقة، ويقف ساكنًا ويغير اتجاهه على الفور. وهو يفعل كل هذا من خلال استخدام الطاقة بكفاءة عالية — تمامًا مثل مراوح EC (التي يتم تبديلها إلكترونيًا).\n\nعلى الرغم من صغر حجمها الذي يشبه الطائر الطنان، إلا أن هذه المراوح تتسم بالكفاءة والحساسية للغاية، كما أنها مثالية للأنظمة التي تتطلب توفير الطاقة والتشغيل الهادئ. فهو يوازن نظامك وكأنه أحد عجائب الطبيعة من خلال قدرته على الاستجابة السريعة والتحكم الذكي.",
     "models": [
       {
         "name": "Hummingbird DRB EC",
-        "type": "Dikdörtgen Kanal Tipi EC Fan",
+        "type": "مروحة EC من نوع القناة المستطيلة",
         "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Dikdörtgen Kanal Tipi EC Fan"
+        "description": "مروحة EC من نوع القناة المستطيلة"
       },
       {
         "name": "Hummingbird RRV EC",
-        "type": "Dikey Atışlı Çatı Tipi Radyal EC Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Dikey Atışlı Çatı Tipi Radyal EC Fan"
+        "type": "مروحة شعاعية من نوع سقف التفريغ الرأسي",
+        "image": "/images/products/hummingbird-rrv-ec.png",
+        "description": "مروحة شعاعية من نوع سقف التفريغ الرأسي"
       },
       {
         "name": "Hummingbird RRH EC",
-        "type": "Yatay Atışlı Çatı Tipi Radyal EC Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Yatay Atışlı Çatı Tipi Radyal EC Fan"
+        "type": "سقف التفريغ الأفقي نوع شعاعي EC مروحة",
+        "image": "/images/products/hummingbird-rrh-ec.png",
+        "description": "سقف التفريغ الأفقي نوع شعاعي EC مروحة"
       },
       {
         "name": "Hummingbird CBP EC",
-        "type": "Hücreli Tip Geriye Eğimli Plug EC Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Hücreli Tip Geriye Eğimli Plug EC Fan"
+        "type": "النوع الخلوي مروحة EC ذات التوصيل المنحني للخلف",
+        "image": "/images/products/hummingbird-cbp-ec.png",
+        "description": "النوع الخلوي مروحة EC ذات التوصيل المنحني للخلف"
       },
       {
         "name": "Hummingbird NS EC",
-        "type": "Çift Cidarlı Sessiz EC Salyangoz Fan",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Çift Cidarlı Sessiz EC Salyangoz Fan"
+        "type": "مروحة حلزون EC صامتة بجدار مزدوج",
+        "image": "/images/products/hummingbird-ns-ec.png",
+        "description": "مروحة حلزون EC صامتة بجدار مزدوج"
       },
       {
         "name": "Hummingbird CARACAL DS EC",
-        "type": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Kanal Bağlantılı Tavan Tipi EC Isı Geri Kazanım Ünitesi"
+        "type": "وحدة استرداد الحرارة من النوع السقفي EC مع وصلة مجرى الهواء",
+        "image": "/images/products/caracal.png",
+        "description": "وحدة استرداد الحرارة من النوع السقفي EC مع وصلة مجرى الهواء"
       },
       {
         "name": "Hummingbird FOX D EC",
-        "type": "Kanal Tipi EC Sığınak Havalandırma Fanı",
-        "image": "/images/products/hummingbird-drb-ec.jpg",
-        "description": "Kanal Tipi EC Sığınak Havalandırma Fanı"
+        "type": "مروحة تهوية المأوى من نوع القناة",
+        "image": "/images/products/fox-d.png?v=3",
+        "description": "مروحة تهوية المأوى من نوع القناة"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "endustriyelFanlar": {
     "title": "NAUTILUS",
-    "subtitle": "Endüstriyel Salyangoz Fanlar",
-    "intro": "Nautilus, doğada mükemmel logaritmik spiral yapıya sahip nadir canlılardandır. Kabuk yapısı hava akışını doğal olarak yönlendiren ve basınç oluşturan bir formdadır. Bu simetri ve iç hacim kullanımı, endüstriyel salyangoz fanların işleyişine doğrudan ilham verir.\n\nSalyangoz gibi spiral formu sayesinde yüksek basınçla hava yönlendirmesi yapan bu fanlar, endüstriyel ortamlarda güçlü ve dengeli hava tahliyesi sağlar. Nautilus’un iç yapısındaki doğa harikası düzen, mühendisliğimizin temel ilhamıdır.",
+    "subtitle": "مراوح الحلزون الصناعية",
+    "intro": "نوتيلوس هو أحد المخلوقات النادرة في الطبيعة ذات البنية الحلزونية اللوغاريتمية المثالية. هيكل القشرة في شكل يوجه تدفق الهواء بشكل طبيعي ويخلق الضغط. هذا الاستخدام للتناظر والحجم الداخلي يلهم بشكل مباشر تشغيل مراوح الحلزون الصناعية.\n\nتوفر هذه المراوح، التي توجه الهواء عند الضغط العالي بفضل شكلها الحلزوني الذي يشبه الحلزون، تفريغًا قويًا ومتوازنًا للهواء في البيئات الصناعية. إن الترتيب الرائع في الهيكل الداخلي لـ Nautilus هو مصدر الإلهام الرئيسي لهندستنا.",
     "models": [
       {
         "name": "Nautilus LPF",
-        "type": "Alçak Basınçlı Endüstriyel Salyangoz Fan",
-        "image": "/images/products/nautilus-cif-cidarli.png",
-        "description": "Alçak Basınçlı Endüstriyel Salyangoz Fan"
+        "type": "مروحة الحلزون الصناعية ذات الضغط المنخفض",
+        "image": "/images/products/nautilus-lpf.png",
+        "description": "مروحة الحلزون الصناعية ذات الضغط المنخفض"
       },
       {
         "name": "Nautilus MPF",
-        "type": "Orta Basınçlı Endüstriyel Salyangoz Fan",
-        "image": "/images/products/nautilus-cif-cidarli.png",
-        "description": "Orta Basınçlı Endüstriyel Salyangoz Fan"
+        "type": "مروحة الحلزون الصناعية ذات الضغط المتوسط",
+        "image": "",
+        "description": "مروحة الحلزون الصناعية ذات الضغط المتوسط"
       },
       {
         "name": "Nautilus HPF",
-        "type": "Yüksek Basınçlı Endüstriyel Salyangoz Fan",
-        "image": "/images/products/nautilus-cif-cidarli.png",
-        "description": "Yüksek Basınçlı Endüstriyel Salyangoz Fan"
+        "type": "مروحة الحلزون الصناعية ذات الضغط العالي",
+        "image": "",
+        "description": "مروحة الحلزون الصناعية ذات الضغط العالي"
       },
       {
         "name": "Nautilus SILENCE",
-        "type": "Sessiz Tip Endüstriyel Salyangoz Fan",
+        "type": "مروحة الحلزون الصناعية من النوع الصامت",
         "image": "/images/products/nautilus-cif-cidarli.png",
-        "description": "Sessiz Tip Endüstriyel Salyangoz Fan"
-      },
-      {
-        "name": "Nautilus PARTS",
-        "type": "NAUTILUS ORTAK",
-        "image": "/images/products/nautilus-cif-cidarli.png",
-        "description": "NAUTILUS ORTAK"
+        "description": "مروحة الحلزون الصناعية من النوع الصامت"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "exproofFanlar": {
     "title": "BEAR",
-    "subtitle": "Ex-proof Fanlar",
-    "intro": "Ayılar; doğada güçlü, dirençli ve tehlike karşısında soğukkanlılıkla hareket eden canlılardır. Zorlu ortam koşullarına uyum sağlayabilmeleri ve fiziksel dayanıklılıklarıyla ön plana çıkarlar. Bu özellikler, patlama riski taşıyan ortamlarda kullanılan ATEX fanlarının doğasını yansıtır.\n\nAyı gibi güçlü, dayanıklı ve her koşulda güvenle çalışan bu fanlar, tehlikeli ve patlayıcı ortamlarda yüksek koruma sağlar. Güvenliğin ön planda olduğu alanlarda, sarsılmaz bir güven sunar.",
+    "subtitle": "المشجعين السابقين",
+    "intro": "الدببة. إنها مخلوقات قوية بطبيعتها ومرنة وتتصرف بهدوء في مواجهة الخطر. إنهم يتميزون بقدرتهم على التكيف مع الظروف البيئية القاسية وقدرتهم على التحمل البدني. تعكس هذه الخصائص طبيعة مراوح ATEX المستخدمة في البيئات التي يحتمل أن تكون قابلة للانفجار.\n\nتوفر هذه المراوح القوية والمتينة والتي تعمل بأمان في جميع الظروف حماية عالية في البيئات الخطرة والمتفجرة. إنه يوفر ثقة لا تتزعزع في المناطق التي يكون فيها الأمن في المقدمة.",
     "models": [
       {
         "name": "Bear REB EX",
-        "type": "Ex-proof Dikdörtgen Kanal Fanı",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Dikdörtgen Kanal Fanı"
+        "type": "مروحة قناة مستطيلة مقاومة للصدمات",
+        "image": "/images/products/bear-reb-ex.png",
+        "description": "مروحة قناة مستطيلة مقاومة للصدمات"
       },
       {
         "name": "Bear RVS EX",
-        "type": "Ex-proof Dikey Radyal Atışlı Çatı Fanı",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Dikey Radyal Atışlı Çatı Fanı"
+        "type": "مروحة سقف شعاعية مقاومة للتفريغ العمودي",
+        "image": "/images/products/bear-rvs-ex.png?v=2",
+        "description": "مروحة سقف شعاعية مقاومة للتفريغ العمودي"
       },
       {
         "name": "Bear RHS EX",
-        "type": "Ex-proof Yatay Atışlı Radyal Çatı Fanı",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Yatay Atışlı Radyal Çatı Fanı"
+        "type": "مروحة سقف شعاعية ذات تفريغ أفقي مقاومة للصدمات",
+        "image": "/images/products/bear-rhs-ex.png?v=2",
+        "description": "مروحة سقف شعاعية ذات تفريغ أفقي مقاومة للصدمات"
       },
       {
         "name": "Bear T",
-        "type": "Ex-proof Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Kovan Tipi Aksiyal Fan"
+        "type": "مروحة محورية من نوع الأكمام المقاومة للسابق",
+        "image": "/images/products/bear-t.png?v=2",
+        "description": "مروحة محورية من نوع الأكمام المقاومة للسابق"
       },
       {
         "name": "Bear C",
-        "type": "Ex-proof Aksiyal Hücreli Fan",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Aksiyal Hücreli Fan"
+        "type": "مروحة خلية محورية مقاومة للسابق",
+        "image": "/images/products/bear-c.png?v=2",
+        "description": "مروحة خلية محورية مقاومة للسابق"
       },
       {
         "name": "Bear R",
-        "type": "Ex-proof  Yatay Atışlı Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof  Yatay Atışlı Aksiyal Fan"
+        "type": "مروحة محورية للتفريغ الأفقي مقاومة للسابق",
+        "image": "/images/products/bear-r.png?v=2",
+        "description": "مروحة محورية للتفريغ الأفقي مقاومة للسابق"
       },
       {
         "name": "Bear W",
-        "type": "Ex-proof Duvar Tipi Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Duvar Tipi Aksiyal Fan"
+        "type": "مروحة محورية من النوع الجداري السابق",
+        "image": "/images/products/bear-w.png?v=3",
+        "description": "مروحة محورية من النوع الجداري السابق"
       },
       {
         "name": "Bear LPF EX",
-        "type": "Ex-proof  Salyangoz Fan",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof  Salyangoz Fan"
+        "type": "مروحة الحلزون السابقة",
+        "image": "/images/products/bear-lpf-ex.png?v=3",
+        "description": "مروحة الحلزون السابقة"
       },
       {
         "name": "Bear TB",
-        "type": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Bifurkasyonlu Kovan Tipi Aksiyal Fan"
+        "type": "مروحة محورية من نوع الأكمام المتشعبة السابقة",
+        "image": "/images/products/marlin-b.png",
+        "description": "مروحة محورية من نوع الأكمام المتشعبة السابقة"
       },
       {
         "name": "Bear BPA EX",
-        "type": "Ex-proof Radyal Hücreli Fan",
-        "image": "/images/products/bear-reb.png",
-        "description": "Ex-proof Radyal Hücreli Fan"
+        "type": "مروحة الخلايا الشعاعية المقاومة السابقة",
+        "image": "/images/products/bear-bpa-ex.png?v=2",
+        "description": "مروحة الخلايا الشعاعية المقاومة السابقة"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "havuzNemAlmaSantrali": {
     "title": "DOLPHIN",
-    "subtitle": "Nem Alma Santralleri",
-    "intro": "Yunuslar; zeki, çevik ve ortam koşullarına hızlı uyum sağlayan deniz canlılarıdır. Sudan gelen nemi doğal olarak yönetebilen bu canlılar, çevrelerine duyarlı ve dengeli yaşamlarıyla bilinirler. Bu özellik, ortam havasındaki nemin sürekli kontrol altında tutulduğu sistemlere doğrudan ilham verir.\n\nYunus gibi çevik ve sezgisel çalışan bu santraller, ortam nemini hassas biçimde dengeler. Aşırı nemi fark eder, fazlasını çeker ve içeriği konforlu hale getirir. Sistem içinde zarafetiyle fark edilmez ama konforu baştan sona şekillendirir. Her nefeste ferahlık sunar, her ortamda dengeyi sağlar.",
+    "subtitle": "وحدات إزالة الرطوبة",
+    "intro": "الدلافين. وهي كائنات بحرية ذكية ورشيقة وتتكيف بسرعة مع الظروف البيئية. هذه المخلوقات، التي يمكنها إدارة الرطوبة من الماء بشكل طبيعي، معروفة بحياتها الحساسة والمتوازنة بيئيًا. تلهم هذه الميزة بشكل مباشر الأنظمة التي يتم فيها التحكم دائمًا في رطوبة الهواء المحيط.\n\nتعمل محطات الطاقة هذه، التي تعمل بشكل رشيق وبديهي مثل الدلفين، على موازنة الرطوبة المحيطة بدقة. يكتشف الرطوبة الزائدة ويمتص الفائض ويجعل المحتوى مريحًا. لا يُلاحظ في النظام أناقته، لكنه يشكل الراحة من البداية إلى النهاية. إنه يوفر النضارة في كل نفس ويوفر التوازن في كل بيئة.",
     "tableHeaders": {
-      "model": "Model",
-      "airFlow": "Hava Debisi (m³/h)",
-      "poolArea": "Havuz Alanı (m²)",
-      "cooling": "Soğutma (kW)",
-      "condenser": "Kondenser (kW)",
-      "waterHeater": "Su Isıtıcı (kW)"
+      "model": "نموذج",
+      "airFlow": "معدل تدفق الهواء (م³/ساعة)",
+      "poolArea": "منطقة حمام السباحة (م2)",
+      "cooling": "التبريد (كيلوواط)",
+      "condenser": "المكثف (كيلوواط)",
+      "waterHeater": "سخان المياه (كيلوواط)"
     },
     "models": [
       {
-        "model": "DOLPHIN 300",
+        "model": "دولفين 300",
         "airFlow": "3.000",
         "area": "50",
         "cooling": "21,1",
@@ -1427,7 +1421,7 @@
         "water": "26,15"
       },
       {
-        "model": "DOLPHIN 400",
+        "model": "دولفين 400",
         "airFlow": "4.000",
         "area": "75",
         "cooling": "28,7",
@@ -1435,7 +1429,7 @@
         "water": "34,12"
       },
       {
-        "model": "DOLPHIN 450",
+        "model": "دولفين 450",
         "airFlow": "4.500",
         "area": "100",
         "cooling": "33,3",
@@ -1443,7 +1437,7 @@
         "water": "36,24"
       },
       {
-        "model": "DOLPHIN 600",
+        "model": "دولفين 600",
         "airFlow": "6.000",
         "area": "150",
         "cooling": "42,2",
@@ -1451,7 +1445,7 @@
         "water": "50,58"
       },
       {
-        "model": "DOLPHIN 750",
+        "model": "دولفين 750",
         "airFlow": "7.500",
         "area": "200",
         "cooling": "52,6",
@@ -1459,7 +1453,7 @@
         "water": "62,97"
       },
       {
-        "model": "DOLPHIN 900",
+        "model": "دولفين 900",
         "airFlow": "9.000",
         "area": "250",
         "cooling": "36,8",
@@ -1470,1505 +1464,1505 @@
     "productLines": [
       {
         "name": "Dolphin S",
-        "type": "Standart Nem Alma Santrali",
+        "type": "وحدة إزالة الرطوبة القياسية",
         "image": "/images/products/dolphin-pre.png",
-        "description": "Standart Nem Alma Santrali"
+        "description": "وحدة إزالة الرطوبة القياسية"
       },
       {
         "name": "Dolphin HR",
-        "type": "Isı Geri Kazanımlı Nem Alma Santrali",
+        "type": "محطة إزالة الرطوبة لاستعادة الحرارة",
         "image": "/images/products/dolphin-pre.png",
-        "description": "Isı Geri Kazanımlı Nem Alma Santrali"
+        "description": "محطة إزالة الرطوبة لاستعادة الحرارة"
       },
       {
         "name": "Dolphin POOL",
-        "type": "Havuz Tipi Nem Alma Santrali",
+        "type": "محطة إزالة الرطوبة من نوع حوض السباحة",
         "image": "/images/products/dolphin-pre.png",
-        "description": "Havuz Tipi Nem Alma Santrali"
+        "description": "محطة إزالة الرطوبة من نوع حوض السباحة"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "hucreliFanlar": {
     "title": "TURTLE",
-    "subtitle": "Hücreli Fanlar",
-    "intro": "Kaplumbağalar; korunaklı, modüler ve uzun ömürlü yapılarıyla tanınır. Dış kabukları onları çevresel etkilere karşı korurken, iç sistemleri güvenle çalışır. Yavaş ama kararlı ilerlemeleriyle güvenilirliği ve sağlamlığı simgelerler.\n\nKaplumbağa gibi sağlam bir dış gövdeye ve korunaklı iç yapıya sahip hücreli fanlar, sistemin kalbinde uzun yıllar boyunca güvenle çalışır. Her bir hücre, görevini kaplumbağanın kabuğundaki desen kadar düzenli ve dirençli şekilde yerine getirir. Dış etkilere karşı güçlü, içte ise daima hazırdır.",
+    "subtitle": "مراوح الجوال",
+    "intro": "السلاحف. وهي معروفة بهياكلها المحمية والنموذجية وطويلة الأمد. في حين أن غلافها الخارجي يحميها من التأثيرات البيئية، فإن أنظمتها الداخلية تعمل بأمان. إنها ترمز إلى الموثوقية والصلابة بتقدمها البطيء ولكن الثابت.\n\nالمراوح الخلوية، التي لها جسم خارجي صلب وبنية داخلية محمية مثل السلحفاة، تعمل بأمان في قلب النظام لسنوات عديدة. تؤدي كل خلية واجبها بشكل منتظم ومرن مثل النموذج الموجود على قوقعة السلحفاة. إنه قوي ضد التأثيرات الخارجية وجاهز دائمًا داخليًا.",
     "models": [
       {
         "name": "Turtle B",
-        "type": "Geriye Eğik Kayış Kasnaklı Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
-        "description": "Geriye Eğik Kayış Kasnaklı Hücreli Fan"
+        "type": "مروحة خلية البكرة ذات الحزام المنحني للخلف",
+        "image": "/images/products/turtle-b.png?v=2",
+        "description": "مروحة خلية البكرة ذات الحزام المنحني للخلف"
       },
       {
         "name": "Turtle BPA",
-        "type": "Geriye Eğik Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
-        "description": "Geriye Eğik Hücreli Fan"
+        "type": "مروحة الخلية المنحنية للخلف",
+        "image": "/images/products/turtle-bpa.png",
+        "description": "مروحة الخلية المنحنية للخلف"
       },
       {
         "name": "Turtle BP",
-        "type": "Geri Eğik Plug Motorlu Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
-        "description": "Geri Eğik Plug Motorlu Hücreli Fan"
+        "type": "المروحة الخلوية ذات المكونات المنحنية إلى الخلف",
+        "image": "/images/products/turtle-bp.png",
+        "description": "المروحة الخلوية ذات المكونات المنحنية إلى الخلف"
       },
       {
         "name": "Turtle F",
-        "type": "Öne Eğik Kayış Kasnaklı Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
-        "description": "Öne Eğik Kayış Kasnaklı Hücreli Fan"
+        "type": "المروحة الخلوية ذات الحزام المنحني للأمام",
+        "image": "/images/products/turtle-f.png",
+        "description": "المروحة الخلوية ذات الحزام المنحني للأمام"
       },
       {
         "name": "Turtle FP",
-        "type": "Öne Eğik Plug Motorlu Hücreli Fan",
-        "image": "/images/products/turtle-a.png",
-        "description": "Öne Eğik Plug Motorlu Hücreli Fan"
+        "type": "مروحة خلوية منحنية للأمام مع محرك توصيل",
+        "image": "",
+        "description": "مروحة خلوية منحنية للأمام مع محرك توصيل"
       },
       {
         "name": "Turtle A",
-        "type": "Aksiyal Hücreli Fan",
+        "type": "مروحة الخلية المحورية",
         "image": "/images/products/turtle-a.png",
-        "description": "Aksiyal Hücreli Fan"
+        "description": "مروحة الخلية المحورية"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "isiGeriKazanimCihazlari": {
     "title": "CARACAL",
-    "subtitle": "Isı Geri Kazanım",
-    "intro": "Karakulaklar, çevreye karşı olağanüstü duyarlılığıyla bilinen yırtıcılardır. En ufak hareketi algılayabilen kulak yapıları ve enerji kaybını minimumda tutan avlanma teknikleriyle dikkat çekerler. Doğada enerji israf etmeyen ve verimliliği ön planda tutan nadir canlılardandır.\n\nKarakulak gibi çevresini anında algılayan bu sistem, içerideki sıcak havayı israf etmeden yeniden kazandırır. Isı kaybını asgariye indirirken temiz hava döngüsünü sürekli tutar. Tıpkı bir karakulak gibi, görünmeden izler, enerji kaybını fark eder ve sessizce sistemi optimize eder. Enerjiyi geri kazandıran zarif bir avcı gibidir.",
+    "subtitle": "استعادة الحرارة",
+    "intro": "الوشق هو حيوان مفترس معروف بحساسيته غير العادية للبيئة. إنهم يجذبون الانتباه بهياكل أذنهم التي يمكنها اكتشاف أدنى حركة وتقنيات الصيد الخاصة بهم التي تحافظ على فقدان الطاقة عند الحد الأدنى. وهي من المخلوقات النادرة في الطبيعة التي لا تهدر الطاقة وتعطي الأولوية للكفاءة.\n\nيقوم هذا النظام، الذي يستشعر محيطه على الفور مثل الوشق، بتجديد الهواء الدافئ في الداخل دون إهداره. فهو يحافظ على ثبات دورة الهواء النقي مع تقليل فقدان الحرارة. مثل الوشق، فهو يراقب ما لا يمكن رؤيته، ويكتشف فقدان الطاقة ويعمل على تحسين النظام بصمت. إنه مثل صياد رشيق يستعيد الطاقة.",
     "models": [
       {
         "name": "Caracal D",
-        "type": "Kanal Bağlantılı Tavan Tipi Isı Geri Kazanım Ünitesi",
+        "type": "وحدة استرداد الحرارة من النوع السقفي مع وصلة مجرى الهواء",
         "image": "/images/products/caracal.png",
-        "description": "Kanal Bağlantılı Tavan Tipi Isı Geri Kazanım Ünitesi"
+        "description": "وحدة استرداد الحرارة من النوع السقفي مع وصلة مجرى الهواء"
       },
       {
         "name": "Caracal RD",
-        "type": "Konut Tipi Kanal Bağlantılı Isı Geri Kazanım Ünitesi",
+        "type": "وحدة استعادة الحرارة بأنبوبية من النوع السكني",
         "image": "/images/products/caracal.png",
-        "description": "Konut Tipi Kanal Bağlantılı Isı Geri Kazanım Ünitesi"
+        "description": "وحدة استعادة الحرارة بأنبوبية من النوع السكني"
       },
       {
         "name": "Caracal RC",
-        "type": "Konut Tipi Hücreli Isı Geri Kazanım Ünitesi",
+        "type": "وحدة استعادة الحرارة الخلوية السكنية",
         "image": "/images/products/caracal.png",
-        "description": "Konut Tipi Hücreli Isı Geri Kazanım Ünitesi"
+        "description": "وحدة استعادة الحرارة الخلوية السكنية"
       },
       {
         "name": "Caracal C",
-        "type": "Hücreli Tip Isı Geri Kazanım Ünitesi",
+        "type": "وحدة استعادة الحرارة من النوع الخلوي",
         "image": "/images/products/caracal.png",
-        "description": "Hücreli Tip Isı Geri Kazanım Ünitesi"
+        "description": "وحدة استعادة الحرارة من النوع الخلوي"
       },
       {
         "name": "Caracal DX D",
-        "type": "Isı Pompası Isı Geri Kazanım Ünitesi",
+        "type": "وحدة استعادة الحرارة بالمضخة الحرارية",
         "image": "/images/products/caracal.png",
-        "description": "Isı Pompası Isı Geri Kazanım Ünitesi"
+        "description": "وحدة استعادة الحرارة بالمضخة الحرارية"
       },
       {
         "name": "Caracal SX D",
-        "type": "Selüloz Isı Eşanjörlü Isı Geri Kazanım Ünitesi",
+        "type": "وحدة استعادة الحرارة مع مبادل حراري السليلوز",
         "image": "/images/products/caracal.png",
-        "description": "Selüloz Isı Eşanjörlü Isı Geri Kazanım Ünitesi"
+        "description": "وحدة استعادة الحرارة مع مبادل حراري السليلوز"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "kanalFanlari": {
     "title": "KOI",
-    "subtitle": "Kanal Fanları",
-    "intro": "Koi balıkları, zarif hareketleriyle dar su kanallarında bile akıcı şekilde ilerleyebilen simgesel canlılardır. Hem dayanıklı hem de uyumlu yapılarıyla, suyun içinde yönünü kaybetmeden sürekli akışı temsil ederler.\n\nKoi balığı gibi yönünü kaybetmeden kanal içinde akışı sürdürür. Bu fanlar,  kanal sistemleri boyunca istikrarlı hava hareketi sağlayarak sistemin sürekliliğini ve dengesini korur. Zarif ama güçlü bir taşıyıcıdır; tıpkı bir Koi’nin suyu huzurla yarması gibi.",
+    "subtitle": "مراوح القناة",
+    "intro": "تعد أسماك الكوي مخلوقات رمزية يمكنها التحرك بسلاسة حتى في القنوات المائية الضيقة بحركاتها الرشيقة. وببنيتها المتينة والمتناغمة، فهي تمثل تدفقًا مستمرًا في الماء دون فقدان الاتجاه.\n\nويواصل التدفق في القناة دون أن يفقد اتجاهه، مثل سمكة الكوي. تحافظ هذه المراوح على استمرارية النظام واستقراره من خلال توفير حركة هواء متسقة عبر أنظمة مجاري الهواء. إنها حاملة أنيقة لكنها قوية؛ تمامًا مثل كوي الذي يقسم الماء بسلام.",
     "models": [
       {
         "name": "Koi CB",
-        "type": "Yuvarlak Geriye Eğimli Kanal Tipi Fan",
+        "type": "مروحة دائرية من نوع القناة المنحنية للخلف",
         "image": "/images/products/koi-cb.png",
-        "description": "Yuvarlak Geriye Eğimli Kanal Tipi Fan"
+        "description": "مروحة دائرية من نوع القناة المنحنية للخلف"
       },
       {
         "name": "Koi RB",
-        "type": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan",
-        "image": "/images/products/koi-cb.png",
-        "description": "Dikdörtgen Geriye Eğimli Kanal Tipi Fan"
+        "type": "مروحة مستطيلة الشكل منحنية للخلف",
+        "image": "/images/products/koi-rb.png",
+        "description": "مروحة مستطيلة الشكل منحنية للخلف"
       },
       {
         "name": "Koi REB",
-        "type": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan",
-        "image": "/images/products/koi-cb.png",
-        "description": "Motor Hava Akımı Dışında Dikdörtgen Kanal Tipi Fan"
+        "type": "مروحة مستطيلة الشكل من نوع القناة، تدفق هواء خارج المحرك",
+        "image": "/images/products/koi-reb.png",
+        "description": "مروحة مستطيلة الشكل من نوع القناة، تدفق هواء خارج المحرك"
       },
       {
         "name": "Koi X",
-        "type": "Karma Akışlı Kanal Fanı",
-        "image": "/images/products/koi-cb.png",
-        "description": "Karma Akışlı Kanal Fanı"
+        "type": "مروحة قناة التدفق المختلط",
+        "image": "/images/products/koi-x.png",
+        "description": "مروحة قناة التدفق المختلط"
       },
       {
         "name": "Koi CP",
-        "type": "Yuvarlak Aksiyal Plastik Kanal Fanı",
-        "image": "/images/products/koi-cb.png",
-        "description": "Yuvarlak Aksiyal Plastik Kanal Fanı"
+        "type": "مروحة قناة بلاستيكية محورية مستديرة",
+        "image": "/images/products/koi-cp.png",
+        "description": "مروحة قناة بلاستيكية محورية مستديرة"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "klimaSantralleri": {
     "title": "TIGER",
-    "subtitle": "Klima Santralleri",
-    "intro": "Kaplan; doğanın en güçlü ve dengeli yırtıcılarından biridir. Gücünü yalnızca ihtiyaç anında kullanır, enerjisini stratejik olarak dağıtır ve bulunduğu ortama tam hâkimiyet kurar. Bu özellikler, merkezi hava yönetimini sağlayan klima santrallerinin karakteriyle doğrudan örtüşür.\n\nKaplan gibi kontrolü elden bırakmayan bu santraller, büyük hacimlerde hava kalitesini hassasiyetle yönetir. Gücünü sadece ihtiyaç duyulan noktaya yönlendirir, ortamın iklimini dengeler. Her zaman hazır, her zaman kararlı; sistemin kalbinde güçlü bir nefes gibi çalışır. Sessiz lider, görünmeyen kontrol merkezidir.",
+    "subtitle": "وحدات معالجة الهواء",
+    "intro": "نمر؛ إنها واحدة من أقوى الحيوانات المفترسة وأكثرها توازناً في الطبيعة. إنها تستخدم قوتها فقط عند الحاجة إليها، وتوزع طاقتها بشكل استراتيجي، وتهيمن بشكل كامل على بيئتها. تتوافق هذه الميزات بشكل مباشر مع طابع وحدات معالجة الهواء التي توفر إدارة الهواء المركزية.\n\nمحطات الطاقة هذه، التي لا تفقد السيطرة أبدًا مثل كابلان، تدير جودة الهواء بكميات كبيرة بدقة. إنه يوجه قوته فقط إلى النقطة التي تكون هناك حاجة إليها ويوازن مناخ البيئة. جاهزون دائمًا، مصممون دائمًا؛ إنه يعمل مثل نفس قوي في قلب النظام. القائد الصامت هو مركز التحكم غير المرئي.",
     "specs": [
       {
-        "label": "Hava Debisi",
+        "label": "تدفق الهواء",
         "value": "500 - 125.000 m³/h"
       },
       {
-        "label": "Basınç",
+        "label": "ضغط",
         "value": "10 - 3.000 Pa"
       },
       {
-        "label": "Şasi",
-        "value": "Anodize alüminyum"
+        "label": "الهيكل",
+        "value": "ألومنيوم مؤكسد"
       },
       {
-        "label": "Panel",
-        "value": "Çift cidarlı sandviç panel"
+        "label": "لوحة",
+        "value": "لوح ساندويتش ذو جدار مزدوج"
       },
       {
-        "label": "Fan Tipi",
-        "value": "Radyal fan / EC Plug fan"
+        "label": "نوع المروحة",
+        "value": "مروحة شعاعية / مروحة EC قابلة للتوصيل"
       },
       {
-        "label": "Isı Geri Kazanım",
-        "value": "Plakalı, rotary, su-glikol"
+        "label": "استعادة الحرارة",
+        "value": "لوحي، دوار، ماء-جليكول"
       }
     ],
     "productLines": [
       {
         "name": "Tiger S",
-        "type": "Standart Klima Santrali",
+        "type": "وحدة معالجة الهواء القياسية",
         "image": "/images/products/tiger-pre.png",
-        "description": "Standart Klima Santrali"
+        "description": "وحدة معالجة الهواء القياسية"
       },
       {
         "name": "Tiger HR",
-        "type": "Isı Geri Kazanımlı Klima Santrali",
+        "type": "وحدة معالجة الهواء لاستعادة الحرارة",
         "image": "/images/products/tiger-pre.png",
-        "description": "Isı Geri Kazanımlı Klima Santrali"
+        "description": "وحدة معالجة الهواء لاستعادة الحرارة"
       },
       {
         "name": "Tiger HP",
-        "type": "Hijyenik Klima Santrali",
+        "type": "وحدة معالجة الهواء الصحي",
         "image": "/images/products/tiger-pre.png",
-        "description": "Hijyenik Klima Santrali"
+        "description": "وحدة معالجة الهواء الصحي"
       },
       {
         "name": "Tiger RT",
-        "type": "Rooftop",
+        "type": "على السطح",
         "image": "/images/products/tiger-pre.png",
-        "description": "Rooftop"
+        "description": "على السطح"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "kovanTipiAksiyalFanlar": {
     "title": "MARLIN",
-    "subtitle": "Aksiyal Fanlar",
-    "intro": "Marlin, yani mızrak balığı; denizlerin en hızlı ve en doğrusal ilerleyen avcılarındandır. Kaslı yapısı, hedefe kilitlenen keskin burnu ve düşük sürtünmeli gövdesiyle yüksek hızda kararlı bir akışı temsil eder.\n\nMarlin gibi kararlı, güçlü ve yönlü çalışan bu fanlar, doğrudan hava akışı sağlamak için tasarlanmıştır. Minimum dirençle maksimum debi sunar; geniş alanlarda yüksek verimli havalandırma sağlar.",
+    "subtitle": "مراوح محورية",
+    "intro": "مارلين، أي سمكة الرمح. إنها واحدة من أسرع الحيوانات المفترسة في البحار وأكثرها خطية. إنه يمثل تدفقًا مستقرًا بسرعة عالية ببنيته العضلية وأنفه الحاد الذي يلتصق بالهدف وجسمه منخفض السحب.\n\nتم تصميم هذه المراوح، المستقرة والقوية والموجهة، مثل Marlin، لتوفير تدفق هواء مباشر. يوفر أقصى تدفق مع الحد الأدنى من المقاومة؛ يوفر تهوية عالية الكفاءة في المساحات الكبيرة.",
     "models": [
       {
         "name": "Marlin EMPTY",
-        "type": "Aksiyal Kovan Tipi Fan",
+        "type": "مروحة من نوع الخلية المحورية",
         "image": "/images/products/marlin.png",
-        "description": "Aksiyal Kovan Tipi Fan"
+        "description": "مروحة من نوع الخلية المحورية"
       },
       {
         "name": "Marlin S",
-        "type": "Kısa Kovan Tipi Aksiyal Fan",
+        "type": "كم قصير نوع مروحة محورية",
         "image": "/images/products/marlin.png",
-        "description": "Kısa Kovan Tipi Aksiyal Fan"
+        "description": "كم قصير نوع مروحة محورية"
       },
       {
         "name": "Marlin B",
-        "type": "Bifurkasyonlu Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/marlin.png",
-        "description": "Bifurkasyonlu Kovan Tipi Aksiyal Fan"
+        "type": "مروحة محورية من نوع الأكمام المتشعبة",
+        "image": "/images/products/marlin-b.png",
+        "description": "مروحة محورية من نوع الأكمام المتشعبة"
       },
       {
         "name": "Marlin 2S",
-        "type": "Seri Bağlantılı Kovan Tipi Aksiyal Fan",
-        "image": "/images/products/marlin.png",
-        "description": "Seri Bağlantılı Kovan Tipi Aksiyal Fan"
+        "type": "كم اتصال تسلسلي نوع مروحة محورية",
+        "image": "",
+        "description": "كم اتصال تسلسلي نوع مروحة محورية"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "mutfakFanlari": {
     "title": "BUTTERFLY",
-    "subtitle": "Mutfak Fanları",
-    "intro": "Kelebekler, hafif yapıları ve hassas hareketleriyle çevreyle nazik bir etkileşim kurar. Aynı zamanda, bulundukları ortamda havadaki değişimleri hızla algılayarak tepki verirler. Estetik görünümleriyle dikkat çekerken doğanın dengesine katkı sağlarlar. Bu özellikler, mutfak ortamındaki hassas hava yönetimiyle örtüşür.\n\nKelebek gibi narin görünen ama her kanat çırpışında çevresine yön veren bu fanlar, mutfağın kalbinde kokuyu, buharı ve dumanı zarifçe süpürüp uzaklaştırır. Tıpkı bir kelebeğin çiçekten havalanıp ortamdaki havayı değiştirmesi gibi, bu fan da mutfağı ferah ve yaşanabilir tutar. Sessizce yaklaşmaz, doğrudan etki eder — mutfağın görünmeyen ama vazgeçilmez kanat gücüdür.",
+    "subtitle": "مراوح المطبخ",
+    "intro": "تتفاعل الفراشات بلطف مع البيئة من خلال بنيتها الخفيفة وحركاتها الدقيقة. وفي الوقت نفسه، يكتشفون بسرعة التغيرات في الطقس في بيئتهم ويتفاعلون معها. وبينما تجذب الانتباه بمظهرها الجمالي، فإنها تساهم في توازن الطبيعة. تتوافق هذه الميزات مع الإدارة الدقيقة للهواء في بيئة المطبخ.\n\nهذه المراوح، التي تبدو حساسة مثل الفراشات ولكنها توجه محيطها مع كل رفرفة من أجنحتها، تكتسح الروائح والبخار والدخان بشكل أنيق في قلب المطبخ. تمامًا مثل الفراشة التي تنطلق من الزهرة وتغير الهواء في البيئة، تحافظ هذه المروحة على المطبخ فسيحًا وصالحًا للعيش. إنه لا يقترب بصمت، بل يعمل بشكل مباشر - قوة الجناح غير المرئية ولكن التي لا غنى عنها للمطبخ.",
     "models": [
       {
         "name": "Butterfly B",
-        "type": "Geriye Eğik Motor Hava Akımı Dışında Hücreli Mutfak Fanı",
+        "type": "تدفق هواء محرك منحني للخلف خارج مروحة المطبخ الخلوية",
         "image": "/images/products/butterfly-b.jpg",
-        "description": "Geriye Eğik Motor Hava Akımı Dışında Hücreli Mutfak Fanı"
+        "description": "تدفق هواء محرك منحني للخلف خارج مروحة المطبخ الخلوية"
       },
       {
         "name": "Butterfly ECO",
-        "type": "Hücreli Tip Mutfak Havalandırma Ünitesi",
+        "type": "وحدة تهوية المطبخ من النوع الخلوي",
         "image": "/images/products/butterfly-b.jpg",
-        "description": "Hücreli Tip Mutfak Havalandırma Ünitesi"
+        "description": "وحدة تهوية المطبخ من النوع الخلوي"
       },
       {
         "name": "Butterfly ECO HR",
-        "type": "Isı Geri Kazanımlı Hücreli Tip Mutfak Havalandırma Ünitesi",
+        "type": "وحدة تهوية المطبخ من النوع الخلوي لاسترداد الحرارة",
         "image": "/images/products/butterfly-b.jpg",
-        "description": "Isı Geri Kazanımlı Hücreli Tip Mutfak Havalandırma Ünitesi"
+        "description": "وحدة تهوية المطبخ من النوع الخلوي لاسترداد الحرارة"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "siginakFanlari": {
     "title": "FOX",
-    "subtitle": "Sığınak Fanları",
-    "intro": "Tilkiler; dar alanlara kolayca girip çıkabilen, tehlikeden hızlıca uzaklaşabilen ve her ortamda kendine güvenli bir yaşam alanı oluşturan çevik ve zeki canlılardır. Bu içgüdüsel koruma ve sığınma davranışı, sığınak fanlarının işleviyle birebir örtüşür.\n\nTilki gibi tehlikeyi sezdiğinde anında pozisyon alan bu fanlar, sığınaklarda hayati hava döngüsünü sürdürür. Dar hacimlerde etkili hava yönetimiyle içerideki yaşamı korur, dış ortamdan gelebilecek tehditleri filtreler. Zekice konumlanır, stratejik çalışır ve görünmeden korur — sığınağın sessiz bekçisidir.",
+    "subtitle": "عشاق المأوى",
+    "intro": "الثعالب إنها مخلوقات رشيقة وذكية يمكنها الدخول والخروج بسهولة من المساحات الضيقة، والابتعاد بسرعة عن الخطر، وإنشاء مساحة معيشة آمنة في أي بيئة. يتوافق سلوك الحماية والمأوى الغريزي هذا تمامًا مع وظيفة مراوح المأوى.\n\nهذه المراوح، التي تتخذ موقعها على الفور عندما تشعر بالخطر، مثل الثعالب، تحافظ على دورة الهواء الحيوية في الملاجئ. إنه يحمي الحياة في الداخل من خلال الإدارة الفعالة للهواء بأحجام ضيقة ويقوم بتصفية التهديدات التي قد تأتي من البيئة الخارجية. إنه يتخذ مواقعه بذكاء، ويعمل بشكل استراتيجي، ويحمي الغيب - الحارس الصامت للحرم.",
     "models": [
       {
         "name": "Fox D",
-        "type": "Kanal Tipi Sığınak Havalandırma Fanı",
-        "image": "/images/products/fox-c.png",
-        "description": "Kanal Tipi Sığınak Havalandırma Fanı"
+        "type": "مروحة تهوية المأوى من نوع القناة",
+        "image": "/images/products/fox-d.png?v=3",
+        "description": "مروحة تهوية المأوى من نوع القناة"
       },
       {
         "name": "Fox C",
-        "type": "Hücreli Tip Sığınak Havalandırma Fanı",
+        "type": "مروحة تهوية المأوى من النوع الخلوي",
         "image": "/images/products/fox-c.png",
-        "description": "Hücreli Tip Sığınak Havalandırma Fanı"
+        "description": "مروحة تهوية المأوى من النوع الخلوي"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "tavukcuFanlari": {
     "title": "CHICKEN",
-    "subtitle": "Tavukçu Fanları",
-    "intro": "Tavuklar, kapalı alanlarda sürekli hava dolaşımına ihtiyaç duyan narin canlılardır. Yüksek sıcaklık, nem ve amonyak gibi zararlı gazlara karşı hassastırlar. Bu hassasiyet, hava kalitesinin kontrolünü kritik hâle getirir — tıpkı bu fanların görev yaptığı tavuk üretim tesislerinde olduğu gibi.\n\nTavuk gibi hassas yaşam alanlarında görev yapan bu fanlar, ortam havasını sürekli taze tutar, ısıyı dengeler ve zararlı gazların birikmesini önler. Kümesin her köşesine can verir, üretimin sağlığını ve verimliliğini doğrudan etkiler. Sessiz değil, sadık bir koruyucu gibi çalışır; tavukların konforu, bu fanın sorumluluğundadır.",
+    "subtitle": "عشاق الدجاج",
+    "intro": "الدجاج مخلوقات حساسة تحتاج إلى دوران مستمر للهواء في الأماكن المغلقة. فهي حساسة لدرجات الحرارة المرتفعة والرطوبة والغازات الضارة مثل الأمونيا. هذه الحساسية تجعل التحكم في جودة الهواء أمرًا بالغ الأهمية - تمامًا كما هو الحال في منشآت إنتاج الدجاج حيث تعمل هذه المراوح.\n\nهذه المراوح التي تعمل في مناطق المعيشة الحساسة مثل الدجاج، تحافظ على الهواء المحيط نقيًا باستمرار، وتوازن درجة الحرارة وتمنع تراكم الغازات الضارة. إنه يعطي الحياة لكل ركن من أركان حظيرة الدجاج ويؤثر بشكل مباشر على صحة وكفاءة الإنتاج. إنه لا يعمل بصمت، بل كحامي مخلص؛ راحة الدجاج هي مسؤولية هذه المروحة.",
     "models": [
       {
         "name": "Chicken W",
-        "type": "Duvar Tipi Tavuk Çiftliği Havalandırma Fanı",
+        "type": "مروحة تهوية مزرعة الدجاج المثبتة على الحائط",
         "image": "/images/products/chicken.png",
-        "description": "Duvar Tipi Tavuk Çiftliği Havalandırma Fanı"
+        "description": "مروحة تهوية مزرعة الدجاج المثبتة على الحائط"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "tozToplamaUniteleri": {
     "title": "ELEPHANT",
-    "subtitle": "Toz Toplama Üniteleri",
-    "intro": "Filler; güçlü burunlarıyla hem büyük hacimli cisimleri kaldırabilir hem de en ince tozları algılayabilir. Bu olağanüstü hassasiyet ve güç dengesi, endüstriyel toz toplama sistemlerinin işleyişine doğrudan yansır: büyük kütleleri etkili biçimde çekmek ve kontrol altında tutmak.\n\nFil gibi güçlü ama kontrollü çalışan bu sistemler, yoğun üretim ortamlarında havadaki tozu güvenle yakalar. Yüksek debili emiş gücüyle ortamı arındırır; üretim sürecini daha sağlıklı, daha verimli hâle getirir. Bir fil gibi ağır işlerin altından kalkar, ama her nefesinde temiz bir soluk kazandırır.",
+    "subtitle": "وحدات جمع الغبار",
+    "intro": "الفيلة. بفضل أنفهم القوي، يمكنهم رفع الأشياء الكبيرة واكتشاف الغبار الناعم. ينعكس هذا التوازن الاستثنائي بين الدقة والقوة بشكل مباشر في عمل أنظمة جمع الغبار الصناعية: جذب الكتل الكبيرة وإبقائها تحت السيطرة بشكل فعال.\n\nهذه الأنظمة، التي تعمل بقوة ولكن يتم التحكم فيها مثل الفيلة، تلتقط الغبار الموجود في الهواء بأمان في بيئات الإنتاج المزدحمة. إنه ينقي البيئة بفضل قوة الشفط ذات معدل التدفق العالي؛ فهو يجعل عملية الإنتاج أكثر صحة وأكثر كفاءة. إنه يتعامل مع الأعمال الشاقة مثل الفيل، ولكنه يمنح نفسًا من الهواء النقي مع كل نفس.",
     "models": [
       {
         "name": "Elephant BF",
-        "type": "Torbalı Toz Toplama Ünitesi",
+        "type": "وحدة جمع غبار الأكياس",
         "image": "/images/products/elephant.png",
-        "description": "Torbalı Toz Toplama Ünitesi"
+        "description": "وحدة جمع غبار الأكياس"
       },
       {
         "name": "Elephant CF",
-        "type": "Kartuş Tipi Toz Toplama Ünitesi",
+        "type": "وحدة جمع الغبار من نوع الخرطوشة",
         "image": "/images/products/elephant.png",
-        "description": "Kartuş Tipi Toz Toplama Ünitesi"
+        "description": "وحدة جمع الغبار من نوع الخرطوشة"
       },
       {
         "name": "Elephant CY",
-        "type": "Siklon Tipi Toz Toplama Ünitesi",
+        "type": "وحدة جمع الغبار من النوع الإعصاري",
         "image": "/images/products/elephant.png",
-        "description": "Siklon Tipi Toz Toplama Ünitesi"
+        "description": "وحدة جمع الغبار من النوع الإعصاري"
       },
       {
         "name": "Elephant WS",
-        "type": "Islak Tip (Wet Scrubber) Toz Toplama Ünitesi",
+        "type": "وحدة تجميع غبار الغسيل الرطب",
         "image": "/images/products/elephant.png",
-        "description": "Islak Tip (Wet Scrubber) Toz Toplama Ünitesi"
+        "description": "وحدة تجميع غبار الغسيل الرطب"
       },
       {
         "name": "Elephant CENTRAL",
-        "type": "Merkezi Toz Toplama Sistemi",
+        "type": "نظام جمع الغبار المركزي",
         "image": "/images/products/elephant.png",
-        "description": "Merkezi Toz Toplama Sistemi"
+        "description": "نظام جمع الغبار المركزي"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "menfezPanjurlar": {
     "title": "ALPACA",
-    "subtitle": "Menfez, Anemostad, Panjurlar",
-    "intro": "Alpakalar, uyumlu yapıları ve yumuşak duruşlarıyla bulundukları ortama nazikçe entegre olan canlılardır. Sessiz, dikkat çekmeyen ama bulunduğu çevreye katkı sağlayan yapılarıyla bilinirler. Görünüşte sade, işlevde ise tamamlayıcıdırlar — tıpkı hava dağıtım sistemlerinin son elemanları gibi.\n\nAlpaka gibi ortama huzurla entegre olan bu elemanlar, havayı doğru noktalara estetik ve dengeli biçimde dağıtır. Ne çok öne çıkar ne de kaybolur; sistemin mimarisine zarifçe uyum sağlar. Her hava akımının son dokunuşunda onun izi vardır. Sessiz bir işçi, görünmez bir denge ustasıdır.",
+    "subtitle": "فتحات، أنيموستادس، مصاريع",
+    "intro": "الألبكة هي مخلوقات تندمج بلطف في بيئتها ببنيتها المتناغمة ووقفتها الناعمة. وهي معروفة بهياكلها الهادئة وغير المزعجة التي تساهم في بيئتها. إنها بسيطة المظهر ولكنها متكاملة في الوظيفة - مثل العناصر النهائية لأنظمة توزيع الهواء.\n\nهذه العناصر، مثل الألبكة، تندمج بسلام في البيئة وتوزع الهواء على النقاط الصحيحة بطريقة جمالية ومتوازنة. لا تبرز ولا تختفي. يتناسب بشكل أنيق مع بنية النظام. هناك أثره في اللمسة الأخيرة لكل تيار هوائي. إنه عامل صامت، سيد التوازن غير المرئي.",
     "models": [
       {
         "name": "Alpaca GL-SD",
-        "type": "Tek Sıra Kanatlı Menfez",
+        "type": "بربخ بجناح صف واحد",
         "image": "/images/products/alpaca-am.png",
-        "description": "Tek Sıra Kanatlı Menfez"
+        "description": "بربخ بجناح صف واحد"
       },
       {
         "name": "Alpaca GL-DD",
-        "type": "Çift Sıra Kanatlı Menfez",
+        "type": "شبكة الجناح ذات الصف المزدوج",
         "image": "/images/products/alpaca-am.png",
-        "description": "Çift Sıra Kanatlı Menfez"
+        "description": "شبكة الجناح ذات الصف المزدوج"
       },
       {
         "name": "Alpaca GL-RA",
-        "type": "Dönüş Havası Menfezi",
+        "type": "عودة تنفيس الهواء",
         "image": "/images/products/alpaca-am.png",
-        "description": "Dönüş Havası Menfezi"
+        "description": "عودة تنفيس الهواء"
       },
       {
         "name": "Alpaca GL-PRF",
-        "type": "Perfore Menfez",
+        "type": "مصبغة مثقبة",
         "image": "/images/products/alpaca-am.png",
-        "description": "Perfore Menfez"
+        "description": "مصبغة مثقبة"
       },
       {
         "name": "Alpaca GL-OB",
-        "type": "Karşıt (Opposed) Kanatlı Menfez",
+        "type": "شبكة الجناح المتعارضة",
         "image": "/images/products/alpaca-am.png",
-        "description": "Karşıt (Opposed) Kanatlı Menfez"
+        "description": "شبكة الجناح المتعارضة"
       },
       {
         "name": "Alpaca DF-SQ",
-        "type": "Kare Tavan Difüzör",
+        "type": "ناشر سقف مربع",
         "image": "/images/products/alpaca-am.png",
-        "description": "Kare Tavan Difüzör"
+        "description": "ناشر سقف مربع"
       },
       {
         "name": "Alpaca DF-CR",
-        "type": "Dairesel Difüzör",
+        "type": "الناشر الدائري",
         "image": "/images/products/alpaca-am.png",
-        "description": "Dairesel Difüzör"
+        "description": "الناشر الدائري"
       },
       {
         "name": "Alpaca DF-LS",
-        "type": "Lineer Slot Difüzör",
+        "type": "الناشر فتحة خطية",
         "image": "/images/products/alpaca-am.png",
-        "description": "Lineer Slot Difüzör"
+        "description": "الناشر فتحة خطية"
       },
       {
         "name": "Alpaca DF-JET",
-        "type": "Jet Nozül Difüzör",
+        "type": "ناشر الفوهة النفاثة",
         "image": "/images/products/alpaca-am.png",
-        "description": "Jet Nozül Difüzör"
+        "description": "ناشر الفوهة النفاثة"
       },
       {
         "name": "Alpaca DF-ADJ",
-        "type": "Ayarlanabilir Kanatlı Swirl Difüzör",
+        "type": "ناشر دوار ذو شفرة قابلة للتعديل",
         "image": "/images/products/alpaca-am.png",
-        "description": "Ayarlanabilir Kanatlı Swirl Difüzör"
+        "description": "ناشر دوار ذو شفرة قابلة للتعديل"
       },
       {
         "name": "Alpaca LV-FX",
-        "type": "Sabit Hava Panjuru",
+        "type": "كوة الهواء الثابتة",
         "image": "/images/products/alpaca-am.png",
-        "description": "Sabit Hava Panjuru"
+        "description": "كوة الهواء الثابتة"
       },
       {
         "name": "Alpaca LV-ADJ",
-        "type": "Ayarlanabilir Panjur",
+        "type": "الستائر القابلة للتعديل",
         "image": "/images/products/alpaca-am.png",
-        "description": "Ayarlanabilir Panjur"
+        "description": "الستائر القابلة للتعديل"
       },
       {
         "name": "Alpaca LV-WP",
-        "type": "Dış Hava Panjuru",
+        "type": "كوة الهواء في الهواء الطلق",
         "image": "/images/products/alpaca-am.png",
-        "description": "Dış Hava Panjuru"
+        "description": "كوة الهواء في الهواء الطلق"
       },
       {
         "name": "Alpaca LV-AC",
-        "type": "Akustik Panjur",
+        "type": "مصراع الصوتية",
         "image": "/images/products/alpaca-am.png",
-        "description": "Akustik Panjur"
+        "description": "مصراع الصوتية"
       },
       {
         "name": "Alpaca AM-SQ",
-        "type": "Kare Tavan Anemostat",
+        "type": "أنيموستات السقف المربع",
         "image": "/images/products/alpaca-am.png",
-        "description": "Kare Tavan Anemostat"
+        "description": "أنيموستات السقف المربع"
       },
       {
         "name": "Alpaca AM-CR",
-        "type": "Dairesel Tavan Anemostat",
+        "type": "أنيموستات السقف الدائري",
         "image": "/images/products/alpaca-am.png",
-        "description": "Dairesel Tavan Anemostat"
+        "description": "أنيموستات السقف الدائري"
       },
       {
         "name": "Alpaca AM-ADJ",
-        "type": "Ayarlanabilir Kanatlı Anemostat",
+        "type": "أنيموستات الجناح قابل للتعديل",
         "image": "/images/products/alpaca-am.png",
-        "description": "Ayarlanabilir Kanatlı Anemostat"
+        "description": "أنيموستات الجناح قابل للتعديل"
       },
       {
         "name": "Alpaca SP-FR",
-        "type": "Yangına Dayanımlı Menfez",
+        "type": "شبكة مقاومة للحريق",
         "image": "/images/products/alpaca-am.png",
-        "description": "Yangına Dayanımlı Menfez"
+        "description": "شبكة مقاومة للحريق"
       },
       {
         "name": "Alpaca SP-DE",
-        "type": "Dekoratif Menfez",
+        "type": "مصبغة ديكور",
         "image": "/images/products/alpaca-am.png",
-        "description": "Dekoratif Menfez"
+        "description": "مصبغة ديكور"
       },
       {
         "name": "Alpaca SP-AC",
-        "type": "Akustik Menfez",
+        "type": "تنفيس صوتي",
         "image": "/images/products/alpaca-am.png",
-        "description": "Akustik Menfez"
+        "description": "تنفيس صوتي"
       },
       {
         "name": "Alpaca SP-JET",
-        "type": "Yüksek Debili Jet Difüzör",
+        "type": "ناشر نفاث عالي التدفق",
         "image": "/images/products/alpaca-am.png",
-        "description": "Yüksek Debili Jet Difüzör"
+        "description": "ناشر نفاث عالي التدفق"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "filtreler": {
     "title": "SCALLOP",
-    "subtitle": "Filtreler",
-    "intro": "Doğal yapısındaki radyal çizgiler ve katmanlı, gözenekli yüzeyiyle deniz tarağı; suyu ve partikülleri süzme işlevini doğanın içinde ustalıkla gerçekleştiren canlılardan biridir. Filtre sistemlerinin çok katmanlı ve seçici yapısına ilham verir.\n\nDeniz tarağı gibi gözenekli ve katmanlı yapısıyla, ortamdan istenmeyen parçacıkları ustalıkla süzen ve temiz hava geçişine olanak sağlayan sistemler.",
+    "subtitle": "المرشحات",
+    "intro": "مع خطوطه الشعاعية الطبيعية وسطحه المسامي متعدد الطبقات، الإسكالوب؛ وهو أحد الكائنات الحية التي تقوم بوظيفة تصفية المياه والجزيئات الموجودة في الطبيعة بمهارة. إنه يلهم البنية المتعددة الطبقات والانتقائية لأنظمة التصفية.\n\nالأنظمة التي تقوم بتصفية الجزيئات غير المرغوب فيها من البيئة بمهارة وتسمح للهواء النظيف بالمرور عبر بنيتها المسامية والطبقية مثل المحار.",
     "models": [
       {
         "name": "Scallop ABF",
-        "type": "Anti-Bakteriyel Filtre",
-        "image": "/images/products/cyclone.png",
-        "description": "Anti-Bakteriyel Filtre"
+        "type": "فلتر مضاد للبكتيريا",
+        "image": "/images/products/scallop-abf.png",
+        "description": "فلتر مضاد للبكتيريا"
       },
       {
         "name": "Scallop CF",
-        "type": "Karbon Filtre",
-        "image": "/images/products/cyclone.png",
-        "description": "Karbon Filtre"
+        "type": "فلتر الكربون",
+        "image": "/images/products/scallop-cf.png",
+        "description": "فلتر الكربون"
       },
       {
         "name": "Scallop FF",
-        "type": "Fiberglas Filtre",
-        "image": "/images/products/cyclone.png",
-        "description": "Fiberglas Filtre"
+        "type": "مرشح الألياف الزجاجية",
+        "image": "",
+        "description": "مرشح الألياف الزجاجية"
       },
       {
         "name": "Scallop GF",
-        "type": "Cam Elyaf Panel Filtre",
+        "type": "مرشح لوحة الألياف الزجاجية",
         "image": "/images/products/cyclone.png",
-        "description": "Cam Elyaf Panel Filtre"
+        "description": "مرشح لوحة الألياف الزجاجية"
       },
       {
         "name": "Scallop MF",
-        "type": "Metal Filtre",
-        "image": "/images/products/cyclone.png",
-        "description": "Metal Filtre"
+        "type": "مرشح معدني",
+        "image": "/images/products/scallop-mf.png",
+        "description": "مرشح معدني"
       },
       {
         "name": "Scallop BF",
-        "type": "Torba Filtre",
-        "image": "/images/products/cyclone.png",
-        "description": "Torba Filtre"
+        "type": "مرشح الحقيبة",
+        "image": "/images/products/scallop-bf.png",
+        "description": "مرشح الحقيبة"
       },
       {
         "name": "Scallop HP",
-        "type": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)",
-        "image": "/images/products/cyclone.png",
-        "description": "Hepa Filtre (Yüksek Verimli Partiküllü Hava Filtresi)"
+        "type": "فلتر هيبا (فلتر هواء جسيمات عالي الكفاءة)",
+        "image": "/images/products/scallop-hp.png",
+        "description": "فلتر هيبا (فلتر هواء جسيمات عالي الكفاءة)"
       },
       {
         "name": "Scallop UF",
-        "type": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)",
-        "image": "/images/products/cyclone.png",
-        "description": "Ulpa Filtre (Ultra Düşük Partikül Tutucu Filtre)"
+        "type": "مرشح Ulpa (مرشح احتجاز الجسيمات المنخفض للغاية)",
+        "image": "",
+        "description": "مرشح Ulpa (مرشح احتجاز الجسيمات المنخفض للغاية)"
       },
       {
         "name": "Scallop CCF",
-        "type": "Silindirik Karbon Filtre",
-        "image": "/images/products/cyclone.png",
-        "description": "Silindirik Karbon Filtre"
+        "type": "فلتر كربون أسطواني",
+        "image": "",
+        "description": "فلتر كربون أسطواني"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "titresimIzolatorleri": {
     "title": "ROO",
-    "subtitle": "Titreşim İzolatörleri",
-    "intro": "Kanguru – Doğanın ustalıkla tasarlanmış denge ustası. Güçlü arka bacaklarıyla titreşimi emer, stabil zeminde ilerlemeyi mümkün kılar. Roo, yük altında bile zıplamadan sarsılmaz.\n\nRoo serisi titreşim izolatörleri, makinelerinizin ve yapılarınızın titreşim kaynaklı hasarlardan korunmasını sağlar. Yüksek esneklik, darbe sönümleme ve uzun ömürlü kullanım için optimize edilmiştir.\r\nTıpkı bir kangurunun yere yumuşak inişi gibi, Roo da titreşimi sessizce absorbe eder.",
+    "subtitle": "عوازل الاهتزاز",
+    "intro": "الكنغر - سيد التوازن في الطبيعة. يمتص الاهتزاز بأرجله الخلفية القوية ويجعل من الممكن المضي قدمًا على أرض مستقرة. لا يرتد Roo أو يرتد، حتى تحت الحمل.\n\nتعمل عوازل الاهتزاز من سلسلة Roo على حماية أجهزتك وهياكلك من الأضرار الناجمة عن الاهتزاز. مُحسّن للمرونة العالية وامتصاص الصدمات والاستخدام طويل الأمد.\r\nتمامًا مثل الكنغر الذي يهبط بهدوء على الأرض، يمتص رو الاهتزازات بصمت.",
     "models": [
       {
         "name": "Roo T1 NIP",
-        "type": "Neopren Titreşim Yalıtım Pedi",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Neopren Titreşim Yalıtım Pedi"
+        "type": "وسادة عزل الاهتزاز من النيوبرين",
+        "image": "/images/products/roo-t1-nip.png",
+        "description": "وسادة عزل الاهتزاز من النيوبرين"
       },
       {
         "name": "Roo T1 FIP",
-        "type": "Fiberglas Titreşim Yalıtım Pedi",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Fiberglas Titreşim Yalıtım Pedi"
+        "type": "وسادة عزل الاهتزاز من الألياف الزجاجية",
+        "image": "/images/products/roo-t1-fip.png",
+        "description": "وسادة عزل الاهتزاز من الألياف الزجاجية"
       },
       {
         "name": "Roo T2 NIM",
-        "type": "Neopren Titreşim Yalıtım Takozu",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Neopren Titreşim Yalıtım Takozu"
+        "type": "تركيب عزل الاهتزاز من النيوبرين",
+        "image": "/images/products/roo-t2-nim.png",
+        "description": "تركيب عزل الاهتزاز من النيوبرين"
       },
       {
         "name": "Roo T2 FIM",
-        "type": "Fiberglas Titreşim Yalıtım Takozu",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Fiberglas Titreşim Yalıtım Takozu"
+        "type": "تركيب عزل اهتزازات الألياف الزجاجية",
+        "image": "/images/products/roo-t2-fim.png",
+        "description": "تركيب عزل اهتزازات الألياف الزجاجية"
       },
       {
         "name": "Roo T3 OSI",
-        "type": "Açık Yaylı Titreşim İzolatörü",
+        "type": "فتح الربيع عازل الاهتزاز",
         "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Açık Yaylı Titreşim İzolatörü"
+        "description": "فتح الربيع عازل الاهتزاز"
       },
       {
         "name": "Roo T3 HNG-S",
-        "type": "Yaylı Asma Tip İzolatör",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Yaylı Asma Tip İzolatör"
+        "type": "عازل من النوع المعلق بزنبرك",
+        "image": "",
+        "description": "عازل من النوع المعلق بزنبرك"
       },
       {
         "name": "Roo T4 HSI",
-        "type": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü",
-        "image": "/images/products/yayli-titresim-izolatoru.png",
-        "description": "Muhafazalı / Sismik Yaylı Titreşim İzolatörü"
+        "type": "مغلق / عازل اهتزاز زنبركي",
+        "image": "",
+        "description": "مغلق / عازل اهتزاز زنبركي"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "otomasyonPanolari": {
     "title": "HAWK",
-    "subtitle": "Otomasyon Panoları",
-    "intro": "Şahinler; keskin görüşleri, yüksek irtifadan hedefi anında tespit edebilme yetenekleri ve olağanüstü odaklanmış uçuş kararlılıklarıyla bilinen yırtıcılardır. Doğada çevresine hâkim, tepeden tüm alanı kontrol eden bu canlılar, hassasiyet ve hızlı reaksiyon gerektiren durumların sembolüdür.\n\nHawk serisi otomasyon panoları, tıpkı bir şahinin geniş perspektifli kontrol yeteneği gibi, fan ve HVAC sistemlerinin tüm bileşenlerini tek merkezden güvenilir şekilde yönetmek için tasarlanmıştır.\r\nHızlı tepki süresi, hassas izleme kabiliyeti ve akıllı kontrol mimarisi sayesinde, karmaşık senaryolarda dahi sistemi kararlı tutar.\r\nEnerji yönetimi, güvenlik mantığı, hassas kumanda ve uzaktan izleme özellikleriyle Hawk; projeye “üstten bakan” bir kontrol zekâsı kazandırır.\r\nŞahin metaforunun temsil ettiği sezgi, hız ve hâkimiyet; bu panoların mühendislik karakterinin doğrudan karşılığıdır.",
+    "subtitle": "لوحات الأتمتة",
+    "intro": "الصقور. إنها حيوانات مفترسة معروفة برؤيتها الحادة، وقدرتها على اكتشاف الهدف على الفور من ارتفاعات عالية، وتصميم الطيران المركز بشكل استثنائي. هذه المخلوقات التي تهيمن على محيطها في الطبيعة وتتحكم في المنطقة بأكملها من الأعلى، هي رمز المواقف التي تتطلب الحساسية ورد الفعل السريع.\n\nتم تصميم لوحات التشغيل الآلي من سلسلة Hawk لإدارة جميع مكونات المروحة وأنظمة التدفئة والتهوية وتكييف الهواء (HVAC) بشكل موثوق من مركز واحد، تمامًا مثل قدرة التحكم في المنظور الواسع للصقور.\r\nبفضل وقت الاستجابة السريع وقدرته على المراقبة الدقيقة وبنية التحكم الذكية، فإنه يحافظ على استقرار النظام حتى في السيناريوهات المعقدة.\r\nبفضل إدارة الطاقة ومنطق الأمان والتحكم الدقيق وميزات المراقبة عن بعد، فإن Hawk؛ فهو يوفر معلومات تحكم \"من الأعلى إلى الأسفل\" للمشروع.\r\nالحدس والسرعة والهيمنة المتمثلة في استعارة الصقر؛ وهذا يتوافق بشكل مباشر مع الطابع الهندسي للألواح.",
     "models": [
       {
         "name": "Hawk JF",
-        "type": "Jet Fan Sistemi Panosu",
+        "type": "لوحة نظام المروحة النفاثة",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Jet Fan Sistemi Panosu"
+        "description": "لوحة نظام المروحة النفاثة"
       },
       {
         "name": "Hawk S",
-        "type": "Duman Ve Isı Tahliye Fanı Panosu",
+        "type": "لوحة مروحة إخلاء الدخان والحرارة",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Duman Ve Isı Tahliye Fanı Panosu"
+        "description": "لوحة مروحة إخلاء الدخان والحرارة"
       },
       {
         "name": "Hawk PS",
-        "type": "Merdiven Ve Basınçlandırma Panosu",
+        "type": "الدرج ولوحة الضغط",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Merdiven Ve Basınçlandırma Panosu"
+        "description": "الدرج ولوحة الضغط"
       },
       {
         "name": "Hawk VF",
-        "type": "Havalandırma Fan Panosu",
+        "type": "لوحة مروحة التهوية",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Havalandırma Fan Panosu"
+        "description": "لوحة مروحة التهوية"
       },
       {
         "name": "Hawk AHU",
-        "type": "Klima Santrali (Ahu) Panosu",
+        "type": "لوحة وحدة معالجة الهواء (Ahu).",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Klima Santrali (Ahu) Panosu"
+        "description": "لوحة وحدة معالجة الهواء (Ahu)."
       },
       {
         "name": "Hawk HRU",
-        "type": "Isı Geri Kazanım Ünitesi Panosu",
+        "type": "لوحة وحدة استعادة الحرارة",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Isı Geri Kazanım Ünitesi Panosu"
+        "description": "لوحة وحدة استعادة الحرارة"
       },
       {
         "name": "Hawk FAP",
-        "type": "Yangın Algılama Panosu",
+        "type": "لوحة الكشف عن الحرائق",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Yangın Algılama Panosu"
+        "description": "لوحة الكشف عن الحرائق"
       },
       {
         "name": "Hawk CO",
-        "type": "Karbonmonoksit Sistemi Panosu",
+        "type": "لوحة نظام أول أكسيد الكربون",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Karbonmonoksit Sistemi Panosu"
+        "description": "لوحة نظام أول أكسيد الكربون"
       },
       {
         "name": "Hawk X",
-        "type": "Proje Bazlı Özel Panolar",
+        "type": "اللوحات الخاصة القائمة على المشروع",
         "image": "/images/products/otomasyon-pano.png",
-        "description": "Proje Bazlı Özel Panolar"
+        "description": "اللوحات الخاصة القائمة على المشروع"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "plcOtomasyon": {
     "title": "PLC",
     "subtitle": "PLC",
-    "intro": "Panasonic Programlanabilir Lojik Kontrolör",
+    "intro": "وحدة التحكم المنطقية القابلة للبرمجة من باناسونيك",
     "models": [
       {
         "name": "Plc Panasonic PLC",
-        "type": "Panasonic Programlanabilir Lojik Kontrolör",
+        "type": "وحدة التحكم المنطقية القابلة للبرمجة من باناسونيك",
         "image": "/images/products/otomasyon-plc.png",
-        "description": "Panasonic Programlanabilir Lojik Kontrolör"
+        "description": "وحدة التحكم المنطقية القابلة للبرمجة من باناسونيك"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "sensorler": {
-    "title": "SENSÖR",
+    "title": "الاستشعار",
     "subtitle": "SENSE",
-    "intro": "PI-PU Fark Basınç Sensörü; Fark Basınç Anahtarı; Sıcaklık Sensörü; Isı Sensörü; Duman Sensörü/ Kanal Tipi Duman Dedektörü; Titreşim Sensörü; Hava Kalite Sensörü; Hava Akış Sensörü; Sıcaklık Termostatı; CO Sensörü",
+    "intro": "مستشعر الضغط التفاضلي PI-PU؛ مفتاح الضغط التفاضلي؛ مستشعر درجة الحرارة؛ مستشعر الحرارة؛ مستشعر الدخان/ كاشف الدخان من نوع القناة؛ مستشعر الاهتزاز؛ مستشعر جودة الهواء؛ مستشعر تدفق الهواء؛ ترموستات درجة الحرارة؛ مستشعر ثاني أكسيد الكربون",
     "models": [
       {
         "name": "Sense DPS-PIPU",
-        "type": "PI-PU Fark Basınç Sensörü",
-        "image": "/images/products/otomasyon-sensor.png",
-        "description": "PI-PU Fark Basınç Sensörü"
+        "type": "مستشعر الضغط التفاضلي PI-PU",
+        "image": "/images/products/sense-dps-pipu.png",
+        "description": "مستشعر الضغط التفاضلي PI-PU"
       },
       {
         "name": "Sense DPS",
-        "type": "Fark Basınç Anahtarı",
-        "image": "/images/products/otomasyon-sensor.png",
-        "description": "Fark Basınç Anahtarı"
+        "type": "مفتاح الضغط التفاضلي",
+        "image": "/images/products/sense-dps.png?v=2",
+        "description": "مفتاح الضغط التفاضلي"
       },
       {
         "name": "Sense TS",
-        "type": "Sıcaklık Sensörü",
-        "image": "/images/products/otomasyon-sensor.png",
-        "description": "Sıcaklık Sensörü"
+        "type": "مستشعر درجة الحرارة",
+        "image": "/images/products/sense-ts.png",
+        "description": "مستشعر درجة الحرارة"
       },
       {
         "name": "Sense HS",
-        "type": "Isı Sensörü",
-        "image": "/images/products/otomasyon-sensor.png",
-        "description": "Isı Sensörü"
+        "type": "مستشعر الحرارة",
+        "image": "/images/products/sense-hs.png",
+        "description": "مستشعر الحرارة"
       },
       {
         "name": "Sense SS",
-        "type": "Duman Sensörü/ Kanal Tipi Duman Dedektörü",
+        "type": "جهاز استشعار الدخان / كاشف الدخان من نوع القناة",
         "image": "/images/products/otomasyon-sensor.png",
-        "description": "Duman Sensörü/ Kanal Tipi Duman Dedektörü"
+        "description": "جهاز استشعار الدخان / كاشف الدخان من نوع القناة"
       },
       {
         "name": "Sense VS",
-        "type": "Titreşim Sensörü",
+        "type": "مستشعر الاهتزاز",
         "image": "/images/products/otomasyon-sensor.png",
-        "description": "Titreşim Sensörü"
+        "description": "مستشعر الاهتزاز"
       },
       {
         "name": "Sense AQS",
-        "type": "Hava Kalite Sensörü",
+        "type": "مستشعر جودة الهواء",
         "image": "/images/products/otomasyon-sensor.png",
-        "description": "Hava Kalite Sensörü"
+        "description": "مستشعر جودة الهواء"
       },
       {
         "name": "Sense AFS",
-        "type": "Hava Akış Sensörü",
+        "type": "مستشعر تدفق الهواء",
         "image": "/images/products/otomasyon-sensor.png",
-        "description": "Hava Akış Sensörü"
+        "description": "مستشعر تدفق الهواء"
       },
       {
         "name": "Sense HT",
-        "type": "Sıcaklık Termostatı",
+        "type": "ترموستات درجة الحرارة",
         "image": "/images/products/otomasyon-sensor.png",
-        "description": "Sıcaklık Termostatı"
+        "description": "ترموستات درجة الحرارة"
       },
       {
         "name": "Sense CO",
-        "type": "CO Sensörü",
+        "type": "مستشعر ثاني أكسيد الكربون",
         "image": "/images/products/otomasyon-sensor.png",
-        "description": "CO Sensörü"
+        "description": "مستشعر ثاني أكسيد الكربون"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "kontrolKartlari": {
-    "title": "NEXUS",
-    "subtitle": "NEXUS",
-    "intro": "Kontrol Kartı; Panel Termostat; Duman ve Basınç Sensörleri Haberleşme Kartı; CO Paneli",
+    "title": "العلاقة",
+    "subtitle": "العلاقة",
+    "intro": "بطاقة التحكم؛ ترموستات اللوحة؛ بطاقة اتصال لأجهزة استشعار الدخان والضغط؛ لوحة ثاني أكسيد الكربون",
     "models": [
       {
         "name": "Nexus FCB",
-        "type": "Kontrol Kartı",
+        "type": "بطاقة التحكم",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
-        "description": "Kontrol Kartı"
+        "description": "بطاقة التحكم"
       },
       {
         "name": "Nexus RT",
-        "type": "Panel Termostat",
+        "type": "ترموستات اللوحة",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
-        "description": "Panel Termostat"
+        "description": "ترموستات اللوحة"
       },
       {
         "name": "Nexus ICB",
-        "type": "Duman ve Basınç Sensörleri Haberleşme Kartı",
+        "type": "بطاقة اتصال لحساسات الدخان والضغط",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
-        "description": "Duman ve Basınç Sensörleri Haberleşme Kartı"
+        "description": "بطاقة اتصال لحساسات الدخان والضغط"
       },
       {
         "name": "Nexus CO",
-        "type": "CO Paneli",
+        "type": "لوحة ثاني أكسيد الكربون",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
-        "description": "CO Paneli"
+        "description": "لوحة ثاني أكسيد الكربون"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "gucElektronigi": {
     "title": "LION",
-    "subtitle": "Güç Elektroniği",
-    "intro": "Aslan, doğanın en güçlü ve karizmatik lideridir. Sahip olduğu kudret, kararlılık ve hâkimiyet duygusu ile çevresine güven verir. Sessiz ama etkili duruşu, enerjisini doğru anda ve doğru şekilde kullanması ile bilinir.\n\nLion serisi güç elektroniği ürünleri, sistemin kalbinde liderlik rolünü üstlenir. Kritik durumlarda kararlı tepki verir; yüksek enerji taleplerinde bile güvenle çalışır. Tıpkı bir aslan gibi sessizce ama etkili biçimde kontrolü elinde tutar. Dayanıklılığı, istikrarı ve sistem üzerindeki hâkimiyeti ile her koşulda güçlü kalır.",
+    "subtitle": "إلكترونيات الطاقة",
+    "intro": "الأسد هو زعيم الطبيعة الأقوى والأكثر جاذبية. يمنح الثقة لمن حوله بقوته وتصميمه وإحساسه بالهيمنة. وهو معروف بموقفه الهادئ ولكن الفعال وقدرته على استخدام طاقته في اللحظة المناسبة وبالطريقة الصحيحة.\n\nتأخذ منتجات إلكترونيات الطاقة من سلسلة Lion الدور القيادي في قلب النظام. يتفاعل بشكل حاسم في المواقف الحرجة؛ تعمل بأمان حتى في ظل متطلبات الطاقة العالية. تمامًا مثل الأسد، فهو يحافظ على سيطرته بصمت ولكن بفعالية. يظل قويًا في جميع الظروف بفضل متانته وثباته وهيمنته على النظام.",
     "models": [
       {
         "name": "Lion FC",
-        "type": "Frekans Dönüştürücü",
+        "type": "محول التردد",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "Frekans Dönüştürücü"
+        "description": "محول التردد"
       },
       {
         "name": "Lion FC-FD",
-        "type": "Yangın Modlu Frekans Dönüştürücü",
+        "type": "محول التردد مع وضع النار",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "Yangın Modlu Frekans Dönüştürücü"
+        "description": "محول التردد مع وضع النار"
       },
       {
         "name": "Lion SS",
-        "type": "Yumuşak Yol Verici (Soft Starter)",
+        "type": "بداية لينة",
         "image": "/images/products/frekans-inventoru.png",
-        "description": "Yumuşak Yol Verici (Soft Starter)"
+        "description": "بداية لينة"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "disUniteler": {
     "title": "POLAR BEAR",
-    "subtitle": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri",
-    "intro": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi; Orta Tip Paket Endüstriyel Soğutma Ünitesi; Ağır Tip Paket Endüstriyel Soğutma Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; Orta Tip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi; Hafif Tip Isı Pompası Dış Ünitesi; OrtaTip Isı Pompası Dış Ünitesi; Ağır Tip Isı Pompası Dış Ünitesi",
+    "subtitle": "المدمجة • الحزمة • حلول التبريد الصناعي",
+    "intro": "وحدة التبريد الصناعية من النوع الخفيف؛ وحدة التبريد الصناعية من النوع المتوسط؛ وحدة التبريد الصناعية من النوع الثقيل؛ وحدة خارجية بمضخة حرارية من النوع الخفيف؛ وحدة خارجية لمضخة حرارية من النوع المتوسط؛ وحدة خارجية لمضخة حرارية من النوع الثقيل؛ وحدة خارجية بمضخة حرارية من النوع الخفيف؛ وحدة خارجية لمضخة حرارية من النوع المتوسط؛ وحدة خارجية لمضخة حرارية من النوع الثقيل",
     "models": [
       {
-        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC S",
-        "type": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi",
+        "name": "حلول تبريد مدمجة • معبأة • صناعية AC S",
+        "type": "وحدة التبريد الصناعية من النوع الخفيف",
         "image": "/images/products/chiller.png",
-        "description": "Hafif Tip Paket Endüstriyel Soğutma Ünitesi"
+        "description": "وحدة التبريد الصناعية من النوع الخفيف"
       },
       {
-        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC M",
-        "type": "Orta Tip Paket Endüstriyel Soğutma Ünitesi",
+        "name": "حلول تبريد مدمجة • معبأة • صناعية AC M",
+        "type": "وحدة التبريد الصناعية ذات الحزمة المتوسطة",
         "image": "/images/products/chiller.png",
-        "description": "Orta Tip Paket Endüstriyel Soğutma Ünitesi"
+        "description": "وحدة التبريد الصناعية ذات الحزمة المتوسطة"
       },
       {
-        "name": "Kompakt • Paket • Endüstriyel Soğutma Çözümleri AC H",
-        "type": "Ağır Tip Paket Endüstriyel Soğutma Ünitesi",
+        "name": "حلول تبريد مدمجة • معبأة • صناعية AC H",
+        "type": "وحدة التبريد الصناعية من النوع الثقيل",
         "image": "/images/products/chiller.png",
-        "description": "Ağır Tip Paket Endüstriyel Soğutma Ünitesi"
+        "description": "وحدة التبريد الصناعية من النوع الثقيل"
       },
       {
-        "name": "Isı Pompası Dış Ünitesi HP S",
-        "type": "Hafif Tip Isı Pompası Dış Ünitesi",
+        "name": "وحدة خارجية لمضخة حرارية HP S",
+        "type": "وحدة خارجية بمضخة حرارية من النوع الخفيف",
         "image": "/images/products/chiller.png",
-        "description": "Hafif Tip Isı Pompası Dış Ünitesi"
+        "description": "وحدة خارجية بمضخة حرارية من النوع الخفيف"
       },
       {
-        "name": "Isı Pompası Dış Ünitesi HP M",
-        "type": "Orta Tip Isı Pompası Dış Ünitesi",
+        "name": "وحدة خارجية لمضخة حرارية HP M",
+        "type": "وحدة خارجية ذات مضخة حرارية من النوع المتوسط",
         "image": "/images/products/chiller.png",
-        "description": "Orta Tip Isı Pompası Dış Ünitesi"
+        "description": "وحدة خارجية ذات مضخة حرارية من النوع المتوسط"
       },
       {
-        "name": "Isı Pompası Dış Ünitesi HP H",
-        "type": "Ağır Tip Isı Pompası Dış Ünitesi",
+        "name": "وحدة خارجية لمضخة حرارية HP H",
+        "type": "وحدة خارجية لمضخة حرارية من النوع الثقيل",
         "image": "/images/products/chiller.png",
-        "description": "Ağır Tip Isı Pompası Dış Ünitesi"
+        "description": "وحدة خارجية لمضخة حرارية من النوع الثقيل"
       },
       {
-        "name": "Fan Coil İç Ünitesi IN FC",
-        "type": "Hafif Tip Isı Pompası Dış Ünitesi",
+        "name": "وحدة فان كويل داخلية IN FC",
+        "type": "وحدة خارجية بمضخة حرارية من النوع الخفيف",
         "image": "/images/products/chiller.png",
-        "description": "Hafif Tip Isı Pompası Dış Ünitesi"
+        "description": "وحدة خارجية بمضخة حرارية من النوع الخفيف"
       },
       {
-        "name": "Fan Coil İç Ünitesi IN FC",
-        "type": "OrtaTip Isı Pompası Dış Ünitesi",
+        "name": "وحدة فان كويل داخلية IN FC",
+        "type": "وحدة خارجية ذات مضخة حرارية من النوع المتوسط",
         "image": "/images/products/chiller.png",
-        "description": "OrtaTip Isı Pompası Dış Ünitesi"
+        "description": "وحدة خارجية ذات مضخة حرارية من النوع المتوسط"
       },
       {
-        "name": "Fan Coil İç Ünitesi IN FC",
-        "type": "Ağır Tip Isı Pompası Dış Ünitesi",
+        "name": "وحدة فان كويل داخلية IN FC",
+        "type": "وحدة خارجية لمضخة حرارية من النوع الثقيل",
         "image": "/images/products/chiller.png",
-        "description": "Ağır Tip Isı Pompası Dış Ünitesi"
+        "description": "وحدة خارجية لمضخة حرارية من النوع الثقيل"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "elektrikliIsitici": {
-    "title": "ORCA HEATER",
-    "subtitle": "Elektrikli Isıtıcı",
-    "intro": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı; Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı",
+    "title": "سخان أوركا",
+    "subtitle": "سخان كهربائي",
+    "intro": "سخان كهربائي مع وصلة أنابيب مستطيلة؛ سخان كهربائي مزود بوصلة دائرية",
     "models": [
       {
-        "name": "Elektrikli Isıtıcı EH-R",
-        "type": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı",
+        "name": "سخان كهربائي EH-R",
+        "type": "سخان كهربائي مع وصلة أنابيب مستطيلة",
         "image": "/images/products/elektrikli-isitici.png",
-        "description": "Dikdörtgen Kanal Bağlantılı Elektrikli Isıtıcı"
+        "description": "سخان كهربائي مع وصلة أنابيب مستطيلة"
       },
       {
-        "name": "Elektrikli Isıtıcı EH-C",
-        "type": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı",
-        "image": "/images/products/elektrikli-isitici.png",
-        "description": "Yuvarlak Kanal Bağlantılı Elektrikli Isıtıcı"
+        "name": "سخان كهربائي EH-C",
+        "type": "سخان كهربائي مزود بوصلة دائرية",
+        "image": "",
+        "description": "سخان كهربائي مزود بوصلة دائرية"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "suluIsitici": {
-    "title": "ORCA COIL",
-    "subtitle": "Termal Batarya",
-    "intro": "Sıcak Su Bataryası; Soğuk su Bataryası; DX Batarya; Buhar Bataryası",
+    "title": "ملف ORCA",
+    "subtitle": "البطارية الحرارية",
+    "intro": "خلاط الماء الساخن؛ صنبور الماء البارد؛ بطارية دي إكس؛ صنبور البخار",
     "models": [
       {
         "name": "Termal Batarya HW",
-        "type": "Sıcak Su Bataryası",
-        "image": "/images/products/elektrikli-isitici.png",
-        "description": "Sıcak Su Bataryası"
+        "type": "خلاط الماء الساخن",
+        "image": "",
+        "description": "خلاط الماء الساخن"
       },
       {
         "name": "Termal Batarya CW",
-        "type": "Soğuk su Bataryası",
-        "image": "/images/products/elektrikli-isitici.png",
-        "description": "Soğuk su Bataryası"
+        "type": "صنبور الماء البارد",
+        "image": "",
+        "description": "صنبور الماء البارد"
       },
       {
         "name": "Termal Batarya DX D",
-        "type": "DX Batarya",
-        "image": "/images/products/elektrikli-isitici.png",
-        "description": "DX Batarya"
+        "type": "بطارية دي اكس",
+        "image": "",
+        "description": "بطارية دي اكس"
       },
       {
         "name": "Termal Batarya ST",
-        "type": "Buhar Bataryası",
-        "image": "/images/products/elektrikli-isitici.png",
-        "description": "Buhar Bataryası"
+        "type": "صنبور البخار",
+        "image": "",
+        "description": "صنبور البخار"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "orcaHx": {
-    "title": "ORCA HX",
-    "subtitle": "Isı Eşanjörü",
-    "intro": "Rotary Tip Isı Geri Kazanım Modülü; Selülozik Reküparatör Modulü; Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı; Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)",
+    "title": "أوركا HX",
+    "subtitle": "مبادل حراري",
+    "intro": "وحدة استعادة الحرارة من النوع الدوار؛ وحدة المسترد السليولوزية؛ وحدة استعادة الألمنيوم – لوحة مستطيلة؛ وحدة استرداد الألمنيوم – سداسية",
     "models": [
       {
-        "name": "Isı Eşanjörü R",
-        "type": "Rotary Tip Isı Geri Kazanım Modülü",
-        "image": "/images/products/caracal.png",
-        "description": "Rotary Tip Isı Geri Kazanım Modülü"
+        "name": "مبادل حراري R",
+        "type": "وحدة استعادة الحرارة من النوع الدوار",
+        "image": "",
+        "description": "وحدة استعادة الحرارة من النوع الدوار"
       },
       {
-        "name": "Isı Eşanjörü C",
-        "type": "Selülozik Reküparatör Modulü",
-        "image": "/images/products/caracal.png",
-        "description": "Selülozik Reküparatör Modulü"
+        "name": "مبادل حراري C",
+        "type": "وحدة استعادة السليولوز",
+        "image": "",
+        "description": "وحدة استعادة السليولوز"
       },
       {
-        "name": "Isı Eşanjörü AR-R",
-        "type": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı",
-        "image": "/images/products/caracal.png",
-        "description": "Alüminyum Reküperatör Modulü – Dikdörtgen Plakalı"
+        "name": "مبادل حراري AR-R",
+        "type": "وحدة استعادة الألمنيوم – لوحة مستطيلة",
+        "image": "",
+        "description": "وحدة استعادة الألمنيوم – لوحة مستطيلة"
       },
       {
-        "name": "Isı Eşanjörü AR-H",
-        "type": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)",
-        "image": "/images/products/caracal.png",
-        "description": "Alüminyum Reküperatör Modulü – Altıgen (Hexagonal)"
+        "name": "مبادل حراري AR-H",
+        "type": "وحدة استرداد الألمنيوم – سداسية",
+        "image": "",
+        "description": "وحدة استرداد الألمنيوم – سداسية"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "remoraAksesuarlari": {
     "title": "REMORA",
-    "subtitle": "HVAC Aksesuarları",
-    "intro": "Kendine özgü yapışkan diskiyle büyük deniz canlılarına tutunarak yol alan Remora, doğada kusursuz bir adaptasyon örneğidir. Hem sabitlenme hem de enerji verimliliği sağlayan bu stratejisi, fan sistemlerinde kullanılan bağlantı ve montaj aksesuarlarına ilham verir.\n\nFan aksesuarları; Remora’nın doğadaki fonksiyonunu yansıtarak, sistemin güvenli bir şekilde sabitlenmesini, titreşimden arındırılmasını ve hava akışının kontrollü yönlendirilmesini sağlar. Tıpkı Remora’nın taşıyıcısıyla kurduğu uyum gibi, bu parçalar da fan sisteminin bütünlüğünü ve verimliliğini destekler.",
+    "subtitle": "ملحقات التدفئة والتهوية وتكييف الهواء",
+    "intro": "يعتبر ريمورا، الذي يتحرك عن طريق التشبث بمخلوقات بحرية كبيرة بقرصه اللاصق الفريد، مثالا مثاليا للتكيف في الطبيعة. هذه الإستراتيجية، التي توفر الاستقرار وكفاءة الطاقة، تلهم ملحقات التوصيل والتركيب المستخدمة في أنظمة المراوح.\n\nملحقات المروحة؛ يعكس وظيفة Remora في الطبيعة، فهو يضمن تثبيت النظام بشكل آمن، وخالي من الاهتزازات، وتوجيه تدفق الهواء بطريقة يمكن التحكم فيها. تمامًا مثل انسجام Remora مع حاملها، تدعم هذه الأجزاء سلامة وكفاءة نظام المروحة.",
     "models": [
       {
         "name": "Remora SF",
-        "type": "Yatay Bağlantı Ayağı",
-        "image": "/images/products/remora-sf.png",
-        "description": "Yatay Bağlantı Ayağı"
+        "type": "قوس أفقي",
+        "image": "/images/products/remora-sf.png?v=2",
+        "description": "قوس أفقي"
       },
       {
         "name": "Remora VSF",
-        "type": "Dikey Bağlantı Ayağı",
-        "image": "/images/products/remora-sf.png",
-        "description": "Dikey Bağlantı Ayağı"
+        "type": "قوس عمودي",
+        "image": "/images/products/remora-vsf.png",
+        "description": "قوس عمودي"
       },
       {
         "name": "Remora FJ",
-        "type": "Esnek Bağlantı",
-        "image": "/images/products/remora-fj.png",
-        "description": "Esnek Bağlantı"
+        "type": "اتصال مرن",
+        "image": "/images/products/remora-fj.png?v=2",
+        "description": "اتصال مرن"
       },
       {
         "name": "Remora CF",
-        "type": "Karşı Flanş",
+        "type": "شفة مضادة",
         "image": "/images/products/remora-cf.png",
-        "description": "Karşı Flanş"
+        "description": "شفة مضادة"
       },
       {
         "name": "Remora FJCF",
-        "type": "Esnek Bağlantılı Tekli Karşı Flanş",
-        "image": "/images/products/remora-fj.png",
-        "description": "Esnek Bağlantılı Tekli Karşı Flanş"
+        "type": "شفة عداد واحدة مع اتصال مرن",
+        "image": "/images/products/remora-fjcf.png?v=2",
+        "description": "شفة عداد واحدة مع اتصال مرن"
       },
       {
         "name": "Remora FJ2CF",
-        "type": "Esnek Bağlantılı İkili Karşı Flanş",
+        "type": "اتصال مرن شفة مضادة مزدوجة",
         "image": "/images/products/remora-fj2f.png",
-        "description": "Esnek Bağlantılı İkili Karşı Flanş"
+        "description": "اتصال مرن شفة مضادة مزدوجة"
       },
       {
         "name": "Remora FJCF-F400",
-        "type": "F400 Esnek Bağlantılı Tekli Karşı Flanş",
-        "image": "/images/products/remora-fj.png",
-        "description": "F400 Esnek Bağlantılı Tekli Karşı Flanş"
+        "type": "F400 شفة مقابلة مفردة باتصال مرن",
+        "image": "/images/products/remora-fjcf.png?v=2",
+        "description": "F400 شفة مقابلة مفردة باتصال مرن"
       },
       {
         "name": "Remora FJ2CF-F400",
-        "type": "F400 Esnek Bağlantılı İkili Karşı Flanş",
+        "type": "F400 شفة مقابلة مزدوجة باتصال مرن",
         "image": "/images/products/remora-fj2f.png",
-        "description": "F400 Esnek Bağlantılı İkili Karşı Flanş"
+        "description": "F400 شفة مقابلة مزدوجة باتصال مرن"
       },
       {
         "name": "Remora R-FJCF",
-        "type": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş",
-        "image": "/images/products/remora-fj.png",
-        "description": "Dikdörtgen Esnek Bağlantılı Tekli Karşı Flanş"
+        "type": "شفة عداد واحدة مع وصلة مرنة مستطيلة",
+        "image": "/images/products/remora-r-fjcf.png?v=2",
+        "description": "شفة عداد واحدة مع وصلة مرنة مستطيلة"
       },
       {
         "name": "Remora R-FJ2CF",
-        "type": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş",
-        "image": "/images/products/remora-fj2f.png",
-        "description": "Dikdörtgen Esnek Bağlantılı İkili Karşı Flanş"
+        "type": "اتصال مستطيل مرن شفة عداد مزدوجة",
+        "image": "/images/products/remora-r-fj2cf.png",
+        "description": "اتصال مستطيل مرن شفة عداد مزدوجة"
       },
       {
         "name": "Remora PM",
-        "type": "Tel Kafes (Koruma Kafesi)",
-        "image": "/images/products/remora-pm.png",
-        "description": "Tel Kafes (Koruma Kafesi)"
+        "type": "قفص سلكي (قفص حماية)",
+        "image": "/images/products/remora-pm.png?v=3",
+        "description": "قفص سلكي (قفص حماية)"
       },
       {
         "name": "Remora IC",
-        "type": "Giriş Konisi",
-        "image": "/images/products/remora-ic.png",
-        "description": "Giriş Konisi"
+        "type": "مدخل المخروط",
+        "image": "/images/products/remora-ic.png?v=3",
+        "description": "مدخل المخروط"
       },
       {
         "name": "Remora IH",
-        "type": "Kovan Tipi Fan Denetim Kapağı",
-        "image": "/images/products/remora-ic.png",
-        "description": "Kovan Tipi Fan Denetim Kapağı"
+        "type": "غطاء فحص المروحة من نوع الخلية",
+        "image": "",
+        "description": "غطاء فحص المروحة من نوع الخلية"
       },
       {
         "name": "Remora S",
-        "type": "Silindirik Susturucu",
-        "image": "/images/products/remora-s.png",
-        "description": "Silindirik Susturucu"
+        "type": "كاتم الصوت اسطواني",
+        "image": "/images/products/remora-s.png?v=2",
+        "description": "كاتم الصوت اسطواني"
       },
       {
         "name": "Remora SP",
-        "type": "Podlu Silindirik Susturucu",
-        "image": "/images/products/remora-s.png",
-        "description": "Podlu Silindirik Susturucu"
+        "type": "كاتم صوت أسطواني مع جراب",
+        "image": "/images/products/remora-sp.png",
+        "description": "كاتم صوت أسطواني مع جراب"
       },
       {
         "name": "Remora RS",
-        "type": "Dikdörtgen Susturucu",
+        "type": "كاتم صوت مستطيل",
         "image": "/images/products/remora-rs.png",
-        "description": "Dikdörtgen Susturucu"
+        "description": "كاتم صوت مستطيل"
       },
       {
         "name": "Remora RED",
-        "type": "Redüksiyon",
-        "image": "/images/products/remora-red.png",
-        "description": "Redüksiyon"
+        "type": "تخفيض",
+        "image": "",
+        "description": "تخفيض"
       },
       {
         "name": "Remora SS",
-        "type": "Soket Susturucu",
-        "image": "/images/products/remora-ss.png",
-        "description": "Soket Susturucu"
+        "type": "كاتم الصوت المقبس",
+        "image": "/images/products/remora-ss.png?v=2",
+        "description": "كاتم الصوت المقبس"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   },
   "zamanlamaKontrol": {
-    "title": "ZAMANLAMA ve KONTROL CİHAZLARI",
-    "subtitle": "CONTROL & TIMING",
-    "intro": "Hız Kontrol Ünitesi; Dijital Zaman Ayar Rölesi; Mekanik Zaman Ayar Rölesi",
+    "title": "أجهزة التوقيت والتحكم",
+    "subtitle": "التحكم والتوقيت",
+    "intro": "وحدة التحكم في السرعة تتابع ضبط الوقت الرقمي؛ تتابع ضبط الوقت الميكانيكي",
     "models": [
       {
         "name": "Timer SCU",
-        "type": "Hız Kontrol Ünitesi",
+        "type": "وحدة التحكم بالسرعة",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
-        "description": "Hız Kontrol Ünitesi"
+        "description": "وحدة التحكم بالسرعة"
       },
       {
         "name": "Timer DTR",
-        "type": "Dijital Zaman Ayar Rölesi",
+        "type": "تتابع ضبط الوقت الرقمي",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
-        "description": "Dijital Zaman Ayar Rölesi"
+        "description": "تتابع ضبط الوقت الرقمي"
       },
       {
         "name": "Timer MTR",
-        "type": "Mekanik Zaman Ayar Rölesi",
+        "type": "تتابع ضبط الوقت الميكانيكي",
         "image": "/images/products/otomasyon-kontrol-kartlari.png",
-        "description": "Mekanik Zaman Ayar Rölesi"
+        "description": "تتابع ضبط الوقت الميكانيكي"
       }
     ],
     "chrome": {
-      "home": "Ana Sayfa",
-      "products": "Ürünler",
-      "productFamily": "Ürün Ailesi",
-      "certified": "Sertifikalı",
-      "productRange": "Ürün Yelpazesi",
-      "technicalSupport": "Teknik Destek",
-      "model": "model",
-      "models": "Model",
-      "technicalSupportRequest": "Teknik Destek Talebi",
-      "allProducts": "Tüm Ürünler",
-      "mostPreferred": "En Çok Tercih Edilen",
-      "detailedView": "Detaylı İncele",
-      "productFamilies": "Ürün Aileleri",
-      "inspect": "İncele",
-      "lookingForProduct": "Projenize uygun ürünü mü arıyorsunuz?",
-      "teamReady": "Teknik ekibimiz size en uygun çözümü sunmak için hazır.",
-      "allSolutions": "Çözümlerin Tümünü Gör"
+      "home": "الصفحة الرئيسية",
+      "products": "منتجات",
+      "productFamily": "عائلة المنتج",
+      "certified": "معتمد",
+      "productRange": "نطاق المنتج",
+      "technicalSupport": "الدعم الفني",
+      "model": "نموذج",
+      "models": "نموذج",
+      "technicalSupportRequest": "طلب الدعم الفني",
+      "allProducts": "جميع المنتجات",
+      "mostPreferred": "الأكثر تفضيلا",
+      "detailedView": "عرض بالتفصيل",
+      "productFamilies": "عائلات المنتجات",
+      "inspect": "مراجعة",
+      "lookingForProduct": "هل تبحث عن المنتج المناسب لمشروعك؟",
+      "teamReady": "فريقنا الفني على استعداد لتقديم الحل الأنسب لك.",
+      "allSolutions": "شاهد كافة الحلول"
     }
   }
 }

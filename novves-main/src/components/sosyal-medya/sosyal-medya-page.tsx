@@ -314,6 +314,7 @@ function FeedPost({
   const account = post.username ? `@${post.username}` : feedAccountName(platform.id, locale);
   const isFeatured = post.layout === "featured";
   const caption = post.description ?? labels.captionFallback;
+  const isInstagram = post.platformId === "instagram";
 
   return (
     <article
@@ -358,6 +359,7 @@ function FeedPost({
             src={post.image}
             alt={post.alt}
             fill
+            unoptimized={isInstagram}
             onLoad={() => setImageLoaded(true)}
             className={`object-cover transition duration-700 group-hover:scale-105 ${
               imageLoaded ? "opacity-100" : "opacity-0"
@@ -409,7 +411,7 @@ function FeedPost({
             ) : null}
           </h3>
         ) : null}
-        <p className="text-sm leading-relaxed text-white/50">{caption}</p>
+        <p className="line-clamp-4 text-sm leading-relaxed text-white/50">{caption}</p>
         <a
           href={href}
           target="_blank"
@@ -427,6 +429,7 @@ function FeedPost({
 export function SosyalMedyaPage({ locale, copy, hub, feedPosts: feedPostsProp }: Props) {
   const feedPosts = feedPostsProp ?? getSosyalMedyaFeedPosts(locale, hub);
   const feedLabels = SOCIAL_FEED_LABELS[locale] ?? SOCIAL_FEED_LABELS.en;
+  const hasLiveFeed = feedPosts.some((post) => post.platformId === "instagram");
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -485,10 +488,17 @@ export function SosyalMedyaPage({ locale, copy, hub, feedPosts: feedPostsProp }:
               <p className="text-lg font-medium text-white/40 sm:text-xl">{copy.momentsDesc}</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <span className="inline-flex items-center gap-2 rounded-full bg-hz-secondary-container px-6 py-4 text-xs font-black uppercase tracking-widest text-hz-on-primary shadow-lg shadow-hz-secondary/20">
-                <span className="material-symbols-outlined text-base">schedule</span>
-                {feedLabels.comingSoon}
-              </span>
+              {hasLiveFeed ? (
+                <span className="inline-flex items-center gap-2 rounded-full bg-hz-secondary-container px-6 py-4 text-xs font-black uppercase tracking-widest text-hz-on-primary shadow-lg shadow-hz-secondary/20">
+                  <span className="material-symbols-outlined text-base">photo_library</span>
+                  {feedLabels.latestPosts}
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-4 text-xs font-black uppercase tracking-widest text-white/45">
+                  <span className="material-symbols-outlined text-base">schedule</span>
+                  {feedLabels.comingSoon}
+                </span>
+              )}
               {SOSYAL_MEDYA_PLATFORMS.slice(0, 2).map((platform) => (
                 <a
                   key={platform.id}

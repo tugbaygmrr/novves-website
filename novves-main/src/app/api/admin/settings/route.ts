@@ -12,6 +12,8 @@ const ALLOWED_KEYS = new Set([
   "social_linkedin",
   "social_instagram",
   "social_youtube",
+  "instagram_access_token",
+  "instagram_user_id",
   "contact_email",
   "contact_phone",
   "contact_address",

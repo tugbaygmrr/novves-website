@@ -21,6 +21,8 @@ const KEYS = [
   "social_linkedin",
   "social_instagram",
   "social_youtube",
+  "instagram_access_token",
+  "instagram_user_id",
   "contact_email",
   "contact_phone",
   "contact_address",
@@ -106,6 +108,32 @@ export function SettingsManager() {
                 <Input value={val("social_youtube")} onChange={(e) => set("social_youtube", e.target.value)} placeholder="https://..." />
               </Field>
             </FieldGrid>
+            <div className="mt-4 border-t border-panel-border pt-4">
+              <FieldGrid>
+                <Field
+                  label="Instagram erişim jetonu"
+                  hint="Meta Graph API — sosyal medya sayfası akışı için. INSTAGRAM_ACCESS_TOKEN ile aynı."
+                >
+                  <Input
+                    type="password"
+                    autoComplete="off"
+                    value={val("instagram_access_token")}
+                    onChange={(e) => set("instagram_access_token", e.target.value)}
+                    placeholder="EAA..."
+                  />
+                </Field>
+                <Field
+                  label="Instagram kullanıcı / işletme hesabı ID"
+                  hint="Business API için. Boş bırakılırsa Basic Display /me/media denenir."
+                >
+                  <Input
+                    value={val("instagram_user_id")}
+                    onChange={(e) => set("instagram_user_id", e.target.value)}
+                    placeholder="178414..."
+                  />
+                </Field>
+              </FieldGrid>
+            </div>
           </CardContent>
         </Card>
 
